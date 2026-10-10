@@ -6,6 +6,487 @@
   "summary": "La Somalie porte le nom que les Somali se donnent eux-mêmes, « Soomaali ». Les sultanats d'Ajuran, d'Ifat, d'Adal et de Mogadiscio s'y sont succédé avant les partages britannique et italien de la fin du XIXe siècle. La poésie orale, le gabay, y tient le rang d'art majeur.",
   "etymology": "Le nom \"Somalie\" viendrait du peuple Somali (Soomaali), majoritaire dans le pays. Le terme \"Somali\" est utilisé par ce peuple pour se désigner lui-même. Le nom \"Somalie\" a été officialisé lors de l'indépendance en 1960, fusionnant les territoires britannique (Somaliland britannique) et italien (Somalie italienne). Le nom \"Somaliland\" (terre des Somalis) était utilisé par les Britanniques.",
   "nameOriginActor": "Le peuple Somali (Soomaali) est à l'origine du nom. Le nom \"Somalie\" a été officialisé lors de l'indépendance en 1960 par le gouvernement somalien, fusionnant les territoires britannique et italien.",
+  "nameHistory": {
+    "summary": "Le nom Somalie désigne un pays de la Corne de l'Afrique, la République fédérale de Somalie, qui se nomme elle-même Soomaaliya, d'après le peuple somali. D'autres noms existent : le pays est né en 1960 de l'union du Somaliland britannique et de la Somalie italienne, sous le nom de République de Somalie. Les sources ne s'accordent pas sur l'origine du nom Somali ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Somalie",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "som",
+        "namedBy": null,
+        "shortLine": "Le pays porte le nom du peuple somali ; l'origine de ce nom reste discutée.",
+        "periodLabel": "Nom de l'État depuis 1960 ; Sōmāli écrit dès le XVe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Somalie s'écrit Soomaaliya en somali, langue officielle du pays avec l'arabe ; l'État s'appelle République fédérale de Somalie, selon le Permanent Committee on Geographical Names.",
+            "aspect": "usage",
+            "formAsWritten": "Soomaaliya",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Somalia",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2026,
+                "url": "https://assets.publishing.service.gov.uk/media/6968c8ec5fd54abe6531a7a8/Somalia_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Nom du pays en somali : Soomaaliya ; nom de l'État : Jamhuuriyadda Federaalka Soomaaliya, en anglais Federal Republic of Somalia. Environ 85 % des habitants sont des Somali."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "1er juillet 1960"
+            },
+            "era": "modern",
+            "statement": "Le nom Somalie devient celui d'un État indépendant le 1er juillet 1960, quand la Somalie sous tutelle italienne s'unit au Somaliland britannique, indépendant depuis le 26 juin. Sa Constitution de 1960 commence par « La Somalie est un État indépendant et pleinement souverain ».",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 129, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui, codirigé par Christophe Wondji, lu dans l'exemplaire numérisé. Tableau chronologique des indépendances. Ligne Somalie : indépendante le 1/VII/1960, puissances coloniales l'Italie et la Grande-Bretagne ; « Tutelle de l'ONU. Union de deux colonies. Somalie britannique indépendante avant l'union, le 26/VI/1960. »"
+              },
+              {
+                "title": "Toponymic Factfile: Somalia",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2026,
+                "url": "https://assets.publishing.service.gov.uk/media/6968c8ec5fd54abe6531a7a8/Somalia_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 2",
+                "notes": "En 1960, les territoires coloniaux du Somaliland britannique et de la Somalie italienne deviennent indépendants coup sur coup et s'unissent en juillet pour former la Somalie."
+              },
+              {
+                "title": "Constitution de la Somalie, 1960 (traduction française)",
+                "author": "Digithèque MJP, université de Perpignan",
+                "year": 1960,
+                "url": "https://mjp.univ-perp.fr/constit/so1960.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 1",
+                "notes": "« La Somalie est un État indépendant et pleinement souverain. »"
+              },
+              {
+                "title": "Somalie : présentation et repères historiques",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/so.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "La République de Somalie est créée en 1960 par l'union du protectorat britannique du Somaliland, indépendant le 26 juin, et du territoire de la Somalie sous tutelle italienne, indépendant le 1er juillet. Une loi du 7 avril 1908 institue la colonie italienne. Après la chute de Siad Barre, le Somaliland se déclare indépendant le 18 mai 1991."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Somalie désigne le pays du peuple somali, qui se nomme lui-même Somali et forme l'essentiel de sa population. D'où vient le mot Somali, les sources ne s'accordent pas ; nous présentons plus bas les explications rapportées.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Somalia",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2026,
+                "url": "https://assets.publishing.service.gov.uk/media/6968c8ec5fd54abe6531a7a8/Somalia_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Environ 85 % de la population est ethniquement somali."
+              },
+              {
+                "title": "First Footsteps in East Africa, or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 101",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856, lu dans l'exemplaire numérisé. Note de bas de page : les lettrés somali écrivent leur nom national avec un sīn initial et écartent la dérivation de Saumal, qui ferait allusion à la rudesse d'un peuple sauvage ; un voyageur récent tire Somali de l'abyssin Soumahe, « païens », ce que Burton juge peu recommandable. Dans le texte, il rapporte que le Qamus nomme Samal le père d'une tribu, ainsi appelé parce qu'il avait crevé l'œil de son frère."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1413,
+              "to": 1430,
+              "label": "Règne du négus Isaac, 1413-1430"
+            },
+            "era": "polity",
+            "statement": "Le nom Somalie a une forme proche, Sōmāli, qui apparaît pour la première fois au début du XVe siècle dans un hymne éthiopien du règne du négus Isaac, selon Tadesse Tamrat, qui renvoie à l'Encyclopédie de l'Islam. C'est la plus ancienne trace de ce nom que le projet connaît. Nous n'avons pas lu cet hymne nous-mêmes. Le peuple qu'il nomme vivait là bien avant ce texte.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 17 : La Corne de l'Afrique : les Salomonides en Éthiopie et les États de la Corne de l'Afrique",
+                "author": "Tadesse Tamrat",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 464, note 11",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, lu dans l'exemplaire numérisé. « Le mot Sōmāli n'apparaît pour la première fois qu'au début du XVe siècle dans un hymne éthiopien datant du règne du négus Isaac », avec renvoi à l'Encyclopédie de l'Islam, tome premier, p. 1207-1208."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 17 : La Corne de l'Afrique : les Salomonides en Éthiopie et les États de la Corne de l'Afrique",
+                "author": "Tadesse Tamrat",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 485",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, lu dans l'exemplaire numérisé. Le chapitre date le règne de l'empereur Isaac de 1413 à 1430."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1300,
+              "to": 1399,
+              "label": "XIVe siècle"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Somalie, on parle des Barbara pour désigner la communauté noire qui habite la ville de Zaylā', sur le golfe d'Aden ; ce sont les Barābir du géographe Yākūt, en qui Tadesse Tamrat reconnaît les Somali.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 17 : La Corne de l'Afrique : les Salomonides en Éthiopie et les États de la Corne de l'Afrique",
+                "author": "Tadesse Tamrat",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 463-464",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, lu dans l'exemplaire numérisé. Au XIVe siècle, Zaylā' apparaît comme une ville habitée par une communauté noire, les Barbara, « certainement les mêmes que les Barābir de Yākūt, qui sont les Somali ». Les Berābir des géographes, distincts des Berbères, se distinguent des Waswahili et des Abyssins."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 601,
+              "to": 1100,
+              "label": "Chez les géographes arabes, VIIe-XIe siècle"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Somalie, les géographes arabes parlent de Bilād al-Barbar, le pays des Barbares, pour désigner à peu près le territoire de l'actuelle Somalie, au nord de la côte orientale de l'Afrique, selon Fidel T. Masao et Henri W. Mutoro.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 21 : La côte d'Afrique orientale et les Comores",
+                "author": "Fidel T. Masao et Henri W. Mutoro",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 640",
+                "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek, lu dans l'exemplaire numérisé. Les géographes arabes divisent la côte orientale en trois : le pays des Barbares (Bilād al-Barbar) au nord, qui recouvre à peu près le territoire de l'actuelle Somalie, le pays des Zandj et le pays de Sofala. Les Arabes donnaient ce nom à l'ensemble des Somali et des autres peuples de la Corne parlant des langues kushitiques."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Rapportée en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Somali viendrait de Samal, le père d'une tribu ainsi appelé, selon le dictionnaire arabe Qamus, parce qu'il avait crevé l'œil de son frère ; c'est Richard Burton qui rapporte ce passage.",
+            "hypothesisGroup": "origine du nom Somali",
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa, or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 101",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856, lu dans l'exemplaire numérisé. Note de bas de page : les lettrés somali écrivent leur nom national avec un sīn initial et écartent la dérivation de Saumal, qui ferait allusion à la rudesse d'un peuple sauvage ; un voyageur récent tire Somali de l'abyssin Soumahe, « païens », ce que Burton juge peu recommandable. Dans le texte, il rapporte que le Qamus nomme Samal le père d'une tribu, ainsi appelé parce qu'il avait crevé l'œil de son frère."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Rapportée en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Somali viendrait de Saumal, un mot arabe qui ferait allusion à la rudesse d'un peuple sauvage, selon une explication que Richard Burton dit écartée par les lettrés somali : ils écrivent leur nom avec une autre lettre initiale.",
+            "hypothesisGroup": "origine du nom Somali",
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa, or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 101",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856, lu dans l'exemplaire numérisé. Note de bas de page : les lettrés somali écrivent leur nom national avec un sīn initial et écartent la dérivation de Saumal, qui ferait allusion à la rudesse d'un peuple sauvage ; un voyageur récent tire Somali de l'abyssin Soumahe, « païens », ce que Burton juge peu recommandable. Dans le texte, il rapporte que le Qamus nomme Samal le père d'une tribu, ainsi appelé parce qu'il avait crevé l'œil de son frère."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Rapportée en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Somali viendrait de Soumahe, « païens » dans une langue d'Éthiopie, selon un voyageur que cite Richard Burton sans le nommer ; Burton juge cette explication peu recommandable.",
+            "hypothesisGroup": "origine du nom Somali",
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa, or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 101",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856, lu dans l'exemplaire numérisé. Note de bas de page : les lettrés somali écrivent leur nom national avec un sīn initial et écartent la dérivation de Saumal, qui ferait allusion à la rudesse d'un peuple sauvage ; un voyageur récent tire Somali de l'abyssin Soumahe, « païens », ce que Burton juge peu recommandable. Dans le texte, il rapporte que le Qamus nomme Samal le père d'une tribu, ainsi appelé parce qu'il avait crevé l'œil de son frère."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "République de Somalie",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Depuis 1960",
+        "accounts": [
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "1er juillet 1960"
+            },
+            "era": "modern",
+            "statement": "Le nom République de Somalie, en anglais Somali Republic, est celui sous lequel les États-Unis reconnaissent le nouvel État le 1er juillet 1960, selon l'Office of the Historian. C'est la plus ancienne trace de ce nom que le projet connaît. Les deux territoires qu'il réunit existaient avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Somalia",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/somalia",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Les États-Unis reconnaissent la Somali Republic le 1er juillet 1960 ; elle naît de l'union de la Somalie, jusque-là sous tutelle des Nations unies administrée par l'Italie, et du Somaliland, protectorat britannique jusqu'au 26 juin 1960."
+              },
+              {
+                "title": "Somalie : présentation et repères historiques",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/so.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "La République de Somalie est créée en 1960 par l'union du protectorat britannique du Somaliland, indépendant le 26 juin, et du territoire de la Somalie sous tutelle italienne, indépendant le 1er juillet. Une loi du 7 avril 1908 institue la colonie italienne. Après la chute de Siad Barre, le Somaliland se déclare indépendant le 18 mai 1991."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Somaliland britannique",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "eng",
+        "namedBy": null,
+        "periodLabel": "Protectorat de 1887 à 1960",
+        "accounts": [
+          {
+            "period": {
+              "from": 1887,
+              "to": 1960,
+              "label": "De 1887 au 26 juin 1960"
+            },
+            "era": "colonial",
+            "statement": "Le nom Somaliland britannique désigne le protectorat que le gouvernement britannique établit en 1887 sur la côte des Somali, à l'est de Djibouti. Le territoire devient indépendant le 26 juin 1960, puis s'unit à la Somalie le 1er juillet.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 4 : Initiatives et résistances africaines en Afrique du Nord-Est",
+                "author": "Hassan Ahmed Ibrahim, à partir d'une contribution d'Abbas Ibrahim Ali",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 105-106",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, lu dans l'exemplaire numérisé. La France établit un protectorat en pays somali en 1885, le gouvernement britannique deux ans plus tard sur la côte des Somali à l'est de Djibouti ; l'Italie prend le contrôle de Brava, Merca, Mogadiscio et Warsheik en novembre 1888 et déclare protectorat la côte qui relie ces villes. La partition du pays somali est pratiquement achevée en 1897."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 129, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui, codirigé par Christophe Wondji, lu dans l'exemplaire numérisé. Tableau chronologique des indépendances. Ligne Somalie : indépendante le 1/VII/1960, puissances coloniales l'Italie et la Grande-Bretagne ; « Tutelle de l'ONU. Union de deux colonies. Somalie britannique indépendante avant l'union, le 26/VI/1960. »"
+              },
+              {
+                "title": "Toponymic Factfile: Somalia",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2026,
+                "url": "https://assets.publishing.service.gov.uk/media/6968c8ec5fd54abe6531a7a8/Somalia_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "À la fin du XIXe siècle, les empires britannique et italien prennent le contrôle de parties de la côte et y établissent les colonies du Somaliland britannique et de la Somalie italienne ; le Somaliland britannique reste un protectorat britannique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1991,
+              "to": null,
+              "label": "Depuis le 18 mai 1991"
+            },
+            "era": "modern",
+            "statement": "Le nom Somaliland est repris par le territoire du nord, qui se déclare indépendant le 18 mai 1991 après la chute de Siad Barre, selon Jean-Pierre Maury ; cette indépendance n'est pas reconnue internationalement, selon le Permanent Committee on Geographical Names.",
+            "sources": [
+              {
+                "title": "Somalie : présentation et repères historiques",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/so.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "La République de Somalie est créée en 1960 par l'union du protectorat britannique du Somaliland, indépendant le 26 juin, et du territoire de la Somalie sous tutelle italienne, indépendant le 1er juillet. Une loi du 7 avril 1908 institue la colonie italienne. Après la chute de Siad Barre, le Somaliland se déclare indépendant le 18 mai 1991."
+              },
+              {
+                "title": "Toponymic Factfile: Somalia",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2026,
+                "url": "https://assets.publishing.service.gov.uk/media/6968c8ec5fd54abe6531a7a8/Somalia_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 8",
+                "notes": "Le Somaliland revendique son indépendance mais n'est pas reconnu internationalement ; le gouvernement somalien l'inclut dans sa structure fédérale."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Somaliland a une forme proche, Somali-land, le pays des Somali, chez le voyageur britannique Richard Burton, qui écrit qu'en Somali-land on se moquerait de ses fusils. C'est la plus ancienne trace de ce nom que le projet connaît. Les Somali vivaient dans ce pays bien avant ce nom anglais.",
+            "formAsWritten": "Somali-land",
+            "birth": true,
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa, or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 138",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856, lu dans l'exemplaire numérisé. « such weapons are well enough at Aden, in Somali-land men would deride the outlandish tool »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Somalie italienne",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "De 1888 à 1960",
+        "accounts": [
+          {
+            "period": {
+              "from": 1888,
+              "to": 1960,
+              "label": "De 1888 au 1er juillet 1960"
+            },
+            "era": "colonial",
+            "statement": "Le nom Somalie italienne désigne les territoires de la côte de l'océan Indien que l'Italie place sous son contrôle à partir de novembre 1888, autour de Brava, Merca et Mogadiscio. Une loi italienne du 7 avril 1908 en fait une colonie, selon Jean-Pierre Maury.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 4 : Initiatives et résistances africaines en Afrique du Nord-Est",
+                "author": "Hassan Ahmed Ibrahim, à partir d'une contribution d'Abbas Ibrahim Ali",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 105-106",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, lu dans l'exemplaire numérisé. La France établit un protectorat en pays somali en 1885, le gouvernement britannique deux ans plus tard sur la côte des Somali à l'est de Djibouti ; l'Italie prend le contrôle de Brava, Merca, Mogadiscio et Warsheik en novembre 1888 et déclare protectorat la côte qui relie ces villes. La partition du pays somali est pratiquement achevée en 1897."
+              },
+              {
+                "title": "Somalie : présentation et repères historiques",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/so.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "La République de Somalie est créée en 1960 par l'union du protectorat britannique du Somaliland, indépendant le 26 juin, et du territoire de la Somalie sous tutelle italienne, indépendant le 1er juillet. Une loi du 7 avril 1908 institue la colonie italienne. Après la chute de Siad Barre, le Somaliland se déclare indépendant le 18 mai 1991."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1950,
+              "to": 1950,
+              "label": "2 décembre 1950"
+            },
+            "era": "colonial",
+            "statement": "Le nom Somalie italienne est celui que rappelle l'accord de tutelle des Nations unies : il s'applique au « territoire précédemment connu sous le nom de Somalie italienne », confié à l'administration de l'Italie jusqu'à l'indépendance de 1960.",
+            "formAsWritten": "Somalie italienne",
+            "sources": [
+              {
+                "title": "Accord de tutelle pour le Territoire de la Somalie sous administration italienne, résolution 442 (V) de l'Assemblée générale des Nations unies, 2 décembre 1950",
+                "author": "Nations unies, Assemblée générale",
+                "year": 1950,
+                "url": "https://mjp.univ-perp.fr/constit/so1950.htm",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "article 1",
+                "notes": "Texte français reproduit par la Digithèque MJP. L'accord s'applique au « territoire précédemment connu sous le nom de Somalie italienne », borné notamment par le « Protectorat de Somalie »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 129, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui, codirigé par Christophe Wondji, lu dans l'exemplaire numérisé. Tableau chronologique des indépendances. Ligne Somalie : indépendante le 1/VII/1960, puissances coloniales l'Italie et la Grande-Bretagne ; « Tutelle de l'ONU. Union de deux colonies. Somalie britannique indépendante avant l'union, le 26/VI/1960. »"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [

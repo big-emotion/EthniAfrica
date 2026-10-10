@@ -3,6 +3,310 @@
   "nameFr": "Khoïsan (macro-groupe non génétique)",
   "nameEn": "Khoisan (typological group, not a genetic family)",
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom khoïsan désigne un ensemble de langues à clics d'Afrique australe et de Tanzanie, dont l'unité est discutée. C'est un mot savant, fait de Khoi, tiré du nom que se donnent les Khoekhoe, et de San ; on a aussi parlé de langues à clics. Les sources ne s'accordent pas sur l'auteur du nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Khoïsan",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Un anatomiste allemand, d'après deux mots de la langue des Khoekhoe",
+        "shortLine": "Un mot savant de 1928, fait de Khoi et de San, pour des langues à clics d'Afrique australe.",
+        "periodLabel": "Depuis 1928",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par les auteurs"
+            },
+            "statement": "Le nom khoïsan est fait de deux noms : Khoikhoin, le nom que se donnent les Khoekhoe, et San, le nom qu'ils donnent aux chasseurs-cueilleurs, appelés alors Bushmen, selon Isaac Schapera. D. Olderogge traduit khoi par « homme » et rattache san à une racine sa, « cueillir, déterrer des racines, capturer des bêtes ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5, note 1",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque et parle de « souche raciale »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 11 : Migrations et différenciations ethniques et linguistiques",
+                "author": "D. Olderogge",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 313"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom khoïsan réunit à tort, pour D. Olderogge, des langues très différentes : celles des Khoekhoe, éleveurs, et celles des San, chasseurs-cueilleurs, n'ont en commun que les clics. Il propose de parler de langues paléo-africaines pour les langues des San et de mettre à part celles des Khoekhoe.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 11 : Migrations et différenciations ethniques et linguistiques",
+                "author": "D. Olderogge",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 313, 315 et 317"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom khoïsan désigne, chez Joseph Greenberg, l'une des quatre grandes familles de langues d'Afrique. Elle réunit les langues à clics d'Afrique australe et deux langues de Tanzanie, le hadza et le sandawe.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 336"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1966,
+              "to": 1966,
+              "label": "1966"
+            },
+            "statement": "Le nom khoïsan recouvre, pour le linguiste Ernst Westphal, deux familles distinctes, qu'il nomme sandawe-khoï khoï et handzasan, selon Joseph Greenberg.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 337"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2010,
+              "label": "Années 2000"
+            },
+            "statement": "Le nom khoïsan ne désigne plus une famille pour la plupart des linguistes : on y voit des langues liées par de longs contacts plutôt que par une origine commune, selon Bernd Heine et Henry Honken. Tom Güldemann juge que cette parenté n'a jamais été démontrée par les méthodes habituelles.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Kx'a Family: A New Khoisan Genealogy, Journal of Asian and African Studies, no 79",
+                "author": "Bernd Heine et Henry Honken",
+                "year": 2010,
+                "url": "https://doi.org/10.15026/57434",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "notes": "Tokyo, Institut de recherche sur les langues et cultures d'Asie et d'Afrique. Lu en texte intégral dans la copie du dépôt de l'université des études étrangères de Tokyo."
+              },
+              {
+                "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+                "author": "Tom Güldemann",
+                "year": 2005,
+                "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3-4",
+                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "statement": "Le nom khoïsan passe des peuples aux langues dans le livre d'Isaac Schapera, dont un chapitre s'intitule « The Khoisan Languages ».",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 419-420",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque et parle de « souche raciale »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "1928"
+            },
+            "statement": "Le nom khoïsan aurait été forgé en 1928 par l'anatomiste allemand Leonhard Schultze, dans un livre sur le corps des Khoekhoe et des San, pour désigner une « souche raciale », selon Isaac Schapera, qui renvoie à la page 211 de ce livre. Bernd Heine et Henry Honken donnent la même origine. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples et les langues qu'il réunit existaient déjà avant lui.",
+            "hypothesisGroup": "auteur-du-nom-khoisan",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Leonhard Schultze",
+                "role": "a proposé le nom, selon Isaac Schapera, dans un livre d'anatomie de 1928"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5 et note 1",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque et parle de « souche raciale »."
+              },
+              {
+                "title": "The Kx'a Family: A New Khoisan Genealogy, Journal of Asian and African Studies, no 79",
+                "author": "Bernd Heine et Henry Honken",
+                "year": 2010,
+                "url": "https://doi.org/10.15026/57434",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 8",
+                "notes": "Tokyo, Institut de recherche sur les langues et cultures d'Asie et d'Afrique. Lu en texte intégral dans la copie du dépôt de l'université des études étrangères de Tokyo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "Attribution donnée en 1980"
+            },
+            "statement": "Le nom khoïsan aurait été proposé par l'anthropologue sud-africain Isaac Schapera, selon D. Olderogge. Schapera, lui, écrit en 1930 qu'il reprend le mot de Leonhard Schultze.",
+            "hypothesisGroup": "auteur-du-nom-khoisan",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 11 : Migrations et différenciations ethniques et linguistiques",
+                "author": "D. Olderogge",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 313"
+              },
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque et parle de « souche raciale »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1883,
+              "to": 1883,
+              "label": "1883"
+            },
+            "statement": "On parle alors de langues « Hottentot-Bushman » pour désigner ce groupe, sixième famille des langues d'Afrique chez Robert Needham Cust, qui suit la classification de Friedrich Müller.",
+            "formAsWritten": "Hottentot-Bushman",
+            "before": true,
+            "sources": [
+              {
+                "title": "A Sketch of the Modern Languages of Africa, vol. 1",
+                "author": "Robert Needham Cust",
+                "year": 1883,
+                "url": "https://archive.org/details/sketchofmodernla01cust",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 56",
+                "notes": "Londres, Trübner, 1883. Lu dans la numérisation d'Internet Archive. L'auteur reprend la classification du linguiste autrichien Friedrich Müller."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1851,
+              "to": 1862,
+              "label": "1851-1862"
+            },
+            "statement": "On sépare alors les langues des Khoekhoe de celles des San : le linguiste Wilhelm Bleek range les premières parmi les langues dites chamitiques, parce qu'elles ont un genre masculin et féminin, selon Joseph Greenberg.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 325"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Langues à clics",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le linguiste américain Joseph Greenberg",
+        "shortLine": "Le premier nom donné par Joseph Greenberg à ce groupe de langues.",
+        "accounts": [
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "statement": "Le nom langues à clics est le premier nom que Joseph Greenberg a donné à cette famille, avant de la nommer khoïsan, selon D. Olderogge.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 11 : Migrations et différenciations ethniques et linguistiques",
+                "author": "D. Olderogge",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 317"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "searchAnswer": {
       "lead": "Un nom créé en 1928 par un anthropologue allemand pour désigner des peuples d'Afrique australe selon des critères physiques ; des linguistes l'ont repris pour des langues à clics, sans preuve de parenté.",

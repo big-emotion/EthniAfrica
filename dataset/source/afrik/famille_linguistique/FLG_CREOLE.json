@@ -3,6 +3,230 @@
   "nameFr": "Créole (familles créoles d'Afrique)",
   "nameEn": "Creole (African Creoles)",
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom créole désigne des langues nées en Afrique et dans ses îles du contact entre des langues africaines et des langues européennes, comme le krio de Sierra Leone ou le crioulo du Cap-Vert. Joseph Greenberg les laisse hors de ses familles de langues d'Afrique. Le mot vient de l'espagnol criollo ; on a aussi dit, en allemand, « portugais des Nègres ». Les sources ne s'accordent pas sur l'origine du mot criollo ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Créole",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un mot venu de l'espagnol criollo pour des langues nées du contact avec l'Europe.",
+        "periodLabel": "Pour des langues d'Afrique, depuis 1849",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom créole viendrait de l'espagnol criollo, qu'on fait venir de criar, « élever, nourrir », selon le dictionnaire de Littré, qui juge cette formation très irrégulière.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine-du-mot-creole",
+            "sources": [
+              {
+                "title": "Dictionnaire de la langue française, article « créole »",
+                "author": "Émile Littré",
+                "year": 1873,
+                "url": "https://www.littre.org/definition/cr%C3%A9ole",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "Étymologie",
+                "notes": "Paris, Hachette, 1873-1877, avec le supplément. Lu dans l'édition en ligne du dictionnaire, qui reproduit le texte et renvoie au fac-similé de la Bibliothèque nationale de France."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom créole serait un mot caraïbe, selon d'autres auteurs que cite le dictionnaire de Littré sans les nommer.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine-du-mot-creole",
+            "sources": [
+              {
+                "title": "Dictionnaire de la langue française, article « créole »",
+                "author": "Émile Littré",
+                "year": 1873,
+                "url": "https://www.littre.org/definition/cr%C3%A9ole",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "Étymologie",
+                "notes": "Paris, Hachette, 1873-1877, avec le supplément. Lu dans l'édition en ligne du dictionnaire, qui reproduit le texte et renvoie au fac-similé de la Bibliothèque nationale de France."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom créole viendrait des Africains réduits en esclavage en Amérique : ils appelaient criollo leurs enfants nés aux Indes, pour les distinguer de ceux nés en Guinée, et les Espagnols leur auraient pris ce mot, selon l'historien Garcilaso de la Vega, que cite le supplément du dictionnaire de Littré.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine-du-mot-creole",
+            "sources": [
+              {
+                "title": "Dictionnaire de la langue française, article « créole »",
+                "author": "Émile Littré",
+                "year": 1873,
+                "url": "https://www.littre.org/definition/cr%C3%A9ole",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "Supplément, étymologie",
+                "notes": "Paris, Hachette, 1873-1877, avec le supplément. Lu dans l'édition en ligne du dictionnaire, qui reproduit le texte et renvoie au fac-similé de la Bibliothèque nationale de France."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1998,
+              "to": 1998,
+              "label": "1998"
+            },
+            "era": "modern",
+            "statement": "Le nom créole désigne des langues nées sur la côte atlantique de l'Afrique au contact des langues européennes, comme le krio de Sierra Leone ou le crioulo du Cap-Vert et de Guinée-Bissau. Alfa I. Sow et Mohamed H. Abdulaziz les tiennent pour de vraies langues africaines par leurs sons et leur grammaire. À Maurice, le créole est le moyen de communication le plus répandu.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 18 : Langue et évolution sociale",
+                "author": "Alfa I. Sow et Mohamed H. Abdulaziz",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 558"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "1999"
+            },
+            "era": "modern",
+            "statement": "Le nom créole s'applique aussi, pour l'historien Jan Vansina, à des langues nées du mélange de plusieurs langues lors de migrations, comme l'afrikaans ou le bobangi, une langue formée de langues bantoues proches.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 3 : Les mouvements de population et l'émergence de nouvelles formes sociopolitiques en Afrique",
+                "author": "J. Vansina",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 87"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom créole désigne, chez Joseph Greenberg, le krio de Freetown, tiré de l'anglais, et une forme de portugais parlée en Guinée. Il les laisse hors de sa classification des familles de langues d'Afrique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 337"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1882,
+              "to": 1882,
+              "label": "1882"
+            },
+            "era": "colonial",
+            "statement": "Le nom créole donne son titre aux Études créoles du linguiste autrichien Hugo Schuchardt, qui commencent par le parler de São Tomé. Il y cite les remarques de Bertrand-Bocandé sur le créole de la Guinée portugaise.",
+            "formAsWritten": "Kreolische Studien",
+            "sources": [
+              {
+                "title": "Kreolische Studien, I : Ueber das Negerportugiesische von S. Thomé (Westafrika)",
+                "author": "Hugo Schuchardt",
+                "year": 1882,
+                "url": "https://archive.org/details/kreolischestudi00schugoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 3-4",
+                "notes": "Vienne, Carl Gerold's Sohn pour l'Académie impériale des sciences, 1882. Lu dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1849,
+              "to": 1849,
+              "label": "1849"
+            },
+            "statement": "Le nom créole apparaît pour une langue d'Afrique dans une étude sur la Guinée portugaise publiée par Bertrand-Bocandé : il y décrit « la langue créole portugaise » de Guinée et des îles du Cap-Vert. C'est la plus ancienne trace de ce nom pour une langue d'Afrique que le projet connaît. Les langues qu'il désigne existaient déjà avant lui.",
+            "formAsWritten": "langue créole portugaise",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notes sur la Guinée portugaise ou Sénégambie méridionale, Bulletin de la Société de géographie, 3e série, tome 12",
+                "author": "Bertrand-Bocandé",
+                "year": 1849,
+                "url": "https://archive.org/details/bulletindelasoci12pari",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 73-75",
+                "notes": "Paris, Société de géographie, 1849. Lu dans la numérisation d'Internet Archive. L'auteur décrit les peuples de la région avec le mépris de son époque."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Negerportugiesisch",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "deu",
+        "namedBy": "Le linguiste autrichien Hugo Schuchardt",
+        "shortLine": "Un nom allemand du XIXe siècle, au vocabulaire racial, pour le créole de São Tomé.",
+        "accounts": [
+          {
+            "period": {
+              "from": 1882,
+              "to": 1882,
+              "label": "1882"
+            },
+            "era": "colonial",
+            "statement": "Le nom Negerportugiesisch, « portugais des Nègres », est celui que Hugo Schuchardt donne au créole de São Tomé dans le titre de son étude. Le mot porte le regard racial de son époque.",
+            "formAsWritten": "Negerportugiesische",
+            "sources": [
+              {
+                "title": "Kreolische Studien, I : Ueber das Negerportugiesische von S. Thomé (Westafrika)",
+                "author": "Hugo Schuchardt",
+                "year": 1882,
+                "url": "https://archive.org/details/kreolischestudi00schugoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre",
+                "notes": "Vienne, Carl Gerold's Sohn pour l'Académie impériale des sciences, 1882. Lu dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "searchAnswer": {
       "lead": "Des langues nées du contact entre langues africaines et langues européennes, comme le kabuverdianu au Cap-Vert ou le krio en Sierra Leone. Dans plusieurs pays, elles sont devenues langues maternelles et nationales.",

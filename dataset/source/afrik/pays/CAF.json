@@ -6,6 +6,520 @@
   "summary": "La République centrafricaine porte un nom purement géographique, adopté à l'indépendance en 1960 ; elle s'appelait auparavant Oubangui-Chari, du nom de deux cours d'eau. Son territoire réunit les chefferies banda, gbaya, ngbande et sango. Le sango, d'abord langue d'échange, y est devenu langue nationale.",
   "etymology": "Le nom \"Centrafrique\" ou \"République centrafricaine\" viendrait de la position géographique du pays au centre de l'Afrique. Le nom a été adopté lors de l'indépendance en 1960. Auparavant, le territoire était appelé \"Oubangui-Chari\" pendant la colonisation française (1903-1960), du nom des deux fleuves principaux (Oubangui et Chari).",
   "nameOriginActor": "Le nom \"République centrafricaine\" a été adopté lors de l'indépendance (1960) pour remplacer \"Oubangui-Chari\" (nom colonial français). Le nom fait référence à la position géographique du pays au centre de l'Afrique.",
+  "nameHistory": {
+    "summary": "Le nom République centrafricaine désigne un pays d'Afrique centrale, qui se nomme aussi Bêafrîka en sängö et qu'on abrège souvent en Centrafrique. Le pays a porté d'autres noms : Oubangui-Chari sous la colonisation française, puis Empire centrafricain de 1976 à 1979. Les sources disent peu de chose de l'origine de ces noms ; nous présentons ce qu'elles en disent plus bas.",
+    "names": [
+      {
+        "nameText": "République centrafricaine",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Le nom d'un projet de fédération d'Afrique centrale, pris par l'Oubangui-Chari en 1958.",
+        "periodLabel": "Écrit dès 1958 ; nom de l'État depuis 1960, sauf de 1976 à 1979",
+        "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": null,
+              "label": "Depuis le 30 août 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom République centrafricaine est celui que l'article premier de la Constitution de 2023 donne à l'État. Les listes officielles le donnent comme seul nom du pays, en français, et on l'abrège souvent en Centrafrique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution de la République centrafricaine, 30 août 2023",
+                "author": "République centrafricaine",
+                "year": 2023,
+                "url": "https://mjp.univ-perp.fr/constit/cf2023.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan. Article premier : « L'État centrafricain a pour nom : République centrafricaine. » Le même texte fait du sängö la langue nationale et, avec le français, une langue officielle."
+              },
+              {
+                "title": "Toponymic Fact File: Central African Republic",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2023,
+                "url": "https://assets.publishing.service.gov.uk/media/654cff3dc0e068000e1b2d03/Central_African_Republic_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Fiche officielle britannique de toponymie, édition 2023. Nom de l'État dans les langues officielles : République centrafricaine (français), Ködörösêse tî Bêafrîka (sängö). Pendant la période coloniale, le pays s'appelait Oubangui-Chari, « a name derived from the Ubangi River and the Chari River »."
+              },
+              {
+                "title": "Liste des noms de pays du GENUNG, GEGN.2/2025/171/CRP.171",
+                "author": "Groupe d'experts des Nations unies pour les noms géographiques, coordination Pierre Jaillard",
+                "year": 2025,
+                "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/documents/GEGN.2_2025_171_CRP171_item5e.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 22",
+                "notes": "Document du 23 avril 2025. Noms officiels nationaux : République centrafricaine en français, Ködörösêse tî Bêafrîka en sängö."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom République centrafricaine désigne un pays d'Afrique centrale. Il a d'abord été donné à une fédération des colonies françaises d'Afrique équatoriale, qui ne s'est pas faite et devait s'ouvrir à toute l'Afrique centrale, selon Elikia M'Bokolo. Les sources lues ne disent rien d'autre de son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 8 : L'Afrique équatoriale de l'Ouest",
+                "author": "Elikia M'Bokolo",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 232",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. Barthélemy Boganda, président du Grand Conseil de l'AEF, défend une fédération des quatre anciennes colonies françaises, « baptisée « République centrafricaine » », premier pas vers « les États-Unis de l'Afrique latine (ou centrale) ». Le projet échoue."
+              },
+              {
+                "title": "Toponymic Fact File: Central African Republic",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2023,
+                "url": "https://assets.publishing.service.gov.uk/media/654cff3dc0e068000e1b2d03/Central_African_Republic_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Fiche officielle britannique de toponymie, édition 2023. Nom de l'État dans les langues officielles : République centrafricaine (français), Ködörösêse tî Bêafrîka (sängö). Pendant la période coloniale, le pays s'appelait Oubangui-Chari, « a name derived from the Ubangi River and the Chari River »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1979,
+              "to": 1979,
+              "label": "21 septembre 1979"
+            },
+            "era": "modern",
+            "statement": "Le nom République centrafricaine revient après la chute de l'Empire : la loi constitutionnelle du 21 septembre 1979 dispose que « la forme de l'État Centrafricain est et demeure la République ».",
+            "sources": [
+              {
+                "title": "Loi constitutionnelle du 21 septembre 1979 portant organisation provisoire des pouvoirs publics",
+                "author": "République centrafricaine",
+                "year": 1979,
+                "url": "https://mjp.univ-perp.fr/constit/cf1979.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Texte publié au Journal officiel de la République centrafricaine, lu sur la Digithèque MJP de l'Université de Perpignan. Article premier : « La forme de l'État Centrafricain est et demeure la République. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "13 août 1960"
+            },
+            "era": "modern",
+            "statement": "Le nom République centrafricaine est celui de l'État qui devient indépendant de la France le 13 août 1960, selon le tableau des indépendances de l'Histoire générale de l'Afrique.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 130, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances : la République centrafricaine, ancien Oubangui-Chari, devient indépendante de la France le 13 août 1960 ; elle s'appelle Empire centrafricain du 4 décembre 1976 au 20 septembre 1979."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1958,
+              "to": 1958,
+              "label": "1er décembre 1958"
+            },
+            "era": "colonial",
+            "statement": "Le nom République centrafricaine apparaît par écrit dans la délibération de l'Assemblée territoriale de l'Oubangui-Chari du 1er décembre 1958 : l'Oubangui-Chari devient une République « qui s'intitule « République Centrafricaine » ». C'est la plus ancienne trace datée de ce nom que le projet connaît. Le pays existait déjà avant lui, sous le nom d'Oubangui-Chari.",
+            "formAsWritten": "République Centrafricaine",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Délibération n° 199/58 proclamant le territoire de l'Oubangui-Chari État membre de la Communauté et l'intitulant « République Centrafricaine », 1er décembre 1958",
+                "author": "Assemblée territoriale de l'Oubangui-Chari",
+                "year": 1958,
+                "url": "https://mjp.univ-perp.fr/constit/cf1958.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "articles 1 et 2",
+                "notes": "Texte publié au Journal officiel de l'Afrique équatoriale française du 1er janvier 1959, lu sur la Digithèque MJP de l'Université de Perpignan. Article 1 : « Le territoire de l'Oubangui-Chari opte pour le statut d'État membre de la Communauté ». Article 2 : « L'Etat de l'Oubangui-Chari est une République qui s'intitule « République Centrafricaine » »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1960,
+              "label": "Avant l'indépendance"
+            },
+            "era": "colonial",
+            "statement": "Le nom République centrafricaine est d'abord celui d'une fédération des quatre colonies françaises d'Afrique équatoriale, défendue par Barthélemy Boganda. Elle devait être un premier pas vers « les États-Unis de l'Afrique latine (ou centrale) », mais le projet a échoué, selon Elikia M'Bokolo.",
+            "actors": [
+              {
+                "name": "Barthélemy Boganda",
+                "role": "président du Grand Conseil de l'Afrique équatoriale française, défenseur du projet de fédération"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 8 : L'Afrique équatoriale de l'Ouest",
+                "author": "Elikia M'Bokolo",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 232",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. Barthélemy Boganda, président du Grand Conseil de l'AEF, défend une fédération des quatre anciennes colonies françaises, « baptisée « République centrafricaine » », premier pas vers « les États-Unis de l'Afrique latine (ou centrale) ». Le projet échoue."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bêafrîka",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "sag",
+        "namedBy": null,
+        "periodLabel": "Nom sängö du pays",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bêafrîka est le nom du pays en sängö, la langue nationale : le nom officiel de l'État y est Ködörösêse tî Bêafrîka, selon la liste des noms de pays de l'ONU et la fiche britannique de toponymie.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Liste des noms de pays du GENUNG, GEGN.2/2025/171/CRP.171",
+                "author": "Groupe d'experts des Nations unies pour les noms géographiques, coordination Pierre Jaillard",
+                "year": 2025,
+                "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/documents/GEGN.2_2025_171_CRP171_item5e.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 22",
+                "notes": "Document du 23 avril 2025. Noms officiels nationaux : République centrafricaine en français, Ködörösêse tî Bêafrîka en sängö."
+              },
+              {
+                "title": "Toponymic Fact File: Central African Republic",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2023,
+                "url": "https://assets.publishing.service.gov.uk/media/654cff3dc0e068000e1b2d03/Central_African_Republic_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Fiche officielle britannique de toponymie, édition 2023. Nom de l'État dans les langues officielles : République centrafricaine (français), Ködörösêse tî Bêafrîka (sängö). Pendant la période coloniale, le pays s'appelait Oubangui-Chari, « a name derived from the Ubangi River and the Chari River »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Bêafrîka désigne la République centrafricaine en sängö. Les sources lues n'expliquent pas comment il s'est formé. Le dictionnaire de sängö de Charles Taber donne au mot bê le sens de « milieu, centre », sans parler du nom du pays.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Toponymic Fact File: Central African Republic",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2023,
+                "url": "https://assets.publishing.service.gov.uk/media/654cff3dc0e068000e1b2d03/Central_African_Republic_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Fiche officielle britannique de toponymie, édition 2023. Nom de l'État dans les langues officielles : République centrafricaine (français), Ködörösêse tî Bêafrîka (sängö). Pendant la période coloniale, le pays s'appelait Oubangui-Chari, « a name derived from the Ubangi River and the Chari River »."
+              },
+              {
+                "title": "A Dictionary of Sango",
+                "author": "Charles R. Taber, sous la direction de William J. Samarin, Hartford Seminary Foundation",
+                "year": 1965,
+                "url": "https://archive.org/details/micro_IA41153350_0246",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire sango-anglais diffusé par le service ERIC du ministère américain de l'Éducation, lu dans l'exemplaire numérisé. L'entrée bê donne « the middle or center of something » ; le même mot désigne aussi le foie, siège des sentiments. Le dictionnaire n'explique pas le nom Bêafrîka."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "30 mars 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Bêafrîka figure dans le serment que le président prête en sängö, selon l'article 38 de la Constitution de 2016 : le texte sängö parle des « âmôlengê tî Bêafrîka » là où le texte français dit « peuple centrafricain ». C'est la plus ancienne trace écrite de ce nom que le projet connaît ; il n'a pas trouvé de texte plus ancien.",
+            "formAsWritten": "âmôlengê tî Bêafrîka",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Constitution de la République centrafricaine, 30 mars 2016",
+                "author": "République centrafricaine",
+                "year": 2016,
+                "url": "https://mjp.univ-perp.fr/constit/cf2016.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 38",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan. Le président prête serment en sängö, puis en français. La version sängö parle de « âmôlengê tî Bêafrîka » là où la version française parle du « peuple centrafricain »."
+              },
+              {
+                "title": "Constitution de la République centrafricaine, 30 août 2023",
+                "author": "République centrafricaine",
+                "year": 2023,
+                "url": "https://mjp.univ-perp.fr/constit/cf2023.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 72",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan. Le président prête serment en français, puis en sängö ; là où la version française parle du « peuple centrafricain », la version sängö écrit « âmôlengê tî Bêafrîka »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Empire centrafricain",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "periodLabel": "De 1976 à 1979",
+        "accounts": [
+          {
+            "period": {
+              "from": 1976,
+              "to": 1979,
+              "label": "Du 4 décembre 1976 au 20 septembre 1979"
+            },
+            "era": "modern",
+            "statement": "Le nom Empire centrafricain est celui du pays du 4 décembre 1976 au 20 septembre 1979, selon le tableau des indépendances de l'Histoire générale de l'Afrique. La loi constitutionnelle du 21 septembre 1979 rétablit la République.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 130, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances : la République centrafricaine, ancien Oubangui-Chari, devient indépendante de la France le 13 août 1960 ; elle s'appelle Empire centrafricain du 4 décembre 1976 au 20 septembre 1979."
+              },
+              {
+                "title": "Loi constitutionnelle du 21 septembre 1979 portant organisation provisoire des pouvoirs publics",
+                "author": "République centrafricaine",
+                "year": 1979,
+                "url": "https://mjp.univ-perp.fr/constit/cf1979.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Texte publié au Journal officiel de la République centrafricaine, lu sur la Digithèque MJP de l'Université de Perpignan. Article premier : « La forme de l'État Centrafricain est et demeure la République. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1976,
+              "to": 1976,
+              "label": "4 décembre 1976"
+            },
+            "era": "modern",
+            "statement": "Le nom Empire centrafricain figure dans la Constitution adoptée le 4 décembre 1976 par le congrès du parti unique, le Mouvement pour l'évolution sociale de l'Afrique noire, et promulguée par décret impérial le même jour. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Constitution de l'Empire Centrafricain",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Jean-Bedel Bokassa",
+                "role": "président de la République, proclamé empereur par cette Constitution"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Constitution de l'Empire centrafricain, 4 décembre 1976, et décret impérial n° 76/001 portant sa promulgation",
+                "author": "Empire centrafricain",
+                "year": 1976,
+                "url": "https://mjp.univ-perp.fr/constit/cf1976.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier du décret",
+                "notes": "Texte publié au Journal officiel de l'Empire centrafricain, lu sur la Digithèque MJP de l'Université de Perpignan. Le décret publie « la Constitution de l'Empire Centrafricain, adoptée par le Congrès Extraordinaire du Mouvement pour l'Evolution sociale de l'Afrique Noire en date du 4 Décembre 1976 »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Oubangui-Chari",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "L'administration coloniale française",
+        "periodLabel": "De 1903 à 1958",
+        "accounts": [
+          {
+            "period": {
+              "from": 1903,
+              "to": 1958,
+              "label": "Du 29 décembre 1903 au 1er décembre 1958"
+            },
+            "era": "colonial",
+            "statement": "Le nom Oubangui-Chari désigne la colonie française qui deviendra la République centrafricaine. De 1906 à 1920, elle forme avec le Tchad la colonie d'Oubangui-Chari-Tchad ; à partir de 1910, elle fait partie de l'Afrique équatoriale française, selon la Digithèque de l'université de Perpignan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — L'Oubangui-Chari sous administration française",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/cf1894.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Chronologie juridique de la colonie : poste de Bangui établi en 1889 ; établissements de l'Oubangui placés sous un commandant supérieur en 1894 ; territoire de l'Oubangui-Chari selon le décret du 29 décembre 1903 ; colonie d'Oubangui-Chari-Tchad en 1906 ; Afrique équatoriale française en 1910 ; Tchad séparé en 1920 ; République centrafricaine le 1er décembre 1958."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 130, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances : la République centrafricaine, ancien Oubangui-Chari, devient indépendante de la France le 13 août 1960 ; elle s'appelle Empire centrafricain du 4 décembre 1976 au 20 septembre 1979."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Oubangui-Chari désigne la colonie française qui a précédé la République centrafricaine. Les sources lues en donnent une seule explication, présentée à part.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Toponymic Fact File: Central African Republic",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2023,
+                "url": "https://assets.publishing.service.gov.uk/media/654cff3dc0e068000e1b2d03/Central_African_Republic_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Fiche officielle britannique de toponymie, édition 2023. Nom de l'État dans les langues officielles : République centrafricaine (français), Ködörösêse tî Bêafrîka (sängö). Pendant la période coloniale, le pays s'appelait Oubangui-Chari, « a name derived from the Ubangi River and the Chari River »."
+              },
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — L'Oubangui-Chari sous administration française",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/cf1894.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Chronologie juridique de la colonie : poste de Bangui établi en 1889 ; établissements de l'Oubangui placés sous un commandant supérieur en 1894 ; territoire de l'Oubangui-Chari selon le décret du 29 décembre 1903 ; colonie d'Oubangui-Chari-Tchad en 1906 ; Afrique équatoriale française en 1910 ; Tchad séparé en 1920 ; République centrafricaine le 1er décembre 1958."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Oubangui-Chari viendrait des noms de deux rivières : l'Oubangui, dont le bassin couvre les deux tiers du pays, et le Chari, qui coule vers le lac Tchad, selon la fiche britannique de toponymie. Les sources lues ne disent pas d'où viennent les noms de ces deux rivières.",
+            "hypothesisGroup": "origine du nom Oubangui-Chari",
+            "sources": [
+              {
+                "title": "Toponymic Fact File: Central African Republic",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2023,
+                "url": "https://assets.publishing.service.gov.uk/media/654cff3dc0e068000e1b2d03/Central_African_Republic_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Fiche officielle britannique de toponymie, édition 2023. Nom de l'État dans les langues officielles : République centrafricaine (français), Ködörösêse tî Bêafrîka (sängö). Pendant la période coloniale, le pays s'appelait Oubangui-Chari, « a name derived from the Ubangi River and the Chari River »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1958,
+              "to": 1958,
+              "label": "1er décembre 1958"
+            },
+            "era": "colonial",
+            "statement": "Le nom Oubangui-Chari cesse d'être celui du pays : l'Assemblée territoriale décide que « l'Etat de l'Oubangui-Chari est une République qui s'intitule « République Centrafricaine » ».",
+            "sources": [
+              {
+                "title": "Délibération n° 199/58 proclamant le territoire de l'Oubangui-Chari État membre de la Communauté et l'intitulant « République Centrafricaine », 1er décembre 1958",
+                "author": "Assemblée territoriale de l'Oubangui-Chari",
+                "year": 1958,
+                "url": "https://mjp.univ-perp.fr/constit/cf1958.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "articles 1 et 2",
+                "notes": "Texte publié au Journal officiel de l'Afrique équatoriale française du 1er janvier 1959, lu sur la Digithèque MJP de l'Université de Perpignan. Article 1 : « Le territoire de l'Oubangui-Chari opte pour le statut d'État membre de la Communauté ». Article 2 : « L'Etat de l'Oubangui-Chari est une République qui s'intitule « République Centrafricaine » »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1903,
+              "to": 1903,
+              "label": "29 décembre 1903"
+            },
+            "era": "colonial",
+            "statement": "Le nom Oubangui-Chari est celui du territoire que crée un décret du 29 décembre 1903, rattaché au Congo français, selon la Digithèque de l'université de Perpignan. C'est la plus ancienne trace de ce nom que le projet connaît ; il n'a pas lu le décret lui-même.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — L'Oubangui-Chari sous administration française",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/cf1894.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Chronologie juridique de la colonie : poste de Bangui établi en 1889 ; établissements de l'Oubangui placés sous un commandant supérieur en 1894 ; territoire de l'Oubangui-Chari selon le décret du 29 décembre 1903 ; colonie d'Oubangui-Chari-Tchad en 1906 ; Afrique équatoriale française en 1910 ; Tchad séparé en 1920 ; République centrafricaine le 1er décembre 1958."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1894,
+              "to": 1894,
+              "label": "13 juillet 1894"
+            },
+            "era": "colonial",
+            "statement": "Avant le nom Oubangui-Chari, on parle de la région de l'Oubanghi, qui dépend de la colonie du Congo français, selon le rapport qui accompagne le décret du 13 juillet 1894.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Décret du 13 juillet 1894 et rapport au président de la République française",
+                "author": "République française, Journal officiel du 15 et 16 juillet 1894",
+                "year": 1894,
+                "url": "https://mjp.univ-perp.fr/constit/cf1894.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 3423",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan. Le rapport parle de « la région de l'Oubanghi », qui dépend alors de la colonie du Congo français, et des « établissements de l'Oubanghi »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": ["Oubangui-Chari (1903-1960)"],

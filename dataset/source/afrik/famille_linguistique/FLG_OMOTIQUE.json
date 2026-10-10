@@ -2,6 +2,198 @@
   "id": "FLG_OMOTIQUE",
   "nameFr": "Omotique",
   "nameEn": "Omotic",
+  "nameHistory": {
+    "summary": "Le nom omotique désigne une famille de langues du sud-ouest de l'Éthiopie, comme le welamo, le kafa ou l'ari, parlées surtout dans le bassin de l'Omo. C'est un nom de linguiste, proposé autour de 1970 ; on disait avant couchitique occidental. Les sources ne s'accordent pas toujours sur ce regroupement ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Omotique",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le linguiste américain Harold C. Fleming",
+        "shortLine": "Un nom de linguiste pour des langues du sud-ouest de l'Éthiopie, autrefois dites couchitiques occidentales.",
+        "periodLabel": "Depuis 1971",
+        "accounts": [
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "1985"
+            },
+            "era": "modern",
+            "statement": "Le nom omotique désigne, selon Taddesse Tamrat, des langues du sud-ouest de l'Éthiopie, parlées pour la plupart dans le bassin de l'Omo. Il rappelle qu'on les appelait jusque-là couchitique occidental.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 17 : La Corne de l'Afrique : les Salomonides en Éthiopie et les États de la Corne de l'Afrique",
+                "author": "T. Tamrat",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 459-460"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1988,
+              "to": 1988,
+              "label": "1988"
+            },
+            "statement": "Le nom omotique désigne pour I. M. Diakonoff une des six branches de la famille qu'il appelle afrasienne. Il signale que ce classement à part a été discuté, notamment par le linguiste Zaborski.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Afrasian Languages",
+                "author": "I. M. Diakonoff",
+                "year": 1988,
+                "url": "https://archive.org/details/DiakonoffAfrasianLanguages1988",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Moscou, Nauka, 1988, traduit du russe. Lu dans une copie non officielle déposée sur Internet Archive.",
+                "page": "p. 15, 19 et 21"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom omotique est proposé, avec le nom ari-banna, pour une sixième branche de l'afro-asiatique tirée du couchitique occidental, selon Joseph Greenberg. Greenberg renvoie à un article d'Harold Fleming paru en 1969.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 330"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1971,
+              "to": 1973,
+              "label": "Conférence de 1971, publiée en 1973"
+            },
+            "statement": "Le nom omotique apparaît sous sa forme anglaise « Omotic » chez le linguiste américain Harold C. Fleming, qui écrit avoir rebaptisé ainsi le couchitique occidental et en faire une famille distincte. Les sources que nous avons lues ne disent pas pourquoi il a choisi ce nom. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "formAsWritten": "Omotic",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Harold C. Fleming",
+                "role": "a proposé le nom omotique pour le couchitique occidental"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Sub-classification in Hamito-Semitic, dans Lexicostatistics in Genetic Linguistics",
+                "author": "Harold C. Fleming",
+                "year": 1973,
+                "url": "https://archive.org/details/fleming-subclassification-in-hamito-semitic-1973",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "La Haye et Paris, Mouton, 1973, actes dirigés par Isidore Dyen d'une conférence tenue à l'université Yale les 3 et 4 avril 1971. Lu dans une copie non officielle déposée sur Internet Archive.",
+                "page": "p. 88"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Couchitique occidental",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des linguistes européens",
+        "shortLine": "L'ancien nom de ces langues, quand on les rangeait parmi les langues couchitiques.",
+        "periodLabel": "Jusqu'aux années 1970",
+        "accounts": [
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom couchitique occidental désigne pour Joseph Greenberg des langues très différentes des autres langues couchitiques, comme le kafa, le gimira ou le groupe ometo, appelé aussi sidamo occidental.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 331-332"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1971,
+              "to": 1973,
+              "label": "Conférence de 1971, publiée en 1973"
+            },
+            "statement": "Le nom couchitique occidental ne convient plus, selon Harold C. Fleming : ses comptages de mots communs, faits sur des listes recueillies en Éthiopie, au Kenya et en Tanzanie, le conduisent à séparer ces langues du couchitique.",
+            "sources": [
+              {
+                "title": "Sub-classification in Hamito-Semitic, dans Lexicostatistics in Genetic Linguistics",
+                "author": "Harold C. Fleming",
+                "year": 1973,
+                "url": "https://archive.org/details/fleming-subclassification-in-hamito-semitic-1973",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "La Haye et Paris, Mouton, 1973, actes dirigés par Isidore Dyen d'une conférence tenue à l'université Yale les 3 et 4 avril 1971. Lu dans une copie non officielle déposée sur Internet Archive.",
+                "page": "p. 85-88"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ari-banna",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des linguistes",
+        "shortLine": "Un autre nom proposé pour la même branche, d'après deux de ses langues, l'ari et le banna.",
+        "accounts": [
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom ari-banna a été proposé, à côté d'omotique, pour cette branche, selon Joseph Greenberg. Il emploie aussi ce nom pour un des deux groupes du couchitique occidental, dont l'ari s'appelait bako dans les textes anciens.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 330-331"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "searchAnswer": {
       "lead": "Des langues du sud-ouest de l'Éthiopie, autour de la vallée de l'Omo. Le nom a été créé par le linguiste Harold Fleming en 1969 ; l'unité du groupe est discutée.",

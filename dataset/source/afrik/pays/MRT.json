@@ -6,6 +6,471 @@
   "summary": "La Mauritanie doit son nom à la « Mauretania » des Romains, repris par les Français au début du XXe siècle. Terre de l'empire almoravide, elle est un seuil entre le Maghreb et l'Afrique de l'Ouest. Maures, Haratines, Halpulaar, Soninké et Wolof y font coexister le hassaniya, le pulaar, le soninké et le wolof.",
   "etymology": "Le nom \"Mauritanie\" viendrait du terme \"Mauretania\" utilisé par les Romains pour désigner la région de l'Afrique du Nord-Ouest. Le nom moderne \"Mauritanie\" a été adopté par les Français lors de la colonisation (1904-1960). Le terme \"Maures\" (Beidhane) désigne les populations arabophones nomades de la région. Les Européens utilisaient \"Pays des Maures\" pour désigner la région.",
   "nameOriginActor": "Les Français ont adopté le nom \"Mauritanie\" lors de la création du protectorat (1904) puis de la colonie (1920). Le nom fait référence aux \"Maures\" (Beidhane), populations arabophones nomades de la région. Le terme \"Mauretania\" était utilisé par les Romains pour désigner une région différente (actuel Maroc et Algérie occidentale), sans continuité réelle avec la Mauritanie moderne.",
+  "nameHistory": {
+    "summary": "Le nom Mauritanie désigne un pays d'Afrique de l'Ouest, la République islamique de Mauritanie, qui porte le nom d'un royaume de l'Antiquité situé plus au nord ; en arabe, sa langue officielle, il se nomme Mūrītāniyā. Avant lui, ses terres ont porté d'autres noms : Bilād Ṣinqīṭ, puis, à l'époque coloniale, Mauritanie occidentale, pays mauritaniens du bas Sénégal, territoire civil de la Mauritanie et colonie de la Mauritanie. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Mauritanie",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un royaume antique situé plus au nord, appliqué à ce pays à partir de 1899.",
+        "periodLabel": "Écrit dès l'Antiquité pour un autre territoire ; nom de l'État depuis 1958",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mauritanie est celui de la République islamique de Mauritanie, un pays du nord-ouest de l'Afrique qui fait le lien entre le Maghreb arabe et l'Afrique subsaharienne. En arabe, sa langue officielle, il s'écrit Mūrītāniyā, selon le Permanent Committee on Geographical Names.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Mauritania",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2023,
+                "url": "https://assets.publishing.service.gov.uk/media/6504627b6771b90014fdab69/Mauritania_Toponymic_Factfile-Sept23.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Fiche toponymique du gouvernement britannique, édition de septembre 2023. Donne le nom du pays, Mauritania, son nom en arabe, Mūrītāniyā, et le titre de l'État, Islamic Republic of Mauritania."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "28 novembre 1960"
+            },
+            "era": "modern",
+            "statement": "Le nom Mauritanie est celui que garde le pays à son indépendance, le 28 novembre 1960, selon le tableau des indépendances de l'Histoire générale de l'Afrique.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 130, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui. Le tableau 5.1, « Chronologie de l'indépendance africaine », donne pour la Mauritanie la date du 28/XI/1960 et la France pour puissance coloniale."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1958,
+              "to": 1959,
+              "label": "1958-1959"
+            },
+            "era": "colonial",
+            "statement": "Le nom République islamique de Mauritanie est proclamé le 28 novembre 1958 par l'Assemblée territoriale, qui choisit le statut d'État membre de la Communauté, selon la Digithèque de l'université de Perpignan. L'article premier de la Constitution du 22 mars 1959 le reprend.",
+            "sources": [
+              {
+                "title": "Colonie de Mauritanie : traités et décrets (1821-1920)",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": 2020,
+                "url": "https://mjp.univ-perp.fr/constit/mr1920.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Textes reproduits d'après le Journal officiel de la République française, avec une notice historique. La notice historique date du 28 novembre 1958 la proclamation de la République islamique de Mauritanie par l'Assemblée territoriale."
+              },
+              {
+                "title": "Constitution de la République islamique de Mauritanie du 22 mars 1959",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": 2009,
+                "url": "https://mjp.univ-perp.fr/constit/mr1959.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Texte reproduit d'après le Journal officiel de la Communauté du 15 juin 1959. L'article premier dit que l'État « prend le nom de République Islamique de Mauritanie »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1899,
+              "to": 1899,
+              "label": "Décembre 1899"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mauritanie est appliqué à ces terres sous la forme Mauritanie occidentale, dans un projet que le ministère français des Colonies remet au gouvernement le 27 décembre 1899, à partir des rapports de Xavier Coppolani, selon Ahmed Salem Ould Mohamed Baba.",
+            "actors": [
+              {
+                "name": "Xavier Coppolani",
+                "role": "administrateur colonial français, auteur des rapports sur lesquels s'appuie le ministère"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Le texte inédit de la première constitution mauritanienne écrite en ḥassāniyya en 1959. Historique et analyse des traits linguistiques du manuscrit, dans Studies on Arabic Dialectology and Sociolinguistics",
+                "author": "Ahmed Salem Ould Mohamed Baba",
+                "year": 2019,
+                "url": "https://books.openedition.org/iremam/4580",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 2 et 3, note 10",
+                "notes": "Aix-en-Provence, IREMAM, 2019, lu en ligne sur OpenEdition. L'auteur, qui s'appuie sur Geneviève Désiré-Vuillemin (1962, p. 94), écrit que le ministère des Colonies, sur la foi des rapports de Coppolani, remet le 27 décembre 1899 un projet de création d'une région appelée « Mauritanie Occidentale ». Il ajoute que c'est Coppolani qui proposa ce nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Mauritanie désigne aujourd'hui un État d'Afrique de l'Ouest. Dans l'Antiquité, il désignait un royaume plus au nord, sur des terres qui appartiennent aujourd'hui au Maroc et à l'Algérie. Les sources rattachent ce nom à celui des Maures ; nous présentons leurs explications une à une.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Mauritania",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2023,
+                "url": "https://assets.publishing.service.gov.uk/media/6504627b6771b90014fdab69/Mauritania_Toponymic_Factfile-Sept23.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Fiche toponymique du gouvernement britannique, édition de septembre 2023. Note 1 : le pays porte le nom de la province romaine de Maurétanie, qui vient du latin Maurus, « Maure », alors que la Mauritanie actuelle se trouve au sud-ouest de cette province."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 18 : La période carthaginoise",
+                "author": "B. H. Warmington",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 478",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. Entre la côte atlantique et la Moulouya vivaient les Maures, « d'où le nom de Mauritanie (ancienne Maurousia) donné à ce territoire » ; l'appellation s'étend plus tard plus à l'est."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 42,
+              "to": 42,
+              "label": "Fin de l'année 42"
+            },
+            "statement": "Le nom Mauritanie, sous la forme Maurétanie, devient celui de deux provinces romaines : l'empereur Claude crée la Maurétanie césarienne, à l'est, et la Maurétanie tingitane, à l'ouest, selon Ammar Mahjoubi.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 19 : La période romaine et post-romaine en Afrique du Nord",
+                "author": "A. Mahjoubi",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 509",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. Claude organise à la fin de l'année 42 les deux provinces de Maurétanie, la Césarienne à l'est et la Tingitane à l'ouest."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": -33,
+              "label": "Avant 33 avant notre ère"
+            },
+            "statement": "Le nom Mauritanie a une forme proche, Maurétanie, dans l'Antiquité : c'est celui d'un royaume qui s'étend de l'Atlantique à l'Ampsaga et que son roi, Bocchus le Jeune, lègue à Rome en 33 avant notre ère, selon l'Histoire générale de l'Afrique. C'est la plus ancienne trace de ce nom que le projet connaît. Ce royaume se trouvait au nord de l'actuelle Mauritanie, sur d'autres terres.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 19 : La période romaine et post-romaine en Afrique du Nord",
+                "author": "A. Mahjoubi",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 509",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. « De l'Ampsaga à l'Atlantique s'étendait le royaume de Maurétanie, que le roi Bocchus le jeune avait légué, dès 33 avant notre ère, à l'Empire romain. »"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 18 : La période carthaginoise",
+                "author": "B. H. Warmington",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 478",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. Pour la période carthaginoise, les auteurs grecs et romains appellent Mauritanie, « ancienne Maurousia », le pays des Maures, entre la côte atlantique et la Moulouya."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Mauritanie viendrait des Maures, qui vivaient dans l'Antiquité entre la côte atlantique et la Moulouya : les auteurs grecs et romains auraient appelé leur pays Maurousia, puis Mauritanie, selon B. H. Warmington.",
+            "hypothesisGroup": "origine du nom Mauritanie",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 18 : La période carthaginoise",
+                "author": "B. H. Warmington",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 478",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. « A l'ouest, entre la côte atlantique et la Moulouya (Mulucca) vivaient les Maures, d'où le nom de Mauritanie (ancienne Maurousia) donné à ce territoire. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Mauritanie viendrait de la province romaine de Maurétanie, dont le nom serait formé sur le latin Maurus, « Maure », même si cette province se trouvait au nord-est du pays actuel, selon le Permanent Committee on Geographical Names.",
+            "hypothesisGroup": "origine du nom Mauritanie",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Mauritania",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2023,
+                "url": "https://assets.publishing.service.gov.uk/media/6504627b6771b90014fdab69/Mauritania_Toponymic_Factfile-Sept23.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Fiche toponymique du gouvernement britannique, édition de septembre 2023. Note 1 : « The country is named after the Roman province of Mauretania, the name of which is derived from the Latin Maurus, meaning Moor »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Colonie de la Mauritanie",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Du 1er janvier 1921 à 1958",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "4 décembre 1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom colonie de la Mauritanie figure dans l'article premier du décret du 4 décembre 1920 : le territoire civil de la Mauritanie devient, à compter du 1er janvier 1921, une colonie qui prend ce nom. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays qu'il désigne portait déjà le nom de Mauritanie.",
+            "formAsWritten": "colonie de la Mauritanie",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Colonie de Mauritanie : traités et décrets (1821-1920)",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": 2020,
+                "url": "https://mjp.univ-perp.fr/constit/mr1920.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Textes reproduits d'après le Journal officiel de la République française, avec une notice historique. Le décret du 4 décembre 1920 dispose que le territoire civil de la Mauritanie est transformé, à compter du 1er janvier 1921, en une colonie qui prend le nom de « colonie de la Mauritanie ».",
+                "page": "décret du 4 décembre 1920, article premier"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Territoire civil de la Mauritanie",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "De 1904 à 1920",
+        "accounts": [
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "25 février 1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom territoire civil de la Mauritanie est donné, dit le ministre des Colonies dans son rapport du 25 février 1905, à l'ancien protectorat des pays maures, sur la rive droite du fleuve Sénégal. Le décret du même jour fixe sa limite avec le Sénégal.",
+            "formAsWritten": "territoire civil de la Mauritanie",
+            "sources": [
+              {
+                "title": "Colonie de Mauritanie : traités et décrets (1821-1920)",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": 2020,
+                "url": "https://mjp.univ-perp.fr/constit/mr1920.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Textes reproduits d'après le Journal officiel de la République française, avec une notice historique. Le rapport au président de la République du 25 février 1905 parle de la construction en unité administrative, « sous le nom de territoire civil de la Mauritanie, de l'ancien protectorat des pays maures ».",
+                "page": "décret du 25 février 1905, rapport au président"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "18 octobre 1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom territoire civil de la Mauritanie apparaît dans le décret du 18 octobre 1904 qui réorganise l'Afrique-Occidentale française, selon la Digithèque de l'université de Perpignan. C'est la plus ancienne trace de ce nom que le projet connaît. Nous n'avons pas lu ce décret nous-mêmes.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Colonie de Mauritanie : traités et décrets (1821-1920)",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": 2020,
+                "url": "https://mjp.univ-perp.fr/constit/mr1920.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Textes reproduits d'après le Journal officiel de la République française, avec une notice historique. La notice historique écrit que le décret du 18 octobre 1904 « organise le territoire civil de Mauritanie, administré par un commissaire du gouvernement général de l'AOF »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Pays mauritaniens du bas Sénégal",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "1903-1904",
+        "accounts": [
+          {
+            "period": {
+              "from": 1903,
+              "to": 1903,
+              "label": "12 mars 1903"
+            },
+            "era": "colonial",
+            "statement": "Le nom pays mauritaniens du bas Sénégal est celui sous lequel ces terres deviennent un protectorat français par un décret du 12 mars 1903, selon Ahmed Salem Ould Mohamed Baba. C'est la plus ancienne trace de ce nom que le projet connaît. En 1905, le ministre des Colonies parle de cet « ancien protectorat des pays maures ».",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Le texte inédit de la première constitution mauritanienne écrite en ḥassāniyya en 1959. Historique et analyse des traits linguistiques du manuscrit, dans Studies on Arabic Dialectology and Sociolinguistics",
+                "author": "Ahmed Salem Ould Mohamed Baba",
+                "year": 2019,
+                "url": "https://books.openedition.org/iremam/4580",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 12",
+                "notes": "Aix-en-Provence, IREMAM, 2019, lu en ligne sur OpenEdition. Un décret du ministère des Colonies du 12 mars 1903 fait du territoire un protectorat « sous le nom des pays mauritaniens du bas Sénégal »."
+              },
+              {
+                "title": "Colonie de Mauritanie : traités et décrets (1821-1920)",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": 2020,
+                "url": "https://mjp.univ-perp.fr/constit/mr1920.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Textes reproduits d'après le Journal officiel de la République française, avec une notice historique. Le rapport du 25 février 1905 parle de « l'ancien protectorat des pays maures ».",
+                "page": "décret du 25 février 1905, rapport au président"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mauritanie occidentale",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Décembre 1899",
+        "accounts": [
+          {
+            "period": {
+              "from": 1899,
+              "to": 1899,
+              "label": "30 décembre 1899"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mauritanie occidentale désigne, dans une décision ministérielle du 30 décembre 1899, les régions qui vont de la rive droite du fleuve Sénégal jusqu'aux confins du Maroc et du sud de l'Algérie, selon Ahmed Salem Ould Mohamed Baba.",
+            "sources": [
+              {
+                "title": "Le texte inédit de la première constitution mauritanienne écrite en ḥassāniyya en 1959. Historique et analyse des traits linguistiques du manuscrit, dans Studies on Arabic Dialectology and Sociolinguistics",
+                "author": "Ahmed Salem Ould Mohamed Baba",
+                "year": 2019,
+                "url": "https://books.openedition.org/iremam/4580",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 4, note 11",
+                "notes": "Aix-en-Provence, IREMAM, 2019, lu en ligne sur OpenEdition. Une décision ministérielle du 30 décembre 1899 organise sous le nom de « Mauritanie Occidentale » ces régions ; l'auteur s'appuie sur Geneviève Désiré-Vuillemin (1962, p. 95)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1899,
+              "to": 1899,
+              "label": "27 décembre 1899"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mauritanie occidentale figure dans un projet que le ministère français des Colonies remet au gouvernement le 27 décembre 1899, à partir des rapports de Xavier Coppolani, selon Ahmed Salem Ould Mohamed Baba. C'est la plus ancienne trace de ce nom que le projet connaît. Les terres qu'il désigne étaient habitées et nommées bien avant lui.",
+            "formAsWritten": "Mauritanie Occidentale",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Xavier Coppolani",
+                "role": "administrateur colonial français, auteur des rapports sur lesquels s'appuie le ministère"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Le texte inédit de la première constitution mauritanienne écrite en ḥassāniyya en 1959. Historique et analyse des traits linguistiques du manuscrit, dans Studies on Arabic Dialectology and Sociolinguistics",
+                "author": "Ahmed Salem Ould Mohamed Baba",
+                "year": 2019,
+                "url": "https://books.openedition.org/iremam/4580",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 3, note 10",
+                "notes": "Aix-en-Provence, IREMAM, 2019, lu en ligne sur OpenEdition. Le ministère des Colonies remet le 27 décembre 1899 au gouvernement un projet de création d'une région appelée « Mauritanie Occidentale » ; l'auteur s'appuie sur Geneviève Désiré-Vuillemin (1962, p. 94)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bilād Ṣinqīṭ",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "periodLabel": "Avant l'époque coloniale",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1898,
+              "label": "Nom en usage en 1898"
+            },
+            "era": "polity",
+            "statement": "Le nom Bilād Ṣinqīṭ, « le pays de Chinguetti », est l'ancien nom de la Mauritanie, écrit Ahmed Salem Ould Mohamed Baba : c'est là qu'arrive Xavier Coppolani en 1898. Nous ne savons pas avec certitude depuis quand ce nom est employé.",
+            "actors": [
+              {
+                "name": "Xavier Coppolani",
+                "role": "administrateur colonial français"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Le texte inédit de la première constitution mauritanienne écrite en ḥassāniyya en 1959. Historique et analyse des traits linguistiques du manuscrit, dans Studies on Arabic Dialectology and Sociolinguistics",
+                "author": "Ahmed Salem Ould Mohamed Baba",
+                "year": 2019,
+                "url": "https://books.openedition.org/iremam/4580",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 2",
+                "notes": "Aix-en-Provence, IREMAM, 2019, lu en ligne sur OpenEdition. Coppolani « arriva au Bilād Ṣinqīṭ (ancien nom de la Mauritanie) en 1898 »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [

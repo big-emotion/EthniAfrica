@@ -6,6 +6,307 @@
   "summary": "Maurice porte le nom d'un prince néerlandais, Maurice de Nassau, qui n'y a jamais mis les pieds. L'île était inhabitée : sa population entière est issue de la colonisation, de l'esclavage et de l'engagisme. Indo-Mauriciens, Créoles, Sino-Mauriciens et Franco-Mauriciens y ont fait du créole mauricien une langue commune.",
   "etymology": "Le nom \"Maurice\" viendrait du prince Maurice de Nassau (Maurice d'Orange), en l'honneur duquel les Néerlandais auraient nommé l'île en 1598. Le nom créole \"Moris\" serait dérivé de \"Maurice\". L'île était auparavant appelée \"Dina Arobi\" (île déserte) par les Arabes.",
   "nameOriginActor": "Les Néerlandais ont nommé l'île \"Mauritius\" en l'honneur du prince Maurice de Nassau (Maurice d'Orange), stathouder des Provinces-Unies. Les Français l'ont appelée \"Île de France\" (1715-1810), puis les Britanniques ont restauré le nom \"Mauritius\" (1810).",
+  "nameHistory": {
+    "summary": "Le nom Maurice désigne un pays insulaire de l'océan Indien, la République de Maurice, Mauritius en anglais. L'île a porté d'autres noms : Cerne chez les Portugais, puis Île de France de 1715 à 1810. L'île était déserte quand les Européens y sont arrivés. Les sources que nous avons lues expliquent ces noms de façon différente ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Maurice",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom néerlandais donné à l'île en 1598, devenu celui de l'État en 1968.",
+        "periodLabel": "Écrit dès 1598 ; nom de l'État depuis 1968",
+        "accounts": [
+          {
+            "period": {
+              "from": 1968,
+              "to": null,
+              "label": "Depuis le 12 mars 1968"
+            },
+            "era": "modern",
+            "statement": "Le nom Maurice, Mauritius en anglais, est celui de l'État indépendant depuis le 12 mars 1968 ; il est devenu une république en 1992 et s'appelle aujourd'hui Republic of Mauritius, selon le Permanent Committee on Geographical Names.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 131, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui, codirigé par Christophe Wondji, lu dans l'exemplaire numérisé. Tableau chronologique des indépendances. Ligne Maurice : indépendante le 12/III/1968, puissance coloniale la Grande-Bretagne."
+              },
+              {
+                "title": "Toponymic Factfile: Mauritius",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2025,
+                "url": "https://assets.publishing.service.gov.uk/media/68aee3232f18566482155890/Mauritius_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Nom du pays : Mauritius ; nom de l'État : Republic of Mauritius. Indépendant du Royaume-Uni en 1968, république en 1992."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Maurice désigne une île et l'État qui la gouverne ; il a été donné à l'île en 1598, en l'honneur du prince d'Orange, selon Charles Grant. L'île avait déjà reçu un autre nom, Cerne, dont l'origine reste discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The History of Mauritius, or the Isle of France, and the Neighbouring Islands",
+                "author": "Charles Grant, vicomte de Vaux",
+                "year": 1801,
+                "url": "https://archive.org/details/historyofmaurit00vaux",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 18 et 21",
+                "notes": "Londres, W. Bulmer, 1801, d'après les papiers du baron Grant, père de l'auteur, qui vécut vingt ans dans l'île ; lu dans l'exemplaire numérisé. Les Portugais donnent à l'île le nom de Cerne ; en 1598, l'amiral néerlandais la nomme Mauritius « in honour of the Prince of Orange »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1810,
+              "to": 1968,
+              "label": "De 1810 à 1968"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mauritius redevient celui de l'île sous la domination britannique : les Britanniques s'en emparent en 1810, selon Isaria N. Kimambo. Charles Grant écrivait dès 1801, à Londres, une histoire de « Mauritius, or the Isle of France ».",
+            "formAsWritten": "Mauritius",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 10 : La côte et l'hinterland de l'Afrique orientale de 1845 à 1880",
+                "author": "Isaria N. Kimambo",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 270",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, lu dans l'exemplaire numérisé. La traite des esclaves à destination de l'île Maurice avait été freinée par les Britanniques, « qui s'emparèrent de l'île en 1810 »."
+              },
+              {
+                "title": "The History of Mauritius, or the Isle of France, and the Neighbouring Islands",
+                "author": "Charles Grant, vicomte de Vaux",
+                "year": 1801,
+                "url": "https://archive.org/details/historyofmaurit00vaux",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre",
+                "notes": "Londres, W. Bulmer, 1801, d'après les papiers du baron Grant, père de l'auteur, qui vécut vingt ans dans l'île ; lu dans l'exemplaire numérisé. Le titre donne les deux noms de l'île : « The History of Mauritius, or the Isle of France »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1638,
+              "to": 1710,
+              "label": "De 1639 à 1710"
+            },
+            "era": "colonial",
+            "statement": "Le nom Maurice est celui de l'île où des Hollandais s'installent : on parle des Hollandais de l'île Maurice de 1639 à 1647, et ils abandonnent l'île en 1710, selon R. K. Kent.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 28 : Madagascar et les îles de l'océan Indien",
+                "author": "R. K. Kent",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 936",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot, lu dans l'exemplaire numérisé. Au moins huit navires approvisionnent en riz et en esclaves de Madagascar les Hollandais de l'île Maurice de 1639 à 1647 ; en 1646, le troisième gouverneur de l'île Maurice envisage un fort dans la baie d'Antongil."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 28 : Madagascar et les îles de l'océan Indien",
+                "author": "R. K. Kent",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 939",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot, lu dans l'exemplaire numérisé. Les îles Mascareignes : l'île Bourbon et l'île de France, « île Maurice abandonnée par les Hollandais en 1710 et occupée à partir de l'île Bourbon entre 1715 et 1721 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1598,
+              "to": 1598,
+              "label": "Septembre 1598"
+            },
+            "statement": "Le nom Mauritius est donné à l'île en septembre 1598, lors du passage d'une flotte néerlandaise commandée par l'amiral Van Neck, en l'honneur du prince d'Orange, selon Charles Grant, qui le tient des récits de ce voyage. C'est la plus ancienne trace de ce nom que le projet connaît. L'île existait avant ce nom ; elle était alors déserte.",
+            "formAsWritten": "Mauritius",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Jacob Corneliszoon van Neck",
+                "role": "amiral de la flotte néerlandaise dont le récit est rapporté"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The History of Mauritius, or the Isle of France, and the Neighbouring Islands",
+                "author": "Charles Grant, vicomte de Vaux",
+                "year": 1801,
+                "url": "https://archive.org/details/historyofmaurit00vaux",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 20-21",
+                "notes": "Londres, W. Bulmer, 1801, d'après les papiers du baron Grant, père de l'auteur, qui vécut vingt ans dans l'île ; lu dans l'exemplaire numérisé. Le 17 septembre 1598, la flotte aperçoit l'île que les Portugais appelaient Cerne ; les marins n'y trouvent aucune trace d'habitants, et « the Admiral named the island Mauritius, in honour of the Prince of Orange »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Île de France",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "periodLabel": "De 1715 à 1810",
+        "accounts": [
+          {
+            "period": {
+              "from": 1715,
+              "to": 1810,
+              "label": "De 1715 à 1810"
+            },
+            "era": "colonial",
+            "statement": "Le nom Île de France désigne l'île Maurice sous la domination française : elle est occupée à partir de l'île Bourbon entre 1715 et 1721, selon R. K. Kent, et les Français y exploitent des plantations à partir de 1735, selon A. I. Salim. Les Britanniques s'en emparent en 1810.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 28 : Madagascar et les îles de l'océan Indien",
+                "author": "R. K. Kent",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 939",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot, lu dans l'exemplaire numérisé. Les îles Mascareignes : l'île Bourbon et l'île de France, « île Maurice abandonnée par les Hollandais en 1710 et occupée à partir de l'île Bourbon entre 1715 et 1721 »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 25 : La côte orientale de l'Afrique",
+                "author": "A. I. Salim",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 839",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot, lu dans l'exemplaire numérisé. La traite se développe pour fournir aux Français les esclaves des plantations de leurs colonies des Mascareignes, « l'île de France (île Maurice) et l'île Bourbon (Réunion) », à partir de 1735."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 10 : La côte et l'hinterland de l'Afrique orientale de 1845 à 1880",
+                "author": "Isaria N. Kimambo",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 270",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, lu dans l'exemplaire numérisé. La traite des esclaves à destination de l'île Maurice avait été freinée par les Britanniques, « qui s'emparèrent de l'île en 1810 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1715,
+              "to": 1715,
+              "label": "1715"
+            },
+            "era": "colonial",
+            "statement": "Le nom Île de France apparaît en 1715, quand un capitaine de la marine royale française, M. du Fresne, aborde au port du nord-ouest, selon Charles Grant, qui s'appuie sur les journaux publiés dans l'île de 1785 à 1788. C'est la plus ancienne trace de ce nom que le projet connaît. L'île portait déjà le nom de Mauritius.",
+            "formAsWritten": "Isle of France",
+            "birth": true,
+            "actors": [
+              {
+                "name": "M. du Fresne",
+                "role": "capitaine de la marine royale française cité par Charles Grant"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The History of Mauritius, or the Isle of France, and the Neighbouring Islands",
+                "author": "Charles Grant, vicomte de Vaux",
+                "year": 1801,
+                "url": "https://archive.org/details/historyofmaurit00vaux",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 29",
+                "notes": "Londres, W. Bulmer, 1801, d'après les papiers du baron Grant, père de l'auteur, qui vécut vingt ans dans l'île ; lu dans l'exemplaire numérisé. « In 1715, M. du Fresne, Captain in the naval service of the King of France, arrived at the north-west port, and gave the island the name which it now bears, of the Isle of France. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Cerne",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "periodLabel": "XVIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1505,
+              "to": 1505,
+              "label": "1505"
+            },
+            "statement": "Le nom Cerne est le nom portugais de l'île en 1505, selon Charles Grant, qui le lie à sa découverte par Pedro Mascarenhas sous le gouvernement de Francisco de Almeida. C'est la plus ancienne trace de ce nom que le projet connaît. Grant ajoute que les Portugais ne s'y sont pas installés.",
+            "formAsWritten": "Cerne",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Pedro Mascarenhas",
+                "role": "navigateur portugais à qui Charles Grant attribue la découverte de l'île"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The History of Mauritius, or the Isle of France, and the Neighbouring Islands",
+                "author": "Charles Grant, vicomte de Vaux",
+                "year": 1801,
+                "url": "https://archive.org/details/historyofmaurit00vaux",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 18",
+                "notes": "Londres, W. Bulmer, 1801, d'après les papiers du baron Grant, père de l'auteur, qui vécut vingt ans dans l'île ; lu dans l'exemplaire numérisé. « Mascaregnas gave the name of Cerne to the Isle of France » en 1505 ; Grant n'a trouvé aucune trace d'établissement portugais sur l'île au XVIe siècle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1801,
+              "to": 1801,
+              "label": "Proposée en 1801"
+            },
+            "statement": "Le nom Cerne viendrait de Cerna Ethiopia, le nom que Pline l'Ancien donne à Madagascar, selon Charles Grant, qui précise que rien ne prouve que les Anciens aient connu l'île.",
+            "hypothesisGroup": "origine du nom Cerne",
+            "sources": [
+              {
+                "title": "The History of Mauritius, or the Isle of France, and the Neighbouring Islands",
+                "author": "Charles Grant, vicomte de Vaux",
+                "year": 1801,
+                "url": "https://archive.org/details/historyofmaurit00vaux",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 18",
+                "notes": "Londres, W. Bulmer, 1801, d'après les papiers du baron Grant, père de l'auteur, qui vécut vingt ans dans l'île ; lu dans l'exemplaire numérisé. Cerne viendrait « without doubt, from the appellation of Cerna Ethiopia, which is given by Pliny to the island of Madagascar » ; Grant juge que ni Pline ni les autres auteurs anciens ne connaissaient l'île."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [

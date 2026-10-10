@@ -6,6 +6,416 @@
   "summary": "La Zambie porte le nom du fleuve Zambèze, adopté en 1964 en remplacement de « Rhodésie du Nord ». Le Barotseland, le royaume Bemba et l'empire Lunda en composent l'histoire précoloniale. Bemba, Tonga, Lozi, Chewa et Lunda y perpétuent le Gule Wamkulu et les polyrythmes.",
   "etymology": "Le nom \"Zambie\" viendrait du fleuve Zambèze (Zambezi), qui traverse le pays. Le nom a été adopté lors de l'indépendance en 1964, remplaçant \"Rhodésie du Nord\" (Northern Rhodesia).",
   "nameOriginActor": "Le nom \"Zambie\" a été proposé par les nationalistes zambiens lors de l'indépendance. Le fleuve Zambèze tire son nom des peuples locaux (probablement d'origine bantoue).",
+  "nameHistory": {
+    "summary": "Le nom Zambie désigne un pays d'Afrique australe, la République de Zambie, qui a pris en 1964 un nom tiré de celui du fleuve Zambèze. Le pays s'appelait auparavant Rhodésie du Nord, d'après le nom de Cecil Rhodes ; avant 1911, il formait deux territoires, la Rhodésie du Nord-Est et la Rhodésie du Nord-Ouest. Les sources ne s'accordent pas sur l'origine du nom du fleuve ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Zambie",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom tiré du fleuve Zambèze, pris par la Rhodésie du Nord à son indépendance en 1964.",
+        "periodLabel": "Forgé en 1958 selon un récit de presse ; nom de l'État depuis 1964",
+        "accounts": [
+          {
+            "period": {
+              "from": 1964,
+              "to": null,
+              "label": "Depuis le 24 octobre 1964"
+            },
+            "era": "modern",
+            "statement": "Le nom Zambie, Zambia en anglais, est celui de l'État depuis le 24 octobre 1964 : ce jour-là, la Rhodésie du Nord cesse d'être un protectorat britannique et devient une république indépendante « sous le nom de Zambia », selon la loi britannique sur l'indépendance de la Zambie.",
+            "aspect": "usage",
+            "formAsWritten": "Zambia",
+            "sources": [
+              {
+                "title": "Zambia Independence Act 1964",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1964,
+                "url": "https://www.legislation.gov.uk/ukpga/1964/65/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 1",
+                "notes": "Texte de la loi, lu sur le site officiel de la législation britannique. La section 1 dispose que, le 24 octobre 1964, les territoires de la Northern Rhodesia cessent d'être un protectorat et deviennent une république indépendante « under the name of Zambia »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 131, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. Tableau chronologique des indépendances : « Zambie », indépendante le 24 octobre 1964, ancienne « Rhodésie du Nord » sous domination britannique, fédérée avec le Nyasaland et la Rhodésie du Sud du 1er octobre 1953 au 31 décembre 1963."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1964,
+              "to": 1964,
+              "label": "1964"
+            },
+            "era": "modern",
+            "statement": "Le nom Zambie est celui que prend la Rhodésie du Nord quand elle accède à l'indépendance, l'année qui suit la dissolution de la Fédération de Rhodésie et du Nyassaland, selon David Chanaiwa.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 10 : L'Afrique australe",
+                "author": "David Chanaiwa",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 288",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. Après la dissolution de la Fédération en 1963, la Rhodésie du Nord accède à l'indépendance l'année suivante « sous le nom de Zambie »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Zambie désigne aujourd'hui l'État ; il est tiré de celui du fleuve Zambèze, qui traverse le pays, selon Henry Kyambalesa. L'origine du nom du fleuve, elle, reste discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Zambia: A Nation Is Born!",
+                "author": "Henry Kyambalesa, Lusaka Times",
+                "year": 2023,
+                "url": "https://web.archive.org/web/20250520154800/https://www.lusakatimes.com/2023/06/02/zambia-a-nation-is-born/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Tribune publiée le 2 juin 2023, lue dans une copie archivée du 20 mai 2025. L'auteur rapporte, d'après un article du Zambia Daily Mail de 1999 que nous n'avons pas lu, que le nom Zambia a été forgé en octobre 1958, au lancement du Zambia African National Congress à Broken Hill, aujourd'hui Kabwe. Le nom Zambezia aurait d'abord été proposé, puis raccourci en Zambia ; l'auteur prête cette suggestion, sans certitude, à Simon Mwansa Kapwepwe. Il ajoute que le pays tire son nom du fleuve Zambèze."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1958,
+              "to": 1958,
+              "label": "Octobre 1958"
+            },
+            "era": "colonial",
+            "statement": "Le nom Zambia apparaît en octobre 1958 dans celui d'un parti, le Zambia African National Congress, lancé à Broken Hill, aujourd'hui Kabwe, selon un article du Zambia Daily Mail de 1999 que rapporte Henry Kyambalesa. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays qu'il désigne existait déjà avant lui, sous le nom de Rhodésie du Nord.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Zambia: A Nation Is Born!",
+                "author": "Henry Kyambalesa, Lusaka Times",
+                "year": 2023,
+                "url": "https://web.archive.org/web/20250520154800/https://www.lusakatimes.com/2023/06/02/zambia-a-nation-is-born/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Tribune publiée le 2 juin 2023, lue dans une copie archivée du 20 mai 2025. L'auteur rapporte, d'après un article du Zambia Daily Mail de 1999 que nous n'avons pas lu, que le nom Zambia a été forgé en octobre 1958, au lancement du Zambia African National Congress à Broken Hill, aujourd'hui Kabwe. Le nom Zambezia aurait d'abord été proposé, puis raccourci en Zambia ; l'auteur prête cette suggestion, sans certitude, à Simon Mwansa Kapwepwe. Il ajoute que le pays tire son nom du fleuve Zambèze."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1958,
+              "to": 1958,
+              "label": "Octobre 1958, selon un récit de 1999"
+            },
+            "era": "colonial",
+            "statement": "Le nom Zambia viendrait d'un raccourcissement de Zambezia, le nom d'abord proposé pour ce parti, selon un article du Zambia Daily Mail de 1999 que rapporte Henry Kyambalesa. L'article prête cette suggestion, sans certitude, à Simon Mwansa Kapwepwe.",
+            "hypothesisGroup": "origine du nom Zambie",
+            "actors": [
+              {
+                "name": "Simon Mwansa Kapwepwe",
+                "role": "dirigeant indépendantiste de Rhodésie du Nord, à qui l'article prête la suggestion sans certitude"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Zambia: A Nation Is Born!",
+                "author": "Henry Kyambalesa, Lusaka Times",
+                "year": 2023,
+                "url": "https://web.archive.org/web/20250520154800/https://www.lusakatimes.com/2023/06/02/zambia-a-nation-is-born/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Tribune publiée le 2 juin 2023, lue dans une copie archivée du 20 mai 2025. L'auteur rapporte, d'après un article du Zambia Daily Mail de 1999 que nous n'avons pas lu, que le nom Zambia a été forgé en octobre 1958, au lancement du Zambia African National Congress à Broken Hill, aujourd'hui Kabwe. Le nom Zambezia aurait d'abord été proposé, puis raccourci en Zambia ; l'auteur prête cette suggestion, sans certitude, à Simon Mwansa Kapwepwe. Il ajoute que le pays tire son nom du fleuve Zambèze."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1609,
+              "to": 1609,
+              "label": "Rapportée en 1609"
+            },
+            "era": "polity",
+            "statement": "Le nom Zambèze viendrait d'une grande localité que le fleuve traverse en sortant d'un lac et dont il aurait pris le nom, selon le dominicain portugais João dos Santos.",
+            "hypothesisGroup": "sens du nom Zambèze",
+            "sources": [
+              {
+                "title": "Ethiopia Oriental, dans Records of South-Eastern Africa, vol. VII",
+                "author": "João dos Santos ; texte édité et traduit par George McCall Theal",
+                "year": 1901,
+                "url": "https://archive.org/details/recordsofsouthea07theaiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 71 (texte portugais) et p. 253 (traduction anglaise)",
+                "notes": "Livre imprimé à Évora en 1609, que Theal recopie en entier pour ce qui concerne l'Afrique du Sud-Est ; lu dans l'exemplaire numérisé. Livre II, chapitre II : le fleuve de Cuama, que ses riverains appellent Zambeze, s'appelle ainsi parce qu'en sortant d'un grand lac il passe par une grande localité de ce nom, dont il prend le nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "Rapportée en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Zambèze serait l'une des formes, selon les parlers, d'un nom qui veut dire « le grand fleuve » : les Barotse disent Liambai ou Leeambye, d'autres Luambeji, Ambezi ou Zambesi, selon David Livingstone.",
+            "hypothesisGroup": "sens du nom Zambèze",
+            "sources": [
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 208",
+                "notes": "Londres, John Murray, 1857, lu dans l'exemplaire numérisé. Tous les Barotse appellent le fleuve Liambai ou Leeambye, « the large river », le grand fleuve ; Luambeji, Luambesi, Ambezi, Ojimbesi et Zambesi sont les noms qu'il porte selon les parlers, et tous auraient un sens semblable."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1552,
+              "to": 1552,
+              "label": "Décade publiée en 1552"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Zambie, on parle de Zembere pour désigner le grand fleuve qui coule vers Sofala : c'est le nom que lui donnent des peuples de l'intérieur, alors que les Portugais l'appellent Cuama, selon l'historien João de Barros.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Da Asia, Décade I, livre X, chapitre I, dans Records of South-Eastern Africa, vol. VI",
+                "author": "João de Barros ; texte édité et traduit par George McCall Theal",
+                "year": 1900,
+                "url": "https://archive.org/details/recordsofsouthea06theaiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 109 (texte portugais) et p. 265 (traduction anglaise)",
+                "notes": "Extraits de la première Décade, publiée en 1552, que Theal recopie d'une édition de Lisbonne de 1778 ; lus dans l'exemplaire numérisé. Le bras du fleuve qui se jette dans la mer au-delà de Sofala s'appelle Cuama, « posto que dentro pelo sertao outros povos lhe chamam Zembere » : à l'intérieur des terres, d'autres peuples l'appellent Zembere. La traduction anglaise de Theal écrit Zambesi."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Rhodésie du Nord",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Du 17 août 1911 au 24 octobre 1964",
+        "accounts": [
+          {
+            "period": {
+              "from": 1911,
+              "to": 1964,
+              "label": "Du 17 août 1911 au 24 octobre 1964"
+            },
+            "era": "colonial",
+            "statement": "Le nom Rhodésie du Nord, Northern Rhodesia en anglais, est celui du protectorat britannique qui devient indépendant le 24 octobre 1964 sous le nom de Zambia, selon la loi britannique sur l'indépendance de la Zambie.",
+            "aspect": "usage",
+            "formAsWritten": "Northern Rhodesia",
+            "sources": [
+              {
+                "title": "Zambia Independence Act 1964",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1964,
+                "url": "https://www.legislation.gov.uk/ukpga/1964/65/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 1",
+                "notes": "Texte de la loi, lu sur le site officiel de la législation britannique. La section 1 dispose que, le 24 octobre 1964, les territoires de la Northern Rhodesia cessent d'être un protectorat et deviennent une république indépendante « under the name of Zambia »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 131, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji. Tableau chronologique des indépendances : « Zambie », indépendante le 24 octobre 1964, ancienne « Rhodésie du Nord » sous domination britannique, fédérée avec le Nyasaland et la Rhodésie du Sud du 1er octobre 1953 au 31 décembre 1963."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "17 août 1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Rhodésie du Nord devient celui d'un seul territoire le 17 août 1911 : un décret britannique, le Northern Rhodesia Order in Council, réunit alors la Rhodésie du Nord-Est et la Rhodésie du Nord-Ouest, selon l'Assemblée nationale de Zambie. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays qu'il désigne existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Debates — Friday, 24th June, 2011 : annonce « Zambia's Centenary on 17th August, 2011 »",
+                "author": "Assemblée nationale de Zambie",
+                "year": 2011,
+                "url": "https://www.parliament.gov.zm/node/1304",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Compte rendu officiel des débats, lu en ligne. Le président de l'Assemblée rappelle que la Northern Rhodesia est née le 17 août 1911 de l'union de la North Eastern Rhodesia et de la North Western Rhodesia, réunies par le Northern Rhodesia Order in Council de 1911, et que la Zambie est devenue indépendante le 24 octobre 1964."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Rhodésie du Nord reprend celui de Cecil Rhodes, l'homme d'affaires britannique qui dirigeait la British South Africa Company, selon l'Encyclopaedia Britannica de 1911.",
+            "aspect": "meaning",
+            "actors": [
+              {
+                "name": "Cecil Rhodes",
+                "role": "homme d'affaires britannique, à la tête de la British South Africa Company"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Rhodesia, dans Encyclopaedia Britannica, 11e édition, vol. 23",
+                "author": "Encyclopaedia Britannica",
+                "year": 1911,
+                "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Rhodesia",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 259",
+                "notes": "Lu dans la transcription de Wikisource. L'article s'ouvre sur « RHODESIA (so named after Cecil Rhodes) » et décrit un pays coupé en deux par le Zambèze : au sud la Southern Rhodesia, au nord la North-Western Rhodesia, ou Barotseland, et la North-Eastern Rhodesia."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "3 mai 1895"
+            },
+            "era": "colonial",
+            "statement": "Avant le nom Rhodésie du Nord, le nom Rhodésie désigne, par une proclamation du 3 mai 1895, tout le territoire de la British South Africa Company, des deux côtés du Zambèze, selon l'Encyclopaedia Britannica de 1911.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Rhodesia, dans Encyclopaedia Britannica, 11e édition, vol. 23",
+                "author": "Encyclopaedia Britannica",
+                "year": 1911,
+                "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Rhodesia",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 266",
+                "notes": "Lu dans la transcription de Wikisource. Entre 1889 et 1891, de nombreux peuples entre les lacs Nyassa et Tanganyika et le Zambèze passent des traités avec la British South Africa Company ; par une proclamation du 3 mai 1895, le territoire de la compagnie reçoit officiellement le nom de « Rhodesia », en reconnaissance du rôle de Cecil Rhodes."
+              },
+              {
+                "title": "Rhodesia, dans Encyclopaedia Britannica, 11e édition, vol. 23",
+                "author": "Encyclopaedia Britannica",
+                "year": 1911,
+                "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Rhodesia",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 259",
+                "notes": "Lu dans la transcription de Wikisource. L'article s'ouvre sur « RHODESIA (so named after Cecil Rhodes) » et décrit un pays coupé en deux par le Zambèze : au sud la Southern Rhodesia, au nord la North-Western Rhodesia, ou Barotseland, et la North-Eastern Rhodesia."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Rhodésie du Nord-Est",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Jusqu'au 17 août 1911",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1911,
+              "label": "Jusqu'au 17 août 1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Rhodésie du Nord-Est, North Eastern Rhodesia en anglais, désigne l'un des deux territoires réunis le 17 août 1911 pour former la Rhodésie du Nord, selon l'Assemblée nationale de Zambie. On ne sait pas avec certitude, d'après les sources lues, quand ce nom est apparu.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Debates — Friday, 24th June, 2011 : annonce « Zambia's Centenary on 17th August, 2011 »",
+                "author": "Assemblée nationale de Zambie",
+                "year": 2011,
+                "url": "https://www.parliament.gov.zm/node/1304",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Compte rendu officiel des débats, lu en ligne. Le président de l'Assemblée rappelle que la Northern Rhodesia est née le 17 août 1911 de l'union de la North Eastern Rhodesia et de la North Western Rhodesia, réunies par le Northern Rhodesia Order in Council de 1911, et que la Zambie est devenue indépendante le 24 octobre 1964."
+              },
+              {
+                "title": "Rhodesia, dans Encyclopaedia Britannica, 11e édition, vol. 23",
+                "author": "Encyclopaedia Britannica",
+                "year": 1911,
+                "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Rhodesia",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 259",
+                "notes": "Lu dans la transcription de Wikisource. L'article s'ouvre sur « RHODESIA (so named after Cecil Rhodes) » et décrit un pays coupé en deux par le Zambèze : au sud la Southern Rhodesia, au nord la North-Western Rhodesia, ou Barotseland, et la North-Eastern Rhodesia."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Rhodésie du Nord-Ouest",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Jusqu'au 17 août 1911",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1911,
+              "label": "Jusqu'au 17 août 1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Rhodésie du Nord-Ouest, North Western Rhodesia en anglais, désigne l'autre territoire réuni en 1911 dans la Rhodésie du Nord ; l'Encyclopaedia Britannica de 1911 l'appelle aussi Barotseland, du nom du pays des Lozi. On ne sait pas avec certitude, d'après les sources lues, quand ce nom est apparu.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Debates — Friday, 24th June, 2011 : annonce « Zambia's Centenary on 17th August, 2011 »",
+                "author": "Assemblée nationale de Zambie",
+                "year": 2011,
+                "url": "https://www.parliament.gov.zm/node/1304",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Compte rendu officiel des débats, lu en ligne. Le président de l'Assemblée rappelle que la Northern Rhodesia est née le 17 août 1911 de l'union de la North Eastern Rhodesia et de la North Western Rhodesia, réunies par le Northern Rhodesia Order in Council de 1911, et que la Zambie est devenue indépendante le 24 octobre 1964."
+              },
+              {
+                "title": "Rhodesia, dans Encyclopaedia Britannica, 11e édition, vol. 23",
+                "author": "Encyclopaedia Britannica",
+                "year": 1911,
+                "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Rhodesia",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 259",
+                "notes": "Lu dans la transcription de Wikisource. L'article s'ouvre sur « RHODESIA (so named after Cecil Rhodes) » et décrit un pays coupé en deux par le Zambèze : au sud la Southern Rhodesia, au nord la North-Western Rhodesia, ou Barotseland, et la North-Eastern Rhodesia."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": ["Rhodésie du Nord (1890-1964)"],

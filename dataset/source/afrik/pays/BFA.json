@@ -6,6 +6,354 @@
   "summary": "Le nom du Burkina Faso est composé dans deux langues du pays : « la patrie des hommes intègres », de « burkina » en mooré et « faso » en dioula. Le pays s'appelait Haute-Volta jusqu'en 1984, et la colonie de ce nom fut supprimée en 1932 puis rétablie en 1947. Son histoire est celle des royaumes mossi — Tenkodogo, Yatenga, Ouagadougou, Fada N'Gourma, Boussouma — et des chefferies gur qui les entouraient.",
   "etymology": "Le nom \"Burkina Faso\" est composé de deux mots pris dans deux langues différentes du pays : \"burkina\", qui dit l'intégrité et l'honneur en mooré, la langue des Mossi, et \"faso\", qui dit le pays, la terre ou la patrie en dioula, une langue mandé. Ensemble, ils se traduisent par \"la patrie des hommes intègres\". Le nom remplace \"Haute-Volta\", que l'administration coloniale française avait donné à la colonie d'après le fleuve Volta. Une ordonnance du 2 août 1984 établit le changement, qui prend effet le 4 août 1984, jour du premier anniversaire de l'arrivée au pouvoir de Thomas Sankara. Le gentilé \"burkinabè\" n'est formé dans aucune de ces deux langues seule : le géographe Alain Maharaux écrit qu'il emprunte aux trois langues principales du pays. La langue d'origine de sa terminaison et son sens précis ne sont pas établis par les sources réunies ici.",
   "nameOriginActor": "Le nom a été choisi sous la présidence de Thomas Sankara et établi par une ordonnance du 2 août 1984, entrée en vigueur le 4 août. Le nom qu'il remplace, \"Haute-Volta\", avait été donné par l'administration coloniale française, qui créa la colonie par décret du 1er mars 1919 avec Ouagadougou pour capitale.",
+  "nameHistory": {
+    "summary": "Le nom Burkina Faso désigne un pays d'Afrique de l'Ouest, qui le porte depuis le 4 août 1984. Il est formé de deux mots pris à deux langues du pays, le mooré et le dioula. Le pays s'appelait auparavant Haute-Volta, du nom que l'administration coloniale française avait donné à la colonie en 1919. Les sources lues s'accordent sur le sens du nom Burkina Faso ; elles disent moins de choses sur le choix du nom Haute-Volta. Nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Burkina Faso",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "« Le pays des hommes intègres », en mooré et en dioula, nom de l'État depuis 1984.",
+        "periodLabel": "Nom de l'État depuis le 4 août 1984",
+        "accounts": [
+          {
+            "period": {
+              "from": 1984,
+              "to": null,
+              "label": "Depuis le 4 août 1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Burkina Faso est celui du pays depuis le 4 août 1984, selon la Digithèque de l'université de Perpignan. Le tableau des indépendances de l'Histoire générale de l'Afrique le note ainsi : « Ancienne Haute-Volta, a changé de nom le 4/VIII/1984 ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Burkina Faso",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/bf.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page consultée le 10 octobre 2026. Chronologie : création de la colonie de la Haute-Volta en 1919, partage par décret en septembre 1932, reconstitution en 1947, République de Haute-Volta proclamée le 11 décembre 1958, indépendance le 5 août 1960 ; « 4 août 1984 - Le pays prend le nom de Burkina Faso »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 130, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji, lu dans l'exemplaire numérisé. Tableau chronologique des indépendances : « Burkina Faso 5/VIII/1960 France Ancienne Haute-Volta, a changé de nom le 4/VIII/1984 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Burkina Faso veut dire « le pays des hommes intègres », selon Alain Maharaux et Jeune Afrique. Le premier mot vient du mooré, où il signifie « homme intègre », et le second du dioula, où il signifie « terre natale », selon Jeune Afrique. Les sources lues s'accordent sur ce sens.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La Haute-Volta devient Burkina Faso : un territoire qui se crée, se défait et s'affirme au rythme des enjeux, colloque « Le territoire, lien ou frontière ? », Paris, 2-4 octobre 1995",
+                "author": "Alain Maharaux",
+                "year": 1995,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-32.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "notes": "Communication archivée par l'Institut de recherche pour le développement, relue le 10 octobre 2026. Le nouveau nom doit « rompre avec ce passé néo-colonial » ; « Burkina Faso signifie : le pays des hommes intègres » ; le terme burkinabè « emprunte aux trois langues principales du pays »."
+              },
+              {
+                "title": "Le 4 août 1984, Thomas Sankara rebaptisait la Haute-Volta en Burkina Faso",
+                "author": "Benjamin Roger, Jeune Afrique",
+                "year": 2014,
+                "url": "https://www.jeuneafrique.com/48652/politique/le-4-ao-t-1984-thomas-sankara-rebaptisait-la-haute-volta-en-burkina-faso/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "page": "deuxième paragraphe",
+                "notes": "Article de presse publié en juillet 2014, republié en 2021, consulté le 10 octobre 2026. Il date l'ordonnance du 2 août 1984, donne l'orthographe d'origine « Bourkina Fâso », et traduit burkina par « homme intègre » en mooré et faso par « terre natale » en dioula."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Burkina Faso doit permettre de rompre avec le passé néocolonial et de porter un projet de société commun à tous les habitants, selon Alain Maharaux. Le nom des habitants, burkinabè, emprunte de son côté aux trois langues principales du pays.",
+            "sources": [
+              {
+                "title": "La Haute-Volta devient Burkina Faso : un territoire qui se crée, se défait et s'affirme au rythme des enjeux, colloque « Le territoire, lien ou frontière ? », Paris, 2-4 octobre 1995",
+                "author": "Alain Maharaux",
+                "year": 1995,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-32.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "notes": "Communication archivée par l'Institut de recherche pour le développement, relue le 10 octobre 2026. Le nouveau nom doit « rompre avec ce passé néo-colonial » ; « Burkina Faso signifie : le pays des hommes intègres » ; le terme burkinabè « emprunte aux trois langues principales du pays »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "2 août 1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Burkina Faso apparaît dans une ordonnance du 2 août 1984, écrit Bourkina Fâso, dans la forme longue République démocratique et populaire du Bourkina Fâso, selon Jeune Afrique. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays et ses peuples existaient bien avant lui.",
+            "formAsWritten": "Bourkina Fâso",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Thomas Sankara",
+                "role": "capitaine, à la tête du pays depuis le 4 août 1983"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Le 4 août 1984, Thomas Sankara rebaptisait la Haute-Volta en Burkina Faso",
+                "author": "Benjamin Roger, Jeune Afrique",
+                "year": 2014,
+                "url": "https://www.jeuneafrique.com/48652/politique/le-4-ao-t-1984-thomas-sankara-rebaptisait-la-haute-volta-en-burkina-faso/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "page": "deuxième paragraphe",
+                "notes": "Article de presse publié en juillet 2014, republié en 2021, consulté le 10 octobre 2026. Il date l'ordonnance du 2 août 1984, donne l'orthographe d'origine « Bourkina Fâso », et traduit burkina par « homme intègre » en mooré et faso par « terre natale » en dioula."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1140,
+              "to": 1160,
+              "label": "Milieu du XIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Burkina Faso, et bien avant celui de Haute-Volta, le plateau central du pays voit se former les royaumes mossi, dont les premières formations datent du milieu du XIIe siècle, selon Michel Izard et Joseph Ki-Zerbo.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 12 : Du Niger à la Volta",
+                "author": "Michel Izard et Joseph Ki-Zerbo",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 381",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, lu dans l'exemplaire numérisé. Partie « Sur le plateau central voltaïque, les royaumes mossi du XVIe au XIXe siècle »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Haute-Volta",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "L'administration coloniale française",
+        "shortLine": "Le nom de la colonie créée en 1919, gardé par l'État jusqu'en 1984.",
+        "periodLabel": "De 1919 à 1932, puis de 1947 au 4 août 1984",
+        "accounts": [
+          {
+            "period": {
+              "from": 1960,
+              "to": 1984,
+              "label": "Du 5 août 1960 au 4 août 1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Haute-Volta reste celui de l'État devenu indépendant le 5 août 1960, jusqu'au 4 août 1984, quand le pays prend le nom de Burkina Faso, selon la Digithèque de l'université de Perpignan et l'Histoire générale de l'Afrique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Burkina Faso",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/bf.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page consultée le 10 octobre 2026. Chronologie : création de la colonie de la Haute-Volta en 1919, partage par décret en septembre 1932, reconstitution en 1947, République de Haute-Volta proclamée le 11 décembre 1958, indépendance le 5 août 1960 ; « 4 août 1984 - Le pays prend le nom de Burkina Faso »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 130, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji, lu dans l'exemplaire numérisé. Tableau chronologique des indépendances : « Burkina Faso 5/VIII/1960 France Ancienne Haute-Volta, a changé de nom le 4/VIII/1984 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1958,
+              "to": 1958,
+              "label": "11 décembre 1958"
+            },
+            "era": "colonial",
+            "statement": "Le nom Haute-Volta devient celui d'une république : après le référendum du 28 septembre 1958, la République de Haute-Volta est proclamée le 11 décembre 1958, comme État membre de la Communauté, selon la Digithèque de l'université de Perpignan.",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — Indépendance de la République de Haute-Volta, 5 août 1960",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/bf1960ind.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page consultée le 10 octobre 2026. Après le référendum du 28 septembre 1958, la République de Haute-Volta est proclamée le 11 décembre 1958 ; l'indépendance est proclamée le 5 août 1960."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1947,
+              "to": 1947,
+              "label": "4 septembre 1947"
+            },
+            "era": "colonial",
+            "statement": "Le nom Haute-Volta revient avec le territoire : la loi du 4 septembre 1947 rétablit la Haute-Volta dans ses limites de 1932, avec Ouagadougou pour capitale, selon la Digithèque de l'université de Perpignan et Alain Maharaux.",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — La colonie française de Haute-Volta",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/bf1919.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page consultée le 10 octobre 2026. Elle reproduit le décret du 1er mars 1919, publié au Journal officiel de la République française du 20 mai 1919, et retrace la région Volta de 1899, la suppression de 1932 et le rétablissement de 1947 par la loi n° 47-1707 du 4 septembre 1947."
+              },
+              {
+                "title": "La Haute-Volta devient Burkina Faso : un territoire qui se crée, se défait et s'affirme au rythme des enjeux, colloque « Le territoire, lien ou frontière ? », Paris, 2-4 octobre 1995",
+                "author": "Alain Maharaux",
+                "year": 1995,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-32.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "La Haute-Volta « retrouvera son territoire et une identité par la loi du 4 septembre 1947, dans ses limites du 5 septembre 1932 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "Septembre 1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Haute-Volta disparaît de la carte en 1932 : un décret supprime la colonie et partage son territoire entre le Niger, le Soudan français et la Côte d'Ivoire, selon la Digithèque de l'université de Perpignan. Alain Maharaux y voit l'effet de la crise économique mondiale.",
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — La colonie française de Haute-Volta",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/bf1919.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page consultée le 10 octobre 2026. Elle reproduit le décret du 1er mars 1919, publié au Journal officiel de la République française du 20 mai 1919, et retrace la région Volta de 1899, la suppression de 1932 et le rétablissement de 1947 par la loi n° 47-1707 du 4 septembre 1947."
+              },
+              {
+                "title": "La Haute-Volta devient Burkina Faso : un territoire qui se crée, se défait et s'affirme au rythme des enjeux, colloque « Le territoire, lien ou frontière ? », Paris, 2-4 octobre 1995",
+                "author": "Alain Maharaux",
+                "year": 1995,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-32.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "En 1932, « la crise économique mondiale aidant, les arguments en faveur de l'éclatement de la colonie l'emportèrent »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1960,
+              "label": "Époque coloniale"
+            },
+            "era": "colonial",
+            "statement": "Le nom Haute-Volta désigne une colonie située dans le bassin des Volta, comme l'historien Michel Izard appelle cette région. Les sources lues ne disent pas qui a proposé ce nom ni pourquoi il a été retenu.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 9 : Les peuples et les royaumes de la boucle du Niger et du bassin des Volta du XIIe au XVIe siècle",
+                "author": "Michel Izard",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 263",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, lu dans l'exemplaire numérisé. L'auteur parle de « l'économie du bassin des Volta du XIIe au XVIe siècle »."
+              },
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — La colonie française de Haute-Volta",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/bf1919.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page consultée le 10 octobre 2026. Elle reproduit le décret du 1er mars 1919, publié au Journal officiel de la République française du 20 mai 1919, et retrace la région Volta de 1899, la suppression de 1932 et le rétablissement de 1947 par la loi n° 47-1707 du 4 septembre 1947."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1er mars 1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Haute-Volta apparaît dans le décret du 1er mars 1919 : sept cercles détachés du Haut-Sénégal et Niger « forment une colonie distincte qui porte le nom de Haute-Volta », avec Ouagadougou pour chef-lieu, selon le texte que publie la Digithèque de l'université de Perpignan. C'est la plus ancienne trace de ce nom que le projet connaît. Les royaumes et les peuples de ce territoire existaient bien avant lui.",
+            "formAsWritten": "Haute-Volta",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — La colonie française de Haute-Volta",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/bf1919.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "article premier",
+                "notes": "Page consultée le 10 octobre 2026. Elle reproduit le décret du 1er mars 1919, publié au Journal officiel de la République française du 20 mai 1919, et retrace la région Volta de 1899, la suppression de 1932 et le rétablissement de 1947 par la loi n° 47-1707 du 4 septembre 1947."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1899,
+              "to": 1899,
+              "label": "1899"
+            },
+            "era": "colonial",
+            "statement": "Avant le nom Haute-Volta, on parle de la région Volta pour désigner ces territoires conquis par la France, qui forment en 1899 un territoire militaire, selon la Digithèque de l'université de Perpignan.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Digithèque de matériaux juridiques et politiques (Université de Perpignan) — La colonie française de Haute-Volta",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/bf1919.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page consultée le 10 octobre 2026. Elle reproduit le décret du 1er mars 1919, publié au Journal officiel de la République française du 20 mai 1919, et retrace la région Volta de 1899, la suppression de 1932 et le rétablissement de 1947 par la loi n° 47-1707 du 4 septembre 1947."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [

@@ -6,6 +6,628 @@
   "summary": "L'Éthiopie est nommée par un mot grec, « Aithiopia », le pays des visages brûlés ; les Égyptiens l'appelaient Pount. Du royaume d'Axoum à l'Empire salomonien, son histoire étatique est ininterrompue, et elle n'a jamais été durablement colonisée — l'occupation italienne mise à part. Oromo, Amhara, Somali, Tigréens, Sidama et Gurage y composent une mosaïque sémitique et couchitique.",
   "etymology": "Le nom \"Éthiopie\" viendrait du grec \"Αἰθιοπία\" (Aithiopia), qui voudrait dire \"pays des visages brûlés\" ou \"pays des Noirs\". Le terme était utilisé par les Grecs anciens pour désigner les terres au sud de l'Égypte. Le nom amharique \"Ityop'iya\" (ኢትዮጵያ) serait dérivé du grec.",
   "nameOriginActor": "Le nom \"Éthiopie\" a été utilisé par les Grecs anciens et adopté par les royaumes éthiopiens. Le nom amharique \"Ityop'iya\" est dérivé du grec. Le pays s'est appelé \"Abyssinie\" par les Européens jusqu'au XXe siècle.",
+  "nameHistory": {
+    "summary": "Le nom Éthiopie désigne un pays de la Corne de l'Afrique, la République fédérale démocratique d'Éthiopie, qui se nomme elle-même Ītyop'iya en amharique. Pendant des siècles, ses voisins arabes puis les Européens l'ont aussi appelée Abyssinie. Les sources ne s'accordent pas sur l'origine de ces deux noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Éthiopie",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom connu des Grecs, porté par les rois d'Aksum puis par l'État ; son origine reste discutée.",
+        "periodLabel": "Écrit dès l'Antiquité grecque ; titre des rois depuis le XIIIe siècle ; nom de l'État aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1995,
+              "to": null,
+              "label": "Depuis le 21 août 1995"
+            },
+            "era": "modern",
+            "statement": "Le nom Éthiopie est celui de la République fédérale démocratique d'Éthiopie, le nom que donne à l'État l'article premier de sa Constitution de 1995. En amharique, le pays se nomme Ītyop'iya, selon la liste des noms de pays des Nations unies.",
+            "aspect": "usage",
+            "formAsWritten": "Ītyop'iya",
+            "sources": [
+              {
+                "title": "Éthiopie, Constitution du 21 août 1995",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/et1995.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "article premier",
+                "notes": "Version française de la Constitution, consultée le 10 octobre 2026. L'article premier, intitulé « Nom de l'État », dit que l'État éthiopien est connu sous le nom de République fédérale démocratique d'Éthiopie."
+              },
+              {
+                "title": "Liste des noms de pays du GENUNG (document GEGN.2/2025/171/CRP.171)",
+                "author": "Groupe d'experts des Nations unies pour les noms géographiques, coordination Pierre Jaillard",
+                "year": 2025,
+                "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/documents/GEGN.2_2025_171_CRP171_item5e.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 37",
+                "notes": "Entrée Éthiopie, consultée le 10 octobre 2026. Nom court officiel en amharique : Ītyop'iya ; nom français à l'ONU : Éthiopie, République fédérale démocratique d'Éthiopie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Éthiopie désigne aujourd'hui un État de la Corne de l'Afrique. Chez les auteurs grecs, il désignait des peuples à la peau foncée et les pays au sud de l'Égypte, surtout celui de Koush, l'actuel Soudan. Son origine est discutée ; nous présentons plus bas les explications que donnent les sources.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 11 : La civilisation de Napata et de Méroé",
+                "author": "A. Hakem, avec le concours de I. Hrbek et J. Vercoutter",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 318",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. Les auteurs classiques, d'Hérodote au Ve siècle avant notre ère à Diodore de Sicile au Ier siècle avant notre ère, appellent « Éthiopiens » les habitants de l'empire de Koush."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 6 : L'Égypte à l'époque hellénistique",
+                "author": "H. Riad, avec le concours de J. Devisse",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 208",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. Diodore consacre un livre entier « à l'Éthiopie, c'est-à-dire au pays qui s'appelle de nos jours le Soudan »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 20 : Le Sahara pendant l'Antiquité classique",
+                "author": "P. Salama",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 562, note 13",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. « On traduit d'ordinaire le grec Aethiops par “homme au visage brûlé” » ; le colloque de Dakar de janvier 1976 en a discuté « sans que les positions soient profondément modifiées »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "16 juillet 1931"
+            },
+            "era": "polity",
+            "statement": "Le nom Éthiopie figure dans la première Constitution du pays, octroyée par l'empereur Haylé Sellasié : son article premier parle du « territoire d'Éthiopie » et de la « nation éthiopienne ».",
+            "actors": [
+              {
+                "name": "Haylé Sellasié Ier",
+                "role": "empereur d'Éthiopie, qui octroie la Constitution"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Éthiopie, Constitution du 16 juillet 1931",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/et1931.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "article premier",
+                "notes": "Texte français repris de l'Annuaire de l'Institut international de droit public, 1932, consulté le 10 octobre 2026. La page présente cette Constitution comme octroyée par l'empereur Haylé Sellasié."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1270,
+              "to": 1285,
+              "label": "Depuis le règne de Yekouno Amlak, 1270-1285"
+            },
+            "era": "polity",
+            "statement": "Le nom Éthiopie, Ityopya en guèze, entre dans le titre des rois : depuis Yekouno Amlak, chacun se dit « roi des rois d'Éthiopie », selon E. A. Wallis Budge. Il rapporte aussi que les habitants appellent leur pays Éthiopie et n'aiment pas le nom arabe Habash.",
+            "sources": [
+              {
+                "title": "A History of Ethiopia, Nubia and Abyssinia, volume I",
+                "author": "E. A. Wallis Budge",
+                "year": 1928,
+                "url": "https://archive.org/details/in.ernet.dli.2015.499166",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. vii",
+                "notes": "Londres, Methuen, 1928, lu dans l'exemplaire numérisé par la Digital Library of India. Préface : « Every king of Abyssinia, from the time of […] Yekuno 'Amlak (A.D. 1270-1285) until to-day, has been proud to adopt as his chief title “Negūša Nagast za-Ityopya”, i.e. “King of the kings of Ethiopia”. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 300,
+              "to": 399,
+              "label": "IVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Éthiopie figure dans la version grecque d'une inscription du roi Ezana d'Aksum : il s'y dit roi des Aksumites, des Himyarites et, entre autres peuples, des Éthiopiens, selon la traduction de Siegbert Uhlig.",
+            "sources": [
+              {
+                "title": "Eine trilinguale ʿEzana-Inschrift",
+                "author": "Siegbert Uhlig",
+                "year": 2001,
+                "url": "https://doi.org/10.15460/aethiopica.4.1.488",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 20",
+                "notes": "Aethiopica, n° 4, 2001, p. 7-31, en allemand, lu en ligne. Édition d'une stèle du roi Ezana d'Aksum qui donne le même texte en trois versions : sud-arabique, grecque et guèze. Traduction de la version grecque : Ezana, « König der Aksumiter und der Homeriten und von Raeidan und der Aithiopier und der Sabaeier »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 19 : La Corne de l'Afrique",
+                "author": "Tekle-Tsadik Mekouria",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 596",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, codirigé par I. Hrbek. La titulature gravée par le roi Ezana le dit « roi d'Axum, de Himyar, de Kasou, de Saba, de Ḥabasha, de Raydan et Salhin, des Tsiamo et des Bēdja »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -500,
+              "to": -1,
+              "label": "Du Ve au Ier siècle avant notre ère"
+            },
+            "era": "polity",
+            "statement": "Le nom Éthiopie désigne chez les auteurs grecs, d'Hérodote à Diodore de Sicile, surtout le pays de Koush, autour de Napata et de Méroé, l'actuel Soudan, selon A. Hakem et H. Riad. Le royaume d'Aksum n'existe pas encore.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 11 : La civilisation de Napata et de Méroé",
+                "author": "A. Hakem, avec le concours de I. Hrbek et J. Vercoutter",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 318",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. Les auteurs classiques, d'Hérodote au Ve siècle avant notre ère à Diodore de Sicile au Ier siècle avant notre ère, appellent « Éthiopiens » les habitants de l'empire de Koush."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 6 : L'Égypte à l'époque hellénistique",
+                "author": "H. Riad, avec le concours de J. Devisse",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 208",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. Diodore consacre un livre entier « à l'Éthiopie, c'est-à-dire au pays qui s'appelle de nos jours le Soudan »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Épopées d'Homère"
+            },
+            "statement": "Le nom Éthiopie figure chez Homère, qui place les Éthiopiens au bord de l'Océan, « aux extrémités du monde », les uns à l'est et les autres à l'ouest, selon E. A. Wallis Budge. Il ne leur donne pas de frontières précises.",
+            "sources": [
+              {
+                "title": "A History of Ethiopia, Nubia and Abyssinia, volume I",
+                "author": "E. A. Wallis Budge",
+                "year": 1928,
+                "url": "https://archive.org/details/in.ernet.dli.2015.499166",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1-2",
+                "notes": "Londres, Methuen, 1928, lu dans l'exemplaire numérisé par la Digital Library of India. Budge cite l'Odyssée, chant I, vers 23, et l'Iliade, chant I, vers 423, et conclut qu'Homère situait ce pays près de l'Océan, loin au sud de la Grèce."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Tablettes de Pylos"
+            },
+            "statement": "Le nom Éthiopie aurait une forme proche, ai-ti-jo-qo, sur les tablettes grecques de Pylos, selon J. Desanges, qui renvoie aux travaux de l'historien Frank M. Snowden. C'est la plus ancienne trace de ce nom que le projet connaît ; nous ne l'avons pas lue nous-mêmes. Les peuples que les Grecs appelleront ainsi existaient bien avant ce nom.",
+            "formAsWritten": "ai-ti-jo-qo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 17 : Les protoberbères",
+                "author": "J. Desanges",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 461, note 21",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. La note écrit que le nom « apparaîtrait déjà sur les tablettes de Pylos sous la forme ai-ti-jo-qo » et renvoie à F. M. Snowden (1970) et à J. Desanges (1970). Nous n'avons pas vu ces tablettes nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Éthiopie viendrait d'un mot grec qui voudrait dire « au visage brûlé », c'est-à-dire à la peau foncée, selon S. Adam et J. Desanges. P. Salama rappelle que cette traduction habituelle a été discutée au colloque de Dakar de 1976, sans que les avis changent beaucoup.",
+            "hypothesisGroup": "origine du nom Éthiopie",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 8 : La Nubie, trait d'union entre l'Afrique centrale et la Méditerranée",
+                "author": "S. Adam, avec le concours de J. Vercoutter",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 246",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. Les Grecs, puis les Romains, désignent les habitants de la Nubie du nom d'« Éthiopiens », « c'est-à-dire à la peau brûlée »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 17 : Les protoberbères",
+                "author": "J. Desanges",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 461",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. Des hommes à la peau foncée vivant aux portes du Sahara, « que les Grecs appelleront Éthiopiens, c'est-à-dire faces brûlées »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 20 : Le Sahara pendant l'Antiquité classique",
+                "author": "P. Salama",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 562, note 13",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. « On traduit d'ordinaire le grec Aethiops par “homme au visage brûlé” » ; le colloque de Dakar de janvier 1976 en a discuté « sans que les positions soient profondément modifiées »."
+              },
+              {
+                "title": "A History of Ethiopia, Nubia and Abyssinia, volume I",
+                "author": "E. A. Wallis Budge",
+                "year": 1928,
+                "url": "https://archive.org/details/in.ernet.dli.2015.499166",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Londres, Methuen, 1928, lu dans l'exemplaire numérisé par la Digital Library of India. « Aithiops, “an Ethiopian”, and Aithiopia, the name of his country, are of Greek origin, the former name meaning “burnt face”. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Éthiopie viendrait d'Ityopis, « père des Éthiopiens », fils de Kuesa et petit-fils de Kam, dont le tombeau se trouverait à Mazeber, près d'Aksum : c'est l'explication que donne le Livre d'Aksum, selon la traduction de Carlo Conti Rossini. Le traducteur signale que le passage est très abîmé dans les manuscrits.",
+            "hypothesisGroup": "origine du nom Éthiopie",
+            "sources": [
+              {
+                "title": "Documenta ad illustrandam historiam, I : Liber Axumae (Livre d'Aksum), traduction française",
+                "author": "Carlo Conti Rossini (traducteur)",
+                "year": 1910,
+                "url": "https://archive.org/details/liberaxumae00pari",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 3 et 6, note 14",
+                "notes": "Paris, collection Scriptores aethiopici, 1910, lu dans l'exemplaire numérisé. Recueil de textes en guèze conservés avec le Kebra Nagast et consacrés à la ville et à la cathédrale d'Aksum. Page 3 : la ville « avait été bâtie à Mazeber, où se trouve le tombeau d'Ityopis, fils de Kuesa, fils de Kam ». Page 6 : « le tombeau d'Ityopis, père des Éthiopiens », suivi des mots « qui s'appellent Ityopya » ; la note 14 précise : « Le texte est très corrompu. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Éthiopie serait passé au pays d'Aksum par la traduction de la Bible du grec en guèze : les traducteurs auraient rendu par Ityopya le nom biblique de Koush, selon E. A. Wallis Budge, qui ne sait pas qui a le premier donné ce nom au pays.",
+            "hypothesisGroup": "passage du nom Éthiopie au pays d'Aksum",
+            "sources": [
+              {
+                "title": "A History of Ethiopia, Nubia and Abyssinia, volume I",
+                "author": "E. A. Wallis Budge",
+                "year": 1928,
+                "url": "https://archive.org/details/in.ernet.dli.2015.499166",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. vii et 120",
+                "notes": "Londres, Methuen, 1928, lu dans l'exemplaire numérisé par la Digital Library of India. Préface : « It is not certain who first gave the name of “Ethiopia” to Abyssinia », mais les traducteurs de la Bible en guèze ont rendu le nom de Koush par « Ethiopia ». Page 120 : le mot hébreu Kush y est traduit par Ityopya."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Abyssinie",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Du IIIe siècle, sous une forme proche, jusqu'au XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "1928"
+            },
+            "era": "polity",
+            "statement": "Le nom Abyssinie est une forme européenne de Habash, le nom que donnent au pays ses voisins arabes ; les habitants appellent leur pays Éthiopie et n'aiment pas ce nom arabe, qu'ils ressentent comme une insulte, selon E. A. Wallis Budge.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "A History of Ethiopia, Nubia and Abyssinia, volume I",
+                "author": "E. A. Wallis Budge",
+                "year": 1928,
+                "url": "https://archive.org/details/in.ernet.dli.2015.499166",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. vii et 121",
+                "notes": "Londres, Methuen, 1928, lu dans l'exemplaire numérisé par la Digital Library of India. Préface : « “Abyssinia” is a Europeanized form of “Habash” » ; « Abyssinians of all classes speak of their country as “Ethiopia”, and dislike the Arabic name “Habash” ». Page 121 : un habitant appelé « Habashiyy » s'en sent insulté."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1889,
+              "to": null,
+              "label": "Après 1889"
+            },
+            "era": "polity",
+            "statement": "Le nom Abyssinie est celui que les cartes imprimées en Europe donnent à l'Éthiopie, sous la forme « Abyssinie italienne », quand l'Italie prétend y établir un protectorat, selon Monday B. Akpan. L'Éthiopie bat l'Italie à Adoua en 1896 et reste indépendante.",
+            "formAsWritten": "Abyssinie italienne",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 11 : Le Libéria et l'Éthiopie, 1880-1914 : la survie de deux États africains",
+                "author": "Monday B. Akpan, à partir des contributions d'Abeodu B. Jones et Richard Pankhurst",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 293",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen. Après que l'Italie a prétendu établir un protectorat en 1889, « les cartes géographiques imprimées en Europe désignaient désormais l'Éthiopie sous le nom d'“Abyssinie italienne” »."
+              },
+              {
+                "title": "Éthiopie : présentation et chronologie",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/et.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chronologie",
+                "notes": "Page de présentation consultée le 10 octobre 2026. Chronologie : « 1er mars 1896 – Victoire à Adoua sur les Italiens […], qui doivent reconnaître l'indépendance de l'Éthiopie. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1800,
+              "label": "Du XVIe au XVIIIe siècle"
+            },
+            "statement": "Le nom Abyssinie, ou Habesistan, sert aussi dans les sources ottomanes à désigner tous les territoires au sud de l'Égypte, jusqu'à Zanzibar ou au Mozambique, selon Y. F. Hasan et B. A. Ogot.",
+            "formAsWritten": "Habesistan",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 7 : Le Soudan de 1500 à 1800",
+                "author": "Y. F. Hasan et B. A. Ogot",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 213, note 18",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot. « Les sources ottomanes utilisent les termes Habesistan ou Abyssinie pour désigner tous les territoires au sud de l'Égypte, jusqu'à l'île de Zanzibar ou au Mozambique en Afrique orientale », d'après C. Orhonlu (1974)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sources arabes médiévales"
+            },
+            "era": "polity",
+            "statement": "Le nom Abyssinie reprend Ḥabasha, le nom que les géographes arabes donnent au territoire des Éthiopiens ; ils appellent ses habitants al-Ḥabash. Certains auteurs étendent ce nom à des peuples bien plus éloignés, jusqu'au Niger, selon Yusof Talib.",
+            "formAsWritten": "Ḥabasha",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, glossaire de termes étrangers",
+                "author": "Comité scientifique international pour la rédaction d'une Histoire générale de l'Afrique",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 925",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, codirigé par I. Hrbek. « al-Ḥabash : terme par lequel les géographes arabes désignaient les Éthiopiens. Ḥabasha : désignait le territoire des Éthiopiens. »"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 26 : La diaspora africaine en Asie",
+                "author": "Yusof Talib, à partir d'une contribution de Faisal Samir",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 757",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, codirigé par I. Hrbek. Les sources arabes médiévales rangent les habitants de l'Afrique tropicale en quatre groupes, dont les Ḥabasha, les Éthiopiens ; certains auteurs étendent ce nom à des peuples aussi éloignés que ceux du Niger."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 300,
+              "to": 399,
+              "label": "IVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Abyssinie a une forme proche dans la titulature du roi Ezana d'Aksum, qui se dit notamment roi « de Ḥabasha », selon Tekle-Tsadik Mekouria. La version sud-arabique d'une de ses stèles écrit ce nom ḤBŠT, selon Siegbert Uhlig.",
+            "formAsWritten": "Ḥabasha",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 19 : La Corne de l'Afrique",
+                "author": "Tekle-Tsadik Mekouria",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 596",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, codirigé par I. Hrbek. La titulature gravée par le roi Ezana le dit « roi d'Axum, de Himyar, de Kasou, de Saba, de Ḥabasha, de Raydan et Salhin, des Tsiamo et des Bēdja »."
+              },
+              {
+                "title": "Eine trilinguale ʿEzana-Inschrift",
+                "author": "Siegbert Uhlig",
+                "year": 2001,
+                "url": "https://doi.org/10.15460/aethiopica.4.1.488",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 16",
+                "notes": "Aethiopica, n° 4, 2001, p. 7-31, en allemand, lu en ligne. Édition d'une stèle du roi Ezana d'Aksum qui donne le même texte en trois versions : sud-arabique, grecque et guèze. Traduction de la version sud-arabique : Ezana, roi d'ʾKSWM, de ḤMR, de RYDN, de SLḤN, de SBʾ et de ḤBŠT, entre autres."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 183,
+              "to": 213,
+              "label": "Fin du IIe et début du IIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Abyssinie a une forme proche dans des inscriptions sabéennes, au Yémen : elles appellent « Abyssiniens » les Axoumites alors en guerre en Arabie du Sud, selon Y. M. Kobishanov. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume d'Axoum existait déjà avant ces inscriptions.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 15 : Axoum du Ier au IVe siècle : économie, système politique, culture",
+                "author": "Y. M. Kobishanov",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 409",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar. Les premières sources sur la présence d'Axoum en Arabie du Sud sont « des inscriptions sabéennes de la fin du IIe siècle et du début du IIIe siècle, où il est dit que les “Abyssiniens” ou Axoumites sont en guerre au Yémen ». De 183 à 213, le roi axoumite Gadara et son fils semblent dominer l'Arabie méridionale."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Abyssinie a longtemps désigné l'Éthiopie en Europe ; il reprend le nom arabe du pays, Ḥabasha. On ne sait pas avec certitude d'où vient ce mot : les explications qu'en donnent les sources sont présentées une à une.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, glossaire de termes étrangers",
+                "author": "Comité scientifique international pour la rédaction d'une Histoire générale de l'Afrique",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 925",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, codirigé par I. Hrbek. « al-Ḥabash : terme par lequel les géographes arabes désignaient les Éthiopiens. Ḥabasha : désignait le territoire des Éthiopiens. »"
+              },
+              {
+                "title": "A History of Ethiopia, Nubia and Abyssinia, volume I",
+                "author": "E. A. Wallis Budge",
+                "year": 1928,
+                "url": "https://archive.org/details/in.ernet.dli.2015.499166",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 120-121",
+                "notes": "Londres, Methuen, 1928, lu dans l'exemplaire numérisé par la Digital Library of India. Budge présente plusieurs explications du mot Habesh sans en retenir une avec certitude."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Abyssinie viendrait de Ḥabashat, le nom d'un groupe venu d'Arabie du Sud qui aurait traversé la mer Rouge pour s'établir en Afrique, selon les historiens Carlo Conti Rossini et Enno Littmann, cités par E. A. Wallis Budge.",
+            "hypothesisGroup": "origine du nom Abyssinie",
+            "sources": [
+              {
+                "title": "A History of Ethiopia, Nubia and Abyssinia, volume I",
+                "author": "E. A. Wallis Budge",
+                "year": 1928,
+                "url": "https://archive.org/details/in.ernet.dli.2015.499166",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 120-121",
+                "notes": "Londres, Methuen, 1928, lu dans l'exemplaire numérisé par la Digital Library of India. Budge cite Carlo Conti Rossini, « Sugli Habashat » (1906), et Enno Littmann (Deutsche Aksum-Expedition, 1913)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Abyssinie voudrait dire « gens du commun » : on a rapproché le mot d'un terme assyrien de même sens, selon une comparaison que rapporte E. A. Wallis Budge.",
+            "hypothesisGroup": "origine du nom Abyssinie",
+            "sources": [
+              {
+                "title": "A History of Ethiopia, Nubia and Abyssinia, volume I",
+                "author": "E. A. Wallis Budge",
+                "year": 1928,
+                "url": "https://archive.org/details/in.ernet.dli.2015.499166",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 121",
+                "notes": "Londres, Methuen, 1928, lu dans l'exemplaire numérisé par la Digital Library of India. « The word may only have the general meaning of “common folk”, like the Assyrian amelu khu-uh-shi, with which […] it has been compared. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Abyssinie voudrait dire « bâtards », selon des auteurs italiens comme L. de Castro, cités par E. A. Wallis Budge.",
+            "hypothesisGroup": "origine du nom Abyssinie",
+            "sources": [
+              {
+                "title": "A History of Ethiopia, Nubia and Abyssinia, volume I",
+                "author": "E. A. Wallis Budge",
+                "year": 1928,
+                "url": "https://archive.org/details/in.ernet.dli.2015.499166",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 121",
+                "notes": "Londres, Methuen, 1928, lu dans l'exemplaire numérisé par la Digital Library of India. Budge cite L. de Castro, Nella Terra dei Negus, Milan, vol. I, p. 79."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Abyssinie viendrait du mot amharique washa, « grotte », selon d'autres auteurs que cite E. A. Wallis Budge. Budge lui-même voit mal comment l'un aurait donné l'autre.",
+            "hypothesisGroup": "origine du nom Abyssinie",
+            "sources": [
+              {
+                "title": "A History of Ethiopia, Nubia and Abyssinia, volume I",
+                "author": "E. A. Wallis Budge",
+                "year": 1928,
+                "url": "https://archive.org/details/in.ernet.dli.2015.499166",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 121",
+                "notes": "Londres, Methuen, 1928, lu dans l'exemplaire numérisé par la Digital Library of India. « Others are inclined to connect it with the Amharic washa, a “cave” […], but it is difficult to see how Habesh can be derived from washa. »"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [

@@ -6,6 +6,353 @@
   "summary": "Les Seychelles portent le nom de Jean Moreau de Séchelles, contrôleur général des finances de Louis XV. Les îles étaient inhabitées : leur population est née de la colonisation française puis britannique. Le créole seychellois y est langue officielle aux côtés du français et de l'anglais.",
   "etymology": "Le nom \"Seychelles\" viendrait de Jean Moreau de Séchelles, contrôleur général des finances de Louis XV, roi de France. Les îles ont été nommées \"Seychelles\" par les Français en 1756 en son honneur. Le nom créole \"Sesel\" serait dérivé de \"Seychelles\". Auparavant, les îles étaient appelées \"Îles de la Ligne\" ou \"Îles de la Soif\" par les navigateurs.",
   "nameOriginActor": "Les Français ont nommé les îles \"Seychelles\" en l'honneur de Jean Moreau de Séchelles, contrôleur général des finances de Louis XV (1756). Le nom a été conservé par les Britanniques puis officialisé lors de l'indépendance (1976).",
+  "nameHistory": {
+    "summary": "Le nom Seychelles désigne un archipel de l'océan Indien et l'État qui l'occupe, la République des Seychelles, qui se nomme aussi Sesel en créole seychellois. Il a d'abord été donné en 1756 à la plus grande île, qui portait déjà le nom de Mahé et l'a repris ensuite. L'archipel a aussi été appelé îles Mahé. Les sources lues ne donnent qu'une explication de l'origine du nom Seychelles ; nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Seychelles",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Le nom d'un ministre français, gravé en 1756 sur une pierre de possession, devenu celui de l'archipel.",
+        "periodLabel": "Écrit dès 1756 ; nom de l'État depuis 1976",
+        "accounts": [
+          {
+            "period": {
+              "from": 1976,
+              "to": null,
+              "label": "Depuis le 29 juin 1976"
+            },
+            "era": "modern",
+            "statement": "Le nom Seychelles est celui de l'État indépendant depuis le 29 juin 1976 : ce jour-là, la loi britannique met fin à la responsabilité du Royaume-Uni sur les territoires qui formaient la colonie des Seychelles, selon le texte de cette loi et l'Office of the Historian.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Seychelles Act 1976",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1976,
+                "url": "https://www.legislation.gov.uk/ukpga/1976/19/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "sections 1 et 8(1)",
+                "notes": "Texte de la loi, lu sur le site officiel de la législation britannique. La section 1 fixe au 29 juin 1976 le jour à partir duquel le gouvernement britannique n'a plus de responsabilité dans le gouvernement des Seychelles ; la section 8(1) définit les Seychelles comme les territoires qui forment jusque-là la « Colony of Seychelles »."
+              },
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Seychelles",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/seychelles",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Page lue le 10 octobre 2026. Les États-Unis reconnaissent les Seychelles le 29 juin 1976, jour où elles accèdent à l'indépendance."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Seychelles désigne aujourd'hui un archipel de l'océan Indien et l'État qui l'occupe. Il a d'abord été celui de la plus grande île, avant de s'étendre à tout l'archipel, tandis que cette île reprenait le nom de Mahé, selon la Seychelles News Agency.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "5 major milestones in Seychelles, which soon turns 250",
+                "author": "Seychelles News Agency",
+                "year": 2019,
+                "url": "https://www.sbc.sc/?p=7346",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Dépêche du 19 septembre 2019, reprise sur le site de la Seychelles Broadcasting Corporation, lue le 10 octobre 2026. Morphey rebaptise la plus grande île Isle de Séchelles en l'honneur du vicomte Jean Moreau de Séchelles, ministre des Finances sous Louis XV ; le nom, plus tard anglicisé en Seychelles, s'étend ensuite à l'archipel, tandis que la plus grande île reprend le nom de Mahé. La prise de possession date du 1er novembre 1756."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1836,
+              "to": 1836,
+              "label": "1836"
+            },
+            "era": "colonial",
+            "statement": "Le nom Seychelles est employé en anglais à côté d'un autre, « Mahe Islands », les îles Mahé, par l'historien Robert Montgomery Martin. L'archipel dépend alors de Maurice, colonie britannique.",
+            "formAsWritten": "The Seychelles or Mahe Islands",
+            "sources": [
+              {
+                "title": "History of Southern Africa, comprising the Cape of Good Hope, Mauritius, Seychelles, &c.",
+                "author": "Robert Montgomery Martin",
+                "year": 1836,
+                "url": "https://archive.org/details/historyofsouther00mart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 316-317",
+                "notes": "Londres, J. Mortimer, 1836, lu dans l'exemplaire numérisé. « The Seychelles or Mahe Islands » : explorées en partie par Lazare Picault en 1743 sur ordre de Mahé de La Bourdonnais, gouverneur de l'Île de France ; l'auteur juge probable que les Portugais les connaissaient déjà. Prises par les Anglais avec Maurice, elles en dépendent depuis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1814,
+              "to": 1814,
+              "label": "30 mai 1814"
+            },
+            "era": "colonial",
+            "statement": "Le nom Seychelles figure, écrit « Les Sechelles », dans le traité de paix signé à Paris le 30 mai 1814 : la France y cède à la Grande-Bretagne l'Île de France et ses dépendances, en particulier Rodrigues et les Seychelles, selon le recueil de traités d'Edward Hertslet.",
+            "formAsWritten": "Les Sechelles",
+            "sources": [
+              {
+                "title": "The Map of Africa by Treaty, troisième édition, vol. II, no 219 : traité de paix définitif entre la Grande-Bretagne et la France, signé à Paris le 30 mai 1814",
+                "author": "Edward Hertslet",
+                "year": 1909,
+                "url": "https://archive.org/details/mapofafricabytre02hert",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 714",
+                "notes": "Londres, His Majesty's Stationery Office, 1909, lu dans l'exemplaire numérisé. Article VIII : la France cède à la Grande-Bretagne « the Isle of France and its Dependencies, especially Rodrigues and Les Sechelles »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1756,
+              "to": 1756,
+              "label": "1er novembre 1756"
+            },
+            "era": "colonial",
+            "statement": "Le nom Seychelles apparaît sous la forme Isle de Sechelles, gravé avec les armes de France sur la pierre de possession posée en 1756 sur un rocher qui domine l'actuel port de Victoria, selon Seychelles Nation et la Seychelles News Agency. C'est la plus ancienne trace de ce nom que le projet connaît. Les îles étaient déjà connues des navigateurs avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Corneille Nicolas Morphey",
+                "role": "capitaine de la frégate Le Cerf, qui prend possession des îles au nom du roi de France et de la Compagnie des Indes"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Stone of Possession",
+                "author": "Seychelles Nation",
+                "year": 2020,
+                "url": "https://nation.sc/articles/6677/the-stone-of-possession",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article de presse seychellois du 31 octobre 2020, lu le 10 octobre 2026. Une expédition anglaise atteint les îles en 1609, premier débarquement connu à Mahé ; en 1742, le capitaine Lazare Picault donne à la plus grande île le nom de Mahé, en l'honneur du gouverneur de l'Île de France ; en 1756, le capitaine Nicolas Morphey pose sur un rocher dominant le port de Victoria une pierre de possession gravée aux armes de France et du nom « Isle de Sechelles », aujourd'hui au Musée national d'histoire."
+              },
+              {
+                "title": "5 major milestones in Seychelles, which soon turns 250",
+                "author": "Seychelles News Agency",
+                "year": 2019,
+                "url": "https://www.sbc.sc/?p=7346",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Dépêche du 19 septembre 2019, reprise sur le site de la Seychelles Broadcasting Corporation, lue le 10 octobre 2026. Morphey rebaptise la plus grande île Isle de Séchelles en l'honneur du vicomte Jean Moreau de Séchelles, ministre des Finances sous Louis XV ; le nom, plus tard anglicisé en Seychelles, s'étend ensuite à l'archipel, tandis que la plus grande île reprend le nom de Mahé. La prise de possession date du 1er novembre 1756."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1756,
+              "to": 1756,
+              "label": "1756"
+            },
+            "era": "colonial",
+            "statement": "Le nom Seychelles viendrait de celui du vicomte Jean Moreau de Séchelles, ministre des Finances sous Louis XV, en l'honneur de qui la plus grande île aurait reçu le nom d'Isle de Séchelles, plus tard écrit Seychelles en anglais, selon la Seychelles News Agency.",
+            "hypothesisGroup": "origine du nom Seychelles",
+            "actors": [
+              {
+                "name": "Jean Moreau de Séchelles",
+                "role": "ministre des Finances de Louis XV, roi de France"
+              }
+            ],
+            "sources": [
+              {
+                "title": "5 major milestones in Seychelles, which soon turns 250",
+                "author": "Seychelles News Agency",
+                "year": 2019,
+                "url": "https://www.sbc.sc/?p=7346",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Dépêche du 19 septembre 2019, reprise sur le site de la Seychelles Broadcasting Corporation, lue le 10 octobre 2026. Morphey rebaptise la plus grande île Isle de Séchelles en l'honneur du vicomte Jean Moreau de Séchelles, ministre des Finances sous Louis XV ; le nom, plus tard anglicisé en Seychelles, s'étend ensuite à l'archipel, tandis que la plus grande île reprend le nom de Mahé. La prise de possession date du 1er novembre 1756."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1742,
+              "to": 1742,
+              "label": "1742"
+            },
+            "before": true,
+            "statement": "Avant le nom Seychelles, on parle de Mahé pour désigner la plus grande île, en l'honneur de Mahé de La Bourdonnais, gouverneur de l'Île de France, aujourd'hui Maurice ; le capitaine Lazare Picault mouille alors au large de cette île, selon Seychelles Nation.",
+            "actors": [
+              {
+                "name": "Lazare Picault",
+                "role": "capitaine français, commandant du navire L'Élisabeth"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Stone of Possession",
+                "author": "Seychelles Nation",
+                "year": 2020,
+                "url": "https://nation.sc/articles/6677/the-stone-of-possession",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article de presse seychellois du 31 octobre 2020, lu le 10 octobre 2026. Une expédition anglaise atteint les îles en 1609, premier débarquement connu à Mahé ; en 1742, le capitaine Lazare Picault donne à la plus grande île le nom de Mahé, en l'honneur du gouverneur de l'Île de France ; en 1756, le capitaine Nicolas Morphey pose sur un rocher dominant le port de Victoria une pierre de possession gravée aux armes de France et du nom « Isle de Sechelles », aujourd'hui au Musée national d'histoire."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1609,
+              "to": 1609,
+              "label": "1609"
+            },
+            "before": true,
+            "statement": "Avant le nom Seychelles, une expédition anglaise atteint les îles et fait le premier débarquement connu à Mahé, selon Seychelles Nation. Les sources lues ne disent pas de quel nom ses marins appelaient ces îles.",
+            "sources": [
+              {
+                "title": "The Stone of Possession",
+                "author": "Seychelles Nation",
+                "year": 2020,
+                "url": "https://nation.sc/articles/6677/the-stone-of-possession",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article de presse seychellois du 31 octobre 2020, lu le 10 octobre 2026. Une expédition anglaise atteint les îles en 1609, premier débarquement connu à Mahé ; en 1742, le capitaine Lazare Picault donne à la plus grande île le nom de Mahé, en l'honneur du gouverneur de l'Île de France ; en 1756, le capitaine Nicolas Morphey pose sur un rocher dominant le port de Victoria une pierre de possession gravée aux armes de France et du nom « Isle de Sechelles », aujourd'hui au Musée national d'histoire."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sesel",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "crs",
+        "namedBy": null,
+        "shortLine": "Le nom des Seychelles en créole seychellois, la langue que partagent ses habitants.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "18 juin 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Sesel désigne le pays en créole seychellois : c'est ainsi que l'écrit le président James Michel dans son discours en créole pour la fête nationale du 18 juin 2014, selon le site de la présidence.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Diskour Prezidan James A Michel a Lokazyon Lazournen Nasyonal le 18 zwen 2014",
+                "author": "Présidence de la République des Seychelles",
+                "year": 2014,
+                "url": "https://statehouse.gov.sc/speeches/2504/diskour-prezidan-james-a-michel-a-lokazyon-lazournen-nasyonal-le-18-zwen-2014",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Discours du président James Michel pour la fête nationale du 18 juin 2014, en créole seychellois, lu sur le site de la présidence le 10 octobre 2026. Le pays y est nommé Sesel, par exemple dans « listwar Sesel », l'histoire des Seychelles."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Îles Mahé",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Employé au XIXe siècle à côté de Seychelles",
+        "accounts": [
+          {
+            "period": {
+              "from": 1836,
+              "to": 1836,
+              "label": "1836"
+            },
+            "era": "colonial",
+            "statement": "Le nom Îles Mahé, Mahe Islands en anglais, désigne tout l'archipel chez l'historien Robert Montgomery Martin, à côté du nom Seychelles ; il reprend celui de la plus grande île, Mahé.",
+            "formAsWritten": "Mahe Islands",
+            "sources": [
+              {
+                "title": "History of Southern Africa, comprising the Cape of Good Hope, Mauritius, Seychelles, &c.",
+                "author": "Robert Montgomery Martin",
+                "year": 1836,
+                "url": "https://archive.org/details/historyofsouther00mart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 316-317",
+                "notes": "Londres, J. Mortimer, 1836, lu dans l'exemplaire numérisé. « The Seychelles or Mahe Islands » : explorées en partie par Lazare Picault en 1743 sur ordre de Mahé de La Bourdonnais, gouverneur de l'Île de France ; l'auteur juge probable que les Portugais les connaissaient déjà. Prises par les Anglais avec Maurice, elles en dépendent depuis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1742,
+              "to": 1742,
+              "label": "1742"
+            },
+            "statement": "Le nom Mahé est donné à la plus grande île de l'archipel en l'honneur de Mahé de La Bourdonnais, gouverneur de l'Île de France, aujourd'hui Maurice, selon Seychelles Nation. C'est la plus ancienne trace de ce nom que le projet connaît ; il ne désigne alors que cette île.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Lazare Picault",
+                "role": "capitaine français, commandant du navire L'Élisabeth"
+              },
+              {
+                "name": "Bertrand-François Mahé de La Bourdonnais",
+                "role": "gouverneur général de l'Île de France"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Stone of Possession",
+                "author": "Seychelles Nation",
+                "year": 2020,
+                "url": "https://nation.sc/articles/6677/the-stone-of-possession",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article de presse seychellois du 31 octobre 2020, lu le 10 octobre 2026. Une expédition anglaise atteint les îles en 1609, premier débarquement connu à Mahé ; en 1742, le capitaine Lazare Picault donne à la plus grande île le nom de Mahé, en l'honneur du gouverneur de l'Île de France ; en 1756, le capitaine Nicolas Morphey pose sur un rocher dominant le port de Victoria une pierre de possession gravée aux armes de France et du nom « Isle de Sechelles », aujourd'hui au Musée national d'histoire."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Colonie des Seychelles",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Jusqu'au 29 juin 1976",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1976,
+              "label": "Jusqu'au 29 juin 1976"
+            },
+            "era": "colonial",
+            "statement": "Le nom Colonie des Seychelles, Colony of Seychelles en anglais, est celui des territoires dont le Royaume-Uni cesse d'avoir la responsabilité le 29 juin 1976, selon la loi britannique sur les Seychelles. Nous n'avons pas trouvé la date à laquelle ce nom a commencé à être employé.",
+            "formAsWritten": "Colony of Seychelles",
+            "sources": [
+              {
+                "title": "Seychelles Act 1976",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1976,
+                "url": "https://www.legislation.gov.uk/ukpga/1976/19/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "sections 1 et 8(1)",
+                "notes": "Texte de la loi, lu sur le site officiel de la législation britannique. La section 1 fixe au 29 juin 1976 le jour à partir duquel le gouvernement britannique n'a plus de responsabilité dans le gouvernement des Seychelles ; la section 8(1) définit les Seychelles comme les territoires qui forment jusque-là la « Colony of Seychelles »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [

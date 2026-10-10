@@ -6,6 +6,427 @@
   "summary": "Madagascar doit son nom à une méprise : « Madageiscar », chez Marco Polo, désignait probablement Mogadiscio, et les Portugais l'ont appliqué à l'île. Peuplée par des migrations venues d'Asie du Sud-Est et d'Afrique de l'Est, elle réunit Merina, Betsimisaraka, Betsileo, Sakalava et Antandroy autour d'une langue commune, le malgache. Le famadihana y dit le rapport aux ancêtres.",
   "etymology": "Le nom \"Madagascar\" viendrait de \"Madageiscar\", mentionné par Marco Polo au XIIIe siècle, qui aurait désigné Mogadiscio en Somalie. Les Portugais ont ensuite appliqué ce nom à l'île qu'ils appelaient \"São Lourenço\". En malgache, le pays est appelé \"Madagasikara\".",
   "nameOriginActor": "Le nom a été popularisé par les navigateurs européens (portugais, français) à partir du XVIe siècle. L'origine exacte est incertaine, mais pourrait provenir d'une confusion avec Mogadiscio.",
+  "nameHistory": {
+    "summary": "Le nom Madagascar désigne un pays et une île de l'océan Indien, la République de Madagascar, qui se nomme aussi Madagasikara en malgache. Le pays a porté les noms de République malgache, puis de République démocratique de Madagascar ; sur une carte du XVIe siècle, l'île s'appelle Saint-Laurent, et au nord-ouest, au début du XVIIe siècle, Ubuque. Les sources ne s'accordent pas sur l'origine du nom Madagascar ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Madagascar",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'une île, écrit Madeigascar par Marco Polo en 1298, devenu celui de l'État.",
+        "periodLabel": "Écrit dès 1298 ; nom de l'État depuis 1958",
+        "accounts": [
+          {
+            "period": {
+              "from": 1992,
+              "to": null,
+              "label": "Depuis le 19 août 1992"
+            },
+            "era": "modern",
+            "statement": "Le nom Madagascar entre dans celui de République de Madagascar, que l'article premier de la Constitution du 19 août 1992 donne à l'État, et que reprend la Constitution du 11 décembre 2010.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution du 19 août 1992",
+                "author": "République de Madagascar",
+                "year": 1992,
+                "url": "https://mjp.univ-perp.fr/constit/mg1992.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan. L'article premier dit que l'État « porte le nom de « République de Madagascar » »."
+              },
+              {
+                "title": "Constitution de la IVe République, 11 décembre 2010",
+                "author": "République de Madagascar",
+                "year": 2010,
+                "url": "https://mjp.univ-perp.fr/constit/mg2010.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan. Article premier : « Cet État porte le nom de « République de Madagascar » »."
+              },
+              {
+                "title": "Liste des noms de pays du GENUNG (GEGN.2/2025/171/CRP.171)",
+                "author": "Groupe d'experts des Nations unies pour les noms géographiques, coordonnateur Pierre Jaillard",
+                "year": 2025,
+                "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/documents/GEGN.2_2025_171_CRP171_item5e.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 62",
+                "notes": "Document de la session 2025 du Groupe d'experts, daté du 23 avril 2025, lu en ligne le 10 octobre 2026. Entrée Madagascar : noms nationaux officiels, en français « Madagascar », « République de Madagascar », et en malgache « Madagasikara », « Repoblikan'i Madagasikara »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Madagascar désigne aujourd'hui l'État et la grande île. Son origine reste discutée : Henri Cordier rapporte plusieurs explications, que nous présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Book of Ser Marco Polo, vol. II, livre III, ch. 33 : Concerning the Island of Madeigascar",
+                "author": "Marco Polo, traduit et annoté par Henry Yule, revu par Henri Cordier",
+                "year": 1903,
+                "url": "https://archive.org/details/bookofsermarcopo002polo",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 411-414",
+                "notes": "Londres, John Murray, troisième édition, 1903, lu en fac-similé le 10 octobre 2026. Le texte commence par « Madeigascar is an Island towards the south, about a thousand miles from Scotra ». L'introduction du premier volume cite le préambule de Rusticiano, qui date de 1298 la mise par écrit du livre, dans la prison de Gênes. En note, Yule pense que Marco Polo mêle des renseignements sur Makdashau, Mogadiscio, et sur Madagascar ; Cordier rapporte qu'Alfred Grandidier y voit une description de Mogadiscio par un auteur qui ne connaissait pas l'île, que Gabriel Ferrand (1893) lit dans Madagascar « Country of the Malagash », mal transcrit de l'arabe, et que M. Guet (1888) le tire de Madax-Aschtoret, « île d'Astarté », étymologie que Cordier range parmi les fantaisies. La note 2 cite une carte de « S. Lorenzo (or Madagascar) » dans l'Isole de Porcacchi, en 1576."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1896,
+              "label": "6 août 1896"
+            },
+            "era": "colonial",
+            "statement": "Le nom Madagascar désigne une colonie française : une loi déclare ce jour-là « Madagascar et les îles qui en dépendent colonie française », selon la Digithèque MJP.",
+            "sources": [
+              {
+                "title": "Madagascar : colonie de Madagascar et dépendances",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/mg1896.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page consultée le 10 octobre 2026. Elle publie le traité du 17 décembre 1885 et cite la loi du 6 août 1896 « déclarant Madagascar et les îles qui en dépendent colonie française » (Journal officiel, 8 août 1896, p. 4557)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1298,
+              "to": 1298,
+              "label": "1298"
+            },
+            "era": "polity",
+            "statement": "Le nom Madagascar apparaît, sous la forme Madeigascar, dans le livre de Marco Polo, mis par écrit en 1298 : c'est « une île vers le sud, à environ mille milles de Socotra ». C'est la plus ancienne trace de ce nom que le projet connaît. L'île et ses habitants existaient bien avant lui.",
+            "formAsWritten": "Madeigascar",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Book of Ser Marco Polo, vol. II, livre III, ch. 33 : Concerning the Island of Madeigascar",
+                "author": "Marco Polo, traduit et annoté par Henry Yule, revu par Henri Cordier",
+                "year": 1903,
+                "url": "https://archive.org/details/bookofsermarcopo002polo",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 411-414",
+                "notes": "Londres, John Murray, troisième édition, 1903, lu en fac-similé le 10 octobre 2026. Le texte commence par « Madeigascar is an Island towards the south, about a thousand miles from Scotra ». L'introduction du premier volume cite le préambule de Rusticiano, qui date de 1298 la mise par écrit du livre, dans la prison de Gênes. En note, Yule pense que Marco Polo mêle des renseignements sur Makdashau, Mogadiscio, et sur Madagascar ; Cordier rapporte qu'Alfred Grandidier y voit une description de Mogadiscio par un auteur qui ne connaissait pas l'île, que Gabriel Ferrand (1893) lit dans Madagascar « Country of the Malagash », mal transcrit de l'arabe, et que M. Guet (1888) le tire de Madax-Aschtoret, « île d'Astarté », étymologie que Cordier range parmi les fantaisies. La note 2 cite une carte de « S. Lorenzo (or Madagascar) » dans l'Isole de Porcacchi, en 1576."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 670,
+              "to": 730,
+              "label": "Fin du VIIe et début du VIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "On parle alors d'al-Ḳumr, dans les sources arabes, pour désigner ensemble les Comores et Madagascar, dont les navigateurs partent jusqu'à Aden, selon Bakoly Domenichini-Ramiaramanana.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 25 : Madagascar",
+                "author": "Bakoly Domenichini-Ramiaramanana",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 746",
+                "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek, lu dans l'exemplaire numérisé. Le chapitre parle des « gens d'al-Ḳumr (Comores et Madagascar) » qui, à la fin du VIIe et au début du VIIIe siècle, se lancent à la conquête d'Aden sur leurs navires à balancier, d'après les sources arabes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Madagascar désignerait d'abord, chez Marco Polo, Mogadiscio, sur la côte somalienne : Henry Yule pense que le voyageur mêle des renseignements sur les deux lieux, et Alfred Grandidier qu'il décrit Mogadiscio sans connaître l'île, selon Henri Cordier.",
+            "hypothesisGroup": "origine du nom Madagascar",
+            "sources": [
+              {
+                "title": "The Book of Ser Marco Polo, vol. II, livre III, ch. 33 : Concerning the Island of Madeigascar",
+                "author": "Marco Polo, traduit et annoté par Henry Yule, revu par Henri Cordier",
+                "year": 1903,
+                "url": "https://archive.org/details/bookofsermarcopo002polo",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 411-414",
+                "notes": "Londres, John Murray, troisième édition, 1903, lu en fac-similé le 10 octobre 2026. Le texte commence par « Madeigascar is an Island towards the south, about a thousand miles from Scotra ». L'introduction du premier volume cite le préambule de Rusticiano, qui date de 1298 la mise par écrit du livre, dans la prison de Gênes. En note, Yule pense que Marco Polo mêle des renseignements sur Makdashau, Mogadiscio, et sur Madagascar ; Cordier rapporte qu'Alfred Grandidier y voit une description de Mogadiscio par un auteur qui ne connaissait pas l'île, que Gabriel Ferrand (1893) lit dans Madagascar « Country of the Malagash », mal transcrit de l'arabe, et que M. Guet (1888) le tire de Madax-Aschtoret, « île d'Astarté », étymologie que Cordier range parmi les fantaisies. La note 2 cite une carte de « S. Lorenzo (or Madagascar) » dans l'Isole de Porcacchi, en 1576."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Madagascar voudrait dire « le pays des Malgaches », mal transcrit d'une forme arabe, selon Gabriel Ferrand en 1893, cité par Henri Cordier.",
+            "hypothesisGroup": "origine du nom Madagascar",
+            "sources": [
+              {
+                "title": "The Book of Ser Marco Polo, vol. II, livre III, ch. 33 : Concerning the Island of Madeigascar",
+                "author": "Marco Polo, traduit et annoté par Henry Yule, revu par Henri Cordier",
+                "year": 1903,
+                "url": "https://archive.org/details/bookofsermarcopo002polo",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 411-414",
+                "notes": "Londres, John Murray, troisième édition, 1903, lu en fac-similé le 10 octobre 2026. Le texte commence par « Madeigascar is an Island towards the south, about a thousand miles from Scotra ». L'introduction du premier volume cite le préambule de Rusticiano, qui date de 1298 la mise par écrit du livre, dans la prison de Gênes. En note, Yule pense que Marco Polo mêle des renseignements sur Makdashau, Mogadiscio, et sur Madagascar ; Cordier rapporte qu'Alfred Grandidier y voit une description de Mogadiscio par un auteur qui ne connaissait pas l'île, que Gabriel Ferrand (1893) lit dans Madagascar « Country of the Malagash », mal transcrit de l'arabe, et que M. Guet (1888) le tire de Madax-Aschtoret, « île d'Astarté », étymologie que Cordier range parmi les fantaisies. La note 2 cite une carte de « S. Lorenzo (or Madagascar) » dans l'Isole de Porcacchi, en 1576."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Madagascar viendrait de Madax-Aschtoret, « l'île d'Astarté », selon M. Guet en 1888, cité par Henri Cordier, qui range cette explication parmi les étymologies fantaisistes.",
+            "hypothesisGroup": "origine du nom Madagascar",
+            "sources": [
+              {
+                "title": "The Book of Ser Marco Polo, vol. II, livre III, ch. 33 : Concerning the Island of Madeigascar",
+                "author": "Marco Polo, traduit et annoté par Henry Yule, revu par Henri Cordier",
+                "year": 1903,
+                "url": "https://archive.org/details/bookofsermarcopo002polo",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 411-414",
+                "notes": "Londres, John Murray, troisième édition, 1903, lu en fac-similé le 10 octobre 2026. Le texte commence par « Madeigascar is an Island towards the south, about a thousand miles from Scotra ». L'introduction du premier volume cite le préambule de Rusticiano, qui date de 1298 la mise par écrit du livre, dans la prison de Gênes. En note, Yule pense que Marco Polo mêle des renseignements sur Makdashau, Mogadiscio, et sur Madagascar ; Cordier rapporte qu'Alfred Grandidier y voit une description de Mogadiscio par un auteur qui ne connaissait pas l'île, que Gabriel Ferrand (1893) lit dans Madagascar « Country of the Malagash », mal transcrit de l'arabe, et que M. Guet (1888) le tire de Madax-Aschtoret, « île d'Astarté », étymologie que Cordier range parmi les fantaisies. La note 2 cite une carte de « S. Lorenzo (or Madagascar) » dans l'Isole de Porcacchi, en 1576."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Madagasikara",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mlg",
+        "namedBy": null,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Madagasikara est le nom officiel du pays en malgache, et Repoblikan'i Madagasikara celui de la République, selon la liste des noms de pays des Nations unies.",
+            "aspect": "usage",
+            "formAsWritten": "Madagasikara",
+            "sources": [
+              {
+                "title": "Liste des noms de pays du GENUNG (GEGN.2/2025/171/CRP.171)",
+                "author": "Groupe d'experts des Nations unies pour les noms géographiques, coordonnateur Pierre Jaillard",
+                "year": 2025,
+                "url": "https://unstats.un.org/unsd/ungegn/sessions/4th_session_2025/documents/GEGN.2_2025_171_CRP171_item5e.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 62",
+                "notes": "Document de la session 2025 du Groupe d'experts, daté du 23 avril 2025, lu en ligne le 10 octobre 2026. Entrée Madagascar : noms nationaux officiels, en français « Madagascar », « République de Madagascar », et en malgache « Madagasikara », « Repoblikan'i Madagasikara »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "République malgache",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "De 1958 à 1975",
+        "accounts": [
+          {
+            "period": {
+              "from": 1958,
+              "to": 1958,
+              "label": "14 octobre 1958"
+            },
+            "era": "colonial",
+            "statement": "Le nom République malgache est celui que se donne l'État de Madagascar par l'article 2 de la loi constitutionnelle du 14 octobre 1958 : « L'État de Madagascar est une République et s'intitule « République Malgache » ». C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "République Malgache",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Loi constitutionnelle n° 1 du 14 octobre 1958",
+                "author": "Congrès des assemblées provinciales de Madagascar",
+                "year": 1958,
+                "url": "https://mjp.univ-perp.fr/constit/mg1958.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 2",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan. Article 2 : « L'État de Madagascar est une République et s'intitule « République Malgache ». » La présentation rapporte que le Congrès approuve la proclamation de la République malgache le 14 octobre 1958, par 208 voix pour, aucune contre et 26 abstentions."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1975,
+              "label": "Du 26 juin 1960 à 1975"
+            },
+            "era": "modern",
+            "statement": "Le nom République malgache est celui de l'État qui accède à l'indépendance le 26 juin 1960, selon la Digithèque MJP et l'Histoire générale de l'Afrique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "République malgache : indépendance, 26 juin 1960",
+                "author": "Jean-Pierre Maury, Digithèque MJP, Université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/mg1960ind.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page consultée le 10 octobre 2026. Elle publie l'accord de transfert des compétences, dont l'article premier dit que « la République malgache accède […] à la souveraineté internationale et à l'indépendance », et date l'indépendance du 26 juin 1960."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 129, tableau 5.1",
+                "notes": "Tableau chronologique des indépendances, lu dans l'exemplaire numérisé. Ligne Madagascar : indépendant le 26 juin 1960 (30 juin 1960), puissance coloniale la France, avec l'ancien nom entre parenthèses, « (République malgache) »."
+              },
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Madagascar",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/madagascar",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice consultée le 10 octobre 2026. Madagascar, anciennement la République malgache ; la France en prend la souveraineté comme colonie en 1890, selon cette notice ; les États-Unis reconnaissent la République malgache le 25 juin 1960."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "République démocratique de Madagascar",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "De 1975 à 1992",
+        "accounts": [
+          {
+            "period": {
+              "from": 1975,
+              "to": 1992,
+              "label": "Du 31 décembre 1975 au 19 août 1992"
+            },
+            "era": "modern",
+            "statement": "Le nom République démocratique de Madagascar est celui que donne à l'État l'article premier de la Constitution promulguée le 31 décembre 1975. C'est la plus ancienne trace de ce nom que le projet connaît. La Constitution de 1992 le remplace par République de Madagascar.",
+            "aspect": "usage",
+            "formAsWritten": "République Démocratique de Madagascar",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Constitution de la République démocratique de Madagascar, promulguée le 31 décembre 1975",
+                "author": "République démocratique de Madagascar",
+                "year": 1975,
+                "url": "https://mjp.univ-perp.fr/constit/mg1975.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan. L'article premier dit que l'État « porte le nom de « République Démocratique de Madagascar » »."
+              },
+              {
+                "title": "Constitution du 19 août 1992",
+                "author": "République de Madagascar",
+                "year": 1992,
+                "url": "https://mjp.univ-perp.fr/constit/mg1992.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Texte lu sur la Digithèque MJP de l'Université de Perpignan. L'article premier dit que l'État « porte le nom de « République de Madagascar » »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Saint-Laurent",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "XVIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1576,
+              "to": 1576,
+              "label": "1576"
+            },
+            "era": "polity",
+            "statement": "Le nom Saint-Laurent désigne l'île sur une carte de l'Isole de Porcacchi, intitulée « S. Lorenzo (or Madagascar) », selon Henry Yule.",
+            "formAsWritten": "S. Lorenzo",
+            "sources": [
+              {
+                "title": "The Book of Ser Marco Polo, vol. II, livre III, ch. 33 : Concerning the Island of Madeigascar",
+                "author": "Marco Polo, traduit et annoté par Henry Yule, revu par Henri Cordier",
+                "year": 1903,
+                "url": "https://archive.org/details/bookofsermarcopo002polo",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 411-414",
+                "notes": "Londres, John Murray, troisième édition, 1903, lu en fac-similé le 10 octobre 2026. Le texte commence par « Madeigascar is an Island towards the south, about a thousand miles from Scotra ». L'introduction du premier volume cite le préambule de Rusticiano, qui date de 1298 la mise par écrit du livre, dans la prison de Gênes. En note, Yule pense que Marco Polo mêle des renseignements sur Makdashau, Mogadiscio, et sur Madagascar ; Cordier rapporte qu'Alfred Grandidier y voit une description de Mogadiscio par un auteur qui ne connaissait pas l'île, que Gabriel Ferrand (1893) lit dans Madagascar « Country of the Malagash », mal transcrit de l'arabe, et que M. Guet (1888) le tire de Madax-Aschtoret, « île d'Astarté », étymologie que Cordier range parmi les fantaisies. La note 2 cite une carte de « S. Lorenzo (or Madagascar) » dans l'Isole de Porcacchi, en 1576."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ubuque",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Début du XVIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1613,
+              "to": 1613,
+              "label": "1613"
+            },
+            "era": "polity",
+            "statement": "Le nom Ubuque désigne Madagascar, mais seulement au nord-ouest de l'île : les gens de langue kiswahili appellent Buque tous les habitants de la grande île, et les Portugais emploient ce mot pour ceux qui parlent malgache, selon R. K. Kent, d'après le journal de Paulo Rodrigues da Costa.",
+            "formAsWritten": "Ubuque",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 28 : Madagascar et les îles de l'océan Indien",
+                "author": "R. K. Kent",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 933 et note 64",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, lu dans l'exemplaire numérisé. Buque, du kiswahili wa-Buque, nom que les Portugais emploient pour les habitants de langue malgache et que la communauté de langue kiswahili applique à tous les habitants de la grande île ; la note 64 précise que c'est au nord-ouest seulement que Madagascar était appelée Ubuque, d'après le journal de Paulo Rodrigues da Costa (1613)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [

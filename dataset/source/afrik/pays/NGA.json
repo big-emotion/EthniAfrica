@@ -6,6 +6,542 @@
   "summary": "Le Nigeria porte un nom proposé en 1897 par la journaliste Flora Shaw, à partir du fleuve Niger et du suffixe « -ia ». Califat de Sokoto, royaume d'Oyo, royaume du Bénin et sultanats haoussa s'y étaient épanouis avant l'unification coloniale. Hausa-Fulani, Yoruba, Igbo, Ijaw, Kanuri et Tiv font du pays le plus peuplé du continent l'un des plus divers.",
   "etymology": "Le nom « Nigeria » est proposé le 8 janvier 1897 par Flora Shaw, correspondante coloniale du Times de Londres, pour désigner d'un seul mot la « Niger Area » administrée par la Royal Niger Company : « Niger », le fleuve, et le suffixe latin « -ia », le pays. Il n'est officialisé que seize ans plus tard, en 1914, par Lord Lugard lors de l'unification des protectorats du Nord et du Sud. Des occurrences antérieures de « Nigerian » sont signalées chez William Cole (1862) et Richard Burton (1863), sans qu'il soit établi qu'elles soient contemporaines plutôt qu'ajoutées à l'édition.",
   "nameOriginActor": "Le nom est proposé par une journaliste, Flora Shaw, dans un article du Times du 8 janvier 1897, puis officialisé en 1914 par l'administration coloniale britannique lors de l'« Amalgamation » des protectorats du Nord et du Sud. C'est un nom colonial qui ne reflète aucune appellation précoloniale — et l'attribution elle-même demande une nuance : Shaw a suggéré le nom, elle ne l'a pas imposé ; elle épousera plus tard Frederick Lugard, l'administrateur qui réunit les deux protectorats en 1914. Dubawa relève que c'est le gouvernement britannique qui a adopté et imposé la désignation lors de l'Amalgamation.",
+  "nameHistory": {
+    "summary": "Le nom Nigeria désigne un pays d'Afrique de l'Ouest, la République fédérale du Nigeria, qui porte ce nom depuis son indépendance en 1960. Il a d'abord désigné les territoires britanniques le long du fleuve Niger ; d'autres noms ont existé, comme Nigeria du Nord, Nigeria du Sud, colonie et protectorat du Nigeria ou Fédération du Nigeria. Les sources ne s'accordent pas toujours sur l'origine du nom Nigeria ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Nigeria",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom tiré du fleuve Niger, proposé dans la presse britannique en 1897, devenu celui de l'État en 1960.",
+        "periodLabel": "Écrit dès 1897 ; nom du pays depuis 1914, de l'État depuis 1960",
+        "accounts": [
+          {
+            "period": {
+              "from": 1999,
+              "to": null,
+              "label": "Depuis la Constitution de 1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Nigeria est celui d'un État que sa Constitution appelle République fédérale du Nigeria, Federal Republic of Nigeria en anglais, selon la section 2 de ce texte.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution of the Federal Republic of Nigeria 1999",
+                "author": "République fédérale du Nigeria",
+                "year": 1999,
+                "url": "https://hrlibrary.umn.edu/research/nigeria-constitution.html",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 2 (1)",
+                "notes": "Texte lu sur la bibliothèque des droits de l'homme de l'université du Minnesota : « Nigeria is one indivisible and indissoluble sovereign state to be known by the name of the Federal Republic of Nigeria »."
+              },
+              {
+                "title": "Toponymic Factfile: Nigeria",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2023,
+                "url": "https://assets.publishing.service.gov.uk/media/6672f27c7d0f95cd08d0db58/Nigeria_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Nom du pays : Nigeria ; nom de l'État : Federal Republic of Nigeria. Le pays est devenu indépendant du Royaume-Uni en 1960 ; le fleuve Niger se jette dans l'Atlantique sur sa côte sud."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "1er octobre 1960"
+            },
+            "era": "modern",
+            "statement": "Le nom Nigeria est celui sous lequel la colonie et le protectorat britanniques deviennent indépendants le 1er octobre 1960, selon la loi britannique sur l'indépendance du Nigeria.",
+            "sources": [
+              {
+                "title": "Nigeria Independence Act 1960",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1960,
+                "url": "https://www.legislation.gov.uk/ukpga/Eliz2/8-9/55/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 1",
+                "notes": "Texte de la loi, lu sur le site officiel de la législation britannique. Au 1er octobre 1960, la colonie et le protectorat définis par les Nigeria (Constitution) Orders in Council de 1954 à 1960 forment ensemble une partie des dominions de la Couronne « under the name of Nigeria »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 130, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui, codirigé par Christophe Wondji, lu dans l'exemplaire numérisé. Tableau chronologique des indépendances. Ligne Nigéria : indépendant le 1/X/1960, puissance coloniale la Grande-Bretagne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1914,
+              "to": 1914,
+              "label": "1914"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nigeria devient celui d'un seul territoire en 1914, quand le nord et le sud sont réunis sous l'autorité de Frederick Lugard, selon Michael Crowder. Dubawa rapporte que le gouvernement britannique adopte alors le nom proposé en 1897.",
+            "actors": [
+              {
+                "name": "Frederick Lugard",
+                "role": "administrateur britannique qui dirige la réunion du nord et du sud"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 4 : L'Afrique sous domination britannique et belge",
+                "author": "Michael Crowder",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 96",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui, codirigé par Christophe Wondji, lu dans l'exemplaire numérisé. « Au Nigéria, malgré l'amalgame effectué en 1914 par sir Frederick Lugard », le nord et le sud restent administrés différemment."
+              },
+              {
+                "title": "#Nigeria60: How true is claim that Flora Shaw, British journalist, coined the name Nigeria?",
+                "author": "Francis Arinze Iloani, Dubawa",
+                "year": 2020,
+                "url": "https://dubawa.org/nigeria60-how-true-is-claim-that-flora-shaw-british-journalist-coined-the-name-nigeria/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article de vérification des faits publié le 1er octobre 2020. Selon l'article, la suggestion de Flora Shaw est adoptée seize ans plus tard, lors de la réunion des protectorats du Nord et du Sud en 1914 ; l'historien Ozibo Ozibo dit que le nom a alors été imposé à la « Niger Area »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Nigeria désigne aujourd'hui l'État fédéral d'Afrique de l'Ouest. Il a d'abord désigné les territoires où la Royal Niger Company étendait l'influence britannique, le long du fleuve Niger. Qui l'a employé le premier reste discuté ; nous présentons les explications plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Nigeria",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2023,
+                "url": "https://assets.publishing.service.gov.uk/media/6672f27c7d0f95cd08d0db58/Nigeria_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Nom du pays : Nigeria ; nom de l'État : Federal Republic of Nigeria. Le pays est devenu indépendant du Royaume-Uni en 1960 ; le fleuve Niger se jette dans l'Atlantique sur sa côte sud."
+              },
+              {
+                "title": "#Nigeria60: How true is claim that Flora Shaw, British journalist, coined the name Nigeria?",
+                "author": "Francis Arinze Iloani, Dubawa",
+                "year": 2020,
+                "url": "https://dubawa.org/nigeria60-how-true-is-claim-that-flora-shaw-british-journalist-coined-the-name-nigeria/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article de vérification des faits publié le 1er octobre 2020. L'article cite la proposition de Flora Shaw dans le Times du 8 janvier 1897 et rapporte que d'autres attribuent le mot à des auteurs plus anciens."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1897,
+              "label": "8 janvier 1897"
+            },
+            "statement": "Le nom Nigeria apparaît dans un article du Times de Londres signé par la journaliste Flora Shaw : elle le propose pour les territoires où la Royal Niger Company a étendu l'influence britannique, pour les distinguer de la colonie de Lagos, du protectorat de la côte du Niger et des territoires français du haut Niger, selon Dubawa, qui cite l'article. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples et les royaumes de ces territoires existaient bien avant ce nom.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Flora Shaw",
+                "role": "journaliste du Times, autrice de l'article"
+              }
+            ],
+            "sources": [
+              {
+                "title": "#Nigeria60: How true is claim that Flora Shaw, British journalist, coined the name Nigeria?",
+                "author": "Francis Arinze Iloani, Dubawa",
+                "year": 2020,
+                "url": "https://dubawa.org/nigeria60-how-true-is-claim-that-flora-shaw-british-journalist-coined-the-name-nigeria/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article de vérification des faits publié le 1er octobre 2020. L'article cite Flora Shaw : « The name Nigeria applying to no other part of Africa may without offence to any neighbours be accepted as coextensive with the territories over which the Royal Niger Company has extended British influence ». Nous n'avons pas lu l'article du Times lui-même."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1862,
+              "to": 1862,
+              "label": "1862"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Nigeria, on parle déjà de Nigerian, l'adjectif tiré du nom du fleuve Niger, pour les gens et les usages de ses rives : le commerçant William Cole écrit « Nigerian warfare » dans son journal publié en 1862.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Life in the Niger, or the Journal of an African Trader",
+                "author": "William Cole",
+                "year": 1862,
+                "url": "https://archive.org/details/lifeinnigerorjou00cole",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 10",
+                "notes": "Londres, Saunders, Otley and Co., 1862, lu dans l'exemplaire numérisé. Journal d'un commerçant de Liverpool sur le Niger ; il écrit « This is no bad idea of Nigerian warfare » et, plus loin (p. 64), « a trip to Onitsha, by the author and five Nigerians »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1863,
+              "to": 1863,
+              "label": "1863"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Nigeria, l'explorateur Richard Burton parle des « Upper Nigerian regions », les régions du haut Niger, au nord du pays yoruba, dans un livre publié en 1863.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Abeokuta and the Camaroons Mountains: An Exploration, vol. II",
+                "author": "Richard F. Burton",
+                "year": 1863,
+                "url": "https://archive.org/details/abeokutaandcama01burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 21",
+                "notes": "Londres, Tinsley Brothers, 1863, lu dans l'exemplaire numérisé, chapitre IX : « The Moslems of the Sudan, or Upper Nigerian regions, are pressing heavily upon the peoples of the South »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Rapportée en 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Nigeria viendrait de Niger Area, le nom donné aux territoires de la Royal Niger Company, dont il serait une forme abrégée apparue dans l'article de Flora Shaw, selon l'historien Ozibo Ozibo cité par Dubawa.",
+            "hypothesisGroup": "origine du nom Nigeria",
+            "sources": [
+              {
+                "title": "#Nigeria60: How true is claim that Flora Shaw, British journalist, coined the name Nigeria?",
+                "author": "Francis Arinze Iloani, Dubawa",
+                "year": 2020,
+                "url": "https://dubawa.org/nigeria60-how-true-is-claim-that-flora-shaw-british-journalist-coined-the-name-nigeria/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article de vérification des faits publié le 1er octobre 2020. L'article cite Ozibo Ozibo : « Nigeria (assembled from Niger Area) was coined by Flora Shaw »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Rapportée en 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Nigeria aurait été en usage avant 1897 : des internautes cités par Dubawa s'appuient sur l'adjectif Nigerian chez William Cole en 1862 et chez Richard Burton en 1863, et en concluent que Flora Shaw n'aurait pas inventé le mot. Dubawa rapporte aussi l'objection d'un autre internaute.",
+            "hypothesisGroup": "origine du nom Nigeria",
+            "sources": [
+              {
+                "title": "#Nigeria60: How true is claim that Flora Shaw, British journalist, coined the name Nigeria?",
+                "author": "Francis Arinze Iloani, Dubawa",
+                "year": 2020,
+                "url": "https://dubawa.org/nigeria60-how-true-is-claim-that-flora-shaw-british-journalist-coined-the-name-nigeria/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article de vérification des faits publié le 1er octobre 2020. L'article rapporte un message du forum Nairaland : « The term may already have been in use by then », avec la citation de Burton ; un autre internaute objecte à propos de Cole."
+              },
+              {
+                "title": "Life in the Niger, or the Journal of an African Trader",
+                "author": "William Cole",
+                "year": 1862,
+                "url": "https://archive.org/details/lifeinnigerorjou00cole",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 10",
+                "notes": "Londres, Saunders, Otley and Co., 1862, lu dans l'exemplaire numérisé. Journal d'un commerçant de Liverpool sur le Niger ; il écrit « This is no bad idea of Nigerian warfare » et, plus loin (p. 64), « a trip to Onitsha, by the author and five Nigerians »."
+              },
+              {
+                "title": "Abeokuta and the Camaroons Mountains: An Exploration, vol. II",
+                "author": "Richard F. Burton",
+                "year": 1863,
+                "url": "https://archive.org/details/abeokutaandcama01burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 21",
+                "notes": "Londres, Tinsley Brothers, 1863, lu dans l'exemplaire numérisé, chapitre IX : « The Moslems of the Sudan, or Upper Nigerian regions, are pressing heavily upon the peoples of the South »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Fédération du Nigeria",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "À l'indépendance, en 1960",
+        "accounts": [
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "1er octobre 1960"
+            },
+            "era": "modern",
+            "statement": "Le nom Fédération du Nigeria, Federation of Nigeria en anglais, est celui sous lequel les États-Unis reconnaissent le nouvel État le 1er octobre 1960, dans un message du secrétaire d'État Christian Herter, selon l'Office of the Historian. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays portait déjà le nom de Nigeria.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Nigeria",
+                "author": "Office of the Historian, département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/nigeria",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Les États-Unis reconnaissent « the Federation of Nigeria » le 1er octobre 1960, par un message du secrétaire d'État Christian Herter diffusé sur Voice of America."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Colonie et protectorat du Nigeria",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "De 1914 à 1960",
+        "accounts": [
+          {
+            "period": {
+              "from": 1914,
+              "to": 1960,
+              "label": "De 1914 au 1er octobre 1960"
+            },
+            "era": "colonial",
+            "statement": "Le nom colonie et protectorat du Nigeria réunit deux statuts : la colonie, autour de Lagos, et le protectorat. La loi britannique sur l'indépendance parle encore en 1960 de « the Colony and the Protectorate » qui forment ensemble le Nigeria.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Nigeria Independence Act 1960",
+                "author": "Parlement du Royaume-Uni",
+                "year": 1960,
+                "url": "https://www.legislation.gov.uk/ukpga/Eliz2/8-9/55/enacted",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 1",
+                "notes": "Texte de la loi, lu sur le site officiel de la législation britannique. Au 1er octobre 1960, la colonie et le protectorat définis par les Nigeria (Constitution) Orders in Council de 1954 à 1960 forment ensemble une partie des dominions de la Couronne « under the name of Nigeria »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 2 : Partage européen et conquête de l'Afrique : aperçu général",
+                "author": "Godfrey N. Uzoigwe",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 57",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, lu dans l'exemplaire numérisé. À partir de Lagos, leur colonie, les Britanniques entreprennent la conquête du Nigéria ; en 1900, leur domination au Nigéria méridional est pratiquement assurée ; le sultanat de Sokoto est conquis par Frederick Lugard en 1902."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom colonie et protectorat du Nigeria figure dans les objectifs du Nigeria National Democratic Party, fondé à Lagos par Herbert Macaulay en 1923, selon la traduction qu'en donne Albert Adu Boahen. C'est la plus ancienne trace de ce nom que le projet connaît. Les deux territoires qu'il réunit existaient avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Herbert Macaulay",
+                "role": "fondateur du Nigeria National Democratic Party"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 25 : La politique et le nationalisme en Afrique occidentale, 1919-1935",
+                "author": "Albert Adu Boahen",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 675 et 677",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, lu dans l'exemplaire numérisé. Le Nigeria National Democratic Party, fondé par Herbert Macaulay en 1923, se donne pour objectif d'« affirmer les droits à la sécurité et au bien-être des populations de la colonie et du protectorat du Nigéria »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nigeria du Nord",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "De 1900 à 1914",
+        "accounts": [
+          {
+            "period": {
+              "from": 1900,
+              "to": 1901,
+              "label": "1er janvier 1900 - 31 mars 1901"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nigeria du Nord, Northern Nigeria en anglais, est le titre du premier rapport annuel du Colonial Office sur ce territoire, publié à Londres le 1er mai 1901 : il raconte la reprise de l'administration à la Royal Niger Company et le drapeau britannique hissé à Lokoja le 1er janvier 1900. C'est la plus ancienne trace de ce nom que le projet connaît. Les émirats et les peuples de ce territoire existaient bien avant lui.",
+            "formAsWritten": "NORTHERN NIGERIA",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Colonial Reports — Annual, no 346 : Northern Nigeria, report for period from 1st January, 1900, to 31st March, 1901",
+                "author": "Colonial Office (Royaume-Uni)",
+                "year": 1901,
+                "url": "https://archive.org/details/northern-nigeria",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 1",
+                "notes": "Londres, 1er mai 1901, lu dans l'exemplaire numérisé. L'auteur du rapport écrit avoir repris l'administration à la Royal Niger Company ; le drapeau britannique est hissé à Lokoja le 1er janvier 1900 ; il mentionne aussi les soldats « serving in Southern Nigeria, That Protectorate »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1914,
+              "label": "De 1900 à 1914"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nigeria du Nord désigne le protectorat que Frederick Lugard est chargé d'administrer après la cession à l'État des pouvoirs de la Royal Niger Company, selon Raymond F. Betts.",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Frederick Lugard",
+                "role": "administrateur britannique du Nigeria du Nord"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 13 : La domination européenne : méthodes et institutions",
+                "author": "Raymond F. Betts (révisé par A. I. Asiwaju)",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 345",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, lu dans l'exemplaire numérisé. Lugard est « chargé d'administrer le vaste territoire du Nigéria du Nord à la suite de la cession à l'État des pouvoirs de la Compagnie royale du Niger »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nigeria du Sud",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "De 1900 à 1914",
+        "accounts": [
+          {
+            "period": {
+              "from": 1900,
+              "to": 1901,
+              "label": "1er janvier 1900 - 31 mars 1901"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nigeria du Sud, Southern Nigeria en anglais, figure dans le premier rapport annuel sur le Nigeria du Nord, qui parle de soldats « serving in Southern Nigeria, That Protectorate ». C'est la plus ancienne trace de ce nom que le projet connaît. Les royaumes et les peuples du sud existaient bien avant lui.",
+            "formAsWritten": "Southern Nigeria",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Colonial Reports — Annual, no 346 : Northern Nigeria, report for period from 1st January, 1900, to 31st March, 1901",
+                "author": "Colonial Office (Royaume-Uni)",
+                "year": 1901,
+                "url": "https://archive.org/details/northern-nigeria",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 1",
+                "notes": "Londres, 1er mai 1901, lu dans l'exemplaire numérisé. L'auteur du rapport écrit avoir repris l'administration à la Royal Niger Company ; le drapeau britannique est hissé à Lokoja le 1er janvier 1900 ; il mentionne aussi les soldats « serving in Southern Nigeria, That Protectorate »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nigeria du Sud désigne la partie du pays où la domination britannique est pratiquement assurée en 1900, après la conquête menée à partir de Lagos, selon Godfrey N. Uzoigwe.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 2 : Partage européen et conquête de l'Afrique : aperçu général",
+                "author": "Godfrey N. Uzoigwe",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 57",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, lu dans l'exemplaire numérisé. À partir de Lagos, leur colonie, les Britanniques entreprennent la conquête du Nigéria ; en 1900, leur domination au Nigéria méridional est pratiquement assurée ; le sultanat de Sokoto est conquis par Frederick Lugard en 1902."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Protectorat de la côte du Niger",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Fin du XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1894,
+              "to": 1894,
+              "label": "1894"
+            },
+            "era": "colonial",
+            "statement": "Le nom protectorat de la côte du Niger désigne un territoire britannique de la côte, dont la moitié des recettes vient de l'alcool en 1894, selon John Charles Caldwell. Flora Shaw cite ce protectorat parmi les territoires dont le nom Nigeria doit distinguer ceux de la Royal Niger Company, selon Dubawa.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 18 : Les répercussions sociales de la domination coloniale : aspects démographiques",
+                "author": "John Charles Caldwell",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 510",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, lu dans l'exemplaire numérisé. En 1894, la moitié des recettes et 95 % des droits de douane du protectorat de la côte du Niger proviennent de l'alcool."
+              },
+              {
+                "title": "#Nigeria60: How true is claim that Flora Shaw, British journalist, coined the name Nigeria?",
+                "author": "Francis Arinze Iloani, Dubawa",
+                "year": 2020,
+                "url": "https://dubawa.org/nigeria60-how-true-is-claim-that-flora-shaw-british-journalist-coined-the-name-nigeria/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article de vérification des faits publié le 1er octobre 2020. La citation de Flora Shaw distingue ces territoires « from the colonies of Lagos and the Niger Protectorate on the coast »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [

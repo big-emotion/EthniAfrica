@@ -6,6 +6,350 @@
   "summary": "Le Rwanda tire probablement son nom du verbe « kwanda », s'étendre, en kinyarwanda, en référence au royaume qui l'a précédé. Monarchie centralisée depuis le XVe siècle, il passa sous protectorat allemand puis sous tutelle belge au sein du Ruanda-Urundi. Hutu, Tutsi et Twa y partagent une même langue, le kinyarwanda.",
   "etymology": "Le nom \"Rwanda\" viendrait du verbe \"kwanda\", qui veut dire \"s'étendre\" en kinyarwanda, ou de \"ruanda\", qui voudrait dire \"pays\" ou \"territoire\". Le nom fait référence au royaume précolonial du Rwanda.",
   "nameOriginActor": "Le nom vient du royaume précolonial du Rwanda (Royaume du Rwanda), qui unifiait les peuples des hautes terres. Les colonisateurs allemands puis belges ont conservé ce nom.",
+  "nameHistory": {
+    "summary": "Le nom Rwanda désigne un pays de la région des Grands Lacs, la République du Rwanda, qui se nomme elle-même Republika y'u Rwanda en kinyarwanda. Le nom s'est d'abord écrit Ruanda, et le pays a formé avec le Burundi le territoire du Ruanda-Urundi, sous administration belge. Les sources ne s'accordent pas sur l'origine du nom Rwanda ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Rwanda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kin",
+        "namedBy": null,
+        "shortLine": "Le nom d'un ancien royaume, devenu celui de l'État en 1962.",
+        "periodLabel": "Écrit dès 1861 ; nom de l'État depuis 1962",
+        "accounts": [
+          {
+            "period": {
+              "from": 1962,
+              "to": null,
+              "label": "Depuis le 1er juillet 1962"
+            },
+            "era": "modern",
+            "statement": "Le nom Rwanda est celui de l'État indépendant depuis le 1er juillet 1962 : ce jour-là, le Rwanda et le Burundi deviennent indépendants séparément et « prennent le nom de Rwanda et de Burundi », selon Jean-Pierre Maury.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 130, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui, codirigé par Christophe Wondji, lu dans l'exemplaire numérisé. Tableau chronologique des indépendances. Ligne Rwanda : indépendant le 1/VII/1962, puissance coloniale la Belgique. Ligne Burundi, même page : le Ruanda-Urundi, divisé au moment de l'indépendance, formait la plus petite partie de la Deutsch-Ostafrika."
+              },
+              {
+                "title": "A Guide to the United States' History of Recognition, Diplomatic, and Consular Relations, by Country, since 1776: Rwanda",
+                "author": "Office of the Historian, Département d'État des États-Unis",
+                "year": null,
+                "url": "https://history.state.gov/countries/rwanda",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Les États-Unis reconnaissent la République du Rwanda à son indépendance, le 1er juillet 1962 ; le territoire était auparavant sous administration belge, au sein du territoire sous tutelle du Ruanda-Urundi. Page lue le 10 octobre 2026."
+              },
+              {
+                "title": "Ruanda-Urundi (Rwanda et Burundi) : mandat belge sur le Territoire de l'Est africain, accord de tutelle pour le territoire du Ruanda-Urundi",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/rwbu1919.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "présentation",
+                "notes": "Présentation des textes, lue le 10 octobre 2026 : le 21 août 1919, le Conseil suprême des Puissances alliées attribue « le Ruanda et l'Urundi » à la Belgique ; le 1er juillet 1962, les deux pays deviennent indépendants séparément et « prennent le nom de Rwanda et de Burundi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Rwanda désigne aujourd'hui l'État que ses habitants appellent Republika y'u Rwanda en kinyarwanda, selon le Permanent Committee on Geographical Names ; avant la colonisation, il désignait un royaume, celui du mwami, selon l'Histoire générale de l'Afrique. Son origine est discutée : nous présentons les explications une à une.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Toponymic Factfile: Rwanda",
+                "author": "Permanent Committee on Geographical Names (Royaume-Uni)",
+                "year": 2025,
+                "url": "https://assets.publishing.service.gov.uk/media/679903cd636f8db3c270713e/Rwanda_Toponymic_Factfile.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Nom du pays : Rwanda ; nom de l'État : Republika y'u Rwanda en kinyarwanda, République du Rwanda en français, Republic of Rwanda en anglais, Jamhuri ya Rwanda en swahili. Indépendance de la Belgique en 1962."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+                "author": "J. B. Webster, B. A. Ogot et J. P. Chrétien",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 886",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot, lu dans l'exemplaire numérisé. À la fin du XVe siècle, le roi du Gisaka menace d'absorber « le minuscule territoire du mwami rwandais Ruganzu Bwimba » ; au milieu du XVIe siècle, il occupe « le cœur de l'ancien Rwanda »."
+              },
+              {
+                "title": "Demystifying the pre-Gasabo « Hutu » kingdoms myth",
+                "author": "Amani Athar, The New Times",
+                "year": 2024,
+                "url": "https://www.newtimes.co.rw/article/22125/opinions/demystifying-the-pre-gasabo-hutu-kingdoms-myth",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Tribune d'opinion du quotidien rwandais The New Times, 27 novembre 2024, lue le 10 octobre 2026. L'auteur rapporte trois explications du nom Rwanda : celle du poète Sekarama, celle de Gakanisha et celle des savants de l'époque coloniale ; il tient les deux premières pour justes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant la colonisation"
+            },
+            "era": "polity",
+            "statement": "Le nom Rwanda désignait aussi d'autres territoires avant la colonisation, comme U Rwanda rwa Kabeja, U Rwanda rwa Binaga ou U Rwanda rwa Gashara, au Busoga, selon Amani Athar, qui en conclut que le mot désignait un pays.",
+            "sources": [
+              {
+                "title": "Demystifying the pre-Gasabo « Hutu » kingdoms myth",
+                "author": "Amani Athar, The New Times",
+                "year": 2024,
+                "url": "https://www.newtimes.co.rw/article/22125/opinions/demystifying-the-pre-gasabo-hutu-kingdoms-myth",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Tribune d'opinion du quotidien rwandais The New Times, 27 novembre 2024, lue le 10 octobre 2026. L'auteur rapporte trois explications du nom Rwanda : celle du poète Sekarama, celle de Gakanisha et celle des savants de l'époque coloniale ; il tient les deux premières pour justes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1861,
+              "to": 1861,
+              "label": "Janvier 1861"
+            },
+            "era": "polity",
+            "statement": "Le nom Rwanda a une forme proche, Rŭanda, dans le journal de l'explorateur John Hanning Speke : en janvier 1861, dans l'Unyamwezi, un marchand nommé Musa lui dit qu'une haute montagne se trouve au Rŭanda, « a much larger country than Urŭndi ». C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume existait bien avant ce texte.",
+            "formAsWritten": "Rŭanda",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Journal of the Discovery of the Source of the Nile",
+                "author": "John Hanning Speke",
+                "year": 1863,
+                "url": "https://archive.org/details/journalofdiscove00spek",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 89",
+                "notes": "Édimbourg et Londres, William Blackwood and Sons, 1863, lu dans l'exemplaire numérisé. « Mŭsa said this hill was in Rŭanda, a much larger country than Urŭndi. » Récit daté de janvier 1861, publié en 1863."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Rwanda voudrait dire la première ingoma, le premier règne ou le premier tambour royal du Rwanda, selon le poète Sekarama, tel que le rapporte Amani Athar.",
+            "hypothesisGroup": "origine du nom Rwanda",
+            "sources": [
+              {
+                "title": "Demystifying the pre-Gasabo « Hutu » kingdoms myth",
+                "author": "Amani Athar, The New Times",
+                "year": 2024,
+                "url": "https://www.newtimes.co.rw/article/22125/opinions/demystifying-the-pre-gasabo-hutu-kingdoms-myth",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Tribune d'opinion du quotidien rwandais The New Times, 27 novembre 2024, lue le 10 octobre 2026. L'auteur rapporte trois explications du nom Rwanda : celle du poète Sekarama, celle de Gakanisha et celle des savants de l'époque coloniale ; il tient les deux premières pour justes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Rwanda voudrait dire un pays, igihugu, selon Gakanisha, tel que le rapporte Amani Athar.",
+            "hypothesisGroup": "origine du nom Rwanda",
+            "sources": [
+              {
+                "title": "Demystifying the pre-Gasabo « Hutu » kingdoms myth",
+                "author": "Amani Athar, The New Times",
+                "year": 2024,
+                "url": "https://www.newtimes.co.rw/article/22125/opinions/demystifying-the-pre-gasabo-hutu-kingdoms-myth",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Tribune d'opinion du quotidien rwandais The New Times, 27 novembre 2024, lue le 10 octobre 2026. L'auteur rapporte trois explications du nom Rwanda : celle du poète Sekarama, celle de Gakanisha et celle des savants de l'époque coloniale ; il tient les deux premières pour justes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Rwanda viendrait du verbe kinyarwanda ku-aanda, « s'étendre, se répandre à partir du centre », selon des savants de l'époque coloniale, tels que les cite Amani Athar, qui rejette cette explication.",
+            "hypothesisGroup": "origine du nom Rwanda",
+            "sources": [
+              {
+                "title": "Demystifying the pre-Gasabo « Hutu » kingdoms myth",
+                "author": "Amani Athar, The New Times",
+                "year": 2024,
+                "url": "https://www.newtimes.co.rw/article/22125/opinions/demystifying-the-pre-gasabo-hutu-kingdoms-myth",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Tribune d'opinion du quotidien rwandais The New Times, 27 novembre 2024, lue le 10 octobre 2026. L'auteur rapporte trois explications du nom Rwanda : celle du poète Sekarama, celle de Gakanisha et celle des savants de l'époque coloniale ; il tient les deux premières pour justes."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ruanda",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Jusqu'au 1er juillet 1962",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1919,
+              "to": 1962,
+              "label": "De 1919 à 1962"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ruanda est la graphie employée sous l'administration belge : le 21 août 1919, les Alliés attribuent « le Ruanda et l'Urundi » à la Belgique ; à l'indépendance, le 1er juillet 1962, le pays prend le nom de Rwanda, selon Jean-Pierre Maury.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Ruanda-Urundi (Rwanda et Burundi) : mandat belge sur le Territoire de l'Est africain, accord de tutelle pour le territoire du Ruanda-Urundi",
+                "author": "Jean-Pierre Maury, Digithèque MJP, université de Perpignan",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/rwbu1919.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "présentation",
+                "notes": "Présentation des textes, lue le 10 octobre 2026 : le 21 août 1919, le Conseil suprême des Puissances alliées attribue « le Ruanda et l'Urundi » à la Belgique ; le 1er juillet 1962, les deux pays deviennent indépendants séparément et « prennent le nom de Rwanda et de Burundi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1861,
+              "to": 1861,
+              "label": "Janvier 1861"
+            },
+            "era": "polity",
+            "statement": "Le nom Ruanda est écrit Rŭanda dans le journal de John Hanning Speke, où un marchand nommé Musa situe une haute montagne au Rŭanda. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume existait bien avant lui.",
+            "formAsWritten": "Rŭanda",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Journal of the Discovery of the Source of the Nile",
+                "author": "John Hanning Speke",
+                "year": 1863,
+                "url": "https://archive.org/details/journalofdiscove00spek",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 89",
+                "notes": "Édimbourg et Londres, William Blackwood and Sons, 1863, lu dans l'exemplaire numérisé. « Mŭsa said this hill was in Rŭanda, a much larger country than Urŭndi. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ruanda-Urundi",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Écrit dès 1934 ; jusqu'en 1962",
+        "accounts": [
+          {
+            "period": {
+              "from": 1946,
+              "to": 1962,
+              "label": "Du 13 décembre 1946 au 1er juillet 1962"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ruanda-Urundi est celui du territoire sous tutelle confié à la Belgique par l'accord que l'Assemblée générale des Nations unies approuve le 13 décembre 1946 ; le texte parle du « territoire connu sous le nom de Ruanda-Urundi ». Le territoire est divisé à l'indépendance, en 1962, selon l'Histoire générale de l'Afrique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Accord de tutelle pour le territoire du Ruanda-Urundi, 13 décembre 1946",
+                "author": "Assemblée générale des Nations unies",
+                "year": 1946,
+                "url": "https://mjp.univ-perp.fr/constit/rwbu1919.htm",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "préambule et article premier",
+                "notes": "Texte reproduit par la Digithèque MJP. Le préambule parle du « territoire connu sous le nom de Ruanda-Urundi », administré jusque-là sous mandat belge."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 5 : « Cherchez d'abord le royaume politique... »",
+                "author": "Ali A. Mazrui",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 130, tableau 5.1",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui, codirigé par Christophe Wondji, lu dans l'exemplaire numérisé. Tableau chronologique des indépendances. Ligne Rwanda : indépendant le 1/VII/1962, puissance coloniale la Belgique. Ligne Burundi, même page : le Ruanda-Urundi, divisé au moment de l'indépendance, formait la plus petite partie de la Deutsch-Ostafrika."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1934,
+              "to": 1934,
+              "label": "1934"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ruanda-Urundi figure dans le titre d'un livre publié à Bruxelles en 1934, Le contrat de travail au Congo belge et au Ruanda-Urundi, cité dans la bibliographie de l'Histoire générale de l'Afrique. C'est la plus ancienne trace de ce nom que le projet connaît. Le Rwanda et le Burundi existaient bien avant ce nom.",
+            "formAsWritten": "Ruanda-Urundi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, bibliographie",
+                "author": "UNESCO",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 898",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, lu dans l'exemplaire numérisé. La bibliographie cite : H. Leonard, 1934, Le contrat de travail au Congo belge et au Ruanda-Urundi (entre indigènes et maîtres civilisés), Bruxelles, Larcier."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "20 juillet 1922"
+            },
+            "era": "colonial",
+            "statement": "Avant le nom Ruanda-Urundi, le mandat confié à la Belgique par la Société des Nations le 20 juillet 1922 parle seulement de la partie de l'ancienne colonie de l'Est africain allemand située à l'ouest d'une ligne qu'il décrit.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Mandat belge sur le Territoire de l'Est africain, 20 juillet 1922",
+                "author": "Conseil de la Société des Nations",
+                "year": 1922,
+                "url": "https://mjp.univ-perp.fr/constit/rwbu1919.htm",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "article premier",
+                "notes": "Texte reproduit par la Digithèque MJP d'après le Journal officiel de la Société des Nations, août 1922. Le mandat porte sur « la partie du territoire de l'ancienne colonie de l'Est africain allemand située à l'ouest de la ligne suivante » et ne nomme pas le Ruanda-Urundi."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "historicalNames": {
       "formerNames": [
