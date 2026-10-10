@@ -4,6 +4,213 @@
   "languageFamilyId": "FLG_NIGERCONGO",
   "currentCountries": ["MWI"],
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom Lomwe désigne au Malawi un peuple du sud du pays, venu du Mozambique, qui se nomme lui-même Alomwe. Un autre nom a longtemps servi : Nguru, ou Anguru, que l'administration coloniale employait avec mépris jusqu'en 1943. Nous n'avons pas trouvé de source qui explique l'origine de ces deux noms ; ce que disent les sources est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Alomwe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lon",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent, Alomwe, ou Lomwe sans le préfixe du pluriel.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par les auteurs"
+            },
+            "statement": "Le nom Lomwe, Alomwe au pluriel, désigne au Malawi les descendants des migrants venus du Mozambique, surtout dans les Shire Highlands, au sud du pays. Ils parlaient plusieurs langues, le lomwe, le mpotola ou le mihavani, et aucune ne s'appelait nguru, selon Leroy Vail et Landeg White.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Tribalism in the Political History of Malawi, dans The Creation of Tribalism in Southern Africa",
+                "author": "Leroy Vail et Landeg White",
+                "year": 1989,
+                "url": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft158004rs&brand=ucpress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 167",
+                "notes": "Berkeley, University of California Press, 1989, ouvrage dirigé par Leroy Vail, lu en texte intégral dans la collection en ligne de l'éditeur le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Années 1940"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lomwe est porté par Lewis Mataka Bandawe, qui parle d'une « puissante tribu lomwe » dont tous les groupes regardent les monts Namuli, au Mozambique, comme leur foyer d'origine, selon Leroy Vail et Landeg White.",
+            "actors": [
+              {
+                "name": "Lewis Mataka Bandawe",
+                "role": "porte ce nom dans le débat public"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Tribalism in the Political History of Malawi, dans The Creation of Tribalism in Southern Africa",
+                "author": "Leroy Vail et Landeg White",
+                "year": 1989,
+                "url": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft158004rs&brand=ucpress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 172",
+                "notes": "Berkeley, University of California Press, 1989, ouvrage dirigé par Leroy Vail, lu en texte intégral dans la collection en ligne de l'éditeur le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1943,
+              "to": 1943,
+              "label": "1943"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lomwe a une forme proche, Alomwe, dans le nom de l'Alomwe Tribal Representative Association, fondée en 1943 par Lewis Mataka Bandawe. L'association obtient de l'administration britannique que le mot Anguru disparaisse des documents officiels au profit de Lomwe, selon Leroy Vail et Landeg White. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Alomwe Tribal Representative Association",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tribalism in the Political History of Malawi, dans The Creation of Tribalism in Southern Africa",
+                "author": "Leroy Vail et Landeg White",
+                "year": 1989,
+                "url": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft158004rs&brand=ucpress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 172-173",
+                "notes": "Berkeley, University of California Press, 1989, ouvrage dirigé par Leroy Vail, lu en texte intégral dans la collection en ligne de l'éditeur le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1966,
+              "to": 1966,
+              "label": "1966"
+            },
+            "era": "modern",
+            "statement": "Le nom Lomwe recule au recensement de 1966 : beaucoup de ceux qu'on appelait Nguru ou Lomwe se déclarent alors Chewa, alliés du président Hastings Kamuzu Banda, selon Leroy Vail et Landeg White.",
+            "sources": [
+              {
+                "title": "Tribalism in the Political History of Malawi, dans The Creation of Tribalism in Southern Africa",
+                "author": "Leroy Vail et Landeg White",
+                "year": 1989,
+                "url": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft158004rs&brand=ucpress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 180",
+                "notes": "Berkeley, University of California Press, 1989, ouvrage dirigé par Leroy Vail, lu en texte intégral dans la collection en ligne de l'éditeur le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nguru",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom, souvent méprisant, que l'administration et les voisins donnaient aux migrants lomwe.",
+        "periodLabel": "De la fin du XIXe siècle à 1943",
+        "accounts": [
+          {
+            "period": {
+              "from": 1895,
+              "to": 1943,
+              "label": "Usage décrit par les auteurs"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nguru, ou Anguru, désignait les migrants venus du Mozambique à partir de 1895 pour chercher des terres dans le sud du Nyasaland. Planteurs européens et chefs yao en firent une main-d'œuvre captive, selon Leroy Vail et Landeg White. Aucune de leurs langues ne s'appelait nguru.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Tribalism in the Political History of Malawi, dans The Creation of Tribalism in Southern Africa",
+                "author": "Leroy Vail et Landeg White",
+                "year": 1989,
+                "url": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft158004rs&brand=ucpress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 167-168",
+                "notes": "Berkeley, University of California Press, 1989, ouvrage dirigé par Leroy Vail, lu en texte intégral dans la collection en ligne de l'éditeur le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "1892"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nguru apparaît sous la forme Anguru dans la préface du dictionnaire de David Clement Scott, qui le range parmi les parlers proches du mang'anja. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Anguru",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Cyclopaedic Dictionary of the Mang'anja Language Spoken in British Central Africa",
+                "author": "David Clement Scott",
+                "year": 1892,
+                "url": "https://archive.org/details/acyclopdicdicti00commgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "préface",
+                "notes": "Édimbourg, Comité des missions étrangères de l'Église d'Écosse, 1892, lu dans la numérisation d'Internet Archive le 10 octobre 2026. L'auteur dirigeait la mission de Blantyre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1915,
+              "to": 1942,
+              "label": "De 1915 à 1942"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nguru devient une étiquette méprisante dans les écrits des administrateurs et dans la presse coloniale, qui opposent les « bons » Yao aux « mauvais » Nguru. Un officier juge même en 1936 que le nom Anguru n'est qu'une « fiction », selon Leroy Vail et Landeg White.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Tribalism in the Political History of Malawi, dans The Creation of Tribalism in Southern Africa",
+                "author": "Leroy Vail et Landeg White",
+                "year": 1989,
+                "url": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft158004rs&brand=ucpress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 169-172",
+                "notes": "Berkeley, University of California Press, 1989, ouvrage dirigé par Leroy Vail, lu en texte intégral dans la collection en ligne de l'éditeur le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1943,
+              "to": 1943,
+              "label": "1943"
+            },
+            "era": "colonial",
+            "statement": "Le nom Anguru est banni des documents officiels du Nyasaland à la demande de l'Alomwe Tribal Representative Association, qui le fait remplacer par Lomwe, selon Leroy Vail et Landeg White.",
+            "sources": [
+              {
+                "title": "Tribalism in the Political History of Malawi, dans The Creation of Tribalism in Southern Africa",
+                "author": "Leroy Vail et Landeg White",
+                "year": 1989,
+                "url": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft158004rs&brand=ucpress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 172-173",
+                "notes": "Berkeley, University of California Press, 1989, ouvrage dirigé par Leroy Vail, lu en texte intégral dans la collection en ligne de l'éditeur le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Lomwe (Malawi)",

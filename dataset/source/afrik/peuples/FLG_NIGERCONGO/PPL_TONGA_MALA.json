@@ -4,6 +4,107 @@
   "languageFamilyId": "FLG_NIGERCONGO",
   "currentCountries": ["MWI"],
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom Tonga désigne au Malawi un peuple de la rive ouest du lac Malawi, qui se nomme lui-même Atonga et parle le chitonga. Le même nom est porté par d'autres peuples sans lien, comme les Tonga du Zambèze. Nous n'avons pas trouvé de source qui explique l'origine de ce nom pour les Tonga du lac ; ce que disent les sources est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Atonga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tog",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent, Atonga ; leur langue est le chitonga.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par les auteurs"
+            },
+            "statement": "Le nom Tonga, Atonga au pluriel, désigne les gens des petites chefferies de la rive ouest du lac Malawi, dont la langue, le tonga du lac, est très proche du tumbuka, selon Leroy Vail et Landeg White. Ces auteurs notent qu'aucune conscience ethnique tonga n'a été mise en forme comme celle des Tumbuka.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Tribalism in the Political History of Malawi, dans The Creation of Tribalism in Southern Africa",
+                "author": "Leroy Vail et Landeg White",
+                "year": 1989,
+                "url": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft158004rs&brand=ucpress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 152 et p. 156-157",
+                "notes": "Berkeley, University of California Press, 1989, ouvrage dirigé par Leroy Vail, lu en texte intégral dans la collection en ligne de l'éditeur le 10 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "1892"
+            },
+            "era": "colonial",
+            "statement": "Le nom Atonga apparaît dans le dictionnaire de David Clement Scott, qui donne chitonga comme « nom propre, des Atonga », par exemple pour le tatouage des Atonga. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Atonga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Cyclopaedic Dictionary of the Mang'anja Language Spoken in British Central Africa",
+                "author": "David Clement Scott",
+                "year": 1892,
+                "url": "https://archive.org/details/acyclopdicdicti00commgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 103",
+                "notes": "Édimbourg, Comité des missions étrangères de l'Église d'Écosse, 1892, lu dans la numérisation d'Internet Archive le 10 octobre 2026. L'auteur dirigeait la mission de Blantyre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1897,
+              "label": "1897"
+            },
+            "era": "colonial",
+            "statement": "Le nom Atonga désigne chez Harry H. Johnston le peuple de la rive du lac, autour de Bandawe, alors razzié par les Ngoni de l'intérieur ; il les dit apparentés aux Anyanja. Des Atonga travaillent alors pour le protectorat, comme policiers ou comme ouvriers.",
+            "sources": [
+              {
+                "title": "British Central Africa",
+                "author": "Harry H. Johnston",
+                "year": 1897,
+                "url": "https://archive.org/details/britishafrica00johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 70, p. 116 et p. 118",
+                "notes": "Londres et New York, 1897, lu dans la numérisation d'Internet Archive le 10 octobre 2026. L'auteur était le commissaire britannique du protectorat."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par les auteurs"
+            },
+            "statement": "Le nom Tonga est porté par plusieurs peuples d'Afrique australe sans lien entre eux. Chez les Tonga du Zambèze, David et Charles Livingstone le traduisent par « indépendants », mais les sources que nous avons lues ne disent pas si ce sens vaut pour les Tonga du lac Malawi. On ne sait pas avec certitude d'où vient leur nom.",
+            "sources": [
+              {
+                "title": "Narrative of an Expedition to the Zambesi and its Tributaries",
+                "author": "David et Charles Livingstone",
+                "year": 1865,
+                "url": "https://archive.org/details/narrativeofexpe00livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 220",
+                "notes": "Londres, John Murray, 1865, récit de l'expédition de 1858-1864, lu dans la numérisation d'Internet Archive le 10 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Tonga (Malawi)",
