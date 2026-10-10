@@ -440,7 +440,7 @@
     "rationale": "Le nom derive du bambara bo-so (maison de paille) alors que les interesses se designent par leurs noms claniques Sorogoye, Hain et Tieye, et l'unite bozo est jugee plus culturelle que linguistique."
   },
   {
-    "id": "PPL_BRONG",
+    "id": "PPL_BONO",
     "status": "colonial-legacy",
     "rationale": "L'administration coloniale britannique a cree en 1959 la region Brong-Ahafo amalgamant des peuples d'origines differentes, Brong etant employe par les Asante et les colonisateurs alors que les interesses disent Bono."
   },
@@ -533,11 +533,6 @@
     "id": "PPL_CREOLE_SEYCHELLES",
     "status": "contested",
     "rationale": "La definition creole seychelloise « peut neanmoins marginaliser les Indo-Seychellois et Sino-Seychellois » : contestation d'inclusion portee localement, sans acteur colonial nomme."
-  },
-  {
-    "id": "PPL_DAGAABA",
-    "status": "colonial-legacy",
-    "rationale": "Dagaari et Dagarti sont donnes comme des appellations coloniales britanniques, Dagaari restant present dans certains documents administratifs et nourrissant la confusion entre nom du peuple et nom de la langue."
   },
   {
     "id": "PPL_DAMARA",
@@ -875,11 +870,6 @@
     "rationale": "Prose mince : la fiche n'invoque qu'une denomination administrative congolaise pour un groupe 'peu documente' et un risque de confusion avec le Nya Huba du Nigeria, sans aucun auteur colonial nomme."
   },
   {
-    "id": "PPL_HUTU_BURUNDI",
-    "status": "colonial-legacy",
-    "rationale": "La fiche impute la rigidification a la colonisation belge, qui inscrivit Hutu sur des cartes d'identite ethniques des les annees 1920 et figea une distinction sociale fluide en identite raciale hereditaire."
-  },
-  {
     "id": "PPL_IGBO",
     "status": "colonial-legacy",
     "rationale": "« Ibo fut imposé par l'administration coloniale britannique sans consultation des locuteurs natifs », transcription coloniale erronée du terme igbo."
@@ -1078,11 +1068,6 @@
     "id": "PPL_KONGO_CABINDA",
     "status": "colonial-legacy",
     "rationale": "La fiche fonde l'ecart sur le protectorat portugais du Traite de Simulambuco (1885) et attribue Fiote/Bafiote aux missionnaires chretiens des Ameriques."
-  },
-  {
-    "id": "PPL_KONGO_SUD",
-    "status": "colonial-legacy",
-    "rationale": "L'etiquette Kongo du Bas-Congo repose sur le terme Bas-Congo, dit d'origine coloniale belge, et regroupe de nombreux sous-groupes aux identites et dialectes propres."
   },
   {
     "id": "PPL_KONKOMBA",
@@ -1930,16 +1915,6 @@
     "rationale": "Le problème posé est savant : « la classification Niger-Congo est débattue » et les langues cangin ont « une faible intelligibilité mutuelle » avec le sérère-sine ; aucun auteur colonial n'est nommé."
   },
   {
-    "id": "PPL_SESOTHO_NATL",
-    "status": "contested",
-    "rationale": "Le problème posé est une « ambiguïté administrative et académique » sur l'étendue de Sesotho ; Basuto n'est cité que comme « orthographe coloniale britannique » d'un ethnonyme « que le peuple se donne lui-même »."
-  },
-  {
-    "id": "PPL_SETSWANA_NATL",
-    "status": "contested",
-    "rationale": "Le problème posé est « l'ambiguïté entre sens ethnique et sens civique » de Batswana pour les minorités du Botswana ; Bechuana n'est qu'une « orthographe coloniale britannique » d'un ethnonyme endogène."
-  },
-  {
     "id": "PPL_SHEKO",
     "status": "contested",
     "rationale": "Prose mince : Sheko est a la fois endonyme et exonyme, mais la fiche signale un regroupement savant discute sous Dizoid ou Maji avec les Dizi et les Nayi, sans acteur colonial."
@@ -2070,11 +2045,6 @@
     "rationale": "L'exonyme fautif est européen : « Arabes de la côte (terme inexact et problématique utilisé par les Européens) », le nom ayant été « adopté par les Européens » pour désigner les côtiers."
   },
   {
-    "id": "PPL_SWAHILI_KENYA",
-    "status": "contested",
-    "rationale": "« L'identité swahili est hybride et contestée » entre une définition culturelle (parler swahili, être musulman, vivre sur la côte) et une « identité ethnique stricte liée à des lignages côtiers anciens »."
-  },
-  {
     "id": "PPL_SWAHILI_OMAN",
     "status": "contested",
     "rationale": "« Le terme Swahili peut être perçu comme stigmatisant dans certains contextes omanais », et les intéressés se disent tantôt Omanais d'origine est-africaine, tantôt « Zanzibaris exilés »."
@@ -2168,11 +2138,6 @@
     "id": "PPL_TONGAS",
     "status": "colonial-legacy",
     "rationale": "Tongas « est apparu comme categorie demographique officielle lors des recensements coloniaux portugais du XXe siecle », et Servicais couvrait un travail proche du travail force."
-  },
-  {
-    "id": "PPL_TONGA_LAC",
-    "status": "contested",
-    "rationale": "Le nom Tonga est « partagé par plusieurs groupes ethniques d'Afrique australe sans parenté directe », et Lakeshore Tonga est un label de la littérature anthropologique pour lever la confusion."
   },
   {
     "id": "PPL_TONGA_MALA",
@@ -2325,11 +2290,6 @@
     "rationale": "L'identite godie est contestee : des sources officielles rattachent les Godie aux Dida, ce que les Godie recusent, et Godie derive de Gwedji, surnom donne par les voisins Neyo."
   },
   {
-    "id": "PPL_XHOSA_CISKEI",
-    "status": "colonial-legacy",
-    "rationale": "La dénomination est une « construction administrative coloniale puis apartheid », le régime ayant maintenu deux bantoustans séparés pour diviser une communauté homogène."
-  },
-  {
     "id": "PPL_YAKA",
     "status": "contested",
     "rationale": "Le nom « serait un titre donné par les Kongo à leurs guerriers conquis », exonyme d'un voisin africain, et « Bayaka peut créer confusion avec le peuple Aka »."
@@ -2403,10 +2363,5 @@
     "id": "PPL_ZENATA",
     "status": "contested",
     "rationale": "La fiche dit le macro-groupe « dont les limites sont contestees par les historiens », Yves Modéran jugeant le terme tardif et la notion de Zenata unifié « surtout une construction des sources arabes medievales »."
-  },
-  {
-    "id": "PPL_ZULU_KWA_ZULU",
-    "status": "colonial-legacy",
-    "rationale": "Le bantoustan de KwaZulu (1970-1994), « artificiel et fragmenté », fut « créé par le régime d'apartheid pour priver les Zulu de leur citoyenneté sud-africaine »."
   }
 ]

@@ -10,7 +10,12 @@
       "selfAppellation": "Basotho (sing. Mosotho)",
       "exonyms": [
         "Basotho (terme colonial britannique et moderne)",
-        "Southern Sotho (pour distinguer des Sotho du Nord/Pedi et des Tswana)"
+        "Southern Sotho (pour distinguer des Sotho du Nord/Pedi et des Tswana)",
+        "Sesotho speakers (terme générique)",
+        "Basutoland people (terme colonial)",
+        "Sotho du Sud",
+        "Basuto",
+        "Basutho"
       ],
       "originOfExonyms": "Le terme Basotho designe le peuple et Sesotho la langue. L'appellation Southern Sotho est une classification academique anglophone pour differencier ce groupe des Sotho du Nord (Bapedi) et des Tswana, tous appartenant au groupe Sotho-Tswana.",
       "whyProblematic": "Le terme Sotho seul peut etre ambigu car il couvre aussi les Sotho du Nord (Pedi) et les Tswana. Basotho designe specifiquement le peuple du Lesotho et ses cousins sud-africains.",
@@ -28,7 +33,10 @@
       "Baphuthi (clan du buffle) — clan du sud du Lesotho et nord du Cap Oriental",
       "Basia (clan de la perdrix) — parmi les premiers peuples appeles Basotho",
       "Bahlakoana — sous-groupe interieur du Lesotho",
-      "Kololo — fraction migratoire qui traversa le Zambeze en 1823, conquit le Barotseland en 1845"
+      "Kololo — fraction migratoire qui traversa le Zambeze en 1823, conquit le Barotseland en 1845",
+      "Sotho du Free State (Afrique du Sud, province centrale)",
+      "Basotho du Gauteng (travailleurs migrants et descendants)",
+      "Basotho de l'Eastern Cape (Nord de la province)"
     ],
     "origins": {
       "ancientOrigins": "Les ancetres des Basotho proviennent d'Afrique nord-orientale et migrerent vers le sud a partir du 5e siecle apres J.-C. Des peuples bantouphones s'installerent dans l'actuelle Afrique du Sud vers 1500 apr. J.-C. La societe basotho emerge d'un melange de clans bantouphones avec les San (Bochimans) deja presents dans la region. Des forgerons au fer sont documentes des le 16e siecle, contemporains des Nguni voisins.",
@@ -36,13 +44,15 @@
       "migrationRoutes": [
         "Migration ancestrale depuis l'Afrique du Nord-Est vers les hauts plateaux d'Afrique australe (5e-15e siecle)",
         "Separation d'avec les Batswana vers le 14e siecle",
-        "Migration des Kololo vers le nord (1823), franchissant le marais de l'Okavango et le Zambeze vers le Barotseland"
+        "Migration des Kololo vers le nord (1823), franchissant le marais de l'Okavango et le Zambeze vers le Barotseland",
+        "Déplacements forcés des Basotho du Free State lors des guerres Basotho-Boers (1858, 1865-1868)"
       ],
       "historicalSettlementZones": [
         "Hauts plateaux du Maluti et du Drakensberg (coeur du Lesotho actuel)",
         "Province du Free State, actuelle Afrique du Sud",
         "Gauteng, notamment Soweto et regions industrielles",
-        "Nord-Ouest de l'Afrique du Sud (region de Maboloka)"
+        "Nord-Ouest de l'Afrique du Sud (region de Maboloka)",
+        "Lowlands (plaines basses de l'ouest du Lesotho)"
       ],
       "unificationsOrDivisions": "Moshoeshoe I unifa les clans basotho disperses lors du Difaqane (1820s-1830s), creant un Etat coherent capable de resister aux Boers et aux Zoulous. Il etablit sa capitale a Butha-Buthe (1822) puis a Thaba Bosiu (montagne imprenable). Apres les guerres du Free State-Basotho (1858-1868) et la perte des plaines occidentales, il fit appel a la reine Victoria : le Basutoland devint protectorat britannique en 1868.",
       "externalInfluences": "Contacts anciens avec les peuples San (apport de pratiques guerissantes, symbolismes representes dans les peintures rupestres depuis le 18e siecle). Influence des missionnaires protestants francais (Societe des Missions Evangeliques de Paris, arrives en 1833) : Casalis, Arbousset, Kohler etablirent l'orthographe du sesotho et imprimerent les premiers textes. Diffusion du christianisme depuis le 19e siecle.",
@@ -62,7 +72,9 @@
         "Sesotho standard — Lesotho et Free State, base de la langue litteraire",
         "Sesotho urbain de Soweto — forte influence des langues voisines (zoulou, tsonga, tswana)",
         "Phuthi — langue nguni fortement influencee par le sesotho, parlee au sud du Lesotho (parfois consider'ee comme dialecte)",
-        "Lozi (Silozi) — langue derivee du sesotho parlee en Zambie par les descendants des Kololo"
+        "Lozi (Silozi) — langue derivee du sesotho parlee en Zambie par les descendants des Kololo",
+        "Serolong (dialecte de transition vers le tswana)",
+        "Sesotho du Free State (Afrique du Sud, légèrement distinct du sesotho lésothien)"
       ],
       "vehicularRole": "Le sesotho est langue officielle du Lesotho et l'une des onze langues officielles de l'Afrique du Sud. Il est langue d'enseignement primaire au Lesotho et dans le Free State. Il sert de vehiculaire dans les mines et industries d'Afrique du Sud ou les Basotho ont migre en grand nombre."
     },
@@ -81,7 +93,7 @@
     "demography": {
       "totalPopulation": 6000000,
       "referenceYear": 2025,
-      "source": "Lesotho : population estimee a 2,36 millions en 2025 (Worldometer / Nations Unies), dont 99,7% Basotho. Afrique du Sud : environ 4 millions de locuteurs sesotho comme premiere langue (recensement 2011, Statistics South Africa). Population totale estimee incluant la diaspora : 6 a 7 millions. Source : Wikipedia Sotho people (2024), Worldometer Lesotho 2025, Statistics South Africa 2011.",
+      "source": "Lesotho : population estimee a 2,36 millions en 2025 (Worldometer / Nations Unies), dont 99,7% Basotho. Afrique du Sud : environ 4 millions de locuteurs sesotho comme premiere langue (recensement 2011, Statistics South Africa). Population totale estimee incluant la diaspora : 6 a 7 millions. Source : Wikipedia Sotho people (2024), Worldometer Lesotho 2025, Statistics South Africa 2011. Deux autres estimations donnent 7 254 315 personnes (Wikipedia, Sotho people, estimation 2023 : 2 300 000 au Lesotho et 4 900 000 en Afrique du Sud) et 6 200 000 personnes (Bureau of Statistics du Lesotho et Statistics South Africa : 2 200 000 au Lesotho et 4 000 000 en Afrique du Sud). Les sources lues ne permettent pas de choisir entre ces chiffres.",
       "distributionByCountry": [
         {
           "country": "LSO",
@@ -149,6 +161,38 @@
         "tier": "referenced",
         "source_kind": "repository",
         "notes": "Article de Gosiame Goitsemodimo (National Museum, Bloemfontein), revue Indago, 2026, DOI 10.5281/zenodo.19458019 ; il décrit la couverture comme partie de l'identité culturelle et nationale basotho depuis plus de 160 ans."
+      },
+      {
+        "title": "Study.com — Sotho History, Culture and People",
+        "url": "https://study.com/academy/lesson/sotho-history-culture-facts-people.html",
+        "tier": "unverified"
+      },
+      {
+        "title": "southafrica.net — The culture of Basotho",
+        "url": "https://www.southafrica.net/za/en/travel/article/the-culture-of-basotho-history-people-clothing-and-food",
+        "tier": "unverified"
+      },
+      {
+        "title": "PeopleGroups.org — Southern Sotho of Lesotho",
+        "url": "https://peoplegroups.org/people_groups/pg015283/",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      },
+      {
+        "title": "University of Cape Town — Sekoele Basotho: Protecting Initiation through the Law in Lesotho",
+        "url": "https://humanities.uct.ac.za/apc/sekoele-basotho-protecting-initiation-through-law-lesotho",
+        "tier": "referenced",
+        "source_kind": "academic"
+      },
+      {
+        "title": "Vogue — The Rich History Behind Basotho Heritage Blankets",
+        "url": "https://www.vogue.com/article/basotho-heritage-blankets",
+        "tier": "needs_review"
+      },
+      {
+        "title": "Mofolo, Thomas. Chaka. Morija Sesuto Book Depot, 1925",
+        "url": null,
+        "tier": "referenced"
       }
     ]
   },

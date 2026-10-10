@@ -1899,7 +1899,6 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
     ],
     entities: [
       { kind: "people", id: "PPL_BONO", label: "Bono" },
-      { kind: "people", id: "PPL_BRONG", label: "Brong (Abron)" },
       { kind: "country", id: "GHA", label: "Ghana" },
     ],
     tier: "referenced",
