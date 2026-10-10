@@ -1,0 +1,161 @@
+{
+  "designVersion": "1.1.0-proposition",
+  "source": "Operator-supplied Claude Design reference images, received 10 October 2026. Original baseline; no regeneration inferred as acceptance.",
+  "files": [
+    {
+      "id": "seq-1",
+      "file": "seq-1.png",
+      "sha256": "6451f404be0b620b758ce4d58fe4b71d4b091c1fff439c18855e487ed1f5e9fa"
+    },
+    {
+      "id": "seq-2",
+      "file": "seq-2.png",
+      "sha256": "f1d328b3a1d05a8d599ac4312fd695c96f7f9753d5e5955db75f90a4a1933937"
+    },
+    {
+      "id": "seq-3",
+      "file": "seq-3.png",
+      "sha256": "fd750b6d8bb687c06d7d9849291dffc9570e649580867f7d3b5ae374dd40f81c"
+    },
+    {
+      "id": "seq-4",
+      "file": "seq-4.png",
+      "sha256": "f022e8579a2a37bda43f7a26cbc9007beed829ef68bd61ebaf243fc1ca826c10"
+    },
+    {
+      "id": "seq-5",
+      "file": "seq-5.png",
+      "sha256": "565bf3430f78ba62e6d8c13ef19d3e2938e6d7277bc2312da34a3e237d74587e"
+    },
+    {
+      "id": "seq-6",
+      "file": "seq-6.png",
+      "sha256": "88f7d221524d22b72e1bf73c651519bbd35f90413b4da31357c90fd135196417"
+    },
+    {
+      "id": "seq-7",
+      "file": "seq-7.png",
+      "sha256": "121cc03e387c8d89c7a713cb9909c5d37fdd1aaace54829811ece80500158cca"
+    },
+    {
+      "id": "seq-8",
+      "file": "seq-8.png",
+      "sha256": "647b5b4f0d288d2eaa179257d03b5109c917fee1104a3988d5f35a44e596f007"
+    },
+    {
+      "id": "seq-9",
+      "file": "seq-9.png",
+      "sha256": "68352000222d8cfa82ad80e3457b0872b35e2b20cd2c0a0c7bc6ed781966f0de"
+    },
+    {
+      "id": "chr-1",
+      "file": "chr-1.png",
+      "sha256": "7413355ca7d18860518ef52991aa9c4b53a7174983d340ff81f5c8d88d29b5e6"
+    },
+    {
+      "id": "chr-2",
+      "file": "chr-2.png",
+      "sha256": "e8f1b2e8024fcb60857f76d52e7c40862d3a0c48e374b19fad5b42f69c1e6f11"
+    },
+    {
+      "id": "chr-3",
+      "file": "chr-3.png",
+      "sha256": "45f45ea77a4103428f44b2157a466deb4d0d08984eb0e066ea2d5f30db008ce1"
+    },
+    {
+      "id": "chr-4",
+      "file": "chr-4.png",
+      "sha256": "8a7fef859a90a582b34b8dd877402321e2c968ebe85b031e584ab6337bd93806"
+    },
+    {
+      "id": "chr-5",
+      "file": "chr-5.png",
+      "sha256": "a586ab9b52abe4a13315d6ed56cd633b54cbded8c423567af3789a0f184f6038"
+    },
+    {
+      "id": "chr-branch",
+      "file": "chr-branch.png",
+      "sha256": "c3e1cb903bec9c132ca9d192e96ec8b2869b21c1c77ad86ffa1ab9fbf006c8ae"
+    },
+    {
+      "id": "map-a",
+      "file": "map-a.png",
+      "sha256": "b22ab86f57b85cd0edc4c59dd9ea72d5ba68afc23e2abf26ce0c52bc5730e10d"
+    },
+    {
+      "id": "map-b",
+      "file": "map-b.png",
+      "sha256": "f105221736ed4346adfdb6f3dc6a7c03452929355612af653e3805f4e528fa46"
+    },
+    {
+      "id": "map-c",
+      "file": "map-c.png",
+      "sha256": "9d58b2e4bb788cf666c831e840e60d5f25e9003dea7e5ae62281f25ef988ff2b"
+    },
+    {
+      "id": "pair",
+      "file": "pair.png",
+      "sha256": "b1ef8393a482ebf1df493ee05b2fccc48f34bc42b369e645799b5be3e5bc4465"
+    },
+    {
+      "id": "stress",
+      "file": "stress.png",
+      "sha256": "a9f3f43bcd8aa12786f99f71c87e1fcca123981febc1fc573ef766d1af6a1ba7"
+    },
+    {
+      "id": "overflow",
+      "file": "overflow.png",
+      "sha256": "9f24289f0c52a4a037cb82fe874e9afb000d5d7c932e7f5858da83625b1bd9ab"
+    },
+    {
+      "id": "seq-4-parchemin",
+      "file": "seq-4-parchemin.png",
+      "sha256": "1bb8a42dc38f6b26301b9523b0c9ebc80b6a70f22253e7c0c492c07d086dd976"
+    },
+    {
+      "id": "chr-3-parchemin",
+      "file": "chr-3-parchemin.png",
+      "sha256": "07beda4a1630d40964477102dad3c459895eb64ed80c9661da6c3e9ef2dceac5"
+    },
+    {
+      "id": "map-c-parchemin",
+      "file": "map-c-parchemin.png",
+      "sha256": "71f9c35afb9090c847fb36abf505e99ddb728d1cffc0adba6ff146f77d6ffe3b"
+    },
+    {
+      "id": "seq-9-parchemin",
+      "file": "seq-9-parchemin.png",
+      "sha256": "ccbf80f1d9105e4ea0eb00f1c1a2c8f003f8e6ca7975f8d6c94e320ef22158cc"
+    },
+    {
+      "id": "map-fula",
+      "file": "map-fula.png",
+      "sha256": "b1e2b2a693ed94fda8592c6d5bc081afb782dbb29c748fa8c8816de5cfc87a72"
+    },
+    {
+      "id": "map-fula-region",
+      "file": "map-fula-region.png",
+      "sha256": "36f7290e5d6227c57c938a238b185c1a6e576f66ff1a0ffaa29e8ca04c654934"
+    },
+    {
+      "id": "map-fula-parchemin",
+      "file": "map-fula-parchemin.png",
+      "sha256": "180d7529a995724945b9c1fa4e2b3274685afaf5c59275eafed762a87d3beb11"
+    },
+    {
+      "id": "map-fula-nombre",
+      "file": "map-fula-nombre.png",
+      "sha256": "72f5b0a6566995e6584bf569e677a0e4e127c29d6b7a209f39535734c1b9bf54"
+    },
+    {
+      "id": "map-fula-nombre-region",
+      "file": "map-fula-nombre-region.png",
+      "sha256": "6aa3b78868df412fa00fbf13e3a9460c5fc612bde426e473a64dfc779b41ac4c"
+    },
+    {
+      "id": "map-fula-part",
+      "file": "map-fula-part.png",
+      "sha256": "6e78b64baf6922b073bf7e6b68c7581ec7bbf55731acf4b1684d737c74750c25"
+    }
+  ]
+}

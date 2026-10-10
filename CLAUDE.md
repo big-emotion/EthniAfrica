@@ -33,7 +33,8 @@ Codex uses the same skill through `.agents/skills/`. The operator's 10 October 2
 workflow replaces the retired production chain. Three human approvals and a
 durable per-piece checkpoint govern the work. The accepted Claude Design card
 system is in `social/design-system/`; `version.json` records its acceptance.
-Renderer integration remains pending; old templates are not a fallback.
+The export adapter is in `social/renderer/`; read its current verification
+status before use. Old templates are not a fallback.
 
 ## Commands
 

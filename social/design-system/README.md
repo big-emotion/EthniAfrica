@@ -106,3 +106,7 @@ EthniCards.mount(container, cardSpec, {
 ```
 
 `width: 430` mounts the same card at phone reading size. `handoff/harness.html` is a ready rendering bench and `handoff/cards.sample.json` holds every example card shown here.
+
+## Production adapter
+
+The [carousel renderer](../renderer/README.md) adds checked PNG exports, a review page and report verification around these unchanged reference components. Its implementation status and reference-image discrepancies are documented there.

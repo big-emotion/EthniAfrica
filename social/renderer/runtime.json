@@ -1,0 +1,6 @@
+{
+  "playwright": "1.63.0",
+  "chromium": "153.0.8010.12",
+  "deviceScaleFactor": 1,
+  "note": "Verified on macOS arm64 with the supplied 1.1.0-proposition reference images. Other operating systems require the same acceptance run; browser upgrades require a new fidelity review."
+}

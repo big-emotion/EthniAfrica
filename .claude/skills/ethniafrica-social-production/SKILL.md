@@ -22,12 +22,15 @@ style as a substitute for the new card design system.
 This skill implements the coordinator and local checkpoint helper (roadmap step
 3). The operator accepted the card design system in `social/design-system/`;
 `version.json` records the decision. Its reference components are available, but
-production renderer integration remains pending. The skill does not yet supply
+the export adapter is now in `social/renderer/`. Read its README before use:
+two reference-image discrepancies still await an operator decision, so roadmap
+step 4 is not closed. The skill does not yet supply
 automated corpus correction, package generation or cleanup. Before invoking a later
 capability, verify that it exists and has been accepted. Save the current position
 and explain missing inputs rather than claiming those steps ran. Research and
-writing can proceed within the approved brief; visual proof waits for the
-operator-supplied design system and verified rendering. Posting and deployment are never implicit.
+writing can proceed within the approved brief; visual proof requires the
+operator-supplied design system and verified rendering. Posting and deployment
+are never implicit.
 
 ## Start or resume
 
@@ -162,3 +165,20 @@ URLs/dates, useful decisions and remaining work before removing `suivi.md`,
 source evidence and anything still needed for pending publication or correction.
 The history/export destination and automatic cleanup are implemented at step 7;
 this coordinator does not delete production files.
+
+## Rendering with the accepted card system
+
+Read `social/renderer/README.md` and the accepted system's `handoff.md` before
+rendering. Use the adapter's proof mode for review and final mode only for
+non-demo content. Save each run to a new revision folder. Never remove a demo
+marker to bypass a refusal, or hide a fit warning. Run `verify` when resuming or
+before presenting exports; changed input, assets, fonts or engine invalidate them.
+The output's `productionReady` flag reports mechanical checks only; the three
+editorial approvals and explicit publishing instruction still apply.
+
+Review `review.html` at phone reading widths first. Record the input, report,
+actual exports and the report's shared design dependencies in the proof/final
+review. Check the actual text with `check:publication` and reread its generated
+alternative descriptions. The design sample set contains deliberate fictional
+or technical copy and does not pass publication review as a whole. Package
+creation and cleanup remain later capabilities.
