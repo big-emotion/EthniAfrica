@@ -1,6 +1,6 @@
 {
   "designVersion": "1.1.0-proposition",
-  "source": "Operator-supplied Claude Design reference images, received 10 October 2026. Original baseline; no regeneration inferred as acceptance.",
+  "source": "Operator-supplied Claude Design references received 10 October 2026; two map references reconciled to the unchanged accepted engine by explicit operator decision on the same date.",
   "files": [
     {
       "id": "seq-1",
@@ -130,7 +130,7 @@
     {
       "id": "map-fula",
       "file": "map-fula.png",
-      "sha256": "b1e2b2a693ed94fda8592c6d5bc081afb782dbb29c748fa8c8816de5cfc87a72"
+      "sha256": "063178879043bf51c3c338654b3870a26efdfb21c6d49e14b0bf774135543134"
     },
     {
       "id": "map-fula-region",
@@ -140,7 +140,7 @@
     {
       "id": "map-fula-parchemin",
       "file": "map-fula-parchemin.png",
-      "sha256": "180d7529a995724945b9c1fa4e2b3274685afaf5c59275eafed762a87d3beb11"
+      "sha256": "ef5eb6d85fb2fcce4c88e4b428c8fe95216ebb55d877ccdd05f679af54bdfbde"
     },
     {
       "id": "map-fula-nombre",
@@ -157,5 +157,21 @@
       "file": "map-fula-part.png",
       "sha256": "6e78b64baf6922b073bf7e6b68c7581ec7bbf55731acf4b1684d737c74750c25"
     }
-  ]
+  ],
+  "reconciliation": {
+    "date": "2026-10-10",
+    "decision": "Keep the accepted renderer. Update only map-fula and map-fula-parchemin to its country-list spacing; preserve the original reference files separately. No tolerance or engine change.",
+    "changes": [
+      {
+        "id": "map-fula",
+        "previousSha256": "b1e2b2a693ed94fda8592c6d5bc081afb782dbb29c748fa8c8816de5cfc87a72",
+        "acceptedSha256": "063178879043bf51c3c338654b3870a26efdfb21c6d49e14b0bf774135543134"
+      },
+      {
+        "id": "map-fula-parchemin",
+        "previousSha256": "180d7529a995724945b9c1fa4e2b3274685afaf5c59275eafed762a87d3beb11",
+        "acceptedSha256": "ef5eb6d85fb2fcce4c88e4b428c8fe95216ebb55d877ccdd05f679af54bdfbde"
+      }
+    ]
+  }
 }

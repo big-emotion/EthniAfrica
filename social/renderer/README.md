@@ -8,7 +8,7 @@ This adapter exports cards through the accepted [EthniAfrica Cartes system](../d
 - [x] Implement local, numbered PNG exports with asset, text, layout and freshness checks.
 - [x] Preserve the supplied design files and record every rendering dependency.
 - [x] Add a review page, complete rendered-text alternative descriptions and fidelity comparisons.
-- [ ] Resolve the two reference-image discrepancies recorded below before closing roadmap step 4.
+- [x] Resolve the two reference-image discrepancies by explicit operator decision; all 31 references pass and roadmap step 4 is complete.
 
 The [canonical specification](https://big-emotion.atlassian.net/wiki/spaces/ETHNIAFRIC/pages/212795394) owns the full roadmap. Research/corpus automation is step 5, publication packaging step 6, and cleanup step 7. They are not implemented by this adapter.
 
@@ -58,8 +58,8 @@ npm run social:render -- render social/design-system/handoff/cards.sample.json W
 npm run social:check-design -- social/design-system/handoff/cards.sample.json WORK/reference-run REFERENCES WORK/fidelity.json
 ```
 
-`REFERENCES` is the operator-supplied folder containing all 31 original reference PNGs. `reference-manifest.json` pins their exact hashes. These large files remain outside git as requested by the design handoff. A missing or changed reference fails explicitly; the command never silently creates a new baseline. A fresh checkout/CI runner needs the supplied images before running this check. The unit/refusal suite runs without them.
+`REFERENCES` is the operator-supplied folder containing all 31 accepted reference PNGs. `reference-manifest.json` pins their exact hashes. These large files remain outside git as requested by the design handoff. A missing or changed reference fails explicitly; the command never silently creates a new baseline. A fresh checkout/CI runner needs the supplied images before running this check. The unit/refusal suite runs without them.
 
 The comparison checks decoded sRGB pixels. A pixel counts as changed if any colour channel differs by more than 16/255. Ordinary cards require at most 0.7% changed pixels and a mean maximum-channel difference at most 0.4/255. The deliberately dense overflow fixture allows 1.2% and 0.65/255. Both limits apply. These tolerances cover observed text antialiasing on the pinned browser; a widespread small colour shift still fails. They do not establish cross-platform equivalence or replace text and visual checks.
 
-The first complete comparison passed 29 of 31 references. The two exceptions, `map-fula` and `map-fula-parchemin`, have a more widely spaced country list in the supplied reference PNGs than in the supplied 1.1 implementation. The operator has been asked which spacing to retain. Until that decision, keep both the accepted renderer and the original references unchanged and report the fidelity check as failing on those two cards. Do not raise tolerances to conceal that discrepancy.
+The first complete comparison passed 29 of 31 references. The two exceptions, `map-fula` and `map-fula-parchemin`, have a more widely spaced country list in the supplied reference PNGs than in the supplied 1.1 implementation. On 10 October 2026 the operator explicitly chose to keep the engine. Only these two reference PNGs were updated to its country-list spacing; both original PNGs remain in the local evidence archive, and the manifest records their previous and accepted hashes. A fresh comparison passes all 31 references. No engine code or tolerance changed. This closes roadmap step 4, not the editorial approval of any sample or a complete new-subject production pilot.

@@ -4,16 +4,20 @@
 
 The operator accepted **1.1.0-proposition on 10 October 2026**, recorded in
 `version.json`. The original identifier is retained. This accepts the visual
-system; production rendering and the checks below remain pending. The historical
+system. The [production adapter](../renderer/README.md) now completes roadmap
+step 4; its 31 visual-reference checks pass. The historical
 open-choice list at the end does not reopen already accepted typography or layout.
 
 The coordinator's static intake found all 31 sample cards' matching reference
 PNGs and referenced images, insets and maps locally, plus the five font files.
-No rendering/fidelity run has yet verified the supplied implementation.
+The adapter was then implemented test-first and visually reviewed at mobile,
+tablet and desktop sizes. On 10 October 2026 the operator chose to retain the
+engine and reconcile only two map references; the original PNGs and their hashes
+remain preserved. No visual component or comparison tolerance changed.
 
-Before adapting it, establish failing cases for missing assets, empty input,
-overflow, incomplete alternative text and demo content, then implement the
-smallest export driver. In particular:
+The following intake findings guided the adapter and remain relevant when
+maintaining it. The adapter covers the runtime refusals and alternative-text
+gaps; local-only CI baseline distribution and per-publication checks still apply:
 
 - Image readiness currently resolves on load errors too. Check decoded images
   and actual font loads, not only `report.ok`.

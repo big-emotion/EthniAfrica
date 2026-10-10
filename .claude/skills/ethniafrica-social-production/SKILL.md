@@ -21,10 +21,10 @@ style as a substitute for the new card design system.
 
 This skill implements the coordinator and local checkpoint helper (roadmap step
 3). The operator accepted the card design system in `social/design-system/`;
-`version.json` records the decision. Its reference components are available, but
-the export adapter is now in `social/renderer/`. Read its README before use:
-two reference-image discrepancies still await an operator decision, so roadmap
-step 4 is not closed. The skill does not yet supply
+`version.json` records the decision. The verified export adapter is available
+in `social/renderer/`; read its README before use. Roadmap step 4 is complete:
+all 31 visual references pass after the operator chose to keep the engine and
+reconcile only two map references on 10 October 2026. The skill does not yet supply
 automated corpus correction, package generation or cleanup. Before invoking a later
 capability, verify that it exists and has been accepted. Save the current position
 and explain missing inputs rather than claiming those steps ran. Research and
