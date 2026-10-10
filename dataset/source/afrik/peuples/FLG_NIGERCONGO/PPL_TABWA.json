@@ -141,5 +141,105 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Tabwa désigne un peuple bantou des rives sud-ouest du lac Tanganyika, entre la République démocratique du Congo et la Zambie, qui se nomme lui-même Tabwa. On le trouve aussi écrit Taabwa ou Batabwa, et les bibliothèques y rattachent le nom Itawa. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Tabwa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tap",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple du lac Tanganyika, écrit aussi Taabwa ou Batabwa.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tabwa est la forme que retient la Bibliothèque nationale de France pour ce peuple ; elle y rattache Batabwa, Batambwa, Itawa, Rungu, Taabwa, Tabwas et Waitawba. Le catalogue Glottolog écrit Taabwa pour la langue. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Tabwa (peuple d'Afrique), notice d'autorité",
+                "author": "Bibliothèque nationale de France",
+                "year": null,
+                "url": "https://data.bnf.fr/ark:/12148/cb12260028d",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice consultée le 11 octobre 2026. Autres formes relevées : Batabwa, Batambwa, Itawa, Rungu, Taabwa, Tabwas, Waitawba."
+              },
+              {
+                "title": "Glottolog 5.3 — Taabwa (taab1238)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/taab1238",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 11 octobre 2026. Noms relevés : Ichitaabwa, Rungu, Taabwa, Tabwa, Zabwa."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Itawa",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que Livingstone note en 1867 pour le pays et le peuple du chef Nsama.",
+        "periodLabel": "Écrit en 1867",
+        "accounts": [
+          {
+            "period": {
+              "from": 1867,
+              "to": 1867,
+              "label": "1867"
+            },
+            "era": "polity",
+            "statement": "Le nom Itawa apparaît dans le journal de l'explorateur David Livingstone, qui écrit en 1867 qu'Itawa est le nom du pays et du peuple du chef Nsama. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Itawa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Last Journals of David Livingstone, in Central Africa, from 1865 to his Death, vol. I",
+                "author": "David Livingstone, édité par Horace Waller",
+                "year": 1874,
+                "url": "https://archive.org/details/lastjournalsofda01livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 225 et p. 259",
+                "notes": "Londres, John Murray, 1874. Journal tenu par l'explorateur en 1867, publié après sa mort ; lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. Entrée d'août 1867 : « Itawa is the name of Nsama's country and people » ; p. 259 : « Nsama's country is called Itawa »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Itawa est rangé par la Bibliothèque nationale de France parmi les autres noms du peuple Tabwa. Le journal de Livingstone ne dit pas, lui, s'il s'agit du même nom que Tabwa.",
+            "sources": [
+              {
+                "title": "Tabwa (peuple d'Afrique), notice d'autorité",
+                "author": "Bibliothèque nationale de France",
+                "year": null,
+                "url": "https://data.bnf.fr/ark:/12148/cb12260028d",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice consultée le 11 octobre 2026. Autres formes relevées : Batabwa, Batambwa, Itawa, Rungu, Taabwa, Tabwas, Waitawba."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

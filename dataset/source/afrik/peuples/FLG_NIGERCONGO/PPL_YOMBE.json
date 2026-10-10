@@ -180,5 +180,128 @@
         "notes": "Étude de frontière : conventions du 14 février 1885 (Portugal et Association internationale du Congo) et du 12 mai 1886 (France et Portugal) dans le secteur du Cabinda."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Yombe désigne un peuple de langue kongo de la région du Mayombe, entre la République démocratique du Congo, le Congo et l'enclave angolaise de Cabinda, qui se nomme lui-même Bayombe. On l'a aussi appelé Mayombe, comme sa région. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Bayombe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "yom",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils portent : Bayombe au pluriel, et Yombe pour leur langue et leur pays.",
+        "periodLabel": "Écrit depuis 1854 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Bayombe apparaît, écrit « Bayọ́mbe », dans le recueil de langues du missionnaire Sigismund Koelle, à côté de deux autres formes, « Nyọ́mbe » et « Mayọ́mbe ». Koelle l'a noté à Freetown auprès d'Africains libérés de la traite. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite. Entrée « Nyọ́mbe, or Bayọ́mbe, or Mayọ́mbe » : l'auteur situe ce pays à l'ouest du Tsū́nde, à près d'un jour de marche du fleuve Loā́n·gu et à deux jours de la mer."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Yombe",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme courte du nom, employée en français et par les linguistes.",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Yombe désigne aujourd'hui un peuple et sa langue, le kiyombe, que le catalogue Glottolog range parmi les parlers kikongo de l'Ouest et situe en Angola et dans les deux Congo. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Yombe (yomb1244)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/yomb1244",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 11 octobre 2026. Noms relevés : Bayombe, Iombe, Kiombi, Kiyombe, Yombe. Le catalogue range la langue dans le groupe West Kikongo."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mayombe",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de leur région, qui a aussi servi à nommer le peuple au temps de la traite.",
+        "periodLabel": "Nom de la région ; nom du peuple dans la traite",
+        "accounts": [
+          {
+            "period": {
+              "from": 1670,
+              "to": 1780,
+              "label": "Vers 1670-1780"
+            },
+            "era": "polity",
+            "statement": "Le nom Mayombe désigne, dans les livres de comptes des capitaines négriers qui achètent des captifs à Loango, l'un des trois groupes d'où viennent la plupart d'entre eux, voisins immédiats des Vili, selon Elikia M'Bokolo. C'est la plus ancienne trace de ce nom pour un peuple que le projet connaît. Le peuple existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 18 : Des savanes du Cameroun au haut Nil",
+                "author": "Elikia M'Bokolo",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 583",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026. L'auteur situe la traite à grande échelle à Loango entre 1670 environ et 1780."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Fondation du royaume de Kongo, selon la tradition"
+            },
+            "era": "polity",
+            "statement": "On parle alors du Mayombe pour une région : c'est du Bungu, au Mayombe, que part Lukeni Nimi pour fonder le royaume de Kongo, selon la tradition rapportée par Jan Vansina.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 22 : L'Afrique équatoriale et l'Angola : les migrations et l'apparition des premiers États",
+                "author": "Jan Vansina",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 619",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

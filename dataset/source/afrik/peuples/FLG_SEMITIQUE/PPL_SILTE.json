@@ -154,5 +154,180 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Silte désigne un peuple musulman du centre-sud de l'Éthiopie, qui se nomme lui-même Silte. Il a longtemps été compté parmi les Gurage, et ses membres se disaient aussi Islaam. On ne sait pas avec certitude d'où vient le nom Silte ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Silte",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "stv",
+        "namedBy": null,
+        "shortLine": "Le nom des descendants de Gan-Silte, devenu en 2001 celui d'une nationalité reconnue.",
+        "periodLabel": "Nom d'une nationalité reconnue depuis 2001",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Silte désigne au sens ancien les descendants de Gan-Silte. Il s'étend aujourd'hui à cinq groupes musulmans voisins qui parlent la même langue, et un gardien de la mémoire silte, Husein Mohammed, ne sait pas dire clairement pourquoi ce nom a été choisi pour tous, selon Makoto Nishi.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Making and Unmaking of the Nation-State and Ethnicity in Modern Ethiopia: A Study on the History of the Silte People, African Study Monographs, supplément 29",
+                "author": "Makoto Nishi",
+                "year": 2005,
+                "url": "https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/68435",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 160",
+                "notes": "Université de Kyoto, 2005, p. 157-168 ; lu en texte intégral dans le dépôt de l'université le 11 octobre 2026. Husein Mohammed, coauteur d'un dictionnaire silte, est l'un des informateurs de l'auteur."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "Rapporté en 2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Silte viendrait de Gan-Silte, le dernier fils de Hajj Aliye, un saint né à Harar qui aurait suivi l'expédition de l'imam Ahmad au XVIe siècle avant de s'installer à Umnan ; la tradition orale silte fait de Gan-Silte l'ancêtre du peuple, selon Makoto Nishi.",
+            "hypothesisGroup": "origine du nom Silte",
+            "sources": [
+              {
+                "title": "Making and Unmaking of the Nation-State and Ethnicity in Modern Ethiopia: A Study on the History of the Silte People, African Study Monographs, supplément 29",
+                "author": "Makoto Nishi",
+                "year": 2005,
+                "url": "https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/68435",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 160",
+                "notes": "Université de Kyoto, 2005, p. 157-168 ; lu en texte intégral dans le dépôt de l'université le 11 octobre 2026. Tradition orale silte rapportée par l'auteur."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2001,
+              "to": 2001,
+              "label": "2001"
+            },
+            "era": "modern",
+            "statement": "Le nom Silte devient en 2001 celui d'une nationalité distincte des Gurage : au référendum de mars 2001, 416 481 votants sur 421 188 se prononcent pour, alors qu'une conférence réunie à Butajira en 1997 avait voté pour l'unité gurage, selon Makoto Nishi.",
+            "sources": [
+              {
+                "title": "Making and Unmaking of the Nation-State and Ethnicity in Modern Ethiopia: A Study on the History of the Silte People, African Study Monographs, supplément 29",
+                "author": "Makoto Nishi",
+                "year": 2005,
+                "url": "https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/68435",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 165",
+                "notes": "Université de Kyoto, 2005, p. 157-168 ; lu en texte intégral dans le dépôt de l'université le 11 octobre 2026. L'auteur cite les chiffres annoncés par la commission électorale nationale."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Islaam",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le mot traditionnel pour les cinq groupes musulmans qui parlent le silte.",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Islaam désigne traditionnellement cinq groupes musulmans de même langue : Silte, Azernet Berbere, Malga, Alicho Wuriro et Walane Gadabano. Le mot peut vouloir dire simplement « musulman », mais il désigne plus précisément ceux qui parlent l'islamgna, ou siltegna, selon Makoto Nishi.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Making and Unmaking of the Nation-State and Ethnicity in Modern Ethiopia: A Study on the History of the Silte People, African Study Monographs, supplément 29",
+                "author": "Makoto Nishi",
+                "year": 2005,
+                "url": "https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/68435",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 160",
+                "notes": "Université de Kyoto, 2005, p. 157-168 ; lu en texte intégral dans le dépôt de l'université le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gurage",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du groupe plus large auquel les Silte ont été rattachés jusqu'en 2001.",
+        "accounts": [
+          {
+            "period": {
+              "from": 1955,
+              "to": 1955,
+              "label": "1955"
+            },
+            "era": "modern",
+            "statement": "Le nom Gurage est alors partagé par les Silte : en 1955, des anciens et des jeunes instruits de plusieurs groupes gurage, dont les Silte, préparent l'exposition gurage d'Addis-Abeba, dont la brochure affirme que « la racine de la tribu gurage est une », selon Makoto Nishi.",
+            "sources": [
+              {
+                "title": "Making and Unmaking of the Nation-State and Ethnicity in Modern Ethiopia: A Study on the History of the Silte People, African Study Monographs, supplément 29",
+                "author": "Makoto Nishi",
+                "year": 2005,
+                "url": "https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/68435",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 162-163",
+                "notes": "Université de Kyoto, 2005, p. 157-168 ; lu en texte intégral dans le dépôt de l'université le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gurage de l'Est",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que donnent des historiens et des linguistes à leur langue et à ceux qui la parlent.",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Gurage de l'Est désigne, chez E. Haberland, l'un des trois peuples qui parlent encore aujourd'hui une langue sémitique héritée des anciens États musulmans du sud de l'Éthiopie, avec les gens du Harar et les Argobba.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 24 : La corne de l'Afrique",
+                "author": "E. Haberland",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 774",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
