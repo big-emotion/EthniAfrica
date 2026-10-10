@@ -16,7 +16,7 @@
         "Kosova",
         "Kossowa"
       ],
-      "originOfExonyms": "Kisii est un nom swahili repris par l'administration coloniale britannique. En swahili, Mkisii désigne une personne, Wakisii le peuple et Kikisii sa langue. Gusii est rattaché à Mogusii, un ancêtre fondateur légendaire du XVIe siècle. Abagusii est traduit par « peuple de Mogusii ». Deux explications rapprochent Kosova/Kossowa d'Inka Sobo, « leur maison » en Ekegusii, ou de Gosobe en kipsigis.",
+      "originOfExonyms": "Kisii est un nom swahili repris par l'administration coloniale britannique. En swahili, Mkisii désigne une personne, Wakisii le peuple et Kikisii sa langue. Gusii est rattaché à Mogusii, un ancêtre fondateur légendaire du XVIe siècle. Abagusii est traduit par « peuple de Mogusii ».",
       "whyProblematic": "Le terme Kisii ne designe pas le peuple dans leur propre langue mais une ville (Kisii, aussi appelee Bosongo ou Getembe). Il provient de l'administration coloniale britannique. Le nom authentique est Abagusii.",
       "contemporaryUsage": "Kisii est le nom le plus courant au Kenya pour designer ce peuple et leurs comtes ancestraux. Abagusii reste l'auto-denomination preferee dans les contextes culturels et academiques.",
       "linguisticFamily": "FLG_BANTU",
@@ -162,6 +162,7 @@
               "to": 1902,
               "label": "1902"
             },
+            "era": "polity",
             "statement": "Le nom Abagusii apparaît sous une forme proche, « Aba-kisii », chez Harry Johnston en 1902 : c'est, écrit-il, le nom que se donnent entre eux les Kavirondo de langue bantoue établis au sud du golfe de Kavirondo. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple vivait déjà dans ses collines avant lui.",
             "formAsWritten": "Aba-kisii",
             "birth": true,
@@ -256,6 +257,7 @@
               "to": 1902,
               "label": "1902"
             },
+            "era": "polity",
             "statement": "Le nom Kisii apparaît chez l'administrateur Charles William Hobley en 1902, qui parle de la « nation Kisii ou Kossova » et écrit que Kisii est le nom que ces gens donnent à leur pays. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple vivait déjà dans ses collines avant lui.",
             "formAsWritten": "Kisii",
             "birth": true,
@@ -310,6 +312,7 @@
               "to": 1902,
               "label": "1902"
             },
+            "era": "polity",
             "statement": "Le nom Kosova est, selon Harry Johnston en 1902, celui que les Maasaï donnent aux Abagusii ; la même année, Charles William Hobley écrit « Kossova » pour leur pays. C'est la plus ancienne trace de ce nom que le projet connaît. Les sources que nous avons lues n'en expliquent pas l'origine.",
             "formAsWritten": "Kosova",
             "birth": true,

@@ -17,7 +17,7 @@
         "Dikgoshi",
         "Sepedi"
       ],
-      "originOfExonyms": "Le terme 'Pedi' designe a la fois le clan royal Maroteng et par extension le grand ensemble linguistique sotho du nord. Durant la colonisation, l'administration britannique et boere a utilise 'Northern Sotho' pour regrouper une trentaine de dialectes distincts sous une meme etiquette administrative. Le terme 'Basotho ba Lebowa' deriverait du homeland de Lebowa cree sous l'apartheid en 1972.",
+      "originOfExonyms": "Le terme 'Pedi' designe a la fois le clan royal Maroteng et par extension le grand ensemble linguistique sotho du nord. Durant la colonisation, l'administration britannique et boere a utilise 'Northern Sotho' pour regrouper une trentaine de dialectes distincts sous une meme etiquette administrative.",
       "whyProblematic": "L'appellation 'Pedi' est ambigue : elle renvoie tantot au clan royal Maroteng (sens etroit), tantot a l'ensemble des 27-30 dialectes Sesotho sa Leboa (sens large). L'assimilation de 'Sepedi' a 'Northern Sotho' dans la constitution sud-africaine de 1994 a efface les identites de nombreux groupes dialectaux tels que les Lobedu, Birwa ou Hananwa.",
       "contemporaryUsage": "Le terme Pedi est couramment employe en anglais et en sesotho sa leboa. Les locuteurs se designent eux-memes comme Bapedi (peuple) et parlent Sepedi ou Sesotho sa Leboa. Sepedi est l'une des 12 langues officielles de l'Afrique du Sud depuis 1994.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -262,6 +262,7 @@
               "to": 1857,
               "label": "Livre publié en 1857"
             },
+            "era": "colonial",
             "statement": "Le nom Bapedi a peut-être une forme proche, Baperi, dans la liste des peuples bakoni que donne David Livingstone, au nord des Basuto. Les sources que nous avons lues ne disent pas s'il s'agit du même peuple.",
             "formAsWritten": "Baperi",
             "actors": [
@@ -289,6 +290,7 @@
               "to": 1899,
               "label": "Souvenirs publiés en 1899"
             },
+            "era": "colonial",
             "statement": "Le nom Bapedi figure dans les souvenirs du missionnaire allemand Alexander Merensky, qui raconte ses visites chez les Bapedi du roi Sekwati, au Transvaal. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
             "formAsWritten": "Bapedi",
             "birth": true,
@@ -317,6 +319,7 @@
               "to": 1899,
               "label": "Proposée en 1899"
             },
+            "era": "colonial",
             "statement": "Le nom Bapedi serait lié à celui de Biri, un pays que les vieilles cartes portugaises et hollandaises placent, depuis deux siècles, là où vivent les Bapedi, selon Alexander Merensky.",
             "hypothesisGroup": "origine du nom Pedi",
             "sources": [
@@ -370,6 +373,7 @@
               "to": 1879,
               "label": "De 1876 à 1879"
             },
+            "era": "colonial",
             "statement": "Le nom Pedi est celui du royaume de Sekhukhune, que la république du Transvaal attaque en 1876 et que les Britanniques et leurs alliés swazi vainquent en 1879, selon Ngwabi Bhebe.",
             "sources": [
               {
