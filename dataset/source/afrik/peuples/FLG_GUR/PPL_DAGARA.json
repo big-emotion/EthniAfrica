@@ -123,5 +123,162 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Dagara désigne un peuple du nord-ouest du Ghana et du sud-ouest du Burkina Faso, qui se nomme lui-même Dagara ; certains, autour de Wa, préfèrent Dagaaba. L'administration coloniale a employé Dagarti, que beaucoup rejettent, et des historiens de langue française écrivent Dagari. On ne sait pas avec certitude quand ces noms apparaissent par écrit, ni d'où ils viennent.",
+    "names": [
+      {
+        "nameText": "Dagara",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que beaucoup tiennent pour le seul juste, pour le peuple comme pour sa langue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Dagara est, pour une partie des intéressés, le seul nom juste, à la fois pour le peuple et pour sa langue, selon Carola Lentz. D'autres le réservent aux groupes situés plus au sud et à l'ouest.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Dagara Rebellion against Dagomba Rule? Contested Stories of Origin in North-Western Ghana, Journal of African History, vol. 35, n° 3",
+                "author": "Carola Lentz",
+                "year": 1994,
+                "url": "https://doi.org/10.1017/S0021853700026797",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 457, note 2",
+                "notes": "Lu dans l'extrait de la première page que publie Cambridge University Press ; la suite de l'article est payante. Note 2 : « Others hold that ‘Dagara’ is the only correct unitary term for both the language and the ethnic group »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dagaaba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que certains réservent aux habitants des environs de Wa, Nadawli et Jirapa.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Dagaaba, que Carola Lentz écrit Dagaba, est réservé par certains aux habitants des environs de Wa, Nadawli et Jirapa, au Ghana, selon elle.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Dagara Rebellion against Dagomba Rule? Contested Stories of Origin in North-Western Ghana, Journal of African History, vol. 35, n° 3",
+                "author": "Carola Lentz",
+                "year": 1994,
+                "url": "https://doi.org/10.1017/S0021853700026797",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 457, note 2",
+                "notes": "Lu dans l'extrait de la première page que publie Cambridge University Press ; la suite de l'article est payante. Note 2, sur l'usage de Dagaba pour les habitants des environs de Wa, Nadawli et Jirapa."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dagarti",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "L'administration coloniale britannique",
+        "shortLine": "Un nom introduit par l'administration coloniale ; beaucoup de ceux qu'il désigne le rejettent.",
+        "periodLabel": "Époque coloniale ; encore employé",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Dagarti reste employé par beaucoup de Ghanéens, mais la plupart des personnes ainsi désignées le rejettent comme péjoratif, selon Carola Lentz.",
+            "sources": [
+              {
+                "title": "A Dagara Rebellion against Dagomba Rule? Contested Stories of Origin in North-Western Ghana, Journal of African History, vol. 35, n° 3",
+                "author": "Carola Lentz",
+                "year": 1994,
+                "url": "https://doi.org/10.1017/S0021853700026797",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 457, note 2",
+                "notes": "Lu dans l'extrait de la première page que publie Cambridge University Press ; la suite de l'article est payante. Note 2 : « Most of those so labelled reject these names as pejorative »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Époque coloniale"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dagarti a été introduit, comme celui de Lobi, par les administrateurs coloniaux du nord-ouest de l'actuel Ghana, selon Carola Lentz. On ne sait pas avec certitude quand il apparaît pour la première fois par écrit.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "A Dagara Rebellion against Dagomba Rule? Contested Stories of Origin in North-Western Ghana, Journal of African History, vol. 35, n° 3",
+                "author": "Carola Lentz",
+                "year": 1994,
+                "url": "https://doi.org/10.1017/S0021853700026797",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 457, note 2",
+                "notes": "Lu dans l'extrait de la première page que publie Cambridge University Press ; la suite de l'article est payante. Note 2 : « Colonial administrators introduced the terms ‘Dagarti’ and ‘Lobi’, which many Ghanaians continue to use »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dagari",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme qu'emploient des historiens de langue française.",
+        "periodLabel": "En usage chez des historiens",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage des historiens"
+            },
+            "era": "modern",
+            "statement": "Le nom Dagari est la forme qu'emploie Michel Izard, après Guy Le Moal, pour un peuple venu du Ghana actuel qui a franchi la Volta noire après les Wile, à partir du XVIe siècle.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 9 : Les peuples et les royaumes de la boucle du Niger et du bassin des Volta du XIIe au XVIe siècle",
+                "author": "Michel Izard",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 261",
+                "notes": "UNESCO, édition française, lue dans l'exemplaire numérisé du volume."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
