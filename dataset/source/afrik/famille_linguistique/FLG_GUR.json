@@ -3,6 +3,214 @@
   "nameFr": "Gur",
   "nameEn": "Gur / Voltaic (terme ancien)",
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom gur désigne une famille de langues d'Afrique de l'Ouest, parlées au Burkina Faso et dans le nord de la Côte d'Ivoire, du Ghana, du Togo et du Bénin, comme le moore, le dagomba ou le gourma. C'est un nom de savants ; en français, on a longtemps dit voltaïque. Les sources que nous avons lues n'expliquent pas d'où vient le mot gur, et elles ne s'accordent pas sur les langues qu'il réunit ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Gur",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le linguiste allemand Diedrich Westermann",
+        "shortLine": "Un nom de savants pour des langues du bassin des Volta ; les sources lues n'en donnent pas l'origine.",
+        "periodLabel": "Depuis 1927",
+        "accounts": [
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "1985"
+            },
+            "era": "modern",
+            "statement": "Le nom gur, ou voltaïque, renvoie « strictement » à une classification des langues, rappelle M. Izard. Ces langues sont parlées en Haute-Volta et dans le nord de la Côte d'Ivoire, du Ghana, du Togo et du Bénin, et les spécialistes sont loin de s'accorder sur leur classement.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 9 : Les peuples et les royaumes de la boucle du Niger et du bassin des Volta du XIIe au XVIe siècle",
+                "author": "M. Izard",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 258-259"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom gur couvre pour Joseph Greenberg un grand groupe du niger-congo, dont la plupart des langues forment le « gur central » de John Bendor-Samuel, l'ancien mossi-grunshi. Il y range aussi le senoufo, le lobiri ou le dogon.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 334"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1963,
+              "to": 1980,
+              "label": "Des années 1960 à 1980"
+            },
+            "statement": "Le nom gur ne désignerait pas un ensemble uni : les travaux du linguiste Gabriel Manessy ont ruiné cette idée, selon D. Olderogge.",
+            "hypothesisGroup": "unite-du-gur",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 11 : Migrations et différenciations ethniques et linguistiques",
+                "author": "D. Olderogge",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 319"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "era": "modern",
+            "statement": "Le nom gur désignerait bien une famille, que le catalogue Glottolog compte pour 93 langues. Ce catalogue en sort toutefois le senoufo, qu'il classe à côté.",
+            "hypothesisGroup": "unite-du-gur",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Gur (gura1261)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/gura1261",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 10 octobre 2026. Le catalogue range sous ce nom 93 langues, dans l'ensemble Atlantic-Congo."
+              },
+              {
+                "title": "Glottolog 5.3 — Senufo (senu1239)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/senu1239",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 10 octobre 2026. Le catalogue range le senoufo dans l'ensemble North Volta-Congo, à côté du gur et non dedans."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1927,
+              "to": 1927,
+              "label": "1927"
+            },
+            "statement": "Le nom gur figure, avec le kwa et l'atlantique occidental, parmi les sous-groupes que le linguiste allemand Diedrich Westermann distingue en 1927 dans ses langues soudanaises occidentales, selon Joseph Greenberg et D. Olderogge. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Diedrich Westermann",
+                "role": "a proposé le nom dans ses études des langues soudanaises occidentales, selon Joseph Greenberg"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 327"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 11 : Migrations et différenciations ethniques et linguistiques",
+                "author": "D. Olderogge",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 319"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Voltaïque",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "Des linguistes de langue française",
+        "shortLine": "Le nom français de ces langues, dont Maurice Delafosse plaçait le domaine dans le bassin des Volta.",
+        "periodLabel": "Depuis 1924 au moins",
+        "accounts": [
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom voltaïque est, selon Joseph Greenberg, l'autre nom du gur, employé surtout dans la littérature de langue française.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 333"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1924,
+              "to": 1924,
+              "label": "1924"
+            },
+            "statement": "Le nom voltaïque désigne chez Maurice Delafosse, en 1924, un groupe de cinquante-trois langues dont le domaine couvre le haut bassin des diverses branches de la Volta, parlées entre autres par les Mossi, les Lobi et les Sénoufo. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "a employé le nom dans Les langues du monde, en 1924"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Langues du Soudan et de la Guinée, dans Les langues du monde, sous la direction d'A. Meillet et Marcel Cohen",
+                "author": "Maurice Delafosse",
+                "year": 1924,
+                "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 530",
+                "notes": "Paris, Édouard Champion, 1924. Lu dans la numérisation d'Internet Archive. Le texte porte le regard d'un administrateur colonial français et classe les peuples d'après la « race »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "searchAnswer": {
       "lead": "Des langues d'Afrique de l'Ouest, du sud du Mali au nord du Ghana. Leur ancien nom, « voltaïque », vient du fleuve Volta ; pour l'un de leurs groupes, des linguistes disent aujourd'hui « mabia ».",

@@ -3,6 +3,205 @@
   "nameFr": "Soudanique central",
   "nameEn": "Central Sudanic",
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom soudanique central désigne un groupe de langues parlées en groupes dispersés autour de la lisière nord-est de la forêt équatoriale et jusqu'au Tchad, comme le baguirmi, le moru, le madi, le mangbetu ou le lendu. C'est un nom de savants, formé sur le nom de région Soudan ; on a aussi dit soudanais central. Les sources ne s'accordent pas sur sa place dans un ensemble plus large ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Soudanique central",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des linguistes européens et américains, d'après le nom de région Soudan",
+        "shortLine": "Un nom de savants, formé sur le nom de région Soudan, pour des langues d'Afrique centrale.",
+        "periodLabel": "Écrit dès 1912 ; pour ce groupe depuis 1949-1950",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Classification exposée au présent par l'auteur"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom soudanique central désigne, chez Joseph Greenberg, un groupe de six sous-groupes : le bongo-baguirmi, le kreish, le moru-madi, le mangbetu, le mangbutu-efe et le lendu.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 336"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit au présent par l'auteur"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom soudanais central désigne, pour J. E. G. Sutton, une sous-famille aujourd'hui fragmentée, faite de groupes séparés autour de la lisière nord-est de la forêt équatoriale, dont les Moru-Madi du nord-ouest de l'Ouganda. Il pense que ces langues étaient bien plus répandues dans le bassin du haut Nil et du lac Victoria avant l'arrivée des langues bantoues et lwoo.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 23 : L'Afrique orientale avant le VIIe siècle",
+                "author": "J. E. G. Sutton",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 638"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "aspect": "meaning",
+            "statement": "Le nom soudanique central est formé sur le nom de région Soudan. François de Medeiros rappelle que ce nom reprend le « pays des Noirs » (bilād al-Sūdān) des auteurs arabes, qui couvre les bassins du Sénégal, du Niger et du Tchad et les pays plus au sud.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
+                "author": "François de Medeiros",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 145"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1963,
+              "to": 1980,
+              "label": "Proposée en 1963, exposée en 1980"
+            },
+            "hypothesisGroup": "place-du-soudanique-central",
+            "statement": "Le nom soudanique central désignerait l'un des deux grands groupes du chari-nil, à côté du soudanique oriental, dans la famille nilo-saharienne, selon Joseph Greenberg.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 335-336"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Position actuelle du catalogue"
+            },
+            "era": "modern",
+            "hypothesisGroup": "place-du-soudanique-central",
+            "statement": "Le nom soudanique central désignerait une famille à part, selon les éditeurs du catalogue Glottolog : pour eux, rien de solide ne permet de la rattacher à un ensemble nilo-saharien.",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Family: Central Sudanic",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/cent2225",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 10 octobre 2026. Commentaire sur l'appartenance de la famille : « No conclusive, methodologically sound basis for assigning Central Sudanic to an alleged full or partial Nilo-Saharan has been presented »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1949,
+              "to": 1963,
+              "label": "1949-1963"
+            },
+            "statement": "Le nom soudanique central sert à Joseph Greenberg, dans ses articles de 1949-1950, à nommer une famille à part. En 1954, il la range dans un ensemble macro-soudanique, puis, en 1963, dans le chari-nil, selon son propre tableau.",
+            "actors": [
+              {
+                "name": "Joseph H. Greenberg",
+                "role": "a proposé le nom dans sa classification des langues d'Afrique"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 338"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "birth": true,
+            "formAsWritten": "Central Sudanic languages",
+            "statement": "Le nom soudanique central apparaît par écrit en 1912 chez Diedrich Westermann, qui parle des « Central Sudanic languages », dont le baguirmi, au milieu de sa grande famille soudanaise. Il range pourtant le madi, le moru et le lendu avec les langues nilotiques. C'est la plus ancienne trace de ce nom que le projet connaît ; il ne désignait pas encore exactement le même groupe.",
+            "actors": [
+              {
+                "name": "Diedrich Westermann",
+                "role": "emploie le nom dans son livre sur le shilluk"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Shilluk People, Their Language and Folklore",
+                "author": "Diedrich Westermann",
+                "year": 1912,
+                "url": "https://archive.org/details/shillukpeoplethe00west",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 35-36",
+                "notes": "Philadelphie, Board of Foreign Missions of the United Presbyterian Church of N. A., et Berlin, Dietrich Reimer, 1912 ; d'après une enquête menée au Soudan en 1910. Lu dans la numérisation d'Internet Archive. Page 35 : « The Eastern together with the Central and Western Sudan-languages form the family of the Sudan Languages » ; page 36 : le bongo « shows remarkable connections with Central Sudanic languages, particularly with Bagirmi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "before": true,
+            "formAsWritten": "High Nilotic Group",
+            "statement": "On range alors le madi, le moru, le lendu et des langues voisines dans un « groupe du haut Nil » des langues nilotiques, selon Diedrich Westermann.",
+            "sources": [
+              {
+                "title": "The Shilluk People, Their Language and Folklore",
+                "author": "Diedrich Westermann",
+                "year": 1912,
+                "url": "https://archive.org/details/shillukpeoplethe00west",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 35",
+                "notes": "Philadelphie, Board of Foreign Missions of the United Presbyterian Church of N. A., et Berlin, Dietrich Reimer, 1912 ; d'après une enquête menée au Soudan en 1910. Lu dans la numérisation d'Internet Archive. Page 35 : « The High Nilotic Group, comprising Mittu, Madi, Madi-Kaya, Abo-Kaya, Abaka, Luba, Wira, Lendu, Moru »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "searchAnswer": {
       "lead": "Des langues du nord-est de la RDC, du Soudan du Sud, de l'Ouganda et du Tchad. Le nom vient de Joseph Greenberg (1963) ; que ces langues forment un seul ensemble reste à confirmer.",

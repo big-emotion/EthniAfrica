@@ -3,6 +3,218 @@
   "nameFr": "Khoe",
   "nameEn": "Khoe / Khoeid",
   "classificationStatus": "reconstructive",
+  "nameHistory": {
+    "summary": "Le nom khoe désigne une famille de langues à clics de Namibie, du Botswana et d'Afrique du Sud, comme le nama. C'est un nom de linguistes, tiré d'un mot de ces langues qui veut dire « homme » ; on a aussi dit khoïsan central. Les sources sont peu nombreuses sur sa date ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Khoe",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des linguistes, d'après le mot khoe des langues de cette famille",
+        "shortLine": "Un nom de linguistes, tiré d'un mot de ces langues, pour la famille du khoekhoe.",
+        "periodLabel": "Depuis les années 1970",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par les auteurs"
+            },
+            "statement": "Le nom khoe reprend un mot de ces langues que D. Olderogge traduit par « homme ». Tom Güldemann le range parmi les noms de familles tirés du mot qui veut dire « personne » dans les langues concernées.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 11 : Migrations et différenciations ethniques et linguistiques",
+                "author": "D. Olderogge",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 313"
+              },
+              {
+                "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+                "author": "Tom Güldemann",
+                "year": 2005,
+                "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2000,
+              "to": 2000,
+              "label": "2000"
+            },
+            "statement": "Le nom khoe désigne, chez Tom Güldemann et Rainer Voßen, une famille de deux branches, le khoekhoe et le khoe du Kalahari, à côté d'autres familles autrefois réunies sous le nom de khoïsan, selon Bernd Heine et Henry Honken.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Kx'a Family: A New Khoisan Genealogy, Journal of Asian and African Studies, no 79",
+                "author": "Bernd Heine et Henry Honken",
+                "year": 2010,
+                "url": "https://doi.org/10.15026/57434",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "notes": "Tokyo, Institut de recherche sur les langues et cultures d'Asie et d'Afrique. Lu en texte intégral dans la copie du dépôt de l'université des études étrangères de Tokyo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1971,
+              "to": 1974,
+              "label": "Années 1970"
+            },
+            "statement": "Le nom khoe remplace le nom géographique de khoïsan central dans les travaux des linguistes Ernst Westphal et Oswin Köhler, publiés en 1971 et 1973-1974, selon Tom Güldemann. Les linguistes prennent alors l'habitude de nommer ces familles par le mot qui veut dire « personne ». C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Ernst Westphal",
+                "role": "a employé ce type de nom dans ses travaux de 1971, selon Tom Güldemann"
+              },
+              {
+                "name": "Oswin Köhler",
+                "role": "a employé ce type de nom dans ses travaux de 1971 et 1973-1974, selon Tom Güldemann"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+                "author": "Tom Güldemann",
+                "year": 2005,
+                "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Khoïsan central",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des linguistes européens et américains",
+        "shortLine": "L'ancien nom géographique de la famille, au centre des langues khoïsan.",
+        "accounts": [
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom khoïsan central désigne, chez Joseph Greenberg, le groupe du khoï khoï, du naron et du kiechware, au milieu des langues khoïsan d'Afrique australe.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 329 et 336"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "statement": "Le nom de groupe central est employé par Isaac Schapera pour des langues comme le naron, à côté d'un groupe du Nord et d'un groupe du Sud.",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 420",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque et parle de « souche raciale »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1927,
+              "to": 1929,
+              "label": "1927-1929"
+            },
+            "statement": "Le nom de groupe central vient d'un découpage des langues à clics en trois groupes, Nord, Centre et Sud, que proposait déjà la linguiste Dorothea Bleek, selon Bernd Heine et Henry Honken et selon Tom Güldemann.",
+            "sources": [
+              {
+                "title": "The Kx'a Family: A New Khoisan Genealogy, Journal of Asian and African Studies, no 79",
+                "author": "Bernd Heine et Henry Honken",
+                "year": 2010,
+                "url": "https://doi.org/10.15026/57434",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "notes": "Tokyo, Institut de recherche sur les langues et cultures d'Asie et d'Afrique. Lu en texte intégral dans la copie du dépôt de l'université des études étrangères de Tokyo."
+              },
+              {
+                "title": "Studies in Tuu (Southern Khoisan), University of Leipzig Papers on Africa, Languages and Literatures, no 23",
+                "author": "Tom Güldemann",
+                "year": 2005,
+                "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Leipzig, université de Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Khoekhoe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "naq",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Khoekhoe ; il a donné son nom à la famille.",
+        "accounts": [
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "statement": "Le nom Khoekhoe, écrit Khoi-Khoin, est le nom que se donnent eux-mêmes les éleveurs que les Européens appelaient Hottentots, selon Isaac Schapera.",
+            "formAsWritten": "Khoi-Khoin",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5, note 1",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque et parle de « souche raciale »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "searchAnswer": {
       "lead": "Des langues parlées surtout en Namibie et au Botswana, comme le nama. « Hottentot » est un nom employé par les colons néerlandais ; les Khoekhoe se nomment ainsi eux-mêmes.",

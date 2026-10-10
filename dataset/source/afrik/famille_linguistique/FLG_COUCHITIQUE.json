@@ -3,6 +3,167 @@
   "nameFr": "Couchitique",
   "nameEn": "Cushitic",
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom couchitique désigne une famille de langues de la Corne de l'Afrique et de l'Afrique de l'Est, comme l'oromo, le somali, l'afar ou le bedja. C'est un nom de savants, tiré de Koush, un nom de la Bible ; on a longtemps rangé ces langues parmi les langues dites chamitiques. Les sources s'accordent sur son origine, moins sur ses limites ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Couchitique",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des linguistes européens, d'après la Bible",
+        "shortLine": "Un nom de savants tiré de Koush, un petit-fils de Noé dans la Bible, pour l'oromo, le somali ou l'afar.",
+        "periodLabel": "Depuis 1880",
+        "accounts": [
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "1985"
+            },
+            "era": "modern",
+            "statement": "Le nom couchitique désigne, selon Taddesse Tamrat, les langues que parlait la majorité des habitants de la Corne de l'Afrique pendant la période qu'il étudie. On les divise d'ordinaire en couchitique du Nord, avec le bedja, du Centre, avec l'agaw, et de l'Est.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 17 : La Corne de l'Afrique : les Salomonides en Éthiopie et les États de la Corne de l'Afrique",
+                "author": "T. Tamrat",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 459"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom couchitique désigne pour Joseph Greenberg une branche de la famille afro-asiatique, parlée surtout en Éthiopie et en Somalie et jusqu'en Tanzanie. Elle compte le bedja, les langues agaw, le somali, l'oromo, qu'il appelle galla, l'afar, le sidamo et des langues de Tanzanie.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 329-331"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom couchitique a perdu une partie de ses langues : Harold Fleming propose de faire du couchitique occidental, très différent des autres, une branche à part de l'afro-asiatique, selon Joseph Greenberg.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 330-331"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1924,
+              "to": 1924,
+              "label": "1924"
+            },
+            "statement": "Le nom couchitique est formé, selon Marcel Cohen, sur le nom biblique de Koush, le fils de Cham dont les descendants semblent vivre le plus au sud ; en égyptien ancien, ce nom désigne aussi les pays au sud de l'Égypte. Cohen demande qu'on ne le confonde jamais avec chamitique.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les langues du monde, chapitre « Langues chamito-sémitiques »",
+                "author": "Marcel Cohen",
+                "year": 1924,
+                "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Édouard Champion, 1924, ouvrage collectif dirigé par Antoine Meillet et Marcel Cohen. Lu dans la numérisation d'Internet Archive.",
+                "page": "p. 83-84"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1880,
+              "to": 1880,
+              "label": "1880"
+            },
+            "statement": "Le nom couchitique regroupe aussi chez Lepsius la langue des Khoekhoe, appelée alors hottentot, à cause de son genre grammatical. Joseph Greenberg rappelle que tout le reste rapproche cette langue des langues san.",
+            "sources": [
+              {
+                "title": "Nubische Grammatik, mit einer Einleitung über die Völker und Sprachen Afrika's",
+                "author": "Richard Lepsius",
+                "year": 1880,
+                "url": "https://archive.org/details/nubischegrammat00lepsgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Berlin, Wilhelm Hertz, 1880. Lu dans la numérisation d'Internet Archive, introduction. L'auteur classe les langues d'Afrique selon des idées de race de son époque.",
+                "page": "p. XVIII"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 325"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1880,
+              "to": 1880,
+              "label": "1880"
+            },
+            "statement": "Le nom couchitique apparaît sous la forme allemande « Kuschitischen (Aethiopischen) Sprachen » chez le linguiste allemand Richard Lepsius. Il y range le bedja, le saho, l'agaw, l'oromo, appelé alors galla, l'afar et le somali, parmi les langues qu'il dit chamitiques. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "formAsWritten": "Kuschitischen (Aethiopischen) Sprachen",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Richard Lepsius",
+                "role": "a proposé le nom couchitique dans sa grammaire nubienne"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Nubische Grammatik, mit einer Einleitung über die Völker und Sprachen Afrika's",
+                "author": "Richard Lepsius",
+                "year": 1880,
+                "url": "https://archive.org/details/nubischegrammat00lepsgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Berlin, Wilhelm Hertz, 1880. Lu dans la numérisation d'Internet Archive, introduction. L'auteur classe les langues d'Afrique selon des idées de race de son époque.",
+                "page": "p. XV et XVIII"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "searchAnswer": {
       "lead": "Des langues de la Corne de l'Afrique, comme l'oromo, le somali et l'afar. Le nom vient de Koush, un personnage de la Bible, repris par des savants européens du XIXe siècle.",

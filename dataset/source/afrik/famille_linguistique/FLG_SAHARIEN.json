@@ -3,6 +3,165 @@
   "nameFr": "Saharien",
   "nameEn": "Saharan",
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom saharien désigne un petit groupe de langues parlées au Sahara central et autour du lac Tchad : le kanouri et le kanembu, le teda et le daza, le zaghawa et le berti. C'est un nom de savants, formé sur le nom du Sahara ; on a d'abord dit saharien central. Les sources ne s'accordent pas sur sa place dans une famille plus large ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Saharien",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le linguiste américain Joseph Greenberg",
+        "shortLine": "Un nom de savants, formé sur le Sahara, pour le kanouri, le teda-daza et le zaghawa.",
+        "periodLabel": "Depuis 1949-1950 ; sous cette forme depuis 1963",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Classification exposée au présent par l'auteur"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom saharien désigne, chez Joseph Greenberg, la deuxième branche de la famille nilo-saharienne, avec trois ensembles : le kanouri-kanembu, le teda-daza, et le zaghawa avec le berti.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 335"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit au présent par les auteurs"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom saharien désigne, pour Dierk Lange et Bawaro W. Barkindo, le second sous-groupe nilo-saharien de la région du Tchad. Les mots que ces langues partagent avec le songhaï leur font penser que des langues nilo-sahariennes occupaient autrefois une grande partie de la région, de la boucle du Niger aux montagnes de l'Ennedi.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 15 : La région du Tchad en tant que carrefour",
+                "author": "Dierk Lange, en collaboration avec Bawaro W. Barkindo",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 471 et p. 473"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1963,
+              "to": 1990,
+              "label": "Proposée en 1963, reprise jusqu'en 1990"
+            },
+            "hypothesisGroup": "place-du-saharien",
+            "statement": "Le nom saharien désignerait une branche de la famille nilo-saharienne, selon Joseph Greenberg, que suivent Dierk Lange et Bawaro W. Barkindo.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 335"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 15 : La région du Tchad en tant que carrefour",
+                "author": "Dierk Lange, en collaboration avec Bawaro W. Barkindo",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 473, note 28"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Position actuelle du catalogue"
+            },
+            "era": "modern",
+            "hypothesisGroup": "place-du-saharien",
+            "statement": "Le nom saharien désignerait une famille à part, selon les éditeurs du catalogue Glottolog : pour eux, rien de solide ne permet de la rattacher à un ensemble nilo-saharien.",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Family: Saharan",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/saha1256",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues du monde publié par l'Institut Max-Planck d'anthropologie évolutionniste, lu en ligne le 10 octobre 2026. Commentaire sur l'appartenance de la famille : « No conclusive, methodologically sound basis for assigning Saharan to an alleged full or partial Nilo-Saharan has been presented »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1963,
+              "to": 1963,
+              "label": "1963"
+            },
+            "statement": "Le nom saharien remplace, dans le livre de Joseph Greenberg de 1963, le saharien central de ses premiers articles, et devient l'une des branches de sa famille nilo-saharienne, selon son propre tableau.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 338"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1949,
+              "to": 1950,
+              "label": "1949-1950"
+            },
+            "birth": true,
+            "statement": "Le nom saharien apparaît sous la forme saharien central dans la série d'articles où Joseph Greenberg propose en 1949-1950 sa classification des langues d'Afrique, selon le tableau qu'il en donne lui-même. Il en fait alors une famille à part. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "actors": [
+              {
+                "name": "Joseph H. Greenberg",
+                "role": "a proposé le nom dans sa classification des langues d'Afrique"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 338"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "searchAnswer": {
       "lead": "Des langues du Sahara central et du bassin du lac Tchad, dont le kanuri. Le nom est géographique ; en 1963, Joseph Greenberg a rattaché ce groupe au nilo-saharien.",

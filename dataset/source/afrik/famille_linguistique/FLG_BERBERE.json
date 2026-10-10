@@ -2,6 +2,481 @@
   "id": "FLG_BERBERE",
   "nameFr": "Berbère / Amazighe",
   "nameEn": "Berber / Amazigh",
+  "nameHistory": {
+    "summary": "Le nom berbère désigne une famille de langues d'Afrique du Nord et du Sahara, que ses locuteurs nomment de plus en plus tamaziɣt. Le mot berbère vient de l'arabe Barbar ; on a aussi dit libyco-berbère. Les sources ne s'accordent pas sur son origine ni sur le sens d'Amaziɣ ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Berbère",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Arabes, puis les auteurs européens",
+        "shortLine": "Le nom arabe Barbar, passé au français ; son origine, latine ou africaine, est discutée.",
+        "periodLabel": "Depuis le VIIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "1986"
+            },
+            "era": "modern",
+            "statement": "Le nom berbère est remplacé en français par Amaziɣ et tamaziɣt chez certains berbérisants du Maghreb, surtout marocains, qui le jugent blessant parce qu'il rappelle le mot « barbare », selon Salem Chaker. Chaker doute que cet usage s'impose, tant « berbère » est ancien en français.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 10 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 48-49"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom berbère désigne pour Joseph Greenberg une des cinq branches de la famille afro-asiatique, partagée entre les langues des Touareg du Sahara et le berbère du nord de l'Afrique et de la Mauritanie.",
+            "aspect": "usage",
+            "hypothesisGroup": "classement-berbere",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 330"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom berbère désignerait une langue sémitique, l'une des plus anciennes, proche de l'akkadien et de l'hébreu, selon une note ajoutée au chapitre de Greenberg à la demande d'un membre du comité de l'Histoire générale de l'Afrique. Cette note renvoie à un article de Mohammed El Fasi, « Le berbère, langue sœur de l'arabe », publié en 1971.",
+            "aspect": "usage",
+            "hypothesisGroup": "classement-berbere",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 327, note 21"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1788,
+              "to": 1799,
+              "label": "À partir de 1788"
+            },
+            "statement": "Le nom berbère désigne chez l'orientaliste français Venture de Paradis une seule langue, qu'il apprend à Paris auprès de deux Marocains, puis à Alger auprès de deux étudiants nés dans les montagnes à l'est de la ville. Il constate que la langue des montagnes de Constantine est presque la même que celle des montagnes du Maroc.",
+            "formAsWritten": "la langue berbère",
+            "sources": [
+              {
+                "title": "Grammaire et dictionnaire abrégés de la langue berbère",
+                "author": "Venture de Paradis",
+                "year": 1844,
+                "url": "https://archive.org/details/india.history.resource.75219",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Imprimerie royale, 1844, publié par la Société de géographie et revu par Amédée Jaubert. L'avertissement cite une note de l'auteur, mort en 1799, sur la façon dont il a recueilli la langue à partir de 1788. Lu dans la numérisation d'Internet Archive.",
+                "page": "Avertissement, p. I-III"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "1892"
+            },
+            "statement": "Le nom berbère viendrait de barbari, le nom que les Romains donnaient aux habitants de l'Afrique non romanisés, selon l'explication qu'en donne Schirmer en 1892, rapportée par Yves Modéran.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine-berbere",
+            "sources": [
+              {
+                "title": "Les Maures et l'Afrique romaine (IVe-VIIe siècle), cinquième partie, introduction : La conquête arabe",
+                "author": "Yves Modéran",
+                "year": 2003,
+                "url": "https://books.openedition.org/efr/1431",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Rome, École française de Rome, 2003. Lu en ligne sur OpenEdition le 10 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 18"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "2003"
+            },
+            "statement": "Le nom berbère viendrait de barbar, la prononciation populaire du latin barbari dans les villes et les campagnes romanisées d'Afrique, que les Arabes auraient entendue à leur arrivée, selon Yves Modéran.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine-berbere",
+            "sources": [
+              {
+                "title": "Les Maures et l'Afrique romaine (IVe-VIIe siècle), cinquième partie, introduction : La conquête arabe",
+                "author": "Yves Modéran",
+                "year": 2003,
+                "url": "https://books.openedition.org/efr/1431",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Rome, École française de Rome, 2003. Lu en ligne sur OpenEdition le 10 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 19"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "statement": "Le nom berbère viendrait des Bavares, ou Babares, une vaste confédération de l'Afrique romaine, selon l'archéologue Gabriel Camps. Yves Modéran, qui rapporte cette hypothèse, estime qu'elle se heurte à une difficulté insurmontable.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine-berbere",
+            "sources": [
+              {
+                "title": "Les Maures et l'Afrique romaine (IVe-VIIe siècle), cinquième partie, introduction : La conquête arabe",
+                "author": "Yves Modéran",
+                "year": 2003,
+                "url": "https://books.openedition.org/efr/1431",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Rome, École française de Rome, 2003. Lu en ligne sur OpenEdition le 10 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 19"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 750,
+              "to": 800,
+              "label": "Seconde moitié du VIIIe siècle"
+            },
+            "statement": "Le nom berbère apparaît sous la forme arabe Barbar chez Ibn al-Kalbî, un auteur de la seconde moitié du VIIIe siècle cité par Ibn Khaldoun, selon Yves Modéran. Modéran ajoute que des récits transmis oralement depuis la fin du VIIe siècle parlaient déjà de Berbères. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les Maures et l'Afrique romaine (IVe-VIIe siècle), cinquième partie, introduction : La conquête arabe",
+                "author": "Yves Modéran",
+                "year": 2003,
+                "url": "https://books.openedition.org/efr/1431",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Rome, École française de Rome, 2003. Lu en ligne sur OpenEdition le 10 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 19 et note 59"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 301,
+              "to": 700,
+              "label": "IVe-VIIe siècle"
+            },
+            "statement": "On parle alors de Mauri, ou Maurousioi en grec, pour désigner les peuples autochtones de l'Afrique du Nord : c'est le nom que préfèrent les textes et les inscriptions de cette période, selon Yves Modéran.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Les Maures et l'Afrique romaine (IVe-VIIe siècle), cinquième partie, introduction : La conquête arabe",
+                "author": "Yves Modéran",
+                "year": 2003,
+                "url": "https://books.openedition.org/efr/1431",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Rome, École française de Rome, 2003. Lu en ligne sur OpenEdition le 10 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tamaziɣt",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que des locuteurs donnent à leur langue ; il est devenu un nom commun à tous les parlers berbères.",
+        "periodLabel": "Écrit dès le XVIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "1986"
+            },
+            "era": "modern",
+            "statement": "Le nom tamaziɣt désigne aujourd'hui la langue berbère dans toutes les régions où on la parle, y compris en Kabylie et dans les Aurès, où il n'était pas connu, selon Salem Chaker.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 10 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 28 et 30"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1945,
+              "to": 1950,
+              "label": "1945-1950"
+            },
+            "era": "colonial",
+            "statement": "Le nom tamaziɣt est diffusé en Kabylie, avec Amaziɣ et Imaziɣen, par la chanson « berbéro-nationaliste » liée au mouvement national algérien, selon Salem Chaker. C'est de là que vient son emploi pour l'ensemble des Berbères et de leur langue.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 10 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 29"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "1986"
+            },
+            "era": "modern",
+            "statement": "Le nom tamaziɣt est celui que les berbérophones du Maroc central donnent à leur langue ; les Touareg disent tamahaq, tamajeq ou tamasheq selon les régions, d'après Salem Chaker.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 10 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 1-2 et 6"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens proposé"
+            },
+            "statement": "Le nom Amaziɣ, d'où vient tamaziɣt, voudrait dire « homme libre » ou « noble », une explication qui remonterait à Jean-Léon l'Africain, selon Salem Chaker. Chaker la juge « certainement pas fondée » : ce sens n'existe que dans quelques régions.",
+            "aspect": "meaning",
+            "hypothesisGroup": "sens-amazigh",
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 10 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 43-46"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens proposé"
+            },
+            "statement": "Le nom Amaziɣ viendrait, sous sa forme touarègue Amaheɣ, du verbe aheɣ, « piller », selon Charles de Foucauld. Salem Chaker, qui rapporte cette explication, la juge insoutenable pour un linguiste.",
+            "aspect": "meaning",
+            "hypothesisGroup": "sens-amazigh",
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 10 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 31-34"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens proposé"
+            },
+            "statement": "Le nom Amaziɣ viendrait d'une racine qui veut dire « rouge », selon T. Sarnelli en 1957. Salem Chaker trouve cette démonstration peu convaincante.",
+            "aspect": "meaning",
+            "hypothesisGroup": "sens-amazigh",
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 10 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 35-36"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens proposé"
+            },
+            "statement": "Le nom Amaziɣ serait proche d'un verbe touareg qui veut dire « marcher d'un pas altier, comme un noble », selon K. G. Prasse, après F. Nicolas. Salem Chaker juge l'hypothèse possible, mais non démontrée, et conclut qu'il est difficile d'établir une étymologie sûre.",
+            "aspect": "meaning",
+            "hypothesisGroup": "sens-amazigh",
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 10 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 37-42"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1501,
+              "to": 1600,
+              "label": "XVIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom tamaziɣt a un ancêtre dans l'expression « aquel amazig », c'est-à-dire awal amaziɣ, « la langue berbère », que donne Jean-Léon l'Africain au XVIe siècle, selon Salem Chaker. C'est la plus ancienne trace de ce nom de langue que le projet connaît. La langue existait déjà avant lui.",
+            "formAsWritten": "aquel amazig",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 10 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 4 et 44"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -500,
+              "to": 550,
+              "label": "De l'Antiquité au VIe siècle"
+            },
+            "statement": "On trouve alors chez les auteurs grecs et latins des noms de tribus du Maghreb, comme Maxyes, Mazyes ou Mazices, que Salem Chaker rapproche d'Amaziɣ. Certains auteurs latins emploient Mazax pour tous les habitants du Maghreb.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Amaziɣ (le/un Berbère), Encyclopédie berbère, 4",
+                "author": "Salem Chaker",
+                "year": 1986,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Encyclopédie berbère, p. 562-568 de l'édition imprimée. Lue en ligne sur OpenEdition le 10 octobre 2026 ; les paragraphes y sont numérotés.",
+                "page": "§ 13-19"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Libyco-berbère",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des linguistes européens",
+        "shortLine": "Un ancien nom savant de ces langues, qui les rattache aux Libyens de l'Antiquité.",
+        "periodLabel": "Fin du XIXe et début du XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1924,
+              "to": 1924,
+              "label": "1924"
+            },
+            "statement": "Le nom libyco-berbère désigne chez Marcel Cohen un des quatre groupes du chamito-sémitique. Il note que la langue ancienne, très mal attestée, échappe encore à l'étude, alors que les parlers modernes sont de mieux en mieux connus.",
+            "formAsWritten": "libyco-berbère",
+            "sources": [
+              {
+                "title": "Les langues du monde, chapitre « Langues chamito-sémitiques »",
+                "author": "Marcel Cohen",
+                "year": 1924,
+                "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Édouard Champion, 1924, ouvrage collectif dirigé par Antoine Meillet et Marcel Cohen. Lu dans la numérisation d'Internet Archive.",
+                "page": "p. 81 et 83"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1880,
+              "to": 1880,
+              "label": "1880"
+            },
+            "statement": "Le nom libyco-berbère a un ancêtre chez Richard Lepsius, qui parle en 1880 de « langues libyques » pour le kabyle et la langue des Touareg, qu'il range parmi les langues chamitiques.",
+            "formAsWritten": "Libyschen Sprachen",
+            "sources": [
+              {
+                "title": "Nubische Grammatik, mit einer Einleitung über die Völker und Sprachen Afrika's",
+                "author": "Richard Lepsius",
+                "year": 1880,
+                "url": "https://archive.org/details/nubischegrammat00lepsgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Berlin, Wilhelm Hertz, 1880. Lu dans la numérisation d'Internet Archive, introduction. L'auteur classe les langues d'Afrique selon des idées de race de son époque.",
+                "page": "p. XV et XVII"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "searchAnswer": {
       "lead": "Les langues des Imazighen, de l'Afrique du Nord au Sahel. Amazigh est le nom que se donnent aujourd'hui ces peuples ; Berbère vient du nom arabe Barbar, d'où le mot français.",

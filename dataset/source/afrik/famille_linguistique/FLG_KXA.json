@@ -3,6 +3,127 @@
   "nameFr": "Kx'a",
   "nameEn": "Kx'a",
   "classificationStatus": "reconstructive",
+  "nameHistory": {
+    "summary": "Le nom kx'a désigne une petite famille de langues à clics de Namibie et du Botswana, le ǃxun et le ǂhoan. C'est un nom de linguistes, tiré d'un mot de ces langues qui veut dire « terre » ; on a aussi parlé de khoïsan du Nord pour le ǃxun. Les sources que nous avons lues s'accordent sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Kx'a",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les linguistes Bernd Heine et Henry Honken, d'après un mot de ces langues",
+        "shortLine": "Un nom de linguistes de 2010, tiré d'un mot de ces langues qui veut dire « terre ».",
+        "periodLabel": "Depuis 2010",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par les auteurs"
+            },
+            "statement": "Le nom kx'a vient d'une racine kxà, « terre, sol », commune aux langues de la famille, selon Bernd Heine et Henry Honken. Ils notent que la même racine se retrouve dans le kwadi, une langue du sud-ouest de l'Angola.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Kx'a Family: A New Khoisan Genealogy, Journal of Asian and African Studies, no 79",
+                "author": "Bernd Heine et Henry Honken",
+                "year": 2010,
+                "url": "https://doi.org/10.15026/57434",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10, note 6",
+                "notes": "Tokyo, Institut de recherche sur les langues et cultures d'Asie et d'Afrique. Lu en texte intégral dans la copie du dépôt de l'université des études étrangères de Tokyo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2010,
+              "to": 2010,
+              "label": "2010"
+            },
+            "statement": "Le nom kx'a apparaît dans un article des linguistes Bernd Heine et Henry Honken, qui proposent d'appeler ainsi la famille formée par le ǃxun, ou ju, et le ǂhoan. Ils s'appuient sur une hypothèse avancée par Henry Honken en 2004. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Bernd Heine",
+                "role": "a proposé le nom dans un article de 2010"
+              },
+              {
+                "name": "Henry Honken",
+                "role": "a proposé le nom dans un article de 2010"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Kx'a Family: A New Khoisan Genealogy, Journal of Asian and African Studies, no 79",
+                "author": "Bernd Heine et Henry Honken",
+                "year": 2010,
+                "url": "https://doi.org/10.15026/57434",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5 et p. 10",
+                "notes": "Tokyo, Institut de recherche sur les langues et cultures d'Asie et d'Afrique. Lu en texte intégral dans la copie du dépôt de l'université des études étrangères de Tokyo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 2010,
+              "label": "Avant 2010"
+            },
+            "statement": "On range alors le ǃxun dans le khoïsan du Nord et le ǂhoan plutôt dans le khoïsan du Sud, selon Bernd Heine et Henry Honken.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Kx'a Family: A New Khoisan Genealogy, Journal of Asian and African Studies, no 79",
+                "author": "Bernd Heine et Henry Honken",
+                "year": 2010,
+                "url": "https://doi.org/10.15026/57434",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Tokyo, Institut de recherche sur les langues et cultures d'Asie et d'Afrique. Lu en texte intégral dans la copie du dépôt de l'université des études étrangères de Tokyo."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Khoïsan du Nord",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des linguistes européens et américains",
+        "shortLine": "L'ancien nom géographique d'une partie de ces langues.",
+        "accounts": [
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom khoïsan du Nord désigne, chez Joseph Greenberg, le groupe des langues des Auen et des Kung, que l'on appelle aujourd'hui ju ou ǃxun.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 336"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "searchAnswer": {
       "lead": "Un tout petit ensemble de deux langues à clics, en Namibie et au Botswana. Son nom, créé en 2010, vient d'un mot commun aux deux branches, qui veut dire « terre » ou « sol ».",

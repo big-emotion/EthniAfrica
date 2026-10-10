@@ -3,6 +3,264 @@
   "nameFr": "Bénoué-Congo",
   "nameEn": "Benue–Congo",
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom bénoué-congo désigne une très grande branche de la famille niger-congo, qui comprend le bantou et de nombreuses langues du Nigeria. C'est un nom de savants ; on a aussi dit semi-bantou ou bénoué-cross. Les sources ne s'accordent pas sur ses limites, ni sur la place qu'y tient le bantou ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Bénoué-Congo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le linguiste allemand Diedrich Westermann, selon Joseph Greenberg",
+        "shortLine": "Un nom de savants pour une branche du niger-congo qui réunit le bantou et des langues du Nigeria.",
+        "periodLabel": "Depuis Westermann, avant 1949",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "era": "modern",
+            "statement": "Le nom bénoué-congo désigne aujourd'hui, pour le catalogue Glottolog, un ensemble d'environ mille langues qui comprend le bantou, mais aussi le yoruba et l'igbo, que Joseph Greenberg rangeait dans le kwa.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Benue-Congo (benu1247)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/benu1247",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 10 octobre 2026. Le catalogue range sous ce nom 1 001 langues, dont le groupe bantoïde qui contient le bantou, dans l'ensemble Atlantic-Congo."
+              },
+              {
+                "title": "Glottolog 5.3 — Yoruba (yoru1245)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/yoru1245",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 10 octobre 2026. Le catalogue range le yoruba dans le bénoué-congo (Benue-Congo)."
+              },
+              {
+                "title": "Glottolog 5.3 — Igbo (nucl1417)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/nucl1417",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 10 octobre 2026. Le catalogue range l'igbo dans le bénoué-congo (Benue-Congo)."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 334"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom bénoué-congo désigne chez Joseph Greenberg le groupe que Westermann appelait bénoué-cross ou semi-bantou, auquel il ajoute le bantou. Il le divise en quatre : les langues du plateau, le jukunoïde, la Cross River, avec l'efik et l'ibibio, et le bantoïde, qui comprend le bantou et le tiv.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 334"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1990,
+              "label": "De 1980 à 1990"
+            },
+            "era": "modern",
+            "statement": "Le nom bénoué-congo aurait une frontière floue avec le kwa : Joseph Greenberg le reconnaît, et Bassey W. Andah et James R. Anquandah ne voient pas de limite nette entre l'igbo, classé kwa, et l'efik ou l'ibibio de la Cross River.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 333"
+              },
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 17 : La zone guinéenne : les peuples entre le mont Cameroun et la Côte d'Ivoire",
+                "author": "Bassey W. Andah, avec la collaboration de James R. Anquandah",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 526"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1963,
+              "to": 1972,
+              "label": "De 1963 aux années 1970"
+            },
+            "statement": "Le nom bénoué-congo engloberait le bantou, simple sous-groupe dont le foyer serait la vallée moyenne de la Bénoué, au Nigeria, selon Joseph Greenberg.",
+            "hypothesisGroup": "place-du-bantou",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 334-335"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1962,
+              "to": 1962,
+              "label": "1962"
+            },
+            "statement": "Le nom bénoué-congo ne devrait pas englober le bantou, famille indépendante dont le foyer serait au sud du Shaba ; les ressemblances viendraient d'influences du bantou sur d'autres langues, selon Malcolm Guthrie, d'après Joseph Greenberg.",
+            "hypothesisGroup": "place-du-bantou",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 334-335"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1949,
+              "label": "Avant 1949, chez Westermann"
+            },
+            "statement": "Le nom bénoué-congo est d'abord, selon Joseph Greenberg, celui que le linguiste allemand Diedrich Westermann donne à un sous-groupe de ses langues soudanaises occidentales, qu'il appelle aussi semi-bantou. Greenberg en fait ensuite une branche du niger-congo, où il place le bantou. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "formAsWritten": "Bénué-Congo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Diedrich Westermann",
+                "role": "a proposé le nom dans ses études des langues soudanaises occidentales, selon Joseph Greenberg"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 329"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Semi-bantou",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un ancien nom pour des langues d'Afrique de l'Ouest proches du bantou, retenu quand elles avaient des classes de noms.",
+        "periodLabel": "Début du XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom semi-bantou a désigné, au sens large, des langues du Nigeria que l'on range maintenant dans le bantou, comme celles des groupes ekoi et jaraw, selon Joseph Greenberg.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 334"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "statement": "Le nom semi-bantou figure dans le titre de l'ouvrage du Britannique Harry Johnston, A Comparative Study of the Bantu and Semi-Bantu Languages, dont le premier volume paraît en 1919. Johnston y tient beaucoup de langues d'Afrique de l'Ouest pour apparentées au bantou, mais il ne donne ce nom qu'à celles qui ont des classes de noms, selon Joseph Greenberg. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Harry H. Johnston",
+                "role": "a employé le nom dans le titre de son ouvrage de 1919"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Comparative Study of the Bantu and Semi-Bantu Languages, vol. 1",
+                "author": "Harry H. Johnston",
+                "year": 1919,
+                "url": "https://archive.org/details/comparativestudy01johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre et préface",
+                "notes": "Oxford, Clarendon Press, 1919. Lu dans la numérisation d'Internet Archive."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 327"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "searchAnswer": {
       "lead": "Un très grand ensemble d'environ 900 langues d'Afrique. Son nom réunit deux repères géographiques : la rivière Bénoué, au Nigeria et au Cameroun, et le fleuve Congo.",

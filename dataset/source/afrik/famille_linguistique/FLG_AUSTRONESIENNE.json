@@ -3,6 +3,208 @@
   "nameFr": "Austronésienne (présente en Afrique uniquement via Madagascar)",
   "nameEn": "Austronesian / Malayo-Polynesian",
   "classificationStatus": "contested",
+  "nameHistory": {
+    "summary": "Le nom austronésien désigne une très grande famille de langues d'Asie du Sud-Est et du Pacifique, présente en Afrique par le malgache de Madagascar. C'est un nom de savant, qui veut dire « des îles du Sud » ; on a aussi dit malayo-polynésien. Les sources que nous avons lues s'accordent sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Austronésien",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le prêtre et linguiste autrichien Wilhelm Schmidt",
+        "shortLine": "Un nom savant de 1899 qui veut dire « des îles du Sud » ; il englobe le malgache.",
+        "periodLabel": "Depuis 1899",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par l'auteur"
+            },
+            "statement": "Le nom austronésien veut dire « langues des îles du Sud », selon Wilhelm Schmidt, qui l'a formé comme indonésien, mélanésien ou polynésien. Il explique que ces langues sont toutes parlées dans des îles situées au sud-est de l'Asie, dans ce qu'il appelle l'« Auster », le Sud, d'où vient aussi le nom de Terra Australis.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Die Mon-Khmer-Völker, ein Bindeglied zwischen Völkern Zentralasiens und Austronesiens",
+                "author": "Wilhelm Schmidt",
+                "year": 1906,
+                "url": "https://archive.org/details/diemonkhmervlke00schmgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 69",
+                "notes": "Brunswick, Friedrich Vieweg und Sohn, 1906. Lu dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom austronésien désigne la famille du malgache, la langue de Madagascar, chez Joseph Greenberg. Il écrit que cette appartenance n'a jamais été discutée et que la langue la plus proche du malgache est probablement le maanyan, parlé à Bornéo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 337"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "statement": "Le nom austronésien remplace malayo-polynésien chez Wilhelm Schmidt, qui juge l'ancien nom mal formé : le polynésien n'est pas, selon lui, une branche égale au malais, mais une de ses descendantes.",
+            "formAsWritten": "austronesisch",
+            "sources": [
+              {
+                "title": "Die Mon-Khmer-Völker, ein Bindeglied zwischen Völkern Zentralasiens und Austronesiens",
+                "author": "Wilhelm Schmidt",
+                "year": 1906,
+                "url": "https://archive.org/details/diemonkhmervlke00schmgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 3 et p. 69",
+                "notes": "Brunswick, Friedrich Vieweg und Sohn, 1906. Lu dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1899,
+              "to": 1899,
+              "label": "1899"
+            },
+            "statement": "Le nom austronésien est proposé en allemand, sous la forme austronesisch, par Wilhelm Schmidt dans une conférence à la Société d'anthropologie de Vienne, publiée en 1899, selon ce qu'il écrit lui-même en 1906. C'est la plus ancienne trace de ce nom que le projet connaît. Les langues qu'il réunit existaient déjà avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Wilhelm Schmidt",
+                "role": "a proposé le nom dans une conférence publiée à Vienne en 1899"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Die Mon-Khmer-Völker, ein Bindeglied zwischen Völkern Zentralasiens und Austronesiens",
+                "author": "Wilhelm Schmidt",
+                "year": 1906,
+                "url": "https://archive.org/details/diemonkhmervlke00schmgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 69, note 1",
+                "notes": "Brunswick, Friedrich Vieweg und Sohn, 1906. Lu dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1613,
+              "to": 1614,
+              "label": "1613-1614"
+            },
+            "era": "polity",
+            "statement": "On rapproche déjà la langue de Madagascar du malais : Luis Moriano, auteur d'un récit portugais de voyage à Madagascar, la juge « très semblable au malais », selon Joseph Greenberg.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 322"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Malayo-polynésien",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des savants européens",
+        "shortLine": "L'ancien nom de la famille, tiré du malais et des langues de Polynésie.",
+        "accounts": [
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom malayo-polynésien est donné par Joseph Greenberg comme l'autre nom de la famille austronésienne.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 337"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1841,
+              "to": 1841,
+              "label": "1841"
+            },
+            "statement": "Le nom malayo-polynésien figure, sous la forme allemande malayisch-polynesisch, dans le titre d'une étude du linguiste allemand Franz Bopp. Il y compare aussi des mots du malgache.",
+            "formAsWritten": "malayisch-polynesischen",
+            "sources": [
+              {
+                "title": "Über die Verwandtschaft der malayisch-polynesischen Sprachen mit den indisch-europäischen",
+                "author": "Franz Bopp",
+                "year": 1841,
+                "url": "https://archive.org/details/uberdieverwandts00bopp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre et p. 8-10",
+                "notes": "Berlin, Ferdinand Dümmler, 1841 ; texte lu à l'Académie des sciences de Berlin en 1840. Lu dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1781,
+              "to": 1781,
+              "label": "1781"
+            },
+            "statement": "Le nom malayo-polynésien est employé par Joseph Greenberg pour désigner les langues dont l'Anglais William Marsden supposait la parenté dès 1781. Le texte de Marsden lui-même n'a pas été lu.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 323"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "searchAnswer": {
       "lead": "Madagascar est le seul pays d'Afrique dont la langue relève de cette famille, répandue aussi en Asie du Sud-Est et dans le Pacifique. Le nom date d'environ 1900.",
