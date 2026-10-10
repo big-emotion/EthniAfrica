@@ -136,5 +136,191 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Lomwe désigne un peuple du nord du Mozambique et du sud du Malawi, qui se nomme lui-même Alomwe. Un autre nom a longtemps servi au Malawi : Nguru, ou Anguru, que l'administration coloniale employait avec mépris. Nous n'avons pas trouvé de source qui explique l'origine de ces noms ; ce que disent les sources est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Lomwe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ngl",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; on dit aussi Alomwe.",
+        "periodLabel": "Écrit dès 1892",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Lomwe désigne un peuple et une famille de parlers du nord du Mozambique, dont une partie a émigré au Malawi. Nous n'avons pas trouvé de source qui explique l'origine de ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 21 : La Zambézie du Nord : la région du lac Malawi",
+                "author": "Kings M. Phiri, Owen J. M. Kalinga et Hoyce H. K. Bhila",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 669",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 669 : « les Makua et d'autres groupes de langue lomwe habitaient la côte qui fait face à l'île de Mozambique ainsi que l'arrière-pays jusqu'aux hautes terres de l'Ouest »."
+              },
+              {
+                "title": "Tribalism in the Political History of Malawi, dans The Creation of Tribalism in Southern Africa",
+                "author": "Leroy Vail et Landeg White",
+                "year": 1989,
+                "url": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft158004rs&brand=ucpress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 167",
+                "notes": "Berkeley, University of California Press, 1989, ouvrage dirigé par Leroy Vail, lu en texte intégral dans la collection en ligne de l'éditeur. Page 167 : l'immigration au Nyasaland de groupes venus du Mozambique commence en 1895 ; ils parlent « Lomwe, Mpotola, and Mihavani, but nothing called 'Nguru' »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1530,
+              "label": "Début du XVIe siècle"
+            },
+            "statement": "Des groupes de langue lomwe habitent alors, avec les Makua, la côte qui fait face à l'île de Mozambique et l'arrière-pays jusqu'aux hautes terres de l'ouest, selon Phiri, Kalinga et Bhila.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 21 : La Zambézie du Nord : la région du lac Malawi",
+                "author": "Kings M. Phiri, Owen J. M. Kalinga et Hoyce H. K. Bhila",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 669",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 669 : « Au début du XVIe siècle, les Lolo occupaient déjà le sud-ouest du Mozambique septentrional, tandis que les Makua et d'autres groupes de langue lomwe habitaient la côte qui fait face à l'île de Mozambique »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "Dictionnaire publié en 1892"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lomwe figure dans la préface du dictionnaire de David Clement Scott, qui range les Lomwe, avec les Yao et les Swahili, parmi les peuples de la côte, plus éloignés des Mang'anja par leur langue. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Lomwe",
+            "birth": true,
+            "actors": [
+              {
+                "name": "David Clement Scott",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Cyclopaedic Dictionary of the Mang'anja Language Spoken in British Central Africa",
+                "author": "David Clement Scott",
+                "year": 1892,
+                "url": "https://archive.org/details/acyclopdicdicti00commgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "préface",
+                "notes": "Édimbourg, Comité des missions étrangères de l'Église d'Écosse, 1892, lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. L'auteur dirigeait la mission de Blantyre. La préface range les « Coast tribes, as represented by Swahili, migrative Yao, Lomwe, and others » à part des Mang'anja, et écrit : « The dialects of Chikunda, Ambo, Chipeta, Anguru, are but slightly modified Mang'anja »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1943,
+              "to": 1943,
+              "label": "1943"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lomwe a une forme proche, Alomwe, dans le nom de l'Alomwe Tribal Representative Association, fondée au Nyasaland en 1943 par Lewis Mataka Bandawe. L'association obtient de l'administration britannique que le mot Anguru disparaisse des documents officiels au profit de Lomwe, selon Leroy Vail et Landeg White.",
+            "formAsWritten": "Alomwe",
+            "actors": [
+              {
+                "name": "Lewis Mataka Bandawe",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Tribalism in the Political History of Malawi, dans The Creation of Tribalism in Southern Africa",
+                "author": "Leroy Vail et Landeg White",
+                "year": 1989,
+                "url": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft158004rs&brand=ucpress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 172-173",
+                "notes": "Berkeley, University of California Press, 1989, ouvrage dirigé par Leroy Vail, lu en texte intégral dans la collection en ligne de l'éditeur. Pages 172-173 : en 1943, Bandawe fonde l'Alomwe Tribal Representative Association, qui obtient que le mot « Anguru » soit banni des documents officiels et remplacé par « Lomwe »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nguru",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom, souvent méprisant, que l'administration et les voisins donnaient aux Lomwe du Nyasaland.",
+        "periodLabel": "De la fin du XIXe siècle à 1943",
+        "accounts": [
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "Dictionnaire publié en 1892"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nguru apparaît sous la forme Anguru dans la préface du dictionnaire de David Clement Scott, qui range ce parler parmi ceux qui diffèrent peu du mang'anja. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Anguru",
+            "birth": true,
+            "actors": [
+              {
+                "name": "David Clement Scott",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Cyclopaedic Dictionary of the Mang'anja Language Spoken in British Central Africa",
+                "author": "David Clement Scott",
+                "year": 1892,
+                "url": "https://archive.org/details/acyclopdicdicti00commgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "préface",
+                "notes": "Édimbourg, Comité des missions étrangères de l'Église d'Écosse, 1892, lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. L'auteur dirigeait la mission de Blantyre. La préface range les « Coast tribes, as represented by Swahili, migrative Yao, Lomwe, and others » à part des Mang'anja, et écrit : « The dialects of Chikunda, Ambo, Chipeta, Anguru, are but slightly modified Mang'anja »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1942,
+              "label": "De 1895 à 1942"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nguru désigne au Nyasaland les migrants venus du Mozambique à partir de 1895, qui parlaient lomwe, mpotola ou mihavani, mais aucune langue appelée nguru. Les administrateurs en font une étiquette méprisante, et un officier juge même que le nom Anguru n'est qu'une « fiction », selon Leroy Vail et Landeg White.",
+            "sources": [
+              {
+                "title": "Tribalism in the Political History of Malawi, dans The Creation of Tribalism in Southern Africa",
+                "author": "Leroy Vail et Landeg White",
+                "year": 1989,
+                "url": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft158004rs&brand=ucpress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 167-172",
+                "notes": "Berkeley, University of California Press, 1989, ouvrage dirigé par Leroy Vail, lu en texte intégral dans la collection en ligne de l'éditeur. Pages 167-172 : l'immigration commence en 1895 ; les migrants ne parlent rien qui s'appelle « Nguru » ; le nom Anguru est jugé « only a fiction » et sert à prouver leur prétendue infériorité."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

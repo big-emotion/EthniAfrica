@@ -128,7 +128,7 @@
     ]
   },
   "nameHistory": {
-    "summary": "Le nom AmaNdebele est celui que ce peuple se donne. On le connaît aussi sous le nom Matabele. Leur histoire est présentée plus bas.",
+    "summary": "Le nom Ndebele désigne un peuple de l'ouest du Zimbabwe, qui se nomme lui-même AmaNdebele. D'autres noms existent : Matabele, que lui donnaient ses voisins sotho puis les Britanniques, et Mthwakazi, le nom de son royaume. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "AmaNdebele",
@@ -156,6 +156,27 @@
                 "tier": "official",
                 "source_kind": "linguistic_reference",
                 "notes": ""
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1822,
+              "to": 1824,
+              "label": "De 1822 à 1824"
+            },
+            "era": "polity",
+            "statement": "Le nom Ndebele désigne chez l'historien Leonard D. Ngcongco l'État fondé par Mzilikazi, fils d'un chef khumalo. Mzilikazi rompt avec Chaka en 1822, puis s'établit en 1824 sur la rivière Olifants, en pays pedi.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 5 : Le Mfecane et l'émergence de nouveaux États africains",
+                "author": "Leonard D. Ngcongco",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 133-134",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 10 octobre 2026. Page 133 : « Mzilikazi, le fondateur de l'État ndebele, était le fils de Mashobane, chef d'une petite principauté khumalo » ; page 134 : en 1822, il refuse de livrer à Chaka le bétail capturé, et en 1824 il s'établit sur les berges de l'Olifants."
               }
             ]
           }
@@ -233,6 +254,94 @@
                 "tier": "referenced",
                 "source_kind": "repository",
                 "notes": "La page glose Matabele par « people who duck behind their shield » ; d'autres sources publiées font plutôt état de « longs boucliers ». L'image du bouclier est constante, la traduction exacte varie selon les auteurs — d'où le classement à titre de source unique, non de consensus établi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1829,
+              "to": 1829,
+              "label": "Fin de l'année 1829, livre publié en 1842"
+            },
+            "era": "polity",
+            "statement": "Le nom Matabele figure dans le livre du missionnaire Robert Moffat : à la fin de l'année 1829, deux marchands sont reçus par Moselekatse, c'est-à-dire Mzilikazi, roi d'une branche des Zoulous appelée Abaka Zoolus « ou plus généralement Matabele ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Matabele",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Robert Moffat",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Missionary Labours and Scenes in Southern Africa",
+                "author": "Robert Moffat",
+                "year": 1842,
+                "url": "https://archive.org/details/10450139bsb",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 510",
+                "notes": "Londres, John Snow, 1842. Lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. La page écrit : « Moselekatse, the king of that division of Zoolus called Abaka Zoolus, or more generally Matabele ». Le récit date la visite de « the latter end of the year 1829 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "Livre publié en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Matebele est, chez les Makololo, de langue sotho, celui de toute une famille de peuples qui vivent à l'est du pays, dont les Zoulous, selon David Livingstone. Il cite parmi eux les Matebele de Mosilikatse, au sud du Zambèze.",
+            "formAsWritten": "Matebele",
+            "actors": [
+              {
+                "name": "David Livingstone",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 201",
+                "notes": "Londres, John Murray, 1857. Lu dans la numérisation d'Internet Archive, consulté le 10 octobre 2026. La page écrit que les Makololo rangent les peuples d'Afrique australe en trois divisions : « 1st. The Matebele, or Makonkobi — the Caffre family living on the eastern side of the country », puis « The Matebele of Mosilikatse, living a short distance south of the Zambesi »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mthwakazi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nde",
+        "namedBy": null,
+        "shortLine": "Le nom ndebele du royaume fondé par Mzilikazi.",
+        "periodLabel": "XIXe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1868,
+              "to": 1868,
+              "label": "1868"
+            },
+            "era": "polity",
+            "statement": "Le nom Mthwakazi désigne le royaume ndebele : à la mort de Mzilikazi, le 9 septembre 1868 près de Bulawayo, son fils Lobengula en devient le roi, selon South African History Online. Nous n'avons pas trouvé la plus ancienne trace de ce nom, ni de source qui en explique l'origine.",
+            "sources": [
+              {
+                "title": "South African History Online — Matabele Wars, 1836–1896",
+                "author": "South African History Online",
+                "year": 2026,
+                "url": "https://sahistory.org.za/article/matabele-wars-1836-1896",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Page consulté le 10 octobre 2026. La page écrit : « When Mzilikazi died on 9 September 1868 near Bulawayo, his son, Lobengula, became the king of Mthwakazi »."
               }
             ]
           }
