@@ -123,5 +123,168 @@
         "tier": "referenced"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Frafra désigne un ensemble de peuples du nord-est du Ghana et du sud du Burkina Faso, autour de Bolgatanga, qui se nomme lui-même Farefare. On les a aussi rangés parmi les Gurunsi, un nom donné de l'extérieur. Les sources ne s'accordent pas sur l'origine du nom Frafra ; nous présentons plus bas ce qu'elles disent.",
+    "names": [
+      {
+        "nameText": "Farefare",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "gur",
+        "namedBy": null,
+        "shortLine": "Le nom de leur langue et de ceux qui la parlent, autour de Bolgatanga.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Farefare est celui que le catalogue Glottolog retient pour la langue ; il relève aussi Frafra, Gurenne, Gurune, Nankani et Ninkare. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Farefare (fare1241)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/fare1241",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 11 octobre 2026. Noms relevés : Farefare, Frafra, Gurenne, Gurne, Gurune, Nankane, Nankani, Ninkare."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Frafra",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom venu de l'extérieur, courant au Ghana ; son origine est discutée.",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Frafra ne désigne aucune langue de la région du Haut-Est, au Ghana, et n'a pas de sens pour ses habitants ; les écrits le rattachent aux parlers gurene, nankani, boone et parfois nabdam, selon Tijani Ndanyenbah. L'origine du nom est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Frafra not a language",
+                "author": "Tijani Ndanyenbah",
+                "year": 2025,
+                "url": "https://graphiconline.com/features/opinion/ghana-news-frafra-not-a-language.html",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Daily Graphic (Graphic Online), tribune publiée le 1er septembre 2025, lue en ligne le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Proposée en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Frafra viendrait d'une mauvaise interprétation, à l'époque coloniale, de la salutation gurene « Y farafara », qui veut dire « excusez-moi », « bonjour » ou « je vous salue », selon Tijani Ndanyenbah.",
+            "hypothesisGroup": "origine du nom Frafra",
+            "sources": [
+              {
+                "title": "Frafra not a language",
+                "author": "Tijani Ndanyenbah",
+                "year": 2025,
+                "url": "https://graphiconline.com/features/opinion/ghana-news-frafra-not-a-language.html",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Daily Graphic (Graphic Online), tribune publiée le 1er septembre 2025, lue en ligne le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gurunsi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "mos",
+        "namedBy": null,
+        "shortLine": "Un nom donné de l'extérieur, en moore, à plusieurs peuples voisins des Mossi.",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par les auteurs"
+            },
+            "era": "modern",
+            "statement": "Le nom Gurunsi, Gurunga au singulier en moore, ne désigne aucun peuple qui se nomme ainsi lui-même : il recouvre des Nunuma, des Lela, des Sisala, des Ko, des Kasena et d'autres, selon Michel Izard et Joseph Ki-Zerbo.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 12 : Du Niger à la Volta",
+                "author": "Michel Izard et Joseph Ki-Zerbo",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 396-397",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026. Note 60, p. 397 : « En fait, il n'y a pas de peuple qui s'appelle lui-même Gurunsi (sing. Gurunga en more) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Gurunsi désigne pour les anthropologues six sociétés sans État, à l'ouest du pays mossi ; on leur associe les Talensi, les Kusasi et les Nankansi, aux confins du Ghana et de la Haute-Volta, selon Michel Izard.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 9 : Les peuples et les royaumes de la boucle du Niger et du bassin des Volta du XIIe au XVIe siècle",
+                "author": "Michel Izard",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 260",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "XVIe-XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Gurunsi sert aussi d'étiquette entre Mossi : les gens du Yatenga traitent de Gurunsi les Mossi du centre, alors qu'à Ouagadougou on ne le dit que des Mossi de Koudougou, voisins des Gurunsi, selon Michel Izard et Joseph Ki-Zerbo.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 12 : Du Niger à la Volta",
+                "author": "Michel Izard et Joseph Ki-Zerbo",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 396-397",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026. Note 60, p. 397 : « En fait, il n'y a pas de peuple qui s'appelle lui-même Gurunsi (sing. Gurunga en more) »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

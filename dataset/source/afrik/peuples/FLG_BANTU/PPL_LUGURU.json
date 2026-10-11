@@ -113,5 +113,141 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Luguru désigne un peuple des monts Uluguru et des plaines voisines, dans la région de Morogoro, en Tanzanie, qui se nomme lui-même Waluguru. D'autres noms existent : Ruguru, et Kami pour un groupe des plaines de l'est. On ne sait pas avec certitude si le peuple a donné son nom aux montagnes ou l'inverse : les sources que nous avons lues ne le disent pas.",
+    "names": [
+      {
+        "nameText": "Waluguru",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ruf",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent ; leur langue est le kiluguru.",
+        "periodLabel": "Écrit dès 1860, sous une forme proche",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Luguru désigne un peuple et sa langue, appelée aussi kiluguru ou kiruguru, selon le catalogue Glottolog. Les sources que nous avons lues ne disent pas d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog — Luguru (lugu1238)",
+                "author": "Glottolog",
+                "year": 2026,
+                "url": "https://glottolog.org/resource/languoid/id/lugu1238",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 11 octobre 2026. Langue de code ruf, parlée en Tanzanie. Autres noms relevés dans le catalogue Multitree : Guru, Ikiruguru, Kiluguru, Kiruguru, Lugulu et Ruguru."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "Voyage de 1857, livre de 1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Waluguru a une forme proche, Waruguru, chez l'explorateur britannique Richard Burton : il écrit que les hauteurs des monts qu'il longe sont habitées par les Waruguru, et que le chef Kisabengo a vendu beaucoup d'entre eux comme esclaves à Zanzibar. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Waruguru",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa: A Picture of Exploration",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://archive.org/details/lakeregionsCent00Burt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 76",
+                "notes": "New York, Harper, 1860, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Burton fait ce voyage en 1857. La page écrit que les hauteurs, de 3 000 à 4 000 pieds, sont habitées « by the Waruguru », et que Kisabengo a vendu à Zanzibar presque tous « the people of Ukami, chiefly Wasuop'hanga and Waruguru »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1845,
+              "to": 1880,
+              "label": "1845-1880"
+            },
+            "era": "polity",
+            "statement": "Le nom Luguru figure chez l'historien Isaria N. Kimambo parmi les peuples que traversent les caravanes parties de la côte vers l'intérieur, entre les Kami, les Sagara et les Gogo. À Morogoro, l'un de leurs chefs rituels accueille le chef de guerre Kisabengo, ajoute-t-il.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 10 : La côte et l'hinterland de l'Afrique orientale de 1845 à 1880",
+                "author": "Isaria N. Kimambo",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 276 et 284",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé le 11 octobre 2026. Page 276 : les caravanes parties de Bagamoyo ou de Sadani traversent « les régions occupées par les Zaramo, les Kami, les Sagara, les Luguru et les Gogo ». Page 284 : à Morogoro, Kisabengo « fut reçu par l'un des chefs rituels des Luguru »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kami",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un groupe des plaines de l'est ; Burton écrit Ukami pour leur pays.",
+        "periodLabel": "Écrit dès 1860",
+        "accounts": [
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "Voyage de 1857, livre de 1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Kami apparaît chez Richard Burton dans celui du pays d'Ukami, qui s'étend du flanc est des collines de Duthumi vers la mer : ses habitants, écrit-il, sont surtout des Wasuop'hanga et des Waruguru. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Ukami",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa: A Picture of Exploration",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://archive.org/details/lakeregionsCent00Burt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 76",
+                "notes": "New York, Harper, 1860, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Burton fait ce voyage en 1857. La page écrit que les hauteurs, de 3 000 à 4 000 pieds, sont habitées « by the Waruguru », et que Kisabengo a vendu à Zanzibar presque tous « the people of Ukami, chiefly Wasuop'hanga and Waruguru »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1845,
+              "to": 1880,
+              "label": "1845-1880"
+            },
+            "era": "polity",
+            "statement": "Le nom Kami désigne, chez l'historien Isaria N. Kimambo, l'un des peuples dont les caravanes traversent le pays, à côté des Zaramo et des Luguru.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 10 : La côte et l'hinterland de l'Afrique orientale de 1845 à 1880",
+                "author": "Isaria N. Kimambo",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 276 et 284",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé le 11 octobre 2026. Page 276 : les caravanes parties de Bagamoyo ou de Sadani traversent « les régions occupées par les Zaramo, les Kami, les Sagara, les Luguru et les Gogo ». Page 284 : à Morogoro, Kisabengo « fut reçu par l'un des chefs rituels des Luguru »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

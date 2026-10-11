@@ -3,6 +3,148 @@
   "nameMain": "Kissi",
   "languageFamilyId": "FLG_ATLANTIQUE",
   "currentCountries": ["GIN", "SLE", "LBR"],
+  "nameHistory": {
+    "summary": "Le nom Kissi désigne un peuple de la Guinée forestière, du nord-est de la Sierra Leone et du nord-ouest du Liberia, qui se nomme lui-même Kissi. On écrit aussi Kisi. Les sources que nous avons lues n'expliquent pas l'origine de ce nom ; nous présentons plus bas ses plus anciennes traces.",
+    "names": [
+      {
+        "nameText": "Kissi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du peuple et de son pays, en Guinée, en Sierra Leone et au Liberia ; on écrit aussi Kisi.",
+        "usedIn": ["fra", "eng"],
+        "periodLabel": "Écrit dès 1854 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom Kisi désigne, chez l'historien Yves Person, un peuple de la forêt qui parle une langue mel, à la différence de ses voisins de langue manden. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 12 : Les peuples côtiers — premiers contacts avec les Portugais — de la Casamance aux lagunes ivoiriennes",
+                "author": "Yves Person",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 345"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Récit d'origine rapporté par l'auteur"
+            },
+            "statement": "Le nom Kissi désigne, chez C. Wondji, un peuple qui aurait d'abord formé un seul groupe avec les Bulom ; venus en remontant la vallée du Niger, les Kissi seraient restés à l'intérieur quand les Bulom gagnaient la mer.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 13 : Les États et les cultures de la côte de haute Guinée",
+                "author": "C. Wondji",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 417"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Dicton maninka rapporté par l'auteur"
+            },
+            "statement": "Le nom Kisi figure dans un dicton maninka que rapporte Yves Person : « Qui veut l'huile de palme et la kola ne part pas en guerre contre le roi des Kisi. »",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 12 : Les peuples côtiers — premiers contacts avec les Portugais — de la Casamance aux lagunes ivoiriennes",
+                "author": "Yves Person",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 351, note 14"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1700,
+              "to": 1799,
+              "label": "XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Kissi désigne, chez Yves Person, le peuple dont les Bulom se trouvent définitivement séparés au XVIIIe siècle, quand les Mende s'étendent vers la mer et absorbent les Bulom.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 24 : États et peuples de Sénégambie et de haute Guinée",
+                "author": "Yves Person",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 697"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Kissi apparaît, écrit Kísi, chez le linguiste Sigismund Koelle, qui note la langue d'un homme de Pórūma et énumère les districts du pays kisi, où l'on parle partout la même langue. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "modern",
+            "statement": "Le nom Kisi désigne, chez l'historien Monday B. Akpan, l'un des peuples de l'intérieur du Liberia qui se révoltent contre le gouvernement de Monrovia, en 1913 pour les Kisi.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 11 : Le Libéria et l'Éthiopie, 1880-1914 : la survie de deux États africains",
+                "author": "Monday B. Akpan",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 298"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Kissi",

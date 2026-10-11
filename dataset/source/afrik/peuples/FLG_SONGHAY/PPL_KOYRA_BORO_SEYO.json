@@ -129,5 +129,98 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Koyraboro Senni désigne les Songhay de Gao, au Mali, et leur langue, qu'on écrit aussi Koroboro Senni ; le projet les présente sous le nom Koyra Boro Seyo. L'expression signifierait « la langue des gens de la ville ». On ne sait pas encore quelle est la plus ancienne trace écrite de ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Koyraboro Senni",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ses",
+        "namedBy": null,
+        "shortLine": "« La langue des gens de la ville » : le nom que les Songhay de Gao donnent à leur langue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "Proposée en 1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Koyraboro Senni signifierait « la langue des gens de la ville », par opposition aux nomades comme les Touareg et aux peuples mobiles comme les éleveurs peuls et les pêcheurs bozo, selon Jeffrey Heath. Cette langue s'est pourtant étendue à l'est et à l'ouest de Gao, jusque chez des Peuls et des Bozo.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Grammar of Koyraboro (Koroboro) Senni: The Songhay of Gao, Mali",
+                "author": "Jeffrey Heath",
+                "year": 1999,
+                "url": "https://www.koeppe.de/titel_a-grammar-of-koyraboro-koroboro-senni",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Rüdiger Köppe, collection Westafrikanische Studien, 19. Lu dans la présentation de l'éditeur le 11 octobre 2026 ; nous n'avons pas lu le livre lui-même."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "1858"
+            },
+            "era": "polity",
+            "statement": "Le nom Koyraboro Senni s'ouvre sur le mot koira, « ville » en songhay : l'explorateur Heinrich Barth le relève dès 1858, à propos d'un lieu de la boucle du Niger, Sáma-koira.",
+            "formAsWritten": "koira",
+            "before": true,
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. IV",
+                "author": "Heinrich Barth",
+                "year": 1858,
+                "url": "https://www.gutenberg.org/ebooks/76319",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 369, note",
+                "notes": "Londres, Longman, Brown, Green, Longmans and Roberts, 1858. Lu dans l'édition du Projet Gutenberg, qui garde la pagination de l'original, le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Koroboro Senni",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ses",
+        "namedBy": null,
+        "shortLine": "Une forme courte du même nom.",
+        "periodLabel": "En usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Koroboro Senni est une autre forme du même nom, que Jeffrey Heath donne entre parenthèses dans le titre de sa grammaire de la langue de Gao, en 1999.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Grammar of Koyraboro (Koroboro) Senni: The Songhay of Gao, Mali",
+                "author": "Jeffrey Heath",
+                "year": 1999,
+                "url": "https://www.koeppe.de/titel_a-grammar-of-koyraboro-koroboro-senni",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Rüdiger Köppe, collection Westafrikanische Studien, 19. Lu dans la présentation de l'éditeur le 11 octobre 2026 ; nous n'avons pas lu le livre lui-même."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

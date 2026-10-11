@@ -126,5 +126,239 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Borana désigne un peuple oromo du sud de l'Éthiopie et du nord du Kenya, qui se nomme lui-même Borana, écrit aussi Boraana. D'autres noms existent : Boran, et autrefois Galla, donné à tous les Oromo par leurs voisins. Les sources ne s'accordent pas sur l'origine du nom Borana ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Borana",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "gax",
+        "namedBy": null,
+        "shortLine": "Le nom d'une moitié des Oromo, et des Borana du sud ; son origine reste discutée.",
+        "usedIn": ["gax"],
+        "periodLabel": "Écrit dès le XVIe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Borana s'écrit aussi Boraana, Booran ou Boran. Glottolog range sous ces formes l'oromo borana-arsi-guji, parlé en Éthiopie, au Kenya et en Somalie.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog — Borana-Arsi-Guji Oromo (bora1271)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/bora1271",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche et liste des autres noms, lues le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Borana désigne à la fois l'une des deux grandes moitiés du peuple oromo et, au sens étroit, les Borana du sud. Eike Haberland demande de ne pas confondre les premiers avec les Boran de la frontière du Kenya. Son origine est discutée : les explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 24 : La corne de l'Afrique",
+                "author": "Eike Haberland",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 780",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 24 : La corne de l'Afrique",
+                "author": "Eike Haberland",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 783",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1844,
+              "to": 1844,
+              "label": "1844"
+            },
+            "era": "polity",
+            "statement": "Le nom Borana est écrit Boranna par Lorenz Tutschek, qui parle des « Boranna Galla » et de leurs subdivisions dans son dictionnaire.",
+            "formAsWritten": "Boranna",
+            "sources": [
+              {
+                "title": "Dictionary of the Galla Language",
+                "author": "Lorenz Tutschek",
+                "year": 1844,
+                "url": "https://archive.org/details/dictionarygalla00tutsgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 142, entrée burana",
+                "notes": "Munich, 1844, d'après les notes de Karl Tutschek. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1599,
+              "label": "XVIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Boran désigne, avec les Guji et les Orma, les groupes oromo qui gagnent les savanes du sud jusqu'à l'embouchure de la Tana, selon Eike Haberland.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 24 : La corne de l'Afrique",
+                "author": "Eike Haberland",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 783",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1563,
+              "to": 1597,
+              "label": "Récit du XVIe siècle, traduit en 1893"
+            },
+            "era": "polity",
+            "statement": "Le nom Borana a une forme proche, Boran, dans le récit d'un moine éthiopien sur l'arrivée des Oromo. Il y a, écrit-il, « deux sortes de Galla », les Baraytuma et les Boran, dans la traduction allemande d'A. W. Schleicher. C'est la plus ancienne trace de ce nom que le projet connaît. Le nom désigne alors toute une moitié des Oromo, et pas seulement les Borana du sud.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Geschichte der Galla. Bericht eines abessinischen Mönches über die Invasion der Galla im sechzehnten Jahrhundert",
+                "author": "A. W. Schleicher",
+                "year": 1893,
+                "url": "https://archive.org/details/geschichtederga00schlgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 7",
+                "notes": "Berlin, Theodor Fröhlich, 1893. Texte guèze du XVIe siècle et traduction allemande ; le traducteur date le récit du règne de Sarsa Dengel. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "Proposée en 1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Borana viendrait d'un ancêtre mythique, Borana, fondateur du groupe qui porte son nom, comme Barentu l'est de l'autre moitié des Oromo, selon Eike Haberland.",
+            "hypothesisGroup": "origine du nom Borana",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 24 : La corne de l'Afrique",
+                "author": "Eike Haberland",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 780",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1844,
+              "to": 1844,
+              "label": "Proposée en 1844"
+            },
+            "era": "polity",
+            "statement": "Le nom Borana pourrait venir du mot galla burana, « collier de perles », selon Lorenz Tutschek, qui ne fait que poser cette possibilité.",
+            "hypothesisGroup": "origine du nom Borana",
+            "sources": [
+              {
+                "title": "Dictionary of the Galla Language",
+                "author": "Lorenz Tutschek",
+                "year": 1844,
+                "url": "https://archive.org/details/dictionarygalla00tutsgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 142, entrée burana",
+                "notes": "Munich, 1844, d'après les notes de Karl Tutschek. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Galla",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'ancien nom donné par leurs voisins à tous les Oromo, Borana compris.",
+        "periodLabel": "Écrit dès le XVIe siècle ; abandonné",
+        "accounts": [
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "Usage décrit en 1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Galla est celui sous lequel les Oromo étaient jusque-là habituellement connus, comme les appelaient leurs voisins, selon Eike Haberland. Il désigne tous les Oromo, et pas seulement les Borana.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 24 : La corne de l'Afrique",
+                "author": "Eike Haberland",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 778",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1563,
+              "to": 1597,
+              "label": "Récit du XVIe siècle, traduit en 1893"
+            },
+            "era": "polity",
+            "statement": "Le nom Galla désigne, dans le récit d'un moine éthiopien du XVIe siècle, l'ensemble des Oromo, partagés en Baraytuma et en Boran. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Geschichte der Galla. Bericht eines abessinischen Mönches über die Invasion der Galla im sechzehnten Jahrhundert",
+                "author": "A. W. Schleicher",
+                "year": 1893,
+                "url": "https://archive.org/details/geschichtederga00schlgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 7",
+                "notes": "Berlin, Theodor Fröhlich, 1893. Texte guèze du XVIe siècle et traduction allemande ; le traducteur date le récit du règne de Sarsa Dengel. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

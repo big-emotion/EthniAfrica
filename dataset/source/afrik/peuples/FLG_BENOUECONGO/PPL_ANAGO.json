@@ -126,5 +126,271 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Anago désigne un groupe yoruba de la frontière entre le Nigeria et le Bénin, jusqu'au Togo, qui se nomme lui-même Anago, ou Nago. D'autres noms existent : Nago, qui a servi pour tous les Yoruba au Brésil puis en Afrique de l'Ouest, Lucumí, employé dans la traite atlantique, et Aku, en Sierra Leone. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Anago",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "yor",
+        "namedBy": null,
+        "shortLine": "Le nom d'un groupe yoruba de la frontière entre le Nigeria et le Bénin.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Anago désigne l'un des groupes yoruba établis à cheval sur la frontière entre le Nigeria et le Bénin, au sud des Ketu, des Ohori et des Ifonyin, selon l'historien A. I. Asiwaju. Les sources que nous avons lues n'expliquent pas d'où vient ce nom, et nous n'avons pas trouvé sa plus ancienne trace écrite.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 26 : Dahomey, pays yoruba, Borgu (Borgou) et Bénin au XIXe siècle",
+                "author": "A. I. Asiwaju",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 746",
+                "notes": "UNESCO, volume dirigé par Jacob F. Ade Ajayi, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1996,
+              "to": 1996,
+              "label": "1996"
+            },
+            "era": "modern",
+            "statement": "Le nom Anago désigne aussi des chefferies apparentées aux Awori, dont les dynasties seraient liées aux élites du royaume du Bénin, comme on l'admettait généralement selon A. I. Asiwaju ; leurs titres et leurs cérémonies de cour en garderaient la marque.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 26 : Dahomey, pays yoruba, Borgu (Borgou) et Bénin au XIXe siècle",
+                "author": "A. I. Asiwaju",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 759",
+                "notes": "UNESCO, volume dirigé par Jacob F. Ade Ajayi, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nago",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom donné à tous les Yoruba au Brésil, puis en Afrique de l'Ouest à partir des années 1830.",
+        "periodLabel": "Écrit au XVIIIe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Nago désigne, dans la littérature ethnographique de langue française, l'ensemble de l'aire culturelle yoruba, selon A. I. Asiwaju.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 26 : Dahomey, pays yoruba, Borgu (Borgou) et Bénin au XIXe siècle",
+                "author": "A. I. Asiwaju",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 746",
+                "notes": "UNESCO, volume dirigé par Jacob F. Ade Ajayi, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1830,
+              "to": null,
+              "label": "À partir de 1830"
+            },
+            "statement": "Le nom Nago, qui désignait au Brésil tous les peuples de langue yoruba, prend sans doute ce sens en Afrique de l'Ouest à partir de 1830, avec le retour d'anciens esclaves venus du Brésil sur la Côte des Esclaves, selon l'historien Robin Law. Il y voit un terme d'abord africain, dont l'usage brésilien est ensuite revenu en Afrique.",
+            "sources": [
+              {
+                "title": "Etnias de africanos na diáspora : novas considerações sobre os significados do termo « mina »",
+                "author": "Robin Law",
+                "year": 2006,
+                "url": "https://www.redalyc.org/pdf/1670/167013396006.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 100",
+                "notes": "Tempo, vol. 10, n° 20, Universidade Federal Fluminense, p. 98-120 ; lu le 11 octobre 2026 dans la version en accès libre de Redalyc. L'auteur renvoie à son article de 1997, « Ethnicity and the Slave Trade : 'Lucumi' and 'Nago' as ethnonyms in West Africa », History in Africa, 24, p. 212-215, que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Nago a une forme proche, Nágun ou Nágūnu, chez le linguiste Sigismund Koelle : un informateur mahi la donne pour une partie du pays aku, à l'est du Dahomey, d'où vient la rivière Kósi.",
+            "formAsWritten": "Nágūnu",
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "section III-B-5",
+                "notes": "Londres, Church Missionary House. Les remarques de Koelle sont lues dans leur transcription par le jeu de données Lexibank, pas sur l'imprimé. Koelle a interrogé à Freetown des personnes libérées de la traite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1760,
+              "to": 1769,
+              "label": "Années 1760"
+            },
+            "statement": "Le nom Nago apparaît sous la forme « nagoo » chez le missionnaire Christian Oldendorp, qui recense dans les années 1760 les peuples d'Afrique parmi les esclaves des Antilles danoises ; il range les nagô ou Yoruba parmi les « Popó », selon Robin Law. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "nagoo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Etnias de africanos na diáspora : novas considerações sobre os significados do termo « mina »",
+                "author": "Robin Law",
+                "year": 2006,
+                "url": "https://www.redalyc.org/pdf/1670/167013396006.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 110",
+                "notes": "Tempo, vol. 10, n° 20, Universidade Federal Fluminense, p. 98-120 ; lu le 11 octobre 2026 dans la version en accès libre de Redalyc."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Lucumí",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom des Yoruba dans la traite atlantique, remplacé par Nago au XVIIIe siècle.",
+        "periodLabel": "Du XVe siècle au XVIIIe siècle, selon les sources",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom Lucumí désigne, de l'avis général, les Yoruba de la diaspora ; au XVIIIe siècle, Nago l'avait remplacé, selon Henry B. Lovejoy et Olatunji Ojo, qui jugent son origine encore peu claire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "« Lucumí », « Terranova », and the Origins of the Yoruba Nation",
+                "author": "Henry B. Lovejoy et Olatunji Ojo",
+                "year": 2015,
+                "url": "https://doi.org/10.1017/S0021853715000328",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "résumé",
+                "notes": "The Journal of African History, vol. 56, n° 3, p. 353-372 ; seul le résumé est en accès libre, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "Proposée en 2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Lucumí aurait d'abord été employé dès le XVe siècle dans le royaume du Bénin, comme le montrerait la présence de communautés olukumi qui produisaient de la craie ; la traite du Bénin et des Portugais l'aurait ensuite porté aux Amériques, selon Henry B. Lovejoy et Olatunji Ojo.",
+            "hypothesisGroup": "origine du nom Lucumí",
+            "sources": [
+              {
+                "title": "« Lucumí », « Terranova », and the Origins of the Yoruba Nation",
+                "author": "Henry B. Lovejoy et Olatunji Ojo",
+                "year": 2015,
+                "url": "https://doi.org/10.1017/S0021853715000328",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "résumé",
+                "notes": "The Journal of African History, vol. 56, n° 3, p. 353-372 ; seul le résumé est en accès libre, lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Aku",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "yor",
+        "namedBy": "Les habitants de la Sierra Leone, selon Sigismund Koelle",
+        "shortLine": "Le nom donné en Sierra Leone aux Yoruba libérés de la traite, d'après un salut.",
+        "periodLabel": "Écrit depuis 1854",
+        "accounts": [
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "colonial",
+            "statement": "Le nom Aku désigne en Sierra Leone l'ensemble des peuples de langue yoruba, et ce sont surtout les habitants du pays, plus que les Européens, qui les appellent ainsi, selon Sigismund Koelle. Il juge que ce n'est pas le nom historique qui unit ces peuples. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Akus",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "section III-C-1",
+                "notes": "Londres, Church Missionary House. Les remarques de Koelle sont lues dans leur transcription par le jeu de données Lexibank, pas sur l'imprimé. Koelle a interrogé à Freetown des personnes libérées de la traite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "Proposée en 1854"
+            },
+            "era": "colonial",
+            "statement": "Le nom Aku viendrait d'Ọ̄ku, une formule de salut commune à tous ces peuples, selon Sigismund Koelle.",
+            "hypothesisGroup": "origine du nom Aku",
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "section III-C-1",
+                "notes": "Londres, Church Missionary House. Les remarques de Koelle sont lues dans leur transcription par le jeu de données Lexibank, pas sur l'imprimé. Koelle a interrogé à Freetown des personnes libérées de la traite."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -110,5 +110,167 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Batooro désigne un peuple de l'ouest de l'Ouganda, autour du royaume du Tooro, qui se nomme lui-même Abatooro. D'autres noms existent : Toro et Batoro. Les sources lues n'expliquent pas l'origine de ces noms ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "Batooro",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ttj",
+        "namedBy": null,
+        "shortLine": "Les gens du Tooro, royaume de l'ouest de l'Ouganda.",
+        "usedIn": ["ttj"],
+        "periodLabel": "Écrit dès 1902 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1995,
+              "to": null,
+              "label": "Depuis 1995"
+            },
+            "era": "modern",
+            "statement": "Le nom Batooro est écrit Batoro dans la Constitution de l'Ouganda de 1995, qui compte ce peuple parmi les communautés autochtones du pays.",
+            "aspect": "usage",
+            "formAsWritten": "Batoro",
+            "sources": [
+              {
+                "title": "Constitution of the Republic of Uganda, 1995, Third Schedule",
+                "author": "République de l'Ouganda",
+                "year": 1995,
+                "url": "https://www.constituteproject.org/constitution/Uganda_2017.pdf?lang=en",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "Third Schedule, n° 33",
+                "notes": "Texte révisé jusqu'en 2017, diffusé par le Comparative Constitutions Project, lu le 11 octobre 2026. La troisième annexe dresse la liste des communautés autochtones de l'Ouganda."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Batooro désigne les gens du Tooro, l'ancien royaume de l'ouest de l'Ouganda. Les sources lues n'expliquent pas son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Constitution of the Republic of Uganda, 1995, Third Schedule",
+                "author": "République de l'Ouganda",
+                "year": 1995,
+                "url": "https://www.constituteproject.org/constitution/Uganda_2017.pdf?lang=en",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "Third Schedule, n° 33",
+                "notes": "Texte révisé jusqu'en 2017, diffusé par le Comparative Constitutions Project, lu le 11 octobre 2026. La troisième annexe dresse la liste des communautés autochtones de l'Ouganda."
+              },
+              {
+                "title": "The Uganda Protectorate, vol. II",
+                "author": "Harry Johnston",
+                "year": 1902,
+                "url": "https://archive.org/details/cu31924087982504",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 580",
+                "notes": "Londres, Hutchinson, 1902. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom Batooro est écrit Batoro par Harry Johnston, commissaire britannique, à propos des gens du district situé au sud de l'Unyoro et à l'est du Ruwenzori. C'est la plus ancienne trace de cette forme que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Batoro",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Harry Johnston",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Uganda Protectorate, vol. II",
+                "author": "Harry Johnston",
+                "year": 1902,
+                "url": "https://archive.org/details/cu31924087982504",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 580",
+                "notes": "Londres, Hutchinson, 1902. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Toro",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du royaume, détaché du Bunyoro vers 1830.",
+        "periodLabel": "Écrit dès 1893 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1820,
+              "to": 1840,
+              "label": "Vers 1830"
+            },
+            "era": "polity",
+            "statement": "Le royaume du Toro se détache du Bunyoro vers 1830, selon J. B. Webster, B. A. Ogot et J. P. Chrétien. Cette sécession change le sort de l'empire du Bunyoro.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+                "author": "J. B. Webster, B. A. Ogot et J. P. Chrétien",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 868",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1891,
+              "to": 1893,
+              "label": "1891, récit publié en 1893"
+            },
+            "statement": "Le nom Toro a une forme proche, Toru, chez Frederick Lugard. Il apprend que ce pays, à l'est du Ruwenzori, n'était pas une partie de l'Unyoro mais, jusqu'à peu, un royaume séparé sous un roi nommé Nyika. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume existait déjà avant elle.",
+            "formAsWritten": "Toru",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Frederick Lugard",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Rise of our East African Empire, vol. II : Uganda",
+                "author": "Frederick D. Lugard",
+                "year": 1893,
+                "url": "https://archive.org/details/riseofoureastafr02luga_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 151",
+                "notes": "Édimbourg et Londres, William Blackwood, 1893. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

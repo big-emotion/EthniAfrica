@@ -93,5 +93,180 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Luvale désigne un peuple du nord-ouest de la Zambie et de l'est de l'Angola, qui se nomme lui-même ainsi. D'autres noms existent : Lovale, Balovale, Lwena ou Luena en Angola. On ne sait pas avec certitude d'où vient le nom ; les sources que nous avons lues n'en proposent pas d'explication.",
+    "names": [
+      {
+        "nameText": "Luvale",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lue",
+        "namedBy": null,
+        "shortLine": "Le nom du peuple et de sa langue, le chiluvale, en Zambie et en Angola.",
+        "periodLabel": "Écrit dès la fin du XVIIIe siècle, sous une forme proche",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Luvale désigne un peuple et sa langue, le chiluvale, en Angola et en Zambie. Le même parler est aussi appelé Lovale, Lubale, Luena ou Lwena, selon le catalogue Glottolog. Les sources que nous avons lues ne disent pas d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog — Luvale (luva1239)",
+                "author": "Glottolog",
+                "year": 2026,
+                "url": "https://glottolog.org/resource/languoid/id/luva1239",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 11 octobre 2026. Langue de code lue, parlée en Angola et en Zambie. Autres noms relevés : Chiluvale, Lovale, Lubale, Luena, Luvale et Lwena ; Lwena chez Moseley et Asher (1994) et dans le WALS."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1795,
+              "to": 1799,
+              "label": "Voyage de 1795, lettre de 1799"
+            },
+            "era": "polity",
+            "statement": "Le nom Luvale a une forme proche, Loval, dans une lettre du gouverneur portugais de Benguela, Alexandre José Botelho de Vasconcellos : il y décrit le « royaume de Loval », où des marchands partis de Benguela en 1795 sont allés commercer, d'après le récit de l'un d'eux. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Loval",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Alexandre José Botelho de Vasconcellos",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Lands of Cazembe: Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida, traduit et annoté par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/landsofcazembel00roya",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 24-25, note",
+                "notes": "Londres, Royal Geographical Society, 1873. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Lacerda écrit, avant 1798, qu'il reste 80 lieues de la Coanza « to the Sova of Levar ». Une note du vicomte de Sá da Bandeira précise : « Levar is the \"Loval\" of M. Alexandre José Botelho de Vasconcellos ». Burton cite ensuite la lettre de Botelho de Vasconcellos, écrite à Benguela le 1er août 1799, sur le « kingdom of Loval », où des marchands partis de Benguela le 22 septembre 1795 sont allés trois fois."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1797,
+              "label": "Avant 1798"
+            },
+            "era": "polity",
+            "statement": "Le nom Luvale apparaît aussi sous la forme Levar chez Francisco José de Lacerda e Almeida, qui situe « le Sova de Levar » à quelque 80 lieues au-delà de la Coanza. Une note de son éditeur rapproche cette forme du Loval de Botelho de Vasconcellos.",
+            "formAsWritten": "Sova of Levar",
+            "sources": [
+              {
+                "title": "The Lands of Cazembe: Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida, traduit et annoté par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/landsofcazembel00roya",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 24-25, note",
+                "notes": "Londres, Royal Geographical Society, 1873. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Lacerda écrit, avant 1798, qu'il reste 80 lieues de la Coanza « to the Sova of Levar ». Une note du vicomte de Sá da Bandeira précise : « Levar is the \"Loval\" of M. Alexandre José Botelho de Vasconcellos ». Burton cite ensuite la lettre de Botelho de Vasconcellos, écrite à Benguela le 1er août 1799, sur le « kingdom of Loval », où des marchands partis de Benguela le 22 septembre 1795 sont allés trois fois."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Luvale est peut-être celui que David Livingstone entend sous la forme Lobale : il contourne les plaines inondées « de Lobale », à l'ouest de sa route, et se demande lui-même s'il faut lire Luval.",
+            "sources": [
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 308",
+                "notes": "Londres, John Murray, 1857, lu dans la numérisation d'Internet Archive le 11 octobre 2026. La page écrit : « the still more deeply flooded plains of Lobale (Luval ?) on the west »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Balovale",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une forme du nom avec le préfixe ba- ; Livingstone écrivait Balobale.",
+        "periodLabel": "Écrit dès 1857, sous une forme proche",
+        "accounts": [
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Balovale a une forme proche, Balobale, chez David Livingstone : la sœur du chef Shinte craint que les Balobale, « dont le pays s'étend à l'ouest du fleuve », ne tuent sa troupe. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Balobale",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 275",
+                "notes": "Londres, John Murray, 1857, lu dans la numérisation d'Internet Archive le 11 octobre 2026. La page écrit : « the Balobale, whose country lies to the west of the river, not knowing the objects for which we had come, would kill us ». Le livre est publié en 1857 ; le passage raconte le voyage de 1854."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Lwena",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom employé surtout en Angola ; Lwena est aussi le nom d'une rivière.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 1700,
+              "to": 1750,
+              "label": "Première moitié du XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Lwena désigne, chez l'historien Ndaywel è Nziem, les habitants de l'est de l'Angola, « pays des Lwena » : vers 1750, des chefs lunda y fondent de petits États au-dessus d'organisations locales plus anciennes. Il nomme aussi une rivière Lwena, à l'ouest de laquelle d'autres chefferies sont créées. Les sources que nous avons lues ne disent pas si le peuple tient son nom de la rivière.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 20 : Le système politique luba et lunda : émergence et expansion",
+                "author": "Ndaywel è Nziem",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 660-661",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, édition française lue dans l'exemplaire numérisé le 11 octobre 2026. Page 660 : « L'Angola oriental, pays des Lwena, était leur premier objectif ». Page 661 : « À l'ouest de la Lwena, diverses chefferies chokwe, minungo et songo furent également créées par les Lunda »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

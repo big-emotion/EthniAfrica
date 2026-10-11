@@ -4,6 +4,121 @@
   "languageFamilyId": "FLG_CREOLE",
   "currentCountries": ["MUS"],
   "classificationStatus": "contested",
+  "nameHistory": {
+    "summary": "Le nom Franco-Mauriciens désigne les Mauriciens blancs d'origine française, qui se nomment eux-mêmes Franco-Mauriciens. Avant ce nom, on les appelait créoles, comme tous les Blancs nés dans l'île. La Constitution de 1968 les compte dans la « population générale ». Les sources que nous avons lues datent ce nom de la fin du XIXe siècle.",
+    "names": [
+      {
+        "nameText": "Franco-Mauriciens",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Le nom des Mauriciens blancs d'origine française, écrit dès 1899.",
+        "usedIn": ["fra"],
+        "periodLabel": "Écrit dès 1899 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1773,
+              "to": 1773,
+              "label": "1773"
+            },
+            "era": "colonial",
+            "statement": "Le nom Franco-Mauriciens n'apparaît pas encore dans les sources que nous avons lues : Bernardin de Saint-Pierre appelle alors créole une femme blanche née dans l'île, qu'il oppose à l'Européenne venue de France.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Voyage à l'Isle de France, à l'isle de Bourbon, au cap de Bonne-Espérance",
+                "author": "Jacques-Henri Bernardin de Saint-Pierre",
+                "year": 1773,
+                "url": "https://archive.org/details/voyagelisledefr00piegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Édition de 1773, lue dans la numérisation d'Internet Archive, qui ne permet pas de relever la page avec certitude. L'auteur décrit la société de l'île, esclaves compris, avec le regard d'un officier français de son temps."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1899,
+              "to": 1899,
+              "label": "1899"
+            },
+            "era": "colonial",
+            "statement": "Le nom Franco-Mauricien apparaît dans la revue Questions diplomatiques et coloniales, qui présente ainsi Anatole Sauzier, consul britannique à Tamatave, à Madagascar. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Le « Livre bleu » sur Madagascar, Questions diplomatiques et coloniales, tome VI",
+                "author": "Questions diplomatiques et coloniales",
+                "year": 1899,
+                "url": "https://archive.org/details/questionsdiplom10unkngoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, 1899. Lu dans la numérisation d'Internet Archive, qui ne permet pas de relever la page. La revue défend la politique coloniale française à Madagascar contre le consul britannique dont elle parle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1968,
+              "to": null,
+              "label": "Depuis 1968"
+            },
+            "era": "modern",
+            "statement": "Le nom Franco-Mauriciens désigne aujourd'hui les descendants des colons français ; la Constitution de 1968 les range, avec les Mauriciens d'origine anglaise et les descendants des esclaves, dans la « population générale », selon Catherine Servan-Schreiber.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "General History of Africa, X : Africa and Its Diasporas, ch. 6 : Mauritius, between Community Compartmentalisation and Cultural Melting Pots",
+                "author": "Catherine Servan-Schreiber",
+                "year": 2025,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000396047",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, édition anglaise publiée sous licence libre, lue dans l'exemplaire numérisé du volume.",
+                "page": "p. 358"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Population générale",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "La catégorie de la Constitution de 1968 qui réunit Franco-Mauriciens et Créoles.",
+        "usedIn": ["fra", "eng"],
+        "periodLabel": "Depuis 1968",
+        "accounts": [
+          {
+            "period": {
+              "from": 1968,
+              "to": null,
+              "label": "Depuis 1968"
+            },
+            "era": "modern",
+            "statement": "Le nom population générale est celui que la Constitution de 1968 donne à la quatrième communauté de Maurice, à côté des hindous, des musulmans et des Sino-Mauriciens : elle réunit ce qui reste de l'ancienne société coloniale, Blancs d'origine française ou anglaise et descendants des esclaves, selon Catherine Servan-Schreiber.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "General History of Africa, X : Africa and Its Diasporas, ch. 6 : Mauritius, between Community Compartmentalisation and Cultural Melting Pots",
+                "author": "Catherine Servan-Schreiber",
+                "year": 2025,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000396047",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, édition anglaise publiée sous licence libre, lue dans l'exemplaire numérisé du volume.",
+                "page": "p. 358"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Franco-Mauriciens",

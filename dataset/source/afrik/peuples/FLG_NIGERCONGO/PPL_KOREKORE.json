@@ -113,5 +113,85 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Korekore désigne un peuple de langue shona du nord du Zimbabwe, qui se nomme lui-même ainsi. On ne sait pas avec certitude quand ce nom a été écrit pour la première fois, ni d'où il vient : les sources que nous avons lues n'en proposent pas d'explication.",
+    "names": [
+      {
+        "nameText": "Korekore",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "sna",
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple de langue shona du nord du Zimbabwe, autour du mont Darwin.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Korekore désigne, dans la région du mont Darwin, l'un des deux grands groupes que rencontre tout chercheur, à côté des Tavara. Les Korekore s'y présentent comme des conquérants venus du sud, selon Aeneas Chigwedere. Les sources que nous avons lues ne disent pas d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Karanga Empire",
+                "author": "Aeneas Chigwedere",
+                "year": 1986,
+                "url": "https://michaelharrison.org.uk/wp-content/uploads/2021/04/The-Karanga-Empire-Aeneas-Chigwedere-Books-for-Africa-Harare-1986.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 104-105",
+                "notes": "Harare, Books for Africa, 1986. Copie non officielle, lue dans un PDF déposé sur un site personnel, consulté le 11 octobre 2026. Page 104 : dans la région du mont Darwin, « the Tavara are unfailingly presented as the original Bantu occupants » et « the Korekore are presented as the invaders and conquerors from the south » ; « their founding fathers who conquered the Tavara were Mutota and Chingoo ». Page 105 : « The first Korekore Mutapa was Mutota »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1450,
+              "to": 1500,
+              "label": "Vers le milieu du XVe siècle, selon la tradition"
+            },
+            "era": "polity",
+            "statement": "Le nom Korekore est celui que la tradition donne aux conquérants venus du sud qui soumettent les Tavara vers le milieu du XVe siècle. Mutota en serait le premier souverain, et les Korekore le nomment, avec Chingoo, parmi leurs pères fondateurs, selon Aeneas Chigwedere.",
+            "sources": [
+              {
+                "title": "The Karanga Empire",
+                "author": "Aeneas Chigwedere",
+                "year": 1986,
+                "url": "https://michaelharrison.org.uk/wp-content/uploads/2021/04/The-Karanga-Empire-Aeneas-Chigwedere-Books-for-Africa-Harare-1986.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 104-105",
+                "notes": "Harare, Books for Africa, 1986. Copie non officielle, lue dans un PDF déposé sur un site personnel, consulté le 11 octobre 2026. Page 104 : dans la région du mont Darwin, « the Tavara are unfailingly presented as the original Bantu occupants » et « the Korekore are presented as the invaders and conquerors from the south » ; « their founding fathers who conquered the Tavara were Mutota and Chingoo ». Page 105 : « The first Korekore Mutapa was Mutota »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1902,
+              "label": "1900-1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom Korekore figure chez l'historien David Chanaiwa à propos de la guerre de Kadungure Mapondera : revenu en Rhodésie en 1900, ce chef recrute une armée shona faite de Korekore, de Tavara et de jeunes militants du Mashonaland, et combat les colons jusqu'en juin 1902.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 9 : Initiatives et résistances africaines en Afrique méridionale",
+                "author": "David Chanaiwa",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 242",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, édition française lue dans l'exemplaire numérisé le 11 octobre 2026. La page écrit que Mapondera « recruta une armée shona composée de Korekore, de Tavara et d'un certain nombre de jeunes militants »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

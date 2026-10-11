@@ -120,5 +120,185 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Lunda-Kazembe désigne le peuple du royaume du Kazembe, dans la vallée du Luapula, entre la Zambie et la République démocratique du Congo, qui se dit lunda. Kazembe est d'abord le titre de son roi ; les Portugais l'écrivaient Cazembe. On ne sait pas avec certitude d'où viennent ces deux noms ; une explication du nom Lunda a été proposée puis rejetée, nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Lunda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des Lunda, qui fondent le royaume du Kazembe sur le Luapula.",
+        "periodLabel": "Écrit dès le début du XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "1873"
+            },
+            "era": "polity",
+            "statement": "Le nom Lunda prend, selon les parlers, la forme Alunda, Balunda ou Walunda, et désigne la grande nation gouvernée par le Mwata Yamvo, selon Richard Burton, qui annote les récits portugais.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Lands of Cazembe: Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida, traduit et annoté par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/landsofcazembel00roya",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 47-48, note",
+                "notes": "Londres, Royal Geographical Society, 1873. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Note de Burton : « Pedro calls these people Viajantes Alundas » ; « Mr. Cooley, with extreme error, explains, by the Congo languages, Alunda or Arunda […] to mean mountaineers or bushmen. It is clearly Alunda, Balunda, or Walunda, according to dialect, the great nation » gouvernée par le Mwata Yamvo. Pedro est Pedro João Baptista, l'un des deux « Pombeiros », marchands itinérants envoyés en 1802 depuis la factorerie de Cassange vers la côte est, selon l'introduction du volume, qui traduit aussi leur journal."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1802,
+              "to": null,
+              "label": "Voyage parti en 1802"
+            },
+            "era": "polity",
+            "statement": "Le nom Lunda apparaît sous la forme Alundas chez Pedro João Baptista, l'un des deux marchands itinérants partis d'Angola en 1802 pour gagner la côte est : il parle de « Viajantes Alundas », des voyageurs lunda, selon une note de Richard Burton. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Viajantes Alundas",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lands of Cazembe: Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida, traduit et annoté par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/landsofcazembel00roya",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 47-48, note",
+                "notes": "Londres, Royal Geographical Society, 1873. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Note de Burton : « Pedro calls these people Viajantes Alundas » ; « Mr. Cooley, with extreme error, explains, by the Congo languages, Alunda or Arunda […] to mean mountaineers or bushmen. It is clearly Alunda, Balunda, or Walunda, according to dialect, the great nation » gouvernée par le Mwata Yamvo. Pedro est Pedro João Baptista, l'un des deux « Pombeiros », marchands itinérants envoyés en 1802 depuis la factorerie de Cassange vers la côte est, selon l'introduction du volume, qui traduit aussi leur journal."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1831,
+              "to": 1832,
+              "label": "1831-1832"
+            },
+            "era": "polity",
+            "statement": "Le nom Lunda désigne à la fois la capitale du Kazembe et ses habitants chez les Portugais Monteiro et Gamitto, qui appellent ces gens Lundas, Murundas ou Arundas, selon les notes de Richard Burton.",
+            "sources": [
+              {
+                "title": "The Lands of Cazembe: Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida, traduit et annoté par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/landsofcazembel00roya",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 38, note, et p. 124, note",
+                "notes": "Londres, Royal Geographical Society, 1873. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 38 : « According to Monteiro and Gamitto (p. 349) Lunda, the Cazembe's capital ». Page 124 : « Monteiro and Gamitto (p. 243) call the people generally Lundas, Murundas, or Arundas ». L'expédition de Monteiro et Gamitto au Kazembe a lieu en 1831-1832, selon la préface du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1873,
+              "label": "Proposée avant 1873"
+            },
+            "statement": "Le nom Lunda voudrait dire « montagnards » ou « gens de la brousse », d'après les langues du Kongo, selon le géographe William Desborough Cooley. Richard Burton juge cette explication tout à fait erronée.",
+            "hypothesisGroup": "origine du nom Lunda",
+            "sources": [
+              {
+                "title": "The Lands of Cazembe: Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida, traduit et annoté par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/landsofcazembel00roya",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 47-48, note",
+                "notes": "Londres, Royal Geographical Society, 1873. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Note de Burton : « Pedro calls these people Viajantes Alundas » ; « Mr. Cooley, with extreme error, explains, by the Congo languages, Alunda or Arunda […] to mean mountaineers or bushmen. It is clearly Alunda, Balunda, or Walunda, according to dialect, the great nation » gouvernée par le Mwata Yamvo. Pedro est Pedro João Baptista, l'un des deux « Pombeiros », marchands itinérants envoyés en 1802 depuis la factorerie de Cassange vers la côte est, selon l'introduction du volume, qui traduit aussi leur journal."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kazembe",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le titre du roi lunda du Luapula, devenu le nom de son royaume ; les Portugais écrivaient Cazembe.",
+        "periodLabel": "Écrit dès 1798",
+        "accounts": [
+          {
+            "period": {
+              "from": 1750,
+              "to": 1799,
+              "label": "Deuxième moitié du XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Kazembe est d'abord un titre : « le kazembe du Luapula », un chef issu des campagnes militaires lunda, règne alors sur un vaste royaume, selon l'historien Ndaywel è Nziem. Les sources que nous avons lues ne disent pas d'où vient ce titre.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 20 : Le système politique luba et lunda : émergence et expansion",
+                "author": "Ndaywel è Nziem",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 659-660",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, édition française lue dans l'exemplaire numérisé le 11 octobre 2026. Page 659 : les généraux lunda atteignent la vallée du Luapula et assujettissent l'État shila ; « dans la deuxième moitié du XVIIIe siècle, le kazembe du Luapula était le maître d'un vaste royaume aux assises solides ». Page 660 : la mission de Lacerda visite « le nouveau royaume de 1798 à 1799 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1793,
+              "to": 1798,
+              "label": "1793, rapporté en 1798"
+            },
+            "era": "polity",
+            "statement": "Le nom Kazembe apparaît, écrit Cazembe, dans une lettre du Portugais Francisco José de Lacerda e Almeida : en 1793, des marchands bisa auraient dit à un commerçant de Tete que « leur seigneur, le Cazembe », voulait son amitié. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume existait déjà avant elle.",
+            "formAsWritten": "Cazembe",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lands of Cazembe: Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida, traduit et annoté par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/landsofcazembel00roya",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 35",
+                "notes": "Londres, Royal Geographical Society, 1873. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. La lettre est datée de Tete, le 22 mars 1798. La page écrit qu'en 1793 des marchands bisa (« Muizas ») vinrent commercer avec Gonçalo Caetano Pereira « and they informed him that their lord, the Cazembe, desired his friendship »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1798,
+              "to": 1799,
+              "label": "1798-1799"
+            },
+            "era": "polity",
+            "statement": "Le nom Kazembe est celui du royaume que visite la mission portugaise de Lacerda en 1798 et 1799. Elle est frappée par sa puissance militaire, selon Ndaywel è Nziem.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 20 : Le système politique luba et lunda : émergence et expansion",
+                "author": "Ndaywel è Nziem",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 659-660",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, édition française lue dans l'exemplaire numérisé le 11 octobre 2026. Page 659 : les généraux lunda atteignent la vallée du Luapula et assujettissent l'État shila ; « dans la deuxième moitié du XVIIIe siècle, le kazembe du Luapula était le maître d'un vaste royaume aux assises solides ». Page 660 : la mission de Lacerda visite « le nouveau royaume de 1798 à 1799 »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
