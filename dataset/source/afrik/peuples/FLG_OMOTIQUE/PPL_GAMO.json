@@ -95,5 +95,169 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Gamo désigne les gens des hautes terres du Gamo, dans le sud-ouest de l'Éthiopie, qui se nomment eux-mêmes Gamo. Au sud de ces hautes terres, les communautés disent que celles du nord ne sont pas Gamo mais D'ache. Les sources ne s'accordent pas sur le sens du nom Gamo ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Gamo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des gens des hautes terres du Gamo ; son sens reste discuté.",
+        "periodLabel": "Écrit depuis 1901 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "2006"
+            },
+            "era": "modern",
+            "statement": "Le nom Gamo désigne les habitants de plus de quarante communautés, les deres, des hautes terres du Gamo : au sud, les gens se disent Gamo et appellent leur langue gamo-tso, et au nord, ils se disent Gamo ou se nomment d'après leur dere, comme Dorze ou Doko, selon l'anthropologue Dena Freeman. Le sens de ce nom est discuté.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Who are the Gamo? And who are the D'ache? Confusions of ethnicity in Ethiopia's southern highlands",
+                "author": "Dena Freeman",
+                "year": 2006,
+                "url": "https://eprints.lse.ac.uk/67835/1/Freeman_Who%20are%20the%20Gamo.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Actes de la 15e Conférence internationale des études éthiopiennes, Wiesbaden, Harrassowitz. Version de l'autrice déposée à la London School of Economics, lue le 11 octobre 2026 ; les pages sont celles de cette version."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "1901"
+            },
+            "era": "polity",
+            "statement": "Le nom Gamo apparaît par écrit dans le récit de l'officier britannique Montagu Sinclair Wellby, publié en 1901, qui décrit « le district montagneux de Gamo », où il aperçoit un poste abyssin perché sur le plus haut sommet. C'est la plus ancienne trace de ce nom que le projet connaît. Ces communautés vivaient déjà là avant lui.",
+            "formAsWritten": "Gamo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Montagu Sinclair Wellby",
+                "role": "officier britannique, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "'Twixt Sirdar & Menelik: An Account of a Year's Expedition from Zeila to Cairo through Unknown Abyssinia",
+                "author": "Montagu Sinclair Wellby",
+                "year": 1901,
+                "url": "https://archive.org/details/twixtsirdarmenel00welliala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 149",
+                "notes": "New York, Harper and Brothers. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "Proposée en 2006"
+            },
+            "era": "modern",
+            "statement": "Le nom Gamo voudrait dire « être conquis » : dans la langue du nord des hautes terres, être Gamo a ce sens, selon Dena Freeman, qui y voit la trace de la conquête des communautés du sud par des clans venus du nord.",
+            "hypothesisGroup": "sens du nom Gamo",
+            "sources": [
+              {
+                "title": "Who are the Gamo? And who are the D'ache? Confusions of ethnicity in Ethiopia's southern highlands",
+                "author": "Dena Freeman",
+                "year": 2006,
+                "url": "https://eprints.lse.ac.uk/67835/1/Freeman_Who%20are%20the%20Gamo.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Actes de la 15e Conférence internationale des études éthiopiennes, Wiesbaden, Harrassowitz. Version de l'autrice déposée à la London School of Economics, lue le 11 octobre 2026 ; les pages sont celles de cette version."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Gamo voudrait dire « lion » et évoquerait la bravoure du peuple gamo, selon le département du tourisme de la zone Gamo.",
+            "hypothesisGroup": "sens du nom Gamo",
+            "sources": [
+              {
+                "title": "About Us",
+                "author": "Gamo Zone Tourism Department",
+                "year": null,
+                "url": "https://gamozonetourism.gov.et/index.php/about-us/",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Page de présentation du département du tourisme de la zone Gamo, en Éthiopie, lue le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "D'ache",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "les communautés du sud des hautes terres du Gamo",
+        "shortLine": "Le nom que les communautés du sud donnent à celles du nord des hautes terres du Gamo.",
+        "periodLabel": "Rapporté en 2006",
+        "accounts": [
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "2006"
+            },
+            "era": "modern",
+            "statement": "Le nom D'ache est celui que les communautés du sud des hautes terres du Gamo, comme Balta, Sorba ou Zargulla, donnent à celles du nord, qui ne l'emploient pas pour elles-mêmes et se disent Gamo ; dans la langue du nord, ce mot évoque le fait d'agir en seigneur, selon Dena Freeman.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Who are the Gamo? And who are the D'ache? Confusions of ethnicity in Ethiopia's southern highlands",
+                "author": "Dena Freeman",
+                "year": 2006,
+                "url": "https://eprints.lse.ac.uk/67835/1/Freeman_Who%20are%20the%20Gamo.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1 et p. 6",
+                "notes": "Actes de la 15e Conférence internationale des études éthiopiennes, Wiesbaden, Harrassowitz. Version de l'autrice déposée à la London School of Economics, lue le 11 octobre 2026 ; les pages sont celles de cette version."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "Proposée en 2006"
+            },
+            "era": "modern",
+            "statement": "Le nom D'ache viendrait peut-être des Dach, un groupe oromo que mentionne Bahrey en 1593, alors qu'il écrit depuis le nord des hautes terres du Gamo, selon Dena Freeman.",
+            "hypothesisGroup": "origine du nom D'ache",
+            "sources": [
+              {
+                "title": "Who are the Gamo? And who are the D'ache? Confusions of ethnicity in Ethiopia's southern highlands",
+                "author": "Dena Freeman",
+                "year": 2006,
+                "url": "https://eprints.lse.ac.uk/67835/1/Freeman_Who%20are%20the%20Gamo.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Actes de la 15e Conférence internationale des études éthiopiennes, Wiesbaden, Harrassowitz. Version de l'autrice déposée à la London School of Economics, lue le 11 octobre 2026 ; les pages sont celles de cette version."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -13,7 +13,153 @@
   "whyProblematic": "Les Dinka se nomment eux-mêmes Jieng ou Muonjang. « Dinka » est un nom donné de l'extérieur. Les sources consultées ne permettent pas de savoir d'où il vient. Selon Jok (2018), seule une minorité instruite parmi les Dinka sait que d'autres les appellent ainsi.",
   "spellingAliases": [],
   "familyId": "FLG_NILOTIQUE",
-  "peoples": [],
+  "peoples": [{ "name": "Dinka", "peopleId": "PPL_DINKA" }],
+  "nameHistory": {
+    "summary": "Le nom dinka désigne une langue nilotique du Soudan du Sud, que ses locuteurs appellent thuɔŋjäŋ. C'est aussi le nom que d'autres donnent au peuple qui la parle, et qui se nomme lui-même Jieng. Les sources ne disent presque rien de l'origine du nom dinka ; nous présentons plus bas la seule explication que nous avons lue.",
+    "names": [
+      {
+        "nameText": "Thuɔŋjäŋ",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "din",
+        "namedBy": null,
+        "shortLine": "Le nom que ses locuteurs donnent à la langue.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom thuɔŋjäŋ est celui que les locuteurs donnent à leur langue, selon l'équipe de recherche Nilotic@Edinburgh. Le peuple qui la parle se nomme lui-même Jang, au pluriel Jeng, écrivaient C. G. et Brenda Seligman ; la fiche du peuple Dinka présente ce nom. Nous ne savons pas depuis quand thuɔŋjäŋ est écrit.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Languages — Nilotic@Edinburgh",
+                "author": "Université d'Édimbourg, projet Nilotic@Edinburgh",
+                "year": null,
+                "url": "https://blogs.ed.ac.uk/nilotic/?p=52",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lu le 11 octobre 2026 en ligne. Page de présentation d'une équipe de recherche sur les langues nilotiques : « Speakers call their language Thuɔŋjäŋ »."
+              },
+              {
+                "title": "Pagan Tribes of the Nilotic Sudan",
+                "author": "C. G. Seligman et Brenda Z. Seligman",
+                "year": 1932,
+                "url": "https://archive.org/details/in.ernet.dli.2015.57118",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 136",
+                "notes": "Londres, 1932. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dinka",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom donné de l'extérieur ; il viendrait de Jang, selon une seule source.",
+        "periodLabel": "Écrit dès 1849",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom dinka désigne la langue et le peuple que d'autres appellent ainsi ; le peuple se nomme lui-même Jieng. Son origine n'est presque pas documentée ; nous présentons plus bas la seule explication que nous avons trouvée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Pagan Tribes of the Nilotic Sudan",
+                "author": "C. G. Seligman et Brenda Z. Seligman",
+                "year": 1932,
+                "url": "https://archive.org/details/in.ernet.dli.2015.57118",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 136",
+                "notes": "Londres, 1932. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1866,
+              "to": 1866,
+              "label": "Livre publié en 1866"
+            },
+            "era": "colonial",
+            "statement": "Le nom dinka désigne la langue dans le titre de la grammaire de Johannes Chrysostomus Mitterrutzner, Die Dinka-Sprache in Central-Africa. Il y écrit que le missionnaire Josef Lanz, arrivé en 1856 chez les Kyec, fut le premier à étudier la langue avec méthode.",
+            "formAsWritten": "Dinka-Sprache",
+            "sources": [
+              {
+                "title": "Die Dinka-Sprache in Central-Africa. Kurze Grammatik, Text und Wörterbuch",
+                "author": "Johannes Chrysostomus Mitterrutzner",
+                "year": 1866,
+                "url": "https://archive.org/details/diedinkasprache00mittgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. XI et p. XII",
+                "notes": "Brixen, A. Weger, 1866. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive, préface."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1840,
+              "to": 1849,
+              "label": "Expédition de 1840-1841, récit publié en 1849"
+            },
+            "era": "colonial",
+            "statement": "Le nom dinka apparaît sous la forme Dinkas dans le récit de Ferdinand Werne, qui remonte le Nil Blanc en 1840-1841 et parle de « la nation dinka » et du « dialecte des Dinkas ». C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "formAsWritten": "Dinkas",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Expedition to Discover the Sources of the White Nile, in the Years 1840, 1841, vol. II",
+                "author": "Ferdinand Werne, traduit par Charles William O'Reilly",
+                "year": 1849,
+                "url": "https://archive.org/details/expeditiontodisc00wern_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 110",
+                "notes": "Londres, Richard Bentley, 1849. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "Proposée en 1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom dinka viendrait de Jang, le nom que se donnent les Dinka, que les Arabes auraient déformé en Denkawi, d'où l'anglais Dinka, selon C. G. et Brenda Seligman.",
+            "hypothesisGroup": "origine du nom dinka",
+            "sources": [
+              {
+                "title": "Pagan Tribes of the Nilotic Sudan",
+                "author": "C. G. Seligman et Brenda Z. Seligman",
+                "year": 1932,
+                "url": "https://archive.org/details/in.ernet.dli.2015.57118",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 136",
+                "notes": "Londres, 1932. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": null,
     "dialects": [

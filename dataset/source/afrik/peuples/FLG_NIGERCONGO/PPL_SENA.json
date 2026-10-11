@@ -143,5 +143,128 @@
         "tier": "referenced"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Sena désigne un peuple de la basse vallée du Zambèze, au Mozambique et dans les régions voisines du Malawi et du Zimbabwe, qui se nomme lui-même Sena. C'est aussi le nom d'un lieu du Zambèze, connu dès 1531. Les sources que nous avons lues expliquent peu l'origine du nom ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "Sena",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "seh",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple et d'un lieu du Zambèze ; écrit Senna pour la langue dès 1858.",
+        "usedIn": ["seh"],
+        "periodLabel": "Écrit dès 1858 pour la langue ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par les historiens"
+            },
+            "statement": "Le nom Sena désigne un peuple de la basse vallée du Zambèze, en majorité agriculteur, dont un petit groupe de tisserands vendait ses tissus jusqu'à Zumbo et au pays chewa, selon Allen F. Isaacman. Il range les Sena parmi les groupements nouveaux nés des mariages entre migrants et habitants de la vallée. L'origine du nom est discutée : l'explication que nous avons lue est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 8 : Les pays du bassin du Zambèze",
+                "author": "Allen F. Isaacman",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 215-216",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1917,
+              "label": "1901-1917"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sena désigne, pour Allen Isaacman et Jan Vansina, un peuple qui combat en 1901 aux côtés des Portugais contre les Barue, puis s'allie seize ans plus tard à ces mêmes Barue dans un soulèvement contre le système colonial.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 8 : Initiatives et résistances africaines en Afrique centrale de 1880 à 1914",
+                "author": "Allen Isaacman et Jan Vansina",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 214",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "1858"
+            },
+            "statement": "Le nom Sena est écrit Senna dans des notes sur le Zambèze, traduites du portugais par le consul britannique J. Lyons M'Leod : elles donnent le sens d'un nom de lieu « dans la langue senna ». C'est la plus ancienne trace de ce nom pour une langue ou un peuple que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Senna",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notes on the Zambesi, from Quillimane to Tete",
+                "author": "J. Lyons M'Leod",
+                "year": 1858,
+                "url": "https://archive.org/details/jstor-1799111",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 364",
+                "notes": "Proceedings of the Royal Geographical Society of London, vol. 2, séance du 14 juin 1858 ; notes traduites du portugais par le consul britannique au Mozambique, lues sur leur numérisation."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1531,
+              "to": 1531,
+              "label": "1531"
+            },
+            "statement": "On parle alors de Sena pour désigner un lieu de la vallée du Zambèze dont les Portugais font, en 1531, avec Tete, leurs principaux centres de commerce, selon H. H. K. Bhila.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 22 : La région au sud du Zambèze",
+                "author": "H. H. K. Bhila",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 734",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "Proposée en 1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sena viendrait du lieu appelé Sena : le chisena serait « la langue de Sena », parlée dans tous les prazos qui bordent le Zambèze depuis la mer jusqu'à la gorge de Lupata, selon le jésuite Julius Torrend, qui note qu'elle supplante d'autres parlers.",
+            "hypothesisGroup": "origine du nom Sena",
+            "sources": [
+              {
+                "title": "Grammatica do Chisena : a grammar of the language of the lower Zambezi",
+                "author": "Julius Torrend",
+                "year": 1900,
+                "url": "https://archive.org/details/grammaticadochis00torruoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Mission de Chupanga, 1900 ; lue sur sa numérisation, introduction bilingue en portugais et en anglais."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

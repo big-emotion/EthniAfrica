@@ -117,5 +117,151 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Tsimihety désigne un peuple du nord de Madagascar, autour du plateau de Mandritsara, qui se nomme lui-même Tsimihety. Le nom voudrait dire « ceux qui ne se coupent pas les cheveux ». Les sources que nous avons lues le rattachent à un refus de deuil ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Tsimihety",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "xmw",
+        "namedBy": null,
+        "shortLine": "« Ceux qui ne se coupent pas les cheveux » ; écrit dès 1897.",
+        "usedIn": ["mlg"],
+        "periodLabel": "Écrit dès 1897 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du mot"
+            },
+            "statement": "Le nom Tsimihety veut dire « ceux qui ne se coupent pas les cheveux », selon André Dandouau et Gabriel Gravier ; en malgache, tsi- marque la négation, selon R. K. Kent. Il désigne un peuple du nord de Madagascar, établi dans les vallées qui descendent du plateau de Mandritsara. On ne sait pas avec certitude à quel refus il renvoie : les explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Géographie de Madagascar",
+                "author": "André Dandouau",
+                "year": 1922,
+                "url": "https://archive.org/details/geographiedemad00dand",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 94",
+                "notes": "Paris, Larose, 1922 ; lu sur sa numérisation."
+              },
+              {
+                "title": "Madagascar : les Malgaches, origines de la colonisation française, la conquête",
+                "author": "Gabriel Gravier",
+                "year": 1904,
+                "url": "https://archive.org/details/madagascarlesmal00grav",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 60",
+                "notes": "Paris, Delagrave, 1904 ; lu sur sa numérisation."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 28 : Madagascar et les îles de l'océan Indien",
+                "author": "R. K. Kent",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 921, note 1",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1800,
+              "label": "Entre le XVIe et le XVIIIe siècle, selon R. K. Kent"
+            },
+            "era": "polity",
+            "statement": "Le nom Tsimihety désigne, pour l'historien R. K. Kent, un peuple né de groupes de réfugiés sans chef venus de la côte est : ils fuyaient les guerres menées pour se procurer des esclaves et s'installèrent avec leurs troupeaux dans la grande plaine de Mandritsara.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 28 : Madagascar et les îles de l'océan Indien",
+                "author": "R. K. Kent",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 945",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1897,
+              "label": "1897"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tsimihety apparaît par écrit dans le récit de voyage du lieutenant Boucabeille, de Tananarive à Diégo-Suarez, publié en septembre 1897 par l'administration coloniale. Il y décrit, au nord du pays sihanaka, un peuple qu'il croit d'origine sakalave, installé vers Marotandrano et Mandritsara. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Tsimihety",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notes, reconnaissances et explorations, 1re année : De Tananarive à Diégo-Suarez (suite)",
+                "author": "Lieutenant Boucabeille",
+                "year": 1897,
+                "url": "https://archive.org/details/notesreconnaiss00madagoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 201-202",
+                "notes": "Tananarive, Imprimerie officielle, fascicule du 30 septembre 1897 ; lu sur sa numérisation."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "Proposée en 1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Tsimihety serait un nom collectif que ce peuple aurait adopté pour montrer, par son refus de se couper les cheveux, qu'il ne se soumettait pas à l'autorité des Maroserana, la dynastie des rois sakalava, selon le glossaire de l'Histoire générale de l'Afrique.",
+            "hypothesisGroup": "origine du nom Tsimihety",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, glossaire",
+                "author": "UNESCO, Comité scientifique international",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 1087",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2004,
+              "to": 2004,
+              "label": "Proposée en 2004"
+            },
+            "era": "modern",
+            "statement": "Le nom Tsimihety rappellerait une coutume sakalava : à la mort d'un roi, les hommes devaient se raser la tête en signe de deuil, et ceux qui refusaient auraient rejeté par là l'autorité de la monarchie, selon l'anthropologue David Graeber.",
+            "hypothesisGroup": "origine du nom Tsimihety",
+            "sources": [
+              {
+                "title": "Fragments of an Anarchist Anthropology",
+                "author": "David Graeber",
+                "year": 2004,
+                "url": "https://archive.org/details/graeber-1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 54-55",
+                "notes": "Chicago, Prickly Paradigm Press, 2004 ; lu dans une copie non officielle mise en ligne sur Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -22,7 +22,174 @@
   "whyProblematic": "Une explication relie ce nom au mot songhay pour « est » : il semble que l'on puisse presque l'appliquer au nom du peuple qui, pour les Songhay, vit dans l'est du pays (Skinner, 1968). L'origine du nom n'est pas établie. L'article reprend le relevé de Westermann : le nom apparaît sous la forme Ḥauṣiyin chez Ibn Saʿīd, au XIIIe siècle, puis quatre siècles plus tard dans le Tarikh es-Soudan. Entre les deux, le seul nom général relevé est Afnū, noté par l'Égyptien Al-Maqrizi, qui l'a peut-être tiré d'une source du Bornou ; les Kanouri et leurs voisins du Tchad l'emploient encore pour les Hausa.",
   "spellingAliases": [],
   "familyId": "FLG_TCHADIQUE",
-  "peoples": [],
+  "peoples": [{ "name": "Hausa", "peopleId": "PPL_HAUSA" }],
+  "nameHistory": {
+    "summary": "Le nom haoussa désigne une langue tchadique d'Afrique de l'Ouest, parlée surtout au Nigeria et au Niger. Ses locuteurs l'appellent hausa, et se nomment eux-mêmes Hausawa, « ceux qui parlent hausa ». Le nom aurait d'abord désigné la langue avant de désigner un peuple. Son origine est discutée ; nous présentons plus bas les explications que nous avons lues.",
+    "names": [
+      {
+        "nameText": "Hausa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "hau",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue chez ses locuteurs ; il a d'abord désigné la langue, puis le peuple.",
+        "periodLabel": "Écrit dès le XIIIe siècle sous une forme proche",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par l'auteur"
+            },
+            "statement": "Le nom hausa désignait d'abord seulement la langue maternelle des habitants du pays hausa, qui s'appelaient eux-mêmes Hausawa, « ceux qui parlent hausa », selon Mahdi Adamu. Comme nom de peuple, il n'apparaîtrait dans les écrits qu'aux XVIe ou XVIIe siècles. Son origine est discutée ; les explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 11 : Les Hawsa et leurs voisins du Soudan central",
+                "author": "Mahdi Adamu",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 296",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition française. Lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC. La note 15 renvoie à D. Olderogge (1959, p. 68), que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1843,
+              "to": 1843,
+              "label": "1843"
+            },
+            "era": "polity",
+            "statement": "Le nom hausa désigne une langue, écrit Haussa, dans le titre du vocabulaire que le missionnaire James Frederick Schön publie à Londres en 1843.",
+            "formAsWritten": "Haussa",
+            "sources": [
+              {
+                "title": "Vocabulary of the Haussa Language",
+                "author": "James Frederick Schön",
+                "year": 1843,
+                "url": "https://archive.org/details/vocabularyofhau00sch",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "page de titre",
+                "notes": "Londres, Church Missionary Society, 1843. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur était missionnaire de la Church Missionary Society."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1530,
+              "label": "Début du XVIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom hausa n'est pas celui que retient Léon l'Africain : au début du XVIe siècle, il écrit que la langue commune de ce qui est aujourd'hui le nord du Nigeria est la langue de Gobir, selon Mahdi Adamu.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 11 : Les Hawsa et leurs voisins du Soudan central",
+                "author": "Mahdi Adamu",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 296",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition française. Lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC. La note 15 renvoie à D. Olderogge (1959, p. 68), que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1445,
+              "to": 1505,
+              "label": "1445-1505"
+            },
+            "era": "polity",
+            "statement": "Le nom hausa désigne un territoire chez le savant égyptien As-Suyūṭī, dans ses Épîtres aux rois du Soudan, Hawsa et Al-Takrūr, selon Mahdi Adamu. Les chroniques de Tombouctou l'emploient ensuite pour les régions de la rive gauche du Niger.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 11 : Les Hawsa et leurs voisins du Soudan central",
+                "author": "Mahdi Adamu",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 296",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition française. Lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC. La note 15 renvoie à D. Olderogge (1959, p. 68), que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1201,
+              "to": 1300,
+              "label": "XIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom hausa a une forme proche, Ḥauṣiyin, chez l'écrivain andalou Ibn Saʿīd, mort à la fin du XIIIe siècle, selon Neil Skinner, qui doute que cet auteur ait été bien informé. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Origin of the Name 'Hausa', Africa, vol. 38, n° 3",
+                "author": "Neil Skinner",
+                "year": 1968,
+                "url": "https://www.cambridge.org/core/journals/africa/article/abs/origin-of-the-name-hausa/1B6D444C319C498A9C63AE509EA7BF2B",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 253",
+                "notes": "Lu le 11 octobre 2026 : seuls l'extrait de la première page et le résumé en français affichés par Cambridge Core, pas l'article entier."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1959,
+              "to": 1959,
+              "label": "Proposée en 1959"
+            },
+            "era": "colonial",
+            "statement": "Le nom hausa viendrait du mot hausa, « langage, langue », comme dans na gane hausarka, « je comprends ta langue », selon D. Olderogge, cité par Mahdi Adamu.",
+            "hypothesisGroup": "origine du nom hausa",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 11 : Les Hawsa et leurs voisins du Soudan central",
+                "author": "Mahdi Adamu",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 296",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition française. Lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC. La note 15 renvoie à D. Olderogge (1959, p. 68), que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1968,
+              "to": 1968,
+              "label": "Proposée en 1968"
+            },
+            "era": "modern",
+            "statement": "Le nom hausa viendrait du mot songhay hausa, « est » : pour les Songhay, ce serait le nom des gens qui vivent à l'est, selon Neil Skinner.",
+            "hypothesisGroup": "origine du nom hausa",
+            "sources": [
+              {
+                "title": "The Origin of the Name 'Hausa', Africa, vol. 38, n° 3",
+                "author": "Neil Skinner",
+                "year": 1968,
+                "url": "https://www.cambridge.org/core/journals/africa/article/abs/origin-of-the-name-hausa/1B6D444C319C498A9C63AE509EA7BF2B",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 253",
+                "notes": "Lu le 11 octobre 2026 : seuls l'extrait de la première page et le résumé en français affichés par Cambridge Core, pas l'article entier."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": null,
     "dialects": [

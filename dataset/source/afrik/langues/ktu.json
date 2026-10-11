@@ -14,6 +14,217 @@
   "spellingAliases": [],
   "familyId": "FLG_BANTU",
   "peoples": [],
+  "nameHistory": {
+    "summary": "Le nom kituba désigne une langue d'échange née du kikongo, parlée dans le sud-ouest de la République démocratique du Congo, le sud de la République du Congo et le nord de l'Angola. En République démocratique du Congo, on l'appelle kikongo ya leta, « le kikongo de l'administration », et beaucoup de ses locuteurs disent simplement kikongo. D'autres noms existent ; nous présentons plus bas ce que les sources disent de chacun.",
+    "names": [
+      {
+        "nameText": "Kikongo ya leta",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ktu",
+        "namedBy": null,
+        "shortLine": "« Le kikongo de l'administration » : la langue adoptée par l'administration coloniale belge.",
+        "periodLabel": "Depuis l'époque coloniale",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Époque coloniale"
+            },
+            "era": "colonial",
+            "statement": "Le nom kikongo ya leta, ou kileta, veut dire « le kikongo de l'administration » : l'administration coloniale belge a adopté cette langue de contact dans les régions où on la parle aujourd'hui, selon Salikoko Mufwene.",
+            "sources": [
+              {
+                "title": "Kikongo-Kituba, Atlas of Pidgin and Creole Language Structures Online",
+                "author": "Salikoko S. Mufwene",
+                "year": null,
+                "url": "https://apics-online.info/surveys/58",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section 2",
+                "notes": "Lu le 11 octobre 2026 en texte intégral sur APiCS Online (chapitre de synthèse)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kituba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ktu",
+        "namedBy": null,
+        "shortLine": "« Manière de parler », d'après munu kutuba, « je dis » ; surtout en République du Congo.",
+        "periodLabel": "Écrit dès 1966",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom kituba viendrait de munu kutuba, ou mono kutuba, « je dis », et voudrait dire « manière de parler », selon Salikoko Mufwene. Munukutuba s'emploie surtout en République du Congo.",
+            "sources": [
+              {
+                "title": "Kikongo-Kituba, Atlas of Pidgin and Creole Language Structures Online",
+                "author": "Salikoko S. Mufwene",
+                "year": null,
+                "url": "https://apics-online.info/surveys/58",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section 2",
+                "notes": "Lu le 11 octobre 2026 en texte intégral sur APiCS Online (chapitre de synthèse)."
+              }
+            ],
+            "hypothesisGroup": "origine du nom kituba"
+          },
+          {
+            "period": {
+              "from": 1891,
+              "to": 1898,
+              "label": "De 1891 à 1898"
+            },
+            "era": "colonial",
+            "statement": "On parle alors le kimanyanga, une langue du groupe kongo déjà langue de commerce, que les ouvriers venus de loin pour construire le chemin de fer entre Kinshasa et l'océan adoptent pour se comprendre. Ce parler donnera plus tard ce qu'on appelle kituba, selon Salikoko Mufwene.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Kikongo-Kituba, Atlas of Pidgin and Creole Language Structures Online",
+                "author": "Salikoko S. Mufwene",
+                "year": null,
+                "url": "https://apics-online.info/surveys/58",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section 1",
+                "notes": "Lu le 11 octobre 2026 en texte intégral sur APiCS Online (chapitre de synthèse)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1966,
+              "to": 1966,
+              "label": "1966"
+            },
+            "era": "modern",
+            "statement": "Le nom kituba figure dans le titre de la thèse de Harold Fehderau, The origin and development of Kituba, soutenue à l'université Cornell en 1966, d'après la bibliographie de Salikoko Mufwene. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Kikongo-Kituba, Atlas of Pidgin and Creole Language Structures Online",
+                "author": "Salikoko S. Mufwene",
+                "year": null,
+                "url": "https://apics-online.info/surveys/58",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "bibliographie",
+                "notes": "Lu le 11 octobre 2026 en texte intégral sur APiCS Online (chapitre de synthèse)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kikongo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ktu",
+        "namedBy": null,
+        "shortLine": "Le nom que lui donnent la plupart de ses locuteurs hors du pays kongo.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom kikongo est celui que donnent à la langue la plupart de ses locuteurs hors du pays kongo, en particulier dans la région du Bandundu, selon Salikoko Mufwene. Ils ne pensent pas pour autant parler la même langue que les Bakongo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Kikongo-Kituba, Atlas of Pidgin and Creole Language Structures Online",
+                "author": "Salikoko S. Mufwene",
+                "year": null,
+                "url": "https://apics-online.info/surveys/58",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section 1 et section 2",
+                "notes": "Lu le 11 octobre 2026 en texte intégral sur APiCS Online (chapitre de synthèse)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kibula-matadi",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "« Le kikongo des casseurs de pierres » : un nom de l'époque coloniale.",
+        "periodLabel": "Époque coloniale",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Époque coloniale"
+            },
+            "era": "colonial",
+            "statement": "Le nom kibula-matadi, ou kikongo ya bula-matadi, veut dire « le kikongo de l'agent colonial », littéralement « des casseurs de pierres », selon Salikoko Mufwene. Pendant la colonisation, les missions chrétiennes disaient aussi kikongo commercial.",
+            "sources": [
+              {
+                "title": "Kikongo-Kituba, Atlas of Pidgin and Creole Language Structures Online",
+                "author": "Salikoko S. Mufwene",
+                "year": null,
+                "url": "https://apics-online.info/surveys/58",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section 2",
+                "notes": "Lu le 11 octobre 2026 en texte intégral sur APiCS Online (chapitre de synthèse)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ikele ve",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "ktu",
+        "namedBy": null,
+        "shortLine": "« Ce n'est pas vrai » : un surnom moqueur employé en République du Congo.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom ikele ve, « ce n'est pas vrai », se moque de la langue, de son verbe qui ne change pas de forme et de sa grammaire réduite ; il s'emploie surtout en République du Congo, selon Salikoko Mufwene.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Kikongo-Kituba, Atlas of Pidgin and Creole Language Structures Online",
+                "author": "Salikoko S. Mufwene",
+                "year": null,
+                "url": "https://apics-online.info/surveys/58",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section 2",
+                "notes": "Lu le 11 octobre 2026 en texte intégral sur APiCS Online (chapitre de synthèse)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": "regional_lingua_franca",
     "dialects": [],

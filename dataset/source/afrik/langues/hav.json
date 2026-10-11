@@ -14,6 +14,53 @@
   "spellingAliases": [],
   "familyId": "FLG_BANTU",
   "peoples": [{ "name": "Havu", "peopleId": "PPL_HAVU" }],
+  "nameHistory": {
+    "summary": "Le nom kihavu désigne une langue bantoue de la République démocratique du Congo. Il est formé du nom du peuple Havu et du préfixe ki-, qui sert à nommer les langues. Nous n'avons pas trouvé de source qui explique le nom Havu, ni sa plus ancienne trace.",
+    "names": [
+      {
+        "nameText": "Kihavu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "hav",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue : le préfixe ki- devant le nom du peuple Havu.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom kihavu est formé comme beaucoup de noms de langues bantoues : le préfixe ki- devant le nom du peuple, ici les Havu. Dans les langues kongo, ki- marque ainsi la langue et ba- les membres du groupe, selon Salikoko Mufwene. Glottolog recense les formes Kihavu et Haavu. On ne sait pas avec certitude d'où vient le nom Havu ; la fiche du peuple Havu présente ce peuple.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Havu (havu1238)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/havu1238",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle la situe en République démocratique du Congo et recense les formes Haavu et Kihavu."
+              },
+              {
+                "title": "Kikongo-Kituba, Atlas of Pidgin and Creole Language Structures Online",
+                "author": "Salikoko S. Mufwene",
+                "year": null,
+                "url": "https://apics-online.info/surveys/58",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section 2",
+                "notes": "Lu le 11 octobre 2026 en texte intégral sur APiCS Online (chapitre de synthèse)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": "non_vehicular",
     "dialects": [],

@@ -19,6 +19,167 @@
       "peopleId": "PPL_COPTES"
     }
   ],
+  "nameHistory": {
+    "summary": "Le nom copte désigne la dernière forme de la langue égyptienne, écrite avec un alphabet tiré du grec. Le mot a d'abord désigné l'Égypte et ses habitants, puis les chrétiens d'Égypte. Avant la conquête arabe, ces chrétiens se nommaient eux-mêmes rmnkēme, « les gens de la Terre noire ». Les sources ne s'accordent pas sur l'origine du mot copte ; nous présentons leurs explications plus bas.",
+    "names": [
+      {
+        "nameText": "Copte",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom venu de l'arabe ; il viendrait du grec qui voulait dire « égyptien ».",
+        "periodLabel": "Écrit dès le IIe siècle ; nom de langue en Europe dès 1636",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par les auteurs"
+            },
+            "statement": "Le nom copte désigne la dernière forme de la langue égyptienne, que Rodolphe Kasser décrit comme une langue morte depuis plusieurs siècles, gardée dans la liturgie de l'Église. Le mot a d'abord désigné l'Égypte et ses habitants, puis les chrétiens d'Égypte, selon Pierre du Bourguet. Son origine est discutée ; les explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Language(s), Coptic, The Coptic Encyclopedia",
+                "author": "Rodolphe Kasser",
+                "year": null,
+                "url": "https://ccdl.claremont.edu/digital/collection/cce/id/2025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction",
+                "notes": "Lu le 11 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. A145a-151b). L'auteur cite W. Vycichl (1983) et M. Krause (1979), que nous n'avons pas lus."
+              },
+              {
+                "title": "Copt, The Coptic Encyclopedia",
+                "author": "Pierre du Bourguet",
+                "year": null,
+                "url": "https://ccdl.claremont.edu/digital/collection/cce/id/516",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 599",
+                "notes": "Lu le 11 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. 599a-601a)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant la conquête arabe"
+            },
+            "statement": "Le nom copte n'est pas celui que se donnaient les chrétiens d'Égypte avant la conquête arabe : en sahidique, ils se disaient rmnkēme, « les gens de la Terre noire », la terre cultivable de la vallée du Nil, selon Rodolphe Kasser.",
+            "sources": [
+              {
+                "title": "Language(s), Coptic, The Coptic Encyclopedia",
+                "author": "Rodolphe Kasser",
+                "year": null,
+                "url": "https://ccdl.claremont.edu/digital/collection/cce/id/2025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section sur le mot copte",
+                "notes": "Lu le 11 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. A145a-151b). L'auteur cite W. Vycichl (1983) et M. Krause (1979), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1636,
+              "to": 1636,
+              "label": "1636"
+            },
+            "statement": "Le nom copte désigne la langue dans le titre du Prodromus Coptus sive Aegyptiacus du jésuite Athanasius Kircher, publié à Rome en 1636, qui parle de « linguae Coptae, sive Aegyptiacae », la langue copte ou égyptienne.",
+            "formAsWritten": "linguae Coptae",
+            "sources": [
+              {
+                "title": "Prodromus Coptus sive Aegyptiacus",
+                "author": "Athanasius Kircher",
+                "year": 1636,
+                "url": "https://archive.org/details/athanasiikircher00kirc_5",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre",
+                "notes": "Rome, Typis S. Cong. de propaganda fide, 1636. Lu le 11 octobre 2026 : titre et notice de la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 100,
+              "to": 199,
+              "label": "IIe siècle"
+            },
+            "statement": "Le nom copte a une forme proche, gibtith, dans plusieurs passages du Talmud dès le IIe siècle, selon Martin Krause cité par Rodolphe Kasser. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Language(s), Coptic, The Coptic Encyclopedia",
+                "author": "Rodolphe Kasser",
+                "year": null,
+                "url": "https://ccdl.claremont.edu/digital/collection/cce/id/2025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section sur le mot copte",
+                "notes": "Lu le 11 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. A145a-151b). L'auteur cite W. Vycichl (1983) et M. Krause (1979), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom copte viendrait du grec Aigyptios, « égyptien », réduit à ses consonnes dans les actes administratifs arabes après la conquête de 641, selon Pierre du Bourguet, qui note qu'aucun texte ne le prouve encore. Rodolphe Kasser cite aussi les formes coptes guptios et kuptaios.",
+            "hypothesisGroup": "origine du nom copte",
+            "sources": [
+              {
+                "title": "Copt, The Coptic Encyclopedia",
+                "author": "Pierre du Bourguet",
+                "year": null,
+                "url": "https://ccdl.claremont.edu/digital/collection/cce/id/516",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 599",
+                "notes": "Lu le 11 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. 599a-601a)."
+              },
+              {
+                "title": "Language(s), Coptic, The Coptic Encyclopedia",
+                "author": "Rodolphe Kasser",
+                "year": null,
+                "url": "https://ccdl.claremont.edu/digital/collection/cce/id/2025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section sur le mot copte",
+                "notes": "Lu le 11 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. A145a-151b). L'auteur cite W. Vycichl (1983) et M. Krause (1979), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom copte viendrait du nom de la ville de Coptos, aujourd'hui Qift, en Haute-Égypte, selon une explication que rapporte Pierre du Bourguet. Il la rejette : la ville n'a jamais été un centre copte particulier.",
+            "hypothesisGroup": "origine du nom copte",
+            "sources": [
+              {
+                "title": "Copt, The Coptic Encyclopedia",
+                "author": "Pierre du Bourguet",
+                "year": null,
+                "url": "https://ccdl.claremont.edu/digital/collection/cce/id/516",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 599",
+                "notes": "Lu le 11 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. 599a-601a)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": "non_vehicular",
     "dialects": ["Bohaïrique", "Sahidique", "Fayoumique", "Akhmimique"],

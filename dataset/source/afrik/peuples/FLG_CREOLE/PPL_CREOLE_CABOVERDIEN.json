@@ -150,5 +150,118 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kriolu désigne la langue des Cap-Verdiens et, par extension, ce peuple créole de l'archipel du Cap-Vert, qui appelle sa langue Kriolu ou Kabuverdianu. En portugais, on dit crioulo, en français créole cap-verdien. Les sources lues ne disent pas d'où vient ce nom ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "Kriolu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kea",
+        "namedBy": null,
+        "shortLine": "Le nom que les Cap-Verdiens donnent à leur langue, écrit criôlo dès 1881.",
+        "periodLabel": "Écrit depuis 1881 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kriolu, ou Kabuverdianu, désigne aujourd'hui une langue créole à base portugaise née au Cap-Vert, que tous les Cap-Verdiens parlent comme première langue, selon Ethnologue, qui la nomme aussi Kriol. Les sources lues n'expliquent pas l'origine du mot.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Kabuverdianu (kea)",
+                "author": "SIL International, Ethnologue",
+                "year": null,
+                "url": "https://www.ethnologue.com/language/kea/",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche en accès libre, lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kriolu a une forme proche, criôlo, dans une lettre écrite dans cette langue par un habitant de l'île de Santo Antão, que publie le linguiste portugais Francisco Adolpho Coelho en 1881 : son auteur y dit la difficulté d'écrire « dans notre langue », même pour « nous, du Cap-Vert ». C'est la plus ancienne trace de ce nom sous la plume d'un Cap-Verdien que le projet connaît. La langue existait déjà bien avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Os dialectos romanicos ou neo-latinos na África, Ásia e América",
+                "author": "Francisco Adolpho Coelho",
+                "year": 1881,
+                "url": "https://www.gutenberg.org/ebooks/33159",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chap. I, 1, Creolo da ilha de Santo Antão",
+                "notes": "Lisbonne, Sociedade de Geographia, tiré à part du Bulletin de la Société de géographie de Lisbonne. Lu dans l'édition du Projet Gutenberg, qui ne garde pas la pagination, le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Créole",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "Des auteurs européens",
+        "shortLine": "Le nom français de ce peuple et de sa langue, employé dès 1849.",
+        "periodLabel": "Écrit depuis 1849 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "colonial",
+            "statement": "Le nom de créoles désigne aussi les gens eux-mêmes : les créoles du Cap-Vert, au moins à Santiago, ont coutume de raconter des histoires le soir, écrit A. de Sá Nogueira, cité par Francisco Adolpho Coelho en 1881.",
+            "sources": [
+              {
+                "title": "Os dialectos romanicos ou neo-latinos na África, Ásia e América",
+                "author": "Francisco Adolpho Coelho",
+                "year": 1881,
+                "url": "https://www.gutenberg.org/ebooks/33159",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chap. I, 1, Creolo da ilha de Santo Antão",
+                "notes": "Lisbonne, Sociedade de Geographia, tiré à part du Bulletin de la Société de géographie de Lisbonne. Lu dans l'édition du Projet Gutenberg, qui ne garde pas la pagination, le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1849,
+              "to": 1849,
+              "label": "1849"
+            },
+            "era": "colonial",
+            "statement": "Le nom créole désigne la langue des îles du Cap-Vert chez Bertrand-Bocandé, qui étudie en 1849 la « langue créole portugaise » de la Guinée : selon lui, celle des îles lui ressemble, mais chaque île a son parler, et à Santiago même, les créoles de Praia, du centre de l'île et de Tarrafal diffèrent. C'est la plus ancienne trace de ce nom pour le Cap-Vert que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notes sur la Guinée portugaise ou Sénégambie méridionale, Bulletin de la Société de géographie, 3e série, tome 12",
+                "author": "Bertrand-Bocandé",
+                "year": 1849,
+                "url": "https://archive.org/details/bulletindelasoci12pari",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 74-75",
+                "notes": "Lu dans l'exemplaire numérisé le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

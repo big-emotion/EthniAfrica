@@ -149,5 +149,198 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ndau désigne un peuple du centre du Mozambique et de l'est du Zimbabwe, entre la Pungwe, la mer et la Save, qui se nomme lui-même Ndau, ou VaNdau au pluriel. D'autres noms existent : Ndzawu, une graphie influencée par les parlers thonga voisins. Les sources que nous avons lues rattachent le nom aux rois nguni ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Ndau",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ndc",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple et, dans chindau, de sa langue ; écrit dès 1906.",
+        "usedIn": ["ndc"],
+        "periodLabel": "Écrit dès 1906 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné en 1934"
+            },
+            "statement": "Le nom Ndau désigne un peuple bantou installé entre la Pungwe, la mer et la Save, rattaché aux Shona par sa langue, selon Henri-Philippe Junod. Le mot ndau voudrait dire « le lieu, le pays ». L'origine du nom est expliquée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A contribution to the study of Ndau demography, totemism, and history",
+                "author": "Henri-Philippe Junod",
+                "year": 1934,
+                "url": "https://archive.org/details/african-studies_1934-03_8_1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17-18",
+                "notes": "Bantu Studies, vol. 8, n° 1, mars 1934 ; lu sur sa numérisation."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ndau entre dans celui de la langue, le chindau, que le phonéticien Daniel Jones décrit en 1911 comme une langue bantoue parlée à l'ouest de Sofala.",
+            "sources": [
+              {
+                "title": "The pronunciation and orthography of the Chindau language",
+                "author": "Daniel Jones",
+                "year": 1911,
+                "url": "https://archive.org/details/pronunciationort00jone",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Londres, University of London Press, 1911 ; lu sur sa numérisation."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ndau apparaît, entre guillemets, dans une lettre de la missionnaire américaine Alice C. Wilder, publiée en 1906 : elle y emploie ce mot pour les gens du pays où travaille sa mission, en Rhodésie. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Ndau",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Glimpses of African Life in Rhodesia",
+                "author": "Alice C. Wilder",
+                "year": 1906,
+                "url": "https://archive.org/details/lifelightforwome367woma",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 294",
+                "notes": "Life and Light for Women, vol. 36, n° 7, 1906 ; lettre d'une missionnaire de la mission américaine, lue sur sa numérisation."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Après la défaite de Zwide, selon Leonard D. Ngcongco"
+            },
+            "statement": "Le nom Ndau désigne, pour l'historien Leonard D. Ngcongco, l'un des petits groupes que Soshangane, un général nguni, vainc et incorpore à ses partisans lorsqu'il bâtit le royaume de Gaza, avec les Manyika et les Chopi.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 5 : Le Mfecane et l'émergence de nouveaux États africains",
+                "author": "Leonard D. Ngcongco",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 132",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1934,
+              "to": 1934,
+              "label": "Proposée en 1934"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ndau viendrait des Nguni : quand ils venaient faire leur soumission aux rois nguni, les Ndau s'asseyaient en frappant doucement des mains et disaient « Ndau wee ! », que Junod traduit « De la place, s'il vous plaît ! ». Les Nguni les auraient appelés ainsi pour leur rappeler leur condition ; comme ndau veut aussi dire « le pays », le nom les désignait en même temps comme les gens installés sur place, selon Henri-Philippe Junod.",
+            "hypothesisGroup": "origine du nom Ndau",
+            "sources": [
+              {
+                "title": "A contribution to the study of Ndau demography, totemism, and history",
+                "author": "Henri-Philippe Junod",
+                "year": 1934,
+                "url": "https://archive.org/details/african-studies_1934-03_8_1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17-18",
+                "notes": "Bantu Studies, vol. 8, n° 1, mars 1934 ; lu sur sa numérisation."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "VaNdau",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ndc",
+        "namedBy": null,
+        "shortLine": "La forme du nom au pluriel, avec le préfixe va- des noms de personnes.",
+        "usedIn": ["ndc", "eng"],
+        "periodLabel": "Écrit dès 1922",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom VaNdau est écrit Vandau dans le titre des contes publiés par Kamba Simango, un Ndau dont la langue maternelle est le chindau de la côte, avec l'anthropologue Franz Boas. C'est la plus ancienne trace de cette forme que le projet connaît.",
+            "formAsWritten": "Vandau",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tales and Proverbs of the Vandau of Portuguese South Africa",
+                "author": "Franz Boas et C. Kamba Simango",
+                "year": 1922,
+                "url": "https://archive.org/details/jstor-535015",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 151",
+                "notes": "Journal of American Folklore, vol. 35, n° 138, 1922 ; lu sur sa numérisation."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ndzawu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des auteurs influencés par les parlers thonga voisins",
+        "shortLine": "Une graphie du nom que Junod attribue à l'influence des parlers thonga.",
+        "periodLabel": "Signalé en 1934",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1934,
+              "to": 1934,
+              "label": "1934"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ndzawu, comme Ndawu, serait une graphie due à l'influence des Hlengwe, un groupe thonga voisin, et la forme Ndjao viendrait des clans thonga du sud, selon Henri-Philippe Junod, qui propose d'écrire Ndau. C'est la plus ancienne trace de cette graphie que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A contribution to the study of Ndau demography, totemism, and history",
+                "author": "Henri-Philippe Junod",
+                "year": 1934,
+                "url": "https://archive.org/details/african-studies_1934-03_8_1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18",
+                "notes": "Bantu Studies, vol. 8, n° 1, mars 1934 ; lu sur sa numérisation."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

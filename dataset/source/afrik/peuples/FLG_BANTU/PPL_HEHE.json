@@ -133,5 +133,220 @@
         "source_kind": "intergovernmental"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Hehe désigne un peuple des hauts plateaux d'Iringa, dans le centre-sud de la Tanzanie, qui se nomme lui-même Wahehe. Leur pays s'appelle Uhehe. Les sources que nous avons lues ne donnent qu'une explication de ce nom ; nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Wahehe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple, écrit dès 1860 ; il serait né chez ses voisins.",
+        "periodLabel": "Écrit depuis 1860 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Wahehe désigne le peuple de l'Uhehe, réuni au XIXe siècle autour d'un royaume conquérant, selon l'officier allemand Ernst Nigmann. Son origine reste incertaine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Die Wahehe : ihre Geschichte, Kult-, Rechts-, Kriegs- und Jagd-Gebräuche",
+                "author": "Ernst Nigmann",
+                "year": 1908,
+                "url": "https://brema.suub.uni-bremen.de/dsdk/content/titleinfo/1872257",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 1-2",
+                "notes": "Berlin, Mittler, 1908. Lu dans la numérisation de la bibliothèque universitaire de Brême. Le livre porte le regard d'un officier de l'armée coloniale allemande."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1908,
+              "to": 1908,
+              "label": "1908"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wahehe serait né chez les peuples voisins, et non chez les Hehe eux-mêmes, selon Ernst Nigmann. Il le rattache au cri « ahäle, ahäle », « l'ennemi recule déjà », qui annonçait les guerriers de Mujugumba et de son fils : les voisins parlaient alors des « hommes ahäle ».",
+            "hypothesisGroup": "origine du nom Wahehe",
+            "sources": [
+              {
+                "title": "Die Wahehe : ihre Geschichte, Kult-, Rechts-, Kriegs- und Jagd-Gebräuche",
+                "author": "Ernst Nigmann",
+                "year": 1908,
+                "url": "https://brema.suub.uni-bremen.de/dsdk/content/titleinfo/1872257",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 1-2",
+                "notes": "Berlin, Mittler, 1908. Lu dans la numérisation de la bibliothèque universitaire de Brême. Le livre porte le regard d'un officier de l'armée coloniale allemande."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1908,
+              "to": 1908,
+              "label": "1908"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wahehe réunit alors des groupes d'origines diverses. Les gens du cœur du royaume se disent « vieux Wahehe » et citent avec fierté leur propre groupe, comme les Wadongwe ou les Wafuagi, selon Ernst Nigmann.",
+            "sources": [
+              {
+                "title": "Die Wahehe : ihre Geschichte, Kult-, Rechts-, Kriegs- und Jagd-Gebräuche",
+                "author": "Ernst Nigmann",
+                "year": 1908,
+                "url": "https://brema.suub.uni-bremen.de/dsdk/content/titleinfo/1872257",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 1-2",
+                "notes": "Berlin, Mittler, 1908. Lu dans la numérisation de la bibliothèque universitaire de Brême. Le livre porte le regard d'un officier de l'armée coloniale allemande."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1891,
+              "to": 1898,
+              "label": "1891-1898"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hehe reste attaché à la résistance contre la conquête allemande : en 1891, les Hehe de Mkwawa tuent près de 290 soldats allemands, et Mkwawa résiste jusqu'à sa mort, selon l'historien Henry A. Mwanzi.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 7 : Initiatives et résistances africaines en Afrique orientale de 1880 à 1914",
+                "author": "Henry A. Mwanzi",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 179",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1875,
+              "to": 1880,
+              "label": "À partir de 1875"
+            },
+            "era": "polity",
+            "statement": "Le nom Hehe devient celui de l'un des royaumes les plus puissants du sud de la Tanzanie, sous Mwinyigumba puis son fils Mkwawa, selon l'historien Isaria N. Kimambo.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 10 : La côte et l'hinterland de l'Afrique orientale de 1845 à 1880",
+                "author": "Isaria N. Kimambo",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 294",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1860,
+              "label": "Voyage de 1857-1858, publié en 1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Wahehe apparaît par écrit chez l'explorateur britannique Richard Burton, qui décrit un peuple installé entre les Wasagara et les Wagogo. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Wahehe",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Richard F. Burton",
+                "role": "explorateur, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa, vol. 1",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://archive.org/details/lakeregionsofcen11860burt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 239",
+                "notes": "Londres, Longman, 1860, récit du voyage de 1857-1859. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un explorateur britannique de son temps."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1850,
+              "label": "Début du XIXe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Hehe ne désigne pas encore un royaume : ce peuple est alors divisé en plus de trente chefferies indépendantes, qui s'unissent face aux raids des Nguni, selon l'historien Albert Adu Boahen. Isaria N. Kimambo note que des recherches plus récentes contestent ce rôle des Nguni.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 3 : Tendances et processus nouveaux dans l'Afrique du XIXe siècle",
+                "author": "Albert Adu Boahen",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 66",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 10 : La côte et l'hinterland de l'Afrique orientale de 1845 à 1880",
+                "author": "Isaria N. Kimambo",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 293",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Uhehe",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du pays des Hehe, sur les hauts plateaux d'Iringa.",
+        "periodLabel": "En usage depuis le XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1908,
+              "to": 1908,
+              "label": "1908"
+            },
+            "era": "colonial",
+            "statement": "Le nom Uhehe désigne le pays des Hehe, que l'officier allemand Ernst Nigmann décrit comme un pays de montagnes au climat frais, riche en eaux courantes et en pâturages.",
+            "sources": [
+              {
+                "title": "Die Wahehe : ihre Geschichte, Kult-, Rechts-, Kriegs- und Jagd-Gebräuche",
+                "author": "Ernst Nigmann",
+                "year": 1908,
+                "url": "https://brema.suub.uni-bremen.de/dsdk/content/titleinfo/1872257",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 3",
+                "notes": "Berlin, Mittler, 1908. Lu dans la numérisation de la bibliothèque universitaire de Brême. Le livre porte le regard d'un officier de l'armée coloniale allemande."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

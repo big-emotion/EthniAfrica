@@ -147,5 +147,143 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Fulɓe Maasina désigne les Fulɓe, ou Peuls, du Maasina, la région du delta intérieur du Niger, au centre du Mali. En français, on dit aussi Peuls du Macina ou du Massina. Le nom de la région est bien plus ancien que l'empire fondé en 1818. On ne sait pas avec certitude d'où vient le nom Maasina ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Fulɓe Maasina",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ffm",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Fulɓe du Maasina, d'après le nom de leur région.",
+        "periodLabel": "Écrit depuis 1655 environ ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Fulɓe Maasina désigne les Fulɓe du delta intérieur du Niger, dont la langue, le fulfulde du Maasina, ou maasinankoore, est une langue du Mali, selon Ethnologue. Le nom de la région est aussi écrit Massina ou Macina ; on ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Fulfulde, Maasinankoore (ffm)",
+                "author": "SIL International, Ethnologue",
+                "year": null,
+                "url": "https://www.ethnologue.com/language/ffm/",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche en accès libre, lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1655,
+              "to": 1655,
+              "label": "Vers 1655"
+            },
+            "era": "polity",
+            "statement": "Le nom Maasina apparaît sous la forme Mâsina dans le Tarikh es-Soudan, la chronique d'Abderrahman es-Sa'di, qui s'arrête en 1655 : il y désigne un pays et ses rois, que des Foulâni, c'est-à-dire des Fulɓe, viennent rejoindre. C'est la plus ancienne trace de ce nom que le projet connaît. Il désigne d'abord un pays, avant de qualifier un groupe de Fulɓe.",
+            "formAsWritten": "Mâsina",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tarikh es-Soudan, traduit de l'arabe par O. Houdas",
+                "author": "Abderrahman es-Sa'di",
+                "year": 1900,
+                "url": "https://archive.org/details/tarikhessoudanpa00sadauoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 281-283",
+                "notes": "Paris, Ernest Leroux. Le traducteur arrête le récit de la chronique en 1655. Lu dans l'exemplaire numérisé de l'université de Toronto le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1655,
+              "to": 1655,
+              "label": "Rapporté vers 1655"
+            },
+            "era": "polity",
+            "statement": "Le nom Maasina viendrait d'une colline appelée Mâsina, sur le territoire du Bâghena-Fâri, où s'installe Maghan, l'ancêtre des rois du pays, venu de Koma, selon le récit d'Abderrahman es-Sa'di.",
+            "hypothesisGroup": "origine du nom Maasina",
+            "sources": [
+              {
+                "title": "Tarikh es-Soudan, traduit de l'arabe par O. Houdas",
+                "author": "Abderrahman es-Sa'di",
+                "year": 1900,
+                "url": "https://archive.org/details/tarikhessoudanpa00sadauoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 281-283",
+                "notes": "Paris, Ernest Leroux. Le traducteur arrête le récit de la chronique en 1655. Lu dans l'exemplaire numérisé de l'université de Toronto le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Peuls du Macina",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "Des auteurs de langue française",
+        "shortLine": "Le nom français, écrit Foulah du Massina dès 1828.",
+        "periodLabel": "Écrit depuis 1828 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1868,
+              "to": 1868,
+              "label": "1868"
+            },
+            "era": "polity",
+            "statement": "Le nom Macina est la graphie qu'emploie l'officier de marine Eugène Mage dans le récit de son voyage, paru en 1868 : il y rapporte qu'El Hadj Omar est entré dans le Macina et s'en est déclaré le maître.",
+            "formAsWritten": "Macina",
+            "sources": [
+              {
+                "title": "Voyage dans le Soudan occidental (Sénégambie-Niger)",
+                "author": "Eugène Mage",
+                "year": 1868,
+                "url": "https://archive.org/details/voyagedansleso00mage",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 8",
+                "notes": "Paris, Hachette. Lu dans l'exemplaire numérisé le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1828,
+              "to": 1828,
+              "label": "1828"
+            },
+            "era": "polity",
+            "statement": "Le nom Peuls du Macina a une forme proche, Foulah du Massina, chez le voyageur René Caillié, qui rencontre en 1828, sur la route de Djenné, des Foulah « natifs du Massina », un pays qu'il place au nord-ouest de Djenné. C'est la plus ancienne trace de ce nom français que le projet connaît. Ces Fulɓe portaient déjà le nom de leur pays avant lui.",
+            "formAsWritten": "Foulah du Massina",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Journal d'un voyage à Temboctou et à Jenné, dans l'Afrique centrale, tome 2",
+                "author": "René Caillié",
+                "year": 1830,
+                "url": "https://archive.org/details/journaldunvoyage02cail",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 159 et p. 217",
+                "notes": "Paris, Imprimerie royale. Lu dans l'exemplaire numérisé le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
