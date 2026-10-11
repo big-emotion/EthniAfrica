@@ -14,6 +14,119 @@
   "spellingAliases": [],
   "familyId": "FLG_BANTU",
   "peoples": [{ "name": "Hunde", "peopleId": "PPL_HUNDE" }],
+  "nameHistory": {
+    "summary": "Le nom kihunde désigne une langue bantoue du Nord-Kivu, en République démocratique du Congo. Il est formé du nom du peuple Hunde et du préfixe ki-, qui sert à nommer les langues. On l'appelle aussi kobi ou rukobi. Nous n'avons pas trouvé de source qui explique le nom Hunde ; nous présentons plus bas sa plus ancienne trace.",
+    "names": [
+      {
+        "nameText": "Kihunde",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "hke",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue : le préfixe ki- devant le nom du peuple Hunde.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom kihunde est formé comme beaucoup de noms de langues bantoues : le préfixe ki- devant le nom du peuple, ici les Hunde. Dans les langues kongo, ki- marque ainsi la langue et ba- les membres du groupe, selon Salikoko Mufwene. On ne sait pas avec certitude d'où vient le nom Hunde ; la fiche du peuple Hunde présente ce peuple.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Hunde (hund1239)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/hund1239",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle la situe en République démocratique du Congo et recense les formes Kihunde, Kobi et Rukobi."
+              },
+              {
+                "title": "Kikongo-Kituba, Atlas of Pidgin and Creole Language Structures Online",
+                "author": "Salikoko S. Mufwene",
+                "year": null,
+                "url": "https://apics-online.info/surveys/58",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section 2",
+                "notes": "Lu le 11 octobre 2026 en texte intégral sur APiCS Online (chapitre de synthèse)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Hunde",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du peuple, noté Wahunde en 1900 sur la rive ouest du lac Kivu.",
+        "periodLabel": "Écrit dès 1900",
+        "accounts": [
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "Rapport publié en 1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom hunde apparaît sous une forme proche, Wahunde, dans le rapport de l'explorateur allemand Richard Kandt sur la rive ouest du lac Kivu, où il parle de la « grande population des Wahunde » d'Uyungu. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "formAsWritten": "Wahunde",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Bericht über meine Reisen und gesammte Thätigkeit in Deutsch-Ostafrika, Mittheilungen von Forschungsreisenden und Gelehrten aus den deutschen Schutzgebieten, vol. 13",
+                "author": "Richard Kandt",
+                "year": 1900,
+                "url": "https://archive.org/details/mittheilungenvon13unse",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 254",
+                "notes": "Berlin, 1900. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Rapport d'un médecin et explorateur allemand sur ses voyages de 1897 à 1899, jusqu'à la rive ouest du lac Kivu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kobi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un autre nom de la langue, avec la forme rukobi, relevé par Glottolog.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom kobi, ou rukobi, figure parmi les noms de la langue que recense Glottolog. Nous n'avons pas trouvé de source qui dise qui l'emploie ni d'où il vient.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Hunde (hund1239)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/hund1239",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle la situe en République démocratique du Congo et recense les formes Kihunde, Kobi et Rukobi."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": "non_vehicular",
     "dialects": [],
