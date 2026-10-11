@@ -96,3 +96,70 @@ test("unverified imagery files are refused before rendering", async () => {
     /imagery/i
   );
 });
+
+const west = JSON.parse(
+  await readFile(
+    new URL("./fixtures/west-areas.sequence.json", import.meta.url)
+  )
+);
+
+async function windowStats(png, cx, cy, size) {
+  const { data } = await sharp(png)
+    .extract({
+      left: cx - size / 2,
+      top: cy - size / 2,
+      width: size,
+      height: size,
+    })
+    .raw()
+    .toBuffer({ resolveWithObject: true });
+  const mean = [0, 0, 0];
+  const lum = [];
+  for (let i = 0; i < data.length; i += 3) {
+    for (let c = 0; c < 3; c++) mean[c] += data[i + c] / (data.length / 3);
+    lum.push(0.2126 * data[i] + 0.7152 * data[i + 1] + 0.0722 * data[i + 2]);
+  }
+  const avg = lum.reduce((a, b) => a + b) / lum.length;
+  const sd = Math.sqrt(
+    lum.reduce((a, b) => a + (b - avg) ** 2, 0) / lum.length
+  );
+  return { mean, sd, max: Math.max(...lum) };
+}
+
+// @req REQ-186
+test("areas, hatching and borders are drawn on the hold frame", async () => {
+  // 6.4 s: the camera has landed and nothing is drawn yet. The sample
+  // points sit inside each area, clear of names, borders and edges.
+  const seq = () => loadSequence(structuredClone(west));
+  const [before, hold] = await Promise.all(
+    [192, 359].map((f) => renderFrame(seq(), f, options()))
+  );
+  const amber = [232, 185, 106];
+  const distance = (rgb) => Math.hypot(...rgb.map((v, i) => v - amber[i]));
+  const a = [
+    await windowStats(before, 466, 614, 16),
+    await windowStats(hold, 466, 614, 16),
+  ];
+  assert.ok(
+    distance(a[1].mean) < distance(a[0].mean) - 15,
+    "certain area A takes its amber fill"
+  );
+  const control = [
+    await windowStats(before, 838, 790, 16),
+    await windowStats(hold, 838, 790, 16),
+  ];
+  assert.ok(
+    Math.hypot(...control[1].mean.map((v, i) => v - control[0].mean[i])) < 8,
+    "ground outside every area is left as it was"
+  );
+  const c = [
+    await windowStats(before, 878, 586, 36),
+    await windowStats(hold, 878, 586, 36),
+  ];
+  assert.ok(c[1].sd > c[0].sd + 10, "uncertain area C is hatched");
+  const border = [
+    await windowStats(before, 890, 919, 24),
+    await windowStats(hold, 890, 919, 24),
+  ];
+  assert.ok(border[1].max > border[0].max + 40, "the quiet border is drawn");
+});

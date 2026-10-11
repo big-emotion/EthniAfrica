@@ -130,7 +130,11 @@ async function prepareImagery(seq, assets) {
   };
 }
 
-function riverPath(camera, coordinates) {
+// The cards' Nuit area inks (board 2) and the water ink for a river's name.
+const INKS = { a: "#e8b96a", b: "#6cc3b5", c: "#e3876a" };
+const WATER_INK = "#8fd3e6";
+
+function linePath(camera, coordinates, close = false) {
   let d = "";
   let pen = false;
   for (const [lon, lat] of coordinates) {
@@ -142,36 +146,80 @@ function riverPath(camera, coordinates) {
     d += `${pen ? "L" : "M"}${p.x.toFixed(2)} ${p.y.toFixed(2)}`;
     pen = true;
   }
-  return d;
+  return close && d ? d + "Z" : d;
 }
 
+const lines = (g) =>
+  g.type === "LineString" ? [g.coordinates] : g.coordinates;
+const rings = (g) =>
+  (g.type === "Polygon" ? [g.coordinates] : g.coordinates).flat();
+
+const featureInk = (f) => (f.kind === "area" ? INKS[f.ink] : WATER_INK);
+
 function titleParts(seq) {
-  const name = seq.features[0]?.name;
-  const at = name ? seq.title.lastIndexOf(name) : -1;
+  const subject = seq.features.find((f) => f.plate) ?? seq.features[0];
+  const [text, feature] = seq.highlight
+    ? [
+        seq.highlight.text,
+        seq.features.find((f) => f.id === seq.highlight.feature),
+      ]
+    : [subject?.name, subject];
+  const at = text ? seq.title.lastIndexOf(text) : -1;
   if (at < 0) return [{ text: seq.title }];
   return [
     { text: seq.title.slice(0, at) },
-    { text: name, water: true },
-    { text: seq.title.slice(at + name.length) },
+    { text, colour: featureInk(feature) },
+    { text: seq.title.slice(at + text.length) },
   ].filter((p) => p.text);
+}
+
+function labelStyle(f) {
+  if (f.plate) return "plate";
+  return f.kind === "area" ? "area" : "water";
 }
 
 function payload(seq, frame) {
   const state = frameState(seq, frame);
   const { camera } = state;
+  const of = (kind) => seq.features.filter((f) => f.kind === kind);
   return {
     centre: VIEW_CENTRE,
     camera,
     grade: state.grade,
     demo: !!seq.demo,
-    rivers: seq.features.map((f) => ({
-      d: riverPath(camera, f.geometry.coordinates),
+    areas: of("area").map((f) => ({
+      d: rings(f.geometry)
+        .map((ring) => linePath(camera, ring, true))
+        .join(""),
+      ink: f.ink,
+      uncertain: f.certainty === "uncertain",
+      opacity: state.features[f.id].opacity,
+    })),
+    borders: of("border").map((f) => ({
+      d: lines(f.geometry)
+        .map((line) => linePath(camera, line))
+        .join(""),
+      strong: f.strength === "strong",
+      opacity: state.features[f.id].opacity,
+    })),
+    rivers: of("river").map((f) => ({
+      d: linePath(camera, f.geometry.coordinates),
       state: state.features[f.id],
     })),
-    labels: seq.features.map((f) => ({
-      name: f.name,
-      opacity: state.labels[f.id],
-      ...project(camera, ...f.labelAt),
+    labels: seq.features
+      .filter((f) => f.kind !== "border")
+      .map((f) => ({
+        name: f.name,
+        style: labelStyle(f),
+        colour: f.kind === "area" ? INKS[f.ink] : null,
+        opacity: state.labels[f.id],
+        ...project(camera, ...f.labelAt),
+      })),
+    names: (seq.names ?? []).map((n) => ({
+      name: n.name,
+      style: n.kind,
+      opacity: state.names[n.name],
+      ...project(camera, n.lon, n.lat),
     })),
     places: (seq.places ?? []).map((p) => ({
       name: p.name,
@@ -180,10 +228,20 @@ function payload(seq, frame) {
       ...project(camera, p.lon, p.lat),
     })),
     title: titleParts(seq),
-    legend: seq.legend.map((item, i) => ({
-      label: item.label,
-      opacity: state.legend[i],
-    })),
+    legend: seq.legend.map((item, i) => {
+      const f = seq.features.find((x) => x.id === item.feature);
+      return {
+        label: item.label,
+        opacity: state.legend[i],
+        swatch:
+          f.kind === "area"
+            ? `${f.certainty}-${f.ink}`
+            : f.kind === "border"
+              ? `border-${f.strength}`
+              : "river",
+        colour: f.kind === "area" ? INKS[f.ink] : "#f3e9da",
+      };
+    }),
     caption: captionLines(seq).map((line) => {
       const at = line.indexOf(" : ");
       return [line.slice(0, at), line.slice(at + 3)];
