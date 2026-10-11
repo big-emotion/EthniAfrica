@@ -181,5 +181,149 @@
       "fieldPath": "peoples",
       "reason": "Le rattachement aux Bambara ne repose que sur une localisation du dictionnaire des jamuw à Mopti, sans marqueur de groupe légendé : nous le donnons comme supposé."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kassambara est un nom de clan porté au Mali, chez les Dogon autour de Bandiagara et chez les Bambara autour de Mopti. En bambara, il s'écrit Kásanbàra. On ne sait pas avec certitude d'où il vient ; nous présentons plus bas la seule explication que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Kassambara",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan dogon et bambara du Mali ; on ne sait pas avec certitude d'où il vient.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kassambara est un nom de clan, que le dictionnaire des noms de clan écrit Kásanbàra. Il le donne chez les Dogon, à Bandiagara, et chez les Bambara, à Mopti, et le tient pour un équivalent de Coulibaly. On ne sait pas avec certitude d'où il vient ; nous présentons plus bas la seule explication que nous connaissons.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet lu le 11 octobre 2026. Entrée Kásanbàra : équivalent Kulibali ; deux groupes, l'un localisé à Bandiagara, l'autre à Mopti."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 80",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe, dirigé par A. Davydov et relu par V. Vydrin. Lu dans le PDF du dépôt de l'université le 11 octobre 2026 ; les passages cités sont traduits par nous. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages et les hypothèses qu'il transmet. Notice Kásanbàra, page 80 : les Dogon à Bandiagara, les Bambara à Mopti, et l'équivalent Kùlibàli."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Kassambara figure, avec Ouologuem, Ongoiba, Dieptilé et Togo, parmi les noms de famille dogon que cite un rapport malien sur la paix.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Autoportrait du Mali — Les Obstacles à la Paix",
+                "author": "Institut malien de recherche action pour la paix et Interpeace",
+                "year": 2015,
+                "url": "https://www.interpeace.org/wp-content/uploads/2015/03/2015_03_02_Mali_Autoportrait_FR.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 27",
+                "notes": "Rapport de recherche-action de l'Institut malien de recherche action pour la paix avec Interpeace, mars 2015, lu le 11 octobre 2026. Son chapitre sur les diversités socioculturelles donne quelques noms de famille par grand groupe, suivis de « etc. » : la liste montre qu'un nom est porté dans un groupe, pas d'où il vient."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kassambara a pour partenaires de plaisanterie les Keïta, les Touré, les Maïga, les Samaké et les Diarra, selon le dictionnaire des noms de clan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 80",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe, dirigé par A. Davydov et relu par V. Vydrin. Lu dans le PDF du dépôt de l'université le 11 octobre 2026 ; les passages cités sont traduits par nous. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages et les hypothèses qu'il transmet. Notice Kásanbàra, page 80, rubrique sinankun : Kéyità, Tùre, Mayga, Sàmakɛ et Jàra."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2010,
+              "to": 2010,
+              "label": "Notée en 2010"
+            },
+            "era": "modern",
+            "statement": "Le nom Kassambara viendrait de kásaa ń bàra, « de moi sort une odeur de poisson ». Un récit y rattache un frère cadet, Coulibaly, qui avait mangé un silure. C'est une explication populaire, notée par le dictionnaire des noms de clan et reprise dans le mémoire d'E. A. Bogacheva.",
+            "hypothesisGroup": "origine du nom Kassambara",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet lu le 11 octobre 2026. Entrée Kásanbàra, datée du 6 mai 2010 : note en russe sur l'étymologie populaire, traduite par nous."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 80",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe, dirigé par A. Davydov et relu par V. Vydrin. Lu dans le PDF du dépôt de l'université le 11 octobre 2026 ; les passages cités sont traduits par nous. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages et les hypothèses qu'il transmet. Notice Kásanbàra, page 80, rubrique « étymologie populaire », tirée de la même entrée du dictionnaire : les deux sources ne comptent que pour une voix."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kasamba figure chez Louis Desplagnes, qui écrit que les hirondelles sont un animal interdit chez les Kasamba. Les sources ne disent pas s'il s'agit du même nom que Kassambara.",
+            "formAsWritten": "Kasamba",
+            "sources": [
+              {
+                "title": "Le plateau central nigérien : une mission archéologique et ethnographique au Soudan français",
+                "author": "Louis Desplagnes",
+                "year": 1907,
+                "url": "https://archive.org/details/leplateaucentral00desp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 350",
+                "notes": "Paris, Émile Larose, 1907. L'auteur, lieutenant d'infanterie coloniale, rend compte d'une mission menée dans la boucle du Niger, autour de Bandiagara et de Djenné. Auteur de l'époque coloniale, cité pour ce qu'il rapporte et pour ses propres hypothèses. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 350, note 1 : « les pigeons sont des animaux Tannas à Djenné, comme les hirondelles chez les Kasamba »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
