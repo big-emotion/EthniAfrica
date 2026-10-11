@@ -92,5 +92,62 @@
       "fieldPath": "homonyms",
       "reason": "la notice exacte du Dictionary of American Family Names, les catalogues bibliographiques et les recherches « Tavares » associées au Cap-Vert n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Tavares est un nom de famille d'origine portugaise, porté au Cap-Vert. Nous présentons plus bas la seule explication de son origine que nous connaissons. On ne sait pas avec certitude depuis quand il est porté au Cap-Vert.",
+    "names": [
+      {
+        "nameText": "Tavares",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un nom de famille d'origine portugaise, porté au Cap-Vert, tiré d'un nom de lieu.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tavares est un nom de famille portugais. Un dictionnaire le rattache à un nom de lieu ; il ne dit rien des familles du Cap-Vert. Nous présentons cette explication plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Tavares Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks et al.",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/tavares?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue en anglais le 11 octobre 2026. La notice fait de Tavares un nom portugais et de l'ouest de l'Espagne, tiré du nom d'au moins sept petits lieux du Portugal appelés Tavares, un toponyme d'origine préromaine."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Publié en 2022"
+            },
+            "statement": "Le nom Tavares viendrait d'un des petits lieux du Portugal appelés Tavares, au moins sept, dont le nom serait plus ancien que la conquête romaine, selon le Dictionary of American Family Names.",
+            "hypothesisGroup": "origine du nom Tavares",
+            "sources": [
+              {
+                "title": "Tavares Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks et al.",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/tavares?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue en anglais le 11 octobre 2026. La notice fait de Tavares un nom portugais et de l'ouest de l'Espagne, tiré du nom d'au moins sept petits lieux du Portugal appelés Tavares, un toponyme d'origine préromaine."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

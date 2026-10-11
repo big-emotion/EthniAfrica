@@ -112,5 +112,97 @@
       "fieldPath": "homonyms",
       "reason": "Les formes Souley, Soulé et Souleymane ont été distinguées dans les recherches onomastiques ; aucune origine indépendante n'a été établie pour constituer un homonyme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Souley est un prénom porté au Niger, qui devient le nom de famille des enfants de celui qui le porte. On ne sait pas avec certitude d'où vient ce prénom : nous ne connaissons aucune étude qui en donne l'origine.",
+    "names": [
+      {
+        "nameText": "Souley",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un prénom du Niger qui devient le nom de famille des enfants ; on ne sait pas d'où il vient.",
+        "periodLabel": "Forme proche écrite dès 1972 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Souley est un prénom d'homme, porté au Niger comme nom de famille par les enfants d'un père qui s'appelle ainsi. On ne sait pas avec certitude d'où vient ce prénom : nous ne connaissons aucune étude qui en donne l'origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les Zamu ou poèmes sur les noms",
+                "author": "Jeanne Bisilliat et Diouldé Laya",
+                "year": 1972,
+                "url": "https://dicames.online/jspui/handle/20.500.12177/2329",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 12",
+                "notes": "Niamey, Centre nigérien de recherche en sciences humaines, 1972. Les zamu sont des poèmes sur les noms que récitent les femmes songhay-zarma ; Jeanne Bisilliat les a recueillis au village de Sarando à partir de 1966, avec l'interprète Halimatu Sibiri, puis les a traduits avec Diouldé Laya. Lu dans le dépôt DICAMES du CAMES le 11 octobre 2026. Page 12 : « Le nom choisi, qui est musulman, sert de prénom à l'enfant. Quant au patronyme, c'est le prénom du père. »"
+              },
+              {
+                "title": "Adamou Biga Souley — United Nations Haiti Memorial",
+                "author": "Nations unies",
+                "year": 2010,
+                "url": "https://www.un.org/en/memorial/haiti/souley.shtml",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "Notice mémorielle des Nations unies, lue le 11 octobre 2026. Elle nomme un policier nigérien, né à Sakey dans le sud-ouest du Niger, qui porte Souley comme nom de famille."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1972,
+              "to": 1972,
+              "label": "Décrit en 1972"
+            },
+            "era": "modern",
+            "statement": "Le nom Souley sert de nom de famille selon la règle songhay-zarma : l'enfant reçoit un prénom musulman, et son nom de famille est le prénom de son père, selon Jeanne Bisilliat et Diouldé Laya.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les Zamu ou poèmes sur les noms",
+                "author": "Jeanne Bisilliat et Diouldé Laya",
+                "year": 1972,
+                "url": "https://dicames.online/jspui/handle/20.500.12177/2329",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 12",
+                "notes": "Niamey, Centre nigérien de recherche en sciences humaines, 1972. Les zamu sont des poèmes sur les noms que récitent les femmes songhay-zarma ; Jeanne Bisilliat les a recueillis au village de Sarando à partir de 1966, avec l'interprète Halimatu Sibiri, puis les a traduits avec Diouldé Laya. Lu dans le dépôt DICAMES du CAMES le 11 octobre 2026. Page 12 : « Le nom choisi, qui est musulman, sert de prénom à l'enfant. Quant au patronyme, c'est le prénom du père. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1966,
+              "to": 1972,
+              "label": "Recueilli à partir de 1966, publié en 1972"
+            },
+            "era": "modern",
+            "statement": "Une forme proche du nom Souley, Suley, figure dans un zamu, un poème sur les noms que récitent les femmes songhay-zarma : celui de Kadiijatu la dit « épouse du juge Suley ». Jeanne Bisilliat l'a recueilli au village de Sarando. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le poème a été noté, pas depuis quand le prénom est donné.",
+            "formAsWritten": "Suley",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les Zamu ou poèmes sur les noms",
+                "author": "Jeanne Bisilliat et Diouldé Laya",
+                "year": 1972,
+                "url": "https://dicames.online/jspui/handle/20.500.12177/2329",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 72-73",
+                "notes": "Niamey, Centre nigérien de recherche en sciences humaines, 1972. Les zamu sont des poèmes sur les noms que récitent les femmes songhay-zarma ; Jeanne Bisilliat les a recueillis au village de Sarando à partir de 1966, avec l'interprète Halimatu Sibiri, puis les a traduits avec Diouldé Laya. Lu dans le dépôt DICAMES du CAMES le 11 octobre 2026. Pages 72-73 : le zamu féminin « Kadiijatu » dit « Alkaali Suley wande », traduit « épouse du juge Suley »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

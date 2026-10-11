@@ -96,5 +96,72 @@
       "fieldPath": "homonyms",
       "reason": "les résultats exacts « Sooprayen », les Indian Immigration Archives du Mahatma Gandhi Institute, les publications de l'Aapravasi Ghat et les catalogues bibliographiques sur l'engagisme à Maurice n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sooprayen est un nom de famille de Maurice, transmis par le père. On ne sait pas avec certitude d'où il vient : aucune source que nous avons lue n'en donne l'origine.",
+    "names": [
+      {
+        "nameText": "Sooprayen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille de Maurice, transmis par le père ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit dès 2014 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sooprayen est un nom de famille mauricien, que l'enfant reçoit de son père comme le veut le droit de Maurice, selon la Commission de réforme du droit. On ne sait pas avec certitude d'où vient ce nom : aucune source que nous avons lue n'en donne l'origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Key Publications of the Law Reform Commission on Women’s Rights — Issue Paper on ‘Nom de famille’",
+                "author": "Law Reform Commission of Mauritius",
+                "year": 2025,
+                "url": "https://lrc.govmu.org/lrc/wp-content/uploads/2025/09/LRC-Newsletter-International-Womens-Day.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 6",
+                "notes": "Law Reform Commission of Mauritius, bulletin de mars 2025, lu le 11 octobre 2026. Page 6 : le résumé de l'Issue Paper « Nom de famille » (LRC_R&P 61, juillet 2013) décrit « the automatic transmission of the father's name to children » et propose de permettre d'y ajouter le nom de la mère."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2010,
+              "to": 2014,
+              "label": "2010, rapporté en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Sooprayen figure dans le compte rendu de l'Assemblée nationale de Maurice du 7 juillet 2014 : un député y rappelle qu'aux élections de 2010, à Rodrigues, un candidat de ce nom s'était déclaré de la communauté hindoue. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand des familles le portent.",
+            "formAsWritten": "Sooprayen",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Soopramanien Sooprayen",
+                "role": "candidat aux élections de 2010 à Rodrigues"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Mauritius National Assembly — Hansard No. 2 of 7 July 2014",
+                "author": "Assemblée nationale de Maurice",
+                "year": 2014,
+                "url": "https://mauritiusassembly.govmu.org/mauritiusassembly/wp-admin/admin-ajax.php?action=wpfd&juwpfisadmin=false&preview=1&task=file.download&token=&wpfd_category_id=108&wpfd_file_id=9113",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 62",
+                "notes": "Compte rendu officiel de la séance du 7 juillet 2014, lu le 11 octobre 2026. Page 62 : un député de Rodrigues rappelle qu'aux élections générales de 2010 son parti présentait Soopramanien Sooprayen, « a citizen of Mauritius by birth, residing in Rodrigues for nearly half a century », qui s'était déclaré de la communauté hindoue."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

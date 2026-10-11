@@ -117,5 +117,227 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches « Taiwo homonym etymology » et « Taiwo surname origin other language » n'ont pas établi une graphie identique d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Taiwo est un nom yoruba du Nigeria que reçoit à la naissance le premier né de deux jumeaux. Il sert aussi de nom de famille, quand on reprend celui d'un père ou d'un ancêtre. Il s'écrit aussi Taiye. Les sources le rattachent toutes à l'idée de goûter le monde le premier ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Taiwo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "yor",
+        "namedBy": null,
+        "shortLine": "Un nom yoruba donné au premier né de deux jumeaux, devenu aussi un nom de famille.",
+        "periodLabel": "Écrit dès 1884 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Taiwo est d'abord un nom de naissance : il désigne le premier né de deux jumeaux, garçon ou fille, que les Yoruba tiennent pour le cadet. Il sert aussi de nom de famille. Les sources expliquent toutes son sens par l'idée de goûter le monde le premier ; nous les présentons séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Lessons from Africa: A Supplement to Middle School Courses in World Cultures, Global Studies, and World Geography",
+                "author": "Merry M. Merryfield (dir.)",
+                "year": 1989,
+                "url": "https://files.eric.ed.gov/fulltext/ED304395.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 47-48",
+                "notes": "ERIC Clearinghouse et Social Studies Development Center, Indiana University, 1989, leçon 5. Lu dans le PDF intégral le 11 octobre 2026. Le tableau « Some Yoruba Names and Their Meanings », attribué à E. B. Ogundimu, donne Taiwo, « also called » Taiye : « First of twin babies, regarded as the younger child by Yoruba »."
+              },
+              {
+                "title": "The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate",
+                "author": "Samuel Johnson",
+                "year": 1921,
+                "url": "https://archive.org/details/the-history-of-the-yorubas-from-the-earliest-times-to-the-beginning-of-the-british-protectorate",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 80",
+                "notes": "Londres, Routledge, 1921, édité par Obadiah Johnson d'après le manuscrit de son frère Samuel Johnson, pasteur yoruba de la Church Missionary Society. Pages lues le 11 octobre 2026 dans un autre exemplaire numérisé de la même édition de 1921 sur archive.org (historyofyorubas00john). Page 80 : « Taiwo », nom du premier-né des jumeaux, garçon ou fille, « a shortened form of To-aiye-wo (have the first taste of the world) » ; le premier-né, envoyé annoncer le second, est tenu pour le cadet."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Décrit en 1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Taiwo devient aussi un nom de famille : des Yoruba instruits prennent comme nom de famille le nom de naissance de leur père, comme Taiwo, à la manière anglaise. Samuel Johnson le regrette, en citant une femme appelée Mrs. Taiwo alors que ni elle ni son mari ne sont nés jumeaux.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate",
+                "author": "Samuel Johnson",
+                "year": 1921,
+                "url": "https://archive.org/details/the-history-of-the-yorubas-from-the-earliest-times-to-the-beginning-of-the-british-protectorate",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 88-89",
+                "notes": "Londres, Routledge, 1921, édité par Obadiah Johnson d'après le manuscrit de son frère Samuel Johnson, pasteur yoruba de la Church Missionary Society. Pages lues le 11 octobre 2026 dans un autre exemplaire numérisé de la même édition de 1921 sur archive.org (historyofyorubas00john). Pages 88-89 : certains Yoruba instruits prennent comme nom de famille le nom de naissance de leur père, « as Taiwo, Idowu, Ige » ; l'auteur cite une femme appelée « Mrs. Taiwo » qui n'est pas née jumelle et regrette « thousands of Taiwos in the land »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Publié en 1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Taiwo serait une forme courte de To-aiye-wo, « goûter le monde le premier » : le premier né serait envoyé en avant pour annoncer l'arrivée de l'autre jumeau, selon Samuel Johnson.",
+            "hypothesisGroup": "origine du nom Taiwo",
+            "sources": [
+              {
+                "title": "The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate",
+                "author": "Samuel Johnson",
+                "year": 1921,
+                "url": "https://archive.org/details/the-history-of-the-yorubas-from-the-earliest-times-to-the-beginning-of-the-british-protectorate",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 80",
+                "notes": "Londres, Routledge, 1921, édité par Obadiah Johnson d'après le manuscrit de son frère Samuel Johnson, pasteur yoruba de la Church Missionary Society. Pages lues le 11 octobre 2026 dans un autre exemplaire numérisé de la même édition de 1921 sur archive.org (historyofyorubas00john). Page 80 : « Taiwo », nom du premier-né des jumeaux, garçon ou fille, « a shortened form of To-aiye-wo (have the first taste of the world) » ; le premier-né, envoyé annoncer le second, est tenu pour le cadet."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Publié en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Taiwo viendrait de tó ayé wò, « celui qui goûte le monde le premier », un nom de circonstance donné à l'aîné des jumeaux, selon le Dictionary of American Family Names.",
+            "hypothesisGroup": "origine du nom Taiwo",
+            "sources": [
+              {
+                "title": "Taiwo Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks et al.",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/taiwo?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue en anglais le 11 octobre 2026. La notice fait de Taiwo un nom de personne yoruba, forme abrégée de tó̩ ayé wò, « one who tastes the world first », nom de circonstance donné traditionnellement à l'aîné des jumeaux."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Taiwo voudrait dire « celui qui goûte le monde, ou la vie » : on le donnerait au premier des jumeaux parce qu'il goûte la vie le premier, selon la base collaborative YorubaNames.",
+            "hypothesisGroup": "origine du nom Taiwo",
+            "sources": [
+              {
+                "title": "Táíwò — YorubaNames",
+                "author": "YorubaNames",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/Ta%CC%81i%CC%81wo%CC%80?lang=yo",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Base collaborative de noms yoruba, lue le 11 octobre 2026. Elle donne le sens « (The one who) tastes the world/life », la décomposition tọ́...wò, « goûter », et ayé, « le monde, la vie », et les variantes Táyé, Táyéwò et Táíyé. Contenu communautaire, sans date de rédaction."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1884,
+              "to": 1884,
+              "label": "1884, rapporté en 1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Taiwo apparaît comme nom de famille dans des lettres que les chefs d'Ibadan adressent à des Yoruba de Lagos, dont D. C. Taiwo ; l'une d'elles lui est envoyée le 26 mai 1884, selon Samuel Johnson qui les rapporte. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est donné aux jumeaux.",
+            "formAsWritten": "Taiwo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "D. C. Taiwo",
+                "role": "destinataire de la lettre, à Lagos"
+              },
+              {
+                "name": "Samuel Johnson",
+                "role": "rapporte ces lettres"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate",
+                "author": "Samuel Johnson",
+                "year": 1921,
+                "url": "https://archive.org/details/the-history-of-the-yorubas-from-the-earliest-times-to-the-beginning-of-the-british-protectorate",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 490-491",
+                "notes": "Londres, Routledge, 1921, édité par Obadiah Johnson d'après le manuscrit de son frère Samuel Johnson, pasteur yoruba de la Church Missionary Society. Pages lues le 11 octobre 2026 dans un autre exemplaire numérisé de la même édition de 1921 sur archive.org (historyofyorubas00john). Pages 490-491 : lettre des chefs d'Ibadan adressée à des Yoruba de Lagos, dont « D. C. Taiwo, Esq. », et seconde lettre envoyée « to Mr. D. C. Taiwo, on May 26th, 1884 ». Samuel Johnson rapporte ces lettres ; le projet n'a pas lu les originaux."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Taiye",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "yor",
+        "namedBy": null,
+        "shortLine": "Une autre forme yoruba du nom Taiwo, donné au premier né de deux jumeaux.",
+        "periodLabel": "Écrit dès 1989 ; porté aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Taiye est une autre forme de Taiwo. La base YorubaNames donne Táyé et Táíyé parmi ses variantes et précise que Táyé est plutôt donné aux filles.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Táíwò — YorubaNames",
+                "author": "YorubaNames",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/Ta%CC%81i%CC%81wo%CC%80?lang=yo",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Base collaborative de noms yoruba, lue le 11 octobre 2026. Elle donne le sens « (The one who) tastes the world/life », la décomposition tọ́...wò, « goûter », et ayé, « le monde, la vie », et les variantes Táyé, Táyéwò et Táíyé. Contenu communautaire, sans date de rédaction."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1989,
+              "to": 1989,
+              "label": "1989"
+            },
+            "era": "modern",
+            "statement": "Le nom Taiye figure comme autre nom de Taiwo, le premier né des jumeaux, dans une liste de noms yoruba attribuée à E. B. Ogundimu et publiée par Merry M. Merryfield. C'est la plus ancienne trace de cette forme que le projet connaît ; le nom est sans doute plus ancien que ce manuel.",
+            "formAsWritten": "Taiye",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Lessons from Africa: A Supplement to Middle School Courses in World Cultures, Global Studies, and World Geography",
+                "author": "Merry M. Merryfield (dir.)",
+                "year": 1989,
+                "url": "https://files.eric.ed.gov/fulltext/ED304395.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 47-48",
+                "notes": "ERIC Clearinghouse et Social Studies Development Center, Indiana University, 1989, leçon 5. Lu dans le PDF intégral le 11 octobre 2026. Le tableau « Some Yoruba Names and Their Meanings », attribué à E. B. Ogundimu, donne Taiwo, « also called » Taiye : « First of twin babies, regarded as the younger child by Yoruba »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
