@@ -142,5 +142,206 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Maraka, ou Marka, désigne des communautés de culture manden du Mali, autour de Ségou, et du Burkina Faso, qui se reconnaissent sous ce nom ; au Burkina Faso, on les appelle aussi Dafin. Les Maninka donnent aussi le nom de Marka aux Soninké. On ne sait pas avec certitude d'où vient le nom Marka ; deux explications sont proposées pour Dafin. Nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Maraka",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que portent ces communautés ; les Maninka le donnent aussi aux Soninké.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Marka désigne l'ensemble de ce peuple, au Burkina Faso comme au Mali, selon Jean-Luc Banworo, qui parle la langue et que citent les linguistes Byron et Annette Harrison. Plusieurs groupes se reconnaissent dans une forme de ce nom, qu'on écrit aussi Meka, Merka, Maraka ou Marakan. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Sociolinguistic survey report for the Marka-Dafin language",
+                "author": "Byron Harrison et Annette Harrison",
+                "year": 2002,
+                "url": "https://www.sil.org/resources/archives/9180",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 4-5",
+                "notes": "SIL Electronic Survey Reports 2002-021, 74 pages, lu le 11 octobre 2026 dans le PDF diffusé par SIL. Les auteurs citent Cyriaque Zie (1985) et Isidore Ouonni (1995), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Marka est aussi celui que les Maninka donnent couramment aux Soninké, à côté de Sarakule, selon Djibril Tamsir Niane.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 141 et p. 160, note 49",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "À la fondation du royaume de Ségou, selon le récit des origines"
+            },
+            "era": "polity",
+            "statement": "Le nom Marka désigne, dans le récit des origines du royaume bambara de Ségou, les Soninké installés dans la région depuis de longs siècles comme marchands, avec qui les nouveaux venus bambara s'associent, de gré ou de force, selon Michel Izard et Joseph Ki-Zerbo.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 12 : Du Niger à la Volta",
+                "author": "Michel Izard et Joseph Ki-Zerbo",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 372",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dafin",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des Marka du Burkina Faso ; deux explications de son origine sont proposées.",
+        "periodLabel": "En usage aujourd'hui au Burkina Faso",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Dafin désigne des Marka dont le territoire s'étend de la vallée du Sourou, au nord, à la région de Bobo-Dioulasso, au sud, selon Michel Izard. Son origine est discutée ; les explications proposées sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 9 : Les peuples et les royaumes de la boucle du Niger et du bassin des Volta du XIIe au XVIe siècle",
+                "author": "Michel Izard",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 261",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Dafin est le plus courant pour les Marka du Burkina Faso, mais il est péjoratif, selon Jean-Luc Banworo, que citent Byron et Annette Harrison.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sociolinguistic survey report for the Marka-Dafin language",
+                "author": "Byron Harrison et Annette Harrison",
+                "year": 2002,
+                "url": "https://www.sil.org/resources/archives/9180",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 4-5",
+                "notes": "SIL Electronic Survey Reports 2002-021, 74 pages, lu le 11 octobre 2026 dans le PDF diffusé par SIL. Les auteurs citent Cyriaque Zie (1985) et Isidore Ouonni (1995), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "Proposée en 1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Dafin viendrait de l'histoire d'un fils guerrier qui voulait se venger, selon l'une des deux explications que donne Cyriaque Zie, qui parle la langue, rapportée par Byron et Annette Harrison.",
+            "hypothesisGroup": "origine du nom Dafin",
+            "sources": [
+              {
+                "title": "Sociolinguistic survey report for the Marka-Dafin language",
+                "author": "Byron Harrison et Annette Harrison",
+                "year": 2002,
+                "url": "https://www.sil.org/resources/archives/9180",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 4-5",
+                "notes": "SIL Electronic Survey Reports 2002-021, 74 pages, lu le 11 octobre 2026 dans le PDF diffusé par SIL. Les auteurs citent Cyriaque Zie (1985) et Isidore Ouonni (1995), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "Proposée en 1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Dafin viendrait du jula da, « bouche », et fin, « noire », parce que les femmes marka se noircissaient la lèvre inférieure et les gencives pour s'embellir, selon Cyriaque Zie et Isidore Ouonni, que rapportent Byron et Annette Harrison.",
+            "hypothesisGroup": "origine du nom Dafin",
+            "sources": [
+              {
+                "title": "Sociolinguistic survey report for the Marka-Dafin language",
+                "author": "Byron Harrison et Annette Harrison",
+                "year": 2002,
+                "url": "https://www.sil.org/resources/archives/9180",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 4-5",
+                "notes": "SIL Electronic Survey Reports 2002-021, 74 pages, lu le 11 octobre 2026 dans le PDF diffusé par SIL. Les auteurs citent Cyriaque Zie (1985) et Isidore Ouonni (1995), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "XIXe siècle, avant la conquête coloniale"
+            },
+            "era": "polity",
+            "statement": "Le nom Dafin s'emploie avec celui de Marka pour des marchands qui, avec les Dioula, parcourent depuis des siècles l'ouest du Burkina Faso ; une famille de marabouts marka venue de Djenné s'y taille un fief autour de Boromo, sous Mamadou Karantao, selon Kwame Arhin et Joseph Ki-Zerbo.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 25 : États et peuples de la boucle du Niger et de la Volta",
+                "author": "Kwame Arhin et Joseph Ki-Zerbo",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 723-724",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

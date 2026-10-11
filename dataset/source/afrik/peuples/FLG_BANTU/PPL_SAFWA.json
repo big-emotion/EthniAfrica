@@ -94,5 +94,65 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Safwa désigne un peuple bantou des montagnes de la région de Mbeya, dans le sud-ouest de la Tanzanie, qui se nomme lui-même Basafwa ; sa langue est l'ishisafwa. En swahili, on dit Wasafwa. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Safwa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "sbk",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple de la région de Mbeya ; son origine n'est pas connue.",
+        "periodLabel": "Écrit dès 1912 sous la forme Basafwa ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Safwa désigne un peuple de Tanzanie et sa langue, que les catalogues appellent aussi ishisafwa, cisafwa ou kisafwa, selon Glottolog. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Safwa (safw1238)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/safw1238",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle recense les formes Cisafwa, Ishisafwa, Kisafwa et Safwa. La plus ancienne référence qu'elle cite date de 1926."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Safwa apparaît sous la forme Basafwa dans l'histoire de la mission morave du Nyassa écrite par J. Taylor Hamilton : les Basafwa vivent dans les montagnes au nord du mont Rungwe, longtemps soumis au chef sangu Merere, et certains se sont installés plus au sud, chez les Nyakyusa, où une querelle les oppose fin 1893 à un chef voisin. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Basafwa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Twenty Years of Pioneer Missions in Nyasaland : a History of Moravian Missions in German East Africa",
+                "author": "J. Taylor Hamilton",
+                "year": 1912,
+                "url": "https://archive.org/details/twentyyearsofpio00hami",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 21-22 et p. 28",
+                "notes": "Bethlehem (Pennsylvanie), Society for Propagating the Gospel, 1912. Histoire de la mission morave du Nyassa écrite par un de ses évêques. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

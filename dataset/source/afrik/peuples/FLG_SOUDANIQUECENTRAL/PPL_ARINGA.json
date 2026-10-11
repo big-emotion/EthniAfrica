@@ -124,5 +124,63 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Aringa désigne un peuple de langue soudanique centrale du nord-ouest de l'Ouganda, dans le district de Yumbe, qui se nomme lui-même Aringa. Sa langue est parfois appelée « bas lugbara ». On ne sait pas avec certitude d'où vient ce nom ni quand il a été écrit pour la première fois ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Aringa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "luc",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple du nord-ouest de l'Ouganda ; son origine n'est pas connue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Aringa désigne un peuple du nord-ouest de l'Ouganda et sa langue, que les catalogues appellent aussi « bas lugbara », selon Glottolog. On ne sait pas avec certitude d'où vient ce nom, et nous n'avons pas trouvé sa plus ancienne trace écrite.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Aringa (arin1244)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/arin1244",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle recense les formes Aringa et Low Lugbara."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1995,
+              "to": 1995,
+              "label": "Depuis 1995"
+            },
+            "era": "modern",
+            "statement": "Le nom Aringa figure dans la Constitution de l'Ouganda de 1995, sur la liste des communautés autochtones du pays telles qu'elles existaient au 1er février 1926.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution de la République d'Ouganda, 1995, telle que modifiée jusqu'en 2017 — troisième annexe",
+                "author": "République d'Ouganda",
+                "year": 1995,
+                "url": "https://www.constituteproject.org/constitution/Uganda_2017",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Texte publié par Constitute Project, lu le 11 octobre 2026. La troisième annexe, « Uganda's indigenous communities as at 1st February, 1926 », place Aringa en quatrième position, entre Alur et Baamba."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

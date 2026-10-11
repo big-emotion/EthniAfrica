@@ -131,5 +131,201 @@
         "source_kind": "ngo"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Grebo désigne un peuple de langue krou du sud-est du Liberia, autour du cap des Palmes, et de l'ouest de la Côte d'Ivoire, qui se nomme lui-même Grebo ou Glebo. Une forme proche, Eguorebo, est écrite par un navigateur portugais au début du XVIe siècle. Une tradition grebo explique le nom par le singe gre ; nous la présentons plus bas avec les traces du nom.",
+    "names": [
+      {
+        "nameText": "Grebo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "grb",
+        "namedBy": null,
+        "shortLine": "Le nom du peuple du cap des Palmes ; une forme proche est écrite vers 1506.",
+        "periodLabel": "Écrit sous une forme proche vers 1506 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Grebo désigne un peuple de la côte, autour du cap des Palmes, et sa langue krou. Une tradition rapportée en 1860 l'explique par le nom d'un singe ; d'autres explications ne sont pas documentées dans les sources que nous avons lues.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Dictionary of the Grebo Language",
+                "author": "John Payne",
+                "year": 1860,
+                "url": "https://archive.org/details/adictionarygreb00payngoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 3",
+                "notes": "New York, E. O. Jenkins, 1860. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur était évêque de la mission épiscopale du cap des Palmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "1910"
+            },
+            "era": "modern",
+            "statement": "Le nom Grebo figure dans la liste des révoltes contre le gouvernement libérien : les Grebo se soulèvent en 1910, et les Gbolobo Grebo de 1916 à 1918, selon Monday B. Akpan.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 11 : Le Libéria et l'Éthiopie, 1880-1914 : la survie de deux États africains",
+                "author": "Monday B. Akpan, avec Abeodu B. Jones et Richard Pankhurst",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 298",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "Rapportée en 1860"
+            },
+            "era": "modern",
+            "statement": "Le nom Grebo viendrait du singe gre : quand une partie du peuple partit en pirogue vers l'ouest, ceux qui franchirent les vagues en bondissant prirent ce nom, et ceux dont les pirogues chavirèrent reçurent un nom tiré de wore, « chavirer ». C'est la tradition que rapporte le missionnaire John Payne.",
+            "hypothesisGroup": "origine du nom Grebo",
+            "sources": [
+              {
+                "title": "A Dictionary of the Grebo Language",
+                "author": "John Payne",
+                "year": 1860,
+                "url": "https://archive.org/details/adictionarygreb00payngoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 3",
+                "notes": "New York, E. O. Jenkins, 1860. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur était évêque de la mission épiscopale du cap des Palmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "statement": "Le nom Grebo est écrit Krḗbo ou Grḗbo par le linguiste Sigismund Koelle, qui ajoute qu'on appelle communément ce parler « Fish-Krou », du nom d'une ville de la côte.",
+            "formAsWritten": "Krḗbo",
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "section III-A-4",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous le parler « Krḗbo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1843,
+              "to": 1843,
+              "label": "1843, publié en 1845"
+            },
+            "era": "colonial",
+            "statement": "Le nom Grebo désigne une « grande tribu » qui vit au cap des Palmes, au milieu des colons de Maryland in Liberia, dans le journal d'un officier de la marine des États-Unis passé là en octobre 1843. Il décrit les centaines de cases coniques de leur ville.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Journal of an African Cruiser",
+                "author": "Horatio Bridge, publié par Nathaniel Hawthorne",
+                "year": 1845,
+                "url": "https://archive.org/details/journalafrican00bridgrich",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 37-38",
+                "notes": "New York et Londres, Wiley and Putnam, 1845. Livre paru sans nom d'auteur, « par un officier de la marine des États-Unis ». Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1506,
+              "to": 1508,
+              "label": "Vers 1506-1508"
+            },
+            "era": "polity",
+            "statement": "Le nom Grebo apparaît sous une forme proche, Eguorebo, chez le navigateur portugais Duarte Pacheco Pereira : au cap des Palmes, il rencontre des populations qu'il nomme ainsi, et qui « ne sont autres que les Grebo », selon Pierre Kipré. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Eguorebo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Duarte Pacheco Pereira",
+                "role": "navigateur portugais, auteur de l'Esmeraldo de situ orbis"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 13 : Des lagunes ivoiriennes à la Volta",
+                "author": "Pierre Kipré",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 354",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC. L'auteur cite l'Esmeraldo de situ orbis, écrit entre 1506 et 1508 ; nous n'avons pas lu ce texte nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1479,
+              "to": 1500,
+              "label": "Fin du XVe siècle"
+            },
+            "era": "polity",
+            "statement": "On parle alors de peuples de la côte, entre le cap Mesurado et le cap Lahou, que décrivent les premiers navigateurs européens ; leurs descriptions font penser aux Krou, aux Bassa et aux Grebo, selon Christophe Wondji.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 13 : Les États et les cultures de la côte de Haute-Guinée",
+                "author": "Christophe Wondji",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 417-418",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1974,
+              "to": 1974,
+              "label": "Proposée en 1974"
+            },
+            "era": "modern",
+            "statement": "Le nom Grebo désigne l'un des groupes qui se seraient formés au XVIe siècle, quand les Krou du Liberia se divisèrent en Bassa, Krahn et Grebo, selon C. Behrens, que cite Christophe Wondji.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 13 : Les États et les cultures de la côte de Haute-Guinée",
+                "author": "Christophe Wondji",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 425",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC. L'auteur résume C. Behrens, 1974 ; nous n'avons pas lu ce texte nous-mêmes."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
