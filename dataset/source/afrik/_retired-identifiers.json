@@ -677,5 +677,75 @@
     "successorId": "PPL_NYANJA",
     "reason": "Not one people: « Nyasa », like nyanja, means the lake, and the fiche mixed the Manda and the Mwera with the Nyanja. Folded in: Wanyasa, the Arabs' name for the lake people (Livingstone 1865, Weule 1906), as an exonym and a name-history entry of PPL_NYANJA, with the Britannica (Malawi) and Joshua Project (Nyanja, Chewa in Malawi) sources. Its Tanzanian sense goes to PPL_MPOTO, which Joshua Project calls « Mpoto, Nyasa in Tanzania »: the Tanzanian Nyasa sub-group and the Mbamba Bay zone. Not carried: the « Nyasa » name entry, whose Scott (1892) accounts the keeper already holds on Anyanja; ISO mjh, Mwera (Nyasa), which Glottolog classes in the Nyanja group and no keeper speaks for; the Tonga and Tumbuka lines, other peoples; the Ethnologue and Glottolog entries for Mwera (Nyasa). Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
     "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_ARI",
+    "successorId": "PPL_AARI",
+    "reason": "Same people: Ari is a spelling of Aari, whose fiche already holds the written name history (wave 8), ISO aiw, the dialects and the Ethiopian census. Folded in: the forms Ara and Aro, which Glottolog lists for the language. The FLG_OMOTIQUE member list now points at PPL_AARI. Not carried: « Aarai », which no source opened gives; Baco and Ubamer, already the keeper's sub-groups; its Joshua Project and PeopleGroups figures, sources the keeper already cites. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_BERI",
+    "successorId": "PPL_ZAGHAWA",
+    "reason": "Same people: Beri is the self-name of the Zaghawa, which the keeper already gives, with the name history (wave 8). Folded in: Libya as a current country, with the Joshua Project page « Zaghawa in Libya ». Not carried: Zakhawa and Duguwa, which no source it cites gives; the Unicode script proposal (untyped, needs review) and two memoirs (Daoud Hari, Halima Bashir) that only described the conflict; its sub-groups and dialects, already the keeper's. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_MAHN",
+    "successorId": "PPL_MANO",
+    "reason": "Same people: Mahn is a French spelling of Maan, the Mano of Liberia and Guinea; the fiche also sat in the wrong family (Krou instead of Mande). Folded in: the Ethnologue entry for Maan (mev), which the keeper lacked. Not carried: « Mahn » and « Manne », which no source it cites gives; Omniglot; Joshua Project pages the keeper already cites. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_MWANGA",
+    "successorId": "PPL_NAMWANGA",
+    "reason": "Same people: Mwanga is a short form of Namwanga (Winamwanga), already an exonym of the keeper, which holds the name history (wave 8). Folded in: the PeopleGroups.org page « Mwanga of Zambia ». Not carried: Chalo Chatu's language page and a blog post (Afrikan Princess); Joshua Project and Glottolog, already the keeper's. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_SANGO",
+    "successorId": "PPL_SANGO_SCT",
+    "reason": "Same people: the Sango of the Ubangi, whose fiche holds the name history (wave 8). The Central African and Congolese country rows now point at the keeper, and the Central African rows take its family. Folded in: the APiCS survey of Sango and the Joshua Project page « Sango in Central African Republic ». Not carried: ISO ngb, the language of the Ngbandi; a news site (needs review); 101 Last Tribes, Ethnologue and the CIA World Factbook, already the keeper's. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_BABUR",
+    "successorId": "PPL_BURA",
+    "reason": "Same people: Babur is the Hausa name of the Bura and Pabir of Biu, which the keeper gives, with Babur and Pabir as names in its name history (wave 8). Nothing else to carry: its names, sub-groups, dialects and every source were already the keeper's. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_KOULOUGO",
+    "successorId": "PPL_KOULANGO",
+    "reason": "Same people: a second Kulango fiche. Folded in: the Ethnologue entries for Bondoukou Kulango (kzc) and the Kulango subgroup, and the Joshua Project page « Kulango, Bondoukou in Cote d'Ivoire ». Not carried: « Coolan », and the Gbin, Loro and Nafana lines, which no source it cites gives; an art gallery page (needs review) and a Facebook post; 101 Last Tribes and Joshua Project Bouna, already the keeper's. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_KLAO",
+    "successorId": "PPL_KRU",
+    "reason": "Same people: Klao is the self-name of the Kru, which the keeper gives, with the name history (wave 8). Folded in: Minority Rights Group (Liberia), the Journal of African History article on Kru mariners, and the US Department of Justice country report of 2013. Not carried: the diaspora towns as current countries; Qiraat Africa; an ArcGIS story map (needs review); Britannica, already the keeper's. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_LALA_LENJE",
+    "successorId": "PPL_LENJE",
+    "reason": "Same people: the Lenje of Central Zambia, whose fiche holds the name history (wave 8); the hyphenated name was a classification label, not a people. Folded in: Boswell (2008) on Lala-Lamba ethnohistory. Not carried: Explore Lusaka (a tour business) and the sources the keeper already cites. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_MANJAK_BAINUK",
+    "successorId": "PPL_MANJAK",
+    "reason": "Not one people: a fiche that joined the Manjak and the Bainuk. Its Manjak part was already PPL_MANJAK's (names, mfv, countries, Joshua Project, Ethnologue), and its Bainuk part already PPL_BAINOUK's (names, bcb, Gambia, the Joshua Project and Djola Society pages). The Gambian country row is split into a Manjak row (PPL_MANJAK) and a Bainouk row (PPL_BAINOUK). Not carried: Van Binsbergen's page (needs review) and an Ethnologue home page with no entry. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-11"
   }
 ]

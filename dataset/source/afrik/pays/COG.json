@@ -619,7 +619,7 @@
         "name": "Sangha",
         "selfAppellation": "Sangha",
         "exonyms": ["Sangha (terme utilisé par les Européens)"],
-        "peopleId": "PPL_SANGO",
+        "peopleId": "PPL_SANGO_SCT",
         "mainRegion": "Sangha, Likouala",
         "languages": ["Sangha", "français", "lingala"],
         "languageFamily": "FLG_NIGERCONGO",

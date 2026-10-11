@@ -116,6 +116,12 @@
         "url": "https://www.scriptureearth.org/00i-Scripture_Index.php?iso=mev",
         "tier": "referenced",
         "source_kind": "missionary_database"
+      },
+      {
+        "title": "Ethnologue – Maan language (mev), SIL International, 2024",
+        "url": "https://www.ethnologue.com/language/mev/",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   },

@@ -27,9 +27,11 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * African Voice, was typed as press when it moved to PPL_FULA. 1056 -> 1047
  * the same day: nine untyped citations left with the twenty-four duplicate
  * people fiches of waves 4 and 5; the untyped ones carried into a keeper keep
- * their count.
+ * their count. 1047 -> 1037 on 2026-10-11: ten untyped citations left with the
+ * duplicate people fiches folded after wave 8; the one carried to the new
+ * Afizere fiche keeps its count.
  */
-export const UNTYPED_SOURCE_RATCHET = 1047;
+export const UNTYPED_SOURCE_RATCHET = 1037;
 
 export interface UntypedSource {
   file: string;

@@ -110,6 +110,12 @@
         "url": "https://glottolog.org/resource/languoid/id/lenj1248",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Boswell, D. – Chipimpi, Vulgar Clans, and Lala-Lamba Ethnohistory (reference aux Lenje), 2008",
+        "url": "https://scholarexchange.furman.edu/cgi/viewcontent.cgi?article=1001&context=ant-publications",
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   },

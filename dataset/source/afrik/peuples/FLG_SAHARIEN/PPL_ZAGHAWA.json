@@ -2,7 +2,7 @@
   "id": "PPL_ZAGHAWA",
   "nameMain": "Zaghawa",
   "languageFamilyId": "FLG_SAHARIEN",
-  "currentCountries": ["TCD", "SDN"],
+  "currentCountries": ["TCD", "SDN", "LBY"],
   "classificationStatus": "contested",
   "content": {
     "appellations": {
@@ -22,7 +22,7 @@
       "linguisticFamily": "FLG_SAHARIEN",
       "ethnoLinguisticGroup": "Saharien oriental (branche nilo-saharienne)",
       "historicalRegion": "Dar Zaghawa (nord-est du Tchad et nord-ouest du Soudan, Darfour), plateau de l'Ennedi, région du Kanem",
-      "currentCountries": ["TCD", "SDN"]
+      "currentCountries": ["TCD", "SDN", "LBY"]
     },
     "ethnicities": [
       "Kube (Kobé, sous-groupe principal ; clans Kapka, Kige, Kuba ; zones : Iriba au Tchad, nord du Darfour au Soudan)",
@@ -131,6 +131,12 @@
         "url": "https://minorityrights.org/country/chad/",
         "tier": "referenced",
         "source_kind": "ngo"
+      },
+      {
+        "title": "Joshua Project — Zaghawa in Libya",
+        "url": "https://joshuaproject.net/people_groups/16080/LY",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   },

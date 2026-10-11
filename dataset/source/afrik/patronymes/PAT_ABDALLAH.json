@@ -18,6 +18,19 @@
         {
           "countryId": "COM",
           "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "SDN",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
+      ]
+    },
+    {
+      "spelling": "Abdalla",
+      "attestations": [
+        {
+          "countryId": "SDN",
+          "sourceRefs": ["afrik-candidate-queue"]
         }
       ]
     }
@@ -60,6 +73,11 @@
     },
     {
       "countryId": "COM",
+      "status": "attested",
+      "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "countryId": "SDN",
       "status": "attested",
       "sourceRefs": ["afrik-candidate-queue"]
     }

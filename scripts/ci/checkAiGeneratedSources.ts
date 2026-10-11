@@ -46,9 +46,10 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * oral_needed and 52 sources replaced. 1241 -> 1231 on 2026-10-11: the
  * candidate-queue stubs of the family-name fiches folded after wave 7 left
  * with them; where a spelling rested on the queue alone, an opened source
- * now attests it on the keeper.
+ * now attests it on the keeper. 1231 -> 1228 on 2026-10-11: the candidate-queue
+ * stubs of the three family-name fiches folded after wave 9 left with them.
  */
-export const UNREVIEWED_AI_GENERATED_RATCHET = 1231;
+export const UNREVIEWED_AI_GENERATED_RATCHET = 1228;
 
 export interface AiGeneratedSourcesResult {
   ok: boolean;

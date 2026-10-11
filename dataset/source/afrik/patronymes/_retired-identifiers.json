@@ -75,5 +75,26 @@
     "successorId": "PAT_CISSE",
     "reason": "Sesay is the Sierra Leone spelling of Cissé. Folded in: the spelling Sesay and Sierra Leone as a country (candidate queue).",
     "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_MOUSSA",
+    "successorId": "PAT_MUSA",
+    "reason": "Moussa is the French spelling of Musa, which the keeper's summary already names. Folded in: the spelling Moussa in Niger (Behind the Name; the Niger council of ministers of 9 September 2023), Musa in Niger (Behind the Name), Niger as a country, the supposed Zarma link with a gap saying why it is only supposed, and the Behind the Name claim. Not carried: the candidate-queue stub, which the keeper did not cite.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_ABDALLA",
+    "successorId": "PAT_ABDALLAH",
+    "reason": "Abdalla is the Sudanese spelling of Abdallah. Folded in: the spellings Abdalla and Abdallah in Sudan and Sudan as a country, on the candidate queue the keeper already cites.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_DA_SILVA",
+    "successorId": "PAT_SILVA",
+    "reason": "da Silva is a form of Silva, which the keeper already gives. Folded in: the Angola attestation of Silva and da Silva, and Angola as a country, on the candidate queue the keeper already cites.",
+    "decidedOn": "2026-10-11"
   }
 ]

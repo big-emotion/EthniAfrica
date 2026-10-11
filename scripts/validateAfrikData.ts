@@ -2503,7 +2503,9 @@ export function checkSourceIdentity(datasetRoot: string): ValidationResult {
 // retired fiches' Factbook citations with them.
 // 125 -> 123 on 2026-10-11: the Papelo and Songhay macro-group fiches, folded
 // in waves 6 and 7, took their Factbook citations with them.
-export const RETIRED_CIA_FACTBOOK_URL_CEILING = 123;
+// 123 -> 122 on 2026-10-11: the second Sango fiche, folded after wave 8, took
+// its Factbook citation with it.
+export const RETIRED_CIA_FACTBOOK_URL_CEILING = 122;
 
 const LIVE_CIA_FACTBOOK =
   /cia\.gov\/(?:library\/publications\/)?the-world-factbook/i;
@@ -4423,7 +4425,10 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // Ronga, Attié, Luo-Bantu) were folded and retired with the keys they lacked.
   // 6514 -> 6469 on 2026-10-11: five duplicate fiches of wave 6 (Lala-Bisa,
   // Papelo, Songhay macro-group, Krahn, Nyasa) were folded and retired.
-  peuple: 6469,
+  // 6469 -> 6385 on 2026-10-11: ten duplicate fiches of wave 8 were folded and
+  // retired with the keys they lacked; the Afizere fiche split from Jarawa
+  // carries every key.
+  peuple: 6385,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next
@@ -4888,7 +4893,9 @@ export function checkCountryFamilyReferences(
  */
 // 8 -> 7 on 2026-10-11: GHA listed PPL_GURMA, whose currentCountries omitted
 // Ghana; the fiche was folded into PPL_GOURMANTCHE, which counts Ghana.
-export const COUNTRY_PEOPLE_MEMBERSHIP_CEILING = 7;
+// 7 -> 6 on 2026-10-11: COG listed PPL_SANGO, whose currentCountries omitted
+// Congo; the fiche was folded into PPL_SANGO_SCT, which counts it.
+export const COUNTRY_PEOPLE_MEMBERSHIP_CEILING = 6;
 
 export function checkCountryPeopleMembership(
   datasetRoot: string,

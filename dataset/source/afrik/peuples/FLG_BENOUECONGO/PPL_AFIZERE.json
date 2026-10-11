@@ -1,0 +1,242 @@
+{
+  "id": "PPL_AFIZERE",
+  "nameMain": "Afizere",
+  "languageFamilyId": "FLG_BENOUECONGO",
+  "currentCountries": ["NGA"],
+  "classificationStatus": "contested",
+  "content": {
+    "appellations": {
+      "mainName": "Afizere",
+      "selfAppellation": "Afizere (Afizarek)",
+      "exonyms": [
+        "Jarawa",
+        "Jarawan Dutse (Jarawa des collines)",
+        "Hill Jarawa",
+        "Fuganang"
+      ],
+      "originOfExonyms": "Jarawa est le nom que leur donnaient les Haoussa et les rapports coloniaux ; le recueil de Temple, en 1919, parle des Jarawa des collines, comme ceux de Fobur et de Shere. Le catalogue Glottolog donne Jarawan Dutse et Hill Jarawa parmi les autres noms de leur langue, l'izere. Les Zandi et les Gashish les appellent Fuganang, selon le site de la communauté afizere.",
+      "whyProblematic": "Le nom Jarawa désigne aussi d'autres peuples : les Jarawa de l'État de Bauchi, qui parlent d'autres langues, et un peuple des îles Andaman, en Inde. C'est l'une des raisons pour lesquelles le groupe préfère le nom Afizere.",
+      "contemporaryUsage": "Jarawa reste employé dans des publications nigérianes et des documents administratifs. Le groupe préfère de plus en plus Afizere pour se distinguer des autres peuples appelés Jarawa. Il célèbre chaque année l'Afizere Cultural Festival.",
+      "linguisticFamily": "FLG_BENOUECONGO",
+      "ethnoLinguisticGroup": "Benue-Congo, langues du Plateau, groupe zarique : langue izere (izr), selon Glottolog",
+      "historicalRegion": "Collines autour du plateau de Jos, dans l'État du Plateau (Jos East, Jos North, Jos South, Mangu), au Nigeria",
+      "currentCountries": ["NGA"]
+    },
+    "ethnicities": [
+      "Afizere de l'État du Plateau (Jos East, Jos North, Mangu, Jos South)",
+      "Lignages des cinq familles royales : Fobur, Forsum, Maigemu, Shere, Federe"
+    ],
+    "origins": {
+      "ancientOrigins": "Les Afizere sont un peuple du plateau central du Nigeria. Selon une tradition rapportée par des sites de la communauté, leur ancêtre fondateur Yalam aurait quitté la région du Bornou, se serait établi vers Kaltungo, dans l'actuel État de Gombe, puis dans la région de Chawai, au sud de l'État de Kaduna. De là, les Afizere se seraient dispersés vers le plateau de Jos.",
+      "formationPeriod": "La tradition place leur installation sur le plateau de Jos au XVIIe siècle. Au XIXe siècle, les Afizere vivaient sur les collines autour du plateau, qui les protégeaient des attaques venues de l'émirat de Bauchi.",
+      "migrationRoutes": [
+        "Region de Bornou-Tchad (origine ancestrale) — periode du Shehu Ali Ghaji (XVe-XVIe siecle)",
+        "Kaltungo (actuel etat de Gombe) — premier etablissement au XVIIe siecle",
+        "Region de Chawai (Kaduna du Sud) — etablissement intermediaire",
+        "Plateau de Jos et etat de Bauchi — expansion finale aux XVIIe-XIXe siecles"
+      ],
+      "historicalSettlementZones": [
+        "Région de Chawai, sud de l'État de Kaduna (étape avant Jos, selon la tradition)",
+        "Jos East, Jos North, Mangu, Jos South (État du Plateau)",
+        "Villes principales : Dong, Tudun Wada (Gyese), Kabong, Rikkos, Fudawa, Kwanga, Fobur, Angware, Gwafan (Lamingo), Shere, Zandi"
+      ],
+      "unificationsOrDivisions": "Les Afizere ne furent jamais réunis sous un royaume unique. Les seize districts traditionnels sont représentés par cinq familles royales (Fobur, Forsum, Maigemu, Shere, Federe).",
+      "externalInfluences": "Le jihad peul de 1804-1808 et l'émirat de Bauchi poussent les Afizere à se replier sur les collines. Le haoussa sert de langue de commerce. Au XXe siècle, des missions protestantes introduisent le christianisme.",
+      "majorHistoricalEvents": "XVIIe siècle : installation sur le plateau, selon la tradition. XIXe siècle : repli sur les collines du plateau de Jos. 1907 : arrivée des premiers missionnaires de la Sudan United Mission à Panyam. Festivals annuels : Afizere Cultural Festival, Kerewa (moisson), Akarawa (début de la saison agricole)."
+    },
+    "organization": {
+      "traditionalPoliticalSystem": "Systeme de chefferies traditionnel et gerontocratique dirige par un Agwom (chef qui est aussi grand pretre du peuple). L'Agwom est assiste de cinq chefs de district representant les cinq familles royales (Fobur, Forsum, Maigemu, Shere, Federe). Chaque district regroupe 6 a 12 villages. L'Agwong Kuwop est le grand pretre et l'Atsi est le pretre. La societe est decentralisee et republicaine.",
+      "clanOrganization": "Organisation en 16 districts traditionnels avec des structures claniques patrilineaires. Chaque district est une combinaison de lignages issus des cinq familles royales. Le mariage traditionnel implique des verifications de lignage, des negociations de liste nuptiale et de dot.",
+      "ageClassSystems": null,
+      "roleOfLineages": "Les lignages patrilineaires determinent l'appartenance aux familles royales et les droits traditionnels. Les chefs sont designes parmi les cinq familles royales representant les cinq districts principaux.",
+      "religiousAuthority": "Système traditionnel : le dieu créateur suprême Adakunom (père du soleil, ou soleil tout-puissant), source de vie et de santé, et des dieux mineurs qui servent d'intermédiaires. Esprits bénéfiques (Itseng Iseng, esprits rouges ou blancs) et maléfiques (Afere, esprits noirs). Depuis le XXe siècle, le christianisme est majoritaire."
+    },
+    "languages": {
+      "mainLanguage": "Izere (izr)",
+      "isoCodes": ["izr"],
+      "dialects": [
+        "Ibor (dialecte izere parlé dans le district de Fobur)",
+        "Isum (dialecte izere des villages de Forsum)",
+        "Iganang (dialecte izere de Shere)"
+      ],
+      "vehicularRole": "L'izere est la langue des Afizere. Le haoussa sert de langue commune dans la région, et l'anglais est la langue officielle du Nigeria."
+    },
+    "culture": {
+      "majorRites": "Afizere Cultural Festival (celebre annuellement). Kerewa (festival de la moisson, celebre en saison de recoltes). Akarawa (festival du debut de la saison agricole). Rites de passage : mariage traditionnel (visites formelles des familles, verification des lignages, negociation de la dot, ceremonie traditionnelle). Accession au pouvoir des chefs (Agwom) : port du kukpra et de l'akbong. Rites funeraires : danse Asurbe uniquement lors des funerailles d'une personne agee. Bapteme et noms symboliques attribues selon les circonstances de naissance.",
+      "symbols": "Couleurs traditionnelles afizere : vert (naya — agriculture), blanc (cha'an — paix), jaune (izizere — la langue), noir (aga'ab — force), coquillages (icribi — richesse). Vetements cerimonieaux : les rois portent le kukpra et se distinguent par une coupe de cheveux et l'akbong (baton royal, un fil pour le roi, deux fils pour le pretre). Adakunom (le soleil tout-puissant) comme symbole cosmologique supreme.",
+      "artsAndMusic": "Danses traditionnelles : Asharuwa (jeunes hommes et adultes, toutes occasions ; groupes ayant represente la culture afizere aux USA, UK, Canada, Allemagne, Afrique du Sud, Ukraine, Kenya). Amata (femmes, toutes occasions). Agba (hommes, lors des ceremonies royales et des coronations). Agafu (hommes, toutes occasions). Apanga (royaute uniquement, ceremonies et coronations). Natoo abarshi (hommes, lors des activites agricoles). Musique avec tambours et chants. Artisanat : sculpture sur bois, poterie, tissage. Nourriture traditionnelle : tuwo (bouillie de mais ou sorgho) avec miyan kubewa (sauce gombo) ; Akarek (bouillie de farine de mais) ; kuka (sauce de feuilles de baobab).",
+      "spiritualities": "Religion traditionnelle : dieu créateur suprême Adakunom (père du soleil), source de vie et de santé. Des dieux mineurs servent d'intercesseurs. Esprits bénéfiques (Itseng Iseng) et maléfiques (Afere). Christianisme : religion majoritaire, introduit par des missions protestantes au XXe siècle."
+    },
+    "historicalRole": {
+      "kingdomsOrChiefdoms": "Les Afizere n'ont jamais ete unifies sous un royaume unique. Societe decentralisee et republicaine organisee en 16 districts independants avec chefferies locales (Agwom). Cette decentralisation a renforce la resilience culturelle face a la pression jihadiste du XIXe siecle. Chaque district maintient ses traditions et sa chefferie sous l'autorite supreme de l'Agwom.",
+      "relationsWithNeighbors": "Au nord : Haoussa et Jarawan Dass. A l'est et au sud-est : Zari, Zaar et Pyem. Au sud et sud-ouest : Berom. A l'ouest : Irigwe et Bache (Rukuba). Relations complexes avec les Haoussa (influence linguistique, comerciale) et les Peuls (conflits du XIXe siecle). Alliance culturelle informelle avec les groupes du plateau de Jos.",
+      "conflictsOrAlliances": "Au XIXe siècle, les Afizere résistent aux incursions venues de l'émirat de Bauchi en se repliant sur les collines.",
+      "diaspora": "Presence documentee a Jema'a LGA, etat de Kaduna. Migration interne vers Jos, Bauchi, Abuja et Lagos pour l'education et le travail. Des groupes afizere ont represente leur culture a l'international (USA, UK, Canada, Allemagne, Afrique du Sud, Ukraine, Kenya)."
+    },
+    "demography": {
+      "totalPopulation": 500000,
+      "referenceYear": 2025,
+      "source": "Wikipedia EN (Afizere) : plus de 500 000 Afizere répartis sur seize districts traditionnels. Ce chiffre n'a pas été vérifié dans un recensement.",
+      "distributionByCountry": [
+        {
+          "country": "NGA",
+          "population": 500000,
+          "note": "État du Plateau : Jos East, Jos North, Mangu, Jos South ; État de Kaduna : Jema'a LGA"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Glottolog 5.3 — Izere (izer1241)",
+        "url": "https://glottolog.org/resource/languoid/id/izer1241",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Notes on the Tribes, Provinces, Emirates and States of the Northern Provinces of Nigeria",
+        "url": "https://archive.org/details/notesontribespro00tempuoft",
+        "tier": "referenced",
+        "source_kind": "archive"
+      },
+      {
+        "title": "Origin of the Afizere",
+        "url": "https://afizereworld.org/origin.php",
+        "tier": "unverified",
+        "source_kind": "community"
+      },
+      {
+        "title": "Kunzaar.com — History and Origin of Jarawa Tribe",
+        "url": "https://kunzaar.com.ng/",
+        "tier": "unverified",
+        "source_kind": "community"
+      },
+      {
+        "title": "Scribd — Jos-Bauchi Plateau Peoples Overview",
+        "url": "https://www.scribd.com/document/790271702/THE-JOS-BAUCHI",
+        "tier": "unverified"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Afizere désigne un peuple des collines autour du plateau de Jos, au Nigeria, qui se nomme lui-même Afizere. Ses voisins et l'administration coloniale l'appelaient Jarawa, un nom qui sert aussi pour les Jarawa de l'État de Bauchi, et ses voisins zandi et gashish l'appellent Fuganang. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Afizere",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donne le peuple appelé Jarawa autour de Jos ; son origine n'est pas connue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Afizere est celui qu'emploie le site encyclopédique de la communauté pour ce peuple, que les rapports coloniaux appelaient Jarawa. On ne sait pas avec certitude d'où vient ce nom ; aucune source lue ne l'explique.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Origin of the Afizere",
+                "author": "Afizere Encyclopedic Website",
+                "year": null,
+                "url": "https://afizereworld.org/origin.php",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site encyclopédique de la communauté afizere, sans auteur ni date de publication. lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Jarawa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que leur donnaient leurs voisins et l'administration coloniale ; écrit dès 1914.",
+        "periodLabel": "Écrit depuis 1914 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Jarawa désigne en 1919, dans un recueil de rapports officiels, un grand peuple au sud de Bauchi, de quatre-vingt-dix à cent mille personnes. Il en distingue les groupes des plaines, soumis à l'émir de Bauchi, et les Jarawa des collines, comme ceux de Fobur et de Shere, restés indépendants. Certains clans qui parlent un dialecte jarawa n'en seraient pas issus, ajoute le recueil.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Notes on the Tribes, Provinces, Emirates and States of the Northern Provinces of Nigeria",
+                "author": "O. Temple, sous la direction de C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 165-166 et p. 171",
+                "notes": "Le Cap, Argus Printing and Publishing, recueil établi d'après des rapports officiels. Lu sur la numérisation de l'université de Toronto sur Internet Archive, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1914,
+              "to": 1914,
+              "label": "1914"
+            },
+            "era": "colonial",
+            "statement": "Le nom Jarawa apparaît dans deux rapports coloniaux de 1914 : le rapport annuel de Finch, un officier colonial, situe dans les collines jarawa de Fobur le pays d'origine des habitants de Jos et de Kwall, et le District Officer S. B. M. Stobart parle des Anaguta venus « d'au-delà des collines jarawa ». Le site encyclopédique de la communauté afizere cite ces deux rapports. C'est la plus ancienne trace de ce nom que le projet connaît ; nous ne les avons pas lus nous-mêmes. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Origin of the Afizere",
+                "author": "Afizere Encyclopedic Website",
+                "year": null,
+                "url": "https://afizereworld.org/origin.php",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site encyclopédique de la communauté afizere, sans auteur ni date de publication. lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Fuganang",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Zandi et les Gashish, selon le site de la communauté afizere",
+        "shortLine": "Le nom que donnent aux Afizere leurs voisins zandi et gashish.",
+        "periodLabel": "Non daté",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Fuganang, que les Zandi et les Gashish donnent aux Afizere, viendrait de Fuganang, tenu pour le plus ancien des ancêtres arrivés dans le pays, selon le site encyclopédique de la communauté afizere.",
+            "hypothesisGroup": "origine du nom Fuganang",
+            "sources": [
+              {
+                "title": "Origin of the Afizere",
+                "author": "Afizere Encyclopedic Website",
+                "year": null,
+                "url": "https://afizereworld.org/origin.php",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site encyclopédique de la communauté afizere, sans auteur ni date de publication. lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

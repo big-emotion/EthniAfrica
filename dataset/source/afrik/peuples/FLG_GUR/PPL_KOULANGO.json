@@ -152,6 +152,24 @@
         "tier": "referenced",
         "source_kind": "academic",
         "notes": "Seconde lecture de la même étude, qui situe elle aussi la fondation du royaume au début du XVIIe siècle."
+      },
+      {
+        "title": "Ethnologue — Kulango, Bondoukou (KZC)",
+        "url": "https://www.ethnologue.com/language/kzc/",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Ethnologue — Kulango subgroup",
+        "url": "https://www.ethnologue.com/subgroup/967/",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Joshua Project — Kulango, Bondoukou in Cote d'Ivoire",
+        "url": "https://joshuaproject.net/people_groups/10931/IV",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   },

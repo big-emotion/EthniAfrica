@@ -105,6 +105,12 @@
         "url": "https://glottolog.org/resource/languoid/id/nyam1275",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Mwanga of Zambia – PeopleGroups.org",
+        "url": "https://peoplegroups.org/people_groups/pg015612/",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   },
