@@ -104,5 +104,131 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kwanyama désigne un peuple ovambo du nord de la Namibie et du sud de l'Angola, qui se nomme lui-même Ovakwanyama. Son pays et son ancien royaume s'appellent l'Oukwanyama. Un récit que ce peuple fait de sa propre origine explique son nom ; nous le présentons plus bas, avec les plus anciennes traces écrites.",
+    "names": [
+      {
+        "nameText": "Ovakwanyama",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple ovambo ; écrit Ovakuanjama en 1911.",
+        "periodLabel": "Écrit dès 1911 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Rapporté en 1911"
+            },
+            "statement": "Le nom Ovakwanyama viendrait de onjama, « la viande », selon le récit que les Ovakwanyama font eux-mêmes de leur origine, rapporté par le missionnaire Hermann Tönjes. Des nobles d'Ondonga, rappelés pour y prendre le pouvoir, auraient laissé en chemin les plus jeunes, restés dans la forêt auprès d'un éléphant mort et d'un gibier abondant. À Ondonga, on aurait fini par dire de les laisser à leur viande, et le nom voudrait dire « les gens de la viande ».",
+            "hypothesisGroup": "origine du nom Ovakwanyama",
+            "sources": [
+              {
+                "title": "Ovamboland : Land, Leute, Mission, mit besonderer Berücksichtigung seines grössten Stammes Oukuanjama",
+                "author": "Hermann Tönjes",
+                "year": 1911,
+                "url": "https://archive.org/details/ovambolandlandle00tonj",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 36-38",
+                "notes": "Berlin, Martin Warneck, 1911. L'auteur a été missionnaire en Oukwanyama jusqu'en décembre 1907. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Récit recueilli par l'auteur auprès des Ovakwanyama, qu'il ne nomme pas."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "1911"
+            },
+            "statement": "Le nom Ovakwanyama apparaît, écrit Ovakuanjama, chez Hermann Tönjes, qui décrit en 1911 le plus grand des peuples de l'Ovamboland, alors partagé par la frontière entre l'Angola portugais et le Sud-Ouest africain allemand. C'est la plus ancienne trace de cette forme que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Ovakuanjama",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Ovamboland : Land, Leute, Mission, mit besonderer Berücksichtigung seines grössten Stammes Oukuanjama",
+                "author": "Hermann Tönjes",
+                "year": 1911,
+                "url": "https://archive.org/details/ovambolandlandle00tonj",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5",
+                "notes": "Berlin, Martin Warneck, 1911. L'auteur a été missionnaire en Oukwanyama jusqu'en décembre 1907. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kwanyama",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom courant de ce peuple et de sa langue ; une forme proche est écrite dès 1858.",
+        "periodLabel": "Écrit dès 1858 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1849,
+              "to": 1858,
+              "label": "Voyages de 1849 à 1853, rapportés en 1858"
+            },
+            "era": "polity",
+            "statement": "Le nom Kwanyama apparaît sous une forme proche, Quanhama, dans le compte rendu de l'expédition du missionnaire Carl Hugo Hahn publié à Londres en 1858. Il y est question du « grand État de Quanhama », appelé aussi Aimbiri du nom de son chef, d'après des voyageurs venus en 1849 et en 1852-1853. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Quanhama",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Account of an Expedition from Damara Land to the Ovampo, in Search of the River Cunene",
+                "author": "C. Hugo Hahn",
+                "year": 1858,
+                "url": "https://archive.org/details/jstor-1799106",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 354",
+                "notes": "Proceedings of the Royal Geographical Society of London, vol. 2, séance du 14 juin 1858, p. 350-354. Lu dans la numérisation des archives libres de JSTOR hébergée par Internet Archive le 11 octobre 2026. Le passage cite les voyageurs Brochado, venu en 1849, et Ladislaus Magyar, venu en 1852 et 1853 ; nous n'avons pas lu leurs récits."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Oukwanyama",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du pays et de l'ancien royaume des Ovakwanyama ; écrit Oukuanjama en 1911.",
+        "periodLabel": "Écrit dès 1911",
+        "accounts": [
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "1911"
+            },
+            "statement": "Le nom Oukwanyama apparaît, écrit Oukuanjama, chez Hermann Tönjes, qui en fait le plus grand et le plus important des pays de l'Ovamboland ; la plus grande partie se trouve alors en Angola portugais. C'est la plus ancienne trace de cette forme que le projet connaît.",
+            "formAsWritten": "Oukuanjama",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Ovamboland : Land, Leute, Mission, mit besonderer Berücksichtigung seines grössten Stammes Oukuanjama",
+                "author": "Hermann Tönjes",
+                "year": 1911,
+                "url": "https://archive.org/details/ovambolandlandle00tonj",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5",
+                "notes": "Berlin, Martin Warneck, 1911. L'auteur a été missionnaire en Oukwanyama jusqu'en décembre 1907. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
