@@ -97,5 +97,249 @@
         "notes": "Première compilation systématique des proverbes akan (mmebusem), établie à partir des dialectes twi (asante, akuapem) et fante."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Sefwi désigne un peuple akan de l'ouest du Ghana, dans l'actuelle région Western North. En 1904, l'administrateur Maurice Delafosse écrit que ce peuple se nomme lui-même Asaye, et que Sefwi est le nom que lui donnent les Anglais, d'après la forme asante Sefhwi. Les linguistes écrivent aussi Sehwi. Les sources que nous avons lues n'expliquent pas l'origine de ces noms ; nous présentons plus bas leur histoire.",
+    "names": [
+      {
+        "nameText": "Asaye",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donnait, selon Delafosse en 1904.",
+        "periodLabel": "Écrit depuis 1904",
+        "accounts": [
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Asaye est, selon l'administrateur colonial Maurice Delafosse en 1904, celui que ce peuple se donne. Les Asante l'appellent Sefhwi, les Anglais Sefwi, et les cartes françaises écrivent Sahué. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Asaye",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 108",
+                "notes": "Paris, Ernest Leroux, 1904, lu dans la numérisation d'Internet Archive le 11 octobre 2026. « Les Asaye (appelés Sefhwi par les Assanti, Sefwi par les Anglais, Sahué sur nos cartes) habitent à l'est du Ndényé, entre la frontière franco-anglaise et l'Ankobra »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sefwi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Asante, puis les Anglais, selon Maurice Delafosse",
+        "shortLine": "Le nom asante repris par les Anglais ; il désigne aujourd'hui le peuple et sa région.",
+        "periodLabel": "Écrit depuis 1877 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sefwi est en 1904 celui que les Anglais donnent à ce peuple, d'après la forme Sefhwi qu'emploient les Asante, selon Maurice Delafosse.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 108",
+                "notes": "Paris, Ernest Leroux, 1904, lu dans la numérisation d'Internet Archive le 11 octobre 2026. « Les Asaye (appelés Sefhwi par les Assanti, Sefwi par les Anglais, Sahué sur nos cartes) habitent à l'est du Ndényé, entre la frontière franco-anglaise et l'Ankobra »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1877,
+              "to": 1877,
+              "label": "1877"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sefwi apparaît, sous les graphies Shawi, Sewhee ou Sefui, dans un livre diffusé en 1877 par le bureau du secrétaire colonial adjoint à Lagos pour fixer l'orthographe des noms de lieux devant les tribunaux, selon le pasteur Carl Christian Reindorf. Il juge ces graphies peu fidèles et écrit lui-même Safwi. C'est la plus ancienne trace sûre de ce nom que le projet connaît.",
+            "formAsWritten": "Sefui",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The History of the Gold Coast and Asante",
+                "author": "Carl Christian Reindorf",
+                "year": 1895,
+                "url": "https://archive.org/details/historyofgoldcoa00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. IX",
+                "notes": "Bâle, 1895. L'auteur est un pasteur ghanéen de la Mission de Bâle qui s'appuie sur les traditions orales. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. « Shawi, Sewhee, or Sefui = Safwi » ; Reindorf rapporte le livre de 1877 sans le citer davantage."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1700,
+              "to": 1800,
+              "label": "XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Sefwi désigne, chez l'historien A. Adu Boahen, un État de l'ouest du pays akan qui gagne en puissance et en influence au XVIIIe siècle, comme l'Abron, le Wiawso ou l'Aowin.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 14 : Les États et les cultures de la côte de la Guinée inférieure",
+                "author": "A. A. Boahen",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 466",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Règne d'Opoku Ware, selon Reindorf"
+            },
+            "era": "polity",
+            "statement": "Le nom Sefwi, sous la forme Safwi, est celui que Carl Christian Reindorf donne en 1895 au royaume dont le roi Abirimoro envahit Kumasi sous le règne d'Opoku Ware, selon les traditions qu'il a recueillies. L'armée asante le défait ensuite.",
+            "sources": [
+              {
+                "title": "The History of the Gold Coast and Asante",
+                "author": "Carl Christian Reindorf",
+                "year": 1895,
+                "url": "https://archive.org/details/historyofgoldcoa00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 86",
+                "notes": "Bâle, 1895. L'auteur est un pasteur ghanéen de la Mission de Bâle qui s'appuie sur les traditions orales. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. « Abirimoro, the king of Safwi and Wasa, had invaded Kumase »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1600,
+              "label": "XVIe siècle, selon cette lecture"
+            },
+            "era": "polity",
+            "statement": "Le nom Sefwi désigne, chez A. Adu Boahen, l'un des peuples nés du mélange entre les derniers migrants akan et des peuples déjà installés, comme les Anyi et les Baoulé ; il le range parmi les Akan de l'Ouest.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 14 : Les États et les cultures de la côte de la Guinée inférieure",
+                "author": "A. A. Boahen",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 447",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sehwi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie qu'emploient les linguistes pour la langue.",
+        "periodLabel": "Écrit depuis 1971 ; en usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sehwi est la graphie que le catalogue Glottolog retient pour la langue de ce peuple.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog, fiche « Sehwi »",
+                "author": "Glottolog (Institut Max Planck d'anthropologie évolutionniste)",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/sehw1238",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues du monde, consulté le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1971,
+              "to": 1971,
+              "label": "1971"
+            },
+            "era": "modern",
+            "statement": "Le nom Sehwi figure dans le titre d'un article de l'historien ghanéen K. Y. Daaku paru en 1971, A history of Sehwi: a survey of oral evidence, selon la bibliographie de l'Histoire générale de l'Afrique. Nous n'avons pas pu lire cet article.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, bibliographie générale",
+                "author": "UNESCO",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 1008",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sauee",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un pays nommé ainsi par Bowdich en 1819 ; est-ce le même ?",
+        "periodLabel": "Écrit en 1819",
+        "accounts": [
+          {
+            "period": {
+              "from": 1819,
+              "to": 1819,
+              "label": "1819"
+            },
+            "era": "polity",
+            "statement": "Le nom Sauee figure chez le voyageur anglais T. Edward Bowdich en 1819, pour un pays situé à huit jours de marche de Kumasi, au bout de l'une des neuf grandes routes de la capitale asante. Il écrit aussi que le grand-père d'un roi asante a conquis Sawee. Les sources que nous avons lues ne disent pas s'il s'agit du même pays que le Sefwi.",
+            "sources": [
+              {
+                "title": "Mission from Cape Coast Castle to Ashantee",
+                "author": "T. Edward Bowdich",
+                "year": 1819,
+                "url": "https://archive.org/details/missionfromcapec00bowd",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 162, p. 169 et p. 237",
+                "notes": "Londres, John Murray, 1819, lu dans la numérisation d'Internet Archive le 11 octobre 2026. « Sauee lies eight journies W. N. W. from Coomassie » (p. 169) ; « conquered Sawee, killing the king Boomancumma » (p. 237)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

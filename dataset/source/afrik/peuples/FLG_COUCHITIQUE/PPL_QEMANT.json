@@ -117,5 +117,130 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Qemant désigne un peuple agaw du nord-ouest de l'Éthiopie, entre Gondar et le lac Tana, qui se nomme lui-même Qemant. Le nom s'écrit aussi Kemant, Kamant ou Qimant selon les auteurs. Les sources que nous avons lues n'expliquent pas son origine ; nous présentons plus bas son histoire.",
+    "names": [
+      {
+        "nameText": "Qemant",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple agaw d'Éthiopie, écrit ainsi par l'anthropologue Gamst.",
+        "periodLabel": "Écrit depuis 1969 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Qemant désigne, chez l'anthropologue Frederick C. Gamst, une branche des peuples agaw du plateau éthiopien. Au recensement de 1994, 172 291 personnes se disaient qemant, qu'elles parlent ou non la langue, et ce sentiment d'appartenance ne disparaîtra pas, selon lui, avec l'usage croissant de l'amharique. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Ethiopian Qemant of the Agaw in perspective",
+                "author": "Frederick C. Gamst",
+                "year": 2019,
+                "url": "https://www.ethiopia-insight.com/2019/03/06/the-ethiopian-qemant-of-the-agaw-in-perspective/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Ethiopia Insight, 6 mars 2019, lu le 11 octobre 2026. « The agropastoral Qemant division of the Agaw peoples on the temperate Ethiopian plateau » ; « Qemant speaking and not speaking Qemant totaled 172,291 in the 1994 census »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1969,
+              "to": 1969,
+              "label": "1969"
+            },
+            "era": "modern",
+            "statement": "Le nom Qemant donne son titre au livre de l'anthropologue Frederick C. Gamst, The Qemant: a pagan-Hebraic peasantry of Ethiopia, paru à New York en 1969. C'est la plus ancienne trace de cette graphie que le projet connaît. Le peuple existait déjà avant elle, sous le nom de Kamant.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Qemant: a pagan-Hebraic peasantry of Ethiopia (notice du livre)",
+                "author": "Frederick C. Gamst",
+                "year": 1969,
+                "url": "https://archive.org/details/qemantpaganhebra00gams",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "New York, Holt, Rinehart and Winston, 1969. Titre, éditeur et date relevés le 11 octobre 2026 sur la notice d'Internet Archive ; le livre n'y est consultable qu'en prêt et nous ne l'avons pas lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kamant",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une ancienne graphie, dans un titre de 1869.",
+        "periodLabel": "Écrit en 1869",
+        "accounts": [
+          {
+            "period": {
+              "from": 1869,
+              "to": 1869,
+              "label": "1869"
+            },
+            "era": "polity",
+            "statement": "Le nom Kamant apparaît, au pluriel Kamants, dans le titre d'un livre de J. M. A. Flad, A short description of the Falashas and Kamants in Abyssinia, paru à Londres en 1869, selon la bibliographie de l'Histoire générale de l'Afrique. C'est la plus ancienne trace de ce nom que le projet connaît, de seconde main. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Kamants",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, bibliographie générale",
+                "author": "UNESCO",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 1013",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Qimant",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie que retiennent les linguistes pour la langue.",
+        "periodLabel": "En usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Qimant est la graphie que le catalogue Glottolog retient pour la langue de ce peuple.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog, fiche « Qimant »",
+                "author": "Glottolog (Institut Max Planck d'anthropologie évolutionniste)",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/qima1242",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues du monde, consulté le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

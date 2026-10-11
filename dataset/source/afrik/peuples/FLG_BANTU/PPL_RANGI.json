@@ -111,5 +111,292 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Rangi désigne un peuple bantou du district de Kondoa, au centre de la Tanzanie, qui se nomme lui-même Valaangi. Son pays s'appelle Iraangi et sa langue kɨlaangi ; en swahili, on dit Warangi, Irangi et kirangi. Les sources que nous avons lues n'expliquent pas l'origine de ces noms ; nous présentons plus bas leur histoire.",
+    "names": [
+      {
+        "nameText": "Valaangi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lag",
+        "namedBy": null,
+        "shortLine": "Le nom que les Rangi se donnent dans leur langue ; on l'écrit aussi Valangi.",
+        "periodLabel": "Écrit depuis 2011 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "2011"
+            },
+            "era": "modern",
+            "statement": "Le nom Valaangi est celui que les Rangi se donnent dans leur langue, qu'ils appellent kɨlaangi ; leur pays est l'Iraangi, selon le linguiste Oliver Stegen, qui a travaillé avec eux à Kondoa. C'est la plus ancienne trace écrite de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Valaangi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "In quest of a vernacular writing style for the Rangi of Tanzania: assumptions, processes, challenges",
+                "author": "Oliver Stegen",
+                "year": 2011,
+                "url": "https://era.ed.ac.uk/handle/1842/5975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1, note 1",
+                "notes": "Thèse de doctorat, Université d'Édimbourg, lue dans le texte intégral de l'Edinburgh Research Archive le 11 octobre 2026. « The Rangi call their language Kɨlaangi, their people Valaangi, and their country Iraangi, whereas in Swahili […] they are called Kirangi, Warangi and Irangi respectively. » L'auteur a dirigé avec SIL le projet de langue rangi à Kondoa de 2002 à 2006."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Warangi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "swh",
+        "namedBy": null,
+        "shortLine": "La forme swahilie du nom, écrite par les voyageurs allemands dès 1894.",
+        "periodLabel": "Écrit depuis 1894 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Warangi est la forme swahilie du nom du peuple, à côté de kirangi pour la langue et d'Irangi pour le pays, selon Oliver Stegen.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "In quest of a vernacular writing style for the Rangi of Tanzania: assumptions, processes, challenges",
+                "author": "Oliver Stegen",
+                "year": 2011,
+                "url": "https://era.ed.ac.uk/handle/1842/5975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1, note 1",
+                "notes": "Thèse de doctorat, Université d'Édimbourg, lue dans le texte intégral de l'Edinburgh Research Archive le 11 octobre 2026. « The Rangi call their language Kɨlaangi, their people Valaangi, and their country Iraangi, whereas in Swahili […] they are called Kirangi, Warangi and Irangi respectively. » L'auteur a dirigé avec SIL le projet de langue rangi à Kondoa de 2002 à 2006."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1898,
+              "to": 1898,
+              "label": "1898"
+            },
+            "era": "colonial",
+            "statement": "Le nom Warangi désigne aussi, chez l'officier allemand W. Werther en 1898, les habitants de l'Irangi, un peuple bantou dont la langue diffère peu de celle des Wambugwe.",
+            "sources": [
+              {
+                "title": "Die mittleren Hochländer des nördlichen Deutsch-Ost-Afrika : wissenschaftliche Ergebnisse der Irangi-Expedition 1896-1897",
+                "author": "W. Werther",
+                "year": 1898,
+                "url": "https://archive.org/details/diemittlerenhoc00wertgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 41",
+                "notes": "Berlin, 1898, lu dans la numérisation d'Internet Archive le 11 octobre 2026. « Irangi wird bewohnt von den Warangi, einem Bantu-Stamm »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1894,
+              "to": 1894,
+              "label": "1894"
+            },
+            "era": "polity",
+            "statement": "Le nom Warangi apparaît dans le récit de l'explorateur Oscar Baumann, paru en 1894. Les Warangi vivent selon lui dans les collines autour de Kondoa, un établissement de marchands arabes dans le pays d'Irangi, et ne forment qu'un seul peuple avec les Wambugwe. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Warangi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Durch Massailand zur Nilquelle : Reisen und Forschungen der Massai-Expedition des deutschen Antisklaverei-Komite in den Jahren 1891-1893",
+                "author": "Oscar Baumann",
+                "year": 1894,
+                "url": "https://www.gutenberg.org/ebooks/68057",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 180-181",
+                "notes": "Berlin, Dietrich Reimer ; lu le 11 octobre 2026 dans l'édition du Projet Gutenberg, qui garde la pagination de l'original. « Die Stämme der Wambugwe und Warangi […] bilden thatsächlich nur einen Stamm » ; « Die Warangi hausen in den hügelartigen Landschaften, welche sich bei der Araber-Niederlassung Kondoa (Irangi) ausdehnen ». Baumann séjourne en Irangi au tournant de 1893."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Rangi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme sans préfixe, retenue en anglais pour le peuple et la langue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Rangi, sans préfixe, est la forme que l'usage anglais retient pour le peuple, la langue et le pays, selon Oliver Stegen, qui l'emploie dans toute sa thèse. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "In quest of a vernacular writing style for the Rangi of Tanzania: assumptions, processes, challenges",
+                "author": "Oliver Stegen",
+                "year": 2011,
+                "url": "https://era.ed.ac.uk/handle/1842/5975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1, note 1",
+                "notes": "Thèse de doctorat, Université d'Édimbourg, lue dans le texte intégral de l'Edinburgh Research Archive le 11 octobre 2026. « The Rangi call their language Kɨlaangi, their people Valaangi, and their country Iraangi, whereas in Swahili […] they are called Kirangi, Warangi and Irangi respectively. » L'auteur a dirigé avec SIL le projet de langue rangi à Kondoa de 2002 à 2006."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Rangi désigne aussi, chez les linguistes Hannah Gibson et Maarten Mous, une langue bantoue parlée par quelque 310 000 personnes au centre de la Tanzanie, en contact depuis longtemps avec l'alagwa, une langue couchitique voisine.",
+            "sources": [
+              {
+                "title": "Exploring contact in Rangi- and Alagwa-speaking communities",
+                "author": "Hannah Gibson et Maarten Mous",
+                "year": 2024,
+                "url": "https://lheaf.org/wp-content/uploads/2024/04/gibsonmous_exploring-contact-in-rangi-and-alagwa_lheaf.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Chapitre à paraître chez Language Science Press, lu dans la version mise en ligne le 11 octobre 2026 ; seul le début du texte est accessible."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Langi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme que le catalogue Glottolog retient pour la langue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Langi est celui que le catalogue Glottolog donne à la langue des Rangi. Une grammaire de la linguiste Margaret Dunham, parue en 2005, porte aussi ce nom, selon la bibliographie d'Oliver Stegen.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog, fiche « Langi »",
+                "author": "Glottolog (Institut Max Planck d'anthropologie évolutionniste)",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/lang1320",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues du monde, consulté le 11 octobre 2026."
+              },
+              {
+                "title": "In quest of a vernacular writing style for the Rangi of Tanzania: assumptions, processes, challenges",
+                "author": "Oliver Stegen",
+                "year": 2011,
+                "url": "https://era.ed.ac.uk/handle/1842/5975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "bibliographie",
+                "notes": "Thèse lue le 11 octobre 2026. La bibliographie cite M. Dunham, Éléments de description du langi, Louvain, Peeters, 2005 ; nous n'avons pas lu ce livre."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Irangi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "swh",
+        "namedBy": null,
+        "shortLine": "Le nom swahili du pays des Rangi, autour de Kondoa ; connu dès 1885.",
+        "periodLabel": "Écrit depuis 1885 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Irangi sert aussi à l'historien Christopher Ehret pour les habitants actuels de la région de Kondoa. Il avance que leurs ancêtres pourraient avoir fabriqué une poterie ancienne de la région, dite lelesu, entre le VIIIe et le XIe siècle.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 22 : L'intérieur de l'Afrique orientale",
+                "author": "Christopher Ehret",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 664",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1898,
+              "to": 1898,
+              "label": "1898"
+            },
+            "era": "colonial",
+            "statement": "Le nom Irangi désigne en 1898, chez W. Werther, un pays de basses montagnes autour de Kondoa. Une société allemande qui avait reçu des terres dans la région porte ce nom et finance son expédition.",
+            "sources": [
+              {
+                "title": "Die mittleren Hochländer des nördlichen Deutsch-Ost-Afrika : wissenschaftliche Ergebnisse der Irangi-Expedition 1896-1897",
+                "author": "W. Werther",
+                "year": 1898,
+                "url": "https://archive.org/details/diemittlerenhoc00wertgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 41",
+                "notes": "Berlin, 1898, lu dans la numérisation d'Internet Archive le 11 octobre 2026. « Irangi ist ein niedriges Bergland ». Le titre précise que l'expédition se fait « im Auftrage der Irangi-Gesellschaft »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1885,
+              "to": 1885,
+              "label": "1885"
+            },
+            "era": "polity",
+            "statement": "Le nom Irangi est déjà celui du pays en 1885 : un voyageur que Baumann nomme le docteur Fischer y voit cette année-là le mont Gurui pour la première fois, selon Oscar Baumann. C'est la plus ancienne trace de ce nom que le projet connaît, de seconde main.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Durch Massailand zur Nilquelle : Reisen und Forschungen der Massai-Expedition des deutschen Antisklaverei-Komite in den Jahren 1891-1893",
+                "author": "Oscar Baumann",
+                "year": 1894,
+                "url": "https://www.gutenberg.org/ebooks/68057",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 138",
+                "notes": "Berlin, Dietrich Reimer ; lu le 11 octobre 2026 dans l'édition du Projet Gutenberg, qui garde la pagination de l'original. « der 1885 von Dr. Fischer in Irangi zuerst gesehen worden war ». Nous n'avons pas lu le récit de Fischer."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

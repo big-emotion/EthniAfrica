@@ -118,5 +118,123 @@
         "source_kind": "encyclopedia"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Antanosy désigne un peuple du sud-est de Madagascar, qui se nomme lui-même Antanosy et que l'on appelle couramment Tanosy. Il est formé sur le nom de son pays, l'Anosy, avec le préfixe an- ou ant-, « peuple de ». Nous présentons plus bas ce que disent les sources sur ces noms.",
+    "names": [
+      {
+        "nameText": "Antanosy",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "txy",
+        "namedBy": null,
+        "shortLine": "Le peuple de l'Anosy ; le nom se dit couramment Tanosy.",
+        "usedIn": ["txy"],
+        "periodLabel": "Écrit depuis 1903 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Antanosy désigne l'un des peuples qui composent aujourd'hui le peuple malgache. Le préfixe an-, ou ant-, y veut dire « peuple de », selon R. K. Kent, qui précise que les noms de ces peuples n'ont jamais été normalisés.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 28 : Madagascar et les îles de l'océan Indien",
+                "author": "R. K. Kent",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 921",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1903,
+              "to": 1903,
+              "label": "1903"
+            },
+            "era": "colonial",
+            "statement": "Le nom Antanosy apparaît sous la plume des historiens Alfred et Guillaume Grandidier, en 1903, à propos du roi Tsiambany, qui reçut en 1613-1614 le capitaine portugais Rodrigues da Costa. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "antanosy",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Collection des ouvrages anciens concernant Madagascar, tome I (1500 à 1613)",
+                "author": "Alfred Grandidier et Guillaume Grandidier",
+                "year": 1903,
+                "url": "https://archive.org/details/collectiondesou02grangoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 486",
+                "notes": "Paris, Comité de Madagascar, 1903. « Le roi antanosy Tsiambany a dit au capitaine portugais Rodrigues da Costa, qui a fait en 1613-1614 un voyage d'exploration autour de Madagascar […] ». Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1658,
+              "to": 1658,
+              "label": "1658"
+            },
+            "era": "colonial",
+            "statement": "Le nom Antanosy n'est pas encore écrit : le pays s'appelle alors la province d'Anossi, ou Carcanossi, de la rivière Manantena à la Mandrary, selon Étienne de Flacourt, chef des Français installés dans le pays, dans son histoire de Madagascar publiée en 1658.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Collection des ouvrages anciens concernant Madagascar, tome II (1613 à 1640)",
+                "author": "Alfred Grandidier et Guillaume Grandidier",
+                "year": 1904,
+                "url": "https://archive.org/details/collectiondesouv02gran",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 282 et p. 288",
+                "notes": "Paris, Comité de Madagascar, 1904. Les auteurs reproduisent Étienne de Flacourt, Histoire de la grande isle Madagascar, 1658, p. 46 : « La province d'Anossi, depuis la rivière de Manatengha jusqu'à la rivière de Mandrerei » ; p. 288 : « le roi de la province de Carcanossi ». Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tanosy",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "txy",
+        "namedBy": null,
+        "shortLine": "La forme courte d'Antanosy, celle du parler courant.",
+        "periodLabel": "Usage contemporain",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Tanosy est la forme courte d'Antanosy : le préfixe an- tombe dans le parler courant, et le o se prononce ou, d'où « Tanus », selon R. K. Kent.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 28 : Madagascar et les îles de l'océan Indien",
+                "author": "R. K. Kent",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 921",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

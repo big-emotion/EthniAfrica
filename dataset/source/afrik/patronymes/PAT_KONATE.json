@@ -274,7 +274,7 @@
       "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Niane, Djibril Tamsir, Présence Africaine, 1960. Transcription du récit du griot Djeli Mamadou Kouyaté de Djeliba Koro (Siguiri) ; c'est une mise par écrit d'une tradition orale. Pages lues sur l'exemplaire numérisé d'archive.org (SoundjataOuLepopeeMandingue), proches de l'édition imprimée sans s'y confondre : le père de Soundiata y est nommé Maghan Kon Fatta, sans être dit Konate (p. 15) ; Siara Kouman Konate, cousin de Soundiata et ancêtre des gens du Toron (p. 101) ; les Konate du Toron devenus les cadets des Keita (p. 140)."
+      "notes": "Niane, Djibril Tamsir, Présence Africaine, 1960. Transcription du récit du griot Djeli Mamadou Kouyaté de Djeliba Koro (Siguiri) ; c'est une mise par écrit d'une tradition orale. Pages lues sur l'exemplaire numérisé d'archive.org (SoundjataOuLepopeeMandingue), proches de l'édition imprimée sans s'y confondre : le père de Soundiata y est nommé Maghan Kon Fatta, sans être dit Konate (p. 16) ; Siara Kouman Konate, cousin de Soundiata et ancêtre des gens du Toron (p. 102) ; les Konate du Toron devenus les cadets des Keita (p. 141)."
     },
     {
       "sourceKey": "jansen-1995-lansine-diabate",
@@ -330,5 +330,276 @@
       "fieldPath": "homonyms",
       "reason": "Konaté s'écrit aussi Konate, Kɔnatɛ ou Kounaté ; le dictionnaire des noms de clan mandingues tient Keïta pour un équivalent, et Konaré peut-être, et une liste de 1912 rapproche le nom de Kounari et de Koyaté. Ce sont des graphies et des correspondances, pas des lignées distinctes. Nous n'avons trouvé aucune source qui signale un autre nom, sans lien avec celui-ci, qui s'écrirait de même."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Konaté est un nom de clan, ou jamu, des Malinké, des Bambara et des Kagoro, celui des gens du Toron dans l'épopée de Soundiata. On l'écrit aussi Konate ou Kounaté, et le dictionnaire des noms de clan l'écrit Kónatɛ̀. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Konaté",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan malinké, celui des gens du Toron ; son origine reste discutée.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Konaté désigne un clan, que le dictionnaire des noms de clan mandingues écrit Kónatɛ̀ et rattache aux Malinké, aux Bambara et aux Kagoro. Il le tient pour un équivalent de Keïta et ne lui donne pas de sens. Plusieurs récits expliquent son origine ; nous les présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet lu. Entrée Kónatɛ̀ : les variantes Kɔnatɛ et Konate, l'équivalent Kéyità, et Konaré avec un doute ; aucun sens donné au nom."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 89",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Kónatɛ̀."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1652,
+              "to": 1655,
+              "label": "Chronique écrite jusqu'en 1652-1655"
+            },
+            "era": "polity",
+            "statement": "Le nom Konaté apparaît sous une forme proche, « Kenâti », dans la chronique d'es-Sa'di : elle nomme un cadi de Djenné, Mohammed-Benba-Kenâti, « d'origine ouankori », c'est-à-dire mandingue. Maurice Delafosse lit ce nom Mohammed-Bamba Konaté. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un chroniqueur l'a écrit, pas depuis quand le clan le porte.",
+            "formAsWritten": "Kenâti",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Mohammed-Benba-Kenâti",
+                "role": "cadi de Djenné que nomme la chronique"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Tarikh es-Soudan",
+                "author": "Abderrahman es-Sa'di, traduit de l'arabe par Octave Houdas",
+                "year": 1900,
+                "url": "https://archive.org/details/tarikhessoudanpa00sadauoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 34",
+                "notes": "Chronique écrite à Tombouctou, que l'auteur arrête une première fois en 1652 et complète jusqu'en 1655, selon l'introduction du traducteur (p. XIV). Traduction française, Ernest Leroux, Paris, 1900, lue dans la numérisation d'Internet Archive. Page 34, la notice du cadi Mohammed-Benba-Kenâti ; il reparaît pages 243 à 246."
+              },
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome II : l'histoire",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77845",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 245 et 277",
+                "notes": "Émile Larose, Paris, 1912. L'auteur est un administrateur colonial en Afrique-Occidentale française. Lu sur l'édition du Projet Gutenberg, qui marque les pages de l'imprimé. Pages 245 et 277 : Delafosse nomme ce cadi Mohammed-Bamba Konaté, « d'origine soninké ou dioula », d'après es-Sa'di."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1892,
+              "label": "Voyage de 1887-1889, récit publié en 1892"
+            },
+            "era": "polity",
+            "statement": "Le nom Konaté est écrit « Konaté » par Louis-Gustave Binger, qui en fait, avec Kamara, l'un des principaux noms de famille du Toukoro, un pays malinké qu'il situe d'après ce qu'on lui en dit.",
+            "formAsWritten": "Konaté",
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 1, p. 137",
+                "notes": "Hachette, Paris, 1892, deux tomes ; récit du voyage de 1887-1889. Lu dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée. Tome 1, page 137, sur le Toukoro."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Rapporté en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Konaté est celui d'un clan que Maurice Delafosse dit originaire de Kouna, ou Kona, à l'est du Macina, et auquel il attribue la fondation d'une première Djenné vers l'an 800. Il n'en tire pas le nom du clan.",
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 263",
+                "notes": "Émile Larose, Paris, 1912. L'auteur est un administrateur colonial en Afrique-Occidentale française. Lu sur l'édition du Projet Gutenberg, qui marque les pages de l'imprimé. Page 263."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Temps de Soundiata, selon l'épopée"
+            },
+            "era": "polity",
+            "statement": "Le nom Konaté est, dans l'épopée de Soundiata, celui de Siara Kouman Konaté, cousin de Soundiata et ancêtre des gens du Toron. L'épopée dit aussi qu'à Kouroukan Fougan les Konaté du Toron devinrent les cadets des Keïta, si bien qu'un Konaté d'âge mûr pouvait s'appeler Keïta. C'est le récit que transcrit Djibril Tamsir Niane.",
+            "actors": [
+              {
+                "name": "Siara Kouman Konaté",
+                "role": "cousin de Soundiata dans le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Soundjata ou l'épopée mandingue",
+                "author": "Djibril Tamsir Niane",
+                "year": 1960,
+                "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 102 et 141",
+                "notes": "Présence Africaine, Paris, 1960. Mise par écrit du récit du griot Djeli Mamadou Kouyaté, de Djeliba Koro près de Siguiri. Lu sur une copie non officielle déposée sur Internet Archive (SoundjataOuLepopeeMandingue), recomposée et paginée autrement que l'imprimé ; la page donnée est celle de cette copie. Page 102, Siara Kouman Konaté parmi les chefs ralliés à Soundiata ; page 141, les Konaté du Toron cadets des Keïta. Pages vérifiées sur l'image de la copie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Konaté viendrait de « kona tè », « il n'est pas stérile » : une femme respectée, que tout le village appelait « kona mousso », la femme stérile, eut enfin un enfant, qui prit ce nom en souvenir. C'est ce que dit un texte en français que reproduit le mémoire d'E. A. Bogacheva, sans dire d'où il vient.",
+            "hypothesisGroup": "origine du nom Konaté",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 89",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Kónatɛ̀ : un texte en français reproduit sans indication de provenance."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Konaté viendrait de kona, « celui qui ne peut avoir d'enfant », suivi de la négation te, d'où « celui qui a des enfants » : Kanunyoro Simbo l'aurait pris quand son frère Lawali, devenu chef, n'avait pas encore d'enfant. C'est une légende tirée des notes de V. Vydrin et A. Davydov, qui ne disent pas qui l'a racontée, selon le mémoire d'E. A. Bogacheva.",
+            "hypothesisGroup": "origine du nom Konaté",
+            "actors": [
+              {
+                "name": "Kanunyoro Simbo",
+                "role": "frère du récit qui prend ce nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 83",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Kéyità : la légende des trois frères, seconde version."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Konaté viendrait de « kòna tɛ̀ móso », « la femme qui n'est pas stérile » : Síyara Kétà, fille du souverain des Mansarén, mariée au Toron et dite stérile par une coépouse, reçut de sa famille un garçon, Kòmán, dont les nombreux descendants furent appelés les gens de la femme Kònatɛ́. C'est le récit de l'ouvrage en n'ko de Souleymane Kanté, selon la traduction russe qu'en donne E. A. Bogacheva.",
+            "hypothesisGroup": "origine du nom Konaté",
+            "actors": [
+              {
+                "name": "Síyara Kétà",
+                "role": "princesse du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 89-90",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Kónatɛ̀ : le récit tiré de l'ouvrage de Souleymane Kanté. Le texte original en n'ko de Souleymane Kanté n'a pas été lu ; seule sa traduction russe l'a été, et le français est le nôtre."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kounaté",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre écriture du nom de clan Konaté.",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kounaté est une autre écriture de Konaté chez Maurice Delafosse, qui écrit « Kounaté ou Kounaré » parmi les clans soninké et « Konaté ou Kounaté » parmi les clans dioula. C'est la plus ancienne trace de cette écriture que le projet connaît.",
+            "formAsWritten": "Kounaté",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 137-138",
+                "notes": "Émile Larose, Paris, 1912. L'auteur est un administrateur colonial en Afrique-Occidentale française. Lu sur l'édition du Projet Gutenberg, qui marque les pages de l'imprimé. Page 137, clans soninké ; page 138, clans dioula."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -48,13 +48,7 @@
       }
     ]
   },
-  "peoples": [
-    {
-      "peopleId": "PPL_KONGO",
-      "status": "supposed",
-      "sourceRefs": ["ne-bitumba-mvila-2004"]
-    }
-  ],
+  "peoples": [],
   "countries": [
     {
       "countryId": "COD",
@@ -134,7 +128,7 @@
   "gaps": [
     {
       "fieldPath": "peoples",
-      "reason": "Un seul document trouvé range ce nom parmi les lignages du peuple kongo, et aucune autre source ne confirme ce rattachement de façon indépendante. Le lien avec ce peuple est donc à prendre comme une piste plutôt que comme un fait établi."
+      "reason": "Une seule liste range ce nom parmi les lignages du peuple kongo, et nous ne l'avons lue qu'à travers l'encyclopédie en ligne Wikipédia ; aucune autre source ne confirme ce rattachement. Aucun peuple n'est donc rattaché à ce nom tant qu'une source lue directement ne le confirme pas."
     },
     {
       "fieldPath": "transmissionMode",
@@ -160,5 +154,42 @@
       "fieldPath": "origin.oralTraditions",
       "reason": "Aucun récit oral ni geste transmise par un griot n'a été retrouvé pour ce nom, au-delà de sa simple mention dans un répertoire de lignages."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Nkala est porté en République démocratique du Congo. Une liste de lignages kongo le cite, mais aucune autre source ne le confirme. C'est aussi un mot du kikongo, qui a plusieurs sens. On ne sait pas avec certitude d'où vient le nom, ni quel lien il a avec ce mot.",
+    "names": [
+      {
+        "nameText": "Nkala",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom porté en RD Congo, qui est aussi un mot kikongo ; on ne sait pas d'où il vient.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 1887,
+              "to": 1887,
+              "label": "Sens du mot noté en 1887"
+            },
+            "statement": "Le nom Nkala est aussi un mot du kikongo, qui a plusieurs sens : « crabe », « état, condition », « chaux », et, dans une autre classe de noms, « tombe », selon le dictionnaire de W. Holman Bentley. Aucune source ne dit lequel de ces sens, s'il y en a un, a donné le nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary and Grammar of the Kongo Language, as Spoken at San Salvador, the Ancient Capital of the Old Kongo Empire, West Africa",
+                "author": "W. Holman Bentley",
+                "year": 1887,
+                "url": "https://archive.org/details/dictionarygramma00bent",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 97 et p. 379",
+                "notes": "Londres, Baptist Missionary Society et Trübner, 1887. L'auteur est missionnaire baptiste à San Salvador, l'actuelle Mbanza Kongo, en Angola. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 379, partie kikongo-anglais : trois entrées nkala de la classe 2, « chaux, mortier » (du portugais cal), « état, condition, manière de vivre » et « crabe ». Page 97, partie anglais-kikongo : à l'article Grave, « tombe », le mot nkala de la classe 4."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

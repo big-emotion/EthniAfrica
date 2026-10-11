@@ -109,5 +109,303 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Jopadhola désigne un peuple nilotique de l'est de l'Ouganda, dans le district de Tororo, qui se nomme lui-même Jopadhola et appelle son pays Padhola. D'autres noms existent : Adhola, Badama et Budama. Les sources donnent une explication pour Padhola et une pour Budama ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Jopadhola",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "adh",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; il est lié au nom de son pays, Padhola.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Jopadhola désigne un peuple nilotique qui vit surtout dans le comté de West Budama, district de Tororo, dans l'est de l'Ouganda ; sa langue se dit dhupadhola et ressemble à l'alur et au luo du Kenya, selon la juriste Maureen Owor. Les sources expliquent le nom du pays, Padhola, présenté plus bas ; nous n'avons pas trouvé de trace ancienne datée du nom Jopadhola.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Creating an independent traditional court: a study of Jopadhola clan courts in Uganda",
+                "author": "Maureen Owor",
+                "year": 2012,
+                "url": "https://research-information.bris.ac.uk/ws/portalfiles/portal/32082556/Owor_Creating_independent_traditional_court_Oct_2012.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 220",
+                "notes": "Journal of African Law, vol. 56, n° 2, 2012, p. 215-242. Version publiée déposée par l'université de Bristol ; lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Padhola",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "adh",
+        "namedBy": null,
+        "shortLine": "Le nom du pays des Jopadhola, rattaché au fondateur Adhola.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Padhola désigne la terre des Jopadhola, qu'on appelle officiellement Budama, selon Maureen Owor.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Creating an independent traditional court: a study of Jopadhola clan courts in Uganda",
+                "author": "Maureen Owor",
+                "year": 2012,
+                "url": "https://research-information.bris.ac.uk/ws/portalfiles/portal/32082556/Owor_Creating_independent_traditional_court_Oct_2012.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 220",
+                "notes": "Journal of African Law, vol. 56, n° 2, 2012, p. 215-242. Version publiée déposée par l'université de Bristol ; lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Padhola est le nom retenu par Ivan Hrbek dans sa liste des noms de peuples africains pour l'UNESCO, avec Badama comme autre nom ; il rattache ce peuple aux Lwo et le situe en Ouganda.",
+            "sources": [
+              {
+                "title": "Ethnonymes et toponymes africains — Liste d'ethnonymes africains",
+                "author": "Ivan Hrbek",
+                "year": 1984,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000189601",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 187",
+                "notes": "UNESCO, Histoire générale de l'Afrique : études et documents, 6, actes de la réunion d'experts de Paris (3-7 juillet 1978). Tableau à quatre colonnes : nom courant, autres graphies ou appellations, peuple apparenté, pays ; lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1967,
+              "to": 2012,
+              "label": "Proposée en 1967, reprise en 2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Padhola serait une forme abrégée de « Par Adhola », « le lieu d'Adhola », du nom du père fondateur des Jopadhola, selon l'historien Bethwell Ogot, cité par Maureen Owor.",
+            "hypothesisGroup": "origine du nom Padhola",
+            "sources": [
+              {
+                "title": "Creating an independent traditional court: a study of Jopadhola clan courts in Uganda",
+                "author": "Maureen Owor",
+                "year": 2012,
+                "url": "https://research-information.bris.ac.uk/ws/portalfiles/portal/32082556/Owor_Creating_independent_traditional_court_Oct_2012.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 220",
+                "notes": "Journal of African Law, vol. 56, n° 2, 2012, p. 215-242. Version publiée déposée par l'université de Bristol ; lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1800,
+              "label": "Migrations luo, de 1500 à 1800"
+            },
+            "era": "polity",
+            "statement": "Le nom Padhola désigne, chez les historiens J. B. Webster, B. A. Ogot et J. P. Chrétien, le pays où apparaît plus tard le clan amor, venu de Pakwac-Pawir ; les traditions padhola font d'Adhola le chef de ces migrations.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+                "author": "J. B. Webster, B. A. Ogot et J. P. Chrétien",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 853 et p. 855",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Adhola",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "adh",
+        "namedBy": null,
+        "shortLine": "Le nom du fondateur que les traditions placent à la tête des Jopadhola.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1992,
+              "to": null,
+              "label": "Depuis 1992"
+            },
+            "era": "modern",
+            "statement": "Le nom Adhola est aussi celui de l'union culturelle Tieng Adhola, fondée en 1992 par les 52 clans, dont le chef porte le titre de kwar adhola, selon Maureen Owor.",
+            "sources": [
+              {
+                "title": "Creating an independent traditional court: a study of Jopadhola clan courts in Uganda",
+                "author": "Maureen Owor",
+                "year": 2012,
+                "url": "https://research-information.bris.ac.uk/ws/portalfiles/portal/32082556/Owor_Creating_independent_traditional_court_Oct_2012.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 219-220",
+                "notes": "Journal of African Law, vol. 56, n° 2, 2012, p. 215-242. Version publiée déposée par l'université de Bristol ; lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1800,
+              "label": "Migrations luo, de 1500 à 1800"
+            },
+            "era": "polity",
+            "statement": "Le nom Adhola désigne, chez J. B. Webster, B. A. Ogot et J. P. Chrétien, un ensemble de clans qui quitte Pakwac-Pawir et rejoint les Owiny à Kaberamaido, avant de descendre vers le sud-est.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+                "author": "J. B. Webster, B. A. Ogot et J. P. Chrétien",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 853-854",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Budama",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom officiel du pays des Jopadhola, écrit depuis 1913 ; son origine est rapportée par la tradition.",
+        "periodLabel": "Écrit depuis 1913 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Budama est le nom officiel du pays que les Jopadhola appellent Padhola, selon Maureen Owor.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Creating an independent traditional court: a study of Jopadhola clan courts in Uganda",
+                "author": "Maureen Owor",
+                "year": 2012,
+                "url": "https://research-information.bris.ac.uk/ws/portalfiles/portal/32082556/Owor_Creating_independent_traditional_court_Oct_2012.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 220",
+                "notes": "Journal of African Law, vol. 56, n° 2, 2012, p. 215-242. Version publiée déposée par l'université de Bristol ; lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1967,
+              "to": 2012,
+              "label": "Rapportée en 1967, reprise en 2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Budama serait la forme luganda de « Widooma », « tu as des ennuis », un cri de guerre des Jopadhola contre les Baganda venus envahir le Padhola et vaincus, selon une tradition rapportée par Bethwell Ogot et reprise par Maureen Owor.",
+            "hypothesisGroup": "origine du nom Budama",
+            "sources": [
+              {
+                "title": "Creating an independent traditional court: a study of Jopadhola clan courts in Uganda",
+                "author": "Maureen Owor",
+                "year": 2012,
+                "url": "https://research-information.bris.ac.uk/ws/portalfiles/portal/32082556/Owor_Creating_independent_traditional_court_Oct_2012.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 220",
+                "notes": "Journal of African Law, vol. 56, n° 2, 2012, p. 215-242. Version publiée déposée par l'université de Bristol ; lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Budama apparaît comme nom d'un des huit comtés du district de Bukedi dans le rapport médical du protectorat de l'Ouganda pour 1913. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Budama",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Uganda Protectorate. Annual Medical and Sanitary Report for the year 1913",
+                "author": "Uganda Protectorate, Medical Department",
+                "year": 1914,
+                "url": "https://archive.org/details/b31490517",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 73",
+                "notes": "Londres, Waterlow & Sons. lu le 11 octobre 2026 dans la numérisation d'Internet Archive (bibliothèque Wellcome)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Badama",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre forme du nom Budama, pour désigner les gens du pays.",
+        "periodLabel": "Employé au XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Badama figure comme autre nom des Padhola dans la liste d'Ivan Hrbek pour l'UNESCO. Nous n'avons pas trouvé de trace plus ancienne de cette forme.",
+            "sources": [
+              {
+                "title": "Ethnonymes et toponymes africains — Liste d'ethnonymes africains",
+                "author": "Ivan Hrbek",
+                "year": 1984,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000189601",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 187",
+                "notes": "UNESCO, Histoire générale de l'Afrique : études et documents, 6, actes de la réunion d'experts de Paris (3-7 juillet 1978). Tableau à quatre colonnes : nom courant, autres graphies ou appellations, peuple apparenté, pays ; lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

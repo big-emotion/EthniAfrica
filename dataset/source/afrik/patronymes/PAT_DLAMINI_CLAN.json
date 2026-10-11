@@ -138,5 +138,164 @@
       "fieldPath": "casteOrSocialFunction",
       "reason": "Clan royal de l'Eswatini : la royauté n'est pas une fonction héréditaire de caste au sens du champ."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Dlamini est un nom de clan nguni. C'est le nom de famille de la famille royale d'Eswatini, et il est porté aussi en Afrique du Sud. Le même nom désigne plusieurs lignées que les généalogies ne relient pas toutes. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Dlamini",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan nguni, celui de la famille royale d'Eswatini.",
+        "periodLabel": "Écrit dès 1905 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "era": "modern",
+            "statement": "Le nom Dlamini reste le nom de famille de la famille royale d'Eswatini, selon la mission permanente du royaume auprès des Nations unies. Elle présente les Nkosi Dlamini comme les ancêtres des Swazi. Les sources ne s'accordent pas sur l'origine du nom ; nous les présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "ESwatini — Country Facts",
+                "author": "Mission permanente du Royaume d'Eswatini auprès des Nations unies",
+                "year": null,
+                "url": "https://www.un.int/eswatini/swaziland/country-facts",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Page de la mission permanente de l'Eswatini auprès des Nations unies, lue le 11 octobre 2026, rubrique « History of the Kingdom of Eswatini ». Elle dit que les ancêtres des Swazi, les Nkosi Dlamini, se sont séparés du courant migratoire nguni conduit par Ngwane, et que Dlamini reste le nom de famille de la famille royale."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Temps de Dingiswayo, selon l'auteur"
+            },
+            "era": "polity",
+            "statement": "Le nom Dlamini est aussi celui d'un petit clan du Zululand, entre la colline esiHlalo et la rivière emBekamuzi, issu d'une branche cadette d'une autre famille. Après la mort de son chef Nyanya, tué par Dingiswayo, ce clan se plaça sous la protection du chef mbatha voisin, selon Alfred T. Bryant.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 28",
+                "notes": "Londres, Longmans, Green and Co., 1929. Bryant écrit depuis la mission catholique du Natal, dans le contexte colonial, à partir de récits recueillis auprès des familles au tournant du siècle. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 28 : le petit clan aba-kwa-Dlamini de l'emBekamuzi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Proposée en 1929"
+            },
+            "statement": "Le nom Dlamini serait celui d'un ancêtre, Dlamini, qui aurait conduit le groupe nguni dit emBo vers le sud, à travers les monts Lubombo. C'est l'ancêtre dont le nom revient le plus souvent chez ces clans, selon Alfred T. Bryant. Sa liste des rois swazi en compte trois de ce nom, mais il la juge peu sûre avant 1700.",
+            "hypothesisGroup": "origine du nom Dlamini",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 314-316",
+                "notes": "Londres, Longmans, Green and Co., 1929. Bryant écrit depuis la mission catholique du Natal, dans le contexte colonial, à partir de récits recueillis auprès des familles au tournant du siècle. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Pages 314 à 316 : le groupe « eMbo (or Dlamini) », la généalogie royale swazie, avec Dlamini Ier, Dlamini II et Mbandeni, appelé Dlamini III, et le passage où Dlamini est présenté comme le « Moïse » de ces clans."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1909,
+              "to": 1909,
+              "label": "Généalogie recueillie en 1909"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dlamini serait aussi celui de l'ancêtre le plus ancien des Hlubi : leur généalogie, donnée en 1909 par un descendant de leur chef Mtimkulu, remonte à un Dlamini. Alfred T. Bryant ne parvient pas à la faire concorder avec celle des Swazi ni avec celle d'une troisième lignée Dlamini.",
+            "hypothesisGroup": "origine du nom Dlamini",
+            "actors": [
+              {
+                "name": "John Zulu Mtimkulu",
+                "role": "donne la généalogie des Hlubi, selon Bryant"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 148",
+                "notes": "Londres, Longmans, Green and Co., 1929. Bryant écrit depuis la mission catholique du Natal, dans le contexte colonial, à partir de récits recueillis auprès des familles au tournant du siècle. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 148 et sa note : la généalogie reçue de John Zulu Mtimkulu, qui remonte à « Dlamini (d. 1630) » ; Bryant pense que ce Dlamini est peut-être le Dlamini Ier des Swazi, et que celui de la lignée ekuNene est « another individual altogether »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Proposée en 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Dlamini viendrait de deux mots zoulous soudés, le verbe dla, « manger », et emini, « à midi » : il voudrait dire « manger à midi ». C'est l'analyse de Celani Lucky Zwane.",
+            "hypothesisGroup": "origine du nom Dlamini",
+            "sources": [
+              {
+                "title": "The Morphological Analysis of Zulu Clan Names",
+                "author": "Celani Lucky Zwane",
+                "year": 2020,
+                "url": "https://doi.org/10.5430/elr.v9n3p36",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 43",
+                "notes": "English Linguistics Research, vol. 9, n° 3, Sciedu Press, 2020, p. 36-49. Analyse des noms de clan zoulous à partir de cinquante entretiens menés près de Ladysmith, au KwaZulu-Natal. Lu dans le PDF de l'éditeur le 11 octobre 2026. Paragraphe 6.4.1, Dlamini."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dlamini est écrit « Dhlamini » par Alfred T. Bryant, dans un exemple de son dictionnaire : ceux du clan Dhlamini sont originaires du Swaziland. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; les lignées qui le portent sont bien plus anciennes.",
+            "formAsWritten": "Dhlamini",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Alfred T. Bryant",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Zulu-English Dictionary with Notes on Pronunciation, a Revised Orthography and Derivations and Cognate Words from Many Languages",
+                "author": "Alfred T. Bryant",
+                "year": 1905,
+                "url": "https://archive.org/details/zuluenglishdicti00brya",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 89",
+                "notes": "Pinetown (Natal), Mariannhill Mission Press, 1905. Le dictionnaire s'ouvre sur une courte histoire du peuple zoulou, paginée à part avec un astérisque. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 89, à l'article Dabuka : « abakwa'Dhlamini badabuka eSwazini, those of the Dhlamini stock had their origin in Swaziland »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

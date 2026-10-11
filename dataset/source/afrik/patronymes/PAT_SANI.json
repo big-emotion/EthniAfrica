@@ -125,5 +125,87 @@
       "fieldPath": "bearers",
       "reason": "Le communiqué présidentiel consulté concerne un porteur vivant ; les recherches « Sani Nigeria obituary biography » n'ont pas fourni de notice officielle dédiée à un autre porteur décédé retenable."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sani est un nom personnel haoussa qui marque le rang de naissance : il désigne le deuxième fils d'une famille dont les garçons portent tous le nom du Prophète. Il se lit aussi au Nigeria en dernière position d'un nom complet. Les sources savantes lues ne disent pas d'où vient le mot.",
+    "names": [
+      {
+        "nameText": "Sani",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "hau",
+        "namedBy": null,
+        "shortLine": "Un nom haoussa donné au deuxième fils quand ses frères portent tous le nom du Prophète.",
+        "periodLabel": "Écrit dès 1981 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sani est un nom de rang de naissance : quand des parents haoussa nomment tous leurs fils d'après le Prophète, le deuxième reçoit le nom Sani, qui remplace le nom du Livre, selon Pauline M. Ryan. Les sources savantes lues ne disent pas d'où vient le mot.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 143",
+                "notes": "Names, vol. 29, no 2, 1981, p. 139-164. Lu dans le PDF intégral le 11 octobre 2026. L'étude porte sur les noms des Haoussa du nord du Nigeria, musulmans pour la plupart ; la majorité des noms donnés lors de la cérémonie du nom y sont tirés du Coran. Tableau II : noms des garçons d'une même famille qui partagent le nom du Livre Mohammed ; « Second child — Sani ». Ces noms remplacent le nom du Livre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "1981"
+            },
+            "era": "modern",
+            "statement": "Le nom Sani figure dans l'étude de Pauline M. Ryan sur les noms haoussa, publiée en 1981, parmi les noms donnés aux garçons d'une même famille qui partagent le nom de Mohammed. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand une autrice l'a noté, pas depuis quand il est donné.",
+            "formAsWritten": "Sani",
+            "birth": true,
+            "sources": [
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 143",
+                "notes": "Names, vol. 29, no 2, 1981, p. 139-164. Lu dans le PDF intégral le 11 octobre 2026. L'étude porte sur les noms des Haoussa du nord du Nigeria, musulmans pour la plupart ; la majorité des noms donnés lors de la cérémonie du nom y sont tirés du Coran. Tableau II : « Second child — Sani »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2026,
+              "to": 2026,
+              "label": "2026"
+            },
+            "era": "modern",
+            "statement": "Le nom Sani se lit aujourd'hui au Nigeria en dernière position de noms complets, comme dans un communiqué de la présidence de 2026.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "President Tinubu Appoints Governor Uba Sani of Kaduna State as Renewed Hope Ambassador and Deputy Director-General",
+                "author": "State House, Abuja",
+                "year": 2026,
+                "url": "https://statehouse.gov.ng/president-tinubu-appoints-governor-uba-sani-of-kaduna-state-as-renewed-hope-ambassador-and-deputy-director-general/",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Communiqué de la présidence du Nigeria daté du 18 février 2026, lu le 11 octobre 2026. Il écrit le nom complet Uba Sani, avec Sani en dernière position."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

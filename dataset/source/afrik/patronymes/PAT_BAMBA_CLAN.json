@@ -136,5 +136,204 @@
       "fieldPath": "bearers",
       "reason": "Aucun porteur n'a été rattaché au jamu par les sources consultées : ni l'Histoire générale de l'Afrique, qui ne connaît le mot Bamba que comme toponyme, ni le dictionnaire des jamuw, qui localise l'entrée à Sikasso sans nommer personne. Le porteur le mieux documenté du nom, Cheikh Ahmadou Bamba Mbacké, relève précisément de l'homonymie signalée plus haut et non de ce jamu."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Bamba est un nom de clan des Dioula et des Bambara, transmis comme nom de famille ; on l'écrit Bánbà en bambara. Les sources rapportent deux explications de son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Bamba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan dioula et bambara, écrit dès 1892 ; des récits le relient au crocodile.",
+        "periodLabel": "Écrit dès 1892 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bamba désigne un clan qui compte le crocodile, bàma, parmi ses interdits. Des récits relient le nom à cet animal ; aucun dictionnaire lu ne le confirme, et nous présentons ces récits séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 11 octobre 2026. Entrée Bánbà : interdits bàma (crocodile), bása (lézard) et nkɔ̀rɔngɔ (cobra cracheur) ; aucun sens n'est donné au nom."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18-19",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, 2017, dirigé par A. Davydov et relu par V. Vydrin, lu en texte intégral le 11 octobre 2026 ; traduction du russe par nos soins. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Notice Bánbà : interdits, étymologie populaire et récit d'origine."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bamba est situé à Sikasso, au Mali, par le dictionnaire des noms de clan, qui le donne à des forgerons comme à des hommes libres ; un mémoire de 2017 le donne aussi chez les Sénoufo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 11 octobre 2026. Entrée Bánbà : lieu Sikasso, statuts nùmu et hɔ́rɔn."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, 2017, dirigé par A. Davydov et relu par V. Vydrin, lu en texte intégral le 11 octobre 2026 ; traduction du russe par nos soins. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Notice Bánbà : Sénoufo et Bambara de Sikasso ; les Bamba descendants de guerriers comptent parmi les hommes libres, d'après Molinie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1892,
+              "label": "Voyage de 1887-1889, récit publié en 1892"
+            },
+            "statement": "Le nom Bamba compte parmi les noms de clan des Dioula, à côté de Diara, Kouroubari, Sakho, Diabakhaté et Traouré, selon Louis-Gustave Binger.",
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, tome 2",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74721",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 2, p. 393",
+                "notes": "Paris, Hachette, 1892, deux tomes. Lu dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée, le 11 octobre 2026. Officier et voyageur de l'époque coloniale, cité ici pour les formes qu'il relève. « On trouve parmi eux des Diara, des Kouroubari, des Sakho, des Bamba, des Diabakhaté, des Traouré »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1892,
+              "label": "Voyage de 1887-1889, récit publié en 1892"
+            },
+            "era": "polity",
+            "statement": "Le nom Bamba apparaît par écrit chez Louis-Gustave Binger : au village de Tasalima, les Ligouy « ont pour diammou Bamba », c'est-à-dire pour nom de clan, et se disent venus de l'ouest. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un voyageur l'a noté, pas depuis quand des familles le portent.",
+            "formAsWritten": "Bamba",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Louis-Gustave Binger",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, tome 2",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74721",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 2, p. 151",
+                "notes": "Paris, Hachette, 1892, deux tomes. Lu dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée, le 11 octobre 2026. Officier et voyageur de l'époque coloniale, cité ici pour les formes qu'il relève. « Les Ligouy de Tasalima ont pour diammou Bamba ; ils savent qu'ils font partie du groupe mandé veï »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Bamba viendrait du mot bama, « crocodile », selon une étymologie populaire que relève le mémoire d'E. A. Bogacheva.",
+            "hypothesisGroup": "origine du nom Bamba",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, 2017, dirigé par A. Davydov et relu par V. Vydrin, lu en texte intégral le 11 octobre 2026 ; traduction du russe par nos soins. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Notice Bánbà, rubrique « étymologie populaire » : « Bamba = bama, crocodile », sans source nommée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1959,
+              "to": 1959,
+              "label": "Rapporté en 1959"
+            },
+            "statement": "Le nom Bamba viendrait d'un Keïta sauvé par un crocodile : en souvenir, lui et ses descendants auraient pris le nom Bamba et le crocodile pour animal protecteur, selon L. Molinie, cité par E. A. Bogacheva.",
+            "hypothesisGroup": "origine du nom Bamba",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 19",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, 2017, dirigé par A. Davydov et relu par V. Vydrin, lu en texte intégral le 11 octobre 2026 ; traduction du russe par nos soins. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Notice Bánbà, passage marqué [MO] : L. Molinie, « Les systèmes patronymiques au Soudan central », 1959, document ronéotypé que nous n'avons pas pu lire."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bánbà",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bam",
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bánbà est l'écriture bambara de Bamba dans le dictionnaire des noms de clan.",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 11 octobre 2026. Entrée Bánbà."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

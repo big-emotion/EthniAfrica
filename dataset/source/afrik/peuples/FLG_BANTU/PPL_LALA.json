@@ -3,6 +3,155 @@
   "nameMain": "Lala",
   "languageFamilyId": "FLG_BANTU",
   "currentCountries": ["ZMB"],
+  "nameHistory": {
+    "summary": "Le nom Lala désigne un peuple bantou du centre de la Zambie, autour de Serenje, qui se nomme lui-même Lala. Sa langue s'appelle localement ilala. Les sources que nous avons lues n'expliquent pas l'origine de ces noms ; nous présentons plus bas leurs plus anciennes traces.",
+    "names": [
+      {
+        "nameText": "Lala",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "leb",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple du centre de la Zambie.",
+        "periodLabel": "Écrit Ba-lala en 1897 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Lala désigne un peuple du district de Serenje, dans la province centrale de la Zambie, qui vit sous l'autorité du chef Chitambo et d'autres chefs, selon Sitwe Benson Mkandawire et Harrison Daka. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Cultural Preservation Literacy in Zambia: A Case Study of the Lala People of Serenje District",
+                "author": "Sitwe Benson Mkandawire et Harrison Daka",
+                "year": null,
+                "url": "https://dspace.unza.zm/server/api/core/bitstreams/c53ebc1e-2380-4aff-9b69-2b4d9fd13057/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 143",
+                "notes": "Multidisciplinary Journal of Language and Social Sciences Education, université de Zambie, vol. 1, n° 1, lu en texte intégral le 11 octobre 2026 ; l'année n'est pas imprimée sur l'exemplaire lu. Page 143 : « Their primary language is Lala locally known as Ilala » ; les Lala vivent dans le district de Serenje, sous le chef Chitambo et d'autres chefs."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1897,
+              "label": "1897"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lala apparaît sous une forme proche, Ba-lala, chez Harry Johnston, commissaire britannique en Afrique centrale : il range les Ba-lala avec les Ba-ramba dans un ensemble de peuples qui vivent au bord de la Kafue et entre la Luapula et la Luangwa. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Ba-lala",
+            "birth": true,
+            "sources": [
+              {
+                "title": "British Central Africa",
+                "author": "Harry H. Johnston",
+                "year": 1897,
+                "url": "https://archive.org/details/britishafrica00johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 390-391",
+                "notes": "Londres, Methuen, 1897, lu dans l'exemplaire numérisé d'archive.org le 11 octobre 2026 : « The Ba-tonga or Ba-toka stock, which includes amongst other sections the Ba-ramba and Ba-lala, and which occupies the country on the banks of the River Kafue and between the Luapula and the Luangwa ». L'auteur était commissaire britannique en Afrique centrale."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1875,
+              "to": 1885,
+              "label": "Vers 1880"
+            },
+            "era": "polity",
+            "statement": "Le nom Lala désigne, chez Allen Isaacman et Jan Vansina, l'un des peuples de l'actuelle Zambie organisés en petites unités politiques à la veille de la conquête européenne, comme les Bisa.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 8 : Initiatives et résistances africaines en Afrique centrale de 1880 à 1914",
+                "author": "Allen Isaacman et Jan Vansina",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 191",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ilala",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "leb",
+        "namedBy": null,
+        "shortLine": "Le nom local de la langue lala, et le nom d'un pays dans le récit de la mort de Livingstone.",
+        "periodLabel": "Écrit en 1874 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ilala est celui que l'on donne localement à la langue lala, selon Sitwe Benson Mkandawire et Harrison Daka.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Cultural Preservation Literacy in Zambia: A Case Study of the Lala People of Serenje District",
+                "author": "Sitwe Benson Mkandawire et Harrison Daka",
+                "year": null,
+                "url": "https://dspace.unza.zm/server/api/core/bitstreams/c53ebc1e-2380-4aff-9b69-2b4d9fd13057/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 143",
+                "notes": "Multidisciplinary Journal of Language and Social Sciences Education, université de Zambie, vol. 1, n° 1, lu en texte intégral le 11 octobre 2026 ; l'année n'est pas imprimée sur l'exemplaire lu. Page 143 : « Their primary language is Lala locally known as Ilala » ; les Lala vivent dans le district de Serenje, sous le chef Chitambo et d'autres chefs."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1873,
+              "to": 1874,
+              "label": "1873, publié en 1874"
+            },
+            "era": "polity",
+            "statement": "Le nom Ilala apparaît dans le dernier journal de David Livingstone, publié par Horace Waller : c'est le pays du chef Chitambo, où l'explorateur meurt en avril 1873, et que ses compagnons Susi et Chuma traversent ensuite. Le livre l'appelle « Ilala des Wabisa ». C'est la plus ancienne trace de ce nom que le projet connaît. Le pays et ses habitants existaient déjà avant elle.",
+            "formAsWritten": "Ilala",
+            "birth": true,
+            "actors": [
+              {
+                "name": "David Livingstone",
+                "role": "explorateur et missionnaire écossais"
+              },
+              {
+                "name": "Susi et Chuma",
+                "role": "compagnons de Livingstone, sources du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Last Journals of David Livingstone in Central Africa, from 1865 to his death, vol. II",
+                "author": "David Livingstone, édité par Horace Waller",
+                "year": 1874,
+                "url": "https://archive.org/details/lastjournalsofda02livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "vol. II, p. 320",
+                "notes": "Londres, John Murray, 1874, lu dans l'exemplaire numérisé d'archive.org le 11 octobre 2026. Le passage vient du récit de Horace Waller, fait d'après Susi et Chuma, les compagnons de Livingstone : ils « continued their course through Ilala ». Le sommaire du chapitre XII parle de « Chitambo's in Ilala of the Wabisa » et une gravure porte la légende « 29 April, 1873. Ilala »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Lala",

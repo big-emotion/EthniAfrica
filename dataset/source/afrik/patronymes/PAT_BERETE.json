@@ -169,5 +169,310 @@
       "fieldPath": "alliances",
       "reason": "Le dictionnaire des jamuw relie ce nom à Jane par un lien de plaisanterie. Ce nom n'a pas encore de fiche chez nous : le lien ne peut donc pas être représenté."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Bérété est un nom de clan, ou jamu, porté chez les Malinké et les Soninké, que les traditions du Manden rattachent aux marabouts. On l'écrit aussi Berete ou Bèrete. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Bérété",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan malinké et soninké, lié aux marabouts ; son origine est débattue.",
+        "periodLabel": "Écrit depuis 1907",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bérété est un nom de clan que le dictionnaire des noms de clan mandingues écrit Bèrete, avec les formes Bèrte et Bérete. Ce dictionnaire le range parmi les familles libres et ne lui donne pas de sens. Son origine reste discutée, et chaque explication est présentée à part.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée Bèrete",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence. Fichier complet consulté le 11 octobre 2026 : l'entrée Bèrete, datée de 2010, donne les formes Bèrte et Bérete, le statut hɔ̀rɔn (homme libre), trois marqueurs de peuple et une note en russe sur les marabouts ; elle ne donne pas de sens au nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bérété est porté chez les Malinké, les Sénoufo et les Soninké. Les Bérété y sont décrits comme des marabouts ou, là où l'islam n'est pas entré, comme des guérisseurs, selon E. A. Bogacheva.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 20-21",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov ; titre traduit du russe. Lu le 11 octobre 2026 dans le PDF déposé, pagination imprimée. Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par Valentin Vydrine et Artem Davydov. Un mémoire de licence n'est pas relu par des pairs : il est cité pour les témoignages qu'il transmet. Notice Bèrete : peuples maninka, sénoufo et soninké ; marabouts ou, dans les régions non islamisées, guérisseurs-sorciers (bolotigiw), comptés parmi les « cinq premiers musulmans »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "Décrit en 2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Bérété figure parmi les noms de famille malinkés, avec Camara, Keïta et Cissé, dans un rapport malien de 2015 sur les obstacles à la paix.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Autoportrait du Mali — Les Obstacles à la Paix",
+                "author": "Institut malien de recherche action pour la paix et Interpeace",
+                "year": 2015,
+                "url": "https://www.interpeace.org/wp-content/uploads/2015/03/2015_03_02_Mali_Autoportrait_FR.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 26",
+                "notes": "Rapport de recherche-action, mars 2015, lu le 11 octobre 2026. Page 26 : pour chaque grand groupe du Mali, quelques noms de famille suivis de « etc. ». La liste est illustrative et ne dit pas d'où viennent les noms."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bérété apparaît par écrit chez André Arcin, administrateur colonial, qui compte les Bérété parmi les tribus soninké parties vers le Manding à la chute de l'empire du Ouagadou, avec les Cissé, les Touré et les Koma. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; le clan qui le porte est plus ancien que ce livre.",
+            "formAsWritten": "Bérété",
+            "birth": true,
+            "actors": [
+              {
+                "name": "André Arcin",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "La Guinée française",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 281",
+                "notes": "Paris, Challamel, 1907. Lu le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org. L'auteur est un administrateur colonial, à lire comme tel. Page 281 : « à la chute de l'empire du Ouagadou, de nombreuses tribus Soninké se désagrégèrent et allèrent dans le Manding. Il en fut ainsi des Cissé, des Touré, des Koma, des Bérété »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bérété est celui des familles qui passent pour avoir introduit l'islam dans le Kouloukalan, en Haute-Guinée, selon André Arcin.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La Guinée française",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 505",
+                "notes": "Paris, Challamel, 1907. Lu le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org. L'auteur est un administrateur colonial, à lire comme tel. Page 505 : « dans le Kouloukalan l'Islam est représenté par les Bérété, qui passent pour l'avoir introduit dans cette région »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Temps de Soundiata, selon les traditions"
+            },
+            "era": "polity",
+            "statement": "Le nom Bérété est celui de l'un des cinq clans de marabouts proclamés « gardiens de la foi » après la victoire de Soundiata, avec les Touré, selon Djibril Tamsir Niane, qui suit la tradition du Manden.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 158",
+                "notes": "UNESCO, 1985 ; chapitre de D. T. Niane, édition française. Pages relues le 11 octobre 2026 dans une copie non officielle de l'édition française déposée sur archive.org (unesco-histoire-generale-d-afrique), pagination imprimée. Page 158 : « Les cinq clans maraboutiques alliés de la première heure, dont les Ture et les Berete [...] furent proclamés les « cinq gardiens de la foi » »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Temps de Soundiata, selon l'épopée"
+            },
+            "era": "polity",
+            "statement": "Le nom Bérété figure dans l'épopée de Soundiata : à Kouroukan Fougan, les Cissé, les Bérété et les Touré sont proclamés grands marabouts de l'empire. C'est le récit du griot Djeli Mamadou Kouyaté, transcrit par Djibril Tamsir Niane.",
+            "sources": [
+              {
+                "title": "Soundjata ou l'épopée mandingue",
+                "author": "Djibril Tamsir Niane, d'après le récit du griot Djeli Mamadou Kouyaté",
+                "year": 1960,
+                "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 141",
+                "notes": "Présence Africaine. Récit du griot Djeli Mamadou Kouyaté, de Djeliba Koro près de Siguiri, mis par écrit et traduit par Djibril Tamsir Niane. Page lue le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org (SoundjataOuLepopeeMandingue), proche de l'édition imprimée sans s'y confondre. Page 141 : « les Cisse, les Berete, les Toure furent proclames grands marabouts de l'empire »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant le nom Bérété, selon ce récit"
+            },
+            "era": "polity",
+            "statement": "Mànsarén serait le nom que portaient les Bérété avant de prendre le leur, selon l'ouvrage en n'ko de Souleymane Kanté, traduit en russe par E. A. Bogacheva.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov ; titre traduit du russe. Lu le 11 octobre 2026 dans le PDF déposé, pagination imprimée. Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par Valentin Vydrine et Artem Davydov. Un mémoire de licence n'est pas relu par des pairs : il est cité pour les témoignages qu'il transmet. Notice Bèrete : « Bérete раньше были Mànsarén », « les Bérete étaient auparavant Mànsarén ». Le mémoire traduit en russe un ouvrage en n'ko de Souleymane Kanté sur les noms de clan du Manden, dont il cite l'édition de 2004 ; nous n'avons pas lu le texte en n'ko."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Bérété viendrait de bere, « bâton », et de te : il voudrait dire « celui qui porte le bâton », selon une étymologie populaire que relève le mémoire d'E. A. Bogacheva.",
+            "hypothesisGroup": "origine du nom Bérété",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov ; titre traduit du russe. Lu le 11 octobre 2026 dans le PDF déposé, pagination imprimée. Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par Valentin Vydrine et Artem Davydov. Un mémoire de licence n'est pas relu par des pairs : il est cité pour les témoignages qu'il transmet. Notice Bèrete, rubrique « étymologie populaire » : Berete = bere (bâton) + te, « celui qui porte le bâton », sans indication de source."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Bérété viendrait de « bɛ́dɛ tɛ́ », « il n'est pas bon » : on l'aurait dit de Mànján, un héritier trop jeune pour régner sur le Manden, et la formule répétée serait devenue « Mànján Bérete ». Ses descendants, écartés du pouvoir, seraient devenus marabouts. C'est le récit d'un ouvrage en n'ko de Souleymane Kanté, selon la traduction russe d'E. A. Bogacheva.",
+            "hypothesisGroup": "origine du nom Bérété",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov ; titre traduit du russe. Lu le 11 octobre 2026 dans le PDF déposé, pagination imprimée. Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par Valentin Vydrine et Artem Davydov. Un mémoire de licence n'est pas relu par des pairs : il est cité pour les témoignages qu'il transmet. Notice Bèrete : récit de Mànján, dit « bɛ́dɛ tɛ́ » (« pas bon »), formule devenue Mànján Bérete à force d'être répétée. Le mémoire traduit en russe un ouvrage en n'ko de Souleymane Kanté sur les noms de clan du Manden, dont il cite l'édition de 2004 ; nous n'avons pas lu le texte en n'ko."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Rapportée en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bérété serait celui de familles de souche soninké venues des environs de Nioro, dont le premier patriarche serait Mamadou Boudambouré, selon André Arcin, administrateur colonial.",
+            "hypothesisGroup": "origine des familles Bérété",
+            "sources": [
+              {
+                "title": "La Guinée française",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 311",
+                "notes": "Paris, Challamel, 1907. Lu le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org. L'auteur est un administrateur colonial, à lire comme tel. Page 311 : « Les Bérété, dont nous trouvons quelques villages dans la Haute-Guinée (Baléya, Nono, Kouloukalan, etc.). Ils descendent de souche Soninké et sont venus des environs de Nioro (premier patriarche : Mamadou Boudambouré) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1959,
+              "to": 1959,
+              "label": "Rapportée en 1959"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bérété serait celui de familles venues d'un village de la province de Sikasso, selon les légendes d'origine que rapporte l'officier Molinie, cité par E. A. Bogacheva. Le même auteur rattache une partie des Bérété au groupe Keïta, Konaté et Coulibaly, et une autre, peut-être les seuls griots, aux Diabaté.",
+            "hypothesisGroup": "origine des familles Bérété",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov ; titre traduit du russe. Lu le 11 octobre 2026 dans le PDF déposé, pagination imprimée. Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par Valentin Vydrine et Artem Davydov. Un mémoire de licence n'est pas relu par des pairs : il est cité pour les témoignages qu'il transmet. Notice Bèrete, rubrique « histoire de l'origine », d'après Molinie. L'autrice cite le dictionnaire de 1959 de Molinie, officier de la marine française, rédigé pour les Européens en poste en Afrique-Occidentale française ; elle met en garde contre ses généralisations, et l'informateur n'est pas nommé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "Rapportée en 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Bérété est rangé parmi les noms de clan du Wago, l'une des trois grandes divisions des Soninké, dont le berceau serait le Wagadou, selon E. A. Bogacheva.",
+            "hypothesisGroup": "origine des familles Bérété",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 142",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov ; titre traduit du russe. Lu le 11 octobre 2026 dans le PDF déposé, pagination imprimée. Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par Valentin Vydrine et Artem Davydov. Un mémoire de licence n'est pas relu par des pairs : il est cité pour les témoignages qu'il transmet. Notice Wago : « une des trois grandes subdivisions des Soninké, dont le berceau est tenu pour être le Wagadou » ; Bèrete figure dans sa liste de noms de clan."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

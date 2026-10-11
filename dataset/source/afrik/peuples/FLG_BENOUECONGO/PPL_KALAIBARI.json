@@ -3,6 +3,125 @@
   "nameMain": "Kalabari",
   "languageFamilyId": "FLG_BENOUECONGO",
   "currentCountries": ["NGA"],
+  "nameHistory": {
+    "summary": "Le nom Kalabari désigne un peuple ijo de l'est du delta du Niger, dans l'État de Rivers, au Nigeria, et son ancien État, Elem Kalabari. Les documents européens l'ont longtemps appelé New Calabar, le « Nouveau Calabar ». Les sources que nous avons lues n'expliquent pas l'origine du nom Kalabari ; nous présentons plus bas ses plus anciennes traces.",
+    "names": [
+      {
+        "nameText": "Kalabari",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ijn",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple ijo et de son ancien État, Elem Kalabari.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom Elem Kalabari désigne, chez l'historien Ebiegberi J. Alagoa, l'un des États que les groupes ijo de l'est du delta ont bâtis autour de villes, avec Nembe, Bonny et Okrika. Les sources que nous avons lues n'expliquent pas l'origine du nom Kalabari, et nous ne connaissons pas sa plus ancienne trace écrite.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 27 : Le delta du Niger et le Cameroun",
+                "author": "Ebiegberi J. Alagoa",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 777",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1600,
+              "to": 1799,
+              "label": "XVIIe et XVIIIe siècles"
+            },
+            "era": "polity",
+            "statement": "Le nom Kalabari désigne, chez E. J. Alagoa, l'un des États du delta oriental, comme Bonny, Okrika et Nembe, que la traite des esclaves et le commerce à longue distance ont aidé à se former. Leurs fondateurs seraient venus de l'eau douce du delta central, d'après les traditions orales.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 15 : Les Fon et les Yoruba, du delta du Niger au Cameroun",
+                "author": "E. J. Alagoa",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 497",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026. Le texte imprime « Elem Kalahari (Nouveau Calabar) » ; il date ce type d'État du XVIIIe siècle et dit ces États « en plein essor dès le XVIIe siècle » (p. 500)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "New Calabar",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "eng",
+        "namedBy": null,
+        "shortLine": "Le nom que les documents européens donnaient à Elem Kalabari.",
+        "periodLabel": "Écrit dès 1705",
+        "accounts": [
+          {
+            "period": {
+              "from": 1705,
+              "to": 1705,
+              "label": "1705"
+            },
+            "era": "polity",
+            "statement": "Le nom New Calabar apparaît, écrit « New Calbary », chez le marchand hollandais Willem Bosman, qui cite « Old and New Calbary » parmi les lieux de commerce du golfe de Guinée. C'est la plus ancienne trace de ce nom que le projet connaît. Bosman ne dit rien des gens qui y vivent.",
+            "formAsWritten": "New Calbary",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A New and Accurate Description of the Coast of Guinea, divided into the Gold, the Slave, and the Ivory Coasts",
+                "author": "Willem Bosman",
+                "year": 1705,
+                "url": "https://archive.org/details/newaccuratedescr00bosm",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 399",
+                "notes": "Londres, 1705, traduction anglaise de l'édition hollandaise de 1704 ; lu dans la réimpression de 1907 numérisée sur archive.org, qui garde la pagination, le 11 octobre 2026. Lettre XX : « The Trading-Places are Rio Formosa […] Next is Rio d'Elrei or King's River, and Camarones, together with Old and New Calbary ». L'index renvoie à « Calbary (old and new) Places for Trade in the Gulph, 399 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1874,
+              "to": 1874,
+              "label": "1874"
+            },
+            "era": "polity",
+            "statement": "Le nom New Calabar est celui que donnent les documents à Elem Kalabari, où la Church Missionary Society, sous la conduite de l'évêque Ajayi Crowther, ouvre une mission en 1874, selon Ebiegberi J. Alagoa.",
+            "actors": [
+              {
+                "name": "Ajayi Crowther",
+                "role": "évêque anglican, ancien esclave nigérian"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 27 : Le delta du Niger et le Cameroun",
+                "author": "Ebiegberi J. Alagoa",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 778",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "classificationStatus": "contested",
   "content": {
     "appellations": {

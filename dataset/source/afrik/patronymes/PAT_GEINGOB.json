@@ -137,5 +137,140 @@
       "fieldPath": "homonyms",
       "reason": "Les catalogues d'archives de l'Université de Namibie et des Nations unies, la presse namibienne et les recherches onomastiques sur Geingob n'ont révélé aucune forme identique rattachée à une origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Geingob est un nom de famille damara, en Namibie. En khoekhoegowab, sa finale change avec le genre : Geingob au masculin, Geingos au féminin. On ne sait pas avec certitude ce que veut dire le radical Geing- : les sources consultées ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Geingob",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "naq",
+        "namedBy": null,
+        "shortLine": "Un nom de famille damara, de Namibie, à la forme masculine.",
+        "periodLabel": "Écrit dès 1967 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Geingob finit par -b, la marque du masculin singulier en khoekhoegowab, la langue des Damara et des Nama ; le même nom au féminin finit par -s. Les sources consultées n'expliquent pas le radical Geing-.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Lexical borrowing by Khoekhoegowab from Cape Dutch and Afrikaans",
+                "author": "Wilfrid H. G. Haacke",
+                "year": 2015,
+                "url": "https://spilplus.journals.ac.za/pub/article/view/653/616",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 59",
+                "notes": "Stellenbosch Papers in Linguistics Plus, vol. 47, 2015, p. 59-74. Lu le 11 octobre 2026. Page 59 : en khoekhoegowab, langue des Nama, des Damara et des Haiǁom, le genre est marqué par une finale ajoutée au nom, « s for feminine », « b for masculine »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1967,
+              "to": 1967,
+              "label": "1967"
+            },
+            "statement": "Le nom Geingob apparaît par écrit dans le titre d'un texte de Gottfried Hage Geingob daté de Londres, que conservent les archives de l'Université de Namibie. C'est la plus ancienne trace de ce nom que le projet connaît ; la famille qui le porte est plus ancienne que ce texte.",
+            "formAsWritten": "Geingob",
+            "birth": true,
+            "sources": [
+              {
+                "title": "GEINGOB, Hage Gottfried. Experiences as a student and as a teacher / by Gottfried Hage Geingob. - London, 1967",
+                "author": "Archives de l'Université de Namibie",
+                "year": 1967,
+                "url": "https://archives.unam.edu.na/index.php/geingob-hage-gottfried-experiences-as-student-and-as-teacher-by-gottfried-hage-geingob-london-1967",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "notice PA 4/1/1/70",
+                "notes": "Notice d'archive de la collection de l'Institut des Nations unies pour la Namibie. Lu le 11 octobre 2026. L'année 1967 et le lieu, Londres, ne figurent que dans le titre de la notice."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Geingob est celui de Hage Geingob, que la radiotélévision namibienne dit issu du clan damara ǀGaio-Daman. Le reportage ne dit pas si le nom de famille vient de ce clan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Damara community urged to uphold values of unity",
+                "author": "Blanche Goreses",
+                "year": null,
+                "url": "https://nbcnews.na/node/103262",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Namibian Broadcasting Corporation, reportage sur le 46e festival culturel damara, à Okombahe ; la page ne donne pas de date précise. Lu le 11 octobre 2026. Monica Geingos y porte la tenue traditionnelle ǀGaio-Daman, « the clan from which her husband originates »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Geingos",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "naq",
+        "namedBy": null,
+        "shortLine": "La forme féminine du nom de famille Geingob.",
+        "periodLabel": "Écrit dès 2024 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Geingos est la forme féminine de Geingob : en khoekhoegowab, la finale -s marque le féminin singulier, selon le linguiste Wilfrid Haacke.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Lexical borrowing by Khoekhoegowab from Cape Dutch and Afrikaans",
+                "author": "Wilfrid H. G. Haacke",
+                "year": 2015,
+                "url": "https://spilplus.journals.ac.za/pub/article/view/653/616",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 59",
+                "notes": "Stellenbosch Papers in Linguistics Plus, vol. 47, 2015, p. 59-74. Lu le 11 octobre 2026. Page 59 : en khoekhoegowab, langue des Nama, des Damara et des Haiǁom, le genre est marqué par une finale ajoutée au nom, « s for feminine », « b for masculine »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Geingos apparaît dans le journal The Namibian, qui nomme Nangula Geingos, fille aînée de Hage Geingob. C'est la plus ancienne trace de cette forme que le projet connaît ; elle dit quand un journal l'a notée, pas depuis quand elle est portée.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Papa was indeed a father of the nation — Geingob's daughter",
+                "author": "Shelleygan Petersen",
+                "year": 2024,
+                "url": "https://www.namibian.com.na/papa-was-indeed-a-father-of-the-nation-geingobs-daughter/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "The Namibian, 22 février 2024. Lu le 11 octobre 2026. « Nangula Geingos, the oldest daughter of president Hage Geingob » ; son cousin s'appelle Lemmy Geingob."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

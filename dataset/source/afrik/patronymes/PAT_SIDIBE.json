@@ -139,5 +139,194 @@
       "fieldPath": "transmissionMode",
       "reason": "Rainer et Trebbi expliquent l’identification peule/malinké de Sidibé sans décrire la règle de transmission du nom ; aucun travail onomastique dédié établissant une filiation patrilinéaire, matrilinéaire ou élective n’a été trouvé."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sidibé est l'un des quatre grands noms de clan des Peuls, avec Diallo, Diakité et Sangaré. Il est porté notamment au Mali, en Guinée et au Burkina Faso, souvent par des familles du Ouassoulou. On l'écrit aussi Sidibe. On ne sait pas avec certitude d'où il vient : les sources consultées n'en proposent aucune explication.",
+    "names": [
+      {
+        "nameText": "Sidibé",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un des quatre grands noms de clan peuls ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit depuis 1892",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sidibé est un nom de clan que le dictionnaire des noms de clan mandingues écrit Sídìbe. Ce dictionnaire le rattache aux Peuls et au Ouassoulou et lui donne pour équivalents So et Sow, mais ne lui donne pas de sens. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée Sídìbe",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence. Fichier complet consulté le 11 octobre 2026 : l'entrée Sídìbe, datée de 2010, porte les marqueurs ful et was, les équivalents So et Sow et quatre partenaires de plaisanterie ; elle ne donne pas de sens au nom."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 126",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov ; titre traduit du russe. Lu le 11 octobre 2026 dans le PDF déposé, pagination imprimée. Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par Valentin Vydrine et Artem Davydov. Un mémoire de licence n'est pas relu par des pairs : il est cité pour les témoignages qu'il transmet. Notice Sídìbɛ : peuples peul et « was », équivalent So, sans histoire du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "Décrit en 2006"
+            },
+            "era": "modern",
+            "statement": "Le nom Sidibé est celui de l'un des quatre clans principaux des Peuls, avec Diallo, Diakité et Sangaré. Les Sidibé et les Sangaré y forment un couple tenu pour équivalent, selon Youssouf Diallo, qui a enquêté chez les Peuls de l'ouest du Burkina Faso.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Identités et relations de plaisanterie chez les Peuls de l'ouest du Burkina Faso",
+                "author": "Youssouf Diallo",
+                "year": 2006,
+                "url": "https://journals.openedition.org/etudesafricaines/15399",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 16",
+                "notes": "Cahiers d'études africaines, n° 184, 2006, p. 779-794. Relu le 11 octobre 2026 dans une copie archivée de l'édition OpenEdition. Paragraphe 16 : « l'ensemble ethnique peul est composé de quatre clans principaux : Diallo, Diakite, Sidibe et Sangare », les couples Diallo/Diakite et Sidibe/Sangare étant « en relations d'équivalence »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "Décrit en 2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Sidibé est porté en Guinée par des familles venues du Ouassoulou, des Peuls qui ont pris la langue et les coutumes des Malinké. C'est pourquoi on les dit tantôt peuls, tantôt malinkés, selon Ilia Rainer et Francesco Trebbi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "New Tools for the Analysis of Political Power in Africa",
+                "author": "Ilia Rainer et Francesco Trebbi",
+                "year": 2012,
+                "url": "https://www.nber.org/papers/w18424.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 42",
+                "notes": "NBER Working Paper 18424, septembre 2012, lu le 11 octobre 2026. Page imprimée 42 (page 44 du PDF), annexe sur la Guinée : les porteurs des noms Diakite, Sidibe et Sangare viennent du Wassoulou, selon le consultant des auteurs ; ce sont des Peuls qui ont adopté la langue et les coutumes des Malinké. Document non évalué par les pairs."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1887,
+              "label": "Juillet 1887, récit publié en 1892"
+            },
+            "era": "polity",
+            "statement": "Le nom Sidibé apparaît par écrit chez Louis-Gustave Binger, qui reçoit en juillet 1887 « Kali Sidibé, chef de Faraba et du Tiaka », l'un des hommes les plus influents de la région. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand un voyageur l'a noté, pas depuis quand des familles le portent.",
+            "formAsWritten": "Sidibé",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Louis-Gustave Binger",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Kali Sidibé",
+                "role": "chef de Faraba et du Tiaka"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 1, p. 19",
+                "notes": "Hachette, Paris, 1892, deux tomes. Lu le 11 octobre 2026 dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée. L'auteur est un officier français en mission d'exploration de 1887 à 1889, qui prépare l'expansion coloniale : il est cité pour ce qu'il a noté et pour ce qu'on lui a dit. Page 19, au début de juillet 1887 : « Kali Sidibé, chef de Faraba et du Tiaka — il remplace Famako dans le commandement de la région »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1887,
+              "label": "Décembre 1887, récit publié en 1892"
+            },
+            "era": "polity",
+            "statement": "Le nom Sidibé est l'un des « quatre noms de tribus foulbé du Ouassoulou », avec Sankaré, Diallo et Diakhité, selon Louis-Gustave Binger.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 1, p. 211",
+                "notes": "Hachette, Paris, 1892, deux tomes. Lu le 11 octobre 2026 dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée. L'auteur est un officier français en mission d'exploration de 1887 à 1889, qui prépare l'expansion coloniale : il est cité pour ce qu'il a noté et pour ce qu'on lui a dit. Page 211 : « Sankaré, qui est un des quatre noms de tribus foulbé du Ouassoulou, qui sont : Sankaré, Sidibé, Diallo, Diakhité »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1888,
+              "label": "Avril 1888, récit publié en 1892"
+            },
+            "era": "polity",
+            "statement": "Le nom Sidibé est celui que se donnent des Peuls de la région de Kotédougou : ils disent à Louis-Gustave Binger être venus du Borgou une soixantaine d'années plus tôt.",
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 1, p. 380",
+                "notes": "Hachette, Paris, 1892, deux tomes. Lu le 11 octobre 2026 dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée. L'auteur est un officier français en mission d'exploration de 1887 à 1889, qui prépare l'expansion coloniale : il est cité pour ce qu'il a noté et pour ce qu'on lui a dit. Page 380 : « Les Foulbé que j'ai interrogés m'ont dit qu'ils sont Sidibé, venus du Borgou ou Bourgou il y a environ soixante ans »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1891,
+              "to": 1894,
+              "label": "Voyage commencé en 1891, récit publié en 1894"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sidibé est celui d'une famille qui se dit parente du « petit Sénégalais », un petit oiseau : le premier des Sidibé, égaré à la chasse et mourant de soif, aurait été guidé par lui jusqu'à l'eau puis jusqu'à son village. C'est le récit d'un chef de village malinké, recueilli par André Rançon.",
+            "sources": [
+              {
+                "title": "Dans la Haute-Gambie : voyage d'exploration scientifique",
+                "author": "André Rançon",
+                "year": 1894,
+                "url": "https://archive.org/details/danslahautegambi00ranc",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 444",
+                "notes": "Paris, Société d'éditions scientifiques, 1894. Lu le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org. L'auteur est un médecin des colonies chargé le 16 mars 1891 d'une mission scientifique en Haute-Gambie : il est cité pour ce qu'il a noté et pour ce qu'on lui a raconté. Page 444 : un chef de village de passage à Dikhoy, dont le « diamou (nom de famille) était Sidibé », raconte pourquoi il est « parent » du « petit Sénégalais » et ne peut le tuer ni le manger."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

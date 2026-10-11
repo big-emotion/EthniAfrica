@@ -337,17 +337,17 @@
       "primaryLinguisticFamilyId": "FLG_ATLANTIQUE",
       "selectionBasis": "corpus",
       "familyEvidence": {
-        "file": "dataset/source/afrik/peuples/FLG_ATLANTIQUE/PPL_WOLOF.json",
-        "sourceFicheId": "PPL_WOLOF",
+        "file": "dataset/source/afrik/peuples/FLG_ATLANTIQUE/PPL_FULA.json",
+        "sourceFicheId": "PPL_FULA",
         "linguisticFamilyId": "FLG_ATLANTIQUE"
       },
       "corpusPassages": [
         {
-          "file": "dataset/source/afrik/peuples/FLG_ATLANTIQUE/PPL_WOLOF.json",
-          "sourceFicheId": "PPL_WOLOF",
+          "file": "dataset/source/afrik/peuples/FLG_ATLANTIQUE/PPL_FULA.json",
+          "sourceFicheId": "PPL_FULA",
           "linguisticFamilyId": "FLG_ATLANTIQUE",
           "fieldPath": "content.organization.clanOrganization",
-          "excerpt": "Organisation en lignages patrilineaires, renforcee depuis l'epoque de l'Empire Jolof qui a entraine le passage d'un systeme matrilineaire a un systeme patrilineaire. Les noms de famille (Ndiaye, Diop, Ndour, Fall, Mbaye, Sow) sont associes a des origines claniques ou regionales specifiques.",
+          "excerpt": "Structure clanique patrilineaire. Hierarchie sociale en quatre categories : noblesse (Rimbe/Dimo, Fulbe de souche libre), artisans et griots (caste libre mais endogame), serviteurs et anciens captifs (Maccudo/Rimmayybe). Environ 50% des habitants de l'Adamaoua etaient de statut servile au XIXe siecle. Les noms de famille (Diallo, Balde, Barry, Sow, Bah, Jallow) signalent les origines régionales et les lignages.",
           "inheritedTier": null,
           "tierResolution": "review_required",
           "sourceReviewStatus": "unreviewed"
@@ -355,7 +355,7 @@
       ],
       "externalSelectionSources": [],
       "reviewStatus": "fiche_research_first_pass_complete",
-      "editorialNotes": "The Wolof occurrence is selected independently of same-spelling occurrences in Fula fiches."
+      "editorialNotes": "Re-attached on 2026-10-11 from the Wolof fiche to the Fula fiche, whose clan passage also names Sow: the sources read give Sow as a Fulɓe and Toucouleur clan name."
     },
     {
       "id": "PAT_DUBE",
