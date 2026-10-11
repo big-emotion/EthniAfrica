@@ -198,5 +198,202 @@
       "fieldPath": "countries",
       "reason": "Les sources propres à « Mohamed » n'ont pas confirmé les pays où il est porté ; les recherches exactes par pays n'ont pas livré de registre officiel directement exploitable pour cette fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mohamed est un nom personnel arabe, celui du prophète de l'islam, que l'on porte aussi, en Somalie par exemple, comme nom du père à la suite de son propre nom ; on l'écrit aussi Muhammad, et Maxamed en somali. Ce n'est pas un nom de clan. Nous présentons plus bas l'explication de son sens.",
+    "names": [
+      {
+        "nameText": "Mohamed",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel arabe, porté aussi comme nom du père ou de famille ; ce n'est pas un nom de clan.",
+        "periodLabel": "Écrit dès le XIVe siècle ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "Décrit en 1860"
+            },
+            "statement": "Le nom Mohamed est un nom d'homme arabe, écrit aussi Mohammed ; c'est celui du prophète de l'islam, dont le français a fait Mahomet, selon le dictionnaire de Kazimirski. Le sens qu'il lui donne est présenté séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionnaire arabe-français, tome 1",
+                "author": "Albert de Biberstein Kazimirski",
+                "year": 1860,
+                "url": "https://archive.org/details/dictionnairearab01bibeuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 489",
+                "notes": "Paris, Maisonneuve, 1860. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. « S'emploie comme n. pr. d'homme, Mohammed, dont on a fait Mahomet et Méhémet »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "Décrit en 1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Mohamed est, chez les Somali, un nom personnel : il peut suivre le nom d'une personne comme nom de son père, car les Somali n'ont en général pas de nom de famille, selon B. W. Andrzejewski.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Recommendations for Somali Entries in Library Cataloguing Systems",
+                "author": "B. W. Andrzejewski",
+                "year": 1980,
+                "url": "https://www.cambridge.org/core/journals/african-research-and-documentation/article/abs/recommendations-for-somali-entries-in-library-cataloguing-systems/7B1BAF9FA536389313CA58F386A8DAAF",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21",
+                "notes": "African Research & Documentation, n° 22, 1980, p. 21-22. Lu le 11 octobre 2026 dans le texte d'ouverture que publie Cambridge Core : les Somali n'ont en général pas de nom de famille ; une personne porte son nom, suivi de celui de son père et parfois de son grand-père."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1600,
+              "to": 1699,
+              "label": "XVIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Mohamed figure, sous la forme Mohammed, dans le Tarikh es-Soudan, la chronique d'es-Sa'di, lettré de Tombouctou : c'est le nom de l'askia Mohammed, souverain songhay qui prend le pouvoir en 1493.",
+            "formAsWritten": "Mohammed",
+            "actors": [
+              {
+                "name": "L'askia Mohammed",
+                "role": "souverain songhay que la chronique nomme ainsi"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Tarikh es-Soudan, par Abderrahman ben Abdallah ben Imran ben Amir es-Sa'di",
+                "author": "Abderrahman es-Sa'di ; traduction d'Octave Houdas",
+                "year": 1900,
+                "url": "https://archive.org/details/tarikhessoudanpa00sadauoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 117",
+                "notes": "Paris, Ernest Leroux, 1900. Chronique écrite au XVIIe siècle par un lettré de Tombouctou, lue dans la traduction française sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 117 : « Mohammed-ben-Abou-Bekr-Et-Touri », l'askia Mohammed, qui prend le pouvoir en 1493."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1300,
+              "to": 1399,
+              "label": "XIVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Mohamed apparaît, sous la forme Mohammed, dans le récit de voyage d'Ibn Battûta : à la cour du sultan de Couloua, l'actuelle Kilwa, il rencontre des chérifs venus du Hedjaz, dont deux s'appellent Mohammed. C'est la plus ancienne trace de ce nom que le projet connaît ; le nom arabe est plus ancien que ce récit, et c'est ici un nom personnel, pas un nom de famille.",
+            "formAsWritten": "Mohammed",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Ibn Battûta",
+                "role": "voyageur qui rapporte ce nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Voyages d'Ibn Batoutah, texte arabe accompagné d'une traduction, tome II",
+                "author": "Ibn Battûta ; traduction de C. Defrémery et B. R. Sanguinetti",
+                "year": 1874,
+                "url": "https://archive.org/details/ldpd_5998008_001",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 194",
+                "notes": "Paris, Imprimerie nationale, tirage de 1874. Récit de voyage du XIVe siècle, lu dans la traduction française sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. À la cour du sultan de Couloua : « Mohammed, fils de Djammâz » et « Mohammed, fils de Chomaïlah, fils d'Abou Nemy », chérifs venus du Hidjâz."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "Proposée en 1860"
+            },
+            "statement": "Le nom Mohamed viendrait d'un adjectif arabe qui veut dire « loué, comblé de louanges », employé comme nom d'homme, selon le dictionnaire arabe-français d'Albert de Biberstein Kazimirski.",
+            "hypothesisGroup": "origine du nom Mohamed",
+            "sources": [
+              {
+                "title": "Dictionnaire arabe-français, tome 1",
+                "author": "Albert de Biberstein Kazimirski",
+                "year": 1860,
+                "url": "https://archive.org/details/dictionnairearab01bibeuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 489",
+                "notes": "Paris, Maisonneuve, 1860. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. « Loué, comblé de louanges, digne d'éloges. S'emploie comme n. pr. d'homme, Mohammed »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Muhammad",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Muhammad est une autre écriture du même nom arabe ; le site Behind the Name y rattache le nom de famille Mohamed.",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the surname Mohamed — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://surnames.behindthename.com/name/mohamed",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site d'onomastique en ligne, lu le 11 octobre 2026. Page du nom de famille Mohamed : « Derived from the given name Muhammad »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Maxamed",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "som",
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Maxamed est la forme somalie du nom Muhammad, selon le site Behind the Name.",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Maxamed",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/maxamed",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site d'onomastique en ligne, lu le 11 octobre 2026. Page Maxamed : « Somali form of Muhammad »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
