@@ -148,5 +148,127 @@
         "source_kind": "official_statistics"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Lugbara désigne un peuple de langue soudanique centrale du nord-ouest de l'Ouganda, dans le West Nile, et du nord-est de la République démocratique du Congo, qui se nomme lui-même Lugbara. Il a été écrit de bien des façons, dont Logbwari et Lugwaret. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Lugbara",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit dès 1902 sous la forme Logbwari ; son origine n'est pas connue.",
+        "periodLabel": "Écrit depuis 1902 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Lugbara désigne un peuple de langue soudanique du nord-ouest de l'Ouganda et du nord-est de la République démocratique du Congo, selon l'anthropologue John Middleton. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Lugbara Religion",
+                "author": "John Middleton",
+                "year": 1987,
+                "url": "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/lugbara-religion",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article de l'Encyclopedia of Religion, lu sur Encyclopedia.com le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lugbara apparaît par écrit sous une forme proche, Logbwari, dans l'ouvrage de l'administrateur britannique Harry Johnston paru en 1902 : il en fait le nom d'une langue parlée dans le district du même nom, au sud-ouest du pays madi. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple vivait déjà là avant lui.",
+            "formAsWritten": "Logbwari",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Harry Johnston",
+                "role": "administrateur britannique, auteur de l'ouvrage"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Uganda Protectorate, vol. II",
+                "author": "Harry Johnston",
+                "year": 1902,
+                "url": "https://archive.org/details/cu31924087982504",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 937",
+                "notes": "Londres, Hutchinson. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1800,
+              "label": "Entre 1500 et 1800, selon cette lecture"
+            },
+            "era": "polity",
+            "statement": "Le nom Lugbara n'est pas encore employé : on parle alors des Madi du Sud, « connus plus tard sous le nom de Lugbara », chez qui naît la chefferie de Terego, la plus grande des Lugbara, selon John Webster, Bethwell Ogot et Jean-Pierre Chrétien.",
+            "before": true,
+            "sources": [
+              {
+                "title": "General History of Africa, V, ch. 26: The Great Lakes region, 1500-1800",
+                "author": "John B. Webster, Bethwell A. Ogot et Jean-Pierre Chrétien",
+                "year": 1992,
+                "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 783 et p. 785",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot. Édition anglaise lue le 11 octobre 2026 dans la copie que publie South African History Online (copie non officielle) ; l'édition française en ligne n'était pas accessible."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Lugwaret",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme qu'employait l'administration coloniale belge au début du XXe siècle.",
+        "periodLabel": "Écrit en 1909",
+        "accounts": [
+          {
+            "period": {
+              "from": 1909,
+              "to": 1909,
+              "label": "1909"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lugwaret apparaît dans le Bulletin officiel du Congo belge de 1909, qui range les Lugwaret parmi les tribus du sud de la « race bahue », avec les Logo, les Kakwa et les Kuku, et place leurs troupeaux dans des hautes montagnes difficiles d'accès. C'est la plus ancienne trace de cette forme que le projet connaît.",
+            "formAsWritten": "Lugwaret",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Bulletin officiel du Congo belge, années 1908 et 1909",
+                "author": "Bulletin officiel du Congo belge",
+                "year": 1909,
+                "url": "https://archive.org/details/bulletin-officiel-de-congo-belge-annees-1908-et-1909_202201",
+                "tier": "official",
+                "source_kind": "archive",
+                "page": "p. 182",
+                "notes": "Rapport sur l'élevage dans l'Uele et l'enclave de Lado, lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
