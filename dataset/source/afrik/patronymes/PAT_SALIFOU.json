@@ -113,5 +113,86 @@
       "fieldPath": "homonyms",
       "reason": "Les formes Salifou, Salifu et Salif ont été distinguées dans les recherches onomastiques ; aucune origine indépendante n'a été établie pour constituer un homonyme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Salifou est d'abord un prénom d'Afrique de l'Ouest, que des familles portent aussi comme nom de famille, par exemple au Niger. On ne sait pas avec certitude d'où il vient : les sources consultées ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Salifou",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un prénom d'Afrique de l'Ouest devenu nom de famille ; les sources consultées n'expliquent pas son origine.",
+        "periodLabel": "Écrit dès 1863 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Salifou est un prénom, que certaines familles portent aussi comme nom de famille : au Niger, André Salifou, ministre d'État en 1996, le porte ainsi. Les sources consultées n'expliquent pas son origine ; on ne sait donc pas avec certitude ce qu'il veut dire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Prof. André Salifou",
+                "author": "Ministère des Affaires étrangères du Niger",
+                "year": null,
+                "url": "https://diplomatie.gouv.ne/index.php/le-ministere/actualites/11-liste-ministres-ae/61-prof-andre-salifou",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice de la liste des ministres des Affaires étrangères du Niger. Lue le 11 octobre 2026. Elle nomme « Prof. André SALIFOU », ministre d'État chargé des Relations extérieures du 5 mai au 21 décembre 1996. Elle ne dit rien de l'origine du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1885,
+              "to": 1885,
+              "label": "Publié vers 1885"
+            },
+            "statement": "Le nom Salifou est un nom d'homme au Fouta-Djalon, où les noms de famille n'existent pas : on dit « un tel, fils de un tel », et l'on distingue deux hommes du même nom par celui de leur village, comme Salifou Cambaïa. C'est ce que rapporte le voyageur Ernest Noirot.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "À travers le Fouta-Diallon et le Bambouc (Soudan occidental) : souvenirs de voyage",
+                "author": "Ernest Noirot",
+                "year": 1885,
+                "url": "https://hdl.handle.net/2027/wu.89064766629",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 225",
+                "notes": "Paris, M. Dreyfous, sans date ; le catalogue propose [1885?]. Lu sur l'exemplaire numérisé de HathiTrust le 11 octobre 2026. Page 225 : Salifou figure parmi les noms d'hommes du Fouta-Djalon ; « Les noms patronymiques n'existent pas ; pour désigner les membres d'une même famille on dit : un tel, fils de un tel », et l'on distingue les homonymes par le nom de leur village, « Salifou Cambaïa ». Auteur de l'époque coloniale, cité ici pour les noms qu'il relève."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1863,
+              "to": 1863,
+              "label": "17 mars 1863"
+            },
+            "era": "colonial",
+            "statement": "Le nom Salifou apparaît par écrit dans la convention que signent les chefs du Pakao, en Casamance, et le gouverneur du Sénégal : deux de ces chefs s'appellent Salifou-Coma et Salifou-Souané. C'est la plus ancienne trace de ce nom que le projet connaît ; c'est alors un prénom, pas un nom de famille.",
+            "formAsWritten": "Salifou",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Feuille officielle du Sénégal et dépendances, 4e année, n° 173, 21 avril 1863 — Convention passée avec les chefs du Pakao",
+                "author": "Gouvernement du Sénégal et dépendances",
+                "year": 1863,
+                "url": "https://hdl.handle.net/2027/njp.32101067015303",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 507-508",
+                "notes": "Journal officiel de la colonie, Saint-Louis. Lu sur l'exemplaire numérisé de HathiTrust le 11 octobre 2026. Pages 507-508 : convention signée le 17 mars 1863 entre le gouverneur Jauréguiberry et les chefs du Pakao, en Casamance, parmi lesquels « Salifou-Coma, Salifou-Souané, alcaty et almamy de Dianath »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
