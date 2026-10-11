@@ -119,5 +119,243 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kreda désigne un groupe daza du Bahr el Ghazal, au Tchad, qui se nommait lui-même Kara selon le voyageur allemand Gustav Nachtigal, en 1881. Il fait partie des Daza, que les Arabes appellent Gorane. Le nom Kreda apparaît par écrit en 1851 ; on ne sait pas avec certitude d'où il vient. Nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Kara",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "dzg",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnaient les Kreda, selon un voyageur allemand en 1881.",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Rapporté en 1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Kara est celui que se donnent eux-mêmes les Kreda, ou Karda, selon le voyageur allemand Gustav Nachtigal, qui publie en 1881 le récit de son passage au Bahr el Ghazal. Il en fait le groupe le plus nombreux de cette vallée, qui vit avec les Arabes Aulad Hamed. C'est la plus ancienne trace de ce nom que le projet connaît. Le groupe existait déjà avant lui.",
+            "formAsWritten": "Kara",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Sahara und Sudan, zweiter Theil",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 378",
+                "notes": "Berlin, 1881, lu dans l'exemplaire numérisé d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kreda",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des Arabes, selon Heinrich Barth",
+        "shortLine": "Un nom écrit dès 1851 ; des Arabes du Kanem l'employaient alors, selon Heinrich Barth.",
+        "periodLabel": "Écrit depuis 1851 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Kreda, ou Karda, désigne un groupe daza du Bahr el Ghazal, le plus nombreux de la vallée selon Gustav Nachtigal, qui précise qu'il se nomme lui-même Kara. Les sources que nous avons lues ne disent pas d'où vient le nom Kreda.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Sahara und Sudan, zweiter Theil",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 378",
+                "notes": "Berlin, 1881, lu dans l'exemplaire numérisé d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1889,
+              "to": 1889,
+              "label": "1889"
+            },
+            "era": "polity",
+            "statement": "Le nom Kreda désigne aussi, chez Gustav Nachtigal en 1889, la première section des Toubou du Ouaddaï, que l'on appelle là-bas Qor'ân. Selon lui, ces Toubou sont devenus nomades dans le Bahr el Ghazal depuis que des souverains du Ouaddaï les ont razziés.",
+            "sources": [
+              {
+                "title": "Sahara und Sudan, dritter Theil",
+                "author": "Gustav Nachtigal",
+                "year": 1889,
+                "url": "https://archive.org/details/saharasudan03nach",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 212-213",
+                "notes": "Leipzig, 1889, lu dans l'exemplaire numérisé d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1851,
+              "to": 1851,
+              "label": "Septembre 1851"
+            },
+            "era": "polity",
+            "statement": "Le nom Kreda apparaît par écrit dans le récit de l'explorateur allemand Heinrich Barth : en septembre 1851, sur la route du Kanem, les Arabes Welad Sliman qui l'accompagnent appellent ainsi une petite caravane de Toubou venue du Kanem, qu'ils dépouillent de ses dattes. C'est la plus ancienne trace de ce nom que le projet connaît. Le groupe existait déjà avant lui.",
+            "formAsWritten": "Kréda",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Heinrich Barth",
+                "role": "explorateur, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. III",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri31857bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 40",
+                "notes": "Londres, 1857, lu dans l'exemplaire numérisé d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Karda",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre forme du nom Kreda, chez Heinrich Barth et Gustav Nachtigal.",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Karda est la forme que donne Heinrich Barth en 1857 pour un groupe toubou « appelé généralement Kréda », divisé en plusieurs familles. Gustav Nachtigal emploie encore les deux formes en 1881.",
+            "formAsWritten": "Karda",
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. III",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri31857bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 495",
+                "notes": "Londres, 1857, lu dans l'exemplaire numérisé d'Internet Archive."
+              },
+              {
+                "title": "Sahara und Sudan, zweiter Theil",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 378",
+                "notes": "Berlin, 1881, lu dans l'exemplaire numérisé d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gorane",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "ara",
+        "namedBy": "Les Arabes, selon Tadeusz Lewicki",
+        "shortLine": "Le nom que les Arabes donnent aux Daza, dont les Kreda ; écrit Kurān avant 728.",
+        "periodLabel": "Écrit depuis le VIIIe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom Gorane est une appellation donnée par les Arabes aux Daza, la branche des Toubou qui vit au nord et au nord-est du lac Tchad, et il est encore en usage, selon Tadeusz Lewicki.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 11 : Le rôle du Sahara et des Sahariens dans les relations entre le Nord et le Sud",
+                "author": "Tadeusz Lewicki",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 319",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1889,
+              "to": 1889,
+              "label": "1889"
+            },
+            "era": "polity",
+            "statement": "Le nom Gorane est écrit Qor'ân par Gustav Nachtigal en 1889 : c'est ainsi qu'on appelle au Ouaddaï les Toubou du pays, dont les Kreda forment la première section.",
+            "sources": [
+              {
+                "title": "Sahara und Sudan, dritter Theil",
+                "author": "Gustav Nachtigal",
+                "year": 1889,
+                "url": "https://archive.org/details/saharasudan03nach",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 212-213",
+                "notes": "Leipzig, 1889, lu dans l'exemplaire numérisé d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 728,
+              "label": "Avant 728"
+            },
+            "statement": "Le nom Gorane apparaît, sous la forme Kurān ou Korān, chez l'auteur arabe Wahb ibn Munabbih, qui écrivait avant 728, selon Tadeusz Lewicki. C'est la plus ancienne trace de ce nom que le projet connaît. Les Daza existaient déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 11 : Le rôle du Sahara et des Sahariens dans les relations entre le Nord et le Sud",
+                "author": "Tadeusz Lewicki",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 319",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

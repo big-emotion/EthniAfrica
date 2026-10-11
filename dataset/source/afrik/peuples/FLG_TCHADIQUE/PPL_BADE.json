@@ -126,5 +126,100 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bade désigne un peuple de langue tchadique du nord-est du Nigeria, autour de Gashua, qui se nomme lui-même Bade. Il apparaît par écrit en 1823 sous une forme proche, Bedee, puis sous la forme Bedde chez Heinrich Barth. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Bade",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bde",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple, écrit Bedee dès 1823 ; son origine n'est pas expliquée.",
+        "periodLabel": "Écrit depuis 1823 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1852,
+              "to": 1852,
+              "label": "Décembre 1852"
+            },
+            "era": "polity",
+            "statement": "Le nom Bade est écrit Bedde par l'explorateur allemand Heinrich Barth, qui traverse ce pays en décembre 1852. Les villes des Bedde sont bâties près des marais, d'où leurs habitants défendent leur indépendance face au Bornou, qui les domine. Selon lui, les Bedde sont proches des Manga par la langue. Les sources que nous avons lues n'expliquent pas d'où vient ce nom.",
+            "formAsWritten": "Bedde",
+            "actors": [
+              {
+                "name": "Heinrich Barth",
+                "role": "explorateur, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. III (édition de New York)",
+                "author": "Heinrich Barth",
+                "year": 1859,
+                "url": "https://archive.org/details/travelsanddisco09bartgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 38-40",
+                "notes": "Édition américaine, New York, Harper, 1859, de l'ouvrage paru à Londres en 1857-1858 ; lu dans l'exemplaire numérisé d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1859,
+              "label": "Cité en 1859"
+            },
+            "era": "polity",
+            "statement": "Le nom Bade est écrit Bode par le missionnaire Sigismund Koelle, d'après un informateur kanouri, selon Heinrich Barth, qui renvoie à ses proverbes kanouri.",
+            "formAsWritten": "Bode",
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. III (édition de New York)",
+                "author": "Heinrich Barth",
+                "year": 1859,
+                "url": "https://archive.org/details/travelsanddisco09bartgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 38-40",
+                "notes": "Édition américaine, New York, Harper, 1859, de l'ouvrage paru à Londres en 1857-1858 ; lu dans l'exemplaire numérisé d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1823,
+              "to": 1823,
+              "label": "Décembre 1823"
+            },
+            "era": "polity",
+            "statement": "Le nom Bade a une forme proche, Bedee, dans le journal du capitaine britannique Hugh Clapperton : en décembre 1823, sur la route de Kouka vers le pays haoussa, sa caravane entre dans le « pays bedee ». Les marchands s'arment contre les « Bedites », qu'il décrit comme un peuple ancien du Bornou, resté hors de l'islam et retranché dans un pays difficile d'accès. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant lui.",
+            "formAsWritten": "Bedee",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Hugh Clapperton",
+                "role": "capitaine de la Royal Navy, auteur du journal"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Narrative of Travels and Discoveries in Northern and Central Africa, in the Years 1822, 1823, and 1824 (édition de Boston)",
+                "author": "Dixon Denham, Hugh Clapperton et Walter Oudney",
+                "year": 1826,
+                "url": "https://archive.org/details/narrativetravel00browgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 6-7 du récit de Clapperton",
+                "notes": "Édition américaine, Boston, 1826. Passage tiré du journal du capitaine Clapperton, paginé à part dans le volume ; lu dans l'exemplaire numérisé d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

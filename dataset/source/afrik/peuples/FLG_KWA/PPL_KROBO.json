@@ -122,5 +122,354 @@
         "notes": "Survol linguistique des langues du Ghana, dont le ga-dangme et ses traditions orales."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Krobo désigne un peuple de langue dangme du sud-est du Ghana, établi autrefois sur la montagne Krobo, qui se nomme lui-même Klo. Le nom Krobo, qui serait un mot twi, apparaît sur une carte dès 1701. Ce peuple forme deux États, Manya et Yilo. Les sources ne s'accordent pas toujours sur l'origine de ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Klo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ada",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne en dangme ; un membre se dit Klono, au pluriel Kloli.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Klo est celui que ce peuple donne en dangme à son État et à son pays ; un membre se dit Klono, au pluriel Kloli, selon l'historien Veit Arlt. Comme le twi sert de langue commune au Ghana, c'est Krobo qu'on lit sur les panneaux, dans les médias et dans les livres.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Christianity, Imperialism and Culture: The Expansion of the Two Krobo States in Ghana, c. 1830 to 1930",
+                "author": "Veit Arlt",
+                "year": 2005,
+                "url": "https://edoc.unibas.ch/262/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. XII et p. 53",
+                "notes": "Thèse de doctorat, université de Bâle, 2005, lue dans le PDF déposé par l'université."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Klo désigne à la fois le pays et le peuple ; la montagne s'appelle Kloyo, et l'ancien foyer sur la montagne Klowem, selon Veit Arlt. Les sources que nous avons lues n'expliquent pas l'origine de ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Christianity, Imperialism and Culture: The Expansion of the Two Krobo States in Ghana, c. 1830 to 1930",
+                "author": "Veit Arlt",
+                "year": 2005,
+                "url": "https://edoc.unibas.ch/262/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. XII",
+                "notes": "Thèse de doctorat, université de Bâle, 2005, lue dans le PDF déposé par l'université."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1871,
+              "to": 1871,
+              "label": "1871"
+            },
+            "era": "colonial",
+            "statement": "Le nom Klo est proche de la forme Kro, que le missionnaire Johannes Zimmermann essaie en 1871 d'employer à la place de Krobo ; les éditeurs de la Mission de Bâle gardent pourtant Krobo, selon Veit Arlt.",
+            "sources": [
+              {
+                "title": "Christianity, Imperialism and Culture: The Expansion of the Two Krobo States in Ghana, c. 1830 to 1930",
+                "author": "Veit Arlt",
+                "year": 2005,
+                "url": "https://edoc.unibas.ch/262/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 53",
+                "notes": "Thèse de doctorat, université de Bâle, 2005, lue dans le PDF déposé par l'université."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Krobo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "twi",
+        "namedBy": null,
+        "shortLine": "Un nom qui serait twi, écrit Crobbo sur une carte de 1701, devenu le nom courant du peuple.",
+        "periodLabel": "Écrit depuis 1701 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Krobo désigne aujourd'hui le peuple, ses deux États et sa langue, un parler du dangme, selon Veit Arlt. Les sources que nous avons lues ne tranchent pas son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Christianity, Imperialism and Culture: The Expansion of the Two Krobo States in Ghana, c. 1830 to 1930",
+                "author": "Veit Arlt",
+                "year": 2005,
+                "url": "https://edoc.unibas.ch/262/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 52-53",
+                "notes": "Thèse de doctorat, université de Bâle, 2005, lue dans le PDF déposé par l'université."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "1858"
+            },
+            "era": "colonial",
+            "statement": "Le nom Krobo désigne, dans le dictionnaire du missionnaire Johannes Zimmermann, à la fois une montagne, un peuple, un pays et un parler adangme, au nord-est des Ga, entre les monts Akwapim et la Volta. Il y nomme les deux villes de la montagne, Yilo et Manya.",
+            "sources": [
+              {
+                "title": "A Grammatical Sketch of the Akra- or Gã-Language, tome 2",
+                "author": "Johannes Zimmermann",
+                "year": 1858,
+                "url": "https://archive.org/details/agrammaticalske01zimmgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 174 et p. 386",
+                "notes": "Stuttgart, 1858. Vocabulaire et annexe sur l'adangme, reliés avec le tome 1 dans l'exemplaire numérisé, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1786,
+              "to": 1788,
+              "label": "1786, publié en 1788"
+            },
+            "era": "polity",
+            "statement": "Le nom Krobo est écrit Krobbo par le médecin danois Paul Erdmann Isert, dans une lettre publiée en 1788. Il désigne une petite république d'environ 500 hommes en armes, établie sur les montagnes près de la plantation danoise de Fredensborg, et d'abord la très haute montagne où ses habitants se réfugient en cas d'attaque. Selon Veit Arlt, Isert range peut-être aussi sous ce nom les Shai et les Osudoku.",
+            "formAsWritten": "Krobbo",
+            "actors": [
+              {
+                "name": "Paul Erdmann Isert",
+                "role": "médecin danois, auteur des lettres"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Reise nach Guinea und den Caribäischen Inseln in Columbien, in Briefen an seine Freunde beschrieben",
+                "author": "Paul Erdmann Isert",
+                "year": 1788,
+                "url": "https://archive.org/details/bub_gb_e0VyAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 300-301",
+                "notes": "Copenhague, 1788. Lu dans l'exemplaire numérisé le 11 octobre 2026."
+              },
+              {
+                "title": "Christianity, Imperialism and Culture: The Expansion of the Two Krobo States in Ghana, c. 1830 to 1930",
+                "author": "Veit Arlt",
+                "year": 2005,
+                "url": "https://edoc.unibas.ch/262/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 80",
+                "notes": "Thèse de doctorat, université de Bâle, 2005, lue dans le PDF déposé par l'université."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1701,
+              "to": 1701,
+              "label": "1701"
+            },
+            "era": "polity",
+            "statement": "Le nom Krobo apparaît, sous la forme Crobbo, sur une carte de 1701, selon l'historien Louis Wilson, que cite Veit Arlt. Nous n'avons pas vu cette carte. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple de la montagne existait déjà avant lui.",
+            "formAsWritten": "Crobbo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Christianity, Imperialism and Culture: The Expansion of the Two Krobo States in Ghana, c. 1830 to 1930",
+                "author": "Veit Arlt",
+                "year": 2005,
+                "url": "https://edoc.unibas.ch/262/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 52",
+                "notes": "Thèse de doctorat, université de Bâle, 2005, lue dans le PDF déposé par l'université."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "Proposée en 2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Krobo serait un mot twi, la langue des Akan voisins, selon Veit Arlt, qui n'en donne pas le sens.",
+            "hypothesisGroup": "origine du nom Krobo",
+            "sources": [
+              {
+                "title": "Christianity, Imperialism and Culture: The Expansion of the Two Krobo States in Ghana, c. 1830 to 1930",
+                "author": "Veit Arlt",
+                "year": 2005,
+                "url": "https://edoc.unibas.ch/262/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 53",
+                "notes": "Thèse de doctorat, université de Bâle, 2005, lue dans le PDF déposé par l'université."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Manya",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de l'un des deux États krobo, le Manya Krobo.",
+        "accounts": [
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "1858"
+            },
+            "era": "colonial",
+            "statement": "Le nom Manya désigne, dans le dictionnaire de Johannes Zimmermann, l'une des deux villes krobo de la montagne, celle d'Odonko Azu. C'est la plus ancienne trace de ce nom que le projet connaît. La ville existait déjà avant lui.",
+            "formAsWritten": "Manya",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Grammatical Sketch of the Akra- or Gã-Language, tome 2",
+                "author": "Johannes Zimmermann",
+                "year": 1858,
+                "url": "https://archive.org/details/agrammaticalske01zimmgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 193 et p. 386",
+                "notes": "Stuttgart, 1858. Vocabulaire et annexe sur l'adangme, reliés avec le tome 1 dans l'exemplaire numérisé, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "Proposée en 1858"
+            },
+            "era": "colonial",
+            "statement": "Le nom Manya voudrait dire « j'ai trouvé » ou « je trouverai », selon Johannes Zimmermann.",
+            "hypothesisGroup": "origine du nom Manya",
+            "sources": [
+              {
+                "title": "A Grammatical Sketch of the Akra- or Gã-Language, tome 2",
+                "author": "Johannes Zimmermann",
+                "year": 1858,
+                "url": "https://archive.org/details/agrammaticalske01zimmgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 193",
+                "notes": "Stuttgart, 1858. Vocabulaire et annexe sur l'adangme, reliés avec le tome 1 dans l'exemplaire numérisé, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "Proposée en 2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Manya pourrait se traduire par « les abords de la ville », selon des habitants de Yilo Krobo que cite Veit Arlt : ils y voient la preuve que les gens de Manya sont arrivés après eux. Veit Arlt juge ces arguments peu utiles.",
+            "hypothesisGroup": "origine du nom Manya",
+            "sources": [
+              {
+                "title": "Christianity, Imperialism and Culture: The Expansion of the Two Krobo States in Ghana, c. 1830 to 1930",
+                "author": "Veit Arlt",
+                "year": 2005,
+                "url": "https://edoc.unibas.ch/262/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 43",
+                "notes": "Thèse de doctorat, université de Bâle, 2005, lue dans le PDF déposé par l'université."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Yilo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de l'autre État krobo, le Yilo Krobo.",
+        "accounts": [
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "1858"
+            },
+            "era": "colonial",
+            "statement": "Le nom Yilo désigne, dans le dictionnaire de Johannes Zimmermann, l'autre ville krobo de la montagne, à l'ouest, celle d'Oloko Patu. C'est la plus ancienne trace de ce nom que le projet connaît. La ville existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Grammatical Sketch of the Akra- or Gã-Language, tome 2",
+                "author": "Johannes Zimmermann",
+                "year": 1858,
+                "url": "https://archive.org/details/agrammaticalske01zimmgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 374 et p. 386",
+                "notes": "Stuttgart, 1858. Vocabulaire et annexe sur l'adangme, reliés avec le tome 1 dans l'exemplaire numérisé, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "Proposée en 1858"
+            },
+            "era": "colonial",
+            "statement": "Le nom Yilo voudrait dire « celui qui frappe », selon Johannes Zimmermann.",
+            "hypothesisGroup": "origine du nom Yilo",
+            "sources": [
+              {
+                "title": "A Grammatical Sketch of the Akra- or Gã-Language, tome 2",
+                "author": "Johannes Zimmermann",
+                "year": 1858,
+                "url": "https://archive.org/details/agrammaticalske01zimmgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 374",
+                "notes": "Stuttgart, 1858. Vocabulaire et annexe sur l'adangme, reliés avec le tome 1 dans l'exemplaire numérisé, lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
