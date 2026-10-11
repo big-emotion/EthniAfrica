@@ -113,5 +113,142 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches « Amadou homonym etymology » et les sources consacrées à Amadou et Ahmad n'ont pas établi une graphie identique d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Amadou est un nom personnel musulman porté en Afrique de l'Ouest ; il s'écrit aussi Ahmadou, et Aamadu en peul. C'est un nom personnel, pas le nom d'un clan. Les sources le rattachent au prénom arabe Ahmad ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Amadou",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel musulman d'Afrique de l'Ouest, rattaché au prénom arabe Ahmad.",
+        "periodLabel": "Écrit dès 1830 ; donné aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Amadou est un nom musulman donné à un garçon en Afrique de l'Ouest. On l'écrit aussi Ahmadou, Aamadu en peul et Amadu en haoussa. C'est un nom personnel, pas celui d'un clan. Son origine est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Aḥmad ibn Aḥmad ibn Aḥmad ibn Muḥammad Lubbū al-Māsīniyy (1833-1862) — notice de personne",
+                "author": "Bibliothèque nationale de France",
+                "year": 2020,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb17840155w",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice d'autorité du catalogue général de la BnF, mise à jour le 18 décembre 2020, lue le 11 octobre 2026. Elle porte sur l'émir du Macina mort en 1862 et range sous la forme arabe Aḥmad les formes Āmadu et Aamadu (peul), Ahmadou et Amadou. Elle cite notamment J. Hunwick, The writings of Western Sudanic Africa, 2003."
+              },
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 142",
+                "notes": "Revue Names, vol. 29, n° 2, 1981, p. 139-164. Lu dans le PDF intégral le 11 octobre 2026. Le tableau I range Amadu parmi les noms d'hommes donnés à la cérémonie du nom et le rattache au Prophète (« The Prophet »)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Notice de 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Amadou serait une forme ouest-africaine du prénom arabe Ahmad, l'un des noms du Prophète, selon la notice de la Bibliothèque nationale de France, qui range Amadou, Ahmadou et le peul Aamadu sous Ahmad. Pauline Ryan rattache de son côté la forme haoussa Amadu au Prophète.",
+            "sources": [
+              {
+                "title": "Aḥmad ibn Aḥmad ibn Aḥmad ibn Muḥammad Lubbū al-Māsīniyy (1833-1862) — notice de personne",
+                "author": "Bibliothèque nationale de France",
+                "year": 2020,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb17840155w",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice d'autorité du catalogue général de la BnF, mise à jour le 18 décembre 2020, lue le 11 octobre 2026. Elle porte sur l'émir du Macina mort en 1862 et range sous la forme arabe Aḥmad les formes Āmadu et Aamadu (peul), Ahmadou et Amadou. Elle cite notamment J. Hunwick, The writings of Western Sudanic Africa, 2003."
+              },
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 142",
+                "notes": "Revue Names, vol. 29, n° 2, 1981, p. 139-164. Lu dans le PDF intégral le 11 octobre 2026. Le tableau I donne Amadu avec la mention « The Prophet »."
+              },
+              {
+                "title": "Amadou",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/amadou",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site communautaire consacré aux prénoms, lu le 11 octobre 2026. Elle présente Amadou comme une forme d'Ahmad employée en Afrique de l'Ouest francophone. La page ne cite pas ses sources."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1868,
+              "to": 1868,
+              "label": "1868"
+            },
+            "era": "polity",
+            "statement": "Le nom Amadou est écrit ainsi par Eugène Mage, dans le nom d'Amadou Cheickou, chef du Macina. Mage précise que c'est le même homme que le « Sego Ahmadou » de Caillié.",
+            "formAsWritten": "Amadou",
+            "sources": [
+              {
+                "title": "Voyage dans le Soudan occidental (Sénégambie-Niger)",
+                "author": "Eugène Mage",
+                "year": 1868,
+                "url": "https://archive.org/details/voyagedansleso00mage",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 403",
+                "notes": "Paris, Hachette, 1868. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Mage cite comme successeurs d'Amadou Amat Labbo au Macina « Amadou Cheickou (Sego Ahmadou, de Caillé) et Amadi Amadou, ses fils et petit-fils ». Récit d'un officier de marine français, envoyé par le gouverneur du Sénégal, cité ici pour la forme qu'il écrit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1830,
+              "to": 1830,
+              "label": "1830"
+            },
+            "era": "polity",
+            "statement": "Le nom Amadou apparaît par écrit sous une forme proche, Ahmadou, chez René Caillié : des Peuls du Macina lui conseillent d'aller voir à Djenné « Ségo-Ahmadou », leur chef. C'est la plus ancienne trace d'une forme de ce nom que le projet connaît ; elle dit quand un voyageur l'a notée, pas depuis quand le nom est donné.",
+            "formAsWritten": "Ségo-Ahmadou",
+            "birth": true,
+            "actors": [
+              {
+                "name": "René Caillié",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Journal d'un voyage à Temboctou et à Jenné, dans l'Afrique centrale, tome II",
+                "author": "René Caillié",
+                "year": 1830,
+                "url": "https://archive.org/details/journaldunvoyage02cail",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 160",
+                "notes": "Paris, Imprimerie royale, 1830. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Des Peuls du Macina conseillent à Caillié, lorsqu'il sera à Djenné, « d'aller voir Ségo-Ahmadou », leur chef. Récit d'un voyageur français, cité ici pour la forme qu'il écrit."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

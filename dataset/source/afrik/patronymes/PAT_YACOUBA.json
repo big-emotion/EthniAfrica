@@ -110,5 +110,111 @@
       "fieldPath": "homonyms",
       "reason": "Les formes Yacouba, Yakouba et Yaqub ont été distinguées dans les recherches onomastiques ; aucune origine indépendante n'a été établie pour constituer un homonyme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Yacouba est un nom personnel musulman porté en Afrique de l'Ouest. C'est un nom personnel, pas le nom d'un clan. Les sources le rattachent au nom de Jacob ; nous les présentons plus bas. En Côte d'Ivoire, Yacouba est aussi un autre nom du peuple dan, qui a sa propre histoire.",
+    "names": [
+      {
+        "nameText": "Yacouba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel musulman d'Afrique de l'Ouest, rattaché au nom de Jacob.",
+        "periodLabel": "Écrit dès 1857 ; donné aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Yacouba est un nom musulman donné à un garçon en Afrique de l'Ouest ; les Haoussa disent Yakubu. C'est un nom personnel, pas celui d'un clan. Son origine est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 161",
+                "notes": "Revue Names, vol. 29, n° 2, 1981, p. 139-164. Lu dans le PDF intégral le 11 octobre 2026. Page 161 : un Haoussa chrétien peut se faire appeler « Mr. Jacob, or alternatively as Malan Yakubu », chaque nom chrétien ayant une forme haoussa."
+              },
+              {
+                "title": "Yacouba",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/yacouba",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site communautaire consacré aux prénoms, lu le 11 octobre 2026. Elle présente Yacouba comme une forme de Yaqub employée en Afrique de l'Ouest francophone. La page ne cite pas ses sources."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "Proposé en 1981"
+            },
+            "era": "modern",
+            "statement": "Le nom Yacouba viendrait de Yaqub, le nom arabe de Jacob, selon le site Behind the Name. Pauline Ryan note de son côté que la forme haoussa Yakubu répond au nom chrétien Jacob.",
+            "sources": [
+              {
+                "title": "Yacouba",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/yacouba",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site communautaire consacré aux prénoms, lu le 11 octobre 2026. Elle présente Yacouba comme une forme de Yaqub employée en Afrique de l'Ouest francophone. La page ne cite pas ses sources."
+              },
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 161",
+                "notes": "Revue Names, vol. 29, n° 2, 1981, p. 139-164. Lu dans le PDF intégral le 11 octobre 2026. Page 161 : « Mr. Jacob, or alternatively as Malan Yakubu »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Yacouba apparaît par écrit sous une forme proche, Yakuba, chez Heinrich Barth : c'est ainsi qu'il dit qu'on devrait prononcer le nom de la capitale du Bauchi, fondée selon lui par un certain Yakub. C'est la plus ancienne trace d'une forme de ce nom que le projet connaît ; elle dit quand un voyageur l'a notée, pas depuis quand le nom est donné.",
+            "formAsWritten": "Yakuba",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Heinrich Barth",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. II",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri02bart_2",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 572",
+                "notes": "Londres, Longman, Brown, Green, Longmans & Roberts, 1857. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Dans un itinéraire vers le Bauchi : « Yakoba (thus the name is generally pronounced, although more correctly the accent ought to be given to the second syllable, thus, Yakoba, or rather Yakuba) the capital of the province of Bolobolo or Bauchi, founded by Yakub ». Récit d'un voyageur, cité ici pour la forme qu'il écrit."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
