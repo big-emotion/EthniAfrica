@@ -21,7 +21,12 @@
   "whyProblematic": "D'après les articles de Wikipédia sur la langue et sur le peuple hadza, Hadza serait la forme du pluriel féminin de haza, « être humain ». Les Hadza se disent hazabee, « les gens », et leur langue hazane : l'article sur le peuple traduit « comme les gens », celui sur la langue « des Hadza ». D'autres noms viennent des voisins. Selon l'article sur la langue, Tindiga viendrait du swahili watindiga, « les gens de l'herbe des marais », d'après la grande source de Mangola, et Kindiga en serait une forme dans une langue bantoue locale, sans doute l'isanzu ; Kangeju est un ancien nom allemand d'origine incertaine. Ces explications y sont données sans renvoi à une publication.",
   "spellingAliases": [],
   "familyId": "FLG_KHOISAN",
-  "peoples": [{ "name": "Hadza", "peopleId": "PPL_HADZA" }],
+  "peoples": [
+    {
+      "name": "Hadza",
+      "peopleId": "PPL_HADZA"
+    }
+  ],
   "nameHistory": {
     "summary": "Le nom hadza désigne une langue de Tanzanie, au bord du lac Eyasi, et le peuple de chasseurs-cueilleurs qui la parle. Dans les travaux en anglais, la langue s'appelle aussi hadzane. Un officier allemand a noté en 1898 un autre nom, Watindiga. Les sources que nous avons lues n'expliquent pas l'origine de ces noms ; nous présentons plus bas leurs plus anciennes traces.",
     "names": [
@@ -94,7 +99,7 @@
       {
         "nameText": "Tindiga",
         "nameStatus": "former",
-        "selfGiven": false,
+        "selfGiven": true,
         "languageOfOrigin": null,
         "namedBy": null,
         "shortLine": "Un autre nom de ce peuple, noté Watindiga dès 1898.",

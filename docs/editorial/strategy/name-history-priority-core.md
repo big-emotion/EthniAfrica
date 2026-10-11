@@ -139,6 +139,22 @@ review:
   The self-names kept on a language or genealogical name are on
   [the oral verification list](self-names-to-verify-orally.md).
 
+- **Waves 4 and 5 of the long tail — ruled 2026-10-11, to upgrade.** Kept as
+  written, each to be replaced when a better source is read:
+  - the Frafra hypothesis (`PPL_FRAFRA`) rests on a single opinion piece in
+    the _Daily Graphic_ (Tijani Ndanyenbah, 2025): find a linguist or
+    historian who states it;
+  - Lovejoy and Ojo (2015) on Lucumí (`PPL_ANAGO`) are cited from the free
+    abstract only: read the article;
+  - the official spelling Ebira or Egbira (`PPL_EBIRA`): the 2020 and 2022
+    gazettes have not been read; correct the spelling only once they are;
+  - Bastos names the 1862 diarist « Edward Livingstone » (`PPL_MAKONDE`):
+    his wording is kept, flagged on the tile, until the diary itself is read;
+  - Braukämper's hypotheses on the Hadiya (`PPL_HADIYA`, and
+    `PPL_SEBATBET`) are dated to the 2014 English edition, read in an
+    unofficial copy: keep 2014, and replace the copy with a publisher's or a
+    library's.
+
 - **What may be a birth — ruled 2026-10-10.** A close form may be a birth
   when the tile says so (« a une forme proche », Coulibaly and Koorabarri). A
   press article (Soudan du Sud, 2011), a form a chronicler gives as the
