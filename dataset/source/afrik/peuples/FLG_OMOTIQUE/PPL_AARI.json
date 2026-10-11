@@ -143,5 +143,42 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Aari désigne un peuple de langue omotique du sud de l'Éthiopie, autour de Jinka, qui se nomme lui-même Aari, une forme qu'on écrit aussi Ari. On ne sait pas avec certitude d'où vient le nom Aari ni quand il a été écrit pour la première fois ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Aari",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "aiw",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple du sud de l'Éthiopie ; son origine n'est pas connue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Aari désigne un peuple du sud de l'Éthiopie et sa langue omotique. Les catalogues de langues l'écrivent aussi Ari, Ara ou Aro, et lui rattachent les noms Bako et Ari-Galila, selon Glottolog. On ne sait pas avec certitude d'où vient ce nom, et nous n'avons pas trouvé sa plus ancienne trace écrite.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Aari (aari1239)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/aari1239",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle recense les formes Aari, Ara, Ari, Ari-Galila, Aro, Bako et Boko."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

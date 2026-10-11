@@ -95,5 +95,42 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Igede désigne un peuple du sud de l'État de Benue, au Nigeria, autour d'Oju et d'Obi, qui se nomme lui-même Igede. On l'écrit aussi Egede ou Igedde. On ne sait pas avec certitude d'où vient ce nom ni quand il a été écrit pour la première fois ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Igede",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ige",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple du Benue ; son origine n'est pas connue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Igede désigne un peuple du Nigeria et sa langue, que les catalogues écrivent aussi Egede ou Igedde, selon Glottolog. On ne sait pas avec certitude d'où vient ce nom, et nous n'avons pas trouvé sa plus ancienne trace écrite.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Igede (iged1239)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/iged1239",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle recense les formes Egede, Igedde et Igede. La plus ancienne référence qu'elle cite date de 1955."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -113,5 +113,277 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bench désigne un peuple de langue omotique du sud-ouest de l'Éthiopie, autour de Mizan-Aman, qui se nomme lui-même Bench et parle le benchnon. Ses voisins oromo et amhara l'ont longtemps appelé Gimira, un nom que les livres ont repris. Shé est le nom d'un de ses clans et de son parler. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Bench",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bcq",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple ; une forme proche est écrite dès 1888.",
+        "periodLabel": "Écrit sous une forme proche dès 1888 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bench désigne à la fois une langue omotique et le peuple qui la parle, dans le sud-ouest de l'Éthiopie, selon le linguiste Tizazu Atimo. Au sens étroit, il désigne aussi les clans qui parlent le benchnon, « la bouche des Bench ». On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Comparative Study of two Dialects of Bench : Benchnon and Shenon",
+                "author": "Tizazu Atimo",
+                "year": 2010,
+                "url": "https://etd.aau.edu.et/items/2eede8a3-1489-4128-b580-b52a1eba3cc4",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1-2",
+                "notes": "Mémoire de master en linguistique, université d'Addis-Abeba, septembre 2010. Lu le 11 octobre 2026 dans le dépôt de l'université."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bench n'a pas toujours été employé comme le font ses locuteurs : d'autres peuples et des étrangers ont donné à ce peuple des noms différents, écrit Tizazu Atimo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Comparative Study of two Dialects of Bench : Benchnon and Shenon",
+                "author": "Tizazu Atimo",
+                "year": 2010,
+                "url": "https://etd.aau.edu.et/items/2eede8a3-1489-4128-b580-b52a1eba3cc4",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Mémoire de master en linguistique, université d'Addis-Abeba, septembre 2010. Lu le 11 octobre 2026 dans le dépôt de l'université."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "polity",
+            "statement": "Le nom Bench apparaît sous la forme Benischo dans le livre de l'explorateur Friedrich Julius Bieber sur le Kafa : c'est le nom d'un des anciens royaumes du peuple sche, que les gens du Kafa appellent Benisö.",
+            "formAsWritten": "Benischo",
+            "sources": [
+              {
+                "title": "Kaffa : ein altkuschitisches Volkstum in Inner-Afrika, vol. I",
+                "author": "Friedrich Julius Bieber",
+                "year": 1920,
+                "url": "https://archive.org/details/kaffaeinaltkusch02bieb",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 121-122",
+                "notes": "Münster, Aschendorff, collection Anthropos, 1920. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive, section « Namen »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1888,
+              "label": "1888"
+            },
+            "era": "polity",
+            "statement": "Le nom Bench apparaît sous une forme proche, Binenso, dans le récit de l'explorateur italien Antonio Cecchi : ses guides lui parlent du « pays des Binenso ou Gimirra ». Dans le même livre, Cecchi range les Beneso parmi les principaux groupes de ce pays. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Binenso",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Antonio Cecchi",
+                "role": "explorateur italien, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Fünf Jahre in Ostafrika : Reisen durch die südlichen Grenzländer Abessiniens von Zeila bis Kaffa",
+                "author": "Antonio Cecchi",
+                "year": 1888,
+                "url": "https://archive.org/details/fnfjahreinostaf00ceccgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 345 et p. 414",
+                "notes": "Leipzig, Brockhaus, 1888, traduction allemande abrégée de Da Zeila alle frontiere del Caffa. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gimira",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Oromo et les Amhara, selon Friedrich Julius Bieber",
+        "shortLine": "Le nom que lui donnaient ses voisins oromo et amhara ; écrit dès 1845.",
+        "periodLabel": "Écrit dès 1845 ; encore employé au XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Gimira désigne, dans les catalogues de langues, la langue bench, qu'ils écrivent aussi Ghimarra ou Gimarra, selon Glottolog. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Bench (benc1235)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/benc1235",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle recense les formes Bench, Bencho, Bensho, Gimira, Ghimarra, Gimarra et She."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "polity",
+            "statement": "Le nom Gimira est celui que les Amhara donnent au peuple sche, qu'ils appellent aussi Jimira-Gala, selon Friedrich Julius Bieber. Les Oromo, eux, disent Gimirra pour ce peuple et pour son pays.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Kaffa : ein altkuschitisches Volkstum in Inner-Afrika, vol. I",
+                "author": "Friedrich Julius Bieber",
+                "year": 1920,
+                "url": "https://archive.org/details/kaffaeinaltkusch02bieb",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 123",
+                "notes": "Münster, Aschendorff, collection Anthropos, 1920. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive, section « Namen »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1845,
+              "to": 1845,
+              "label": "1845"
+            },
+            "era": "polity",
+            "statement": "Le nom Gimira apparaît dans une lettre de l'explorateur Antoine d'Abbadie publiée à Paris : un homme du pays explique que les étrangers rangent sous le nom de Gimira plusieurs groupes qui parlent presque la même langue. D'Abbadie ajoute que les Gimira se donnent eux-mêmes un autre nom, Ché. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Gimira",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Antoine d'Abbadie",
+                "role": "explorateur, auteur de la lettre"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Fragment d'une lettre de M. d'Abbadie sur le Nil-Blanc, et sur les principales rivières qui concourent à le former",
+                "author": "Antoine d'Abbadie",
+                "year": 1845,
+                "url": "https://archive.org/details/bulletindelasoc156fragoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 314-316",
+                "notes": "Bulletin de la Société de géographie, volume de 1845, lettre communiquée par Edme-François Jomard, p. 311-319. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur a séjourné en Kafa en 1843 et 1844."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Shé",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bcq",
+        "namedBy": null,
+        "shortLine": "Le nom d'un clan bench et de son parler ; d'Abbadie l'écrit Ché en 1845.",
+        "periodLabel": "Écrit dès 1845 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Shé désigne un clan qui vit dans le district de She Bench, et son parler, le shenon, « la bouche des Shé », selon Tizazu Atimo.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Comparative Study of two Dialects of Bench : Benchnon and Shenon",
+                "author": "Tizazu Atimo",
+                "year": 2010,
+                "url": "https://etd.aau.edu.et/items/2eede8a3-1489-4128-b580-b52a1eba3cc4",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Mémoire de master en linguistique, université d'Addis-Abeba, septembre 2010. Lu le 11 octobre 2026 dans le dépôt de l'université."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "polity",
+            "statement": "Le nom Shé est écrit Sche par Friedrich Julius Bieber, qui en fait le nom de tout le peuple que les Amhara appellent Gimira. Les gens du Kafa nomment ce peuple Seö ou Sewö, et son pays « le pays des Sche ».",
+            "formAsWritten": "Sche",
+            "sources": [
+              {
+                "title": "Kaffa : ein altkuschitisches Volkstum in Inner-Afrika, vol. I",
+                "author": "Friedrich Julius Bieber",
+                "year": 1920,
+                "url": "https://archive.org/details/kaffaeinaltkusch02bieb",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 121-123",
+                "notes": "Münster, Aschendorff, collection Anthropos, 1920. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive, section « Namen »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1845,
+              "to": 1845,
+              "label": "1845"
+            },
+            "era": "polity",
+            "statement": "Le nom Shé apparaît sous la forme Ché dans la lettre d'Antoine d'Abbadie : il écrit que les Gimira « se donnent le nom de Ché ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Ché",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Fragment d'une lettre de M. d'Abbadie sur le Nil-Blanc, et sur les principales rivières qui concourent à le former",
+                "author": "Antoine d'Abbadie",
+                "year": 1845,
+                "url": "https://archive.org/details/bulletindelasoc156fragoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 315-316",
+                "notes": "Bulletin de la Société de géographie, volume de 1845, lettre communiquée par Edme-François Jomard, p. 311-319. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur a séjourné en Kafa en 1843 et 1844."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
