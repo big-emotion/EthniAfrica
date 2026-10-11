@@ -122,5 +122,243 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Diomandé est un nom de clan malinké, porté surtout dans l'ouest et le centre-ouest de la Côte d'Ivoire, autour de Touba et de Séguéla. On l'écrit aussi Diomande. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Diomandé",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan malinké de l'ouest ivoirien ; son origine reste discutée.",
+        "periodLabel": "Écrit dès 1902 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Diomandé est celui d'un clan malinké que les historiens disent proche des Camara, installé autour de Touba, en Côte d'Ivoire. Les sources ne s'accordent pas sur l'origine du nom ; nous les présentons séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "UNESCO General History of Africa, V: Africa from the Sixteenth to the Eighteenth Century — ch. 13, The states and cultures of the Upper Guinean coast",
+                "author": "Christophe Wondji",
+                "year": 1992,
+                "url": "https://sahistory.org.za/sites/default/files/archive_files/general_history_africa_v.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 377",
+                "notes": "UNESCO, sous la direction de B. A. Ogot, 1992. Lu le 11 octobre 2026 dans l'édition anglaise, que met en ligne South African History Online ; le site de l'UNESCO qui donne l'édition française était inaccessible ce jour-là. Page imprimée 377 : au XVIe siècle, « the Diomande, brothers of the Cámara, were moving eastward, settling at Touba (in Côte d'Ivoire) and driving out the Dan-Toura ». Le chapitre ne donne aucun sens au nom."
+              },
+              {
+                "title": "UNESCO General History of Africa, IV: Africa from the Twelfth to the Sixteenth Century — ch. 12, The coastal peoples: from Casamance to the Ivory Coast lagoons",
+                "author": "Yves Person",
+                "year": 1984,
+                "url": "https://sahistory.org.za/sites/default/files/archive_files/general_history_africa_iv.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 317",
+                "notes": "UNESCO, sous la direction de D. T. Niane, 1984. Lu le 11 octobre 2026 dans l'édition anglaise, que met en ligne South African History Online. Page imprimée 317 : la région est habitée par des clans malinké « under the domination of the Camara-Diamande, whose legendary ancestor, Feren-Kaman, had driven back or assimilated the original Kpelle inhabitants » ; l'installation à Touba doit remonter « at least to the end of the fifteenth century ». Le chapitre ne donne aucun sens au nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1500,
+              "label": "Fin du XVe siècle au plus tard"
+            },
+            "era": "polity",
+            "statement": "Le nom Diomandé apparaît, écrit Camara-Diamande, chez l'historien Yves Person : des clans malinké dominés par les Camara-Diamande peuplent alors les hauts plateaux autour de Touba. Leur ancêtre légendaire, Feren-Kaman, aurait repoussé ou absorbé les Kpelle qui y vivaient avant eux.",
+            "formAsWritten": "Camara-Diamande",
+            "actors": [
+              {
+                "name": "Feren-Kaman",
+                "role": "ancêtre légendaire du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "UNESCO General History of Africa, IV: Africa from the Twelfth to the Sixteenth Century — ch. 12, The coastal peoples: from Casamance to the Ivory Coast lagoons",
+                "author": "Yves Person",
+                "year": 1984,
+                "url": "https://sahistory.org.za/sites/default/files/archive_files/general_history_africa_iv.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 317",
+                "notes": "UNESCO, sous la direction de D. T. Niane, 1984. Lu le 11 octobre 2026 dans l'édition anglaise, que met en ligne South African History Online. Page imprimée 317 : la région est habitée par des clans malinké « under the domination of the Camara-Diamande, whose legendary ancestor, Feren-Kaman, had driven back or assimilated the original Kpelle inhabitants » ; l'installation à Touba doit remonter « at least to the end of the fifteenth century ». Le chapitre ne donne aucun sens au nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1599,
+              "label": "XVIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Diomandé désigne, chez l'historien Christophe Wondji, les « frères des Camara » qui avancent vers l'est, s'installent à Touba et en chassent les Dan-Toura. Dans le même temps, ils s'établissent dans le centre-ouest de l'actuelle Côte d'Ivoire, selon Michel Izard et Joseph Ki-Zerbo.",
+            "sources": [
+              {
+                "title": "UNESCO General History of Africa, V: Africa from the Sixteenth to the Eighteenth Century — ch. 13, The states and cultures of the Upper Guinean coast",
+                "author": "Christophe Wondji",
+                "year": 1992,
+                "url": "https://sahistory.org.za/sites/default/files/archive_files/general_history_africa_v.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 377",
+                "notes": "UNESCO, sous la direction de B. A. Ogot, 1992. Lu le 11 octobre 2026 dans l'édition anglaise, que met en ligne South African History Online ; le site de l'UNESCO qui donne l'édition française était inaccessible ce jour-là. Page imprimée 377 : au XVIe siècle, « the Diomande, brothers of the Cámara, were moving eastward, settling at Touba (in Côte d'Ivoire) and driving out the Dan-Toura ». Le chapitre ne donne aucun sens au nom."
+              },
+              {
+                "title": "UNESCO General History of Africa, V: Africa from the Sixteenth to the Eighteenth Century — ch. 12, From the Niger to the Volta",
+                "author": "Michel Izard et Joseph Ki-Zerbo",
+                "year": 1992,
+                "url": "https://sahistory.org.za/sites/default/files/archive_files/general_history_africa_v.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 355",
+                "notes": "UNESCO, sous la direction de B. A. Ogot, 1992. Lu le 11 octobre 2026 dans l'édition anglaise, que met en ligne South African History Online. Page imprimée 355 : « the Diomande settled in the centre-west, the Wattara turned Boron and Mankono into great trading centres ». Le chapitre ne donne aucun sens au nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom Diomandé apparaît par écrit chez François-Joseph Clozel, dans un recueil des coutumes de la Côte d'Ivoire. Il y parle du « chef des Diomandé » installés à Séguéla, qui fait venir un marabout de Tombouctou vers le début du XVIIIe siècle, selon les récits locaux. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est porté.",
+            "formAsWritten": "Diomandé",
+            "birth": true,
+            "actors": [
+              {
+                "name": "François-Joseph Clozel",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les coutumes indigènes de la Côte d'Ivoire",
+                "author": "François-Joseph Clozel et Roger Villamur",
+                "year": 1902,
+                "url": "https://archive.org/details/lescoutumesindig00cloz",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 44-45",
+                "notes": "Paris, Augustin Challamel, 1902. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Introduction : l'ancêtre de la famille Bakayoko « vint de Tombouctou sur la demande du chef des Diomandé qui venaient de s'installer à Séguéla », vers le début du XVIIIe siècle ; plus loin, « le fondateur des Diomandé enterré chez les Mahou du territoire de Touba »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Rapporté en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Diomandé serait moins celui d'une famille que d'un peuple, selon André Arcin, qui les dit parents des Tamara et des Massaré.",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 286",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. L'auteur écrit : « les Diomandé, parents des Tamara et Massaré (Diomandé est moins le nom d'une famille que d'une nation) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Rapporté en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Diomandé viendrait de Ma Dioma, une captive masaré venue du Dioma, que leurs récits donnent pour mère des Diomandé, avec un chef kamara pour père, selon les légendes que rapporte André Arcin.",
+            "hypothesisGroup": "origine du nom Diomandé",
+            "actors": [
+              {
+                "name": "Ma Dioma",
+                "role": "mère du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 310",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Section « Les Diomandé » : « D'après leurs légendes ces Diomandé seraient fils d'un chef Kamara et d'une Masaré captive du Dioma, appelée Ma Dioma. Mais Diomandé veut dire « homme de Dioma » et non « fils de Dioma » » ; « Certains les font venir du Fouta Dialo : Ce seraient des Dialonké chassés par la conquête des métis foula ». L'auteur ne nomme pas ses informateurs."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Proposé en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Diomandé voudrait dire « homme de Dioma ». Les Diomandé viendraient alors du Diomadougou, à l'ouest de Bamako, ou du Dioma, près de Siguiri, selon André Arcin.",
+            "hypothesisGroup": "origine du nom Diomandé",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 310",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Section « Les Diomandé » : « D'après leurs légendes ces Diomandé seraient fils d'un chef Kamara et d'une Masaré captive du Dioma, appelée Ma Dioma. Mais Diomandé veut dire « homme de Dioma » et non « fils de Dioma » » ; « Certains les font venir du Fouta Dialo : Ce seraient des Dialonké chassés par la conquête des métis foula ». L'auteur ne nomme pas ses informateurs."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Rapporté en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Diomandé serait celui de Dialonké du Fouta-Djallon, chassés par la conquête peule, selon certains de ceux qu'André Arcin a interrogés.",
+            "hypothesisGroup": "origine du nom Diomandé",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 310",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Section « Les Diomandé » : « D'après leurs légendes ces Diomandé seraient fils d'un chef Kamara et d'une Masaré captive du Dioma, appelée Ma Dioma. Mais Diomandé veut dire « homme de Dioma » et non « fils de Dioma » » ; « Certains les font venir du Fouta Dialo : Ce seraient des Dialonké chassés par la conquête des métis foula ». L'auteur ne nomme pas ses informateurs."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Diomande",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": []
+      }
+    ]
+  }
 }
