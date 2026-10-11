@@ -53,6 +53,15 @@
           "sourceRefs": ["ncac-daabo-busumbala"]
         }
       ]
+    },
+    {
+      "spelling": "Darboe",
+      "attestations": [
+        {
+          "countryId": "GMB",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
+      ]
     }
   ],
   "transmissionMode": "patrilineal",
@@ -254,6 +263,14 @@
       "tier": "referenced",
       "source_kind": "archive",
       "notes": "Palmer, H. R., Journal of the Royal Anthropological Institute, volume 38, 1908, p. 58-98. Traduction anglaise, par un administrateur colonial britannique, d'une chronique des souverains du Kano. Notice d'Ibrahim Dabo, fils de Mohammadu, quarante-cinquième souverain, et le chant qui le nomme « sacker of towns » (p. 95-96) ; notice de son fils Osumanu (p. 96). La chronique n'explique pas le nom."
+    },
+    {
+      "sourceKey": "afrik-candidate-queue",
+      "title": "Relevé de couverture anthroponymique EthniAfrica",
+      "url": null,
+      "tier": "unverified",
+      "source_kind": "ai_generated",
+      "notes": "Ce relevé de couverture est conservé uniquement pour les associations géographiques ou ethnolinguistiques que les sources dédiées n'ont pas confirmées. Ces associations ne soutiennent aucune étymologie."
     }
   ],
   "gaps": [

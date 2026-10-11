@@ -14,6 +14,14 @@
         {
           "countryId": "NGA",
           "sourceRefs": ["amoo-2022-yusuf", "statehouse-yusuf-2026"]
+        },
+        {
+          "countryId": "DJI",
+          "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "EGY",
+          "sourceRefs": ["afrik-candidate-queue"]
         }
       ]
     },
@@ -25,13 +33,57 @@
           "sourceRefs": ["ryan-1981-yusuf"]
         }
       ]
+    },
+    {
+      "spelling": "Youssouf",
+      "attestations": [
+        {
+          "countryId": "TCD",
+          "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "DJI",
+          "sourceRefs": [
+            "afrik-candidate-queue",
+            "youssouf-presidence-djibouti-2017"
+          ]
+        },
+        {
+          "countryId": "COM",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
+      ]
+    },
+    {
+      "spelling": "Yousouf",
+      "attestations": [
+        {
+          "countryId": "TCD",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
+      ]
+    },
+    {
+      "spelling": "Youssef",
+      "attestations": [
+        {
+          "countryId": "EGY",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
+      ]
     }
   ],
   "transmissionMode": "non_hereditary",
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [],
+    "writtenChronicles": [
+      {
+        "claim": "La Présidence de Djibouti atteste Youssouf comme dernier élément de la chaîne de noms du député Omar Ahmed Youssouf ; la notice ne qualifie pas la relation généalogique exprimée.",
+        "claimStatus": "established",
+        "sourceRefs": ["youssouf-presidence-djibouti-2017"]
+      }
+    ],
     "linguisticReconstructions": [
       {
         "claim": "Amoo, Ajayi et Sabo classent Yusuf parmi les noms de prophètes employés dans les pratiques de nomination musulmanes haoussa. Ryan atteste la forme Yusufu et la rapproche de Joseph ; la source consacrée à Yusuf le décrit comme la forme arabe et coranique de Yosef.",
@@ -42,6 +94,16 @@
         "claim": "Dans le système haoussa décrit par Chamo, le nom personnel du père est couramment placé après le prénom de l'enfant sans devenir un nom de famille héréditaire stable.",
         "claimStatus": "established",
         "sourceRefs": ["chamo-2018-yusuf"]
+      },
+      {
+        "claim": "Une notice communautaire présente Youssouf comme une forme de Yusuf diffusée surtout dans des régions d'Afrique occidentale sous influence française ; elle ne démontre pas ses emplois somali ou comorien.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["youssouf-behindthename"]
+      },
+      {
+        "claim": "La source identifie Youssef comme une transcription de l'arabe يوسف, renvoyée à Yusuf. Cette correspondance du nom personnel ne suffit pas à établir l'origine d'un patronyme héréditaire ni une lignée précise.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["btn-youssef"]
       }
     ]
   },
@@ -50,6 +112,24 @@
       "peopleId": "PPL_HAUSA",
       "status": "attested",
       "sourceRefs": ["amoo-2022-yusuf", "ryan-1981-yusuf"]
+    },
+    {
+      "peopleId": "PPL_SOMALI",
+      "status": "attested",
+      "sourceRefs": [
+        "afrik-candidate-queue",
+        "youssouf-presidence-djibouti-2017"
+      ]
+    },
+    {
+      "peopleId": "PPL_COMORIEN",
+      "status": "attested",
+      "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "peopleId": "PPL_ARABES_AFRIQUE",
+      "status": "attested",
+      "sourceRefs": ["afrik-candidate-queue"]
     }
   ],
   "countries": [
@@ -57,6 +137,26 @@
       "countryId": "NGA",
       "status": "attested",
       "sourceRefs": ["statehouse-yusuf-2026"]
+    },
+    {
+      "countryId": "TCD",
+      "status": "attested",
+      "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "countryId": "DJI",
+      "status": "attested",
+      "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "countryId": "COM",
+      "status": "attested",
+      "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "countryId": "EGY",
+      "status": "attested",
+      "sourceRefs": ["afrik-candidate-queue"]
     }
   ],
   "alliances": [],
@@ -66,6 +166,11 @@
       "status": "deceased",
       "displayName": "Dr Aminu Yusuf",
       "sourceRefs": ["statehouse-yusuf-2026"]
+    },
+    {
+      "status": "deceased",
+      "displayName": "Omar Ahmed Youssouf",
+      "sourceRefs": ["youssouf-presidence-djibouti-2017"]
     }
   ],
   "homonyms": [],
@@ -109,16 +214,44 @@
       "tier": "official",
       "source_kind": "government",
       "notes": "Communiqué officiel consulté directement, daté du 29 août 2026. Il indique que le Dr Aminu Yusuf, âgé de 66 ans, est mort le 28 août 2026 et documente son service public au Nigeria ; il sert à l'attestation nationale et au porteur décédé seulement."
+    },
+    {
+      "sourceKey": "afrik-candidate-queue",
+      "title": "Relevé de couverture anthroponymique EthniAfrica",
+      "url": null,
+      "tier": "unverified",
+      "source_kind": "ai_generated",
+      "notes": "Ce relevé de couverture est conservé uniquement pour les associations géographiques ou ethnolinguistiques que les sources dédiées n'ont pas confirmées. Ces associations ne soutiennent aucune étymologie."
+    },
+    {
+      "sourceKey": "youssouf-behindthename",
+      "title": "Meaning, origin and history of the name Youssouf",
+      "url": "https://www.behindthename.com/name/youssouf",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Behind the Name, notice consultée intégralement le 2 septembre 2026. Elle présente Youssouf comme forme de Yusuf dans des régions ouest-africaines francophones et distingue Yuusuf comme forme somalie. La page ne fournit pas de référence bibliographique dédiée."
+    },
+    {
+      "sourceKey": "youssouf-presidence-djibouti-2017",
+      "title": "Le Président de la République rend hommage à la mémoire de feu Omar Ahmed Youssouf dit Vincent",
+      "url": "https://www.presidence.dj/article/le-president-de-la-republique-rend-hommage-a-la-memoire-de-feu-omar-ahmed-youssouf-dit-vincent-324",
+      "tier": "official",
+      "source_kind": "government",
+      "notes": "Présidence de la République de Djibouti, 22 janvier 2017. La page complète a été vérifiée : elle donne à plusieurs reprises Omar Ahmed Youssouf, le décrit comme ancien député et figure de la scène politique djiboutienne, et confirme son décès."
+    },
+    {
+      "sourceKey": "btn-youssef",
+      "title": "Meaning, origin and history of the name Youssef — Behind the Name",
+      "url": "https://www.behindthename.com/name/youssef",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Entrée communautaire consultée le 2 septembre 2026. Elle donne la graphie arabe يوسف et traite Youssef comme transcription de Yusuf. Elle documente un nom personnel, pas une lignée égyptienne particulière."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin.oralTraditions",
       "reason": "La requête « Yusuf Hausa oral tradition griot lineage », Ryan (1981), Chamo (2018) et Amoo, Ajayi et Sabo (2022) n'ont livré ni griot nommé ni transcription attribuable à Yusuf."
-    },
-    {
-      "fieldPath": "origin.writtenChronicles",
-      "reason": "Les recherches « Yusuf Hausa Arabic chronicle manuscript » et « Yusuf Nigeria colonial record » n'ont livré aucune chronique dédiée établissant l'histoire de cette forme dans la nomenclature haoussa."
     },
     {
       "fieldPath": "alliances",
@@ -134,7 +267,7 @@
     }
   ],
   "nameHistory": {
-    "summary": "Le nom Yusuf est un nom personnel musulman, celui que porte Joseph dans le Coran. Chez les Haoussa du Nigeria, il se dit Yusufu. Il se lit aussi au Nigeria en dernière position d'un nom complet. Les sources lues ne disent pas quand il est devenu un nom de famille.",
+    "summary": "Le nom Yusuf est un nom personnel musulman, celui que porte Joseph dans le Coran. Chez les Haoussa du Nigeria, il se dit Yusufu ; on l'écrit aussi Youssouf, à Djibouti par exemple, ou Youssef. Il se lit en dernière position d'un nom complet, au Nigeria comme à Djibouti. Les sources lues ne disent pas quand il est devenu un nom de famille.",
     "names": [
       {
         "nameText": "Yusuf",
@@ -256,6 +389,68 @@
                 "source_kind": "academic",
                 "page": "p. 143",
                 "notes": "Names, vol. 29, no 2, 1981, p. 139-164. Lu dans le PDF intégral le 11 octobre 2026. L'étude porte sur les noms des Haoussa du nord du Nigeria, musulmans pour la plupart ; la majorité des noms donnés lors de la cérémonie du nom y sont tirés du Coran. Tableau I : « Yusufu — Joseph »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Youssouf",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une forme du nom arabe Yūsuf, le Joseph de la Bible, porté dans une suite de noms.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Youssouf est une forme de Yūsuf, surtout employée dans des régions francophones d'Afrique de l'Ouest, selon le site Behind the Name. Yūsuf est le nom arabe d'un prophète de l'islam, qui correspond au Joseph de la Bible ; Joseph viendrait de l'hébreu Yosef, « qu'Il (Dieu) ajoute un autre fils », selon le Dictionary of American Family Names.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Youssouf",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/youssouf",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site de référence grand public sur les prénoms, lu le 11 octobre 2026 : « Form of Yusuf mostly used in parts of French-influenced West Africa ». La page ne cite pas de source."
+              },
+              {
+                "title": "Dictionary of American Family Names, 2e édition — entrées Yusuf et Joseph",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://en.geneanet.org/surnames/YUSUF",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press. Entrées reproduites par Geneanet, lues le 11 octobre 2026 dans une copie archivée de la page (22 février 2025) : Yusuf, « from the personal name Yūsuf, the name of an Islamic prophet, an Arabic equivalent to the Biblical name Joseph » ; Joseph, de l'hébreu Yosef, « may He (God) add (another son) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Youssouf est le dernier élément du nom d'Omar Ahmed Youssouf, notable et ancien député djiboutien dont la présidence de Djibouti annonce le décès en 2017. La page ne dit pas de qui Youssouf est le nom dans cette suite.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Le Président de la République rend hommage à la mémoire de feu Omar Ahmed Youssouf dit Vincent",
+                "author": "Présidence de la République de Djibouti",
+                "year": 2017,
+                "url": "https://www.presidence.dj/article/le-president-de-la-republique-rend-hommage-a-la-memoire-de-feu-omar-ahmed-youssouf-dit-vincent-324",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Communiqué du 22 janvier 2017, lu le 11 octobre 2026. Il nomme Omar Ahmed Youssouf, notable djiboutien, ancien député, sans dire de qui Youssouf est le nom dans cette suite."
               }
             ]
           }

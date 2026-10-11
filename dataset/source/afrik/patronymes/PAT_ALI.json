@@ -14,7 +14,14 @@
         { "countryId": "DJI", "sourceRefs": ["afrik-candidate-queue"] },
         { "countryId": "SOM", "sourceRefs": ["afrik-candidate-queue"] },
         { "countryId": "EGY", "sourceRefs": ["afrik-candidate-queue"] },
-        { "countryId": "COM", "sourceRefs": ["afrik-candidate-queue"] }
+        { "countryId": "COM", "sourceRefs": ["afrik-candidate-queue"] },
+        { "countryId": "TZA", "sourceRefs": ["tanzania-osg-ally-possi"] }
+      ]
+    },
+    {
+      "spelling": "Ally",
+      "attestations": [
+        { "countryId": "TZA", "sourceRefs": ["tanzania-osg-ally-possi"] }
       ]
     }
   ],
@@ -38,6 +45,11 @@
         "claim": "Le Dictionary of American Family Names, reproduit par FamilySearch, rattache également le patronyme arabe au nom personnel ʿAlī, décrit comme signifiant « élevé », « noble » ou « sublime ».",
         "claimStatus": "established",
         "sourceRefs": ["familysearch-ali"]
+      },
+      {
+        "claim": "Le Dictionary of American Family Names, reproduit par FamilySearch, décrit Ally comme une variante musulmane de Ali ; aucune filiation clanique swahilie n'est établie par cette notice.",
+        "claimStatus": "established",
+        "sourceRefs": ["familysearch-ally"]
       }
     ]
   },
@@ -61,6 +73,11 @@
       "peopleId": "PPL_COMORIEN",
       "status": "attested",
       "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "peopleId": "PPL_SWAHILI",
+      "status": "supposed",
+      "sourceRefs": ["afrik-candidate-queue"]
     }
   ],
   "countries": [
@@ -83,6 +100,11 @@
       "countryId": "COM",
       "status": "attested",
       "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "countryId": "TZA",
+      "status": "attested",
+      "sourceRefs": ["tanzania-osg-ally-possi"]
     }
   ],
   "alliances": [],
@@ -121,6 +143,22 @@
       "tier": "referenced",
       "source_kind": "repository",
       "notes": "Notice consultée intégralement. FamilySearch reproduit l'entrée du Dictionary of American Family Names (Oxford University Press, 2022), qui rattache le nom arabe au nom personnel ʿAlī. La notice ne suffit pas à attribuer tous les porteurs africains à un même peuple."
+    },
+    {
+      "sourceKey": "tanzania-osg-ally-possi",
+      "title": "Office of the Solicitor General — Dr. Ally Possi",
+      "url": "https://www.osg.go.tz/administration/members/solicitor-general",
+      "tier": "official",
+      "source_kind": "government",
+      "notes": "Page officielle consultée intégralement. Elle atteste la graphie Ally dans l'identité publique du Solicitor General tanzanien, sans préciser si ce composant est héréditaire, clanique ou personnel."
+    },
+    {
+      "sourceKey": "familysearch-ally",
+      "title": "Ally Name Meaning and Ally Family History at FamilySearch",
+      "url": "https://www.familysearch.org/en/surname?surname=ally",
+      "tier": "referenced",
+      "source_kind": "repository",
+      "notes": "Notice consultée intégralement. FamilySearch reproduit le Dictionary of American Family Names, qui présente Ally comme une variante musulmane de Ali. Cette entrée lexicographique ne documente pas un clan swahili particulier."
     }
   ],
   "gaps": [

@@ -165,7 +165,7 @@ review:
     community: the Tembo Bible-translation manual (`PPL_TEMBO`) and the
     Mbunda community's own history (`PPL_MBUNDA`);
   - « Youssouf is a form of Yusuf », from Behind the Name with the
-    _Dictionary of American Family Names_ (`PAT_YOUSSOUF`): replace it if a
+    _Dictionary of American Family Names_ (`PAT_YUSUF`, which now holds Youssouf): replace it if a
     scholarly source turns up; the Wikipedia-only Diouf list for the usage
     of Baradji and Maréga (`PAT_BARADJI`, `PAT_MAREGA`): replace it once
     Diouf (1998) is read;

@@ -1,28 +1,22 @@
 {
   "id": "PPL_LOBI_BIRIFOR",
-  "nameMain": "Lobi / Birifor",
+  "nameMain": "Birifor",
   "languageFamilyId": "FLG_GUR",
   "currentCountries": ["BFA", "CIV", "GHA"],
   "classificationStatus": "contested",
   "content": {
     "appellations": {
-      "mainName": "Lobi / Birifor",
-      "selfAppellation": "Lober (Lobi) ; Birifo / Malba (Birifor)",
-      "exonyms": [
-        "Lobi",
-        "Lobiri",
-        "Lobis",
-        "LobiMiwô",
-        "Birifor",
-        "Birifo",
-        "Malba",
-        "Birfor"
-      ],
-      "originOfExonyms": "L'étymologie du nom Lobi est débattue : certains y voient 'lou (forêt) + bi (enfants)', soit 'enfants de la forêt' ; d'autres proposent 'lo (entrer) + bi (unité d'ensemble)', soit 'ceux qui sont entrés (les premiers) dans le monde/espace culturel'. Le nom Lobiri désigne à la fois le peuple (Lober au singulier) et sa langue. Birifor (variante : Birifo ou Malba) est le nom du peuple proche ; Malba signifierait 'les gens du nord', en référence à leur localisation relative. Le nom Birfor est utilisé à Burkina Faso pour la variante septentrionale.",
+      "mainName": "Birifor",
+      "selfAppellation": "Birifor ; Birifo, Malba",
+      "exonyms": ["Birifor", "Birifo", "Malba", "Birfor"],
+      "originOfExonyms": "Birifor, avec ses variantes Birifo et Malba, est le nom de ce peuple voisin des Lobi ; Malba signifierait 'les gens du nord', en référence à leur localisation relative. Le nom Birfor est utilisé à Burkina Faso pour la variante septentrionale.",
       "whyProblematic": "Lobi et Birifor sont deux peuples distincts mais culturellement et linguistiquement très proches, souvent regroupés dans la littérature ethnographique. Les Birifor ont deux dialectes (Nord et Sud) aux codes ISO distincts. Les deux groupes occupent la même région géographique et partagent des croyances, des coutumes et un mode de vie similaires, ce qui conduit parfois à les assimiler.",
       "contemporaryUsage": "Les deux appellations coexistent. Au Burkina Faso, Lobi et Birifor sont reconnus comme deux groupes distincts dans l'administration et les études ethnographiques. En Côte d'Ivoire, les Lobi sont concentrés dans la région de Bouna. Au Ghana, les Birifor sont surtout présents dans la région Wa (Upper West)."
     },
-    "ethnicities": ["Lobi", "Birifor"],
+    "ethnicities": [
+      "Birifor du Nord (Malba Birifor), surtout au Burkina Faso",
+      "Birifor du Sud, surtout au Ghana"
+    ],
     "origins": {
       "ancientOrigins": "L'origine des Lobi est connue principalement par des récits mythiques. La tradition orale rapporte une migration depuis le nord de l'actuel Ghana, traversant la région de Wa et la Volta Noire, il y a plusieurs siècles. Des hypothèses savantes (S. Hien) suggèrent une origine lointaine en Egypte ancienne (ressemblances esthétiques des statuaires), au Tchad ou au Bénin (similarités linguistiques et architecturales). Les contacts anciens avec les Gan ou Kan (dont le nom Gaoua proviendrait : 'Kan Ouara' signifiant 'route des Kan') et avec les Koulango attestent de leur intégration dans le tissu régional.",
       "formationPeriod": "Autour de 1770, des groupes Lobés traversent le fleuve Mouhoun (Volta Noire) par vagues successives pour s'installer sur le territoire du pays Lobi, dans le nord-est de l'actuelle Côte d'Ivoire et le sud-ouest du Burkina Faso. Cette migration progressive constitue la période de formation du pays Lobi actuel.",
@@ -48,14 +42,13 @@
       "religiousAuthority": "Rôle central du thildar : spécialiste religieux, devin, communicant avec les esprits (thila). Les thila (esprits protecteurs) protègent les familles si leurs interdictions (bonoo, transmises par les devins) sont respectées. Initiation dyoro tous les sept ans sur la Volta Noire, cérémonie fondamentale dans la vie religieuse Lobi."
     },
     "languages": {
-      "mainLanguage": "Lobiri (Lobi) ; Birifor (Birifor)",
-      "isoCodes": ["lob", "bfo", "biv"],
+      "mainLanguage": "Birifor (Malba Birifor et Southern Birifor)",
+      "isoCodes": ["bfo", "biv"],
       "dialects": [
-        "Lobiri – lob (Lobi, parlé au Burkina Faso et en Côte d'Ivoire)",
         "Malba Birifor – bfo (Birifor du Burkina Faso, dialecte septentrional)",
         "Southern Birifor – biv (Birifor du Ghana et de Côte d'Ivoire, dialecte méridional)"
       ],
-      "vehicularRole": "Le Lobiri est la langue maternelle des Lobi (440 000 locuteurs au début des années 1990 : 286 000 au Burkina Faso, 156 000 en Côte d'Ivoire). Le Dioula et le français servent de langues véhiculaires pour le commerce et l'administration. Le Lobiri appartient à la branche Gur (Oti-Volta) du Niger-Congo, proche du Birifor et du Dagara. L'anglais est utilisé au Ghana."
+      "vehicularRole": "Le birifor appartient à la branche gur (oti-volta) du Niger-Congo, proche du lobiri et du dagara. Le dioula et le français servent de langues véhiculaires pour le commerce et l'administration ; l'anglais est utilisé au Ghana."
     },
     "culture": {
       "majorRites": "Initiation dyoro : cérémonie collective tenue tous les sept ans sur la Volta Noire, passage obligé dans la vie religieuse Lobi. Cérémonies funéraires élaborées. Mariages et enterrements organisés par le Chef de la Terre. Rites de chasse (Chef de l'Arc). Culte des thila (esprits) avec respect des bonoo (interdits rituels).",
@@ -70,37 +63,25 @@
       "diaspora": "Migrations économiques vers les villes de Bobo-Dioulasso et Ouagadougou (Burkina Faso), Abidjan (Côte d'Ivoire) et Accra (Ghana). Diaspora internationale en France et dans d'autres pays européens."
     },
     "demography": {
-      "totalPopulation": 817000,
+      "totalPopulation": 507000,
       "referenceYear": 2025,
-      "source": "Joshua Project : Lobi 617 000 (BFA 356 000, CIV 250 000, GHA 11 000) + Birifor 200 000 (Wikipedia EN, PeopleGroups.org BFA 271 000). Chiffre combiné estimé Lobi + Birifor.",
+      "source": "Joshua Project (2025) : 226 000 Birifor du Sud au Ghana et 10 000 en Côte d'Ivoire ; PeopleGroups.org : 271 000 Birifor au Burkina Faso. Les Lobi, comptés avec eux dans une version antérieure de cette fiche, ont leur propre fiche.",
       "distributionByCountry": [
         {
           "country": "BFA",
-          "population": 627000
-        },
-        {
-          "country": "CIV",
-          "population": 260000
+          "population": 271000
         },
         {
           "country": "GHA",
-          "population": 21000
+          "population": 226000
+        },
+        {
+          "country": "CIV",
+          "population": 10000
         }
       ]
     },
     "sources": [
-      {
-        "title": "Lobi people group in all countries – Joshua Project, 2025",
-        "url": "https://joshuaproject.net/people_groups/13082",
-        "tier": "unverified",
-        "source_kind": "missionary_database"
-      },
-      {
-        "title": "Lobi in Burkina Faso – Joshua Project, 2025",
-        "url": "https://joshuaproject.net/people_groups/13082/UV",
-        "tier": "unverified",
-        "source_kind": "missionary_database"
-      },
       {
         "title": "Birifor, Southern in Côte d'Ivoire – Joshua Project",
         "url": "https://joshuaproject.net/people_groups/10869/IV",
@@ -125,12 +106,6 @@
         "tier": "unverified"
       },
       {
-        "title": "Glottolog — Lobi",
-        "url": "https://glottolog.org/resource/languoid/id/lobi1245",
-        "tier": "official",
-        "source_kind": "linguistic_reference"
-      },
-      {
         "title": "Glottolog — Malba Birifor (malb1235)",
         "url": "https://glottolog.org/resource/languoid/id/malb1235",
         "tier": "official",
@@ -145,7 +120,7 @@
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Birifor désigne un peuple qui vit des deux côtés de la Volta Noire, au Burkina Faso, au Ghana et en Côte d'Ivoire, à côté des Lobi. D'autres noms existent : Birifo, la plus ancienne forme écrite que nous connaissions, et Wandar, le nom que lui donnent les Lobi. Le nom Lobi, celui du peuple voisin, a lui aussi son histoire. Les sources consultées n'expliquent l'origine d'aucun de ces noms ; nous présentons plus bas ce qu'elles en disent.",
+    "summary": "Le nom Birifor désigne un peuple qui vit des deux côtés de la Volta Noire, au Burkina Faso, au Ghana et en Côte d'Ivoire, à côté des Lobi. D'autres noms existent : Birifo, la plus ancienne forme écrite que nous connaissions, et Wandar, le nom que lui donnent les Lobi. Les sources consultées n'expliquent l'origine d'aucun de ces noms ; nous présentons plus bas ce qu'elles en disent.",
     "names": [
       {
         "nameText": "Birifor",
@@ -331,125 +306,6 @@
                 "source_kind": "academic",
                 "page": "p. 124, note 7",
                 "notes": "Chapitre d'un ouvrage collectif sur le pays lobi, partie « Histoire, peuplement et guerre », numérisé par l'IRD et lu le 9 octobre 2026. La note 7 de la page 124 précise : « Wandar est le nom lobi des Birifor. » Le fichier ne donne ni le titre du volume ni son année ; les derniers témoignages cités datent de 1977."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "nameText": "Lobi",
-        "nameStatus": "current",
-        "selfGiven": true,
-        "languageOfOrigin": null,
-        "namedBy": null,
-        "shortLine": "Le nom que se donnent les Lobi, voisins des Birifor ; son origine reste inconnue.",
-        "periodLabel": "Écrit dès 1888 ; en usage aujourd'hui",
-        "accounts": [
-          {
-            "period": {
-              "from": null,
-              "to": null,
-              "label": "Usage contemporain"
-            },
-            "era": "modern",
-            "statement": "Le nom Lobi est celui que les Lobi emploient eux-mêmes pour se nommer, ce qui les distingue des Birifor et des autres groupes que des auteurs rangent avec eux. Les personnes interrogées par Michèle Fiéloux ne semblaient pas connaître son origine.",
-            "aspect": "meaning",
-            "sources": [
-              {
-                "title": "Les sentiers de la nuit : les migrations rurales lobi de la Haute-Volta vers la Côte d'Ivoire",
-                "author": "Michèle Fiéloux",
-                "year": 1980,
-                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/pt5/travaux_d/10005.pdf",
-                "tier": "referenced",
-                "source_kind": "academic",
-                "page": "p. 6",
-                "notes": "ORSTOM, Travaux et documents n° 110, Paris, 1980, issu d'une thèse soutenue en 1975 ; enquête menée en pays lobi de décembre 1971 à décembre 1972. Lu en ligne le 9 octobre 2026. Page 6 : le terme lobi, dont l'origine ne semble pas connue des informateurs, est employé par les Lobi eux-mêmes pour se désigner."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": null,
-              "to": null,
-              "label": "Usage décrit au présent par l'auteur"
-            },
-            "era": "modern",
-            "statement": "Le nom Lobi sert aussi de repère d'orientation dans la région : sous la forme Lo, il désigne l'ouest. Un même village peut se dire Lo face à ses voisins de l'ouest et Dagaa face à ceux de l'est, selon l'Encyclopedia of World Cultures.",
-            "sources": [
-              {
-                "title": "Lobi-Dagarti Peoples — Orientation and Ethnonyms",
-                "author": "Encyclopedia of World Cultures (auteur non nommé sur la page)",
-                "year": null,
-                "url": "https://www.everyculture.com/Africa-Middle-East/Lobi-Dagarti-Peoples-Orientation-and-Ethnonyms.html",
-                "tier": "unverified",
-                "source_kind": "academic",
-                "notes": "Article d'encyclopédie diffusé par le site everyculture.com sous le copyright de Gale Group, consulté le 9 octobre 2026. Il donne la forme LoBirifor et présente Lo, rapproché de Lobi, comme un terme qui désigne l'ouest, et Dagaa comme celui qui désigne l'est. Sa bibliographie cite les travaux de Jack Goody."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": 1980,
-              "to": 1980,
-              "label": "Rapporté en 1980"
-            },
-            "era": "modern",
-            "statement": "Le nom Lobi, écrit Lobe, sert dans les recensements du Ghana à compter ensemble Lobi et Birifor, si bien que le nombre de Lobi y reste inconnu, selon Michèle Fiéloux.",
-            "formAsWritten": "Lobe",
-            "sources": [
-              {
-                "title": "Les sentiers de la nuit : les migrations rurales lobi de la Haute-Volta vers la Côte d'Ivoire",
-                "author": "Michèle Fiéloux",
-                "year": 1980,
-                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/pt5/travaux_d/10005.pdf",
-                "tier": "referenced",
-                "source_kind": "academic",
-                "page": "p. 6",
-                "notes": "ORSTOM, Travaux et documents n° 110, Paris, 1980, issu d'une thèse soutenue en 1975 ; enquête menée en pays lobi de décembre 1971 à décembre 1972. Lu en ligne le 9 octobre 2026. Page 6 : au Ghana, les Lobi sont confondus avec les Birifor sous l'appellation de Lobe dans les recensements."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": 1904,
-              "to": 1904,
-              "label": "1904"
-            },
-            "era": "colonial",
-            "statement": "Le nom Lobi est souvent étendu à tort, selon Maurice Delafosse, aux différents peuples qui vivent au nord de Bouna. Les Lobi n'en forment qu'une petite partie, et leur langue n'est pas comprise des autres.",
-            "sources": [
-              {
-                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
-                "author": "Maurice Delafosse",
-                "year": 1904,
-                "url": "https://archive.org/details/vocabulairescomp00delauoft",
-                "tier": "referenced",
-                "source_kind": "academic",
-                "page": "p. 224",
-                "notes": "Paris, Ernest Leroux, 1904. Lu dans l'exemplaire numérisé par Internet Archive le 9 octobre 2026."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": 1888,
-              "to": 1888,
-              "label": "Février 1888"
-            },
-            "era": "polity",
-            "statement": "Le nom Lobi apparaît par écrit chez l'explorateur Louis-Gustave Binger : à Léra, des Mandé lui disent que la langue de leurs voisins ressemble à celle des « gens du Lobi ». Binger l'emploie pour un pays. C'est la plus ancienne trace de ce nom que le projet connaît ; les Lobi vivaient déjà dans la région avant elle.",
-            "formAsWritten": "gens du Lobi",
-            "birth": true,
-            "sources": [
-              {
-                "title": "« Du Niger au golfe de Guinée », Le Tour du monde",
-                "author": "Louis-Gustave Binger",
-                "year": null,
-                "url": "https://archive.org/details/dunigeraugolfede00bing",
-                "tier": "referenced",
-                "source_kind": "archive",
-                "page": "p. 78",
-                "notes": "Récit du voyage de 1887-1889 paru dans la revue Le Tour du monde, lu dans l'exemplaire numérisé par Internet Archive le 9 octobre 2026. La page 78 raconte l'étape de Léra, le dimanche 5 février 1888. L'année de parution du fascicule ne figure pas sur la page lue."
               }
             ]
           }

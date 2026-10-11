@@ -42,11 +42,10 @@ const AYNEHA = {
   display_name: "Ayneha",
   spellings: ["Ayneha"],
   name_types: ["endonym", "historical_spelling"],
-  bearer_count: 4,
+  bearer_count: 3,
   bearers: [
     { id: "PPL_SONGHAI", name: "Songhai" },
     { id: "PPL_SONGHAY_GURMA", name: "Songhay Gurma" },
-    { id: "PPL_SONGHAY_MACRO", name: "Peuples Songhay (macro-groupe)" },
     { id: "PPL_SONGHAY_NIGERIEN", name: "Songhay Nigerien" },
   ],
   has_imposed: false,
@@ -72,11 +71,10 @@ describe("listNameForms", () => {
 
     expect(forms).toHaveLength(1);
     expect(forms[0].displayName).toBe("Ayneha");
-    expect(forms[0].bearerCount).toBe(4);
+    expect(forms[0].bearerCount).toBe(3);
     expect(forms[0].bearers.map((bearer) => bearer.id)).toEqual([
       "PPL_SONGHAI",
       "PPL_SONGHAY_GURMA",
-      "PPL_SONGHAY_MACRO",
       "PPL_SONGHAY_NIGERIEN",
     ]);
   });

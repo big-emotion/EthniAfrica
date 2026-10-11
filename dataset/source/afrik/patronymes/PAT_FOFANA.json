@@ -30,6 +30,19 @@
         {
           "countryId": "GNB",
           "sourceRefs": ["corpus-ppl-dioula-organisation"]
+        },
+        {
+          "countryId": "SLE",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
+      ]
+    },
+    {
+      "spelling": "Fofanah",
+      "attestations": [
+        {
+          "countryId": "SLE",
+          "sourceRefs": ["afrik-candidate-queue"]
         }
       ]
     }
@@ -79,6 +92,11 @@
       "countryId": "GNB",
       "status": "attested",
       "sourceRefs": ["corpus-ppl-dioula-organisation"]
+    },
+    {
+      "countryId": "SLE",
+      "status": "attested",
+      "sourceRefs": ["afrik-candidate-queue"]
     }
   ],
   "alliances": [
@@ -164,6 +182,14 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Canut, Cécile, et Smith, Étienne, Cahiers d'études africaines, numéro 184, 2006, p. 687 et suivantes. Citée pour la mise en garde qu'elle porte : l'idée que la parenté à plaisanterie apaiserait les conflits y est traitée comme une hypothèse héritée de Radcliffe-Brown et reprise par les études sur la résolution des conflits, donc comme un discours à analyser et non comme un effet mesuré. La page de début est vérifiée, la page de fin ne l'est pas."
+    },
+    {
+      "sourceKey": "afrik-candidate-queue",
+      "title": "Relevé de couverture anthroponymique EthniAfrica",
+      "url": null,
+      "tier": "unverified",
+      "source_kind": "ai_generated",
+      "notes": "Ce relevé de couverture est conservé uniquement pour les associations géographiques ou ethnolinguistiques que les sources dédiées n'ont pas confirmées. Ces associations ne soutiennent aucune étymologie."
     }
   ],
   "gaps": [

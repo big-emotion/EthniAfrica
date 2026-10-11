@@ -29,14 +29,17 @@
       "Creoles de Cacheu (ancien centre commercial)",
       "Creoles de Bolama (ancienne capitale coloniale)",
       "Kristons (Catholics de langue portugaise)",
-      "Lançados (descendants de Portugais métissés avec des Africaines)"
+      "Lançados (descendants de Portugais métissés avec des Africaines)",
+      "Fijus di Fidalgu (Filhos de Fidalgo) : descendants de Portugais nobles et femmes africaines, portant des noms de famille portugais (da Silva, Carvalho, Fonseca)",
+      "Kriol de Ziguinchor : variante de la communaute creole en Casamance senegalaise"
     ],
     "origins": {
       "ancientOrigins": "Les Créoles de Guinée-Bissau sont nés du contact entre les populations africaines locales (Mandingue, Balante, Papel, Manjak, Fulani) et les colons et marchands portugais à partir du XVe siècle. Les premiers établissements portugais furent créés à Cacheu (XVIe siècle), Geba, Bissau et Joal. Des individus d'horizons divers — aventuriers, marchands, exilés, naufragés, clercs d'Europe et du Cap-Vert, et esclaves africains — se mêlèrent dans ces comptoirs fluviaux, donnant naissance à une culture et une langue créoles distinctes.",
       "formationPeriod": "Le créole de Guinée-Bissau se forma probablement comme langue maternelle à partir du XVIIe siècle dans les comptoirs portugais de Cacheu, Geba, Bissau et Joal. Il dérive du créole initié sur l'île de Santiago au Cap-Vert, transporté sur le continent par les lançados et les commerçants cap-verdiens. L'identité créole ethnique s'est consolidée sous la colonisation portugaise (XIXe-XXe siècles), les Créoles occupant un rôle d'intermédiaires entre l'administration coloniale et les populations africaines.",
       "migrationRoutes": [
         "Du Cap-Vert (île de Santiago) vers les comptoirs de la côte de Guinée, XVe-XVIe siècles, via les lançados",
-        "Diffusion depuis les centres côtiers et fluviaux (Cacheu, Bissau, Geba) vers l'intérieur du pays"
+        "Diffusion depuis les centres côtiers et fluviaux (Cacheu, Bissau, Geba) vers l'intérieur du pays",
+        "Extension vers la Casamance (Senegal) : les Creoles de Ziguinchor forment une communaute distincte au 19e siecle"
       ],
       "historicalSettlementZones": [
         "Bissau (capitale, principal centre créole)",
@@ -80,7 +83,7 @@
     "demography": {
       "totalPopulation": 20000,
       "referenceYear": 2025,
-      "source": "International Kreol Magazine (2024) : les Créoles représentent environ 1% d'une population de près de 2 millions en Guinée-Bissau, soit environ 20 000 personnes. Joshua Project : Crioulo, Upper Guinea in Guinea-Bissau, 301 000 locuteurs natifs du kriyol (incluant ceux d'autres origines ethniques). Note : la communauté créole ethnique (métis afro-portugais) est distincte et bien plus petite que l'ensemble des locuteurs du kriyol.",
+      "source": "International Kreol Magazine (2024) : les Créoles représentent environ 1% d'une population de près de 2 millions en Guinée-Bissau, soit environ 20 000 personnes. Joshua Project : Crioulo, Upper Guinea in Guinea-Bissau, 301 000 locuteurs natifs du kriyol (incluant ceux d'autres origines ethniques). Note : la communauté créole ethnique (métis afro-portugais) est distincte et bien plus petite que l'ensemble des locuteurs du kriyol. Une autre estimation, fondée sur les 250 000 locuteurs natifs du kriyol que compte Ethnologue, donne 200 000 Créoles en Guinée-Bissau, 46 500 en Casamance et 20 000 au Portugal en 2025.",
       "distributionByCountry": [
         {
           "country": "GNB",
@@ -119,6 +122,22 @@
         "url": "https://www.britannica.com/place/Guinea-Bissau",
         "tier": "unverified",
         "source_kind": "encyclopedia"
+      },
+      {
+        "title": "APiCS Online — Guinea-Bissau Kriyol (survey chapter)",
+        "url": "https://apics-online.info/surveys/33",
+        "tier": "referenced",
+        "source_kind": "academic"
+      },
+      {
+        "title": "Revista Africa e Africanidades — Guinee-Bissau et la langue guineenne",
+        "url": "https://africaeafricanidades.com.br/documentos/ARTLIVRE071025.pdf",
+        "tier": "needs_review"
+      },
+      {
+        "title": "PopulationPyramid.net — Guinea-Bissau 2024",
+        "url": "https://www.populationpyramid.net/guinea-bissau/2024/",
+        "tier": "unverified"
       }
     ]
   },
