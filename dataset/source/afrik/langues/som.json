@@ -13,7 +13,12 @@
   "whyProblematic": null,
   "spellingAliases": [],
   "familyId": "FLG_COUCHITIQUE",
-  "peoples": [],
+  "peoples": [
+    {
+      "name": "Somali",
+      "peopleId": "PPL_SOMALI"
+    }
+  ],
   "nameHistory": {
     "summary": "Le nom somali désigne la langue des Somali, dans la Corne de l'Afrique, que ses locuteurs appellent af-soomaali. Une de ses grandes variétés porte un nom à elle, maxaa-tiri. Le nom du peuple est plus ancien que celui de la langue ; on ne sait pas avec certitude d'où il vient.",
     "names": [

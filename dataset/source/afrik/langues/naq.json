@@ -42,7 +42,12 @@
   "whyProblematic": "Hottentot, Hottentottisch et Nama Hottentot sont des noms coloniaux. Ils dérivent du terme que les colons néerlandais du Cap appliquèrent aux Khoekhoe au milieu du XVIIe siècle ; François-Xavier Fauvelle-Aymar (2002) montre comment ce terme est devenu un stéréotype colonial, et il est aujourd'hui tenu pour raciste et offensant. Glottolog imprime entre guillemets les formes qu'il tient pour dépréciées, dont plusieurs termes injurieux : celles-là ne sont pas reprises ici. Les locuteurs nomment leur langue Khoekhoegowab.",
   "spellingAliases": [],
   "familyId": "FLG_KHOE",
-  "peoples": [],
+  "peoples": [
+    {
+      "name": "Nama",
+      "peopleId": "PPL_NAMA"
+    }
+  ],
   "nameHistory": {
     "summary": "Le nom khoekhoegowab désigne la langue khoekhoe parlée surtout en Namibie, et veut dire « la langue des Khoekhoe ». Beaucoup de ses locuteurs l'appellent plutôt nama ou damara, du nom de leur peuple. D'autres noms existent : Namaqua dans les anciens récits européens, et Hottentot, un nom donné par les colons hollandais, aujourd'hui jugé offensant. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
     "names": [

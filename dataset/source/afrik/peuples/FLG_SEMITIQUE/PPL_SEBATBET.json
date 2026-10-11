@@ -1,7 +1,7 @@
 {
   "id": "PPL_SEBATBET",
   "nameMain": "Sebat Bet Gurage",
-  "languageFamilyId": "FLG_COUCHITIQUE",
+  "languageFamilyId": "FLG_SEMITIQUE",
   "currentCountries": ["ETH"],
   "content": {
     "appellations": {
@@ -15,7 +15,7 @@
       "originOfExonyms": "Le terme Sebat Bet veut dire « sept maisons » en amharique ; il ferait référence aux sept groupes dialectaux principaux. Gurage est le terme generique englobant plusieurs sous-groupes ethnolinguistiques distincts. Les groupes Gurage descendraient de conquérants militaires de la région du Tigray à l'époque de l'empire Aksumite, selon la Britannica.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Sebat Bet Gurage designe specifiquement le sous-groupe occidental des Gurage, distinct des Gurage septentrionaux (Soddo) et orientaux (Silte). L'appellation est officielle dans les classifications ethnographiques et administratives ethiopiennes.",
-      "linguisticFamily": "FLG_COUCHITIQUE",
+      "linguisticFamily": "FLG_SEMITIQUE",
       "ethnoLinguisticGroup": "Semitique ethiopien (Ethio-Semitique, branche Gurage occidentale)",
       "historicalRegion": "Centre-sud de l'Ethiopie, zone Gurage (region des Nations, Nationalites et Peuples du Sud), environ 155 km au sud-ouest d'Addis-Abeba",
       "currentCountries": ["ETH"]

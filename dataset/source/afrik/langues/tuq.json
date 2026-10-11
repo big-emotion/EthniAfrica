@@ -26,7 +26,12 @@
   "whyProblematic": null,
   "spellingAliases": [],
   "familyId": "FLG_SAHARIEN",
-  "peoples": [],
+  "peoples": [
+    {
+      "name": "Toubou",
+      "peopleId": "PPL_TOUBOU"
+    }
+  ],
   "nameHistory": {
     "summary": "Le nom tedaga désigne la langue des Teda, qui vivent au Tibesti, dans le nord du Tchad, et autour. On y retrouve le nom du peuple, comme on retrouve celui des Daza dans dazaga, la langue des Daza. Leurs voisins kanembou et les Arabes les appellent Toubou, un nom écrit dès le XIe ou le XIIe siècle. Les sources ne s'accordent pas toujours sur l'origine de ces noms ; nous les présentons plus bas.",
     "names": [

@@ -13,7 +13,12 @@
   "whyProblematic": "Glebo est le nom du premier groupe que les explorateurs et colons américano-libériens ont rencontré au cap Palmas, les Glebo de la côte ; les colons ont ensuite appelé grebo leur langue (article de Wikipédia). Pour Moran, Glebo est le groupe et Grebo l'ensemble linguistique plus large auquel il appartient. Le mot a ensuite servi pour des groupes de l'intérieur, souvent d'autres langues et d'autres peuples, si bien que son emploi savant reste très imprécis. Pour le nom Glebo, chez les Glebo de la côte, un récit d'origine, tel que rapporté par Moran, dit qu'ils sont venus de l'est en pirogue, en grimpant sur les vagues comme le singe gle grimpe aux arbres. Comment Grebo est sorti de Glebo n'est pas expliqué dans les sources lues.",
   "spellingAliases": [],
   "familyId": "FLG_KROU",
-  "peoples": [{ "name": "Grebo", "peopleId": "PPL_GREBO" }],
+  "peoples": [
+    {
+      "name": "Grebo",
+      "peopleId": "PPL_GREBO"
+    }
+  ],
   "nameHistory": {
     "summary": "Le nom grebo désigne une langue krou du sud-est du Liberia, autour du cap Palmas, et le peuple qui la parle. Une tradition grebo, rapportée par un missionnaire en 1860, explique le nom par le singe gre. Nous ne connaissons pas d'autre explication ; nous la présentons plus bas avec les traces du nom.",
     "names": [
@@ -54,6 +59,7 @@
               "to": 1850,
               "label": "1850"
             },
+            "era": "colonial",
             "statement": "Le nom grebo désigne une langue dans le titre de la Genèse traduite « into the Grebo Tongue », publiée à New York en 1850 par l'American Bible Society. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
             "birth": true,
             "sources": [

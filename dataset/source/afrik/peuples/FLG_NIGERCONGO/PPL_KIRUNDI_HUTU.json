@@ -1,12 +1,12 @@
 {
   "id": "PPL_KIRUNDI_HUTU",
-  "nameMain": "Hutu",
+  "nameMain": "Hutu du Burundi",
   "languageFamilyId": "FLG_NIGERCONGO",
-  "currentCountries": ["BDI", "RWA", "COD", "UGA", "TZA"],
+  "currentCountries": ["BDI"],
   "classificationStatus": "colonial-legacy",
   "content": {
     "appellations": {
-      "mainName": "Hutu",
+      "mainName": "Hutu du Burundi",
       "selfAppellation": "Abahutu",
       "exonyms": [
         "Hutu (terme repris par les administrateurs coloniaux belges et allemands)",
@@ -18,19 +18,14 @@
       "contemporaryUsage": "En usage courant regional et international. Au Rwanda, le gouvernement deconseille l'usage de la categorisation ethnique depuis 1994, promouvant une identite Munyarwanda nationale. Au Burundi, le terme reste en usage dans les contextes politiques et sociaux, le pays ayant connu des crises ethniques recurrentes.",
       "linguisticFamily": "FLG_NIGERCONGO",
       "ethnoLinguisticGroup": "Bantou des Grands Lacs (Zone J, Rwanda-Rundi)",
-      "historicalRegion": "Rwanda, Burundi et region des Grands Lacs — hauts plateaux et collines du rift Albertin",
-      "currentCountries": ["BDI", "RWA", "COD", "UGA", "TZA"]
+      "historicalRegion": "Burundi, dans la région des Grands Lacs — hauts plateaux, collines et plaine de l'Imbo",
+      "currentCountries": ["BDI"]
     },
     "ethnicities": [
-      "Hutu du Rwanda (Abahutu b'u Rwanda) — majorite historique (~85 % de la population)",
       "Hutu du Burundi (Abahutu b'Uburundi) — majorite (~85 % de la population)",
-      "Hutu de RDC (Banyarwanda hutu des provinces de Kivu)",
-      "Hutu d'Ouganda (communautes refugiees en Ouganda)",
       "Hutu des hautes terres du centre du Burundi",
       "Hutu des plaines de l'Imbo (plaine de la Rusizi)",
-      "Hutu des collines rurales (inselbergs et plateaux)",
-      "Banyabwisha (Hutu de la chefferie de Bwisha, Nord-Kivu)",
-      "Bafumbira (Hutu de la region de Kisoro, Ouganda)"
+      "Hutu des collines rurales (inselbergs et plateaux)"
     ],
     "origins": {
       "ancientOrigins": "Les Abahutu sont un peuple bantou dont les ancetres emigrerent en Afrique centrale vers la region des Grands Lacs lors de la grande expansion bantou (entre le 1er et le 5e siecle de l'ere commune). Genetiquement, les Hutu presentent une majorite de lignees paternelles E1b1a (83 %) typiques des Bantou d'Afrique de l'Ouest et centrale, avec des influences couchitiques et nilo-sahariennes mineures. Apres leur arrivee dans la region, ils devinrent principalement agriculteurs sidentaires, tandis que les Tutsi pastoralistes et les Twa chasseurs-cueilleurs constituaient les autres composantes de la societe.",
@@ -41,10 +36,7 @@
         "Exodes massifs de refugies lors des crises de 1959, 1972, 1993-1994 vers les pays voisins (Ouganda, Tanzanie, RDC, Zambie)"
       ],
       "historicalSettlementZones": [
-        "Rwanda — totalite du territoire, majorite numerique sur toutes les collines",
         "Burundi — totalite du territoire, majoritaires dans les regions nord et centrales",
-        "RDC — provinces du Nord-Kivu et du Sud-Kivu (Banyarwanda hutu)",
-        "Ouganda — regions frontalieres de l'ouest (refugies et communautes installees)",
         "Plaine de l'Imbo (basse Rusizi, lac Tanganyika)",
         "Collines de Buyenzi, Bururi, Gitega, Ngozi"
       ],
@@ -60,15 +52,9 @@
       "religiousAuthority": "Les devins et guerisseurs (abapfumu) etaient les autorites spirituelles traditionnelles. Le culte Kubandwa (possession rituelle en l'honneur de Ryangombe) etait largement pratique. L'Eglise catholique romaine est aujourd'hui dominante (~50-60 % de la population), suivi des denominations protestantes. Un syncretisme maintient les rites de communication avec les ancetres."
     },
     "languages": {
-      "mainLanguage": "Kirundi (Burundi) / Kinyarwanda (Rwanda)",
-      "isoCodes": ["run", "kin"],
-      "dialects": [
-        "Kirundi standard (Burundi, langue nationale officielle)",
-        "Kinyarwanda standard (Rwanda, langue nationale officielle)",
-        "Dialectes regionaux du Kivu (kinyarwanda de RDC)",
-        "Kinyabwisha (parler des Banyarwanda du Nord-Kivu)",
-        "Kifumbira (parler des Bafumbira d'Ouganda)"
-      ],
+      "mainLanguage": "Kirundi",
+      "isoCodes": ["run"],
+      "dialects": ["Kirundi standard (Burundi, langue nationale officielle)"],
       "vehicularRole": "Le kirundi et le kinyarwanda sont des dialectes d'un meme continuum linguistique (Rwanda-Rundi, Zone J des langues bantou), mutuellement intelligibles. Le kirundi est langue officielle du Burundi avec le français et l'anglais. Le kinyarwanda est langue officielle du Rwanda avec le français (officiellement depriorise depuis 2008) et l'anglais. Les deux langues servent de lingua franca dans leurs pays respectifs. Les Hutu des zones frontalieres sont souvent bilingues kirundi-kinyarwanda."
     },
     "culture": {
@@ -81,37 +67,17 @@
       "kingdomsOrChiefdoms": "Historiquement, les Hutu n'avaient pas de royaumes independants distincts dans la region des Grands Lacs. Ils etaient integres dans les royaumes du Rwanda (Nyiginya) et du Burundi (Ntare), ou ils occupaient le bas de la hierarchie politique en tant qu'agriculteurs sous l'autorite des dynasties tutsies. Des chefferies hutu locales existaient avant la centralisation des royaumes. Depuis 1959 au Rwanda et depuis 1993 au Burundi (puis les accords d'Arusha 2000), les Hutu ont acces aux plus hauts niveaux du pouvoir.",
       "relationsWithNeighbors": "Relations historiques de clientelisme et de dependance vis-a-vis des Tutsi (systeme ubuhake). Relations avec les Twa : les Hutu etaient dominants par rapport aux Twa dans la hierarchie sociale traditionnelle. Interactions avec les peuples de RDC (Hunde, Nande, Bashi) dans les zones frontalieres, souvent tendues autour des droits fonciers et de la nationalite. Relations avec l'Ouganda : communautes hutu refugiees dans l'ouest ougandais.",
       "conflictsOrAlliances": "1959-1962 : revolution sociale rwandaise, violences anti-tutsies. 1972 : genocide des elites hutu au Burundi par l'armee (100 000 morts). 1993 : assassinat du president hutu Melchior Ndadaye par des officiers tutsis au Burundi ; contre-violence. Avril-juillet 1994 : genocide commis par le gouvernement hutu extremiste rwandais (Interahamwe) contre les Tutsi (800 000 a 1 000 000 de morts). Post-1994 : Forces democratiques de liberation du Rwanda (FDLR), milice hutu operant depuis la RDC. 2000-2015 : integration progressive au sein du gouvernement burundais (accords d'Arusha).",
-      "diaspora": "La diaspora hutu est principalement situee en Tanzanie, en Ouganda, en RDC, au Congo-Brazzaville, en Zambie, ainsi qu'en Europe (Belgique, France, Suisse) et en Amerique du Nord. Une partie importante des refugies hutu du genocide de 1994 et de ses suites se trouverait toujours en RDC (FDLR et familles associees) et en Tanzanie."
+      "diaspora": "La diaspora hutu est principalement situee en Tanzanie, en Ouganda, en RDC, au Congo-Brazzaville, en Zambie, ainsi qu'en Europe (Belgique, France, Suisse) et en Amerique du Nord. Une partie importante des refugies hutu du genocide de 1994 et de ses suites se trouverait toujours en RDC (FDLR et familles associees) et en Tanzanie. En Tanzanie, une estimation de 2019 compte 1 865 000 Hutu, réfugiés et communautés installées."
     },
     "demography": {
-      "totalPopulation": 22200000,
+      "totalPopulation": 12200000,
       "referenceYear": 2025,
-      "source": "UNFPA Burundi 2025 (14,4 millions, ~85 % Hutu = ~12,2 millions) ; UNFPA Rwanda 2025 (14,6 millions, ~85 % Hutu = ~12,4 millions, donnees historiques avant suppression des categories) ; estimation croisee corrigee. Une autre estimation (Wikipedia, 2019) compte environ 26 millions de Hutu dans la region, dont 2 000 000 en RDC (Nord-Kivu), 1 865 000 en Tanzanie et 1 500 000 en Ouganda.",
+      "source": "UNFPA Burundi 2025 : 14,4 millions d'habitants, dont environ 85 % de Hutu, soit environ 12,2 millions. Une autre estimation, fondée sur les données de 2009 avant le retrait des statistiques ethniques, compte environ 10 000 000 de Hutu au Burundi. Une estimation régionale (Wikipedia, 2019) compte environ 26 millions de Hutu dans la région, dont 1 865 000 en Tanzanie, réfugiés et communautés installées. Les sources lues ne permettent pas de choisir entre ces chiffres. Les Hutu du Rwanda, et ceux de langue kinyarwanda du Kivu et de Kisoro, sont décrits sur la fiche Rwandais (Hutu).",
       "distributionByCountry": [
         {
           "country": "BDI",
           "population": 12200000,
           "note": "Environ 85 % de la population burundaise (14,4 millions en 2025) — principalement agriculteurs dans les collines"
-        },
-        {
-          "country": "RWA",
-          "population": 12400000,
-          "note": "Environ 85 % de la population rwandaise (14,6 millions en 2025) selon les donnees demographiques historiques, categories officielles supprimees depuis 1994"
-        },
-        {
-          "country": "COD",
-          "population": 800000,
-          "note": "Banyarwanda hutu dans les provinces du Nord-Kivu et du Sud-Kivu"
-        },
-        {
-          "country": "UGA",
-          "population": 200000,
-          "note": "Refugies et communautes hutu dans l'ouest ougandais"
-        },
-        {
-          "country": "TZA",
-          "population": 1865000,
-          "note": "estimation 2019, réfugiés et communautés installées"
         }
       ]
     },
@@ -125,12 +91,6 @@
       {
         "title": "UNFPA — Burundi Population 2025",
         "url": "https://www.unfpa.org/data/world-population/BI",
-        "tier": "official",
-        "source_kind": "intergovernmental"
-      },
-      {
-        "title": "UNFPA — Rwanda Population 2025",
-        "url": "https://www.unfpa.org/data/world-population/RW",
         "tier": "official",
         "source_kind": "intergovernmental"
       },

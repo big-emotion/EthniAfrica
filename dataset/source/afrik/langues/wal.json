@@ -27,7 +27,12 @@
   "whyProblematic": null,
   "spellingAliases": [],
   "familyId": "FLG_OMOTIQUE",
-  "peoples": [],
+  "peoples": [
+    {
+      "name": "Wolayta",
+      "peopleId": "PPL_WOLAYTA"
+    }
+  ],
   "nameHistory": {
     "summary": "Le nom wolaytta désigne la langue des Wolaytta, au nord du lac Abaya, dans le sud de l'Éthiopie ; c'est le nom du peuple et de son ancien royaume, que la langue porte aussi. On l'écrit de bien des façons : Wolaitta, Wolayta, Welayita. Un autre nom, Wolamo, a été employé jusqu'aux années 1970 ; il est aujourd'hui jugé dénigrant. On ne sait pas avec certitude d'où viennent ces noms : les sources que nous avons lues n'en donnent pas l'origine.",
     "names": [
