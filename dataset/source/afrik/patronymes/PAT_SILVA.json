@@ -14,6 +14,10 @@
         {
           "countryId": "CPV",
           "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "AGO",
+          "sourceRefs": ["afrik-candidate-queue"]
         }
       ]
     },
@@ -22,6 +26,10 @@
       "attestations": [
         {
           "countryId": "CPV",
+          "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "AGO",
           "sourceRefs": ["afrik-candidate-queue"]
         }
       ]
@@ -50,6 +58,11 @@
   "countries": [
     {
       "countryId": "CPV",
+      "status": "attested",
+      "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "countryId": "AGO",
       "status": "attested",
       "sourceRefs": ["afrik-candidate-queue"]
     }

@@ -14,6 +14,19 @@
         {
           "countryId": "NGA",
           "sourceRefs": ["ryan-1981-musa", "statehouse-cabinet-musa"]
+        },
+        {
+          "countryId": "NER",
+          "sourceRefs": ["behindthename-moussa"]
+        }
+      ]
+    },
+    {
+      "spelling": "Moussa",
+      "attestations": [
+        {
+          "countryId": "NER",
+          "sourceRefs": ["behindthename-moussa", "niger-cm-2023-moussa"]
         }
       ]
     }
@@ -33,6 +46,11 @@
         "claim": "Dans le système haoussa décrit par Chamo, le nom personnel du père est couramment placé après le prénom de l'enfant sans devenir un nom de famille héréditaire stable.",
         "claimStatus": "established",
         "sourceRefs": ["chamo-2018-musa"]
+      },
+      {
+        "claim": "Moussa est présenté comme une transcription de l'arabe Mūsā couramment employée en Afrique de l'Ouest.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["behindthename-moussa"]
       }
     ]
   },
@@ -41,6 +59,11 @@
       "peopleId": "PPL_HAUSA",
       "status": "attested",
       "sourceRefs": ["ryan-1981-musa", "amoo-2022-musa"]
+    },
+    {
+      "peopleId": "PPL_ZARMA",
+      "status": "supposed",
+      "sourceRefs": ["niger-cm-2023-moussa"]
     }
   ],
   "countries": [
@@ -48,6 +71,11 @@
       "countryId": "NGA",
       "status": "attested",
       "sourceRefs": ["statehouse-cabinet-musa"]
+    },
+    {
+      "countryId": "NER",
+      "status": "attested",
+      "sourceRefs": ["niger-cm-2023-moussa"]
     }
   ],
   "alliances": [],
@@ -86,6 +114,22 @@
       "tier": "official",
       "source_kind": "government",
       "notes": "Page officielle consultée directement le 2 septembre 2026. Elle atteste Musa au Nigeria dans les noms de Hannatu Musa Musawa et Christopher G. Musa ; elle ne porte aucune affirmation ethnique ou étymologique."
+    },
+    {
+      "sourceKey": "behindthename-moussa",
+      "title": "Meaning, origin and history of the name Moussa",
+      "url": "https://www.behindthename.com/name/moussa/",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Notice onomastique communautaire consultée en anglais. Elle décrit Moussa comme une transcription de Mūsā utilisée en Afrique de l'Ouest. Cette étymologie n'est pas établie par une étude linguistique indépendante."
+    },
+    {
+      "sourceKey": "niger-cm-2023-moussa",
+      "title": "Conseil des ministres du 9 septembre 2023",
+      "url": "https://www.gouv.ne/index.php/les-communiques-du-gouvernement/508-conseil-des-ministres-du-09-09-2023-adoption-de-plusieurs-projets-de-textes-et-mesures-nominatives-2",
+      "tier": "official",
+      "source_kind": "government",
+      "notes": "Communiqué officiel du Gouvernement du Niger, consulté en français. Les mesures nominatives attestent la graphie Moussa au Niger ; elles ne renseignent ni le peuple des porteurs ni l'étymologie du nom."
     }
   ],
   "gaps": [
@@ -112,6 +156,10 @@
     {
       "fieldPath": "homonyms",
       "reason": "Les sources consultées ne permettent pas encore de présenter un autre nom écrit comme Musa, mais d'origine différente."
+    },
+    {
+      "fieldPath": "peoples",
+      "reason": "Le lien de la forme Moussa avec les Zarma du Niger reste supposé : les travaux d'anthroponymie songhay-zarma consultés ne l'attestent pas."
     }
   ],
   "nameHistory": {

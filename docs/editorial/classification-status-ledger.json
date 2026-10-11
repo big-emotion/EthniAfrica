@@ -235,11 +235,6 @@
     "rationale": "« Categorie residuelle » d'agregation des recensements : « la categorisation autres efface les identites specifiques », alors que « chaque groupe possede sa propre auto-appellation »."
   },
   {
-    "id": "PPL_BABUR",
-    "status": "colonial-legacy",
-    "rationale": "« La denomination Babur, utilisee par les colonisateurs britanniques, efface cette distinction politique importante » entre Bura autochtones et Pabir nobles."
-  },
-  {
     "id": "PPL_BADE",
     "status": "colonial-legacy",
     "rationale": "« Le terme Bedde fait reference a l'emirat colonial » et est « la forme utilisee dans les documents coloniaux britanniques », d'ou la confusion avec l'ethnonyme Bade."
@@ -343,11 +338,6 @@
     "id": "PPL_BENOUECONGO_MACRO",
     "status": "reconstructive",
     "rationale": "Label analytique sans communauté : « classification académique proposée par le linguiste Joseph Greenberg en 1963 », et « aucun des peuples concernés ne se désigne comme bénoué-congolais »."
-  },
-  {
-    "id": "PPL_BERI",
-    "status": "contested",
-    "rationale": "La fiche attribue Zaghawa a un exonyme arabe atteste des le 9e siecle, pas a un colonisateur, et souligne qu'il simplifie a l'exces une identite complexe depuis le conflit du Darfour."
   },
   {
     "id": "PPL_BERTA",
@@ -895,9 +885,14 @@
     "rationale": "Le terme « renvoie à une catégorie forgée par les colonisateurs pour désigner des fugitifs », que les communautés ont ensuite « repris et revendiqué comme nom d'identité politique et culturelle » via les traités de 1739-1740."
   },
   {
+    "id": "PPL_AFIZERE",
+    "status": "contested",
+    "rationale": "« Le groupe préfère de plus en plus Afizere pour se distinguer des autres peuples appelés Jarawa » : refus communautaire d'un exonyme voisin."
+  },
+  {
     "id": "PPL_JARAWA",
     "status": "contested",
-    "rationale": "« Le terme Jarawa est un exonyme haoussa », homonyme d'un peuple des Andaman, et « le groupe prefere de plus en plus le terme Afizere » : refus communautaire d'un exonyme voisin."
+    "rationale": "« Jarawa est le nom haoussa de ces groupes de l'État de Bauchi » et « Le nom Jarawa a servi pour plusieurs peuples » : exonyme donné par un voisin, partagé avec d'autres peuples."
   },
   {
     "id": "PPL_JUHOANSI",
@@ -1020,11 +1015,6 @@
     "rationale": "La fiche dit que Kisii designe une ville et non le peuple, qu'il 'provient de l'administration coloniale britannique' comme exonyme swahili adopte, le nom authentique etant Abagusii."
   },
   {
-    "id": "PPL_KLAO",
-    "status": "contested",
-    "rationale": "Le probleme enonce est une ambiguite savante : Kru designe a la fois le peuple Klao et toute la famille krou, ce qui cree des confusions dans la litterature ethnographique et linguistique."
-  },
-  {
     "id": "PPL_KODIA_KROU",
     "status": "contested",
     "rationale": "Les Kodia sont assimiles aux voisins plus nombreux (Bakwe, Bete, Godie), ce qui efface leur specificite, et leur absence des listes officielles des 68 ethnies les rend administrativement invisibles."
@@ -1043,11 +1033,6 @@
     "id": "PPL_KOULANGO",
     "status": "contested",
     "rationale": "La denomination « recouvre deux dialectes distincts (Bouna et Bondoukou), parfois traites comme des langues separees par les linguistes » : desaccord de classification."
-  },
-  {
-    "id": "PPL_KOULOUGO",
-    "status": "contested",
-    "rationale": "Kulango « recouvre au moins deux communautes linguistiquement distinctes » (nku, kzc), traitees comme langues separees par l'Ethnologue, d'ou une confusion frequente."
   },
   {
     "id": "PPL_KOYRA",
@@ -1170,11 +1155,6 @@
     "rationale": "La fiche dit que Lala-Lamba est 'une denomination relationnelle/ethnohistorique plutot qu'une identite ethnique propre', label savant de zone de contact derriere lequel le peuple se dit Lamba."
   },
   {
-    "id": "PPL_LALA_LENJE",
-    "status": "contested",
-    "rationale": "La fiche conteste la classification elle-meme : 'les Lenje ne sont pas un sous-groupe des Lala', ils relevent du groupe Botatwe et non Bemba-Lala, l'association n'etant que geographique."
-  },
-  {
     "id": "PPL_LAMBA",
     "status": "colonial-legacy",
     "rationale": "La confusion Lamba/Losso « resulte d'une classification coloniale erronee » et Lamba est « la transcription francaise introduite par l'administration coloniale allemande puis francaise »."
@@ -1275,11 +1255,6 @@
     "rationale": "« Le terme Matakam a ete utilise par l'administration coloniale francaise pour designer plusieurs peuples des montagnes Mandara », creant des confusions avec les groupes voisins."
   },
   {
-    "id": "PPL_MAHN",
-    "status": "colonial-legacy",
-    "rationale": "La fiche qualifie Mano d'exonyme colonial anglophone et francais le plus courant, en usage au Liberia, tandis que l'auto-designation est Maan."
-  },
-  {
     "id": "PPL_MAKUA",
     "status": "contested",
     "rationale": "La fiche dit Makua un exonyme d'etymologie incertaine couvrant une grande diversite de sous-groupes parfois traites comme des peuples distincts par les linguistes."
@@ -1318,11 +1293,6 @@
     "id": "PPL_MANJA",
     "status": "colonial-legacy",
     "rationale": "La fiche dit que 'les variantes orthographiques proviennent de transcriptions coloniales francaises du nom autochtone Mandja', la confusion Manza/Mbanza etant nee des sources coloniales."
-  },
-  {
-    "id": "PPL_MANJAK_BAINUK",
-    "status": "contested",
-    "rationale": "« Le terme Bainouk est percu comme pejoratif selon la tradition mandingue (ceux qui ont ete chasses) » : la pejoration est imputee a un voisin africain, non a un acteur colonial."
   },
   {
     "id": "PPL_MANKANYA",

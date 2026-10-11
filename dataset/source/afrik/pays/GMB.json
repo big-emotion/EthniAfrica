@@ -310,14 +310,24 @@
         "appellationRemarks": "\"Serer\" est l'auto-appellation. Pas de terme péjoratif connu."
       },
       {
-        "name": "Manjak / Bainuk",
-        "selfAppellation": "Manjak, Bainuk",
-        "exonyms": ["Manjak", "Bainuk (termes utilisés par les Européens)"],
-        "peopleId": "PPL_MANJAK_BAINUK",
+        "name": "Manjak",
+        "selfAppellation": "Manjaku",
+        "exonyms": ["Mandjak", "Manjago"],
+        "peopleId": "PPL_MANJAK",
         "mainRegion": "Zones côtières et transfrontalières",
-        "languages": ["Manjak", "Bainuk", "anglais"],
+        "languages": ["Manjak", "anglais"],
         "languageFamily": "FLG_ATLANTIQUE",
-        "appellationRemarks": "\"Manjak\" et \"Bainuk\" sont les auto-appellations respectives. Pas de terme péjoratif connu. Groupes côtiers et transfrontaliers."
+        "appellationRemarks": "\"Manjaku\" est le nom que se donnent les Manjak. Manjago est la forme jola du nom. Groupe côtier et transfrontalier."
+      },
+      {
+        "name": "Bainouk",
+        "selfAppellation": "Banyun",
+        "exonyms": ["Bainuk", "Bainouk"],
+        "peopleId": "PPL_BAINOUK",
+        "mainRegion": "Zones côtières et transfrontalières",
+        "languages": ["Bainouk", "anglais"],
+        "languageFamily": "FLG_ATLANTIQUE",
+        "appellationRemarks": "Les Bainouk vivent surtout en Casamance, au Sénégal ; en Gambie, ils sont présents dans le Foni et le Kombo. Groupe côtier et transfrontalier."
       },
       {
         "name": "Autres peuples",
