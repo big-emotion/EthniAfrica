@@ -110,5 +110,283 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Pare désigne un peuple bantou des monts Pare, au nord-est de la Tanzanie. Le groupe le plus nombreux se nomme lui-même Asu ; au nord vivent les Gweno, qui ont leur propre nom. Wapare est une autre forme du nom. Les sources que nous avons lues ne disent pas d'où vient le nom Pare.",
+    "names": [
+      {
+        "nameText": "Asu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom propre du groupe le plus nombreux des monts Pare, au nord comme au sud.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Asu est le nom propre du groupe le plus nombreux des monts Pare, au nord comme au sud : mwasú au singulier, vasú au pluriel, et tʃasú pour la langue, selon les linguistes Gérard Philippson et Derek Nurse. Nous n'avons pas trouvé de trace ancienne datée de ce nom, ni d'explication de son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Gweno, a little known Bantu language of Northern Tanzania",
+                "author": "Gérard Philippson et Derek Nurse",
+                "year": null,
+                "url": "http://www.ddl.cnrs.fr/fulltext/Philippson/Philippson_2000.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Texte mis en ligne par le laboratoire Dynamique du Langage (CNRS, Lyon). Le document n'imprime pas sa date de publication. lu le 11 octobre 2026, vérifié sur l'image de la page."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Asu figure, avec Wapare, comme autre nom des Pare dans la liste des noms de peuples africains dressée par Ivan Hrbek pour l'UNESCO.",
+            "sources": [
+              {
+                "title": "Ethnonymes et toponymes africains — Liste d'ethnonymes africains",
+                "author": "Ivan Hrbek",
+                "year": 1984,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000189601",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 187",
+                "notes": "UNESCO, Histoire générale de l'Afrique : études et documents, 6, actes de la réunion d'experts de Paris (3-7 juillet 1978). Tableau à quatre colonnes : nom courant, autres graphies ou appellations, peuple apparenté, pays ; lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gweno",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des habitants du nord des monts Pare, qui parlent une langue proche du chaga.",
+        "periodLabel": "Écrit sous une forme proche depuis 1848 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Gweno désigne les habitants du nord des monts Pare, qui se nomment eux-mêmes mɣonu au singulier et βaɣonu au pluriel, et appellent leur langue kiɣonu, selon Gérard Philippson et Derek Nurse. Ils acceptent en général le nom d'ensemble Pare.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Gweno, a little known Bantu language of Northern Tanzania",
+                "author": "Gérard Philippson et Derek Nurse",
+                "year": null,
+                "url": "http://www.ddl.cnrs.fr/fulltext/Philippson/Philippson_2000.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Texte mis en ligne par le laboratoire Dynamique du Langage (CNRS, Lyon). Le document n'imprime pas sa date de publication. lu le 11 octobre 2026, vérifié sur l'image de la page."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1800,
+              "to": 1880,
+              "label": "XIXe siècle, avant 1880"
+            },
+            "era": "polity",
+            "statement": "Le nom Gweno désigne alors un royaume du nord des monts Pare, moins connu que le royaume shambaa voisin, selon l'historien Isaria N. Kimambo.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 10 : La côte et l'hinterland de l'Afrique orientale de 1845 à 1880",
+                "author": "Isaria N. Kimambo",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 283",
+                "notes": "UNESCO, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC. L'auteur est lui-même historien des Pare."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1848,
+              "to": 1860,
+              "label": "Avril-mai 1848, journal publié en 1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Gweno a une forme proche, Ugono, dans le journal du missionnaire Johannes Rebmann, qui cite en 1848 les gens d'Ugono parmi les voisins des Chagga du Kilimandjaro qu'ils retrouvent sur leurs marchés. C'est la plus ancienne trace d'une forme proche de ce nom que le projet connaît. Les gens qu'il désigne vivaient déjà là avant lui.",
+            "formAsWritten": "Ugono",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Johannes Rebmann",
+                "role": "missionnaire, auteur du journal de voyage"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels, Researches, and Missionary Labours during an Eighteen Years' Residence in Eastern Africa",
+                "author": "Johann Ludwig Krapf",
+                "year": 1860,
+                "url": "https://archive.org/details/travelsresearch00ravegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 244",
+                "notes": "Londres, Trübner. Le livre reproduit les journaux de voyage du missionnaire Johannes Rebmann. lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Les sources que nous avons lues ne disent pas si Ugono et Gweno sont exactement le même nom."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Pare",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'ensemble des peuples des monts Pare ; écrit dès 1847, son origine reste inconnue.",
+        "periodLabel": "Écrit depuis 1847 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Pare est un nom d'ensemble pour les peuples des monts Pare, que les Gweno acceptent en général, alors que le groupe le plus nombreux se nomme Asu, selon Gérard Philippson et Derek Nurse. On ne sait pas avec certitude d'où vient le nom Pare : les sources que nous avons lues ne l'expliquent pas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Gweno, a little known Bantu language of Northern Tanzania",
+                "author": "Gérard Philippson et Derek Nurse",
+                "year": null,
+                "url": "http://www.ddl.cnrs.fr/fulltext/Philippson/Philippson_2000.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Texte mis en ligne par le laboratoire Dynamique du Langage (CNRS, Lyon). Le document n'imprime pas sa date de publication. lu le 11 octobre 2026, vérifié sur l'image de la page."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Pare est le nom retenu par Ivan Hrbek dans sa liste des noms de peuples africains pour l'UNESCO, avec Wapare et Asu comme autres noms.",
+            "sources": [
+              {
+                "title": "Ethnonymes et toponymes africains — Liste d'ethnonymes africains",
+                "author": "Ivan Hrbek",
+                "year": 1984,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000189601",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 187",
+                "notes": "UNESCO, Histoire générale de l'Afrique : études et documents, 6, actes de la réunion d'experts de Paris (3-7 juillet 1978). Tableau à quatre colonnes : nom courant, autres graphies ou appellations, peuple apparenté, pays ; lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1770,
+              "to": 1800,
+              "label": "Fin du XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Pare désigne, pour l'historien W. R. Ochieng', un des peuples gouvernés à la fin du XVIIIe siècle par des rois puissants, assistés de conseils, de ministres et de chefs de district, comme leurs voisins shambaa.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 27 : L'intérieur de l'Afrique de l'Est : les peuples du Kenya et de la Tanzanie (1500-1800)",
+                "author": "W. R. Ochieng'",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 913",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1847,
+              "to": 1860,
+              "label": "Octobre 1847, journal publié en 1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Pare apparaît par écrit dans le journal du missionnaire Johannes Rebmann, qui rencontre à Maguasini, chez les Taita, « deux hommes de la tribu de Pare », vêtus de peaux et fumant des pipes qu'ils ont fabriquées. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Pare",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Johannes Rebmann",
+                "role": "missionnaire, auteur du journal de voyage"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels, Researches, and Missionary Labours during an Eighteen Years' Residence in Eastern Africa",
+                "author": "Johann Ludwig Krapf",
+                "year": 1860,
+                "url": "https://archive.org/details/travelsresearch00ravegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 226",
+                "notes": "Londres, Trübner. Le livre reproduit les journaux de voyage du missionnaire Johannes Rebmann. lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wapare",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre forme du nom Pare, citée par l'historien Ivan Hrbek.",
+        "periodLabel": "En usage au XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Wapare figure comme autre nom des Pare dans la liste des noms de peuples africains dressée par Ivan Hrbek pour l'UNESCO. Nous n'avons pas trouvé de trace plus ancienne de cette forme.",
+            "sources": [
+              {
+                "title": "Ethnonymes et toponymes africains — Liste d'ethnonymes africains",
+                "author": "Ivan Hrbek",
+                "year": 1984,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000189601",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 187",
+                "notes": "UNESCO, Histoire générale de l'Afrique : études et documents, 6, actes de la réunion d'experts de Paris (3-7 juillet 1978). Tableau à quatre colonnes : nom courant, autres graphies ou appellations, peuple apparenté, pays ; lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

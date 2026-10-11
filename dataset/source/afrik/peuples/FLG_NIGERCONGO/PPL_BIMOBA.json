@@ -103,5 +103,195 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bimoba désigne un peuple de langue gur du nord-est du Ghana et du nord du Togo, qui se nomme lui-même Bimoba et appelle sa langue moar. Au Togo, on dit surtout Moba. Les sources que nous avons lues ne disent pas d'où viennent ces noms.",
+    "names": [
+      {
+        "nameText": "Bimoba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du peuple au Ghana, écrit depuis 1922 ; son origine reste inconnue.",
+        "periodLabel": "Écrit depuis 1922 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bimoba désigne un peuple du nord du Ghana et de la région voisine du Togo, dont Bunkpurugu est la « capitale », selon le dictionnaire bimoba de l'institut ghanéen de linguistique. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bimoba Dictionary — Introduction",
+                "author": "Ghana Institute of Linguistics, Literacy and Bible Translation",
+                "year": 2022,
+                "url": "https://www.webonary.org/bimoba/introduction/",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire en ligne publié sur Webonary (SIL). lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1927,
+              "to": 1927,
+              "label": "1927"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bimoba est écrit « B'Moba » dans le rapport britannique sur le Togo sous mandat pour l'année 1927, qui décrit les B'Moba et les Konkomba comme des cultivateurs vivant dans un pays de collines.",
+            "formAsWritten": "B’Moba",
+            "sources": [
+              {
+                "title": "Report by His Britannic Majesty's Government to the Council of the League of Nations on the Administration of Togoland under British Mandate for the year 1927",
+                "author": "Colonial Office (Royaume-Uni)",
+                "year": 1928,
+                "url": "https://archive.org/details/report-togoland-1920",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5 et p. 10",
+                "notes": "Rapport annuel relié dans un recueil des rapports de 1920 à 1931. lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bimoba apparaît par écrit chez A. W. Cardinall, qui présente en 1922 les Bimoba comme « une tribu très peu connue » du nord du Togo sous mandat britannique, qui parlent un dialecte proche de la branche « gnima » de la langue des Mossi ou des Dagomba. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Bimoba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Our Mandate in North Togoland, part II",
+                "author": "A. W. Cardinall",
+                "year": 1922,
+                "url": "https://archive.org/details/journalafricans03socigoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 43",
+                "notes": "Journal of the African Society, vol. XXII, 1922. Article sur le nord du Togo sous mandat britannique. lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1822,
+              "to": 1862,
+              "label": "Entre 60 et 100 ans avant 1922, selon un récit de 1922"
+            },
+            "era": "polity",
+            "statement": "Le nom Bimoba désigne, dans le récit recueilli par A. W. Cardinall, des gens venus de l'est, chassés de Mir et de Nano par des envahisseurs ashanti, qui, bien que protégés par le chef mamprusi, doivent se réfugier près de Nalerigu ; le chef de Solotigu serait le sixième depuis cette fuite.",
+            "sources": [
+              {
+                "title": "Our Mandate in North Togoland, part II",
+                "author": "A. W. Cardinall",
+                "year": 1922,
+                "url": "https://archive.org/details/journalafricans03socigoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 43",
+                "notes": "Journal of the African Society, vol. XXII, 1922. Article sur le nord du Togo sous mandat britannique. lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Moba",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom employé surtout au Togo ; écrit dès 1913.",
+        "periodLabel": "Écrit depuis 1913 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Moba est le nom retenu par Ivan Hrbek dans sa liste des noms de peuples africains pour l'UNESCO, avec Mouâ et Mowan comme autres noms ; il situe ce peuple au Togo et au Ghana.",
+            "sources": [
+              {
+                "title": "Ethnonymes et toponymes africains — Liste d'ethnonymes africains",
+                "author": "Ivan Hrbek",
+                "year": 1984,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000189601",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 182",
+                "notes": "UNESCO, Histoire générale de l'Afrique : études et documents, 6, actes de la réunion d'experts de Paris (3-7 juillet 1978). Tableau à quatre colonnes : nom courant, autres graphies ou appellations, peuple apparenté, pays ; lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1914,
+              "label": "Enquête de 1913, publiée en 1914"
+            },
+            "era": "colonial",
+            "statement": "Le nom Moba figure dans une enquête de 1913 sur l'islam au Togo allemand, publiée par Diedrich Westermann : une réponse venue du district de Mangu-Yendi cite les Moba parmi les peuples du nord que l'islam n'a pas touchés. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Moba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Die Verbreitung des Islams in Togo und Kamerun. Ergebnisse einer Umfrage",
+                "author": "Diedrich Westermann",
+                "year": 1914,
+                "url": "https://archive.org/details/dieweltdesislams12deutuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 209",
+                "notes": "Die Welt des Islams, Band II, Berlin, 1914. L'auteur publie les réponses à une enquête menée en 1913 auprès d'officiers, de fonctionnaires et de missionnaires du Togo allemand ; le passage cité vient du district de Mangu-Yendi. lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Moar",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les Bimoba donnent à leur langue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Moar est celui que les Bimoba donnent à leur langue, selon le dictionnaire bimoba de l'institut ghanéen de linguistique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bimoba Dictionary — Introduction",
+                "author": "Ghana Institute of Linguistics, Literacy and Bible Translation",
+                "year": 2022,
+                "url": "https://www.webonary.org/bimoba/introduction/",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire en ligne publié sur Webonary (SIL). lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

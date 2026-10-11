@@ -118,5 +118,292 @@
         "source_kind": "press"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Gouro désigne un peuple mandé du centre-ouest de la Côte d'Ivoire, dans la vallée du Bandama, qui se nomme lui-même Kweni. D'autres noms existent : Lo, et gòlò dans la langue gouro. Les sources que nous avons lues ne disent pas d'où viennent ces noms ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "Kweni",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne, d'après les linguistes ; il est écrit depuis 1904.",
+        "periodLabel": "Écrit depuis 1904 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kweni désigne le même peuple que Gouro, et sa langue : la langue gouro est « également appelée kweni », selon les linguistes Olga et Natalia Kuznetsova. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionnaire gouro-français",
+                "author": "Olga Kuznetsova et Natalia Kuznetsova",
+                "year": 2021,
+                "url": "https://llacan.cnrs.fr/PDF/Mandenkan66/66_1kuznetsova.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Mandenkan, n° 66, 2021, p. 3-186 ; dictionnaire du parler de Zuénoula, fondé sur des enquêtes menées de 2005 à 2019 avec des locuteurs gouro. lu le 11 octobre 2026 dans le texte publié par le LLACAN (CNRS)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1996,
+              "to": 1996,
+              "label": "1996"
+            },
+            "era": "modern",
+            "statement": "Le nom Kweni est écrit « Kwenu » par l'historien Yves Person, qui range les Kwenu, ou Gouro, parmi les principaux peuples mandé du Sud au XIXe siècle.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 24 : États et peuples de Sénégambie et de haute Guinée",
+                "author": "Yves Person",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 702",
+                "notes": "UNESCO, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Kweni est le nom retenu par l'historien Ivan Hrbek dans sa liste des noms de peuples africains pour l'UNESCO ; il donne Guro et Gouro comme autres noms du même peuple.",
+            "sources": [
+              {
+                "title": "Ethnonymes et toponymes africains — Liste d'ethnonymes africains",
+                "author": "Ivan Hrbek",
+                "year": 1984,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000189601",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 176",
+                "notes": "UNESCO, Histoire générale de l'Afrique : études et documents, 6, actes de la réunion d'experts de Paris (3-7 juillet 1978). Tableau à quatre colonnes : nom courant, autres graphies ou appellations, peuple apparenté, pays ; lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "statement": "Le nom Kweni apparaît par écrit chez Maurice Delafosse, qui place les Kweni à l'est des Guio, du Sassandra jusqu'au Bandama Rouge, et note que d'autres peuples les appellent Lò ou Guro. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Kweni",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "auteur du recueil de vocabulaires"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 145",
+                "notes": "Paris, Ernest Leroux ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive, vérifié sur l'image de la page. À la page 69, l'auteur écrit aussi « Kouéni (Lo ou Gouro) »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gouro",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Agni, selon Maurice Delafosse",
+        "shortLine": "Le nom le plus courant en français ; écrit depuis 1897, son origine reste inconnue.",
+        "periodLabel": "Écrit depuis 1897 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Gouro désigne aujourd'hui un peuple d'environ 500 000 personnes en Côte d'Ivoire et sa langue, du groupe mandé du Sud, selon Olga et Natalia Kuznetsova. Les sources que nous avons lues ne disent pas d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionnaire gouro-français",
+                "author": "Olga Kuznetsova et Natalia Kuznetsova",
+                "year": 2021,
+                "url": "https://llacan.cnrs.fr/PDF/Mandenkan66/66_1kuznetsova.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Mandenkan, n° 66, 2021, p. 3-186 ; dictionnaire du parler de Zuénoula, fondé sur des enquêtes menées de 2005 à 2019 avec des locuteurs gouro. lu le 11 octobre 2026 dans le texte publié par le LLACAN (CNRS)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2021,
+              "label": "Enquêtes de 2005 à 2019, dictionnaire publié en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Gouro se dit gòlò dans la langue gouro elle-même : le dictionnaire du parler de Zuénoula traduit gòlò par « Gouro » et donne l'exemple « les Gouros habitent au centre du pays », selon Olga et Natalia Kuznetsova.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionnaire gouro-français",
+                "author": "Olga Kuznetsova et Natalia Kuznetsova",
+                "year": 2021,
+                "url": "https://llacan.cnrs.fr/PDF/Mandenkan66/66_1kuznetsova.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 79",
+                "notes": "Mandenkan, n° 66, 2021, p. 3-186 ; dictionnaire du parler de Zuénoula, fondé sur des enquêtes menées de 2005 à 2019 avec des locuteurs gouro. lu le 11 octobre 2026 dans le texte publié par le LLACAN (CNRS)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Gouro est donné comme la forme française d'un nom dont Pathé Diagne écrit la forme indigène Guri, dans les exemples qu'il prépare pour la réunion d'experts de l'UNESCO sur les noms de peuples.",
+            "sources": [
+              {
+                "title": "Ethnonymes et toponymes africains — Introduction au débat sur les ethnonymes et les toponymes",
+                "author": "Pathé Diagne",
+                "year": 1984,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000189601",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 15",
+                "notes": "UNESCO, Histoire générale de l'Afrique : études et documents, 6. L'auteur marque chaque forme de son origine : (i) pour la forme indigène, (f) pour la forme française ; lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "statement": "Le nom Gouro est, pour Maurice Delafosse, le nom que les Agni donnent aux Kweni ; il l'écrit Guro.",
+            "formAsWritten": "Guro",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 145",
+                "notes": "Paris, Ernest Leroux ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive, vérifié sur l'image de la page."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1919,
+              "label": "De 1900 à 1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gouro désigne, dans l'histoire de la conquête française, un des peuples voisins des Baoulé qui résistent jusqu'en 1919, selon M'Baye Gueye et Albert Adu Boahen.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 6 : Initiatives et résistances africaines en Afrique occidentale de 1880 à 1914",
+                "author": "M'Baye Gueye et Albert Adu Boahen",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 166",
+                "notes": "UNESCO, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1899,
+              "label": "Mission de 1896-1897, rapport paru en 1899"
+            },
+            "statement": "Le nom Gouro apparaît par écrit dans le rapport de mission de Joseph Eysséric, qui traverse en 1897 le « pays gouro », sur la rive droite du Bandama, et ne peut parler avec ses habitants qu'à travers trois interprètes successifs. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Gouros",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Joseph Eysséric",
+                "role": "voyageur, auteur du rapport de mission"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Rapport sur une mission scientifique à la Côte d'Ivoire",
+                "author": "Joseph Eysséric",
+                "year": 1899,
+                "url": "https://archive.org/details/rapportsurunemis00eyss",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 227",
+                "notes": "Récit d'une mission de novembre 1896 à avril 1897, paru dans les Nouvelles archives des missions scientifiques et littéraires, tome IX, selon la bibliographie de Maurice Delafosse ; le catalogue de la numérisation le date de 1898. lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Lo",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Mandé-tan, selon Maurice Delafosse",
+        "shortLine": "Le nom que les Mandé-tan donnaient aux Kweni au début du XXe siècle.",
+        "periodLabel": "Écrit en 1904",
+        "accounts": [
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "statement": "Le nom Lo est, pour Maurice Delafosse, le nom que les Mandé-tan donnent aux Kweni ; il l'écrit Lò. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Lò",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 145",
+                "notes": "Paris, Ernest Leroux ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive, vérifié sur l'image de la page."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -120,5 +120,305 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ngonde désigne un peuple de la plaine du nord-ouest du lac Malawi, autour de Karonga, héritier du royaume du Kyungu, qui se nomme lui-même Ngonde. D'autres noms existent : Nkonde et Konde, donnés par les premiers Européens. Les sources ne s'accordent pas sur l'origine du nom Konde ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Ngonde",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un ancien royaume de la plaine du Malawi et de ses habitants.",
+        "periodLabel": "Écrit depuis 1925 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ngonde désigne d'abord la plaine du Malawi au sud de la rivière Songwe, puis les collines qui faisaient partie du royaume du Kyungu, et les gens qui y vivent, selon Monica Wilson. Nous n'avons pas trouvé d'explication de son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "For Men and Elders: Change in the Relations of Generations and of Men and Women among the Nyakyusa-Ngonde People, 1875-1971",
+                "author": "Monica Wilson",
+                "year": 1977,
+                "url": "https://archive.org/details/monica-hunter-wilson-for-men-and-elders-change-in-relations-generations-of-men-w",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Londres, International African Institute. Lu dans la copie d'Internet Archive, introduction. L'autrice écrit : « Ngonde means primarily the Malawi plain, south of the Songwe river »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ngonde désigne au Malawi la langue appelée IkyaNgonde ; en Tanzanie, les gens du nord appellent MuNgonde les Nyakyusa de la plaine du lac, qui ne se nomment pas ainsi eux-mêmes, selon Bastian Persohn.",
+            "sources": [
+              {
+                "title": "The verb in Nyakyusa: A focus on tense, aspect and modality. Second revised edition",
+                "author": "Bastian Persohn",
+                "year": 2020,
+                "url": "https://archive.org/details/oapen-20.500.12657-46943",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 8",
+                "notes": "Berlin, Language Science Press, collection Contemporary African Linguistics 2, sous licence libre. lu le 11 octobre 2026 dans la copie d'Internet Archive, section 1.2.2 « On the name Nyakyusa »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Ngonde est le nom retenu par Ivan Hrbek dans sa liste des noms de peuples africains pour l'UNESCO, qui le rattache aux Nyakyusa et le situe au Malawi et en Zambie.",
+            "sources": [
+              {
+                "title": "Ethnonymes et toponymes africains — Liste d'ethnonymes africains",
+                "author": "Ivan Hrbek",
+                "year": 1984,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000189601",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 184",
+                "notes": "UNESCO, Histoire générale de l'Afrique : études et documents, 6, actes de la réunion d'experts de Paris (3-7 juillet 1978). Tableau à quatre colonnes : nom courant, autres graphies ou appellations, peuple apparenté, pays ; lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1925,
+              "to": 1925,
+              "label": "1925"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ngonde est écrit « NGONDE » par le missionnaire Duncan R. Mackenzie, comme le nom que ce peuple donne à son pays. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "NGONDE",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Spirit-Ridden Konde",
+                "author": "Duncan R. Mackenzie",
+                "year": 1925,
+                "url": "https://archive.org/details/spiritriddenkond00mack_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 17",
+                "notes": "Philadelphie, J. B. Lippincott. L'auteur, missionnaire, a vécu vingt-quatre ans au bord du lac Nyasa. lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1940,
+              "label": "Jusque vers 1940"
+            },
+            "statement": "Le nom Ugonde désigne le pays sur lequel règnent les Kyungu : leur liste royale compte quinze noms jusque vers 1940, soit au moins neuf générations, selon K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 21 : La Zambézie du Nord : la région du lac Malawi",
+                "author": "K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 683",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1570,
+              "to": 1600,
+              "label": "Fin du XVIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Ngonde désigne aussi un des États fondés à la fin du XVIe siècle par un groupe d'immigrants, les Ngulube, avec ceux de Lambya, de Chifungwe et de Sukwa, selon K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 21 : La Zambézie du Nord : la région du lac Malawi",
+                "author": "K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 667",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nkonde",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme du nom chez les Britanniques à la fin du XIXe siècle.",
+        "periodLabel": "Écrit depuis 1897",
+        "accounts": [
+          {
+            "period": {
+              "from": 1897,
+              "to": 1897,
+              "label": "1897"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nkonde apparaît chez Harry H. Johnston, qui décrit le « pays nkonde », au nord du lac Nyasa, dont la fertilité et les troupeaux attirent des marchands arabes. C'est la plus ancienne trace de cette forme que le projet connaît. Le pays qu'elle désigne existait déjà avant elle.",
+            "formAsWritten": "Nkonde",
+            "birth": true,
+            "sources": [
+              {
+                "title": "British Central Africa",
+                "author": "Harry H. Johnston",
+                "year": 1897,
+                "url": "https://archive.org/details/britishafrica00johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 72",
+                "notes": "New York, Edward Arnold. lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1897,
+              "label": "1897"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nkonde sert aussi chez Harry H. Johnston à nommer tout un ensemble de peuples, les « Awa-nkonde », qui comprend notamment les Nyakiusa et vit au nord et au nord-ouest du lac Nyasa.",
+            "formAsWritten": "Awa-nkonde",
+            "sources": [
+              {
+                "title": "British Central Africa",
+                "author": "Harry H. Johnston",
+                "year": 1897,
+                "url": "https://archive.org/details/britishafrica00johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 390",
+                "notes": "New York, Edward Arnold. lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Konde",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les premiers Européens venus par le lac Nyasa",
+        "shortLine": "Le nom donné par les premiers Européens à tout le nord du lac Nyasa ; son origine est discutée.",
+        "periodLabel": "Écrit depuis 1877",
+        "accounts": [
+          {
+            "period": {
+              "from": 1925,
+              "to": 1925,
+              "label": "1925"
+            },
+            "era": "colonial",
+            "statement": "Le nom Konde est écrit « Konde » par le missionnaire Duncan R. Mackenzie, qui l'emploie pour tout le peuple, des deux côtés de la Songwe, tout en notant que ce peuple appelle son pays Ngonde.",
+            "formAsWritten": "Konde",
+            "sources": [
+              {
+                "title": "The Spirit-Ridden Konde",
+                "author": "Duncan R. Mackenzie",
+                "year": 1925,
+                "url": "https://archive.org/details/spiritriddenkond00mack_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 17",
+                "notes": "Philadelphie, J. B. Lippincott. L'auteur, missionnaire, a vécu vingt-quatre ans au bord du lac Nyasa. lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1877,
+              "to": 1879,
+              "label": "Note d'octobre 1877 (publiée en 1879)"
+            },
+            "era": "polity",
+            "statement": "Le nom Konde est écrit par le consul J. Frederic Elton, qui traverse la région en octobre 1877 : le pays « est maintenant généralement connu sous le nom de Konde ». C'est la plus ancienne trace de ce nom que le projet connaît. Le pays qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Konde",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels and Researches among the Lakes and Mountains of Eastern and Central Africa, from the journals of the late J. Frederic Elton",
+                "author": "J. Frederic Elton",
+                "year": 1879,
+                "url": "https://archive.org/details/travelsandresea00fredgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 331",
+                "notes": "Londres, John Murray, édité par H. B. Cotterill après la mort de l'auteur. Le passage date du voyage d'octobre 1877. lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1897,
+              "label": "Proposée en 1897"
+            },
+            "era": "colonial",
+            "statement": "Le nom Konde, que Harry H. Johnston écrit Nkonde, voudrait dire « banane » dans certaines langues voisines et aurait été donné au nord du lac Nyasa, très riche en bananeraies, selon Harry H. Johnston.",
+            "hypothesisGroup": "origine du nom Konde",
+            "sources": [
+              {
+                "title": "British Central Africa",
+                "author": "Harry H. Johnston",
+                "year": 1897,
+                "url": "https://archive.org/details/britishafrica00johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 390",
+                "notes": "New York, Edward Arnold. lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Rapporté en 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Konde viendrait de Ngonde : les premiers Européens, arrivés par le lac Nyasa dans les années 1870, débarquent d'abord dans le royaume de Ngonde et étendent ce nom aux groupes voisins, selon Bastian Persohn.",
+            "hypothesisGroup": "origine du nom Konde",
+            "sources": [
+              {
+                "title": "The verb in Nyakyusa: A focus on tense, aspect and modality. Second revised edition",
+                "author": "Bastian Persohn",
+                "year": 2020,
+                "url": "https://archive.org/details/oapen-20.500.12657-46943",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Berlin, Language Science Press, collection Contemporary African Linguistics 2, sous licence libre. lu le 11 octobre 2026 dans la copie d'Internet Archive, section 1.2.2 « On the name Nyakyusa »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

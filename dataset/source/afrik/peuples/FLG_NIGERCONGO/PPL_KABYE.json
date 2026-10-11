@@ -133,5 +133,327 @@
         "source_kind": "press"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kabye désigne un peuple du nord du Togo, autour de la Kara, qui se nomme lui-même Kabiyè. D'autres noms existent : Kabre, Kabure, Cabrais, et Lama pour un ancien nom. Les sources ne s'accordent pas sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Kabiyè",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kbp",
+        "namedBy": null,
+        "shortLine": "Le nom que le peuple et l'État togolais emploient aujourd'hui ; son origine est discutée.",
+        "periodLabel": "Écrit depuis 1984 au moins ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kabiyè désigne un peuple du Togo et du Bénin, apparenté aux Lamba, selon l'historien Ivan Hrbek. Son origine est discutée : l'explication que nous avons trouvée est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ethnonymes et toponymes africains — Liste d'ethnonymes africains",
+                "author": "Ivan Hrbek",
+                "year": 1984,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000189601",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 170",
+                "notes": "UNESCO, Histoire générale de l'Afrique : études et documents, 6, actes de la réunion d'experts de Paris (3-7 juillet 1978). Tableau à quatre colonnes : nom courant, autres graphies ou appellations, peuple apparenté, pays ; lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Kabiyè est écrit « Kabiye » par Ivan Hrbek, qui le retient comme nom courant et donne Cabrais, Kabiemba, Kabré et Kabrema comme autres noms. C'est la plus ancienne trace de cette forme que le projet connaît. Le peuple qu'il désigne existait bien avant elle.",
+            "formAsWritten": "Kabiye",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Ethnonymes et toponymes africains — Liste d'ethnonymes africains",
+                "author": "Ivan Hrbek",
+                "year": 1984,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000189601",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 170",
+                "notes": "UNESCO, Histoire générale de l'Afrique : études et documents, 6, actes de la réunion d'experts de Paris (3-7 juillet 1978). Tableau à quatre colonnes : nom courant, autres graphies ou appellations, peuple apparenté, pays ; lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Rapporté en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Kabiyè viendrait du surnom kotokoli « Kabourè », « ceux qui entassent les cailloux », qu'un chef kotokoli aurait donné à ses voisins du nord quand un colon allemand lui demandait leur nom ; le surnom serait devenu kabyè dans le parler des Lama, selon un article du journaliste togolais Assote Daniel.",
+            "hypothesisGroup": "origine du nom Kabiyè",
+            "sources": [
+              {
+                "title": "Retour à nos sources : du peuple Lama à l'origine au peuple Kabyè aujourd'hui",
+                "author": "Assote Daniel",
+                "year": 2024,
+                "url": "https://chroniquedelasemaine.tg/singlepost-retour-a-nos-sources---du-peuple-lama-a-l-origine-au-peuple-kabye-aujourd-hui-3-2006",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Chronique de la semaine, hebdomadaire togolais, article daté du 11 juillet 2024. L'article ne cite ni source écrite ni témoin pour l'histoire du nom. lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kabre",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom employé à l'époque coloniale et par les historiens pour le peuple kabiyè.",
+        "periodLabel": "Écrit depuis 1915 ; employé surtout au XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1987,
+              "to": 1987,
+              "label": "1987"
+            },
+            "era": "modern",
+            "statement": "Le nom Kabre désigne, chez l'historien Godfrey N. Uzoigwe, un des peuples du Togo dont les Allemands écrasent la résistance en 1890, alliés aux petits royaumes kotokoli et tchokossi.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 2 : Partage européen et conquête de l'Afrique : aperçu général",
+                "author": "Godfrey N. Uzoigwe",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 58",
+                "notes": "UNESCO, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kabre est donné comme autre forme de Kabure dans le Deutsches Kolonial-Lexikon, qui situe ce peuple au nord du cours supérieur de la Kara, dans le district de Sokodé.",
+            "formAsWritten": "Kabre",
+            "sources": [
+              {
+                "title": "Deutsches Kolonial-Lexikon, Band II",
+                "author": "Heinrich Schnee (dir.)",
+                "year": 1920,
+                "url": "https://archive.org/details/bub_gb_g4kaAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 138",
+                "notes": "Leipzig, Quelle & Meyer. Encyclopédie coloniale allemande, écrite dans le vocabulaire colonial de son époque. lu le 11 octobre 2026 dans la numérisation d'Internet Archive, vérifié sur l'image de la page. L'article est signé von Zech."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1915,
+              "to": 1915,
+              "label": "1915"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kabre apparaît dans le récit de M. Gehrts, qui voit passer à Bafilo des gens venus « des monts Kabre », rentrant chez eux après leur travail obligatoire à Sokodé, dû au titre de l'impôt. C'est la plus ancienne trace de cette forme que le projet connaît. Le peuple qu'elle désigne existait déjà avant elle.",
+            "formAsWritten": "Kabre",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Camera Actress in the Wilds of Togoland",
+                "author": "M. Gehrts",
+                "year": 1915,
+                "url": "https://archive.org/details/cameraactressinw00gehrrich",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 105",
+                "notes": "Philadelphie, J. B. Lippincott. Récit d'une actrice venue tourner des films au Togo allemand. lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kabure",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme allemande du nom à l'époque coloniale, attestée dès 1900.",
+        "periodLabel": "Écrit de 1900 à 1920 environ",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kabure est le titre de l'article du Deutsches Kolonial-Lexikon sur ce peuple : selon cet article, le pays kabure n'est « ouvert » dans toute son étendue par l'administration allemande qu'en 1897, au prix de combats assez durs, et se divise en cantons, dont Láma et Lása.",
+            "formAsWritten": "Kabure",
+            "sources": [
+              {
+                "title": "Deutsches Kolonial-Lexikon, Band II",
+                "author": "Heinrich Schnee (dir.)",
+                "year": 1920,
+                "url": "https://archive.org/details/bub_gb_g4kaAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 138",
+                "notes": "Leipzig, Quelle & Meyer. Encyclopédie coloniale allemande, écrite dans le vocabulaire colonial de son époque. lu le 11 octobre 2026 dans la numérisation d'Internet Archive, vérifié sur l'image de la page. L'article est signé von Zech."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1907,
+              "label": "Voyage de janvier 1905, récit publié en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kabure est employé par l'officier allemand Smend, qui entre « en Kabure » en janvier 1905, avec le chef de district Kersting, après avoir franchi la Kara.",
+            "formAsWritten": "Kabure",
+            "sources": [
+              {
+                "title": "Eine Reise durch die Nordostecke von Togo",
+                "author": "Smend",
+                "year": 1907,
+                "url": "https://archive.org/details/bub_gb_MZrlAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 245",
+                "notes": "Globus, Band XCII, n° 16, 24 octobre 1907. L'auteur, officier allemand, raconte un voyage de janvier 1905 avec le chef de district Kersting. lu le 11 octobre 2026 dans la numérisation d'Internet Archive, vérifié sur l'image de la page."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kabure figure dès 1900 dans le titre d'un article de F. Hupfeld sur l'« ouverture » du pays kabure dans le nord du Togo, paru dans la revue Globus, selon la bibliographie du Deutsches Kolonial-Lexikon, qui l'abrège en « K.-Landes ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Deutsches Kolonial-Lexikon, Band II",
+                "author": "Heinrich Schnee (dir.)",
+                "year": 1920,
+                "url": "https://archive.org/details/bub_gb_g4kaAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 138",
+                "notes": "Leipzig, Quelle & Meyer. Encyclopédie coloniale allemande, écrite dans le vocabulaire colonial de son époque. lu le 11 octobre 2026 dans la numérisation d'Internet Archive, vérifié sur l'image de la page. Nous n'avons pas lu l'article de Hupfeld lui-même."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Cabrais",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une forme française du nom, citée par l'historien Ivan Hrbek.",
+        "periodLabel": "Employé au XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Cabrais figure comme autre nom des Kabiyè dans la liste d'Ivan Hrbek pour l'UNESCO. Nous n'avons pas trouvé de trace plus ancienne de cette forme.",
+            "sources": [
+              {
+                "title": "Ethnonymes et toponymes africains — Liste d'ethnonymes africains",
+                "author": "Ivan Hrbek",
+                "year": 1984,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000189601",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 170",
+                "notes": "UNESCO, Histoire générale de l'Afrique : études et documents, 6, actes de la réunion d'experts de Paris (3-7 juillet 1978). Tableau à quatre colonnes : nom courant, autres graphies ou appellations, peuple apparenté, pays ; lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Lama",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de canton du pays kabiyè, présenté aussi comme l'ancien nom du peuple.",
+        "periodLabel": "Écrit depuis 1920",
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Rapporté en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Lama serait le « vrai nom » ancien du peuple aujourd'hui appelé Kabiyè, selon l'article du journaliste togolais Assote Daniel, qui ne donne pas ses sources.",
+            "sources": [
+              {
+                "title": "Retour à nos sources : du peuple Lama à l'origine au peuple Kabyè aujourd'hui",
+                "author": "Assote Daniel",
+                "year": 2024,
+                "url": "https://chroniquedelasemaine.tg/singlepost-retour-a-nos-sources---du-peuple-lama-a-l-origine-au-peuple-kabye-aujourd-hui-3-2006",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Chronique de la semaine, hebdomadaire togolais, article daté du 11 juillet 2024. L'article ne cite ni source écrite ni témoin pour l'histoire du nom. lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lama renvoie, dans le Deutsches Kolonial-Lexikon, à l'article Kabure ; cet article cite Láma et Láma-Téssi parmi les cantons du pays kabure. C'est la plus ancienne trace de ce nom que le projet connaît. Les gens qu'il désigne existaient déjà avant lui.",
+            "formAsWritten": "Lama",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Deutsches Kolonial-Lexikon, Band II",
+                "author": "Heinrich Schnee (dir.)",
+                "year": 1920,
+                "url": "https://archive.org/details/bub_gb_g4kaAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 411 et p. 138",
+                "notes": "Leipzig, Quelle & Meyer. Encyclopédie coloniale allemande, écrite dans le vocabulaire colonial de son époque. lu le 11 octobre 2026 dans la numérisation d'Internet Archive, vérifié sur l'image de la page."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
