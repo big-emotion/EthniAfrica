@@ -88,6 +88,61 @@ function checkPoint([lon, lat], what) {
     fail(`${what} has an invalid coordinate`);
 }
 
+const MAX_NAMES = 6;
+const NAME_KINDS = ["water", "region"];
+const AREA_INKS = ["a", "b", "c"];
+
+function checkLine(coordinates, what) {
+  if (!Array.isArray(coordinates) || coordinates.length < 2)
+    fail(`${what} needs at least two points`);
+  coordinates.forEach((p) => checkPoint(p, what));
+}
+
+function checkRing(ring, what) {
+  checkLine(ring, what);
+  const [first, last] = [ring[0], ring.at(-1)];
+  if (ring.length < 4 || first[0] !== last[0] || first[1] !== last[1])
+    fail(`${what} needs a closed ring of at least four points`);
+}
+
+// The card grammar on imagery (board 2): certain areas filled, uncertain
+// areas hatched, borders quiet or strong. Coastlines and lakes are never
+// drawn: the imagery shows them.
+const FEATURE_CHECKS = {
+  river(f) {
+    if (f.geometry?.type !== "LineString")
+      fail(`Feature ${f.id} needs a LineString`);
+    checkLine(f.geometry.coordinates, `Feature ${f.id}`);
+  },
+  area(f) {
+    if (!AREA_INKS.includes(f.ink))
+      fail(`Area ${f.id} needs a card ink: ${AREA_INKS.join(", ")}`);
+    if (!["certain", "uncertain"].includes(f.certainty))
+      fail(`Area ${f.id} needs a certainty: certain or uncertain`);
+    const { type, coordinates } = f.geometry ?? {};
+    const polygons =
+      type === "Polygon"
+        ? [coordinates]
+        : type === "MultiPolygon"
+          ? coordinates
+          : fail(`Area ${f.id} needs a Polygon or MultiPolygon`);
+    for (const polygon of polygons)
+      for (const ring of polygon) checkRing(ring, `Area ${f.id}`);
+  },
+  border(f) {
+    if (!["quiet", "strong"].includes(f.strength))
+      fail(`Border ${f.id} needs a strength: quiet or strong`);
+    const { type, coordinates } = f.geometry ?? {};
+    const lines =
+      type === "LineString"
+        ? [coordinates]
+        : type === "MultiLineString"
+          ? coordinates
+          : fail(`Border ${f.id} needs a LineString or MultiLineString`);
+    lines.forEach((line) => checkLine(line, `Border ${f.id}`));
+  },
+};
+
 export function loadSequence(input) {
   const style = input.style ?? "flat";
   if (!["flat", "relief"].includes(style))
@@ -107,19 +162,40 @@ export function loadSequence(input) {
   });
   const ids = new Set();
   for (const f of input.features ?? []) {
-    if (f.kind !== "river") fail(`Unsupported feature kind ${f.kind}`);
+    if (!Object.hasOwn(FEATURE_CHECKS, f.kind))
+      fail(`Unsupported feature kind ${f.kind}`);
     nonEmpty(f.id, "Feature id");
     nonEmpty(f.name, `Feature ${f.id} name`);
     nonEmpty(f.source, `Feature ${f.id} source`);
-    if (f.geometry?.type !== "LineString" || f.geometry.coordinates.length < 2)
-      fail(`Feature ${f.id} needs a LineString`);
-    f.geometry.coordinates.forEach((p) => checkPoint(p, `Feature ${f.id}`));
-    checkPoint(f.labelAt ?? [NaN, NaN], `Feature ${f.id} label`);
+    FEATURE_CHECKS[f.kind](f);
+    if (f.kind !== "border")
+      checkPoint(f.labelAt ?? [NaN, NaN], `Feature ${f.id} label`);
     ids.add(f.id);
   }
+  if ((input.features ?? []).filter((f) => f.plate).length > 1)
+    fail("Only one feature carries the subject plate");
   for (const p of input.places ?? []) {
     nonEmpty(p.name, "Place name");
     checkPoint([p.lon, p.lat], `Place ${p.name}`);
+  }
+  for (const n of input.names ?? []) {
+    if (!NAME_KINDS.includes(n.kind))
+      fail(`Unknown name kind ${n.kind}; use ${NAME_KINDS.join(" or ")}`);
+    nonEmpty(n.name, "Name");
+    checkPoint([n.lon, n.lat], `Name ${n.name}`);
+  }
+  const nameCount =
+    (input.features ?? []).filter((f) => f.kind !== "border").length +
+    (input.places ?? []).length +
+    (input.names ?? []).length;
+  if (nameCount > MAX_NAMES)
+    fail(`At most six names on screen; this sequence has ${nameCount}`);
+  if (input.highlight) {
+    const { text, feature } = input.highlight;
+    if (!input.title.includes(text ?? "\0") || !ids.has(feature))
+      fail(
+        "The title highlight needs a phrase of the title and a known feature"
+      );
   }
   const legend = input.legend ?? [];
   if (legend.length < 1 || legend.length > 4)
@@ -220,19 +296,27 @@ export function frameState(seq, frame) {
   const features = {};
   const labels = {};
   for (const f of seq.features) {
-    features[f.id] = { core, glow };
-    labels[f.id] = span(t, labelStart, TIMING.labelDuration, enter);
+    features[f.id] = f.kind === "river" ? { core, glow } : { opacity: core };
+    if (f.kind !== "border")
+      labels[f.id] = span(t, labelStart, TIMING.labelDuration, enter);
   }
+  // Board 4 gives places and water names one track; region names join it.
+  const nameOpacity = span(t, TIMING.placesStart, TIMING.labelDuration, enter);
   const places = {};
-  for (const p of seq.places ?? [])
-    places[p.name] = span(t, TIMING.placesStart, TIMING.labelDuration, enter);
+  for (const p of seq.places ?? []) places[p.name] = nameOpacity;
+  const names = {};
+  for (const n of seq.names ?? []) names[n.name] = nameOpacity;
   return {
     camera: cameraAt(seq, t),
     grade: span(t, TIMING.gradeStart, TIMING.gradeDuration, symmetric),
     features,
     labels,
     places,
-    legend: seq.legend.map((item) => features[item.feature].core),
+    names,
+    legend: seq.legend.map((item) => {
+      const feature = features[item.feature];
+      return feature.core ?? feature.opacity;
+    }),
     text: { signature: 1, title: 1, caption: 1 },
     relief:
       seq.style === "relief" ? { exaggeration: RELIEF_EXAGGERATION } : null,
@@ -284,10 +368,20 @@ export function captionLines(seq) {
   ];
 }
 
-// Width estimates per typeface (board 3 sizes). The browser re-measures the
-// real glyphs before export; this gate catches layouts that cannot fit.
+// Width estimates per typeface (board 3 sizes), calibrated on the design
+// fonts on 11 October 2026: Anton titles 0.39–0.42 em per character, Nunito
+// Sans captions 0.41–0.46. The browser re-measures the real glyphs before
+// export; this gate only catches layouts that cannot fit.
 const estimateWidth = (text, size, ratio) =>
   Math.ceil(text.length * size * ratio);
+
+const textBox = (text, size, ratio, lineHeight) => {
+  const lines = text.split("\n");
+  return [
+    Math.max(...lines.map((l) => estimateWidth(l, size, ratio))),
+    lines.length * lineHeight,
+  ];
+};
 
 export function holdLayout(seq) {
   const camera = cameraAt(seq, TOTAL_FRAMES / FPS);
@@ -303,19 +397,38 @@ export function holdLayout(seq) {
       box: {
         x: 120,
         y: 342,
-        w: estimateWidth(seq.title, 76, 0.42),
+        w: estimateWidth(seq.title, 76, 0.4),
         h: 80,
       },
     },
   ];
   for (const f of seq.features) {
+    if (f.kind === "border") continue;
     const at = project(camera, ...f.labelAt);
-    // The subject's pill plate: Anton 38 px, 54 px tall, 22 px padding.
-    const w = estimateWidth(f.name, 38, 0.45) + 44;
+    const [w, h] = f.plate
+      ? // The subject's pill plate: Anton 38 px, 54 px tall, 22 px padding.
+        [estimateWidth(f.name, 38, 0.45) + 44, 54]
+      : f.kind === "area"
+        ? [estimateWidth(f.name, 36, 0.45), 44]
+        : textBox(f.name, 26, 0.55, 30);
     elements.push({
-      id: f.id,
+      id: f.plate ? f.id : f.name,
       kind: "label",
-      box: { x: at.x - w / 2, y: at.y - 27, w, h: 54 },
+      box: { x: at.x - w / 2, y: at.y - h / 2, w, h },
+    });
+  }
+  for (const n of seq.names ?? []) {
+    const at = project(camera, n.lon, n.lat);
+    // Water names: Nunito Sans 700 italic 26 px. Region names: Anton 52 px
+    // tracked 0.12 em, with no plate, dot or outline to suggest a limit.
+    const [w, h] =
+      n.kind === "water"
+        ? textBox(n.name, 26, 0.55, 30)
+        : textBox(n.name, 52, 0.58, 60);
+    elements.push({
+      id: n.name,
+      kind: "name",
+      box: { x: at.x - w / 2, y: at.y - h / 2, w, h },
     });
   }
   for (const p of seq.places ?? []) {
@@ -352,7 +465,7 @@ export function holdLayout(seq) {
       box: {
         x: 120,
         y: captionY,
-        w: Math.max(...lines.map((l) => estimateWidth(l, 22, 0.5))),
+        w: Math.max(...lines.map((l) => estimateWidth(l, 22, 0.47))),
         h: captionHeight,
       },
     }

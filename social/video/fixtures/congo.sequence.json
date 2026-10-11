@@ -356,7 +356,8 @@
           [13.1843, -5.8563]
         ]
       },
-      "labelAt": [21.5, 0.2]
+      "labelAt": [21.5, 0.2],
+      "plate": true
     }
   ],
   "places": [
@@ -377,6 +378,14 @@
       "lon": 15.31,
       "lat": -4.33,
       "side": "right"
+    }
+  ],
+  "names": [
+    {
+      "kind": "water",
+      "name": "Océan\nAtlantique",
+      "lon": 10.44,
+      "lat": -8.96
     }
   ],
   "legend": [

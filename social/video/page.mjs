@@ -13,10 +13,13 @@ html,body{margin:0;background:#070605}
 .halo{text-shadow:0 0 2px rgba(11,8,6,.95),0 0 6px rgba(11,8,6,.8),0 1px 10px rgba(11,8,6,.6)}
 .dot{width:16px;height:16px;box-sizing:border-box;border-radius:999px;background:#f3e9da;border:3px solid rgba(11,8,6,.7)}
 .place{font-size:28px;line-height:32px;font-weight:800;white-space:nowrap}
+.area-name{font-family:Anton,"Noto Sans",sans-serif;font-size:36px;line-height:44px;white-space:nowrap;text-shadow:0 0 2px rgba(11,8,6,.95),0 0 6px rgba(11,8,6,.85),0 1px 10px rgba(11,8,6,.6)}
+.water{font-size:26px;line-height:30px;font-weight:700;font-style:italic;color:#bfe0ea;white-space:pre;text-align:center;text-shadow:0 0 2px rgba(11,8,6,.95),0 0 6px rgba(11,8,6,.8)}
+.region{font-family:Anton,"Noto Sans",sans-serif;font-size:52px;line-height:60px;letter-spacing:.12em;color:rgba(243,233,218,.92);white-space:pre;text-align:center}
 .plate{height:54px;padding:0 22px;display:flex;align-items:center;border-radius:999px;background:rgba(243,233,218,.95);box-shadow:0 2px 10px rgba(11,8,6,.45);font-family:Anton,"Noto Sans",sans-serif;font-size:38px;line-height:54px;color:#15100b;white-space:nowrap}
 </style></head><body><div id="frame">
 <canvas id="earth" width="1080" height="1920"></canvas>
-<svg id="lines" width="1080" height="1920" viewBox="0 0 1080 1920" aria-hidden="true"><defs><filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="6"/></filter></defs><g id="rivers" fill="none" stroke-linecap="round" stroke-linejoin="round"></g></svg>
+<svg id="lines" width="1080" height="1920" viewBox="0 0 1080 1920" aria-hidden="true"><defs><filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="6"/></filter><pattern id="hatch-a" patternUnits="userSpaceOnUse" width="18" height="18" patternTransform="rotate(45)"><rect width="18" height="18" fill="#e8b96a" fill-opacity="0.10"/><line x1="9" y1="0" x2="9" y2="18" stroke="#0b0806" stroke-opacity="0.45" stroke-width="8"/><line x1="9" y1="0" x2="9" y2="18" stroke="#e8b96a" stroke-width="4"/></pattern><pattern id="swatch-hatch-a" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(45)"><line x1="3.5" y1="0" x2="3.5" y2="7" stroke="#e8b96a" stroke-width="2"/></pattern><pattern id="hatch-b" patternUnits="userSpaceOnUse" width="18" height="18" patternTransform="rotate(45)"><rect width="18" height="18" fill="#6cc3b5" fill-opacity="0.10"/><line x1="9" y1="0" x2="9" y2="18" stroke="#0b0806" stroke-opacity="0.45" stroke-width="8"/><line x1="9" y1="0" x2="9" y2="18" stroke="#6cc3b5" stroke-width="4"/></pattern><pattern id="swatch-hatch-b" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(45)"><line x1="3.5" y1="0" x2="3.5" y2="7" stroke="#6cc3b5" stroke-width="2"/></pattern><pattern id="hatch-c" patternUnits="userSpaceOnUse" width="18" height="18" patternTransform="rotate(45)"><rect width="18" height="18" fill="#e3876a" fill-opacity="0.10"/><line x1="9" y1="0" x2="9" y2="18" stroke="#0b0806" stroke-opacity="0.45" stroke-width="8"/><line x1="9" y1="0" x2="9" y2="18" stroke="#e3876a" stroke-width="4"/></pattern><pattern id="swatch-hatch-c" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(45)"><line x1="3.5" y1="0" x2="3.5" y2="7" stroke="#e3876a" stroke-width="2"/></pattern></defs><g id="fills"></g><g id="borders" fill="none" stroke-linecap="round" stroke-linejoin="round"></g><g id="edges" fill="none" stroke-linecap="round" stroke-linejoin="round"></g><g id="rivers" fill="none" stroke-linecap="round" stroke-linejoin="round"></g></svg>
 <div style="width:1080px;height:600px;background:linear-gradient(180deg,rgba(7,6,5,.72) 0px,rgba(7,6,5,.55) 420px,rgba(7,6,5,0) 600px)"></div>
 <div id="names"></div>
 <div style="top:940px;width:1080px;height:980px;background:linear-gradient(180deg,rgba(21,16,11,0) 0px,rgba(21,16,11,.92) 130px,rgba(21,16,11,.92) 980px)"></div>
@@ -126,6 +129,49 @@ const el = (tag, style, text) => {
   return e;
 };
 const SVG = "http://www.w3.org/2000/svg";
+const INK = { a: "#e8b96a", b: "#6cc3b5", c: "#e3876a" };
+function path(d, attrs) {
+  const p = document.createElementNS(SVG, "path");
+  p.setAttribute("d", d);
+  for (const [k, v] of Object.entries(attrs)) p.setAttribute(k, v);
+  return p;
+}
+function group(opacity, ...children) {
+  const g = document.createElementNS(SVG, "g");
+  g.setAttribute("opacity", opacity);
+  g.append(...children);
+  return g;
+}
+// Board 2: certain areas filled at 30 % with a solid edge; uncertain areas
+// hatched with a dashed edge; every bright stroke over a dark keyline.
+function areaFill(a) {
+  return group(a.opacity, path(a.d, a.uncertain
+    ? { fill: \`url(#hatch-\${a.ink})\`, "fill-rule": "evenodd" }
+    : { fill: INK[a.ink], "fill-opacity": 0.3, "fill-rule": "evenodd" }));
+}
+function areaEdge(a) {
+  const dash = a.uncertain ? { "stroke-dasharray": "16 10" } : {};
+  return group(a.opacity,
+    path(a.d, { stroke: "#0b0806", "stroke-opacity": 0.55, "stroke-width": 8, ...dash }),
+    path(a.d, { stroke: INK[a.ink], "stroke-width": 4, ...dash }));
+}
+function border(b) {
+  return group(b.opacity, ...(b.strong
+    ? [path(b.d, { stroke: "#0b0806", "stroke-opacity": 0.55, "stroke-width": 8 }),
+       path(b.d, { stroke: "#f3e9da", "stroke-opacity": 0.92, "stroke-width": 3.5 })]
+    : [path(b.d, { stroke: "#0b0806", "stroke-opacity": 0.35, "stroke-width": 5 }),
+       path(b.d, { stroke: "#f3e9da", "stroke-opacity": 0.7, "stroke-width": 2, "stroke-dasharray": "9 7" })]));
+}
+const SWATCHES = {
+  river: '<line x1="4" y1="12" x2="40" y2="12" stroke="#6fcbe2" stroke-width="12" stroke-linecap="round" opacity="0.45"/><line x1="4" y1="12" x2="40" y2="12" stroke="#e4f6fb" stroke-width="4.5" stroke-linecap="round"/>',
+  "border-quiet": '<line x1="2" y1="12" x2="42" y2="12" stroke="#f3e9da" stroke-opacity="0.8" stroke-width="2.5" stroke-dasharray="7 5"/>',
+  "border-strong": '<line x1="2" y1="12" x2="42" y2="12" stroke="#0b0806" stroke-opacity="0.55" stroke-width="8"/><line x1="2" y1="12" x2="42" y2="12" stroke="#f3e9da" stroke-opacity="0.92" stroke-width="3.5"/>',
+};
+for (const [k, v] of Object.entries(INK)) {
+  SWATCHES["certain-" + k] = \`<rect x="2" y="2" width="40" height="20" rx="3" fill="\${v}" fill-opacity="0.35" stroke="\${v}" stroke-width="3"/>\`;
+  SWATCHES["uncertain-" + k] = \`<rect x="2" y="2" width="40" height="20" rx="3" fill="url(#swatch-hatch-\${k})" stroke="\${v}" stroke-width="3" stroke-dasharray="6 4"/>\`;
+}
+
 function river(d, state) {
   const g = document.createElementNS(SVG, "g");
   for (const [stroke, width, opacity, extra] of [
@@ -151,6 +197,9 @@ window.drawFrame = (f) => {
   gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
   gl.finish();
 
+  document.getElementById("fills").replaceChildren(...f.areas.filter((a) => a.opacity > 0).map(areaFill));
+  document.getElementById("borders").replaceChildren(...f.borders.filter((b) => b.opacity > 0).map(border));
+  document.getElementById("edges").replaceChildren(...f.areas.filter((a) => a.opacity > 0).map(areaEdge));
   const rivers = document.getElementById("rivers");
   rivers.replaceChildren(...f.rivers.filter((r) => r.state.core > 0 || r.state.glow > 0).map((r) => river(r.d, r.state)));
 
@@ -168,11 +217,12 @@ window.drawFrame = (f) => {
     g.append(name);
     names.append(g);
   }
-  for (const l of f.labels) {
+  for (const l of [...f.labels, ...f.names]) {
     if (l.opacity <= 0) continue;
-    const plate = el("div", \`position:absolute;left:\${l.x}px;top:\${l.y - 27}px;transform:translateX(-50%);opacity:\${l.opacity}\`, l.name);
-    plate.className = "plate";
-    names.append(plate);
+    const centred = \`position:absolute;left:\${l.x}px;top:\${l.y}px;transform:translate(-50%,-50%);opacity:\${l.opacity}\`;
+    const name = el("div", l.colour ? centred + ";color:" + l.colour : centred, l.name);
+    name.className = { plate: "plate", area: "area-name", water: "water halo", region: "region halo" }[l.style];
+    names.append(name);
   }
 
   const head = document.getElementById("head");
@@ -183,18 +233,21 @@ window.drawFrame = (f) => {
   signature.append(logo, el("span", "font-family:Fraunces,Georgia,serif;font-weight:600;font-size:28px;line-height:36px;color:#f3e9da", "EthniAfrica"));
   if (f.demo) signature.append(el("span", "margin-left:8px;padding:3px 12px;border-radius:999px;background:#ffe58a;color:#2b2100;font-size:16px;line-height:22px;font-weight:800", "Texte illustratif"));
   const title = el("h1", "margin:0;font-family:Anton,'Noto Sans',sans-serif;font-weight:400;font-size:76px;line-height:80px;color:#f3e9da;text-shadow:0 0 2px rgba(11,8,6,.9),0 2px 14px rgba(11,8,6,.7)");
-  for (const part of f.title) title.append(part.water ? el("span", "color:#8fd3e6", part.text) : document.createTextNode(part.text));
+  for (const part of f.title) title.append(part.colour ? el("span", "color:" + part.colour, part.text) : document.createTextNode(part.text));
   head.append(signature, title);
 
   const panel = document.getElementById("panel");
   panel.replaceChildren();
-  const legend = el("div", "display:flex;flex-wrap:wrap;gap:12px 28px");
+  // Up to two items on one row each; three or four share a two-column grid.
+  const legend = el("div", f.legend.length > 2
+    ? "display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 24px"
+    : "display:flex;flex-wrap:wrap;gap:12px 28px");
   for (const item of f.legend) {
     const row = el("div", \`display:flex;align-items:center;gap:12px;opacity:\${item.opacity}\`);
     const swatch = document.createElementNS(SVG, "svg");
     swatch.setAttribute("width", 44); swatch.setAttribute("height", 24);
-    swatch.innerHTML = '<line x1="4" y1="12" x2="40" y2="12" stroke="#6fcbe2" stroke-width="12" stroke-linecap="round" opacity="0.45"/><line x1="4" y1="12" x2="40" y2="12" stroke="#e4f6fb" stroke-width="4.5" stroke-linecap="round"/>';
-    row.append(swatch, el("span", \`font-size:\${f.legend.length > 1 ? 24 : 26}px;line-height:32px;font-weight:700;color:#f3e9da\`, item.label));
+    swatch.innerHTML = SWATCHES[item.swatch];
+    row.append(swatch, el("span", \`font-size:\${f.legend.length > 1 ? 24 : 26}px;line-height:32px;font-weight:700;color:\${item.colour}\`, item.label));
     legend.append(row);
   }
   const caption = el("p", "margin:0;font-size:22px;line-height:28px;color:#cbbba3");
@@ -208,7 +261,7 @@ window.drawFrame = (f) => {
   const boxes = [];
   const add = (id, node) => { const r = node.getBoundingClientRect(); boxes.push({ id, box: { x: r.left, y: r.top, w: r.width, h: r.height } }); };
   add("signature", signature); add("title", title); add("legend", legend); add("caption", caption);
-  for (const n of names.querySelectorAll(".place,.plate")) add(n.textContent, n);
+  for (const n of names.querySelectorAll(".place,.plate,.area-name,.water,.region")) add(n.textContent, n);
   return boxes;
 };
 </script></body></html>`;

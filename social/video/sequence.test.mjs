@@ -182,3 +182,103 @@ test("flat satellite is the default; relief is an explicit, still option", () =>
   unknown.style = "light";
   assert.throws(() => loadSequence(unknown), /style/i);
 });
+
+const west = JSON.parse(
+  readFileSync(new URL("./fixtures/west-areas.sequence.json", import.meta.url))
+);
+const westCopy = () => structuredClone(west);
+
+// @req REQ-186
+test("areas and borders fade in whole, like the river", () => {
+  const seq = loadSequence(westCopy());
+  for (const id of ["a", "c", "frontieres"]) {
+    let previous = 0;
+    for (let f = 0; f < TOTAL_FRAMES; f++) {
+      const feature = frameState(seq, f).features[id];
+      assert.deepEqual(Object.keys(feature), ["opacity"]);
+      assert.ok(feature.opacity >= previous, `${id} frame ${f}`);
+      previous = feature.opacity;
+    }
+    assert.equal(frameState(seq, at(6)).features[id].opacity, 0);
+    assert.equal(frameState(seq, at(11)).features[id].opacity, 1);
+  }
+});
+
+// @req REQ-186
+test("an area needs a closed ring, a card ink and a certainty; a border a strength", () => {
+  const ink = westCopy();
+  ink.features[0].ink = "d";
+  assert.throws(() => loadSequence(ink), /ink/);
+  const certainty = westCopy();
+  certainty.features[2].certainty = "probable";
+  assert.throws(() => loadSequence(certainty), /certainty/);
+  const open = westCopy();
+  open.features[1].geometry.coordinates[0].pop();
+  assert.throws(() => loadSequence(open), /ring/);
+  const strength = westCopy();
+  strength.features[3].strength = "bold";
+  assert.throws(() => loadSequence(strength), /strength/);
+  const multi = westCopy();
+  multi.features[0].geometry = {
+    type: "MultiPolygon",
+    coordinates: [west.features[0].geometry.coordinates],
+  };
+  assert.doesNotThrow(() => loadSequence(multi));
+});
+
+// @req REQ-186
+test("only one feature carries the subject plate", () => {
+  const two = westCopy();
+  two.features[0].plate = true;
+  two.features[1].plate = true;
+  assert.throws(() => loadSequence(two), /plate/);
+});
+
+// @req REQ-186
+test("area names wait for their area; places, water and region names share one track", () => {
+  const seq = loadSequence(westCopy());
+  for (let f = 0; f < TOTAL_FRAMES; f++) {
+    const state = frameState(seq, f);
+    for (const id of ["a", "b", "c"])
+      if (state.labels[id] > 0)
+        assert.ok(state.features[id].opacity >= 0.6, `${id} frame ${f}`);
+    assert.equal(state.names.Sahel, state.places.Bamako);
+    assert.equal(state.labels.frontieres, undefined);
+  }
+  const congoSeq = loadSequence(copy());
+  const hold = frameState(congoSeq, at(11));
+  assert.equal(hold.names["Océan\nAtlantique"], 1);
+});
+
+// @req REQ-186
+test("at most six names are on screen", () => {
+  const seq = westCopy();
+  seq.places.push({ name: "Ouagadougou", lon: -1.53, lat: 12.37 });
+  assert.throws(() => loadSequence(seq), /six names/);
+  const unknown = westCopy();
+  unknown.names[0].kind = "country";
+  assert.throws(() => loadSequence(unknown), /name kind/);
+});
+
+// @req REQ-186
+test("the areas hold layout stays in the safe zone and counts every name", () => {
+  const layout = holdLayout(loadSequence(westCopy()));
+  assert.deepEqual(checkLayout(layout), []);
+  const ids = layout.elements.map((e) => e.id);
+  for (const id of ["Aire A", "Aire B", "Aire C", "Sahel", "Bamako", "Niamey"])
+    assert.ok(ids.includes(id), id);
+  assert.ok(!ids.includes("Frontières actuelles"));
+  const congoIds = holdLayout(loadSequence(copy())).elements.map((e) => e.id);
+  assert.ok(congoIds.includes("Océan\nAtlantique"));
+  assert.deepEqual(checkLayout(holdLayout(loadSequence(copy()))), []);
+});
+
+// @req REQ-186
+test("a title highlight names a known feature and a phrase of the title", () => {
+  const wrong = westCopy();
+  wrong.highlight.text = "deux certaines";
+  assert.throws(() => loadSequence(wrong), /highlight/);
+  const unknown = westCopy();
+  unknown.highlight.feature = "z";
+  assert.throws(() => loadSequence(unknown), /highlight/);
+});

@@ -13,7 +13,7 @@ The first command runs the sequence rules, which need no imagery. The second als
 
 ## Why this engine
 
-Each frame is drawn in the same pinned Chromium as the card renderer (`social/renderer/runtime.json`), then FFmpeg encodes the frames. Cards and videos therefore share fonts, inks and runtime, and no rendering framework was added. A WebGL shader reprojects the Blue Marble mosaic onto an orthographic globe, with the grade, limb darkening and atmosphere specified on design board 1. SVG draws the river. HTML sets every name in the design system's fonts. Every value comes from `frameState(sequence, frame)`, with no clock, physics or randomness, so the same frame number gives the same pixels.
+Each frame is drawn in the same pinned Chromium as the card renderer (`social/renderer/runtime.json`), then FFmpeg encodes the frames. Cards and videos therefore share fonts, inks and runtime, and no rendering framework was added. A WebGL shader reprojects the Blue Marble mosaic onto an orthographic globe, with the grade, limb darkening and atmosphere specified on design board 1. SVG draws areas, borders and rivers in the design's layer order: area fills, borders, area edges, then rivers. HTML sets every name in the design system's fonts. Every value comes from `frameState(sequence, frame)`, with no clock, physics or randomness, so the same frame number gives the same pixels.
 
 The alternatives were set aside for these reasons:
 
@@ -27,7 +27,9 @@ The camera passes the 3-second key without stopping and lands softly at 6 second
 ## Rules enforced before rendering
 
 - **Imagery:** only the verified sources are accepted, Blue Marble NG July 2004 and Sentinel-2 cloudless 2016. The local file must match its recorded SHA-256. The caption names the imagery.
-- **Drawn features:** every feature needs a documented source and valid coordinates. Rivers fade in whole and are never drawn from source to mouth.
+- **Drawn features:** every feature needs a documented source and valid coordinates. Rivers, areas and borders fade in whole; a river is never drawn from source to mouth.
+- **Card grammar on imagery:** a certain area is filled at 30 % with a solid edge; an uncertain area is hatched with a dashed edge. Areas use the cards' three Nuit inks (`a`, `b`, `c`). A border is `quiet` (orientation only) or `strong` (only when the question is a border). Coastlines and lakes are never drawn: the imagery shows them.
+- **Names:** one feature at most carries the subject plate. Other areas are named in their own colour, other rivers and water bodies in italics, and a region without a boundary (« Sahel ») in large tracked Anton with no plate, dot or outline. A name waits until its feature is 60 % visible. At most six names are on screen.
 - **Legend:** one to four items, always, even for a single item.
 - **Caption:** one line per part. A historical map adds « l'imagerie montre le paysage actuel ».
 - **Layout:** the hold layout must stay inside the Meta and TikTok safe zone, x 120–960 and y 270–1248, and outside the TikTok button column, right of x 780 below y 840. The last frame is checked again on the glyph boxes the browser actually drew.
@@ -35,5 +37,6 @@ The camera passes the 3-second key without stopping and lands softly at 6 second
 ## Limits
 
 - **Reproducibility:** pixel-for-pixel repeats are expected only on the same machine and pinned browser, not across operating systems. The manifest records Chromium, Playwright and FFmpeg versions and the hashes of the sequence, imagery, engine and video. `productionReady` is always false.
-- **Not implemented yet:** area fills and hatching, borders, water names, subject plates other than the first feature, relief, and Sentinel-2 tiles. Bulk access to Sentinel-2 tiles still needs to be checked.
-- **Test fixture:** `fixtures/congo.sequence.json` carries illustrative copy and the « Texte illustratif » tape. It is not approved publication text.
+- **Not implemented yet:** relief, Sentinel-2 tiles, exits for longer sequences, and the subtitle band (step 10). Bulk access to Sentinel-2 tiles still needs to be checked.
+- **Width estimates:** the layout gate estimates text widths from ratios calibrated on the design fonts; the browser's real glyph boxes decide at export.
+- **Test fixtures:** `fixtures/congo.sequence.json` (a river) and `fixtures/west-areas.sequence.json` (the design's three fictional areas, with Natural Earth borders taken from the accepted card map `social/design-system/assets/Cartes/afrique-ouest.json`). Both carry illustrative copy and the « Texte illustratif » tape. They are not approved publication text.
