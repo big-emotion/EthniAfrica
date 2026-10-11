@@ -192,5 +192,321 @@
       }
     ]
   },
-  "classificationStatus": "contested"
+  "classificationStatus": "contested",
+  "nameHistory": {
+    "summary": "Le nom Soussou désigne un peuple de la Guinée côtière et du nord-ouest de la Sierra Leone, qui se nomme lui-même Soso. D'autres noms existent : Susu, la forme anglaise, et des formes anciennes comme Souzos ou Suzees. Les sources ne s'accordent pas sur l'origine du nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Soso",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "sus",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; une forme proche, Souzos, est écrite dès 1594.",
+        "usedIn": ["sus"],
+        "periodLabel": "Écrit dès 1594 sous une forme proche ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par les historiens"
+            },
+            "statement": "Le nom Soso désigne, pour l'historien Yves Person, un peuple de langue manden de l'ouest et du sud du Fouta-Djalon, étroitement apparenté aux Jalonke, qu'il appelle aussi Sosoe ou Susu. Son lien avec les Sosoe du royaume de Soumaoro Kanté, au XIIIe siècle, est discuté : les explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 12 : Les peuples côtiers, de la Casamance aux lagunes ivoiriennes",
+                "author": "Yves Person",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 336 et 343",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Soso est écrit Sóso par le linguiste Sigismund Koelle, qui recueille à Freetown la langue de deux districts, Sōlīma et Kísekise. Il cite quatorze districts du pays sóso où l'on parle la même langue, avec des variantes.",
+            "formAsWritten": "Sóso",
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "section II-5-a et II-5-b",
+                "notes": "Londres, Church Missionary House. Les remarques de Koelle sont lues dans leur transcription par le jeu de données Lexibank, pas sur l'imprimé. Koelle a interrogé à Freetown des personnes libérées de la traite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1550,
+              "to": 1594,
+              "label": "Seconde moitié du XVIe siècle, selon Almada"
+            },
+            "era": "polity",
+            "statement": "Le nom Soso a la forme Souzos dans le récit d'André Álvares d'Almada sur la guerre des Manes : ces conquérants, maîtres d'une grande partie de la côte, auraient voulu soumettre les Souzos, qui leur auraient répondu qu'ils ne les laisseraient pas entrer sur leurs terres.",
+            "formAsWritten": "Souzos",
+            "sources": [
+              {
+                "title": "Tratado breve dos rios de Guiné do Cabo-Verde",
+                "author": "André Álvares de Almada",
+                "year": 1594,
+                "url": "https://archive.org/details/tratadobrevedosr00alma",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 88",
+                "notes": "Écrit en 1594, publié par Diogo Köpke, Porto, Typographia Commercial Portuense, 1841 ; lu sur sa numérisation."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1594,
+              "to": 1594,
+              "label": "1594"
+            },
+            "era": "polity",
+            "statement": "Le nom Soso a une forme proche, Souzos, chez André Álvares d'Almada, capitaine né au Cap-Vert : en 1594, il écrit que les Souzos, voisins des Bagas vers l'intérieur, apportent les meilleures teintures et qu'ils entourent les peuples de la côte « comme un mur ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Souzos",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tratado breve dos rios de Guiné do Cabo-Verde",
+                "author": "André Álvares de Almada",
+                "year": 1594,
+                "url": "https://archive.org/details/tratadobrevedosr00alma",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 72 et 77",
+                "notes": "Écrit en 1594, publié par Diogo Köpke, Porto, Typographia Commercial Portuense, 1841 ; lu sur sa numérisation."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1170,
+              "to": 1200,
+              "label": "Fin du XIIe siècle, selon C. Wondji"
+            },
+            "era": "polity",
+            "statement": "Le nom Soso est celui d'un peuple que des mouvements consécutifs à la chute du Ghana et du royaume de Soso auraient amené au Fouta-Djalon, où vivaient déjà les Jalonke, les Baga, les Nalu, les Landuma et les Tyapi, selon l'historien C. Wondji.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 13 : Les États et les cultures de la côte de haute Guinée",
+                "author": "C. Wondji",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 417",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1376,
+              "to": 1376,
+              "label": "Vers 1376"
+            },
+            "era": "polity",
+            "statement": "Le nom Soso a une forme proche, Suso, chez l'historien Ibn Khaldûn : il écrit que Mari Djata « soumit Suso, occupa leur ville et leur enleva l'autorité suprême », selon Djibril Tamsir Niane. Les sources que nous avons lues ne disent pas s'il s'agit du même peuple que les Soso de Guinée.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 155",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "Proposée en 1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Soso serait celui du peuple qui aurait pris le pouvoir au Ghana au début du XIIIe siècle, vers 1203, avant d'être repoussé vers l'ouest et le Fouta-Djalon : les Soussous de Guinée en seraient les descendants, selon J. Machat, qui suit le docteur Tautain.",
+            "hypothesisGroup": "origine du nom Soso",
+            "sources": [
+              {
+                "title": "Les rivières du Sud et le Fouta-Diallon (Guinée française)",
+                "author": "J. Machat",
+                "year": 1905,
+                "url": "https://archive.org/details/lesriviresdusu00mach",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 241-242",
+                "notes": "Paris, A. Challamel ; lu sur sa numérisation."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "Proposée en 1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Soso viendrait de la ville de Soso, capitale d'un royaume situé selon la tradition dans les monts de Koulikoro, au nord de Bamako : c'est la ville qui aurait donné son nom à ses habitants, les Sosoe, selon Djibril Tamsir Niane. Dans le même ouvrage, Yves Person donne aussi le nom de Sosoe aux Soso du Fouta-Djalon.",
+            "hypothesisGroup": "origine du nom Soso",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 149, note 18",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 12 : Les peuples côtiers, de la Casamance aux lagunes ivoiriennes",
+                "author": "Yves Person",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 336",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Soussou",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "Les auteurs de langue française",
+        "shortLine": "La forme française du nom, celle de l'époque coloniale et de la Guinée d'aujourd'hui.",
+        "usedIn": ["fra"],
+        "periodLabel": "Écrit dès 1905 au moins ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Soussou est la forme qu'emploie J. Machat en 1905 pour un peuple de la Guinée française. Il rappelle que la description de l'Afrique d'Olfert Dapper, en 1668, écrivait Sousos. C'est la plus ancienne trace de cette forme que le projet connaît.",
+            "formAsWritten": "Soussous",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les rivières du Sud et le Fouta-Diallon (Guinée française)",
+                "author": "J. Machat",
+                "year": 1905,
+                "url": "https://archive.org/details/lesriviresdusu00mach",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 233 et 241",
+                "notes": "Paris, A. Challamel ; lu sur sa numérisation."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Susu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "eng",
+        "namedBy": "Les auteurs de langue anglaise",
+        "shortLine": "La forme anglaise du nom, en usage en Sierra Leone.",
+        "usedIn": ["eng"],
+        "periodLabel": "Écrit dès 1791 sous une forme proche ; en usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1803,
+              "to": 1803,
+              "label": "1803"
+            },
+            "era": "polity",
+            "statement": "Le nom Susu est écrit Soosoos par le médecin Thomas Winterbottom, qui précise qu'on les appelle aussi Suzees : ce peuple aurait chassé les Bulloms de la rivière Kissee, puis les Bagoes du Rio Pongo, et s'étendrait presque jusqu'au Rio Nunez.",
+            "formAsWritten": "Soosoos",
+            "sources": [
+              {
+                "title": "An account of the native Africans in the neighbourhood of Sierra Leone, vol. 1",
+                "author": "Thomas Winterbottom",
+                "year": 1803,
+                "url": "https://archive.org/details/b33088688_0001",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 4-5",
+                "notes": "Londres, 1803 ; lu sur sa numérisation."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1802,
+              "to": 1802,
+              "label": "1802"
+            },
+            "era": "polity",
+            "statement": "Le nom Susu est écrit Susoo dans le titre d'une grammaire de cette langue publiée à Édimbourg en 1802, avec les noms de villes susoo des bords du Rio Pongo.",
+            "formAsWritten": "Susoo",
+            "sources": [
+              {
+                "title": "A Grammar and Vocabulary of the Susoo Language",
+                "author": "Auteur non nommé sur la page de titre",
+                "year": 1802,
+                "url": "https://archive.org/details/agrammarandvoca00kempgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "page de titre",
+                "notes": "Édimbourg, J. Ritchie, 1802 ; lu sur sa numérisation."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1791,
+              "to": 1791,
+              "label": "1791"
+            },
+            "era": "polity",
+            "statement": "Le nom Susu a une forme proche, Suzee, chez le marin John Matthews, qui décrit les esclaves suzee et mandingo réfugiés sur les îles de Los. C'est la plus ancienne trace de cette forme anglaise que le projet connaît.",
+            "formAsWritten": "Suzee",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A voyage to the River Sierra-Leone, on the coast of Africa",
+                "author": "John Matthews",
+                "year": 1791,
+                "url": "https://archive.org/details/bim_eighteenth-century_a-voyage-to-the-river-si_matthews-john_1791",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 16",
+                "notes": "Londres, B. White and Son, 1791 ; lu sur sa numérisation. L'auteur a séjourné sur ce fleuve dans les années 1780."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
