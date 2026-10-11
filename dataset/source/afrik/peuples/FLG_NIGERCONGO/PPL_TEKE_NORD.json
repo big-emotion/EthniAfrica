@@ -129,5 +129,128 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Teke du Nord désigne un groupe teke du Congo et du Gabon, dont la langue est appelée latege, tege ou teke-tege. Ce groupe se nomme sans doute lui-même Tege, mais on ne le sait pas avec certitude, ni d'où viennent ses noms ; nous présentons plus bas ce que disent les sources que nous avons lues.",
+    "names": [
+      {
+        "nameText": "Tege",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "teg",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue, écrit tégé dans le titre d'un manuel de 1904.",
+        "usedIn": ["teg"],
+        "periodLabel": "Écrit depuis 1904 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tege, ou latege pour la langue, est le nom principal que le catalogue Glottolog donne au parler de ce groupe, avec les formes Teghe, Iteghe, Katege, Ketego, Teke Alima et Teke Kali. Aucune source que nous avons lue ne dit que le groupe se nomme ainsi lui-même.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Latege (teke1275)",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/teke1275",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues de l'Institut Max-Planck, consulté le 11 octobre 2026. Noms relevés : Teke-Tege, Iteghe, Katege, Ketego, Northern Teke, Tege, Teghe, Teke, Teke Alima, Teke Kali ; pays : Congo et Gabon. La bibliographie cite J. Prat, Manuel de langue tégé (Haute-Alima, Congo français), Brazzaville, Mission catholique, 1904, que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tege apparaît, écrit tégé, dans le titre d'un manuel de cette langue publié en 1904 à Brazzaville par la mission catholique sous le nom de J. Prat, pour la Haute-Alima, selon la bibliographie de Glottolog. Nous n'avons pas lu ce manuel. C'est la plus ancienne trace de ce nom que le projet connaît. Le groupe existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Latege (teke1275)",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/teke1275",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues de l'Institut Max-Planck, consulté le 11 octobre 2026. Noms relevés : Teke-Tege, Iteghe, Katege, Ketego, Northern Teke, Tege, Teghe, Teke, Teke Alima, Teke Kali ; pays : Congo et Gabon. La bibliographie cite J. Prat, Manuel de langue tégé (Haute-Alima, Congo français), Brazzaville, Mission catholique, 1904, que nous n'avons pas lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Teke du Nord",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que lui donnent les linguistes ; son nom propre reste à établir.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Teke du Nord, en anglais Northern Teke, est l'un des noms que les linguistes donnent à ce groupe et à sa langue, parlée au Congo et au Gabon, selon le catalogue Glottolog. On ne sait pas avec certitude comment ce groupe se nomme lui-même.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Latege (teke1275)",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/teke1275",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues de l'Institut Max-Planck, consulté le 11 octobre 2026. Noms relevés : Teke-Tege, Iteghe, Katege, Ketego, Northern Teke, Tege, Teghe, Teke, Teke Alima, Teke Kali ; pays : Congo et Gabon. La bibliographie cite J. Prat, Manuel de langue tégé (Haute-Alima, Congo français), Brazzaville, Mission catholique, 1904, que nous n'avons pas lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Teke",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de l'ensemble plus vaste auquel ce groupe appartient.",
+        "periodLabel": "Usage décrit par l'auteur",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom Teke désigne un ensemble plus vaste, que Jan Vansina appelle aussi Tio ou Bateke. Selon lui, les Tio, venus de la lisière de la forêt, vers l'équateur, ont occupé les hauts plateaux vers le sud, des terres boisées au Gabon et la région des cataractes du fleuve.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 22 : L'Afrique équatoriale et l'Angola : les migrations et l'apparition des premiers États",
+                "author": "Jan Vansina",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 618-619",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
