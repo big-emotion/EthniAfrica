@@ -106,5 +106,62 @@
       "fieldPath": "transmissionMode",
       "reason": "Le Dictionary of American Family Names établit une origine dans un nom personnel masculin, tandis que Gunn décrit des patrilignages kru sans rattacher Weah à l'un d'eux. Aucun passage ne documente la transmission de ce patronyme ; la valeur reste « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Weah est un nom de famille du Liberia. Il viendrait d'un nom de personne masculin des Kru, selon un dictionnaire des noms de famille, qui juge son origine inexpliquée. On ne sait donc pas avec certitude ce qu'il veut dire, ni depuis quand il est écrit sous cette forme.",
+    "names": [
+      {
+        "nameText": "Weah",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille du Liberia, tiré d'un nom de personne kru ; on ne sait pas ce qu'il veut dire.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Weah est un nom de famille du Liberia, tiré d'un nom de personne masculin porté chez les Kru, selon le Dictionary of American Family Names. Ce dictionnaire juge son origine inexpliquée : on ne sait donc pas avec certitude ce qu'il veut dire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2nd edition — Weah",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/weah",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 11 octobre 2026. La notice dit : Afrique de l'Ouest (Liberia), d'un nom de personne masculin trouvé chez les Kru, d'étymologie inexpliquée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1812,
+              "to": 1812,
+              "label": "Ville relevée en 1812"
+            },
+            "statement": "Le nom Weah serait caché dans celui de King William's Town, l'une des cinq villes de commerce kru que Thomas Ludlam relève déjà en 1812 : William y serait la forme anglaise de Weah, selon l'historien Jeffrey David Gunn.",
+            "sources": [
+              {
+                "title": "Homeland, Diasporas and Labour Networks: The Case of Kru Workers, 1792-1900",
+                "author": "Jeffrey David Gunn",
+                "year": 2019,
+                "url": "https://yorkspace.library.yorku.ca/bitstreams/2c05f6bf-dec9-4daa-b10d-af069cb37512/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 33 ; p. 39",
+                "notes": "Thèse de doctorat en histoire, York University, 2019, lue dans le PDF du dépôt de l'université le 11 octobre 2026. Page 33 : les cinq villes de commerce kru, dont King William's Town, « as Thomas Ludlam observed in 1812 ». Page 39 : « King William's Town (William is the Anglicization of the name Weah) »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
