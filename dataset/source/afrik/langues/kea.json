@@ -14,6 +14,132 @@
   "spellingAliases": [],
   "familyId": "FLG_CREOLE",
   "peoples": [],
+  "nameHistory": {
+    "summary": "Le nom créole cap-verdien désigne la langue créole à base portugaise que parlent presque tous les habitants du Cap-Vert. Ses locuteurs l'appellent kriolu, et ceux de l'île de Santiago aussi badiu. Le nom kabuverdianu, tiré du nom du Cap-Vert, lui est donné par le linguiste cap-verdien Manuel Veiga dès 1982. Nous présentons plus bas les traces de ces noms.",
+    "names": [
+      {
+        "nameText": "Kriolu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kea",
+        "namedBy": null,
+        "shortLine": "Le nom courant de la langue chez ses locuteurs : « créole ».",
+        "periodLabel": "Nom de langue dès 1885",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom kriolu est celui que les habitants de l'île de Santiago donnent à leur langue, avec badiu, selon Jürgen Lang. Presque tous les Cap-Verdiens parlent un créole à base portugaise comme première langue, et le portugais reste la seule langue officielle.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Cape Verdean Creole of Santiago, Atlas of Pidgin and Creole Language Structures Online",
+                "author": "Jürgen Lang",
+                "year": null,
+                "url": "https://apics-online.info/surveys/30",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "fiche de la langue et section 1",
+                "notes": "Lu le 11 octobre 2026 en texte intégral sur APiCS Online (chapitre de synthèse). La bibliographie cite les ouvrages de Brito et de Veiga, que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1885,
+              "to": 1888,
+              "label": "Grammaire écrite en 1885, publiée en 1888"
+            },
+            "era": "colonial",
+            "statement": "Le nom kriolu a une forme proche, crioulo, dans le titre de la première grammaire connue du créole de Santiago, écrite en 1885 par António de Paula Brito, un habitant de l'île, et publiée en 1888 par le linguiste portugais Adolfo Coelho, selon Jürgen Lang. C'est la plus ancienne trace de ce nom de langue que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Cape Verdean Creole of Santiago, Atlas of Pidgin and Creole Language Structures Online",
+                "author": "Jürgen Lang",
+                "year": null,
+                "url": "https://apics-online.info/surveys/30",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section 1 et bibliographie",
+                "notes": "Lu le 11 octobre 2026 en texte intégral sur APiCS Online (chapitre de synthèse). La bibliographie cite les ouvrages de Brito et de Veiga, que nous n'avons pas lus."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Badiu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kea",
+        "namedBy": null,
+        "shortLine": "Le nom du créole de l'île de Santiago chez ses locuteurs.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom badiu est l'un des deux noms que les habitants de Santiago donnent à leur créole, avec kriolu, selon Jürgen Lang. Nous n'avons pas trouvé de source lue qui en explique l'origine.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Cape Verdean Creole of Santiago, Atlas of Pidgin and Creole Language Structures Online",
+                "author": "Jürgen Lang",
+                "year": null,
+                "url": "https://apics-online.info/surveys/30",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "fiche de la langue",
+                "notes": "Lu le 11 octobre 2026 en texte intégral sur APiCS Online (chapitre de synthèse). La bibliographie cite les ouvrages de Brito et de Veiga, que nous n'avons pas lus."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kabuverdianu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kea",
+        "namedBy": null,
+        "shortLine": "Le nom savant de la langue, tiré du nom du Cap-Vert ; écrit dès 1982.",
+        "periodLabel": "Écrit dès 1982",
+        "accounts": [
+          {
+            "period": {
+              "from": 1982,
+              "to": 1982,
+              "label": "1982"
+            },
+            "era": "modern",
+            "statement": "Le nom kabuverdianu figure dans le titre du livre du linguiste cap-verdien Manuel Veiga, Diskrison strutural di lingua kabuverdianu, publié à Praia en 1982, le premier à décrire à part le créole de Santiago, selon Jürgen Lang. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Cape Verdean Creole of Santiago, Atlas of Pidgin and Creole Language Structures Online",
+                "author": "Jürgen Lang",
+                "year": null,
+                "url": "https://apics-online.info/surveys/30",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section 1 et bibliographie",
+                "notes": "Lu le 11 octobre 2026 en texte intégral sur APiCS Online (chapitre de synthèse). La bibliographie cite les ouvrages de Brito et de Veiga, que nous n'avons pas lus."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": null,
     "dialects": ["Barlavento", "Kabuverdianu Sotavento", "Sotavento"],

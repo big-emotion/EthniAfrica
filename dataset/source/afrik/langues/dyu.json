@@ -19,6 +19,174 @@
       "peopleId": "PPL_DIOULA"
     }
   ],
+  "nameHistory": {
+    "summary": "Le nom dioula désigne une langue mandingue d'Afrique de l'Ouest, langue d'échange en Côte d'Ivoire et au Burkina Faso. Ses locuteurs l'appellent julakan, la langue des Jula, un mot que beaucoup traduisent par « commerçant ». Selon les régions, on l'appelle aussi malinké ou bambara. L'origine du mot jula est discutée ; la fiche du peuple Dioula présente les explications.",
+    "names": [
+      {
+        "nameText": "Julakan",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "dyu",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue chez ses locuteurs : la langue (kan) des Jula.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom julakan est celui que les locuteurs emploient pour leur langue : « n be julakan fɔ », « je parle dioula », cite Yaya Konaté. Il réunit jula, que les personnes qu'il a interrogées traduisent par « commerçant », et kan, « langue », que Maurice Delafosse notait déjà kâ.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Le dioula véhiculaire : situation sociolinguistique en Côte d'Ivoire, Corela, n° 14-1",
+                "author": "Yaya Konaté",
+                "year": 2016,
+                "url": "https://journals.openedition.org/corela/4586",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 24 et § 60",
+                "notes": "Lu le 11 octobre 2026 en ligne. Article fondé sur des enquêtes de terrain en Côte d'Ivoire."
+              },
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue. Étude grammaticale du dialecte dyoula",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 103",
+                "notes": "Paris, Ernest Leroux, 1901. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur est un administrateur colonial français."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dioula",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "dyu",
+        "namedBy": null,
+        "shortLine": "Le nom courant de la langue, accepté par presque tous ses locuteurs.",
+        "periodLabel": "Écrit dès 1623 ; nom de langue dès 1901",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom dioula est le nom courant et le plus connu de la langue, et presque tous les locuteurs d'origine mandingue l'acceptent, selon Yaya Konaté. Selon ce que chacun pense de la langue, on l'appelle aussi malinké ou bambara. Le mot jula est discuté ; les explications sont présentées sur la fiche du peuple Dioula.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Le dioula véhiculaire : situation sociolinguistique en Côte d'Ivoire, Corela, n° 14-1",
+                "author": "Yaya Konaté",
+                "year": 2016,
+                "url": "https://journals.openedition.org/corela/4586",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 22 à 29 et § 60",
+                "notes": "Lu le 11 octobre 2026 en ligne. Article fondé sur des enquêtes de terrain en Côte d'Ivoire."
+              },
+              {
+                "title": "Glottolog 5.3 — Dyula (dyul1238)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/dyul1238",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle note un usage de langue véhiculaire en Côte d'Ivoire et au Burkina Faso, dans le commerce, la chasse, la religion et l'enseignement."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "1901"
+            },
+            "era": "colonial",
+            "statement": "Le nom dioula désigne une langue, écrit dyoula, dans le manuel de Maurice Delafosse. Il la choisit parce que c'est, dit-il, le seul grand dialecte mandé dont on n'a encore publié aucun vocabulaire, et qu'il a vécu parmi les Dyoula du Djimini.",
+            "formAsWritten": "dyoula",
+            "sources": [
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue. Étude grammaticale du dialecte dyoula",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "page de titre et Avertissement",
+                "notes": "Paris, Ernest Leroux, 1901. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur est un administrateur colonial français."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1620,
+              "to": 1623,
+              "label": "Voyage de 1620-1621 (récit publié en 1623)"
+            },
+            "era": "polity",
+            "statement": "Le nom dioula a une forme proche, Iulietto, chez Richard Jobson : le marchand Buckor Sano se dit « a Iulietto », c'est-à-dire un marchand qui va de place en place. C'est la plus ancienne trace de ce nom que le projet connaît ; elle nomme un métier, pas encore une langue.",
+            "formAsWritten": "Iulietto",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Golden Trade: or, A discovery of the River Gambra, and the Golden Trade of the Aethiopians",
+                "author": "Richard Jobson",
+                "year": 1623,
+                "url": "https://penelope.uchicago.edu/jobson/",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 92",
+                "notes": "Londres, 1623 ; voyage de 1620-1621 sur le fleuve Gambie. Lu le 11 octobre 2026 dans la transcription de l'université de Chicago, qui garde l'orthographe et la pagination de 1623."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tagboussi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom méprisant que donnent certains Mandingues aux parlers qu'ils jugent abîmés.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom tagboussi est donné par des peuples d'origine mandingue aux parlers dioula qu'ils jugent abîmés ; c'est un nom de mépris, selon Yaya Konaté. Ces mêmes locuteurs voient dans le dioula un forobakan, « une langue publique, commune ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Le dioula véhiculaire : situation sociolinguistique en Côte d'Ivoire, Corela, n° 14-1",
+                "author": "Yaya Konaté",
+                "year": 2016,
+                "url": "https://journals.openedition.org/corela/4586",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 43 et § 60",
+                "notes": "Lu le 11 octobre 2026 en ligne. Article fondé sur des enquêtes de terrain en Côte d'Ivoire."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": "regional_lingua_franca",
     "dialects": ["Dioula Véhiculaire", "Kong Jula", "Tagboussikan"],

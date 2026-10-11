@@ -19,6 +19,192 @@
       "peopleId": "PPL_BAMBARA"
     }
   ],
+  "nameHistory": {
+    "summary": "Le nom bambara désigne une langue mandingue parlée surtout au Mali, que ses locuteurs appellent bamanankan, « la langue des Bamana ». C'est aussi le nom que le français donne au peuple qui la parle ; son origine est discutée, et la fiche du peuple Bambara présente les explications. Nous présentons plus bas l'histoire de ces noms comme noms de langue.",
+    "names": [
+      {
+        "nameText": "Bamanankan",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bam",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue chez ses locuteurs : la langue des Bamana.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom bamanankan est celui sous lequel SIL Ethnologue enregistre la langue. Il réunit le nom des Bamana et kan, « langue » ; Maurice Delafosse notait déjà kâ pour « langue » dans son vocabulaire du dioula, une langue très proche.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "SIL Ethnologue — Bamanankan (bam)",
+                "author": "SIL International",
+                "year": null,
+                "url": "https://www.ethnologue.com/language/bam/",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice publique de la langue, enregistrée sous le nom Bamanankan."
+              },
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue. Étude grammaticale du dialecte dyoula",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 103",
+                "notes": "Paris, Ernest Leroux, 1901. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur est un administrateur colonial français."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "1901"
+            },
+            "era": "colonial",
+            "statement": "Le nom bamanankan a un équivalent chez Maurice Delafosse, qui appelle la langue « Bamana ko-ma », la langue des Bamana. Il dit adopter le nom Bamana pour ce peuple et pour sa langue, afin d'éviter les confusions que cause le nom Bambara.",
+            "formAsWritten": "Bamana ko-ma",
+            "sources": [
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue. Étude grammaticale du dialecte dyoula",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 236",
+                "notes": "Paris, Ernest Leroux, 1901. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur est un administrateur colonial français."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bambara",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom courant en français ; il reprend le nom donné au peuple Bamana.",
+        "periodLabel": "Écrit dès le XVIIe siècle ; nom de langue dès 1799",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par l'auteur"
+            },
+            "statement": "Le nom bambara désigne la langue des Bamana et reprend le nom que leur donnent leurs voisins toucouleurs et sarakolé, selon Maurice Delafosse. L'origine de ce nom est discutée ; les explications sont présentées sur la fiche du peuple Bambara.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue. Étude grammaticale du dialecte dyoula",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 236",
+                "notes": "Paris, Ernest Leroux, 1901. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur est un administrateur colonial français."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "1901"
+            },
+            "era": "colonial",
+            "statement": "Le nom bambara est souvent donné à toute la langue mandé, écrit Maurice Delafosse, qui juge cet usage inexact : pour lui, ce nom ne convient qu'à un seul de ses dialectes.",
+            "sources": [
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue. Étude grammaticale du dialecte dyoula",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "Avertissement, note 1",
+                "notes": "Paris, Ernest Leroux, 1901. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur est un administrateur colonial français."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1825,
+              "to": 1825,
+              "label": "1825"
+            },
+            "statement": "Le nom bambara figure dans le titre du Dictionnaire français-wolof et français-bambara de Jean Dard, publié à Paris en 1825.",
+            "sources": [
+              {
+                "title": "Dictionnaire français-wolof et français-bambara",
+                "author": "Jean Dard",
+                "year": 1825,
+                "url": "https://archive.org/details/dictionnairefra00dardgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "page de titre",
+                "notes": "Paris, Imprimerie royale, 1825. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1795,
+              "to": 1799,
+              "label": "Voyage de 1795-1797 (récit publié en 1799)"
+            },
+            "era": "polity",
+            "statement": "Le nom bambara désigne une langue dans le récit du voyageur écossais Mungo Park, qui dit de son jeune serviteur Demba qu'il parle bien « the Bambarra tongue ». Plus à l'est, lui dit-on, cette langue est peu comprise. C'est la plus ancienne trace de ce nom comme nom de langue que le projet connaît.",
+            "formAsWritten": "Bambarra tongue",
+            "sources": [
+              {
+                "title": "Travels in the Interior Districts of Africa",
+                "author": "Mungo Park",
+                "year": 1799,
+                "url": "https://www.gutenberg.org/ebooks/74976",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 163 et p. 372",
+                "notes": "Londres, W. Bulmer pour G. Nicol, 1799 ; voyage de 1795-1797. Lu le 11 octobre 2026 dans l'édition numérique du projet Gutenberg, qui reproduit la pagination d'origine."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1652,
+              "to": 1655,
+              "label": "Chronique achevée vers 1655"
+            },
+            "era": "polity",
+            "statement": "Le nom bambara figure dans le Tarikh es-Soudan, la chronique d'Abderrahman es-Sa'di : à propos de l'année 1559, l'askia Daoud y dit que « les Bambara sont ici maintenant en très grand nombre ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle nomme un peuple. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tarikh es-Soudan, traduit de l'arabe par O. Houdas",
+                "author": "Abderrahman es-Sa'di",
+                "year": 1900,
+                "url": "https://archive.org/details/tarikhessoudanpa00sadauoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 172",
+                "notes": "Paris, Ernest Leroux, 1900. Chronique achevée vers 1655. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": "Langue de communication élargie, née au Mali et en Côte d'Ivoire : toute sa communauté ethnique la parle comme première langue, et elle sert de langue d'enseignement à l'école.",
     "dialects": [

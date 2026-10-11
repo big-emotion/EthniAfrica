@@ -29,6 +29,118 @@
       "peopleId": "PPL_MALINKE"
     }
   ],
+  "nameHistory": {
+    "summary": "Le nom maninkakan de l'Est désigne une langue mandingue de Guinée, du Mali et des pays voisins. Maninkakan veut dire la langue des Maninka, le peuple que le français appelle Malinké. Ce nom renvoie au Manden ; la fiche du peuple Malinké et celle de la famille mandé présentent son histoire. Nous présentons plus bas ces noms comme noms de langue.",
+    "names": [
+      {
+        "nameText": "Maninkakan",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "emk",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue chez ses locuteurs : la langue des Maninka.",
+        "periodLabel": "Écrit dès 1901 sous une forme proche",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par l'auteur"
+            },
+            "statement": "Le nom maninkakan réunit le nom des Maninka et kan, « langue ». Maurice Delafosse écrivait que ces populations se nomment Mane-nka, Mandi-nka, Mani-nka ou Mali-nka, les gens de Mané, Mandi, Mani ou Mali. La fiche du peuple Malinké présente l'histoire de ces noms.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue. Étude grammaticale du dialecte dyoula",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 222 et p. 103",
+                "notes": "Paris, Ernest Leroux, 1901. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur est un administrateur colonial français."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "1901"
+            },
+            "era": "colonial",
+            "statement": "Le nom maninkakan a une forme proche chez Maurice Delafosse, pour qui le dialecte malinké est « plus exactement » la langue des Mane-nka, qu'il note avec le mot kâ, « langue ». C'est la plus ancienne trace de ce nom de langue que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue. Étude grammaticale du dialecte dyoula",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 222",
+                "notes": "Paris, Ernest Leroux, 1901. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur est un administrateur colonial français."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Malinké",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Le nom français du peuple et de sa langue ; nom de langue dès 1896.",
+        "periodLabel": "Nom de langue dès 1896",
+        "accounts": [
+          {
+            "period": {
+              "from": 1896,
+              "to": 1896,
+              "label": "1896"
+            },
+            "era": "colonial",
+            "statement": "Le nom malinké désigne des dialectes, « malinké nord et sud », dans l'étude du capitaine J.-B. Rambaud, La langue mandé, publiée en 1896, d'après la bibliographie de Maurice Delafosse. La fiche du peuple Malinké présente une trace plus ancienne de ce nom, en 1856.",
+            "sources": [
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue. Étude grammaticale du dialecte dyoula",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 221",
+                "notes": "Paris, Ernest Leroux, 1901. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur est un administrateur colonial français."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "1901"
+            },
+            "era": "colonial",
+            "statement": "Le nom malinké est, pour Maurice Delafosse, celui du dialecte mandé le plus répandu ; il le juge le plus ancien et le plus pur, parce que ses locuteurs ont seuls gardé le nom de Mali ou Mani.",
+            "sources": [
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue. Étude grammaticale du dialecte dyoula",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "Avertissement et p. 222",
+                "notes": "Paris, Ernest Leroux, 1901. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur est un administrateur colonial français."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": "Langue de communication élargie, née en Guinée, au Mali et en Sierra Leone. Elle n'est pas connue pour être enseignée à l'école.",
     "dialects": ["Amana", "Bö", "Koulounkalan", "Wasulu"],

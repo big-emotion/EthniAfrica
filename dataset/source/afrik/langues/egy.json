@@ -14,6 +14,116 @@
   "spellingAliases": [],
   "familyId": "FLG_AFROASIATIQUE",
   "peoples": [],
+  "nameHistory": {
+    "summary": "Le nom égyptien ancien désigne la langue de l'Égypte des pharaons, dont le copte est la dernière forme. Le mot égyptien vient du grec. Les sources que nous avons lues ne donnent pas le nom que les Égyptiens de l'Antiquité donnaient à leur langue ; les chrétiens d'Égypte d'avant la conquête arabe se nommaient, eux, « les gens de la Terre noire ». L'origine du mot grec est discutée ; nous présentons plus bas l'explication que nous avons lue.",
+    "names": [
+      {
+        "nameText": "Égyptien",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom venu du grec ; il viendrait du nom d'un sanctuaire de Memphis.",
+        "periodLabel": "Écrit dès l'Antiquité grecque",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par l'auteur"
+            },
+            "statement": "Le nom égyptien ancien désigne la langue de l'Égypte antique, que l'on peut suivre sur plus de quatre mille ans ; le copte en est la dernière forme, selon Rodolphe Kasser. L'origine du mot égyptien est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Language(s), Coptic, The Coptic Encyclopedia",
+                "author": "Rodolphe Kasser",
+                "year": null,
+                "url": "https://ccdl.claremont.edu/digital/collection/cce/id/2025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction",
+                "notes": "Lu le 11 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. A145a-151b). L'auteur cite W. Vycichl (1983) et M. Krause (1979), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant la conquête arabe"
+            },
+            "statement": "Le nom égyptien n'était pas celui que se donnaient les chrétiens d'Égypte d'avant la conquête arabe : en copte sahidique, ils se disaient rmnkēme, « les gens de la Terre noire », la terre cultivable de la vallée du Nil, opposée aux déserts, selon Rodolphe Kasser. Pour l'Égypte des pharaons, les sources que nous avons lues ne donnent pas le nom de la langue.",
+            "sources": [
+              {
+                "title": "Language(s), Coptic, The Coptic Encyclopedia",
+                "author": "Rodolphe Kasser",
+                "year": null,
+                "url": "https://ccdl.claremont.edu/digital/collection/cce/id/2025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section sur le mot copte",
+                "notes": "Lu le 11 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. A145a-151b). L'auteur cite W. Vycichl (1983) et M. Krause (1979), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Antiquité grecque"
+            },
+            "statement": "Le nom égyptien apparaît sous une forme proche, Aigyptioi, « les Égyptiens », dans l'Odyssée, le poème grec attribué à Homère, qui parle des beaux champs des hommes d'Égypte. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "formAsWritten": "Αἰγυπτίων",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Odyssée, chant XIV (texte grec)",
+                "author": "Homère",
+                "year": null,
+                "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0135%3Abook%3D14%3Acard%3D244",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chant XIV, vers 263",
+                "notes": "Lu le 11 octobre 2026 dans la Perseus Digital Library, université Tufts : « Αἰγυπτίων ἀνδρῶν περικαλλέας ἀγροὺς », « les beaux champs des hommes d'Égypte »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom égyptien viendrait de ḥwt-kꜣ-ptḥ, « la maison du ka de Ptah », le nom du grand sanctuaire de Memphis, que les Grecs auraient étendu à tout le pays, selon Pierre du Bourguet et selon Rodolphe Kasser, qui s'appuie sur Werner Vycichl et Martin Krause.",
+            "hypothesisGroup": "origine du nom égyptien",
+            "sources": [
+              {
+                "title": "Copt, The Coptic Encyclopedia",
+                "author": "Pierre du Bourguet",
+                "year": null,
+                "url": "https://ccdl.claremont.edu/digital/collection/cce/id/516",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 599",
+                "notes": "Lu le 11 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. 599a-601a)."
+              },
+              {
+                "title": "Language(s), Coptic, The Coptic Encyclopedia",
+                "author": "Rodolphe Kasser",
+                "year": null,
+                "url": "https://ccdl.claremont.edu/digital/collection/cce/id/2025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section sur le mot copte",
+                "notes": "Lu le 11 octobre 2026 dans la Claremont Coptic Encyclopedia, version en ligne de la Coptic Encyclopedia (CE, p. A145a-151b). L'auteur cite W. Vycichl (1983) et M. Krause (1979), que nous n'avons pas lus."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": null,
     "dialects": [
