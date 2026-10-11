@@ -7,16 +7,8 @@
     "appellations": {
       "mainName": "Kabye",
       "selfAppellation": "Kabiye",
-      "exonyms": [
-        "Kabye",
-        "Kabre",
-        "Cabrai'",
-        "Kabure",
-        "Kabrais",
-        "Lokpa",
-        "Lukpa"
-      ],
-      "originOfExonyms": "Kabiye est l'orthographe officielle dans les documents togolais. Kabre et Cabrai sont des variantes phonetiques utilisees dans la litterature coloniale française et britannique. Lokpa ou Lukpa est le nom utilise au Benin pour les communautes Kabiye etablies dans le nord-ouest du Benin (aussi appeles Logba ou Lugba). Ces variantes refletent les differences de transcription entre langues coloniales.",
+      "exonyms": ["Kabye", "Kabre", "Cabrai'", "Kabure", "Kabrais"],
+      "originOfExonyms": "Kabiye est l'orthographe officielle dans les documents togolais. Kabre et Cabrai sont des variantes phonetiques utilisees dans la litterature coloniale française et britannique. Ces variantes refletent les differences de transcription entre langues coloniales. Les Lokpa, ou Lukpa, du Bénin et du Togo ne sont pas des Kabiye : ils parlent une autre langue, le lukpa, que le catalogue Glottolog distingue du kabiyè.",
       "whyProblematic": null,
       "contemporaryUsage": "Kabiye est le terme officiel utilise au Togo dans les documents administratifs et scolaires. Le kabiye est enseigne comme matiere dans certaines ecoles togolaises. La langue et le peuple sont reconnus officiellement par l'Etat togolais.",
       "linguisticFamily": "FLG_NIGERCONGO",
@@ -24,7 +16,7 @@
       "historicalRegion": "Nord du Togo (massif Kabre, vallee de Kara, prefectures de Kozah et Binah)",
       "currentCountries": ["TGO", "BEN", "GHA"]
     },
-    "ethnicities": ["Kabiye", "Lokpa"],
+    "ethnicities": ["Kabiye"],
     "origins": {
       "ancientOrigins": "La mythologie kabiye raconte que le premier etre humain Kumberito (etre androgyne) descendit du ciel (male) sur la Terre (femelle), se posa entre deux petites chaines de montagnes, erra dans les grottes et les plaines puis se refugia dans les montagnes du massif nord (actuel Farang). Il bâtit une maison au-dessus du sol et engendra des enfants qui fonderent d'autres communautes. A sa mort, il retourna a la Terre et fut enterre dans des grottes. Le premier Kabiye descendit directement du ciel dans le village de Lama Dessi (lieu sacre appele EYU nahori: le pied de l'homme), envoye par Eso le Dieu createur; ce lieu est un centre de pelerinage.",
       "formationPeriod": "17e et 18e siecles. L'accumulation de population dans la zone montagneuse du nord du Togo survint en reponse aux razzias d'esclaves des royaumes du nord (Mamprussi, Dagomba, Mossi, Gonja, Bariba). Les Kabiye se refugierent dans les montagnes pour se defendre. L'invasion Dagomba eut lieu au debut du 16e siecle sous le chef (Na) Sitobu.",
@@ -35,7 +27,7 @@
       ],
       "historicalSettlementZones": [
         "Montagnes et plaines nord-centrales du Togo (massifs Kabre, prefectures de Kozah et Binah)",
-        "Nord-ouest du Benin (sous le nom Lokpa/Lukpa, pres de la frontiere togolaise)",
+        "Nord-ouest du Benin (pres de la frontiere togolaise)",
         "Petite communaute au Ghana (nord du pays)"
       ],
       "unificationsOrDivisions": "Les Kabiye constituent le deuxieme groupe ethnique du Togo apres les Ewe (23% de la population). Sous Gnassingbe Eyadema (Kabiye, dictateur pendant 38 ans), le groupe Kabiye consolida sa domination de l'armee et de l'administration togolaise. Faure Gnassingbe (fils d'Eyadema) leur a succede a la presidence.",
@@ -52,8 +44,8 @@
     "languages": {
       "mainLanguage": "Kabiye (Kabɩyɛ)",
       "isoCodes": ["kbp"],
-      "dialects": ["Kabiye", "Lokpa (Benin)"],
-      "vehicularRole": "Le kabiye est la langue maternelle de tous les membres de la communaute ethnique. Il est stable et vivant, appartenant au sous-groupe Gur (voltaique) de la famille Niger-Congo. Il est enseigne comme matiere dans certaines ecoles du Togo et du Benin. Au Benin, sous le nom Lokpa, il est parle par environ 30 000 locuteurs pres de la frontiere togolaise."
+      "dialects": ["Kabiye"],
+      "vehicularRole": "Le kabiye est la langue maternelle de tous les membres de la communaute ethnique. Il est stable et vivant, appartenant au sous-groupe Gur (voltaique) de la famille Niger-Congo. Il est enseigne comme matiere dans certaines ecoles du Togo et du Benin. Au Benin, il est parle par environ 30 000 locuteurs pres de la frontiere togolaise."
     },
     "culture": {
       "majorRites": "Evala: rituel d'initiation masculine (lutte traditionnelle); organise annuellement en juillet dans la region de Kara; pour les jeunes de 18-20 ans; combats en groupes de 5 contre 5; entraine physiquement et psychologiquement; comprend jeune, abstinence sexuelle, scarification; supervise par des sages; dates fixees par oracle et le Tchodjo; suivi de remerciements aux ancetres; semaine complete: isolement en huttes, entrainement mental, pelerinage obligatoire sur 3 montagnes, lutte, circoncision. Akpema: initiation feminine glorifiant la maturite des jeunes femmes pour la maternite et le mariage. Kondona: complete l'initiation masculine tous les 5 ans; integre les jeunes hommes comme membres adultes de la communaute. Habye: fete religieuse du Kabye Kozah; danse magique; demonstrant la force des sorciers; controle des forces de la nature; tous les 5 ans en novembre (triennal dans certains cantons de Kozah). Sinkaring: fete d'initiation et de moisson du Kabye de Binah; teste l'endurance et la force; annual le premier samedi de decembre en rotation entre cantons.",
@@ -65,7 +57,7 @@
       "kingdomsOrChiefdoms": "Pas de royaume centralise traditionnel: societe acephale. Organisation par clans et classes d'age. Sous le regime Eyadema (1967-2005), les Kabiye ont occupe une position de premier plan dans l'administration et l'armee togolaise, dominant de facto le pouvoir politique.",
       "relationsWithNeighbors": "Relations historiquement tendues avec les royaumes voisins esclavagistes (Dagomba, Mossi, Gonja, Bariba, Mamprussi) qui razziaient leurs villages aux 17e-18e siecles. Tradition orale partagee avec les Konkomba (origine commune). Opposition politique avec le groupe Ewe (principal rival, opposition menee principalement par les Ewe sous Eyadema).",
       "conflictsOrAlliances": "Repli dans les montagnes aux 17e-18e siecles pour echapper aux razzias esclavagistes. Invasion Dagomba au 16e siecle. Resistance a la colonisation allemande. Sous Eyadema, les Kabiye constituerent la principale base de soutien du regime militaire togolais.",
-      "diaspora": "Environ 30 000 locuteurs au Benin (sous le nom Lokpa ou Lukpa) pres de la frontiere togolaise. Petite communaute au Ghana (nord du pays). Quelques Kabiye dans le centre et le sud du Togo comme travailleurs agricoles."
+      "diaspora": "Environ 30 000 locuteurs au Benin pres de la frontiere togolaise. Petite communaute au Ghana (nord du pays). Quelques Kabiye dans le centre et le sud du Togo comme travailleurs agricoles."
     },
     "demography": {
       "totalPopulation": 800000,
@@ -80,7 +72,7 @@
         {
           "country": "BEN",
           "population": 30000,
-          "note": "Nord-ouest du Benin pres de la frontiere togolaise, sous le nom Lokpa"
+          "note": "Nord-ouest du Benin pres de la frontiere togolaise"
         },
         {
           "country": "GHA",
@@ -131,6 +123,12 @@
         "url": "https://www.togofirst.com",
         "tier": "unverified",
         "source_kind": "press"
+      },
+      {
+        "title": "Glottolog — Lukpa (lukp1238)",
+        "url": "https://glottolog.org/resource/languoid/id/lukp1238",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   },

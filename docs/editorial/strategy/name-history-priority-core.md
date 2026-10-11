@@ -155,6 +155,26 @@ review:
     unofficial copy: keep 2014, and replace the copy with a publisher's or a
     library's.
 
+- **Waves 6 and 7 of the long tail — ruled 2026-10-11, to upgrade.** Kept
+  as written, each to be replaced when a better source is read:
+  - births read only through a catalogue or bibliography record: Gamst
+    (1969) for the Qemant (`PPL_QEMANT`), Welch (1934) for the Isoko
+    (`PPL_ISOKO`) and Hrbek (1984) for the Kabiyè (`PPL_KABYE`): read the
+    works themselves;
+  - community sources kept for a hypothesis, as carriers from inside the
+    community: the Tembo Bible-translation manual (`PPL_TEMBO`) and the
+    Mbunda community's own history (`PPL_MBUNDA`);
+  - « Youssouf is a form of Yusuf », from Behind the Name with the
+    _Dictionary of American Family Names_ (`PAT_YOUSSOUF`): replace it if a
+    scholarly source turns up; the Wikipedia-only Diouf list for the usage
+    of Baradji and Maréga (`PAT_BARADJI`, `PAT_MAREGA`): replace it once
+    Diouf (1998) is read;
+  - Balogun as a family name (`PAT_BALOGUN`): find a source before adding a
+    usage account;
+  - Kollo (`PAT_KOLLO`) stays without a name history: the only material is
+    a family testimony. It waits for an oral account recorded properly, or
+    for a source we can open.
+
 - **What may be a birth — ruled 2026-10-10.** A close form may be a birth
   when the tile says so (« a une forme proche », Coulibaly and Koorabarri). A
   press article (Soudan du Sud, 2011), a form a chronicler gives as the

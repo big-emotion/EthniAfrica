@@ -207,6 +207,7 @@
               "to": 1894,
               "label": "1894"
             },
+            "era": "polity",
             "statement": "Le nom Warangi apparaît dans le récit de l'explorateur Oscar Baumann, paru en 1894. Les Warangi vivent selon lui dans les collines autour de Kondoa, un établissement de marchands arabes dans le pays d'Irangi, et ne forment qu'un seul peuple avec les Wambugwe. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
             "formAsWritten": "Warangi",
             "birth": true,
@@ -378,6 +379,7 @@
               "to": 1885,
               "label": "1885"
             },
+            "era": "polity",
             "statement": "Le nom Irangi est déjà celui du pays en 1885 : un voyageur que Baumann nomme le docteur Fischer y voit cette année-là le mont Gurui pour la première fois, selon Oscar Baumann. C'est la plus ancienne trace de ce nom que le projet connaît, de seconde main.",
             "birth": true,
             "sources": [
