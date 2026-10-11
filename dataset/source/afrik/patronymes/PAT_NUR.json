@@ -147,5 +147,180 @@
   "patronymicChainDepth": {
     "generations": 3,
     "sourceRefs": ["mansuur-2021-somali-names"]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nur est un nom personnel musulman, porté chez les Somalis et au Soudan. Il n'y désigne pas une famille : chez les Somalis, chacun porte son nom, puis celui de son père et celui de son grand-père. Selon la langue des papiers, on l'écrit Nuur, Noor, Nour ou Nur. Nous présentons plus bas ce qu'en disent les sources.",
+    "names": [
+      {
+        "nameText": "Nur",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel musulman porté chez les Somalis et au Soudan, pas un nom de famille.",
+        "periodLabel": "Écrit dès 1856 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Nur est un nom personnel, non un nom de famille : chez les Somalis, il peut être le nom d'une personne, celui de son père ou celui de son grand-père. Nous présentons à part la seule explication de son sens que nous connaissons.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Somali names and individual identity",
+                "author": "Cabdalla Cumar Mansuur",
+                "year": 2021,
+                "url": "https://wardheernews.com/wp-content/uploads/2021/06/Somali-names-and-indvidual-identity-By-Abdalla-Mansuur.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Texte daté du 14 juin 2021, publié par WardheerNews ; l'adresse d'origine ne répond plus : il a été lu dans la copie de l'Internet Archive du 20 septembre 2021. Section « Anthroponyms » : le nom somali se compose d'un nom personnel, du nom du père et du nom du grand-père ; « a system of name(s)-surname does not exist ». Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Proposé en 2003"
+            },
+            "statement": "Le nom Nur viendrait de l'arabe nūr, « lumière », selon le dictionnaire de Patrick Hanks. Al-Nūr, « la Lumière », serait aussi l'un des noms de Dieu, d'où des noms composés comme Nūr ud-Dīn.",
+            "sources": [
+              {
+                "title": "Nur Name Meaning and Nur Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=nur",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée Nur du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch : « Muslim: from a personal name based on Arabic nūr 'light, illumination' » ; al-Nūr, « la Lumière », est un attribut de Dieu, d'où des noms composés comme ʿAbd al-Nūr ou Nūr ud-Dīn. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Décrit en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Nur s'écrit Nuur en somali, Noor dans les papiers en anglais, Nour dans les pays de langue française et Nur en Italie, selon Cabdalla Cumar Mansuur. C'est un seul nom, écrit de quatre façons.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Somali names and individual identity",
+                "author": "Cabdalla Cumar Mansuur",
+                "year": 2021,
+                "url": "https://wardheernews.com/wp-content/uploads/2021/06/Somali-names-and-indvidual-identity-By-Abdalla-Mansuur.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1-2",
+                "notes": "Texte daté du 14 juin 2021, publié par WardheerNews ; l'adresse d'origine ne répond plus : il a été lu dans la copie de l'Internet Archive du 20 septembre 2021. L'auteur prend l'exemple d'une même personne, écrite Nuur Xuseen Cabdirashiid en somali, Noor Hussen Abdirashid en anglais, Nour Houssein Abdirachid dans les pays de langue française et Nur Hussen Abdirascid en Italie. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Décrit en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Nur peut devenir un nom de famille hors de Somalie : les pays d'accueil exigent un nom de famille et retiennent pour cela le nom du père ou celui du grand-père, selon Cabdalla Cumar Mansuur.",
+            "sources": [
+              {
+                "title": "Somali names and individual identity",
+                "author": "Cabdalla Cumar Mansuur",
+                "year": 2021,
+                "url": "https://wardheernews.com/wp-content/uploads/2021/06/Somali-names-and-indvidual-identity-By-Abdalla-Mansuur.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Texte daté du 14 juin 2021, publié par WardheerNews ; l'adresse d'origine ne répond plus : il a été lu dans la copie de l'Internet Archive du 20 septembre 2021. L'auteur explique que le pays d'accueil « forces him to declare a surname » : au Royaume-Uni et aux États-Unis, le troisième nom, en Italie les deux derniers, en Suède le deuxième. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Voyage de 1854-1855, récit publié en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Nur entre aussi dans le nom d'une lignée : l'explorateur Richard Burton compte les Nur Yunis parmi les quatre branches de l'Ajjal Yunis, le principal clan des Gudabirsi.",
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa; or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 242, note",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856 ; exemplaire numérisé sur archive.org. Récit d'un voyage fait en 1854-1855 dans le pays somali et jusqu'à Harar. La note sur les Gudabirsi range « Nur Yunis » parmi les quatre branches de l'Ajjal Yunis, leur principal clan. Voyageur britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Voyage de 1854-1855, récit publié en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Nur apparaît chez l'explorateur Richard Burton, que reçoivent en pays gudabirsi les six fils d'un chef, Ali Addah, parmi lesquels Nur. C'est la plus ancienne trace de ce nom chez les Somalis que le projet connaît ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Nur",
+            "birth": true,
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa; or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 218",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856 ; exemplaire numérisé sur archive.org. Récit d'un voyage fait en 1854-1855 dans le pays somali et jusqu'à Harar. Les six fils du chef gudabirsi Ali Addah viennent saluer l'auteur : « Beuh, Igah, Khayri, Nur, Ismail and Yunis ». Voyageur britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nuur",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "som",
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Décrit en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Nuur est l'écriture somalie de Nur, celle des cartes d'identité et des écrits en somali, selon Cabdalla Cumar Mansuur.",
+            "sources": [
+              {
+                "title": "Somali names and individual identity",
+                "author": "Cabdalla Cumar Mansuur",
+                "year": 2021,
+                "url": "https://wardheernews.com/wp-content/uploads/2021/06/Somali-names-and-indvidual-identity-By-Abdalla-Mansuur.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Texte daté du 14 juin 2021, publié par WardheerNews ; l'adresse d'origine ne répond plus : il a été lu dans la copie de l'Internet Archive du 20 septembre 2021. Première façon d'écrire le nom : en orthographe somalie, « Nuur Xuseen Cabdirashiid », sur la carte d'identité et dans les écrits en somali. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
