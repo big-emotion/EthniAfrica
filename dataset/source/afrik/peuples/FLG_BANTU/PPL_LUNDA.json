@@ -145,5 +145,237 @@
         "notes": "Lunda comme réseau politico-culturel : p. 643. État rund non daté par la tradition orale, mentionné en 1680 : p. 646. Cour organisée sur le modèle luba selon la tradition, influence mutuelle des Rund et des Luba : p. 648."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Lunda désigne un peuple du sud-ouest de la RD Congo, du nord-est de l'Angola et du nord-ouest de la Zambie, héritier d'un ancien empire, qui se nomme lui-même Ruund ou Balunda selon les régions. D'autres formes existent : Arunda, Alunda, Kalunda. Les sources ne s'accordent pas sur l'origine du nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Lunda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lun",
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple et d'un ancien empire d'Afrique centrale.",
+        "usedIn": ["lun"],
+        "periodLabel": "Écrit dès 1798 sous une forme proche ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Lunda désigne, au sens étroit, les groupements rund et, au sens large, aussi des groupes lozi, ndembo, luena ou imbangala, selon l'historien Ndaywel è Nziem. Son origine est discutée : l'explication connue est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 20 : Le système politique luba et lunda : émergence et expansion",
+                "author": "Ndaywel è Nziem",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 643",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1875,
+              "to": 1880,
+              "label": "1875-1876, journal publié en 1880"
+            },
+            "era": "polity",
+            "statement": "Le nom Lunda désigne chez l'explorateur Paul Pogge le royaume du Muata Jamwo, et Kalunda ses habitants, dont il décrit les mœurs.",
+            "formAsWritten": "Kalunda",
+            "sources": [
+              {
+                "title": "Im Reiche des Muata Jamwo. Tagebuch meiner im Auftrage der Deutschen Gesellschaft zur Erforschung Aequatorial-Afrika's in die Lunda-Staaten unternommenen Reise",
+                "author": "Paul Pogge",
+                "year": 1880,
+                "url": "https://archive.org/details/imreichedesmuata00pogg",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 236-246",
+                "notes": "Berlin, Dietrich Reimer, 1880. Chapitre sur les mœurs des Kalunda, lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1700,
+              "to": 1799,
+              "label": "XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le royaume rund devient un empire lunda au XVIIIe siècle, selon Ndaywel è Nziem.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 20 : Le système politique luba et lunda : émergence et expansion",
+                "author": "Ndaywel è Nziem",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 656",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1798,
+              "to": 1798,
+              "label": "1798, journal publié en 1873"
+            },
+            "era": "polity",
+            "statement": "Le nom Lunda a une forme proche, Arunda, dans le journal de Francisco José de Lacerda e Almeida. À Tete, il reçoit des envoyés du roi Cazembe, dont Catara, « de la même race que le Cazembe, à savoir les Arunda ». Richard Burton note que la forme courante est Lunda. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Arunda",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Francisco José de Lacerda e Almeida",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Lands of Cazembe : Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida et Francisco João Pinto, traduit par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/cu31924081259271",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 55",
+                "notes": "Londres, Royal Geographical Society, 1873. Journal de l'expédition portugaise de 1798-1799, traduit et annoté par Richard F. Burton. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1680,
+              "to": 1680,
+              "label": "1680"
+            },
+            "era": "polity",
+            "statement": "Le royaume rund, d'où naîtra l'empire lunda, est mentionné en 1680, selon Ndaywel è Nziem. Il ne dit pas sous quel nom ni dans quel document.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 20 : Le système politique luba et lunda : émergence et expansion",
+                "author": "Ndaywel è Nziem",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 646",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1873,
+              "label": "Rapportée en 1873"
+            },
+            "era": "polity",
+            "statement": "Le nom Lunda voudrait dire « montagnards » ou « gens de la brousse », selon William Desborough Cooley, qui l'explique par les langues du Kongo. Richard Burton, qui rapporte cette lecture, la juge très erronée.",
+            "hypothesisGroup": "origine du nom Lunda",
+            "sources": [
+              {
+                "title": "The Lands of Cazembe : Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida et Francisco João Pinto, traduit par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/cu31924081259271",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 47",
+                "notes": "Londres, Royal Geographical Society, 1873. Journal de l'expédition portugaise de 1798-1799, traduit et annoté par Richard F. Burton. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Balunda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lun",
+        "namedBy": null,
+        "shortLine": "Une forme du nom avec un préfixe de pluriel, selon les parlers.",
+        "periodLabel": "Écrit dès 1873",
+        "accounts": [
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "1873"
+            },
+            "era": "polity",
+            "statement": "Le nom Balunda est donné par Richard Burton, avec Alunda et Walunda, comme les formes du nom de « la grande nation » selon les parlers. Il note ailleurs que David Livingstone écrivait Balonda. C'est la plus ancienne trace de cette forme que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lands of Cazembe : Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida et Francisco João Pinto, traduit par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/cu31924081259271",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 47",
+                "notes": "Londres, Royal Geographical Society, 1873. Journal de l'expédition portugaise de 1798-1799, traduit et annoté par Richard F. Burton. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              },
+              {
+                "title": "The Lands of Cazembe : Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida et Francisco João Pinto, traduit par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/cu31924081259271",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 36",
+                "notes": "Londres, Royal Geographical Society, 1873. Journal de l'expédition portugaise de 1798-1799, traduit et annoté par Richard F. Burton. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ruund",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lun",
+        "namedBy": null,
+        "shortLine": "Le nom du groupe central, au cœur de l'ancien royaume.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ruund désigne le groupe central des Lunda. L'historien Ndaywel è Nziem écrit rund et appelle ces groupements « les Lunda au sens restreint ».",
+            "aspect": "usage",
+            "formAsWritten": "rund",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 20 : Le système politique luba et lunda : émergence et expansion",
+                "author": "Ndaywel è Nziem",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 643",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
