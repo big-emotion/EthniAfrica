@@ -28,6 +28,225 @@
       "peopleId": "PPL_MALINKE"
     }
   ],
+  "nameHistory": {
+    "summary": "Le nom mandinka désigne la langue des Mandinka, en Afrique de l'Ouest, et c'est le nom que ses locuteurs lui donnent : les gens du Manden, le pays du haut Niger d'où est parti l'empire du Mali. Le nom de la langue suit celui du peuple. D'autres noms existent : Mandingue en français, Mandingo en anglais. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Mandinka",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mnk",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les gens du Manden et qu'ils donnent à leur langue.",
+        "periodLabel": "Écrit dès 1854 sous la forme Mandénga ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2001,
+              "to": null,
+              "label": "Depuis 2001"
+            },
+            "era": "modern",
+            "statement": "Le mandinka figure au Sénégal parmi les six langues nationales, sous le nom de malinké, à côté du français, langue officielle, selon l'article premier de la Constitution.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution de la République du Sénégal, 22 janvier 2001, article premier",
+                "author": "République du Sénégal",
+                "year": 2001,
+                "url": "https://mjp.univ-perp.fr/constit/sn2001.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Texte lu sur la Digithèque de la Faculté de droit de Perpignan le 11 octobre 2026. L'article premier fait du français la langue officielle et nomme six langues nationales, dont le malinké."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par les auteurs"
+            },
+            "statement": "Le nom mandinka désigne les gens du Manden, le pays du haut Niger, entre Kangaba et Siguiri, d'où est parti l'empire du Mali, selon Djibril Tamsir Niane, et leur langue. Le nom de la langue suit celui du peuple ; l'origine du nom est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 141",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé du volume le 11 octobre 2026. L'auteur suit les traditions orales des écoles de griots du Manden à côté des auteurs arabes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom mandinka est noté « Mandénga » par Sigismund Koelle, d'après ses informateurs de Freetown : tous les Mandénga, lui dit-on, viennent du Mánde. Il note que la finale -nga se prononce souvent -nka. C'est la plus ancienne trace de cette forme que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous le parler « Mandén·ga »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "Proposée en 1854"
+            },
+            "era": "polity",
+            "statement": "Le nom mandinka serait formé du nom du pays, Mánde, et de la finale -nga, ou -nka, qui marque les gens d'un lieu, selon Sigismund Koelle.",
+            "hypothesisGroup": "origine du nom mandinka",
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous le parler « Mandén·ga »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mandingue",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "Des auteurs européens, d'après le nom que se donnent les intéressés",
+        "shortLine": "La forme française du nom, tirée des formes portugaise et anglaise.",
+        "periodLabel": "Écrit dès la fin du XVIe siècle sous la forme Mandingas",
+        "accounts": [
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom mandingue figure sur les cartes européennes sous la forme Mandingo, une graphie que Sigismund Koelle juge fautive : les gens du pays disent Mánde et Mandénga, et non Mandi ou Mandinga.",
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous le parler « Mandén·ga »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1795,
+              "to": 1797,
+              "label": "Voyage de 1795-1797 (récit publié en 1799)"
+            },
+            "era": "polity",
+            "statement": "Le nom mandingue est écrit « Mandingoes » par le voyageur écossais Mungo Park, qui donne aussi les nombres de leur langue.",
+            "sources": [
+              {
+                "title": "Travels in the Interior Districts of Africa",
+                "author": "Mungo Park",
+                "year": 1799,
+                "url": "https://www.gutenberg.org/ebooks/74976",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 18",
+                "notes": "Londres, W. Bulmer pour G. Nicol, 1799 ; voyage de 1795-1797. Pages repérées par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg, lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1592,
+              "to": 1596,
+              "label": "Manuscrits de 1592-1596"
+            },
+            "era": "polity",
+            "statement": "Le nom mandingue apparaît, sous la forme Mandingas, chez le Cap-Verdien André Álvares de Almada, qui parle du « Reino dos Mandingas », le royaume des Mandingues, selon José da Silva Horta. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple et sa langue existaient déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Nações, marcadores identitários e complexidades da representação étnica nas escritas portuguesas de viagem. Guiné do Cabo Verde (séculos XVI e XVII)",
+                "author": "José da Silva Horta",
+                "year": 2013,
+                "url": "https://www.redalyc.org/pdf/3844/384434843002.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 653",
+                "notes": "Varia Historia, vol. 29, n° 51, Belo Horizonte, 2013, p. 649-675. Lu en texte intégral le 11 octobre 2026. L'auteur cite les traités manuscrits d'André Álvares de Almada (1592-1596) et d'André Donelha (1625), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1625,
+              "to": 1625,
+              "label": "Rapportée en 1625"
+            },
+            "era": "polity",
+            "statement": "Le nom mandingue viendrait de Mandimansa, le titre du roi du Mandé, selon ce que des Peuls, des Wolof et des Mandingues disent à André Donelha, d'après José da Silva Horta.",
+            "hypothesisGroup": "origine du nom mandingue",
+            "sources": [
+              {
+                "title": "Nações, marcadores identitários e complexidades da representação étnica nas escritas portuguesas de viagem. Guiné do Cabo Verde (séculos XVI e XVII)",
+                "author": "José da Silva Horta",
+                "year": 2013,
+                "url": "https://www.redalyc.org/pdf/3844/384434843002.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 665",
+                "notes": "Varia Historia, vol. 29, n° 51, Belo Horizonte, 2013, p. 649-675. Lu en texte intégral le 11 octobre 2026. L'auteur cite les traités manuscrits d'André Álvares de Almada (1592-1596) et d'André Donelha (1625), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1799,
+              "to": 1799,
+              "label": "Proposée en 1799"
+            },
+            "era": "polity",
+            "statement": "Le nom mandingue viendrait de Manding, l'État de l'intérieur d'où ce peuple serait parti, selon Mungo Park.",
+            "hypothesisGroup": "origine du nom mandingue",
+            "sources": [
+              {
+                "title": "Travels in the Interior Districts of Africa",
+                "author": "Mungo Park",
+                "year": 1799,
+                "url": "https://www.gutenberg.org/ebooks/74976",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 18",
+                "notes": "Londres, W. Bulmer pour G. Nicol, 1799 ; voyage de 1795-1797. Pages repérées par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg, lue le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": null,
     "dialects": [],

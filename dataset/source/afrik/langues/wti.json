@@ -21,6 +21,148 @@
   "spellingAliases": [],
   "familyId": "FLG_NILOSAHARIENNE",
   "peoples": [],
+  "nameHistory": {
+    "summary": "Le nom berta désigne une langue du haut Nil Bleu, que les voyageurs du XIXe siècle situaient dans les montagnes au sud et à l'ouest de Fazogli ; ils l'écrivaient Bertat. Des groupes de la même région, nés selon ce voyageur de pères venus d'ailleurs et de mères berta, ont porté d'autres noms, Jebelawi et Wetawit. Les sources que nous avons lues ne disent pas comment les locuteurs appellent eux-mêmes leur langue, ni d'où vient le nom Berta.",
+    "names": [
+      {
+        "nameText": "Berta",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la langue et de ses locuteurs, écrit Bertat au XIXe siècle.",
+        "periodLabel": "Écrit dès 1874",
+        "accounts": [
+          {
+            "period": {
+              "from": 1949,
+              "to": 1963,
+              "label": "1949-1963"
+            },
+            "statement": "Le nom berta désigne pour le linguiste Joseph Greenberg une famille de langues à part en 1949-1950, puis une langue isolée qu'il range en 1963 dans le chari-nil, une branche du nilo-saharien.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 12, partie I : Classification des langues d'Afrique",
+                "author": "Joseph H. Greenberg",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 335 et p. 338",
+                "notes": "UNESCO, volume dirigé par J. Ki-Zerbo, édition française lue dans l'exemplaire numérisé du volume le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1869,
+              "to": 1874,
+              "label": "Voyage de 1869-1873, publié en 1874"
+            },
+            "statement": "Le nom berta apparaît sous la forme Bertat chez le voyageur autrichien Ernst Marno, qui place les Bertat dans les montagnes au sud et à l'ouest de Fazogli et cite des mots de la langue bertat. Il écrit aussi « Berta ». C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Reisen im Gebiete des blauen und weissen Nil, im egyptischen Sudan und den angrenzenden Negerländern, in den Jahren 1869 bis 1873",
+                "author": "Ernst Marno",
+                "year": 1874,
+                "url": "https://archive.org/details/reisenimgebiete00marngoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 31, p. 49, note, et p. 52, note",
+                "notes": "Vienne, Carl Gerold's Sohn, 1874. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'auteur décrit ces peuples avec les catégories raciales méprisantes de son époque."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Jebelawi",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un groupe de la région, « habitants de la montagne » selon un voyageur.",
+        "periodLabel": "Écrit dès 1874",
+        "accounts": [
+          {
+            "period": {
+              "from": 1869,
+              "to": 1874,
+              "label": "Voyage de 1869-1873, publié en 1874"
+            },
+            "statement": "Le nom jebelawi, que Ernst Marno écrit Gebelauin, désigne des gens du pays bertat qui se disent musulmans et dominent les Bertat ; ils parlent un dialecte de la langue bertat. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Reisen im Gebiete des blauen und weissen Nil, im egyptischen Sudan und den angrenzenden Negerländern, in den Jahren 1869 bis 1873",
+                "author": "Ernst Marno",
+                "year": 1874,
+                "url": "https://archive.org/details/reisenimgebiete00marngoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 52 et p. 56, notes",
+                "notes": "Vienne, Carl Gerold's Sohn, 1874. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'auteur décrit ces peuples avec les catégories raciales méprisantes de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1874,
+              "to": 1874,
+              "label": "Proposée en 1874"
+            },
+            "statement": "Le nom jebelawi voudrait dire « habitants de la montagne », selon Ernst Marno, pour qui ce sont des descendants d'un père hammeg et d'une mère berta.",
+            "hypothesisGroup": "origine du nom jebelawi",
+            "sources": [
+              {
+                "title": "Reisen im Gebiete des blauen und weissen Nil, im egyptischen Sudan und den angrenzenden Negerländern, in den Jahren 1869 bis 1873",
+                "author": "Ernst Marno",
+                "year": 1874,
+                "url": "https://archive.org/details/reisenimgebiete00marngoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 52, note",
+                "notes": "Vienne, Carl Gerold's Sohn, 1874. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'auteur décrit ces peuples avec les catégories raciales méprisantes de son époque."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wetawit",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom donné à un groupe né, selon un voyageur, de pères arabes et de mères berta.",
+        "periodLabel": "Écrit dès 1874",
+        "accounts": [
+          {
+            "period": {
+              "from": 1869,
+              "to": 1874,
+              "label": "Voyage de 1869-1873, publié en 1874"
+            },
+            "statement": "Le nom wetawit, que Ernst Marno écrit Uatauit, désigne selon lui les descendants d'un père arabe et d'une mère berta, qui forment avec les Gebelauin une sorte de noblesse au-dessus des Bertat. C'est la plus ancienne trace de ce nom que le projet connaît. Nous n'avons pas trouvé de source qui explique son origine.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Reisen im Gebiete des blauen und weissen Nil, im egyptischen Sudan und den angrenzenden Negerländern, in den Jahren 1869 bis 1873",
+                "author": "Ernst Marno",
+                "year": 1874,
+                "url": "https://archive.org/details/reisenimgebiete00marngoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 52, note, et p. 68",
+                "notes": "Vienne, Carl Gerold's Sohn, 1874. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'auteur décrit ces peuples avec les catégories raciales méprisantes de son époque."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": null,
     "dialects": [
