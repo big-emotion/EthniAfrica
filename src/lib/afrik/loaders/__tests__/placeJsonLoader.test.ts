@@ -29,6 +29,13 @@ const yamoussoukro = JSON.parse(
 
 let datasetRoot: string;
 
+/** A copy of a fiche without its single country, to build a region. */
+function withoutCountry(fiche: Record<string, unknown>) {
+  const copy = { ...fiche };
+  delete copy.countryId;
+  return copy;
+}
+
 function writePlace(fileName: string, fiche: Record<string, unknown>) {
   const dir = join(datasetRoot, "lieux");
   mkdirSync(dir, { recursive: true });
@@ -56,10 +63,51 @@ describe("loadAllPlaceFiches", () => {
       id: "LOC_YAMOUSSOUKRO",
       placeType: "ville",
       nameMain: "Yamoussoukro",
-      countryId: "CIV",
+      countryIds: ["CIV"],
       associatedPeoples: [{ peopleId: "PPL_BAOULE" }],
       nameHistory: yamoussoukro.nameHistory,
     });
+  });
+
+  // A region such as the Sahara spans several countries; a town has one.
+  // @req REQ-193
+  it("reads every country of a region that spans several", () => {
+    const rest = withoutCountry(yamoussoukro);
+    writePlace("LOC_REGION.json", {
+      ...rest,
+      id: "LOC_REGION",
+      placeType: "region",
+      countryIds: ["MLI", "NER", "DZA"],
+    });
+
+    const { places, errors } = loadAllPlaceFiches(datasetRoot);
+
+    expect(errors).toEqual([]);
+    expect(places[0].countryIds).toEqual(["MLI", "NER", "DZA"]);
+  });
+
+  // @req REQ-193
+  it("refuses a place with both, neither, one listed or a repeated country", () => {
+    const rest = withoutCountry(yamoussoukro);
+    const cases: [string, Record<string, unknown>][] = [
+      [
+        "LOC_BOTH.json",
+        { ...yamoussoukro, id: "LOC_BOTH", countryIds: ["CIV", "GHA"] },
+      ],
+      ["LOC_NEITHER.json", { ...rest, id: "LOC_NEITHER" }],
+      ["LOC_ONE.json", { ...rest, id: "LOC_ONE", countryIds: ["CIV"] }],
+      [
+        "LOC_TWICE.json",
+        { ...rest, id: "LOC_TWICE", countryIds: ["CIV", "CIV"] },
+      ],
+    ];
+    for (const [file, fiche] of cases) writePlace(file, fiche);
+
+    const { places, errors } = loadAllPlaceFiches(datasetRoot);
+
+    expect(places).toEqual([]);
+    expect(errors).toHaveLength(4);
+    for (const error of errors) expect(error).toMatch(/countryId|countryIds/);
   });
 
   // The legacy names[] block is on its way out of the place model (ETNI-2023):
@@ -154,7 +202,7 @@ function place(overrides: Partial<PlaceFiche> = {}): PlaceFiche {
     id: "LOC_YAMOUSSOUKRO",
     placeType: "ville",
     nameMain: "Yamoussoukro",
-    countryId: "CIV",
+    countryIds: ["CIV"],
     associatedPeoples: [{ peopleId: "PPL_BAOULE", relation: "fondateurs" }],
     summary: "Capitale politique.",
     content: { gaps: [], sources: [] },
@@ -164,7 +212,7 @@ function place(overrides: Partial<PlaceFiche> = {}): PlaceFiche {
 }
 
 const references = {
-  countryIds: new Set(["CIV"]),
+  countryIds: new Set(["CIV", "MLI", "NER"]),
   peopleIds: new Set(["PPL_BAOULE"]),
 };
 
@@ -194,6 +242,18 @@ describe("loadPlaces", () => {
     });
     expect(writes.slice(1)).toEqual([
       {
+        table: "afrik_place_countries",
+        op: "delete",
+        payload: "LOC_YAMOUSSOUKRO",
+      },
+      {
+        table: "afrik_place_countries",
+        op: "insert",
+        payload: [
+          { place_id: "LOC_YAMOUSSOUKRO", country_id: "CIV", position: 0 },
+        ],
+      },
+      {
         table: "afrik_place_peoples",
         op: "delete",
         payload: "LOC_YAMOUSSOUKRO",
@@ -216,13 +276,61 @@ describe("loadPlaces", () => {
   it("refuses a fiche whose countryId does not resolve, naming the fiche", async () => {
     const { client, writes } = fakeSupabase();
 
-    const report = await loadPlaces(client, [place({ countryId: "XXX" })], {
+    const report = await loadPlaces(client, [place({ countryIds: ["XXX"] })], {
       references,
     });
 
     expect(report.inserted).toBe(0);
     expect(report.errors).toEqual([
       "LOC_YAMOUSSOUKRO: countryId XXX does not resolve to a country fiche",
+    ]);
+    expect(writes).toEqual([]);
+  });
+
+  // A region has no single country: the row says so with a null country_id,
+  // and every country goes to afrik_place_countries in the fiche's order.
+  // @req REQ-193
+  it("writes a region with no single country and all its countries in order", async () => {
+    const { client, writes } = fakeSupabase();
+
+    const report = await loadPlaces(
+      client,
+      [
+        place({
+          id: "LOC_REGION",
+          countryIds: ["NER", "MLI"],
+          associatedPeoples: [],
+        }),
+      ],
+      { references }
+    );
+
+    expect(report.errors).toEqual([]);
+    expect(writes[0].payload).toEqual(
+      expect.objectContaining({ country_id: null })
+    );
+    expect(writes).toContainEqual({
+      table: "afrik_place_countries",
+      op: "insert",
+      payload: [
+        { place_id: "LOC_REGION", country_id: "NER", position: 0 },
+        { place_id: "LOC_REGION", country_id: "MLI", position: 1 },
+      ],
+    });
+  });
+
+  // @req REQ-193
+  it("refuses a region when any of its countries does not resolve", async () => {
+    const { client, writes } = fakeSupabase();
+
+    const report = await loadPlaces(
+      client,
+      [place({ id: "LOC_REGION", countryIds: ["NER", "XXX"] })],
+      { references }
+    );
+
+    expect(report.errors).toEqual([
+      "LOC_REGION: countryId XXX does not resolve to a country fiche",
     ]);
     expect(writes).toEqual([]);
   });
