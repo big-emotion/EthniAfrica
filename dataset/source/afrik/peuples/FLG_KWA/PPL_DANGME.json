@@ -137,5 +137,185 @@
         "notes": "Survol linguistique des langues du Ghana, dont le ga-dangme et ses traditions orales."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Dangme, aussi écrit Adangme, désigne un peuple du sud-est du Ghana, de Kpone à Ada et le long de la Volta, qui se nomme lui-même ainsi. Il réunit notamment les Ada, les Krobo, les Shai, les Ningo, les Prampram, les Kpone et les Osudoku. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Dangme",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ada",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne, écrit Adampi dès le XVIIIe siècle.",
+        "periodLabel": "Écrit depuis 1760 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Dangme, ou Adangme, désigne aujourd'hui les peuples de la côte du Ghana entre Kpone et Ada, et ceux de l'intérieur le long de la Volta : les Ada, les Kpone, les Krobo, les Ningo, les Osudoku, les Prampram et les Shai, selon l'Encyclopædia Britannica. Tous parlent des formes de la même langue. L'origine du nom est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Adangme",
+                "author": "Encyclopædia Britannica",
+                "year": null,
+                "url": "https://www.britannica.com/topic/Adangme",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article révisé en dernier lieu par Elizabeth Prine Pauls, lu en ligne le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "Rapporté en 1895"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dangme est aussi, dans la tradition que rapporte en 1895 le pasteur Carl Christian Reindorf, celui de l'un des quatre chefs du groupe qui deviendra le peuple d'Ada ; un quartier d'Ada porte son nom. Reindorf ne dit pas si le nom du peuple vient de ce chef.",
+            "sources": [
+              {
+                "title": "The History of the Gold Coast and Asante, Based on Traditions and Historical Facts",
+                "author": "Carl Christian Reindorf",
+                "year": 1895,
+                "url": "https://archive.org/details/historyofgoldcoa00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 40",
+                "notes": "Bâle. L'auteur, pasteur né à Christiansborg, s'appuie sur les traditions qu'il a recueillies. Lu dans l'exemplaire numérisé le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "1858"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dangme désigne, chez le missionnaire Johannes Zimmermann, un parler qu'il tient pour la langue mère du ga, parlé par un peuple bien plus nombreux, de Tema à Ada et jusqu'aux monts Krobo et Shai.",
+            "sources": [
+              {
+                "title": "A Grammatical Sketch of the Akra- or Gã-Language, tome 1",
+                "author": "Johannes Zimmermann",
+                "year": 1858,
+                "url": "https://archive.org/details/agrammaticalske01zimmgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 385",
+                "notes": "Stuttgart. Annexe consacrée à l'adangme, lue dans l'exemplaire numérisé le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1788,
+              "to": 1788,
+              "label": "1788"
+            },
+            "era": "polity",
+            "statement": "Le nom Dangme est, sous la forme Adamper, celui que se donnent eux-mêmes les gens de Ningo, selon le médecin danois Paul Erdmann Isert, qui publie le récit de son voyage en 1788. Il ajoute que les gens d'Ada appartiennent à la même nation.",
+            "formAsWritten": "Adamper",
+            "sources": [
+              {
+                "title": "Reise nach Guinea und den Caribäischen Inseln in Columbien, in Briefen an seine Freunde beschrieben",
+                "author": "Paul Erdmann Isert",
+                "year": 1788,
+                "url": "https://archive.org/details/bub_gb_e0VyAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 27",
+                "notes": "Copenhague. Lu dans l'exemplaire numérisé le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1760,
+              "to": 1769,
+              "label": "1760, traduit en allemand en 1769"
+            },
+            "era": "polity",
+            "statement": "Le nom Dangme a une forme proche, Adampi, chez le marchand danois Ludewig Ferdinand Rømer, dont le livre paraît en 1760 : il désigne ainsi un pays de la côte, à l'est d'Accra, avant la Volta. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà sur cette côte avant lui.",
+            "formAsWritten": "Adampi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Ludewig Ferdinand Römers Nachrichten von der Küste Guinea, aus dem Dänischen übersetzt",
+                "author": "Ludewig Ferdinand Rømer",
+                "year": 1769,
+                "url": "https://archive.org/details/11428980bsb",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 92",
+                "notes": "Traduction allemande de l'original danois de 1760, lue dans l'exemplaire numérisé de la Bibliothèque d'État de Bavière le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "Proposée en 1858"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dangme, que Johannes Zimmermann écrit Adanme, voudrait dire « la voix » ou « la langue d'Ada », selon ce missionnaire de Bâle ; il rapproche ce mot du nom des Ga et de celui des Ewe, Ayigbe.",
+            "hypothesisGroup": "origine du nom Dangme",
+            "sources": [
+              {
+                "title": "A Grammatical Sketch of the Akra- or Gã-Language, tome 1",
+                "author": "Johannes Zimmermann",
+                "year": 1858,
+                "url": "https://archive.org/details/agrammaticalske01zimmgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 385",
+                "notes": "Stuttgart. Annexe consacrée à l'adangme, lue dans l'exemplaire numérisé le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Adangme",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ada",
+        "namedBy": null,
+        "shortLine": "Une autre graphie du même nom, courante dans les textes anglais.",
+        "periodLabel": "Écrit depuis 1858 ; en usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "1895"
+            },
+            "era": "colonial",
+            "statement": "Le nom Adangme est la graphie qu'emploie Carl Christian Reindorf en 1895 pour ce peuple et ses villes : sur la côte, Kpone, Prampram, Ningo et Ada ; à l'intérieur, Shai, Krobo et Osudoku.",
+            "formAsWritten": "Adangme",
+            "sources": [
+              {
+                "title": "The History of the Gold Coast and Asante, Based on Traditions and Historical Facts",
+                "author": "Carl Christian Reindorf",
+                "year": 1895,
+                "url": "https://archive.org/details/historyofgoldcoa00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 11",
+                "notes": "Bâle. L'auteur, pasteur né à Christiansborg, s'appuie sur les traditions qu'il a recueillies. Lu dans l'exemplaire numérisé le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

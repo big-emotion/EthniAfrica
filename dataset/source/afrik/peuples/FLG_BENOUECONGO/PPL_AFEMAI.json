@@ -129,5 +129,98 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Afemai, aussi écrit Afenmai, désigne un peuple de langues edoïdes du nord de l'État d'Edo, au Nigeria, qui réunit notamment les Etsako. L'administration coloniale britannique appelait ces groupes Kukuruku. On ne sait pas avec certitude d'où vient le nom Afemai ; pour Kukuruku, nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Afemai",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que porte aujourd'hui ce peuple du nord de l'État d'Edo.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Afemai désigne aujourd'hui l'un des grands groupes de l'État d'Edo, au Nigeria ; le gouvernement de cet État y range les Etsako, et parfois aussi les Owan et les Akoko-Edo. On ne sait pas avec certitude d'où vient ce nom, et le projet n'en connaît pas encore de trace ancienne.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "About Edo",
+                "author": "Gouvernement de l'État d'Edo",
+                "year": null,
+                "url": "https://edostate.gov.ng/Edo/",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Page du site officiel de l'État, lue le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kukuruku",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Peuls, selon une note coloniale de 1919",
+        "shortLine": "Un nom employé par l'administration coloniale ; son origine est discutée.",
+        "periodLabel": "Époque coloniale",
+        "accounts": [
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kukuruku apparaît dans le rapport de l'anthropologue du gouvernement colonial Northcote W. Thomas, publié en 1910 : il désigne un ensemble de groupes, parfois réduits à un seul village, que l'on appelle « parfois collectivement Kukuruku », au nord-est des Edo de Benin. C'est la plus ancienne trace de ce nom que le projet connaît. Ces groupes vivaient déjà là avant lui.",
+            "formAsWritten": "Kukuruku",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Anthropological Report on the Edo-Speaking Peoples of Nigeria, partie I",
+                "author": "Northcote W. Thomas",
+                "year": 1910,
+                "url": "https://archive.org/details/anthropologicalr01thom",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5",
+                "notes": "Londres. L'auteur était l'anthropologue du gouvernement colonial. Lu dans l'exemplaire numérisé le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "Rapporté en 1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kukuruku serait un surnom donné par les Peuls, que la note appelle Filane, à des groupes des montagnes du sud de la province de Kabba ; on dit qu'ils poussaient un cri proche de « ku-ku-ruku » en fuyant vers leurs refuges de rochers, selon les notes réunies par O. Temple et C. L. Temple.",
+            "hypothesisGroup": "origine du nom Kukuruku",
+            "sources": [
+              {
+                "title": "Notes on the Tribes, Provinces, Emirates and States of the Northern Provinces of Nigeria",
+                "author": "O. Temple, édité par C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 247",
+                "notes": "Notes réunies auprès d'administrateurs coloniaux ; l'article cite A. H. Groom et J. C. Walker. Lu dans l'exemplaire numérisé de l'université de Toronto le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

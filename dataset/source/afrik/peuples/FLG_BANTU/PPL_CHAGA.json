@@ -121,5 +121,149 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Chaga, aussi écrit Chagga, désigne un peuple bantou des pentes sud du Kilimandjaro, en Tanzanie, qui se nomme lui-même Wachagga. Des voyageurs du XIXe siècle l'ont écrit Jagga, Wajagga ou, en allemand, Dschagga. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Wachagga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que porte ce peuple, écrit Jagga dès 1848 ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit depuis 1848 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Wachagga, ou Chaga, désigne aujourd'hui un peuple de langue bantoue qui vit sur les pentes fertiles du sud du Kilimandjaro, selon l'Encyclopædia Britannica. Ce peuple descend d'immigrants venus de plusieurs groupes voisins, et son pays était partagé entre des chefferies indépendantes. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Chaga",
+                "author": "Encyclopædia Britannica",
+                "year": null,
+                "url": "https://www.britannica.com/topic/Chaga",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article révisé en dernier lieu par Elizabeth Prine Pauls, lu en ligne le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1848,
+              "to": 1848,
+              "label": "1848"
+            },
+            "era": "polity",
+            "statement": "Le nom Wachagga a une forme proche, Jagga, dans le journal du missionnaire Johannes Rebmann, qui gagne le pays du Kilimandjaro en 1848 : il appelle ce pays Jagga et ses habitants les Jaggas. C'est la plus ancienne trace de ce nom que le projet connaît. Les habitants du Kilimandjaro vivaient déjà là avant lui.",
+            "formAsWritten": "Jaggas",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Johannes Rebmann",
+                "role": "missionnaire de la Church Missionary Society, auteur du journal"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Narrative of a Journey to Jagga, the Snow Country of Eastern Africa, The Church Missionary Intelligencer, vol. I",
+                "author": "Johannes Rebmann",
+                "year": 1850,
+                "url": "https://archive.org/details/1850TheChurchMissionaryIntelligencer",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 12 et p. 19",
+                "notes": "Journal du voyage d'avril à juin 1848, publié dans le premier volume de la revue de la Church Missionary Society, daté de 1850 sur sa page de titre. Lu dans l'exemplaire numérisé le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1850,
+              "to": 1850,
+              "label": "1850"
+            },
+            "era": "polity",
+            "statement": "Le nom Wachagga est écrit Wajagga par le missionnaire Johann Ludwig Krapf, qui cite en 1850 les Wajagga parmi les peuples dont il a recueilli des listes de mots, à partir de Mombasa.",
+            "formAsWritten": "Wajagga",
+            "sources": [
+              {
+                "title": "Vocabulary of Six East-African Languages (Kisuaheli, Kinika, Kikamba, Kipokomo, Kihiau, Kigalla)",
+                "author": "Johann Ludwig Krapf",
+                "year": 1850,
+                "url": "https://archive.org/details/cu31924026933139",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "préface, p. IV",
+                "notes": "Tübingen. Lu dans l'exemplaire numérisé de la bibliothèque de l'université Cornell le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1884,
+              "to": 1884,
+              "label": "1884"
+            },
+            "statement": "Le nom Chaga est écrit Caga par l'explorateur Harry Johnston, qui précise qu'il se prononce Chaga. Il y voit le nom local de toute la ceinture habitée des pentes du Kilimandjaro, entre 3 000 et 7 000 pieds, soit environ 900 à 2 100 mètres, selon son récit paru en 1886.",
+            "formAsWritten": "Caga",
+            "sources": [
+              {
+                "title": "The Kilima-Njaro Expedition: A Record of Scientific Exploration in Eastern Equatorial Africa",
+                "author": "Harry H. Johnston",
+                "year": 1886,
+                "url": "https://archive.org/details/kilimanjaroexpe00john",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 8, note 3, et p. 96, note 1",
+                "notes": "Londres. Récit du séjour de l'auteur au Kilimandjaro en 1884, lu dans l'exemplaire numérisé le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dschagga",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des auteurs de langue allemande",
+        "shortLine": "Une graphie allemande du nom, employée dès 1858.",
+        "periodLabel": "Écrit en 1858",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "1858"
+            },
+            "era": "polity",
+            "statement": "Le nom Dschagga est la graphie que Johann Ludwig Krapf emploie en allemand en 1858, dans le récit de ses voyages : il y situe le grand mont Kilimandjaro « in Dschagga », c'est-à-dire dans le pays des Chaga. C'est la plus ancienne trace de cette graphie que le projet connaît. Le peuple portait déjà son nom avant elle.",
+            "formAsWritten": "Dschagga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Reisen in Ost-Afrika, ausgeführt in den Jahren 1837-55, zweiter Theil",
+                "author": "Johann Ludwig Krapf",
+                "year": 1858,
+                "url": "https://archive.org/details/reiseninostafrik02krap",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 25",
+                "notes": "Lu dans l'exemplaire numérisé du Princeton Theological Seminary le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

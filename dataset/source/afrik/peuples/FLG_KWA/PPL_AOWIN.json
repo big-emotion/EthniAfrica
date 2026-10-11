@@ -107,5 +107,132 @@
         "notes": "Première compilation systématique des proverbes akan (mmebusem), établie à partir des dialectes twi (asante, akuapem) et fante."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Aowin désigne un peuple akan du sud-ouest du Ghana, autour d'Enchi, près de la frontière ivoirienne, et l'ancien royaume qu'il formait ; ce peuple se nomme lui-même Aowin. Le même nom a aussi servi aux Fanti à désigner les Agni de Côte d'Ivoire. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Aowin",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un ancien royaume, écrit Awine vers 1700 ; il nomme aujourd'hui un district du Ghana.",
+        "periodLabel": "Écrit depuis 1704 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2012,
+              "to": null,
+              "label": "Depuis 2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Aowin désigne aujourd'hui un district de l'ouest du Ghana, créé le 15 mars 2012, qui touche la frontière de la Côte d'Ivoire et a pour chef-lieu Enchi, selon l'assemblée de ce district. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Narrative Statement of the Aowin District Assembly Composite Budget for the 2015 Fiscal Year",
+                "author": "Assemblée du district d'Aowin",
+                "year": 2015,
+                "url": "https://mofep.gov.gh/sites/default/files/composite-budget/2015/WR/Aowin.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Publié par le ministère des Finances du Ghana, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Aowin sert aussi, sous la forme Aowim, à désigner tous les Agni : c'est le nom que leur donnent les Fanti, selon Maurice Delafosse en 1904.",
+            "formAsWritten": "Aowim",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 106",
+                "notes": "Paris, Ernest Leroux. Lu dans l'exemplaire numérisé de l'université de Toronto le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1704,
+              "to": 1705,
+              "label": "1704, traduit en anglais en 1705"
+            },
+            "era": "polity",
+            "statement": "Le nom Aowin apparaît sous une forme proche, Awine, chez le marchand néerlandais Willem Bosman : il y décrit un pays de l'intérieur, loin au-dessus d'Axim, qui vendait autrefois beaucoup d'or aux Hollandais et que les Denkyira ont conquis. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume existait déjà avant lui.",
+            "formAsWritten": "Awine",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A New and Accurate Description of the Coast of Guinea",
+                "author": "Willem Bosman",
+                "year": 1705,
+                "url": "https://archive.org/details/b30519032",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 79",
+                "notes": "Traduction anglaise, parue à Londres en 1705, de l'original néerlandais de 1704. Lu dans l'exemplaire numérisé de la Wellcome Collection le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Brissa",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de cartes coloniales pour une tribu agni de la Tano, autour d'Enchi.",
+        "periodLabel": "Noté en 1904",
+        "accounts": [
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Brissa a une forme proche, Broussa, sur les cartes que cite Maurice Delafosse en 1904 : il y désigne les Buresya, une tribu agni des deux rives de la Tano, autour de Nguié ou Enchy. Enchi est aujourd'hui le chef-lieu du district d'Aowin, selon l'assemblée de ce district. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Broussa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 107",
+                "notes": "Paris, Ernest Leroux. Lu dans l'exemplaire numérisé de l'université de Toronto le 11 octobre 2026."
+              },
+              {
+                "title": "The Narrative Statement of the Aowin District Assembly Composite Budget for the 2015 Fiscal Year",
+                "author": "Assemblée du district d'Aowin",
+                "year": 2015,
+                "url": "https://mofep.gov.gh/sites/default/files/composite-budget/2015/WR/Aowin.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1",
+                "notes": "Publié par le ministère des Finances du Ghana, lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
