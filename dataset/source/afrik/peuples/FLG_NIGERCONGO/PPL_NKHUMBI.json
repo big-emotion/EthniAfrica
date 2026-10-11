@@ -3,6 +3,143 @@
   "nameMain": "Nkhumbi",
   "languageFamilyId": "FLG_NIGERCONGO",
   "currentCountries": ["AGO"],
+  "nameHistory": {
+    "summary": "Le nom Nkhumbi désigne un peuple de langue bantoue du sud-ouest de l'Angola, dans la province de Cunene, qui se nomme lui-même Nkhumbi. On l'appelle aussi Humbe, du nom de son pays. Les sources que nous avons lues n'expliquent pas l'origine de ces noms.",
+    "names": [
+      {
+        "nameText": "Nkhumbi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "khu",
+        "namedBy": null,
+        "shortLine": "Le nom du peuple et de sa langue ; on écrit aussi Nkumbi.",
+        "usedIn": ["khu"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Nkumbi désigne, chez l'historien Jean-Luc Vellut, l'un des groupes de l'ensemble culturel nyaneka-nkumbi, au sud des hautes terres ovimbundu, avec les Nyaneka et les Otyilenge. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 12 : Le bassin du Congo et l'Angola",
+                "author": "Jean-Luc Vellut",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 356"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Nkhumbi s'écrit aussi Nkumbi ; l'ensemble qu'il forme avec les Nyaneka est appelé Nyaneka-Humbe, et comptait pour 3 % de la population de l'Angola en 1988, selon une étude de la Bibliothèque du Congrès des États-Unis.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Angola, a country study : Ovambo, Nyaneka-Humbe, Herero, and Others",
+                "author": "Bibliothèque du Congrès des États-Unis",
+                "year": null,
+                "url": "https://countrystudies.us/angola/64.htm",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Page lue le 11 octobre 2026 sur un site qui reprend la collection Country Studies de la Bibliothèque du Congrès ; la page ne donne pas sa date. Elle note que le nom Humbe s'écrit aussi Nkumbi et qu'en 1988 l'ensemble Nyaneka-Humbe comptait pour 3 % de la population de l'Angola."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Humbe",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du pays des Nkhumbi au bord du Cunene, devenu le nom de ses habitants.",
+        "usedIn": ["por", "fra"],
+        "periodLabel": "Écrit dès 1824",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom Humbe désigne à la fois un pays au bord du Cunene et ses habitants. Jan Vansina y voit le seul État important de l'ensemble nyaneka-humbe, dont la date de formation reste inconnue. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 22 : L'Afrique équatoriale et l'Angola : les migrations et l'apparition des premiers États",
+                "author": "Jan Vansina",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 616-617"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1824,
+              "to": 1824,
+              "label": "1824"
+            },
+            "era": "polity",
+            "statement": "Le nom Humbe apparaît par écrit chez l'Anglais Thomas Edward Bowdich, qui résume des récits d'expéditions portugaises : il y cite « les provinces de Humbe et de Chaungro », à l'ouest du Cunene. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà là avant elle.",
+            "formAsWritten": "provinces of Humbe",
+            "birth": true,
+            "sources": [
+              {
+                "title": "An account of the discoveries of the Portuguese in the interior of Angola and Mozambique, from original manuscripts",
+                "author": "Thomas Edward Bowdich",
+                "year": 1824,
+                "url": "https://archive.org/details/anaccountdiscov00bowdgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, John Booth, 1824. Lu dans la numérisation d'Internet Archive. L'auteur résume en anglais des récits d'expéditions portugaises qu'il a lus en manuscrit ; il ne les a pas faites lui-même.",
+                "page": "p. 44"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1904,
+              "label": "Fin du XIXe siècle - 1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Humbe désigne, pour Allen Isaacman et Jan Vansina, un peuple qui attaque une colonne portugaise quand Lisbonne refuse de lui payer une redevance pour un petit fort bâti sur ses terres. Avec les Cuamato, les Humbe repoussent plusieurs attaques portugaises et, en 1904, tuent plus de 300 des 500 hommes envoyés contre eux.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 8 : Initiatives et résistances africaines en Afrique centrale de 1880 à 1914",
+                "author": "Allen Isaacman et Jan Vansina",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 195 et p. 200"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Nkhumbi",

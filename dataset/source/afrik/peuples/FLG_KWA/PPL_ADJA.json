@@ -3,6 +3,121 @@
   "nameMain": "Adja",
   "languageFamilyId": "FLG_KWA",
   "currentCountries": ["TGO", "BEN"],
+  "nameHistory": {
+    "summary": "Le nom Aja désigne un peuple de langue gbe établi de part et d'autre de la frontière entre le Togo et le Bénin, autour de la vallée du Mono, qui se nomme lui-même Aja. On l'écrit Adja en français. Les sources que nous avons lues n'expliquent pas l'origine de ce nom ; nous présentons plus bas ses plus anciennes traces.",
+    "names": [
+      {
+        "nameText": "Aja",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ajg",
+        "namedBy": null,
+        "shortLine": "Le nom du peuple et de sa langue, l'aja-gbe ; on l'écrit Adja en français.",
+        "usedIn": ["ajg", "fra"],
+        "periodLabel": "Écrit dès le milieu du XIXe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par les auteurs"
+            },
+            "era": "modern",
+            "statement": "Le nom Aja désigne, chez l'historien E. J. Alagoa, un ensemble de peuples du sud de l'actuel Bénin, dont les Gun, les Fon et les Arada ; le royaume du Dahomey s'est construit à partir de ces groupes. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 15 : Les Fon et les Yoruba, du delta du Niger au Cameroun",
+                "author": "E. J. Alagoa",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 486"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Récit d'origine rapporté par l'auteur"
+            },
+            "statement": "Le nom Aja est porté par des communautés qui situent leur lointaine origine à Ifẹ, comme les rois yoruba, selon A. I. Asiwaju. Ce récit parle de l'origine du peuple, non de celle de son nom.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 26 : Dahomey, pays yoruba, Borgu (Borgou) et Bénin au XIXe siècle",
+                "author": "A. I. Asiwaju",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 748, note 5"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "colonial",
+            "statement": "Le nom Aja apparaît sous une forme proche, Ādṣa, chez le linguiste Sigismund Koelle : c'est ainsi qu'on appelle en Sierra Leone le parler qu'il note sous le nom d'Án·fūẹ. C'est la plus ancienne trace de ce nom que le projet connaît ; le projet Lexibank rattache ce parler à l'aja, mais Koelle ne dit pas s'il s'agit du même peuple. Le peuple existait déjà avant cette trace.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Adja",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme française du nom Aja, écrite dans les traités de la conquête du Dahomey.",
+        "usedIn": ["fra"],
+        "periodLabel": "Écrit dès 1895",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1894,
+              "to": 1895,
+              "label": "1894-1895"
+            },
+            "era": "colonial",
+            "statement": "Le nom Adja apparaît, écrit « pays des Adjas », dans la Revue d'histoire diplomatique : elle rapporte que le gouverneur Victor Ballot a renouvelé les traités de protectorat avec Pohizoun, « roi du pays des Adjas et des Oués », dans la vallée du haut Mono.",
+            "formAsWritten": "pays des Adjas",
+            "sources": [
+              {
+                "title": "Revue d'histoire diplomatique, neuvième année",
+                "author": "Société d'histoire diplomatique",
+                "year": 1895,
+                "url": "https://archive.org/details/revuedhistoiredi09sociuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, A. Pedone, 1895. Lu dans la numérisation d'Internet Archive. La chronique rapporte les traités de protectorat signés ou renouvelés au Dahomey par le gouverneur Victor Ballot à la fin de 1894.",
+                "page": "p. 304"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Adja",

@@ -4,6 +4,209 @@
   "languageFamilyId": "FLG_CREOLE",
   "currentCountries": ["MUS"],
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom Indo-Mauriciens désigne les Mauriciens dont les ancêtres sont venus d'Inde, pour la plupart comme travailleurs engagés après l'abolition de l'esclavage, et qui se nomment eux-mêmes Indo-Mauriciens. À l'époque coloniale, on les appelait aussi « coolies », un mot aujourd'hui tenu pour méprisant. Les sources ne s'accordent pas sur l'origine de ce mot ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Indo-Mauriciens",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Le nom des Mauriciens d'ascendance indienne, écrit en anglais dès 1881.",
+        "usedIn": ["fra", "eng"],
+        "periodLabel": "Écrit dès 1881 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Indo-Mauriciens désigne les Mauriciens d'ascendance indienne ; Catherine Servan-Schreiber l'emploie par exemple pour le village indo-mauricien du roman Namasté de Marcel Cabon. Elle rappelle aussi que la Constitution de 1968 range la population en hindous, musulmans, Sino-Mauriciens et « population générale ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "General History of Africa, X : Africa and Its Diasporas, ch. 6 : Mauritius, between Community Compartmentalisation and Cultural Melting Pots",
+                "author": "Catherine Servan-Schreiber",
+                "year": 2025,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000396047",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, édition anglaise publiée sous licence libre, lue dans l'exemplaire numérisé du volume.",
+                "page": "p. 358 et p. 361"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1835,
+              "to": 1835,
+              "label": "Après 1835"
+            },
+            "era": "colonial",
+            "statement": "Le nom Indo-Mauriciens n'apparaît pas encore dans les sources que nous avons lues : après l'abolition de l'esclavage, votée en théorie en 1835, des travailleurs indiens sous contrat remplacent les esclaves dans les plantations de canne de l'île, selon Immanuel Wallerstein.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 2 : L'Afrique et l'économie-monde",
+                "author": "Immanuel Wallerstein",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 61"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "colonial",
+            "statement": "Le nom Indo-Mauriciens apparaît en anglais chez Charles Meldrum, dans un rapport pour la commission sanitaire de Maurice : beaucoup d'Indiens, leur engagement fini, se sont établis dans la colonie, et il y a désormais « une large population indo-mauricienne ». C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Indo-Mauritian population",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Weather, health, and forests : a report on the inequalities of the mortality from malarial fever and other diseases, in Mauritius",
+                "author": "Charles Meldrum",
+                "year": 1881,
+                "url": "https://archive.org/details/b21364990",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Rapport préparé pour la commission sanitaire de Maurice, imprimé à Maurice en 1881. Lu dans la numérisation d'Internet Archive. Le texte parle des travailleurs indiens avec le vocabulaire colonial de son temps.",
+                "page": "p. 97"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1882,
+              "to": 1882,
+              "label": "1882"
+            },
+            "era": "colonial",
+            "statement": "Le nom Indo-Mauriciens désigne en 1882, chez Henry J. Jourdain, les Indiens nés dans la colonie, qu'il distingue des Indiens nés en Inde ; le recensement de 1871 les comptait encore sous le nom de « Creole Indians », Indiens créoles.",
+            "formAsWritten": "Indo-Mauritians (born in the Colony)",
+            "sources": [
+              {
+                "title": "Mauritius, Proceedings of the Royal Colonial Institute, vol. XIII, 1881-1882",
+                "author": "Henry J. Jourdain",
+                "year": 1882,
+                "url": "https://archive.org/details/royalcolproceedings13royauoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Sampson Low, 1882. Lu dans la numérisation d'Internet Archive.",
+                "page": "p. 273-274"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Coolies",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un mot de l'époque coloniale pour les travailleurs indiens engagés ; il est aujourd'hui méprisant.",
+        "usedIn": ["eng", "fra"],
+        "periodLabel": "Époque coloniale",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens décrit par le dictionnaire"
+            },
+            "statement": "Le nom coolie désigne un travailleur loué, et en particulier celui qu'on a poussé à quitter l'Inde ou la Chine pour les plantations de Maurice, de la Réunion ou des Antilles, dans une condition parfois très proche de l'esclavage, selon le glossaire Hobson-Jobson. Son origine est discutée ; nous présentons les explications plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Hobson-Jobson : a glossary of colloquial Anglo-Indian words and phrases, article « Cooly »",
+                "author": "Henry Yule et Arthur Coke Burnell",
+                "year": 1903,
+                "url": "https://archive.org/details/hobsonjobsonbein00yuleuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "La numérisation d'Internet Archive est cataloguée sous la date 1886, mais le texte lu est celui de la nouvelle édition de William Crooke (Londres, Murray, 1903). L'article définit le mot comme un travailleur loué, et en particulier un travailleur poussé à quitter l'Inde ou la Chine pour les plantations de Maurice, de la Réunion ou des Antilles, dans une condition parfois très proche de l'esclavage.",
+                "page": "p. 249-250"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "colonial",
+            "statement": "Le nom coolie désigne, chez Charles Meldrum, le travailleur indien à qui il attribue le quadruplement de la récolte de sucre de Maurice depuis 1834.",
+            "formAsWritten": "the Coolie",
+            "sources": [
+              {
+                "title": "Weather, health, and forests : a report on the inequalities of the mortality from malarial fever and other diseases, in Mauritius",
+                "author": "Charles Meldrum",
+                "year": 1881,
+                "url": "https://archive.org/details/b21364990",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Rapport préparé pour la commission sanitaire de Maurice, imprimé à Maurice en 1881. Lu dans la numérisation d'Internet Archive. Le texte parle des travailleurs indiens avec le vocabulaire colonial de son temps.",
+                "page": "p. 97"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1903,
+              "to": 1903,
+              "label": "Rapporté en 1903"
+            },
+            "statement": "Le nom coolie viendrait de Koli, le nom d'un peuple ou d'une caste de l'ouest de l'Inde longtemps employé aux travaux de portage, selon Henry Yule et Arthur Burnell, qui jugent cette explication la plus probable.",
+            "hypothesisGroup": "origine du nom coolie",
+            "sources": [
+              {
+                "title": "Hobson-Jobson : a glossary of colloquial Anglo-Indian words and phrases, article « Cooly »",
+                "author": "Henry Yule et Arthur Coke Burnell",
+                "year": 1903,
+                "url": "https://archive.org/details/hobsonjobsonbein00yuleuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "La numérisation d'Internet Archive est cataloguée sous la date 1886, mais le texte lu est celui de la nouvelle édition de William Crooke (Londres, Murray, 1903). L'article définit le mot comme un travailleur loué, et en particulier un travailleur poussé à quitter l'Inde ou la Chine pour les plantations de Maurice, de la Réunion ou des Antilles, dans une condition parfois très proche de l'esclavage.",
+                "page": "p. 249-250"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1903,
+              "to": 1903,
+              "label": "Rapporté en 1903"
+            },
+            "statement": "Le nom coolie viendrait du mot tamoul et kannada kuli, « salaire », selon l'indianiste Horace Hayman Wilson et selon Gustav Oppert, que cite le glossaire Hobson-Jobson.",
+            "hypothesisGroup": "origine du nom coolie",
+            "sources": [
+              {
+                "title": "Hobson-Jobson : a glossary of colloquial Anglo-Indian words and phrases, article « Cooly »",
+                "author": "Henry Yule et Arthur Coke Burnell",
+                "year": 1903,
+                "url": "https://archive.org/details/hobsonjobsonbein00yuleuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "La numérisation d'Internet Archive est cataloguée sous la date 1886, mais le texte lu est celui de la nouvelle édition de William Crooke (Londres, Murray, 1903). L'article définit le mot comme un travailleur loué, et en particulier un travailleur poussé à quitter l'Inde ou la Chine pour les plantations de Maurice, de la Réunion ou des Antilles, dans une condition parfois très proche de l'esclavage.",
+                "page": "p. 249-250"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Indo-Mauriciens",
