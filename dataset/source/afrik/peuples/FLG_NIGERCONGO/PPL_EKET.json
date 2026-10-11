@@ -99,5 +99,119 @@
         "tier": "referenced"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Eket désigne un peuple de la côte de l'État d'Akwa Ibom, au sud-est du Nigeria, proche des Ibibio, ainsi que sa ville principale et sa langue. Un autre nom, Ekid, figure dans les catalogues de langues ; il serait celui que ce peuple se donne, mais les sources que le projet a lues ne le disent pas. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Ekid",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "eke",
+        "namedBy": null,
+        "shortLine": "Un nom donné pour celui que ce peuple se donne ; son histoire reste à documenter.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "era": "modern",
+            "statement": "Le nom Ekid figure, avec Eket et Ekit, parmi les noms de la langue de ce peuple dans le catalogue Glottolog, qui le reprend du Catalogue des langues en danger. Les sources que le projet a lues ne disent ni qui l'emploie, ni depuis quand, ni d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Ekit",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/ekit1246",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues de l'Institut Max Planck, page lue le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Eket",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple, de sa ville et de sa langue, écrit dès les années 1880.",
+        "periodLabel": "Écrit depuis les années 1880 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Eket désigne en 1912, chez le missionnaire Robert L. M'Keown, un peuple installé au nord-est des Ibuno, loin des rivières ; il écrit que les Ekets ont été soumis par les Britanniques une douzaine d'années plus tôt.",
+            "formAsWritten": "Ekets",
+            "sources": [
+              {
+                "title": "Twenty-five Years in Qua Iboe: the Story of a Missionary Effort in Nigeria",
+                "author": "Robert L. M'Keown",
+                "year": 1912,
+                "url": "https://archive.org/details/yearsinquaiboe00mkeouoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 35",
+                "notes": "Londres et Belfast, Morgan & Scott, 1912. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1903,
+              "to": 1903,
+              "label": "1903"
+            },
+            "era": "colonial",
+            "statement": "Le nom Eket figure en 1903 dans les notes de J. Watt, commissaire de district britannique, parmi les subdivisions que les habitants du district d'Old Calabar reconnaissent entre eux, avec les Efik, les Ibibio, les Ekoi, les Okoyong et les Oron.",
+            "formAsWritten": "Eket",
+            "sources": [
+              {
+                "title": "Notes on the Old Calabar District of Southern Nigeria",
+                "author": "J. Watt",
+                "year": 1903,
+                "url": "https://archive.org/details/man00irelgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 103",
+                "notes": "Man, vol. 3, 1903, article n° 57. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1887,
+              "label": "Années 1880, récit publié en 1899"
+            },
+            "statement": "Le nom Eket apparaît dans le récit du commerçant anglais John Harford, publié en 1899 dans West African Studies de Mary Kingsley : dans les années 1880, il ouvre une maison de commerce à « la plage de débarquement d'Eket », sur la Qua Iboe, et décrit les Ekets comme les partenaires les plus difficiles qu'il ait connus. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Eket",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Pioneering in West Africa, or the Opening up of the Qua Iboe River",
+                "author": "John Harford",
+                "year": 1899,
+                "url": "https://archive.org/details/westafricanstud01harfgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 594",
+                "notes": "Annexe II de West African Studies, de Mary Kingsley, Londres, Macmillan, 1899. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

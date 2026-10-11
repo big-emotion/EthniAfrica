@@ -128,5 +128,130 @@
         "source_kind": "intergovernmental"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Vezo désigne les gens de la mer de la côte sud-ouest de Madagascar, entre Morondava et la région de Toliara, qui se nomment eux-mêmes Vezo. On est Vezo par ce que l'on fait, la pêche et la navigation, plus que par sa naissance. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Vezo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "skg",
+        "namedBy": null,
+        "shortLine": "Le nom que ces gens de la mer se donnent, écrit dès 1881 ; son origine reste discutée.",
+        "periodLabel": "Écrit depuis 1881 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1987,
+              "to": 1991,
+              "label": "Fin des années 1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Vezo désigne une manière de vivre plus qu'une origine, selon l'anthropologue Rita Astuti, qui a vécu parmi eux : on devient Vezo en apprenant et en pratiquant ce que font les Vezo, et l'on peut cesser de l'être. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Learning to be Vezo: the Construction of the Person among Fishing People of Western Madagascar",
+                "author": "Rita Astuti",
+                "year": 1991,
+                "url": "https://researchonline.lse.ac.uk/id/eprint/131109/1/Astuti_Learning_to_be_vezo.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "résumé, p. 2",
+                "notes": "Thèse de doctorat, London School of Economics, 1991, lue sur le dépôt de l'école le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1908,
+              "to": 1908,
+              "label": "1908"
+            },
+            "era": "colonial",
+            "statement": "Le nom Vezo désigne en 1908, chez Alfred Grandidier, les Sakalava de la côte, qu'il oppose aux Masikoro, les Sakalava de l'intérieur : les Vezo apportent le poisson et le sel, et reprennent la mer pour s'installer sur une autre plage quand une querelle éclate.",
+            "formAsWritten": "Vezô",
+            "sources": [
+              {
+                "title": "Histoire physique, naturelle et politique de Madagascar, volume IV : Ethnographie de Madagascar, tome 1",
+                "author": "Alfred Grandidier et Guillaume Grandidier",
+                "year": 1908,
+                "url": "https://archive.org/details/histoirephysique04gran",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 80",
+                "notes": "Paris, Imprimerie nationale, 1908. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Vezo apparaît par écrit sous la plume du missionnaire A. Walen, dans l'Antananarivo Annual : il écrit que les Sakalava de la côte sud-ouest se divisent en Vezo, les gens de la côte, qui sont marins, et Masikoro, les gens de l'intérieur, qui cultivent la terre. C'est la plus ancienne trace de ce nom que le projet connaît. Ces gens de la mer existaient déjà avant elle.",
+            "formAsWritten": "Vezo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Two Years among the Sakalava",
+                "author": "A. Walen",
+                "year": 1881,
+                "url": "https://archive.org/details/s7739id1398991",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 7",
+                "notes": "Antananarivo Annual and Madagascar Magazine, n° 5, Noël 1881, Antananarivo, imprimerie de la London Missionary Society. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1843,
+              "to": 1844,
+              "label": "1843-1844"
+            },
+            "statement": "Le nom Vezo figurerait déjà dans les Recherches sur les Sakalava de Vincent Noël, publiées en 1843 et 1844 : Rita Astuti les cite comme le seul texte ancien qui ne fait pas des Vezo des pêcheurs de la côte. Les sources ne disent pas sous quelle forme le nom y est écrit ; nous n'avons pas lu ce texte.",
+            "sources": [
+              {
+                "title": "Learning to be Vezo: the Construction of the Person among Fishing People of Western Madagascar",
+                "author": "Rita Astuti",
+                "year": 1991,
+                "url": "https://researchonline.lse.ac.uk/id/eprint/131109/1/Astuti_Learning_to_be_vezo.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chapitre 1, note 3, p. 32",
+                "notes": "Thèse de doctorat, London School of Economics, 1991, lue sur le dépôt de l'école le 11 octobre 2026. L'autrice cite Vincent Noël, « Recherches sur les Sakalava », Bulletin de la Société de géographie, 1843-1844."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1908,
+              "to": 1991,
+              "label": "Proposée en 1908, reprise en 1991"
+            },
+            "era": "colonial",
+            "statement": "Le nom Vezo viendrait de « vezo ! », l'impératif du verbe qui veut dire « pagayer », que l'on scande pour donner le rythme à ceux qui pagaient, selon les Vezo de Betania interrogés par Rita Astuti ; Alfred et Guillaume Grandidier lui donnaient déjà le sens de « ceux qui pagaient ». Rita Astuti ajoute que cette explication n'est peut-être pas exacte, mais que les Vezo s'en servent pour lier leur nom à la pirogue et à la mer.",
+            "hypothesisGroup": "origine du nom Vezo",
+            "sources": [
+              {
+                "title": "Learning to be Vezo: the Construction of the Person among Fishing People of Western Madagascar",
+                "author": "Rita Astuti",
+                "year": 1991,
+                "url": "https://researchonline.lse.ac.uk/id/eprint/131109/1/Astuti_Learning_to_be_vezo.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chapitre 1, note 2, p. 32",
+                "notes": "Thèse de doctorat, London School of Economics, 1991, lue sur le dépôt de l'école le 11 octobre 2026. Récit recueilli par l'autrice auprès des habitants de Betania, qu'elle ne nomme pas. Elle renvoie à Grandidier et Grandidier, 1908-1928, tome 1, p. 241, note 2, que nous n'avons pas retrouvée."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
