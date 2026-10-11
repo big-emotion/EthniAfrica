@@ -88,5 +88,186 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Berom désigne un peuple du plateau de Jos, au centre du Nigeria. D'autres noms existent : Birom, Burum ou Burumawa, Kibo, Kibbo ou Kibyen, que l'on trouve surtout chez les auteurs britanniques de l'époque coloniale. Les sources que nous avons lues n'expliquent l'origine d'aucun de ces noms.",
+    "names": [
+      {
+        "nameText": "Berom",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bom",
+        "namedBy": null,
+        "shortLine": "Le nom du peuple et de sa langue, sur le plateau de Jos, au Nigeria.",
+        "periodLabel": "Écrit dès 1925",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Berom désigne un peuple et sa langue, appelée aussi Birom, Kibo ou Kibyen, selon le catalogue Glottolog. Les sources que nous avons lues ne disent pas d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog — Berom (bero1242)",
+                "author": "Glottolog",
+                "year": 2026,
+                "url": "https://glottolog.org/resource/languoid/id/bero1242",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 11 octobre 2026. Langue de code bom. Autres noms relevés : Birom chez Moseley et Asher (1994), chez Ruhlen (1987) et dans le WALS ; Berum, Birom, Cen Berom, Kibbo, Kibbun, Kibo et Kibyen dans le catalogue Multitree."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1925,
+              "to": 1925,
+              "label": "1925"
+            },
+            "era": "colonial",
+            "statement": "Le nom Berom figure chez Charles Kingsley Meek, anthropologue du gouvernement colonial,, qui note par exemple que chez les Berom chaque concession a une petite case sacrée. Son index en fait le même peuple que les Burum, les Kibo ou les Kibyen. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Berom",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Northern Tribes of Nigeria, vol. II",
+                "author": "Charles Kingsley Meek",
+                "year": 1925,
+                "url": "https://archive.org/details/the-northern-tribes-of-nigeria_202208",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 14 et index",
+                "notes": "Londres, Oxford University Press, Humphrey Milford, 1925, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 14 : « Among the Berom each compound has a small sacred hut attached ». L'index des deux volumes porte l'entrée « Berom (Burum or Kibo or Kibyen) »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kibo",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un ancien nom, avec les formes Kibbo, Kibbun et Kibyen, chez les Britanniques.",
+        "periodLabel": "Écrit dès 1912",
+        "accounts": [
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kibo apparaît, écrit Kibbo, chez l'officier britannique Arthur John Newman Tremearne, qui place les Kibbo dans la province de Bauchi. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Kibbo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Tailed Head-Hunters of Nigeria",
+                "author": "Arthur John Newman Tremearne",
+                "year": 1912,
+                "url": "https://archive.org/details/tailedheadhunter00trem_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 92",
+                "notes": "Philadelphie, J. B. Lippincott, 1912, lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'auteur est un officier britannique du nord du Nigeria. La page écrit : « In the Bauchi Province to the east are the Karshe, Kibbo, and other tribes »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kibyen désigne, dans un recueil de rapports britanniques, un grand peuple autrefois uni sous un chef de Bukuru et divisé en plusieurs groupes, dont les Burumawa, les Kibbo et les Kibbun. Le recueil ajoute qu'on ne sait rien de son origine.",
+            "sources": [
+              {
+                "title": "Notes on the Tribes, Provinces, Emirates and States of the Northern Provinces of Nigeria",
+                "author": "O. Temple, édité par C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 228-229",
+                "notes": "Le Cap, Argus Printing and Publishing Company, 1919, compilé d'après les rapports des administrateurs britanniques du nord du Nigeria. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'article « Kibyen or Burumawa » écrit : « The Kibyen are a very large tribe who were probably at one time united under a Chief at Bukuru, but who are now split into many sections, including those known as Burumawa, Kibbo, and Kibbun ». Il note aussi : « Nothing is known as to the origin of the tribe »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Burumawa",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un ancien nom de l'un des groupes berom ; Meek écrit aussi Burum.",
+        "periodLabel": "Écrit dès 1919",
+        "accounts": [
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Burumawa apparaît dans un recueil de rapports britanniques sur le nord du Nigeria, qui l'emploie comme second nom des Kibyen et dit que les Burumawa seraient venus de Wukari. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Kibyen or Burumawa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notes on the Tribes, Provinces, Emirates and States of the Northern Provinces of Nigeria",
+                "author": "O. Temple, édité par C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 228-229",
+                "notes": "Le Cap, Argus Printing and Publishing Company, 1919, compilé d'après les rapports des administrateurs britanniques du nord du Nigeria. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'article « Kibyen or Burumawa » écrit : « The Kibyen are a very large tribe who were probably at one time united under a Chief at Bukuru, but who are now split into many sections, including those known as Burumawa, Kibbo, and Kibbun ». Il note aussi : « Nothing is known as to the origin of the tribe »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Birom",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre graphie de Berom, fréquente dans les ouvrages en anglais.",
+        "periodLabel": "Usage contemporain",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1880,
+              "to": 1935,
+              "label": "1880-1935"
+            },
+            "statement": "Le nom Birom figure chez l'historien Adiele E. Afigbo parmi les peuples du Nigeria qui n'avaient pas de chefs, comme les Tiv ou les Idoma. Le pouvoir colonial y trouvait mal des chefs « traditionnels », et une bonne partie de la nouvelle élite venait des gens du commun, écrit-il.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 19 : Les répercussions sociales de la domination coloniale : les nouvelles structures sociales",
+                "author": "Adiele Eberechukuwu Afigbo",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 538",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, édition française lue dans l'exemplaire numérisé le 11 octobre 2026. La page cite « les Ibo, les Ibibio, les Ogoja, les Tiv, les Idoma, les Birom, les Anga et les Gwari du Nigéria » parmi les peuples qui « n'avaient pas de chefs »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -83,9 +83,10 @@ remaining errors for correction. The baseline is not an endorsement of that pros
 Do not regenerate or enlarge the baseline to pass a check. After a reviewed
 correction, obsolete hashes may be removed. A future change to the rules should
 be tested on representative fiches before rollout and have its migration reviewed.
-Warnings remain visible even for legacy material. Use the existing BMAD prose
-review with the shared charter as `style_guide` and structure review with
-`reader_type=humans`; those reviews do not change quotation wording.
+Warnings remain visible even for legacy material. Review prose and reading order
+directly against the shared DITP-based charter, with the existing Vale checks.
+Preserve quotations. The operator's decision of 10 October 2026 excludes BMAD;
+historical review records below describe past work, not the current method.
 
 ## Reference documents
 

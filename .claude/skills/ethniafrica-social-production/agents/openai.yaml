@@ -1,0 +1,4 @@
+interface:
+  display_name: "EthniAfrica Social Production"
+  short_description: "Coordinate publications, approvals and session recovery"
+  default_prompt: "Use $ethniafrica-social-production to start or resume an EthniAfrica publication."

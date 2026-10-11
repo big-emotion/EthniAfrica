@@ -150,5 +150,338 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kpelle désigne un peuple du centre du Liberia et de la Guinée forestière, qui se nomme lui-même Kpelle. D'autres noms existent : Guerzé, en Guinée, et Pessy, dans des récits du XIXe siècle. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Kpelle",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kpe",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Kpelle, au Liberia comme en Guinée.",
+        "usedIn": ["kpe"],
+        "periodLabel": "Écrit dès 1921 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kpelle désigne un seul peuple, au Liberia et en Guinée, selon l'ethnomusicologue Ruth Stone. Certains auteurs en ont fait deux peuples, à cause de la frontière et du nom Guerzé donné à ceux de Guinée ; elle juge plus juste d'y voir un seul peuple.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Music of the Kpelle of Liberia, notes de l'album Ethnic Folkways FE 4385",
+                "author": "Ruth Stone",
+                "year": 1972,
+                "url": "https://folkways-media.si.edu/docs/folkways/artwork/FW04385.pdf",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 1",
+                "notes": "Folkways Records, 1972 ; enregistrements faits au Liberia en 1970 par Verlon et Ruth Stone. Notes lues sur le site de Smithsonian Folkways le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kpelle est celui que se donnent les intéressés, selon l'administrateur Jacques Germain. Les sources lues n'expliquent pas son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Guinée. Peuples de la Forêt",
+                "author": "Jacques Germain",
+                "year": 1984,
+                "url": "https://webguine.site/bibliotheque/ethnographie/jGermain/notePrelim.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "Note préliminaire sur les noms des peuples forestiers",
+                "notes": "Paris, Académie des sciences d'outre-mer, 1984. Copie non officielle du texte, mise en ligne par webGuinée, lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "1921"
+            },
+            "era": "modern",
+            "statement": "Le nom Kpelle figure chez le linguiste Diedrich Westermann, dans sa grammaire du gola, qui renvoie à son étude Die Kpelle, ein Negerstamm in Liberia. C'est la plus ancienne trace de cette forme que le projet connaît. Le peuple existait déjà avant elle.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Diedrich Westermann",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Die Gola-Sprache in Liberia. Grammatik, Texte und Wörterbuch",
+                "author": "Diedrich Westermann",
+                "year": 1921,
+                "url": "https://archive.org/details/diegolasprachein04west",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "Einleitung",
+                "notes": "Hambourg, L. Friederichsen, 1921. L'introduction cite aussi l'étude de l'auteur, Die Kpelle, ein Negerstamm in Liberia. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1600,
+              "to": 1699,
+              "label": "XVIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le peuple kpelle, que Christophe Wondji appelle aussi Guerze, quitte au XVIIe siècle les savanes au nord de Beyla pour la forêt. Il est poussé par le mouvement des Malinké du Konyan, selon cet historien.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 13 : Les États et les cultures de la côte de haute Guinée",
+                "author": "Christophe Wondji",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 423",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Guerzé",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom français des Kpelle de Guinée ; son origine reste discutée.",
+        "usedIn": ["fra"],
+        "periodLabel": "Écrit dès 1901 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Guerzé désigne en français les Kpelle de Guinée. Ils ne l'emploient pas pour eux-mêmes, selon Jacques Germain. Son origine n'est expliquée que par une hypothèse, présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Guinée. Peuples de la Forêt",
+                "author": "Jacques Germain",
+                "year": 1984,
+                "url": "https://webguine.site/bibliotheque/ethnographie/jGermain/notePrelim.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "Note préliminaire sur les noms des peuples forestiers",
+                "notes": "Paris, Académie des sciences d'outre-mer, 1984. Copie non officielle du texte, mise en ligne par webGuinée, lue le 11 octobre 2026."
+              },
+              {
+                "title": "Music of the Kpelle of Liberia, notes de l'album Ethnic Folkways FE 4385",
+                "author": "Ruth Stone",
+                "year": 1972,
+                "url": "https://folkways-media.si.edu/docs/folkways/artwork/FW04385.pdf",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 1",
+                "notes": "Folkways Records, 1972 ; enregistrements faits au Liberia en 1970 par Verlon et Ruth Stone. Notes lues sur le site de Smithsonian Folkways le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "Écrit en 1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Guerzé est écrit Gerze par l'historien Yves Person, qui précise entre parenthèses « Kpelle en République de Guinée ».",
+            "formAsWritten": "Gerze",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 12 : Les peuples côtiers — premiers contacts avec les Portugais — de la Casamance aux lagunes ivoiriennes",
+                "author": "Yves Person",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 332",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Guerzé sert à André Arcin pour désigner des « populations de race Toma ou Guerzé », qui vivent alors encore hors de tout contrôle colonial.",
+            "formAsWritten": "Guerzé",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 58",
+                "notes": "Paris, Augustin Challamel, 1907. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1898,
+              "to": 1901,
+              "label": "Mission de 1898 à 1900, publiée en 1901"
+            },
+            "era": "colonial",
+            "statement": "Le nom Guerzé est écrit Guerzés par le capitaine d'Ollone, arrivé à Ndolomou, « chez les Guerzés ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Guerzés",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Capitaine d'Ollone",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Mission Hostains-d'Ollone, 1898-1900. De la Côte d'Ivoire au Soudan et à la Guinée",
+                "author": "Capitaine d'Ollone",
+                "year": 1901,
+                "url": "https://archive.org/details/missionhostainsd00ollo",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 214",
+                "notes": "Paris, Hachette, 1901. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "Proposée en 1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Guerzé viendrait d'une déformation du nom sous lequel les Malinké connaissent les Kpelle, selon Jacques Germain.",
+            "hypothesisGroup": "origine du nom Guerzé",
+            "sources": [
+              {
+                "title": "Guinée. Peuples de la Forêt",
+                "author": "Jacques Germain",
+                "year": 1984,
+                "url": "https://webguine.site/bibliotheque/ethnographie/jGermain/notePrelim.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "Note préliminaire sur les noms des peuples forestiers",
+                "notes": "Paris, Académie des sciences d'outre-mer, 1984. Copie non officielle du texte, mise en ligne par webGuinée, lue le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Pessy",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom anglais des Kpelle au XIXe siècle, encore cité parmi leurs autres noms.",
+        "usedIn": ["eng"],
+        "periodLabel": "Écrit dès 1870",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Pessy figure aujourd'hui parmi les autres noms de la langue kpelle du Liberia, avec Pessa, Kpese et Kpwessi, selon Joshua Project.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Kpelle, Liberia (langue)",
+                "author": "Joshua Project",
+                "year": null,
+                "url": "https://joshuaproject.net/languages/xpe",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "notes": "Liste des autres noms de la langue, lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1890,
+              "to": 1890,
+              "label": "1890"
+            },
+            "era": "modern",
+            "statement": "Le nom Pessy désigne encore en 1890, chez le naturaliste Johann Büttikofer, un « puissant peuple » établi à l'arrière des Mamba et des Queah, à l'ouest du pays gola.",
+            "sources": [
+              {
+                "title": "Reisebilder aus Liberia, tome II",
+                "author": "Johann Büttikofer",
+                "year": 1890,
+                "url": "https://archive.org/details/reisebilderausli02btti",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 184",
+                "notes": "Leyde, E. J. Brill, 1890. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1868,
+              "to": 1870,
+              "label": "Juin 1868, récit publié en 1870"
+            },
+            "era": "modern",
+            "statement": "Le nom Pessy figure chez Benjamin Anderson, parti de Monrovia, qui traverse en juin 1868 « le pays pessy » et ses villages. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Pessy",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Benjamin Anderson",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Narrative of a Journey to Musardu, the Capital of the Western Mandingoes",
+                "author": "Benjamin Anderson",
+                "year": 1870,
+                "url": "https://archive.org/details/narrativeofjourn00ande",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 49",
+                "notes": "New York, S. W. Green, 1870. Récit d'un voyage parti de Monrovia en 1868. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

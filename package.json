@@ -1,7 +1,7 @@
 {
   "name": "ethniafrica",
   "private": true,
-  "version": "4.23.0",
+  "version": "5.0.1",
   "packageManager": "npm@10.8.2",
   "engines": {
     "node": "22.x"
@@ -76,7 +76,13 @@
     "check:editorial": "tsx scripts/ci/checkPlainLanguage.ts",
     "audit:editorial": "tsx scripts/ci/checkPlainLanguage.ts --audit",
     "check:publication": "tsx scripts/ci/checkPlainLanguage.ts --strict",
-    "editorial:version": "vale --version"
+    "editorial:version": "vale --version",
+    "social:render": "node social/renderer/render.mjs",
+    "social:check-design": "node social/renderer/fidelity.mjs",
+    "test:social-renderer": "node --test social/renderer/*.test.mjs",
+    "social:package": "node .claude/skills/ethniafrica-social-production/scripts/package.mjs",
+    "social:research": "node .claude/skills/ethniafrica-social-production/scripts/research.mjs",
+    "test:social-production": "node --test .claude/skills/ethniafrica-social-production/scripts/*.test.mjs"
   },
   "dependencies": {
     "@radix-ui/react-alert-dialog": "^1.1.23",

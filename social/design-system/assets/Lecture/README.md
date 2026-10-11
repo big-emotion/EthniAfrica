@@ -1,0 +1,1 @@
+Reading-size previews: the same cards shown at 320, 375 and 430 px phone widths (rendered at device scale 2, as on a Retina screen), at tablet and desktop feed widths, and the two example sequences at 430 px. Use them to judge readability, not to measure pixels.

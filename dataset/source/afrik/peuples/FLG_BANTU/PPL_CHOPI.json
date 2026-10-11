@@ -177,5 +177,164 @@
         "source_kind": "intergovernmental"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Chopi désigne un peuple de la côte du sud du Mozambique, dans la province d'Inhambane, qui se nomme lui-même ainsi. D'autres noms existent : Ba-Lengi, et des graphies comme Tschopi, Txopi ou M'chopes. L'origine du nom Chopi n'a qu'une explication dans les sources que nous avons lues ; nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Chopi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "cce",
+        "namedBy": null,
+        "shortLine": "Le nom du peuple et de sa langue, le cicopi, sur la côte sud du Mozambique.",
+        "periodLabel": "Écrit dès 1912",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Chopi désigne un peuple et sa langue, le cicopi, écrit aussi Txitxopi, Tschopi ou Txopi, selon le catalogue Glottolog. Son origine n'a qu'une explication dans les sources que nous avons lues ; elle est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog — Chopi (chop1243)",
+                "author": "Glottolog",
+                "year": 2026,
+                "url": "https://glottolog.org/resource/languoid/id/chop1243",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 11 octobre 2026. Langue de code cce, parlée au Mozambique. Autres noms relevés dans le catalogue Multitree : Cicopi, Copi, Shichopi, Shicopi, Tschopi, Txitxopi et Txopi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1935,
+              "label": "Époque coloniale"
+            },
+            "era": "colonial",
+            "statement": "Le nom Chopi est employé par les Chopi eux-mêmes dans un chant contre l'impôt colonial : « Les Chopi ont perdu les droits de leur propre terre », cité par Basil Davidson, Allen F. Isaacman et René Pélissier.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 27 : La politique et le nationalisme en Afrique centrale et méridionale, 1919-1935",
+                "author": "Basil Davidson, Allen F. Isaacman et René Pélissier",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 754",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, édition française lue dans l'exemplaire numérisé le 11 octobre 2026. La page cite un chant chopi contre l'impôt colonial, qui se termine par : « Les Chopi ont perdu les droits de leur propre terre. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Chopi apparaît, sous la forme Ba-Chopi, chez le missionnaire suisse Henri-Alexandre Junod, qui situe ce peuple au nord de l'embouchure du Limpopo. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Ba-Chopi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 13",
+                "notes": "Neuchâtel, Attinger Frères, 1912, lu dans la numérisation d'Internet Archive le 11 octobre 2026. La page écrit que les Thonga confinent à l'est « on the Tonga near Inhambane and on the Ba-Chopi, North of the mouth of the Limpopo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Shangaan, celui des conquérants nguni, est appliqué à Johannesburg à tous les travailleurs venus de la côte est, même aux Chopi, que les Ronga de la baie de Delagoa tiennent pour bien inférieurs à eux, selon Henri-Alexandre Junod.",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 15",
+                "notes": "Neuchâtel, Attinger Frères, 1912, lu dans la numérisation d'Internet Archive le 11 octobre 2026. La page écrit que le nom Shangaan « is applied in Johannesburg roughly to all the East Coast \"boys\", even to the Ba-Chopi who are considered by the Ba-Ronga of Delagoa-Bay as much inferior to them »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1914,
+              "to": 1914,
+              "label": "Proposée en 1914"
+            },
+            "era": "colonial",
+            "statement": "Le nom Chopi voudrait dire « ceux qui sont transpercés par les armes », parce que leur pays était le terrain de razzia favori de Gungunyana, le roi de Gaza, selon Henri-Alexandre Junod.",
+            "hypothesisGroup": "origine du nom Chopi",
+            "sources": [
+              {
+                "title": "The Condition of the Natives of South-East Africa in the Sixteenth Century, according to the Early Portuguese Documents",
+                "author": "Henri-Alexandre Junod",
+                "year": 1914,
+                "url": "https://archive.org/details/conditionofnativ00juno",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 15",
+                "notes": "Le Cap, South African Association for the Advancement of Science, 1914, 25 pages, lu dans la numérisation d'Internet Archive le 11 octobre 2026. La page écrit : « The Ba-Lengi, more commonly called Ba-Chopi (wrongly spelt \"M'chopes\" on certain maps); viz., \"those who are transfixed with weapons\" (as their country was the favourite hunting, or, rather, raiding ground of Gungunyana) ; they occupy the border of the sea in the southern part of the region ». Elle range aussi « the Ba-Tswa » dans le grand groupe hlengwe."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ba-Lengi",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un autre nom que Junod donne aux Chopi, en 1914.",
+        "periodLabel": "Écrit en 1914",
+        "accounts": [
+          {
+            "period": {
+              "from": 1914,
+              "to": 1914,
+              "label": "1914"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ba-Lengi désigne les Chopi chez Henri-Alexandre Junod, qui écrit qu'on les appelle plus souvent Ba-Chopi. Il note aussi que des cartes écrivent à tort M'chopes. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Ba-Lengi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Condition of the Natives of South-East Africa in the Sixteenth Century, according to the Early Portuguese Documents",
+                "author": "Henri-Alexandre Junod",
+                "year": 1914,
+                "url": "https://archive.org/details/conditionofnativ00juno",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 15",
+                "notes": "Le Cap, South African Association for the Advancement of Science, 1914, 25 pages, lu dans la numérisation d'Internet Archive le 11 octobre 2026. La page écrit : « The Ba-Lengi, more commonly called Ba-Chopi (wrongly spelt \"M'chopes\" on certain maps); viz., \"those who are transfixed with weapons\" (as their country was the favourite hunting, or, rather, raiding ground of Gungunyana) ; they occupy the border of the sea in the southern part of the region ». Elle range aussi « the Ba-Tswa » dans le grand groupe hlengwe."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

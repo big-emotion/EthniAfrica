@@ -4,6 +4,273 @@
   "languageFamilyId": "FLG_CREOLE",
   "currentCountries": ["MUS"],
   "classificationStatus": "contested",
+  "nameHistory": {
+    "summary": "Le nom Créoles désigne aujourd'hui à Maurice surtout les descendants des esclaves africains et malgaches, qui se nomment eux-mêmes Kreol. Le sens du mot a changé : au XVIIIe siècle, il désignait d'abord les Blancs nés dans l'île. Les sources ne s'accordent pas sur l'origine du mot ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Kreol",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mfe",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Créoles en kreol morisien, qui est aussi le nom de leur langue.",
+        "usedIn": ["mfe"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2004,
+              "to": 2004,
+              "label": "2004"
+            },
+            "era": "modern",
+            "statement": "Le nom Kreol revient dans une phrase de Dev Virahsawmy, défenseur de la langue créole, que cite Catherine Servan-Schreiber : « lor nou lil, nou tou kreol isi », sur notre île, nous sommes tous créoles.",
+            "aspect": "usage",
+            "formAsWritten": "nou tou kreol isi",
+            "sources": [
+              {
+                "title": "General History of Africa, X : Africa and Its Diasporas, ch. 6 : Mauritius, between Community Compartmentalisation and Cultural Melting Pots",
+                "author": "Catherine Servan-Schreiber",
+                "year": 2025,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000396047",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, édition anglaise publiée sous licence libre, lue dans l'exemplaire numérisé du volume.",
+                "page": "p. 357"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Créoles",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un mot qui désignait d'abord les Blancs nés dans l'île, puis surtout les descendants d'esclaves.",
+        "usedIn": ["fra", "mfe"],
+        "periodLabel": "Écrit dès 1773 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Créoles désigne à Maurice surtout les descendants des esclaves, en majorité d'ascendance afro-malgache ou métissée, selon Catherine Servan-Schreiber. Son sens bouge encore : depuis les années 1990, il assume l'africanité autant que le métissage. L'origine du mot est discutée ; nous présentons les explications plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "General History of Africa, X : Africa and Its Diasporas, ch. 6 : Mauritius, between Community Compartmentalisation and Cultural Melting Pots",
+                "author": "Catherine Servan-Schreiber",
+                "year": 2025,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000396047",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, édition anglaise publiée sous licence libre, lue dans l'exemplaire numérisé du volume.",
+                "page": "p. 358 et p. 360"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1773,
+              "to": 1773,
+              "label": "1773"
+            },
+            "era": "colonial",
+            "statement": "Le nom créole apparaît pour Maurice, alors Isle de France, chez Bernardin de Saint-Pierre : « une Européenne se croit supérieure à une créole », écrit-il, pour une femme blanche née dans l'île. C'est la plus ancienne trace de ce nom à Maurice que le projet connaît. Le mot désigne alors les Blancs nés dans la colonie, comme le dit aussi le dictionnaire de Littré.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Voyage à l'Isle de France, à l'isle de Bourbon, au cap de Bonne-Espérance",
+                "author": "Jacques-Henri Bernardin de Saint-Pierre",
+                "year": 1773,
+                "url": "https://archive.org/details/voyagelisledefr00piegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Édition de 1773, lue dans la numérisation d'Internet Archive, qui ne permet pas de relever la page avec certitude. L'auteur décrit la société de l'île, esclaves compris, avec le regard d'un officier français de son temps."
+              },
+              {
+                "title": "Dictionnaire de la langue française, article « créole »",
+                "author": "Émile Littré",
+                "year": 1873,
+                "url": "https://www.littre.org/definition/cr%C3%A9ole",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Paris, Hachette, 1873-1877, avec le supplément. Lu dans l'édition en ligne du dictionnaire le 11 octobre 2026. Le sens 1 est « homme blanc, femme blanche originaire des colonies » ; l'étymologie juge douteuse l'origine de l'espagnol criollo.",
+                "page": "sens 1"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1871,
+              "to": 1882,
+              "label": "1871-1882"
+            },
+            "era": "colonial",
+            "statement": "Le nom créole sert aussi pour les Indiens nés à Maurice : le recensement de 1871 les compte comme « Creole Indians », selon Henry J. Jourdain, qui les appelle Indo-Mauriciens en 1882.",
+            "formAsWritten": "Creole Indians",
+            "sources": [
+              {
+                "title": "Mauritius, Proceedings of the Royal Colonial Institute, vol. XIII, 1881-1882",
+                "author": "Henry J. Jourdain",
+                "year": 1882,
+                "url": "https://archive.org/details/royalcolproceedings13royauoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Sampson Low, 1882. Lu dans la numérisation d'Internet Archive.",
+                "page": "p. 273-274"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1880,
+              "to": 1880,
+              "label": "1880"
+            },
+            "era": "colonial",
+            "statement": "Le nom créole donne son titre à l'Étude sur le patois créole mauricien de Charles Baissac, un Mauricien qui décrit la langue parlée dans toute l'île.",
+            "formAsWritten": "patois créole mauricien",
+            "sources": [
+              {
+                "title": "Étude sur le patois créole mauricien",
+                "author": "Charles Baissac",
+                "year": 1880,
+                "url": "https://archive.org/details/tudesurlepatois00baisgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Nancy, Berger-Levrault, 1880. Lu dans la numérisation d'Internet Archive. L'auteur, né à Maurice, parle de la langue créole comme d'un « patois », selon l'usage de son époque.",
+                "page": "page de titre"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom créole viendrait de l'espagnol criollo, qu'on fait venir de criar, « élever, nourrir », selon le dictionnaire de Littré, qui juge cette formation très irrégulière.",
+            "hypothesisGroup": "origine du mot créole",
+            "sources": [
+              {
+                "title": "Dictionnaire de la langue française, article « créole »",
+                "author": "Émile Littré",
+                "year": 1873,
+                "url": "https://www.littre.org/definition/cr%C3%A9ole",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Paris, Hachette, 1873-1877, avec le supplément. Lu dans l'édition en ligne du dictionnaire le 11 octobre 2026. Le sens 1 est « homme blanc, femme blanche originaire des colonies » ; l'étymologie juge douteuse l'origine de l'espagnol criollo.",
+                "page": "Étymologie"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom créole serait un mot caraïbe, selon d'autres auteurs que cite le dictionnaire de Littré sans les nommer.",
+            "hypothesisGroup": "origine du mot créole",
+            "sources": [
+              {
+                "title": "Dictionnaire de la langue française, article « créole »",
+                "author": "Émile Littré",
+                "year": 1873,
+                "url": "https://www.littre.org/definition/cr%C3%A9ole",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Paris, Hachette, 1873-1877, avec le supplément. Lu dans l'édition en ligne du dictionnaire le 11 octobre 2026. Le sens 1 est « homme blanc, femme blanche originaire des colonies » ; l'étymologie juge douteuse l'origine de l'espagnol criollo.",
+                "page": "Étymologie"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom créole serait un mot inventé par les conquérants espagnols des Indes occidentales, selon l'Académie espagnole, que cite le dictionnaire de Littré.",
+            "hypothesisGroup": "origine du mot créole",
+            "sources": [
+              {
+                "title": "Dictionnaire de la langue française, article « créole »",
+                "author": "Émile Littré",
+                "year": 1873,
+                "url": "https://www.littre.org/definition/cr%C3%A9ole",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Paris, Hachette, 1873-1877, avec le supplément. Lu dans l'édition en ligne du dictionnaire le 11 octobre 2026. Le sens 1 est « homme blanc, femme blanche originaire des colonies » ; l'étymologie juge douteuse l'origine de l'espagnol criollo.",
+                "page": "Étymologie"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom créole viendrait des Africains réduits en esclavage en Amérique : ils appelaient criollo leurs enfants nés aux Indes, pour les distinguer de ceux nés en Guinée, et les Espagnols leur auraient pris ce mot, selon l'historien Garcilaso de la Vega, que cite le supplément du dictionnaire de Littré.",
+            "hypothesisGroup": "origine du mot créole",
+            "sources": [
+              {
+                "title": "Dictionnaire de la langue française, article « créole »",
+                "author": "Émile Littré",
+                "year": 1873,
+                "url": "https://www.littre.org/definition/cr%C3%A9ole",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Paris, Hachette, 1873-1877, avec le supplément. Lu dans l'édition en ligne du dictionnaire le 11 octobre 2026. Le sens 1 est « homme blanc, femme blanche originaire des colonies » ; l'étymologie juge douteuse l'origine de l'espagnol criollo.",
+                "page": "Supplément, étymologie"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Population générale",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "La catégorie de la Constitution de 1968 qui réunit Créoles et Franco-Mauriciens.",
+        "usedIn": ["fra", "eng"],
+        "periodLabel": "Depuis 1968",
+        "accounts": [
+          {
+            "period": {
+              "from": 1968,
+              "to": null,
+              "label": "Depuis 1968"
+            },
+            "era": "modern",
+            "statement": "Le nom population générale est celui que la Constitution de 1968 donne à la quatrième communauté de Maurice, à côté des hindous, des musulmans et des Sino-Mauriciens : elle réunit les descendants des esclaves et les Blancs d'origine française ou anglaise, selon Catherine Servan-Schreiber.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "General History of Africa, X : Africa and Its Diasporas, ch. 6 : Mauritius, between Community Compartmentalisation and Cultural Melting Pots",
+                "author": "Catherine Servan-Schreiber",
+                "year": 2025,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000396047",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, édition anglaise publiée sous licence libre, lue dans l'exemplaire numérisé du volume.",
+                "page": "p. 358"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Créoles Mauriciens",

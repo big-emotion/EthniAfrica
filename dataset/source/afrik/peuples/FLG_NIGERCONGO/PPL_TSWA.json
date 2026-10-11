@@ -140,5 +140,164 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Tswa désigne un peuple du sud du Mozambique, surtout dans les provinces d'Inhambane et de Gaza, qui se nomme lui-même ainsi. D'autres noms existent : Tshwa, et Hlengwe pour un ensemble plus large. Les sources que nous avons lues ne proposent qu'une explication de chacun de ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Tswa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tsc",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent ; leur langue est le xitswa.",
+        "periodLabel": "Écrit dès 1912",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tswa désigne un peuple et sa langue, le xitswa, écrit aussi Tshwa, Shitshwa ou Sheetshwa, selon le catalogue Glottolog. Son origine n'a qu'une explication dans les sources que nous avons lues ; elle est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog — Tswa (tswa1255)",
+                "author": "Glottolog",
+                "year": 2026,
+                "url": "https://glottolog.org/resource/languoid/id/tswa1255",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 11 octobre 2026. Langue de code tsc, parlée au Mozambique, en Afrique du Sud et au Zimbabwe. Autres noms relevés dans le catalogue Multitree : Kitshwa, Sheetshwa, Shitshwa, Tshwa et Xitshwa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tswa apparaît, sous la forme Ba-Tswa, chez le missionnaire suisse Henri-Alexandre Junod, qui range « les Ba-Tswa d'Inhambane » parmi les clans du grand groupe hlengwe. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Ba-Tswa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18 et note",
+                "notes": "Neuchâtel, Attinger Frères, 1912, lu dans la numérisation d'Internet Archive le 11 octobre 2026. La page range dans le groupe hlengwe « The Ba-Tswa of Inhambane with the Hlenbengwane, Yingwane, Nkumbi ». La note écrit : « This name Ba-Tswa, is the Hlengwe form of Ba-Tjwa, a term by which the Zulu have been commonly designated amongst the Thonga. Ba-Tjwa is probably the corresponding form for Ba-Rwa, an appellation by which the Suto of the Zoutpansberg plains used to call the tribes of the mountains »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1914,
+              "to": 1914,
+              "label": "1914"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tswa désigne, chez Henri-Alexandre Junod, une branche du grand groupe hlengwe, entre le Limpopo et Inhambane. Parmi eux vivent des clans venus du pays kalanga, au sud de la Rhodésie, ajoute-t-il.",
+            "sources": [
+              {
+                "title": "The Condition of the Natives of South-East Africa in the Sixteenth Century, according to the Early Portuguese Documents",
+                "author": "Henri-Alexandre Junod",
+                "year": 1914,
+                "url": "https://archive.org/details/conditionofnativ00juno",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 15",
+                "notes": "Le Cap, South African Association for the Advancement of Science, 1914, 25 pages, lu dans la numérisation d'Internet Archive le 11 octobre 2026. La page écrit : « The Ba-Lengi, more commonly called Ba-Chopi (wrongly spelt \"M'chopes\" on certain maps); viz., \"those who are transfixed with weapons\" (as their country was the favourite hunting, or, rather, raiding ground of Gungunyana) ; they occupy the border of the sea in the southern part of the region ». Elle range aussi « the Ba-Tswa » dans le grand groupe hlengwe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Proposée en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tswa serait la forme hlengwe de Ba-Tjwa, le nom que les Thonga donnaient aux Zoulous, lui-même proche de Ba-Rwa, le nom que les Sotho donnaient aux gens des montagnes, selon Henri-Alexandre Junod. Les peuples, explique-t-il, nomment souvent leurs voisins d'après la direction où ils vivent.",
+            "hypothesisGroup": "origine du nom Tswa",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18 et note",
+                "notes": "Neuchâtel, Attinger Frères, 1912, lu dans la numérisation d'Internet Archive le 11 octobre 2026. La page range dans le groupe hlengwe « The Ba-Tswa of Inhambane with the Hlenbengwane, Yingwane, Nkumbi ». La note écrit : « This name Ba-Tswa, is the Hlengwe form of Ba-Tjwa, a term by which the Zulu have been commonly designated amongst the Thonga. Ba-Tjwa is probably the corresponding form for Ba-Rwa, an appellation by which the Suto of the Zoutpansberg plains used to call the tribes of the mountains »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Hlengwe",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un grand groupe de clans du sud du Mozambique, dont les Tswa font partie.",
+        "periodLabel": "Écrit dès 1912",
+        "accounts": [
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hlengwe désigne, chez Henri-Alexandre Junod, toute la population thonga de l'est et du nord-est, du Limpopo jusqu'à Inhambane. Junod note qu'il ne convient vraiment qu'aux clans du nord de cet ensemble, et le garde faute de mieux. C'est la plus ancienne trace de ce nom que le projet connaît. Le groupe existait déjà avant lui.",
+            "formAsWritten": "Hlengwe",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17-18",
+                "notes": "Neuchâtel, Attinger Frères, 1912, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 17 : « In the Djonga dialect, Hlengwe means wealth. I do not know if this be the etymology of the name ». Page 18 : le nom désigne toute la population thonga de l'est et du nord-est, du Limpopo à Inhambane et à la Sabie du Nord, mais « applies properly only to the Northern part of the Eastern clans »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Proposée en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hlengwe viendrait peut-être du mot qui veut dire « richesse » dans le parler djonga, selon Henri-Alexandre Junod, qui n'en est pas sûr lui-même.",
+            "hypothesisGroup": "origine du nom Hlengwe",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17-18",
+                "notes": "Neuchâtel, Attinger Frères, 1912, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 17 : « In the Djonga dialect, Hlengwe means wealth. I do not know if this be the etymology of the name ». Page 18 : le nom désigne toute la population thonga de l'est et du nord-est, du Limpopo à Inhambane et à la Sabie du Nord, mais « applies properly only to the Northern part of the Eastern clans »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

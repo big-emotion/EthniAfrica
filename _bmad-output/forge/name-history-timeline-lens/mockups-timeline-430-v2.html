@@ -1,0 +1,925 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Timeline du nom v2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Nunito+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #fbf7f2;
+        --bg-warm: #f5ede0;
+        --card: #fff;
+        --border: #e8dfd3;
+        --text: #2c2018;
+        --soft: #746557;
+        --muted: #9b8b7d;
+        --accent: #b4532a;
+        --accent-tint: #f3dccd;
+        --band-a: #fbf7f2;
+        --band-b: #f3eadb; /* alternating cream tones per period */
+        --display: "Fraunces", Georgia, serif;
+        --body: "Nunito Sans", system-ui, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #ece4d6;
+        color: var(--text);
+        font-family: var(--body);
+        font-size: 16px;
+        line-height: 1.45;
+      }
+      header.page {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px 16px 8px;
+      }
+      header.page h1 {
+        font-family: var(--display);
+        font-weight: 650;
+        font-size: 1.6rem;
+        margin: 0 0 6px;
+      }
+      header.page p {
+        margin: 4px 0;
+        color: var(--soft);
+        max-width: 75ch;
+      }
+      .warn {
+        display: inline-block;
+        background: #fff3c4;
+        border: 1px solid #e6cf6a;
+        color: #5b4a00;
+        border-radius: 8px;
+        padding: 6px 10px;
+        font-size: 0.85rem;
+        margin-top: 8px;
+      }
+      .real {
+        background: #dff0e6;
+        border-color: #8cc3a2;
+        color: #1f5135;
+      }
+      .phones {
+        max-width: 2300px;
+        margin: 0 auto;
+        padding: 16px;
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .phone {
+        width: 430px;
+        max-width: 100%;
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: 28px;
+        box-shadow: 0 10px 30px rgba(44, 32, 24, 0.12);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+      }
+      .phone .screen {
+        overflow-y: auto;
+        flex: 1;
+      }
+      .pad {
+        padding: 0 16px;
+      }
+      .badge {
+        margin: 10px 16px 0;
+        font-size: 0.72rem;
+        font-weight: 700;
+        border-radius: 6px;
+        padding: 2px 8px;
+        display: inline-block;
+      }
+      .badge.ill {
+        background: #fff3c4;
+        color: #5b4a00;
+      }
+      .badge.rl {
+        background: #dff0e6;
+        color: #1f5135;
+      }
+      .searchbar {
+        position: sticky;
+        top: 0;
+        background: var(--bg);
+        padding: 12px 16px 8px;
+        z-index: 3;
+        border-bottom: 1px solid var(--border);
+      }
+      .q {
+        border: 1px solid var(--border);
+        background: var(--card);
+        border-radius: 12px;
+        padding: 10px 12px;
+        color: var(--soft);
+      }
+      .lenses {
+        display: flex;
+        gap: 6px;
+        overflow-x: auto;
+        padding: 10px 0 2px;
+        scrollbar-width: none;
+      }
+      .lens {
+        flex: none;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 0 12px;
+        min-height: 36px;
+        display: flex;
+        align-items: center;
+        font-size: 0.85rem;
+        font-weight: 600;
+      }
+      .lens.on {
+        background: var(--accent-tint);
+        border-color: transparent;
+      }
+      .type {
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin: 16px 0 0;
+      }
+      h2.subject {
+        font-family: var(--display);
+        font-weight: 650;
+        font-size: 2rem;
+        margin: 2px 0 8px;
+      }
+      .summary {
+        font-size: 1.02rem;
+        margin: 0 0 14px;
+      }
+      .summary sup {
+        color: var(--accent);
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .names {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap;
+        margin: 0 0 10px;
+      }
+      .name {
+        font: inherit;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 4px 12px;
+        font-weight: 700;
+        font-size: 0.9rem;
+        background: var(--card);
+        cursor: pointer;
+        min-height: 40px;
+        color: var(--text);
+      }
+      .name small {
+        color: var(--soft);
+        font-weight: 600;
+        margin-left: 4px;
+      }
+      .name.on {
+        background: var(--text);
+        color: #fff;
+        border-color: var(--text);
+      }
+      .name.on small {
+        color: #e9dfd2;
+      }
+      .nameintro {
+        font-size: 0.9rem;
+        color: var(--soft);
+        margin: 0 0 10px;
+      }
+      .tools {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        margin: 4px 0 0;
+        padding-bottom: 10px;
+      }
+      .elsebtn {
+        font: inherit;
+        font-size: 0.82rem;
+        font-weight: 600;
+        border: 1px dashed #8a8f98;
+        color: var(--soft);
+        background: transparent;
+        border-radius: 999px;
+        padding: 6px 12px;
+        min-height: 40px;
+        cursor: pointer;
+      }
+      .elsebtn[aria-pressed="true"] {
+        background: #eef0f2;
+        border-style: solid;
+      }
+      .hint {
+        font-size: 0.85rem;
+        color: var(--soft);
+        font-weight: 600;
+      }
+      /* period bands: full-width background, vertical label on a left rail, dot on the line */
+      .band {
+        display: grid;
+        grid-template-columns: 44px 1fr;
+        position: relative;
+      }
+      .band:nth-child(odd) {
+        background: var(--band-a);
+      }
+      .band:nth-child(even) {
+        background: var(--band-b);
+      }
+      .rail {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding: 14px 0;
+      }
+      .rail::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 2px;
+        margin-left: -1px;
+        background: #d9cbb8;
+      }
+      .vlabel {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-family: var(--display);
+        font-weight: 650;
+        font-size: 0.82rem;
+        color: var(--soft);
+        background: inherit;
+        position: relative;
+        z-index: 1;
+        padding: 20px 0 6px;
+        white-space: nowrap;
+      }
+      .band:nth-child(odd) .vlabel {
+        background: var(--band-a);
+      }
+      .band:nth-child(even) .vlabel {
+        background: var(--band-b);
+      }
+      .dot {
+        position: absolute;
+        top: 14px;
+        left: 50%;
+        width: 12px;
+        height: 12px;
+        margin-left: -6px;
+        border-radius: 50%;
+        background: var(--accent);
+        z-index: 2;
+        box-shadow: 0 0 0 3px var(--bg);
+      }
+      .content {
+        padding: 12px 16px 14px 4px;
+      }
+      .row {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 10px 12px;
+        margin-bottom: 8px;
+      }
+      .row p {
+        margin: 0;
+        font-size: 0.95rem;
+      }
+      .row .who {
+        font-size: 0.8rem;
+        color: var(--soft);
+        margin-top: 4px;
+      }
+      sup.src {
+        cursor: pointer;
+        color: var(--accent);
+        font-weight: 700;
+        margin-left: 2px;
+      }
+      .hyphead {
+        font-size: 0.82rem;
+        font-weight: 700;
+        color: var(--soft);
+        margin: 0 0 6px;
+      }
+      .hyp {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+        margin-bottom: 8px;
+      }
+      .hyp.one {
+        grid-template-columns: 1fr;
+      }
+      .hyp .row {
+        margin: 0;
+      }
+      .converge {
+        font-size: 0.82rem;
+        color: var(--soft);
+        margin: 2px 0 8px;
+      }
+      .else {
+        border: 1px dashed #8a8f98;
+        background: #f4f5f6;
+        border-radius: 12px;
+        padding: 8px 10px;
+        font-size: 0.85rem;
+        color: #4b5058;
+        display: none;
+      }
+      .show-else .else {
+        display: block;
+      }
+      .end {
+        padding: 16px;
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+      .pop {
+        position: fixed;
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+        max-width: 420px;
+        margin: 0 auto;
+        background: var(--text);
+        color: #fff;
+        border-radius: 14px;
+        padding: 12px 14px;
+        font-size: 0.88rem;
+        display: none;
+        z-index: 9;
+      }
+      .pop.on {
+        display: block;
+      }
+      @media (max-width: 470px) {
+        .phone {
+          border-radius: 0;
+          border-left: 0;
+          border-right: 0;
+          height: auto;
+        }
+        .phones {
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="page">
+      <h1>Timeline du nom, v2 : cinq types de résultat</h1>
+      <p>
+        On garde une appellation à la fois, le « pendant ce temps, ailleurs » et
+        l'indication « on remonte le temps ». Ce qui change : un résumé court
+        sous le nom, les périodes écrites à la verticale, des bandes de fond
+        alternées en tons crème, et une seule couleur d'accent.
+      </p>
+      <span class="warn"
+        >⚠ Lingala, Mali, Peul : textes illustratifs, à sourcer.</span
+      >
+      <span class="warn real"
+        >✓ Traoré, Yamoussoukro : condensés des vraies fiches du corpus
+        (PAT_TRAORE, LOC_YAMOUSSOUKRO).</span
+      >
+    </header>
+    <main class="phones" id="phones"></main>
+    <div class="pop" id="pop" role="dialog" aria-live="polite"></div>
+    <script>
+      const CASES = [
+        {
+          id: "lingala",
+          type: "Langue",
+          subject: "Lingala",
+          real: false,
+          summary:
+            "Le nom lingala est celui que portent aujourd'hui la langue et ceux qui la parlent. Il n'a pas toujours existé : il est né au début du XXe siècle, à partir de plusieurs noms plus anciens. Les sources avancent plusieurs origines, que nous présentons plus bas.",
+          names: [
+            {
+              t: "Lingala",
+              k: "aujourd'hui",
+              intro: "Le nom actuel, et l'histoire qui y mène.",
+              periods: [
+                {
+                  zone: "Depuis 1960",
+                  rows: [
+                    {
+                      p: "Langue véhiculaire de Kinshasa et de Brazzaville, de l'armée et de la musique.",
+                      v: "Référence linguistique",
+                    },
+                  ],
+                  else: "En France, la Ve République vient de naître (1958).",
+                },
+                {
+                  zone: "Vers 1900–1905",
+                  rows: [
+                    {
+                      p: "Des missionnaires fixent par écrit le nom « lingala » (li- + ngala) pour une grammaire.",
+                      v: "Archive missionnaire",
+                      who: "Acteurs évoqués : missionnaires de Scheut",
+                    },
+                  ],
+                  else: "En France, la loi de séparation des Églises et de l'État est votée (1905).",
+                },
+                {
+                  zone: "Années 1880",
+                  hyp: "Que désigne « Bangala » ?",
+                  rows: [
+                    {
+                      p: "Le nom d'un peuple précis, autour de Makanza, sur le fleuve.",
+                      v: "Récit d'explorateur",
+                    },
+                    {
+                      p: "Une étiquette pour « les gens du fleuve », sans peuple derrière.",
+                      v: "Étude académique",
+                    },
+                  ],
+                  converge:
+                    "↳ Le parler de commerce dit « bangala » devient la base du lingala.",
+                  else: "En France, Jules Ferry rend l'école gratuite et obligatoire (1881–1882).",
+                },
+                {
+                  zone: "XVIIIe – XIXe s.",
+                  rows: [
+                    {
+                      p: "Bobangi, mangala, bangala : plusieurs parlers de commerce circulent d'un port à l'autre du fleuve.",
+                      v: "Tradition orale",
+                    },
+                  ],
+                  converge: "↳ Ils convergent vers une même langue de contact.",
+                  else: "En France, la Révolution renverse la monarchie (1789).",
+                },
+              ],
+            },
+            {
+              t: "Bangala",
+              k: "ancien",
+              intro: "Un nom ancien, absorbé dans « lingala ».",
+              periods: [
+                {
+                  zone: "Années 1880",
+                  rows: [
+                    {
+                      p: "Des Européens appellent « Bangala » les riverains du fleuve et leur parler.",
+                      v: "Récit d'explorateur",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        {
+          id: "mali",
+          type: "Pays",
+          subject: "Mali",
+          real: false,
+          summary:
+            "Le nom Mali est celui du pays depuis 1960. Il reprend le nom d'un empire, mais l'existence même de ce nom d'empire est discutée. À l'indépendance, ce territoire en avait porté d'autres, et plusieurs histoires s'y croisent. Les sources avancent plusieurs origines, que nous présentons plus bas.",
+          names: [
+            {
+              t: "Mali",
+              k: "aujourd'hui",
+              intro: "Le nom du pays, et ce qu'il reprend.",
+              periods: [
+                {
+                  zone: "22 sept. 1960",
+                  rows: [
+                    {
+                      p: "La République du Mali reprend le nom de l'ancien empire.",
+                      v: "Document officiel",
+                    },
+                  ],
+                  else: "En France, de Gaulle dirige la jeune Ve République.",
+                },
+                {
+                  zone: "1959 – 1960",
+                  rows: [
+                    {
+                      p: "Fédération du Mali : le Sénégal et le Soudan français s'unissent sous ce nom, puis se séparent.",
+                      v: "Archive",
+                    },
+                  ],
+                },
+                {
+                  zone: "XIVe siècle",
+                  rows: [
+                    {
+                      p: "Un voyageur maghrébin décrit « Malli » et sa cour.",
+                      v: "Récit de voyage",
+                    },
+                  ],
+                  else: "En Europe, la peste noire tue un tiers de la population (1347–1352).",
+                },
+                {
+                  zone: "XIIIe siècle",
+                  hyp: "D'où vient « Mali » ? Trois hypothèses",
+                  one: true,
+                  rows: [
+                    {
+                      p: "Une prononciation de « Manden » par des voisins, reprise par les auteurs arabes.",
+                      v: "Référence linguistique",
+                    },
+                    {
+                      p: "Le nom d'une ville, la capitale (Niani ?), étendu au royaume.",
+                      v: "Étude académique",
+                    },
+                    {
+                      p: "« Mali », l'hippopotame en bambara, animal lié à la lignée.",
+                      v: "Tradition orale",
+                    },
+                  ],
+                  else: "En France, Saint Louis règne.",
+                },
+                {
+                  zone: "XIe siècle",
+                  rows: [
+                    {
+                      p: "Un géographe andalou mentionne un royaume « Malal ». Est-ce le même nom ?",
+                      v: "Récit de géographe",
+                    },
+                  ],
+                  else: "En Angleterre, Guillaume le Conquérant débarque (1066).",
+                },
+              ],
+            },
+            {
+              t: "Soudan français",
+              k: "ancien",
+              intro: "Le nom colonial du territoire.",
+              periods: [
+                {
+                  zone: "1890 – 1958",
+                  rows: [
+                    {
+                      p: "Repris de l'arabe bilād as-sūdān, « le pays des Noirs ».",
+                      v: "Archive coloniale",
+                    },
+                  ],
+                  else: "En France, la tour Eiffel vient d'être inaugurée (1889).",
+                },
+              ],
+            },
+            {
+              t: "Manden",
+              k: "aujourd'hui",
+              intro: "Le nom que se donne le cœur du pays mandingue.",
+              periods: [
+                {
+                  zone: "XIIIe siècle",
+                  rows: [
+                    {
+                      p: "Le Manden, au temps de Soundiata Keïta.",
+                      v: "Tradition orale",
+                      who: "Acteur évoqué : Soundiata Keïta",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        {
+          id: "peul",
+          type: "Peuple",
+          subject: "Peul",
+          real: false,
+          summary:
+            "Le nom Peul est l'un des noms de ce peuple, qui se nomme lui-même Fulɓe. Chaque peuple voisin lui a donné le sien : Peul, Fulani, Fula, Fellata. Chacun de ces noms raconte une rencontre, et les sources ne s'accordent pas toujours. Nous les présentons plus bas.",
+          names: [
+            {
+              t: "Fulɓe",
+              k: "autonyme",
+              intro: "Le nom que le peuple se donne.",
+              periods: [
+                {
+                  zone: "Aujourd'hui",
+                  rows: [
+                    {
+                      p: "Pullo au singulier, Fulɓe au pluriel.",
+                      v: "Référence linguistique",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              t: "Peul",
+              k: "français",
+              intro: "Le nom français, venu du wolof.",
+              periods: [
+                {
+                  zone: "XVIIe – XIXe s.",
+                  hyp: "Comment « Peul » arrive-t-il en français ?",
+                  rows: [
+                    {
+                      p: "Des traders du comptoir de Saint-Louis reprennent le wolof « Pël ».",
+                      v: "Étude académique",
+                    },
+                    {
+                      p: "Le mot circule plus tôt, par des intermédiaires de la côte.",
+                      v: "Tradition orale",
+                    },
+                  ],
+                  else: "En France, Louis XIV règne à Versailles.",
+                },
+                {
+                  zone: "Avant le XVIe s.",
+                  rows: [
+                    {
+                      p: "Les Wolof appellent leurs voisins « Pël » : le nom naît d'une rencontre.",
+                      v: "Tradition orale",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              t: "Fulani",
+              k: "anglais",
+              intro: "Le nom haoussa, passé à l'anglais.",
+              periods: [
+                {
+                  zone: "Début XXe s.",
+                  rows: [
+                    {
+                      p: "L'administration britannique du Nigeria adopte « Fulani », le mot haoussa.",
+                      v: "Archive coloniale",
+                    },
+                  ],
+                  else: "En France, la loi de 1905 sépare les Églises et l'État.",
+                },
+              ],
+            },
+            {
+              t: "Fula",
+              k: "anglais",
+              intro: "Le nom mandingue.",
+              periods: [
+                {
+                  zone: "XIXe s.",
+                  rows: [
+                    {
+                      p: "« Fula » passe dans l'anglais de Gambie.",
+                      v: "Étude académique",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              t: "Fellata",
+              k: "ancien",
+              intro: "Le nom donné à l'est.",
+              periods: [
+                {
+                  zone: "Ancien",
+                  rows: [
+                    {
+                      p: "Le nom que leur donnent les Kanouri.",
+                      v: "Étude académique",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        {
+          id: "traore",
+          type: "Nom de famille",
+          subject: "Traoré",
+          real: true,
+          summary:
+            "Le nom Traoré est un nom de clan mandingue, un jamu. Il s'écrit aussi Tarawele ou Taraore. Aucun dictionnaire ne lui donne de sens : ce sont les griots et les chroniques qui racontent son origine, et leurs récits diffèrent. Nous les présentons plus bas.",
+          names: [
+            {
+              t: "Traoré",
+              k: "graphie courante",
+              intro:
+                "La graphie la plus répandue, et les récits qui la portent.",
+              periods: [
+                {
+                  zone: "Aujourd'hui",
+                  rows: [
+                    {
+                      p: "En pays wolof, un Traoré est reçu comme un frère par les Diop et peut prendre leur nom.",
+                      v: "Synthèse historique",
+                    },
+                  ],
+                },
+                {
+                  zone: "Temps de Soundiata",
+                  hyp: "D'où vient le nom ? Trois récits",
+                  one: true,
+                  rows: [
+                    {
+                      p: "D'une formule, « À taá dá wéele », rattachée à l'appel lancé à l'ancêtre Túraman.",
+                      v: "Chronique écrite",
+                    },
+                    {
+                      p: "De l'ancêtre Tiramagan, dont le nom serait un titre : magan, « roi », et sira.",
+                      v: "Reconstruction linguistique",
+                    },
+                    {
+                      p: "De deux frères Traoré dans l'épopée du buffle de Do, d'où viendrait aussi la séparation avec les Diabaté.",
+                      v: "Tradition orale, griot de Djeliba Koro",
+                    },
+                  ],
+                },
+                {
+                  zone: "XIIIe siècle",
+                  rows: [
+                    {
+                      p: "Tiramaghan Traoré, général de Soundiata, aurait conquis la Casamance et le Kaabu.",
+                      v: "Tradition orale, griots du Kaabu",
+                      who: "Acteur évoqué : Tiramaghan Traoré",
+                    },
+                  ],
+                  else: "En France, Saint Louis règne.",
+                },
+                {
+                  zone: "Avant l'empire",
+                  rows: [
+                    {
+                      p: "Des chasseurs du clan Traoré vivent dans le pays de Kiri et dans le futur Gangaran.",
+                      v: "Tradition orale",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              t: "Tarawele",
+              k: "mandingue",
+              intro: "La forme du dictionnaire des noms de clan.",
+              periods: [
+                {
+                  zone: "Aujourd'hui",
+                  rows: [
+                    {
+                      p: "Écrit Tàrawéle, défini seulement comme un nom de clan.",
+                      v: "Référence linguistique",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        {
+          id: "yakro",
+          type: "Lieu",
+          subject: "Yamoussoukro",
+          real: true,
+          summary:
+            "Le nom Yamoussoukro est celui de la capitale politique de la Côte d'Ivoire. Le village a d'abord porté un autre nom, N'Gokro. Les récits ne s'accordent ni sur la date ni sur les circonstances du changement. Nous les présentons plus bas.",
+          names: [
+            {
+              t: "Yamoussoukro",
+              k: "aujourd'hui",
+              intro:
+                "« Le village de Yamousso », du nom de la reine qui dirigeait le village.",
+              periods: [
+                {
+                  zone: "Depuis 1983",
+                  rows: [
+                    {
+                      p: "Capitale politique de la Côte d'Ivoire.",
+                      v: "Document officiel",
+                    },
+                  ],
+                },
+                {
+                  zone: "1904 ou 1909–1910",
+                  hyp: "Quand et pourquoi le village change-t-il de nom ?",
+                  one: true,
+                  rows: [
+                    {
+                      p: "En 1904, un administrateur français dit que le village doit porter le nom de la reine, l'aînée.",
+                      v: "Récit familial publié (F. Houphouët-Boigny)",
+                      who: "Acteur évoqué : l'administrateur Simon",
+                    },
+                    {
+                      p: "Après la révolte akouè de 1909, le poste est transféré à N'Gokro, rebaptisé en hommage à la reine.",
+                      v: "Mairie, Fondation Houphouët-Boigny",
+                    },
+                  ],
+                  else: "En France, la loi de séparation des Églises et de l'État est votée (1905).",
+                },
+                {
+                  zone: "Début XXe s.",
+                  rows: [
+                    {
+                      p: "Le prénom de la reine, Yaha M'so, aurait été confondu par un interprète avec « mousso », « femme ».",
+                      v: "Récit familial publié",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              t: "N'Gokro",
+              k: "ancien",
+              intro:
+                "Le premier nom, celui de Kouassi N'Goh, fils aîné des fondateurs.",
+              periods: [
+                {
+                  zone: "1848 ou années 1860",
+                  hyp: "Quand le village est-il fondé ?",
+                  rows: [
+                    {
+                      p: "En 1848, Koko Blé et Boigny N'Dri quittent Kami pour fonder N'Gokro.",
+                      v: "Porte-parole du chef de Kami",
+                    },
+                    {
+                      p: "Dans les années 1860, après le mariage de Boigny N'Dri avec une princesse de Kami.",
+                      v: "Presse locale, chercheur",
+                    },
+                  ],
+                  else: "En France, l'esclavage est aboli dans les colonies (1848).",
+                },
+              ],
+            },
+          ],
+        },
+      ];
+      const state = {};
+      const src = (v) =>
+        `<sup class="src" tabindex="0" data-v="${v}" aria-label="Voir les sources">◆</sup>`;
+      const row = (r) =>
+        `<div class="row"><p>${r.p}${src(r.v)}</p>${r.who ? `<div class="who">${r.who}</div>` : ""}</div>`;
+      function render(c) {
+        const s = (state[c.id] ??= { n: 0, els: false });
+        const nm = c.names[s.n];
+        const bands = nm.periods
+          .map(
+            (
+              p
+            ) => `<div class="band"><div class="rail"><span class="dot"></span><span class="vlabel">${p.zone}</span></div>
+    <div class="content">${p.hyp && p.rows.length > 1 ? `<p class="hyphead">${p.hyp}</p><div class="hyp ${p.one ? "one" : ""}">${p.rows.map(row).join("")}</div>` : p.rows.map(row).join("")}
+    ${p.converge ? `<p class="converge">${p.converge}</p>` : ""}${p.else ? `<div class="else">Pendant ce temps, ailleurs : ${p.else}</div>` : ""}</div></div>`
+          )
+          .join("");
+        return `<section class="phone" aria-label="${c.subject}"><div class="screen ${s.els ? "show-else" : ""}">
+   <div class="searchbar"><div class="q">🔍 ${c.subject}</div><div class="lenses"><span class="lens on">Timeline</span><span class="lens">Tout</span><span class="lens">Shorts</span><span class="lens">Récits</span><span class="lens">Jeux</span><span class="lens">Fiches</span></div></div>
+   <span class="badge ${c.real ? "rl" : "ill"}">${c.real ? "condensé d'une vraie fiche" : "texte illustratif"}</span>
+   <div class="pad"><p class="type">${c.type}</p><h2 class="subject">${c.subject}</h2>
+   <p class="summary">${c.summary}${src("Résumé de toutes les sources de la fiche")}</p>
+   <div class="names">${c.names.map((x, i) => `<button class="name ${i === s.n ? "on" : ""}" data-case="${c.id}" data-n="${i}">${x.t}<small>${x.k}</small></button>`).join("")}</div>
+   <p class="nameintro">${nm.intro}</p>
+   <div class="tools"><span class="hint">↓ on remonte le temps</span><button class="elsebtn" aria-pressed="${s.els}" data-else="${c.id}">Pendant ce temps, ailleurs</button></div></div>
+   <div class="bands">${bands}</div><p class="end">Fin de ce que nos recherches retracent pour ce nom.</p></div></section>`;
+      }
+      function draw() {
+        document.getElementById("phones").innerHTML =
+          CASES.map(render).join("");
+      }
+      document.addEventListener("click", (e) => {
+        const b = e.target.closest("button,sup.src"),
+          pop = document.getElementById("pop");
+        if (!b) {
+          pop.classList.remove("on");
+          return;
+        }
+        if (b.dataset.case) {
+          state[b.dataset.case].n = +b.dataset.n;
+          draw();
+        } else if (b.dataset.else) {
+          const s = state[b.dataset.else];
+          s.els = !s.els;
+          draw();
+        } else if (b.classList.contains("src")) {
+          pop.innerHTML = `<b>Sources de ce passage</b>Voix : ${b.dataset.v}<br><span style="opacity:.75">La référence complète (titre, auteur, lien ou témoin interrogé) s'afficherait ici.</span>`;
+          pop.classList.add("on");
+        }
+      });
+      draw();
+    </script>
+  </body>
+</html>

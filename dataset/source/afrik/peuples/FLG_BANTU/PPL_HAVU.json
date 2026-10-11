@@ -111,5 +111,84 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Havu désigne un peuple de l'est de la République démocratique du Congo, sur l'île d'Ijwi, dans le lac Kivu, et sur la rive ouest du lac, qui se nomme lui-même Bahavu. On ne sait pas avec certitude d'où vient ce nom ni quand il a été écrit pour la première fois ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Bahavu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "hav",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne le peuple de l'île d'Ijwi et de la rive ouest du lac Kivu.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom Bahavu désigne les habitants de l'île d'Ijwi et de la rive ouest du lac Kivu. Avec les Bashi et les Bafuliiru de la plaine de la Ruzizi, ils se donnaient une origine commune dans la région nyindu, à Lwindi, selon J. B. Webster, B. A. Ogot et J. P. Chrétien. Les sources que nous avons lues n'expliquent pas d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+                "author": "J. B. Webster, B. A. Ogot et J. P. Chrétien",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 890",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1600,
+              "label": "Avant le début du XVIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Bahavu figure dans le récit d'une guerre de succession au Rwanda : les Bashi, les Bahavu et les gens du Bugara en profitent pour tuer le roi Ndahiro Cyamatara et prendre son tambour, selon J. B. Webster, B. A. Ogot et J. P. Chrétien. Une nouvelle dynastie naît sans doute ensuite, au début du XVIIe siècle.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+                "author": "J. B. Webster, B. A. Ogot et J. P. Chrétien",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 889",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1894,
+              "to": 1894,
+              "label": "Juin 1894"
+            },
+            "statement": "On parle alors de l'île de Kwijwi, l'actuelle Ijwi, chez l'officier allemand Gustav Adolf von Götzen, qui la voit depuis le lac Kivu et note qu'une résidence du roi du Rwanda, Kigeri, s'y trouverait. Il ne nomme pas ses habitants.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Durch Afrika von Ost nach West : Resultate und Begebenheiten einer Reise von der Deutsch-Ostafrikanischen Küste bis zur Kongomündung in den Jahren 1893/94",
+                "author": "Gustav Adolf von Götzen",
+                "year": 1895,
+                "url": "https://archive.org/details/durchafrikavones00gtze",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 229",
+                "notes": "Berlin, Dietrich Reimer ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur écrit « Kwijwi »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
