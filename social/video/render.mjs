@@ -15,8 +15,11 @@ import {
   WIDTH,
   HEIGHT,
   VIEW_CENTRE,
+  RELIEF,
   frameState,
   project,
+  unproject,
+  tiltedCamera,
   captionLines,
   checkLayout,
 } from "./sequence.mjs";
@@ -35,6 +38,21 @@ const BROWSER_ARGS = ["--use-angle=swiftshader", "--enable-unsafe-swiftshader"];
 // Largest texture side SwiftShader accepts; the world mosaic is reduced to it.
 const MAX_TEXTURE = 8192;
 
+// Board 6's production height model, checked on 11 October 2026: NOAA NCEI
+// ETOPO 2022, 60 arc-seconds, public domain (CC0 1.0). Ocean depths are
+// clamped to sea level: the imagery already shows the sea floor.
+const HEIGHT_MODEL = {
+  file: "relief/ETOPO_2022_v1_60s_N90W180_surface.tif",
+  sha256: "9d27d4b8ea8e76977e2988bca667d7c8fa68b927355feffcddd6b4875a7fd08e",
+};
+const EARTH_RADIUS_M = 6371000;
+const WORLD_HEIGHTS = [2048, 1024];
+const MAX_REGION_HEIGHTS = 4096;
+// Draped overlays are drawn at 1.5 texture pixels per screen pixel at the
+// target, so their strokes stay sharp once the camera has landed.
+const DRAPE_SCALE = 1.5;
+const MAX_DRAPE = 4096;
+
 const sha256 = (bytes) => createHash("sha256").update(bytes).digest("hex");
 
 async function engineHash() {
@@ -46,39 +64,125 @@ async function engineHash() {
   return sha256(Buffer.concat(parts));
 }
 
-// Geographic bounds of everything the final camera shows, so the full
-// resolution crop covers the hold with a margin.
+// Geographic bounds of the map the final camera shows, so the full
+// resolution crop covers the hold with a margin. Rows under the title scrim
+// and the bottom veil are left out: a tilted view would otherwise reach the
+// horizon and spread the crop over ground nobody can read.
 function holdBounds(seq) {
-  const cam = seq.camera.at(-1);
-  const corners = [];
-  for (const x of [0, WIDTH / 2, WIDTH])
-    for (const y of [0, HEIGHT / 2, HEIGHT]) {
-      const nx = (x - VIEW_CENTRE.x) / cam.radius;
-      const ny = -(y - VIEW_CENTRE.y) / cam.radius;
-      const rho = Math.hypot(nx, ny);
-      if (rho >= 1) return [-180, 180, -90, 90];
-      const c = Math.asin(rho);
-      const p0 = (cam.lat * Math.PI) / 180;
-      const lat = Math.asin(
-        Math.cos(c) * Math.sin(p0) +
-          (rho ? (ny * Math.sin(c) * Math.cos(p0)) / rho : 0)
-      );
-      const lon =
-        (cam.lon * Math.PI) / 180 +
-        Math.atan2(
-          nx * Math.sin(c),
-          rho * Math.cos(c) * Math.cos(p0) - ny * Math.sin(c) * Math.sin(p0)
-        );
-      corners.push([(lon * 180) / Math.PI, (lat * 180) / Math.PI]);
+  const { camera } = frameState(seq, TOTAL_FRAMES - 1);
+  const hits = [];
+  for (let x = 0; x <= WIDTH; x += WIDTH / 12)
+    for (let y = 200; y <= 1300; y += 50) {
+      const ground = unproject(camera, x, y);
+      if (ground) hits.push(ground);
     }
-  const lons = corners.map((c) => c[0]);
-  const lats = corners.map((c) => c[1]);
+  if (!hits.length) return [-180, 180, -90, 90];
+  const lons = hits.map((g) => g.lon);
+  const lats = hits.map((g) => g.lat);
   return [
     Math.max(-180, Math.floor(Math.min(...lons)) - 2),
     Math.min(180, Math.ceil(Math.max(...lons)) + 2),
     Math.max(-90, Math.floor(Math.min(...lats)) - 2),
     Math.min(90, Math.ceil(Math.max(...lats)) + 2),
   ];
+}
+
+const exists = (p) =>
+  access(p).then(
+    () => true,
+    () => false
+  );
+
+async function heightGrid(source, file, size, crop) {
+  if (!(await exists(file))) {
+    let image = source().extractChannel(0);
+    if (crop) image = image.extract(crop);
+    image = image.resize(size[0], size[1], { kernel: "linear" });
+    const raw = await image.raw({ depth: "float" }).toBuffer();
+    await writeFile(file, raw);
+  }
+  const raw = await readFile(file);
+  return {
+    width: size[0],
+    height: size[1],
+    data: new Float32Array(raw.buffer, raw.byteOffset, raw.length / 4),
+  };
+}
+
+async function prepareRelief(bounds, assets) {
+  const path = join(assets, HEIGHT_MODEL.file);
+  const bytes = await readFile(path).catch(() => {
+    throw new Error(
+      `Verified relief height model is missing: ${HEIGHT_MODEL.file}`
+    );
+  });
+  if (sha256(bytes) !== HEIGHT_MODEL.sha256)
+    throw new Error(
+      `Relief height model differs from the verified one: ${HEIGHT_MODEL.file}`
+    );
+  const cache = join(assets, ".cache", HEIGHT_MODEL.sha256.slice(0, 16));
+  await mkdir(cache, { recursive: true });
+  const source = () => sharp(bytes, { limitInputPixels: false });
+  const { width, height } = await source().metadata();
+  const [lonMin, lonMax, latMin, latMax] = bounds;
+  const crop = {
+    left: Math.round(((lonMin + 180) / 360) * width),
+    top: Math.round(((90 - latMax) / 180) * height),
+    width: Math.round(((lonMax - lonMin) / 360) * width),
+    height: Math.round(((latMax - latMin) / 180) * height),
+  };
+  const fit = Math.min(
+    1,
+    MAX_REGION_HEIGHTS / Math.max(crop.width, crop.height)
+  );
+  const regionSize = [
+    Math.round(crop.width * fit),
+    Math.round(crop.height * fit),
+  ];
+  const world = await heightGrid(
+    source,
+    join(cache, "world.f32"),
+    WORLD_HEIGHTS
+  );
+  const region = await heightGrid(
+    source,
+    join(cache, `region_${bounds.join("_")}.f32`),
+    regionSize,
+    crop
+  );
+  return { hash: HEIGHT_MODEL.sha256, world, region };
+}
+
+// Bilinear height in metres, never below sea level; the same lookup the
+// page's shaders make, so names sit on the ground the mesh draws.
+function heightSampler(bounds, heights) {
+  const [lonMin, lonMax, latMin, latMax] = bounds;
+  const sample = (grid, u, v) => {
+    const x = Math.min(Math.max(u * grid.width - 0.5, 0), grid.width - 1);
+    const y = Math.min(Math.max(v * grid.height - 0.5, 0), grid.height - 1);
+    const [x0, y0] = [Math.floor(x), Math.floor(y)];
+    const [x1, y1] = [
+      Math.min(x0 + 1, grid.width - 1),
+      Math.min(y0 + 1, grid.height - 1),
+    ];
+    const at = (i, j) => grid.data[j * grid.width + i];
+    const [fx, fy] = [x - x0, y - y0];
+    const top = at(x0, y0) * (1 - fx) + at(x1, y0) * fx;
+    const bottom = at(x0, y1) * (1 - fx) + at(x1, y1) * fx;
+    return top * (1 - fy) + bottom * fy;
+  };
+  return (lon, lat) => {
+    const inside =
+      lon >= lonMin && lon <= lonMax && lat >= latMin && lat <= latMax;
+    const metres = inside
+      ? sample(
+          heights.region,
+          (lon - lonMin) / (lonMax - lonMin),
+          (latMax - lat) / (latMax - latMin)
+        )
+      : sample(heights.world, (lon + 180) / 360, (90 - lat) / 180);
+    return Math.max(metres, 0);
+  };
 }
 
 async function prepareImagery(seq, assets) {
@@ -100,11 +204,6 @@ async function prepareImagery(seq, assets) {
   const region = join(cache, `region_${key}.jpg`);
   await mkdir(cache, { recursive: true });
   const source = () => sharp(bytes, { limitInputPixels: false });
-  const exists = (p) =>
-    access(p).then(
-      () => true,
-      () => false
-    );
   if (!(await exists(world)))
     await source()
       .resize(MAX_TEXTURE, MAX_TEXTURE / 2)
@@ -134,11 +233,11 @@ async function prepareImagery(seq, assets) {
 const INKS = { a: "#e8b96a", b: "#6cc3b5", c: "#e3876a" };
 const WATER_INK = "#8fd3e6";
 
-function linePath(camera, coordinates, close = false) {
+function linePath(place, coordinates, close = false) {
   let d = "";
   let pen = false;
   for (const [lon, lat] of coordinates) {
-    const p = project(camera, lon, lat);
+    const p = place(lon, lat);
     if (!p.visible) {
       pen = false;
       continue;
@@ -178,18 +277,79 @@ function labelStyle(f) {
   return f.kind === "area" ? "area" : "water";
 }
 
-function payload(seq, frame) {
+// The relief's light comes from the north-west of the hold target, low,
+// with a soft fill (board 6). It is fixed for the whole video so shadows
+// never suggest a time of day. Flat ground keeps the flat style's exposure.
+const AMBIENT = 0.62;
+function reliefLight(seq) {
+  const { lon, lat } = seq.camera.at(-1);
+  const [l, p] = [(lon * Math.PI) / 180, (lat * Math.PI) / 180];
+  const up = [
+    Math.cos(p) * Math.sin(l),
+    Math.sin(p),
+    Math.cos(p) * Math.cos(l),
+  ];
+  const east = [Math.cos(l), 0, -Math.sin(l)];
+  const north = [
+    -Math.sin(p) * Math.sin(l),
+    Math.cos(p),
+    -Math.sin(p) * Math.cos(l),
+  ];
+  const raw = up.map((u, i) => -east[i] + 1.1 * north[i] + 0.5 * u);
+  const length = Math.hypot(...raw);
+  const light = raw.map((v) => v / length);
+  const facing = light.reduce((sum, v, i) => sum + v * up[i], 0);
+  return { light, ambient: AMBIENT, sun: (1 - AMBIENT) / facing };
+}
+
+// Draped overlays live in the region's own map: longitude scaled by the
+// cosine of the middle latitude, in screen pixels of the hold.
+function drapeFrame(seq, bounds) {
+  const [lonMin, lonMax, latMin, latMax] = bounds;
+  const ppd = (seq.camera.at(-1).radius * Math.PI) / 180;
+  const cosLat = Math.cos((((latMin + latMax) / 2) * Math.PI) / 180);
+  const width = (lonMax - lonMin) * cosLat * ppd;
+  const height = (latMax - latMin) * ppd;
+  return {
+    width,
+    height,
+    scale: Math.min(DRAPE_SCALE, MAX_DRAPE / Math.max(width, height)),
+    place: (lon, lat) => ({
+      x: (lon - lonMin) * cosLat * ppd,
+      y: (latMax - lat) * ppd,
+      visible: true,
+    }),
+  };
+}
+
+function payload(seq, frame, relief) {
   const state = frameState(seq, frame);
   const { camera } = state;
   const of = (kind) => seq.features.filter((f) => f.kind === kind);
+  const raise = (lon, lat) =>
+    (relief.heightAt(lon, lat) * RELIEF.exaggeration) / EARTH_RADIUS_M;
+  const place = relief
+    ? (lon, lat) => project(camera, lon, lat, raise(lon, lat))
+    : (lon, lat) => project(camera, lon, lat);
+  const draw = relief ? relief.drape.place : place;
   return {
     centre: VIEW_CENTRE,
     camera,
     grade: state.grade,
     demo: !!seq.demo,
+    relief: relief && {
+      view: tiltedCamera(camera),
+      exaggeration: RELIEF.exaggeration,
+      ...relief.light,
+      drape: {
+        width: relief.drape.width,
+        height: relief.drape.height,
+        scale: relief.drape.scale,
+      },
+    },
     areas: of("area").map((f) => ({
       d: rings(f.geometry)
-        .map((ring) => linePath(camera, ring, true))
+        .map((ring) => linePath(draw, ring, true))
         .join(""),
       ink: f.ink,
       uncertain: f.certainty === "uncertain",
@@ -197,13 +357,13 @@ function payload(seq, frame) {
     })),
     borders: of("border").map((f) => ({
       d: lines(f.geometry)
-        .map((line) => linePath(camera, line))
+        .map((line) => linePath(draw, line))
         .join(""),
       strong: f.strength === "strong",
       opacity: state.features[f.id].opacity,
     })),
     rivers: of("river").map((f) => ({
-      d: linePath(camera, f.geometry.coordinates),
+      d: linePath(draw, f.geometry.coordinates),
       state: state.features[f.id],
     })),
     labels: seq.features
@@ -213,19 +373,19 @@ function payload(seq, frame) {
         style: labelStyle(f),
         colour: f.kind === "area" ? INKS[f.ink] : null,
         opacity: state.labels[f.id],
-        ...project(camera, ...f.labelAt),
+        ...place(...f.labelAt),
       })),
     names: (seq.names ?? []).map((n) => ({
       name: n.name,
       style: n.kind,
       opacity: state.names[n.name],
-      ...project(camera, n.lon, n.lat),
+      ...place(n.lon, n.lat),
     })),
     places: (seq.places ?? []).map((p) => ({
       name: p.name,
       side: p.side,
       opacity: state.places[p.name],
-      ...project(camera, p.lon, p.lat),
+      ...place(p.lon, p.lat),
     })),
     title: titleParts(seq),
     legend: seq.legend.map((item, i) => {
@@ -265,6 +425,33 @@ async function openRenderer(seq, assets) {
       ],
     ],
   ]);
+  let relief = null;
+  if (seq.style === "relief") {
+    const heights = await prepareRelief(imagery.bounds, assets);
+    for (const key of ["world", "region"])
+      routes.set(`/relief/${key}.f32`, [
+        "application/octet-stream",
+        Buffer.from(
+          heights[key].data.buffer,
+          heights[key].data.byteOffset,
+          heights[key].data.byteLength
+        ),
+      ]);
+    const ppd = (seq.camera.at(-1).radius * Math.PI) / 180;
+    relief = {
+      hash: heights.hash,
+      heightAt: heightSampler(imagery.bounds, heights),
+      light: reliefLight(seq),
+      drape: drapeFrame(seq, imagery.bounds),
+      setup: {
+        world: [heights.world.width, heights.world.height],
+        region: [heights.region.width, heights.region.height],
+        // About three screen pixels per mesh cell at the hold.
+        meshStep: 3 / ppd,
+        exaggeration: RELIEF.exaggeration,
+      },
+    };
+  }
   for (const f of FONTS)
     routes.set(`/fonts/${f}`, [
       "font/ttf",
@@ -292,15 +479,15 @@ async function openRenderer(seq, assets) {
     });
     await page.goto("http://ethnia.test/");
     const fonts = await page.evaluate(
-      (bounds) => window.setup(bounds),
-      imagery.bounds
+      ([bounds, reliefSetup]) => window.setup(bounds, reliefSetup),
+      [imagery.bounds, relief?.setup ?? null]
     );
     if (fonts.some((f) => f.status !== "loaded"))
       throw new Error("A required font is not loaded");
     const render = async (frame) => {
       const boxes = await page.evaluate(
         (f) => window.drawFrame(f),
-        payload(seq, frame)
+        payload(seq, frame, relief)
       );
       if (frame === TOTAL_FRAMES - 1) {
         const problems = checkLayout({ elements: boxes });
@@ -314,6 +501,7 @@ async function openRenderer(seq, assets) {
       close: () => browser.close(),
       runtime: { playwright: runtime.playwright, chromium: browser.version() },
       imageryHash: imagery.imageryHash,
+      reliefHash: relief?.hash ?? null,
     };
   } catch (error) {
     await browser.close();
@@ -407,6 +595,7 @@ export async function encodeVideo(seq, outDir, { assets }) {
     hashes: {
       sequence: sha256(JSON.stringify(seq)),
       imagery: renderer.imageryHash,
+      relief: renderer.reliefHash,
       engine: await engineHash(),
       video: sha256(await readFile(file)),
     },

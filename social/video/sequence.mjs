@@ -9,7 +9,10 @@ export const HEIGHT = 1920;
 export const SAFE_ZONE = { x: 120, y: 270, w: 840, h: 978 };
 export const BUTTON_COLUMN = { x: 780, y: 840, w: 180, h: 408 };
 export const MAP_WINDOW = { x: 120, y: 440, w: 840, h: 494 };
-const RELIEF_EXAGGERATION = 90;
+// Board 6: a camera pitched 58° above the horizon with a 40° field of
+// view, heights exaggerated about 90 times. Only the camera moves: it tilts
+// from straight down between 3 and 6 s; the relief itself never changes.
+export const RELIEF = { exaggeration: 90, pitch: 58, fov: 40, tiltStart: 3 };
 
 // Only sources whose licence was checked on 11 October 2026
 // (video-design-checks-2026-10-11.json) may be drawn.
@@ -53,6 +56,7 @@ function cubicBezier(x1, y1, x2, y2) {
 
 const enter = cubicBezier(0.2, 0, 0, 1);
 const symmetric = cubicBezier(0.45, 0, 0.55, 1);
+const descent = cubicBezier(0.45, 0, 0.15, 1);
 const span = (t, start, duration, ease) => ease((t - start) / duration);
 
 // The river timing is fitted to the accepted key frames: at 8 s the core is
@@ -306,8 +310,14 @@ export function frameState(seq, frame) {
   for (const p of seq.places ?? []) places[p.name] = nameOpacity;
   const names = {};
   for (const n of seq.names ?? []) names[n.name] = nameOpacity;
+  const camera = cameraAt(seq, t);
+  if (seq.style === "relief")
+    camera.pitch =
+      90 -
+      (90 - RELIEF.pitch) *
+        span(t, RELIEF.tiltStart, TIMING.cameraEnd - RELIEF.tiltStart, descent);
   return {
-    camera: cameraAt(seq, t),
+    camera,
     grade: span(t, TIMING.gradeStart, TIMING.gradeDuration, symmetric),
     features,
     labels,
@@ -319,7 +329,7 @@ export function frameState(seq, frame) {
     }),
     text: { signature: 1, title: 1, caption: 1 },
     relief:
-      seq.style === "relief" ? { exaggeration: RELIEF_EXAGGERATION } : null,
+      seq.style === "relief" ? { exaggeration: RELIEF.exaggeration } : null,
   };
 }
 
@@ -338,22 +348,118 @@ function thresholdProgress() {
   return threshold;
 }
 
-// Orthographic projection, as in the design's render.py: `radius` is the
-// globe's radius in export pixels around a fixed view centre.
+// Two cameras share one convention: `radius` is the globe's scale in export
+// pixels per Earth radius at the target, which sits at a fixed view centre.
+// The flat style is orthographic, as in the design's render.py. A camera with
+// a `pitch` is the relief's perspective camera, looking north; looking
+// straight down it matches the orthographic globe near the target.
 export const VIEW_CENTRE = { x: 540, y: 690 };
-export function project(camera, lon, lat) {
-  const [l, p] = [toRad(lon - camera.lon), toRad(lat)];
-  const p0 = toRad(camera.lat);
-  const cosC =
-    Math.sin(p0) * Math.sin(p) + Math.cos(p0) * Math.cos(p) * Math.cos(l);
-  const x = Math.cos(p) * Math.sin(l);
-  const y =
-    Math.cos(p0) * Math.sin(p) - Math.sin(p0) * Math.cos(p) * Math.cos(l);
+
+const dot = (a, b) => a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
+const cross = (a, b) => [
+  a[1] * b[2] - a[2] * b[1],
+  a[2] * b[0] - a[0] * b[2],
+  a[0] * b[1] - a[1] * b[0],
+];
+const surface = (lon, lat) => {
+  const [l, p] = [toRad(lon), toRad(lat)];
+  return [Math.cos(p) * Math.sin(l), Math.sin(p), Math.cos(p) * Math.cos(l)];
+};
+
+// Positions are in Earth radii, with the globe's centre at the origin.
+export function tiltedCamera(camera) {
+  const [l, p, pitch] = [
+    toRad(camera.lon),
+    toRad(camera.lat),
+    toRad(camera.pitch),
+  ];
+  const up = surface(camera.lon, camera.lat);
+  const north = [
+    -Math.sin(p) * Math.sin(l),
+    Math.cos(p),
+    -Math.sin(p) * Math.cos(l),
+  ];
+  const focal = HEIGHT / 2 / Math.tan(toRad(RELIEF.fov / 2));
+  const distance = focal / camera.radius;
+  const [s, c] = [Math.sin(pitch), Math.cos(pitch)];
+  const forward = up.map((u, i) => north[i] * c - u * s);
+  const screenUp = up.map((u, i) => u * c + north[i] * s);
   return {
-    x: VIEW_CENTRE.x + camera.radius * x,
-    y: VIEW_CENTRE.y - camera.radius * y,
-    visible: cosC > 0,
+    focal,
+    position: up.map((u, i) => u - distance * forward[i]),
+    forward,
+    screenUp,
+    right: cross(forward, screenUp),
   };
+}
+
+// `height` raises the point above sea level, in Earth radii (relief only).
+export function project(camera, lon, lat, height = 0) {
+  if (camera.pitch === undefined) {
+    const [l, p] = [toRad(lon - camera.lon), toRad(lat)];
+    const p0 = toRad(camera.lat);
+    const cosC =
+      Math.sin(p0) * Math.sin(p) + Math.cos(p0) * Math.cos(p) * Math.cos(l);
+    const x = Math.cos(p) * Math.sin(l);
+    const y =
+      Math.cos(p0) * Math.sin(p) - Math.sin(p0) * Math.cos(p) * Math.cos(l);
+    return {
+      x: VIEW_CENTRE.x + camera.radius * x,
+      y: VIEW_CENTRE.y - camera.radius * y,
+      visible: cosC > 0,
+    };
+  }
+  const cam = tiltedCamera(camera);
+  const normal = surface(lon, lat);
+  const point = normal.map((n) => n * (1 + height));
+  const view = point.map((v, i) => v - cam.position[i]);
+  const depth = dot(view, cam.forward);
+  return {
+    x: VIEW_CENTRE.x + (cam.focal * dot(view, cam.right)) / depth,
+    y: VIEW_CENTRE.y - (cam.focal * dot(view, cam.screenUp)) / depth,
+    visible: depth > 0 && dot(normal, view) < 0,
+  };
+}
+
+// The sea-level ground under a screen point, or null when it shows space.
+export function unproject(camera, x, y) {
+  const toDegrees = ([px, py, pz]) => ({
+    lon: (Math.atan2(px, pz) * 180) / Math.PI,
+    lat: (Math.asin(Math.max(-1, Math.min(1, py))) * 180) / Math.PI,
+  });
+  if (camera.pitch === undefined) {
+    const nx = (x - VIEW_CENTRE.x) / camera.radius;
+    const ny = -(y - VIEW_CENTRE.y) / camera.radius;
+    const rho = Math.hypot(nx, ny);
+    if (rho >= 1) return null;
+    const up = surface(camera.lon, camera.lat);
+    const p = toRad(camera.lat);
+    const l = toRad(camera.lon);
+    const east = [Math.cos(l), 0, -Math.sin(l)];
+    const north = [
+      -Math.sin(p) * Math.sin(l),
+      Math.cos(p),
+      -Math.sin(p) * Math.cos(l),
+    ];
+    const depth = Math.sqrt(1 - rho * rho);
+    return toDegrees(
+      up.map((u, i) => u * depth + east[i] * nx + north[i] * ny)
+    );
+  }
+  const cam = tiltedCamera(camera);
+  const ray = cam.forward.map(
+    (f, i) =>
+      f +
+      (cam.right[i] * (x - VIEW_CENTRE.x)) / cam.focal -
+      (cam.screenUp[i] * (y - VIEW_CENTRE.y)) / cam.focal
+  );
+  const length = Math.hypot(...ray);
+  const dir = ray.map((r) => r / length);
+  const b = dot(cam.position, dir);
+  const disc = b * b - (dot(cam.position, cam.position) - 1);
+  if (disc < 0) return null;
+  const t = -b - Math.sqrt(disc);
+  return toDegrees(cam.position.map((c, i) => c + t * dir[i]));
 }
 
 export function captionLines(seq) {
@@ -384,7 +490,7 @@ const textBox = (text, size, ratio, lineHeight) => {
 };
 
 export function holdLayout(seq) {
-  const camera = cameraAt(seq, TOTAL_FRAMES / FPS);
+  const { camera } = frameState(seq, TOTAL_FRAMES - 1);
   const elements = [
     {
       id: "signature",
