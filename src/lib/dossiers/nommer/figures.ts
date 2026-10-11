@@ -76,7 +76,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // retired-identifiers ledger.
     // 740 -> 716 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
     // into their keepers.
-    value: 716,
+    // 716 -> 711 on 2026-10-11: five duplicate people fiches of wave 6 folded into their keepers; none of their statuses was carried.
+    value: 711,
     method: `nombre de fichiers ${PEOPLE_GLOB}`,
     countedOn: COUNTED_ON,
   },
@@ -102,7 +103,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // carried over (« Calanga » to the Kalanga).
     // 2960 -> 2958 on 2026-10-11: PPL_KABYE gave up « Lokpa » and « Lukpa »,
     // the names of another people with a language of its own (Glottolog lukp1238).
-    value: 2958,
+    // 2958 -> 2935 on 2026-10-11: five duplicate people fiches of wave 6 folded into their keepers.
+    value: 2935,
     method:
       "somme de content.appellations.exonyms.length sur les fiches de peuple",
     countedOn: COUNTED_ON,
@@ -126,7 +128,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // keepers.
     // 728 -> 704 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
     // into their keepers.
-    value: 704,
+    // 704 -> 699 on 2026-10-11: five duplicate people fiches of wave 6 folded into their keepers.
+    value: 699,
     method:
       "fiches dont content.appellations.selfAppellation est renseigné et non vide",
     countedOn: COUNTED_ON,
@@ -150,9 +153,10 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // keepers; none of their statuses was carried.
     // 422 -> 404 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
     // into their keepers; none of their statuses was carried.
-    value: 404,
+    // 404 -> 399 on 2026-10-11: five duplicate people fiches of wave 6 folded into their keepers; none of their statuses was carried.
+    value: 399,
     method:
-      "fiches dont classificationStatus vaut contested (237) ou colonial-legacy (167)",
+      "fiches dont classificationStatus vaut contested (234) ou colonial-legacy (165)",
     countedOn: COUNTED_ON,
   },
   "status-other": {
@@ -193,7 +197,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // keepers.
     // 221 -> 213 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
     // into their keepers.
-    value: 213,
+    // 213 -> 212 on 2026-10-11: five duplicate people fiches of wave 6 folded into their keepers.
+    value: 212,
     method: "radical colonial dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -219,7 +224,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // keepers.
     // 175 -> 169 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
     // into their keepers.
-    value: 169,
+    // 169 -> 167 on 2026-10-11: five duplicate people fiches of wave 6 folded into their keepers.
+    value: 167,
     method: "radical administr dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -240,7 +246,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // keepers.
     // 118 -> 115 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
     // into their keepers.
-    value: 115,
+    // 115 -> 112 on 2026-10-11: five duplicate people fiches of wave 6 folded into their keepers.
+    value: 112,
     method: "radical europ dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -256,7 +263,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // keepers.
     // 112 -> 108 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
     // into their keepers.
-    value: 108,
+    // 108 -> 109 on 2026-10-11: five duplicate people fiches of wave 6 folded into their keepers.
+    value: 109,
     method: "radical voisin dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -268,7 +276,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // keepers.
     // 79 -> 70 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
     // into their keepers.
-    value: 70,
+    // 70 -> 68 on 2026-10-11: five duplicate people fiches of wave 6 folded into their keepers.
+    value: 68,
     method: "radical portugais dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -295,7 +304,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 72 -> 71 on 2026-10-11: PPL_KIRDI dropped its unsourced etymologies, the Arabic one included.
     // 71 -> 68 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
     // into their keepers.
-    value: 68,
+    // 68 -> 67 on 2026-10-11: five duplicate people fiches of wave 6 folded into their keepers.
+    value: 67,
     method: "radical arab dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -397,7 +407,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "patronyme-fiches",
     label: "fiches de nom",
-    value: 625,
+    // 625 -> 621 on 2026-10-11: ten duplicate family-name fiches of wave 7 folded into their keepers; PAT_MAHAMAT now cites a source of its own.
+    value: 621,
     method:
       "fiches dataset/source/afrik/patronymes/PAT_*.json portant un nameSystem et " +
       "au moins une source autre que la file d'attente des candidats — les fiches " +
@@ -409,7 +420,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     kind: "counted",
     figureKey: "patronyme-non-hereditary",
     label: "fiches sur des noms qui ne se transmettent pas à l’identique",
-    value: 176,
+    // 176 -> 173 on 2026-10-11: ten duplicate family-name fiches of wave 7 folded into their keepers; PAT_MAHAMAT now cites a source of its own.
+    value: 173,
     method:
       "fiches de nom recherchées dont transmissionMode vaut non_hereditary, au " +
       "même périmètre que le compte ci-dessus",

@@ -125,5 +125,184 @@
       "fieldPath": "homonyms",
       "reason": "Les formes Compaoré/Compaore et l'hypothèse locale Savadogo ont été comparées ; la seconde est une ancienne désignation supposée, non une lignée homonyme établie."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Compaoré est un nom de lignage des Mossi du Burkina Faso. On l'écrit aussi Compaore. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Compaoré",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mos",
+        "namedBy": null,
+        "shortLine": "Un nom de lignage mossi du Burkina Faso ; son origine reste discutée.",
+        "periodLabel": "Écrit dès 1979 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Compaoré figure parmi les exemples de noms de famille mossi que cite la Société internationale de linguistique. Chez les Mossi, un tel nom désigne un buudu, un groupe de descendance par les pères, selon Michel Izard.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Noms des Kasena",
+                "author": "Urs et Idda Niggli",
+                "year": 2008,
+                "url": "https://sil-burkina.org/sites/default/files/Noms%20des%20Kassena.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 42",
+                "notes": "Société internationale de linguistique, Ouagadougou, 2008. Lu le 11 octobre 2026. La section 6.4, « Exemples de noms de famille moose », cite Compaoré, sans en donner l'origine."
+              },
+              {
+                "title": "La Lance et les guenilles",
+                "author": "Michel Izard",
+                "year": 1973,
+                "url": "https://www.persee.fr/doc/hom_0439-4216_1973_num_13_3_367368?pageId=T1_141",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 141",
+                "notes": "L'Homme, 13(3), 1973, p. 139-149. Lu le 11 octobre 2026. Le buudu mossi y est défini comme un groupe de descendance par les pères, identifié notamment par son nom collectif, le sondre. L'article ne cite aucun nom de lignage en particulier."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Compaoré désigne un lignage mossi. Les sources lues en donnent deux explications ; nous les présentons séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel du Burkina Faso",
+                "year": null,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 42-43",
+                "notes": "Document de travail daté de mai 2025 et marqué « version provisoire », sans validation finale visible, lu le 11 octobre 2026 sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle de ce répertoire n'a été trouvée. Notice COMPAORE (n° 231) : la formule en mooré « Naam toin paoga neba taaba la ka toin poag Naba Oubri biig yé », traduite « certaines personnes peuvent rater la chefferie mais pas les descendants de Naba Oubri », puis le récit d'ancêtres retenus par le chef d'un village. La notice ne cite pas ses sources."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1500,
+              "label": "Vers 1500, selon l'auteur"
+            },
+            "era": "polity",
+            "statement": "Le nom Compaoré est celui du lignage de Niaogo, en pays bissa, dont l'installation remonterait aux environs de 1500. Jean-Paul Lahuec le déduit de la tradition recueillie sur place, d'une liste de 32 chefs et de la référence à Naba Oubri.",
+            "actors": [
+              {
+                "name": "Naba Oubri",
+                "role": "souverain mossi cité par la tradition"
+              }
+            ],
+            "sources": [
+              {
+                "title": "La mobilité du peuplement bissa et mossi",
+                "author": "Jean-Paul Lahuec et Jean-Yves Marchal",
+                "year": 1979,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/pt5/travaux_d/21153.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 27 ; p. 34",
+                "notes": "Paris, ORSTOM, Travaux et documents n° 103, 1979 ; première partie de Jean-Paul Lahuec. Lu dans le PDF intégral le 11 octobre 2026. Page 27 : « Les habitants de Niaogo, les Compaoré, sont originaires de Guiéri », avec la note « Patronyme mossi encore couramment usité entre Manga et Ouagadougou ». Page 34 : la tradition recueillie, une liste de 32 chefs et la référence à Naba Oubri font « envisager une implantation vers 1500 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1979,
+              "to": 1979,
+              "label": "1979"
+            },
+            "era": "modern",
+            "statement": "Le nom Compaoré apparaît par écrit chez Jean-Paul Lahuec, qui étudie le peuplement du pays bissa : les habitants de Niaogo sont des Compaoré venus de Guiéri, près de Manga. Il le dit « patronyme mossi encore couramment usité entre Manga et Ouagadougou ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est porté.",
+            "formAsWritten": "Compaoré",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Jean-Paul Lahuec",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "La mobilité du peuplement bissa et mossi",
+                "author": "Jean-Paul Lahuec et Jean-Yves Marchal",
+                "year": 1979,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/pt5/travaux_d/21153.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 27 ; p. 34",
+                "notes": "Paris, ORSTOM, Travaux et documents n° 103, 1979 ; première partie de Jean-Paul Lahuec. Lu dans le PDF intégral le 11 octobre 2026. Page 27 : « Les habitants de Niaogo, les Compaoré, sont originaires de Guiéri », avec la note « Patronyme mossi encore couramment usité entre Manga et Ouagadougou ». Page 34 : la tradition recueillie, une liste de 32 chefs et la référence à Naba Oubri font « envisager une implantation vers 1500 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Proposé en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Compaoré voudrait dire, en mooré, « certaines personnes peuvent rater la chefferie, mais pas les descendants de Naba Oubri », selon le projet de répertoire des patronymes du Burkina Faso.",
+            "hypothesisGroup": "origine du nom Compaoré",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel du Burkina Faso",
+                "year": null,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 42-43",
+                "notes": "Document de travail daté de mai 2025 et marqué « version provisoire », sans validation finale visible, lu le 11 octobre 2026 sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle de ce répertoire n'a été trouvée. Notice COMPAORE (n° 231) : la formule en mooré « Naam toin paoga neba taaba la ka toin poag Naba Oubri biig yé », traduite « certaines personnes peuvent rater la chefferie mais pas les descendants de Naba Oubri », puis le récit d'ancêtres retenus par le chef d'un village. La notice ne cite pas ses sources."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Rapporté en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Compaoré aurait été donné par les habitants d'un village à des ancêtres que leur chef avait retenus en promettant que rien ne leur manquerait, selon le projet de répertoire des patronymes du Burkina Faso.",
+            "hypothesisGroup": "origine du nom Compaoré",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel du Burkina Faso",
+                "year": null,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 42-43",
+                "notes": "Document de travail daté de mai 2025 et marqué « version provisoire », sans validation finale visible, lu le 11 octobre 2026 sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle de ce répertoire n'a été trouvée. Notice COMPAORE (n° 231) : la formule en mooré « Naam toin paoga neba taaba la ka toin poag Naba Oubri biig yé », traduite « certaines personnes peuvent rater la chefferie mais pas les descendants de Naba Oubri », puis le récit d'ancêtres retenus par le chef d'un village. La notice ne cite pas ses sources."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Compaore",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mos",
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": []
+      }
+    ]
+  }
 }

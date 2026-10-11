@@ -12,7 +12,9 @@
       "spelling": "Cissé",
       "attestations": [
         { "countryId": "SEN", "sourceRefs": ["afrik-candidate-queue"] },
-        { "countryId": "MLI", "sourceRefs": ["afrik-candidate-queue"] }
+        { "countryId": "MLI", "sourceRefs": ["afrik-candidate-queue"] },
+        { "countryId": "GMB", "sourceRefs": ["afrik-candidate-queue"] },
+        { "countryId": "SLE", "sourceRefs": ["afrik-candidate-queue"] }
       ]
     },
     {
@@ -26,6 +28,18 @@
       "spelling": "Sisse",
       "attestations": [
         { "countryId": "SEN", "sourceRefs": ["afrik-candidate-queue"] }
+      ]
+    },
+    {
+      "spelling": "Ceesay",
+      "attestations": [
+        { "countryId": "GMB", "sourceRefs": ["afrik-candidate-queue"] }
+      ]
+    },
+    {
+      "spelling": "Sesay",
+      "attestations": [
+        { "countryId": "SLE", "sourceRefs": ["afrik-candidate-queue"] }
       ]
     }
   ],
@@ -84,6 +98,16 @@
       "countryId": "MLI",
       "status": "attested",
       "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "countryId": "GMB",
+      "status": "attested",
+      "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "countryId": "SLE",
+      "status": "attested",
+      "sourceRefs": ["afrik-candidate-queue"]
     }
   ],
   "alliances": [],
@@ -125,10 +149,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "origin",
-      "reason": "Aucun sens du nom Cissé n'est établi dans les sources que nous avons consultées : elles disent où le clan est attesté et ce qu'il a fait, pas ce que le mot veut dire. Les récits et lectures ci-dessus sont des pistes attribuées, aucune n'est retenue comme la bonne."
-    },
     {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."

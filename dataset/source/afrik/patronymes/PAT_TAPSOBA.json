@@ -117,5 +117,176 @@
       "fieldPath": "homonyms",
       "reason": "Les graphies Tapsoba et Tabsoba ont été comparées dans la liste SIL, le répertoire et les catalogues savants ; aucune lignée distincte homonyme n'a été établie."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Tapsoba est un nom de famille des Mossi du Burkina Faso. Il s'écrit aussi Tabsoba. On ne sait pas avec certitude d'où il vient ; nous présentons plus bas le seul récit que nous connaissons et un titre de cour au nom proche.",
+    "names": [
+      {
+        "nameText": "Tapsoba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mos",
+        "namedBy": null,
+        "shortLine": "Un nom de famille mossi que glose « détenteur de l'arc » le seul récit connu ; son origine reste incertaine.",
+        "periodLabel": "Forme proche écrite dès 2008 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tapsoba est un nom de famille mossi des provinces du Kadiogo et du Bazèga. Un seul récit connu en explique l'origine, et sa traduction par « détenteur de l'arc » n'a pas été vérifiée par une étude du mooré ; nous le présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel du Burkina Faso",
+                "year": null,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 199-200",
+                "notes": "Document de travail daté de mai 2025 et marqué « version provisoire », lu le 11 octobre 2026 dans une copie non officielle déposée sur PDFCoffee ; aucune publication officielle de ce répertoire n'a été trouvée. Les récits qu'il rapporte ne nomment pas de narrateur. Notice TAPSOBA, p. 199-200 : les Tapsoba descendraient de Naba Oubri et de Naba Weèga venus de Gambaga ; Oubri, venu défendre ses oncles à Guiloungou, aurait promis de « tendre un arc » au nom de son frère, « d'où la naissance du nom TAPSOBA qui veut dire « Détenteur de l'arc » ». La notice cite aussi les San comme parents à plaisanterie, et le hérisson, le lézard et le boulouboukou comme totems."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tapsoba serait aussi celui de l'ancêtre des Nacoulma, un aîné écarté du trône qui aurait pris un nouveau nom, selon une autre notice du projet de répertoire des patronymes.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel du Burkina Faso",
+                "year": null,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 146",
+                "notes": "Document de travail daté de mai 2025 et marqué « version provisoire », lu le 11 octobre 2026 dans une copie non officielle déposée sur PDFCoffee ; aucune publication officielle de ce répertoire n'a été trouvée. Les récits qu'il rapporte ne nomment pas de narrateur. Notice NACOULMA, p. 146 : l'ancêtre des Nacoulma, originaire de Bindé et de Nédgo, « était TAPSOBA et l'aîné de sa famille » ; écarté du trône, il aurait réclamé les femmes du roi défunt, d'où le nom Nacoulma."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Tapsoba voudrait dire « détenteur de l'arc » : Oubri, venu défendre ses oncles à Guiloungou, aurait promis à son frère aîné de tendre un arc en son nom, et ses descendants auraient pris ce nom, selon le projet de répertoire des patronymes du Burkina Faso.",
+            "hypothesisGroup": "origine du nom Tapsoba",
+            "actors": [
+              {
+                "name": "Naba Oubri",
+                "role": "personnage du récit"
+              },
+              {
+                "name": "Naba Weèga",
+                "role": "frère d'Oubri dans le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel du Burkina Faso",
+                "year": null,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 199-200",
+                "notes": "Document de travail daté de mai 2025 et marqué « version provisoire », lu le 11 octobre 2026 dans une copie non officielle déposée sur PDFCoffee ; aucune publication officielle de ce répertoire n'a été trouvée. Les récits qu'il rapporte ne nomment pas de narrateur. Notice TAPSOBA, p. 199-200 : les Tapsoba descendraient de Naba Oubri et de Naba Weèga venus de Gambaga ; Oubri, venu défendre ses oncles à Guiloungou, aurait promis de « tendre un arc » au nom de son frère, « d'où la naissance du nom TAPSOBA qui veut dire « Détenteur de l'arc » ». La notice cite aussi les San comme parents à plaisanterie, et le hérisson, le lézard et le boulouboukou comme totems."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "1932"
+            },
+            "era": "colonial",
+            "statement": "Tampsoba figure chez Dim Delobsom en 1932 comme autre nom du Tansoba, le chef de guerre du Mogho-Naba à Ouagadougou. La forme est proche du nom Tapsoba, mais les sources ne disent pas s'il s'agit du même nom.",
+            "formAsWritten": "Tampsoba",
+            "sources": [
+              {
+                "title": "L'empire du Mogho-Naba : coutumes des Mossi de la Haute-Volta",
+                "author": "A. A. Dim Delobsom",
+                "year": 1932,
+                "url": "https://gallica.bnf.fr/ark:/12148/bpt6k3412455s",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21, 55 et 66",
+                "notes": "Paris, Domat-Montchrestien, 1932. Dim Delobsom, auteur mossi, décrit la cour du Mogho-Naba. Lu dans la copie de Gallica (Bibliothèque nationale de France) déposée sur Internet Archive, le 11 octobre 2026. Page 21 : « Le Tampsoba ou Tansoba (ministre de la Guerre) » ; page 55 : « le Tansoba ou Tampsoba » ; page 66 : « Le Tansoba ou Tampsoba (chef de guerre) ». L'auteur ne parle pas du nom de famille Tapsoba."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "2008"
+            },
+            "era": "modern",
+            "statement": "Une forme proche du nom Tapsoba, Tabsoba, figure parmi des exemples de noms de famille mossi que donnent Urs et Idda Niggli. C'est la plus ancienne trace de ce nom de famille que le projet connaît ; elle dit quand des auteurs l'ont noté, pas depuis quand des familles le portent.",
+            "formAsWritten": "Tabsoba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Noms des Kasena",
+                "author": "Urs et Idda Niggli",
+                "year": 2008,
+                "url": "https://sil-burkina.org/sites/default/files/Noms%20des%20Kassena.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 42",
+                "notes": "Société internationale de linguistique, Ouagadougou, 2008. Lu dans le PDF le 11 octobre 2026. La section 6.4 cite la forme Tabsoba parmi les exemples de noms de famille mossi, sans en donner l'origine."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tabsoba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mos",
+        "namedBy": null,
+        "shortLine": "Une autre écriture du nom de famille mossi Tapsoba.",
+        "periodLabel": "Écrit dès 2008",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Tabsoba figure parmi des exemples de noms de famille mossi que donnent Urs et Idda Niggli, de la Société internationale de linguistique. C'est la plus ancienne trace de cette écriture que le projet connaît ; elle dit quand des auteurs l'ont notée, pas depuis quand elle est employée.",
+            "formAsWritten": "Tabsoba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Noms des Kasena",
+                "author": "Urs et Idda Niggli",
+                "year": 2008,
+                "url": "https://sil-burkina.org/sites/default/files/Noms%20des%20Kassena.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 42",
+                "notes": "Société internationale de linguistique, Ouagadougou, 2008. Lu dans le PDF le 11 octobre 2026. La section 6.4 cite la forme Tabsoba parmi les exemples de noms de famille mossi, sans en donner l'origine."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

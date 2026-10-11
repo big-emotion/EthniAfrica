@@ -113,5 +113,94 @@
       "fieldPath": "homonyms",
       "reason": "Les sources consultées ne permettent pas encore de présenter un autre nom écrit comme Musa, mais d'origine différente."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Musa est un prénom musulman porté chez les Haoussa, au Nigeria, qui sert aussi de second nom, celui du père, et parfois de nom de famille. En français, on l'écrit souvent Moussa. Son origine proposée est présentée plus bas.",
+    "names": [
+      {
+        "nameText": "Musa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un prénom musulman haoussa, rapproché de Moïse, porté aussi comme nom du père.",
+        "periodLabel": "Écrit dès 1876 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1996,
+              "to": 1996,
+              "label": "Décrit en 1996"
+            },
+            "era": "modern",
+            "statement": "Le nom Musa est un nom reçu à la naissance chez les Haoussa. Le dernier nom d'une personne peut devenir son nom de famille quand les usages anglais sont adoptés, selon le guide de catalogage de l'IFLA.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Names of Persons: National Usages for Entry in Catalogues",
+                "author": "IFLA Universal Bibliographic Control and International MARC Programme",
+                "year": 1996,
+                "url": "https://www.ifla.org/files/assets/cataloguing/pubs/names-of-persons_1996.pdf",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 169",
+                "notes": "Quatrième édition, 1996, lue dans le PDF de l'IFLA le 11 octobre 2026. La notice Nigeria, section haoussa et peule, donne Musa parmi les noms reçus à la naissance et Umar pour Umaru parmi les formes abrégées ; elle précise que le dernier élément du nom peut devenir nom de famille quand les usages anglais sont adoptés."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "Proposé en 1981"
+            },
+            "era": "modern",
+            "statement": "Le nom Musa serait le nom du prophète Moïse, que les Haoussa musulmans donnent à leurs fils, selon Pauline M. Ryan.",
+            "hypothesisGroup": "origine du nom Musa",
+            "sources": [
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 142",
+                "notes": "Names 29(2), 1981, p. 139-164 ; PDF intégral relu le 11 octobre 2026. Le tableau I range parmi les noms musulmans donnés à la cérémonie du nom Musa, avec pour équivalent « Moses »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1876,
+              "to": 1876,
+              "label": "1876"
+            },
+            "era": "polity",
+            "statement": "Le nom Musa apparaît par écrit dans le dictionnaire haoussa du missionnaire James Frederick Schön, qui l'écrit Mūsa et le traduit par « Moïse ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Mūsa",
+            "birth": true,
+            "actors": [
+              {
+                "name": "James Frederick Schön",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Dictionary of the Hausa Language",
+                "author": "James Frederick Schön",
+                "year": 1876,
+                "url": "https://archive.org/details/schon-dictionary-of-the-hausa-language-with-appendix",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 167",
+                "notes": "Londres, Church Missionary House, 1876 ; lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Entrée : « Mūsa, propr. noun, Moses. Ánabi Mūsa, the prophet Moses ». L'entrée suivante donne un autre mot, mūsa, « chat ». Auteur missionnaire, cité ici pour la forme qu'il relève."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

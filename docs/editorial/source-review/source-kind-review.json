@@ -1868,7 +1868,7 @@
         {
           "title": "Kati, Mahmoud. Tarikh al-Fattash (Chronique du chercheur). Traduit par O. Houdas et M. Delafosse. Paris, 1913",
           "url": null,
-          "fiches": ["peuples/FLG_SONGHAY/PPL_SONGHAY_MACRO.json"]
+          "fiches": ["peuples/FLG_NILOSAHARIENNE/PPL_SONGHAI.json"]
         },
         {
           "title": "Olivier de Sardan, Jean-Pierre. Concepts et conceptions songhay-zarma. Paris : Nubia, 1982",
@@ -3531,7 +3531,7 @@
         {
           "title": "PopulationPyramid.net — Guinea-Bissau 2024",
           "url": "https://www.populationpyramid.net/guinea-bissau/2024/",
-          "fiches": ["peuples/FLG_CREOLE/PPL_PAPELO.json"]
+          "fiches": ["peuples/FLG_CREOLE/PPL_ANAFRO_CRIOULO.json"]
         },
         {
           "title": "PopulationPyramid.net — Equatorial Guinea 2025",
@@ -3910,7 +3910,7 @@
         {
           "title": "Revista Africa e Africanidades — Guinee-Bissau et la langue guineenne",
           "url": "https://africaeafricanidades.com.br/documentos/ARTLIVRE071025.pdf",
-          "fiches": ["peuples/FLG_CREOLE/PPL_PAPELO.json"]
+          "fiches": ["peuples/FLG_CREOLE/PPL_ANAFRO_CRIOULO.json"]
         }
       ]
     },
@@ -7541,7 +7541,7 @@
         {
           "title": "OpenStax World History Volume 2 – The Songhai Empire",
           "url": "https://openstax.org/books/world-history-volume-2/pages/3-2-the-songhai-empire",
-          "fiches": ["peuples/FLG_SONGHAY/PPL_SONGHAY_MACRO.json"]
+          "fiches": ["peuples/FLG_NILOSAHARIENNE/PPL_SONGHAI.json"]
         }
       ]
     },

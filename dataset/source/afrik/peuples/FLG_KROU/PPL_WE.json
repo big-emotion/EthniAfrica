@@ -34,7 +34,8 @@
       "Krahn oriental (Eastern Krahn, kqo) — LBR, nord-est du Liberia (99 000 locuteurs en 2020)",
       "Krahn occidental (Western Krahn, krw) — LBR, Grand Gedeh County et CIV (100 000 locuteurs LBR + 12 000 CIV en 1993)",
       "Niao — sous-groupe We meridional (20 000 en 1995)",
-      "Zibiao, Zagne, Zagna, Beu (Zarabaon), Zaa, Neao, Gboo, Fleo, Nyeo — dialectes du We meridional"
+      "Zibiao, Zagne, Zagna, Beu (Zarabaon), Zaa, Neao, Gboo, Fleo, Nyeo — dialectes du We meridional",
+      "Sapo (sous-groupe apparente de la zone Nimba-Grand Gedeh)"
     ],
     "origins": {
       "ancientOrigins": "Les We/Guere/Krahn font partie du groupe krou occidental et sont consideres comme un des peuples les plus represents du coeur du pays krou. Selon la tradition orale nyabwa (voisins proches), les Wobe partagent un ancetre commun avec les Bete et les Niaboua (fils de Goze, venu du Liberia). Les We sont vraisemblablement arrives dans leur region actuelle entre le XVe et le XVIIe siecle, sous la pression des royaumes mandingues et dans le contexte des migrations de la fin du Moyen Age africain. Le peuple krou originel se serait divise, les We occupant le coeur du territoire krou de l'ouest ivoirien.",
@@ -42,13 +43,16 @@
       "migrationRoutes": [
         "Depuis l'interieur des hautes terres guineennes et ivoiriennes vers les forets de l'ouest de la CIV",
         "Expansion transfrontaliere naturelle de part et d'autre du fleuve Cavally (frontiere CIV-Liberia)",
-        "Migrations recentes des Krahn du Liberia vers la CIV en periode de guerre civile (1989-2003)"
+        "Migrations recentes des Krahn du Liberia vers la CIV en periode de guerre civile (1989-2003)",
+        "Traversee de la riviere Cestos (frontiere symbolique de leur territoire actuel)",
+        "Etablissement le long des rivieres Cestos, Sanquine, Sino et Cavalla (frontiere Liberia-CIV)"
       ],
       "historicalSettlementZones": [
         "Regions Dix-Huit Montagnes et Moyen-Cavally (Cote d'Ivoire) : Guiglo, Duekoe, Man, Touleple",
         "Comtes de Grand Gedeh, Nimba et Sinoe (Liberia)",
         "Zone frontaliere autour du fleuve Cavally",
-        "Camps de refugies en CIV et en Guinee pendant les guerres civiles liberienns"
+        "Camps de refugies en CIV et en Guinee pendant les guerres civiles liberienns",
+        "Monrovia et grandes villes liberienne (migrations economiques et deplacements de guerre)"
       ],
       "unificationsOrDivisions": "Les We n'ont jamais eu de structure politique centralisee. Ils sont organises en villages autonomes, chacun sous l'autorite de ses aines et d'un chef de village designe. La distinction entre We ivoiriens (Guere) et Krahn liberiens est une consequence des frontieres coloniales, non d'une division ethnique originelle. Les tensions entre sous-groupes (Wobe vs Guere, Krahn de l'est vs de l'ouest) existent mais n'ont pas produit de rupture permanente de l'identite commune.",
       "externalInfluences": "Contacts avec les Dan (Yacouba) au nord, avec qui les We partagent certains motifs artistiques (masques, costumes). Influence des missions chretiennes (catholiques et protestantes) depuis la colonisation française et liberienne. Contacts avec les groupes mandingues (Jula) via les reseaux commerciaux. Role majeur dans la politique liberienne sous le president Samuel Doe (1980-1990), membre du peuple krahn. Pendant les guerres civiles liberiennes (1989-2003), les Krahn furent cibles par le NPFL de Charles Taylor.",
@@ -135,6 +139,18 @@
       {
         "title": "Joshua Project — Guere in Cote d'Ivoire",
         "url": "https://joshuaproject.net/people_groups/11124",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      },
+      {
+        "title": "Minority Rights Group - Krou in Cote d'Ivoire",
+        "url": "https://minorityrights.org/communities/krou/",
+        "tier": "referenced",
+        "source_kind": "ngo"
+      },
+      {
+        "title": "Joshua Project - Krahn, Western in Liberia",
+        "url": "https://joshuaproject.net/people_groups/print/15374/LI",
         "tier": "unverified",
         "source_kind": "missionary_database"
       }

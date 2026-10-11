@@ -32,6 +32,15 @@
           "sourceRefs": ["corpus-ppl-dioula-organisation"]
         }
       ]
+    },
+    {
+      "spelling": "Fofanah",
+      "attestations": [
+        {
+          "countryId": "SLE",
+          "sourceRefs": ["sltelegraph-2014-fofanah"]
+        }
+      ]
     }
   ],
   "transmissionMode": "patrilineal",
@@ -79,6 +88,11 @@
       "countryId": "GNB",
       "status": "attested",
       "sourceRefs": ["corpus-ppl-dioula-organisation"]
+    },
+    {
+      "countryId": "SLE",
+      "status": "attested",
+      "sourceRefs": ["sltelegraph-2014-fofanah"]
     }
   ],
   "alliances": [
@@ -164,6 +178,14 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Canut, Cécile, et Smith, Étienne, Cahiers d'études africaines, numéro 184, 2006, p. 687 et suivantes. Citée pour la mise en garde qu'elle porte : l'idée que la parenté à plaisanterie apaiserait les conflits y est traitée comme une hypothèse héritée de Radcliffe-Brown et reprise par les études sur la résolution des conflits, donc comme un discours à analyser et non comme un effet mesuré. La page de début est vérifiée, la page de fin ne l'est pas."
+    },
+    {
+      "sourceKey": "sltelegraph-2014-fofanah",
+      "title": "Health minister Miatta Kargbo sacked",
+      "url": "https://thesierraleonetelegraph.com/health-minister-miatta-kargbo-sacked",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Abdul Rashid Thomas, The Sierra Leone Telegraph, 29 août 2014, lu le 11 octobre 2026. L'article cite le communiqué de la présidence nommant le Dr Abu Bakarr Fofanah ministre de la Santé de Sierra Leone. Il atteste la graphie Fofanah en Sierra Leone, sans rien dire de son origine."
     }
   ],
   "gaps": [

@@ -50,8 +50,10 @@ describe("groupNamesBySystem", () => {
   // @req REQ-133
   it("files names under their system, the largest group first, each A–Z", () => {
     const groups = groupNamesBySystem(namesForPeople("PPL_SOMALI"), "fr");
+    // 16 -> 15 on 2026-10-11: Youssouf was folded into Yusuf, and its
+    // Somali link, which rested on the candidate queue, was not carried.
     expect(groups.map((group) => [group.system, group.names.length])).toEqual([
-      ["non_hereditary_patronymic", 16],
+      ["non_hereditary_patronymic", 15],
       ["clan_name", 4],
     ]);
     for (const group of groups) {

@@ -92,5 +92,65 @@
       "fieldPath": "homonyms",
       "reason": "la notice exacte du Dictionary of American Family Names, les catalogues bibliographiques et les recherches « Semedo » associées au Cap-Vert n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Semedo est un nom de famille portugais, porté au Cap-Vert. On ne sait pas avec certitude d'où il vient : le dictionnaire qui le décrit juge son origine inexpliquée. Nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Semedo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille portugais porté au Cap-Vert ; son origine reste inexpliquée.",
+        "periodLabel": "Écrit au Cap-Vert dès 1650 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Semedo est un nom de famille espagnol, surtout d'Estrémadure, et portugais, que portent aussi des familles du Cap-Vert. Le dictionnaire qui le décrit ne lui donne pas de sens et juge son origine inexpliquée ; on ne sait donc pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e édition — entrée Semedo",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/semedo?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 11 octobre 2026 dans la traduction française que le site affiche. La notice dit : espagnol (surtout d'Estrémadure) et portugais, inexpliqué."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1650,
+              "to": 1650,
+              "label": "1650, selon un récit publié en 1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom Semedo apparaît dans l'histoire du Cap-Vert avec Pedro Semedo Cardoso, né à Santiago, que la chambre municipale élit gouverneur par intérim le 9 octobre 1650, selon l'historien Christiano José de Senna Barcellos. C'est la plus ancienne trace de ce nom au Cap-Vert que le projet connaît ; elle vient d'un récit écrit en 1900, et elle ne dit pas depuis quand des familles de l'île portent ce nom.",
+            "formAsWritten": "Semedo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Subsidios para a historia de Cabo Verde e Guiné, parte II",
+                "author": "Christiano José de Senna Barcellos",
+                "year": 1900,
+                "url": "https://archive.org/details/subsidiosparaah00lisbgoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 16",
+                "notes": "Mémoire présenté à l'Académie royale des sciences de Lisbonne, Lisbonne, Typographia da Academia Real das Sciencias, 1900. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 16 : le 9 octobre 1650, à la mort du gouverneur Gamboa Ayalla, la chambre municipale élit gouverneur par intérim « Pedro Semedo Cardoso », qui prend ses fonctions le 16 ; « Semedo Cardoso era natural de S. Thiago ». Auteur de l'époque coloniale, cité ici pour les noms qu'il relève."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

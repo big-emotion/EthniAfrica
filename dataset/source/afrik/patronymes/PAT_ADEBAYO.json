@@ -130,5 +130,113 @@
       "fieldPath": "countries",
       "reason": "La présence de ce prénom en dehors du Nigeria — notamment au sein des communautés yoruba du Bénin ou du Togo — n'a pas pu être confirmée par une source propre à ce prénom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Adebayo est un nom yoruba que l'on donne à un garçon, au Nigeria ; on le raccourcit en Bayo. C'est un nom de naissance, pas le nom d'un clan. On ne sait pas avec certitude quand il apparaît pour la première fois par écrit. Le sens de ses parties est discuté ; nous présentons plus bas les lectures proposées.",
+    "names": [
+      {
+        "nameText": "Adebayo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom yoruba donné à un garçon né à un moment de joie pour sa famille.",
+        "periodLabel": "Donné aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Adebayo est donné chez les Yoruba à un garçon né à un moment de joie pour sa famille, selon la liste d'E. B. Ogundimu. On l'appelle aussi Bayo. Les lectures du nom, mot à mot, sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Lessons from Africa: A Supplement to Middle School Courses in World Cultures, Global Studies, and World Geography",
+                "author": "Merry M. Merryfield (dir.)",
+                "year": 1989,
+                "url": "https://files.eric.ed.gov/fulltext/ED304395.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 47",
+                "notes": "ERIC Clearinghouse et Social Studies Development Center, Indiana University, 1989. Lu dans le PDF intégral le 11 octobre 2026. La liste « Some Yoruba Names and Their Meanings », attribuée à E. B. Ogundimu, donne : « Adebayo, Bayo, Born at time of joy in family »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Adebayo voudrait dire « la royauté rencontre la joie » : adé, « couronne, royauté », bá, « rencontrer », et ayọ̀, « joie », selon le dictionnaire YorubaNames.",
+            "hypothesisGroup": "sens du nom Adebayo",
+            "sources": [
+              {
+                "title": "Adébáyọ̀ — YorubaNames",
+                "author": "YorubaNames",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/adebayo?lang=en",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Dictionnaire collaboratif des noms yoruba, lu le 11 octobre 2026. Il donne la forme tonale Adébáyọ̀, deux sens, « Royalty meets joy » et « We have come to meet joy », et deux découpages, adé-bá-ayọ̀ et a-dé-bá-ayọ̀. La page ne nomme pas ses contributeurs."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Adebayo voudrait dire « nous sommes arrivés dans la joie » : a, « nous », dé, « arriver », bá, « rencontrer », et ayọ̀, « joie », selon le même dictionnaire YorubaNames, qui donne les deux lectures.",
+            "hypothesisGroup": "sens du nom Adebayo",
+            "sources": [
+              {
+                "title": "Adébáyọ̀ — YorubaNames",
+                "author": "YorubaNames",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/adebayo?lang=en",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Dictionnaire collaboratif des noms yoruba, lu le 11 octobre 2026. Il donne la forme tonale Adébáyọ̀, deux sens, « Royalty meets joy » et « We have come to meet joy », et deux découpages, adé-bá-ayọ̀ et a-dé-bá-ayọ̀. La page ne nomme pas ses contributeurs."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Adébayo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Adébayo est une écriture du même nom avec un accent. Le dictionnaire YorubaNames l'écrit avec tous ses tons : Adébáyọ̀.",
+            "sources": [
+              {
+                "title": "Adébáyọ̀ — YorubaNames",
+                "author": "YorubaNames",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/adebayo?lang=en",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Dictionnaire collaboratif des noms yoruba, lu le 11 octobre 2026. Il donne la forme tonale Adébáyọ̀, deux sens, « Royalty meets joy » et « We have come to meet joy », et deux découpages, adé-bá-ayọ̀ et a-dé-bá-ayọ̀. La page ne nomme pas ses contributeurs."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

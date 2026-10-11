@@ -113,5 +113,132 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches « Abdoulaye homonym etymology » et les pages consacrées à Abdoulaye et Abd Allah n'ont pas établi une graphie identique d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Abdoulaye est un nom personnel musulman porté en Afrique de l'Ouest ; en haoussa, la forme proche est Abdullahi. C'est un nom personnel, pas le nom d'un clan. Les sources le rattachent au nom arabe Abd Allah ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Abdoulaye",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel musulman d'Afrique de l'Ouest, rattaché au nom arabe Abd Allah.",
+        "periodLabel": "Écrit dès 1822 ; donné aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Abdoulaye est un nom musulman donné à un garçon en Afrique de l'Ouest ; les Haoussa disent Abdullahi. C'est un nom personnel, pas celui d'un clan. Son origine est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 141-142",
+                "notes": "Revue Names, vol. 29, n° 2, 1981, p. 139-164. Lu dans le PDF intégral le 11 octobre 2026. Pages 141-142 : les noms musulmans donnés à la cérémonie du nom ; le tableau I range Abdullahi parmi les noms d'hommes."
+              },
+              {
+                "title": "Abdoulaye",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/abdoulaye",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site communautaire consacré aux prénoms, lu le 11 octobre 2026. Elle rattache Abdoulaye à Abd Allah et cite Abdullahi comme forme haoussa. La page ne cite pas ses sources."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "Proposé en 1981"
+            },
+            "era": "modern",
+            "statement": "Le nom Abdoulaye viendrait du nom arabe Abd Allah : Pauline Ryan donne à sa forme haoussa, Abdullahi, le sens d'« esclave d'Allah », c'est-à-dire de serviteur de Dieu. Le site Behind the Name rattache l'écriture Abdoulaye au même nom.",
+            "sources": [
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 142",
+                "notes": "Revue Names, vol. 29, n° 2, 1981, p. 139-164. Lu dans le PDF intégral le 11 octobre 2026. Le tableau I donne Abdullahi : « \"slave of Allah\"; among the notable Abd Allah's are included the father of the Prophet »."
+              },
+              {
+                "title": "Abdoulaye",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/abdoulaye",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site communautaire consacré aux prénoms, lu le 11 octobre 2026. Elle présente Abdoulaye comme une forme d'Abd Allah employée en Afrique de l'Ouest francophone. La page ne cite pas ses sources."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1868,
+              "to": 1868,
+              "label": "1868"
+            },
+            "statement": "Le nom Abdoulaye est écrit ainsi par Eugène Mage, dans le nom d'Abdoulaye Haoussa, à qui El Hadj Omar confie la reconstruction du village de Guémou.",
+            "formAsWritten": "Abdoulaye",
+            "sources": [
+              {
+                "title": "Voyage dans le Soudan occidental (Sénégambie-Niger)",
+                "author": "Eugène Mage",
+                "year": 1868,
+                "url": "https://archive.org/details/voyagedansleso00mage",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 245",
+                "notes": "Paris, Hachette, 1868. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. El Hadj Omar revient à Guémou-Koura « laissant Abdoulaye Haoussa avec quinze cents Talibés pour reconstruire le village ». Récit d'un officier de marine français, envoyé par le gouverneur du Sénégal, cité ici pour la forme qu'il écrit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1822,
+              "to": 1822,
+              "label": "1822"
+            },
+            "era": "polity",
+            "statement": "Le nom Abdoulaye apparaît par écrit sous une forme proche, Abdoulai, chez Gaspard Mollien : c'est le nom du marabout qui gouverne Timbo, dans le Fouta-Djalon, pendant son voyage de 1818. C'est la plus ancienne trace d'une forme de ce nom que le projet connaît ; elle dit quand un voyageur l'a notée, pas depuis quand le nom est donné.",
+            "formAsWritten": "Abdoulai",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Gaspard Théodore Mollien",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Voyage dans l'intérieur de l'Afrique, aux sources du Sénégal et de la Gambie, fait en 1818, tome II",
+                "author": "Gaspard Théodore Mollien",
+                "year": 1822,
+                "url": "https://archive.org/details/voyagedanslintr00eyrigoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 98",
+                "notes": "Paris, Bertrand, 1822. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. À Timbo, « Abdoulai, simple marabout, qui gouvernait la capitale pendant l'absence du roi », fait loger Mollien. Récit d'un voyageur français, cité ici pour la forme qu'il écrit ; nous n'avons pas lu la première édition de 1820."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -9,7 +9,7 @@
       "mainName": "Songhai",
       "selfAppellation": "Soŋay",
       "exonyms": ["Songait", "Zarma-Songhai (designation englobante)"],
-      "spellingAliases": ["Songhay", "Sonrhaï", "Sonrai", "Songhoi"],
+      "spellingAliases": ["Songhay", "Sonrhaï", "Sonrai", "Songhoi", "Songoy"],
       "originOfExonyms": "Les locuteurs reconnaissent le nom sous la forme soŋay. Les graphies Songhoi, Sonrhaï ou Sonrai viendraient des transcriptions arabes puis françaises, qui ne notent pas le son ŋ, un ng nasal comme à la fin de parking, selon l'enquête de Mohamed Minkailou et Ibrahima Abdoulaye. Ce qui a été imposé de l'extérieur serait donc la graphie, non le nom lui-même. Selon la région, les locuteurs se désignent aussi par un nom de groupe : Koyraboro au Mali, de koyra-boro, les gens de la ville ; Zarma au Niger ; Dendi au Bénin. Le terme Zarma (ou Djerma), nom du sous-groupe le plus nombreux, est souvent employé en synonyme.",
       "whyProblematic": "La designation Songhai amalgame des groupes linguistiques et identitaires distincts (Zarma, Dendi, Wogo, Kurtey, Arma, Sohance etc.) qui ne partagent pas tous une identite commune. Le terme est aujourd'hui reapproprie comme identite collective par certains, rejete par d'autres qui preferent leur designation sous-groupale.",
       "contemporaryUsage": "Songhai et Zarma-Songhai sont utilises dans les recensements du Niger et du Mali. Dans la vie quotidienne, chaque sous-groupe prefere sa propre denomination. La notion de Songhai est renforcee par la memoire collective de l'empire, notamment dans les regions de Gao et Tombouctou.",
@@ -27,7 +27,8 @@
       "Arma",
       "Igdalen",
       "Idaksahak",
-      "Belbali"
+      "Belbali",
+      "Sorko — pecheurs songhay du fleuve Niger, surtout au Mali et au Niger"
     ],
     "origins": {
       "ancientOrigins": "Les Songhai descendent de la dynasty Za (ou Zuwa), fondateurs du royaume de Kukiya et Gao sur le Niger dans l'actuel Mali. La fondation legendaire attribue au chef Za Alayaman une origine yemenite, mais les historiens considerent les Sorko (peche sur le Niger) et les Gabibi (agriculture) comme les premiers groupes formant le substrat songhai. Le premier royaume de Gao est documente des le VIIe siecle apres J.-C.",
@@ -35,7 +36,9 @@
       "migrationRoutes": [
         "Expansion vers l'ouest : conqete de Tombouctou (1468) et de Djenné (1473)",
         "Repli vers le sud apres la bataille de Tondibi (1591) : formation de royaumes au Niger (Dendi, Wanzarbe, Karma, Namaro)",
-        "Migrations dues au commerce transsaharien : communautes commerçantes vers le Ghana, le Burkina Faso et la Cote d'Ivoire (XIXe-XXe siecles)"
+        "Migrations dues au commerce transsaharien : communautes commerçantes vers le Ghana, le Burkina Faso et la Cote d'Ivoire (XIXe-XXe siecles)",
+        "Implantation ancienne dans la vallee du Niger moyen (Kukiya, Gao) — presence documentee avant le 7e siecle",
+        "Expansion vers le nord (mines de sel de Taghaza) et vers l'est (Kano, Hausaland) sous Askia Muhammad"
       ],
       "historicalSettlementZones": [
         "Gao (capitale historique de l'empire, actuel Mali)",
@@ -43,7 +46,8 @@
         "Djenne (Mali)",
         "Region du Tillabery et Niamey (Niger)",
         "Region de Dosso et Agadez (Niger)",
-        "Nord du Benin (pays Dendi)"
+        "Nord du Benin (pays Dendi)",
+        "Kebbi et Yobe (Nigeria) — zone des Zabermawa (Zarma du Nigeria)"
       ],
       "unificationsOrDivisions": "L'empire Songhai fut unifie par Sonni Ali Ber puis consolide par Askia Muhammad. Apres la bataille de Tondibi (1591) contre les Saadiens marocains, l'empire se fragmente. Les nobles se refugient au Niger pour former de petits royaumes. Les Arma (descendants de soldats marocains maries a des femmes songhai) forment le Pashalik de Tombouctou (independant des 1618).",
       "externalInfluences": "Empire du Mali (XIIIe-XIVe siecle) : domination puis independance. Islam transsaharien : influence commerciale, intellectuelle et politique croissante depuis le Xe siecle. Invasion marocaine saadienne (1591) : effondrement de l'empire. Colonisation francaise (XIXe-XXe siecle) : integration des territories songhai au Soudan francais (Mali) et au Niger.",
@@ -58,7 +62,7 @@
     },
     "languages": {
       "mainLanguage": "Zarma (Djerma)",
-      "isoCodes": ["dje", "ses", "hmb"],
+      "isoCodes": ["dje", "ses", "hmb", "khq"],
       "dialects": [
         "Zarma (Djerma) — ISO 639-3 : dje — plus de 6 millions de locuteurs, Niger et Mali",
         "Koyraboro Senni (dialecte de Gao) — ISO 639-3 : ses — environ 400 000 locuteurs",
@@ -84,7 +88,7 @@
     "demography": {
       "totalPopulation": 8400000,
       "referenceYear": 2025,
-      "source": "Wikipedia – Songhai people (2024) : environ 8,4 millions ; Britannica : plus de 3 millions pour la seule boucle du Niger (les Zarma representant plus de 2 millions au Niger seul)",
+      "source": "Wikipedia – Songhai people (2024) : environ 8,4 millions ; Britannica : plus de 3 millions pour la seule boucle du Niger (les Zarma representant plus de 2 millions au Niger seul) Une autre estimation compte de 6 à 7 millions de Songhay en 2025, en additionnant les locuteurs de toutes les langues songhay (Ethnologue).",
       "distributionByCountry": [
         {
           "country": "NER",
@@ -145,6 +149,34 @@
         "tier": "referenced",
         "source_kind": "academic",
         "notes": "L'expression koyra-boro senn-i signifie littéralement la langue des gens de la ville."
+      },
+      {
+        "title": "Hunwick, John O. Timbuktu and the Songhay Empire : Al-Sa'di's Ta'rikh al-Sudan down to 1613. Brill, 1999",
+        "url": null,
+        "tier": "referenced",
+        "source_kind": "academic"
+      },
+      {
+        "title": "Kati, Mahmoud. Tarikh al-Fattash (Chronique du chercheur). Traduit par O. Houdas et M. Delafosse. Paris, 1913",
+        "url": null,
+        "tier": "referenced"
+      },
+      {
+        "title": "Stoller, Paul. Fusion of the Worlds : An Ethnography of Possession among the Songhay of Niger. University of Chicago Press, 1989",
+        "url": null,
+        "tier": "referenced",
+        "source_kind": "academic"
+      },
+      {
+        "title": "SIL Ethnologue – Songhay languages",
+        "url": "https://www.ethnologue.com/subgroup/300/",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "OpenStax World History Volume 2 – The Songhai Empire",
+        "url": "https://openstax.org/books/world-history-volume-2/pages/3-2-the-songhai-empire",
+        "tier": "needs_review"
       }
     ]
   },

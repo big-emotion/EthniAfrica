@@ -111,5 +111,135 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches sur la graphie exacte « Riek » dans les index onomastiques et les tableaux Naath/Nuer de Wikinames, la grammaire nuer d’Indiana, l’article de Markó et les recherches bibliographiques par graphie exacte n’ont pas établi une seconde origine distincte disposant de sa propre provenance."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Riek est un nom personnel nuer, au Soudan du Sud, que l'on trouve aussi porté comme second nom. On ne sait pas avec certitude ce qu'il veut dire ; deux explications circulent, présentées plus bas.",
+    "names": [
+      {
+        "nameText": "Riek",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel nuer du Soudan du Sud ; son sens reste discuté.",
+        "periodLabel": "Écrit dès 1986 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Riek est un nom personnel donné à la naissance chez les Nuer. Deux sens lui sont prêtés, « autel » et « ennui » ; aucune étude de linguiste ne les départage, et nous présentons chacun séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Who is Dr. Riek Machar Teny?",
+                "author": "PaanLuel Wël Media",
+                "year": 2014,
+                "url": "https://paanluelwel2011.wordpress.com/2014/02/07/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Billet du 7 février 2014, relu le 11 octobre 2026 : « the boy was given the name Riek, which can either mean “shrine” or “trouble” ». Le billet ne cite ni linguiste ni informateur."
+              },
+              {
+                "title": "Wikinames South Sudan 2025",
+                "author": "Contributeurs de Wikinames",
+                "year": 2025,
+                "url": "https://meta.wikimedia.org/wiki/Wikinames_South_Sudan_2025",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Collecte communautaire de noms sud-soudanais, relue le 11 octobre 2026. La ligne Riek porte : masculin, nuer, « Meaning problem ». Aucune source n'est donnée pour cette ligne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Proposé en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Riek voudrait dire « autel », selon PaanLuel Wël Media. En nuer, le mot riek désigne bien l'autel-poteau dressé près des maisons, selon l'ethnologue E. E. Evans-Pritchard, qui ne parle pas du nom de personne.",
+            "hypothesisGroup": "origine du nom Riek",
+            "sources": [
+              {
+                "title": "Who is Dr. Riek Machar Teny?",
+                "author": "PaanLuel Wël Media",
+                "year": 2014,
+                "url": "https://paanluelwel2011.wordpress.com/2014/02/07/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Billet du 7 février 2014, relu le 11 octobre 2026 : « the boy was given the name Riek, which can either mean “shrine” or “trouble” ». Le billet ne cite ni linguiste ni informateur."
+              },
+              {
+                "title": "Nuer Religion",
+                "author": "E. E. Evans-Pritchard",
+                "year": 1956,
+                "url": "https://archive.org/details/nuerreligion00evan",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38, 57, 162",
+                "notes": "Oxford, Clarendon Press, 1956 ; lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Le mot riek y désigne l'autel-poteau que les hommes âgés dressent chez eux, « riek kwoth », l'autel de Dieu. L'auteur ne parle pas du nom de personne Riek."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Proposé en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Riek voudrait dire « ennui » ou « problème », selon PaanLuel Wël Media et la collecte communautaire Wikinames.",
+            "hypothesisGroup": "origine du nom Riek",
+            "sources": [
+              {
+                "title": "Who is Dr. Riek Machar Teny?",
+                "author": "PaanLuel Wël Media",
+                "year": 2014,
+                "url": "https://paanluelwel2011.wordpress.com/2014/02/07/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Billet du 7 février 2014, relu le 11 octobre 2026 : « the boy was given the name Riek, which can either mean “shrine” or “trouble” ». Le billet ne cite ni linguiste ni informateur."
+              },
+              {
+                "title": "Wikinames South Sudan 2025",
+                "author": "Contributeurs de Wikinames",
+                "year": 2025,
+                "url": "https://meta.wikimedia.org/wiki/Wikinames_South_Sudan_2025",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Collecte communautaire de noms sud-soudanais, relue le 11 octobre 2026. La ligne Riek porte : masculin, nuer, « Meaning problem ». Aucune source n'est donnée pour cette ligne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "Février 1986"
+            },
+            "era": "modern",
+            "statement": "Le nom Riek apparaît par écrit dans un rapport de la CIA sur la rébellion du Sud-Soudan, qui nomme « Maj. Riek Marshar Teny » dans l'organigramme du mouvement rebelle. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Riek",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Sudan: Roots and Future of the Southern Insurgency",
+                "author": "Central Intelligence Agency",
+                "year": 1986,
+                "url": "https://archive.org/details/cia-readingroom-document-cia-rdp88t00096r000100070003-2",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "figure 5",
+                "notes": "Rapport de février 1986, déclassifié en 2012, lu sur la copie de la salle de lecture de la CIA mise en ligne par Internet Archive le 11 octobre 2026. La figure 5, organigramme du Mouvement populaire de libération du Soudan, nomme « Maj. Riek Marshar Teny » à la politique étrangère."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

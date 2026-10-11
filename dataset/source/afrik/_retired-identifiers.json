@@ -642,5 +642,40 @@
     "successorId": "PPL_LUO",
     "reason": "Not a people: « Luo (Bantou) » is a classification category for Luo groups absorbed by Bantu neighbours or Bantu groups that took up Luo (the Babiito of Bunyoro and Toro, the Padhola, the Paluo, the Suba). Each of those has or will have its own fiche (PPL_BANYORO, PPL_BATOORO, PPL_JOPADHOLA; a Suba fiche is a follow-up), so the id redirects to the Luo. Folded in: the colonial name « Nilotic Kavirondo » for the Luo of Kenya and the Britannica (Luo people) source. Not carried: Uganda, ISO nyo and adh, the Babiito, Padhola, Paluo and Suba lines and their routes and zones, which describe those other peoples, not the Luo; its combined population figure. Its prose stays readable in the git history.",
     "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_LALA_BISA",
+    "successorId": "PPL_BISA",
+    "reason": "Same people: « Lala-Bisa » is the name of the language continuum (ISO leb) and of a Joshua Project cluster; the keeper is the Bisa fiche, which carries the written name history (wave 6). Folded in: the old forms « Wiza » and « Muiza » (Lacerda's journey, 1798) and the Joshua Project Lala-Bisa entry, the source of the keeper's 864 000 cluster figure. Not carried: DR Congo and its 113 000, which belong to the Lala-Bisa language area rather than to the Bisa; « Bissa », the name of another people; the Lala, Ambo, Luano and Swaka varieties, already the keeper's; Boswell (2008), about Lala-Lamba ethnohistory; Ethnologue leb, 101 Last Tribes and Zambia's Traditional History, already cited by the keeper. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_PAPELO",
+    "successorId": "PPL_ANAFRO_CRIOULO",
+    "reason": "Same people: the Creoles of Guinea-Bissau. The keeper carries the written name history (wave 6). « Papelo » is attested by no source opened, so it is not carried as a name. Folded in: the Fijus di Fidalgu and Ziguinchor Kriol sub-groups, the 19th-century extension to Casamance, the APiCS, Revista Africa e Africanidades and PopulationPyramid sources, and its estimate, recorded in the keeper's demography.source. Not carried: the CIA World Factbook, and Ethnologue pov, already the keeper's; its varieties, zones and Purtuguis and Fijus di Terra lines, already the keeper's. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_SONGHAY_MACRO",
+    "successorId": "PPL_SONGHAI",
+    "reason": "Same people: a macro-group fiche of the Songhai that the keeper already covers, sub-groups included. Folded in: the spelling « Songoy », ISO khq (Koyra Chiini, Glottolog), the Sorko sub-group, the early settlement at Kukiya and Gao and the expansion under Askia Muhammad, the Kebbi and Yobe zone, the Hunwick, Kati (Tarikh al-Fattash), Stoller, Ethnologue Songhay subgroup and OpenStax sources, and its 6–7 million estimate, recorded in the keeper's demography.source. Not carried: the ISO 639-2 collective code son, which is not a language code; the self-name « Ayneha », which no source it cites states; the CIA World Factbook and Britannica Songhai Empire, the latter already the keeper's. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_KRAHN",
+    "successorId": "PPL_WE",
+    "reason": "Same people: Krahn is the Liberian name of the Wè (Wee), whose fiche already lists Krahn, Kran and both Krahn languages (krw, kqo). PPL_GUERE stays as the southern Wè sub-group. Folded in: the Sapo sub-group, the crossing of the Cestos and the settlement along the Cestos, Sanquine, Sino and Cavalla rivers, the Monrovia zone, and the Minority Rights Group (Krou) and Joshua Project (Western Krahn) sources. Not carried: the Gio-Kuare and « Krai » explanations of the name, which its sources do not carry; 101 Last Tribes, already the keeper's; an Ethnologue entry with no locator. Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_NYASA",
+    "successorId": "PPL_NYANJA",
+    "reason": "Not one people: « Nyasa », like nyanja, means the lake, and the fiche mixed the Manda and the Mwera with the Nyanja. Folded in: Wanyasa, the Arabs' name for the lake people (Livingstone 1865, Weule 1906), as an exonym and a name-history entry of PPL_NYANJA, with the Britannica (Malawi) and Joshua Project (Nyanja, Chewa in Malawi) sources. Its Tanzanian sense goes to PPL_MPOTO, which Joshua Project calls « Mpoto, Nyasa in Tanzania »: the Tanzanian Nyasa sub-group and the Mbamba Bay zone. Not carried: the « Nyasa » name entry, whose Scott (1892) accounts the keeper already holds on Anyanja; ISO mjh, Mwera (Nyasa), which Glottolog classes in the Nyanja group and no keeper speaks for; the Tonga and Tumbuka lines, other peoples; the Ethnologue and Glottolog entries for Mwera (Nyasa). Its prose was a parallel rendering of the keeper's fields and stays readable in the git history.",
+    "decidedOn": "2026-10-11"
   }
 ]

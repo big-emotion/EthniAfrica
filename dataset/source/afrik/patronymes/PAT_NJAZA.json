@@ -130,5 +130,149 @@
   "totemicFoodProhibition": {
     "value": "Il est tabou pour un Muganda de consommer son propre clan, qu'il s'agisse de nourriture, de viande fraîche, de légume, de poisson ou de fruit.",
     "sourceRefs": ["buganda-heritage-clans", "roscoe-1911-baganda"]
+  },
+  "nameHistory": {
+    "summary": "Le nom Njaza est celui d'un clan ganda, au Buganda, en Ouganda. Le clan porte le nom de son totem, une antilope des roseaux, le redunca. Les sources ne la traduisent pas toutes de la même façon ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "Njaza",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lug",
+        "namedBy": null,
+        "shortLine": "Le nom d'un clan ganda, qui est aussi celui de son totem, une antilope des roseaux.",
+        "periodLabel": "Écrit dès 1911 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Njaza désigne une antilope, le redunca, appelée « reedbuck » en anglais, qui est le totem du clan. John Roscoe l'appelle tantôt « Reedbuck », tantôt « Roebuck », qui désigne le chevreuil.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Brief History of the Kingdom of Buganda",
+                "author": "Royaume du Buganda",
+                "year": 2025,
+                "url": "https://buganda.or.ug/wp-content/uploads/2025/04/Final-Print-BRIEF-HISTORY-OF-THE-KINGDOM-OF-BUGANDA-3.pdf",
+                "tier": "unverified",
+                "source_kind": "community",
+                "page": "p. 4",
+                "notes": "Brochure publiée par le royaume sur son propre site. Section « Origin of the Clan System » : les premiers clans sont Lugave, Ffumbe, Nnyonyi, Njaza (« Reedbuck »), Mmamba et Ngeye ; les Baganda y sont décrits comme venus avec les migrations bantoues entre 1200 et 1500. Lu le 11 octobre 2026."
+              },
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 139 et p. 168",
+                "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé sur archive.org. Dans sa préface (p. x-xi), Roscoe, missionnaire, dit avoir recueilli ses informations chez Sir Apolo Kagwa, qui fit venir les anciens, les prêtres et « the principal men from each clan ». Page 139, liste des clans : « The Roebuck (Njaza) clan ». Page 168, titre de la section : « The Reedbuck Clan ». Ethnographie de l'époque coloniale, citée ici pour ce qu'elle rapporte des clans. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Rapporté en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Njaza figure parmi les plus anciens clans du Buganda, avec Lugave, Ffumbe, Nnyonyi, Mmamba et Ngeye, selon l'histoire publiée par le royaume. Le site du patrimoine ganda le compte parmi les cinq clans d'origine appelés Banansangwa.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Brief History of the Kingdom of Buganda",
+                "author": "Royaume du Buganda",
+                "year": 2025,
+                "url": "https://buganda.or.ug/wp-content/uploads/2025/04/Final-Print-BRIEF-HISTORY-OF-THE-KINGDOM-OF-BUGANDA-3.pdf",
+                "tier": "unverified",
+                "source_kind": "community",
+                "page": "p. 4",
+                "notes": "Brochure publiée par le royaume sur son propre site. Section « Origin of the Clan System » : les premiers clans sont Lugave, Ffumbe, Nnyonyi, Njaza (« Reedbuck »), Mmamba et Ngeye ; les Baganda y sont décrits comme venus avec les migrations bantoues entre 1200 et 1500. Lu le 11 octobre 2026."
+              },
+              {
+                "title": "Buganda Heritage and Information Centre — Clans",
+                "author": "Buganda Heritage and Information Centre",
+                "year": null,
+                "url": "https://www.bugandaheritage.org.uk/culture/clans",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site patrimonial ganda. Il cite les cinq clans d'origine « referred to as Banansangwa » : Ffumbe, Lugave, Nggonge, Njaza et Nnyonyi, et dit que les clans sont passés à 52 en 1966. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Njaza apparaît dans la liste des clans ganda de John Roscoe, missionnaire, sous la forme « The Roebuck (Njaza) clan », vingt-cinquième de la liste, avec pour second totem une antilope, njugulu. C'est la plus ancienne trace de ce nom que le projet connaît ; le clan existait avant elle.",
+            "formAsWritten": "Njaza",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 139",
+                "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé sur archive.org. Dans sa préface (p. x-xi), Roscoe, missionnaire, dit avoir recueilli ses informations chez Sir Apolo Kagwa, qui fit venir les anciens, les prêtres et « the principal men from each clan ». « List of the Clans with their Totems », nº 25 : « (a) The Roebuck (Njaza) clan; second totem an antelope (Njugulu) ». Ethnographie de l'époque coloniale, citée ici pour ce qu'elle rapporte des clans. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Royaume du Buganda, selon les traditions"
+            },
+            "era": "polity",
+            "statement": "Le nom Njaza est celui d'un clan de chasseurs d'éléphants, devenus chasseurs du roi et payant tribut en ivoire. Après chaque couronnement, le clan apportait au roi une défense qu'il enjambait pour multiplier les éléphants, selon ce que les hommes du clan rapportent à John Roscoe.",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 168",
+                "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé sur archive.org. Dans sa préface (p. x-xi), Roscoe, missionnaire, dit avoir recueilli ses informations chez Sir Apolo Kagwa, qui fit venir les anciens, les prêtres et « the principal men from each clan ». Section « The Reedbuck Clan » : chasseurs d'éléphants « from their earliest days », chasseurs du roi et tribut en ivoire ; la défense apportée au roi après le couronnement. Ethnographie de l'époque coloniale, citée ici pour ce qu'elle rapporte des clans. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Arrivée de Kintu, selon les traditions"
+            },
+            "era": "polity",
+            "statement": "Le nom Njaza est celui d'un clan qui se dit établi de tout temps dans la forêt de Mabira, au Kyagwe : son ancêtre, Lutimba, s'y trouvait déjà quand Kintu s'établit dans le pays, selon ce que les hommes du clan rapportent à John Roscoe.",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 168",
+                "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé sur archive.org. Dans sa préface (p. x-xi), Roscoe, missionnaire, dit avoir recueilli ses informations chez Sir Apolo Kagwa, qui fit venir les anciens, les prêtres et « the principal men from each clan ». Section « The Reedbuck Clan » : le clan a toujours vécu dans la forêt de Mabira, au Kyagwe ; « Their forefather, Lutimba, was there when Kintu settled in Uganda ». Ethnographie de l'époque coloniale, citée ici pour ce qu'elle rapporte des clans. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

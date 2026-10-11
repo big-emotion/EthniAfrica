@@ -16,13 +16,40 @@
           "sourceRefs": ["ryan-1981-abubakar", "statehouse-cabinet-abubakar"]
         }
       ]
+    },
+    {
+      "spelling": "Aboubakar",
+      "attestations": [
+        {
+          "countryId": "CMR",
+          "sourceRefs": ["camer-2020-aboubakar-abbo"]
+        }
+      ]
+    },
+    {
+      "spelling": "Aboubacar",
+      "attestations": [
+        {
+          "countryId": "CMR",
+          "sourceRefs": ["gabana-bello-2025-cameroon-anthroponyms"]
+        }
+      ]
     }
   ],
   "transmissionMode": "non_hereditary",
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [],
+    "writtenChronicles": [
+      {
+        "claim": "Ryan documente Abubakar comme nom public islamique renvoyant au premier calife dans l’onomastique haoussa du nord du Nigeria ; Gabana et Bello attestent séparément Aboubacar parmi les noms de califes devenus patronymes au Nord-Cameroun.",
+        "claimStatus": "established",
+        "sourceRefs": [
+          "ryan-1981-abubakar",
+          "gabana-bello-2025-cameroon-anthroponyms"
+        ]
+      }
+    ],
     "linguisticReconstructions": [
       {
         "claim": "Ryan classe Abubakar parmi les noms masculins islamiques de la nomenclature haoussa et l'identifie au premier calife ; la page consacrée au nom le présente comme une forme d'Abu Bakr employée au Nigeria.",
@@ -33,6 +60,11 @@
         "claim": "Dans le système haoussa décrit par Chamo, le nom personnel peut devenir le second élément du nom d'un enfant sans constituer un nom de famille héréditaire stable.",
         "claimStatus": "established",
         "sourceRefs": ["chamo-2018-abubakar"]
+      },
+      {
+        "claim": "Une source communautaire donne Boubacar comme une variante ouest-africaine d'Aboubacar, lui-même rattaché à Abubakar ; Boubacar a sa propre fiche.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["btn-boubacar"]
       }
     ]
   },
@@ -47,7 +79,19 @@
     {
       "countryId": "NGA",
       "status": "attested",
-      "sourceRefs": ["statehouse-cabinet-abubakar", "cbn-balewa-abubakar"]
+      "sourceRefs": [
+        "statehouse-cabinet-abubakar",
+        "cbn-balewa-abubakar",
+        "ryan-1981-abubakar"
+      ]
+    },
+    {
+      "countryId": "CMR",
+      "status": "attested",
+      "sourceRefs": [
+        "gabana-bello-2025-cameroon-anthroponyms",
+        "camer-2020-aboubakar-abbo"
+      ]
     }
   ],
   "alliances": [],
@@ -100,16 +144,36 @@
       "tier": "official",
       "source_kind": "government",
       "notes": "Notice officielle consultée directement. Elle documente le premier Premier ministre du Nigeria, son nom complet et ses dates 1912-1966 ; elle sert uniquement à l'attestation nationale et au porteur décédé."
+    },
+    {
+      "sourceKey": "gabana-bello-2025-cameroon-anthroponyms",
+      "title": "Anthroponymes et dynamique identitaire dans les sociétés camerounaises : des noms locaux aux appellations importées (XVIIIe–XXe siècles)",
+      "url": "https://www.researchgate.net/publication/393426204_Anthroponymes_et_dynamique_identitaire_dans_les_societes_camerounaises_Des_noms_locaux_aux_appellations_importees_XVllle-XXe_siecles",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Jean Francis Gabana et Assana Bello, contribution publiée en 2025 dans Le patrimoine culturel des populations des sites défensifs du pourtour du lac Tchad à l’épreuve de la modernité, p. 301-321. Les p. 312-314 décrivent l’adoption de noms de califes comme patronymes et l’adaptation phonologique de noms arabo-islamiques au Nord-Cameroun."
+    },
+    {
+      "sourceKey": "btn-boubacar",
+      "title": "Boubacar — Behind the Name",
+      "url": "https://www.behindthename.com/name/boubacar",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Page communautaire consultée directement. Elle relie Boubacar à Aboubacar puis à Abubakar. Cette chaîne graphique n'étant pas documentée par une étude dédiée dans les résultats consultés, elle reste classée non vérifiée."
+    },
+    {
+      "sourceKey": "camer-2020-aboubakar-abbo",
+      "title": "Cameroun - Portrait: Qui est le maire Aboubakar Abbo tant souhaité à la tête des CVUC?",
+      "url": "https://www.camer.be/81625/11:1/cameroun-portrait-qui-est-le-maire-aboubakar-abbo-tant-souhaite-a-la-tete-des-cvuc-cameroon.html",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Darren Lambo Ebelle, Camer.be, 7 août 2020, lu le 11 octobre 2026. Portrait d'Aboubakar Abbo, né en 1960 dans l'arrondissement de Belel (Adamaoua, Cameroun), maire de Belel. Il atteste la graphie Aboubakar au Cameroun, sans rien dire de son origine."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin.oralTraditions",
       "reason": "La requête « Abubakar Hausa oral tradition griot lineage », Ryan (1981), Chamo (2018) et Amoo, Ajayi et Sabo (2022) n'ont livré ni griot nommé ni transcription attribuable à Abubakar."
-    },
-    {
-      "fieldPath": "origin.writtenChronicles",
-      "reason": "Les recherches « Abubakar Hausa Arabic chronicle manuscript » et « Abubakar Nigeria colonial record » n'ont pas livré de chronique dédiée établissant l'entrée de cette forme dans l'usage haoussa."
     },
     {
       "fieldPath": "alliances",
@@ -125,7 +189,7 @@
     }
   ],
   "nameHistory": {
-    "summary": "Le nom Abubakar est un nom personnel musulman, la forme haoussa d'Abou Bakr, le nom du premier calife de l'islam. Il est donné à un garçon, au Nigeria et chez les Haoussa. Les sources consultées le décrivent comme un nom personnel ; elles ne disent pas depuis quand il sert aussi de nom de famille.",
+    "summary": "Le nom Abubakar est un nom personnel musulman, la forme haoussa d'Abou Bakr, le nom du premier calife de l'islam. Il est donné à un garçon, au Nigeria et chez les Haoussa. Au Cameroun, on l'écrit aussi Aboubacar ou Aboubakar. Les sources consultées le décrivent comme un nom personnel ; elles ne disent pas depuis quand il sert aussi de nom de famille.",
     "names": [
       {
         "nameText": "Abubakar",
