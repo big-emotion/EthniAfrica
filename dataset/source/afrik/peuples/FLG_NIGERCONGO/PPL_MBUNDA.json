@@ -138,5 +138,130 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Mbunda désigne un peuple du sud-est de l'Angola, établi aussi dans l'ouest de la Zambie, qui se nomme lui-même Vambunda ; sa langue est le chimbunda. Il ne faut pas le confondre avec les Ambundu, qui parlent le kimbundu. Les Mbunda donnent eux-mêmes une explication de leur nom ; nous la présentons plus bas avec ce que disent les autres sources.",
+    "names": [
+      {
+        "nameText": "Mbunda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mck",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Mbunda d'Angola et de Zambie, écrit dès 1888.",
+        "periodLabel": "Écrit depuis 1888 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mbunda, ou VaMbunda au pluriel, désigne un peuple d'Angola et de Zambie dont le pays d'origine, le Mbundaland, se trouve en Angola, selon l'établissement royal mbunda de Zambie. Son origine est expliquée par les Mbunda eux-mêmes ; nous présentons plus bas leur récit.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The History of the Mbunda People",
+                "author": "The Mbunda Royal Establishment Zambia",
+                "year": 2017,
+                "url": "https://mbundaroyalestablishmentzambia.wordpress.com/the-history-of-the-mbunda-people/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page publiée le 29 mars 2017 par l'établissement royal mbunda de Zambie, lue le 11 octobre 2026. Elle s'appuie notamment sur Chikota cha VaMbunda Ku Thang'ulu na Chithemwa Chavo (Cheke cha Mbunda Cultural and Writers Association, Lusaka, 2011), que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "Publiée en 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Mbunda viendrait du mot mbunda, qui désigne une terre rougeâtre : les ancêtres auraient cherché, pour s'établir, une terre rouge semblable à celle qu'ils avaient quittée. Le mot, qui nomme aussi la viande rouge, revient dans la prière Ng'ombelo adressée aux fondateurs, selon l'histoire publiée par l'établissement royal mbunda de Zambie.",
+            "hypothesisGroup": "origine du nom Mbunda",
+            "sources": [
+              {
+                "title": "The History of the Mbunda People",
+                "author": "The Mbunda Royal Establishment Zambia",
+                "year": 2017,
+                "url": "https://mbundaroyalestablishmentzambia.wordpress.com/the-history-of-the-mbunda-people/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page publiée le 29 mars 2017 par l'établissement royal mbunda de Zambie, lue le 11 octobre 2026. Elle s'appuie notamment sur Chikota cha VaMbunda Ku Thang'ulu na Chithemwa Chavo (Cheke cha Mbunda Cultural and Writers Association, Lusaka, 2011), que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "Début décembre 1892"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mbunda s'écrit ma-Mbounda chez le missionnaire François Coillard, qui décrit, à la cour du roi lozi Lewanika, des devins ma-Mbounda consultant les osselets pendant une épidémie de variole.",
+            "formAsWritten": "ma-Mbounda",
+            "sources": [
+              {
+                "title": "Sur le Haut-Zambèze : voyages et travaux de mission",
+                "author": "François Coillard",
+                "year": 1899,
+                "url": "https://archive.org/details/surlehautzambeze00coil",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 520-521",
+                "notes": "Paris, Berger-Levrault, 1899, lettres du missionnaire au Barotseland. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026. Journal des premiers jours de décembre 1892."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1888,
+              "label": "Décembre 1888, lettre publiée en 1899"
+            },
+            "era": "polity",
+            "statement": "Le nom Mbunda apparaît par écrit chez François Coillard, missionnaire chez les Lozi, sous la forme Mombunda : dans une lettre de Séfoula, il raconte qu'une femme à qui le roi Lewanika a laissé le choix d'un nouveau mari s'est choisi « un Mombunda ». C'est la plus ancienne trace de ce nom que le projet connaît. Les Mbunda vivaient déjà entre l'Angola et le Zambèze avant elle.",
+            "formAsWritten": "Mombunda",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Sur le Haut-Zambèze : voyages et travaux de mission",
+                "author": "François Coillard",
+                "year": 1899,
+                "url": "https://archive.org/details/surlehautzambeze00coil",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 364",
+                "notes": "Paris, Berger-Levrault, 1899, lettres du missionnaire au Barotseland. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026. Lettre datée de Séfoula, 19 décembre 1888."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1853,
+              "to": 1857,
+              "label": "1853-1856, récit publié en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Ambonda figure chez David Livingstone, qui nomme ainsi une « famille » de peuples vivant au sud-est de l'Angola et parlant le « bunda ». Son texte ne permet pas de dire s'il s'agit des Mbunda ou des Ambundu, que l'on confond souvent avec eux.",
+            "formAsWritten": "Ambonda",
+            "sources": [
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 218",
+                "notes": "Londres, John Murray, 1857. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026. Ailleurs, p. 269, l'auteur présente le « bonda » comme la langue courante de l'Angola, ce qui évoque plutôt le kimbundu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

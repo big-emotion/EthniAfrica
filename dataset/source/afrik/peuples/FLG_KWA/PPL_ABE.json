@@ -122,5 +122,87 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Abé désigne un peuple du sud de la Côte d'Ivoire, autour d'Agboville, qui se nomme lui-même Abé ; Maurice Delafosse l'écrivait Abè. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Abé",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "aba",
+        "namedBy": null,
+        "shortLine": "Le nom du peuple autochtone de la région d'Agboville, écrit dès 1904.",
+        "periodLabel": "Écrit depuis 1904 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1981,
+              "to": 1982,
+              "label": "Usage décrit en 1981-1982"
+            },
+            "era": "modern",
+            "statement": "Le nom Abé désigne le peuple autochtone du département d'Agboville, dont les limites correspondent assez bien à celles du pays abé, selon le géographe Jean-Louis Chaléard. Les sources que nous avons lues n'expliquent pas d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Occupation du sol et immigration en pays abé (département d'Agboville, Côte d'Ivoire)",
+                "author": "Jean-Louis Chaléard",
+                "year": 1982,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/sci_hum/02956.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 271",
+                "notes": "Cahiers ORSTOM, série Sciences humaines, vol. XVIII, n° 3, 1981-1982, p. 271-293. Lu dans le texte intégral publié par l'IRD le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1910,
+              "label": "Début du XXe siècle, jusqu'en 1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Abé est alors celui d'un peuple qui résiste avec ténacité à la pénétration coloniale française, jusqu'à une répression sanglante en 1910, selon Jean-Louis Chaléard. La colonisation regroupe ensuite les villages le long des routes et impose de nouveaux chefs.",
+            "sources": [
+              {
+                "title": "Occupation du sol et immigration en pays abé (département d'Agboville, Côte d'Ivoire)",
+                "author": "Jean-Louis Chaléard",
+                "year": 1982,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/sci_hum/02956.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 275-276",
+                "notes": "Cahiers ORSTOM, série Sciences humaines, vol. XVIII, n° 3, 1981-1982, p. 271-293. Lu dans le texte intégral publié par l'IRD le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Abé apparaît par écrit, sous la forme Abè, chez le linguiste et administrateur colonial Maurice Delafosse : les Abè vivent selon lui entre l'Agnéby à l'est et le Bandama, puis le Nzi, à l'ouest, et leur langue a été influencée par l'agni. C'est la plus ancienne trace de ce nom que le projet connaît. Les Abé vivaient déjà dans ce pays avant elle.",
+            "formAsWritten": "Abè",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 12-13",
+                "notes": "Paris, Ernest Leroux, 1904. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -124,5 +124,120 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nyasa désigne des riverains du lac Malawi, que l'on appelle aussi lac Nyasa, au Malawi, au Mozambique et en Tanzanie. Ce n'est pas le nom d'un seul peuple : nyasa serait, comme nyanja, un mot qui veut dire l'eau ou le lac, selon un dictionnaire de 1892, et la forme Wanyasa a servi à nommer des groupes très divers. Nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Nyasa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom tiré du lac : nyasa, comme nyanja, voudrait dire l'eau ou le lac.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit à la fin du XIXe siècle"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nyasa désigne des riverains du lac Malawi et du Shire, sans désigner un seul peuple. Son origine est discutée ; nous présentons plus bas ce qu'en dit un dictionnaire de 1892.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Cyclopaedic Dictionary of the Mang'anja Language Spoken in British Central Africa",
+                "author": "David Clement Scott",
+                "year": 1892,
+                "url": "https://archive.org/details/acyclopdicdicti00commgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "préface et p. 140",
+                "notes": "Édimbourg, Comité des missions étrangères de l'Église d'Écosse, 1892. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "Proposée en 1892"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nyasa viendrait du mot qui désigne l'eau, le lac ou la rivière, dont nyanja, ng'anja et nyanza seraient d'autres formes : les a-nyanja, les wa-nyasa ou les ma-ng'anja seraient simplement les gens de l'eau, et leur langue s'appellerait chi-nyasa ou chi-nyanja, selon le dictionnaire de David Clement Scott.",
+            "hypothesisGroup": "origine du nom Nyasa",
+            "sources": [
+              {
+                "title": "A Cyclopaedic Dictionary of the Mang'anja Language Spoken in British Central Africa",
+                "author": "David Clement Scott",
+                "year": 1892,
+                "url": "https://archive.org/details/acyclopdicdicti00commgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "préface, p. 73 et p. 140",
+                "notes": "Édimbourg, Comité des missions étrangères de l'Église d'Écosse, 1892. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wanyasa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Arabes de la côte, selon David et Charles Livingstone",
+        "shortLine": "« Les gens du Nyassa » : la forme que les Arabes donnaient aux riverains du lac.",
+        "periodLabel": "Écrit depuis 1865",
+        "accounts": [
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wanyasa sert à Masasi, dans le sud-est de l'Afrique orientale allemande, à regrouper sous un seul nom des gens de tribus très diverses venus de l'intérieur, note l'ethnographe allemand Karl Weule. Beaucoup sont d'anciens captifs de la traite, rachetés par des missionnaires anglais et installés là.",
+            "sources": [
+              {
+                "title": "Native Life in East Africa : The Results of an Ethnological Research Expedition",
+                "author": "Karl Weule",
+                "year": 1909,
+                "url": "https://archive.org/details/nativelifeineast00weul",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 69-70",
+                "notes": "New York, D. Appleton, 1909, traduction anglaise par Alice Werner de Negerleben in Ostafrika (Leipzig, 1908), récit de l'expédition de 1906 dans le sud-est de l'Afrique orientale allemande. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1865,
+              "to": 1865,
+              "label": "Récit publié en 1865"
+            },
+            "era": "polity",
+            "statement": "Le nom Wanyasa apparaît, écrit Wanyassa, dans une note de David et Charles Livingstone : les Arabes, expliquent-ils, remplacent les préfixes des noms de peuples par Wa et disent Wanyassa, « les gens du Nyassa ». C'est la plus ancienne trace de ce nom que le projet connaît. Les riverains du lac vivaient là bien avant lui.",
+            "formAsWritten": "Wanyassa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Narrative of an Expedition to the Zambesi and its Tributaries",
+                "author": "David Livingstone et Charles Livingstone",
+                "year": 1865,
+                "url": "https://archive.org/details/narrativeofexpe00livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 42, note",
+                "notes": "Londres, John Murray, 1865. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
