@@ -236,5 +236,153 @@
       "fieldPath": "countries",
       "reason": "Les Jahanka (Diakhanké), auxquels Diaby est parfois rattaché, sont aussi présents en Guinée-Bissau, mais aucune source consultée n'atteste spécifiquement le nom Diaby dans ce pays ; il n'a donc pas été retenu ici."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Diaby est un nom de clan, ou jamu, porté chez les Soninké, les Khassonké et les Malinké ; on l'écrit aussi Diabi, et le dictionnaire des noms de clan l'écrit Jaabi. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Diaby",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan soninké, khassonké et malinké ; son origine reste discutée.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Diaby désigne un clan, que le dictionnaire des noms de clan mandingues écrit Jaabi. Il le rattache aux Soninké, aux Khassonké et aux Malinké et lui donne les statuts mòri et wage, sans lui donner de sens. Les explications de son origine ne s'accordent pas ; nous les présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet lu. Entrée Jaabi : statuts mòri et wage, trois marqueurs de groupe ; aucun sens donné au nom."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 48",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Jaabi : les groupes soninké, khassonké et malinké nommés en clair."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "Publié en 1892"
+            },
+            "statement": "Le nom Diaby apparaît sous la forme « Diabi » chez Louis-Gustave Binger, qui le range parmi les noms de famille des Soninké, avec Bakiri, Sissé, Doukouré et Diawara. C'est la plus ancienne trace écrite de ce nom de clan que le projet connaît ; elle dit quand un voyageur l'a noté, pas depuis quand des familles le portent.",
+            "formAsWritten": "Diabi",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Louis-Gustave Binger",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, tome 2",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74721",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 2, p. 377",
+                "notes": "Hachette, Paris, 1892, deux tomes ; récit du voyage de 1887-1889. Lu dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée. Tome 2, page 377, dans la liste des familles mandé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Diaby est celui de familles qui font remonter leur origine à un fils de Dinga, selon le dictionnaire des noms de clan. Le même dictionnaire range Jaabi parmi les noms du Wago, l'une des trois grandes divisions des Soninké, qui tient le Wagadou pour sa terre d'origine.",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet lu. Entrées Jaabi et Wago. Les notes du fichier sont en russe et traduites ici par nous."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Diaby viendrait de « Jàgan bí lù », le nom donné aux marabouts qui quittèrent la ville de Jàgán après que Soumaoro l'eut saccagée pour avoir aidé Soundiata ; dans le parler rapide, ces mots seraient devenus Jàabí. C'est le récit de l'ouvrage en n'ko de Souleymane Kanté, selon la traduction russe qu'en donne E. A. Bogacheva.",
+            "hypothesisGroup": "origine du nom Diaby",
+            "actors": [
+              {
+                "name": "Soumaoro",
+                "role": "roi du récit, qui saccage Jàgán"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 48",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Jaabi : le récit tiré de l'ouvrage de Souleymane Kanté, qui explique aussi le nom d'honneur Kàsamá par une formule qu'on adressait aux Jàabí. Le texte original en n'ko de Souleymane Kanté n'a pas été lu ; seule sa traduction russe l'a été, et le français est le nôtre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "Proposé en 1892"
+            },
+            "statement": "Le nom Diaby serait lié à celui de Ouar Diabi, que la chronique attribuée alors à Ahmed Baba dit mort en 1040-1041 après avoir converti à l'islam les habitants de Silla : Louis-Gustave Binger voit dans cette mention une trace des Diabi, qui forment encore de son temps, dit-il, une tribu noble des Soninké.",
+            "hypothesisGroup": "origine du nom Diaby",
+            "actors": [
+              {
+                "name": "Ouar Diabi",
+                "role": "personnage de la chronique que Binger rapproche des Diabi"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, tome 2",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74721",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 2, p. 381",
+                "notes": "Hachette, Paris, 1892, deux tomes ; récit du voyage de 1887-1889. Lu dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée. Tome 2, page 381."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
