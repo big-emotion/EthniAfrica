@@ -225,11 +225,6 @@
     "rationale": "Desaccord savant explicite : « des linguistes comme Dalby (1965) et Merrill (2021) contestent que ces langues forment un groupe genetique coherent », sans coinage colonial invoque comme motif."
   },
   {
-    "id": "PPL_ATTIE",
-    "status": "contested",
-    "rationale": "Prose mince : la fiche dit « aucun terme péjoratif identifié » ; le seul écart est qu'Akyé, issu d'un mot akan « utilisé par les Achantis », est l'auto-désignation face à la forme officielle Attié."
-  },
-  {
     "id": "PPL_AUSTRO_MACRO",
     "status": "reconstructive",
     "rationale": "« Categorie analytique scientifique (linguistique et genetique) » dont « aucun de ces groupes ne se nomme lui-meme austronesien » : label savant sans communaute qui le porte."
@@ -238,11 +233,6 @@
     "id": "PPL_AUTRES_PEUPLES_BANTOUS",
     "status": "reconstructive",
     "rationale": "« Categorie residuelle » d'agregation des recensements : « la categorisation autres efface les identites specifiques », alors que « chaque groupe possede sa propre auto-appellation »."
-  },
-  {
-    "id": "PPL_AZANDE_SUD",
-    "status": "colonial-legacy",
-    "rationale": "La fiche dit que Niam-Niam, pejoratif suggerant le cannibalisme, fut employe par les explorateurs europeens des 18e-19e siecles et les peuples arabes voisins."
   },
   {
     "id": "PPL_BABUR",
@@ -730,11 +720,6 @@
     "rationale": "Debat savant de classification : la famille Gbaya-Manza-Ngbaka « appartient aux langues oubanguiennes », ce qui « remet en question leur classification dans FLG_BANTU », « certains linguistes » divergeant."
   },
   {
-    "id": "PPL_GIO",
-    "status": "contested",
-    "rationale": "Gio est un exonyme donne par le peuple Bassa signifiant esclave, juge derogatoire par le peuple lui-meme qui prefere Dan : le rejet vient de la communaute, non d'une invention coloniale."
-  },
-  {
     "id": "PPL_GIZIGA",
     "status": "contested",
     "rationale": "« Le terme adopte (Giziga) est un exonyme fulbe, alors que le veritable endonyme est Marva », avec une etymologie pejorative proposee (« ceux qui mangent n'importe quoi »)."
@@ -1045,11 +1030,6 @@
     "rationale": "Les Kodia sont assimiles aux voisins plus nombreux (Bakwe, Bete, Godie), ce qui efface leur specificite, et leur absence des listes officielles des 68 ethnies les rend administrativement invisibles."
   },
   {
-    "id": "PPL_KONGO_BRAZZA",
-    "status": "colonial-legacy",
-    "rationale": "La politique coloniale francaise amplifia les differences entre sous-groupes en favorisant Lari et Vili, et les Europeens generaliserent Kongo a tous les locuteurs du kikongo."
-  },
-  {
     "id": "PPL_KONGO_CABINDA",
     "status": "colonial-legacy",
     "rationale": "La fiche fonde l'ecart sur le protectorat portugais du Traite de Simulambuco (1885) et attribue Fiote/Bafiote aux missionnaires chretiens des Ameriques."
@@ -1135,11 +1115,6 @@
     "rationale": "Le grief est une ambiguite persistante dans la litterature, Kru designant a la fois les Klao et toute la famille krou, pour une entite composite de 48 sous-sections aux frontieres floues."
   },
   {
-    "id": "PPL_KULLO",
-    "status": "colonial-legacy",
-    "rationale": "La fiche dit Kullo « l'ancien nom colonial et imperial par lequel ce peuple etait designe, notamment durant la periode de la province imperiale de Kaffa », aujourd'hui jugé péjoratif."
-  },
-  {
     "id": "PPL_KUNAMA",
     "status": "contested",
     "rationale": "« Le terme Shanqella est péjoratif, utilisé par les peuples des hautes terres éthiopiennes » qui razziaient les populations des basses terres."
@@ -1148,11 +1123,6 @@
     "id": "PPL_KUNDA",
     "status": "contested",
     "rationale": "La fiche pose un homonyme partage avec plusieurs groupes, dont les Seba de RDC, source de confusion dans les bases linguistiques, sans mentionner d'auteur colonial."
-  },
-  {
-    "id": "PPL_KUNG",
-    "status": "contested",
-    "rationale": "Le grief vise le nom lui-meme comme etiquette trop large : Kung recouvre 11 a 15 varietes non intercomprehensibles, et Kung et Ju coexistent avec des usages divergents selon les chercheurs."
   },
   {
     "id": "PPL_KURTEY",
@@ -1290,11 +1260,6 @@
     "rationale": "La fiche argue une confusion avec les autres branches Lunda et avec la societe secrete Ndembo du bas-Congo, sans coinage colonial explicite."
   },
   {
-    "id": "PPL_LUNDA_NORTE",
-    "status": "contested",
-    "rationale": "La fiche conteste la categorie Lunda-Chokwe qui melange Lunda (Ruund) et Chokwe, deux peuples de langues et cultures distinctes, et son usage politise par la FNLC et l'ATCR."
-  },
-  {
     "id": "PPL_LUNGU",
     "status": "contested",
     "rationale": "La fiche dit que la denomination Lungu 'regroupe deux groupes distincts qui n'ont jamais collabore', l'un patrilineaire proche des Mambwe, l'autre matrilineaire proche des Bemba."
@@ -1305,19 +1270,9 @@
     "rationale": "« Kavirondo est un terme colonial britannique ... il est considéré péjoratif et n'est plus utilisé officiellement » : coinage colonial plus spécifique que l'ambiguïté générique du terme Luo."
   },
   {
-    "id": "PPL_LUO_BANTU",
-    "status": "reconstructive",
-    "rationale": "La fiche decrit une categorie de classification ethno-linguistique principalement academique, que personne ne porte : les groupes se disent Banyoro, Batooro ou Suba."
-  },
-  {
     "id": "PPL_LUYANA",
     "status": "contested",
     "rationale": "La fiche dit que Lozi 'fut impose par les Makololo lors de la conquete vers 1840' — un conquerant sotho, non colonial — et englobe aujourd'hui des groupes absorbes distincts des Luyana fondateurs."
-  },
-  {
-    "id": "PPL_LWENA",
-    "status": "contested",
-    "rationale": "La fiche vise la pluralite des appellations (Luvale/Lovale/Lubale/Luena/Lwena) qui prete a confusion et le fait que des sources confondent les Lwena avec d'autres groupes Ganguela."
   },
   {
     "id": "PPL_LWIMBI",
@@ -1333,16 +1288,6 @@
     "id": "PPL_MAHN",
     "status": "colonial-legacy",
     "rationale": "La fiche qualifie Mano d'exonyme colonial anglophone et francais le plus courant, en usage au Liberia, tandis que l'auto-designation est Maan."
-  },
-  {
-    "id": "PPL_MAKONDE_MOZ",
-    "status": "contested",
-    "rationale": "La fiche conteste l'amalgame entre Makonde du Mozambique et de Tanzanie et note que Maconde est politiquement charge du fait du role des Makonde dans la guerre d'independance."
-  },
-  {
-    "id": "PPL_MAKONDE_TANZ",
-    "status": "contested",
-    "rationale": "La fiche conteste l'ignorance de la distinction avec les Maconde du Mozambique, les deux populations ayant developpe des langues et trajectoires distinctes."
   },
   {
     "id": "PPL_MAKUA",
@@ -1403,11 +1348,6 @@
     "id": "PPL_MANYIKA",
     "status": "colonial-legacy",
     "rationale": "L'identite manyika est dite construite en partie par les missionnaires et administrateurs coloniaux, qui appliquerent le terme a tous les habitants de Manicaland."
-  },
-  {
-    "id": "PPL_MANYIKA_ZIM",
-    "status": "colonial-legacy",
-    "rationale": "La fiche parle d'une construction coloniale deliberee : les Britanniques appliquerent le terme a tous les habitants de Manicaland, y compris les MaUngwe d'un autre dialecte."
   },
   {
     "id": "PPL_MAO",
@@ -1553,16 +1493,6 @@
     "id": "PPL_NDAU",
     "status": "contested",
     "rationale": "Le « statut des Ndau est débattu », tantôt dialecte du shona tantôt langue distincte, et l'exonyme Amading'indawo vient des Gaza Nguni, groupe africain voisin, non d'un acteur colonial."
-  },
-  {
-    "id": "PPL_NDAU_MOZ",
-    "status": "colonial-legacy",
-    "rationale": "La « littérature portugaise coloniale » désigne les Ndau par le nom de la province de Sofala, et le nom est d'abord documenté par « le missionnaire portugais João dos Santos »."
-  },
-  {
-    "id": "PPL_NDAU_ZIM",
-    "status": "contested",
-    "rationale": "L'étymologie nguni « Amading'indawo » est dite « contestée », et la fiche décrit des « tensions entre identité ndau et identité shona » : un débat interne et savant, sans acteur colonial."
   },
   {
     "id": "PPL_NDEBELE",
@@ -1795,11 +1725,6 @@
     "rationale": "Le nom est « un ethnonyme endogène » : le problème posé est le débat des linguistes dialecte/langue et l'effacement sous les étiquettes Tsonga ou Shangaan, que « les Ronga affirment » refuser."
   },
   {
-    "id": "PPL_RONGA_MOZ",
-    "status": "colonial-legacy",
-    "rationale": "Les Ronga « ont souvent été engloutis dans la catégorie administrative Tsonga lors des recensements coloniaux », le terme ayant été fixé par le philologue suisse Henri-Alexandre Junod."
-  },
-  {
     "id": "PPL_RUNDI",
     "status": "colonial-legacy",
     "rationale": "« La distinction entre Hutu, Tutsi et Twa a été instrumentalisée par les colonisateurs allemands et belges qui ont durci des catégories sociales autrefois plus fluides »."
@@ -1858,11 +1783,6 @@
     "id": "PPL_SENA",
     "status": "colonial-legacy",
     "rationale": "Le nom vient « du comptoir commercial portugais fondé en 1531 par Vicente Pegado » : « c'est donc un exonyme portugais, non un endonyme propre du groupe »."
-  },
-  {
-    "id": "PPL_SENA_MOZ",
-    "status": "colonial-legacy",
-    "rationale": "« Le nom Sena est un exonyme portugais dérivé du comptoir de Sena fondé par Vicente Pegado en 1531 », étendu ensuite par les Portugais au peuple de la région."
   },
   {
     "id": "PPL_SENGA",
@@ -2045,11 +1965,6 @@
     "rationale": "Frafra est employe « de facon imprecise » pour toute la region de Bolgatanga et « peut effacer la specificite des Talensi », qui se designent eux-memes Talensi."
   },
   {
-    "id": "PPL_TEDA",
-    "status": "contested",
-    "rationale": "La fiche pointe un desaccord d'usage savant : Teda designe l'ensemble des Toubou dans la litterature francaise et le seul sous-groupe septentrional en anglais."
-  },
-  {
     "id": "PPL_TEKE",
     "status": "contested",
     "rationale": "L'argument porté est la réduction de sous-groupes distincts (Tio, Teke du Nord, de l'Ouest) sous un seul nom ; les Européens ont seulement « adopté la forme Teke ou Bateke »."
@@ -2148,16 +2063,6 @@
     "id": "PPL_TSWANA",
     "status": "colonial-legacy",
     "rationale": "« Le terme Bechuana fut utilisé par les colonisateurs britanniques », donnant son nom au Bechuanaland, et les autres formes sont listées comme « variantes coloniales »."
-  },
-  {
-    "id": "PPL_TSWA_CALANGA",
-    "status": "contested",
-    "rationale": "« La désignation Tswa Calanga est ambiguë » entre Hlengwe tswa et Kalanga zimbabwéens, et les recensements comptent les Tswa comme Tsonga ; aucun coinage colonial n'est nommé."
-  },
-  {
-    "id": "PPL_TSWA_MOZ",
-    "status": "colonial-legacy",
-    "rationale": "L'amalgame systématique des Tswa avec les Tsonga « remonte à l'époque coloniale portugaise », et « la forme portugaise Tshwa fut utilisée dans les documents coloniaux »."
   },
   {
     "id": "PPL_TUAREG",

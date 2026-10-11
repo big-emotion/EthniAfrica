@@ -28,7 +28,6 @@ const ALLOWED: Record<string, RegExp> = {
   "patronymes/PAT_DIARRA.json": /j[àa]ra/i,
   "peuples/FLG_BANTU/PPL_KONGO.json": /zumbi/i,
   "peuples/FLG_BANTU/PPL_TEKE.json": /bilongo|nkisi/i,
-  "peuples/FLG_KWA/PPL_AGNI.json": /komian/i,
   "peuples/FLG_KWA/PPL_ANYI.json": /komian/i,
   "peuples/FLG_KWA/PPL_FANTE.json": /komfo/i,
   "peuples/FLG_NIGERCONGO/PPL_KABYE.json": /tchodjo/i,

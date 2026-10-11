@@ -13,7 +13,8 @@
         "Ndembu (branche zambienne)",
         "Kazembe-Lunda (branche orientale)",
         "Kanongesha-Lunda",
-        "Ishindi-Lunda"
+        "Ishindi-Lunda",
+        "Lunda-Chokwe (catégorie ethno-politique angolaise regroupant Lunda et Chokwe)"
       ],
       "originOfExonyms": "Les differentes denominations refletent les ramifications geographiques de l'empire Lunda. Ndembu designe la branche installee au nord-ouest de la Zambie. Kazembe-Lunda (ou Lunda orientaux) s'est etablie dans la vallee de la Luapula (Zambie orientale). Le terme Ruund designe la langue du groupe central (nord-ouest du Katanga, RDC). Une lecture historique voit dans Lunda moins un fait ethnique precis qu'un reseau politico-culturel : au sens restreint, les groupements rund ; au sens large, aussi des groupes lozi, ndembo (Ndembu), luena et imbangala.",
       "whyProblematic": null,
@@ -30,7 +31,11 @@
       "Kazembe-Lunda (Lunda orientaux) — vallee de la Luapula (Zambie), chefferie Kazembe",
       "Akosa — sous-groupe lunda",
       "Imbangala — peuple issu des migrations et conquetes lunda vers l'Angola",
-      "Ndembu — branche lunda de Zambie nord-ouest, celebres pour leurs rites d'initiation"
+      "Ndembu — branche lunda de Zambie nord-ouest, celebres pour leurs rites d'initiation",
+      "Shinje (Lunda de la région du Kwango, présents aussi dans le nord-est angolais)",
+      "Minungu (groupe de transition entre Lunda et Mbundu, province nord)",
+      "Badimba (sous-groupe Lunda-Chokwe de la province de Lunda Norte)",
+      "Komungo (petit groupe Lunda du nord de la province)"
     ],
     "origins": {
       "ancientOrigins": "Les Lunda sont originaires de la region de la riviere Kalanyi (nord-ouest du Katanga, RDC actuelle). La tradition orale rapporte que le peuple vivait de peche et d'agriculture dans un coeur territorial riche en rivieres, lacs, forets et savanes. Ils cultivaient le mais, le mil, l'igname, le sorgho, la courge, les haricots, les patates douces, les palmiers a huile et le tabac, et buvaient du vin de palme. Leur organisation initiale etait en petits chefs territoriaux avant la consolidation royale (Etat rund mentionne en 1680).",
@@ -40,13 +45,17 @@
         "Extension vers le nord-ouest de la Zambie : Kanongesha-Lunda et Ishindi-Lunda",
         "Expansion vers la vallee de la Luapula : Kazembe-Lunda (Lunda orientaux)",
         "Raids vers le Gabon et la Republique du Congo septentrional",
-        "Contacts commerciaux avec les traders portugais de la cote atlantique et arabo-swahili de la cote indienne"
+        "Contacts commerciaux avec les traders portugais de la cote atlantique et arabo-swahili de la cote indienne",
+        "Migrations forcées pendant la guerre civile angolaise (1975-2002) vers les villes de Dundo et Lucapa"
       ],
       "historicalSettlementZones": [
         "Musumba (capitale, Katanga nord-ouest, RDC)",
         "Province du Nord-Ouest de Zambie (Kanongesha, Ishindi)",
         "Vallee de la Luapula, Zambie orientale (Kazembe)",
-        "Province du Moxico et de la Lunda Sul en Angola"
+        "Province du Moxico et de la Lunda Sul en Angola",
+        "Bassin du fleuve Cuango (Kwango) et de ses affluents (nord-est de l'Angola)",
+        "Région de Dundo (ancienne capitale de la compagnie Diamang, chef-lieu actuel de Lunda Norte)",
+        "Région de Lucapa et Chitato (municipalités de Lunda Norte)"
       ],
       "unificationsOrDivisions": "Le modele politique lunda (cour dite organisee sur le modele luba, avec une influence mutuelle entre Rund et Luba) permit une expansion unique : les peuples conquis etaient integres en tant que sujets portant un anneau de fer, liberes apres avoir prouve leur loyaute (en rapportant la tete d'un ennemi du royaume), puis pleinement incorpores dans la societe lunda. Apres 1608, les Lunda lancerent des attaques contre les Mbundu (guerre avec le royaume Ndongo), s'enrichissant par le betail et les prisonniers vendus aux Portugais. La traite des esclaves fut abandonnee au 19e siecle lorsque les Europeens cesserent de la pratiquer. La colonisation (1884) divisa le coeur lunda entre le Congo belge, l'Angola portugais et la Rhodesie du Nord britannique.",
       "externalInfluences": "Influence luba : la tradition dit la cour lunda organisee sur le modele luba (Balopwe), mais les historiens notent une influence mutuelle entre Rund et Luba. Contacts precoces avec les Portugais via les traders de la cote atlantique (17e siecle), puis avec les traders arabo-swahili de la cote indienne. Conseillers militaires musulmans et armes datees recues des villes de Nyangwe et Kabambare. Colonisation belge, portugaise et britannique apres 1884.",
@@ -66,7 +75,9 @@
         "Ruund — dialecte central parle a Musumba et dans le nord-ouest du Katanga (RDC)",
         "Chilunda / Lunda de Zambie — parle dans la Province du Nord-Ouest, compris par environ 8,6 % des Zambiens (estimation 1986)",
         "dialectes du Kazembe (Luapula)",
-        "variantes mineures representes en Namibie"
+        "variantes mineures representes en Namibie",
+        "Badimba (variante Lunda-Chokwe locale de Lunda Norte)",
+        "Komungo (petit parler lunda nord de la province)"
       ],
       "vehicularRole": "Le lunda est parle comme langue maternelle et vehiculaire dans les zones rurales du nord-ouest de la Zambie, du nord-est de l'Angola et du Katanga occidental (RDC). Le francais (RDC), le portugais (Angola) et l'anglais (Zambie) sont les langues officielles utilisees dans l'administration."
     },
@@ -85,7 +96,7 @@
     "demography": {
       "totalPopulation": 1175000,
       "referenceYear": 2025,
-      "source": "Joshua Project (2024) : Lunda en RDC 259 000, en Zambie 496 000, en Angola 420 000 — total 1 175 000. Wikipedia (sources diverses) : environ 1 100 000 en RDC, 600 000 en Zambie, 800 000 en Angola. Les estimations varient selon les criteres d'inclusion des sous-groupes.",
+      "source": "Joshua Project (2024) : Lunda en RDC 259 000, en Zambie 496 000, en Angola 420 000 — total 1 175 000. Wikipedia (sources diverses) : environ 1 100 000 en RDC, 600 000 en Zambie, 800 000 en Angola. Les estimations varient selon les criteres d'inclusion des sous-groupes. Une autre estimation compte 300 000 Lunda dans la province angolaise de Lunda Norte en 2025.",
       "distributionByCountry": [
         {
           "country": "COD",
@@ -143,6 +154,29 @@
         "tier": "official",
         "source_kind": "intergovernmental",
         "notes": "Lunda comme réseau politico-culturel : p. 643. État rund non daté par la tradition orale, mentionné en 1680 : p. 646. Cour organisée sur le modèle luba selon la tradition, influence mutuelle des Rund et des Luba : p. 648."
+      },
+      {
+        "title": "Country Studies — Angola, Lunda-Chokwe",
+        "url": "https://countrystudies.us/angola/62.htm",
+        "tier": "referenced",
+        "source_kind": "government"
+      },
+      {
+        "title": "EPR Atlas — Ethnicity in Angola",
+        "url": "https://growup.ethz.ch/atlas/pdf/Angola.pdf",
+        "tier": "needs_review",
+        "source_kind": "academic"
+      },
+      {
+        "title": "Scribd — Introduction Lunda Tshokwe (traduction)",
+        "url": "https://www.scribd.com/document/912218309/INTRODUCTION-LUNDA-TSHOKWE",
+        "tier": "unverified"
+      },
+      {
+        "title": "CIA World Factbook — Angola",
+        "url": "https://www.cia.gov/the-world-factbook/countries/angola/",
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   },

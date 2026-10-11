@@ -7,7 +7,7 @@
     "appellations": {
       "mainName": "Anyi",
       "selfAppellation": "Anyi",
-      "exonyms": ["Agni", "Aowin (sens large)", "Agni-Anyi"],
+      "exonyms": ["Agni", "Aowin (sens large)", "Agni-Anyi", "Ani", "Anya"],
       "originOfExonyms": "La forme Agni est la transcription française courante du nom Anyi, utilisee tout au long de la période coloniale et encore aujourd'hui dans les documents administratifs français et ivoiriens. Historiquement, le terme Aowin (ou Agni en sens large) designait l'ensemble du groupe avant que les differentes sous-branches ne se distinguent. La forme Anyi est privilegiee dans les travaux anglophones recents.",
       "whyProblematic": null,
       "contemporaryUsage": "En Cote d'Ivoire, les formes Agni et Anyi coexistent dans les usages officiels et populaires. Le nom Anyi est de plus en plus adopte dans les travaux linguistiques et ethnographiques. Au Ghana (district municipal Aowin), la population apparentee est souvent designee comme Aowin ou Agni.",
@@ -22,7 +22,10 @@
       "Anyi Moronou",
       "Anyi Djuablin",
       "Anyi Bettie",
-      "Anyi Assonvon"
+      "Anyi Assonvon",
+      "Agni Mrofo",
+      "Agni-Ndeneam",
+      "Agni-Diabe"
     ],
     "origins": {
       "ancientOrigins": "Les Anyi tracent leurs origines a l'ancien etat akan de Bonoman (Brong), dans la zone de transition foret-savane de l'actuel Ghana. Ils font partie du grand mouvement migratoire akan qui a peuple la foret ouest-africaine. Ils sont considers comme le premier peuple de la region a avoir entame des relations avec les Europeens, des le XVIIe siecle. La tradition orale rattache les Anyi aux groupes de l'Aowin (dans l'ancienne Gold Coast), dont ils sont une branche qui a migre vers l'ouest au XVIIIe siecle.",
@@ -39,7 +42,8 @@
         "Arrah, Bongouanou, Ande, M'batto (region Moronou)",
         "Tiassale (region Agneby-Tiassa)",
         "Mafere, Aboisso, Adiaké, Assouakro, Assinie (region Sud-Comoe)",
-        "District Aowin Municipal, Western North Region (Ghana)"
+        "District Aowin Municipal, Western North Region (Ghana)",
+        "Region de l'Ifou et Zanzan"
       ],
       "unificationsOrDivisions": "Les Anyi ne forment pas un etat unitaire mais une nebuleuse de royaumes confederes : Sanwi (le plus structure, fonde par Amalaman Ano), Indenie (sur les bords de la Comoé), Moronou (Agnis Mrôfo), Djuablin et Bettie. Chaque royaume a son propre souverain mais partage la langue, la culture matrilineaire et les traditions politiques akan.",
       "externalInfluences": "Pression des empires Denkyira et Asante a l'origine de la migration. Contact precoce avec les Europeens (XVIIe siecle). Integration dans la sphere coloniale française (fin XIXe siecle), incorporation dans l'Afrique occidentale française. Influence des pasteurs evangeliques togolais de la Church of Pentecost a partir des annees 1950. Tensions sociales post-independance a partir de 1990 entre populations forestieres (dont Anyi) et immigrants du nord.",
@@ -60,7 +64,8 @@
         "Anyi Sanwi",
         "Anyi Moronou",
         "Anyi Djuablin",
-        "Anyi Bettie"
+        "Anyi Bettie",
+        "Anyin du Ghana"
       ],
       "vehicularRole": "La langue anyi (code ISO 639-3 : any) appartient a la branche Central Tano des langues Niger-Congo (famille Kwa). Elle est mutuellement intelligible avec les autres dialectes akan. Elle est principalement parlee dans la region du Sud-Comoé en Cote d'Ivoire, avec environ 250 000 locuteurs dans cette region. Joshua Project recense 1 970 000 locuteurs Anyi au niveau mondial (Ghana et Cote d'Ivoire). Un Nouveau Testament est disponible en anyi."
     },
@@ -79,7 +84,7 @@
     "demography": {
       "totalPopulation": 1970000,
       "referenceYear": 2025,
-      "source": "Joshua Project 2025 (Anyi global : 1 970 000 ; dont 91 000 au Ghana et majoritairement en Cote d'Ivoire). Wikipedia FR estime environ 1 200 000 en Cote d'Ivoire.",
+      "source": "Joshua Project 2025 (Anyi global : 1 970 000 ; dont 91 000 au Ghana et majoritairement en Cote d'Ivoire). Wikipedia FR estime environ 1 200 000 en Cote d'Ivoire. Une autre estimation compte 1 280 000 Anyi en 2025, dont 300 000 au Ghana (Wikipédia, d'après le recensement ivoirien).",
       "distributionByCountry": [
         {
           "country": "CIV",
@@ -111,6 +116,18 @@
         "url": "https://glottolog.org/resource/languoid/id/anyi1245",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Ethnologue - Anyin (ANY)",
+        "url": "https://www.ethnologue.com/language/any/",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "DICE Missouri - Agni (Anyin) database",
+        "url": "https://dice.missouri.edu/assets/docs/niger-congo/Agni.pdf",
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   },

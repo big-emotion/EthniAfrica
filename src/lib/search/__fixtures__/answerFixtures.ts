@@ -414,7 +414,7 @@ const congoRepublic: SearchAnswer = (() => {
     where: {
       unit: "percent",
       estimate: true,
-      rows: [{ peopleId: "PPL_KONGO_BRAZZA", value: 40 }],
+      rows: [{ peopleId: "PPL_KONGO", value: 40 }],
       unsplitPercent: 60,
       documentedPeopleCount: 25,
     },

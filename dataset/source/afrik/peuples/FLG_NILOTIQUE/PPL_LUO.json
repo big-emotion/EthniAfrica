@@ -11,7 +11,8 @@
       "exonyms": [
         "Jonagi",
         "Jaonagi",
-        "Kavirondo (terme colonial britannique, perçu comme pejoratif)"
+        "Kavirondo (terme colonial britannique, perçu comme pejoratif)",
+        "Nilotic Kavirondo (terme colonial britannique, obsolete)"
       ],
       "originOfExonyms": "Kavirondo est un terme colonial britannique qui designait les populations du golfe de Kavirondo (actuel golfe de Winam sur le lac Victoria) ; il est considere pejoratif et n'est plus utilise officiellement. Joluo et Jaluo sont les termes endogenes usuels.",
       "whyProblematic": "Le terme Luo est generique et designe un ensemble de peuples nilotiques de l'ouest (Luo du Nil Blanc en Ouganda, Acholi, Alur, Adhola, Padhola, Shilluk du Soudan du Sud, etc.). Les Luo du Kenya et de Tanzanie se distinguent comme les seuls river-lake Nilotes (Nilotiques de riviere et de lac) du groupe. Il convient de preciser Luo du Kenya ou Dholuo pour eviter la confusion.",
@@ -156,6 +157,12 @@
         "url": "https://rsisinternational.org/journals/ijriss/articles/population-movements-and-the-consolidation-of-authority-in-the-inter-lacustrine-region-of-western-kenya-a-political-transformation-of-gem-community-in-pre-colonial-times/",
         "tier": "referenced",
         "source_kind": "academic"
+      },
+      {
+        "title": "Britannica — Luo people",
+        "url": "https://www.britannica.com/topic/Luo-people",
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
       }
     ]
   },

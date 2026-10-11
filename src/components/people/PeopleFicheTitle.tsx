@@ -10,7 +10,7 @@ import type { Language } from "@/types/shared";
  * The band a people fiche opens on, above the globe.
  *
  * The head used to sit inside the parchment, below a full-bleed band some
- * 520px tall: a reader arriving on `/fr/atlas/peuples/PPL_KUNG` saw a globe
+ * 520px tall: a reader arriving on `/fr/atlas/peuples/PPL_JUHOANSI` saw a globe
  * and nothing naming the page they were on, because the name was below the
  * fold on every screen. Every other surface on the site — the quiz, the
  * facets, the names atlas — states its title directly under the header, and

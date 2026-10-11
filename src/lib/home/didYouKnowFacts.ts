@@ -699,7 +699,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
       "Le nom a ensuite circulé dans d’autres usages. Le mot turc yamyam en serait issu, et une plante porte encore le nom scientifique Impatiens niamniamensis. Ces mots gardent ainsi la trace d’une réputation attribuée aux Azande.",
     ],
     entities: [
-      { kind: "people", id: "PPL_AZANDE_SUD", label: "Azande" },
+      { kind: "people", id: "PPL_ZANDE", label: "Azande" },
       { kind: "country", id: "SSD", label: "Soudan du Sud" },
       { kind: "country", id: "COD", label: "République démocratique du Congo" },
       { kind: "country", id: "CAF", label: "République centrafricaine" },
@@ -1056,7 +1056,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
       "Ces regroupements rendent les Vatswa moins visibles dans les chiffres publiés. La fiche rattache cette confusion aux usages de l’administration coloniale portugaise, qui écrivait Tshwa. Il faut donc regarder les catégories du recensement avant d’interpréter ses nombres.",
     ],
     entities: [
-      { kind: "people", id: "PPL_TSWA_MOZ", label: "Vatswa" },
+      { kind: "people", id: "PPL_TSWA", label: "Vatswa" },
       { kind: "people", id: "PPL_RONGA", label: "Ronga" },
       { kind: "country", id: "MOZ", label: "Mozambique" },
     ],

@@ -201,7 +201,13 @@
       "exonyms": [
         "Zande (terme anglophone courant)",
         "Nzakara (designation d'un sous-groupe)",
-        "A-Zande (graphie avec prefixe du pluriel bantou adopte par les premiers voyageurs europeens)"
+        "A-Zande (graphie avec prefixe du pluriel bantou adopte par les premiers voyageurs europeens)",
+        "Azandeh",
+        "Azende",
+        "Bazende",
+        "Niam-Niam (pejoratif, suggere le cannibalisme, employe par les Arabes et les Occidentaux aux 18e-19e siecles)",
+        "Nyam nyam",
+        "Neam Nam"
       ],
       "originOfExonyms": "Azande signifierait ceux qui possèdent beaucoup de terres, en référence aux conquêtes du peuple et à l'extension de son territoire. Le nom est employé par le peuple lui-même et à l'extérieur. Les textes en anglais et les recherches emploient Zande. Nzakara désigne un groupe de la branche Bandia.",
       "whyProblematic": "La confusion entre Azande (peuple) et Zande (langue) est frequente. De plus, le terme Azande designe un macro-groupe constitue de nombreux peuples assimiles par la conquete Avungara : tous les Azande ne partagent pas les memes origines, mais ont adopte la langue et la culture zande.",
@@ -219,7 +225,9 @@
       "Apambia — sous-groupe assimile",
       "Geme — sous-groupe assimile",
       "Kpatiri — sous-groupe assimile",
-      "Nzakara — sous-groupe de la branche Bandia en RCA"
+      "Nzakara — sous-groupe de la branche Bandia en RCA",
+      "Makaraka (sous-groupe azande du Soudan du Sud, cite parmi les noms alternatifs)",
+      "Mbomu (sous-groupe azande de la region de la riviere Mbomu, entre RCA et RDC)"
     ],
     "origins": {
       "ancientOrigins": "Les Azande ont ete formes par une conquete militaire dans la premiere moitie du 18e siecle. Deux dynasties d'origines differentes les ont constitues : les Vungara (Avungara) qui ont cree l'identite politique, linguistique et culturelle du groupe, et les Bandia, une dynasty non-zande qui s'est etendue vers le nord du Zaire actuel en adoptant les coutumes zande. Au debut du 19e siecle, les Bandia etaient devenus suzerains des Vungara et les deux groupes formerent ensemble le peuple Azande. Ils habitaient les savanes de ce qui est aujourd'hui le sud-est de la Republique centrafricaine.",
@@ -227,13 +235,16 @@
       "migrationRoutes": [
         "Expansion depuis le sud-est de la RCA (berceau originel dans les savanes) vers l'est",
         "Extension vers le nord-est de la RDC (Haut-Uele, Bas-Uele) sous les Avungara et Bandia",
-        "Penetration vers le nord dans l'actuel Soudan du Sud (Equatoria occidental) jusqu'a ce que les razzias soudanaises du 19e siecle stoppent l'expansion"
+        "Penetration vers le nord dans l'actuel Soudan du Sud (Equatoria occidental) jusqu'a ce que les razzias soudanaises du 19e siecle stoppent l'expansion",
+        "Migrations de populations liees aux raids soudanais et aux perturbations coloniales du 19e siecle"
       ],
       "historicalSettlementZones": [
         "Savanes du sud-est de la RCA (zone de la Haute-Sangha et de la Haute-Kotto)",
         "Province du Haut-Uele (nord-est de la RDC)",
         "Province du Bas-Uele (nord de la RDC)",
-        "Equatoria occidental (Soudan du Sud) : region de Yambio"
+        "Equatoria occidental (Soudan du Sud) : region de Yambio",
+        "Equatoria central (Soudan du Sud) : Yei, Momoi",
+        "Bahr el Ghazal occidental (Soudan du Sud) : Wau Town"
       ],
       "unificationsOrDivisions": "L'empire Azande etait un systeme de royaumes autonomes lies par la communaute de la dynasty Avungara. A la mort d'un roi, ses fils se disputaient la succession : le fils perdant etablissait souvent un royaume dans une region voisine, propageant ainsi l'empire vers l'est et le nord. A l'apogee, plusieurs royaumes autonomes coexistaient (Tamburo, Ezo, Gbudue au Soudan ; Ndoromo, Wandu, Ngima au Congo belge ; Kipa en AEF francaise). La colonisation europeenne a divise ces royaumes entre la Belgique, la France et l'Anglo-Egypte soudanaise.",
       "externalInfluences": "Razzias soudanaises (marchands d'esclaves du nord) au 19e siecle qui ont stoppe l'expansion nordique. Partage colonial entre Belgique (Congo belge), France (AEF) et Anglo-Egypte (Soudan) apres 1884. Tentative britannique de modernisation agricole : le Zande Scheme (1944-1950s) imposant la resettlement et la culture du coton a echoue. Christianisation depuis les missions catholiques et protestantes ; 85% des Azande se declarent aujourd'hui chretiens.",
@@ -256,7 +267,9 @@
         "Apambia",
         "Geme",
         "Kpatiri",
-        "Nzakara (sous-groupe Bandia en RCA, parfois considere comme langue distincte)"
+        "Nzakara (sous-groupe Bandia en RCA, parfois considere comme langue distincte)",
+        "Dio (dialecte principal, parle au Soudan du Sud et en RDC)",
+        "Makaraka (dialecte du sous-groupe Makaraka au Soudan du Sud)"
       ],
       "vehicularRole": "Le zande (Pa-Zande) est parle par environ 1,1 million de locuteurs dont 730 000 en RDC, 62 000 en RCA et 350 000 au Soudan du Sud (SIL Ethnologue). C'est une langue stable et transmise a toutes les generations. Il est enseigne dans certaines ecoles. Le francais est utilise en RCA et en RDC ; l'anglais au Soudan du Sud."
     },
@@ -275,7 +288,7 @@
     "demography": {
       "totalPopulation": 2000000,
       "referenceYear": 2025,
-      "source": "SIL Ethnologue (2024) : 1,1 million de locuteurs du zande (730 000 en RDC, 62 000 en RCA, 350 000 au Soudan du Sud). Wikipedia Azande people : estimations totales de 1,1 million de locuteurs. Liste ethnique du Soudan du Sud : 878 000 Zande. Estimation totale en 2025 (incluant locuteurs dans les 3 pays et croissance demographique) : environ 2 millions.",
+      "source": "SIL Ethnologue (2024) : 1,1 million de locuteurs du zande (730 000 en RDC, 62 000 en RCA, 350 000 au Soudan du Sud). Wikipedia Azande people : estimations totales de 1,1 million de locuteurs. Liste ethnique du Soudan du Sud : 878 000 Zande. Estimation totale en 2025 (incluant locuteurs dans les 3 pays et croissance demographique) : environ 2 millions. Une autre estimation compte 1 200 000 Azande en 2025, dont 600 000 au Soudan du Sud (Ethnologue, Joshua Project).",
       "distributionByCountry": [
         {
           "country": "COD",
@@ -333,6 +346,23 @@
         "title": "HistoryFiles — Kingdoms of Central Africa : Zande State of Vungara",
         "url": "https://www.historyfiles.co.uk/KingListsAfrica/AfricaZandeVungara.htm",
         "tier": "needs_review"
+      },
+      {
+        "title": "Joshua Project — Azande in South Sudan",
+        "url": "https://joshuaproject.net/people_groups/10526/od",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      },
+      {
+        "title": "Conflict Sensitivity Resource Facility — Ezo County, Western Equatoria",
+        "url": "https://csrf-southsudan.org/county_profile/ezo/",
+        "tier": "needs_review"
+      },
+      {
+        "title": "CIA World Factbook — South Sudan",
+        "url": "https://www.cia.gov/the-world-factbook/countries/south-sudan/",
+        "tier": "official",
+        "source_kind": "government"
       }
     ]
   }
