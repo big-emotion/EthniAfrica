@@ -211,5 +211,163 @@
       "fieldPath": "bearers",
       "reason": "Le nom est porté par de nombreuses personnalités publiques nigérianes, mais aucune ayant revendiqué publiquement, en ses propres mots, une identité yoruba n'a été retrouvée ; en l'absence d'une telle déclaration, aucun porteur ne peut être cité ici."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Balogun est d'abord un titre yoruba, celui du chef de guerre ; il est aussi porté comme nom de personne. Ce n'est pas un nom de clan. Les sources ne s'accordent pas sur la façon dont le mot s'est formé ; nous présentons plus bas leurs explications.",
+    "names": [
+      {
+        "nameText": "Balogun",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "yor",
+        "namedBy": null,
+        "shortLine": "Un titre yoruba de chef de guerre, porté aussi comme nom de personne.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du titre"
+            },
+            "statement": "Le nom Balogun désigne un titre yoruba, celui du chef de guerre, qui commande les guerriers d'une ville. C'est un titre qu'on reçoit, pas le nom d'un clan. Les sources expliquent de plusieurs façons la formation du mot ; nous les présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Vocabulary of the Yoruba Language",
+                "author": "Samuel Crowther",
+                "year": 1852,
+                "url": "https://archive.org/details/vocabularyofyoru00crow",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 60",
+                "notes": "Seeleys, Londres, 1852. L'auteur, né en pays yoruba, est un pasteur de la Church Missionary Society. Lu dans la numérisation d'Internet Archive. Page 60 : « Balogun (obba-ni-ogun), Ibalogun, s. a war chief, officer »."
+              },
+              {
+                "title": "The History of the Yorubas",
+                "author": "Samuel Johnson",
+                "year": 1921,
+                "url": "https://archive.org/details/historyofyorubas00john",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 90 et 133",
+                "notes": "Première édition en 1921, préparée par O. Johnson d'après le manuscrit de l'auteur, pasteur d'Oyo. Lu dans une réimpression des CMS Bookshops de Lagos, numérisée par Internet Archive. Page 90 : le plus brave est choisi comme Jagun ou Balogun ; page 133 : le Balogun commande l'armée au camp."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1852,
+              "to": 1852,
+              "label": "1852"
+            },
+            "statement": "Le nom Balogun apparaît dans le vocabulaire yoruba de Samuel Crowther, qui le traduit par « chef de guerre, officier », avec la forme longue Ibalogun. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le titre existe.",
+            "formAsWritten": "Balogun",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Samuel Crowther",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Vocabulary of the Yoruba Language",
+                "author": "Samuel Crowther",
+                "year": 1852,
+                "url": "https://archive.org/details/vocabularyofyoru00crow",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 60",
+                "notes": "Seeleys, Londres, 1852. L'auteur, né en pays yoruba, est un pasteur de la Church Missionary Society. Lu dans la numérisation d'Internet Archive. Page 60 ; l'entrée Ibalogun, page 123, donne aussi « captain, head warrior, officer, war-chief »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1852,
+              "to": 1852,
+              "label": "Proposé en 1852"
+            },
+            "statement": "Le nom Balogun viendrait de obba-ni-ogun, où obba veut dire « roi » et ogun « guerre », selon la décomposition que donne Samuel Crowther.",
+            "hypothesisGroup": "formation du mot Balogun",
+            "sources": [
+              {
+                "title": "A Vocabulary of the Yoruba Language",
+                "author": "Samuel Crowther",
+                "year": 1852,
+                "url": "https://archive.org/details/vocabularyofyoru00crow",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 60",
+                "notes": "Seeleys, Londres, 1852. L'auteur, né en pays yoruba, est un pasteur de la Church Missionary Society. Lu dans la numérisation d'Internet Archive. Page 60 : « Balogun (obba-ni-ogun) ». Le même vocabulaire traduit obba par « king », par exemple page 62."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Proposé en 1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Balogun serait la contraction de Iba-li-Ogun, « seigneur à la guerre », selon Samuel Johnson, pasteur et historien d'Oyo.",
+            "hypothesisGroup": "formation du mot Balogun",
+            "sources": [
+              {
+                "title": "The History of the Yorubas",
+                "author": "Samuel Johnson",
+                "year": 1921,
+                "url": "https://archive.org/details/historyofyorubas00john",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 133",
+                "notes": "Première édition en 1921, préparée par O. Johnson d'après le manuscrit de l'auteur, pasteur d'Oyo. Lu dans une réimpression des CMS Bookshops de Lagos, numérisée par Internet Archive. Page 133 : « The term Balogun is contracted from Iba-li-Ogun i.e. lord in war »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Balogun viendrait de ba(ba)-ní-ogun, « père à la guerre », selon le dictionnaire collaboratif YorubaNames, qui le traduit aussi par « le général ».",
+            "hypothesisGroup": "formation du mot Balogun",
+            "sources": [
+              {
+                "title": "Balógun — YorubaNames",
+                "author": "YorubaNames",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/Balogun",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Dictionnaire collaboratif des noms yoruba, lu en ligne le 11 octobre 2026. L'entrée donne le sens « père à la guerre, le général » et le découpage ba(ba)-ní-ogun, sans citer de source."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par Samuel Johnson"
+            },
+            "statement": "Le nom Balogun est celui du chef qu'une ville naissante choisit pour se défendre : le plus brave est nommé Jagun ou Balogun, puis choisit à son tour ses lieutenants. À Ibadan, le Balogun vient en tête des chefs de guerre, avec ses lieutenants Otun et Osi, selon Samuel Johnson.",
+            "sources": [
+              {
+                "title": "The History of the Yorubas",
+                "author": "Samuel Johnson",
+                "year": 1921,
+                "url": "https://archive.org/details/historyofyorubas00john",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 90 et 132",
+                "notes": "Première édition en 1921, préparée par O. Johnson d'après le manuscrit de l'auteur, pasteur d'Oyo. Lu dans une réimpression des CMS Bookshops de Lagos, numérisée par Internet Archive. Page 90, sur le choix du Jagun ou Balogun ; page 132, sur les titres militaires d'Ibadan."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

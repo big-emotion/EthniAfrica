@@ -189,5 +189,220 @@
       "fieldPath": "homonyms",
       "reason": "Le dictionnaire des jamuw réunit Dunbiya, Dunbuya, Dumuya et Dunmuya sous une seule entrée et range Kouroma et Sissoko parmi ses équivalences — des noms de clan d'autres peuples tenus pour le même. Quatre graphies et deux correspondances, aucune lignée d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Doumbia est un nom de clan, ou jamu, porté chez les Bambara, les Malinké, au Wassoulou et chez les Kagoro. Le dictionnaire des noms de clan l'écrit Dunbiya ; les femmes du clan portent un autre nom, Sakiliba. On ne sait pas avec certitude d'où vient le nom, et nous ne connaissons aucune explication de son origine.",
+    "names": [
+      {
+        "nameText": "Doumbia",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan mandingue ; on ne sait pas d'où il vient.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Doumbia désigne un clan, que le dictionnaire des noms de clan mandingues écrit Dunbiya, avec les formes Dunbuya, Dumuya et Dunmuya. Il le rattache aux Bambara, aux Malinké, au Wassoulou et aux Kagoro et lui donne pour équivalents Kourouma et Sissoko, sans lui donner de sens. On ne sait pas avec certitude d'où vient le nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet lu. Entrée Dunbiya : variantes, groupes et équivalents ; aucun sens ni statut donné au nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "Publié en 1892"
+            },
+            "statement": "Le nom Doumbia apparaît sous une forme proche, « Dombia », chez Louis-Gustave Binger, qui range les Dombia parmi les familles de griots des Malinké, avec les Kouyaté. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand un voyageur l'a noté, pas depuis quand des familles le portent.",
+            "formAsWritten": "Dombia",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Louis-Gustave Binger",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, tome 2",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74721",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 2, p. 376",
+                "notes": "Hachette, Paris, 1892, deux tomes ; récit du voyage de 1887-1889. Lu dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée. Tome 2, page 376, dans la liste des familles mandé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Doumbia est écrit « Doumouya » par Maurice Delafosse, qui compte les Doumouya parmi les principaux clans malinké et y range les Kourouma.",
+            "formAsWritten": "Doumouya",
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 140",
+                "notes": "Émile Larose, Paris, 1912. L'auteur est un administrateur colonial en Afrique-Occidentale française. Lu sur l'édition du Projet Gutenberg, qui marque les pages de l'imprimé. Page 140, dans la liste des clans malinké."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Doumbia est porté, selon le mémoire d'E. A. Bogacheva, par des forgerons (numu), par des griots chez les Bambara, surtout autour de Bougouni, et par des hommes libres (hɔ́rɔn) chez les Malinké, ce dernier point d'après l'officier Molinie.",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 37",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Dunbiya : les statuts."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1959,
+              "to": 1959,
+              "label": "Rapporté en 1959"
+            },
+            "era": "colonial",
+            "statement": "Le nom Doumbia viendrait de la même famille que le nom Sissoko, et les deux noms s'échangeraient selon les régions, selon l'officier Molinie, cité par E. A. Bogacheva. Molinie range aussi les Doumbia parmi les bula, venus pour la plupart du Siendougou, dans la région de Sibi.",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Dunbiya, d'après le dictionnaire de Molinie de 1959, destiné aux Européens en poste en Afrique-Occidentale française."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Récit non daté"
+            },
+            "statement": "Le nom Doumbia est celui de familles qui tiennent Fakoli pour leur ancêtre, selon le mémoire d'E. A. Bogacheva, qui ne dit pas d'où vient cette indication.",
+            "actors": [
+              {
+                "name": "Fakoli",
+                "role": "ancêtre du clan selon cette indication"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Dunbiya : la mention de Fakoli comme ancêtre, sans source indiquée."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sakiliba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que portent les femmes du clan Doumbia.",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sakiliba est le nom de clan que portent les femmes du clan Doumbia, selon le dictionnaire des noms de clan.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet lu. Entrée Sakiliba : « jamu féminin, correspondant à Dunbuya », note en russe traduite ici par nous."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sakiliba apparaît chez Maurice Delafosse, qui le cite parmi les clans malinké et précise en note que, d'après le Père Brun, c'est le nom donné aux femmes du clan des Doumouya. C'est la plus ancienne trace écrite de ce nom que le projet connaît.",
+            "formAsWritten": "Sakiliba",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 140, note 74",
+                "notes": "Émile Larose, Paris, 1912. L'auteur est un administrateur colonial en Afrique-Occidentale française. Lu sur l'édition du Projet Gutenberg, qui marque les pages de l'imprimé. Page 140 et sa note 74."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

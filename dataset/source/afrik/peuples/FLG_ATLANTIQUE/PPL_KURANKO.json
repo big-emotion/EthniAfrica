@@ -117,5 +117,155 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kuranko désigne un peuple mandé des hautes terres du nord-est de la Sierra Leone et des régions voisines de la Guinée, qui se nomme lui-même Kuranko ; on l'écrit aussi Koranko ou Kouranko. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Kuranko",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "knk",
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple mandé de Sierra Leone et de Guinée, écrit dès 1825.",
+        "periodLabel": "Écrit depuis 1825 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kuranko désigne un peuple du grand ensemble mandé, installé dans les montagnes du nord-est de la Sierra Leone et dans les régions voisines de la Guinée, selon le glossaire Sierra Leone Heritage. Les sources que nous avons lues n'expliquent pas d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Kuranko — glossaire",
+                "author": "Sierra Leone Heritage",
+                "year": null,
+                "url": "https://sierraleoneheritage.org/glossary/kuranko",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Notice du glossaire du site Sierra Leone Heritage, consacré aux collections sierra-léonaises des musées, lue le 11 octobre 2026. Elle renvoie à Michael Jackson, The Kuranko (Londres, 1977), que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Tradition orale non datée"
+            },
+            "statement": "Le nom Kuranko figure aussi dans les traditions orales des Temne, qui font remonter la fondation de leurs chefferies de Kunike et de Kolifa à l'arrivée de chasseurs kuranko, selon le glossaire Sierra Leone Heritage.",
+            "sources": [
+              {
+                "title": "Kuranko — glossaire",
+                "author": "Sierra Leone Heritage",
+                "year": null,
+                "url": "https://sierraleoneheritage.org/glossary/kuranko",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Notice du glossaire du site Sierra Leone Heritage, consacré aux collections sierra-léonaises des musées, lue le 11 octobre 2026. Elle renvoie à Michael Jackson, The Kuranko (Londres, 1977), que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kuranko, écrit Kouranko, désigne chez l'administrateur colonial André Arcin un pays du sud-ouest du haut Niger, en Guinée française, où les Malinké forment selon lui le fond de la population.",
+            "formAsWritten": "Kouranko",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 213",
+                "notes": "Paris, Augustin Challamel, 1907. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1822,
+              "to": 1825,
+              "label": "1822, récit publié en 1825"
+            },
+            "era": "polity",
+            "statement": "Le nom Kooranko désigne aussi chez Alexander Gordon Laing un vaste royaume, divisé en petits États, dont le roi Ballansama réside à Kolakonka. Il note que les Koorankos sont proches des Mandingues par la langue et le costume.",
+            "formAsWritten": "Koorankos",
+            "actors": [
+              {
+                "name": "Ballansama",
+                "role": "roi du Kuranko du nord-ouest en 1822, selon Laing"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels in the Timannee, Kooranko, and Soolima Countries, in Western Africa",
+                "author": "Alexander Gordon Laing",
+                "year": 1825,
+                "url": "https://archive.org/details/b33487467",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 194-197",
+                "notes": "Londres, John Murray, 1825, récit du voyage de 1822. Lu dans l'exemplaire numérisé par la Wellcome Library et diffusé par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1822,
+              "to": 1825,
+              "label": "1822, récit publié en 1825"
+            },
+            "era": "polity",
+            "statement": "Le nom Kuranko apparaît par écrit chez l'officier écossais Alexander Gordon Laing, qui l'écrit Kooranko : parti de Freetown en 1822, il doit traverser « les pays des Timannees et des Koorankos ». C'est la plus ancienne trace de ce nom que le projet connaît. Les Kuranko vivaient déjà dans ces montagnes avant lui.",
+            "formAsWritten": "Koorankos",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels in the Timannee, Kooranko, and Soolima Countries, in Western Africa",
+                "author": "Alexander Gordon Laing",
+                "year": 1825,
+                "url": "https://archive.org/details/b33487467",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 25",
+                "notes": "Londres, John Murray, 1825, récit du voyage de 1822. Lu dans l'exemplaire numérisé par la Wellcome Library et diffusé par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1600,
+              "label": "XVIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Kuranko n'a pas de trace écrite connue quand ses ancêtres arrivent en Sierra Leone, au XVIe siècle, dans la dispersion des peuples mandingues qui suit le déclin de l'empire du Mali, selon le glossaire Sierra Leone Heritage. Les traditions orales kuranko racontent des vagues d'arrivants qui prennent des terres aux Kissi et aux Limba.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Kuranko — glossaire",
+                "author": "Sierra Leone Heritage",
+                "year": null,
+                "url": "https://sierraleoneheritage.org/glossary/kuranko",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Notice du glossaire du site Sierra Leone Heritage, consacré aux collections sierra-léonaises des musées, lue le 11 octobre 2026. Elle renvoie à Michael Jackson, The Kuranko (Londres, 1977), que nous n'avons pas lu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

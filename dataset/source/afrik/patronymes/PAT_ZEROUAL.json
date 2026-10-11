@@ -124,5 +124,181 @@
   "nisbaSubtype": {
     "value": "other",
     "sourceRefs": ["zeroual-mosta", "azerwal-ircam"]
+  },
+  "nameHistory": {
+    "summary": "Le nom Zeroual est porté en Algérie ; c'est aussi le nom de tribus, les Béni Zeroual. Au Maroc, une forme proche s'écrit Ezzerwali. Une seule explication de son origine est connue ; nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Zeroual",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom d'Algérie, aussi nom de tribus ; il viendrait d'un mot berbère.",
+        "periodLabel": "Écrit dès 1838 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Zeroual est celui de tribus d'Algérie, les Béni Zeroual. Une seule explication de son origine est connue ; nous la présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Étude diachronique des anthroponymes algériens : cas de la ville de Mostaganem",
+                "author": "Yamina Taibi-Maghraoui",
+                "year": 2017,
+                "url": "https://e-biblio.univ-mosta.dz/bitstream/handle/123456789/2368/Th%C3%A8se%20de%20Magheraoui.pdf?sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 97-98",
+                "notes": "Thèse de doctorat, Université Abdelhamid Ibn Badis de Mostaganem, 2016-2017. Lu le 11 octobre 2026. Pages 97-98 : les Béni Zeroual de la plaine du Chélif, d'après Habib Tengour (1987), et leurs quatre saints, dont Sidi Ben Chaa, saint patron ; puis, d'après Daef Lahcen, « Azerwal » désigne « une personne aux yeux bleus ou verts », d'où les « Izerwalen » ou « Béni Zerwal » d'une tribu du Souss, que la thèse place « en Tunisie » alors que le Souss est au Maroc."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1838,
+              "to": 1838,
+              "label": "25 mars 1838"
+            },
+            "era": "polity",
+            "statement": "Le nom Zeroual apparaît par écrit dans une lettre du capitaine Daumas, consul de France à Mascara, qui cite les Beni Zeroual. Une note de l'éditeur en fait une confédération de tribus du Dahra. C'est la plus ancienne trace de ce nom que le projet connaît ; les tribus qui le portent sont plus anciennes que cette lettre.",
+            "formAsWritten": "Beni Zeroual",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Le capitaine Daumas",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Correspondance du capitaine Daumas, consul à Mascara (1837-1839)",
+                "author": "Capitaine Daumas ; édition de Georges Yver",
+                "year": 1912,
+                "url": "https://archive.org/details/1-correspondance-du-capitaine-daumas-consul-a-mascara",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 143",
+                "notes": "Édition de Georges Yver, 1912. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Lettre de Daumas au général Rapatel, Mascara, 25 mars 1838, page 143 : le califfa doit aller « chez les Medjaers, de là chez les Beni Zeroual » ; la note 1 de l'éditeur décrit les Beni Zeroual comme une confédération de tribus de la région montagneuse du Dahra."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1852,
+              "to": 1852,
+              "label": "Chronique traduite en 1852"
+            },
+            "statement": "Le nom Zeroual apparaît sous une forme proche, Beni-Zerouel, dans une chronique arabe d'Ibn Hammad que traduit Auguste Cherbonneau : elle nomme ainsi des Kabyles du mont Selat, ralliés à l'insurgé Abou-Yezid. Les sources ne disent pas si ce groupe a un lien avec les Béni Zeroual du Dahra.",
+            "formAsWritten": "Beni-Zerouel",
+            "sources": [
+              {
+                "title": "Documents inédits sur l'hérétique Abou-Yezid-Mokhalled-ibn-Kidad de Tademket, traduits de la chronique d'Ibn-Hammad",
+                "author": "Auguste Cherbonneau",
+                "year": 1852,
+                "url": "https://archive.org/details/journalasiatiqu23fragoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 484",
+                "notes": "Journal asiatique, 4e série, tome XX, décembre 1852, p. 470 et suivantes. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Page 484 : « Abou-Yezid enrôlait sous ses drapeaux les Beni-Zerouel, Kabyles du mont Selat ». Traduction d'une chronique arabe du cadi Ibn Hammad, d'après deux manuscrits de Constantine."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1987,
+              "to": 1987,
+              "label": "Décrit en 1987"
+            },
+            "era": "modern",
+            "statement": "Le nom Zeroual est celui des Béni Zeroual de la plaine du Chélif, une tribu qui se rattache à quatre saints, dont Sidi Ben Chaa, son saint patron. C'est ce qu'écrit Habib Tengour, cité dans une thèse sur les noms de Mostaganem.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Étude diachronique des anthroponymes algériens : cas de la ville de Mostaganem",
+                "author": "Yamina Taibi-Maghraoui",
+                "year": 2017,
+                "url": "https://e-biblio.univ-mosta.dz/bitstream/handle/123456789/2368/Th%C3%A8se%20de%20Magheraoui.pdf?sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 97-98",
+                "notes": "Thèse de doctorat, Université Abdelhamid Ibn Badis de Mostaganem, 2016-2017. Lu le 11 octobre 2026. Pages 97-98 : les Béni Zeroual de la plaine du Chélif, d'après Habib Tengour (1987), et leurs quatre saints, dont Sidi Ben Chaa, saint patron ; puis, d'après Daef Lahcen, « Azerwal » désigne « une personne aux yeux bleus ou verts », d'où les « Izerwalen » ou « Béni Zerwal » d'une tribu du Souss, que la thèse place « en Tunisie » alors que le Souss est au Maroc."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2017,
+              "label": "Rapporté en 2005 et en 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Zeroual viendrait du berbère azerwal, qui désigne une personne aux yeux bleus ou verts : une tribu entière en aurait reçu le nom de Béni Zerwal, selon Daef Lahcen, cité dans une thèse sur les noms de Mostaganem. Au Maroc, l'Institut royal de la culture amazighe rattache de même le nom Ezzerwali à azarwal, « aux yeux bleus ».",
+            "hypothesisGroup": "origine du nom Zeroual",
+            "sources": [
+              {
+                "title": "Étude diachronique des anthroponymes algériens : cas de la ville de Mostaganem",
+                "author": "Yamina Taibi-Maghraoui",
+                "year": 2017,
+                "url": "https://e-biblio.univ-mosta.dz/bitstream/handle/123456789/2368/Th%C3%A8se%20de%20Magheraoui.pdf?sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 97-98",
+                "notes": "Thèse de doctorat, Université Abdelhamid Ibn Badis de Mostaganem, 2016-2017. Lu le 11 octobre 2026. Pages 97-98 : les Béni Zeroual de la plaine du Chélif, d'après Habib Tengour (1987), et leurs quatre saints, dont Sidi Ben Chaa, saint patron ; puis, d'après Daef Lahcen, « Azerwal » désigne « une personne aux yeux bleus ou verts », d'où les « Izerwalen » ou « Béni Zerwal » d'une tribu du Souss, que la thèse place « en Tunisie » alors que le Souss est au Maroc."
+              },
+              {
+                "title": "The Memory Imprint: Amazigh Landmarks in the National Culture",
+                "author": "Lhoussain Rachid",
+                "year": 2005,
+                "url": "https://biblio.ircam.ma/pmb/uploads/publications/71.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 98",
+                "notes": "Institut royal de la culture amazighe, série Traduction n° 6, 2005, traduction de Mohamed Ouakrime. Lu le 11 octobre 2026. Page 98, parmi des noms de famille marocains d'origine amazighe : « Ezzerwali : `Azarwal' means `blue-eyed' », et Tazerwalt, lieu de la province de Tiznit."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ezzerwali",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille marocain proche de Zeroual, rattaché au berbère azarwal.",
+        "periodLabel": "Écrit dès 2005",
+        "accounts": [
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Ezzerwali figure dans une publication de l'Institut royal de la culture amazighe, parmi des noms de famille marocains d'origine amazighe. C'est la plus ancienne trace de cette forme que le projet connaît.",
+            "formAsWritten": "Ezzerwali",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Memory Imprint: Amazigh Landmarks in the National Culture",
+                "author": "Lhoussain Rachid",
+                "year": 2005,
+                "url": "https://biblio.ircam.ma/pmb/uploads/publications/71.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 96-98",
+                "notes": "Institut royal de la culture amazighe, série Traduction n° 6, 2005, traduction de Mohamed Ouakrime. Lu le 11 octobre 2026. Pages 96-98 : une liste de noms de famille d'origine amazighe « now rooted in urban areas », dont « Ezzerwali » à la page 98."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

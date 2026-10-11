@@ -128,5 +128,412 @@
         "notes": "Classification comparative interne des langues gbe (éwé, fon, aja, mina, gen)."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Mina désigne les habitants d'Aného, de Glidji, d'Agbodrafo et d'Agoué, sur la côte du Togo et du Bénin, qui se nomment eux-mêmes Gen, ou Guin en français. D'autres noms ont circulé : Popo et Accra chez les Européens. Les sources ne s'accordent pas toujours sur l'origine de ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Gen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple d'Aného et de Glidji dans sa propre langue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2000,
+              "to": 2005,
+              "label": "Colloque d'Aného, 2000"
+            },
+            "era": "modern",
+            "statement": "Le nom Gen est celui que ce peuple se donne dans sa propre langue, selon l'historien Robin Law. Lors d'un colloque tenu à Aného en 2000, un membre de la communauté a insisté sur ce point, disant que les Mina n'existaient que pour les savants. Le projet ne connaît pas encore la plus ancienne trace écrite de ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Ethnicities of Enslaved Africans in the Diaspora: On the Meanings of « Mina » (Again)",
+                "author": "Robin Law",
+                "year": 2005,
+                "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B19B462581852D91BE63F59180DAAB7B/S0361541300003788a.pdf/ethnicities-of-enslaved-africans-in-the-diaspora-on-the-meanings-of-mina-again.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 254",
+                "notes": "History in Africa, 32, 2005, p. 247-267. Lu dans le PDF publié par Cambridge University Press le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "Proposée en 2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Gen serait une variante de Ga, le nom que se donnent les habitants d'Accra, d'où venaient les réfugiés installés à Glidji dans les années 1680, selon Robin Law, qui s'appuie sur la thèse de Silke Strickrodt.",
+            "hypothesisGroup": "origine du nom Gen",
+            "sources": [
+              {
+                "title": "Ethnicities of Enslaved Africans in the Diaspora: On the Meanings of « Mina » (Again)",
+                "author": "Robin Law",
+                "year": 2005,
+                "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B19B462581852D91BE63F59180DAAB7B/S0361541300003788a.pdf/ethnicities-of-enslaved-africans-in-the-diaspora-on-the-meanings-of-mina-again.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 253",
+                "notes": "History in Africa, 32, 2005, p. 247-267. Lu dans le PDF publié par Cambridge University Press le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Gen a peut-être une forme proche, Égẹ, chez le linguiste Sigismund Koelle en 1854 : un informateur du pays káure dit être passé, en descendant vers la mer, par « Égẹ, sur la côte, près de Popo ». Koelle écrit aussi Ógẹ pour Accra. Les sources ne disent pas s'il s'agit du même nom.",
+            "formAsWritten": "Égẹ",
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "sections IV-B-2 et III-B-1",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite. Entrée Káure : « Égẹ on the Coast, near Popo » ; entrée Adámpẹ : « Ógẹ, i.e. Accra »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1680,
+              "to": 1749,
+              "label": "Des années 1680 aux années 1740"
+            },
+            "era": "polity",
+            "statement": "Le nom Gen n'est pas celui qu'emploient alors les Européens pour ce royaume : ils l'appellent, comme son port, Little Popo, et nomment ses habitants les Accras jusqu'aux années 1740 au moins, selon Robin Law.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Ethnicities of Enslaved Africans in the Diaspora: On the Meanings of « Mina » (Again)",
+                "author": "Robin Law",
+                "year": 2005,
+                "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B19B462581852D91BE63F59180DAAB7B/S0361541300003788a.pdf/ethnicities-of-enslaved-africans-in-the-diaspora-on-the-meanings-of-mina-again.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 253",
+                "notes": "History in Africa, 32, 2005, p. 247-267. Lu dans le PDF publié par Cambridge University Press le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Guin",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'orthographe française du nom Gen.",
+        "periodLabel": "En usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Guin est l'orthographe française du nom Gen, selon Robin Law.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Ethnicities of Enslaved Africans in the Diaspora: On the Meanings of « Mina » (Again)",
+                "author": "Robin Law",
+                "year": 2005,
+                "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B19B462581852D91BE63F59180DAAB7B/S0361541300003788a.pdf/ethnicities-of-enslaved-africans-in-the-diaspora-on-the-meanings-of-mina-again.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 253",
+                "notes": "History in Africa, 32, 2005, p. 247-267. Lu dans le PDF publié par Cambridge University Press le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mina",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "por",
+        "namedBy": "Les Portugais, puis les autres Européens",
+        "shortLine": "Un nom venu du fort portugais d'Elmina ; on l'emploie sur place surtout en français.",
+        "periodLabel": "En usage depuis le XVIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Mina désigne aujourd'hui les habitants d'Agbodrafo, d'Aného, de Glidji et d'Agoué, selon Robin Law. On sait encore sur place qu'il ne convient qu'aux descendants des gens d'Elmina, à Aného, et pas aux Ga de Glidji. C'est un nom forgé par les Européens, qu'on n'emploie sur place qu'en parlant français.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ethnicities of Enslaved Africans in the Diaspora: On the Meanings of « Mina » (Again)",
+                "author": "Robin Law",
+                "year": 2005,
+                "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B19B462581852D91BE63F59180DAAB7B/S0361541300003788a.pdf/ethnicities-of-enslaved-africans-in-the-diaspora-on-the-meanings-of-mina-again.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 254",
+                "notes": "History in Africa, 32, 2005, p. 247-267. Lu dans le PDF publié par Cambridge University Press le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "Proposée en 2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Mina viendrait du mot portugais mina, « la mine », qui renvoie à l'extraction de l'or, selon Robin Law, pour qui cette origine ne fait pas débat.",
+            "hypothesisGroup": "origine du nom Mina",
+            "sources": [
+              {
+                "title": "Ethnicities of Enslaved Africans in the Diaspora: On the Meanings of « Mina » (Again)",
+                "author": "Robin Law",
+                "year": 2005,
+                "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B19B462581852D91BE63F59180DAAB7B/S0361541300003788a.pdf/ethnicities-of-enslaved-africans-in-the-diaspora-on-the-meanings-of-mina-again.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 248",
+                "notes": "History in Africa, 32, 2005, p. 247-267. Lu dans le PDF publié par Cambridge University Press le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1914,
+              "to": 1960,
+              "label": "XXe siècle"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mina reste en usage sous la colonisation française, au XXe siècle, pour les habitants d'Agbodrafo, d'Aného, de Glidji et d'Agoué, selon Robin Law.",
+            "sources": [
+              {
+                "title": "Ethnicities of Enslaved Africans in the Diaspora: On the Meanings of « Mina » (Again)",
+                "author": "Robin Law",
+                "year": 2005,
+                "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B19B462581852D91BE63F59180DAAB7B/S0361541300003788a.pdf/ethnicities-of-enslaved-africans-in-the-diaspora-on-the-meanings-of-mina-again.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 254",
+                "notes": "History in Africa, 32, 2005, p. 247-267. Lu dans le PDF publié par Cambridge University Press le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1863,
+              "to": 1863,
+              "label": "1863"
+            },
+            "era": "polity",
+            "statement": "Le nom Mina est étendu par le père Francesco Borghero, premier chef de la mission catholique française, à toute la côte entre Keta et Grand-Popo. Cet usage large ne dure pas, selon Robin Law, qui pense que les missionnaires reprenaient l'usage des Brésiliens installés sur la côte.",
+            "sources": [
+              {
+                "title": "Ethnicities of Enslaved Africans in the Diaspora: On the Meanings of « Mina » (Again)",
+                "author": "Robin Law",
+                "year": 2005,
+                "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B19B462581852D91BE63F59180DAAB7B/S0361541300003788a.pdf/ethnicities-of-enslaved-africans-in-the-diaspora-on-the-meanings-of-mina-again.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 254",
+                "notes": "History in Africa, 32, 2005, p. 247-267. Lu dans le PDF publié par Cambridge University Press le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1728,
+              "to": 1728,
+              "label": "1728"
+            },
+            "era": "polity",
+            "statement": "Le nom Mina s'écrit « Minois » dans un rapport français de 1728 qui décrit une troupe venue de Petit Popo pour attaquer Ouidah : « les Minois du Petit Popo », selon Robin Law. Un rapport anglais nomme les mêmes hommes des Accras.",
+            "formAsWritten": "Minois",
+            "sources": [
+              {
+                "title": "Ethnicities of Enslaved Africans in the Diaspora: On the Meanings of « Mina » (Again)",
+                "author": "Robin Law",
+                "year": 2005,
+                "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B19B462581852D91BE63F59180DAAB7B/S0361541300003788a.pdf/ethnicities-of-enslaved-africans-in-the-diaspora-on-the-meanings-of-mina-again.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 253, note 28",
+                "notes": "History in Africa, 32, 2005, p. 247-267. Lu dans le PDF publié par Cambridge University Press le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1687,
+              "to": 1687,
+              "label": "1687"
+            },
+            "era": "polity",
+            "statement": "Le nom Mina désigne les habitants de la côte de Petit Popo dans la plus ancienne description détaillée de ce lieu, laissée par un visiteur anglais en 1687 : ils sont « all Mine people », tous gens de la Mine, ou du moins leurs chefs, selon Robin Law. La capitale de l'intérieur appartient au roi d'Accra.",
+            "formAsWritten": "Mine people",
+            "sources": [
+              {
+                "title": "Ethnicities of Enslaved Africans in the Diaspora: On the Meanings of « Mina » (Again)",
+                "author": "Robin Law",
+                "year": 2005,
+                "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B19B462581852D91BE63F59180DAAB7B/S0361541300003788a.pdf/ethnicities-of-enslaved-africans-in-the-diaspora-on-the-meanings-of-mina-again.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 253",
+                "notes": "History in Africa, 32, 2005, p. 247-267. Lu dans le PDF publié par Cambridge University Press le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1650,
+              "to": 1659,
+              "label": "Années 1650"
+            },
+            "era": "polity",
+            "statement": "Le nom Mina renvoie aux fondateurs de Petit Popo, l'actuel Aného : une communauté de piroguiers venus d'Elmina, sur la Côte de l'Or, dont le village est attesté dès les années 1650, selon Robin Law.",
+            "sources": [
+              {
+                "title": "Ethnicities of Enslaved Africans in the Diaspora: On the Meanings of « Mina » (Again)",
+                "author": "Robin Law",
+                "year": 2005,
+                "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B19B462581852D91BE63F59180DAAB7B/S0361541300003788a.pdf/ethnicities-of-enslaved-africans-in-the-diaspora-on-the-meanings-of-mina-again.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 252",
+                "notes": "History in Africa, 32, 2005, p. 247-267. Lu dans le PDF publié par Cambridge University Press le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1471,
+              "to": 1482,
+              "label": "De 1471 à 1482"
+            },
+            "era": "polity",
+            "statement": "Le nom Mina apparaît en portugais après l'arrivée des Portugais sur la côte de l'actuel Ghana, en 1471. A Mina, « la Mine », désigne d'abord la zone où ils achètent de l'or, puis, à partir de 1482, le fort de São Jorge da Mina, bâti au village d'Edina, l'actuelle Elmina, selon Robin Law. C'est la plus ancienne trace de ce nom que le projet connaît. Il désigne alors un lieu, pas encore ce peuple.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Ethnicities of Enslaved Africans in the Diaspora: On the Meanings of « Mina » (Again)",
+                "author": "Robin Law",
+                "year": 2005,
+                "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B19B462581852D91BE63F59180DAAB7B/S0361541300003788a.pdf/ethnicities-of-enslaved-africans-in-the-diaspora-on-the-meanings-of-mina-again.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 248-249",
+                "notes": "History in Africa, 32, 2005, p. 247-267. Lu dans le PDF publié par Cambridge University Press le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Popo",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Européens",
+        "shortLine": "Un ancien nom européen d'Aného, Petit Popo, et de ses habitants.",
+        "periodLabel": "Du XVIIe au XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1680,
+              "to": null,
+              "label": "Après la fondation de Glidji, vers 1680"
+            },
+            "statement": "Le nom Popo sert aux Européens, dans la forme Little Popo, à désigner le royaume de Glidji et son port ; ce n'est pas son nom dans la langue du pays, selon Robin Law. Le nom Petit Popo distingue ce lieu du Popo d'origine, l'actuel Grand-Popo, au Bénin.",
+            "sources": [
+              {
+                "title": "Ethnicities of Enslaved Africans in the Diaspora: On the Meanings of « Mina » (Again)",
+                "author": "Robin Law",
+                "year": 2005,
+                "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B19B462581852D91BE63F59180DAAB7B/S0361541300003788a.pdf/ethnicities-of-enslaved-africans-in-the-diaspora-on-the-meanings-of-mina-again.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 252-253",
+                "notes": "History in Africa, 32, 2005, p. 247-267. Lu dans le PDF publié par Cambridge University Press le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Popo désigne aussi, chez Sigismund Koelle en 1854, les gens du Dahomey : il écrit que les étrangers appellent le Dahomey Pópō. Le nom ne visait donc pas un seul peuple.",
+            "formAsWritten": "Pópō",
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "section III-B-4",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite. Entrée « Dahṓme, by foreigners called Pópō »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Accra",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Européens",
+        "shortLine": "Le nom que les Européens donnaient aux habitants de Petit Popo jusqu'aux années 1740.",
+        "periodLabel": "Des années 1680 aux années 1740",
+        "accounts": [
+          {
+            "period": {
+              "from": 1687,
+              "to": 1749,
+              "label": "De 1687 aux années 1740"
+            },
+            "era": "polity",
+            "statement": "Le nom Accra désigne, dans les sources européennes, les habitants de Petit Popo jusqu'aux années 1740 au moins, parce que la communauté ga de Glidji, venue d'Accra, y domine, selon Robin Law. En 1687, un visiteur anglais situe à l'intérieur la capitale du roi d'Accra.",
+            "sources": [
+              {
+                "title": "Ethnicities of Enslaved Africans in the Diaspora: On the Meanings of « Mina » (Again)",
+                "author": "Robin Law",
+                "year": 2005,
+                "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B19B462581852D91BE63F59180DAAB7B/S0361541300003788a.pdf/ethnicities-of-enslaved-africans-in-the-diaspora-on-the-meanings-of-mina-again.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 253",
+                "notes": "History in Africa, 32, 2005, p. 247-267. Lu dans le PDF publié par Cambridge University Press le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

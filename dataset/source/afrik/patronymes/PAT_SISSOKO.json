@@ -204,5 +204,392 @@
       "fieldPath": "homonyms",
       "reason": "Les graphies Sissako, Cissokho et Sissokho existent, mais aucune source consultée ne dit qu'elles désignent la même lignée : elles ne sont pas fusionnées ici."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sissoko est un nom de clan, ou jamu, porté chez les Malinké et les Bambara, qu'on écrit aussi Sisoko ou Sissokho. Des sources en font un autre nom des Koroma, la lignée de Fakoli, et un équivalent de Doumbia. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Sissoko",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan malinké et bambara, lié aux Doumbia et aux Koroma ; son origine est débattue.",
+        "periodLabel": "Écrit depuis 1892",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sissoko est un nom de clan que le dictionnaire des noms de clan mandingues écrit Sisɔkɔ, avec la variante Sisoko. Ce dictionnaire lui donne pour équivalents Dantɛ, Doumbia et Kouroma, mais ne lui donne pas de sens. Son origine reste discutée, et chaque explication est présentée à part.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée Sisɔkɔ",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence. Fichier complet consulté le 11 octobre 2026 : l'entrée Sisɔkɔ, datée de 2010, donne la variante Sisoko, les équivalents Dantɛ, Dunbiya et Kuruma, les noms des femmes Danba (familles de griots) et Sakiliba (familles libres), et ne donne pas de sens au nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sissoko n'est pas porté tel quel par les femmes de la lignée : le dictionnaire des noms de clan mandingues leur donne le nom Danba dans les familles de griots et le nom Sakiliba dans les familles libres.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée Sisɔkɔ",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence. Fichier complet consulté le 11 octobre 2026 : l'entrée Sisɔkɔ, datée de 2010, donne la variante Sisoko, les équivalents Dantɛ, Dunbiya et Kuruma, les noms des femmes Danba (familles de griots) et Sakiliba (familles libres), et ne donne pas de sens au nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1892,
+              "label": "Voyage de 1887-1889, récit publié en 1892"
+            },
+            "statement": "Le nom Sissoko apparaît par écrit sous la forme Sissokho chez Louis-Gustave Binger, qui dit retrouver des familles de ce nom dans le Ouassoulou, le Gangaran et le Nouroukrou. Celles du Gangaran se disent malinkées, celles du Ouassoulou se disent peules. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; des familles le portaient avant que le voyageur ne l'écrive.",
+            "formAsWritten": "Sissokho",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Louis-Gustave Binger",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 1, p. 188",
+                "notes": "Hachette, Paris, 1892, deux tomes. Lu le 11 octobre 2026 dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée. L'auteur est un officier français en mission d'exploration de 1887 à 1889, qui prépare l'expansion coloniale : il est cité pour ce qu'il a noté et pour ce qu'on lui a dit. Page 188 : « Dans le Ouassoulou et dans la région Gangaran et Nouroukrou (Soudan français), nous retrouvons les Sissi sous le nom de Sissokho ; ces derniers se disent Malinkés, et ceux du Ouassoulou revendiquent le titre de Foula ». L'auteur rattache les Sissi aux Mandé d'après Barth."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Temps de Soundiata, selon l'épopée"
+            },
+            "era": "polity",
+            "statement": "Le nom Sissoko est, dans l'épopée de Soundiata, un autre nom de la tribu de Fakoli, les Koroma, que d'autres appellent Doumbouya ou Sissoko. Soundiata donne à cette tribu le monopole de la forge et du travail du fer. C'est le récit du griot Djeli Mamadou Kouyaté, transcrit par Djibril Tamsir Niane.",
+            "sources": [
+              {
+                "title": "Soundjata ou l'épopée mandingue",
+                "author": "Djibril Tamsir Niane, d'après le récit du griot Djeli Mamadou Kouyaté",
+                "year": 1960,
+                "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 141",
+                "notes": "Présence Africaine. Récit du griot Djeli Mamadou Kouyaté, de Djeliba Koro près de Siguiri, mis par écrit et traduit par Djibril Tamsir Niane. Page lue le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org (SoundjataOuLepopeeMandingue), proche de l'édition imprimée sans s'y confondre. Page 141 : « la tribu de Fakoli, les Koroma, que d'autres appellent Doumbouya ou Sissoko, cette tribu eut le monopole de la forge, du travail du fer »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Temps de Soundiata, selon les traditions"
+            },
+            "era": "polity",
+            "statement": "Le nom Sissoko est celui de l'un des clans qui descendent de Fakoli Koroma, général de Soundiata, avec les Doumbouya et les Koroma, selon Djibril Tamsir Niane. Il ne dit pas d'où il tient ce lien.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 157, note 42",
+                "notes": "UNESCO, 1985 ; chapitre de D. T. Niane, édition française. Pages relues le 11 octobre 2026 dans une copie non officielle de l'édition française déposée sur archive.org (unesco-histoire-generale-d-afrique), pagination imprimée. Page 157 : Fakoli Koroma parmi les généraux de Soundiata dont les traditions orales ont retenu le nom ; note 42 : « Ses descendants sont les clans sisoko, dumbuya et koroma »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Seconde migration malinké vers le Bambouk, selon la tradition"
+            },
+            "era": "polity",
+            "statement": "Le nom Sissoko est celui des chefs de la seconde grande migration malinké vers le Bambouk, conduite par Noïa-Moussa Sisoko, « le grand colonisateur du Bambouck », selon les traditions que rapporte André Rançon.",
+            "sources": [
+              {
+                "title": "Dans la Haute-Gambie : voyage d'exploration scientifique",
+                "author": "André Rançon",
+                "year": 1894,
+                "url": "https://archive.org/details/danslahautegambi00ranc",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 229, 486",
+                "notes": "Paris, Société d'éditions scientifiques, 1894. Lu le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org. L'auteur est un médecin des colonies chargé le 16 mars 1891 d'une mission scientifique en Haute-Gambie : il est cité pour ce qu'il a noté et pour ce qu'on lui a raconté. Page 229 : « Noia-Moussa Sisoko, le grand colonisateur du Bambouck », selon la tradition. Page 486 : « la seconde grande migration Mandingue dans le Bambouck, sous la direction des Sisokos », d'après les griots et les vieillards du Niocolo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sissoko désigne, selon André Arcin, une famille restée presque entièrement soninké, avec de puissants chefs dans le Tomora, mais aussi des forgerons chez les Bambara.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La Guinée française",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 303",
+                "notes": "Paris, Challamel, 1907. Lu le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org. L'auteur est un administrateur colonial, à lire comme tel. Page 303 : les Sisokho « sont restés presque entièrement Soninké », avec des forgerons chez les Bamana ; « Sisokho en Bamana veut dire d'ailleurs « derrière la fumée » » ; chez les Soninké du Tomora, « ils donnent comme étymologie de leur nom : l'homme qui prend le sabre »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1959,
+              "to": 1959,
+              "label": "Rapporté en 1959"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sissoko et le nom Doumbia seraient ceux d'une même famille, l'un remplaçant l'autre selon les régions, selon l'officier Molinie, cité par E. A. Bogacheva. Le même auteur fait venir la plupart de ces familles du Siendougou, près de Bamako.",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov ; titre traduit du russe. Lu le 11 octobre 2026 dans le PDF déposé, pagination imprimée. Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par Valentin Vydrine et Artem Davydov. Un mémoire de licence n'est pas relu par des pairs : il est cité pour les témoignages qu'il transmet. Notice Dunbiya : Sissoko et Doumbia issus d'une même famille, les deux noms étant interchangeables selon la région ; Sissoko parmi les bula, venus pour la plupart du Siendougou. L'autrice cite le dictionnaire de 1959 de Molinie, officier de la marine française, rédigé pour les Européens en poste en Afrique-Occidentale française ; elle met en garde contre ses généralisations, et l'informateur n'est pas nommé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "Proposée en 1892"
+            },
+            "statement": "Le nom Sissoko serait celui des Sissi, que l'explorateur Heinrich Barth rattachait aux Mandé, retrouvés sous le nom de Sissokho dans le Ouassoulou et le Gangaran, selon Louis-Gustave Binger.",
+            "hypothesisGroup": "origine du nom Sissoko",
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 1, p. 188",
+                "notes": "Hachette, Paris, 1892, deux tomes. Lu le 11 octobre 2026 dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée. L'auteur est un officier français en mission d'exploration de 1887 à 1889, qui prépare l'expansion coloniale : il est cité pour ce qu'il a noté et pour ce qu'on lui a dit. Page 188 : « Dans le Ouassoulou et dans la région Gangaran et Nouroukrou (Soudan français), nous retrouvons les Sissi sous le nom de Sissokho ; ces derniers se disent Malinkés, et ceux du Ouassoulou revendiquent le titre de Foula ». L'auteur rattache les Sissi aux Mandé d'après Barth."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Proposée en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sissoko voudrait dire « chef soso » en soninké, selon un Peul du Sénégal qui le prononçait « Sosokho, presque Sousoukho » devant André Arcin, administrateur colonial.",
+            "hypothesisGroup": "origine du nom Sissoko",
+            "sources": [
+              {
+                "title": "La Guinée française",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 282",
+                "notes": "Paris, Challamel, 1907. Lu le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org. L'auteur est un administrateur colonial, à lire comme tel. Page 282 : le mot, prononcé « Sosokho, presque Sousoukho » par un Peul du Sénégal, « en Soninké veut dire chef Soso » ; un Khassonké l'a dit « même chose que Soso » ; « Bangoura » serait le nom soso, et « Sisokho » aurait « été donné par des étrangers à cette famille Soso ». « M. Moreau rapproche ce nom de celui de Shasou, donné par les Egyptiens aux Hycsos »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Proposée en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sissoko aurait été donné par des étrangers à une famille soso qui se nomme elle-même Bangoura, selon André Arcin, qui avance cette idée en la comparant à d'autres cas.",
+            "hypothesisGroup": "origine du nom Sissoko",
+            "sources": [
+              {
+                "title": "La Guinée française",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 282",
+                "notes": "Paris, Challamel, 1907. Lu le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org. L'auteur est un administrateur colonial, à lire comme tel. Page 282 : le mot, prononcé « Sosokho, presque Sousoukho » par un Peul du Sénégal, « en Soninké veut dire chef Soso » ; un Khassonké l'a dit « même chose que Soso » ; « Bangoura » serait le nom soso, et « Sisokho » aurait « été donné par des étrangers à cette famille Soso ». « M. Moreau rapproche ce nom de celui de Shasou, donné par les Egyptiens aux Hycsos »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Proposée en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sissoko voudrait dire « derrière la fumée » en bambara, selon André Arcin.",
+            "hypothesisGroup": "origine du nom Sissoko",
+            "sources": [
+              {
+                "title": "La Guinée française",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 303",
+                "notes": "Paris, Challamel, 1907. Lu le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org. L'auteur est un administrateur colonial, à lire comme tel. Page 303 : les Sisokho « sont restés presque entièrement Soninké », avec des forgerons chez les Bamana ; « Sisokho en Bamana veut dire d'ailleurs « derrière la fumée » » ; chez les Soninké du Tomora, « ils donnent comme étymologie de leur nom : l'homme qui prend le sabre »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Rapportée en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sissoko voudrait dire « l'homme qui prend le sabre », selon les chefs soninké du Tomora, dont André Arcin rapporte l'explication.",
+            "hypothesisGroup": "origine du nom Sissoko",
+            "sources": [
+              {
+                "title": "La Guinée française",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 303",
+                "notes": "Paris, Challamel, 1907. Lu le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org. L'auteur est un administrateur colonial, à lire comme tel. Page 303 : les Sisokho « sont restés presque entièrement Soninké », avec des forgerons chez les Bamana ; « Sisokho en Bamana veut dire d'ailleurs « derrière la fumée » » ; chez les Soninké du Tomora, « ils donnent comme étymologie de leur nom : l'homme qui prend le sabre »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Rapportée en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sissoko serait à rapprocher de Shasou, le nom que les Égyptiens donnaient aux Hyksos, ou de Sakai, le nom des Scythes, selon le capitaine Moreau, cité par André Arcin, qui juge lui-même que ces ressemblances pourraient être fortuites.",
+            "hypothesisGroup": "origine du nom Sissoko",
+            "sources": [
+              {
+                "title": "La Guinée française",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 282, 635-636",
+                "notes": "Paris, Challamel, 1907. Lu le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org. L'auteur est un administrateur colonial, à lire comme tel. Page 282 : « M. Moreau rapproche ce nom de celui de Shasou, donné par les Egyptiens aux Hycsos ». Pages 635-636 : « le capitaine Moreau a comparé le nom générique des Scythes, Sakai, au nom de famille Mandé Sousoukho ou Sisokho. Mais ces ressemblances pourraient être fortuites »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sisoko",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Écrit depuis 1894",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1891,
+              "to": 1894,
+              "label": "Voyage commencé en 1891, récit publié en 1894"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sisoko est l'écriture qu'emploie André Rançon, médecin des colonies, pour le cuisinier de son expédition, Samba Sisoko, « Malinké de Badougou ». C'est la plus ancienne trace de cette écriture que le projet connaît ; elle ne dit pas depuis quand des familles l'emploient.",
+            "formAsWritten": "Sisoko",
+            "birth": true,
+            "actors": [
+              {
+                "name": "André Rançon",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Dans la Haute-Gambie : voyage d'exploration scientifique",
+                "author": "André Rançon",
+                "year": 1894,
+                "url": "https://archive.org/details/danslahautegambi00ranc",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 14",
+                "notes": "Paris, Société d'éditions scientifiques, 1894. Lu le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org. L'auteur est un médecin des colonies chargé le 16 mars 1891 d'une mission scientifique en Haute-Gambie : il est cité pour ce qu'il a noté et pour ce qu'on lui a raconté. Page 14 : la caravane quitte Sénoudébou avec « un cuisinier Samba Sisoko, Malinké de Badougou »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sisoko est la variante que le dictionnaire des noms de clan mandingues donne pour Sisɔkɔ.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée Sisɔkɔ",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence. Fichier complet consulté le 11 octobre 2026 : l'entrée Sisɔkɔ, datée de 2010, donne la variante Sisoko, les équivalents Dantɛ, Dunbiya et Kuruma, les noms des femmes Danba (familles de griots) et Sakiliba (familles libres), et ne donne pas de sens au nom."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

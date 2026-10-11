@@ -95,5 +95,155 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Mwera désigne un peuple bantou du sud-est de la Tanzanie, dans l'arrière-pays de Lindi, qui se nomme lui-même Wamwera. Sa langue s'appelle le kimwera. Les sources que nous avons lues ne disent pas d'où vient le nom Mwera ; nous présentons plus bas ses plus anciennes traces.",
+    "names": [
+      {
+        "nameText": "Wamwera",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple de l'arrière-pays de Lindi ; écrit Wamuera en 1908.",
+        "periodLabel": "Écrit dès 1908 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "Voyage de 1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wamwera désigne, chez l'ethnologue allemand Karl Weule, le peuple de l'arrière-pays de Lindi ; il appelle sa langue le kimwera. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Native Life in East Africa: The Results of an Ethnological Research Expedition",
+                "author": "Karl Weule",
+                "year": 1909,
+                "url": "https://archive.org/details/nativelifeineast00weul",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 52-55",
+                "notes": "New York, D. Appleton, 1909, traduction anglaise de Negerleben in Ostafrika (1908). Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "Voyage de 1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wamwera désigne, chez Karl Weule, un peuple qui avait pris part tout entier au soulèvement contre l'administration allemande et qui avait dû se réfugier dans la brousse. Weule le trouve dans un état misérable.",
+            "sources": [
+              {
+                "title": "Native Life in East Africa: The Results of an Ethnological Research Expedition",
+                "author": "Karl Weule",
+                "year": 1909,
+                "url": "https://archive.org/details/nativelifeineast00weul",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 53",
+                "notes": "New York, D. Appleton, 1909, traduction anglaise de Negerleben in Ostafrika (1908). Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1908,
+              "label": "Voyage de 1906, publié en 1908"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wamwera apparaît, écrit Wamuera, chez Karl Weule, qui parcourt en 1906 l'arrière-pays de Lindi. Il décrit un peuple installé autour de Mtama et de Njangao, dont les villages se tiennent à l'écart des routes. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Wamuera",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Wissenschaftliche Ergebnisse meiner ethnographischen Forschungsreise in den Südosten Deutsch-Ostafrikas",
+                "author": "Karl Weule",
+                "year": 1908,
+                "url": "https://archive.org/details/wissenschaftlich00weul",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Berlin, Mittler, 1908. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mwera",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom sous lequel on désigne ce peuple en français et en anglais ; écrit dès 1909.",
+        "periodLabel": "Écrit dès 1909 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1909,
+              "to": 1909,
+              "label": "1909"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mwera apparaît sous cette forme dans la traduction anglaise du livre de Karl Weule, en 1909, dans les légendes de ses photographies, par exemple « une femme mwera ». C'est la plus ancienne trace de cette forme que le projet connaît.",
+            "formAsWritten": "Mwera",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Native Life in East Africa: The Results of an Ethnological Research Expedition",
+                "author": "Karl Weule",
+                "year": 1909,
+                "url": "https://archive.org/details/nativelifeineast00weul",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 56",
+                "notes": "New York, D. Appleton, 1909, traduction anglaise de Negerleben in Ostafrika (1908). Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kimwera",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la langue des Wamwera ; écrit dès 1909.",
+        "periodLabel": "Écrit dès 1909",
+        "accounts": [
+          {
+            "period": {
+              "from": 1909,
+              "to": 1909,
+              "label": "1909"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kimwera désigne la langue des Wamwera chez Karl Weule, qui note par exemple le mot itona, le nom kimwera du labret que portent les femmes. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Kimwera",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Native Life in East Africa: The Results of an Ethnological Research Expedition",
+                "author": "Karl Weule",
+                "year": 1909,
+                "url": "https://archive.org/details/nativelifeineast00weul",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 55",
+                "notes": "New York, D. Appleton, 1909, traduction anglaise de Negerleben in Ostafrika (1908). Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

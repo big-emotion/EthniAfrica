@@ -135,5 +135,103 @@
       "fieldPath": "homonyms",
       "reason": "Aucune entité distincte portant ce nom n'a pu être retrouvée avec une source suffisamment fiable pour être citée ici."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Katende est un nom de famille. Au XIXe siècle, des voyageurs européens le notent comme le nom de chefs, dans le bassin du Kasaï. On ne sait pas avec certitude d'où il vient, ni s'il a partout la même origine.",
+    "names": [
+      {
+        "nameText": "Katende",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille, noté au XIXe siècle comme nom de chefs du Kasaï ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit dès 1857 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "1928"
+            },
+            "era": "colonial",
+            "statement": "Le nom Katende est aussi un mot : il veut dire « talon » en nsenga, une langue de Zambie, selon un manuel de cette langue publié en 1928. Aucune source consultée ne dit que le nom de famille vient de ce mot.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Chinsenga Handbook: A Manual of the Nsenga Language",
+                "author": "A. Sidney B. Ranger",
+                "year": 1928,
+                "url": "https://archive.org/details/chinsenga-handbook-a-manual-of-the-nsenga-language-compressed-high",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 272, 315",
+                "notes": "Londres, Sheldon Press, 1928. Lu le 11 octobre 2026 dans une copie non officielle déposée sur Internet Archive par un particulier. Page 272 : « katende (8), heel » ; page 315, au vocabulaire anglais-nsenga : « heel, katende (8) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1857,
+              "label": "Voyage de 1854, récit publié en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Katende apparaît par écrit chez David Livingstone : en février 1854, sur la ligne de partage entre les rivières du nord et celles du sud, il traverse des villages qui reconnaissent l'autorité d'un chef nommé Katende. C'est la plus ancienne trace de ce nom que le projet connaît. Les sources ne disent pas si ce chef a un lien avec les familles qui portent ce nom aujourd'hui.",
+            "formAsWritten": "Katende",
+            "birth": true,
+            "actors": [
+              {
+                "name": "David Livingstone",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Katende",
+                "role": "chef du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 329, 333",
+                "notes": "Londres, John Murray, 1857. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Page 329, au 24 février 1854 : des villages qui reconnaissent « the authority of the chief named Katénde » ; page 333 : « Katende sent for me on the day following our arrival »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1886,
+              "to": 1891,
+              "label": "Voyage de 1886-1887, récit publié en 1891"
+            },
+            "era": "colonial",
+            "statement": "Le nom Katende est celui d'un chef des Bashilamboa, dans le bassin du Kasaï, chez qui Hermann von Wissmann se rend en 1886 ou 1887. Ce peuple et son chef avaient refusé de reconnaître l'autorité de Kalamba. Les sources ne disent pas s'il a un lien avec le chef que Livingstone rencontre en 1854.",
+            "actors": [
+              {
+                "name": "Katende",
+                "role": "chef des Bashilamboa dans le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "My Second Journey through Equatorial Africa from the Congo to the Zambesi in the Years 1886 and 1887",
+                "author": "Hermann von Wissmann",
+                "year": 1891,
+                "url": "https://archive.org/details/mysecondjourneyt00wiss",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 96-97",
+                "notes": "Londres, Chatto & Windus, 1891, traduction anglaise de Minna J. A. Bergmann. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Page 96 : « Prince Katende, of the Bashilamboa » ; page 97 : les Bashilamboa, « who with their chief Katende had refused to acknowledge Kalamba as their superior »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

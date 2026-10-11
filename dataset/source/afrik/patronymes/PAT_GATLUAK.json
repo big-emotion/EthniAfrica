@@ -126,5 +126,173 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches sur la graphie exacte « Gatluak » dans les index onomastiques et les tableaux Naath/Nuer de Wikinames, la grammaire nuer d’Indiana, l’article de Markó et les recherches bibliographiques par graphie exacte n’ont pas établi une seconde origine distincte disposant de sa propre provenance."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Gatluak est un nom personnel nuer, donné à un garçon. Chez les Nuer, le nom complet d'une personne joint au sien celui de son père : c'est ainsi que Gatluak se trouve aussi à la place d'un nom de famille. Une seule explication de son sens est connue ; nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Gatluak",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nus",
+        "namedBy": null,
+        "shortLine": "Un nom personnel nuer de garçon ; gat- y veut dire « fils ».",
+        "periodLabel": "Écrit dès 1924 ; donné aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Gatluak est un nom personnel nuer, donné à un garçon. Il commence par gat-, qui veut dire « fils » ou « enfant », quand les noms de fille commencent par nya-. Le sens de la seconde partie n'est pas établi ; nous présentons plus bas la seule explication connue.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Precis of the Nuer Grammar",
+                "author": "Nuer Field Notes Project, Indiana University",
+                "year": null,
+                "url": "https://dlib.indiana.edu/collections/nuer/grammar/gramintro.utx.html",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Grammaire pédagogique des bibliothèques de l'université de l'Indiana. Lu le 11 octobre 2026. Section Proper Names : « The male prefix is gat- meaning son or child » ; « nya- stemming from [nyal] meaning daughter or girl » ; dans le nom complet, « the father's name is always in the genitive case »."
+              },
+              {
+                "title": "Nuer Religion",
+                "author": "E. E. Evans-Pritchard",
+                "year": 1956,
+                "url": "https://archive.org/details/nuerreligion00evan",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 259",
+                "notes": "Oxford, Clarendon Press, 1956. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Page 259 : les titres d'honneur des clans nuer commencent par « gat, son (of), or nya, daughter (of) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Gatluak peut aussi suivre le nom d'un fils : chez les Nuer, le nom complet d'une personne ajoute au sien celui de son père, selon la grammaire nuer de l'université de l'Indiana. C'est un nom personnel, non un nom de clan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Precis of the Nuer Grammar",
+                "author": "Nuer Field Notes Project, Indiana University",
+                "year": null,
+                "url": "https://dlib.indiana.edu/collections/nuer/grammar/gramintro.utx.html",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Grammaire pédagogique des bibliothèques de l'université de l'Indiana. Lu le 11 octobre 2026. Section Proper Names : « The male prefix is gat- meaning son or child » ; « nya- stemming from [nyal] meaning daughter or girl » ; dans le nom complet, « the father's name is always in the genitive case »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1924,
+              "to": 1924,
+              "label": "1924"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gatluak apparaît sous une forme proche, Gat Luak, en deux mots, chez l'infirmière missionnaire Blanche Soule : elle cite chez les Nuer une voisine appelée « Mun Gat Luak ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand une missionnaire l'a noté, pas depuis quand il est donné.",
+            "formAsWritten": "Gat Luak",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Blanche Soule",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Child Welfare in the Sudan",
+                "author": "C. Blanche Soule",
+                "year": 1924,
+                "url": "https://archive.org/details/per_missionary-horizons_1924-09_38_2",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 86",
+                "notes": "The Women's Missionary Magazine of the United Presbyterian Church, vol. 38, n° 2, septembre 1924, p. 85-87. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Page 86, chez les Nuer : « Nunyal, (the patient;) Deor, and Mun Gat Luak, another neighbor woman »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Rapporté en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Gatluak serait donné quand une famille a construit une grande étable pour son bétail, selon une collecte de noms sud-soudanais publiée en ligne. Dans les notes de nuer d'Eleanor Vandevort, missionnaire à Nasir, le mot luak veut dire « grange ».",
+            "hypothesisGroup": "origine du nom Gatluak",
+            "sources": [
+              {
+                "title": "Wikinames South Sudan 2025",
+                "author": "Contributeurs de Wikinames South Sudan",
+                "year": 2025,
+                "url": "https://meta.wikimedia.org/wiki/Wikinames_South_Sudan_2025",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Collecte communautaire de noms sud-soudanais publiée sur Meta-Wiki, sans appareil critique. Lu le 11 octobre 2026. Tableau Naath/Nuer : « Gatluaak/Nyaluaak », « when a family built a big house for cattle » ; un autre tableau donne pour Gatluak « Not readily available »."
+              },
+              {
+                "title": "Nuer Field Notes — Nouns",
+                "author": "Eleanor Vandevort",
+                "year": null,
+                "url": "https://dlib.indiana.edu/collections/nuer/nouns.utx.html",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiches de vocabulaire nuer réunies par Eleanor Vandevort, missionnaire presbytérienne à Nasir de 1949 à 1963, publiées par l'université de l'Indiana. Lu le 11 octobre 2026. Entrée « Luak barn » ; la liste donne aussi « Luääk a helper »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gatluaak",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nus",
+        "namedBy": null,
+        "shortLine": "Une autre graphie du nom nuer Gatluak.",
+        "periodLabel": "Écrit dès 1943",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1943,
+              "to": 1943,
+              "label": "1943"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gatluaak, écrit avec deux a, apparaît chez Blanche Soule, qui nomme ainsi le fils aîné d'une femme nuer, soigné à la mission. C'est la plus ancienne trace de cette graphie que le projet connaît.",
+            "formAsWritten": "Gatluaak",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Blanche Soule",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Two Friends in Nuerland",
+                "author": "Blanche Soule",
+                "year": 1943,
+                "url": "https://archive.org/details/per_missionary-horizons_1943-03_56_7",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 408",
+                "notes": "The Women's Missionary Magazine of the United Presbyterian Church, vol. 56, n° 7, mars 1943. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Page 408 : une femme nuer « came back to the Mission bringing her oldest boy Gatluaak for medicine »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

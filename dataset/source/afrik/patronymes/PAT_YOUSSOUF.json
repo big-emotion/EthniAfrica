@@ -151,5 +151,72 @@
       "fieldPath": "homonyms",
       "reason": "Les sources consultées ne permettent pas encore de présenter un autre nom écrit comme Youssouf, mais d'origine différente."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Youssouf est une forme du nom personnel arabe Yūsuf, qui correspond au Joseph de la Bible. À Djibouti, il figure à la fin de suites de noms comme celle d'Omar Ahmed Youssouf. On l'écrit aussi Yousouf ou Yusuf. Nous présentons plus bas ce que les sources disent de son sens.",
+    "names": [
+      {
+        "nameText": "Youssouf",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une forme du nom arabe Yūsuf, le Joseph de la Bible, porté dans une suite de noms.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Youssouf est une forme de Yūsuf, surtout employée dans des régions francophones d'Afrique de l'Ouest, selon le site Behind the Name. Yūsuf est le nom arabe d'un prophète de l'islam, qui correspond au Joseph de la Bible ; Joseph viendrait de l'hébreu Yosef, « qu'Il (Dieu) ajoute un autre fils », selon le Dictionary of American Family Names.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Youssouf",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/youssouf",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site de référence grand public sur les prénoms, lu le 11 octobre 2026 : « Form of Yusuf mostly used in parts of French-influenced West Africa ». La page ne cite pas de source."
+              },
+              {
+                "title": "Dictionary of American Family Names, 2e édition — entrées Yusuf et Joseph",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://en.geneanet.org/surnames/YUSUF",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press. Entrées reproduites par Geneanet, lues le 11 octobre 2026 dans une copie archivée de la page (22 février 2025) : Yusuf, « from the personal name Yūsuf, the name of an Islamic prophet, an Arabic equivalent to the Biblical name Joseph » ; Joseph, de l'hébreu Yosef, « may He (God) add (another son) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Youssouf est le dernier élément du nom d'Omar Ahmed Youssouf, notable et ancien député djiboutien dont la présidence de Djibouti annonce le décès en 2017. La page ne dit pas de qui Youssouf est le nom dans cette suite.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Le Président de la République rend hommage à la mémoire de feu Omar Ahmed Youssouf dit Vincent",
+                "author": "Présidence de la République de Djibouti",
+                "year": 2017,
+                "url": "https://www.presidence.dj/article/le-president-de-la-republique-rend-hommage-a-la-memoire-de-feu-omar-ahmed-youssouf-dit-vincent-324",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Communiqué du 22 janvier 2017, lu le 11 octobre 2026. Il nomme Omar Ahmed Youssouf, notable djiboutien, ancien député, sans dire de qui Youssouf est le nom dans cette suite."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

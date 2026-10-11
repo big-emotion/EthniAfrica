@@ -161,5 +161,43 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les sources consultées ne permettent pas de confirmer si ce nom désigne historiquement un lignage, un clan ou une autre unité sociale."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Agbo est un nom de famille. On ne sait pas d'où il vient : aucune source lue ne lui donne d'origine, de sens ni de plus ancienne trace écrite.",
+    "names": [
+      {
+        "nameText": "Agbo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille dont on ne connaît ni l'origine ni le sens.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Agbo n'a pas d'origine connue : aucune source lue n'explique ce nom de famille. Un vocabulaire yoruba de 1852 donne au mot agbo les sens de bélier, de liquide de plantes et de cercle de danseurs, sans le relier au nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Vocabulary of the Yoruba Language",
+                "author": "Samuel Ajayi Crowther",
+                "year": 1852,
+                "url": "https://archive.org/details/vocabularyofyoru00crow",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrées Agbo",
+                "notes": "Londres, Seeleys, 1852. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Trois entrées Agbo : « a ram » (un bélier), un liquide de plantes macérées, et « ring of dancers, flock, fold » (un cercle de danseurs, un troupeau). Le vocabulaire ne parle d'aucun nom de famille."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

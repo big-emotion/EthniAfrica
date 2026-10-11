@@ -1,6 +1,6 @@
 ---
 title: "Self-names to verify through oral sources (« à vérifier par sources orales »)"
-status: "ruled 2026-10-10, waves 3, 4 and 5 added 2026-10-11 — kept as they are until an oral or fieldwork pass"
+status: "ruled 2026-10-10, waves 3, 4, 5 and 6 added 2026-10-11 — kept as they are until an oral or fieldwork pass"
 related:
   - docs/editorial/doctrine.md
   - docs/editorial/strategy/colonial-periods.md
@@ -73,6 +73,25 @@ the same oral check.
 Tindiga (`langues/hts`) needs no such check: Werther
 (1898) writes that the people east of Lake Eyasi call themselves Watindiga,
 so the name is now marked as self-given.
+
+## Wave 6 of the long tail — ruled 2026-10-11
+
+No source we opened says the people use these names for themselves. The
+operator ruled to keep them and to check each one orally. Three self-names
+the batches found no source for were not written at all: « Awome »,
+« Akpakip Oro » and « Wangonde ».
+
+| Fiche           | Name     | What is missing                                                                 |
+| --------------- | -------- | ------------------------------------------------------------------------------- |
+| `PPL_TEKE_NORD` | Tege     | a source naming the people by it; Glottolog gives it as the name of the variety |
+| `PPL_TOPOSA`    | Toposa   | a source stating the people use the name for themselves                         |
+| `PPL_LALA`      | Ilala    | same                                                                            |
+| `PPL_KALAIBARI` | Kalabari | same                                                                            |
+
+One reading waits for a speaker rather than for a source: on `PPL_SOLONGO`,
+the link between Solongo and _nsolotu_, the name two elders of Soyo gave
+their ancestors (Sacala Kosi, 2022), is the agent's reading. It stays
+flagged until a Kikongo speaker checks it.
 
 ## Related case: Bilād Ṣinqīṭ (`MRT`)
 
