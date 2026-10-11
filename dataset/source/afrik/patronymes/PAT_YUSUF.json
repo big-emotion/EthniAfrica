@@ -20,7 +20,10 @@
     {
       "spelling": "Yusufu",
       "attestations": [
-        { "countryId": "NGA", "sourceRefs": ["ryan-1981-yusuf"] }
+        {
+          "countryId": "NGA",
+          "sourceRefs": ["ryan-1981-yusuf"]
+        }
       ]
     }
   ],
@@ -129,5 +132,134 @@
       "fieldPath": "homonyms",
       "reason": "Les sources consultées ne permettent pas encore de présenter un autre nom écrit comme Yusuf, mais d'origine différente."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Yusuf est un nom personnel musulman, celui que porte Joseph dans le Coran. Chez les Haoussa du Nigeria, il se dit Yusufu. Il se lit aussi au Nigeria en dernière position d'un nom complet. Les sources lues ne disent pas quand il est devenu un nom de famille.",
+    "names": [
+      {
+        "nameText": "Yusuf",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "Un nom personnel musulman, celui de Joseph dans le Coran.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Yusuf est un nom personnel musulman : c'est le nom de Joseph dans le Coran, dont la sourate 12 s'intitule Yusuf. Les sources lues ne disent pas quand il est devenu un nom de famille.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Le Coran, sourate 12, verset 4 — traduction de Muhammad Hamidullah",
+                "author": "Muhammad Hamidullah (traduction)",
+                "year": null,
+                "url": "https://quran.com/fr/12:4?translations=31",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "sourate 12, verset 4",
+                "notes": "Traduction française de Muhammad Hamidullah, lue sur le site Quran.com le 11 octobre 2026. La sourate porte le titre Yusuf ; la traduction rend le nom par Joseph : « Quand Joseph dit à son père… »."
+              },
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 143",
+                "notes": "Names, vol. 29, no 2, 1981, p. 139-164. Lu dans le PDF intégral le 11 octobre 2026. L'étude porte sur les noms des Haoussa du nord du Nigeria, musulmans pour la plupart ; la majorité des noms donnés lors de la cérémonie du nom y sont tirés du Coran. Tableau I : « Yusufu — Joseph »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2026,
+              "to": 2026,
+              "label": "2026"
+            },
+            "era": "modern",
+            "statement": "Le nom Yusuf se lit aujourd'hui au Nigeria en dernière position de noms complets, comme dans un communiqué de la présidence de 2026.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "President Tinubu Mourns NPC Chairman, Dr Aminu Yusuf",
+                "author": "State House, Abuja",
+                "year": 2026,
+                "url": "https://statehouse.gov.ng/president-tinubu-mourns-npc-chairman-dr-aminu-yusuf/",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Communiqué de la présidence du Nigeria daté du 29 août 2026, lu le 11 octobre 2026. Il écrit le nom complet Aminu Yusuf, avec Yusuf en dernière position."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Yusufu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "hau",
+        "namedBy": null,
+        "shortLine": "La forme haoussa du nom Yusuf.",
+        "periodLabel": "Écrit dès 1876",
+        "accounts": [
+          {
+            "period": {
+              "from": 1876,
+              "to": 1876,
+              "label": "1876"
+            },
+            "statement": "Le nom Yusufu apparaît dans le dictionnaire haoussa de James Frederick Schön, ancien missionnaire, dans une phrase où il désigne le Joseph de la Bible. C'est la plus ancienne trace de cette forme que le projet connaît ; elle dit quand un auteur l'a notée, pas depuis quand elle est donnée.",
+            "formAsWritten": "Yusufu",
+            "birth": true,
+            "actors": [
+              {
+                "name": "James Frederick Schön",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Dictionary of the Hausa Language",
+                "author": "James Frederick Schön",
+                "year": 1876,
+                "url": "https://archive.org/details/schon-dictionary-of-the-hausa-language-with-appendix",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 215",
+                "notes": "Londres, Church Missionary House, 1876. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. L'auteur, ancien missionnaire de la Church Missionary Society en Afrique de l'Ouest, donne à l'entrée Sigge, « embaumer », l'exemple « Dà Yusufu yá hákumta barórínsá… », traduit « but Joseph commanded his servants, the physicians, to embalm his father » : Yusufu y désigne le Joseph de la Bible."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "Décrit en 1981"
+            },
+            "era": "modern",
+            "statement": "Le nom Yusufu figure parmi les noms musulmans donnés aux garçons haoussa du nord du Nigeria lors de la cérémonie du nom, avec Joseph pour équivalent, selon Pauline M. Ryan.",
+            "sources": [
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 143",
+                "notes": "Names, vol. 29, no 2, 1981, p. 139-164. Lu dans le PDF intégral le 11 octobre 2026. L'étude porte sur les noms des Haoussa du nord du Nigeria, musulmans pour la plupart ; la majorité des noms donnés lors de la cérémonie du nom y sont tirés du Coran. Tableau I : « Yusufu — Joseph »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

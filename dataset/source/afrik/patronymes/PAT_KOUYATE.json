@@ -190,5 +190,177 @@
       "fieldPath": "homonyms",
       "reason": "Aucune lignée homonyme d'origine distincte n'a été trouvée : les Kouyaté relevés par les sources consultées se rattachent tous au même lignage de jeli, celui dont l'Histoire générale de l'Afrique dit que le griot du mansa y était toujours pris. Le dictionnaire des jamuw réunit Kúyate, Kúwate et Kúyatɛ sous une entrée unique et ne lui connaît pas d'équivalence dans un autre peuple."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kouyaté est un nom de clan, ou jamu, celui d'une lignée de griots (jeli) malinké que l'épopée de Soundiata attache au service des Keïta. On l'écrit aussi Kouyate, et le dictionnaire des noms de clan l'écrit Kúyate. On ne sait pas avec certitude d'où vient le nom ; nous présentons plus bas la seule explication que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Kouyaté",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de clan d'une lignée de griots malinké ; son origine est incertaine.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kouyaté désigne un clan de griots, ou jeli : le dictionnaire des noms de clan mandingues, qui l'écrit Kúyate, lui donne les statuts jèli et garanke et le rattache aux Malinké, aux Kouranko et aux Khassonké, sans lui donner de sens. On ne sait pas avec certitude d'où vient le nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet lu. Entrée Kúyate : les variantes Kúwate et Kúyatɛ, les statuts jèli, avec la mention « chez les Keïta », et garanke ; aucun sens donné au nom."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 99",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Kúyate : les groupes nommés en clair."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "Publié en 1892"
+            },
+            "statement": "Le nom Kouyaté apparaît chez Louis-Gustave Binger, qui range les Kouyaté parmi les familles de griots des Malinké, avec les Diabakhaté, les Dombia et les Dioubaté. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand un voyageur l'a noté, pas depuis quand la lignée le porte.",
+            "formAsWritten": "Kouyaté",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Louis-Gustave Binger",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, tome 2",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74721",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 2, p. 376",
+                "notes": "Hachette, Paris, 1892, deux tomes ; récit du voyage de 1887-1889. Lu dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée. Tome 2, page 376, dans la liste des familles mandé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kouyaté est peut-être la forme que Maurice Delafosse écrit « Koyaté » ; mais il la donne comme une autre écriture de Konaté, parmi les clans malinké. Les sources ne disent pas s'il s'agit du même nom.",
+            "formAsWritten": "Koyaté",
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 140",
+                "notes": "Émile Larose, Paris, 1912. L'auteur est un administrateur colonial en Afrique-Occidentale française. Lu sur l'édition du Projet Gutenberg, qui marque les pages de l'imprimé. Page 140 : « des Konaté ou Koyaté »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Temps de Soundiata, selon l'épopée"
+            },
+            "era": "polity",
+            "statement": "Le nom Kouyaté est, dans l'épopée de Soundiata, celui de la tribu de Balla Fasséké, son griot : à Kouroukan Fougan, Soundiata décide que les Keïta choisiront désormais leur griot chez les Kouyaté, et il donne aux Kouyaté le droit de plaisanter sur toutes les tribus, en particulier sur les Keïta. C'est le récit que transcrit Djibril Tamsir Niane.",
+            "actors": [
+              {
+                "name": "Balla Fasséké",
+                "role": "griot de Soundiata dans le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Soundjata ou l'épopée mandingue",
+                "author": "Djibril Tamsir Niane",
+                "year": 1960,
+                "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 141-142",
+                "notes": "Présence Africaine, Paris, 1960. Mise par écrit du récit du griot Djeli Mamadou Kouyaté, de Djeliba Koro près de Siguiri. Lu sur une copie non officielle déposée sur Internet Archive (SoundjataOuLepopeeMandingue), recomposée et paginée autrement que l'imprimé ; la page donnée est celle de cette copie. Pages 141 et 142, à l'assemblée de Kouroukan Fougan."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "Récit publié en 1960"
+            },
+            "era": "modern",
+            "statement": "Le nom Kouyaté est celui du griot qui raconte l'épopée, Djeli Mamadou Kouyaté : il dit que, depuis des temps immémoriaux, les Kouyaté sont au service des princes Keïta du Manding, « les sacs à parole ». C'est le récit que transcrit Djibril Tamsir Niane.",
+            "actors": [
+              {
+                "name": "Djeli Mamadou Kouyaté",
+                "role": "griot qui raconte l'épopée"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Soundjata ou l'épopée mandingue",
+                "author": "Djibril Tamsir Niane",
+                "year": 1960,
+                "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "notes": "Présence Africaine, Paris, 1960. Mise par écrit du récit du griot Djeli Mamadou Kouyaté, de Djeliba Koro près de Siguiri. Lu sur une copie non officielle déposée sur Internet Archive (SoundjataOuLepopeeMandingue), recomposée et paginée autrement que l'imprimé ; la page donnée est celle de cette copie. Page 9, au début du récit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Kouyaté viendrait de « Kója tɛ́ », « il n'y a pas de manque en vous », une formule qu'on adressait à ces gens pour leur grande habileté ; dans le parler rapide, elle serait devenue Kóyatɛ, puis Kúyatɛ. C'est le récit de l'ouvrage en n'ko de Souleymane Kanté, selon la traduction russe qu'en donne E. A. Bogacheva.",
+            "hypothesisGroup": "origine du nom Kouyaté",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 100",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Kúyate : le récit tiré de l'ouvrage de Souleymane Kanté. Le texte original en n'ko de Souleymane Kanté n'a pas été lu ; seule sa traduction russe l'a été, et le français est le nôtre."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

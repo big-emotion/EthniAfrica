@@ -342,5 +342,226 @@
       "fieldPath": "bearers",
       "reason": "Une porteuse contemporaine largement connue de ce nom est bien documentée par la presse et la recherche, mais aucune déclaration de son cru sur son origine lignagère n'a été retrouvée ; en l'absence d'une telle parole propre, aucun porteur vivant n'est nommé ici."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sangaré est un nom de clan, ou jamu, l'un des quatre noms des Peuls du Wassoulou avec Diallo, Diakité et Sidibé ; il est aussi porté chez des Malinké. On l'écrit aussi Sankaré, et le dictionnaire des noms de clan l'écrit Sàngare. On ne sait pas avec certitude d'où vient le nom ; nous présentons plus bas la seule explication que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Sangaré",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un des quatre noms de clan des Peuls du Wassoulou ; son origine est incertaine.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sangaré désigne un clan que le dictionnaire des noms de clan mandingues, qui l'écrit Sàngare, rattache aux Peuls, au Wassoulou et aux Malinké. Il lui donne pour équivalents Bari, Si et Ba et un surnom de plaisanterie, Kàngare, mais pas de sens. On ne sait pas avec certitude d'où vient le nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet lu. Entrée Sàngare : la variante Sankare, les groupes peul, wassoulounké et malinké, les équivalents Bari, Si et Ba, le surnom Kàngare ; aucun sens donné au nom."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 120",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Sàngare : les mêmes indications."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sangaré apparaît sous cette écriture chez Maurice Delafosse, qui écrit « Bari ou Sangaré » et en fait le même clan que les Daébé des Peuls. C'est la plus ancienne trace de cette écriture que le projet connaît ; le nom était noté plus tôt sous la forme Sankaré.",
+            "formAsWritten": "Sangaré",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 135",
+                "notes": "Émile Larose, Paris, 1912. L'auteur est un administrateur colonial en Afrique-Occidentale française. Lu sur l'édition du Projet Gutenberg, qui marque les pages de l'imprimé. Page 135, sur les noms de clan des Peuls."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Proposé en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sangaré serait le nom mandingue pris par le clan peul des Daébé : des Peuls partis avec Diâdié, mêlés aux Foulanké et aux Khassonké, auraient peu à peu adopté la langue mandé et changé leurs noms de clan, les Daébé devenant Sangaré, selon Maurice Delafosse.",
+            "hypothesisGroup": "origine du nom Sangaré",
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 229",
+                "notes": "Émile Larose, Paris, 1912. L'auteur est un administrateur colonial en Afrique-Occidentale française. Lu sur l'édition du Projet Gutenberg, qui marque les pages de l'imprimé. Page 229 : les partisans de Diâdié « transformant leurs noms de clan »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "Récit recueilli en 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Sangaré est, avec Diallo, Diakité et Sidibé, celui d'un des enfants d'une même mère peule ; dans ce récit, Sangaré était le savant. C'est ce que dit Babou Condé, griot de Fadama en Guinée, selon le mémoire d'E. A. Bogacheva.",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 53",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Jàlo : le récit du griot Babou Condé, recueilli en 2017."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Sangaré descendrait, avec Diallo, Diakité et Sidibé, d'un même groupe appelé jàtará, lui-même issu des Peuls, selon l'ouvrage en n'ko de Souleymane Kanté, dans son édition de 2004, cité par E. A. Bogacheva.",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 53",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Jàlo : l'ascendance des quatre noms d'après Souleymane Kanté. Le texte original en n'ko de Souleymane Kanté n'a pas été lu ; seule sa traduction russe l'a été, et le français est le nôtre."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sankaré",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre écriture du nom de clan Sangaré.",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sankaré est une autre écriture de Sangaré : le dictionnaire des noms de clan mandingues donne Sankare pour variante de Sàngare.",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet lu. Entrée Sàngare, variante Sankare."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1892,
+              "label": "Voyage de 1887-1889, récit publié en 1892"
+            },
+            "era": "polity",
+            "statement": "Le nom Sankaré apparaît chez Louis-Gustave Binger, qui décrit au village de Foulaboula « une colonie du Ouassoulou » dont la plupart des habitants « sont des Diakhité et des Sankaré ». C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand un voyageur l'a noté, pas depuis quand des familles le portent.",
+            "formAsWritten": "Sankaré",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Louis-Gustave Binger",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 1, p. 63",
+                "notes": "Hachette, Paris, 1892, deux tomes ; récit du voyage de 1887-1889. Lu dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée. Tome 1, page 63, à Foulaboula, près de Bougouni."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1892,
+              "label": "Voyage de 1887-1889, récit publié en 1892"
+            },
+            "era": "polity",
+            "statement": "Le nom Sankaré est, pour Louis-Gustave Binger, l'un des quatre noms de tribus peules du Ouassoulou, avec Sidibé, Diallo et Diakhité. Les Sankaré qu'il interroge ne connaissent pas leur pays d'origine, mais disent avoir habité autrefois le nord du Ganadougou.",
+            "formAsWritten": "Sankaré",
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 1, p. 211",
+                "notes": "Hachette, Paris, 1892, deux tomes ; récit du voyage de 1887-1889. Lu dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée. Tome 1, page 211."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

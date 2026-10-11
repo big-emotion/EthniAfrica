@@ -163,5 +163,87 @@
   "patronymicChainDepth": {
     "generations": 3,
     "sourceRefs": ["rosenhart-tribal-identity-2024"]
+  },
+  "nameHistory": {
+    "summary": "Le nom Déby est le nom personnel d'un homme, devenu un élément du nom d'Idriss Déby Itno, président du Tchad. Là où les noms de famille sont rares, on désigne une personne par son prénom, puis par ceux de son père et de son grand-père. On ne sait pas avec certitude d'où vient ce nom : les sources consultées ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Déby",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel porté comme nom du père dans une suite de noms ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit depuis 1988",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Déby n'est pas un nom de famille au sens français : là où les noms de famille sont rares, on désigne une personne par son prénom, puis par ceux de son père, de son grand-père et de son arrière-grand-père. En 2006, Idriss Déby ajoute à son nom celui de son grand-père, Itno, selon Eline Rosenhart. Les sources consultées ne disent pas ce que veut dire Déby.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Exploiting Tribal Identity: Evidence from the Darfur Conflict (2001-) and the Chad-Sudan Proxy War (2005-2010)",
+                "author": "Eline Rosenhart",
+                "year": 2024,
+                "url": "https://doi.org/10.69755/2995-2212.1281",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 97",
+                "notes": "The Journal of Social Encounters, vol. 8, n° 2, 2024, p. 88-107. Lu le 11 octobre 2026 dans une copie archivée du PDF déposé sur Digital Commons. Page 97 : en janvier 2006, Idriss Déby ajoute à son nom Itno, le nom de son grand-père ; « in a culture where surnames are not common, people are identified by the given name of their father, grandfather and great-grandfather »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Époque coloniale, selon Jérôme Tubiana"
+            },
+            "era": "colonial",
+            "statement": "Le nom Déby est celui d'un fils de Hitno, le grand-père d'Idriss Déby. Après que les colons français ont écarté leur clan de la chefferie, Hitno et son fils Déby représentent ce clan comme cheikhs à Shigek-Karo, au Darfour, selon Jérôme Tubiana.",
+            "sources": [
+              {
+                "title": "La guerre par procuration entre le Tchad et le Soudan et la « darfourisation » du Tchad : mythes et réalité",
+                "author": "Jérôme Tubiana",
+                "year": 2008,
+                "url": "https://www.smallarmssurvey.org/sites/default/files/resources/HSBA-WP-12-Chad-Sudan-Proxy-War-french.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 12",
+                "notes": "Small Arms Survey, document de travail 12, 2008, lu le 11 octobre 2026. Page 12 : les colons français écartent le clan Kolyala de la chefferie ; Hitno, grand-père d'Idriss Déby, part au Soudan, et au Darfour « Hitno et son fils Déby étaient des cheikhs représentant leurs clans à Shigek-Karo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1988,
+              "to": 1988,
+              "label": "1988"
+            },
+            "era": "modern",
+            "statement": "Le nom Déby est écrit en arabe, ديبي, dans un ouvrage sur les Zaghawa publié au Koweït en 1988 : une liste des responsables bideyat du Tchad et du Soudan porte l'entrée « ايناء ديبي حنتو », où ايناء est le titre de ces responsables. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; la liste ne dit pas de quel Déby il s'agit, et le nom était déjà porté avant elle.",
+            "formAsWritten": "ديبي",
+            "birth": true,
+            "sources": [
+              {
+                "title": "الزغاوة: ماضٍ وحاضر (Les Zaghawa : passé et présent)",
+                "author": "Mahmoud Abakar Suleiman et Mohamed Ali Abakar Suleiman al-Tinawi",
+                "year": 1988,
+                "url": "https://zaghawa.org/sahifa3/wp-content/uploads/2024/04/zaghawa-past-present-first-edition-1.pdf",
+                "tier": "unverified",
+                "source_kind": "community",
+                "page": "p. 101",
+                "notes": "Ouvrage en arabe, première édition, Koweït, avril 1988, lu le 11 octobre 2026 dans le PDF mis en ligne. Page 101 : liste des responsables des Bideyat du Tchad et du Soudan, appelés ايناء, dont l'entrée « ايناء ديبي حنتو ». La liste ne dit pas qui est ce Déby."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

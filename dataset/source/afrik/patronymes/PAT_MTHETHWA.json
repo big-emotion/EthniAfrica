@@ -136,5 +136,155 @@
       "fieldPath": "homonyms",
       "reason": "Aucune lignée homonyme d'origine distincte n'a été trouvée dans le texte intégral de Bryant, qui suit pourtant le clan sur seize passages."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mthethwa est un nom de clan nguni, porté au Zululand et, chez les Ndebele, au Zimbabwe. Au début du XIXe siècle, c'était le nom d'un clan puissant de la côte, celui de Dingiswayo. Les textes anciens l'écrivent Mtetwa ou Umtatwas. Nous présentons plus bas ce que les sources disent de son origine.",
+    "names": [
+      {
+        "nameText": "Mthethwa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan nguni, celui du clan de Dingiswayo sur la côte du Zululand.",
+        "periodLabel": "Écrit dès 1836 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1808,
+              "to": 1808,
+              "label": "Vers 1808, selon l'auteur"
+            },
+            "era": "polity",
+            "statement": "Le nom Mthethwa désigne le clan aba-kwa-Mtetwa, « ceux de Mtetwa ». Vers 1808, ce clan vivait sur la côte, entre la rivière Ntseleni et le lagon de Sainte-Lucie, sous son roi Dingiswayo, selon Alfred T. Bryant.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 83",
+                "notes": "Londres, Longmans, Green and Co., 1929. Bryant écrit depuis la mission catholique du Natal, dans le contexte colonial, à partir de récits recueillis auprès des familles au tournant du siècle. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 83, début du chapitre « The Rise of the Mtetwa Power ». Bryant écrit Mtetwa, une ancienne graphie de Mthethwa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 1929,
+              "label": "Généalogie notée vers 1860, publiée en 1929"
+            },
+            "statement": "Le nom Mthethwa serait celui d'un ancêtre : dans une généalogie notée vers 1860 dans les manuscrits de Wilhelm Bleek, un homme du clan mkhize fait remonter les siens à « Mkize, de Mtetwa, de Nyambese, de Nkulunkulu ». Alfred T. Bryant y voit la preuve d'une origine commune des Mkhize et des Mthethwa.",
+            "hypothesisGroup": "origine du nom Mthethwa",
+            "actors": [
+              {
+                "name": "Bopopa",
+                "role": "homme du clan mkhize qui donne la généalogie, selon Bryant"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 83",
+                "notes": "Londres, Longmans, Green and Co., 1929. Bryant écrit depuis la mission catholique du Natal, dans le contexte colonial, à partir de récits recueillis auprès des familles au tournant du siècle. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 83 : la généalogie donnée par « Bopopa », homme du clan emBo, dans les « Zulu Legends » manuscrites de Bleek conservées à la Grey Library du Cap. Le manuscrit n'a pas été lu ; seule la citation qu'en donne Bryant l'a été."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1720,
+              "to": 1720,
+              "label": "Vers 1720, selon l'auteur"
+            },
+            "era": "polity",
+            "statement": "On parle alors des Mtétwas arrivés du nord, du côté de la rivière Maputo, sous leur plus ancien chef connu, Xaba. Ils s'installent d'abord près de la Mfolozi noire, selon Alfred T. Bryant, qui avance cette date avec prudence.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 83",
+                "notes": "Londres, Longmans, Green and Co., 1929. Bryant écrit depuis la mission catholique du Natal, dans le contexte colonial, à partir de récits recueillis auprès des familles au tournant du siècle. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 83 : l'arrivée des Mtétwas « probably under the leadership of their oldest recorded chief, Xaba, about the year 1720 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1825,
+              "to": 1836,
+              "label": "Séjour de 1825-1832, récit publié en 1836"
+            },
+            "era": "polity",
+            "statement": "Le nom Mthethwa est écrit « Umtatwas » par Nathaniel Isaacs, une forme proche, pour désigner la tribu voisine qui accueillit Chaka en exil, sous le chef qu'il appelle Tingiswaa. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; le clan est plus ancien que ce livre.",
+            "formAsWritten": "Umtatwas",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Nathaniel Isaacs",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels and Adventures in Eastern Africa, Descriptive of the Zoolus, their Manners, Customs, etc. etc., with a Sketch of Natal",
+                "author": "Nathaniel Isaacs",
+                "year": 1836,
+                "url": "https://archive.org/details/b29350578_0001",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 1, p. 323-324",
+                "notes": "Londres, Edward Churton, 1836, tome 1. L'auteur, un marchand anglais, a vécu à Port Natal de 1825 à 1832. Lu dans la numérisation d'Internet Archive (exemplaire de la Wellcome Library) le 11 octobre 2026. Pages 323-324, dans son « Histoire de Chaka » : Chaka s'enfuit chez « a neighbouring tribe, called the Umtatwas », dont le chef est « Tingiswaa »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mtetwa",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'ancienne graphie du nom Mthethwa, dans les livres du début du XXe siècle.",
+        "periodLabel": "Graphie du début du XXe siècle",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mtetwa est la graphie qu'emploie Alfred T. Bryant pour « the large Mtetwa tribe under Dingiswayo », sur la côte entre la Mhlatuze et la Mfolozi.",
+            "formAsWritten": "Mtetwa",
+            "sources": [
+              {
+                "title": "A Zulu-English Dictionary with Notes on Pronunciation, a Revised Orthography and Derivations and Cognate Words from Many Languages",
+                "author": "Alfred T. Bryant",
+                "year": 1905,
+                "url": "https://archive.org/details/zuluenglishdicti00brya",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 28*",
+                "notes": "Pinetown (Natal), Mariannhill Mission Press, 1905. Le dictionnaire s'ouvre sur une courte histoire du peuple zoulou, paginée à part avec un astérisque. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 28* de l'histoire placée en tête du dictionnaire."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

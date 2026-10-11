@@ -175,5 +175,318 @@
       "fieldPath": "homonyms",
       "reason": "La graphie Diabaté transcrit le mandingue Jɛbatɛ, que le dictionnaire des jamuw réunit avec Jabatɛ, Jubatɛ, Jabagatɛ, Jɛbaatɛ et Jɛbagatɛ sous une seule entrée. Six orthographes d'un même jamu, et aucune lignée d'origine distincte dans les sources consultées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Diabaté est un nom de clan mandingue, porté surtout par des familles de griots. On l'écrit aussi Dioubaté, et Jɛbatɛ en bambara. Plusieurs récits expliquent son origine et ne s'accordent pas ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Diabaté",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan mandingue, surtout porté par des griots ; son origine est racontée de plusieurs façons.",
+        "periodLabel": "Écrit dès 1892 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Diabaté désigne un clan dont beaucoup de membres sont griots. Plusieurs récits le lisent comme une phrase qui voudrait dire « personne ne peut lui refuser » ; ils ne s'accordent ni sur l'ancêtre ni sur l'occasion, et nous les présentons séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 63-65",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, 2017, dirigé par A. Davydov et relu par V. Vydrin, lu en texte intégral le 11 octobre 2026 ; traduction du russe par nos soins. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Notice Jɛbatɛ : les écritures françaises Diabaté, Diébaté et Diabagaté, et trois récits d'origine du nom."
+              },
+              {
+                "title": "Soundjata ou l'épopée mandingue",
+                "author": "Djibril Tamsir Niane",
+                "year": 1960,
+                "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 32",
+                "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
+                "notes": "Paris, Présence Africaine, 1960. Mise par écrit du récit du griot Djeli Mamadou Kouyaté ; lue le 11 octobre 2026 sur une copie non officielle numérisée sur archive.org. Note 6 de l'éditeur, « Légende des Traore et Dioubate »."
+              },
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 11 octobre 2026. Entrée Jɛbatɛ et ses variantes Jabatɛ, Jubatɛ, Jabagatɛ, Jɛbaatɛ et Jɛbagatɛ ; aucun sens n'est donné au nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Diabaté est surtout celui de griots, ou jeli, mais pas seulement : le dictionnaire des noms de clan lui donne aussi des familles d'hommes libres dans le sud-est du Mali, des forgerons et, chez les Soninké, des familles de statut gesere.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 11 octobre 2026. Entrée Jɛbatɛ : statuts jèli, hɔ̀rɔn (avec une note en russe : « au sud-est du Mali »), nùmu et gesere (« chez les Soninké »)."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 63",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, 2017, dirigé par A. Davydov et relu par V. Vydrin, lu en texte intégral le 11 octobre 2026 ; traduction du russe par nos soins. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Notice Jɛbatɛ : mêmes statuts ; le mémoire situe les hommes libres Diabaté à Bougouni et à Sikasso, d'après Molinie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "Décrit en 1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Diabaté est celui des griots de Keyla, près de Kangaba au Mali, qui gardent les traditions de la famille royale Keïta : tous les sept ans, ils refont le toit de la case sacrée de Kangaba et y récitent l'histoire de Soundiata, selon l'Histoire générale de l'Afrique.",
+            "sources": [
+              {
+                "title": "General History of Africa, IV, ch. 6 : Mali and the second Mandingo expansion",
+                "author": "Djibril Tamsir Niane",
+                "year": 1984,
+                "url": "https://archive.org/details/unesco_general_history_africa_iv",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 127, note 28",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition anglaise de 1984, lue le 11 octobre 2026 sur une copie non officielle numérisée sur archive.org ; l'édition française n'a pas pu être ouverte. La note décrit Keyla, à 10 km de Kangaba, au Mali, et ses griots Diabaté."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1892,
+              "label": "Voyage de 1887-1889, récit publié en 1892"
+            },
+            "statement": "Le nom Diabaté apparaît par écrit sous deux formes proches, Diabakhaté et Dioubaté, que Louis-Gustave Binger range parmi les familles de griots malinké. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un voyageur l'a noté, pas depuis quand des familles le portent.",
+            "formAsWritten": "Dioubaté",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Louis-Gustave Binger",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, tome 2",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74721",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 2, p. 376",
+                "notes": "Paris, Hachette, 1892, deux tomes. Lu dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée, le 11 octobre 2026. Officier et voyageur de l'époque coloniale, cité ici pour les formes qu'il relève. Tableau de la famille Mali-nké : « Familles de griots : Kouyaté, Diabakhaté, Dombia, Dioubaté », avec pour interdit l'iguane."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "Rapporté en 1960"
+            },
+            "era": "modern",
+            "statement": "Le nom Diabaté viendrait d'une phrase dite après la mort du buffle de Do : quand le cadet des deux frères Traoré tue la bête, l'aîné chante sa gloire, et le cadet lui répond que, s'il était griot, personne ne lui résisterait, « Dian bagate ». Les Diabaté resteraient ainsi frères des Traoré, selon la note de Djibril Tamsir Niane à l'épopée de Soundiata.",
+            "hypothesisGroup": "origine du nom Diabaté",
+            "actors": [
+              {
+                "name": "Oulani et Oulamba",
+                "role": "frères chasseurs du récit, tous deux Traoré"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Soundjata ou l'épopée mandingue",
+                "author": "Djibril Tamsir Niane",
+                "year": 1960,
+                "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 32",
+                "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
+                "notes": "Paris, Présence Africaine, 1960. Mise par écrit du récit du griot Djeli Mamadou Kouyaté ; lue le 11 octobre 2026 sur une copie non officielle numérisée sur archive.org. Note 6 : « l'expression Dian-Baga-te est devenue “Diabate” et par déformation Dioubate »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Diabaté viendrait d'un surnom : deux frères Traoré, Wùlanín et Wùlanbá, tuent un buffle vers 1189 ; l'aîné dit au cadet qu'il devrait être griot, car il ne refuse rien, et le cadet prend le nom Jànbaatɛ́, devenu Jàbaatɛ́. C'est ce que rapporte un ouvrage en n'ko de Souleymane Kanté, traduit par E. A. Bogacheva.",
+            "hypothesisGroup": "origine du nom Diabaté",
+            "actors": [
+              {
+                "name": "Wùlanín et Wùlanbá",
+                "role": "frères chasseurs du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 65",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, 2017, dirigé par A. Davydov et relu par V. Vydrin, lu en texte intégral le 11 octobre 2026 ; traduction du russe par nos soins. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Notice Jɛbatɛ, passage marqué [Kante 2004] : le récit des frères Wùlanín et Wùlanbá et la date de 1189 sont ceux de l'ouvrage de Souleymane Kanté."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1959,
+              "to": 1959,
+              "label": "Rapporté en 1959"
+            },
+            "statement": "Le nom Diabaté viendrait d'un ancêtre, Surakata, musulman qui répandait l'islam et à qui le Prophète aurait dit que personne ne pourrait rien lui refuser : die, « refuser », baga, « celui qui », et te, « ne pas », selon L. Molinie, cité par E. A. Bogacheva.",
+            "hypothesisGroup": "origine du nom Diabaté",
+            "actors": [
+              {
+                "name": "Surakata",
+                "role": "ancêtre du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 64",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, 2017, dirigé par A. Davydov et relu par V. Vydrin, lu en texte intégral le 11 octobre 2026 ; traduction du russe par nos soins. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Notice Jɛbatɛ, passage marqué [MO] : L. Molinie, « Les systèmes patronymiques au Soudan central », Centre militaire d'information et de spécialisation pour l'outre-mer, 1959, document ronéotypé que nous n'avons pas pu lire."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dioubaté",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre forme du nom Diabaté, notée dès 1892.",
+        "periodLabel": "Écrit dès 1892",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1887,
+              "to": 1892,
+              "label": "Voyage de 1887-1889, récit publié en 1892"
+            },
+            "statement": "Le nom Dioubaté apparaît par écrit chez Louis-Gustave Binger, dans la liste des familles de griots malinké. C'est la plus ancienne trace de cette forme que le projet connaît ; elle dit quand un voyageur l'a notée, pas depuis quand elle est employée.",
+            "formAsWritten": "Dioubaté",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Louis-Gustave Binger",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, tome 2",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74721",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 2, p. 376",
+                "notes": "Paris, Hachette, 1892, deux tomes. Lu dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée, le 11 octobre 2026. Officier et voyageur de l'époque coloniale, cité ici pour les formes qu'il relève. Tableau de la famille Mali-nké : « Familles de griots : Kouyaté, Diabakhaté, Dombia, Dioubaté »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "Rapporté en 1960"
+            },
+            "era": "modern",
+            "statement": "Le nom Dioubaté est une déformation de Diabaté, selon la note de Djibril Tamsir Niane à l'épopée de Soundiata.",
+            "sources": [
+              {
+                "title": "Soundjata ou l'épopée mandingue",
+                "author": "Djibril Tamsir Niane",
+                "year": 1960,
+                "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 32",
+                "carrier": "Djeli Mamadou Kouyaté, griot de Djeliba Koro, près de Siguiri",
+                "notes": "Paris, Présence Africaine, 1960. Mise par écrit du récit du griot Djeli Mamadou Kouyaté ; lue le 11 octobre 2026 sur une copie non officielle numérisée sur archive.org. Note 6 : « Diabate et par déformation Dioubate »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Jɛbatɛ",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bam",
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Jɛbatɛ est l'écriture bambara de Diabaté dans le dictionnaire des noms de clan, qui relève aussi Jabatɛ, Jubatɛ, Jabagatɛ, Jɛbaatɛ et Jɛbagatɛ.",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 11 octobre 2026. Entrée Jɛbatɛ et ses cinq variantes."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
