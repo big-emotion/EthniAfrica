@@ -127,5 +127,178 @@
       "fieldPath": "peoples",
       "reason": "Aucune source consultée ne dit que Nzinga est un nom de clan ou de famille ; l'explication trouvée concerne le nom d'une personne, la reine Njinga. Aucune page consultée ne rattache ce nom au peuple Ambundu : ce lien vient de notre relevé et reste supposé."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Nzinga est un nom porté par des rois du Kongo et par une reine du Ndongo et du Matamba, dans l'actuel Angola. On l'écrit aussi Njinga, et les Portugais l'écrivaient Ginga. On ne sait pas avec certitude ce qu'il veut dire.",
+    "names": [
+      {
+        "nameText": "Nzinga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de rois du Kongo et d'une reine du Ndongo ; on ne sait pas ce qu'il veut dire.",
+        "periodLabel": "Écrit dès 1624 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "era": "modern",
+            "statement": "Le nom Nzinga est celui de rois du Kongo et d'une reine du Ndongo et du Matamba. On ne sait pas avec certitude ce qu'il veut dire : l'Histoire générale de l'Afrique ne lui donne aucun sens, et aucune source lue ne dit s'il nomme un clan.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 19 : Le Royaume du Kongo et ses voisins",
+                "author": "Jan Vansina, à partir d'une contribution de Théophile Obenga",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 606, 615",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot. Le chapitre nomme les rois Nzinga Nkuwu et Nzinga Mbemba et la reine Nzinga Mbande, sans donner de sens au nom. Contenu recoupé le 11 octobre 2026 sur l'édition anglaise, que South African History Online met en ligne, l'édition française n'ayant pas pu être rouverte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1626,
+              "to": 1626,
+              "label": "1626"
+            },
+            "era": "polity",
+            "statement": "Le nom Nzinga est porté par la reine Nzinga Mbande, qui devient reine du Ndongo en 1626, après avoir été baptisée Anna à Luanda, selon Jan Vansina.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 19 : Le Royaume du Kongo et ses voisins",
+                "author": "Jan Vansina, à partir d'une contribution de Théophile Obenga",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 615",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot. Nzinga Mbande, sœur du roi du Ndongo, baptisée Anna à Luanda, régente en 1624 puis reine en 1626. Contenu recoupé le 11 octobre 2026 sur l'édition anglaise, que South African History Online met en ligne, l'édition française n'ayant pas pu être rouverte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1506,
+              "to": 1506,
+              "label": "1506"
+            },
+            "era": "polity",
+            "statement": "Le nom Nzinga est porté par deux rois du Kongo : Nzinga Mbemba, connu aussi sous le nom d'Afonso Ier, succède en 1506 à son père Nzinga Nkuwu, selon Jan Vansina.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 19 : Le Royaume du Kongo et ses voisins",
+                "author": "Jan Vansina, à partir d'une contribution de Théophile Obenga",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 606",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot. Nzinga Mbemba, ou Afonso Ier, succède à son père Nzinga Nkuwu en 1506. Contenu recoupé le 11 octobre 2026 sur l'édition anglaise, que South African History Online met en ligne, l'édition française n'ayant pas pu être rouverte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1624,
+              "to": 1624,
+              "label": "1624"
+            },
+            "era": "polity",
+            "statement": "Le nom Nzinga apparaît par écrit sous une forme proche, Muzinga, dans une lettre d'un chanoine de la cathédrale du Kongo : il y nomme le roi baptisé en 1491 « Muzinga-am-cu », et son fils « Mobemba-à-Mozinga ». C'est la plus ancienne trace de ce nom que le projet connaît ; les rois qui le portaient vivaient plus d'un siècle avant elle.",
+            "formAsWritten": "Muzinga-am-cu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Monumenta Missionaria Africana, África ocidental, 1re série, vol. VII (1622-1630) : Carta de um cónego da Sé do Congo ao padre Manuel Rodrigues, S. J., 1624",
+                "author": "António Brásio (éd.), Agência Geral do Ultramar",
+                "year": 1956,
+                "url": "https://archive.org/details/monumentamissionariaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 291",
+                "notes": "Recueil de documents publié à Lisbonne en 1956, lu dans une copie non officielle mise en ligne sur Internet Archive le 11 octobre 2026. La lettre retrace la suite des rois du Kongo : « Muzinga-am-cu », cinquième roi, baptisé Dom João en 1491, puis son fils « Mobemba-à-Mozinga », baptisé Dom Affonso."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Njinga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Décrit en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Njinga est une autre écriture de Nzinga. La reine elle-même signait de noms différents, et la transcription du kimbundu a donné bien des formes : Njinga Mbande, Nzinga Mbandi, Jinga, Ginga, Zinga, entre autres, selon l'UNESCO.",
+            "sources": [
+              {
+                "title": "Nzinga Mbandi: Queen of Ndongo and Matamba, Histoire générale de l'Afrique, unité pédagogique",
+                "author": "UNESCO, texte de Sylvia Serbin et Ana Joubeaud",
+                "year": 2014,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Nzinga_Mbandi_Queen_of_Ndongo_and_Matamba_English.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 48 du PDF",
+                "notes": "Copie non officielle hébergée sur Wikimedia Commons, relue le 11 octobre 2026. Le nom de la reine s'écrit de nombreuses façons, en partie à cause de la transcription du kimbundu, et parce qu'elle signait elle-même de noms différents."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ginga",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "por",
+        "namedBy": "les Portugais",
+        "shortLine": "La forme portugaise du nom de la reine du Ndongo, au XVIIe siècle.",
+        "periodLabel": "Écrit dès 1626",
+        "accounts": [
+          {
+            "period": {
+              "from": 1626,
+              "to": 1626,
+              "label": "7 mars 1626"
+            },
+            "statement": "Le nom Ginga est la forme que donnent les Portugais : le gouverneur de Luanda, Fernão de Sousa, écrit au roi du Portugal que « dona Anna Ginga » occupe le trône du Ndongo après la mort de son frère. C'est la plus ancienne trace de cette forme que le projet connaît.",
+            "formAsWritten": "dona Anna Ginga",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Fernão de Sousa",
+                "role": "gouverneur portugais de Luanda, auteur de la lettre"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Monumenta Missionaria Africana, África ocidental, 1re série, vol. VII (1622-1630) : Carta de Fernão de Sousa a el-rei, 7 mars 1626",
+                "author": "António Brásio (éd.), Agência Geral do Ultramar",
+                "year": 1956,
+                "url": "https://archive.org/details/monumentamissionariaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 426",
+                "notes": "Recueil de documents publié à Lisbonne en 1956, lu dans une copie non officielle mise en ligne sur Internet Archive le 11 octobre 2026. Le gouverneur portugais de Luanda écrit au roi que le royaume du Ndongo est en danger « por estar nelle intruza dona Anna Ginga, por morte del Rey seu yrmaõ ». Original à l'Arquivo Histórico Ultramarino."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
