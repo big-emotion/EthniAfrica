@@ -96,5 +96,131 @@
       "fieldPath": "transmissionMode",
       "reason": "les résultats exacts « Tubman », Virginia Emigrants to Liberia, les archives de l'American Colonization Society et les travaux sur les familles américano-libériennes décrivent des familles de lignage mais aussi l'intégration de conjoints, d'enfants placés et de personnes adoptant le nom. Aucune règle univoque patrilinéaire, matrilinéaire, bilatérale ou élective n'a donc pu être établie pour Tubman."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Tubman est, au Liberia, le nom de familles américano-libériennes, dont les ancêtres sont venus des États-Unis au XIXe siècle. On ne sait pas avec certitude d'où vient ce nom au Liberia ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Tubman",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de familles américano-libériennes, écrit au Liberia dès 1843.",
+        "periodLabel": "Écrit au Liberia dès 1843 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tubman est porté au Liberia par des familles américano-libériennes, descendantes de Noirs venus des États-Unis. Les sources lues ne disent ni ce que ce nom veut dire ni comment il est arrivé au Liberia ; nous présentons plus bas ce qu'elles montrent.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Interview with Thomas F. Johnson",
+                "author": "Association for Diplomatic Studies and Training, Library of Congress",
+                "year": 2003,
+                "url": "https://tile.loc.gov/storage-services/service/mss/mfdip/2007/2007joh02/2007joh02.pdf",
+                "tier": "official",
+                "source_kind": "archive",
+                "page": "p. 142 du PDF",
+                "notes": "Foreign Affairs Oral History Collection, entretien mené par Charles Stuart Kennedy le 18 mars 2003, lu dans le PDF le 11 octobre 2026. Thomas F. Johnson, diplomate américain en poste à Monrovia, dit qu'au milieu du XXe siècle « the main vestige of the Americo-Liberians was their names: Cooper, Campbell, Tubman, Tolbert, etc. ». Témoignage, non dictionnaire."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Milieu du XXe siècle"
+            },
+            "era": "modern",
+            "statement": "Le nom Tubman reste, au milieu du XXe siècle, l'un des noms qui signalent une famille américano-libérienne, avec Cooper, Campbell ou Tolbert, selon le diplomate américain Thomas F. Johnson.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Interview with Thomas F. Johnson",
+                "author": "Association for Diplomatic Studies and Training, Library of Congress",
+                "year": 2003,
+                "url": "https://tile.loc.gov/storage-services/service/mss/mfdip/2007/2007joh02/2007joh02.pdf",
+                "tier": "official",
+                "source_kind": "archive",
+                "page": "p. 142 du PDF",
+                "notes": "Foreign Affairs Oral History Collection, entretien mené par Charles Stuart Kennedy le 18 mars 2003, lu dans le PDF le 11 octobre 2026. Thomas F. Johnson, diplomate américain en poste à Monrovia, dit qu'au milieu du XXe siècle « the main vestige of the Americo-Liberians was their names: Cooper, Campbell, Tubman, Tolbert, etc. ». Témoignage, non dictionnaire."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1844,
+              "to": 1844,
+              "label": "1844"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tubman est aussi celui d'une colline, le mont Tubman, près du cap des Palmes, où vivent des colons, selon une lettre publiée en 1844 par la revue de la Société américaine de colonisation. La lettre ne dit pas d'où vient ce nom de lieu.",
+            "formAsWritten": "Mt. Tubman",
+            "sources": [
+              {
+                "title": "The African Repository and Colonial Journal, vol. XX, avril 1844",
+                "author": "American Colonization Society",
+                "year": 1844,
+                "url": "https://archive.org/details/africanreposito56socigoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 119",
+                "notes": "Washington, American Colonization Society, 1844. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. « Letter from the African coast », écrite par un officier de l'escadre américaine au cap des Palmes : « an alarm gun was heard from Mt Tubman », puis « Passing by the foot of Mt. Vaughan, we came to Mt. Tubman ». La lettre ne dit pas d'où vient ce nom de lieu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1843,
+              "to": 1843,
+              "label": "1843"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tubman apparaît au Liberia dans celui de Cyrus Tubman, un colon du Maryland au Liberia, au cap des Palmes, venu en visite aux États-Unis, selon le rapport de la Société de colonisation du Maryland. C'est la plus ancienne trace de ce nom au Liberia que le projet connaît ; elle dit quand un document l'a écrit, pas depuis quand des familles le portent.",
+            "formAsWritten": "Cyrus Tubman",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The African Repository and Colonial Journal, vol. XIX, avril 1843",
+                "author": "American Colonization Society",
+                "year": 1843,
+                "url": "https://archive.org/details/africanreposito26socigoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 122",
+                "notes": "Washington, American Colonization Society, 1843. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Extrait du rapport de la Société de colonisation du Maryland : « during the last year three colonists visited the State — Cyrus Tubman, Joshua Cornish and John Bordley ». Revue d'une société qui organisait l'émigration des Noirs américains vers le Liberia."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1837,
+              "to": 1837,
+              "label": "1837"
+            },
+            "statement": "Le nom Tubman est alors celui de Richard Tubman, d'Augusta, en Géorgie, dont le testament libère 48 esclaves. Sa veuve, Emily Tubman, s'informe sur la colonie du Liberia en vue de leur départ, selon la revue de la Société américaine de colonisation. La revue ne dit pas quel nom ces personnes affranchies porteront.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The African Repository and Colonial Journal, vol. XIII, février 1837",
+                "author": "American Colonization Society",
+                "year": 1837,
+                "url": "https://archive.org/details/africanreposito31socigoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 66",
+                "notes": "Washington, American Colonization Society, 1837. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Rubrique « Emancipation » : « The late Richard Tubman, of Augusta, in Georgia, emancipated by his will 48 slaves » ; le Parlement de Géorgie ayant refusé qu'ils y restent, « Mrs. Emily Tubman, widow of the testator, wishes to receive full information concerning the Liberian Colony ». Revue d'une société qui organisait l'émigration des Noirs américains vers le Liberia."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
