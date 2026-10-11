@@ -20,7 +20,10 @@ import { pathToFileURL } from "node:url";
 
 import { assessResearch, discoverCorpus, verifyProgress } from "./research.mjs";
 import { inspectPackage } from "./package.mjs";
-import { capturePublication } from "./history.mjs";
+import {
+  capturePublication,
+  captureHistoricalPublication,
+} from "./history.mjs";
 
 const AREA = ".local/productions";
 const STAGES = ["brief", "research", "proof", "produce", "package", "ready"];
@@ -588,6 +591,37 @@ function applyLockedEvent(root, id, event) {
       });
       state.nextAction =
         "Reconcile the reported publication's actual media and copy; preserve working files and existing approval history";
+      break;
+    }
+    case "historical-publication": {
+      if (state.approvals[3]?.status === "approved")
+        fail("An approved package uses the publication event");
+      const report = state.publicationReports?.find(
+        (r) =>
+          r.network === event.network &&
+          r.url === event.url &&
+          r.publishedAt === event.publishedAt
+      );
+      if (!report) fail("A recorded publication report is required");
+      if (!report.evidenceCurrent)
+        fail("Publication report evidence changed or missing");
+      if (
+        state.publications.some(
+          (p) => p.network === event.network && p.url === event.url
+        )
+      )
+        fail("Publication already reconciled");
+      state.publications.push({
+        atRevision: state.revision + 1,
+        network: event.network,
+        url: event.url,
+        publishedAt: event.publishedAt,
+        evidence: required(event.evidence, "Attributed media evidence"),
+        snapshot: captureHistoricalPublication(root, state, event),
+      });
+      delete state.cancellations[event.network];
+      state.nextAction =
+        "Verify remaining networks and corpus work, then consolidate history and clean verified intermediates";
       break;
     }
     case "publication":

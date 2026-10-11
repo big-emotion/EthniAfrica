@@ -10,10 +10,20 @@ For publication outside the verified package path, record `publication-report`
 with the operator's actual report and an immutable evidence file. It records an
 outcome, not an approval or a media snapshot. Do not invent retrospective
 approval 3. The helper refuses closure and cancellation of a reported target
-until a matching verified publication record exists. Historical reconciliation
-without a previously approved package still requires a separate supported path;
-preserve the complete active folder while that capability is absent. A reconciled
-report and its unchanged evidence are retained with the eventual history.
+until a matching verified publication record exists. A reconciled report and its
+unchanged evidence are retained with the eventual history.
+
+When a post went out before approval 3 was recorded, reconcile it with a
+`historical-publication` event instead of `publication`. It needs a matching
+`publication-report` with current evidence, the ordered `media` files actually
+uploaded, an `attestationFile` (JSON with `attestation.networks` and
+`deliveredMedia: [{file, sha256}]` in published order, from the operator's
+attributed statement or an agent observation), a `copyFile` with one `{text,
+alt}` card per image, the observed `caption` and `firstComment` (or `null`), and
+an `evidence` sentence. The helper refuses changed media, a stale report and a
+piece that does have approval 3. It never creates approval 3: the snapshot is
+marked historical and the history states that approval 3 was not recorded and
+that alternative text was not verified as published.
 
 After explicit publication authorization and actual posting, record each network
 with the coordinator's `publication` event. The event requires approval 3 and

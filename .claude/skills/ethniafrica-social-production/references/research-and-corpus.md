@@ -114,6 +114,16 @@ skipped states and an unchanged local target are refused. Changed evidence is
 marked `evidenceCurrent: false` on recovery and prevents further advancement.
 Do not report such a record as current verified evidence.
 
+When the correction was merged together with later edits to the same field (for
+example sources added by another change, or a URL normalized to match an existing
+locator), the field no longer equals the approved value byte for byte. Record
+`locally-checked` with a `reconciliation` explaining each difference. The helper
+keeps the approved proposal unchanged and stores the integrated field as
+`observedValue`, so both remain visible. It refuses when the field still holds
+the reviewed `before` value: a correction that was never applied cannot be
+reconciled. Do not use this to accept a change of meaning; that needs a revised
+proof.
+
 A canonical fiche edit changes the proof's source fingerprint. Conservatively,
 this reopens approval 2 and downstream delivery while preserving approval 1.
 Refresh the comparison and present the affected proof; retain the earlier
