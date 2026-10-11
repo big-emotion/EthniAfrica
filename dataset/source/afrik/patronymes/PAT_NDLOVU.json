@@ -159,5 +159,235 @@
       "fieldPath": "casteOrSocialFunction",
       "reason": "Aucune charge héréditaire attachée au nom. Bryant montre au contraire que les fonctions tenues par ce lignage sont conférées et non transmises : Silwane puis son fils Gawozi sont chacun nommés à leur district par le roi Mpande, ce qui est une faveur royale renouvelée, non un office que le nom porterait."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ndlovu est un isibongo, un nom de clan des peuples nguni, qu'on écrivait autrefois Ndhlovu. Le même mot veut dire « éléphant » en zoulou. Plusieurs lignées distinctes portent ce nom, et les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Ndlovu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan nguni, aussi le mot zoulou pour « éléphant » ; plusieurs lignées le portent.",
+        "periodLabel": "Écrit depuis 1905",
+        "accounts": [
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "Défini en 1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ndlovu est aussi un mot zoulou : indlovu, que le dictionnaire d'Alfred T. Bryant écrit i-nDhlovu, veut dire « éléphant ». Ce sens ne dit pas d'où vient le nom de clan ; les sources ne s'accordent pas sur son origine, et chaque explication est présentée à part.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Zulu-English Dictionary",
+                "author": "Alfred T. Bryant",
+                "year": 1905,
+                "url": "https://archive.org/details/zuluenglishdicti00brya",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 103",
+                "notes": "Pinetown, Mariannhill Mission Press, 1905, lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur est un missionnaire catholique du Natal. Page 103 : « i-nDhlovu, n. Elephant »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ndlovu apparaît par écrit sous la forme Ndhlovu dans le dictionnaire zoulou d'Alfred T. Bryant, qui cite un dicton sur Ntentemana « du clan Ndhlovu », connu pour tout accepter sans jamais rien faire. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; le clan qui le porte est plus ancien que ce dictionnaire.",
+            "formAsWritten": "Ndhlovu",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Alfred T. Bryant",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Zulu-English Dictionary",
+                "author": "Alfred T. Bryant",
+                "year": 1905,
+                "url": "https://archive.org/details/zuluenglishdicti00brya",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 686",
+                "notes": "Pinetown, Mariannhill Mission Press, 1905, lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur est un missionnaire catholique du Natal. Page 686, entrée Vuma : « ukuvuma kulandula, kwasho uNtentemana wakwa'Ndhlovu », « as said Ntentemana of the Ndhlovu clan »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Temps de Dingiswayo et de Shaka, selon Alfred T. Bryant"
+            },
+            "era": "polity",
+            "statement": "Le nom Ndlovu est aussi celui d'un petit clan distinct, les aba-kwa-Ndlovu de Gatsheni, établis entre la rive gauche de la Ntsuze et la chaîne de Nkandla sous leur chef Mpongo, fils de Zingelwayo, selon Alfred T. Bryant.",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 264-265",
+                "notes": "Londres, Longmans, Green, 1929, lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 264 : « The aba-kwa-Ndlovu (of Gatsheni) were [...] a small clan, of Ntungwa-Nguni origin », sous « their petty chief, Mpongo [...] son of Zingelwayo ». Page 265 : leur histoire au temps de Macingwane, chef des amaCunu sous Dingiswayo et Shaka."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndlovu a pour louanges, ou izithakazelo, des noms comme Gatsheni et Mpongo kaZingelwayo, « Mpongo fils de Zingelwayo », selon une page communautaire de louanges de clan. Ce sont les noms qu'Alfred T. Bryant donne au clan de Gatsheni et à son chef.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Izithakazelo zakwa Ndlovu — Clan Names",
+                "author": "iAfrika",
+                "year": null,
+                "url": "https://iafrika.org/izithakazelo-zakwa-ndlovu-clan-names/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site communautaire de louanges de clan, lu le 11 octobre 2026. Les louanges commencent par « Ndlovu, Gatsheni, […] Mpongo kaZingelwayo ». La page signale elle-même que son contenu vient de la communauté."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant les aba-kwa-Ndlovu, selon Alfred T. Bryant"
+            },
+            "era": "polity",
+            "statement": "Mpungose est le nom du clan auquel appartenait Ndlovu, fils de Kuba, avant que ses descendants ne forment les aba-kwa-Ndlovu, selon Alfred T. Bryant.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 29",
+                "notes": "Londres, Longmans, Green, 1929, lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 29 : « a certain Mpungose, named Ndlovu (originator of the aba-kwa-Ndlovu sub-clan), son of Kuba »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Proposée en 1929"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndlovu viendrait d'un homme, Ndlovu, fils de Kuba, du clan Mpungose, qui s'établit près de la colline éThaleni, probablement au temps de Shaka : ses descendants formeraient les aba-kwa-Ndlovu, selon Alfred T. Bryant.",
+            "hypothesisGroup": "origine du nom Ndlovu",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 29",
+                "notes": "Londres, Longmans, Green, 1929, lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 29 : « It was probably during Shaka's time that a certain Mpungose, named Ndlovu (originator of the aba-kwa-Ndlovu sub-clan), son of Kuba [...] settled [...] at the éTAleni hill »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Rapportée en 1929"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndlovu serait celui d'une branche de la famille zouloue, selon des récits qu'Alfred T. Bryant rapporte sans en avoir trouvé de preuve.",
+            "hypothesisGroup": "origine du nom Ndlovu",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 62",
+                "notes": "Londres, Longmans, Green, 1929, lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 62 : « There are those who speak of a Ndlovu branch of the Zulu family. We have been able to discover no evidence whatever that there was such branch. » Des réfugiés d'autres clans, placés sous la protection des Zoulous, auraient plutôt été « distinguished as aba-kwa-Ndlovu »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Proposée en 1929"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndlovu aurait été donné à des réfugiés venus d'autres clans et placés sous la protection des Zoulous, que d'autres auraient fini par prendre pour de « purs Zoulous », selon Alfred T. Bryant, qui juge cette explication plus probable.",
+            "hypothesisGroup": "origine du nom Ndlovu",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 62",
+                "notes": "Londres, Longmans, Green, 1929, lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 62 : « There are those who speak of a Ndlovu branch of the Zulu family. We have been able to discover no evidence whatever that there was such branch. » Des réfugiés d'autres clans, placés sous la protection des Zoulous, auraient plutôt été « distinguished as aba-kwa-Ndlovu »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ndhlovu",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Écrit en 1905",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ndhlovu est l'écriture de Ndlovu dans le dictionnaire zoulou d'Alfred T. Bryant, publié en 1905 ; le même auteur écrit Ndlovu en 1929.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Zulu-English Dictionary",
+                "author": "Alfred T. Bryant",
+                "year": 1905,
+                "url": "https://archive.org/details/zuluenglishdicti00brya",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 686",
+                "notes": "Pinetown, Mariannhill Mission Press, 1905, lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur est un missionnaire catholique du Natal. Page 686, entrée Vuma : « Ntentemana of the Ndhlovu clan »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
