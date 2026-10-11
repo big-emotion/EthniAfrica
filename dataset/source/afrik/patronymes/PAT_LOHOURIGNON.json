@@ -185,5 +185,116 @@
       "fieldPath": "homonyms",
       "reason": "Les statistiques disponibles situent une minorité des porteurs hors d'Afrique de l'Ouest, mais aucune source ne documente pour ces occurrences une origine distincte et vérifiable ; aucun homonyme avéré n'a donc été retenu."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Lohourignon est un nom de famille porté en Côte d'Ivoire. Il ressemble au nom bété Lorougnon, un nom donné à la naissance, mais aucune source ne dit qu'il s'agit du même nom. On ne sait pas avec certitude d'où il vient. Pour Lorougnon, les sens donnés se contredisent ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Lohourignon",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille porté en Côte d'Ivoire ; on ne sait pas avec certitude d'où il vient.",
+        "periodLabel": "Écrit dès 2006 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "2006"
+            },
+            "era": "modern",
+            "statement": "Le nom Lohourignon apparaît comme nom de famille dans un article du quotidien ivoirien Notre Voie, repris par allAfrica le 19 juillet 2006. C'est la plus ancienne trace écrite de cette graphie que le projet connaît ; elle dit quand un journal l'a écrite, pas depuis quand des familles la portent.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Côte d'Ivoire : Le domicile de Maurice Lohourignon cambriolé",
+                "author": "Augustin Kouyo",
+                "year": 2006,
+                "url": "https://fr.allafrica.com/stories/200607190630.html",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article du quotidien Notre Voie (Abidjan), repris par allAfrica le 19 juillet 2006, lu le 11 octobre 2026. Il atteste l'usage du nom comme nom de famille en Côte d'Ivoire, sans rien dire de son origine."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Lorougnon",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom bété donné à la naissance, proche de Lohourignon ; son sens est discuté.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Décrit en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Lorougnon est un nom bété. Chez les Bété, un nom donné à la naissance a toujours un sens, selon une liste établie par le traditionaliste Zahui Ouraga Aimé. Pour Lorougnon, cette liste donne deux sens qui se contredisent ; nous les présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Côte d'Ivoire : voici la signification des noms Bété que vous connaissez",
+                "author": "Afriksoir",
+                "year": 2021,
+                "url": "https://afriksoir.net/cote-divoire-voici-la-signification-des-noms-bete-que-vous-connaissez/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article du 14 février 2021, sans auteur signé, lu le 11 octobre 2026. Il donne le sens d'une soixantaine de noms bété et indique pour source Zahui Ouraga Aimé, traditionaliste. Lorougnon y figure deux fois : seul, avec le sens « l'étranger, qui est de passage », et avec Groguhé, Koudougnon, Koukougnon et Pregnon, avec le sens « enfant qui survient après plusieurs naissances suivies de décès ». Une publication de juin 2021 de la page Facebook de l'organisme ivoirien de tourisme reprend la même liste dans le même ordre : elle ne compte pas comme une seconde voix."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Rapporté en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Lorougnon voudrait dire « l'étranger, celui qui est de passage », selon le traditionaliste Zahui Ouraga Aimé, cité par Afriksoir.",
+            "hypothesisGroup": "sens du nom Lorougnon",
+            "sources": [
+              {
+                "title": "Côte d'Ivoire : voici la signification des noms Bété que vous connaissez",
+                "author": "Afriksoir",
+                "year": 2021,
+                "url": "https://afriksoir.net/cote-divoire-voici-la-signification-des-noms-bete-que-vous-connaissez/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article du 14 février 2021, sans auteur signé, lu le 11 octobre 2026. Il donne le sens d'une soixantaine de noms bété et indique pour source Zahui Ouraga Aimé, traditionaliste. Lorougnon y figure deux fois : seul, avec le sens « l'étranger, qui est de passage », et avec Groguhé, Koudougnon, Koukougnon et Pregnon, avec le sens « enfant qui survient après plusieurs naissances suivies de décès ». Une publication de juin 2021 de la page Facebook de l'organisme ivoirien de tourisme reprend la même liste dans le même ordre : elle ne compte pas comme une seconde voix."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Rapporté en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Lorougnon serait donné à l'enfant qui naît après plusieurs naissances suivies de décès, comme Groguhé, Koudougnon, Koukougnon et Pregnon, selon la même liste du traditionaliste Zahui Ouraga Aimé.",
+            "hypothesisGroup": "sens du nom Lorougnon",
+            "sources": [
+              {
+                "title": "Côte d'Ivoire : voici la signification des noms Bété que vous connaissez",
+                "author": "Afriksoir",
+                "year": 2021,
+                "url": "https://afriksoir.net/cote-divoire-voici-la-signification-des-noms-bete-que-vous-connaissez/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article du 14 février 2021, sans auteur signé, lu le 11 octobre 2026. Il donne le sens d'une soixantaine de noms bété et indique pour source Zahui Ouraga Aimé, traditionaliste. Lorougnon y figure deux fois : seul, avec le sens « l'étranger, qui est de passage », et avec Groguhé, Koudougnon, Koukougnon et Pregnon, avec le sens « enfant qui survient après plusieurs naissances suivies de décès ». Une publication de juin 2021 de la page Facebook de l'organisme ivoirien de tourisme reprend la même liste dans le même ordre : elle ne compte pas comme une seconde voix."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

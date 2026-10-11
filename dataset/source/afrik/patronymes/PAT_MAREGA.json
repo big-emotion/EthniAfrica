@@ -131,5 +131,92 @@
       "fieldPath": "peoples",
       "reason": "Le dictionnaire des jamuw n'a pas d'entrée pour ce nom, et le rattachement aux Soninké ne repose que sur des listes communautaires : nous le donnons comme supposé."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Marega est un nom de famille que des sources communautaires rattachent aux Soninké. On l'écrit aussi Maréga. On ne sait pas avec certitude d'où il vient : aucune source lue n'en donne le sens ni la plus ancienne trace écrite.",
+    "names": [
+      {
+        "nameText": "Marega",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille rattaché aux Soninké ; aucune source lue n'en donne le sens ni l'origine.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Marega désigne un nom de famille que des sources communautaires rattachent aux Soninké. Le dictionnaire des noms de clan mandingues n'a pas d'entrée pour lui, et aucune source lue ne lui donne de sens ni de plus ancienne trace écrite.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet lu le 11 octobre 2026. Le fichier n'a pas d'entrée Marega ni Maréga."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2007,
+              "to": 2007,
+              "label": "Liste publiée en 2007"
+            },
+            "era": "modern",
+            "statement": "Le nom Marega reçoit chez les Soninké deux seconds noms, ou jammu kare, Djadja et Bidanesse, qui s'ajoutent au nom de famille pour l'identifier, selon une liste du portail Soninkara.com.",
+            "sources": [
+              {
+                "title": "Les noms de famille avec leur jammu kare",
+                "author": "Hadiya Wagué, Soninkara.com",
+                "year": 2007,
+                "url": "http://www.soninkara.com/societe/organisation-sociale/les-noms-de-famille-avec-leur-jammu-kare.html",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page du portail communautaire soninké publiée le 8 avril 2007, lue le 11 octobre 2026 dans une copie archivée du 12 décembre 2024. Liste non exhaustive, constituée par les internautes du portail, des seconds noms (jammu kare) attribués aux noms de famille soninké ; le jammu kare y est défini comme le second nom qui s'ajoute à un nom de famille et lui sert d'identifiant, surtout lors des salutations. La liste ne dit rien de l'origine des noms. On y lit « Marega » deux fois, avec les jammu kare « Djadja » et « Bidanesse »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Maréga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Maréga figure entre parenthèses après Diawara dans la liste des noms de famille que Makhtar Diouf, chercheur à l'IFAN, donne pour caractéristiques d'une origine soninké, selon l'article Soninkés de Wikipédia. L'article ne dit pas ce que lie cette parenthèse.",
+            "sources": [
+              {
+                "title": "Soninkés — Wikipédia",
+                "author": "Contributeurs de Wikipédia",
+                "year": 2026,
+                "url": "https://fr.wikipedia.org/wiki/Sonink%C3%A9s",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Article consulté le 11 octobre 2026. La section sur les patronymes reprend une liste de Makhtar Diouf, chercheur à l'IFAN (Sénégal, les ethnies et la nation, Dakar, NEAS, 1998, p. 70-71), que nous n'avons pas lue. On y lit « Baradji » et « Diawara (Maréga) »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

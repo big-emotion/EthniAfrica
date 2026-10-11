@@ -135,5 +135,106 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Mandela », « Xhosa », « Thembu », « surname origin », « clan », « genealogy », « transmission » et « obituary », ainsi que la biographie officielle du gouvernement sud-africain n'ont établi aucune règle propre à Mandela permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mandela est le nom de famille de Nelson Mandela et des siens, des Thembu de langue xhosa, en Afrique du Sud. Il est distinct de Madiba, le nom de leur clan. On ne sait pas avec certitude d'où vient le nom Mandela : les sources consultées ne lui donnent ni sens ni origine.",
+    "names": [
+      {
+        "nameText": "Mandela",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille thembu, distinct du nom de clan Madiba ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit dès 1883 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "Raconté en 1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Mandela est un nom de famille, que Nelson Mandela distingue du nom de son clan, Madiba : à la naissance de son premier fils, il dit avoir perpétué « le nom Mandela et le clan Madiba ». Les sources consultées ne donnent pas de sens au nom Mandela.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Long Walk to Freedom: The Autobiography of Nelson Mandela",
+                "author": "Nelson Mandela",
+                "year": 1994,
+                "url": "https://repository.act.ac.rw/server/api/core/bitstreams/1781d4c1-64c6-4fa2-87e7-b693e01b24d4/content",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Little, Brown, 1994. Lu le 11 octobre 2026 dans le PDF archivé, qui ne porte pas de numéros de page imprimés : nous citons la partie, non une page. Première partie, « A Country Childhood » : membre du clan Madiba ; Ngubengcuka, mort en 1832 ; « The eldest son of the Ixhiba house was Simakade, whose younger brother was Mandela, my grandfather ». Partie sur Johannesburg, à la naissance de son fils Thembi : « I had perpetuated the Mandela name and the Madiba clan ». Le livre n'explique pas l'origine du nom Mandela."
+              },
+              {
+                "title": "Names",
+                "author": "Nelson Mandela Foundation",
+                "year": null,
+                "url": "https://www.nelsonmandela.org/names",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Page de la Fondation Nelson Mandela, sans date ni numéro de page. Elle dit que Madiba est le nom du clan de Nelson Mandela, que Rolihlahla est son nom de naissance et que Nelson lui a été donné à l'école ; elle ne dit rien du nom Mandela lui-même. Relevé repris des notes de la fiche."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "Raconté en 1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Mandela est celui du grand-père de Nelson Mandela, frère cadet de Simakade, fils aîné de la maison Ixhiba, une branche de la famille du roi thembu Ngubengcuka. C'est ce que raconte Nelson Mandela ; il ne dit pas que le nom de famille vient de ce grand-père.",
+            "actors": [
+              {
+                "name": "Mandela, fils de Ngubengcuka",
+                "role": "grand-père de Nelson Mandela dans le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Long Walk to Freedom: The Autobiography of Nelson Mandela",
+                "author": "Nelson Mandela",
+                "year": 1994,
+                "url": "https://repository.act.ac.rw/server/api/core/bitstreams/1781d4c1-64c6-4fa2-87e7-b693e01b24d4/content",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Little, Brown, 1994. Lu le 11 octobre 2026 dans le PDF archivé, qui ne porte pas de numéros de page imprimés : nous citons la partie, non une page. Première partie, « A Country Childhood » : membre du clan Madiba ; Ngubengcuka, mort en 1832 ; « The eldest son of the Ixhiba house was Simakade, whose younger brother was Mandela, my grandfather ». Partie sur Johannesburg, à la naissance de son fils Thembi : « I had perpetuated the Mandela name and the Madiba clan ». Le livre n'explique pas l'origine du nom Mandela."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1883,
+              "to": 1883,
+              "label": "1883"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mandela apparaît par écrit dans une courte histoire des Mpondomise, recueillie pour une commission de la colonie du Cap : un homme appelé Mandela y vit, avec Umditshwa, au bord de la Cumgce. C'est la plus ancienne trace de ce nom que le projet connaît. Les sources ne disent pas si cet homme a un lien avec la famille thembu qui porte ce nom aujourd'hui.",
+            "formAsWritten": "Mandela",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Mandela",
+                "role": "homme mpondomise du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Report and Proceedings, with Appendices, of the Government Commission on Native Laws and Customs",
+                "author": "Commission on Native Laws and Customs, colonie du Cap",
+                "year": 1883,
+                "url": "https://archive.org/details/reportandprocee00barrgoog",
+                "tier": "official",
+                "source_kind": "archive",
+                "page": "p. 405",
+                "notes": "Le Cap, 1883. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Page 405, dans une courte histoire des Mpondomise de la section d'Umditshwa, racontée par des conseillers de cette section et mise par écrit par E. S. Bam, interprète du magistrat de Tsolo : « \"Mandela\" and Umditshwa were then living at the Cumgce and had removed from Faku »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

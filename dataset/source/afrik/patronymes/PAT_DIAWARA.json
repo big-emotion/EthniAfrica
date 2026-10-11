@@ -450,5 +450,323 @@
       "fieldPath": "alliances",
       "reason": "Le dictionnaire des noms de clan porte des liens de plaisanterie vers Diawara depuis les entrées Traoré et Jwàra, mais aucun clan nommé sur l'entrée de Diawara elle-même. Un mémoire de 2017 donne pour partenaires Kamara, Sagango et Samaké, tirés de matériaux d'enquête réunis par des linguistes sans indication d'informateur : nous ne retenons que le lien avec Traoré, porté par l'entrée qui le contient."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Diawara est un nom de clan, ou jamu, porté surtout par des Soninké du Kaarta et du Kingui, au Mali, et aussi chez des Malinké et des Peuls. On l'écrit aussi Jawara, et le dictionnaire des noms de clan l'écrit Jáwara. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Diawara",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan soninké du Kaarta et du Kingui ; son origine reste discutée.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Diawara désigne un clan, que le dictionnaire des noms de clan mandingues écrit Jáwara. Il le rattache aux Soninké, aux Malinké et aux Peuls, entre autres groupes, et ne lui donne pas de sens. Plusieurs explications de son origine existent ; nous les présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet lu. Entrée Jáwara : groupes soninké, malinké et peul, entre autres ; statuts hɔ̀rɔn, jèli et garanke ; aucun sens donné au nom."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 56-57",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Jáwara : les écritures Diawarra, Diawara, Jawarra et Jawara, et les groupes qui portent le nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Diawara désigne, pour Maurice Delafosse, un groupe soninké « participant à la fois de la tribu, de la caste et du clan », qu'il divise en Sagoné, ou Sahonéra, et en Dabo.",
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 137",
+                "notes": "Émile Larose, Paris, 1912. L'auteur est un administrateur colonial en Afrique-Occidentale française. Lu sur l'édition du Projet Gutenberg, qui marque les pages de l'imprimé. Page 137, dans la liste des clans soninké."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1863,
+              "to": 1868,
+              "label": "Instructions de 1863, récit publié en 1868"
+            },
+            "era": "polity",
+            "statement": "Le nom Diawara est écrit « Djawaras » dans les instructions de la mission d'Eugène Mage, en 1863, qui parlent du « pays des Djawaras », des Sarakollé d'une province du Kaarta. Mage précise en note que les Djawaras habitent surtout le Kaarta, et d'abord le Kingui.",
+            "formAsWritten": "Djawaras",
+            "actors": [
+              {
+                "name": "Eugène Mage",
+                "role": "publie ces instructions et les corrige en note"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Voyage dans le Soudan occidental (Sénégambie-Niger)",
+                "author": "Eugène Mage",
+                "year": 1868,
+                "url": "https://archive.org/details/voyagedansleso00mage",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 12",
+                "notes": "Hachette, Paris, 1868 ; récit de la mission de 1863-1866 vers Ségou, menée pour le gouverneur du Sénégal. Lu dans la numérisation d'Internet Archive. Page 12, dans les instructions de la mission et la note 1 de Mage."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1849,
+              "to": 1858,
+              "label": "Voyage de 1849-1855, récit publié en 1858"
+            },
+            "era": "polity",
+            "statement": "Le nom Diawara apparaît sous une forme proche, « Jáwarát », chez Heinrich Barth, qui compte les Jáwarát parmi les sections des Aswának du Bághena, nom qu'il donne aux Soninké. Il ajoute qu'ils ne parlent que la langue des Aswának et qu'ils se divisent en deux sections, dont les Welád Dábo. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand un voyageur l'a noté, pas depuis quand le clan le porte.",
+            "formAsWritten": "Jáwarát",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Heinrich Barth",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, volume 5",
+                "author": "Heinrich Barth",
+                "year": 1858,
+                "url": "https://archive.org/details/travelsdiscoveri51858bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 504",
+                "notes": "Longman, Londres, 1857-1858, cinq volumes ; récit du voyage de 1849-1855 pour le gouvernement britannique. Lu dans la numérisation d'Internet Archive, vérifiée sur l'image de la page. Appendice I, page 504 : la liste des sections des Aswának du Bághena, dont « The Jáwarát ». Page 491, Barth appelle aussi Aswának ou Wakoré le peuple dont les Peuls nomment une partie d'après la ville de Jawara."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Vers 1270, selon les traditions"
+            },
+            "era": "polity",
+            "statement": "Le nom Diawara est celui de la dynastie qui aurait pris le pouvoir à Diara, au Kingui, vers 1270, à la place de la dynastie des Niakaté. Son ancêtre aurait été un chasseur, Daman-Guilé, arrivé au Manding au temps de Soundiata, selon les traditions que rapporte Maurice Delafosse.",
+            "actors": [
+              {
+                "name": "Daman-Guilé",
+                "role": "chasseur donné comme l'ancêtre des Diawara dans les traditions"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 271-276",
+                "notes": "Émile Larose, Paris, 1912. L'auteur est un administrateur colonial en Afrique-Occidentale française. Lu sur l'édition du Projet Gutenberg, qui marque les pages de l'imprimé. Pages 271 à 276, sur la fraction soninké des Diawara et le royaume de Diara."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Rapportée en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Diawara viendrait d'une réponse mal comprise : Soundiata ayant demandé son nom de clan à Daman-Guilé, celui-ci aurait répondu « Dia wara », « il n'y a pas de clans chez nous » dans la langue de son pays, et on aurait pris ces mots pour le nom de ses gens. C'est la légende que rapporte Maurice Delafosse.",
+            "hypothesisGroup": "origine du nom Diawara",
+            "actors": [
+              {
+                "name": "Daman-Guilé",
+                "role": "chasseur du récit, ancêtre des Diawara selon la légende"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 271-272",
+                "notes": "Émile Larose, Paris, 1912. L'auteur est un administrateur colonial en Afrique-Occidentale française. Lu sur l'édition du Projet Gutenberg, qui marque les pages de l'imprimé. Pages 271 et 272 : la rencontre de Daman-Guilé avec Soundiata et sa réponse, « rapporte la légende »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Proposé en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Diawara pourrait venir de dia, ou dian, qui veut dire « clan » en mandé, suivi de wala, la négation en peul, d'où « il n'y a pas de clan », selon une supposition de Maurice Delafosse. Il ajoute que Diawara et le nom peul Diawambé semblent venir d'un même radical.",
+            "hypothesisGroup": "origine du nom Diawara",
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 271, note 215",
+                "notes": "Émile Larose, Paris, 1912. L'auteur est un administrateur colonial en Afrique-Occidentale française. Lu sur l'édition du Projet Gutenberg, qui marque les pages de l'imprimé. Note 215, rattachée à la page 271. L'auteur donne lui-même cette étymologie pour ce qu'elle vaut."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "Proposé en 1960"
+            },
+            "statement": "Le nom Diawara voudrait dire « fauve de Dia », Dia étant la ville des grands marabouts où les Diawara auraient régné, selon une note de Djibril Tamsir Niane dans l'épopée de Soundiata.",
+            "hypothesisGroup": "origine du nom Diawara",
+            "sources": [
+              {
+                "title": "Soundjata ou l'épopée mandingue",
+                "author": "Djibril Tamsir Niane",
+                "year": 1960,
+                "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 132",
+                "notes": "Présence Africaine, Paris, 1960. Mise par écrit du récit du griot Djeli Mamadou Kouyaté, de Djeliba Koro près de Siguiri. Lu sur une copie non officielle déposée sur Internet Archive (SoundjataOuLepopeeMandingue), recomposée et paginée autrement que l'imprimé ; la page donnée est celle de cette copie. Note 1 du chapitre « L'empire », sur la prise de Diaghan : la note est de l'éditeur, non du griot."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Diawara viendrait du soninké « Ja wara », « Hé ! va-t'en ! » ; en maninka, il sonne comme le cri qui chasse les chiens. C'est l'une des deux explications de l'ouvrage en n'ko de Souleymane Kanté, selon la traduction russe qu'en donne E. A. Bogacheva.",
+            "hypothesisGroup": "origine du nom Diawara",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 58-59",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Jáwara : les deux explications du nom tirées de l'ouvrage de Souleymane Kanté. Le texte original en n'ko de Souleymane Kanté n'a pas été lu ; seule sa traduction russe l'a été, et le français est le nôtre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Diawara viendrait de « Jà wáda », un surnom donné aux Diawara quand leur force devint si grande qu'elle paralysa toute la capitale. C'est l'autre explication de l'ouvrage en n'ko de Souleymane Kanté, selon E. A. Bogacheva.",
+            "hypothesisGroup": "origine du nom Diawara",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 59",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Jáwara. Le texte original en n'ko de Souleymane Kanté n'a pas été lu ; seule sa traduction russe l'a été, et le français est le nôtre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "Proposé en 2017"
+            },
+            "statement": "Le nom Diawara pourrait être rapproché de Ghayawara, une ville de l'or du Ghana décrite par al-Bakri au XIe siècle, et du pays de Ghiyara dont parle al-Idrisi au XIIe siècle, selon E. A. Bogacheva. Elle avance ce rapprochement comme possible, à partir de traductions russes de ces auteurs.",
+            "hypothesisGroup": "origine du nom Diawara",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 58",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Jáwara : le rapprochement proposé par l'autrice."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Jawara",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre écriture du nom de clan Diawara.",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Jawara est une autre écriture de Diawara, que le mémoire d'E. A. Bogacheva range parmi les écritures du nom de clan Jáwara.",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 56",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Jáwara : les écritures Diawarra, Diawara, Jawarra et Jawara."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

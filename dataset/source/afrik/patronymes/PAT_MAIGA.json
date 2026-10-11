@@ -128,5 +128,254 @@
       "fieldPath": "transmissionMode",
       "reason": "Guillaud montre des lignages Maega et décrit la transmission patrilinéaire des terres en Aribinda, mais n'établit pas que le patronyme lui-même suit cette règle. Massing et le catalogue INSTAT/RAVEC ne documentent pas davantage sa transmission ; la valeur reste other."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Maïga est un nom de clan songhaï, porté notamment au Mali et au Burkina Faso. On l'écrit aussi Maiga ; en Aribinda, au Burkina Faso, il s'écrit Maega. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Maïga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan songhaï ; son origine reste discutée.",
+        "periodLabel": "Écrit dès 1907 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Maïga est un nom de clan songhaï, que le dictionnaire des noms de clan mandingues écrit Mayga, avec la variante Mayiga. Ce dictionnaire ne lui donne pas de sens. Les explications de son origine sont discutées ; nous les présentons séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet relu le 11 octobre 2026. Entrée Mayga : variante Mayiga, groupe songhaï, aucun sens donné au nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Maïga apparaît par écrit chez Louis Desplagnes, qui compte les familles Maïga parmi les derniers représentants, dans le Hombori, de l'occupation des askia. C'est la plus ancienne trace de ce nom que le projet connaît ; le clan qui le porte est plus ancien que ce livre.",
+            "formAsWritten": "Maïga",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Louis Desplagnes",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Le plateau central nigérien : une mission archéologique et ethnographique au Soudan français",
+                "author": "Louis Desplagnes, lieutenant d'infanterie coloniale",
+                "year": 1907,
+                "url": "https://archive.org/details/leplateaucentral00desp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 198",
+                "notes": "Paris, E. Larose, 1907. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Officier de l'époque coloniale, cité ici pour ce qu'il écrit du nom, non comme une autorité. Page 198 : « Les membres des familles Nadïemba, Maïga, Kaija, sont actuellement les derniers représentants de cette occupation », celle des askia vers le Hombori."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Récit d'une chronique de Tombouctou"
+            },
+            "statement": "Le nom Maïga viendrait de Meinga, une captive dont la chronique de Tombouctou appelée Tarikh el-Fettach fait l'ancêtre des Maïga, le clan royal songhaï. C'est ce que rapporte Andreas Massing, qui résume la chronique.",
+            "hypothesisGroup": "origine du nom Maïga",
+            "actors": [
+              {
+                "name": "Meinga",
+                "role": "ancêtre des Maïga dans la chronique"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Baghayogho: A Soninke Muslim Diaspora in the Mande World",
+                "author": "Andreas W. Massing",
+                "year": 2004,
+                "url": "https://journals.openedition.org/etudesafricaines/pdf/4850",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 888",
+                "notes": "Cahiers d'études africaines, n° 176, 2004, p. 887-922. Lu le 11 octobre 2026 dans le PDF d'OpenEdition. Page 888 : d'après le Tarikh el-Fettach, l'une des esclaves du plus jeune fils de Taras, « called Meinga became the ancestor of the Maïga, the Songhay royal clan ». La chronique elle-même n'a pas été lue."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Proposé en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Maïga porterait la marque ma d'une ancienne alliance autour de l'emblème du poisson, que des peuples auraient ajoutée à leur nom, selon Louis Desplagnes. Il range dans cette liste Mambi, Fama, Farma et Maïga.",
+            "hypothesisGroup": "origine du nom Maïga",
+            "sources": [
+              {
+                "title": "Le plateau central nigérien : une mission archéologique et ethnographique au Soudan français",
+                "author": "Louis Desplagnes, lieutenant d'infanterie coloniale",
+                "year": 1907,
+                "url": "https://archive.org/details/leplateaucentral00desp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 110",
+                "notes": "Paris, E. Larose, 1907. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Officier de l'époque coloniale, cité ici pour ce qu'il écrit du nom, non comme une autorité. Page 110 : la confédération « des poissons ma » aurait amené des peuples à « ajouter à leurs noms la terminaison ma, signe d'alliance : Mambi, Gournia, Rama, Fama, Farma, Maiga, Magha ou Makan ». Hypothèse de l'époque coloniale."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2004,
+              "to": 2004,
+              "label": "Proposé en 2004"
+            },
+            "era": "modern",
+            "statement": "Le nom Maïga désignerait ainsi des descendants des Wangara, des marchands d'origine soninké : c'est la lecture qu'Andreas Massing tire du récit de la chronique.",
+            "sources": [
+              {
+                "title": "Baghayogho: A Soninke Muslim Diaspora in the Mande World",
+                "author": "Andreas W. Massing",
+                "year": 2004,
+                "url": "https://journals.openedition.org/etudesafricaines/pdf/4850",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 888, note 7",
+                "notes": "Cahiers d'études africaines, n° 176, 2004, p. 887-922. Lu le 11 octobre 2026 dans le PDF d'OpenEdition. Note 7 : « For me, this implies that the Sonrhay royal clan were descendants of Wangara »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Maega",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme du nom Maïga en Aribinda, au Burkina Faso.",
+        "periodLabel": "Écrit dès 1993",
+        "accounts": [
+          {
+            "period": {
+              "from": 1982,
+              "to": 1993,
+              "label": "Récits recueillis de 1982 à 1984, publiés en 1993"
+            },
+            "era": "modern",
+            "statement": "Le nom Maega apparaît par écrit chez Dominique Guillaud, qui le recueille en Aribinda : c'est le nom des sujets et serviteurs qui accompagnaient les chefs songhaï Werem venus de Tendirma. C'est la plus ancienne trace de cette forme que le projet connaît ; le nom est plus ancien que ce livre.",
+            "formAsWritten": "Maega",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Dominique Guillaud",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "L'ombre du mil : un système agropastoral en Aribinda (Burkina Faso)",
+                "author": "Dominique Guillaud",
+                "year": 1993,
+                "url": "https://www.editions.ird.fr/open_access_download/1094/639",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 64",
+                "notes": "ORSTOM, 1993, d'après une recherche de terrain menée de 1982 à 1984 ; récits d'informateurs nommés dans les notes du chapitre (Abdou Werem, Kounsam et Tewindi Maega…). Lu le 11 octobre 2026 dans le PDF des éditions de l'IRD. Page 64 : les Werem, « accompagnés de leurs sujets et serviteurs, lesquels portent le patronyme Maega »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1982,
+              "to": 1984,
+              "label": "Récits recueillis de 1982 à 1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Maega est donné en Aribinda comme le nom d'origine de la plupart des lignages songhaï, selon les récits que recueille Dominique Guillaud.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "L'ombre du mil : un système agropastoral en Aribinda (Burkina Faso)",
+                "author": "Dominique Guillaud",
+                "year": 1993,
+                "url": "https://www.editions.ird.fr/open_access_download/1094/639",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 69",
+                "notes": "ORSTOM, 1993, d'après une recherche de terrain menée de 1982 à 1984 ; récits d'informateurs nommés dans les notes du chapitre (Abdou Werem, Kounsam et Tewindi Maega…). Lu le 11 octobre 2026 dans le PDF des éditions de l'IRD. Page 69, tableau V : « Maega : nom originel de la plupart des lignages songhay »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1982,
+              "to": 1984,
+              "label": "Récits recueillis de 1982 à 1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Maega passa, selon ces récits, des Songhaï de Tendirma aux descendants des premiers Mossi venus de Boulsa et de femmes songhaï, en même temps que la chefferie. Les Songhaï de Tendirma prirent alors le nom de Werem.",
+            "sources": [
+              {
+                "title": "L'ombre du mil : un système agropastoral en Aribinda (Burkina Faso)",
+                "author": "Dominique Guillaud",
+                "year": 1993,
+                "url": "https://www.editions.ird.fr/open_access_download/1094/639",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 69, 71",
+                "notes": "ORSTOM, 1993, d'après une recherche de terrain menée de 1982 à 1984 ; récits d'informateurs nommés dans les notes du chapitre (Abdou Werem, Kounsam et Tewindi Maega…). Lu le 11 octobre 2026 dans le PDF des éditions de l'IRD. Page 71 : « Leur ancien nom, celui de Maega, a été transmis en même temps que la chefferie aux descendants des alliances de Mossi avec des femmes Songhay » ; page 69 : chefs Maega « issus de l'alliance des premiers Mossi venus de Boulsa (patronyme d'origine : Kafando) avec des femmes songhay »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1982,
+              "to": 1984,
+              "label": "Récits recueillis de 1982 à 1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Maega est abandonné par la plupart des groupes songhaï qui arrivent en Aribinda : comme les Werem, ils prennent un nom nouveau, selon Dominique Guillaud.",
+            "sources": [
+              {
+                "title": "L'ombre du mil : un système agropastoral en Aribinda (Burkina Faso)",
+                "author": "Dominique Guillaud",
+                "year": 1993,
+                "url": "https://www.editions.ird.fr/open_access_download/1094/639",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 77",
+                "notes": "ORSTOM, 1993, d'après une recherche de terrain menée de 1982 à 1984 ; récits d'informateurs nommés dans les notes du chapitre (Abdou Werem, Kounsam et Tewindi Maega…). Lu le 11 octobre 2026 dans le PDF des éditions de l'IRD. Page 77 : « la plupart d'entre eux, comme l'ont fait les Werem, perdent le nom de Maega pour prendre un nom nouveau »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Maiga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": []
+      }
+    ]
+  }
 }

@@ -200,5 +200,292 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission, et aucune des sources consultées ne dit comment ce nom-ci se transmet."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kanté est un nom de clan, ou jamu, des Malinké, porté notamment par des familles de forgerons. Dans les traditions du Manden, c'est aussi le nom des rois du Sosso. On l'écrit aussi Kante, Kántɛ ou Kándɛ. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Kanté",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan malinké, celui des rois du Sosso ; son origine reste débattue.",
+        "periodLabel": "Écrit depuis 1907",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kanté est un nom de clan, ou jamu, que le dictionnaire des noms de clan mandingues écrit Kántɛ. Ce dictionnaire le rattache aux forgerons et aux griots, chez les Malinké, les Bambara et les Kagoro, mais ne lui donne pas de sens. Son origine reste discutée, et chaque explication est présentée à part.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée Kántɛ",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence. Fichier complet consulté le 11 octobre 2026 : l'entrée Kántɛ, datée de 2013, donne les variantes Kándɛ et Káane, l'équivalent Súmàoro, les statuts nùmu (forgeron) et jèli (griot) et quatre marqueurs de peuple ; elle ne donne pas de sens au nom."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 78-79",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov ; titre traduit du russe. Lu le 11 octobre 2026 dans le PDF déposé, pagination imprimée. Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par Valentin Vydrine et Artem Davydov. Un mémoire de licence n'est pas relu par des pairs : il est cité pour les témoignages qu'il transmet. Notice Kántɛ : peuples maninka, bambara et kagoro, statuts nùmu et jèli."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kanté figure chez André Arcin, administrateur colonial, parmi les noms des principales familles de forgerons, chez les Malinké comme chez les Soso et les Dialonké.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La Guinée française",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 264",
+                "notes": "Paris, Challamel, 1907. Lu le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org. L'auteur est un administrateur colonial, à lire comme tel. Page 264 : « Chez les Malinké, nous trouvons les Kanté (n'téné : le poulet blanc) », puis, chez les Soso et dans le N'Gabou, « Kourouma, Kanté, Kamara, Kaba » ; les Soso et Dialonké ont « particulièrement les Kanté et les Kamara »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kanté apparaît par écrit chez André Arcin, administrateur colonial, qui rapporte d'après G. Tellier un récit recueilli autour de Kita : chez les Kanté, une lutte entre frères prit fin par la mort de l'aîné, grâce aux ergots d'un poulet blanc, animal que la famille redoute depuis. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; le clan qui le porte est bien plus ancien que ce livre.",
+            "formAsWritten": "Kanté",
+            "birth": true,
+            "actors": [
+              {
+                "name": "André Arcin",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "G. Tellier",
+                "role": "rapporte le récit, cité par Arcin"
+              }
+            ],
+            "sources": [
+              {
+                "title": "La Guinée française",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 249",
+                "notes": "Paris, Challamel, 1907. Lu le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org. L'auteur est un administrateur colonial, à lire comme tel. Page 249 : « chez les Kanté, une lutte fratricide fut terminée par la mort de l'aîné des Kanté grâce aux ergots d'un poulet blanc, animal redouté depuis par toute la famille (G. Tellier, autour de Kita) ». Nous n'avons pas lu Tellier lui-même."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1180,
+              "to": 1235,
+              "label": "Vers 1180-1235, selon les traditions"
+            },
+            "era": "polity",
+            "statement": "Le nom Kanté est celui de la dynastie qui prend le pouvoir au Soso et au Kaniaga. Le roi Kemoko réunit les deux pays à la fin du XIIe siècle, et son fils Soumaoro Kanté lui succède, selon Djibril Tamsir Niane, qui suit les traditions orales du Manden.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 149",
+                "notes": "UNESCO, 1985 ; chapitre de D. T. Niane, édition française. Pages relues le 11 octobre 2026 dans une copie non officielle de l'édition française déposée sur archive.org (unesco-histoire-generale-d-afrique), pagination imprimée. Page 149 : l'hégémonie sosoe « se situa entre 1180 et 1230 » ; « les Kante prirent le dessus dans le Soso et le Kaniaga et ils fondèrent une dynastie » ; le règne de Sumaoro Kante « se situe entre 1200 et 1235 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Temps de Soundiata, selon l'épopée"
+            },
+            "era": "polity",
+            "statement": "Le nom Kanté est celui des rois du Sosso dans l'épopée de Soundiata. Le récit dit que les Kanté dominent alors le Wagadou, leur ancien maître, et que Soumaoro descend de la lignée des forgerons Diarisso. C'est le récit du griot Djeli Mamadou Kouyaté, transcrit par Djibril Tamsir Niane.",
+            "sources": [
+              {
+                "title": "Soundjata ou l'épopée mandingue",
+                "author": "Djibril Tamsir Niane, d'après le récit du griot Djeli Mamadou Kouyaté",
+                "year": 1960,
+                "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 74",
+                "notes": "Présence Africaine. Récit du griot Djeli Mamadou Kouyaté, de Djeliba Koro près de Siguiri, mis par écrit et traduit par Djibril Tamsir Niane. Page lue le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org (SoundjataOuLepopeeMandingue), proche de l'édition imprimée sans s'y confondre. Page 74 : « Soumaoro descendait de la lignée des forgerons Diarisso » et « maintenant les Kante dominaient leur ancien maître »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant la dynastie des Kanté, selon les traditions"
+            },
+            "era": "polity",
+            "statement": "Jariso, ou Diarisso, est le nom d'un clan soninke qui, selon la légende, rend le Soso indépendant du Ghana avant que les Kanté n'y prennent le dessus, d'après Djibril Tamsir Niane.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 149",
+                "notes": "UNESCO, 1985 ; chapitre de D. T. Niane, édition française. Pages relues le 11 octobre 2026 dans une copie non officielle de l'édition française déposée sur archive.org (unesco-histoire-generale-d-afrique), pagination imprimée. Page 149 : « Selon la légende, le clan soninke des Jariso (« Diarisso »), se rendit indépendant du Ghana avant même la chute de Kumbi ; les Kante prirent le dessus dans le Soso et le Kaniaga »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant le règne de Soumaoro, selon ce récit"
+            },
+            "era": "polity",
+            "statement": "Jàrisɔ́ serait l'ancien nom du clan de Soumaoro, avant qu'il ne prenne celui de Kanté, selon l'ouvrage en n'ko de Souleymane Kanté, traduit en russe par E. A. Bogacheva.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 79",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov ; titre traduit du russe. Lu le 11 octobre 2026 dans le PDF déposé, pagination imprimée. Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par Valentin Vydrine et Artem Davydov. Un mémoire de licence n'est pas relu par des pairs : il est cité pour les témoignages qu'il transmet. Notice Kántɛ, récit tiré de l'ouvrage de Souleymane Kanté : « Раньше их си было Jàrisɔ́ », « auparavant, leur nom était Jàrisɔ́ ». Le mémoire traduit en russe un ouvrage en n'ko de Souleymane Kanté sur les noms de clan du Manden, dont il cite l'édition de 2004 ; nous n'avons pas lu le texte en n'ko."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Kanté viendrait d'un mot dit de Soumaoro, roi du Sosso, qui n'écoutait que sa propre voix dans les assemblées : on disait qu'il était devenu kántɛ, et le mot serait devenu le nom de son clan. C'est le récit d'un ouvrage en n'ko de Souleymane Kanté, selon la traduction russe d'E. A. Bogacheva.",
+            "hypothesisGroup": "origine du nom Kanté",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 79-80",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov ; titre traduit du russe. Lu le 11 octobre 2026 dans le PDF déposé, pagination imprimée. Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par Valentin Vydrine et Artem Davydov. Un mémoire de licence n'est pas relu par des pairs : il est cité pour les témoignages qu'il transmet. Notice Kántɛ : Soumaoro « n'écoutait personne aux assemblées, sauf lui-même », d'où l'on disait qu'il était devenu kántɛ, et cela devint le nom de son clan. Le mémoire traduit en russe un ouvrage en n'ko de Souleymane Kanté sur les noms de clan du Manden, dont il cite l'édition de 2004 ; nous n'avons pas lu le texte en n'ko."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Proposée en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kanté serait, comme Konté, une forme dérivée de Konaté, un nom que l'auteur rattache à la même tribu que les Diara, selon André Arcin, administrateur colonial, qui présente cette idée comme son opinion.",
+            "hypothesisGroup": "origine du nom Kanté",
+            "sources": [
+              {
+                "title": "La Guinée française",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 287, 297",
+                "notes": "Paris, Challamel, 1907. Lu le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org. L'auteur est un administrateur colonial, à lire comme tel. Page 287 : Konaté, Konaré et Diara désignent selon l'auteur « la même tribu » ; « Je pense aussi que Konté et Kanté sont des formes dérivées ». Page 297 : « Les Konté ou Kanté nous paraissent proches parents des Konaté »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kándɛ",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre forme du nom Kanté, que le dictionnaire des noms de clan relève.",
+        "periodLabel": "Usage contemporain",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kándɛ est une autre forme de Kántɛ, avec Káane, dans le dictionnaire des noms de clan mandingues.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée Kántɛ",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence. Fichier complet consulté le 11 octobre 2026 : l'entrée Kántɛ, datée de 2013, donne les variantes Kándɛ et Káane, l'équivalent Súmàoro, les statuts nùmu (forgeron) et jèli (griot) et quatre marqueurs de peuple ; elle ne donne pas de sens au nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1236,
+              "to": null,
+              "label": "Après la bataille de Kirina, selon ce récit"
+            },
+            "statement": "Le nom Kándɛ serait né de la peur : après la défaite de Soumaoro à Kirina, en 1236, des Kanté auraient dit s'appeler Kándɛ pour échapper aux représailles, tout en restant des Kanté. C'est le récit d'un ouvrage en n'ko de Souleymane Kanté, selon la traduction russe d'E. A. Bogacheva.",
+            "hypothesisGroup": "origine de la forme Kándɛ",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 80",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, dirigé par A. Davydov ; titre traduit du russe. Lu le 11 octobre 2026 dans le PDF déposé, pagination imprimée. Les données sans indication de provenance y viennent, selon l'autrice, des matériaux réunis par Valentin Vydrine et Artem Davydov. Un mémoire de licence n'est pas relu par des pairs : il est cité pour les témoignages qu'il transmet. Notice Kántɛ : après la défaite de Kirina en 1236, « certains Kántɛ disaient qu'ils étaient Kándɛ », alors qu'« il n'y a pas de nom Kándɛ ». Le mémoire traduit en russe un ouvrage en n'ko de Souleymane Kanté sur les noms de clan du Manden, dont il cite l'édition de 2004 ; nous n'avons pas lu le texte en n'ko."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

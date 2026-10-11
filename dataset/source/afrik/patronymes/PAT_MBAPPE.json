@@ -225,5 +225,239 @@
       "fieldPath": "bearers",
       "reason": "Aucun porteur décédé n'est cité faute de source suffisante, et nous ne listons pas de personnes vivantes : le sujet est le nom, pas une famille."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mbappé est un nom de famille du Cameroun, porté par des lignées duala de Bonabéri qui le rattachent à un ancêtre, Mbape. On l'écrit aussi Mbappe et Mbape. On ne sait pas ce que veut dire le nom ; nous présentons plus bas l'origine que racontent ces familles.",
+    "names": [
+      {
+        "nameText": "Mbappé",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille duala de Bonabéri, rattaché à un ancêtre, Mbape ; son sens n'est pas connu.",
+        "periodLabel": "Écrit Mbape dès 1912 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mbappé est porté par des lignées duala de Bonabéri, à Douala, qui le rattachent à un ancêtre, Mbape. On ne sait pas ce que veut dire ce nom : aucune source lue ne lui donne de sens, et l'origine que racontent ces familles est présentée séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Le Livre Blanc de Bele Bele, traduction française, format tabloïd, mars 2003",
+                "author": "Prince Kum'a Ndumbe III",
+                "year": 2003,
+                "url": "https://sad94e72f77868383.jimcontent.com/download/version/1721423345/module/7545904459/name/Le%20Livre%20Blanc%20des%20Bele%20Bele%20par%20le%20Prince%20Kum'a%20Ndumbe%20III.pdf",
+                "tier": "referenced",
+                "source_kind": "community",
+                "page": "p. 2, 5",
+                "notes": "Recueil publié par le prince Kum'a Ndumbe III, qui y revendique la chefferie supérieure des Bele Bele dans un différend de succession avec une autre branche de la famille : les pièces qu'il reproduit sont présentées par une partie au différend. Lu le 11 octobre 2026. Généalogies des Bele Bele de Bonabéri et verdict de 1912."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Mbappé, avec un accent, est écrit ainsi dans un extrait de livre d'Enoh Meyomesse, qui appelle le roi de Bonabéri « Kum'a Mbappé, autrement appelé Lock Priso ». C'est la plus ancienne trace de cette écriture accentuée que le projet connaît.",
+            "formAsWritten": "Mbappé",
+            "actors": [
+              {
+                "name": "Kum'a Mbappé, dit Lock Priso",
+                "role": "roi de Bonabéri dont parle le livre"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Livre de Enoh Meyomesse : Kum'a Mbappé Bonabéri 1884 Liberté",
+                "author": "Enoh Meyomesse",
+                "year": 2019,
+                "url": "https://www.camer.be/amp/75046/2:6/cameroun-livre-de-enoh-meyomesse-kuma-mbappe-bonaberi-1884-liberte-cameroon.html",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "titre et premier paragraphe",
+                "notes": "Camer.be, 28 mai 2019, extrait d'un livre de l'auteur, lu le 11 octobre 2026 : « Kum'a Mbappé, autrement appelé Lock Priso ». L'article n'explique pas le nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "24 octobre 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mbappé apparaît par écrit sous une forme proche, Mbape, dans le verdict du 24 octobre 1912 de l'assemblée des Bona Doo, à Douala, sur la succession au trône des Bele Bele, tel que le reproduit en 2003 le prince Kum'a Ndumbe III. C'est la plus ancienne trace de ce nom que le projet connaît ; selon les généalogies de ces familles, c'était déjà le nom d'un ancêtre.",
+            "formAsWritten": "Mbape",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Kum'a Mbape",
+                "role": "roi à qui le verdict donne le trône"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Le Livre Blanc de Bele Bele, traduction française, format tabloïd, mars 2003",
+                "author": "Prince Kum'a Ndumbe III",
+                "year": 2003,
+                "url": "https://sad94e72f77868383.jimcontent.com/download/version/1721423345/module/7545904459/name/Le%20Livre%20Blanc%20des%20Bele%20Bele%20par%20le%20Prince%20Kum'a%20Ndumbe%20III.pdf",
+                "tier": "referenced",
+                "source_kind": "community",
+                "page": "p. 5",
+                "notes": "Recueil publié par le prince Kum'a Ndumbe III, qui y revendique la chefferie supérieure des Bele Bele dans un différend de succession avec une autre branche de la famille : les pièces qu'il reproduit sont présentées par une partie au différend. Lu le 11 octobre 2026. « Assemblée des Bona Doo du 24 octobre 1912 sous la Présidence de Rudolf Manga Bell », jugement « opposant Kum'a Mbape a Mbape à Bwanga »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1884,
+              "to": 1884,
+              "label": "28 août 1884"
+            },
+            "era": "colonial",
+            "statement": "On appelle alors Lock Priso Bell le roi d'Hickory Town, aujourd'hui Bonabéri, qui signe ainsi une lettre au consul allemand Max Buchner ; Cameroon Tribune l'appelle aujourd'hui Kum'a Mbape Bell.",
+            "before": true,
+            "actors": [
+              {
+                "name": "Lock Priso",
+                "role": "roi d'Hickory Town, auteur de la lettre"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Patrimoine : les héritages de Lock Priso",
+                "author": "Rita Diba",
+                "year": 2022,
+                "url": "https://www.cameroon-tribune.cm/article.html/50744/fr.html/patrimoine-les-heritages-de-lock",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Cameroon Tribune, 30 août 2022, lu le 11 octobre 2026 : le 28 août 1884, « Kum'a Mbape Bell, chef du canton Bèlè Bèlè, roi d'Hickory Town (aujourd'hui Bonabéri), nom de règne Lock Priso Bell », écrit au consul allemand Max Buchner."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1945,
+              "to": 1945,
+              "label": "Rapporté en 1945"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mbappé viendrait du nom d'un ancêtre, Mbape, fils du roi Béri ba Doo, fondateur de Bonabéri : ses fils l'auraient ajouté à leur propre nom, comme Bwanga Mbape et Koum Mbape, selon une lettre de chefs et de notables bele bele du 17 février 1945, que reproduit le prince Kum'a Ndumbe III.",
+            "hypothesisGroup": "origine du nom Mbappé",
+            "actors": [
+              {
+                "name": "Mbape",
+                "role": "ancêtre des lignées dans le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Le Livre Blanc de Bele Bele, traduction française, format tabloïd, mars 2003",
+                "author": "Prince Kum'a Ndumbe III",
+                "year": 2003,
+                "url": "https://sad94e72f77868383.jimcontent.com/download/version/1721423345/module/7545904459/name/Le%20Livre%20Blanc%20des%20Bele%20Bele%20par%20le%20Prince%20Kum'a%20Ndumbe%20III.pdf",
+                "tier": "referenced",
+                "source_kind": "community",
+                "page": "p. 2",
+                "notes": "Recueil publié par le prince Kum'a Ndumbe III, qui y revendique la chefferie supérieure des Bele Bele dans un différend de succession avec une autre branche de la famille : les pièces qu'il reproduit sont présentées par une partie au différend. Lu le 11 octobre 2026. Lettre du 17 février 1945 à l'administrateur des colonies, chef de la région du Wouri : « Mbape, fils du Roi Douala Béri-ba Doo, fondateur de Bonabéri, eut de son premier foyer plusieurs fils ; l'aîné, Bwanga Mbape […] son deuxième fils, Koum Mbape (Lock Priso) »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mbappe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Écrit dès 1945",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1945,
+              "to": 1945,
+              "label": "1945"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mbappe, à deux p, apparaît dans une lettre de chefs de Bonamikano et de Bonassama du 16 janvier 1945, qui appelle l'ancien chef « Koum Mbappe », telle que la reproduit en 2003 le prince Kum'a Ndumbe III. C'est la plus ancienne trace de cette écriture que le projet connaît ; la même page écrit ailleurs Mbape.",
+            "formAsWritten": "Mbappe",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Koum Mbappe",
+                "role": "ancien chef que nomme la lettre"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Le Livre Blanc de Bele Bele, traduction française, format tabloïd, mars 2003",
+                "author": "Prince Kum'a Ndumbe III",
+                "year": 2003,
+                "url": "https://sad94e72f77868383.jimcontent.com/download/version/1721423345/module/7545904459/name/Le%20Livre%20Blanc%20des%20Bele%20Bele%20par%20le%20Prince%20Kum'a%20Ndumbe%20III.pdf",
+                "tier": "referenced",
+                "source_kind": "community",
+                "page": "p. 2",
+                "notes": "Recueil publié par le prince Kum'a Ndumbe III, qui y revendique la chefferie supérieure des Bele Bele dans un différend de succession avec une autre branche de la famille : les pièces qu'il reproduit sont présentées par une partie au différend. Lu le 11 octobre 2026. Lettre du 16 janvier 1945 au chef de région : « notre Chef depuis l'antiquité fut Koum Mbappe »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mbape",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Écrit dès 1912",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "24 octobre 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mbape apparaît par écrit dans le verdict du 24 octobre 1912 de l'assemblée des Bona Doo, à Douala, qui donne le trône des Bele Bele à Kum'a Mbape contre son neveu Mbape a Bwanga, tel que le reproduit en 2003 le prince Kum'a Ndumbe III. C'est la plus ancienne trace de ce nom que le projet connaît ; selon les généalogies de ces familles, c'était déjà le nom d'un ancêtre.",
+            "formAsWritten": "Mbape",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Kum'a Mbape",
+                "role": "roi à qui le verdict donne le trône"
+              },
+              {
+                "name": "Mbape a Bwanga",
+                "role": "neveu qui conteste le trône"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Le Livre Blanc de Bele Bele, traduction française, format tabloïd, mars 2003",
+                "author": "Prince Kum'a Ndumbe III",
+                "year": 2003,
+                "url": "https://sad94e72f77868383.jimcontent.com/download/version/1721423345/module/7545904459/name/Le%20Livre%20Blanc%20des%20Bele%20Bele%20par%20le%20Prince%20Kum'a%20Ndumbe%20III.pdf",
+                "tier": "referenced",
+                "source_kind": "community",
+                "page": "p. 5",
+                "notes": "Recueil publié par le prince Kum'a Ndumbe III, qui y revendique la chefferie supérieure des Bele Bele dans un différend de succession avec une autre branche de la famille : les pièces qu'il reproduit sont présentées par une partie au différend. Lu le 11 octobre 2026. « Assemblée des Bona Doo du 24 octobre 1912 sous la Présidence de Rudolf Manga Bell », jugement « opposant Kum'a Mbape a Mbape à Bwanga », en traduction française et en duala."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
