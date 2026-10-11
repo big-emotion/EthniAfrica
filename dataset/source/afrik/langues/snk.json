@@ -35,6 +35,220 @@
       "peopleId": "PPL_SONINKE"
     }
   ],
+  "nameHistory": {
+    "summary": "Le nom soninké désigne la langue des Soninké, un peuple d'Afrique de l'Ouest qui a fondé l'empire du Ghana, et c'est aussi le nom que ses locuteurs lui donnent. D'autres noms existent : Sarakolé, surtout en français, et Marka, le nom que lui donnent les Maninka. Les sources que nous avons lues n'expliquent pas l'origine du nom soninké ; elles en donnent une pour Sarakolé.",
+    "names": [
+      {
+        "nameText": "Soninké",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "snk",
+        "namedBy": null,
+        "shortLine": "Le nom du peuple et de sa langue, écrit dès 1615 environ.",
+        "periodLabel": "Écrit dès 1615 environ ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2001,
+              "to": null,
+              "label": "Depuis 2001"
+            },
+            "era": "modern",
+            "statement": "Le soninké est l'une des six langues nationales du Sénégal, à côté du français, langue officielle, selon l'article premier de la Constitution.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution de la République du Sénégal, 22 janvier 2001, article premier",
+                "author": "République du Sénégal",
+                "year": 2001,
+                "url": "https://mjp.univ-perp.fr/constit/sn2001.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Texte lu sur la Digithèque de la Faculté de droit de Perpignan le 11 octobre 2026. L'article premier fait du français la langue officielle et nomme six langues nationales, dont le soninké."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom soninké désigne le peuple qui a fondé l'empire du Ghana, et sa langue. Chez les Maninka, le même mot, Soninke ou Sununke, désigne aussi un Maninka resté fidèle à la religion de ses ancêtres, selon Djibril Tamsir Niane. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 141 et p. 160, note 49",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé du volume le 11 octobre 2026. L'auteur suit les traditions orales des écoles de griots du Manden à côté des auteurs arabes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1615,
+              "to": 1615,
+              "label": "Vers 1615"
+            },
+            "era": "polity",
+            "statement": "Le nom soninké apparaît par écrit, sous la forme « Sonequeis », chez le jésuite portugais Manuel Álvares, le premier à distinguer par écrit les Soninké des Mandingues, selon José da Silva Horta. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple et sa langue existaient déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Nações, marcadores identitários e complexidades da representação étnica nas escritas portuguesas de viagem. Guiné do Cabo Verde (séculos XVI e XVII)",
+                "author": "José da Silva Horta",
+                "year": 2013,
+                "url": "https://www.redalyc.org/pdf/3844/384434843002.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 663-664",
+                "notes": "Varia Historia, vol. 29, n° 51, Belo Horizonte, 2013, p. 649-675. Lu en texte intégral le 11 octobre 2026. L'auteur cite le manuscrit de l'Etiópia Menor du jésuite Manuel Álvares, que nous n'avons pas lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sarakolé",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom le plus courant en français jusqu'au XXe siècle ; une explication de son sens a été recueillie en 1854.",
+        "periodLabel": "Écrit dès la fin du XVIIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom Sarakolé est l'un de ceux que les Maninka donnent aux Soninké, sous la forme Sarakule ; le chemin vers leur pays s'appelle Sarakule sila, selon Djibril Tamsir Niane.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 160, note 49",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé du volume le 11 octobre 2026. L'auteur suit les traditions orales des écoles de griots du Manden à côté des auteurs arabes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Sarakolé est noté « Serehule » par Sigismund Koelle. Il désigne, dit-il, une nation de six pays, dont le Gadiaga, qui se nomment ainsi eux-mêmes et sont nommés ainsi par les autres.",
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous le parler du Gadiaga, d'après son informateur Boakari."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "Rapportée en 1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Sarakolé voudrait dire « la nation des gens blancs » : non pour la couleur de la peau, mais pour l'honnêteté de ce peuple dans ses affaires, selon Boakari, l'informateur soninké de Sigismund Koelle.",
+            "hypothesisGroup": "origine du nom Sarakolé",
+            "actors": [
+              {
+                "name": "Boakari",
+                "role": "informateur soninké de Sigismund Koelle à Freetown"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous le parler du Gadiaga, d'après son informateur Boakari."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1795,
+              "to": 1797,
+              "label": "Voyage de 1795-1797 (récit publié en 1799)"
+            },
+            "era": "polity",
+            "statement": "Le nom Sarakolé est écrit « Serawoollies » par le voyageur écossais Mungo Park, qui ajoute que les Français l'écrivent « Seracolets ». Son interprète Demba parlait, écrit-il, « la langue des Serawoollies ». C'est la plus ancienne trace de ce nom que le projet connaît ; la langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels in the Interior Districts of Africa",
+                "author": "Mungo Park",
+                "year": 1799,
+                "url": "https://www.gutenberg.org/ebooks/74976",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 29-30 et p. 63",
+                "notes": "Londres, W. Bulmer pour G. Nicol, 1799 ; voyage de 1795-1797. Pages repérées par la pagination d'origine que reproduit l'édition numérique du projet Gutenberg, lue le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Marka",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "man",
+        "namedBy": "Les Maninka",
+        "shortLine": "Le nom que les Maninka donnent couramment aux Soninké.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom Marka est celui que les Maninka donnent couramment aux Soninké, selon Djibril Tamsir Niane. Les sources que nous avons lues ne disent pas d'où il vient, ni quand il apparaît par écrit.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 141 et p. 160, note 49",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé du volume le 11 octobre 2026. L'auteur suit les traditions orales des écoles de griots du Manden à côté des auteurs arabes."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": null,
     "dialects": ["Azer", "Gadyaga", "Kinbakka", "Xenqenna"],

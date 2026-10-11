@@ -43,6 +43,320 @@
   "spellingAliases": [],
   "familyId": "FLG_KHOE",
   "peoples": [],
+  "nameHistory": {
+    "summary": "Le nom khoekhoegowab désigne la langue khoekhoe parlée surtout en Namibie, et veut dire « la langue des Khoekhoe ». Beaucoup de ses locuteurs l'appellent plutôt nama ou damara, du nom de leur peuple. D'autres noms existent : Namaqua dans les anciens récits européens, et Hottentot, un nom donné par les colons hollandais, aujourd'hui jugé offensant. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Khoekhoegowab",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "naq",
+        "namedBy": null,
+        "shortLine": "« La langue des Khoekhoe » : un nom ancien, remis en usage après l'indépendance de la Namibie.",
+        "periodLabel": "Noté dès 1653 ; remis en usage après 1990",
+        "accounts": [
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "2003"
+            },
+            "era": "modern",
+            "statement": "Le nom khoekhoegowab est celui que donne à la langue le grand dictionnaire de Wilfrid Haacke et Eliphas Eiseb, paru en 2002. Pourtant, note Matthias Brenzinger, beaucoup de Namibiens disent parler nama, damara ou haiǁom, et très peu se disent locuteurs du khoekhoegowab.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Compte rendu de Wilfrid H. G. Haacke et Eliphas Eiseb, A Khoekhoegowab Dictionary with an English-Khoekhoegowab Index (2002)",
+                "author": "Matthias Brenzinger",
+                "year": 2003,
+                "url": "https://lexikos.journals.ac.za/pub/article/view/742/338",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 330",
+                "notes": "Lexikos, vol. 13, 2003, p. 330-333. Lu en texte intégral le 11 octobre 2026. L'auteur cite une conférence de Wilfrid Haacke donnée à l'université de Namibie en 2000 et imprimée en 2002, que nous n'avons pas lue."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par l'auteur"
+            },
+            "statement": "Le nom khoekhoegowab veut dire « langue khoekhoe », selon Wilfrid Haacke, que cite Matthias Brenzinger.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Compte rendu de Wilfrid H. G. Haacke et Eliphas Eiseb, A Khoekhoegowab Dictionary with an English-Khoekhoegowab Index (2002)",
+                "author": "Matthias Brenzinger",
+                "year": 2003,
+                "url": "https://lexikos.journals.ac.za/pub/article/view/742/338",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 330",
+                "notes": "Lexikos, vol. 13, 2003, p. 330-333. Lu en texte intégral le 11 octobre 2026. L'auteur cite une conférence de Wilfrid Haacke donnée à l'université de Namibie en 2000 et imprimée en 2002, que nous n'avons pas lue."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1990,
+              "to": 2002,
+              "label": "Après l'indépendance de la Namibie"
+            },
+            "era": "modern",
+            "statement": "Le nom khoekhoegowab est remis en usage pour désigner la langue appelée jusque-là nama/damara, à l'initiative du pasteur Eliphas Eiseb, pour ne plus séparer les Nama et les Damara, selon Wilfrid Haacke, que cite Matthias Brenzinger.",
+            "actors": [
+              {
+                "name": "Eliphas Eiseb",
+                "role": "pasteur, coauteur du dictionnaire khoekhoegowab"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Compte rendu de Wilfrid H. G. Haacke et Eliphas Eiseb, A Khoekhoegowab Dictionary with an English-Khoekhoegowab Index (2002)",
+                "author": "Matthias Brenzinger",
+                "year": 2003,
+                "url": "https://lexikos.journals.ac.za/pub/article/view/742/338",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 330",
+                "notes": "Lexikos, vol. 13, 2003, p. 330-333. Lu en texte intégral le 11 octobre 2026. L'auteur cite une conférence de Wilfrid Haacke donnée à l'université de Namibie en 2000 et imprimée en 2002, que nous n'avons pas lue."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1653,
+              "to": 1653,
+              "label": "Janvier 1653, rapporté en 2002"
+            },
+            "era": "colonial",
+            "statement": "Le nom khoekhoegowab aurait été noté dès janvier 1653 par Jan van Riebeeck, au Cap, selon Wilfrid Haacke, que cite Matthias Brenzinger. C'est la plus ancienne trace de ce nom que le projet connaît ; nous n'avons pas lu la note de Van Riebeeck. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Compte rendu de Wilfrid H. G. Haacke et Eliphas Eiseb, A Khoekhoegowab Dictionary with an English-Khoekhoegowab Index (2002)",
+                "author": "Matthias Brenzinger",
+                "year": 2003,
+                "url": "https://lexikos.journals.ac.za/pub/article/view/742/338",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 330",
+                "notes": "Lexikos, vol. 13, 2003, p. 330-333. Lu en texte intégral le 11 octobre 2026. L'auteur cite une conférence de Wilfrid Haacke donnée à l'université de Namibie en 2000 et imprimée en 2002, que nous n'avons pas lue."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nama",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "naq",
+        "namedBy": null,
+        "shortLine": "Le nom du peuple nama, donné aussi à sa langue.",
+        "periodLabel": "Nom de langue dès 1862",
+        "accounts": [
+          {
+            "period": {
+              "from": 1882,
+              "to": 1883,
+              "label": "1882, rapporté en 1883"
+            },
+            "statement": "Le nom nama désigne la langue dans laquelle la Société des missions rhénanes faisait imprimer des livres de l'Ancien Testament ; en 1882, elle demande d'arrêter, car cette langue serait en train d'être remplacée par le néerlandais, selon R. N. Cust, que cite le Dictionary of South African English.",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Nama »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/nama/e05067",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu le 11 octobre 2026. Citation de R. N. Cust, Modern Languages of Africa, 1883."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1862,
+              "to": 1862,
+              "label": "1862"
+            },
+            "era": "colonial",
+            "statement": "Le nom nama désigne une langue dans la grammaire comparée du linguiste Wilhelm Bleek, qui parle de « la langue nama », selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom de langue que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Nama »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/nama/e05067",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu le 11 octobre 2026. Citation de W. H. I. Bleek, Comparative Grammar, 1862."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom nama viendrait probablement de nami ou nams, « langue », par allusion aux clics de la langue nama, selon le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom nama",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Namaqua »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/namaqua/e05068",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Namaqua",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "naq",
+        "namedBy": null,
+        "shortLine": "La forme des anciens récits européens ; on écrit aujourd'hui Nama.",
+        "periodLabel": "Écrit dès 1670",
+        "accounts": [
+          {
+            "period": {
+              "from": 1670,
+              "to": 1670,
+              "label": "1670"
+            },
+            "era": "polity",
+            "statement": "Le nom Namaqua est écrit « Namaqua's » dans le livre de John Ogilby sur l'Afrique, parmi les principaux peuples connus au sud du continent, selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple et sa langue existaient déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Cochoqua »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/cochoqua/e01718",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu le 11 octobre 2026. Citation de J. Ogilby, Africa, 1670, p. 576."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Namaqua viendrait du nom Nama et d'un suffixe khoekhoe, -qua, qui marque des hommes ou des gens au pluriel, selon le Dictionary of South African English, qui préfère aujourd'hui la forme Nama.",
+            "hypothesisGroup": "origine de la forme Namaqua",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Namaqua »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/namaqua/e05068",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Hottentot",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "nld",
+        "namedBy": "Les colons hollandais du Cap",
+        "shortLine": "Un nom donné par les colons hollandais, aujourd'hui jugé offensant.",
+        "periodLabel": "Écrit dès 1677",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Hottentot est jugé offensant par une partie des personnes concernées, et l'on écrit plutôt Khoikhoi, surtout dans les travaux savants, selon le Dictionary of South African English. Il a longtemps servi pour la langue, dans « nama hottentot ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Hottentot »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/hottentot/e03109",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu le 11 octobre 2026."
+              },
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Nama »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/nama/e05067",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu le 11 octobre 2026. Citations de W. H. I. Bleek, 1864, et de J. H. Greenberg, 1966."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1677,
+              "to": 1677,
+              "label": "1677"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hottentot a une forme proche, Hatten-tote, chez le voyageur anglais Thomas Herbert, selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il désigne vivaient au Cap bien avant l'arrivée des Européens.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Hottentot »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/hottentot/e03109",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu le 11 octobre 2026. Citation de T. Herbert, édition de 1677, d'après R. Raven-Hart."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "Proposée en 1930"
+            },
+            "era": "modern",
+            "statement": "Le nom Hottentot viendrait d'un mot qui veut dire « bègue », que les premiers colons hollandais auraient donné à ces peuples à cause des clics de leur langue, selon Isaac Schapera, que cite le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Hottentot",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Hottentot »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/hottentot/e03109",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu le 11 octobre 2026. Citation d'I. Schapera, The Khoisan Peoples of South Africa, 1930, p. 44."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": null,
     "dialects": [

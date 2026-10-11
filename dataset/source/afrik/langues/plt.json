@@ -14,6 +14,213 @@
   "spellingAliases": [],
   "familyId": "FLG_AUSTRONESIENNE",
   "peoples": [],
+  "nameHistory": {
+    "summary": "Le nom malagasy désigne la langue de Madagascar, et c'est le nom que ses locuteurs lui donnent ; le mot veut dire « de Madagascar », selon le dictionnaire Rakibolana malagasy. En français, on dit le malgache. La forme parlée sur les hautes terres porte aussi le nom de merina, celui du peuple de l'Imerina. Le nom de la langue suit celui de l'île.",
+    "names": [
+      {
+        "nameText": "Malagasy",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "plt",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue en malgache même : « de Madagascar ».",
+        "periodLabel": "Écrit dès 1852 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2010,
+              "to": null,
+              "label": "Depuis 2010"
+            },
+            "era": "modern",
+            "statement": "Le malagasy est la langue nationale de Madagascar, et l'une de ses deux langues officielles avec le français, selon l'article 4 de la Constitution.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution de la IVe République de Madagascar, 11 décembre 2010, article 4",
+                "author": "République de Madagascar",
+                "year": 2010,
+                "url": "https://mjp.univ-perp.fr/constit/mg2010.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 4",
+                "notes": "Texte lu sur la Digithèque de la Faculté de droit de Perpignan le 11 octobre 2026. L'article 4 fait du malagasy la langue nationale, et du malagasy et du français les langues officielles."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par le dictionnaire"
+            },
+            "statement": "Le nom malagasy veut dire « de Madagascar, qui vient de Madagascar », selon le Rakibolana malagasy. Il désigne les habitants de l'île et l'ensemble des parlers de Madagascar.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Rakibolana malagasy, article malagasy",
+                "author": "Régis Rajemisa-Raolison",
+                "year": 1985,
+                "url": "https://malagasyword.org/bins/teny2/malagasy",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire monolingue malgache, Ambozontany, 1985, lu dans le Malagasy Dictionary and Encyclopedia en ligne le 11 octobre 2026. Le même article donne malgache comme équivalent français."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1852,
+              "to": 1852,
+              "label": "1852"
+            },
+            "statement": "Le nom malagasy figure dans le titre d'un livre écrit en malgache, Ny fandaisiny ny tsaiky Malagasy, imprimé en 1852 par l'Établissement malgache de Notre-Dame de la Ressource. C'est la plus ancienne trace de cette forme que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Ny fandaisiny ny tsaiky Malagasy",
+                "author": "Établissement malgache de Notre-Dame de la Ressource",
+                "year": 1852,
+                "url": "https://archive.org/details/bub_gb_p7fpHHY8NAkC",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre",
+                "notes": "Livre en malgache imprimé en 1852 par l'Établissement malgache de Notre-Dame de la Ressource ; seule la notice et la page de titre ont été lues, dans la numérisation d'Internet Archive, le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1658,
+              "to": 1658,
+              "label": "1658"
+            },
+            "statement": "On parle alors de « la langue de Madagascar » : c'est le titre du dictionnaire publié en 1658 sous le nom d'Étienne de Flacourt. Selon Gabriel Ferrand, Flacourt n'en est pas l'auteur : il aurait copié un vocabulaire réuni par des missionnaires.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Dictionnaire de la langue de Madagascar, d'après l'édition de 1658 et l'Histoire de la grande isle Madagascar de 1661",
+                "author": "Étienne de Flacourt ; édition de Gabriel Ferrand",
+                "year": 1905,
+                "url": "https://archive.org/details/dictionnairedel00flacgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "introduction de Gabriel Ferrand",
+                "notes": "Paris, Ernest Leroux, 1905, Publications de l'École des lettres d'Alger. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'introduction décrit le volume de 1658 et son titre."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Malgache",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "La forme française du nom malagasy.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par le dictionnaire"
+            },
+            "statement": "Le nom malgache est la forme française de malagasy, selon le Rakibolana malagasy. Les sources que nous avons lues ne disent pas quand cette forme apparaît par écrit.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Rakibolana malagasy, article malagasy",
+                "author": "Régis Rajemisa-Raolison",
+                "year": 1985,
+                "url": "https://malagasyword.org/bins/teny2/malagasy",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire monolingue malgache, Ambozontany, 1985, lu dans le Malagasy Dictionary and Encyclopedia en ligne le 11 octobre 2026. Le même article donne malgache comme équivalent français."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Merina",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "plt",
+        "namedBy": null,
+        "shortLine": "Le nom du peuple de l'Imerina, donné aussi à son parler.",
+        "periodLabel": "Selon la tradition, depuis la fin du XVIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1995,
+              "to": 1995,
+              "label": "1995"
+            },
+            "era": "modern",
+            "statement": "Le nom merina désigne à la fois un peuple et son parler, et Imerina est le nom du pays, sur les hautes terres centrales de Madagascar, selon Chantal Blanc-Pamard.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les savoirs du territoire en Imerina (hautes terres centrales de Madagascar)",
+                "author": "Chantal Blanc-Pamard",
+                "year": 1995,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-3.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1 et note 1",
+                "notes": "Communication au colloque « Le territoire, lien ou frontière ? », Paris, 2-4 octobre 1995, mise en ligne par l'IRD ; lue en texte intégral le 11 octobre 2026. L'autrice cite les Tantara ny Andriana recueillis par F. Callet."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1590,
+              "to": 1600,
+              "label": "Fin du XVIe siècle, selon la tradition"
+            },
+            "era": "polity",
+            "statement": "Le nom merina ne serait en usage que depuis le règne du roi Ralambo, à la fin du XVIe siècle, selon les traditions historiques merina les plus répandues, que rapporte Chantal Blanc-Pamard. C'est la plus ancienne trace de ce nom que le projet connaît. Le parler existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les savoirs du territoire en Imerina (hautes terres centrales de Madagascar)",
+                "author": "Chantal Blanc-Pamard",
+                "year": 1995,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-3.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1 et note 1",
+                "notes": "Communication au colloque « Le territoire, lien ou frontière ? », Paris, 2-4 octobre 1995, mise en ligne par l'IRD ; lue en texte intégral le 11 octobre 2026. L'autrice cite les Tantara ny Andriana recueillis par F. Callet."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom merina viendrait de mierina, « être sur une hauteur », selon Chantal Blanc-Pamard.",
+            "hypothesisGroup": "origine du nom merina",
+            "sources": [
+              {
+                "title": "Les savoirs du territoire en Imerina (hautes terres centrales de Madagascar)",
+                "author": "Chantal Blanc-Pamard",
+                "year": 1995,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers08-09/010014865-3.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1 et note 1",
+                "notes": "Communication au colloque « Le territoire, lien ou frontière ? », Paris, 2-4 octobre 1995, mise en ligne par l'IRD ; lue en texte intégral le 11 octobre 2026. L'autrice cite les Tantara ny Andriana recueillis par F. Callet."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": null,
     "dialects": [

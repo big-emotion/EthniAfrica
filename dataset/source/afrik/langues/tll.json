@@ -14,6 +14,97 @@
   "spellingAliases": [],
   "familyId": "FLG_BANTU",
   "peoples": [{ "name": "Tetela", "peopleId": "PPL_TETELA" }],
+  "nameHistory": {
+    "summary": "Le nom otetela désigne la langue des Tetela, au centre de la République démocratique du Congo. On y retrouve le nom du peuple, Tetela, précédé de o- ; le peuple se dit Atetela, et l'on a longtemps écrit Batetela. Les sources que nous avons lues n'expliquent pas l'origine du nom Tetela.",
+    "names": [
+      {
+        "nameText": "Otetela",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tll",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue des Tetela, formé sur le nom du peuple.",
+        "periodLabel": "Écrit dès 1925 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1925,
+              "to": 1925,
+              "label": "1925"
+            },
+            "era": "colonial",
+            "statement": "Le nom otetela figure dans le titre du dictionnaire otetela-anglais de la mission méthodiste de Wembo-Nyama, au Congo belge, qui décrit surtout le parler ewangu de « la langue otetela ». Le même dictionnaire appelle le peuple Atetela. C'est la plus ancienne trace de ce nom que le projet connaît ; la langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Otetela and English Dictionary",
+                "author": "C. C. Bush et le comité de langue de la mission, préface d'E. B. Stilz",
+                "year": 1925,
+                "url": "https://archive.org/details/20240917_20240917_0151",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "page de titre et préface, p. iii",
+                "notes": "Wembo-Nyama, Methodist Episcopal Congo Mission, 1925. Lu le 11 octobre 2026 dans une numérisation déposée sur Internet Archive par un particulier, copie non officielle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens à partir des formes"
+            },
+            "statement": "Le nom otetela se distingue de celui du peuple par sa première lettre : le dictionnaire de 1925 dit « la langue otetela » et nomme le peuple Atetela. Nous n'avons pas trouvé de source qui explique le nom Tetela lui-même.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Otetela and English Dictionary",
+                "author": "C. C. Bush et le comité de langue de la mission, préface d'E. B. Stilz",
+                "year": 1925,
+                "url": "https://archive.org/details/20240917_20240917_0151",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "préface, p. iii, et article djungumanga",
+                "notes": "Wembo-Nyama, Methodist Episcopal Congo Mission, 1925. Lu le 11 octobre 2026 dans une numérisation déposée sur Internet Archive par un particulier, copie non officielle."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Batetela",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme du nom du peuple dans les écrits de l'époque coloniale.",
+        "periodLabel": "Époque coloniale",
+        "accounts": [
+          {
+            "period": {
+              "from": 1895,
+              "to": 1907,
+              "label": "1895-1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom batetela désigne la longue révolte que l'État indépendant du Congo réprime de 1895 à 1907, selon John Charles Caldwell. Nous n'avons pas trouvé la plus ancienne trace de cette forme.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 18 : Les répercussions sociales de la domination coloniale : aspects démographiques",
+                "author": "John Charles Caldwell",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 511",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, édition française lue dans l'exemplaire numérisé du volume le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": "non_vehicular",
     "dialects": [],

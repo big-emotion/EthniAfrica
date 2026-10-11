@@ -21,6 +21,285 @@
   "spellingAliases": [],
   "familyId": "FLG_ATLANTIQUE",
   "peoples": [],
+  "nameHistory": {
+    "summary": "Le nom wolof désigne une langue du Sénégal, parlée aussi en Gambie et en Mauritanie, que ses locuteurs appellent eux aussi wolof. D'autres noms existent : Jolof, le nom d'un ancien royaume que des Européens ont donné à la langue, Ouolof dans les anciens écrits français, et Walaf chez quelques auteurs. On ne sait pas avec certitude d'où vient le nom ; nous présentons plus bas ce qu'en disent les sources.",
+    "names": [
+      {
+        "nameText": "Wolof",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "wol",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue et du peuple qui la parle ; on ne sait pas avec certitude d'où il vient.",
+        "periodLabel": "Écrit dès 1757 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2001,
+              "to": null,
+              "label": "Depuis 2001"
+            },
+            "era": "modern",
+            "statement": "Le wolof est l'une des six langues nationales du Sénégal, à côté du français, langue officielle, selon l'article premier de la Constitution.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution de la République du Sénégal, 22 janvier 2001, article premier",
+                "author": "République du Sénégal",
+                "year": 2001,
+                "url": "https://mjp.univ-perp.fr/constit/sn2001.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article premier",
+                "notes": "Texte lu sur la Digithèque de la Faculté de droit de Perpignan le 11 octobre 2026. L'article premier fait du français la langue officielle et nomme six langues nationales, dont le wolof."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le wolof est la langue du peuple du même nom, et aussi la langue commune du Sénégal : selon l'Inalco, plus de 80 % des Sénégalais le parlent.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Wolof (wolof), fiche de présentation de la langue",
+                "author": "Institut national des langues et civilisations orientales (Inalco)",
+                "year": null,
+                "url": "https://www.inalco.fr/sites/default/files/asset/document/fiche_wolof.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Fiche du département Afrique - Océan Indien, lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1826,
+              "to": 1826,
+              "label": "1826"
+            },
+            "statement": "Le nom wolof figure dans le titre de la grammaire de Jean Dard, ancien instituteur au Sénégal, qui le donne à « la langue des noirs » des royaumes du Djolof, du Walo, du Cayor, du Baol, du Sine et du Saloum.",
+            "actors": [
+              {
+                "name": "Jean Dard",
+                "role": "auteur de la grammaire, ancien instituteur à l'école du Sénégal"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Grammaire wolofe, ou méthode pour étudier la langue des noirs qui habitent les royaumes de Bourba-Yolof, de Walo, de Damel, de Bour-Sine, de Saloume, de Baole, en Sénégambie",
+                "author": "Jean Dard",
+                "year": 1826,
+                "url": "https://archive.org/details/grammairewolofe00dardgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre",
+                "notes": "Paris, Imprimerie royale, 1826. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1825,
+              "to": 1825,
+              "label": "1825"
+            },
+            "era": "polity",
+            "statement": "Le nom wolof désigne l'habitant et la langue, et Jaloof le pays, selon l'Anglais William Singleton, que cite l'avant-propos du dictionnaire de Jean Dard. La même note relève que les Anglais écrivent wa-loof ou jaloof, d'autres iolof ou yolof.",
+            "sources": [
+              {
+                "title": "Dictionnaire français-wolof et français-bambara, suivi du dictionnaire wolof-français",
+                "author": "Jean Dard ; avant-propos non signé",
+                "year": 1825,
+                "url": "https://archive.org/details/dictionnairefra01dardgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre et p. vi, note 1",
+                "notes": "Paris, Imprimerie royale, 1825. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Jean Dard avait été instituteur à l'école du Sénégal ; la note de l'avant-propos compare les graphies du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1757,
+              "to": 1757,
+              "label": "1757, rapporté en 1825"
+            },
+            "era": "polity",
+            "statement": "Le nom wolof a une forme proche, ouolof ou oualof, chez le naturaliste Michel Adanson, dans son Voyage au Sénégal paru en 1757, selon l'avant-propos du dictionnaire de Jean Dard. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionnaire français-wolof et français-bambara, suivi du dictionnaire wolof-français",
+                "author": "Jean Dard ; avant-propos non signé",
+                "year": 1825,
+                "url": "https://archive.org/details/dictionnairefra01dardgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre et p. vi, note 1",
+                "notes": "Paris, Imprimerie royale, 1825. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Jean Dard avait été instituteur à l'école du Sénégal ; la note de l'avant-propos compare les graphies du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1825,
+              "to": 1825,
+              "label": "Proposée en 1825"
+            },
+            "era": "polity",
+            "statement": "Le nom wolof aurait « sans doute de l'analogie » avec celui du royaume du Oualo, qui faisait autrefois partie de l'empire du Djolof, selon l'avant-propos du dictionnaire de Jean Dard. La même note signale que « noir » se dit yolof en wolof, sans dire si les deux mots sont liés.",
+            "hypothesisGroup": "origine du nom wolof",
+            "sources": [
+              {
+                "title": "Dictionnaire français-wolof et français-bambara, suivi du dictionnaire wolof-français",
+                "author": "Jean Dard ; avant-propos non signé",
+                "year": 1825,
+                "url": "https://archive.org/details/dictionnairefra01dardgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre et p. vi, note 1",
+                "notes": "Paris, Imprimerie royale, 1825. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Jean Dard avait été instituteur à l'école du Sénégal ; la note de l'avant-propos compare les graphies du nom."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Jolof",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "wol",
+        "namedBy": "Des Européens, d'après le nom d'un royaume wolof",
+        "shortLine": "Le nom d'un ancien royaume wolof, que des Européens ont étendu au peuple et à sa langue.",
+        "periodLabel": "Écrit dès 1455",
+        "accounts": [
+          {
+            "period": {
+              "from": 2001,
+              "to": 2001,
+              "label": "2001"
+            },
+            "era": "modern",
+            "statement": "Le nom Djolof est celui du pays d'où les Wolof seraient venus, selon des locuteurs lébou de Ouakam : « Nous sommes des Wolof : nous sommes venus du Djolof dans un passé lointain », rapporte Abdou Kounta Diop.",
+            "sources": [
+              {
+                "title": "Dialectologie wolof : étude comparée du lébou de Ouakam et du wolof dit standard",
+                "author": "Abdou Kounta Diop",
+                "year": 2001,
+                "url": "https://dicames.online/jspui/handle/20.500.12177/2886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Thèse de doctorat de troisième cycle, université Cheikh Anta Diop de Dakar, année 2000-2001, lue en texte intégral dans le dépôt DICAMES le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "statement": "Le nom Jolof est celui que les Européens donnent au wolof, écrit Sigismund Koelle, alors que ce n'est que le nom d'une région wolof.",
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous le wolof, d'après un informateur venu du Saloum."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1825,
+              "to": 1825,
+              "label": "1825"
+            },
+            "era": "polity",
+            "statement": "Le nom Jaloof désigne le pays, et non la langue, selon William Singleton, que cite l'avant-propos du dictionnaire de Jean Dard.",
+            "sources": [
+              {
+                "title": "Dictionnaire français-wolof et français-bambara, suivi du dictionnaire wolof-français",
+                "author": "Jean Dard ; avant-propos non signé",
+                "year": 1825,
+                "url": "https://archive.org/details/dictionnairefra01dardgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre et p. vi, note 1",
+                "notes": "Paris, Imprimerie royale, 1825. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Jean Dard avait été instituteur à l'école du Sénégal ; la note de l'avant-propos compare les graphies du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1455,
+              "to": 1455,
+              "label": "1455"
+            },
+            "era": "polity",
+            "statement": "Le nom Jolof apparaît dans le récit du Vénitien Alvise Ca' da Mosto, qui appelle Giloses les peuples des rives du fleuve Sénégal ; il faut lire Gilofes, corrige son éditeur Charles Schefer. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple et sa langue existaient déjà avant lui.",
+            "formAsWritten": "Giloses",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Relation des voyages à la côte occidentale d'Afrique d'Alvise de Ca' da Mosto, 1455-1457",
+                "author": "Charles Schefer (éditeur)",
+                "year": 1895,
+                "url": "https://archive.org/details/relationdesvoya00mostgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 73 et note 1",
+                "notes": "Paris, Ernest Leroux, 1895 : ancienne traduction française du récit, publiée avec des notes par Charles Schefer. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Walaf",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre forme du nom wolof, chez quelques auteurs.",
+        "periodLabel": "XXe siècle",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom walaf est la forme qu'emploient Cheikh Anta Diop et A. Anselin à la place de wolof, selon Abdou Kounta Diop.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dialectologie wolof : étude comparée du lébou de Ouakam et du wolof dit standard",
+                "author": "Abdou Kounta Diop",
+                "year": 2001,
+                "url": "https://dicames.online/jspui/handle/20.500.12177/2886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2, en note",
+                "notes": "Thèse de doctorat de troisième cycle, université Cheikh Anta Diop de Dakar, année 2000-2001, lue en texte intégral dans le dépôt DICAMES le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": null,
     "dialects": [
