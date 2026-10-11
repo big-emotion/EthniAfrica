@@ -4,6 +4,196 @@
   "languageFamilyId": "FLG_SOUDANIQUECENTRAL",
   "currentCountries": ["COD", "CAF", "SSD"],
   "classificationStatus": "contested",
+  "nameHistory": {
+    "summary": "Le nom Azande désigne un peuple d'Afrique centrale, entre le Soudan du Sud, la Centrafrique et la RD Congo, qui se nomme lui-même Azande, au singulier Zande. D'autres noms existent : Niam-Niam, longtemps employé dans le Soudan, et les noms que lui donnent ses voisins, comme Makarakka. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Azande",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "zne",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; Zande au singulier.",
+        "usedIn": ["zne"],
+        "periodLabel": "Écrit dès 1874 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Azande sert aujourd'hui pour ce peuple et pour sa langue. Le catalogue Glottolog relève aussi, pour la langue, les formes Zande, Pazande et Asande.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog — Zande",
+                "author": "Glottolog",
+                "year": 2026,
+                "url": "https://glottolog.org/resource/languoid/id/zand1248",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Consulté le 11 octobre 2026. Les autres noms de la langue y sont repris d'autres catalogues : Asande, Azande, Badjande, Bazenda, Pazande, Sande, Zandi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1874,
+              "to": 1874,
+              "label": "1874"
+            },
+            "era": "polity",
+            "statement": "Le nom Azande apparaît par écrit, sous la forme Zandey, chez le botaniste allemand Georg Schweinfurth. C'est, écrit-il, le nom que ce peuple se donne, alors que les marchands du Soudan disent Niam-Niam. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Zandey",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Heart of Africa, vol. II",
+                "author": "Georg Schweinfurth",
+                "year": 1874,
+                "url": "https://archive.org/details/heartofafrica02schw_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "New York, Harper & Brothers, 1874, traduction anglaise d'Ellen E. Frewer ; l'original allemand, Im Herzen von Afrika, paraît la même année. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un voyageur européen qui parcourt le pays de 1868 à 1871.",
+                "page": "p. 3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Niam-Niam",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom venu de l'extérieur, longtemps employé au Soudan ; il évoquait le cannibalisme.",
+        "periodLabel": "Écrit dès 1845 ; sorti de l'usage",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom Niam-Niam a désigné les Azande dans l'arabe du Soudan et chez les voyageurs européens. Il s'appliquait aussi, selon Georg Schweinfurth, à d'autres peuples que l'on soupçonnait de manger de la chair humaine. Son origine reste incertaine ; nous présentons plus bas l'explication que donnent les sources.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Heart of Africa, vol. II",
+                "author": "Georg Schweinfurth",
+                "year": 1874,
+                "url": "https://archive.org/details/heartofafrica02schw_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "New York, Harper & Brothers, 1874, traduction anglaise d'Ellen E. Frewer ; l'original allemand, Im Herzen von Afrika, paraît la même année. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un voyageur européen qui parcourt le pays de 1868 à 1871.",
+                "page": "p. 3"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1874,
+              "to": 1874,
+              "label": "1874"
+            },
+            "statement": "Le nom Niam-Niam est, selon Georg Schweinfurth, un nom dinka que les marchands nubiens ont adopté. Ils ont fait de même pour d'autres peuples : Dyoor pour les Luo, Dohr pour les Bongo.",
+            "sources": [
+              {
+                "title": "The Heart of Africa, vol. I",
+                "author": "Georg Schweinfurth",
+                "year": 1874,
+                "url": "https://archive.org/details/heartofafrica01schw",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "New York, Harper & Brothers, 1874, traduction anglaise d'Ellen E. Frewer. Lu dans la numérisation d'Internet Archive.",
+                "page": "p. 261"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1845,
+              "to": 1845,
+              "label": "1845"
+            },
+            "era": "polity",
+            "statement": "Le nom Niam-Niam a une forme proche, Gnam-Gnam, dans la préface d'Edme-François Jomard au Voyage au Darfour du cheikh Mohammed el-Tounsy. Jomard y signale un district de Gnam-Gnam que cite Fulgence Fresnel. C'est la plus ancienne trace de ce nom que le projet connaît. Les sources ne disent pas s'il s'agit exactement du même peuple.",
+            "formAsWritten": "Gnam-Gnam",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Préface au Voyage au Darfour du cheikh Mohammed ebn-Omar el-Tounsy, traduit de l'arabe par le Dr Perron",
+                "author": "Edme-François Jomard",
+                "year": 1845,
+                "url": "https://archive.org/details/voyageaudarfour00mohagoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Benjamin Duprat, 1845. Lu dans la numérisation d'Internet Archive. Jomard y cite les noms de districts que donne Fulgence Fresnel d'après des informateurs africains ; le texte de Fresnel n'a pas été lu.",
+                "page": "p. XLI"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1874,
+              "to": 1874,
+              "label": "Proposée en 1874"
+            },
+            "statement": "Le nom Niam-Niam viendrait de la langue des Dinka, où il signifierait « mangeurs » ou « grands mangeurs », une allusion au cannibalisme qu'on prêtait à ce peuple, selon Georg Schweinfurth.",
+            "hypothesisGroup": "origine du nom Niam-Niam",
+            "sources": [
+              {
+                "title": "The Heart of Africa, vol. II",
+                "author": "Georg Schweinfurth",
+                "year": 1874,
+                "url": "https://archive.org/details/heartofafrica02schw_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "New York, Harper & Brothers, 1874, traduction anglaise d'Ellen E. Frewer ; l'original allemand, Im Herzen von Afrika, paraît la même année. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un voyageur européen qui parcourt le pays de 1868 à 1871.",
+                "page": "p. 3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Makarakka",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que leur donnaient les Mittou, l'un des noms reçus de leurs voisins.",
+        "periodLabel": "Écrit en 1874",
+        "accounts": [
+          {
+            "period": {
+              "from": 1874,
+              "to": 1874,
+              "label": "1874"
+            },
+            "statement": "Le nom Makarakka, ou Rakkarakka, est celui que les Mittou donnent aux Azande, selon Georg Schweinfurth. Il relève d'autres noms chez leurs voisins : Mundo ou Manyanya chez les Bongo, O-Madyaka chez les Dyoor, Kunda chez les Golo et Babungera chez les Monbuttoo. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Makkarakka",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Heart of Africa, vol. II",
+                "author": "Georg Schweinfurth",
+                "year": 1874,
+                "url": "https://archive.org/details/heartofafrica02schw_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "New York, Harper & Brothers, 1874, traduction anglaise d'Ellen E. Frewer ; l'original allemand, Im Herzen von Afrika, paraît la même année. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un voyageur européen qui parcourt le pays de 1868 à 1871.",
+                "page": "p. 3"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Azande",
