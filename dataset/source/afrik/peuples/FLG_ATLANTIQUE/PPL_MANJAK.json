@@ -116,5 +116,137 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Manjak désigne un peuple de langue atlantique du nord-ouest de la Guinée-Bissau, autour de Canchungo et de Cacheu, présent aussi au Sénégal et en Gambie, qui se nomme lui-même Manjaku. On l'appelle aussi Manjaco, en portugais, et Mandjak, en français. Une explication relie ce nom à l'expression « je te dis » ; nous la présentons plus bas avec les traces du nom.",
+    "names": [
+      {
+        "nameText": "Manjaku",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mfv",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple ; une explication le relie à « je te dis ».",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Manjaku désigne un peuple de Guinée-Bissau et sa langue, que les catalogues écrivent aussi Mandjak, Mandyak, Manjaco ou Manjack, selon Glottolog. Une explication de son origine est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Mandjak (mand1419)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/mand1419",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle recense notamment les formes Kanyop, Mandjak, Mandjaque, Mandyak, Manjaco, Manjaku et Sarar."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "Proposée en 2011"
+            },
+            "era": "modern",
+            "statement": "Le nom Manjaku voudrait dire « je te dis » dans la langue manjak, selon Ghorque Joaquim Nhaga, que cite Mamadú Vicente ; ce dernier ajoute que la forme portugaise Manjaco efface ce sens.",
+            "hypothesisGroup": "origine du nom Manjaku",
+            "sources": [
+              {
+                "title": "Ritual toka tchur da expressão humana manjaco : uma análise",
+                "author": "Mamadú Vicente",
+                "year": 2024,
+                "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/6048/1/2024_proj_mamaduvicente.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Projet de recherche de licence en humanités, Université de l'intégration internationale de la lusophonie afro-brésilienne (UNILAB), 2024. Lu le 11 octobre 2026. L'auteur cite Ghorque Joaquim Nhaga, Formação de identidade nacional na Guiné-Bissau, 2011, que nous n'avons pas lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Manjaco",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "La forme portugaise du nom ; écrite dès un traité de 1855.",
+        "periodLabel": "Écrit dès 1855 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1855,
+              "to": 1855,
+              "label": "1855"
+            },
+            "era": "colonial",
+            "statement": "Le nom Manjaco apparaît au pluriel, manjacos, dans un traité signé le 8 octobre 1855 à Cacheu : le chef de Bianga cède au Portugal une rive de l'estuaire et y interdit la navigation à tout étranger, « même aux Manjacos ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "manjacos",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Honório Pereira Barreto",
+                "role": "gouverneur portugais, signataire du traité"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Africa occidental : noticias e considerações, tomo I",
+                "author": "Francisco Travassos Valdez",
+                "year": 1864,
+                "url": "https://archive.org/details/africaoccidenta00ultrgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 377",
+                "notes": "Lisbonne, 1864. Le livre reproduit le traité du 8 octobre 1855 entre le gouverneur Honório Pereira Barreto et le chef de Bianga. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kanyop",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom donné à la langue manjak ; Koelle l'écrit dès 1854.",
+        "periodLabel": "Écrit dès 1854",
+        "accounts": [
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "statement": "Le nom Kanyop apparaît sous la forme Kányōp chez le linguiste Sigismund Koelle, qui en fait le nom d'une langue de la côte atlantique ; Koelle donne un autre parler du même groupe sous le nom de Sárār. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qui parle cette langue existait déjà avant lui.",
+            "formAsWritten": "Kányōp",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "sections I-B-2 et I-B-4",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarques placées sous les parlers « Kányōp » et « Sárār », rattachés au manjak par Lexibank."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

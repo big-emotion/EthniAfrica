@@ -86,5 +86,181 @@
         "source_kind": "official_statistics"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Gonja désigne un peuple et un ancien royaume du nord du Ghana, aussi appelé Ngbanya. Il s'écrit Ghunja dans la chronique arabe du royaume, au XVIIIe siècle, et Gwanja dans des sources de Kano. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Ngbanya",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "gjn",
+        "namedBy": null,
+        "shortLine": "Un autre nom de ce peuple ; nous n'avons pas encore trouvé de source sur son histoire.",
+        "accounts": [
+          {
+            "period": {
+              "from": 1998,
+              "to": 1998,
+              "label": "1998"
+            },
+            "era": "modern",
+            "statement": "Le nom Ngbanya figure, avec Guang et Guan, parmi les autres noms des Gonja dans une réponse de la Commission de l'immigration et du statut de réfugié du Canada, en 1998. Elle cite l'Encyclopædia Britannica, selon laquelle les chefs et les musulmans du Gonja parlent le gbanyito, une langue guang. Les sources que nous avons lues ne disent pas d'où vient ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Gonja [Guang, Guan or Ngbanya] tribe; traditional lands, languages, chieftancy system",
+                "author": "Commission de l'immigration et du statut de réfugié du Canada",
+                "year": 1998,
+                "url": "https://www.ecoi.net/de/dokument/177093",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Réponse à une demande d'information, référence GHA30215.E, 26 octobre 1998, lue sur ecoi.net. Le passage sur la langue cite The New Encyclopaedia Britannica, 1989, vol. 5, p. 532 ; nous n'avons pas lu cette édition."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gonja",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du royaume et du peuple, écrit Ghunja dans sa chronique arabe au XVIIIe siècle.",
+        "periodLabel": "Écrit depuis le XVIIIe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par les auteurs"
+            },
+            "statement": "Le nom Gonja désigne un royaume du nord du Ghana actuel, créé dans la seconde moitié du XVIe siècle par un chef mande, avec Yagbum pour capitale, selon Michel Izard et Joseph Ki-Zerbo. Les sources que nous avons lues n'expliquent pas d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 12 : Du Niger à la Volta",
+                "author": "Michel Izard et Joseph Ki-Zerbo",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 381 et p. 408",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1824,
+              "to": 1824,
+              "label": "1824"
+            },
+            "era": "polity",
+            "statement": "Le nom Gonja est écrit Ghunja par Joseph Dupuis, consul britannique à Kumasi, qui publie en 1824 la traduction d'un manuscrit arabe : celui-ci décrit la route qui part de « Salgha, la ville principale de Ghunja », vers le pays haoussa.",
+            "formAsWritten": "Ghunja",
+            "sources": [
+              {
+                "title": "Journal of a Residence in Ashantee",
+                "author": "Joseph Dupuis",
+                "year": 1824,
+                "url": "https://archive.org/details/journalofresiden00dupu",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. cxxiv-cxxv",
+                "notes": "Londres, 1824. Annexe IV : manuscrit arabe et sa traduction, lus dans l'exemplaire numérisé d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1790,
+              "to": 1790,
+              "label": "1790"
+            },
+            "era": "polity",
+            "statement": "Le nom Gonja est écrit Gonjah dans les comptes rendus de l'Association africaine de Londres, en 1790, d'après l'itinéraire du chérif Imhammed : le pays serait à quarante-six jours de marche de la côte de Guinée. L'auteur des éclaircissements géographiques du volume y reconnaît le Couche de la carte de D'Anville et le Gouge de celle de Delisle.",
+            "formAsWritten": "Gonjah",
+            "sources": [
+              {
+                "title": "Proceedings of the Association for Promoting the Discovery of the Interior Parts of Africa",
+                "author": "Association for Promoting the Discovery of the Interior Parts of Africa",
+                "year": 1790,
+                "url": "https://archive.org/details/proceedingsofass00asso",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 222-224",
+                "notes": "Londres, 1790. Passage tiré des éclaircissements géographiques du volume, qui s'appuient sur l'itinéraire du chérif Imhammed ; lu dans l'exemplaire numérisé d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1752,
+              "to": null,
+              "label": "Après 1752"
+            },
+            "era": "polity",
+            "statement": "Le nom Gonja a une forme proche, Ghunja, dans le titre de la chronique arabe du royaume, le Kitāb al-Ghunja, écrite après 1752 et fondée en partie sur des traditions orales, selon John D. Fage et Ivan Hrbek. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 1 : L'évolution de l'historiographie de l'Afrique",
+                "author": "John D. Fage",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 48",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 6 : Sources écrites à partir du XVe siècle",
+                "author": "Ivan Hrbek",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 155",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1438,
+              "to": 1452,
+              "label": "1438-1452, selon les sources de Kano"
+            },
+            "era": "polity",
+            "statement": "Le nom Gonja a peut-être une forme plus ancienne, Gwanja, dans des sources de Kano : sous le roi ʿAbdullāh Barja (1438-1452), une route aurait été ouverte de Gwanja à Kano et au Borno, et le commerce de la noix de cola aurait commencé, selon Mahdi Adamu et D. Laya. Les sources que nous avons lues ne disent pas quand ce récit a été écrit, ni s'il s'agit déjà du même pays.",
+            "formAsWritten": "Gwanja",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 11 : Les Hawsa et leurs voisins du Soudan central",
+                "author": "Mahdi Adamu",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 300",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 16 : Les États hawsa",
+                "author": "D. Laya",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 506",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

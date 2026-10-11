@@ -136,5 +136,219 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bura désigne un peuple de langue tchadique du nord-est du Nigeria, autour de Biu, qui se nomme lui-même Bura. Les premiers récits venus du Bornou parlent de Babur, et les familles qui ont régné sur Biu sont appelées Pabir. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Bura",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bwr",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; écrit Burra dès 1919.",
+        "periodLabel": "Écrit depuis 1919 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "era": "modern",
+            "statement": "Le nom Bura sert aujourd'hui, joint à celui de Pabir, à nommer leur langue commune, le bura-pabir, selon le catalogue Glottolog, qui relève aussi les formes Burra, Bourrah, Babur, Babir et Pabir. On ne sait pas avec certitude d'où vient le nom Bura.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Bura-Pabir",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/bura1292",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues de l'Institut Max Planck, page lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bura s'oppose alors à celui de Babur : selon les rapports britanniques réunis par Temple, les Burra ont été chassés de leurs terres du nord par les Babur, en ont repris une partie, puis ont été placés par l'administration sous l'autorité du Mai de Biu, chef des Babur.",
+            "sources": [
+              {
+                "title": "Notes on the Tribes, Provinces, Emirates and States of the Northern Provinces of Nigeria",
+                "author": "O. Temple et C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 73",
+                "notes": "Le Cap, Argus, 1919, compilé à partir des rapports de l'administration britannique ; l'article cite J. H. C. Elder comme informateur. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bura apparaît par écrit, sous la forme Burra, dans les notes sur les peuples du nord du Nigeria compilées par O. Temple : les Burra y sont un peuple du district de Biu, jamais conquis par les Peuls, qui parle une langue proche de celle des Babur. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Burra",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notes on the Tribes, Provinces, Emirates and States of the Northern Provinces of Nigeria",
+                "author": "O. Temple et C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 72-73",
+                "notes": "Le Cap, Argus, 1919, compilé à partir des rapports de l'administration britannique ; l'article cite J. H. C. Elder comme informateur. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Babur",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom noté dès 1851 par Heinrich Barth ; son origine reste discutée.",
+        "periodLabel": "Noté depuis 1851",
+        "accounts": [
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Babur désigne en 1919 le peuple du « Babur, ou district de Biu » dans les notes de Temple, qui font remonter le royaume à Yemptarawalla, venu vers 1628 à Limbur, près de Biu.",
+            "sources": [
+              {
+                "title": "Notes on the Tribes, Provinces, Emirates and States of the Northern Provinces of Nigeria",
+                "author": "O. Temple et C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 38",
+                "notes": "Le Cap, Argus, 1919, compilé à partir des rapports de l'administration britannique ; l'article cite J. H. C. Elder comme informateur. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1851,
+              "to": 1857,
+              "label": "Voyage de 1851, récit publié en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Babur apparaît dans le récit du voyageur allemand Heinrich Barth : au sud du Bornou, ses guides lui disent que les « Babur ou Babir » vivent à l'ouest-sud-ouest des Marghi, en petits hameaux, autour de leur ville principale, Biyu. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Babur",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, volume 2",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri02bart_1",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 120-121",
+                "notes": "New York, Harper & Brothers, 1857. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1926,
+              "to": 1926,
+              "label": "Proposée en 1926"
+            },
+            "era": "colonial",
+            "statement": "Le nom Babur serait une forme du nom Barbar, ou Barbur, selon l'administrateur britannique H. R. Palmer, qui écrit « Babur (Barbar) » et rattache les chefs de Biu aux Zaghawa du Kanem.",
+            "hypothesisGroup": "origine du nom Babur",
+            "sources": [
+              {
+                "title": "History of the First Twelve Years of the Reign of Mai Idris Alooma of Bornu (1571-1583)",
+                "author": "Ahmad ibn Furtu, traduit et annoté par H. R. Palmer",
+                "year": 1926,
+                "url": "https://archive.org/details/first-twelve-years-of-idris-alooma",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "notes sur les pages 29 et 30 du manuscrit",
+                "notes": "Traduction de l'arabe publiée en 1926, lue dans la réédition Routledge de 2018 mise en ligne sur Internet Archive le 11 octobre 2026 ; copie non officielle."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Pabir",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des familles qui ont régné sur Biu, écrit dès 1926.",
+        "periodLabel": "Écrit depuis 1926",
+        "accounts": [
+          {
+            "period": {
+              "from": 1926,
+              "to": 1926,
+              "label": "1926"
+            },
+            "era": "colonial",
+            "statement": "Le nom Pabir apparaît par écrit dans les notes de H. R. Palmer à sa traduction de la chronique d'Ahmad ibn Furtu : il y parle du « chef des Barbur (Pabir) » établi dans la région de Biu, que les légendes des rois de Biu appellent Yamtarawalla. C'est la plus ancienne trace de ce nom que le projet connaît. Les familles qu'il désigne existaient déjà avant elle.",
+            "formAsWritten": "Pabir",
+            "birth": true,
+            "sources": [
+              {
+                "title": "History of the First Twelve Years of the Reign of Mai Idris Alooma of Bornu (1571-1583)",
+                "author": "Ahmad ibn Furtu, traduit et annoté par H. R. Palmer",
+                "year": 1926,
+                "url": "https://archive.org/details/first-twelve-years-of-idris-alooma",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "note sur la page 29 du manuscrit",
+                "notes": "Traduction de l'arabe publiée en 1926, lue dans la réédition Routledge de 2018 mise en ligne sur Internet Archive le 11 octobre 2026 ; copie non officielle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1571,
+              "to": 1583,
+              "label": "Règne d'Idris Alooma, 1571-1583"
+            },
+            "era": "polity",
+            "statement": "On parle alors du « chef de Yamta » : la chronique d'Ahmad ibn Furtu, imam du roi du Bornou Idris Alooma, le montre aux côtés du roi devant la ville d'Amsaka. Son traducteur, H. R. Palmer, y voit en 1926 le chef des Pabir de la région de Biu.",
+            "before": true,
+            "sources": [
+              {
+                "title": "History of the First Twelve Years of the Reign of Mai Idris Alooma of Bornu (1571-1583)",
+                "author": "Ahmad ibn Furtu, traduit et annoté par H. R. Palmer",
+                "year": 1926,
+                "url": "https://archive.org/details/first-twelve-years-of-idris-alooma",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page 29 du manuscrit et note",
+                "notes": "Traduction de l'arabe publiée en 1926, lue dans la réédition Routledge de 2018 mise en ligne sur Internet Archive le 11 octobre 2026 ; copie non officielle."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

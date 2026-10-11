@@ -135,5 +135,203 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Dendi désigne un peuple de langue songhay de la vallée du Niger, entre le nord du Bénin, le sud-ouest du Niger et le nord-ouest du Nigeria, qui se nomme lui-même Dendi. Le même nom désigne aussi une région et une langue. D'autres noms existent : Dendina chez un voyageur du XIXe siècle, et Dandawa aujourd'hui. On ne sait pas avec certitude d'où vient le nom Dendi ; nous présentons plus bas l'explication que donnent les sources.",
+    "names": [
+      {
+        "nameText": "Dendi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple, d'une région et d'une langue de la vallée du Niger, écrit dès le XVIIe siècle.",
+        "periodLabel": "Écrit dès 1652 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Dendi désigne à la fois une langue, une région et une population, comme le nom hausa, selon l'archéologue Olivier Gosselain. Cette population s'est formée par l'arrivée et l'alliance de groupes venus de l'ouest, du nord et de l'est : beaucoup de personnes se présentent comme « Dendi-Zarma » ou « Dendi-Songhay ». On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Mission dans le Dendi (Bénin et Niger) : rapport d'activités, mars 2012",
+                "author": "Olivier Gosselain",
+                "year": 2012,
+                "url": "https://dipot.ulb.ac.be/dspace/bitstream/2013/172486/1/Mission_dans_le_Dendi_2012_Gosselain.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Projet de recherche « Crossroads of Empires », Université libre de Bruxelles ; lu dans le dépôt institutionnel de l'université le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "Proposée en 2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Dendi voudrait dire « au fil, ou en aval, du fleuve », selon l'équipe du projet de recherche Crossroads of Empires, qui s'appuie sur des recherches historiques qu'elle ne nomme pas.",
+            "hypothesisGroup": "origine du nom Dendi",
+            "sources": [
+              {
+                "title": "Carrefour des empires : archéologie, histoire et ethnographie dans le Dendi (République du Bénin)",
+                "author": "Anne Haour, Didier N'Dah, Olivier Gosselain et Sam Nixon",
+                "year": 2015,
+                "url": "https://dipot.ulb.ac.be/dspace/bitstream/2013/239737/3/crossroads_light.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Document de restitution du projet de recherche « Crossroads of Empires », traduit en français par Barpougouni Mardjoua ; lu dans le dépôt de l'Université libre de Bruxelles le 11 octobre 2026. Les auteurs ne nomment pas les recherches historiques sur lesquelles ils s'appuient."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1857,
+              "label": "Publié en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Dendi désigne chez le voyageur Heinrich Barth les habitants du pays, qui se sont soulevés contre les conquérants peuls. Il écrit aussi que la province s'appelle désormais le plus souvent Dendina, entre le Kebbi et Say.",
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. IV (Londres, 1857)",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri04bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 219-220 et p. 417",
+                "notes": "Londres, 1857. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. P. 220 : « the native inhabitants the Dendi » ; p. 417 : « Dendi, or as it is now generally called Dendina »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1591,
+              "to": 1591,
+              "label": "1591"
+            },
+            "era": "polity",
+            "statement": "Le nom Dendi désigne dans le Tarikh es-Soudan le pays vers lequel se replie l'askia Ishâq après sa défaite de 1591 contre l'armée marocaine.",
+            "sources": [
+              {
+                "title": "Tarikh es-Soudan, par Abderrahman ben Abdallah ben 'Imran ben 'Amir es-Sa'di, traduit de l'arabe par O. Houdas",
+                "author": "Abderrahman es-Sa'di, traduit par Octave Houdas",
+                "year": 1900,
+                "url": "https://archive.org/details/tarikhessoudanpa00sadauoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 228",
+                "notes": "Paris, Ernest Leroux, 1900. Chronique écrite à Tombouctou, arrêtée le 8 novembre 1652 puis complétée jusqu'en 1655, selon l'introduction du traducteur (p. XIII-XIV). Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1652,
+              "to": 1655,
+              "label": "Chronique écrite en 1652-1655"
+            },
+            "era": "polity",
+            "statement": "Le nom Dendi apparaît dans le Tarikh es-Soudan, la chronique que le lettré Abderrahman es-Sa'di écrit à Tombouctou entre 1652 et 1655. Il y désigne un pays et entre dans le titre de Dendi-Fâri, que le traducteur Octave Houdas décrit comme un titre de fonction ; la chronique cite ce dignitaire dès les années 1515-1516. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays et ses habitants existaient déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tarikh es-Soudan, par Abderrahman ben Abdallah ben 'Imran ben 'Amir es-Sa'di, traduit de l'arabe par O. Houdas",
+                "author": "Abderrahman es-Sa'di, traduit par Octave Houdas",
+                "year": 1900,
+                "url": "https://archive.org/details/tarikhessoudanpa00sadauoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. XIII-XIV, p. 129-130 et p. 228",
+                "notes": "Paris, Ernest Leroux, 1900. Chronique écrite à Tombouctou, arrêtée le 8 novembre 1652 puis complétée jusqu'en 1655, selon l'introduction du traducteur (p. XIII-XIV). Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dendina",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que le voyageur Heinrich Barth donne en 1857 à la province du Dendi.",
+        "periodLabel": "Écrit en 1857",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1857,
+              "label": "Publié en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Dendina est, selon le voyageur Heinrich Barth, le nom que l'on donne alors le plus souvent à la province de Dendi, entre le Kebbi et Say. C'est la plus ancienne trace de cette forme que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. IV (Londres, 1857)",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri04bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 417",
+                "notes": "Londres, 1857. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. P. 220 : « the native inhabitants the Dendi » ; p. 417 : « Dendi, or as it is now generally called Dendina »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dandawa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un autre nom des Dendi, donné aujourd'hui par une base de données missionnaire.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Dandawa figure aujourd'hui comme autre nom des Dendi du Bénin dans la base de données missionnaire Joshua Project ; le site Omniglot donne pour leur langue la forme proche Dendawa. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dendi, Dandawa in Benin",
+                "author": "Joshua Project",
+                "year": 2025,
+                "url": "https://joshuaproject.net/people_groups/11533/BN",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "notes": "Fiche consultée le 11 octobre 2026 ; elle donne Dandawa comme autre nom."
+              },
+              {
+                "title": "Dendi language and alphabet",
+                "author": "Omniglot",
+                "year": null,
+                "url": "https://www.omniglot.com/writing/dendi.htm",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Page consultée le 11 octobre 2026 : « Dendi is also known as Dendawa »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

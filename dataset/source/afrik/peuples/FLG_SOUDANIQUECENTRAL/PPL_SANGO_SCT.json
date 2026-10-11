@@ -131,5 +131,101 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Sango désigne un peuple de pêcheurs et de piroguiers des rives de l'Oubangui, en Centrafrique et en face, au Congo, qui se nomme lui-même Sango. Les écrits français des années 1890 l'écrivaient Sangho. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Sango",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "sag",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple du fleuve, écrit dès 1891 ; son origine n'est pas connue.",
+        "periodLabel": "Écrit depuis 1891 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sango désigne en 1922, chez Maurice Delafosse, les gens de la rive française de l'Oubangui, qu'il dit « cousins germains » des Ngbandi de la rive belge. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Compte rendu de De Slang bij de Ngbandi, dans la Revue de l'histoire des religions",
+                "author": "Maurice Delafosse",
+                "year": 1922,
+                "url": "https://archive.org/details/revuedelhistoire85v86pari",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 219-220",
+                "notes": "Revue de l'histoire des religions, tome 85, 1922. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1891,
+              "to": 1891,
+              "label": "15 août 1891"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sango apparaît par écrit dans le registre des traités de la France : le 15 août 1891, un traité de protectorat est passé avec les « Sangos de la terre de Mobaï », sur l'Oubangui, selon le Répertoire des traités publié en 1895. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Sangos",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Répertoire des traités de paix, de commerce, d'alliance, etc., tome 2",
+                "author": "Gabriel et Eugène de Ribier",
+                "year": 1895,
+                "url": "https://archive.org/details/rpertoiredestr02ribi",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 79, n° 3462",
+                "notes": "Paris, ministère des Affaires étrangères, 1895. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sangho",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'orthographe des écrits français des années 1890.",
+        "periodLabel": "Écrit dans les années 1890",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1893,
+              "to": 1894,
+              "label": "6 janvier 1893, lettre publiée en 1894"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sangho apparaît, au pluriel Sanghos, dans une lettre de Jacques de Crussol d'Uzès, chef d'une expédition française sur l'Oubangui, publiée par La Revue de Paris : au poste de Mobaï, il note que les peuples voisins « sont Sanghos sur la rivière ». C'est la plus ancienne trace de cette orthographe que le projet connaît.",
+            "formAsWritten": "Sanghos",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Lettres du Congo",
+                "author": "Jacques de Crussol d'Uzès",
+                "year": 1894,
+                "url": "https://archive.org/details/1894larevuedep06pariuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 318",
+                "notes": "La Revue de Paris, tome 6, novembre-décembre 1894, lettres tirées du livre que préparait sa mère, la duchesse d'Uzès. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

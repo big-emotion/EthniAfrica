@@ -133,5 +133,239 @@
         "source_kind": "ngo"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Zaghawa désigne un peuple de langue saharienne qui vit à cheval sur le nord-est du Tchad et le Darfour, au Soudan, et qui se nomme lui-même Beri. Zaghawa est le nom que lui donnent ses voisins arabes ; il est écrit dès le VIIIe siècle dans des textes arabes. On ne sait pas avec certitude d'où il vient ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Beri",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "zag",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple ; sa langue s'appelle le beria.",
+        "periodLabel": "Écrit dès 1922 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Beri est celui que la communauté se donne pour parler d'elle-même, de sa culture et de son identité, selon une proposition rédigée en 2024 par des membres de cette communauté et des linguistes. Sa langue s'appelle le beria : on ajoute à Beri la finale a, « la bouche », soit « la bouche des Beri ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Proposal for encoding the Beria Erfe (Zaghawa) script in the SMP of the UCS",
+                "author": "Siddick Adam Issa, Adam Ahmed, Alsadig Sadig Ahmed Osman, Izdin Bormay et autres",
+                "year": 2024,
+                "url": "https://www.unicode.org/L2/L2024/24004r-zaghawa-proposal.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 3-4",
+                "notes": "Document L2/24-004R du consortium Unicode, daté du 26 janvier 2024, rédigé par des membres de la communauté beri et des linguistes. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Beri apparaît sous la forme Berri dans l'histoire des Arabes du Soudan de l'administrateur britannique Harold MacMichael : il écrit que les Zaghawa « s'appellent eux-mêmes Berri ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Berri",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Harold Alfred MacMichael",
+                "role": "administrateur britannique, auteur du livre"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 57",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Zaghawa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Arabes voisins, selon les auteurs de la proposition Unicode de 2024",
+        "shortLine": "Le nom que lui donnent ses voisins arabes ; écrit dès le VIIIe siècle.",
+        "periodLabel": "Écrit dès le VIIIe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Zaghawa est donné aux Beri par les communautés arabes voisines, et il est aujourd'hui employé dans d'autres langues, surtout dans la presse, selon la proposition rédigée en 2024 par des membres de la communauté beri et des linguistes. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Proposal for encoding the Beria Erfe (Zaghawa) script in the SMP of the UCS",
+                "author": "Siddick Adam Issa, Adam Ahmed, Alsadig Sadig Ahmed Osman, Izdin Bormay et autres",
+                "year": 2024,
+                "url": "https://www.unicode.org/L2/L2024/24004r-zaghawa-proposal.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 3",
+                "notes": "Document L2/24-004R du consortium Unicode, daté du 26 janvier 2024, rédigé par des membres de la communauté beri et des linguistes. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Zaghawa n'est pas le seul que les voisins emploient : les Four disent Merida, les gens du Midob Kebadi, les Tama Kuyuk, d'autres Zagawa ou Zauge, selon Harold MacMichael.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 57",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1873,
+              "to": 1874,
+              "label": "1873-1874"
+            },
+            "era": "polity",
+            "statement": "Le nom Zaghawa désigne, chez l'explorateur allemand Gustav Nachtigal, qui traverse le Ouaddaï et le Darfour en 1873 et 1874, un peuple qu'il juge distinct des Toubou et qu'il rapproche des Bideyat de l'Ennedi.",
+            "actors": [
+              {
+                "name": "Gustav Nachtigal",
+                "role": "explorateur, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Sahara und Sudan. Ergebnisse sechsjähriger Reisen in Afrika, troisième partie",
+                "author": "Gustav Nachtigal",
+                "year": 1889,
+                "url": "https://archive.org/details/saharasudan03nach",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 212 et p. 451",
+                "notes": "Leipzig, F. A. Brockhaus, 1889, publié après la mort de l'auteur par E. Groddeck. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. Le voyage au Ouaddaï et au Darfour date de 1873 et 1874."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 943,
+              "to": 943,
+              "label": "Vers 943"
+            },
+            "era": "polity",
+            "statement": "Le nom Zaghawa figure chez le géographe arabe al-Mas'ûdî, qui range les Zaghawa parmi les peuples partis vers l'ouest, vers le Kanem et le Ghana, selon Harold MacMichael.",
+            "sources": [
+              {
+                "title": "A History of the Arabs in the Sudan, vol. I",
+                "author": "Harold Alfred MacMichael",
+                "year": 1922,
+                "url": "https://archive.org/details/historyofarabsin01macmuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 55",
+                "notes": "Cambridge University Press, 1922. L'auteur était administrateur britannique au Soudan. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 872,
+              "to": 872,
+              "label": "872"
+            },
+            "era": "polity",
+            "statement": "Le nom Zaghawa désigne, chez l'historien arabe al-Ya'qûbî, le peuple qui domine alors le Kanem, au bord du lac Tchad, selon Dierk Lange. Cette domination ne prend fin que vers 1075.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 15 : La région du Tchad en tant que carrefour",
+                "author": "Dierk Lange, avec Bawuro M. Barkindo",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 474",
+                "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 700,
+              "to": 730,
+              "label": "Début du VIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Zaghawa figure dans un renseignement qui remonte au début du VIIIe siècle et que rapporte l'auteur arabe Ibn Qutayba, mort en 889, selon Dierk Lange. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 15 : La région du Tchad en tant que carrefour",
+                "author": "Dierk Lange, avec Bawuro M. Barkindo",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 474",
+                "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Proposée en 1912"
+            },
+            "statement": "Le nom Zaghawa viendrait de Zaghai, le nom d'une ville ou d'une principauté que les auteurs arabes employaient de façon très large, selon Harold MacMichael.",
+            "hypothesisGroup": "origine du nom Zaghawa",
+            "sources": [
+              {
+                "title": "The Tribes of Northern and Central Kordofán",
+                "author": "Harold A. MacMichael",
+                "year": 1912,
+                "url": "https://archive.org/details/tribesofnorthern00macmuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 105-107",
+                "notes": "Cambridge, Cambridge University Press, 1912. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026 : « Zaghawa is derived from the town or principality of Zaghai »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

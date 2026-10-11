@@ -142,5 +142,285 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Samburu désigne un peuple pastoral de langue maa du centre-nord du Kenya, qui se nomme lui-même Lokop ou Lokopani. Des voyageurs du XIXe siècle employaient aussi le nom Burkeneji. Les sources ne s'accordent pas sur l'origine du nom Samburu ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Samburu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple de langue maa du nord du Kenya ; son origine est discutée.",
+        "periodLabel": "Noté dès 1860 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Samburu désigne un peuple de langue maa du nord du Kenya, que les Maasai appellent Sampurri, selon Ruth Nyambura et ses collègues. Son origine est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Economic Utility of Beads Culture of the Samburu Tribe of Kenya",
+                "author": "Ruth Nyambura, Peter Waweru, Reuben Matheka et Tom Nyamache",
+                "year": 2013,
+                "url": "https://erepository.mku.ac.ke/bitstreams/db189e50-2664-4a91-80cd-d4b494588d2e/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 80",
+                "notes": "African Journal of Social Sciences, vol. 3, n° 4, 2013, p. 79-84 ; lu dans le dépôt de l'université Mount Kenya le 11 octobre 2026. Les auteurs citent J. Holtzman, Samburu, 1995 ; T. Fumagalli, thèse, université de Nairobi, 1977 ; N. Sobania, 1978-1980 ; W. Ochieng, 1975. Nous n'avons pas lu ces textes nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1995,
+              "to": 2013,
+              "label": "Rapportée en 1995, reprise en 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Samburu viendrait du mot maasaï sampurupuri ou sampurupur, « papillon », selon Jon Holtzman, que citent Ruth Nyambura et ses collègues. Les Samburu reconnaissent que le nom vient de la langue maasaï, mais refusent cette explication.",
+            "hypothesisGroup": "origine du nom Samburu",
+            "sources": [
+              {
+                "title": "The Economic Utility of Beads Culture of the Samburu Tribe of Kenya",
+                "author": "Ruth Nyambura, Peter Waweru, Reuben Matheka et Tom Nyamache",
+                "year": 2013,
+                "url": "https://erepository.mku.ac.ke/bitstreams/db189e50-2664-4a91-80cd-d4b494588d2e/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 80",
+                "notes": "African Journal of Social Sciences, vol. 3, n° 4, 2013, p. 79-84 ; lu dans le dépôt de l'université Mount Kenya le 11 octobre 2026. Les auteurs citent J. Holtzman, Samburu, 1995 ; T. Fumagalli, thèse, université de Nairobi, 1977 ; N. Sobania, 1978-1980 ; W. Ochieng, 1975. Nous n'avons pas lu ces textes nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1995,
+              "to": 2013,
+              "label": "Rapportée en 1995, reprise en 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Samburu viendrait plutôt de samburr, les sacs de peau que les femmes portaient lorsqu'elles rendaient visite, selon ce que croient les Samburu eux-mêmes, d'après Jon Holtzman que citent Ruth Nyambura et ses collègues.",
+            "hypothesisGroup": "origine du nom Samburu",
+            "sources": [
+              {
+                "title": "The Economic Utility of Beads Culture of the Samburu Tribe of Kenya",
+                "author": "Ruth Nyambura, Peter Waweru, Reuben Matheka et Tom Nyamache",
+                "year": 2013,
+                "url": "https://erepository.mku.ac.ke/bitstreams/db189e50-2664-4a91-80cd-d4b494588d2e/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 80",
+                "notes": "African Journal of Social Sciences, vol. 3, n° 4, 2013, p. 79-84 ; lu dans le dépôt de l'université Mount Kenya le 11 octobre 2026. Les auteurs citent J. Holtzman, Samburu, 1995 ; T. Fumagalli, thèse, université de Nairobi, 1977 ; N. Sobania, 1978-1980 ; W. Ochieng, 1975. Nous n'avons pas lu ces textes nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 2013,
+              "label": "Proposée en 1975, reprise en 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Samburu renverrait à un clan maasaï, les Isampur, selon une étude de William Ochieng parue en 1975, que citent Ruth Nyambura et ses collègues.",
+            "hypothesisGroup": "origine du nom Samburu",
+            "sources": [
+              {
+                "title": "The Economic Utility of Beads Culture of the Samburu Tribe of Kenya",
+                "author": "Ruth Nyambura, Peter Waweru, Reuben Matheka et Tom Nyamache",
+                "year": 2013,
+                "url": "https://erepository.mku.ac.ke/bitstreams/db189e50-2664-4a91-80cd-d4b494588d2e/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 80",
+                "notes": "African Journal of Social Sciences, vol. 3, n° 4, 2013, p. 79-84 ; lu dans le dépôt de l'université Mount Kenya le 11 octobre 2026. Les auteurs citent J. Holtzman, Samburu, 1995 ; T. Fumagalli, thèse, université de Nairobi, 1977 ; N. Sobania, 1978-1980 ; W. Ochieng, 1975. Nous n'avons pas lu ces textes nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1894,
+              "label": "Voyage de 1887-1888, publié en 1894"
+            },
+            "era": "polity",
+            "statement": "Le nom Samburu désigne chez Ludwig von Höhnel le pays plat qui s'étend au nord-est du mont Nyiro ; les Burkeneji vivent surtout dans sa partie nord, et les Rendille y vivent aussi.",
+            "sources": [
+              {
+                "title": "Discovery of Lakes Rudolf and Stefanie, vol. II",
+                "author": "Ludwig von Höhnel",
+                "year": 1894,
+                "url": "https://archive.org/details/discoveryoflakes02hhne",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 73-74",
+                "notes": "Londres, Longmans, Green, 1894. Récit de l'expédition du comte Samuel Teleki ; lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1883,
+              "to": 1887,
+              "label": "Voyage de 1883-1884, publié en 1887"
+            },
+            "era": "polity",
+            "statement": "Le nom Samburu désigne chez l'explorateur Joseph Thomson une vaste région au nord du lac Baringo, d'où viennent des « Wa-kwafi » qu'il rencontre, et un grand lac dont ils lui parlent.",
+            "sources": [
+              {
+                "title": "Through Masai Land : a Journey of Exploration among the Snowclad Volcanic Mountains and Strange Tribes of Eastern Equatorial Africa, 1883-1884",
+                "author": "Joseph Thomson",
+                "year": 1887,
+                "url": "https://archive.org/details/throughmasailand01thomuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 314-315",
+                "notes": "Londres, Sampson Low, Marston, Searle et Rivington, 1887. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1860,
+              "label": "Publié en 1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Samburu apparaît sous une forme proche, Tsamburu, chez le missionnaire Johann Ludwig Krapf : c'est le nom d'un grand lac dont lui ont parlé des Kamba à Rabai Mpia, près de la côte. C'est la plus ancienne trace de ce nom que le projet connaît. Les sources ne disent pas si le lac tient son nom du peuple.",
+            "formAsWritten": "Tsamburu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels, Researches, and Missionary Labours during an Eighteen Years' Residence in Eastern Africa",
+                "author": "Johann Ludwig Krapf",
+                "year": 1860,
+                "url": "https://archive.org/details/travelsresearch00ravegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 463",
+                "notes": "Londres, Trübner, 1860. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. « a large lake called Tsamburie, which is probably the large lake Tsamburu, of which I had heard from the Wakamba in Rabbai Mpia »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Lokop",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Samburu ; son sens est discuté.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Lokop, ou Lokopani, est le nom que se donnent les Samburu, selon des sources orales que citent Ruth Nyambura et ses collègues. On ne sait pas avec certitude d'où il vient ni depuis quand il est employé.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Economic Utility of Beads Culture of the Samburu Tribe of Kenya",
+                "author": "Ruth Nyambura, Peter Waweru, Reuben Matheka et Tom Nyamache",
+                "year": 2013,
+                "url": "https://erepository.mku.ac.ke/bitstreams/db189e50-2664-4a91-80cd-d4b494588d2e/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 80",
+                "notes": "African Journal of Social Sciences, vol. 3, n° 4, 2013, p. 79-84 ; lu dans le dépôt de l'université Mount Kenya le 11 octobre 2026. Les auteurs citent J. Holtzman, Samburu, 1995 ; T. Fumagalli, thèse, université de Nairobi, 1977 ; N. Sobania, 1978-1980 ; W. Ochieng, 1975. Nous n'avons pas lu ces textes nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1977,
+              "to": 2013,
+              "label": "Proposée en 1977, reprise en 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Lokop voudrait dire « gens de la terre », de nkop, la terre, selon des sources orales recueillies pour une thèse de T. Fumagalli en 1977, que citent Ruth Nyambura et ses collègues.",
+            "hypothesisGroup": "origine du nom Lokop",
+            "sources": [
+              {
+                "title": "The Economic Utility of Beads Culture of the Samburu Tribe of Kenya",
+                "author": "Ruth Nyambura, Peter Waweru, Reuben Matheka et Tom Nyamache",
+                "year": 2013,
+                "url": "https://erepository.mku.ac.ke/bitstreams/db189e50-2664-4a91-80cd-d4b494588d2e/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 80",
+                "notes": "African Journal of Social Sciences, vol. 3, n° 4, 2013, p. 79-84 ; lu dans le dépôt de l'université Mount Kenya le 11 octobre 2026. Les auteurs citent J. Holtzman, Samburu, 1995 ; T. Fumagalli, thèse, université de Nairobi, 1977 ; N. Sobania, 1978-1980 ; W. Ochieng, 1975. Nous n'avons pas lu ces textes nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1978,
+              "to": 2013,
+              "label": "Proposée en 1978-1980, reprise en 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Lokop viendrait d'un ancêtre qui aurait dû quitter les Maasai après avoir commis un homicide, selon Neal Sobania, que citent Ruth Nyambura et ses collègues.",
+            "hypothesisGroup": "origine du nom Lokop",
+            "sources": [
+              {
+                "title": "The Economic Utility of Beads Culture of the Samburu Tribe of Kenya",
+                "author": "Ruth Nyambura, Peter Waweru, Reuben Matheka et Tom Nyamache",
+                "year": 2013,
+                "url": "https://erepository.mku.ac.ke/bitstreams/db189e50-2664-4a91-80cd-d4b494588d2e/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 80",
+                "notes": "African Journal of Social Sciences, vol. 3, n° 4, 2013, p. 79-84 ; lu dans le dépôt de l'université Mount Kenya le 11 octobre 2026. Les auteurs citent J. Holtzman, Samburu, 1995 ; T. Fumagalli, thèse, université de Nairobi, 1977 ; N. Sobania, 1978-1980 ; W. Ochieng, 1975. Nous n'avons pas lu ces textes nous-mêmes."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Burkeneji",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que des voyageurs donnaient en 1888 aux éleveurs du mont Nyiro et du nord du pays samburu.",
+        "periodLabel": "Écrit en 1894",
+        "accounts": [
+          {
+            "period": {
+              "from": 1887,
+              "to": 1894,
+              "label": "Voyage de 1887-1888, publié en 1894"
+            },
+            "era": "polity",
+            "statement": "Le nom Burkeneji apparaît chez Ludwig von Höhnel, compagnon du comte Samuel Teleki : on leur parle d'abord d'une tribu jusque-là inconnue d'eux, les Burkeneji, près du mont Nyiro, puis ils en rencontrent, éleveurs proches des Maasai par la généalogie et par la langue. C'est la plus ancienne trace de ce nom que le projet connaît. Nous n'avons pas trouvé de source qui explique son origine.",
+            "formAsWritten": "Burkeneji",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Discovery of Lakes Rudolf and Stefanie, vol. II",
+                "author": "Ludwig von Höhnel",
+                "year": 1894,
+                "url": "https://archive.org/details/discoveryoflakes02hhne",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 48 et p. 74",
+                "notes": "Londres, Longmans, Green, 1894. Récit de l'expédition du comte Samuel Teleki ; lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

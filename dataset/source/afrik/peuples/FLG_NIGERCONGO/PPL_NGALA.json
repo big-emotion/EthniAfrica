@@ -217,5 +217,525 @@
         "notes": "Crowdsourced database; used only for the external identifier, not for any factual prose claim."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ngala, ou Bangala, désigne des peuples riverains du fleuve Congo, autour de Mankanza, dans le nord-ouest de la République démocratique du Congo. Certains d'entre eux se nomment aujourd'hui Mangala ma Liboko, ou simplement Mangala. Les sources ne s'accordent pas sur l'origine de ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Mangala ma Liboko",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent des gens originaires de Mankanza ; il désignait d'abord une langue.",
+        "periodLabel": "Depuis la fin des années 1950",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mangala ma Liboko est celui que se donnent les Iboko, les Mabale et les habitants de Mankanza, selon Mumbanza, cité par Mpoke Mimpongo. Ils gardent à côté leurs propres noms, comme Iboko ou Mabale.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "L'origine et la signification du glossonyme lingala",
+                "author": "Mpoke Mimpongo",
+                "year": 2024,
+                "url": "https://ling.auf.net/lingbuzz/008154",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 29",
+                "notes": "Article mis en ligne sur lingbuzz en mai 2024, lu en texte intégral. L'auteur cite Mumbanza (1973, 1995) et Mumbanza et ses coauteurs (2016) ; nous n'avons pas lu ces textes nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mangala ma Liboko désigne à la fois une langue, le lingala, et des gens originaires de Mankanza, selon Mpoke Mimpongo. Son origine comme nom de peuple est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "L'origine et la signification du glossonyme lingala",
+                "author": "Mpoke Mimpongo",
+                "year": 2024,
+                "url": "https://ling.auf.net/lingbuzz/008154",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 28-29",
+                "notes": "Article mis en ligne sur lingbuzz en mai 2024, lu en texte intégral. L'auteur cite Mumbanza (1973, 1995) et Mumbanza et ses coauteurs (2016) ; nous n'avons pas lu ces textes nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1955,
+              "to": 1960,
+              "label": "Fin des années 1950"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mangala ma Liboko se répand comme nom de peuple à la fin des années 1950, dans le discours de Jean Bolikango, qui défend alors l'unité des « Bangala » de la région de Mankanza, selon Mpoke Mimpongo. C'est la plus ancienne trace de ce nom de peuple que le projet connaît. La formule désignait déjà une langue avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Jean Bolikango",
+                "role": "homme politique de l'indépendance, défenseur de l'unité des Bangala"
+              }
+            ],
+            "sources": [
+              {
+                "title": "L'origine et la signification du glossonyme lingala",
+                "author": "Mpoke Mimpongo",
+                "year": 2024,
+                "url": "https://ling.auf.net/lingbuzz/008154",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 29",
+                "notes": "Article mis en ligne sur lingbuzz en mai 2024, lu en texte intégral. L'auteur cite Mumbanza (1973, 1995) et Mumbanza et ses coauteurs (2016) ; nous n'avons pas lu ces textes nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1884,
+              "label": "Avant la colonisation"
+            },
+            "era": "polity",
+            "statement": "Le nom Mangala ma Liboko n'est pas encore employé pour les gens de Mankanza : ils devaient alors s'appeler Iboko, Bai-Iboko ou Bata ba Iboko, selon Mumbanza (1973), cité par Mpoke Mimpongo.",
+            "before": true,
+            "sources": [
+              {
+                "title": "L'origine et la signification du glossonyme lingala",
+                "author": "Mpoke Mimpongo",
+                "year": 2024,
+                "url": "https://ling.auf.net/lingbuzz/008154",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 30",
+                "notes": "Article mis en ligne sur lingbuzz en mai 2024, lu en texte intégral. L'auteur cite Mumbanza (1973, 1995) et Mumbanza et ses coauteurs (2016) ; nous n'avons pas lu ces textes nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Proposée en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Mangala ma Liboko serait une formule mixte adoptée par les Iboko, après que les Européens eurent rangé leurs parlers parmi les parlers « bangala », à la suite d'une confusion due à Stanley en 1877, selon Mumbanza et ses coauteurs, cités par Mpoke Mimpongo.",
+            "hypothesisGroup": "origine du nom Mangala ma Liboko",
+            "sources": [
+              {
+                "title": "L'origine et la signification du glossonyme lingala",
+                "author": "Mpoke Mimpongo",
+                "year": 2024,
+                "url": "https://ling.auf.net/lingbuzz/008154",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 29",
+                "notes": "Article mis en ligne sur lingbuzz en mai 2024, lu en texte intégral. L'auteur cite Mumbanza (1973, 1995) et Mumbanza et ses coauteurs (2016) ; nous n'avons pas lu ces textes nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Proposée en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Mangala ma Liboko viendrait de la langue : en bobangi, la formule veut dire « le langage des grands marchés ». Les habitants de Mankanza, venus de partout et sans langue commune, auraient d'abord reçu ce nom de leurs voisins, puis l'auraient repris, selon Mpoke Mimpongo.",
+            "hypothesisGroup": "origine du nom Mangala ma Liboko",
+            "sources": [
+              {
+                "title": "L'origine et la signification du glossonyme lingala",
+                "author": "Mpoke Mimpongo",
+                "year": 2024,
+                "url": "https://ling.auf.net/lingbuzz/008154",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6 et p. 28-30",
+                "notes": "Article mis en ligne sur lingbuzz en mai 2024, lu en texte intégral. L'auteur cite Mumbanza (1973, 1995) et Mumbanza et ses coauteurs (2016) ; nous n'avons pas lu ces textes nous-mêmes."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mangala",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit dès 1877 pour un pays du fleuve ; des riverains de Mankanza se le donnent aujourd'hui.",
+        "periodLabel": "Écrit depuis 1877 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mangala est la forme courte que se donnent aussi les Iboko, les Mabale et les habitants de Mankanza, selon Mumbanza, cité par Mpoke Mimpongo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "L'origine et la signification du glossonyme lingala",
+                "author": "Mpoke Mimpongo",
+                "year": 2024,
+                "url": "https://ling.auf.net/lingbuzz/008154",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 29",
+                "notes": "Article mis en ligne sur lingbuzz en mai 2024, lu en texte intégral. L'auteur cite Mumbanza (1973, 1995) et Mumbanza et ses coauteurs (2016) ; nous n'avons pas lu ces textes nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1888,
+              "label": "1888"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mangala, écrit Ma-Ngala, est en 1888 la prononciation la plus courante de Bangala, selon le lieutenant Coquilhat, que citent Cyrille Van Overbergh et l'ouvrage du Musée royal de l'Afrique centrale sur la Mongala.",
+            "formAsWritten": "Ma-Ngala",
+            "sources": [
+              {
+                "title": "Les Bangala (État indépendant du Congo)",
+                "author": "Cyrille Van Overbergh, avec Édouard De Jonghe",
+                "year": 1907,
+                "url": "https://archive.org/details/lesbangalatatin00jonggoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 52",
+                "notes": "Bruxelles, 1907. Recueil de témoignages classés par thème, lu dans la numérisation d'Internet Archive."
+              },
+              {
+                "title": "Mongala : jonction des territoires et bastion d'une identité supra-ethnique",
+                "author": "Jean Omasombo Tshonda (dir.)",
+                "year": 2015,
+                "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/monographies-provinces/mongala.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 15",
+                "notes": "Musée royal de l'Afrique centrale, Tervuren, 2015, introduction « Origine du nom Mongala », lue dans le PDF mis en ligne par le musée. Les auteurs citent Coquilhat, Sur le Haut-Congo (1888), p. 244."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1877,
+              "to": 1877,
+              "label": "Février 1877"
+            },
+            "era": "polity",
+            "statement": "Le nom Mangala apparaît par écrit dans le récit de Henry Morton Stanley, qui descend le fleuve Congo en février 1877. À Rubunga, des habitants lui parlent de commerçants qui viennent chaque année de Mangala en pirogue pour acheter de l'ivoire, et ils rangent Mangala parmi les nations de l'aval. C'est la plus ancienne trace de ce nom que le projet connaît. Les riverains qu'il désigne vivaient là bien avant lui.",
+            "formAsWritten": "Mangala",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Henry Morton Stanley",
+                "role": "explorateur, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Through the Dark Continent, vol. II",
+                "author": "Henry Morton Stanley",
+                "year": 1878,
+                "url": "https://www.gutenberg.org/files/76825/76825-0.txt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 224",
+                "notes": "Récit de la descente du fleuve Congo en février 1877, paru à Londres en 1878. Lu dans la transcription du Projet Gutenberg, faite sur une édition de 1899 ; les pages sont celles que donne l'index de cette édition."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bangala",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit par Stanley en 1877, puis donné par les Européens à un poste et à toute une région.",
+        "periodLabel": "Écrit depuis 1877",
+        "accounts": [
+          {
+            "period": {
+              "from": 1940,
+              "to": 1940,
+              "label": "1940"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bangala désigne en 1940 les peuples riverains du fleuve en amont de Coquilhatville, comme les Boloki, les Iboko, les Mabale ou les Bapoto, et parfois des peuples de l'intérieur comme les Ngombe, selon Gustaaf Hulstaert. Pour lui, il est presque certain qu'aucune tribu Bangala n'a jamais existé. L'origine du nom est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Lingala, Æquatoria, 3",
+                "author": "Gustaaf Hulstaert",
+                "year": 1940,
+                "url": "https://www.aequatoria.be/04common/020publications_pdf/Aequatoria%201940.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 36",
+                "notes": "Article de la revue Æquatoria, Coquilhatville, 1940, lu dans le PDF du volume mis en ligne par le Centre Aequatoria."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1889,
+              "to": 1907,
+              "label": "1889-1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bangala est celui que prennent, loin de chez eux, des travailleurs venus de groupes différents : sur les vapeurs ou dans les postes, ils disent « Bisso Bangala », « nous Bangala », alors que chez eux ils sont d'Iboko, Gombe ou Mobeka. Lothaire, qui dirigeait des travailleurs bangala à Léopoldville en 1889, le raconte dans un témoignage publié en 1907 par Cyrille Van Overbergh.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les Bangala (État indépendant du Congo)",
+                "author": "Cyrille Van Overbergh, avec Édouard De Jonghe",
+                "year": 1907,
+                "url": "https://archive.org/details/lesbangalatatin00jonggoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 55-56",
+                "notes": "Bruxelles, 1907. Recueil de témoignages classés par thème, lu dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1884,
+              "to": 1885,
+              "label": "1884-1885"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bangala devient celui d'un poste de l'État sur le fleuve, Bangala Station, nommé d'après des habitants qu'on croyait appeler ainsi, selon Michael Meeuwis. En mai et juin 1884, le capitaine Edmond Hanssens signe des traités avec des chefs de cette contrée, qui deviendra célèbre sous le nom de région, pays ou district des Bangala.",
+            "actors": [
+              {
+                "name": "Edmond Hanssens",
+                "role": "capitaine, signataire des traités de 1884"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Lingala",
+                "author": "Michael Meeuwis",
+                "year": null,
+                "url": "https://apics-online.info/surveys/60",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section 2",
+                "notes": "Chapitre de synthèse de l'Atlas of Pidgin and Creole Language Structures Online (APiCS Online), lu en texte intégral le 11 octobre 2026."
+              },
+              {
+                "title": "Mongala : jonction des territoires et bastion d'une identité supra-ethnique",
+                "author": "Jean Omasombo Tshonda (dir.)",
+                "year": 2015,
+                "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/monographies-provinces/mongala.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 15",
+                "notes": "Musée royal de l'Afrique centrale, Tervuren, 2015, introduction « Origine du nom Mongala », lue dans le PDF mis en ligne par le musée. Les auteurs citent Coquilhat, Sur le Haut-Congo (1888), p. 244."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1877,
+              "to": 1877,
+              "label": "Février 1877"
+            },
+            "era": "polity",
+            "statement": "Le nom Bangala apparaît par écrit dans le récit de Henry Morton Stanley, qui affronte en février 1877 les riverains d'un pays du fleuve qu'il appelle ainsi ; pendant le combat, il les entend crier « Ya Bangala ! ». C'est la plus ancienne trace de ce nom que le projet connaît. Ces riverains vivaient là bien avant lui.",
+            "formAsWritten": "Bangala",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Henry Morton Stanley",
+                "role": "explorateur, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Through the Dark Continent, vol. II",
+                "author": "Henry Morton Stanley",
+                "year": 1878,
+                "url": "https://www.gutenberg.org/files/76825/76825-0.txt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 232 et p. 234",
+                "notes": "Récit de la descente du fleuve Congo en février 1877, paru à Londres en 1878. Lu dans la transcription du Projet Gutenberg, faite sur une édition de 1899 ; les pages sont celles que donne l'index de cette édition."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1877,
+              "label": "Avant 1877"
+            },
+            "statement": "Le nom Bangala a peut-être une forme plus ancienne, Bancaro : selon Stanley, la rivière de ce pays figurait depuis longtemps sous ce nom sur les cartes de l'Afrique de l'Ouest, et Bangala se prononce aussi Bangara, Bankara ou Bankaro. Les sources que nous avons lues ne disent pas depuis quand ce nom figure sur les cartes.",
+            "sources": [
+              {
+                "title": "Through the Dark Continent, vol. II",
+                "author": "Henry Morton Stanley",
+                "year": 1878,
+                "url": "https://www.gutenberg.org/files/76825/76825-0.txt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 232",
+                "notes": "Récit de la descente du fleuve Congo en février 1877, paru à Londres en 1878. Lu dans la transcription du Projet Gutenberg, faite sur une édition de 1899 ; les pages sont celles que donne l'index de cette édition."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1878,
+              "to": 1878,
+              "label": "Proposée en 1878"
+            },
+            "era": "polity",
+            "statement": "Le nom Bangala voudrait dire « les gens de Mangala », ou de Mangara, Mankara ou Mankaro, selon Henry Morton Stanley, qui dit avoir retenu la forme la plus courante.",
+            "hypothesisGroup": "origine du nom Bangala",
+            "sources": [
+              {
+                "title": "Through the Dark Continent, vol. II",
+                "author": "Henry Morton Stanley",
+                "year": 1878,
+                "url": "https://www.gutenberg.org/files/76825/76825-0.txt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 232",
+                "notes": "Récit de la descente du fleuve Congo en février 1877, paru à Londres en 1878. Lu dans la transcription du Projet Gutenberg, faite sur une édition de 1899 ; les pages sont celles que donne l'index de cette édition."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1888,
+              "label": "Proposée en 1888"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bangala viendrait de ngala ou mongala, qui veut dire « petite rivière » dans le parler d'Iboko : Ba-Ngala signifierait « les gens de la petite rivière », selon le lieutenant Coquilhat, que citent Cyrille Van Overbergh et l'ouvrage du Musée royal de l'Afrique centrale. Il note que les gens d'Iboko se disent venus de la petite rivière d'Ibinza.",
+            "hypothesisGroup": "origine du nom Bangala",
+            "sources": [
+              {
+                "title": "Les Bangala (État indépendant du Congo)",
+                "author": "Cyrille Van Overbergh, avec Édouard De Jonghe",
+                "year": 1907,
+                "url": "https://archive.org/details/lesbangalatatin00jonggoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 52",
+                "notes": "Bruxelles, 1907. Recueil de témoignages classés par thème, lu dans la numérisation d'Internet Archive."
+              },
+              {
+                "title": "Mongala : jonction des territoires et bastion d'une identité supra-ethnique",
+                "author": "Jean Omasombo Tshonda (dir.)",
+                "year": 2015,
+                "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/monographies-provinces/mongala.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 15",
+                "notes": "Musée royal de l'Afrique centrale, Tervuren, 2015, introduction « Origine du nom Mongala », lue dans le PDF mis en ligne par le musée. Les auteurs citent Coquilhat, Sur le Haut-Congo (1888), p. 244."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1940,
+              "to": 1940,
+              "label": "Proposée en 1940"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bangala dériverait probablement de bongala ou mongala, « bras de rivière », selon Gustaaf Hulstaert, qui tient pour presque certain qu'aucune tribu de ce nom n'a existé.",
+            "hypothesisGroup": "origine du nom Bangala",
+            "sources": [
+              {
+                "title": "Lingala, Æquatoria, 3",
+                "author": "Gustaaf Hulstaert",
+                "year": 1940,
+                "url": "https://www.aequatoria.be/04common/020publications_pdf/Aequatoria%201940.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 36",
+                "notes": "Article de la revue Æquatoria, Coquilhatville, 1940, lu dans le PDF du volume mis en ligne par le Centre Aequatoria."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Bangala serait un nom que les Européens ont cru entendre : les habitants de la région, que l'on croyait appeler ainsi, n'auraient pas porté ce nom, selon Michael Meeuwis.",
+            "hypothesisGroup": "origine du nom Bangala",
+            "sources": [
+              {
+                "title": "Lingala",
+                "author": "Michael Meeuwis",
+                "year": null,
+                "url": "https://apics-online.info/surveys/60",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section 2",
+                "notes": "Chapitre de synthèse de l'Atlas of Pidgin and Creole Language Structures Online (APiCS Online), lu en texte intégral le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ngala",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une forme courte de Bangala, que le lieutenant Coquilhat sépare déjà de son préfixe en 1888.",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1888,
+              "to": 1888,
+              "label": "1888"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ngala apparaît dans la forme Ba-Ngala, où le lieutenant Coquilhat sépare en 1888 le préfixe ba- du mot ngala, selon le recueil de Cyrille Van Overbergh. C'est la plus ancienne trace de ce nom que le projet connaît. Les riverains qu'il désigne portaient déjà d'autres noms avant lui.",
+            "formAsWritten": "Ba-Ngala",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les Bangala (État indépendant du Congo)",
+                "author": "Cyrille Van Overbergh, avec Édouard De Jonghe",
+                "year": 1907,
+                "url": "https://archive.org/details/lesbangalatatin00jonggoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 52",
+                "notes": "Bruxelles, 1907. Recueil de témoignages classés par thème, lu dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

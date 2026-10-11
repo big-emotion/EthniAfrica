@@ -107,5 +107,105 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Halaba désigne un peuple de langue couchitique du centre de l'Éthiopie, dans la vallée du Rift, qui se nomme lui-même Halaba ; on écrit aussi Alaba. Un nom semblable figure déjà dans des chants du XVe siècle. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Halaba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom cité dès le XVe siècle dans des chants royaux ; son origine reste inconnue.",
+        "periodLabel": "Cité depuis le XVe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Halaba désigne un peuple voisin des Hadiya et des Kambata, au centre de l'Éthiopie. Les sources que nous avons lues n'expliquent pas son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Éthiopie méridionale : journal de mon voyage aux pays Amhara, Oromo et Sidama, septembre 1885 à novembre 1888",
+                "author": "Jules Borelli",
+                "year": 1890,
+                "url": "https://archive.org/details/thiopiemridi00bore",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 438",
+                "notes": "Paris, ancienne maison Quantin, 1890. Annexe B, sur les divisions et les peuples des pays amhara, oromo et sidama ; lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. Le Kambatta y a pour limite au nord « les territoires des Alaba et des Hadia »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1401,
+              "to": 1500,
+              "label": "XVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Halaba figure parmi les peuples tributaires de l'empire que citent des chants à la louange d'empereurs éthiopiens du XVe siècle, selon Eike Haberland. Il se demande si l'on peut identifier ces noms aux peuples du XIXe siècle, car les noms changent et voyagent avec les migrations. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 24 : La corne de l'Afrique",
+                "author": "Eike Haberland",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 802",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Alaba",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre forme du nom Halaba, écrite en 1890.",
+        "periodLabel": "Écrit depuis 1890",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1885,
+              "to": 1888,
+              "label": "1885-1888"
+            },
+            "era": "polity",
+            "statement": "Le nom Alaba, une autre forme de Halaba, figure chez le voyageur français Jules Borelli, qui parcourt le sud de l'Éthiopie de 1885 à 1888 : il place les Alaba et les Hadiya au nord du Kambatta. C'est la plus ancienne trace de cette forme que le projet connaît.",
+            "formAsWritten": "Alaba",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Jules Borelli",
+                "role": "voyageur, auteur du journal"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Éthiopie méridionale : journal de mon voyage aux pays Amhara, Oromo et Sidama, septembre 1885 à novembre 1888",
+                "author": "Jules Borelli",
+                "year": 1890,
+                "url": "https://archive.org/details/thiopiemridi00bore",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 438",
+                "notes": "Paris, ancienne maison Quantin, 1890. Annexe B, sur les divisions et les peuples des pays amhara, oromo et sidama ; lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. Le Kambatta y a pour limite au nord « les territoires des Alaba et des Hadia »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

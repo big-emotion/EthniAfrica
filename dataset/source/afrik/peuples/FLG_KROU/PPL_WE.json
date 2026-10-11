@@ -155,5 +155,284 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Wè désigne un peuple de langue krou de l'ouest de la Côte d'Ivoire et de l'est du Liberia, qui se nomme lui-même Wè. Pendant la colonisation, les Français l'ont divisé en deux noms, Guéré au sud et Wobé au nord ; au Liberia, on l'appelle Krahn. Les sources ne s'accordent pas toujours sur l'origine de ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Wè",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple ; les noms Guéré et Wobé l'ont longtemps recouvert.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Wè désigne un seul et même peuple, que l'usage administratif a séparé en Guéré et en Wobé, selon l'anthropologue Alfred Schwartz. Il ajoute qu'au fil des années les intéressés se sont dits Guéré ou Wobé, et que le nom Wè ne vivait plus que dans la mémoire des anciens. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La vie quotidienne dans un village guéré",
+                "author": "Alfred Schwartz",
+                "year": 1975,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers14-05/07959.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21-22",
+                "notes": "Abidjan, INADES, 1975, version abrégée de la thèse Tradition et changements dans la société guéré (ORSTOM, 1971). Lu le 11 octobre 2026 dans le texte publié par l'IRD."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "Rapportée en 1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Wè, ou wènian, voudrait dire « les hommes qui pardonnent facilement », selon Alfred Schwartz.",
+            "hypothesisGroup": "origine du nom Wè",
+            "sources": [
+              {
+                "title": "La vie quotidienne dans un village guéré",
+                "author": "Alfred Schwartz",
+                "year": 1975,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers14-05/07959.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21",
+                "notes": "Abidjan, INADES, 1975, version abrégée de la thèse Tradition et changements dans la société guéré (ORSTOM, 1971). Lu le 11 octobre 2026 dans le texte publié par l'IRD."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Guéré",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "L'administration coloniale française, selon Alfred Schwartz",
+        "shortLine": "Un nom retenu par un officier français au début de la conquête ; il désignait d'abord un petit groupe.",
+        "periodLabel": "Depuis la conquête, après 1911",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Guéré désigne aujourd'hui les Wè du sud, dans les sous-préfectures de Toulépleu, Bloléquin, Guiglo, Taï, Duékoué, Bangolo et Logoualé, selon Alfred Schwartz. Les catalogues de langues l'écrivent aussi Gere, selon Glottolog.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La vie quotidienne dans un village guéré",
+                "author": "Alfred Schwartz",
+                "year": 1975,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers14-05/07959.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "Abidjan, INADES, 1975, version abrégée de la thèse Tradition et changements dans la société guéré (ORSTOM, 1971). Lu le 11 octobre 2026 dans le texte publié par l'IRD."
+              },
+              {
+                "title": "Glottolog 5.3 — Wè du Sud (weso1238)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/weso1238",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle recense les formes Central Guéré, Gere, Guere, Guéré et Wè Southern."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": null,
+              "label": "À partir de 1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Guéré est retenu officiellement par le capitaine Laurent, administrateur du cercle du Haut-Cavally, pour toutes les populations au sud des Dan, après la création du poste de Logoualé en 1911, selon Alfred Schwartz. Avant lui, il ne désignait que les Guéo, un petit groupe de la rive gauche du Rô.",
+            "aspect": "imposition",
+            "actors": [
+              {
+                "name": "capitaine Laurent",
+                "role": "administrateur du cercle du Haut-Cavally"
+              }
+            ],
+            "sources": [
+              {
+                "title": "La vie quotidienne dans un village guéré",
+                "author": "Alfred Schwartz",
+                "year": 1975,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers14-05/07959.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21",
+                "notes": "Abidjan, INADES, 1975, version abrégée de la thèse Tradition et changements dans la société guéré (ORSTOM, 1971). Lu le 11 octobre 2026 dans le texte publié par l'IRD."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "Rapportée en 1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Guéré viendrait de Guémin, « les hommes de Guéo », le nom que les Dan donnaient à leurs voisins de l'autre côté du Rô, selon Alfred Schwartz.",
+            "hypothesisGroup": "origine du nom Guéré",
+            "sources": [
+              {
+                "title": "La vie quotidienne dans un village guéré",
+                "author": "Alfred Schwartz",
+                "year": 1975,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers14-05/07959.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21",
+                "notes": "Abidjan, INADES, 1975, version abrégée de la thèse Tradition et changements dans la société guéré (ORSTOM, 1971). Lu le 11 octobre 2026 dans le texte publié par l'IRD."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wobé",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "L'administration coloniale française, selon Alfred Schwartz",
+        "shortLine": "Le nom des Wè du nord, issu d'une réponse en dioula pendant la conquête.",
+        "periodLabel": "Depuis la conquête coloniale",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Wobé désigne les Wè du nord, dans les sous-préfectures de Kouibly et de Fakobly, selon Alfred Schwartz. Les catalogues de langues l'écrivent aussi Ouobe, selon Glottolog.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La vie quotidienne dans un village guéré",
+                "author": "Alfred Schwartz",
+                "year": 1975,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers14-05/07959.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "Abidjan, INADES, 1975, version abrégée de la thèse Tradition et changements dans la société guéré (ORSTOM, 1971). Lu le 11 octobre 2026 dans le texte publié par l'IRD."
+              },
+              {
+                "title": "Glottolog 5.3 — Wobé ou Wè du Nord (weno1238)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/weno1238",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle recense les formes Ouobe, Wobe, Wobé et Wè Northern."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "Rapportée en 1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Wobé viendrait de « Wè-bè », la réponse en dioula d'un interprète à un officier français qui voulait savoir comment s'appelaient les gens du pays où il allait entrer, selon Alfred Schwartz.",
+            "hypothesisGroup": "origine du nom Wobé",
+            "sources": [
+              {
+                "title": "La vie quotidienne dans un village guéré",
+                "author": "Alfred Schwartz",
+                "year": 1975,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers14-05/07959.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21-22",
+                "notes": "Abidjan, INADES, 1975, version abrégée de la thèse Tradition et changements dans la société guéré (ORSTOM, 1971). Lu le 11 octobre 2026 dans le texte publié par l'IRD."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Krahn",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des Wè du Liberia ; son origine n'est pas expliquée dans les sources lues.",
+        "periodLabel": "En usage aujourd'hui au Liberia",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Krahn désigne les Wè du Liberia, qui ne sont que le prolongement vers le sud-ouest des Guéré de Côte d'Ivoire, selon Alfred Schwartz. Les catalogues l'écrivent aussi Kran, selon Glottolog. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La vie quotidienne dans un village guéré",
+                "author": "Alfred Schwartz",
+                "year": 1975,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers14-05/07959.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "Abidjan, INADES, 1975, version abrégée de la thèse Tradition et changements dans la société guéré (ORSTOM, 1971). Lu le 11 octobre 2026 dans le texte publié par l'IRD."
+              },
+              {
+                "title": "Glottolog 5.3 — Krahn de l'Ouest (west2488)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/west2488",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle recense les formes Krahn, Kran et Western Kran."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1974,
+              "to": 1974,
+              "label": "Proposée en 1974"
+            },
+            "era": "modern",
+            "statement": "Le nom Krahn désigne l'un des groupes qui se seraient formés au XVIe siècle, quand les Krou du Liberia se divisèrent en Bassa, Krahn et Grebo, selon C. Behrens, que cite Christophe Wondji.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 13 : Les États et les cultures de la côte de Haute-Guinée",
+                "author": "Christophe Wondji",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 425",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC. L'auteur résume C. Behrens, 1974 ; nous n'avons pas lu ce texte nous-mêmes."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

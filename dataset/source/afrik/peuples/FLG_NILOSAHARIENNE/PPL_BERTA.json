@@ -120,5 +120,226 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Berta désigne un peuple de langue nilo-saharienne de l'ouest de l'Éthiopie et de l'est du Soudan, qui a choisi en 2022 de se nommer officiellement Benishangul. Les voyageurs du XIXe siècle écrivaient Bertât ou Bertat. D'autres noms existent : Jebelawi et Wetawit, pour des groupes nés, selon un voyageur, de pères venus d'ailleurs. Les sources que nous avons lues n'expliquent pas l'origine du nom Berta.",
+    "names": [
+      {
+        "nameText": "Berta",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple du haut Nil Bleu, écrit Bertât dès 1826.",
+        "periodLabel": "Écrit dès 1826 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Berta figure aujourd'hui, associé à celui de Benishangul, dans la base de données missionnaire Joshua Project, qui donne aussi Barta, Bertha et Wetawit comme autres noms. Les sources que nous avons lues n'expliquent pas son origine.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Berta, Benishangul in Ethiopia",
+                "author": "Joshua Project",
+                "year": 2024,
+                "url": "https://joshuaproject.net/people_groups/10793/ET",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "notes": "Fiche consultée le 11 octobre 2026 ; autres noms donnés : Barta, Beni Shangul, Bertha, Tornasi, Wetawit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1869,
+              "to": 1874,
+              "label": "Voyage de 1869-1873, publié en 1874"
+            },
+            "statement": "Le nom Berta s'écrit Bertat chez le voyageur autrichien Ernst Marno, qui place les Bertat dans les montagnes au sud et à l'ouest de Fazogli, en partie musulmans, en partie de religion traditionnelle.",
+            "formAsWritten": "Bertat",
+            "sources": [
+              {
+                "title": "Reisen im Gebiete des blauen und weissen Nil, im egyptischen Sudan und den angrenzenden Negerländern, in den Jahren 1869 bis 1873",
+                "author": "Ernst Marno",
+                "year": 1874,
+                "url": "https://archive.org/details/reisenimgebiete00marngoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 31",
+                "notes": "Vienne, Carl Gerold's Sohn, 1874. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. L'auteur décrit ces peuples avec les catégories raciales méprisantes de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1821,
+              "to": 1826,
+              "label": "Voyage de 1821-1822, publié en 1826"
+            },
+            "statement": "Le nom Berta apparaît sous la forme Bertât chez le voyageur français Frédéric Cailliaud, venu au Fazogli avec l'armée d'Ismaïl Pacha : il consacre un chapitre aux habitants du « grand pays de Bertât ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Bertât",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Voyage à Méroé, au fleuve Blanc, au-delà de Fâzoql dans le midi du royaume de Sennâr, à Syouah et dans cinq autres oasis, tome III",
+                "author": "Frédéric Cailliaud",
+                "year": 1826,
+                "url": "https://archive.org/details/b29328792_0003",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "t. III, p. 20",
+                "notes": "Paris, Imprimerie royale, 1826. Voyage fait de 1819 à 1822 ; lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. Chapitre XLI : « Nègres idolâtres du Bertât ». L'auteur décrit ces peuples avec les catégories raciales et religieuses méprisantes de son époque."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Benishangul",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les Berta ont choisi en 2022, écrit Benitschangul avant 1874.",
+        "periodLabel": "Écrit avant 1874 ; nom officiel depuis 2022",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "29 mars 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Benishangul remplace officiellement celui de Berta le 29 mars 2022 : le conseil de la région Benishangul-Gumuz approuve ce changement à l'unanimité, après la décision d'un conseil du peuple berta réuni dans le woreda de Kurmuk, qui s'appuie sur l'histoire du peuple, selon le journal Addis Standard.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Benishagul Gumuz State Council approves renaming of Berta nation to Benishangul, split Assosa into two Woredas",
+                "author": "Addis Standard",
+                "year": 2022,
+                "url": "https://addisstandard.com/asdailyscoop-benishagul-gumuz-state-council-approves-renaming-of-berta-nation-to-benishangul/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article du 29 mars 2022, lu le 11 octobre 2026 ; il cite le bureau de la communication de la région."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1874,
+              "label": "Avant 1874, selon Ernst Marno"
+            },
+            "statement": "Le nom Benishangul figure, selon Ernst Marno, sous la forme Benitschangul chez le voyageur Russegger et sous la forme Beni Schangoro chez Trémaux, avant qu'il ne l'écrive lui-même Beni Schanqol, un grand village au nord du pays bertat. C'est la plus ancienne trace de ce nom que le projet connaît. Les sources que nous avons lues n'expliquent pas son origine.",
+            "formAsWritten": "Benitschangul",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Reisen im Gebiete des blauen und weissen Nil, im egyptischen Sudan und den angrenzenden Negerländern, in den Jahren 1869 bis 1873",
+                "author": "Ernst Marno",
+                "year": 1874,
+                "url": "https://archive.org/details/reisenimgebiete00marngoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 67, note",
+                "notes": "Vienne, Carl Gerold's Sohn, 1874. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. L'auteur décrit ces peuples avec les catégories raciales méprisantes de son époque."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Jebelawi",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un groupe de la région, « habitants de la montagne » selon un voyageur.",
+        "periodLabel": "Écrit dès 1874",
+        "accounts": [
+          {
+            "period": {
+              "from": 1869,
+              "to": 1874,
+              "label": "Voyage de 1869-1873, publié en 1874"
+            },
+            "statement": "Le nom Jebelawi, que Ernst Marno écrit Gebelauin, désigne des gens du pays bertat qui forment avec les Wetawit une sorte de noblesse, au fur et à mesure que l'islam progresse. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Gebelauin",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Reisen im Gebiete des blauen und weissen Nil, im egyptischen Sudan und den angrenzenden Negerländern, in den Jahren 1869 bis 1873",
+                "author": "Ernst Marno",
+                "year": 1874,
+                "url": "https://archive.org/details/reisenimgebiete00marngoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 52, note, et p. 68",
+                "notes": "Vienne, Carl Gerold's Sohn, 1874. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. L'auteur décrit ces peuples avec les catégories raciales méprisantes de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1874,
+              "to": 1874,
+              "label": "Proposée en 1874"
+            },
+            "statement": "Le nom Jebelawi voudrait dire « habitants de la montagne », selon Ernst Marno, pour qui ce sont des descendants d'un père hammeg et d'une mère berta.",
+            "hypothesisGroup": "origine du nom Jebelawi",
+            "sources": [
+              {
+                "title": "Reisen im Gebiete des blauen und weissen Nil, im egyptischen Sudan und den angrenzenden Negerländern, in den Jahren 1869 bis 1873",
+                "author": "Ernst Marno",
+                "year": 1874,
+                "url": "https://archive.org/details/reisenimgebiete00marngoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 52, note",
+                "notes": "Vienne, Carl Gerold's Sohn, 1874. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. L'auteur décrit ces peuples avec les catégories raciales méprisantes de son époque."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wetawit",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom donné à un groupe né, selon un voyageur, de pères arabes et de mères berta.",
+        "periodLabel": "Écrit dès 1874",
+        "accounts": [
+          {
+            "period": {
+              "from": 1869,
+              "to": 1874,
+              "label": "Voyage de 1869-1873, publié en 1874"
+            },
+            "statement": "Le nom Wetawit, que Ernst Marno écrit Uatauit, désigne selon lui les descendants d'un père arabe et d'une mère berta, qui forment avec les Gebelauin une sorte de noblesse. C'est la plus ancienne trace de ce nom que le projet connaît. Nous n'avons pas trouvé de source qui explique son origine.",
+            "formAsWritten": "Uatauit",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Reisen im Gebiete des blauen und weissen Nil, im egyptischen Sudan und den angrenzenden Negerländern, in den Jahren 1869 bis 1873",
+                "author": "Ernst Marno",
+                "year": 1874,
+                "url": "https://archive.org/details/reisenimgebiete00marngoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 52, note, et p. 68",
+                "notes": "Vienne, Carl Gerold's Sohn, 1874. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. L'auteur décrit ces peuples avec les catégories raciales méprisantes de son époque."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

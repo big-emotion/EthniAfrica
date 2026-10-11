@@ -101,5 +101,99 @@
         "tier": "referenced"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kaguru désigne un peuple du centre-est de la Tanzanie, dans le nord de l'actuelle région de Morogoro, qui se nomme lui-même Kaguru, Wakaguru en swahili. Les premiers voyageurs européens l'ont rangé parmi les Sagara. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Kaguru",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kki",
+        "namedBy": null,
+        "shortLine": "Le nom que le peuple se donne ; écrit Wakaguru par un explorateur britannique en 1857.",
+        "periodLabel": "Écrit depuis 1859 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1857,
+              "to": 1859,
+              "label": "Voyage de 1857 (récit publié en 1859)"
+            },
+            "era": "polity",
+            "statement": "Le nom Kaguru apparaît par écrit, sous la forme « Wakaguru », dans le compte rendu de l'explorateur Richard Francis Burton publié en 1859 par la Société royale de géographie de Londres. En 1857, près du col de Goma, il aperçoit les huttes des Wakaguru et des Wakwivi, qu'il range parmi les Wasagara, tout en doutant de l'existence de ce groupe. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Wakaguru",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Equatorial Africa, with Notices of the Lunar Mountains and the Sources of the White Nile",
+                "author": "Richard F. Burton",
+                "year": 1859,
+                "url": "https://www.burtoniana.org/minor/by-year/1850-1859/burton-1859-lake-regions.pdf",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 108",
+                "notes": "Journal of the Royal Geographical Society, vol. XXIX, 1859. Lu dans l'édition électronique de burtoniana.org, qui garde la pagination de la revue, le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1859,
+              "to": 1859,
+              "label": "Rapportée en 1859"
+            },
+            "era": "polity",
+            "statement": "Le nom Kaguru voudrait dire « ceux qui habitent les hauteurs », selon la traduction que des marchands arabes donnent à Richard Francis Burton.",
+            "hypothesisGroup": "origine du nom Kaguru",
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Equatorial Africa, with Notices of the Lunar Mountains and the Sources of the White Nile",
+                "author": "Richard F. Burton",
+                "year": 1859,
+                "url": "https://www.burtoniana.org/minor/by-year/1850-1859/burton-1859-lake-regions.pdf",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 108",
+                "notes": "Journal of the Royal Geographical Society, vol. XXIX, 1859. Lu dans l'édition électronique de burtoniana.org, qui garde la pagination de la revue, le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sagara",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple voisin, sous lequel les premiers voyageurs rangeaient les Kaguru.",
+        "periodLabel": "Écrit en 1859",
+        "accounts": [
+          {
+            "period": {
+              "from": 1857,
+              "to": 1859,
+              "label": "Voyage de 1857 (récit publié en 1859)"
+            },
+            "era": "polity",
+            "statement": "Le nom Sagara sert à désigner les Kaguru chez Richard Francis Burton, qui fait des Wakaguru une « sous-tribu » des Wasagara. Les Sagara sont pourtant un peuple voisin, distinct des Kaguru.",
+            "formAsWritten": "Wasagara",
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Equatorial Africa, with Notices of the Lunar Mountains and the Sources of the White Nile",
+                "author": "Richard F. Burton",
+                "year": 1859,
+                "url": "https://www.burtoniana.org/minor/by-year/1850-1859/burton-1859-lake-regions.pdf",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 108",
+                "notes": "Journal of the Royal Geographical Society, vol. XXIX, 1859. Lu dans l'édition électronique de burtoniana.org, qui garde la pagination de la revue, le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

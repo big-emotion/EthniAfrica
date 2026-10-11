@@ -129,5 +129,164 @@
         "tier": "referenced"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ngbandi désigne un peuple des rives de l'Oubangui, surtout dans le nord-ouest de la République démocratique du Congo et en face, en Centrafrique, qui se nomme lui-même Ngbandi ; on écrit aussi Ngbande. À l'époque coloniale, les Européens de la région l'appelaient Mongwandi ou Mongbandi. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Ngbandi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ngb",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne, écrit dès 1921 ; son origine n'est pas connue.",
+        "periodLabel": "Écrit depuis 1921 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1952,
+              "to": 1952,
+              "label": "1952"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ngbandi est en 1952, pour le missionnaire et linguiste Quentin D. Nelson, celui de la langue et du peuple du nord-ouest du Congo belge que la plupart des Blancs de la région appellent Mongbandi ou Mongwandi. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Linguistic Problems in Ngbandi",
+                "author": "Quentin D. Nelson",
+                "year": 1952,
+                "url": "https://translation.bible/wp-content/uploads/2024/05/nelson-1952-linguistic-problems-in-ngbandi.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 39",
+                "notes": "Article de 1952 lu dans la copie mise en ligne par le site translation.bible le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ngbandi est employé en 1922 par Maurice Delafosse, qui parle des « Ngbandi ou Mongbandi », peuple qu'il rattache au même ensemble que les Banda et dont les Sango de la rive française seraient les cousins germains.",
+            "sources": [
+              {
+                "title": "Compte rendu de De Slang bij de Ngbandi, dans la Revue de l'histoire des religions",
+                "author": "Maurice Delafosse",
+                "year": 1922,
+                "url": "https://archive.org/details/revuedelhistoire85v86pari",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 219-220",
+                "notes": "Revue de l'histoire des religions, tome 85, 1922. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ngbandi apparaît par écrit dans le titre du livre du père capucin Basile Tanghe, De Slang bij de Ngbandi, publié à Bruxelles en 1921 ; la revue Le Muséon, qui en rend compte la même année, précise que les Ngbandi sont « plus communément appelés Mongbandi ou Mongwandi ». C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Ngbandi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Compte rendu de De Slang bij de Ngbandi, dans Le Muséon",
+                "author": "J. F.",
+                "year": 1921,
+                "url": "https://archive.org/details/lemuson34soci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 285",
+                "notes": "Le Muséon, tome 34, Louvain, 1921. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mongwandi",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Européens de la région, selon Quentin D. Nelson",
+        "shortLine": "Le nom que les Européens du Congo belge donnaient aux Ngbandi.",
+        "periodLabel": "Écrit de 1899 aux années 1950",
+        "accounts": [
+          {
+            "period": {
+              "from": 1952,
+              "to": 1952,
+              "label": "1952"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mongwandi, avec la forme Mongbandi, est en 1952 celui qu'emploient « la plupart des Blancs de la région », selon Quentin D. Nelson, alors que le peuple et sa langue s'appellent Ngbandi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Linguistic Problems in Ngbandi",
+                "author": "Quentin D. Nelson",
+                "year": 1952,
+                "url": "https://translation.bible/wp-content/uploads/2024/05/nelson-1952-linguistic-problems-in-ngbandi.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 39",
+                "notes": "Article de 1952 lu dans la copie mise en ligne par le site translation.bible le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mongwandi est encore en 1921, selon la revue Le Muséon, le nom le plus courant des Ngbandi, à côté de Mongbandi.",
+            "sources": [
+              {
+                "title": "Compte rendu de De Slang bij de Ngbandi, dans Le Muséon",
+                "author": "J. F.",
+                "year": 1921,
+                "url": "https://archive.org/details/lemuson34soci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 285",
+                "notes": "Le Muséon, tome 34, Louvain, 1921. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1899,
+              "label": "Voyage de 1896, récit publié en 1899"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mongwandi apparaît dans le récit du botaniste Franz Thonner, publié en 1899 : sur la haute Dua, un affluent de la Mongala, il juge à leurs tatouages que les habitants du village de Mugende sont « mêlés aux Mongwandi ». C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Mongwandi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dans la grande forêt de l'Afrique centrale : mon voyage au Congo et à la Mongala en 1896",
+                "author": "Franz Thonner",
+                "year": 1899,
+                "url": "https://archive.org/details/danslagrandefor00thon",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 51",
+                "notes": "Bruxelles, Schepens, 1899. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
