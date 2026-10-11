@@ -36,9 +36,10 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * 912 -> 911 on 2026-10-10: a needs_review citation left with the duplicate
  * people fiches folded into their keepers. 911 -> 910 on 2026-10-11: African
  * Voice, carried onto PPL_FULA, whose sources all carry an explicit tier, is
- * cited at the unverified tier.
+ * cited at the unverified tier. 910 -> 909 the same day: a needs_review
+ * citation left with the twenty-four duplicate people fiches of waves 4 and 5.
  */
-export const NEEDS_REVIEW_RATCHET = 910;
+export const NEEDS_REVIEW_RATCHET = 909;
 
 /** The doctrine's three tiers, plus the numeric tiers the name/relation/migration fiches still carry. */
 const TIERS_WITH_AUTHORITY = new Set<unknown>([

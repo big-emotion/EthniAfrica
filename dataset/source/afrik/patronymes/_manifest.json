@@ -364,17 +364,17 @@
       "primaryLinguisticFamilyId": "FLG_NIGERCONGO",
       "selectionBasis": "corpus",
       "familyEvidence": {
-        "file": "dataset/source/afrik/peuples/FLG_NIGERCONGO/PPL_NDAU_MOZ.json",
-        "sourceFicheId": "PPL_NDAU_MOZ",
+        "file": "dataset/source/afrik/peuples/FLG_NIGERCONGO/PPL_NDAU.json",
+        "sourceFicheId": "PPL_NDAU",
         "linguisticFamilyId": "FLG_NIGERCONGO"
       },
       "corpusPassages": [
         {
-          "file": "dataset/source/afrik/peuples/FLG_NIGERCONGO/PPL_NDAU_MOZ.json",
-          "sourceFicheId": "PPL_NDAU_MOZ",
+          "file": "dataset/source/afrik/peuples/FLG_NIGERCONGO/PPL_NDAU.json",
+          "sourceFicheId": "PPL_NDAU",
           "linguisticFamilyId": "FLG_NIGERCONGO",
           "fieldPath": "content.organization.clanOrganization",
-          "excerpt": "Structure clanique patrilinéaire avec système de totems (mitupo) interdisant le mariage entre membres du même clan. Les noms de famille distinguent les clans ndau : les influences nguni sont visibles dans certains noms (Sithole, Sibanda, Dube, Moyo). Les clans organisent la transmission foncière, les obligations rituelles et les alliances matrimoniales. Le bridewealth (lobolo) est pratiqué, avec des négociations entre familles.",
+          "excerpt": "Structure clanique patrilinéaire. Les totems (mitupo) protègent les groupes claniques et créent un lien spirituel entre les membres du clan, interdisant aux membres du même totem de se marier entre eux. Les clans ndau au Zimbabwe s'identifient par des noms de famille distinctifs : Sibanda, Moyo, Nyandoro, Magoro-Nkosho, Dube, Semwayo, Moyana. Ces noms reflètent souvent l'influence nguni sur la nomenclature clanique. Au Mozambique aussi, les noms de famille distinguent les clans ndau, et l'influence nguni se voit dans certains d'entre eux : Sithole, Sibanda, Dube, Moyo. Les clans organisent la transmission des terres, les obligations rituelles et les alliances de mariage ; la compensation matrimoniale (lobolo) se négocie entre familles.",
           "inheritedTier": null,
           "tierResolution": "review_required",
           "sourceReviewStatus": "unreviewed"

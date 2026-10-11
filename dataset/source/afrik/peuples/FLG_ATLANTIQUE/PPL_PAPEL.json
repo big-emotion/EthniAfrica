@@ -123,5 +123,224 @@
         "source_kind": "encyclopedia"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Papel désigne un peuple de la côte de Guinée-Bissau, autour de Bissau et de Biombo, présent aussi au Sénégal, qui se nomme lui-même Pepel. Au XVIe siècle, les Portugais l'appelaient aussi Buramos. Les sources ne s'accordent pas sur l'origine du nom Papel ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Pepel",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; Papel en est la forme portugaise.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Pepel est le nom propre de ce peuple, selon Alaiquet Papa Vieira Có, qui l'emploie de préférence à Papel, la forme de beaucoup d'auteurs. On ne sait pas avec certitude depuis quand ce nom est en usage.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Reinado da etnia pepel na Guiné-Bissau: um estudo de caso de Pepel de Bijimita (1973-2023)",
+                "author": "Alaiquet Papa Vieira Có",
+                "year": 2024,
+                "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/5707/1/ALAIQUET%20PAPA%20VIEIRA%20C%c3%93.pdf",
+                "tier": "unverified",
+                "source_kind": "academic",
+                "page": "p. 5, note 1",
+                "notes": "Projet de fin de licence, Université de l'intégration internationale de la lusophonie afro-brésilienne (UNILAB), 2024, lu en ligne le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Pepel est celui que donne la base Senelangues à la langue de ce peuple, qu'elle dit aussi appelée ium ou papei ; cette langue est parlée surtout en Guinée-Bissau et, au Sénégal, en Casamance et à Dakar.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Pepel (ou manjaku)",
+                "author": "D. Ndao",
+                "year": null,
+                "url": "https://senelangues.huma-num.fr/pdf/PEPEL.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche de la base Senelangues sur les langues du Sénégal, lue en ligne le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Papel",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme portugaise, écrite dès 1594 ; son origine reste discutée.",
+        "periodLabel": "Écrit depuis 1594 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Papel désigne l'un des principaux peuples de Guinée-Bissau, environ 7 % de la population, selon Chérif Mbodj. Son origine est discutée.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Contribution à l'étude des Balantes de la Guinée-Bissau",
+                "author": "Chérif Mbodj",
+                "year": 2016,
+                "url": "https://rea.ucad.sn/index.php/rea/article/download/40/39/159",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 205",
+                "notes": "Revue d'études africaines, n° 3, université Cheikh Anta Diop de Dakar, lue en ligne le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1594,
+              "to": 1594,
+              "label": "1594"
+            },
+            "era": "polity",
+            "statement": "Le nom Papel apparaît par écrit, sous la forme Papeis, dans le Tratado breve dos rios de Guiné d'André Álvares de Almada, écrit en 1594 : il y décrit la terre des Buramos, « appelés d'un autre nom Papeis ». C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple vivait déjà là avant lui.",
+            "formAsWritten": "Papeis",
+            "birth": true,
+            "actors": [
+              {
+                "name": "André Álvares de Almada",
+                "role": "capitaine, auteur du traité"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Tratado breve dos rios de Guiné do Cabo-Verde",
+                "author": "André Álvares de Almada",
+                "year": 1594,
+                "url": "https://archive.org/details/tratadobrevedosr00alma",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 47",
+                "notes": "Traité écrit en 1594, lu dans l'édition publiée par Diogo Köpke à Porto en 1841, numérisée par Internet Archive, le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2024,
+              "label": "Proposée en 2014, reprise en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Papel viendrait du mot portugais papel, « rôle » : les Pepel auraient servi d'interprètes aux Portugais dans les premiers siècles de leur présence, et ceux-ci les auraient désignés comme ceux qui jouent ce rôle, selon Nanque, cité par Alaiquet Papa Vieira Có.",
+            "hypothesisGroup": "origine du nom Papel",
+            "sources": [
+              {
+                "title": "Reinado da etnia pepel na Guiné-Bissau: um estudo de caso de Pepel de Bijimita (1973-2023)",
+                "author": "Alaiquet Papa Vieira Có",
+                "year": 2024,
+                "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/5707/1/ALAIQUET%20PAPA%20VIEIRA%20C%c3%93.pdf",
+                "tier": "unverified",
+                "source_kind": "academic",
+                "page": "p. 5, note 1",
+                "notes": "Projet de fin de licence, Université de l'intégration internationale de la lusophonie afro-brésilienne (UNILAB), 2024, lu en ligne le 11 octobre 2026. L'auteur cite Nanque, 2014, p. 24 ; nous n'avons pas lu ce texte nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2024,
+              "label": "Proposée en 2014, reprise en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Papel viendrait du mot portugais papel, « papier » : les habitants de l'île de Bissau, qui refusaient l'impôt colonial, auraient rapporté chaque avis de paiement, le papel, à l'administration en rappelant qu'ils étaient les maîtres de la terre, selon un récit que rapporte Alaiquet Papa Vieira Có à la suite de Nanque.",
+            "hypothesisGroup": "origine du nom Papel",
+            "sources": [
+              {
+                "title": "Reinado da etnia pepel na Guiné-Bissau: um estudo de caso de Pepel de Bijimita (1973-2023)",
+                "author": "Alaiquet Papa Vieira Có",
+                "year": 2024,
+                "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/5707/1/ALAIQUET%20PAPA%20VIEIRA%20C%c3%93.pdf",
+                "tier": "unverified",
+                "source_kind": "academic",
+                "page": "p. 5, note 1",
+                "notes": "Projet de fin de licence, Université de l'intégration internationale de la lusophonie afro-brésilienne (UNILAB), 2024, lu en ligne le 11 octobre 2026. L'auteur présente ce récit comme une autre version, sans nommer ceux qui la racontent ; il cite Nanque, 2014, p. 24, que nous n'avons pas lu nous-mêmes."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Buramos",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'autre nom que les Portugais donnaient aux Papel au XVIe siècle.",
+        "periodLabel": "Écrit en 1594",
+        "accounts": [
+          {
+            "period": {
+              "from": 1594,
+              "to": 1594,
+              "label": "1594"
+            },
+            "era": "polity",
+            "statement": "Le nom Buramos apparaît par écrit dans le Tratado breve dos rios de Guiné d'André Álvares de Almada, écrit en 1594, qui décrit la terre des Buramos, « appelés d'un autre nom Papeis ». C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple vivait déjà là avant lui.",
+            "formAsWritten": "Buramos",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tratado breve dos rios de Guiné do Cabo-Verde",
+                "author": "André Álvares de Almada",
+                "year": 1594,
+                "url": "https://archive.org/details/tratadobrevedosr00alma",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 47",
+                "notes": "Traité écrit en 1594, lu dans l'édition publiée par Diogo Köpke à Porto en 1841, numérisée par Internet Archive, le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1841,
+              "to": 1841,
+              "label": "1841"
+            },
+            "statement": "Le nom Buramos cède ensuite la place à Papeis : en 1841, Diogo Köpke, qui publie le traité d'Almada à Porto, précise en note que ces gens sont « plus généralement connus sous le nom de Papeis ».",
+            "sources": [
+              {
+                "title": "Tratado breve dos rios de Guiné do Cabo-Verde",
+                "author": "André Álvares de Almada",
+                "year": 1594,
+                "url": "https://archive.org/details/tratadobrevedosr00alma",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 103",
+                "notes": "Traité écrit en 1594, lu dans l'édition publiée par Diogo Köpke à Porto en 1841, numérisée par Internet Archive, le 11 octobre 2026. Note de l'éditeur, Diogo Köpke."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

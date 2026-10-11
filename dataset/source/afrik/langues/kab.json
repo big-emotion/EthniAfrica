@@ -13,7 +13,184 @@
   "whyProblematic": "Il y a deux explications possibles du mot « kabyle ». L'une le tire de l'arabe qabāʾil, pluriel de qabīla, « tribu » : des citadins arabophones appelaient ainsi des ruraux organisés en tribus (Bellil). L'autre le tire du verbe arabe qbel, « accepter », parce que les Kabyles auraient accepté l'islam (Assam). Le dictionnaire de l'Académie française ne retient que « tribu, famille ». « Kabylie », le nom de la région, a été fixé par les Français (Assam). Les Kabyles se nomment eux-mêmes Leqbayel au pluriel et aqbayli au singulier, des mots venus de l'arabe, qu'on trouve dans des poèmes kabyles transcrits depuis le XIXe siècle (Assam). Un autre nom est plus ancien : Zwawa, un nom arabe donné depuis le Moyen Âge aux tribus du Djurdjura, notamment par Ibn Khaldoun (Bellil). Selon le linguiste Salem Chaker, Izwawen serait l'ancien nom que les Kabyles se donnaient, aujourd'hui oublié (d'après l'article de Wikipédia « Kabyles », qui s'appuie sur Lanfry, 1978). En kabyle, azwaw est un prénom et Izwawen un nom de clan fréquent. Le lien entre ces mots n'est pas établi.",
   "spellingAliases": [],
   "familyId": "FLG_BERBERE",
-  "peoples": [],
+  "peoples": [{ "name": "Kabyle", "peopleId": "PPL_KABYLE" }],
+  "nameHistory": {
+    "summary": "Le nom kabyle désigne une langue berbère du nord de l'Algérie, en Kabylie, que ses locuteurs appellent taqbaylit. C'est aussi le nom du peuple qui la parle, un nom venu de l'arabe ; son origine est discutée, et la fiche du peuple Kabyle présente les explications. Nous présentons plus bas ces noms comme noms de langue.",
+    "names": [
+      {
+        "nameText": "Taqbaylit",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kab",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue en kabyle ; il nomme aussi la manière d'être kabyle.",
+        "periodLabel": "Attesté dans la poésie du XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par l'auteur"
+            },
+            "statement": "Le nom taqbaylit désigne la langue kabyle, mais aussi un idéal, un code de valeurs dans lequel se reconnaissent les tribus de Kabylie, selon Malika Assam. Il a la même racine que Leqbayel, le nom que les Kabyles se donnent ; la fiche du peuple Kabyle présente ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Des tribus en Kabylie ? Les At Zemmenzer, de la tribu précoloniale à la reconstruction identitaire berbère, chapitre « Tribu » et affirmation identitaire berbère en Kabylie",
+                "author": "Malika Assam",
+                "year": 2022,
+                "url": "https://books.openedition.org/pressesinalco/45934",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 19, § 23 et § 26",
+                "notes": "Paris, Presses de l'Inalco, 2022. Lu le 11 octobre 2026 en ligne sur OpenEdition Books."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom taqbaylit est écrit thak'ebailith dans la grammaire d'Adolphe Hanoteau, qui traduit « thesenedh thak'ebailith ? » par « Sais-tu le kabyle ? ».",
+            "formAsWritten": "thak'ebailith",
+            "sources": [
+              {
+                "title": "Essai de grammaire kabyle, deuxième édition",
+                "author": "Adolphe Hanoteau",
+                "year": 1906,
+                "url": "https://archive.org/details/essaidegrammaire00hanouoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 211",
+                "notes": "Alger, A. Jourdan, 1906, deuxième édition d'un texte écrit à la fin des années 1850. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur était officier de l'armée coloniale française."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1801,
+              "to": 1900,
+              "label": "XIXe siècle"
+            },
+            "statement": "Le nom taqbaylit figure dans la poésie kabyle du XIXe siècle, avec aqbayli et Leqbayel, selon Malika Assam. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Des tribus en Kabylie ? Les At Zemmenzer, de la tribu précoloniale à la reconstruction identitaire berbère, chapitre « Tribu » et affirmation identitaire berbère en Kabylie",
+                "author": "Malika Assam",
+                "year": 2022,
+                "url": "https://books.openedition.org/pressesinalco/45934",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 31",
+                "notes": "Paris, Presses de l'Inalco, 2022. Lu le 11 octobre 2026 en ligne sur OpenEdition Books."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kabyle",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom français de la langue et du peuple ; un mot venu de l'arabe.",
+        "periodLabel": "Écrit dès le XIVe siècle ; nom de langue dès 1873",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par l'auteur"
+            },
+            "statement": "Le nom kabyle vient de l'arabe ; deux explications existent, présentées sur la fiche du peuple Kabyle, selon Malika Assam. En français, il désigne à la fois le peuple et sa langue.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Des tribus en Kabylie ? Les At Zemmenzer, de la tribu précoloniale à la reconstruction identitaire berbère, chapitre « Tribu » et affirmation identitaire berbère en Kabylie",
+                "author": "Malika Assam",
+                "year": 2022,
+                "url": "https://books.openedition.org/pressesinalco/45934",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 7",
+                "notes": "Paris, Presses de l'Inalco, 2022. Lu le 11 octobre 2026 en ligne sur OpenEdition Books."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1906,
+              "label": "Texte de la fin des années 1850 (deuxième édition, 1906)"
+            },
+            "era": "colonial",
+            "statement": "Le nom kabyle fait partie, pour Adolphe Hanoteau, des noms surtout arabes donnés aux groupes berbères ; aucun n'appartient à leur langue, écrit-il, et les Kabyles ont fini par adopter le leur. Il propose d'appeler la langue berbère tamazir't.",
+            "sources": [
+              {
+                "title": "Essai de grammaire kabyle, deuxième édition",
+                "author": "Adolphe Hanoteau",
+                "year": 1906,
+                "url": "https://archive.org/details/essaidegrammaire00hanouoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. IX",
+                "notes": "Alger, A. Jourdan, 1906, deuxième édition d'un texte écrit à la fin des années 1850. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur était officier de l'armée coloniale française."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "1873"
+            },
+            "era": "colonial",
+            "statement": "Le nom kabyle désigne la langue dans le titre de l'Essai de dictionnaire français-kabyle du père J.-B. Creusat, publié à Alger, qui précise entre parenthèses « zouaoua ». C'est la plus ancienne trace de ce nom de langue que le projet connaît.",
+            "formAsWritten": "français-kabyle",
+            "sources": [
+              {
+                "title": "Essai de dictionnaire français-kabyle (zouaoua)",
+                "author": "J.-B. Creusat",
+                "year": 1873,
+                "url": "https://archive.org/details/essaidedictionna00creu",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "page de titre",
+                "notes": "Alger, A. Jourdan, 1873, ouvrage publié aux frais de l'archevêché d'Alger. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1301,
+              "to": 1400,
+              "label": "XIVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom kabyle a une forme proche, qbaïli, « homme de tribu », qui apparaîtrait comme nom de peuple au XIVe siècle dans le Qirtâs d'Ibn Abi Zar'. C'est ce qu'écrit Nedjma Abdelfettah Lalmi d'après Georges Yver, citée par Malika Assam. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Des tribus en Kabylie ? Les At Zemmenzer, de la tribu précoloniale à la reconstruction identitaire berbère, chapitre « Tribu » et affirmation identitaire berbère en Kabylie",
+                "author": "Malika Assam",
+                "year": 2022,
+                "url": "https://books.openedition.org/pressesinalco/45934",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 31",
+                "notes": "Paris, Presses de l'Inalco, 2022. Lu le 11 octobre 2026 en ligne sur OpenEdition Books."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": null,
     "dialects": [

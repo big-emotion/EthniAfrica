@@ -7,7 +7,15 @@
     "appellations": {
       "mainName": "Akye",
       "selfAppellation": "Akye",
-      "exonyms": ["Attie", "Attye", "Atye", "Akie", "Akye (forme normalisee)"],
+      "exonyms": [
+        "Attie",
+        "Attye",
+        "Atye",
+        "Akie",
+        "Akye (forme normalisee)",
+        "Atché",
+        "Atshe"
+      ],
       "spellingAliases": ["Akyé", "Attié"],
       "originOfExonyms": "Attie est le nom français le plus répandu. L'administration coloniale l'employait et il figure encore dans de nombreuses sources. Les personnes concernées se nomment Akye. Attye, Atye et Akie sont d'autres manières de transcrire ce même nom.",
       "whyProblematic": null,
@@ -22,20 +30,33 @@
       "Akye du secteur d'Adzope — groupe septentrional",
       "Akye du secteur d'Akoupe — groupe oriental",
       "Sous-groupes locaux lies aux villages autonomes de la zone lagunaire",
-      "Akye des regions de l'interieur (nord d'Adzope) — sous-groupe continental"
+      "Akye des regions de l'interieur (nord d'Adzope) — sous-groupe continental",
+      "Nindins : groupe concentré autour d'Anyama et Alépé, proches d'Abidjan",
+      "Bodins : groupe de la région d'Adzopé, Yakassé-Attobrou et Kodioussou",
+      "Kétins : groupe établi autour d'Akoupé",
+      "Andokoi : sous-groupe de la zone forestière orientale",
+      "Annapun : sous-groupe de la région d'Alépé",
+      "Attobrou : sous-groupe méridional",
+      "N'gadié (N'kadzun) : lignage de la forêt centrale"
     ],
     "origins": {
       "ancientOrigins": "Les Akye font partie des peuples akan installes dans le sud-est de la Cote d'Ivoire. Leur appartenance au groupe Kwa de la famille Niger-Congo les relie aux peuples akan du Ghana. La zone lagunaire de la Cote d'Ivoire orientale est habitee par douze groupes linguistiques distincts, dont les Akye constituent l'un des plus importants. La montee en puissance des premiers Etats akan centralises est datable du 13e siecle, liee a l'ouverture de routes commerciales pour l'or.",
       "formationPeriod": "Les Akye se sont constitues comme groupe distinct au sein de la mouvance akan, probablement entre le 13e et le 15e siecle, lors de l'expansion des peuples kwa vers la cote ivoirienne. Avant la colonisation, chaque village akye etait autonome et les communautes s'unissaient ponctuellement en confederations face aux menaces exterieures.",
       "migrationRoutes": [
         "Migrations depuis l'interieur des terres vers la zone lagunaire du sud-est ivoirien",
-        "Pression du grand royaume ashanti au 18e siecle ayant consolide la fixation des groupes lagunaires"
+        "Pression du grand royaume ashanti au 18e siecle ayant consolide la fixation des groupes lagunaires",
+        "Ghana (territoire ashanti) → migration vers l'ouest en compagnie des futurs Baoulé et Agni",
+        "Traversée du fleuve Comoé en crue : selon la légende, la reine Abla Pokou sacrifia son fils nouveau-né pour que le génie des eaux permette le passage",
+        "Séparation du groupe baoulé-agni après la traversée : les Akyé s'installent à l'ouest et au sud du Comoé",
+        "Fondation du premier village Akyé : Bouapé, point de départ de l'expansion dans la région des Lagunes"
       ],
       "historicalSettlementZones": [
         "Zone lagunaire du sud-est de la Cote d'Ivoire — entre Abidjan, Bingerville et Grand-Bassam au sud",
         "Region d'Adzope et d'Akoupe au nord",
         "Environs de la lagune Potou et de l'Aby",
-        "Voisinage direct de l'actuelle agglomeration d'Abidjan, qui s'est developpee sur des terres akye"
+        "Voisinage direct de l'actuelle agglomeration d'Abidjan, qui s'est developpee sur des terres akye",
+        "Bouapé : premier village fondé (zone de dispersion initiale)",
+        "Sous-préfectures d'Agou, Assikoi, Bécédi-Brignan, Yakassé-Mé, Bieby"
       ],
       "unificationsOrDivisions": "Les Akye n'ont pas forme d'Etat centralise propre, mais ont maintenu une organisation en villages autonomes partageant une identite culturelle et linguistique commune. En cas de menace exterieure, ils se federaient sous l'autorite d'un chef territorial. L'administration coloniale francaise a introduit un systeme de chefferies formelles.",
       "externalInfluences": "Appartenance a la mouvance akan du Ghana : partage de nombreux traits culturels (structures matrilineaires dans certains sous-groupes, art de la statuaire, economies agricoles). Contacts avec les peuples voisins (Anyi, Asante, Fante). Christianisation progressive depuis la periode coloniale. Influence de la culture urbaine d'Abidjan depuis l'independance (1960).",
@@ -54,7 +75,10 @@
       "dialects": [
         "Variante meridionale — secteur de Bingerville et Grand-Bassam",
         "Variante septentrionale — secteur d'Adzope",
-        "Variante orientale — secteur d'Akoupe"
+        "Variante orientale — secteur d'Akoupe",
+        "Dialecte Nindin (région Anyama-Alépé) : variante du groupe nord-occidental",
+        "Dialecte Bodin (région Adzopé-Yakassé-Attobrou) : variante centrale, base de référence",
+        "Dialecte Kétin (région Akoupé) : variante orientale"
       ],
       "vehicularRole": "L'akye (code ISO 639-3 : ati) est classe langue stable et vivante par l'Ethnologue (SIL). Il est parle comme premiere langue par l'ensemble de la communaute ethnique. La langue n'est pas enseignee dans les ecoles. Le francais est la langue d'enseignement et de l'administration en Cote d'Ivoire. L'akye appartient au groupe lagunaire de la branche Kwa."
     },
@@ -133,6 +157,40 @@
         "url": "https://www.peoplegroups.org/explore/GroupDetails.aspx?peid=16025",
         "tier": "unverified",
         "source_kind": "missionary_database"
+      },
+      {
+        "title": "UNESCO : Les savoir-faire liés à la fabrication de l'attiéké (2024)",
+        "url": "https://ich.unesco.org/fr/RL/les-savoir-faire-lies-a-la-fabrication-de-l-attieke-en-cote-d-ivoire-02086",
+        "tier": "official",
+        "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Spirit Land of Africa : Attié culture",
+        "url": "https://spiritlandofafrica.com/products/list/attie/",
+        "tier": "needs_review"
+      },
+      {
+        "title": "Rezo Ivoire : Le peuple Attié",
+        "url": "https://www.rezoivoire.net/ivoire/patrimoine/2826/le-peuple-attie.html",
+        "tier": "unverified",
+        "source_kind": "community"
+      },
+      {
+        "title": "101 Last Tribes : Akye",
+        "url": "https://www.101lasttribes.com/tribes/akye.html",
+        "tier": "unverified",
+        "source_kind": "community"
+      },
+      {
+        "title": "Santé Tropicale : Approche anthropologique en pays Akyé",
+        "url": "https://www.santetropicale.com/Resume/14803.pdf",
+        "tier": "needs_review"
+      },
+      {
+        "title": "YouTube : Le peuple Akié, comment est-il arrivé en Côte d'Ivoire ?",
+        "url": "https://www.youtube.com/watch?v=Qpqx8Biibg4",
+        "tier": "unverified",
+        "source_kind": "press"
       }
     ]
   },

@@ -490,13 +490,13 @@ describe("a country's shares", () => {
       subjectOf(congoRepublic, {
         id: "COG",
         associatedPeoples: [
-          { id: "PPL_KONGO_BRAZZA", name: "Kongo (Brazzaville)" },
+          { id: "PPL_KONGO", name: "Kongo" },
           { id: "PPL_TEKE", name: "Teke" },
         ],
       }),
     ]);
 
-    expect(container.textContent).toContain("Kongo (Brazzaville)");
+    expect(container.textContent).toContain("Kongo");
     expect(container.textContent).toContain("(Teke…)");
     expect(container.textContent).not.toMatch(/PPL_/);
     expect(container.textContent).not.toContain("Mbochi");

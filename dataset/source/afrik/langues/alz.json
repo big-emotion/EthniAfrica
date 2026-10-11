@@ -14,6 +14,121 @@
   "spellingAliases": [],
   "familyId": "FLG_NILOTIQUE",
   "peoples": [{ "name": "Alur", "peopleId": "PPL_ALUR" }],
+  "nameHistory": {
+    "summary": "Le nom alur désigne une langue nilotique parlée au nord-ouest du lac Albert, en Ouganda et en République démocratique du Congo. C'est aussi le nom du peuple qui la parle, dont la fiche raconte l'histoire du nom. Un voyageur a d'abord noté que ce peuple parlait le « magungo ». Les textes que nous avons lus n'expliquent pas d'où vient le nom alur ; nous présentons plus bas ses plus anciennes traces.",
+    "names": [
+      {
+        "nameText": "Alur",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "alz",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue et de son peuple, au lac Albert ; noté Aluri pour la langue dès 1879.",
+        "periodLabel": "Écrit dès 1877 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom alur désigne à la fois une langue nilotique et le peuple qui la parle, en Ouganda et en République démocratique du Congo. La fiche du peuple Alur présente l'histoire de ce nom. Les textes que nous avons lus ne disent pas d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Alur (alur1250)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/alur1250",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle la situe en République démocratique du Congo et en Ouganda, et recense notamment les formes Dho Alur et Aloro."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1879,
+              "to": 1879,
+              "label": "Novembre 1879, à Wadelai"
+            },
+            "era": "colonial",
+            "statement": "Le nom alur désigne une langue chez Emin Pacha : à Wadelai, écrit-il, les gens du district de Koche parlent l'« Aluri », qu'il croit proche de la langue des Shuli. Le pays Lur ou Alur s'étend, d'après lui, au sud du pays madi.",
+            "formAsWritten": "Aluri",
+            "sources": [
+              {
+                "title": "Emin Pasha in Central Africa: being a collection of his letters and journals",
+                "author": "Emin Pacha (Eduard Schnitzer), éd. G. Schweinfurth, F. Ratzel, R. W. Felkin et G. Hartlaub",
+                "year": 1888,
+                "url": "https://archive.org/details/eminpashaincentr00emin",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 143",
+                "notes": "Londres, George Philip & Son, 1888, traduction anglaise de Mrs R. W. Felkin. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1877,
+              "to": 1877,
+              "label": "Lettre du 20 août 1877"
+            },
+            "era": "polity",
+            "statement": "Le nom alur apparaît sous la forme Lur dans une lettre d'Emin Pacha : au sud de Wadelai, sur la rive ouest du Nil, vivent les Lur, sujets du roi du Bunyoro. C'est la plus ancienne trace de ce nom que le projet connaît ; elle nomme un peuple, et sa langue porte alors un autre nom.",
+            "formAsWritten": "Lur",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Emin Pasha in Central Africa: being a collection of his letters and journals",
+                "author": "Emin Pacha (Eduard Schnitzer), éd. G. Schweinfurth, F. Ratzel, R. W. Felkin et G. Hartlaub",
+                "year": 1888,
+                "url": "https://archive.org/details/eminpashaincentr00emin",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 11",
+                "notes": "Londres, George Philip & Son, 1888, traduction anglaise de Mrs R. W. Felkin. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Magungo",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom qu'Emin Pacha donne en 1877 à la langue des Lur.",
+        "periodLabel": "1877",
+        "accounts": [
+          {
+            "period": {
+              "from": 1877,
+              "to": 1877,
+              "label": "Lettre du 20 août 1877"
+            },
+            "era": "polity",
+            "statement": "Le nom magungo désigne, dans une lettre d'Emin Pacha, la langue que parlent les Lur au sud de Wadelai ; on la parle aussi à Wadelai, avec le madi. Deux ans plus tard, le même voyageur appelle cette langue l'aluri. Nous n'avons pas trouvé d'autre source sur ce nom.",
+            "formAsWritten": "Magungo",
+            "sources": [
+              {
+                "title": "Emin Pasha in Central Africa: being a collection of his letters and journals",
+                "author": "Emin Pacha (Eduard Schnitzer), éd. G. Schweinfurth, F. Ratzel, R. W. Felkin et G. Hartlaub",
+                "year": 1888,
+                "url": "https://archive.org/details/eminpashaincentr00emin",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 11",
+                "notes": "Londres, George Philip & Son, 1888, traduction anglaise de Mrs R. W. Felkin. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": "non_vehicular",
     "dialects": [],

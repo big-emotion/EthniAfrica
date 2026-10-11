@@ -158,5 +158,160 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Yaka, ou Bayaka, désigne un peuple bantou de la vallée du Kwango, dans le sud-ouest de la République démocratique du Congo et le nord de l'Angola, qui se nomme lui-même Yaka. En kikongo, le mot yaka a aussi servi à nommer des guerriers que les Portugais appelaient Jaga. Les sources ne s'accordent pas sur le lien entre ces Jaga et les Yaka du Kwango ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Yaka",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du peuple du Kwango ; en kikongo, le même mot a désigné des guerriers.",
+        "periodLabel": "Écrit dès 1591 sous la forme Jaga ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bayaka désigne, selon Emil Torday et Thomas Athol Joyce, un peuple installé depuis des siècles dans le Kwango et gouverné par un grand chef, le Kiamfu, dont l'autorité fut supprimée par l'État du Congo au début de 1905. L'origine de ce nom est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Notes ethnographiques sur des populations habitant les rives du Kasai, de la Lukenie et du Kwango oriental",
+                "author": "Emil Torday et Thomas Athol Joyce",
+                "year": 1922,
+                "url": "https://archive.org/details/notesethnographi00tord",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 255",
+                "notes": "Bruxelles, Annales du Musée du Congo belge. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1740,
+              "to": 1760,
+              "label": "1740-1760"
+            },
+            "era": "polity",
+            "statement": "Le nom Yaka désigne aussi le royaume fondé dans la vallée du Kwango entre 1740 et 1760 par un capitaine venu de l'empire lunda, selon Jan Vansina ; son chef, le kiamfu, porte un titre tiré de Yav, celui de l'empereur lunda, selon Ndaywel è Nziem.",
+            "sources": [
+              {
+                "title": "General History of Africa, V, ch. 19: The Kongo kingdom and its neighbours",
+                "author": "Jan Vansina, d'après une contribution de Théophile Obenga",
+                "year": 1992,
+                "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 587",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot. Édition anglaise lue le 11 octobre 2026 dans la copie que publie South African History Online (copie non officielle) ; l'édition française en ligne n'était pas accessible."
+              },
+              {
+                "title": "General History of Africa, V, ch. 20: The political system of the Luba and Lunda: its emergence and expansion",
+                "author": "Ndaywel è Nziem",
+                "year": 1992,
+                "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 606",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot. Édition anglaise lue le 11 octobre 2026 dans la copie que publie South African History Online (copie non officielle) ; l'édition française en ligne n'était pas accessible."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1591,
+              "to": 1591,
+              "label": "1591"
+            },
+            "era": "polity",
+            "statement": "Le nom Yaka apparaît par écrit sous sa forme portugaise, Jaga, que les sources anciennes emploient comme synonyme de barbare pour toutes sortes de bandes guerrières, selon Jan Vansina. L'invasion du royaume du Kongo par les Jaga, en 1568, est rapportée pour la première fois en 1591, d'après le témoignage d'un Portugais arrivé après les faits. C'est la plus ancienne trace de ce nom que le projet connaît. Les sources ne disent pas s'il s'agit déjà du peuple du Kwango.",
+            "formAsWritten": "Jaga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "General History of Africa, V, ch. 3: Population movements and emergence of new socio-political forms in Africa",
+                "author": "Jan Vansina",
+                "year": 1992,
+                "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 66",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot. Édition anglaise lue le 11 octobre 2026 dans la copie que publie South African History Online (copie non officielle) ; l'édition française en ligne n'était pas accessible."
+              },
+              {
+                "title": "General History of Africa, V, ch. 19: The Kongo kingdom and its neighbours",
+                "author": "Jan Vansina, d'après une contribution de Théophile Obenga",
+                "year": 1992,
+                "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 558",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot. Édition anglaise lue le 11 octobre 2026 dans la copie que publie South African History Online (copie non officielle) ; l'édition française en ligne n'était pas accessible."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "Proposée en 1981"
+            },
+            "era": "modern",
+            "statement": "Le nom Yaka relierait les Yaka du Kwango aux Jaga du XVIe siècle : Anne Hilton, en 1981, voit dans ces guerriers leurs ancêtres, selon Jan Vansina.",
+            "hypothesisGroup": "Jaga et Yaka du Kwango",
+            "sources": [
+              {
+                "title": "General History of Africa, V, ch. 19: The Kongo kingdom and its neighbours",
+                "author": "Jan Vansina, d'après une contribution de Théophile Obenga",
+                "year": 1992,
+                "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 558, note 22",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot. Édition anglaise lue le 11 octobre 2026 dans la copie que publie South African History Online (copie non officielle) ; l'édition française en ligne n'était pas accessible."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1963,
+              "to": 1981,
+              "label": "Débat de 1963 à 1981"
+            },
+            "statement": "Le nom Yaka, sous sa forme Jaga, ne désignerait peut-être aucun peuple précis : pour certains auteurs, il n'y a jamais eu de Jaga, et les Portugais auraient inventé cette invasion pour intervenir dans une querelle de succession au Kongo ; d'autres y voient surtout des paysans kongo révoltés, selon Jan Vansina, qui juge qu'on ne le saura peut-être jamais.",
+            "hypothesisGroup": "Jaga et Yaka du Kwango",
+            "sources": [
+              {
+                "title": "General History of Africa, V, ch. 3: Population movements and emergence of new socio-political forms in Africa",
+                "author": "Jan Vansina",
+                "year": 1992,
+                "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 66",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot. Édition anglaise lue le 11 octobre 2026 dans la copie que publie South African History Online (copie non officielle) ; l'édition française en ligne n'était pas accessible."
+              },
+              {
+                "title": "General History of Africa, V, ch. 19: The Kongo kingdom and its neighbours",
+                "author": "Jan Vansina, d'après une contribution de Théophile Obenga",
+                "year": 1992,
+                "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 558",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot. Édition anglaise lue le 11 octobre 2026 dans la copie que publie South African History Online (copie non officielle) ; l'édition française en ligne n'était pas accessible."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

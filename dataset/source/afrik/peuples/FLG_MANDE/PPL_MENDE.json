@@ -138,5 +138,218 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Mende désigne un peuple du sud et de l'est de la Sierra Leone et des régions voisines du Liberia, qui se nomme lui-même Mende. D'autres noms existent : Kosso, un surnom en usage dans la colonie de Sierra Leone au XIXe siècle, et Nongoba, le nom que lui donnaient les Vaï. Les sources que nous avons lues n'expliquent pas l'origine du nom Mende ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "Mende",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "men",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; écrit Mendi dès 1840.",
+        "usedIn": ["men"],
+        "periodLabel": "Écrit dès 1840 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par les historiens"
+            },
+            "statement": "Le nom Mende désigne un grand peuple de langue mandé du Sud, proche parent des Toma, qui se rapproche de la mer au XVIIIe siècle en absorbant des Bulom, selon Yves Person. On ne sait pas avec certitude d'où vient ce nom : les sources que nous avons lues ne l'expliquent pas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 24 : États et peuples de Sénégambie et de haute Guinée",
+                "author": "Yves Person",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 697",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Mende est écrit Mẹ́nde par le linguiste Sigismund Koelle, qui situe ce pays à l'ouest des Kono et des Kissi et à l'est des Gallinas.",
+            "formAsWritten": "Mẹ́nde",
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "section II-9",
+                "notes": "Londres, Church Missionary House. Les remarques de Koelle sont lues dans leur transcription par le jeu de données Lexibank, pas sur l'imprimé. Koelle a interrogé à Freetown des personnes libérées de la traite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1839,
+              "to": 1840,
+              "label": "1839-1840"
+            },
+            "era": "polity",
+            "statement": "Le nom Mende est écrit Mendi dans le récit de John Warner Barber sur les captifs de l'Amistad, des Africains vendus comme esclaves qui se révoltèrent en mer en 1839. La plupart disent être nés dans le « pays mendi », à une dizaine de jours de marche de Lomboko, à l'embouchure des Gallinas. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Mendi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A history of the Amistad captives",
+                "author": "John Warner Barber",
+                "year": 1840,
+                "url": "https://archive.org/details/historyofamistad00barb",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9",
+                "notes": "New Haven, E. L. & J. W. Barber, 1840 ; lu sur sa numérisation. L'auteur écrit d'après les entretiens menés avec les captifs par un interprète."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1680,
+              "to": 1720,
+              "label": "Fin du XVIIe et début du XVIIIe siècle, selon C. Wondji"
+            },
+            "era": "polity",
+            "statement": "Ces groupes mande venus de l'est, mêlés aux Kissi, aux Bulom, aux Loko et aux Temne, donneront plus tard ce qu'on appelle Mende, selon C. Wondji. Il note qu'A. P. Kup fait plutôt descendre les Mende des guerriers sumba et mane arrivés au XVIe siècle.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 13 : Les États et les cultures de la côte de haute Guinée",
+                "author": "C. Wondji",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 423",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1668,
+              "to": 1668,
+              "label": "1668, rapporté en 1827"
+            },
+            "era": "polity",
+            "statement": "Le nom Mende a peut-être une forme proche, Mendi, dans la description de l'Afrique d'Olfert Dapper : les Folgia y donnent à l'empereur des Manou le titre de mandi, « seigneur », que l'original écrit Mendi, selon l'édition revue par Walckenaer. Les sources que nous avons lues ne disent pas s'il s'agit du même nom.",
+            "sources": [
+              {
+                "title": "Histoire générale des voyages, tome IX",
+                "author": "Charles-Athanase Walckenaer",
+                "year": 1827,
+                "url": "https://archive.org/details/histoire-generale-des-voyages-ou-nouvelle-collection-des-relations-de-voyages-pa",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 41",
+                "notes": "Paris, Lefèvre, 1827, édition revue de la collection de l'abbé Prévost ; lu sur sa numérisation. L'éditeur résume Olfert Dapper (1668) et cite en note la forme de l'original."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kosso",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les habitants de la colonie de Sierra Leone",
+        "shortLine": "Un surnom des Mende dans la colonie de Sierra Leone au XIXe siècle.",
+        "periodLabel": "XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kosso est écrit Kóso par Sigismund Koelle : c'est ainsi qu'on appelle les Mende en Sierra Leone, et il comprend qu'il s'agit d'un surnom.",
+            "formAsWritten": "Kóso",
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "section II-9",
+                "notes": "Londres, Church Missionary House. Les remarques de Koelle sont lues dans leur transcription par le jeu de données Lexibank, pas sur l'imprimé. Koelle a interrogé à Freetown des personnes libérées de la traite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1842,
+              "to": 1842,
+              "label": "1842"
+            },
+            "statement": "Le nom Kosso désigne en 1842, dans une lettre du docteur Fergusson, ancien gouverneur par intérim de la Sierra Leone, le pays d'où viennent les captifs de l'Amistad. Ce serait un terme de reproche dans leur propre pays, mais l'usage lui aurait ôté tout sens offensant sur cette partie de la côte, selon lui. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Union Missionary Herald, 1842, lettre du docteur Fergusson sur la situation du pays mendi",
+                "author": "Fergusson",
+                "year": 1842,
+                "url": "https://archive.org/details/UnionMissionaryHerald1842",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Lettre de l'ancien lieutenant-gouverneur et gouverneur par intérim de la Sierra Leone, reprise par le comité de la mission mendi ; lue sur la numérisation du volume de 1842, dont nous n'avons pas pu lire la pagination."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nongoba",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Vaï",
+        "shortLine": "Le nom d'un district mende que les Vaï étendaient à tout le peuple.",
+        "periodLabel": "Milieu du XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Nongoba est celui du district mende qui touche les Gallinas : les Vaï l'étendent souvent à tout le peuple mende, selon Sigismund Koelle, qui l'écrit Nón·gōba. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Nón·gōba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "section II-9",
+                "notes": "Londres, Church Missionary House. Les remarques de Koelle sont lues dans leur transcription par le jeu de données Lexibank, pas sur l'imprimé. Koelle a interrogé à Freetown des personnes libérées de la traite."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

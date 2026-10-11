@@ -13,7 +13,7 @@
       "attestations": [
         {
           "countryId": "MOZ",
-          "sourceRefs": ["corpus-ppl-ndau-moz-organisation"]
+          "sourceRefs": ["corpus-ppl-ndau-organisation"]
         }
       ]
     }
@@ -49,16 +49,16 @@
   },
   "peoples": [
     {
-      "peopleId": "PPL_NDAU_MOZ",
+      "peopleId": "PPL_NDAU",
       "status": "attested",
-      "sourceRefs": ["corpus-ppl-ndau-moz-organisation"]
+      "sourceRefs": ["corpus-ppl-ndau-organisation"]
     }
   ],
   "countries": [
     {
       "countryId": "MOZ",
       "status": "attested",
-      "sourceRefs": ["corpus-ppl-ndau-moz-organisation"]
+      "sourceRefs": ["corpus-ppl-ndau-organisation"]
     },
     {
       "countryId": "ZWE",
@@ -83,7 +83,7 @@
   "homonyms": [],
   "sources": [
     {
-      "sourceKey": "corpus-ppl-ndau-moz-organisation",
+      "sourceKey": "corpus-ppl-ndau-organisation",
       "title": "EthniAfrica — fiche du peuple Ndau, organisation clanique",
       "url": null,
       "tier": "unverified",

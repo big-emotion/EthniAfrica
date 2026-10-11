@@ -144,7 +144,14 @@
     "appellations": {
       "mainName": "Nkhumbi",
       "selfAppellation": "Nkhumbi",
-      "exonyms": ["Nkhumbi", "Nkumbi", "Humbe", "Khumbi"],
+      "exonyms": [
+        "Nkhumbi",
+        "Nkumbi",
+        "Humbe",
+        "Khumbi",
+        "Ngumbi",
+        "Otjingumbi"
+      ],
       "originOfExonyms": "Humbe est le nom de la localite (commune de Humbe, municipalite d'Ombadja, province de Cunene) dont ces gens sont originaires, et devint une denomination exonymique repandue. Khumbi est une variante phonetique. Nkumbi est la forme standardisee dans la litterature linguistique (ISO 639-3 : khu). Nkhumbi est la transcription orthographique la plus courante dans la litterature ethnographique anglophone.",
       "whyProblematic": null,
       "contemporaryUsage": "En Angola, Nkhumbi (ou Nkumbi, Humbe) est compris dans le groupe Nyaneka-Nkhumbi (aussi note Nyaneka-Nkumbi ou Nyaneka-Humbe), qui constitue une categorie administrative et ethnographique regroupant les Nyaneka et les Nkhumbi. La denomination officielle angolaise utilise Nyaneka-Nkhumbi pour le groupe global.",
@@ -163,7 +170,8 @@
       ],
       "historicalSettlementZones": [
         "Province de Cunene, Angola (notamment municipalite d'Ombadja, commune de Humbe)",
-        "Province de Huila, sud-ouest de l'Angola"
+        "Province de Huila, sud-ouest de l'Angola",
+        "Savanes seches du sud-ouest angolais"
       ],
       "unificationsOrDivisions": "Les Nkhumbi constituent l'un des quatre groupes composant les Nyaneka (Nyaneka-Nkhumbi) ; ils se distinguent par leur propre langue (Nkumbi, ISO khu) distincte du Nyaneka proprement dit. Contrairement aux Nganuela qui ont migre au-dela des frontieres angolaises, les Nyaneka-Nkhumbi ne se dispersèrent pas hors d'Angola.",
       "externalInfluences": "Contacts avec les Portugais dans le cadre de l'expansion coloniale vers le sud de l'Angola. Pression coloniale de l'administration portugaise dans la province de Cunene. La guerre civile angolaise (1975-2002) affecta les Nkhumbi dans la province de Cunene. Influence catholique romaine via les missions portugaises.",
@@ -200,7 +208,7 @@
     "demography": {
       "totalPopulation": 180000,
       "referenceYear": 2025,
-      "source": "Estimation basee sur les donnees historiques : le groupe Nyaneka-Humbe (Nyaneka-Nkhumbi) representait 3% de la population angolaise en 1988 (US Angola Country Studies). Population de l'Angola en 2025 estimee a environ 37 millions (Banque mondiale). 3% = environ 1,1M pour l'ensemble Nyaneka-Nkhumbi. Les Nkhumbi sont un des quatre sous-groupes ; estimation proportionnelle conservatrice.",
+      "source": "Estimation basee sur les donnees historiques : le groupe Nyaneka-Humbe (Nyaneka-Nkhumbi) representait 3% de la population angolaise en 1988 (US Angola Country Studies). Population de l'Angola en 2025 estimee a environ 37 millions (Banque mondiale). 3% = environ 1,1M pour l'ensemble Nyaneka-Nkhumbi. Les Nkhumbi sont un des quatre sous-groupes ; estimation proportionnelle conservatrice. Une autre estimation compte 834 000 Nkhumbi en Angola en 2025 (Joshua Project).",
       "distributionByCountry": [
         {
           "country": "AGO",
@@ -250,6 +258,12 @@
         "url": "https://www.refworld.org/country,COI,,COUNTRYREP,ago,,49749d6232,0.html",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Glottolog 5.3 – Nkhumbi, glottolog.org/resource/languoid/id/nkhu1238 (2025)",
+        "url": "https://glottolog.org/resource/languoid/id/nkhu1238",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   }

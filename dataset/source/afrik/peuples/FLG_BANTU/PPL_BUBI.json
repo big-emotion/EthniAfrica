@@ -129,5 +129,262 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bubi désigne le peuple autochtone de l'île de Bioko, en Guinée équatoriale, qui emploie aujourd'hui ce nom. Des auteurs britanniques du XIXe siècle l'ont aussi appelé Edeeyah. Les sources ne s'accordent pas sur l'origine du nom Bubi ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Bubi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bvb",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple de Bioko, connu des Européens avant 1841 ; son origine est discutée.",
+        "periodLabel": "Connu des Européens avant 1841 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bubi désigne aujourd'hui les premiers habitants de l'île de Bioko, descendants de migrants bantous venus du continent, selon l'Encyclopædia Britannica. Au début du XXIe siècle, ils forment environ un dixième de la population de la Guinée équatoriale. L'origine du nom est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Equatorial Guinea: People",
+                "author": "Ronald James Harrison-Church et les éditeurs de l'Encyclopædia Britannica",
+                "year": null,
+                "url": "https://www.britannica.com/place/Equatorial-Guinea/People",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Lu en ligne le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1908,
+              "to": 1908,
+              "label": "1908"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bubi n'est pas, selon Harry Johnston, un nom que tous les habitants de l'île se donnent : il doute qu'ils aient un nom commun, et le seul mot qui semble s'appliquer à tous serait Bawo.",
+            "sources": [
+              {
+                "title": "George Grenfell and the Congo, vol. II",
+                "author": "Harry H. Johnston",
+                "year": 1908,
+                "url": "https://archive.org/details/georgegrenfellco02johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 882 et p. 954",
+                "notes": "Londres, Hutchinson. Lu dans l'exemplaire numérisé de l'université de Toronto le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1874,
+              "to": 1874,
+              "label": "1874"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bubi est écrit Bubis par le missionnaire Henry Roe, qui note que la forme Boobees en est une déformation courante. Il préfère, pour sa part, appeler ce peuple les Fernandiens, d'après l'ancien nom de l'île, Fernando Poo.",
+            "formAsWritten": "Bubis",
+            "sources": [
+              {
+                "title": "West African Scenes: Being Descriptions of Fernando Po",
+                "author": "Henry Roe",
+                "year": 1874,
+                "url": "https://archive.org/details/westafricanscen00roegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 50",
+                "notes": "Londres. L'auteur était missionnaire méthodiste primitif à Fernando Poo, aujourd'hui Bioko. Lu dans l'exemplaire numérisé le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1841,
+              "to": 1841,
+              "label": "1841"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bubi apparaît sous les formes Boobies et Bubies dans le récit de l'expédition britannique du Niger de 1841, écrit par William Allen et T. R. H. Thomson : ils notent que les Européens ne connaissaient jusque-là ce peuple que sous ce nom. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà sur l'île bien avant lui.",
+            "formAsWritten": "Bubies",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Narrative of the Expedition Sent by Her Majesty's Government to the River Niger, in 1841, vol. II",
+                "author": "William Allen et T. R. H. Thomson",
+                "year": 1848,
+                "url": "https://archive.org/details/narrativeexpediiialle",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 192",
+                "notes": "Londres, Richard Bentley. Lu dans l'exemplaire numérisé le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1874,
+              "to": 1874,
+              "label": "Rapporté en 1874"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bubi viendrait d'un mot de la langue de l'île qui voudrait dire « homme » et qui sert aux habitants à s'interpeller ou à se saluer, comme un Espagnol dit « Hombre ! », selon beaucoup des habitants qu'a entendus Henry Roe et selon Harry Johnston en 1908.",
+            "hypothesisGroup": "origine du nom Bubi",
+            "sources": [
+              {
+                "title": "West African Scenes: Being Descriptions of Fernando Po",
+                "author": "Henry Roe",
+                "year": 1874,
+                "url": "https://archive.org/details/westafricanscen00roegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 50",
+                "notes": "Londres. L'auteur était missionnaire méthodiste primitif à Fernando Poo, aujourd'hui Bioko. Lu dans l'exemplaire numérisé le 11 octobre 2026."
+              },
+              {
+                "title": "George Grenfell and the Congo, vol. II",
+                "author": "Harry H. Johnston",
+                "year": 1908,
+                "url": "https://archive.org/details/georgegrenfellco02johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 882 et p. 954",
+                "notes": "Londres, Hutchinson. Lu dans l'exemplaire numérisé de l'université de Toronto le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1874,
+              "to": 1874,
+              "label": "Rapporté en 1874"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bubi voudrait plutôt dire « ami », selon d'autres habitants de l'île qui l'ont dit à Henry Roe.",
+            "hypothesisGroup": "origine du nom Bubi",
+            "sources": [
+              {
+                "title": "West African Scenes: Being Descriptions of Fernando Po",
+                "author": "Henry Roe",
+                "year": 1874,
+                "url": "https://archive.org/details/westafricanscen00roegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 50",
+                "notes": "Londres. L'auteur était missionnaire méthodiste primitif à Fernando Poo, aujourd'hui Bioko. Lu dans l'exemplaire numérisé le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1848,
+              "to": 1848,
+              "label": "Rapporté en 1848"
+            },
+            "era": "colonial",
+            "statement": "Le nom Boobies aurait été compris par bien des visiteurs européens comme un mot lié à l'esprit de ce peuple, une idée que rapportent William Allen et T. R. H. Thomson pour la critiquer : selon eux, elle a détourné ces visiteurs de s'intéresser à ce peuple.",
+            "hypothesisGroup": "origine du nom Bubi",
+            "sources": [
+              {
+                "title": "A Narrative of the Expedition Sent by Her Majesty's Government to the River Niger, in 1841, vol. II",
+                "author": "William Allen et T. R. H. Thomson",
+                "year": 1848,
+                "url": "https://archive.org/details/narrativeexpediiialle",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 192",
+                "notes": "Londres, Richard Bentley. Lu dans l'exemplaire numérisé le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Edeeyah",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des auteurs britanniques du XIXe siècle",
+        "shortLine": "Un nom donné par des auteurs britanniques vers 1841 ; les habitants ne l'emploient pas.",
+        "periodLabel": "XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1841,
+              "to": 1841,
+              "label": "1841"
+            },
+            "era": "colonial",
+            "statement": "Le nom Edeeyah est donné comme « le vrai nom » de ce peuple par William Allen et T. R. H. Thomson, dans le récit de l'expédition du Niger de 1841 ; ils écrivent qu'ils ne savent pas d'où il vient. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Edeeyah",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Narrative of the Expedition Sent by Her Majesty's Government to the River Niger, in 1841, vol. II",
+                "author": "William Allen et T. R. H. Thomson",
+                "year": 1848,
+                "url": "https://archive.org/details/narrativeexpediiialle",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 192",
+                "notes": "Londres, Richard Bentley. Lu dans l'exemplaire numérisé le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1874,
+              "to": 1874,
+              "label": "1874"
+            },
+            "era": "colonial",
+            "statement": "Le nom Adiya, au pluriel Adiyas, est encore employé dans les écrits savants sur l'île, selon le missionnaire Henry Roe.",
+            "formAsWritten": "Adiyas",
+            "sources": [
+              {
+                "title": "West African Scenes: Being Descriptions of Fernando Po",
+                "author": "Henry Roe",
+                "year": 1874,
+                "url": "https://archive.org/details/westafricanscen00roegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 50",
+                "notes": "Londres. L'auteur était missionnaire méthodiste primitif à Fernando Poo, aujourd'hui Bioko. Lu dans l'exemplaire numérisé le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1908,
+              "to": 1908,
+              "label": "1908"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ediya, employé par le missionnaire John Clarke et par des auteurs britanniques liés à l'expédition du Niger de 1841, n'est reconnu nulle part sur l'île, selon Harry Johnston, qui le juge inexpliqué.",
+            "formAsWritten": "Ediya",
+            "sources": [
+              {
+                "title": "George Grenfell and the Congo, vol. II",
+                "author": "Harry H. Johnston",
+                "year": 1908,
+                "url": "https://archive.org/details/georgegrenfellco02johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 882 et p. 954",
+                "notes": "Londres, Hutchinson. Lu dans l'exemplaire numérisé de l'université de Toronto le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -14,6 +14,177 @@
   "spellingAliases": [],
   "familyId": "FLG_BANTU",
   "peoples": [],
+  "nameHistory": {
+    "summary": "Le nom swahili du Congo désigne le swahili parlé dans l'est de la République démocratique du Congo, une forme du swahili de la côte de l'océan Indien. Une de ses variétés porte un nom à elle, kingwana : on y retrouve le nom des Ngwana, précédé du préfixe ki-, comme dans kiswahili. Les sources que nous avons lues n'expliquent pas l'origine du nom Ngwana.",
+    "names": [
+      {
+        "nameText": "Swahili du Congo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom savant du swahili parlé dans l'est du Congo.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2006,
+              "to": null,
+              "label": "Depuis 2006"
+            },
+            "era": "modern",
+            "statement": "Le swahili est l'une des quatre langues nationales de la République démocratique du Congo, avec le kikongo, le lingala et le tshiluba, selon l'article 1 de sa Constitution.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution de la République démocratique du Congo, 18 février 2006, article 1",
+                "author": "République démocratique du Congo",
+                "year": 2006,
+                "url": "https://mjp.univ-perp.fr/constit/cd2006.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 1",
+                "notes": "Texte lu sur la Digithèque de la Faculté de droit de Perpignan le 11 octobre 2026. L'article 1 fixe le français comme langue officielle et le kikongo, le lingala, le swahili et le tshiluba comme langues nationales."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom swahili du Congo, en anglais Congo Swahili, est celui que le catalogue Glottolog donne à cette langue, à côté du swahili de la côte. Il reprend le nom swahili, dont l'histoire est racontée sur la fiche de cette langue.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog — Congo Swahili (cong1236)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/cong1236",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche lue le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kingwana",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'une variété du swahili du Congo : « la langue des Ngwana ».",
+        "periodLabel": "Écrit dès 1928",
+        "accounts": [
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "1986"
+            },
+            "era": "modern",
+            "statement": "Le nom kingwana figure dans le titre d'une étude du linguiste Didier L. Goyvaerts sur l'histoire de « la naissance et de la diffusion du kingwana », d'après le catalogue Glottolog.",
+            "sources": [
+              {
+                "title": "Glottolog, notice bibliographique 35790",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/reference/id/35790",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice lue le 11 octobre 2026 : Didier L. Goyvaerts, « Le contexte historique de la naissance et de la diffusion du kingwana », dans Language and History in Central Africa, Anvers, 1986, p. 115-119. Nous n'avons pas lu l'ouvrage lui-même."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1949,
+              "to": 1949,
+              "label": "1949"
+            },
+            "era": "colonial",
+            "statement": "Le nom kingwana est écrit Ki-Ngwana par Baudouin Lecoste, qui sépare le préfixe ki- du nom Ngwana, d'après le catalogue Glottolog. Le même auteur écrit en 1955 sur « le système de parenté des Ngwana », un nom de groupe humain.",
+            "sources": [
+              {
+                "title": "Glottolog, notice bibliographique 20671",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/reference/id/20671",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice lue le 11 octobre 2026 : Baudouin Lecoste, « La parenté terminologie en Ki-Ngwana », Bulletin des juridictions indigènes et du droit coutumier congolais, 17 (4), 1949. Nous n'avons pas lu l'ouvrage lui-même."
+              },
+              {
+                "title": "Glottolog, notice bibliographique 136182",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/reference/id/136182",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice lue le 11 octobre 2026 : Baudouin Lecoste, « Le système de parenté des Ngwana », Zaïre, revue congolaise, 9, 1955. Nous n'avons pas lu l'ouvrage lui-même."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "1928"
+            },
+            "era": "colonial",
+            "statement": "Le nom kingwana figure dans le titre d'un manuel publié en 1928 par John et L. F. Whitehead à la mission de Wayika, sur le Lualaba, au Congo belge, qui le présente comme « le dialecte occidental de swahili », d'après le catalogue Glottolog. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Glottolog, notice bibliographique 107455",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/reference/id/107455",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice lue le 11 octobre 2026 : John et L. F. Whitehead, Manuel de kingwana, le dialecte occidental de swahili, Wayika, mission de Wayika sur le Lualaba, Congo belge, 1928. Nous n'avons pas lu l'ouvrage lui-même."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ngwana",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un groupe humain et de sa variété de swahili, dans l'est du Congo.",
+        "periodLabel": "Écrit dès 1949",
+        "accounts": [
+          {
+            "period": {
+              "from": 1954,
+              "to": 1954,
+              "label": "1954"
+            },
+            "era": "colonial",
+            "statement": "Le nom ngwana désigne une variété du swahili dans le titre d'un article de Baudouin Lecoste, « Le Ngwana, variété du swahili », d'après le catalogue Glottolog. Nous n'avons pas trouvé de source qui explique l'origine de ce nom.",
+            "sources": [
+              {
+                "title": "Glottolog, notice bibliographique 61479",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/reference/id/61479",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice lue le 11 octobre 2026 : Baudouin Lecoste, « Le Ngwana, variété du swahili », Kongo-Overzee, 20, 1954, p. 391-408. Nous n'avons pas lu l'ouvrage lui-même."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": "regional_lingua_franca",
     "dialects": [],

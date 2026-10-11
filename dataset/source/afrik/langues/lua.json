@@ -27,6 +27,188 @@
       "peopleId": "PPL_LULUA"
     }
   ],
+  "nameHistory": {
+    "summary": "Le nom tshiluba, ou ciluba, désigne la langue des Luba du Kasaï et des Lulua, au centre de la République démocratique du Congo, et c'est le nom que ses locuteurs lui donnent. On y retrouve le nom des Luba, précédé d'un préfixe, comme dans kiluba au Katanga. Les linguistes l'appellent aussi luba-lulua, d'après un nom donné par un missionnaire en 1906. Les sources que nous avons lues n'expliquent pas l'origine du nom Luba lui-même.",
+    "names": [
+      {
+        "nameText": "Tshiluba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lua",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue en tshiluba même, formé sur le nom des Luba.",
+        "periodLabel": "Écrit dès 1906 sous la forme Ciluba ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2006,
+              "to": null,
+              "label": "Depuis 2006"
+            },
+            "era": "modern",
+            "statement": "Le tshiluba est l'une des quatre langues nationales de la République démocratique du Congo, avec le kikongo, le lingala et le swahili, selon l'article 1 de sa Constitution.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution de la République démocratique du Congo, 18 février 2006, article 1",
+                "author": "République démocratique du Congo",
+                "year": 2006,
+                "url": "https://mjp.univ-perp.fr/constit/cd2006.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 1",
+                "notes": "Texte lu sur la Digithèque de la Faculté de droit de Perpignan le 11 octobre 2026. L'article 1 fixe le français comme langue officielle et le kikongo, le lingala, le swahili et le tshiluba comme langues nationales."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par les auteurs"
+            },
+            "statement": "Le nom tshiluba est formé sur le nom des Luba, précédé d'un préfixe. En 1906, William M. Morrison écrit qu'on forme le nom d'une langue avec un préfixe, comme Buluba, « la langue des Baluba ». En 1908, au Katanga, J.-M. Jenniges note que ki- se prononce tshi- quand on va vers le nord : on dit tshi-tanda pour ki-tanda. Nous n'avons pas trouvé de source qui explique l'origine du nom Luba lui-même.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Grammar and Dictionary of the Buluba-Lulua Language as spoken in the Upper Kasai and Congo Basin",
+                "author": "William M. Morrison",
+                "year": 1906,
+                "url": "https://archive.org/details/grammaranddicti01missgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 16",
+                "notes": "New York, American Tract Society, 1906, pour la mission presbytérienne américaine de Luebo. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              },
+              {
+                "title": "Traité de kiluba-sanga, tel qu'il est parlé au secteur du Haut-Luapula (Katanga) et régions limitrophes",
+                "author": "J.-M. Jenniges",
+                "year": 1908,
+                "url": "https://archive.org/details/traitdekilubas00jennuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "page de titre et prolégomènes, § 1, alphabet",
+                "notes": "Publication de l'État indépendant du Congo, 1908. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom tshiluba apparaît sous la forme Ciluba dans la préface du missionnaire américain William M. Morrison : la langue des Baluba et des Lulua s'étend, écrit-il, jusqu'au Garenganze, « où la langue s'appelle Ciluba ». C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "formAsWritten": "Ciluba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Grammar and Dictionary of the Buluba-Lulua Language as spoken in the Upper Kasai and Congo Basin",
+                "author": "William M. Morrison",
+                "year": 1906,
+                "url": "https://archive.org/details/grammaranddicti01missgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. v",
+                "notes": "New York, American Tract Society, 1906, pour la mission presbytérienne américaine de Luebo. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Luba-Lulua",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Le missionnaire William M. Morrison, d'après les noms de deux peuples",
+        "shortLine": "Le nom savant de la langue, tiré du nom de deux peuples par un missionnaire en 1906.",
+        "periodLabel": "Depuis 1906",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom luba-lulua est celui que le catalogue Glottolog donne à cette langue, pour la distinguer du luba-katanga, le kiluba.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog — Luba-Lulua (luba1249)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/luba1249",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche lue le 11 octobre 2026."
+              },
+              {
+                "title": "Glottolog — Luba-Katanga (luba1250)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/luba1250",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom luba-lulua apparaît sous la forme Buluba-Lulua chez William M. Morrison, de la mission presbytérienne américaine de Luebo. Les Baluba et les Lulua, écrit-il, parlent la même langue avec de légères différences, et il les réunit « sous le seul nom de Buluba-Lulua ». C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "William M. Morrison",
+                "role": "missionnaire presbytérien américain à Luebo, auteur de la grammaire"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Grammar and Dictionary of the Buluba-Lulua Language as spoken in the Upper Kasai and Congo Basin",
+                "author": "William M. Morrison",
+                "year": 1906,
+                "url": "https://archive.org/details/grammaranddicti01missgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "page de titre et p. vi",
+                "notes": "New York, American Tract Society, 1906, pour la mission presbytérienne américaine de Luebo. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom luba-lulua réunit deux noms que, selon William M. Morrison, ces peuples ne se donnaient pas eux-mêmes à l'origine : Baluba et Lulua leur auraient été donnés de l'extérieur, et entre eux les gens se nommaient par leur clan, comme Bakua Kaloshi ou Bakua Temba.",
+            "sources": [
+              {
+                "title": "Grammar and Dictionary of the Buluba-Lulua Language as spoken in the Upper Kasai and Congo Basin",
+                "author": "William M. Morrison",
+                "year": 1906,
+                "url": "https://archive.org/details/grammaranddicti01missgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. vi",
+                "notes": "New York, American Tract Society, 1906, pour la mission presbytérienne américaine de Luebo. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": "regional_lingua_franca",
     "dialects": [],

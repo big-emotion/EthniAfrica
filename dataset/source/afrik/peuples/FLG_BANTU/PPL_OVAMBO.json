@@ -3,6 +3,292 @@
   "nameMain": "Ovambo",
   "languageFamilyId": "FLG_BANTU",
   "currentCountries": ["NAM", "AGO"],
+  "nameHistory": {
+    "summary": "Le nom Ovambo désigne l'ensemble des groupes du nord de la Namibie et du sud de l'Angola, comme les Ndonga et les Kwanyama, qui se nomment eux-mêmes Aawambo, ou Ovawambo en kwanyama. D'autres formes existent, comme Owambo, Ovampo ou Ambo. Les sources ne s'accordent pas sur l'origine du nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Aawambo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ndo",
+        "namedBy": null,
+        "shortLine": "Le nom que ces groupes se donnent ; Omuwambo au singulier.",
+        "usedIn": ["ndo", "kua"],
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": 2024,
+              "label": "Recensement de 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Aawambo figure dans le recensement namibien de 2023, où chacun a donné son groupe : 42 736 personnes s'y déclarent Aawambo sans autre précision, à côté de groupes comme les Aandonga ou les Aakwanyama.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Namibia 2023 Population and Housing Census, Main Report, annexe IV « Population distribution by ethnic groups and sex »",
+                "author": "Agence namibienne de statistique",
+                "year": 2024,
+                "url": "https://nsa.org.na/wp-content/uploads/2024/10/2023-Population-and-Housing-Census-Main-Report-28-Oct-2024.pdf",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "notes": "Rapport d'octobre 2024, lu le 11 octobre 2026. Le recensement a demandé à chaque personne son groupe.",
+                "page": "p. 90"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Aawambo a pour pendant, pour la langue, la forme oshiwambo. Le catalogue Glottolog relève aussi Owambo, Ambo et Otjiwambo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog — Ndonga",
+                "author": "Glottolog",
+                "year": 2026,
+                "url": "https://glottolog.org/resource/languoid/id/ndon1254",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Consulté le 11 octobre 2026. Les autres noms de la langue y sont repris d'autres catalogues : Ambo, Ochindonga, Oshindonga, Otjiwambo, Owambo, Oshiwambo."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ovambo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom collectif employé par les Herero, puis par les Européens ; son origine reste discutée.",
+        "periodLabel": "Écrit dès 1853 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par les auteurs"
+            },
+            "statement": "Le nom Ovambo désigne un ensemble de groupes du nord de la Namibie et du sud de l'Angola, comme les Ndonga ou les Kwanyama. Son origine est discutée : les sources proposent plusieurs explications, présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Deutsch-Südwest-Afrika. Forschungsreisen durch die deutschen Schutzgebiete Gross-Nama- und Hereroland, nach dem Kunene, dem Ngami-See und der Kalaxari, 1884-1887",
+                "author": "Hans Schinz",
+                "year": 1891,
+                "url": "https://archive.org/details/deutschsdwesta00schi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Oldenburg et Leipzig, 1891. Lu dans la numérisation d'Internet Archive. Schinz séjourne en Ondonga en 1885-1886.",
+                "page": "p. 271-272"
+              },
+              {
+                "title": "Ovamboland. Versuch einer landeskundlichen Darstellung nach dem gegenwärtigen Stand unserer geographischen Kenntnis",
+                "author": "Georg Nitsche",
+                "year": 1913,
+                "url": "https://archive.org/details/ovambolandversuc00nits",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Thèse de doctorat, université de Kiel, imprimée chez Chr. Donath, 1913. Lu dans la numérisation d'Internet Archive.",
+                "page": "p. 118"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1891,
+              "to": 1891,
+              "label": "1891"
+            },
+            "era": "polity",
+            "statement": "Le nom Ovambo, écrit aussi Owambo ou Ovampo, sert alors de nom collectif pour les groupes qui vivent entre le Kunene, l'Okavango et le 19e parallèle, selon Hans Schinz. Il juge ce nom arbitraire et assez récent, et note qu'on le réserve parfois, à tort selon lui, aux seuls Ndonga.",
+            "sources": [
+              {
+                "title": "Deutsch-Südwest-Afrika. Forschungsreisen durch die deutschen Schutzgebiete Gross-Nama- und Hereroland, nach dem Kunene, dem Ngami-See und der Kalaxari, 1884-1887",
+                "author": "Hans Schinz",
+                "year": 1891,
+                "url": "https://archive.org/details/deutschsdwesta00schi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Oldenburg et Leipzig, 1891. Lu dans la numérisation d'Internet Archive. Schinz séjourne en Ondonga en 1885-1886.",
+                "page": "p. 271-272"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Ovambo s'écrit ainsi chez le voyageur Charles John Andersson, compagnon de Galton, qui parle d'« une nation appelée Ovambo » commerçant avec les Damara.",
+            "sources": [
+              {
+                "title": "Lake Ngami; or, Explorations and Discoveries during Four Years' Wanderings in the Wilds of South Western Africa",
+                "author": "Charles John Andersson",
+                "year": 1856,
+                "url": "https://archive.org/details/lakengamiorexplo00ande",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Lu dans la numérisation d'Internet Archive. Andersson accompagne Galton en 1851.",
+                "page": "p. 165"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1851,
+              "to": 1853,
+              "label": "1851, publié en 1853"
+            },
+            "era": "polity",
+            "statement": "Le nom Ovambo est donné par les Damara à tous les peuples qui vivent le long du grand fleuve du nord, selon Francis Galton.",
+            "sources": [
+              {
+                "title": "The Narrative of an Explorer in Tropical South Africa",
+                "author": "Francis Galton",
+                "year": 1853,
+                "url": "https://archive.org/details/cu31924090788526",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, John Murray, 1853. Lu dans la numérisation d'Internet Archive. Galton parcourt le pays des Damara en 1851 ; le récit porte le regard d'un voyageur européen de son temps.",
+                "page": "p. 218"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1851,
+              "to": 1853,
+              "label": "1851, publié en 1853"
+            },
+            "era": "polity",
+            "statement": "Le nom Ovambo a une forme proche, Ovampo, chez l'explorateur anglais Francis Galton, qui entend parler en 1851, chez les Damara, d'« une nation appelée les Ovampo », un peuple d'agriculteurs du nord. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "the Ovampo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Narrative of an Explorer in Tropical South Africa",
+                "author": "Francis Galton",
+                "year": 1853,
+                "url": "https://archive.org/details/cu31924090788526",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, John Murray, 1853. Lu dans la numérisation d'Internet Archive. Galton parcourt le pays des Damara en 1851 ; le récit porte le regard d'un voyageur européen de son temps.",
+                "page": "p. 86"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1891,
+              "to": 1891,
+              "label": "Rapportée en 1891"
+            },
+            "era": "polity",
+            "statement": "Le nom Ovambo viendrait de Ova-mbo, « ceux de là-bas », selon une première idée du missionnaire Hugo Hahn, qu'il a ensuite abandonnée, d'après Hans Schinz.",
+            "hypothesisGroup": "origine du nom Ovambo",
+            "sources": [
+              {
+                "title": "Deutsch-Südwest-Afrika. Forschungsreisen durch die deutschen Schutzgebiete Gross-Nama- und Hereroland, nach dem Kunene, dem Ngami-See und der Kalaxari, 1884-1887",
+                "author": "Hans Schinz",
+                "year": 1891,
+                "url": "https://archive.org/details/deutschsdwesta00schi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Oldenburg et Leipzig, 1891. Lu dans la numérisation d'Internet Archive. Schinz séjourne en Ondonga en 1885-1886.",
+                "page": "p. 271"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1891,
+              "to": 1891,
+              "label": "Rapportée en 1891"
+            },
+            "era": "polity",
+            "statement": "Le nom Ovambo viendrait du mot egumbo, « l'enclos d'habitation » : ce seraient « les gens des enclos », par opposition aux San qui vivaient dans des huttes, selon une seconde idée du missionnaire Hugo Hahn, que rapporte Hans Schinz.",
+            "hypothesisGroup": "origine du nom Ovambo",
+            "sources": [
+              {
+                "title": "Deutsch-Südwest-Afrika. Forschungsreisen durch die deutschen Schutzgebiete Gross-Nama- und Hereroland, nach dem Kunene, dem Ngami-See und der Kalaxari, 1884-1887",
+                "author": "Hans Schinz",
+                "year": 1891,
+                "url": "https://archive.org/details/deutschsdwesta00schi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Oldenburg et Leipzig, 1891. Lu dans la numérisation d'Internet Archive. Schinz séjourne en Ondonga en 1885-1886.",
+                "page": "p. 271-272"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1891,
+              "to": 1891,
+              "label": "Proposée en 1891"
+            },
+            "era": "polity",
+            "statement": "Le nom Ovambo serait une forme herero d'Ovajamba ou Aajamba, « les riches », le nom que ces groupes se donneraient face aux Herero, qu'ils traiteraient de pauvres, selon le naturaliste Hans Schinz.",
+            "hypothesisGroup": "origine du nom Ovambo",
+            "sources": [
+              {
+                "title": "Deutsch-Südwest-Afrika. Forschungsreisen durch die deutschen Schutzgebiete Gross-Nama- und Hereroland, nach dem Kunene, dem Ngami-See und der Kalaxari, 1884-1887",
+                "author": "Hans Schinz",
+                "year": 1891,
+                "url": "https://archive.org/details/deutschsdwesta00schi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Oldenburg et Leipzig, 1891. Lu dans la numérisation d'Internet Archive. Schinz séjourne en Ondonga en 1885-1886.",
+                "page": "p. 272"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1894,
+              "to": 1894,
+              "label": "Proposée en 1894"
+            },
+            "era": "polity",
+            "statement": "Le nom Ovambo viendrait de l'umbundu, en Angola, où omwambo désigne une poignée de poignard en cuivre en forme de croix, que les Ndonga savaient fabriquer ; les Herero auraient rapporté ce nom d'Angola, selon le missionnaire Peter Heinrich Brincker. Georg Nitsche juge en 1913 cette explication plus crédible que celle de Schinz, sans en être convaincu.",
+            "hypothesisGroup": "origine du nom Ovambo",
+            "sources": [
+              {
+                "title": "Zur etymologischen Deutung des Namens « Ov-ambo », Globus, LXVI",
+                "author": "Peter Heinrich Brincker",
+                "year": 1894,
+                "url": "https://archive.org/details/globusillustrier6566unse",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Revue Globus, 1894. Lu dans la numérisation d'Internet Archive. L'auteur signe « missionnaire à la retraite », à Stellenbosch.",
+                "page": "p. 207-208"
+              },
+              {
+                "title": "Ovamboland. Versuch einer landeskundlichen Darstellung nach dem gegenwärtigen Stand unserer geographischen Kenntnis",
+                "author": "Georg Nitsche",
+                "year": 1913,
+                "url": "https://archive.org/details/ovambolandversuc00nits",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Thèse de doctorat, université de Kiel, imprimée chez Chr. Donath, 1913. Lu dans la numérisation d'Internet Archive.",
+                "page": "p. 118"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Ovambo",

@@ -13,7 +13,382 @@
   "whyProblematic": null,
   "spellingAliases": [],
   "familyId": "FLG_BENOUECONGO",
-  "peoples": [{ "name": "Yoruba", "peopleId": "PPL_YORUBA" }],
+  "peoples": [
+    {
+      "name": "Yoruba",
+      "peopleId": "PPL_YORUBA"
+    }
+  ],
+  "nameHistory": {
+    "summary": "Le nom yoruba désigne une langue du sud-ouest du Nigeria, parlée aussi au Bénin et au Togo, et que ses locuteurs appellent eux aussi yoruba. Ce nom a d'abord désigné le peuple d'Oyo, avant de nommer toute la langue. D'autres noms existent : Aku en Sierra Leone, Nago au Bénin, Yariba chez des voyageurs du XIXe siècle. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Yoruba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la langue et de ses locuteurs, écrit dès 1615 ; son origine est discutée.",
+        "periodLabel": "Écrit dès 1615 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1999,
+              "to": null,
+              "label": "Depuis 1999"
+            },
+            "era": "modern",
+            "statement": "Le yoruba est l'une des trois langues, avec le haoussa et l'igbo, dans lesquelles l'Assemblée nationale du Nigeria peut travailler à côté de l'anglais, selon la section 55 de la Constitution.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution of the Federal Republic of Nigeria, 1999 (révisée en 2011), section 55",
+                "author": "République fédérale du Nigeria",
+                "year": 1999,
+                "url": "https://www.constituteproject.org/constitution/Nigeria_2011",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section 55",
+                "notes": "Texte lu sur Constitute Project le 11 octobre 2026. La section 55 prévoit que l'Assemblée nationale travaille en anglais, et en haoussa, en igbo et en yoruba quand les dispositions nécessaires auront été prises."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par les auteurs"
+            },
+            "statement": "Le nom yoruba désigne aujourd'hui toute une langue et tous ceux qui la parlent. Il a d'abord désigné le seul peuple d'Oyo : Samuel Johnson parle encore des « Oyos ou Yorubas proprement dits ». Son origine est discutée ; nous présentons plus bas les explications des auteurs.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The History of the Yorubas, from the Earliest Times to the Beginning of the British Protectorate",
+                "author": "Samuel Johnson, pasteur d'Oyo",
+                "year": 1921,
+                "url": "https://archive.org/details/historyofyorubas00john",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 21",
+                "notes": "Lagos, C.M.S. (Nigeria) Bookshops, 1921, édité par O. Johnson. Lu dans une réimpression numérisée par Internet Archive le 11 octobre 2026."
+              },
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous chacun des parlers aku, dont le yoruba."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom yoruba est employé depuis peu par les missionnaires pour toute la nation, écrit Sigismund Koelle, qui le refuse : ce nom ne désigne qu'un des peuples de la langue. Un Ijebu ou un Yagba, ajoute-t-il, répond : « Ne m'appelle pas ainsi, je ne suis pas Yoruba. »",
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous chacun des parlers aku, dont le yoruba."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1852,
+              "to": 1852,
+              "label": "1852"
+            },
+            "era": "polity",
+            "statement": "Le nom yoruba figure dans le titre du vocabulaire publié à Londres par Samuel Crowther, un missionnaire libéré d'un navire négrier et formé en Sierra Leone. L'avertissement du livre dit que cette langue n'était pas écrite avant les dix dernières années.",
+            "actors": [
+              {
+                "name": "Samuel Crowther",
+                "role": "auteur du vocabulaire, missionnaire de la Church Missionary Society"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Vocabulary of the Yoruba Language",
+                "author": "Samuel Crowther, avec des remarques d'O. E. Vidal",
+                "year": 1852,
+                "url": "https://archive.org/details/vocabularyofyoru00crow",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre et avertissement, p. iii-iv",
+                "notes": "Londres, Seeleys, 1852. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1615,
+              "to": 1615,
+              "label": "1615"
+            },
+            "era": "polity",
+            "statement": "Le nom yoruba apparaît par écrit, sous la forme Yawruba, dans le Mi'rāj al-ṣu'ūd du savant de Tombouctou Aḥmad Bābā. Les Yoruba y figurent parmi les peuples d'Afrique de l'Ouest qu'on pouvait réduire en esclavage s'ils n'étaient pas musulmans, selon Amidu Olalekan Sanni. C'est la plus ancienne trace de ce nom que le projet connaît. Il y nomme un peuple ; sa langue existait déjà avant lui.",
+            "formAsWritten": "Yawruba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Compte rendu de History of Yorubaland, traduction abrégée de Azhār ar-Rubā fī akhbār Bilād Yawrubā",
+                "author": "Amidu Olalekan Sanni",
+                "year": 2023,
+                "url": "https://sites.duke.edu/researchafrica/files/2023/09/3-7-History-of-Yoruba-Land-2-2023.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17 et note 2",
+                "notes": "Research Africa Reviews, vol. 7, n° 2, août 2023, lu en texte intégral le 11 octobre 2026. L'auteur renvoie à l'édition du Mi'rāj al-ṣu'ūd par John O. Hunwick et Fatima Harrak, que nous n'avons pas lue."
+              },
+              {
+                "title": "Hausa-Yoruba Relations 1500-1800: A Historical Perspective",
+                "author": "Rasheed O. Olaniyi",
+                "year": 2007,
+                "url": "https://repository.ui.edu.ng/items/40cdd656-d261-42ff-9e2e-44d8aef5a62a/full",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 60 et p. 64",
+                "notes": "Journal of Social Sciences, vol. 2, n° 2, août 2007, Government College University, Faisalabad. Lu en texte intégral dans le dépôt de la bibliothèque de l'université d'Ibadan le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Proposée en 1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom yoruba viendrait de Yarba, le nom que le sultan Muhammad Bello donne à leur premier établissement en Afrique, selon Samuel Johnson. Yarba serait la même chose que Yarriba, le nom haoussa des Yoruba.",
+            "hypothesisGroup": "origine du nom yoruba",
+            "sources": [
+              {
+                "title": "The History of the Yorubas, from the Earliest Times to the Beginning of the British Protectorate",
+                "author": "Samuel Johnson, pasteur d'Oyo",
+                "year": 1921,
+                "url": "https://archive.org/details/historyofyorubas00john",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5-6",
+                "notes": "Lagos, C.M.S. (Nigeria) Bookshops, 1921, édité par O. Johnson. Lu dans une réimpression numérisée par Internet Archive le 11 octobre 2026. L'auteur y recopie l'extrait d'un ouvrage du sultan Muhammad Bello que le capitaine Clapperton avait traduit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2007,
+              "to": 2007,
+              "label": "Proposée en 2007"
+            },
+            "era": "modern",
+            "statement": "Le nom yoruba serait celui que se donnaient les gens d'Oyo-Ile, qui parlaient cette langue, selon Rasheed O. Olaniyi. Rien ne montre, écrit-il, que les Haoussa l'aient d'abord employé pour les désigner.",
+            "hypothesisGroup": "origine du nom yoruba",
+            "sources": [
+              {
+                "title": "Hausa-Yoruba Relations 1500-1800: A Historical Perspective",
+                "author": "Rasheed O. Olaniyi",
+                "year": 2007,
+                "url": "https://repository.ui.edu.ng/items/40cdd656-d261-42ff-9e2e-44d8aef5a62a/full",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 58 et p. 60",
+                "notes": "Journal of Social Sciences, vol. 2, n° 2, août 2007, Government College University, Faisalabad. Lu en texte intégral dans le dépôt de la bibliothèque de l'université d'Ibadan le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Yariba",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "hau",
+        "namedBy": "Des voyageurs européens, d'après leurs informateurs haoussa",
+        "shortLine": "La forme haoussa du nom, que reprennent les voyageurs européens des années 1820-1830.",
+        "periodLabel": "Années 1820-1830",
+        "accounts": [
+          {
+            "period": {
+              "from": 1820,
+              "to": 1839,
+              "label": "Années 1820 et 1830"
+            },
+            "era": "polity",
+            "statement": "Le nom Yariba, ou Yarriba et Yauriba, est celui que des voyageurs européens, comme les frères Lander, donnent aux Yoruba. Ils s'appuient sur des informateurs haoussa, selon Rasheed O. Olaniyi.",
+            "sources": [
+              {
+                "title": "Hausa-Yoruba Relations 1500-1800: A Historical Perspective",
+                "author": "Rasheed O. Olaniyi",
+                "year": 2007,
+                "url": "https://repository.ui.edu.ng/items/40cdd656-d261-42ff-9e2e-44d8aef5a62a/full",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 65",
+                "notes": "Journal of Social Sciences, vol. 2, n° 2, août 2007, Government College University, Faisalabad. Lu en texte intégral dans le dépôt de la bibliothèque de l'université d'Ibadan le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Yarriba est le nom haoussa des Yoruba, écrit Samuel Johnson.",
+            "sources": [
+              {
+                "title": "The History of the Yorubas, from the Earliest Times to the Beginning of the British Protectorate",
+                "author": "Samuel Johnson, pasteur d'Oyo",
+                "year": 1921,
+                "url": "https://archive.org/details/historyofyorubas00john",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5-6",
+                "notes": "Lagos, C.M.S. (Nigeria) Bookshops, 1921, édité par O. Johnson. Lu dans une réimpression numérisée par Internet Archive le 11 octobre 2026. L'auteur y recopie l'extrait d'un ouvrage du sultan Muhammad Bello que le capitaine Clapperton avait traduit."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Aku",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "yor",
+        "namedBy": "Les Africains libérés de Sierra Leone et les Européens de Freetown",
+        "shortLine": "Le nom donné aux locuteurs du yoruba en Sierra Leone, au XIXe siècle.",
+        "periodLabel": "XIXe siècle, en Sierra Leone",
+        "accounts": [
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "colonial",
+            "statement": "Le nom Aku désigne en Sierra Leone tous les peuples de langue yoruba, chez les Européens mais surtout chez les Africains eux-mêmes, selon Sigismund Koelle. Il le garde faute de mieux, tout en disant que ce n'est pas le nom historique de cette nation. C'est la plus ancienne trace de ce nom que le projet connaît ; la langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous chacun des parlers aku, dont le yoruba."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "Proposée en 1854"
+            },
+            "era": "colonial",
+            "statement": "Le nom Aku viendrait de « ọku », une salutation commune à tous ces peuples, selon Sigismund Koelle.",
+            "hypothesisGroup": "origine du nom Aku",
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous chacun des parlers aku, dont le yoruba."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nago",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom donné aux Yoruba au Bénin et dans les écrits français, et au Brésil.",
+        "periodLabel": "En usage au Bénin et au Brésil",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom nago désigne le pays et la culture yoruba dans les écrits des ethnographes français, selon A. I. Asiwaju. Il cite aussi les Anago parmi les groupes yoruba installés de part et d'autre de la frontière entre le Nigeria et le Bénin.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 26 : Dahomey, pays yoruba, Borgu (Borgou) et Bénin au XIXe siècle",
+                "author": "A. I. Asiwaju",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 746",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé du volume le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1910,
+              "label": "Début du XXe siècle"
+            },
+            "statement": "Le nom nagô désigne au Brésil des commerçants venus de Lagos, qui parlent yoruba et anglais, selon Franklin W. Knight.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 28 : La diaspora africaine",
+                "author": "Franklin W. Knight, avec des contributions de Yusuf Talib et de Philip D. Curtin",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 813",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé du volume le 11 octobre 2026. L'auteur cite Nina Rodrigues, que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Date inconnue"
+            },
+            "statement": "Le nom Nago n'a pas, dans les sources que nous avons lues, de première trace datée : on ne sait pas avec certitude quand il est apparu par écrit, ni d'où il vient.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 26 : Dahomey, pays yoruba, Borgu (Borgou) et Bénin au XIXe siècle",
+                "author": "A. I. Asiwaju",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 746",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé du volume le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": "regional_lingua_franca",
     "dialects": ["Ọ̀yọ́", "Ìjẹ̀bú", "Ẹ̀gbá", "Èkìtì", "Ifẹ̀"],

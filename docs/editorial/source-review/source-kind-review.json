@@ -1505,14 +1505,13 @@
           "title": "Christaller, Johann Gottlieb (1879) – Twi Mmebusem, oder, Die Sprichwörter der Ashanti- und Fante-Sprache / A Collection of 3600 Ghanaian Proverbs. Basel Mission",
           "url": null,
           "fiches": [
-            "peuples/FLG_KWA/PPL_ABRON.json",
+            "peuples/FLG_KWA/PPL_BONO.json",
             "peuples/FLG_KWA/PPL_AKAN.json",
             "peuples/FLG_KWA/PPL_AKUAPEM.json",
             "peuples/FLG_KWA/PPL_AKYEM.json",
             "peuples/FLG_KWA/PPL_AOWIN.json",
             "peuples/FLG_KWA/PPL_ASANTE.json",
             "peuples/FLG_KWA/PPL_ASSIN.json",
-            "peuples/FLG_KWA/PPL_BONO.json",
             "peuples/FLG_KWA/PPL_SEFWI.json",
             "peuples/FLG_KWA/PPL_TWIFO.json",
             "peuples/FLG_KWA/PPL_WASSA.json"
@@ -1639,10 +1638,7 @@
         {
           "title": "British and Foreign Bible Society — Ronga Bible (1923)",
           "url": null,
-          "fiches": [
-            "peuples/FLG_NIGERCONGO/PPL_RONGA.json",
-            "peuples/FLG_NIGERCONGO/PPL_RONGA_MOZ.json"
-          ]
+          "fiches": ["peuples/FLG_NIGERCONGO/PPL_RONGA.json"]
         },
         {
           "title": "Junod, Henri-Alexandre — The Life of a South African Tribe (2 volumes, 1912-1913, re-edition 1927)",
@@ -1658,11 +1654,6 @@
           "title": "Rhodian G. Munyenyembe, Christianity and African Traditional Religion, 2011 (sur la Buku Lopatulika utilisée par les Sena)",
           "url": null,
           "fiches": ["peuples/FLG_NIGERCONGO/PPL_SENA.json"]
-        },
-        {
-          "title": "Rhodian G. Munyenyembe, Christianity and African Traditional Religion, 2011",
-          "url": null,
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_SENA_MOZ.json"]
         },
         {
           "title": "Mofolo, Thomas. Chaka. Morija Sesuto Book Depot, 1925",
@@ -1998,12 +1989,12 @@
         {
           "title": "Dan Tribe – Gateway Africa Safaris",
           "url": "https://www.gateway-africa.com/tribe/dan_tribe.html",
-          "fiches": ["peuples/FLG_MANDE/PPL_GIO.json"]
+          "fiches": ["peuples/FLG_MANDE/PPL_DAN.json"]
         },
         {
           "title": "Gateway Africa Safaris – Luvale Tribe",
           "url": "https://www.gateway-africa.com/tribe/luvale_tribe.html",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_LWENA.json"]
+          "fiches": ["peuples/FLG_BANTU/PPL_LUVALE.json"]
         },
         {
           "title": "Gateway Africa Safaris — Tabwa Tribe",
@@ -2198,7 +2189,7 @@
         {
           "title": "Overview of Dawuro Zone, Ethiopia – Scribd, 2025",
           "url": "https://www.scribd.com/document/809814043/chapter1-4",
-          "fiches": ["peuples/FLG_COUCHITIQUE/PPL_KULLO.json"]
+          "fiches": ["peuples/FLG_OMOTIQUE/PPL_DAWRO.json"]
         },
         {
           "title": "Scribd – INTRODUCTION Dida",
@@ -2213,7 +2204,7 @@
         {
           "title": "Scribd — Introduction Lunda Tshokwe (traduction)",
           "url": "https://www.scribd.com/document/912218309/INTRODUCTION-LUNDA-TSHOKWE",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_LUNDA_NORTE.json"]
+          "fiches": ["peuples/FLG_BANTU/PPL_LUNDA.json"]
         },
         {
           "title": "Scribd — Jos-Bauchi Plateau Peoples Overview",
@@ -2417,10 +2408,7 @@
         {
           "title": "Maputo Essential Tours — Ethnic Groups of Mozambique",
           "url": "https://www.maputoessentialtours.com/general-4",
-          "fiches": [
-            "peuples/FLG_NIGERCONGO/PPL_RONGA.json",
-            "peuples/FLG_NIGERCONGO/PPL_RONGA_MOZ.json"
-          ]
+          "fiches": ["peuples/FLG_NIGERCONGO/PPL_RONGA.json"]
         }
       ]
     },
@@ -2443,7 +2431,7 @@
         {
           "title": "WorldAtlas — What Languages Are Spoken In Mozambique",
           "url": "https://www.worldatlas.com/articles/what-languages-are-spoken-in-mozambique.html",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_TSWA_MOZ.json"]
+          "fiches": ["peuples/FLG_NIGERCONGO/PPL_TSWA.json"]
         },
         {
           "title": "WorldAtlas — Largest Ethnic Groups In Uganda",
@@ -2629,7 +2617,7 @@
         {
           "title": "TribeGuess — Bakongo (Congo-Brazzaville)",
           "url": "https://www.tribeguess.com/learn/bakongo",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_KONGO_BRAZZA.json"]
+          "fiches": ["peuples/FLG_BANTU/PPL_KONGO.json"]
         }
       ]
     },
@@ -2858,10 +2846,7 @@
         {
           "title": "African Blackwood Conservation Project — Makonde Art",
           "url": "https://www.blackwoodconservation.org/makonde-art/",
-          "fiches": [
-            "peuples/FLG_NIGERCONGO/PPL_MAKONDE_MOZ.json",
-            "peuples/FLG_NIGERCONGO/PPL_MAKONDE_TANZ.json"
-          ]
+          "fiches": ["peuples/FLG_BANTU/PPL_MAKONDE.json"]
         }
       ]
     },
@@ -2975,10 +2960,7 @@
         {
           "title": "DHCS Zimbabwe — Korekore People",
           "url": "https://dhcs.co.zw/korekore.php",
-          "fiches": [
-            "peuples/FLG_NIGERCONGO/PPL_KOREKORE.json",
-            "peuples/FLG_NIGERCONGO/PPL_KOREKORE_ZIM.json"
-          ]
+          "fiches": ["peuples/FLG_NIGERCONGO/PPL_KOREKORE.json"]
         }
       ]
     },
@@ -3676,11 +3658,6 @@
           "title": "Seed Gallery New York — Manyika",
           "url": "https://www.seedgallerynewyork.com/glossary/manyika",
           "fiches": ["peuples/FLG_NIGERCONGO/PPL_MANYIKA.json"]
-        },
-        {
-          "title": "Seed Gallery New York — Manyika glossary",
-          "url": "https://www.seedgallerynewyork.com/glossary/manyika",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_MANYIKA_ZIM.json"]
         }
       ]
     },
@@ -3730,11 +3707,6 @@
           "title": "The History of Kalanga People – TG Silundika Cultural Community Centre, 2025",
           "url": "https://tgsilundikaculturalcommunitycentre.org/the-history-of-kalanga-people/",
           "fiches": ["peuples/FLG_BANTU/PPL_KALANGA.json"]
-        },
-        {
-          "title": "Tgsilundika Cultural Community Centre — The History of Kalanga People",
-          "url": "https://tgsilundikaculturalcommunitycentre.org/the-history-of-kalanga-people/",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_TSWA_CALANGA.json"]
         }
       ]
     },
@@ -3873,10 +3845,7 @@
         {
           "title": "Zimbabwe Field Guide — Mutapa State",
           "url": "https://zimfieldguide.com/mashonaland-central/mutapa-mwenemutapa-monomotapa-state-its-heyday-c1480-%E2%80%93-c1623",
-          "fiches": [
-            "peuples/FLG_NIGERCONGO/PPL_KOREKORE.json",
-            "peuples/FLG_NIGERCONGO/PPL_KOREKORE_ZIM.json"
-          ]
+          "fiches": ["peuples/FLG_NIGERCONGO/PPL_KOREKORE.json"]
         }
       ]
     },
@@ -4695,7 +4664,7 @@
         {
           "title": "Amara Accessibility Media — Tedaga language now supported on Amara",
           "url": "https://blog.amara.org/2020/09/14/tedaga-language-now-supported-on-amara/",
-          "fiches": ["peuples/FLG_SAHARIEN/PPL_TEDA.json"]
+          "fiches": ["peuples/FLG_SAHARIEN/PPL_TOUBOU.json"]
         }
       ]
     },
@@ -4942,7 +4911,7 @@
         {
           "title": "CITE Zimbabwe — The Ndau people of Zimbabwe",
           "url": "https://cite.org.zw/the-ndau-people-of-zimbabwe/",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_NDAU_ZIM.json"]
+          "fiches": ["peuples/FLG_NIGERCONGO/PPL_NDAU.json"]
         }
       ]
     },
@@ -5085,7 +5054,7 @@
         {
           "title": "Conflict Sensitivity Resource Facility — Ezo County, Western Equatoria",
           "url": "https://csrf-southsudan.org/county_profile/ezo/",
-          "fiches": ["peuples/FLG_SOUDANIQUECENTRAL/PPL_AZANDE_SUD.json"]
+          "fiches": ["peuples/FLG_SOUDANIQUECENTRAL/PPL_ZANDE.json"]
         }
       ]
     },
@@ -7195,7 +7164,7 @@
         {
           "title": "Museu do Aljube — Mueda Plateau Meeting 1960",
           "url": "https://www.museudoaljube.pt/en/2023/06/17/mueda-plateau-meeting/",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_MAKONDE_MOZ.json"]
+          "fiches": ["peuples/FLG_BANTU/PPL_MAKONDE.json"]
         }
       ]
     },
@@ -8042,7 +8011,7 @@
         {
           "title": "Safaris Rwanda Safari — Cultural Heritage of the Makonde People",
           "url": "https://www.safarisrwandasafari.com/information/the-cultural-heritage-of-the-makonde-people/",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_MAKONDE_TANZ.json"]
+          "fiches": ["peuples/FLG_BANTU/PPL_MAKONDE.json"]
         }
       ]
     },
@@ -8094,7 +8063,7 @@
         {
           "title": "Santé Tropicale : Approche anthropologique en pays Akyé",
           "url": "https://www.santetropicale.com/Resume/14803.pdf",
-          "fiches": ["peuples/FLG_KWA/PPL_ATTIE.json"]
+          "fiches": ["peuples/FLG_KWA/PPL_AKYE.json"]
         }
       ]
     },
@@ -8341,7 +8310,7 @@
         {
           "title": "Spirit Land of Africa : Attié culture",
           "url": "https://spiritlandofafrica.com/products/list/attie/",
-          "fiches": ["peuples/FLG_KWA/PPL_ATTIE.json"]
+          "fiches": ["peuples/FLG_KWA/PPL_AKYE.json"]
         }
       ]
     },
@@ -8627,7 +8596,7 @@
         {
           "title": "Trading Economics — Republic of Congo Population 2025",
           "url": "https://tradingeconomics.com/republic-of-the-congo/population",
-          "fiches": ["peuples/FLG_NIGERCONGO/PPL_KONGO_BRAZZA.json"]
+          "fiches": ["peuples/FLG_BANTU/PPL_KONGO.json"]
         }
       ]
     },

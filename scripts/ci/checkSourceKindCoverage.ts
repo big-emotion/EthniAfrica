@@ -24,9 +24,12 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * same day: three untyped citations left with the duplicate people fiches
  * folded into their keepers. 1061 -> 1057 on 2026-10-11: four untyped citations
  * left with the fifteen duplicate people fiches folded that day, and a fifth,
- * African Voice, was typed as press when it moved to PPL_FULA.
+ * African Voice, was typed as press when it moved to PPL_FULA. 1056 -> 1047
+ * the same day: nine untyped citations left with the twenty-four duplicate
+ * people fiches of waves 4 and 5; the untyped ones carried into a keeper keep
+ * their count.
  */
-export const UNTYPED_SOURCE_RATCHET = 1056;
+export const UNTYPED_SOURCE_RATCHET = 1047;
 
 export interface UntypedSource {
   file: string;

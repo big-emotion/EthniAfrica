@@ -26,7 +26,121 @@
   "whyProblematic": "Tar Barma figure parmi les noms que Glottolog recense pour la langue. L'origine du nom « Bagirmi » n'est pas établie. Bagirmi désigne une société multiethnique organisée en État, dont les Barma formaient le groupe qui l'a fondé et dominé. Une tradition le fait venir de l'arabe bagar, « bétail », et mia, « cent », et y voit le tribut que les Arabes et les Peuls devaient à leur premier souverain (Reyna). Nous n'en connaissons pas d'autre dans les sources que nous avons lues, et celle-ci reste une tradition.",
   "spellingAliases": [],
   "familyId": "FLG_SOUDANIQUECENTRAL",
-  "peoples": [],
+  "peoples": [{ "name": "Barma", "peopleId": "PPL_BARMA" }],
+  "nameHistory": {
+    "summary": "Le nom bagirmi désigne une langue soudanique centrale du Tchad. C'est d'abord le nom d'un royaume ; ses locuteurs, les Barma, appellent leur langue tar Barma. On ne sait pas avec certitude d'où vient le nom Bagirmi ; nous présentons plus bas la seule explication que nous avons lue.",
+    "names": [
+      {
+        "nameText": "Tar Barma",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bmi",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue chez ses locuteurs, les Barma ; noté tar Bagrimma en 1852.",
+        "periodLabel": "Écrit dès 1857 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom tar Barma est celui de la langue que parlent les Barma, selon S. P. Reyna. La fiche du peuple Barma présente ce peuple.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bagirmi, Encyclopedia of World Cultures",
+                "author": "S. P. Reyna",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/bagirmi",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Lu le 11 octobre 2026 sur encyclopedia.com. La notice dit que les Barma parlent le tar Barma et rapporte une tradition sur le nom Bagirmi, sans la dater."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1852,
+              "to": 1857,
+              "label": "Séjour de 1852 (récit publié en 1857)"
+            },
+            "era": "polity",
+            "statement": "Le nom tar Barma a une forme proche, « tar Bagrimma », chez le voyageur allemand Heinrich Barth : c'est ainsi, écrit-il, que les gens du Bagirmi appellent eux-mêmes leur langue. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "formAsWritten": "tar Bagrimma",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 3",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri31857bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 398 et p. 451",
+                "notes": "New York, D. Appleton, 1857 ; voyage de 1849-1855, séjour au Bagirmi en 1852. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bagirmi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un royaume du Tchad, devenu celui de sa langue ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit dès 1857",
+        "accounts": [
+          {
+            "period": {
+              "from": 1852,
+              "to": 1857,
+              "label": "Séjour de 1852 (récit publié en 1857)"
+            },
+            "era": "polity",
+            "statement": "Le nom bagirmi est, selon Heinrich Barth, la façon dont on prononce sur place le nom du pays, qui sonne aussi Bagrimmi ; l'adjectif Bagrimma sonne souvent Barma. Les gens du Bornou écrivent Begharmi ou Bekarmi. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays existait déjà avant lui.",
+            "formAsWritten": "Bagirmi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 3",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri31857bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 431, note",
+                "notes": "New York, D. Appleton, 1857 ; voyage de 1849-1855, séjour au Bagirmi en 1852. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom bagirmi viendrait de l'arabe bagar, « bétail », et mia, « cent » : ce serait le tribut que les Arabes et les Peuls devaient à leur premier souverain, selon une tradition que rapporte S. P. Reyna.",
+            "hypothesisGroup": "origine du nom bagirmi",
+            "sources": [
+              {
+                "title": "Bagirmi, Encyclopedia of World Cultures",
+                "author": "S. P. Reyna",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/bagirmi",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Lu le 11 octobre 2026 sur encyclopedia.com. La notice dit que les Barma parlent le tar Barma et rapporte une tradition sur le nom Bagirmi, sans la dater."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": null,
     "dialects": ["Bangri", "Dam", "Gol", "Kibar"],

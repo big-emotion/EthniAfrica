@@ -12,7 +12,8 @@
         "Tshwa",
         "Xitswa speakers",
         "Kitshwa",
-        "Hlengwe (pour le dialecte zimbabween)"
+        "Hlengwe (pour le dialecte zimbabween)",
+        "Batswa"
       ],
       "originOfExonyms": "Tswa est le terme anglophone et portugais courant. Tshwa est une graphie alternative. Le nom Vatswa est l'appellation endonymique en xitswa. La langue est appelee xitswa ou xiTswa. Les locuteurs du dialecte Hlengwe au Zimbabwe sont parfois appeles Hlengwe ou Vatswa du Zimbabwe.",
       "whyProblematic": "Les Tswa sont souvent consideres par les recenseurs mozambicains et par les peuples voisins comme un sous-dialecte des Tsonga plutot que comme un peuple distinct. Cette ambiguite rend les donnees demographiques difficiles a etablir. La Bible de reference ecrite est basee sur la grammaire tsonga; xitswa s'en distingue par des traits phonologiques et lexicaux propres.",
@@ -27,7 +28,8 @@
       "Hlengwe — groupe s'etendant vers le Zimbabwe meridional; Maho (2009) le considere comme langue separee",
       "Mhandla — troisieme groupe principal de la confedeartion tswa",
       "Nwanati (Makwakwa) — sous-groupe place traditionnellement au sud des Hlengwe",
-      "Nzonge (Gwambe) — sous-groupe dans la region entre les Dzivi et les Chopi"
+      "Nzonge (Gwambe) — sous-groupe dans la region entre les Dzivi et les Chopi",
+      "Vatswa urbanises de Maputo — population issue des migrations dues aux guerres civiles et a la recherche d'emploi"
     ],
     "origins": {
       "ancientOrigins": "Les ancetres des Tswa, comme ceux des autres peuples du groupe Tswa-Ronga (Tsonga, Ronga, Tswa), sont des Bantous qui migrerent depuis l'Afrique centrale (autour de 200-500 apr. J.-C.) pour s'etablir dans le Mozambique meridional. Les Tswa constituent l'une des trois branches du macro-groupe Tsonga (Vatsonga), avec les Ronga et les Tsonga/Shangaan. Leurs ancetres etaient parmi les premiers habitants connus du Mozambique meridional avant le 15e siecle. Le sous-groupe Hlengwe est lie au royaume de Nyaka (Nyaka kingdom), dont l'origine est datee du 14e siecle selon le Joshua Project.",
@@ -36,14 +38,16 @@
         "Depuis l'Afrique centrale vers le Mozambique meridional (200-500 apr. J.-C.)",
         "Installation progressive dans l'arriere-pays de la province d'Inhambane (axe ouest)",
         "Extension du groupe Hlengwe vers le Zimbabwe meridional (province de Masvingo/Matabeleland Sud)",
-        "Migrations economiques vers les mines d'Afrique du Sud (20e siecle) et vers Maputo"
+        "Migrations economiques vers les mines d'Afrique du Sud (20e siecle) et vers Maputo",
+        "Mouvements de refuge vers les hauteurs et les villes durant les guerres nguni (XIXe s.) et civiles mozambicaines (1977-1992)"
       ],
       "historicalSettlementZones": [
         "Province d'Inhambane (Mozambique): principales zones rurales a l'ouest d'Inhambane — concentration la plus forte de Vatswa",
         "Province de Gaza (Mozambique): zone frontaliere, surtout le district de Chicualacuala",
         "Province de Maputo (Mozambique): banlieues et zone rurale au sud de Maputo",
         "Provinces de Manica et Sofala (Mozambique): minorites",
-        "Zimbabwe meridional: district de Chiredzi et zones de Save valley (Hlengwe)"
+        "Zimbabwe meridional: district de Chiredzi et zones de Save valley (Hlengwe)",
+        "Zimbabwe meridional (Manicaland, Matabeleland Sud) — sous-groupe Hlengwe"
       ],
       "unificationsOrDivisions": "Les trois grands groupes tswa (Dzivi, Hlengwe, Mhandla) sont reconnus par les Vatswa eux-memes comme distincts mais partageant la meme langue et des coutumes tres similaires. Les frontieres coloniales ont separe les Hlengwe entre Mozambique et Zimbabwe, comme pour de nombreux peuples de la region. Les Tswa ont ete longtemps confondus avec les Tsonga dans les recensements, ce qui a affaibli leur reconnaissance politique specifique.",
       "externalInfluences": "Influence de l'Empire de Gaza (Soshangane, 1820s): impact sur les Tswa du Mozambique meridional, similaire aux Tsonga. Colonisation portugaise du Mozambique. Missions chretiennes methodistes episcopales (Methodist Episcopal Mission): premiere grammaire et dictionnaire tswa par le rev. J. A. Persson (1928). Christianisme protestant dominant depuis le 20e siecle. Migration de main-d'oeuvre vers les mines sud-africaines.",
@@ -83,7 +87,7 @@
     "demography": {
       "totalPopulation": 1414000,
       "referenceYear": 2025,
-      "source": "Joshua Project (2025): Mozambique 1 383 000, Zimbabwe + Afrique du Sud estimations incertaines — total global 1 414 000. Omniglot: environ 1,2 million de locuteurs principalement au Mozambique. Wikipedia: plus d'un million de Vatswa, mais tous ne communiquent pas en xitswa.",
+      "source": "Joshua Project (2025): Mozambique 1 383 000, Zimbabwe + Afrique du Sud estimations incertaines — total global 1 414 000. Omniglot: environ 1,2 million de locuteurs principalement au Mozambique. Wikipedia: plus d'un million de Vatswa, mais tous ne communiquent pas en xitswa. Une autre estimation compte 1 350 000 Vatswa au Mozambique en 2025 (Joshua Project, CLEAR Global). Une autre estimation compte 1 500 000 Vatswa en 2025 (Joshua Project, Ethnologue).",
       "distributionByCountry": [
         {
           "country": "MOZ",
@@ -138,6 +142,29 @@
         "url": "https://www.imb.org/wp-content/uploads/2020/08/Tswa-Zimbabwe-Flyer.pdf",
         "tier": "unverified",
         "source_kind": "missionary_database"
+      },
+      {
+        "title": "Jenkins, Orville Boyd. The Tswa people of Mozambique — A Cultural Profile",
+        "url": "http://orvillejenkins.com/profiles/tswa.html",
+        "tier": "unverified",
+        "source_kind": "community"
+      },
+      {
+        "title": "CLEAR Global — Language data for Mozambique (2024)",
+        "url": "https://clearglobal.org/language-data-for-mozambique/",
+        "tier": "referenced",
+        "source_kind": "ngo"
+      },
+      {
+        "title": "Instituto Nacional de Estatistica — Mozambique",
+        "url": "https://www.ine.gov.mz/",
+        "tier": "official",
+        "source_kind": "official_statistics"
+      },
+      {
+        "title": "WorldAtlas — What Languages Are Spoken In Mozambique",
+        "url": "https://www.worldatlas.com/articles/what-languages-are-spoken-in-mozambique.html",
+        "tier": "unverified"
       }
     ]
   },
