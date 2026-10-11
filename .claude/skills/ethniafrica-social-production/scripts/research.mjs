@@ -397,10 +397,22 @@ export function verifyProgress(root, report, event, previous) {
     fail("Corpus statuses must advance in order");
   const evidence = need(event.evidence, "Progress evidence");
   const evidenceHash = sha(readFileSync(inside(root, evidence)));
+  let observedValue;
   if (event.status === "locally-checked") {
     const data = JSON.parse(readFileSync(inside(root, c.file), "utf8"));
-    if (!equal(pointer(data, c.pointer).value, c.value))
-      fail("Local corpus does not match the prepared correction");
+    const observed = pointer(data, c.pointer).value;
+    // A correction merged after other edits may legitimately differ; keep the
+    // approved value untouched and record what was actually integrated.
+    if (!equal(observed, c.value)) {
+      if (!event.reconciliation)
+        fail("Local corpus does not match the prepared correction");
+      need(event.reconciliation, "Reconciliation explanation");
+      if (c.before?.exists && equal(observed, c.before.value))
+        fail(
+          "Correction not applied: the corpus still holds the reviewed value"
+        );
+      observedValue = observed;
+    }
   }
   if (event.status === "proposed") url(event.url);
   if (event.status === "integrated") need(event.commit, "Integration commit");
@@ -413,6 +425,7 @@ export function verifyProgress(root, report, event, previous) {
   }
   return {
     ...event,
+    ...(observedValue === undefined ? {} : { observedValue }),
     evidenceHash,
     recordedAt: new Date().toISOString(),
     verification:
