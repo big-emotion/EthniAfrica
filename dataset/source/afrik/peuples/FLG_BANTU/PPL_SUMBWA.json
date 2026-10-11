@@ -3,6 +3,121 @@
   "nameMain": "Sumbwa",
   "languageFamilyId": "FLG_BANTU",
   "currentCountries": ["TZA"],
+  "nameHistory": {
+    "summary": "Le nom Sumbwa désigne un peuple bantou du nord-ouest de la Tanzanie, qui se nomme lui-même Wasumbwa. Sa langue s'appelle kisumbwa en swahili. Les sources que nous avons lues n'expliquent pas l'origine de ce nom ; nous présentons plus bas ses plus anciennes traces.",
+    "names": [
+      {
+        "nameText": "Sumbwa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "suw",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple du nord-ouest de la Tanzanie, voisin des Nyamwezi.",
+        "periodLabel": "Écrit Usumbwa en 1860 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom Sumbwa désigne, chez W. R. Ochieng', l'un des peuples du nord de l'actuelle Tanzanie, avec les Iramba et les Sukuma. Les sources que nous avons lues n'expliquent pas son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 27 : L'intérieur de l'Afrique de l'Est : les peuples du Kenya et de la Tanzanie (1500-1800)",
+                "author": "W. R. Ochieng'",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 908",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1860,
+              "label": "Voyage de 1857-1858, livre de 1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Sumbwa apparaît dans le nom d'un pays, Usumbwa, chez l'explorateur Richard Burton, qui en fait une province de l'ouest de l'Unyamwezi. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Usumbwa",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Richard F. Burton",
+                "role": "explorateur britannique"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa, a Picture of Exploration",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://archive.org/details/lakeregionsCent00Burt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 284-285",
+                "notes": "New York, Harper, 1860, lu dans l'exemplaire numérisé d'archive.org le 11 octobre 2026 : les provinces de l'Unyamwezi comprennent « Usagozi and Usumbwa to the westward ». L'index range « Usumbwa, a province of Unyamwezi ». Voyage de 1857-1858."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1800,
+              "to": 1800,
+              "label": "Vers 1800"
+            },
+            "era": "polity",
+            "statement": "Le nom Sumbwa désigne, chez Ahmed Idha Salim, l'un des peuples qui, avec les Nyamwezi, traversent l'Ugogo et nouent des contacts avec la côte, en échangeant de l'ivoire.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 9 : La côte et l'hinterland de l'Afrique orientale de 1800 à 1845",
+                "author": "Ahmed Idha Salim",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 257",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1870,
+              "to": 1880,
+              "label": "Années 1870"
+            },
+            "era": "polity",
+            "statement": "Le nom Sumbwa marque, chez Isaria N. Kimambo, la limite nord de l'État de Mirambo, qui s'étend alors jusqu'aux pays sukuma et sumbwa.",
+            "actors": [
+              {
+                "name": "Mirambo",
+                "role": "chef nyamwezi"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 10 : La côte et l'hinterland de l'Afrique orientale de 1845 à 1880",
+                "author": "Isaria N. Kimambo",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 286",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Sumbwa",
