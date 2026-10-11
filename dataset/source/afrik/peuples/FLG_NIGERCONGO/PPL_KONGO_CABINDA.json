@@ -139,5 +139,268 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Cabinda désigne une enclave de l'Angola sur la côte atlantique et, par extension, ses habitants kongo, qui se nomment eux-mêmes Bakongo ou Cabindais. Au XVIIIe siècle, Cabinda était le port du royaume de Ngoyo, et le mot fiote désignait les Africains dans la langue du pays. On ne sait pas avec certitude d'où vient le nom Cabinda ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Cabinda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un port du royaume de Ngoyo, devenu celui de l'enclave et de ses habitants.",
+        "periodLabel": "Écrit depuis 1776 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Cabinda désigne aujourd'hui une enclave de l'Angola, séparée du reste du pays par l'embouchure du fleuve Congo, selon la Digithèque MJP. On ne sait pas avec certitude d'où vient ce nom : les sources que nous avons lues ne l'expliquent pas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Angola",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/ao.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Digithèque de matériaux juridiques et politiques, Université de Perpignan, page lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1963,
+              "to": null,
+              "label": "Depuis 1963"
+            },
+            "statement": "Le nom Cabinda est aussi celui que porte le Front de libération de l'État du Cabinda, qui lutte depuis 1963 pour l'indépendance de l'enclave, reconnue angolaise par les accords d'Alvor, selon la Digithèque MJP.",
+            "sources": [
+              {
+                "title": "Angola",
+                "author": "Jean-Pierre Maury, Digithèque MJP",
+                "year": null,
+                "url": "https://mjp.univ-perp.fr/constit/ao.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Digithèque de matériaux juridiques et politiques, Université de Perpignan, page lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1975,
+              "label": "Avant l'indépendance de l'Angola"
+            },
+            "era": "colonial",
+            "statement": "Le nom Cabinda désigne, chez l'historien Elikia M'Bokolo, une région où se concentrent les richesses pétrolières de l'Angola, qui y suscitent « un vif particularisme ».",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 8 : L'Afrique équatoriale de l'Ouest",
+                "author": "Elikia M'Bokolo",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 240",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "era": "colonial",
+            "statement": "Le nom Cabinda désigne en 1930, chez les historiens Basil Davidson, Allen F. Isaacman et René Pélissier, l'enclave où apparaît un mouvement religieux, le Maiaigni.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 27 : La politique et le nationalisme en Afrique centrale et méridionale, 1919-1935",
+                "author": "A. Basil Davidson, Allen F. Isaacman et René Pélissier",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 749",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1775,
+              "to": 1785,
+              "label": "Vers 1780"
+            },
+            "era": "polity",
+            "statement": "Le nom Cabinda désigne vers 1780 le port le plus fréquenté de la côte de Loango pour la traite des esclaves, selon l'historien Jan Vansina. C'est le port du petit État de Ngoyo, autrefois vassal du roi de Loango, selon Elikia M'Bokolo.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 19 : Le Royaume du Kongo et ses voisins",
+                "author": "J. Vansina",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 632",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 18 : Des savanes du Cameroun au haut Nil",
+                "author": "E. M'Bokolo",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 583",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1776,
+              "to": 1776,
+              "label": "1776"
+            },
+            "era": "polity",
+            "statement": "Le nom Cabinda apparaît, sous la forme Cabinde, dans l'Histoire de Loango de l'abbé Proyart, parue en 1776. Les marins, écrit-il, appellent Cabinde le royaume de n'Goio, du nom de son port, « comme si les Anglois appelloient la France le Royaume de Calais ». C'est la plus ancienne trace de ce nom que le projet connaît. Le port et le royaume existaient déjà avant elle.",
+            "formAsWritten": "Cabinde",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire de Loango, Kakongo, et autres royaumes d'Afrique",
+                "author": "Abbé Proyart",
+                "year": 1776,
+                "url": "https://archive.org/details/histoiredeloango00proy_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 8",
+                "notes": "Paris, Berton, 1776, rédigée d'après les mémoires des préfets apostoliques de la mission française, lue dans la numérisation d'Internet Archive le 11 octobre 2026. « Le Royaume de Kakongo, que les mariniers appellent Malimbe, & celui de n'Goio qu'ils nomment Cabinde » ; en note : « Malimbe est le port de Kakongo, comme Cabinde est celui de n'Goio »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ngoyo",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du royaume dont Cabinda était le port.",
+        "periodLabel": "Royaume connu au XVIe siècle ; sorti de l'usage",
+        "accounts": [
+          {
+            "period": {
+              "from": 1776,
+              "to": 1776,
+              "label": "1776"
+            },
+            "era": "polity",
+            "statement": "Le nom Ngoyo, écrit n'Goio, est selon l'abbé Proyart le vrai nom du royaume que les marins appellent Cabinde, du nom de son port.",
+            "aspect": "imposition",
+            "formAsWritten": "n'Goio",
+            "sources": [
+              {
+                "title": "Histoire de Loango, Kakongo, et autres royaumes d'Afrique",
+                "author": "Abbé Proyart",
+                "year": 1776,
+                "url": "https://archive.org/details/histoiredeloango00proy_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 8",
+                "notes": "Paris, Berton, 1776, rédigée d'après les mémoires des préfets apostoliques de la mission française, lue dans la numérisation d'Internet Archive le 11 octobre 2026. « Le Royaume de Kakongo, que les mariniers appellent Malimbe, & celui de n'Goio qu'ils nomment Cabinde » ; en note : « Malimbe est le port de Kakongo, comme Cabinde est celui de n'Goio »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1525,
+              "to": 1535,
+              "label": "Vers 1530"
+            },
+            "era": "polity",
+            "statement": "Le nom Ngoyo, sous la forme Ngoi, désigne chez l'historien Jan Vansina l'un des royaumes sur lesquels le roi du Kongo réclamait encore sa suzeraineté vers 1530, une prétention sans doute fictive selon lui. Les sources que nous avons lues ne donnent pas la plus ancienne trace écrite de ce nom.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 20 : L'Afrique équatoriale et l'Angola : les migrations et l'apparition des premiers États",
+                "author": "J. Vansina",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 621",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Fiote",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le mot qui désignait les Africains dans la langue du pays ; il a aussi nommé cette langue.",
+        "periodLabel": "Écrit depuis 1889",
+        "accounts": [
+          {
+            "period": {
+              "from": 1890,
+              "to": 1890,
+              "label": "1890"
+            },
+            "era": "colonial",
+            "statement": "Le nom fiote désigne les Africains dans le parler du Kakongo, selon le dictionnaire que publient en 1890 les missionnaires du Saint-Esprit de la mission de Landana, sur la côte de Cabinda. Un Africain s'y dit mfiote, au pluriel ba fiote, et « les noirs » se dit aussi ba fiote.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionnaire français-fiote : dialecte du Kakongo",
+                "author": "Missionnaires de la congrégation du Saint-Esprit et du Saint-Cœur de Marie, mission de Landana",
+                "year": 1890,
+                "url": "https://archive.org/details/dictionnairefran00holy",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "entrées « Africain », « Afrique » et « Assiéger »",
+                "notes": "Paris, Maison-Mère, 1890, lu dans la numérisation d'Internet Archive le 11 octobre 2026. « Africain, mfiote, pl. ba » ; « Afrique : mi ba fiote » ; « Les noirs ont assiégé le village : ba fiote ba mue zuka buala ». Landana se trouve dans l'actuelle enclave de Cabinda."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1889,
+              "to": 1889,
+              "label": "1889"
+            },
+            "era": "colonial",
+            "statement": "Le nom fiote apparaît comme nom de langue dans la Grammaire fiote du père Alexandre Visseq, missionnaire de la congrégation du Saint-Esprit, qui la présente comme une grammaire de « la langue du Congo ». C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait bien avant ce titre.",
+            "formAsWritten": "fiote",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Grammaire fiote, ou Grammaire de la langue du Congo",
+                "author": "Alexandre Visseq",
+                "year": 1889,
+                "url": "https://archive.org/details/grammairefioteou00viss_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. III",
+                "notes": "Paris, Maisonneuve frères, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Le livre ne porte pas de date ; la notice de la numérisation le date de 1889. Préface : « le premier travail qui ait été fait sur la langue fiote du Congo, depuis des siècles »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

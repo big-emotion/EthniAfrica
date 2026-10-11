@@ -116,5 +116,342 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Créoles réunionnais désigne les habitants de La Réunion nés sur l'île, qui se disent eux-mêmes kréol et parlent le kréol rényoné. Le mot créole y désigne toute personne née dans l'île, par opposition aux Zoreils, les Français venus de métropole. Les sources ne s'accordent pas sur l'origine de ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Kréol",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "rcf",
+        "namedBy": null,
+        "shortLine": "Le nom que les Réunionnais donnent à leur langue et à eux-mêmes.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom kréol est celui que les Réunionnais donnent à leur langue, qu'ils appellent aussi kreol renyone, kreol reyon ou reyone, selon la linguiste Annegret Bollée.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Survey chapter: Reunion Creole",
+                "author": "Annegret Bollée",
+                "year": 2013,
+                "url": "https://apics-online.info/surveys/54",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Atlas of Pidgin and Creole Language Structures Online, lu le 11 octobre 2026. « Autoglossonyms: kreol renyone, kreol reyon, reyone » ; « Other name: French: créole réunionnais »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom kréol sert aussi à se nommer soi-même : « Nou lé kréol, nou koz kréol », « nous sommes créoles, et donc nous parlons créole », dit une phrase que cite le linguiste Jacques Leclerc.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La Réunion",
+                "author": "Jacques Leclerc, L'aménagement linguistique dans le monde",
+                "year": 2025,
+                "url": "https://axl.cefan.ulaval.ca/afrique/reunion.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "CEFAN, Université Laval, page mise à jour le 9 février 2025 et lue le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Créoles",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le mot français pour les personnes nées dans les colonies ; son origine reste discutée.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom créole qualifie, chez l'historien Michael Twaddle et ses coauteurs, la population « créole et cosmopolite » de La Réunion, de Maurice et des Seychelles, qu'ils distinguent de celle des Comores. L'origine du mot est discutée ; nous présentons plus bas les explications.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 9 : L'Afrique orientale",
+                "author": "Michael Twaddle, avec Lucile Rabearimanana et Isaria N. Kimambo",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 269",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1884,
+              "label": "Avant 1884"
+            },
+            "era": "colonial",
+            "statement": "Le nom créole désigne aussi, chez l'historien Manassé Esoavelomandroso, la population de La Réunion que le lobby réunionnais veut envoyer à Madagascar au XIXe siècle, quand il réclame la conquête de la grande île.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 10 : Madagascar de 1880 à 1939 : initiatives et réactions africaines à la conquête et à la domination coloniales",
+                "author": "Manassé Esoavelomandroso",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 250",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "1873"
+            },
+            "statement": "Le nom créole désigne en français, selon le dictionnaire de Littré, un homme ou une femme blancs nés aux colonies. Employé comme adjectif, il qualifie aussi un esclave né aux colonies, par opposition à celui qu'amène la traite.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionnaire de la langue française, article « créole »",
+                "author": "Émile Littré",
+                "year": 1873,
+                "url": "https://www.littre.org/definition/cr%C3%A9ole",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "sens 1",
+                "notes": "Paris, Hachette, 1873-1877, avec le supplément. Lu dans l'édition en ligne du dictionnaire le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom créole viendrait de l'espagnol criollo, qu'on fait venir de criar, « élever, nourrir », selon le dictionnaire de Littré, qui juge cette formation très irrégulière.",
+            "hypothesisGroup": "origine du mot créole",
+            "sources": [
+              {
+                "title": "Dictionnaire de la langue française, article « créole »",
+                "author": "Émile Littré",
+                "year": 1873,
+                "url": "https://www.littre.org/definition/cr%C3%A9ole",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "Étymologie",
+                "notes": "Paris, Hachette, 1873-1877, avec le supplément. Lu dans l'édition en ligne du dictionnaire le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom créole serait un mot caraïbe, selon d'autres auteurs que cite le dictionnaire de Littré sans les nommer.",
+            "hypothesisGroup": "origine du mot créole",
+            "sources": [
+              {
+                "title": "Dictionnaire de la langue française, article « créole »",
+                "author": "Émile Littré",
+                "year": 1873,
+                "url": "https://www.littre.org/definition/cr%C3%A9ole",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "Étymologie",
+                "notes": "Paris, Hachette, 1873-1877, avec le supplément. Lu dans l'édition en ligne du dictionnaire le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom créole serait un mot inventé par les conquérants espagnols des Indes occidentales, selon l'Académie espagnole, que cite le dictionnaire de Littré.",
+            "hypothesisGroup": "origine du mot créole",
+            "sources": [
+              {
+                "title": "Dictionnaire de la langue française, article « créole »",
+                "author": "Émile Littré",
+                "year": 1873,
+                "url": "https://www.littre.org/definition/cr%C3%A9ole",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "Étymologie",
+                "notes": "Paris, Hachette, 1873-1877, avec le supplément. Lu dans l'édition en ligne du dictionnaire le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom créole viendrait des Africains réduits en esclavage en Amérique : ils appelaient criollo leurs enfants nés aux Indes, pour les distinguer de ceux nés en Guinée, et les Espagnols leur auraient pris ce mot, selon l'historien Garcilaso de la Vega, que cite le supplément du dictionnaire de Littré.",
+            "hypothesisGroup": "origine du mot créole",
+            "sources": [
+              {
+                "title": "Dictionnaire de la langue française, article « créole »",
+                "author": "Émile Littré",
+                "year": 1873,
+                "url": "https://www.littre.org/definition/cr%C3%A9ole",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "Supplément, étymologie",
+                "notes": "Paris, Hachette, 1873-1877, avec le supplément. Lu dans l'édition en ligne du dictionnaire le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Réunionnais",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des habitants de l'île, tiré de son nom de 1793.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1793,
+              "to": 1793,
+              "label": "1793"
+            },
+            "era": "colonial",
+            "statement": "Le nom Réunionnais se rattache au nom de l'île, rebaptisée La Réunion en 1793 par la Convention, en souvenir de la « réunion » des Marseillais et de bataillons de la Garde nationale lors de l'assaut des Tuileries, selon le linguiste Jacques Leclerc. L'île s'appelait auparavant Bourbon, du nom de la dynastie royale, depuis 1649.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "La Réunion",
+                "author": "Jacques Leclerc, L'aménagement linguistique dans le monde",
+                "year": 2025,
+                "url": "https://axl.cefan.ulaval.ca/afrique/reunion.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "CEFAN, Université Laval, page mise à jour le 9 février 2025 et lue le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Zoreil",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Réunionnais",
+        "shortLine": "Le surnom des Français venus de métropole ; son origine est discutée.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Zoreil, ou Zorey, est le surnom que les Réunionnais donnent aux Français de métropole installés sur l'île, selon le linguiste Jacques Leclerc. Son origine est discutée ; nous présentons plus bas les explications rapportées.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La Réunion",
+                "author": "Jacques Leclerc, L'aménagement linguistique dans le monde",
+                "year": 2025,
+                "url": "https://axl.cefan.ulaval.ca/afrique/reunion.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "CEFAN, Université Laval, page mise à jour le 9 février 2025 et lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Zoreil viendrait de ce que les Métropolitains, comprenant mal le créole, feraient sans cesse répéter et passeraient pour « durs d'oreille », selon Jacques Leclerc.",
+            "hypothesisGroup": "origine du nom Zoreil",
+            "sources": [
+              {
+                "title": "La Réunion",
+                "author": "Jacques Leclerc, L'aménagement linguistique dans le monde",
+                "year": 2025,
+                "url": "https://axl.cefan.ulaval.ca/afrique/reunion.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "CEFAN, Université Laval, page mise à jour le 9 février 2025 et lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Zoreil viendrait, selon un récit que rapporte Jacques Leclerc, de propriétaires blancs qui auraient coupé une oreille à leurs esclaves marrons pour les reconnaître s'ils s'enfuyaient de nouveau.",
+            "hypothesisGroup": "origine du nom Zoreil",
+            "sources": [
+              {
+                "title": "La Réunion",
+                "author": "Jacques Leclerc, L'aménagement linguistique dans le monde",
+                "year": 2025,
+                "url": "https://axl.cefan.ulaval.ca/afrique/reunion.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "CEFAN, Université Laval, page mise à jour le 9 février 2025 et lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Zoreil viendrait du mot tamoul durey, « maître », qui aurait désigné les Blancs, selon J. Varondin, que cite Jacques Leclerc.",
+            "hypothesisGroup": "origine du nom Zoreil",
+            "sources": [
+              {
+                "title": "La Réunion",
+                "author": "Jacques Leclerc, L'aménagement linguistique dans le monde",
+                "year": 2025,
+                "url": "https://axl.cefan.ulaval.ca/afrique/reunion.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "CEFAN, Université Laval, page mise à jour le 9 février 2025 et lue le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
