@@ -130,5 +130,157 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Agaw désigne un ensemble de peuples des hautes terres du nord de l'Éthiopie et de l'Érythrée, qui parlent les langues couchitiques dites du Centre. Le nom figure déjà dans des textes du royaume d'Axoum. On ne sait pas avec certitude d'où il vient ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Agaw",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit dès l'époque du royaume d'Axoum ; il désigne aussi un groupe de langues.",
+        "periodLabel": "Écrit dès l'époque d'Axoum ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom Agaw désigne le couchitique du Centre, l'une des trois branches des langues couchitiques, que parlait la majorité des habitants de la Corne de l'Afrique entre le XIIe et le XVIe siècle, selon Taddesse Tamrat. Le catalogue Glottolog garde aujourd'hui ce nom pour le groupe qui comprend l'awngi. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 17 : La Corne de l'Afrique : les Salomonides en Éthiopie et les États de la Corne de l'Afrique",
+                "author": "Tadesse Tamrat",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 459",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              },
+              {
+                "title": "Glottolog 5.3 — Awngi (awng1244)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/awng1244",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 11 octobre 2026. Le catalogue range l'awngi dans un groupe nommé Agaw, à l'intérieur du couchitique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1101,
+              "to": 1200,
+              "label": "XIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Agaw désigne, chez Tekle-Tsadik Mekouria, la vieille population à laquelle appartient le peuple du Lasta qui fonde au XIIe siècle une nouvelle dynastie en Éthiopie. Cette population occupait le sud-ouest du pays depuis des siècles.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 19 : La Corne de l'Afrique",
+                "author": "Tekle-Tsadik Mekouria",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 604",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, codirigé par I. Hrbek, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026. Le chapitre date la Topographie chrétienne de Cosmas vers le milieu du VIe siècle (p. 595)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 501,
+              "to": 600,
+              "label": "VIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Agaw apparaît, sous la forme Agau, chez le marchand alexandrin Cosmas Indicopleustès : tous les deux ans, le roi d'Axoum envoie une caravane chercher de l'or au pays de Sasou par l'intermédiaire du gouverneur d'Agau. Tekle-Tsadik Mekouria et Y. M. Kobishanov rapportent le même passage.",
+            "formAsWritten": "Agau",
+            "sources": [
+              {
+                "title": "The Christian Topography of Cosmas, an Egyptian Monk",
+                "author": "Cosmas Indicopleustès, traduit et annoté par John Watson McCrindle",
+                "year": 1897,
+                "url": "https://archive.org/details/christiantopogr00cosmgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 52",
+                "notes": "Londres, Hakluyt Society, 1897. Traduction anglaise d'un texte grec du VIe siècle, lue dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. Livre II : « through the governor of Agau ». La note de l'éditeur présente les Agau comme le peuple ancien du plateau, de part et d'autre du lac Tana."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 19 : La Corne de l'Afrique",
+                "author": "Tekle-Tsadik Mekouria",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 604",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, codirigé par I. Hrbek, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026. Le chapitre date la Topographie chrétienne de Cosmas vers le milieu du VIe siècle (p. 595)."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 15 : Axoum du Ier au IVe siècle : économie, système politique, culture",
+                "author": "Y. M. Kobishanov",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 420",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 300,
+              "label": "Fin du IIIe siècle, selon Eduard Glaser"
+            },
+            "era": "polity",
+            "statement": "Le nom Athagaus figure parmi les peuples qu'un roi d'Axoum dit avoir soumis, dans une inscription d'Adoulis recopiée au VIe siècle par Cosmas Indicopleustès. Les savants que cite John Watson McCrindle ne s'accordent pas : Montfaucon et August Dillmann y voient une partie de l'ancien peuple agaw, Vivien de Saint-Martin un district nommé Addago.",
+            "sources": [
+              {
+                "title": "The Christian Topography of Cosmas, an Egyptian Monk",
+                "author": "Cosmas Indicopleustès, traduit et annoté par John Watson McCrindle",
+                "year": 1897,
+                "url": "https://archive.org/details/christiantopogr00cosmgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 60-61",
+                "notes": "Londres, Hakluyt Society, 1897. Traduction anglaise d'un texte grec du VIe siècle, lue dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. Notes de l'éditeur sur l'inscription d'Adoulis : Eduard Glaser la date de la fin du IIIe siècle ; pour les Athagaus, Saint-Martin propose le district d'Addago, Dillmann et Montfaucon une partie des Agau."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1,
+              "to": 400,
+              "label": "Ier-IVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Agaw figure, selon Y. M. Kobishanov, parmi les royaumes vassaux d'Axoum que nomment les inscriptions axoumites, au-delà du fleuve Takkazé, avec le Walqu'it et le Samen. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il désigne existaient déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, II, ch. 15 : Axoum du Ier au IVe siècle : économie, système politique, culture",
+                "author": "Y. M. Kobishanov",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 412",
+                "notes": "UNESCO, volume dirigé par G. Mokhtar, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
