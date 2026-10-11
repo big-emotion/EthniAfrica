@@ -111,5 +111,128 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Antandroy désigne un peuple de l'extrême sud de Madagascar, dans l'Androy, qui se nomme lui-même Antandroy, ou Tandroy dans la langue courante. Au XVIIe siècle, Étienne de Flacourt appelait une partie de son pays le pays des Ampatres. Le nom signifierait « ceux du buisson épineux », mais on ne connaît pas encore sa plus ancienne trace écrite ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Antandroy",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tdx",
+        "namedBy": null,
+        "shortLine": "« Ceux du buisson épineux » : un nom qui viendrait des épineux de l'Androy.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Antandroy, ou Tandroy, se traduirait par « ceux du buisson épineux », d'après leur pays, l'Androy, littéralement « là où pousse le roy », un mimosa, selon Karen Middleton. On ne sait pas avec certitude qui a donné ce nom, ni quand.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Tandroy",
+                "author": "Karen Middleton",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/tandroy",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article de l'Encyclopedia of World Cultures, lu sur Encyclopedia.com le 11 octobre 2026. La page ne donne pas l'année de l'article."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Antandroy aurait été donné par la dynastie des Zafimanara à tous les peuples vivant entre les fleuves Menarandra et Mandrare ; il traduisait une unité politique, celle d'une « confédération zafimanara », selon R. K. Kent.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 28 : Madagascar et les îles de l'océan Indien",
+                "author": "R. K. Kent",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 959",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tandroy",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tdx",
+        "namedBy": null,
+        "shortLine": "La forme courante du nom, sans le préfixe An-.",
+        "periodLabel": "En usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tandroy est la forme courante du nom : dans la langue de tous les jours, on laisse tomber le préfixe An-, selon Karen Middleton.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Tandroy",
+                "author": "Karen Middleton",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/tandroy",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article de l'Encyclopedia of World Cultures, lu sur Encyclopedia.com le 11 octobre 2026. La page ne donne pas l'année de l'article."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ampatres",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que donnait Étienne de Flacourt, au XVIIe siècle, à l'est de l'Androy.",
+        "periodLabel": "XVIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1658,
+              "to": 1658,
+              "label": "1658"
+            },
+            "era": "polity",
+            "statement": "Le nom Ampatres désigne, dans le récit d'Étienne de Flacourt paru en 1658, l'Antandroy oriental, entre le Manambovo et le Mandrare, selon R. K. Kent. C'est la plus ancienne trace de ce nom que le projet connaît, par ce qu'en rapporte l'historien. Ce pays existait déjà avant lui.",
+            "formAsWritten": "Ampatres",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 28 : Madagascar et les îles de l'océan Indien",
+                "author": "R. K. Kent",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 926 et p. 959",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

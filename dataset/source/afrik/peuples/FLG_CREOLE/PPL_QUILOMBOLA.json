@@ -119,5 +119,213 @@
         "notes": "Dictionnaire academique a auteurs identifies (Oxford University Press) ; confirme l'etymologie kimbundu (kilombo) du terme quilombo, croisee independamment avec les travaux historiques de Thornton citant la meme racine."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom quilombola désigne au Brésil les communautés noires issues des quilombos, ces lieux où vivaient des personnes réduites en esclavage qui s'étaient enfuies. Le mot quilombo viendrait du kilombo d'Angola. La loi brésilienne parle des « remanescentes das comunidades dos quilombos ». Nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Quilombola",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent au Brésil les communautés issues des quilombos.",
+        "periodLabel": "Écrit depuis 1764 sous une forme proche ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Depuis 2003"
+            },
+            "statement": "Le nom quilombola renvoie aux « remanescentes das comunidades dos quilombos », que le décret brésilien du 20 novembre 2003 définit par l'auto-attribution : c'est la communauté elle-même qui se reconnaît comme telle.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Decreto nº 4.887, de 20 de novembro de 2003",
+                "author": "République fédérative du Brésil",
+                "year": 2003,
+                "url": "https://www.planalto.gov.br/ccivil_03/decreto/2003/d4887.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Texte publié par la présidence de la République, article 2, lu le 11 octobre 2026. Texte en portugais, traduit par nos soins."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1962,
+              "to": 1962,
+              "label": "1962"
+            },
+            "statement": "Le nom quilombola désigne, avec la forme calhambola, les habitants des quilombos de Bahia, qui y cultivaient le manioc, le maïs et les haricots, dans l'article de Pedro Tomás Pedreira paru en 1962.",
+            "formAsWritten": "quilombolas",
+            "sources": [
+              {
+                "title": "Os Quilombos baianos",
+                "author": "Pedro Tomás Pedreira",
+                "year": 1962,
+                "url": "https://rbg.ibge.gov.br/index.php/rbg/article/view/2471",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 579",
+                "notes": "Revista Brasileira de Geografia, IBGE, vol. 24, n° 4, p. 579-593, lu le 11 octobre 2026. Texte en portugais, traduit par nos soins."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1764,
+              "to": 1764,
+              "label": "13 janvier 1764"
+            },
+            "statement": "Le nom quilombola apparaît sous une forme proche, calhambolas, dans un certificat du juge Cyriaco Antonio de Moura Tavares, à Bahia, après la destruction du quilombo du Buraco do Tatu : les captifs qui n'avaient pas d'autre délit que celui de calhambolas sont marqués de la lettre F et rendus à leurs maîtres. Pedro Tomás Pedreira cite ce document en 1962. C'est la plus ancienne trace de ce nom que le projet connaît. Les quilombos existaient déjà avant lui.",
+            "formAsWritten": "calhambolas",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Os Quilombos baianos",
+                "author": "Pedro Tomás Pedreira",
+                "year": 1962,
+                "url": "https://rbg.ibge.gov.br/index.php/rbg/article/view/2471",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 586",
+                "notes": "Revista Brasileira de Geografia, IBGE, vol. 24, n° 4, p. 579-593, lu le 11 octobre 2026. Texte en portugais, traduit par nos soins. L'auteur cite le document n° 6453 des archives de la Marine et de l'Outre-mer de Lisbonne ; nous n'avons pas lu l'original."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1740,
+              "to": 1740,
+              "label": "2 décembre 1740"
+            },
+            "statement": "Le nom quilombola est formé sur le mot quilombo, que le roi de Portugal définit le 2 décembre 1740, en réponse au Conseil d'outre-mer, comme « toute habitation de Noirs fugitifs au-delà de cinq, en partie dépourvue », même sans cabanes ni pilons, selon Pedro Tomás Pedreira.",
+            "formAsWritten": "quilombos",
+            "before": true,
+            "sources": [
+              {
+                "title": "Os Quilombos baianos",
+                "author": "Pedro Tomás Pedreira",
+                "year": 1962,
+                "url": "https://rbg.ibge.gov.br/index.php/rbg/article/view/2471",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 579",
+                "notes": "Revista Brasileira de Geografia, IBGE, vol. 24, n° 4, p. 579-593, lu le 11 octobre 2026. Texte en portugais, traduit par nos soins."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1695,
+              "label": "Jusqu'en 1695"
+            },
+            "statement": "Le nom quilombo est déjà celui de Palmares, dans le nord-est du Brésil, qui dura près d'un siècle, selon Franklin W. Knight. Son fondateur, Zumbi, est assassiné par les Portugais en 1695, selon Joseph E. Harris.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 28 : La diaspora africaine",
+                "author": "Franklin W. Knight",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 820",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 23 : L'Afrique et la diaspora noire",
+                "author": "Joseph E. Harris",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 752",
+                "notes": "UNESCO, volume dirigé par Ali A. Mazrui et Christophe Wondji, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1996,
+              "to": 1996,
+              "label": "Proposée en 1996"
+            },
+            "statement": "Le nom quilombo viendrait du kilombo des peuples de langue bantoue d'Angola, un mot umbundu selon Joseph C. Miller, et le quilombo du Brésil reprendrait le modèle du kilombo africain, selon Kabengele Munanga. Chez les Mundombe, près de Benguela, le mot désignait encore un camp d'initiation au XIXe siècle.",
+            "hypothesisGroup": "origine du nom quilombo",
+            "sources": [
+              {
+                "title": "Origem e histórico do quilombo na África",
+                "author": "Kabengele Munanga",
+                "year": 1996,
+                "url": "https://revistas.usp.br/revusp/article/view/28364",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 58, p. 60 et p. 63",
+                "notes": "Revista USP, n° 28, p. 56-63, lu le 11 octobre 2026. Texte en portugais, traduit par nos soins."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1600,
+              "label": "XVIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom kilombo désigne, peu après 1500, une association d'initiation militaire au Kulembe, sur le plateau de l'actuel Angola ; les Imbangala l'auraient peut-être répandue, selon Jan Vansina.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 22 : L'Afrique équatoriale et l'Angola : les migrations et l'apparition des premiers États",
+                "author": "Jan Vansina",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 616-617",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Remanescentes de quilombo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "por",
+        "namedBy": "La Constitution brésilienne de 1988",
+        "shortLine": "Le nom que leur donne la loi brésilienne depuis 1988.",
+        "periodLabel": "Depuis 1988",
+        "accounts": [
+          {
+            "period": {
+              "from": 1988,
+              "to": 1988,
+              "label": "5 octobre 1988"
+            },
+            "statement": "Le nom remanescentes das comunidades dos quilombos entre dans la Constitution brésilienne du 5 octobre 1988 : son article 68 des dispositions transitoires leur reconnaît la propriété définitive des terres qu'ils occupent. C'est la plus ancienne trace de ce nom que le projet connaît. Les communautés qu'il désigne existaient déjà avant lui.",
+            "formAsWritten": "remanescentes das comunidades dos quilombos",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Constituição da República Federativa do Brasil de 1988, Ato das Disposições Constitucionais Transitórias, art. 68",
+                "author": "République fédérative du Brésil",
+                "year": 1988,
+                "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "art. 68 des dispositions transitoires",
+                "notes": "Texte publié par la présidence de la République, lu le 11 octobre 2026. Texte en portugais, traduit par nos soins."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
