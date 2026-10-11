@@ -118,5 +118,143 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Digo désigne un peuple de la côte de l'océan Indien, entre Mombasa, au Kenya, et Tanga, en Tanzanie, qui se nomme lui-même Digo, Wadigo en swahili. Il fait partie des peuples appelés aujourd'hui Mijikenda, autrefois Nyika. On ne sait pas avec certitude d'où vient le nom Digo ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Digo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "dig",
+        "namedBy": null,
+        "shortLine": "Le nom que le peuple se donne ; écrit Wadigo par un missionnaire vers 1845.",
+        "periodLabel": "Écrit depuis 1858 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1845,
+              "to": 1858,
+              "label": "Vers 1845 (récit publié en 1858)"
+            },
+            "era": "polity",
+            "statement": "Le nom Digo apparaît par écrit, sous la forme « Wadigo », dans le récit du missionnaire Johann Ludwig Krapf publié en 1858 : il note que les Wanika du sud « sont appelés Wadigo » et parlent un autre dialecte que ceux du nord de Mombasa. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Wadigo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Reisen in Ost-Afrika, ausgeführt in den Jahren 1837-1855",
+                "author": "Johann Ludwig Krapf",
+                "year": 1858,
+                "url": "https://archive.org/details/reiseninostafri00krapgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 243",
+                "notes": "Kornthal, chez l'auteur, et Stuttgart, W. Stroh. Lu sur la numérisation de Google Books sur Internet Archive, lu le 11 octobre 2026. Le passage, en allemand, suit le récit des tournées de février 1845."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1833,
+              "to": 1833,
+              "label": "1833"
+            },
+            "era": "polity",
+            "statement": "Le nom Diju figure dans une histoire de Mombasa traduite de l'arabe et imprimée en 1833 par le capitaine William Owen, parmi les « villes de Vanikat ». Les sources ne disent pas s'il s'agit du même peuple que les Digo.",
+            "sources": [
+              {
+                "title": "Narrative of Voyages to Explore the Shores of Africa, Arabia, and Madagascar, vol. I",
+                "author": "W. F. W. Owen",
+                "year": 1833,
+                "url": "https://archive.org/details/narrativeofvoyag00owen",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 248 et p. 251",
+                "notes": "Londres. Lu sur Internet Archive, lu le 11 octobre 2026. La page 251 traduit une histoire de Mombasa écrite en arabe."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nyika",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les habitants de Mombasa, selon Johann Ludwig Krapf",
+        "shortLine": "Un ancien nom des Digo et de leurs voisins, tiré d'un mot qui veut dire « brousse ».",
+        "periodLabel": "Écrit depuis 1833 ; abandonné",
+        "accounts": [
+          {
+            "period": {
+              "from": 1845,
+              "to": 1858,
+              "label": "Vers 1845 (récit publié en 1858)"
+            },
+            "era": "polity",
+            "statement": "Le nom Nyika s'écrit « Wanika » chez Johann Ludwig Krapf, qui range les Wadigo parmi les Wanika du sud.",
+            "formAsWritten": "Wanika",
+            "sources": [
+              {
+                "title": "Reisen in Ost-Afrika, ausgeführt in den Jahren 1837-1855",
+                "author": "Johann Ludwig Krapf",
+                "year": 1858,
+                "url": "https://archive.org/details/reiseninostafri00krapgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 243",
+                "notes": "Kornthal, chez l'auteur, et Stuttgart, W. Stroh. Lu sur la numérisation de Google Books sur Internet Archive, lu le 11 octobre 2026. Le passage, en allemand, suit le récit des tournées de février 1845."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1833,
+              "to": 1833,
+              "label": "1833"
+            },
+            "era": "polity",
+            "statement": "Le nom Nyika apparaît par écrit, sous la forme « Wanyekas », dans le récit des voyages du capitaine William Owen imprimé en 1833. Le même livre traduit une histoire de Mombasa écrite en arabe, qui parle des « villes de Vanikat ». C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il désigne existaient déjà avant lui.",
+            "formAsWritten": "Wanyekas",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Narrative of Voyages to Explore the Shores of Africa, Arabia, and Madagascar, vol. I",
+                "author": "W. F. W. Owen",
+                "year": 1833,
+                "url": "https://archive.org/details/narrativeofvoyag00owen",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 248 et p. 251",
+                "notes": "Londres. Lu sur Internet Archive, lu le 11 octobre 2026. La page 251 traduit une histoire de Mombasa écrite en arabe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1882,
+              "to": 1882,
+              "label": "Proposée en 1882"
+            },
+            "era": "polity",
+            "statement": "Le nom Nyika viendrait du swahili nika, « pays sauvage, brousse » : les gens de Mombasa auraient appelé Wanika ceux qui vivaient dans cette brousse, selon Johann Ludwig Krapf.",
+            "hypothesisGroup": "origine du nom Nyika",
+            "sources": [
+              {
+                "title": "A Dictionary of the Suahili Language",
+                "author": "Johann Ludwig Krapf",
+                "year": 1882,
+                "url": "https://archive.org/details/bwb_T5-CQF-144",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 282",
+                "notes": "Londres, 1882, article « nika ». Lu sur Internet Archive, lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

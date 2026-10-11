@@ -126,5 +126,97 @@
         "source_kind": "official_statistics"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Konso désigne un peuple du sud-ouest de l'Éthiopie, sur les hauteurs au sud du lac Chamo, qui se nomme lui-même Xonsitta et appelle son pays Xonso. On ne sait pas avec certitude d'où vient le nom Konso ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Xonsitta",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kxc",
+        "namedBy": null,
+        "shortLine": "Le nom que le peuple se donne ; son pays se dit Xonso, sa langue afaa Xonso.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Xonsitta est celui que se donnent les Konso, qui appellent leur pays Xonso et leur langue afaa Xonso, « la langue de Konso », selon le linguiste konso Ongaye Oda Orkaydo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Grammar of Konso",
+                "author": "Ongaye Oda Orkaydo",
+                "year": 2013,
+                "url": "https://hdl.handle.net/1887/20681",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Thèse de doctorat de l'université de Leyde, publiée par LOT à Utrecht. L'auteur, lui-même konso du clan Keertitta, écrit χonsitta et χonso. Lu dans le chapitre 1 publié par l'université, lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Konso",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom courant du peuple et de son pays ; écrit par un voyageur américain en 1895.",
+        "periodLabel": "Écrit depuis 1897 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1895,
+              "to": 1897,
+              "label": "Voyage de 1895 (récit publié en 1897)"
+            },
+            "era": "polity",
+            "statement": "Le nom Konso apparaît par écrit dans le récit du voyageur américain Arthur Donaldson Smith, publié en 1897 : en 1895, il voit au nord-ouest des sommets qui marquent le « territoire occupé par le peuple konso ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Konso",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Through Unknown African Countries: The First Expedition from Somaliland to Lake Lamu",
+                "author": "Arthur Donaldson Smith",
+                "year": 1897,
+                "url": "https://archive.org/details/throughunknowna00smit",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 215",
+                "notes": "Londres et New York. Lu sur Internet Archive, lu le 11 octobre 2026. Le livre donne aussi, en annexe, des mots de la langue konso."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Konso aurait été donné par des voisins, comme les Borana : il ressemble au nom d'une colline très visible qui domine deux des principaux marchés du pays, selon l'encyclopédie Countries and Their Cultures.",
+            "hypothesisGroup": "origine du nom Konso",
+            "sources": [
+              {
+                "title": "Konso - Orientation",
+                "author": "Countries and Their Cultures (Gale)",
+                "year": null,
+                "url": "https://www.everyculture.com/Africa-Middle-East/Konso-Orientation.html",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopédie en ligne, sans auteur ni date de publication pour l'article. lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

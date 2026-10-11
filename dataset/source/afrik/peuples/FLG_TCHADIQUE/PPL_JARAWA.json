@@ -135,5 +135,127 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Jarawa désigne un peuple du plateau de Jos et de l'État de Bauchi, au Nigeria, dont une partie se nomme elle-même Afizere. Le nom Jarawa a servi pour plusieurs groupes voisins, et un autre nom existe, Fuganang. On ne sait pas avec certitude d'où vient le nom Jarawa ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Afizere",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donne le peuple appelé Jarawa autour de Jos ; son origine n'est pas connue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Afizere est celui qu'emploie le site encyclopédique de la communauté pour ce peuple, que les rapports coloniaux appelaient Jarawa. On ne sait pas avec certitude d'où vient ce nom ; aucune source lue ne l'explique.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Origin of the Afizere",
+                "author": "Afizere Encyclopedic Website",
+                "year": null,
+                "url": "https://afizereworld.org/origin.php",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site encyclopédique de la communauté afizere, sans auteur ni date de publication. lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Jarawa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que leur donnent leurs voisins et l'administration ; écrit dès 1914.",
+        "periodLabel": "Écrit depuis 1914 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Jarawa désigne en 1919, dans un recueil de rapports officiels, un grand peuple au sud de Bauchi, de quatre-vingt-dix à cent mille personnes. Il en distingue les groupes des plaines, soumis à l'émir de Bauchi, et les Jarawa des collines, comme ceux de Fobur et de Shere, restés indépendants. Certains clans qui parlent un dialecte jarawa n'en seraient pas issus, ajoute le recueil.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Notes on the Tribes, Provinces, Emirates and States of the Northern Provinces of Nigeria",
+                "author": "O. Temple, sous la direction de C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 165-166 et p. 171",
+                "notes": "Le Cap, Argus Printing and Publishing, recueil établi d'après des rapports officiels. Lu sur la numérisation de l'université de Toronto sur Internet Archive, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1914,
+              "to": 1914,
+              "label": "1914"
+            },
+            "era": "colonial",
+            "statement": "Le nom Jarawa apparaît dans deux rapports coloniaux de 1914 : le rapport annuel de Finch, un officier colonial, situe dans les collines jarawa de Fobur le pays d'origine des habitants de Jos et de Kwall, et le District Officer S. B. M. Stobart parle des Anaguta venus « d'au-delà des collines jarawa ». Le site encyclopédique de la communauté afizere cite ces deux rapports. C'est la plus ancienne trace de ce nom que le projet connaît ; nous ne les avons pas lus nous-mêmes. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Origin of the Afizere",
+                "author": "Afizere Encyclopedic Website",
+                "year": null,
+                "url": "https://afizereworld.org/origin.php",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site encyclopédique de la communauté afizere, sans auteur ni date de publication. lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Fuganang",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Zandi et les Gashish, selon le site de la communauté afizere",
+        "shortLine": "Le nom que donnent aux Afizere leurs voisins zandi et gashish.",
+        "periodLabel": "Non daté",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Fuganang, que les Zandi et les Gashish donnent aux Afizere, viendrait de Fuganang, tenu pour le plus ancien des ancêtres arrivés dans le pays, selon le site encyclopédique de la communauté afizere.",
+            "hypothesisGroup": "origine du nom Fuganang",
+            "sources": [
+              {
+                "title": "Origin of the Afizere",
+                "author": "Afizere Encyclopedic Website",
+                "year": null,
+                "url": "https://afizereworld.org/origin.php",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site encyclopédique de la communauté afizere, sans auteur ni date de publication. lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

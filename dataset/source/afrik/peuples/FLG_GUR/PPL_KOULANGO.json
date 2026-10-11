@@ -154,5 +154,205 @@
         "notes": "Seconde lecture de la même étude, qui situe elle aussi la fondation du royaume au début du XVIIe siècle."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Koulango désigne un peuple du nord-est de la Côte d'Ivoire, autour de Bouna et de Bondoukou, et de l'ouest du Ghana, qui se nomme aujourd'hui lui-même Koulango. D'autres noms existent : Pakhalla, donné par les marchands dioula, et Nkoramfo, donné par les Asante. Avant de désigner tout un peuple, le nom Koulango a désigné un groupe social du royaume de Bouna ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Koulango",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "D'abord le nom des villages vassaux du royaume de Bouna, puis celui de tout un peuple.",
+        "periodLabel": "Écrit depuis 1893 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1993,
+              "to": 1993,
+              "label": "1993"
+            },
+            "era": "modern",
+            "statement": "Le nom Koulango (au pluriel koulambo) désigne d'abord, dans le royaume de Bouna, les habitants des villages dépendants ou vassaux, par opposition aux princes descendants de Bunkani, selon le sociologue Jean-Louis Boutillier. On ne sait pas avec certitude d'où vient le mot.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bouna, royaume de la savane ivoirienne : princes, marchands et paysans",
+                "author": "Jean-Louis Boutillier",
+                "year": 1993,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_04/37306.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 37-38",
+                "notes": "Paris, Karthala et ORSTOM. Lu dans le texte intégral publié par l'IRD, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1908,
+              "label": "1905-1908"
+            },
+            "era": "colonial",
+            "statement": "Le nom Koulango remplace peu à peu celui de Pakhalla dans les archives de l'administration coloniale, à partir de 1905-1908, sans qu'aucune raison soit donnée, selon Jean-Louis Boutillier.",
+            "sources": [
+              {
+                "title": "Bouna, royaume de la savane ivoirienne : princes, marchands et paysans",
+                "author": "Jean-Louis Boutillier",
+                "year": 1993,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_04/37306.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38",
+                "notes": "Paris, Karthala et ORSTOM. Lu dans le texte intégral publié par l'IRD, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1893,
+              "to": 1893,
+              "label": "1893"
+            },
+            "era": "polity",
+            "statement": "Le nom Koulango apparaît par écrit dans le rapport du lieutenant Braulot, en 1893, qui parle de « la langue pakhalla ou koulango », selon Jean-Louis Boutillier. C'est la plus ancienne trace de ce nom que le projet connaît ; nous n'avons pas lu ce rapport, conservé dans les archives coloniales. Le peuple existait déjà avant lui.",
+            "formAsWritten": "koulango",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Bouna, royaume de la savane ivoirienne : princes, marchands et paysans",
+                "author": "Jean-Louis Boutillier",
+                "year": 1993,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_04/37306.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38, note 39",
+                "notes": "Paris, Karthala et ORSTOM. Lu dans le texte intégral publié par l'IRD, lu le 11 octobre 2026. L'auteur cite le rapport Braulot des archives nationales d'outre-mer."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Pakhalla",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les marchands dioula, selon Jean-Louis Boutillier",
+        "shortLine": "Le nom que leur donnaient les Dioula, repris par les premiers Français.",
+        "periodLabel": "Écrit depuis 1892 ; abandonné vers 1905-1908",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Fin du XIXe siècle"
+            },
+            "statement": "Le nom Pakhalla est celui que les Mandé-Dioula donnent aux Koulango. Les premiers explorateurs et officiers français l'emploient toujours, parce que leurs interprètes sont presque tous de langue mandé, selon Jean-Louis Boutillier.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bouna, royaume de la savane ivoirienne : princes, marchands et paysans",
+                "author": "Jean-Louis Boutillier",
+                "year": 1993,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_04/37306.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38",
+                "notes": "Paris, Karthala et ORSTOM. Lu dans le texte intégral publié par l'IRD, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1889,
+              "to": 1892,
+              "label": "Voyage de 1889 (récit publié en 1892)"
+            },
+            "statement": "Le nom Pakhalla apparaît par écrit dans le récit de voyage du capitaine Louis-Gustave Binger, publié en 1892 : près de Bondoukou, il note que le village de Tambi « est habité par des Pakhalla ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Pakhalla",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi (1887-1889)",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://archive.org/details/dunigeraugolfede00bing",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome II, p. 94",
+                "notes": "Paris, Hachette. Lu sur Internet Archive, dans une numérisation qui réunit les deux tomes, lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nkoramfo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Asante, selon Jean-Louis Boutillier",
+        "shortLine": "Le nom que les Asante donnent aux habitants du royaume de Bouna.",
+        "periodLabel": "Non daté",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Non daté"
+            },
+            "statement": "Le nom Nkoramfo, que Jean-Louis Boutillier écrit NGoramfo ou NKorafo, est celui que les Asante, alliés du royaume de Bouna, donnent à ses habitants. Il voudrait dire « les gens qui parlent la langue ngoran », un mot proche de koulango, selon Boutillier.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bouna, royaume de la savane ivoirienne : princes, marchands et paysans",
+                "author": "Jean-Louis Boutillier",
+                "year": 1993,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_04/37306.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38",
+                "notes": "Paris, Karthala et ORSTOM. Lu dans le texte intégral publié par l'IRD, lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Lorho",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple ancien d'où viendraient les Koulango, selon Maurice Delafosse.",
+        "periodLabel": "Non daté",
+        "accounts": [
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Proposée en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lorho désigne, selon l'administrateur colonial Maurice Delafosse en 1912, un peuple venu du Kipirsi d'où serait sorti plus tard le peuple koulango ou pakhalla. Jean-Louis Boutillier cite cette hypothèse et lui oppose celle d'une origine mandé.",
+            "sources": [
+              {
+                "title": "Bouna, royaume de la savane ivoirienne : princes, marchands et paysans",
+                "author": "Jean-Louis Boutillier",
+                "year": 1993,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_04/37306.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 33, note 26",
+                "notes": "Paris, Karthala et ORSTOM. Lu dans le texte intégral publié par l'IRD, lu le 11 octobre 2026. L'auteur cite Maurice Delafosse, 1912, tome I, p. 318."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
