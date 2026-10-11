@@ -113,5 +113,97 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches « Danjuma homonym etymology » et les sources consacrées à Danjuma n'ont pas établi une graphie identique d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Danjuma est un prénom haoussa, porté au Nigeria, qui sert aussi de second nom. Il fait partie des noms tirés des jours de la semaine. Les sources lues ne retracent pas son origine au-delà ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "Danjuma",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "hau",
+        "namedBy": null,
+        "shortLine": "Un prénom haoussa tiré du vendredi, porté aussi comme second nom.",
+        "periodLabel": "Écrit dès 1914 sous une forme proche ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Danjuma est porté au Nigeria comme second nom. La présidence nigériane l'écrit ainsi dans le nom du général Theophilus Yakubu Danjuma, en décembre 2025.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "President Tinubu's Goodwill Message to General TY Danjuma on His 88th Birthday",
+                "author": "State House, Abuja",
+                "year": 2025,
+                "url": "https://statehouse.gov.ng/president-tinubus-goodwill-message-to-general-ty-danjuma-on-his-88th-birthday/",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Communiqué du 9 décembre 2025, lu le 11 octobre 2026. Il nomme « General Theophilus Yakubu Danjuma (rtd) ». Il ne dit rien de l'origine du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Danjuma fait partie des noms haoussa tirés des jours de la semaine. Pauline Ryan le range au vendredi, Jumma'a en haoussa, parmi les noms de garçon ; dans d'autres noms qu'elle cite, Dan veut dire « fils de ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 146 ; p. 158",
+                "notes": "Names, 29(2), 1981, p. 139-164. Lu dans le PDF intégral le 11 octobre 2026. Le tableau XII, « Names Derived from the Days of the Week », range Danjuma au vendredi (Jumma'a), dans la colonne des noms de garçon (p. 158). Le tableau IV glose Dan Wabi par « Son of a Wabi » (p. 146)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1914,
+              "to": 1914,
+              "label": "1914"
+            },
+            "era": "colonial",
+            "statement": "Le nom Danjuma apparaît sous une forme proche, Dan Juma, en deux mots, chez Arthur Tremearne. C'est le nom d'un adepte du bori, le culte des esprits des Haoussa, à Tripoli, dont un informateur, Haj Ali, raconte l'histoire à l'auteur. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est porté.",
+            "formAsWritten": "Dan Juma",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Arthur John Newman Tremearne",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Haj Ali",
+                "role": "informateur de l'auteur"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Ban of the Bori: Demons and Demon-Dancing in West and North Africa",
+                "author": "Arthur John Newman Tremearne",
+                "year": 1914,
+                "url": "https://archive.org/details/banofboridemonsd00trem",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 276",
+                "notes": "Londres, Heath, Cranton and Ouseley, 1914. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. L'auteur, officier britannique, rapporte un récit de Haj Ali sur Tripoli, sept ans plus tôt : « A man named Dan Juma, whom Sarikin Rafi always mounted »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

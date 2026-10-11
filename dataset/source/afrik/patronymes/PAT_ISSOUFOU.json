@@ -113,5 +113,64 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches « Issoufou homonym etymology » et les pages consacrées à Issoufou et Yusuf n'ont pas établi une graphie identique d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Issoufou est un prénom porté au Niger, que l'on trouve aussi en second nom. On ne sait pas avec certitude d'où vient cette écriture, ni quand elle apparaît pour la première fois par écrit ; nous présentons plus bas ce que disent les sources lues.",
+    "names": [
+      {
+        "nameText": "Issoufou",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un prénom porté au Niger, aussi en second nom ; on ne sait pas d'où vient cette écriture.",
+        "periodLabel": "Porté aujourd'hui ; première trace écrite inconnue",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Issoufou est porté au Niger comme prénom et comme second nom. Les nominations du Conseil des ministres du 4 janvier 2024 le donnent aux deux places, par exemple dans Issoufou Abdoulaye et Saâdou Issoufou.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Conseil des ministres du 04/01/2024 : adoption de plusieurs projets de textes et mesures nominatives",
+                "author": "Gouvernement du Niger",
+                "year": 2024,
+                "url": "https://www.gouv.ne/index.php/les-communiques-du-gouvernement/510-conseil-des-ministres-du-04-01-2024-adoption-de-plusieurs-projets-de-textes-et-mesures-nominatives",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Communiqué officiel du 4 janvier 2024, lu le 11 octobre 2026. Les mesures nominatives citent notamment Issoufou Abdoulaye, Yahouza Issoufou, Saâdou Issoufou et Hamidou Issoufou Alfaga. Le communiqué ne dit rien de l'origine du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Issoufou est un prénom. En haoussa, une forme proche, Yusufu, est le nom de Joseph parmi les noms musulmans donnés à l'enfant, selon Pauline Ryan. On ne sait pas avec certitude comment l'écriture Issoufou se rattache à Yusufu : aucune étude lue ne le montre.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 143",
+                "notes": "Names, 29(2), 1981, p. 139-164. Lu dans le PDF intégral le 11 octobre 2026. Le tableau I donne Yusufu : « Joseph ». L'article ne cite pas la forme Issoufou."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
