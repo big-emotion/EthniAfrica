@@ -4,6 +4,145 @@
   "languageFamilyId": "FLG_GUR",
   "currentCountries": ["GHA", "TGO", "BFA"],
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom Konkomba désigne un peuple de langue gur de la plaine de l'Oti, au nord-est du Ghana et au nord-ouest du Togo, qui se nomme lui-même Bikpakpaam. Les sources que nous avons lues n'expliquent pas l'origine du nom Konkomba ; nous présentons plus bas ses plus anciennes traces.",
+    "names": [
+      {
+        "nameText": "Bikpakpaam",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "xon",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne le peuple ; sa langue est le likpakpaln.",
+        "usedIn": ["xon"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bikpakpaam est celui du peuple que l'on appelle aussi Konkomba ; sa langue se nomme likpakpaln, selon le linguiste Abraham Kwesi Bisilki. Il situe leur pays d'origine dans la plaine de l'Oti, autour de Saboba.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Sociolinguistic Analysis of Kinship Terms in Likpakpaln (Konkomba), Ghana Journal of Linguistics, 6 (3)",
+                "author": "Abraham Kwesi Bisilki",
+                "year": 2017,
+                "url": "https://laghana.org/gjl/index.php/gjl/article/view/88",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lu en texte intégral le 11 octobre 2026. L'auteur nomme le peuple Bikpakpaam et sa langue likpakpaln, en précisant chaque fois qu'il s'agit des Konkomba.",
+                "page": "p. 34 et p. 37"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Konkomba",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom sous lequel le peuple est connu au Ghana et au Togo ; il est écrit dès 1899.",
+        "usedIn": ["fra", "eng", "deu"],
+        "periodLabel": "Écrit dès 1899 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Konkomba désigne le peuple qui se nomme Bikpakpaam, selon Abraham Kwesi Bisilki. Les sources que nous avons lues n'expliquent pas l'origine du nom Konkomba.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Sociolinguistic Analysis of Kinship Terms in Likpakpaln (Konkomba), Ghana Journal of Linguistics, 6 (3)",
+                "author": "Abraham Kwesi Bisilki",
+                "year": 2017,
+                "url": "https://laghana.org/gjl/index.php/gjl/article/view/88",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lu en texte intégral le 11 octobre 2026. L'auteur nomme le peuple Bikpakpaam et sa langue likpakpaln, en précisant chaque fois qu'il s'agit des Konkomba.",
+                "page": "p. 34"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1899,
+              "to": 1899,
+              "label": "1899"
+            },
+            "era": "colonial",
+            "statement": "Le nom Konkomba apparaît par écrit chez l'Allemand Heinrich Klose, qui raconte la révolte de 1897 des Konkomba, qui coupe de la côte le poste allemand de Sansanne-Mangu. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà dans la plaine de l'Oti avant elle.",
+            "formAsWritten": "Auflehnung der Konkomba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Togo unter deutscher Flagge : Reisebilder und Betrachtungen",
+                "author": "Heinrich Klose",
+                "year": 1899,
+                "url": "https://archive.org/details/togounterdeutsch00klos",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Berlin, Dietrich Reimer, 1899. Lu dans la numérisation d'Internet Archive ; la page est celle que donne la table des matières pour le passage « Auflehnung der Konkomba ». L'auteur, au service de l'administration allemande du Togo, décrit les Konkomba en ennemis à soumettre.",
+                "page": "p. 468"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "12 mai 1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom Konkomba est encore celui d'un peuple « presque inconnu » pour la revue allemande Globus, qui rapporte sa révolte de 1897 et la soumission du « pays konkomba » à la fin de la même année.",
+            "formAsWritten": "Konkombaland",
+            "sources": [
+              {
+                "title": "Die Erschliessung des Kaburelandes in Nordtogo, Globus, 77 (18), 12 mai 1900",
+                "author": "Fr. Hupfeld",
+                "year": 1900,
+                "url": "https://archive.org/details/globusillustrier7778unse",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Brunswick, Vieweg, 1900. Lu dans la numérisation d'Internet Archive.",
+                "page": "p. 281"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1898,
+              "label": "1897-1898"
+            },
+            "era": "colonial",
+            "statement": "Le nom Konkomba désigne, chez l'historien Godfrey N. Uzoigwe, l'un des peuples dispersés dont les Allemands brisent la résistance en 1897 et 1898, alliés pour cela aux petits royaumes des Kotokoli et des Chakosi.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 2 : Partage européen et conquête de l'Afrique : aperçu général",
+                "author": "Godfrey N. Uzoigwe",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 58"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Konkomba",
