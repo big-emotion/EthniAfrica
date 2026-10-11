@@ -123,5 +123,198 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kumam désigne un peuple de l'est de l'Ouganda, autour du lac Kyoga, qui reconnaît ce nom. Ses voisins lango l'appellent Akum, et ses membres se disent aussi Ikokolemu, « les enfants d'Olemu ». Les sources ne disent pas avec certitude d'où vient le nom Kumam ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Kumam",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple du lac Kyoga reconnaît aujourd'hui ; écrit Kumama en 1902.",
+        "periodLabel": "Écrit dès 1902 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kumam est reconnu par ce peuple, selon l'administrateur Jack Herbert Driberg, mais ses membres disent que leur vrai nom de tribu est Lango, suivi de Ikokolemu. Driberg écrit qu'on ne sait pas si d'autres peuples leur ont d'abord donné ce nom comme surnom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Lango: A Nilotic Tribe of Uganda",
+                "author": "J. H. Driberg",
+                "year": 1923,
+                "url": "https://archive.org/details/in.ernet.dli.2015.218025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 30, note",
+                "notes": "Londres, T. Fisher Unwin. Lu dans la numérisation de la Digital Library of India hébergée par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "Proposée en 1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kumam serait la forme prise par le nom Akum sous l'influence des Banyoro, selon Jack Herbert Driberg, qui juge Akum plus exact.",
+            "hypothesisGroup": "origine du nom Kumam",
+            "sources": [
+              {
+                "title": "The Lango: A Nilotic Tribe of Uganda",
+                "author": "J. H. Driberg",
+                "year": 1923,
+                "url": "https://archive.org/details/in.ernet.dli.2015.218025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 30, note",
+                "notes": "Londres, T. Fisher Unwin. Lu dans la numérisation de la Digital Library of India hébergée par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kumam désigne, chez le missionnaire Arthur Leonard Kitching, une petite section établie sur la rive nord du lac Kyoga. Elle serait une part des Lango brouillée avec le reste du peuple, qui se serait rapprochée des Teso et leur aurait emprunté beaucoup de mots.",
+            "formAsWritten": "Kumam",
+            "sources": [
+              {
+                "title": "On the Backwaters of the Nile: Studies of Some Child Races of Central Africa",
+                "author": "A. L. Kitching",
+                "year": 1912,
+                "url": "https://archive.org/details/onbackwatersofni00kitc",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 18 et p. 34",
+                "notes": "Londres, T. Fisher Unwin. Le titre est celui de l'original. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kumam apparaît sous une forme proche, Kumama, chez l'administrateur Charles William Hobley en 1902. Il parle du peuple Kumama, qui vit sur les rives d'une chaîne de lacs au nord-ouest du mont Elgon, et nomme aussi ces lacs les lacs Kumama. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Kumama",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Eastern Uganda: An Ethnological Survey",
+                "author": "C. W. Hobley",
+                "year": 1902,
+                "url": "https://archive.org/details/easternugandaan00hoblgoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9 et p. 60",
+                "notes": "Londres, Anthropological Institute of Great Britain and Ireland. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ikokolemu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Kumam, « les enfants d'Olemu », selon Driberg en 1923.",
+        "periodLabel": "Écrit dès 1923",
+        "accounts": [
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ikokolemu, « les enfants d'Olemu », est celui que ce peuple ajoute au nom Lango, qu'il tient pour son vrai nom de tribu, afin de se distinguer des autres peuples qui portent ce nom, selon Jack Herbert Driberg. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Ikokolemu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lango: A Nilotic Tribe of Uganda",
+                "author": "J. H. Driberg",
+                "year": 1923,
+                "url": "https://archive.org/details/in.ernet.dli.2015.218025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 30, note",
+                "notes": "Londres, T. Fisher Unwin. Lu dans la numérisation de la Digital Library of India hébergée par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Akum",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Lango",
+        "shortLine": "Le nom que les Lango donnaient aux Kumam, selon Driberg en 1923.",
+        "periodLabel": "Écrit en 1923",
+        "accounts": [
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Akum est celui que les Lango donnent à ce peuple, selon Jack Herbert Driberg, qui le juge plus exact que Kumam. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Akum",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lango: A Nilotic Tribe of Uganda",
+                "author": "J. H. Driberg",
+                "year": 1923,
+                "url": "https://archive.org/details/in.ernet.dli.2015.218025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 30, note",
+                "notes": "Londres, T. Fisher Unwin. Lu dans la numérisation de la Digital Library of India hébergée par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Pendant la migration des Lango, selon leurs traditions"
+            },
+            "statement": "Le nom Akum figure dans les traditions lango que recueille Jack Herbert Driberg. Pendant une halte de leur migration, les Lango auraient rencontré les Akum pour la première fois ; ils entretenaient alors avec eux des relations amicales et leur échangeaient des houes contre du bétail.",
+            "sources": [
+              {
+                "title": "The Lango: A Nilotic Tribe of Uganda",
+                "author": "J. H. Driberg",
+                "year": 1923,
+                "url": "https://archive.org/details/in.ernet.dli.2015.218025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 30-31",
+                "notes": "Londres, T. Fisher Unwin. Lu dans la numérisation de la Digital Library of India hébergée par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
