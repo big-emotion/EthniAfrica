@@ -144,5 +144,193 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Gbaya désigne un peuple de l'ouest de la Centrafrique et de l'est du Cameroun, qui se nomme lui-même Gbaya, comme sa langue. Un autre nom existe : Baya. Les sources lues n'expliquent pas l'origine de ces noms ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "Gbaya",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "gba",
+        "namedBy": null,
+        "shortLine": "Le nom du peuple et de sa langue ; son origine n'est pas expliquée.",
+        "usedIn": ["gba"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Gbaya désigne un ensemble de groupes, dont les Gbaya 'bodoe de Centrafrique et les Gbaya yaayuuwee du Cameroun, qu'ont étudiés Paulette Roulon-Doko et Philip Burnham. Les sources lues ne disent pas d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La notion de « migration » dans l'aire gbaya",
+                "author": "Paulette Roulon-Doko",
+                "year": 2009,
+                "url": "https://shs.hal.science/halshs-00720191v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1 de la version déposée",
+                "notes": "Dans H. Tourneux et N. Woïn (dir.), Migrations et mobilité dans le bassin du lac Tchad, IRD, 2009, p. 543-553. Version déposée sur HAL, lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Gbaya désigne en Centrafrique une population qui ne dit pas être venue d'ailleurs : les Gbaya disent habiter leur région depuis longtemps, selon la linguiste Paulette Roulon-Doko.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La notion de « migration » dans l'aire gbaya",
+                "author": "Paulette Roulon-Doko",
+                "year": 2009,
+                "url": "https://shs.hal.science/halshs-00720191v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1 de la version déposée",
+                "notes": "Dans H. Tourneux et N. Woïn (dir.), Migrations et mobilité dans le bassin du lac Tchad, IRD, 2009, p. 543-553. Version déposée sur HAL, lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1800,
+              "to": 1830,
+              "label": "Début du XIXe siècle"
+            },
+            "era": "polity",
+            "statement": "Le peuple gbaya entre dans les écrits et les sources orales au début du XIXe siècle, selon Philip Burnham, cité par Paulette Roulon-Doko. Ces informations passaient surtout par les Fulbe ou par des Européens.",
+            "before": true,
+            "sources": [
+              {
+                "title": "La notion de « migration » dans l'aire gbaya",
+                "author": "Paulette Roulon-Doko",
+                "year": 2009,
+                "url": "https://shs.hal.science/halshs-00720191v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1 de la version déposée",
+                "notes": "Dans H. Tourneux et N. Woïn (dir.), Migrations et mobilité dans le bassin du lac Tchad, IRD, 2009, p. 543-553. Version déposée sur HAL, lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1800,
+              "label": "Du XVIe au XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le peuple gbaya se déplace lentement dans les prairies de l'actuelle Centrafrique et du Cameroun, comme les Banda, selon Jan Vansina. Il juge ce mouvement encore très mal connu.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 3 : Les mouvements de population et l'émergence de nouvelles formes sociopolitiques en Afrique",
+                "author": "Jan Vansina",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 93",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -1000,
+              "to": -1,
+              "label": "Premier millénaire avant notre ère, selon une reconstitution"
+            },
+            "statement": "Le peuple gbaya-manza se serait établi à l'ouest dès le premier millénaire avant notre ère, lors d'un grand mouvement d'ouest en est des peuples dits proto-oubanguiens. Elikia M'Bokolo rapporte cette reconstitution, où ils sont appelés Gbaya-Manga.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 18 : Des savanes du Cameroun au haut Nil",
+                "author": "Elikia M'Bokolo",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 575",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Baya",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une forme du nom employée surtout en français ; elle apparaît dès 1857.",
+        "usedIn": ["fra"],
+        "periodLabel": "Écrit dès 1857",
+        "accounts": [
+          {
+            "period": {
+              "from": 1893,
+              "to": 1895,
+              "label": "1893-1894, publié en 1895"
+            },
+            "statement": "Le nom Baya a une forme proche, Baia, chez Siegfried Passarge, membre d'une expédition allemande en Adamaoua. Il décrit les Baia comme l'un des peuples les plus grands et les plus importants de la région, déjà soumis aux Fulbe ; les marchés d'ivoire de Kunde et de Gasa se trouvent sur leurs terres.",
+            "formAsWritten": "Baia",
+            "sources": [
+              {
+                "title": "Adamaua. Bericht über die Expedition des Deutschen Kamerun-Komitees in den Jahren 1893/94",
+                "author": "Siegfried Passarge",
+                "year": 1895,
+                "url": "https://archive.org/details/adamauabericht00pass",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 285",
+                "notes": "Berlin, Dietrich Reimer, 1895. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1851,
+              "to": 1857,
+              "label": "Itinéraires recueillis vers 1851, publiés en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Baya figure chez l'explorateur Heinrich Barth, d'après des itinéraires que lui décrivent des informateurs : c'est le chef-lieu d'un pays du même nom, au sud de l'Adamawa. C'est la plus ancienne trace de ce nom que le projet connaît ; on ne sait pas avec certitude s'il s'agit du même peuple.",
+            "formAsWritten": "Baya",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Heinrich Barth",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. II",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri02bart_2",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 613",
+                "notes": "Londres, Longman, 1857. Appendice : itinéraires recueillis auprès d'informateurs à partir de l'Adamawa. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

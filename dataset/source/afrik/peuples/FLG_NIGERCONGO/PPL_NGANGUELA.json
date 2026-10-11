@@ -120,5 +120,72 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nganguela désigne un ensemble de peuples de l'est de l'Angola. Seuls deux groupes de l'ouest se nommaient ainsi eux-mêmes ; les Lwena, les Luchazi, les Mbunda et les autres ont chacun leur nom. Le nom s'écrit aussi Ganguela. Les sources lues n'expliquent pas son origine ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "Nganguela",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom donné par les Ovimbundu, que seuls deux groupes acceptaient.",
+        "usedIn": ["por"],
+        "periodLabel": "Écrit dès 1881 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1991,
+              "to": 1991,
+              "label": "Décrit en 1991"
+            },
+            "era": "modern",
+            "statement": "Le nom Nganguela est un terme péjoratif que les Ovimbundu appliquaient aux peuples vivant à l'est et au sud-est de chez eux, selon la Bibliothèque du Congrès. Il n'était qu'une catégorie du recensement portugais : seuls deux groupes de l'ouest l'acceptaient, les autres se disant Lwena, Mbunda ou Luchazi.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Angola: A Country Study, section « Nganguela »",
+                "author": "Library of Congress, Federal Research Division",
+                "year": 1991,
+                "url": "https://countrystudies.us/angola/63.htm",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Bibliothèque du Congrès des États-Unis, série Country Studies, 3e édition. Copie non officielle du texte, mise en ligne par countrystudies.us, lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1877,
+              "to": 1881,
+              "label": "1877-1878, récit publié en 1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Nganguela est écrit Ganguélas par l'explorateur Alexandre de Serpa Pinto. Il y voit une « race » répandue sur un vaste territoire à l'est et au sud du Caquingué, divisée en quatre groupes, dont les Gonzêlos du Caquingué. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il désigne existaient déjà avant elle.",
+            "formAsWritten": "Ganguélas",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Alexandre de Serpa Pinto",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Comment j'ai traversé l'Afrique, tome I",
+                "author": "Alexandre de Serpa Pinto",
+                "year": 1881,
+                "url": "https://archive.org/details/commentjaitraver01serp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 160",
+                "notes": "Paris, Hachette, 1881, traduction française. Récit du voyage de 1877-1878. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

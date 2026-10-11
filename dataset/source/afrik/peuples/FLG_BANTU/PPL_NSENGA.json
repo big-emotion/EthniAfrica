@@ -120,5 +120,117 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nsenga désigne un peuple de la vallée du Luangwa, dans l'est de la Zambie, et des régions voisines du Mozambique et du Zimbabwe, qui se nomme lui-même Nsenga. Les sources lues n'expliquent pas l'origine de ce nom ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "Nsenga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nse",
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple de la vallée du Luangwa, en Zambie.",
+        "usedIn": ["nse"],
+        "periodLabel": "Écrit dès 1799 sous une forme proche ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Nsenga désigne les habitants actuels de la vallée du Luangwa, à l'est de la Zambie, selon K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila. Les sources lues n'expliquent pas son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 21 : La Zambézie du Nord : la région du lac Malawi",
+                "author": "K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 670",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1799,
+              "to": 1799,
+              "label": "Fin 1799, journal publié en 1873"
+            },
+            "era": "polity",
+            "statement": "Le nom Nsenga a une forme proche, Sengas, dans le journal du père Francisco João Pinto, qui mène au retour l'expédition de Lacerda vers Tete. Elle arrive face au « pays des Sengas », où elle passe à gué l'Aruangoa, l'actuel Luangwa. C'est la plus ancienne trace de ce nom que le projet connaît ; on ne sait pas avec certitude s'il s'agit du même peuple.",
+            "formAsWritten": "Sengas",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Francisco João Pinto",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Lands of Cazembe : Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida et Francisco João Pinto, traduit par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/cu31924081259271",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 161",
+                "notes": "Londres, Royal Geographical Society, 1873. Journal de l'expédition portugaise de 1798-1799, traduit et annoté par Richard F. Burton. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1630,
+              "to": 1670,
+              "label": "Milieu du XVIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le peuple nsenga subit au milieu du XVIIe siècle l'invasion d'Undi et de ses guerriers, venus du royaume maravi. Les historiens ne s'accordent pas sur l'étendue de cette domination, selon K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 21 : La Zambézie du Nord : la région du lac Malawi",
+                "author": "K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 679",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1800,
+              "label": "Du XVIe au XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le peuple nsenga semble s'être formé par des échanges entre des lignées tumbuka venues de l'est et des immigrants apparentés aux Luba et aux Lunda venus de l'ouest, selon K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 21 : La Zambézie du Nord : la région du lac Malawi",
+                "author": "K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 670",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

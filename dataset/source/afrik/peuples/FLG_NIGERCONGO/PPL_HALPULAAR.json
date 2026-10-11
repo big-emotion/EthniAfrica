@@ -121,5 +121,336 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Haalpulaar'en désigne les gens de la vallée du fleuve Sénégal, au Fouta Toro, entre le Sénégal et la Mauritanie, qui se nomment ainsi eux-mêmes : « ceux qui parlent le pulaar ». D'autres noms existent : Toucouleur, donné par leurs voisins, et Torodbe pour un groupe de lettrés. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Haalpulaar'en",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "fuc",
+        "namedBy": null,
+        "shortLine": "« Ceux qui parlent le pulaar » : le nom que se donnent les gens du Fouta Toro.",
+        "usedIn": ["fuc"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Haalpulaar'en veut dire « ceux qui parlent le pulaar ». Il désigne tous ceux qui parlent cette langue, et c'est aussi le nom que se donnent les habitants du Fouta Toro, que les sources européennes appellent Toucouleur, selon François de Medeiros.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
+                "author": "François de Medeiros",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 152",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, codirigé par I. Hrbek, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 180, note 73",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1990,
+              "to": 1990,
+              "label": "Usage décrit en 1990"
+            },
+            "era": "modern",
+            "statement": "Le nom Haalpulaar'en est écrit Halpularen par François de Medeiros.",
+            "formAsWritten": "Halpularen",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
+                "author": "François de Medeiros",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 152",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, codirigé par I. Hrbek, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "Usage décrit en 1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Haalpulaar'en est écrit Hal pulaaren par Djibril Tamsir Niane, qui le traduit par « ceux qui parlent pular ».",
+            "formAsWritten": "Hal pulaaren",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 180, note 73",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Toucouleur",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom donné par leurs voisins wolof et seereer ; son origine reste discutée.",
+        "usedIn": ["fra"],
+        "periodLabel": "Écrit au début du XVIe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Toucouleur désigne les habitants du Fouta Toro, qui ne l'emploient pas eux-mêmes et se disent Haalpulaar'en. Son origine est discutée : les explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 3 : Étapes du développement de l'Islam et de sa diffusion en Afrique",
+                "author": "Mohammed El Fasi et Ivan Hrbek",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 98",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, codirigé par I. Hrbek, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 180, note 73",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
+                "author": "François de Medeiros",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 152",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, codirigé par I. Hrbek, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Époque coloniale"
+            },
+            "era": "colonial",
+            "statement": "Le nom Toucouleur sert aux ethnographes de l'époque coloniale à séparer les habitants du Fouta Toro des Fulbe pasteurs, comme un peuple distinct, selon François de Medeiros.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
+                "author": "François de Medeiros",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 152",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, codirigé par I. Hrbek, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "Usage décrit en 1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Toucouleur est écrit Tukulóór par Djibril Tamsir Niane : c'est ainsi que les appellent tous leurs voisins wolof et seereer.",
+            "formAsWritten": "Tukulóór",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 180, note 73",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1594,
+              "to": 1594,
+              "label": "1594"
+            },
+            "era": "polity",
+            "statement": "Le nom Toucouleur est écrit Tucurois par André Álvares de Almada, selon José da Silva Horta.",
+            "formAsWritten": "Tucurois",
+            "sources": [
+              {
+                "title": "« Nações », marcadores identitários e complexidades da representação étnica nas escritas portuguesas de viagem. Guiné do Cabo Verde (séculos XVI e XVII), Varia Historia, vol. 29, n° 51",
+                "author": "José da Silva Horta",
+                "year": 2013,
+                "url": "https://www.redalyc.org/pdf/3844/384434843002.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 659",
+                "notes": "Belo Horizonte, 2013, p. 649-675. Lu sur Redalyc le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1505,
+              "to": 1508,
+              "label": "1505-1508"
+            },
+            "era": "polity",
+            "statement": "Le nom Toucouleur est écrit Tucurois dans l'Esmeraldo de situ orbis de Duarte Pacheco Pereira, selon José da Silva Horta. Valentim Fernandes écrit Tucuroes vers les mêmes années. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Tucurois",
+            "birth": true,
+            "sources": [
+              {
+                "title": "« Nações », marcadores identitários e complexidades da representação étnica nas escritas portuguesas de viagem. Guiné do Cabo Verde (séculos XVI e XVII), Varia Historia, vol. 29, n° 51",
+                "author": "José da Silva Horta",
+                "year": 2013,
+                "url": "https://www.redalyc.org/pdf/3844/384434843002.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 659",
+                "notes": "Belo Horizonte, 2013, p. 649-675. Lu sur Redalyc le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1000,
+              "to": 1099,
+              "label": "XIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Takrūr désigne alors le pays de la basse vallée du Sénégal. Mohammed El Fasi et Ivan Hrbek jugent plus probable qu'il était alors peuplé de Soninke.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 3 : Étapes du développement de l'Islam et de sa diffusion en Afrique",
+                "author": "Mohammed El Fasi et Ivan Hrbek",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 98",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, codirigé par I. Hrbek, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Toucouleur viendrait de Takrūr, l'ancien nom du pays, que les voisins wolof et seereer prononcent Tukulóór, selon Djibril Tamsir Niane, et Mohammed El Fasi et Ivan Hrbek. José da Silva Horta le rattache au wolof Tukulër.",
+            "hypothesisGroup": "origine du nom Toucouleur",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 180, note 73",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 3 : Étapes du développement de l'Islam et de sa diffusion en Afrique",
+                "author": "Mohammed El Fasi et Ivan Hrbek",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 98",
+                "notes": "UNESCO, volume dirigé par M. El Fasi, codirigé par I. Hrbek, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              },
+              {
+                "title": "« Nações », marcadores identitários e complexidades da representação étnica nas escritas portuguesas de viagem. Guiné do Cabo Verde (séculos XVI e XVII), Varia Historia, vol. 29, n° 51",
+                "author": "José da Silva Horta",
+                "year": 2013,
+                "url": "https://www.redalyc.org/pdf/3844/384434843002.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 659",
+                "notes": "Belo Horizonte, 2013, p. 649-675. Lu sur Redalyc le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Torodbe",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fuc",
+        "namedBy": null,
+        "shortLine": "Le nom d'une société de lettrés musulmans, devenu un synonyme de Fulbe.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1800,
+              "to": 1899,
+              "label": "XIXe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Torodbe désigne une société de lettrés musulmans d'origines diverses, qui parlaient la langue des Fulbe. Dans tout le Soudan occidental, il devient un synonyme de Fulbe, selon Aziz Batran.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 21 : Les révolutions islamiques du XIXe siècle en Afrique de l'Ouest",
+                "author": "Aziz Batran",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 583",
+                "notes": "UNESCO, volume dirigé par J. F. A. Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
