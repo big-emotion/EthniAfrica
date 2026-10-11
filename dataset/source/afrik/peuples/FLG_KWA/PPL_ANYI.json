@@ -113,5 +113,190 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Anyi désigne un peuple akan de l'est de la Côte d'Ivoire et de l'ouest du Ghana, qui se nomme lui-même ainsi. En français, on l'écrit le plus souvent Agni, une graphie qui note le même son. Ses voisins lui donnaient d'autres noms, comme Aowin chez les Fanti. On ne sait pas avec certitude d'où vient le nom Anyi ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Anyi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "any",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne, écrit Agni en français dès la fin des années 1880.",
+        "periodLabel": "Écrit depuis la fin des années 1880 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Anyi, aussi écrit Agni, désigne aujourd'hui un peuple de la forêt de l'est de la Côte d'Ivoire et du Ghana, qui parle une langue kwa, selon l'Encyclopædia Britannica. Vers le milieu du XVIIIe siècle, la plupart des Anyi ont quitté le pays qui est aujourd'hui le Ghana, chassés par les Ashanti. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Anyi",
+                "author": "Encyclopædia Britannica",
+                "year": null,
+                "url": "https://www.britannica.com/topic/Anyi",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article des éditeurs de l'Encyclopædia Britannica, lu en ligne le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Anyi est écrit Añi par Maurice Delafosse en 1904, en titre de la partie qu'il consacre aux Agni. Il les divise en dix-huit tribus, de la Tano à l'est jusqu'au Bandama à l'ouest.",
+            "formAsWritten": "Añi",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 106",
+                "notes": "Paris, Ernest Leroux. Lu dans l'exemplaire numérisé de l'université de Toronto le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom Anyi est donné sous la forme Ani par l'administrateur colonial Maurice Delafosse en 1900 : c'est, selon lui, le nom que se donnent eux-mêmes les Agni de l'est, ceux de la Comoé, alors que ceux de l'ouest se disent Baoulé.",
+            "formAsWritten": "Ani",
+            "sources": [
+              {
+                "title": "Essai de manuel de la langue agni, parlée dans la moitié orientale de la Côte d'Ivoire",
+                "author": "Maurice Delafosse",
+                "year": 1900,
+                "url": "https://archive.org/details/essaidemanuelde00delagoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 211",
+                "notes": "Paris. Lu dans l'exemplaire numérisé le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1889,
+              "label": "Voyage de 1887-1889"
+            },
+            "statement": "Le nom Anyi est écrit Agni, à la française, par l'officier Louis-Gustave Binger, qui traverse l'Anno à la fin de son voyage. Il écrit que c'est « le vrai nom, le nom des indigènes », celui qu'ils donnent à la fois au peuple et à sa langue, et le donne aux gens de l'Anno, de l'Indénié, du Sanwi et d'autres pays. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà dans ces pays avant lui.",
+            "formAsWritten": "Agni",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Louis-Gustave Binger",
+                "role": "officier français, auteur du récit de voyage"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, 1887-1889",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://archive.org/details/dunigeraugolfede00bing",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 118",
+                "notes": "Paris, Hachette. Exemplaire numérisé sans page de titre, qui réunit les deux volumes et garde la pagination du récit paru dans Le Tour du monde ; lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Agni",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "Des auteurs de langue française",
+        "shortLine": "La graphie française du nom Anyi, courante en Côte d'Ivoire.",
+        "periodLabel": "Écrit depuis la fin des années 1880 ; en usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Agni est l'autre forme sous laquelle l'Encyclopædia Britannica connaît les Anyi. Louis-Gustave Binger l'employait déjà à la fin des années 1880, en le donnant pour le nom que ce peuple se donne.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Anyi",
+                "author": "Encyclopædia Britannica",
+                "year": null,
+                "url": "https://www.britannica.com/topic/Anyi",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article des éditeurs de l'Encyclopædia Britannica, lu en ligne le 11 octobre 2026."
+              },
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, 1887-1889",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://archive.org/details/dunigeraugolfede00bing",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 118",
+                "notes": "Paris, Hachette. Exemplaire numérisé sans page de titre, qui réunit les deux volumes et garde la pagination du récit paru dans Le Tour du monde ; lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Aowin",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Fanti, selon Maurice Delafosse",
+        "shortLine": "Le nom que les Fanti donnaient aux Agni, selon un écrit de 1904.",
+        "periodLabel": "Noté en 1904",
+        "accounts": [
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Aowin a une forme proche, Aowim, chez Maurice Delafosse, qui écrit en 1904 que les Fanti appellent ainsi les Agni. Les Ashanti les appellent alors Awõñüi, et les Abron Bonnaï ou Monnèi-fo, selon lui.",
+            "formAsWritten": "Aowim",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 106",
+                "notes": "Paris, Ernest Leroux. Lu dans l'exemplaire numérisé de l'université de Toronto le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
