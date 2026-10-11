@@ -6,7 +6,7 @@
   },
   "id": "PAT_NZINGA",
   "nameMain": "Nzinga",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Nzinga",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -97,7 +97,7 @@
   "gaps": [
     {
       "fieldPath": "nameSystem",
-      "reason": "Les sources consultées décrivent Nzinga comme le nom d'une personne, la reine du Ndongo et du Matamba, et comme un nom porté par des rois du Kongo ; aucune ne parle d'un clan. La classe et l'unité sociale indiquées sur cette fiche sont provisoires, en attendant une classe pour le nom personnel d'une reine."
+      "reason": "Les sources consultées décrivent Nzinga comme le nom d'une personne, la reine du Ndongo et du Matamba, et comme un nom porté par des rois du Kongo ; aucune ne parle d'un clan. Le modèle n'a pas de case pour le nom personnel d'un souverain : la fiche le range parmi les patronymes non héréditaires, la case la plus proche."
     },
     {
       "fieldPath": "origin",
@@ -275,6 +275,7 @@
               "to": 1626,
               "label": "7 mars 1626"
             },
+            "era": "colonial",
             "statement": "Le nom Ginga est la forme que donnent les Portugais : le gouverneur de Luanda, Fernão de Sousa, écrit au roi du Portugal que « dona Anna Ginga » occupe le trône du Ndongo après la mort de son frère. C'est la plus ancienne trace de cette forme que le projet connaît.",
             "formAsWritten": "dona Anna Ginga",
             "birth": true,

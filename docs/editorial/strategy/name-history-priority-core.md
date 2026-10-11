@@ -175,6 +175,36 @@ review:
     a family testimony. It waits for an oral account recorded properly, or
     for a source we can open.
 
+- **Waves 8 and 9 of the long tail — ruled 2026-10-11.** Source rulings:
+  - community name dictionaries, such as Wikinames, YorubaNames or a
+    similar lexicon made for one language's names, may support a hypothesis,
+    always attributed to them in the text. Wikinames never supports a
+    hypothesis alone;
+  - « serviteur de Michel » for Ghebremichael (`PAT_GHEBREMICHAEL_PATRONYMIC`)
+    is accepted as a conditional hypothesis: Leslau's dictionary gives the
+    word gabr, « servant », not the name itself;
+  - « Aliyu is the Hausa form of Ali » (`PAT_ALIYU`) rests on Behind the Name
+    alone: kept, attributed, to replace if a scholarly source turns up;
+  - births kept: Yaméogo in the American intelligence bulletin of 1960
+    (`PAT_YAMEOGO`), Gnahore without its accent in 1969 (`PAT_GNAHORE`),
+    the close form Kwate in Zimmermann's grammar of 1858 (`PAT_QUARTEY`),
+    Niggli's list of 2008 for Tapsoba (`PAT_TAPSOBA`, not Delobsom 1932) and
+    Hamilton's history of 1912 for the Safwa (`PPL_SAFWA`);
+  - one title, one locator: when two printings of one work are cited at
+    different addresses, the title carries the printing, as « (édition de
+    Boston) » or « (édition de New York) »;
+  - the Afizere community's own site is kept for now for the 1914 Jarawa
+    birth: replace it with a published source.
+
+  To upgrade or follow up:
+  - Berta stays the current name of the people (`PPL_BERTA`). Wave 8
+    reports that Benishangul officially replaced it in 2022: read the text
+    of that decision before changing the fiche;
+  - the language fiches `grb` and `wti` give later births than the new
+    people fiches of the Grebo and the Berta: align them;
+  - the self-names Ekid (`PPL_EKET`) and Ngbanya (`PPL_GONJA`) are on
+    [the oral verification list](self-names-to-verify-orally.md).
+
 - **What may be a birth — ruled 2026-10-10.** A close form may be a birth
   when the tile says so (« a une forme proche », Coulibaly and Koorabarri). A
   press article (Soudan du Sud, 2011), a form a chronicler gives as the

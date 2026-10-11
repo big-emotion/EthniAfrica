@@ -11,13 +11,19 @@
     {
       "spelling": "Diomandé",
       "attestations": [
-        { "countryId": "CIV", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "CIV",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     },
     {
       "spelling": "Diomande",
       "attestations": [
-        { "countryId": "CIV", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "CIV",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -47,9 +53,9 @@
   },
   "peoples": [
     {
-      "peopleId": "PPL_DAN",
+      "peopleId": "PPL_MALINKE",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["hga-iv-person"]
     }
   ],
   "countries": [

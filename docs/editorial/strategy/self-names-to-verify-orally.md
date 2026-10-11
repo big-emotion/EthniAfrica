@@ -1,6 +1,6 @@
 ---
 title: "Self-names to verify through oral sources (« à vérifier par sources orales »)"
-status: "ruled 2026-10-10, waves 3, 4, 5 and 6 added 2026-10-11 — kept as they are until an oral or fieldwork pass"
+status: "ruled 2026-10-10, waves 3, 4, 5, 6 and 8 added 2026-10-11 — kept as they are until an oral or fieldwork pass"
 related:
   - docs/editorial/doctrine.md
   - docs/editorial/strategy/colonial-periods.md
@@ -92,6 +92,17 @@ One reading waits for a speaker rather than for a source: on `PPL_SOLONGO`,
 the link between Solongo and _nsolotu_, the name two elders of Soyo gave
 their ancestors (Sacala Kosi, 2022), is the agent's reading. It stays
 flagged until a Kikongo speaker checks it.
+
+## Wave 8 of the long tail — ruled 2026-10-11
+
+The fiche gives these as self-names on its own word: no source we opened says
+the people use them for themselves. The operator ruled to keep them and to
+check each one orally.
+
+| Fiche       | Name    | What is missing                                                                      |
+| ----------- | ------- | ------------------------------------------------------------------------------------ |
+| `PPL_EKET`  | Ekid    | a source stating the people use the name; Glottolog lists it only as a language name |
+| `PPL_GONJA` | Ngbanya | a source stating the people use the name for themselves                              |
 
 ## Related case: Bilād Ṣinqīṭ (`MRT`)
 

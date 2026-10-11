@@ -25,12 +25,12 @@
     "writtenChronicles": [],
     "linguisticReconstructions": [
       {
-        "claim": "Ghebre procède du guèze gäbrä, « serviteur de » ; Ghebremichael se lit « serviteur de Michel », composé théophore formé sur l'archange.",
-        "claimStatus": "established",
-        "sourceRefs": ["leslau-1987-geez", "familysearch-ethiopia-naming"]
+        "claim": "Ghebremichael se lirait « serviteur de Michel », composé sur le nom de l'archange : son premier élément répondrait au guèze gabr, « esclave, serviteur », que donne le dictionnaire de Wolf Leslau. Le dictionnaire ne parle pas de ce nom ; la lecture reste une hypothèse.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["leslau-1987-geez"]
       },
       {
-        "claim": "Le système habesha ne comporte pas de nom de famille héréditaire : le second élément est le nom personnel du père, celui du grand-père servant à désambiguïser. Il change donc à chaque génération.",
+        "claim": "En Éthiopie, on ne porte pas de nom de famille héréditaire : après son prénom, on porte le nom personnel du père, qui change donc à chaque génération, selon le Cultural Atlas.",
         "claimStatus": "established",
         "sourceRefs": ["cultural-atlas-ethiopian-naming"]
       }
@@ -69,7 +69,7 @@
       "url": "https://culturalatlas.sbs.com.au/ethiopian-culture/ethiopian-culture-naming",
       "tier": "referenced",
       "source_kind": "linguistic_reference",
-      "notes": "Cultural Atlas, publié par SBS (radiodiffuseur public australien). Établit l'absence de nom de famille et la structure prénom + prénom du père, le grand-père servant à désambiguïser."
+      "notes": "Cultural Atlas, publié par SBS (radiodiffuseur public australien), lu le 11 octobre 2026 à sa nouvelle adresse, theculturalatlas.org. Il dit qu'en Éthiopie on n'a pas de nom de famille et décrit la forme « prénom, puis prénom du père ». Il ne parle ni du nom du grand-père, ni de l'Érythrée, ni du nom Ghebremichael."
     },
     {
       "sourceKey": "leslau-1987-geez",
@@ -78,14 +78,6 @@
       "tier": "official",
       "source_kind": "academic",
       "notes": "Leslau, Wolf, Otto Harrassowitz, Wiesbaden, 1987. Lexique de référence du guèze. Les quatre éléments portés par les fiches habesha y ont été vérifiés un à un dans le texte intégral : gabr « esclave, serviteur, vassal » (le verbe gabra valant « faire, agir »), wald « fils » — l'état construit walda wald donnant « petit-fils » —, hayl « puissance, force, vaillance » et kabr « honneur, gloire, prestige ». Remplace ici un site de généalogie qui portait seul ces étymologies."
-    },
-    {
-      "sourceKey": "familysearch-ethiopia-naming",
-      "title": "Ethiopia Naming Customs",
-      "url": "https://www.familysearch.org/en/wiki/Ethiopia_Naming_Customs",
-      "tier": "unverified",
-      "source_kind": "community",
-      "notes": "Wiki généalogique de FamilySearch. Contributif : cité pour les éléments guèzes Gäbrä (« serviteur de ») et Wäldä (« fils de »), à recouper sur un dictionnaire de guèze."
     }
   ],
   "gaps": [
@@ -106,10 +98,6 @@
       "reason": "L'homonymie est la règle et non l'exception dans un système patronymique non héréditaire : elle n'y est pas une donnée à recenser."
     }
   ],
-  "patronymicChainDepth": {
-    "generations": 3,
-    "sourceRefs": ["cultural-atlas-ethiopian-naming"]
-  },
   "nameHistory": {
     "summary": "Le nom Ghebremichael est un prénom porté en Érythrée. Il sert aussi de second nom : c'est alors le prénom du père, et non un nom de famille. Il se lirait « serviteur de Michel » ; nous présentons plus bas la source de cette lecture.",
     "names": [

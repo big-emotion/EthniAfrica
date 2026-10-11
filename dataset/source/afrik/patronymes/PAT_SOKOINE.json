@@ -6,7 +6,7 @@
   },
   "id": "PAT_SOKOINE",
   "nameMain": "Sokoine",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Sokoine",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -114,7 +114,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "La notice UONGOZI rattache Edward Moringe Sokoine à la communauté maasaï, mais ni cette notice, ni l’article de Sane, ni les recherches « Sokoine Maa clan/name » n’établissent si Sokoine est un nom de clan, un nom personnel ou une forme héritée. Faute de meilleure preuve, le classement comme nom de clan reste provisoire."
+      "reason": "Les sources lues ne disent pas si Sokoine est un nom de clan, un nom personnel ou un nom hérité. Le modèle n'a pas de case « autre » : la fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     }
   ],
   "nameHistory": {
