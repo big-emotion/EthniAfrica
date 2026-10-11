@@ -133,5 +133,393 @@
         "source_kind": "intergovernmental"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bantous somaliens désigne des communautés d'agriculteurs du sud de la Somalie, dans les vallées du Juba et du Shabelle, qui se disent simplement Bantu. Les unes vivaient déjà en Somalie, les autres descendent d'Africains de l'Est réduits en esclavage au XIXe siècle. D'autres noms existent : Gosha ou Wagosha, Jareer, Mushunguli, et des noms de mépris comme adoon. Les sources ne s'accordent pas toujours sur l'origine de ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Bantu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent la plupart d'entre eux ; on dit aussi Bantous somaliens.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bantous somaliens réunit trois sortes de communautés : celles qui sont originaires de Somalie, celles des descendants d'esclaves venus de peuples de langue bantoue et intégrés à la société somalie, et celles qui ont gardé une langue bantoue et le souvenir de l'Afrique de l'Est, selon Dan Van Lehman et Omar Eno. Les sources que nous avons lues ne disent pas quand ce nom collectif est apparu.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Somali Bantu: Their History and Culture",
+                "author": "Dan Van Lehman et Omar Eno",
+                "year": 2003,
+                "url": "http://www.culturalorientation.net/content/download/1359/7917/version/2/file/The+Somali+Bantu.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Washington, Center for Applied Linguistics, Cultural Orientation Resource Center, Culture Profile n° 16, février 2003, lu en texte intégral le 11 octobre 2026. La page écrit : « The Somali Bantu can be subdivided into distinct groups. There are those who are indigenous to Somalia, those who were brought to Somalia as slaves from Bantu-speaking tribes but integrated into Somali society, and those who were brought to Somalia as slaves but maintained, to varying degrees, their ancestral culture, Bantu languages, and sense of southeast African identity »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bantu est celui que la plupart de ces réfugiés se donnent, selon Dan Van Lehman et Omar Eno. Ceux qui rattachent leurs ancêtres à un peuple d'Afrique de l'Est se disent aussi Shanbara, Shangama ou Wagosha.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Somali Bantu: Their History and Culture",
+                "author": "Dan Van Lehman et Omar Eno",
+                "year": 2003,
+                "url": "http://www.culturalorientation.net/content/download/1359/7917/version/2/file/The+Somali+Bantu.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3-4",
+                "notes": "Washington, Center for Applied Linguistics, Cultural Orientation Resource Center, Culture Profile n° 16, février 2003, lu en texte intégral le 11 octobre 2026. Page 3 : ceux qui ont fui la vallée du Juba « are politely referred to as Wagosha (\"people of the forest\") or Jareer » ; « Derogatory terms to describe the Somali Bantu include adoon and habash, which translate as \"slave\" » ; « The Bantu refugees generally refer to themselves simply as the Bantu » ; « The word Mushunguli may have evolved from the word Mzigua ». Page 4 : la texture des cheveux distingue « jareer (kinky hair for the Bantu people) and jilec (soft hair for the non-Bantu) »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gosha",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des gens de la vallée du Juba et de leur pays ; on dit aussi Wagosha.",
+        "periodLabel": "Écrit dès 1910, sous une forme proche",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Gosha, écrit aussi Gosa, désigne les gens de la basse vallée du Juba, qui descendent d'anciens esclaves venus d'Afrique de l'Est et regroupés là en communautés libres, selon Eike Haberland. Son origine n'a qu'une explication dans les sources que nous avons lues ; elle est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 24 : La corne de l'Afrique",
+                "author": "E. Haberland",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 786",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, édition française lue dans l'exemplaire numérisé le 11 octobre 2026. La page écrit : « Nous savons de manière certaine que les Gosa de la basse vallée du Juba descendent d'anciens esclaves de l'Afrique orientale, qui s'étaient regroupés là pour former des communautés libres. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Wagosha, « les gens de la forêt », est une façon polie de nommer ceux qui ont fui la vallée du Juba, autrefois couverte de forêts, selon Dan Van Lehman et Omar Eno. Certains se le donnent eux-mêmes.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Somali Bantu: Their History and Culture",
+                "author": "Dan Van Lehman et Omar Eno",
+                "year": 2003,
+                "url": "http://www.culturalorientation.net/content/download/1359/7917/version/2/file/The+Somali+Bantu.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3-4",
+                "notes": "Washington, Center for Applied Linguistics, Cultural Orientation Resource Center, Culture Profile n° 16, février 2003, lu en texte intégral le 11 octobre 2026. Page 3 : ceux qui ont fui la vallée du Juba « are politely referred to as Wagosha (\"people of the forest\") or Jareer » ; « Derogatory terms to describe the Somali Bantu include adoon and habash, which translate as \"slave\" » ; « The Bantu refugees generally refer to themselves simply as the Bantu » ; « The word Mushunguli may have evolved from the word Mzigua ». Page 4 : la texture des cheveux distingue « jareer (kinky hair for the Bantu people) and jilec (soft hair for the non-Bantu) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1599,
+              "label": "Avant le XVIe siècle, selon le Livre des Zenj"
+            },
+            "era": "polity",
+            "statement": "On parle alors de Koshur pour les peuples de langue bantoue de la vallée du Juba : c'est le nom que leur donnent les Arabes de la côte, selon le Livre des Zenj que cite Vinigi Grottanelli. Ces peuples en sont chassés par les Galla ; les Bantous d'aujourd'hui ont une autre origine, ajoute-t-il.",
+            "before": true,
+            "sources": [
+              {
+                "title": "I Bantu del Giuba nelle tradizioni dei Wazegua",
+                "author": "Vinigi L. Grottanelli",
+                "year": 1953,
+                "url": "https://gh.copernicus.org/articles/8/249/1953/gh-8-249-1953.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 251",
+                "notes": "Geographica Helvetica, vol. 8, 1953, p. 249-260, lu en texte intégral le 11 octobre 2026. L'auteur, ethnologue italien, a recueilli des traditions zigua sur le bas Juba pendant l'hiver 1951-1952. La page écrit que Koshur était, d'après le Livre des Zenj, « l'appellativo con cui gli Arabi della costa designavano complessivamente i Bantu o \"Zenj\" del Giuba », et que l'arrivée des Galla, au plus tard au XVIe siècle, chassa ces peuples de la vallée. Elle ajoute que les Bantous du Juba d'aujourd'hui sont d'une composition « molto diversa da quella di un tempo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1840,
+              "to": 1899,
+              "label": "Des années 1840 à la fin du XIXe siècle"
+            },
+            "statement": "Le nom Goshaland désigne chez Dan Van Lehman et Omar Eno le refuge que fondent, le long du Juba, des esclaves en fuite arrivés de la vallée du Shabelle à partir des années 1840. Les Zigua en seraient les fondateurs ; l'Égypte, Zanzibar, l'Italie et la Grande-Bretagne reconnaissent ce refuge comme indépendant à la fin du XIXe siècle.",
+            "sources": [
+              {
+                "title": "The Somali Bantu: Their History and Culture",
+                "author": "Dan Van Lehman et Omar Eno",
+                "year": 2003,
+                "url": "http://www.culturalorientation.net/content/download/1359/7917/version/2/file/The+Somali+Bantu.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3 et 8",
+                "notes": "Washington, Center for Applied Linguistics, Cultural Orientation Resource Center, Culture Profile n° 16, février 2003, lu en texte intégral le 11 octobre 2026. Page 3 : « Most scholars believe that the Wazigua are the founders of Goshaland along the Juba River, a safe haven for runaway slaves. Late in the 19th century, Egypt, Zanzibar, Italy, and Britain recognized this haven as an independent entity ». Page 8 : « In the 1840s, the first fugitive slaves from the Shabelle valley arrived and settled along the Juba River »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gosha apparaît, sous la forme italienne Vagoscia, dans un recensement sommaire des villages de la rive gauche du Juba que fait le capitaine Ferrari en 1910, selon Vinigi Grottanelli. C'est la plus ancienne trace de ce nom que le projet connaît. Les communautés qu'il désigne existaient déjà avant lui.",
+            "formAsWritten": "Vagoscia",
+            "birth": true,
+            "sources": [
+              {
+                "title": "I Bantu del Giuba nelle tradizioni dei Wazegua",
+                "author": "Vinigi L. Grottanelli",
+                "year": 1953,
+                "url": "https://gh.copernicus.org/articles/8/249/1953/gh-8-249-1953.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 251",
+                "notes": "Geographica Helvetica, vol. 8, 1953, p. 249-260, lu en texte intégral le 11 octobre 2026. L'auteur, ethnologue italien, a recueilli des traditions zigua sur le bas Juba pendant l'hiver 1951-1952. La page écrit : « Nel 1910, il capitano Ferrari procedette ad un sommario censimento dei paesi \"Vagoscia\", limitato naturalmente alla sponda sinistra del Giuba ». La note renvoie à G. Ferrari, Il Basso Giuba italiano e le concessioni agricole nella Goscia, Rome, 1910."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1924,
+              "to": 1924,
+              "label": "Proposée en 1924"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gosha serait la forme bantoue d'un mot somali qui veut dire « forêt », comme gol : les Wagosha seraient « les gens de la forêt », d'après la forêt du fleuve qu'ils défrichent pour cultiver, selon Vinigi Grottanelli, qui s'appuie sur un ouvrage de M. Colucci paru en 1924. Grottanelli en conclut que ce nom ne dit rien de l'origine de ceux qu'il désigne.",
+            "hypothesisGroup": "origine du nom Gosha",
+            "sources": [
+              {
+                "title": "I Bantu del Giuba nelle tradizioni dei Wazegua",
+                "author": "Vinigi L. Grottanelli",
+                "year": 1953,
+                "url": "https://gh.copernicus.org/articles/8/249/1953/gh-8-249-1953.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 249",
+                "notes": "Geographica Helvetica, vol. 8, 1953, p. 249-260, lu en texte intégral le 11 octobre 2026. L'auteur, ethnologue italien, a recueilli des traditions zigua sur le bas Juba pendant l'hiver 1951-1952. La page écrit : « Quest'ultimo etnonimo pare sia la locale versione bantu del somalo \"gol\", dove gosha al pari di gol vale \"foresta\" ; dunque WaGosha \"gente della foresta\" », puis : « Si tratta quindi di una designazione priva di valore etnico ». La note renvoie à M. Colucci, Principi di diritto consuetudinario della Somalia italiana meridionale, Florence, 1924, p. 63-64."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Jareer",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un mot qui désigne les cheveux crépus ; on l'emploie pour nommer ces communautés.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Jareer désigne les cheveux crépus des Bantous, par opposition à jilec, les cheveux souples des autres Somaliens. C'est une façon polie de les nommer, mais ce trait sert aussi à les tenir à l'écart, selon Dan Van Lehman et Omar Eno. On ne sait pas avec certitude quand ce nom a été écrit pour la première fois.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Somali Bantu: Their History and Culture",
+                "author": "Dan Van Lehman et Omar Eno",
+                "year": 2003,
+                "url": "http://www.culturalorientation.net/content/download/1359/7917/version/2/file/The+Somali+Bantu.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3-4",
+                "notes": "Washington, Center for Applied Linguistics, Cultural Orientation Resource Center, Culture Profile n° 16, février 2003, lu en texte intégral le 11 octobre 2026. Page 3 : ceux qui ont fui la vallée du Juba « are politely referred to as Wagosha (\"people of the forest\") or Jareer » ; « Derogatory terms to describe the Somali Bantu include adoon and habash, which translate as \"slave\" » ; « The Bantu refugees generally refer to themselves simply as the Bantu » ; « The word Mushunguli may have evolved from the word Mzigua ». Page 4 : la texture des cheveux distingue « jareer (kinky hair for the Bantu people) and jilec (soft hair for the non-Bantu) »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mushunguli",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des Zigua de Somalie, que portent aussi d'autres Bantous liés à l'Afrique de l'Est.",
+        "periodLabel": "Écrit dès 1913",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mushunguli désigne les Zigua de Somalie, qui ont le mieux gardé la langue et la culture de leurs ancêtres d'Afrique de l'Est. Avant la guerre civile, se dire Mushunguli était mal vu ; dans les camps de réfugiés, ce nom est devenu utile, parce qu'une réinstallation en Tanzanie ou au Mozambique demandait de prouver un lien avec un peuple d'Afrique de l'Est, selon Dan Van Lehman et Omar Eno.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Somali Bantu: Their History and Culture",
+                "author": "Dan Van Lehman et Omar Eno",
+                "year": 2003,
+                "url": "http://www.culturalorientation.net/content/download/1359/7917/version/2/file/The+Somali+Bantu.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3-4",
+                "notes": "Washington, Center for Applied Linguistics, Cultural Orientation Resource Center, Culture Profile n° 16, février 2003, lu en texte intégral le 11 octobre 2026. Page 3 : ceux qui ont fui la vallée du Juba « are politely referred to as Wagosha (\"people of the forest\") or Jareer » ; « Derogatory terms to describe the Somali Bantu include adoon and habash, which translate as \"slave\" » ; « The Bantu refugees generally refer to themselves simply as the Bantu » ; « The word Mushunguli may have evolved from the word Mzigua ». Page 4 : la texture des cheveux distingue « jareer (kinky hair for the Bantu people) and jilec (soft hair for the non-Bantu) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1610,
+              "to": 1612,
+              "label": "1610 et 1612"
+            },
+            "statement": "Le nom Mushunguli a peut-être une forme proche, Mosungalos ou Musungulos, dans des sources portugaises sur deux attaques contre l'île de Mombasa, en 1610 et 1612, selon Vinigi Grottanelli. Il ajoute que ce peuple est mal défini, et que d'autres textes portugais en font un synonyme de Nyika. C'est la plus ancienne trace de ce nom que le projet connaît. On ne sait pas s'il s'agit des mêmes gens que les Mushunguli d'aujourd'hui.",
+            "formAsWritten": "Mosungalos",
+            "birth": true,
+            "sources": [
+              {
+                "title": "I Bantu del Giuba nelle tradizioni dei Wazegua",
+                "author": "Vinigi L. Grottanelli",
+                "year": 1953,
+                "url": "https://gh.copernicus.org/articles/8/249/1953/gh-8-249-1953.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 252",
+                "notes": "Geographica Helvetica, vol. 8, 1953, p. 249-260, lu en texte intégral le 11 octobre 2026. L'auteur, ethnologue italien, a recueilli des traditions zigua sur le bas Juba pendant l'hiver 1951-1952. La page écrit que les « Mushunguli » d'Elliott et les « Musciongolo » de Colucci ont une « modesta ma comunque antica notorietà storica » : « Già ne parlano le fonti portoghesi con i nomi di Mosungalos, Musungulos, Mosoungalos, etc., a proposito di due attacchi sferrati da questa tribù contro l'isola di Mombasa nel 1610 e nel 1612 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mushunguli figure en 1913 chez F. Elliott, qui le compte parmi les tribus wagosha de la rive droite du Juba, toutes formées d'esclaves en fuite et alliées pour se protéger des Somaliens, selon Vinigi Grottanelli.",
+            "sources": [
+              {
+                "title": "I Bantu del Giuba nelle tradizioni dei Wazegua",
+                "author": "Vinigi L. Grottanelli",
+                "year": 1953,
+                "url": "https://gh.copernicus.org/articles/8/249/1953/gh-8-249-1953.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 252",
+                "notes": "Geographica Helvetica, vol. 8, 1953, p. 249-260, lu en texte intégral le 11 octobre 2026. L'auteur, ethnologue italien, a recueilli des traditions zigua sur le bas Juba pendant l'hiver 1951-1952. La page cite Elliott, Jubaland and its inhabitants, Geographical Journal, 1913 : « a confederation of several tribes bound together for mutual protection against the Somali » : « Wa-Zugoa, Yao, Wa-Swaheli, Wagendu and Mushunguli. All these tribes consist of fugitive slaves from the Somali »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1952,
+              "to": 1952,
+              "label": "Proposée en 1952"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mushunguli viendrait de Wa-Shungwaya, selon A. H. J. Prins, cité par Vinigi Grottanelli, qui tient cette explication pour la plus plausible.",
+            "hypothesisGroup": "origine du nom Mushunguli",
+            "sources": [
+              {
+                "title": "I Bantu del Giuba nelle tradizioni dei Wazegua",
+                "author": "Vinigi L. Grottanelli",
+                "year": 1953,
+                "url": "https://gh.copernicus.org/articles/8/249/1953/gh-8-249-1953.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 252",
+                "notes": "Geographica Helvetica, vol. 8, 1953, p. 249-260, lu en texte intégral le 11 octobre 2026. L'auteur, ethnologue italien, a recueilli des traditions zigua sur le bas Juba pendant l'hiver 1951-1952. La page écrit : « L'etimologia suggerita dal Prins, Wa-Shungwaya \"Mossungualos\" è forse la più plausibile ; errata è certo quella avanzata dal Michels, che fa derivare il nome da \"Mzigula\" »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Proposée en 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Mushunguli viendrait de Mzigua, le nom d'une personne du peuple zigua, selon Dan Van Lehman et Omar Eno. Vinigi Grottanelli jugeait déjà fausse une explication semblable, qui tirait le nom de Mzigula.",
+            "hypothesisGroup": "origine du nom Mushunguli",
+            "sources": [
+              {
+                "title": "The Somali Bantu: Their History and Culture",
+                "author": "Dan Van Lehman et Omar Eno",
+                "year": 2003,
+                "url": "http://www.culturalorientation.net/content/download/1359/7917/version/2/file/The+Somali+Bantu.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3-4",
+                "notes": "Washington, Center for Applied Linguistics, Cultural Orientation Resource Center, Culture Profile n° 16, février 2003, lu en texte intégral le 11 octobre 2026. Page 3 : ceux qui ont fui la vallée du Juba « are politely referred to as Wagosha (\"people of the forest\") or Jareer » ; « Derogatory terms to describe the Somali Bantu include adoon and habash, which translate as \"slave\" » ; « The Bantu refugees generally refer to themselves simply as the Bantu » ; « The word Mushunguli may have evolved from the word Mzigua ». Page 4 : la texture des cheveux distingue « jareer (kinky hair for the Bantu people) and jilec (soft hair for the non-Bantu) »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Adoon",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de mépris, qui veut dire « esclave ».",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Adoon, comme habash, veut dire « esclave » : ce sont des termes de mépris pour les Bantous de Somalie, selon Dan Van Lehman et Omar Eno.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Somali Bantu: Their History and Culture",
+                "author": "Dan Van Lehman et Omar Eno",
+                "year": 2003,
+                "url": "http://www.culturalorientation.net/content/download/1359/7917/version/2/file/The+Somali+Bantu.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3-4",
+                "notes": "Washington, Center for Applied Linguistics, Cultural Orientation Resource Center, Culture Profile n° 16, février 2003, lu en texte intégral le 11 octobre 2026. Page 3 : ceux qui ont fui la vallée du Juba « are politely referred to as Wagosha (\"people of the forest\") or Jareer » ; « Derogatory terms to describe the Somali Bantu include adoon and habash, which translate as \"slave\" » ; « The Bantu refugees generally refer to themselves simply as the Bantu » ; « The word Mushunguli may have evolved from the word Mzigua ». Page 4 : la texture des cheveux distingue « jareer (kinky hair for the Bantu people) and jilec (soft hair for the non-Bantu) »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -124,5 +124,94 @@
         "source_kind": "official_statistics"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Dawro désigne un peuple de langue omotique du sud-ouest de l'Éthiopie, entre l'Omo et la Gojeb, qui se nomme lui-même Dawuro. Il a aussi été appelé Kullo. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Dawro",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "dwr",
+        "namedBy": null,
+        "shortLine": "Le nom d'un ancien royaume du sud-ouest de l'Éthiopie, aujourd'hui celui d'une zone.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par les auteurs"
+            },
+            "era": "modern",
+            "statement": "Le nom Dawro désigne aujourd'hui un peuple de langue omotique et la zone administrative créée pour lui après 1991, dont la capitale est Tercha ; sa langue s'appelle le dawrotsuwa, selon Mesfin Desta Kute, Jira Mekonnen Choroke et Dejene Gemechu Chala. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Segregating the Living and the Dead: The Case of the Dawro in Ethiopia, Ethiopian Journal of Social and Language Studies, 8 (2)",
+                "author": "Mesfin Desta Kute, Jira Mekonnen Choroke et Dejene Gemechu Chala",
+                "year": 2021,
+                "url": "https://journals.ju.edu.et/index.php/ejssls/article/download/4751/1723/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 26",
+                "notes": "Université de Jimma, revue en accès libre, lue en texte intégral le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Époque des royaumes du Sud"
+            },
+            "era": "polity",
+            "statement": "Le nom Dauro désigne, chez E. Haberland, l'un des États fondés dans les hautes terres du sud de l'Éthiopie sous l'influence de l'empire chrétien, avec le Wolayta et le Kaffa. Il cite à part le Dawāro parmi les États musulmans de la région.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 24 : La corne de l'Afrique",
+                "author": "E. Haberland",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 767 et p. 774",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kullo",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un autre nom du peuple et de sa langue, que relèvent encore les catalogues de langues.",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kullo figure, avec Konta, parmi les autres noms de la langue dawro que relève le catalogue Glottolog. Les sources que nous avons lues ne disent ni qui a donné ce nom ni quand.",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Dawro (dawr1236)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/dawr1236",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 11 octobre 2026. Noms relevés : Dawro, Konta, Kullo."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

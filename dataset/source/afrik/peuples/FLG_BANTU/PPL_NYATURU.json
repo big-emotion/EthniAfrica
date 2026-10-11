@@ -103,5 +103,190 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nyaturu désigne un peuple bantou de la région de Singida, au centre de la Tanzanie, appelé aussi Turu ou Wanyaturu. Le nom Arimi est aussi donné pour ce peuple. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Arimi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "rim",
+        "namedBy": null,
+        "shortLine": "Un autre nom donné pour ce peuple, proche de Rimi, l'un des noms de sa langue.",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Arimi figure, avec Wanyaturu, parmi les noms des Turu dans un recueil de proverbes nyaturu publié en 2016 par Devotha Cikuru Bishangi. Le catalogue Glottolog relève Rimi parmi les noms de leur langue. Les sources que nous avons lues n'expliquent pas l'origine de ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Collection of 100 Nyaturu Proverbs and Wise Sayings",
+                "author": "Devotha Cikuru Bishangi",
+                "year": 2016,
+                "url": "https://afriprov.tangaza.ac.ke/wp-content/uploads/2008/11/ebooks_nyaturu.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. vi",
+                "notes": "African Proverbs Working Group, Nairobi, juillet 2016 ; proverbes recueillis auprès de la communauté wahi. Lu en ligne sur le site du Tangaza University College le 11 octobre 2026."
+              },
+              {
+                "title": "Glottolog 5.3 — Nyaturu (nyat1246)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/nyat1246",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 11 octobre 2026. Noms relevés pour la langue : Keremi, Kinyaturu, Kiremi, Kirimi, Limi, Nyaturu, Remi, Rimi, Turu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wanyaturu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme du nom écrite par les Allemands dès 1898 ; on la trouve encore aujourd'hui.",
+        "periodLabel": "Écrit depuis 1898",
+        "accounts": [
+          {
+            "period": {
+              "from": 1898,
+              "to": 1898,
+              "label": "1898"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wanyaturu apparaît dans le récit de l'officier allemand W. Werther, paru en 1898 : il appelle ainsi les habitants du pays de Turu, qu'il range parmi les peuples bantous, et les distingue des Wataturu, ou Tatoga, nombreux dans le nord du pays. Il ajoute que les voyageurs Baumann et Stuhlmann en avaient déjà parlé. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Wanyaturu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Die mittleren Hochländer des nördlichen Deutsch-Ost-Afrika : wissenschaftliche Ergebnisse der Irangi-Expedition 1896-1897",
+                "author": "W. Werther",
+                "year": 1898,
+                "url": "https://archive.org/details/diemittlerenhoc00wertgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 56-57",
+                "notes": "Berlin, Hermann Paetel, 1898. Récit d'un officier de l'expédition coloniale allemande dans l'Irangi, lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. P. 57 : « Das Gebiet von Turu » ; « Die Bewohner, die Wanyaturu, sind nach der Sprache ein Bantu-Stamm ». L'auteur distingue les Wanyaturu des Wataturu, ou Tatoga."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Wanyaturu figure encore, avec Arimi, parmi les noms des Turu dans le recueil de proverbes nyaturu de Devotha Cikuru Bishangi, publié en 2016.",
+            "sources": [
+              {
+                "title": "A Collection of 100 Nyaturu Proverbs and Wise Sayings",
+                "author": "Devotha Cikuru Bishangi",
+                "year": 2016,
+                "url": "https://afriprov.tangaza.ac.ke/wp-content/uploads/2008/11/ebooks_nyaturu.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. vi",
+                "notes": "African Proverbs Working Group, Nairobi, juillet 2016 ; proverbes recueillis auprès de la communauté wahi. Lu en ligne sur le site du Tangaza University College le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nyaturu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du peuple et de sa langue dans les livres d'histoire et les catalogues de langues.",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Nyaturu est celui que le catalogue Glottolog retient pour la langue ; il donne aussi Turu, Kinyaturu, Rimi et Limi. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Nyaturu (nyat1246)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/nyat1246",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 11 octobre 2026. Noms relevés pour la langue : Keremi, Kinyaturu, Kiremi, Kirimi, Limi, Nyaturu, Remi, Rimi, Turu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1870,
+              "to": 1884,
+              "label": "1870-1884"
+            },
+            "statement": "Le nom Nyaturu désigne, chez Isaria N. Kimambo citant Jan Vansina, l'un des pays qui marquent la limite orientale de l'État que bâtit le chef nyamwezi Mirambo entre 1870 et sa mort, en 1884.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 10 : La côte et l'hinterland de l'Afrique orientale de 1845 à 1880",
+                "author": "Isaria N. Kimambo",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 285-286",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Turu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du pays chez les Allemands, et aujourd'hui une forme courte du nom du peuple.",
+        "periodLabel": "Écrit depuis 1898",
+        "accounts": [
+          {
+            "period": {
+              "from": 1898,
+              "to": 1898,
+              "label": "1898"
+            },
+            "era": "colonial",
+            "statement": "Le nom Turu apparaît dans le récit de l'officier allemand W. Werther, paru en 1898, comme le nom d'un pays assez étendu qui va de la Mgunda mkali, au sud, jusqu'aux abords du Gurue, au nord. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Turu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Die mittleren Hochländer des nördlichen Deutsch-Ost-Afrika : wissenschaftliche Ergebnisse der Irangi-Expedition 1896-1897",
+                "author": "W. Werther",
+                "year": 1898,
+                "url": "https://archive.org/details/diemittlerenhoc00wertgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 56-57",
+                "notes": "Berlin, Hermann Paetel, 1898. Récit d'un officier de l'expédition coloniale allemande dans l'Irangi, lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. P. 57 : « Das Gebiet von Turu » ; « Die Bewohner, die Wanyaturu, sind nach der Sprache ein Bantu-Stamm ». L'auteur distingue les Wanyaturu des Wataturu, ou Tatoga."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

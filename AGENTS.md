@@ -16,11 +16,17 @@ review the final meaning, run `npm run check:editorial`, and check final publica
 files with `npm run check:publication -- <files>`. A pass is a mechanical result,
 not a claim of FALC compliance or a substitute for a reader's review.
 
-Use the available BMAD editorial prose review with the charter as `style_guide`.
-For longer material, use structure review with `reader_type=humans`. Read the
-actual skill before invoking it. Do not rewrite a quotation or hide prose in an
+Use the DITP plain-language approach, selected FALC recommendations and the local
+Vale checks. Review meaning, reading order and accessibility directly; do not use
+BMAD for this project's work. Do not rewrite a quotation or hide prose in an
 excluded field to silence a warning. Do not refresh the legacy baseline to make
 new errors pass.
 
 Work test-first and keep solutions simple. Assess responsive presentation on
 mobile (320–430px), then tablet (768–1199px), then desktop (1200px and above).
+
+For social production, use `.claude/skills/ethniafrica-social-production/SKILL.md`
+(also linked under `.agents/skills/` for Codex). The operator's 10 October 2026
+workflow replaces the retired production chain. The accepted Claude Design card
+system is in `social/design-system/`; `version.json` records its acceptance.
+Verify renderer readiness before visual production.

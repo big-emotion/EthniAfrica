@@ -132,5 +132,302 @@
         "tier": "referenced"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ronga désigne un peuple de la baie de Maputo, l'ancienne baie de Delagoa, au sud du Mozambique et jusque dans le nord du KwaZulu-Natal, qui se nomme lui-même Ronga, ou Ba-Ronga. D'autres noms existent : Thonga, que leur donnaient les Zoulous, et Landin, un nom employé par les Portugais. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Ronga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "rng",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les clans de la baie de Maputo ; écrit depuis 1896.",
+        "periodLabel": "Écrit depuis 1896 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom Ronga est celui que se donnaient les clans établis autour de la baie de Delagoa, aujourd'hui baie de Maputo, selon le missionnaire Henri-Alexandre Junod. Il le dit très ancien et note que tous ces clans acceptent d'être appelés ainsi. Une explication de son origine est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 14-16",
+                "notes": "Neuchâtel, Attinger Frères ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Section « The generic Name of the Tribe » : Ronga « means Orient (buronga = dawn) », et c'est le nom que se donnaient les clans des environs de Lourenço Marques."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1898,
+              "to": 1898,
+              "label": "1898"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ronga désigne, chez Henri-Alexandre Junod, les habitants des petits royaumes qui entourent la baie de Delagoa, au nord, à l'ouest et au sud. Il précise que ces gens appellent eux-mêmes leur dialecte « ronga ».",
+            "sources": [
+              {
+                "title": "Les Ba-Ronga : étude ethnographique sur les indigènes de la baie de Delagoa",
+                "author": "Henri-Alexandre Junod",
+                "year": 1898,
+                "url": "https://archive.org/details/lesbarongatudee00junogoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10",
+                "notes": "Neuchâtel, Bulletin de la Société neuchâteloise de géographie, tome X ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1896,
+              "label": "1896"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ronga apparaît par écrit dans la Grammaire ronga du missionnaire suisse Henri-Alexandre Junod, publiée en 1896 avec l'aide du gouvernement portugais : il y nomme ainsi le dialecte principal du district de Lourenço-Marquès, aujourd'hui Maputo. C'est la plus ancienne trace de ce nom que le projet connaît. Les clans qui le portent vivaient déjà là bien avant lui.",
+            "formAsWritten": "Ronga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Grammaire ronga, suivie d'un manuel de conversation et d'un vocabulaire ronga-portugais-français-anglais",
+                "author": "Henri-Alexandre Junod",
+                "year": 1896,
+                "url": "https://archive.org/details/grammairerongasu00junouoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "page de titre et p. 6",
+                "notes": "Lausanne, Georges Bridel, publié par les soins du gouvernement portugais ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1554,
+              "to": 1554,
+              "label": "1554"
+            },
+            "era": "polity",
+            "statement": "On parle alors des terres de chefs nommés Zembé, Inyaka, Roumo et Mena Lebombo autour de la baie, dans le récit du naufragé portugais Manuel de Mesquita Perestrello. Henri-Alexandre Junod y reconnaît les chefferies Tembe, Nyaka, Mpfumo et Lebombo, où l'on parle ronga.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Grammaire ronga, suivie d'un manuel de conversation et d'un vocabulaire ronga-portugais-français-anglais",
+                "author": "Henri-Alexandre Junod",
+                "year": 1896,
+                "url": "https://archive.org/details/grammairerongasu00junouoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10",
+                "notes": "Lausanne, Georges Bridel, publié par les soins du gouvernement portugais ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Proposée en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ronga voudrait dire « Orient », d'après le mot buronga, « l'aube », selon Henri-Alexandre Junod.",
+            "hypothesisGroup": "origine du nom Ronga",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 14-16",
+                "notes": "Neuchâtel, Attinger Frères ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Section « The generic Name of the Tribe » : Ronga « means Orient (buronga = dawn) », et c'est le nom que se donnaient les clans des environs de Lourenço Marques."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Thonga",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Zoulous et les Ngoni, selon Henri-Alexandre Junod",
+        "shortLine": "Un nom que leur donnaient les Zoulous ; il voulait presque dire « vassal ».",
+        "periodLabel": "XIXe siècle et début du XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1819,
+              "to": null,
+              "label": "À partir de 1819"
+            },
+            "statement": "Le nom Thonga est, pour Henri-Alexandre Junod, un terme de mépris proche de « vassal », que les Zoulous ou Ngoni appliquent aux peuples du littoral quand ils commencent leurs incursions, dès 1819. Junod propose pourtant de garder ce nom pour l'ensemble des clans dont le ronga n'est qu'un dialecte.",
+            "sources": [
+              {
+                "title": "Grammaire ronga, suivie d'un manuel de conversation et d'un vocabulaire ronga-portugais-français-anglais",
+                "author": "Henri-Alexandre Junod",
+                "year": 1896,
+                "url": "https://archive.org/details/grammairerongasu00junouoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3-4",
+                "notes": "Lausanne, Georges Bridel, publié par les soins du gouvernement portugais ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1852,
+              "to": 1852,
+              "label": "25 novembre 1852"
+            },
+            "era": "polity",
+            "statement": "Le nom Thonga a une forme proche, Amatongas, dans le Natal Mercury du 25 novembre 1852, qui rapporte que le roi zoulou Mpande a saisi leurs biens, selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît. Les clans qu'il désigne existaient déjà avant lui.",
+            "formAsWritten": "Amatongas",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Tonga »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/tonga/e07251",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1852",
+                "notes": "Entrée lu le 11 octobre 2026. L'entrée cite le Natal Mercury du 25 novembre 1852 : « The property of the Amatongas, together with the ivory of the traders, were seized by Panda », et R. B. Struthers en 1852, qui parle du pays des Amatonga, au nord-est du pays zoulou, vers la baie de Delagoa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Proposée en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Thonga viendrait de Ronga : en zoulou, le r de ronga se prononce th, selon Henri-Alexandre Junod.",
+            "hypothesisGroup": "origine du nom Thonga",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 14-16",
+                "notes": "Neuchâtel, Attinger Frères ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Section « The generic Name of the Tribe » : Ronga « means Orient (buronga = dawn) », et c'est le nom que se donnaient les clans des environs de Lourenço Marques."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Thonga viendrait du zoulou iThonga, qui aurait d'abord voulu dire « forgeron », ces gens étant connus pour leur travail du métal ; à moins qu'il ne vienne d'une forme ancienne d'un mot tsonga, selon le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Thonga",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Tonga »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/tonga/e07251",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lu le 11 octobre 2026. Le nom viendrait soit d'une forme ancienne d'un mot tsonga désignant ce peuple, soit du zoulou iThonga, umThonga, peut-être d'abord « forgeron », ces gens étant connus pour leur travail du métal."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Landin",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Portugais, selon Henri-Alexandre Junod",
+        "shortLine": "Un nom que les Portugais donnaient aux habitants de la baie ; il voulait dire « indigène ».",
+        "periodLabel": "Fin du XVIIIe siècle à la fin du XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1896,
+              "to": 1896,
+              "label": "1896"
+            },
+            "era": "colonial",
+            "statement": "Le nom Landin n'a pas été emprunté aux habitants, selon Henri-Alexandre Junod, qui dit n'avoir pas trouvé d'où il vient : il semble avoir d'abord voulu dire « indigène, noir ». Les Ronga des environs de Lourenço-Marquès l'emploient encore dans ce sens pour tous les Noirs, et il est inconnu à l'intérieur du pays.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Grammaire ronga, suivie d'un manuel de conversation et d'un vocabulaire ronga-portugais-français-anglais",
+                "author": "Henri-Alexandre Junod",
+                "year": 1896,
+                "url": "https://archive.org/details/grammairerongasu00junouoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4-5",
+                "notes": "Lausanne, Georges Bridel, publié par les soins du gouvernement portugais ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1805,
+              "to": 1805,
+              "label": "2 avril 1805"
+            },
+            "era": "polity",
+            "statement": "Le nom Landin sert aussi pour la langue de ces clans dans un document du notaire Rosario daté du 2 avril 1805, selon Henri-Alexandre Junod.",
+            "sources": [
+              {
+                "title": "Grammaire ronga, suivie d'un manuel de conversation et d'un vocabulaire ronga-portugais-français-anglais",
+                "author": "Henri-Alexandre Junod",
+                "year": 1896,
+                "url": "https://archive.org/details/grammairerongasu00junouoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Lausanne, Georges Bridel, publié par les soins du gouvernement portugais ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1775,
+              "to": 1800,
+              "label": "Dernier quart du XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Landin figure dans une description anonyme de la baie, écrite à la fin du XVIIIe siècle par un commandant militaire du poste portugais de Lourenço-Marquès : « Tous ces nègres sont landins », selon Henri-Alexandre Junod. C'est la plus ancienne trace de ce nom que le projet connaît. Les clans qu'il désigne vivaient déjà là avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Grammaire ronga, suivie d'un manuel de conversation et d'un vocabulaire ronga-portugais-français-anglais",
+                "author": "Henri-Alexandre Junod",
+                "year": 1896,
+                "url": "https://archive.org/details/grammairerongasu00junouoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4 et p. 8",
+                "notes": "Lausanne, Georges Bridel, publié par les soins du gouvernement portugais ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

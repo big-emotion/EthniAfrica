@@ -108,5 +108,174 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Iramba désigne un pays et un district du centre de la Tanzanie, dans la région de Singida, au sud-ouest du pays iraqw, et le peuple bantou qui y vit, les Nyiramba. D'autres noms existent : Wanyiramba, avec le préfixe swahili des noms de peuples, et Manda 'uuwa, que leur donnent les Iraqw. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Nyiramba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nim",
+        "namedBy": null,
+        "shortLine": "Le nom des habitants d'Iramba, écrit Wanyairamba en 1894.",
+        "periodLabel": "Écrit depuis 1894 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Nyiramba, écrit WaNyiramba, désigne pour Maarten Mous les voisins bantous des Iraqw au sud-ouest ; il juge leurs relations amicales mais peu suivies, la région frontière étant peu peuplée.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Grammar of Iraqw",
+                "author": "Maarten Mous",
+                "year": 1993,
+                "url": "https://archive.org/details/rosettaproject_irk_detail-1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1.1",
+                "notes": "Hambourg, Buske. Seul l'extrait d'introduction est en ligne, déposé par le Rosetta Project : copie non officielle ; lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1894,
+              "to": 1894,
+              "label": "1894"
+            },
+            "statement": "Le nom Nyiramba est écrit « Wanyairamba » par Oscar Baumann, qui range ce peuple bantou, avec les Wanyaturu, parmi les arrivants très anciens de la région, venus du nord. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Wanyairamba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Durch Massailand zur Nilquelle : Reisen und Forschungen der Massai-Expedition des deutschen Antisklaverei-Komite in den Jahren 1891-1893",
+                "author": "Oscar Baumann",
+                "year": 1894,
+                "url": "https://www.gutenberg.org/ebooks/68057",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 194",
+                "notes": "Berlin, Dietrich Reimer ; lu le 11 octobre 2026 dans l'édition du Projet Gutenberg, qui garde la pagination de l'original."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Iramba",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un pays du centre de la Tanzanie et de ses habitants ; écrit dès 1878.",
+        "periodLabel": "Écrit depuis 1878 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Iramba désigne un district du centre de la Tanzanie, voisin du pays iraqw, dont les habitants bantous sont appelés WaNyiramba, selon le linguiste Maarten Mous. On ne sait pas avec certitude d'où vient ce nom, et nous n'avons pas trouvé de source qui dise sous quelle forme ce peuple se nomme dans sa langue.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Grammar of Iraqw",
+                "author": "Maarten Mous",
+                "year": 1993,
+                "url": "https://archive.org/details/rosettaproject_irk_detail-1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1.1",
+                "notes": "Hambourg, Buske. Seul l'extrait d'introduction est en ligne, déposé par le Rosetta Project : copie non officielle ; lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1893,
+              "to": 1893,
+              "label": "1893, récit publié en 1894"
+            },
+            "statement": "Le nom Iramba désigne chez Oscar Baumann un pays habité au sud du lac Eyasi, à côté de l'Issansu et de l'Eyambi, avec ses collines qui montent vers le plateau de Turu.",
+            "sources": [
+              {
+                "title": "Durch Massailand zur Nilquelle : Reisen und Forschungen der Massai-Expedition des deutschen Antisklaverei-Komite in den Jahren 1891-1893",
+                "author": "Oscar Baumann",
+                "year": 1894,
+                "url": "https://www.gutenberg.org/ebooks/68057",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 139-141",
+                "notes": "Berlin, Dietrich Reimer ; lu le 11 octobre 2026 dans l'édition du Projet Gutenberg, qui garde la pagination de l'original."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1875,
+              "to": 1875,
+              "label": "Février 1875"
+            },
+            "era": "polity",
+            "statement": "Le nom Iramba apparaît chez l'explorateur Henry Morton Stanley, qui en février 1875 enterre l'un de ses hommes au carrefour d'une route menant à Usiha et d'une autre menant à Iramba. Stanley ne dit pas qui vit à Iramba. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Iramba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Through the Dark Continent, vol. I, réédition de 1899",
+                "author": "Henry M. Stanley",
+                "year": 1899,
+                "url": "https://www.gutenberg.org/ebooks/75926",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 106",
+                "notes": "Londres, George Newnes, réédition de 1899 de l'ouvrage paru en 1878 ; lu le 11 octobre 2026 dans l'édition du Projet Gutenberg, qui garde la pagination de cette réédition. Stanley note les faits de février 1875."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Manda 'uuwa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "irk",
+        "namedBy": "Les Iraqw, selon Maarten Mous",
+        "shortLine": "Le nom que les Iraqw donnent aux gens d'Iramba : « les Manda de l'Ouest ».",
+        "periodLabel": "Attesté en 1993",
+        "accounts": [
+          {
+            "period": {
+              "from": 1993,
+              "to": 1993,
+              "label": "1993"
+            },
+            "era": "modern",
+            "statement": "Le nom Manda 'uuwa, « les Manda de l'Ouest », est celui que les Iraqw donnent aux WaNyiramba, selon Maarten Mous ; ils appellent Manda da'aw, « les Manda de l'Est », leurs voisins mbugwe. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Grammar of Iraqw",
+                "author": "Maarten Mous",
+                "year": 1993,
+                "url": "https://archive.org/details/rosettaproject_irk_detail-1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1.1",
+                "notes": "Hambourg, Buske. Seul l'extrait d'introduction est en ligne, déposé par le Rosetta Project : copie non officielle ; lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

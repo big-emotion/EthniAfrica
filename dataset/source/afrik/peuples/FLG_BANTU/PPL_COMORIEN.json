@@ -118,5 +118,104 @@
         "source_kind": "ngo"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Comoriens désigne les habitants de l'archipel des Comores, qui se nomment ainsi eux-mêmes dans leur Constitution. Chaque île a aussi son nom en shikomor : Ngazidja, Ndzuwani, Mwali et Maoré. Il est formé sur le nom de l'archipel, dont l'origine est discutée.",
+    "names": [
+      {
+        "nameText": "Comoriens",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des habitants de l'archipel, formé sur celui des Comores.",
+        "usedIn": ["fra"],
+        "periodLabel": "Écrit dès 1870 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2001,
+              "to": null,
+              "label": "Depuis le 23 décembre 2001"
+            },
+            "era": "modern",
+            "statement": "Le nom Comoriens est celui que la Constitution de l'Union des Comores donne aux citoyens : son préambule parle du « peuple comorien » et d'« un destin commun entre les Comoriens ». Elle nomme les quatre îles en shikomor : Mwali, Maoré, Ndzuwani et N'gazidja.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constitution de l'Union des Comores, 23 décembre 2001",
+                "author": "Union des Comores",
+                "year": 2001,
+                "url": "https://mjp.univ-perp.fr/constit/km2001.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "préambule et article premier",
+                "notes": "Texte reproduit par la Digithèque de matériaux juridiques et politiques de l'université de Perpignan, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Comoriens est formé sur celui de l'archipel, les Comores. L'origine du nom de l'archipel est discutée ; ses explications sont présentées avec le pays.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Constitution de l'Union des Comores, 23 décembre 2001",
+                "author": "Union des Comores",
+                "year": 2001,
+                "url": "https://mjp.univ-perp.fr/constit/km2001.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "préambule et article premier",
+                "notes": "Texte reproduit par la Digithèque de matériaux juridiques et politiques de l'université de Perpignan, lu le 11 octobre 2026."
+              },
+              {
+                "title": "Essai sur les Comores",
+                "author": "Alfred Gevrey",
+                "year": 1870,
+                "url": "https://archive.org/details/essaisurlescomor00gevr",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 100",
+                "notes": "Pondichéry, A. Saligny, 1870. L'auteur est procureur impérial à Pondichéry. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1870,
+              "to": 1870,
+              "label": "1870"
+            },
+            "statement": "Le nom Comoriens figure chez Alfred Gevrey, dans son Essai sur les Comores : « Les Comoriens enterrent leurs morts et leur font des mausolées. » C'est la plus ancienne trace de ce nom que le projet connaît. Les habitants des îles existaient déjà avant elle.",
+            "formAsWritten": "Comoriens",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Alfred Gevrey",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Essai sur les Comores",
+                "author": "Alfred Gevrey",
+                "year": 1870,
+                "url": "https://archive.org/details/essaisurlescomor00gevr",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 100",
+                "notes": "Pondichéry, A. Saligny, 1870. L'auteur est procureur impérial à Pondichéry. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

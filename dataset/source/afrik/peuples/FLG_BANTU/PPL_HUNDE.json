@@ -134,5 +134,85 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Hunde désigne un peuple de l'est de la République démocratique du Congo, au Nord-Kivu, dans les territoires de Masisi, de Rutshuru et de Walikale, qui se nomme lui-même Bahunde ; sa langue est le kihunde. On ne sait pas avec certitude d'où vient ce nom ni quand il a été écrit pour la première fois ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Bahunde",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "hke",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple du Nord-Kivu ; son origine n'est pas expliquée.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1957,
+              "to": 1957,
+              "label": "Notes de terrain de 1957"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bahunde, ou Hunde, désigne dans les notes de terrain de l'anthropologue Daniel P. Biebuyck trois groupes qui parlent vraiment le kihunde : les Bashali au nord-est, les Banyungu au centre et au sud, et les Banya-Bwito à l'est. Les sources que nous avons lues n'expliquent pas d'où vient ce nom, et nous n'avons pas trouvé sa plus ancienne trace écrite.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Hunde of Masisi Territoire : Field Notes (1957) and a Brief Overview of Existing Literature",
+                "author": "Daniel P. Biebuyck",
+                "year": 2019,
+                "url": "https://danielbiebuyck.com/wp-content/uploads/2019/07/hunde-final-2.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1 du PDF",
+                "notes": "Notes de terrain de 1957, publiées en 2019 sur le site consacré à l'œuvre de l'auteur ; lu le 11 octobre 2026 en PDF, dont les pages ne sont pas numérotées."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1957,
+              "to": 1957,
+              "label": "Notes de terrain de 1957"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bahunde est porté par des groupes qui disent tous venir de l'Ouganda, plus précisément du royaume du Bunyoro, selon les traditions que rapporte Daniel P. Biebuyck.",
+            "sources": [
+              {
+                "title": "The Hunde of Masisi Territoire : Field Notes (1957) and a Brief Overview of Existing Literature",
+                "author": "Daniel P. Biebuyck",
+                "year": 2019,
+                "url": "https://danielbiebuyck.com/wp-content/uploads/2019/07/hunde-final-2.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1 du PDF",
+                "notes": "Notes de terrain de 1957, publiées en 2019 sur le site consacré à l'œuvre de l'auteur ; lu le 11 octobre 2026 en PDF, dont les pages ne sont pas numérotées."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant l'arrivée des Bahunde"
+            },
+            "statement": "On parle alors des Batamba pour la population que les Bahunde trouvent autour des lacs Mokoto à leur arrivée ; on lui donne d'autres noms selon les endroits, comme Bakumba, Bakeno ou Barungu, selon Daniel P. Biebuyck.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Hunde of Masisi Territoire : Field Notes (1957) and a Brief Overview of Existing Literature",
+                "author": "Daniel P. Biebuyck",
+                "year": 2019,
+                "url": "https://danielbiebuyck.com/wp-content/uploads/2019/07/hunde-final-2.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4 du PDF",
+                "notes": "Notes de terrain de 1957, publiées en 2019 sur le site consacré à l'œuvre de l'auteur ; lu le 11 octobre 2026 en PDF, dont les pages ne sont pas numérotées."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

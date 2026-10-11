@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Timeline du nom — maquettes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Nunito+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #fbf7f2;
+        --bg-warm: #f5ede0;
+        --card: #fff;
+        --border: #e8dfd3;
+        --text: #2c2018;
+        --soft: #746557;
+        --muted: #9b8b7d;
+        --accent: #b4532a;
+        --accent-tint: #f3dccd;
+        --n1: #b4532a;
+        --n2: #2f6f62;
+        --n3: #6a4c93;
+        --n4: #a07a12;
+        --n5: #3b5f8a;
+        --elsewhere: #8a8f98;
+        --display: "Fraunces", Georgia, serif;
+        --body: "Nunito Sans", system-ui, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg-warm);
+        color: var(--text);
+        font-family: var(--body);
+        font-size: 16px;
+        line-height: 1.45;
+      }
+      header.page {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px 16px 8px;
+      }
+      header.page h1 {
+        font-family: var(--display);
+        font-weight: 650;
+        font-size: 1.6rem;
+        margin: 0 0 6px;
+      }
+      header.page p {
+        margin: 4px 0;
+        color: var(--soft);
+        max-width: 70ch;
+      }
+      .warn {
+        display: inline-block;
+        background: #fff3c4;
+        border: 1px solid #e6cf6a;
+        color: #5b4a00;
+        border-radius: 8px;
+        padding: 6px 10px;
+        font-size: 0.85rem;
+        margin-top: 8px;
+      }
+      .switch {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 14px 0 4px;
+      }
+      .switch button {
+        font: inherit;
+        font-weight: 600;
+        border: 1px solid var(--border);
+        background: var(--card);
+        border-radius: 999px;
+        padding: 8px 14px;
+        min-height: 44px;
+        cursor: pointer;
+      }
+      .switch button[aria-pressed="true"] {
+        background: var(--text);
+        color: #fff;
+        border-color: var(--text);
+      }
+      .layout-note {
+        color: var(--soft);
+        font-size: 0.9rem;
+        margin: 6px 0 0;
+        max-width: 80ch;
+      }
+      .phones {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 16px;
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .phone {
+        width: 430px;
+        max-width: 100%;
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: 28px;
+        box-shadow: 0 10px 30px rgba(44, 32, 24, 0.12);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: 880px;
+      }
+      .phone .screen {
+        overflow-y: auto;
+        flex: 1;
+        padding: 0 16px 24px;
+      }
+      .searchbar {
+        position: sticky;
+        top: 0;
+        background: var(--bg);
+        padding: 14px 0 8px;
+        z-index: 3;
+      }
+      .q {
+        border: 1px solid var(--border);
+        background: var(--card);
+        border-radius: 12px;
+        padding: 10px 12px;
+        color: var(--soft);
+      }
+      .lenses {
+        display: flex;
+        gap: 6px;
+        overflow-x: auto;
+        padding: 10px 0 2px;
+        scrollbar-width: none;
+      }
+      .lens {
+        flex: none;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 0 12px;
+        min-height: 36px;
+        display: flex;
+        align-items: center;
+        font-size: 0.85rem;
+        font-weight: 600;
+        background: transparent;
+      }
+      .lens.on {
+        background: var(--accent-tint);
+        border-color: transparent;
+      }
+      h2.subject {
+        font-family: var(--display);
+        font-weight: 650;
+        font-size: 1.9rem;
+        margin: 14px 0 2px;
+      }
+      .kicker {
+        color: var(--soft);
+        margin: 0 0 12px;
+        font-size: 0.95rem;
+      }
+      .names {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap;
+        margin: 6px 0 12px;
+      }
+      .name {
+        border: 2px solid currentColor;
+        border-radius: 999px;
+        padding: 4px 12px;
+        font-weight: 700;
+        font-size: 0.9rem;
+        background: var(--card);
+        cursor: pointer;
+        min-height: 36px;
+      }
+      .name .t {
+        color: var(--text);
+      }
+      .name small {
+        color: var(--soft);
+        font-weight: 600;
+        margin-left: 4px;
+      }
+      .name.on {
+        background: currentColor;
+      }
+      .name.on .t,
+      .name.on small {
+        color: #fff;
+      }
+      .tools {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        margin: 4px 0 10px;
+      }
+      .elsebtn {
+        font: inherit;
+        font-size: 0.82rem;
+        font-weight: 600;
+        border: 1px dashed var(--elsewhere);
+        color: var(--soft);
+        background: transparent;
+        border-radius: 999px;
+        padding: 6px 12px;
+        min-height: 36px;
+        cursor: pointer;
+      }
+      .elsebtn[aria-pressed="true"] {
+        background: #eef0f2;
+        border-style: solid;
+      }
+      .hint {
+        font-size: 0.78rem;
+        color: var(--muted);
+      }
+      /* timeline */
+      .tl {
+        position: relative;
+        margin-left: 74px;
+      }
+      .tl::before {
+        content: "";
+        position: absolute;
+        left: -14px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: var(--border);
+      }
+      .period {
+        position: relative;
+        margin: 0 0 14px;
+      }
+      .plabel {
+        position: absolute;
+        left: -74px;
+        width: 56px;
+        text-align: right;
+        font-family: var(--display);
+        font-weight: 650;
+        font-size: 0.82rem;
+        line-height: 1.15;
+        color: var(--soft);
+        top: 2px;
+      }
+      .dot {
+        position: absolute;
+        left: -19px;
+        top: 6px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--bg);
+        border: 2px solid var(--muted);
+      }
+      .row {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 10px 12px;
+        margin-bottom: 8px;
+        border-left: 5px solid var(--c, var(--muted));
+      }
+      .zone {
+        font-size: 0.78rem;
+        font-weight: 700;
+        color: var(--c, var(--soft));
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        flex-wrap: wrap;
+      }
+      .zonebar {
+        height: 4px;
+        border-radius: 2px;
+        background: var(--c);
+        opacity: 0.35;
+        flex: 1;
+        min-width: 30px;
+      }
+      .row p {
+        margin: 4px 0 0;
+        font-size: 0.95rem;
+      }
+      .row .who {
+        font-size: 0.8rem;
+        color: var(--soft);
+        margin-top: 4px;
+      }
+      .tag {
+        display: inline-block;
+        border-radius: 6px;
+        font-size: 0.72rem;
+        font-weight: 700;
+        padding: 1px 6px;
+        background: var(--bg-warm);
+        color: var(--soft);
+      }
+      sup.src {
+        cursor: pointer;
+        color: var(--accent);
+        font-weight: 700;
+        margin-left: 2px;
+      }
+      .hyp {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+      }
+      .hyp.three {
+        grid-template-columns: 1fr;
+      }
+      .hyp .row {
+        margin: 0;
+      }
+      .hyphead {
+        font-size: 0.78rem;
+        font-weight: 700;
+        color: var(--soft);
+        margin: 0 0 6px;
+      }
+      .else {
+        border: 1px dashed var(--elsewhere);
+        background: #f4f5f6;
+        border-radius: 12px;
+        padding: 8px 10px;
+        font-size: 0.85rem;
+        color: #4b5058;
+        margin-bottom: 8px;
+        display: none;
+      }
+      .show-else .else {
+        display: block;
+      }
+      .converge {
+        font-size: 0.8rem;
+        color: var(--soft);
+        margin-top: 6px;
+        border-top: 1px dotted var(--border);
+        padding-top: 6px;
+      }
+      .pop {
+        position: fixed;
+        inset: auto 16px 16px 16px;
+        max-width: 420px;
+        margin: 0 auto;
+        background: var(--text);
+        color: #fff;
+        border-radius: 14px;
+        padding: 12px 14px;
+        font-size: 0.88rem;
+        display: none;
+        z-index: 9;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      }
+      .pop.on {
+        display: block;
+      }
+      .pop b {
+        display: block;
+        margin-bottom: 4px;
+      }
+      .foot {
+        font-size: 0.8rem;
+        color: var(--muted);
+        margin-top: 18px;
+      }
+      @media (max-width: 470px) {
+        .phone {
+          border-radius: 0;
+          border-left: 0;
+          border-right: 0;
+          height: auto;
+        }
+        .phones {
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="page">
+      <h1>Timeline du nom — trois cas, deux mises en page</h1>
+      <p>
+        Onglet « Timeline » par défaut, les autres onglets restent là. On part
+        des appellations actuelles et on remonte vers le bas. Les périodes sont
+        des zones, pas des dates précises. Plusieurs hypothèses pour une même
+        période s'affichent côte à côte, sans gagnante. Le « pendant ce temps,
+        ailleurs » est caché derrière un bouton.
+      </p>
+      <span class="warn"
+        >⚠ Contenu illustratif écrit pour la maquette : à sourcer et vérifier,
+        rien n'est publiable en l'état.</span
+      >
+      <div class="switch" role="group" aria-label="Mise en page">
+        <button data-layout="A" aria-pressed="true">
+          A · Une appellation à la fois
+        </button>
+        <button data-layout="B" aria-pressed="false">
+          B · Frise unique, toutes appellations mêlées
+        </button>
+      </div>
+      <p class="layout-note" id="layoutNote"></p>
+    </header>
+    <main class="phones" id="phones"></main>
+    <div class="pop" id="pop" role="dialog" aria-live="polite"></div>
+
+    <script>
+      // Each row: period key (sortable start year), zone label, name index, text, voice (source_kind shown in the marker, never a tier).
+      const CASES = [
+        {
+          id: "lingala",
+          subject: "Lingala",
+          kicker: "Une langue, un nom né d'une fusion",
+          names: [
+            { t: "Lingala", k: "aujourd'hui" },
+            { t: "Bangala", k: "ancien" },
+            { t: "Bobangi", k: "ancien" },
+          ],
+          periods: [
+            {
+              y: 1960,
+              zone: "Depuis les indépendances",
+              rows: [
+                {
+                  n: 0,
+                  p: "Langue véhiculaire de Kinshasa et de Brazzaville, de l'armée et de la musique.",
+                  v: "Référence linguistique",
+                },
+              ],
+              else: "En France, la Ve République vient de naître (1958).",
+            },
+            {
+              y: 1901,
+              zone: "Vers 1900–1905",
+              rows: [
+                {
+                  n: 0,
+                  p: "Des missionnaires de Scheut fixent par écrit le nom « lingala » (préfixe li- + ngala) pour une grammaire.",
+                  v: "Archive missionnaire",
+                  who: "Acteurs évoqués : missionnaires de Scheut",
+                },
+              ],
+              else: "En France, la loi de séparation des Églises et de l'État est votée (1905).",
+            },
+            {
+              y: 1880,
+              zone: "Années 1880",
+              hyp: true,
+              head: "Que désigne « Bangala » ? Deux lectures",
+              rows: [
+                {
+                  n: 1,
+                  p: "Le nom d'un peuple précis, établi autour de Makanza sur le fleuve.",
+                  v: "Récit d'explorateur",
+                },
+                {
+                  n: 1,
+                  p: "Une étiquette européenne pour « les gens du fleuve » en général, sans peuple derrière.",
+                  v: "Étude académique",
+                },
+              ],
+              converge:
+                "Le parler de commerce dit « bangala » devient la base de ce qu'on appellera lingala.",
+              else: "En France, Jules Ferry fait voter l'école gratuite et obligatoire (1881–1882).",
+            },
+            {
+              y: 1700,
+              zone: "XVIIIe – XIXe siècle",
+              rows: [
+                {
+                  n: 2,
+                  p: "Le bobangi, langue des commerçants du fleuve Congo, circule d'un port à l'autre.",
+                  v: "Étude académique",
+                },
+                {
+                  n: 1,
+                  p: "Mangala, bangala : plusieurs formes d'un même mot circulent selon les rives.",
+                  v: "Tradition orale",
+                },
+              ],
+              converge:
+                "Bobangi, mangala et bangala convergent vers une même langue de contact.",
+              else: "En France, la Révolution renverse la monarchie (1789).",
+            },
+          ],
+        },
+        {
+          id: "mali",
+          subject: "Mali",
+          kicker: "Un pays qui a pris le nom d'un empire",
+          names: [
+            { t: "Mali", k: "aujourd'hui" },
+            { t: "Manden", k: "aujourd'hui" },
+            { t: "Soudan français", k: "ancien" },
+          ],
+          periods: [
+            {
+              y: 1960,
+              zone: "22 septembre 1960",
+              rows: [
+                {
+                  n: 0,
+                  p: "La République du Mali reprend le nom de l'ancien empire.",
+                  v: "Document officiel",
+                },
+              ],
+              else: "En France, de Gaulle dirige la toute jeune Ve République.",
+            },
+            {
+              y: 1959,
+              zone: "1959 – 1960",
+              rows: [
+                {
+                  n: 0,
+                  p: "Fédération du Mali : le Sénégal et le Soudan français s'unissent sous ce nom, puis se séparent.",
+                  v: "Archive",
+                },
+              ],
+            },
+            {
+              y: 1890,
+              zone: "Fin XIXe – 1958",
+              rows: [
+                {
+                  n: 2,
+                  p: "« Soudan français » : nom colonial, repris de l'arabe bilād as-sūdān, « le pays des Noirs ».",
+                  v: "Archive coloniale",
+                },
+              ],
+              else: "En France, la tour Eiffel vient d'être inaugurée (1889).",
+            },
+            {
+              y: 1350,
+              zone: "XIVe siècle",
+              rows: [
+                {
+                  n: 0,
+                  p: "Un voyageur maghrébin décrit « Malli » et sa cour.",
+                  v: "Récit de voyage",
+                },
+              ],
+              else: "En Europe, la peste noire vient de tuer un tiers de la population (1347–1352).",
+            },
+            {
+              y: 1230,
+              zone: "XIIIe siècle",
+              hyp: true,
+              head: "D'où vient « Mali » ? Trois hypothèses",
+              three: true,
+              rows: [
+                {
+                  n: 0,
+                  p: "Une prononciation de « Manden » par des voisins, reprise par les auteurs arabes.",
+                  v: "Référence linguistique",
+                },
+                {
+                  n: 0,
+                  p: "Le nom d'une ville, la capitale (Niani ?), étendu à tout le royaume.",
+                  v: "Étude académique",
+                },
+                {
+                  n: 0,
+                  p: "« Mali », l'hippopotame en bambara, animal lié à la lignée.",
+                  v: "Tradition orale",
+                },
+              ],
+              else: "En France, Saint Louis règne.",
+            },
+            {
+              y: 1230,
+              zone: "XIIIe siècle",
+              rows: [
+                {
+                  n: 1,
+                  p: "Le Manden, cœur du pays mandingue, au temps de Soundiata Keïta.",
+                  v: "Tradition orale",
+                  who: "Acteur évoqué : Soundiata Keïta",
+                },
+              ],
+            },
+            {
+              y: 1060,
+              zone: "XIe siècle",
+              rows: [
+                {
+                  n: 0,
+                  p: "Un géographe andalou mentionne un royaume « Malal ». Est-ce le même nom ?",
+                  v: "Récit de géographe",
+                },
+              ],
+              else: "En Angleterre, Guillaume le Conquérant vient de débarquer (1066).",
+            },
+          ],
+        },
+        {
+          id: "peul",
+          subject: "Peul",
+          kicker: "Un peuple, cinq noms, cinq rencontres",
+          names: [
+            { t: "Fulɓe", k: "autonyme" },
+            { t: "Peul", k: "français" },
+            { t: "Fulani", k: "anglais" },
+            { t: "Fula", k: "anglais" },
+            { t: "Fellata", k: "ancien" },
+          ],
+          periods: [
+            {
+              y: 1960,
+              zone: "Aujourd'hui",
+              rows: [
+                {
+                  n: 0,
+                  p: "Pullo au singulier, Fulɓe au pluriel : le nom que le peuple se donne.",
+                  v: "Référence linguistique",
+                },
+              ],
+            },
+            {
+              y: 1900,
+              zone: "Début XXe siècle",
+              rows: [
+                {
+                  n: 2,
+                  p: "L'administration britannique du Nigeria adopte « Fulani », le mot haoussa.",
+                  v: "Archive coloniale",
+                },
+                {
+                  n: 3,
+                  p: "« Fula », le mot mandingue, passe dans l'anglais de Gambie.",
+                  v: "Étude académique",
+                },
+              ],
+              else: "En France, la loi de 1905 sépare les Églises et l'État.",
+            },
+            {
+              y: 1700,
+              zone: "XVIIe – XIXe siècle",
+              hyp: true,
+              head: "Comment « Peul » arrive-t-il en français ? Deux lectures",
+              rows: [
+                {
+                  n: 1,
+                  p: "Des traders français du comptoir de Saint-Louis reprennent le wolof « Pël ».",
+                  v: "Étude académique",
+                },
+                {
+                  n: 1,
+                  p: "Le mot circule plus tôt, par des intermédiaires sur la côte, avant les comptoirs.",
+                  v: "Tradition orale",
+                },
+              ],
+              else: "En France, Louis XIV règne à Versailles.",
+            },
+            {
+              y: 1500,
+              zone: "Avant le XVIe siècle",
+              rows: [
+                {
+                  n: 1,
+                  p: "Les Wolof appellent leurs voisins « Pël » : le nom naît d'une rencontre.",
+                  v: "Tradition orale",
+                },
+                {
+                  n: 4,
+                  p: "« Fellata », le nom que donnent les Kanouri à l'est.",
+                  v: "Étude académique",
+                },
+              ],
+            },
+          ],
+        },
+      ];
+      const COLORS = [
+        "var(--n1)",
+        "var(--n2)",
+        "var(--n3)",
+        "var(--n4)",
+        "var(--n5)",
+      ];
+      const NOTES = {
+        A: "A : on choisit une appellation (pastille) et on lit sa seule histoire de haut en bas. Une colonne à la fois : ça tient en 430 px, mais la comparaison entre noms demande de basculer.",
+        B: "B : toutes les appellations sur une même frise, chaque ligne repérée par la couleur de son nom. On voit les rencontres d'un coup d'œil, au prix d'une lecture plus dense.",
+      };
+      let layout = "A";
+      const state = {}; // per case: active name index, elsewhere visible
+
+      function src(v) {
+        return `<sup class="src" tabindex="0" data-v="${v}" aria-label="Voir les sources">◆</sup>`;
+      }
+      function rowHtml(r) {
+        return `<div class="row" style="--c:${COLORS[r.n]}"><p>${r.p}${src(r.v)}</p>${r.who ? `<div class="who">${r.who}</div>` : ""}</div>`;
+      }
+      function render(c) {
+        const s = (state[c.id] ??= { n: 0, els: false });
+        const periods = c.periods
+          .map((p) => {
+            let rows = p.rows;
+            if (layout === "A") rows = rows.filter((r) => r.n === s.n);
+            if (!rows.length) return "";
+            const zone = `<div class="zone" style="--c:${layout === "A" ? COLORS[s.n] : "var(--soft)"}">${p.zone}<span class="zonebar"></span></div>`;
+            let body;
+            if (p.hyp && rows.length > 1) {
+              body = `<p class="hyphead">${p.head}</p><div class="hyp ${p.three ? "three" : ""}">${rows.map((r) => `<div class="row" style="--c:${COLORS[r.n]}"><span class="tag">hypothèse</span><p>${r.p}${src(r.v)}</p></div>`).join("")}</div>`;
+            } else body = rows.map((r) => rowHtml(r)).join("");
+            const label = p.zone.replace(
+              /^(Depuis|Vers|Fin|Début|Avant le|Années) ?/,
+              ""
+            );
+            return `<div class="period"><span class="plabel">${label}</span><span class="dot"></span>
+      ${zone}${body}${p.converge ? `<div class="converge">↳ ${p.converge}</div>` : ""}
+      ${p.else ? `<div class="else">Pendant ce temps, ailleurs : ${p.else}</div>` : ""}</div>`;
+          })
+          .join("");
+        const chips = c.names
+          .map(
+            (nm, i) =>
+              `<button class="name ${layout === "A" && i === s.n ? "on" : ""}" style="color:${COLORS[i]}" data-case="${c.id}" data-n="${i}"><span class="t">${nm.t}</span><small>${nm.k}</small></button>`
+          )
+          .join("");
+        return `<section class="phone" aria-label="Maquette ${c.subject}"><div class="screen ${s.els ? "show-else" : ""}">
+    <div class="searchbar"><div class="q">🔍 ${c.subject}</div>
+      <div class="lenses"><span class="lens on">Timeline</span><span class="lens">Tout</span><span class="lens">Shorts</span><span class="lens">Récits</span><span class="lens">Jeux</span><span class="lens">Fiches</span></div></div>
+    <h2 class="subject">${c.subject}</h2><p class="kicker">${c.kicker}</p>
+    <div class="names">${chips}</div>
+    <div class="tools"><span class="hint">↓ on remonte le temps</span>
+      <button class="elsebtn" aria-pressed="${s.els}" data-else="${c.id}">Pendant ce temps, ailleurs</button></div>
+    <div class="tl">${periods}</div>
+    <p class="foot">◆ = voir les sources de ce passage (type de voix, jamais de niveau de confiance).</p>
+  </div></section>`;
+      }
+      function draw() {
+        document.getElementById("phones").innerHTML =
+          CASES.map(render).join("");
+        document.getElementById("layoutNote").textContent = NOTES[layout];
+      }
+      document.addEventListener("click", (e) => {
+        const b = e.target.closest("button,sup.src");
+        const pop = document.getElementById("pop");
+        if (!b) {
+          pop.classList.remove("on");
+          return;
+        }
+        if (b.dataset.layout) {
+          layout = b.dataset.layout;
+          document
+            .querySelectorAll("[data-layout]")
+            .forEach((x) => x.setAttribute("aria-pressed", x === b));
+          draw();
+        } else if (b.dataset.case) {
+          state[b.dataset.case].n = +b.dataset.n;
+          if (layout === "B") {
+            layout = "A";
+            document
+              .querySelectorAll("[data-layout]")
+              .forEach((x) =>
+                x.setAttribute("aria-pressed", x.dataset.layout === "A")
+              );
+          }
+          draw();
+        } else if (b.dataset.else) {
+          const s = state[b.dataset.else];
+          s.els = !s.els;
+          draw();
+        } else if (b.classList.contains("src")) {
+          pop.innerHTML = `<b>Sources de ce passage</b>Voix : ${b.dataset.v}<br><span style="opacity:.75">Maquette : la référence complète (titre, auteur, lien ou témoin interrogé) s'afficherait ici.</span>`;
+          pop.classList.add("on");
+        }
+      });
+      draw();
+    </script>
+  </body>
+</html>

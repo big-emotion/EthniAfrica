@@ -159,5 +159,259 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bono désigne un peuple akan du centre du Ghana, autour de Techiman, et de l'est de la Côte d'Ivoire, qui se nomme lui-même Bono. D'autres noms existent : Brong, Abron en Côte d'Ivoire, et Gyaman, le nom du royaume abron de Bondoukou. On ne sait pas avec certitude quand le nom Bono a été écrit pour la première fois, ni d'où viennent ces noms : les sources que nous avons lues n'en proposent pas d'explication.",
+    "names": [
+      {
+        "nameText": "Bono",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent, celui aussi du premier royaume akan.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bono désigne l'un des peuples akan du Ghana, à côté des Ashanti, des Kwahu ou des Akyem, selon Pierre Kipré. En Côte d'Ivoire, il cite parmi les Akan les Abron, ou Bron. Les sources que nous avons lues ne disent pas d'où vient le nom Bono.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 13 : Des lagunes ivoiriennes à la Volta",
+                "author": "Pierre Kipré",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 363",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition française lue dans l'exemplaire numérisé le 11 octobre 2026. La page cite parmi les Akan du Ghana « les Bono, les Ashanti, les Kwahu, les Akyem » et d'autres, et « en Côte-d'Ivoire […] les Abron (Bron), les Agni, les Sanwi, les Baoulé »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1450,
+              "to": 1620,
+              "label": "Du milieu du XVe au début du XVIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Bono est celui du premier royaume akan, apparu au milieu du XVe siècle. Il atteint sa plus grande puissance entre le milieu du XVIe et le début du XVIIe siècle, grâce au commerce entre les Mande et les Akan centré sur Begho, selon Adu Boahen.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 14 : Les États et les cultures de la côte de la Guinée inférieure",
+                "author": "A. Adu Boahen",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 458",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, édition française lue dans l'exemplaire numérisé le 11 octobre 2026. La page écrit que « le premier royaume akan qui avait émergé au milieu du XVe siècle, Bono, atteignit le sommet de sa puissance et de sa gloire » vers le milieu du XVIe siècle et au début du XVIIe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1723,
+              "to": 1724,
+              "label": "1723-1724"
+            },
+            "era": "polity",
+            "statement": "Le nom Bono figure parmi les États que l'Ashanti conquiert au nord-ouest, en 1723-1724, avant l'État abron, selon Adu Boahen.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 14 : Les États et les cultures de la côte de la Guinée inférieure",
+                "author": "A. Adu Boahen",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 468",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, édition française lue dans l'exemplaire numérisé le 11 octobre 2026. La page cite parmi les conquêtes ashanti « le Bono (1723-1724), l'État abron (1731-1740) et le Gonja (1732) »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Brong",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'ancien nom, en anglais, des Bono et de leur région ; Pacheco Pereira écrivait peut-être Boroes.",
+        "periodLabel": "Écrit vers 1506, sous une forme proche",
+        "accounts": [
+          {
+            "period": {
+              "from": 1505,
+              "to": 1508,
+              "label": "Écrit vers 1505-1508"
+            },
+            "era": "polity",
+            "statement": "Le nom Brong a peut-être une forme proche, Boroes, chez le Portugais Duarte Pacheco Pereira : il compte des Boroes parmi les marchands venus de terres lointaines vendre leur or au château de la Mina. L'historien Pierre Kipré y reconnaît les Bron, ou Abron. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Boroes",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Esmeraldo de situ orbis, livre II, chapitre 5 : le château de São Jorge da Mina",
+                "author": "Duarte Pacheco Pereira",
+                "year": 1954,
+                "url": "https://archive.org/details/dli.ernet.534920",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 143",
+                "notes": "Texte portugais écrit vers 1505-1508, lu dans la troisième édition de l'Academia Portuguesa da História (Lisbonne, 1954, introduction et notes de Damião Peres), sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. L'or de la Mina est apporté par des Noirs de terres lointaines, « os quais são mercadores de diversas nações, scilicet, Bremus, Atis, Acanis, Boroes, Mandingas, Cacres, Andeses ou Souzos »."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 13 : Des lagunes ivoiriennes à la Volta",
+                "author": "Pierre Kipré",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 355",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition française lue dans l'exemplaire numérisé le 11 octobre 2026. La page cite la liste des marchands de la Mina donnée par Duarte Pacheco Pereira, d'après la traduction de Raymond Mauny, puis écrit : « Nous pouvons identifier dans cette liste les Atty, les Akan, les Bron ou Abron et les Manden. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1600,
+              "to": 1799,
+              "label": "XVIIe et XVIIIe siècles"
+            },
+            "era": "polity",
+            "statement": "Le nom Brong désigne chez Adu Boahen une région et ses habitants : les étoffes adinkra y deviennent célèbres avant d'être copiées par les Ashanti, et les Brong portent les premiers l'orfèvrerie à un haut niveau, avant les Denkyira et les Ashanti.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 14 : Les États et les cultures de la côte de la Guinée inférieure",
+                "author": "A. Adu Boahen",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 480",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, édition française lue dans l'exemplaire numérisé le 11 octobre 2026. La page écrit que les étoffes adinkra « acquirent leur renommée dans la région de Brong » et qu'aux XVIIe et XVIIIe siècles « les Brong d'abord puis les Denkyira, et plus particulièrement les Ashanti » portèrent l'orfèvrerie « à un degré de perfection inégalé »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Abron",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom employé en Côte d'Ivoire pour les Bono de la région de Bondoukou.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Abron désigne en Côte d'Ivoire un peuple akan, appelé aussi Bron, selon Pierre Kipré. On ne sait pas avec certitude quand la forme Abron a été écrite pour la première fois.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 13 : Des lagunes ivoiriennes à la Volta",
+                "author": "Pierre Kipré",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 363",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition française lue dans l'exemplaire numérisé le 11 octobre 2026. La page cite parmi les Akan du Ghana « les Bono, les Ashanti, les Kwahu, les Akyem » et d'autres, et « en Côte-d'Ivoire […] les Abron (Bron), les Agni, les Sanwi, les Baoulé »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1600,
+              "to": 1720,
+              "label": "XVIIe et début du XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Abron est celui d'un royaume akan qui s'impose aux Koulango du sud et dispute à Bouna la route du Nord par la Comoé. Ses chefs Tan Date, au XVIIe siècle, et Kousounou, au début du XVIIIe, en affermissent le pouvoir, selon Michel Izard et Joseph Ki-Zerbo.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 12 : Du Niger à la Volta",
+                "author": "M. Izard et J. Ki-Zerbo",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 399",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, édition française lue dans l'exemplaire numérisé le 11 octobre 2026. La page écrit : « les Abron du groupe akan, après s'être imposés aux Koulango méridionaux, disputaient à Bouna le contrôle de la route du Nord par la Comoé »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gyaman",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du royaume abron, autour de Bondoukou ; Bowdich écrivait Gaman.",
+        "periodLabel": "Écrit dès 1819, sous une forme proche",
+        "accounts": [
+          {
+            "period": {
+              "from": 1817,
+              "to": 1817,
+              "label": "Séjour de 1817, livre de 1819"
+            },
+            "era": "polity",
+            "statement": "Le nom Gyaman a une forme proche, Gaman, chez le Britannique Thomas Edward Bowdich, envoyé à Kumasi en 1817 : il décrit le « royaume de Gaman », dont la capitale est Buntookoo et le roi Adinkara. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume existait déjà avant elle.",
+            "formAsWritten": "kingdom of Gaman",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mission from Cape Coast Castle to Ashantee, with a Statistical Account of that Kingdom, and Geographical Notices of Other Parts of the Interior of Africa",
+                "author": "Thomas Edward Bowdich",
+                "year": 1819,
+                "url": "https://archive.org/details/missionfromcapec00bowd",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 169",
+                "notes": "Londres, John Murray, 1819, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Bowdich séjourne à Kumasi en 1817. La page écrit : « Buntookoo, the capital of the kingdom of Gaman, is 11 journies N. N.W. of Coomassie » et « The name of the King of Gaman is Adinkara »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1700,
+              "to": 1740,
+              "label": "Premières décennies du XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Gyaaman, ou Abron, désigne l'un des États que l'Ashanti conquiert au XVIIIe siècle, avec Banda et Bono, pour tirer profit du commerce du nord, selon Adu Boahen.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 14 : Les États et les cultures de la côte de la Guinée inférieure",
+                "author": "A. Adu Boahen",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 451",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, édition française lue dans l'exemplaire numérisé le 11 octobre 2026. La page écrit que les Ashanti « conquirent Gyaaman (ou Abron), Banda et Bono au cours des premières décennies du XVIIIe siècle »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

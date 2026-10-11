@@ -130,5 +130,152 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Shirazi désigne des gens de la côte swahili et des îles voisines, de Zanzibar et Pemba à Kilwa et aux Comores, qui se rattachent à Shiraz, une ville de Perse ; on dit aussi Washirazi. Les sources ne s'accordent pas sur ce que vaut cette origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Shirazi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom qui rattache des gens de la côte swahili à Shiraz, en Perse ; cette origine est discutée.",
+        "periodLabel": "Une forme proche est écrite en 1268 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom Shīrāzī désigne les habitants de Shiraz, en Perse, mais aussi, sur la côte d'Afrique de l'Est, des marchands venus du golfe Persique, notamment de Siraf, le port de cette ville, selon le glossaire de l'Histoire générale de l'Afrique. La valeur de cette origine est discutée ; nous présentons les explications plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, glossaire",
+                "author": "UNESCO",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 933",
+                "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC. Entrée « Shīrāzī »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1175,
+              "to": 1200,
+              "label": "Fin du XIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Shirazi est celui de la dynastie qui gouverne Kilwa, la dynastie « dite des Shirāzī », arrivée au pouvoir à la fin du XIIe siècle selon l'archéologue Neville Chittick, que cite V. Matveiev. La Chronique de Kilwa, dont deux versions nous sont parvenues, fait venir cette dynastie de Shiraz.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 18 : L'essor de la civilisation swahili",
+                "author": "V. Matveiev",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 499, p. 503 et p. 513",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1268,
+              "to": 1269,
+              "label": "1268-1269"
+            },
+            "era": "polity",
+            "statement": "Le nom Shirazi a une forme proche, al-Shīrāzī, sur une inscription de la mosquée Arba' Rukun de Mogadiscio datée de 1268-1269 : elle est dédiée à un certain Khusraw ibn Muḥammad al-Shīrāzī, selon Fidel T. Masao et Henri W. Mutoro. C'est la plus ancienne trace de ce nom que le projet connaît ; elle nomme un homme, pas un peuple.",
+            "formAsWritten": "al-Shīrāzī",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 21 : La côte d'Afrique orientale et les Comores",
+                "author": "Fidel T. Masao et Henri W. Mutoro",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 647",
+                "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1990,
+              "to": 1990,
+              "label": "Rapportée en 1990"
+            },
+            "era": "modern",
+            "statement": "Le nom Shirazi viendrait de marchands du golfe Persique, notamment de Siraf, le port de Shiraz, venus en Afrique de l'Est aux IXe et Xe siècles, selon la tradition orale et les chroniques swahili que rapportent Fidel T. Masao et Henri W. Mutoro. Des céramiques trouvées à Manda et à Unguja Ukuu leur semblent aller dans ce sens.",
+            "hypothesisGroup": "origine du nom Shirazi",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 21 : La côte d'Afrique orientale et les Comores",
+                "author": "Fidel T. Masao et Henri W. Mutoro",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 646",
+                "notes": "UNESCO, volume dirigé par Mohammed El Fasi, codirigé par Ivan Hrbek, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "Proposée en 1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Shirazi relèverait d'un « mythe shirazi » de formation récente : les traditions sur la fondation des villes de la côte n'auraient été déformées pour les rattacher à des origines asiatiques qu'à partir du XVe siècle au plus tôt, selon Jean Devisse.",
+            "hypothesisGroup": "origine du nom Shirazi",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 26 : L'Afrique dans les relations intercontinentales",
+                "author": "Jean Devisse, en collaboration avec S. Labib",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 710, note 92",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "Rapportée en 1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Shirazi aurait été revendiqué par des groupes dont les origines africaines ne font pourtant aucun doute, et qui se seraient prêté une origine arabe ou shirazi, selon l'anthropologue A. H. J. Prins, que cite V. Matveiev.",
+            "hypothesisGroup": "origine du nom Shirazi",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 18 : L'essor de la civilisation swahili",
+                "author": "V. Matveiev",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 517",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -144,5 +144,145 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kambata désigne un peuple du centre-sud de l'Éthiopie, entre les rivières Omo et Bilate, autour du mont Hambaricho, qui se nomme lui-même Kambata. Une autre forme existe : Cambatta, la forme italienne. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Kambata",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ktb",
+        "namedBy": null,
+        "shortLine": "Le nom du peuple et de son pays ; la tradition orale le rattache à un ancêtre, Kambato.",
+        "periodLabel": "Associé au XVe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kambata désigne un peuple d'agriculteurs établi entre les rivières Omo et Bilate, dont le mont Hambaricho est le centre, selon l'historien Tagesse Shuramo. On ne sait pas avec certitude d'où vient ce nom ; la tradition orale en donne une explication, présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ethnic Interaction in South Central Ethiopia : The Case of Kambata and Hadya (1890s-1990s)",
+                "author": "Tagesse Shuramo",
+                "year": null,
+                "url": "https://repository.ju.edu.et/bitstream/handle/123456789/833/tagesse.2.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7-9",
+                "notes": "Mémoire de master, département d'histoire de l'université de Jimma ; entretiens menés en février et mars 2014 ; lu le 11 octobre 2026 dans le dépôt de l'université."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1941,
+              "to": null,
+              "label": "Après 1941"
+            },
+            "era": "modern",
+            "statement": "Le nom Kambata est retenu pour l'awraja, la circonscription qui réunit les pays kambata, hadiya, shambaro et alaba, alors que les Kambata y sont moins nombreux que les Hadiya, selon Tagesse Shuramo. Il cite parmi les raisons l'usage italien de « Residenza del Cambatta » et les liens anciens des Kambata avec le nord de l'Éthiopie.",
+            "sources": [
+              {
+                "title": "Ethnic Interaction in South Central Ethiopia : The Case of Kambata and Hadya (1890s-1990s)",
+                "author": "Tagesse Shuramo",
+                "year": null,
+                "url": "https://repository.ju.edu.et/bitstream/handle/123456789/833/tagesse.2.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 69",
+                "notes": "Mémoire de master, département d'histoire de l'université de Jimma ; entretiens menés en février et mars 2014 ; lu le 11 octobre 2026 dans le dépôt de l'université."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1414,
+              "to": 1429,
+              "label": "Règne de l'empereur Yeshaq, 1414-1429"
+            },
+            "era": "polity",
+            "statement": "Le nom Kambata est rattaché au règne de l'empereur Yeshaq, de 1414 à 1429, quand commencent les contacts entre ce royaume et les rois chrétiens des hautes terres, selon Ernesta Cerulli, que cite Tagesse Shuramo. C'est la plus ancienne trace de ce nom que le projet connaît ; nous n'avons pas lu le livre de Cerulli. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Ethnic Interaction in South Central Ethiopia : The Case of Kambata and Hadya (1890s-1990s)",
+                "author": "Tagesse Shuramo",
+                "year": null,
+                "url": "https://repository.ju.edu.et/bitstream/handle/123456789/833/tagesse.2.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7",
+                "notes": "Mémoire de master, département d'histoire de l'université de Jimma ; entretiens menés en février et mars 2014 ; lu le 11 octobre 2026 dans le dépôt de l'université. L'auteur cite Ernesta Cerulli, Peoples of South-West Ethiopia and its Borderland, p. 85-86."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Recueillie en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Kambata viendrait de Kambato, qui aurait conduit les premiers habitants jusqu'au mont Hambaricho et que l'on tient pour le père du peuple, selon des anciens interrogés en 2014 par Tagesse Shuramo. Une version rapportée par Tesfaye Habiso fait de Kambato le frère des ancêtres des Hadiya, des Shambaro et des Alaba.",
+            "hypothesisGroup": "origine du nom Kambata",
+            "sources": [
+              {
+                "title": "Ethnic Interaction in South Central Ethiopia : The Case of Kambata and Hadya (1890s-1990s)",
+                "author": "Tagesse Shuramo",
+                "year": null,
+                "url": "https://repository.ju.edu.et/bitstream/handle/123456789/833/tagesse.2.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "narrative": "Récit des origines des Kambata et de leurs sept maisons fondatrices",
+                "carrier": "Ato Shuramo Delbeto, Ato Heramo, Ato Ersido, Ato Abegaz et Ato Asaro, anciens interrogés par l'auteur",
+                "place": "Pays kambata, notamment le district de Qedida",
+                "notes": "Mémoire de master, département d'histoire de l'université de Jimma ; entretiens menés en février et mars 2014 ; lu le 11 octobre 2026 dans le dépôt de l'université."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Cambatta",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "L'administration italienne, selon Tagesse Shuramo",
+        "shortLine": "La forme italienne du nom, donnée à toute la région pendant l'occupation de 1936 à 1941.",
+        "periodLabel": "Occupation italienne, 1936-1941",
+        "accounts": [
+          {
+            "period": {
+              "from": 1936,
+              "to": 1941,
+              "label": "Occupation italienne, 1936-1941"
+            },
+            "era": "colonial",
+            "statement": "Le nom Cambatta s'étend à toute la région pendant l'occupation italienne, dans le nom de la « Residenza del Cambatta », selon Tagesse Shuramo. C'est la plus ancienne trace de cette forme que le projet connaît.",
+            "formAsWritten": "Residenza del Cambatta",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Ethnic Interaction in South Central Ethiopia : The Case of Kambata and Hadya (1890s-1990s)",
+                "author": "Tagesse Shuramo",
+                "year": null,
+                "url": "https://repository.ju.edu.et/bitstream/handle/123456789/833/tagesse.2.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 69",
+                "notes": "Mémoire de master, département d'histoire de l'université de Jimma ; entretiens menés en février et mars 2014 ; lu le 11 octobre 2026 dans le dépôt de l'université."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

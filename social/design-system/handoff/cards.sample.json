@@ -1,0 +1,1691 @@
+{
+ "version": "1.1.0-proposition",
+ "logo": "Logo/ethniafrica-logo.png",
+ "cards": [
+  {
+   "id": "seq-1",
+   "type": "opener",
+   "theme": "nuit",
+   "folio": "01/09",
+   "kicker": "Le nom d'un pays",
+   "title": "D'où vient le nom *Ouganda* ?",
+   "cue": "Faites défiler",
+   "image": {
+    "src": "Exemples/kampala-view-2026.jpg",
+    "w": 2700,
+    "h": 1439,
+    "focus": [
+     0.6,
+     0.36
+    ],
+    "anchor": [
+     0.5,
+     0.5
+    ]
+   },
+   "credit": "Photo : Dr. S-mon, vue de Kampala, 2026, Wikimedia Commons, CC BY 4.0",
+   "imageAlt": "Vue de Kampala aujourd'hui, avec des quartiers, des immeubles et de la verdure",
+   "demo": "Titre illustratif",
+   "provenance": "Titre et chapeau nouveaux."
+  },
+  {
+   "id": "seq-2",
+   "type": "explanation",
+   "theme": "nuit",
+   "folio": "02/09",
+   "kicker": "Le nom du pays",
+   "title": "Deux formes pour un même *pays*",
+   "forms": {
+    "layout": "table",
+    "rows": [
+     [
+      "Ouganda",
+      "en français"
+     ],
+     [
+      "Uganda",
+      "en anglais et en swahili, les langues officielles du pays"
+     ]
+    ]
+   },
+   "note": "Ce nom vient du Buganda, un royaume situé au nord du lac Victoria, là où se trouve aujourd'hui Kampala.",
+   "image": {
+    "src": "Exemples/kampala-view-2026.jpg",
+    "w": 2700,
+    "h": 1439,
+    "focus": [
+     0.45,
+     0.42
+    ],
+    "anchor": [
+     0.5,
+     0.5
+    ],
+    "zoom": 1.3
+   },
+   "source": "Constitution de l'Ouganda, article 6 · Encyclopædia Britannica",
+   "credit": "Photo : Dr. S-mon, vue de Kampala, 2026, Wikimedia Commons, CC BY 4.0",
+   "imageAlt": "Vue de Kampala, toits et verdure",
+   "demo": "Titre illustratif, texte approuvé",
+   "provenance": "Texte approuvé et publié le 9 octobre 2026 (carte 2), redistribué en tableau des formes. Titre nouveau."
+  },
+  {
+   "id": "seq-3",
+   "type": "map",
+   "theme": "nuit",
+   "folio": "03/09",
+   "kicker": "Où se trouvait le Buganda",
+   "title": "Un nom venu d'un *royaume*",
+   "map": {
+    "dataRef": "Cartes/grands-lacs.json",
+    "borders": "quiet",
+    "view": [
+     60,
+     200,
+     980,
+     1225
+    ],
+    "countryLabels": false,
+    "places": [
+     {
+      "name": "Kampala",
+      "x": 578.4,
+      "y": 574.9
+     }
+    ],
+    "labels": [
+     {
+      "text": "Buganda",
+      "x": 497.0,
+      "y": 485.8,
+      "kind": "name"
+     },
+     {
+      "text": "OUGANDA",
+      "x": 749.0,
+      "y": 436.8,
+      "kind": "country"
+     },
+     {
+      "text": "KENYA",
+      "x": 947,
+      "y": 493,
+      "kind": "country",
+      "anchor": "end"
+     },
+     {
+      "text": "lac Victoria",
+      "x": 637.0,
+      "y": 674.8,
+      "kind": "water"
+     },
+     {
+      "text": "lac Albert",
+      "x": 350.0,
+      "y": 373.8,
+      "kind": "water"
+     },
+     {
+      "text": "lac Kyoga",
+      "x": 651.0,
+      "y": 450.8,
+      "kind": "water"
+     }
+    ],
+    "caption": {
+     "what": "frontières actuelles ; le Buganda situé par son nom, sans limites tracées",
+     "when": "aujourd'hui",
+     "source": "Natural Earth, domaine public"
+    },
+    "waterLabels": false
+   },
+   "imageAlt": "Carte de la région des Grands Lacs. Une étiquette indique le Buganda autour de Kampala, au nord du lac Victoria, sans tracer de frontière",
+   "demo": "Chapeau et légende illustratifs",
+   "provenance": "Texte approuvé et publié le 9 octobre 2026 (titre de la carte 2). Pas de texte courant : la carte suffit."
+  },
+  {
+   "id": "seq-4",
+   "type": "explanation",
+   "theme": "nuit",
+   "folio": "04/09",
+   "kicker": "En luganda, la langue du Buganda",
+   "title": "Un même mot change de début selon ce qu'il *désigne*",
+   "forms": {
+    "layout": "table",
+    "rows": [
+     [
+      "*Bu*ganda",
+      "le pays, le royaume"
+     ],
+     [
+      "*Ba*ganda",
+      "les habitants"
+     ],
+     [
+      "*Mu*ganda",
+      "une personne"
+     ],
+     [
+      "*Lu*ganda",
+      "la langue"
+     ]
+    ]
+   },
+   "note": "Seul, « ganda » n'a pas de sens connu en luganda, et son origine reste incertaine.",
+   "image": {
+    "src": "Exemples/bulange-mengo-2018.jpg",
+    "w": 2700,
+    "h": 1886,
+    "focus": [
+     0.47,
+     0.28
+    ],
+    "anchor": [
+     0.5,
+     0.55
+    ]
+   },
+   "source": "Worldmark Encyclopedia of Cultures (Gale) · CIA World Factbook, 2025",
+   "credit": "Photo : Jim Joel, le Bulange, siège du parlement du Buganda, Mengo (Kampala), 2018, Wikimedia Commons, CC BY-SA 4.0",
+   "imageAlt": "Photo du Bulange, le bâtiment blanc du parlement du royaume du Buganda, à Mengo",
+   "provenance": "Texte approuvé et publié le 9 octobre 2026 (carte 3), repris mot pour mot."
+  },
+  {
+   "id": "seq-5",
+   "type": "document",
+   "theme": "nuit",
+   "folio": "05/09",
+   "kicker": "Le passage par le swahili",
+   "title": "En swahili, le pays commence par *U-*",
+   "body": "En swahili, la langue de la côte et du commerce, un nom de pays commence par U-. En 1863, le voyageur britannique John Hanning Speke en donne un exemple : les Wagogo vivent en Ugogo. Les ouvrages de référence expliquent Uganda de la même façon : U-, le pays, et Ganda.",
+   "image": {
+    "src": "Exemples/speke-1863-pxxxi-page.jpg",
+    "w": 879,
+    "h": 1500,
+    "focus": [
+     0.5,
+     0.09
+    ],
+    "anchor": [
+     0.5,
+     0.42
+    ],
+    "zoom": 1.18
+   },
+   "source": "J. H. Speke, Journal of the Discovery of the Source of the Nile, 1863, p. xxxi · CIA World Factbook, 2025",
+   "credit": "J. H. Speke, 1863, p. xxxi, Internet Archive, domaine public",
+   "imageAlt": "Extrait imprimé du livre de Speke, 1863, page 31 de l'introduction. En anglais, il explique que Wa désigne les gens, M une personne, U le lieu et Ki la langue",
+   "provenance": "Texte approuvé et publié le 9 octobre 2026 (carte 4), repris mot pour mot.",
+   "veil": "strong"
+  },
+  {
+   "id": "seq-6",
+   "type": "dated",
+   "theme": "nuit",
+   "folio": "06/09",
+   "date": {
+    "display": "1863",
+    "kind": "year",
+    "marker": "attestation",
+    "name": "« Uganda »",
+    "designated": "le royaume du Buganda",
+    "usedBy": "J. H. Speke, voyageur britannique, dans son livre"
+   },
+   "image": {
+    "src": "Exemples/speke-1863-p253-page.jpg",
+    "w": 985,
+    "h": 1500,
+    "focus": [
+     0.5,
+     0.035
+    ],
+    "anchor": [
+     0.5,
+     0.18
+    ],
+    "zoom": 1.12
+   },
+   "source": "J. H. Speke, Journal of the Discovery of the Source of the Nile, 1863, p. 253",
+   "credit": "J. H. Speke, 1863, p. 253, Internet Archive, domaine public",
+   "imageAlt": "Page 253 du livre de Speke, 1863. En haut, le titre courant imprimé : The kingdom of Uganda",
+   "demo": "Champs reformulés, à approuver",
+   "provenance": "Faits de la carte 5 publiée, mis au format carte datée.",
+   "veil": "strong"
+  },
+  {
+   "id": "seq-7",
+   "type": "document",
+   "theme": "nuit",
+   "folio": "07/09",
+   "kicker": "De 1894 à 1910",
+   "title": "Le nom du royaume s'étend à tout un *territoire*",
+   "body": "En 1894, le Royaume-Uni déclare un protectorat sur le Buganda. Deux ans plus tard, il y ajoute le Bunyoro, le Toro, l'Ankole et le Busoga. L'ensemble s'appelle Uganda. Sur ce relevé de 1908, on lit les deux noms.",
+   "image": {
+    "src": "Exemples/richardson-1908-sheet.jpg",
+    "w": 1800,
+    "h": 1450,
+    "focus": [
+     0.55,
+     0.5
+    ],
+    "anchor": [
+     0.5,
+     0.62
+    ],
+    "zoom": 1.0
+   },
+   "insets": [
+    {
+     "src": "Exemples/richardson-title-crop.jpg",
+     "x": 72,
+     "y": 96,
+     "width": 470,
+     "label": "le royaume"
+    },
+    {
+     "src": "Exemples/richardson-stamp-crop.jpg",
+     "x": 600,
+     "y": 96,
+     "width": 330,
+     "label": "le protectorat"
+    }
+   ],
+   "source": "Encyclopædia Britannica · Relevé d'A. Richardson, 1908, British Library",
+   "credit": "Relevé d'A. Richardson, 1908, British Library WOOS-13-4-5-1, Open Government Licence v1.0",
+   "imageAlt": "Carte topographique manuscrite de 1908. Deux agrandissements montrent le titre BUGANDA et le tampon Uganda Protectorate, Survey Department, 14 avril 1910",
+   "provenance": "Texte approuvé et publié le 9 octobre 2026 (carte 6). Chapeau « 1894-1910 » écrit en toutes lettres."
+  },
+  {
+   "id": "seq-8",
+   "type": "document",
+   "theme": "nuit",
+   "folio": "08/09",
+   "kicker": "9 octobre 1962",
+   "title": "L'Ouganda indépendant garde ce *nom*",
+   "body": "En 1962, le protectorat devient indépendant sous le nom d'Uganda, selon la loi qui accorde l'indépendance. Le nom n'est donc pas né avec l'indépendance : il est passé d'un royaume à un protectorat, puis à un pays. Acholi, Banyankole, Basoga, Iteso, Langi et bien d'autres peuples y vivent avec leurs propres noms.",
+   "image": {
+    "src": "Exemples/kampala-view-2026.jpg",
+    "w": 2700,
+    "h": 1439,
+    "focus": [
+     0.4,
+     0.45
+    ],
+    "anchor": [
+     0.5,
+     0.55
+    ],
+    "zoom": 1.2
+   },
+   "source": "Uganda Independence Act 1962, article 1",
+   "credit": "Photo : Dr. S-mon, vue de Kampala, 2026, Wikimedia Commons, CC BY 4.0",
+   "imageAlt": "Vue de Kampala, quartiers et verdure au premier plan",
+   "provenance": "Texte approuvé et publié le 9 octobre 2026 (carte 7), corps entier repris mot pour mot."
+  },
+  {
+   "id": "seq-9",
+   "type": "closing",
+   "theme": "nuit",
+   "folio": "09/09",
+   "title": "Notre objectif : raconter l'origine des noms, avec des sources.",
+   "body": "Sur ethniafrica.com, la fiche Ouganda présente ses peuples, ses langues et ses royaumes.",
+   "cta": {
+    "domain": "ethniafrica.com"
+   },
+   "image": {
+    "src": "Exemples/bulange-mengo-2018.jpg",
+    "w": 2700,
+    "h": 1886,
+    "focus": [
+     0.47,
+     0.35
+    ],
+    "anchor": [
+     0.5,
+     0.45
+    ]
+   },
+   "credit": "Photo : Jim Joel, le Bulange, siège du parlement du Buganda, Mengo (Kampala), 2018, Wikimedia Commons, CC BY-SA 4.0",
+   "imageAlt": "Le Bulange, parlement du royaume du Buganda, à Mengo",
+   "provenance": "Phrase de clôture reprise du carrousel du 2 octobre 2026 (fétichisme), phrase d'appel de la carte 7 du 9 octobre."
+  },
+  {
+   "id": "chr-1",
+   "type": "dated",
+   "theme": "nuit",
+   "folio": "01/05",
+   "date": {
+    "display": "1962",
+    "kind": "year",
+    "marker": "independance",
+    "name": "Uganda",
+    "designated": "l'État indépendant",
+    "usedBy": "la loi qui accorde l'indépendance"
+   },
+   "image": {
+    "src": "Exemples/kampala-view-2026.jpg",
+    "w": 2700,
+    "h": 1439,
+    "focus": [
+     0.6,
+     0.36
+    ],
+    "anchor": [
+     0.5,
+     0.5
+    ]
+   },
+   "source": "Uganda Independence Act 1962, article 1",
+   "credit": "Photo : Dr. S-mon, vue de Kampala, 2026, Wikimedia Commons, CC BY 4.0",
+   "demo": "Formulation illustrative",
+   "provenance": "Faits de la carte 7 publiée."
+  },
+  {
+   "id": "chr-2",
+   "type": "dated",
+   "theme": "nuit",
+   "folio": "02/05",
+   "date": {
+    "display": "1894 à 1896",
+    "kind": "period",
+    "marker": {
+     "kind": "adoption",
+     "label": "Nom officiel du protectorat"
+    },
+    "name": "Uganda",
+    "designated": "un protectorat : le Buganda, puis le Bunyoro, le Toro, l'Ankole et le Busoga",
+    "usedBy": "l'administration britannique"
+   },
+   "image": {
+    "src": "Exemples/richardson-1908-sheet.jpg",
+    "w": 1800,
+    "h": 1450,
+    "focus": [
+     0.55,
+     0.45
+    ],
+    "anchor": [
+     0.5,
+     0.5
+    ]
+   },
+   "source": "Encyclopædia Britannica",
+   "credit": "Relevé d'A. Richardson, 1908, British Library WOOS-13-4-5-1, Open Government Licence v1.0",
+   "demo": "Formulation illustrative",
+   "provenance": "Faits de la carte 6 publiée."
+  },
+  {
+   "id": "chr-3",
+   "type": "dated",
+   "theme": "nuit",
+   "folio": "03/05",
+   "date": {
+    "display": "1863",
+    "kind": "year",
+    "marker": "attestation",
+    "name": "« Uganda »",
+    "designated": "le royaume du Buganda",
+    "usedBy": "J. H. Speke, dans son livre"
+   },
+   "image": {
+    "src": "Exemples/speke-1863-p253-page.jpg",
+    "w": 985,
+    "h": 1500,
+    "focus": [
+     0.5,
+     0.035
+    ],
+    "anchor": [
+     0.5,
+     0.18
+    ],
+    "zoom": 1.12
+   },
+   "source": "J. H. Speke, 1863, p. 253",
+   "credit": "J. H. Speke, 1863, p. 253, Internet Archive, domaine public",
+   "demo": "Formulation illustrative",
+   "provenance": "Faits de la carte 5 publiée.",
+   "veil": "strong"
+  },
+  {
+   "id": "chr-4",
+   "type": "dated",
+   "theme": "nuit",
+   "folio": "04/05",
+   "date": {
+    "display": "Date inconnue",
+    "kind": "unknown",
+    "marker": "origine",
+    "name": "Buganda",
+    "designated": "le royaume, en luganda"
+   },
+   "image": {
+    "src": "Exemples/bulange-mengo-2018.jpg",
+    "w": 2700,
+    "h": 1886,
+    "focus": [
+     0.47,
+     0.3
+    ],
+    "anchor": [
+     0.5,
+     0.5
+    ]
+   },
+   "source": "Worldmark Encyclopedia of Cultures · CIA World Factbook, 2025",
+   "credit": "Photo : Jim Joel, le Bulange, siège du parlement du Buganda, Mengo (Kampala), 2018, Wikimedia Commons, CC BY-SA 4.0",
+   "demo": "Formulation illustrative",
+   "body": "Uganda vient de ce nom, avec le préfixe swahili U-. L'origine de « ganda » reste incertaine.",
+   "provenance": "Faits des cartes 3 et 4 publiées. La date reste inconnue : on ne l'invente pas."
+  },
+  {
+   "id": "chr-5",
+   "type": "closing",
+   "theme": "nuit",
+   "folio": "05/05",
+   "kicker": "Le nom Ouganda, de 1962 au Buganda",
+   "recap": [
+    {
+     "date": "1962",
+     "name": "Uganda",
+     "kind": "independance"
+    },
+    {
+     "date": "1894",
+     "name": "Uganda",
+     "kind": "adoption"
+    },
+    {
+     "date": "1863",
+     "name": "« Uganda »",
+     "kind": "attestation"
+    },
+    {
+     "date": "?",
+     "name": "Buganda",
+     "kind": "origine"
+    }
+   ],
+   "title": "Notre objectif : raconter l'origine des noms, avec des sources.",
+   "body": "Vous avez une histoire, un nom transmis ou une source ? Partagez-la sur EthniAfrica.",
+   "cta": {
+    "domain": "ethniafrica.com"
+   },
+   "image": {
+    "src": "Exemples/kampala-view-2026.jpg",
+    "w": 2700,
+    "h": 1439,
+    "focus": [
+     0.6,
+     0.36
+    ],
+    "anchor": [
+     0.5,
+     0.5
+    ],
+    "zoom": 1.35
+   },
+   "credit": "Photo : Dr. S-mon, vue de Kampala, 2026, Wikimedia Commons, CC BY 4.0",
+   "demo": "Frise de clôture, formulation illustrative",
+   "provenance": "Frise récapitulative des quatre cartes datées ; phrase d'appel du carrousel fétichisme."
+  },
+  {
+   "id": "chr-branch",
+   "type": "dated",
+   "theme": "nuit",
+   "folio": "Variante",
+   "date": {
+    "display": "1862",
+    "kind": "year",
+    "branches": [
+     {
+      "label": "En luganda",
+      "name": "Buganda",
+      "designated": "le nom du royaume dans sa langue"
+     },
+     {
+      "label": "Chez Speke",
+      "name": "« Uganda »",
+      "designated": "la forme swahilie qu'il emploie partout"
+     }
+    ]
+   },
+   "image": {
+    "src": "Exemples/speke-1863-pxxxi-page.jpg",
+    "w": 879,
+    "h": 1500,
+    "focus": [
+     0.5,
+     0.09
+    ],
+    "anchor": [
+     0.5,
+     0.4
+    ],
+    "zoom": 1.18
+   },
+   "source": "J. H. Speke, 1863, p. 253 et p. xxxi",
+   "credit": "J. H. Speke, 1863, Internet Archive, domaine public",
+   "demo": "Formulation illustrative",
+   "provenance": "Faits de la carte 5 publiée (« jamais Buganda »).",
+   "kicker": "Quand deux formes coexistent",
+   "note": "Ce ne sont pas deux noms successifs : les deux formes existent en même temps.",
+   "veil": "strong"
+  },
+  {
+   "id": "map-a",
+   "type": "map",
+   "theme": "nuit",
+   "folio": "Variante sans frontières",
+   "kicker": "Langues et territoires",
+   "title": "Où parle-t-on la {area-a:langue A} et la {area-b:langue B} ?",
+   "map": {
+    "dataRef": "Cartes/grands-lacs.json",
+    "borders": "none",
+    "view": [
+     270,
+     47,
+     800,
+     1000
+    ],
+    "countryLabels": false,
+    "waterLabels": false,
+    "areas": [
+     {
+      "label": "Langue A (fictive)",
+      "tone": "area-a",
+      "kind": "certain",
+      "paths": [
+       "M969,353C967,373 940,390 923,408C907,427 894,459 869,466C845,473 807,456 776,449C745,442 700,441 683,425C666,409 675,376 676,353C678,329 675,300 692,285C709,270 748,269 778,261C808,253 844,233 870,238C896,243 920,271 937,290C953,309 971,333 969,353Z",
+       "M1028,521C1029,531 1025,546 1016,552C1007,558 987,557 973,557C959,557 941,556 932,550C923,544 921,531 921,521C920,511 922,496 930,490C939,484 959,484 973,484C987,484 1003,486 1012,493C1021,499 1027,511 1028,521Z"
+      ]
+     },
+     {
+      "label": "Langue B (fictive)",
+      "tone": "area-b",
+      "kind": "certain",
+      "paths": [
+       "M578,311C578,328 552,346 536,361C520,376 504,393 481,401C458,409 419,417 397,410C375,403 363,377 348,360C334,343 315,329 311,311C307,293 312,265 327,250C343,236 378,231 403,226C429,221 459,215 481,220C503,226 520,245 536,261C552,276 578,294 578,311Z"
+      ]
+     },
+     {
+      "label": "Langue A, présence incertaine",
+      "legend": "Présence incertaine",
+      "tone": "area-a",
+      "kind": "uncertain",
+      "paths": [
+       "M743,255C744,269 739,288 725,298C710,308 680,311 656,315C633,319 609,324 586,321C563,319 528,311 516,300C504,289 513,269 515,255C517,240 514,225 526,214C537,202 562,189 584,185C606,181 636,187 658,192C681,196 706,203 720,214C734,224 742,241 743,255Z"
+      ]
+     }
+    ],
+    "labels": [
+     {
+      "text": "Langue A",
+      "x": 826.0,
+      "y": 296.8,
+      "kind": "area",
+      "tone": "area-a"
+     },
+     {
+      "text": "Langue B",
+      "x": 441.0,
+      "y": 296.8,
+      "kind": "area",
+      "tone": "area-b"
+     },
+     {
+      "text": "OUGANDA",
+      "x": 539.0,
+      "y": 478.8,
+      "kind": "country"
+     },
+     {
+      "text": "KENYA",
+      "x": 1001.0,
+      "y": 394.8,
+      "kind": "country"
+     },
+     {
+      "text": "lac Albert",
+      "x": 350.0,
+      "y": 403.8,
+      "kind": "water"
+     },
+     {
+      "text": "lac Kyoga",
+      "x": 651.0,
+      "y": 450.8,
+      "kind": "water"
+     }
+    ],
+    "caption": {
+     "what": "aires fictives pour la démonstration",
+     "when": "à indiquer",
+     "source": "à indiquer ; fond Natural Earth, domaine public"
+    }
+   },
+   "demo": "Aires fictives, démonstration",
+   "provenance": "Géométrie des aires inventée pour montrer le gabarit. Ne jamais publier."
+  },
+  {
+   "id": "map-b",
+   "type": "map",
+   "theme": "nuit",
+   "folio": "Variante frontières discrètes",
+   "kicker": "Langues et territoires",
+   "title": "Où parle-t-on la {area-a:langue A} et la {area-b:langue B} ?",
+   "map": {
+    "dataRef": "Cartes/grands-lacs.json",
+    "borders": "quiet",
+    "view": [
+     270,
+     47,
+     800,
+     1000
+    ],
+    "countryLabels": false,
+    "waterLabels": false,
+    "areas": [
+     {
+      "label": "Langue A (fictive)",
+      "tone": "area-a",
+      "kind": "certain",
+      "paths": [
+       "M969,353C967,373 940,390 923,408C907,427 894,459 869,466C845,473 807,456 776,449C745,442 700,441 683,425C666,409 675,376 676,353C678,329 675,300 692,285C709,270 748,269 778,261C808,253 844,233 870,238C896,243 920,271 937,290C953,309 971,333 969,353Z",
+       "M1028,521C1029,531 1025,546 1016,552C1007,558 987,557 973,557C959,557 941,556 932,550C923,544 921,531 921,521C920,511 922,496 930,490C939,484 959,484 973,484C987,484 1003,486 1012,493C1021,499 1027,511 1028,521Z"
+      ]
+     },
+     {
+      "label": "Langue B (fictive)",
+      "tone": "area-b",
+      "kind": "certain",
+      "paths": [
+       "M578,311C578,328 552,346 536,361C520,376 504,393 481,401C458,409 419,417 397,410C375,403 363,377 348,360C334,343 315,329 311,311C307,293 312,265 327,250C343,236 378,231 403,226C429,221 459,215 481,220C503,226 520,245 536,261C552,276 578,294 578,311Z"
+      ]
+     },
+     {
+      "label": "Langue A, présence incertaine",
+      "legend": "Présence incertaine",
+      "tone": "area-a",
+      "kind": "uncertain",
+      "paths": [
+       "M743,255C744,269 739,288 725,298C710,308 680,311 656,315C633,319 609,324 586,321C563,319 528,311 516,300C504,289 513,269 515,255C517,240 514,225 526,214C537,202 562,189 584,185C606,181 636,187 658,192C681,196 706,203 720,214C734,224 742,241 743,255Z"
+      ]
+     }
+    ],
+    "labels": [
+     {
+      "text": "Langue A",
+      "x": 826.0,
+      "y": 296.8,
+      "kind": "area",
+      "tone": "area-a"
+     },
+     {
+      "text": "Langue B",
+      "x": 441.0,
+      "y": 296.8,
+      "kind": "area",
+      "tone": "area-b"
+     },
+     {
+      "text": "OUGANDA",
+      "x": 539.0,
+      "y": 478.8,
+      "kind": "country"
+     },
+     {
+      "text": "KENYA",
+      "x": 1001.0,
+      "y": 394.8,
+      "kind": "country"
+     },
+     {
+      "text": "lac Albert",
+      "x": 350.0,
+      "y": 403.8,
+      "kind": "water"
+     },
+     {
+      "text": "lac Kyoga",
+      "x": 651.0,
+      "y": 450.8,
+      "kind": "water"
+     }
+    ],
+    "caption": {
+     "what": "aires fictives pour la démonstration",
+     "when": "à indiquer",
+     "source": "à indiquer ; fond Natural Earth, domaine public"
+    }
+   },
+   "demo": "Aires fictives, démonstration",
+   "provenance": "Géométrie des aires inventée pour montrer le gabarit. Ne jamais publier."
+  },
+  {
+   "id": "map-c",
+   "type": "map",
+   "theme": "nuit",
+   "folio": "Variante frontières mises en avant",
+   "kicker": "Langues et territoires",
+   "title": "Où parle-t-on la {area-a:langue A} et la {area-b:langue B} ?",
+   "map": {
+    "dataRef": "Cartes/grands-lacs.json",
+    "borders": "strong",
+    "view": [
+     270,
+     47,
+     800,
+     1000
+    ],
+    "countryLabels": false,
+    "waterLabels": false,
+    "areas": [
+     {
+      "label": "Langue A (fictive)",
+      "tone": "area-a",
+      "kind": "certain",
+      "paths": [
+       "M969,353C967,373 940,390 923,408C907,427 894,459 869,466C845,473 807,456 776,449C745,442 700,441 683,425C666,409 675,376 676,353C678,329 675,300 692,285C709,270 748,269 778,261C808,253 844,233 870,238C896,243 920,271 937,290C953,309 971,333 969,353Z",
+       "M1028,521C1029,531 1025,546 1016,552C1007,558 987,557 973,557C959,557 941,556 932,550C923,544 921,531 921,521C920,511 922,496 930,490C939,484 959,484 973,484C987,484 1003,486 1012,493C1021,499 1027,511 1028,521Z"
+      ]
+     },
+     {
+      "label": "Langue B (fictive)",
+      "tone": "area-b",
+      "kind": "certain",
+      "paths": [
+       "M578,311C578,328 552,346 536,361C520,376 504,393 481,401C458,409 419,417 397,410C375,403 363,377 348,360C334,343 315,329 311,311C307,293 312,265 327,250C343,236 378,231 403,226C429,221 459,215 481,220C503,226 520,245 536,261C552,276 578,294 578,311Z"
+      ]
+     },
+     {
+      "label": "Langue A, présence incertaine",
+      "legend": "Présence incertaine",
+      "tone": "area-a",
+      "kind": "uncertain",
+      "paths": [
+       "M743,255C744,269 739,288 725,298C710,308 680,311 656,315C633,319 609,324 586,321C563,319 528,311 516,300C504,289 513,269 515,255C517,240 514,225 526,214C537,202 562,189 584,185C606,181 636,187 658,192C681,196 706,203 720,214C734,224 742,241 743,255Z"
+      ]
+     }
+    ],
+    "labels": [
+     {
+      "text": "Langue A",
+      "x": 826.0,
+      "y": 296.8,
+      "kind": "area",
+      "tone": "area-a"
+     },
+     {
+      "text": "Langue B",
+      "x": 441.0,
+      "y": 296.8,
+      "kind": "area",
+      "tone": "area-b"
+     },
+     {
+      "text": "OUGANDA",
+      "x": 539.0,
+      "y": 478.8,
+      "kind": "country"
+     },
+     {
+      "text": "KENYA",
+      "x": 1001.0,
+      "y": 394.8,
+      "kind": "country"
+     },
+     {
+      "text": "lac Albert",
+      "x": 350.0,
+      "y": 403.8,
+      "kind": "water"
+     },
+     {
+      "text": "lac Kyoga",
+      "x": 651.0,
+      "y": 450.8,
+      "kind": "water"
+     }
+    ],
+    "caption": {
+     "what": "aires fictives pour la démonstration",
+     "when": "à indiquer",
+     "source": "à indiquer ; fond Natural Earth, domaine public"
+    }
+   },
+   "demo": "Aires fictives, démonstration",
+   "provenance": "Géométrie des aires inventée pour montrer le gabarit. Ne jamais publier."
+  },
+  {
+   "id": "pair",
+   "type": "explanation",
+   "theme": "nuit",
+   "folio": "Composant",
+   "kicker": "Deux noms pour un peuple",
+   "title": "Le nom cherché mène au *nom qu'ils se donnent*",
+   "forms": {
+    "layout": "pair",
+    "searchedLabel": "Vous avez cherché",
+    "searched": "Peul",
+    "selfLabel": "Ce peuple se nomme lui-même",
+    "self": "Fulɓe"
+   },
+   "source": "à indiquer",
+   "demo": "Phrase de la doctrine, image à fournir",
+   "provenance": "Exemple tiré de docs/editorial/doctrine.md, §1.1."
+  },
+  {
+   "id": "stress",
+   "type": "explanation",
+   "theme": "nuit",
+   "folio": "Test",
+   "density": "dense",
+   "kicker": "Test de composition, noms du corpus",
+   "title": "Futankooɓe, Torooɓe, Kpɛlɛɛ, Eʋegbe, Nǁŋǃke",
+   "forms": {
+    "layout": "table",
+    "rows": [
+     [
+      "Fɔ̀ngbè",
+      "forme relevée dans le corpus"
+     ],
+     [
+      "Kabɩyɛ",
+      "forme relevée dans le corpus"
+     ],
+     [
+      "Adaŋgbi",
+      "forme relevée dans le corpus"
+     ]
+    ]
+   },
+   "body": "Texte de remplissage pour mesurer la place. Il ne dit rien de vrai ni de faux sur ces noms. Les noms longs vont dans le titre ou le tableau, où Anton dessine toutes leurs lettres.",
+   "image": {
+    "src": "Exemples/bulange-mengo-2018.jpg",
+    "w": 2700,
+    "h": 1886,
+    "focus": [
+     0.5,
+     0.25
+    ],
+    "anchor": [
+     0.5,
+     0.6
+    ]
+   },
+   "credit": "Crédit de test",
+   "demo": "Test de composition, sans affirmation",
+   "provenance": "Graphies relevées dans dataset/source/afrik ; aucune affirmation."
+  },
+  {
+   "id": "overflow",
+   "type": "explanation",
+   "theme": "nuit",
+   "folio": "Débordement",
+   "density": "dense",
+   "kicker": "Test de composition, noms du corpus",
+   "title": "Futankooɓe, Torooɓe, Kpɛlɛɛ, Eʋegbe, Nǁŋǃke",
+   "forms": {
+    "layout": "table",
+    "rows": [
+     [
+      "Fɔ̀ngbè",
+      "forme relevée dans le corpus"
+     ],
+     [
+      "Kabɩyɛ",
+      "forme relevée dans le corpus"
+     ],
+     [
+      "Adaŋgbi",
+      "forme relevée dans le corpus"
+     ]
+    ]
+   },
+   "body": [
+    "Texte de remplissage pour mesurer la place. Il ne dit rien de vrai ni de faux sur ces noms. Les noms longs vont dans le titre ou le tableau, où Anton dessine toutes leurs lettres.",
+    "Deuxième paragraphe de remplissage. Le moteur ne réduit jamais le texte sous le plancher : il trace un contour rouge et écrit un avertissement.",
+    "Troisième paragraphe. Une carte ne porte qu'une idée : ce texte appartient à une autre carte, qu'il faut créer avant la validation.",
+    "Quatrième paragraphe, pour dépasser franchement la limite des 900 px et montrer le refus du moteur."
+   ],
+   "image": {
+    "src": "Exemples/bulange-mengo-2018.jpg",
+    "w": 2700,
+    "h": 1886,
+    "focus": [
+     0.5,
+     0.25
+    ],
+    "anchor": [
+     0.5,
+     0.6
+    ]
+   },
+   "credit": "Crédit de test",
+   "demo": "Exemple de débordement signalé",
+   "provenance": "Montre ce que voit l'équipe quand un texte ne tient pas."
+  },
+  {
+   "id": "seq-4-parchemin",
+   "type": "explanation",
+   "theme": "parchemin",
+   "folio": "04/09",
+   "kicker": "En luganda, la langue du Buganda",
+   "title": "Un même mot change de début selon ce qu'il *désigne*",
+   "forms": {
+    "layout": "table",
+    "rows": [
+     [
+      "*Bu*ganda",
+      "le pays, le royaume"
+     ],
+     [
+      "*Ba*ganda",
+      "les habitants"
+     ],
+     [
+      "*Mu*ganda",
+      "une personne"
+     ],
+     [
+      "*Lu*ganda",
+      "la langue"
+     ]
+    ]
+   },
+   "note": "Seul, « ganda » n'a pas de sens connu en luganda, et son origine reste incertaine.",
+   "image": {
+    "src": "Exemples/bulange-mengo-2018.jpg",
+    "w": 2700,
+    "h": 1886,
+    "focus": [
+     0.47,
+     0.28
+    ],
+    "anchor": [
+     0.5,
+     0.55
+    ]
+   },
+   "source": "Worldmark Encyclopedia of Cultures (Gale) · CIA World Factbook, 2025",
+   "credit": "Photo : Jim Joel, le Bulange, siège du parlement du Buganda, Mengo (Kampala), 2018, Wikimedia Commons, CC BY-SA 4.0",
+   "imageAlt": "Photo du Bulange, le bâtiment blanc du parlement du royaume du Buganda, à Mengo",
+   "provenance": "Texte approuvé et publié le 9 octobre 2026 (carte 3), repris mot pour mot."
+  },
+  {
+   "id": "chr-3-parchemin",
+   "type": "dated",
+   "theme": "parchemin",
+   "folio": "03/05",
+   "date": {
+    "display": "1863",
+    "kind": "year",
+    "marker": "attestation",
+    "name": "« Uganda »",
+    "designated": "le royaume du Buganda",
+    "usedBy": "J. H. Speke, dans son livre"
+   },
+   "image": {
+    "src": "Exemples/speke-1863-p253-page.jpg",
+    "w": 985,
+    "h": 1500,
+    "focus": [
+     0.5,
+     0.035
+    ],
+    "anchor": [
+     0.5,
+     0.18
+    ],
+    "zoom": 1.12
+   },
+   "source": "J. H. Speke, 1863, p. 253",
+   "credit": "J. H. Speke, 1863, p. 253, Internet Archive, domaine public",
+   "demo": "Formulation illustrative",
+   "provenance": "Faits de la carte 5 publiée.",
+   "veil": "strong"
+  },
+  {
+   "id": "map-c-parchemin",
+   "type": "map",
+   "theme": "parchemin",
+   "folio": "Variante frontières mises en avant",
+   "kicker": "Langues et territoires",
+   "title": "Où parle-t-on la {area-a:langue A} et la {area-b:langue B} ?",
+   "map": {
+    "dataRef": "Cartes/grands-lacs.json",
+    "borders": "strong",
+    "view": [
+     270,
+     47,
+     800,
+     1000
+    ],
+    "countryLabels": false,
+    "waterLabels": false,
+    "areas": [
+     {
+      "label": "Langue A (fictive)",
+      "tone": "area-a",
+      "kind": "certain",
+      "paths": [
+       "M969,353C967,373 940,390 923,408C907,427 894,459 869,466C845,473 807,456 776,449C745,442 700,441 683,425C666,409 675,376 676,353C678,329 675,300 692,285C709,270 748,269 778,261C808,253 844,233 870,238C896,243 920,271 937,290C953,309 971,333 969,353Z",
+       "M1028,521C1029,531 1025,546 1016,552C1007,558 987,557 973,557C959,557 941,556 932,550C923,544 921,531 921,521C920,511 922,496 930,490C939,484 959,484 973,484C987,484 1003,486 1012,493C1021,499 1027,511 1028,521Z"
+      ]
+     },
+     {
+      "label": "Langue B (fictive)",
+      "tone": "area-b",
+      "kind": "certain",
+      "paths": [
+       "M578,311C578,328 552,346 536,361C520,376 504,393 481,401C458,409 419,417 397,410C375,403 363,377 348,360C334,343 315,329 311,311C307,293 312,265 327,250C343,236 378,231 403,226C429,221 459,215 481,220C503,226 520,245 536,261C552,276 578,294 578,311Z"
+      ]
+     },
+     {
+      "label": "Langue A, présence incertaine",
+      "legend": "Présence incertaine",
+      "tone": "area-a",
+      "kind": "uncertain",
+      "paths": [
+       "M743,255C744,269 739,288 725,298C710,308 680,311 656,315C633,319 609,324 586,321C563,319 528,311 516,300C504,289 513,269 515,255C517,240 514,225 526,214C537,202 562,189 584,185C606,181 636,187 658,192C681,196 706,203 720,214C734,224 742,241 743,255Z"
+      ]
+     }
+    ],
+    "labels": [
+     {
+      "text": "Langue A",
+      "x": 826.0,
+      "y": 296.8,
+      "kind": "area",
+      "tone": "area-a"
+     },
+     {
+      "text": "Langue B",
+      "x": 441.0,
+      "y": 296.8,
+      "kind": "area",
+      "tone": "area-b"
+     },
+     {
+      "text": "OUGANDA",
+      "x": 539.0,
+      "y": 478.8,
+      "kind": "country"
+     },
+     {
+      "text": "KENYA",
+      "x": 1001.0,
+      "y": 394.8,
+      "kind": "country"
+     },
+     {
+      "text": "lac Albert",
+      "x": 350.0,
+      "y": 403.8,
+      "kind": "water"
+     },
+     {
+      "text": "lac Kyoga",
+      "x": 651.0,
+      "y": 450.8,
+      "kind": "water"
+     }
+    ],
+    "caption": {
+     "what": "aires fictives pour la démonstration",
+     "when": "à indiquer",
+     "source": "à indiquer ; fond Natural Earth, domaine public"
+    }
+   },
+   "demo": "Aires fictives, démonstration",
+   "provenance": "Géométrie des aires inventée pour montrer le gabarit. Ne jamais publier."
+  },
+  {
+   "id": "seq-9-parchemin",
+   "type": "closing",
+   "theme": "parchemin",
+   "folio": "09/09",
+   "title": "Notre objectif : raconter l'origine des noms, avec des sources.",
+   "body": "Sur ethniafrica.com, la fiche Ouganda présente ses peuples, ses langues et ses royaumes.",
+   "cta": {
+    "domain": "ethniafrica.com"
+   },
+   "image": {
+    "src": "Exemples/bulange-mengo-2018.jpg",
+    "w": 2700,
+    "h": 1886,
+    "focus": [
+     0.47,
+     0.35
+    ],
+    "anchor": [
+     0.5,
+     0.45
+    ]
+   },
+   "credit": "Photo : Jim Joel, le Bulange, siège du parlement du Buganda, Mengo (Kampala), 2018, Wikimedia Commons, CC BY-SA 4.0",
+   "imageAlt": "Le Bulange, parlement du royaume du Buganda, à Mengo",
+   "provenance": "Phrase de clôture reprise du carrousel du 2 octobre 2026 (fétichisme), phrase d'appel de la carte 7 du 9 octobre."
+  },
+  {
+   "type": "map",
+   "theme": "nuit",
+   "kicker": "Un peuple, plusieurs États",
+   "title": "Les {area-a:Fulɓe} vivent dans douze pays",
+   "demo": "Mise en page illustrative, pays tirés du corpus",
+   "provenance": "Liste des pays : champ currentCountries de dataset/source/afrik/peuples/FLG_ATLANTIQUE/PPL_FULA.json. Titre illustratif.",
+   "id": "map-fula",
+   "folio": "Variante continent",
+   "map": {
+    "dataRef": "Cartes/afrique.json",
+    "borders": "quiet",
+    "highlight": {
+     "isos": [
+      "SEN",
+      "MRT",
+      "GIN",
+      "SLE",
+      "MLI",
+      "BFA",
+      "NER",
+      "NGA",
+      "CMR",
+      "TCD",
+      "CAF",
+      "SDN"
+     ],
+     "tone": "area-a",
+     "legend": "Pays où vivent des Fulɓe"
+    },
+    "callout": {
+     "title": "12 pays",
+     "items": [
+      "Sénégal",
+      "Mauritanie",
+      "Guinée",
+      "Sierra Leone",
+      "Mali",
+      "Burkina Faso",
+      "Niger",
+      "Nigeria",
+      "Cameroun",
+      "Tchad",
+      "Centrafrique",
+      "Soudan"
+     ],
+     "x": 40,
+     "y": 500,
+     "width": 430,
+     "columns": 2
+    },
+    "caption": {
+     "what": "pays où la fiche EthniAfrica signale des Fulɓe ; la couleur couvre tout le pays, elle ne dit pas où ils vivent dans chaque pays",
+     "when": "aujourd'hui",
+     "source": "fiche EthniAfrica « Fula (Fulbe / Peul) » ; fond Natural Earth, domaine public"
+    }
+   }
+  },
+  {
+   "type": "map",
+   "theme": "nuit",
+   "kicker": "Un peuple, plusieurs États",
+   "title": "Les {area-a:Fulɓe} vivent dans douze pays",
+   "demo": "Mise en page illustrative, pays tirés du corpus",
+   "provenance": "Liste des pays : champ currentCountries de dataset/source/afrik/peuples/FLG_ATLANTIQUE/PPL_FULA.json. Titre illustratif.",
+   "id": "map-fula-region",
+   "folio": "Variante région",
+   "map": {
+    "dataRef": "Cartes/afrique-ouest.json",
+    "borders": "quiet",
+    "highlight": {
+     "isos": [
+      "SEN",
+      "MRT",
+      "GIN",
+      "SLE",
+      "MLI",
+      "BFA",
+      "NER",
+      "NGA",
+      "CMR",
+      "TCD",
+      "CAF",
+      "SDN"
+     ],
+     "tone": "area-a",
+     "legend": "Pays où vivent des Fulɓe"
+    },
+    "countryLabels": "highlight",
+    "labelOffsets": {
+     "SLE": [
+      -20,
+      46
+     ],
+     "GIN": [
+      10,
+      -6
+     ],
+     "SEN": [
+      0,
+      -4
+     ]
+    },
+    "inset": {
+     "label": "Afrique",
+     "width": 150,
+     "x": 72,
+     "y": 560
+    },
+    "caption": {
+     "what": "pays où la fiche EthniAfrica signale des Fulɓe ; la couleur couvre tout le pays, elle ne dit pas où ils vivent dans chaque pays",
+     "when": "aujourd'hui",
+     "source": "fiche EthniAfrica « Fula (Fulbe / Peul) » ; fond Natural Earth, domaine public"
+    }
+   }
+  },
+  {
+   "type": "map",
+   "theme": "parchemin",
+   "kicker": "Un peuple, plusieurs États",
+   "title": "Les {area-a:Fulɓe} vivent dans douze pays",
+   "demo": "Mise en page illustrative, pays tirés du corpus",
+   "provenance": "Liste des pays : champ currentCountries de dataset/source/afrik/peuples/FLG_ATLANTIQUE/PPL_FULA.json. Titre illustratif.",
+   "id": "map-fula-parchemin",
+   "folio": "Variante continent",
+   "map": {
+    "dataRef": "Cartes/afrique.json",
+    "borders": "quiet",
+    "highlight": {
+     "isos": [
+      "SEN",
+      "MRT",
+      "GIN",
+      "SLE",
+      "MLI",
+      "BFA",
+      "NER",
+      "NGA",
+      "CMR",
+      "TCD",
+      "CAF",
+      "SDN"
+     ],
+     "tone": "area-a",
+     "legend": "Pays où vivent des Fulɓe"
+    },
+    "callout": {
+     "title": "12 pays",
+     "items": [
+      "Sénégal",
+      "Mauritanie",
+      "Guinée",
+      "Sierra Leone",
+      "Mali",
+      "Burkina Faso",
+      "Niger",
+      "Nigeria",
+      "Cameroun",
+      "Tchad",
+      "Centrafrique",
+      "Soudan"
+     ],
+     "x": 40,
+     "y": 500,
+     "width": 430,
+     "columns": 2
+    },
+    "caption": {
+     "what": "pays où la fiche EthniAfrica signale des Fulɓe ; la couleur couvre tout le pays, elle ne dit pas où ils vivent dans chaque pays",
+     "when": "aujourd'hui",
+     "source": "fiche EthniAfrica « Fula (Fulbe / Peul) » ; fond Natural Earth, domaine public"
+    }
+   }
+  },
+  {
+   "id": "map-fula-nombre",
+   "type": "map",
+   "theme": "nuit",
+   "folio": "Dégradé, nombre",
+   "kicker": "Un peuple, plusieurs États",
+   "title": "Combien de {area-a:Fulɓe} dans chaque pays ?",
+   "map": {
+    "dataRef": "Cartes/afrique.json",
+    "borders": "quiet",
+    "choropleth": {
+     "values": {
+      "NGA": 14000000,
+      "GIN": 5000000,
+      "SEN": 4000000,
+      "MLI": 3500000,
+      "CMR": 3000000,
+      "NER": 2500000,
+      "BFA": 2000000,
+      "SDN": 2000000,
+      "TCD": 1500000,
+      "MRT": 1000000,
+      "SLE": 800000,
+      "CAF": 700000
+     },
+     "classes": [
+      {
+       "max": 1000000.0,
+       "label": "Moins de 1 million",
+       "tone": "seq-1"
+      },
+      {
+       "min": 1000000.0,
+       "max": 3000000.0,
+       "label": "1 à 2,5 millions",
+       "tone": "seq-2"
+      },
+      {
+       "min": 3000000.0,
+       "max": 10000000.0,
+       "label": "3 à 5 millions",
+       "tone": "seq-3"
+      },
+      {
+       "min": 10000000.0,
+       "label": "Plus de 10 millions",
+       "tone": "seq-4"
+      }
+     ],
+     "legendTitle": "Nombre estimé de Fulɓe, environ 40 millions au total"
+    },
+    "callout": {
+     "items": [
+      {
+       "iso": "NGA",
+       "name": "Nigeria",
+       "value": "14 M"
+      },
+      {
+       "iso": "GIN",
+       "name": "Guinée",
+       "value": "5 M"
+      },
+      {
+       "iso": "SEN",
+       "name": "Sénégal",
+       "value": "4 M"
+      },
+      {
+       "iso": "MLI",
+       "name": "Mali",
+       "value": "3,5 M"
+      },
+      {
+       "iso": "CMR",
+       "name": "Cameroun",
+       "value": "3 M"
+      },
+      {
+       "iso": "NER",
+       "name": "Niger",
+       "value": "2,5 M"
+      },
+      {
+       "iso": "BFA",
+       "name": "Burkina Faso",
+       "value": "2 M"
+      },
+      {
+       "iso": "SDN",
+       "name": "Soudan",
+       "value": "2 M"
+      },
+      {
+       "iso": "TCD",
+       "name": "Tchad",
+       "value": "1,5 M"
+      },
+      {
+       "iso": "MRT",
+       "name": "Mauritanie",
+       "value": "1 M"
+      },
+      {
+       "iso": "SLE",
+       "name": "Sierra Leone",
+       "value": "0,8 M"
+      },
+      {
+       "iso": "CAF",
+       "name": "Centrafrique",
+       "value": "0,7 M"
+      }
+     ],
+     "x": 20,
+     "y": 520,
+     "width": 476,
+     "columns": 2,
+     "fontSize": 22
+    },
+    "caption": {
+     "what": "nombre estimé de Fulɓe dans chaque pays ; la couleur couvre tout le pays",
+     "when": "estimations 2025",
+     "source": "fiche EthniAfrica « Fula (Fulbe / Peul) », estimations agrégées (recensements, UNFPA, CIA World Factbook) ; fond Natural Earth"
+    }
+   },
+   "demo": "Mise en page illustrative, chiffres du corpus",
+   "provenance": "content.demography.distributionByCountry de PPL_FULA.json (estimations 2025)."
+  },
+  {
+   "id": "map-fula-nombre-region",
+   "type": "map",
+   "theme": "nuit",
+   "folio": "Dégradé, nombre, région",
+   "kicker": "Un peuple, plusieurs États",
+   "title": "Combien de {area-a:Fulɓe} dans chaque pays ?",
+   "map": {
+    "dataRef": "Cartes/afrique-ouest.json",
+    "borders": "quiet",
+    "choropleth": {
+     "values": {
+      "NGA": 14000000,
+      "GIN": 5000000,
+      "SEN": 4000000,
+      "MLI": 3500000,
+      "CMR": 3000000,
+      "NER": 2500000,
+      "BFA": 2000000,
+      "SDN": 2000000,
+      "TCD": 1500000,
+      "MRT": 1000000,
+      "SLE": 800000,
+      "CAF": 700000
+     },
+     "classes": [
+      {
+       "max": 1000000.0,
+       "label": "Moins de 1 million",
+       "tone": "seq-1"
+      },
+      {
+       "min": 1000000.0,
+       "max": 3000000.0,
+       "label": "1 à 2,5 millions",
+       "tone": "seq-2"
+      },
+      {
+       "min": 3000000.0,
+       "max": 10000000.0,
+       "label": "3 à 5 millions",
+       "tone": "seq-3"
+      },
+      {
+       "min": 10000000.0,
+       "label": "Plus de 10 millions",
+       "tone": "seq-4"
+      }
+     ],
+     "legendTitle": "Nombre estimé de Fulɓe",
+     "labels": {
+      "NGA": "14 millions",
+      "GIN": "5 millions",
+      "SEN": "4 millions",
+      "MLI": "3,5 millions",
+      "CMR": "3 millions",
+      "NER": "2,5 millions",
+      "BFA": "2 millions",
+      "SDN": "2 millions",
+      "TCD": "1,5 million",
+      "MRT": "1 million",
+      "SLE": "800 000",
+      "CAF": "700 000"
+     }
+    },
+    "countryLabels": "highlight",
+    "labelOffsets": {
+     "SLE": [
+      -26,
+      60
+     ],
+     "GIN": [
+      24,
+      12
+     ],
+     "SEN": [
+      -12,
+      -30
+     ],
+     "BFA": [
+      10,
+      -14
+     ],
+     "NGA": [
+      -34,
+      0
+     ],
+     "CMR": [
+      44,
+      64
+     ],
+     "CAF": [
+      14,
+      0
+     ]
+    },
+    "inset": {
+     "label": "Afrique",
+     "width": 150,
+     "x": 72,
+     "y": 600
+    },
+    "caption": {
+     "what": "nombre estimé de Fulɓe dans chaque pays ; la couleur couvre tout le pays",
+     "when": "estimations 2025",
+     "source": "fiche EthniAfrica « Fula (Fulbe / Peul) », estimations agrégées (recensements, UNFPA, CIA World Factbook) ; fond Natural Earth"
+    }
+   },
+   "demo": "Mise en page illustrative, chiffres du corpus",
+   "provenance": "content.demography.distributionByCountry de PPL_FULA.json."
+  },
+  {
+   "id": "map-fula-part",
+   "type": "map",
+   "theme": "nuit",
+   "folio": "Dégradé, part",
+   "kicker": "Un peuple, plusieurs États",
+   "title": "Quelle part de chaque pays est {area-a:fulɓe} ?",
+   "map": {
+    "dataRef": "Cartes/afrique-ouest.json",
+    "borders": "quiet",
+    "choropleth": {
+     "values": {
+      "NGA": 6,
+      "GIN": 29,
+      "SEN": 21,
+      "MLI": 14,
+      "CMR": 10,
+      "NER": 9,
+      "BFA": 8,
+      "SDN": 4,
+      "TCD": 7,
+      "MRT": 19,
+      "SLE": 9,
+      "CAF": 13
+     },
+     "classes": [
+      {
+       "max": 10,
+       "label": "Moins de 10 %",
+       "tone": "seq-1"
+      },
+      {
+       "min": 10,
+       "max": 20,
+       "label": "10 à 20 %",
+       "tone": "seq-2"
+      },
+      {
+       "min": 20,
+       "label": "Plus de 20 %",
+       "tone": "seq-4"
+      }
+     ],
+     "legendTitle": "Part estimée des Fulɓe dans la population du pays",
+     "labels": {
+      "NGA": "6 %",
+      "GIN": "29 %",
+      "SEN": "21 %",
+      "MLI": "14 %",
+      "CMR": "10 %",
+      "NER": "9 %",
+      "BFA": "8 %",
+      "SDN": "4 %",
+      "TCD": "7 %",
+      "MRT": "19 %",
+      "SLE": "9 %",
+      "CAF": "13 %"
+     }
+    },
+    "countryLabels": "highlight",
+    "labelOffsets": {
+     "SLE": [
+      -26,
+      60
+     ],
+     "GIN": [
+      24,
+      12
+     ],
+     "SEN": [
+      -12,
+      -30
+     ],
+     "BFA": [
+      10,
+      -14
+     ],
+     "NGA": [
+      -34,
+      0
+     ],
+     "CMR": [
+      44,
+      64
+     ],
+     "CAF": [
+      14,
+      0
+     ]
+    },
+    "inset": {
+     "label": "Afrique",
+     "width": 150,
+     "x": 72,
+     "y": 600
+    },
+    "caption": {
+     "what": "part estimée des Fulɓe dans la population de chaque pays, calculée par EthniAfrica",
+     "when": "2025",
+     "source": "fiche EthniAfrica « Fula » ; population des pays : UNFPA 2025, Guinée : recensement 2025 ; fond Natural Earth"
+    }
+   },
+   "demo": "Mise en page illustrative, part calculée",
+   "provenance": "Part = estimation PPL_FULA ÷ population du pays (public/pays_demographie.csv), arrondie."
+  }
+ ]
+}

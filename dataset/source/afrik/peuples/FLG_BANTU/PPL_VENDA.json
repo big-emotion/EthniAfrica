@@ -4,6 +4,165 @@
   "languageFamilyId": "FLG_BANTU",
   "currentCountries": ["ZAF", "ZWE"],
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom Venda désigne un peuple du Soutpansberg, dans la province du Limpopo en Afrique du Sud et au sud du Zimbabwe, qui se nomme lui-même Vhavenda. D'autres formes ont été écrites : Mavenda, Bawenda, Bavenda. On ne sait pas d'où vient ce nom, selon le Dictionary of South African English.",
+    "names": [
+      {
+        "nameText": "Vhavenda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ven",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne le peuple : Muvenda pour une personne, Vhavenda pour plusieurs.",
+        "usedIn": ["ven"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par le dictionnaire"
+            },
+            "era": "modern",
+            "statement": "Le nom Vhavenda est le pluriel de Muvenda, « un Venda » ; le même radical donne Tshivenda, la langue, et Venda, le pays. L'origine de ce radical n'est pas connue, selon le Dictionary of South African English.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Venda »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Venda/e07631",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 11 octobre 2026. Elle donne Muvenda au singulier, Vhavenda au pluriel, Tshivenda pour la langue et Venda pour le pays, et dit que l'origine de ce radical n'est pas connue. Ses citations datées vont de 1892 (W. L. Distant, « The Mavenda Kafirs ») à 1993 ; elle rappelle aussi le « homeland » de Venda, autonome en 1973, déclaré république en 1979 et réintégré à l'Afrique du Sud en 1994."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Venda",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du peuple en anglais et en français, écrit dès 1892 sous la forme Mavenda.",
+        "usedIn": ["eng", "fra"],
+        "periodLabel": "Écrit dès 1892 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1600,
+              "to": 1699,
+              "label": "XVIIe siècle peut-être"
+            },
+            "era": "polity",
+            "statement": "Le nom Venda est celui que les historiens Léonard Ngcongco et Jan Vansina donnent au pouvoir qui aurait réuni en un seul royaume les chefferies de la plaine du Transvaal, peut-être au XVIIe siècle.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 23 : L'Afrique méridionale : les peuples et les formations sociales",
+                "author": "Léonard D. Ngcongco, avec Jan Vansina",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 632"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1860,
+              "label": "1854-1860"
+            },
+            "era": "colonial",
+            "statement": "Le nom Venda désigne, chez l'historien Ngwabi Bhebe, les gens du Zoutpansberg qui résistent à l'expansion des Boers et, vers 1860, savent se servir des armes à feu pour la guerre et la chasse.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 7 : Les Britanniques, les Boers et les Africains en Afrique du Sud, 1850-1880",
+                "author": "Ngwabi Bhebe",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "UNESCO, lu dans l'exemplaire numérisé du volume.",
+                "page": "p. 193"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "1892"
+            },
+            "era": "colonial",
+            "statement": "Le nom Venda apparaît sous une forme proche, Mavenda, chez le naturaliste W. L. Distant, qui écrit sur le Transvaal, selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Mavenda",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Venda »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Venda/e07631",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 11 octobre 2026. Elle donne Muvenda au singulier, Vhavenda au pluriel, Tshivenda pour la langue et Venda pour le pays, et dit que l'origine de ce radical n'est pas connue. Ses citations datées vont de 1892 (W. L. Distant, « The Mavenda Kafirs ») à 1993 ; elle rappelle aussi le « homeland » de Venda, autonome en 1973, déclaré république en 1979 et réintégré à l'Afrique du Sud en 1994.",
+                "page": "citation de 1892"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1908,
+              "label": "1905-1908"
+            },
+            "era": "colonial",
+            "statement": "Le nom Venda s'écrit Bawenda en 1905, dans The Native Tribes of the Transvaal, puis Bavenda en 1908, dans le Journal of the African Society, selon le Dictionary of South African English.",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Venda »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Venda/e07631",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 11 octobre 2026. Elle donne Muvenda au singulier, Vhavenda au pluriel, Tshivenda pour la langue et Venda pour le pays, et dit que l'origine de ce radical n'est pas connue. Ses citations datées vont de 1892 (W. L. Distant, « The Mavenda Kafirs ») à 1993 ; elle rappelle aussi le « homeland » de Venda, autonome en 1973, déclaré république en 1979 et réintégré à l'Afrique du Sud en 1994.",
+                "page": "citations de 1905 et 1908"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1973,
+              "to": 1994,
+              "label": "1973-1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Venda est aussi celui d'un « homeland » créé pour les Venda par le régime d'apartheid : autonome en 1973, il est déclaré république en 1979, puis réintégré à l'Afrique du Sud en 1994, selon le Dictionary of South African English.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Venda »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Venda/e07631",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 11 octobre 2026. Elle donne Muvenda au singulier, Vhavenda au pluriel, Tshivenda pour la langue et Venda pour le pays, et dit que l'origine de ce radical n'est pas connue. Ses citations datées vont de 1892 (W. L. Distant, « The Mavenda Kafirs ») à 1993 ; elle rappelle aussi le « homeland » de Venda, autonome en 1973, déclaré république en 1979 et réintégré à l'Afrique du Sud en 1994."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Venda",

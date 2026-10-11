@@ -141,5 +141,246 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Tigre désigne un peuple des basses terres de l'Érythrée et de l'est du Soudan, qui se nomme lui-même Tigre, comme sa langue. D'autres noms existent : Hasa, au Barka et au Soudan. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Tigre",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tig",
+        "namedBy": null,
+        "shortLine": "Le nom du peuple et de sa langue ; à ne pas confondre avec le tigrigna.",
+        "usedIn": ["tig"],
+        "periodLabel": "Écrit dès 1865 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tigre désigne aujourd'hui en Érythrée un groupe ethnique et sa langue. Le ministère de l'Information parle du « groupe ethnique tigre » et de la « langue tigre », qu'il distingue du tigrigna.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Presentation on the Oral Tradition in Tigre Language",
+                "author": "Simon Weldemichael",
+                "year": 2022,
+                "url": "https://shabait.com/2022/04/16/presentation-on-the-oral-tradition-of-tigre/",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Shabait, site du ministère de l'Information de l'Érythrée, 16 avril 2022, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tigre désigne à la fois une langue, le peuple qui la parle et, dans l'ancienne société tigre, la couche des serfs. Son origine est discutée ; l'explication connue est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Short History of Eritrea",
+                "author": "Stephen H. Longrigg",
+                "year": 1945,
+                "url": "https://archive.org/details/in.ernet.dli.2015.52170",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17",
+                "notes": "Oxford, Clarendon Press, 1945. L'auteur fut administrateur en chef de l'Érythrée de 1942 à 1944. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              },
+              {
+                "title": "Vocabulaire de la langue tigré",
+                "author": "Werner Munzinger",
+                "year": 1865,
+                "url": "https://archive.org/details/bub_gb_Rx6RtlVq56UC",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. IV et p. 38",
+                "notes": "Leipzig, T. O. Weigel, 1865, publié en appendice au Lexique éthiopien de Dillmann. Préface lue dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1945,
+              "to": 1945,
+              "label": "1945"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tigre a deux sens pour Stephen Longrigg, administrateur britannique de l'Érythrée. Il désigne la langue des musulmans des collines et des plaines, appelée aussi Hasa ou Hassa, et la couche des serfs de cette même population. Longrigg conseille de garder Tigrai pour la province éthiopienne, afin d'éviter les confusions.",
+            "sources": [
+              {
+                "title": "A Short History of Eritrea",
+                "author": "Stephen H. Longrigg",
+                "year": 1945,
+                "url": "https://archive.org/details/in.ernet.dli.2015.52170",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17",
+                "notes": "Oxford, Clarendon Press, 1945. L'auteur fut administrateur en chef de l'Érythrée de 1942 à 1944. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1910,
+              "label": "Traduit en 1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tigre est employé dans les récits en langue tigre recueillis en Érythrée et traduits par Enno Littmann. L'un d'eux décrit « les tribus dont les pères parlaient tigre », comme les deux Mansa' et les deux Marya.",
+            "sources": [
+              {
+                "title": "Publications of the Princeton Expedition to Abyssinia, vol. II : Tales, Customs, Names and Dirges of the Tigre Tribes. English translation",
+                "author": "Enno Littmann",
+                "year": 1910,
+                "url": "https://archive.org/details/publicationsofpr02littiala",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 335",
+                "notes": "Leyde, E. J. Brill, 1910. Traduction anglaise de textes recueillis en langue tigre. Chapitre « The Tribes that Know the Tigre Language », lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1865,
+              "to": 1865,
+              "label": "1865"
+            },
+            "statement": "Le nom Tigre a, dans la langue tigré, un dérivé, tigrai. Werner Munzinger le traduit par « homme qui parle tigré » et aussi par « sujet, plébéien ».",
+            "sources": [
+              {
+                "title": "Vocabulaire de la langue tigré",
+                "author": "Werner Munzinger",
+                "year": 1865,
+                "url": "https://archive.org/details/bub_gb_Rx6RtlVq56UC",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 38",
+                "notes": "Leipzig, T. O. Weigel, 1865, publié en appendice au Lexique éthiopien de Dillmann. Préface lue dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1865,
+              "to": 1865,
+              "label": "1865"
+            },
+            "statement": "Le nom Tigre est écrit Tigré par Werner Munzinger, qui en fait le nom courant d'une langue parlée le long de la frontière nord de l'Abyssinie, de la mer Rouge au Gash. Il la distingue du tigrigna. C'est la plus ancienne trace de ce nom pour cette langue et ce peuple que le projet connaît. Ils existaient déjà avant elle.",
+            "formAsWritten": "Tigré",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Werner Munzinger",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Vocabulaire de la langue tigré",
+                "author": "Werner Munzinger",
+                "year": 1865,
+                "url": "https://archive.org/details/bub_gb_Rx6RtlVq56UC",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. IV",
+                "notes": "Leipzig, T. O. Weigel, 1865, publié en appendice au Lexique éthiopien de Dillmann. Préface lue dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1865,
+              "to": 1865,
+              "label": "Proposée en 1865"
+            },
+            "statement": "Le nom Tigré serait, pour Werner Munzinger, le même nom que celui de la province éthiopienne du Tigré et que tigrigna : « abstraction faite de la finale amharique, le nom soit absolument le même ».",
+            "hypothesisGroup": "origine du nom Tigre",
+            "sources": [
+              {
+                "title": "Vocabulaire de la langue tigré",
+                "author": "Werner Munzinger",
+                "year": 1865,
+                "url": "https://archive.org/details/bub_gb_Rx6RtlVq56UC",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. IV et p. 38",
+                "notes": "Leipzig, T. O. Weigel, 1865, publié en appendice au Lexique éthiopien de Dillmann. Préface lue dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Hasa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un autre nom de la langue tigre, au Barka et chez les Arabes du Soudan.",
+        "periodLabel": "Écrit dès 1865",
+        "accounts": [
+          {
+            "period": {
+              "from": 1945,
+              "to": 1945,
+              "label": "1945"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hasa, écrit aussi Hassa, désigne encore souvent la langue tigre en 1945, selon Stephen Longrigg.",
+            "sources": [
+              {
+                "title": "A Short History of Eritrea",
+                "author": "Stephen H. Longrigg",
+                "year": 1945,
+                "url": "https://archive.org/details/in.ernet.dli.2015.52170",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17",
+                "notes": "Oxford, Clarendon Press, 1945. L'auteur fut administrateur en chef de l'Érythrée de 1942 à 1944. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1865,
+              "to": 1865,
+              "label": "1865"
+            },
+            "statement": "Le nom Hasa a une forme proche, Chassie, chez Werner Munzinger. On appelle ainsi la langue tigré dans le Barka, pour l'opposer au bedawie, et les Arabes du Soudan la désignent par le même nom. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant elle.",
+            "formAsWritten": "Chassie",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Werner Munzinger",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Vocabulaire de la langue tigré",
+                "author": "Werner Munzinger",
+                "year": 1865,
+                "url": "https://archive.org/details/bub_gb_Rx6RtlVq56UC",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. IV",
+                "notes": "Leipzig, T. O. Weigel, 1865, publié en appendice au Lexique éthiopien de Dillmann. Préface lue dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

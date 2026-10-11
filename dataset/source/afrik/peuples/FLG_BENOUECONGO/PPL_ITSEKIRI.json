@@ -152,5 +152,128 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Itsekiri désigne un peuple de l'ouest du delta du Niger, au Nigeria, qui se nomme lui-même Itsekiri. Son nom a aussi été écrit Jekri, et son ancien royaume est connu sous le nom de Warri. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Itsekiri",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "its",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple de l'ouest du delta du Niger et de son ancien royaume.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Itsekiri désigne un peuple de l'ouest du delta du Niger dont la langue est proche de celle des Ijebu, en pays yoruba ; ses chefs disaient venir du royaume du Bénin, selon E. J. Alagoa. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 15 : Les Fon et les Yoruba, du delta du Niger au Cameroun",
+                "author": "E. J. Alagoa",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 494",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Du XVe au début du XIXe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Itsekiri désigne aussi un royaume dont la capitale, Ode Itsekiri, est le principal centre de commerce et de pouvoir de l'ouest du delta, selon Ebiegberi J. Alagoa.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 27 : Le delta du Niger et le Cameroun",
+                "author": "Ebiegberi J. Alagoa",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 773",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Jekri",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une ancienne façon d'écrire le nom, notée à Freetown dès 1854.",
+        "periodLabel": "Écrit dès 1854",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Jekri apparaît sous une forme proche, « Dṣẹ̄́kiri » ou « Dṣḗakeri », dans le recueil de langues du missionnaire Sigismund Koelle, qui l'a noté à Freetown auprès d'Africains libérés de la traite. Koelle range cette langue parmi celles des peuples qu'on appelle alors « Akus » en Sierra Leone. C'est la plus ancienne trace de cette forme que le projet connaît. Le peuple existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite. Entrée « Dṣẹ̄́kiri, or Dṣḗakeri » : l'auteur situe ce pays à l'ouest de l'Ókulōba, au nord du Sṓbo, au sud de l'Ū́tso, et le dit ouvert sur la mer à l'ouest. Koelle écrit de la même façon « Dṣẹ́bu » pour les Ijebu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Warri",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom sous lequel les sources désignent le royaume itsekiri et sa capitale.",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Du XVe au XIXe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Warri désigne, chez Ebiegberi J. Alagoa, le royaume itsekiri et sa capitale, Ode Itsekiri ; le souverain porte le titre d'olu de Warri. Au début du XIXe siècle, plusieurs chefs quittent Warri pour ouvrir des comptoirs sur l'estuaire du Bénin. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 27 : Le delta du Niger et le Cameroun",
+                "author": "Ebiegberi J. Alagoa",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 773-774",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

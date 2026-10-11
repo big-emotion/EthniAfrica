@@ -135,5 +135,162 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Banda désigne un ensemble de peuples de Centrafrique, présents aussi en RD Congo, au Cameroun et au Soudan du Sud, qui se nomment eux-mêmes Banda. Au XIXe siècle, leurs voisins du nord les appelaient aussi Niamniam. On ne sait pas avec certitude d'où vient le nom Banda ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Banda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit par un voyageur allemand en 1881 ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit depuis 1881 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Banda désigne aujourd'hui l'un des peuples qui habitent pour l'essentiel la région de l'Oubangui, avec les Ngbaka et les Ngbandi, selon E. M'Bokolo. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 18 : Des savanes du Cameroun au haut Nil",
+                "author": "E. M'Bokolo",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 572",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1889,
+              "to": 1889,
+              "label": "Rapporté en 1889"
+            },
+            "era": "polity",
+            "statement": "Le nom Banda sert, selon les informateurs de l'explorateur Gustav Nachtigal, à regrouper les peuples qui vivent au sud de Kouti : ce sont les gens de Runga et de Kouti, et les étrangers installés chez eux, qui les appellent ainsi. L'un de ces informateurs, venu du Bornou, parlait lui-même leur langue.",
+            "formAsWritten": "Banda",
+            "sources": [
+              {
+                "title": "Sahara und Sudan : Ergebnisse sechsjähriger Reisen in Afrika, dritter Theil",
+                "author": "Gustav Nachtigal",
+                "year": 1889,
+                "url": "https://archive.org/details/saharaundsudaner03nach",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 183",
+                "notes": "Leipzig, F. A. Brockhaus, 1889, publié après la mort de l'auteur par E. Groddeck. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Texte en allemand, traduit par nos soins."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Banda apparaît par écrit dans le récit de voyage de l'explorateur allemand Gustav Nachtigal paru en 1881 : il y situe le pays montagneux des Banda au sud du Ouaddaï, là où naîtraient les rivières du Chari. C'est la plus ancienne trace de ce nom que le projet connaît. Les Banda vivaient déjà là avant lui.",
+            "formAsWritten": "Banda",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Sahara und Sudan : Ergebnisse sechsjähriger Reisen in Afrika, zweiter Theil",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 661",
+                "notes": "Berlin, 1881. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Texte en allemand, traduit par nos soins."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1800,
+              "to": 1800,
+              "label": "Vers 1800"
+            },
+            "era": "polity",
+            "statement": "Le nom Banda se retrouve dans celui du Dār Banda, au sud du Hofrat-en-Nahas, où des marchands d'esclaves venus du Darfour faisaient déjà commerce en 1800, selon Y. F. Hasan et B. A. Ogot.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 7 : Le Soudan de 1500 à 1800",
+                "author": "Y. F. Hasan et B. A. Ogot",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 236",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1601,
+              "to": 1900,
+              "label": "Du XVIIe au XIXe siècle"
+            },
+            "statement": "Le nom Banda est aussi celui du Dar Banda, une région située juste au sud du Bahr al-Arab, dans l'actuel Soudan. C'est de là que seraient partis les Banda, chassés par des razzias venues du Darfour puis du Nil, selon Jan Vansina.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 22 : L'Afrique équatoriale et l'Angola : les migrations et l'apparition des premiers États",
+                "author": "Jan Vansina",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 601",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Niamniam",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les gens de Runga et de Kouti, selon Gustav Nachtigal",
+        "shortLine": "Un nom que leur donnaient leurs voisins du nord au XIXe siècle ; il a disparu.",
+        "periodLabel": "XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1889,
+              "to": 1889,
+              "label": "Rapporté en 1889"
+            },
+            "era": "polity",
+            "statement": "Le nom Niamniam est aussi employé pour les Banda par les gens de Runga et de Kouti, selon Gustav Nachtigal. Ses informateurs le justifient par une accusation de cannibalisme portée contre la plupart de ces peuples.",
+            "formAsWritten": "Niamniam",
+            "sources": [
+              {
+                "title": "Sahara und Sudan : Ergebnisse sechsjähriger Reisen in Afrika, dritter Theil",
+                "author": "Gustav Nachtigal",
+                "year": 1889,
+                "url": "https://archive.org/details/saharaundsudaner03nach",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 183",
+                "notes": "Leipzig, F. A. Brockhaus, 1889, publié après la mort de l'auteur par E. Groddeck. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Texte en allemand, traduit par nos soins."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

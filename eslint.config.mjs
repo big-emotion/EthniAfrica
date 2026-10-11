@@ -32,7 +32,12 @@ const eslintConfig = [
   // so neither --fix nor a formatter may touch them. .prettierignore already
   // excludes them and names this file as doing the same.
   {
-    ignores: ["docs/design/mockups/**"],
+    ignores: [
+      "docs/design/mockups/**",
+      // Accepted external renderer snapshot: preserve it before a versioned
+      // adaptation. Future production adapters retain the normal lint rules.
+      "social/design-system/components/**",
+    ],
   },
 
   // ETNI-21: ESLint custom-rule sources must remain CommonJS (the ESLint
