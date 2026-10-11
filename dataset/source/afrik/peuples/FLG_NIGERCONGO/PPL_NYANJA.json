@@ -240,6 +240,61 @@
             ]
           }
         ]
+      },
+      {
+        "nameText": "Wanyasa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Arabes de la côte, selon David et Charles Livingstone",
+        "shortLine": "« Les gens du Nyassa » : la forme que les Arabes donnaient aux riverains du lac.",
+        "periodLabel": "Écrit depuis 1865",
+        "accounts": [
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wanyasa sert à Masasi, dans le sud-est de l'Afrique orientale allemande, à regrouper sous un seul nom des gens de tribus très diverses venus de l'intérieur, note l'ethnographe allemand Karl Weule. Beaucoup sont d'anciens captifs de la traite, rachetés par des missionnaires anglais et installés là.",
+            "sources": [
+              {
+                "title": "Native Life in East Africa : The Results of an Ethnological Research Expedition",
+                "author": "Karl Weule",
+                "year": 1909,
+                "url": "https://archive.org/details/nativelifeineast00weul",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 69-70",
+                "notes": "New York, D. Appleton, 1909, traduction anglaise par Alice Werner de Negerleben in Ostafrika (Leipzig, 1908), récit de l'expédition de 1906 dans le sud-est de l'Afrique orientale allemande. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1865,
+              "to": 1865,
+              "label": "Récit publié en 1865"
+            },
+            "era": "polity",
+            "statement": "Le nom Wanyasa apparaît, écrit Wanyassa, dans une note de David et Charles Livingstone : les Arabes, expliquent-ils, remplacent les préfixes des noms de peuples par Wa et disent Wanyassa, « les gens du Nyassa ». C'est la plus ancienne trace de ce nom que le projet connaît. Les riverains du lac vivaient là bien avant lui.",
+            "formAsWritten": "Wanyassa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Narrative of an Expedition to the Zambesi and its Tributaries",
+                "author": "David Livingstone et Charles Livingstone",
+                "year": 1865,
+                "url": "https://archive.org/details/narrativeofexpe00livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 42, note",
+                "notes": "Londres, John Murray, 1865. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -250,7 +305,8 @@
       "exonyms": [
         "Nyanja (terme geographique : gens du lac)",
         "Chewa (nom ethnique principal du groupe majoritaire)",
-        "Maravi (appellation historique de l'ensemble du complexe culturel)"
+        "Maravi (appellation historique de l'ensemble du complexe culturel)",
+        "Wanyasa"
       ],
       "originOfExonyms": "Nyanja voudrait dire lac en langue bantou de la zone N; il designe initialement les gens qui vivent pres du lac (lac Malawi/Nyasa). Chewa est le nom ethnique propre du sous-groupe dominant. Maravi (ou Malawi) est le nom historique du complexe ethno-politique, donne au pays lui-meme : il signifierait les flammes qui brillent (evoquant les reflets du soleil sur le lac). En 1968, le president Hastings Kamuzu Banda renomma officiellement la langue Chinyanja en Chichewa.",
       "whyProblematic": "La distinction entre Nyanja et Chewa est historiquement et politiquement chargee : Kamuzu Banda imposa le terme Chichewa/Chewa dans le cadre d'une politique nationaliste d'unite (one nation, one language) qui marginalisa d'autres langues comme le tumbuka. En Zambie, le terme Nyanja reste prefere. Les deux noms referent essentiellement au meme continuum ethnolinguistique.",
@@ -376,6 +432,18 @@
         "url": "https://ich.unesco.org/en/projects/safeguarding-of-the-gulu-wamkulu-the-great-dance-of-the-chewa-people-00027",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Britannica — Malawi: History and People",
+        "url": "https://www.britannica.com/place/Malawi/People",
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
+      },
+      {
+        "title": "Joshua Project — Nyanja, Chewa in Malawi",
+        "url": "https://joshuaproject.net/people_groups/14091/MI",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   }

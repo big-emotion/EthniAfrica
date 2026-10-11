@@ -43,6 +43,24 @@
           "sourceRefs": ["ryan-1981-hausa-nomenclature"]
         }
       ]
+    },
+    {
+      "spelling": "Osman",
+      "attestations": [
+        {
+          "countryId": "SDN",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
+      ]
+    },
+    {
+      "spelling": "Othman",
+      "attestations": [
+        {
+          "countryId": "SDN",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
+      ]
     }
   ],
   "transmissionMode": "non_hereditary",
@@ -88,6 +106,11 @@
       "countryId": "NGA",
       "status": "attested",
       "sourceRefs": ["ryan-1981-hausa-nomenclature"]
+    },
+    {
+      "countryId": "SDN",
+      "status": "attested",
+      "sourceRefs": ["afrik-candidate-queue"]
     }
   ],
   "alliances": [],

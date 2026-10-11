@@ -1075,11 +1075,6 @@
     "rationale": "Le nom Krachi est presente comme une anglicisation coloniale de l'endonyme Krakye, corrompu puis anglicise par l'administration coloniale."
   },
   {
-    "id": "PPL_KRAHN",
-    "status": "colonial-legacy",
-    "rationale": "La fiche indique que Guere a ete cree par un administrateur colonial francais, et fait remonter Krahn a un Commissaire de district de Tappita."
-  },
-  {
     "id": "PPL_KREDA",
     "status": "contested",
     "rationale": "La fiche dit que Gorane, exonyme arabe, n'est pas l'appellation preferee par les groupes eux-memes et que les Kreda ne se reconnaissent pas dans l'appellation generique Toubou."
@@ -1168,11 +1163,6 @@
     "id": "PPL_LALA_AMBO",
     "status": "contested",
     "rationale": "La fiche vise la confusion avec les Ambo (Ovambo) de Namibie et d'Angola, 'peuples totalement differents', et un label Lala-Ambo issu des classifications linguistiques, sans acteur colonial."
-  },
-  {
-    "id": "PPL_LALA_BISA",
-    "status": "contested",
-    "rationale": "La fiche dit que Lala-Bisa est une denomination linguistique englobant des groupes distincts et que 'les Bisa proprement dits se distinguent des Lala' par territoire et histoire."
   },
   {
     "id": "PPL_LALA_LAMBA",
@@ -1635,11 +1625,6 @@
     "rationale": "Le différend est postcolonial : « Kamuzu Banda imposa le terme Chichewa/Chewa » au Malawi tandis qu'« en Zambie, le terme Nyanja reste préféré » ; aucun acteur colonial n'est mis en cause."
   },
   {
-    "id": "PPL_NYASA",
-    "status": "colonial-legacy",
-    "rationale": "Les « explorateurs européens » prirent la réponse nyasa (lac) pour un nom, « d'où le nom Nyasaland donné au pays et Nyasa aux populations du bord du lac »."
-  },
-  {
     "id": "PPL_NYIKA",
     "status": "contested",
     "rationale": "La fiche dit le nom 'ambigu car il designe plusieurs peuples distincts' — Nyika-Tumbuka, Nyiha de Tanzanie, Mijikenda dans la litterature ancienne — sans nommer d'acteur colonial."
@@ -1673,11 +1658,6 @@
     "id": "PPL_OVIMBUNDU",
     "status": "colonial-legacy",
     "rationale": "Le terme Southern Mbundu « efface la spécificité culturelle et politique des Ovimbundu » et « cette dénomination comparative est d'origine coloniale »."
-  },
-  {
-    "id": "PPL_PAPELO",
-    "status": "contested",
-    "rationale": "Le probleme est une « confusion documentaire » avec les Papel et l'emploi de Kriol pour la langue et non le groupe, « rendant les estimations demographiques difficiles »."
   },
   {
     "id": "PPL_PARE",
@@ -1868,11 +1848,6 @@
     "id": "PPL_SONGHAY_GURMA",
     "status": "contested",
     "rationale": "La fiche dit que Gurma prete a confusion avec les Gourmantche, peuple gur sans lien, et que l'appellation correcte dans la litterature linguistique est Humburi Senni."
-  },
-  {
-    "id": "PPL_SONGHAY_MACRO",
-    "status": "contested",
-    "rationale": "La fiche dit que Songhay designe a la fois un peuple, un empire et un ensemble linguistique, et qu'il peut exclure les Zarma, plus grand sous-groupe, qui se designent differemment."
   },
   {
     "id": "PPL_SONGHAY_NIGERIEN",

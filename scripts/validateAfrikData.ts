@@ -2501,7 +2501,9 @@ export function checkSourceIdentity(datasetRoot: string): ValidationResult {
 // day took their own Factbook citations with them.
 // 130 -> 125 on 2026-10-11: the twenty-four folds of waves 4 and 5 took the
 // retired fiches' Factbook citations with them.
-export const RETIRED_CIA_FACTBOOK_URL_CEILING = 125;
+// 125 -> 123 on 2026-10-11: the Papelo and Songhay macro-group fiches, folded
+// in waves 6 and 7, took their Factbook citations with them.
+export const RETIRED_CIA_FACTBOOK_URL_CEILING = 123;
 
 const LIVE_CIA_FACTBOOK =
   /cia\.gov\/(?:library\/publications\/)?the-world-factbook/i;
@@ -4419,7 +4421,9 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // (Sena, Ndau, Kongo of Brazzaville, Gio, Humbe, Manyika, Azande, Agni,
   // Makonde, Teda, !Kung, Lwena, Korekore, Tswa, Abron, Kullo, Lunda Norte,
   // Ronga, Attié, Luo-Bantu) were folded and retired with the keys they lacked.
-  peuple: 6514,
+  // 6514 -> 6469 on 2026-10-11: five duplicate fiches of wave 6 (Lala-Bisa,
+  // Papelo, Songhay macro-group, Krahn, Nyasa) were folded and retired.
+  peuple: 6469,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next

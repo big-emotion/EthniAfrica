@@ -33,6 +33,11 @@
         "claim": "Dans le système haoussa décrit par Chamo, le nom personnel du père ou parfois du grand-père fournit un élément du nom sans former un patronyme héréditaire stable.",
         "claimStatus": "established",
         "sourceRefs": ["chamo-2018-mahamadou"]
+      },
+      {
+        "claim": "Le site Behind the Name donne Mahamat, la forme employée en Afrique centrale, comme une variante voisine de Mahamadou ; Mahamat et Mohamed ont chacun leur propre fiche.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["btn-mahamat"]
       }
     ]
   },
@@ -86,6 +91,14 @@
       "tier": "official",
       "source_kind": "government",
       "notes": "Biographie officielle de deux pages consultée intégralement. Elle atteste la graphie Mahamadou au Niger et précise qu'Ouhoumoudou Mahamadou est né en 1954. Le porteur étant vivant dans les sources consultées, il n'est pas ajouté aux bearers."
+    },
+    {
+      "sourceKey": "btn-mahamat",
+      "title": "Mahamat — Behind the Name",
+      "url": "https://www.behindthename.com/name/mahamat",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Page communautaire consultée directement le 11 octobre 2026. Elle présente Mahamat comme une forme de Muhammad employée en Afrique centrale et donne Mahamadou parmi ses variantes. Elle n'établit pas une attribution ethnique de la graphie."
     }
   ],
   "gaps": [

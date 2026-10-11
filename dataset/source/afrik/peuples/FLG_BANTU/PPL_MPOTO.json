@@ -16,7 +16,11 @@
       "historicalRegion": "District de Mbinga, region de Ruvuma, sud de la Tanzanie, le long de la rive nord-est du lac Malawi",
       "currentCountries": ["TZA"]
     },
-    "ethnicities": ["WaMpoto", "Mpoto"],
+    "ethnicities": [
+      "WaMpoto",
+      "Mpoto",
+      "Nyasa de Tanzanie (region de Mbamba Bay, est du lac)"
+    ],
     "origins": {
       "ancientOrigins": "Les WaMpoto sont une branche des Matengo, peuple bantou du sud de la Tanzanie. Leur nom meme signifie 'nord', indiquant qu'ils constituent la faction septentrionale des Matengo.",
       "formationPeriod": "XIXe siecle. La separation des Mpoto des Matengo survint lors de l'invasion Ngoni qui bouleversa les structures politiques du sud de la Tanzanie.",
@@ -25,7 +29,8 @@
       ],
       "historicalSettlementZones": [
         "Collines au nord de Songea (region de Ruvuma)",
-        "District de Mbinga, le long de la rive nord-est du lac Malawi (lac Nyasa)"
+        "District de Mbinga, le long de la rive nord-est du lac Malawi (lac Nyasa)",
+        "Region de Mbamba Bay sur la rive est du lac (Tanzanie)"
       ],
       "unificationsOrDivisions": "Separation des Matengo lors de l'invasion Ngoni. Les Mpoto conserverent une langue tres proche du Matengo en raison de leur origine commune.",
       "externalInfluences": "Invasion Ngoni (XIXe s.) ayant force leur deplacement vers les collines du nord. Colonisation allemande puis britannique de la Tanzanie (Tanganyika). Influence missionnaire catholique importante ayant entraine une conversion majoritaire au catholicisme.",

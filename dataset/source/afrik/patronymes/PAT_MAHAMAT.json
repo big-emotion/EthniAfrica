@@ -32,7 +32,13 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [
+      {
+        "claim": "Le site Behind the Name présente Mahamat comme une forme de Muhammad employée en Afrique centrale, voisine de Mahamadou ; Mahamadou et Mohamed ont chacun leur propre fiche.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["btn-mahamat"]
+      }
+    ]
   },
   "peoples": [],
   "countries": [
@@ -54,11 +60,23 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "btn-mahamat",
+      "title": "Mahamat — Behind the Name",
+      "url": "https://www.behindthename.com/name/mahamat",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Page communautaire consultée directement le 11 octobre 2026. Elle présente Mahamat comme une forme de Muhammad employée en Afrique centrale et donne Mahamadou parmi ses variantes. Elle n'établit pas une attribution ethnique de la graphie."
     }
   ],
   "gaps": [
     {
-      "fieldPath": "origin",
+      "fieldPath": "origin.oralTraditions",
+      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+    },
+    {
+      "fieldPath": "origin.writtenChronicles",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {

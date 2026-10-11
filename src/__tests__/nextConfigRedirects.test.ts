@@ -1,5 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 
+import retiredPatronymes from "../../dataset/source/afrik/patronymes/_retired-identifiers.json";
 import { getPatronymeRoute } from "@/lib/routing";
 
 // `next.config.ts` is wrapped by withSentryConfig, and @sentry/nextjs breaks
@@ -15,6 +16,10 @@ async function loadRedirects(): Promise<Redirect[]> {
   const { default: nextConfig } = await import("../../next.config");
   return (await nextConfig.redirects()) as Redirect[];
 }
+
+const RETIRED_PATRONYME_IDS: Record<string, string> = Object.fromEntries(
+  retiredPatronymes.map((entry) => [entry.retiredId, entry.successorId])
+);
 
 const destinationOf = (redirects: Redirect[], source: string) =>
   redirects.find((redirect) => redirect.source === source);
@@ -53,18 +58,31 @@ describe("the appellations → noms redirect", () => {
   });
 });
 
-describe("the folded PAT_KAMARA address", () => {
-  // PAT_KAMARA was an empty duplicate folded into PAT_CAMARA; its published
-  // addresses would otherwise answer 404 to anyone who held them.
+describe("the folded patronyme addresses", () => {
+  // A folded PAT_ fiche's published addresses would otherwise answer 404 to
+  // anyone who held them; the patronyme ledger lists every fold.
   // @req REQ-141
-  it.each([
-    getPatronymeRoute("fr", "PAT_KAMARA"),
-    "/en/atlas/names/PAT_KAMARA",
-  ])("sends %s to the French PAT_CAMARA fiche", async (source) => {
-    const entry = destinationOf(await loadRedirects(), source);
+  it.each(Object.entries(RETIRED_PATRONYME_IDS))(
+    "sends %s to the French fiche of %s",
+    async (retiredId, successorId) => {
+      const redirects = await loadRedirects();
 
-    expect(entry?.destination).toBe(getPatronymeRoute("fr", "PAT_CAMARA"));
-    expect(entry?.permanent).toBe(true);
+      for (const source of [
+        getPatronymeRoute("fr", retiredId),
+        `/en/atlas/names/${retiredId}`,
+      ]) {
+        const entry = destinationOf(redirects, source);
+        expect(entry?.destination, source).toBe(
+          getPatronymeRoute("fr", successorId)
+        );
+        expect(entry?.permanent).toBe(true);
+      }
+    }
+  );
+
+  // @req REQ-141
+  it("still sends PAT_KAMARA to PAT_CAMARA", () => {
+    expect(RETIRED_PATRONYME_IDS.PAT_KAMARA).toBe("PAT_CAMARA");
   });
 });
 

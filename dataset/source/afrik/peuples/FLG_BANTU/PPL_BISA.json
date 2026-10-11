@@ -7,7 +7,7 @@
     "appellations": {
       "mainName": "Bisa",
       "selfAppellation": "Bisa",
-      "exonyms": ["Wisa", "Biisa", "Vaviza", "Muizas"],
+      "exonyms": ["Wisa", "Biisa", "Vaviza", "Muizas", "Wiza", "Muiza"],
       "originOfExonyms": "Dans le journal de voyage de Lacerda (1798), le chroniqueur Dionizio Rebello Curvo designa les Bisa sous le nom de Vaviza ou Muizas. Ces termes exonyms sont aujourd'hui obsoletes. Le terme Wisa ou Biisa est utilise pour designer la langue dans certaines classifications (Maho 2009).",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Bisa est utilise couramment en Zambie et dans les sources academiques et missionnaires. La langue est souvent classee sous l'appellation Lala-Bisa (code ISO 639-3 leb) en raison de la parente etroite entre les langues Bisa et Lala. Le Joshua Project distingue les Bisa (436 000) et les Lala-Bisa (864 000) comme groupes separés.",
@@ -113,6 +113,12 @@
         "title": "Bisa Tribe Safari Tours – Kingsfari",
         "url": "https://www.kingsfari.com/experiences/bisa-tribe-of-zambia",
         "tier": "unverified"
+      },
+      {
+        "title": "Joshua Project – Lala-Bisa in Zambia",
+        "url": "https://joshuaproject.net/people_groups/19057/ZA",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   },
