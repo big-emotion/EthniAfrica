@@ -61,10 +61,10 @@
     {
       "sourceKey": "mazouna-tazi",
       "title": "Sur-dénomination des familles à Mazouna : analyse sociolinguistique des patronymes et leurs usages",
-      "url": "https://www.researchgate.net/publication/384796809_Sur-denomination_des_familles_a_Mazouna_analyse_sociolinguistique_des_patronymes_et_leurs_usages",
+      "url": "https://journals.openedition.org/multilinguales/12552",
       "tier": "referenced",
-      "source_kind": "repository",
-      "notes": "Travail scientifique consulté le 2 septembre 2026. L'étude propose de relier Tazi à Taza. Les noms étudiés à Mazouna ne suffisent pas à confirmer le pays indiqué dans cette fiche."
+      "source_kind": "academic",
+      "notes": "Travail scientifique consulté le 2 septembre 2026, puis relu le 11 octobre 2026 dans sa publication par la revue Multilinguales, n° 21, 2024, sur OpenEdition. L'étude propose de relier Tazi à Taza. Les noms étudiés à Mazouna ne suffisent pas à confirmer le pays indiqué dans cette fiche."
     }
   ],
   "gaps": [
@@ -104,5 +104,65 @@
       "fieldPath": "countries",
       "reason": "La source propre au nom ne confirme pas le ou les pays MAR hérités de la file d’attente. Les recherches exactes « Tazi surname » avec ces pays n’ont pas livré de registre officiel exploitable ; l’association reste non vérifiée."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Tazi est un nom de famille porté au Maghreb. Il renverrait à la ville de Taza, au Maroc, selon une étude des noms de famille de Mazouna, en Algérie. On ne sait pas avec certitude depuis quand il est porté ; nous présentons plus bas la seule explication que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Tazi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille du Maghreb qui renverrait à la ville de Taza, au Maroc.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tazi est un nom de famille du Maghreb, porté entre autres à Mazouna, en Algérie, selon Hakima Slimani. On ne sait pas avec certitude depuis quand il est porté ; nous présentons plus bas la seule explication de son origine que nous connaissons.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Sur-dénomination des familles à Mazouna : analyse sociolinguistique des patronymes et leurs usages",
+                "author": "Hakima Slimani",
+                "year": 2024,
+                "url": "https://journals.openedition.org/multilinguales/12552",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 20",
+                "notes": "Multilinguales, n° 21, mis en ligne le 30 juin 2024, lu le 11 octobre 2026 sur OpenEdition. Le § 20 traite des noms de famille de Mazouna, en Algérie, qui disent un lieu d'origine : Tlemssani pour Tlemcen, Meliani pour Miliana, et « Tazi celui qui renvoie à Taza »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Proposée en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Tazi renverrait à la ville de Taza, au Maroc, comme d'autres noms de famille de Mazouna disent la ville d'où vient une famille, Tlemssani pour Tlemcen ou Meliani pour Miliana, selon Hakima Slimani.",
+            "hypothesisGroup": "origine du nom Tazi",
+            "sources": [
+              {
+                "title": "Sur-dénomination des familles à Mazouna : analyse sociolinguistique des patronymes et leurs usages",
+                "author": "Hakima Slimani",
+                "year": 2024,
+                "url": "https://journals.openedition.org/multilinguales/12552",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 20",
+                "notes": "Multilinguales, n° 21, mis en ligne le 30 juin 2024, lu le 11 octobre 2026 sur OpenEdition. Le § 20 traite des noms de famille de Mazouna, en Algérie, qui disent un lieu d'origine : Tlemssani pour Tlemcen, Meliani pour Miliana, et « Tazi celui qui renvoie à Taza »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
