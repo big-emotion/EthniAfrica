@@ -153,5 +153,197 @@
       "fieldPath": "homonyms",
       "reason": "La notice d'autorité GND, les deux articles académiques et les recherches « Witbooi surname homonym » et « Witbooi name origin » n'ont révélé aucune forme Witbooi identique rattachée à une origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Witbooi est celui d'un groupe de langue nama, en Namibie, et de la famille de ses chefs. Ce groupe se nomme aussi /Khowese. Les sources lues donnent une explication pour chacun de ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Witbooi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un groupe nama de Namibie et de la famille de ses chefs.",
+        "periodLabel": "Écrit dès 1881 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1863,
+              "to": null,
+              "label": "Depuis 1863"
+            },
+            "statement": "Le nom Witbooi est celui d'un groupe de langue nama venu de Pella, au sud du fleuve Orange, et installé en 1863 dans ce qui deviendra la Namibie, ainsi que de la famille de ses chefs, selon Hendrik Bosman.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Nama ‘Exodus’? A Postcolonial Reading of the Diaries of Hendrik Witbooi",
+                "author": "Hendrik Bosman",
+                "year": 2011,
+                "url": "https://scriptura.journals.ac.za/pub/article/download/6/6",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 330",
+                "notes": "Scriptura, no 108, 2011, p. 329-341. Lu dans le PDF le 11 octobre 2026. Page 330 : le groupe Witbooi s'installe en 1863 dans ce qui deviendra la Namibie, venu de Pella, au sud du fleuve Orange ; la note 3 explique l'appellation Witbooi, « littéralement garçons blancs », par les étoffes ou écharpes blanches portées autour du chapeau, surtout en expédition militaire, pour se distinguer des dix autres groupes de langue nama."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Witbooi désigne un groupe nama et la famille qui le dirige. Une seule explication de son origine a été trouvée ; elle reste une hypothèse, présentée à part.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Nama ‘Exodus’? A Postcolonial Reading of the Diaries of Hendrik Witbooi",
+                "author": "Hendrik Bosman",
+                "year": 2011,
+                "url": "https://scriptura.journals.ac.za/pub/article/download/6/6",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 330",
+                "notes": "Scriptura, no 108, 2011, p. 329-341. Lu dans le PDF le 11 octobre 2026. Page 330 : le groupe Witbooi s'installe en 1863 dans ce qui deviendra la Namibie, venu de Pella, au sud du fleuve Orange ; la note 3 explique l'appellation Witbooi, « littéralement garçons blancs », par les étoffes ou écharpes blanches portées autour du chapeau, surtout en expédition militaire, pour se distinguer des dix autres groupes de langue nama."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Witbooi apparaît dans une lettre de Moses Witbooi, datée de Gibeon le 4 mars 1881, qui parle du vieux David Witbooi. L'édition de 1929 du journal de Hendrik Witbooi la reproduit en note. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand il a été écrit, pas depuis quand il est porté.",
+            "formAsWritten": "Witbooi",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Moses Witbooi",
+                "role": "auteur de la lettre"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Die dagboek van Hendrik Witbooi — no 20, Hornkrans, 3 janvier 1890",
+                "author": "Hendrik Witbooi",
+                "year": 1929,
+                "url": "https://www.dbnl.org/tekst/witb002dagb01_01/witb002dagb01_01_0023.php",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 53",
+                "notes": "Lettre de Hendrik Witbooi, reproduite dans l'édition de 1929 de son journal, lue sur la Digitale Bibliotheek voor de Nederlandse Letteren le 11 octobre 2026. La note 7 reproduit une lettre signée « Mozes Witbooi, van Gibeon », datée « Gibeon den 4 Maart 1881 », qui parle de « ou David Witbooi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant le baptême de David Witbooi"
+            },
+            "statement": "Le nom Witbooi est déjà celui du grand-père de Hendrik Witbooi, connu sous le nom de Kido Witbooi avant son baptême, puis sous celui de David Witbooi, selon une note de l'édition de 1929.",
+            "sources": [
+              {
+                "title": "Die dagboek van Hendrik Witbooi — no 20, Hornkrans, 3 janvier 1890",
+                "author": "Hendrik Witbooi",
+                "year": 1929,
+                "url": "https://www.dbnl.org/tekst/witb002dagb01_01/witb002dagb01_01_0023.php",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 52",
+                "notes": "Lettre de Hendrik Witbooi, reproduite dans l'édition de 1929 de son journal, lue sur la Digitale Bibliotheek voor de Nederlandse Letteren le 11 octobre 2026. La note 3 explique que le grand-père, David Mozes Witbooi, était connu sous le nom de Kido Witbooi avant son baptême."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "Proposée en 2011"
+            },
+            "era": "modern",
+            "statement": "Le nom Witbooi voudrait dire « garçons blancs » : il viendrait des étoffes ou écharpes blanches que les membres du groupe portaient autour du chapeau, surtout en expédition militaire, pour se distinguer des autres groupes nama, selon Hendrik Bosman.",
+            "hypothesisGroup": "origine du nom Witbooi",
+            "sources": [
+              {
+                "title": "A Nama ‘Exodus’? A Postcolonial Reading of the Diaries of Hendrik Witbooi",
+                "author": "Hendrik Bosman",
+                "year": 2011,
+                "url": "https://scriptura.journals.ac.za/pub/article/download/6/6",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 330",
+                "notes": "Scriptura, no 108, 2011, p. 329-341. Lu dans le PDF le 11 octobre 2026. Page 330 : le groupe Witbooi s'installe en 1863 dans ce qui deviendra la Namibie, venu de Pella, au sud du fleuve Orange ; la note 3 explique l'appellation Witbooi, « littéralement garçons blancs », par les étoffes ou écharpes blanches portées autour du chapeau, surtout en expédition militaire, pour se distinguer des dix autres groupes de langue nama."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "/Khowese",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "naq",
+        "namedBy": null,
+        "shortLine": "Un autre nom du groupe Witbooi, en nama.",
+        "periodLabel": "Écrit dès 1890",
+        "accounts": [
+          {
+            "period": {
+              "from": 1890,
+              "to": 1890,
+              "label": "1890"
+            },
+            "era": "colonial",
+            "statement": "Le nom /Khowese apparaît dans une lettre de Hendrik Witbooi datée du 3 janvier 1890, qui parle de « ons /Khowese volk », notre peuple /Khowese. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand il a été écrit, pas depuis quand il est porté.",
+            "formAsWritten": "/Khowese",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Hendrik Witbooi",
+                "role": "auteur de la lettre"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Die dagboek van Hendrik Witbooi — no 20, Hornkrans, 3 janvier 1890",
+                "author": "Hendrik Witbooi",
+                "year": 1929,
+                "url": "https://www.dbnl.org/tekst/witb002dagb01_01/witb002dagb01_01_0023.php",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 52",
+                "notes": "Lettre de Hendrik Witbooi, reproduite dans l'édition de 1929 de son journal, lue sur la Digitale Bibliotheek voor de Nederlandse Letteren le 11 octobre 2026. Page 52 : « in zyn trek met ons /Khowese volk ». La note 4 identifie les /Khowese aux Witbooi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Proposée en 1929"
+            },
+            "era": "colonial",
+            "statement": "Le nom /Khowese viendrait de /khowe, « mendier » en nama : les Witbooi l'auraient reçu pour être entrés dans les maisons et s'être assis au feu sans attendre d'y être invités, comme le veut l'usage nama, selon une note de l'édition de 1929 du journal de Hendrik Witbooi.",
+            "hypothesisGroup": "origine du nom /Khowese",
+            "sources": [
+              {
+                "title": "Die dagboek van Hendrik Witbooi — no 20, Hornkrans, 3 janvier 1890",
+                "author": "Hendrik Witbooi",
+                "year": 1929,
+                "url": "https://www.dbnl.org/tekst/witb002dagb01_01/witb002dagb01_01_0023.php",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 52",
+                "notes": "Lettre de Hendrik Witbooi, reproduite dans l'édition de 1929 de son journal, lue sur la Digitale Bibliotheek voor de Nederlandse Letteren le 11 octobre 2026. La note 4 : « Die Witboois is ook /Khowese genoem. /Khowe beteken in Namataal bedel », puis l'explication par l'usage nama qui veut qu'un étranger attende d'être invité."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
