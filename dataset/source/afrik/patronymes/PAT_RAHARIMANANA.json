@@ -100,5 +100,138 @@
       "fieldPath": "homonyms",
       "reason": "Les catalogues et recherches exactes consultés n'établissent pas de lignée Raharimanana d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Raharimanana est le nom que l'écrivain malgache Jean-Luc Raharimanana a reçu de son père et dont il a fait son nom d'auteur. Il voudrait dire « celui qui a le don de créer », selon deux notices qui ne citent pas d'étude de la langue ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Raharimanana",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un écrivain malgache, reçu de son père ; il voudrait dire « celui qui a le don de créer ».",
+        "periodLabel": "Publié dès 1996 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Raharimanana est un nom de personne malgache, dont l'écrivain Jean-Luc Raharimanana a fait son nom d'auteur. Les deux notices qui l'expliquent ne citent pas d'étude de la langue ; on ne sait donc pas avec certitude ce qu'il veut dire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Notice bibliographique « Lucarne : nouvelles / Raharimanana »",
+                "author": "Bibliothèque nationale de France",
+                "year": 1996,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb358072658",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice de la Bibliothèque nationale de France, lue le 11 octobre 2026. Elle attribue ce recueil, daté de 1996, à « Raharimanana, Jean-Luc (1967-....) ». C'est la plus ancienne publication sous ce nom que donne le catalogue."
+              },
+              {
+                "title": "Raharimanana — La voie du jaguar",
+                "author": "La voie du jaguar",
+                "year": null,
+                "url": "https://www.lavoiedujaguar.net/_Raharimanana_",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice non signée et non datée d'une revue en ligne. Lue le 11 octobre 2026. Elle écrit : « Son nom, Raharimanana, signifie en malgache “celui qui a le don de créer” » et « C'est le nom que son grand-père a donné à son père et dont il a fait son nom de plume ». Elle ne cite pas d'étude de la langue."
+              },
+              {
+                "title": "Jean-Luc Raharimanana",
+                "author": "Christophe Dauphin",
+                "year": null,
+                "url": "http://www.leshommessansepaules.com/auteur-Jean_Luc_RAHARIMANANA-916-1-1-0-1.html",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice de la revue de poésie Les Hommes sans Épaules, non datée sur la page. Lue le 11 octobre 2026. Elle parle d'un « nom qui signifie, en malgache, celui qui a le don de créer », sans citer d'étude de la langue."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Explication non datée"
+            },
+            "statement": "Le nom Raharimanana voudrait dire, en malgache, « celui qui a le don de créer », selon une notice de la revue La voie du jaguar et selon Christophe Dauphin.",
+            "hypothesisGroup": "origine du nom Raharimanana",
+            "sources": [
+              {
+                "title": "Raharimanana — La voie du jaguar",
+                "author": "La voie du jaguar",
+                "year": null,
+                "url": "https://www.lavoiedujaguar.net/_Raharimanana_",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice non signée et non datée d'une revue en ligne. Lue le 11 octobre 2026. Elle écrit : « Son nom, Raharimanana, signifie en malgache “celui qui a le don de créer” » et « C'est le nom que son grand-père a donné à son père et dont il a fait son nom de plume ». Elle ne cite pas d'étude de la langue."
+              },
+              {
+                "title": "Jean-Luc Raharimanana",
+                "author": "Christophe Dauphin",
+                "year": null,
+                "url": "http://www.leshommessansepaules.com/auteur-Jean_Luc_RAHARIMANANA-916-1-1-0-1.html",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice de la revue de poésie Les Hommes sans Épaules, non datée sur la page. Lue le 11 octobre 2026. Elle parle d'un « nom qui signifie, en malgache, celui qui a le don de créer », sans citer d'étude de la langue."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Transmission familiale, non datée"
+            },
+            "statement": "Le nom Raharimanana est celui que le grand-père de l'écrivain a donné à son père, Venance Raharimanana ; l'écrivain l'a ensuite repris comme nom de plume, selon une notice de la revue La voie du jaguar et le dossier de Magali Compan-Barnard.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Raharimanana — La voie du jaguar",
+                "author": "La voie du jaguar",
+                "year": null,
+                "url": "https://www.lavoiedujaguar.net/_Raharimanana_",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice non signée et non datée d'une revue en ligne. Lue le 11 octobre 2026. Elle écrit : « Son nom, Raharimanana, signifie en malgache “celui qui a le don de créer” » et « C'est le nom que son grand-père a donné à son père et dont il a fait son nom de plume ». Elle ne cite pas d'étude de la langue."
+              },
+              {
+                "title": "Raharimanana — Île en île",
+                "author": "Magali Compan-Barnard",
+                "year": 2003,
+                "url": "https://www.ile-en-ile.org/raharimanana/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Dossier mis en ligne le 21 février 2003, mis à jour le 27 septembre 2021. Lu le 11 octobre 2026. La biographie le dit né le 26 juin 1967 à Antananarivo, sous le nom de « Jean-Luc V. Raharimanana », et nomme son père Venance Raharimanana, professeur d'histoire à l'université d'Antananarivo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1996,
+              "to": 1996,
+              "label": "1996"
+            },
+            "statement": "Le nom Raharimanana apparaît comme nom d'auteur de Lucarne, un recueil de nouvelles publié en 1996, selon le catalogue de la Bibliothèque nationale de France. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand l'écrivain l'a publié, pas depuis quand sa famille le porte.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notice bibliographique « Lucarne : nouvelles / Raharimanana »",
+                "author": "Bibliothèque nationale de France",
+                "year": 1996,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb358072658",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice de la Bibliothèque nationale de France, lue le 11 octobre 2026. Elle attribue ce recueil, daté de 1996, à « Raharimanana, Jean-Luc (1967-....) ». C'est la plus ancienne publication sous ce nom que donne le catalogue."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

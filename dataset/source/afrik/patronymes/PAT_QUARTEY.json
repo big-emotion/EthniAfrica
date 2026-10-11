@@ -108,5 +108,121 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Le composé Quartey-Papafio est rapproché d'un clan, sans preuve que l'unité sociale du nom isolé Quartey soit identique."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Quartey est un nom de famille du Ghana, porté chez les Ga. Un dictionnaire des noms de famille juge son origine inexpliquée, et une autre source le rapproche du nom ga Kwate ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Quartey",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille du Ghana, porté chez les Ga ; on ne sait pas avec certitude d'où il vient.",
+        "periodLabel": "Forme proche écrite dès 1858 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Quartey est un nom de famille du Ghana, porté chez les Ga. Le dictionnaire qui le décrit juge son origine inexpliquée ; on ne sait donc pas avec certitude ce qu'il veut dire, et nous présentons plus bas la seule explication que nous connaissons.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e édition — entrée Quartey",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/quartey?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 11 octobre 2026 dans la traduction française que le site affiche. La notice dit : Afrique de l'Ouest (Ghana), nom trouvé chez les Ga, d'étymologie inexpliquée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Explication non datée"
+            },
+            "statement": "Le nom Quartey serait une autre façon d'écrire Kwate, le nom d'une famille ga dont le nom premier est Kpakpatsewe : une personne nommée Quartey-Papafio serait du même clan qu'une personne nommée Kwate-Kpakpafio, selon Lawrencia Amartey.",
+            "hypothesisGroup": "origine du nom Quartey",
+            "sources": [
+              {
+                "title": "What's in a (Ga) Name?",
+                "author": "Lawrencia Amartey",
+                "year": null,
+                "url": "https://www.accraarchive.com/blog/whats-in-a-ga-name",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Article publié par Accra Architecture Archive, daté du 5 juin sans année sur la page. Lu le 11 octobre 2026. Il donne Kpakpatsewe comme nom premier de la famille et écrit qu'une personne nommée Quartey-Papafio est d'un clan semblable à celle qui se nomme Kwate-Kpakpafio. Il ne parle que du nom composé, pas du nom Quartey seul."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1894,
+              "to": 1894,
+              "label": "1894"
+            },
+            "era": "colonial",
+            "statement": "Le nom Quartey s'écrit sous cette forme dans le guide de la Côte-de-l'Or du pasteur Jacob Benjamin Anaman. Il y nomme un commis du service de l'audit, R. E. Quartey, et un maître de l'école wesleyenne de Cape Coast, J. W. Quartey. C'est la plus ancienne trace de cette graphie que le projet connaît.",
+            "formAsWritten": "Quartey",
+            "sources": [
+              {
+                "title": "The Gold Coast Guide for the Year 1895-96",
+                "author": "Jacob Benjamin Anaman",
+                "year": 1894,
+                "url": "https://hdl.handle.net/2027/oxu1.601511602",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 32 ; p. 73",
+                "notes": "Londres, Charles H. Kelly, 1894. Lu sur l'exemplaire numérisé de HathiTrust le 11 octobre 2026. Page 32 : « Audit Clerk, R. E. Quartey ». Page 73 : parmi les maîtres de l'école wesleyenne de Cape Coast, « J. W. Quartey »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "1858"
+            },
+            "era": "colonial",
+            "statement": "Une forme proche du nom Quartey, Kwate, apparaît par écrit dans la grammaire du ga du missionnaire de Bâle Johannes Zimmermann, comme nom de personne dans un exemple. Le même livre nomme Kwatei Kodso, un chef ga, dans le récit de la guerre de Katamanso. C'est la plus ancienne trace de cette forme proche que le projet connaît ; Lawrencia Amartey rapproche Kwate de Quartey. Cette trace dit quand un auteur a noté la forme, pas depuis quand le nom est porté.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Johannes Zimmermann",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Grammatical Sketch of the Akra- or Gã-Language, vol. I",
+                "author": "Johannes Zimmermann",
+                "year": 1858,
+                "url": "https://archive.org/details/agrammaticalske01zimmgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 133 ; p. 186",
+                "notes": "Stuttgart, imprimé pour la Société missionnaire de Bâle par J. F. Steinkopf, 1858. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 133 : exemple de grammaire « Bo, Kwate, yile, thou Kwate didst beat him ». Page 186 : « Kwatei Kodso », un chef, dans le récit en ga de la guerre de Katamanso, datée « about 1826 ». Auteur de l'époque coloniale, cité ici pour les formes qu'il relève."
+              },
+              {
+                "title": "What's in a (Ga) Name?",
+                "author": "Lawrencia Amartey",
+                "year": null,
+                "url": "https://www.accraarchive.com/blog/whats-in-a-ga-name",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Article publié par Accra Architecture Archive, daté du 5 juin sans année sur la page. Lu le 11 octobre 2026. Il donne Kpakpatsewe comme nom premier de la famille et écrit qu'une personne nommée Quartey-Papafio est d'un clan semblable à celle qui se nomme Kwate-Kpakpafio. Il ne parle que du nom composé, pas du nom Quartey seul."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
