@@ -126,5 +126,112 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kakwa désigne un peuple de langue bari qui vit là où se rejoignent l'Ouganda, le Soudan du Sud et la République démocratique du Congo. Ce nom a été écrit Kakuak au XIXe siècle. On ne sait pas avec certitude d'où vient le nom Kakwa ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Kakwa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "keo",
+        "namedBy": null,
+        "shortLine": "Écrit Kakuak en 1882 ; son origine reste incertaine.",
+        "periodLabel": "Écrit depuis 1882 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kakwa désigne aujourd'hui un peuple des confins de l'Ouganda, du Soudan du Sud et de la République démocratique du Congo, qu'on appelle aussi Kakwa Bari, selon le Joshua Project. Son origine reste incertaine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Kakwa, Bari Kakwa in Uganda",
+                "author": "Joshua Project",
+                "year": null,
+                "url": "https://www.joshuaproject.net/index.php/people_groups/12439/UG",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "notes": "Fiche de peuple d'une base de données missionnaire, lue le 11 octobre 2026. Elle ne cite pas de source pour l'explication du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1882,
+              "to": 1888,
+              "label": "Voyage d'octobre 1882, publié en 1888"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kakwa désigne pour Emin Pacha une des huit grandes divisions du peuple bari, avec les Fajelu, les Mandari et d'autres. Les Kakuak occupent le sud et le sud-est de Rimo, son quartier général dans la région.",
+            "sources": [
+              {
+                "title": "Emin Pasha in Central Africa: being a collection of his letters and journals",
+                "author": "Emin Pacha (Eduard Schnitzer), éd. G. Schweinfurth, F. Ratzel, R. W. Felkin et G. Hartlaub",
+                "year": 1888,
+                "url": "https://archive.org/details/eminpashaincentr00emin",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 368-369",
+                "notes": "Londres, George Philip & Son, 1888, traduction anglaise de Mrs R. W. Felkin. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Journal du voyage du 9 au 31 octobre 1882, de Bedden au pays kakuak."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1882,
+              "to": 1888,
+              "label": "Voyage d'octobre 1882, publié en 1888"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kakwa a une forme proche, « Kakuak », dans le journal d'Emin Pacha, gouverneur de la province égyptienne de l'Équatoria : il désigne un district montagneux, voisin des Fajelu, où se trouvent plusieurs postes de la province. C'est la plus ancienne trace de ce nom que le projet connaît. Les Kakwa vivaient déjà dans ces montagnes avant lui.",
+            "formAsWritten": "Kakuak",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Emin Pacha (Eduard Schnitzer)",
+                "role": "gouverneur de la province égyptienne de l'Équatoria, auteur du journal"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Emin Pasha in Central Africa: being a collection of his letters and journals",
+                "author": "Emin Pacha (Eduard Schnitzer), éd. G. Schweinfurth, F. Ratzel, R. W. Felkin et G. Hartlaub",
+                "year": 1888,
+                "url": "https://archive.org/details/eminpashaincentr00emin",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 362",
+                "notes": "Londres, George Philip & Son, 1888, traduction anglaise de Mrs R. W. Felkin. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Journal du voyage du 9 au 31 octobre 1882, de Bedden au pays kakuak."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Kakwa viendrait de mots qui veulent dire « ceux qui mordent », en lien avec des récits sur la force des ancêtres, selon le Joshua Project, qui ne dit pas d'où il tient cette explication.",
+            "hypothesisGroup": "origine du nom Kakwa",
+            "sources": [
+              {
+                "title": "Kakwa, Bari Kakwa in Uganda",
+                "author": "Joshua Project",
+                "year": null,
+                "url": "https://www.joshuaproject.net/index.php/people_groups/12439/UG",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "notes": "Fiche de peuple d'une base de données missionnaire, lue le 11 octobre 2026. Elle ne cite pas de source pour l'explication du nom."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

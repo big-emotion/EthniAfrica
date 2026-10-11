@@ -110,5 +110,167 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Gola désigne un peuple de l'ouest du Liberia et de l'est de la Sierra Leone, autour du fleuve Saint-Paul, qui se nomme lui-même Gola. En 1854, un locuteur interrogé par le linguiste Sigismund Koelle donnait aussi le nom Gura. On ne sait pas avec certitude d'où vient le nom Gola ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Gola",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "gol",
+        "namedBy": null,
+        "shortLine": "Écrit Galas au XVIIe siècle ; son origine n'est pas connue.",
+        "periodLabel": "Écrit depuis le XVIIe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1914,
+              "to": 1921,
+              "label": "Enquête de 1914-1915, publiée en 1921"
+            },
+            "era": "modern",
+            "statement": "Le nom Gola est celui que ce peuple se donne lui-même, selon le linguiste Diedrich Westermann : ogola fela veut dire l'homme gola, egola mie la langue gola et fõ gola le pays gola. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Die Gola-Sprache in Liberia : Grammatik, Texte und Wörterbuch",
+                "author": "Diedrich Westermann",
+                "year": 1921,
+                "url": "https://archive.org/details/diegolasprachein04west",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1-2",
+                "notes": "Hambourg, L. Friederichsen & Co., 1921. Lu le 11 octobre 2026 dans l'exemplaire numérisé. L'auteur a recueilli ses matériaux au Liberia de la seconde moitié de 1914 à janvier 1915."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1914,
+              "to": 1921,
+              "label": "Enquête de 1914-1915, publiée en 1921"
+            },
+            "era": "modern",
+            "statement": "Le nom Gola se décline en sous-groupes, comme les De Gola, les Tege Gola ou les Pio Gola. Les Libériens appellent les Toldü Gola les « Golas sauvages », parce qu'ils restent fermés aux étrangers, selon Diedrich Westermann.",
+            "sources": [
+              {
+                "title": "Die Gola-Sprache in Liberia : Grammatik, Texte und Wörterbuch",
+                "author": "Diedrich Westermann",
+                "year": 1921,
+                "url": "https://archive.org/details/diegolasprachein04west",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Hambourg, L. Friederichsen & Co., 1921. Lu le 11 octobre 2026 dans l'exemplaire numérisé. L'auteur a recueilli ses matériaux au Liberia de la seconde moitié de 1914 à janvier 1915."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "statement": "Le nom Gola est, selon Sigismund Koelle, celui que leur donnent des peuples voisins comme les Vai : son informateur, lui, nommait sa langue Gura.",
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous le parler « Gúra »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1600,
+              "to": 1668,
+              "label": "XVIIe siècle, publié en 1668"
+            },
+            "era": "polity",
+            "statement": "Le nom Gola a une forme proche, « Galas », dans la description de l'Afrique d'Olfert Dapper : les « vrais Galas » vivent au-delà d'une grande forêt, sous l'autorité du royaume de Manoe. C'est la plus ancienne trace de ce nom que le projet connaît. Les Gola vivaient déjà dans la région avant lui.",
+            "formAsWritten": "Galas",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Naukeurige beschrijvinge der Afrikaensche gewesten",
+                "author": "Olfert Dapper",
+                "year": 1668,
+                "url": "https://archive.org/details/gri_33125009359999",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 386",
+                "notes": "Description de l'Afrique en néerlandais, publiée à Amsterdam par Jacob van Meurs, lue dans l'exemplaire numérisé le 11 octobre 2026, pages vues en image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1600,
+              "to": 1668,
+              "label": "XVIIe siècle, publié en 1668"
+            },
+            "era": "polity",
+            "statement": "Le nom Gola entre aussi dans celui des Galavy, un peuple de l'arrière-pays du cap Mount : chassés de chez eux par la guerre avec le Hondo, ils ne sont appelés ni Vy ni Galas, mais Galavy, « à moitié Galas et à moitié Vy », selon Olfert Dapper.",
+            "formAsWritten": "Galavy",
+            "sources": [
+              {
+                "title": "Naukeurige beschrijvinge der Afrikaensche gewesten",
+                "author": "Olfert Dapper",
+                "year": 1668,
+                "url": "https://archive.org/details/gri_33125009359999",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 386",
+                "notes": "Description de l'Afrique en néerlandais, publiée à Amsterdam par Jacob van Meurs, lue dans l'exemplaire numérisé le 11 octobre 2026, pages vues en image."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gura",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Relevé en 1854",
+        "accounts": [
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "statement": "Le nom Gura est celui que donne à sa langue l'informateur gola du linguiste Sigismund Koelle. Koelle ajoute que les peuples voisins, comme les Vai, l'appellent Gola. Le linguiste Diedrich Westermann relève cette liste de mots sous le nom Gura en 1921.",
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous le parler « Gúra »."
+              },
+              {
+                "title": "Die Gola-Sprache in Liberia : Grammatik, Texte und Wörterbuch",
+                "author": "Diedrich Westermann",
+                "year": 1921,
+                "url": "https://archive.org/details/diegolasprachein04west",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Hambourg, L. Friederichsen & Co., 1921. Lu le 11 octobre 2026 dans l'exemplaire numérisé. L'auteur a recueilli ses matériaux au Liberia de la seconde moitié de 1914 à janvier 1915."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
