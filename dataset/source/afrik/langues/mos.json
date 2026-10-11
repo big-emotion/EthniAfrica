@@ -22,7 +22,12 @@
   "whyProblematic": null,
   "spellingAliases": [],
   "familyId": "FLG_GUR",
-  "peoples": [],
+  "peoples": [
+    {
+      "name": "Mossi",
+      "peopleId": "PPL_MOSSI"
+    }
+  ],
   "nameHistory": {
     "summary": "Le nom mooré désigne la langue des Mossi, dans le bassin de la Volta blanche, au Burkina Faso, que ses locuteurs, les Moose, appellent mòoré. En français, on l'appelle souvent mossi, du nom du peuple. Le nom Mosi est très ancien, mais les historiens ne savent pas s'il désignait déjà le même peuple, et son origine est discutée ; nous présentons plus bas ce qu'en disent les sources.",
     "names": [

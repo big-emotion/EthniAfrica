@@ -13,7 +13,12 @@
   "whyProblematic": null,
   "spellingAliases": [],
   "familyId": "FLG_AUSTRONESIENNE",
-  "peoples": [],
+  "peoples": [
+    {
+      "name": "Merina",
+      "peopleId": "PPL_MERINA"
+    }
+  ],
   "nameHistory": {
     "summary": "Le nom malagasy désigne la langue de Madagascar, et c'est le nom que ses locuteurs lui donnent ; le mot veut dire « de Madagascar », selon le dictionnaire Rakibolana malagasy. En français, on dit le malgache. La forme parlée sur les hautes terres porte aussi le nom de merina, celui du peuple de l'Imerina. Le nom de la langue suit celui de l'île.",
     "names": [
@@ -95,6 +100,7 @@
               "to": 1658,
               "label": "1658"
             },
+            "era": "colonial",
             "statement": "On parle alors de « la langue de Madagascar » : c'est le titre du dictionnaire publié en 1658 sous le nom d'Étienne de Flacourt. Selon Gabriel Ferrand, Flacourt n'en est pas l'auteur : il aurait copié un vocabulaire réuni par des missionnaires.",
             "before": true,
             "sources": [
