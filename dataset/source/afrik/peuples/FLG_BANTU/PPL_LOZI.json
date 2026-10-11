@@ -134,5 +134,273 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Lozi désigne le peuple de la plaine inondable du haut Zambèze, dans l'ouest de la Zambie, qui se nomme lui-même Malozi. D'autres noms existent : Barotse, écrit depuis le milieu du XIXe siècle, et Luyi, un nom plus ancien. Les sources ne s'accordent pas sur l'origine de ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Lozi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "loz",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple porte aujourd'hui, Malozi au pluriel ; sa première trace écrite reste à trouver.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Lozi désigne le peuple et le royaume de la plaine inondable du haut Zambèze, selon l'historien Allen F. Isaacman. Son origine est discutée, comme celle du nom Barotse, qui a la même racine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 8 : Les pays du bassin du Zambèze",
+                "author": "Allen F. Isaacman",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 236-237",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1840,
+              "to": 1864,
+              "label": "Vers 1840-1864"
+            },
+            "era": "polity",
+            "statement": "Le nom Lozi est alors celui d'un peuple soumis aux Kololo, venus du sud. Sous leur domination, le kololo devient la langue commune du royaume, et les Lozi de la plaine adoptent la façon de nommer des Kololo, selon Allen F. Isaacman. Les Lozi se révoltent en 1864 et chassent les Kololo.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 8 : Les pays du bassin du Zambèze",
+                "author": "Allen F. Isaacman",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 237",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1835,
+              "label": "Avant la conquête kololo, vers 1835"
+            },
+            "era": "polity",
+            "statement": "Le nom Lozi n'est pas celui que retient l'historien Leonard D. Ngcongco pour le royaume d'avant la conquête kololo : il parle du « royaume luyi [lozi] ».",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 5 : Le Mfecane et l'émergence de nouveaux États africains",
+                "author": "Leonard D. Ngcongco",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 149",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Barotse",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du peuple chez Livingstone, resté dans celui du Barotseland.",
+        "periodLabel": "Écrit depuis 1857 ; Barotseland aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1851,
+              "to": 1857,
+              "label": "Rencontre de 1851, publiée en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Barotse apparaît par écrit chez le missionnaire écossais David Livingstone. Il raconte qu'en 1851 le chef kololo Sebituane était venu « de la ville barotse de Naliele » pour l'accueillir. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple de la plaine existait déjà avant lui.",
+            "formAsWritten": "Barótse",
+            "birth": true,
+            "actors": [
+              {
+                "name": "David Livingstone",
+                "role": "missionnaire, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 83",
+                "notes": "Londres, John Murray, 1857. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un missionnaire britannique du milieu du XIXe siècle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1884,
+              "to": 1884,
+              "label": "Proposée en décembre 1884, publiée en 1899"
+            },
+            "era": "polity",
+            "statement": "Le nom Barotse viendrait des Kololo, qui l'auraient formé en déformant le vrai nom du peuple, selon le missionnaire François Coillard. Il écrit ce vrai nom Morouyi, au pluriel Arouyi, et rejette la forme ba-Rotsi.",
+            "hypothesisGroup": "origine du nom Barotse",
+            "sources": [
+              {
+                "title": "Sur le Haut-Zambèze : voyages et travaux de mission",
+                "author": "François Coillard",
+                "year": 1899,
+                "url": "https://archive.org/details/surlehautzambeze00coil",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 175-176",
+                "notes": "Lettres du missionnaire, ici une lettre écrite en décembre 1884, réunies en volume en 1899. Lu dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1911,
+              "label": "Proposée en 1910-1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Barotse viendrait d'un mot rotse, « plaine », que les Kololo auraient donné à ce peuple au XIXe siècle. Marotse voudrait dire « gens de la plaine », et Barotse en serait une forme inexacte, selon Alfred St Hill Gibbons dans l'Encyclopaedia Britannica.",
+            "hypothesisGroup": "origine du nom Barotse",
+            "sources": [
+              {
+                "title": "Encyclopaedia Britannica, 11e édition, vol. 3 : Barotse, Barotseland",
+                "author": "Alfred St Hill Gibbons",
+                "year": 1910,
+                "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Barotse_and_Barotseland",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 425",
+                "notes": "Article d'encyclopédie paru en 1910-1911, lu dans la transcription de Wikisource qui reproduit les pages imprimées. Il porte le regard d'un officier britannique de l'époque coloniale."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1911,
+              "label": "1910-1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Barotse s'étend alors aux peuples soumis voisins, et Barotseland désigne tout le pays où le roi des Barotse exerce son autorité, en grande partie un protectorat britannique, selon Alfred St Hill Gibbons.",
+            "sources": [
+              {
+                "title": "Encyclopaedia Britannica, 11e édition, vol. 3 : Barotse, Barotseland",
+                "author": "Alfred St Hill Gibbons",
+                "year": 1910,
+                "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Barotse_and_Barotseland",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 424-425",
+                "notes": "Article d'encyclopédie paru en 1910-1911, lu dans la transcription de Wikisource qui reproduit les pages imprimées. Il porte le regard d'un officier britannique de l'époque coloniale."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Luyi",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom plus ancien que ce peuple se donnait ; Livingstone l'écrit Baloiana en 1853.",
+        "periodLabel": "Écrit dès 1853",
+        "accounts": [
+          {
+            "period": {
+              "from": 1853,
+              "to": 1857,
+              "label": "1853, publié en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Luyi apparaît sous une forme proche, Baloiana, « petits Baloi », chez David Livingstone. À Naliele, en 1853, il note que les Barotse se nomment ainsi eux-mêmes, comme s'ils venaient d'un pays appelé Loi ou Lui. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Baloiana",
+            "birth": true,
+            "actors": [
+              {
+                "name": "David Livingstone",
+                "role": "missionnaire, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 217",
+                "notes": "Londres, John Murray, 1857. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un missionnaire britannique du milieu du XIXe siècle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1884,
+              "to": 1884,
+              "label": "Décembre 1884"
+            },
+            "era": "polity",
+            "statement": "Le nom Louyi se retrouve dans celui de la capitale, que François Coillard écrit Léalouyi, en notant que l et r s'y prononcent l'un pour l'autre.",
+            "formAsWritten": "Léalouyi",
+            "sources": [
+              {
+                "title": "Sur le Haut-Zambèze : voyages et travaux de mission",
+                "author": "François Coillard",
+                "year": 1899,
+                "url": "https://archive.org/details/surlehautzambeze00coil",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 176",
+                "notes": "Lettres du missionnaire, ici une lettre écrite en décembre 1884, réunies en volume en 1899. Lu dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1911,
+              "label": "Rapporté en 1910-1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Aälui serait le nom d'origine de ce peuple, selon Alfred St Hill Gibbons. Il situe ses ancêtres sur la rivière Kabompo avant leur installation dans la plaine, vers le début du XVIIe siècle.",
+            "sources": [
+              {
+                "title": "Encyclopaedia Britannica, 11e édition, vol. 3 : Barotse, Barotseland",
+                "author": "Alfred St Hill Gibbons",
+                "year": 1910,
+                "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Barotse_and_Barotseland",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 424-425",
+                "notes": "Article d'encyclopédie paru en 1910-1911, lu dans la transcription de Wikisource qui reproduit les pages imprimées. Il porte le regard d'un officier britannique de l'époque coloniale."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
