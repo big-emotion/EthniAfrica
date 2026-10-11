@@ -151,5 +151,271 @@
         "notes": "Revue Matatu, volumes 27-28, 2003 ; travail universitaire indépendant de celui de Drewal, consulté le 10 septembre 2026."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Efik désigne un peuple de l'estuaire de la Cross River, au sud-est du Nigeria, autour de Calabar, qui se nomme lui-même Efik. Les Européens l'ont longtemps appelé du nom de son port, Calabar. On ne sait pas avec certitude d'où vient le nom Efik ; pour Calabar, les sources proposent deux explications, que nous présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Efik",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "efi",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple, écrit par un voyageur anglais dès 1858.",
+        "usedIn": ["efi"],
+        "periodLabel": "Écrit depuis 1858 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Efik désigne un peuple étroitement apparenté aux Ibibio, établi au début du XVIIe siècle à Creek Town, Old Town et Duke Town, sur la Cross River, selon E. J. Alagoa. Les sources que nous avons lues n'expliquent pas d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 15 : Les Fon et les Yoruba, du delta du Niger au Cameroun",
+                "author": "E. J. Alagoa",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 501",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1890,
+              "to": 1890,
+              "label": "Livre publié en 1890"
+            },
+            "statement": "Le nom Efik est celui que ce peuple se donne, selon le missionnaire presbytérien Hugh Goldie. D'après la tradition qu'il rapporte, les Efik sont sortis du pays ibibio, ont tenté de s'établir en un lieu appelé Old Efik, à la pointe d'une île de l'estuaire, puis se sont dispersés dans leurs villes actuelles.",
+            "sources": [
+              {
+                "title": "Calabar and its Mission",
+                "author": "Hugh Goldie",
+                "year": 1890,
+                "url": "https://archive.org/details/calabaritsmissio00gold",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9 et p. 12",
+                "notes": "Édimbourg et Londres, Oliphant, Anderson & Ferrier, 1890. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. P. 9, note 1 : « The native name is Efik » ; p. 12 : « The Efik people, as they call themselves »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "1858"
+            },
+            "era": "polity",
+            "statement": "Le nom Efik apparaît dans le récit du Britannique Thomas J. Hutchinson, publié en 1858. Il explique que la rivière de Calabar s'appelle dans le pays Akpa-Efik, akpa voulant dire l'eau, et Efik étant le nom du peuple qui habite là. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Efik",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Impressions of Western Africa",
+                "author": "Thomas J. Hutchinson",
+                "year": 1858,
+                "url": "https://archive.org/details/impressionsofwes00hutcuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 113-114",
+                "notes": "Londres, 1858. « The native name of Kalabar River is Akpa-Efik, the former word being a name for water, and the latter the title of the tribe who now inhabit the country. » Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1600,
+              "label": "Avant le XVIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Efik n'est pas encore attaché à la Cross River : ses rives sont alors occupées par les Ejagham, les Ekoi et les Efut, venus du sud du Cameroun, selon Alan Frederick Charles Ryder.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 14 : De la Volta au Cameroun",
+                "author": "Alan Frederick Charles Ryder",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 401",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Calabar",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du port, que les Européens ont donné aux Efik ; son origine est discutée.",
+        "periodLabel": "Écrit dès 1705",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Calabar désigne aujourd'hui l'ancien État efik de la basse Cross River, selon E. J. Alagoa.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 15 : Les Fon et les Yoruba, du delta du Niger au Cameroun",
+                "author": "E. J. Alagoa",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 501",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1863,
+              "to": 1863,
+              "label": "1863"
+            },
+            "era": "polity",
+            "statement": "Le nom Calabar a fini par s'appliquer surtout aux Efik, alors qu'il n'est pas un mot de leur langue, selon le missionnaire Hope Masterton Waddell.",
+            "sources": [
+              {
+                "title": "Twenty-nine Years in the West Indies and Central Africa: a Review of Missionary Work and Adventure, 1829-1858",
+                "author": "Hope Masterton Waddell",
+                "year": 1863,
+                "url": "https://archive.org/details/twentynineyears00waddgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 309",
+                "notes": "Londres, 1863, chapitre XVI. « Calabaros and Calapongas were names given to the tribes in the Bight of Biafra, by the Portuguese […]. The former has come to be applied to the Efik people especially, though it is not a word of their language. » Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1705,
+              "to": 1705,
+              "label": "1705"
+            },
+            "era": "polity",
+            "statement": "Le nom Calabar apparaît, sous une forme proche, Calbary, chez le marchand néerlandais Willem Bosman, qui cite Old et New Calbary parmi les lieux de commerce du golfe de Guinée. C'est la plus ancienne trace de ce nom que le projet connaît. Le port existait déjà avant elle.",
+            "formAsWritten": "Calbary",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A New and Accurate Description of the Coast of Guinea",
+                "author": "William Bosman",
+                "year": 1705,
+                "url": "https://archive.org/details/b30519032",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 399",
+                "notes": "Londres, 1705, traduction anglaise d'un texte paru en néerlandais en 1704. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Lettre XX : « Camarones, together with Old and New Calbary »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1863,
+              "to": 1863,
+              "label": "Proposée en 1863, reprise en 1890"
+            },
+            "era": "polity",
+            "statement": "Le nom Calabar viendrait des Portugais, premiers Européens sur cette côte, qui appelaient Calabaros les peuples du golfe du Biafra, selon le missionnaire Hope Masterton Waddell. Hugh Goldie l'attribue au navigateur Diego Cam, qui l'aurait donné au pays en le découvrant.",
+            "hypothesisGroup": "origine du nom Calabar",
+            "sources": [
+              {
+                "title": "Twenty-nine Years in the West Indies and Central Africa: a Review of Missionary Work and Adventure, 1829-1858",
+                "author": "Hope Masterton Waddell",
+                "year": 1863,
+                "url": "https://archive.org/details/twentynineyears00waddgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 309",
+                "notes": "Londres, 1863, chapitre XVI. « Calabaros and Calapongas were names given to the tribes in the Bight of Biafra, by the Portuguese […]. The former has come to be applied to the Efik people especially, though it is not a word of their language. » Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              },
+              {
+                "title": "Calabar and its Mission",
+                "author": "Hugh Goldie",
+                "year": 1890,
+                "url": "https://archive.org/details/calabaritsmissio00gold",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9",
+                "notes": "Édimbourg et Londres, Oliphant, Anderson & Ferrier, 1890. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. « The name given to it by its discoverer, Diego Cam, is that by which it is still known to Europeans. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Proposée en 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Calabar viendrait du portugais calabarra, « la barre se tait », qui décrirait le calme du mouillage, selon Offiong Offiong Asuquo, qui s'appuie sur un auteur nommé Williams.",
+            "hypothesisGroup": "origine du nom Calabar",
+            "sources": [
+              {
+                "title": "The Present Day Relevance of Ekpe Society/Masquerade to the Efiks of Nigeria",
+                "author": "Offiong Offiong Asuquo",
+                "year": 2020,
+                "url": "https://ojs.unm.ac.id/sosialisasi/article/download/14492/8529",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 55",
+                "notes": "Jurnal Sosialisasi, vol. 7, n° 2, juillet 2020, p. 55-60. L'auteur cite Williams (2009), que nous n'avons pas lu. Lu en texte intégral le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Carabalí",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom des registres de la traite dans l'Amérique espagnole.",
+        "periodLabel": "XVIIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1700,
+              "to": 1799,
+              "label": "XVIIIe siècle"
+            },
+            "statement": "Le nom Carabalí figure parmi les noms donnés, au XVIIIe siècle, aux captifs venus du golfe du Biafra dans le Pacifique colombien, selon Rafael Antonio Díaz Díaz. Les sources que nous avons lues ne disent pas s'il désignait les Efik eux-mêmes.",
+            "sources": [
+              {
+                "title": "General History of Africa, X: Africa and its Diasporas, ch. 19: Maroonism and Resistance in the Afro-Colombian Pacific",
+                "author": "Rafael Antonio Díaz Díaz",
+                "year": 2025,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000396047",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 572",
+                "notes": "UNESCO, volume dirigé par Vanicléia Silva Santos, édition anglaise en libre accès, lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
