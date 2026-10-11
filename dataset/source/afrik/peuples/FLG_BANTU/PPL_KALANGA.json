@@ -119,5 +119,250 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kalanga désigne un peuple de l'ouest du Zimbabwe, du nord-est du Botswana et du nord de l'Afrique du Sud, qui se nomme lui-même BaKalanga. D'autres noms existent : Makalaka, et Karanga, avec lequel on le confond parfois. Les sources ne s'accordent pas sur l'origine du nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "BaKalanga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kck",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent ; leur langue est le tjikalanga ou l'ikalanga.",
+        "periodLabel": "Écrit dès 1857, sous une forme proche",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kalanga désigne un peuple et sa langue, appelée aussi tjikalanga au Zimbabwe et ikalanga au Botswana, selon le catalogue Glottolog. Son origine est discutée : les explications proposées sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog — Kalanga (kala1384)",
+                "author": "Glottolog",
+                "year": 2026,
+                "url": "https://glottolog.org/resource/languoid/id/kala1384",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice consultée le 11 octobre 2026. Langue de code kck, parlée au Botswana, en Afrique du Sud et au Zimbabwe. Autres noms relevés dans le catalogue Multitree : Chikalanga, Ikalanga, Kalaka, Makalaka, Sekalaka, Tjikalanga et Wakalanga."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "1986"
+            },
+            "era": "modern",
+            "statement": "Le nom Kalanga s'est conservé avec son l dans la région de Plumtree, au Zimbabwe, où la langue reste très proche du kalanga d'origine, selon Aeneas Chigwedere. Il ajoute que beaucoup de gens y sont appelés Kalanga parce qu'ils habitent cette région, sans être kalanga d'origine.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Karanga Empire",
+                "author": "Aeneas Chigwedere",
+                "year": 1986,
+                "url": "https://michaelharrison.org.uk/wp-content/uploads/2021/04/The-Karanga-Empire-Aeneas-Chigwedere-Books-for-Africa-Harare-1986.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7",
+                "notes": "Harare, Books for Africa, 1986. Copie non officielle, lue dans un PDF déposé sur un site personnel, consulté le 11 octobre 2026. La page écrit : « The original name was KALANGA » ; « The letter \"L\" has however been retained in the Plumtree area where the language spoken there is still very close to the original KALANGA language » ; « the majority of the people in that area who are called Kalanga are only so by virtue of their residence »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1842,
+              "to": 1842,
+              "label": "Voyage de 1842, livre de 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Kalanga a une forme proche, Makalaka, chez le missionnaire David Livingstone, qui dit être allé voir en 1842 « les Makalaka, qui vivent entre 22° et 23° de latitude sud ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Makalaka",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 10",
+                "notes": "Londres, John Murray, 1857, lu dans la numérisation d'Internet Archive le 11 octobre 2026. La page écrit : « I went northwards to visit the Bakaa and Bamangwato, and the Makalaka, living between 22° and 23° south lat. » Le livre est publié en 1857 ; ce voyage a lieu en 1842, selon la même page."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "Proposée en 1892"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kalanga voudrait dire « enfants du soleil », de ma ou ba, « enfants », ka, « de », et langa, « le soleil », selon le voyageur James Theodore Bent. Il parle des Makalanga des environs de Zimbabwe, qu'il rattache aux Mocarangas des Portugais.",
+            "hypothesisGroup": "origine du nom Kalanga",
+            "sources": [
+              {
+                "title": "The Ruined Cities of Mashonaland: Being a Record of Excavation and Exploration in 1891",
+                "author": "James Theodore Bent",
+                "year": 1892,
+                "url": "https://archive.org/details/ruinedcitiesofma00bent",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 31-32",
+                "notes": "Londres, Longmans, Green and Co., 1892, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 31 : autour de Zimbabwe, les habitants « call themselves Makalangas » ; les pionniers britanniques et hollandais les appellent « Banyai and Makalaka, which latter they imagine to be a Zulu term of reproach ». Page 32 : « the best derivation that suggests itself is the initial Ma or Ba, \"children\", ka, \"of\", langa, \"the sun\" »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Proposée en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kalanga voudrait dire « les gens du Nord » : dans le sud du Mozambique, Bakalanga désignerait les peuples du nord, quelle que soit leur origine, selon le missionnaire Henri-Alexandre Junod. Il ajoute qu'autour de Lourenço Marques, ce nom désigne même les Khosa.",
+            "hypothesisGroup": "origine du nom Kalanga",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18, note",
+                "notes": "Neuchâtel, Attinger Frères, 1912, lu dans la numérisation d'Internet Archive le 11 octobre 2026. La note écrit : « one very often meets with the word \"Bakalanga\" which means people of the North. The Bakalanga proper are in Rhodesia, but in Lourenço Marques the Khosa tribe is called Bakalanga »."
+              },
+              {
+                "title": "The Condition of the Natives of South-East Africa in the Sixteenth Century, according to the Early Portuguese Documents",
+                "author": "Henri-Alexandre Junod",
+                "year": 1914,
+                "url": "https://archive.org/details/conditionofnativ00juno",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 24, note",
+                "notes": "Le Cap, South African Association for the Advancement of Science, 1914, 25 pages, lu dans la numérisation d'Internet Archive le 11 octobre 2026. La note écrit : « Kalanga means North, or at any rate, for the Ronga, Bakalanga people are the tribes of the North, irrespective of their origin »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Makalaka",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une forme ancienne du nom, que des voisins employaient aussi pour d'autres peuples.",
+        "periodLabel": "Écrit dès 1857",
+        "accounts": [
+          {
+            "period": {
+              "from": 1853,
+              "to": 1856,
+              "label": "Années 1850"
+            },
+            "era": "polity",
+            "statement": "Le nom Makalaka sert aussi, chez les Makololo, à désigner tous les peuples qu'ils ont soumis le long du Zambèze, selon David Livingstone. Ce nom ne vise donc pas toujours les seuls Kalanga.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 200-201",
+                "notes": "Londres, John Murray, 1857, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 200 : « the tribes which Sebituane subjected in this great country, pass by the general name of Makalaka ». Page 201 : « the branch of the negro family which the Makololo distinguish by the term Makalaka »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1842,
+              "to": 1842,
+              "label": "Voyage de 1842, livre de 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Makalaka apparaît chez David Livingstone, qui dit être allé voir en 1842 « les Makalaka, qui vivent entre 22° et 23° de latitude sud », non loin des Bamangwato. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Makalaka",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 10",
+                "notes": "Londres, John Murray, 1857, lu dans la numérisation d'Internet Archive le 11 octobre 2026. La page écrit : « I went northwards to visit the Bakaa and Bamangwato, and the Makalaka, living between 22° and 23° south lat. » Le livre est publié en 1857 ; ce voyage a lieu en 1842, selon la même page."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1891,
+              "to": 1891,
+              "label": "1891"
+            },
+            "era": "colonial",
+            "statement": "Le nom Makalaka est, selon James Theodore Bent, celui que des pionniers britanniques et hollandais donnent aux habitants des environs de Zimbabwe, qui se disent eux-mêmes Makalanga. Ces pionniers croient, écrit-il, que c'est un terme de mépris zoulou.",
+            "sources": [
+              {
+                "title": "The Ruined Cities of Mashonaland: Being a Record of Excavation and Exploration in 1891",
+                "author": "James Theodore Bent",
+                "year": 1892,
+                "url": "https://archive.org/details/ruinedcitiesofma00bent",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 31-32",
+                "notes": "Londres, Longmans, Green and Co., 1892, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 31 : autour de Zimbabwe, les habitants « call themselves Makalangas » ; les pionniers britanniques et hollandais les appellent « Banyai and Makalaka, which latter they imagine to be a Zulu term of reproach ». Page 32 : « the best derivation that suggests itself is the initial Ma or Ba, \"children\", ka, \"of\", langa, \"the sun\" »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Karanga",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom voisin, celui d'un peuple shona ; on confond parfois les deux.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "Proposée en 1986"
+            },
+            "era": "modern",
+            "statement": "Le nom Karanga viendrait de Kalanga, qui serait le nom d'origine : en shona, le l aurait cédé la place au r, selon Aeneas Chigwedere. Il ne fait pour cette raison aucune différence entre Karanga et Kalanga.",
+            "sources": [
+              {
+                "title": "The Karanga Empire",
+                "author": "Aeneas Chigwedere",
+                "year": 1986,
+                "url": "https://michaelharrison.org.uk/wp-content/uploads/2021/04/The-Karanga-Empire-Aeneas-Chigwedere-Books-for-Africa-Harare-1986.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7",
+                "notes": "Harare, Books for Africa, 1986. Copie non officielle, lue dans un PDF déposé sur un site personnel, consulté le 11 octobre 2026. La page écrit : « The original name was KALANGA » ; « The letter \"L\" has however been retained in the Plumtree area where the language spoken there is still very close to the original KALANGA language » ; « the majority of the people in that area who are called Kalanga are only so by virtue of their residence »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
