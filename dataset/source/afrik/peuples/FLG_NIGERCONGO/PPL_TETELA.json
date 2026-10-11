@@ -107,5 +107,172 @@
         "notes": "Glottolog direct languoid record establishing the Tetela name, ISO 639-3 code tll, glottocode tete1250, and Democratic Republic of the Congo country association."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Tetela, ou Batetela, désigne un peuple bantou du centre de la République démocratique du Congo, dans le Sankuru et le Maniema ; on dit Motetela pour une seule personne. Au début du XXe siècle, tous ses groupes ne l'employaient pas : certains se nommaient Akuchu, Sungu ou Udya. Les sources ne s'accordent pas sur l'origine du nom Batetela ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Batetela",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom courant, Motetela pour une seule personne ; son origine reste discutée.",
+        "periodLabel": "Écrit depuis 1890 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Batetela désigne, selon Emil Torday et Thomas Athol Joyce, un ensemble de groupes installés entre le Lomami, le Lubefu et le Lukenye, divisés en plusieurs tribus dont les parlers et les coutumes diffèrent un peu. L'origine de ce nom est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Notes ethnographiques sur des populations habitant les rives du Kasai, de la Lukenie et du Kwango oriental",
+                "author": "Emil Torday et Thomas Athol Joyce",
+                "year": 1922,
+                "url": "https://archive.org/details/notesethnographi00tord",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4-5",
+                "notes": "Bruxelles, Annales du Musée du Congo belge. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Batetela n'est pas employé partout comme nom de groupe, notent Emil Torday et Thomas Athol Joyce : sur la rive droite du Lubefu, les habitants se nomment seulement Akuchu, sur la rive gauche Sungu, et ceux du Lomami se donnent le nom d'Udya.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Notes ethnographiques sur des populations habitant les rives du Kasai, de la Lukenie et du Kwango oriental",
+                "author": "Emil Torday et Thomas Athol Joyce",
+                "year": 1922,
+                "url": "https://archive.org/details/notesethnographi00tord",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Bruxelles, Annales du Musée du Congo belge. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1886,
+              "to": 1887,
+              "label": "1886-1887"
+            },
+            "era": "colonial",
+            "statement": "Le nom Batetela apparaît par écrit dans le récit du second voyage de l'explorateur allemand Hermann von Wissmann, paru en 1890 : il y place les Batetela à l'est, derrière de vastes forêts, et ajoute que ce qu'il voit rejoint les observations de son compagnon Ludwig Wolf. Il les décrit avec le vocabulaire méprisant de son époque. C'est la plus ancienne trace de ce nom que le projet connaît. Les groupes qu'il désigne vivaient déjà là avant lui.",
+            "formAsWritten": "Batetela",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Hermann von Wissmann",
+                "role": "explorateur, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Meine zweite Durchquerung Äquatorial-Afrikas vom Congo zum Zambesi während der Jahre 1886 und 1887",
+                "author": "Hermann von Wissmann",
+                "year": 1890,
+                "url": "https://archive.org/details/meinezweitedurch00wiss",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 125 et p. 129",
+                "notes": "Lu dans la numérisation d'Internet Archive le 11 octobre 2026, à travers la reconnaissance de caractères du texte en écriture gothique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Rapporté en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Batetela aurait été inventé par les Arabes, « parce que nous possédions peu des choses qu'ils regardent comme indispensables à la vie », selon des Sungu interrogés par Emil Torday et Thomas Athol Joyce.",
+            "hypothesisGroup": "origine du nom Batetela",
+            "sources": [
+              {
+                "title": "Notes ethnographiques sur des populations habitant les rives du Kasai, de la Lukenie et du Kwango oriental",
+                "author": "Emil Torday et Thomas Athol Joyce",
+                "year": 1922,
+                "url": "https://archive.org/details/notesethnographi00tord",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Bruxelles, Annales du Musée du Congo belge. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Récit recueilli auprès des Sungu, que les auteurs ne nomment pas."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Rapporté en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Batetela viendrait de Matetela, un dieu suprême qui donne son nom au peuple ; ce nom signifierait « Celui qui ne rit pas » ou « Celui de qui on ne doit pas rire », selon des Olemba interrogés par Emil Torday et Thomas Athol Joyce, qui notent que les Sungu ont oublié ce dieu.",
+            "hypothesisGroup": "origine du nom Batetela",
+            "sources": [
+              {
+                "title": "Notes ethnographiques sur des populations habitant les rives du Kasai, de la Lukenie et du Kwango oriental",
+                "author": "Emil Torday et Thomas Athol Joyce",
+                "year": 1922,
+                "url": "https://archive.org/details/notesethnographi00tord",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4 et p. 173",
+                "notes": "Bruxelles, Annales du Musée du Congo belge. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Récit recueilli auprès des Olemba, que les auteurs ne nomment pas ; à la page 173, ils notent que les Batetela du Nord appellent aussi l'être suprême Matetela."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Akuchu",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donnaient en 1922 les habitants de la rive droite du Lubefu.",
+        "periodLabel": "Noté en 1922",
+        "accounts": [
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Akuchu est le seul que se donnent les habitants de la rive droite du Lubefu, qui n'emploient pas le nom Batetela, selon Emil Torday et Thomas Athol Joyce. C'est la plus ancienne trace écrite de ce nom que le projet connaît. Ces groupes existaient déjà avant cette trace.",
+            "formAsWritten": "Akuchu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notes ethnographiques sur des populations habitant les rives du Kasai, de la Lukenie et du Kwango oriental",
+                "author": "Emil Torday et Thomas Athol Joyce",
+                "year": 1922,
+                "url": "https://archive.org/details/notesethnographi00tord",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Bruxelles, Annales du Musée du Congo belge. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

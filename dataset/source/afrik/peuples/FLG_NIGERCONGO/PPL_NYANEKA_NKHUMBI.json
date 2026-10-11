@@ -126,5 +126,143 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nyaneka-Nkhumbi désigne un ensemble de peuples bantous du sud-ouest de l'Angola, sur le plateau de la Huíla et jusqu'au Cunene. Il réunit deux noms plus anciens, Nyaneka et Nkhumbi, que les Portugais écrivaient Nhaneca et Humbe et sous lesquels ces peuples sont décrits dès 1877. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Nyaneka-Nkhumbi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'ensemble des ethnographes, qui réunit les Nyaneka et les Nkhumbi.",
+        "periodLabel": "Écrit depuis 1960 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1959,
+              "to": 1960,
+              "label": "1959-1960"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nyaneka-Nkhumbi, écrit Nhanecas-Humbes en portugais, désigne chez le père Carlos Estermann l'un des trois grands groupes de peuples bantous du sud-ouest de l'Angola : les Nhanecas, divisés en Huílas, ou Mwila, et en Gambos, puis les Humbes, ou Nkumbi, les Dongoenas, les Hingas, les Cuâncuas, les Handas, les Quipungos et les Quilengues. C'est la plus ancienne trace de ce nom d'ensemble que le projet connaît. Les peuples qu'il réunit existaient déjà avant lui.",
+            "aspect": "meaning",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Carlos Estermann",
+                "role": "prêtre et ethnographe, auteur de l'album"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Álbum de penteados do sudoeste de Angola",
+                "author": "Carlos Estermann",
+                "year": 1960,
+                "url": "https://archive.org/details/dli.ernet.535233",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chap. I, « Divisão étnica »",
+                "notes": "Lisbonne, 1960 ; préface datée de Sá da Bandeira, juin 1959, qui remercie la Junta de Investigações do Ultramar. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nyaneka",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des Nyaneka, écrit Ba-Nhaneca dès 1877.",
+        "periodLabel": "Écrit depuis 1877 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1877,
+              "to": 1880,
+              "label": "1877-1880"
+            },
+            "statement": "Le nom Nyaneka apparaît par écrit, sous la forme Ba-Nhaneca, dans l'article « Os Ba-Nhaneca e os Ban-Kumbi no interior de Mossamedes » qu'António Francisco Nogueira publie en 1877 dans le Jornal do Commercio de Lisbonne et reprend dans son livre de 1880 : il les divise en sept peuples, entre le haut de la Chela et le Cunene. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple vivait déjà là avant lui. On ne sait pas avec certitude d'où vient ce nom.",
+            "formAsWritten": "Ba-Nhaneca",
+            "birth": true,
+            "actors": [
+              {
+                "name": "António Francisco Nogueira",
+                "role": "auteur de l'article et du livre"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A raça negra sob o ponto de vista da civilisação da Africa",
+                "author": "António Francisco Nogueira",
+                "year": 1880,
+                "url": "https://archive.org/details/araanegrasobopo00nogugoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 253 et p. 255",
+                "notes": "Lisbonne, lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'article de 1877 est reproduit en annexe du livre ; nous ne l'avons pas lu dans le journal."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nkhumbi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des Nkhumbi, que les Portugais écrivaient Humbe.",
+        "periodLabel": "Écrit depuis 1877 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1877,
+              "to": 1880,
+              "label": "1877-1880"
+            },
+            "statement": "Le nom Nkhumbi apparaît par écrit, sous la forme Ban-Kumbi, dans l'article qu'António Francisco Nogueira publie en 1877 dans le Jornal do Commercio de Lisbonne et reprend dans son livre de 1880 : il divise les Ban-Kumbi en cinq peuples, dont les Ba-Kamba et les Ba-Mullondo. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple vivait déjà là avant lui.",
+            "formAsWritten": "Ban-Kumbi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A raça negra sob o ponto de vista da civilisação da Africa",
+                "author": "António Francisco Nogueira",
+                "year": 1880,
+                "url": "https://archive.org/details/araanegrasobopo00nogugoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 253 et p. 255",
+                "notes": "Lisbonne, lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'article de 1877 est reproduit en annexe du livre ; nous ne l'avons pas lu dans le journal."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1880,
+              "to": 1880,
+              "label": "Proposée en 1880"
+            },
+            "statement": "Le nom Nkhumbi désignerait d'abord un pays, le Kumbi : António Francisco Nogueira explique que les préfixes ba ou ban, joints au nom d'une terre, désignent les habitants de cette terre, et il parle de l'État de Kumbi et de ses rois.",
+            "hypothesisGroup": "origine du nom Nkhumbi",
+            "sources": [
+              {
+                "title": "A raça negra sob o ponto de vista da civilisação da Africa",
+                "author": "António Francisco Nogueira",
+                "year": 1880,
+                "url": "https://archive.org/details/araanegrasobopo00nogugoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 97, note 2, et p. 125, note 1",
+                "notes": "Lisbonne, lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

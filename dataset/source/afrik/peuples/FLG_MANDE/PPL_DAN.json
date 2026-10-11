@@ -138,5 +138,235 @@
         "notes": "Texte lu directement : la page écrit Yacuba (Yacouba) et rattache les Dan au Liberia, à la Guinée et à l'ouest de la Côte d'Ivoire. Site marchand, sans auteur ni références."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Dan désigne un peuple de langue mandé de l'ouest de la Côte d'Ivoire, autour de Man et de Danané, et du nord-est du Liberia, qui se nomme lui-même Dan. En Côte d'Ivoire, on l'appelle aussi Yacouba, au Liberia Gio, et les premiers récits coloniaux français lui donnaient un nom méprisant. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Dan",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; écrit en français dès 1920.",
+        "periodLabel": "Écrit depuis 1920 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1924,
+              "to": 1924,
+              "label": "1924"
+            },
+            "statement": "Le nom Dan désigne en 1924, dans Les langues du monde, une langue du haut Cavally aussi appelée mebe, yabuba ou langue des « Dioula anthropophages » ; l'ouvrage ajoute que Sigismund Koelle l'avait notée en 1854 sous le nom de gio. On ne sait pas avec certitude d'où vient le nom Dan.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les langues du monde, chapitre « Les langues du Soudan et de la Guinée »",
+                "author": "Maurice Delafosse",
+                "year": 1924,
+                "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 547",
+                "notes": "Paris, Édouard Champion, 1924, ouvrage collectif dirigé par Antoine Meillet et Marcel Cohen. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'ouvrage renvoie au relevé de Sigismund Koelle de 1854 ; nous n'avons pas lu ce relevé nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "statement": "Le nom Dan apparaît par écrit en français en 1920, dans un compte rendu de la revue Renseignements coloniaux qui parle des « Dan ou Mêbé, autrefois appelés Dioula anthropophages ». C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Dan",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Renseignements coloniaux et documents, 1920, compte rendu d'un livre sur le Liberia",
+                "author": "Comité de l'Afrique française",
+                "year": 1920,
+                "url": "https://archive.org/details/renseignementsco00comi_7",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 123",
+                "notes": "Supplément au Bulletin du Comité de l'Afrique française, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Le compte rendu porte sur un livre de M. Maugham consacré au Liberia."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Yacouba",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom courant en Côte d'Ivoire ; son origine n'est pas connue.",
+        "periodLabel": "Écrit depuis 1922 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1961,
+              "to": 1961,
+              "label": "1961"
+            },
+            "era": "modern",
+            "statement": "Le nom Yacouba sert en 1961 d'autre nom aux Dan dans la revue L'Agronomie tropicale, qui compte parmi les habitants du cercle de Man « les Dans (ou Yacoubas) ». On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "L'Agronomie tropicale, vol. 16, n° 2, mars-avril 1961",
+                "author": "L'Agronomie tropicale",
+                "year": 1961,
+                "url": "https://archive.org/details/agronomie-tropicale_march-april-1961_16_2",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Revue publiée à Paris, lue dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "statement": "Le nom Yacouba apparaît, sous la forme Yakoubas, dans La randonnée de Samba Diouf, un roman de Jérôme et Jean Tharaud publié en 1922 dans la Revue des Deux Mondes : les auteurs y rangent les Yakoubas parmi les tirailleurs venus du sud de l'Afrique de l'Ouest, avec le mépris de leur époque. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Yakoubas",
+            "birth": true,
+            "sources": [
+              {
+                "title": "La randonnée de Samba Diouf",
+                "author": "Jérôme et Jean Tharaud",
+                "year": 1922,
+                "url": "https://archive.org/details/sim_revue-des-deux-mondes_1922_8",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 22",
+                "notes": "Roman paru dans la Revue des Deux Mondes, 1922, tome 8, lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gio",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom employé au Liberia, noté dès 1854 ; son origine n'est pas connue.",
+        "periodLabel": "Noté en 1854 ; en usage au Liberia",
+        "accounts": [
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "statement": "Le nom Gio a été noté en 1854 par le linguiste Sigismund Koelle, selon Les langues du monde, qui en fait l'ancien nom de la langue dan. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle. On ne sait pas avec certitude d'où vient ce nom.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les langues du monde, chapitre « Les langues du Soudan et de la Guinée »",
+                "author": "Maurice Delafosse",
+                "year": 1924,
+                "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 547",
+                "notes": "Paris, Édouard Champion, 1924, ouvrage collectif dirigé par Antoine Meillet et Marcel Cohen. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'ouvrage renvoie au relevé de Sigismund Koelle de 1854 ; nous n'avons pas lu ce relevé nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "modern",
+            "statement": "Le nom Gio désigne en 1920, dans un compte rendu de Renseignements coloniaux sur le Liberia, un groupe que l'auteur rapproche d'un autre peuple : « des Gio (qui sont sans doute ceux que nous appelons Manon) ». Les sources de cette époque ne s'accordent donc pas sur le peuple qu'il désigne.",
+            "sources": [
+              {
+                "title": "Renseignements coloniaux et documents, 1920, compte rendu d'un livre sur le Liberia",
+                "author": "Comité de l'Afrique française",
+                "year": 1920,
+                "url": "https://archive.org/details/renseignementsco00comi_7",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 123",
+                "notes": "Supplément au Bulletin du Comité de l'Afrique française, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Le compte rendu porte sur un livre de M. Maugham consacré au Liberia."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dioula anthropophages",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom méprisant que les premiers récits coloniaux français donnaient aux Dan.",
+        "periodLabel": "Écrit de 1900 aux années 1920",
+        "accounts": [
+          {
+            "period": {
+              "from": 1897,
+              "to": 1900,
+              "label": "1897-1900"
+            },
+            "era": "polity",
+            "statement": "Le nom « Dioulas anthropophages » apparaît dans un compte rendu de la Société de géographie paru en 1900 : une mission militaire française y est dite cernée le 26 décembre 1897 « au village de Man, pays des Dioulas anthropophages », dont les habitants la combattent pendant trois jours. Ce nom méprisant est celui des récits coloniaux, pas celui que ce peuple se donne. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Dioulas anthropophages",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Compte rendu des séances de la Société de géographie et de la Commission centrale, 1900",
+                "author": "Société de géographie",
+                "year": 1900,
+                "url": "https://archive.org/details/compterendudess02fragoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 14",
+                "notes": "Paris, lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1924,
+              "label": "1920-1924"
+            },
+            "statement": "Le nom « Dioula anthropophages » n'est plus qu'un ancien nom en 1920 : la revue Renseignements coloniaux parle des « Dan ou Mêbé, autrefois appelés Dioula anthropophages », et Les langues du monde le donne en 1924 comme un autre nom de la langue dan.",
+            "sources": [
+              {
+                "title": "Renseignements coloniaux et documents, 1920, compte rendu d'un livre sur le Liberia",
+                "author": "Comité de l'Afrique française",
+                "year": 1920,
+                "url": "https://archive.org/details/renseignementsco00comi_7",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 123",
+                "notes": "Supplément au Bulletin du Comité de l'Afrique française, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Le compte rendu porte sur un livre de M. Maugham consacré au Liberia."
+              },
+              {
+                "title": "Les langues du monde, chapitre « Les langues du Soudan et de la Guinée »",
+                "author": "Maurice Delafosse",
+                "year": 1924,
+                "url": "https://archive.org/details/LanguesDuMondeMeilletCohen",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 547",
+                "notes": "Paris, Édouard Champion, 1924, ouvrage collectif dirigé par Antoine Meillet et Marcel Cohen. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'ouvrage renvoie au relevé de Sigismund Koelle de 1854 ; nous n'avons pas lu ce relevé nous-mêmes."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
