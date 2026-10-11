@@ -97,5 +97,84 @@
       "fieldPath": "homonyms",
       "reason": "Les répertoires communautaires font remonter Sibanda tantôt à une lignée nguni, tantôt au Sebata des BaTau sotho-tswana dont il serait l'adaptation nguni. Aucune source publiée accessible ne tranche : Bryant ne connaît pas le nom, et Lindgren, qui traite précisément de la pluralité d'origines revendiquées sous un même isibongo au Matabeleland, n'a pu être lu au-delà de son résumé. Les deux filiations sont donc laissées ouvertes plutôt qu'arbitrées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sibanda est un isibongo, un nom de clan des Ndébélé du Zimbabwe. Les sources ne s'accordent pas sur son sens ; nous les présentons plus bas. On ne sait pas avec certitude depuis quand il est écrit.",
+    "names": [
+      {
+        "nameText": "Sibanda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nde",
+        "namedBy": null,
+        "shortLine": "Un nom de clan ndébélé du Zimbabwe, rattaché à un petit carnassier ou au lion selon les sources.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sibanda est un isibongo, un nom de clan ndébélé qu'un dictionnaire dit aussi totémique, ou nom de louange. Le dictionnaire et les familles qui portent ce nom ne lui donnent pas le même sens ; nous les présentons séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Sibanda Surname Meaning — The Oxford Dictionary of Family Names in Britain and Ireland",
+                "author": "Patrick Hanks, Richard Coates et Peter McClure",
+                "year": 2016,
+                "url": "https://www.ancestry.com/last-name-meaning/sibanda?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "The Oxford Dictionary of Family Names in Britain and Ireland, Oxford University Press, 2016, notice reproduite par Ancestry et lue le 11 octobre 2026. La notice fait de Sibanda un isibongo, un nom totémique ou nom de louange, tiré du ndébélé isibanda, « tout petit animal sauvage carnivore », ou peut-être d'un mot apparenté d'une langue voisine comme le zoulou ; elle ajoute que les porteurs du nom disent généralement qu'il veut dire « lion »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Publié en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Sibanda viendrait du mot ndébélé isibanda, « tout petit animal sauvage carnivore », ou peut-être d'un mot proche d'une langue voisine comme le zoulou, selon The Oxford Dictionary of Family Names in Britain and Ireland.",
+            "hypothesisGroup": "origine du nom Sibanda",
+            "sources": [
+              {
+                "title": "Sibanda Surname Meaning — The Oxford Dictionary of Family Names in Britain and Ireland",
+                "author": "Patrick Hanks, Richard Coates et Peter McClure",
+                "year": 2016,
+                "url": "https://www.ancestry.com/last-name-meaning/sibanda?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "The Oxford Dictionary of Family Names in Britain and Ireland, Oxford University Press, 2016, notice reproduite par Ancestry et lue le 11 octobre 2026. La notice fait de Sibanda un isibongo, un nom totémique ou nom de louange, tiré du ndébélé isibanda, « tout petit animal sauvage carnivore », ou peut-être d'un mot apparenté d'une langue voisine comme le zoulou ; elle ajoute que les porteurs du nom disent généralement qu'il veut dire « lion »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Rapporté en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Sibanda voudrait dire « lion », selon ce que disent généralement les familles qui le portent, d'après The Oxford Dictionary of Family Names in Britain and Ireland.",
+            "hypothesisGroup": "origine du nom Sibanda",
+            "sources": [
+              {
+                "title": "Sibanda Surname Meaning — The Oxford Dictionary of Family Names in Britain and Ireland",
+                "author": "Patrick Hanks, Richard Coates et Peter McClure",
+                "year": 2016,
+                "url": "https://www.ancestry.com/last-name-meaning/sibanda?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "The Oxford Dictionary of Family Names in Britain and Ireland, Oxford University Press, 2016, notice reproduite par Ancestry et lue le 11 octobre 2026. La notice fait de Sibanda un isibongo, un nom totémique ou nom de louange, tiré du ndébélé isibanda, « tout petit animal sauvage carnivore », ou peut-être d'un mot apparenté d'une langue voisine comme le zoulou ; elle ajoute que les porteurs du nom disent généralement qu'il veut dire « lion »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

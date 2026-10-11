@@ -93,5 +93,68 @@
       "fieldPath": "homonyms",
       "reason": "les résultats exacts « Trovoada », RTP Arquivos, Ciberdúvidas et les catalogues bibliographiques sur São Tomé-et-Príncipe n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Trovoada est un nom de famille de São Tomé-et-Príncipe. On ne sait pas avec certitude d'où il vient : aucune source que nous avons lue n'en donne l'origine.",
+    "names": [
+      {
+        "nameText": "Trovoada",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille de São Tomé-et-Príncipe ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit dès 1975 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Rapporté en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Trovoada est celui d'une famille qu'un de ses membres, interrogé en 2014, dit « très ancienne et connue » à São Tomé, selon un entretien publié par Plataforma Media. L'entretien ne dit rien de l'origine du nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Na primeira pessoa",
+                "author": "Plataforma Media",
+                "year": 2014,
+                "url": "https://www.plataformamedia.com/2014/09/22/na-primeira-pessoa-4/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Entretien publié le 22 septembre 2014 dans la rubrique « Na primeira pessoa », lu le 11 octobre 2026. La personne interrogée, née à São Tomé en 1964, dit de son père : « O meu pai é de uma família muito antiga e conhecida de São Tomé ». L'article ne dit rien de l'origine du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "16 juin 1975"
+            },
+            "statement": "Le nom Trovoada figure dans la notice d'un entretien filmé à Lisbonne le 16 juin 1975 avec Miguel Trovoada, un dirigeant du mouvement de libération de São Tomé-et-Príncipe, selon les archives de la radiotélévision portugaise. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand des familles le portent.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Miguel Trovoada",
+                "role": "personne interrogée dans l'entretien"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Entrevista a Miguel Trovoada",
+                "author": "RTP Arquivos",
+                "year": 1975,
+                "url": "https://arquivos.rtp.pt/conteudos/entrevista-a-miguel-trovoada-4/",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Notice du fonds audiovisuel de la radiotélévision publique portugaise, lue le 11 octobre 2026. Elle date du 16 juin 1975 un entretien filmé à Lisbonne, à l'hôtel Altis, par le journaliste Adelino Gomes avec Miguel Trovoada, dirigeant du Mouvement de libération de São Tomé-et-Príncipe, en marge d'une réunion du comité de décolonisation de l'ONU."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
