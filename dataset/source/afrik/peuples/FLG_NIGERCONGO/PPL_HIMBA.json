@@ -121,5 +121,99 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Himba désigne un peuple d'éleveurs du Kaokoveld, au nord-ouest de la Namibie, et du sud de l'Angola, qui se nomme lui-même Ovahimba. On ne sait pas avec certitude d'où vient ce nom : l'explication par un mot qui voudrait dire « mendiant » circule sur des sites de voyage et de tourisme culturel, mais nous n'avons lu aucune étude qui l'appuie, et nous ne la présentons pas.",
+    "names": [
+      {
+        "nameText": "Ovahimba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "her",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne, écrit en 1951 ; son origine reste incertaine.",
+        "periodLabel": "Écrit depuis 1951 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1951,
+              "to": 1951,
+              "label": "1951"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ovahimba apparaît par écrit dans une étude sur le Kaokoveld publiée en 1951 par l'ethnologue du gouvernement sud-africain N. J. van Warmelo. Il y désigne « les gens riches », les éleveurs qui n'avaient pas perdu leur bétail, par opposition aux Ovatjimba, pauvres, qui vivaient de chasse et de cueillette. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Ovahimba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notes on the Kaokoveld (South West Africa) and its People",
+                "author": "N. J. van Warmelo",
+                "year": 1951,
+                "url": "https://www.namibiadigitalrepository.com/items/show/324",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 9-10",
+                "notes": "Union sud-africaine, ministère des Affaires indigènes, Ethnological Publications n° 26. Lu sur le Namibia Digital Repository, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1886,
+              "to": 1886,
+              "label": "1886"
+            },
+            "statement": "Le nom Ovashimba désigne alors les Herero chez les peuples ovambo, selon le dictionnaire otjiherero du missionnaire Peter Heinrich Brincker. Dans ce dictionnaire, un Herero qui a perdu son bétail et vit de la cueillette devient un omutjimba, à peu près un « pauvre diable ».",
+            "before": true,
+            "sources": [
+              {
+                "title": "Wörterbuch und kurzgefasste Grammatik des Otji-hérero",
+                "author": "Peter Heinrich Brincker",
+                "year": 1886,
+                "url": "https://archive.org/details/wrterbuchundkur00btgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 156-157",
+                "notes": "Leipzig, T. O. Weigel. Lu sur Internet Archive, lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Himba",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "her",
+        "namedBy": null,
+        "shortLine": "La forme courte du nom Ovahimba, sans le préfixe ova-.",
+        "periodLabel": "Écrit depuis 1951 ; en usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1951,
+              "to": 1951,
+              "label": "1951"
+            },
+            "era": "colonial",
+            "statement": "Le nom Himba est la forme sans préfixe qu'emploie N. J. van Warmelo en 1951, quand il range les Tjimba, les Himba et les Herero parmi les éleveurs de langue bantoue du Kaokoveld.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Notes on the Kaokoveld (South West Africa) and its People",
+                "author": "N. J. van Warmelo",
+                "year": 1951,
+                "url": "https://www.namibiadigitalrepository.com/items/show/324",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 9",
+                "notes": "Union sud-africaine, ministère des Affaires indigènes, Ethnological Publications n° 26. Lu sur le Namibia Digital Repository, lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

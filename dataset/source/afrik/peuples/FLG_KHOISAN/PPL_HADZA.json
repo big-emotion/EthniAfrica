@@ -117,5 +117,205 @@
         "notes": "Lu le 7 octobre 2026. « …other ethnonyms applied to the Hadza include Tindiga (from Swahili; human plural Watindiga), Kindiga, Kangeju (with a German j) and Wahi (with a German w). In current English usage, Hadza is the most commonly used term. » La phrase renvoie à Marlowe (2010). Même section : « The term \"Hadza\" is the feminine plural form of haza 'human being'. The Hadza call themselves the hazabee 'people' and their language hazane 'as the people'. » (la page de langue écrit : « Hadza itself means \"human being.\" »). Les Datooga et les Isanzu n'apparaissent pas dans cette section."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Hadza désigne un peuple de chasseurs-cueilleurs des environs du lac Eyasi, au nord de la Tanzanie, qui se nomme lui-même Hadzabe. D'autres noms lui ont été donnés par ses voisins et par des auteurs européens : Tindiga, Kindiga ou Wanege. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Hadzabe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "hts",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne, écrit Hadzapi en 1931.",
+        "periodLabel": "Écrit sous une forme proche depuis 1931 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2010,
+              "to": 2010,
+              "label": "2010"
+            },
+            "era": "modern",
+            "statement": "Le nom Hadzabe est celui que ce peuple se donne, et Hadzane celui de sa langue, selon l'anthropologue Frank Marlowe. Il emploie lui-même la racine Hadza, la forme la plus courante dans les publications depuis les premières études de James Woodburn, en 1958.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Hadza : Hunter-Gatherers of Tanzania",
+                "author": "Frank W. Marlowe",
+                "year": 2010,
+                "url": "https://books.google.com/books/about/The_Hadza.html?id=8p-AG8cqCJwC",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "University of California Press. Passages lus dans l'aperçu en ligne de Google Books ; le numéro de page imprimé n'est pas connu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1931,
+              "label": "1930 (article publié en 1931)"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hadzabe apparaît par écrit sous une forme proche, « Hadzapi », dans le titre d'un article de la linguiste Dorothea Bleek, paru en 1931 après un séjour chez ce peuple en 1930, selon la notice des archives Bleek et Lloyd de l'université du Cap. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà bien avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Hadzapi or Watindega of Tanganyika territory, notice des archives numériques Bleek et Lloyd",
+                "author": "Université du Cap",
+                "year": null,
+                "url": "https://bal2.cs.uct.ac.za/metadata/reports/df-bleek-items/330/index.html",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Notice d'un manuscrit de Dorothea Bleek, lu le 11 octobre 2026. Elle date l'article de juillet 1931, dans la revue Africa, vol. 4, n° 3, p. 273-286, et le séjour chez les Hadza de mai à juillet 1930. Nous n'avons pas lu l'article lui-même."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tindiga",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Nyamwezi, selon Oscar Baumann",
+        "shortLine": "Un nom donné par des voisins, écrit Watindiga en 1894.",
+        "periodLabel": "Écrit depuis 1894 ; ancien",
+        "accounts": [
+          {
+            "period": {
+              "from": 1930,
+              "to": 1931,
+              "label": "1930 (article publié en 1931)"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tindiga figure encore, sous la forme « Watindega », dans le titre de l'article de Dorothea Bleek, à côté du nom Hadzapi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Hadzapi or Watindega of Tanganyika territory, notice des archives numériques Bleek et Lloyd",
+                "author": "Université du Cap",
+                "year": null,
+                "url": "https://bal2.cs.uct.ac.za/metadata/reports/df-bleek-items/330/index.html",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Notice d'un manuscrit de Dorothea Bleek, lu le 11 octobre 2026. Elle date l'article de juillet 1931, dans la revue Africa, vol. 4, n° 3, p. 273-286, et le séjour chez les Hadza de mai à juillet 1930. Nous n'avons pas lu l'article lui-même."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1891,
+              "to": 1894,
+              "label": "1891-1893 (récit publié en 1894)"
+            },
+            "era": "polity",
+            "statement": "Le nom Tindiga apparaît par écrit, sous la forme « Watindiga », dans le récit de l'explorateur Oscar Baumann : il écrit que les Nyamwezi nomment ainsi un peuple de chasseurs qu'il appelle Wanege, et que les Maasai le rangent parmi les Dorobo. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Watindiga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Durch Massailand zur Nilquelle : Reisen und Forschungen der Massai-Expedition des deutschen Antisklaverei-Komite in den Jahren 1891-1893",
+                "author": "Oscar Baumann",
+                "year": 1894,
+                "url": "https://www.gutenberg.org/ebooks/68057",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 191 et 193",
+                "notes": "Berlin, Dietrich Reimer ; lu le 11 octobre 2026 dans l'édition du Projet Gutenberg, qui garde la pagination de l'original."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2010,
+              "to": 2010,
+              "label": "Proposée en 2010"
+            },
+            "era": "modern",
+            "statement": "Le nom Tindiga viendrait du swahili tindiga, « marais » : d'autres peuples auraient appelé les Hadza Watindiga parce que l'eau qui serpente dans leur région y forme un marais, selon Frank Marlowe.",
+            "hypothesisGroup": "origine du nom Tindiga",
+            "sources": [
+              {
+                "title": "The Hadza : Hunter-Gatherers of Tanzania",
+                "author": "Frank W. Marlowe",
+                "year": 2010,
+                "url": "https://books.google.com/books/about/The_Hadza.html?id=8p-AG8cqCJwC",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "University of California Press. Passages lus dans l'aperçu en ligne de Google Books ; le numéro de page imprimé n'est pas connu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kindiga",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un ancien nom, écrit Wakindiga en 1912.",
+        "periodLabel": "Écrit depuis 1912 ; ancien",
+        "accounts": [
+          {
+            "period": {
+              "from": 1911,
+              "to": 1912,
+              "label": "1911 (rapport publié en 1912)"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kindiga apparaît, sous la forme « Wakindiga », dans le titre du rapport du géographe Erich Obst sur son voyage de Mkalama au pays de ce peuple, en Afrique orientale allemande, publié à Hambourg en 1912, selon le catalogue Glottolog. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Glottolog, référence « Obst, Erich 1912 »",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/reference/id/74308",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice bibliographique de E. Obst, « Die Sprache der Wakindiga », dans Von Mkalama ins Land der Wakindiga (Deutsch-Ostafrika), Hambourg, L. Friederichsen, 1912, p. 29-45. Lu le 11 octobre 2026. Nous n'avons pas lu le rapport lui-même."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wanege",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom qu'emploie l'explorateur Oscar Baumann en 1894.",
+        "periodLabel": "Écrit en 1894",
+        "accounts": [
+          {
+            "period": {
+              "from": 1891,
+              "to": 1894,
+              "label": "1891-1893 (récit publié en 1894)"
+            },
+            "era": "polity",
+            "statement": "Le nom Wanege est celui qu'Oscar Baumann donne à un peuple de chasseurs des steppes entre l'Iraqw et le pays sukuma, proche des Sandawe par la langue. Selon la tradition des Mbugwe qu'il rapporte, ce peuple occupait avant eux le sud du lac Manyara. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Wanege",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Durch Massailand zur Nilquelle : Reisen und Forschungen der Massai-Expedition des deutschen Antisklaverei-Komite in den Jahren 1891-1893",
+                "author": "Oscar Baumann",
+                "year": 1894,
+                "url": "https://www.gutenberg.org/ebooks/68057",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 191",
+                "notes": "Berlin, Dietrich Reimer ; lu le 11 octobre 2026 dans l'édition du Projet Gutenberg, qui garde la pagination de l'original."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

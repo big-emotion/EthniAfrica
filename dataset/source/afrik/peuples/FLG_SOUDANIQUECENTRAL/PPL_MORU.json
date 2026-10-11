@@ -129,5 +129,99 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Moru désigne un peuple de l'Équatoria occidental, au Soudan du Sud, autour de Mundri, qui se nomme lui-même Moru. Au XIXe siècle, des voisins l'appelaient aussi Madi, un nom qu'il rejetait. On ne sait pas avec certitude d'où vient le nom Moru : l'explication qui circule ne s'appuie sur aucune source que nous ayons pu lire, et nous ne la présentons pas.",
+    "names": [
+      {
+        "nameText": "Moru",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mgd",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne, écrit en 1881 ; son origine n'est pas connue.",
+        "periodLabel": "Écrit depuis 1881 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Moru est écrit « Moro » par les anthropologues Charles et Brenda Seligman, qui distinguent les Moro Endri, les Moro Mesa et les Moro Kedem, parlant tous une langue proche de celle des Madi.",
+            "aspect": "usage",
+            "formAsWritten": "Moro",
+            "sources": [
+              {
+                "title": "Pagan Tribes of the Nilotic Sudan",
+                "author": "C. G. Seligman et Brenda Z. Seligman",
+                "year": 1932,
+                "url": "https://archive.org/details/in.ernet.dli.2015.57118",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 463",
+                "notes": "Londres, George Routledge. Lu sur Internet Archive, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1888,
+              "label": "1881 (journal publié en 1888)"
+            },
+            "era": "colonial",
+            "statement": "Le nom Moru apparaît par écrit dans le journal d'Emin Pacha, gouverneur égyptien de l'Équatoria : en 1881, il traverse le pays moru, qui comprend selon lui le Moru-Kodo, au nord, et le Moru-Missa, au sud, chacun avec son dialecte. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Moru-Kodo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Emin Pasha in Central Africa : being a Collection of his Letters and Journals",
+                "author": "Emin Pacha",
+                "year": 1888,
+                "url": "https://archive.org/details/eminpashaincentr00emin",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 308 et 313",
+                "notes": "Édité par G. Schweinfurth et d'autres, Londres, George Philip. Lu sur Internet Archive, lu le 11 octobre 2026. Le journal de ce voyage d'inspection commence le 15 septembre 1881."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Madi",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des peuples voisins, selon Emin Pacha",
+        "shortLine": "Un nom donné par des voisins au XIXe siècle et rejeté par les Moru.",
+        "periodLabel": "Employé au XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1882,
+              "label": "1881-1882 (journal publié en 1888)"
+            },
+            "era": "colonial",
+            "statement": "Le nom Madi est donné aux Moru par les Mittu, à tort selon Emin Pacha, et par les Lori. Il ajoute que les Moru rejettent ce nom, et que la forme Moru-Madi des cartes de son temps répète deux fois le même peuple.",
+            "sources": [
+              {
+                "title": "Emin Pasha in Central Africa : being a Collection of his Letters and Journals",
+                "author": "Emin Pacha",
+                "year": 1888,
+                "url": "https://archive.org/details/eminpashaincentr00emin",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 308 et 354",
+                "notes": "Édité par G. Schweinfurth et d'autres, Londres, George Philip. Lu sur Internet Archive, lu le 11 octobre 2026. Le journal de ce voyage d'inspection commence le 15 septembre 1881."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

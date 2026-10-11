@@ -136,5 +136,238 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kgalagadi désigne un peuple de langue bantoue du Kalahari, surtout au Botswana, mais aussi en Namibie et en Afrique du Sud, qui se nomme lui-même Bakgalagadi. D'autres noms ont circulé, comme Bakalahari chez les voyageurs européens ou Vaalpens chez les colons de langue néerlandaise. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Bakgalagadi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tsn",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne : « les gens du Kalahari » en setswana.",
+        "periodLabel": "Écrit sous une forme proche depuis 1822 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Bakgalagadi veut dire « les gens du Kgalagadi », c'est-à-dire du désert du Kalahari, en setswana, selon le Dictionary of South African English. Le préfixe ba- y marque le pluriel des personnes.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Kgalagadi »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/kgalagadi/e03759",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Rubrique d'étymologie de l'entrée. Entrée lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1970,
+              "to": 1970,
+              "label": "1970"
+            },
+            "era": "modern",
+            "statement": "Le nom Kgalagadi désigne, dans une encyclopédie sud-africaine de 1970, les descendants des premiers groupes sotho venus dans la région. Autrefois souvent serviteurs de maîtres tswana, ils restent alors considérés comme inférieurs aux Tswana, selon cette encyclopédie citée par le Dictionary of South African English.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Kgalagadi »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/kgalagadi/e03759",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de la Standard Encyclopaedia of Southern Africa, vol. II, 1970, p. 222. Entrée lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1835,
+              "to": 1835,
+              "label": "1835"
+            },
+            "era": "polity",
+            "statement": "Le nom Bakgalagadi est écrit « Bakalahari » dans le journal du médecin et naturaliste Andrew Smith en 1835 : il y désigne des Bechuana qui vivent dans le Kalahari, selon le Dictionary of South African English.",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Kgalagadi »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/kgalagadi/e03759",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de A. Smith, Diary, publié en 1940, vol. II, p. 188. Entrée lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1820,
+              "to": 1822,
+              "label": "1820 (récit publié en 1822)"
+            },
+            "era": "polity",
+            "statement": "Le nom Bakgalagadi apparaît par écrit sous une forme proche, « Kalliharry », dans le récit du missionnaire John Campbell : Maqueetze, un chef de Lattakoo, lui parle d'un peuple ainsi nommé, avec qui les gens de Lattakoo échangent depuis longtemps des peaux de chat sauvage. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà bien avant lui.",
+            "formAsWritten": "Kalliharry",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Maqueetze",
+                "role": "chef de Lattakoo, qui renseigne le missionnaire"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels in South Africa, undertaken at the request of the London Missionary Society : being a narrative of a second journey in the interior of that country, vol. 2",
+                "author": "John Campbell",
+                "year": 1822,
+                "url": "https://archive.org/details/travelsinsouthaf21822camp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 116",
+                "notes": "Londres, Francis Westley. Lu sur Internet Archive, lu le 11 octobre 2026. Le passage rapporte ce que dit Maqueetze, un chef de Lattakoo, pendant le voyage de 1820."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bakalahari",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "tsn",
+        "namedBy": null,
+        "shortLine": "Ancienne orthographe européenne du nom Bakgalagadi.",
+        "periodLabel": "Employé au XIXe siècle",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Bakalahari est l'orthographe qu'emploie le missionnaire David Livingstone en 1857. Il présente ces gens comme la plus ancienne des tribus bechuana, chassée dans le désert par une nouvelle migration de leur propre peuple, alors que les San, eux, y vivent par choix.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 49",
+                "notes": "Londres, John Murray. Lu sur Internet Archive, lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Vaalpens",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "afr",
+        "namedBy": "Des colons de langue néerlandaise, selon les auteurs cités",
+        "shortLine": "Un surnom méprisant donné par des colons néerlandophones, écrit dès 1871.",
+        "periodLabel": "Écrit depuis 1871 ; ancien",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "statement": "Le nom Vaalpens est encore donné aux Bakgalagadi par les Néerlandais, tandis que les Bechuana les appellent Balala, « vassaux », selon l'écrivain Silas Modiri Molema, cité par le Dictionary of South African English.",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Vaalpens »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/vaalpens/e07560",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de S. M. Molema, The Bantu Past and Present, 1920, p. 36. Entrée lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1871,
+              "to": 1871,
+              "label": "1871"
+            },
+            "era": "polity",
+            "statement": "Le nom Vaalpens apparaît par écrit, sous la forme « Vaalpensen », chez le missionnaire John Mackenzie, qui le donne comme le mot néerlandais pour Bakalahari, employé parfois par mépris, selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Vaalpens »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/vaalpens/e07560",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de J. Mackenzie, Ten Years North of the Orange River, 1871, p. 53. Entrée lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1897,
+              "label": "Proposée en 1897"
+            },
+            "era": "colonial",
+            "statement": "Le nom Vaalpens, « ventres gris », viendrait des taches claires laissées sur le ventre par les braises des feux sous lesquels ces gens dormaient, selon les voyageurs Schulz et Hammar, cités par le Dictionary of South African English. Les Boers l'auraient donné par moquerie aux peuples vivant à l'ouest du Transvaal.",
+            "hypothesisGroup": "origine du nom Vaalpens",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Vaalpens »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/vaalpens/e07560",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de A. Schulz et A. Hammar, The New Africa, 1897, p. 71. Entrée lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "Proposée en 1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Vaalpens, « ventres poussiéreux », viendrait de la couleur de peau que donnerait l'habitude de ramper au sol pour approcher le gibier, selon un ouvrage de 1905 sur les peuples du Transvaal, cité par le Dictionary of South African English. Cet ouvrage l'applique à quelques familles de San du Waterberg, pas aux Bakgalagadi.",
+            "hypothesisGroup": "origine du nom Vaalpens",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Vaalpens »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/vaalpens/e07560",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de The Native Tribes of the Transvaal, 1905, p. 70. Entrée lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

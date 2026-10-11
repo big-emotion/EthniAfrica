@@ -132,5 +132,400 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Khoisan Creole regroupe ici plusieurs peuples nés, au Cap et au-delà, de la rencontre entre des Khoekhoe, des colons européens et d'autres habitants de la colonie : les Griqua d'Afrique du Sud, les Basters de Rehoboth en Namibie et les anciens Oorlam. Chacun se nomme lui-même par son propre nom, Griqua ou Baster. Nous n'avons pas trouvé de source sur l'origine du regroupement Khoisan Creole. Les sources ne s'accordent pas toujours sur l'origine des autres noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Griqua",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom choisi en 1813 par les habitants de Klaarwater ; son origine reste discutée.",
+        "periodLabel": "Écrit depuis 1815 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Griqua désigne, pour le missionnaire David Livingstone, tout groupe métis né d'Africains et d'Européens ; ceux qu'il rencontre sont d'ascendance néerlandaise, khoekhoe et san, selon le Dictionary of South African English.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Griqua »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/griqua/e02809",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de D. Livingstone, Missionary Travels, 1857, p. 104. Entrée lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1813,
+              "to": 1815,
+              "label": "6 août 1813 (récit publié en 1815)"
+            },
+            "era": "polity",
+            "statement": "Le nom Griqua apparaît par écrit, sous la forme « Griquaas », dans le récit du missionnaire John Campbell : à Klaarwater, au nord du fleuve Orange, les habitants jusque-là appelés « Bastards » décident de prendre ce nom, après que le missionnaire leur a dit que le mot choquait. C'est la plus ancienne trace de ce nom pour ce peuple que le projet connaît. Les familles qui le prennent vivaient déjà là avant lui.",
+            "formAsWritten": "Griquaas",
+            "birth": true,
+            "actors": [
+              {
+                "name": "John Campbell",
+                "role": "missionnaire de la London Missionary Society, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels in South Africa : undertaken at the request of the Missionary Society",
+                "author": "John Campbell",
+                "year": 1815,
+                "url": "https://archive.org/details/travelsinsouthaf00camp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 349",
+                "notes": "Londres, Black and Parry. Lu sur Internet Archive, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1693,
+              "to": 1693,
+              "label": "1693"
+            },
+            "statement": "Le nom Grigriqua figure dans un registre de la colonie du Cap daté du 20 juillet 1693, parmi d'autres peuples khoekhoe, selon le Dictionary of South African English. Ce peuple vivait au nord de l'établissement du Cap ; plusieurs auteurs y voient les ancêtres des Griqua, mais les sources ne disent pas avec certitude s'il s'agit du même groupe.",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Grigriqua »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/grigriqua/e02805",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation des Abstracts in Statute Law of the Cape of Good Hope, 1862, p. xviii. Entrée lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1813,
+              "to": 1815,
+              "label": "Rapportée en 1815"
+            },
+            "era": "polity",
+            "statement": "Le nom Griqua viendrait d'un ancêtre nommé Griqua, dont descendrait la majorité des habitants de Klaarwater, selon ce qu'ils disent eux-mêmes au missionnaire John Campbell en 1813.",
+            "hypothesisGroup": "origine du nom Griqua",
+            "sources": [
+              {
+                "title": "Travels in South Africa : undertaken at the request of the Missionary Society",
+                "author": "John Campbell",
+                "year": 1815,
+                "url": "https://archive.org/details/travelsinsouthaf00camp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 349",
+                "notes": "Londres, Black and Parry. Lu sur Internet Archive, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1846,
+              "to": 1928,
+              "label": "Proposée en 1846, reprise en 1905 et 1928"
+            },
+            "statement": "Le nom Griqua viendrait de Chariguriqua, ou Grigriqua, un peuple khoekhoe du XVIIe siècle établi au nord du Cap, selon le missionnaire Thomas Arbousset en 1846, puis George Stow en 1905. Le missionnaire Heinrich Vedder ajoute en 1928 que ce nom viendrait du nama ≠Karihuriqua, « la petite tribu qui vit au bord de la mer ». Ces auteurs sont cités par le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Griqua",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Chariguriqua »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/chariguriqua/e01584",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citations de T. Arbousset, trad. J. C. Brown, 1846, p. 21, et de G. W. Stow, The Native Races of South Africa, 1905, p. 316. Entrée lu le 11 octobre 2026."
+              },
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Griqua »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/griqua/e02809",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de H. Vedder, dans The Native Tribes of South West Africa, 1928, p. 114. Entrée lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "Proposée en 1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Griqua viendrait du nom de clan de leur chef, Xiri, selon l'historien William F. Lye, cité par le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Griqua",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Griqua »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/griqua/e02809",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de W. F. Lye, Andrew Smith's Journal 1834-6, 1975, p. 311. Entrée lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Griqua viendrait peut-être d'une expression khoekhoe, !ke //kwa, « les gens », selon le Dictionary of South African English, qui présente cette explication à côté des autres.",
+            "hypothesisGroup": "origine du nom Griqua",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Griqua »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/griqua/e02809",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Rubrique d'étymologie de l'entrée. Entrée lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Baster",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "afr",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent avec fierté les habitants de Rehoboth, en Namibie.",
+        "periodLabel": "Écrit depuis 1790 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1952,
+              "to": 1952,
+              "label": "1952"
+            },
+            "era": "colonial",
+            "statement": "Le nom Baster est celui que se donnent, non sans fierté, les habitants de la « république » de Rehoboth, dans le Sud-Ouest africain, selon l'écrivain Lawrence Green, cité par le Dictionary of South African English. En afrikaans, le mot veut dire « métis ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Baster »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/baster/e00615",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de L. G. Green, Lords of the Last Frontier, 1952, p. 202. Entrée lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1870,
+              "to": 1870,
+              "label": "1870"
+            },
+            "era": "polity",
+            "statement": "Le nom Baster désigne les descendants de colons néerlandais du Cap qui s'installent à Rehoboth en 1870 sous leur chef, Hermanus van Wyk, selon Cubitt et Richter, cités par le Dictionary of South African English.",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Baster »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/baster/e00615",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de G. Cubitt et J. Richter, South West, 1976, p. 9. Entrée lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Baster vient du néerlandais du Cap, où il veut dire « métis », lui-même tiré du néerlandais bastaard, selon le Dictionary of South African English.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Baster »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/baster/e00615",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Rubrique d'étymologie de l'entrée. Entrée lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1790,
+              "to": 1790,
+              "label": "1790"
+            },
+            "statement": "Le nom Baster apparaît par écrit dans la traduction anglaise du récit de voyage de François Le Vaillant, parue en 1790, selon le Dictionary of South African English. C'est la plus ancienne trace de cette forme que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Baster »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/baster/e00615",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de la traduction du récit de F. Le Vaillant, 1790, vol. II, p. 344. Entrée lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bastaard",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "nld",
+        "namedBy": null,
+        "shortLine": "Un nom néerlandais, « bâtard », abandonné en 1813 pour Griqua.",
+        "periodLabel": "Écrit depuis 1786 ; ancien",
+        "accounts": [
+          {
+            "period": {
+              "from": 1813,
+              "to": 1815,
+              "label": "Jusqu'en 1813 (récit publié en 1815)"
+            },
+            "era": "polity",
+            "statement": "Le nom Bastaard est celui sous lequel les habitants métis de Klaarwater sont connus jusqu'en 1813, selon le missionnaire John Campbell, qui écrit « Bastards ». Ils l'abandonnent alors pour le nom Griqua.",
+            "sources": [
+              {
+                "title": "Travels in South Africa : undertaken at the request of the Missionary Society",
+                "author": "John Campbell",
+                "year": 1815,
+                "url": "https://archive.org/details/travelsinsouthaf00camp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 349",
+                "notes": "Londres, Black and Parry. Lu sur Internet Archive, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1786,
+              "to": 1786,
+              "label": "1786"
+            },
+            "statement": "Le nom Bastaard apparaît par écrit, sous la forme « bastards », dans la traduction anglaise du voyage du naturaliste Anders Sparrman, parue en 1786 : il y désigne un clan né d'unions entre Khoekhoe et Xhosa, selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom pour un groupe que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Bastard »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/bastard/e00612",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de la traduction par G. Forster du voyage d'A. Sparrman, 1786, vol. II, p. 27. Le dictionnaire note que ce nom était encore accepté comme un titre jusqu'à la fin du XIXe siècle. Entrée lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Oorlam",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un ancien nom des Khoekhoe de langue néerlandaise, écrit dès 1815.",
+        "periodLabel": "Écrit depuis 1815 ; ancien",
+        "accounts": [
+          {
+            "period": {
+              "from": 1813,
+              "to": 1815,
+              "label": "3 septembre 1813 (récit publié en 1815)"
+            },
+            "era": "polity",
+            "statement": "Le nom Oorlam apparaît par écrit, sous la forme « Orlams », dans le récit du missionnaire John Campbell : au kraal de Cornelius Kok, sur le fleuve Orange, il compte 215 personnes qui parlent néerlandais et qu'on appelle ainsi. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Orlams",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels in South Africa : undertaken at the request of the Missionary Society",
+                "author": "John Campbell",
+                "year": 1815,
+                "url": "https://archive.org/details/travelsinsouthaf00camp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 394",
+                "notes": "Londres, Black and Parry. Lu sur Internet Archive, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1868,
+              "to": 1868,
+              "label": "Rapportée en 1868"
+            },
+            "statement": "Le nom Oorlam viendrait du malais orang lama, « personne de longue date », c'est-à-dire quelqu'un d'expérimenté, par opposition aux nouveaux venus, selon un texte de 1868 cité par le Dictionary of South African English, qui retient cette explication.",
+            "hypothesisGroup": "origine du nom Oorlam",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « oorlam »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/oorlam/e05364",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Rubrique d'étymologie et citation de W. R. Thomson, Poems, Essays and Sketches, 1868, p. 207. Entrée lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1889,
+              "to": 1889,
+              "label": "Rapportée en 1889"
+            },
+            "statement": "Le nom Oorlam serait un surnom donné par les colons néerlandais aux Khoekhoe qui vivaient près de leurs fermes, et voudrait dire « brebis stérile », selon l'explorateur Francis Galton, cité par le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Oorlam",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « oorlam »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/oorlam/e05364",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de F. Galton, Travels in South Africa, 1889, p. 41. Entrée lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
