@@ -100,7 +100,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 3033 -> 2960 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded into
     // their keepers: their exonyms left with them, and those only they held were
     // carried over (« Calanga » to the Kalanga).
-    value: 2960,
+    // 2960 -> 2958 on 2026-10-11: PPL_KABYE gave up « Lokpa » and « Lukpa »,
+    // the names of another people with a language of its own (Glottolog lukp1238).
+    value: 2958,
     method:
       "somme de content.appellations.exonyms.length sur les fiches de peuple",
     countedOn: COUNTED_ON,

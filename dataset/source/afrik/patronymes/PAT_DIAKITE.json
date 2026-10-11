@@ -64,6 +64,15 @@
           "sourceRefs": ["bamadaba-jamuw"]
         }
       ]
+    },
+    {
+      "spelling": "Diakhité",
+      "attestations": [
+        {
+          "countryId": "MLI",
+          "sourceRefs": ["mage-1868-soudan", "binger-1892-kong"]
+        }
+      ]
     }
   ],
   "transmissionMode": "other",
@@ -278,6 +287,22 @@
       "tier": "unverified",
       "source_kind": "repository",
       "notes": "Site agrégateur de statistiques patronymiques, sans revue éditoriale indépendante vérifiable ; données de 2014, consultées dans une copie archivée de 2024. Il compte environ 488 000 porteurs dans le monde : Mali 328 417, Guinée 91 156, Côte d'Ivoire 47 544, Burkina Faso 6 815, Sénégal 5 119, Mauritanie 863, et des effectifs plus petits en Espagne (1 353), au Maroc, au Ghana, au Tchad et en France. La page ne donne aucune signification du nom. Cité pour la répartition seulement ; les effectifs hors d'Afrique ne sont pas repris dans les attestations."
+    },
+    {
+      "sourceKey": "mage-1868-soudan",
+      "title": "Voyage dans le Soudan occidental (Sénégambie-Niger)",
+      "url": "https://archive.org/details/voyagedansleso00mage",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Mage, Eugène, Hachette, Paris, 1868 ; récit de la mission de 1863-1866 vers Ségou, menée pour le gouverneur du Sénégal. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 354 : à Ségou, en août 1864, son cuisinier Sidy, un laptot khassonké, est « Diakhité d'origine » ; la note 1 de la page fait des Diakhité une famille de Peuls du Khasso."
+    },
+    {
+      "sourceKey": "binger-1892-kong",
+      "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+      "url": "https://www.gutenberg.org/ebooks/74720",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Binger, Louis-Gustave, Hachette, Paris, 1892, deux tomes ; réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée, lue le 11 octobre 2026. L'auteur est un officier français en mission d'exploration de 1887 à 1889. Tome 1 : des Diakhité et des Sankaré au Banimonotié, près de Bougouni (p. 63) ; Diallo, Diakhité, Sidibé et Sankaré, noms de famille du Ouassoulou et du Banimonotié (p. 133) ; les quatre noms de tribus foulbé du Ouassoulou, Sankaré, Sidibé, Diallo et Diakhité (p. 211)."
     }
   ],
   "gaps": [
@@ -303,7 +328,7 @@
     },
     {
       "fieldPath": "spellings",
-      "reason": "Nous n'avons trouvé aucune source établissant les graphies Diakhité ou Jaiteh comme variantes de ce nom ; elles ne figurent donc pas ici."
+      "reason": "Nous n'avons trouvé aucune source établissant la graphie Jaiteh comme variante de ce nom ; elle ne figure donc pas ici."
     }
   ],
   "nameHistory": {
@@ -419,6 +444,7 @@
               "to": 1959,
               "label": "Rapporté en 1959"
             },
+            "era": "colonial",
             "statement": "Le nom Diakité serait celui de familles venues du Fouta-Djalon, établies d'abord au Gouanan, au Wassoulou et dans le cercle de Bougouni, selon l'officier Molinie, cité par E. A. Bogacheva.",
             "sources": [
               {

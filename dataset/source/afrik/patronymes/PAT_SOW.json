@@ -12,22 +12,25 @@
       "spelling": "Sow",
       "attestations": [
         {
-          "countryId": "SEN",
-          "sourceRefs": [
-            "corpus-ppl-wolof-organisation",
-            "familysearch-sow-dafn"
-          ]
+          "countryId": "GIN",
+          "sourceRefs": ["slate-kelly-2011-diallo"]
         },
         {
-          "countryId": "GMB",
-          "sourceRefs": ["corpus-ppl-wolof-organisation"]
+          "countryId": "SEN",
+          "sourceRefs": ["familysearch-sow-dafn"]
         },
         {
           "countryId": "MRT",
-          "sourceRefs": [
-            "corpus-ppl-wolof-organisation",
-            "familysearch-sow-dafn"
-          ]
+          "sourceRefs": ["familysearch-sow-dafn"]
+        }
+      ]
+    },
+    {
+      "spelling": "So",
+      "attestations": [
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["arcin-1907-guinee"]
         }
       ]
     }
@@ -41,26 +44,36 @@
   },
   "peoples": [
     {
-      "peopleId": "PPL_WOLOF",
+      "peopleId": "PPL_FULA",
       "status": "attested",
-      "sourceRefs": ["corpus-ppl-wolof-organisation"]
+      "sourceRefs": [
+        "corpus-ppl-fula-organisation",
+        "arcin-1907-guinee",
+        "slate-kelly-2011-diallo",
+        "familysearch-sow-dafn"
+      ]
+    },
+    {
+      "peopleId": "PPL_HALPULAAR",
+      "status": "attested",
+      "sourceRefs": ["bamadaba-jamuw", "familysearch-sow-dafn"]
     }
   ],
   "countries": [
     {
-      "countryId": "SEN",
+      "countryId": "GIN",
       "status": "attested",
-      "sourceRefs": ["corpus-ppl-wolof-organisation"]
+      "sourceRefs": ["arcin-1907-guinee", "slate-kelly-2011-diallo"]
     },
     {
-      "countryId": "GMB",
+      "countryId": "SEN",
       "status": "attested",
-      "sourceRefs": ["corpus-ppl-wolof-organisation"]
+      "sourceRefs": ["familysearch-sow-dafn"]
     },
     {
       "countryId": "MRT",
       "status": "attested",
-      "sourceRefs": ["corpus-ppl-wolof-organisation"]
+      "sourceRefs": ["familysearch-sow-dafn"]
     }
   ],
   "alliances": [
@@ -79,12 +92,12 @@
   "homonyms": [],
   "sources": [
     {
-      "sourceKey": "corpus-ppl-wolof-organisation",
-      "title": "Fiche EthniAfrica des Wolof — organisation clanique",
+      "sourceKey": "corpus-ppl-fula-organisation",
+      "title": "EthniAfrica — fiche du peuple Fula, organisation clanique",
       "url": null,
       "tier": "unverified",
       "source_kind": "repository",
-      "notes": "Reprise du chapitre « organisation clanique » de la fiche du peuple wolof. L’association wolof et les pays Sénégal, Gambie et Mauritanie restent au niveau non vérifié tant qu’aucune source dédiée à ce nom ne les confirme."
+      "notes": "Reprise du chapitre « Organisation clanique » de la fiche du peuple Fula."
     },
     {
       "sourceKey": "familysearch-sow-dafn",
@@ -92,7 +105,23 @@
       "url": "https://www.familysearch.org/en/surname?surname=sow",
       "tier": "referenced",
       "source_kind": "repository",
-      "notes": "Notice du Dictionary of American Family Names (Patrick Hanks, 2003/2006), consultée directement sur FamilySearch. Elle atteste Sow au Sénégal et en Mauritanie, mais le rattache aux groupes fulani et tukulor, non aux Wolof ; elle ne permet donc pas de confirmer le lien avec les Wolof proposé dans cette fiche."
+      "notes": "Notice du Dictionary of American Family Names (Patrick Hanks, 2003/2006), consultée directement sur FamilySearch. Elle atteste Sow au Sénégal et en Mauritanie et le rattache aux groupes fulani et tukulor."
+    },
+    {
+      "sourceKey": "arcin-1907-guinee",
+      "title": "La Guinée française",
+      "url": "https://archive.org/details/laguinefrana00arci",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Arcin, André, Challamel, Paris, 1907. Administrateur colonial ; cité pour les formes et les classements qu'il rapporte, non pour ses théories sur les races. Lu sur le texte numérisé d'archive.org le 11 octobre 2026. Les So parmi les quatre grandes lignées des Peuls du Fouta-Djalon, avec les Ba ou Baldé, les Dialo et les N'Daédio, et l'équivalence « Péredjio — So » (p. 289)."
+    },
+    {
+      "sourceKey": "slate-kelly-2011-diallo",
+      "title": "Does Dominique Strauss-Kahn's accuser, Nafissatou Diallo, have the most common surname in Guinea?",
+      "url": "https://slate.com/news-and-politics/2011/07/does-dominique-strauss-kahn-s-accuser-nafissatou-diallo-have-the-most-common-surname-in-guinea.html",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Maura Kelly, Slate, 27 juillet 2011, lu le 11 octobre 2026. Article de presse qui s'appuie sur des spécialistes qu'il cite : presque tous les Fulbe de Guinée portent l'un de quatre noms de famille, Diallo, Barry, Balde ou Sow."
     },
     {
       "sourceKey": "bamadaba-jamuw",
@@ -100,7 +129,7 @@
       "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
       "tier": "referenced",
       "source_kind": "linguistic_reference",
-      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA) ; l'annexe des noms claniques est signalée comme telle par Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, p. 89-110. L'entrée So, orthographe voisine de Sow retenue ici, y porte un marqueur de partenaire à plaisanterie (senankun) vers Sangaré ; les liens de ce type ne sont pas systématiquement réciproques d'une entrée à l'autre, mais celui-ci est porté par l'entrée So elle-même."
+      "notes": "Annexe onomastique du Bamadaba, dictionnaire électronique bambara-français supplément du Corpus bambara de référence (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA) ; l'annexe des noms claniques est signalée comme telle par Vydrin, « Vers une lexicographie mandingue sur la base de grands corpus annotés », Mandenkan 63, 2020, p. 89-110. L'entrée So, orthographe voisine de Sow retenue ici, y porte un marqueur de partenaire à plaisanterie (senankun) vers Sangaré ; les liens de ce type ne sont pas systématiquement réciproques d'une entrée à l'autre, mais celui-ci est porté par l'entrée So elle-même. La même entrée range So chez les Toucouleurs (« tou »)."
     },
     {
       "sourceKey": "canut-2002-senankuya",
@@ -122,19 +151,19 @@
   "gaps": [
     {
       "fieldPath": "origin",
-      "reason": "La notice FamilySearch/Dictionary of American Family Names et la référence bibliographique de M'Bodj, Becker et Martin, « Notes sur les patronymes wolof » (1980), ont été recherchées pour une origine wolof de Sow. La première rattache plutôt le nom aux Fulani et Toucouleurs, tandis que le texte intégral de la seconde n'a pas été retrouvé ; aucune origine propre à l'association wolof de cette fiche n'est donc affirmée."
+      "reason": "Aucune source lue ne dit d'où vient le nom Sow : André Arcin le rapproche des Soso sans aller plus loin, et la notice du Dictionary of American Family Names le rattache aux Fulani et aux Toucouleurs sans lui donner de sens. L'origine du nom n'est donc pas affirmée."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "La notice FamilySearch et la référence bibliographique de M'Bodj, Becker et Martin ont été recherchées pour une fonction sociale ou un métier héréditaire propre au Sow wolof ; aucune fonction vérifiable n'a été trouvée."
+      "reason": "Les sources lues ne donnent au nom Sow ni fonction sociale ni métier héréditaire ; le dictionnaire des noms de clan note seulement que des griots attachés à des marabouts soninké le portent aussi."
     },
     {
       "fieldPath": "bearers",
-      "reason": "La notice FamilySearch a été recherchée pour un porteur décédé dont l'identification au lignage wolof serait documentée ; elle ne fournit aucun porteur individuel répondant à ces critères."
+      "reason": "Aucune source lue ne nomme un porteur décédé du nom dont l'appartenance au clan soit documentée."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "La notice FamilySearch rattache Sow aux Fulani et Toucouleurs, tandis que la source interne conserve une association wolof non vérifiée. Cette divergence a été recherchée comme homonymie possible, mais aucune source dédiée n'établit deux étymologies distinctes."
+      "reason": "La fiche du peuple wolof cite Sow parmi les noms de famille wolof, sans source propre. Aucune source lue n'établit un nom Sow distinct de celui des Peuls et des Toucouleurs ; aucun homonyme n'est donc retenu."
     }
   ],
   "nameHistory": {

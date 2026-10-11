@@ -48,13 +48,7 @@
       }
     ]
   },
-  "peoples": [
-    {
-      "peopleId": "PPL_KONGO",
-      "status": "supposed",
-      "sourceRefs": ["ne-bitumba-mvila-2004"]
-    }
-  ],
+  "peoples": [],
   "countries": [
     {
       "countryId": "COD",
@@ -134,7 +128,7 @@
   "gaps": [
     {
       "fieldPath": "peoples",
-      "reason": "Un seul document trouvé range ce nom parmi les lignages du peuple kongo, et aucune autre source ne confirme ce rattachement de façon indépendante. Le lien avec ce peuple est donc à prendre comme une piste plutôt que comme un fait établi."
+      "reason": "Une seule liste range ce nom parmi les lignages du peuple kongo, et nous ne l'avons lue qu'à travers l'encyclopédie en ligne Wikipédia ; aucune autre source ne confirme ce rattachement. Aucun peuple n'est donc rattaché à ce nom tant qu'une source lue directement ne le confirme pas."
     },
     {
       "fieldPath": "transmissionMode",
@@ -162,7 +156,7 @@
     }
   ],
   "nameHistory": {
-    "summary": "Le nom Nkala est porté en République démocratique du Congo, où il est présenté comme un nom de lignage kongo. C'est aussi un mot du kikongo, qui a plusieurs sens. On ne sait pas avec certitude d'où vient le nom, ni quel lien il a avec ce mot.",
+    "summary": "Le nom Nkala est porté en République démocratique du Congo. Une liste de lignages kongo le cite, mais aucune autre source ne le confirme. C'est aussi un mot du kikongo, qui a plusieurs sens. On ne sait pas avec certitude d'où vient le nom, ni quel lien il a avec ce mot.",
     "names": [
       {
         "nameText": "Nkala",
