@@ -103,5 +103,129 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ogbia désigne un peuple du delta du Niger, dans l'État de Bayelsa, au Nigeria, qui se nomme lui-même Ogbia. Les traditions de plusieurs villages rattachent ce nom à un ancêtre fondateur. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Ogbia",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple du delta du Niger ; des traditions le rattachent à un ancêtre.",
+        "periodLabel": "Écrit depuis 1952 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ogbia désigne un peuple de l'arrière-pays de Nembe et sa langue, qui se divise en plusieurs groupes : Oloibiri, Anyama, Kolo, Kugbo et Abureni, selon Ebiegberi Joe Alagoa. Il désigne aussi une zone de gouvernement local de l'État de Bayelsa. Son origine est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Land and People of Bayelsa State: Central Niger Delta, ch. 6 : Traditions of Origin",
+                "author": "Ebiegberi Joe Alagoa",
+                "year": 1999,
+                "url": "https://nigeriareposit.nln.gov.ng/handle/20.500.14186/1065",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 74 et p. 88",
+                "notes": "Port Harcourt, Onyoma Research Publications, 1999, ouvrage dirigé par l'auteur ; lu dans le dépôt numérique de la Bibliothèque nationale du Nigeria le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1965,
+              "to": 1967,
+              "label": "1965-1967"
+            },
+            "era": "modern",
+            "statement": "Le nom Ogbia est au cœur d'un mouvement qui gagne l'ouest du pays ogbia dans les années 1960 : les habitants veulent remplacer les noms de villages donnés en langue nembe par les anciens noms ogbia, sur les cartes comme dans l'usage, selon le linguiste Hans Wolff.",
+            "sources": [
+              {
+                "title": "Language, Ethnic Identity and Social Change in Southern Nigeria",
+                "author": "Hans Wolff",
+                "year": 1967,
+                "url": "https://archive.org/details/ERIC_ED012924",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21 et p. 24",
+                "notes": "Anthropological Linguistics, vol. 9, n° 1, janvier 1967, p. 18-25 ; lu dans la reproduction de l'ERIC numérisée sur archive.org le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1952,
+              "to": 1952,
+              "label": "1952"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ogbia figure dans l'inventaire des langues d'Afrique de l'Ouest de Diedrich Westermann et M. A. Bryan, publié en 1952, qui le rangent parmi les dialectes ijo, selon Hans Wolff. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Language, Ethnic Identity and Social Change in Southern Nigeria",
+                "author": "Hans Wolff",
+                "year": 1967,
+                "url": "https://archive.org/details/ERIC_ED012924",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "Anthropological Linguistics, vol. 9, n° 1, janvier 1967, p. 18-25 ; lu dans la reproduction de l'ERIC numérisée sur archive.org le 11 octobre 2026. L'auteur cite D. Westermann et M. A. Bryan, Languages of West Africa, 1952 ; nous n'avons pas lu ce livre nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "Rapportée en 1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Ogbia viendrait de celui d'Ogbia, l'ancêtre fondateur du groupe, venu du Bénin par Iselema, près de Warri, puis par Nembe, jusqu'à Oloibiri, selon les traditions recueillies à Oloibiri que rapporte Ebiegberi Joe Alagoa.",
+            "hypothesisGroup": "origine du nom Ogbia",
+            "sources": [
+              {
+                "title": "The Land and People of Bayelsa State: Central Niger Delta, ch. 6 : Traditions of Origin",
+                "author": "Ebiegberi Joe Alagoa",
+                "year": 1999,
+                "url": "https://nigeriareposit.nln.gov.ng/handle/20.500.14186/1065",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 88",
+                "notes": "Port Harcourt, Onyoma Research Publications, 1999, ouvrage dirigé par l'auteur ; lu dans le dépôt numérique de la Bibliothèque nationale du Nigeria le 11 octobre 2026. L'auteur ne nomme pas les personnes qui portent ces traditions."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "Rapportée en 1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Ogbia est aussi celui du père d'Okoroma dans les traditions recueillies à Ologoama : venu du Bénin avec son fils, il aurait atteint Ogbia n'Otokolo, l'île d'Ogbia, sur la Brass River, selon Ebiegberi Joe Alagoa.",
+            "sources": [
+              {
+                "title": "The Land and People of Bayelsa State: Central Niger Delta, ch. 6 : Traditions of Origin",
+                "author": "Ebiegberi Joe Alagoa",
+                "year": 1999,
+                "url": "https://nigeriareposit.nln.gov.ng/handle/20.500.14186/1065",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 90",
+                "notes": "Port Harcourt, Onyoma Research Publications, 1999, ouvrage dirigé par l'auteur ; lu dans le dépôt numérique de la Bibliothèque nationale du Nigeria le 11 octobre 2026. L'auteur ne nomme pas les personnes qui portent ces traditions."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

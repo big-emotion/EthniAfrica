@@ -137,5 +137,71 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Punu désigne un peuple bantou du sud du Gabon et du sud-ouest de la République du Congo, qui se nomme lui-même Bapunu. Il apparaît par écrit en 1865, sous la forme Apono. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Punu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit en 1865 sous la forme Apono ; son origine reste inconnue.",
+        "periodLabel": "Écrit depuis 1865 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "XIXe siècle"
+            },
+            "statement": "Le nom Punu désigne, au XIXe siècle, l'une des confédérations du Gabon, à côté de celles des Mpongwé, des Gisir et des Obamba, selon Nicolas Metegue N'nah. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 27 : Le delta du Niger et le Cameroun",
+                "author": "Ebiegberi J. Alagoa, avec des contributions de Lovett Z. Elango et Nicolas Metegue N'nah",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 793",
+                "notes": "UNESCO, volume dirigé par J. F. A. Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1865,
+              "to": 1865,
+              "label": "1865"
+            },
+            "era": "polity",
+            "statement": "Le nom Punu apparaît sous une forme proche, Apono, dans le récit de l'explorateur Paul Du Chaillu : le 30 mai 1865, il arrive à Mouendi, le village du chef apono Nchiengain, et note que le territoire de ce peuple s'étend surtout au sud-est. C'est la plus ancienne trace de cette forme que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Apono",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Paul Du Chaillu",
+                "role": "explorateur, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Journey to Ashango-Land: And Further Penetration into Equatorial Africa",
+                "author": "Paul B. Du Chaillu",
+                "year": 1867,
+                "url": "https://archive.org/details/journeytoashango00duch",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 135 et p. 231",
+                "notes": "Londres, John Murray, 1867. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. L'auteur quitte le village de Mayolo le 30 mai 1865 et arrive le soir même à Mouendi, « the village of the Apono chief Nchiengain »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

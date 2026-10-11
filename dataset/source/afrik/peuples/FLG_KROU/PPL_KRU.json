@@ -142,5 +142,209 @@
         "notes": "Texte de l'édition de 1911, cité pour les graphies Krus et Croos."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kru désigne un peuple de la côte du Liberia, aussi présent en Côte d'Ivoire, qui se nomme lui-même Klao. Le même nom sert aussi pour toute une famille de langues. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Klao",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "klu",
+        "namedBy": null,
+        "shortLine": "Le nom que les Kru se donnent eux-mêmes ; écrit Klawo ou Krao en 1906.",
+        "periodLabel": "Écrit depuis 1906 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "modern",
+            "statement": "Le nom Klao apparaît sous des formes proches, Klawo et Krao, dans le livre de Harry Johnston sur le Liberia, publié en 1906 : il y voit le nom d'origine du peuple kru. C'est la plus ancienne trace de ces formes que le projet connaît. Le peuple existait déjà avant elles.",
+            "formAsWritten": "Klawo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Liberia, vol. II",
+                "author": "Harry Johnston",
+                "year": 1906,
+                "url": "https://archive.org/details/liberiaj02johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 922, note",
+                "notes": "Londres, Hutchinson, 1906. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. « the Kla or Kra of Klawo, Krao, the original name of the Kru people »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kru",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit Krouw au XVIIe siècle ; son origine est discutée.",
+        "periodLabel": "Écrit depuis le XVIIe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Kru désigne à la fois un peuple de la côte du Liberia et, plus largement, toute une famille de langues, à laquelle appartiennent aussi les Bété et les Dida, selon Yves Person. Son origine est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 24 : États et peuples de Sénégambie et de haute Guinée",
+                "author": "Yves Person",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 699",
+                "notes": "UNESCO, volume dirigé par J. F. A. Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1686,
+              "label": "XVIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Kru apparaît sous une forme proche, Krouw, dans la description de l'Afrique du géographe hollandais Olfert Dapper, qui résume les voyages hollandais du XVIIe siècle sur la côte du Liberia actuel, selon Harry Johnston. C'est la plus ancienne trace de cette forme que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Krouw",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Liberia, vol. I",
+                "author": "Harry Johnston",
+                "year": 1906,
+                "url": "https://archive.org/details/liberiaj01johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 88",
+                "notes": "Londres, Hutchinson, 1906. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. L'auteur date de 1686 l'ouvrage de Dapper : « The tribal name for the Kru people is spelt Krouw ». Nous n'avons pas lu l'ouvrage de Dapper lui-même."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Rapportée en 1911"
+            },
+            "era": "modern",
+            "statement": "Le nom Kru viendrait du mot anglais crew, « équipage », parce que les Kru furent parmi les premiers Africains de l'Ouest à servir sur les navires européens : l'Encyclopædia Britannica de 1911 rapporte cette explication pour la juger fausse.",
+            "hypothesisGroup": "origine du nom Kru",
+            "sources": [
+              {
+                "title": "Encyclopædia Britannica, 11e édition, vol. 15 : Krumen",
+                "author": "Encyclopædia Britannica",
+                "year": 1911,
+                "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Krumen",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "page": "p. 933",
+                "notes": "Article lu dans sa transcription sur Wikisource le 11 octobre 2026 : « The name has been wrongly derived from the English word “crew” […] It is probably from Kraoh, the primitive name of one of their tribes ». La page est celle de l'édition imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Proposée en 1911"
+            },
+            "era": "modern",
+            "statement": "Le nom Kru viendrait plutôt de Kraoh, le nom ancien de l'une de leurs tribus, selon l'Encyclopædia Britannica de 1911.",
+            "hypothesisGroup": "origine du nom Kru",
+            "sources": [
+              {
+                "title": "Encyclopædia Britannica, 11e édition, vol. 15 : Krumen",
+                "author": "Encyclopædia Britannica",
+                "year": 1911,
+                "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Krumen",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "page": "p. 933",
+                "notes": "Article lu dans sa transcription sur Wikisource le 11 octobre 2026 : « The name has been wrongly derived from the English word “crew” […] It is probably from Kraoh, the primitive name of one of their tribes ». La page est celle de l'édition imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "Proposée en 1906"
+            },
+            "era": "modern",
+            "statement": "Le nom Kru viendrait de Klawo ou Krao, le nom d'origine du peuple, selon Harry Johnston.",
+            "hypothesisGroup": "origine du nom Kru",
+            "sources": [
+              {
+                "title": "Liberia, vol. II",
+                "author": "Harry Johnston",
+                "year": 1906,
+                "url": "https://archive.org/details/liberiaj02johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 922, note",
+                "notes": "Londres, Hutchinson, 1906. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "Proposée en 1906"
+            },
+            "era": "modern",
+            "statement": "Le nom Kru pourrait avoir un lien avec Karou, le nom d'une province du royaume folgia chez Olfert Dapper, se demande Harry Johnston, sans trancher.",
+            "hypothesisGroup": "origine du nom Kru",
+            "sources": [
+              {
+                "title": "Liberia, vol. I",
+                "author": "Harry Johnston",
+                "year": 1906,
+                "url": "https://archive.org/details/liberiaj01johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 86",
+                "notes": "Londres, Hutchinson, 1906. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. « it is a question whether this word can be in any way connected with the name of the Kru people »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1996,
+              "to": 1996,
+              "label": "Publiée en 1996"
+            },
+            "era": "modern",
+            "statement": "Le nom Kru serait une déformation de Krawi, le nom d'un des peuples de la côte, entre les Bassa et les Grebo, étendu ensuite à toute la famille de langues dont ce peuple était le plus connu, selon l'historien Yves Person.",
+            "hypothesisGroup": "origine du nom Kru",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 24 : États et peuples de Sénégambie et de haute Guinée",
+                "author": "Yves Person",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 699",
+                "notes": "UNESCO, volume dirigé par J. F. A. Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
