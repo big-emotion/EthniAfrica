@@ -116,5 +116,232 @@
         "source_kind": "intergovernmental"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Chenoua désigne un massif de la côte algérienne, à l'ouest de Tipasa, et la population de langue berbère qui l'habite. Ce peuple se nomme lui-même Icenwiyen et appelle sa langue haqbaylit. Les sources que nous avons lues ne disent pas d'où vient le nom Chenoua ; nous présentons plus bas ses plus anciennes traces.",
+    "names": [
+      {
+        "nameText": "Icenwiyen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les habitants du Chenoua ; écrit Ichenouien en 1912.",
+        "periodLabel": "Écrit dès 1912 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1993,
+              "to": 1993,
+              "label": "1993"
+            },
+            "era": "modern",
+            "statement": "Le nom Icenwiyen est porté, sous la forme Ichenwiyen, par un groupe de chanson moderne en langue berbère, que le linguiste Salem Chaker cite parmi les signes de vitalité de cette culture.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Chenoua",
+                "author": "Philippe Leveau, L. Lefebvre et Salem Chaker",
+                "year": 1993,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2112",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 1895-1904",
+                "notes": "Encyclopédie berbère, 12, 1993, article C48. Lu sur OpenEdition le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Icenwiyen apparaît, écrit Ichenouien, chez le berbérisant Émile Laoust, qui étudie en 1912 le parler des habitants du Chenoua, entre Cherchell et Castiglione. Il écrit aussi Ichenouaien, et Achenoui au singulier. C'est la plus ancienne trace de cette forme que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Ichenouien",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Étude sur le dialecte berbère du Chenoua comparé avec ceux des Beni-Menacer et des Beni-Salah",
+                "author": "E. Laoust",
+                "year": 1912,
+                "url": "https://archive.org/details/tudesurledialec00laougoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1-3",
+                "notes": "Paris, Ernest Leroux, 1912, Publications de la Faculté des lettres d'Alger. La dédicace est datée de Marengo, le 19 février 1913. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Chenoua",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un massif à l'ouest de Tipasa et de ses habitants ; écrit Shenooah en 1738.",
+        "periodLabel": "Écrit dès 1738 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1993,
+              "to": 1993,
+              "label": "1993"
+            },
+            "era": "modern",
+            "statement": "Le nom Chenoua désigne à la fois un petit massif à l'est de la Mitidja et la population de langue berbère qui l'habite, à l'extrémité orientale d'un ensemble qui s'étend jusqu'à Ténès, selon l'Encyclopédie berbère. Les sources que nous avons lues ne disent pas d'où vient le nom de la montagne.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Chenoua",
+                "author": "Philippe Leveau, L. Lefebvre et Salem Chaker",
+                "year": 1993,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2112",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 1895-1904",
+                "notes": "Encyclopédie berbère, 12, 1993, article C48. Lu sur OpenEdition le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Chenoua sert aussi, chez Émile Laoust, à nommer le parler de la région. Il rapporte que des colons ont appelé Chenoua-Plage une petite station au pied de la montagne, un lieu que les habitants nomment Boumachouk.",
+            "sources": [
+              {
+                "title": "Étude sur le dialecte berbère du Chenoua comparé avec ceux des Beni-Menacer et des Beni-Salah",
+                "author": "E. Laoust",
+                "year": 1912,
+                "url": "https://archive.org/details/tudesurledialec00laougoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1 et p. 3",
+                "notes": "Paris, Ernest Leroux, 1912, Publications de la Faculté des lettres d'Alger. La dédicace est datée de Marengo, le 19 février 1913. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1738,
+              "to": 1738,
+              "label": "1738"
+            },
+            "era": "polity",
+            "statement": "Le nom Chenoua apparaît sous une forme proche, Shenooah, chez le voyageur anglais Thomas Shaw, qui décrit en 1738 la côte à l'ouest d'Alger. C'est alors le nom d'une montagne, d'où descendent les ruisseaux qui forment la rivière Gurmaat. C'est la plus ancienne trace de ce nom que le projet connaît. La montagne et ses habitants existaient déjà avant elle.",
+            "formAsWritten": "Shenooah",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels, or Observations relating to several parts of Barbary and the Levant",
+                "author": "Thomas Shaw",
+                "year": 1738,
+                "url": "https://archive.org/details/travelsobservati00shaw",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 43",
+                "notes": "Oxford, Printed at the Theatre, 1738. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Chenoui",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un habitant du Chenoua ; une forme proche est écrite dès 1738.",
+        "periodLabel": "Écrit dès 1738",
+        "accounts": [
+          {
+            "period": {
+              "from": 1840,
+              "to": 1840,
+              "label": "1840"
+            },
+            "era": "colonial",
+            "statement": "Le nom Chenoui désigne, au pluriel Chénouis, les habitants du massif. Selon l'historien Philippe Leveau, ils virent d'un bon œil l'installation des Français à Cherchell en 1840 et leurs opérations contre les Beni Menacer et les Beni Menad, leurs adversaires traditionnels.",
+            "sources": [
+              {
+                "title": "Chenoua",
+                "author": "Philippe Leveau, L. Lefebvre et Salem Chaker",
+                "year": 1993,
+                "url": "https://journals.openedition.org/encyclopedieberbere/2112",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 1895-1904",
+                "notes": "Encyclopédie berbère, 12, 1993, article C48. Lu sur OpenEdition le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1738,
+              "to": 1738,
+              "label": "1738"
+            },
+            "era": "polity",
+            "statement": "Le nom Chenoui apparaît sous une forme proche chez Thomas Shaw en 1738, comme surnom d'un homme : Hamett Shenooy, un Beni Menasser établi à Koléa. Pendant une révolte de sa tribu contre le pouvoir d'Alger, il aurait sauvé un enfant en nageant jusqu'au port de Koléa. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Shenooy",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels, or Observations relating to several parts of Barbary and the Levant",
+                "author": "Thomas Shaw",
+                "year": 1738,
+                "url": "https://archive.org/details/travelsobservati00shaw",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 43",
+                "notes": "Oxford, Printed at the Theatre, 1738. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Haqbaylit",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les habitants du Chenoua donnent à leur langue berbère.",
+        "periodLabel": "Écrit dès 1912",
+        "accounts": [
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Haqbaylit désigne le parler berbère du Chenoua, que ses locuteurs appellent ainsi selon Émile Laoust, qui l'écrit hak'bailith. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "hak'bailith",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Étude sur le dialecte berbère du Chenoua comparé avec ceux des Beni-Menacer et des Beni-Salah",
+                "author": "E. Laoust",
+                "year": 1912,
+                "url": "https://archive.org/details/tudesurledialec00laougoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Paris, Ernest Leroux, 1912, Publications de la Faculté des lettres d'Alger. La dédicace est datée de Marengo, le 19 février 1913. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

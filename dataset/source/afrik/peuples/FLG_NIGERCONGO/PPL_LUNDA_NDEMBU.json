@@ -115,5 +115,164 @@
         "source_kind": "encyclopedia"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Lunda-Ndembu désigne la branche des Lunda installée dans le nord-ouest de la Zambie, autour de Mwinilunga, et dans les régions voisines de l'Angola et de la RD Congo, qui se nomme elle-même Ndembu. Les sources que nous avons lues ne disent pas d'où vient le nom Ndembu.",
+    "names": [
+      {
+        "nameText": "Ndembu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un pays du nord-ouest de la Zambie et de ses habitants, rattachés aux Lunda.",
+        "periodLabel": "Écrit depuis 1923 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndembu désigne, chez l'historien Ndaywel è Nziem, un pays du nord-ouest de la Zambie actuelle où des chefs lunda fondent un État vers 1700. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 20 : Le système politique luba et lunda : émergence et expansion",
+                "author": "Ndaywel è Nziem",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 659",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndembu sert aussi, dans la liste d'Ivan Hrbek pour l'UNESCO, à un autre peuple, apparenté aux Kongo et situé au Zaïre, avec l'autre forme Ndembo. Ivan Hrbek ne cite pas les Ndembu de Zambie à cette entrée.",
+            "sources": [
+              {
+                "title": "Ethnonymes et toponymes africains — Liste d'ethnonymes africains",
+                "author": "Ivan Hrbek",
+                "year": 1984,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000189601",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 184",
+                "notes": "UNESCO, Histoire générale de l'Afrique : études et documents, 6, actes de la réunion d'experts de Paris (3-7 juillet 1978). Tableau à quatre colonnes : nom courant, autres graphies ou appellations, peuple apparenté, pays ; lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ndembu a une forme proche, Andembu, chez Frank Melland, qui rapporte une tradition : le souverain lunda Mwachiamvu II aurait donné à Kanongesha les Andembu et les Mambwera, à l'ouest et au sud-ouest du pays de Musokantanda. C'est la plus ancienne trace d'une forme proche de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Andembu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "In Witch-Bound Africa: an account of the primitive Kaonde tribe and their beliefs",
+                "author": "Frank H. Melland",
+                "year": 1923,
+                "url": "https://archive.org/details/inwitchboundafri00mell",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 36",
+                "notes": "Philadelphie, J. B. Lippincott. Livre sur la Rhodésie du Nord, écrit dans le vocabulaire colonial de son époque. lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ndembu désigne, dans un récit des origines rapporté par Frank Melland, un des peuples issus des Aluunda, comme les Akausa.",
+            "formAsWritten": "Andembu",
+            "sources": [
+              {
+                "title": "In Witch-Bound Africa: an account of the primitive Kaonde tribe and their beliefs",
+                "author": "Frank H. Melland",
+                "year": 1923,
+                "url": "https://archive.org/details/inwitchboundafri00mell",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 164",
+                "notes": "Philadelphie, J. B. Lippincott. Livre sur la Rhodésie du Nord, écrit dans le vocabulaire colonial de son époque. lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1690,
+              "to": 1710,
+              "label": "Vers 1700"
+            },
+            "era": "polity",
+            "statement": "Le nom Ndembu désigne le pays où un groupe lunda dissident, mené par Musokantanda et Kanongesha, fonde vers 1700 un État, après avoir assimilé une partie des habitants mbwela et chassé les autres vers le sud, selon Ndaywel è Nziem.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 20 : Le système politique luba et lunda : émergence et expansion",
+                "author": "Ndaywel è Nziem",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 659",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Lunda-Ndembu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom composé qui rattache les Ndembu aux Lunda ; écrit depuis 1923.",
+        "periodLabel": "Écrit depuis 1923 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lunda-Ndembu apparaît chez Frank Melland, qui parle d'un devin « de la tribu lunda-ndembu ». C'est la plus ancienne trace de ce nom composé que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Lunda-Ndembu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "In Witch-Bound Africa: an account of the primitive Kaonde tribe and their beliefs",
+                "author": "Frank H. Melland",
+                "year": 1923,
+                "url": "https://archive.org/details/inwitchboundafri00mell",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 214",
+                "notes": "Philadelphie, J. B. Lippincott. Livre sur la Rhodésie du Nord, écrit dans le vocabulaire colonial de son époque. lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -3,6 +3,269 @@
   "nameMain": "Guéré",
   "languageFamilyId": "FLG_KROU",
   "currentCountries": ["CIV", "LBR"],
+  "nameHistory": {
+    "summary": "Le nom Guéré désigne un peuple de langue krou de l'ouest de la Côte d'Ivoire, autour de Guiglo, Duékoué et Taï, qui se nomme lui-même Wè. Au Liberia, les Wè sont appelés Krahn. Les sources ne s'accordent pas toujours sur l'origine du nom Guéré ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Wè",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "gxx",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple, au sud comme au nord de son pays.",
+        "periodLabel": "Écrit en 1975 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Wè, écrit aussi Wé ou Wê, désigne un groupe de langue krou de l'ouest de la Côte d'Ivoire. D'après les sources que cite la Commission de l'immigration et du statut de réfugié du Canada, les Wè sont aussi appelés Guéré.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Côte d'Ivoire : information sur l'ethnie Wé, y compris son emplacement dans le pays et ses relations avec les Dozo (2016-janvier 2018) [CIV106042.F]",
+                "author": "Commission de l'immigration et du statut de réfugié du Canada, Direction des recherches",
+                "year": 2018,
+                "url": "https://www.ecoi.net/de/dokument/2041625.html",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Réponse à une demande d'information du 12 janvier 2018, lue sur ecoi.net le 11 octobre 2026. Elle rapporte que le groupe « Wé [We, Wè, Wê] » fait partie du groupe krou et que « les Wé sont aussi appelés Guéré », d'après un géographe et le Minority Rights Group."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1969,
+              "to": 1975,
+              "label": "Thèse de 1969, livre de 1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Wè apparaît chez le sociologue Alfred Schwartz comme le nom de tout l'ensemble que l'administration coloniale a partagé entre Guéré, au sud, et Wobé, au nord. Il ne vivait plus, écrit-il, que dans la mémoire des vieux. C'est la plus ancienne trace de ce nom que le projet connaît. Selon l'auteur, le nom et le peuple existaient déjà bien avant.",
+            "formAsWritten": "wè",
+            "birth": true,
+            "sources": [
+              {
+                "title": "La vie quotidienne dans un village guéré",
+                "author": "Alfred Schwartz",
+                "year": 1975,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers14-05/07959.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21-22",
+                "notes": "Abidjan, INADES, 1975, lu dans le texte intégral publié par l'IRD le 11 octobre 2026. Condensé d'une thèse soutenue en Sorbonne le 28 janvier 1969, publiée en 1971 sous le titre Tradition et changements dans la société guéré (mémoire ORSTOM n° 52). Page 21 : « l'ensemble wè ou wènian » ; page 22 : « les Wè n'existant plus que dans la mémoire des vieux »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "Rapporté en 1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Wè viendrait de wènian, « les hommes qui pardonnent facilement », selon Alfred Schwartz.",
+            "hypothesisGroup": "origine du nom Wè",
+            "sources": [
+              {
+                "title": "La vie quotidienne dans un village guéré",
+                "author": "Alfred Schwartz",
+                "year": 1975,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers14-05/07959.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21",
+                "notes": "Abidjan, INADES, 1975, lu dans le texte intégral publié par l'IRD le 11 octobre 2026. Condensé d'une thèse soutenue en Sorbonne le 28 janvier 1969, publiée en 1971 sous le titre Tradition et changements dans la société guéré (mémoire ORSTOM n° 52). Page 21 : « l'ensemble wè ou wènian, « les hommes qui pardonnent facilement » ». L'auteur ne dit pas qui lui a donné ce sens."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Guéré",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la partie sud du pays wè, venu de l'époque coloniale ; son origine est discutée.",
+        "periodLabel": "Écrit dès 1904 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Guéré désigne la partie sud du pays wè, par opposition aux Wobé du nord, selon Alfred Schwartz. Au fil des années, écrit-il, les intéressés eux-mêmes se sont dits Guéré. L'origine du nom est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La vie quotidienne dans un village guéré",
+                "author": "Alfred Schwartz",
+                "year": 1975,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers14-05/07959.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "Abidjan, INADES, 1975, lu dans le texte intégral publié par l'IRD le 11 octobre 2026. Condensé d'une thèse soutenue en Sorbonne le 28 janvier 1969, publiée en 1971 sous le titre Tradition et changements dans la société guéré (mémoire ORSTOM n° 52). Page 22 : « le Guéré se disant bien Guéré et le Wobé bien Wobé »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "polity",
+            "statement": "Le nom Guéré apparaît sous une forme proche, Nguéré, chez l'administrateur colonial Maurice Delafosse : il donne Nguéré ou Gon comme autres noms des Gbêlé, un peuple de la forêt de l'ouest de la Côte d'Ivoire. C'est la plus ancienne trace de ce nom que le projet connaît. Les sources ne disent pas s'il s'agit exactement des groupes qu'on appelle aujourd'hui Guéré.",
+            "formAsWritten": "Nguéré",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 69",
+                "notes": "Paris, Ernest Leroux, 1904, lu dans l'exemplaire numérisé d'archive.org le 11 octobre 2026. Delafosse énumère, au nord et à l'ouest des Boboua, « Guio et Gbêlé (Dioula anthropophages et Nguéré ou Gon) » ; il écrit d'après des renseignements recueillis hors de ce pays, où la mission Hostains-d'Ollone avait rencontré des hostilités."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1910,
+              "label": "Première décennie du XXe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Guéré n'est pas encore celui de tout le pays wè : ceux qu'on appellera les « vrais » Guéré forment alors, sous le nom de Guéa ou Guéo, un petit groupe de la rive gauche du Rô, à la limite du pays dan, selon Alfred Schwartz.",
+            "before": true,
+            "sources": [
+              {
+                "title": "La vie quotidienne dans un village guéré",
+                "author": "Alfred Schwartz",
+                "year": 1975,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers14-05/07959.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21",
+                "notes": "Abidjan, INADES, 1975, lu dans le texte intégral publié par l'IRD le 11 octobre 2026. Condensé d'une thèse soutenue en Sorbonne le 28 janvier 1969, publiée en 1971 sous le titre Tradition et changements dans la société guéré (mémoire ORSTOM n° 52). Page 21 : « Ceux-ci ne constituaient alors, sous le nom de Guéa, qu'une toute petite partie du vaste complexe humain auquel ils allaient donner leur nom »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1799,
+              "label": "Entre le XVIe et le XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Guéré, écrit « guerré », désigne chez Christophe Wondji des groupes wè descendus du nord. Leur éclatement aurait conduit des Kru du Liberia jusqu'à Grand-Béréby, en Côte d'Ivoire.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 13 : Les États et les cultures de la côte de haute Guinée",
+                "author": "Christophe Wondji",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 425",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026 : « à la suite d'une fragmentation de groupes guerré (We) descendus du nord ». L'auteur s'appuie sur A. Schwartz (1971)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "Rapporté en 1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Guéré viendrait de Guémin, « les hommes de Guéo », le nom que les Dan donnaient à leurs voisins du sud. Un officier l'aurait entendu au bord du Rô, après la création du poste de Logoualé en 1911, et le capitaine Laurent l'aurait retenu pour toute la population au sud des Dan, selon Alfred Schwartz.",
+            "hypothesisGroup": "origine du nom Guéré",
+            "actors": [
+              {
+                "name": "capitaine Laurent",
+                "role": "administrateur du cercle du Haut-Cavally"
+              }
+            ],
+            "sources": [
+              {
+                "title": "La vie quotidienne dans un village guéré",
+                "author": "Alfred Schwartz",
+                "year": 1975,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers14-05/07959.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21",
+                "notes": "Abidjan, INADES, 1975, lu dans le texte intégral publié par l'IRD le 11 octobre 2026. Condensé d'une thèse soutenue en Sorbonne le 28 janvier 1969, publiée en 1971 sous le titre Tradition et changements dans la société guéré (mémoire ORSTOM n° 52). Page 21 : le capitaine Laurent, « alors administrateur du cercle du Haut-Cavally, retint officiellement pour désigner ces mêmes populations « la dénomination Guéré », corruption de Guémin, « les hommes de Guéo » ». L'auteur ne cite pas de document d'archive pour ce récit."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Krahn",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des Wè du Liberia.",
+        "periodLabel": "En usage au Liberia",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Krahn désigne au Liberia une population d'environ 50 000 personnes, qui prolonge vers le sud-ouest les Guéré de Côte d'Ivoire, selon Alfred Schwartz. Nous ne connaissons pas la plus ancienne trace écrite de ce nom.",
+            "sources": [
+              {
+                "title": "La vie quotidienne dans un village guéré",
+                "author": "Alfred Schwartz",
+                "year": 1975,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers14-05/07959.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "Abidjan, INADES, 1975, lu dans le texte intégral publié par l'IRD le 11 octobre 2026. Condensé d'une thèse soutenue en Sorbonne le 28 janvier 1969, publiée en 1971 sous le titre Tradition et changements dans la société guéré (mémoire ORSTOM n° 52). Page 22 : « Les Krahn du Libéria - au nombre de 50 000 environ - ne sont d'ailleurs que le prolongement vers le sud-ouest des Guéré de Côte-d'Ivoire »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1599,
+              "label": "XVIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Krahn désigne, chez Christophe Wondji, l'un des groupes, avec les Bassa et les Grebo, en lesquels les Kru du Liberia se seraient divisés au XVIe siècle, d'après C. Behrens.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 13 : Les États et les cultures de la côte de haute Guinée",
+                "author": "Christophe Wondji",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 425",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "classificationStatus": "colonial-legacy",
   "content": {
     "appellations": {

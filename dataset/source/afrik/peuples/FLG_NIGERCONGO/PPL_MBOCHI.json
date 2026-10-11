@@ -3,6 +3,169 @@
   "nameMain": "Mbochi",
   "languageFamilyId": "FLG_NIGERCONGO",
   "currentCountries": ["COG"],
+  "nameHistory": {
+    "summary": "Le nom Mbochi désigne un peuple bantou du centre-nord de la République du Congo, dans la Cuvette et les Plateaux, qui se nomme lui-même Mbosi. Selon l'historien Joseph Itoua, la forme Mbochi est venue avec la colonisation. Les sources que nous avons lues n'expliquent pas l'origine du nom, et on ne sait pas avec certitude quand il a été écrit pour la première fois.",
+    "names": [
+      {
+        "nameText": "Mbosi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mdw",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple du nord du Congo ; sa langue s'appelle embosi.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mbosi est, selon l'historien Joseph Itoua, celui d'un peuple du nord du Congo que la colonisation a fait appeler Mbochi. Il le range dans le grand ensemble ngala, avec les Moye et les Bobangi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Mboshi and Teke Culture Contact: A Case Study of Making up Bantu Cultural Area",
+                "author": "Joseph Itoua",
+                "year": 2014,
+                "url": "https://worldscholars.org/index.php/ajhss/article/download/505/pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 55",
+                "notes": "American Journal of Humanities and Social Sciences, vol. 2, n° 1, 2014, p. 54-65, lu en texte intégral le 11 octobre 2026. L'auteur est historien à l'université Marien-Ngouabi de Brazzaville : « Mbosi people (called Mbochi thanks to the colonization) live in the North-Congo » ; il range les Mbosi, les Moye et les Bobangi dans le grand groupe ngala."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Embosi, écrit Embɔ́si, est celui que les locuteurs donnent à leur langue, selon le site Omniglot. Nous ne connaissons pas de trace écrite ancienne du nom Mbosi.",
+            "sources": [
+              {
+                "title": "Mbosi (Embɔ́si)",
+                "author": "Simon Ager (Omniglot)",
+                "year": null,
+                "url": "https://omniglot.com/writing/mbosi.htm",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Page lue le 11 octobre 2026 : « Speakers of Mbosi call their language Embɔ́si » ; « Mbosi is also known as Mbochi, Mboshe, Mboshi or Embosi »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mbochi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom courant de ce peuple au Congo, une forme venue de la colonisation.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mbochi désigne aujourd'hui, au Congo, un peuple et sa langue, appelés aussi Mbosi ou Mboshi. Les sources que nous avons lues n'expliquent pas son origine, et nous ne connaissons pas sa plus ancienne trace écrite.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Mboshi and Teke Culture Contact: A Case Study of Making up Bantu Cultural Area",
+                "author": "Joseph Itoua",
+                "year": 2014,
+                "url": "https://worldscholars.org/index.php/ajhss/article/download/505/pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 55",
+                "notes": "American Journal of Humanities and Social Sciences, vol. 2, n° 1, 2014, p. 54-65, lu en texte intégral le 11 octobre 2026. L'auteur est historien à l'université Marien-Ngouabi de Brazzaville : « Mbosi people (called Mbochi thanks to the colonization) live in the North-Congo » ; il range les Mbosi, les Moye et les Bobangi dans le grand groupe ngala."
+              },
+              {
+                "title": "Mbosi (Embɔ́si)",
+                "author": "Simon Ager (Omniglot)",
+                "year": null,
+                "url": "https://omniglot.com/writing/mbosi.htm",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Page lue le 11 octobre 2026 : « Speakers of Mbosi call their language Embɔ́si » ; « Mbosi is also known as Mbochi, Mboshe, Mboshi or Embosi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Mbochi sert d'exemple à l'historien Théophile Obenga : l'histoire des chefferies mbochi n'a pu être retracée, dans l'espace et dans le temps, qu'à l'aide de la tradition orale.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, I, ch. 4 : Sources et techniques spécifiques de l'histoire africaine : aperçu général",
+                "author": "Théophile Obenga",
+                "year": 1980,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184341",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 108",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1800,
+              "label": "Avant 1800"
+            },
+            "era": "polity",
+            "statement": "Le nom Mboshi désigne, chez Jan Vansina, l'un des pays du nord du Congo qu'atteint une branche de la route des esclaves partie du Pool, en passant par l'actuelle Franceville.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 19 : Le Royaume du Kongo et ses voisins",
+                "author": "Jan Vansina, à partir d'une contribution de Théophile Obenga",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 635",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1800,
+              "label": "Entre 1500 et 1800"
+            },
+            "era": "polity",
+            "statement": "Le nom Mboshi désigne, chez Elikia M'Bokolo, le pays d'où vient alors le sel gemme, un produit vital dans les échanges de la région.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 18 : Des savanes du Cameroun au haut Nil",
+                "author": "Elikia M'Bokolo",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 595",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "classificationStatus": "colonial-legacy",
   "content": {
     "appellations": {

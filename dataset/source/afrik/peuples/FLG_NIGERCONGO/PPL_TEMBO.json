@@ -132,5 +132,207 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Batembo désigne un peuple bantou de l'est de la République démocratique du Congo, dans les territoires de Kalehe, au Sud-Kivu, et de Masisi et Walikale, au Nord-Kivu. Ce peuple se nomme lui-même Batembo, ou Tembo, et sa langue s'appelle le chitembo ou le kitembo. Les sources ne s'accordent pas toujours sur l'origine du nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Batembo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple du Kivu ; un récit le rattache au roi Katembo.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Batembo désigne le peuple qui habite le Butembo, à cheval sur le Sud-Kivu et le Nord-Kivu, selon un manuel d'histoire du projet de traduction de la Bible en langue tembo. Le manuel précise que le même nom désigne aussi d'autres peuples, au Katanga, et ne doit pas être confondu avec la ville de Butembo.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Aperçu historique sur le peuple tembo",
+                "author": "Projet de traduction de la Bible et d'alphabétisation en langue tembo",
+                "year": 2008,
+                "url": "https://www.chitembomedia.com/sites/www.chitembomedia.com/files/uploads/Apercu%20historique%20sur%20le%20peuple%20tembo.pdf",
+                "tier": "unverified",
+                "source_kind": "community",
+                "page": "p. 2",
+                "notes": "Manuel inédit mis en ligne par le projet. Lu dans sa version en ligne le 11 octobre 2026. Le manuel s'appuie sur des historiens congolais et sur un mémorandum de la communauté tembo de 1997."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "Rapporté en 2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Batembo viendrait de Katembo, un chef conquérant qui aurait fondé un royaume portant son nom : ses sujets auraient pris le nom de Batembo en son honneur, selon le manuel d'histoire du projet de traduction de la Bible en langue tembo.",
+            "hypothesisGroup": "origine du nom Batembo",
+            "sources": [
+              {
+                "title": "Aperçu historique sur le peuple tembo",
+                "author": "Projet de traduction de la Bible et d'alphabétisation en langue tembo",
+                "year": 2008,
+                "url": "https://www.chitembomedia.com/sites/www.chitembomedia.com/files/uploads/Apercu%20historique%20sur%20le%20peuple%20tembo.pdf",
+                "tier": "unverified",
+                "source_kind": "community",
+                "page": "p. 4",
+                "notes": "Manuel inédit mis en ligne par le projet. Lu dans sa version en ligne le 11 octobre 2026. Le manuel s'appuie sur des historiens congolais et sur un mémorandum de la communauté tembo de 1997."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1956,
+              "to": 1957,
+              "label": "Enquête de 1956-1957"
+            },
+            "era": "colonial",
+            "statement": "Le nom Batembo figure dans une lettre manuscrite qu'un membre de ce peuple remet à l'anthropologue Daniel Biebuyck : elle parle de la « chefferie des Batembo » d'Ufumandu et donne la liste de dix-huit chefs, de Katembo, venu du Bwito, jusqu'à Misati. C'est la plus ancienne trace datée de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Hunde of Masisi Territoire : Field Notes (1957) and a Brief Overview of Existing Literature",
+                "author": "Daniel P. Biebuyck",
+                "year": 2019,
+                "url": "https://danielbiebuyck.com/wp-content/uploads/2019/07/hunde-final-2.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5 du PDF",
+                "notes": "Notes de terrain de 1956-1957 mises en ligne sur le site consacré aux travaux de l'auteur. Lu le 11 octobre 2026. L'auteur résume et cite la lettre, dont il ne donne pas le nom de l'auteur."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1956,
+              "to": 1957,
+              "label": "Enquête de 1956-1957"
+            },
+            "era": "colonial",
+            "statement": "Le nom Batembo désigne, dans les notes de Daniel Biebuyck, un peuple apparenté aux Hunde, installé dans la région d'Ufumandu, au territoire de Masisi. Ses membres font remonter leur origine à un ancêtre, Katembo, venu du Bwito.",
+            "sources": [
+              {
+                "title": "The Hunde of Masisi Territoire : Field Notes (1957) and a Brief Overview of Existing Literature",
+                "author": "Daniel P. Biebuyck",
+                "year": 2019,
+                "url": "https://danielbiebuyck.com/wp-content/uploads/2019/07/hunde-final-2.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1-2 du PDF",
+                "notes": "Notes de terrain de 1956-1957 mises en ligne sur le site consacré aux travaux de l'auteur. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tembo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme courte du nom Batembo, employée aussi pour la langue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1930,
+              "to": 1959,
+              "label": "Années 1930 à 1950"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tembo figure dans les généalogies établies par les administrateurs du territoire de Masisi dans les années 1930 et 1950, que résume Daniel Biebuyck : les Tembo y seraient venus du Bwito avec Kinyungu, l'ancêtre des Banyungu. C'est la plus ancienne trace de ce nom que le projet connaît ; Biebuyck ne précise pas laquelle de ces généalogies la porte.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Hunde of Masisi Territoire : Field Notes (1957) and a Brief Overview of Existing Literature",
+                "author": "Daniel P. Biebuyck",
+                "year": 2019,
+                "url": "https://danielbiebuyck.com/wp-content/uploads/2019/07/hunde-final-2.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6 du PDF",
+                "notes": "Notes de terrain de 1956-1957 mises en ligne sur le site consacré aux travaux de l'auteur. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Chitembo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les Batembo donnent à leur langue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Chitembo désigne la langue bantoue que parlent les Batembo, selon le manuel d'histoire du projet de traduction de la Bible en langue tembo, qui en cite plusieurs dialectes. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Aperçu historique sur le peuple tembo",
+                "author": "Projet de traduction de la Bible et d'alphabétisation en langue tembo",
+                "year": 2008,
+                "url": "https://www.chitembomedia.com/sites/www.chitembomedia.com/files/uploads/Apercu%20historique%20sur%20le%20peuple%20tembo.pdf",
+                "tier": "unverified",
+                "source_kind": "community",
+                "page": "p. 15",
+                "notes": "Manuel inédit mis en ligne par le projet. Lu dans sa version en ligne le 11 octobre 2026. Le manuel s'appuie sur des historiens congolais et sur un mémorandum de la communauté tembo de 1997."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kitembo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom swahili de la langue des Batembo.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Publié en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Kitembo désigne, chez Daniel Biebuyck, la langue tembo parlée dans les territoires de Masisi, de Kalehe et de Walikale, à côté du kihunde. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Hunde of Masisi Territoire : Field Notes (1957) and a Brief Overview of Existing Literature",
+                "author": "Daniel P. Biebuyck",
+                "year": 2019,
+                "url": "https://danielbiebuyck.com/wp-content/uploads/2019/07/hunde-final-2.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1 du PDF",
+                "notes": "Notes de terrain de 1956-1957 mises en ligne sur le site consacré aux travaux de l'auteur. Lu le 11 octobre 2026. L'auteur s'appuie sur la grammaire du kihunde du linguiste Mateene."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -3,6 +3,187 @@
   "nameMain": "Karamojong",
   "languageFamilyId": "FLG_NILOTIQUE",
   "currentCountries": ["UGA"],
+  "nameHistory": {
+    "summary": "Le nom Karamojong désigne un peuple d'éleveurs du nord-est de l'Ouganda, dans la région de Karamoja, qui se nomme lui-même Ngikarimojong. On écrit aussi Karimojong. Une tradition rapportée par des historiens explique ce nom ; nous la présentons plus bas, avec ses plus anciennes traces écrites.",
+    "names": [
+      {
+        "nameText": "Ngikarimojong",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kdj",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple ; sa langue s'appelle ngakarimojong.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ngikarimojong, écrit ŋiKarimojoŋ par le site Omniglot, est celui que se donnent les locuteurs du karamojong ; ils appellent leur langue ŋaKarimojoŋ. Nous ne connaissons pas de trace écrite ancienne de cette forme.",
+            "sources": [
+              {
+                "title": "Karamojong language and alphabet",
+                "author": "Simon Ager (Omniglot)",
+                "year": null,
+                "url": "https://www.omniglot.com/writing/karamojong.php",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Page lue le 11 octobre 2026. Elle écrit que les locuteurs se nomment « ŋiKarimojoŋ / ŋiKaramojoŋ » et appellent leur langue « ŋaKarimojoŋ ». Nous ne reprenons pas le sens qu'elle donne au nom, qui renvoie à Wikipédia."
+              },
+              {
+                "title": "Karamojong, Encyclopedia of World Cultures",
+                "author": "Ronald Johnson",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/karamojong",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article lu le 11 octobre 2026 sur Encyclopedia.com, qui reprend l'encyclopédie publiée par Gale. Il donne pour noms « Karimojong, Ngakarimonjong » et ne dit pas d'où vient le nom."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Karamojong",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom le plus courant de ce peuple ; une tradition l'explique, sans source écrite ancienne.",
+        "periodLabel": "Écrit Karamoyo en 1894 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Karamojong, écrit aussi Karimojong, désigne aujourd'hui un peuple d'éleveurs du plateau du nord-est de l'Ouganda, selon l'Encyclopedia of World Cultures. On ne sait pas avec certitude d'où il vient : une tradition l'explique, et nous la présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Karamojong, Encyclopedia of World Cultures",
+                "author": "Ronald Johnson",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/karamojong",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article lu le 11 octobre 2026 sur Encyclopedia.com, qui reprend l'encyclopédie publiée par Gale. Il donne pour noms « Karimojong, Ngakarimonjong » et ne dit pas d'où vient le nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1894,
+              "label": "Voyage de 1888, livre de 1894"
+            },
+            "era": "polity",
+            "statement": "Le nom Karamojong apparaît sous une forme proche, Karamoyo, chez Ludwig von Höhnel, qui accompagne l'expédition du comte Teleki : il place les Karamoyo à l'ouest des Turkana et les dit très proches d'eux. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà là avant elle.",
+            "formAsWritten": "Karamoyo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Ludwig von Höhnel",
+                "role": "officier autrichien, auteur du récit de l'expédition"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Discovery of lakes Rudolf and Stefanie : a narrative of Count Samuel Teleki's exploring and hunting expedition in eastern equatorial Africa in 1887 and 1888, vol. II",
+                "author": "Ludwig von Höhnel",
+                "year": 1894,
+                "url": "https://archive.org/details/discoveryoflakes02hhne",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 236",
+                "notes": "Londres, Longmans, Green and Co., 1894, lue dans la numérisation d'Internet Archive le 11 octobre 2026 : « Their neighbours on the west are the Karamoyo, a tribe very nearly connected with them », à propos des Turkana. L'auteur accompagnait l'expédition du comte Teleki, en 1888."
+              },
+              {
+                "title": "Discovery of lakes Rudolf and Stefanie : a narrative of Count Samuel Teleki's exploring and hunting expedition in eastern equatorial Africa in 1887 and 1888, vol. I",
+                "author": "Ludwig von Höhnel",
+                "year": 1894,
+                "url": "https://archive.org/details/discoveryoflakes01hhne",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 243",
+                "notes": "Londres, Longmans, Green and Co., 1894, traduction anglaise de l'édition allemande de 1892, lue dans la numérisation d'Internet Archive le 11 octobre 2026. L'auteur range les « Karamoyo » parmi les peuples qui, avec ceux du Kamasia, du Suk, du Turkana et du Lango, relient les Masaï aux Shilluk et aux Bari."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1894,
+              "label": "Voyage de 1888, livre de 1894"
+            },
+            "era": "polity",
+            "statement": "Le nom Karamoyo désigne aussi, chez Ludwig von Höhnel, le seul peuple que craignent les Turkana : une cinquantaine d'années plus tôt, écrit-il, les Karamoyo les ont repoussés vers l'est.",
+            "sources": [
+              {
+                "title": "Discovery of lakes Rudolf and Stefanie : a narrative of Count Samuel Teleki's exploring and hunting expedition in eastern equatorial Africa in 1887 and 1888, vol. II",
+                "author": "Ludwig von Höhnel",
+                "year": 1894,
+                "url": "https://archive.org/details/discoveryoflakes02hhne",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 236",
+                "notes": "Londres, Longmans, Green and Co., 1894, lue dans la numérisation d'Internet Archive le 11 octobre 2026 : « Some fifty years ago the Turkana owned part of the land on the west now occupied by the Karamoyo » ; « The Karamoyo drove the Turkana further east » ; les Turkana « stand in awe of none but the Karamoyo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1680,
+              "to": 1750,
+              "label": "Entre 1680 et 1750"
+            },
+            "era": "polity",
+            "statement": "Le nom Karimojong est celui que prendront plus tard des éleveurs qui, avec les futurs Dodos, partent alors vers le sud, en direction de l'Apule, selon J. B. Webster, B. A. Ogot et J. P. Chrétien.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+                "author": "J. B. Webster, B. A. Ogot et J. P. Chrétien",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 859",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "Rapporté en 1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Karamojong voudrait dire « les vieillards laissés derrière », selon une tradition que rapportent J. B. Webster, B. A. Ogot et J. P. Chrétien. De la même tradition viendrait le nom Teso : ces vieillards, craignant leurs jeunes morts, auraient dit aux messagers de veiller sur leurs atesin, leurs tombes.",
+            "hypothesisGroup": "origine du nom Karamojong",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+                "author": "J. B. Webster, B. A. Ogot et J. P. Chrétien",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 859, note 21",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026 : « Selon la tradition, Karamojong signifie « les vieillards laissés derrière » qui, craignant que leurs jeunes ne fussent morts, disaient aux messagers : « Veillez à leurs atesin (tombes) », d'où l'origine du mot Teso ». La note ne nomme pas les porteurs de cette tradition."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Karamojong",

@@ -126,5 +126,218 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kusasi désigne un peuple du nord-est du Ghana, autour de Bawku, présent aussi au Burkina Faso et au Togo, qui se nomme lui-même Kusaasi et parle le kusaal. D'autres formes existent : Kussassi, Koussan, Kusan. Les sources que nous avons lues ne disent pas d'où vient ce nom.",
+    "names": [
+      {
+        "nameText": "Kusaasi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du peuple dans la graphie des linguistes et des livres en kusaal.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kusaasi désigne le peuple majoritaire de l'extrême nord-est du Ghana, autour de la ville de Bawku, dont la langue est le kusaal, selon le linguiste David Eddyshaw ; des Kusaasi vivent aussi au Burkina Faso et quelques-uns au Togo. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Grammar of Kusaal",
+                "author": "David Eddyshaw",
+                "year": 2026,
+                "url": "https://zenodo.org/records/19362194",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Grammaire du dialecte agolle, version du 4 janvier 2026 déposée sur Zenodo. lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1988,
+              "to": 1988,
+              "label": "1988"
+            },
+            "era": "modern",
+            "statement": "Le nom Kusaasi s'écrit Kusaas dans le titre d'un petit livre en kusaal publié en 1988, Kusaas Kuob nɛ Yir yela Gbauŋ, qui raconte la vie d'une famille de cultivateurs kusaasi, selon la bibliographie de David Eddyshaw.",
+            "formAsWritten": "Kusaas",
+            "sources": [
+              {
+                "title": "A Grammar of Kusaal",
+                "author": "David Eddyshaw",
+                "year": 2026,
+                "url": "https://zenodo.org/records/19362194",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. vii",
+                "notes": "Grammaire du dialecte agolle, version du 4 janvier 2026 déposée sur Zenodo. lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kusasi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom employé dans les recensements et l'administration ; écrit ainsi depuis 1920.",
+        "periodLabel": "Écrit depuis 1920 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Kusasi est le nom retenu par Ivan Hrbek dans sa liste des noms de peuples africains pour l'UNESCO, avec Koussan, Kusan et Kusansi comme autres noms ; il situe ce peuple au Togo, au Ghana et en Haute-Volta.",
+            "sources": [
+              {
+                "title": "Ethnonymes et toponymes africains — Liste d'ethnonymes africains",
+                "author": "Ivan Hrbek",
+                "year": 1984,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000189601",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 175",
+                "notes": "UNESCO, Histoire générale de l'Afrique : études et documents, 6, actes de la réunion d'experts de Paris (3-7 juillet 1978). Tableau à quatre colonnes : nom courant, autres graphies ou appellations, peuple apparenté, pays ; lu le 11 octobre 2026 dans l'exemplaire numérisé de l'UNESDOC."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1927,
+              "to": 1927,
+              "label": "1927"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kusasi est aussi celui d'un district britannique : le rapport sur le Togo sous mandat pour l'année 1927 décrit les terres au nord de la rivière Mochole, rattachées au district de Kusasi et occupées par les Kusasi et les B'Moba.",
+            "sources": [
+              {
+                "title": "Report by His Britannic Majesty's Government to the Council of the League of Nations on the Administration of Togoland under British Mandate for the year 1927",
+                "author": "Colonial Office (Royaume-Uni)",
+                "year": 1928,
+                "url": "https://archive.org/details/report-togoland-1920",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5",
+                "notes": "Rapport annuel relié dans un recueil des rapports de 1920 à 1931. lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kusasi apparaît chez A. W. Cardinall, qui compte les Kusasi parmi les peuples du nord de la Gold Coast dont la langue est de même origine que celle des Mossi et des Dagomba. C'est la plus ancienne trace de cette orthographe que le projet connaît. Le peuple qu'elle désigne existait déjà avant elle.",
+            "formAsWritten": "Kusasi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Natives of the Northern Territories of the Gold Coast : their customs, religion and folklore",
+                "author": "A. W. Cardinall",
+                "year": 1920,
+                "url": "https://archive.org/details/nativesofnorther00carduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 15",
+                "notes": "Londres, George Routledge & Sons ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kussassi",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une graphie allemande du nom, au temps du Togo allemand.",
+        "periodLabel": "Écrit en 1913",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1913,
+              "to": 1914,
+              "label": "Enquête de 1913, publiée en 1914"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kussassi figure dans une enquête de 1913 sur l'islam au Togo allemand, publiée par le linguiste Diedrich Westermann : une réponse venue du district de Mangu-Yendi cite les Moba, les Kussassi et les Bussassi parmi les peuples du nord que l'islam n'a pas touchés. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Kussassi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Die Verbreitung des Islams in Togo und Kamerun. Ergebnisse einer Umfrage",
+                "author": "Diedrich Westermann",
+                "year": 1914,
+                "url": "https://archive.org/details/dieweltdesislams12deutuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 209",
+                "notes": "Die Welt des Islams, Band II, Berlin, 1914. L'auteur publie les réponses à une enquête menée en 1913 auprès d'officiers, de fonctionnaires et de missionnaires du Togo allemand ; le passage cité vient du district de Mangu-Yendi. lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kusaal",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la langue des Kusaasi.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kusaal désigne la langue des Kusaasi, selon David Eddyshaw ; le dictionnaire kusaal de l'institut ghanéen de linguistique donne Kusaasi, Kusale et Kusasi comme autres noms de cette langue.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Grammar of Kusaal",
+                "author": "David Eddyshaw",
+                "year": 2026,
+                "url": "https://zenodo.org/records/19362194",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Grammaire du dialecte agolle, version du 4 janvier 2026 déposée sur Zenodo. lu le 11 octobre 2026."
+              },
+              {
+                "title": "Kusaal Dictionary — Introduction",
+                "author": "Ghana Institute of Linguistics, Literacy and Bible Translation",
+                "year": 2019,
+                "url": "https://www.webonary.org/kusaal-gh/overview/introduction/",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire en ligne publié sur Webonary (SIL). lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

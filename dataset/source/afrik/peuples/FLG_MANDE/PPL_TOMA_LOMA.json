@@ -123,5 +123,236 @@
         "source_kind": "discovery"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Toma désigne, en Guinée, un peuple mandé des forêts de Macenta, qui vit aussi dans le comté de Lofa, au Liberia, où on l'appelle Loma. Ce peuple se nomme lui-même Loma, ou Löghöma. D'autres noms existent : Buzi, que lui donnaient ses voisins mende et vaï, puis les Libériens. Les sources lues n'expliquent pas l'origine de ces noms ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "Loma",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lom",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple, en Guinée comme au Liberia ; on l'écrit aussi Löghöma.",
+        "periodLabel": "Écrit dès 1907 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Loma désigne ce peuple et sa langue, que ses locuteurs nomment aussi Lomagui, Löghömagooi ou Löömagooi ; ils vivent surtout dans la préfecture de Macenta, en Guinée, et dans le comté de Lofa, au Liberia, selon Isaiah Suchman. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "« Promouvoir la Culture Loma » : Literacy, convenience, and multilingual choices on the Guinean internet",
+                "author": "Isaiah Suchman",
+                "year": 2025,
+                "url": "https://ling.yale.edu/media/478/download?inline",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11-12",
+                "notes": "Mémoire de licence (Bachelor of Arts), département de linguistique de l'université Yale, avril 2025. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Loma apparaît par écrit chez l'administrateur colonial André Arcin, qui écrit « le Toma ou Loma » pour un peuple mandé des forêts situées au sud du pays kissi et à l'ouest du Konian. C'est la plus ancienne trace de ce nom que le projet connaît. Les Loma vivaient déjà dans ces forêts avant elle.",
+            "formAsWritten": "Loma",
+            "birth": true,
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 222",
+                "notes": "Paris, Augustin Challamel, 1907. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Toma",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom employé en Guinée, hérité des classements de l'époque coloniale ; écrit dès 1854.",
+        "periodLabel": "Écrit depuis 1854 ; en usage aujourd'hui en Guinée",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Toma désigne ce peuple, et parfois sa langue, en Guinée, y compris chez ses locuteurs quand ils parlent français ; c'est un terme hérité des classements ethniques de l'époque coloniale, selon Isaiah Suchman.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "« Promouvoir la Culture Loma » : Literacy, convenience, and multilingual choices on the Guinean internet",
+                "author": "Isaiah Suchman",
+                "year": 2025,
+                "url": "https://ling.yale.edu/media/478/download?inline",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 12",
+                "notes": "Mémoire de licence (Bachelor of Arts), département de linguistique de l'université Yale, avril 2025. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Toma désigne chez André Arcin un « pays Toma » des forêts de la Makona, dont seuls les habitants du nord du fleuve sont alors soumis aux Français. Il précise que des peuples voisins les appellent « Ton-alé » et les Libériens « Bouzi » ou « Bouzié ».",
+            "formAsWritten": "pays Toma",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 61 et p. 222, note 3",
+                "notes": "Paris, Augustin Challamel, 1907. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Toma est, selon l'administrateur britannique Harry Johnston, celui que les Français donnent aux représentants du nord du peuple que l'on appelle Buzi au Liberia.",
+            "sources": [
+              {
+                "title": "Liberia, volume II",
+                "author": "Harry Johnston",
+                "year": 1906,
+                "url": "https://archive.org/details/liberiaharr02johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 886, note 1",
+                "notes": "Londres, Hutchinson, 1906. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "statement": "Le nom Toma apparaît par écrit dans la Polyglotta Africana du missionnaire Sigismund Koelle, qui l'écrit Tṓma pour une langue relevée à Freetown, et situe ce pays à l'ouest du Konyanka. C'est la plus ancienne trace de ce nom que le projet connaît. Les Toma vivaient déjà dans leurs forêts avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu le 11 octobre 2026 dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite. La transcription la classe sous la référence II-11 ; Koelle ajoute que les Mende et les Vaï appellent ce peuple Bū́se."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Buzi",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Mende et les Vaï, selon Sigismund Koelle",
+        "shortLine": "Le nom que lui donnaient ses voisins mende et vaï, puis les Libériens.",
+        "periodLabel": "Écrit depuis 1854 ; employé jusqu'au début du XXe siècle au moins",
+        "accounts": [
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "modern",
+            "statement": "Le nom Buzi désigne chez Harry Johnston un peuple du Liberia, très proche par la langue des Kpelle, qu'il appelle Kpwesi, et dont il ne serait qu'une branche.",
+            "sources": [
+              {
+                "title": "Liberia, volume II",
+                "author": "Harry Johnston",
+                "year": 1906,
+                "url": "https://archive.org/details/liberiaharr02johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 886, note 1",
+                "notes": "Londres, Hutchinson, 1906. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1868,
+              "to": 1870,
+              "label": "1868-1869, récit publié en 1870"
+            },
+            "era": "modern",
+            "statement": "Le nom Buzi s'écrit Boozie chez Benjamin Anderson, voyageur libérien parti de Monrovia vers Musardu en 1868 : il traverse « les deux grandes divisions du pays Boozie », le Domar et le Wymar.",
+            "formAsWritten": "Boozie",
+            "sources": [
+              {
+                "title": "Narrative of a Journey to Musardu, the Capital of the Western Mandingoes",
+                "author": "Benjamin Anderson",
+                "year": 1870,
+                "url": "https://archive.org/details/narrativeofjourn00ande",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 6-7",
+                "notes": "New York, S. W. Green, 1870. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "statement": "Le nom Buzi a une forme proche, Bū́se, chez Sigismund Koelle : c'est ainsi, écrit-il, que les Mende et les Vaï appellent les Toma. C'est la plus ancienne trace de ce nom que le projet connaît. Les Toma vivaient déjà dans leurs forêts avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu le 11 octobre 2026 dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite. Remarque sur la langue classée sous la référence II-11, le tṓma."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
