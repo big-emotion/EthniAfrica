@@ -98,5 +98,183 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Gofa désigne un peuple de langue omotique du sud-ouest de l'Éthiopie, qui se nomme lui-même Gofa, et le pays où il vit. On l'écrit aussi Goffa. On ne sait pas avec certitude d'où vient ce nom : les explications que nous avons trouvées ne s'appuient sur aucune source que nous ayons pu lire.",
+    "names": [
+      {
+        "nameText": "Gofa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple et d'un pays du sud-ouest de l'Éthiopie, noté dès 1841.",
+        "periodLabel": "Noté dès 1841 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Gofa désigne un peuple du sud-ouest de l'Éthiopie dont le pays a été rattaché à l'empire sous Ménélik II, selon le chercheur Yetebarek Hizekeal Zekareas. L'État impérial a ensuite remplacé beaucoup de noms de personnes gofa par des noms amhara. On ne sait pas avec certitude d'où vient le nom Gofa.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Advent of « Modern State » in Ethiopia and the Dynamics of Personal Names and Naming Practices among the Gofa of Southwest Ethiopia",
+                "author": "Yetebarek Hizekeal Zekareas",
+                "year": 2019,
+                "url": "https://www.njas.fi/njas/article/download/402/361/769",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1 et p. 3",
+                "notes": "Nordic Journal of African Studies, vol. 28, n° 1, 2019 ; lu dans le texte publié par la revue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1959,
+              "to": 1980,
+              "label": "1959-1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Gofa désigne aussi une circonscription de l'administration éthiopienne, l'awraja de Gofa, dont le chef-lieu est Bulki de 1959 à 1964, puis Sawla de 1969 à 1980, selon Bernhard Lindahl.",
+            "sources": [
+              {
+                "title": "Local History of Ethiopia : Gof - Gomu",
+                "author": "Bernhard Lindahl",
+                "year": 2005,
+                "url": "https://nai.uu.se/download/18.39fca04516faedec8b248de6/1580829011897/ORTGOF05.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Nordic Africa Institute, 2005 ; lu dans le document publié par la bibliothèque de l'institut le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1935,
+              "to": 1936,
+              "label": "Vers 1935, publié en 1958"
+            },
+            "statement": "Le nom Gofa désigne aussi une langue : vers 1935, les enfants de la mission protestante de Gofa, près de Bulki, apprennent à lire dans l'Évangile de Marc publié en gofa, selon les souvenirs du missionnaire Malcolm Forsberg que cite Bernhard Lindahl.",
+            "sources": [
+              {
+                "title": "Local History of Ethiopia : Gof - Gomu",
+                "author": "Bernhard Lindahl",
+                "year": 2005,
+                "url": "https://nai.uu.se/download/18.39fca04516faedec8b248de6/1580829011897/ORTGOF05.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1-2",
+                "notes": "Nordic Africa Institute, 2005 ; lu dans le document publié par la bibliothèque de l'institut le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1896,
+              "label": "Juin 1896"
+            },
+            "era": "polity",
+            "statement": "Le nom Gofa désigne, chez les officiers italiens Lamberto Vannutelli et Carlo Citerni, un territoire réputé riche, aux districts groupés autour du mont Sema, et ses habitants. Ils écrivent que les gens de Gofa ont combattu dix jours avant d'être soumis par les Amhara, que leur chef Canna a été tué et que sa veuve gouverne comme régente.",
+            "sources": [
+              {
+                "title": "L'Omo : viaggio d'esplorazione nell'Africa orientale",
+                "author": "Lamberto Vannutelli et Carlo Citerni",
+                "year": 1899,
+                "url": "https://archive.org/details/lomoviaggiodespl00vann",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 280-281",
+                "notes": "Milan, Hoepli, 1899. Récit de la seconde expédition de Vittorio Bottego ; lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. Journal du 26 au 28 juin 1896."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1843,
+              "to": 1843,
+              "label": "1843"
+            },
+            "era": "polity",
+            "statement": "Le nom Gofa figure encore dans les notes d'Antoine d'Abbadie en 1843 : un homme lui dit que Gobo, Gofa, Kuca, Kullo et Walamo parlent une même langue, et d'Abbadie note que Ganeci est roi de Gofa.",
+            "sources": [
+              {
+                "title": "Géographie de l'Éthiopie : ce que j'ai entendu, faisant suite à ce que j'ai vu, tome I",
+                "author": "Antoine d'Abbadie",
+                "year": 1890,
+                "url": "https://archive.org/details/geographiedelet00abba",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 78-79",
+                "notes": "Paris, Gustave Mesnil, 1890. Notes prises par l'auteur en Éthiopie dans les années 1840 et publiées en 1890 ; lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. P. 78 : « Gobo, Gofa, Kuca, Kullo et Walamo parlent une même langue » ; p. 79 : « Ganeci est roi de Gofa »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1841,
+              "to": 1841,
+              "label": "1841, publié en 1890"
+            },
+            "era": "polity",
+            "statement": "Le nom Gofa apparaît dans les notes du voyageur Antoine d'Abbadie : le 17 juillet 1841, à Massaoua, un homme réduit en esclavage, originaire du Waratta, lui parle d'une mer aux eaux amères qui baigne Gofa. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Gofa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Géographie de l'Éthiopie : ce que j'ai entendu, faisant suite à ce que j'ai vu, tome I",
+                "author": "Antoine d'Abbadie",
+                "year": 1890,
+                "url": "https://archive.org/details/geographiedelet00abba",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 25-26",
+                "notes": "Paris, Gustave Mesnil, 1890. Notes prises par l'auteur en Éthiopie dans les années 1840 et publiées en 1890 ; lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. P. 26 : « La mer qui baigne Gofa est d'eaux amères »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Goffa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre graphie du nom Gofa.",
+        "periodLabel": "En usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Goffa est une autre graphie du nom Gofa, que Bernhard Lindahl donne à côté de la forme Gofa.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Local History of Ethiopia : Gof - Gomu",
+                "author": "Bernhard Lindahl",
+                "year": 2005,
+                "url": "https://nai.uu.se/download/18.39fca04516faedec8b248de6/1580829011897/ORTGOF05.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Nordic Africa Institute, 2005 ; lu dans le document publié par la bibliothèque de l'institut le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

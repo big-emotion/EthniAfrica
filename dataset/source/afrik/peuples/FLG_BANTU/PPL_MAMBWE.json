@@ -94,5 +94,99 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Mambwe désigne un peuple bantou du sud du lac Tanganyika, entre la Zambie et la Tanzanie, qui se nomme lui-même Mambwe. Des textes allemands de la fin du XIXe siècle écrivaient Wamambwe pour les personnes et Umambwe pour le pays. On ne sait pas avec certitude d'où vient ce nom ; les sources que nous avons lues ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Mambwe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple du sud du lac Tanganyika, écrit Mambwé en 1867.",
+        "periodLabel": "Écrit dès 1867 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1893,
+              "to": 1893,
+              "label": "1893"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mambwe désigne en 1893 une station que des missionnaires catholiques fondent près de la route Stevenson, dans le pays qu'un annuaire colonial allemand écrit Umambwe. Selon ce texte, ses habitants sont divisés, peu armés et victimes des raids bemba.",
+            "sources": [
+              {
+                "title": "Koloniales Jahrbuch, sechster Jahrgang, 1893 : Die katholischen Missionen in den deutschen Schutzgebieten",
+                "author": "Koloniales Jahrbuch",
+                "year": 1894,
+                "url": "https://archive.org/details/kolonialesjahrb06unkngoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 116-117",
+                "notes": "Berlin, Carl Heymann, 1894. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. P. 116 : « eine neue Station in Mambwe » et « des Landes Umambwe »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1867,
+              "to": 1867,
+              "label": "1867"
+            },
+            "era": "polity",
+            "statement": "Le nom Mambwe apparaît sous la forme Mambwé dans le journal de l'explorateur David Livingstone : le 12 mars 1867, il nomme ainsi une longue chaîne de collines basses, puis le pays où naissent plusieurs rivières, dont le Chambeshi. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle. Nous n'avons pas trouvé de source qui explique son origine.",
+            "formAsWritten": "Mambwé",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Last Journals of David Livingstone, in Central Africa, from 1865 to his Death, vol. I",
+                "author": "David Livingstone, édité par Horace Waller",
+                "year": 1874,
+                "url": "https://archive.org/details/lastjournalsofda01livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 201 et p. 206",
+                "notes": "Londres, John Murray, 1874. Journal tenu par l'explorateur en 1867, publié après sa mort ; lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. P. 201 : « a long range of low hills is on our N.E., which are the Mambwé » ; p. 206 : « All these rivers rise in or near the Mambwé country »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wamambwe",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme à préfixe swahili qu'emploient des textes allemands en 1893.",
+        "periodLabel": "Écrit en 1893",
+        "accounts": [
+          {
+            "period": {
+              "from": 1893,
+              "to": 1893,
+              "label": "1893"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wamambwe désigne les habitants du pays mambwe dans un annuaire colonial allemand : il raconte que les Bemba attaquent sans cesse les villages des Wamambwe, et que des familles wamambwe s'installent auprès de la nouvelle mission. C'est la plus ancienne trace de cette forme que le projet connaît.",
+            "formAsWritten": "Wamambwe",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Koloniales Jahrbuch, sechster Jahrgang, 1893 : Die katholischen Missionen in den deutschen Schutzgebieten",
+                "author": "Koloniales Jahrbuch",
+                "year": 1894,
+                "url": "https://archive.org/details/kolonialesjahrb06unkngoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 116-117",
+                "notes": "Berlin, Carl Heymann, 1894. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. P. 116 : « die Dörfer der Wamambwe » ; p. 117 : « Wanyika, Wanyamwange, Wafipa und Wamambwe »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -98,5 +98,163 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Fipa désigne un peuple bantou du plateau d'Ufipa, dans la région de Rukwa, au sud-ouest de la Tanzanie, qui se nomme lui-même Wafipa. Le pays s'appelle Ufipa. On ne sait pas avec certitude d'où vient ce nom ; les sources que nous avons lues ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Fipa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple du plateau d'Ufipa, écrit dès 1860.",
+        "periodLabel": "Écrit dès 1860 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "2009"
+            },
+            "era": "modern",
+            "statement": "Le nom Fipa désigne, avec ceux de Pimbwe, Bende, Kimbu et Konongo, l'un des peuples du plateau de Fipa et des plaines de la Rukwa, selon le sociologue Tony Waters. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Social Organization and Social Status in Nineteenth and Twentieth Century Rukwa, Tanzania",
+                "author": "Tony Waters",
+                "year": 2009,
+                "url": "https://asq.africa.ufl.edu/wp-content/uploads/sites/168/Waters-V11Is1.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 57",
+                "notes": "African Studies Quarterly, vol. 11, n° 1, 2009 ; lu dans le texte publié par la revue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1961,
+              "label": "1920-1961"
+            },
+            "era": "colonial",
+            "statement": "Le nom Fipa fait partie des étiquettes de « tribus » qu'emploient la littérature ethnographique et surtout les archives coloniales britanniques ; c'est selon ces étiquettes que les Britanniques répartissent, de 1920 à 1961, le droit de gouverner et d'être gouverné, selon Tony Waters.",
+            "sources": [
+              {
+                "title": "Social Organization and Social Status in Nineteenth and Twentieth Century Rukwa, Tanzania",
+                "author": "Tony Waters",
+                "year": 2009,
+                "url": "https://asq.africa.ufl.edu/wp-content/uploads/sites/168/Waters-V11Is1.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 62",
+                "notes": "African Studies Quarterly, vol. 11, n° 1, 2009 ; lu dans le texte publié par la revue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1867,
+              "to": 1867,
+              "label": "1867"
+            },
+            "era": "polity",
+            "statement": "Le nom Fipa désigne en 1867, dans le journal de David Livingstone, une montagne, « Moufipa, ou Fipa », la plus haute du pays selon ce qu'on lui dit, en face de l'extrémité sud du lac Tanganyika.",
+            "sources": [
+              {
+                "title": "The Last Journals of David Livingstone, in Central Africa, from 1865 to his Death, vol. I",
+                "author": "David Livingstone, édité par Horace Waller",
+                "year": 1874,
+                "url": "https://archive.org/details/lastjournalsofda01livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 213-214",
+                "notes": "Londres, John Murray, 1874. Journal tenu par l'explorateur en 1867, publié après sa mort ; lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. P. 213 : « Moufipa, or Fipa, opposite the lower end of the Lake, is largest »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1860,
+              "label": "Publié en 1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Fipa apparaît sous les formes Ufipa, le pays, et Wafipa, ses habitants, chez l'explorateur Richard Burton. Il décrit un vaste district fertile, arrosé de nombreuses rivières, dont les habitants accueillent les marchands venus chercher l'ivoire et les esclaves. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Wafipa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa, vol. II",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://archive.org/details/lakeregionscent01burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "vol. II, p. 153-154",
+                "notes": "Londres, Longman, Green, Longman et Roberts, 1860. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. P. 153 : « Ufipa is an extensive district fertilised by many rivers » et « The Wafipa are a wild but kindly people »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wafipa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Fipa, déjà écrit par un explorateur en 1860.",
+        "periodLabel": "Écrit dès 1860 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1893,
+              "to": 1893,
+              "label": "1893"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wafipa désigne, dans un annuaire colonial allemand, l'une des populations qui viennent s'installer en 1893 auprès d'une nouvelle mission catholique du pays mambwe, avec des Wanyika, des Wanyamwange et des Wamambwe.",
+            "sources": [
+              {
+                "title": "Koloniales Jahrbuch, sechster Jahrgang, 1893 : Die katholischen Missionen in den deutschen Schutzgebieten",
+                "author": "Koloniales Jahrbuch",
+                "year": 1894,
+                "url": "https://archive.org/details/kolonialesjahrb06unkngoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 116-117",
+                "notes": "Berlin, Carl Heymann, 1894. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. P. 117 : « Wanyika, Wanyamwange, Wafipa und Wamambwe »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1860,
+              "label": "Publié en 1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Wafipa apparaît chez l'explorateur Richard Burton pour désigner les habitants de l'Ufipa. C'est la plus ancienne trace de cette forme que le projet connaît.",
+            "formAsWritten": "Wafipa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa, vol. II",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://archive.org/details/lakeregionscent01burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "vol. II, p. 153-154",
+                "notes": "Londres, Longman, Green, Longman et Roberts, 1860. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. P. 153 : « Ufipa is an extensive district fertilised by many rivers » et « The Wafipa are a wild but kindly people »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
