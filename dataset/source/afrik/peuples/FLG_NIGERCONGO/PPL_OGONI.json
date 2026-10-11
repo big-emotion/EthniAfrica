@@ -3,6 +3,176 @@
   "nameMain": "Ogoni",
   "languageFamilyId": "FLG_NIGERCONGO",
   "currentCountries": ["NGA"],
+  "nameHistory": {
+    "summary": "Le nom Ogoni désigne un peuple du delta du Niger, au Nigeria, à l'est de Port Harcourt, qui se nomme lui-même Khana. Les sources que nous avons lues n'expliquent pas l'origine du nom Ogoni ; pour le nom Khana, elles rapportent une explication, présentée plus bas.",
+    "names": [
+      {
+        "nameText": "Khana",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ogo",
+        "namedBy": null,
+        "shortLine": "Le nom que la plupart des Ogoni se donnent ; c'est aussi celui d'une de leurs langues.",
+        "usedIn": ["ogo"],
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Khana est celui par lequel la plupart des Ogoni se désignent eux-mêmes, selon le Mouvement pour la survie du peuple ogoni (MOSOP), que cite le tribunal australien des réfugiés. C'est aussi le nom de l'une de leurs langues et se retrouve dans deux de leurs six royaumes, Ken-Khana et Nyo-Khana.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Research Response NGA32636 : Nigeria – Ogoni people",
+                "author": "Refugee Review Tribunal (Australie)",
+                "year": 2007,
+                "url": "https://www.ecoi.net/en/file/local/1315539/1997_1297345684_nga32636.pdf",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Réponse de recherche du 15 novembre 2007, lue sur ecoi.net le 11 octobre 2026. Elle cite la page « Ogoni Kingdom » (1993) du site du Mouvement pour la survie du peuple ogoni (MOSOP), reprise de l'Organisation des nations et des peuples non représentés ; ce site n'a pas été lu.",
+                "page": "p. 2"
+              },
+              {
+                "title": "Ogoni, dans Encyclopedia of World Cultures Supplement",
+                "author": "Alonford James Robinson Jr.",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/ogoni",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Rubriques Orientation, History and Cultural Relations et Sociopolitical Organization, lues sur Encyclopedia.com le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1956,
+              "to": 1956,
+              "label": "1956"
+            },
+            "era": "colonial",
+            "statement": "Le nom Khana devient celui de l'un des trois conseils de comté entre lesquels l'administration coloniale divise les Ogoni, avec Gokana et Eleme, selon Alonford James Robinson.",
+            "sources": [
+              {
+                "title": "Ogoni, dans Encyclopedia of World Cultures Supplement",
+                "author": "Alonford James Robinson Jr.",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/ogoni",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Rubriques Orientation, History and Cultural Relations et Sociopolitical Organization, lues sur Encyclopedia.com le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1993,
+              "to": 1993,
+              "label": "Rapportée en 1993"
+            },
+            "era": "modern",
+            "statement": "Le nom Khana rappellerait celui du Ghana, d'où les Ogoni seraient venus en bateau, selon une théorie que rapporte le MOSOP, cité par le tribunal australien des réfugiés. Alonford James Robinson relie lui aussi ce nom au récit de cette migration, conduite en pirogue jusqu'à Nama par une femme, Gbenekwaanwaa.",
+            "hypothesisGroup": "origine du nom Khana",
+            "sources": [
+              {
+                "title": "Research Response NGA32636 : Nigeria – Ogoni people",
+                "author": "Refugee Review Tribunal (Australie)",
+                "year": 2007,
+                "url": "https://www.ecoi.net/en/file/local/1315539/1997_1297345684_nga32636.pdf",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Réponse de recherche du 15 novembre 2007, lue sur ecoi.net le 11 octobre 2026. Elle cite la page « Ogoni Kingdom » (1993) du site du Mouvement pour la survie du peuple ogoni (MOSOP), reprise de l'Organisation des nations et des peuples non représentés ; ce site n'a pas été lu.",
+                "page": "p. 2"
+              },
+              {
+                "title": "Ogoni, dans Encyclopedia of World Cultures Supplement",
+                "author": "Alonford James Robinson Jr.",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/ogoni",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Rubriques Orientation, History and Cultural Relations et Sociopolitical Organization, lues sur Encyclopedia.com le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ogoni",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom sous lequel ce peuple est connu au Nigeria ; son origine n'est pas expliquée.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ogoni désigne un peuple organisé en six royaumes, Babbe, Eleme, Gokana, Ken-Khana, Nyo-Khana et Tai, selon le MOSOP et Alonford James Robinson. Le catalogue Glottolog le donne aussi comme un autre nom de la langue khana. Les sources que nous avons lues ne disent pas d'où vient ce nom ni quand il apparaît par écrit.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Research Response NGA32636 : Nigeria – Ogoni people",
+                "author": "Refugee Review Tribunal (Australie)",
+                "year": 2007,
+                "url": "https://www.ecoi.net/en/file/local/1315539/1997_1297345684_nga32636.pdf",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Réponse de recherche du 15 novembre 2007, lue sur ecoi.net le 11 octobre 2026. Elle cite la page « Ogoni Kingdom » (1993) du site du Mouvement pour la survie du peuple ogoni (MOSOP), reprise de l'Organisation des nations et des peuples non représentés ; ce site n'a pas été lu.",
+                "page": "p. 2"
+              },
+              {
+                "title": "Ogoni, dans Encyclopedia of World Cultures Supplement",
+                "author": "Alonford James Robinson Jr.",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/ogoni",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Rubriques Orientation, History and Cultural Relations et Sociopolitical Organization, lues sur Encyclopedia.com le 11 octobre 2026."
+              },
+              {
+                "title": "Glottolog — Khana",
+                "author": "Glottolog",
+                "year": 2026,
+                "url": "https://glottolog.org/resource/languoid/id/khan1278",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Consulté le 11 octobre 2026. Les autres noms de la langue y sont repris d'autres catalogues : Kana, Khana, Ogoni."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1945,
+              "to": 1949,
+              "label": "Fin des années 1940"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ogoni désigne alors un groupe qui refuse d'être réparti entre les divisions coloniales d'Opobo, de Degema et d'Ahoada et obtient sa propre Native Authority, selon Alonford James Robinson.",
+            "sources": [
+              {
+                "title": "Ogoni, dans Encyclopedia of World Cultures Supplement",
+                "author": "Alonford James Robinson Jr.",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/ogoni",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Rubriques Orientation, History and Cultural Relations et Sociopolitical Organization, lues sur Encyclopedia.com le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Ogoni",

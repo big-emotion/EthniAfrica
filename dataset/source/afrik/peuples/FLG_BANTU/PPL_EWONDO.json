@@ -3,6 +3,174 @@
   "nameMain": "Ewondo",
   "languageFamilyId": "FLG_BANTU",
   "currentCountries": ["CMR"],
+  "nameHistory": {
+    "summary": "Le nom Ewondo désigne un peuple du centre du Cameroun, autour de Yaoundé, qui se nomme lui-même Ewondo. Un autre nom existe : Yaoundé, que les Allemands écrivaient Jaunde et qui est devenu le nom de la capitale. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Ewondo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ewo",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne dans sa langue ; man Ewondo, « un Ewondo ».",
+        "usedIn": ["ewo"],
+        "periodLabel": "Écrit dès 1913 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ewondo sert aujourd'hui pour ce peuple et pour sa langue. Le catalogue Glottolog relève aussi, pour la langue, les formes Ewundu, Jaunde et Yaunde.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog — Ewondo",
+                "author": "Glottolog",
+                "year": 2026,
+                "url": "https://glottolog.org/resource/languoid/id/ewon1239",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Consulté le 11 octobre 2026. Les autres noms de la langue y sont repris d'autres catalogues : Ewundu, Jaunde, Yaounde, Yaunde."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ewondo apparaît par écrit dans la grammaire du missionnaire allemand Hermann Nekes, qui traduit « Ewondo » par « les Jaunde » et « man Ewondo » par « un Jaunde ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "man Ewondo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Die Sprache der Jaunde in Kamerun",
+                "author": "Hermann Nekes",
+                "year": 1913,
+                "url": "https://archive.org/details/diesprachederjau00nekeuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Berlin, Dietrich Reimer (Ernst Vohsen), collection Deutsche Kolonialsprachen, V, 1913. Lu dans la numérisation d'Internet Archive.",
+                "page": "p. 15"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Yaoundé",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les Allemands écrivaient Jaunde ; il est devenu celui de la capitale.",
+        "periodLabel": "Écrit dès 1889 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par les auteurs"
+            },
+            "statement": "Le nom Yaoundé, écrit Jaunde ou Yaünde par les Allemands, a d'abord désigné le peuple ewondo et le poste allemand fondé chez lui en 1889. Son origine reste discutée ; nous présentons plus bas l'explication que donnent les sources.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Mittheilungen von Forschungsreisenden und Gelehrten aus den deutschen Schutzgebieten, II",
+                "author": "Freiherr von Danckelman (dir.)",
+                "year": 1889,
+                "url": "https://archive.org/details/mittheilungenvon02unse",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Berlin, A. Asher & Co., 1889. Lu dans la numérisation d'Internet Archive. Revue publiée à partir de sources officielles ; ces pages rapportent l'expédition de Kund et Tappenbeck.",
+                "page": "p. 62"
+              },
+              {
+                "title": "Yaünde, Mittheilungen von Forschungsreisenden und Gelehrten aus den deutschen Schutzgebieten, VIII",
+                "author": "G. Zenker",
+                "year": 1895,
+                "url": "https://archive.org/details/mittheilungenvon08unse",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Berlin, 1895. Lu dans la numérisation d'Internet Archive.",
+                "page": "p. 36"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1890,
+              "to": 1890,
+              "label": "1890"
+            },
+            "era": "colonial",
+            "statement": "Le nom Yaoundé s'impose alors sous la forme Jaunde dans la revue coloniale allemande des Mittheilungen. La rédaction note que le lieutenant Morgen tient à « Jaunde » plutôt qu'à « Jeundo », parce que les habitants le prononcent ainsi, et que Kund et Tappenbeck écrivent souvent Jaunde dans leurs carnets.",
+            "sources": [
+              {
+                "title": "Mittheilungen von Forschungsreisenden und Gelehrten aus den deutschen Schutzgebieten, III",
+                "author": "Freiherr von Danckelman (dir.)",
+                "year": 1890,
+                "url": "https://archive.org/details/mittheilungenvon03unse",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Berlin, 1890. Lu dans la numérisation d'Internet Archive.",
+                "page": "p. 117, note de la rédaction"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1889,
+              "to": 1889,
+              "label": "1889"
+            },
+            "era": "colonial",
+            "statement": "Le nom Yaoundé apparaît par écrit en 1889 dans les rapports de l'expédition allemande du capitaine Kund et du lieutenant Tappenbeck, sous deux formes : Jeundo pour le peuple qui les reçoit avec des chants et des danses, et Jaundestation pour le poste qu'ils fondent sur le plateau, entre le Nyong et la Sanaga. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mittheilungen von Forschungsreisenden und Gelehrten aus den deutschen Schutzgebieten, II",
+                "author": "Freiherr von Danckelman (dir.)",
+                "year": 1889,
+                "url": "https://archive.org/details/mittheilungenvon02unse",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Berlin, A. Asher & Co., 1889. Lu dans la numérisation d'Internet Archive. Revue publiée à partir de sources officielles ; ces pages rapportent l'expédition de Kund et Tappenbeck.",
+                "page": "p. 62 et p. 108"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "Proposée en 1895"
+            },
+            "era": "colonial",
+            "statement": "Le nom Yaoundé, que G. Zenker écrit Yaünde ou Yawounde, signifierait « arachide » : il dirait que les membres de ce peuple sont aussi nombreux que les arachides, selon Zenker.",
+            "hypothesisGroup": "origine du nom Yaoundé",
+            "sources": [
+              {
+                "title": "Yaünde, Mittheilungen von Forschungsreisenden und Gelehrten aus den deutschen Schutzgebieten, VIII",
+                "author": "G. Zenker",
+                "year": 1895,
+                "url": "https://archive.org/details/mittheilungenvon08unse",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Berlin, 1895. Lu dans la numérisation d'Internet Archive.",
+                "page": "p. 36"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Ewondo",

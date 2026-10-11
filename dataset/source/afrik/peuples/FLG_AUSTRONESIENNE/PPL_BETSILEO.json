@@ -3,6 +3,108 @@
   "nameMain": "Betsileo",
   "languageFamilyId": "FLG_AUSTRONESIENNE",
   "currentCountries": ["MDG"],
+  "nameHistory": {
+    "summary": "Le nom Betsileo désigne un peuple des hautes terres du sud de Madagascar, autour de Fianarantsoa, qui se nomme lui-même Betsileo. Avant ce nom, on parlait de royaumes comme l'Arindrano. Les sources ne s'accordent pas toujours sur l'origine du nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Betsileo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "plt",
+        "namedBy": null,
+        "shortLine": "« Beaucoup, non vaincus » selon Ellis : un nom écrit dès 1838, peut-être né de la conquête merina.",
+        "usedIn": ["plt"],
+        "periodLabel": "Écrit dès 1838 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom Betsileo signifie « beaucoup, non vaincus », c'est-à-dire « invincibles », selon le missionnaire William Ellis, qui y voit l'esprit indépendant des habitants. D'où vient ce nom et qui l'a donné reste discuté ; nous présentons plus bas ce qu'en disent les sources.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "History of Madagascar, vol. I",
+                "author": "William Ellis",
+                "year": 1838,
+                "url": "https://archive.org/details/historyofmadagas01elli",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Fisher, Son & Co., 1838. Lu dans la numérisation d'Internet Archive. L'auteur est secrétaire de la London Missionary Society ; le livre retrace aussi la mission chrétienne fondée en 1818.",
+                "page": "p. 76"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1838,
+              "to": 1838,
+              "label": "1838"
+            },
+            "era": "polity",
+            "statement": "Le nom Betsileo apparaît par écrit chez le missionnaire britannique William Ellis, qui en fait l'une des provinces de Madagascar, au nord de l'Ibara, séparée de l'Ankova par les monts Ankaratra. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Betsileo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "History of Madagascar, vol. I",
+                "author": "William Ellis",
+                "year": 1838,
+                "url": "https://archive.org/details/historyofmadagas01elli",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Fisher, Son & Co., 1838. Lu dans la numérisation d'Internet Archive. L'auteur est secrétaire de la London Missionary Society ; le livre retrace aussi la mission chrétienne fondée en 1818.",
+                "page": "p. 76"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1661,
+              "to": 1661,
+              "label": "1661"
+            },
+            "era": "polity",
+            "statement": "Le nom Betsileo ne figure pas dans la liste des peuples de Madagascar que publie Étienne de Flacourt en 1661, selon Conrad Kottak. On parle alors de l'Arindrano, écrit Eringdranes par les explorateurs français, pour une partie de ce pays.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Betsileo, dans Encyclopedia of World Cultures",
+                "author": "Conrad P. Kottak",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/betsileo",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Rubrique consacrée au nom, lue sur Encyclopedia.com le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Betsileo serait né de la conquête merina : les Betsileo ne l'auraient adopté pour eux-mêmes qu'après cette conquête, au XIXe siècle, selon l'anthropologue Conrad Kottak.",
+            "hypothesisGroup": "origine du nom Betsileo",
+            "sources": [
+              {
+                "title": "Betsileo, dans Encyclopedia of World Cultures",
+                "author": "Conrad P. Kottak",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/betsileo",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Rubrique consacrée au nom, lue sur Encyclopedia.com le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Betsileo",
