@@ -226,9 +226,8 @@ describe("fiche errors found by waves 6 and 7", () => {
   // @req REQ-133
   it("gives Maurice Lohourignon the job title the article prints", () => {
     const fiche = readFiche("patronymes/PAT_LOHOURIGNON");
-    const note = fiche.sources.find(
-      (source: { sourceKey: string }) =>
-        source.sourceKey === "allafrica-2006-lohourignon"
+    const note = fiche.sources.find((source: { url: string }) =>
+      source.url.includes("allafrica.com")
     ).notes;
 
     expect(note).toContain(
