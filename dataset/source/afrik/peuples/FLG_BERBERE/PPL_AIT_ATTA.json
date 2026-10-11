@@ -122,5 +122,88 @@
         "source_kind": "ngo"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ait Atta désigne une confédération de tribus berbères du sud-est du Maroc, autour du djebel Saghro, qui se nomme elle-même Ait Atta. Le nom renvoie à un ancêtre, Dadda Atta, selon la tradition, et un auteur espagnol l'écrit Ytata dès 1571. Nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Ait Atta",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tzm",
+        "namedBy": null,
+        "shortLine": "« Les fils d'Atta » : le nom renvoie à un ancêtre, Dadda Atta, selon la tradition.",
+        "periodLabel": "Écrit depuis 1571 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Ait Atta se comprend comme « les fils d'Atta » : en tamazight, ait signifie « fils de, enfants de », selon l'anthropologue David M. Hart. Tous les Ait Atta tiennent Dadda Atta pour leur ancêtre commun, même si aucun ne sait retracer le lien qui l'unit à lui.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Ait 'Atta of Southern Morocco: Daily Life and Recent History",
+                "author": "David M. Hart",
+                "year": 1984,
+                "url": "https://archive.org/details/the-ait-atta-of-southern-morocco-daily-life-and-recent-history-david-hart-pdf_compress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 43 et p. 76, note",
+                "notes": "Wisbech, Middle East and North African Studies Press. Lu sur Internet Archive (copie non officielle), lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1571,
+              "to": 1571,
+              "label": "1571"
+            },
+            "era": "polity",
+            "statement": "Le nom Ait Atta apparaît, sous la forme « Ytata », dans la Descripción general de África de Luis del Mármol Carvajal, en 1571, selon David M. Hart. Il la présente comme la plus ancienne mention attribuée à un auteur européen et reprend la référence au lieutenant Georges Spillmann, en 1931. C'est la plus ancienne trace de ce nom que le projet connaît ; nous n'avons lu ni Mármol ni Spillmann. Les tribus qu'il désigne existaient déjà avant lui.",
+            "formAsWritten": "Ytata",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Ait 'Atta of Southern Morocco: Daily Life and Recent History",
+                "author": "David M. Hart",
+                "year": 1984,
+                "url": "https://archive.org/details/the-ait-atta-of-southern-morocco-daily-life-and-recent-history-david-hart-pdf_compress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 54 et p. 79, note 24",
+                "notes": "Wisbech, Middle East and North African Studies Press. Lu sur Internet Archive (copie non officielle), lu le 11 octobre 2026. L'auteur cite Georges Spillmann, Districts et tribus de la haute vallée du Dra, Paris, Honoré Champion, 1931, p. 61-62, note 2."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "Rapportée en 1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Ait Atta viendrait d'Atta, un Berbère du Saghro dont les quarante fils auraient été tués le jour de leurs noces. Devenu grand-père, « Dadda Atta », il aurait vu naître de leurs veuves les ancêtres de la confédération, selon la tradition que rapporte David M. Hart.",
+            "hypothesisGroup": "origine du nom Ait Atta",
+            "sources": [
+              {
+                "title": "The Ait 'Atta of Southern Morocco: Daily Life and Recent History",
+                "author": "David M. Hart",
+                "year": 1984,
+                "url": "https://archive.org/details/the-ait-atta-of-southern-morocco-daily-life-and-recent-history-david-hart-pdf_compress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 42-43",
+                "notes": "Wisbech, Middle East and North African Studies Press. Lu sur Internet Archive (copie non officielle), lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

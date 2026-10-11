@@ -131,5 +131,335 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Krio désigne un peuple de Freetown et de la péninsule de Sierra Leone, né des colons noirs et des Africains libérés installés là à partir de 1787, qui se nomme lui-même Krio. D'autres noms existent : Creole en anglais, Aku pour les Krio d'origine yoruba, Saro au Nigeria. Les sources ne s'accordent pas sur l'origine du nom Krio ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Krio",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kri",
+        "namedBy": null,
+        "shortLine": "Le nom que le peuple se donne ; on le dit tiré de l'anglais creole ou du yoruba.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Krio désigne à la fois le peuple et sa langue, un créole à base d'anglais que la plupart des habitants de la Sierra Leone emploient pour se comprendre, selon le linguiste Malcolm Awadajin Finney. On ne sait pas avec certitude d'où vient ce nom ; deux explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Survey chapter: Krio",
+                "author": "Malcolm Awadajin Finney",
+                "year": null,
+                "url": "https://apics-online.info/surveys/15",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "sections 1 et 2",
+                "notes": "Dans l'Atlas of Pidgin and Creole Language Structures Online, sous la direction de Susanne Maria Michaelis, Philippe Maurer, Martin Haspelmath et Magnus Huber ; la page ne donne pas d'année. lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Krio viendrait du mot anglais creole, « créole », dont il serait une forme transformée, selon une suggestion que rapporte Malcolm Awadajin Finney sans en nommer l'auteur.",
+            "hypothesisGroup": "origine du nom Krio",
+            "sources": [
+              {
+                "title": "Survey chapter: Krio",
+                "author": "Malcolm Awadajin Finney",
+                "year": null,
+                "url": "https://apics-online.info/surveys/15",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section 2",
+                "notes": "Dans l'Atlas of Pidgin and Creole Language Structures Online, sous la direction de Susanne Maria Michaelis, Philippe Maurer, Martin Haspelmath et Magnus Huber ; la page ne donne pas d'année. lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1989,
+              "label": "Proposée en 1980, reprise en 1989"
+            },
+            "era": "modern",
+            "statement": "Le nom Krio viendrait du yoruba akiriyo, « nous allons çà et là, rassasiés », qui désignerait ceux qui ont l'habitude d'aller en visite après l'office, comme le font les Krio. Clifford Fyle et Eldred Jones le proposent en 1980, et l'historien Akintola Wyse le reprend en 1989, selon Malcolm Awadajin Finney. Nous n'avons lu ni l'un ni l'autre livre.",
+            "hypothesisGroup": "origine du nom Krio",
+            "sources": [
+              {
+                "title": "Survey chapter: Krio",
+                "author": "Malcolm Awadajin Finney",
+                "year": null,
+                "url": "https://apics-online.info/surveys/15",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section 2",
+                "notes": "Dans l'Atlas of Pidgin and Creole Language Structures Online ; la page ne donne pas d'année. L'auteur cite Clifford Fyle et Eldred Jones, A Krio-English Dictionary, Oxford University Press, 1980, p. 302, et Akintola Wyse, The Krio of Sierra Leone: An Interpretive History, Londres, Hurst, 1989, p. 6. lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Creole",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "eng",
+        "namedBy": null,
+        "shortLine": "Le nom anglais du peuple ; écrit à Freetown dès 1843 pour les enfants nés dans la colonie.",
+        "periodLabel": "Écrit depuis 1843 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1965,
+              "to": 1965,
+              "label": "1965"
+            },
+            "era": "modern",
+            "statement": "Le nom Creole n'était pas donné, au XIXe siècle, aux Africains libérés revenus de Sierra Leone à Lagos et dans son arrière-pays, selon l'historienne Jean Herskovits Kopytoff. Elle l'évite pour cette raison, et parce que le mot fait penser au métissage, comme en Amérique.",
+            "sources": [
+              {
+                "title": "A Preface to Modern Nigeria: The « Sierra Leonians » in Yoruba, 1830-1890",
+                "author": "Jean Herskovits Kopytoff",
+                "year": 1965,
+                "url": "https://nigeriareposit.nln.gov.ng/bitstreams/732b198a-6dff-4baf-a5d4-46e94731054c/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. viii",
+                "notes": "Madison, University of Wisconsin Press. Lu dans la numérisation du dépôt de la Bibliothèque nationale du Nigeria (copie non officielle), lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1861,
+              "to": 1863,
+              "label": "1861-1863"
+            },
+            "era": "colonial",
+            "statement": "Le nom Creole désigne encore, chez Robert Clarke, les enfants des Africains libérés. Il les distingue des descendants des colons venus de Nouvelle-Écosse, des Marrons de Jamaïque et des Européens.",
+            "sources": [
+              {
+                "title": "Sketches of the Colony of Sierra Leone and its Inhabitants",
+                "author": "Robert Clarke",
+                "year": 1863,
+                "url": "https://archive.org/details/b2851936x",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5 et p. 8",
+                "notes": "Tiré à part des Transactions of the Ethnological Society of London, sessions 1861-1862. Lu sur la numérisation du Royal College of Physicians sur Internet Archive, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1843,
+              "to": 1843,
+              "label": "1843"
+            },
+            "era": "colonial",
+            "statement": "Le nom Creole apparaît par écrit dans le livre du chirurgien Robert Clarke, imprimé à Londres en 1843 : il y désigne les « enfants nés dans la colonie », seuls admis dans les écoles des missions, à part des enfants des Africains libérés. C'est la plus ancienne trace de ce nom en Sierra Leone que le projet connaît. Les familles qu'il désigne vivaient déjà à Freetown avant lui.",
+            "formAsWritten": "Creoles",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Sierra Leone: A Description of the Manners and Customs of the Liberated Africans",
+                "author": "Robert Clarke",
+                "year": 1843,
+                "url": "https://archive.org/details/b2930801x",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 33",
+                "notes": "Londres, James Ridgway. Lu sur la numérisation de la Wellcome Library sur Internet Archive, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1834,
+              "to": 1836,
+              "label": "Visite de 1834 (récit publié en 1836)"
+            },
+            "era": "colonial",
+            "statement": "On parle alors des Maroons et des « Liberated », les Africains libérés, pour désigner une partie des habitants de la colonie, selon F. Harrison Rankin, qui n'emploie pas le nom Creole.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The White Man's Grave: A Visit to Sierra Leone, in 1834",
+                "author": "F. Harrison Rankin",
+                "year": 1836,
+                "url": "https://archive.org/details/whitemansgravea01rankgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 210",
+                "notes": "Londres, Richard Bentley, tome I. Lu sur la numérisation de Google Books sur Internet Archive, lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Aku",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom donné aux Yoruba libérés à Freetown ; il ne désigne plus que les Krio musulmans.",
+        "periodLabel": "Écrit depuis 1836 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "XIXe-XXe siècles"
+            },
+            "statement": "Le nom Aku désigne à Freetown, au XIXe siècle, toutes les personnes de langue yoruba. Au XXe siècle, il ne s'applique plus qu'aux descendants musulmans des Africains libérés d'origine yoruba, selon Jean Herskovits Kopytoff.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Preface to Modern Nigeria: The « Sierra Leonians » in Yoruba, 1830-1890",
+                "author": "Jean Herskovits Kopytoff",
+                "year": 1965,
+                "url": "https://nigeriareposit.nln.gov.ng/bitstreams/732b198a-6dff-4baf-a5d4-46e94731054c/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21-22",
+                "notes": "Madison, University of Wisconsin Press. Lu dans la numérisation du dépôt de la Bibliothèque nationale du Nigeria (copie non officielle), lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Aku est présenté par la plupart des études sur la Sierra Leone comme un nom colonial des peuples yoruba de l'actuel Nigeria, selon l'historien Richard Peter Anderson. Il cherche à comprendre comment ce groupe en est venu à dominer ce que l'administration et les missions écrivaient sur les Africains libérés.",
+            "sources": [
+              {
+                "title": "Abolition in Sierra Leone: Re-Building Lives and Identities in Nineteenth-Century West Africa, chapitre 6 : Religion, Return, and the Making of the Aku",
+                "author": "Richard Peter Anderson",
+                "year": 2020,
+                "url": "https://www.cambridge.org/core/books/abolition-in-sierra-leone/religion-return-and-the-making-of-the-aku/E10C6813133ACC67D5128691867A1E4B",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 192-226",
+                "notes": "Cambridge University Press. Seul le résumé du chapitre a été lu, sur le site de l'éditeur, le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1841,
+              "to": 1841,
+              "label": "1841"
+            },
+            "era": "colonial",
+            "statement": "Le nom Aku s'écrit « Ackoos » sous la plume du gouverneur Doherty en 1841 : il y voit des Africains libérés venus du royaume du « Yarriba », selon Jean Herskovits Kopytoff, qui cite sa lettre.",
+            "sources": [
+              {
+                "title": "A Preface to Modern Nigeria: The « Sierra Leonians » in Yoruba, 1830-1890",
+                "author": "Jean Herskovits Kopytoff",
+                "year": 1965,
+                "url": "https://nigeriareposit.nln.gov.ng/bitstreams/732b198a-6dff-4baf-a5d4-46e94731054c/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "Madison, University of Wisconsin Press. Lu dans la numérisation du dépôt de la Bibliothèque nationale du Nigeria (copie non officielle), lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1834,
+              "to": 1836,
+              "label": "Visite de 1834 (récit publié en 1836)"
+            },
+            "era": "colonial",
+            "statement": "Le nom Aku apparaît par écrit, sous la forme « Akoos », dans le récit de F. Harrison Rankin, qui visite la Sierra Leone en 1834 et publie son livre à Londres en 1836 : il range les Akoos parmi les nombreux peuples des Africains libérés de la colonie. C'est la plus ancienne trace de ce nom que le projet connaît. Les personnes qu'il désigne existaient déjà avant lui.",
+            "formAsWritten": "Akoos",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The White Man's Grave: A Visit to Sierra Leone, in 1834",
+                "author": "F. Harrison Rankin",
+                "year": 1836,
+                "url": "https://archive.org/details/whitemansgravea01rankgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 34 et p. 210-211",
+                "notes": "Londres, Richard Bentley, tome I. Lu sur la numérisation de Google Books sur Internet Archive, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1965,
+              "to": 1965,
+              "label": "Rapportée en 1965"
+            },
+            "era": "modern",
+            "statement": "Le nom Aku viendrait de la salutation « Oku » qu'échangeaient les Yoruba de Freetown, selon plusieurs sources que résume Jean Herskovits Kopytoff sans les citer dans le texte.",
+            "hypothesisGroup": "origine du nom Aku",
+            "sources": [
+              {
+                "title": "A Preface to Modern Nigeria: The « Sierra Leonians » in Yoruba, 1830-1890",
+                "author": "Jean Herskovits Kopytoff",
+                "year": 1965,
+                "url": "https://nigeriareposit.nln.gov.ng/bitstreams/732b198a-6dff-4baf-a5d4-46e94731054c/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21",
+                "notes": "Madison, University of Wisconsin Press. Lu dans la numérisation du dépôt de la Bibliothèque nationale du Nigeria (copie non officielle), lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Saro",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom donné en pays yoruba aux Africains libérés revenus de Sierra Leone.",
+        "periodLabel": "XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "XIXe siècle"
+            },
+            "statement": "Le nom Saro désigne parfois, en pays yoruba, les Africains libérés revenus de Sierra Leone, qu'on appelle aussi les émigrants, selon Jean Herskovits Kopytoff. Elle le traduit par « Sierra-Léonais ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Preface to Modern Nigeria: The « Sierra Leonians » in Yoruba, 1830-1890",
+                "author": "Jean Herskovits Kopytoff",
+                "year": 1965,
+                "url": "https://nigeriareposit.nln.gov.ng/bitstreams/732b198a-6dff-4baf-a5d4-46e94731054c/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. viii",
+                "notes": "Madison, University of Wisconsin Press. Lu dans la numérisation du dépôt de la Bibliothèque nationale du Nigeria (copie non officielle), lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
