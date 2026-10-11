@@ -108,5 +108,176 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Shambaa désigne un peuple bantou des monts Usambara, dans le nord-est de la Tanzanie, qui se nommait Washambala au XIXe siècle et dont le pays s'appelle Shambaai. Les Swahili disent Wasambaa, et les cartes européennes ont écrit Usambara. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Shambaa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ksb",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils portent, Washambala chez les premiers auteurs ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit depuis 1867 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Shambaa désigne aujourd'hui un peuple dont le pays s'appelle Shambaai, ou Shambalai, selon la Worldmark Encyclopedia of Cultures and Daily Life. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Shambaa",
+                "author": "Worldmark Encyclopedia of Cultures and Daily Life",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/shambaa",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article révisé par M. Njoroge, lu sur Encyclopedia.com le 11 octobre 2026. La page ne donne pas l'année de l'article."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1867,
+              "to": 1867,
+              "label": "1867"
+            },
+            "era": "polity",
+            "statement": "Le nom Shambaa apparaît sous une forme proche, Washambala, dans le recueil sur leur langue que publie le missionnaire Edward Steere à Zanzibar en 1867. Selon lui, le peuple appelle sa langue Kishambala et dit Mshambala pour une personne. C'est la plus ancienne trace de cette forme que le projet connaît. Les Washambala vivaient déjà dans leurs montagnes avant elle.",
+            "formAsWritten": "Washambala",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Collections for a Handbook of the Shambala Language",
+                "author": "Edward Steere",
+                "year": 1867,
+                "url": "https://archive.org/details/collectionsfora00steegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "préface",
+                "notes": "Zanzibar, imprimerie de la mission de l'Afrique centrale, 1867. Lu dans la numérisation d'Internet Archive le 11 octobre 2026 ; la préface n'est pas paginée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1800,
+              "label": "1500-1800"
+            },
+            "era": "polity",
+            "statement": "Le nom Shambaa figure parmi les peuples du centre de l'intérieur de l'Afrique de l'Est entre 1500 et 1800, avec les Masaï, les Chagga, les Pare, les Gogo et les Hehe, selon W. R. Ochieng'.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 27 : L'intérieur de l'Afrique de l'Est : les peuples du Kenya et de la Tanzanie (1500-1800)",
+                "author": "W. R. Ochieng'",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 899",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wasambaa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "swh",
+        "namedBy": "Les Swahili, selon Edward Steere",
+        "shortLine": "La forme swahilie du nom, employée aujourd'hui en Tanzanie.",
+        "periodLabel": "Écrit depuis 1867 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1867,
+              "to": 1867,
+              "label": "1867"
+            },
+            "era": "polity",
+            "statement": "Le nom Wasambaa apparaît sous une forme proche en 1867 : les Swahili appellent la langue Kisambaa, écrit le missionnaire Edward Steere. C'est la plus ancienne trace de cette forme que le projet connaît. La langue existait déjà avant elle.",
+            "formAsWritten": "Kisambaa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Collections for a Handbook of the Shambala Language",
+                "author": "Edward Steere",
+                "year": 1867,
+                "url": "https://archive.org/details/collectionsfora00steegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "préface",
+                "notes": "Zanzibar, imprimerie de la mission de l'Afrique centrale, 1867. Lu dans la numérisation d'Internet Archive le 11 octobre 2026 ; la préface n'est pas paginée."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Usambara",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les cartes européennes, selon Edward Steere",
+        "shortLine": "La forme des cartes européennes, restée le nom des monts Usambara.",
+        "periodLabel": "Écrit depuis 1850 ; en usage aujourd'hui pour les montagnes",
+        "accounts": [
+          {
+            "period": {
+              "from": 1867,
+              "to": 1867,
+              "label": "1867"
+            },
+            "era": "polity",
+            "statement": "Le nom Usambara est celui que portent les cartes européennes pour le pays des Washambala, selon Edward Steere, qui note que le missionnaire Johann Ludwig Krapf appelait leur langue Kisambara.",
+            "formAsWritten": "Usambara",
+            "sources": [
+              {
+                "title": "Collections for a Handbook of the Shambala Language",
+                "author": "Edward Steere",
+                "year": 1867,
+                "url": "https://archive.org/details/collectionsfora00steegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "préface",
+                "notes": "Zanzibar, imprimerie de la mission de l'Afrique centrale, 1867. Lu dans la numérisation d'Internet Archive le 11 octobre 2026 ; la préface n'est pas paginée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1850,
+              "to": 1850,
+              "label": "1850"
+            },
+            "era": "polity",
+            "statement": "Le nom Usambara apparaît sous une forme proche en 1850, dans la préface du vocabulaire de six langues d'Afrique de l'Est du missionnaire Johann Ludwig Krapf, qui évoque les « tribus wasegua et wasambara » en face de l'île de Zanzibar. C'est la plus ancienne trace de cette forme que le projet connaît. Les Shambaa vivaient déjà dans leurs montagnes avant elle.",
+            "formAsWritten": "Wasambara",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulary of Six East-African Languages (Kisuáheli, Kiníka, Kikámba, Kipokómo, Kihiáu, Kigálla)",
+                "author": "Johann Ludwig Krapf",
+                "year": 1850,
+                "url": "https://archive.org/details/cu31924026933139",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. IV",
+                "notes": "Tübingen, Ludwig Friedrich Fues, 1850. Lu dans la numérisation d'Internet Archive, préface, le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

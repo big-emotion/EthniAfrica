@@ -119,5 +119,154 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bulu désigne un peuple de langue bantoue du sud du Cameroun, présent aussi au Gabon et en Guinée équatoriale, qui se nomme lui-même Bulu ; les auteurs de langue française écrivent souvent Boulou. Au milieu du XXe siècle, on le rangeait avec les Fang et les Beti dans un « groupe dit pahouin ». On ne sait pas avec certitude d'où vient le nom Bulu ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Bulu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bum",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils portent, imprimé dès 1895 en tête d'un livre en bulu ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit depuis 1895 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Récit non daté"
+            },
+            "statement": "Le nom Bulu désigne l'un des peuples, avec les Beti et les Ntumu, qu'une thèse ancienne fait venir du nord après la traversée de la Sanaga, les Bulu séparément des autres, selon J. Vansina. Il juge que cette thèse mêle des traditions disparates ; on ne sait pas non plus avec certitude d'où vient le nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 3 : Les mouvements de population et l'émergence de nouvelles formes sociopolitiques en Afrique",
+                "author": "J. Vansina",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 90",
+                "notes": "UNESCO, volume dirigé par Bethwell A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "1895"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bulu apparaît imprimé en 1895 dans le titre d'un petit livre de calcul en langue bulu, Bikange bi Bulu, publié à New York par l'American Tract Society et attribué à Hermann Jacob. C'est la plus ancienne trace de ce nom que le projet connaît. Les Bulu existaient déjà avant lui.",
+            "formAsWritten": "Bulu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Bikange bi Bulu",
+                "author": "Hermann Jacob (attribué)",
+                "year": 1895,
+                "url": "https://archive.org/details/bikangebibulu00jaco",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre",
+                "notes": "New York, American Tract Society, 1895, 24 pages. Lu dans la numérisation d'Internet Archive le 11 octobre 2026 ; le catalogue attribue le livre à Hermann Jacob, entre crochets."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1800,
+              "to": 1880,
+              "label": "1800-1880"
+            },
+            "era": "polity",
+            "statement": "Le nom Bulu figure parmi les groupes apparentés aux Fang qui, au XIXe siècle, quittent les savanes du sud de l'actuel Cameroun pour la forêt, jusqu'au Gabon, selon Albert Adu Boahen.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 3 : Tendances et processus nouveaux dans l'Afrique du XIXe siècle",
+                "author": "Albert Adu Boahen",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 66",
+                "notes": "UNESCO, volume dirigé par J. F. Ade Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Boulou",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "Les auteurs de langue française",
+        "shortLine": "La façon d'écrire Bulu en français.",
+        "periodLabel": "Écrit depuis 1958 au moins ; en usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1958,
+              "to": 1958,
+              "label": "1958"
+            },
+            "era": "colonial",
+            "statement": "Le nom Boulou figure dans le titre de l'étude de P. Alexandre et J. Binet, Le groupe dit pahouin (Fang-Boulou-Beti), publiée en 1958, selon la bibliographie de l'Histoire générale de l'Afrique. C'est la plus ancienne trace de cette forme que le projet connaît. Les Bulu existaient déjà avant elle.",
+            "formAsWritten": "Boulou",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, bibliographie du volume",
+                "author": "UNESCO",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 996",
+                "notes": "Volume dirigé par Bethwell A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026. La bibliographie cite : Alexandre, P. et Binet, J. 1958. Le groupe dit pahouin (Fang-Boulou-Beti), Londres/Paris, IAI/PUF ; nous n'avons pas lu ce livre."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Pahouin",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom qui regroupait les Fang, les Bulu et les Beti ; on parlait du « groupe dit pahouin ».",
+        "periodLabel": "Milieu du XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1958,
+              "to": 1958,
+              "label": "1958"
+            },
+            "era": "colonial",
+            "statement": "Le nom Pahouin sert alors à regrouper les Fang, les Boulou et les Beti : le titre de l'étude de P. Alexandre et J. Binet, en 1958, parle du « groupe dit pahouin », selon la bibliographie de l'Histoire générale de l'Afrique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, bibliographie du volume",
+                "author": "UNESCO",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 996",
+                "notes": "Volume dirigé par Bethwell A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026. La bibliographie cite : Alexandre, P. et Binet, J. 1958. Le groupe dit pahouin (Fang-Boulou-Beti), Londres/Paris, IAI/PUF ; nous n'avons pas lu ce livre."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
