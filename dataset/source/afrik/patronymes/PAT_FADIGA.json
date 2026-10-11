@@ -204,5 +204,217 @@
       "fieldPath": "casteOrSocialFunction",
       "reason": "Le dictionnaire des jamuw ne porte aucun statut pour ce nom, et nous n'avons trouvé aucune autre source lui attribuant une fonction sociale."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Fadiga est un nom de clan porté chez les Diakhanké, les Soninké et les Malinké ; on l'écrit aussi Fadika. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Fadiga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan diakhanké, soninké et malinké, écrit dès 1907 ; son origine reste discutée.",
+        "periodLabel": "Écrit dès 1907 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Fadiga désigne un clan. Aucune source lue ne lui donne de sens ; les sources le disent tantôt soninké, tantôt malinké, et racontent son origine de façons différentes, présentées séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 11 octobre 2026. Entrée Fàdiga, variante Fàdika : aucun sens donné."
+              },
+              {
+                "title": "La Guinée française",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 279, 282",
+                "notes": "Paris, Challamel, 1907. Administrateur colonial. Lu sur le texte numérisé d'archive.org le 11 octobre 2026 ; cité pour les formes et les classements qu'il rapporte, non pour ses théories sur les races. Fadiga figure page 279 parmi les familles soninké et page 282 parmi les familles soso, « d'origine Malinké »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Fadiga est écrit Fàdiga ou Fàdika dans le dictionnaire des noms de clan ; un mémoire de 2017 le donne chez les Bambara et les Malinké.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 11 octobre 2026. Entrée Fàdiga et sa variante Fàdika."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 41",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, 2017, dirigé par A. Davydov et relu par V. Vydrin, lu en texte intégral le 11 octobre 2026 ; traduction du russe par nos soins. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Notice Fàdiga : peuples bambara et malinké."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Récit de la tradition diakhanké"
+            },
+            "statement": "Le nom Fadiga, dit aussi Dibassy, est celui de l'une des quatre maisons sur lesquelles repose la communauté diakhanké. Le même récit nomme Tounlé Fadiga parmi les cousins qui fondent avec M'bemba Laye le premier village diakhanké, Diakha, selon un site communautaire diakhanké.",
+            "actors": [
+              {
+                "name": "Tounlé Fadiga",
+                "role": "cousin du fondateur dans le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire des Diakhankhé",
+                "author": "Site Djakodico",
+                "year": null,
+                "url": "https://www.djakodico.com/history.php",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site communautaire consacré au patrimoine diakhanké, sans auteur individuel nommé, lu le 11 octobre 2026. Il compte Fadiga, dit Dibassy, parmi les quatre maisons fondatrices des Diakhanké et nomme Tounlé Fadiga parmi les cousins qui fondent Diakha avec M'bemba Laye."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Fadiga apparaît par écrit chez André Arcin, administrateur colonial, dans sa liste des familles soninké de Guinée. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand des familles le portent.",
+            "formAsWritten": "Fadiga",
+            "birth": true,
+            "actors": [
+              {
+                "name": "André Arcin",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "La Guinée française",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 279",
+                "notes": "Paris, Challamel, 1907. Administrateur colonial. Lu sur le texte numérisé d'archive.org le 11 octobre 2026 ; cité pour les formes et les classements qu'il rapporte, non pour ses théories sur les races. Liste des Soninké : « En Fadiga »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Proposée en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Fadiga serait d'origine malinké, selon André Arcin, qui le range pourtant ailleurs parmi les familles soninké.",
+            "hypothesisGroup": "origine du nom Fadiga",
+            "sources": [
+              {
+                "title": "La Guinée française",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 282",
+                "notes": "Paris, Challamel, 1907. Administrateur colonial. Lu sur le texte numérisé d'archive.org le 11 octobre 2026 ; cité pour les formes et les classements qu'il rapporte, non pour ses théories sur les races. Liste des familles soso : « Les Fadiga d'origine Malinké »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Rapportée en 1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Fadiga viendrait d'un ancêtre, Touré Fadiga, présenté comme un captif du roi Salomon, selon la légende des Dibassi Fadiga que rapporte André Arcin.",
+            "hypothesisGroup": "origine du nom Fadiga",
+            "actors": [
+              {
+                "name": "Touré Fadiga",
+                "role": "ancêtre de la légende"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire de la Guinée française",
+                "author": "André Arcin",
+                "year": 1911,
+                "url": "https://archive.org/details/histoiredelaguin00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 81, note 1",
+                "notes": "Paris, Challamel, 1911. Administrateur colonial. Lu sur le texte numérisé d'archive.org le 11 octobre 2026. « La légende des Dibassi Fadiga les fait descendre de Touré Fadiga, captif de Salomon »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Fadika",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Fadika est une variante de Fadiga dans le dictionnaire des noms de clan mandingues.",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 11 octobre 2026. Entrée Fàdiga, variante Fàdika."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
