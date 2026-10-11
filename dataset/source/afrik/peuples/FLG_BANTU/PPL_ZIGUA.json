@@ -3,6 +3,147 @@
   "nameMain": "Zigua",
   "languageFamilyId": "FLG_BANTU",
   "currentCountries": ["TZA"],
+  "nameHistory": {
+    "summary": "Le nom Zigua désigne un peuple bantou du nord-est de la Tanzanie, dans la région de Tanga, qui se nomme lui-même Wazigua. On écrit aussi Zigula. Les sources que nous avons lues n'expliquent pas l'origine de ce nom ; nous présentons plus bas ses plus anciennes traces.",
+    "names": [
+      {
+        "nameText": "Zigua",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ziw",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple du nord-est de la Tanzanie ; on écrit aussi Zigula ou Wazigua.",
+        "periodLabel": "Écrit Wasegua en 1860 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par les auteurs"
+            },
+            "statement": "Le nom Zigua, écrit aussi Zigula, désigne chez les historiens de l'Histoire générale de l'Afrique un peuple de l'arrière-pays de la côte tanzanienne, entre la vallée de la Pangani et la mer. Les sources que nous avons lues n'expliquent pas son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 27 : L'intérieur de l'Afrique de l'Est : les peuples du Kenya et de la Tanzanie (1500-1800)",
+                "author": "W. R. Ochieng'",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 899",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 10 : La côte et l'hinterland de l'Afrique orientale de 1845 à 1880",
+                "author": "Isaria N. Kimambo",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 277 et p. 284",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1844,
+              "to": 1860,
+              "label": "Voyage de 1844, livre de 1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Zigua apparaît sous une forme proche, Wasegua, chez le missionnaire Johann Ludwig Krapf, qui longe la côte en 1844 : au sud de la Pangani, il décrit le territoire des Wasegua comme un grand centre de la traite des esclaves. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Wasegua",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Johann Ludwig Krapf",
+                "role": "missionnaire de la Church Missionary Society"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels, Researches, and Missionary Labours during an Eighteen Years' Residence in Eastern Africa",
+                "author": "Johann Ludwig Krapf",
+                "year": 1860,
+                "url": "https://archive.org/details/travelsresearch00ravegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 118 et p. 121",
+                "notes": "Londres, Trübner, 1860, lu dans l'exemplaire numérisé d'archive.org le 11 octobre 2026. Chapitre du voyage d'Aden à Zanzibar, fait en 1844. Page 118 : « South from these are the Wasegechu, Washinsi, and Wasegua » ; page 121 : « To the south of the Pangani is the territory of the heathen Wasegua tribes, the great centre of the slave trade »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1836,
+              "to": 1836,
+              "label": "Vers 1836"
+            },
+            "era": "polity",
+            "statement": "Le nom Zigula désigne, chez Isaria N. Kimambo, un peuple qui tient une grande place dans le commerce de la vallée de la Pangani. Une terrible famine pousse alors beaucoup de Zigula à se vendre comme esclaves pour survivre ; certains, emmenés en Somalie, y gardent leur langue jusqu'au XXe siècle.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 10 : La côte et l'hinterland de l'Afrique orientale de 1845 à 1880",
+                "author": "Isaria N. Kimambo",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 277",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1800,
+              "label": "Entre 1500 et 1800"
+            },
+            "era": "polity",
+            "statement": "Le nom Zigua désigne, chez W. R. Ochieng', l'un des peuples installés sur la bordure est de l'intérieur de l'Afrique de l'Est, avec les Kikuyu, les Kamba, les Mijikenda et les Zaramo.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 27 : L'intérieur de l'Afrique de l'Est : les peuples du Kenya et de la Tanzanie (1500-1800)",
+                "author": "W. R. Ochieng'",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 899",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Rapporté en 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Wazigua désigne aussi, en Somalie, des descendants de Zigua emmenés comme esclaves : la plupart des chercheurs voient en eux les fondateurs du Goshaland, un refuge d'esclaves en fuite le long du Juba, selon Dan Van Lehman et Omar Eno.",
+            "sources": [
+              {
+                "title": "The Somali Bantu: Their History and Culture",
+                "author": "Dan Van Lehman et Omar Eno",
+                "year": 2003,
+                "url": "http://www.culturalorientation.net/content/download/1359/7917/version/2/file/The+Somali+Bantu.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Washington, Center for Applied Linguistics, Cultural Orientation Resource Center, Culture Profile n° 16, février 2003 : « Most scholars believe that the Wazigua are the founders of Goshaland along the Juba River, a safe haven for runaway slaves » ; « The word Mushunguli may have evolved from the word Mzigua ». Lu en texte intégral pour la fiche des Bantous somaliens le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Zigua",

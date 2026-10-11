@@ -3,6 +3,165 @@
   "nameMain": "Isoko",
   "languageFamilyId": "FLG_NIGERCONGO",
   "currentCountries": ["NGA"],
+  "nameHistory": {
+    "summary": "Le nom Isoko désigne un peuple du delta occidental du Niger, dans l'État du Delta, au Nigeria, qui se nomme lui-même Isoko. D'autres noms lui ont été donnés de l'extérieur, dont Sobo, qu'il partageait avec les Urhobo voisins. On ne sait pas avec certitude d'où viennent ces noms : les sources que nous avons lues ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Isoko",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "iso",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple du delta occidental du Niger.",
+        "periodLabel": "Écrit en 1934 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Isoko désigne, chez l'historien E. J. Alagoa, l'un des peuples du vaste groupe edo, qui s'étend de l'intérieur des terres jusqu'au delta du Niger, avec les Urhobo. Les sources que nous avons lues ne disent pas d'où vient ce nom ; on ne sait pas avec certitude quelle est son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 15 : Les Fon et les Yoruba, du delta du Niger au Cameroun",
+                "author": "E. J. Alagoa",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 483 et p. 485",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1934,
+              "to": 1934,
+              "label": "1934"
+            },
+            "era": "colonial",
+            "statement": "Le nom Isoko figure dans le titre d'un article de James W. Welch, « The Isoko Tribe », paru dans la revue Africa. C'est la plus ancienne trace de ce nom que le projet connaît. Nous n'avons lu que la notice de l'article. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Isoko",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Isoko Tribe",
+                "author": "James W. Welch",
+                "year": 1934,
+                "url": "https://doi.org/10.2307/1155529",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 160-173",
+                "notes": "Africa, revue de l'Institut africain international, vol. 7, n° 2, avril 1934. Titre, auteur, revue, date et pages lus dans la notice Crossref de l'article le 11 octobre 2026 ; nous n'avons pas lu le texte de l'article."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1800,
+              "to": 1880,
+              "label": "Au XIXe siècle, jusque vers 1880"
+            },
+            "era": "polity",
+            "statement": "Le nom Isoko désigne, chez Ebiegberi J. Alagoa, l'un des peuples de l'arrière-pays du delta qui, comme les Urhobo, vivent en communautés sans pouvoir central. Les Ijo leur vendent du poisson sec et du sel.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 27 : Le delta du Niger et le Cameroun",
+                "author": "Ebiegberi J. Alagoa",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 773 et p. 776",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1700,
+              "to": 1799,
+              "label": "XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Isoko désigne, chez E. J. Alagoa, l'un des peuples de l'intérieur dont les Itsekiri exportent les produits depuis de nouveaux comptoirs comme Bobi, au service du royaume du Bénin.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 15 : Les Fon et les Yoruba, du delta du Niger au Cameroun",
+                "author": "E. J. Alagoa",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 494",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sobo",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom donné de l'extérieur aux Isoko comme aux Urhobo ; il est jugé offensant.",
+        "periodLabel": "XIXe-XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1854,
+              "label": "Liste publiée en 1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Sobo apparaît par écrit, sous la forme « Sṓbō », chez le linguiste Sigismund Koelle, qui place ce pays près des Igbo, à trois ou quatre jours de marche de la mer. C'est la plus ancienne trace de ce nom que le projet connaît. Les sources ne disent pas s'il désignait déjà les Isoko ou seulement les Urhobo.",
+            "formAsWritten": "Sṓbō",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "section V-B-1",
+                "notes": "Londres, Church Missionary House. Les remarques de Koelle sont lues dans leur transcription par le jeu de données Lexibank le 11 octobre 2026, pas sur l'imprimé : « Sṓbō is east of Kḗkeri, near Ī́bo, and three or four days' journey inland from the sea ». Le jeu de données rattache cette langue à l'urhobo. Koelle a interrogé à Freetown des personnes libérées de la traite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2000,
+              "to": 2000,
+              "label": "Rapporté en 2000"
+            },
+            "era": "modern",
+            "statement": "Le nom Sobo est, avec Igabo et Biotu, l'un des noms qu'on donne parfois aux Isoko, selon une note de la Commission de l'immigration et du statut de réfugié du Canada. Elle rapporte que les ethnographes l'emploient pour les Isoko comme pour les Urhobo, deux peuples pourtant différents, et que Sobo et Igabo sont jugés offensants.",
+            "sources": [
+              {
+                "title": "Traditional rule among the Isoko tribe including its Chief Priest at the Eriowhe shrine at Otawhe [NGA34145.E]",
+                "author": "Commission de l'immigration et du statut de réfugié du Canada, Direction des recherches",
+                "year": 2000,
+                "url": "https://www.ecoi.net/de/dokument/188468",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Réponse à une demande d'information du 30 mars 2000, lue sur ecoi.net le 11 octobre 2026 : « The Isoko, sometimes referred to as Sobo, Igabo, or Biotu (Ethnologue 1996, 349) » ; d'après The New Encyclopaedia Britannica (1989, p. 417), « Sobo » est un terme général des ethnographes pour les Isoko et les Urhobo, « although the two groups are different » ; l'Ethnologue tient « Sobo » et « Igabo » pour offensants. Ce sont des rapports de seconde main ; nous n'avons pas lu l'Ethnologue de 1996 ni la Britannica de 1989."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "classificationStatus": "colonial-legacy",
   "content": {
     "appellations": {
