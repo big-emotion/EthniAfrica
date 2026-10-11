@@ -16,12 +16,6 @@
           "sourceRefs": ["behindthename-idrissa", "niger-cm-2024-idrissa"]
         }
       ]
-    },
-    {
-      "spelling": "Idrissou",
-      "attestations": [
-        { "countryId": "NER", "sourceRefs": ["afrik-candidate-queue"] }
-      ]
     }
   ],
   "transmissionMode": "non_hereditary",
@@ -121,7 +115,7 @@
     },
     {
       "fieldPath": "homonyms",
-      "reason": "Les formes Idrissa, Idrissou et Idris ont été distinguées dans les recherches onomastiques ; aucune origine indépendante de la forme ouest-africaine d'Idris n'a été établie pour constituer un homonyme."
+      "reason": "Les formes Idrissa et Idris ont été distinguées dans les recherches onomastiques ; aucune origine indépendante de la forme ouest-africaine d'Idris n'a été établie pour constituer un homonyme."
     }
   ],
   "nameHistory": {

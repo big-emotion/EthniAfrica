@@ -191,6 +191,7 @@
               "to": 1845,
               "label": "Proposée en 1845"
             },
+            "era": "polity",
             "statement": "Le nom Antakarana viendrait du nom du pays, Ankarangna, « la place du Corail, le pays du Corail », dont Ankara serait une contraction, selon Charles Guillain.",
             "hypothesisGroup": "origine du nom Antakarana",
             "sources": [
@@ -212,6 +213,7 @@
               "to": 1845,
               "label": "Publié en 1845"
             },
+            "era": "polity",
             "statement": "Le nom Antakarana apparaît sous les formes Ant'ankarans et Ant'ankares chez Charles Guillain : il désigne les habitants du pays d'Ankara, la partie nord de l'ancien royaume d'Androunah. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
             "formAsWritten": "Ant'ankarans",
             "birth": true,

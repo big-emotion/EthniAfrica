@@ -6,7 +6,7 @@
   },
   "id": "PAT_NGOLA",
   "nameMain": "Ngola",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Ngola",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -97,7 +97,7 @@
   "gaps": [
     {
       "fieldPath": "nameSystem",
-      "reason": "Les sources consultées décrivent ngola comme le titre du roi du Ndongo, puis comme un élément du titre de la reine Nzinga ; aucune ne parle d'un clan. La classe et l'unité sociale indiquées sur cette fiche sont provisoires, en attendant une classe pour un titre royal."
+      "reason": "Les sources consultées décrivent ngola comme le titre du roi du Ndongo, puis comme un élément du titre de la reine Nzinga ; aucune ne parle d'un clan. Le modèle n'a pas de case pour un titre royal : la fiche le range parmi les patronymes non héréditaires, la case la plus proche."
     },
     {
       "fieldPath": "origin",
