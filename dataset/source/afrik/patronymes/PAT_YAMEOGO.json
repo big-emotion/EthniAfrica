@@ -124,5 +124,191 @@
       "fieldPath": "homonyms",
       "reason": "Les graphies Yaméogo, Yameogo et Nyameogo ont été comparées dans la liste SIL, le répertoire et les catalogues savants ; aucune lignée distincte homonyme n'a été établie."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Yaméogo est un nom de famille mossi, au Burkina Faso, transmis par les pères ; il s'écrit aussi Yameogo ou Nyameogo. Son sens est discuté : la seule explication trouvée vient d'un répertoire encore provisoire ; nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Yaméogo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille mossi, transmis par les pères, au Burkina Faso.",
+        "periodLabel": "Écrit dès 1960 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Yaméogo est un nom de famille mossi. Chez les Mossi, ce nom est celui d'un groupe de descendants d'un même ancêtre par les hommes, le buudu, dont les membres ne se marient pas entre eux, selon Michel Izard. Son sens est discuté ; nous le présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Noms des Kasena",
+                "author": "Urs et Idda Niggli",
+                "year": 2008,
+                "url": "https://sil-burkina.org/sites/default/files/Noms%20des%20Kassena.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 42",
+                "notes": "Société internationale de linguistique, Ouagadougou, 2008. Lu dans le PDF intégral le 11 octobre 2026. La section 6.4, « Exemples de noms de famille mossi », cite Zongo et Yaméogo, sans en donner le sens."
+              },
+              {
+                "title": "La Lance et les guenilles",
+                "author": "Michel Izard",
+                "year": 1973,
+                "url": "https://www.persee.fr/doc/hom_0439-4216_1973_num_13_3_367368?pageId=T1_141",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 141",
+                "notes": "L'Homme, vol. 13, n° 3, 1973, p. 139-149. Lu sur Persée le 11 octobre 2026. Page 141 : le buudu mossi est un groupe de descendance patrilinéaire et une unité exogamique, défini notamment « par le nom collectif (sondre) que portent tous ses membres »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Proposé en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Yaméogo voudrait dire « le chef de la brousse, le lion », et dirait la force de la brousse, selon le projet de répertoire des patronymes du Burkina Faso.",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 215",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire ». Lu le 11 octobre 2026 sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Notice YAMEOGO/NYAMEOGO : les Yaméogo « sont de la société des masques, originaires de Ziga, de Koupéla (Kourittengaa) » ; « Le patronyme YAMEOGO symbolise la force de la brousse et signifie « le chef de la brousse, le lion » »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Décrit en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Yaméogo est porté, selon le même projet de répertoire, par des familles de la société des masques venues de Ziga et de Koupéla, aujourd'hui installées notamment autour de Koudougou.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 215",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire ». Lu le 11 octobre 2026 sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Notice YAMEOGO/NYAMEOGO : les Yaméogo « sont de la société des masques, originaires de Ziga, de Koupéla (Kourittengaa) » ; « Le patronyme YAMEOGO symbolise la force de la brousse et signifie « le chef de la brousse, le lion » »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "1960"
+            },
+            "era": "modern",
+            "statement": "Le nom Yaméogo apparaît, écrit Yameogo, dans un bulletin de renseignement américain du 12 octobre 1960, qui nomme ainsi le président de la Haute-Volta. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un document l'a écrit, pas depuis quand le nom est porté.",
+            "formAsWritten": "Yameogo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Central Intelligence Bulletin, 12 October 1960",
+                "author": "Central Intelligence Agency",
+                "year": 1960,
+                "url": "https://archive.org/details/cia-readingroom-document-02977790",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5",
+                "notes": "Bulletin de renseignement américain, déclassifié en 2020, lu sur la copie d'archive.org le 11 octobre 2026. Page 5 : « Upper Volta President Yameogo ». Document cité ici seulement pour la forme qu'il écrit."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Yameogo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Yameogo est la même écriture sans accent, celle des documents en anglais comme du projet de répertoire.",
+            "sources": [
+              {
+                "title": "Central Intelligence Bulletin, 12 October 1960",
+                "author": "Central Intelligence Agency",
+                "year": 1960,
+                "url": "https://archive.org/details/cia-readingroom-document-02977790",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5",
+                "notes": "Bulletin de renseignement américain, déclassifié en 2020, lu sur la copie d'archive.org le 11 octobre 2026. Page 5 : « Upper Volta President Yameogo ». Document cité ici seulement pour la forme qu'il écrit."
+              },
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 215",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire ». Lu le 11 octobre 2026 sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Notice YAMEOGO/NYAMEOGO : les Yaméogo « sont de la société des masques, originaires de Ziga, de Koupéla (Kourittengaa) » ; « Le patronyme YAMEOGO symbolise la force de la brousse et signifie « le chef de la brousse, le lion » »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nyameogo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Décrit en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Nyameogo est une autre écriture de Yaméogo, que le projet de répertoire donne dans la même notice.",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 215",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire ». Lu le 11 octobre 2026 sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Notice YAMEOGO/NYAMEOGO : les Yaméogo « sont de la société des masques, originaires de Ziga, de Koupéla (Kourittengaa) » ; « Le patronyme YAMEOGO symbolise la force de la brousse et signifie « le chef de la brousse, le lion » »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

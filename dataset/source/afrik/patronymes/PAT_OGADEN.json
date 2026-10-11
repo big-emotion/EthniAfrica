@@ -132,5 +132,244 @@
       "fieldPath": "bearers",
       "reason": "Les index d'auteurs, les personnes citées dans l'article de 2023 et les recherches « Ogaden/Ogaadeen person/name » ont été examinés ; les occurrences renvoient surtout à l'affiliation, et aucun porteur décédé pour lequel Ogaden soit clairement un nom personnel n'a été établi."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ogaden est celui d'un grand clan somali de la famille des Darod, que l'on écrit Ogaadeen en somali. Il a aussi donné son nom à une région de l'est de l'Éthiopie. Les sources rattachent le clan à un ancêtre de ce nom, mais ne le placent pas au même endroit de la généalogie ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Ogaden",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un grand clan somali de la famille des Darod, qui a donné son nom à une région d'Éthiopie.",
+        "periodLabel": "Écrit dès 1856 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Décrit en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Ogaden désigne le plus grand clan de l'État régional somali d'Éthiopie : ses lignées sont majoritaires dans cinq des neuf zones de cette région, selon Daniel Thompson et Namhla Matshanda. Le clan vit aussi dans le sud de la Somalie et au Kenya, selon la Commission canadienne de l'immigration.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Political Identity as Temporal Collapse: Ethiopian Federalism and Contested Ogaden Histories",
+                "author": "Daniel K. Thompson et Namhla Thando Matshanda",
+                "year": 2023,
+                "url": "https://academic.oup.com/afraf/article/122/486/119/7026175",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 5",
+                "notes": "African Affairs, vol. 122, no 486, 2023, p. 119-145. La note 5 dit que les lignées ogaden forment la majorité dans cinq des neuf zones administratives de l'État régional somali, les chiffres du recensement éthiopien restant disputés. Lu le 11 octobre 2026."
+              },
+              {
+                "title": "Somalia: The Ogaden clan, including areas of occupation, clan members and affiliation with other clans",
+                "author": "Commission de l'immigration et du statut de réfugié du Canada",
+                "year": 2017,
+                "url": "https://www.ecoi.net/en/document/1428637.html",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "réponse SOM106004.EF",
+                "notes": "Réponse à une demande d'information du 23 novembre 2017, reproduite par ecoi.net. Elle donne les graphies Ogaden, Ogaadeen et Ogadeen ; elle range les Ogaden parmi les Absame, eux-mêmes Kumade, Kablalah et Darod, d'après Abbink (2009), Ambroso (2002) et un document de l'ONU (2004) ; un universitaire interrogé dit qu'Absame, fils de Kumade, eut pour fils principaux Jidwaq et Ogaden, et rappelle que les généalogies sont des « cartes » abstraites de parenté. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ogaden est celui d'un clan, une lignée qui se compte par le père. Il ne faut pas le confondre avec la région de l'est de l'Éthiopie qui porte le même nom et le tient du clan. Les sources rattachent le clan à un ancêtre, chacune à sa façon ; nous les présentons séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Political Identity as Temporal Collapse: Ethiopian Federalism and Contested Ogaden Histories",
+                "author": "Daniel K. Thompson et Namhla Thando Matshanda",
+                "year": 2023,
+                "url": "https://academic.oup.com/afraf/article/122/486/119/7026175",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 6",
+                "notes": "African Affairs, vol. 122, no 486, 2023, p. 119-145. La note 6 rappelle que le territoire qui forme aujourd'hui l'essentiel de l'État régional somali s'appelait l'Ogaden, et que certains auteurs distinguent ce territoire de la lignée « Ogaadeen » parce que « the territory's name derives from the clan ». Lu le 11 octobre 2026."
+              },
+              {
+                "title": "Somalia: The Ogaden clan, including areas of occupation, clan members and affiliation with other clans",
+                "author": "Commission de l'immigration et du statut de réfugié du Canada",
+                "year": 2017,
+                "url": "https://www.ecoi.net/en/document/1428637.html",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "réponse SOM106004.EF",
+                "notes": "Réponse à une demande d'information du 23 novembre 2017, reproduite par ecoi.net. Elle donne les graphies Ogaden, Ogaadeen et Ogadeen ; elle range les Ogaden parmi les Absame, eux-mêmes Kumade, Kablalah et Darod, d'après Abbink (2009), Ambroso (2002) et un document de l'ONU (2004) ; un universitaire interrogé dit qu'Absame, fils de Kumade, eut pour fils principaux Jidwaq et Ogaden, et rappelle que les généalogies sont des « cartes » abstraites de parenté. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant l'État régional somali"
+            },
+            "statement": "Le nom Ogaden a désigné le territoire qui forme aujourd'hui l'essentiel de l'État régional somali d'Éthiopie. Ce territoire tient son nom du clan, selon Daniel Thompson et Namhla Matshanda.",
+            "sources": [
+              {
+                "title": "Political Identity as Temporal Collapse: Ethiopian Federalism and Contested Ogaden Histories",
+                "author": "Daniel K. Thompson et Namhla Thando Matshanda",
+                "year": 2023,
+                "url": "https://academic.oup.com/afraf/article/122/486/119/7026175",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 6",
+                "notes": "African Affairs, vol. 122, no 486, 2023, p. 119-145. La note 6 dit que le territoire de l'actuel État régional somali s'appelait l'Ogaden et que son nom vient de celui du clan. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Récit publié en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Ogaden serait celui d'une branche des Harti, qui se disent fils de Harti ben Kombo ben Kabl Ullah ben Darod, selon ce que rapporte l'explorateur Richard Burton.",
+            "hypothesisGroup": "ancêtre du nom Ogaden",
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa; or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 104",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856 ; exemplaire numérisé sur archive.org. Récit d'un voyage fait en 1854-1855 dans le pays somali et jusqu'à Harar. Chapitre sur les Somalis : « \"Harti\" is the family name of the Dulbahanta, Ogadayn, Warsangali and Mijjarthayn, who call themselves sons of Harti bin Kombo bin Kabl Ullah bin Darud ». Voyageur britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "Rapporté en 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Ogaden serait celui d'un fils d'Absame, lui-même descendant de Darod par Kablalah et Kumade, selon les sources que réunit la Commission canadienne de l'immigration. Un universitaire qu'elle cite rappelle que ces généalogies sont des cartes de parenté, pas des liens de sang exacts.",
+            "hypothesisGroup": "ancêtre du nom Ogaden",
+            "sources": [
+              {
+                "title": "Somalia: The Ogaden clan, including areas of occupation, clan members and affiliation with other clans",
+                "author": "Commission de l'immigration et du statut de réfugié du Canada",
+                "year": 2017,
+                "url": "https://www.ecoi.net/en/document/1428637.html",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "réponse SOM106004.EF",
+                "notes": "Réponse à une demande d'information du 23 novembre 2017, reproduite par ecoi.net. Elle donne les graphies Ogaden, Ogaadeen et Ogadeen ; elle range les Ogaden parmi les Absame, eux-mêmes Kumade, Kablalah et Darod, d'après Abbink (2009), Ambroso (2002) et un document de l'ONU (2004) ; un universitaire interrogé dit qu'Absame, fils de Kumade, eut pour fils principaux Jidwaq et Ogaden, et rappelle que les généalogies sont des « cartes » abstraites de parenté. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Récit publié en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Ogaden apparaît par écrit, sous la forme Ogadayn, chez l'explorateur Richard Burton, dans sa liste des branches des Darod. C'est la plus ancienne trace de ce nom que le projet connaît ; le clan existait avant elle.",
+            "formAsWritten": "Ogadayn",
+            "birth": true,
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa; or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 104",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856 ; exemplaire numérisé sur archive.org. Récit d'un voyage fait en 1854-1855 dans le pays somali et jusqu'à Harar. Le nom est écrit « Ogadayn » dans la liste des Darod issus de Harti. Voyageur britannique, cité ici pour les formes qu'il écrit et ce qu'on lui rapporte. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ogaadeen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "som",
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2017,
+              "to": 2023,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ogaadeen est l'écriture somalie d'Ogaden, donnée avec Ogaden par la Commission canadienne de l'immigration. Certains auteurs réservent Ogaadeen à la lignée et Ogaden au territoire, selon Daniel Thompson et Namhla Matshanda.",
+            "sources": [
+              {
+                "title": "Somalia: The Ogaden clan, including areas of occupation, clan members and affiliation with other clans",
+                "author": "Commission de l'immigration et du statut de réfugié du Canada",
+                "year": 2017,
+                "url": "https://www.ecoi.net/en/document/1428637.html",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "réponse SOM106004.EF",
+                "notes": "Réponse à une demande d'information du 23 novembre 2017, reproduite par ecoi.net. Elle donne les graphies Ogaden, Ogaadeen et Ogadeen ; elle range les Ogaden parmi les Absame, eux-mêmes Kumade, Kablalah et Darod, d'après Abbink (2009), Ambroso (2002) et un document de l'ONU (2004) ; un universitaire interrogé dit qu'Absame, fils de Kumade, eut pour fils principaux Jidwaq et Ogaden, et rappelle que les généalogies sont des « cartes » abstraites de parenté. Lu le 11 octobre 2026."
+              },
+              {
+                "title": "Political Identity as Temporal Collapse: Ethiopian Federalism and Contested Ogaden Histories",
+                "author": "Daniel K. Thompson et Namhla Thando Matshanda",
+                "year": 2023,
+                "url": "https://academic.oup.com/afraf/article/122/486/119/7026175",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 6",
+                "notes": "African Affairs, vol. 122, no 486, 2023, p. 119-145. La note 6 signale que certains analystes distinguent le territoire « Ogaden » de la lignée « Ogaadeen ». Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ogadeen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "Rapporté en 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Ogadeen est une autre écriture d'Ogaden, employée par un universitaire que cite la Commission canadienne de l'immigration.",
+            "sources": [
+              {
+                "title": "Somalia: The Ogaden clan, including areas of occupation, clan members and affiliation with other clans",
+                "author": "Commission de l'immigration et du statut de réfugié du Canada",
+                "year": 2017,
+                "url": "https://www.ecoi.net/en/document/1428637.html",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "réponse SOM106004.EF",
+                "notes": "Réponse à une demande d'information du 23 novembre 2017, reproduite par ecoi.net. Elle donne les graphies Ogaden, Ogaadeen et Ogadeen ; elle range les Ogaden parmi les Absame, eux-mêmes Kumade, Kablalah et Darod, d'après Abbink (2009), Ambroso (2002) et un document de l'ONU (2004) ; un universitaire interrogé dit qu'Absame, fils de Kumade, eut pour fils principaux Jidwaq et Ogaden, et rappelle que les généalogies sont des « cartes » abstraites de parenté. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

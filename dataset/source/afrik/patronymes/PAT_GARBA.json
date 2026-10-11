@@ -113,5 +113,85 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches « Garba homonym etymology » et les sources consacrées à Garba n'ont pas établi une graphie identique possédant une origine distincte et documentée."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Garba est un prénom haoussa porté au Niger et au Nigeria, que l'on trouve aussi en second nom. On ne sait pas avec certitude quand il apparaît pour la première fois par écrit. Les sources lues n'en donnent qu'une explication ; nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Garba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "hau",
+        "namedBy": null,
+        "shortLine": "Un prénom haoussa de garçon, aussi porté en second nom au Niger.",
+        "periodLabel": "Porté aujourd'hui ; première trace écrite inconnue",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Garba est porté au Niger comme prénom et comme second nom. Les nominations du Conseil des ministres du 4 janvier 2024 le donnent aux deux places, par exemple dans Garba Abdoulaye et Moussa Garba.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Conseil des ministres du 04/01/2024 : adoption de plusieurs projets de textes et mesures nominatives",
+                "author": "Gouvernement du Niger",
+                "year": 2024,
+                "url": "https://www.gouv.ne/index.php/les-communiques-du-gouvernement/510-conseil-des-ministres-du-04-01-2024-adoption-de-plusieurs-projets-de-textes-et-mesures-nominatives",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Communiqué officiel du 4 janvier 2024, lu le 11 octobre 2026. Les mesures nominatives citent notamment Garba Abdoulaye, Moussa Garba, Mamane Garba et Madougou Garba. Le communiqué ne dit rien de l'origine du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Garba est un prénom haoussa de garçon. Pauline Ryan le range parmi les noms qui rappellent ce qu'a vécu la mère avant la naissance. Les sources lues n'en donnent qu'une explication ; nous la présentons séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 147-148",
+                "notes": "Names, 29(2), 1981, p. 139-164. Lu dans le PDF intégral le 11 octobre 2026. Le tableau V, « Names Which Indicate Mother's Problems or Psychological State Prior to or After the Birth », range Garba parmi les noms de garçon."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "Proposé en 1981"
+            },
+            "era": "modern",
+            "statement": "Le nom Garba serait donné à un garçon dont les parents ont essayé des remèdes locaux pour obtenir sa naissance, sans succès, selon Pauline Ryan.",
+            "sources": [
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 148",
+                "notes": "Names, 29(2), 1981, p. 139-164. Lu dans le PDF intégral le 11 octobre 2026. Dans le tableau V, Garba porte le même contexte que Gagare, la ligne au-dessus : « Parents who tried local medicine to effect his birth, but failed »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

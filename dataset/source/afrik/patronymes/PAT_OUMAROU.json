@@ -113,5 +113,148 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches « Oumarou homonym etymology » et les sources consacrées à Oumarou, Umar et Umaru n'ont pas établi une graphie identique d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Oumarou est la forme française d'un prénom musulman d'Afrique de l'Ouest, écrit Umaru en haoussa ; au Niger, il sert aussi de second nom, celui du père. Son origine proposée est présentée plus bas.",
+    "names": [
+      {
+        "nameText": "Oumarou",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme française d'un prénom musulman, porté au Niger comme prénom ou nom du père.",
+        "periodLabel": "Écrit dès 1895 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Oumarou est porté au Niger comme prénom ou comme second nom : dans un même communiqué du gouvernement, il ouvre ou ferme le nom de plusieurs personnes.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Conseil des ministres du 4 janvier 2024",
+                "author": "Gouvernement du Niger",
+                "year": 2024,
+                "url": "https://www.gouv.ne/index.php/les-communiques-du-gouvernement/510-conseil-des-ministres-du-04-01-2024-adoption-de-plusieurs-projets-de-textes-et-mesures-nominatives",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Communiqué officiel relu le 11 octobre 2026. Il nomme notamment Sahabi Oumarou, Oumarou Idrissa et Moussa Oumarou : Oumarou y est tantôt le premier, tantôt le second nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "Proposé en 1981"
+            },
+            "era": "modern",
+            "statement": "Le nom Oumarou viendrait de l'arabe Umar, le nom du deuxième calife de l'islam, que les Haoussa donnent sous la forme Umaru, selon Pauline M. Ryan.",
+            "hypothesisGroup": "origine du nom Oumarou",
+            "sources": [
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 143",
+                "notes": "Names 29(2), 1981, p. 139-164 ; PDF intégral relu le 11 octobre 2026. Le tableau I range parmi les noms musulmans donnés à la cérémonie du nom Umaru, « Companion of the Prophet and second Caliph ». Le tableau n'atteste pas la forme française Oumarou."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "1895"
+            },
+            "era": "polity",
+            "statement": "Le nom Oumarou apparaît par écrit dans le récit de voyage de l'officier Parfait-Louis Monteil : de passage à Kano, il nomme « Lam-Dioulbé Oumarou », le commandeur des croyants de Sokoto mort en 1891. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Oumarou",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Parfait-Louis Monteil",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "De Saint-Louis à Tripoli par le lac Tchad : voyage au travers du Soudan et du Sahara",
+                "author": "Parfait-Louis Monteil",
+                "year": 1895,
+                "url": "https://archive.org/details/desaintlouistrip00mont",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 293",
+                "notes": "Paris, Félix Alcan, 1895 ; lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Au chapitre « Séjour à Kano », l'officier français nomme « Lam-Dioulbé Oumarou », le commandeur des croyants de Sokoto, mort fin mars 1891. Auteur de l'époque coloniale, cité ici pour la forme qu'il écrit."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Umaru",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "hau",
+        "namedBy": null,
+        "shortLine": "La forme haoussa du même prénom, écrite Umaru au Nigeria.",
+        "periodLabel": "Écrit dès 1981 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1996,
+              "to": 1996,
+              "label": "Décrit en 1996"
+            },
+            "era": "modern",
+            "statement": "Le nom Umaru est un nom reçu à la naissance chez les Haoussa, que l'on abrège en Umar ; le dernier nom d'une personne peut devenir son nom de famille quand les usages anglais sont adoptés, selon le guide de catalogage de l'IFLA.",
+            "sources": [
+              {
+                "title": "Names of Persons: National Usages for Entry in Catalogues",
+                "author": "IFLA Universal Bibliographic Control and International MARC Programme",
+                "year": 1996,
+                "url": "https://www.ifla.org/files/assets/cataloguing/pubs/names-of-persons_1996.pdf",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 169",
+                "notes": "Quatrième édition, 1996, lue dans le PDF de l'IFLA le 11 octobre 2026. La notice Nigeria, section haoussa et peule, donne Musa parmi les noms reçus à la naissance et Umar pour Umaru parmi les formes abrégées ; elle précise que le dernier élément du nom peut devenir nom de famille quand les usages anglais sont adoptés."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "1981"
+            },
+            "era": "modern",
+            "statement": "Le nom Umaru figure parmi les noms musulmans que les Haoussa donnent lors de la cérémonie du nom, selon Pauline M. Ryan. C'est la plus ancienne trace de cette forme que le projet connaît ; elle dit quand une autrice l'a notée, pas depuis quand le nom est donné.",
+            "formAsWritten": "Umaru",
+            "birth": true,
+            "sources": [
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 143",
+                "notes": "Names 29(2), 1981, p. 139-164 ; PDF intégral relu le 11 octobre 2026. Le tableau I range parmi les noms musulmans donnés à la cérémonie du nom Umaru, « Companion of the Prophet and second Caliph »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

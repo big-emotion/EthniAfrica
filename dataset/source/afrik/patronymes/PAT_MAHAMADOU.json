@@ -126,5 +126,125 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches « Mahamadou homonym etymology » et les sources consacrées à Mahamadou et Muhammad n'ont pas établi une graphie identique d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mahamadou est un prénom porté au Niger, que l'on trouve aussi en second nom. On le rapproche du nom du prophète de l'islam, Muhammad. Les sources lues ne disent pas d'où vient cette écriture ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "Mahamadou",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un prénom porté au Niger, aussi en second nom, que l'on rapproche du nom Muhammad.",
+        "periodLabel": "Écrit dès 1825 sous une forme proche ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mahamadou est porté au Niger comme prénom et comme second nom. Les nominations du Conseil des ministres du 4 janvier 2024 le donnent aux deux places, par exemple dans Mahamadou Soumaila et Niandou Mahamadou.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Conseil des ministres du 04/01/2024 : adoption de plusieurs projets de textes et mesures nominatives",
+                "author": "Gouvernement du Niger",
+                "year": 2024,
+                "url": "https://www.gouv.ne/index.php/les-communiques-du-gouvernement/510-conseil-des-ministres-du-04-01-2024-adoption-de-plusieurs-projets-de-textes-et-mesures-nominatives",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Communiqué officiel du 4 janvier 2024, lu le 11 octobre 2026. Les mesures nominatives citent notamment Mahamadou Soumaila, Niandou Mahamadou et Saddikou Mahamadou. Le communiqué ne dit rien de l'origine du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mahamadou est un prénom que l'on rapproche du nom du prophète de l'islam, Muhammad. En haoussa, la forme proche Muhammadu désigne le Prophète parmi les noms donnés à l'enfant, selon Pauline Ryan. Aucune étude lue ne dit comment on est passé à l'écriture Mahamadou.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 142",
+                "notes": "Names, 29(2), 1981, p. 139-164. Lu dans le PDF intégral le 11 octobre 2026. Le tableau I, « A Selection of Islamic Name Choices for the Naming Ceremony », donne Muhammadu : « The Prophet Mohammed ». L'article ne cite pas la forme Mahamadou."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1825,
+              "to": 1825,
+              "label": "1825"
+            },
+            "era": "polity",
+            "statement": "Le nom Mahamadou apparaît sous une forme proche, Mahamadoo, dans le récit de voyage d'Alexander Gordon Laing. C'est le nom du chef qui conduit vers 1700 un grand groupe de Peuls venus du nord jusqu'au futur Fouta-Djallon, d'après les griots et les anciens du pays solima. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est porté.",
+            "formAsWritten": "Mahamadoo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Alexander Gordon Laing",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Mahamadoo Saidi",
+                "role": "chef peul du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels in the Timannee, Kooranko, and Soolima Countries, in Western Africa",
+                "author": "Alexander Gordon Laing",
+                "year": 1825,
+                "url": "https://archive.org/details/b33487467",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 401-402",
+                "notes": "Londres, John Murray, 1825. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. L'auteur, officier britannique, rapporte ce que lui ont dit les griots et les anciens du pays solima, mis en ordre avec l'aide d'un marabout du Fouta-Djallon : vers 1700, « a large party of Foulahs under the command of a chief named Mahamadoo Saidi » s'installe dans ce qui devient le Fouta-Djallon. La page suivante écrit « Mahomadoo Saidi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1826,
+              "to": 1826,
+              "label": "1826"
+            },
+            "era": "polity",
+            "statement": "Le nom Mahamadou prend cette écriture dans la traduction française du récit de Laing, publiée à Paris un an plus tard. Le chef peul y devient Mahamadou-Saïdi.",
+            "formAsWritten": "Mahamadou-Saïdi",
+            "actors": [
+              {
+                "name": "Mahamadou-Saïdi",
+                "role": "chef peul du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Voyage dans le Timanni, le Kouranko et le Soulimana, contrée de l'Afrique occidentale, fait en 1822",
+                "author": "Alexander Gordon Laing",
+                "year": 1826,
+                "url": "https://archive.org/details/rcin.org.pl.WA51_171089_PAN25890-r1826_Voyage-dans-Timanni_143431",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 378",
+                "notes": "Traduction française publiée à Paris chez Delaforest et Arthus Bertrand en 1826. Lue sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Elle écrit « plusieurs milliers de Foulahs, commandés par Mahamadou-Saïdi »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

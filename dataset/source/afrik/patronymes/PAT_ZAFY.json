@@ -110,5 +110,92 @@
       "fieldPath": "homonyms",
       "reason": "L'emploi lexical de zafy ne constitue pas à lui seul un patronyme homonyme. Les recherches exactes n'ont pas établi de lignée d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Zafy est un nom de famille malgache, celui notamment d'Albert Zafy, ancien président de Madagascar. En malgache, le mot zafy veut dire « petit-enfant, descendant ». On ne sait pas avec certitude quand le nom apparaît pour la première fois comme nom de personne, ni d'où il vient ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Zafy",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille malgache ; le mot zafy veut dire « petit-enfant, descendant ».",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Zafy est un nom de famille porté à Madagascar, celui notamment d'Albert Zafy, ancien président de la République, mort en 2017. Les sources lues ne disent pas comment ce nom se transmet. Son origine reste une hypothèse ; nous la présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Le Président Albert Zafy n'est plus",
+                "author": "Yvan Andriamanga, Madagascar-Tribune.com",
+                "year": 2017,
+                "url": "https://www.madagascar-tribune.com/Le-President-Albert-Zafy-n-est,23354.html",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article du 14 octobre 2017, lu le 11 octobre 2026. Il annonce la mort d'Albert Zafy, ancien président de la République, le 13 octobre 2017. Il ne dit rien de l'origine du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1885,
+              "to": 1885,
+              "label": "Proposé en 1885"
+            },
+            "statement": "Le nom Zafy pourrait venir du mot malgache zafy, « petit-enfant, descendant » : James Richardson note que ce mot sert souvent à former des noms propres et des noms de groupes. Aucune source lue ne le dit de ce nom de famille en particulier.",
+            "sources": [
+              {
+                "title": "A New Malagasy-English Dictionary",
+                "author": "James Richardson",
+                "year": 1885,
+                "url": "https://archive.org/details/anewmalagasyeng00richgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 793",
+                "notes": "Antananarivo, London Missionary Society, 1885. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Entrée ZAFY : « A grandchild, a descendant. Often used in forming proper names, or as a prefix to tribal names. » Auteur missionnaire, cité ici pour le sens qu'il relève."
+              },
+              {
+                "title": "Malagasy Dictionary and Encyclopedia — zafy",
+                "author": "Malagasy Dictionary and Encyclopedia",
+                "year": null,
+                "url": "https://malagasyword.org/bins/teny2/zafy",
+                "tier": "unverified",
+                "source_kind": "repository",
+                "notes": "Recueil en ligne de plusieurs dictionnaires malgaches. Il donne pour zafy les sens « petit-enfant » et « descendant » et signale l'emploi du mot dans des noms propres. Il ne dit rien de ce nom de famille en particulier."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1885,
+              "to": 1885,
+              "label": "1885"
+            },
+            "statement": "On emploie alors le mot zafy pour dire « petit-enfant » ou « descendant », selon le dictionnaire de James Richardson.",
+            "before": true,
+            "sources": [
+              {
+                "title": "A New Malagasy-English Dictionary",
+                "author": "James Richardson",
+                "year": 1885,
+                "url": "https://archive.org/details/anewmalagasyeng00richgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 793",
+                "notes": "Antananarivo, London Missionary Society, 1885. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Entrée ZAFY : « A grandchild, a descendant. Often used in forming proper names, or as a prefix to tribal names. » Auteur missionnaire, cité ici pour le sens qu'il relève."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -92,5 +92,85 @@
       "fieldPath": "homonyms",
       "reason": "la notice exacte du Dictionary of American Family Names, les catalogues bibliographiques et les recherches « Rodrigues » associées au Cap-Vert n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Rodrigues est un nom de famille portugais, porté au Cap-Vert. Il viendrait du prénom Rodrigo, selon un dictionnaire des noms de famille ; c'est la seule explication que nous connaissons, et nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Rodrigues",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille portugais porté au Cap-Vert, formé sur le prénom Rodrigo selon un dictionnaire.",
+        "periodLabel": "Écrit au Cap-Vert dès 1510 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Rodrigues est un nom de famille portugais et galicien, que portent aussi des familles du Cap-Vert. Nous présentons plus bas la seule explication de son origine que nous connaissons.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e édition — entrée Rodrigues",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/rodrigues?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 11 octobre 2026 dans la traduction française que le site affiche. La notice dit : portugais et galicien, patronyme tiré du prénom Rodrigo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "statement": "Le nom Rodrigues serait un patronyme, c'est-à-dire un nom tiré du prénom d'un père : il viendrait du prénom Rodrigo, selon le dictionnaire des noms de famille dirigé par Patrick Hanks.",
+            "hypothesisGroup": "origine du nom Rodrigues",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e édition — entrée Rodrigues",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/rodrigues?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 11 octobre 2026 dans la traduction française que le site affiche. La notice dit : portugais et galicien, patronyme tiré du prénom Rodrigo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1510,
+              "to": 1510,
+              "label": "1510, selon un récit publié en 1899"
+            },
+            "era": "colonial",
+            "statement": "Le nom Rodrigues apparaît dans l'histoire du Cap-Vert avec António Rodrigues Mascarenhas, à qui le roi de Portugal afferme en 1510 ses revenus des îles de Santiago, de Fogo et de Maio, selon l'acte que reproduit l'historien Christiano José de Senna Barcellos. C'est la plus ancienne trace de ce nom au Cap-Vert que le projet connaît ; elle ne dit pas depuis quand des familles de l'archipel portent ce nom.",
+            "formAsWritten": "Rodrigues",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Subsidios para a historia de Cabo Verde e Guiné, parte I",
+                "author": "Christiano José de Senna Barcellos",
+                "year": 1899,
+                "url": "https://archive.org/details/subsidiosparaah01lisbgoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 65",
+                "notes": "Mémoire présenté à l'Académie royale des sciences de Lisbonne, Lisbonne, Typographia da Academia Real das Sciencias, 1899. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 65 : le 23 octobre 1510, les revenus royaux des îles de Santiago et de Fogo, ainsi que l'île de Maio, sont affermés « a António Rodrigues Mascarenhas » ; l'auteur reproduit ensuite l'acte d'affermage. Auteur de l'époque coloniale, cité ici pour les noms qu'il relève."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

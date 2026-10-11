@@ -138,5 +138,104 @@
       "fieldPath": "bearers",
       "reason": "Une chanteuse ivoirienne connue sous ce nom s'est exprimée publiquement sur son rattachement à la langue et à la culture bété par son père ; cette voix soutient l'attestation du peuple documentée plus haut, mais nous ne tenons pas ici de registre des personnes permettant de la citer nommément comme porteuse dans cette liste précise."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Gnahoré est un nom bété de Côte d'Ivoire. On l'écrit aussi Gnaore. Les sources lues n'en donnent qu'une explication, celle d'un traditionaliste ; nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Gnahoré",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom bété de Côte d'Ivoire ; un traditionaliste le traduit par « latex pur ».",
+        "periodLabel": "Écrit dès 1969 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Gnahoré figure dans une liste de noms bété de Côte d'Ivoire que publie le site Afrik Soir. Les sources lues n'en donnent qu'une explication ; nous la présentons séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Côte d'Ivoire : voici la signification des noms Bété que vous connaissez",
+                "author": "Afrik Soir",
+                "year": 2021,
+                "url": "https://afriksoir.net/cote-divoire-voici-la-signification-des-noms-bete-que-vous-connaissez/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article du 14 février 2021, lu le 11 octobre 2026. Il donne une liste de noms bété avec leur sens, dont « Gnahoré : latex pur, la pureté », et la termine par « Source : Zahui Ouraga Aimé, Traditionnaliste ». L'article ne dit pas comment ce sens a été recueilli."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Rapporté en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Gnahoré voudrait dire « latex pur », « la pureté », selon le traditionaliste Zahui Ouraga Aimé, que cite le site Afrik Soir.",
+            "sources": [
+              {
+                "title": "Côte d'Ivoire : voici la signification des noms Bété que vous connaissez",
+                "author": "Afrik Soir",
+                "year": 2021,
+                "url": "https://afriksoir.net/cote-divoire-voici-la-signification-des-noms-bete-que-vous-connaissez/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article du 14 février 2021, lu le 11 octobre 2026. Il donne une liste de noms bété avec leur sens, dont « Gnahoré : latex pur, la pureté », et la termine par « Source : Zahui Ouraga Aimé, Traditionnaliste ». L'article ne dit pas comment ce sens a été recueilli."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1969,
+              "to": 1969,
+              "label": "1969"
+            },
+            "era": "modern",
+            "statement": "Le nom Gnahoré apparaît, écrit sans accent, dans une note d'Ahmed Mahiou sur les partis uniques d'Afrique. Il y cite Pascal Krasso Gnahore, secrétaire général de la section ivoirienne du P.R.A., parmi les opposants qui rejoignent le P.D.C.I. en 1958-1959. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est porté.",
+            "formAsWritten": "Gnahore",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Ahmed Mahiou",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Pascal Krasso Gnahore",
+                "role": "porte le nom dans la note"
+              }
+            ],
+            "sources": [
+              {
+                "title": "L'avènement du parti unique en Afrique noire : l'expérience des États d'expression française",
+                "author": "Ahmed Mahiou",
+                "year": 1969,
+                "url": "https://archive.org/details/IA41555012_0028",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 108, note 1",
+                "notes": "Paris, Librairie générale de droit et de jurisprudence, 1969. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Note 1 du tableau V : « Deux leaders de l'opposition (Pascal Krasso Gnahore secrétaire général de la section ivoirienne du P.R.A. et Digua Bailly) ont rallié le P.D.C.I. ». L'auteur renvoie à Aristide Zolberg, que nous n'avons pas lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gnaore",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": []
+      }
+    ]
+  }
 }

@@ -116,5 +116,92 @@
       "fieldPath": "nameSystem",
       "reason": "La notice UONGOZI rattache Edward Moringe Sokoine à la communauté maasaï, mais ni cette notice, ni l’article de Sane, ni les recherches « Sokoine Maa clan/name » n’établissent si Sokoine est un nom de clan, un nom personnel ou une forme héritée. Faute de meilleure preuve, le classement comme nom de clan reste provisoire."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sokoine est un nom de famille porté en Tanzanie, chez les Maasaï, et le nom d'une université. On ne sait pas avec certitude ce qu'il veut dire ni s'il désigne un clan.",
+    "names": [
+      {
+        "nameText": "Sokoine",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille maasaï de Tanzanie ; on ne sait pas ce qu'il veut dire.",
+        "periodLabel": "Attesté dès 1965 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "era": "modern",
+            "statement": "Le nom Sokoine est porté en Tanzanie, dans la communauté maasaï. On ne sait pas avec certitude ce qu'il veut dire, ni s'il désigne un clan ou le nom d'un père : aucune des sources lues ne le dit.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The book on the late Prime Minister Edward Moringe Sokoine",
+                "author": "UONGOZI Institute",
+                "year": 2024,
+                "url": "https://www.uongozi.go.tz/sw/memoirs/the-book-on-the-late-prime-minister-edward-moringe-sokoine/",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice du 27 septembre 2024, relue le 11 octobre 2026. Elle situe le porteur dans la communauté maasaï, sans expliquer le sens du nom ni sa transmission."
+              },
+              {
+                "title": "Animal names applied to a person in Maasai society",
+                "author": "Eliakimu Sane",
+                "year": 2022,
+                "url": "https://benjamins.com/catalog/ijolc.20006.san",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "International Journal of Language and Culture 9(2), 2022, p. 177-193. L'article étudie des noms de personnes maasaï ; la forme Sokoine n'y apparaît pas."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1er juillet 1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Sokoine devient celui d'une université : la Sokoine University of Agriculture, à Morogoro, est nommée en l'honneur d'Edward Moringe Sokoine, Premier ministre mort en 1984, selon l'université.",
+            "sources": [
+              {
+                "title": "University History",
+                "author": "Sokoine University of Agriculture",
+                "year": null,
+                "url": "https://www.sua.ac.tz/university-history",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Page officielle de l'université, lue le 11 octobre 2026. Elle écrit que l'université, créée le 1er juillet 1984 par une loi du Parlement, a été nommée Sokoine University of Agriculture « in honor of then Prime Minister of Tanzania Edward Moringe Sokoine »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1965,
+              "to": 1965,
+              "label": "1965"
+            },
+            "era": "modern",
+            "statement": "Le nom Sokoine figure parmi les candidats aux élections législatives de 1965 dans la circonscription maasaï, selon un article du quotidien tanzanien The Citizen publié en 2020. C'est la plus ancienne trace de ce nom que le projet connaît, rapportée par ce journal ; elle ne dit pas depuis quand le nom est porté.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "How 1965 General elections helped Sokoine's rise to prominence",
+                "author": "The Citizen",
+                "year": 2020,
+                "url": "https://www.thecitizen.co.tz/tanzania/news/national/how-1965-general-elections-helped-sokoine-s-rise-to-prominence-2705360",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Quotidien tanzanien, article non signé du 13 mars 2020, relu le 11 octobre 2026. Il rapporte que Sokoine s'est présenté en 1965 dans la circonscription maasaï, face à Edward Carlo Boniface ole Mbarnoti. Il ne dit rien du nom lui-même."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

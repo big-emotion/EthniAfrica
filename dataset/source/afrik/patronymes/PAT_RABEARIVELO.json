@@ -102,5 +102,152 @@
       "fieldPath": "homonyms",
       "reason": "Les catalogues d'autorité et études littéraires consultés n'établissent pas de lignée homonyme d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Rabearivelo est le nom d'auteur du poète malgache Jean-Joseph Rabearivelo, né Rabe à Tananarive au début du XXe siècle. Les sources consultées ne disent ni quand ni pourquoi il l'a pris, ni ce qu'il veut dire ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "Rabearivelo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'auteur d'un poète malgache né Rabe ; on ne sait pas avec certitude d'où il vient.",
+        "periodLabel": "Publié dès 1924",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Nom d'auteur"
+            },
+            "statement": "Le nom Rabearivelo est celui sous lequel signe le poète né Joseph-Casimir Rabe ; une publication pédagogique de l'AEFE le présente comme un pseudonyme. Les sources consultées n'expliquent pas ce qu'il veut dire ni quand le poète l'a pris.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Saiky-Nofy : poésie et identité malgache",
+                "author": "Agence pour l'enseignement français à l'étranger",
+                "year": null,
+                "url": "https://aefe.gouv.fr/sites/default/files/asset/file/livre-saiky-nofy.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Publication pédagogique d'un collège du réseau de l'AEFE, non datée. Lue le 11 octobre 2026. Le mot du chef d'établissement, p. 2 : « J.-J.R., initiales volontairement choisies par Joseph Casimir Rabe pour signer son œuvre littéraire sous le pseudonyme de Jean Joseph Rabearivelo »."
+              },
+              {
+                "title": "Nul homme n'est une île",
+                "author": "Catherine Mazauric",
+                "year": 2023,
+                "url": "https://www.en-attendant-nadeau.fr/2023/03/08/biographie-rabearivelo-riffard/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Compte rendu de la biographie de Claire Riffard, Jean-Joseph Rabearivelo. Une biographie (CNRS Éditions, 2022), paru dans En attendant Nadeau le 8 mars 2023. Lu le 11 octobre 2026. Il rapporte que l'acte de naissance concerne l'enfant « qui naît Rabe », de père inconnu, et que les familles de ses parents appartiennent à la haute aristocratie merina."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1924,
+              "to": 1924,
+              "label": "1924"
+            },
+            "era": "colonial",
+            "statement": "Le nom Rabearivelo est précédé, à partir de 1924, des prénoms Jean-Joseph : au moment de publier, le poète trouve trop pauvre le prénom qu'il porte et y ajoute « le seul Jean de [sa] confirmation », selon ses propres mots que cite Claire Riffard.",
+            "sources": [
+              {
+                "title": "Jean-Joseph Rabearivelo - Une biographie, par Claire Riffard (compte rendu)",
+                "author": "Marc Cheymol",
+                "year": 2024,
+                "url": "https://journals.openedition.org/coma/11343",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Compte rendu paru dans Continents manuscrits, mis en ligne le 24 janvier 2024. Lu le 11 octobre 2026. La note 27 cite la biographie de Claire Riffard (p. 104) : « En 1924, alors que j'allais débuter en librairie, j'ai trouvé trop pauvre et surtout bien ridicule le nom […] Après avoir un instant hésité, j'y ai adjoint, rejetant tout le reste, le seul Jean de ma confirmation. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1924,
+              "to": 1924,
+              "label": "1924"
+            },
+            "era": "colonial",
+            "statement": "Le nom Rabearivelo apparaît comme nom d'auteur de La coupe de cendres, le premier recueil de poèmes de Jean-Joseph Rabearivelo, publié à Tananarive, selon le catalogue de la Bibliothèque nationale de France et Claire Riffard. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le poète l'a publié, pas depuis quand il le porte.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notice bibliographique « La coupe de cendres : poèmes / Jean-Joseph Rabearivelo »",
+                "author": "Bibliothèque nationale de France",
+                "year": 1924,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb36030483f",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice de la Bibliothèque nationale de France, lue le 11 octobre 2026, datée de 1924. Le dossier de Claire Riffard sur Île en île situe l'édition à Tananarive, chez G. Pitot de la Beaujardière."
+              },
+              {
+                "title": "Jean-Joseph Rabearivelo — Île en île",
+                "author": "Claire Riffard",
+                "year": 2006,
+                "url": "https://ile-en-ile.org/rabearivelo/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Dossier mis en ligne le 27 janvier 2006, mis à jour le 9 janvier 2021. Lu le 11 octobre 2026. Il le dit né le 4 mars 1901 à Tananarive, en notant que l'année exacte reste discutée, et cite La coupe de cendres (Tananarive, G. Pitot de la Beaujardière, 1924) comme son premier recueil."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1903,
+              "label": "Naissance du poète, entre 1901 et 1903 selon les sources"
+            },
+            "era": "colonial",
+            "statement": "Rabe est alors le nom de l'enfant : l'acte de naissance du futur poète l'appelle ainsi, selon la biographie de Claire Riffard que résume Catherine Mazauric.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Nul homme n'est une île",
+                "author": "Catherine Mazauric",
+                "year": 2023,
+                "url": "https://www.en-attendant-nadeau.fr/2023/03/08/biographie-rabearivelo-riffard/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Compte rendu de la biographie de Claire Riffard, Jean-Joseph Rabearivelo. Une biographie (CNRS Éditions, 2022), paru dans En attendant Nadeau le 8 mars 2023. Lu le 11 octobre 2026. Il rapporte que l'acte de naissance concerne l'enfant « qui naît Rabe », de père inconnu, et que les familles de ses parents appartiennent à la haute aristocratie merina."
+              },
+              {
+                "title": "Jean-Joseph Rabearivelo — Île en île",
+                "author": "Claire Riffard",
+                "year": 2006,
+                "url": "https://ile-en-ile.org/rabearivelo/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Dossier mis en ligne le 27 janvier 2006, mis à jour le 9 janvier 2021. Lu le 11 octobre 2026. Il le dit né le 4 mars 1901 à Tananarive, en notant que l'année exacte reste discutée, et cite La coupe de cendres (Tananarive, G. Pitot de la Beaujardière, 1924) comme son premier recueil."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1882,
+              "to": 1882,
+              "label": "1882"
+            },
+            "era": "polity",
+            "statement": "Rabe est déjà un nom de personne malgache : la grammaire de G. Cousins, publiée à Antananarivo, le donne comme premier exemple de nom de personne.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Gramara Malagasy lehibe",
+                "author": "G. Cousins",
+                "year": 1882,
+                "url": "https://hdl.handle.net/2027/inu.30000096941533",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 5",
+                "notes": "Antananarivo, London Missionary Society, 1882. Lu sur l'exemplaire numérisé de HathiTrust le 11 octobre 2026. Page 5 : « Naona ny hoe Rabe, satria anaran' olona » (Rabe est un nom, parce que c'est un nom de personne) ; l'exercice 4 demande de ranger parmi les noms de personnes, entre autres, « Rasoa » et « Ranaivo »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
