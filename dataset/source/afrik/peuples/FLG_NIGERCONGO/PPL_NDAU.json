@@ -32,7 +32,10 @@
       "Vatomboti — sous-groupe ndau des hautes terres",
       "Madanda — sous-groupe ndau, liés aux clans de Chipinge (Zimbabwe)",
       "Teve — sous-groupe ndau, zone côtière du Mozambique",
-      "Ndau-Shangaan — groupes issus de la fusion avec les envahisseurs nguni de Soshangane (années 1820-1840)"
+      "Ndau-Shangaan — groupes issus de la fusion avec les envahisseurs nguni de Soshangane (années 1820-1840)",
+      "Ndau de Machaze (Danda) — groupe des hautes terres, zone frontalière avec le Zimbabwe",
+      "Ndau de Buzi — groupe de la vallée de la rivière Buzi",
+      "Ndau de Beira (Bangwe) — groupe urbain de la deuxième ville du Mozambique"
     ],
     "origins": {
       "ancientOrigins": "Les Ndau sont historiquement apparentés aux Karanga et Manyika (groupes Shona) et représentent l'une des populations bantoues les plus anciennement établies dans le sud-est du Zimbabwe et le Mozambique central. Leur présence dans la région est attestée par le missionnaire portugais João dos Santos depuis les années 1500. Ils participaient aux réseaux commerciaux centrés sur le site de Mapungubwe (littéralement lieu des chacals), commerçant avec les Khoisan et les marchands arabes ; leurs marchandises incluaient des herbes traditionnelles, articles rituels, peaux, os, et textiles distinctive (Mpalu, Njeti, Vukotlo — étoffes rouges, blanches et bleues) ainsi que des perles d'or.",
@@ -41,7 +44,10 @@
         "Migration bantoue depuis le nord (bassin du Congo) vers le Zimbabwe et le Mozambique actuels, plusieurs siècles avant l'ère chrétienne",
         "Participation aux réseaux commerciaux de Mapungubwe (10e-13e siècles) reliant l'intérieur et la côte de l'océan Indien",
         "Migrations forcées liées aux conquêtes nguni des années 1820 (mfecane/difaqane), certains Ndau se réfugiant chez les Chopi qui disposaient de fusils portugais",
-        "Migration de certains clans Ndau-Shangaan depuis la vallée du Zambèze le long du Limpopo vers l'Afrique du Sud (clans Sithole et autres)"
+        "Migration de certains clans Ndau-Shangaan depuis la vallée du Zambèze le long du Limpopo vers l'Afrique du Sud (clans Sithole et autres)",
+        "Déplacements liés aux conquêtes de l'Empire Gaza (années 1820-1840) : certains Ndau se réfugièrent chez les Chopi armés de fusils portugais",
+        "Migration vers la ville de Beira (créée par les Portugais à la fin du 19e siècle) pour l'emploi colonial puis post-colonial",
+        "Migrations de travail vers l'Afrique du Sud depuis le début du 20e siècle"
       ],
       "historicalSettlementZones": [
         "Districts de Chipinge et Chimanimani (Zimbabwe du Sud-Est)",
@@ -49,14 +55,15 @@
         "Province d'Inhambane (Mozambique) : Mambone, Mossurize",
         "Vallée du Zambèze (Zimbabwe et Mozambique)",
         "Malawi central (présence documentée)",
-        "Bikita (Zimbabwe, présence minoritaire)"
+        "Bikita (Zimbabwe, présence minoritaire)",
+        "Nhamatanda, Dondo et Beira (Bangwe) — zones côtières et urbaines de Sofala"
       ],
       "unificationsOrDivisions": "Les Ndau se reconnaissent comme un seul peuple à travers l'ancêtre commun Musikavanthu/Mlambo, créateur de l'univers connu comme Mwari Musikavanthu chez les Shona. Les cinq sous-groupes (Magova, Mashanga, Vatomboti, Madanda, Teve) maintiennent des identités distinctes tout en partageant cette identité collective. La conquête nguni des années 1820 créa une division entre les Ndau purs et les Ndau-Shangaan. Depuis 1931, les jeunes locuteurs ndau du Zimbabwe avaient tendance à adopter l'identité shona ; la reconnaissance constitutionnelle de 2013 a renforcé la renaissance ndau.",
       "externalInfluences": "Commerce avec les marchands arabes de la côte swahili (10e-15e siècles). Contacts avec les Portugais via leur base de Sofala (attestés dès 1500 par João dos Santos). Conquête de l'Empire Gaza par Soshangane (Nguni) dans les années 1820 : les hommes ndau furent tués, leurs femmes capturées, créant une forte imprégnation nguni dans la langue et la culture ndau. Colonisation portugaise du Mozambique. Activité missionnaire catholique : conversion au catholicisme. En 2013, la Constitution du Zimbabwe reconnut le ChiNdau comme l'une des seize langues officielles."
     },
     "organization": {
       "traditionalPoliticalSystem": "Organisation en chefferies (chieftaincies) territoriales indépendantes, chaque clan ou sous-groupe reconnaissant un chef héréditaire. Avant la conquête nguni, les Ndau avaient des structures de chefferie bien établies, dont certaines subsistèrent sous l'Empire Gaza comme vassales. Les chefferies ndau de Chipinge (Zimbabwe) sont toujours actives. Les n'anga (tradipraticiens-devins) jouent un rôle important dans la prise de décision communautaire.",
-      "clanOrganization": "Structure clanique patrilinéaire. Les totems (mitupo) protègent les groupes claniques et créent un lien spirituel entre les membres du clan, interdisant aux membres du même totem de se marier entre eux. Les clans ndau au Zimbabwe s'identifient par des noms de famille distinctifs : Sibanda, Moyo, Nyandoro, Magoro-Nkosho, Dube, Semwayo, Moyana. Ces noms reflètent souvent l'influence nguni sur la nomenclature clanique.",
+      "clanOrganization": "Structure clanique patrilinéaire. Les totems (mitupo) protègent les groupes claniques et créent un lien spirituel entre les membres du clan, interdisant aux membres du même totem de se marier entre eux. Les clans ndau au Zimbabwe s'identifient par des noms de famille distinctifs : Sibanda, Moyo, Nyandoro, Magoro-Nkosho, Dube, Semwayo, Moyana. Ces noms reflètent souvent l'influence nguni sur la nomenclature clanique. Au Mozambique aussi, les noms de famille distinguent les clans ndau, et l'influence nguni se voit dans certains d'entre eux : Sithole, Sibanda, Dube, Moyo. Les clans organisent la transmission des terres, les obligations rituelles et les alliances de mariage ; la compensation matrimoniale (lobolo) se négocie entre familles.",
       "ageClassSystems": null,
       "roleOfLineages": "Les lignages patrilinéaires (dzinza) déterminent l'appartenance clanique, les droits successoraux et les obligations rituelles. Les esprits ancestraux (vadzimu) — esprits familiaux bienveillants — peuvent entrer dans le corps d'un membre de la même famille et communiquer avec les vivants. Une personne possédée par un vadzimu devient généralement un n'anga dévoué à l'aide et à la protection de cette famille. Les totems claniques servent à protéger les groupes et à maintenir une connexion spirituelle entre membres.",
       "religiousAuthority": "Les n'anga (tradipraticiens) sont les autorités religieuses traditionnelles centrales : ils guérissent ou nuisent par la médecine traditionnelle (mushonga), communiquent avec les esprits par divination, manipulent la météo en faisant appel aux esprits de la pluie (zvipunha). Le n'anga peut être homme ou femme, plus souvent femme. Les plus puissants sont possédés par des esprits ancestraux (vadzimu), les moins puissants par des mashavi (esprits d'étrangers morts loin de chez eux). Le dieu suprême ndau est Murungo ; il n'existe pas de concept du diable dans la cosmologie traditionnelle ndau. Suite à l'activité missionnaire, beaucoup de Ndau sont chrétiens, principalement catholiques."
@@ -68,7 +75,10 @@
         "ChiNdau de Sofala (Mozambique) — parlé dans les districts de Machanga, Chibabava, Machaze, Buzi, Nhamatanda, Dondo et Beira",
         "ChiNdau de Chipinge (Zimbabwe) — parlé dans les districts de Chipinge et Chimanimani",
         "ChiNdau de Mossurize — variété de la zone frontalière Mozambique-Zimbabwe",
-        "Ndau de la vallée du Zambèze — variété influencée par les contacts avec les Tonga et autres groupes"
+        "Ndau de la vallée du Zambèze — variété influencée par les contacts avec les Tonga et autres groupes",
+        "ChiNdau de Machaze (Danda) — variété des hautes terres, proche de la frontière Zimbabwe, plus proche du ChiNdau de Chipinge",
+        "ChiNdau de Beira — variété urbaine fortement influencée par le portugais et d'autres langues mozambicaines",
+        "Chimanimani (variante locale, proche du manyika)"
       ],
       "vehicularRole": "Le ChiNdau est une langue bantoue (zone S) parlée par environ 2,4 millions de personnes principalement au Mozambique central et au Zimbabwe du Sud-Est selon Omniglot (2025). Mutuellement intelligible avec le shona. Depuis 2013, le ChiNdau est reconnu comme l'une des seize langues officielles du Zimbabwe (Constitution, article 6). Le ndau est utilisé dans les services religieux à Beira (Mozambique). Au Zimbabwe, l'anglais est la principale langue d'administration ; au Mozambique, le portugais. Des locuteurs ndau existent également en Afrique du Sud."
     },
@@ -87,7 +97,7 @@
     "demography": {
       "totalPopulation": 2500000,
       "referenceYear": 2025,
-      "source": "Estimations 2025 basées sur : Omniglot — ChiNdau : 2,4 millions de locuteurs (2025) ; Wikipedia Ndau people : 581 000 locuteurs en 1997 au Mozambique seul (projection 2025) ; Joshua Project — Ndau au Mozambique et Zimbabwe ; projection de croissance démographique combinée du Mozambique (2,9%/an) et du Zimbabwe (1,5%/an)",
+      "source": "Estimations 2025 basées sur : Omniglot — ChiNdau : 2,4 millions de locuteurs (2025) ; Wikipedia Ndau people : 581 000 locuteurs en 1997 au Mozambique seul (projection 2025) ; Joshua Project — Ndau au Mozambique et Zimbabwe ; projection de croissance démographique combinée du Mozambique (2,9%/an) et du Zimbabwe (1,5%/an) Une autre estimation compte 1 200 000 Ndau au Mozambique en 2025 (Joshua Project, Ethnologue). Une autre estimation compte 800 000 Ndau au Zimbabwe en 2025 (CITE Zimbabwe, City Population).",
       "distributionByCountry": [
         {
           "country": "MOZ",
@@ -147,6 +157,234 @@
         "url": null,
         "tier": "referenced",
         "source_kind": "academic"
+      },
+      {
+        "title": "Ethnologue SIL — Ndau (ndc)",
+        "url": "https://www.ethnologue.com/language/ndc/",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "University of Missouri — Ndau linguistic profile (DICE)",
+        "url": "https://dice.missouri.edu/assets/docs/niger-congo/Ndau.pdf",
+        "tier": "referenced",
+        "source_kind": "academic"
+      },
+      {
+        "title": "CITE Zimbabwe — The Ndau people of Zimbabwe",
+        "url": "https://cite.org.zw/the-ndau-people-of-zimbabwe/",
+        "tier": "needs_review"
+      },
+      {
+        "title": "South African History Online — Mfecane",
+        "url": "https://sahistory.org.za/article/mfecane-understanding-period-transformation-southern-africa",
+        "tier": "referenced",
+        "source_kind": "repository"
+      },
+      {
+        "title": "Constitution of Zimbabwe Amendment (No. 20) Act 2013 — reconnaissance du chiNdau comme langue officielle",
+        "url": null,
+        "tier": "needs_review",
+        "source_kind": "government"
+      },
+      {
+        "title": "City Population — Manicaland Province, Zimbabwe",
+        "url": "https://www.citypopulation.de/en/zimbabwe/admin/1__manicaland/",
+        "tier": "referenced",
+        "source_kind": "discovery"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ndau désigne un peuple du centre du Mozambique et de l'est du Zimbabwe, entre la Pungwe, la mer et la Save, qui se nomme lui-même Ndau, ou VaNdau au pluriel. D'autres noms existent : Ndzawu, une graphie influencée par les parlers thonga voisins. Les sources que nous avons lues rattachent le nom aux rois nguni ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Ndau",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ndc",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple et, dans chindau, de sa langue ; écrit dès 1906.",
+        "usedIn": ["ndc"],
+        "periodLabel": "Écrit dès 1906 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné en 1934"
+            },
+            "statement": "Le nom Ndau désigne un peuple bantou installé entre la Pungwe, la mer et la Save, rattaché aux Shona par sa langue, selon Henri-Philippe Junod. Le mot ndau voudrait dire « le lieu, le pays ». L'origine du nom est expliquée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A contribution to the study of Ndau demography, totemism, and history",
+                "author": "Henri-Philippe Junod",
+                "year": 1934,
+                "url": "https://archive.org/details/african-studies_1934-03_8_1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17-18",
+                "notes": "Bantu Studies, vol. 8, n° 1, mars 1934 ; lu sur sa numérisation."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ndau entre dans celui de la langue, le chindau, que le phonéticien Daniel Jones décrit en 1911 comme une langue bantoue parlée à l'ouest de Sofala.",
+            "sources": [
+              {
+                "title": "The pronunciation and orthography of the Chindau language",
+                "author": "Daniel Jones",
+                "year": 1911,
+                "url": "https://archive.org/details/pronunciationort00jone",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Londres, University of London Press, 1911 ; lu sur sa numérisation."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ndau apparaît, entre guillemets, dans une lettre de la missionnaire américaine Alice C. Wilder, publiée en 1906 : elle y emploie ce mot pour les gens du pays où travaille sa mission, en Rhodésie. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Ndau",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Glimpses of African Life in Rhodesia",
+                "author": "Alice C. Wilder",
+                "year": 1906,
+                "url": "https://archive.org/details/lifelightforwome367woma",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 294",
+                "notes": "Life and Light for Women, vol. 36, n° 7, 1906 ; lettre d'une missionnaire de la mission américaine, lue sur sa numérisation."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Après la défaite de Zwide, selon Leonard D. Ngcongco"
+            },
+            "statement": "Le nom Ndau désigne, pour l'historien Leonard D. Ngcongco, l'un des petits groupes que Soshangane, un général nguni, vainc et incorpore à ses partisans lorsqu'il bâtit le royaume de Gaza, avec les Manyika et les Chopi.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 5 : Le Mfecane et l'émergence de nouveaux États africains",
+                "author": "Leonard D. Ngcongco",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 132",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1934,
+              "to": 1934,
+              "label": "Proposée en 1934"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ndau viendrait des Nguni : quand ils venaient faire leur soumission aux rois nguni, les Ndau s'asseyaient en frappant doucement des mains et disaient « Ndau wee ! », que Junod traduit « De la place, s'il vous plaît ! ». Les Nguni les auraient appelés ainsi pour leur rappeler leur condition ; comme ndau veut aussi dire « le pays », le nom les désignait en même temps comme les gens installés sur place, selon Henri-Philippe Junod.",
+            "hypothesisGroup": "origine du nom Ndau",
+            "sources": [
+              {
+                "title": "A contribution to the study of Ndau demography, totemism, and history",
+                "author": "Henri-Philippe Junod",
+                "year": 1934,
+                "url": "https://archive.org/details/african-studies_1934-03_8_1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17-18",
+                "notes": "Bantu Studies, vol. 8, n° 1, mars 1934 ; lu sur sa numérisation."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "VaNdau",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ndc",
+        "namedBy": null,
+        "shortLine": "La forme du nom au pluriel, avec le préfixe va- des noms de personnes.",
+        "usedIn": ["ndc", "eng"],
+        "periodLabel": "Écrit dès 1922",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom VaNdau est écrit Vandau dans le titre des contes publiés par Kamba Simango, un Ndau dont la langue maternelle est le chindau de la côte, avec l'anthropologue Franz Boas. C'est la plus ancienne trace de cette forme que le projet connaît.",
+            "formAsWritten": "Vandau",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tales and Proverbs of the Vandau of Portuguese South Africa",
+                "author": "Franz Boas et C. Kamba Simango",
+                "year": 1922,
+                "url": "https://archive.org/details/jstor-535015",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 151",
+                "notes": "Journal of American Folklore, vol. 35, n° 138, 1922 ; lu sur sa numérisation."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ndzawu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des auteurs influencés par les parlers thonga voisins",
+        "shortLine": "Une graphie du nom que Junod attribue à l'influence des parlers thonga.",
+        "periodLabel": "Signalé en 1934",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1934,
+              "to": 1934,
+              "label": "1934"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ndzawu, comme Ndawu, serait une graphie due à l'influence des Hlengwe, un groupe thonga voisin, et la forme Ndjao viendrait des clans thonga du sud, selon Henri-Philippe Junod, qui propose d'écrire Ndau. C'est la plus ancienne trace de cette graphie que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A contribution to the study of Ndau demography, totemism, and history",
+                "author": "Henri-Philippe Junod",
+                "year": 1934,
+                "url": "https://archive.org/details/african-studies_1934-03_8_1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18",
+                "notes": "Bantu Studies, vol. 8, n° 1, mars 1934 ; lu sur sa numérisation."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

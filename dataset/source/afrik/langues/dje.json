@@ -23,7 +23,136 @@
   "whyProblematic": null,
   "spellingAliases": [],
   "familyId": "FLG_SONGHAY",
-  "peoples": [],
+  "peoples": [{ "name": "Zarma", "peopleId": "PPL_ZARMA" }],
+  "nameHistory": {
+    "summary": "Le nom zarma désigne une langue songhaï du Niger, et le peuple qui la parle porte le même nom. Ses locuteurs disent zarma ciine, « la langue zarma ». En français, on a longtemps écrit djerma. Les sources que nous avons lues ne disent pas d'où vient le nom Zarma ; nous présentons plus bas ses traces.",
+    "names": [
+      {
+        "nameText": "Zarma",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "dje",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue et du peuple de l'ouest du Niger ; noté dès 1853.",
+        "periodLabel": "Écrit dès 1853 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1966,
+              "to": 1966,
+              "label": "Usage décrit en 1966"
+            },
+            "era": "modern",
+            "statement": "Le nom zarma désigne à la fois la langue et ceux qui la parlent : « Ni ya zarma no ? », « Es-tu un Zarma ? », demande un cours de langue de 1966. Les sources que nous avons lues ne disent pas d'où vient ce nom ; la fiche du peuple Zarma présente ses traces.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Djerma Basic Course",
+                "author": "English Language Services, pour le Peace Corps",
+                "year": 1966,
+                "url": "https://archive.org/details/ERIC_ED143238",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 231",
+                "notes": "Washington, 1966, cours de langue préparé pour le Peace Corps et diffusé par ERIC. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1853,
+              "to": 1857,
+              "label": "Voyage de 1853 (récit publié en 1857)"
+            },
+            "era": "polity",
+            "statement": "Le nom zarma est écrit « Zaberma, or Zerma (Jerma) » par Heinrich Barth, pour une province bordée par le Niger. C'est la plus ancienne trace de ce nom que le projet connaît ; elle nomme un pays, pas encore une langue.",
+            "formAsWritten": "Zaberma, or Zerma (Jerma)",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 4",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri04bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 547",
+                "notes": "Londres, Longman, Brown, Green, Longmans & Roberts ; voyage de 1849-1855. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Zarma ciine",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "dje",
+        "namedBy": null,
+        "shortLine": "« La langue zarma », dans la langue elle-même.",
+        "periodLabel": "Écrit dès 1966",
+        "accounts": [
+          {
+            "period": {
+              "from": 1966,
+              "to": 1966,
+              "label": "1966"
+            },
+            "era": "modern",
+            "statement": "Le nom zarma ciine apparaît, écrit zarma tyine, dans un cours de langue préparé pour le Peace Corps : « A go ga tyew zarma tyine ? », « Étudie-t-il le zarma ? ». Le cours traduit tyine par « langue ». C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "formAsWritten": "zarma tyine",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Djerma Basic Course",
+                "author": "English Language Services, pour le Peace Corps",
+                "year": 1966,
+                "url": "https://archive.org/details/ERIC_ED143238",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 231 et p. 232",
+                "notes": "Washington, 1966, cours de langue préparé pour le Peace Corps et diffusé par ERIC. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Djerma",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "L'ancienne écriture française du nom ; on écrit plutôt zarma aujourd'hui.",
+        "periodLabel": "XXe siècle",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1966,
+              "to": 1966,
+              "label": "1966"
+            },
+            "era": "modern",
+            "statement": "Le nom djerma est l'écriture française de zarma ; un cours de langue américain de 1966 la reprend encore dans son titre, Djerma Basic Course, et traduit zarma par « Djerma ». La fiche du peuple Zarma présente des traces plus anciennes de cette écriture.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Djerma Basic Course",
+                "author": "English Language Services, pour le Peace Corps",
+                "year": 1966,
+                "url": "https://archive.org/details/ERIC_ED143238",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "page de titre et p. 231",
+                "notes": "Washington, 1966, cours de langue préparé pour le Peace Corps et diffusé par ERIC. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": null,
     "dialects": [

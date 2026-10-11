@@ -13,7 +13,94 @@
   "whyProblematic": "Glebo est le nom du premier groupe que les explorateurs et colons américano-libériens ont rencontré au cap Palmas, les Glebo de la côte ; les colons ont ensuite appelé grebo leur langue (article de Wikipédia). Pour Moran, Glebo est le groupe et Grebo l'ensemble linguistique plus large auquel il appartient. Le mot a ensuite servi pour des groupes de l'intérieur, souvent d'autres langues et d'autres peuples, si bien que son emploi savant reste très imprécis. Pour le nom Glebo, chez les Glebo de la côte, un récit d'origine, tel que rapporté par Moran, dit qu'ils sont venus de l'est en pirogue, en grimpant sur les vagues comme le singe gle grimpe aux arbres. Comment Grebo est sorti de Glebo n'est pas expliqué dans les sources lues.",
   "spellingAliases": [],
   "familyId": "FLG_KROU",
-  "peoples": [],
+  "peoples": [
+    {
+      "name": "Grebo",
+      "peopleId": "PPL_GREBO"
+    }
+  ],
+  "nameHistory": {
+    "summary": "Le nom grebo désigne une langue krou du sud-est du Liberia, autour du cap Palmas, et le peuple qui la parle. Une tradition grebo, rapportée par un missionnaire en 1860, explique le nom par le singe gre. Nous ne connaissons pas d'autre explication ; nous la présentons plus bas avec les traces du nom.",
+    "names": [
+      {
+        "nameText": "Grebo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "grb",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue et du peuple du cap Palmas ; une tradition le relie au singe gre.",
+        "periodLabel": "Écrit dès 1850",
+        "accounts": [
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "1860"
+            },
+            "era": "modern",
+            "statement": "Le nom grebo désigne un peuple de la côte, autour du cap Palmas, et sa langue, que le missionnaire John Payne veut mettre par écrit. Il écrit que le missionnaire J. L. Wilson avait commencé ce travail avant lui. La fiche du peuple Grebo présente ce peuple.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Dictionary of the Grebo Language",
+                "author": "John Payne",
+                "year": 1860,
+                "url": "https://archive.org/details/adictionarygreb00payngoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 3 à 6",
+                "notes": "New York, E. O. Jenkins, 1860. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur était évêque de la mission épiscopale du cap Palmas."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1850,
+              "to": 1850,
+              "label": "1850"
+            },
+            "era": "colonial",
+            "statement": "Le nom grebo désigne une langue dans le titre de la Genèse traduite « into the Grebo Tongue », publiée à New York en 1850 par l'American Bible Society. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The First Book of Moses, called Genesis, translated into the Grebo Tongue",
+                "author": "John Payne, traducteur",
+                "year": 1850,
+                "url": "https://archive.org/details/rosettaproject_gbo_gen-1",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "titre",
+                "notes": "New York, American Bible Society, 1850. Lu le 11 octobre 2026 : titre et éditeur relevés dans la notice de la numérisation d'Internet Archive, texte de la Genèse en grebo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "Rapportée en 1860"
+            },
+            "era": "modern",
+            "statement": "Le nom grebo viendrait du singe gre : quand une partie du peuple partit en pirogue vers l'ouest, ceux qui franchirent les vagues en bondissant prirent ce nom, et ceux dont les pirogues chavirèrent reçurent un nom tiré de wore, « chavirer ». C'est la tradition que rapporte John Payne.",
+            "hypothesisGroup": "origine du nom grebo",
+            "sources": [
+              {
+                "title": "A Dictionary of the Grebo Language",
+                "author": "John Payne",
+                "year": 1860,
+                "url": "https://archive.org/details/adictionarygreb00payngoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 3",
+                "notes": "New York, E. O. Jenkins, 1860. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur était évêque de la mission épiscopale du cap Palmas."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": null,
     "dialects": [

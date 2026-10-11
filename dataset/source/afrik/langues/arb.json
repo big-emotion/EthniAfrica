@@ -20,6 +20,180 @@
   "spellingAliases": [],
   "familyId": "FLG_SEMITIQUE",
   "peoples": [],
+  "nameHistory": {
+    "summary": "Le nom arabe standard moderne désigne la forme écrite de l'arabe d'aujourd'hui. Ses locuteurs l'appellent al-ʿarabiyya al-fuṣḥā, ou simplement al-fuṣḥā. Le mot arabe lui-même nomme déjà la langue du Coran. Nous n'avons pas trouvé qui a forgé l'étiquette arabe standard moderne ; nous présentons plus bas ce que les sources disent de ces noms.",
+    "names": [
+      {
+        "nameText": "Al-ʿarabiyya al-fuṣḥā",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "arb",
+        "namedBy": null,
+        "shortLine": "Le nom que lui donnent ses locuteurs ; l'expression remonte au moins au XIe siècle.",
+        "periodLabel": "Écrit dès le début du XIe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par l'auteur"
+            },
+            "statement": "Le nom al-fuṣḥā désigne la variété d'arabe que les arabisants français appellent arabe classique, selon Pierre Larcher. Son origine est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Al-lugha al-fuṣḥâ : archéologie d'un concept « idéolinguistique », Revue des mondes musulmans et de la Méditerranée, n° 124",
+                "author": "Pierre Larcher",
+                "year": 2008,
+                "url": "https://journals.openedition.org/remmm/6035",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "résumé",
+                "notes": "Lu le 11 octobre 2026 en ligne, p. 263-278 de la revue. L'auteur retrace l'histoire de l'expression, du Moyen Âge à la fin du XIXe siècle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "1892"
+            },
+            "era": "colonial",
+            "statement": "Le nom al-lugha al-fuṣḥā s'impose dans la presse arabe à partir de 1892, dans la revue al-Hilāl que Jurjī Zaydān publie au Caire, selon Pierre Larcher. L'expression sert ensuite à nommer ce qu'un penseur nationaliste arabe appelait « une langue unificatrice et unifiée », selon le même auteur.",
+            "sources": [
+              {
+                "title": "Al-lugha al-fuṣḥâ : archéologie d'un concept « idéolinguistique », Revue des mondes musulmans et de la Méditerranée, n° 124",
+                "author": "Pierre Larcher",
+                "year": 2008,
+                "url": "https://journals.openedition.org/remmm/6035",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 29 et résumé",
+                "notes": "Lu le 11 octobre 2026 en ligne, p. 263-278 de la revue. L'auteur retrace l'histoire de l'expression, du Moyen Âge à la fin du XIXe siècle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1002,
+              "label": "Avant 1002"
+            },
+            "statement": "Le nom al-fuṣḥā apparaît sous une forme proche, al-lugha al-fuṣḥā, chez le grammairien Ibn Jinnī, mort en 1002, dans son livre al-Khaṣāʾiṣ : c'est la plus vieille occurrence que Pierre Larcher croit pouvoir citer. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Al-lugha al-fuṣḥâ : archéologie d'un concept « idéolinguistique », Revue des mondes musulmans et de la Méditerranée, n° 124",
+                "author": "Pierre Larcher",
+                "year": 2008,
+                "url": "https://journals.openedition.org/remmm/6035",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 16",
+                "notes": "Lu le 11 octobre 2026 en ligne, p. 263-278 de la revue. L'auteur retrace l'histoire de l'expression, du Moyen Âge à la fin du XIXe siècle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom al-fuṣḥā reprendrait une expression plus ancienne, afṣaḥ al-lughāt al-ʿarabiyya, « la façon de parler arabe la plus soignée », qui désignait la parole des Quraysh, la tribu de La Mecque, selon Pierre Larcher.",
+            "hypothesisGroup": "origine du nom fuṣḥā",
+            "sources": [
+              {
+                "title": "Al-lugha al-fuṣḥâ : archéologie d'un concept « idéolinguistique », Revue des mondes musulmans et de la Méditerranée, n° 124",
+                "author": "Pierre Larcher",
+                "year": 2008,
+                "url": "https://journals.openedition.org/remmm/6035",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "résumé et § 5 à 9",
+                "notes": "Lu le 11 octobre 2026 en ligne, p. 263-278 de la revue. L'auteur retrace l'histoire de l'expression, du Moyen Âge à la fin du XIXe siècle."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Arabe",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom courant de la langue ; il reprend ʿarabī, le mot que le Coran emploie pour sa langue.",
+        "periodLabel": "Nom de la langue dès le VIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 600,
+              "to": 699,
+              "label": "VIIe siècle"
+            },
+            "statement": "Le nom arabe désigne déjà une langue dans le Coran, sous la forme ʿarabī : « Nous l'avons fait descendre, un Coran en [langue] arabe », dit la sourate 12, dans la traduction de Muhammad Hamidullah. C'est la plus ancienne trace de ce nom de langue que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Le Coran, sourate 12 (Yūsuf), verset 2",
+                "author": "Le Coran, traduction de Muhammad Hamidullah",
+                "year": null,
+                "url": "https://quran.com/fr/12/2",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "sourate 12, verset 2",
+                "notes": "Lu le 11 octobre 2026 sur quran.com, texte arabe et traduction française : « Nous l'avons fait descendre, un Coran en [langue] arabe »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Arabe standard moderne",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Une étiquette de chercheurs pour l'arabe écrit d'aujourd'hui ; on ne sait pas qui l'a forgée.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom arabe standard moderne est une étiquette de chercheurs pour l'arabe écrit d'aujourd'hui ; Glottolog nomme cette langue Standard Arabic. Les arabisants français parlent plutôt d'arabe classique, selon Pierre Larcher. Nous n'avons pas trouvé de source lue qui dise qui a forgé cette étiquette, ni quand.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Arabe standard moderne (stan1318)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/stan1318",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue, nommée Standard Arabic, classée parmi les langues sémitiques."
+              },
+              {
+                "title": "Al-lugha al-fuṣḥâ : archéologie d'un concept « idéolinguistique », Revue des mondes musulmans et de la Méditerranée, n° 124",
+                "author": "Pierre Larcher",
+                "year": 2008,
+                "url": "https://journals.openedition.org/remmm/6035",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "résumé",
+                "notes": "Lu le 11 octobre 2026 en ligne, p. 263-278 de la revue. L'auteur retrace l'histoire de l'expression, du Moyen Âge à la fin du XIXe siècle."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": null,
     "dialects": ["Classical Arabic"],

@@ -13,7 +13,228 @@
   "whyProblematic": null,
   "spellingAliases": [],
   "familyId": "FLG_COUCHITIQUE",
-  "peoples": [],
+  "peoples": [
+    {
+      "name": "Somali",
+      "peopleId": "PPL_SOMALI"
+    }
+  ],
+  "nameHistory": {
+    "summary": "Le nom somali désigne la langue des Somali, dans la Corne de l'Afrique, que ses locuteurs appellent af-soomaali. Une de ses grandes variétés porte un nom à elle, maxaa-tiri. Le nom du peuple est plus ancien que celui de la langue ; on ne sait pas avec certitude d'où il vient.",
+    "names": [
+      {
+        "nameText": "Af-Soomaali",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "som",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue en somali même.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2012,
+              "to": null,
+              "label": "Depuis 2012"
+            },
+            "era": "modern",
+            "statement": "L'af-soomaali, le somali, est la langue officielle de la république fédérale de Somalie, avec ses deux variétés, le maay et le maxaa-tiri ; l'arabe y est la deuxième langue, selon l'article 5 de la Constitution provisoire.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Provisional Constitution of the Federal Republic of Somalia, 2012, article 5",
+                "author": "République fédérale de Somalie",
+                "year": 2012,
+                "url": "https://www.constituteproject.org/constitution/Somalia_2012",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 5",
+                "notes": "Texte lu sur Constitute Project le 11 octobre 2026. L'article 5 fait du somali, « maay et maxaa-tiri », la langue officielle, et de l'arabe la deuxième langue."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par l'auteur"
+            },
+            "statement": "Le nom af-soomaali réunit le mot af, que J. W. C. Kirk traduit par « bouche », et le nom du peuple, Soomaali. Nous n'avons pas trouvé de source qui date l'apparition de cette forme par écrit.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Grammar of the Somali Language, with Examples in Prose and Verse",
+                "author": "J. W. C. Kirk",
+                "year": 1905,
+                "url": "https://archive.org/details/grammarofsomalil00kirkuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9",
+                "notes": "Cambridge, University Press, 1905. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Somali",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "som",
+        "namedBy": null,
+        "shortLine": "Le nom du peuple, écrit dès le XVe siècle, devenu celui de la langue.",
+        "periodLabel": "Écrit dès le XVe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "Vers 1920"
+            },
+            "era": "colonial",
+            "statement": "Le somali reçoit vers 1920 un alphabet à lui, l'osmania, du nom de son auteur, ʿUthmān Yūsuf Kenadid. Des chefs religieux, qui préféraient l'écrire en caractères arabes, s'y opposent, selon Hassan Ahmed Ibrahim.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 23 : La politique et le nationalisme en Afrique du Nord-Est, 1919-1935",
+                "author": "Hassan Ahmed Ibrahim",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 647",
+                "notes": "UNESCO, volume dirigé par A. Adu Boahen, édition française lue dans l'exemplaire numérisé du volume le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom somali figure dans le titre de la grammaire de J. W. C. Kirk, parue à Cambridge, qui étudie la langue parlée dans le protectorat britannique de la côte.",
+            "sources": [
+              {
+                "title": "A Grammar of the Somali Language, with Examples in Prose and Verse",
+                "author": "J. W. C. Kirk",
+                "year": 1905,
+                "url": "https://archive.org/details/grammarofsomalil00kirkuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre",
+                "notes": "Cambridge, University Press, 1905. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1809,
+              "to": 1814,
+              "label": "Voyage de 1809-1810, publié en 1814"
+            },
+            "era": "polity",
+            "statement": "Le nom somali désigne une langue, sous la forme « Somauli », dans le vocabulaire que publie le voyageur anglais Henry Salt. Il dit le tenir de Summutter, un Somali, et l'avoir fait confirmer par d'autres personnes du même peuple. C'est la plus ancienne trace du nom employé pour la langue que le projet connaît.",
+            "formAsWritten": "Somauli",
+            "actors": [
+              {
+                "name": "Summutter",
+                "role": "informateur somali de Henry Salt"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Voyage to Abyssinia, and Travels into the Interior of that Country, Executed under the Orders of the British Government, in the Years 1809 and 1810",
+                "author": "Henry Salt",
+                "year": 1816,
+                "url": "https://archive.org/details/avoyagetoabyssi00saltgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 397-398",
+                "notes": "Philadelphie, M. Carey, 1816, édition américaine du livre paru à Londres en 1814. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Annexe I, vocabulaires des langues de la côte orientale de l'Afrique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1415,
+              "to": 1415,
+              "label": "Après 1415"
+            },
+            "era": "polity",
+            "statement": "Le nom somali apparaît pour la première fois par écrit dans un hymne que le roi éthiopien Yeshaq fait composer par ses chanteurs après une victoire sur des musulmans, selon l'étude pays de la Bibliothèque du Congrès. C'est la plus ancienne trace de ce nom que le projet connaît. Il y nomme un peuple ; sa langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Somalia: A Country Study, chapitre « Emergence of Adal »",
+                "author": "Helen Chapin Metz (dir.), Federal Research Division, Bibliothèque du Congrès",
+                "year": 1992,
+                "url": "https://countrystudies.us/somalia/5.htm",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "chapitre « Emergence of Adal »",
+                "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom somali viendrait de Samaale, ou Somaal, l'ancêtre légendaire des grandes familles de clans somali, selon l'étude pays de la Bibliothèque du Congrès.",
+            "hypothesisGroup": "origine du nom somali",
+            "sources": [
+              {
+                "title": "Somalia: A Country Study, chapitre « Origins, Migrations, and Settlement »",
+                "author": "Helen Chapin Metz (dir.), Federal Research Division, Bibliothèque du Congrès",
+                "year": 1992,
+                "url": "https://countrystudies.us/somalia/3.htm",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "chapitre « Origins, Migrations, and Settlement »",
+                "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Maxaa-tiri",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "som",
+        "namedBy": null,
+        "shortLine": "Le nom d'une des deux grandes variétés du somali.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2012,
+              "to": null,
+              "label": "Depuis 2012"
+            },
+            "era": "modern",
+            "statement": "Le nom maxaa-tiri désigne l'une des deux variétés du somali que nomme la Constitution provisoire de la Somalie, l'autre étant le maay. Nous n'avons pas trouvé de source qui explique l'origine de ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Provisional Constitution of the Federal Republic of Somalia, 2012, article 5",
+                "author": "République fédérale de Somalie",
+                "year": 2012,
+                "url": "https://www.constituteproject.org/constitution/Somalia_2012",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "article 5",
+                "notes": "Texte lu sur Constitute Project le 11 octobre 2026. L'article 5 fait du somali, « maay et maxaa-tiri », la langue officielle, et de l'arabe la deuxième langue."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": null,
     "dialects": [

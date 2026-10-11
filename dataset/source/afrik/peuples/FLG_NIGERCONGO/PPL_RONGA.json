@@ -12,7 +12,8 @@
         "Ronga (terme utilise par les linguistes et administrateurs europeens depuis le 19e siecle)",
         "XiRonga (nom de la langue, parfois utilise par extension pour le peuple)",
         "Thonga / Tonga (designation ancienne generique des groupes Tsonga du sud-Mozambique, utilisee par les sources portugaises et les premiers ethnographes)",
-        "Rhonga (variante orthographique ancienne, utilisee par Henri-Alexandre Junod)"
+        "Rhonga (variante orthographique ancienne, utilisee par Henri-Alexandre Junod)",
+        "Maputo people (designation informelle liee a la capitale)"
       ],
       "originOfExonyms": "Ronga est le nom que le peuple se donne lui-même. Des chercheurs européens l'ont repris, notamment le spécialiste suisse des langues Henri-Alexandre Junod, qui a été le premier à étudier sa langue à la fin du XIXe siècle. Dès le XVIe siècle, les sources portugaises mentionnaient les chefferies rhonga de Mpfumo, Tembe et Nyaka autour de la baie de Delagoa, aujourd'hui baie de Maputo. Thonga désignait l'ensemble des groupes tsonga du sud du Mozambique.",
       "whyProblematic": "La distinction entre Ronga et Tsonga est sujette a debat. Les recensements mozambicains et sud-africains ont souvent enregistre les Ronga sous l'etiquette 'Tsonga' ou 'Shangaan', effacant leur identite distincte. Les Ronga affirment leur identite propre distincte de celle des Shangaan (issus de la migration nguni-tsonga du 19e siecle). Certains linguistes considerent le Xironga comme un dialecte du Xitsonga, d'autres comme une langue distincte.",
@@ -30,7 +31,8 @@
       "Clan Nyaka — chefferie documentee des le 16e siecle par les Portugais",
       "Clan Lebombo (Livombo) — chefferie de la chaine Lebombo",
       "Clan Manyisa — chefferie documentee dans les sources portugaises du 16e siecle",
-      "Clan Ngomane — chefferie historique de la region de Maputo"
+      "Clan Ngomane — chefferie historique de la region de Maputo",
+      "Varhonga de Gaza (district de Xai-Xai) — ronga du sud de la province de Gaza"
     ],
     "origins": {
       "ancientOrigins": "Les Ronga sont un sous-groupe bantou du complexe Tsonga qui s'est etabli dans la region de la baie de Delagoa (baie de Maputo) plusieurs siecles avant l'ere des contacts europeens. Ils font partie du grand ensemble Vatsonga (peuples Tsonga) dont le developpement culturel et linguistique commun remonte au moins au 12e-13e siecle selon les recherches historiques. Les sources portugaises du 16e siecle (notamment les ecrits d'Henri-Philippe Junod, Matimu ya Vatsonga 1498-1650) constituent les premiers temoignages ecrits sur les chefferies ronga, citant Mpfumo, Nyaka, Tembe et Lebombo (Livombo) autour de la baie de Delagoa. Ces chefferies, de taille superieure a leurs contreparties nguni selon les Portugais, controlaient des territories vastes et percevaient des tributs des voyageurs.",
@@ -83,7 +85,7 @@
     "demography": {
       "totalPopulation": 1000000,
       "referenceYear": 2025,
-      "source": "SIL Ethnologue (langue rng, Ronga) ; estimations basees sur les donnees du recensement mozambicain et les chiffres de la communaute ronga en Afrique du Sud. La population totale Ronga (Mozambique + Afrique du Sud) est estimee entre 700 000 et 1 million en 2025, selon les criteres d'inclusion (locuteurs de xironga uniquement ou membres du groupe ethnique au sens large).",
+      "source": "SIL Ethnologue (langue rng, Ronga) ; estimations basees sur les donnees du recensement mozambicain et les chiffres de la communaute ronga en Afrique du Sud. La population totale Ronga (Mozambique + Afrique du Sud) est estimee entre 700 000 et 1 million en 2025, selon les criteres d'inclusion (locuteurs de xironga uniquement ou membres du groupe ethnique au sens large). Une autre estimation compte 800 000 Varhonga au Mozambique en 2025 (Ethnologue, recensement mozambicain).",
       "distributionByCountry": [
         {
           "country": "MOZ",
@@ -130,6 +132,12 @@
         "title": "Junod, Henri-Alexandre — The Life of a South African Tribe (2 volumes, 1912-1913, re-edition 1927)",
         "url": null,
         "tier": "referenced"
+      },
+      {
+        "title": "Instituto Nacional de Estatistica de Mocambique — www.ine.gov.mz",
+        "url": null,
+        "tier": "needs_review",
+        "source_kind": "official_statistics"
       }
     ]
   },

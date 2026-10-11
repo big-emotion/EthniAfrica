@@ -34,6 +34,142 @@
       "peopleId": "PPL_EWE"
     }
   ],
+  "nameHistory": {
+    "summary": "Le nom ewe désigne une langue gbe du sud-est du Ghana, du sud du Togo et du Bénin, et le peuple qui la parle. Ses locuteurs l'appellent eʋegbe, « la langue ewe ». Au XIXe siècle, des Européens appelaient une partie de ce pays Krepe. Nous n'avons pas trouvé de source savante qui explique l'origine du nom Ewe ; la fiche du peuple Ewe présente ce que nous savons.",
+    "names": [
+      {
+        "nameText": "Eʋegbe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ewe",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue chez ses locuteurs : gbe veut dire « langue, parole ».",
+        "periodLabel": "Écrit dès 1906",
+        "accounts": [
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom eʋegbe figure dans le dictionnaire allemand-ewe de Diedrich Westermann, aux entrées Ewe et Ewesprache, à côté de eʋe. J. B. Schlegel traduisait déjà gbe par « mot, langue » en 1857. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Wörterbuch der Ewe-Sprache, II : Deutsch-Ewe",
+                "author": "Diedrich Westermann",
+                "year": 1906,
+                "url": "https://archive.org/details/wrterbuchderewe00westgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrées Ewe et Ewesprache",
+                "notes": "Berlin, D. Reimer, 1906. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive ; la pagination de ces entrées n'est pas lisible dans le texte numérisé."
+              },
+              {
+                "title": "Schlüssel zur Ewe-Sprache",
+                "author": "J. B. Schlegel",
+                "year": 1857,
+                "url": "https://archive.org/details/10589261bsb",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. V à VII",
+                "notes": "Brême, W. Valett, 1857. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive, préface. Grammaire du dialecte anlo par un missionnaire de Brême."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ewe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ewe",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue et de son peuple, écrit Ewe dans une grammaire de 1857.",
+        "periodLabel": "Écrit dès 1857 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom ewe désigne à la fois la langue et le peuple qui la parle. Nous n'avons pas trouvé de source savante qui explique son origine ; la fiche du peuple Ewe présente son histoire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Schlüssel zur Ewe-Sprache",
+                "author": "J. B. Schlegel",
+                "year": 1857,
+                "url": "https://archive.org/details/10589261bsb",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. V à VII",
+                "notes": "Brême, W. Valett, 1857. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive, préface. Grammaire du dialecte anlo par un missionnaire de Brême."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "1857"
+            },
+            "era": "polity",
+            "statement": "Le nom ewe apparaît comme nom d'une langue dans la grammaire du dialecte anlo que J. B. Schlegel publie à Brême. Il écrit que les locuteurs appellent Eweme, « l'espace où l'on parle l'ewe », tout le pays de cette langue. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "formAsWritten": "Ewe-Sprache",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Schlüssel zur Ewe-Sprache",
+                "author": "J. B. Schlegel",
+                "year": 1857,
+                "url": "https://archive.org/details/10589261bsb",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. V à VII",
+                "notes": "Brême, W. Valett, 1857. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive, préface. Grammaire du dialecte anlo par un missionnaire de Brême."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Krepe",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom européen, donné au XIXe siècle à une partie du pays ewe.",
+        "periodLabel": "XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "1857"
+            },
+            "era": "polity",
+            "statement": "Le nom krepe figure sur une carte danoise de la côte pour une partie du pays ewe ; c'est un nom européen, écrit J. B. Schlegel, et les habitants disent Peki, ou Pedsi, d'après le nom de la ville du roi.",
+            "formAsWritten": "Krepe",
+            "sources": [
+              {
+                "title": "Schlüssel zur Ewe-Sprache",
+                "author": "J. B. Schlegel",
+                "year": 1857,
+                "url": "https://archive.org/details/10589261bsb",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. V à VII",
+                "notes": "Brême, W. Valett, 1857. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive, préface. Grammaire du dialecte anlo par un missionnaire de Brême."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": null,
     "dialects": [

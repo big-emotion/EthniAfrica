@@ -1,6 +1,6 @@
 ---
 title: "Colonial periods: the reference table behind a name-history account's era"
-status: "proposed 2026-10-09; the cases below marked « ruled 2026-10-10 » are operator rulings (Sudan 1821–1885, South Africa 1959–1994, the 1877 Alur letter, the rulings on waves 1 and 2 of the long tail, ETNI-2011, and the era of a hypothesis's publication); those marked « ruled 2026-10-11 » are the operator's rulings on wave 3 of the long tail (the Transvaal and the Orange Free State 1852–1902, Kenya 1902, Accra 1858, Lacerda 1798, Ogilby 1670, and the Rwenzori, Mukenge and Bogos accounts left without an era)"
+status: "proposed 2026-10-09; the cases below marked « ruled 2026-10-10 » are operator rulings (Sudan 1821–1885, South Africa 1959–1994, the 1877 Alur letter, the rulings on waves 1 and 2 of the long tail, ETNI-2011, and the era of a hypothesis's publication); those marked « ruled 2026-10-11 » are the operator's rulings on wave 3 of the long tail (the Transvaal and the Orange Free State 1852–1902, Kenya 1902, Accra 1858, Lacerda 1798, Ogilby 1670, and the Rwenzori, Mukenge and Bogos accounts left without an era), and the rulings on waves 4 and 5 of the long tail, also « ruled 2026-10-11 » (Ovamboland, Kilimanjaro, Mount Kenya, the Wolof kingdoms, Koelle, Adamawa, German East Africa before occupation, Ijwi → `polity`; Grebo 1850, Fort-Dauphin 1658, the Toro treaty 1891 → `colonial`; the Bertat country split by Egyptian taxation)"
 related:
   - docs/editorial/strategy/name-history-timeline-2026-10-08.md
   - docs/editorial/strategy/name-history-priority-core.md
@@ -348,3 +348,46 @@ kingdom 1876–1879). Ogilby's Namaqua of 1670 already read `polity`. The
 Rwenzori, Mukenge and Bogos accounts stay without an era, as ruled. The
 fiches now carry 2,218 accounts in 238 fiches: 630 `polity`, 487 `colonial`,
 637 `modern`, 464 without an era.
+
+## The rulings on waves 4 and 5, ruled 2026-10-11
+
+The operator followed every recommendation that waves 4 and 5 of the long
+tail left open. The rulings set an era on 22 accounts.
+
+- **`polity`: the interior before colonial rule.** Schinz and Hahn on
+  Ovamboland in 1891, and Brincker's hypothesis of 1894: German rule did not
+  reach Ovamboland before 1913. Johnston on the Kilimanjaro in 1884. Gregory's
+  porters naming Mount Kenya in 1893. Dard's Wolof grammar of 1826, about the
+  kingdoms of Jolof, Walo, Cayor, Baol, Sine and Saloum. Koelle in 1854 on the
+  interior: Jolof, Yoruba, Gio and the Mende Nongoba. Passarge in Adamawa,
+  1893–1894. The Nyaturu at the edge of Mirambo's state, 1870–1884. Baumann's
+  journey of 1893 in the interior of German East Africa (Iramba, Nyiramba,
+  Iraqw, Mbulu), which German rule did not yet administer. Götzen at Ijwi in
+  June 1894.
+- **`colonial`: under the colonising state.** The Grebo Genesis of 1850: the
+  Grebo lived in the Maryland colony, as Liberia 1822–1847 reads. The
+  Madagascar dictionary of 1658, written at Fort-Dauphin, the French post.
+  Lugard's treaty with Toro in 1891, a founding act of the protectorate. The
+  Hutu accounts of 1894–1895 in Rwanda stay `colonial`, as the table reads
+  from 1890.
+- **The Bertat country, 1869–1874.** Marno writes that Egypt conquered it in
+  February 1822 and that, in his day, its northern part, as far as Beni
+  Shangul, paid tax to Egypt, while the hill chiefs of the south kept away
+  from Egypt's subjects (_Reisen im Gebiete des blauen und weissen Nil_, 1874,
+  pp. 68–70). An account about the northern part is `colonial`, under the
+  Sudan ruling. An account about the southern hill chiefs, or one that does
+  not say which part it is about, carries no era. None of Marno's accounts
+  on `wti` says which part, so all four stay without an era.
+- **No era.** Binger in the Anno, 1887–1889. The Portuguese posts on the
+  Zambezi (Sena, 1531 and 1858). Periods that cross eras. Greenberg's labels
+  over several territories. Accounts written in Rome, Greece or Arabia. The
+  Quilombola accounts set in Brazil. The Malagasy book of 1852. Gevrey on
+  the Comoros, 1870. Mushunguli in 1610. Goshaland, 1840–1899. The Birom,
+  1880–1935. The combined Agaw account. Undated hypotheses (rule 6).
+- **Births and traces.** Ibn Khaldûn's « Suso » (1376) and Dapper's
+  « Mendi » (1668) stay uncertain older traces, not births. Gregory's
+  « Meru », the Kitara and Kitabanyoro traditions, and the Quilombola trace
+  of 1764 stay births, each tile saying what it rests on.
+
+The fiches now carry 3,113 accounts in 382 fiches: 908 `polity`,
+697 `colonial`, 877 `modern`, 631 without an era.

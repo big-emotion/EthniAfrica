@@ -112,13 +112,14 @@ const FOLDS: Fold[] = [
     },
   },
   {
+    // The Bafumbira and Kinyabwisha it carried moved on 2026-10-11 to
+    // PPL_RWANDAIS_HUTU, once the keeper was limited to Burundi.
     retired: ["PPL_HUTU_BURUNDI"],
     keeper: "FLG_NIGERCONGO/PPL_KIRUNDI_HUTU",
     carried: {
       sourceTitle:
         "Accord d'Arusha pour la Paix et la Réconciliation au Burundi, 2000",
-      subGroup: "Bafumbira",
-      dialect: "Kinyabwisha",
+      subGroup: "Imbo",
       exonym: "Wahutu",
     },
   },

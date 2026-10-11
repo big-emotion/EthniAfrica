@@ -117,5 +117,115 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Sakalava désigne un peuple de la côte ouest de Madagascar, des environs de Toliara jusqu'au nord-ouest, qui se nomme lui-même Sakalava. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Sakalava",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit dès 1731 ; son origine reste discutée.",
+        "periodLabel": "Écrit depuis 1731 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Sakalava désigne un grand peuple de la côte ouest de Madagascar, réparti en quatre grandes régions, le Boina, l'Ambongo, le Menabe et le Fiherenana, selon le Rakibolana malagasy. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Rakibolana malagasy, article sakalava",
+                "author": "Régis Rajemisa-Raolison",
+                "year": 1985,
+                "url": "https://malagasyword.org/bins/teny2/sakalava",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire monolingue malgache, Ambozontany, 1985, lu dans le Malagasy Dictionary and Encyclopedia en ligne le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1616,
+              "to": 1620,
+              "label": "1616-1620"
+            },
+            "era": "polity",
+            "statement": "Le nom Sakalava est rapproché par Raymond K. Kent des Suculamba de Sadia, des guerriers qui firent sécession en 1616 et razziaient le pays dès 1620, d'après les lettres de Mariano. Les sources ne disent pas clairement s'il s'agit du même nom.",
+            "before": true,
+            "sources": [
+              {
+                "title": "General History of Africa, V, ch. 28: Madagascar and the islands of the Indian Ocean",
+                "author": "Raymond K. Kent",
+                "year": 1992,
+                "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 869",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot. Édition anglaise lue le 11 octobre 2026 dans la copie que publie South African History Online (copie non officielle) ; l'édition française en ligne n'était pas accessible."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1731,
+              "to": 1731,
+              "label": "1731"
+            },
+            "era": "polity",
+            "statement": "Le nom Sakalava apparaît, sous la forme Saccalauvors, dans le journal de Robert Drury, un marin anglais longtemps captif à Madagascar : dans l'édition de 1731, il raconte qu'une armée de Saccalauvors s'apprêtait à attaquer les gens chez qui il vivait. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Saccalauvors",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Robert Drury",
+                "role": "marin captif, auteur du journal"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Madagascar: or, Robert Drury's journal, during fifteen years captivity on that island",
+                "author": "Robert Drury",
+                "year": 1731,
+                "url": "https://archive.org/details/bim_eighteenth-century_madagascar-or-robert-d_drury-robert_1731",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 368",
+                "notes": "Londres, édition de 1731, lue dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1992,
+              "to": 1992,
+              "label": "Proposée en 1992"
+            },
+            "era": "modern",
+            "statement": "Le nom Sakalava viendrait d'une petite rivière du même nom, un affluent du Mangoky, près de laquelle des guerriers venus de la côte du Bambala auraient rejoint la dynastie des Maroserana, selon Raymond K. Kent.",
+            "hypothesisGroup": "origine du nom Sakalava",
+            "sources": [
+              {
+                "title": "General History of Africa, V, ch. 28: Madagascar and the islands of the Indian Ocean",
+                "author": "Raymond K. Kent",
+                "year": 1992,
+                "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 869",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot. Édition anglaise lue le 11 octobre 2026 dans la copie que publie South African History Online (copie non officielle) ; l'édition française en ligne n'était pas accessible."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

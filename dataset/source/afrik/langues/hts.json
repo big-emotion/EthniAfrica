@@ -21,7 +21,139 @@
   "whyProblematic": "D'après les articles de Wikipédia sur la langue et sur le peuple hadza, Hadza serait la forme du pluriel féminin de haza, « être humain ». Les Hadza se disent hazabee, « les gens », et leur langue hazane : l'article sur le peuple traduit « comme les gens », celui sur la langue « des Hadza ». D'autres noms viennent des voisins. Selon l'article sur la langue, Tindiga viendrait du swahili watindiga, « les gens de l'herbe des marais », d'après la grande source de Mangola, et Kindiga en serait une forme dans une langue bantoue locale, sans doute l'isanzu ; Kangeju est un ancien nom allemand d'origine incertaine. Ces explications y sont données sans renvoi à une publication.",
   "spellingAliases": [],
   "familyId": "FLG_KHOISAN",
-  "peoples": [],
+  "peoples": [
+    {
+      "name": "Hadza",
+      "peopleId": "PPL_HADZA"
+    }
+  ],
+  "nameHistory": {
+    "summary": "Le nom hadza désigne une langue de Tanzanie, au bord du lac Eyasi, et le peuple de chasseurs-cueilleurs qui la parle. Dans les travaux en anglais, la langue s'appelle aussi hadzane. Un officier allemand a noté en 1898 un autre nom, Watindiga. Les sources que nous avons lues n'expliquent pas l'origine de ces noms ; nous présentons plus bas leurs plus anciennes traces.",
+    "names": [
+      {
+        "nameText": "Hadza",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "hts",
+        "namedBy": null,
+        "shortLine": "Le nom du peuple et de sa langue ; noté Hadzapi en 1931.",
+        "periodLabel": "Écrit dès 1931",
+        "accounts": [
+          {
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "Article de 1931"
+            },
+            "era": "colonial",
+            "statement": "Le nom hadza a une forme proche, Hadzapi, dans le titre d'un article de Dorothea Bleek, « The Hadzapi or Watindega of Tanganyika Territory », fondé sur une enquête de 1930. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "formAsWritten": "Hadzapi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Hadzapi or Watindega of Tanganyika Territory, Africa, vol. 4, n° 3",
+                "author": "Dorothea F. Bleek",
+                "year": 1931,
+                "url": "https://bal2.cs.uct.ac.za/metadata/reports/df-bleek-items/330/index.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 273-286",
+                "notes": "Lu le 11 octobre 2026 : notice de l'article dans les archives Bleek et Lloyd de l'université du Cap ; l'article lui-même n'a pas été lu. Enquête de terrain de 1930."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Hadzane",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "hts",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue des Hadza dans les travaux d'aujourd'hui.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": 2010,
+              "to": 2010,
+              "label": "Usage décrit en 2010"
+            },
+            "era": "modern",
+            "statement": "Le nom hadzane désigne la langue des Hadza chez l'anthropologue Frank Marlowe, pour qui seuls les Hadza la parlent. Nous ne savons pas depuis quand ce nom est écrit.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Hadza: Hunter-Gatherers of Tanzania",
+                "author": "Frank Marlowe",
+                "year": 2010,
+                "url": "https://archive.org/details/hadzahuntergathe0000marl",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Berkeley, University of California Press, 2010. Lu le 11 octobre 2026 : phrase « Only the Hadza speak Hadzane » relevée dans la recherche plein texte de la numérisation d'Internet Archive ; la page n'est pas relevée."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tindiga",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un autre nom de ce peuple, noté Watindiga dès 1898.",
+        "periodLabel": "Écrit dès 1898",
+        "accounts": [
+          {
+            "period": {
+              "from": 1896,
+              "to": 1898,
+              "label": "Expédition de 1896-1897 (récit publié en 1898)"
+            },
+            "era": "colonial",
+            "statement": "Le nom tindiga apparaît sous une forme proche, Watindiga, chez l'officier allemand Waldemar Werther : à l'est du lac Eyasi, écrit-il, vit un peuple qui se nomme Watindiga, et Wahi à l'ouest, et qui parle sa propre langue à clics. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "formAsWritten": "Watindiga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Die mittleren Hochländer des nördlichen Deutsch-Ost-Afrika",
+                "author": "C. Waldemar Werther",
+                "year": 1898,
+                "url": "https://archive.org/details/diemittlerenhoc00wertgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 70",
+                "notes": "Berlin, H. Paetel, 1898 ; récit de l'expédition de l'Irangi, 1896-1897. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "Article de 1931"
+            },
+            "era": "colonial",
+            "statement": "Le nom tindiga figure encore, écrit Watindega, à côté de Hadzapi dans le titre de l'article de Dorothea Bleek.",
+            "formAsWritten": "Watindega",
+            "sources": [
+              {
+                "title": "The Hadzapi or Watindega of Tanganyika Territory, Africa, vol. 4, n° 3",
+                "author": "Dorothea F. Bleek",
+                "year": 1931,
+                "url": "https://bal2.cs.uct.ac.za/metadata/reports/df-bleek-items/330/index.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 273-286",
+                "notes": "Lu le 11 octobre 2026 : notice de l'article dans les archives Bleek et Lloyd de l'université du Cap ; l'article lui-même n'a pas été lu. Enquête de terrain de 1930."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": null,
     "dialects": [],

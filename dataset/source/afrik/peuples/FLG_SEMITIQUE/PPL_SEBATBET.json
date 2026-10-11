@@ -1,7 +1,7 @@
 {
   "id": "PPL_SEBATBET",
   "nameMain": "Sebat Bet Gurage",
-  "languageFamilyId": "FLG_COUCHITIQUE",
+  "languageFamilyId": "FLG_SEMITIQUE",
   "currentCountries": ["ETH"],
   "content": {
     "appellations": {
@@ -15,7 +15,7 @@
       "originOfExonyms": "Le terme Sebat Bet veut dire « sept maisons » en amharique ; il ferait référence aux sept groupes dialectaux principaux. Gurage est le terme generique englobant plusieurs sous-groupes ethnolinguistiques distincts. Les groupes Gurage descendraient de conquérants militaires de la région du Tigray à l'époque de l'empire Aksumite, selon la Britannica.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Sebat Bet Gurage designe specifiquement le sous-groupe occidental des Gurage, distinct des Gurage septentrionaux (Soddo) et orientaux (Silte). L'appellation est officielle dans les classifications ethnographiques et administratives ethiopiennes.",
-      "linguisticFamily": "FLG_COUCHITIQUE",
+      "linguisticFamily": "FLG_SEMITIQUE",
       "ethnoLinguisticGroup": "Semitique ethiopien (Ethio-Semitique, branche Gurage occidentale)",
       "historicalRegion": "Centre-sud de l'Ethiopie, zone Gurage (region des Nations, Nationalites et Peuples du Sud), environ 155 km au sud-ouest d'Addis-Abeba",
       "currentCountries": ["ETH"]
@@ -127,6 +127,159 @@
         "url": null,
         "tier": "needs_review",
         "source_kind": "academic"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Sebat Bet Gurage désigne les Gurage de l'Ouest, dans le centre-sud de l'Éthiopie, qui se nomment eux-mêmes ainsi. Sebat Bet veut dire « sept maisons », c'est-à-dire sept groupes. On ne sait pas avec certitude quand ce nom est apparu ni quels groupes il comptait au départ.",
+    "names": [
+      {
+        "nameText": "Sebat Bet Gurage",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "sgw",
+        "namedBy": null,
+        "shortLine": "Les « Sept Maisons » des Gurage, un ensemble de groupes de l'ouest du pays gurage.",
+        "periodLabel": "En usage depuis le XIXe siècle au moins",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Sebat Bet Gurage désigne les « Sept Maisons » des Gurage, un ensemble de groupes de l'ouest du pays gurage, selon l'historien Ulrich Braukämper ; sebat veut dire « sept » dans plusieurs langues sémitiques d'Éthiopie. On ne sait pas avec certitude quand ni pourquoi ce nom est né.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A History of the Hadiyya in Southern Ethiopia",
+                "author": "Ulrich Braukämper",
+                "year": 2014,
+                "url": "https://archive.org/details/pdfcoffee.com_braukaemper-a-history-of-the-hadiyya-in-so-9783447192644-pdf-free",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 172 et 181",
+                "notes": "Otto Harrassowitz, Wiesbaden, 2014, collection Aethiopistische Forschungen, 77. Lu dans une copie non officielle déposée sur Internet Archive ; les pages citées sont celles de l'édition imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Rapporté en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Sebat Bet Gurage est celui auquel se rattachent les Wäläne, plutôt qu'aux « Sept Hadiyya », selon le linguiste Ronny Meyer, que cite Ulrich Braukämper.",
+            "sources": [
+              {
+                "title": "A History of the Hadiyya in Southern Ethiopia",
+                "author": "Ulrich Braukämper",
+                "year": 2014,
+                "url": "https://archive.org/details/pdfcoffee.com_braukaemper-a-history-of-the-hadiyya-in-so-9783447192644-pdf-free",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 124, note 219",
+                "notes": "Otto Harrassowitz, Wiesbaden, 2014, collection Aethiopistische Forschungen, 77. Lu dans une copie non officielle déposée sur Internet Archive ; les pages citées sont celles de l'édition imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Sebat Bet Gurage sert de cadre à une étude de 2022, dont les auteurs décrivent les Chaha comme l'une des « sept maisons » des Gurage, qui partagent un mode de vie et une origine, selon Habtamu Wondimu et Ashenafi Kebede.",
+            "sources": [
+              {
+                "title": "Cultural, economic, and symbolic value of the enset crop in Sebat-Bet Guraghe, Southwest Ethiopia: a qualitative study",
+                "author": "Habtamu Wondimu et Ashenafi Kebede",
+                "year": 2022,
+                "url": "https://doi.org/10.1057/s41599-022-01179-4",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "article 164",
+                "notes": "Humanities and Social Sciences Communications, vol. 9, 2022. Lu en texte intégral."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1801,
+              "to": 1900,
+              "label": "XIXe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Sebat Bet Gurage réunit alors les Čaha, les Eža, les Muḫer, les Yäčärät, les Ǝnnämor et les Aklil, rejoints par trois groupes d'origine hadiya, les Wälane, les Wəriro et les Gädäbano, selon Ulrich Braukämper. Il en nomme ainsi neuf.",
+            "sources": [
+              {
+                "title": "A History of the Hadiyya in Southern Ethiopia",
+                "author": "Ulrich Braukämper",
+                "year": 2014,
+                "url": "https://archive.org/details/pdfcoffee.com_braukaemper-a-history-of-the-hadiyya-in-so-9783447192644-pdf-free",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 181",
+                "notes": "Otto Harrassowitz, Wiesbaden, 2014, collection Aethiopistische Forschungen, 77. Lu dans une copie non officielle déposée sur Internet Archive ; les pages citées sont celles de l'édition imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1728,
+              "to": 1728,
+              "label": "1728"
+            },
+            "era": "polity",
+            "statement": "Le nom Sebat Bet a un parallèle plus ancien : en 1728, une carte européenne nomme les habitants du royaume d'Adea « Seb-a Hadya ». Ulrich Braukämper y lit une fédération de sept groupes hadiya, et non des Gurage.",
+            "sources": [
+              {
+                "title": "A History of the Hadiyya in Southern Ethiopia",
+                "author": "Ulrich Braukämper",
+                "year": 2014,
+                "url": "https://archive.org/details/pdfcoffee.com_braukaemper-a-history-of-the-hadiyya-in-so-9783447192644-pdf-free",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 181",
+                "notes": "Otto Harrassowitz, Wiesbaden, 2014, collection Aethiopistische Forschungen, 77. Lu dans une copie non officielle déposée sur Internet Archive ; les pages citées sont celles de l'édition imprimée."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gurage",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom plus large des peuples de langues sémitiques dont les Sebat Bet font partie.",
+        "periodLabel": "Écrit dès le XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1801,
+              "to": 1880,
+              "label": "XIXe siècle, avant les années 1880"
+            },
+            "era": "polity",
+            "statement": "Le nom Gurage désigne une région de l'intérieur dont les habitants parlent une langue sémitique : ceux de l'Ouest sont chrétiens depuis le Moyen Âge, ceux de l'Est ont adopté l'islam, selon l'historien Richard Pankhurst.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 15 : L'Éthiopie et la Somalie",
+                "author": "Richard K. P. Pankhurst",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 427",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

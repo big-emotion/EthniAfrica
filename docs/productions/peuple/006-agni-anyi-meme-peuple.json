@@ -11,16 +11,11 @@
   "subjects": [
     {
       "kind": "people",
-      "id": "PPL_AGNI",
-      "label": { "fr": "Agni" }
-    },
-    {
-      "kind": "people",
       "id": "PPL_ANYI",
       "label": { "fr": "Anyi" }
     }
   ],
-  "sitePath": "/fr/atlas/peuples/PPL_AGNI",
+  "sitePath": "/fr/atlas/peuples/PPL_ANYI",
   "publications": [
     {
       "network": "instagram",

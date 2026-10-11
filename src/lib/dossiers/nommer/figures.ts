@@ -74,7 +74,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // keepers (Lango, Gurma, Fula of the forest, Kikongo, two Ndebele, Northern
     // Sotho, Tshokwe, Karanga, two Yao, two Lomwe, Kirundi Tutsi, Luo) through the
     // retired-identifiers ledger.
-    value: 740,
+    // 740 -> 716 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
+    // into their keepers.
+    value: 716,
     method: `nombre de fichiers ${PEOPLE_GLOB}`,
     countedOn: COUNTED_ON,
   },
@@ -95,7 +97,10 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // keepers: their exonyms left with them, and those only they held were carried
     // over (« Fulbe ladde » to the nomadic Fulbe); Ga-Dangme, kept as a grouping,
     // gave « Gan » back to the Ga.
-    value: 3033,
+    // 3033 -> 2960 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded into
+    // their keepers: their exonyms left with them, and those only they held were
+    // carried over (« Calanga » to the Kalanga).
+    value: 2960,
     method:
       "somme de content.appellations.exonyms.length sur les fiches de peuple",
     countedOn: COUNTED_ON,
@@ -117,7 +122,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 757 -> 743 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
     // 743 -> 728 on 2026-10-11: fifteen duplicate people fiches folded into their
     // keepers.
-    value: 728,
+    // 728 -> 704 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
+    // into their keepers.
+    value: 704,
     method:
       "fiches dont content.appellations.selfAppellation est renseigné et non vide",
     countedOn: COUNTED_ON,
@@ -139,16 +146,20 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // took the retired Brong fiche's colonial-legacy status with its whyProblematic.
     // 433 -> 422 on 2026-10-11: fifteen duplicate people fiches folded into their
     // keepers; none of their statuses was carried.
-    value: 422,
+    // 422 -> 404 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
+    // into their keepers; none of their statuses was carried.
+    value: 404,
     method:
-      "fiches dont classificationStatus vaut contested (247) ou colonial-legacy (175)",
+      "fiches dont classificationStatus vaut contested (237) ou colonial-legacy (167)",
     countedOn: COUNTED_ON,
   },
   "status-other": {
     kind: "counted",
     figureKey: "status-other",
     label: "fiches déclarant un autre statut",
-    value: 19,
+    // 19 -> 18 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
+    // into their keepers.
+    value: 18,
     method:
       "fiches dont classificationStatus est renseigné sans être contested ni colonial-legacy",
     countedOn: COUNTED_ON,
@@ -161,7 +172,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 308 -> 303 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
     // 303 -> 299 on 2026-10-11: four of the fifteen folded duplicate fiches
     // declared no status.
-    value: 299,
+    // 299 -> 294 on 2026-10-11: five of the twenty-four folded duplicate fiches of waves 4
+    // and 5 declared no status.
+    value: 294,
     method: "fiches sans classificationStatus",
     countedOn: COUNTED_ON,
   },
@@ -176,7 +189,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 236 -> 227 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
     // 227 -> 221 on 2026-10-11: fifteen duplicate people fiches folded into their
     // keepers.
-    value: 221,
+    // 221 -> 213 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
+    // into their keepers.
+    value: 213,
     method: "radical colonial dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -200,7 +215,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 181 -> 177 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
     // 177 -> 175 on 2026-10-11: fifteen duplicate people fiches folded into their
     // keepers.
-    value: 175,
+    // 175 -> 169 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
+    // into their keepers.
+    value: 169,
     method: "radical administr dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -219,7 +236,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 120 -> 119 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
     // 119 -> 118 on 2026-10-11: fifteen duplicate people fiches folded into their
     // keepers.
-    value: 118,
+    // 118 -> 115 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
+    // into their keepers.
+    value: 115,
     method: "radical europ dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -233,7 +252,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 114 -> 113 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
     // 113 -> 112 on 2026-10-11: fifteen duplicate people fiches folded into their
     // keepers.
-    value: 112,
+    // 112 -> 108 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
+    // into their keepers.
+    value: 108,
     method: "radical voisin dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -243,7 +264,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     label: "fiches employant « portugais »",
     // 83 -> 79 on 2026-10-11: fifteen duplicate people fiches folded into their
     // keepers.
-    value: 79,
+    // 79 -> 70 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
+    // into their keepers.
+    value: 70,
     method: "radical portugais dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -256,7 +279,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 60 -> 59 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
     // 59 -> 58 on 2026-10-11: fifteen duplicate people fiches folded into their
     // keepers.
-    value: 58,
+    // 58 -> 55 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
+    // into their keepers.
+    value: 55,
     method: `radicaux ${PEJORATIVE_STEMS.join(", ")} dans originOfExonyms + whyProblematic`,
     countedOn: "2026-10-09",
   },
@@ -266,7 +291,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     label: "fiches employant le radical « arab- »",
     // 74 -> 72 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
     // 72 -> 71 on 2026-10-11: PPL_KIRDI dropped its unsourced etymologies, the Arabic one included.
-    value: 71,
+    // 71 -> 68 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
+    // into their keepers.
+    value: 68,
     method: "radical arab dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -277,7 +304,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 68 -> 66 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
     // 66 -> 63 on 2026-10-11: fifteen duplicate people fiches folded into their
     // keepers.
-    value: 63,
+    // 63 -> 61 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
+    // into their keepers.
+    value: 61,
     method: "radical swahili dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -286,7 +315,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     figureKey: "probe-slavery",
     label: "fiches employant le radical « esclav- »",
     // Recounted after the 304-fiche plain-language pass; the published probe is unchanged.
-    value: 28,
+    // 28 -> 27 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
+    // into their keepers.
+    value: 27,
     method: "radical esclav dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -296,7 +327,9 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     label: "fiches employant le radical « missionn- »",
     // 26 -> 25 on 2026-10-11: fifteen duplicate people fiches folded into their
     // keepers.
-    value: 25,
+    // 25 -> 24 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
+    // into their keepers.
+    value: 24,
     method: "radical missionn dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },

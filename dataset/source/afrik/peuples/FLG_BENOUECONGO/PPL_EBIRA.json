@@ -121,5 +121,154 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ebira désigne un peuple du centre du Nigeria, près du confluent du Niger et de la Bénoué, qui se nomme lui-même Ebira ou Egbira. D'autres noms existent : Igbira, la graphie des récits de voyage et de l'époque coloniale. Les sources que nous avons lues n'expliquent pas l'origine du nom ; nous présentons plus bas ce qu'elles disent de ses graphies.",
+    "names": [
+      {
+        "nameText": "Ebira",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "igb",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; écrit Égbīra dès 1854.",
+        "usedIn": ["igb"],
+        "periodLabel": "Écrit dès 1854 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ebira désigne un peuple du centre du Nigeria dont les groupes d'Okene, de Miyakan et d'Etuno ont longtemps employé des graphies différentes, selon Mohammad Ohitoto Hussein. On ne sait pas avec certitude d'où vient ce nom : les sources que nous avons lues ne l'expliquent pas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ohiku Egbira Descendants: the evolution of a people of destiny",
+                "author": "Mohammad Ohitoto Hussein",
+                "year": 2025,
+                "url": "https://blueprint.ng/ohiku-egbira-descendants-the-evolution-of-a-people-of-destiny/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Blueprint, 25 novembre 2025 ; lu en ligne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Ebira est écrit Égbīra par le linguiste Sigismund Koelle, qui recueille à Freetown la langue d'Opánda, « aussi appelée Égbīra ou Égūra », sur la rive gauche du Niger. Opánda est alors soumise à l'Igala. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Égbīra",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "section VI-8-a et VI-8-b",
+                "notes": "Londres, Church Missionary House. Les remarques de Koelle sont lues dans leur transcription par le jeu de données Lexibank, pas sur l'imprimé. Koelle a interrogé à Freetown des personnes libérées de la traite."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Egbira",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "igb",
+        "namedBy": null,
+        "shortLine": "La graphie choisie par les responsables de la communauté pour unifier le nom.",
+        "usedIn": ["igb", "eng"],
+        "periodLabel": "Graphie unifiée récente",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "2020, selon cet article"
+            },
+            "era": "modern",
+            "statement": "Le nom Egbira est la graphie que les responsables des trois zones, Opete, Miyakan et Etuno, ont adoptée pour réunir la communauté, selon Mohammad Ohitoto Hussein. Il écrit que le gouvernement fédéral l'a publiée au Journal officiel en 2020 ; nous n'avons pas lu ce Journal officiel. C'est la plus ancienne trace de cette graphie que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Ohiku Egbira Descendants: the evolution of a people of destiny",
+                "author": "Mohammad Ohitoto Hussein",
+                "year": 2025,
+                "url": "https://blueprint.ng/ohiku-egbira-descendants-the-evolution-of-a-people-of-destiny/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Blueprint, 25 novembre 2025 ; lu en ligne."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Igbira",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie des récits de voyage et de l'époque coloniale.",
+        "usedIn": ["eng"],
+        "periodLabel": "Écrit dès 1856 ; reculé après 1963",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1963,
+              "label": "Jusqu'au recensement de 1963"
+            },
+            "statement": "Le nom Igbira désignait le plus souvent ce peuple jusqu'au recensement de 1963, selon Mohammad Ohitoto Hussein. Ensuite, les gens d'Okene passent à Ebira, ceux de Miyakan à Igbira puis Egbura, et ceux d'Etuno gardent Igarra.",
+            "sources": [
+              {
+                "title": "Ohiku Egbira Descendants: the evolution of a people of destiny",
+                "author": "Mohammad Ohitoto Hussein",
+                "year": 2025,
+                "url": "https://blueprint.ng/ohiku-egbira-descendants-the-evolution-of-a-people-of-destiny/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Blueprint, 25 novembre 2025 ; lu en ligne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1856,
+              "label": "1854, publié en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Igbira est écrit I'gbira par William Balfour Baikie, qui remonte le Niger en 1854 : au confluent, la ville d'Igbegbe compte surtout des Igara et des I'gbira, et l'on y parle la langue des seconds. C'est la plus ancienne trace de cette graphie que le projet connaît.",
+            "formAsWritten": "I'gbira",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Narrative of an exploring voyage up the rivers Kwóra and Bínue",
+                "author": "William Balfour Baikie",
+                "year": 1856,
+                "url": "https://archive.org/details/narrativeofexplo00baik",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 68",
+                "notes": "Londres, John Murray, 1856 ; lu sur sa numérisation. Le voyage date de 1854."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

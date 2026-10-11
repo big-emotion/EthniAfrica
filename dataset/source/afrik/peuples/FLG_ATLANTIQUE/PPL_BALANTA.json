@@ -126,5 +126,170 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Balanta, ou Balante en français, désigne un peuple de Guinée-Bissau et du sud du Sénégal, qui se donne aussi le nom de Brassa. Le nom Balanta viendrait d'un mot mandingue ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Balanta",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit dès 1594 ; il viendrait d'un mot mandingue.",
+        "periodLabel": "Écrit depuis 1594 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Balante regroupe aujourd'hui plusieurs groupes, comme les Balantas manés, les Balantas brabo ou de dentro et les Balantas nagas, selon Chérif Mbodj, qui suit L. D. Handem ; les Mansoanca, appelés Balantas manso, n'en font pas partie d'après les comparaisons de vocabulaire de Jean Doneux. L'origine de ce nom n'est connue que par l'hypothèse présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Contribution à l'étude des Balantes de la Guinée-Bissau",
+                "author": "Chérif Mbodj",
+                "year": 2016,
+                "url": "https://rea.ucad.sn/index.php/rea/article/download/40/39/159",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 207",
+                "notes": "Revue d'études africaines, n° 3, université Cheikh Anta Diop de Dakar, lue en ligne le 11 octobre 2026. L'auteur cite la thèse de L. D. Handem, Nature et fonctionnement du pouvoir chez les Balanta Brassa, INEP, 1986 ; nous ne l'avons pas lue nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1500,
+              "label": "Avant le XVe siècle, selon cette lecture"
+            },
+            "era": "polity",
+            "statement": "Le nom Balante s'applique, dans l'Histoire générale de l'Afrique, à l'un des trois grands groupes des estuaires de la Haute-Guinée : venus de l'est, ces Balante se seraient imposés aux Bainuk avant le XVe siècle, selon Christophe Wondji.",
+            "before": true,
+            "sources": [
+              {
+                "title": "General History of Africa, V, ch. 13: The states and cultures of the Upper Guinean coast",
+                "author": "Christophe Wondji",
+                "year": 1992,
+                "url": "https://www.sahistory.org.za/archive/general-history-africa-volume-v-africa-sixteenth-eighteenth-century",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 373",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot. Édition anglaise lue le 11 octobre 2026 dans la copie que publie South African History Online (copie non officielle) ; l'édition française en ligne n'était pas accessible."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1594,
+              "to": 1594,
+              "label": "1594"
+            },
+            "era": "polity",
+            "statement": "Le nom Balanta apparaît par écrit, sous la forme Balantas, dans le Tratado breve dos rios de Guiné du capitaine André Álvares de Almada, écrit en 1594 : il les compte parmi les peuples du rio São Domingos et les décrit comme des gens qui ne veulent guère voir les Portugais ni devenir leurs esclaves. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple vivait déjà là avant lui.",
+            "formAsWritten": "Balantas",
+            "birth": true,
+            "actors": [
+              {
+                "name": "André Álvares de Almada",
+                "role": "capitaine, auteur du traité"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Tratado breve dos rios de Guiné do Cabo-Verde",
+                "author": "André Álvares de Almada",
+                "year": 1594,
+                "url": "https://archive.org/details/tratadobrevedosr00alma",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 50 et p. 52",
+                "notes": "Traité écrit en 1594, lu dans l'édition publiée par Diogo Köpke à Porto en 1841, numérisée par Internet Archive, le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1986,
+              "to": 2016,
+              "label": "Proposée en 1986, reprise en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Balanta viendrait du mot mandingue balanto, « celui qui refuse » : les Mandingues auraient ainsi désigné ces groupes parce qu'ils avaient refusé de suivre le roi Koli Tenguella au début du XVIe siècle, selon L. D. Handem, citée par Chérif Mbodj.",
+            "hypothesisGroup": "origine du nom Balanta",
+            "sources": [
+              {
+                "title": "Contribution à l'étude des Balantes de la Guinée-Bissau",
+                "author": "Chérif Mbodj",
+                "year": 2016,
+                "url": "https://rea.ucad.sn/index.php/rea/article/download/40/39/159",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 207",
+                "notes": "Revue d'études africaines, n° 3, université Cheikh Anta Diop de Dakar, lue en ligne le 11 octobre 2026. L'auteur cite L. D. Handem, 1986, p. 10 ; nous n'avons pas lu cette thèse nous-mêmes."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Brassa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Balanta ; il signifierait « les survivants ».",
+        "periodLabel": "Rapporté en 1986",
+        "accounts": [
+          {
+            "period": {
+              "from": 1986,
+              "to": 2016,
+              "label": "Rapporté en 1986, repris en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Brassa, ou Beraasa, aurait été pris par des groupes partis du Fouta-Djalon à la fin du XVe siècle pour échapper à Koli Tenguella, quand ils s'installèrent au bord du Corubal ; il signifierait « les survivants », selon la tradition orale rapportée par L. D. Handem et citée par Chérif Mbodj.",
+            "hypothesisGroup": "origine du nom Brassa",
+            "sources": [
+              {
+                "title": "Contribution à l'étude des Balantes de la Guinée-Bissau",
+                "author": "Chérif Mbodj",
+                "year": 2016,
+                "url": "https://rea.ucad.sn/index.php/rea/article/download/40/39/159",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 208, note 10",
+                "notes": "Revue d'études africaines, n° 3, université Cheikh Anta Diop de Dakar, lue en ligne le 11 octobre 2026. Tradition orale rapportée par L. D. Handem, 1986, p. 15, sans que la note nomme ceux qui la portent ; nous n'avons pas lu cette thèse nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1986,
+              "to": 2016,
+              "label": "Rapporté en 1986, repris en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Brassa ne serait pas le premier nom de ce peuple : on dit dans la communauté que le nom d'origine est révélé aux hommes lors de leur initiation, et ce secret est gardé, selon L. D. Handem, citée par Chérif Mbodj.",
+            "sources": [
+              {
+                "title": "Contribution à l'étude des Balantes de la Guinée-Bissau",
+                "author": "Chérif Mbodj",
+                "year": 2016,
+                "url": "https://rea.ucad.sn/index.php/rea/article/download/40/39/159",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 208, note 10",
+                "notes": "Revue d'études africaines, n° 3, université Cheikh Anta Diop de Dakar, lue en ligne le 11 octobre 2026. L'auteur cite L. D. Handem, 1986, p. 15 ; nous n'avons pas lu cette thèse nous-mêmes."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

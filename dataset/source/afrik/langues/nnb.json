@@ -14,6 +14,110 @@
   "spellingAliases": [],
   "familyId": "FLG_BANTU",
   "peoples": [{ "name": "Nande", "peopleId": "PPL_NANDE" }],
+  "nameHistory": {
+    "summary": "Le nom kinande désigne la langue des Nande, dans l'est de la République démocratique du Congo, au Nord-Kivu. On y retrouve le nom du peuple, Nande, précédé d'un préfixe. En Ouganda, au pied du Rwenzori, la même langue est appelée konzo, ou konjo. On ne sait pas avec certitude d'où vient le nom Nande ; nous présentons plus bas sa plus ancienne trace écrite.",
+    "names": [
+      {
+        "nameText": "Kinande",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nnb",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue des Nande, formé sur le nom du peuple.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le kinande est une langue bantoue de l'est de la République démocratique du Congo ; c'est pour l'essentiel la même langue que le konzo, ou konjo, parlé en Ouganda, selon le linguiste Ngessimo Mathe Mutaka. Nous n'avons pas trouvé la plus ancienne trace écrite de la forme kinande.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Kinande: A Grammar Sketch (Version 1.0)",
+                "author": "Ngessimo Mathe Mutaka",
+                "year": null,
+                "url": "https://afranaphproject.afranaphdatabase.com/images/stories/downloads/casefiles/KinandeGS.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Esquisse de grammaire publiée en ligne par l'African Anaphora Project (Rutgers University), lue en texte intégral le 11 octobre 2026. L'auteur renvoie à une grammaire de Baudet parue en 1948, que nous n'avons pas lue."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nande",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "nnb",
+        "namedBy": "Les peuples voisins, selon Harry Johnston",
+        "shortLine": "Le nom du peuple, écrit dès 1902 sous la forme Banande.",
+        "periodLabel": "Écrit dès 1902",
+        "accounts": [
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom nande apparaît sous la forme Banande chez Harry Johnston, qui le donne comme le nom que les peuples voisins appliquent à des gens vivant à la lisière de la grande forêt, à l'ouest de la Semliki. Au singulier, note-t-il, on dirait Munande, et la racine serait -nande. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple et sa langue existaient déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Uganda Protectorate, vol. II",
+                "author": "Harry Johnston",
+                "year": 1902,
+                "url": "https://archive.org/details/cu31924087982504",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 510 et note",
+                "notes": "Londres, Hutchinson, 1902. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'auteur décrit ces gens avec les catégories raciales méprisantes de son époque."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Konzo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la même langue en Ouganda, au pied du Rwenzori.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom konzo, ou konjo, désigne en Ouganda une langue qui est pour l'essentiel la même que le kinande, selon Ngessimo Mathe Mutaka.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Kinande: A Grammar Sketch (Version 1.0)",
+                "author": "Ngessimo Mathe Mutaka",
+                "year": null,
+                "url": "https://afranaphproject.afranaphdatabase.com/images/stories/downloads/casefiles/KinandeGS.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Esquisse de grammaire publiée en ligne par l'African Anaphora Project (Rutgers University), lue en texte intégral le 11 octobre 2026. L'auteur renvoie à une grammaire de Baudet parue en 1948, que nous n'avons pas lue."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": "non_vehicular",
     "dialects": [],

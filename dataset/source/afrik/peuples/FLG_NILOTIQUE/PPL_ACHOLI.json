@@ -138,5 +138,221 @@
         "source_kind": "intergovernmental"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Acholi désigne un peuple de langue luo du nord de l'Ouganda et du Soudan du Sud. Au début du XXe siècle, on notait qu'il se nommait lui-même Gang ; au XIXe siècle, les voyageurs venus du nord l'appelaient Shuli. Les sources ne s'accordent pas sur l'origine du nom Acholi ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Acholi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom en usage aujourd'hui, écrit dès 1902 ; son origine reste discutée.",
+        "periodLabel": "Écrit depuis 1902 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Acholi désigne des gens de langue luo du nord de l'Ouganda, venus de chefferies voisines qui ne se voyaient pas comme un seul peuple : les Arabes les appelaient tous du même nom par commodité, puis les Britanniques leur ont imposé une identité de « tribu acholi », selon Jonathan Easter et Benon Hatangimana. L'origine du nom est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bending the Spear: The Campaign against the Lord's Resistance Army",
+                "author": "Jonathan R. Easter et Benon M. Hatangimana",
+                "year": 2017,
+                "url": "https://archive.org/details/bendingspearcamp1094556909",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Mémoire de la Naval Postgraduate School de Monterey, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Les auteurs citent Ruddy Doom et Koen Vlassenroot, African Affairs, 1999, p. 10 ; nous n'avons pas lu cet article nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom Acholi apparaît par écrit dans l'ouvrage de l'administrateur britannique Harry Johnston paru en 1902, qui parle des Acholi de la province du Nil et de leur langue nilotique. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple vivait déjà là avant lui.",
+            "formAsWritten": "Acholi",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Harry Johnston",
+                "role": "administrateur britannique, auteur de l'ouvrage"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Uganda Protectorate, vol. II",
+                "author": "Harry Johnston",
+                "year": 1902,
+                "url": "https://archive.org/details/cu31924087982504",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 476",
+                "notes": "Londres, Hutchinson. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Proposée en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Acholi, comme sa variante Shuli, serait le même que celui des Shilluk, Cholo, le i final marquant le pluriel, selon le linguiste Diedrich Westermann.",
+            "hypothesisGroup": "origine du nom Acholi",
+            "sources": [
+              {
+                "title": "The Shilluk People, Their Language and Folklore",
+                "author": "Diedrich Westermann",
+                "year": 1912,
+                "url": "https://archive.org/details/shillukpeoplethe00west",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 31",
+                "notes": "Philadelphie et Berlin, lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1999,
+              "to": 2017,
+              "label": "Proposée en 1999, reprise en 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Acholi viendrait de la phrase luo « An loco », « je suis un être humain », selon Ruddy Doom et Koen Vlassenroot, cités par Jonathan Easter et Benon Hatangimana.",
+            "hypothesisGroup": "origine du nom Acholi",
+            "sources": [
+              {
+                "title": "Bending the Spear: The Campaign against the Lord's Resistance Army",
+                "author": "Jonathan R. Easter et Benon M. Hatangimana",
+                "year": 2017,
+                "url": "https://archive.org/details/bendingspearcamp1094556909",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Mémoire de la Naval Postgraduate School de Monterey, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Les auteurs citent Ruddy Doom et Koen Vlassenroot, African Affairs, 1999, p. 10 ; nous n'avons pas lu cet article nous-mêmes."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Shuli",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les voyageurs du XIXe siècle donnaient aux Acholi.",
+        "periodLabel": "Écrit dès 1874",
+        "accounts": [
+          {
+            "period": {
+              "from": 1874,
+              "to": 1874,
+              "label": "1874"
+            },
+            "era": "colonial",
+            "statement": "Le nom Shuli apparaît par écrit, sous la forme Shooli, dans le récit de l'explorateur britannique Samuel Baker paru en 1874, qui traverse les « pays madi et shooli » à la tête d'une expédition au service du khédive d'Égypte. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple vivait déjà là avant lui.",
+            "formAsWritten": "Shooli",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Samuel White Baker",
+                "role": "explorateur au service du khédive d'Égypte"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Ismailïa: A Narrative of the Expedition to Central Africa, vol. II",
+                "author": "Samuel White Baker",
+                "year": 1874,
+                "url": "https://archive.org/details/ismailaanarrati00bakegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 70",
+                "notes": "Londres, Macmillan. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Shuli est encore donné en 1911 par l'anthropologue Jan Czekanowski comme synonyme d'Acholi, pour un peuple qui, précise-t-il, s'appelle en réalité Gang.",
+            "sources": [
+              {
+                "title": "Forschungen im Nil-Kongo-Zwischengebiet, vol. II",
+                "author": "Jan Czekanowski",
+                "year": 1911,
+                "url": "https://archive.org/details/forschungenimnil02czek",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 546",
+                "notes": "Leipzig, Klinkhardt et Biermann. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gang",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donnait, selon les auteurs du début du XXe siècle.",
+        "periodLabel": "Noté dès 1911",
+        "accounts": [
+          {
+            "period": {
+              "from": 1911,
+              "to": 1912,
+              "label": "1911-1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gang est celui que portent en réalité les Shuli ou Acholi, selon l'anthropologue Jan Czekanowski en 1911 ; le linguiste Diedrich Westermann nomme aussi leur langue Gang, ou Gan, en 1912. C'est la plus ancienne trace écrite de ce nom que le projet connaît. Ce peuple existait déjà avant ces écrits.",
+            "formAsWritten": "Gang",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Forschungen im Nil-Kongo-Zwischengebiet, vol. II",
+                "author": "Jan Czekanowski",
+                "year": 1911,
+                "url": "https://archive.org/details/forschungenimnil02czek",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 546",
+                "notes": "Leipzig, Klinkhardt et Biermann. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              },
+              {
+                "title": "The Shilluk People, Their Language and Folklore",
+                "author": "Diedrich Westermann",
+                "year": 1912,
+                "url": "https://archive.org/details/shillukpeoplethe00west",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 31",
+                "notes": "Philadelphie et Berlin, lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
