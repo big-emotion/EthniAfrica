@@ -586,10 +586,10 @@
         "name": "Kongo (Brazzaville)",
         "selfAppellation": "Bakongo",
         "exonyms": ["Kongo (terme utilisé par les Européens)"],
-        "peopleId": "PPL_KONGO_BRAZZA",
+        "peopleId": "PPL_KONGO",
         "mainRegion": "Pool, région de Brazzaville",
         "languages": ["Kikongo", "français", "lingala"],
-        "languageFamily": "FLG_NIGERCONGO",
+        "languageFamily": "FLG_BANTU",
         "appellationRemarks": "Le terme \"Kongo\" est neutre et accepté. L'auto-appellation \"Bakongo\" (pluriel de Mukongo) est préférée."
       },
       {
@@ -735,7 +735,7 @@
       "peoples": [
         {
           "name": "Kongo (Brazzaville)",
-          "peopleId": "PPL_KONGO_BRAZZA",
+          "peopleId": "PPL_KONGO",
           "percentageInCountry": 40
         },
         {

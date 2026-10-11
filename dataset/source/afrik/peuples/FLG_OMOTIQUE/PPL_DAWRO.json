@@ -17,7 +17,8 @@
         "Dawrotsuwa",
         "Konta",
         "Koysha",
-        "Kucha"
+        "Kucha",
+        "Dawaro"
       ],
       "originOfExonyms": "Les conquérants amhara du nord employaient Kullo, un nom souvent jugé méprisant. D'autres populations de la région emploient Omete. Dawuro signifierait 'fort, courageux, brave et sans peur' en langue dawro. Dawragna désigne la langue du peuple.",
       "whyProblematic": "L'administration amhara a imposé le nom Kullo après la conquête éthiopienne de 1889. Il reste associé à cette période de domination étrangère. Les différents noms donnés au peuple reflètent les points de vue de ceux qui l'ont nommé de l'extérieur.",
@@ -64,7 +65,8 @@
       "isoCodes": ["dwr"],
       "dialects": [
         "Dawragna central — parlé dans la zone de Tarcha et les woredas principaux",
-        "Variétés frontalières avec affinités au Konta (région de Konta) et au Wolayta (zone orientale)"
+        "Variétés frontalières avec affinités au Konta (région de Konta) et au Wolayta (zone orientale)",
+        "Kucha"
       ],
       "vehicularRole": "Le Dawragna est la langue d'instruction dans les écoles primaires de la zone Dawro. Il est parlé par 97,44% des habitants de la zone (recensement 2007). La langue présente des similitudes avec le Wolayta, le Gamo et le Gofa, langues de la même famille ometo. Elle est également parlée dans des zones frontalières de Konta, Jimma, Kaffa et Kambata-Tambaro. Le Dawro possède son propre jeu de caractères spécifiques dans le syllabaire éthiopique (Ethiopic), ce qui est rare parmi les langues régionales éthiopiennes. L'amharique est utilisé pour l'administration centrale et l'enseignement secondaire."
     },
@@ -83,7 +85,7 @@
     "demography": {
       "totalPopulation": 700000,
       "referenceYear": 2025,
-      "source": "Recensement éthiopien 2007 (CSA) : zone Dawro 489 577 habitants (97,32% Dawro). Population éthiopienne 2007 : Dawro représentait 3,28% du SNNPR. Document de recherche de l'Université de Jimma (repository.ju.edu.et) : 600 121 dans la zone Dawro selon le recensement 2007 élargi. Projection 2025 estimée à environ 700 000 en tenant compte du taux de croissance démographique éthiopien.",
+      "source": "Recensement éthiopien 2007 (CSA) : zone Dawro 489 577 habitants (97,32% Dawro). Population éthiopienne 2007 : Dawro représentait 3,28% du SNNPR. Document de recherche de l'Université de Jimma (repository.ju.edu.et) : 600 121 dans la zone Dawro selon le recensement 2007 élargi. Projection 2025 estimée à environ 700 000 en tenant compte du taux de croissance démographique éthiopien. Une autre estimation compte 1 044 000 Dawro en 2025 (Joshua Project).",
       "distributionByCountry": [
         {
           "country": "ETH",
@@ -122,6 +124,23 @@
         "url": null,
         "tier": "needs_review",
         "source_kind": "official_statistics"
+      },
+      {
+        "title": "Dawro in Ethiopia – Joshua Project, 2025",
+        "url": "https://joshuaproject.net/people_groups/12839",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      },
+      {
+        "title": "The Case of the Dawro in Ethiopia – Jimma University Journals, 2021",
+        "url": "https://journals.ju.edu.et/index.php/ejssls/article/download/4751/1723/",
+        "tier": "referenced",
+        "source_kind": "academic"
+      },
+      {
+        "title": "Overview of Dawuro Zone, Ethiopia – Scribd, 2025",
+        "url": "https://www.scribd.com/document/809814043/chapter1-4",
+        "tier": "unverified"
       }
     ]
   },

@@ -39,7 +39,8 @@
         "Fondation de Bono Manso comme capital politique et rituel",
         "Creation du centre commercial de Begho au carrefour des routes transsahariennes",
         "Populations autochtones de la zone foret-savane de l'actuel Ghana central — pas de migration fondatrice externe documentee",
-        "Branche Abron : migration vers la Cote d'Ivoire vers 1690 sous la conduite de Tan Date pour fonder le royaume de Gyaman"
+        "Branche Abron : migration vers la Cote d'Ivoire vers 1690 sous la conduite de Tan Date pour fonder le royaume de Gyaman",
+        "Akwamu (Gold Coast, pres de la riviere Volta) -> Kumasi (refuge temporaire chez les Ashanti) -> region de Doma/Wam (Ghana) -> Bondoukou (Cote d'Ivoire actuelle, vers 1680)"
       ],
       "historicalSettlementZones": [
         "Techiman et ses environs (Ghana central)",
@@ -47,7 +48,8 @@
         "Begho (ancienne cite commerciale, XVIIe-XVIIIe siecles)",
         "Region Bono du Ghana actuel: Sunyani, Techiman, Dormaa",
         "Est de la Cote d'Ivoire (communautes abron)",
-        "Nord-est de la Cote d'Ivoire : Bondoukou et region de l'Indenie-Djuablin (Gyaman/Abron)"
+        "Nord-est de la Cote d'Ivoire : Bondoukou et region de l'Indenie-Djuablin (Gyaman/Abron)",
+        "Corridor entre la riviere Komoe et la Volta Noire"
       ],
       "unificationsOrDivisions": "Organisation initiale en confederation de clans matrilineaires autour de centres rituels. Apres la destruction de Bono Manso par les forces asante en 1722-1723, le capital se deplace a Techiman. Sous l'epoque coloniale britannique, les Etats bono (Techiman, Dormaa, Wenchi) sont reconnus comme paramountcies. En 1952, les chefs bono (Techiman, Dormaa, Drobo) se retirent du Conseil de la Confederation asante pour protester contre la domination asante.",
       "externalInfluences": "Contacts avec les marchands mande et haoussa via Begho (routes transsahariennes). Influences islamiques via le quartier des marchands musulmans (Kramo) a Begho. Commerce avec les Portugais sur la cote des le XVe siecle. Invasion asante en 1722-1723 (destruction de Bono Manso) et en 1877 (destruction de Techiman). Creation de la region Brong-Ahafo par les Britanniques en 1959, separant les Bono de la region Ashanti.",
@@ -157,6 +159,12 @@
         "url": null,
         "tier": "needs_review",
         "source_kind": "missionary_database"
+      },
+      {
+        "title": "Terray, Emmanuel - A History of the Abron Kingdom of Gyaman, Michigan State University, 1980",
+        "url": "https://pdfproc.lib.msu.edu/?file=%2FDMC%2FAfrican+Journals%2Fpdfs%2FInstitue+of+African+Studies+Research+Review%2F1980v12n1%2Fasrv012001002.pdf",
+        "tier": "referenced",
+        "source_kind": "academic"
       }
     ]
   },

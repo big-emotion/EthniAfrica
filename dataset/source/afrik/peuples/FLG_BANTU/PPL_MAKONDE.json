@@ -10,7 +10,8 @@
       "exonyms": [
         "Maconde (appellation utilisee au Mozambique et dans les sources portugaises)",
         "Chimakonde (designation swahili de la langue)",
-        "Wamakonde (pluriel swahili)"
+        "Wamakonde (pluriel swahili)",
+        "Kimakonde"
       ],
       "originOfExonyms": "Maconde est la transcription portugaise du nom Makonde, utilisee au Mozambique colonial et post-colonial. Chimakonde ou Kimakonde est le nom swahili de la langue. La distinction Makonde (Tanzanie) / Maconde (Mozambique) reflete la separation administrative coloniale et une evolution linguistique differenciee des deux groupes de part et d'autre de la riviere Ruvuma.",
       "whyProblematic": null,
@@ -23,7 +24,13 @@
     "ethnicities": [
       "Makonde de Tanzanie — installes dans la region de Mtwara et Lindi (Tanzanie meridionale), au nord de la Ruvuma",
       "Maconde du Mozambique — installes sur le plateau de Mueda (province de Cabo Delgado), au sud de la Ruvuma",
-      "Makonde du Kenya — petit groupe issu d'une migration des annees 1950 depuis le Mozambique, etabli dans le comte de Kwale"
+      "Makonde du Kenya — petit groupe issu d'une migration des annees 1950 depuis le Mozambique, etabli dans le comte de Kwale",
+      "Maconde de la côte (installés sur le littoral depuis les accords de paix de 1992)",
+      "Clan des Shikombokombo (originaires du nord de la rivière Messalo)",
+      "Clan des Shitunguli (présents à la fois dans la région de Mueda et sur l'île d'Ibo)",
+      "Groupes de la vallée du Rovuma (fusion historique avec des Yao et des Makua)",
+      "Makonde de Lindi (groupe côtier et intérieur, région de Lindi)",
+      "Makonde installés à Dar es Salaam (artisans et sculpteurs depuis les années 1950-1960)"
     ],
     "origins": {
       "ancientOrigins": "Les Makonde ont developpe leur culture sur le plateau de Mueda (nord du Mozambique, Cabo Delgado), un territoire eleve et boise qui leur a permis de resister avec succes aux razzias des esclavagistes africains, arabes et europeens pendant des siecles. Leur isolement geographique volontaire est une caracteristique fondatrice de leur identite. La riviere Ruvuma, frontiere naturelle, a progressivement divise le groupe en deux communautes distinctes (tanzanienne et mozambicaine) qui ont developpe des variantes linguistiques differentes tout en conservant une origine et une culture communes.",
@@ -31,12 +38,19 @@
       "migrationRoutes": [
         "Implantation ancienne sur le plateau de Mueda (Mozambique nord)",
         "Extension vers le sud-est de la Tanzanie, au nord de la Ruvuma",
-        "Migration partielle vers le Kenya (annees 1950, comte de Kwale)"
+        "Migration partielle vers le Kenya (annees 1950, comte de Kwale)",
+        "Retraite historique vers le plateau de Mueda face aux razzias esclavagistes swahili et arabes du 18e au 19e siècle",
+        "Déplacements vers les zones côtières de Cabo Delgado après la fin de la guerre civile mozambicaine (1992)",
+        "Migration économique vers Dar es Salaam (artisans-sculpteurs, à partir des années 1950)"
       ],
       "historicalSettlementZones": [
         "Plateau de Mueda, province de Cabo Delgado (Mozambique)",
         "Regions de Mtwara et Lindi (Tanzanie meridionale)",
-        "Comte de Kwale (Kenya, presence limitee)"
+        "Comte de Kwale (Kenya, presence limitee)",
+        "Districts de Muidumbe, Nangade et Mocimboa da Praia (Cabo Delgado)",
+        "Zones côtières de Cabo Delgado (installation croissante depuis 1992)",
+        "Mtwara (ville portuaire, principale ville de la région)",
+        "Dar es Salaam (communauté artistique et diaspora urbaine depuis les années 1950)"
       ],
       "unificationsOrDivisions": "La riviere Ruvuma a scinde le groupe Makonde en deux communautes nationales distinctes lors de la delimitation des frontieres coloniales (frontiere Tanganyika-Mozambique portugais). Au fil du temps, les deux communautes ont developpe des langues partiellement differentes. En 2016, un groupe de 300 Makonde du Kenya (descendants de Mozambicains installes dans les annees 1950) a marche de Kwale a Nairobi pour reclamer la citoyennete kenyane ; le president Kenyatta a ordonne la delivrance de cartes d'identite avant decembre 2016.",
       "externalInfluences": "Resistance prolongee aux esclavagistes (africains, arabes, europeens) grace a l'isolement du plateau de Mueda. Domination coloniale portugaise sur le Mozambique (resistance jusqu'aux annees 1920). Pendant la lutte anticoloniale mozambicaine (1960s), le FRELIMO fut lance depuis le plateau de Mueda, qui etait le foyer makonde : les Makonde constituerent l'epine dorsale du mouvement de liberation, financement une partie par la vente de sculptures.",
@@ -56,7 +70,8 @@
         "Makonde tanzanien (nord de la Ruvuma) — variante principale en Tanzanie",
         "Maconde mozambicain (plateau de Mueda) — variante du Mozambique, differences phonologiques et lexicales notables apres des siecles de separation",
         "Matambwe (Matembwe) — dialecte potentiellement divergent",
-        "Mabiha (Maviha) — dialecte divergent, possiblement distinct"
+        "Mabiha (Maviha) — dialecte divergent, possiblement distinct",
+        "Kimakonde de Lindi (variante côtière)"
       ],
       "vehicularRole": "Le makonde/chimakonde est la langue maternelle de tous les membres du groupe ethnique. Le swahili est la langue vehiculaire nationale en Tanzanie et sert de langue de communication interethnique dans le sud du pays. Le portugais est la langue officielle au Mozambique. L'anglais est utilise en Tanzanie."
     },
@@ -75,7 +90,7 @@
     "demography": {
       "totalPopulation": 1800000,
       "referenceYear": 2025,
-      "source": "Wikipedia EN (donnees 2001) : 1 140 000 en Tanzanie, 233 358 au Mozambique (recensement 1997). SIL Ethnologue — Makonde (kde). Estimations 2025 tenant compte de la croissance demographique : environ 1 500 000 en Tanzanie, 300 000 au Mozambique, total approximatif 1 800 000.",
+      "source": "Wikipedia EN (donnees 2001) : 1 140 000 en Tanzanie, 233 358 au Mozambique (recensement 1997). SIL Ethnologue — Makonde (kde). Estimations 2025 tenant compte de la croissance demographique : environ 1 500 000 en Tanzanie, 300 000 au Mozambique, total approximatif 1 800 000. Une autre estimation compte 1 200 000 Makonde en Tanzanie en 2025 (Joshua Project).",
       "distributionByCountry": [
         {
           "country": "TZA",
@@ -117,6 +132,45 @@
         "url": "https://en.unesco.org/",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Joshua Project — Makonde in Mozambique",
+        "url": "https://joshuaproject.net/people_groups/13427/MZ",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      },
+      {
+        "title": "Museu do Aljube — Mueda Plateau Meeting 1960",
+        "url": "https://www.museudoaljube.pt/en/2023/06/17/mueda-plateau-meeting/",
+        "tier": "needs_review"
+      },
+      {
+        "title": "African Blackwood Conservation Project — Makonde Art",
+        "url": "https://www.blackwoodconservation.org/makonde-art/",
+        "tier": "unverified"
+      },
+      {
+        "title": "Mozambique High Commission — Cabo Delgado",
+        "url": "http://www.mozambiquehighcommission.org.uk/cabo-delgado.html",
+        "tier": "needs_review",
+        "source_kind": "government"
+      },
+      {
+        "title": "Joshua Project — Makonde in Tanzania",
+        "url": "https://joshuaproject.net/people_groups/13427/TZ",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      },
+      {
+        "title": "Smithsonian Institution Libraries — Makonde Sculpture bibliography",
+        "url": "https://www.sil.si.edu/silpublications/modernafricanart/maadetail.cfm?subCategory=Tanzania+--+Makonde+Sculpture",
+        "tier": "referenced",
+        "source_kind": "repository"
+      },
+      {
+        "title": "Safaris Rwanda Safari — Cultural Heritage of the Makonde People",
+        "url": "https://www.safarisrwandasafari.com/information/the-cultural-heritage-of-the-makonde-people/",
+        "tier": "needs_review"
       }
     ]
   },

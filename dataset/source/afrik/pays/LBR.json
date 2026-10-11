@@ -393,7 +393,7 @@
         "name": "Gio",
         "selfAppellation": "Gio",
         "exonyms": ["Gio (terme utilisé par les Européens)"],
-        "peopleId": "PPL_GIO",
+        "peopleId": "PPL_DAN",
         "mainRegion": "Nord du Libéria",
         "languages": ["Gio (gej", "ISO 639-3)", "anglais"],
         "languageFamily": "FLG_MANDE",
@@ -707,7 +707,7 @@
         {
           "name": "Gio / Dan",
           "percentageInCountry": 8,
-          "peopleId": "PPL_GIO",
+          "peopleId": "PPL_DAN",
           "region": "Nord du Libéria",
           "languageFamily": "FLG_MANDE",
           "referenceYear": 2008

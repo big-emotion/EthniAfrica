@@ -183,7 +183,7 @@ describe("the subject of a name search", () => {
     const subjects = selectNameSubject(
       [
         kongo("PPL_KONGO", "Kongo"),
-        kongo("PPL_KONGO_BRAZZA", "Kongo du Congo"),
+        kongo("PPL_KONGO_CABINDA", "Kongo du Cabinda"),
       ],
       "kongo"
     );

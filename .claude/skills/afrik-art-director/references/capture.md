@@ -89,7 +89,7 @@ slice is for the judgement.
 
 Routes with a `loading.tsx` return the shell, not the content, so scraping
 hrefs with `curl | grep` yields nothing. Read the live DOM instead. Fiche URLs
-carry the corpus identifier verbatim — `/fr/atlas/peuples/PPL_KUNG`,
+carry the corpus identifier verbatim — `/fr/atlas/peuples/PPL_JUHOANSI`,
 `/fr/atlas/pays/ZAF`, `/fr/atlas/familles/FLG_ATLANTIQUE`.
 
 ### 5. A worktree-isolated session refuses compound shell
@@ -132,10 +132,10 @@ The public surface, for a full sweep:
 /fr/atlas/peuples               /fr/dossiers/anecdotes       /fr/jeux/mercator
 /fr/atlas/pays                  /fr/dossiers/doctrine        /fr/jeux/quiz
 /fr/atlas/familles              /fr/dossiers/migrations
-/fr/atlas/peuples/PPL_KUNG      /fr/dossiers/appellations
+/fr/atlas/peuples/PPL_JUHOANSI  /fr/dossiers/appellations
 /fr/atlas/pays/ZAF              /fr/dossiers/regards/colonisation-et-resistances
 /fr/atlas/familles/FLG_ATLANTIQUE
-/fr/atlas/peuples/PPL_KUNG/liens
+/fr/atlas/peuples/PPL_JUHOANSI/liens
 /fr/atlas/recherche?q=yoruba
 /fr/comparer   /fr/about   /fr/contribute   /fr/plan-du-site   /fr/signalements
 /fr/mentions-legales   /fr/accessibilite   /fr/confidentialite
@@ -155,10 +155,10 @@ only as the prefix of their children — `/fr/atlas/*`, `/fr/dossiers/*`,
 Document heights at 430 px, as a sense of scale — a page an order of magnitude
 longer than its siblings is a finding in itself:
 
-| Route                                                      | px     |
-| ---------------------------------------------------------- | ------ |
-| `/fr/dossiers/regards/colonisation-et-resistances`         | 29 679 |
-| `/fr/atlas/peuples/PPL_KUNG`                               | 15 195 |
-| `/fr`                                                      | 8 381  |
-| `/fr/atlas/pays/ZAF` · `/fr/atlas/familles/FLG_ATLANTIQUE` | ~7 300 |
-| `/fr/comparer`                                             | 1 106  |
+| Route                                                         | px     |
+| ------------------------------------------------------------- | ------ |
+| `/fr/dossiers/regards/colonisation-et-resistances`            | 29 679 |
+| `/fr/atlas/peuples/PPL_KUNG` (since folded into PPL_JUHOANSI) | 15 195 |
+| `/fr`                                                         | 8 381  |
+| `/fr/atlas/pays/ZAF` · `/fr/atlas/familles/FLG_ATLANTIQUE`    | ~7 300 |
+| `/fr/comparer`                                                | 1 106  |
