@@ -103,5 +103,96 @@
       "fieldPath": "homonyms",
       "reason": "Les sources consultées, dont la thèse de LeRoux-Rutledge, la fiche Naming du Cultural Atlas et les chants dinka conservés à Édimbourg, ne décrivent pas d'autre nom écrit Nyandeng qui aurait une origine différente."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Nyandeng est un nom de femme dinka, au Soudan du Sud. Les Dinka n'ont pas de nom de famille fixe : le nom d'une personne est suivi de celui de son père, puis de ceux de ses ancêtres. On ne sait pas avec certitude ce que veut dire Nyandeng ; nous présentons plus bas la seule explication que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Nyandeng",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "din",
+        "namedBy": null,
+        "shortLine": "Un nom de femme dinka, au Soudan du Sud ; on ne sait pas avec certitude ce qu'il veut dire.",
+        "periodLabel": "Forme proche écrite dès 1972 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Nyandeng est un nom personnel de femme chez les Dinka, et non un nom de famille : chez eux, chaque nom est suivi de celui du père et des ancêtres. On ne sait pas avec certitude ce qu'il veut dire ; nous présentons à part la seule explication que nous connaissons.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Collection of Dinka Songs — README",
+                "author": "Bert Remijsen et l'équipe du projet Metre and Melody in Dinka Speech and Song",
+                "year": 2012,
+                "url": "https://datashare.ed.ac.uk/bitstream/handle/10283/184/ACollectionofDinkaSongs_readme.pdf",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 1",
+                "notes": "University of Edinburgh et SOAS. Le texte indique que les Dinka n'ont pas de nom de famille fixe : le nom d'une personne est suivi de ceux de son père, de son grand-père et parfois de son arrière-grand-père. Lu le 11 octobre 2026."
+              },
+              {
+                "title": "The Dinka of the Sudan",
+                "author": "Francis Mading Deng",
+                "year": 1972,
+                "url": "https://archive.org/details/the-dinka-of-the-sudan",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38",
+                "notes": "New York, Holt, Rinehart and Winston, 1972. Lu sur une copie déposée sur archive.org, copie non officielle. L'auteur, dinka lui-même, y publie des chants dinka traduits en anglais. Chapitre « The Naming System » : « they do not have surnames. Instead, they combine personal names to constitute the lineage ». Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Rapporté en 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Nyandeng pourrait se rattacher à Nyan Deng, « fille de Deng » : c'est ainsi qu'on appelle en dinka une fille dont le père se nomme Deng, selon Nina Evason. Cette fiche culturelle ne parle pas du prénom Nyandeng ; le rapprochement reste une hypothèse.",
+            "sources": [
+              {
+                "title": "South Sudanese Culture — Naming",
+                "author": "Nina Evason, Cultural Atlas",
+                "year": 2018,
+                "url": "https://culturalatlas.sbs.com.au/south-sudanese-culture/south-sudanese-culture-naming",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Fiche culturelle destinée au grand public, rédigée en 2018 ; l'adresse renvoie aujourd'hui vers theculturalatlas.org. Elle écrit qu'une fille dont le père s'appelle Deng est appelée « Nyan Deng », « Daughter (of) Deng » en dinka ; elle ne mentionne pas le nom Nyandeng. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1972,
+              "to": 1972,
+              "label": "1972"
+            },
+            "era": "modern",
+            "statement": "Le nom Nyandeng a une forme proche, Nyandeeng, dans les chants dinka que publie Francis Mading Deng : un chant d'enfants parle de « la mère de Nyandeeng », un autre chant appelle « Nyandeeng, fille de Koor ». C'est la plus ancienne trace de ce nom que le projet connaît ; le nom était donné avant d'être écrit.",
+            "formAsWritten": "Nyandeeng",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Dinka of the Sudan",
+                "author": "Francis Mading Deng",
+                "year": 1972,
+                "url": "https://archive.org/details/the-dinka-of-the-sudan",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 59 et p. 70",
+                "notes": "New York, Holt, Rinehart and Winston, 1972. Lu sur une copie déposée sur archive.org, copie non officielle. L'auteur, dinka lui-même, y publie des chants dinka traduits en anglais. Page 59, chant de jeu d'enfants : « The diviner of Nyandeeng's Mother ». Page 70, chant de jeunesse : « Nyandeeng, daughter of Koor ». Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
