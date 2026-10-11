@@ -82,5 +82,51 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Ovono », « Fang », « Gabon », « patronyme », « anthroponymie », « étymologie », « clan », « transmission », « alliance », « caste », « homonyme » et « nécrologie », les études sur la parenté et les noms fang, ainsi que la page Forebears dédiée n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ovono est un nom porté au Gabon, seul ou après un autre nom. On ne sait pas avec certitude ce qu'il veut dire ni d'où il vient : aucune source que nous avons lue ne l'explique.",
+    "names": [
+      {
+        "nameText": "Ovono",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom porté au Gabon ; on ne sait pas ce qu'il veut dire.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ovono est porté au Gabon, parfois seul après le prénom, parfois après un autre nom : la presse gabonaise cite ainsi Petit-Lambert Ovono en 2023 et Lambert Ona-Ovono, mort en 2015. Les sources lues ne disent ni ce que veut dire le nom ni comment il se transmet.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Législatives 2023 : Petit-Lambert Ovono, candidat pour former un contre-pouvoir",
+                "author": "Brice Gotoa, Gabonreview",
+                "year": 2023,
+                "url": "https://www.gabonreview.com/legislatives-2023-petit-lambert-ovono-candidat-pour-former-un-contre-pouvoir/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article du 7 mai 2023, qui nomme « Le président de la Société gabonaise de suivi-évaluation des politiques publiques (Sogeval), Petit-Lambert Ovono ». Il ne dit rien de l'origine du nom. Lu le 11 octobre 2026."
+              },
+              {
+                "title": "Lambert Ona-Ovono a tiré sa révérence",
+                "author": "Griffin Ondo Nzuey, Gabonreview",
+                "year": 2015,
+                "url": "https://www.gabonreview.com/lambert-ona-ovono-a-tire-sa-reverence/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article du 17 juillet 2015 sur la mort de Lambert Ona-Ovono (1943-2015), mort en France le 13 juillet 2015. Il ne dit rien de l'origine du nom. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -75,5 +75,91 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Savimbi est un nom de famille ovimbundu, au centre de l'Angola, celui de la famille de Jonas Savimbi, le fondateur de l'UNITA. On ne sait pas avec certitude ce que veut dire ce nom ni d'où il vient : aucune source que nous avons lue ne l'explique.",
+    "names": [
+      {
+        "nameText": "Savimbi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille ovimbundu d'Angola ; on ne sait pas ce qu'il veut dire.",
+        "periodLabel": "Porté dès 1902 selon un récit ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1987,
+              "to": 1987,
+              "label": "Rapporté en 1987"
+            },
+            "statement": "Le nom Savimbi passe du père au fils sur trois générations au moins dans une famille ovimbundu : Sakaita Savimbi, son fils Loth Malheiro Savimbi, puis Jonas Savimbi, selon la biographie de Fred Bridgland. Le livre ne dit pas ce que veut dire le nom ni d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Jonas Savimbi: A Key to Africa",
+                "author": "Fred Bridgland",
+                "year": 1987,
+                "url": "https://archive.org/details/jonassavimbikeyt00brid",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 23-29",
+                "notes": "New York, Paragon House, 1987 ; biographie écrite par un journaliste. Exemplaire de prêt numérisé d'archive.org, lu par la recherche plein texte. Page 26 : « Loth's father and Jonas' grandfather, Sakaita Savimbi, was a traditional chief who had been stripped of his powers and much of his lands by the colonisers because he had fought in the Bailundo Uprising of 1902. » Page 23 : le père, Loth Malheiro Savimbi. L'index renvoie à « Savimbi, Sakaita 26; death 29 ». Le livre ne dit pas ce que veut dire le nom. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1964,
+              "to": 1964,
+              "label": "13 mars 1964"
+            },
+            "era": "colonial",
+            "statement": "Le nom Savimbi apparaît dans une note de la CIA qui présente Jonas Savimbi comme le ministre des Affaires étrangères du gouvernement angolais en exil et comme un Ovimbundu du centre de l'Angola.",
+            "formAsWritten": "Savimbi",
+            "sources": [
+              {
+                "title": "Strains in the Angolan Rebel Movement",
+                "author": "Central Intelligence Agency, Current Intelligence Weekly Review",
+                "year": 1964,
+                "url": "https://archive.org/details/cia-readingroom-document-06782002",
+                "tier": "official",
+                "source_kind": "archive",
+                "page": "p. 12",
+                "notes": "Note du 13 mars 1964, déclassifiée le 29 janvier 2019 (document C06782002), lue sur sa copie d'archive.org. Elle écrit : « Foreign minister Jonas Savimbi, an Ovimbundo from central Angola, and the movement's second most influential member ». Elle ne dit rien de l'origine du nom. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "statement": "Le nom Savimbi est celui de Sakaita Savimbi, un chef ovimbundu qui combat les Portugais lors du soulèvement du Bailundo, selon le récit que publie Fred Bridgland en 1987. C'est la plus ancienne trace de ce nom que le projet connaît ; elle vient d'un récit écrit bien plus tard et ne dit pas depuis quand la famille porte ce nom.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Sakaita Savimbi",
+                "role": "porteur du nom, selon le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Jonas Savimbi: A Key to Africa",
+                "author": "Fred Bridgland",
+                "year": 1987,
+                "url": "https://archive.org/details/jonassavimbikeyt00brid",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 23-29",
+                "notes": "New York, Paragon House, 1987 ; biographie écrite par un journaliste. Exemplaire de prêt numérisé d'archive.org, lu par la recherche plein texte. Page 26 : « Loth's father and Jonas' grandfather, Sakaita Savimbi, was a traditional chief who had been stripped of his powers and much of his lands by the colonisers because he had fought in the Bailundo Uprising of 1902. » Page 23 : le père, Loth Malheiro Savimbi. L'index renvoie à « Savimbi, Sakaita 26; death 29 ». Le livre ne dit pas ce que veut dire le nom. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

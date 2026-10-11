@@ -76,5 +76,61 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Seidi à un peuple en Guinée-Bissau. Nous n'avons pas encore consulté de source consacrée à ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Seidi est un nom de famille porté en Guinée-Bissau. On ne sait pas avec certitude d'où il vient ; nous présentons plus bas la seule explication que nous avons trouvée, qui ne parle pas de la Guinée-Bissau.",
+    "names": [
+      {
+        "nameText": "Seidi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille de Guinée-Bissau ; on ne sait pas avec certitude d'où il vient.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Août 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Seidi est un nom de famille porté en Guinée-Bissau : Suleimane Seidi y est nommé ministre de l'Économie et des Finances en 2023, selon une dépêche de l'agence Lusa. Les sources lues ne disent pas comment ce nom se transmet. Son origine reste une hypothèse ; nous la présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Novo Governo da Guiné-Bissau com 19 ministérios e 15 secretarias de Estado",
+                "author": "Lusa / DNoticias.pt",
+                "year": 2023,
+                "url": "https://www.dnoticias.pt/2023/8/13/371394-novo-governo-da-guine-bissau-com-19-ministerios-e-15-secretarias-de-estado/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Dépêche de l'agence Lusa du 13 août 2023, qui donne la liste du nouveau gouvernement, dont « Suleimane Seidi - Ministro da Economia e Finanças ». Elle ne dit rien de l'origine du nom. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Proposé en 2003"
+            },
+            "statement": "Le nom Seidi pourrait venir de l'arabe saʿīdī, qui marque un lien avec un homme appelé Saïd, selon le dictionnaire de Patrick Hanks. Ce dictionnaire parle du nom chez des musulmans en général et ne cite pas la Guinée-Bissau.",
+            "sources": [
+              {
+                "title": "Seidi Name Meaning and Seidi Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=seidi",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch : « Muslim: from Arabic saʿīdī, denoting descent from or association with someone called Said. » L'entrée ne parle pas de la Guinée-Bissau ni de l'Afrique de l'Ouest. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
