@@ -106,5 +106,151 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Lamba désigne un peuple de langue gur du nord du Togo, aussi présent au Bénin et au Ghana, qui se nomme lui-même Lama. À l'époque coloniale, ses groupes ont souvent été confondus avec leurs voisins nawdéba sous le nom de Losso. On ne sait pas avec certitude d'où vient le nom Lamba ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Lama",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple du nord du Togo.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Lama est, avec Lamba, l'une des deux formes du pluriel que donnent pour ce peuple les historiens réunis par Nicoué Lodjou Gayibor.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire des Togolais, vol. I : Des origines à 1884",
+                "author": "Nicoué Lodjou Gayibor (dir.)",
+                "year": 1997,
+                "url": "https://archive.org/details/010010905",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 105, note 3",
+                "notes": "Lomé, Presses de l'Université du Bénin, 1997, édition définitive. Lu le 11 octobre 2026 dans une copie non officielle numérisée sur archive.org."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Lamba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom porté surtout par les groupes de la Kéran ; son origine est discutée.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1992,
+              "to": 1997,
+              "label": "1992-1997"
+            },
+            "era": "modern",
+            "statement": "Le nom Lamba n'est porté comme nom propre que par les groupes de la préfecture de la Kéran ; les autres se désignent par le nom de leur groupement, comme Défalé, Kadjalla ou Alloum, selon T. Gnama, cité par les historiens réunis par Nicoué Lodjou Gayibor. On ne sait pas avec certitude quand ce nom apparaît par écrit.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire des Togolais, vol. I : Des origines à 1884",
+                "author": "Nicoué Lodjou Gayibor (dir.)",
+                "year": 1997,
+                "url": "https://archive.org/details/010010905",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 105",
+                "notes": "Lomé, Presses de l'Université du Bénin, 1997, édition définitive. Lu le 11 octobre 2026 dans une copie non officielle numérisée sur archive.org. Les auteurs citent T. Gnama, Histoire des « Lamba » du canton de Kanté, mémoire de maîtrise, Université du Bénin, 1992 ; nous n'avons pas lu ce mémoire nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Noms de lieux non datés"
+            },
+            "statement": "Le nom Lamba se retrouve dans des noms de lieux de ses voisins : Lam-kpam, « champs des Lamba », en pays nawda, et Nampoua, « forêt des Lamba », en pays konkomba, selon les historiens réunis par Nicoué Lodjou Gayibor, qui citent Robert Cornevin pour le second.",
+            "sources": [
+              {
+                "title": "Histoire des Togolais, vol. I : Des origines à 1884",
+                "author": "Nicoué Lodjou Gayibor (dir.)",
+                "year": 1997,
+                "url": "https://archive.org/details/010010905",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 106 et p. 138",
+                "notes": "Lomé, Presses de l'Université du Bénin, 1997, édition définitive. Lu le 11 octobre 2026 dans une copie non officielle numérisée sur archive.org."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1997,
+              "to": 1997,
+              "label": "Proposée en 1997"
+            },
+            "era": "modern",
+            "statement": "Le nom Lamba viendrait de Lamou, l'ancêtre du lignage fondateur de Kanté : Lamou au singulier, Lama ou Lamba au pluriel, selon les historiens réunis par Nicoué Lodjou Gayibor. Ils se demandent si le nom du groupement de Kanté n'a pas fini par couvrir tous les autres.",
+            "hypothesisGroup": "origine du nom Lamba",
+            "sources": [
+              {
+                "title": "Histoire des Togolais, vol. I : Des origines à 1884",
+                "author": "Nicoué Lodjou Gayibor (dir.)",
+                "year": 1997,
+                "url": "https://archive.org/details/010010905",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 105, note 3",
+                "notes": "Lomé, Presses de l'Université du Bénin, 1997, édition définitive. Lu le 11 octobre 2026 dans une copie non officielle numérisée sur archive.org."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Losso",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des auteurs allemands, puis l'administration coloniale",
+        "shortLine": "Un nom colonial qui confondait les Lamba et leurs voisins nawdéba.",
+        "periodLabel": "Écrit depuis 1900",
+        "accounts": [
+          {
+            "period": {
+              "from": 1900,
+              "to": 1913,
+              "label": "1900-1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Losso apparaît chez l'auteur allemand Hupfeld en 1900, puis chez l'ethnologue Leo Frobenius en 1913, pour des paysans de la vallée de la Kéran et de la région de Défalé : il confond les Lamba et leurs voisins nawdéba, que l'administration coloniale nomme ensuite souvent tous Losso, selon les historiens réunis par Nicoué Lodjou Gayibor. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire des Togolais, vol. I : Des origines à 1884",
+                "author": "Nicoué Lodjou Gayibor (dir.)",
+                "year": 1997,
+                "url": "https://archive.org/details/010010905",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 135",
+                "notes": "Lomé, Presses de l'Université du Bénin, 1997, édition définitive. Lu le 11 octobre 2026 dans une copie non officielle numérisée sur archive.org. Les auteurs citent Hupfeld, 1900, et Frobenius, 1913 ; nous n'avons pas lu ces textes nous-mêmes."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

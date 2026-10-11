@@ -103,5 +103,93 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Zinza désigne un peuple bantou des rives sud-ouest du lac Victoria, en Tanzanie, qui se nomme lui-même Zinza. Au XIXe siècle, les voyageurs parlent des Wazinza, le peuple, et de l'Uzinza, leur pays. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Zinza",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit en 1858 sous la forme Wazinza ; son origine reste inconnue.",
+        "periodLabel": "Écrit depuis 1858 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Zinza désigne le peuple des rives sud-ouest du lac Victoria. Il prend deux formes chez l'explorateur John Hanning Speke : Wazinza pour le peuple, Uzinza pour son pays, qu'il décrit à côté de ses rois wahuma. On ne sait pas avec certitude d'où vient le nom lui-même.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Journal of the Discovery of the Source of the Nile",
+                "author": "John Hanning Speke",
+                "year": 1863,
+                "url": "https://archive.org/details/journalofdiscove00spek",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 92 et p. 124-125",
+                "notes": "Édimbourg et Londres, William Blackwood and Sons, 1863. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. Section « The Wahuma and Wazinza », p. 124-125."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "1858"
+            },
+            "era": "polity",
+            "statement": "Le nom Zinza apparaît sous la forme Wazinza dans le journal de l'explorateur John Hanning Speke : fin juillet 1858, en route vers le lac Victoria, il note que les tribus wazinza vivent à une trentaine de miles à l'ouest. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Wazinza",
+            "birth": true,
+            "actors": [
+              {
+                "name": "John Hanning Speke",
+                "role": "explorateur, auteur du journal"
+              }
+            ],
+            "sources": [
+              {
+                "title": "What Led to the Discovery of the Source of the Nile",
+                "author": "John Hanning Speke",
+                "year": 1864,
+                "url": "https://www.gutenberg.org/ebooks/8417",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 295",
+                "notes": "Édimbourg et Londres, William Blackwood and Sons, 1864. Journal du voyage de 1858 vers le lac Victoria, lu dans l'édition numérique du projet Gutenberg le 11 octobre 2026 ; la page est celle de l'édition de 1864, vérifiée sur l'exemplaire numérisé sur archive.org. Entrée de fin juillet 1858 : « thirty miles westward the Wazinza tribes »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1861,
+              "to": 1861,
+              "label": "1861"
+            },
+            "era": "polity",
+            "statement": "Le nom Zinza désigne aussi un pays, l'Uzinza, que Speke traverse en 1861. Il le décrit comme un ancien grand royaume, gouverné autrefois par un roi wahuma, puis partagé entre ses héritiers.",
+            "formAsWritten": "Uzinza",
+            "sources": [
+              {
+                "title": "Journal of the Discovery of the Source of the Nile",
+                "author": "John Hanning Speke",
+                "year": 1863,
+                "url": "https://archive.org/details/journalofdiscove00spek",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 92",
+                "notes": "Édimbourg et Londres, William Blackwood and Sons, 1863. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. Entrée de janvier 1861 : « the country Uzinza was once a large kingdom »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

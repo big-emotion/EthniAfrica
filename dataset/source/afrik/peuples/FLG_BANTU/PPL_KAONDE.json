@@ -118,5 +118,182 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kaonde désigne un peuple bantou du nord-ouest de la Zambie et du sud du Katanga, en République démocratique du Congo, qui se nomme lui-même BaKaonde. Au XIXe siècle, ce nom s'est étendu à plusieurs groupes venus du Katanga. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Kaonde",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom attesté en 1906 ; trois explications de son origine circulent.",
+        "periodLabel": "Attesté depuis 1906 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Kaonde désigne plusieurs groupes venus du Katanga, qui parlaient une langue luba-sanga : au XIXe siècle, leurs voisins les ont peu à peu tous appelés ainsi, selon Dick Jaeger. Certains se nomment eux-mêmes Ba-Kaonde, note Frank Melland. L'origine du nom est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A general survey of the historical migration of the Kaonde clans from southern Congo into Zambia",
+                "author": "Dick Jaeger",
+                "year": 1971,
+                "url": "https://pure.uva.nl/ws/files/1687596/168316_ARTICLE_A_general_survey_of_the_historical_migration_of_the_Kaonde_clans_from_southern_Congo_into_Zambia_2_.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38",
+                "notes": "Tropical Man, annuaire du département d'anthropologie du Royal Tropical Institute d'Amsterdam, vol. IV, Leyde, E. J. Brill, 1971 ; tiré à part lu dans le dépôt de l'université d'Amsterdam le 11 octobre 2026."
+              },
+              {
+                "title": "In Witch-Bound Africa: An Account of the Primitive Kaonde Tribe and Their Beliefs",
+                "author": "Frank H. Melland",
+                "year": 1923,
+                "url": "https://archive.org/details/inwitchboundafri00mell",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 31",
+                "notes": "Philadelphie, J. B. Lippincott, 1923. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. Les gens du chef Ntambo, sur le Kabompo, « call themselves Ba-Kaonde »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kaonde figure, sous la forme Ba-Kaonde, dans ce que le chef Kasempa déclare en 1906 à E. A. Copeman sur l'origine de son peuple, rapporte Frank Melland. C'est la plus ancienne trace de ce nom que le projet connaît. Les groupes qu'il désigne vivaient déjà là avant lui.",
+            "formAsWritten": "Ba-Kaonde",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Kasempa",
+                "role": "chef, auteur du récit"
+              },
+              {
+                "name": "E. A. Copeman",
+                "role": "Britannique à qui le récit est fait"
+              }
+            ],
+            "sources": [
+              {
+                "title": "In Witch-Bound Africa: An Account of the Primitive Kaonde Tribe and Their Beliefs",
+                "author": "Frank H. Melland",
+                "year": 1923,
+                "url": "https://archive.org/details/inwitchboundafri00mell",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 31",
+                "notes": "Philadelphie, J. B. Lippincott, 1923. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. « The late Kasempa told Mr. E. A. Copeman in 1906 that his forebears were Basanga »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant l'arrivée des fusils, selon la tradition"
+            },
+            "era": "polity",
+            "statement": "Le nom Kaonde apparaît aussi dans une tradition rapportée par Frank Melland : vaincu sur le Lualaba par le chef lunda Ilunga, Mushima, le premier Kaonde installé dans le pays, renonce au titre d'Ilunga et se fait appeler Mushima Kaonde. La bataille aurait eu lieu avant l'arrivée des fusils.",
+            "sources": [
+              {
+                "title": "In Witch-Bound Africa: An Account of the Primitive Kaonde Tribe and Their Beliefs",
+                "author": "Frank H. Melland",
+                "year": 1923,
+                "url": "https://archive.org/details/inwitchboundafri00mell",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 40",
+                "notes": "Philadelphie, J. B. Lippincott, 1923. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. « He also dropped the assumed title of Ilunga and called himself Mushima Kaonde thereafter »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1956,
+              "to": 1956,
+              "label": "Proposée en 1956, reprise en 1971"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kaonde viendrait d'une petite rivière du Katanga, affluent de la Mukwizhi : vaincu par le chef lunda Musokantanda, Mushima se serait installé sur ses bords, et les Lunda l'auraient alors appelé Kaonde, selon Grevisse, repris par Dick Jaeger. Dick Jaeger note qu'aucune carte détaillée de la région ne montre cette rivière.",
+            "hypothesisGroup": "origine du nom Kaonde",
+            "sources": [
+              {
+                "title": "A general survey of the historical migration of the Kaonde clans from southern Congo into Zambia",
+                "author": "Dick Jaeger",
+                "year": 1971,
+                "url": "https://pure.uva.nl/ws/files/1687596/168316_ARTICLE_A_general_survey_of_the_historical_migration_of_the_Kaonde_clans_from_southern_Congo_into_Zambia_2_.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 16 et p. 37-38",
+                "notes": "Tropical Man, annuaire du département d'anthropologie du Royal Tropical Institute d'Amsterdam, vol. IV, Leyde, E. J. Brill, 1971 ; tiré à part lu dans le dépôt de l'université d'Amsterdam le 11 octobre 2026. L'auteur cite Grevisse, 1956, p. 91 ; nous n'avons pas lu ce texte nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1942,
+              "to": 1942,
+              "label": "Proposée en 1942, reprise en 1971"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kaonde viendrait du verbe ku-onda, « être maigre » en bemba, et voudrait dire « le maigre » : les Lunda auraient surnommé batuwonde, « les misérables », les partisans de Mushima qu'ils pourchassaient, selon Grevisse et Boone, cités par Dick Jaeger.",
+            "hypothesisGroup": "origine du nom Kaonde",
+            "sources": [
+              {
+                "title": "A general survey of the historical migration of the Kaonde clans from southern Congo into Zambia",
+                "author": "Dick Jaeger",
+                "year": 1971,
+                "url": "https://pure.uva.nl/ws/files/1687596/168316_ARTICLE_A_general_survey_of_the_historical_migration_of_the_Kaonde_clans_from_southern_Congo_into_Zambia_2_.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38",
+                "notes": "Tropical Man, annuaire du département d'anthropologie du Royal Tropical Institute d'Amsterdam, vol. IV, Leyde, E. J. Brill, 1971 ; tiré à part lu dans le dépôt de l'université d'Amsterdam le 11 octobre 2026. L'auteur cite Grevisse, 1942 et 1966, et Boone, 1961, p. 64 ; nous n'avons pas lu ces textes nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "Rapportée en 1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kaonde aurait été donné aux gens du chef Kasempa par leurs voisins mambwera, ou mbwela, selon ce que Kasempa déclare en 1906, rapporté par Frank Melland. Melland pense que ce nom désignait déjà d'autres groupes avant leur arrivée, et Dick Jaeger y voit un nom tiré de la région d'où ils venaient.",
+            "hypothesisGroup": "origine du nom Kaonde",
+            "sources": [
+              {
+                "title": "In Witch-Bound Africa: An Account of the Primitive Kaonde Tribe and Their Beliefs",
+                "author": "Frank H. Melland",
+                "year": 1923,
+                "url": "https://archive.org/details/inwitchboundafri00mell",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 31",
+                "notes": "Philadelphie, J. B. Lippincott, 1923. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. « the Mambwera gave them the name of Ba-Kaonde »."
+              },
+              {
+                "title": "A general survey of the historical migration of the Kaonde clans from southern Congo into Zambia",
+                "author": "Dick Jaeger",
+                "year": 1971,
+                "url": "https://pure.uva.nl/ws/files/1687596/168316_ARTICLE_A_general_survey_of_the_historical_migration_of_the_Kaonde_clans_from_southern_Congo_into_Zambia_2_.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38",
+                "notes": "Tropical Man, annuaire du département d'anthropologie du Royal Tropical Institute d'Amsterdam, vol. IV, Leyde, E. J. Brill, 1971 ; tiré à part lu dans le dépôt de l'université d'Amsterdam le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

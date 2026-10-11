@@ -148,5 +148,125 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Dida désigne un peuple de langues krou du sud de la Côte d'Ivoire, autour de Divo, Lakota et Grand-Lahou, qui se nomme lui-même Dida. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Dida",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit en 1904 sous la forme Dyida ou Dida ; son origine reste inconnue.",
+        "periodLabel": "Écrit depuis 1904 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Dida désigne un ensemble de groupes du sud de la Côte d'Ivoire. Jean-Pierre Dozon note que l'histoire ancienne de plusieurs groupes dida recoupe celle de groupes bété de la région de Gagnoa. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La société bété : histoires d'une « ethnie » de Côte d'Ivoire",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_05/17296.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 54 et p. 58",
+                "notes": "Karthala et ORSTOM, lu dans le texte intégral publié par l'IRD."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dida apparaît dans les vocabulaires comparatifs de l'administrateur colonial Maurice Delafosse, publiés en 1904 : il écrit « les Dyida ou Dida » et range sous ce nom les Lozoua, les Yokoboué, les Goboua, les Maké et les Djivo. C'est la plus ancienne trace de ce nom que le projet connaît. Les groupes qu'il désigne vivaient déjà là avant lui.",
+            "formAsWritten": "Dyida",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "administrateur colonial, auteur des vocabulaires"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 68",
+                "notes": "Paris, Ernest Leroux, 1904. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026 : « Les Dyida ou Dida, comprenant les Lozoua, les Yokoboué, les Goboua, les Maké, les Djivo (dont le nom pourrait ne faire qu'un avec celui des Dyida) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "Proposée en 1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dida pourrait ne faire qu'un avec celui des Djivo, l'un des groupes qu'il rassemble, selon Maurice Delafosse.",
+            "hypothesisGroup": "origine du nom Dida",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 68",
+                "notes": "Paris, Ernest Leroux, 1904. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026 : « Les Dyida ou Dida, comprenant les Lozoua, les Yokoboué, les Goboua, les Maké, les Djivo (dont le nom pourrait ne faire qu'un avec celui des Dyida) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Premier millénaire de l'ère chrétienne, selon la tradition orale"
+            },
+            "era": "polity",
+            "statement": "Le nom Dida n'apparaît pas dans ce récit : l'historien ivoirien de la tradition orale Louhoy Téty Gauze y parle d'un vieux peuple, les Magwe, venu du nord le long du Bandama, dont descendraient les Bété et les Dida, selon Christophe Wondji.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 13 : Les États et les cultures de la côte de haute Guinée",
+                "author": "Christophe Wondji",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 418",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              },
+              {
+                "title": "La société bété : histoires d'une « ethnie » de Côte d'Ivoire",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_05/17296.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 43",
+                "notes": "Karthala et ORSTOM, lu dans le texte intégral publié par l'IRD."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
