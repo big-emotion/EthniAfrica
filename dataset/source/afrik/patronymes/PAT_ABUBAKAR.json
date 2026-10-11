@@ -14,10 +14,6 @@
         {
           "countryId": "NGA",
           "sourceRefs": ["ryan-1981-abubakar", "statehouse-cabinet-abubakar"]
-        },
-        {
-          "countryId": "CMR",
-          "sourceRefs": ["afrik-candidate-queue"]
         }
       ]
     },
@@ -26,7 +22,7 @@
       "attestations": [
         {
           "countryId": "CMR",
-          "sourceRefs": ["afrik-candidate-queue"]
+          "sourceRefs": ["camer-2020-aboubakar-abbo"]
         }
       ]
     },
@@ -77,11 +73,6 @@
       "peopleId": "PPL_HAUSA",
       "status": "attested",
       "sourceRefs": ["ryan-1981-abubakar", "btn-abubakar"]
-    },
-    {
-      "peopleId": "PPL_FULA",
-      "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
     }
   ],
   "countries": [
@@ -98,8 +89,8 @@
       "countryId": "CMR",
       "status": "attested",
       "sourceRefs": [
-        "afrik-candidate-queue",
-        "gabana-bello-2025-cameroon-anthroponyms"
+        "gabana-bello-2025-cameroon-anthroponyms",
+        "camer-2020-aboubakar-abbo"
       ]
     }
   ],
@@ -155,14 +146,6 @@
       "notes": "Notice officielle consultée directement. Elle documente le premier Premier ministre du Nigeria, son nom complet et ses dates 1912-1966 ; elle sert uniquement à l'attestation nationale et au porteur décédé."
     },
     {
-      "sourceKey": "afrik-candidate-queue",
-      "title": "Relevé de couverture anthroponymique EthniAfrica",
-      "url": null,
-      "tier": "unverified",
-      "source_kind": "ai_generated",
-      "notes": "Ce relevé de couverture est conservé uniquement pour les associations géographiques ou ethnolinguistiques que les sources dédiées n'ont pas confirmées. Ces associations ne soutiennent aucune étymologie."
-    },
-    {
       "sourceKey": "gabana-bello-2025-cameroon-anthroponyms",
       "title": "Anthroponymes et dynamique identitaire dans les sociétés camerounaises : des noms locaux aux appellations importées (XVIIIe–XXe siècles)",
       "url": "https://www.researchgate.net/publication/393426204_Anthroponymes_et_dynamique_identitaire_dans_les_societes_camerounaises_Des_noms_locaux_aux_appellations_importees_XVllle-XXe_siecles",
@@ -177,6 +160,14 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Page communautaire consultée directement. Elle relie Boubacar à Aboubacar puis à Abubakar. Cette chaîne graphique n'étant pas documentée par une étude dédiée dans les résultats consultés, elle reste classée non vérifiée."
+    },
+    {
+      "sourceKey": "camer-2020-aboubakar-abbo",
+      "title": "Cameroun - Portrait: Qui est le maire Aboubakar Abbo tant souhaité à la tête des CVUC?",
+      "url": "https://www.camer.be/81625/11:1/cameroun-portrait-qui-est-le-maire-aboubakar-abbo-tant-souhaite-a-la-tete-des-cvuc-cameroon.html",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Darren Lambo Ebelle, Camer.be, 7 août 2020, lu le 11 octobre 2026. Portrait d'Aboubakar Abbo, né en 1960 dans l'arrondissement de Belel (Adamaoua, Cameroun), maire de Belel. Il atteste la graphie Aboubakar au Cameroun, sans rien dire de son origine."
     }
   ],
   "gaps": [

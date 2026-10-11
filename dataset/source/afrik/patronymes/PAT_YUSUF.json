@@ -14,14 +14,6 @@
         {
           "countryId": "NGA",
           "sourceRefs": ["amoo-2022-yusuf", "statehouse-yusuf-2026"]
-        },
-        {
-          "countryId": "DJI",
-          "sourceRefs": ["afrik-candidate-queue"]
-        },
-        {
-          "countryId": "EGY",
-          "sourceRefs": ["afrik-candidate-queue"]
         }
       ]
     },
@@ -39,27 +31,18 @@
       "attestations": [
         {
           "countryId": "TCD",
-          "sourceRefs": ["afrik-candidate-queue"]
+          "sourceRefs": ["forebears-youssouf"]
         },
         {
           "countryId": "DJI",
           "sourceRefs": [
-            "afrik-candidate-queue",
+            "forebears-youssouf",
             "youssouf-presidence-djibouti-2017"
           ]
         },
         {
           "countryId": "COM",
-          "sourceRefs": ["afrik-candidate-queue"]
-        }
-      ]
-    },
-    {
-      "spelling": "Yousouf",
-      "attestations": [
-        {
-          "countryId": "TCD",
-          "sourceRefs": ["afrik-candidate-queue"]
+          "sourceRefs": ["forebears-youssouf"]
         }
       ]
     },
@@ -68,7 +51,7 @@
       "attestations": [
         {
           "countryId": "EGY",
-          "sourceRefs": ["afrik-candidate-queue"]
+          "sourceRefs": ["atlanticcouncil-2015-youssef"]
         }
       ]
     }
@@ -112,24 +95,6 @@
       "peopleId": "PPL_HAUSA",
       "status": "attested",
       "sourceRefs": ["amoo-2022-yusuf", "ryan-1981-yusuf"]
-    },
-    {
-      "peopleId": "PPL_SOMALI",
-      "status": "attested",
-      "sourceRefs": [
-        "afrik-candidate-queue",
-        "youssouf-presidence-djibouti-2017"
-      ]
-    },
-    {
-      "peopleId": "PPL_COMORIEN",
-      "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
-    },
-    {
-      "peopleId": "PPL_ARABES_AFRIQUE",
-      "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
     }
   ],
   "countries": [
@@ -141,22 +106,22 @@
     {
       "countryId": "TCD",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["forebears-youssouf"]
     },
     {
       "countryId": "DJI",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["forebears-youssouf", "youssouf-presidence-djibouti-2017"]
     },
     {
       "countryId": "COM",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["forebears-youssouf"]
     },
     {
       "countryId": "EGY",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["atlanticcouncil-2015-youssef"]
     }
   ],
   "alliances": [],
@@ -216,14 +181,6 @@
       "notes": "Communiqué officiel consulté directement, daté du 29 août 2026. Il indique que le Dr Aminu Yusuf, âgé de 66 ans, est mort le 28 août 2026 et documente son service public au Nigeria ; il sert à l'attestation nationale et au porteur décédé seulement."
     },
     {
-      "sourceKey": "afrik-candidate-queue",
-      "title": "Relevé de couverture anthroponymique EthniAfrica",
-      "url": null,
-      "tier": "unverified",
-      "source_kind": "ai_generated",
-      "notes": "Ce relevé de couverture est conservé uniquement pour les associations géographiques ou ethnolinguistiques que les sources dédiées n'ont pas confirmées. Ces associations ne soutiennent aucune étymologie."
-    },
-    {
       "sourceKey": "youssouf-behindthename",
       "title": "Meaning, origin and history of the name Youssouf",
       "url": "https://www.behindthename.com/name/youssouf",
@@ -246,6 +203,22 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Entrée communautaire consultée le 2 septembre 2026. Elle donne la graphie arabe يوسف et traite Youssef comme transcription de Yusuf. Elle documente un nom personnel, pas une lignée égyptienne particulière."
+    },
+    {
+      "sourceKey": "atlanticcouncil-2015-youssef",
+      "title": "Who Are Egypt's New Ministers?",
+      "url": "https://www.atlanticcouncil.org/blogs/menasource/who-are-egypt-s-new-ministers/",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Ali Mohamed, Atlantic Council (MENASource), 6 mars 2015, lu le 11 octobre 2026. L'article présente Hala Mohamed Youssef, nommée ministre de la Population en Égypte. Il atteste la graphie Youssef en Égypte, sans rien dire de son origine."
+    },
+    {
+      "sourceKey": "forebears-youssouf",
+      "title": "Youssouf Surname Origin, Meaning & Last Name History",
+      "url": "https://forebears.io/surnames/youssouf",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Base de répartition patronymique consultée directement : elle atteste Youssouf au Tchad, à Djibouti et aux Comores, avec sa densité la plus forte aux Comores. Elle n'établit ni une origine somalie ni une origine comorienne unique."
     }
   ],
   "gaps": [
