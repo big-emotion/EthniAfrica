@@ -96,5 +96,170 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Jita désigne un peuple bantou de la rive sud-est du lac Victoria, en Tanzanie, qui se nomme lui-même Wajita. Le nom Majita désigne aussi une montagne et le pays qui l'entoure. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas l'explication que donnent les sources.",
+    "names": [
+      {
+        "nameText": "Jita",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple du lac Victoria, rattaché au mont Masita par une explication.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Jita désigne un peuple installé autour du mont Masita, à l'est du lac Victoria, en Tanzanie, selon Daniel Chacha Mohono. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Adventists and Jita Culture",
+                "author": "Daniel Chacha Mohono",
+                "year": 2021,
+                "url": "https://encyclopedia.adventist.org/article?id=HF73",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopedia of Seventh-day Adventists, article publié le 17 mars 2021 et lu le 11 octobre 2026. L'auteur s'appuie sur Stephen D. Manyama, Wajita Zamani Mpaka Sasa, Dar es Salaam, 2013, p. 1-2 et 8-11, et sur un entretien avec Manyama, originaire de Majita, en 2017."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2013,
+              "to": 2021,
+              "label": "Proposée en 2013, reprise en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Jita viendrait du mont Masita : les gouverneurs coloniaux allemands, qui n'arrivaient pas à prononcer ce nom, auraient écrit Majita, et ce nom serait devenu celui du peuple et de toute la région, selon Daniel Chacha Mohono, qui s'appuie sur le livre de Stephen D. Manyama.",
+            "hypothesisGroup": "origine du nom Jita",
+            "sources": [
+              {
+                "title": "Adventists and Jita Culture",
+                "author": "Daniel Chacha Mohono",
+                "year": 2021,
+                "url": "https://encyclopedia.adventist.org/article?id=HF73",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopedia of Seventh-day Adventists, article publié le 17 mars 2021 et lu le 11 octobre 2026. L'auteur s'appuie sur Stephen D. Manyama, Wajita Zamani Mpaka Sasa, Dar es Salaam, 2013, p. 1-2 et 8-11, et sur un entretien avec Manyama, originaire de Majita, en 2017."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wajita",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Jita.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Wajita figure dans le titre du livre que Stephen D. Manyama, originaire de Majita, consacre en 2013 à l'histoire de son peuple, Wajita Zamani Mpaka Sasa, selon Daniel Chacha Mohono.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Adventists and Jita Culture",
+                "author": "Daniel Chacha Mohono",
+                "year": 2021,
+                "url": "https://encyclopedia.adventist.org/article?id=HF73",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopedia of Seventh-day Adventists, article publié le 17 mars 2021 et lu le 11 octobre 2026. L'auteur s'appuie sur Stephen D. Manyama, Wajita Zamani Mpaka Sasa, Dar es Salaam, 2013, p. 1-2 et 8-11, et sur un entretien avec Manyama, originaire de Majita, en 2017."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Majita",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'une montagne et d'un pays au bord du lac Victoria, écrit dès 1878.",
+        "periodLabel": "Écrit dès 1878 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "1960"
+            },
+            "era": "colonial",
+            "statement": "Le nom Majita désigne en 1960 un district de l'Église adventiste, le champ missionnaire de Majita-Ukerewe, confié à une direction africaine, selon Daniel Chacha Mohono.",
+            "sources": [
+              {
+                "title": "Adventists and Jita Culture",
+                "author": "Daniel Chacha Mohono",
+                "year": 2021,
+                "url": "https://encyclopedia.adventist.org/article?id=HF73",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopedia of Seventh-day Adventists, article publié le 17 mars 2021 et lu le 11 octobre 2026. L'auteur s'appuie sur Stephen D. Manyama, Wajita Zamani Mpaka Sasa, Dar es Salaam, 2013, p. 1-2 et 8-11, et sur un entretien avec Manyama, originaire de Majita, en 2017."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1875,
+              "to": 1878,
+              "label": "Voyage de 1875, publié en 1878"
+            },
+            "era": "polity",
+            "statement": "Le nom Majita sert aussi à situer un peuple chez Henry Morton Stanley : des gens de l'île d'Ukerewe lui disent que les premiers habitants de l'île, soumis par le roi fondateur Ruhinda Ier, s'appelaient Wa-kwya, un autre nom des habitants du mont Majita.",
+            "sources": [
+              {
+                "title": "Through the Dark Continent, vol. I",
+                "author": "Henry M. Stanley",
+                "year": 1878,
+                "url": "https://archive.org/details/throughdarkcont04stangoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 250",
+                "notes": "Londres, Sampson Low, Marston, Searle et Rivington, 1878. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. P. 250 : « Wa-kwya—another name for the inhabitants of Majita Mount »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1875,
+              "to": 1878,
+              "label": "Voyage de 1875, publié en 1878"
+            },
+            "era": "polity",
+            "statement": "Le nom Majita apparaît chez l'explorateur Henry Morton Stanley : le 16 mars 1875, en longeant la rive du lac Victoria, il voit se dresser la montagne de Majita, à l'est. C'est la plus ancienne trace de ce nom que le projet connaît. Les gens qui vivaient autour de la montagne étaient déjà là avant elle.",
+            "formAsWritten": "Majita",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Through the Dark Continent, vol. I",
+                "author": "Henry M. Stanley",
+                "year": 1878,
+                "url": "https://archive.org/details/throughdarkcont04stangoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 162",
+                "notes": "Londres, Sampson Low, Marston, Searle et Rivington, 1878. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. P. 162 : « the table-topped mountain of Majita rising, massive and grand, to the eastward »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

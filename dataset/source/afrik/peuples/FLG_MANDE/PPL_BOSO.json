@@ -142,5 +142,222 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bozo désigne des pêcheurs du delta intérieur du Niger, au Mali, qui se nomment eux-mêmes d'abord par le nom de leur groupe : Sorogo, Tié ou Kélinga. Selon un anthropologue, le nom Bozo viendrait d'une langue extérieure au groupe, le bamanan. On l'écrit aussi Boso. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Bozo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom donné aux pêcheurs du delta intérieur du Niger, écrit Bosos en 1897.",
+        "periodLabel": "Écrit dès 1897 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Bozo sert aujourd'hui, avec somono et sorko, à désigner des groupes de pêcheurs du delta central du Niger, selon l'anthropologue Bréhima Kassibo. Interrogé sur son identité, un Bozo se dit d'abord Sorogo, Tié ou Kélinga, car sa langue n'a pas de nom commun pour ces trois groupes. On ne sait pas avec certitude d'où vient le nom Bozo.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire du peuplement humain",
+                "author": "Bréhima Kassibo",
+                "year": 1994,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers/40725.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 81",
+                "notes": "Chapitre 1.2 de La pêche dans le delta central du Niger, sous la direction de Jacques Quensière, ORSTOM et Karthala, 1994 ; lu dans le texte publié par l'IRD le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "Proposée en 1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Bozo viendrait du bamanan, la langue des Bambara, une langue extérieure au groupe des pêcheurs, selon l'anthropologue Bréhima Kassibo.",
+            "hypothesisGroup": "origine du nom Bozo",
+            "sources": [
+              {
+                "title": "Histoire du peuplement humain",
+                "author": "Bréhima Kassibo",
+                "year": 1994,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers/40725.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 81",
+                "notes": "Chapitre 1.2 de La pêche dans le delta central du Niger, sous la direction de Jacques Quensière, ORSTOM et Karthala, 1994 ; lu dans le texte publié par l'IRD le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1897,
+              "label": "Publié en 1897"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bozo apparaît sous une forme proche, Bosos, chez le voyageur Félix Dubois, qui parle des « Somonos ou Bosos », les mariniers et pêcheurs du Niger. Il rapporte que leurs anciens disent que leurs ancêtres sont venus de grandes montagnes de l'Est. C'est la plus ancienne trace de ce nom que le projet connaît. Les pêcheurs qu'il désigne vivaient déjà sur le fleuve avant elle.",
+            "formAsWritten": "Bosos",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tombouctou la mystérieuse",
+                "author": "Félix Dubois",
+                "year": 1897,
+                "url": "https://archive.org/details/tombouctoulamys00dubogoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 24",
+                "notes": "Paris, 1897. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. L'auteur écrit « les Somonos ou Bosos »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Boso",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre graphie du nom Bozo, déjà employée en 1897.",
+        "periodLabel": "Écrit dès 1897",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1897,
+              "label": "Publié en 1897"
+            },
+            "era": "colonial",
+            "statement": "Le nom Boso est une autre graphie du nom Bozo ; le voyageur Félix Dubois écrit déjà « Bosos » au pluriel. C'est la plus ancienne trace de cette graphie que le projet connaît.",
+            "formAsWritten": "Bosos",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tombouctou la mystérieuse",
+                "author": "Félix Dubois",
+                "year": 1897,
+                "url": "https://archive.org/details/tombouctoulamys00dubogoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 24",
+                "notes": "Paris, 1897. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. L'auteur écrit « les Somonos ou Bosos »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sorogo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'un des trois noms par lesquels un Bozo se définit d'abord.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Sorogo est l'un des trois noms par lesquels un Bozo se définit d'abord, avec Tié et Kélinga, selon l'anthropologue Bréhima Kassibo. Les sources que nous avons lues n'expliquent pas son origine.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire du peuplement humain",
+                "author": "Bréhima Kassibo",
+                "year": 1994,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers/40725.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 81",
+                "notes": "Chapitre 1.2 de La pêche dans le delta central du Niger, sous la direction de Jacques Quensière, ORSTOM et Karthala, 1994 ; lu dans le texte publié par l'IRD le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tié",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'un des trois noms par lesquels un Bozo se définit d'abord.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Tié est l'un des trois noms par lesquels un Bozo se définit d'abord, avec Sorogo et Kélinga, selon l'anthropologue Bréhima Kassibo. Les sources que nous avons lues n'expliquent pas son origine.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire du peuplement humain",
+                "author": "Bréhima Kassibo",
+                "year": 1994,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers/40725.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 81",
+                "notes": "Chapitre 1.2 de La pêche dans le delta central du Niger, sous la direction de Jacques Quensière, ORSTOM et Karthala, 1994 ; lu dans le texte publié par l'IRD le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kélinga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'un des trois noms par lesquels un Bozo se définit d'abord.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Kélinga est l'un des trois noms par lesquels un Bozo se définit d'abord, avec Sorogo et Tié, selon l'anthropologue Bréhima Kassibo. Les sources que nous avons lues n'expliquent pas son origine.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire du peuplement humain",
+                "author": "Bréhima Kassibo",
+                "year": 1994,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers/40725.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 81",
+                "notes": "Chapitre 1.2 de La pêche dans le delta central du Niger, sous la direction de Jacques Quensière, ORSTOM et Karthala, 1994 ; lu dans le texte publié par l'IRD le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
