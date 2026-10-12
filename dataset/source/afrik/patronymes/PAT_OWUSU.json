@@ -11,7 +11,10 @@
     {
       "spelling": "Owusu",
       "attestations": [
-        { "countryId": "GHA", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "GHA",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -75,5 +78,85 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Owusu est un nom de personne des Akan du Ghana. Ce n'est pas un nom de jour : chacun reçoit d'ordinaire un nom qui dit son jour de naissance et un autre nom, et Owusu est de cette seconde sorte. On ne sait pas avec certitude ce qu'il veut dire ; les sources lues ne lui donnent pas de sens.",
+    "names": [
+      {
+        "nameText": "Owusu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne akan du Ghana, qui n'est pas un nom de jour ; son sens reste inconnu.",
+        "periodLabel": "Écrit Owoosoo dès 1847 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Décrit en 1881"
+            },
+            "statement": "Le nom Owusu est un nom de personne akan. Johann Gottlieb Christaller le range parmi les noms qui s'ajoutent au nom du jour de naissance, sans lui donner de sens, et note que de beaucoup de ces noms le sens premier n'est pas connu. On ne sait pas avec certitude ce qu'il veut dire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 666-667",
+                "notes": "Bâle, Evangelical Missionary Society, 1881 ; exemplaire numérisé sur archive.org. Page 640, liste des rois d'Akyem Abuakwa : « 9. Ohenkokō, Owusu Akyem », entre Pobi (1743) et Obiri-Korane (vers 1770). Annexe G, « Proper Names of Persons », p. 666-667 : chacun porte d'ordinaire deux noms, dont l'un dit le jour de naissance ; Owusu figure dans la liste sans explication, et l'auteur note que de beaucoup de ces noms le sens premier n'est pas connu. Missionnaire de Bâle, cité pour les formes qu'il écrit. Page 640 vue en image. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1743,
+              "to": 1770,
+              "label": "Entre 1743 et 1770 environ, selon une liste publiée en 1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Owusu est celui d'un roi d'Akyem Abuakwa, le neuvième de la liste que donne Johann Gottlieb Christaller, appelé Ohenkoko ou Owusu Akyem. Il règne entre Pobi, roi en 1743, et Obiri Korane, roi vers 1770.",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 640",
+                "notes": "Bâle, Evangelical Missionary Society, 1881 ; exemplaire numérisé sur archive.org. Page 640, liste des rois d'Akyem Abuakwa : « 9. Ohenkokō, Owusu Akyem », entre Pobi (1743) et Obiri-Korane (vers 1770). Annexe G, « Proper Names of Persons », p. 666-667 : chacun porte d'ordinaire deux noms, dont l'un dit le jour de naissance ; Owusu figure dans la liste sans explication, et l'auteur note que de beaucoup de ces noms le sens premier n'est pas connu. Missionnaire de Bâle, cité pour les formes qu'il écrit. Page 640 vue en image. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1847,
+              "to": 1847,
+              "label": "Voyage de 1845-1846, récit publié en 1847"
+            },
+            "statement": "Le nom Owusu apparaît par écrit sous une forme proche, Owoosoo, chez le voyageur John Duncan. C'est le nom du chef du parti qui disputait le commandement de l'Akuapem, tué avec six de ses chefs lors d'un affrontement à Accra. C'est la plus ancienne trace de ce nom que le projet connaît ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Owoosoo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels in Western Africa, in 1845 & 1846",
+                "author": "John Duncan",
+                "year": 1847,
+                "url": "https://archive.org/details/in.ernet.dli.2015.506414",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome I, p. 84",
+                "notes": "Londres, Richard Bentley, 1847, deux tomes ; tome I numérisé sur archive.org. Page 84 : à Accra, le parti qui dispute le commandement de l'Akuapem est battu et six de ses chefs sont décapités « with their chief Owoosoo ». Voyageur britannique, cité pour les formes qu'il écrit et ce qu'on lui rapporte. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
