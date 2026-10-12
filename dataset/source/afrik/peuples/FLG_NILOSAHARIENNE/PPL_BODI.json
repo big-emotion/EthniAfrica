@@ -1,7 +1,7 @@
 {
   "id": "PPL_BODI",
   "nameMain": "Bodi",
-  "languageFamilyId": "FLG_COUCHITIQUE",
+  "languageFamilyId": "FLG_NILOSAHARIENNE",
   "currentCountries": ["ETH"],
   "classificationStatus": "contested",
   "content": {
@@ -20,7 +20,7 @@
       "originOfExonyms": "Me'en est l'auto-désignation commune a l'ensemble du groupe. Bodi désigne spécifiquement le sous-groupe pastoral des basses terres (plaines de l'Omo). Mekan est un terme administratif éthiopien. Podi et Mela sont des variantes du terme Bodi dans les sources linguistiques. La distinction Bodi/Tishena sépare les pasteurs des basses terres des agriculteurs des hautes terres. Le nom Me'en voudrait dire littéralement « personnes » ou « êtres humains ».",
       "whyProblematic": "Le terme Bodi est parfois appliqué a l'ensemble du groupe Me'en alors qu'il ne désigne strictement que le sous-groupe pastoral. Certaines sources confondent les Bodi avec les groupes Surma (Suri, Mursi) auxquels ils ne sont pas directement apparentés.",
       "contemporaryUsage": "Me'en est l'auto-désignation la plus precise et inclusive. Bodi est largement utilisé dans les medias et le tourisme pour désigner le sous-groupe pastoral reconnu pour le festival Ka'el. Le gouvernement éthiopien utilise le terme Mekan dans les registres officiels.",
-      "linguisticFamily": "FLG_COUCHITIQUE",
+      "linguisticFamily": "FLG_NILOSAHARIENNE",
       "ethnoLinguisticGroup": "Surmic (branche du Nilo-Saharien), sous-groupe Surmic du Sud-Est",
       "historicalRegion": "Vallée de l'Omo, Éthiopie du sud-ouest, a environ 140 km de la ville de Jinka",
       "currentCountries": ["ETH"]

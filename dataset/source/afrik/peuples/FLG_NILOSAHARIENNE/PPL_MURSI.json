@@ -1,7 +1,7 @@
 {
   "id": "PPL_MURSI",
   "nameMain": "Mursi",
-  "languageFamilyId": "FLG_COUCHITIQUE",
+  "languageFamilyId": "FLG_NILOSAHARIENNE",
   "currentCountries": ["ETH"],
   "classificationStatus": "contested",
   "content": {
@@ -12,7 +12,7 @@
       "originOfExonyms": "Le terme Mursi est l'appellation externe generalement utilisee dans les sources academiques et medias internationaux. Le terme Mun est l'auto-designation du peuple. Les formes Murzi et Murzu sont des variantes orthographiques. Dama, Merdu et Meritu sont des noms alternatifs documentes dans la litterature linguistique.",
       "whyProblematic": "Le gouvernement ethiopien regroupe les Mursi avec les Me'en et les Kwegu sous le nom collectif Surma, ce qui efface les distinctions identitaires propres a chaque groupe.",
       "contemporaryUsage": "Le nom Mursi est universellement utilise dans les sources internationales. Les Mursi se referent a eux-memes comme Mun. Leur langue est connue sous le nom de tugo ou mursi.",
-      "linguisticFamily": "FLG_COUCHITIQUE",
+      "linguisticFamily": "FLG_NILOSAHARIENNE",
       "ethnoLinguisticGroup": "Nilo-saharien, branche Surmic (surma du sud-est); classe avec les Me'en, les Suri et les Kwegu",
       "historicalRegion": "Vallee de l'Omo inferieure, Ethiopie du sud-ouest (zone Debub Omo)",
       "currentCountries": ["ETH"]
