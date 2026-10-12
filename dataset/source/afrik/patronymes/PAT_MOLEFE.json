@@ -105,5 +105,113 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Molefe », « TSWANA, SOTHO », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée n'ont établi aucune règle propre à l'ensemble des emplois de Molefe permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Molefe est porté par des hommes de langue sotho et tswana d'Afrique du Sud : on le lit dès 1880 dans un compte rendu officiel du Cap. Les sources lues ne disent ni ce qu'il veut dire ni s'il est un nom de clan : on ne sait pas avec certitude d'où il vient.",
+    "names": [
+      {
+        "nameText": "Molefe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom d'hommes sotho et tswana, lu dès 1880 ; on ne sait pas avec certitude d'où il vient.",
+        "periodLabel": "Écrit dès 1880 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1935,
+              "to": 1935,
+              "label": "Décrit en 1935"
+            },
+            "era": "modern",
+            "statement": "Le nom Molefe est celui de plusieurs chefs de groupes sotho du Natal et d'un chef tswana de Mafeking, que N. J. van Warmelo recense en 1935. Les sources lues ne disent pas ce que le nom veut dire, ni s'il est un nom de clan ; on ne sait pas avec certitude.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 28, 99 et 104",
+                "notes": "Pretoria, Government Printer, 1935 (Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V), lu le 13 octobre 2026 dans la copie numérisée de l'Université de Pretoria, reproduite sur Internet Archive. L'auteur est l'ethnologue du gouvernement. Page 28, district d'Helpmekaar : « Luka Molefe or Mlife » à la tête de baSotho ; page 99 : « Isaac Molefe », baSotho de Nqutu ; page 104 : « T. Molefe », au rang des chefs tswana du sud, à Mafeking. Le tableau ne dit pas si ce nom est un nom de clan ou un nom de famille."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1880,
+              "to": 1880,
+              "label": "11 septembre 1880"
+            },
+            "era": "colonial",
+            "statement": "Le nom Molefe apparaît par écrit, sous la forme Molefe, dans le compte rendu d'une réunion tenue à Matatiele le 11 septembre 1880, imprimé par le Cap en 1881 : « Mr. Abner Molefe » y est l'interprète de sesotho du magistrat en chef Brownlee. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un greffe l'a écrit, pas depuis quand le nom est porté.",
+            "formAsWritten": "Molefe",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Abner Molefe",
+                "role": "figure dans ce compte rendu"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Copies of all Correspondence and Telegrams Having Reference to the Recent Rebellion",
+                "author": "Colonie du Cap de Bonne-Espérance",
+                "year": 1881,
+                "url": "https://archive.org/details/copiesofallcorre01cape",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 28",
+                "notes": "Imprimé sur ordre de la Chambre d'assemblée du Cap, Cape Town, Saul Solomon, 1881, lu le 13 octobre 2026 dans la numérisation d'Internet Archive. Page 28, annexe du n° 38 : la liste des présents, lors de la réunion du 11 septembre 1880 à Matatiele, se clôt sur « Mr. Abner Molefe, Sesutu Interpreter » ; le magistrat en chef de l'Est-Griqualand y parle de la situation au Basutoland."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mlife",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme zouloue du même nom, que Van Warmelo écrit à côté de Molefe en 1935.",
+        "periodLabel": "Écrit dès 1935",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1935,
+              "to": 1935,
+              "label": "1935"
+            },
+            "era": "modern",
+            "statement": "Le nom Mlife est la forme que N. J. van Warmelo écrit à côté de Molefe pour un chef de baSotho du Natal : « Luka Molefe or Mlife ». C'est la plus ancienne trace de cette graphie que le projet connaît ; le tableau ne dit pas pourquoi les deux formes existent.",
+            "formAsWritten": "Mlife",
+            "birth": true,
+            "actors": [
+              {
+                "name": "N. J. van Warmelo",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 28",
+                "notes": "Pretoria, Government Printer, 1935 (Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V), lu le 13 octobre 2026 dans la copie numérisée de l'Université de Pretoria, reproduite sur Internet Archive. L'auteur est l'ethnologue du gouvernement. Page 28, tableau du district d'Helpmekaar : la ligne « baSotho » porte « Luka Molefe or Mlife »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
