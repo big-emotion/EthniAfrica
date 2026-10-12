@@ -111,5 +111,177 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ndengereko désigne un peuple et une langue bantoue de la côte de la Tanzanie, au nord du fleuve Rufiji. On ne sait pas comment ce peuple se nomme lui-même. Les sources lues n'expliquent pas d'où vient le nom Ndengereko. Le fleuve a donné un autre nom, Warufiji, qui ne désigne pas toujours les mêmes gens. La plus ancienne trace de Ndengereko date de décembre 1880.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Ndengereko",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple de la côte au nord du fleuve Rufiji et de sa langue ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit depuis 1880 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1880,
+              "to": 1880,
+              "label": "Décembre 1880"
+            },
+            "era": "polity",
+            "statement": "Le nom Ndengereko apparaît par écrit, sous la forme proche Wandendereko, dans le rapport de William Beardall sur son exploration du fleuve Rufiji, envoyé par le sultan de Zanzibar. Il cite les Wandendereko et les Wazaramo parmi les tribus des collines au nord du fleuve, à part des gens du bas fleuve. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Wandendereko",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Exploration of the Rufiji River under the orders of the Sultan of Zanzibar",
+                "author": "William Beardall",
+                "year": 1881,
+                "url": "https://archive.org/details/proceedingsroya89britgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 646",
+                "notes": "Proceedings of the Royal Geographical Society and Monthly Record of Geography, n° XI, novembre 1881, p. 641-656 ; lu dans l'exemplaire numérisé d'Internet Archive le 12 octobre 2026. L'expédition quitte Zanzibar le 2 décembre 1880."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "1895"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ndengereko figure en 1895 sous la forme Wadengereko chez l'explorateur Oscar Baumann, qui visite les villages autour du lac Chakwati, entre Dar es Salaam et l'embouchure du Rufiji. Il y voit une tribu particulière, dont la langue diffère de celle des Wasaramo et de celle des peuples du Rufiji, selon Baumann.",
+            "formAsWritten": "Wadengereko",
+            "sources": [
+              {
+                "title": "Der Chakwati-See",
+                "author": "Oscar Baumann",
+                "year": 1896,
+                "url": "https://archive.org/details/drapetermannsmit4218unse",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 140",
+                "notes": "Dr. A. Petermanns Mitteilungen aus Justus Perthes' Geographischer Anstalt, 42e volume, 1896, rubrique « Kleinere Mitteilungen » ; lu dans l'exemplaire numérisé d'Internet Archive le 12 octobre 2026. Le voyage a lieu en octobre 1895, entre Kwale et Kifmangao."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndengereko est le nom de référence de la langue dans la norme internationale ISO 639-3, sous le code ndg. On ne sait pas d'où il vient : les sources lues ne l'expliquent pas.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, Ndengereko [ndg]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/ndg",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ndengeleko",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre graphie de Ndengereko, employée par la linguiste Eva-Marie Ström pour sa thèse de 2013.",
+        "periodLabel": "Écrit depuis 2013",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndengeleko est une autre graphie de Ndengereko. La linguiste Eva-Marie Ström l'emploie dans le titre de sa thèse de 2013, The Ndengeleko language of Tanzania, première description de cette langue bantoue que parleraient environ 72 000 personnes, sur les côtes de Mkuranga et de Rufiji, selon la recension de Katharina Vajta.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Compte rendu de Ström, Eva-Marie (2013), The Ndengeleko language of Tanzania",
+                "author": "Katharina Vajta",
+                "year": 2013,
+                "url": "https://publicera.kb.se/mosp/article/download/8146/6931/13786",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 121",
+                "notes": "Moderna språk, 2013:1 ; lu dans le fichier PDF en accès libre le 12 octobre 2026. La thèse elle-même, déposée à l'université de Göteborg, n'a pas pu être ouverte."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Warufiji",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom qui vient du fleuve Rufiji ; les sources anciennes l'appliquent aux gens du bas fleuve.",
+        "periodLabel": "Écrit depuis 1860",
+        "accounts": [
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Warufiji apparaît par écrit dans The Lake Regions of Central Africa de Richard Burton, qui nomme Watu wa Rufiji, ou plus court Warufiji, les peuples du delta du Rufiji, au sud de la côte du Mrima. Les sources lues ne disent pas si ces gens comprennent les Ndengereko. C'est la plus ancienne trace de ce nom que le projet connaît. Les gens du fleuve existaient déjà avant elle.",
+            "formAsWritten": "Warufiji",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa: A Picture of Exploration, vol. I",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://www.gutenberg.org/ebooks/66812",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 30",
+                "notes": "Londres, Longman, Green, Longman, and Roberts. Lu dans l'exemplaire numérisé d'Internet Archive et vérifié dans le texte du Projet Gutenberg, qui garde la pagination de l'original, le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1880,
+              "to": 1880,
+              "label": "Décembre 1880"
+            },
+            "era": "polity",
+            "statement": "Le nom Warufiji est, selon William Beardall, celui que se donnent tous les habitants des villages du bas Rufiji, divisés en petites sous-tribus. Il les sépare des tribus des collines, dont les Wandendereko, au nord du fleuve.",
+            "sources": [
+              {
+                "title": "Exploration of the Rufiji River under the orders of the Sultan of Zanzibar",
+                "author": "William Beardall",
+                "year": 1881,
+                "url": "https://archive.org/details/proceedingsroya89britgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 646-647",
+                "notes": "Proceedings of the Royal Geographical Society and Monthly Record of Geography, n° XI, novembre 1881, p. 641-656 ; lu dans l'exemplaire numérisé d'Internet Archive le 12 octobre 2026. L'expédition quitte Zanzibar le 2 décembre 1880."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
