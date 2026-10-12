@@ -75,5 +75,63 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sitoe est un nom de famille du Mozambique. On ne sait pas avec certitude d'où il vient ni ce qu'il veut dire : les sources consultées ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Sitoe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille du Mozambique, dont les sources consultées n'expliquent pas l'origine.",
+        "periodLabel": "Écrit dès 1983 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sitoe est porté au Mozambique, notamment par l'écrivain Bento Sitoe, qui écrit en tsonga. Les sources consultées ne disent ni d'où vient ce nom ni ce qu'il veut dire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bento Sitoe",
+                "author": "Encyclopædia Britannica",
+                "year": null,
+                "url": "https://www.britannica.com/biography/Bento-Sitoe",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Notice de l'Encyclopædia Britannica, lu le 11 octobre 2026. Elle présente Bento Sitoe comme un auteur mozambicain, auteur de Zabela (1983), qui écrit en tsonga. Elle ne dit rien de l'origine du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1983,
+              "to": 1983,
+              "label": "1983"
+            },
+            "era": "modern",
+            "statement": "Le nom Sitoe figure sur Zabela, un livre de Bento Sitoe paru en 1983, selon l'Encyclopædia Britannica. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un livre l'a porté, pas depuis quand des familles le portent.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Bento Sitoe",
+                "author": "Encyclopædia Britannica",
+                "year": null,
+                "url": "https://www.britannica.com/biography/Bento-Sitoe",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Notice de l'Encyclopædia Britannica, lu le 11 octobre 2026. Elle présente Bento Sitoe comme un auteur mozambicain, auteur de Zabela (1983), qui écrit en tsonga. Elle ne dit rien de l'origine du nom."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

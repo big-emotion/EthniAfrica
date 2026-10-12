@@ -75,5 +75,93 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Simelane est un nom de clan des Swazi, en Eswatini. Alfred T. Bryant le range en 1929 parmi les clans de la vallée de l'Usutu installés avant le groupe d'où viennent les rois swazi. On ne sait pas avec certitude ce qu'il veut dire : les sources consultées ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Simelane",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan swazi, en Eswatini ; les sources consultées n'expliquent pas son sens.",
+        "periodLabel": "Écrit dès 1929 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Décrit en 1929"
+            },
+            "era": "colonial",
+            "statement": "Le nom Simelane est celui d'un clan qui se disait d'origine ntungwa-nguni, comme les Zoulous, selon Alfred T. Bryant. Les sources consultées ne disent pas ce que veut dire ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 311-312",
+                "notes": "Londres, Longmans, Green, 1929, lu le 11 octobre 2026 dans la numérisation d'Internet Archive ; texte et pages vérifiés le 12 octobre 2026 sur une copie non officielle déposée sur Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 311 : dans la vallée de l'aSutu (l'Usutu) vivaient les Maseko ; « These, as well as the Mahlambi, the Simelane, the Zwane, the Shongwe, the Kambule, the Tabete and other clans, claim to be of Ntungwa-Nguni origin, and therefore of the same type as the Zulus ». Page 312 : vient ensuite l'arrivée d'une partie des emaLangeni, qui se divisent en Ngwane et autres sous-clans ; les Ngwane sont le groupe des rois swazi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "1929"
+            },
+            "era": "colonial",
+            "statement": "Le nom Simelane apparaît par écrit chez Alfred T. Bryant, qui le range parmi les clans de la vallée de l'Usutu, en Eswatini, avant l'arrivée du groupe d'où sont issus les rois swazi. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; le clan qui le porte est plus ancien que ce livre.",
+            "formAsWritten": "Simelane",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Alfred T. Bryant",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 311-312",
+                "notes": "Londres, Longmans, Green, 1929, lu le 11 octobre 2026 dans la numérisation d'Internet Archive ; texte et pages vérifiés le 12 octobre 2026 sur une copie non officielle déposée sur Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 311 : dans la vallée de l'aSutu (l'Usutu) vivaient les Maseko ; « These, as well as the Mahlambi, the Simelane, the Zwane, the Shongwe, the Kambule, the Tabete and other clans, claim to be of Ntungwa-Nguni origin, and therefore of the same type as the Zulus ». Page 312 : vient ensuite l'arrivée d'une partie des emaLangeni, qui se divisent en Ngwane et autres sous-clans ; les Ngwane sont le groupe des rois swazi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Vers 1815, selon Alfred T. Bryant"
+            },
+            "era": "polity",
+            "statement": "Le nom Simelane est celui du clan de Somjeluse, la mère du roi Sobhuza, qui succède à son père Ndungunya vers 1815, selon Alfred T. Bryant. Bryant écrit le nom du roi Sobuza.",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 317",
+                "notes": "Londres, Longmans, Green, 1929, lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 317 : Ndungunya meurt vers 1815 « and his son, Sobuza [...] born of Somjeluse, of the Simelane clan, reigned in his stead »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
