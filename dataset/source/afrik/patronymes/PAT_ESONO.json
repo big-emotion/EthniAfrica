@@ -76,5 +76,158 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web combinant « Esono », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », qui comprenait le terme « homonyme », et la lecture de « La cultura para el reconocimiento de la identidad: caso de la cultura fang de Guinea Ecuatorial », n'ont pas établi de lignée homonyme d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Esono est un nom de personne fang, porté surtout en Guinée équatoriale. Chez les Fang, un enfant reçoit un nom de son père, et le nom du père s'ajoute au sien : le nom Esono passe ainsi d'un père à ses enfants, sans devenir un nom de famille au sens européen. Les sources lues ne disent pas avec certitude ce qu'il veut dire ; nous présentons plus bas l'explication de Günter Tessmann pour une forme proche, Essun.",
+    "names": [
+      {
+        "nameText": "Esono",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne fang, que le père transmet à ses enfants ; son sens reste incertain.",
+        "periodLabel": "Écrit Essun dès 1913 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Décrit en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Esono est un nom d'homme fang, selon Bonifacio Nguema Obiang-Mikue. Chez les Fang, écrit-il, le nom du père devient le nom commun de tous ses enfants, et le nom se perpétue ainsi de père en fils.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La cultura para el reconocimiento de la identidad: caso de la cultura fang de Guinea Ecuatorial",
+                "author": "Bonifacio Nguema Obiang-Mikue",
+                "year": 2023,
+                "url": "https://doi.org/10.29166/catedra.v6i1.4282",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 178-179",
+                "notes": "Article de Revista Cátedra 6(1), 2023, pp. 171-186, DOI 10.29166/catedra.v6i1.4282. Lu le 13 octobre 2026 dans le PDF en espagnol. Page 178 : l'auteur cite Rosendo Ela Nsue Mibui (2005, p. 92) pour dire que le nom du père devient le nom de famille commun de tous ses fils et filles. Page 179 : il range Esono parmi les noms fang réservés aux hommes, et cite Nsue Mibui (2005, p. 102) : le nom d'un père qui laisse beaucoup de descendants, répété chez chacun d'eux, se perpétue dans le temps et dans l'espace. Nous n'avons pas lu l'ouvrage de Nsue Mibui."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "Écrit en 2005, cité en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Esono compte parmi les noms fang que Rosendo Ela Nsue Mibui juge originaux : il n'y trouve ni dérivation ni composition qui en donnerait le sens. On ne sait donc pas avec certitude ce qu'il veut dire. Cet auteur est cité par Bonifacio Nguema Obiang-Mikue.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La cultura para el reconocimiento de la identidad: caso de la cultura fang de Guinea Ecuatorial",
+                "author": "Bonifacio Nguema Obiang-Mikue",
+                "year": 2023,
+                "url": "https://doi.org/10.29166/catedra.v6i1.4282",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 179",
+                "notes": "Article de Revista Cátedra 6(1), 2023, pp. 171-186, DOI 10.29166/catedra.v6i1.4282. Lu le 13 octobre 2026 dans le PDF en espagnol. Page 179 : l'auteur cite Rosendo Ela Nsue Mibui (2005, p. 102), qui range Esono parmi les noms fang qui paraissent « netamente originales », sans possibilité de dérivation ni de composition. Nous n'avons pas lu l'ouvrage de Nsue Mibui."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "Proposé en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Esono viendrait peut-être de esün, le fruit du cardamome sauvage, selon Günter Tessmann, qui écrit la forme proche Essun. Ce fruit sert dans le culte du Ngi, le gorille ; Tessmann admet pourtant un doute, car la couleur rouge du fruit pourrait aussi expliquer le choix de ce nom.",
+            "hypothesisGroup": "origine du nom Esono",
+            "sources": [
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 2",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku02tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 278",
+                "notes": "Berlin, Ernst Wasmuth, 1913. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'Internet Archive (Museum of African Art, Washington). Page 278, liste des noms d'hommes, n° 3 : « esü'n = Frucht des Kardamom », rangé parmi les noms d'origine religieuse ; Tessmann écrit qu'il le suppose sans en être sûr, car le fruit pourrait avoir été choisi pour son aspect rouge brillant."
+              },
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 2",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku02tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 81",
+                "notes": "Berlin, Ernst Wasmuth, 1913. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'Internet Archive (Museum of African Art, Washington). Page 81, note : à propos des fruits de cardamome plantés sur la figure du Ngi, Tessmann écrit : « Daher vielleicht der häufige Name Essun bei den Pangwe » (« de là peut-être le nom Essun, fréquent chez les Pangwe »)."
+              },
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 1",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku01tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 52",
+                "notes": "Berlin, Ernst Wasmuth, 1913. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'Internet Archive (Museum of African Art, Washington). Page 52, liste des noms de villages d'après des fruits sauvages, n° 12 : « Essun » suivi de « Frucht des Kardamom, Aframomum alboviolaceum » (« fruit du cardamome, Aframomum alboviolaceum »)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "Décrit en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Esono, écrit Essun, sert à Günter Tessmann d'exemple pour montrer comment les Fang se nomment : un fils qui s'appelle Boka et dont le père s'appelle Essun porte le nom Boka-Essun. Tessmann écrit que les Fang ne connaissent pas de nom de famille au sens européen ; face à un étranger, chacun donne le nom de son groupe de parenté.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 2",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku02tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 285",
+                "notes": "Berlin, Ernst Wasmuth, 1913. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'Internet Archive (Museum of African Art, Washington). Page 285 : « Heißt z. B. der Vater Essun, der Sohn Boka, so ist der vollständige Name des Boka Boka-Essun ». Plus bas : « Familiennamen in unserem Sinne kennen die Pangwe nicht ». Tessmann appelle Pangwe l'ensemble des Fang et de leurs voisins."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Esono apparaît par écrit sous une forme proche, Essun, dans le livre de Günter Tessmann sur les Fang, qu'il appelle Pangwe : la légende d'une photographie dit « Essun (Fam. Omwang), Span. Guinea » et montre un homme de la famille Omwang, en Guinée espagnole. C'est la plus ancienne trace de cette forme que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Essun",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Günter Tessmann",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 1",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku01tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "notes": "Berlin, Ernst Wasmuth, 1913. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'Internet Archive (Museum of African Art, Washington). Légende de la figure 5, page 9 : « Essun (Fam. Omwang), Span. Guinea »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
