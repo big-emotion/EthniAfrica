@@ -118,5 +118,358 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Mbukushu désigne un peuple des rives de l'Okavango, au Botswana, en Namibie, en Angola et en Zambie. Ce peuple se nomme lui-même Hambukushu, et aussi Haguva, « les gens ». Les Portugais l'appellent Mucusso. On ne sait pas avec certitude d'où vient le nom Hambukushu ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Hambukushu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mhw",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple ; Mbukushu en est la forme sans préfixe.",
+        "periodLabel": "Écrit depuis 1953 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "Publié en 1981"
+            },
+            "statement": "Le nom Hambukushu est celui que se donne la tribu la plus orientale du groupe kavango, selon l'anthropologue Thomas J. Larson. Au singulier, on dit Mumbukushu ; cette forme serait à l'origine des graphies Mampukush, Mambukuschu ou Moombokoosho que l'on trouve dans les anciens ouvrages anglais et allemands.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Kavango Peoples",
+                "author": "Gordon D. Gibson, Thomas J. Larson et Cecilia R. McGurk",
+                "year": 1981,
+                "url": "https://the-eis.com/elibrary/search/2168",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 213",
+                "notes": "Chapitre VI, « The Mbukushu », de Thomas J. Larson. Lu le 12 octobre 2026 dans la numérisation de la bibliothèque en ligne the-eis.com."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1966,
+              "to": 1966,
+              "label": "Proposée en 1966"
+            },
+            "statement": "Le nom Hambukushu voudrait dire « gens du raisin sauvage » : en arrivant sur l'Okavango, les ancêtres de ce peuple y auraient trouvé un fruit sauvage appelé mbukushu, et ceux qui se sont installés sur les îles du fleuve auraient alors pris ce nom, selon Louis I. Van Tonder, que cite Thomas J. Larson. Nous n'avons pas lu la thèse de Van Tonder.",
+            "hypothesisGroup": "origine du nom Hambukushu",
+            "sources": [
+              {
+                "title": "The Kavango Peoples",
+                "author": "Gordon D. Gibson, Thomas J. Larson et Cecilia R. McGurk",
+                "year": 1981,
+                "url": "https://the-eis.com/elibrary/search/2168",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 215",
+                "notes": "Chapitre VI, « The Mbukushu », de Thomas J. Larson. Lu le 12 octobre 2026 dans la numérisation de la bibliothèque en ligne the-eis.com."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1953,
+              "to": 1953,
+              "label": "1953"
+            },
+            "statement": "Le nom Hambukushu figure dans le titre d'un texte dactylographié de Thomas J. Larson daté de 1953, « The Hambukushu; some notes on a southern Bantu tribe », que cite la bibliographie du volume de Gordon Gibson. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Hambukushu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Kavango Peoples",
+                "author": "Gordon D. Gibson, Thomas J. Larson et Cecilia R. McGurk",
+                "year": 1981,
+                "url": "https://the-eis.com/elibrary/search/2168",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 273",
+                "notes": "Chapitre VI, « The Mbukushu », de Thomas J. Larson. Lu le 12 octobre 2026 dans la numérisation de la bibliothèque en ligne the-eis.com. Nous n'avons lu que le titre de ce texte dans la bibliographie ; nous n'avons pas lu le texte lui-même."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1800,
+              "label": "Avant le début du XIXe siècle"
+            },
+            "era": "polity",
+            "statement": "On parle alors de Hakokohu, au Barotseland, puis de Havamasiko, à Ragrara sur le Kwandu, pour le peuple qui prendra le nom Hambukushu sur l'Okavango, selon Louis I. Van Tonder, que cite Thomas J. Larson.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Kavango Peoples",
+                "author": "Gordon D. Gibson, Thomas J. Larson et Cecilia R. McGurk",
+                "year": 1981,
+                "url": "https://the-eis.com/elibrary/search/2168",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 215",
+                "notes": "Chapitre VI, « The Mbukushu », de Thomas J. Larson. Lu le 12 octobre 2026 dans la numérisation de la bibliothèque en ligne the-eis.com."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mbukushu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme sans préfixe de Hambukushu, que retiennent la plupart des livres.",
+        "periodLabel": "Écrit depuis 1881 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "Publié en 1981"
+            },
+            "statement": "Le nom Mbukushu est la forme sans préfixe de Hambukushu : Thomas J. Larson la retient comme nom du peuple dans son chapitre, après avoir cité les autres graphies des anciens ouvrages.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Kavango Peoples",
+                "author": "Gordon D. Gibson, Thomas J. Larson et Cecilia R. McGurk",
+                "year": 1981,
+                "url": "https://the-eis.com/elibrary/search/2168",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 213",
+                "notes": "Chapitre VI, « The Mbukushu », de Thomas J. Larson. Lu le 12 octobre 2026 dans la numérisation de la bibliothèque en ligne the-eis.com."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Mbukushu apparaît sous une forme proche, « Ovambukushu », dans une note de la Société royale de géographie de Londres sur le fleuve Okavango, qui rapporte les informations du père Duparquet : Libebe y est le nom du dernier roi de la tribu des Ovambukushu, qui avait là sa capitale. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Ovambukushu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Proceedings of the Royal Geographical Society and Monthly Record of Geography, new monthly series, vol. III",
+                "author": "Royal Geographical Society",
+                "year": 1881,
+                "url": "https://archive.org/details/proceedings17keltgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 43",
+                "notes": "Rubrique « Geographical Notes » : note sur le fleuve Okavango, qui rapporte les informations du père Duparquet. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1859,
+              "to": 1861,
+              "label": "1859-1861"
+            },
+            "era": "polity",
+            "statement": "On parle alors des Bavicko, dont la capitale est Libebe, à l'est des Ovaquangari, selon le voyageur Charles John Andersson. Siegfried Passarge y voit en 1904 les Mambukuschu, alors que le père Duparquet, rapporté par la note de 1881, distinguait les deux peuples, que des géographes anglais confondaient. Les sources ne disent pas avec certitude s'il s'agit des mêmes gens.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Okavango River: a narrative of travel, exploration, and adventure",
+                "author": "Charles John Andersson",
+                "year": 1861,
+                "url": "https://archive.org/details/okavangorivernar00andeuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 239",
+                "notes": "Lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+              },
+              {
+                "title": "Die Kalahari: Versuch einer physisch-geographischen Darstellung der Sandfelder des südafrikanischen Beckens",
+                "author": "Siegfried Passarge",
+                "year": 1904,
+                "url": "https://archive.org/details/diekalahariversu00pass",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Berlin, Dietrich Reimer. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive ; Passarge écrit « Baviko (Mambukuschu) » à propos du chef Libebe."
+              },
+              {
+                "title": "Proceedings of the Royal Geographical Society and Monthly Record of Geography, new monthly series, vol. III",
+                "author": "Royal Geographical Society",
+                "year": 1881,
+                "url": "https://archive.org/details/proceedings17keltgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 45",
+                "notes": "Rubrique « Geographical Notes » : note sur le fleuve Okavango, qui rapporte les informations du père Duparquet. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Haguva",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mhw",
+        "namedBy": null,
+        "shortLine": "Un autre nom que ce peuple se donne : les gens.",
+        "periodLabel": "Écrit depuis 1981 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "Publié en 1981"
+            },
+            "statement": "Le nom Haguva, « les gens », est un autre nom que se donnent les Mbukushu, selon Thomas J. Larson. Au singulier, on dit Guva, parfois écrit Gova. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Haguva",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Kavango Peoples",
+                "author": "Gordon D. Gibson, Thomas J. Larson et Cecilia R. McGurk",
+                "year": 1981,
+                "url": "https://the-eis.com/elibrary/search/2168",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 213",
+                "notes": "Chapitre VI, « The Mbukushu », de Thomas J. Larson. Lu le 12 octobre 2026 dans la numérisation de la bibliothèque en ligne the-eis.com."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Hakokohu",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom sous lequel on les connaissait au Barotseland, « les gens venus de loin ».",
+        "periodLabel": "Avant le début du XIXe siècle, selon la tradition rapportée en 1966",
+        "accounts": [
+          {
+            "period": {
+              "from": 1966,
+              "to": 1966,
+              "label": "Thèse de 1966, citée en 1981"
+            },
+            "statement": "Le nom Hakokohu, « les gens venus d'un endroit lointain », est celui sous lequel on connaissait ce peuple au Barotseland, selon Louis I. Van Tonder, que cite Thomas J. Larson. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Hakokohu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Kavango Peoples",
+                "author": "Gordon D. Gibson, Thomas J. Larson et Cecilia R. McGurk",
+                "year": 1981,
+                "url": "https://the-eis.com/elibrary/search/2168",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 215",
+                "notes": "Chapitre VI, « The Mbukushu », de Thomas J. Larson. Lu le 12 octobre 2026 dans la numérisation de la bibliothèque en ligne the-eis.com. Nous n'avons pas lu la thèse de Van Tonder, citée par Larson."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Havamasiko",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom qu'on leur donnait à leur arrivée sur le Kwandu, « c'est leur manière ».",
+        "periodLabel": "Avant le début du XIXe siècle, selon la tradition rapportée en 1966",
+        "accounts": [
+          {
+            "period": {
+              "from": 1966,
+              "to": 1966,
+              "label": "Thèse de 1966, citée en 1981"
+            },
+            "statement": "Le nom Havamasiko, « c'est leur manière », est celui que portait ce peuple à son arrivée à Ragrara, sur le Kwandu, selon Louis I. Van Tonder, que cite Thomas J. Larson. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Havamasiko",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Kavango Peoples",
+                "author": "Gordon D. Gibson, Thomas J. Larson et Cecilia R. McGurk",
+                "year": 1981,
+                "url": "https://the-eis.com/elibrary/search/2168",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 215",
+                "notes": "Chapitre VI, « The Mbukushu », de Thomas J. Larson. Lu le 12 octobre 2026 dans la numérisation de la bibliothèque en ligne the-eis.com. Nous n'avons pas lu la thèse de Van Tonder, citée par Larson."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mucusso",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "por",
+        "namedBy": "les Portugais",
+        "shortLine": "Le nom que les Portugais donnent à ce peuple.",
+        "periodLabel": "Écrit depuis 1881 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "Publié en 1981"
+            },
+            "statement": "Le nom Mucusso est, en portugais, toujours celui qui désigne ce peuple, selon Thomas J. Larson.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Kavango Peoples",
+                "author": "Gordon D. Gibson, Thomas J. Larson et Cecilia R. McGurk",
+                "year": 1981,
+                "url": "https://the-eis.com/elibrary/search/2168",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 213",
+                "notes": "Chapitre VI, « The Mbukushu », de Thomas J. Larson. Lu le 12 octobre 2026 dans la numérisation de la bibliothèque en ligne the-eis.com."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Mucusso apparaît sous la forme « Mucussu », avec « Bucussu » : la note de 1881 rapporte, d'après le père Duparquet, que les Portugais appellent ainsi la tribu des Ovambukushu, qui figure sous ce nom dans le récit de Brochado et sur la carte du vicomte de Sá da Bandeira. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Mucussu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Proceedings of the Royal Geographical Society and Monthly Record of Geography, new monthly series, vol. III",
+                "author": "Royal Geographical Society",
+                "year": 1881,
+                "url": "https://archive.org/details/proceedings17keltgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 43",
+                "notes": "Rubrique « Geographical Notes » : note sur le fleuve Okavango, qui rapporte les informations du père Duparquet. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
