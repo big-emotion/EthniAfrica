@@ -128,5 +128,240 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Musgu désigne un peuple des plaines du Logone, dans le nord du Cameroun et au Tchad, dont une partie se nomme elle-même Monjokay. D'autres noms existent : Mousgoum, la forme courante en français, et Mulwi, le nom d'un de ses parlers. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Monjokay",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les gens de Girvidik et de Kaykay ; il voudrait dire « les vrais hommes ».",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1983,
+              "to": 1983,
+              "label": "Article publié en 1983"
+            },
+            "era": "modern",
+            "statement": "Le nom Monjokay est celui que se donnent les habitants de Girvidik et de Kaykay, au Cameroun, qui disent parler le mujuk, selon le linguiste Henry Tourneux. Les habitants de Pouss se nomment, eux, Mapasay, et appellent Monzokay leurs voisins de Girvidik et de Kaykay. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple vivait déjà là bien avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les emprunts en musgu",
+                "author": "Henry Tourneux",
+                "year": 1983,
+                "url": "https://shs.hal.science/halshs-00459625v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 441-442",
+                "notes": "Dans Studies in Chadic and Afroasiatic Linguistics, sous la direction d'Ekkehard Wolff et Hilke Meyer-Bahlburg, Hambourg, Helmut Buske, 1983, p. 441-477. Lu dans le texte déposé sur HAL le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1983,
+              "to": 1983,
+              "label": "Proposée en 1983"
+            },
+            "era": "modern",
+            "statement": "Le nom Monjokay voudrait dire « les (vrais) hommes », selon l'explication que les Monjokay donnent eux-mêmes de leur nom, rapportée par Henry Tourneux d'après le père Simon Bonhomme. Tourneux rapproche cette explication d'une racine tchadique ancienne qui désignait l'homme.",
+            "hypothesisGroup": "origine du nom Monjokay",
+            "sources": [
+              {
+                "title": "Les emprunts en musgu",
+                "author": "Henry Tourneux",
+                "year": 1983,
+                "url": "https://shs.hal.science/halshs-00459625v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 442",
+                "notes": "Dans Studies in Chadic and Afroasiatic Linguistics, sous la direction d'Ekkehard Wolff et Hilke Meyer-Bahlburg, Hambourg, Helmut Buske, 1983, p. 441-477. Lu dans le texte déposé sur HAL le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Musgu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom écrit Musgow en 1826 ; il viendrait du Bornou.",
+        "periodLabel": "Écrit depuis 1826 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1983,
+              "to": 1983,
+              "label": "Article publié en 1983"
+            },
+            "era": "modern",
+            "statement": "Le nom Musgu désigne un groupe de langues voisines, le munjuk, le mbara et le muskum, ce dernier aujourd'hui disparu, selon Henry Tourneux. Les Monjokay ne se nomment pas ainsi, et l'origine de ce nom reste discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les emprunts en musgu",
+                "author": "Henry Tourneux",
+                "year": 1983,
+                "url": "https://shs.hal.science/halshs-00459625v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 441",
+                "notes": "Dans Studies in Chadic and Afroasiatic Linguistics, sous la direction d'Ekkehard Wolff et Hilke Meyer-Bahlburg, Hambourg, Helmut Buske, 1983, p. 441-477. Lu dans le texte déposé sur HAL le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1851,
+              "to": 1857,
+              "label": "Voyage de 1851, récit publié en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Musgu se répand en Europe avec le récit de l'explorateur Heinrich Barth, arrivé chez les Monjokay vers Noël 1851 avec une colonne de l'armée du Bornou, selon Henry Tourneux.",
+            "sources": [
+              {
+                "title": "Les emprunts en musgu",
+                "author": "Henry Tourneux",
+                "year": 1983,
+                "url": "https://shs.hal.science/halshs-00459625v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 441",
+                "notes": "Dans Studies in Chadic and Afroasiatic Linguistics, sous la direction d'Ekkehard Wolff et Hilke Meyer-Bahlburg, Hambourg, Helmut Buske, 1983, p. 441-477. Lu dans le texte déposé sur HAL le 11 octobre 2026."
+              },
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 3",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri31857bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 173-174",
+                "notes": "New York, D. Appleton, 1857, réédition américaine de l'édition de Londres. Récit du voyage de l'auteur en Afrique centrale de 1849 à 1855. Lu dans la numérisation d'Internet Archive le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1826,
+              "to": 1826,
+              "label": "Livre publié en 1826"
+            },
+            "era": "polity",
+            "statement": "Le nom Musgu apparaît par écrit, sous la forme Musgow, dans le récit de l'officier britannique Dixon Denham, pour « un grand royaume au sud-est du Mandara ». C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Musgow",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Narrative of Travels and Discoveries in Northern and Central Africa, in the Years 1822, 1823 and 1824",
+                "author": "Dixon Denham, Hugh Clapperton et Walter Oudney",
+                "year": 1826,
+                "url": "https://archive.org/details/india.history.resource.90387",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 70",
+                "notes": "Londres, John Murray, 1826. Récit de la mission britannique au Bornou ; les pages citées appartiennent au récit de Dixon Denham. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1983,
+              "to": 1983,
+              "label": "Proposée en 1983"
+            },
+            "era": "modern",
+            "statement": "Le nom Musgu serait celui qu'employaient les gens du Bornou pour désigner les Monjokay, selon Henry Tourneux, qui le présente comme une supposition. Les Bornouans l'auraient eux-mêmes reçu d'un groupe dont la langue n'avait pas le son « j » du mot Monjokay.",
+            "hypothesisGroup": "origine du nom Musgu",
+            "sources": [
+              {
+                "title": "Les emprunts en musgu",
+                "author": "Henry Tourneux",
+                "year": 1983,
+                "url": "https://shs.hal.science/halshs-00459625v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 441",
+                "notes": "Dans Studies in Chadic and Afroasiatic Linguistics, sous la direction d'Ekkehard Wolff et Hilke Meyer-Bahlburg, Hambourg, Helmut Buske, 1983, p. 441-477. Lu dans le texte déposé sur HAL le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mousgoum",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "La forme française ; elle viendrait du nom d'un village du Tchad.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1983,
+              "to": 1983,
+              "label": "Proposée en 1983"
+            },
+            "era": "modern",
+            "statement": "Le nom Mousgoum, la forme courante chez les auteurs français, viendrait très probablement du nom du village de Muskum, au Tchad, selon Henry Tourneux. Ce village est écrit Muzgum-Stadt par le duc Adolf Friedrich, Moosgoum par André Gide et Mouskoun par l'Institut géographique national.",
+            "hypothesisGroup": "origine du nom Mousgoum",
+            "sources": [
+              {
+                "title": "Les emprunts en musgu",
+                "author": "Henry Tourneux",
+                "year": 1983,
+                "url": "https://shs.hal.science/halshs-00459625v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 442",
+                "notes": "Dans Studies in Chadic and Afroasiatic Linguistics, sous la direction d'Ekkehard Wolff et Hilke Meyer-Bahlburg, Hambourg, Helmut Buske, 1983, p. 441-477. Lu dans le texte déposé sur HAL le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mulwi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un parler musgu, celui de Mogroum, au Tchad.",
+        "periodLabel": "Écrit depuis 1978",
+        "accounts": [
+          {
+            "period": {
+              "from": 1978,
+              "to": 1983,
+              "label": "Étude de 1978, citée en 1983"
+            },
+            "era": "modern",
+            "statement": "Le nom Mulwi désigne le parler vulum du village de Mogroum, au Tchad : Henry Tourneux l'emploie dans le titre de l'étude qu'il lui consacre en 1978, Le mulwi ou vulum de Mogroum. Nous n'avons pas trouvé de source qui en fasse le nom de tout le peuple.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les emprunts en musgu",
+                "author": "Henry Tourneux",
+                "year": 1983,
+                "url": "https://shs.hal.science/halshs-00459625v1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 442",
+                "notes": "Dans Studies in Chadic and Afroasiatic Linguistics, sous la direction d'Ekkehard Wolff et Hilke Meyer-Bahlburg, Hambourg, Helmut Buske, 1983, p. 441-477. Lu dans le texte déposé sur HAL le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

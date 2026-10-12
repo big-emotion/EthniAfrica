@@ -136,5 +136,230 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Buduma désigne un peuple des îles du lac Tchad, qui se nomme lui-même Yedina. Buduma est le nom que lui donnent ses voisins kanouri. Les sources ne s'accordent pas sur l'origine de ces deux noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Yedina",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les insulaires du lac Tchad ; il apparaît par écrit en 1857.",
+        "periodLabel": "Écrit depuis 1857 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Livre publié en 1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Yedina est celui que se donnent les habitants des îles du lac Tchad que leurs voisins appellent Buduma, selon l'explorateur Gustav Nachtigal. Il juge son origine peu claire ; deux explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Saharâ und Sûdân. Ergebnisse sechsjähriger Reisen in Afrika, zweiter Theil",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 363",
+                "notes": "Berlin, Weidmann, 1881. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "Livre publié en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Yedina apparaît par écrit, sous la forme Yédina, dans le récit de l'explorateur Heinrich Barth : sur une rive du lac Tchad, il voit deux barques des Budduma, « comme les appellent les Kanouri », ou Yédina, « comme ils s'appellent eux-mêmes ». C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple vivait déjà sur le lac avant elle.",
+            "formAsWritten": "Yédina",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 2 (édition de New York)",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri21857bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 324",
+                "notes": "New York, D. Appleton, 1857, réédition américaine de l'édition de Londres. Récit du voyage de l'auteur en Afrique centrale de 1849 à 1855. Lu dans la numérisation d'Internet Archive le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Proposée en 1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Yedina viendrait de Jedi, une ville de la rive sud-ouest du lac Tchad, dont les premiers habitants, des So, auraient fui vers les îles devant les conquérants du Bornou, selon Gustav Nachtigal.",
+            "hypothesisGroup": "origine du nom Yedina",
+            "sources": [
+              {
+                "title": "Saharâ und Sûdân. Ergebnisse sechsjähriger Reisen in Afrika, zweiter Theil",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 363",
+                "notes": "Berlin, Weidmann, 1881. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Proposée en 1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Yedina viendrait plutôt directement du mot kanouri gédi, « l'est », selon une autre explication que propose Gustav Nachtigal.",
+            "hypothesisGroup": "origine du nom Yedina",
+            "sources": [
+              {
+                "title": "Saharâ und Sûdân. Ergebnisse sechsjähriger Reisen in Afrika, zweiter Theil",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 363",
+                "notes": "Berlin, Weidmann, 1881. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Buduma",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "kau",
+        "namedBy": "Les Kanouri du Bornou",
+        "shortLine": "Le nom que les Kanouri donnent aux insulaires du lac Tchad ; écrit dès 1826.",
+        "periodLabel": "Écrit depuis 1826 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "Livre publié en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Buduma désigne les habitants des îles du lac Tchad ; c'est le nom que leur donnent les Kanouri, selon Heinrich Barth, alors qu'eux-mêmes se nomment Yedina. L'origine de ce nom est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 2 (édition de New York)",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri21857bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 324",
+                "notes": "New York, D. Appleton, 1857, réédition américaine de l'édition de Londres. Récit du voyage de l'auteur en Afrique centrale de 1849 à 1855. Lu dans la numérisation d'Internet Archive le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Buduma est écrit Búdūma dans la Polyglotta Africana du linguiste Sigismund Koelle, qui l'emploie pour « la langue des îles Dsháde », c'est-à-dire du lac Tchad. Koelle tient ses mots d'un jeune informateur dont il juge lui-même la mémoire incertaine.",
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite. Remarque placée sous la langue « Búdūma » de la section VII-A-1."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1826,
+              "to": 1826,
+              "label": "Livre publié en 1826"
+            },
+            "era": "polity",
+            "statement": "Le nom Buduma apparaît par écrit, sous la forme Biddoomah, dans le récit de l'officier britannique Dixon Denham, pour le peuple qui habite les îles du lac Tchad. C'est la plus ancienne trace de ce nom que le projet connaît. Les habitants des îles vivaient déjà là avant elle.",
+            "formAsWritten": "Biddoomah",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Narrative of Travels and Discoveries in Northern and Central Africa, in the Years 1822, 1823 and 1824",
+                "author": "Dixon Denham, Hugh Clapperton et Walter Oudney",
+                "year": 1826,
+                "url": "https://archive.org/details/india.history.resource.90387",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 48",
+                "notes": "Londres, John Murray, 1826. Récit de la mission britannique au Bornou ; les pages citées appartiennent au récit de Dixon Denham. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1564,
+              "to": 1596,
+              "label": "Règne d'Idris Alawoma, 1564-1596"
+            },
+            "era": "polity",
+            "statement": "Le nom Buduma n'est pas encore écrit quand des pêcheurs que l'historien B. M. Barkindo appelle ainsi pêchent déjà sur les bords du lac Tchad, à l'est du Bornou, et produisent du natron et du sel, sous le règne du roi Idris Alawoma.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 17 : Le Kānem-Borno : ses relations avec la Méditerranée, le Baguirmi et les autres États du bassin du Tchad",
+                "author": "B. M. Barkindo",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 548",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Rapportée en 1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Buduma viendrait du surnom de Barqa, un esclave du roi du Bornou chargé de rapporter du fourrage : capturé par des inconnus sur une île du lac, il serait resté parmi eux. En kanouri, buddu veut dire « herbe sèche », et Buduma serait « celui qui s'occupe de l'herbe sèche ». Ce surnom serait devenu le nom de tout le peuple, selon une tradition du Bornou que rapporte Gustav Nachtigal.",
+            "hypothesisGroup": "origine du nom Buduma",
+            "sources": [
+              {
+                "title": "Saharâ und Sûdân. Ergebnisse sechsjähriger Reisen in Afrika, zweiter Theil",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 362-363",
+                "notes": "Berlin, Weidmann, 1881. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

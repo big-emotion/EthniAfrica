@@ -534,6 +534,104 @@
                 "notes": "Berlin, Ernst Wasmuth, 1913. Monographie tirée de l'expédition de Lübeck de 1907-1909, écrite dans le vocabulaire colonial de son époque. Lu dans la numérisation d'Internet Archive le 10 octobre 2026."
               }
             ]
+          },
+          {
+            "period": {
+              "from": 1947,
+              "to": 1947,
+              "label": "26-28 février 1947"
+            },
+            "era": "colonial",
+            "statement": "Le nom Pahouin donne son titre au premier Congrès pahouin, que le gouverneur du Gabon réunit à Mitzik pour s'appuyer sur les chefs ruraux. Le congrès se retourne contre l'administration coloniale et désigne le citadin Léon Mba comme chef des Fang, selon l'historien Elikia M'Bokolo.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 8 : L'Afrique équatoriale de l'Ouest",
+                "author": "Elikia M'Bokolo",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 220",
+                "notes": "UNESCO, volume dirigé par A. A. Mazrui et C. Wondji, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1958,
+              "to": 1958,
+              "label": "1958"
+            },
+            "era": "colonial",
+            "statement": "Le nom Pahouin sert encore à regrouper les Fang, les Bulu et les Beti dans le titre de l'étude de Pierre Alexandre et J. Binet, Le groupe dit pahouin (Fang-Boulou-Beti), selon la bibliographie de l'Histoire générale de l'Afrique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, bibliographie du volume",
+                "author": "UNESCO",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 996",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Pamue",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "spa",
+        "namedBy": "Les Espagnols",
+        "shortLine": "Le nom espagnol des Fang, tiré comme Pahouin de Mpangwe ; écrit en 1901.",
+        "periodLabel": "XIXe-XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "Conférence de 1901"
+            },
+            "era": "colonial",
+            "statement": "Le nom Pamue sert à l'officier espagnol Eladio López Vilches à désigner « la grande race pamue » du Río Muni, qu'il décrit avançant peu à peu vers la côte. C'est la plus ancienne trace de ce nom que le projet connaît. Les Fang existaient déjà avant elle.",
+            "formAsWritten": "pamue",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Fernando Póo y la Guinea Española : conferencia pronunciada en la Real Sociedad Geográfica el día 17 de diciembre de 1901",
+                "author": "Eladio López Vilches",
+                "year": 1901,
+                "url": "https://archive.org/details/fernandopoylagui00lpez",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 21",
+                "notes": "Madrid, Imprenta y Litografía del Depósito de la Guerra. Conférence d'un officier de la commission espagnole envoyée prendre possession des territoires du continent. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1965,
+              "to": 1965,
+              "label": "Proposée en 1965"
+            },
+            "statement": "Le nom Pamue viendrait, comme le français Pahouin, de la forme que le nom fang prenait chez les Mpongwe de la côte du Gabon, dont la langue exige un préfixe devant les noms de peuples, selon Pierre Alexandre.",
+            "hypothesisGroup": "origine du nom Pamue",
+            "sources": [
+              {
+                "title": "Proto-histoire du groupe beti-bulu-fang : essai de synthèse provisoire",
+                "author": "Pierre Alexandre",
+                "year": 1965,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1965_num_5_20_3049",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 503",
+                "notes": "Cahiers d'études africaines, vol. 5, n° 20, 1965, p. 503-560. Première page et sa note lues sur Persée le 11 octobre 2026."
+              }
+            ]
           }
         ]
       }
