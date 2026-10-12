@@ -1,4 +1,4 @@
-/* EthniAfrica Cartes 1.1.0-proposition. Card geometry in export pixels (1080 x 1350).
+/* EthniAfrica Cartes 1.2.0-proposition. Card geometry in export pixels (1080 x 1350).
    Colours and families come from tokens.json (tokens.css or EthniCards.installTokens). */
 
 .ec-card {
@@ -138,6 +138,9 @@
 .ec-map .ec-m-coast { fill: none; stroke: var(--map-border-quiet, #8f7b64); opacity: .7; }
 .ec-map .ec-m-border { fill: none; stroke-linejoin: round; stroke-linecap: round; }
 .ec-map .ec-m-border--quiet { stroke: var(--map-border-quiet, #8f7b64); }
+.ec-map .ec-m-border--dotted { stroke: var(--map-ink, #2a1e15); stroke-opacity: .8; stroke-linecap: round; }
+.ec-map .ec-m-terr path { fill: none; stroke: var(--map-ink, #2a1e15); stroke-linejoin: round; }
+.ec-map .ec-m-lbl-terr { font-weight: 800; }
 .ec-map .ec-m-border--strong { stroke: var(--map-border-strong, #2a1e15); }
 .ec-map .ec-m-border--halo { stroke: var(--map-land, #efe6d6); }
 .ec-map .ec-m-area { stroke-linejoin: round; }
@@ -171,6 +174,48 @@
 .ec-inset-land { fill: var(--map-land, #efe6d6); stroke: var(--map-ink-muted, #6e5d4c); stroke-width: 1; }
 .ec-inset-frame { fill: none; stroke: var(--area-c, #c0583a); stroke-width: 3; }
 .ec-map .ec-m-lbl-hl { font-weight: 800; fill: var(--map-ink, #2a1e15); }
+
+
+/* 1.2.0: historical atlas map. Numbered points (three styles), regional keys, period marker. */
+.ec-map .ec-m-land--out { fill: var(--map-land-outside, #e2ddd3); }
+.ec-map .ec-m-africa { fill: var(--map-land, #efe6d6); }
+.ec-map .ec-at-mark { stroke: var(--map-land, #efe6d6); }
+.ec-map .ec-at-mark--state { fill: var(--atlas-state, #2a1e15); }
+.ec-map .ec-at-mark--society { fill: var(--atlas-society, #17695e); }
+.ec-map .ec-at-mark--site { fill: var(--atlas-site, #8a361f); }
+.ec-map .ec-at-num { font-family: var(--font-text, "Nunito Sans", sans-serif); font-weight: 800; fill: var(--atlas-number, #fffaf0); font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+.ec-map .ec-at-leader { stroke: var(--map-ink, #2a1e15); stroke-linecap: round; }
+.ec-map .ec-at-inline { font-weight: 800; }
+.ec-map .ec-m-ring { fill: var(--map-land, #efe6d6); stroke: var(--map-ink, #2a1e15); }
+.ec-map .ec-m-ring-dot { fill: var(--map-ink, #2a1e15); }
+.ec-key { position: absolute; z-index: 3; background: var(--map-key-ground, rgba(251, 247, 240, .95)); color: var(--map-ink, #2a1e15); border: 2px solid var(--map-ink-muted, #6e5d4c); border-radius: 6px; padding: 10px 14px 8px; }
+.ec-key-title { font: 800 22px/26px var(--font-text, "Nunito Sans", sans-serif); letter-spacing: .1em; text-transform: uppercase; color: var(--map-ink-muted, #6e5d4c); margin-bottom: 4px; }
+.ec-key ol { list-style: none; margin: 0; padding: 0; column-gap: 16px; }
+.ec-key-row { display: flex; align-items: flex-start; gap: 6px; break-inside: avoid; font: 700 24px/30px var(--font-text, "Nunito Sans", sans-serif); color: var(--map-ink, #2a1e15); }
+.ec-key-badge { display: inline-flex; align-items: center; gap: 4px; flex: none; width: 54px; }
+.ec-key-badge svg { width: 18px; height: 18px; flex: none; }
+.ec-key-badge svg .ec-at-mark, .ec-legend-item svg .ec-at-mark { stroke: none; }
+.ec-legend-item svg .ec-at-mark--state { fill: var(--atlas-state, #2a1e15); }
+.ec-legend-item svg .ec-at-mark--society { fill: var(--atlas-society, #17695e); }
+.ec-legend-item svg .ec-at-mark--site { fill: var(--atlas-site, #8a361f); }
+.ec-key-badge svg .ec-at-mark--state { fill: var(--atlas-state, #2a1e15); }
+.ec-key-badge svg .ec-at-mark--society { fill: var(--atlas-society, #17695e); }
+.ec-key-badge svg .ec-at-mark--site { fill: var(--atlas-site, #8a361f); }
+.ec-key-badge b { font-weight: 800; font-variant-numeric: tabular-nums; min-width: 30px; text-align: right; }
+.ec-key-name { flex: 1; }
+.ec-key--compact { padding: 8px 14px 6px; } /* 41 to 45 numbered entries: 27 px rows, same 24 px text */
+.ec-key--compact .ec-key-title { margin-bottom: 2px; }
+.ec-key--compact .ec-key-row { line-height: 27px; }
+.ec-timeline { display: inline-flex; align-items: center; gap: 10px; white-space: nowrap; }
+.ec-tl-end { font: 700 20px/24px var(--font-text, "Nunito Sans", sans-serif); color: var(--ink-faint, #a8977f); }
+.ec-tl-track { display: inline-flex; align-items: center; gap: 12px; position: relative; }
+.ec-tl-track::before { content: ''; position: absolute; left: 4px; right: 4px; top: 50%; border-top: 2px solid var(--rule, #4a3c2c); }
+.ec-tl-step { position: relative; width: 12px; height: 12px; border-radius: 50%; background: var(--ink-faint, #a8977f); }
+.ec-tl-step.is-past { background: var(--ink-muted, #cbbba3); }
+.ec-tl-step.is-current { width: 24px; height: 24px; background: var(--accent, #e8b96a); box-shadow: 0 0 0 4px var(--ground, #15100b); }
+.ec-legend--grid { display: grid; gap: 8px 30px; }
+.ec-legend--after { margin-top: 10px; }
+.ec-legend-item--note { font-weight: 400; color: var(--ink-muted, #cbbba3); }
 
 /* Closing invitation: centred, an outlined pill for the site. */
 .ec-cta { margin-top: 30px; }

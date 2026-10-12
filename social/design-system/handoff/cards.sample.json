@@ -1,5 +1,5 @@
 {
- "version": "1.1.0-proposition",
+ "version": "1.2.0-proposition",
  "logo": "Logo/ethniafrica-logo.png",
  "cards": [
   {
@@ -103,7 +103,7 @@
      {
       "text": "OUGANDA",
       "x": 749.0,
-      "y": 436.8,
+      "y": 416.8,
       "kind": "country"
      },
      {
@@ -1563,8 +1563,8 @@
       64
      ],
      "CAF": [
-      14,
-      0
+      24,
+      -8
      ]
     },
     "inset": {
@@ -1668,8 +1668,8 @@
       64
      ],
      "CAF": [
-      14,
-      0
+      24,
+      -8
      ]
     },
     "inset": {
@@ -1686,6 +1686,2727 @@
    },
    "demo": "Mise en page illustrative, part calculée",
    "provenance": "Part = estimation PPL_FULA ÷ population du pays (public/pays_demographie.csv), arrondie."
+  },
+  {
+   "id": "atlas-1880",
+   "type": "map",
+   "theme": "nuit",
+   "kicker": "L'Afrique à travers le temps",
+   "timeline": {
+    "steps": [
+     "1960",
+     "1914",
+     "1880",
+     "1750",
+     "1550",
+     "1350",
+     "1000",
+     "0",
+     "−1500"
+    ],
+    "current": 2,
+    "from": "1960",
+    "to": "1500 av. J.-C."
+   },
+   "title": "L'Afrique en 1880",
+   "map": {
+    "dataRef": "Cartes/afrique.json",
+    "borders": "none",
+    "view": [
+     -168.1,
+     -15.1,
+     1136.8,
+     1421.1
+    ],
+    "atlas": {
+     "entries": [
+      {
+       "name": "Maroc",
+       "x": 276.0,
+       "y": 48.0,
+       "region": "nord",
+       "kind": "state",
+       "zone": {
+        "cx": 261.0,
+        "cy": 72.0,
+        "rx": 57.0,
+        "ry": 42.0,
+        "rot": -30
+       }
+      },
+      {
+       "name": "Tunis",
+       "x": 458.4,
+       "y": 14.4,
+       "region": "nord",
+       "kind": "state",
+       "zone": {
+        "cx": 451.2,
+        "cy": 48.0,
+        "rx": 19.2,
+        "ry": 36.0
+       }
+      },
+      {
+       "name": "Tripoli",
+       "x": 494.4,
+       "y": 61.2,
+       "region": "nord",
+       "kind": "state",
+       "zone": {
+        "cx": 546.0,
+        "cy": 111.0,
+        "rx": 90.0,
+        "ry": 45.0
+       }
+      },
+      {
+       "name": "Égypte",
+       "x": 710.4,
+       "y": 96.0,
+       "region": "nord",
+       "kind": "state",
+       "zone": {
+        "cx": 696.0,
+        "cy": 135.0,
+        "rx": 60.0,
+        "ry": 57.0
+       }
+      },
+      {
+       "name": "Fouta-Djalon",
+       "x": 199.2,
+       "y": 328.8,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 193.2,
+        "cy": 324.0,
+        "rx": 19.2,
+        "ry": 14.4
+       }
+      },
+      {
+       "name": "Ségou",
+       "x": 260.8,
+       "y": 294.7,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 246.0,
+        "cy": 285.0,
+        "rx": 48.0,
+        "ry": 21.0,
+        "rot": -8
+       }
+      },
+      {
+       "name": "Wassoulou",
+       "x": 229.2,
+       "y": 326.4,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 231.0,
+        "cy": 334.2,
+        "rx": 27.0,
+        "ry": 22.2
+       }
+      },
+      {
+       "name": "Kénédougou",
+       "x": 268.0,
+       "y": 320.2,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 270.6,
+        "cy": 322.8,
+        "rx": 10.2,
+        "ry": 9.6
+       }
+      },
+      {
+       "name": "Kong",
+       "x": 280.8,
+       "y": 346.2,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 283.8,
+        "cy": 347.4,
+        "rx": 11.4,
+        "ry": 10.2
+       }
+      },
+      {
+       "name": "Mossi",
+       "x": 317.6,
+       "y": 307.6,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 319.8,
+        "cy": 304.2,
+        "rx": 19.8,
+        "ry": 16.2
+       }
+      },
+      {
+       "name": "Asante",
+       "x": 316.6,
+       "y": 375.7,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 316.2,
+        "cy": 374.4,
+        "rx": 16.2,
+        "ry": 16.8
+       }
+      },
+      {
+       "name": "Danxomè (Dahomey)",
+       "x": 359.9,
+       "y": 369.8,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 362.4,
+        "cy": 369.0,
+        "rx": 7.2,
+        "ry": 11.4
+       }
+      },
+      {
+       "name": "Sokoto",
+       "x": 398.9,
+       "y": 299.3,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 432.0,
+        "cy": 319.8,
+        "rx": 66.0,
+        "ry": 34.2
+       }
+      },
+      {
+       "name": "Borno",
+       "x": 498.7,
+       "y": 301.0,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 495.0,
+        "cy": 307.2,
+        "rx": 23.4,
+        "ry": 21.6
+       }
+      },
+      {
+       "name": "Ouaddaï",
+       "x": 586.0,
+       "y": 290.0,
+       "region": "centre",
+       "kind": "state",
+       "zone": {
+        "cx": 585.0,
+        "cy": 294.0,
+        "rx": 33.0,
+        "ry": 30.0
+       }
+      },
+      {
+       "name": "Baguirmi",
+       "x": 530.0,
+       "y": 319.2,
+       "region": "centre",
+       "kind": "state",
+       "zone": {
+        "cx": 539.4,
+        "cy": 321.0,
+        "rx": 17.4,
+        "ry": 12.6
+       }
+      },
+      {
+       "name": "Darfour",
+       "x": 640.2,
+       "y": 292.4,
+       "region": "est",
+       "kind": "state",
+       "zone": {
+        "cx": 633.0,
+        "cy": 303.0,
+        "rx": 33.0,
+        "ry": 33.0
+       }
+      },
+      {
+       "name": "Kongo",
+       "x": 506.9,
+       "y": 531.2,
+       "region": "centre",
+       "kind": "state",
+       "zone": {
+        "cx": 511.8,
+        "cy": 528.0,
+        "rx": 19.8,
+        "ry": 14.4
+       }
+      },
+      {
+       "name": "Lunda",
+       "x": 606.0,
+       "y": 558.0,
+       "region": "centre",
+       "kind": "state",
+       "zone": {
+        "cx": 594.0,
+        "cy": 559.2,
+        "rx": 48.0,
+        "ry": 31.2,
+        "rot": -8
+       }
+      },
+      {
+       "name": "Luba",
+       "x": 643.2,
+       "y": 543.6,
+       "region": "centre",
+       "kind": "state",
+       "zone": {
+        "cx": 645.6,
+        "cy": 542.4,
+        "rx": 24.0,
+        "ry": 24.0
+       }
+      },
+      {
+       "name": "Kuba",
+       "x": 595.2,
+       "y": 514.8,
+       "region": "centre",
+       "kind": "state",
+       "zone": {
+        "cx": 600.0,
+        "cy": 513.6,
+        "rx": 12.0,
+        "ry": 9.6
+       }
+      },
+      {
+       "name": "Kazembe",
+       "x": 681.6,
+       "y": 571.2,
+       "region": "centre",
+       "kind": "state",
+       "zone": {
+        "cx": 682.8,
+        "cy": 570.6,
+        "rx": 10.8,
+        "ry": 15.0
+       }
+      },
+      {
+       "name": "Éthiopie",
+       "x": 810.0,
+       "y": 294.0,
+       "region": "est",
+       "kind": "state",
+       "zone": {
+        "cx": 801.0,
+        "cy": 333.0,
+        "rx": 51.0,
+        "ry": 57.0
+       }
+      },
+      {
+       "name": "Buganda",
+       "x": 726.8,
+       "y": 452.4,
+       "region": "est",
+       "kind": "state",
+       "zone": {
+        "cx": 723.6,
+        "cy": 452.4,
+        "rx": 12.0,
+        "ry": 10.8
+       }
+      },
+      {
+       "name": "Bunyoro",
+       "x": 712.2,
+       "y": 438.8,
+       "region": "est",
+       "kind": "state",
+       "zone": {
+        "cx": 711.0,
+        "cy": 435.6,
+        "rx": 11.4,
+        "ry": 10.8
+       }
+      },
+      {
+       "name": "Rwanda",
+       "x": 693.0,
+       "y": 484.2,
+       "region": "est",
+       "kind": "state",
+       "zone": {
+        "cx": 695.4,
+        "cy": 479.4,
+        "rx": 9.0,
+        "ry": 10.2
+       }
+      },
+      {
+       "name": "Burundi",
+       "x": 691.2,
+       "y": 495.2,
+       "region": "est",
+       "kind": "state",
+       "zone": {
+        "cx": 695.4,
+        "cy": 498.6,
+        "rx": 7.8,
+        "ry": 9.0
+       }
+      },
+      {
+       "name": "Zanzibar",
+       "x": 806.4,
+       "y": 529.9,
+       "region": "est",
+       "kind": "state",
+       "zone": {
+        "cx": 808.8,
+        "cy": 531.0,
+        "rx": 9.6,
+        "ry": 45.0,
+        "rot": 12
+       }
+      },
+      {
+       "name": "Merina",
+       "x": 906.0,
+       "y": 682.8,
+       "region": "sud",
+       "kind": "state",
+       "zone": {
+        "cx": 900.0,
+        "cy": 684.0,
+        "rx": 30.0,
+        "ry": 54.0,
+        "rot": 16
+       }
+      },
+      {
+       "name": "Zoulou",
+       "x": 712.8,
+       "y": 795.6,
+       "region": "sud",
+       "kind": "state",
+       "zone": {
+        "cx": 712.2,
+        "cy": 794.4,
+        "rx": 13.8,
+        "ry": 14.4
+       }
+      },
+      {
+       "name": "Ndebele",
+       "x": 679.0,
+       "y": 697.8,
+       "region": "sud",
+       "kind": "state",
+       "zone": {
+        "cx": 678.0,
+        "cy": 691.2,
+        "rx": 30.0,
+        "ry": 25.2
+       }
+      },
+      {
+       "name": "Lozi",
+       "x": 612.0,
+       "y": 638.4,
+       "region": "sud",
+       "kind": "state",
+       "zone": {
+        "cx": 616.8,
+        "cy": 640.8,
+        "rx": 28.8,
+        "ry": 28.8
+       }
+      },
+      {
+       "name": "Lesotho",
+       "x": 670.8,
+       "y": 808.8,
+       "region": "sud",
+       "kind": "state",
+       "zone": {
+        "cx": 675.0,
+        "cy": 811.2,
+        "rx": 12.6,
+        "ry": 10.8
+       }
+      },
+      {
+       "name": "Swazi",
+       "x": 710.4,
+       "y": 774.0,
+       "region": "sud",
+       "kind": "state",
+       "zone": {
+        "cx": 714.6,
+        "cy": 774.0,
+        "rx": 6.6,
+        "ry": 8.4
+       }
+      },
+      {
+       "name": "Gaza",
+       "x": 742.8,
+       "y": 752.4,
+       "region": "sud",
+       "kind": "state",
+       "zone": {
+        "cx": 735.0,
+        "cy": 730.8,
+        "rx": 24.6,
+        "ry": 37.2
+       }
+      },
+      {
+       "name": "Nuer",
+       "x": 714.0,
+       "y": 354.0,
+       "region": "est",
+       "kind": "society",
+       "zone": {
+        "cx": 714.0,
+        "cy": 352.2,
+        "rx": 18.0,
+        "ry": 13.8
+       }
+      },
+      {
+       "name": "Tiv",
+       "x": 444.0,
+       "y": 369.6,
+       "region": "ouest",
+       "kind": "society",
+       "zone": {
+        "cx": 444.6,
+        "cy": 369.0,
+        "rx": 9.0,
+        "ry": 7.8
+       }
+      },
+      {
+       "name": "Lobi",
+       "x": 297.6,
+       "y": 336.0,
+       "region": "ouest",
+       "kind": "society",
+       "zone": {
+        "cx": 298.8,
+        "cy": 336.0,
+        "rx": 6.0,
+        "ry": 7.2
+       }
+      },
+      {
+       "name": "Fang",
+       "x": 468.0,
+       "y": 438.0,
+       "region": "centre",
+       "kind": "society",
+       "zone": {
+        "cx": 474.0,
+        "cy": 442.8,
+        "rx": 22.8,
+        "ry": 22.8
+       }
+      },
+      {
+       "name": "Kikuyu",
+       "x": 780,
+       "y": 463.2,
+       "region": "est",
+       "kind": "society",
+       "zone": {
+        "cx": 780.0,
+        "cy": 464.4,
+        "rx": 7.2,
+        "ry": 10.8
+       }
+      }
+     ],
+     "keys": [
+      {
+       "region": "ouest",
+       "x": 20,
+       "y": 96,
+       "width": 250
+      },
+      {
+       "region": "centre",
+       "x": 20,
+       "y": 464,
+       "width": 250
+      },
+      {
+       "region": "est",
+       "x": 20,
+       "y": 622,
+       "width": 250
+      },
+      {
+       "region": "sud",
+       "x": 20,
+       "y": 810,
+       "width": 250
+      }
+     ]
+    },
+    "caption": {
+     "what": "États et sociétés sans roi vers 1880, en zones approximatives, sans frontières tracées",
+     "when": "vers 1880",
+     "source": "démonstration, données de test ; fond Natural Earth"
+    }
+   },
+   "demo": "Démo, non publiable",
+   "provenance": "Entrées et coordonnées de prototype-densite-1880.cards.json (données de test)."
+  },
+  {
+   "id": "atlas-1914",
+   "type": "map",
+   "theme": "nuit",
+   "kicker": "L'Afrique à travers le temps",
+   "timeline": {
+    "steps": [
+     "1960",
+     "1914",
+     "1880",
+     "1750",
+     "1550",
+     "1350",
+     "1000",
+     "0",
+     "−1500"
+    ],
+    "current": 1,
+    "from": "1960",
+    "to": "1500 av. J.-C."
+   },
+   "title": "L'Afrique en 1914",
+   "map": {
+    "dataRef": "Cartes/afrique.json",
+    "borders": "dotted",
+    "view": [
+     -60.0,
+     -16.2,
+     1200.0,
+     1500.0
+    ],
+    "categorical": {
+     "values": {
+      "DZA": "fra",
+      "TUN": "fra",
+      "MRT": "fra",
+      "SEN": "fra",
+      "MLI": "fra",
+      "GIN": "fra",
+      "CIV": "fra",
+      "BFA": "fra",
+      "BEN": "fra",
+      "NER": "fra",
+      "TCD": "fra",
+      "CAF": "fra",
+      "COG": "fra",
+      "GAB": "fra",
+      "MDG": "fra",
+      "DJI": "fra",
+      "COM": "fra",
+      "EGY": "gbr",
+      "SDN": "gbr",
+      "SDS": "gbr",
+      "UGA": "gbr",
+      "KEN": "gbr",
+      "ZAF": "gbr",
+      "BWA": "gbr",
+      "ZWE": "gbr",
+      "ZMB": "gbr",
+      "MWI": "gbr",
+      "LSO": "gbr",
+      "SWZ": "gbr",
+      "NGA": "gbr",
+      "GHA": "gbr",
+      "SLE": "gbr",
+      "GMB": "gbr",
+      "SOL": "gbr",
+      "RWA": "deu",
+      "BDI": "deu",
+      "NAM": "deu",
+      "CMR": "deu",
+      "TGO": "deu",
+      "COD": "bel",
+      "AGO": "prt",
+      "MOZ": "prt",
+      "GNB": "prt",
+      "CPV": "prt",
+      "STP": "prt",
+      "LBY": "ita",
+      "ERI": "ita",
+      "SOM": "ita",
+      "GNQ": "esp",
+      "SAH": "esp",
+      "ETH": "ind",
+      "LBR": "ind",
+      "TZA": "deu"
+     },
+     "split": {
+      "MAR": [
+       "fra",
+       "esp"
+      ]
+     },
+     "classes": [
+      {
+       "id": "gbr",
+       "label": "Royaume-Uni",
+       "tone": "col-gbr"
+      },
+      {
+       "id": "fra",
+       "label": "France",
+       "tone": "col-fra"
+      },
+      {
+       "id": "deu",
+       "label": "Allemagne",
+       "tone": "col-deu"
+      },
+      {
+       "id": "bel",
+       "label": "Belgique",
+       "tone": "col-bel"
+      },
+      {
+       "id": "prt",
+       "label": "Portugal",
+       "tone": "col-prt"
+      },
+      {
+       "id": "ita",
+       "label": "Italie",
+       "tone": "col-ita"
+      },
+      {
+       "id": "esp",
+       "label": "Espagne",
+       "tone": "col-esp"
+      },
+      {
+       "id": "ind",
+       "label": "Indépendant",
+       "tone": "col-ind"
+      }
+     ],
+     "columns": 3,
+     "splitLabel": "Partagé entre deux puissances",
+     "zones": [
+      {
+       "name": "AOF",
+       "isos": [
+        "SEN",
+        "MLI",
+        "BFA",
+        "NER",
+        "GIN",
+        "CIV",
+        "BEN",
+        "MRT"
+       ],
+       "at": [
+        254.0,
+        239.6
+       ],
+       "size": 28
+      },
+      {
+       "name": "AEF",
+       "isos": [
+        "GAB",
+        "COG",
+        "CAF",
+        "TCD"
+       ],
+       "at": [
+        569.6,
+        253.7
+       ],
+       "size": 28
+      },
+      {
+       "name": "Algérie",
+       "isos": [
+        "DZA"
+       ],
+       "at": [
+        373.6,
+        132.8
+       ]
+      },
+      {
+       "name": "Tunisie",
+       "isos": [
+        "TUN"
+       ],
+       "at": [
+        474,
+        40
+       ],
+       "anchor": "start",
+       "leader": [
+        452,
+        52
+       ]
+      },
+      {
+       "name": "Maroc",
+       "isos": [
+        "MAR"
+       ],
+       "at": [
+        258,
+        112
+       ]
+      },
+      {
+       "name": "Madagascar",
+       "isos": [
+        "MDG"
+       ],
+       "at": [
+        945,
+        700
+       ],
+       "anchor": "start"
+      },
+      {
+       "name": "Côte française des Somalis",
+       "isos": [
+        "DJI"
+       ],
+       "at": [
+        842.1,
+        325.1
+       ],
+       "label": false
+      },
+      {
+       "name": "Égypte",
+       "isos": [
+        "EGY"
+       ],
+       "at": [
+        687.5,
+        146.7
+       ]
+      },
+      {
+       "name": "Soudan\nanglo-égyptien",
+       "isos": [
+        "SDN",
+        "SDS"
+       ],
+       "at": [
+        698.4,
+        273.9
+       ]
+      },
+      {
+       "name": "Afrique orientale\nbritannique",
+       "isos": [
+        "KEN"
+       ],
+       "at": [
+        878,
+        478
+       ],
+       "anchor": "start",
+       "leader": [
+        820,
+        470
+       ]
+      },
+      {
+       "name": "Ouganda",
+       "isos": [
+        "UGA"
+       ],
+       "at": [
+        732.5,
+        437.8
+       ],
+       "label": false
+      },
+      {
+       "name": "Union\nsud-africaine",
+       "isos": [
+        "ZAF"
+       ],
+       "at": [
+        628.5,
+        820.9
+       ]
+      },
+      {
+       "name": "Rhodésie",
+       "isos": [
+        "ZWE",
+        "ZMB"
+       ],
+       "at": [
+        655,
+        628
+       ]
+      },
+      {
+       "name": "Nyassaland",
+       "isos": [
+        "MWI"
+       ],
+       "at": [
+        741.0,
+        622.7
+       ],
+       "label": false
+      },
+      {
+       "name": "Bechuanaland",
+       "isos": [
+        "BWA"
+       ],
+       "at": [
+        626.1,
+        726.5
+       ],
+       "label": false
+      },
+      {
+       "name": "Nigeria",
+       "isos": [
+        "NGA"
+       ],
+       "at": [
+        423.3,
+        349.5
+       ]
+      },
+      {
+       "name": "Gold Coast",
+       "isos": [
+        "GHA"
+       ],
+       "at": [
+        300,
+        420
+       ],
+       "anchor": "middle",
+       "leader": [
+        318,
+        392
+       ]
+      },
+      {
+       "name": "Sierra Leone",
+       "isos": [
+        "SLE"
+       ],
+       "at": [
+        168,
+        378
+       ],
+       "anchor": "end",
+       "leader": [
+        192,
+        360
+       ]
+      },
+      {
+       "name": "Gambie",
+       "isos": [
+        "GMB"
+       ],
+       "at": [
+        136,
+        278
+       ],
+       "anchor": "end",
+       "leader": [
+        150,
+        297
+       ]
+      },
+      {
+       "name": "Somaliland",
+       "isos": [
+        "SOL"
+       ],
+       "at": [
+        925,
+        318
+       ],
+       "anchor": "middle"
+      },
+      {
+       "name": "Basutoland",
+       "isos": [
+        "LSO"
+       ],
+       "at": [
+        678.0,
+        814.9
+       ],
+       "label": false
+      },
+      {
+       "name": "Swaziland",
+       "isos": [
+        "SWZ"
+       ],
+       "at": [
+        713.7,
+        780.0
+       ],
+       "label": false
+      },
+      {
+       "name": "Afrique orientale\nallemande",
+       "isos": [
+        "TZA",
+        "RWA",
+        "BDI"
+       ],
+       "at": [
+        872,
+        560
+       ],
+       "anchor": "start",
+       "leader": [
+        800,
+        545
+       ]
+      },
+      {
+       "name": "Kamerun",
+       "isos": [
+        "CMR"
+       ],
+       "at": [
+        485.2,
+        407.4
+       ]
+      },
+      {
+       "name": "Togo",
+       "isos": [
+        "TGO"
+       ],
+       "at": [
+        375,
+        450
+       ],
+       "anchor": "middle",
+       "leader": [
+        350,
+        385
+       ]
+      },
+      {
+       "name": "Sud-Ouest\nafricain\nallemand",
+       "isos": [
+        "NAM"
+       ],
+       "at": [
+        541.2,
+        709.3
+       ]
+      },
+      {
+       "name": "Congo belge",
+       "isos": [
+        "COD"
+       ],
+       "at": [
+        615.0,
+        483.8
+       ]
+      },
+      {
+       "name": "Angola",
+       "isos": [
+        "AGO"
+       ],
+       "at": [
+        530,
+        598
+       ]
+      },
+      {
+       "name": "Mozambique",
+       "isos": [
+        "MOZ"
+       ],
+       "at": [
+        748,
+        802
+       ],
+       "anchor": "start",
+       "leader": [
+        742,
+        712
+       ]
+      },
+      {
+       "name": "Guinée\nportugaise",
+       "isos": [
+        "GNB"
+       ],
+       "at": [
+        146,
+        330
+       ],
+       "anchor": "end",
+       "leader": [
+        160,
+        318
+       ]
+      },
+      {
+       "name": "Libye",
+       "isos": [
+        "LBY"
+       ],
+       "at": [
+        583.0,
+        148.7
+       ]
+      },
+      {
+       "name": "Érythrée",
+       "isos": [
+        "ERI"
+       ],
+       "at": [
+        812,
+        248
+       ],
+       "anchor": "start"
+      },
+      {
+       "name": "Somalie\nitalienne",
+       "isos": [
+        "SOM"
+       ],
+       "at": [
+        925,
+        405
+       ],
+       "anchor": "start"
+      },
+      {
+       "name": "Sahara\nespagnol",
+       "isos": [
+        "SAH"
+       ],
+       "at": [
+        128,
+        205
+       ],
+       "anchor": "end"
+      },
+      {
+       "name": "Guinée\nespagnole",
+       "isos": [
+        "GNQ"
+       ],
+       "at": [
+        440,
+        488
+       ],
+       "anchor": "middle",
+       "leader": [
+        455,
+        446
+       ]
+      },
+      {
+       "name": "Éthiopie",
+       "isos": [
+        "ETH"
+       ],
+       "at": [
+        797.1,
+        359.5
+       ]
+      },
+      {
+       "name": "Liberia",
+       "isos": [
+        "LBR"
+       ],
+       "at": [
+        200,
+        422
+       ],
+       "anchor": "end",
+       "leader": [
+        214,
+        384
+       ]
+      }
+     ]
+    },
+    "caption": {
+     "what": "puissance qui contrôle chaque territoire, sur les frontières actuelles en pointillé ; contours et noms des territoires de 1914",
+     "when": "juillet 1914, avant la guerre",
+     "source": "démonstration, à vérifier ; fond Natural Earth"
+    }
+   },
+   "demo": "À vérifier, non publiable",
+   "provenance": "Attribution par pays actuel établie pour la démonstration ; rayures pour le Maroc (France, Espagne) et la Tanzanie (Allemagne, Royaume-Uni à Zanzibar)."
+  },
+  {
+   "id": "atlas-independances",
+   "type": "map",
+   "theme": "nuit",
+   "kicker": "L'Afrique à travers le temps",
+   "timeline": {
+    "steps": [
+     "1960",
+     "1914",
+     "1880",
+     "1750",
+     "1550",
+     "1350",
+     "1000",
+     "0",
+     "−1500"
+    ],
+    "current": 0,
+    "from": "1960",
+    "to": "1500 av. J.-C."
+   },
+   "title": "Les indépendances",
+   "map": {
+    "dataRef": "Cartes/afrique.json",
+    "borders": "dotted",
+    "view": [
+     -60.0,
+     -16.2,
+     1200.0,
+     1500.0
+    ],
+    "dimOutside": true,
+    "choropleth": {
+     "values": {
+      "LBR": 1847,
+      "ZAF": 1910,
+      "EGY": 1922,
+      "LBY": 1951,
+      "SDN": 1956,
+      "MAR": 1956,
+      "TUN": 1956,
+      "GHA": 1957,
+      "GIN": 1958,
+      "CMR": 1960,
+      "SEN": 1960,
+      "TGO": 1960,
+      "MLI": 1960,
+      "MDG": 1960,
+      "COD": 1960,
+      "SOM": 1960,
+      "SOL": 1960,
+      "BEN": 1960,
+      "NER": 1960,
+      "BFA": 1960,
+      "CIV": 1960,
+      "TCD": 1960,
+      "CAF": 1960,
+      "COG": 1960,
+      "GAB": 1960,
+      "NGA": 1960,
+      "MRT": 1960,
+      "SLE": 1961,
+      "TZA": 1961,
+      "RWA": 1962,
+      "BDI": 1962,
+      "DZA": 1962,
+      "UGA": 1962,
+      "KEN": 1963,
+      "MWI": 1964,
+      "ZMB": 1964,
+      "GMB": 1965,
+      "BWA": 1966,
+      "LSO": 1966,
+      "SWZ": 1968,
+      "GNQ": 1968,
+      "GNB": 1973,
+      "MOZ": 1975,
+      "AGO": 1975,
+      "CPV": 1975,
+      "COM": 1975,
+      "STP": 1975,
+      "DJI": 1977,
+      "ZWE": 1980,
+      "NAM": 1990,
+      "ERI": 1993,
+      "SDS": 2011
+     },
+     "classes": [
+      {
+       "max": 1950,
+       "label": "Avant 1950",
+       "tone": "seq-1"
+      },
+      {
+       "min": 1950,
+       "max": 1960,
+       "label": "1950 à 1959",
+       "tone": "seq-2"
+      },
+      {
+       "min": 1960,
+       "max": 1970,
+       "label": "1960 à 1969",
+       "tone": "seq-3"
+      },
+      {
+       "min": 1970,
+       "label": "1970 à 2011",
+       "tone": "seq-4"
+      }
+     ],
+     "legendTitle": "Année de l'indépendance"
+    },
+    "marks": [
+     {
+      "iso": "ETH",
+      "kind": "never-colonised",
+      "name": "Éthiopie"
+     },
+     {
+      "iso": "LBR",
+      "kind": "never-colonised",
+      "name": "Liberia"
+     },
+     {
+      "iso": "SAH",
+      "kind": "not-decolonised",
+      "legend": "Sahara occidental, non décolonisé"
+     }
+    ],
+    "caption": {
+     "what": "année de l'indépendance de chaque État actuel",
+     "when": "1847 à 2011",
+     "source": "démonstration, à vérifier ; fond Natural Earth"
+    }
+   },
+   "demo": "Dates à vérifier, non publiable",
+   "provenance": "Années de démonstration ; Liberia 1847, Afrique du Sud 1910 et Égypte 1922 sont des choix discutables, à trancher par la recherche."
+  },
+  {
+   "id": "atlas-1500",
+   "type": "map",
+   "theme": "nuit",
+   "kicker": "L'Afrique à travers le temps",
+   "timeline": {
+    "steps": [
+     "1960",
+     "1914",
+     "1880",
+     "1750",
+     "1550",
+     "1350",
+     "1000",
+     "0",
+     "−1500"
+    ],
+    "current": 8,
+    "from": "1960",
+    "to": "1500 av. J.-C."
+   },
+   "title": "L'Afrique vers 1500 av. J.-C.",
+   "map": {
+    "dataRef": "Cartes/afrique.json",
+    "borders": "none",
+    "view": [
+     -168.1,
+     -15.1,
+     1136.8,
+     1421.1
+    ],
+    "atlas": {
+     "entries": [
+      {
+       "name": "Égypte (Nouvel Empire)",
+       "region": "nord",
+       "kind": "state",
+       "x": 727.8,
+       "y": 147.6,
+       "zone": {
+        "points": [
+         [
+          691.2,
+          79.2
+         ],
+         [
+          724.8,
+          80.4
+         ],
+         [
+          730.8,
+          108.0
+         ],
+         [
+          732.0,
+          144.0
+         ],
+         [
+          735.6,
+          172.8
+         ],
+         [
+          722.4,
+          196.8
+         ],
+         [
+          706.8,
+          194.4
+         ],
+         [
+          708.0,
+          163.2
+         ],
+         [
+          703.2,
+          129.6
+         ],
+         [
+          694.8,
+          100.8
+         ]
+        ]
+       }
+      },
+      {
+       "name": "Kerma (Koush)",
+       "region": "est",
+       "kind": "state",
+       "x": 700.8,
+       "y": 220.8,
+       "zone": {
+        "cx": 708.0,
+        "cy": 220.8,
+        "rx": 15.6,
+        "ry": 22.8,
+        "rot": 15
+       }
+      },
+      {
+       "name": "Pount",
+       "region": "est",
+       "kind": "state",
+       "uncertain": true,
+       "x": 816,
+       "y": 276,
+       "zone": {
+        "cx": 810.0,
+        "cy": 288.0,
+        "rx": 36.0,
+        "ry": 31.2
+       }
+      },
+      {
+       "name": "Dhar Tichitt",
+       "region": "ouest",
+       "kind": "site",
+       "x": 222.0,
+       "y": 235.2,
+       "zone": {
+        "cx": 224.4,
+        "cy": 232.8,
+        "rx": 24.0,
+        "ry": 14.4
+       }
+      },
+      {
+       "name": "Kintampo",
+       "region": "ouest",
+       "kind": "site",
+       "x": 315.6,
+       "y": 359.4,
+       "zone": {
+        "cx": 315.6,
+        "cy": 358.8,
+        "rx": 21.6,
+        "ry": 14.4
+       }
+      }
+     ]
+    },
+    "caption": {
+     "what": "États et cultures archéologiques connus pour la période, en zones approximatives ; Pount n'est pas localisé avec certitude",
+     "when": "vers 1500 av. J.-C.",
+     "source": "démonstration, données de test ; fond Natural Earth"
+    }
+   },
+   "demo": "Entrées illustratives, non publiable",
+   "provenance": "Entrées de démonstration ; dates et lieux approximatifs."
+  },
+  {
+   "id": "atlas-1880-parchemin",
+   "type": "map",
+   "theme": "parchemin",
+   "kicker": "L'Afrique à travers le temps",
+   "timeline": {
+    "steps": [
+     "1960",
+     "1914",
+     "1880",
+     "1750",
+     "1550",
+     "1350",
+     "1000",
+     "0",
+     "−1500"
+    ],
+    "current": 2,
+    "from": "1960",
+    "to": "1500 av. J.-C."
+   },
+   "title": "L'Afrique en 1880",
+   "map": {
+    "dataRef": "Cartes/afrique.json",
+    "borders": "none",
+    "view": [
+     -168.1,
+     -15.1,
+     1136.8,
+     1421.1
+    ],
+    "atlas": {
+     "entries": [
+      {
+       "name": "Maroc",
+       "x": 276.0,
+       "y": 48.0,
+       "region": "nord",
+       "kind": "state",
+       "zone": {
+        "cx": 261.0,
+        "cy": 72.0,
+        "rx": 57.0,
+        "ry": 42.0,
+        "rot": -30
+       }
+      },
+      {
+       "name": "Tunis",
+       "x": 458.4,
+       "y": 14.4,
+       "region": "nord",
+       "kind": "state",
+       "zone": {
+        "cx": 451.2,
+        "cy": 48.0,
+        "rx": 19.2,
+        "ry": 36.0
+       }
+      },
+      {
+       "name": "Tripoli",
+       "x": 494.4,
+       "y": 61.2,
+       "region": "nord",
+       "kind": "state",
+       "zone": {
+        "cx": 546.0,
+        "cy": 111.0,
+        "rx": 90.0,
+        "ry": 45.0
+       }
+      },
+      {
+       "name": "Égypte",
+       "x": 710.4,
+       "y": 96.0,
+       "region": "nord",
+       "kind": "state",
+       "zone": {
+        "cx": 696.0,
+        "cy": 135.0,
+        "rx": 60.0,
+        "ry": 57.0
+       }
+      },
+      {
+       "name": "Fouta-Djalon",
+       "x": 199.2,
+       "y": 328.8,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 193.2,
+        "cy": 324.0,
+        "rx": 19.2,
+        "ry": 14.4
+       }
+      },
+      {
+       "name": "Ségou",
+       "x": 260.8,
+       "y": 294.7,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 246.0,
+        "cy": 285.0,
+        "rx": 48.0,
+        "ry": 21.0,
+        "rot": -8
+       }
+      },
+      {
+       "name": "Wassoulou",
+       "x": 229.2,
+       "y": 326.4,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 231.0,
+        "cy": 334.2,
+        "rx": 27.0,
+        "ry": 22.2
+       }
+      },
+      {
+       "name": "Kénédougou",
+       "x": 268.0,
+       "y": 320.2,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 270.6,
+        "cy": 322.8,
+        "rx": 10.2,
+        "ry": 9.6
+       }
+      },
+      {
+       "name": "Kong",
+       "x": 280.8,
+       "y": 346.2,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 283.8,
+        "cy": 347.4,
+        "rx": 11.4,
+        "ry": 10.2
+       }
+      },
+      {
+       "name": "Mossi",
+       "x": 317.6,
+       "y": 307.6,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 319.8,
+        "cy": 304.2,
+        "rx": 19.8,
+        "ry": 16.2
+       }
+      },
+      {
+       "name": "Asante",
+       "x": 316.6,
+       "y": 375.7,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 316.2,
+        "cy": 374.4,
+        "rx": 16.2,
+        "ry": 16.8
+       }
+      },
+      {
+       "name": "Danxomè (Dahomey)",
+       "x": 359.9,
+       "y": 369.8,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 362.4,
+        "cy": 369.0,
+        "rx": 7.2,
+        "ry": 11.4
+       }
+      },
+      {
+       "name": "Sokoto",
+       "x": 398.9,
+       "y": 299.3,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 432.0,
+        "cy": 319.8,
+        "rx": 66.0,
+        "ry": 34.2
+       }
+      },
+      {
+       "name": "Borno",
+       "x": 498.7,
+       "y": 301.0,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 495.0,
+        "cy": 307.2,
+        "rx": 23.4,
+        "ry": 21.6
+       }
+      },
+      {
+       "name": "Ouaddaï",
+       "x": 586.0,
+       "y": 290.0,
+       "region": "centre",
+       "kind": "state",
+       "zone": {
+        "cx": 585.0,
+        "cy": 294.0,
+        "rx": 33.0,
+        "ry": 30.0
+       }
+      },
+      {
+       "name": "Baguirmi",
+       "x": 530.0,
+       "y": 319.2,
+       "region": "centre",
+       "kind": "state",
+       "zone": {
+        "cx": 539.4,
+        "cy": 321.0,
+        "rx": 17.4,
+        "ry": 12.6
+       }
+      },
+      {
+       "name": "Darfour",
+       "x": 640.2,
+       "y": 292.4,
+       "region": "est",
+       "kind": "state",
+       "zone": {
+        "cx": 633.0,
+        "cy": 303.0,
+        "rx": 33.0,
+        "ry": 33.0
+       }
+      },
+      {
+       "name": "Kongo",
+       "x": 506.9,
+       "y": 531.2,
+       "region": "centre",
+       "kind": "state",
+       "zone": {
+        "cx": 511.8,
+        "cy": 528.0,
+        "rx": 19.8,
+        "ry": 14.4
+       }
+      },
+      {
+       "name": "Lunda",
+       "x": 606.0,
+       "y": 558.0,
+       "region": "centre",
+       "kind": "state",
+       "zone": {
+        "cx": 594.0,
+        "cy": 559.2,
+        "rx": 48.0,
+        "ry": 31.2,
+        "rot": -8
+       }
+      },
+      {
+       "name": "Luba",
+       "x": 643.2,
+       "y": 543.6,
+       "region": "centre",
+       "kind": "state",
+       "zone": {
+        "cx": 645.6,
+        "cy": 542.4,
+        "rx": 24.0,
+        "ry": 24.0
+       }
+      },
+      {
+       "name": "Kuba",
+       "x": 595.2,
+       "y": 514.8,
+       "region": "centre",
+       "kind": "state",
+       "zone": {
+        "cx": 600.0,
+        "cy": 513.6,
+        "rx": 12.0,
+        "ry": 9.6
+       }
+      },
+      {
+       "name": "Kazembe",
+       "x": 681.6,
+       "y": 571.2,
+       "region": "centre",
+       "kind": "state",
+       "zone": {
+        "cx": 682.8,
+        "cy": 570.6,
+        "rx": 10.8,
+        "ry": 15.0
+       }
+      },
+      {
+       "name": "Éthiopie",
+       "x": 810.0,
+       "y": 294.0,
+       "region": "est",
+       "kind": "state",
+       "zone": {
+        "cx": 801.0,
+        "cy": 333.0,
+        "rx": 51.0,
+        "ry": 57.0
+       }
+      },
+      {
+       "name": "Buganda",
+       "x": 726.8,
+       "y": 452.4,
+       "region": "est",
+       "kind": "state",
+       "zone": {
+        "cx": 723.6,
+        "cy": 452.4,
+        "rx": 12.0,
+        "ry": 10.8
+       }
+      },
+      {
+       "name": "Bunyoro",
+       "x": 712.2,
+       "y": 438.8,
+       "region": "est",
+       "kind": "state",
+       "zone": {
+        "cx": 711.0,
+        "cy": 435.6,
+        "rx": 11.4,
+        "ry": 10.8
+       }
+      },
+      {
+       "name": "Rwanda",
+       "x": 693.0,
+       "y": 484.2,
+       "region": "est",
+       "kind": "state",
+       "zone": {
+        "cx": 695.4,
+        "cy": 479.4,
+        "rx": 9.0,
+        "ry": 10.2
+       }
+      },
+      {
+       "name": "Burundi",
+       "x": 691.2,
+       "y": 495.2,
+       "region": "est",
+       "kind": "state",
+       "zone": {
+        "cx": 695.4,
+        "cy": 498.6,
+        "rx": 7.8,
+        "ry": 9.0
+       }
+      },
+      {
+       "name": "Zanzibar",
+       "x": 806.4,
+       "y": 529.9,
+       "region": "est",
+       "kind": "state",
+       "zone": {
+        "cx": 808.8,
+        "cy": 531.0,
+        "rx": 9.6,
+        "ry": 45.0,
+        "rot": 12
+       }
+      },
+      {
+       "name": "Merina",
+       "x": 906.0,
+       "y": 682.8,
+       "region": "sud",
+       "kind": "state",
+       "zone": {
+        "cx": 900.0,
+        "cy": 684.0,
+        "rx": 30.0,
+        "ry": 54.0,
+        "rot": 16
+       }
+      },
+      {
+       "name": "Zoulou",
+       "x": 712.8,
+       "y": 795.6,
+       "region": "sud",
+       "kind": "state",
+       "zone": {
+        "cx": 712.2,
+        "cy": 794.4,
+        "rx": 13.8,
+        "ry": 14.4
+       }
+      },
+      {
+       "name": "Ndebele",
+       "x": 679.0,
+       "y": 697.8,
+       "region": "sud",
+       "kind": "state",
+       "zone": {
+        "cx": 678.0,
+        "cy": 691.2,
+        "rx": 30.0,
+        "ry": 25.2
+       }
+      },
+      {
+       "name": "Lozi",
+       "x": 612.0,
+       "y": 638.4,
+       "region": "sud",
+       "kind": "state",
+       "zone": {
+        "cx": 616.8,
+        "cy": 640.8,
+        "rx": 28.8,
+        "ry": 28.8
+       }
+      },
+      {
+       "name": "Lesotho",
+       "x": 670.8,
+       "y": 808.8,
+       "region": "sud",
+       "kind": "state",
+       "zone": {
+        "cx": 675.0,
+        "cy": 811.2,
+        "rx": 12.6,
+        "ry": 10.8
+       }
+      },
+      {
+       "name": "Swazi",
+       "x": 710.4,
+       "y": 774.0,
+       "region": "sud",
+       "kind": "state",
+       "zone": {
+        "cx": 714.6,
+        "cy": 774.0,
+        "rx": 6.6,
+        "ry": 8.4
+       }
+      },
+      {
+       "name": "Gaza",
+       "x": 742.8,
+       "y": 752.4,
+       "region": "sud",
+       "kind": "state",
+       "zone": {
+        "cx": 735.0,
+        "cy": 730.8,
+        "rx": 24.6,
+        "ry": 37.2
+       }
+      },
+      {
+       "name": "Nuer",
+       "x": 714.0,
+       "y": 354.0,
+       "region": "est",
+       "kind": "society",
+       "zone": {
+        "cx": 714.0,
+        "cy": 352.2,
+        "rx": 18.0,
+        "ry": 13.8
+       }
+      },
+      {
+       "name": "Tiv",
+       "x": 444.0,
+       "y": 369.6,
+       "region": "ouest",
+       "kind": "society",
+       "zone": {
+        "cx": 444.6,
+        "cy": 369.0,
+        "rx": 9.0,
+        "ry": 7.8
+       }
+      },
+      {
+       "name": "Lobi",
+       "x": 297.6,
+       "y": 336.0,
+       "region": "ouest",
+       "kind": "society",
+       "zone": {
+        "cx": 298.8,
+        "cy": 336.0,
+        "rx": 6.0,
+        "ry": 7.2
+       }
+      },
+      {
+       "name": "Fang",
+       "x": 468.0,
+       "y": 438.0,
+       "region": "centre",
+       "kind": "society",
+       "zone": {
+        "cx": 474.0,
+        "cy": 442.8,
+        "rx": 22.8,
+        "ry": 22.8
+       }
+      },
+      {
+       "name": "Kikuyu",
+       "x": 780,
+       "y": 463.2,
+       "region": "est",
+       "kind": "society",
+       "zone": {
+        "cx": 780.0,
+        "cy": 464.4,
+        "rx": 7.2,
+        "ry": 10.8
+       }
+      }
+     ],
+     "keys": [
+      {
+       "region": "ouest",
+       "x": 20,
+       "y": 96,
+       "width": 250
+      },
+      {
+       "region": "centre",
+       "x": 20,
+       "y": 464,
+       "width": 250
+      },
+      {
+       "region": "est",
+       "x": 20,
+       "y": 622,
+       "width": 250
+      },
+      {
+       "region": "sud",
+       "x": 20,
+       "y": 810,
+       "width": 250
+      }
+     ]
+    },
+    "caption": {
+     "what": "États et sociétés sans roi vers 1880, en zones approximatives, sans frontières tracées",
+     "when": "vers 1880",
+     "source": "démonstration, données de test ; fond Natural Earth"
+    }
+   },
+   "demo": "Démo, non publiable",
+   "provenance": "Entrées et coordonnées de prototype-densite-1880.cards.json (données de test)."
+  },
+  {
+   "id": "atlas-capacite-45",
+   "type": "map",
+   "theme": "nuit",
+   "kicker": "L'Afrique à travers le temps",
+   "timeline": {
+    "steps": [
+     "1960",
+     "1914",
+     "1880",
+     "1750",
+     "1550",
+     "1350",
+     "1000",
+     "0",
+     "−1500"
+    ],
+    "current": 2,
+    "from": "1960",
+    "to": "1500 av. J.-C."
+   },
+   "title": "Test de capacité : 45 entrées",
+   "map": {
+    "dataRef": "Cartes/afrique.json",
+    "borders": "none",
+    "view": [
+     -168.1,
+     -15.1,
+     1136.8,
+     1421.1
+    ],
+    "atlas": {
+     "entries": [
+      {
+       "name": "Maroc",
+       "x": 276.0,
+       "y": 48.0,
+       "region": "nord",
+       "kind": "state",
+       "inline": true
+      },
+      {
+       "name": "Tunis",
+       "x": 458.4,
+       "y": 14.4,
+       "region": "nord",
+       "kind": "state",
+       "inline": true
+      },
+      {
+       "name": "Tripoli",
+       "x": 494.4,
+       "y": 61.2,
+       "region": "nord",
+       "kind": "state",
+       "inline": true
+      },
+      {
+       "name": "Égypte",
+       "x": 710.4,
+       "y": 96.0,
+       "region": "nord",
+       "kind": "state",
+       "inline": true
+      },
+      {
+       "name": "Fouta-Djalon",
+       "x": 199.2,
+       "y": 328.8,
+       "region": "ouest",
+       "kind": "state"
+      },
+      {
+       "name": "Ségou",
+       "x": 260.8,
+       "y": 294.7,
+       "region": "ouest",
+       "kind": "state"
+      },
+      {
+       "name": "Wassoulou",
+       "x": 229.2,
+       "y": 326.4,
+       "region": "ouest",
+       "kind": "state"
+      },
+      {
+       "name": "Kénédougou",
+       "x": 268.0,
+       "y": 320.2,
+       "region": "ouest",
+       "kind": "state"
+      },
+      {
+       "name": "Kong",
+       "x": 280.8,
+       "y": 346.2,
+       "region": "ouest",
+       "kind": "state"
+      },
+      {
+       "name": "Mossi",
+       "x": 317.6,
+       "y": 307.6,
+       "region": "ouest",
+       "kind": "state"
+      },
+      {
+       "name": "Asante",
+       "x": 316.6,
+       "y": 375.7,
+       "region": "ouest",
+       "kind": "state"
+      },
+      {
+       "name": "Danxomè (Dahomey)",
+       "x": 359.9,
+       "y": 369.8,
+       "region": "ouest",
+       "kind": "state"
+      },
+      {
+       "name": "Sokoto",
+       "x": 398.9,
+       "y": 299.3,
+       "region": "ouest",
+       "kind": "state"
+      },
+      {
+       "name": "Borno",
+       "x": 498.7,
+       "y": 301.0,
+       "region": "ouest",
+       "kind": "state"
+      },
+      {
+       "name": "Tiv",
+       "x": 444.0,
+       "y": 369.6,
+       "region": "ouest",
+       "kind": "society"
+      },
+      {
+       "name": "Lobi",
+       "x": 297.6,
+       "y": 336.0,
+       "region": "ouest",
+       "kind": "society"
+      },
+      {
+       "name": "Essai A",
+       "region": "ouest",
+       "kind": "state",
+       "x": 232,
+       "y": 292
+      },
+      {
+       "name": "Essai B",
+       "region": "ouest",
+       "kind": "state",
+       "x": 300,
+       "y": 268
+      },
+      {
+       "name": "Essai C",
+       "region": "ouest",
+       "kind": "state",
+       "x": 345,
+       "y": 330
+      },
+      {
+       "name": "Ouaddaï",
+       "x": 586.0,
+       "y": 290.0,
+       "region": "centre",
+       "kind": "state"
+      },
+      {
+       "name": "Baguirmi",
+       "x": 530.0,
+       "y": 319.2,
+       "region": "centre",
+       "kind": "state"
+      },
+      {
+       "name": "Kongo",
+       "x": 506.9,
+       "y": 531.2,
+       "region": "centre",
+       "kind": "state"
+      },
+      {
+       "name": "Lunda",
+       "x": 606.0,
+       "y": 558.0,
+       "region": "centre",
+       "kind": "state"
+      },
+      {
+       "name": "Luba",
+       "x": 643.2,
+       "y": 543.6,
+       "region": "centre",
+       "kind": "state"
+      },
+      {
+       "name": "Kuba",
+       "x": 595.2,
+       "y": 514.8,
+       "region": "centre",
+       "kind": "state"
+      },
+      {
+       "name": "Kazembe",
+       "x": 681.6,
+       "y": 571.2,
+       "region": "centre",
+       "kind": "state"
+      },
+      {
+       "name": "Fang",
+       "x": 468.0,
+       "y": 438.0,
+       "region": "centre",
+       "kind": "society"
+      },
+      {
+       "name": "Essai D",
+       "region": "centre",
+       "kind": "state",
+       "x": 560,
+       "y": 470
+      },
+      {
+       "name": "Darfour",
+       "x": 640.2,
+       "y": 292.4,
+       "region": "est",
+       "kind": "state"
+      },
+      {
+       "name": "Éthiopie",
+       "x": 810.0,
+       "y": 294.0,
+       "region": "est",
+       "kind": "state"
+      },
+      {
+       "name": "Buganda",
+       "x": 726.8,
+       "y": 452.4,
+       "region": "est",
+       "kind": "state"
+      },
+      {
+       "name": "Bunyoro",
+       "x": 712.2,
+       "y": 438.8,
+       "region": "est",
+       "kind": "state"
+      },
+      {
+       "name": "Rwanda",
+       "x": 693.0,
+       "y": 484.2,
+       "region": "est",
+       "kind": "state"
+      },
+      {
+       "name": "Burundi",
+       "x": 691.2,
+       "y": 495.2,
+       "region": "est",
+       "kind": "state"
+      },
+      {
+       "name": "Zanzibar",
+       "x": 806.4,
+       "y": 529.9,
+       "region": "est",
+       "kind": "state"
+      },
+      {
+       "name": "Nuer",
+       "x": 714.0,
+       "y": 354.0,
+       "region": "est",
+       "kind": "society"
+      },
+      {
+       "name": "Kikuyu",
+       "x": 780,
+       "y": 463.2,
+       "region": "est",
+       "kind": "society"
+      },
+      {
+       "name": "Essai E",
+       "region": "est",
+       "kind": "state",
+       "x": 760,
+       "y": 410
+      },
+      {
+       "name": "Merina",
+       "x": 906.0,
+       "y": 682.8,
+       "region": "sud",
+       "kind": "state",
+       "inline": true
+      },
+      {
+       "name": "Zoulou",
+       "x": 712.8,
+       "y": 795.6,
+       "region": "sud",
+       "kind": "state"
+      },
+      {
+       "name": "Ndebele",
+       "x": 679.0,
+       "y": 697.8,
+       "region": "sud",
+       "kind": "state"
+      },
+      {
+       "name": "Lozi",
+       "x": 612.0,
+       "y": 638.4,
+       "region": "sud",
+       "kind": "state"
+      },
+      {
+       "name": "Lesotho",
+       "x": 670.8,
+       "y": 808.8,
+       "region": "sud",
+       "kind": "state"
+      },
+      {
+       "name": "Swazi",
+       "x": 710.4,
+       "y": 774.0,
+       "region": "sud",
+       "kind": "state"
+      },
+      {
+       "name": "Gaza",
+       "x": 742.8,
+       "y": 752.4,
+       "region": "sud",
+       "kind": "state"
+      }
+     ],
+     "keys": [
+      {
+       "region": "ouest",
+       "x": 20,
+       "y": 96,
+       "width": 250
+      },
+      {
+       "region": "centre",
+       "x": 286,
+       "y": 410,
+       "width": 196
+      },
+      {
+       "region": "est",
+       "x": 20,
+       "y": 588,
+       "width": 250
+      },
+      {
+       "region": "sud",
+       "x": 286,
+       "y": 716,
+       "width": 340,
+       "columns": 2
+      }
+     ],
+     "keyRows": "compact"
+    },
+    "caption": {
+     "what": "États et sociétés sans roi vers 1880, placés à leur capitale ou à leur centre, sans frontières tracées",
+     "when": "vers 1880",
+     "source": "démonstration, données de test ; fond Natural Earth"
+    }
+   },
+   "demo": "Test, noms factices",
+   "provenance": "Les 40 entrées du prototype 1880 et cinq entrées factices (Essai A à E), en points sans zone, pour vérifier la capacité des listes : 45 entrées dont 15 à l'Ouest."
+  },
+  {
+   "type": "map",
+   "theme": "nuit",
+   "kicker": "Prototype",
+   "title": "L'Afrique en 1880",
+   "demo": "Cas de refus, non publiable",
+   "id": "atlas-proto-collisions",
+   "folio": "—",
+   "map": {
+    "dataRef": "Cartes/afrique.json",
+    "borders": "none",
+    "view": [
+     60,
+     0,
+     960,
+     1200
+    ],
+    "places": [
+     {
+      "x": 276.0,
+      "y": 48.0,
+      "name": "Maroc"
+     },
+     {
+      "x": 458.4,
+      "y": 14.4,
+      "name": "Tunis"
+     },
+     {
+      "x": 494.4,
+      "y": 61.2,
+      "name": "Tripoli"
+     },
+     {
+      "x": 710.4,
+      "y": 96.0,
+      "name": "Égypte"
+     },
+     {
+      "x": 199.2,
+      "y": 328.8,
+      "name": "Fouta-Djalon"
+     },
+     {
+      "x": 260.8,
+      "y": 294.7,
+      "name": "Ségou"
+     },
+     {
+      "x": 229.2,
+      "y": 326.4,
+      "name": "Wassoulou"
+     },
+     {
+      "x": 268.0,
+      "y": 320.2,
+      "name": "Kénédougou"
+     },
+     {
+      "x": 280.8,
+      "y": 346.2,
+      "name": "Kong"
+     },
+     {
+      "x": 317.6,
+      "y": 307.6,
+      "name": "Mossi"
+     },
+     {
+      "x": 316.6,
+      "y": 375.7,
+      "name": "Asante"
+     },
+     {
+      "x": 359.9,
+      "y": 369.8,
+      "name": "Danxomè"
+     },
+     {
+      "x": 398.9,
+      "y": 299.3,
+      "name": "Sokoto"
+     },
+     {
+      "x": 498.7,
+      "y": 301.0,
+      "name": "Borno"
+     },
+     {
+      "x": 586.0,
+      "y": 290.0,
+      "name": "Ouaddaï"
+     },
+     {
+      "x": 530.0,
+      "y": 319.2,
+      "name": "Baguirmi"
+     },
+     {
+      "x": 640.2,
+      "y": 292.4,
+      "name": "Darfour"
+     },
+     {
+      "x": 506.9,
+      "y": 531.2,
+      "name": "Kongo"
+     },
+     {
+      "x": 606.0,
+      "y": 558.0,
+      "name": "Lunda"
+     },
+     {
+      "x": 643.2,
+      "y": 543.6,
+      "name": "Luba"
+     },
+     {
+      "x": 595.2,
+      "y": 514.8,
+      "name": "Kuba"
+     },
+     {
+      "x": 681.6,
+      "y": 571.2,
+      "name": "Kazembe"
+     },
+     {
+      "x": 810.0,
+      "y": 294.0,
+      "name": "Éthiopie"
+     },
+     {
+      "x": 726.8,
+      "y": 452.4,
+      "name": "Buganda"
+     },
+     {
+      "x": 712.2,
+      "y": 438.8,
+      "name": "Bunyoro"
+     },
+     {
+      "x": 693.0,
+      "y": 484.2,
+      "name": "Rwanda"
+     },
+     {
+      "x": 691.2,
+      "y": 495.2,
+      "name": "Burundi"
+     },
+     {
+      "x": 806.4,
+      "y": 529.9,
+      "name": "Zanzibar"
+     },
+     {
+      "x": 906.0,
+      "y": 682.8,
+      "name": "Merina"
+     },
+     {
+      "x": 712.8,
+      "y": 795.6,
+      "name": "Zoulou"
+     },
+     {
+      "x": 679.0,
+      "y": 697.8,
+      "name": "Ndebele"
+     },
+     {
+      "x": 612.0,
+      "y": 638.4,
+      "name": "Lozi"
+     },
+     {
+      "x": 670.8,
+      "y": 808.8,
+      "name": "Lesotho"
+     },
+     {
+      "x": 710.4,
+      "y": 774.0,
+      "name": "Swazi"
+     },
+     {
+      "x": 742.8,
+      "y": 752.4,
+      "name": "Gaza"
+     }
+    ],
+    "labels": [
+     {
+      "x": 714.0,
+      "y": 354.0,
+      "kind": "area",
+      "text": "Nuer",
+      "tone": "area-b"
+     },
+     {
+      "x": 444.0,
+      "y": 369.6,
+      "kind": "area",
+      "text": "Tiv",
+      "tone": "area-b"
+     },
+     {
+      "x": 297.6,
+      "y": 336.0,
+      "kind": "area",
+      "text": "Lobi",
+      "tone": "area-b"
+     },
+     {
+      "x": 468.0,
+      "y": 438.0,
+      "kind": "area",
+      "text": "Fang",
+      "tone": "area-b"
+     },
+     {
+      "x": 780,
+      "y": 463.2,
+      "kind": "area",
+      "text": "Kikuyu",
+      "tone": "area-b"
+     }
+    ],
+    "legend": [
+     {
+      "kind": "place",
+      "text": "État et sa capitale"
+     },
+     {
+      "kind": "area",
+      "tone": "area-b",
+      "text": "Société sans roi"
+     }
+    ],
+    "caption": {
+     "what": "prototype",
+     "when": "1880",
+     "source": "prototype"
+    }
+   },
+   "provenance": "prototype-densite-1880.cards.json (12 octobre 2026), rendu tel quel : le contrôle de collisions 1.2.0 doit le refuser."
   }
  ]
 }

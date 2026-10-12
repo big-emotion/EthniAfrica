@@ -1,0 +1,41 @@
+<!-- @dsCard group="Cartes" height=3840 subtitle="Carte d'atlas historique (1.2.0)" -->
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><style>
+html,body{margin:0;background:#0f0c09;color:#cbbba3;font-family:Andika,sans-serif}
+.pv{padding:20px 20px 28px;display:flex;flex-wrap:wrap;gap:28px 24px;align-items:flex-start}
+.pv-item{display:flex;flex-direction:column;gap:10px}
+.pv-cap{font:700 14px/18px Andika,sans-serif;color:#f3e9da;max-width:430px}
+.pv-rep{font:400 12px/16px Andika,sans-serif;color:#a8977f;max-width:430px}
+.pv-rep b{color:#e8b96a;font-weight:700}
+.pv-rep.bad b{color:#ff8a6a}
+.pv-intro{width:100%;font:400 14px/20px Andika,sans-serif;color:#cbbba3;max-width:900px;margin:0}
+</style></head><body><div class="pv" id="pv"></div>
+<script>
+(async function () {
+  var root = document.getElementById('pv');
+  try {
+    var t = await (await fetch('../../tokens.json')).json();
+    await EthniCards.installTokens(t, '../../');
+    var A = await (await fetch('../../handoff/assets.json')).json();
+    var D = await (await fetch('../../handoff/cards.sample.json')).json();
+    var R = function (n) { return A[n] ? A[n].url : '../../assets/' + n; };
+    var maps = {};
+    async function card(id) {
+      var c = JSON.parse(JSON.stringify(D.cards.find(function (x) { return x.id === id; })));
+      if (c.map && c.map.dataRef) { maps[c.map.dataRef] = maps[c.map.dataRef] || await (await fetch(R(c.map.dataRef))).json(); c.map.data = maps[c.map.dataRef]; }
+      return c;
+    }
+    var ITEMS = [{"intro": "Variante 1.2.0 de la carte géographique, pour la série « L'Afrique à travers le temps ». Positions, attributions et dates de démonstration, à remplacer par la recherche en cours."}, {"id": "atlas-1880", "caption": "Carte dense : 40 entrées en zones approximatives. Les noms sont écrits dans la zone ou à côté ; les petits États gardent un numéro et une ligne dans les listes sur l'Atlantique."}, {"id": "atlas-1880-parchemin", "caption": "Même carte, thème Parchemin : la carte et les listes ne changent pas, seul le panneau change."}, {"id": "atlas-1914", "caption": "Partage de 1914 : huit couleurs lisibles par les daltoniens, territoires de l'époque contourés et nommés (AOF, AEF, Congo belge…), frontières actuelles en pointillé."}, {"id": "atlas-independances", "caption": "Indépendances : quatre classes de dates, frontières actuelles en pointillé, Sahara occidental hachuré, anneau pour les États jamais colonisés."}, {"id": "atlas-1500", "caption": "Carte peu remplie : même cadre que la carte dense, cinq zones nommées, couleur terre rouge pour les cultures archéologiques, hachures et ° pour Pount, mal localisé."}, {"id": "atlas-capacite-45", "caption": "Test de capacité, pire cas : 45 entrées en points sans zone, dont 15 à l'Ouest, listes compactes (lignes de 27 px). C'est le plafond."}, {"id": "atlas-proto-collisions", "caption": "Le prototype du 12 octobre rendu tel quel : le nouveau contrôle compte ses collisions et refuse la carte."}, {"intro": "Lecture à 320 px : les noms se lisent en zoomant, la répartition et le repère de période se lisent d'un coup d'œil."}, {"id": "atlas-1880", "width": 320, "caption": "1880 à 320 px."}, {"id": "atlas-1914", "width": 320, "caption": "1914 à 320 px."}, {"id": "atlas-1500", "width": 320, "caption": "1500 av. J.-C. à 320 px : le point du repère est au bout de la frise."}];
+    for (var i = 0; i < ITEMS.length; i++) {
+      var it = ITEMS[i];
+      if (it.intro) { var p = document.createElement('p'); p.className = 'pv-intro'; p.textContent = it.intro; root.appendChild(p); continue; }
+      var box = document.createElement('div'); box.className = 'pv-item'; root.appendChild(box);
+      var res = await EthniCards.mount(box, await card(it.id), { width: it.width || 430, resolve: R, logo: D.logo, diagnose: !!it.diagnose });
+      var cap = document.createElement('div'); cap.className = 'pv-cap'; cap.textContent = it.caption || ''; box.appendChild(cap);
+      var r = res.report, rep = document.createElement('div'); rep.className = 'pv-rep' + (r.ok ? '' : ' bad');
+      rep.innerHTML = '<b>' + (r.ok ? 'Tient' : 'Ne tient pas') + '</b> · panneau ' + r.panelHeight + ' px sur 900' + (r.dense ? ' · corps dense 28 px' : ' · corps 32 px') + (r.titleStep ? ' · titre 72 px' : '') + (r.atlas ? ' · ' + r.atlas.entries + ' entrées, ' + r.atlas.numbered + ' numérotées' + (r.atlas.minGap != null ? ', écart minimal ' + r.atlas.minGap + ' px' : '') : '') + (r.collisions != null ? ' · ' + r.collisions + ' collision' + (r.collisions > 1 ? 's' : '') : '') + (r.warnings.length ? ' · ' + r.warnings.join(' ') : '') + ' · lu à ' + (it.width || 430) + ' px';
+      box.appendChild(rep);
+    }
+  } catch (e) { root.textContent = 'Aperçu indisponible : ' + e.message; }
+})();
+</script></body></html>
