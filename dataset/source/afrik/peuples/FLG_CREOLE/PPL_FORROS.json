@@ -124,5 +124,137 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Forro, au pluriel Forros, désigne le groupe créole de São Tomé qui descend des colons et des esclaves affranchis au XVIe siècle, et qui se nomme lui-même Forro. Au XVIe siècle, une partie de ses ancêtres était appelée filhos da terra, « enfants de la terre ». Nous présentons plus bas ce que les sources disent de l'origine de ces noms.",
+    "names": [
+      {
+        "nameText": "Forro",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un mot portugais qui veut dire « affranchi » ; on ne sait pas quand il est devenu un nom de groupe.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Forro est un mot portugais qui veut dire « affranchi » ; il désigne aussi les habitants de São Tomé et le créole qu'ils parlent, selon le dictionnaire Priberam. On ne sait pas avec certitude quand il est devenu le nom d'un groupe.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dicionário Priberam da Língua Portuguesa, article « forro »",
+                "author": "Priberam",
+                "year": null,
+                "url": "https://dicionario.priberam.org/forro",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire de la langue portugaise en ligne, article lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1875,
+              "to": 1953,
+              "label": "De l'abolition de 1875 au massacre de Batepá, 1953"
+            },
+            "era": "colonial",
+            "statement": "Le nom Forro désigne les descendants des colons blancs et des esclaves affranchis au XVIe siècle, selon l'historien Gerhard Seibert. Fiers de leur histoire de Noirs libres, ils refusent le travail des plantations, qu'ils jugent indigne d'hommes libres.",
+            "sources": [
+              {
+                "title": "São Tomé : o massacre de Batepá (1953-2023)",
+                "author": "Gerhard Seibert",
+                "year": 2023,
+                "url": "https://ces-catalog.ces.uc.pt/ficheiros2/files/BATEPA_74_GERARD_SEIBERT.pdf",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Essai publié le 2 février 2023 par le magazine portugais Setenta e Quatro. Lu le 12 octobre 2026 dans la copie mise en ligne par le Centre d'études sociales de l'université de Coimbra.",
+                "page": "p. 2"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1515,
+              "to": 1517,
+              "label": "1515 et 1517"
+            },
+            "era": "colonial",
+            "statement": "Le nom Forro n'est pas encore écrit comme nom de groupe dans les sources que nous avons lues quand, en 1515, un décret du roi Manuel Ier affranchit à São Tomé les enfants métis des colons blancs et leurs mères. Un second décret, en 1517, affranchit les esclaves venus avec les premiers colons et leurs descendants, selon l'historien José Domingos Costa.",
+            "before": true,
+            "sources": [
+              {
+                "title": "João Menino – Comerciante ou Escravo ?",
+                "author": "José Domingos Costa",
+                "year": 2012,
+                "url": "https://repositorio.iscte-iul.pt/handle/10071/3904",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21",
+                "notes": "Dans Actas do Colóquio Internacional São Tomé e Príncipe numa perspectiva interdisciplinar, diacrónica e sincrónica, Lisbonne, ISCTE-IUL et IICT, 2012, p. 13-26. Lu dans le dépôt de l'ISCTE-IUL le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Forro viendrait du mot arabe hurr, « libre », selon le dictionnaire Priberam.",
+            "hypothesisGroup": "origine du mot forro",
+            "sources": [
+              {
+                "title": "Dicionário Priberam da Língua Portuguesa, article « forro »",
+                "author": "Priberam",
+                "year": null,
+                "url": "https://dicionario.priberam.org/forro",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire de la langue portugaise en ligne, article lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Filhos da terra",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "« Enfants de la terre » : au XVIe siècle, les métis de São Tomé.",
+        "periodLabel": "XVIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1501,
+              "to": 1600,
+              "label": "XVIe siècle"
+            },
+            "era": "colonial",
+            "statement": "Le nom Filhos da terra, « enfants de la terre », désigne à São Tomé un troisième groupe de population, ni blanc ni noir : les métis nés des unions que le roi encourageait entre colons blancs et femmes africaines, souvent esclaves, selon José Domingos Costa.",
+            "sources": [
+              {
+                "title": "João Menino – Comerciante ou Escravo ?",
+                "author": "José Domingos Costa",
+                "year": 2012,
+                "url": "https://repositorio.iscte-iul.pt/handle/10071/3904",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21",
+                "notes": "Dans Actas do Colóquio Internacional São Tomé e Príncipe numa perspectiva interdisciplinar, diacrónica e sincrónica, Lisbonne, ISCTE-IUL et IICT, 2012, p. 13-26. Lu dans le dépôt de l'ISCTE-IUL le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
