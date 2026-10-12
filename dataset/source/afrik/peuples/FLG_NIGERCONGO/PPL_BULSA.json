@@ -96,5 +96,154 @@
         "source_kind": "discovery"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bulsa désigne un peuple du nord du Ghana, qui se nomme lui-même Builsa, selon un administrateur britannique en 1920. On l'a aussi appelé Kanjaga, un nom de village que le même auteur jugeait fautif. On ne sait pas avec certitude d'où vient le nom Builsa ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Builsa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bwu",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne, selon un administrateur britannique en 1920.",
+        "periodLabel": "Écrit depuis 1920 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Builsa figure parmi les autres noms de la langue buli dans le catalogue de langues Glottolog.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Buli (Ghana) – Glottolog 5.2, ISO 639-3 bwu",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/buli1254",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue, avec ses autres noms : Builsa, Bulisa, Kanjaga et d'autres. Lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Builsa est, écrit l'administrateur britannique Allan Cardinall, le nom que ce peuple se donne : il l'emploie dans son livre sur les peuples des Territoires du Nord de la Côte-de-l'Or pour cette raison, ayant retenu partout les noms que les peuples se donnent eux-mêmes. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Builsa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Natives of the Northern Territories of the Gold Coast: Their Customs, Religion and Folklore",
+                "author": "Allan Wolsey Cardinall",
+                "year": 1920,
+                "url": "https://archive.org/details/cu31924028647570",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. vii-viii",
+                "notes": "Londres, George Routledge & Sons. Préface de l'auteur. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bulsa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bwu",
+        "namedBy": null,
+        "shortLine": "Une autre graphie de Builsa, celle d'un livre de Franz Kröger en 1982.",
+        "periodLabel": "Écrit depuis 1982 ; en usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1982,
+              "to": 1982,
+              "label": "1982"
+            },
+            "era": "modern",
+            "statement": "Le nom Bulsa figure dans le titre du livre de Franz Kröger, Ancestor worship among the Bulsa of northern Ghana, publié en 1982. C'est la plus ancienne trace de cette graphie que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Ancestor worship among the Bulsa of northern Ghana",
+                "author": "Franz Kröger",
+                "year": 1982,
+                "url": "https://openlibrary.org/works/OL4015121W",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Éditeur : K. Renner. Titre, auteur, éditeur et date lus dans la notice d'Open Library le 12 octobre 2026 ; nous n'avons pas lu le livre."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kanjaga",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "des soldats et des administrateurs britanniques, sur les registres des recrues",
+        "shortLine": "Un nom de village, longtemps donné à tort à tout ce peuple sur les registres des recrues.",
+        "periodLabel": "Écrit depuis 1910",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kanjaga était employé à tort comme nom de famille des Builsa, selon Allan Cardinall : les recrues de l'armée et de la police étaient inscrites sous le nom de leur peuple tel que le donnait le soldat qui les présentait, et un Builsa présenté par un compagnon venu de la communauté de Kanjaga a ainsi fixé ce nom. Les noms Grunshi et Fra-Fra se sont répandus de la même façon pour d'autres peuples.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "The Natives of the Northern Territories of the Gold Coast: Their Customs, Religion and Folklore",
+                "author": "Allan Wolsey Cardinall",
+                "year": 1920,
+                "url": "https://archive.org/details/cu31924028647570",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. viii-ix",
+                "notes": "Londres, George Routledge & Sons. Préface de l'auteur. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kanjaga figure dans la légende d'une planche de Harry Johnston, qui présente un « Kanjaga » de l'arrière-pays de la Côte-de-l'Or. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Kanjaga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Negro in the New World",
+                "author": "Harry H. Johnston",
+                "year": 1910,
+                "url": "https://archive.org/details/negroinnewworld00johnuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 190 (planche)",
+                "notes": "Londres, Methuen. Légende de la planche : « A Kanjaga negro, from Gold Coast hinterland », qui renvoie à la page 190 dans la liste des illustrations. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

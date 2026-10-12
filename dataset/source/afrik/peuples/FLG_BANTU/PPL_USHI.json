@@ -105,5 +105,133 @@
         "source_kind": "intergovernmental"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ushi désigne un peuple de la province de Luapula, dans le nord de la Zambie, et du Haut-Katanga, en République démocratique du Congo, qui se nomme lui-même Aushi, au pluriel Abaushi et au singulier Umwaushi. Sa langue est l'ikyaushi. On a aussi écrit Baushi, Waushi et Vouaoussi. On ne sait pas avec certitude d'où vient le nom Ushi ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Aushi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "auh",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne, Abaushi au pluriel et Umwaushi au singulier.",
+        "periodLabel": "Écrit depuis 1885 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Publié en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Aushi représente, chez le linguiste Troy E. Spier, à la fois le singulier Umwaushi et le pluriel Abaushi, qui sont les noms que ce peuple se donne. Le nom de sa langue est Ikyaushi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Nominal phrase structure in Ikyaushi (M.402)",
+                "author": "Troy E. Spier",
+                "year": 2022,
+                "url": "https://salc.uw.edu.pl/index.php/SALC/article/view/301",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 32, note 1",
+                "notes": "Studies in African Languages and Cultures, vol. 56, 2022. Lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1883,
+              "to": 1885,
+              "label": "Voyage de 1883-1885, texte de 1885"
+            },
+            "era": "polity",
+            "statement": "Le nom Aushi apparaît sous une forme proche, « Vouaoussi », dans le récit du voyageur français Victor Giraud : retenu chez le chef Méré-Méré, il écrit que le Lunda est séparé des Vouaoussi par toute la tribu des Vuakissinga. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Vouaoussi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Deux ans aux lacs de l'Afrique centrale, dans la Revue scientifique, 3e série, vol. 35 (janvier-juillet 1885)",
+                "author": "Victor Giraud",
+                "year": 1885,
+                "url": "https://archive.org/details/s453id13662920",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 460",
+                "notes": "Récit du voyage de 1883-1885. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive. Spier signale que le livre de Giraud de 1890 est peut-être la plus ancienne référence ; nous avons trouvé cette forme dès 1885."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Baushi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme avec le préfixe ba-, écrite dès 1908 dans un vocabulaire lala.",
+        "periodLabel": "Écrit depuis 1908",
+        "accounts": [
+          {
+            "period": {
+              "from": 1908,
+              "to": 1908,
+              "label": "1908"
+            },
+            "era": "colonial",
+            "statement": "Le nom Baushi figure dans le vocabulaire lala-anglais d'Arthur Cornwallis Madan, qui écrit « Waushi, Baushi » et décrit une tribu vivant au nord du district lala, au sud du Bangweulu. C'est la plus ancienne trace de cette forme que le projet connaît.",
+            "formAsWritten": "Waushi, Baushi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Lala-Lamba handbook: a short introduction to the south-western division of the Wisa-Lala dialect of northern Rhodesia, with stories and vocabulary",
+                "author": "Arthur Cornwallis Madan",
+                "year": 1908,
+                "url": "https://archive.org/details/lalalambahandbo00madagoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 140",
+                "notes": "Oxford, Clarendon Press. Entrée du vocabulaire lala-anglais. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ushi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'une des formes du nom que relèvent les sources, sans préfixe.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Publié en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Ushi fait partie des noms que Troy E. Spier relève dans les sources, avec Aushi, Baushi, Waushi, Vouaoussi et d'autres : beaucoup viennent de la manière dont les auteurs ont transcrit le nom selon leur propre langue. Nous n'avons pas trouvé la plus ancienne trace de la forme Ushi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Nominal phrase structure in Ikyaushi (M.402)",
+                "author": "Troy E. Spier",
+                "year": 2022,
+                "url": "https://salc.uw.edu.pl/index.php/SALC/article/view/301",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 32, note 1",
+                "notes": "Studies in African Languages and Cultures, vol. 56, 2022. Lu le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
