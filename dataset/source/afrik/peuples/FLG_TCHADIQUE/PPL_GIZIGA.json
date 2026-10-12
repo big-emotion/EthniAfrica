@@ -133,5 +133,229 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Giziga désigne un peuple de langue tchadique du nord du Cameroun, établi pour l'essentiel dans les plaines autour de Maroua, qui se nomme lui-même Marva, selon le linguiste J. Lukas. D'autres auteurs réservent le nom Marva aux Giziga de la région de Maroua. Les sources ne s'accordent pas sur l'origine du nom Giziga ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Marva",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "gis",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Giziga, en particulier ceux de la région de Maroua.",
+        "periodLabel": "Écrit depuis 1970 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1970,
+              "to": 1970,
+              "label": "Rapporté en 1970"
+            },
+            "era": "modern",
+            "statement": "Le nom Marva est celui que se donnent les Giziga eux-mêmes, au pluriel Marvahay, selon le linguiste J. Lukas, que rapporte le site mandaras.info. Le nom de la ville de Maroua viendrait de ce nom, selon la même page.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "mandaras.info — The Gisiga",
+                "author": "mandaras.info (Mandaras Publishing)",
+                "year": null,
+                "url": "https://www.mandaras.info/Gisiga.html",
+                "tier": "referenced",
+                "source_kind": "community",
+                "notes": "Page du site consacré aux monts Mandara, publiée par Mandaras Publishing, lue le 12 octobre 2026. Elle ne donne ni son auteur ni sa date. Elle résume J. Lukas (1970, p. 46), R. Lukas (1973, p. 46) et Gerhard Müller-Kosack (1999) ; nous n'avons pas lu ces travaux eux-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1970,
+              "to": 1970,
+              "label": "1970"
+            },
+            "era": "modern",
+            "statement": "Le nom Marva désigne un second groupe de Giziga, au nord-ouest et à l'ouest de Maroua ; ces Giziga dits Marva auraient sans doute occupé Maroua avant l'arrivée des Peuls, selon Guy Pontié.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Les Guiziga du Cameroun septentrional : l'organisation traditionnelle et les formes de la contestation",
+                "author": "Guy Pontié",
+                "year": 1970,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/carton02/19326.pdf",
+                "source_kind": "academic",
+                "page": "p. 7",
+                "notes": "Thèse de doctorat de troisième cycle, École pratique des hautes études, ORSTOM, 1970. Lu dans le texte dactylographié publié par l'IRD le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Marva entre dans l'expression Giziga Bi-Marva, ou Giziga du Nord : bi y transcrit le mot giziga bwiy, « chef », et l'expression désigne les Giziga qui dépendent du chef de Marva, c'est-à-dire de Maroua, selon Christian Seignobos.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Atlas de la province Extrême-Nord Cameroun, glossaire et index des sigles",
+                "author": "Christian Seignobos",
+                "year": null,
+                "url": "https://books.openedition.org/irdeditions/11603",
+                "source_kind": "academic",
+                "page": "p. 167-171",
+                "notes": "IRD Éditions, lu sur OpenEdition Books le 11 octobre 2026. La page ne donne pas l'année d'édition."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Giziga",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit sous une forme proche dès 1857 ; son origine reste discutée.",
+        "periodLabel": "Forme proche écrite en 1857 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1970,
+              "to": 1970,
+              "label": "1970"
+            },
+            "era": "modern",
+            "statement": "Le nom Giziga, que Guy Pontié écrit Guiziga, désigne une population non musulmane du Nord-Cameroun, surtout des gens de plaine, dont le groupe le plus nombreux vit dans le canton de Muturua, au sud de Maroua. Son origine est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Les Guiziga du Cameroun septentrional : l'organisation traditionnelle et les formes de la contestation",
+                "author": "Guy Pontié",
+                "year": 1970,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/carton02/19326.pdf",
+                "source_kind": "academic",
+                "page": "p. 7",
+                "notes": "Thèse de doctorat de troisième cycle, École pratique des hautes études, ORSTOM, 1970. Lu dans le texte dactylographié publié par l'IRD le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1938,
+              "to": 1938,
+              "label": "1938"
+            },
+            "era": "colonial",
+            "statement": "Le nom Giziga figure en 1938 dans un article de Fourneau sur « une tribu païenne du Nord-Cameroun », selon Guy Pontié.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Les Guiziga du Cameroun septentrional : l'organisation traditionnelle et les formes de la contestation",
+                "author": "Guy Pontié",
+                "year": 1970,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/carton02/19326.pdf",
+                "source_kind": "academic",
+                "page": "p. 7, note 1",
+                "notes": "Thèse de doctorat de troisième cycle, École pratique des hautes études, ORSTOM, 1970. Lu dans le texte dactylographié publié par l'IRD le 11 octobre 2026. Nous n'avons pas lu l'article de Fourneau."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1851,
+              "to": 1857,
+              "label": "Voyage de 1851 (récit publié en 1857)"
+            },
+            "era": "polity",
+            "statement": "Le nom Giziga apparaît sous une forme proche, Gizaganchi, la langue des Gizaga, dans la liste des langues de l'Adamawa qu'un informateur nommé Mohammedu donne au voyageur allemand Heinrich Barth ; la finale nchi veut dire « langue », selon Barth. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Gizaganchi",
+            "birth": true,
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Travels and Discoveries in North and Central Africa, vol. II",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri02bart_2",
+                "source_kind": "archive",
+                "page": "p. 513-514",
+                "notes": "Londres, Longman, Brown, Green, Longmans & Roberts, 1857. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1938,
+              "to": 1938,
+              "label": "Proposée en 1938"
+            },
+            "era": "colonial",
+            "statement": "Le nom Giziga voudrait dire « qui ne mange pas n'importe quelle nourriture », selon Fourneau, que cite Guy Pontié.",
+            "hypothesisGroup": "origine du nom Giziga",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Les Guiziga du Cameroun septentrional : l'organisation traditionnelle et les formes de la contestation",
+                "author": "Guy Pontié",
+                "year": 1970,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/carton02/19326.pdf",
+                "source_kind": "academic",
+                "page": "p. 7, note 1",
+                "notes": "Thèse de doctorat de troisième cycle, École pratique des hautes études, ORSTOM, 1970. Lu dans le texte dactylographié publié par l'IRD le 11 octobre 2026. Nous n'avons pas lu l'article de Fourneau."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1970,
+              "to": 1970,
+              "label": "Proposée en 1970"
+            },
+            "era": "modern",
+            "statement": "Le nom Giziga pourrait venir d'une expression, ngi zi ka, employée pour insulter, selon Guy Pontié. Il rappelle que le clan Pedizam, qui dit avoir été le premier groupe appelé Guiziga, a longtemps été tenu à l'écart parce qu'on lui prêtait de très nombreux sorciers.",
+            "hypothesisGroup": "origine du nom Giziga",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Les Guiziga du Cameroun septentrional : l'organisation traditionnelle et les formes de la contestation",
+                "author": "Guy Pontié",
+                "year": 1970,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/carton02/19326.pdf",
+                "source_kind": "academic",
+                "page": "p. 7, note 1",
+                "notes": "Thèse de doctorat de troisième cycle, École pratique des hautes études, ORSTOM, 1970. Lu dans le texte dactylographié publié par l'IRD le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1973,
+              "to": 1973,
+              "label": "Proposée en 1973"
+            },
+            "era": "modern",
+            "statement": "Le nom Giziga aurait été donné par les Peuls, selon R. Lukas, que rapporte le site mandaras.info. Gerhard Müller-Kosack penche dans le même sens : il juge peu probable qu'un peuple se donne à lui-même un nom qui serait une insulte, selon la même page.",
+            "hypothesisGroup": "origine du nom Giziga",
+            "sources": [
+              {
+                "title": "mandaras.info — The Gisiga",
+                "author": "mandaras.info (Mandaras Publishing)",
+                "year": null,
+                "url": "https://www.mandaras.info/Gisiga.html",
+                "tier": "referenced",
+                "source_kind": "community",
+                "notes": "Page du site consacré aux monts Mandara, publiée par Mandaras Publishing, lue le 12 octobre 2026. Elle ne donne ni son auteur ni sa date. Elle résume J. Lukas (1970, p. 46), R. Lukas (1973, p. 46) et Gerhard Müller-Kosack (1999) ; nous n'avons pas lu ces travaux eux-mêmes."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
