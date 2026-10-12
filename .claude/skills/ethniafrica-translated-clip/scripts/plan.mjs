@@ -53,8 +53,35 @@ export function validatePlan(plan) {
         `${label}: ${rate.toFixed(1)} characters per second, at most ${MAX_READING_RATE}`
       );
   });
+  const boxes = Array.isArray(plan.boxes) ? plan.boxes : [];
+  boxes.forEach((b, i) => {
+    const label = `box ${i + 1}`;
+    if (typeof b.text !== "string" || !b.text.trim())
+      errors.push(`${label}: text is required`);
+    else if (characters(b.text) > MAX_BOX_CHARACTERS)
+      errors.push(`${label}: at most ${MAX_BOX_CHARACTERS} characters`);
+    if (!(b.end > b.start)) errors.push(`${label}: end must follow start`);
+    if (!clips.some(([a, z]) => b.start >= a && b.end <= z))
+      errors.push(`${label}: outside every clip`);
+    if (i > 0 && b.start < boxes[i - 1].end)
+      errors.push(`${label}: overlaps box ${i}`);
+  });
   return errors;
 }
+
+// Three lines of the 52 px box face in the 900 px plate; the published boxes
+// run to 55 characters.
+const MAX_BOX_CHARACTERS = 70;
+
+// Boxes frame what the speaker argues ("POUR ELLE, …"): they are timed on the
+// source clock like the phrases, but never bridged, since a box that lingers
+// over the next idea misattributes it.
+export const reelBoxes = (plan) =>
+  (plan.boxes || []).map((b) => ({
+    ...b,
+    start: toReelTime(plan.clips, b.start),
+    end: toReelTime(plan.clips, b.end),
+  }));
 
 export const reelDuration = (plan) =>
   round(plan.clips.reduce((sum, [a, b]) => sum + (b - a), 0));

@@ -49,6 +49,12 @@ which the engine reuses. Rendering never authorizes publication.
      drop bare backchannels (« Yes », « Mm »).
    - Keep unfinished sentences unfinished (« … »), keep names and African
      spellings, never sharpen a claim the speaker hedged.
+   - **Boxes** (white plates above the source band, as on the Mitchell and
+     Kachamba reels): one identity box at the start, verified (name, role,
+     nationality — check it, never infer it from the video title), then one
+     box per key argument, always attributed (« POUR ELLE, … », « SELON LUI,
+     … »): a box states the speaker's thesis, never ours. Two lines at most,
+     the browser refuses a third; boxes do not overlap.
 5. **Validate**, then **render** from the repo root:
    ```sh
    node .claude/skills/ethniafrica-translated-clip/scripts/render.mjs validate PLAN.json
@@ -76,6 +82,7 @@ which the engine reuses. Rendering never authorizes publication.
   "phrases": [
     { "start": 42.54, "end": 43.54, "speaker": 0, "fr": "Et encore une fois," }
   ],
+  "boxes": [{ "start": 42.5, "end": 56, "text": "NAME, VERIFIED ROLE" }],
   "credit_line": "Name, role · source : Channel (YouTube)",
   "thumbnail": {
     "frame_at": 100,
@@ -87,7 +94,13 @@ which the engine reuses. Rendering never authorizes publication.
 
 Several `clips` make jump cuts; phrase times stay on the source clock and the
 engine moves them onto the reel. A gap under 0.6 s between captions is held so
-the text does not blink.
+the text does not blink. Boxes use the same source clock and are never held
+past their `end`: a box lingering over the next idea misattributes it.
+
+The engine covers horizontal interview sources. A vertical source (a TikTok or
+Reel, as the 10 October « sauvage » reel) uses another frame — the source at
+near full height, « Vidéo originale : @handle · traduite avec son autorisation »
+under it, a larger watermark — and is not supported yet.
 
 ## Deliverable folder
 

@@ -5,6 +5,7 @@ import {
   validatePlan,
   reelDuration,
   reelPhrases,
+  reelBoxes,
   toSrt,
   captionTrack,
 } from "./plan.mjs";
@@ -131,6 +132,47 @@ test("the SRT carries the reel times and the French text", () => {
     "1\n00:00:00,200 --> 00:00:02,100\nPremière phrase,\n\n" +
       "2\n00:00:02,100 --> 00:00:05,000\npuis la suite.\n"
   );
+});
+
+test("a box outside every clip, or overlapping another, is refused", () => {
+  const errors = validatePlan(
+    plan({
+      boxes: [
+        { start: 10, end: 14, text: "POUR ELLE, UNE IDÉE" },
+        { start: 13, end: 16, text: "SELON ELLE, UNE AUTRE" },
+        { start: 25, end: 26, text: "HORS COUPE" },
+      ],
+    })
+  );
+  assert.match(errors.join(), /box 2.*overlaps/);
+  assert.match(errors.join(), /box 3.*outside/);
+});
+
+test("boxes move to the reel clock without bridging", () => {
+  const p = plan({
+    clips: [
+      [10, 20],
+      [30, 40],
+    ],
+    phrases: [{ start: 11, end: 12, fr: "Une." }],
+    boxes: [
+      { start: 10, end: 12, text: "UNE" },
+      { start: 12.3, end: 14, text: "DEUX" },
+      { start: 31, end: 35, text: "TROIS" },
+    ],
+  });
+  assert.deepEqual(
+    reelBoxes(p).map((b) => [b.start, b.end]),
+    [
+      [0, 2],
+      [2.3, 4],
+      [11, 15],
+    ]
+  );
+});
+
+test("a plan without boxes has none", () => {
+  assert.deepEqual(reelBoxes(plan()), []);
 });
 
 test("the caption track covers the whole reel, gaps included", () => {

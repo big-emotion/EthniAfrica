@@ -33,6 +33,31 @@ const probe = (file) =>
     ).stdout
   );
 
+const pixel = (file, t, x, y) => [
+  ...spawnSync(
+    "ffmpeg",
+    [
+      "-v",
+      "error",
+      "-ss",
+      String(t),
+      "-i",
+      file,
+      "-frames:v",
+      "1",
+      "-vf",
+      // A 1×1 crop is impossible in 4:2:0 chroma, so convert first.
+      `format=rgb24,crop=1:1:${x}:${y}`,
+      "-f",
+      "rawvideo",
+      "-pix_fmt",
+      "rgb24",
+      "-",
+    ],
+    { encoding: "buffer" }
+  ).stdout,
+];
+
 test("renders a framed, captioned vertical reel with its SRT and cover", async () => {
   const dir = mkdtempSync(join(tmpdir(), "translated-clip-"));
   try {
@@ -67,6 +92,7 @@ test("renders a framed, captioned vertical reel with its SRT and cover", async (
           { start: 1.2, end: 2.8, fr: "Une première phrase," },
           { start: 5.1, end: 6.9, fr: "puis la suite après la coupe." },
         ],
+        boxes: [{ start: 1, end: 2.5, text: "SELON ELLE, UN ENCADRÉ" }],
         thumbnail: {
           frame_at: 2,
           title_lines: ["UN TITRE", "DE COUVERTURE"],
@@ -87,9 +113,45 @@ test("renders a framed, captioned vertical reel with its SRT and cover", async (
       /00:00:02,100 --> 00:00:03,900\npuis la suite après la coupe\./
     );
     assert.ok(existsSync(join(out, "cover.png")));
+    // The box's white plate sits just above the source band, then leaves.
+    const during = pixel(join(out, "reel.mp4"), 0.7, 540, 285);
+    const after = pixel(join(out, "reel.mp4"), 3, 540, 285);
+    assert.equal(during.length, 3);
+    assert.equal(after.length, 3);
+    assert.ok(during.every((c) => c > 235));
+    assert.ok(after.some((c) => c < 200));
     assert.ok(
       !existsSync(join(out, "_layers")),
       "intermediate layers are removed"
+    );
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
+});
+
+test("refuses a box that would wrap past two lines", async () => {
+  const dir = mkdtempSync(join(tmpdir(), "translated-clip-"));
+  try {
+    const planFile = join(dir, "plan.json");
+    writeFileSync(
+      planFile,
+      JSON.stringify({
+        source: join(dir, "absent.mp4"),
+        clips: [[0, 10]],
+        credit_line: "Crédit",
+        phrases: [{ start: 0, end: 9, fr: "Une phrase." }],
+        boxes: [
+          {
+            start: 0,
+            end: 9,
+            text: "SELON ELLE, LE DIEU DES MISSIONNAIRES SERVAIT À OPPRIMER",
+          },
+        ],
+      })
+    );
+    await assert.rejects(
+      renderClip(planFile, join(dir, "out")),
+      /Boxes over two lines/
     );
   } finally {
     rmSync(dir, { recursive: true, force: true });

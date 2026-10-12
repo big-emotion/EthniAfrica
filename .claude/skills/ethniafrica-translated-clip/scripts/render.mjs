@@ -14,6 +14,7 @@ import {
   validatePlan,
   reelDuration,
   reelPhrases,
+  reelBoxes,
   toSrt,
   captionTrack,
 } from "./plan.mjs";
@@ -56,6 +57,9 @@ html,body{margin:0;width:${WIDTH}px;height:${HEIGHT}px;background:transparent;ov
 .signature img{width:34px;height:34px;filter:brightness(0) invert(1)}
 .signature b{display:block;font:700 20px/1 Signature;color:#fff}
 .signature i{display:block;font:600 11px/1.5 Signature;font-style:normal;color:#fff}
+.box{position:absolute;left:50%;transform:translateX(-50%);bottom:${HEIGHT - BAND.top + 36}px;
+  width:max-content;max-width:900px;padding:18px 30px;background:#fff;color:#000;
+  text-align:center;font:52px/64px Caption;text-transform:uppercase}
 .title{position:absolute;left:60px;width:960px;top:1190px;transform:translateY(-50%);
   text-align:center;font:118px/1.05 Title;color:#fff;text-transform:uppercase;
   text-shadow:0 4px 18px rgba(0,0,0,.7)}
@@ -111,16 +115,19 @@ async function openPage() {
   };
   // A single word wider than the column overflows instead of wrapping, so
   // horizontal overflow counts as a failed fit too.
-  const captionFits = () =>
+  // Measures the element just drawn; a box's padding is not a line.
+  const fitsTwoLines = () =>
     page.evaluate(() => {
-      const node = document.querySelector(".caption");
-      const lineHeight = parseFloat(getComputedStyle(node).lineHeight);
-      const lines = Math.round(
-        node.getBoundingClientRect().height / lineHeight
-      );
+      const node = document.getElementById("layer").firstElementChild;
+      const style = getComputedStyle(node);
+      const text =
+        node.getBoundingClientRect().height -
+        parseFloat(style.paddingTop) -
+        parseFloat(style.paddingBottom);
+      const lines = Math.round(text / parseFloat(style.lineHeight));
       return lines <= 2 && node.scrollWidth <= node.clientWidth + 1;
     });
-  return { browser, draw, captionFits };
+  return { browser, draw, fitsTwoLines };
 }
 
 function ffmpeg(args) {
@@ -147,9 +154,10 @@ export async function renderClip(planFile, outDir) {
   const layers = join(outDir, "_layers");
   await mkdir(layers, { recursive: true });
   const phrases = reelPhrases(plan);
+  const boxes = reelBoxes(plan);
   const duration = reelDuration(plan);
 
-  const { browser, draw, captionFits } = await openPage();
+  const { browser, draw, fitsTwoLines } = await openPage();
   try {
     await draw(
       `<div class="credit">${escape(plan.credit_line)}</div>${signature}`,
@@ -159,7 +167,7 @@ export async function renderClip(planFile, outDir) {
     const tooLong = [];
     for (const [i, p] of phrases.entries()) {
       await draw(`<div class="caption">${escape(p.fr)}</div>`);
-      if (!(await captionFits())) tooLong.push(`phrase ${i + 1}: «${p.fr}»`);
+      if (!(await fitsTwoLines())) tooLong.push(`phrase ${i + 1}: «${p.fr}»`);
       else
         await draw(
           `<div class="caption">${escape(p.fr)}</div>`,
@@ -168,6 +176,20 @@ export async function renderClip(planFile, outDir) {
     }
     if (tooLong.length)
       throw new Error(`Captions over two lines:\n- ${tooLong.join("\n- ")}`);
+    // The published boxes never exceed two lines: a third one pushes the
+    // plate into the top of the frame, where feeds overlay their own UI.
+    const tallBoxes = [];
+    for (const [i, b] of boxes.entries()) {
+      await draw(`<div class="box">${escape(b.text)}</div>`);
+      if (!(await fitsTwoLines())) tallBoxes.push(`box ${i + 1}: «${b.text}»`);
+      else
+        await draw(
+          `<div class="box">${escape(b.text)}</div>`,
+          join(layers, `box-${i}.png`)
+        );
+    }
+    if (tallBoxes.length)
+      throw new Error(`Boxes over two lines:\n- ${tallBoxes.join("\n- ")}`);
     if (plan.thumbnail)
       await draw(
         `<div class="title">${titleHtml(plan.thumbnail)}</div>${signature}`,
@@ -179,14 +201,18 @@ export async function renderClip(planFile, outDir) {
 
   // The concat demuxer needs the last picture listed twice to honour its
   // duration.
-  const track = captionTrack(phrases, duration);
-  const picture = (s) =>
-    s.index === null ? "empty.png" : `caption-${s.index}.png`;
-  const list = track
-    .map((s) => `file '${picture(s)}'\nduration ${s.seconds.toFixed(3)}`)
-    .concat(`file '${picture(track.at(-1))}'`)
-    .join("\n");
-  await writeFile(join(layers, "captions.txt"), list + "\n");
+  const writeTrack = async (items, prefix) => {
+    const track = captionTrack(items, duration);
+    const picture = (s) =>
+      s.index === null ? "empty.png" : `${prefix}-${s.index}.png`;
+    const list = track
+      .map((s) => `file '${picture(s)}'\nduration ${s.seconds.toFixed(3)}`)
+      .concat(`file '${picture(track.at(-1))}'`)
+      .join("\n");
+    await writeFile(join(layers, `${prefix}s.txt`), list + "\n");
+  };
+  await writeTrack(phrases, "caption");
+  await writeTrack(boxes, "box");
 
   const cuts = plan.clips
     .map(
@@ -201,7 +227,8 @@ export async function renderClip(planFile, outDir) {
     `${joined}concat=n=${plan.clips.length}:v=1:a=1[cut][aout];` +
     frameGraph("[cut]") +
     `[framed];[framed][1:v]overlay=0:0[signed];` +
-    `[2:v]fps=${FPS},format=rgba[cap];[signed][cap]overlay=0:0:eof_action=pass,format=yuv420p[vout]`;
+    `[3:v]fps=${FPS},format=rgba[box];[signed][box]overlay=0:0:eof_action=pass[boxed];` +
+    `[2:v]fps=${FPS},format=rgba[cap];[boxed][cap]overlay=0:0:eof_action=pass,format=yuv420p[vout]`;
   const reel = join(outDir, "reel.mp4");
   ffmpeg([
     "-i",
@@ -216,6 +243,12 @@ export async function renderClip(planFile, outDir) {
     "0",
     "-i",
     join(layers, "captions.txt"),
+    "-f",
+    "concat",
+    "-safe",
+    "0",
+    "-i",
+    join(layers, "boxs.txt"),
     "-filter_complex",
     graph,
     "-map",
