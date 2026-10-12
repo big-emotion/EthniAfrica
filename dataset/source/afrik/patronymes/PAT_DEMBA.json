@@ -124,5 +124,110 @@
       "fieldPath": "homonyms",
       "reason": "Aucune entité distincte portant ce nom n'a été recherchée de façon suffisamment poussée pour conclure ; ce point reste ouvert."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Demba est d'abord un prénom, que les sources lues rattachent aux Soninké, aux Peuls et aux Mandingues. Les sources lues ne disent pas depuis quand il sert aussi de nom de famille. Elles proposent une explication de son origine, que nous présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Demba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un prénom ouest-africain devenu nom de famille ; une explication de son origine est proposée.",
+        "periodLabel": "Écrit dès 1799 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2001,
+              "to": 2001,
+              "label": "Décrit en 2001"
+            },
+            "era": "modern",
+            "statement": "Le nom Demba est, chez les Soninké, l'un des prénoms de garçons qui se suivent selon le rang de naissance : Soma, Samba, Demba, Tamba, Yoro, Dabi, selon l'anthropologue Odile Journet-Diallo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Noms d'ancêtres, noms d'amis, noms de dérision. Exemples africains",
+                "author": "Odile Journet-Diallo",
+                "year": 2001,
+                "url": "https://web.archive.org/web/20231019234705/https://www.cairn.info/revue-spirale-2001-3-page-51.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 51-60, § 8",
+                "notes": "Spirale, 2001/3 (n° 19), p. 51-60. Lu le 12 octobre 2026 dans la copie du 19 octobre 2023 conservée par la Wayback Machine, le site de Cairn refusant l'accès automatique. Au paragraphe 8 : « chez les Soninke, la fille première née pourra s'appeler Sira, puis ses cadettes dans l'ordre, Koumba, Henda, Tako, Tekhri, Nyatou ; pour les garçons, Soma, Samba, Demba, Tamba, Yoro, Dabi, etc. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "Proposée en 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Demba viendrait du mythe peul de Caamaaba : formé sur la racine dem, qui renvoie à rew, « suivre », il dirait la place de celui qui vient après, comme le berger Kumen suit Caamaaba, selon un article du site Ndarinfo signé Oumar Niang, qui ne cite pas de source pour cette analyse.",
+            "hypothesisGroup": "origine du nom Demba",
+            "sources": [
+              {
+                "title": "Les patronymes fulbe (peuls) : origine mythique et symbolique",
+                "author": "Oumar Niang",
+                "year": 2017,
+                "url": "https://www.ndarinfo.com/Les-patronymes-fulbe-peuls-origine-mythique-et-symbolique-Par-Oumar-NIANG_a20377.html",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article du site NDARINFO (Saint-Louis, Sénégal), publié le 25 novembre 2017 ; l'auteur se présente comme membre de la Société linguistique de Paris. Lu le 12 octobre 2026. Il analyse Samba et Demba comme des noms qui renvoient au mythe de Caamaaba, le serpent ancêtre des Fulɓe : Demba serait formé sur la racine dem, liée à rew, « suivre », comme le berger Kumen suit Caamaaba. L'article ne cite pas de source pour cette analyse, qui paraît propre à l'auteur."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1795,
+              "to": 1797,
+              "label": "Voyage de 1795-1797, récit publié en 1799"
+            },
+            "era": "polity",
+            "statement": "Le nom Demba est aussi celui d'un roi mandingue du Khasso, Demba Sego Jalla, et de son neveu, qui s'appelle Demba Sego « probablement d'après son oncle », écrit le voyageur Mungo Park.",
+            "aspect": "usage",
+            "formAsWritten": "Demba Sego",
+            "sources": [
+              {
+                "title": "Travels in the Interior Districts of Africa",
+                "author": "Mungo Park",
+                "year": 1799,
+                "url": "https://www.gutenberg.org/ebooks/74976",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 70-71",
+                "notes": "Londres, G. Nicol, 1799, lu dans l'édition numérisée du Projet Gutenberg, dont les numéros de page sont donnés entre crochets. Page 29 : le docteur Laidley, sur la Gambie, fournit à l'auteur « a Negro boy of his own, named Demba », qui parle le mandingue. Pages 70-71 : un neveu de « Demba Sego Jalla, the Mandingo King of Kasson » vient le voir ; l'auteur écrit que son protecteur, « whose name was Demba Sego, probably after his uncle », l'accompagne jusqu'au Khasso. Voyageur écossais, cité pour les formes qu'il écrit. Lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1795,
+              "to": 1797,
+              "label": "Voyage de 1795-1797, récit publié en 1799"
+            },
+            "era": "polity",
+            "statement": "Le nom Demba apparaît par écrit dans le récit de voyage de Mungo Park : sur la Gambie, le docteur Laidley met à son service un garçon « nommé Demba ». C'est la plus ancienne trace de ce nom que le projet connaît ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Demba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels in the Interior Districts of Africa",
+                "author": "Mungo Park",
+                "year": 1799,
+                "url": "https://www.gutenberg.org/ebooks/74976",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 29",
+                "notes": "Londres, G. Nicol, 1799, lu dans l'édition numérisée du Projet Gutenberg, dont les numéros de page sont donnés entre crochets. Page 29 : le docteur Laidley, sur la Gambie, fournit à l'auteur « a Negro boy of his own, named Demba », qui parle le mandingue. Pages 70-71 : un neveu de « Demba Sego Jalla, the Mandingo King of Kasson » vient le voir ; l'auteur écrit que son protecteur, « whose name was Demba Sego, probably after his uncle », l'accompagne jusqu'au Khasso. Voyageur écossais, cité pour les formes qu'il écrit. Lu le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
