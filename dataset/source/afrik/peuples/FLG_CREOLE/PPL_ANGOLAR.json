@@ -112,5 +112,226 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Angolares désigne un peuple de l'île de São Tomé, dans le golfe de Guinée, qui se nomme lui-même Ngola et parle le lunga Ngola. On le présente souvent comme descendant des esclaves d'un navire venu d'Angola et naufragé sur la côte ; d'autres sources y voient les descendants d'esclaves enfuis des plantations. Nous présentons ces explications plus bas.",
+    "names": [
+      {
+        "nameText": "Ngola",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "aoa",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Angolares, dans le nom de leur langue, lunga Ngola.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ngola est celui que les Angolares donnent à leur langue, lunga Ngola, selon le linguiste Philippe Maurer. On ne sait pas avec certitude quand ce nom a été écrit pour la première fois.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Survey chapter: Angolar",
+                "author": "Philippe Maurer",
+                "year": 2013,
+                "url": "https://apics-online.info/surveys/36",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Atlas of Pidgin and Creole Language Structures Online, lue le 11 octobre 2026. « Autoglossonym: lunga Ngola » ; « Other names: Portuguese: angolar »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Angolares",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Le nom portugais, écrit pour la première fois au début du XIXe siècle.",
+        "periodLabel": "Écrit depuis le début du XIXe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Angolares désigne aujourd'hui les descendants des communautés d'esclaves fugitifs de l'intérieur de São Tomé, selon l'historien Gerhard Seibert. Son origine est discutée ; nous présentons plus bas les explications.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Tenreiro, Amador e os Angolares ou a reinvenção da história da Ilha de São Tomé",
+                "author": "Gerhard Seibert",
+                "year": 2012,
+                "url": "https://periodicos.ufpe.br/revistas/realis/article/view/8764",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Revista de Estudos AntiUtilitaristas e PosColoniais (REALIS), vol. 2, n° 2, p. 21-39 ; article lue le 11 octobre 2026. L'auteur cite les sources anciennes à travers leurs éditions modernes.",
+                "page": "p. 21"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1842,
+              "to": 1842,
+              "label": "1842"
+            },
+            "era": "colonial",
+            "statement": "Le nom Angolares apparaît pour la première fois dans un livre de Raimundo José da Cunha Matos, militaire portugais à São Tomé de 1797 à 1814, publié après sa mort en 1842, selon Gerhard Seibert. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "angolares",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tenreiro, Amador e os Angolares ou a reinvenção da história da Ilha de São Tomé",
+                "author": "Gerhard Seibert",
+                "year": 2012,
+                "url": "https://periodicos.ufpe.br/revistas/realis/article/view/8764",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Revista de Estudos AntiUtilitaristas e PosColoniais (REALIS), vol. 2, n° 2, p. 21-39 ; article lue le 11 octobre 2026. L'auteur cite les sources anciennes à travers leurs éditions modernes.",
+                "page": "p. 24"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1701,
+              "to": 1800,
+              "label": "XVIIIe siècle"
+            },
+            "era": "colonial",
+            "statement": "On parle alors d'« angolas » ou d'« angolis » pour désigner les fugitifs de l'intérieur de l'île, selon Gerhard Seibert, qui relève ces noms dans plusieurs documents de la fin du siècle.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Tenreiro, Amador e os Angolares ou a reinvenção da história da Ilha de São Tomé",
+                "author": "Gerhard Seibert",
+                "year": 2012,
+                "url": "https://periodicos.ufpe.br/revistas/realis/article/view/8764",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Revista de Estudos AntiUtilitaristas e PosColoniais (REALIS), vol. 2, n° 2, p. 21-39 ; article lue le 11 octobre 2026. L'auteur cite les sources anciennes à travers leurs éditions modernes.",
+                "page": "p. 23-24"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1595,
+              "to": 1595,
+              "label": "1595"
+            },
+            "era": "colonial",
+            "statement": "On parle alors des « negros Angola » : pendant la révolte d'esclaves menée par Amador, un des groupes qui attaquent la ville est commandé par Cristóvão, « capitaine des noirs Angola », selon un récit repris dans la chronique du père Manuel do Rosário Pinto. Gerhard Seibert, citant l'historien Arlindo Caldeira, y voit sans doute une allusion aux esclaves fugitifs de l'intérieur.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Tenreiro, Amador e os Angolares ou a reinvenção da história da Ilha de São Tomé",
+                "author": "Gerhard Seibert",
+                "year": 2012,
+                "url": "https://periodicos.ufpe.br/revistas/realis/article/view/8764",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Revista de Estudos AntiUtilitaristas e PosColoniais (REALIS), vol. 2, n° 2, p. 21-39 ; article lue le 11 octobre 2026. L'auteur cite les sources anciennes à travers leurs éditions modernes.",
+                "page": "p. 28"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1533,
+              "to": 1574,
+              "label": "1533-1574"
+            },
+            "era": "colonial",
+            "statement": "On parle alors de « macambos » pour désigner les groupes de fugitifs installés dans l'intérieur de l'île, contre lesquels les autorités lancent une guerre du maquis en 1533, selon Gerhard Seibert.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Tenreiro, Amador e os Angolares ou a reinvenção da história da Ilha de São Tomé",
+                "author": "Gerhard Seibert",
+                "year": 2012,
+                "url": "https://periodicos.ufpe.br/revistas/realis/article/view/8764",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Revista de Estudos AntiUtilitaristas e PosColoniais (REALIS), vol. 2, n° 2, p. 21-39 ; article lue le 11 octobre 2026. L'auteur cite les sources anciennes à travers leurs éditions modernes.",
+                "page": "p. 23"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1712,
+              "to": 1716,
+              "label": "Rapportée en 1712-1716"
+            },
+            "era": "colonial",
+            "statement": "Le nom Angolares rappellerait l'Angola, d'où venait un navire chargé d'esclaves qui aurait fait naufrage sur la côte de l'île. Les survivants seraient leurs ancêtres, selon une tradition que rapporte d'abord Pereira de Araújo e Azevedo, haut magistrat de la couronne à São Tomé de 1712 à 1716, puis le père Rosário Pinto vers 1734, d'après Gerhard Seibert. Le linguiste Philippe Maurer note que cette tradition tient une grande place dans le folklore angolar.",
+            "hypothesisGroup": "origine du nom Angolares",
+            "sources": [
+              {
+                "title": "Tenreiro, Amador e os Angolares ou a reinvenção da história da Ilha de São Tomé",
+                "author": "Gerhard Seibert",
+                "year": 2012,
+                "url": "https://periodicos.ufpe.br/revistas/realis/article/view/8764",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Revista de Estudos AntiUtilitaristas e PosColoniais (REALIS), vol. 2, n° 2, p. 21-39 ; article lue le 11 octobre 2026. L'auteur cite les sources anciennes à travers leurs éditions modernes.",
+                "page": "p. 23-24"
+              },
+              {
+                "title": "Survey chapter: Angolar",
+                "author": "Philippe Maurer",
+                "year": 2013,
+                "url": "https://apics-online.info/surveys/36",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Atlas of Pidgin and Creole Language Structures Online, lue le 11 octobre 2026. « Autoglossonym: lunga Ngola » ; « Other names: Portuguese: angolar »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1974,
+              "to": 1974,
+              "label": "Proposée en 1974, reprise en 2012"
+            },
+            "era": "colonial",
+            "statement": "Le nom Angolares désignerait des descendants d'esclaves enfuis des plantations, et non de naufragés, selon le linguiste Luís Ferraz, le premier à le soutenir en 1974, d'après Gerhard Seibert. Seibert ajoute qu'aucun document ne prouve le naufrage et qu'on appelait ces fugitifs angolas ou angolis au XVIIIe siècle. Le linguiste Philippe Maurer juge lui aussi l'origine marronne la plus probable.",
+            "hypothesisGroup": "origine du nom Angolares",
+            "sources": [
+              {
+                "title": "Tenreiro, Amador e os Angolares ou a reinvenção da história da Ilha de São Tomé",
+                "author": "Gerhard Seibert",
+                "year": 2012,
+                "url": "https://periodicos.ufpe.br/revistas/realis/article/view/8764",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Revista de Estudos AntiUtilitaristas e PosColoniais (REALIS), vol. 2, n° 2, p. 21-39 ; article lue le 11 octobre 2026. L'auteur cite les sources anciennes à travers leurs éditions modernes.",
+                "page": "p. 23-27"
+              },
+              {
+                "title": "Survey chapter: Angolar",
+                "author": "Philippe Maurer",
+                "year": 2013,
+                "url": "https://apics-online.info/surveys/36",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Atlas of Pidgin and Creole Language Structures Online, lue le 11 octobre 2026. « Autoglossonym: lunga Ngola » ; « Other names: Portuguese: angolar »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

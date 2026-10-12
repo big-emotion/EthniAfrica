@@ -114,5 +114,132 @@
         "source_kind": "intergovernmental"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Mikea désigne des familles de chasseurs-cueilleurs de la forêt de Mikea, au sud-ouest de Madagascar, entre les fleuves Fiherenana et Mangoky. Ceux qui se disent eux-mêmes Mikea rattachent ce nom à la forêt. Les gens de la région distinguent aussi des Mikea-Masikoro et des Mikea-Vezo. On ne sait pas avec certitude quand ce nom apparaît pour la première fois par écrit, ni d'où il vient : nous n'avons lu aucune source sur ces points.",
+    "names": [
+      {
+        "nameText": "Mikea",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent des familles de la forêt de Mikea ; son origine n'est pas connue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2001,
+              "to": 2001,
+              "label": "2001"
+            },
+            "era": "modern",
+            "statement": "Le nom Mikea est revendiqué par des habitants du sud-ouest de Madagascar que l'on associe à la forêt et à la cueillette, et que l'on distingue des pêcheurs vezo et des agro-éleveurs masikoro. Ceux qui se disent mikea relient ce nom à la forêt, par leur vie d'aujourd'hui ou par les récits qui les rattachent à leurs ancêtres, selon James Yount, Tsiazonera et Bram Tucker.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Constructing Mikea Identity: Past or Present Links to Forest and Foraging",
+                "author": "James W. Yount, Tsiazonera et Bram T. Tucker",
+                "year": 2001,
+                "url": "https://doi.org/10.1215/00141801-48-1-2-257",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Ethnohistory, vol. 48, n° 1-2, p. 257-291. Résumé de l'article lu dans sa notice Crossref, lu le 12 octobre 2026 ; nous n'avons pas lu l'article lui-même."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1998,
+              "to": 1998,
+              "label": "1998"
+            },
+            "era": "modern",
+            "statement": "Le nom Mikea désigne un petit groupe de 1 000 à 2 000 personnes qui vivent dans la forêt de Mikea, selon l'anthropologue Daniel Stiles. Leurs voisins les tiennent pour les tompontany, les premiers occupants du pays, mais les regardent de haut parce qu'ils vivent de la forêt.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Mikea Hunter-Gatherers of Southwest Madagascar: Ecology and Socioeconomics",
+                "author": "Daniel Stiles",
+                "year": 1998,
+                "url": "https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/68175",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "African Study Monographs, vol. 19, n° 3, p. 127-148, université de Kyoto. Lu sur le dépôt de l'université, lu le 12 octobre 2026.",
+                "page": "p. 127 et 129"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mikea-Masikoro",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les habitants de la région, selon Daniel Stiles",
+        "shortLine": "Le nom des Mikea qui vivent surtout comme leurs voisins masikoro, éleveurs et cultivateurs.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1998,
+              "to": 1998,
+              "label": "1998"
+            },
+            "era": "modern",
+            "statement": "Le nom Mikea-Masikoro est l'un des trois que les gens de la région donnent aux Mikea, à côté des Mikea-Vezo et des « vrais » Mikea, selon Daniel Stiles. Ces groupes vivent de façons différentes, mais se mêlent par le commerce et le mariage.",
+            "aspect": "usage",
+            "formAsWritten": "Mikea-Masikoro",
+            "sources": [
+              {
+                "title": "The Mikea Hunter-Gatherers of Southwest Madagascar: Ecology and Socioeconomics",
+                "author": "Daniel Stiles",
+                "year": 1998,
+                "url": "https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/68175",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "African Study Monographs, vol. 19, n° 3, p. 127-148, université de Kyoto. Lu sur le dépôt de l'université, lu le 12 octobre 2026.",
+                "page": "p. 132"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mikea-Vezo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les habitants de la région, selon Daniel Stiles",
+        "shortLine": "Le nom des Mikea proches des pêcheurs vezo de la côte.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1998,
+              "to": 1998,
+              "label": "1998"
+            },
+            "era": "modern",
+            "statement": "Le nom Mikea-Vezo désigne, chez les gens de la région, les Mikea proches des pêcheurs vezo, selon Daniel Stiles. Ils vendent des produits de la mer, mais se distinguent des Vezo parce qu'ils tirent aussi parti de la forêt.",
+            "aspect": "usage",
+            "formAsWritten": "Mikea-Vezo",
+            "sources": [
+              {
+                "title": "The Mikea Hunter-Gatherers of Southwest Madagascar: Ecology and Socioeconomics",
+                "author": "Daniel Stiles",
+                "year": 1998,
+                "url": "https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/68175",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "African Study Monographs, vol. 19, n° 3, p. 127-148, université de Kyoto. Lu sur le dépôt de l'université, lu le 12 octobre 2026.",
+                "page": "p. 132 et 135"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

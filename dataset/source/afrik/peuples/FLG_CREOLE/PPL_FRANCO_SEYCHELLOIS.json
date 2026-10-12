@@ -120,5 +120,231 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Franco-Seychellois désigne les Seychellois descendants des colons français venus s'installer dans l'archipel à partir de 1770. Comme les autres habitants, ils se nomment eux-mêmes Seychellois, seselwa en créole ; aucune source lue ne donne un nom que ce groupe se donnerait à lui seul. Les plus riches de ces familles sont appelées grands blancs, et le nom de l'archipel rend hommage à un ministre de Louis XV. Nous présentons plus bas l'histoire de chacun de ces noms.",
+    "names": [
+      {
+        "nameText": "Seselwa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "crs",
+        "namedBy": null,
+        "shortLine": "Le nom créole que se donnent les habitants de l'archipel, quelle que soit leur origine.",
+        "usedIn": ["crs"],
+        "periodLabel": "Écrit depuis le début des années 1980 au moins",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom seselwa est la forme créole de Seychellois : on dit en zonm seselwa, « un homme des Seychelles », et en fanm seselwaz, « une femme des Seychelles », selon les linguistes Susanne Maria Michaelis et Marcel Rosalie. Il désigne tous les habitants de l'archipel ; aucune source lue ne donne un nom que les familles d'origine française se donneraient à elles seules.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Survey chapter: Seychelles Creole",
+                "author": "Susanne Maria Michaelis et Marcel Rosalie",
+                "year": 2013,
+                "url": "https://apics-online.info/surveys/56",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Atlas of Pidgin and Creole Language Structures Online, lue le 11 octobre 2026. « autoglossonym: kreol (seselwa) » ; exemples « en zonm seselwa » (« a Seychelles man ») et « en fanm seselwaz » (« a Seychelles woman »)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": null,
+              "label": "Depuis le début des années 1980"
+            },
+            "era": "modern",
+            "statement": "Le nom seselwa sert aussi à nommer la langue créole des Seychelles depuis le début des années 1980, selon Jacques Leclerc : l'Institut créole, le Lenstiti Kreol, l'a proposé pour donner du prestige à cette langue longtemps méprisée. C'est la plus ancienne trace de ce nom que le projet connaît. Les Seychellois existaient déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les Seychelles",
+                "author": "Jacques Leclerc, L'aménagement linguistique dans le monde",
+                "year": 2023,
+                "url": "https://axl.cefan.ulaval.ca/afrique/seychel.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "CEFAN, Université Laval, page mise à jour le 19 décembre 2023 et lue le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Seychellois",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent la plupart des habitants de l'archipel, quelle que soit leur origine.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Seychellois est celui que se donnent la plupart des citoyens de l'archipel, qui se voient comme les héritiers d'une culture propre, selon l'étude de la Bibliothèque du Congrès. Les familles d'origine française en font partie ; on ne sait pas avec certitude si elles se disent elles-mêmes Franco-Seychellois.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Seychelles: A Country Study, chapitre « Ethnic Groups »",
+                "author": "Helen Chapin Metz (dir.), Federal Research Division, Bibliothèque du Congrès",
+                "year": 1994,
+                "url": "https://countrystudies.us/seychelles/7.htm",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "chapitre « Ethnic Groups »",
+                "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Franco-Seychellois",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Le nom des descendants des colons français ; il reprend celui de l'archipel.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Franco-Seychellois désigne un petit groupe : on compte moins de 1 000 Franco-Seychellois, selon le linguiste Jacques Leclerc. On ne sait pas avec certitude quand ce nom a été écrit pour la première fois.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les Seychelles",
+                "author": "Jacques Leclerc, L'aménagement linguistique dans le monde",
+                "year": 2023,
+                "url": "https://axl.cefan.ulaval.ca/afrique/seychel.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "CEFAN, Université Laval, page mise à jour le 19 décembre 2023 et lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1770,
+              "to": 1770,
+              "label": "1770"
+            },
+            "era": "colonial",
+            "statement": "On parle alors des premiers colons français : les vingt premiers Français venus de l'île Bourbon, aujourd'hui La Réunion, et de l'île de France, aujourd'hui Maurice, s'installent à Mahé et à Sainte-Anne en 1770, selon Jacques Leclerc. Les îles étaient inhabitées avant eux, selon les linguistes Susanne Maria Michaelis et Marcel Rosalie.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Les Seychelles",
+                "author": "Jacques Leclerc, L'aménagement linguistique dans le monde",
+                "year": 2023,
+                "url": "https://axl.cefan.ulaval.ca/afrique/seychel.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "CEFAN, Université Laval, page mise à jour le 19 décembre 2023 et lue le 11 octobre 2026."
+              },
+              {
+                "title": "Survey chapter: Seychelles Creole",
+                "author": "Susanne Maria Michaelis et Marcel Rosalie",
+                "year": 2013,
+                "url": "https://apics-online.info/surveys/56",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Atlas of Pidgin and Creole Language Structures Online, lue le 11 octobre 2026. « autoglossonym: kreol (seselwa) » ; exemples « en zonm seselwa » (« a Seychelles man ») et « en fanm seselwaz » (« a Seychelles woman »)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1756,
+              "to": 1756,
+              "label": "1756"
+            },
+            "era": "colonial",
+            "statement": "Le nom Franco-Seychellois reprend celui de l'archipel. Le nom Seychelles rend hommage au vicomte Moreau de Séchelles, contrôleur général des Finances de Louis XV, et apparaît lors de la prise de possession de 1756, où figure Nicolas Morphey, capitaine de la Marine française, selon Jacques Leclerc. Jon Pedersen rapporte la même origine.",
+            "actors": [
+              {
+                "name": "Nicolas Morphey",
+                "role": "capitaine de la Marine française"
+              },
+              {
+                "name": "Le vicomte Moreau de Séchelles",
+                "role": "contrôleur général des Finances de Louis XV"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les Seychelles",
+                "author": "Jacques Leclerc, L'aménagement linguistique dans le monde",
+                "year": 2023,
+                "url": "https://axl.cefan.ulaval.ca/afrique/seychel.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "CEFAN, Université Laval, page mise à jour le 19 décembre 2023 et lue le 11 octobre 2026."
+              },
+              {
+                "title": "Countries and Their Cultures: Seychelles",
+                "author": "Jon Pedersen",
+                "year": null,
+                "url": "https://www.everyculture.com/Sa-Th/Seychelles.html",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article de l'encyclopédie Countries and Their Cultures, lue le 11 octobre 2026 sur everyculture.com."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Grands blancs",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Les familles de planteurs descendant des premiers colons français.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "1994"
+            },
+            "era": "modern",
+            "statement": "Le nom grand blanc désigne une vingtaine de familles de planteurs descendant des premiers colons français, selon l'étude de la Bibliothèque du Congrès. Sous le gouvernement socialiste, ces familles ont perdu le pouvoir et le prestige qu'elles avaient. On ne sait pas avec certitude quand ce nom a été écrit pour la première fois aux Seychelles.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Seychelles: A Country Study, chapitre « Ethnic Groups »",
+                "author": "Helen Chapin Metz (dir.), Federal Research Division, Bibliothèque du Congrès",
+                "year": 1994,
+                "url": "https://countrystudies.us/seychelles/7.htm",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "chapitre « Ethnic Groups »",
+                "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -151,5 +151,286 @@
         "notes": "Site associatif communautaire sans autorité éditoriale académique identifiée ; utilisé pour la symbolique des couleurs du drapeau garinagu (noir, blanc, jaune)."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Garinagu désigne un peuple d'Amérique centrale, sur la côte du Belize, du Honduras, du Guatemala et du Nicaragua, né à Saint-Vincent, dans les Petites Antilles, de la rencontre entre Africains et Caraïbes. C'est le nom qu'il se donne ; Garifuna en est le singulier et le nom de la langue. Les Britanniques l'appelaient Black Caribs, et les Français Caraïbes noirs. Les sources ne s'accordent pas toujours sur l'origine de ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Garinagu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "cab",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne le peuple, au pluriel ; une personne se dit Garifuna.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Garinagu est le pluriel de Garifuna dans la langue du peuple, selon le linguiste Jacques Leclerc. En français, on peut écrire au pluriel Garifuna ou Garifunas.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Garifuna",
+                "author": "Jacques Leclerc, L'aménagement linguistique dans le monde",
+                "year": 2015,
+                "url": "https://axl.cefan.ulaval.ca/amsudant/Garifuna__histoire.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "CEFAN, Université Laval, page mise à jour le 17 décembre 2015 et lue le 12 octobre 2026.",
+                "page": "section 1, Étymologie"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Garifuna",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "cab",
+        "namedBy": null,
+        "shortLine": "Le nom d'une personne et de la langue ; il viendrait d'une racine arawak.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2001,
+              "to": 2008,
+              "label": "2001-2008"
+            },
+            "statement": "Le nom Garifuna désigne à la fois le peuple et sa langue dans l'inscription de l'UNESCO, qui proclame en 2001 puis inscrit en 2008 « la langue, la danse et la musique des Garifuna » au patrimoine immatériel de l'humanité. L'UNESCO les présente comme issus de métissages entre des groupes venus d'Afrique et des Caraïbes.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La langue, la danse et la musique des Garifuna",
+                "author": "UNESCO, Patrimoine culturel immatériel",
+                "year": 2008,
+                "url": "https://ich.unesco.org/fr/RL/la-langue-la-danse-et-la-musique-des-garifunas-00001",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "Proclamé en 2001, inscrit en 2008 sur la Liste représentative du patrimoine culturel immatériel de l'humanité. Page lue le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom Garifuna désigne le peuple, une personne de ce peuple et sa langue. Son origine est discutée ; nous présentons plus bas l'explication que donnent les sources.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Garifuna",
+                "author": "Jacques Leclerc, L'aménagement linguistique dans le monde",
+                "year": 2015,
+                "url": "https://axl.cefan.ulaval.ca/amsudant/Garifuna__histoire.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "CEFAN, Université Laval, page mise à jour le 17 décembre 2015 et lue le 12 octobre 2026.",
+                "page": "section 1, Étymologie"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Garifuna viendrait de la racine arawak karina, devenue Callinagu, Garinagu et Karifouna, et voudrait dire « mangeur de manioc », selon Jacques Leclerc.",
+            "hypothesisGroup": "origine du nom Garifuna",
+            "sources": [
+              {
+                "title": "Garifuna",
+                "author": "Jacques Leclerc, L'aménagement linguistique dans le monde",
+                "year": 2015,
+                "url": "https://axl.cefan.ulaval.ca/amsudant/Garifuna__histoire.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "CEFAN, Université Laval, page mise à jour le 17 décembre 2015 et lue le 12 octobre 2026.",
+                "page": "section 1, Étymologie"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Black Caribs",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "eng",
+        "namedBy": null,
+        "shortLine": "Le nom que leur donnaient les Britanniques au XVIIIe siècle.",
+        "periodLabel": "XVIIIe siècle, Saint-Vincent",
+        "accounts": [
+          {
+            "period": {
+              "from": 1795,
+              "to": 1795,
+              "label": "1795"
+            },
+            "statement": "Le nom Black Caribs, écrit « Black Charaibs », donne son titre au récit que William Young publie en 1795 sur Saint-Vincent. Young écrit que ce nom leur est donné « depuis quelques années », par opposition aux Red Charaibs, les premiers habitants amérindiens de l'île.",
+            "formAsWritten": "Black Charaibs",
+            "sources": [
+              {
+                "title": "An Account of the Black Charaibs in the Island of St. Vincent's",
+                "author": "Sir William Young",
+                "year": 1795,
+                "url": "https://archive.org/details/accountofblackch00youn",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, J. Sewell et Knight and Triphook, 1795, lu sur la numérisation d'Internet Archive le 12 octobre 2026. Ouvrage compilé d'après les papiers de feu Sir William Young, père de l'auteur, et dédié à l'agent de la colonie de Saint-Vincent.",
+                "page": "p. 5-6"
+              }
+            ],
+            "aspect": "usage"
+          },
+          {
+            "period": {
+              "from": 1764,
+              "to": 1764,
+              "label": "1764, cité en 1795"
+            },
+            "statement": "Le nom Black Caribs apparaît, écrit « Black Charaibs », dans un essai que Sir William Young publie en 1764 pour attirer des colons à Saint-Vincent, selon son fils, qui le cite en 1795. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Black Charaibs",
+            "birth": true,
+            "sources": [
+              {
+                "title": "An Account of the Black Charaibs in the Island of St. Vincent's",
+                "author": "Sir William Young",
+                "year": 1795,
+                "url": "https://archive.org/details/accountofblackch00youn",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, J. Sewell et Knight and Triphook, 1795, lu sur la numérisation d'Internet Archive le 12 octobre 2026. Ouvrage compilé d'après les papiers de feu Sir William Young, père de l'auteur, et dédié à l'agent de la colonie de Saint-Vincent.",
+                "page": "p. 19"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1675,
+              "to": 1675,
+              "label": "Vers 1675"
+            },
+            "statement": "On parle alors de Negroes pour désigner les rescapés d'un navire négrier parti de la baie du Bénin vers la Barbade, naufragé vers 1675 près de l'île de Bequia. William Young en fait les ancêtres de ceux qu'on appellera Black Charaibs.",
+            "before": true,
+            "sources": [
+              {
+                "title": "An Account of the Black Charaibs in the Island of St. Vincent's",
+                "author": "Sir William Young",
+                "year": 1795,
+                "url": "https://archive.org/details/accountofblackch00youn",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, J. Sewell et Knight and Triphook, 1795, lu sur la numérisation d'Internet Archive le 12 octobre 2026. Ouvrage compilé d'après les papiers de feu Sir William Young, père de l'auteur, et dédié à l'agent de la colonie de Saint-Vincent.",
+                "page": "p. 6"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1635,
+              "to": 1635,
+              "label": "1635"
+            },
+            "statement": "On parle alors de Yurumein pour désigner Saint-Vincent, où des Africains rescapés de naufrages de navires négriers trouvent refuge auprès des Caraïbes en 1635, selon Jacques Leclerc, qui ne donne pas la même date que Young.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Garifuna",
+                "author": "Jacques Leclerc, L'aménagement linguistique dans le monde",
+                "year": 2015,
+                "url": "https://axl.cefan.ulaval.ca/amsudant/Garifuna__histoire.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "CEFAN, Université Laval, page mise à jour le 17 décembre 2015 et lue le 12 octobre 2026.",
+                "page": "section 2.1, Caraïbes noirs et Caraïbes rouges"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1795,
+              "to": 1795,
+              "label": "Rapportée en 1795"
+            },
+            "statement": "Le nom Black Caribs viendrait des Africains eux-mêmes : en entrant en lutte contre leurs anciens maîtres amérindiens, ils auraient pris leur nom de Charaibs, et chacun un nom amérindien, selon William Young. Young écrit alors que les Britanniques combattent ce peuple à Saint-Vincent.",
+            "hypothesisGroup": "origine du nom Black Caribs",
+            "sources": [
+              {
+                "title": "An Account of the Black Charaibs in the Island of St. Vincent's",
+                "author": "Sir William Young",
+                "year": 1795,
+                "url": "https://archive.org/details/accountofblackch00youn",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, J. Sewell et Knight and Triphook, 1795, lu sur la numérisation d'Internet Archive le 12 octobre 2026. Ouvrage compilé d'après les papiers de feu Sir William Young, père de l'auteur, et dédié à l'agent de la colonie de Saint-Vincent.",
+                "page": "p. 8"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Black Caribs, en français Caraïbes noirs et en espagnol Caribes Negros, aurait été donné par opposition aux Caraïbes amérindiens, que les Français appelaient Caraïbes rouges et les Anglais Yellow Karibs, selon Jacques Leclerc.",
+            "hypothesisGroup": "origine du nom Black Caribs",
+            "sources": [
+              {
+                "title": "Garifuna",
+                "author": "Jacques Leclerc, L'aménagement linguistique dans le monde",
+                "year": 2015,
+                "url": "https://axl.cefan.ulaval.ca/amsudant/Garifuna__histoire.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "CEFAN, Université Laval, page mise à jour le 17 décembre 2015 et lue le 12 octobre 2026.",
+                "page": "section 2.1, Caraïbes noirs et Caraïbes rouges"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Caraïbes noirs",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "La forme française de Black Caribs.",
+        "periodLabel": "Époque coloniale",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Époque coloniale"
+            },
+            "statement": "Le nom Caraïbes noirs désigne en français le peuple né à Saint-Vincent de l'union entre réfugiés africains et Caraïbes, selon Jacques Leclerc. Il se distingue de Caraïbes rouges, le nom des Amérindiens de l'île.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Garifuna",
+                "author": "Jacques Leclerc, L'aménagement linguistique dans le monde",
+                "year": 2015,
+                "url": "https://axl.cefan.ulaval.ca/amsudant/Garifuna__histoire.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "CEFAN, Université Laval, page mise à jour le 17 décembre 2015 et lue le 12 octobre 2026.",
+                "page": "section 2.1, Caraïbes noirs et Caraïbes rouges"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -127,5 +127,139 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Talensi désigne un peuple du nord-est du Ghana, autour des collines de Tongo, qui se nomme lui-même Talensi. Les Britanniques l'ont aussi rangé sous le nom Frafra, avec ses voisins. On ne sait pas avec certitude d'où vient le nom Talensi ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Talensi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Écrit Talansi en 1920 ; son origine n'est pas connue.",
+        "periodLabel": "Écrit depuis 1920 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Talensi est l'un des noms que les peuples des districts de Navarro et de Zuaragu se donnent eux-mêmes, selon A. W. Cardinall, qui dit employer pour chaque peuple son propre nom. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Natives of the Northern Territories of the Gold Coast : their customs, religion and folklore",
+                "author": "A. W. Cardinall",
+                "year": 1920,
+                "url": "https://archive.org/details/nativesofnorther00carduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. vii et p. 1",
+                "notes": "Londres, George Routledge & Sons ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Préface : « Throughout I have taken the names employed by the people themselves to describe their tribe. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1949,
+              "to": 1949,
+              "label": "1949"
+            },
+            "era": "colonial",
+            "statement": "Le nom Talensi s'écrit Tallensi dans le titre d'un livre de l'anthropologue Meyer Fortes sur les liens de parenté de ce peuple.",
+            "sources": [
+              {
+                "title": "The web of kinship among the Tallensi",
+                "author": "Meyer Fortes",
+                "year": 1949,
+                "url": "https://archive.org/details/webofkinshipamon0000fort",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'exemplaire numérisé consultée le 11 octobre 2026 ; le livre est en prêt contrôlé et nous n'en avons lu que le titre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Talensi apparaît par écrit sous la forme « Talansi » chez l'administrateur britannique A. W. Cardinall, parmi les principaux peuples des districts de Navarro et de Zuaragu, avec les Nankanni, les Nabdam, les Kassena et les Builsa. C'est la plus ancienne trace de ce nom que le projet connaît. Les Talensi vivaient déjà autour de Tongo avant lui.",
+            "formAsWritten": "Talansi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Natives of the Northern Territories of the Gold Coast : their customs, religion and folklore",
+                "author": "A. W. Cardinall",
+                "year": 1920,
+                "url": "https://archive.org/details/nativesofnorther00carduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Londres, George Routledge & Sons ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Préface : « Throughout I have taken the names employed by the people themselves to describe their tribe. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Frafra",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Employé par l'administration britannique depuis le début du XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Frafra, écrit Fra-Fra, regroupe pour les Britanniques tous les Nankanni, les Nabdam et les Talensi, selon A. W. Cardinall. Il sert surtout à inscrire l'origine des soldats et des policiers recrutés dans le nord.",
+            "sources": [
+              {
+                "title": "The Natives of the Northern Territories of the Gold Coast : their customs, religion and folklore",
+                "author": "A. W. Cardinall",
+                "year": 1920,
+                "url": "https://archive.org/details/nativesofnorther00carduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. viii",
+                "notes": "Londres, George Routledge & Sons ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Préface : « Throughout I have taken the names employed by the people themselves to describe their tribe. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "Proposée en 1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Frafra viendrait d'une formule que ces peuples murmurent pour remercier ou pour demander, « Fra-Fra » ou « Fura-Fura », selon A. W. Cardinall.",
+            "hypothesisGroup": "origine du nom Frafra",
+            "sources": [
+              {
+                "title": "The Natives of the Northern Territories of the Gold Coast : their customs, religion and folklore",
+                "author": "A. W. Cardinall",
+                "year": 1920,
+                "url": "https://archive.org/details/nativesofnorther00carduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. viii",
+                "notes": "Londres, George Routledge & Sons ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Préface : « Throughout I have taken the names employed by the people themselves to describe their tribe. »"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

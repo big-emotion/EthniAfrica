@@ -112,5 +112,65 @@
         "source_kind": "press"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bille désigne une ville-État ijo de l'est du delta du Niger, au Nigeria, entre Bonny et Elem Kalabari, et son peuple, qui le porte lui-même. Les historiens l'écrivent aussi Bile. Les sources que nous avons lues n'expliquent pas l'origine de ce nom, et nous ne connaissons pas sa plus ancienne trace écrite.",
+    "names": [
+      {
+        "nameText": "Bille",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'une ville-État ijo de l'est du delta du Niger ; son origine n'est pas expliquée.",
+        "usedIn": ["eng"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1800,
+              "label": "Avant 1800, selon les traditions orales"
+            },
+            "era": "polity",
+            "statement": "Le nom Bille, écrit Bile, désigne chez l'historien Ebiegberi J. Alagoa une ville située sur la route qui mène de Nembe à l'estuaire du Rio Real. Les traditions orales parlent de guerres entre Nembe et cette ville. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Groundwork of Nigerian History, ch. 3 : Peoples of the Cross River Valley and the Eastern Niger Delta",
+                "author": "Ebiegberi J. Alagoa",
+                "year": 1980,
+                "url": "https://nigeriareposit.nln.gov.ng/handle/20.500.14186/483",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 72",
+                "notes": "Ibadan, Heinemann Educational Books (Nigeria), 1980, ouvrage dirigé par Obaro Ikime pour la Historical Society of Nigeria ; lu le 12 octobre 2026 dans le dépôt numérique de la Bibliothèque nationale du Nigeria."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1638,
+              "to": null,
+              "label": "À partir de 1638, selon l'auteur"
+            },
+            "era": "polity",
+            "statement": "Le nom Bille désigne, chez l'historien A. F. C. Ryder, l'une des villes qui fournissent aux navires européens du Rio Real une petite partie de leurs captifs au XVIIe siècle, la plupart venant d'Elem Kalabari.",
+            "sources": [
+              {
+                "title": "Groundwork of Nigerian History, ch. 13 : The Trans-Atlantic Slave Trade",
+                "author": "A. F. C. Ryder",
+                "year": 1980,
+                "url": "https://nigeriareposit.nln.gov.ng/handle/20.500.14186/483",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 240",
+                "notes": "Ibadan, Heinemann Educational Books (Nigeria), 1980, ouvrage dirigé par Obaro Ikime pour la Historical Society of Nigeria ; lu le 12 octobre 2026 dans le dépôt numérique de la Bibliothèque nationale du Nigeria."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

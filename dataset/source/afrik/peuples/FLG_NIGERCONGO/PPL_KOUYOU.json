@@ -110,5 +110,75 @@
         "tier": "referenced"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kouyou désigne un peuple bantou du nord de la République du Congo, autour de la rivière du même nom et d'Owando, qui se nomme lui-même Kouyou. Sa langue est aussi appelée koyo ou ekoyo. Nous n'avons pas trouvé de source qui dise d'où vient ce nom ; ce que nous savons est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Kouyou",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit dès 1918 ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit depuis 1918 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1918,
+              "to": 1919,
+              "label": "1918-1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kouyou apparaît dans le titre d'une étude d'A. Poupon, « Étude ethnographique de la tribu Kouyou », parue dans la revue L'Anthropologie en 1918-1919, selon le catalogue Glottolog. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle. On ne sait pas avec certitude d'où vient ce nom.",
+            "birth": true,
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Poupon, A. 1918-1919. Étude ethnographique de la tribu Kouyou",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/reference/id/320834",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice bibliographique lue le 11 octobre 2026 : L'Anthropologie, tome XXIX, p. 53-88. Nous n'avons pas lu l'article de Poupon."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Koyo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "shortLine": "Le nom sous lequel les linguistes classent la langue des Kouyou.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Koyo est celui sous lequel le catalogue Glottolog classe la langue des Kouyou, parmi les langues bantoues ; il donne aussi les formes Ekoyo et Kouyou.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Glottolog, Koyo (koh)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/koyo1242",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche de langue lue le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

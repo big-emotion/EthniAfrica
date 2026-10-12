@@ -123,5 +123,208 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Songhay Gurma désigne dans nos fiches les Songhay de la région de Hombori, au Mali, et du nord du Burkina Faso, qui se nomment eux-mêmes Songhay. Les linguistes appellent leur langue humburi senni, le parler de Hombori. Nous n'avons trouvé le nom Songhay Gurma tel quel dans aucune des sources que nous avons lues. On ne sait pas avec certitude d'où vient le nom Hombori ; nous présentons plus bas l'explication que nous avons lue.",
+    "names": [
+      {
+        "nameText": "Songhay",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "hmb",
+        "namedBy": null,
+        "shortLine": "Le nom que les Songhay se donnent, écrit aussi Sonrhaï ou Songoï.",
+        "usedIn": ["hmb", "fra"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Songhay, que Maurice Delafosse écrit Songaï, est celui que ce peuple se donne lui-même, sous les formes Songaï, Sonrhaï ou Songoï. Dans le cercle de Hombori, il compte environ 12 000 Songaï, qui vivent surtout près du Niger.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 119-120 et p. 160",
+                "notes": "Paris, Émile Larose, 1912. Lu le 11 octobre 2026 dans l'édition numérique du Projet Gutenberg, qui garde la pagination du livre. L'auteur était administrateur colonial ; ses classements des peuples sont ceux de l'administration de son temps."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Humburi Senni",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "hmb",
+        "namedBy": "Les linguistes",
+        "shortLine": "Le nom que les linguistes donnent à la langue songhay de Hombori.",
+        "usedIn": ["eng"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Humburi Senni désigne la langue songhay de la région de Hombori, au Mali et au Burkina Faso, dans la base Glottolog, qui donne aussi les noms Hombori Songhay et Central Songai. On ne sait pas avec certitude d'où vient le nom Hombori.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Humburi Senni Songhay, Glottolog",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/humb1243",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Lu le 11 octobre 2026. La notice range la langue parmi les langues songhay de l'Est et la situe au Mali et au Burkina Faso ; elle donne d'après la base MultiTree les autres noms Hombori Songhay et Central Songai."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Hombori",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la région et de la ville où vivent ces Songhay ; écrit Honbori au XVIIe siècle.",
+        "usedIn": ["fra"],
+        "periodLabel": "Écrit dès le XVIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hombori désigne en 1912 un cercle de l'administration coloniale, appelé aussi cercle du Gourma, et une région de falaises qui atteignent là leur plus grande hauteur, selon Maurice Delafosse.",
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 77 et p. 103",
+                "notes": "Paris, Émile Larose, 1912. Lu le 11 octobre 2026 dans l'édition numérique du Projet Gutenberg, qui garde la pagination du livre. L'auteur était administrateur colonial ; ses classements des peuples sont ceux de l'administration de son temps."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1655,
+              "label": "Chronique arrêtée en 1655"
+            },
+            "era": "polity",
+            "statement": "Le nom Hombori a une forme proche, Honbori, dans le Tarikh es-Soudan, chronique de Tombouctou : le Honbori-Koï, le chef du Hombori, y figure dans le cortège royal des askia. C'est la plus ancienne trace de ce nom que le projet connaît. La région existait déjà avant lui.",
+            "formAsWritten": "Honbori-Koï",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tarikh es-Soudan, traduit de l'arabe par O. Houdas",
+                "author": "Abderrahman es-Saʿdi",
+                "year": 1900,
+                "url": "https://archive.org/details/tarikhessoudanpa00sadauoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 158-159",
+                "notes": "Paris, Ernest Leroux, 1900. Chronique écrite à Tombouctou par un lettré né en 1596 ; elle s'arrête en 1655, selon l'introduction du traducteur, p. XIII-XIV. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Proposée en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hombori viendrait du peul et voudrait dire « pays des Tombo », un peuple des falaises de la région, selon Maurice Delafosse. Il ajoute que des auteurs arabes appelaient ce pays Tombola, qui a le même sens en mandé.",
+            "hypothesisGroup": "origine du nom Hombori",
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 129, note 60, et p. 303",
+                "notes": "Paris, Émile Larose, 1912. Lu le 11 octobre 2026 dans l'édition numérique du Projet Gutenberg, qui garde la pagination du livre. L'auteur était administrateur colonial ; ses classements des peuples sont ceux de l'administration de son temps."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Songhay Gurma",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de cette fiche ; il réunit Songhay et Gourma, la rive droite du Niger.",
+        "periodLabel": "Nom employé dans nos fiches",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Songhay Gurma réunit le nom des Songhay et celui du Gourma, que les Songhay donnent à toute la rive droite du Niger entre le lac Débo et Say, selon Maurice Delafosse. Nous ne l'avons trouvé tel quel dans aucune des sources que nous avons lues.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 72",
+                "notes": "Paris, Émile Larose, 1912. Lu le 11 octobre 2026 dans l'édition numérique du Projet Gutenberg, qui garde la pagination du livre. L'auteur était administrateur colonial ; ses classements des peuples sont ceux de l'administration de son temps."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1655,
+              "label": "Chronique arrêtée en 1655"
+            },
+            "era": "polity",
+            "statement": "Le nom Gourma désigne déjà, dans le Tarikh es-Soudan, une région et une ville de l'autre côté du Niger, en face de Tendirma, où les askia mènent des expéditions.",
+            "sources": [
+              {
+                "title": "Tarikh es-Soudan, traduit de l'arabe par O. Houdas",
+                "author": "Abderrahman es-Saʿdi",
+                "year": 1900,
+                "url": "https://archive.org/details/tarikhessoudanpa00sadauoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 154 et p. 205",
+                "notes": "Paris, Ernest Leroux, 1900. Chronique écrite à Tombouctou par un lettré né en 1596 ; elle s'arrête en 1655, selon l'introduction du traducteur, p. XIII-XIV. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

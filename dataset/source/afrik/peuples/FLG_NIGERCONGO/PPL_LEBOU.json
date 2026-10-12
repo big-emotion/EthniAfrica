@@ -101,5 +101,110 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Lébou désigne un peuple de la presqu'île du Cap-Vert, autour de Dakar, au Sénégal, qui se nomme lui-même Lébou, ou Lébu. Plusieurs explications de ce nom circulent, la plupart rapportées par des traditions orales ; nous les présentons plus bas. Nous ne savons pas quand ce nom a été écrit pour la première fois.",
+    "names": [
+      {
+        "nameText": "Lébou",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "wol",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple du Cap-Vert ; plusieurs explications de son origine circulent.",
+        "usedIn": ["fra", "wol"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Lébou, que Moustapha Diop écrit Lébu, désigne la population qui vit au cap Vert, la pointe occidentale de l'Afrique, au Sénégal. Son origine est discutée : des traditions orales et des auteurs en donnent plusieurs explications.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Sacrifices en Islam. Espaces et temps d'un rituel, ch. 13 : Le sacrifice en milieu lébu (Sénégal)",
+                "author": "Moustapha Diop",
+                "year": 1999,
+                "url": "https://books.openedition.org/editionscnrs/1919",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 4",
+                "notes": "Paris, CNRS Éditions, 1999, ouvrage dirigé par Pierre Bonte, Anne-Marie Brisebarre et Altan Gokalp. Lu le 12 octobre 2026 sur OpenEdition Books, chapitre des p. 331-353 ; la note 4 rassemble les explications du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "Rapportée en 1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Lébou viendrait du wolof léb, « contracter une dette », « emprunter », selon certaines traditions orales que rapporte Moustapha Diop. Il viendrait d'un lieu nommé pour cette raison lébu kay ba, « lieu où l'on prête », où les ancêtres auraient prêté des biens à leurs voisins pendant une période difficile.",
+            "hypothesisGroup": "origine du nom Lébou",
+            "sources": [
+              {
+                "title": "Sacrifices en Islam. Espaces et temps d'un rituel, ch. 13 : Le sacrifice en milieu lébu (Sénégal)",
+                "author": "Moustapha Diop",
+                "year": 1999,
+                "url": "https://books.openedition.org/editionscnrs/1919",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 4",
+                "notes": "Paris, CNRS Éditions, 1999, ouvrage dirigé par Pierre Bonte, Anne-Marie Brisebarre et Altan Gokalp. Lu le 12 octobre 2026 sur OpenEdition Books, chapitre des p. 331-353 ; la note 4 rassemble les explications du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "Rapportée en 1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Lébou viendrait du wolof luubute, « impolitesse, insolence », selon une autre version que rapporte Moustapha Diop. Une explication locale, qu'il cite d'après Sarr, dit qu'on les appela ainsi parce que ce sont des « gens difficiles » qui n'acceptent pas les vexations.",
+            "hypothesisGroup": "origine du nom Lébou",
+            "sources": [
+              {
+                "title": "Sacrifices en Islam. Espaces et temps d'un rituel, ch. 13 : Le sacrifice en milieu lébu (Sénégal)",
+                "author": "Moustapha Diop",
+                "year": 1999,
+                "url": "https://books.openedition.org/editionscnrs/1919",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 4",
+                "notes": "Paris, CNRS Éditions, 1999, ouvrage dirigé par Pierre Bonte, Anne-Marie Brisebarre et Altan Gokalp. Lu le 12 octobre 2026 sur OpenEdition Books, chapitre des p. 331-353 ; la note 4 rassemble les explications du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1953,
+              "to": 1999,
+              "label": "Proposée en 1953, rapportée en 1999"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lébou viendrait du wolof lééb, « conter », « dire une fable », selon Balandier et Mercier, en 1953, que cite Moustapha Diop ; ces auteurs y voient l'habileté des Lébou à cacher leur pensée.",
+            "hypothesisGroup": "origine du nom Lébou",
+            "sources": [
+              {
+                "title": "Sacrifices en Islam. Espaces et temps d'un rituel, ch. 13 : Le sacrifice en milieu lébu (Sénégal)",
+                "author": "Moustapha Diop",
+                "year": 1999,
+                "url": "https://books.openedition.org/editionscnrs/1919",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 4",
+                "notes": "Paris, CNRS Éditions, 1999, ouvrage dirigé par Pierre Bonte, Anne-Marie Brisebarre et Altan Gokalp. Lu le 12 octobre 2026 sur OpenEdition Books, chapitre des p. 331-353 ; la note 4 rassemble les explications du nom."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
