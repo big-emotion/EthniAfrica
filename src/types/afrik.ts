@@ -813,7 +813,9 @@ export interface RankedPlace {
   id: string;
   nameMain: string;
   placeType: string;
-  countryId: string;
+  /** Null for a region that spans several countries (migration 106). */
+  countryId: string | null;
+  countryIds: string[];
   summary: string;
   nameHistory: NameHistory | null;
   relevance: number;

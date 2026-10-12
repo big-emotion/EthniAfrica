@@ -2,12 +2,16 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "lieu",
-    "directives": "Un lieu (ville, région, site historique) dont le nom pose une question d'origine. Chaque forme du nom porte sa propre origine et ses sources ; quand plusieurs récits expliquent une forme, chacun est un compte attribué, aucun n'est couronné. Les liens pointent vers la fiche pays et les fiches peuples, jamais l'inverse (DEC-069)."
+    "directives": "Un lieu (ville, région, site historique) dont le nom pose une question d'origine. Chaque forme du nom porte sa propre origine et ses sources ; quand plusieurs récits expliquent une forme, chacun est un compte attribué, aucun n'est couronné. Les liens pointent vers la fiche pays et les fiches peuples, jamais l'inverse (DEC-069). Un lieu situé dans un seul pays porte countryId ; une région qui s'étend sur plusieurs pays (le Sahara, par exemple) porte countryIds à la place, avec au moins deux pays, chacun une seule fois. Jamais les deux."
   },
   "id": "LOC_XXXXX",
   "placeType": "ville | region | site-historique | autre",
   "nameMain": "<Nom actuel du lieu>",
   "countryId": "XXX",
+  "countryIds": [
+    "<Seulement pour une région sur plusieurs pays, à la place de countryId : XXX>",
+    "YYY"
+  ],
   "associatedPeoples": [
     {
       "peopleId": "PPL_XXXXX",

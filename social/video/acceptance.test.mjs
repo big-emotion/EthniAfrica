@@ -5,9 +5,9 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { mkdtemp, readFile, rm } from "node:fs/promises";
+import { mkdtemp, readFile, rm, symlink } from "node:fs/promises";
 import { tmpdir } from "node:os";
-import { join } from "node:path";
+import { join, resolve } from "node:path";
 import sharp from "sharp";
 import { loadSequence } from "./sequence.mjs";
 import { renderFrame, encodeVideo } from "./render.mjs";
@@ -162,4 +162,40 @@ test("areas, hatching and borders are drawn on the hold frame", async () => {
     await windowStats(hold, 890, 919, 24),
   ];
   assert.ok(border[1].max > border[0].max + 40, "the quiet border is drawn");
+});
+
+// @req REQ-186
+test("a relief frame repeats pixel for pixel and differs from the flat frame", async () => {
+  const seq = (style) => loadSequence({ ...structuredClone(west), style });
+  const [first, again, flat] = await Promise.all([
+    renderFrame(seq("relief"), 359, options()),
+    renderFrame(seq("relief"), 359, options()),
+    renderFrame(seq("flat"), 359, options()),
+  ]);
+  const [a, b, c] = await Promise.all(
+    [first, again, flat].map((png) => sharp(png).raw().toBuffer())
+  );
+  assert.ok(a.equals(b), "same frame number, same pixels");
+  assert.ok(!a.equals(c), "relief is not the flat map");
+});
+
+// @req REQ-186
+test("a relief video needs the verified height model", async () => {
+  const dir = await mkdtemp(join(tmpdir(), "ethniafrica-relief-"));
+  try {
+    await symlink(
+      join(resolve(options().assets), "imagery"),
+      join(dir, "imagery")
+    );
+    await assert.rejects(
+      renderFrame(
+        loadSequence({ ...structuredClone(west), style: "relief" }),
+        0,
+        { assets: dir }
+      ),
+      /relief/i
+    );
+  } finally {
+    await rm(dir, { recursive: true, force: true });
+  }
 });
