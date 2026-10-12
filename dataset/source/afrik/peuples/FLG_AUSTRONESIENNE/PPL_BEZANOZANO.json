@@ -118,5 +118,183 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bezanozano désigne un petit peuple de l'est de Madagascar, autour de Moramanga et de la plaine du Mangoro, qui se nomme lui-même Bezanozano. Un autre nom, Antankay, renvoie à la région d'Ankay où il vit. Les sources ne s'accordent pas sur l'origine du nom Bezanozano ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Bezanozano",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mlg",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent, écrit dès 1838 ; son origine reste discutée.",
+        "periodLabel": "Écrit depuis 1838 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bezanozano désigne aujourd'hui une population du centre-est de Madagascar, dont les villes principales sont Moramanga et Anjiro, selon le Malagasy Dictionary and Encyclopedia. Son origine est discutée ; nous présentons les explications plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Malagasy Dictionary and Encyclopedia, entrée « bezanozano »",
+                "author": "Malagasy Dictionary and Encyclopedia",
+                "year": null,
+                "url": "https://malagasyword.org/bins/teny2/bezanozano",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire en ligne qui rassemble plusieurs dictionnaires malgaches, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1838,
+              "to": 1838,
+              "label": "1838"
+            },
+            "era": "polity",
+            "statement": "Le nom Bezanozano désigne aussi, chez William Ellis, ceux que le souverain de l'Imerina oblige à porter ses marchandises de la côte à la capitale, sans salaire et sous peine de mort.",
+            "sources": [
+              {
+                "title": "History of Madagascar, vol. I",
+                "author": "William Ellis",
+                "year": 1838,
+                "url": "https://archive.org/details/historyofmadagas01elli",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 198",
+                "notes": "Londres, Fisher, Son & Co., lu sur la numérisation d'Internet Archive. L'auteur, missionnaire de la London Missionary Society, compile les écrits des missionnaires installés à Antananarivo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1838,
+              "to": 1838,
+              "label": "1838"
+            },
+            "era": "polity",
+            "statement": "Le nom Bezanozano apparaît par écrit dans l'Histoire de Madagascar du missionnaire William Ellis : les habitants de la province d'Ankay « sont appelés Bezanozano ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà là avant elle.",
+            "formAsWritten": "Bezanozano",
+            "birth": true,
+            "sources": [
+              {
+                "title": "History of Madagascar, vol. I",
+                "author": "William Ellis",
+                "year": 1838,
+                "url": "https://archive.org/details/historyofmadagas01elli",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 80",
+                "notes": "Londres, Fisher, Son & Co., lu sur la numérisation d'Internet Archive. L'auteur, missionnaire de la London Missionary Society, compile les écrits des missionnaires installés à Antananarivo. Passage : « Its inhabitants are called Bezanozano »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1838,
+              "to": 1838,
+              "label": "Proposée en 1838"
+            },
+            "era": "polity",
+            "statement": "Le nom Bezanozano voudrait dire « anarchique », selon William Ellis, qui décrit ce peuple comme l'un des plus indépendants de l'île.",
+            "hypothesisGroup": "origine du nom Bezanozano",
+            "sources": [
+              {
+                "title": "History of Madagascar, vol. I",
+                "author": "William Ellis",
+                "year": 1838,
+                "url": "https://archive.org/details/historyofmadagas01elli",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 80 et p. 131",
+                "notes": "Londres, Fisher, Son & Co., lu sur la numérisation d'Internet Archive. L'auteur, missionnaire de la London Missionary Society, compile les écrits des missionnaires installés à Antananarivo. Passage : « anarchical is, in fact, the signification of the name Bezanozano »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "Rapportée en 1985"
+            },
+            "statement": "Le nom Bezanozano viendrait de zanozano, le nom que les Betsimisaraka donnent aux branchages : les Bezanozano en apportaient de secs quand ils descendaient chez eux chercher du sel ou du travail, et le nom leur serait resté, selon le dictionnaire malgache de Régis Rajemisa-Raolison.",
+            "hypothesisGroup": "origine du nom Bezanozano",
+            "sources": [
+              {
+                "title": "Rakibolana malagasy, article zanozano",
+                "author": "Régis Rajemisa-Raolison",
+                "year": 1985,
+                "url": "https://malagasyword.org/bins/teny2/zanozano",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire monolingue malgache, Ambozontany, 1985, lu dans le Malagasy Dictionary and Encyclopedia en ligne le 12 octobre 2026. Seconde définition de l'article, en malgache. La première définition décrit une coiffure portée notamment par les Bezanozano, sans la rattacher au nom."
+              }
+            ],
+            "era": "modern"
+          }
+        ]
+      },
+      {
+        "nameText": "Antankay",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "mlg",
+        "namedBy": null,
+        "shortLine": "Un ancien nom tiré de l'Ankay, la grande plaine où vivent les Bezanozano.",
+        "periodLabel": "Écrit en 1838",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage des dictionnaires"
+            },
+            "statement": "Le nom Antankay renvoie à l'Ankay, une grande plaine d'altitude à l'est de l'Imerina. En dialecte bezanozano, le mot ankay voudrait dire « plaine », selon le Malagasy Dictionary and Encyclopedia.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Malagasy Dictionary and Encyclopedia, entrée « Ankay »",
+                "author": "Malagasy Dictionary and Encyclopedia",
+                "year": null,
+                "url": "https://malagasyword.org/bins/teny2/Ankay",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire en ligne qui rassemble plusieurs dictionnaires malgaches, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1838,
+              "to": 1838,
+              "label": "1838"
+            },
+            "era": "polity",
+            "statement": "Le nom Antankay apparaît par écrit chez William Ellis, qui l'emploie pour la province d'Ankay elle-même, « parfois appelée Antankay ». C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Antankay",
+            "birth": true,
+            "sources": [
+              {
+                "title": "History of Madagascar, vol. I",
+                "author": "William Ellis",
+                "year": 1838,
+                "url": "https://archive.org/details/historyofmadagas01elli",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 80",
+                "notes": "Londres, Fisher, Son & Co., lu sur la numérisation d'Internet Archive. L'auteur, missionnaire de la London Missionary Society, compile les écrits des missionnaires installés à Antananarivo. Passage : « It is a narrow strip of the interior of the country, and is sometimes called Antankay »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

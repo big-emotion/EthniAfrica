@@ -112,5 +112,280 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Antambahoaka désigne un peuple de la côte sud-est de Madagascar, autour de Mananjary, qui se nomme lui-même Antambahoaka. Il se serait appelé autrefois Andriambahoaka, et il rattache son origine à Raminia, l'ancêtre des Zafiraminia. Les sources expliquent le nom de plusieurs façons ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Antambahoaka",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mlg",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent, écrit dès 1891 ; Ferrand y lit « les sujets des princes ».",
+        "periodLabel": "Écrit depuis 1891 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Antambahoaka désigne une population du sud-est de Madagascar, entre les rivières Sakaleona et Namorona, dont la ville principale est Mananjary. Selon la tradition orale, elle descendrait d'Arabes, d'après le Malagasy Dictionary and Encyclopedia.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Malagasy Dictionary and Encyclopedia, entrée « tambahoaka »",
+                "author": "Malagasy Dictionary and Encyclopedia",
+                "year": null,
+                "url": "https://malagasyword.org/bins/teny2/tambahoaka",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionnaire en ligne qui rassemble plusieurs dictionnaires malgaches, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1893,
+              "to": 1893,
+              "label": "1893"
+            },
+            "era": "colonial",
+            "statement": "Le nom Antambahoaka est celui d'un des sept groupes dont Gabriel Ferrand publie les récits d'origine, dictés par des Malgaches âgés. Selon le récit antambahoaka, Raminia et sa sœur Ravahinia se marient à Madagascar et y fondent de nombreuses lignées ; un autre récit du même livre appelle Raminia « le fondateur de la tribu des Antambahoaka », venu de La Mecque.",
+            "sources": [
+              {
+                "title": "Les Musulmans à Madagascar et aux îles Comores, deuxième partie : Zafindraminia, Antambahoaka, Onjatsy, Antaiony, Zafikazimambo, Antaivandrika et Sahatavy",
+                "author": "Gabriel Ferrand",
+                "year": 1893,
+                "url": "https://archive.org/details/lesmusulmansmad00ferrgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 7-8 et p. 26",
+                "notes": "Paris, Ernest Leroux, publication de l'École des lettres d'Alger, lue sur la numérisation d'Internet Archive. L'auteur, agent résident de France à Mananjary, publie des récits dictés par des Malgaches âgés. Le récit antambahoaka est donné en malgache p. 26 ; Ferrand le résume en français p. 7 ; le récit des Onjatsy, cité p. 8, nomme Raminia fondateur des Antambahoaka."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1891,
+              "to": 1891,
+              "label": "1891"
+            },
+            "era": "colonial",
+            "statement": "Le nom Antambahoaka apparaît par écrit chez Gabriel Ferrand, parmi les manuscrits en écriture arabe que l'explorateur Alfred Grandidier avait fait copier : l'un s'intitule « Histoire des Antambahoaka ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle, et ces manuscrits ne sont pas datés.",
+            "formAsWritten": "Antambahoaka",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les Musulmans à Madagascar et aux îles Comores, première partie : Les Antaimorona",
+                "author": "Gabriel Ferrand",
+                "year": 1891,
+                "url": "https://archive.org/details/lesmusulmansmad00ferrgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 68",
+                "notes": "Paris, Ernest Leroux, publication de l'École des lettres d'Alger, lue sur la numérisation d'Internet Archive, reliée avec la deuxième partie. Passage : « 10° l'Histoire de Raminia et de ses enfants nés à Madagascar ; 11° Histoire des Antambahoaka »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1893,
+              "to": 1893,
+              "label": "Proposée en 1893"
+            },
+            "era": "colonial",
+            "statement": "Le nom Antambahoaka viendrait de anta, « les gens », et vaohaka, « sujets » : ce seraient « ceux qui sont les sujets des princes », selon Gabriel Ferrand, qui vivait alors à Mananjary.",
+            "hypothesisGroup": "origine du nom Antambahoaka",
+            "sources": [
+              {
+                "title": "Les Musulmans à Madagascar et aux îles Comores, deuxième partie : Zafindraminia, Antambahoaka, Onjatsy, Antaiony, Zafikazimambo, Antaivandrika et Sahatavy",
+                "author": "Gabriel Ferrand",
+                "year": 1893,
+                "url": "https://archive.org/details/lesmusulmansmad00ferrgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 20, note 2",
+                "notes": "Paris, Ernest Leroux, publication de l'École des lettres d'Alger, lue sur la numérisation d'Internet Archive. L'auteur, agent résident de France à Mananjary, publie des récits dictés par des Malgaches âgés. Passage : « Anta, les gens ; vaohaka, sujets ; ceux qui sont les sujets des princes »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Andriambahoaka",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "mlg",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils auraient porté autrefois, « les nobles sujets des princes », selon Ferrand.",
+        "periodLabel": "Avant 1893",
+        "accounts": [
+          {
+            "period": {
+              "from": 1893,
+              "to": 1893,
+              "label": "1893"
+            },
+            "era": "colonial",
+            "statement": "Le nom Andriambahoaka aurait été autrefois celui des Antambahoaka, et voudrait dire « les nobles sujets des princes », selon Gabriel Ferrand. C'est la plus ancienne trace de ce nom que le projet connaît ; Ferrand ne dit pas jusqu'à quand il a servi.",
+            "formAsWritten": "Andriambahoaka",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les Musulmans à Madagascar et aux îles Comores, deuxième partie : Zafindraminia, Antambahoaka, Onjatsy, Antaiony, Zafikazimambo, Antaivandrika et Sahatavy",
+                "author": "Gabriel Ferrand",
+                "year": 1893,
+                "url": "https://archive.org/details/lesmusulmansmad00ferrgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 20, note 2",
+                "notes": "Paris, Ernest Leroux, publication de l'École des lettres d'Alger, lue sur la numérisation d'Internet Archive. L'auteur, agent résident de France à Mananjary, publie des récits dictés par des Malgaches âgés. Passage : « Ils s'appelaient autrefois Andriambahoaka, les nobles sujets des princes »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Zafiraminia",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "mlg",
+        "namedBy": null,
+        "shortLine": "Le nom des descendants de Raminia, que les Antambahoaka tiennent pour leur ancêtre.",
+        "periodLabel": "Forme proche écrite en 1661",
+        "accounts": [
+          {
+            "period": {
+              "from": 1893,
+              "to": 1893,
+              "label": "1893"
+            },
+            "era": "colonial",
+            "statement": "Le nom Zafiraminia désigne chez Gabriel Ferrand un groupe distinct des Antambahoaka, l'un des sept dont il publie les récits. Un autre récit du même livre appelle Raminia « le fondateur de la tribu des Antambahoaka ».",
+            "sources": [
+              {
+                "title": "Les Musulmans à Madagascar et aux îles Comores, deuxième partie : Zafindraminia, Antambahoaka, Onjatsy, Antaiony, Zafikazimambo, Antaivandrika et Sahatavy",
+                "author": "Gabriel Ferrand",
+                "year": 1893,
+                "url": "https://archive.org/details/lesmusulmansmad00ferrgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 3 et p. 8",
+                "notes": "Paris, Ernest Leroux, publication de l'École des lettres d'Alger, lue sur la numérisation d'Internet Archive. L'auteur, agent résident de France à Mananjary, publie des récits dictés par des Malgaches âgés. Ferrand écrit aussi « ZafindRaminia »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1838,
+              "to": 1838,
+              "label": "1838"
+            },
+            "era": "polity",
+            "statement": "Le nom Zafiraminia figure sous une forme proche, « Zafindramina », chez William Ellis, pour un peuple installé dans la province de Matitanana, mêlé aux Betsimisaraka.",
+            "formAsWritten": "Zafindramina",
+            "sources": [
+              {
+                "title": "History of Madagascar, vol. I",
+                "author": "William Ellis",
+                "year": 1838,
+                "url": "https://archive.org/details/historyofmadagas01elli",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 131",
+                "notes": "Londres, Fisher, Son & Co., lu sur la numérisation d'Internet Archive. L'auteur, missionnaire de la London Missionary Society, compile les écrits des missionnaires installés à Antananarivo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1661,
+              "to": 1838,
+              "label": "Rapportée en 1661, reprise en 1838"
+            },
+            "statement": "Le nom Zafiraminia viendrait d'Amina, la mère du prophète Mahomet : ce seraient « les descendants de la mère de Mahomet ». Étienne de Flacourt rapporte cette explication pour la forme Zafferahimina, selon Gabriel Ferrand, qui la juge inexacte ; William Ellis la reprend en 1838.",
+            "hypothesisGroup": "origine du nom Zafiraminia",
+            "sources": [
+              {
+                "title": "Les Musulmans à Madagascar et aux îles Comores, deuxième partie : Zafindraminia, Antambahoaka, Onjatsy, Antaiony, Zafikazimambo, Antaivandrika et Sahatavy",
+                "author": "Gabriel Ferrand",
+                "year": 1893,
+                "url": "https://archive.org/details/lesmusulmansmad00ferrgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 1-2, note",
+                "notes": "Paris, Ernest Leroux, publication de l'École des lettres d'Alger, lue sur la numérisation d'Internet Archive. L'auteur cite Étienne de Flacourt, Histoire de la grande isle Madagascar, Paris, 1661, p. 48 ; nous n'avons pas lu Flacourt nous-mêmes. Passage : « Quelques-uns disent que les Roandrian s'appellent Zafferahimina, du nom de la mère de Mahomet » ; Ferrand ajoute : « L'étymologie rapportée par Flacourt est assurément inexacte »."
+              },
+              {
+                "title": "History of Madagascar, vol. I",
+                "author": "William Ellis",
+                "year": 1838,
+                "url": "https://archive.org/details/historyofmadagas01elli",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 131",
+                "notes": "Londres, Fisher, Son & Co., lu sur la numérisation d'Internet Archive. L'auteur, missionnaire de la London Missionary Society, compile les écrits des missionnaires installés à Antananarivo. Passage : « descendants of the mother of Mahomet, from Zafy, descendants, and Amina »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1661,
+              "to": 1893,
+              "label": "Rapportée en 1661, puis en 1893"
+            },
+            "statement": "Le nom Zafiraminia désignerait la lignée de Raminia, un ancêtre que ses descendants disent venu de La Mecque, selon ce que rapporte Étienne de Flacourt et selon les récits zafiraminia et antambahoaka recueillis par Gabriel Ferrand.",
+            "hypothesisGroup": "origine du nom Zafiraminia",
+            "sources": [
+              {
+                "title": "Les Musulmans à Madagascar et aux îles Comores, deuxième partie : Zafindraminia, Antambahoaka, Onjatsy, Antaiony, Zafikazimambo, Antaivandrika et Sahatavy",
+                "author": "Gabriel Ferrand",
+                "year": 1893,
+                "url": "https://archive.org/details/lesmusulmansmad00ferrgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 1-2, note",
+                "notes": "Paris, Ernest Leroux, publication de l'École des lettres d'Alger, lue sur la numérisation d'Internet Archive. L'auteur cite Étienne de Flacourt, Histoire de la grande isle Madagascar, Paris, 1661, p. 48 ; nous n'avons pas lu Flacourt nous-mêmes. Passage : « d'autres qu'ils se nomment Zafferamini, c'est-à-dire lignée de Ramini qu'ils disent avoir esté leur ancestre »."
+              },
+              {
+                "title": "Les Musulmans à Madagascar et aux îles Comores, deuxième partie : Zafindraminia, Antambahoaka, Onjatsy, Antaiony, Zafikazimambo, Antaivandrika et Sahatavy",
+                "author": "Gabriel Ferrand",
+                "year": 1893,
+                "url": "https://archive.org/details/lesmusulmansmad00ferrgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 7-8",
+                "notes": "Paris, Ernest Leroux, publication de l'École des lettres d'Alger, lue sur la numérisation d'Internet Archive. L'auteur, agent résident de France à Mananjary, publie des récits dictés par des Malgaches âgés."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1661,
+              "to": 1661,
+              "label": "1661, selon un livre de 1893"
+            },
+            "statement": "Le nom Zafiraminia apparaît sous une forme proche, « Zafferamini », dans l'Histoire de la grande isle Madagascar d'Étienne de Flacourt, pour les Roandrian, selon Gabriel Ferrand, qui cite ce passage. C'est la plus ancienne trace de ce nom que le projet connaît. Le groupe qu'il désigne existait déjà avant elle.",
+            "formAsWritten": "Zafferamini",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les Musulmans à Madagascar et aux îles Comores, deuxième partie : Zafindraminia, Antambahoaka, Onjatsy, Antaiony, Zafikazimambo, Antaivandrika et Sahatavy",
+                "author": "Gabriel Ferrand",
+                "year": 1893,
+                "url": "https://archive.org/details/lesmusulmansmad00ferrgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 1-2, note",
+                "notes": "Paris, Ernest Leroux, publication de l'École des lettres d'Alger, lue sur la numérisation d'Internet Archive. L'auteur cite Étienne de Flacourt, Histoire de la grande isle Madagascar, Paris, 1661, p. 48 ; nous n'avons pas lu Flacourt nous-mêmes. Passage : « d'autres qu'ils se nomment Zafferamini, c'est-à-dire lignée de Ramini qu'ils disent avoir esté leur ancestre »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
