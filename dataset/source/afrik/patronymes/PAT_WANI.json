@@ -76,5 +76,71 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Wani à un peuple au Soudan du Sud. Nous n'avons pas encore consulté de source consacrée à ce nom. Le lien éventuel avec les Bari reste à étudier."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Wani est un nom de personne chez les Bari, au Soudan du Sud. Il est écrit dès 1864, d'après les notes de missionnaires catholiques sur la langue bari. On ne sait pas avec certitude ce qu'il veut dire : les sources que nous avons pu lire n'en donnent pas le sens.",
+    "names": [
+      {
+        "nameText": "Wani",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bfa",
+        "namedBy": null,
+        "shortLine": "Un nom de garçon chez les Bari, au Soudan du Sud ; les sources lues n'en donnent pas le sens.",
+        "periodLabel": "Écrit dès 1864",
+        "accounts": [
+          {
+            "period": {
+              "from": 1867,
+              "to": 1867,
+              "label": "Décrit en 1867"
+            },
+            "statement": "Le nom Wani est un nom de garçon chez les Bari : la grammaire de Johannes Chrysostomus Mitterrutzner le prend en exemple dans la phrase « ce garçon s'appelle Wani ». Le livre ne dit pas ce que veut dire le nom.",
+            "aspect": "usage",
+            "formAsWritten": "Wani",
+            "sources": [
+              {
+                "title": "Die Sprache der Bari in Central-Afrika: Grammatik, Text und Wörterbuch",
+                "author": "Johannes Chrysostomus Mitterrutzner",
+                "year": 1867,
+                "url": "https://archive.org/details/diesprachederba00mittgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 215",
+                "notes": "Publié en 1867 chez A. Weger. Lu le 12 octobre 2026 dans la numérisation Google déposée sur Internet Archive. Page 215, à l'entrée lung, « rufen, nennen » : « nielo kölfpönit lulungu Wani, dieser Knabe heisst W. », c'est-à-dire « ce garçon s'appelle Wani ». Wani revient dans d'autres phrases d'exemple de la grammaire. Auteur de l'époque, cité ici pour la forme qu'il relève."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1864,
+              "to": 1864,
+              "label": "1864"
+            },
+            "statement": "Le nom Wani apparaît par écrit chez le linguiste Friedrich Müller, de l'université de Vienne, qui publie les notes de deux missionnaires catholiques sur la langue bari. Une phrase d'exemple y demande : « Wani luya ? », « Où est Wani ? ». C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Wani",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Friedrich Müller",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Die Sprache der Bari: ein Beitrag zur afrikanischen Linguistik",
+                "author": "Friedrich Müller",
+                "year": 1864,
+                "url": "https://archive.org/details/diesprachederba00mlgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 36, 52",
+                "notes": "Vienne, imprimerie impériale et royale, en dépôt chez Karl Gerold's Sohn, 1864 ; tiré à part des comptes rendus de l'Académie impériale des sciences de janvier 1864. Lu le 12 octobre 2026 dans la numérisation Google déposée sur Internet Archive ; les pages ont été repérées dans le texte reconnu de chaque image. Préface : le matériau vient pour la plus grande part des papiers du missionnaire Knoblecher, provicaire apostolique à Khartoum, et deux missionnaires, Knoblecher et Überbacher, ont noté la langue. Page 52 : « Wani luya? Wo ist Wani ». Page 36 : Wani revient dans un autre exemple. Auteur de l'époque, cité ici pour la forme qu'il relève."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

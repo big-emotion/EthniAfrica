@@ -82,5 +82,77 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Tshisekedi », « Luba », « Tshiluba », « surname », « clan », « etymology », « transmission » et « obituary », ainsi que la consultation directe de « Tshisekedi Surname Origin, Meaning & Last Name History » n'ont établi aucune règle propre à Tshisekedi permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Tshisekedi est un nom du Kasaï, en République démocratique du Congo. Il apparaît par écrit en 1937 comme le nom d'un village des Lulua. On ne sait pas avec certitude ce qu'il veut dire : les sources que nous avons pu lire n'en donnent pas le sens.",
+    "names": [
+      {
+        "nameText": "Tshisekedi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom du Kasaï, en RD Congo, écrit dès 1937 ; les sources lues n'en donnent pas le sens.",
+        "periodLabel": "Écrit dès 1937 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1943,
+              "to": 1943,
+              "label": "Pâques 1943, raconté en 1945"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tshisekedi est le nom d'un jeune chrétien, Tshisekedi Timote, élève de l'hôpital de la mission de Lubondai, au Congo belge, selon la missionnaire Mary Crawford. Elle l'appelle aussi simplement Tshisekedi : le nom sert ici de nom de personne, pas de nom de famille.",
+            "aspect": "usage",
+            "formAsWritten": "Tshisekedi",
+            "sources": [
+              {
+                "title": "Stories from the Belgian Congo",
+                "author": "Mary Crawford",
+                "year": 1945,
+                "url": "https://archive.org/details/sim_presbyterian-outlook_1945-03-19_127_11",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 7",
+                "notes": "The Presbyterian Outlook, vol. 127, n° 11, 19 mars 1945. L'autrice est une missionnaire en poste à Lubondai, au Congo belge, selon la note de bas de page. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive, page 7 vue en image. Sous le titre « Tshisekedi Timote's Easter » : « Easter morning two years ago at Lubondai! » et « Here I met Tshisekedi Timote, one of the medical students at the hospital ». La suite l'appelle simplement Tshisekedi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1937,
+              "to": 1937,
+              "label": "1937"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tshisekedi apparaît par écrit comme le nom d'un village des Bena Kadiebwe, chez les Lulua du Kasaï, dans une note de J. A. Tiarko Fourche et H. Morlighem. Selon certains conteurs, les deux jeunes filles d'un récit lulua venaient de ce village. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle désigne un village, pas une famille.",
+            "formAsWritten": "Tshisekedi",
+            "birth": true,
+            "actors": [
+              {
+                "name": "J. A. Tiarko Fourche",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "H. Morlighem",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "La danse de Tshishimbi chez les Lulua du Kasai",
+                "author": "J. A. Tiarko Fourche et H. Morlighem",
+                "year": 1937,
+                "url": "https://archive.org/details/bulletins-des-seances-mededelingen-der-zittingen-institut-royal-colonial-belgeko",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 395",
+                "notes": "Note présentée par A. Bertrand à la séance du 21 juin 1937 de l'Institut royal colonial belge, publiée dans le Bulletin des séances, t. VIII, n° 2, 1937. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive (fascicule 1937-2), page 395 vue en image : « deux jeunes filles, du nom de Tshishimbi et de N'Gala Yombo, — d'aucuns disent du village de Tshisekedi (des Bena Kadiebwe, proches de N'Demba), d'autres, du village de Basangana ». Auteurs de l'époque coloniale, cités ici pour la forme qu'ils écrivent."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

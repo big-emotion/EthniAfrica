@@ -91,5 +91,54 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Ssentongo », « Baganda », « Luganda », « Uganda », « surname », « clan », « etymology » et « transmission », ainsi que la consultation directe de « Ssentongo Surname Origin, Meaning & Last Name History » n'ont établi aucune règle propre à Ssentongo permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ssentongo est un nom du Buganda, en Ouganda. Un livre sur le Buganda publié en 1911 le donne, écrit Sentongo, à un Mugema, l'un des grands chefs du royaume. On ne sait pas avec certitude d'où vient ce nom, ni s'il appartient à un clan.",
+    "names": [
+      {
+        "nameText": "Ssentongo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lug",
+        "namedBy": null,
+        "shortLine": "Un nom du Buganda, noté en 1911 comme celui d'un chef ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit dès 1911 sous la forme Sentongo ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Récit publié en 1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ssentongo apparaît, sous une forme proche, Sentongo, chez John Roscoe : sous le règne de Kagulu, le roi fait tuer un Mugema nommé Sentongo. Le Mugema est un grand chef, une charge que le clan du singe se transmet, selon le même auteur. C'est la plus ancienne trace écrite de ce nom que le projet connaît. Les sources ne disent pas si ce chef a un lien avec les familles qui portent ce nom aujourd'hui.",
+            "formAsWritten": "Sentongo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "John Roscoe",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Kagulu",
+                "role": "roi du Buganda dans le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 156, 221",
+                "notes": "Londres, Macmillan, 1911. L'auteur, pasteur, a été missionnaire de la Church Missionary Society au Buganda. Relu le 12 octobre 2026 dans la numérisation d'Internet Archive. Page 156 : le clan du singe tient la charge de Mugema « as their inheritance ». Page 221, au règne de Kagulu : « The King further killed the Mugema Sentongo, which was against all precedent ». Auteur de l'époque coloniale, cité ici pour la forme qu'il écrit."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
