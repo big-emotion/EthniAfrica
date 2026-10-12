@@ -1,0 +1,48 @@
+{
+  "demo": "Illustrative script for the voice tests; not approved publication text.",
+  "model": "eleven_multilingual_v2",
+  "seed": 20261012,
+  "chunks": [
+    {
+      "text": "Sahara vient de l'arabe",
+      "pauseBeforeMs": 7400
+    },
+    {
+      "text": "*ṣaḥrāʾ* (صحراء), « désert ».",
+      "units": [
+        {
+          "text": "ṣaḥrāʾ (صحراء),",
+          "spoken": "sahrâ,"
+        },
+        "« désert »."
+      ]
+    },
+    {
+      "text": "Vers 1154, al-Idrīsī",
+      "pauseBeforeMs": 2500,
+      "units": [
+        "Vers",
+        "1154,",
+        {
+          "text": "al-Idrīsī",
+          "spoken": "al-Idrissi"
+        }
+      ]
+    },
+    {
+      "text": "Il y a 14 500 ans environ,",
+      "pauseBeforeMs": 0,
+      "units": [
+        "Il",
+        "y",
+        "a",
+        {
+          "text": "14 500",
+          "spoken": "quatorze mille cinq cents"
+        },
+        "ans",
+        "environ,"
+      ]
+    }
+  ]
+}
