@@ -131,5 +131,176 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Tera désigne un peuple de langue tchadique du nord-est du Nigeria, dans les États de Gombe et de Borno, qui se nomme lui-même Nyimatli. Une autre forme existe : Terawa. Nous n'avons pas trouvé de source qui explique l'origine du nom Tera ; ce que nous savons est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Nyimatli",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ttr",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Tera, écrit sous une forme proche dès 1919.",
+        "periodLabel": "Forme proche écrite en 1919 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Nyimatli est celui que les Tera se donnent eux-mêmes, selon Paul Tench, chercheur en linguistique à l'université de Cardiff.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "A New Orthography in Tera",
+                "author": "Paul Tench",
+                "year": null,
+                "url": "https://www.paultenchdocs.co.uk/wp-content/uploads/2014/02/A-New-Orthography-in-Tera.pdf",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Texte de Paul Tench, Centre for Language and Communication Research, université de Cardiff, mis en ligne sur son site en 2014. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2004,
+              "to": 2004,
+              "label": "2004"
+            },
+            "era": "modern",
+            "statement": "Le nom Nyimatli figure, écrit Nyamatli, dans le titre d'un livre en anglais publié en 2004 par Isioma Jideonwo, une diplômée venue travailler chez les Tera, Let's Develop Nyamatli Language, selon Paul Tench.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "A New Orthography in Tera",
+                "author": "Paul Tench",
+                "year": null,
+                "url": "https://www.paultenchdocs.co.uk/wp-content/uploads/2014/02/A-New-Orthography-in-Tera.pdf",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Texte de Paul Tench, Centre for Language and Communication Research, université de Cardiff, mis en ligne sur son site en 2014. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nyimatli apparaît sous une forme proche, Nimalto, dans les notes réunies par O. Temple sur les tribus du nord du Nigeria : c'est le nom d'une tribu du district de Biu et de sa langue, que presque tous les Tera auraient adoptée, et les Tera sont parfois appelés « men of Nimettio ». C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Nimalto",
+            "birth": true,
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Notes on the Tribes, Provinces, Emirates and States of the Northern Provinces of Nigeria",
+                "author": "O. Temple, sous la direction de C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "source_kind": "archive",
+                "page": "p. 311-312 et p. 352",
+                "notes": "Le Cap, Argus Printing and Publishing, 1919, recueil compilé à partir de rapports officiels britanniques. Lu dans l'exemplaire numérisé de l'université de Toronto sur Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tera",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom courant de ce peuple en anglais et dans les études ; écrit dès 1919.",
+        "periodLabel": "Écrit depuis 1919 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tera désigne un peuple de plus de 100 000 personnes, surtout des agriculteurs, qui vit au nord de l'État de Gombe et à l'est du Borno, entre les pays haoussa et kanouri ; sa langue est tchadique, comme le haoussa, selon Paul Tench. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "A New Orthography in Tera",
+                "author": "Paul Tench",
+                "year": null,
+                "url": "https://www.paultenchdocs.co.uk/wp-content/uploads/2014/02/A-New-Orthography-in-Tera.pdf",
+                "source_kind": "academic",
+                "page": "p. 1-2",
+                "notes": "Texte de Paul Tench, Centre for Language and Communication Research, université de Cardiff, mis en ligne sur son site en 2014. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tera apparaît dans les notes réunies par O. Temple sur les tribus du nord du Nigeria : il y désigne une tribu dont l'origine est jugée assez obscure, un district Tera au sud-ouest de la division de Gujba, dans la province du Bornou, et des Tera établis dans l'émirat de Gombe. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Notes on the Tribes, Provinces, Emirates and States of the Northern Provinces of Nigeria",
+                "author": "O. Temple, sous la direction de C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "source_kind": "archive",
+                "page": "p. 350-352",
+                "notes": "Le Cap, Argus Printing and Publishing, 1919, recueil compilé à partir de rapports officiels britanniques. Lu dans l'exemplaire numérisé de l'université de Toronto sur Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Terawa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre forme du nom Tera, employée dans les rapports britanniques.",
+        "periodLabel": "Écrit en 1919",
+        "accounts": [
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Terawa figure dans une liste des tribus de la province de Bauchi : les Terawa y vivent sur les deux rives du Gongola, au nombre de 6 000 à 7 000 dans la division de Gombe et d'environ 2 000 dans le Bornou, selon les notes réunies par O. Temple.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Notes on the Tribes, Provinces, Emirates and States of the Northern Provinces of Nigeria",
+                "author": "O. Temple, sous la direction de C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "source_kind": "archive",
+                "page": "p. 431",
+                "notes": "Le Cap, Argus Printing and Publishing, 1919, recueil compilé à partir de rapports officiels britanniques. Lu dans l'exemplaire numérisé de l'université de Toronto sur Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
