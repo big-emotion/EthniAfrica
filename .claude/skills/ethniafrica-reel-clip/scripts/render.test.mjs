@@ -80,6 +80,7 @@ const pixel = (file, t, x, y) => [
   ).stdout,
 ];
 
+// @req REQ-186
 test("renders a framed, captioned vertical reel with its SRT and cover", async () => {
   const dir = mkdtempSync(join(tmpdir(), "translated-clip-"));
   try {
@@ -151,6 +152,7 @@ test("renders a framed, captioned vertical reel with its SRT and cover", async (
   }
 });
 
+// @req REQ-186
 test("a tall source gets the portrait gabarit and its on-screen text replaced", async () => {
   const dir = mkdtempSync(join(tmpdir(), "reel-clip-"));
   try {
@@ -211,6 +213,7 @@ test("a tall source gets the portrait gabarit and its on-screen text replaced", 
   }
 });
 
+// @req REQ-186
 test("boxes are refused on a tall source, which has no room above the picture", async () => {
   const dir = mkdtempSync(join(tmpdir(), "reel-clip-"));
   try {
@@ -250,6 +253,7 @@ test("boxes are refused on a tall source, which has no room above the picture", 
   }
 });
 
+// @req REQ-186
 test("refuses a box that would wrap past two lines", async () => {
   const dir = mkdtempSync(join(tmpdir(), "translated-clip-"));
   try {
@@ -279,6 +283,7 @@ test("refuses a box that would wrap past two lines", async () => {
   }
 });
 
+// @req REQ-186
 test("refuses a caption that would wrap past two lines", async () => {
   const dir = mkdtempSync(join(tmpdir(), "translated-clip-"));
   try {

@@ -21,6 +21,7 @@ const words = [
   word("Later", 6.0, 6.4),
 ];
 
+// @req REQ-186
 test("a turn ends when the speaker changes or after a long silence", () => {
   assert.deepEqual(
     speakerTurns(words).map((t) => [t.speaker, t.start, t.end, t.text]),
@@ -33,6 +34,7 @@ test("a turn ends when the speaker changes or after a long silence", () => {
   );
 });
 
+// @req REQ-186
 test("timed lines break at punctuation and carry each word's start", () => {
   assert.deepEqual(timedLines(words), [
     "Hello,@1.00 |1.30 0",

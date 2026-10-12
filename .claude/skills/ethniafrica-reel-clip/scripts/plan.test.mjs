@@ -23,14 +23,17 @@ const plan = (over = {}) => ({
   ...over,
 });
 
+// @req REQ-186
 test("a well-formed plan has no errors", () => {
   assert.deepEqual(validatePlan(plan()), []);
 });
 
+// @req REQ-186
 test("a plan without credit line is refused: an excerpt always names its source", () => {
   assert.match(validatePlan(plan({ credit_line: " " })).join(), /credit_line/);
 });
 
+// @req REQ-186
 test("clips must be increasing and must not overlap", () => {
   const errors = validatePlan(
     plan({
@@ -43,6 +46,7 @@ test("clips must be increasing and must not overlap", () => {
   assert.match(errors.join(), /clip 2/);
 });
 
+// @req REQ-186
 test("a phrase outside every clip is refused, since it would never be seen", () => {
   const errors = validatePlan(
     plan({ phrases: [{ start: 25, end: 26, fr: "Hors coupe." }] })
@@ -50,6 +54,7 @@ test("a phrase outside every clip is refused, since it would never be seen", () 
   assert.match(errors.join(), /phrase 1.*outside/);
 });
 
+// @req REQ-186
 test("overlapping phrases are refused", () => {
   const errors = validatePlan(
     plan({
@@ -62,6 +67,7 @@ test("overlapping phrases are refused", () => {
   assert.match(errors.join(), /phrase 2.*overlaps/);
 });
 
+// @req REQ-186
 test("a caption too fast to read is refused", () => {
   const errors = validatePlan(
     plan({
@@ -77,6 +83,7 @@ test("a caption too fast to read is refused", () => {
   assert.match(errors.join(), /characters per second/);
 });
 
+// @req REQ-186
 test("a caption longer than two lines is refused rather than shrunk", () => {
   const errors = validatePlan(
     plan({
@@ -86,6 +93,7 @@ test("a caption longer than two lines is refused rather than shrunk", () => {
   assert.match(errors.join(), /characters, at most/);
 });
 
+// @req REQ-186
 test("the reel lasts the sum of its clips", () => {
   const p = plan({
     clips: [
@@ -96,6 +104,7 @@ test("the reel lasts the sum of its clips", () => {
   assert.equal(reelDuration(p), 15.5);
 });
 
+// @req REQ-186
 test("phrase times move from the source clock to the reel clock across cuts", () => {
   const p = plan({
     clips: [
@@ -112,11 +121,13 @@ test("phrase times move from the source clock to the reel clock across cuts", ()
   assert.deepEqual([b.start, b.end], [11, 13]);
 });
 
+// @req REQ-186
 test("a short silence between two captions is bridged so the text does not flicker", () => {
   const [a] = reelPhrases(plan());
   assert.equal(a.end, 2.1);
 });
 
+// @req REQ-186
 test("a long silence leaves the screen without caption", () => {
   const p = plan({
     phrases: [
@@ -127,6 +138,7 @@ test("a long silence leaves the screen without caption", () => {
   assert.equal(reelPhrases(p)[0].end, 1);
 });
 
+// @req REQ-186
 test("the SRT carries the reel times and the French text", () => {
   const srt = toSrt(reelPhrases(plan()));
   assert.equal(
@@ -136,6 +148,7 @@ test("the SRT carries the reel times and the French text", () => {
   );
 });
 
+// @req REQ-186
 test("a box outside every clip, or overlapping another, is refused", () => {
   const errors = validatePlan(
     plan({
@@ -150,6 +163,7 @@ test("a box outside every clip, or overlapping another, is refused", () => {
   assert.match(errors.join(), /box 3.*outside/);
 });
 
+// @req REQ-186
 test("boxes move to the reel clock without bridging", () => {
   const p = plan({
     clips: [
@@ -173,10 +187,12 @@ test("boxes move to the reel clock without bridging", () => {
   );
 });
 
+// @req REQ-186
 test("a plan without boxes has none", () => {
   assert.deepEqual(reelBoxes(plan()), []);
 });
 
+// @req REQ-186
 test("a caption may be written in `text`, in any language, instead of `fr`", () => {
   const p = plan({
     phrases: [{ start: 10.2, end: 12, text: "Same-language caption." }],
@@ -185,6 +201,7 @@ test("a caption may be written in `text`, in any language, instead of `fr`", () 
   assert.match(toSrt(reelPhrases(p)), /Same-language caption\./);
 });
 
+// @req REQ-186
 test("an on-screen text overlay needs a position inside the source frame", () => {
   const errors = validatePlan(
     plan({
@@ -200,6 +217,7 @@ test("an on-screen text overlay needs a position inside the source frame", () =>
   assert.match(errors.join(), /overlay 3.*text/);
 });
 
+// @req REQ-186
 test("overlays may show together; the track lists what is on screen in each stretch", () => {
   const p = plan({
     overlays: [
@@ -221,6 +239,7 @@ test("overlays may show together; the track lists what is on screen in each stre
   );
 });
 
+// @req REQ-186
 test("the caption track covers the whole reel, gaps included", () => {
   const p = plan();
   const track = captionTrack(reelPhrases(p), reelDuration(p));
