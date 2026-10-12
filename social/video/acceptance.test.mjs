@@ -296,11 +296,11 @@ test("a chapter hold draws its marker bars and an outlined subtitle on the image
 test("an area named by a chunk is drawn once it has entered", async () => {
   // 20.0 s: « désert » has entered; « pays des Berbères » enters at 20.1 s
   // and is whole by 21.3 s. The sample point is inside the Berbers' band,
-  // clear of its name.
+  // clear of its name and of the edge it shares with the desert band.
   const seq = sahara();
   const [before, after] = await renderFrames(seq, [600, 640], options());
   const { camera } = frameState(seq, 640);
-  const inside = project(camera, 12, 31.5);
+  const inside = project(camera, 12, 34.5);
   const stats = async (png) =>
     windowStats(png, Math.round(inside.x), Math.round(inside.y), 30);
   assert.ok(
