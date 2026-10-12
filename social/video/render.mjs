@@ -13,8 +13,8 @@ import {
   FPS,
   WIDTH,
   HEIGHT,
-  VIEW_CENTRE,
   RELIEF,
+  BANDS,
   frameState,
   frameCount,
   holdCameras,
@@ -23,6 +23,11 @@ import {
   tiltedCamera,
   captionLines,
   checkLayout,
+  viewCentre,
+  tapeText,
+  chapterLabels,
+  placeLabels,
+  placeBox,
 } from "./sequence.mjs";
 
 const here = new URL(".", import.meta.url);
@@ -72,9 +77,12 @@ async function engineHash() {
 // horizon and spread the crop over ground nobody can read.
 function holdBounds(seq) {
   const hits = [];
+  const [top, bottom] = seq.chapters
+    ? [BANDS.names[0], BANDS.veil]
+    : [200, 1300];
   for (const camera of holdCameras(seq))
     for (let x = 0; x <= WIDTH; x += WIDTH / 12)
-      for (let y = 200; y <= 1300; y += 50) {
+      for (let y = top; y <= bottom; y += 50) {
         const ground = unproject(camera, x, y);
         if (ground) hits.push(ground);
       }
@@ -283,6 +291,7 @@ function titleParts(seq) {
 }
 
 function legendSwatch(item, content) {
+  if (item.approximate) return "approximate";
   if (item.name) return content.names.find((n) => n.name === item.name).kind;
   if (item.place) return "place";
   if (item.outline) return "outline";
@@ -347,7 +356,35 @@ function drapeFrame(radius, bounds) {
 
 const NO_CONTENT = { features: [], names: [], places: [], legend: [] };
 
-function payload(seq, frame, relief) {
+// The names a chapter places on its map (0.4.0 board 13), once per chapter
+// at its hold camera, on the raised ground in relief: the page draws them
+// where the rule put them, and a name with no room goes to the legend.
+function chapterPlacement(seq, index, relief, cache) {
+  if (!cache.has(index)) {
+    const camera = holdCameras(seq)[index];
+    const at = relief
+      ? (lon, lat) => project(camera, lon, lat, raiseFor(relief)(lon, lat))
+      : (lon, lat) => project(camera, lon, lat);
+    const specs = chapterLabels(seq, index);
+    const obstacles = (seq.chapters[index].places ?? []).map((p) =>
+      placeBox(camera, p, (_, lon, lat) => at(lon, lat))
+    );
+    const placed = placeLabels(
+      specs.map((l) => ({ ...l, anchor: at(...l.lonLat) })),
+      obstacles
+    );
+    cache.set(
+      index,
+      specs.map((spec, i) => ({ ...spec, ...placed[i] }))
+    );
+  }
+  return cache.get(index);
+}
+
+const raiseFor = (relief) => (lon, lat) =>
+  (relief.heightAt(lon, lat) * RELIEF.exaggeration) / EARTH_RADIUS_M;
+
+function payload(seq, frame, relief, placements = new Map()) {
   const state = frameState(seq, frame);
   const { camera } = state;
   // A chained video draws the current chapter; its ending draws no map.
@@ -356,24 +393,32 @@ function payload(seq, frame, relief) {
     : seq;
   const features = content.features ?? [];
   const of = (kind) => features.filter((f) => f.kind === kind);
-  const raise = (lon, lat) =>
-    (relief.heightAt(lon, lat) * RELIEF.exaggeration) / EARTH_RADIUS_M;
   const place = relief
-    ? (lon, lat) => project(camera, lon, lat, raise(lon, lat))
+    ? (lon, lat) => project(camera, lon, lat, raiseFor(relief)(lon, lat))
     : (lon, lat) => project(camera, lon, lat);
   const drape = relief?.drapes[Math.max(state.chapter ?? 0, 0)];
   const draw = relief ? drape.place : place;
   const outline = content.outline;
+  const placed =
+    seq.chapters && state.chapter !== null
+      ? chapterPlacement(seq, state.chapter, relief, placements)
+      : [];
+  const centre = (box) => ({ x: box.x + box.w / 2, y: box.y + box.h / 2 });
+  const opacityOf = (spec) =>
+    spec.kind === "name"
+      ? state.names[spec.key]
+      : spec.style === "outline"
+        ? state.outline.label
+        : state.labels[spec.key];
+  const outlinePlace = placed.find((p) => p.style === "outline");
   return {
-    centre: VIEW_CENTRE,
+    layout: seq.chapters ? "fullscreen" : "feed",
+    chapter: state.chapter ?? null,
+    centre: viewCentre(camera),
     camera,
     grade: state.grade,
     dim: state.dim ?? 0,
-    tape: seq.demo
-      ? outline?.illustrative
-        ? "Texte illustratif · contour de synthèse"
-        : "Texte illustratif"
-      : null,
+    tape: tapeText(seq),
     relief: relief && {
       view: tiltedCamera(camera),
       exaggeration: RELIEF.exaggeration,
@@ -396,8 +441,10 @@ function payload(seq, frame, relief) {
         opacity: state.outline.opacity,
         label: {
           name: outline.name,
-          opacity: state.outline.label,
-          ...place(...outline.labelAt),
+          opacity: outlinePlace?.box ? state.outline.label : 0,
+          ...(outlinePlace?.box
+            ? centre(outlinePlace.box)
+            : place(...outline.labelAt)),
         },
       },
     areas: of("area").map((f) => ({
@@ -405,6 +452,7 @@ function payload(seq, frame, relief) {
         .map((ring) => linePath(draw, ring, true))
         .join(""),
       ink: f.ink,
+      hatch: f.hatch ?? 45,
       uncertain: f.certainty === "uncertain",
       opacity: state.features[f.id].opacity,
     })),
@@ -419,21 +467,26 @@ function payload(seq, frame, relief) {
       d: linePath(draw, f.geometry.coordinates),
       state: state.features[f.id],
     })),
-    labels: features
-      .filter((f) => f.kind !== "border")
-      .map((f) => ({
-        name: f.name,
-        style: labelStyle(f),
-        colour: f.kind === "area" ? INKS[f.ink] : null,
-        opacity: state.labels[f.id],
-        ...place(...f.labelAt),
-      })),
-    names: (content.names ?? []).map((n) => ({
-      name: n.name,
-      style: n.kind,
-      opacity: state.names[n.name],
-      ...place(n.lon, n.lat),
-    })),
+    ...(seq.chapters
+      ? placedNames(placed, opacityOf, centre)
+      : {
+          labels: features
+            .filter((f) => f.kind !== "border")
+            .map((f) => ({
+              name: f.name,
+              style: labelStyle(f),
+              colour: f.kind === "area" ? INKS[f.ink] : null,
+              opacity: state.labels[f.id],
+              ...place(...f.labelAt),
+            })),
+          names: (content.names ?? []).map((n) => ({
+            name: n.name,
+            style: n.kind,
+            kind: "name",
+            opacity: state.names[n.name],
+            ...place(n.lon, n.lat),
+          })),
+        }),
     places: (content.places ?? []).map((p) => ({
       name: p.name,
       side: p.side,
@@ -443,21 +496,36 @@ function payload(seq, frame, relief) {
     head: {
       signature: state.text.signature,
       title: state.text.title,
-      titleSize: seq.chapters ? 72 : 76,
+      titleSize: seq.chapters ? 80 : 76,
     },
     title: titleParts(seq),
     marker: state.marker ?? null,
     subtitle: state.subtitle ?? null,
     closing: state.closing ?? null,
-    legend: content.legend.map((item, i) => {
-      const f = item.feature && features.find((x) => x.id === item.feature);
-      return {
-        label: item.label,
-        opacity: state.legend[i],
-        swatch: legendSwatch(item, content),
-        colour: f?.kind === "area" ? INKS[f.ink] : "#f3e9da",
-      };
-    }),
+    legend: [
+      ...content.legend.map((item, i) => {
+        const f = item.feature && features.find((x) => x.id === item.feature);
+        return {
+          label: item.label,
+          opacity: state.legend[i],
+          swatch: legendSwatch(item, content),
+          colour:
+            f?.kind === "area"
+              ? INKS[f.ink]
+              : item.approximate
+                ? "#cbbba3"
+                : "#f3e9da",
+        };
+      }),
+      ...placed
+        .filter((p) => !p.box)
+        .map((p) => ({
+          label: p.text,
+          opacity: opacityOf(p),
+          swatch: "text",
+          colour: "#f3e9da",
+        })),
+    ],
     caption: seq.chapters
       ? [
           ...state.caption.lines,
@@ -474,6 +542,25 @@ function payload(seq, frame, relief) {
   };
 }
 
+// Placed map names of a chained video: feature labels and names, each at
+// the centre of its box and the size the rule chose. The outline's label
+// travels with the outline.
+function placedNames(placed, opacityOf, centre) {
+  const drawn = placed.filter((p) => p.box && p.style !== "outline");
+  const entry = (p) => ({
+    name: p.text,
+    style: p.style,
+    size: p.size,
+    kind: p.kind,
+    colour: ["area", "quoted"].includes(p.style) ? INKS[p.ink] : null,
+    opacity: opacityOf(p),
+    ...centre(p.box),
+  });
+  return {
+    labels: drawn.filter((p) => p.kind === "label").map(entry),
+    names: drawn.filter((p) => p.kind === "name").map(entry),
+  };
+}
 async function openRenderer(seq, assets) {
   const imagery = await prepareImagery(seq, assets);
   const runtime = JSON.parse(
@@ -551,22 +638,26 @@ async function openRenderer(seq, assets) {
     if (fonts.some((f) => f.status !== "loaded"))
       throw new Error("A required font is not loaded");
     const last = frameCount(seq) - 1;
+    const placements = new Map();
     const render = async (frame) => {
       const state = frameState(seq, frame);
       const boxes = await page.evaluate(
         (f) => window.drawFrame(f),
-        payload(seq, frame, relief)
+        payload(seq, frame, relief, placements)
       );
       // The glyph boxes are checked on every hold: the last frame, and every
-      // fully drawn chapter of a chained video.
+      // frame of a chained video where a chunk is fully drawn.
       if (frame === last || state.subtitle?.opacity === 1) {
-        const problems = checkLayout({ elements: boxes });
+        const problems = checkLayout({
+          frame: seq.chapters ? "fullscreen" : "feed",
+          elements: boxes,
+        });
         if (problems.length)
           throw new Error(
             `Hold layout at frame ${frame}: ${problems.join("; ")}`
           );
       }
-      return page.screenshot({ type: "png", animations: "disabled" });
+      return captureFrame(page);
     };
     return {
       render,
@@ -578,6 +669,28 @@ async function openRenderer(seq, assets) {
   } catch (error) {
     await browser.close();
     throw error;
+  }
+}
+
+// The frame is already drawn when its pixels are captured. Under
+// SwiftShader, headless Chromium now and then never answers one screenshot
+// request (seen on frames 205 and 207 of the Sahara demo in one run, on none
+// of them in the next): waiting longer does not help, while a new request
+// returns at once. So a request gets 20 s, and a timed-out one is made again,
+// three times at most; the page is not redrawn, so no pixel can change.
+const CAPTURE = { attempts: 3, timeout: 20000 };
+export async function captureFrame(page) {
+  for (let attempt = 1; ; attempt++) {
+    try {
+      return await page.screenshot({
+        type: "png",
+        animations: "disabled",
+        timeout: CAPTURE.timeout,
+      });
+    } catch (error) {
+      if (error.name !== "TimeoutError" || attempt >= CAPTURE.attempts)
+        throw error;
+    }
   }
 }
 
