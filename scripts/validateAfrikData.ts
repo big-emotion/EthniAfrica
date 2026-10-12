@@ -2507,7 +2507,9 @@ export function checkSourceIdentity(datasetRoot: string): ValidationResult {
 // its Factbook citation with it.
 // 122 -> 121 on 2026-10-12: the Surma fiche, folded into PPL_SURI after
 // wave 10, took its Factbook citation with it.
-export const RETIRED_CIA_FACTBOOK_URL_CEILING = 121;
+// 121 -> 119 the same day: the Yerima and Kirdi fiches, retired after wave 12,
+// took their Factbook citations with them.
+export const RETIRED_CIA_FACTBOOK_URL_CEILING = 119;
 
 const LIVE_CIA_FACTBOOK =
   /cia\.gov\/(?:library\/publications\/)?the-world-factbook/i;
@@ -4446,7 +4448,9 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // 6385 -> 6285 on 2026-10-12: eleven duplicate fiches of wave 10 were folded
   // and retired with the keys they lacked; PPL_SWAHILI_YEMEN became
   // PPL_MUWALLADEEN.
-  peuple: 6285,
+  // 6285 -> 6249 the same day: the Khainai, Koyra, Yerima and Kirdi fiches of
+  // wave 12 were folded or retired with the keys they lacked.
+  peuple: 6249,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next
