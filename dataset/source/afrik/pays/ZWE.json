@@ -537,12 +537,13 @@
     "kingdoms": [
       {
         "name": "Royaume du Grand Zimbabwe",
-        "period": "XIe siècle - XVe siècle",
+        "period": "XIIe siècle - XVe siècle",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1001,
-          "endYear": 1500,
-          "precision": "century"
+          "startYear": 1100,
+          "endYear": 1450,
+          "precision": "approximate",
+          "datingNote": "La fiche du Centre du patrimoine mondial de l'UNESCO, déjà citée, date le site de 1100 à 1450. Hoyce H. K. Bhila (HGA V) date la culture de Grand Zimbabwe de 1200 à 1450, avec un déclin à partir du milieu du XVe siècle. La fiche retenait auparavant le XIe siècle, que ces deux sources ne soutiennent pas."
         },
         "dominantPeoples": ["Shona"],
         "politicalCenters": ["Grand Zimbabwe (ruines actuelles)"],
@@ -550,16 +551,38 @@
       },
       {
         "name": "Royaume Mutapa",
-        "period": "XVe siècle - XVIIe siècle",
+        "period": "XVe siècle - début du XXe siècle (1902 ou 1917 selon les auteurs)",
         "entryType": "polity",
         "timeRange": {
           "startYear": 1401,
-          "endYear": 1700,
-          "precision": "century"
+          "endYear": 1917,
+          "precision": "approximate",
+          "datingNote": "Le premier souverain, Mutota, est connu par la tradition orale (Brian M. Fagan, HGA IV). La fin dépend des auteurs. Selon Hoyce H. K. Bhila et B. A. Ogot (HGA V), l'État mutapa ne disparaît qu'en 1917, au terme d'un déclin commencé en 1629. L'historien S. I. G. Mudenge (1988) arrête son histoire politique vers 1902. Bien avant, les Mutapa perdent le plateau : Changamire en chasse les Portugais en 1693, et le cœur de l'État passe dans les basses terres du Zambèze au XVIIIe siècle (Bhila, HGA V). La borne de fin retient la date la plus tardive, 1917."
         },
         "dominantPeoples": ["Shona"],
-        "politicalCenters": ["Régions du nord et de l'est"],
-        "historicalRole": "Successeur du Grand Zimbabwe, commerce avec les Portugais, déclin progressif."
+        "politicalCenters": [
+          "Régions du nord et de l'est",
+          "Zvongombe (premières capitales)",
+          "Basses terres du Zambèze, entre Zumbo et Tete (XVIIIe siècle)"
+        ],
+        "historicalRole": "Successeur du Grand Zimbabwe, commerce avec les Portugais, déclin progressif. Il perd le plateau à la fin du XVIIe siècle et survit dans la vallée du Zambèze jusqu'au début du XXe siècle : jusqu'en 1917 selon l'Histoire générale de l'Afrique, jusque vers 1902 selon l'historien S. I. G. Mudenge."
+      },
+      {
+        "name": "État de Torwa (Butwa)",
+        "period": "Milieu du XVe siècle - fin du XVIIe siècle",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1450,
+          "endYear": 1700,
+          "precision": "approximate",
+          "datingNote": "Le début suit le déclin de Grand Zimbabwe, à partir du milieu du XVe siècle, selon Hoyce H. K. Bhila (HGA V). La fin encadre l'essor de Dombo Changamire (1684-1695), que la même source décrit sans dater la disparition de Torwa."
+        },
+        "dominantPeoples": ["Shona"],
+        "politicalCenters": [
+          "Khami (première capitale)",
+          "Danangombe (deuxième capitale)"
+        ],
+        "historicalRole": "État apparu au déclin de Grand Zimbabwe et connu par des sources portugaises sous le nom de Torwa ou Butwa. Sa première capitale est Khami, la deuxième Danangombe, selon Hoyce H. K. Bhila (HGA V). Dombo Changamire, berger révolté contre les empereurs mutapa, passe par cet État avant de prendre le pouvoir entre 1684 et 1695."
       },
       {
         "name": "Royaume Rozvi",
@@ -730,6 +753,34 @@
         "tier": "official",
         "source_kind": "intergovernmental",
         "notes": "Bien inscrit sur la Liste du patrimoine mondial en 1986 ; la synthèse de sa valeur universelle exceptionnelle le date de 1100 à 1450 de notre ère."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, V, ch. 22 : La région au sud du Zambèze",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par B. A. Ogot, chapitre de Hoyce H. K. Bhila (1999), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 697. Les États mutapa et rozwi sont issus de la culture de Grand Zimbabwe (1200-1450), dont le déclin s'amorce au milieu du XVe siècle ; apparaît alors l'État de « Torwa ou de “Butwa” », avec une première capitale à Khami, puis une deuxième à Danangombe. Page 699. Le site de Zvongombe correspond aux premières capitales mutapa ; « dans la première moitié du XVIIIe siècle, les Mutapa perdirent le contrôle direct du plateau et le cœur de l'Empire se déplaça vers les basses terres du Zambèze, entre Zumbo et Tete », au terme d'une désintégration « entamée en 1629 » et achevée « en 1917, avec la disparition de l'État mutapa ». Page 714. « Entre 1684 et 1695, Dombo Changamire accéda peu à peu au pouvoir dans le Nord-Est » ; berger des empereurs mutapa, il s'était d'abord rendu dans l'État de Torwa. Même page. Les commerçants portugais « furent expulsés du Royaume de Maungwe en 1684, de la zone des plateaux en 1693 et du Royaume de Manyika en 1695 »."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, IV, ch. 21 : Les bassins du Zambèze et du Limpopo (+ 1100/+ 1500)",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par D. T. Niane, chapitre de Brian Murray Fagan (1985), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 593. « Les traditions orales parlent de l'avènement d'un souverain héréditaire, le mwene mutapa […], dont le premier fut Mutota. »"
+      },
+      {
+        "title": "Histoire générale de l'Afrique, V, ch. 29 : L'histoire des sociétés africaines de 1500 à 1800 : conclusion",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par B. A. Ogot, chapitre de B. A. Ogot (1999), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 973. « Le morcellement et le déclin de l'État mutapa commencèrent en 1629 » ; l'entité politique mutapa « ne disparut complètement qu'en 1917 »."
+      },
+      {
+        "title": "David Hedges, compte rendu de S. I. G. Mudenge, A Political History of Munhumutapa, c. 1400–1902 (1988), The Journal of African History, vol. 32, n° 2, 1991",
+        "url": "https://doi.org/10.1017/S0021853700025809",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Pages 345-347. Seul l'intitulé du livre recensé a été lu, sur la page de la revue chez Cambridge University Press, le 12 octobre 2026 : le livre de S. I. G. Mudenge (Harare, Zimbabwe Publishing House ; Londres, James Currey, 1988) borne l'histoire politique du Mutapa de 1400 environ à 1902 environ. Le texte du compte rendu, payant, n'a pas été lu."
       }
     ],
     "demographics": {

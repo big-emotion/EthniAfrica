@@ -255,6 +255,27 @@
         "historicalRole": "Royaumes shona, héritage du Grand Zimbabwe, commerce régional, traditions shona."
       },
       {
+        "name": "Royaume de Gaza",
+        "period": "Années 1820 - 1895",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1821,
+          "endYear": 1895,
+          "precision": "approximate",
+          "datingNote": "Le début correspond à l'installation de Soshangane en pays tsonga, dans les années 1820, selon Leonard D. Ngcongco (HGA VI). La fin, 1895, reprend la date de la conquête portugaise donnée par la fiche du peuple tsonga ; elle n'est pas lue dans la source citée."
+        },
+        "dominantPeoples": [
+          "Shangana (partisans de Soshangane)",
+          "Ndau",
+          "Chopi",
+          "Manyika"
+        ],
+        "politicalCenters": [
+          "Pays tsonga, non loin de la baie de Delagoa (premiers établissements)"
+        ],
+        "historicalRole": "Royaume fondé par Soshangane, un des généraux de Zwide, qui s'établit en pays tsonga, non loin de la baie de Delagoa. Il soumet plusieurs petits groupes, dont les Manyika, les Ndau et les Chopi, et appelle son royaume Gaza. Au Mozambique, ses partisans sont appelés Shangana, d'après son nom, selon Leonard D. Ngcongco (HGA VI)."
+      },
+      {
         "name": "Colonie portugaise du Mozambique",
         "period": "1498 - 1975",
         "entryType": "colonial",
@@ -495,6 +516,13 @@
         "url": "https://www.unfpa.org/data/world-population/MZ",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VI, ch. 5 : Le Mfecane et l'émergence de nouveaux États africains",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par J. F. A. Ajayi, chapitre de Leonard D. Ngcongco (1996), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 132. Soshangane s'établit en pays tsonga, non loin de la baie de Delagoa, et y entreprend « de bâtir son propre royaume, qu'il appela Gaza »."
       }
     ],
     "demographics": {

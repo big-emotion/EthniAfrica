@@ -243,10 +243,16 @@ describe("duplicate people fiches folded on 2026-10-10", () => {
     (keeper) => {
       const { sources } = readKeeper(keeper).content;
       const titles = sources.map((source: { title: string }) => source.title);
+      // One UNESDOC permalink covers a whole volume of the Histoire générale
+      // de l'Afrique, and each signed chapter is cited as its own source, so
+      // two chapters of one volume are two locators, not a fold left over.
       const urls = sources
-        .map((source: { url: string | null }) => source.url)
-        .filter(Boolean)
-        .map(locator);
+        .filter((source: { url: string | null }) => source.url)
+        .map((source: { title: string; url: string }) =>
+          source.url.startsWith("https://unesdoc.unesco.org/")
+            ? `${locator(source.url)} ${source.title}`
+            : locator(source.url)
+        );
 
       expect(new Set(titles).size).toBe(titles.length);
       expect(new Set(urls).size).toBe(urls.length);

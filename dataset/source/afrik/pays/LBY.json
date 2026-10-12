@@ -387,6 +387,14 @@
         "historicalRole": "Royaumes berbères indépendants, résistance à Rome, développement du commerce transsaharien."
       },
       {
+        "name": "Royaume des Garamantes",
+        "period": "Antiquité",
+        "entryType": "polity",
+        "dominantPeoples": ["Garamantes"],
+        "politicalCenters": ["Garama (aujourd'hui Djerma, au Fezzan)"],
+        "historicalRole": "Depuis leurs oasis du Fezzan, entre l'Erg Oubari et l'Erg de Mourzouk, les Garamantes dominent tout le Fezzan et font payer tribut à de nombreuses tribus voisines. Vaincus par Cornelius Balbus en 19 av. J.-C., puis par Valerius Festus en 69 apr. J.-C., ils deviennent, semble-t-il, une sorte d'État client de l'Empire romain, selon P. Salama (HGA II)."
+      },
+      {
         "name": "Cyrénaïque grecque",
         "period": "631 av. J.-C. - 96 av. J.-C.",
         "entryType": "polity",
@@ -436,7 +444,20 @@
         },
         "dominantPeoples": ["Turcs ottomans", "Arabes", "Berbères"],
         "politicalCenters": ["Tripoli"],
-        "historicalRole": "État ottoman semi-autonome, piraterie en Méditerranée, résistance aux puissances européennes."
+        "historicalRole": "Province ottomane à partir de la prise de Tripoli, en 1551. De 1711 à 1835, la dynastie des Karamanli gouverne de façon autonome ; la Libye revient ensuite sous domination ottomane directe, jusqu'à l'invasion italienne de 1911, selon Mohamed H. Chérif (HGA V et VI). État ottoman semi-autonome, piraterie en Méditerranée, résistance aux puissances européennes."
+      },
+      {
+        "name": "Dynastie des Karamanli (Ḳāramānlī)",
+        "period": "1711-1835",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1711,
+          "endYear": 1835,
+          "precision": "year"
+        },
+        "dominantPeoples": ["Kouloughlis", "Arabes", "Berbères"],
+        "politicalCenters": ["Tripoli"],
+        "historicalRole": "En 1711, Aḥmad Ḳāramānlī, officier kouloughli, prend le pouvoir à Tripoli et fonde une dynastie de beys qui règne jusqu'en 1835, selon Mohamed H. Chérif (HGA V). La Libye revient alors sous domination ottomane directe (HGA VI)."
       },
       {
         "name": "Colonie italienne",
@@ -596,6 +617,27 @@
         "url": "https://www.unfpa.org/data/world-population/LY",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Histoire générale de l'Afrique, II, ch. 20 : Le Sahara pendant l'Antiquité classique",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par G. Mokhtar, chapitre de P. Salama (1980), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 565. Garama était le chef-lieu des Garamantes ; « vaincus par Cornelius Balbus, en – 19, puis définitivement vaincus par le légat Valerius Festus en l'an 69, ils devinrent, semble-t-il, une sorte d'Etat-client de l'Empire »."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, V, ch. 9 : Algérie, Tunisie et Libye : les Ottomans et leurs héritiers",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par B. A. Ogot, chapitre de M. H. Chérif (1999), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 277. « Les principales étapes de la conquête turque à l'est du Maghreb furent la prise de Tripoli en 1551 […]. » Page 297. Aḥmad Ḳāramānlī « s'empara du pouvoir à Tripoli, en 1711, et fonda une dynastie beylicale, appelée à régner jusqu'en 1835 »."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VI, ch. 17 : Nouveaux développements au Maghreb : l'Algérie, la Tunisie et la Libye",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par J. F. A. Ajayi, chapitre de Mohamed H. Chérif (1996), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 489. « La Libye des Ḳāramānlī retombait sous la domination directe ottomane en 1835 », avant d'être « envahie par les Italiens en 1911 »."
       }
     ],
     "demographics": {

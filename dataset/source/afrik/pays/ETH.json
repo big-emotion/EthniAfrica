@@ -644,12 +644,13 @@
     "kingdoms": [
       {
         "name": "Royaume d'Axoum",
-        "period": "Ier - VIIe siècles",
+        "period": "Ier siècle av. J.-C. - IXe siècle",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1,
-          "endYear": 700,
-          "precision": "century"
+          "startYear": -80,
+          "endYear": 825,
+          "precision": "approximate",
+          "datingNote": "Bornes de M. Curtis et P. R. Schmidt (GHA IX, 2025), tirées de l'archéologie : le royaume va d'environ 80 av. J.-C. à 825. F. Anfray (HGA II, 1980) étudie la civilisation d'Axoum du Ier au VIIe siècle, et le nom d'Axoum n'apparaît par écrit qu'à la fin du Ier siècle, dans le Périple de la mer Érythrée."
         },
         "dominantPeoples": ["Habesha (précurseurs des Amhara et Tigréens)"],
         "politicalCenters": ["Axoum (capitale)"],
@@ -670,7 +671,10 @@
           "Oromo",
           "autres peuples éthiopiens"
         ],
-        "politicalCenters": ["Gondar", "Addis-Abeba (capitale depuis 1889)"],
+        "politicalCenters": [
+          "Gondar (résidence impériale à partir de 1636)",
+          "Addis-Abeba (capitale depuis 1889)"
+        ],
         "historicalRole": "Empire puissant avec dynasties salomonides, christianisation, expansion territoriale, résistance à la colonisation."
       },
       {
@@ -845,6 +849,27 @@
         "url": "https://unstats.un.org/unsd/methodology/m49/",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "General History of Africa, IX: General History of Africa Revisited — ch. 19 (section III)",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000396045",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par A. F. C. Holl, chapitre de M. Curtis et P. R. Schmidt (2025), en libre accès sous licence CC BY-SA 3.0 IGO, lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Pages 812-813. « […] the Kingdom of Aksum (c. 80 BCE to 825 CE). »"
+      },
+      {
+        "title": "Histoire générale de l'Afrique, II, ch. 14 : La civilisation d'Axoum du Ier au VIIe siècle",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par G. Mokhtar, chapitre de F. Anfray (1980), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 389. « Le nom d'Axoum apparaît pour la première fois dans le Périple de la mer Erythrée […]. L'ouvrage date de la fin du Ier siècle. »"
+      },
+      {
+        "title": "Histoire générale de l'Afrique, V, ch. 24 : La corne de l'Afrique",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par B. A. Ogot, chapitre d'Eike Haberland (1999), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 787. « Le transfert de la résidence de l'empereur à Gondar, en 1636, est un signe de ce repli. »"
       }
     ],
     "demographics": {

@@ -578,6 +578,20 @@
         "historicalRole": "Califat islamique puissant fondé par Usman dan Fodio. Unification politique et religieuse du nord du Nigeria. Résistance à la colonisation britannique."
       },
       {
+        "name": "Ife",
+        "period": "XIIe - XVe siècles (période classique)",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1100,
+          "endYear": 1450,
+          "precision": "approximate",
+          "datingNote": "Ces bornes encadrent la période des pavements en tessons, datée par l'archéologie : les plus anciens vers 1100 selon Alan F. C. Ryder (HGA IV), l'apogée du milieu du XIIe au milieu du XVe siècle selon Thurstan Shaw (HGA III). Elles ne marquent ni la fondation ni la fin d'Ife."
+        },
+        "dominantPeoples": ["Yoruba"],
+        "politicalCenters": ["Ife (Ile-Ife)"],
+        "historicalRole": "Ville et royaume yoruba. Les fouilles y ont trouvé des sols pavés de morceaux de poterie posés sur la tranche. Les plus anciens datent d'environ 1100, selon Alan F. C. Ryder (HGA IV). Vingt-cinq datations au carbone 14 placent l'apogée de ces pavements entre le milieu du XIIe et le milieu du XVe siècle, selon Thurstan Shaw (HGA III)."
+      },
+      {
         "name": "Royaume d'Oyo",
         "period": "XIVe - XIXe siècles",
         "entryType": "polity",
@@ -587,7 +601,7 @@
           "precision": "century"
         },
         "dominantPeoples": ["Yoruba"],
-        "politicalCenters": ["Oyo (capitale)", "Ile-Ife"],
+        "politicalCenters": ["Oyo (capitale)"],
         "historicalRole": "Royaume yoruba puissant, expansion territoriale, commerce transsaharien. Influence culturelle majeure."
       },
       {
@@ -837,6 +851,20 @@
         "tier": "referenced",
         "source_kind": "press",
         "notes": "L'étude situe au 8 janvier 1897 l'article du Times proposant le nom Nigeria. Elle distingue la proposition d'un nom de son imposition. Elle signale aussi des usages antérieurs de « Nigerian » chez Cole (1862) et Burton (1863), dont l'interprétation reste discutée."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, IV, ch. 14 : De la Volta au Cameroun",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par D. T. Niane, chapitre d'Alan Frederick Charles Ryder (1985), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 381. « Les sols “en tessons” les plus anciens découverts jusqu'ici à Ife datent d'environ l'an 1100 de l'ère chrétienne. »"
+      },
+      {
+        "title": "Histoire générale de l'Afrique, III, ch. 16 : La zone guinéenne : situation générale",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par M. El Fasi et I. Hrbek, chapitre de Thurstan Shaw (1990), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 514. Vingt-cinq datations au carbone 14 placent « du milieu du XIIe siècle au milieu du XVe siècle » l'époque par excellence des dallages en tessons d'Ife."
       }
     ],
     "demographics": {
