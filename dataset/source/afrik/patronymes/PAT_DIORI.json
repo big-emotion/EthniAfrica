@@ -11,7 +11,10 @@
     {
       "spelling": "Diori",
       "attestations": [
-        { "countryId": "NER", "sourceRefs": ["assemblee-nationale-diori"] }
+        {
+          "countryId": "NER",
+          "sourceRefs": ["assemblee-nationale-diori"]
+        }
       ]
     }
   ],
@@ -93,5 +96,71 @@
       "fieldPath": "transmissionMode",
       "reason": "La notice de l'Assemblée nationale et l'article de Bondaz attestent un porteur et son association songhay-zarma, mais ne décrivent pas la transmission de Diori ; les recherches sur filiation, héritage du nom et clan n'ont pas permis de remplacer « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Diori est un nom de famille du Niger, celui de la famille songhay-zarma de Hamani Diori, que les textes écrivent aussi Diori Hamani. On le lit dans une notice de l'Assemblée nationale française dès l'élection de 1946. Les sources lues ne disent pas ce qu'il veut dire : on ne sait pas avec certitude d'où il vient.",
+    "names": [
+      {
+        "nameText": "Diori",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille songhay-zarma du Niger, lu dès 1946 ; on ne sait pas avec certitude d'où il vient.",
+        "periodLabel": "Écrit dès 1946 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1959,
+              "to": 1960,
+              "label": "1959-1960"
+            },
+            "statement": "Le nom Diori est celui d'une famille songhay-zarma du Niger : Julien Bondaz l'écrit Diori Hamani, nom en tête, pour le premier ministre de l'époque, qu'il dit de ce groupe. Les sources lues ne disent pas ce que le nom veut dire ni d'où il vient ; on ne sait pas avec certitude.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La musée-transe. Autour du film Hampi. Le ciel est posé sur la terre de Jean Rouch (1961)",
+                "author": "Julien Bondaz",
+                "year": 2022,
+                "url": "https://journals.openedition.org/civilisations/7080",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 16 (p. 61-84 de la revue)",
+                "notes": "Civilisations 71, 2022, DOI 10.4000/civilisations.7080, lu le 13 octobre 2026 dans le texte intégral en ligne. Le paragraphe 16 parle des Songhay-Zarma, « le groupe ethnique du premier ministre et futur président de la République, Diori Hamani » ; l'auteur écrit le nom dans cet ordre. L'article ne dit rien de l'origine ni du sens du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1946,
+              "to": 1946,
+              "label": "10 novembre 1946"
+            },
+            "era": "colonial",
+            "statement": "Le nom Diori apparaît par écrit, sous la forme Diori, dans la notice du dictionnaire des parlementaires français que reprend la base Sycomore : Hamani Diori y est élu député du Niger le 10 novembre 1946, aux premières élections de ce genre organisées au Niger. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un document l'a écrit, pas depuis quand la famille le porte.",
+            "formAsWritten": "Diori",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Hamani Diori",
+                "role": "figure dans cette notice"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Diori Hamani Diori — Base Sycomore",
+                "author": "Assemblée nationale (France)",
+                "year": null,
+                "url": "https://www2.assemblee-nationale.fr/sycomore/fiche/3736",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "fiche 3736, rubrique « Biographies »",
+                "notes": "Notice de la base des députés français depuis 1789, lue le 12 octobre 2026 dans sa version française. Sa rubrique « Biographies » reprend le dictionnaire des parlementaires français de 1940 à 1958 (La Documentation française) : Hamani Diori, né le 16 juin 1916 à Soudouré-Karma, y conduit la liste du Parti progressiste nigérien aux élections du 10 novembre 1946 et entre à l'Assemblée nationale. Elle ne dit rien de l'origine du nom."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

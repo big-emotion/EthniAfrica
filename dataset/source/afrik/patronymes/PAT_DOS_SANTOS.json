@@ -98,5 +98,176 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom dos Santos à un peuple en Angola ou au Mozambique. Nous n'avons pas encore consulté de source consacrée à ce nom. Les fiches sur les Ndau citent le missionnaire portugais João dos Santos. Cette mention ne relie pas le nom à un groupe qui le porterait. Les exemples de noms portugais cités pour les créoles de Guinée-Bissau ne suffisent pas à expliquer leur usage en Angola."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom dos Santos est un nom de famille d'origine portugaise, qui s'écrit aussi Santos. Il est porté en Angola. Les sources lues ne disent pas depuis quand ni comment il y est arrivé, ni s'il est porté au Mozambique. Elles lui donnent plusieurs origines possibles, que nous présentons plus bas.",
+    "names": [
+      {
+        "nameText": "dos Santos",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un nom de famille d'origine portugaise porté en Angola ; plusieurs origines sont proposées.",
+        "periodLabel": "Écrit au Portugal dès 1792 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom dos Santos est la forme portugaise du nom Santos, selon le Dictionary of American Family Names, qui rapproche l'espagnol De los Santos du portugais Dos Santos. Les sources donnent plusieurs origines à Santos ; nous les présentons séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Santos",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://web.archive.org/web/20251207030855/https://www.ancestry.com/last-name-meaning/santos",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 13 octobre 2026 dans la copie du 7 décembre 2025 conservée par la Wayback Machine, le site d'Ancestry refusant l'accès. La notice dit : nom espagnol, portugais et galicien, tiré d'un nom de personne donné d'ordinaire à un enfant né le jour de la Toussaint (espagnol Todos los Santos, portugais et galicien Todos os Santos), et aussi nom d'habitation tiré des lieux appelés (Los) Santos, d'après la dédicace d'une église à tous les saints. Elle invite à comparer l'espagnol De los Santos avec le portugais et galicien Dos Santos."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom dos Santos est porté en Angola : l'encyclopédie Larousse présente José Eduardo Dos Santos comme un homme d'État angolais, né à Luanda en 1942 et mort à Barcelone en 2022. On ne sait pas avec certitude depuis quand ni comment ce nom d'origine portugaise y est arrivé.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "José Eduardo Dos Santos",
+                "author": "Larousse",
+                "year": null,
+                "url": "https://www.larousse.fr/encyclopedie/personnage/wd/116962",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Notice de l'encyclopédie Larousse en ligne, lue le 13 octobre 2026. Elle présente José Eduardo Dos Santos comme un « homme d'État angolais (Luanda 1942 - Barcelone 2022) » ; elle est citée seulement pour le nom porté, non pour la vie de la personne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposée en 2022"
+            },
+            "statement": "Le nom Santos viendrait d'un nom de personne donné à un enfant né le jour de la Toussaint, en portugais Todos os Santos, selon le Dictionary of American Family Names.",
+            "hypothesisGroup": "origine du nom dos Santos",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Santos",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://web.archive.org/web/20251207030855/https://www.ancestry.com/last-name-meaning/santos",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 13 octobre 2026 dans la copie du 7 décembre 2025 conservée par la Wayback Machine, le site d'Ancestry refusant l'accès. La notice dit : nom espagnol, portugais et galicien, tiré d'un nom de personne donné d'ordinaire à un enfant né le jour de la Toussaint (espagnol Todos los Santos, portugais et galicien Todos os Santos), et aussi nom d'habitation tiré des lieux appelés (Los) Santos, d'après la dédicace d'une église à tous les saints. Elle invite à comparer l'espagnol De los Santos avec le portugais et galicien Dos Santos."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposée en 2022"
+            },
+            "statement": "Le nom Santos viendrait de l'un des lieux appelés Santos, d'après une église ou un sanctuaire dédié à tous les saints, selon le Dictionary of American Family Names.",
+            "hypothesisGroup": "origine du nom dos Santos",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Santos",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://web.archive.org/web/20251207030855/https://www.ancestry.com/last-name-meaning/santos",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 13 octobre 2026 dans la copie du 7 décembre 2025 conservée par la Wayback Machine, le site d'Ancestry refusant l'accès. La notice dit : nom espagnol, portugais et galicien, tiré d'un nom de personne donné d'ordinaire à un enfant né le jour de la Toussaint (espagnol Todos los Santos, portugais et galicien Todos os Santos), et aussi nom d'habitation tiré des lieux appelés (Los) Santos, d'après la dédicace d'une église à tous les saints. Elle invite à comparer l'espagnol De los Santos avec le portugais et galicien Dos Santos."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Proposée en 1928"
+            },
+            "statement": "Le nom Santos serait l'un des noms religieux, tiré de la fête de tous les saints, que prenaient les frères et les religieuses à la place de leur nom de famille, avant de passer dans la vie civile, selon le linguiste José Leite de Vasconcelos.",
+            "hypothesisGroup": "origine du nom dos Santos",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 139-140",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'archive.org. Pages 137-139, chapitre « Sobrenomes provenientes da religião » : ces noms sont rares dans les plus anciens documents, et l'auteur croit que c'est à partir du XVIe siècle qu'ils commencent à apparaître. Page 139 : exemples du XVIIIe siècle tirés d'un almanach de 1792, dont « Luis dos Santos, p. 87 » et « Antonio dos Santos, p. 125 » ; les frères et les religieuses changeaient souvent leur nom de famille contre un nom religieux, ce qui devait beaucoup contribuer à répandre ces noms dans la vie civile, où l'on trouve encore, aux XIXe et XXe siècles, entre autres Santos, « dia de Todos os Santos » (pages 139-140)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1792,
+              "to": 1792,
+              "label": "1792"
+            },
+            "statement": "Le nom dos Santos apparaît au Portugal dans un almanach de 1792, que cite José Leite de Vasconcelos : « Luis dos Santos » (page 87 de l'almanach) et « Antonio dos Santos » (page 125). C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne dit rien de son arrivée en Angola.",
+            "formAsWritten": "dos Santos",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 139",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'archive.org. Pages 137-139, chapitre « Sobrenomes provenientes da religião » : ces noms sont rares dans les plus anciens documents, et l'auteur croit que c'est à partir du XVIe siècle qu'ils commencent à apparaître. Page 139 : exemples du XVIIIe siècle tirés d'un almanach de 1792, dont « Luis dos Santos, p. 87 » et « Antonio dos Santos, p. 125 » ; les frères et les religieuses changeaient souvent leur nom de famille contre un nom religieux, ce qui devait beaucoup contribuer à répandre ces noms dans la vie civile, où l'on trouve encore, aux XIXe et XXe siècles, entre autres Santos, « dia de Todos os Santos » (pages 139-140)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Santos",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "La forme courte du nom dos Santos, sans « dos », qui veut dire « des ».",
+        "periodLabel": "Porté aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Santos est la forme sans préposition du nom dos Santos : le Dictionary of American Family Names donne Santos comme nom espagnol, portugais et galicien, et rapproche De los Santos de Dos Santos.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Santos",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://web.archive.org/web/20251207030855/https://www.ancestry.com/last-name-meaning/santos",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 13 octobre 2026 dans la copie du 7 décembre 2025 conservée par la Wayback Machine, le site d'Ancestry refusant l'accès. La notice dit : nom espagnol, portugais et galicien, tiré d'un nom de personne donné d'ordinaire à un enfant né le jour de la Toussaint (espagnol Todos los Santos, portugais et galicien Todos os Santos), et aussi nom d'habitation tiré des lieux appelés (Los) Santos, d'après la dédicace d'une église à tous les saints. Elle invite à comparer l'espagnol De los Santos avec le portugais et galicien Dos Santos."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

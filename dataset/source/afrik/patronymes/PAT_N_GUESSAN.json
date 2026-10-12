@@ -101,5 +101,245 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches « N'Guessan homonym etymology » et « N'Guessan surname origin other language » n'ont pas établi une graphie identique d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom N'Guessan est un nom baoulé, en Côte d'Ivoire, que l'on donne à un enfant d'après son rang de naissance : le troisième enfant du même sexe que ses deux aînés. On l'écrit aussi Nguessan. Une seule explication de son sens est rapportée, et elle le rattache à une forme plus ancienne, Gnissan ; nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "N'Guessan",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom baoulé donné au troisième enfant du même sexe que ses deux aînés.",
+        "periodLabel": "Écrit dès 1900 ; donné aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom N'Guessan est un nom de rang : chez les Baoulé, on le donne au troisième enfant d'une même mère et d'un même père quand il est du même sexe que ses deux aînés, selon Doh Clément Pagnet.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les noms Wè : valeur expressive et didactive, un exemple de créativité poétique dans la littérature orale africaine",
+                "author": "Doh Clément Pagnet",
+                "year": 2005,
+                "url": "https://hdl.handle.net/20.500.12177/1675",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 260",
+                "notes": "Thèse, Université d'Abidjan-Cocody, soutenue le 20 mai 2005. Lue dans le dépôt institutionnel DICAMES du CAMES le 12 octobre 2026 ; le titre original écrit « didactive ». Page 260 : « un enfant qui naît en troisième position, s'il est du même sexe que ses deux prédécesseurs, sera nommé Gnissan, qui est devenu N'guessan. GNI = être puissant, de forte personnalité, et NSAN, trois ». La note renvoie à Bernadette Koffi, L'univers des noms et prénoms baoulé en Côte d'Ivoire, Abidjan, N.E.I., 2001, p. 51, que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2001,
+              "to": 2005,
+              "label": "Proposée en 2001, reprise en 2005"
+            },
+            "era": "modern",
+            "statement": "Le nom N'Guessan viendrait de Gnissan, formé de gni, « être puissant, de forte personnalité », et de nsan, « trois », selon Bernadette Koffi, que Doh Clément Pagnet cite dans sa thèse.",
+            "sources": [
+              {
+                "title": "Les noms Wè : valeur expressive et didactive, un exemple de créativité poétique dans la littérature orale africaine",
+                "author": "Doh Clément Pagnet",
+                "year": 2005,
+                "url": "https://hdl.handle.net/20.500.12177/1675",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 260",
+                "notes": "Thèse, Université d'Abidjan-Cocody, soutenue le 20 mai 2005. Lue dans le dépôt institutionnel DICAMES du CAMES le 12 octobre 2026 ; le titre original écrit « didactive ». Page 260 : « un enfant qui naît en troisième position, s'il est du même sexe que ses deux prédécesseurs, sera nommé Gnissan, qui est devenu N'guessan. GNI = être puissant, de forte personnalité, et NSAN, trois ». La note renvoie à Bernadette Koffi, L'univers des noms et prénoms baoulé en Côte d'Ivoire, Abidjan, N.E.I., 2001, p. 51, que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "2005"
+            },
+            "era": "modern",
+            "statement": "Le nom N'Guessan apparaît par écrit, sous la forme N'guessan, dans la thèse de Doh Clément Pagnet, qui le donne comme le nom baoulé du troisième enfant du même sexe que ses aînés. C'est la plus ancienne trace de cette graphie que le projet connaît ; elle dit quand un auteur l'a notée, pas depuis quand le nom est donné.",
+            "formAsWritten": "N'guessan",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Doh Clément Pagnet",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les noms Wè : valeur expressive et didactive, un exemple de créativité poétique dans la littérature orale africaine",
+                "author": "Doh Clément Pagnet",
+                "year": 2005,
+                "url": "https://hdl.handle.net/20.500.12177/1675",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 260",
+                "notes": "Thèse, Université d'Abidjan-Cocody, soutenue le 20 mai 2005. Lue dans le dépôt institutionnel DICAMES du CAMES le 12 octobre 2026 ; le titre original écrit « didactive ». Page 260 : « un enfant qui naît en troisième position, s'il est du même sexe que ses deux prédécesseurs, sera nommé Gnissan, qui est devenu N'guessan. GNI = être puissant, de forte personnalité, et NSAN, trois ». La note renvoie à Bernadette Koffi, L'univers des noms et prénoms baoulé en Côte d'Ivoire, Abidjan, N.E.I., 2001, p. 51, que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom N'Guessan s'écrit alors Nguessan, sans apostrophe, chez Maurice Delafosse, qui le relève chez les Baoulé de Toumodi et le transcrit Ngesa en agni.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Essai de manuel de la langue agni, parlée dans la moitié orientale de la Côte d'Ivoire",
+                "author": "Maurice Delafosse",
+                "year": 1900,
+                "url": "https://archive.org/details/essaidemanuelde00delagoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 137-138",
+                "notes": "Paris, J. André, 1900. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Auteur de l'époque coloniale, cité ici pour les noms qu'il relève. Page 137 : « Kruku-Ngesâ (Nguessan fils de Krou-krou) ». Page 138 : le chef Nyango-Kouassi de Toumodi, ayant eu un fils peu après la mort de sa sœur « Nguessan », l'enfant, né un samedi et donc nommé Kofi, « porte le nom de Ngesa-Kofi »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nguessan",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le même nom écrit sans apostrophe, relevé dès 1900 chez les Baoulé.",
+        "periodLabel": "Écrit dès 1900",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "Rapporté en 2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Nguessan est la forme que prend Gnissan dans les documents officiels, selon Bernadette Koffi, citée par Doh Clément Pagnet, qui attribue ces changements à l'erreur des officiers d'état civil ou à la fantaisie de ceux qui donnent les noms.",
+            "sources": [
+              {
+                "title": "Les noms Wè : valeur expressive et didactive, un exemple de créativité poétique dans la littérature orale africaine",
+                "author": "Doh Clément Pagnet",
+                "year": 2005,
+                "url": "https://hdl.handle.net/20.500.12177/1675",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 289-290",
+                "notes": "Thèse, Université d'Abidjan-Cocody, soutenue le 20 mai 2005. Lue dans le dépôt institutionnel DICAMES du CAMES le 12 octobre 2026 ; le titre original écrit « didactive ». Pages 289-290 : Pagnet cite Bernadette Koffi, qui relève des noms baoulé « francisés » dans les documents administratifs, dont « GNISSAN devient Nguessan », et il attribue ces changements d'orthographe à l'erreur des officiers d'état civil ou à la fantaisie de ceux qui donnent les noms."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nguessan est celui de la sœur du chef Nyango-Kouassi, de Toumodi, morte peu avant la naissance de son neveu : l'enfant, né un samedi, reçoit alors le nom Ngesa-Kofi, selon Maurice Delafosse.",
+            "actors": [
+              {
+                "name": "Nyango-Kouassi",
+                "role": "chef de Toumodi, frère de la défunte, cité dans l'exemple"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Essai de manuel de la langue agni, parlée dans la moitié orientale de la Côte d'Ivoire",
+                "author": "Maurice Delafosse",
+                "year": 1900,
+                "url": "https://archive.org/details/essaidemanuelde00delagoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 137-138",
+                "notes": "Paris, J. André, 1900. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Auteur de l'époque coloniale, cité ici pour les noms qu'il relève. Page 137 : « Kruku-Ngesâ (Nguessan fils de Krou-krou) ». Page 138 : le chef Nyango-Kouassi de Toumodi, ayant eu un fils peu après la mort de sa sœur « Nguessan », l'enfant, né un samedi et donc nommé Kofi, « porte le nom de Ngesa-Kofi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nguessan apparaît par écrit dans l'Essai de manuel de la langue agni de Maurice Delafosse, qui l'écrit Nguessan en français et Ngesa en agni, comme nom d'une femme de Toumodi et d'un homme appelé « Nguessan fils de Kroukrou ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a notée, pas depuis quand le nom est donné.",
+            "formAsWritten": "Nguessan",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Essai de manuel de la langue agni, parlée dans la moitié orientale de la Côte d'Ivoire",
+                "author": "Maurice Delafosse",
+                "year": 1900,
+                "url": "https://archive.org/details/essaidemanuelde00delagoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 137-138",
+                "notes": "Paris, J. André, 1900. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Auteur de l'époque coloniale, cité ici pour les noms qu'il relève. Page 137 : « Kruku-Ngesâ (Nguessan fils de Krou-krou) ». Page 138 : le chef Nyango-Kouassi de Toumodi, ayant eu un fils peu après la mort de sa sœur « Nguessan », l'enfant, né un samedi et donc nommé Kofi, « porte le nom de Ngesa-Kofi »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gnissan",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "bci",
+        "namedBy": null,
+        "shortLine": "La forme plus ancienne dont N'Guessan serait venu, selon une thèse de 2005.",
+        "periodLabel": "Écrit en 2005 ; ancienne forme",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Gnissan apparaît par écrit dans la thèse de Doh Clément Pagnet, qui le donne comme le nom baoulé du troisième enfant du même sexe que ses aînés, devenu depuis N'guessan. C'est la plus ancienne trace de cette forme que le projet connaît ; elle dit quand un auteur l'a notée, pas depuis quand elle est employée.",
+            "formAsWritten": "Gnissan",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Doh Clément Pagnet",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les noms Wè : valeur expressive et didactive, un exemple de créativité poétique dans la littérature orale africaine",
+                "author": "Doh Clément Pagnet",
+                "year": 2005,
+                "url": "https://hdl.handle.net/20.500.12177/1675",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 260",
+                "notes": "Thèse, Université d'Abidjan-Cocody, soutenue le 20 mai 2005. Lue dans le dépôt institutionnel DICAMES du CAMES le 12 octobre 2026 ; le titre original écrit « didactive ». Page 260 : « un enfant qui naît en troisième position, s'il est du même sexe que ses deux prédécesseurs, sera nommé Gnissan, qui est devenu N'guessan. GNI = être puissant, de forte personnalité, et NSAN, trois ». La note renvoie à Bernadette Koffi, L'univers des noms et prénoms baoulé en Côte d'Ivoire, Abidjan, N.E.I., 2001, p. 51, que nous n'avons pas lu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

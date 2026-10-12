@@ -90,5 +90,66 @@
       "fieldPath": "homonyms",
       "reason": "les résultats exacts « Curpen », les Indian Immigration Archives du Mahatma Gandhi Institute, les publications de l'Aapravasi Ghat et les catalogues bibliographiques sur l'engagisme à Maurice n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Curpen est un nom de famille de Maurice. Les sources lues ne disent ni ce qu'il veut dire ni d'où il vient : on ne sait pas avec certitude, et aucune n'établit à ce jour une origine indienne. On le lit dans un catalogue d'archives dès 1991.",
+    "names": [
+      {
+        "nameText": "Curpen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille de Maurice, lu dans un jugement de 1991 ; on ne sait pas avec certitude d'où il vient.",
+        "periodLabel": "Écrit dès 1991 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Curpen est un nom de famille de Maurice, que les enfants reçoivent de leur père : la Law Reform Commission décrit cette règle en 2025. Les sources lues ne disent pas ce que le nom veut dire ni d'où il vient ; on ne sait pas avec certitude.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Key Publications of the Law Reform Commission on Women's Rights — Issue Paper on « Nom de famille »",
+                "author": "Law Reform Commission of Mauritius",
+                "year": 2025,
+                "url": "https://lrc.govmu.org/lrc/wp-content/uploads/2025/09/LRC-Newsletter-International-Womens-Day.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "pages 7 et 11 du fichier PDF",
+                "notes": "Law Reform Commission de Maurice, mars 2025, lettre d'information synthétisant l'Issue Paper LRC_R&P 61, lue le 12 octobre 2026. Le texte présente la transmission automatique du nom du père aux enfants comme la règle que le droit mauricien doit réformer. Il ne parle pas de Curpen."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1991,
+              "to": 1991,
+              "label": "1991"
+            },
+            "era": "modern",
+            "statement": "Le nom Curpen apparaît dans le catalogue des Archives nationales britanniques, sous la forme Curpen, comme celui de l'appelant Marday Curpen contre la Reine, dans un jugement de 1991 venu de Maurice. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un greffe l'a noté, pas depuis quand la famille le porte.",
+            "formAsWritten": "Curpen",
+            "birth": true,
+            "sources": [
+              {
+                "title": "[Judgment No 38 of 1991]. Printed Appeal to the Judicial Committee of the Privy Council from MAURITIUS",
+                "author": "The National Archives (Royaume-Uni)",
+                "year": 1991,
+                "url": "https://discovery.nationalarchives.gov.uk/details/r/C17221562",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "cote PCAP 6/2189/1",
+                "notes": "Notice du catalogue Discovery des Archives nationales britanniques, lue le 13 octobre 2026 : « Appellant: Marday Curpen. Respondent: The Queen. », jugement du 11 novembre 1991 (BAILII : UKPC 38 of 1991). Seule la notice a été lue, non le jugement, dont la page BAILII est protégée contre les robots."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

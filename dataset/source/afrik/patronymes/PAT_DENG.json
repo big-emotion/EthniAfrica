@@ -101,5 +101,115 @@
       "fieldPath": "homonyms",
       "reason": "Les sources consultées, dont les chants dinka conservés à Édimbourg et la thèse de Nikkel, ne décrivent pas d'autre nom écrit Deng qui aurait une origine différente."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Deng est un nom personnel dinka, porté au Soudan et au Soudan du Sud. Les Dinka n'ont pas de nom de famille fixe : le nom d'une personne est suivi de celui de son père, puis de celui de son grand-père. Deng est aussi le nom d'une divinité et d'un ancêtre primordial des Dinka. Les sources lues ne disent pas si le nom des personnes en vient ; nous présentons plus bas ce qu'elles disent.",
+    "names": [
+      {
+        "nameText": "Deng",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel dinka, écrit « Den » dès 1887 ; aussi le nom d'une divinité.",
+        "periodLabel": "Écrit dès 1887 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom Deng est un nom personnel, pas un nom de clan. Les Dinka n'ont pas de nom de famille fixe : il se lit derrière le prénom d'une personne comme le nom de son père, par exemple dans « Peter Bol Deng Arok », où Deng est le nom du père de Peter Bol.",
+            "sources": [
+              {
+                "title": "A Collection of Dinka Songs — README",
+                "author": "Bert Remijsen et l'équipe du projet Metre and Melody in Dinka Speech and Song",
+                "year": 2012,
+                "url": "https://datashare.ed.ac.uk/bitstream/handle/10283/184/ACollectionofDinkaSongs_readme.pdf",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 1",
+                "notes": "University of Edinburgh et SOAS. Relu dans le PDF intégral (6 pages) le 12 octobre 2026. Section « Name » : les Dinka n'ont pas de nom de famille fixe ; le prénom est suivi de celui du père, du grand-père et parfois de l'arrière-grand-père ; l'exemple « Peter Bol Deng Arok » où Peter et Bol sont les prénoms chrétien et dinka, Deng et Arok le père et le grand-père."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1993,
+              "to": 1993,
+              "label": "Décrit en 1993"
+            },
+            "era": "modern",
+            "aspect": "meaning",
+            "statement": "Le nom Deng est un nom personnel, « sans aucun doute », et peut-être le plus courant chez les hommes dinka, selon Marc Nikkel, qui note que le poète et prêtre Athiaan Deng le partage avec son père et ses ancêtres.",
+            "sources": [
+              {
+                "title": "The Origins and Development of Christianity among the Dinka of Sudan",
+                "author": "Marc R. Nikkel",
+                "year": 1993,
+                "url": "https://era.ed.ac.uk/items/8e0f0fba-5c36-4071-8f28-9168cf2e688f",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 234",
+                "notes": "Thèse de l'University of Edinburgh, 1993, relue dans le PDF intégral du dépôt ERA le 12 octobre 2026. Les numéros de page sont ceux imprimés en haut de chaque page de la thèse. Chapitre sur Abuna Athiaan Deng, poète : « 'Deng' is, undeniably, a personal name, perhaps the most common name for Dinka males, shared by the poet, his father and his ancestors. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1993,
+              "to": 1993,
+              "label": "Proposé en 1993"
+            },
+            "era": "modern",
+            "hypothesisGroup": "origine du nom Deng",
+            "statement": "Le nom Deng serait lié à celui de Deng, ancêtre primordial et divinité des Dinka associée à la pluie, au tonnerre et aux éclairs, selon Marc Nikkel. Il écrit que le nom personnel a des liens avec cet ancêtre et avec la divinité, sans dire que chaque Deng en vienne.",
+            "sources": [
+              {
+                "title": "The Origins and Development of Christianity among the Dinka of Sudan",
+                "author": "Marc R. Nikkel",
+                "year": 1993,
+                "url": "https://era.ed.ac.uk/items/8e0f0fba-5c36-4071-8f28-9168cf2e688f",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18-19, 234",
+                "notes": "Thèse de l'University of Edinburgh, 1993, relue dans le PDF intégral du dépôt ERA le 12 octobre 2026. Les numéros de page sont ceux imprimés en haut de chaque page de la thèse. P. 18-19 : Deng, avec Abuk et Garang, parmi les ancêtres primordiaux des Dinka, divinité de la pluie, du tonnerre et des éclairs, que les Dinka disent être « Nhialic lui-même » (Dengdit). P. 234 : le nom personnel Deng « has associations with the primal ancestor and with Divinity ». Nikkel ne dit pas que tous les noms personnels Deng en dérivent."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1887,
+              "label": "1887"
+            },
+            "formAsWritten": "Den",
+            "birth": true,
+            "statement": "Le nom Deng apparaît sous une forme proche, Den, dans la revue missionnaire Nigrizia de 1887, qui publie les souvenirs du père Daniele Sorur Pharim Den, un Dinka devenu prêtre catholique. Marc Nikkel, qui rapporte cette graphie italienne et écrit lui-même Deng, cite l'article. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand une revue l'a écrit, pas depuis quand il est porté.",
+            "actors": [
+              {
+                "name": "Daniele Sorur Pharim Den",
+                "role": "signe les souvenirs publiés sous cette graphie"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Origins and Development of Christianity among the Dinka of Sudan",
+                "author": "Marc R. Nikkel",
+                "year": 1993,
+                "url": "https://era.ed.ac.uk/items/8e0f0fba-5c36-4071-8f28-9168cf2e688f",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 83, 85",
+                "notes": "Thèse de l'University of Edinburgh, 1993, relue dans le PDF intégral du dépôt ERA le 12 octobre 2026. Les numéros de page sont ceux imprimés en haut de chaque page de la thèse. P. 83 : Daniel Sorur, « a Dinka who entered Holy Orders in 1886 », et note 112 : « An alternative Italian spelling is Daniele Surur Pharim Den ». P. 85, note 118 : « Memorie scritte dal R P. Daniele Sorur Pharim Den », Nigrizia V, 1887, p. 146-152. L'article de 1887 n'a pas été lu : la graphie et la date sont celles que Nikkel rapporte."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

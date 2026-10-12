@@ -109,5 +109,83 @@
       "fieldPath": "countries",
       "reason": "La source propre au nom n'a pas confirmé le pays où il est porté ; les recherches « Berhane » avec Ethiopia, Eritrea et les variantes de la fiche n'ont pas livré de registre officiel exploitable."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Berhane est un nom personnel éthiopien et érythréen. Il sert de second nom aux enfants d'un homme qui le porte, sans devenir un nom de famille. Il voudrait dire « ma lumière » ; nous présentons plus bas l'explication de son sens. Les sources lues ne disent pas depuis quand il est écrit.",
+    "names": [
+      {
+        "nameText": "Berhane",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel éthiopien et érythréen, porté en second par les enfants d'un Berhane.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1996,
+              "to": 2022,
+              "label": "Décrit en 1996 et en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Berhane est un nom personnel éthiopien et érythréen. En Éthiopie, une personne porte son propre nom suivi du nom personnel de son père, parfois de celui de son grand-père. Chez l'enfant d'un Berhane, Berhane est donc le nom du père, et il ne passe pas aux petits-enfants.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Names of Persons: National Usages for Entry in Catalogues",
+                "author": "IFLA Universal Bibliographic Control and International MARC Programme",
+                "year": 1996,
+                "url": "https://www.ifla.org/files/assets/cataloguing/pubs/names-of-persons_1996.pdf",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 64-65",
+                "notes": "Quatrième édition, Munich, K. G. Saur, 1996, lu le 13 octobre 2026 dans le PDF de l'IFLA. La notice Éthiopie, p. 64-65, fournie par la bibliothèque de l'université d'Addis-Abeba et approuvée par la Bibliothèque et les Archives nationales en octobre 1994, compose le nom d'un nom personnel, suivi du nom personnel du père, parfois de celui du grand-père. Elle cite Wolde Mariam parmi les noms composés, W. Berhan pour Wolde Berhan parmi les abréviations, et l'abuna Lukas Tewolde parmi les exemples. Elle note que le Code civil de 1960 prescrit un nom de famille, usage qui ne s'est pas encore répandu."
+              },
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Berhane",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/berhane?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lu le 13 octobre 2026 ; le site affiche une traduction française. La notice dit : nom éthiopien et érythréen, du nom personnel Berhane, interprété comme « ma lumière » en amharique et en tigrigna. Les Éthiopiens et les Érythréens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Berhane voudrait dire « ma lumière » en amharique et en tigrigna, selon le Dictionary of American Family Names. Le mot berhan, « lumière », existe déjà en guèze, dans le dictionnaire d'August Dillmann.",
+            "hypothesisGroup": "origine du nom Berhane",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Berhane",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/berhane?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lu le 13 octobre 2026 ; le site affiche une traduction française. La notice dit : nom éthiopien et érythréen, du nom personnel Berhane, interprété comme « ma lumière » en amharique et en tigrigna. Les Éthiopiens et les Érythréens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              },
+              {
+                "title": "Lexicon linguae aethiopicae",
+                "author": "August Dillmann",
+                "year": 1865,
+                "url": "https://archive.org/details/lexiconlinguaeae00dilluoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "col. 500",
+                "notes": "Leipzig, T. O. Weigel, 1865. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'archive.org (bibliothèque de l'université de Toronto). Le dictionnaire est imprimé en colonnes. Colonne 500, entrée « ብርሃን » : « lux, lumen », avec des références bibliques ; le mot est aussi donné au pluriel et au sens de « splendeur ». Dillmann ne le donne pas comme nom de personne."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

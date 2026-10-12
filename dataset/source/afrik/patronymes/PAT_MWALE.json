@@ -93,5 +93,164 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web et bibliographique combinant « Mwale », « Chewa », « la Zambie et le Malawi », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la source dédiée « The Natives of British Central Africa » et la page Forebears propre au nom, consultées directement, n’a pas établi de lignée homonyme d’origine distincte documentable ; la diffusion dans plusieurs pays ne suffit pas à créer un homonyme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mwale est celui d'un clan transmis par la mère chez les Chewa et chez les Yawo du Malawi. Les sources lues ne disent pas ce qu'il désigne en Zambie. Elles ne s'accordent pas sur le sens du nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Mwale",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un clan chewa et yawo du Malawi, transmis par la mère ; son sens est expliqué de deux façons.",
+        "periodLabel": "Écrit dès 1906 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mwale désigne un clan des Chewa et des Yawo du Malawi, transmis par la mère. L'archéologue Yusuf Juwayeyi le range parmi les petits clans, avec Mbewe, que des historiens font arriver au Malawi avant le clan Phiri. Les sources ne s'accordent pas sur le sens du nom ; nous les présentons séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Archaeology and Oral Tradition in Malawi: Origins and Early History of the Chewa",
+                "author": "Yusuf M. Juwayeyi",
+                "year": 2020,
+                "url": "https://dokumen.pub/archaeology-and-oral-tradition-in-malawi-origins-and-early-history-of-the-chewa-1847012531-9781847012531.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38",
+                "notes": "Woodbridge, James Currey, 2020. Lu sur une copie non officielle en ligne. Page 11 : le livre de Samuel Josia Ntara, Mbiri ya Achewa, paraît d'abord en 1944 ou en 1945 ; l'auteur le cite dans sa traduction anglaise de 1973. Page 37 : l'auteur cite en entier la légende recueillie par Ntara (Ntara 1973, p. 6) : ceux qui avaient dormi au pied d'une colline, et avaient dû aplanir l'herbe, furent appelés Banda, « ceux qui foulent l'herbe sous leurs pieds », et ceux qui avaient dormi au sommet Phiri. Page 38 : une autre légende, rapportée par Ian Linden en 1972 (Linden 1972, p. 14), fait des Phiri ceux qui passèrent par les montagnes et des Banda ceux qui suivirent les vallées ; Mangadzi, prêtresse qui appelle la pluie, porte le titre de Makewana et dirige le clan Banda ; les petits clans Mbewe et Mwale sont comptés avec les Banda parmi ceux qui seraient arrivés avant les Phiri. Page 40 : Schoffeleers place l'arrivée des Banda entre 1200 et 1400. Page 41 : Marwick voit chez les Banda les gardiens du rituel de la pluie. Nous n'avons lu ni Ntara, ni Linden, ni Schoffeleers. Relu le 12 octobre 2026."
+              },
+              {
+                "title": "The Natives of British Central Africa",
+                "author": "Alice Werner",
+                "year": 1906,
+                "url": "https://www.gutenberg.org/cache/epub/71018/pg71018-images.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 252-253",
+                "notes": "Londres, Archibald Constable, 1906 ; lu dans la transcription intégrale du Projet Gutenberg, dont les numéros de page sont donnés entre crochets. Page 252 : l'auteure cite R. S. Hynde, selon qui les Yao se divisent en clans portant chacun son nom, « e.g. the Amwale, the Asomba, the Apiri clan » ; elle ajoute que « mwale » veut dire « une fille », « somba » « un poisson » et que « piri » veut dire « montagne » en nyanja ; l'exemple de mariage qui suit écrit « Mwale ». Page 253 : la filiation se compte par la mère. Page 254 : le chef yao Kapeni appartenait au clan des Abanda et eut pour successeur le fils de sa sœur. L'index du livre renvoie à la page 253 pour Abanda ; la transcription place cette phrase après le repère de la page 254. Lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Décrit dans une thèse de doctorat récente"
+            },
+            "era": "modern",
+            "statement": "Le nom Mwale est porté à la fois chez les Chewa et chez les Yawo, qui l'écrivent amwale : une thèse sur des femmes chewa et yawo installées à Durban cite le chef yawo Malemia, du clan amwale, et note qu'une Chewa du clan Mwale et une Yawo du clan Amwale se reconnaissent comme parentes.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Gender, Religion and Migration: A Study of Malawian Chewa and Yawo Muslim Women in Durban, 1994–2017",
+                "author": "Joseph Y. Mbalaka",
+                "year": null,
+                "url": "https://researchspace.ukzn.ac.za/bitstreams/181a927d-f2c5-41ff-8677-9fb4e2be0244/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 49-50",
+                "notes": "Thèse de doctorat de Joseph Y. Mbalaka, University of KwaZulu-Natal, lue en texte intégral ; elle cite des sources de 2022 et la page de l'université annonçant le diplômé date de septembre 2023, alors que le dépôt porte 2017, année qui borne la période étudiée. Pages citées selon la pagination de la thèse (page 47 = page 61 du PDF ; page 49 = page 63 ; page 50 = page 64). Page 47 : Banda est « possiblement des plus vieux groupes », étroitement lié au sol et reconnu capable de faire venir la pluie, d'après Pike ; la tribu compte quatre clans, Banda, Phiri, Nkhoma et Mwale. Page 49 : noms de clan Phiri (colline), Banda (« ceux qui foulent l'herbe sous leurs pieds »), Mwale (de kumwalira, « mourir »), Linde, Kwenda, Mbewe, Mphandwe (« un éclat du clan Banda »), d'après Ntara 1973, p. 6-7 ; les Yawo, venus du Mozambique au XIXe siècle, ont les mêmes noms de clan, par exemple le chef Malemia, du clan amwale, d'après Mitchell 1956. Page 50 : une Chewa du clan Mwale et une Yawo du clan Amwale se reconnaissent parentes. Nous n'avons lu ni Ntara, ni Pike, ni Mitchell. Lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "Proposée en 1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mwale voudrait dire « une fille », selon Alice Werner, qui donne ce sens au mot mwale en écrivant sur les clans des Yao.",
+            "hypothesisGroup": "origine du nom Mwale",
+            "sources": [
+              {
+                "title": "The Natives of British Central Africa",
+                "author": "Alice Werner",
+                "year": 1906,
+                "url": "https://www.gutenberg.org/cache/epub/71018/pg71018-images.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 252",
+                "notes": "Londres, Archibald Constable, 1906 ; lu dans la transcription intégrale du Projet Gutenberg, dont les numéros de page sont donnés entre crochets. Page 252 : l'auteure cite R. S. Hynde, selon qui les Yao se divisent en clans portant chacun son nom, « e.g. the Amwale, the Asomba, the Apiri clan » ; elle ajoute que « mwale » veut dire « une fille », « somba » « un poisson » et que « piri » veut dire « montagne » en nyanja ; l'exemple de mariage qui suit écrit « Mwale ». Page 253 : la filiation se compte par la mère. Page 254 : le chef yao Kapeni appartenait au clan des Abanda et eut pour successeur le fils de sa sœur. L'index du livre renvoie à la page 253 pour Abanda ; la transcription place cette phrase après le repère de la page 254. Lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1973,
+              "to": 1973,
+              "label": "Rapportée dans l'édition anglaise de 1973"
+            },
+            "era": "modern",
+            "statement": "Le nom Mwale viendrait du verbe kumwalira, « mourir », selon Samuel Josia Ntara, dont la traduction anglaise de 1973 est citée par la thèse de Joseph Mbalaka.",
+            "hypothesisGroup": "origine du nom Mwale",
+            "sources": [
+              {
+                "title": "Gender, Religion and Migration: A Study of Malawian Chewa and Yawo Muslim Women in Durban, 1994–2017",
+                "author": "Joseph Y. Mbalaka",
+                "year": null,
+                "url": "https://researchspace.ukzn.ac.za/bitstreams/181a927d-f2c5-41ff-8677-9fb4e2be0244/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 49",
+                "notes": "Thèse de doctorat de Joseph Y. Mbalaka, University of KwaZulu-Natal, lue en texte intégral ; elle cite des sources de 2022 et la page de l'université annonçant le diplômé date de septembre 2023, alors que le dépôt porte 2017, année qui borne la période étudiée. Pages citées selon la pagination de la thèse (page 47 = page 61 du PDF ; page 49 = page 63 ; page 50 = page 64). Page 47 : Banda est « possiblement des plus vieux groupes », étroitement lié au sol et reconnu capable de faire venir la pluie, d'après Pike ; la tribu compte quatre clans, Banda, Phiri, Nkhoma et Mwale. Page 49 : noms de clan Phiri (colline), Banda (« ceux qui foulent l'herbe sous leurs pieds »), Mwale (de kumwalira, « mourir »), Linde, Kwenda, Mbewe, Mphandwe (« un éclat du clan Banda »), d'après Ntara 1973, p. 6-7 ; les Yawo, venus du Mozambique au XIXe siècle, ont les mêmes noms de clan, par exemple le chef Malemia, du clan amwale, d'après Mitchell 1956. Page 50 : une Chewa du clan Mwale et une Yawo du clan Amwale se reconnaissent parentes. Nous n'avons lu ni Ntara, ni Pike, ni Mitchell. Lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mwale apparaît par écrit dans la monographie d'Alice Werner : elle cite un missionnaire, R. S. Hynde, selon qui les Yao se divisent en clans, « les Amwale, les Asomba, le clan Apiri », puis écrit Mwale dans son exemple de mariage. C'est la plus ancienne trace de ce nom que le projet connaît ; le clan existait déjà avant elle.",
+            "formAsWritten": "Mwale",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Natives of British Central Africa",
+                "author": "Alice Werner",
+                "year": 1906,
+                "url": "https://www.gutenberg.org/cache/epub/71018/pg71018-images.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 252-253",
+                "notes": "Londres, Archibald Constable, 1906 ; lu dans la transcription intégrale du Projet Gutenberg, dont les numéros de page sont donnés entre crochets. Page 252 : l'auteure cite R. S. Hynde, selon qui les Yao se divisent en clans portant chacun son nom, « e.g. the Amwale, the Asomba, the Apiri clan » ; elle ajoute que « mwale » veut dire « une fille », « somba » « un poisson » et que « piri » veut dire « montagne » en nyanja ; l'exemple de mariage qui suit écrit « Mwale ». Page 253 : la filiation se compte par la mère. Page 254 : le chef yao Kapeni appartenait au clan des Abanda et eut pour successeur le fils de sa sœur. L'index du livre renvoie à la page 253 pour Abanda ; la transcription place cette phrase après le repère de la page 254. Lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1400,
+              "label": "Avant 1400 environ"
+            },
+            "era": "polity",
+            "statement": "Le clan Mwale existe alors déjà, selon Yusuf Juwayeyi : avec Mbewe, c'est l'un des petits clans que les chercheurs rangent, comme les Banda, parmi les Chewa arrivés au Malawi avant le clan Phiri.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Archaeology and Oral Tradition in Malawi: Origins and Early History of the Chewa",
+                "author": "Yusuf M. Juwayeyi",
+                "year": 2020,
+                "url": "https://dokumen.pub/archaeology-and-oral-tradition-in-malawi-origins-and-early-history-of-the-chewa-1847012531-9781847012531.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38",
+                "notes": "Woodbridge, James Currey, 2020. Lu sur une copie non officielle en ligne. Page 11 : le livre de Samuel Josia Ntara, Mbiri ya Achewa, paraît d'abord en 1944 ou en 1945 ; l'auteur le cite dans sa traduction anglaise de 1973. Page 37 : l'auteur cite en entier la légende recueillie par Ntara (Ntara 1973, p. 6) : ceux qui avaient dormi au pied d'une colline, et avaient dû aplanir l'herbe, furent appelés Banda, « ceux qui foulent l'herbe sous leurs pieds », et ceux qui avaient dormi au sommet Phiri. Page 38 : une autre légende, rapportée par Ian Linden en 1972 (Linden 1972, p. 14), fait des Phiri ceux qui passèrent par les montagnes et des Banda ceux qui suivirent les vallées ; Mangadzi, prêtresse qui appelle la pluie, porte le titre de Makewana et dirige le clan Banda ; les petits clans Mbewe et Mwale sont comptés avec les Banda parmi ceux qui seraient arrivés avant les Phiri. Page 40 : Schoffeleers place l'arrivée des Banda entre 1200 et 1400. Page 41 : Marwick voit chez les Banda les gardiens du rituel de la pluie. Nous n'avons lu ni Ntara, ni Linden, ni Schoffeleers. Relu le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

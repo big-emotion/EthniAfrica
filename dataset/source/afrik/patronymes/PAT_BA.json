@@ -146,5 +146,236 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ba, écrit aussi Bâ ou Bah, est un nom de clan des Peuls et des Toucouleurs du Sénégal, de la Mauritanie et de la Guinée. Il est écrit Ba dans un annuaire officiel dès 1865. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Ba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan peul et toucouleur, écrit Ba dès 1865 ; les sources ne s'accordent pas sur son origine.",
+        "periodLabel": "Écrit dès 1865 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1939,
+              "to": 1939,
+              "label": "Décrit en 1939"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ba est l'un des trois noms, avec Bah et Balde, du groupe peul que Gilbert Vieillard appelle Uururɓe et range parmi les quatre groupes classiques du Fouta-Djalon. Il note que les Français retenaient ces noms avec soin, alors que, selon lui, être un Bâ n'avait plus d'importance.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Notes sur les Peuls du Fouta-Djallon — Clans et familles",
+                "author": "Gilbert Vieillard",
+                "year": 1939,
+                "url": "https://webfuuta.site/bibliotheque/gilbert_vieillard/notes/chap03.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chap. III, section « Le Clan »",
+                "notes": "Notes sur les coutumes des Peuls au Fouta Dialon, Comité d'études historiques et scientifiques de l'AOF, Paris, Larose, 1939, reproduit par WebFuuta, lu le 13 octobre 2026. Le chapitre donne les quatre groupes classiques, dont « Uururɓe (Bâ, Bah, Balde) », et écrit que les Français, qui ont connu les Peuls par les Toucouleurs et les Mandingues, ont pris l'habitude de noter avec soin les noms Diallo, Bari, Sô, Bâ, mais qu'être un Bâ n'a, selon l'auteur, aucune importance aujourd'hui. Cette source coloniale est un témoignage situé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposée en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Ba viendrait d'un mot mandingue ba(a), « grand », passé en peul, selon le Dictionary of American Family Names, qui le dit répandu surtout au Sénégal et en Mauritanie.",
+            "hypothesisGroup": "origine du nom Ba",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Ba",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/ba?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue le 12 octobre 2026. L'entrée donne, pour l'Afrique de l'Ouest, principalement le Sénégal et la Mauritanie, un nom peul tiré de l'adjectif mandingue ba(a), « grand » ; elle renvoie à Bah et à Balde. Elle donne aussi un sens musulman (voir l'autre explication) et des sens chinois, vietnamien et maya, sans rapport avec ce nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposée en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Ba viendrait, chez des musulmans, de bā, forme dialectale de l'arabe Abu, « père », comme dans les noms composés Bā Wazīr ou Bā Ṭarafī, selon le Dictionary of American Family Names, qui ne dit pas si cette explication vaut pour le Sénégal.",
+            "hypothesisGroup": "origine du nom Ba",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Ba",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/ba?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue le 12 octobre 2026. L'entrée donne aussi, pour les musulmans, une origine dans bā, forme dialectale du mot arabe qui veut dire « père », utilisé dans des noms composés tels que Bā Wazīr et Bā Ṭarafī."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Rapporté en 1912"
+            },
+            "statement": "Le nom Ba serait celui des descendants de Raabou, fils de l'Arabe Okba et de Tadiouma, fille du roi de Tôr, que les Ba appellent aussi Ourourbé : c'est ce que disent des Peuls profondément islamisés, selon Maurice Delafosse, qui rapporte cette tradition sans la dater ni la localiser. Il y voit un ajout de Peuls musulmans.",
+            "hypothesisGroup": "origine du nom Ba",
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Émile Larose, 1912 ; ouvrage d'un administrateur colonial, lu le 12 octobre 2026 dans l'édition numérique du Projet Gutenberg, qui ne donne pas les numéros de page. Le passage se trouve dans la partie sur l'origine des Peuls. Il est cité pour ce qu'il dit des noms de clan, non pour sa thèse d'une ascendance judéo-syrienne des Peuls, que nous ne reprenons pas."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Proposée en 1912"
+            },
+            "statement": "Le nom Ba aurait pris forme au Fouta Toro, sur le modèle des clans toucouleurs : Ba y répondrait, côté peul, à Boli ou Bourouro, selon Maurice Delafosse. Il précise que ce sont des mots différents d'une même langue, non des traductions. C'est son hypothèse, qui repose sur sa thèse d'une ascendance judéo-syrienne des Peuls, que nous ne reprenons pas.",
+            "hypothesisGroup": "origine du nom Ba",
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Émile Larose, 1912 ; ouvrage d'un administrateur colonial, lu le 12 octobre 2026 dans l'édition numérique du Projet Gutenberg, qui ne donne pas les numéros de page. Le passage se trouve dans la partie sur l'origine des Peuls. Il est cité pour ce qu'il dit des noms de clan, non pour sa thèse d'une ascendance judéo-syrienne des Peuls, que nous ne reprenons pas."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1865,
+              "to": 1865,
+              "label": "1865"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ba apparaît par écrit, sous la forme Ba, dans l'Annuaire du Sénégal de 1865 : « Alioun-Ba » y figure parmi les titulaires de licences, comme maraîcher de Bouët-Ville. C'est la plus ancienne trace de ce nom que le projet connaît ; l'annuaire ne dit pas à quel groupe l'homme appartenait, et le clan est plus ancien que ce livre.",
+            "formAsWritten": "Ba",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Alioun-Ba",
+                "role": "figure dans cette liste"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Annuaire du Sénégal et dépendances pour l'année 1865",
+                "author": "Colonie du Sénégal",
+                "year": 1865,
+                "url": "https://archive.org/details/annuairedugouve01afrigoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 99",
+                "notes": "Saint-Louis, Imprimerie du Gouvernement, 1865, lu le 13 octobre 2026 dans la numérisation d'Internet Archive (catalogue : « Annuaire du Gouvernement général de l'Afrique occidentale française »). Page 99, rubrique « 3e Série — Licences » : la ligne « Alioun-Ba, idem » suit « Diogomaye, idem », la rubrique précédente étant « Malic-Samba, maraîcher de Bouët-Ville ». Le volume ne donne pas de prénom autre qu'Alioun."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bâ",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie du même nom avec accent circonflexe, que Vieillard écrit en 1939.",
+        "periodLabel": "Écrit dès 1939",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1939,
+              "to": 1939,
+              "label": "1939"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bâ est la graphie avec accent circonflexe que Gilbert Vieillard emploie en 1939 pour l'un des noms du groupe Uururɓe du Fouta-Djalon, à côté de Bah et de Balde. C'est la plus ancienne trace de cette graphie que le projet connaît.",
+            "formAsWritten": "Bâ",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Gilbert Vieillard",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Notes sur les Peuls du Fouta-Djallon — Clans et familles",
+                "author": "Gilbert Vieillard",
+                "year": 1939,
+                "url": "https://webfuuta.site/bibliotheque/gilbert_vieillard/notes/chap03.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chap. III, section « Le Clan »",
+                "notes": "Notes sur les coutumes des Peuls au Fouta Dialon, Comité d'études historiques et scientifiques de l'AOF, Paris, Larose, 1939, reproduit par WebFuuta, lu le 13 octobre 2026. Le chapitre donne les quatre groupes classiques, dont « Uururɓe (Bâ, Bah, Balde) », et écrit que les Français, qui ont connu les Peuls par les Toucouleurs et les Mandingues, ont pris l'habitude de noter avec soin les noms Diallo, Bari, Sô, Bâ, mais qu'être un Bâ n'a, selon l'auteur, aucune importance aujourd'hui. Cette source coloniale est un témoignage situé."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bah",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie du même nom avec un h final, que Vieillard écrit en 1939 au Fouta-Djalon.",
+        "periodLabel": "Écrit dès 1939",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1939,
+              "to": 1939,
+              "label": "1939"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bah est la graphie avec un h final que Gilbert Vieillard emploie en 1939, au Fouta-Djalon, pour l'un des noms du groupe Uururɓe, à côté de Bâ et de Balde. C'est la plus ancienne trace de cette graphie que le projet connaît.",
+            "formAsWritten": "Bah",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Gilbert Vieillard",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Notes sur les Peuls du Fouta-Djallon — Clans et familles",
+                "author": "Gilbert Vieillard",
+                "year": 1939,
+                "url": "https://webfuuta.site/bibliotheque/gilbert_vieillard/notes/chap03.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chap. III, section « Le Clan »",
+                "notes": "Notes sur les coutumes des Peuls au Fouta Dialon, Comité d'études historiques et scientifiques de l'AOF, Paris, Larose, 1939, reproduit par WebFuuta, lu le 13 octobre 2026. Le chapitre donne les quatre groupes classiques, dont « Uururɓe (Bâ, Bah, Balde) », et écrit que les Français, qui ont connu les Peuls par les Toucouleurs et les Mandingues, ont pris l'habitude de noter avec soin les noms Diallo, Bari, Sô, Bâ, mais qu'être un Bâ n'a, selon l'auteur, aucune importance aujourd'hui. Cette source coloniale est un témoignage situé."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
