@@ -34,9 +34,8 @@ const LEDGER_DECISIONS: Array<[string, string, string]> = [
   ["PPL_SWAHILI_MOZAMBIQUE", "PPL_MWANI", "renamed"],
 ];
 
-// Retired with no keeper. The ledger records merges and renames only (its
-// validator requires a successor fiche for both), so, as for the extinct
-// fiches removed in May 2026, these ids simply stop existing.
+// Retired with no keeper: the ledger records them as « withdrawn », a
+// retirement with no successor and so no redirect.
 const RETIRED_WITHOUT_SUCCESSOR = ["PPL_YERIMA", "PPL_KIRDI"];
 
 const RETIRED = [
@@ -112,8 +111,18 @@ describe("ledger and redirects of the wave-12 folds", () => {
 
   // @req REQ-178
   it.each(RETIRED_WITHOUT_SUCCESSOR)(
-    "retires %s with no keeper to redirect to",
+    "withdraws %s in the ledger, with no keeper to redirect to",
     (id) => {
+      const entry = retiredIdentifiers.find(
+        (candidate) => candidate.retiredId === id
+      );
+
+      expect(entry).toMatchObject({
+        decision: "withdrawn",
+        successorId: null,
+        decidedOn: "2026-10-12",
+      });
+      expect(entry?.reason.length).toBeGreaterThan(40);
       expect(RETIRED_PEOPLE_IDS[id]).toBeUndefined();
       expect(peopleFile(id)).toBeUndefined();
     }
