@@ -97,5 +97,123 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Pinto à un peuple à São Tomé-et-Príncipe. Nous n'avons pas encore consulté de source consacrée à ce nom. Nos fiches mentionnent Pinto chez les créoles de Guinée-Bissau et comme nom d'auteurs cités. Elles n'expliquent pas son usage à São Tomé-et-Príncipe. La fiche sur les Forros cite trois noms d'origine portugaise : Trovoada, Espírito Santo et Vera Cruz. Leur usage ne permet pas de rattacher tous les noms portugais aux Forros."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Pinto est un nom de famille portugais, porté aussi à São Tomé-et-Príncipe. On ne sait pas avec certitude depuis quand il y est porté. Les sources ne s'accordent pas sur l'origine du nom ; nous présentons plus bas les trois explications que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Pinto",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un nom de famille portugais, porté à São Tomé-et-Príncipe ; son origine reste discutée.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Pinto est un nom de famille portugais et espagnol, formé sur le mot pinto. Ce mot veut dire « poussin » en portugais et « coloré, peint » en espagnol. Le dictionnaire de Patrick Hanks propose plusieurs façons dont il est devenu un nom de famille ; nous les présentons séparément. Les sources lues ne disent pas depuis quand il est porté à São Tomé-et-Príncipe.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Pinto Name Meaning and Pinto Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=pinto",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch : « Spanish and Jewish (Sephardic): nickname from pinto ‘colorful, painted’. Spanish: habitational name from Pinto in Madrid. […] Portuguese: nickname from pinto ‘chick’. » L'entrée donne aussi une lecture catalane et une lecture italienne. Elle ne parle pas de São Tomé-et-Príncipe. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Décembre 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Pinto est porté à São Tomé-et-Príncipe : Elsa Pinto y devient ministre des Affaires étrangères en 2018, selon une dépêche de l'agence Lusa. La dépêche ne dit rien de l'origine du nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "São Tomé e Príncipe reitera interesse em cooperar com Angola",
+                "author": "Lusa / VerAngola",
+                "year": 2018,
+                "url": "https://www.verangola.net/va/pt/122018/Economia/13822/S%C3%A3o-Tom%C3%A9-e-Pr%C3%ADncipe-reitera-interesse-em-cooperar-com-Angola.htm",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Dépêche du 21 décembre 2018. Elle nomme « a também nova ministra dos Negócios Estrangeiros, Cooperação e Comunidades são-tomense, Elsa Pinto ». Elle ne dit rien de l'origine du nom. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Proposé en 2003"
+            },
+            "statement": "Le nom Pinto serait d'abord un surnom portugais tiré du mot pinto, « poussin », selon le dictionnaire de Patrick Hanks.",
+            "hypothesisGroup": "origine du nom Pinto",
+            "sources": [
+              {
+                "title": "Pinto Name Meaning and Pinto Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=pinto",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch : « Spanish and Jewish (Sephardic): nickname from pinto ‘colorful, painted’. Spanish: habitational name from Pinto in Madrid. […] Portuguese: nickname from pinto ‘chick’. » L'entrée donne aussi une lecture catalane et une lecture italienne. Elle ne parle pas de São Tomé-et-Príncipe. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Proposé en 2003"
+            },
+            "statement": "Le nom Pinto viendrait plutôt d'un surnom espagnol tiré du mot pinto, « coloré, peint », selon le même dictionnaire de Patrick Hanks.",
+            "hypothesisGroup": "origine du nom Pinto",
+            "sources": [
+              {
+                "title": "Pinto Name Meaning and Pinto Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=pinto",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch : « Spanish and Jewish (Sephardic): nickname from pinto ‘colorful, painted’. Spanish: habitational name from Pinto in Madrid. […] Portuguese: nickname from pinto ‘chick’. » L'entrée donne aussi une lecture catalane et une lecture italienne. Elle ne parle pas de São Tomé-et-Príncipe. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Proposé en 2003"
+            },
+            "statement": "Le nom Pinto pourrait aussi venir de Pinto, une ville près de Madrid, d'où serait venu le premier porteur, selon le même dictionnaire de Patrick Hanks.",
+            "hypothesisGroup": "origine du nom Pinto",
+            "sources": [
+              {
+                "title": "Pinto Name Meaning and Pinto Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=pinto",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch : « Spanish and Jewish (Sephardic): nickname from pinto ‘colorful, painted’. Spanish: habitational name from Pinto in Madrid. […] Portuguese: nickname from pinto ‘chick’. » L'entrée donne aussi une lecture catalane et une lecture italienne. Elle ne parle pas de São Tomé-et-Príncipe. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
