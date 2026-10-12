@@ -112,5 +112,260 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Abouré désigne un peuple de la région lagunaire du sud-est de la Côte d'Ivoire, autour de Bonoua et de Moossou. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. D'autres noms existent : Akapless, le nom que lui ont donné les Européens, et Kompa, que Maurice Delafosse tient pour son nom ancien. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Abouré",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple de la côte ivoirienne ; écrit Abure en 1904.",
+        "periodLabel": "Écrit Abure depuis 1904 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Abouré désigne un peuple formé de plusieurs groupes venus du pays akan, de la région de Kumasi et d'Axim, au début du XVIIe siècle, selon l'historien Kadjomou Ferdinand Ayemou. On ne sait pas avec certitude d'où vient ce nom ; les sources que nous avons lues ne l'expliquent pas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Abouré et Eotilé : deux peuples liés par l'histoire (XVIIe-début XXe siècles)",
+                "author": "Kadjomou Ferdinand Ayemou",
+                "year": 2021,
+                "url": "https://www.ziglobitha.org/wp-content/uploads/2021/11/01-Kadjomou-Ferdinand-AYEMOU-pp01-16.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Ziglôbitha, revue de l'université Peleforo Gon Coulibaly, numéro spécial 02, octobre 2021, p. 1-16 ; lu le 12 octobre 2026 dans le PDF de la revue."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Abouré apparaît par écrit sous la forme Abure chez l'administrateur colonial Maurice Delafosse, qui note que les Européens appellent souvent ce peuple Akapless. Il le situe entre la barre d'Assinie, la Comoé et la mer, avec Mouossou et Bonoua pour villes principales. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà dans ce pays avant elle.",
+            "formAsWritten": "Abure",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10",
+                "notes": "Paris, Ernest Leroux ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1600,
+              "to": 1699,
+              "label": "XVIIe siècle"
+            },
+            "era": "polity",
+            "statement": "On parle alors de groupes distincts, l'Abou, l'Enva et le Moho, venus du pays akan et accueillis par les Eotilé, qui formeront plus tard les Abouré, selon Kadjomou Ferdinand Ayemou.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Abouré et Eotilé : deux peuples liés par l'histoire (XVIIe-début XXe siècles)",
+                "author": "Kadjomou Ferdinand Ayemou",
+                "year": 2021,
+                "url": "https://www.ziglobitha.org/wp-content/uploads/2021/11/01-Kadjomou-Ferdinand-AYEMOU-pp01-16.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2-5",
+                "notes": "Ziglôbitha, revue de l'université Peleforo Gon Coulibaly, numéro spécial 02, octobre 2021, p. 1-16 ; lu le 12 octobre 2026 dans le PDF de la revue."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Akapless",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des Européens, d'après les gens de la côte, selon Maurice Delafosse",
+        "shortLine": "Le nom que les Européens donnaient au pays de Bonoua et à ses habitants ; écrit dès 1892.",
+        "periodLabel": "Écrit depuis 1892",
+        "accounts": [
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "Proposée en 1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Akapless viendrait de l'expression abouré Aka-poko, « pays d'Aka », que des gens de la côte sachant un peu d'anglais auraient traduite en Aka-place pour des Européens qui leur demandaient le nom de la contrée, selon Maurice Delafosse. Aka serait le nom d'un roi puissant de Bonoua, Nda-Aka, dont l'autorité s'étendait sur toute cette région.",
+            "hypothesisGroup": "origine du nom Akapless",
+            "actors": [
+              {
+                "name": "Nda-Aka",
+                "role": "roi de Bonoua dont le nom figure dans cette explication"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10",
+                "notes": "Paris, Ernest Leroux ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Akapless sert encore en 1904, selon Maurice Delafosse, à désigner le pays de Bonoua et ses habitants.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10",
+                "notes": "Paris, Ernest Leroux ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "1892, récit du voyage de 1887-1889"
+            },
+            "statement": "Le nom Akapless désigne chez Louis-Gustave Binger toute la région située entre le Sanwi, la mer, la Comoé et la lagune Aby. On ne sait pas avec certitude d'où il vient ; une explication est donnée plus haut.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, tome 2",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74721",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 2, p. 314",
+                "notes": "Paris, Hachette, 1892, deux tomes ; récit du voyage de 1887-1889. Lu le 12 octobre 2026 dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "1892, récit du voyage de 1887-1889"
+            },
+            "statement": "Le nom Akapless apparaît par écrit chez Louis-Gustave Binger, qui le range parmi les pays de protectorat français, avec l'Indénié, l'Alangoua, le Bettié et le Sanwi. Il parle aussi de « Aka, l'ancien chef de l'Akapless », battu en 1849. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays existait déjà avant elle.",
+            "formAsWritten": "Akapless",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, tome 2",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74721",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 2, p. 177 et p. 304",
+                "notes": "Paris, Hachette, 1892, deux tomes ; récit du voyage de 1887-1889. Lu le 12 octobre 2026 dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kompa",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les Abouré portaient peut-être avant l'arrivée des Agni, selon Delafosse.",
+        "periodLabel": "Écrit en 1904",
+        "accounts": [
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kompa serait, selon Maurice Delafosse, celui que les Abouré portaient probablement quand ils formaient la population d'origine d'une partie du Sanwi, avant l'arrivée des Agni. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Kompa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10",
+                "notes": "Paris, Ernest Leroux ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Abou",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un groupe abouré du XVIIe siècle, noyau des Abouré de Bonoua, selon Ayemou.",
+        "periodLabel": "Écrit en 2021",
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Abou désigne, chez Kadjomou Ferdinand Ayemou, un groupe abouré installé au XVIIe siècle au nord du pays éotilé, dans la région de la Bia. Ce groupe est le noyau des Abouré Ehivè de Bonoua et des Osuku d'Adiaho. L'auteur n'explique pas ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Abouré et Eotilé : deux peuples liés par l'histoire (XVIIe-début XXe siècles)",
+                "author": "Kadjomou Ferdinand Ayemou",
+                "year": 2021,
+                "url": "https://www.ziglobitha.org/wp-content/uploads/2021/11/01-Kadjomou-Ferdinand-AYEMOU-pp01-16.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Ziglôbitha, revue de l'université Peleforo Gon Coulibaly, numéro spécial 02, octobre 2021, p. 1-16 ; lu le 12 octobre 2026 dans le PDF de la revue."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -95,5 +95,219 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kyaman désigne un peuple lagunaire du sud de la Côte d'Ivoire, installé autour de la lagune Ebrié et d'Abidjan, qui se nomme lui-même Kyaman. D'autres noms existent : Ebrié, que lui donnent ses voisins abouré, et Tchaman, que la linguiste Katherine R. Russell emploie. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Kyaman",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ebr",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; écrit Kyama en 1904.",
+        "periodLabel": "Écrit Kyama depuis 1904 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Kyaman est, selon Fabrice Aliman, un terme de la langue ébrié qui regroupe neuf phratries : les Bya, les Bidjan, les Bobo, les Dyapo, les Kwè, les Nonkwa, les Songon, les Yopougon et les Nyangon. On ne sait pas avec certitude d'où vient ce nom ; les sources que nous avons lues ne l'expliquent pas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les Bidjan, un peuple Kyaman peu connu dans le district autonome d'Abidjan",
+                "author": "Fabrice Aliman",
+                "year": 2023,
+                "url": "https://www.revue-akofena.com/wp-content/uploads/2023/09/03-T09v03-62-Fabrice-ALIMAN_029-040.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 29",
+                "notes": "Akofena, n° 009, vol. 3, septembre 2023, p. 29-40 ; lu le 12 octobre 2026 dans le PDF de la revue. L'auteur s'appuie sur des sources orales et sur des travaux de Georges Niangoran-Bouah (1969) et de Jean-Noël Loucou."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1700,
+              "to": 1799,
+              "label": "XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "On parle alors des Bidjan, des Badjin, des Nonkwa et des Songon, chaque groupe sur son territoire, mais pas encore de Kyaman, selon des récits oraux que rapporte Fabrice Aliman. Il ajoute que des archives du XVIIIe siècle mentionnent déjà les Bidjan.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Les Bidjan, un peuple Kyaman peu connu dans le district autonome d'Abidjan",
+                "author": "Fabrice Aliman",
+                "year": 2023,
+                "url": "https://www.revue-akofena.com/wp-content/uploads/2023/09/03-T09v03-62-Fabrice-ALIMAN_029-040.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 32",
+                "notes": "Akofena, n° 009, vol. 3, septembre 2023, p. 29-40 ; lu le 12 octobre 2026 dans le PDF de la revue. L'auteur s'appuie sur des sources orales et sur des travaux de Georges Niangoran-Bouah (1969) et de Jean-Noël Loucou."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kyaman apparaît par écrit sous une forme proche, Kyama, chez l'administrateur colonial Maurice Delafosse, qui écrit aussi Ebrié entre parenthèses. Il situe ce peuple entre la lagune Ebrié, la lagune Potou, le pays des Akyé et la rivière Agnéby. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà dans ce pays avant elle.",
+            "formAsWritten": "Kyama",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9 et p. 11",
+                "notes": "Paris, Ernest Leroux ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ebrié",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "abu",
+        "namedBy": "Les Abouré, selon Maurice Delafosse et Fabrice Aliman",
+        "shortLine": "Le nom que les Abouré donnent aux Kyaman ; écrit dès 1892.",
+        "periodLabel": "Écrit depuis 1892 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Proposée en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Ebrié viendrait d'un mot abouré, abrié ou bibrié, qui veut dire « noir » et par extension « belliqueux ». Les Abouré l'auraient donné aux Kyaman parce qu'ils les jugeaient d'un sale caractère, après des querelles dans la région de Grand-Bassam, selon Fabrice Aliman, qui le dit péjoratif.",
+            "hypothesisGroup": "origine du nom Ebrié",
+            "sources": [
+              {
+                "title": "Les Bidjan, un peuple Kyaman peu connu dans le district autonome d'Abidjan",
+                "author": "Fabrice Aliman",
+                "year": 2023,
+                "url": "https://www.revue-akofena.com/wp-content/uploads/2023/09/03-T09v03-62-Fabrice-ALIMAN_029-040.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 31",
+                "notes": "Akofena, n° 009, vol. 3, septembre 2023, p. 29-40 ; lu le 12 octobre 2026 dans le PDF de la revue. L'auteur s'appuie sur des sources orales et sur des travaux de Georges Niangoran-Bouah (1969) et de Jean-Noël Loucou."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Ebrié désigne les Kyaman, un peuple lagunaire du grand groupe akan, et c'est le nom sous lequel on les connaît le mieux, selon Fabrice Aliman. On ne sait pas avec certitude d'où il vient ; une explication est donnée plus haut.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les Bidjan, un peuple Kyaman peu connu dans le district autonome d'Abidjan",
+                "author": "Fabrice Aliman",
+                "year": 2023,
+                "url": "https://www.revue-akofena.com/wp-content/uploads/2023/09/03-T09v03-62-Fabrice-ALIMAN_029-040.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 31",
+                "notes": "Akofena, n° 009, vol. 3, septembre 2023, p. 29-40 ; lu le 12 octobre 2026 dans le PDF de la revue. L'auteur s'appuie sur des sources orales et sur des travaux de Georges Niangoran-Bouah (1969) et de Jean-Noël Loucou."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ebrié, écrit Ebrie, est celui que les Abouré et les Zéma donnent aux Kyama, selon Maurice Delafosse.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11",
+                "notes": "Paris, Ernest Leroux ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "1892, récit du voyage de 1887-1889"
+            },
+            "statement": "Le nom Ebrié apparaît par écrit chez l'explorateur Louis-Gustave Binger, qui écrit « les Ebrié, une des plus puissantes confédérations de la lagune » et rappelle que la France leur a fait la guerre en 1853 et en 1887. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Ebrié",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, tome 2",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74721",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 2, p. 325",
+                "notes": "Paris, Hachette, 1892, deux tomes ; récit du voyage de 1887-1889. Lu le 12 octobre 2026 dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tchaman",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que la linguiste Katherine R. Russell emploie pour ce peuple ; sa langue est l'atchan.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tchaman est celui que la linguiste Katherine R. Russell emploie pour le peuple qu'elle étudie sur le terrain, et Atchan celui qu'elle donne à sa langue. Sa page ne dit pas d'où viennent ces noms, ni si les Kyaman se nomment ainsi. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Tchaman society",
+                "author": "Katherine R. Russell",
+                "year": null,
+                "url": "https://www.krrussell.com/research/fieldwork/tchaman-society",
+                "tier": "unverified",
+                "source_kind": "academic",
+                "notes": "Page du site personnel de la chercheuse, non datée, lu le 12 octobre 2026. Elle emploie Tchaman pour le peuple et Atchan pour la langue ; elle ne dit pas d'où viennent ces noms."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
