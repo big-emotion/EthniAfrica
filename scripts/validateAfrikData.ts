@@ -3833,8 +3833,8 @@ export function checkDossierFicheModel(datasetRoot: string): ValidationResult {
 
 /**
  * LOC_* place fiches (REQ-193, DEC-069) — strict shape, identifier equal to
- * the filename, and links that resolve. A place points outward to its country
- * and peoples; nothing points back, so an unresolved link here is the only
+ * the filename, and links that resolve. A place points outward to its
+ * country (or, for a region, each of its countries) and peoples; nothing points back, so an unresolved link here is the only
  * place the corpus can notice it. A form resting on no `official` or
  * `referenced` source is reported, never refused (DEC-055). The names come
  * from `nameHistory` only; a legacy `names` / `accounts` / `attestations` key
@@ -3874,12 +3874,13 @@ export function checkPlaceFicheModel(datasetRoot: string): ValidationResult {
       errors.push(`REQ-193: ${file}: file should be named ${place.id}.json`);
     }
 
-    if (
-      !fs.existsSync(path.join(datasetRoot, "pays", `${place.countryId}.json`))
-    ) {
-      errors.push(
-        `REQ-193: ${file}: countryId "${place.countryId}" does not resolve to an existing country fiche`
-      );
+    // A town names one country, a region several; each must have a fiche.
+    for (const countryId of place.countryIds ?? [place.countryId]) {
+      if (!fs.existsSync(path.join(datasetRoot, "pays", `${countryId}.json`))) {
+        errors.push(
+          `REQ-193: ${file}: countryId "${countryId}" does not resolve to an existing country fiche`
+        );
+      }
     }
 
     for (const { peopleId } of place.associatedPeoples) {

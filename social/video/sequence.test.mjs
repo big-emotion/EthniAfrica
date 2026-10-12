@@ -7,6 +7,9 @@ import {
   frameState,
   holdLayout,
   checkLayout,
+  project,
+  unproject,
+  VIEW_CENTRE,
   TOTAL_FRAMES,
 } from "./sequence.mjs";
 
@@ -281,4 +284,74 @@ test("a title highlight names a known feature and a phrase of the title", () => 
   const unknown = westCopy();
   unknown.highlight.feature = "z";
   assert.throws(() => loadSequence(unknown), /highlight/);
+});
+
+const relief = () => {
+  const seq = westCopy();
+  seq.style = "relief";
+  return loadSequence(seq);
+};
+
+// @req REQ-186
+test("relief looks straight down until 3 s, tilts to 58° by 6 s, then holds", () => {
+  const seq = relief();
+  const pitch = (f) => frameState(seq, f).camera.pitch;
+  for (let f = 0; f <= at(3); f++) assert.equal(pitch(f), 90);
+  for (let f = at(3) + 1; f <= at(6); f++) assert.ok(pitch(f) <= pitch(f - 1));
+  for (let f = at(6); f < TOTAL_FRAMES; f++) assert.equal(pitch(f), 58);
+  assert.equal(frameState(loadSequence(westCopy()), 0).camera.pitch, undefined);
+});
+
+// @req REQ-186
+test("looking straight down, the relief camera matches the flat globe near its centre", () => {
+  const flat = { lon: -1.8, lat: 12.6, radius: 1900 };
+  const down = { ...flat, pitch: 90 };
+  const centre = project(down, -1.8, 12.6);
+  assert.ok(Math.abs(centre.x - VIEW_CENTRE.x) < 1e-6);
+  assert.ok(Math.abs(centre.y - VIEW_CENTRE.y) < 1e-6);
+  for (const [lon, lat] of [
+    [-0.8, 12.6],
+    [-1.8, 13.6],
+  ]) {
+    const a = project(flat, lon, lat);
+    const b = project(down, lon, lat);
+    assert.ok(Math.hypot(a.x - b.x, a.y - b.y) < 1, `${lon} ${lat}`);
+  }
+});
+
+// @req REQ-186
+test("a screen point maps back to the ground it shows, flat or tilted", () => {
+  for (const camera of [
+    { lon: 20.3, lat: -4.8, radius: 1980 },
+    { lon: -1.8, lat: 12.6, radius: 1900, pitch: 58 },
+    { lon: 4, lat: 5, radius: 300, pitch: 90 },
+  ])
+    for (const [lon, lat] of [
+      [-1, 10],
+      [3, 14],
+      [20, -3],
+    ]) {
+      const p = project(camera, lon, lat);
+      if (!p.visible) continue;
+      const back = unproject(camera, p.x, p.y);
+      assert.ok(
+        Math.abs(back.lon - lon) < 1e-6 && Math.abs(back.lat - lat) < 1e-6
+      );
+    }
+  assert.equal(unproject({ lon: 4, lat: 5, radius: 300 }, 10, 10), null);
+});
+
+// @req REQ-186
+test("in a tilted view, raised ground stands higher on screen", () => {
+  const camera = { lon: -1.8, lat: 12.6, radius: 1900, pitch: 58 };
+  const ground = project(camera, -1.8, 12.6, 0);
+  const raised = project(camera, -1.8, 12.6, 0.02);
+  assert.ok(raised.y < ground.y - 5);
+  const north = project(camera, -1.8, 14.6);
+  assert.ok(north.y < ground.y, "north is up the screen");
+});
+
+// @req REQ-186
+test("the relief hold layout stays in the safe zone", () => {
+  assert.deepEqual(checkLayout(holdLayout(relief())), []);
 });

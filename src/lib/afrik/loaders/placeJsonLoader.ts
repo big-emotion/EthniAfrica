@@ -1,6 +1,7 @@
 /**
  * Place loader — reads dataset/source/afrik/lieux/*.json and writes each
- * fiche to afrik_places + afrik_place_peoples (migration 100, REQ-196).
+ * fiche to afrik_places + afrik_place_countries + afrik_place_peoples
+ * (migrations 100 and 106, REQ-196).
  *
  * Only the fields the place model keeps after ETNI-2023 are persisted: the
  * legacy names[] block is ignored whether a fiche still carries it or not,
@@ -22,7 +23,8 @@ export interface PlaceFiche {
   id: string;
   placeType: string;
   nameMain: string;
-  countryId: string;
+  /** One country for a town, several for a region, in the fiche's order. */
+  countryIds: string[];
   associatedPeoples: { peopleId: string; relation?: string }[];
   summary: string;
   /** What the reader is served beyond the typed columns. */
@@ -77,7 +79,7 @@ export function loadAllPlaceFiches(
       id: fiche.id,
       placeType: fiche.placeType,
       nameMain: fiche.nameMain,
-      countryId: fiche.countryId,
+      countryIds: fiche.countryIds ?? [fiche.countryId],
       associatedPeoples: fiche.associatedPeoples,
       summary: fiche.summary,
       content: { gaps: fiche.gaps, sources: fiche.sources },
@@ -92,8 +94,11 @@ function unresolvedLink(
   place: PlaceFiche,
   references: LoadPlacesOptions["references"]
 ): string | null {
-  if (!references.countryIds.has(place.countryId)) {
-    return `${place.id}: countryId ${place.countryId} does not resolve to a country fiche`;
+  const unknownCountry = place.countryIds.find(
+    (countryId) => !references.countryIds.has(countryId)
+  );
+  if (unknownCountry) {
+    return `${place.id}: countryId ${unknownCountry} does not resolve to a country fiche`;
   }
   const missing = place.associatedPeoples.find(
     ({ peopleId }) => !references.peopleIds.has(peopleId)
@@ -112,7 +117,8 @@ async function writePlace(
       id: place.id,
       place_type: place.placeType,
       name_main: place.nameMain,
-      country_id: place.countryId,
+      // A region has no single country; its countries are joined below.
+      country_id: place.countryIds.length === 1 ? place.countryIds[0] : null,
       summary: place.summary,
       content: place.content,
       name_history: place.nameHistory,
@@ -124,8 +130,28 @@ async function writePlace(
     return `afrik_places — ${supabaseErrorMessage(placeError)}`;
   }
 
-  // Replaced rather than upserted, so a people the fiche no longer names
-  // stops being served with it.
+  // Join rows are replaced rather than upserted, so a country or a people
+  // the fiche no longer names stops being served with it.
+  const { error: clearCountries } = await supabase
+    .from("afrik_place_countries")
+    .delete()
+    .eq("place_id", place.id);
+  if (clearCountries) {
+    return `afrik_place_countries — ${supabaseErrorMessage(clearCountries)}`;
+  }
+  const { error: countriesError } = await supabase
+    .from("afrik_place_countries")
+    .insert(
+      place.countryIds.map((countryId, position) => ({
+        place_id: place.id,
+        country_id: countryId,
+        position,
+      }))
+    );
+  if (countriesError) {
+    return `afrik_place_countries — ${supabaseErrorMessage(countriesError)}`;
+  }
+
   const { error: clearError } = await supabase
     .from("afrik_place_peoples")
     .delete()

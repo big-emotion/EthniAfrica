@@ -1,6 +1,6 @@
 # Satellite video renderer
 
-This renderer produces the 12-second vertical geographic videos of roadmap step 9. It follows the accepted Claude Design system **EthniAfrica Vidéo carte 0.2.0-proposition** (accepted by the operator on 11 October 2026). Its design source and decision stay in the coordinator's local evidence folder, as for the cards. Flat satellite imagery is the default style. Relief is an accepted option, but this renderer does not draw it yet. A successful render never authorizes publication: the three editorial approvals and an explicit publishing instruction still apply.
+This renderer produces the 12-second vertical geographic videos of roadmap step 9. It follows the accepted Claude Design system **EthniAfrica Vidéo carte 0.2.0-proposition** (accepted by the operator on 11 October 2026). Its design source and decision stay in the coordinator's local evidence folder, as for the cards. Flat satellite imagery is the default style. Relief is an accepted option for landform subjects and wide establishing shots. A successful render never authorizes publication: the three editorial approvals and an explicit publishing instruction still apply.
 
 ## Commands
 
@@ -9,7 +9,7 @@ npm run test:social-video
 ETHNIAFRICA_VIDEO_ASSETS=PATH npm run test:social-video-acceptance
 ```
 
-The first command runs the sequence rules, which need no imagery. The second also renders frames and encodes a full video. It needs the verified imagery folder, which stays outside git, and FFmpeg on the workstation. A missing folder fails the run; it is never reported as a pass. In code, `loadSequence` validates a sequence file, `renderFrame` returns one PNG and `encodeVideo` writes `video.mp4` with a `manifest.json`.
+The first command runs the sequence rules, which need no imagery. The second also renders frames and encodes a full video. It needs the verified imagery folder, which stays outside git, and FFmpeg on the workstation. The folder holds `imagery/world.topo.bathy.200407.3x21600x10800.jpg` and, for relief, `relief/ETOPO_2022_v1_60s_N90W180_surface.tif`; both are checked against their recorded SHA-256. A missing folder fails the run; it is never reported as a pass. In code, `loadSequence` validates a sequence file, `renderFrame` returns one PNG and `encodeVideo` writes `video.mp4` with a `manifest.json`.
 
 ## Why this engine
 
@@ -24,6 +24,14 @@ The alternatives were set aside for these reasons:
 
 The camera passes the 3-second key without stopping and lands softly at 6 seconds. A single cubic-bezier cannot keep the speed continuous across a key, so each camera component follows a monotone cubic through the design's three keys. The river timing is fitted to the accepted 8-second key frame: core at 0.75, glow at 0.28.
 
+## Relief
+
+Relief follows design board 6. The globe becomes a mesh raised by NOAA ETOPO 2022 (60 arc-seconds, public domain), with heights multiplied by 90 and the sea floor kept at sea level, since the imagery already shows it. A perspective camera with a 40° field of view looks straight down until 3 s, then tilts to 58° above the horizon by 6 s. Its `radius` keeps the flat style's meaning, pixels per Earth radius at the target, so the same camera keys work in both styles. One light from the north-west of the hold target, plus a soft fill, never moves. Flat ground keeps the flat style's exposure.
+
+Areas, borders and rivers are drawn with the flat style's own SVG into the region's map, then draped on the mesh, so they follow the terrain and hide behind ridges. Names stay flat and horizontal, placed above the raised ground. The caption adds « Relief : NOAA, exagéré ».
+
+The camera keys set the framing. A continental shot (`fixtures/west-relief.sequence.json`, radius 900) puts the horizon just under the title, as the design does. A closer shot pushes the horizon up behind the title scrim. A mesh is heavier than the flat shader: a relief video takes over ten minutes to encode on the workstation.
+
 ## Rules enforced before rendering
 
 - **Imagery:** only the verified sources are accepted, Blue Marble NG July 2004 and Sentinel-2 cloudless 2016. The local file must match its recorded SHA-256. The caption names the imagery.
@@ -37,6 +45,6 @@ The camera passes the 3-second key without stopping and lands softly at 6 second
 ## Limits
 
 - **Reproducibility:** pixel-for-pixel repeats are expected only on the same machine and pinned browser, not across operating systems. The manifest records Chromium, Playwright and FFmpeg versions and the hashes of the sequence, imagery, engine and video. `productionReady` is always false.
-- **Not implemented yet:** relief, Sentinel-2 tiles, exits for longer sequences, and the subtitle band (step 10). Bulk access to Sentinel-2 tiles still needs to be checked.
+- **Not implemented yet:** Sentinel-2 tiles, exits for longer sequences, the subtitle band (step 10), and a check that names do not overlap each other. Bulk access to Sentinel-2 tiles still needs to be checked.
 - **Width estimates:** the layout gate estimates text widths from ratios calibrated on the design fonts; the browser's real glyph boxes decide at export.
-- **Test fixtures:** `fixtures/congo.sequence.json` (a river) and `fixtures/west-areas.sequence.json` (the design's three fictional areas, with Natural Earth borders taken from the accepted card map `social/design-system/assets/Cartes/afrique-ouest.json`). Both carry illustrative copy and the « Texte illustratif » tape. They are not approved publication text.
+- **Test fixtures:** `fixtures/congo.sequence.json` (a river) and `fixtures/west-areas.sequence.json` (the design's three fictional areas, with Natural Earth borders taken from the accepted card map `social/design-system/assets/Cartes/afrique-ouest.json`). `fixtures/west-relief.sequence.json` frames the same areas in relief. All three carry illustrative copy and the « Texte illustratif » tape. They are not approved publication text.

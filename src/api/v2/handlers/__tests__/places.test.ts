@@ -22,6 +22,7 @@ const record = {
   nameMain: "Yamoussoukro",
   summary: "Capitale politique.",
   country: { id: "CIV", name: "Côte d'Ivoire" },
+  countries: [{ id: "CIV", name: "Côte d'Ivoire" }],
   associatedPeoples: [{ id: "PPL_BAOULE", name: "Baoulé", relation: null }],
   content: { gaps: [], sources: [{ title: "t" }] },
   nameHistory,
@@ -45,6 +46,7 @@ describe("place handlers", () => {
       names: ["Yamoussoukro", "N'Gokro"],
       summary: "Capitale politique.",
       country: { id: "CIV", name: "Côte d'Ivoire" },
+      countries: [{ id: "CIV", name: "Côte d'Ivoire" }],
       associatedPeoples: [{ id: "PPL_BAOULE", name: "Baoulé", relation: null }],
       gaps: [],
       sources: [{ title: "t" }],
@@ -89,6 +91,7 @@ describe("place handlers", () => {
           placeType: "ville",
           nameMain: "Yamoussoukro",
           countryId: "CIV",
+          countryIds: ["CIV"],
         },
       ],
     });
