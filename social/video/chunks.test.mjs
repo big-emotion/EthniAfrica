@@ -339,6 +339,7 @@ test("highlight(t) follows word times: to the next start, or 100 ms after a word
 test("word times must match the chunk's units, in order", () => {
   const text = "entre le pays des Berbères";
   const five = [0, 0.28, 0.4, 0.7, 0.82].map((start, i, all) => ({
+    text: text.split(" ")[i],
     start,
     end: all[i + 1] ?? 1.4,
   }));

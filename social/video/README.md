@@ -9,7 +9,7 @@ npm run test:social-video
 ETHNIAFRICA_VIDEO_ASSETS=PATH npm run test:social-video-acceptance
 ```
 
-The first command runs the sequence rules, which need no imagery. The second also renders frames and encodes a full video. It needs the verified imagery folder, which stays outside git, and FFmpeg on the workstation. The folder holds `imagery/world.topo.bathy.200407.3x21600x10800.jpg` and, for relief, `relief/ETOPO_2022_v1_60s_N90W180_surface.tif`; both are checked against their recorded SHA-256. A missing folder fails the run; it is never reported as a pass. In code, `loadSequence` validates a sequence file, `renderFrame` returns one PNG, `renderFrames` returns several from one browser session, and `encodeVideo` writes `video.mp4` with a `manifest.json`.
+The first command runs the sequence rules, which need no imagery. The second also renders frames and encodes a full video. It needs the verified imagery folder, which stays outside git, and FFmpeg on the workstation. The folder holds `imagery/world.topo.bathy.200407.3x21600x10800.jpg` and, for relief, `relief/ETOPO_2022_v1_60s_N90W180_surface.tif`; both are checked against their recorded SHA-256. A missing folder fails the run; it is never reported as a pass. In code, `loadSequence` validates a sequence file, `renderFrame` returns one PNG, `renderFrames` returns several from one browser session, and `encodeVideo` writes `video.mp4` with a `manifest.json`; its `range` option (`{ from, to }` in frames) encodes an excerpt for a short proof. A voiced video's audio comes from `voice.mjs` (see Voice).
 
 ## Why this engine
 
@@ -41,7 +41,7 @@ A sequence with `chapters` is a chained video: the 0.2.0 opening once (globe to 
 - **Marker and title.** From three chapters on, one bar per chapter and the line « n · titre » sit 12 px under the title. The bars only change colour and the line only fades in the empty interval: nothing slides. The title must then hold on one line, so the marker stays in the title band; below three chapters there is neither bar nor line.
 - **Caption.** Carte, Période and Source change with each chapter; a line the next chapter repeats stays on screen through the change. The imagery line never leaves: on a historical chapter it swaps, during the empty interval, to the short credit and « l'imagerie montre le paysage actuel », as on board 10, because the long credit and the note do not fit on one line together. That chapter's Source line names the elevation model.
 - **Historical outline.** A chapter `outline` points to a GeoJSON LineString or Polygon file and must carry its `source`, `study`, `elevationModel` and `levelMetres`: only a contour at a published shoreline level is drawn, never a freehand shape. A file marked as a mockup is refused. The outline is round dots over dark dots, its inside tinted at 14 %, labelled « contour reconstitué », and it fades in whole like any overlay: a lake never fills, dries or shrinks on screen. `illustrative: true` marks a synthetic outline, accepted only in a demo sequence, and the tape then says so.
-- **Endings.** After the last chapter, everything leaves with the title and the top signature, the base darkens and the closing block holds 2.5 s; the imagery line stays. Ending A (signature, slogan, one sentence about what the page holds, the bare domain in the cards' pill) requires `pageOnline: true`, so a video never promises a page that does not exist; ending B is the signature and slogan only. Neither asks the viewer for anything.
+- **Endings.** After the last chapter, everything leaves with the title and the top signature, the base darkens and the closing block holds 2.5 s; the imagery line stays. Ending A (signature, slogan, one sentence about what the page holds, the bare domain in the cards' pill) requires `pageOnline: true`, so a video never promises a page that does not exist; ending B is the signature and slogan only. Neither asks the viewer for anything. `"page": "home"` on ending A makes the sentence a general invitation to the site, as the operator chose for the first voiced video: it still needs `pageOnline: true`, but promises no subject page. Left out, the page is the subject's.
 
 ## Plein écran, chunks and areas (Vidéo carte 0.4.0)
 
@@ -52,12 +52,82 @@ After the first real 0.3.0 proof the operator asked for shorter, larger, centred
 - **Chunks.** A chapter's `sentences` are lists of chunks, `{ "text": …, "enters": [...] }`. A chunk holds 3 to 6 words, at most 26 characters a line and two lines; a line the estimator puts wider than 900 px at 56 px also goes to two lines, and the browser's glyph boxes are checked against the same 900 px. Two lines are balanced, broken only at a plain space and after a comma when possible, as the design's `timeline4.py` scores them; a no-break space never breaks, and a transcription with its Arabic script takes a line of its own. Longer or shorter chunks are refused, never shrunk. Words are counted as `timeline.json` counts them: the units below, plus one for the Arabic script beside its transcription. `rules.md` says that group counts as one word, but then the accepted chunk « ṣaḥrāʾ (صحراء), « désert ». » would have two words and be refused; `timeline.json` decides.
 - **Reading rule.** Full opacity lasts characters ÷ 15, plus 0.3 s for the first chunk after an empty band, between 1.2 and 4 s, and at least 0.3 s after the chunk's last entry ends, rounded up to 0.1 s. Within a sentence the next chunk replaces the last on the same frame, with no fade and no empty frame, so nothing flickers; between sentences the band stays empty 300 ms; a chapter's first chunk fades in and its last fades out in 200 ms.
 - **Style.** Nunito Sans 800 56/68 in #fffaf2 on the image, with a 9 px dark stroke painted under each letter and a soft shadow instead of a band. ʾ and ʿ still come from Noto Sans; `transcription.acceptance.test.mjs` measures the gap at the new size and weight.
-- **Highlight.** `highlightAt(words, t)` is the pure function of the design: the unit whose box shows at time t, from its start to the next unit's start, or to 100 ms after it ends when a pause of 350 ms or more follows. A unit is a word with its punctuation and guillemets, a number written with a space, or a transcription with its Arabic script; `checkWordTimes` refuses word times that do not match a chunk's units. The box is drawn in the accent with the text in on-accent and grows 6 px sideways through shadows, never padding, so no word moves (`highlight.acceptance.test.mjs` compares glyph boxes lit and unlit). Without a voice there is no highlight at all, as the operator ruled, and a sequence that declares a `voice` is refused until step 10 delivers word times: the voiced schedule (a chunk appearing 150 ms before its first word) is not wired into the chapters yet.
+- **Highlight.** `highlightAt(words, t)` is the pure function of the design: the unit whose box shows at time t, from its start to the next unit's start, or to 100 ms after it ends when a pause of 350 ms or more follows. A unit is a word with its punctuation and guillemets, a number written with a space, or a transcription with its Arabic script; `checkWordTimes` refuses word times that do not match a chunk's units. The box is drawn in the accent with the text in on-accent and grows 6 px sideways through shadows, never padding, so no word moves (`highlight.acceptance.test.mjs` compares glyph boxes lit and unlit). Without a voice there is no highlight at all, as the operator ruled; with one, the box follows the word times (see Voice).
 - **Areas follow the text.** What a chunk lists in `enters` (an area or outline, a region or water name) enters with it, at the chunk's first frame on a silent video, 700 ms apart when one chunk names two. An overlay fades in whole in 600 ms, its legend item in 300 ms in a slot kept from the chapter's start, its map name 300 ms later in 400 ms; the overlays already shown ease down to 55 % in 600 ms, ease-in-out, never by a jump. Everything a chunk does not name enters with the chapter. During a subtitle nothing else changes: camera, grade, veil, title, marker, caption, placed names and the subtitle position stay put, which a property test checks on every frame.
 - **Hatching.** An approximate area is hatched with a dashed edge and no solid fill, at 45°, or at 135° when most of its outline lies inside an area entered before it, so the overlap reads as crossing. A chapter that draws one must carry the legend item « Zone approximative » (`{ "approximate": true }`), drawn with a neutral hatched swatch.
 - **Names placed by one rule.** In entry order, each name tries 13 candidate positions around its anchor at 44, 40, then 36 px (40 and 36 when two region names share the chapter); a box must stay in the names band, keep 12 px from earlier names and places, and may slide sideways by a third of its width to stay in. A name with no room goes to the legend as text. The 0.3.0 proof drew Tanezrouft over Ténéré; with the rule two names on the same anchor part. An area's name is set upright in its ink by default. Italic (`"label": "quoted"`) is an explicit opt-in for a source's own term, never inferred from a category: a paraphrase such as « pays des Noirs » for al-Idrīsī's « Soudan » must not look like a quotation (operator, 12 October 2026). A region known today keeps tracked Anton (`"label": "region"`); an area without `labelAt` is named by the legend only. The engine never adds guillemets: a name shows exactly the text it is given.
 
-Not implemented from 0.4.0 yet: chips and attestation lists (and the chip border that turns to an area's ink), the period ribbon, and the voiced schedule.
+Not implemented from 0.4.0 yet: chips and attestation lists (and the chip border that turns to an area's ink), and the period ribbon.
+
+## Voice
+
+The operator asked for a voiced video, read by an ElevenLabs voice he chose, with the spoken word highlighted. The design (0.4.0 timing.md §2) sets the rule, and open question 8 sets the input: per chunk, a list of words with their start and end in seconds. A sequence declares `"voice": { "audio": "voice.wav", "words": "words.json" }`, resolved like its area files.
+
+```json
+{
+  "audio": { "file": "voice.wav", "sha256": "…", "duration": 41.2 },
+  "chunks": [
+    {
+      "text": "*ṣaḥrāʾ* (صحراء), « désert ».",
+      "words": [
+        {
+          "text": "ṣaḥrāʾ (صحراء),",
+          "spoken": "sahrâ,",
+          "start": 9.55,
+          "end": 9.98
+        },
+        { "text": "« désert ».", "start": 10.02, "end": 10.51 }
+      ]
+    }
+  ]
+}
+```
+
+The chunks run in video order: the intro, every chapter, the outro. Each word is one highlight unit of its chunk, in order, inside the audio; a word without `spoken` must also spell its unit. The words JSON records the audio's SHA-256, so a voice recorded again without being timed again is refused, at load and again at export.
+
+- **Schedule.** A chunk appears 150 ms before its first word and is cut when the next one appears, across a sentence pause too. A part's first chunk fades in; its last stays 200 ms after its last word, then fades out in 200 ms (we read the design's « fades out 200 ms after its last word ends » as hold 200 ms, then fade). What a chunk names enters at its first word, 700 ms apart. A chunk never reads faster than 17 characters a second, and never leaves before what it names has entered.
+- **Chapters keep their order.** The 0.3.0 change (everything out in 400 ms, then 200 ms of imagery or the camera travel, then the entries, 900 ms before the first chunk) is placed in the silence between two chapters' speech. A chapter still lasts at least 6 s. The voice is never stretched or cut: when a silence is too short, the sequence is refused with the milliseconds missing, and the voice script inserts the pause. Without an intro, chapter 1's first word comes at 7.45 s or later.
+- **Intro and outro.** `"intro": { "sentences": [...] }` is spoken over the opening, in the subtitle band, with no entries; the opening then lasts until it has been said. `"outro"` is spoken over the closing block, once it is in. Both need a voice. The closing block holds until the audio ends plus 0.5 s, and never less than 2.5 s: the video lasts the larger of ceil((audio + 0.5) × 30) frames and the silent ending.
+- **Export.** FFmpeg muxes the voice as AAC at 48 kHz, bit-exact, cut to the encoded frames and padded with silence to their end, so the audio never shortens the video. The manifest records the audio's SHA-256 and duration.
+
+`voice.mjs` makes the two files from a script:
+
+```sh
+node social/video/voice.mjs --script SCRIPT.json --voice VOICE_ID --out DIR
+```
+
+```json
+{
+  "model": "eleven_multilingual_v2",
+  "seed": 20261012,
+  "chunks": [
+    { "text": "Sahara vient de l'arabe", "pauseBeforeMs": 7400 },
+    {
+      "text": "*ṣaḥrāʾ* (صحراء), « désert ».",
+      "units": [
+        { "text": "ṣaḥrāʾ (صحراء),", "spoken": "sahrâ," },
+        "« désert »."
+      ]
+    },
+    {
+      "text": "Vers 1154, al-Idrīsī",
+      "pauseBeforeMs": 2500,
+      "units": [
+        "Vers",
+        "1154,",
+        { "text": "al-Idrīsī", "spoken": "al-Idrissi" }
+      ]
+    }
+  ]
+}
+```
+
+The chunks are the sequence's, in the same order; `units` is optional and, when given, lists the chunk's own units, each with an optional `spoken` form for a word the voice must say differently from the screen (a transcription, a number in letters, « ethniafrica point com »). `pauseBeforeMs` inserts that much silence and starts a new request; chunks without it are read in one request, so a sentence keeps its prosody. The script calls `POST /v1/text-to-speech/{voice_id}/with-timestamps` once per request, with the neighbouring requests as context.
+
+- **Silence, not break tags.** A pause is generated silence, exact to the sample, rather than a `<break>` tag: the tag's length is the model's to interpret and its characters would sit in the alignment, while the schedule needs pauses it can count on.
+- **Alignment back to the screen.** The text sent is the spoken forms joined by spaces; the script records where each unit's spoken form sits, and the character times map back to one word per screen unit. An answer whose alignment does not spell the text sent is refused.
+- **Formats.** Requests ask for MP3 at 44.1 kHz, which every plan returns; FFmpeg decodes each to 48 kHz mono PCM and the script writes a WAV. `eleven_multilingual_v2` refuses the `language_code` parameter (only the Turbo and Flash v2.5 models take it), so the French comes from the text.
+- **Key.** `ELEVENLABS_API_KEY`, or the `elevenlabs` MCP server entry of the user-level Claude Code config, as the reel-clip skill's `transcribe.mjs` reads it. Every request is billed; the tests run the pure steps on `fixtures/voice/` and never call the API.
 
 ## Area files
 
@@ -124,8 +194,8 @@ The al-Idrīsī areas are EthniAfrica's reconstruction of a medieval description
 
 - **Reproducibility:** pixel-for-pixel repeats are expected only on the same machine and pinned browser, not across operating systems. The manifest records Chromium, Playwright and FFmpeg versions and the hashes of the sequence, imagery, engine and video. `productionReady` is always false.
 - **Dropped captures:** under SwiftShader, headless Chromium now and then never answers a screenshot request for a frame it has already drawn. It is not tied to a frame (a run hung on frame 205, the next drew it in 1.3 s), and waiting longer does not help: the first relief encode of the Sahara demo stopped after the default 60 s. A new request returns at once, so `captureFrame` gives each request 20 s and makes it again, three times at most. The page is not redrawn between requests, so the pixels cannot change.
-- **Not implemented yet:** Sentinel-2 tiles, a name-overlap check for the 12-second video, and two 0.3.0 map elements: name chips (other names of the same thing) and the attestation list, as well as the period ribbon of a historical chapter; the voiced schedule of 0.4.0 waits for step 10's word times. Bulk access to Sentinel-2 tiles still needs to be checked.
+- **Not implemented yet:** Sentinel-2 tiles, a name-overlap check for the 12-second video, and two 0.3.0 map elements: name chips (other names of the same thing) and the attestation list, as well as the period ribbon of a historical chapter. Bulk access to Sentinel-2 tiles still needs to be checked.
 - **Ending grade:** the design's end frames darken the imagery to brightness 0.45 where a hold uses 0.84; the shader applies their ratio. The saturation change on those frames is not reproduced.
 - **Relief drapes:** a chained relief video drapes its overlays once per hold camera, at that hold's scale, so strokes keep their design width at each place; the imagery and height crops cover every hold.
 - **Width estimates:** the layout gate estimates text widths from ratios calibrated on the design fonts; the browser's real glyph boxes decide at export.
-- **Test fixtures:** `fixtures/congo.sequence.json` (a river) and `fixtures/west-areas.sequence.json` (the design's three fictional areas, with Natural Earth borders taken from the accepted card map `social/design-system/assets/Cartes/afrique-ouest.json`). `fixtures/west-relief.sequence.json` frames the same areas in relief. All three carry illustrative copy and the « Texte illustratif » tape. They are not approved publication text. `fixtures/sahara.chapters.sequence.json` is the 0.4.0 design's worked example with its illustrative text, synthetic rectangles and hexagons in the areas' roles (`fixtures/synthetic-areas/`, marked as mockups) and the real Mega-Chad contour; `fixtures/synthetic-outline.geojson`, a plain octagon, stands in for a contour in the outline tests.
+- **Test fixtures:** `fixtures/congo.sequence.json` (a river) and `fixtures/west-areas.sequence.json` (the design's three fictional areas, with Natural Earth borders taken from the accepted card map `social/design-system/assets/Cartes/afrique-ouest.json`). `fixtures/west-relief.sequence.json` frames the same areas in relief. All three carry illustrative copy and the « Texte illustratif » tape. They are not approved publication text. `fixtures/sahara.chapters.sequence.json` is the 0.4.0 design's worked example with its illustrative text, synthetic rectangles and hexagons in the areas' roles (`fixtures/synthetic-areas/`, marked as mockups) and the real Mega-Chad contour; `fixtures/synthetic-outline.geojson`, a plain octagon, stands in for a contour in the outline tests. `fixtures/voiced.mjs` builds a voiced variant of the Sahara demo's first two chapters, timed on generated silence or a test tone, never a real voice; `fixtures/voice/` holds an illustrative voice script and alignments in the shape the API returns.
