@@ -11,7 +11,10 @@
     {
       "spelling": "Soumanou",
       "attestations": [
-        { "countryId": "BEN", "sourceRefs": ["benin-mtfp-2024-soumanou"] }
+        {
+          "countryId": "BEN",
+          "sourceRefs": ["iwac-1976-soumanou"]
+        }
       ]
     }
   ],
@@ -26,7 +29,7 @@
     {
       "peopleId": "PPL_DENDI",
       "status": "supposed",
-      "sourceRefs": ["benin-mtfp-2024-soumanou"]
+      "sourceRefs": ["iwac-1976-soumanou"]
     }
   ],
   "countries": [
@@ -50,12 +53,12 @@
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
     },
     {
-      "sourceKey": "benin-mtfp-2024-soumanou",
-      "title": "Liste des dossiers rejetés — concours de recrutement, juillet 2024",
-      "url": "https://travail.gouv.bj/open-pdf/communiques/rejet-2407314635-814.pdf",
-      "tier": "official",
-      "source_kind": "government",
-      "notes": "Document du ministère du Travail et de la Fonction publique du Bénin, consulté en français. La liste nominale atteste Soumanou dans la colonne « Noms et prénoms » au Bénin ; elle ne fournit ni appartenance dendi, ni mode de transmission, ni origine du nom."
+      "sourceKey": "iwac-1976-soumanou",
+      "title": "Mohamed Bachir Soumanou — notice d'autorité",
+      "url": "https://islam.zmo.de/s/westafrica/item/1976",
+      "tier": "referenced",
+      "source_kind": "repository",
+      "notes": "Islam West Africa Collection (IWAC), Leibniz-Zentrum Moderner Orient : base en libre accès sur l'islam et les musulmans en Afrique de l'Ouest, lue le 12 octobre 2026. La notice range Soumanou comme nom de famille (lastName), au Bénin, pour un membre du Cercle d'études et de recherche Islam et développement et du Fonds national de la Zakat et Awkaf du Bénin ; les articles de presse qui le citent vont du 21 octobre 1994 au 11 septembre 2009. Elle ne dit rien du peuple des porteurs, ni de la transmission ou de l'origine du nom. Elle remplace une liste de candidats du ministère béninois du Travail et de la Fonction publique (juillet 2024), dont le lien ne répond plus et qui donne des renseignements personnels sur des particuliers."
     }
   ],
   "gaps": [
@@ -65,7 +68,7 @@
     },
     {
       "fieldPath": "peoples",
-      "reason": "Le document officiel béninois atteste la graphie sans indiquer le peuple des porteurs ; les recherches associant « Soumanou » à Dendi, Zarma et Songhay n'ont fourni aucune attestation ethnique dédiée, donc l'association initiale reste supposée."
+      "reason": "La notice de la collection Islam West Africa atteste le nom au Bénin sans indiquer le peuple des porteurs ; les recherches associant « Soumanou » à Dendi, Zarma et Songhay n'ont fourni aucune attestation ethnique dédiée, donc l'association initiale reste supposée."
     },
     {
       "fieldPath": "alliances",
@@ -77,11 +80,69 @@
     },
     {
       "fieldPath": "bearers",
-      "reason": "La liste administrative atteste des porteurs sans établir leur décès ; les catalogues d'autorité consultés n'ont pas fourni de porteur décédé vérifiable."
+      "reason": "La notice de la collection Islam West Africa atteste un porteur sans dire s'il est décédé ; les catalogues d'autorité consultés n'ont pas fourni de porteur décédé vérifiable."
     },
     {
       "fieldPath": "homonyms",
       "reason": "La graphie exacte a été recherchée dans les catalogues bibliographiques, les documents béninois et les résultats d'onomastique dendi ; aucune lignée homonyme d'origine distincte n'a été établie."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Soumanou est un nom de famille porté au Bénin. On ne sait pas avec certitude d'où il vient : les sources consultées n'en donnent ni le sens ni l'origine.",
+    "names": [
+      {
+        "nameText": "Soumanou",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille du Bénin ; on ne sait pas avec certitude d'où il vient.",
+        "periodLabel": "Écrit dès 1994 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Soumanou est un nom de famille porté au Bénin, entre autres par des responsables d'associations musulmanes, selon la collection Islam West Africa. On ne sait pas avec certitude d'où vient ce nom ni ce qu'il veut dire : les sources consultées ne le disent pas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Mohamed Bachir Soumanou — notice d'autorité",
+                "author": "Islam West Africa Collection (IWAC), Leibniz-Zentrum Moderner Orient",
+                "year": null,
+                "url": "https://islam.zmo.de/s/westafrica/item/1976",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Base en libre accès sur l'islam et les musulmans en Afrique de l'Ouest, lue le 11 octobre 2026. La notice range le nom Soumanou comme nom de famille (lastName), au Bénin, pour un membre du Cercle d'études et de recherche Islam et développement et du Fonds national de la Zakat et Awkaf du Bénin. Les articles de presse béninois qui le citent vont du 21 octobre 1994 au 11 septembre 2009. La notice ne dit rien de l'origine du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Soumanou apparaît dans un article de presse béninois du 21 octobre 1994, indexé par la collection Islam West Africa. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit seulement quand le nom a été écrit dans cette collection, pas depuis quand il est porté.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mohamed Bachir Soumanou — notice d'autorité",
+                "author": "Islam West Africa Collection (IWAC), Leibniz-Zentrum Moderner Orient",
+                "year": null,
+                "url": "https://islam.zmo.de/s/westafrica/item/1976",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Base en libre accès sur l'islam et les musulmans en Afrique de l'Ouest, lue le 11 octobre 2026. La notice range le nom Soumanou comme nom de famille (lastName), au Bénin, pour un membre du Cercle d'études et de recherche Islam et développement et du Fonds national de la Zakat et Awkaf du Bénin. Les articles de presse béninois qui le citent vont du 21 octobre 1994 au 11 septembre 2009. La notice ne dit rien de l'origine du nom."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

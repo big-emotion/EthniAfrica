@@ -97,5 +97,96 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches sur Waberi et Waaberi ont porté sur les noms de personnes, de peuples, de lieux et de quartiers. Elles ne permettent pas de présenter un autre nom écrit de la même manière, mais d'origine différente."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Waberi est un nom personnel porté à Djibouti et en Somalie, dans le monde somali. Sa plus ancienne trace écrite que nous connaissons date de 1964. On ne sait pas avec certitude d'où vient ce nom : nous présentons plus bas la lecture que nous en faisons d'après deux dictionnaires.",
+    "names": [
+      {
+        "nameText": "Waberi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel somali ; on ne sait pas avec certitude d'où il vient.",
+        "periodLabel": "Écrit dès 1964 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Waberi est le dernier élément du nom d'une artiste djiboutienne, Habiba Abdillahi Waberi, dans l'hommage que lui rend la présidence de Djibouti. La page ne dit pas ce que ce nom représente dans la suite de ses noms.",
+            "sources": [
+              {
+                "title": "Hommage posthume de la Première Dame à la mémoire de feu Habiba Abdillahi Waberi",
+                "author": "Présidence de la République de Djibouti",
+                "year": 2020,
+                "url": "https://www.presidence.dj/index.php/article/hommage-posthume-de-la-premiere-dame-a-la-memoire-de-feu-habiba-abdillahi-waberi-812",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Article du 24 juin 2020 sur le site de la présidence de Djibouti, lu le 12 octobre 2026. Le titre écrit le nom complet Habiba Abdillahi Waberi ; l'article la présente comme une célèbre artiste djiboutienne. Il ne dit rien du sens du nom."
+              }
+            ],
+            "aspect": "usage"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Lecture d'après des dictionnaires de 1897 et de 1991"
+            },
+            "statement": "Le nom Waberi se rattacherait au mot somali waaberi, « aube, point du jour, tôt le matin ». C'est la lecture que nous faisons à partir de deux dictionnaires qui donnent ce mot sans parler du nom : celui de R. David Zorc, Madina M. Osman et Virginia Luling, qui l'écrit waabberi, et celui du père Évangéliste de Larajasse, qui l'écrit déjà waberi en 1897.",
+            "hypothesisGroup": "origine du nom Waberi",
+            "sources": [
+              {
+                "title": "Somali-English Dictionary",
+                "author": "R. David Zorc, Madina M. Osman et Virginia Luling",
+                "year": 1991,
+                "url": "https://archive.org/details/somali-english-dictionary-revised",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 482",
+                "notes": "Deuxième édition revue et augmentée, 1991. Lu le 12 octobre 2026 dans une copie non officielle déposée sur Internet Archive par un particulier. Page 482 : « waabberi (-ga) n-m-time dawn, daybreak, early morning », avec la variante waabari."
+              },
+              {
+                "title": "Somali-English and English-Somali Dictionary",
+                "author": "Évangéliste de Larajasse",
+                "year": 1897,
+                "url": "https://archive.org/details/cu31924026888820",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 20",
+                "notes": "Dictionnaire publié en 1897 par un missionnaire catholique. Lu le 12 octobre 2026 sur l'exemplaire numérisé de la bibliothèque de l'université Cornell, sur archive.org. Page 20 : « waberi, ad., early morning », avec l'exemple « wa beri bainu tosnai », « we got up in the early morning »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1964,
+              "to": 1964,
+              "label": "1964"
+            },
+            "era": "modern",
+            "statement": "Le nom Waberi apparaît par écrit dans la Gazzetta Ufficiale de la République italienne, dans le nom de Mohamed Waberi Ali, secrétaire particulier du président de la République somalienne, décoré par l'Italie. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "Waberi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Gazzetta Ufficiale della Repubblica Italiana, n° 56, supplément ordinaire, mardi 3 mars 1964",
+                "author": "République italienne",
+                "year": 1964,
+                "url": "https://archive.org/details/19640303_056_SO_000",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 5",
+                "notes": "Journal officiel italien, lu le 12 octobre 2026 dans une copie numérisée déposée sur Internet Archive par un particulier. Page 5, nominations dans l'ordre du Mérite de la République italienne par décrets de 1963 : « Mohamed Waberi Ali, Segretario particolare del Presidente della Repubblica somala ». La page ne dit pas ce que veut dire le nom."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

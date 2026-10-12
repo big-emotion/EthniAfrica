@@ -101,5 +101,278 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sylla est un nom de clan d'origine soninké, porté aussi chez les Malinké et les Soussou, notamment en Guinée. On l'écrit aussi Silla. Les sources ne s'accordent pas sur son origine ; nous présentons plus bas les explications proposées.",
+    "names": [
+      {
+        "nameText": "Sylla",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan d'origine soninké, écrit sous une forme proche dès le XVIIe siècle.",
+        "periodLabel": "Écrit sous une forme proche dès le XVIIe siècle ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sylla est un nom de clan que le dictionnaire des noms de clan mandingues écrit Sìla, ou Silla. Il le note chez les Soninké, les Malinké et les Soussou, dans plusieurs groupes : hommes libres, marabouts, griots et cordonniers.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 11 octobre 2026. Entrée Sìla : variante Silla ; parlers soninké, malinké et soussou ; catégories hɔ́rɔn (hommes libres), mori (marabouts), geseru (griots) et garanke (cordonniers), ainsi que wage."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sylla désigne un clan. On ne sait pas avec certitude ce que veut dire le mot ni d'où il vient ; nous présentons les explications séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 11 octobre 2026. Entrée Sìla, sans indication de sens."
+              },
+              {
+                "title": "Dictionary of American Family Names, 2nd edition — Sylla",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/sylla?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée de la deuxième édition du Dictionary of American Family Names (Oxford University Press, 2022), reproduite par Ancestry et lue le 11 octobre 2026 dans sa version française affichée par le site. Entrée Sylla : nom de clan soninké, surtout porté en Guinée, interprété comme « cheval » (renvoi à Cisse) ; Silla et Sillah sont comparés."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1600,
+              "to": 1699,
+              "label": "XVIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Sylla apparaît par écrit sous une forme proche, Es-Sellenki, dans le Tarikh es-Soudan, la chronique d'es-Sa'di, lettré de Tombouctou : selon d'autres auteurs, écrit-il, l'askia Mohammed s'appelait ainsi. C'est la plus ancienne trace de ce nom que le projet connaît ; elle parle d'un souverain qui prend le pouvoir en 1493.",
+            "formAsWritten": "Es-Sellenki",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Abderrahman es-Sa'di",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "L'askia Mohammed",
+                "role": "souverain songhay que la chronique désigne ainsi"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Tarikh es-Soudan, par Abderrahman ben Abdallah ben Imran ben Amir es-Sa'di, traduit de l'arabe par O. Houdas",
+                "author": "Abderrahman es-Sa'di ; traduction d'Octave Houdas",
+                "year": 1900,
+                "url": "https://archive.org/details/tarikhessoudanpa00sadauoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 117",
+                "notes": "Paris, Ernest Leroux, 1900. Relu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 117 : « le très orthodoxe Mohammed-ben-Abou-Bekr-Et-Touri, ou, suivant d'autres auteurs, Es-Sellenki » ; la note 2 donne la variante « Selenki ». Le texte ne dit pas ce que veut dire ce surnom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "Décrit en 1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Sylla est celui que l'historien Sékéné Mody Cissoko lit dans le surnom de l'askia Mohammed, « le Syllanke », un mot soninké qui veut dire « de la famille des Sylla ». Pour lui, l'askia était probablement du clan Sylla, même si les chroniques le nomment aussi Touré.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 8 : Les Songhay du XIIe au XVIe siècle",
+                "author": "Sékéné Mody Cissoko",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 219, notes 12 et 13",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française. Relu le 11 octobre 2026 dans une copie non officielle de l'édition française déposée sur archive.org (https://archive.org/details/unesco-histoire-generale-d-afrique) ; l'exemplaire officiel est sur l'UNESDOC. Page 219 : « Askia Mohammed Ier le Syllanke » ; note 12 : « Syllanke : mot soninke qui veut dire appartenant à la famille des Sylla » ; note 13 : « Les deux noms sont donnés par les Ta'rikh. L'askia devait probablement être du clan sylla »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "Proposé en 1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Sylla serait celui de l'un des plus anciens clans soninké de la société songhay, avec les Touré, les Tunkara, les Cissé, les Jakhité, les Dramé et les Jawara, selon Sékéné Mody Cissoko.",
+            "hypothesisGroup": "origine du nom Sylla",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 8 : Les Songhay du XIIe au XVIe siècle",
+                "author": "Sékéné Mody Cissoko",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 230",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française. Relu le 11 octobre 2026 dans une copie non officielle de l'édition française déposée sur archive.org (https://archive.org/details/unesco-histoire-generale-d-afrique) ; l'exemplaire officiel est sur l'UNESDOC. Page 230 : « Les plus anciens étaient d'origine soninke (Ture, Sylla, Tunkara, Sise, Jakite, Drame, Jawara) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Sylla viendrait d'un mot soninké qui veut dire « cheval », selon le Dictionary of American Family Names, qui le rapproche du nom Cissé.",
+            "hypothesisGroup": "origine du nom Sylla",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2nd edition — Sylla",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/sylla?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée de la deuxième édition du Dictionary of American Family Names (Oxford University Press, 2022), reproduite par Ancestry et lue le 11 octobre 2026 dans sa version française affichée par le site. Entrée Sylla : « du nom du clan sylla du peuple Soninke interprété comme un « cheval » (voir Cisse) ». L'entrée Cisse rattache ce nom au mot soninké si, « cheval ». Le dictionnaire ne cite pas sa source."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Sylla est écrit sous cette forme en 1881 par Ernest Noirot, qui accompagne une mission française au Fouta-Djalon : il nomme Omar-Sylla, frère du chef de Timbi. Il s'étonne d'y retrouver le nom d'un général romain, sans lien établi avec le nom africain.",
+            "formAsWritten": "Omar-Sylla",
+            "actors": [
+              {
+                "name": "Ernest Noirot",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "À travers le Fouta-Diallon et le Bambouc (Soudan occidental)",
+                "author": "Ernest Noirot",
+                "year": 1890,
+                "url": "https://archive.org/details/traverslefoutadi00noir",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 89-90",
+                "notes": "Paris, Marpon et Flammarion ; la notice de l'exemplaire numérisé donne 1890. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. L'auteur accompagne en 1881 la mission du docteur Bayol au Fouta-Djalon (introduction ; lettres datées de juin et juillet 1881). Cité ici pour les formes qu'il écrit. Pages 89-90 : un frère du chef de Timbi « répond au nom de Omar-Sylla. Sylla ! le nom du célèbre Romain ! »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "Décrit en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sylla, écrit Silla, est porté au Fouta Toro par les Sillanâbe, « les gens de Silla », selon Maurice Delafosse et Henri Gaden. Ils les disent issus d'un village du Bosséya fondé par des Soninké du Ouagadou, et refusent d'y voir la ville de Silla que cite le géographe al-Bakri.",
+            "sources": [
+              {
+                "title": "Chroniques du Foûta sénégalais, traduites de deux manuscrits arabes inédits de Siré-Abbâs-Soh",
+                "author": "Siré-Abbâs-Soh ; traduction de Maurice Delafosse avec la collaboration de Henri Gaden",
+                "year": 1913,
+                "url": "https://archive.org/details/chroniquesdufo00sir",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 112, 296",
+                "notes": "Paris, Ernest Leroux, 1913, Collection de la Revue du monde musulman. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Les deux manuscrits de Siré-Abbâs-Soh, généalogiste du Fouta, parviennent à Henri Gaden en 1911 (avertissement, p. 1). Traducteurs de l'époque coloniale, cités pour les formes et les récits qu'ils relèvent. Page 112 : la chronique dit les Sillanâbe originaires du pays du Wagadu. Page 296, glossaire : Sillanâbe, « gens de Silla » ; « Silla est un village du Bôsséya dont les fondateurs auraient été des Soninké venus du Ouagadou et portant le nom de clan de Silla. La fondation de ce village n'est pas ancienne, et l'on ne saurait l'identifier avec le Silla de Bekri. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1917,
+              "to": 1917,
+              "label": "Décrit en 1917"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sylla, écrit Silla, est classé en 1917 par Paul Marty, administrateur colonial, parmi les familles d'hommes libres et les familles de marabouts des Soninké du Sénégal.",
+            "sources": [
+              {
+                "title": "Études sur l'Islam au Sénégal, tome 2 : les doctrines et les institutions",
+                "author": "Paul Marty",
+                "year": 1917,
+                "url": "https://archive.org/details/EtudesSurLislamAuSnngal2LesDotrinesEtLesInstitutions",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 327-328",
+                "notes": "Paris, Ernest Leroux, 1917, Collection de la Revue du monde musulman. Lu le 11 octobre 2026 sur une copie non officielle de la numérisation de Gallica déposée sur archive.org. Auteur administrateur colonial, cité pour les classements qu'il donne. Pages 327-328 : chez les Sarakollés, parmi les hommes libres, « les Silla » ; parmi les castes maraboutiques, « les Wagué-Kounda, les Silla, les Dramé »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Silla",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Silla est une autre écriture de Sylla, celle du dictionnaire des noms de clan mandingues. Le Dictionary of American Family Names la donne surtout en Sierra Leone.",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 11 octobre 2026. Entrée Sìla, variante Silla."
+              },
+              {
+                "title": "Dictionary of American Family Names, 2nd edition — Silla",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/silla?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée de la deuxième édition du Dictionary of American Family Names (Oxford University Press, 2022), reproduite par Ancestry et lue le 11 octobre 2026 dans sa version française affichée par le site. Entrée Silla : en Afrique de l'Ouest, surtout en Sierra Leone, variante de Sylla ; l'entrée donne aussi des noms italiens et espagnols sans lien."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

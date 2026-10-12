@@ -104,5 +104,65 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « Tarhouni lignée », « Tarhouni clan », « Tarhouni tribe » et « Tarhouni place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Tarhouni est un nom de famille du Maghreb, en Libye et en Tunisie. Il renverrait à Tarhūna, une tribu libyenne de Tripolitaine qui a aussi donné son nom à des lieux. On ne sait pas avec certitude si chaque famille le tient de la tribu ou du lieu, ni depuis quand il est porté ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Tarhouni",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille libyen et tunisien qui renverrait à Tarhūna, une tribu de Libye.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tarhouni est un nom de famille de Libye et de Tunisie. Il renverrait à Tarhūna, une tribu de Libye, mais on ne sait pas avec certitude si les familles qui le portent le tiennent de la tribu ou du lieu ; nous présentons plus bas la seule explication que nous connaissons.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Tribe, Islam and State in Libya: Analytical Study of the Roots of the Libyan Tribal Society and Interaction up to the Qaramanli Rule (1711-1835)",
+                "author": "Faraj Najem",
+                "year": 2004,
+                "url": "https://westminsterresearch.westminster.ac.uk/download/926d7d076329ed28eba6c6893c17630fb1ec633a9e37b4a2ac4ea32394f484ed/19198678/Najem.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 215 ; p. 218-219",
+                "notes": "Thèse de doctorat, Université de Westminster, 2004, lue le 11 octobre 2026 dans le dépôt WestminsterResearch. Page 215 : les Libyens installés en Tunisie y ont donné leurs noms à des lieux, et ces noms libyens sont devenus des noms de famille tunisiens, parmi lesquels les noms qui renvoient à Tripoli et à Tarhūna ; un quartier de Tunisie porte le nom de la tribu libyenne de Tarhūna. Pages 218-219 : des gens de Tarhūna figurent parmi les tribus de Tripolitaine parties pour la Tunisie, que les épidémies de 1865 avaient en partie vidée de ses habitants."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2004,
+              "to": 2004,
+              "label": "Proposée en 2004"
+            },
+            "era": "modern",
+            "statement": "Le nom Tarhouni serait l'un des noms libyens devenus des noms de famille en Tunisie : des gens de la tribu de Tarhūna figurent parmi les Tripolitains partis pour la Tunisie, que les épidémies de 1865 avaient en partie vidée de ses habitants, selon Faraj Najem.",
+            "hypothesisGroup": "origine du nom Tarhouni",
+            "sources": [
+              {
+                "title": "Tribe, Islam and State in Libya: Analytical Study of the Roots of the Libyan Tribal Society and Interaction up to the Qaramanli Rule (1711-1835)",
+                "author": "Faraj Najem",
+                "year": 2004,
+                "url": "https://westminsterresearch.westminster.ac.uk/download/926d7d076329ed28eba6c6893c17630fb1ec633a9e37b4a2ac4ea32394f484ed/19198678/Najem.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 215 ; p. 218-219",
+                "notes": "Thèse de doctorat, Université de Westminster, 2004, lue le 11 octobre 2026 dans le dépôt WestminsterResearch. Page 215 : les Libyens installés en Tunisie y ont donné leurs noms à des lieux, et ces noms libyens sont devenus des noms de famille tunisiens, parmi lesquels les noms qui renvoient à Tripoli et à Tarhūna ; un quartier de Tunisie porte le nom de la tribu libyenne de Tarhūna. Pages 218-219 : des gens de Tarhūna figurent parmi les tribus de Tripolitaine parties pour la Tunisie, que les épidémies de 1865 avaient en partie vidée de ses habitants."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

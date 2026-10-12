@@ -100,5 +100,93 @@
       "fieldPath": "transmissionMode",
       "reason": "Les recherches « Trabelsi transmission patronyme », « Trabelsi filiation » et « Trabelsi hereditary surname » n’ont pas établi si, ni comment, cette forme se transmet dans les communautés concernées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Trabelsi est un nom de famille porté en Tunisie. Il renverrait à Tripoli, Ṭarābulus en arabe, et une étude le range parmi les noms libyens devenus des noms de famille tunisiens. On ne sait pas avec certitude comment chaque famille l'a reçu ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Trabelsi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille de Tunisie qui renverrait à la ville de Tripoli, en Libye.",
+        "periodLabel": "Forme proche connue dès le XIe siècle ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Trabelsi est un nom de famille de Tunisie. Il renverrait à Tripoli, la ville libyenne appelée Ṭarābulus en arabe, mais on ne sait pas avec certitude comment les familles qui le portent l'ont reçu ; nous présentons plus bas la seule explication que nous connaissons.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Tribe, Islam and State in Libya: Analytical Study of the Roots of the Libyan Tribal Society and Interaction up to the Qaramanli Rule (1711-1835)",
+                "author": "Faraj Najem",
+                "year": 2004,
+                "url": "https://westminsterresearch.westminster.ac.uk/download/926d7d076329ed28eba6c6893c17630fb1ec633a9e37b4a2ac4ea32394f484ed/19198678/Najem.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 215 ; p. 218-219",
+                "notes": "Thèse de doctorat, Université de Westminster, 2004, lue le 11 octobre 2026 dans le dépôt WestminsterResearch. Page 215 : les Libyens installés en Tunisie y ont donné leurs noms à des lieux, et ces noms libyens sont devenus des noms de famille tunisiens, parmi lesquels les noms qui renvoient à Tripoli et à Tarhūna ; un quartier de Tunisie porte le nom de la tribu libyenne de Tarhūna. Pages 218-219 : des gens de Tarhūna figurent parmi les tribus de Tripolitaine parties pour la Tunisie, que les épidémies de 1865 avaient en partie vidée de ses habitants."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2004,
+              "to": 2004,
+              "label": "Proposée en 2004"
+            },
+            "era": "modern",
+            "statement": "Le nom Trabelsi serait l'un des noms libyens devenus des noms de famille en Tunisie : des Libyens venus de Tripolitaine y auraient gardé le nom de leur ville ou de leur tribu, selon Faraj Najem.",
+            "hypothesisGroup": "origine du nom Trabelsi",
+            "sources": [
+              {
+                "title": "Tribe, Islam and State in Libya: Analytical Study of the Roots of the Libyan Tribal Society and Interaction up to the Qaramanli Rule (1711-1835)",
+                "author": "Faraj Najem",
+                "year": 2004,
+                "url": "https://westminsterresearch.westminster.ac.uk/download/926d7d076329ed28eba6c6893c17630fb1ec633a9e37b4a2ac4ea32394f484ed/19198678/Najem.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 215 ; p. 218-219",
+                "notes": "Thèse de doctorat, Université de Westminster, 2004, lue le 11 octobre 2026 dans le dépôt WestminsterResearch. Page 215 : les Libyens installés en Tunisie y ont donné leurs noms à des lieux, et ces noms libyens sont devenus des noms de famille tunisiens, parmi lesquels les noms qui renvoient à Tripoli et à Tarhūna ; un quartier de Tunisie porte le nom de la tribu libyenne de Tarhūna. Pages 218-219 : des gens de Tarhūna figurent parmi les tribus de Tripolitaine parties pour la Tunisie, que les épidémies de 1865 avaient en partie vidée de ses habitants."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Fin du XIe ou début du XIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Une forme proche du nom Trabelsi, al-Ṭarābulusī, se lit dans le nom d'un savant de Tripoli, ʿAlī b. ʿAbd Allāh b. Maḥbūb al-Ṭarābulusī, qui vécut à la fin du XIe siècle ou au début du XIIe, selon l'historien Aurélien Montel. C'est la plus ancienne trace de cette forme proche que le projet connaît ; rien ne dit que les Trabelsi d'aujourd'hui descendent de lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "ʿAlī b. ʿAbd Allāh b. Maḥbūb al-Ṭarābulusī",
+                "role": "savant de Tripoli qui porte cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A 5th/11th century chronicler from Tripoli",
+                "author": "Aurélien Montel",
+                "year": 2022,
+                "url": "https://doi.org/10.1017/lis.2022.3",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 94-96",
+                "notes": "Libyan Studies, vol. 53, 2022, p. 94-96. Lu le 11 octobre 2026 : le résumé, en accès libre sur le site de Cambridge University Press ; l'article entier est payant. Le résumé présente ʿAlī b. ʿAbd Allāh b. Maḥbūb al-Ṭarābulusī comme un savant de Tripoli qui vécut à la fin du Ve siècle de l'hégire (XIe siècle) ou au début du VIe (XIIe siècle)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

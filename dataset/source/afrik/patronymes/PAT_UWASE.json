@@ -71,5 +71,43 @@
       "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Uwase est un nom du Rwanda. En 2025, c'est le troisième nom le plus souvent choisi pour les filles nées dans le pays. On ne sait pas avec certitude ce qu'il veut dire ni depuis quand il est donné : les sources que nous avons pu lire n'en disent rien.",
+    "names": [
+      {
+        "nameText": "Uwase",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kin",
+        "namedBy": null,
+        "shortLine": "Un nom donné aux filles au Rwanda ; les sources lues n'en donnent ni le sens ni la plus ancienne trace.",
+        "periodLabel": "Donné aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "En 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Uwase est le troisième nom le plus souvent choisi pour les filles nées au Rwanda : 5 449 enregistrements, selon l'Institut national de la statistique du Rwanda.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Vital Statistics Executive Summary 2025",
+                "author": "National Institute of Statistics of Rwanda",
+                "year": 2026,
+                "url": "https://statistics.gov.rw/sites/default/files/documents/2026-07/CRVS%20%20BOOKLET%202025%20FINAL.pdf",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "page": "p. 12",
+                "notes": "Kigali, Institut national de la statistique du Rwanda (NISR), 2026, sous licence CC BY 4.0. Lu le 12 octobre 2026. Page 12, tableau 4, « Top 20 most preferred babies' surname in 2025 by sex » : chez les filles, « UWASE » est au troisième rang, avec 5 449 enregistrements. Le document ne donne pas le sens des noms."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -117,5 +117,95 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bakossi désigne un peuple des monts Manengouba et Koupé, dans le sud-ouest du Cameroun, qui se nomme lui-même Bakossi. Sa langue s'appelle akoose. Le nom apparaît par écrit à la fin du XIXe siècle ; nous n'avons pas trouvé de source qui explique son origine.",
+    "names": [
+      {
+        "nameText": "Bakossi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bss",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent, écrit à la fin du XIXe siècle ; son origine n'est pas connue.",
+        "periodLabel": "Écrit depuis 1902 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom Bakossi sert aussi, dans les répertoires de langues, pour la langue akoose, selon Glottolog. Nous n'avons pas trouvé de source qui explique d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog, Akoose",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/akoo1248",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Glottolog 5.3, lu le 11 octobre 2026. Les autres noms viennent de la base Multitree que Glottolog reprend."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1886,
+              "to": 1887,
+              "label": "1886-1887, selon un récit de 1902"
+            },
+            "statement": "Le nom Bakossi apparaît par écrit chez l'officier allemand Franz Hutter, qui rapporte les expéditions d'Eugen Zintgraff : l'une d'elles l'a mené en 1886 ou 1887 dans le pays montagneux des Bakossi, jusqu'à Nyasoso, qu'il écrit « Nyansoso ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà là avant elle.",
+            "formAsWritten": "Bakossi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Wanderungen und Forschungen im Nord-Hinterland von Kamerun",
+                "author": "Franz Hutter",
+                "year": 1902,
+                "url": "https://archive.org/details/wanderungenundf00huttgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 11",
+                "notes": "Brunswick, Friedrich Vieweg und Sohn, lu sur la numérisation d'Internet Archive. L'auteur, officier allemand, résume les expéditions d'Eugen Zintgraff de 1886 et 1887 ; nous n'avons pas lu le récit de Zintgraff lui-même."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Akoose",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "bss",
+        "namedBy": null,
+        "shortLine": "Le nom de leur langue, écrit aussi Akosi, Koose ou Nkosi.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Akoose désigne la langue des Bakossi. Les répertoires de langues l'écrivent aussi Akosi, Bekoose, Koose, Kosi, Nkoosi ou Nkosi, et emploient aussi le nom Bakossi, selon Glottolog.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog, Akoose",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/akoo1248",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Glottolog 5.3, lu le 11 octobre 2026. Les autres noms viennent de la base Multitree que Glottolog reprend."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

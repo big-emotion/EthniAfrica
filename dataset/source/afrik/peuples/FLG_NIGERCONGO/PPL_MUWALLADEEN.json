@@ -1,0 +1,170 @@
+{
+  "id": "PPL_MUWALLADEEN",
+  "nameMain": "Muwalladeen",
+  "languageFamilyId": "FLG_NIGERCONGO",
+  "currentCountries": ["YEM"],
+  "classificationStatus": "contested",
+  "content": {
+    "appellations": {
+      "mainName": "Muwalladeen",
+      "selfAppellation": "Muwalladeen (au singulier Muwallad, au féminin Muwallada)",
+      "exonyms": [],
+      "originOfExonyms": "Le nom Muwalladeen désigne au Yémen des personnes dont la famille a des liens anciens hors du pays. Certaines ont une origine mêlée, avec un père ou un grand-père yéménite et une mère ou une grand-mère étrangère. Selon un dictionnaire arabe cité par Atiaf Alwazir, le mot veut dire « un Arabe qui n'est pas purement arabe ».",
+      "whyProblematic": "Le nom est souvent employé pour rabaisser. Les Muwalladeen dont la famille a des liens avec l'Afrique subissent plus le racisme que ceux dont la famille a des liens avec l'Asie ou l'Europe. Beaucoup cachent leurs origines pour ne pas être mis à l'écart. Les noms Akhdam et Muhamasheen désignent une autre communauté du Yémen, dont cette fiche ne parle pas.",
+      "contemporaryUsage": "Les plus jeunes acceptent plus facilement ce nom que leurs aînés. À Aden, dans le sud du pays, les Muwalladeen sont moins rejetés qu'à Sanaa.",
+      "linguisticFamily": "FLG_NIGERCONGO",
+      "ethnoLinguisticGroup": "Arabophones du Yémen ; certaines familles ont des liens anciens avec l'Afrique de l'Est et la Corne de l'Afrique",
+      "historicalRegion": "Aden, Hadramaout et Sanaa (Yémen)",
+      "currentCountries": ["YEM"]
+    },
+    "ethnicities": [
+      "Muwalladeen dont la famille a des liens avec l'Afrique de l'Est et la Corne de l'Afrique (Éthiopie, Somalie)",
+      "Muwalladeen dont la famille a des liens avec l'Asie ou l'Europe"
+    ],
+    "origins": {
+      "ancientOrigins": "Les Muwalladeen ont des origines multiples. Des commerçants swahili et hadhrami, venus du Hadramaout, ont entretenu pendant des siècles des liens de commerce avec la côte swahili, et certains se sont établis de part et d'autre. Aden, grand port de passage entre l'Afrique et l'Asie, a attiré des familles venues d'Afrique.",
+      "formationPeriod": "Les marchands hadhrami comptaient parmi les principaux marchands de la côte swahili, et certains y ont fondé des familles mixtes. Le port d'Aden, sous domination britannique de 1839 à 1967, a aussi attiré des travailleurs africains et somaliens.",
+      "migrationRoutes": [
+        "Commerce hadhrami-swahili : marchands et marins yemenites s'etablissant sur la cote swahili, certains revenant au Yemen avec des epouses africaines",
+        "Migration de travailleurs somaliens et ethiopiens vers Aden sous l'administration britannique (1839-1967)",
+        "Retour de commerçants yemenites de la cote swahili avec familles mixtes (19e-20e siecles)",
+        "Flux de refugies somaliens vers le Yemen (apres 1991)"
+      ],
+      "historicalSettlementZones": [
+        "Aden — principal port du sud du Yémen, où les Muwalladeen sont le moins rejetés",
+        "Hadramaout — région d'origine des commerçants hadhrami actifs sur la côte swahili",
+        "Mukalla — port de l'est du Yémen, lié à l'océan Indien",
+        "Sanaa — capitale, où le rejet est plus fort"
+      ],
+      "unificationsOrDivisions": "Les Muwalladeen ne forment pas en général de communauté organisée. Leur situation dépend de la région : à Aden, dans le sud, ils sont moins rejetés qu'à Sanaa.",
+      "externalInfluences": "L'occupation britannique d'Aden, de 1839 à 1967, a amené des travailleurs africains. La guerre au Yémen, depuis 2015, touche tout le pays ; beaucoup de Muwalladeen interrogés en 2022 estiment qu'elle n'a pas aggravé le racisme qu'ils subissent.",
+      "majorHistoricalEvents": "1839 : occupation britannique d'Aden, arrivée de travailleurs africains et somaliens. 1967 : indépendance du Yémen du Sud. 2014 : la Conférence du dialogue national recommande l'égalité de citoyenneté pour tous, sans distinction d'origine ni de couleur. Depuis 2015 : guerre au Yémen."
+    },
+    "organization": {
+      "traditionalPoliticalSystem": "Les Muwalladeen n'ont pas de structure politique propre et ne sont en général pas organisés en communauté. La Conférence du dialogue national de 2014 a recommandé l'égalité de citoyenneté pour tous ; ces recommandations n'ont pas été appliquées.",
+      "clanOrganization": null,
+      "ageClassSystems": null,
+      "roleOfLineages": "Pour obtenir une carte d'identité ou un passeport, il faut prouver le lieu de naissance de son père. Cette règle bloque souvent les Muwalladeen.",
+      "religiousAuthority": "Les Muwalladeen pratiquent l'islam comme les autres Yéménites."
+    },
+    "languages": {
+      "mainLanguage": "Arabe yemenite (langue d'integration, langue maternelle actuelle de la grande majorite)",
+      "isoCodes": ["ara"],
+      "dialects": [
+        "Arabe yéménite — langue de tous les jours des Muwalladeen",
+        "Somali — langue de certains Muwalladeen d'origine somalienne récente"
+      ],
+      "vehicularRole": "L'arabe yéménite est la langue de tous les jours des Muwalladeen."
+    },
+    "culture": {
+      "majorRites": null,
+      "symbols": "Certaines familles valorisent leur héritage africain en privé et le cachent en public.",
+      "artsAndMusic": "Les Muwalladeen d'Aden, moins rejetés que ceux du nord, vivent plus ouvertement une culture à la fois yéménite et africaine. L'écrivain yéméno-éthiopien Mohamed Abdul-Wali, auteur de They Die Strangers, a raconté leur vie.",
+      "spiritualities": "Islam sunnite chaféite, majoritaire dans le sud du Yémen."
+    },
+    "historicalRole": {
+      "kingdomsOrChiefdoms": "Les Muwalladeen n'ont jamais formé d'entité politique au Yémen.",
+      "relationsWithNeighbors": "Liens anciens avec la côte swahili par les routes de commerce de l'océan Indien : les marchands du Hadramaout comptaient parmi les plus actifs sur cette côte. Certains Muwalladeen gardent des contacts avec des familles en Éthiopie, en Somalie ou en Tanzanie.",
+      "conflictsOrAlliances": "Pas de conflit armé propre aux Muwalladeen. Ils se voient souvent refuser une carte d'identité ou un passeport, faute de pouvoir prouver qu'ils sont yéménites. Selon Atiaf Alwazir, les fonctionnaires invoquent leur peau plus foncée et leur arabe parfois imparfait.",
+      "diaspora": "Beaucoup voient le départ du Yémen comme un moyen d'améliorer leur vie. Des Yéménites d'origine somalienne vivent à Amman, en Jordanie ; d'autres Muwalladeen sont partis vers l'Arabie saoudite, les Émirats arabes unis et d'autres pays du Golfe."
+    },
+    "demography": {
+      "totalPopulation": null,
+      "referenceYear": 2025,
+      "source": "Aucune source lue ne donne le nombre des Muwalladeen. L'ancien chiffre d'environ 1,5 million comptait les Muhamasheen, aussi appelés Akhdam, une autre communauté du Yémen.",
+      "distributionByCountry": [
+        {
+          "country": "YEM",
+          "population": null,
+          "note": "Surtout à Aden, dans le Hadramaout et à Sanaa, où le Sana'a Center a mené ses entretiens en 2022."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Sana'a Center for Strategic Studies — Muwalladeen in Yemen: Racialization, Stigmatization (2022)",
+        "url": "https://sanaacenter.org/publications/main-publications/18105",
+        "tier": "needs_review"
+      },
+      {
+        "title": "Al Jazeera — Yemen's Muwaladeen: The struggle for equal citizenship (2014)",
+        "url": "https://www.aljazeera.com/opinions/2014/4/5/yemens-muwaladeen-the-struggle-for-equal-citizenship",
+        "tier": "referenced",
+        "source_kind": "press"
+      },
+      {
+        "title": "Scholarly Publishing Collective — We Are All Suffering Equally: The Impact of the War on Muwalladin (2022)",
+        "url": "https://scholarlypublishingcollective.org/msup/neas/article/22/1/165/381346/We-Are-All-Suffering-Equally-The-Impact-of-the-War",
+        "tier": "referenced",
+        "source_kind": "academic"
+      },
+      {
+        "title": "Pink Jinn — African Arabs: Migration and cultural exchange on the Swahili coast (2020)",
+        "url": "https://www.pinkjinn.com/2020/09/09/african-arabs-migration-and-cultural-exchange-on-the-swahili-coast/",
+        "tier": "needs_review"
+      },
+      {
+        "title": "CIA Reading Room — Southern Yemen (Aden): The Society",
+        "url": "https://www.cia.gov/readingroom/docs/CIA-RDP01-00707R000200100018-6.pdf",
+        "tier": "official",
+        "source_kind": "government"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Muwalladeen désigne au Yémen des personnes dont la famille a des liens anciens hors du pays, souvent avec l'Afrique de l'Est ; il est souvent employé pour les rabaisser. La fiche cite aussi les noms Akhdam et Muhamasheen, qui désignent au Yémen une autre communauté ; leur histoire n'est pas racontée ici.",
+    "names": [
+      {
+        "nameText": "Muwalladeen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "Un nom arabe pour les Yéménites d'ascendance mêlée, souvent employé pour les rabaisser.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "2022"
+            },
+            "statement": "Le nom Muwalladeen désigne les Yéménites dont la famille a des liens anciens hors du Yémen, parfois d'origine mêlée, avec un père ou un grand-père yéménite et une mère ou une grand-mère étrangère. Le nom est souvent employé de façon méprisante, mais les plus jeunes l'acceptent plus facilement que leurs aînés, selon Marina de Regt et Aisha Aljaedy.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Muwalladeen in Yemen: Racialization, Stigmatization and Discrimination in Times of War",
+                "author": "Marina de Regt et Aisha Aljaedy",
+                "year": 2022,
+                "url": "https://sanaacenter.org/publications/main-publications/18105",
+                "tier": "referenced",
+                "source_kind": "ngo",
+                "notes": "Sana'a Center for Strategic Studies, 18 juillet 2022, lu en ligne. Passages : « The term is often used in a derogatory way, and Muwalladeen have been the target of discriminatory practices for decades » ; les plus jeunes « embrace their Muwallad status more easily than older people »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "2014"
+            },
+            "statement": "Le nom Muwalladeen veut dire, selon un dictionnaire arabe, « un Arabe qui n'est pas purement arabe ». Il sert surtout pour les enfants d'un parent africain, selon Atiaf Alwazir. Le militant Hussein Musleh, qu'elle cite, y voit une manière de rappeler à la personne qu'elle n'est pas un Yéménite « pur ». On ne sait pas avec certitude depuis quand ce nom est employé ainsi.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Yemen's 'Muwaladeen': The struggle for equal citizenship",
+                "author": "Atiaf Alwazir",
+                "year": 2014,
+                "url": "https://www.aljazeera.com/opinions/2014/4/5/yemens-muwaladeen-the-struggle-for-equal-citizenship",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Al Jazeera English, tribune du 5 avril 2014, lue en ligne."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

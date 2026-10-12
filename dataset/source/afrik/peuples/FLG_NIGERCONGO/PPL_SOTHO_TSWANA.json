@@ -147,5 +147,458 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Sotho-Tswana désigne un grand ensemble de peuples d'Afrique australe aux langues et aux cultures proches, au Lesotho, au Botswana et en Afrique du Sud, qui se nomment eux-mêmes Sotho : presque tous acceptent ce nom, à côté du nom propre à chacun, comme Basotho, Pedi, Lobedu ou Batswana. D'autres noms existent : Bechuana au XIXe siècle, et Western Sotho pour les seuls Tswana. Les sources ne s'accordent pas sur l'origine du nom Sotho ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Sotho",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "sot",
+        "namedBy": null,
+        "shortLine": "Le nom large que presque tous ces peuples acceptent, sauf quelques clans tswana de l'Ouest.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sotho désigne, surtout dans les textes savants, l'ensemble des peuples basotho, lobedu, pedi et tswana, qu'on appelle aussi Sotho-Tswana, selon le Dictionary of South African English. Son origine est discutée ; les explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Sotho »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/sotho/e06714",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Sotho, pris dans ce sens large, est accepté par presque tous ces peuples, sauf quelques clans tswana de l'Ouest, écrivent Lye et Murray en 1980, selon le Dictionary of South African English.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Sotho »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/sotho/e06714",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1980",
+                "notes": "Entrée lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1827,
+              "to": 1827,
+              "label": "1827"
+            },
+            "era": "polity",
+            "statement": "Le nom Sotho a une forme proche, Ceuta, chez Thomas Philipps, qui parle de « la tribu Ceuta, une nation très redoutable mais très lointaine », selon le Dictionary of South African English. Les sources ne disent pas s'il s'agit exactement des mêmes peuples. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "formAsWritten": "Ceuta",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Sotho »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/sotho/e06714",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1827",
+                "notes": "Entrée lue le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Sotho viendrait de l'adjectif sootho, « brun », selon le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Sotho",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Sotho »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/sotho/e06714",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1978,
+              "to": 1978,
+              "label": "Proposée en 1978"
+            },
+            "era": "modern",
+            "statement": "Le nom Sotho viendrait de la rivière Usutu : les Nguni de la côte auraient appelé tous ces peuples Suthu, « les gens brun foncé », parce qu'ils les avaient d'abord rencontrés dans la vallée de cette rivière, au Swaziland, selon un guide illustré de l'Afrique australe publié par le Reader's Digest en 1978, que cite le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Sotho",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Sotho »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/sotho/e06714",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1978",
+                "notes": "Entrée lue le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1976,
+              "to": 1980,
+              "label": "Proposée en 1976, reprise en 1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Sotho voudrait simplement dire « les Noirs » dans la langue de ces peuples, selon West et Morris en 1976, puis Lye et Murray en 1980, que cite le Dictionary of South African English. West et Morris se demandent comment, pourquoi et par qui ce nom leur a été donné.",
+            "hypothesisGroup": "origine du nom Sotho",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Sotho »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/sotho/e06714",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citations de 1976 et de 1980",
+                "notes": "Entrée lue le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sotho-Tswana",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom savant, écrit depuis au moins 1930, pour l'ensemble des peuples sotho et tswana.",
+        "periodLabel": "Écrit depuis 1930 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sotho-Tswana désigne ensemble les Sotho du Sud, du Nord et de l'Ouest, et leurs langues. Il sert surtout dans les travaux savants, selon le Dictionary of South African English. Il réunit deux noms dont l'origine est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Sotho-Tswana »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/sothotswana/e06715",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1100,
+              "to": 1600,
+              "label": "De 1100 à 1600 environ"
+            },
+            "era": "polity",
+            "statement": "Le nom Sotho-Tswana sert aux archéologues pour des villages de l'âge du fer moyen, entre 1100 et 1600, qui appartenaient presque certainement à ces peuples, selon l'archéologue Mason, que citent Léonard D. Ngcongco et Jan Vansina.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 23 : L'Afrique méridionale : les peuples et les formations sociales",
+                "author": "Léonard D. Ngcongco, en collaboration avec Jan Vansina",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 630",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "era": "modern",
+            "statement": "Le nom Sotho-Tswana apparaît en 1930 dans la revue Bantu Studies, à propos de coutumes qui seraient « plus répandues encore chez les tribus sotho-tswana », selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il réunit existaient déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Sotho-Tswana »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/sothotswana/e06715",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1930",
+                "notes": "Entrée lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Sotho-Tswana sert à dire l'identité de ces peuples, soit chez ceux qui le revendiquent, soit chez ceux qui, de l'extérieur, l'imposent, écrivent Lye et Murray en 1980, selon le Dictionary of South African English.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Sotho-Tswana »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/sothotswana/e06715",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1980",
+                "notes": "Entrée lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Sotho-Tswana est, avec celui de Nguni, l'un des deux noms datant du XIXe siècle qu'on a adoptés partout pour désigner les deux grandes communautés culturelles de langue bantoue d'Afrique du Sud, selon Léonard D. Ngcongco et Jan Vansina.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 23 : L'Afrique méridionale : les peuples et les formations sociales",
+                "author": "Léonard D. Ngcongco, en collaboration avec Jan Vansina",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 627, note 5",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sotho-Chwana",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une ancienne graphie du même nom.",
+        "periodLabel": "Milieu du XXe siècle",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1941,
+              "to": 1941,
+              "label": "1941"
+            },
+            "era": "modern",
+            "statement": "Le nom Sotho-Chwana a une forme proche, seSuthu-Choana, employée en 1941 dans le journal Bantu World pour parler de l'orthographe de ces langues, selon le Dictionary of South African English. C'est la plus ancienne trace de cette graphie que le projet connaît.",
+            "birth": true,
+            "formAsWritten": "seSuthu-Choana",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Sotho-Tswana »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/sothotswana/e06715",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1941",
+                "notes": "Entrée lue le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1950,
+              "to": 1950,
+              "label": "1950"
+            },
+            "era": "modern",
+            "statement": "Le nom Sotho-Chwana est une autre graphie du même nom : en 1950, T. J. Kriel, auteur d'un dictionnaire sesotho-anglais, espère voir « tout l'ensemble des langues sotho-chwana » fondu en une seule langue sesotho pour l'Union sud-africaine, selon le Dictionary of South African English.",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Sotho-Tswana »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/sothotswana/e06715",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1950",
+                "notes": "Entrée lue le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bechuana",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme anglaise de Batswana ; au XIXe siècle, elle désignait souvent tous ces peuples.",
+        "periodLabel": "XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1800,
+              "to": 1900,
+              "label": "XIXe siècle"
+            },
+            "statement": "Le nom Bechuana, forme anglaise de Batswana, désignait au XIXe siècle n'importe lequel des peuples sotho-tswana de l'intérieur de l'Afrique australe, et souvent les Sotho en général. Il ne sert plus guère aujourd'hui que pour parler du passé, selon le Dictionary of South African English.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Bechuana »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Bechuana/e00664",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1823,
+              "to": 1827,
+              "label": "Assemblée de 1823, récit publié en 1827"
+            },
+            "era": "polity",
+            "statement": "Le nom Bechuana est écrit Bechuanas par le voyageur George Thompson, qui rapporte qu'un orateur barolong conseille aux Bechuanas d'attendre l'arrivée des Mantatees avant de les attaquer, selon le Dictionary of South African English. C'est la plus ancienne trace de cette forme que le projet connaît ; d'autres formes proches sont plus anciennes, comme Bōōtshooānăs en 1801.",
+            "birth": true,
+            "formAsWritten": "Bechuanas",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Bechuana »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Bechuana/e00664",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citations de 1801 et de 1827",
+                "notes": "Entrée lue le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "Proposée en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Bechuana viendrait du mot chuana, « pareil » ou « égal », précédé de ba, « ils » : il voudrait dire « les égaux », selon le missionnaire David Livingstone, que cite le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Bechuana",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Bechuana »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Bechuana/e00664",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1857",
+                "notes": "Entrée lue le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "Rapportée en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Bechuana viendrait d'un malentendu : un voyageur, demandant qui vivait plus loin, aurait reçu la réponse Bachuana, « ils sont pareils », c'est-à-dire « ils sont comme nous », selon une explication que David Livingstone attribue à d'autres et que cite le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Bechuana",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Bechuana »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Bechuana/e00664",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1857",
+                "notes": "Entrée lue le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Western Sotho",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un autre nom savant des Tswana, à côté des Sotho du Nord et des Sotho du Sud.",
+        "periodLabel": "Depuis le XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1974,
+              "to": 1974,
+              "label": "1974"
+            },
+            "era": "modern",
+            "statement": "Le nom Western Sotho, « Sotho de l'Ouest », désigne les Tswana dans une division savante de ces peuples en trois branches : en 1974, W. W. M. Eiselen écrit que les Sotho de l'Ouest sont en général appelés Tswana, selon le Dictionary of South African English.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Sotho »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/sotho/e06714",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1974",
+                "notes": "Entrée lue le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

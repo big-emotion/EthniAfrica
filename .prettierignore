@@ -32,3 +32,7 @@ social/design-system/handoff/*.json
 social/design-system/handoff/*.html
 
 .local/editorial-references/
+
+# Written byte-for-byte by social/video/shoreline.mjs; the acceptance run
+# regenerates it from the DEM and compares bytes, so Prettier must not touch it.
+social/video/data/megachad-325m.geojson
