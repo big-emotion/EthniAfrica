@@ -206,6 +206,7 @@ describe("what the other people keepers carry over", () => {
   // @req REQ-178
   it("leaves Hietshware to the Tshwa", () => {
     expect(exonymsOf("PPL_SHUA")).not.toContain("Hietshware");
+    expect(exonymsOf("PPL_SHUA")).not.toContain("Hietshwari");
     expect(exonymsOf("PPL_TSHUWA")).toContain("Hietshware");
   });
 
