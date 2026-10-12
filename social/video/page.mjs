@@ -6,6 +6,10 @@ export const PAGE_HTML = `<!doctype html>
 @font-face{font-family:Anton;src:url(/fonts/Anton-Regular.ttf)}
 @font-face{font-family:Fraunces;src:url(/fonts/Fraunces.ttf);font-weight:100 900}
 @font-face{font-family:"Nunito Sans";src:url(/fonts/NunitoSans.ttf);font-weight:200 1000}
+/* Nunito Sans draws ʾ and ʿ in the middle of half an em, which parts *ṣaḥrāʾ*
+   in two; Noto Sans sets them against their letter. Same descriptors as above,
+   so the browser composes one family. */
+@font-face{font-family:"Nunito Sans";src:url(/fonts/NotoSans-Variable.ttf);font-weight:200 1000;unicode-range:U+02BE-02BF}
 @font-face{font-family:"Noto Sans";src:url(/fonts/NotoSans-Variable.ttf);font-weight:100 900}
 @font-face{font-family:"Noto Sans Arabic";src:url(/fonts/NotoSansArabic-SemiBold.ttf);font-weight:600}
 html,body{margin:0;background:#070605}
@@ -299,6 +303,7 @@ window.setup = async (bounds, reliefSetup) => {
   if (reliefSetup) await setupRelief(bounds, reliefSetup);
   await document.fonts.load('38px Anton'); await document.fonts.load('600 28px Fraunces');
   await document.fonts.load('800 28px "Nunito Sans"'); await document.fonts.load('400 22px "Nunito Sans"'); await document.fonts.load('400 22px "Noto Sans"');
+  await document.fonts.load('700 36px "Nunito Sans"', "\\u02be\\u02bf");
   await document.fonts.load('600 36px "Noto Sans Arabic"', "\\u0635\\u062d\\u0631\\u0627\\u0621");
   await document.fonts.ready;
   return [...document.fonts].map((f) => ({ family: f.family, status: f.status }));
