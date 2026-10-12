@@ -713,7 +713,79 @@ export async function renderFrame(seq, frame, options) {
   return png;
 }
 
-export async function encodeVideo(seq, outDir, { assets }) {
+// The voice file is checked again at export: the words were timed on the
+// audio whose SHA-256 they record, and FFmpeg must read the same length.
+async function checkVoice(voice) {
+  const hash = sha256(await readFile(voice.audio));
+  if (hash !== voice.sha256)
+    throw new Error(
+      `The voice ${voice.audio} changed after it was timed: its SHA-256 differs from the words JSON`
+    );
+  const duration = Number(
+    execFileSync("ffprobe", [
+      "-v",
+      "error",
+      "-show_entries",
+      "format=duration",
+      "-of",
+      "csv=p=0",
+      voice.audio,
+    ]).toString()
+  );
+  if (!(Math.abs(duration - voice.duration) <= 1 / FPS))
+    throw new Error(
+      `The voice lasts ${duration} s; its words JSON says ${voice.duration} s`
+    );
+  return { sha256: hash, duration };
+}
+
+// The voice is muxed as AAC at 48 kHz, cut to the encoded frames and padded
+// with silence to their end, so the video always keeps the schedule's
+// length: the audio never shortens it.
+function audioArgs(voice, from, seconds) {
+  if (!voice) return { input: [], output: ["-an"] };
+  return {
+    input: [
+      "-ss",
+      String(from / FPS),
+      "-t",
+      String(seconds),
+      "-i",
+      voice.audio,
+    ],
+    output: [
+      "-map",
+      "0:v",
+      "-map",
+      "1:a",
+      "-c:a",
+      "aac",
+      "-b:a",
+      "192k",
+      "-ar",
+      "48000",
+      "-af",
+      `apad=whole_dur=${seconds}`,
+      "-flags:a",
+      "+bitexact",
+    ],
+  };
+}
+
+// `range` ({ from, to }, frames) encodes an excerpt, for a short proof.
+export async function encodeVideo(seq, outDir, { assets, range }) {
+  const count = frameCount(seq);
+  const { from, to } = range ?? { from: 0, to: count };
+  if (
+    !Number.isInteger(from) ||
+    !Number.isInteger(to) ||
+    from < 0 ||
+    to > count ||
+    from >= to
+  )
+    throw new Error(`An excerpt runs between frames 0 and ${count}`);
+  const audio = seq.voice ? await checkVoice(seq.voice) : null;
+  const sound = audioArgs(seq.voice, from, (to - from) / FPS);
   await mkdir(outDir, { recursive: true });
   const file = join(outDir, "video.mp4");
   const renderer = await openRenderer(seq, assets);
@@ -735,6 +807,7 @@ export async function encodeVideo(seq, outDir, { assets }) {
         "png",
         "-i",
         "-",
+        ...sound.input,
         "-c:v",
         "libx264",
         "-preset",
@@ -745,7 +818,7 @@ export async function encodeVideo(seq, outDir, { assets }) {
         "yuv420p",
         "-r",
         String(FPS),
-        "-an",
+        ...sound.output,
         "-map_metadata",
         "-1",
         "-fflags",
@@ -764,7 +837,7 @@ export async function encodeVideo(seq, outDir, { assets }) {
         code === 0 ? ok() : ko(new Error(`FFmpeg failed: ${stderr}`))
       )
     );
-    for (let f = 0; f < frameCount(seq); f++) {
+    for (let f = from; f < to; f++) {
       const png = await renderer.render(f);
       if (!ffmpeg.stdin.write(png))
         await new Promise((ok) => ffmpeg.stdin.once("drain", ok));
@@ -781,7 +854,9 @@ export async function encodeVideo(seq, outDir, { assets }) {
     width: WIDTH,
     height: HEIGHT,
     fps: FPS,
-    frames: frameCount(seq),
+    frames: to - from,
+    ...(range && { range: { from, to } }),
+    audio,
     demo: !!seq.demo,
     // Mechanical export only: editorial approvals live in the checkpoint.
     productionReady: false,
