@@ -61,6 +61,7 @@ export const CORPUS_TABLES = [
   "afrik_countries",
   "afrik_people_countries",
   "afrik_places",
+  "afrik_place_countries",
   "afrik_place_peoples",
   "afrik_words",
   "afrik_patronymes",
@@ -294,11 +295,23 @@ export function buildCorpusExpectations(
         id: place.id,
         place_type: place.placeType,
         name_main: place.nameMain,
-        country_id: place.countryId,
+        country_id: place.countryIds.length === 1 ? place.countryIds[0] : null,
         summary: place.summary,
         content: place.content,
         name_history: place.nameHistory,
       })),
+    },
+    {
+      table: "afrik_place_countries",
+      primaryKey: ["place_id", "country_id"],
+      columns: ["place_id", "country_id", "position"],
+      rows: corpus.places.flatMap((place) =>
+        place.countryIds.map((countryId, position) => ({
+          place_id: place.id,
+          country_id: countryId,
+          position,
+        }))
+      ),
     },
     {
       table: "afrik_place_peoples",

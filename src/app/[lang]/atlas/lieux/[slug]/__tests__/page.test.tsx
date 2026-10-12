@@ -59,6 +59,7 @@ const GAGNOA: PlaceRecord = {
   summary:
     "Gagnoa est une ville du centre-ouest de la Côte d'Ivoire, en pays bété.",
   country: { id: "CIV", name: "Côte d'Ivoire" },
+  countries: [{ id: "CIV", name: "Côte d'Ivoire" }],
   associatedPeoples: [
     {
       id: "PPL_BETE",
@@ -98,6 +99,22 @@ const GAGNOA: PlaceRecord = {
   } as unknown as PlaceRecord["nameHistory"],
 };
 
+// A region spans several countries and has no single one.
+const SAHARA: PlaceRecord = {
+  ...GAGNOA,
+  id: "LOC_SAHARA",
+  placeType: "region",
+  nameMain: "Sahara",
+  summary: "Le Sahara est un désert.",
+  country: null,
+  countries: [
+    { id: "DZA", name: "Algérie" },
+    { id: "MLI", name: "Mali" },
+    { id: "NER", name: "Niger" },
+  ],
+  associatedPeoples: [],
+};
+
 const params = (slug: string) => ({
   params: Promise.resolve({ lang: "fr", slug }),
 });
@@ -105,7 +122,7 @@ const params = (slug: string) => ({
 beforeEach(() => {
   vi.clearAllMocks();
   getPlaceByIdMock.mockImplementation(async (id: string) =>
-    id === "LOC_GAGNOA" ? GAGNOA : null
+    id === "LOC_GAGNOA" ? GAGNOA : id === "LOC_SAHARA" ? SAHARA : null
   );
 });
 
@@ -176,6 +193,24 @@ describe("the place page", () => {
     expect(
       screen.getByText("Les Bété sont la population autochtone du département.")
     ).toBeInTheDocument();
+  });
+
+  // @req REQ-193
+  it("says how many countries a region spans and leads to each of them", async () => {
+    render(await PlacePage(params("LOC_SAHARA")));
+
+    expect(screen.getByTestId("hero-subtitle")).toHaveTextContent(
+      "Région · 3 pays"
+    );
+    for (const [name, id] of [
+      ["Algérie", "DZA"],
+      ["Mali", "MLI"],
+      ["Niger", "NER"],
+    ])
+      expect(screen.getByRole("link", { name })).toHaveAttribute(
+        "href",
+        getCountryRoute("fr", id)
+      );
   });
 
   // @req REQ-196

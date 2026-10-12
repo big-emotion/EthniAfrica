@@ -50,7 +50,7 @@ export default async function PlacePage({
     <PageLayout
       language={language}
       title={place.nameMain}
-      subtitle={placeSubtitle(language, place.placeType, place.country.name)}
+      subtitle={placeSubtitle(language, place.placeType, place.countries)}
       trailLabel={place.nameMain}
     >
       <FicheJsonLd

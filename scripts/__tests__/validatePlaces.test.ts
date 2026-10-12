@@ -116,6 +116,29 @@ describe("place fiche validator (REQ-193)", () => {
   });
 
   // @req REQ-193
+  it("passes a region whose countries all have a fiche", () => {
+    writeFileSync(
+      join(tmpDir, "pays", "GHA.json"),
+      JSON.stringify({ id: "GHA" })
+    );
+    const region = validPlace({ placeType: "region" });
+    delete region.countryId;
+    writePlace("LOC_TEST.json", { ...region, countryIds: ["CIV", "GHA"] });
+    const result = checkPlaceFicheModel(tmpDir);
+    expect(result.errors).toEqual([]);
+  });
+
+  // @req REQ-193
+  it("fails when one country of a region has no fiche, naming it", () => {
+    const region = validPlace({ placeType: "region" });
+    delete region.countryId;
+    writePlace("LOC_TEST.json", { ...region, countryIds: ["CIV", "ESH"] });
+    const result = checkPlaceFicheModel(tmpDir);
+    expect(result.ok).toBe(false);
+    expect(result.errors.join("\n")).toMatch(/LOC_TEST\.json.*ESH/);
+  });
+
+  // @req REQ-193
   it("fails when an associated people has no fiche, naming file and id", () => {
     writePlace(
       "LOC_TEST.json",

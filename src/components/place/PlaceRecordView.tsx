@@ -54,11 +54,23 @@ export function PlaceRecordView({ place, language }: PlaceRecordViewProps) {
 
       <FicheSection title={copy.sections.related}>
         <h3 className="afh-tile-term">{copy.countryLabel}</h3>
-        <p>
-          <Link href={getCountryRoute(language, place.country.id)}>
-            {place.country.name ?? place.country.id}
-          </Link>
-        </p>
+        {place.countries.length === 1 ? (
+          <p>
+            <Link href={getCountryRoute(language, place.countries[0].id)}>
+              {place.countries[0].name ?? place.countries[0].id}
+            </Link>
+          </p>
+        ) : (
+          <ul className="afh-prose-list">
+            {place.countries.map((country) => (
+              <li key={country.id}>
+                <Link href={getCountryRoute(language, country.id)}>
+                  {country.name ?? country.id}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
         {place.associatedPeoples.length > 0 ? (
           <>
             <h3 className="afh-tile-term">{copy.peoplesLabel}</h3>

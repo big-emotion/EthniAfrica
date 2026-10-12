@@ -721,7 +721,13 @@ function toRankedPlace(row: Record<string, unknown>): RankedPlace {
     id: row.id as string,
     nameMain: row.nameMain as string,
     placeType: row.placeType as string,
-    countryId: row.countryId as string,
+    countryId: (row.countryId as string) ?? null,
+    // Absent until migration 106 is applied: the town's one country then.
+    countryIds: Array.isArray(row.countryIds)
+      ? (row.countryIds as string[])
+      : row.countryId
+        ? [row.countryId as string]
+        : [],
     summary: (row.summary as string) ?? "",
     nameHistory: (row.nameHistory as RankedPlace["nameHistory"]) ?? null,
     relevance: typeof row.relevance === "number" ? row.relevance : 0,
