@@ -94,5 +94,71 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les sources consultées ne permettent pas de déterminer si Zinsou désigne historiquement un lignage, un clan ou une autre unité sociale."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Zinsou est d'abord un nom que reçoit à la naissance le premier de deux jumeaux, chez les Fon du Bénin. Il est porté aujourd'hui comme nom de famille au Bénin. On ne sait pas avec certitude ce que veut dire le mot lui-même : aucune source consultée ne l'explique.",
+    "names": [
+      {
+        "nameText": "Zinsou",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom donné chez les Fon au premier de deux jumeaux ; on ne sait pas ce que veut dire le mot.",
+        "periodLabel": "Forme proche écrite dès 1973 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Zinsou est un nom de naissance : chez les Fon, on le donne au premier des deux jumeaux, selon Z. L. Assogba, qui l'écrit zimsou. C'est d'abord un nom de personne, pas un nom de clan. Ce que veut dire le mot lui-même, aucune source consultée ne le dit.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Rites liés à la naissance des jumeaux chez les Fon (Dahomey)",
+                "author": "Z. L. Assogba",
+                "year": 1973,
+                "url": "https://www.persee.fr/doc/ephe_0000-0002_1973_num_85_82_20845",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 114",
+                "notes": "École pratique des hautes études, 5e section, Sciences religieuses, Annuaire, tome 82, fascicule II, « Vie de la Section : année 1973-1974 », p. 114. Résumé d'un exposé fait devant la section ; Persée donne pour auteur Zinsou Loth Assogba. Lu sur Persée le 12 octobre 2026. Le résumé dit que le premier des jumeaux se nomme zimsou, le deuxième agossou, et l'enfant né après les jumeaux zinhoué. Il n'explique pas le sens de ces noms et ne parle pas de nom de famille."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1973,
+              "to": 1973,
+              "label": "1973"
+            },
+            "era": "modern",
+            "statement": "Une forme proche du nom Zinsou, zimsou, apparaît dans le résumé d'un exposé de Z. L. Assogba sur les rites des jumeaux chez les Fon du Dahomey, l'actuel Bénin. C'est le nom du premier des jumeaux ; le deuxième se nomme agossou, et l'enfant qui naît après eux zinhoué. C'est la plus ancienne trace de cette forme proche que le projet connaît ; elle dit quand un auteur l'a notée, pas depuis quand le nom est donné.",
+            "formAsWritten": "zimsou",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Z. L. Assogba",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Rites liés à la naissance des jumeaux chez les Fon (Dahomey)",
+                "author": "Z. L. Assogba",
+                "year": 1973,
+                "url": "https://www.persee.fr/doc/ephe_0000-0002_1973_num_85_82_20845",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 114",
+                "notes": "École pratique des hautes études, 5e section, Sciences religieuses, Annuaire, tome 82, fascicule II, « Vie de la Section : année 1973-1974 », p. 114. Résumé d'un exposé fait devant la section ; Persée donne pour auteur Zinsou Loth Assogba. Lu sur Persée le 12 octobre 2026. Le résumé dit que le premier des jumeaux se nomme zimsou, le deuxième agossou, et l'enfant né après les jumeaux zinhoué. Il n'explique pas le sens de ces noms et ne parle pas de nom de famille."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

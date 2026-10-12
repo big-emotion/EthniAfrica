@@ -11,7 +11,10 @@
     {
       "spelling": "Tshibangu",
       "attestations": [
-        { "countryId": "COD", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "COD",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -75,5 +78,137 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Tshibangu est un nom porté chez les Luba du Kasaï, en république démocratique du Congo. Il est écrit dès 1914 comme nom d'un village du Kasaï. Une forme proche, Tschibangu, est écrite en 1928 dans un récit luba qui en donne le sens. On ne sait pas avec certitude d'où vient ce nom ; nous présentons l'explication de ce récit plus bas.",
+    "names": [
+      {
+        "nameText": "Tshibangu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom porté au Kasaï, écrit dès 1914 comme nom d'un village.",
+        "periodLabel": "Écrit dès 1914 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Tshibangu est porté comme nom de personne chez les Luba du Kasaï : un récit luba le donne à un ancien du village. On ne sait pas avec certitude d'où vient ce nom ; l'explication que donne ce récit est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Atlantis, vol. XII : Dichtkunst der Kassaiden",
+                "author": "Leo Frobenius",
+                "year": 1928,
+                "url": "https://archive.org/details/band-iii-das-fabelhafte",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 382",
+                "notes": "Iéna, Eugen Diederichs, 1928. Récits du Kasaï recueillis pendant l'expédition de Frobenius de 1904 à 1906 et publiés dans ce dernier volume. Lu le 12 octobre 2026 sur archive.org, dans un dépôt qui réunit les douze volumes ; copie non officielle. Page 382, « Nkussulegende (Baluba ; Bena Mande) » : les anciens du village disent qu'« un ancien (Tschibangu, c'est-à-dire celui qui abattait les arbres avec le couteau) » mourut d'avoir mangé un perroquet. Traduction de l'allemand faite par nos soins."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1914,
+              "label": "1910-1914"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tshibangu apparaît par écrit comme nom d'un lieu du Congo belge, où un botaniste récolte un arbre en janvier 1910, selon le Bulletin du Jardin botanique de l'État. En 1914, une mission qui mesure le champ magnétique terrestre y décrit un village du Kasaï. C'est la plus ancienne trace de cette forme que le projet connaît ; ces sources ne disent pas si le village porte le nom d'une personne.",
+            "formAsWritten": "Tshibangu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Bulletin du Jardin botanique de l'État, Bruxelles, vol. 4",
+                "author": "Jardin botanique de l'État",
+                "year": 1914,
+                "url": "https://archive.org/details/bulletindujardin4191jard",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 206",
+                "notes": "Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 206, liste des lieux de récolte d'une espèce d'arbre au Congo belge : « Tshibangu, janvier 1910 (A. Sapin) ». Le bulletin cite ce nom comme celui d'un lieu ; il ne dit rien du nom lui-même."
+              },
+              {
+                "title": "Land Magnetic Observations, 1914-1920",
+                "author": "L. A. Bauer, J. A. Fleming, H. W. Fisk et W. J. Peters",
+                "year": 1921,
+                "url": "https://archive.org/details/researches04carnuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 234",
+                "notes": "Researches of the Department of Terrestrial Magnetism, vol. IV, Washington, Carnegie Institution of Washington, publication n° 175, 1921. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 234, section Congo belge : la station « Tshibangu, Kasai, 1914 » est placée à l'ouest du village, sur un chemin qui en part."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tschibangu",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une forme proche de Tshibangu, écrite en allemand en 1928.",
+        "periodLabel": "Écrit en 1928",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Proposé en 1928"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tshibangu voudrait dire « celui qui abattait les arbres avec le couteau » : c'est le sens que donne au nom d'un ancien un récit luba des Bena Mande, selon Leo Frobenius, qui l'a recueilli au Kasaï.",
+            "sources": [
+              {
+                "title": "Atlantis, vol. XII : Dichtkunst der Kassaiden",
+                "author": "Leo Frobenius",
+                "year": 1928,
+                "url": "https://archive.org/details/band-iii-das-fabelhafte",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 382",
+                "notes": "Iéna, Eugen Diederichs, 1928. Récits du Kasaï recueillis pendant l'expédition de Frobenius de 1904 à 1906 et publiés dans ce dernier volume. Lu le 12 octobre 2026 sur archive.org, dans un dépôt qui réunit les douze volumes ; copie non officielle. Page 382, « Nkussulegende (Baluba ; Bena Mande) » : les anciens du village disent qu'« un ancien (Tschibangu, c'est-à-dire celui qui abattait les arbres avec le couteau) » mourut d'avoir mangé un perroquet. Traduction de l'allemand faite par nos soins."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "1928"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tschibangu, une forme proche de Tshibangu, apparaît dans un récit luba que Leo Frobenius publie en allemand en 1928 : c'est le nom d'un ancien du village. C'est la plus ancienne trace de cette forme que le projet connaît ; Frobenius avait recueilli ce récit au Kasaï entre 1904 et 1906.",
+            "formAsWritten": "Tschibangu",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Leo Frobenius",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Atlantis, vol. XII : Dichtkunst der Kassaiden",
+                "author": "Leo Frobenius",
+                "year": 1928,
+                "url": "https://archive.org/details/band-iii-das-fabelhafte",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 382",
+                "notes": "Iéna, Eugen Diederichs, 1928. Récits du Kasaï recueillis pendant l'expédition de Frobenius de 1904 à 1906 et publiés dans ce dernier volume. Lu le 12 octobre 2026 sur archive.org, dans un dépôt qui réunit les douze volumes ; copie non officielle. Page 382, « Nkussulegende (Baluba ; Bena Mande) » : les anciens du village disent qu'« un ancien (Tschibangu, c'est-à-dire celui qui abattait les arbres avec le couteau) » mourut d'avoir mangé un perroquet. Traduction de l'allemand faite par nos soins."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -76,5 +76,96 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Tadros à un peuple en Égypte. Nous n'avons pas encore consulté de source consacrée à ce nom. Un lien avec les Coptes d'Égypte reste à étudier."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Tadros est un nom personnel arabe, porté surtout en Égypte par des chrétiens, que l'on écrit aussi Tawadros. Une forme proche, Tadrous, apparaît par écrit en 1823. Nous présentons plus bas l'explication de son origine que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Tadros",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel arabe, surtout égyptien, porté par des chrétiens.",
+        "periodLabel": "Écrit Tadrous dès 1823 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Tadros viendrait du nom grec Theodoros, que le français écrit Théodore, selon le Dictionary of American Family Names. La notice en fait un nom personnel arabe, surtout égyptien, que l'on trouve chez les chrétiens.",
+            "hypothesisGroup": "origine du nom Tadros",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Tadros",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/tadros?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 ; le site affiche aussi une traduction française. La notice dit : arabe, principalement d'Égypte : du nom personnel arabe Tadros, venu du grec Theodōros (voir Theodore), que l'on trouve chez les chrétiens. Comparer Tawadros."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1823,
+              "to": 1823,
+              "label": "1823"
+            },
+            "era": "polity",
+            "statement": "Le nom Tadros apparaît par écrit sous une forme proche, Tadrous, chez Félix Mengin, dans une liste des églises coptes d'Égypte : à el-Maâbdeh et à el-Hammâm, des églises sont dédiées à « l'émyr Tadrous ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "Tadrous",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire de l'Égypte sous le gouvernement de Mohammed-Aly, tome 2",
+                "author": "Félix Mengin",
+                "year": 1823,
+                "url": "https://archive.org/details/bnf-bpt6k10411339",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 288",
+                "notes": "Paris, Arthus Bertrand, 1823. Lu le 12 octobre 2026 sur la copie de l'exemplaire numérisé par la Bibliothèque nationale de France, sur archive.org. Page 288, liste des églises de l'arrondissement de Manfalout : à el-Maâbdeh, une église « à l'émyr Tadrous », et à el-Hammâm, « une église à l'émyr Tadrous ». L'auteur ne dit pas ce que veut dire le nom."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tawadros",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Tawadros est une variante de Tadros, selon le Dictionary of American Family Names, qui le traduit par « Théodore » et note que ceux qui le portent sont des chrétiens coptes.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Tawadros",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/tawadros?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 ; le site affiche aussi une traduction française. La notice dit : arabe, d'Égypte : du nom personnel arabe Tawadros, « Théodore », variante de Tadros. Les porteurs de ce nom de famille sont des chrétiens coptes."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
