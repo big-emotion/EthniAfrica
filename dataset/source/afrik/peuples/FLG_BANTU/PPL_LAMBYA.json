@@ -19,7 +19,7 @@
     "ethnicities": ["Lambya"],
     "origins": {
       "ancientOrigins": "Comme les autres peuples bantous, les Lambya sont originaires du bassin du Congo. Ils font partie du groupe Ngulube, qui comprend les Safwa, Bena, Kinga, Nyakyusa et Ndali du sud de la Tanzanie, ainsi que les Sukwa et Ngonde du Malawi. Le territoire ancestral Ulambya couvre environ 950 km2 dans le nord du Malawi.",
-      "formationPeriod": "Fondation du Royaume Lambya vers 1600. L'etablissement et l'expansion du royaume sont documentes entre environ 1600 et 1750 (Cambridge African Studies Review, 1993).",
+      "formationPeriod": "Fondation du Royaume Lambya vers 1600. L'etablissement et l'expansion du royaume sont documentes entre environ 1600 et 1750 (African Studies Review, 1978).",
       "migrationRoutes": [
         "Depuis le bassin du Congo vers les hauts plateaux du nord du Malawi et du sud-ouest de la Tanzanie"
       ],
@@ -78,7 +78,7 @@
     },
     "sources": [
       {
-        "title": "The Establishment and Expansion of the Lambya Kingdom c1600-1750 – African Studies Review, Cambridge University Press, 1993",
+        "title": "The Establishment and Expansion of the Lambya Kingdom c1600-1750 – African Studies Review, Cambridge University Press, 1978",
         "url": "https://www.cambridge.org/core/journals/african-studies-review/article/establishment-and-expansion-of-the-lambya-kingdom-c16001750/2A73651C94DF84588BD88A712D777AAF",
         "tier": "referenced",
         "source_kind": "academic"
@@ -106,6 +106,133 @@
         "url": "https://www.101lasttribes.com/tribes/lambya.html",
         "tier": "unverified",
         "source_kind": "community"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Lambya désigne un peuple de la région frontalière du Malawi, de la Tanzanie et de la Zambie, ainsi que son royaume et sa langue. On ne sait pas comment ce peuple se nomme lui-même. On ne sait pas non plus avec certitude d'où vient le nom Lambya ; nous présentons plus bas ses traces.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Lambya",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "lai",
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple du nord du Malawi, de Tanzanie et de Zambie, de son royaume et de sa langue.",
+        "periodLabel": "Écrit depuis 1897 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Lambya est le nom de référence de la langue de ce peuple dans la norme internationale ISO 639-3, sous le code lai.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, Lambya [lai]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/lai",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1978,
+              "to": 1978,
+              "label": "1978"
+            },
+            "era": "modern",
+            "statement": "Le nom Lambya désigne le peuple et le royaume d'un petit pays du district de Chitipa, au nord du Malawi, que l'on appelle Ulambya, selon l'historien Owen Kalinga. Il range ce peuple dans le groupe ngulube, qui s'étend au Malawi, en Tanzanie et en Zambie.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Establishment and Expansion of the Lambya Kingdom c1600-1750",
+                "author": "Owen J. M. Kalinga",
+                "year": 1978,
+                "url": "https://www.cambridge.org/core/journals/african-studies-review/article/establishment-and-expansion-of-the-lambya-kingdom-c16001750/2A73651C94DF84588BD88A712D777AAF",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 55 (extrait de la première page)",
+                "notes": "African Studies Review, vol. 21, n° 2, septembre 1978, p. 55-66. Nous n'avons lu que le titre et l'extrait public de la première page, pas l'article entier. Lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Alambia figure dans le Handbook of Nyasaland de 1922, qui range les Alambia parmi les divisions des Wankonde, avec les Wankana, les Wasukwa, les Awandia et les Awanyamwanga, et les juge probablement parmi les plus anciens habitants du Nyasaland encore présents.",
+            "aspect": "usage",
+            "formAsWritten": "Alambia",
+            "sources": [
+              {
+                "title": "A handbook of Nyasaland",
+                "author": "Stephen Samuel Murray (dir.)",
+                "year": 1922,
+                "url": "https://archive.org/details/handbookofnyasal00mala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 39",
+                "notes": "Londres, pour le gouvernement du Nyasaland, par les Crown Agents for the Colonies, 1922. Lu sur la numérisation d'Internet Archive le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1897,
+              "label": "1897"
+            },
+            "statement": "Le nom Lambya apparaît sous une forme proche, Awa-rambia, dans le livre de l'administrateur britannique Harry Johnston, qui range les Awa-rambia parmi les peuples de la famille nkonde, au nord du lac Nyassa. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Awa-rambia",
+            "birth": true,
+            "sources": [
+              {
+                "title": "British Central Africa",
+                "author": "Harry H. Johnston",
+                "year": 1897,
+                "url": "https://archive.org/details/britishafrica00johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 390",
+                "notes": "New York, Arnold, 1897. Lu sur la numérisation d'Internet Archive le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1600,
+              "to": 1750,
+              "label": "Vers 1600-1750"
+            },
+            "era": "polity",
+            "statement": "On parle alors d'un royaume que l'historien Owen Kalinga appelle lambya, qui s'établit puis s'étend entre 1600 et 1750 environ, selon le titre et l'extrait de son article de 1978. Les sources que nous avons lues ne disent pas sous quel nom ce royaume était alors connu.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Establishment and Expansion of the Lambya Kingdom c1600-1750",
+                "author": "Owen J. M. Kalinga",
+                "year": 1978,
+                "url": "https://www.cambridge.org/core/journals/african-studies-review/article/establishment-and-expansion-of-the-lambya-kingdom-c16001750/2A73651C94DF84588BD88A712D777AAF",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 55 (extrait de la première page)",
+                "notes": "African Studies Review, vol. 21, n° 2, septembre 1978, p. 55-66. Nous n'avons lu que le titre et l'extrait public de la première page, pas l'article entier. Lu le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

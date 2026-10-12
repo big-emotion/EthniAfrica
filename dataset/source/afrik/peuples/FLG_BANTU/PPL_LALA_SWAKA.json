@@ -92,5 +92,45 @@
         "source_kind": "press"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Swaka désigne un peuple du centre de la Zambie, voisin des Lamba et des Lala. On ne sait pas comment ce peuple se nomme lui-même. On ne sait pas non plus avec certitude d'où vient le nom Swaka ; nous présentons plus bas sa trace la plus ancienne.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Swaka",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "leb",
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple du centre de la Zambie, voisin des Lamba et des Lala ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit depuis 1931",
+        "accounts": [
+          {
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "1931"
+            },
+            "era": "colonial",
+            "statement": "Le nom Swaka apparaît sous une forme proche, Awenamaswaka, dans le livre de l'anthropologue Clement Doke sur les Lamba, publié en 1931. Doke y décrit un sous-groupe placé sous deux chefs, Nkole et Chitina, qui est le chef suprême, et qui partage beaucoup avec les Lala et les Lamba. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Awenamaswaka",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lambas of Northern Rhodesia: a study of their customs and beliefs",
+                "author": "Clement M. Doke",
+                "year": 1931,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283446",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 26",
+                "notes": "Londres, Harrap, 1931. Lu sur la numérisation d'Internet Archive le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
