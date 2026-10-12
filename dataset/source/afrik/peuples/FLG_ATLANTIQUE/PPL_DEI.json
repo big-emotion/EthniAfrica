@@ -107,5 +107,415 @@
         "source_kind": "encyclopedia"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Dei désigne un petit peuple de la côte du Liberia, près de Monrovia, et sa langue, le dewoin. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. D'autres noms existent : Dewoi, Dewoin et Dey, ainsi que des noms que lui donnent ses voisins bassa, vai et gola. On ne sait pas avec certitude d'où vient le nom Dei ; les sources que nous avons lues ne le disent pas. Nous présentons plus bas ce qu'elles disent de chacun de ces noms.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Dei",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom le plus courant de ce peuple de la côte de Monrovia ; on ne sait pas d'où il vient.",
+        "usedIn": ["eng"],
+        "periodLabel": "Écrit Dé dès 1854 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom Dei désigne une langue du Liberia, le dewoin, parlée dans le comté de Montserrado, près de la côte et de Monrovia, selon Ethnologue (2005), cité par la Bibliothèque du Congrès. Glottolog la classe dans le groupe kru et donne Dei parmi ses noms, avec De, Dewoi, Dewoin et Dey.",
+            "sources": [
+              {
+                "title": "Dewoin (African people), notice d'autorité sh2006002317",
+                "author": "Library of Congress",
+                "year": 2006,
+                "url": "https://id.loc.gov/authorities/subjects/sh2006002317.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "notice d'autorité, note de citation Ethnologue 2005",
+                "notes": "Notice d'autorité de la Bibliothèque du Congrès (Michigan State University pour la création), créée le 22 juin 2006, lue le 12 octobre 2026 dans sa version JSON. Elle cite Ethnologue (2005) : « Dewoin; a language of Liberia; Montserrado County near the coast and Monrovia; alternate names: De, Dey, Dei, Dewoi ». Nous n'avons pas lu Ethnologue."
+              },
+              {
+                "title": "Glottolog 5.3 — Dewoin (dewo1238)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/dewo1238",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche de la langue, lue le 12 octobre 2026 dans sa version JSON : classée dans le groupe kru (Kru, Western Kru, Wee-Bassa-Klao, Bassaic), avec les autres noms De, Dei, Dewoi, Dewoin et Dey ; pays : Liberia."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1979,
+              "to": 1979,
+              "label": "1979"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom Dei est celui sous lequel Holsoe range ce peuple dans sa liste des noms des ethnies du Liberia, avec ses autres noms : Denwoin, Dewema, Dey, Dewoi et Do. Les Bassa, les Vai et les Gola lui en donnent d'autres, présentés plus bas.",
+            "sources": [
+              {
+                "title": "Dewoin (African people), notice d'autorité sh2006002317",
+                "author": "Library of Congress",
+                "year": 2006,
+                "url": "https://id.loc.gov/authorities/subjects/sh2006002317.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "notice d'autorité, note de citation Holsoe 1979, p. 13",
+                "notes": "Notice d'autorité de la Bibliothèque du Congrès (Michigan State University pour la création), créée le 22 juin 2006, lue le 12 octobre 2026 dans sa version JSON. Elle cite Holsoe, A standardization of Liberian ethnic nomenclature (1979), p. 13 : « Dei; also known as Denwoin, Dewema, Dey, Dewoi, Do; called Daba by Bassa, De by Vai, Dewe, Donoi and Dewoi by Gola ». Nous n'avons pas lu l'ouvrage de Holsoe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1955,
+              "to": 1955,
+              "label": "1955"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom Dei sert, sous la forme Deis, à désigner un peuple, dans un ouvrage du Bureau of Folkways du Liberia, paru en 1955. Le même ouvrage dit que beaucoup de ses membres ont été absorbés par les Gola, les Vai et les Mandingues, selon la Bibliothèque du Congrès.",
+            "sources": [
+              {
+                "title": "Dewoin (African people), notice d'autorité sh2006002317",
+                "author": "Library of Congress",
+                "year": 2006,
+                "url": "https://id.loc.gov/authorities/subjects/sh2006002317.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "notice d'autorité, notes de citation sur l'ouvrage de 1955, p. 35 et 57",
+                "notes": "Notice d'autorité de la Bibliothèque du Congrès (Michigan State University pour la création), créée le 22 juin 2006, lue le 12 octobre 2026 dans sa version JSON. Elle cite Liberia, Bureau of Folkways, The tribes of the Western Province and the Denwoin people (1955) : p. 35 « people known as Deis », p. 57 « many absorbed by Gola, Vai and Mandingo ». Nous n'avons pas lu cet ouvrage."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "modern",
+            "birth": true,
+            "formAsWritten": "Dé",
+            "statement": "Le nom Dei apparaît sous une forme proche, Dé, dans l'introduction de la Polyglotta Africana du missionnaire Sigismund Koelle, paru en 1854. Il appelle « Déwoi’ » la langue parlée à Monrovia, « communément appelée Dé », et dit que le fleuve Saint-Paul s'appelle Dé dans cette langue ; il ne dit pas si le nom du peuple vient de celui du fleuve. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle : Koelle le dit établi autour de Monrovia, dans cinq hameaux.",
+            "sources": [
+              {
+                "title": "Polyglotta Africana (édition de Londres, 1854, scan d'Internet Archive)",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://archive.org/details/polyglottaafrica00koel",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "Introductory Remarks, p. 4",
+                "notes": "Church Missionary House, Londres, lu le 12 octobre 2026 sur la numérisation d'Internet Archive. L'auteur, missionnaire, recueille ses listes de mots à Freetown, auprès de Thomas Samson (Gba), né à Gbegbewili, près de Monrovia. Remarques sur la liste III. A. 1 : « Dewoi is the original name of the country about Monrovia, on the River St. Paul, which river is called Dé in the Déwoi’ language »; la langue est « commonly called Dé ». Il ajoute que la tribu est réduite à cinq hameaux près de Monrovia et qu'elle cessera sans doute bientôt d'exister comme telle."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dewoi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la langue et du pays autour de Monrovia chez Koelle, en 1854 ; les Gola l'emploient aussi.",
+        "usedIn": ["eng"],
+        "periodLabel": "Écrit Déwoi dès 1854",
+        "accounts": [
+          {
+            "period": {
+              "from": 1979,
+              "to": 1979,
+              "label": "1979"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom Dewoi est l'un de ceux que les Gola donnent aux Dei, avec Dewe et Donoi, selon Holsoe, cité par la Bibliothèque du Congrès. On ne sait pas avec certitude ce que ces noms voulaient dire à l'origine, ni pourquoi les Gola les ont choisis.",
+            "sources": [
+              {
+                "title": "Dewoin (African people), notice d'autorité sh2006002317",
+                "author": "Library of Congress",
+                "year": 2006,
+                "url": "https://id.loc.gov/authorities/subjects/sh2006002317.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "notice d'autorité, note de citation Holsoe 1979, p. 13",
+                "notes": "Notice d'autorité de la Bibliothèque du Congrès (Michigan State University pour la création), créée le 22 juin 2006, lue le 12 octobre 2026 dans sa version JSON. Elle cite Holsoe, A standardization of Liberian ethnic nomenclature (1979), p. 13 : « Dei; also known as Denwoin, Dewema, Dey, Dewoi, Do; called Daba by Bassa, De by Vai, Dewe, Donoi and Dewoi by Gola ». Nous n'avons pas lu l'ouvrage de Holsoe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "modern",
+            "birth": true,
+            "formAsWritten": "Déwoi’",
+            "statement": "Le nom Dewoi apparaît par écrit, sous la forme Déwoi’, dans l'introduction de la Polyglotta Africana de Sigismund Koelle, paru en 1854. Le missionnaire dit que c'est le nom d'origine du pays autour de Monrovia, sur le fleuve Saint-Paul, et le nom de la langue de Gba, un homme né près de Monrovia. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays et son peuple existaient déjà avant elle.",
+            "sources": [
+              {
+                "title": "Polyglotta Africana (édition de Londres, 1854, scan d'Internet Archive)",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://archive.org/details/polyglottaafrica00koel",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "Introductory Remarks, p. 4",
+                "notes": "Church Missionary House, Londres, lu le 12 octobre 2026 sur la numérisation d'Internet Archive. L'auteur, missionnaire, recueille ses listes de mots à Freetown, auprès de Thomas Samson (Gba), né à Gbegbewili, près de Monrovia. Remarques sur la liste III. A. 1 : « Dewoi is the original name of the country about Monrovia, on the River St. Paul ». Koelle ne dit pas qui a donné ce nom ni pourquoi."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dewoin",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la langue dans les classements des linguistes et dans la norme ISO 639-3.",
+        "usedIn": ["eng"],
+        "periodLabel": "Écrit Denwoin dès 1955 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom Dewoin est le nom de référence de cette langue du Liberia dans la norme internationale ISO 639-3, sous le code dee. Glottolog le range aussi dans le groupe kru. On ne sait pas avec certitude quand il a été écrit ainsi pour la première fois, ni d'où il vient.",
+            "sources": [
+              {
+                "title": "ISO 639-3, Dewoin [dee]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/dee",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 12 octobre 2026."
+              },
+              {
+                "title": "Glottolog 5.3 — Dewoin (dewo1238)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/dewo1238",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche de la langue, lue le 12 octobre 2026 dans sa version JSON : classée dans le groupe kru (Kru, Western Kru, Wee-Bassa-Klao, Bassaic), avec les autres noms De, Dei, Dewoi, Dewoin et Dey ; pays : Liberia."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1955,
+              "to": 1955,
+              "label": "1955"
+            },
+            "era": "modern",
+            "birth": true,
+            "formAsWritten": "Denwoin",
+            "statement": "Le nom Dewoin apparaît sous une forme proche, Denwoin, dans le titre d'un ouvrage du Bureau of Folkways du Liberia, paru en 1955 : The tribes of the Western Province and the Denwoin people, selon la notice de la Bibliothèque du Congrès. Nous n'avons pas lu l'ouvrage. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "sources": [
+              {
+                "title": "Dewoin (African people), notice d'autorité sh2006002317",
+                "author": "Library of Congress",
+                "year": 2006,
+                "url": "https://id.loc.gov/authorities/subjects/sh2006002317.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "notice d'autorité, notice de l'ouvrage de 1955 (titre)",
+                "notes": "Notice d'autorité de la Bibliothèque du Congrès (Michigan State University pour la création), créée le 22 juin 2006, lue le 12 octobre 2026 dans sa version JSON. Elle cite Liberia, Bureau of Folkways, The tribes of the Western Province and the Denwoin people (1955) : p. 35 « people known as Deis », p. 57 « many absorbed by Gola, Vai and Mandingo ». Nous n'avons pas lu cet ouvrage."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dey",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre orthographe de Dei, courante en anglais.",
+        "usedIn": ["eng"],
+        "periodLabel": "En usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1979,
+              "to": 1979,
+              "label": "1979"
+            },
+            "era": "modern",
+            "birth": true,
+            "formAsWritten": "Dey",
+            "statement": "Le nom Dey figure parmi les autres noms du peuple Dei dans la liste de Holsoe, publiée en 1979, selon la notice de la Bibliothèque du Congrès. Nous n'avons pas lu l'ouvrage. C'est la plus ancienne trace de cette orthographe que le projet connaît. Le peuple existait déjà avant elle.",
+            "sources": [
+              {
+                "title": "Dewoin (African people), notice d'autorité sh2006002317",
+                "author": "Library of Congress",
+                "year": 2006,
+                "url": "https://id.loc.gov/authorities/subjects/sh2006002317.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "notice d'autorité, note de citation Holsoe 1979, p. 13",
+                "notes": "Notice d'autorité de la Bibliothèque du Congrès (Michigan State University pour la création), créée le 22 juin 2006, lue le 12 octobre 2026 dans sa version JSON. Elle cite Holsoe, A standardization of Liberian ethnic nomenclature (1979), p. 13 : « Dei; also known as Denwoin, Dewema, Dey, Dewoi, Do; called Daba by Bassa, De by Vai, Dewe, Donoi and Dewoi by Gola ». Nous n'avons pas lu l'ouvrage de Holsoe."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Daba",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Bassa",
+        "shortLine": "Le nom que les Bassa donnent aux Dei, selon Holsoe (1979).",
+        "periodLabel": "Rapporté en 1979",
+        "accounts": [
+          {
+            "period": {
+              "from": 1979,
+              "to": 1979,
+              "label": "1979"
+            },
+            "era": "modern",
+            "birth": true,
+            "formAsWritten": "Daba",
+            "statement": "Le nom Daba est celui que les Bassa donnent aux Dei, selon Holsoe (1979), cité par la Bibliothèque du Congrès. Nous n'avons pas lu l'ouvrage, et les sources que nous avons lues ne disent ni ce que veut dire ce nom ni depuis quand les Bassa l'emploient. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "sources": [
+              {
+                "title": "Dewoin (African people), notice d'autorité sh2006002317",
+                "author": "Library of Congress",
+                "year": 2006,
+                "url": "https://id.loc.gov/authorities/subjects/sh2006002317.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "notice d'autorité, note de citation Holsoe 1979, p. 13",
+                "notes": "Notice d'autorité de la Bibliothèque du Congrès (Michigan State University pour la création), créée le 22 juin 2006, lue le 12 octobre 2026 dans sa version JSON. Elle cite Holsoe, A standardization of Liberian ethnic nomenclature (1979), p. 13 : « Dei; also known as Denwoin, Dewema, Dey, Dewoi, Do; called Daba by Bassa, De by Vai, Dewe, Donoi and Dewoi by Gola ». Nous n'avons pas lu l'ouvrage de Holsoe."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "De",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Vai",
+        "shortLine": "Le nom que les Vai donnent aux Dei, selon Holsoe (1979).",
+        "periodLabel": "Rapporté en 1979",
+        "accounts": [
+          {
+            "period": {
+              "from": 1979,
+              "to": 1979,
+              "label": "1979"
+            },
+            "era": "modern",
+            "birth": true,
+            "formAsWritten": "De",
+            "statement": "Le nom De est celui que les Vai donnent aux Dei, selon Holsoe (1979), cité par la Bibliothèque du Congrès. Nous n'avons pas lu l'ouvrage, et les sources que nous avons lues ne disent ni ce que veut dire ce nom ni depuis quand les Vai l'emploient. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "sources": [
+              {
+                "title": "Dewoin (African people), notice d'autorité sh2006002317",
+                "author": "Library of Congress",
+                "year": 2006,
+                "url": "https://id.loc.gov/authorities/subjects/sh2006002317.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "notice d'autorité, note de citation Holsoe 1979, p. 13",
+                "notes": "Notice d'autorité de la Bibliothèque du Congrès (Michigan State University pour la création), créée le 22 juin 2006, lue le 12 octobre 2026 dans sa version JSON. Elle cite Holsoe, A standardization of Liberian ethnic nomenclature (1979), p. 13 : « Dei; also known as Denwoin, Dewema, Dey, Dewoi, Do; called Daba by Bassa, De by Vai, Dewe, Donoi and Dewoi by Gola ». Nous n'avons pas lu l'ouvrage de Holsoe."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dewe",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Gola",
+        "shortLine": "L'un des noms que les Gola donnent aux Dei, selon Holsoe (1979).",
+        "periodLabel": "Rapporté en 1979",
+        "accounts": [
+          {
+            "period": {
+              "from": 1979,
+              "to": 1979,
+              "label": "1979"
+            },
+            "era": "modern",
+            "birth": true,
+            "formAsWritten": "Dewe",
+            "statement": "Le nom Dewe est l'un de ceux que les Gola donnent aux Dei, selon Holsoe (1979), cité par la Bibliothèque du Congrès. Nous n'avons pas lu l'ouvrage, et les sources que nous avons lues ne disent ni ce que veut dire ce nom ni depuis quand les Gola l'emploient. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "sources": [
+              {
+                "title": "Dewoin (African people), notice d'autorité sh2006002317",
+                "author": "Library of Congress",
+                "year": 2006,
+                "url": "https://id.loc.gov/authorities/subjects/sh2006002317.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "notice d'autorité, note de citation Holsoe 1979, p. 13",
+                "notes": "Notice d'autorité de la Bibliothèque du Congrès (Michigan State University pour la création), créée le 22 juin 2006, lue le 12 octobre 2026 dans sa version JSON. Elle cite Holsoe, A standardization of Liberian ethnic nomenclature (1979), p. 13 : « Dei; also known as Denwoin, Dewema, Dey, Dewoi, Do; called Daba by Bassa, De by Vai, Dewe, Donoi and Dewoi by Gola ». Nous n'avons pas lu l'ouvrage de Holsoe."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Donoi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Gola",
+        "shortLine": "L'un des noms que les Gola donnent aux Dei, selon Holsoe (1979).",
+        "periodLabel": "Rapporté en 1979",
+        "accounts": [
+          {
+            "period": {
+              "from": 1979,
+              "to": 1979,
+              "label": "1979"
+            },
+            "era": "modern",
+            "birth": true,
+            "formAsWritten": "Donoi",
+            "statement": "Le nom Donoi est l'un de ceux que les Gola donnent aux Dei, selon Holsoe (1979), cité par la Bibliothèque du Congrès. Nous n'avons pas lu l'ouvrage, et les sources que nous avons lues ne disent ni ce que veut dire ce nom ni depuis quand les Gola l'emploient. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "sources": [
+              {
+                "title": "Dewoin (African people), notice d'autorité sh2006002317",
+                "author": "Library of Congress",
+                "year": 2006,
+                "url": "https://id.loc.gov/authorities/subjects/sh2006002317.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "notice d'autorité, note de citation Holsoe 1979, p. 13",
+                "notes": "Notice d'autorité de la Bibliothèque du Congrès (Michigan State University pour la création), créée le 22 juin 2006, lue le 12 octobre 2026 dans sa version JSON. Elle cite Holsoe, A standardization of Liberian ethnic nomenclature (1979), p. 13 : « Dei; also known as Denwoin, Dewema, Dey, Dewoi, Do; called Daba by Bassa, De by Vai, Dewe, Donoi and Dewoi by Gola ». Nous n'avons pas lu l'ouvrage de Holsoe."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
