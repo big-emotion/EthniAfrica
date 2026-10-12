@@ -82,5 +82,86 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Tjiriange », « Ovaherero », « Herero », « Namibia », « surname », « clan », « etymology » et « transmission », ainsi que la consultation directe de « Tjiriange Surname Origin, Meaning & Last Name History » n'ont établi aucune règle propre à Tjiriange permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Tjiriange est un nom de famille porté en Namibie. Il est écrit dès 1979 dans une liste du personnel de l'Institut des Nations unies pour la Namibie. On ne sait pas avec certitude d'où vient ce nom ni ce qu'il veut dire : le projet n'a pas trouvé de source qui l'explique.",
+    "names": [
+      {
+        "nameText": "Tjiriange",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille de Namibie, écrit dès 1979.",
+        "periodLabel": "Écrit dès 1979 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Tjiriange est un nom de famille, porté après le prénom. Les sources que le projet a lues ne disent ni d'où il vient ni ce qu'il veut dire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Congressional Record, vol. 125, 96e Congrès, 1re session",
+                "author": "Congrès des États-Unis",
+                "year": 1979,
+                "url": "https://archive.org/details/congressionalrec125gunit",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 28003",
+                "notes": "Journal des débats du Congrès, séance du Sénat du 12 octobre 1979. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 28003 : l'annexe II reproduit la liste du personnel de l'Institut pour la Namibie, que l'Assemblée générale des Nations unies a créé en 1974, arrêtée au 31 décembre 1977 ; un maître de conférences y est inscrit sous le nom « Tjiriange, E. N »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1991,
+              "to": 1991,
+              "label": "Février 1991"
+            },
+            "era": "modern",
+            "statement": "Le nom Tjiriange est porté en Namibie : en février 1991, c'est celui du ministre de la Justice, selon The Statesman's Year-Book.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Statesman's Year-Book 1991-92",
+                "author": "Brian Hunter",
+                "year": 1991,
+                "url": "https://archive.org/details/statesmansyearbo0000unse_c3q2_1991-1992",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 893",
+                "notes": "Annuaire des États du monde, Londres, Macmillan. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 893, article Namibie : dans le gouvernement de février 1991, le ministre de la Justice est Ngarikutuke Tjiriange."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1977,
+              "to": 1979,
+              "label": "Fin 1977, publié en 1979"
+            },
+            "statement": "Le nom Tjiriange apparaît par écrit dans le journal des débats du Congrès des États-Unis, en 1979. Il y figure dans la liste du personnel de l'Institut des Nations unies pour la Namibie à la fin de 1977. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est porté.",
+            "formAsWritten": "Tjiriange",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Congressional Record, vol. 125, 96e Congrès, 1re session",
+                "author": "Congrès des États-Unis",
+                "year": 1979,
+                "url": "https://archive.org/details/congressionalrec125gunit",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 28003",
+                "notes": "Journal des débats du Congrès, séance du Sénat du 12 octobre 1979. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 28003 : l'annexe II reproduit la liste du personnel de l'Institut pour la Namibie, que l'Assemblée générale des Nations unies a créé en 1974, arrêtée au 31 décembre 1977 ; un maître de conférences y est inscrit sous le nom « Tjiriange, E. N »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
