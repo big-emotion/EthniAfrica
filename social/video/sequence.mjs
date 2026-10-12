@@ -5,8 +5,10 @@
 // chained video's « plein écran » layout, subtitle chunks, spoken-word
 // highlight and areas that enter with the words naming them. Every value is
 // a function of the frame number: no clock, no randomness.
+import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 
 export const FPS = 30;
 export const TOTAL_FRAMES = 12 * FPS;
@@ -1259,19 +1261,35 @@ export function highlightAt(words, t) {
 export const voicedChunkStart = (words) =>
   Math.round((words[0].start - 0.15) * 1e6) / 1e6;
 
-export function checkWordTimes(text, words) {
+// Spaces of any kind compare equal: a hand-made alignment may write a
+// plain space where the subtitle keeps a no-break one.
+const sameText = (a, b) =>
+  typeof a === "string" &&
+  a.normalize("NFC").replace(/\s+/gu, " ").trim() ===
+    b.normalize("NFC").replace(/\s+/gu, " ").trim();
+
+// One word time per unit, in order, inside the audio. A word that carries
+// its `spoken` form (« sahrâ » for *ṣaḥrāʾ* (صحراء)) is matched by its
+// place only, since the voice did not say the screen text.
+export function checkWordTimes(text, words, { duration = Infinity } = {}) {
   const units = chunkUnits(text);
   if (words.length !== units.length)
     fail(
       `« ${text} » has ${units.length} units; the voice gives ${words.length} word times`
     );
   words.forEach((w, i) => {
+    if (w.spoken === undefined && !sameText(w.text, units[i]))
+      fail(
+        `« ${text} »: word ${i + 1} of the voice is « ${w.text} », the chunk shows « ${units[i]} »`
+      );
     if (
       !Number.isFinite(w.start) ||
       !(w.end >= w.start) ||
       (i && w.start < words[i - 1].start)
     )
       fail(`Word times of « ${text} » must be in order`);
+    if (w.start < 0 || w.end > duration + 1e-6)
+      fail(`Word times of « ${text} » leave the audio, 0 to ${duration} s`);
   });
 }
 
@@ -1282,7 +1300,11 @@ function checkArabic(input) {
   const walk = (value, path) => {
     if (typeof value === "string") {
       if (!HAS_ARABIC.test(value)) return;
-      if (!/^chapters\.\d+\.sentences\.\d+\.\d+(\.text)?$/.test(path))
+      if (
+        !/^(chapters\.\d+|intro|outro)\.sentences\.\d+\.\d+(\.text)?$/.test(
+          path
+        )
+      )
         fail(`Arabic script is allowed in a subtitle only, not in ${path}`);
       count += [...value.matchAll(ARABIC_RUN)].length;
     } else if (value && typeof value === "object")
@@ -1465,10 +1487,9 @@ function loadChapters(input, style, dir) {
     chapters.length > MAX_CHAPTERS
   )
     fail("A chained video has one to five chapters");
-  if (input.voice !== undefined)
-    fail(
-      "A voiced video needs the word times of step 10; the renderer draws silent videos only, without a highlight"
-    );
+  for (const part of ["intro", "outro"])
+    if (input[part] !== undefined && input.voice === undefined)
+      fail(`The ${part} is spoken: it needs a voice`);
   // Board 7: the marker sits in the title band only under a one-line title.
   if (
     chapters.length >= MARKER_FROM &&
@@ -1547,9 +1568,97 @@ function loadChapters(input, style, dir) {
     if (ending.pageOnline !== true)
       fail("Ending A needs the subject's page online; use ending B until then");
     nonEmpty(ending.sentence, "Ending A sentence");
-  } else if (ending.sentence !== undefined)
+    // « home » invites to the whole site (operator, 12 October 2026), so the
+    // sentence promises no subject page; left out, the page is the subject's.
+    if (ending.page !== undefined && ending.page !== "home")
+      fail(
+        `Ending A's page is "home", or left out for the subject's page, not ${ending.page}`
+      );
+  } else if (ending.sentence !== undefined || ending.page !== undefined)
     fail("Ending B carries the signature and slogan only");
-  return { ...structuredClone(input), style, chapters: loaded };
+  const spoken = (part) =>
+    input[part] && {
+      sentences: loadSentences(input[part], {}, `The ${part}`),
+    };
+  const [intro, outro] = [spoken("intro"), spoken("outro")];
+  const voice =
+    input.voice !== undefined &&
+    loadVoice(
+      input.voice,
+      [intro, ...loaded, outro].flatMap((part) =>
+        (part?.sentences ?? []).flat().map((chunk) => chunk.text)
+      ),
+      dir
+    );
+  const seq = {
+    ...structuredClone(input),
+    style,
+    chapters: loaded,
+    ...(voice && { voice, intro, outro }),
+  };
+  // A voice too fast or a silence too short is refused here, before any
+  // frame is drawn.
+  if (voice) schedule(seq);
+  return seq;
+}
+
+// The voice: an audio file and the words JSON timed on it, per chunk in
+// video order (intro, chapters, outro) a list of words with start and end in
+// seconds (0.4.0 open question 8). The words JSON records the audio's
+// SHA-256, so a voice re-recorded without being re-timed is refused.
+function loadVoice(voice, texts, dir) {
+  if (typeof voice?.audio !== "string" || typeof voice?.words !== "string")
+    fail('A voice is { "audio": audio file, "words": words JSON }');
+  const at = (file) =>
+    dir instanceof URL ? new URL(file, dir) : resolve(dir ?? ".", file);
+  const read = (file, what) => {
+    try {
+      return readFileSync(at(file));
+    } catch (error) {
+      return fail(`Voice ${what}: cannot read ${file} (${error.message})`);
+    }
+  };
+  const audio = read(voice.audio, "audio");
+  const words = JSON.parse(read(voice.words, "words"));
+  const sha256 = createHash("sha256").update(audio).digest("hex");
+  if (words.audio?.sha256 !== sha256)
+    fail(
+      `Voice: ${voice.words} was timed on another audio file; its SHA-256 differs from ${voice.audio}`
+    );
+  const duration = words.audio.duration;
+  if (!(duration > 0)) fail(`Voice: ${voice.words} needs the audio duration`);
+  if (!Array.isArray(words.chunks) || words.chunks.length !== texts.length)
+    fail(
+      `Voice: the sequence speaks ${texts.length} chunks; ${voice.words} times ${words.chunks?.length ?? 0} chunks`
+    );
+  let previous = -Infinity;
+  const chunks = words.chunks.map((chunk, k) => {
+    if (!sameText(chunk.text, texts[k]))
+      fail(
+        `Voice chunk ${k + 1} is « ${chunk.text} »; the sequence shows « ${texts[k]} »`
+      );
+    checkWordTimes(texts[k], chunk.words ?? [], { duration });
+    if (chunk.words[0].start < previous)
+      fail(`Word times of « ${texts[k]} » must be in order`);
+    previous = chunk.words.at(-1).start;
+    return chunk.words.map(({ text, spoken, start, end }) => ({
+      text,
+      ...(spoken !== undefined && { spoken }),
+      start,
+      end,
+    }));
+  });
+  const path = (file) => {
+    const where = at(file);
+    return where instanceof URL ? fileURLToPath(where) : where;
+  };
+  return {
+    audio: path(voice.audio),
+    words: path(voice.words),
+    sha256,
+    duration,
+    chunks,
+  };
 }
 
 // The tape of a demo says what is illustrative: the text always, and the
@@ -1587,6 +1696,10 @@ function entryFrames(kind, hasName) {
 const schedules = new WeakMap();
 function schedule(seq) {
   if (schedules.has(seq)) return schedules.get(seq);
+  if (seq.voice) {
+    schedules.set(seq, voicedSchedule(seq));
+    return schedules.get(seq);
+  }
   let camera = holdCamera(seq, seq.camera.at(-1));
   const chapters = [];
   seq.chapters.forEach((chapter, i) => {
@@ -1651,26 +1764,25 @@ function schedule(seq) {
         at = gone;
       });
     });
-    // An overlay steps down when the next overlay enters after it.
-    const overlayStarts = [...targets]
-      .filter(([, kind]) => kind === "overlay")
-      .map(([ref]) => [ref, entries.get(ref) ?? start]);
-    const stepDowns = new Map(
-      overlayStarts.map(([ref, from]) => {
-        const later = overlayStarts
-          .map(([, other]) => other)
-          .filter((other) => other > from);
-        return [ref, later.length ? Math.min(...later) : null];
-      })
-    );
     // A chapter lasts as long as its reading, and at least 6 s.
     const exit = Math.max(chunks.at(-1).gone, start + STEP.minHold);
-    chapters.push({ start, travel, camera, chunks, entries, stepDowns, exit });
+    chapters.push({
+      start,
+      travel,
+      camera,
+      chunks,
+      entries,
+      stepDowns: stepDownsOf(targets, entries, start),
+      exit,
+    });
   });
   const end = chapters.at(-1).exit;
   const closingIn = end + STEP.exit + STEP.grade;
   const result = {
     chapters,
+    intro: [],
+    outro: [],
+    chunks: chapters.flatMap((c) => c.chunks),
     ending: { start: end, closingIn },
     total: closingIn + STEP.closingIn + STEP.closingHold,
   };
@@ -1678,10 +1790,188 @@ function schedule(seq) {
   return result;
 }
 
+// An overlay steps down when the next overlay enters after it.
+function stepDownsOf(targets, entries, start) {
+  const overlayStarts = [...targets]
+    .filter(([, kind]) => kind === "overlay")
+    .map(([ref]) => [ref, entries.get(ref) ?? start]);
+  return new Map(
+    overlayStarts.map(([ref, from]) => {
+      const later = overlayStarts
+        .map(([, other]) => other)
+        .filter((other) => other > from);
+      return [ref, later.length ? Math.min(...later) : null];
+    })
+  );
+}
+
+// The voiced schedule (0.4.0 timing.md §2): the voice sets every time, and
+// the 0.3.0 chapter change keeps its order in the silence between two
+// chapters' speech. The voice is never stretched or cut to fit: when a
+// silence is too short the sequence is refused with the length missing, and
+// the voice script inserts the pause.
+const VOICE = { lead: 0.15, hold: 0.2, tail: 0.5, maxCps: 17 };
+const toFrame = (seconds) => Math.round(seconds * FPS);
+const msOf = (frames) => Math.ceil((frames * 1000) / FPS);
+
+// A part's chunks in order, each on its words: it appears 150 ms before its
+// first word and is cut when the next appears, across a sentence pause too;
+// the part's first fades in, its last stays 200 ms after its last word, then
+// fades out. What a chunk names enters at its first word.
+function voicedChunks(sentences, words, targets, named, what) {
+  const chunks = sentences
+    .flatMap((sentence, s) => sentence.map((chunk) => ({ ...chunk, s })))
+    .map((chunk, k) => {
+      const first = toFrame(words[k][0].start);
+      const entries = chunk.enters.map((ref, j) => ({
+        ref,
+        at: first + j * STEP.entryGap,
+      }));
+      return {
+        text: chunk.text,
+        lines: chunkLines(chunk.text),
+        sentence: chunk.s,
+        appear: toFrame(words[k][0].start - VOICE.lead),
+        words: words[k],
+        entries,
+        entriesEnd: Math.max(
+          0,
+          ...entries.map(
+            (e) => e.at + entryFrames(targets.get(e.ref), named.has(e.ref))
+          )
+        ),
+      };
+    });
+  chunks.forEach((chunk, k) => {
+    const next = chunks[k + 1];
+    chunk.fullFrom = k ? chunk.appear : chunk.appear + STEP.fade;
+    chunk.fullTo = next
+      ? next.appear
+      : Math.max(chunk.fullFrom, toFrame(chunk.words.at(-1).end + VOICE.hold));
+    chunk.gone = next ? next.appear : chunk.fullTo + STEP.fade;
+    const shown = chunk.gone - chunk.appear;
+    const needed = Math.ceil(
+      (subtitleCharacters(chunk.text) / VOICE.maxCps) * FPS - 1e-9
+    );
+    if (shown < needed)
+      fail(
+        `${what}: « ${chunk.text} » would read faster than 17 characters a second; the voice needs ${msOf(needed - shown)} ms more before the next chunk`
+      );
+    if (chunk.entriesEnd > chunk.gone)
+      fail(
+        `${what}: « ${chunk.text} » leaves before what it names has entered; the voice needs ${msOf(chunk.entriesEnd - chunk.gone)} ms more before the next chunk`
+      );
+    delete chunk.entriesEnd;
+  });
+  return chunks;
+}
+
+function needSilence(what, chunk, earliest) {
+  if (chunk.appear < earliest)
+    fail(
+      `${what} starts too early: « ${chunk.text} » is spoken at ${chunk.words[0].start} s; the change before it needs ${msOf(earliest - chunk.appear)} ms more silence`
+    );
+}
+
+function voicedSchedule(seq) {
+  const words = [...seq.voice.chunks];
+  const spoken = (sentences, targets, named, what) =>
+    voicedChunks(
+      sentences,
+      words.splice(0, sentences.flat().length),
+      targets,
+      named,
+      what
+    );
+  const intro = spoken(
+    seq.intro?.sentences ?? [],
+    new Map(),
+    new Set(),
+    "The intro"
+  );
+  let camera = holdCamera(seq, seq.camera.at(-1));
+  // The opening lasts at least until the intro has been said.
+  let earliest = Math.max(STEP.firstChapter, intro.at(-1)?.gone ?? 0);
+  const chapters = [];
+  seq.chapters.forEach((chapter, i) => {
+    let travel = null;
+    if (i) {
+      const exitEnd = chapters[i - 1].exit + STEP.exit;
+      earliest = exitEnd + STEP.empty;
+      if (chapter.camera) {
+        const frames = Math.round(
+          (chapter.camera.travel ?? TRAVEL.usual / FPS) * FPS
+        );
+        const to = holdCamera(seq, chapter.camera);
+        travel = { start: exitEnd, frames, from: camera, to };
+        camera = to;
+        earliest = exitEnd + frames + STEP.grade;
+      }
+    }
+    const targets = entryTargets(chapter);
+    const named = new Set([
+      ...(chapter.features ?? []).filter(hasMapName).map((f) => f.id),
+      ...(chapter.outline ? [chapter.outline.name] : []),
+    ]);
+    const what = `Chapter ${i + 1}`;
+    const chunks = spoken(chapter.sentences, targets, named, what);
+    // Entries come 900 ms before the first chunk, as in the silent video.
+    needSilence(what, chunks[0], earliest + STEP.firstSubtitle);
+    const start = chunks[0].appear - STEP.firstSubtitle;
+    const entries = new Map(
+      chunks.flatMap((c) => c.entries.map((e) => [e.ref, e.at]))
+    );
+    chapters.push({
+      start,
+      travel,
+      camera,
+      chunks,
+      entries,
+      stepDowns: stepDownsOf(targets, entries, start),
+      exit: Math.max(chunks.at(-1).gone, start + STEP.minHold),
+    });
+  });
+  const end = chapters.at(-1).exit;
+  const closingIn = end + STEP.exit + STEP.grade;
+  // The outro is said over the closing block once it is in.
+  const outro = spoken(
+    seq.outro?.sentences ?? [],
+    new Map(),
+    new Set(),
+    "The outro"
+  );
+  if (outro.length)
+    needSilence("The outro", outro[0], closingIn + STEP.closingIn);
+  return {
+    chapters,
+    intro,
+    outro,
+    chunks: [...intro, ...chapters.flatMap((c) => c.chunks), ...outro],
+    ending: { start: end, closingIn },
+    // The closing block holds until the audio ends plus 0.5 s, and never
+    // less than the silent video's 2.5 s.
+    total: Math.max(
+      closingIn + STEP.closingIn + STEP.closingHold,
+      Math.ceil((seq.voice.duration + VOICE.tail) * FPS - 1e-9)
+    ),
+  };
+}
+
 export function chapterTimeline(seq) {
   const s = schedule(seq);
   const sec = (frame) => frame / FPS;
+  const chunk = (x) => ({
+    text: x.text,
+    lines: x.lines,
+    sentence: x.sentence,
+    appear: sec(x.appear),
+    fullFrom: sec(x.fullFrom),
+    fullTo: sec(x.fullTo),
+    gone: sec(x.gone),
+    entries: x.entries.map((e) => ({ ref: e.ref, at: sec(e.at) })),
+  });
   return {
+    intro: s.intro.map(chunk),
     chapters: s.chapters.map((c) => ({
       start: sec(c.start),
       exit: sec(c.exit),
@@ -1689,17 +1979,9 @@ export function chapterTimeline(seq) {
         start: sec(c.travel.start),
         duration: sec(c.travel.frames),
       },
-      chunks: c.chunks.map((x) => ({
-        text: x.text,
-        lines: x.lines,
-        sentence: x.sentence,
-        appear: sec(x.appear),
-        fullFrom: sec(x.fullFrom),
-        fullTo: sec(x.fullTo),
-        gone: sec(x.gone),
-        entries: x.entries.map((e) => ({ ref: e.ref, at: sec(e.at) })),
-      })),
+      chunks: c.chunks.map(chunk),
     })),
+    outro: s.outro.map(chunk),
     ending: { start: sec(s.ending.start), closingIn: sec(s.ending.closingIn) },
     total: sec(s.total),
   };
@@ -1954,11 +2236,9 @@ function chapterFrameState(seq, frame) {
         };
 
   // Within a sentence the next chunk replaces the last on the same frame;
-  // only a chapter's first and last chunks fade. Without a voice there is
-  // no highlight (operator, 12 October 2026).
-  const chunk = ended
-    ? null
-    : c.chunks.find((x) => frame >= x.appear && frame < x.gone);
+  // only a part's first and last chunks fade. The box follows the voice;
+  // without a voice there is no highlight (operator, 12 October 2026).
+  const chunk = s.chunks.find((x) => frame >= x.appear && frame < x.gone);
   const subtitle = chunk && {
     lines: chunk.lines,
     opacity:
@@ -1967,10 +2247,10 @@ function chapterFrameState(seq, frame) {
         : frame < chunk.fullTo
           ? 1
           : 1 - span(frame, chunk.fullTo, STEP.fade, leave),
-    highlight: null,
+    highlight: chunk.words ? highlightAt(chunk.words, frame / FPS) : null,
   };
 
-  const { variant, sentence } = seq.ending;
+  const { variant, sentence, page } = seq.ending;
   const closingOpacity = span(frame, s.ending.closingIn, STEP.closingIn, enter);
   return {
     camera: chapterCamera(seq, s, frame),
@@ -2001,6 +2281,7 @@ function chapterFrameState(seq, frame) {
               variant,
               opacity: closingOpacity,
               sentence,
+              ...(page && { page }),
               address: SITE_ADDRESS,
             }
           : { variant, opacity: closingOpacity },
