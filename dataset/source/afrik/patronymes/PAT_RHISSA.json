@@ -10,7 +10,12 @@
   "spellings": [
     {
       "spelling": "Rhissa",
-      "attestations": [{ "countryId": "NER", "sourceRefs": ["rhissa-ird"] }]
+      "attestations": [
+        {
+          "countryId": "NER",
+          "sourceRefs": ["rhissa-ird"]
+        }
+      ]
     }
   ],
   "transmissionMode": "non_hereditary",
@@ -87,5 +92,75 @@
       "fieldPath": "homonyms",
       "reason": "Dans un système de noms personnels, la répétition de Rhissa entre individus ne constitue pas à elle seule un homonyme patronymique ; les catalogues consultés n’ont pas établi une seconde origine lexicale distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Rhissa est un nom personnel porté par des Touaregs du Niger. On ne sait pas avec certitude d'où il vient : les sources que nous avons consultées n'en donnent pas l'origine.",
+    "names": [
+      {
+        "nameText": "Rhissa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel touareg du Niger ; son origine n'est pas connue.",
+        "periodLabel": "Écrit dès 2012 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Rhissa est un nom personnel touareg. Chez les Touaregs, le nom donné au septième jour après la naissance est un nom touareg ou un nom arabo-musulman, selon Mohamed Aghali-Zakara. On ne sait pas avec certitude auquel des deux appartient Rhissa, ni d'où il vient : les sources consultées ne le disent pas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Anthroponymie touarègue : dénominations multiples des individualités",
+                "author": "Mohamed Aghali-Zakara",
+                "year": 2003,
+                "url": "https://www.persee.fr/doc/onoma_0755-7752_2003_num_41_1_1452",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 221",
+                "notes": "Nouvelle revue d'onomastique, n° 41-42, 2003, p. 221-229, DOI 10.3406/onoma.2003.1452. Lu le 12 octobre 2026 sur Persée, où la première page se lit en ligne. Page 221 : le nom donné au septième jour de la naissance de l'enfant touareg est soit un nom touareg, soit un nom arabo-musulman ; un surnom s'y ajoute souvent et peut le remplacer."
+              },
+              {
+                "title": "Identité, imaginaire et tourisme en pays touareg au Niger",
+                "author": "Emmanuel Grégoire et Marko Scholze",
+                "year": 2012,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers18-04/010072521.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6-7",
+                "notes": "Via, n° 2, 2012. Lu en texte intégral le 12 octobre 2026 dans le dépôt de l'IRD. Pages 6 et 7 : Rhissa ag Boula, ancien comptable de Mano Dayak, à qui revient le rôle de chef militaire de la rébellion touarègue, puis ministre du Tourisme dans les années 2000."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Rhissa apparaît par écrit dans une étude d'Emmanuel Grégoire et Marko Scholze sur le tourisme en pays touareg, où figure Rhissa ag Boula, un chef de la rébellion touarègue des années 1990 au Niger. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand des auteurs l'ont noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Rhissa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Identité, imaginaire et tourisme en pays touareg au Niger",
+                "author": "Emmanuel Grégoire et Marko Scholze",
+                "year": 2012,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers18-04/010072521.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6-7",
+                "notes": "Via, n° 2, 2012. Lu en texte intégral le 12 octobre 2026 dans le dépôt de l'IRD. Pages 6 et 7 : Rhissa ag Boula, ancien comptable de Mano Dayak, à qui revient le rôle de chef militaire de la rébellion touarègue, puis ministre du Tourisme dans les années 2000."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -11,7 +11,10 @@
     {
       "spelling": "Seyni",
       "attestations": [
-        { "countryId": "NER", "sourceRefs": ["apollis-2023-seyni-kountche"] }
+        {
+          "countryId": "NER",
+          "sourceRefs": ["apollis-2023-seyni-kountche"]
+        }
       ]
     }
   ],
@@ -81,5 +84,97 @@
       "fieldPath": "homonyms",
       "reason": "La graphie exacte a été recherchée dans les catalogues d'autorité, la bibliographie songhay-zarma et les sources institutionnelles consultées ; aucune origine distincte susceptible de constituer un homonyme n'a été établie."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Seyni est un nom personnel songhay-zarma, au Niger. Une seule explication de son origine est connue ; nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Seyni",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel songhay-zarma du Niger, diminutif d'Useyni selon un recueil de 1972.",
+        "periodLabel": "Écrit dès 1972 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Seyni est un nom personnel songhay-zarma. Chez les Songhay-Zarma, le nom donné au baptême, ou « grand nom », cède souvent la place dans l'usage à un nom correspondant, comme Seyni pour Useyni. Une seule explication de son origine est connue ; nous la présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les Zamu ou poèmes sur les noms",
+                "author": "Jeanne Bisilliat et Diouldé Laya",
+                "year": 1972,
+                "url": "https://dicames.online/jspui/handle/20.500.12177/2329",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 41-42",
+                "notes": "Niamey, Centre nigérien de recherche en sciences humaines, 1972 ; avant-propos daté de septembre 1968. Poèmes sur les noms que les femmes songhay-zarma récitent aux enfants, recueillis au village de Sarando à partir de 1966, traduits et édités. Lu le 12 octobre 2026 dans le dépôt DICAMES du CAMES. Pages 41-42 : les noms tirés du Coran sont donnés le jour du baptême, et l'usage remplace ce « grand nom » par un nom correspondant, comme « Seyni pour Useyni ». Page 89 : « Hasan et Useyni : noms donnés par paire obligée aux jumeaux ». Pages 152-153 : le zamu d'Useyni, où le nom alterne avec Seyni."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1972,
+              "to": 1972,
+              "label": "Proposée en 1972"
+            },
+            "era": "modern",
+            "statement": "Le nom Seyni serait le diminutif d'Useyni, un nom musulman donné le jour du baptême, selon Jeanne Bisilliat et Diouldé Laya. Useyni se donne avec Hasan, en paire, à des jumeaux ; en arabe, Hassan et Houssein sont les deux fils d'Ali, selon le dictionnaire de Kazimirski. Bisilliat et Laya ne disent pas en toutes lettres qu'Useyni est Houssein.",
+            "hypothesisGroup": "origine du nom Seyni",
+            "sources": [
+              {
+                "title": "Les Zamu ou poèmes sur les noms",
+                "author": "Jeanne Bisilliat et Diouldé Laya",
+                "year": 1972,
+                "url": "https://dicames.online/jspui/handle/20.500.12177/2329",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 41-42, 89",
+                "notes": "Niamey, Centre nigérien de recherche en sciences humaines, 1972 ; avant-propos daté de septembre 1968. Poèmes sur les noms que les femmes songhay-zarma récitent aux enfants, recueillis au village de Sarando à partir de 1966, traduits et édités. Lu le 12 octobre 2026 dans le dépôt DICAMES du CAMES. Pages 41-42 : les noms tirés du Coran sont donnés le jour du baptême, et l'usage remplace ce « grand nom » par un nom correspondant, comme « Seyni pour Useyni ». Page 89 : « Hasan et Useyni : noms donnés par paire obligée aux jumeaux ». Pages 152-153 : le zamu d'Useyni, où le nom alterne avec Seyni."
+              },
+              {
+                "title": "Dictionnaire arabe-français, tome 1",
+                "author": "Albert de Biberstein Kazimirski",
+                "year": 1860,
+                "url": "https://archive.org/details/dictionnairearab01bibeuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 428",
+                "notes": "Paris, Maisonneuve, 1860. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 428 : Houssein, diminutif de hasan, « Beau, et de là, n. pr. d'homme, Houssein » ; au duel, « Les deux fils d'Ali, Hassan et Houssein »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1972,
+              "to": 1972,
+              "label": "1972"
+            },
+            "era": "modern",
+            "statement": "Le nom Seyni apparaît par écrit dans un recueil de zamu, des poèmes sur les noms que les femmes songhay-zarma récitent aux enfants, réunis au village de Sarando par Jeanne Bisilliat et Diouldé Laya. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand des auteurs l'ont noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Seyni",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les Zamu ou poèmes sur les noms",
+                "author": "Jeanne Bisilliat et Diouldé Laya",
+                "year": 1972,
+                "url": "https://dicames.online/jspui/handle/20.500.12177/2329",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 42, 152-153",
+                "notes": "Niamey, Centre nigérien de recherche en sciences humaines, 1972 ; avant-propos daté de septembre 1968. Poèmes sur les noms que les femmes songhay-zarma récitent aux enfants, recueillis au village de Sarando à partir de 1966, traduits et édités. Lu le 12 octobre 2026 dans le dépôt DICAMES du CAMES. Pages 41-42 : les noms tirés du Coran sont donnés le jour du baptême, et l'usage remplace ce « grand nom » par un nom correspondant, comme « Seyni pour Useyni ». Page 89 : « Hasan et Useyni : noms donnés par paire obligée aux jumeaux ». Pages 152-153 : le zamu d'Useyni, où le nom alterne avec Seyni."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
