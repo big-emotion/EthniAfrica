@@ -78,7 +78,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // into their keepers.
     // 716 -> 711 on 2026-10-11: five duplicate people fiches of wave 6 folded into their keepers; none of their statuses was carried.
     // 711 -> 702 on 2026-10-11: ten duplicate people fiches of wave 8 folded into their keepers, and the Afizere fiche split from Jarawa.
-    value: 702,
+    // 702 -> 698 on 2026-10-12: the Khainai, Koyra, Yerima and Kirdi fiches folded or retired after wave 12.
+    value: 698,
     method: `nombre de fichiers ${PEOPLE_GLOB}`,
     countedOn: COUNTED_ON,
   },
@@ -94,7 +95,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // exonyms left with them, those only they held were carried over, and
     // PPL_KHOE_MACRO gave up Khoikhoi and Hottentot to PPL_KHOIKHOI, which has them.
     // 3079 -> 3081 on 2026-10-11: PPL_MAFA and PPL_SARA gained a bare « Kirdi »,
-    // which their name histories document, once PPL_KIRDI became an umbrella entry.
+    // which their name histories document, once the Kirdi fiche became an umbrella entry.
     // 3081 -> 3033 on 2026-10-11: fifteen duplicate people fiches folded into their
     // keepers: their exonyms left with them, and those only they held were carried
     // over (« Fulbe ladde » to the nomadic Fulbe); Ga-Dangme, kept as a grouping,
@@ -106,7 +107,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // the names of another people with a language of its own (Glottolog lukp1238).
     // 2958 -> 2935 on 2026-10-11: five duplicate people fiches of wave 6 folded into their keepers.
     // 2935 -> 2883 on 2026-10-11: ten duplicate people fiches of wave 8 folded into their keepers, and the Afizere fiche split from Jarawa.
-    value: 2883,
+    // 2883 -> 2869 on 2026-10-12: the Khainai, Koyra, Yerima and Kirdi fiches folded or retired after wave 12.
+    value: 2869,
     method:
       "somme de content.appellations.exonyms.length sur les fiches de peuple",
     countedOn: COUNTED_ON,
@@ -132,7 +134,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // into their keepers.
     // 704 -> 699 on 2026-10-11: five duplicate people fiches of wave 6 folded into their keepers.
     // 699 -> 689 on 2026-10-11: ten duplicate people fiches of wave 8 folded into their keepers, and the Afizere fiche split from Jarawa; the Jarawa of Bauchi have no self-name in the sources read.
-    value: 689,
+    // 689 -> 686 on 2026-10-12: the Khainai, Koyra, Yerima and Kirdi fiches folded or retired after wave 12.
+    value: 686,
     method:
       "fiches dont content.appellations.selfAppellation est renseigné et non vide",
     countedOn: COUNTED_ON,
@@ -158,9 +161,10 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // into their keepers; none of their statuses was carried.
     // 404 -> 399 on 2026-10-11: five duplicate people fiches of wave 6 folded into their keepers; none of their statuses was carried.
     // 399 -> 393 on 2026-10-11: ten duplicate people fiches of wave 8 folded into their keepers, and the Afizere fiche split from Jarawa.
-    value: 393,
+    // 393 -> 389 on 2026-10-12: the Khainai, Koyra, Yerima and Kirdi fiches folded or retired after wave 12. All four were contested.
+    value: 389,
     method:
-      "fiches dont classificationStatus vaut contested (230) ou colonial-legacy (163)",
+      "fiches dont classificationStatus vaut contested (226) ou colonial-legacy (163)",
     countedOn: COUNTED_ON,
   },
   "status-other": {
@@ -204,7 +208,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // into their keepers.
     // 213 -> 212 on 2026-10-11: five duplicate people fiches of wave 6 folded into their keepers.
     // 212 -> 211 on 2026-10-11: ten duplicate people fiches of wave 8 folded into their keepers, and the Afizere fiche split from Jarawa.
-    value: 211,
+    // 211 -> 210 on 2026-10-12: the Khainai, Koyra, Yerima and Kirdi fiches folded or retired after wave 12.
+    value: 210,
     method: "radical colonial dans originOfExonyms + whyProblematic",
     countedOn: "2026-10-09",
   },
@@ -231,7 +236,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 175 -> 169 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
     // into their keepers.
     // 169 -> 167 on 2026-10-11: five duplicate people fiches of wave 6 folded into their keepers.
-    value: 167,
+    // 167 -> 166 on 2026-10-12: the Khainai, Koyra, Yerima and Kirdi fiches folded or retired after wave 12.
+    value: 166,
     method: "radical administr dans originOfExonyms + whyProblematic",
     countedOn: COUNTED_ON,
   },
@@ -301,7 +307,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 58 -> 55 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
     // into their keepers.
     // 55 -> 54 on 2026-10-11: ten duplicate people fiches of wave 8 folded into their keepers, and the Afizere fiche split from Jarawa.
-    value: 54,
+    // 54 -> 53 on 2026-10-12: the Khainai, Koyra, Yerima and Kirdi fiches folded or retired after wave 12.
+    value: 53,
     method: `radicaux ${PEJORATIVE_STEMS.join(", ")} dans originOfExonyms + whyProblematic`,
     countedOn: "2026-10-09",
   },
@@ -310,7 +317,7 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     figureKey: "probe-arabic",
     label: "fiches employant le radical « arab- »",
     // 74 -> 72 on 2026-10-10: fourteen duplicate people fiches folded into their keepers.
-    // 72 -> 71 on 2026-10-11: PPL_KIRDI dropped its unsourced etymologies, the Arabic one included.
+    // 72 -> 71 on 2026-10-11: the Kirdi fiche dropped its unsourced etymologies, the Arabic one included.
     // 71 -> 68 on 2026-10-11: twenty-four duplicate people fiches of waves 4 and 5 folded
     // into their keepers.
     // 68 -> 67 on 2026-10-11: five duplicate people fiches of wave 6 folded into their keepers.

@@ -1,0 +1,252 @@
+{
+  "id": "WRD_KIRDI",
+  "nameMain": "Kirdi",
+  "wordLanguage": "fra",
+  "definition": "Un nom donné de l'extérieur aux peuples non musulmans du nord du Cameroun et du Tchad, longtemps méprisant, puis repris par certains comme nom de fierté.",
+  "relatedSubjects": [
+    {
+      "id": "PPL_MAFA",
+      "relation": "Le nom Kirdi a servi pour les Mafa et les autres montagnards des monts Mandara, selon Gerhard Müller-Kosack."
+    },
+    {
+      "id": "PPL_GIZIGA",
+      "relation": "Guy Pontié range les Guiziga parmi les peuples du nord du Cameroun que l'on regroupe sous le nom de païens, ou Kirdi."
+    },
+    {
+      "id": "PPL_SARA",
+      "relation": "La fiche des Sara présente aussi le nom Kirdi, d'après le glossaire de Christian Seignobos."
+    },
+    {
+      "id": "CMR",
+      "relation": "Le mot Kirdi a désigné les non-musulmans du nord du Cameroun, surtout dans les écrits de l'époque coloniale."
+    },
+    {
+      "id": "TCD",
+      "relation": "Les officiers français ont appris le mot Kirdi au Tchad avant de l'employer au Cameroun, selon Christian Seignobos."
+    }
+  ],
+  "nameHistory": {
+    "summary": "Le mot Kirdi a désigné, de l'extérieur, les peuples non musulmans du nord du Cameroun et du Tchad ; ce n'est pas le nom d'un peuple. Il a longtemps été méprisant, puis certains l'ont repris comme nom de fierté. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Kirdi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom méprisant pour les non-musulmans du nord du Cameroun et du Tchad, repris depuis comme nom de fierté.",
+        "periodLabel": "Écrit depuis 1826 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1990,
+              "to": null,
+              "label": "Depuis 1990"
+            },
+            "era": "modern",
+            "statement": "Le mot Kirdi sert aussi à revendiquer une identité. Un parti, la Dynamique culturelle kirdi, est fondé en 1990, et un journal, Kirdis, paraît depuis 1994, selon Christian Seignobos.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Atlas de la province Extrême-Nord Cameroun, glossaire et index des sigles",
+                "author": "Christian Seignobos",
+                "year": null,
+                "url": "https://books.openedition.org/irdeditions/11603",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "IRD Éditions, lu sur OpenEdition Books le 12 octobre 2026, entrée « kirdi » du glossaire.",
+                "page": "p. 167-171"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "2003"
+            },
+            "era": "modern",
+            "statement": "Le mot Kirdi garde un sens méprisant hérité de l'histoire, mais les montagnards d'aujourd'hui l'emploient aussi pour dire leur fierté. J.-M. Ela parle ainsi de « Kirditude » : l'attitude de qui est fier d'avoir des origines kirdi, selon l'anthropologue Gerhard Müller-Kosack.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Way of the Beer: Ritual Re-Enactment of History among the Mafa",
+                "author": "Gerhard Müller-Kosack",
+                "year": 2003,
+                "url": "https://www.mandaras.info/MandarasPublishing/TheWayoftheBeer-MullerKosack2003.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 27",
+                "notes": "Londres, Mandaras Publishing, livre numérique. Lu dans le texte intégral publié par l'éditeur, lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "2003"
+            },
+            "era": "modern",
+            "statement": "Le mot Kirdi désignait sans doute, au départ, tous ceux qui n'étaient pas musulmans et qu'on pouvait donc réduire en esclavage, selon Gerhard Müller-Kosack.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Way of the Beer: Ritual Re-Enactment of History among the Mafa",
+                "author": "Gerhard Müller-Kosack",
+                "year": 2003,
+                "url": "https://www.mandaras.info/MandarasPublishing/TheWayoftheBeer-MullerKosack2003.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 27",
+                "notes": "Londres, Mandaras Publishing, livre numérique. Lu dans le texte intégral publié par l'éditeur, lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1914,
+              "to": null,
+              "label": "Après 1914"
+            },
+            "statement": "Le mot Kirdi passe aux officiers français qui arrivent au Nord-Cameroun : ils l'ont appris au Tchad, au sens de « païens ». Il devient d'usage général après 1914 et reste dans les écrits camerounais jusque vers 1970, selon Christian Seignobos.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Atlas de la province Extrême-Nord Cameroun, glossaire et index des sigles",
+                "author": "Christian Seignobos",
+                "year": null,
+                "url": "https://books.openedition.org/irdeditions/11603",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "IRD Éditions, lu sur OpenEdition Books le 12 octobre 2026, entrée « kirdi » du glossaire.",
+                "page": "p. 167-171"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1823,
+              "to": 1826,
+              "label": "Expédition de 1823 (récit publié en 1826)"
+            },
+            "era": "polity",
+            "statement": "Le mot Kirdi s'écrit Kerdies chez le major Dixon Denham, pour les anciens habitants d'un pays du Bornou, devenus musulmans après leur conquête par les sultans du Bornou. Une note explique le mot : « Negroes who have never embraced the Mohammedan faith », des Noirs qui n'ont jamais embrassé l'islam.",
+            "formAsWritten": "Kerdies",
+            "actors": [
+              {
+                "name": "Dixon Denham",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Narrative of Travels and Discoveries in Northern and Central Africa, in the Years 1822, 1823, and 1824",
+                "author": "Dixon Denham, Hugh Clapperton et Walter Oudney",
+                "year": 1826,
+                "url": "https://archive.org/details/narrativetravel02salagoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Deuxième édition, tome I, Londres, John Murray. Lu sur la numérisation de la New York Public Library sur Internet Archive, lu le 12 octobre 2026. Le passage est du récit de Dixon Denham.",
+                "page": "p. 145, note"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1822,
+              "to": 1826,
+              "label": "Voyage de 1822-1823 (récit publié en 1826)"
+            },
+            "era": "polity",
+            "statement": "Le mot Kirdi apparaît par écrit sous la forme Kirdies dans le récit du voyage du major Dixon Denham vers le Bornou : le sultan du Baguirmi s'y réfugie « parmi les Kirdies », au sud du grand fleuve. C'est la plus ancienne trace de ce mot que le projet connaît. Les peuples qu'il désigne existaient déjà avant lui.",
+            "formAsWritten": "Kirdies",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Narrative of Travels and Discoveries in Northern and Central Africa, in the Years 1822, 1823, and 1824",
+                "author": "Dixon Denham, Hugh Clapperton et Walter Oudney",
+                "year": 1826,
+                "url": "https://archive.org/details/narrativetravel02salagoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Deuxième édition, tome I, Londres, John Murray. Lu sur la numérisation de la New York Public Library sur Internet Archive, lu le 12 octobre 2026. Le passage est du récit de Dixon Denham.",
+                "page": "p. 45"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Proposée en 2003"
+            },
+            "era": "modern",
+            "statement": "Le mot Kirdi viendrait du kanouri, où kerdi voudrait dire « païen », selon Gerhard Müller-Kosack, qui s'appuie sur un dictionnaire anglais-kanouri de N. Cyffer.",
+            "hypothesisGroup": "origine du mot Kirdi",
+            "sources": [
+              {
+                "title": "The Way of the Beer: Ritual Re-Enactment of History among the Mafa",
+                "author": "Gerhard Müller-Kosack",
+                "year": 2003,
+                "url": "https://www.mandaras.info/MandarasPublishing/TheWayoftheBeer-MullerKosack2003.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 27",
+                "notes": "Londres, Mandaras Publishing, livre numérique. Lu dans le texte intégral publié par l'éditeur, lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1970,
+              "to": 1970,
+              "label": "Proposée en 1970"
+            },
+            "era": "modern",
+            "statement": "Le mot Kirdi viendrait de l'arabe choa, parlé au Ouaddaï et au Baguirmi, au Tchad, où il voudrait dire « infidèle », c'est-à-dire non musulman, selon Guy Pontié.",
+            "hypothesisGroup": "origine du mot Kirdi",
+            "sources": [
+              {
+                "title": "Les Guiziga du Cameroun septentrional : l'organisation traditionnelle et les formes de la contestation",
+                "author": "Guy Pontié",
+                "year": 1970,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/carton02/19326.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7, note 2",
+                "notes": "Thèse de doctorat de troisième cycle, École pratique des hautes études, ORSTOM, 1970. Lu dans le texte dactylographié publié par l'IRD le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le mot Kirdi viendrait de l'arabe qird, « singe », et aurait servi à désigner avec mépris les non-musulmans, selon Christian Seignobos.",
+            "hypothesisGroup": "origine du mot Kirdi",
+            "sources": [
+              {
+                "title": "Atlas de la province Extrême-Nord Cameroun, glossaire et index des sigles",
+                "author": "Christian Seignobos",
+                "year": null,
+                "url": "https://books.openedition.org/irdeditions/11603",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "IRD Éditions, lu sur OpenEdition Books le 12 octobre 2026, entrée « kirdi » du glossaire.",
+                "page": "p. 167-171"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "gaps": [
+    "Nous n'avons pas lu le dictionnaire kanouri de Cyffer, ni le texte de J.-M. Ela sur la Kirditude ; nous les connaissons par Gerhard Müller-Kosack.",
+    "Nous ne savons pas encore comment les personnes que ce mot désignait le reçoivent aujourd'hui, au-delà des écrits cités."
+  ],
+  "sources": []
+}

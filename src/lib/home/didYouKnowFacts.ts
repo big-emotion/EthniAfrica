@@ -787,7 +787,8 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
       "Le regroupement réunit des peuples aux langues et aux cultures différentes. Depuis les années 1990, un mouvement politique reprend le nom dans « Kirditude » pour affirmer une identité commune. Un mot donné de l’extérieur peut ainsi être réutilisé par des personnes qu’il désignait.",
     ],
     entities: [
-      { kind: "people", id: "PPL_KIRDI", label: "Kirdi" },
+      { kind: "people", id: "PPL_MAFA", label: "Mafa" },
+      { kind: "people", id: "PPL_SARA", label: "Sara" },
       { kind: "country", id: "CMR", label: "Cameroun" },
       { kind: "country", id: "TCD", label: "Tchad" },
       { kind: "country", id: "NGA", label: "Nigeria" },

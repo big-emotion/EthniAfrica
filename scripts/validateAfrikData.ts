@@ -2505,7 +2505,9 @@ export function checkSourceIdentity(datasetRoot: string): ValidationResult {
 // in waves 6 and 7, took their Factbook citations with them.
 // 123 -> 122 on 2026-10-11: the second Sango fiche, folded after wave 8, took
 // its Factbook citation with it.
-export const RETIRED_CIA_FACTBOOK_URL_CEILING = 122;
+// 122 -> 120 on 2026-10-12: the Yerima and Kirdi fiches, retired after wave
+// 12, took their Factbook citations with them.
+export const RETIRED_CIA_FACTBOOK_URL_CEILING = 120;
 
 const LIVE_CIA_FACTBOOK =
   /cia\.gov\/(?:library\/publications\/)?the-world-factbook/i;
@@ -4429,7 +4431,9 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // 6469 -> 6385 on 2026-10-11: ten duplicate fiches of wave 8 were folded and
   // retired with the keys they lacked; the Afizere fiche split from Jarawa
   // carries every key.
-  peuple: 6385,
+  // 6385 -> 6349 on 2026-10-12: the Khainai, Koyra, Yerima and Kirdi fiches of
+  // wave 12 were folded or retired with the keys they lacked.
+  peuple: 6349,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next

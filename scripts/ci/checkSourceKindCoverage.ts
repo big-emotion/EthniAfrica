@@ -29,9 +29,10 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * people fiches of waves 4 and 5; the untyped ones carried into a keeper keep
  * their count. 1047 -> 1037 on 2026-10-11: ten untyped citations left with the
  * duplicate people fiches folded after wave 8; the one carried to the new
- * Afizere fiche keeps its count.
+ * Afizere fiche keeps its count. 1037 -> 1034 on 2026-10-12: three untyped
+ * citations left with the Khainai and Koyra fiches folded after wave 12.
  */
-export const UNTYPED_SOURCE_RATCHET = 1037;
+export const UNTYPED_SOURCE_RATCHET = 1034;
 
 export interface UntypedSource {
   file: string;
