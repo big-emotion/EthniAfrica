@@ -114,5 +114,148 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Koyra Chiini désigne les Songhay de Tombouctou et des villes voisines sur le Niger, au Mali, d'après le nom de leur langue. Le premier mot, koira, veut dire « ville » en songhay. Les linguistes parlent aussi de songhay de Tombouctou. On ne sait pas avec certitude depuis quand on dit koyra chiini ; nous présentons plus bas ses traces.",
+    "names": [
+      {
+        "nameText": "Koyra Chiini",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "khq",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue songhay de Tombouctou, et de ceux qui la parlent ; koira veut dire « ville ».",
+        "periodLabel": "Écrit depuis 1999 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2000,
+              "to": 2000,
+              "label": "2000"
+            },
+            "era": "modern",
+            "statement": "Le nom Koyra Chiini désigne dans Ethnologue une langue songhay parlée par environ 200 000 personnes le long du Niger, de Djenné jusqu'à l'est de Tombouctou. Ethnologue y distingue deux parlers, le koyra chiini de Tombouctou et le djenné chiini.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Songhay, Koyra Chiini: a language of Mali",
+                "author": "SIL International, Ethnologue, 14e édition",
+                "year": 2000,
+                "url": "http://web.archive.org/web/20011109233156/http://www.ethnologue.com:80/show_language.asp?code=KHQ",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Page de la 14e édition d'Ethnologue, lue le 11 octobre 2026 dans une copie conservée par la Wayback Machine en novembre 2001."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Koyra Chiini figure dans le titre de la grammaire que publie le linguiste Jeffrey Heath en 1999, A grammar of Koyra Chiini: the Songhay of Timbuktu. C'est la plus ancienne trace de ce nom que le projet connaît. La langue et ceux qui la parlent existaient déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A grammar of Koyra Chiini: the Songhay of Timbuktu",
+                "author": "Jeffrey Heath",
+                "year": 1999,
+                "url": "https://archive.org/details/isbn_9780763709228",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Berlin et New York, Mouton de Gruyter, 1999. Notice de l'exemplaire numérisé d'Internet Archive, lue le 11 octobre 2026 ; le livre lui-même n'est consultable qu'en prêt, et nous ne l'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1853,
+              "to": 1857,
+              "label": "Voyage de 1853 (récit publié en 1857)"
+            },
+            "era": "polity",
+            "statement": "Le nom Koyra Chiini commence par koira, qui veut dire « ville » dans le « Songhay-kini », la langue songhay, selon l'explorateur Heinrich Barth. Les sources que nous avons lues ne disent pas qui a d'abord appelé la langue de Tombouctou koyra chiini.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 4",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri04bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 369, note",
+                "notes": "Londres, Longman, Brown, Green, Longmans & Roberts, 1857 ; voyage de 1849-1855. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1853,
+              "to": 1858,
+              "label": "Séjour à Tombouctou, 1853-1854 (récit publié en 1858)"
+            },
+            "era": "polity",
+            "statement": "On parle alors de Songhay-kini pour la langue songhay : Heinrich Barth écrit que c'est encore la langue préférée de tous les habitants d'Araouane, au nord de Tombouctou, Arabes compris.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 5",
+                "author": "Heinrich Barth",
+                "year": 1858,
+                "url": "https://archive.org/details/travelsdiscoveri05bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 460",
+                "notes": "Londres, Longman, Brown, Green, Longmans & Roberts, 1858 ; voyage de 1849-1855. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Songhay de Tombouctou",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que donnent les linguistes à la langue et aux habitants songhay de Tombouctou.",
+        "periodLabel": "Écrit depuis 1999",
+        "accounts": [
+          {
+            "period": {
+              "from": 1999,
+              "to": 2000,
+              "label": "1999-2000"
+            },
+            "era": "modern",
+            "statement": "Le nom Songhay de Tombouctou apparaît en anglais, the Songhay of Timbuktu, dans le titre de la grammaire de Jeffrey Heath en 1999 ; en 2000, Ethnologue donne aussi Timbuktu Songhoy et West Songhoy comme autres noms de la langue. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A grammar of Koyra Chiini: the Songhay of Timbuktu",
+                "author": "Jeffrey Heath",
+                "year": 1999,
+                "url": "https://archive.org/details/isbn_9780763709228",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Berlin et New York, Mouton de Gruyter, 1999. Notice de l'exemplaire numérisé d'Internet Archive, lue le 11 octobre 2026 ; le livre lui-même n'est consultable qu'en prêt, et nous ne l'avons pas lu."
+              },
+              {
+                "title": "Songhay, Koyra Chiini: a language of Mali",
+                "author": "SIL International, Ethnologue, 14e édition",
+                "year": 2000,
+                "url": "http://web.archive.org/web/20011109233156/http://www.ethnologue.com:80/show_language.asp?code=KHQ",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Page de la 14e édition d'Ethnologue, lue le 11 octobre 2026 dans une copie conservée par la Wayback Machine en novembre 2001."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
