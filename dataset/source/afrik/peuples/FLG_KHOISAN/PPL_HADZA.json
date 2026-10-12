@@ -119,7 +119,7 @@
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Hadza désigne un peuple de chasseurs-cueilleurs des environs du lac Eyasi, au nord de la Tanzanie, qui se nomme lui-même Hadzabe. D'autres noms lui ont été donnés par ses voisins et par des auteurs européens : Tindiga, Kindiga ou Wanege. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "summary": "Le nom Hadza désigne un peuple de chasseurs-cueilleurs des environs du lac Eyasi, au nord de la Tanzanie, qui se nomme lui-même Hadzabe. D'autres noms lui ont été donnés par ses voisins et par des auteurs européens : Tindiga, Kindiga ou Wanege. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources de leur usage.",
     "names": [
       {
         "nameText": "Hadzabe",
@@ -132,22 +132,23 @@
         "accounts": [
           {
             "period": {
-              "from": 2010,
-              "to": 2010,
-              "label": "2010"
+              "from": 2016,
+              "to": 2016,
+              "label": "2016"
             },
             "era": "modern",
-            "statement": "Le nom Hadzabe est celui que ce peuple se donne, et Hadzane celui de sa langue, selon l'anthropologue Frank Marlowe. Il emploie lui-même la racine Hadza, la forme la plus courante dans les publications depuis les premières études de James Woodburn, en 1958.",
+            "statement": "Le nom Hadzabe est le pluriel de Hadza, le nom que ce peuple se donne ; à quelqu'un qui parle swahili, il dit Wahadzabe, avec le préfixe swahili du pluriel. Sa langue se nomme hadzane, selon l'anthropologue Nicholas Blurton Jones.",
             "aspect": "usage",
             "sources": [
               {
-                "title": "The Hadza : Hunter-Gatherers of Tanzania",
-                "author": "Frank W. Marlowe",
-                "year": 2010,
-                "url": "https://books.google.com/books/about/The_Hadza.html?id=8p-AG8cqCJwC",
+                "title": "Demography and Evolutionary Ecology of Hadza Hunter-Gatherers",
+                "author": "Nicholas Blurton Jones",
+                "year": 2016,
+                "url": "https://assets.cambridge.org/97811070/69824/excerpt/9781107069824_excerpt.pdf",
                 "tier": "referenced",
                 "source_kind": "academic",
-                "notes": "University of California Press. Passages lus dans l'aperçu en ligne de Google Books ; le numéro de page imprimé n'est pas connu."
+                "page": "p. 3",
+                "notes": "Cambridge University Press. Extrait du chapitre 1 publié par l'éditeur, lu le 12 octobre 2026."
               }
             ]
           },
@@ -162,13 +163,13 @@
             "birth": true,
             "sources": [
               {
-                "title": "The Hadzapi or Watindega of Tanganyika territory, notice des archives numériques Bleek et Lloyd",
-                "author": "Université du Cap",
-                "year": null,
+                "title": "The Hadzapi or Watindega of Tanganyika Territory, Africa, vol. 4, n° 3",
+                "author": "Dorothea F. Bleek",
+                "year": 1931,
                 "url": "https://bal2.cs.uct.ac.za/metadata/reports/df-bleek-items/330/index.html",
                 "tier": "referenced",
-                "source_kind": "repository",
-                "notes": "Notice d'un manuscrit de Dorothea Bleek, lu le 11 octobre 2026. Elle date l'article de juillet 1931, dans la revue Africa, vol. 4, n° 3, p. 273-286, et le séjour chez les Hadza de mai à juillet 1930. Nous n'avons pas lu l'article lui-même."
+                "source_kind": "academic",
+                "notes": "Lu dans la notice des archives numériques Bleek et Lloyd de l'université du Cap, qui décrit un manuscrit de l'article, lu le 12 octobre 2026. Elle date l'article de juillet 1931, dans la revue Africa, vol. 4, n° 3, p. 273-286, et le séjour chez les Hadza de mai à juillet 1930. Nous n'avons pas lu l'article lui-même."
               }
             ]
           }
@@ -194,13 +195,13 @@
             "aspect": "usage",
             "sources": [
               {
-                "title": "The Hadzapi or Watindega of Tanganyika territory, notice des archives numériques Bleek et Lloyd",
-                "author": "Université du Cap",
-                "year": null,
+                "title": "The Hadzapi or Watindega of Tanganyika Territory, Africa, vol. 4, n° 3",
+                "author": "Dorothea F. Bleek",
+                "year": 1931,
                 "url": "https://bal2.cs.uct.ac.za/metadata/reports/df-bleek-items/330/index.html",
                 "tier": "referenced",
-                "source_kind": "repository",
-                "notes": "Notice d'un manuscrit de Dorothea Bleek, lu le 11 octobre 2026. Elle date l'article de juillet 1931, dans la revue Africa, vol. 4, n° 3, p. 273-286, et le séjour chez les Hadza de mai à juillet 1930. Nous n'avons pas lu l'article lui-même."
+                "source_kind": "academic",
+                "notes": "Lu dans la notice des archives numériques Bleek et Lloyd de l'université du Cap, qui décrit un manuscrit de l'article, lu le 12 octobre 2026. Elle date l'article de juillet 1931, dans la revue Africa, vol. 4, n° 3, p. 273-286, et le séjour chez les Hadza de mai à juillet 1930. Nous n'avons pas lu l'article lui-même."
               }
             ]
           },
@@ -226,27 +227,6 @@
                 "notes": "Berlin, Dietrich Reimer ; lu le 11 octobre 2026 dans l'édition du Projet Gutenberg, qui garde la pagination de l'original."
               }
             ]
-          },
-          {
-            "period": {
-              "from": 2010,
-              "to": 2010,
-              "label": "Proposée en 2010"
-            },
-            "era": "modern",
-            "statement": "Le nom Tindiga viendrait du swahili tindiga, « marais » : d'autres peuples auraient appelé les Hadza Watindiga parce que l'eau qui serpente dans leur région y forme un marais, selon Frank Marlowe.",
-            "hypothesisGroup": "origine du nom Tindiga",
-            "sources": [
-              {
-                "title": "The Hadza : Hunter-Gatherers of Tanzania",
-                "author": "Frank W. Marlowe",
-                "year": 2010,
-                "url": "https://books.google.com/books/about/The_Hadza.html?id=8p-AG8cqCJwC",
-                "tier": "referenced",
-                "source_kind": "academic",
-                "notes": "University of California Press. Passages lus dans l'aperçu en ligne de Google Books ; le numéro de page imprimé n'est pas connu."
-              }
-            ]
           }
         ]
       },
@@ -261,9 +241,9 @@
         "accounts": [
           {
             "period": {
-              "from": 1911,
+              "from": 1912,
               "to": 1912,
-              "label": "1911 (rapport publié en 1912)"
+              "label": "1912"
             },
             "era": "colonial",
             "statement": "Le nom Kindiga apparaît, sous la forme « Wakindiga », dans le titre du rapport du géographe Erich Obst sur son voyage de Mkalama au pays de ce peuple, en Afrique orientale allemande, publié à Hambourg en 1912, selon le catalogue Glottolog. C'est la plus ancienne trace de ce nom que le projet connaît.",
@@ -309,7 +289,7 @@
                 "url": "https://www.gutenberg.org/ebooks/68057",
                 "tier": "referenced",
                 "source_kind": "archive",
-                "page": "p. 191",
+                "page": "p. 63 et 191",
                 "notes": "Berlin, Dietrich Reimer ; lu le 11 octobre 2026 dans l'édition du Projet Gutenberg, qui garde la pagination de l'original."
               }
             ]

@@ -175,7 +175,7 @@
               "label": "Rapportée en 2021"
             },
             "era": "modern",
-            "statement": "Le nom Vekuhane viendrait d'Ikuhane, un souverain du XVIIe siècle, fils d'Intenge : chassés du haut Zambèze par les Aluyi, ancêtres des Lozi, ses sujets se seraient nommés d'après lui, et auraient appelé le Chobe la rivière Ikuhane, selon certains récits que rapporte Jeff Ramsay.",
+            "statement": "Le nom Vekuhane viendrait d'Ikuhane, fils d'Intenge, souverain au XVIIe siècle d'un État installé entre le Zambèze et le Chobe : ses sujets se seraient ensuite nommés d'après lui, et auraient appelé le Chobe la rivière Ikuhane, selon l'historien Jeff Ramsay. Selon certains récits qu'il rapporte, Ikuhane aurait fui le haut Zambèze devant les Aluyi, ancêtres des Lozi.",
             "hypothesisGroup": "origine du nom Vekuhane",
             "sources": [
               {
@@ -197,8 +197,8 @@
         "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
-        "shortLine": "Un nom donné par d'autres, écrit Masupia en 1881 ; son origine n'est pas connue.",
-        "periodLabel": "Écrit sous une forme proche depuis 1881 ; en usage aujourd'hui",
+        "shortLine": "Un nom donné par d'autres, écrit Bashubia en 1857 ; son origine n'est pas connue.",
+        "periodLabel": "Écrit sous une forme proche depuis 1857 ; en usage aujourd'hui",
         "accounts": [
           {
             "period": {
@@ -207,9 +207,9 @@
               "label": "1875 (récit publié en 1881)"
             },
             "era": "polity",
-            "statement": "Le nom Subiya apparaît par écrit sous une forme proche, « Masupia », dans le récit du médecin et voyageur Emil Holub : au bord du Zambèze, il voit les fermes abandonnées et les tombes de chefs de ce peuple, parti sur l'autre rive après la chute du royaume manansa. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "statement": "Le nom Subiya est écrit « Masupia » dans le récit du médecin et voyageur Emil Holub : dans la vallée du Chobe et du Zambèze, il voit les fermes abandonnées et les tombes de chefs de ce peuple, parti sur l'autre rive après la chute du royaume manansa.",
+            "aspect": "usage",
             "formAsWritten": "Masupias",
-            "birth": true,
             "sources": [
               {
                 "title": "Seven Years in South Africa : Travels, Researches, and Hunting Adventures, between the Diamond-Fields and the Zambesi (1872-79), vol. 2",
@@ -220,6 +220,29 @@
                 "source_kind": "archive",
                 "page": "p. 118",
                 "notes": "Londres, Sampson Low. Lu sur Internet Archive, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Subiya apparaît par écrit sous une forme proche, « Bashubia », dans le récit du missionnaire David Livingstone. Il raconte que Sebituane, chef des Makololo, descendit le Zambèze chez les Bashubia et les Batoka, qui vivaient alors, écrit-il, dans toute leur gloire. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Bashubia",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 84",
+                "notes": "Londres, John Murray. Lu sur Internet Archive, lu le 12 octobre 2026."
               }
             ]
           }

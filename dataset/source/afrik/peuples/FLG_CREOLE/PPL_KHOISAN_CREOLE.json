@@ -152,17 +152,18 @@
               "label": "1857"
             },
             "era": "polity",
-            "statement": "Le nom Griqua désigne, pour le missionnaire David Livingstone, tout groupe métis né d'Africains et d'Européens ; ceux qu'il rencontre sont d'ascendance néerlandaise, khoekhoe et san, selon le Dictionary of South African English.",
+            "statement": "Le nom Griqua désigne, pour le missionnaire David Livingstone, tout groupe métis né d'Africains et d'Européens. Ceux qu'il rencontre au nord du fleuve Orange, en territoire indépendant, sont d'ascendance néerlandaise, khoekhoe et san.",
             "aspect": "usage",
             "sources": [
               {
-                "title": "Dictionary of South African English on Historical Principles, entrée « Griqua »",
-                "author": "Dictionary Unit for South African English",
-                "year": null,
-                "url": "https://dsae.co.za/entry/griqua/e02809",
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
                 "tier": "referenced",
-                "source_kind": "linguistic_reference",
-                "notes": "Citation de D. Livingstone, Missionary Travels, 1857, p. 104. Entrée lu le 11 octobre 2026."
+                "source_kind": "archive",
+                "page": "p. 103",
+                "notes": "Londres, John Murray. Lu sur Internet Archive, lu le 12 octobre 2026."
               }
             ]
           },
@@ -184,7 +185,7 @@
             ],
             "sources": [
               {
-                "title": "Travels in South Africa : undertaken at the request of the Missionary Society",
+                "title": "Travels in South Africa, undertaken at the request of the Missionary Society",
                 "author": "John Campbell",
                 "year": 1815,
                 "url": "https://archive.org/details/travelsinsouthaf00camp",
@@ -210,7 +211,7 @@
                 "url": "https://dsae.co.za/entry/grigriqua/e02805",
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
-                "notes": "Citation des Abstracts in Statute Law of the Cape of Good Hope, 1862, p. xviii. Entrée lu le 11 octobre 2026."
+                "notes": "Citation des Abstracts in Statute Law of the Cape of Good Hope, 1862, p. xviii. Entrée lue le 11 octobre 2026."
               }
             ]
           },
@@ -225,7 +226,7 @@
             "hypothesisGroup": "origine du nom Griqua",
             "sources": [
               {
-                "title": "Travels in South Africa : undertaken at the request of the Missionary Society",
+                "title": "Travels in South Africa, undertaken at the request of the Missionary Society",
                 "author": "John Campbell",
                 "year": 1815,
                 "url": "https://archive.org/details/travelsinsouthaf00camp",
@@ -252,7 +253,7 @@
                 "url": "https://dsae.co.za/entry/chariguriqua/e01584",
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
-                "notes": "Citations de T. Arbousset, trad. J. C. Brown, 1846, p. 21, et de G. W. Stow, The Native Races of South Africa, 1905, p. 316. Entrée lu le 11 octobre 2026."
+                "notes": "Citations de T. Arbousset, trad. J. C. Brown, 1846, p. 21, et de G. W. Stow, The Native Races of South Africa, 1905, p. 316. Entrée lue le 11 octobre 2026."
               },
               {
                 "title": "Dictionary of South African English on Historical Principles, entrée « Griqua »",
@@ -261,7 +262,7 @@
                 "url": "https://dsae.co.za/entry/griqua/e02809",
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
-                "notes": "Citation de H. Vedder, dans The Native Tribes of South West Africa, 1928, p. 114. Entrée lu le 11 octobre 2026."
+                "notes": "Citation de H. Vedder, dans The Native Tribes of South West Africa, 1928, p. 114. Entrée lue le 11 octobre 2026."
               }
             ]
           },
@@ -282,7 +283,7 @@
                 "url": "https://dsae.co.za/entry/griqua/e02809",
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
-                "notes": "Citation de W. F. Lye, Andrew Smith's Journal 1834-6, 1975, p. 311. Entrée lu le 11 octobre 2026."
+                "notes": "Citation de W. F. Lye, Andrew Smith's Journal 1834-6, 1975, p. 311. Entrée lue le 11 octobre 2026."
               }
             ]
           },
@@ -302,7 +303,7 @@
                 "url": "https://dsae.co.za/entry/griqua/e02809",
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
-                "notes": "Rubrique d'étymologie de l'entrée. Entrée lu le 11 octobre 2026."
+                "notes": "Rubrique d'étymologie de l'entrée. Entrée lue le 11 octobre 2026."
               }
             ]
           }
@@ -334,7 +335,7 @@
                 "url": "https://dsae.co.za/entry/baster/e00615",
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
-                "notes": "Citation de L. G. Green, Lords of the Last Frontier, 1952, p. 202. Entrée lu le 11 octobre 2026."
+                "notes": "Citation de L. G. Green, Lords of the Last Frontier, 1952, p. 202. Entrée lue le 11 octobre 2026."
               }
             ]
           },
@@ -354,7 +355,7 @@
                 "url": "https://dsae.co.za/entry/baster/e00615",
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
-                "notes": "Citation de G. Cubitt et J. Richter, South West, 1976, p. 9. Entrée lu le 11 octobre 2026."
+                "notes": "Citation de G. Cubitt et J. Richter, South West, 1976, p. 9. Entrée lue le 11 octobre 2026."
               }
             ]
           },
@@ -374,7 +375,7 @@
                 "url": "https://dsae.co.za/entry/baster/e00615",
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
-                "notes": "Rubrique d'étymologie de l'entrée. Entrée lu le 11 octobre 2026."
+                "notes": "Rubrique d'étymologie de l'entrée. Entrée lue le 11 octobre 2026."
               }
             ]
           },
@@ -394,7 +395,7 @@
                 "url": "https://dsae.co.za/entry/baster/e00615",
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
-                "notes": "Citation de la traduction du récit de F. Le Vaillant, 1790, vol. II, p. 344. Entrée lu le 11 octobre 2026."
+                "notes": "Citation de la traduction du récit de F. Le Vaillant, 1790, vol. II, p. 344. Entrée lue le 11 octobre 2026."
               }
             ]
           }
@@ -419,7 +420,7 @@
             "statement": "Le nom Bastaard est celui sous lequel les habitants métis de Klaarwater sont connus jusqu'en 1813, selon le missionnaire John Campbell, qui écrit « Bastards ». Ils l'abandonnent alors pour le nom Griqua.",
             "sources": [
               {
-                "title": "Travels in South Africa : undertaken at the request of the Missionary Society",
+                "title": "Travels in South Africa, undertaken at the request of the Missionary Society",
                 "author": "John Campbell",
                 "year": 1815,
                 "url": "https://archive.org/details/travelsinsouthaf00camp",
@@ -446,7 +447,7 @@
                 "url": "https://dsae.co.za/entry/bastard/e00612",
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
-                "notes": "Citation de la traduction par G. Forster du voyage d'A. Sparrman, 1786, vol. II, p. 27. Le dictionnaire note que ce nom était encore accepté comme un titre jusqu'à la fin du XIXe siècle. Entrée lu le 11 octobre 2026."
+                "notes": "Citation de la traduction par G. Forster du voyage d'A. Sparrman, 1786, vol. II, p. 27. Le dictionnaire note que ce nom était encore accepté comme un titre jusqu'à la fin du XIXe siècle. Entrée lue le 11 octobre 2026."
               }
             ]
           }
@@ -465,7 +466,7 @@
             "period": {
               "from": 1813,
               "to": 1815,
-              "label": "3 septembre 1813 (récit publié en 1815)"
+              "label": "1er et 3 septembre 1813 (récit publié en 1815)"
             },
             "era": "polity",
             "statement": "Le nom Oorlam apparaît par écrit, sous la forme « Orlams », dans le récit du missionnaire John Campbell : au kraal de Cornelius Kok, sur le fleuve Orange, il compte 215 personnes qui parlent néerlandais et qu'on appelle ainsi. C'est la plus ancienne trace de ce nom que le projet connaît.",
@@ -473,13 +474,13 @@
             "birth": true,
             "sources": [
               {
-                "title": "Travels in South Africa : undertaken at the request of the Missionary Society",
+                "title": "Travels in South Africa, undertaken at the request of the Missionary Society",
                 "author": "John Campbell",
                 "year": 1815,
                 "url": "https://archive.org/details/travelsinsouthaf00camp",
                 "tier": "referenced",
                 "source_kind": "archive",
-                "page": "p. 394",
+                "page": "p. 393-394",
                 "notes": "Londres, Black and Parry. Lu sur Internet Archive, lu le 11 octobre 2026."
               }
             ]
@@ -500,7 +501,7 @@
                 "url": "https://dsae.co.za/entry/oorlam/e05364",
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
-                "notes": "Rubrique d'étymologie et citation de W. R. Thomson, Poems, Essays and Sketches, 1868, p. 207. Entrée lu le 11 octobre 2026."
+                "notes": "Rubrique d'étymologie et citation de W. R. Thomson, Poems, Essays and Sketches, 1868, p. 207. Entrée lue le 11 octobre 2026."
               }
             ]
           },
@@ -510,6 +511,7 @@
               "to": 1889,
               "label": "Rapportée en 1889"
             },
+            "era": "colonial",
             "statement": "Le nom Oorlam serait un surnom donné par les colons néerlandais aux Khoekhoe qui vivaient près de leurs fermes, et voudrait dire « brebis stérile », selon l'explorateur Francis Galton, cité par le Dictionary of South African English.",
             "hypothesisGroup": "origine du nom Oorlam",
             "sources": [
@@ -520,7 +522,49 @@
                 "url": "https://dsae.co.za/entry/oorlam/e05364",
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
-                "notes": "Citation de F. Galton, Travels in South Africa, 1889, p. 41. Entrée lu le 11 octobre 2026."
+                "notes": "Citation de F. Galton, Travels in South Africa, 1889, p. 41. Entrée lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Proposée en 1881"
+            },
+            "era": "colonial",
+            "statement": "Le nom Oorlam viendrait d'un commerçant nommé Orlam, venu de Batavia, qui vivait au Cap vers 1720 et allait surtout commercer dans le Petit Namaqualand, selon le linguiste Theophilus Hahn, cité par le Dictionary of South African English. Hahn ajoute que les Oorlam racontent eux-mêmes l'histoire d'un commerçant de ce nom, marié chez les Nama.",
+            "hypothesisGroup": "origine du nom Oorlam",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « oorlam »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/oorlam/e05364",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de T. Hahn, Tsuni-‖Goam, 1881, p. 153. Entrée lue le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Proposée en 1928"
+            },
+            "era": "colonial",
+            "statement": "Le nom Oorlam voudrait dire « étrangers », les gens venus de l'autre rive du fleuve Orange, puisque les Nama y attachent le sens de oorlandse mense, selon le missionnaire Heinrich Vedder, cité par le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Oorlam",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « oorlam »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/oorlam/e05364",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Citation de H. Vedder, dans The Native Tribes of South West Africa, 1928, p. 116. Entrée lue le 12 octobre 2026."
               }
             ]
           }

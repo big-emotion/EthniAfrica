@@ -139,8 +139,8 @@
         "selfGiven": true,
         "languageOfOrigin": "mgd",
         "namedBy": null,
-        "shortLine": "Le nom que ce peuple se donne, écrit en 1881 ; son origine n'est pas connue.",
-        "periodLabel": "Écrit depuis 1881 ; en usage aujourd'hui",
+        "shortLine": "Le nom que ce peuple se donne, écrit Moro en 1862 ; son origine n'est pas connue.",
+        "periodLabel": "Écrit sous une forme proche depuis 1862 ; en usage aujourd'hui",
         "accounts": [
           {
             "period": {
@@ -149,7 +149,7 @@
               "label": "1932"
             },
             "era": "colonial",
-            "statement": "Le nom Moru est écrit « Moro » par les anthropologues Charles et Brenda Seligman, qui distinguent les Moro Endri, les Moro Mesa et les Moro Kedem, parlant tous une langue proche de celle des Madi.",
+            "statement": "Le nom Moru est écrit « Moro » par les anthropologues Charles et Brenda Seligman. Ils appellent Moro proprement dits les Moro Endri, les Moro Mesa et les Moro Kederu, et les rangent avec les Madi dans un même groupe de langues.",
             "aspect": "usage",
             "formAsWritten": "Moro",
             "sources": [
@@ -172,12 +172,12 @@
               "label": "1881 (journal publié en 1888)"
             },
             "era": "colonial",
-            "statement": "Le nom Moru apparaît par écrit dans le journal d'Emin Pacha, gouverneur égyptien de l'Équatoria : en 1881, il traverse le pays moru, qui comprend selon lui le Moru-Kodo, au nord, et le Moru-Missa, au sud, chacun avec son dialecte. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
-            "formAsWritten": "Moru-Kodo",
-            "birth": true,
+            "statement": "Le nom Moru figure dans le journal d'Emin Pacha, gouverneur égyptien de l'Équatoria : en 1881, il traverse le pays moru, qui comprend selon lui le Moru-Kodo, au nord, et le Moru-Missa, au sud, chacun avec son dialecte.",
+            "aspect": "usage",
+            "formAsWritten": "Moru",
             "sources": [
               {
-                "title": "Emin Pasha in Central Africa : being a Collection of his Letters and Journals",
+                "title": "Emin Pasha in Central Africa: being a collection of his letters and journals",
                 "author": "Emin Pacha",
                 "year": 1888,
                 "url": "https://archive.org/details/eminpashaincentr00emin",
@@ -185,6 +185,28 @@
                 "source_kind": "archive",
                 "page": "p. 308 et 313",
                 "notes": "Édité par G. Schweinfurth et d'autres, Londres, George Philip. Lu sur Internet Archive, lu le 11 octobre 2026. Le journal de ce voyage d'inspection commence le 15 septembre 1881."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1862,
+              "to": 1869,
+              "label": "1862 (récit publié en 1869)"
+            },
+            "statement": "Le nom Moru apparaît par écrit sous une forme proche, « Moro », dans le récit de voyage de John et Katherine Petherick : à la fin de 1862, ils traversent le territoire moro et décrivent la tribu moro, dont une branche, autour du chef Neangara, se nomme Morokodo. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Moro",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels in Central Africa, and Explorations of the Western Nile Tributaries, vol. 1",
+                "author": "John Petherick et Katherine Petherick",
+                "year": 1869,
+                "url": "https://archive.org/details/travelsincentral11869peth",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Tinsley Brothers. Lu sur Internet Archive, lu le 12 octobre 2026. Le passage relate le voyage de novembre et décembre 1862.",
+                "page": "p. 266 et 276"
               }
             ]
           }
@@ -209,7 +231,7 @@
             "statement": "Le nom Madi est donné aux Moru par les Mittu, à tort selon Emin Pacha, et par les Lori. Il ajoute que les Moru rejettent ce nom, et que la forme Moru-Madi des cartes de son temps répète deux fois le même peuple.",
             "sources": [
               {
-                "title": "Emin Pasha in Central Africa : being a Collection of his Letters and Journals",
+                "title": "Emin Pasha in Central Africa: being a collection of his letters and journals",
                 "author": "Emin Pacha",
                 "year": 1888,
                 "url": "https://archive.org/details/eminpashaincentr00emin",
@@ -217,6 +239,28 @@
                 "source_kind": "archive",
                 "page": "p. 308 et 354",
                 "notes": "Édité par G. Schweinfurth et d'autres, Londres, George Philip. Lu sur Internet Archive, lu le 11 octobre 2026. Le journal de ce voyage d'inspection commence le 15 septembre 1881."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1862,
+              "to": 1869,
+              "label": "1862 (récit publié en 1869)"
+            },
+            "statement": "Le nom Madi apparaît dans Morokodo Madi, le nom qu'un chef moro, père de Neangara, aurait donné à son district après avoir rompu avec sa tribu, selon John et Katherine Petherick. Madi y serait le nom d'une autre tribu moro indépendante, qui l'avait aidé. C'est la plus ancienne trace de ce nom pour les Moru que le projet connaît.",
+            "formAsWritten": "Morokodo Madi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels in Central Africa, and Explorations of the Western Nile Tributaries, vol. 1",
+                "author": "John Petherick et Katherine Petherick",
+                "year": 1869,
+                "url": "https://archive.org/details/travelsincentral11869peth",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Tinsley Brothers. Lu sur Internet Archive, lu le 12 octobre 2026. Le passage relate le voyage de novembre et décembre 1862.",
+                "page": "p. 276"
               }
             ]
           }
