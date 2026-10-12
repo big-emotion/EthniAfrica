@@ -1,6 +1,6 @@
 // @req REQ-186
-// A transcription such as *ṣaḥrāʾ* must read as one word in the subtitle
-// band. Nunito Sans has U+02BE and U+02BF, but draws each half ring in the
+// A transcription such as *ṣaḥrāʾ* must read as one word in the
+// subtitles. Nunito Sans has U+02BE and U+02BF, but draws each half ring in the
 // middle of half an em, so « ṣaḥrāʾ » showed as « ṣaḥrā ʾ ». The gap is
 // measured on the ink the pinned Chromium draws with the engine's own fonts,
 // because the layout boxes of the two letters touch either way.
@@ -15,11 +15,12 @@ const runtime = JSON.parse(
   await readFile(new URL("../renderer/runtime.json", import.meta.url))
 );
 const fonts = new URL("../design-system/fonts/", import.meta.url);
-// The subtitle band's size and weight (board 9).
-const SUBTITLE = "font-size:36px;line-height:54px;font-weight:700";
-// Noto Sans sets its own ʾ 4 px after ā at this size; 2 px more absorbs
-// antialiasing. Nunito Sans' half ring sits 11 to 12 px away.
-const MAX_GAP = 6;
+// The subtitle's size and weight in 0.4.0 « plein écran ».
+const SUBTITLE = "font-size:56px;line-height:68px;font-weight:800";
+// At 36 px Noto Sans set its ʾ 4 px after ā and Nunito Sans' half ring sat
+// 11 to 12 px away; at 56 px the gaps scale by 56 ÷ 36, so 9 px still
+// parts the two faces with room for antialiasing.
+const MAX_GAP = 9;
 
 let browser;
 let page;

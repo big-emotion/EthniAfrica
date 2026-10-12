@@ -22,15 +22,27 @@ html,body{margin:0;background:#070605}
 .water{font-size:26px;line-height:30px;font-weight:700;font-style:italic;color:#bfe0ea;white-space:pre;text-align:center;text-shadow:0 0 2px rgba(11,8,6,.95),0 0 6px rgba(11,8,6,.8)}
 .region{font-family:Anton,"Noto Sans",sans-serif;font-size:52px;line-height:60px;letter-spacing:.12em;color:rgba(243,233,218,.92);white-space:pre;text-align:center}
 .plate{height:54px;padding:0 22px;display:flex;align-items:center;border-radius:999px;background:rgba(243,233,218,.95);box-shadow:0 2px 10px rgba(11,8,6,.45);font-family:Anton,"Noto Sans",sans-serif;font-size:38px;line-height:54px;color:#15100b;white-space:nowrap}
+/* 0.4.0 map names: a region in tracked Anton, a source's own term in italic in its area's ink. */
+.region-name{font-family:Anton,"Noto Sans",sans-serif;letter-spacing:.12em;text-indent:.12em;color:rgba(243,233,218,.94);white-space:nowrap;text-shadow:0 0 2px rgba(11,8,6,.95),0 0 8px rgba(11,8,6,.8),0 1px 14px rgba(11,8,6,.6)}
+.area-label{font-weight:700;white-space:nowrap;text-shadow:0 0 2px rgba(11,8,6,.95),0 0 8px rgba(11,8,6,.8),0 1px 14px rgba(11,8,6,.6)}
+.quoted{font-weight:700;font-style:italic;white-space:nowrap;text-shadow:0 0 2px rgba(11,8,6,.95),0 0 8px rgba(11,8,6,.8),0 1px 14px rgba(11,8,6,.6)}
+/* 0.4.0 subtitles on the image: no band; a 9 px dark stroke painted under
+   each letter and a soft shadow keep it legible over sand, sea or forest. */
+#subtitles{left:60px;top:1316px;width:960px;height:136px;display:flex;flex-direction:column;justify-content:center}
+.sub-line{text-align:center;white-space:pre;font-size:56px;line-height:68px;font-weight:800;color:#fffaf2}
+.sub-text{-webkit-text-stroke:9px rgba(11,8,6,.92);paint-order:stroke fill;text-shadow:0 2px 14px rgba(11,8,6,.7)}
+/* The highlight box grows sideways through shadows, never padding, so no
+   advance width changes and the line never reflows. */
+.lit{background:#e8b96a;color:#1a120a;border-radius:6px;box-shadow:6px 0 0 #e8b96a,-6px 0 0 #e8b96a;-webkit-text-stroke:0;text-shadow:none}
 </style></head><body><div id="frame">
 <canvas id="earth" width="1080" height="1920"></canvas>
-<svg id="lines" width="1080" height="1920" viewBox="0 0 1080 1920" aria-hidden="true"><defs><filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="6"/></filter><pattern id="hatch-a" patternUnits="userSpaceOnUse" width="18" height="18" patternTransform="rotate(45)"><rect width="18" height="18" fill="#e8b96a" fill-opacity="0.10"/><line x1="9" y1="0" x2="9" y2="18" stroke="#0b0806" stroke-opacity="0.45" stroke-width="8"/><line x1="9" y1="0" x2="9" y2="18" stroke="#e8b96a" stroke-width="4"/></pattern><pattern id="swatch-hatch-a" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(45)"><line x1="3.5" y1="0" x2="3.5" y2="7" stroke="#e8b96a" stroke-width="2"/></pattern><pattern id="hatch-b" patternUnits="userSpaceOnUse" width="18" height="18" patternTransform="rotate(45)"><rect width="18" height="18" fill="#6cc3b5" fill-opacity="0.10"/><line x1="9" y1="0" x2="9" y2="18" stroke="#0b0806" stroke-opacity="0.45" stroke-width="8"/><line x1="9" y1="0" x2="9" y2="18" stroke="#6cc3b5" stroke-width="4"/></pattern><pattern id="swatch-hatch-b" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(45)"><line x1="3.5" y1="0" x2="3.5" y2="7" stroke="#6cc3b5" stroke-width="2"/></pattern><pattern id="hatch-c" patternUnits="userSpaceOnUse" width="18" height="18" patternTransform="rotate(45)"><rect width="18" height="18" fill="#e3876a" fill-opacity="0.10"/><line x1="9" y1="0" x2="9" y2="18" stroke="#0b0806" stroke-opacity="0.45" stroke-width="8"/><line x1="9" y1="0" x2="9" y2="18" stroke="#e3876a" stroke-width="4"/></pattern><pattern id="swatch-hatch-c" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(45)"><line x1="3.5" y1="0" x2="3.5" y2="7" stroke="#e3876a" stroke-width="2"/></pattern></defs><g id="fills"></g><g id="borders" fill="none" stroke-linecap="round" stroke-linejoin="round"></g><g id="edges" fill="none" stroke-linecap="round" stroke-linejoin="round"></g><g id="rivers" fill="none" stroke-linecap="round" stroke-linejoin="round"></g><g id="outlines" stroke-linejoin="round"></g></svg>
-<div style="width:1080px;height:600px;background:linear-gradient(180deg,rgba(7,6,5,.72) 0px,rgba(7,6,5,.55) 420px,rgba(7,6,5,0) 600px)"></div>
+<svg id="lines" width="1080" height="1920" viewBox="0 0 1080 1920" aria-hidden="true"><defs><filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="6"/></filter></defs><g id="fills"></g><g id="borders" fill="none" stroke-linecap="round" stroke-linejoin="round"></g><g id="edges" fill="none" stroke-linecap="round" stroke-linejoin="round"></g><g id="rivers" fill="none" stroke-linecap="round" stroke-linejoin="round"></g><g id="outlines" stroke-linejoin="round"></g></svg>
+<div id="scrim"></div>
 <div id="names"></div>
-<div style="top:940px;width:1080px;height:980px;background:linear-gradient(180deg,rgba(21,16,11,0) 0px,rgba(21,16,11,.92) 130px,rgba(21,16,11,.92) 980px)"></div>
-<div id="head" style="left:120px;top:290px;width:840px;display:flex;flex-direction:column;gap:12px"></div>
-<div id="subtitles" style="left:120px;top:948px;width:660px"></div>
-<div id="panel" style="left:120px;top:1064px;width:660px;height:176px;display:flex;flex-direction:column;justify-content:flex-end;gap:16px"></div>
+<div id="veil"></div>
+<div id="head" style="display:flex;flex-direction:column;gap:12px"></div>
+<div id="subtitles"></div>
+<div id="panel" style="display:flex;flex-direction:column;justify-content:flex-end"></div>
 <div id="closing" style="left:120px;width:840px;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center"></div>
 </div>
 <script>
@@ -317,6 +329,19 @@ const el = (tag, style, text) => {
 };
 const SVG = "http://www.w3.org/2000/svg";
 const INK = { a: "#e8b96a", b: "#6cc3b5", c: "#e3876a" };
+// The neutral ink of the « Zone approximative » swatch (0.4.0).
+const NOTE_INK = "#a8977f";
+// Hatching for each ink at 45° and, for an area inside an earlier one, at
+// 135° so the overlap reads as crossing; small swatches for the legend.
+{
+  let defs = "";
+  for (const [k, v] of Object.entries(INK))
+    for (const angle of [45, 135])
+      defs += \`<pattern id="hatch-\${k}-\${angle}" patternUnits="userSpaceOnUse" width="18" height="18" patternTransform="rotate(\${angle})"><rect width="18" height="18" fill="\${v}" fill-opacity="0.10"/><line x1="9" y1="0" x2="9" y2="18" stroke="#0b0806" stroke-opacity="0.45" stroke-width="8"/><line x1="9" y1="0" x2="9" y2="18" stroke="\${v}" stroke-width="4"/></pattern>\`;
+  for (const [k, v] of [...Object.entries(INK), ["note", NOTE_INK]])
+    defs += \`<pattern id="swatch-hatch-\${k}" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(45)"><line x1="3.5" y1="0" x2="3.5" y2="7" stroke="\${v}" stroke-width="2"/></pattern>\`;
+  document.querySelector("#lines defs").insertAdjacentHTML("beforeend", defs);
+}
 function path(d, attrs) {
   const p = document.createElementNS(SVG, "path");
   p.setAttribute("d", d);
@@ -333,7 +358,7 @@ function group(opacity, ...children) {
 // hatched with a dashed edge; every bright stroke over a dark keyline.
 function areaFill(a) {
   return group(a.opacity, path(a.d, a.uncertain
-    ? { fill: \`url(#hatch-\${a.ink})\`, "fill-rule": "evenodd" }
+    ? { fill: \`url(#hatch-\${a.ink}-\${a.hatch ?? 45})\`, "fill-rule": "evenodd" }
     : { fill: INK[a.ink], "fill-opacity": 0.3, "fill-rule": "evenodd" }));
 }
 function areaEdge(a) {
@@ -362,6 +387,9 @@ for (const [k, v] of Object.entries(INK)) {
   SWATCHES["certain-" + k] = \`<rect x="2" y="2" width="40" height="20" rx="3" fill="\${v}" fill-opacity="0.35" stroke="\${v}" stroke-width="3"/>\`;
   SWATCHES["uncertain-" + k] = \`<rect x="2" y="2" width="40" height="20" rx="3" fill="url(#swatch-hatch-\${k})" stroke="\${v}" stroke-width="3" stroke-dasharray="6 4"/>\`;
 }
+SWATCHES.approximate = \`<rect x="2" y="2" width="40" height="20" rx="3" fill="url(#swatch-hatch-note)" stroke="\${NOTE_INK}" stroke-width="3" stroke-dasharray="6 4"/>\`;
+// A name the placement rule could not fit on the map is listed as text.
+SWATCHES.text = "";
 
 function river(d, state) {
   const g = document.createElementNS(SVG, "g");
@@ -405,7 +433,7 @@ function overlayLayers(f) {
 // Draws the overlays into the region's map and uploads it as the drape.
 // The SVG is the flat style's own, so strokes, hatching and glow match.
 async function drape(f) {
-  const key = JSON.stringify([[f.areas, f.borders, f.rivers].map((list) => list.map((x) => x.opacity ?? x.state)), f.outline?.opacity, f.relief.drape]);
+  const key = JSON.stringify([[f.areas, f.borders, f.rivers].map((list) => list.map((x) => x.opacity ?? x.state)), f.outline?.opacity, f.relief.drape, f.chapter]);
   if (key === relief.drapeKey) return;
   relief.drapeKey = key;
   const { width, height, scale } = f.relief.drape;
@@ -490,8 +518,20 @@ window.drawFrame = async (f) => {
     overlayLayers(f).forEach((layer, i) => document.getElementById(LAYERS[i]).replaceChildren(...layer));
   }
 
+  // The 12-second video keeps 0.2.0's feed layout; a chained video uses the
+  // 0.4.0 « plein écran » bands.
+  const full = f.layout === "fullscreen";
+  const L = LAYOUTS[f.layout];
+  document.getElementById("scrim").setAttribute("style", L.scrim);
+  document.getElementById("veil").setAttribute("style", L.veil);
+  const head = document.getElementById("head");
+  Object.assign(head.style, L.head);
+  const panel = document.getElementById("panel");
+  Object.assign(panel.style, L.panel);
+
   const names = document.getElementById("names");
   names.replaceChildren();
+  const nameNodes = [];
   for (const p of f.places) {
     if (p.opacity <= 0) continue;
     const g = el("div", \`position:absolute;left:0;top:0;width:1080px;height:1920px;opacity:\${p.opacity}\`);
@@ -503,13 +543,19 @@ window.drawFrame = async (f) => {
     name.className = "place halo";
     g.append(name);
     names.append(g);
+    nameNodes.push(["place", name]);
   }
   for (const l of [...f.labels, ...f.names]) {
     if (l.opacity <= 0) continue;
-    const centred = \`position:absolute;left:\${l.x}px;top:\${l.y}px;transform:translate(-50%,-50%);opacity:\${l.opacity}\`;
+    // A placed name (0.4.0) carries the size the placement rule chose.
+    const sized = l.size ? \`;font-size:\${l.size}px;line-height:\${l.size + LEADING[l.style]}px\` : "";
+    const centred = \`position:absolute;left:\${l.x}px;top:\${l.y}px;transform:translate(-50%,-50%);opacity:\${l.opacity}\${sized}\`;
     const name = el("div", l.colour ? centred + ";color:" + l.colour : centred, l.name);
-    name.className = { plate: "plate", area: "area-name", water: "water halo", region: "region halo" }[l.style];
+    name.className = full
+      ? { plate: "plate", water: "water halo", region: "region-name", quoted: "quoted", area: "area-label" }[l.style]
+      : { plate: "plate", area: "area-name", water: "water halo", region: "region halo" }[l.style];
     names.append(name);
+    nameNodes.push([l.kind ?? "label", name]);
   }
   const outlineLabel = f.outline?.label;
   if (outlineLabel && outlineLabel.opacity > 0) {
@@ -518,10 +564,10 @@ window.drawFrame = async (f) => {
     name.className = "outline-name halo";
     name.append(el("div", "font-size:30px;line-height:34px", outlineLabel.name), el("div", "font-size:20px;line-height:24px", "contour reconstitu\\u00e9"));
     names.append(name);
+    nameNodes.push(["label", name]);
   }
 
   const tape = (style) => el("span", "padding:3px 12px;border-radius:999px;background:#ffe58a;color:#2b2100;font-size:16px;line-height:22px;font-weight:800;" + style, f.tape);
-  const head = document.getElementById("head");
   head.replaceChildren();
   const signature = el("div", \`display:flex;align-items:center;gap:12px;opacity:\${f.head.signature}\`);
   const logo = el("img", "width:36px;height:36px;display:block");
@@ -543,40 +589,25 @@ window.drawFrame = async (f) => {
     head.append(marker);
   }
 
-  // One backing box per line, opacity the only animated property (board 9).
-  const subtitles = document.getElementById("subtitles");
-  subtitles.replaceChildren();
-  const subtitleBoxes = [];
-  if (f.subtitle && f.subtitle.opacity > 0) {
-    subtitles.style.opacity = f.subtitle.opacity;
-    f.subtitle.lines.forEach((line, i) => {
-      const row = el("div", \`position:absolute;left:0;top:\${i * 54}px;white-space:pre;font-size:36px;line-height:54px;font-weight:700;color:#f3e9da\`);
-      const box = el("span", "background:rgba(21,16,11,.82);padding:6px 14px;border-radius:6px");
-      for (const run of line) {
-        if (run.arabic) {
-          const word = el("bdi", "font-family:'Noto Sans Arabic',sans-serif;font-style:normal;font-weight:600", run.text);
-          word.lang = "ar"; word.dir = "rtl";
-          box.append(word);
-        } else box.append(run.italic ? el("i", null, run.text) : document.createTextNode(run.text));
-      }
-      row.append(box);
-      subtitles.append(row);
-      subtitleBoxes.push(box);
-    });
-  }
+  const subtitle = window.drawSubtitle(f.subtitle);
 
-  const panel = document.getElementById("panel");
   panel.replaceChildren();
-  // Up to two items on one row each; three or four share a two-column grid.
-  const legend = el("div", f.legend.length > 2
-    ? "display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 24px"
-    : "display:flex;flex-wrap:wrap;gap:12px 28px");
+  const legend = el("div", full
+    ? "display:flex;flex-wrap:wrap;gap:10px 28px"
+    // Up to two items on one row each; three or four share a two-column grid.
+    : f.legend.length > 2
+      ? "display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 24px"
+      : "display:flex;flex-wrap:wrap;gap:12px 28px");
   for (const item of f.legend) {
-    const row = el("div", \`display:flex;align-items:center;gap:12px;opacity:\${item.opacity}\`);
-    const swatch = document.createElementNS(SVG, "svg");
-    swatch.setAttribute("width", 44); swatch.setAttribute("height", 24);
-    swatch.innerHTML = SWATCHES[item.swatch];
-    row.append(swatch, el("span", \`font-size:\${f.legend.length > 1 ? 24 : 26}px;line-height:32px;font-weight:700;color:\${item.colour}\`, item.label));
+    const row = el("div", \`display:flex;align-items:center;gap:\${full ? 10 : 12}px;opacity:\${item.opacity}\`);
+    if (item.swatch !== "text") {
+      const swatch = document.createElementNS(SVG, "svg");
+      swatch.setAttribute("width", full ? 36 : 44); swatch.setAttribute("height", 24);
+      swatch.setAttribute("viewBox", "0 0 44 24");
+      swatch.innerHTML = SWATCHES[item.swatch];
+      row.append(swatch);
+    }
+    row.append(el("span", \`font-size:\${full || f.legend.length > 1 ? 24 : 26}px;line-height:32px;font-weight:700;color:\${item.colour}\`, item.label));
     legend.append(row);
   }
   const caption = el("p", "margin:0;font-size:22px;line-height:28px;color:#cbbba3");
@@ -592,6 +623,7 @@ window.drawFrame = async (f) => {
   const closing = document.getElementById("closing");
   closing.replaceChildren();
   const closingParts = [];
+  let closingTape = null;
   if (f.closing && f.closing.opacity > 0) {
     const a = f.closing.variant === "A";
     closing.style.top = (a ? 540 : 600) + "px";
@@ -604,19 +636,100 @@ window.drawFrame = async (f) => {
     if (a) closingParts.push(
       el("span", "margin-top:28px;font-size:30px;line-height:40px;font-weight:700;color:#f3e9da", f.closing.sentence),
       el("span", "margin-top:6px;padding:12px 28px;border-radius:999px;border:2px solid #e8b96a;color:#e8b96a;font-size:34px;line-height:40px;font-weight:800;letter-spacing:.04em", f.closing.address));
-    // The top signature has left, so the tape moves to the top right.
-    if (f.tape) closingParts.push(tape("position:fixed;right:120px;top:300px"));
     closing.append(...closingParts);
+    // The top signature has left, so the tape moves to the top right.
+    if (f.tape) {
+      closingTape = tape(L.closingTape);
+      closing.append(closingTape);
+    }
   }
 
-  // Report the real glyph boxes so the safe zone is checked on what was drawn.
+  // Report the real glyph boxes, with their kind, so the layout gate checks
+  // what was drawn.
   const boxes = [];
-  const add = (id, node) => { const r = node.getBoundingClientRect(); boxes.push({ id, box: { x: r.left, y: r.top, w: r.width, h: r.height } }); };
-  add("signature", signature); add("title", title); add("legend", legend); add("caption", caption);
-  if (marker) add("marker", marker);
-  subtitleBoxes.forEach((box) => add("subtitle " + box.textContent, box));
-  closingParts.forEach((part, i) => add("closing " + i, part));
-  for (const n of names.querySelectorAll(".place,.plate,.area-name,.water,.region,.outline-name")) add(n.textContent, n);
+  const add = (id, kind, node) => { const r = node.getBoundingClientRect(); boxes.push({ id, kind, box: { x: r.left, y: r.top, w: r.width, h: r.height } }); };
+  add("signature", "signature", signature); add("title", "title", title); add("legend", "legend", legend); add("caption", "caption", caption);
+  if (marker) add("marker", "marker", marker);
+  subtitle.lines.forEach((box, i) => boxes.push({ id: "subtitle line " + (i + 1), kind: "subtitle", box }));
+  closingParts.forEach((part, i) => add("closing " + i, "closing", part));
+  if (closingTape) add("tape", "signature", closingTape);
+  for (const [kind, n] of nameNodes) add(n.textContent, kind, n);
   return boxes;
+};
+
+// Line height over font size for each placed name style.
+const LEADING = { region: 8, area: 6, quoted: 6, water: 4, plate: 16 };
+
+// One subtitle chunk in the band, centred on x 540: each line a run of
+// units, the lit unit (if any) in the accent box. Units are always wrapped,
+// lit or not, so the highlight changes paint only, never layout. Returns the
+// glyph boxes of each line and each unit.
+window.drawSubtitle = (subtitle) => {
+  const band = document.getElementById("subtitles");
+  band.replaceChildren();
+  const result = { lines: [], units: [] };
+  if (!subtitle || subtitle.opacity <= 0) return result;
+  band.style.opacity = subtitle.opacity;
+  const unitNodes = [];
+  const lineNodes = subtitle.lines.map((line) => {
+    const row = el("div");
+    row.className = "sub-line";
+    const text = el("span");
+    text.className = "sub-text";
+    let unitNode = null;
+    for (const run of line) {
+      let node;
+      if (run.arabic) {
+        node = el("bdi", "font-family:'Noto Sans Arabic',sans-serif;font-style:normal;font-weight:600", run.text);
+        node.lang = "ar"; node.dir = "rtl";
+      } else node = run.italic ? el("i", null, run.text) : document.createTextNode(run.text);
+      if (run.unit === undefined) {
+        unitNode = null;
+        text.append(node);
+        continue;
+      }
+      if (!unitNode || unitNode.dataset.unit !== String(run.unit)) {
+        unitNode = el("span");
+        unitNode.dataset.unit = run.unit;
+        if (run.unit === subtitle.highlight) unitNode.className = "lit";
+        unitNodes[run.unit] = unitNode;
+        text.append(unitNode);
+      }
+      unitNode.append(node);
+    }
+    row.append(text);
+    band.append(row);
+    return [row, text];
+  });
+  const box = (node) => { const r = node.getBoundingClientRect(); return { x: r.left, y: r.top, w: r.width, h: r.height }; };
+  // A line's box: the ink's width, and the 68 px line box's height. The
+  // glyphs' content area overhangs the line box by a few pixels at 56 px,
+  // which the band does not count.
+  result.lines = lineNodes.map(([row, text]) => {
+    const [r, t] = [box(row), box(text)];
+    return { x: t.x, w: t.w, y: r.y, h: r.h };
+  });
+  result.units = unitNodes.map(box);
+  return result;
+};
+
+// Where each layout puts its fixed blocks.
+const LAYOUTS = {
+  feed: {
+    scrim: "width:1080px;height:600px;background:linear-gradient(180deg,rgba(7,6,5,.72) 0px,rgba(7,6,5,.55) 420px,rgba(7,6,5,0) 600px)",
+    veil: "top:940px;width:1080px;height:980px;background:linear-gradient(180deg,rgba(21,16,11,0) 0px,rgba(21,16,11,.92) 130px,rgba(21,16,11,.92) 980px)",
+    head: { left: "120px", top: "290px", width: "840px" },
+    panel: { left: "120px", top: "1064px", width: "660px", height: "176px", gap: "16px" },
+    closingTape: "position:fixed;right:120px;top:300px",
+  },
+  // Board 11 · Full screen: the head high in the dark of space, the image in
+  // the clear to y 1540, then one fixed veil under legend and credits.
+  fullscreen: {
+    scrim: "width:1080px;height:420px;background:linear-gradient(180deg,rgba(7,6,5,.72) 0px,rgba(7,6,5,.48) 240px,rgba(7,6,5,0) 420px)",
+    veil: "top:1540px;width:1080px;height:380px;background:linear-gradient(180deg,rgba(21,16,11,0) 0px,rgba(21,16,11,.9) 100px,rgba(21,16,11,.94) 380px)",
+    head: { left: "60px", top: "100px", width: "960px" },
+    panel: { left: "60px", top: "1652px", width: "960px", height: "232px", gap: "14px" },
+    closingTape: "position:fixed;right:60px;top:106px",
+  },
 };
 </script></body></html>`;

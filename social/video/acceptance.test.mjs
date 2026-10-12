@@ -200,21 +200,23 @@ test("a relief video needs the verified height model", async () => {
   }
 });
 
-// Chained chapters (0.3.0-proposition). The flat style keeps these renders
-// short; the relief proof is inspected by eye.
+// Chained chapters (0.3.0-proposition) in the « plein écran » layout of
+// 0.4.0-proposition. The flat style keeps these renders short; the relief
+// proof is inspected by eye. Chapter 5 draws the synthetic octagon so the
+// dotted-line check knows where an edge runs.
 const fixtures = new URL("./fixtures/", import.meta.url);
 const saharaJson = JSON.parse(
   await readFile(new URL("sahara.chapters.sequence.json", fixtures))
 );
-const sahara = (ending) =>
-  loadSequence(
-    {
-      ...structuredClone(saharaJson),
-      style: "flat",
-      ...(ending && { ending }),
-    },
-    { dir: fixtures }
-  );
+const sahara = (ending) => {
+  const input = { ...structuredClone(saharaJson), style: "flat" };
+  if (ending) input.ending = ending;
+  Object.assign(input.chapters[4].outline, {
+    file: "synthetic-outline.geojson",
+    illustrative: true,
+  });
+  return loadSequence(input, { dir: fixtures });
+};
 const pixel = async (png, x, y) => {
   const { data } = await sharp(png)
     .extract({ left: x, top: y, width: 1, height: 1 })
@@ -227,28 +229,84 @@ const inkDistance = (rgb, hex) =>
     ...rgb.map((v, i) => v - parseInt(hex.slice(1 + 2 * i, 3 + 2 * i), 16))
   );
 
+// The subtitle band's letters (pixels close to the subtitle ink), and the
+// share of them whose left edge has a dark stroke within 5 px.
+async function subtitleInk(png) {
+  const { data, info } = await sharp(png)
+    .extract({ left: 60, top: 1316, width: 960, height: 136 })
+    .raw()
+    .toBuffer({ resolveWithObject: true });
+  const at = (x, y) => {
+    const i = (y * info.width + x) * info.channels;
+    return [data[i], data[i + 1], data[i + 2]];
+  };
+  const letter = (x, y) => inkDistance(at(x, y), "#fffaf2") < 24;
+  const dark = (x, y) => {
+    const [r, g, b] = at(x, y);
+    return 0.2126 * r + 0.7152 * g + 0.0722 * b < 30;
+  };
+  let letters = 0;
+  let edges = 0;
+  let edged = 0;
+  for (let y = 0; y < info.height; y++)
+    for (let x = 6; x < info.width; x++) {
+      if (!letter(x, y)) continue;
+      letters++;
+      if (letter(x - 1, y)) continue;
+      edges++;
+      if ([2, 3, 4, 5].some((d) => dark(x - d, y))) edged++;
+    }
+  return { letters, edged: edges ? edged / edges : 0 };
+}
+
+// Mean colour difference of two frames over a box.
+async function difference(a, b, box) {
+  const [pa, pb] = await Promise.all(
+    [a, b].map((png) => sharp(png).extract(box).raw().toBuffer())
+  );
+  let sum = 0;
+  for (let i = 0; i < pa.length; i++) sum += Math.abs(pa[i] - pb[i]);
+  return sum / pa.length;
+}
+
 // @req REQ-186
-test("a chapter hold draws its marker bars and subtitle box; the band is empty between chapters", async () => {
-  // 28 s: chapter 3 of 5 reads its first subtitle. 25.8 s: chapter 2 has
-  // left and chapter 3 has not entered.
-  const [hold, gap] = await renderFrames(sahara(), [840, 774], options());
+test("a chapter hold draws its marker bars and an outlined subtitle on the image; the band is empty between chapters", async () => {
+  // 28 s: chapter 3 of 5 reads « l'Afrique à l'ouest / de l'Égypte. ».
+  // 23.9 s: chapter 2 has left and chapter 3 has not entered.
+  const [hold, gap] = await renderFrames(sahara(), [840, 717], options());
   const bars = ["#a8977f", "#a8977f", "#e8b96a", "#4a3c2c", "#4a3c2c"];
   for (const [j, ink] of bars.entries())
     assert.ok(
-      inkDistance(await pixel(hold, 134 + j * 34, 442), ink) < 12,
+      inkDistance(await pixel(hold, 74 + j * 34, 260), ink) < 12,
       `bar ${j + 1} is ${ink}`
     );
-  // The left padding of the box: #15100b at 82 % stays dark over any ground.
-  const box = await windowStats(hold, 127, 975, 10);
-  const luma =
-    0.2126 * box.mean[0] + 0.7152 * box.mean[1] + 0.0722 * box.mean[2];
-  assert.ok(luma < 60 && box.sd < 4, "the subtitle sits on its dark box");
-  const [text, empty] = [
-    await windowStats(hold, 250, 975, 40),
-    await windowStats(gap, 250, 975, 40),
-  ];
-  assert.ok(text.max > 200, "the subtitle is drawn");
-  assert.ok(empty.max < text.max - 60, "the band is empty between chapters");
+  const [text, empty] = [await subtitleInk(hold), await subtitleInk(gap)];
+  assert.ok(text.letters > 2000, `the subtitle is drawn (${text.letters})`);
+  assert.ok(
+    text.edged > 0.9,
+    `a dark stroke edges the letters (${text.edged})`
+  );
+  // Beside the centred lines the ground is the gap frame's: no band.
+  const beside = { left: 70, top: 1320, width: 150, height: 128 };
+  assert.ok((await difference(hold, gap, beside)) < 2, "no band behind");
+  assert.ok(empty.letters < 50, "the band is empty between chapters");
+});
+
+// @req REQ-186
+test("an area named by a chunk is drawn once it has entered", async () => {
+  // 20.0 s: « désert » has entered; « pays des Berbères » enters at 20.1 s
+  // and is whole by 21.3 s. The sample point is inside the Berbers' band,
+  // clear of its name and of the edge it shares with the desert band.
+  const seq = sahara();
+  const [before, after] = await renderFrames(seq, [600, 640], options());
+  const { camera } = frameState(seq, 640);
+  const inside = project(camera, 12, 34.5);
+  const stats = async (png) =>
+    windowStats(png, Math.round(inside.x), Math.round(inside.y), 30);
+  assert.ok(
+    (await stats(after)).sd > (await stats(before)).sd + 8,
+    "the Berbers' band is hatched once it has entered"
+  );
 });
 
 // @req REQ-186
@@ -271,15 +329,15 @@ test("ending A adds the site pill; both endings keep the imagery line", async ()
   assert.equal(await accentPixels(endB), 0, "ending B shows no pill");
   for (const png of [endA, endB])
     assert.ok(
-      (await windowStats(png, 200, 1226, 20)).max > 120,
-      "the imagery credit stays on the last frame"
+      (await windowStats(png, 200, 1870, 20)).max > 120,
+      "the imagery credit stays on the last frame, at the bottom"
     );
 });
 
 // @req REQ-186
 test("a reconstructed outline is drawn in dots, never as a solid line", async () => {
   const seq = sahara();
-  const frame = 1470; // 49 s, chapter 5 fully drawn
+  const frame = 1500; // 50 s, chapter 5 fully drawn
   const [hold] = await renderFrames(seq, [frame], options());
   const { camera } = frameState(seq, frame);
   const [from, to] = [project(camera, 19, 14.5), project(camera, 18.1, 12.4)];

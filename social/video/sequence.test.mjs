@@ -14,10 +14,12 @@ import {
   VIEW_CENTRE,
   TOTAL_FRAMES,
   subtitleCharacters,
-  readingSeconds,
-  subtitleLines,
   chapterTimeline,
   frameCount,
+  holdCameras,
+  RELIEF,
+  FULLSCREEN,
+  BANDS,
 } from "./sequence.mjs";
 
 const congo = JSON.parse(
@@ -363,9 +365,10 @@ test("the relief hold layout stays in the safe zone", () => {
   assert.deepEqual(checkLayout(holdLayout(relief())), []);
 });
 
-// Chained chapters, subtitles and endings: EthniAfrica Vidéo carte
-// 0.3.0-proposition (boards 7 to 10). The expected times are the design's
-// timeline.json for the 59.7 s Sahara example.
+// Chained chapters (0.3.0-proposition, boards 7 to 10) in the « plein écran »
+// layout of 0.4.0-proposition (board 11 · Full screen). The expected times
+// are the 0.4.0 design's timeline.json for the 58.9 s Sahara example;
+// subtitles and areas have their own files (chunks.test.mjs, area-entries.test.mjs).
 
 const fixtures = new URL("./fixtures/", import.meta.url);
 const saharaJson = JSON.parse(
@@ -382,8 +385,7 @@ const near = (actual, expected, what) =>
     Math.abs(actual - expected) <= 1 / 30 + 1e-9,
     `${what}: ${actual} s, expected ${expected} s`
   );
-const NBSP = " ";
-const lineTexts = (lines) => lines.map((l) => l.map((r) => r.text).join(""));
+const NBSP = "\u00a0";
 
 // @req REQ-186
 test("every character counts once, spaces and punctuation included", () => {
@@ -391,97 +393,12 @@ test("every character counts once, spaces and punctuation included", () => {
   assert.equal(subtitleCharacters(`«${NBSP}désert${NBSP}»`), 10);
   // A letter with its diacritic counts once, composed or not.
   assert.equal(subtitleCharacters("é"), 1);
-  assert.equal(subtitleCharacters("é"), 1);
+  assert.equal(subtitleCharacters("e\u0301"), 1);
   assert.equal(subtitleCharacters("ṣaḥrāʾ"), 6);
+  // An Arabic word counts its letters.
   assert.equal(subtitleCharacters("صحراء"), 5);
   // Italic markers are markup, not characters.
   assert.equal(subtitleCharacters("l'arabe *ṣaḥrāʾ*"), 14);
-});
-
-// @req REQ-186
-test("full opacity lasts max(1.5 s, characters ÷ 15 + 0.3 s), rounded up to 0.1 s, at most 7 s", () => {
-  const of = (n) => readingSeconds("x".repeat(n));
-  assert.equal(of(10), 1.5);
-  assert.equal(of(30), 2.3);
-  assert.equal(of(50), 3.7);
-  assert.equal(of(64), 4.6);
-  assert.equal(of(1), 1.5);
-  assert.equal(of(200), 7);
-  // timeline.json counts 51 characters for subtitle 1.1 and reads it 3.7 s.
-  const first = saharaJson.chapters[0].subtitles[0];
-  assert.equal(subtitleCharacters(first), 51);
-  assert.equal(readingSeconds(first), 3.7);
-});
-
-// @req REQ-186
-test("a subtitle sets at most 32 characters a line, two lines, 64 in all", () => {
-  for (const chapter of saharaJson.chapters)
-    for (const text of chapter.subtitles) {
-      const lines = lineTexts(subtitleLines(text));
-      assert.ok(lines.length >= 1 && lines.length <= 2);
-      for (const line of lines)
-        assert.ok(subtitleCharacters(line) <= 32, `line too long: ${line}`);
-    }
-  assert.deepEqual(lineTexts(subtitleLines("Une ligne courte.")), [
-    "Une ligne courte.",
-  ]);
-  assert.throws(() => subtitleLines("x ".repeat(33).trim()), /64/);
-  assert.throws(
-    () => subtitleLines("Anticonstitutionnellementissimement dit."),
-    /32/
-  );
-});
-
-// @req REQ-186
-test("lines are balanced, break only at plain spaces, and never leave one or two words", () => {
-  assert.deepEqual(
-    lineTexts(
-      subtitleLines(
-        `Il y a 14${NBSP}500 à 5${NBSP}000 ans, un grand lac couvrait ce bassin.`
-      )
-    ),
-    [
-      `Il y a 14${NBSP}500 à 5${NBSP}000 ans, un`,
-      "grand lac couvrait ce bassin.",
-    ]
-  );
-  const quoted = lineTexts(
-    subtitleLines(
-      `entre «${NBSP}pays${NBSP}des${NBSP}Berbères${NBSP}» et «${NBSP}pays${NBSP}des${NBSP}Noirs${NBSP}».`
-    )
-  );
-  assert.ok(
-    quoted[0].endsWith(`Berbères${NBSP}»`),
-    "a phrase in guillemets is never split"
-  );
-  // The only break that fits leaves two words on the second line.
-  assert.throws(
-    () =>
-      subtitleLines(
-        "Extraordinaires parallèlement remarquablement indubitablement"
-      ),
-    /two words/
-  );
-});
-
-// @req REQ-186
-test("Arabic script stays beside its italic transcription, in parentheses, on one line", () => {
-  const lines = subtitleLines(
-    `Sahara vient de l'arabe *ṣaḥrāʾ* (صحراء), «${NBSP}désert${NBSP}».`
-  );
-  assert.equal(lines.length, 2);
-  assert.deepEqual(lines[0], [{ text: "Sahara vient de l'arabe" }]);
-  assert.deepEqual(lines[1][0], { text: "ṣaḥrāʾ", italic: true });
-  assert.equal(lines[1].find((r) => r.arabic).text, "صحراء");
-  assert.equal(lineTexts(lines)[1], `ṣaḥrāʾ (صحراء), «${NBSP}désert${NBSP}».`);
-  assert.throws(
-    () => subtitleLines("Le mot صحراء veut dire désert."),
-    /Arabic/
-  );
-  assert.throws(
-    () => subtitleLines("Le mot ṣaḥrāʾ (صحراء) veut dire désert."),
-    /Arabic/
-  );
 });
 
 // @req REQ-186
@@ -489,7 +406,9 @@ test("Arabic script appears once per video, in a subtitle only", () => {
   assert.throws(
     () =>
       sahara((s) => {
-        s.chapters[1].subtitles[0] = "L'arabe *ṣaḥrāʾ* (صحراء) revient ici.";
+        s.chapters[1].sentences[0][0] = {
+          text: `L'arabe *ṣaḥrāʾ*${NBSP}(صحراء) revient.`,
+        };
       }),
     /Arabic.*once/i
   );
@@ -501,58 +420,15 @@ test("Arabic script appears once per video, in a subtitle only", () => {
 });
 
 // @req REQ-186
-test("the Sahara example reproduces the design's timeline within one frame", () => {
-  const timeline = chapterTimeline(sahara());
-  const starts = [6.4, 16.2, 25.9, 34.6, 46.1];
-  timeline.chapters.forEach((c, i) =>
-    near(c.start, starts[i], `chapter ${i + 1}`)
-  );
-  // timeline.json: fadeIn, fullFrom, fullTo, fadeOutEnd of each subtitle.
-  const expected = [
-    [7.3, 7.5, 11.2, 11.4],
-    [11.6, 11.8, 15.4, 15.6],
-    [17.1, 17.3, 20.8, 21.0],
-    [21.2, 21.4, 25.1, 25.3],
-    [26.8, 27.0, 29.7, 29.9],
-    [30.1, 30.3, 33.8, 34.0],
-    [35.5, 35.7, 38.8, 39.0],
-    [39.2, 39.4, 43.1, 43.3],
-    [47.0, 47.2, 51.5, 51.7],
-    [51.9, 52.1, 55.5, 55.7],
-  ];
-  const subtitles = timeline.chapters.flatMap((c) => c.subtitles);
-  assert.equal(subtitles.length, expected.length);
-  subtitles.forEach((s, i) =>
-    ["fadeIn", "fullFrom", "fullTo", "fadeOutEnd"].forEach((key, k) =>
-      near(s[key], expected[i][k], `subtitle ${i} ${key}`)
-    )
-  );
-  near(timeline.chapters[4].travel.start, 43.7, "travel start");
-  near(timeline.chapters[4].travel.duration, 1.8, "travel duration");
-  near(timeline.ending.start, 55.7, "ending");
-  near(timeline.ending.closingIn, 56.7, "closing block");
-  near(timeline.total, 59.7, "total");
-  assert.equal(frameCount(sahara()), 1791);
-  assert.throws(() => frameState(sahara(), 1791));
-});
-
-// @req REQ-186
-test("a same-region change and a camera move follow the timing tables", () => {
+test("a same-region change and a camera move follow the 0.3.0 timing tables", () => {
   const timeline = chapterTimeline(sahara());
   const [one, two] = timeline.chapters;
-  const T = one.subtitles.at(-1).fadeOutEnd;
-  near(one.exit, T, "a chapter leaves once its last subtitle has gone");
+  const T = one.chunks.at(-1).gone;
+  near(one.exit, T, "a chapter leaves once its last chunk has gone");
   near(two.start, T + 0.6, "entries at T + 600 ms");
-  near(two.subtitles[0].fadeIn, T + 1.5, "first subtitle at T + 1500 ms");
-  near(
-    two.subtitles[0].fullFrom - one.subtitles.at(-1).fullTo,
-    1.9,
-    "1.9 s from one subtitle to the next"
-  );
   const [four, five] = timeline.chapters.slice(3);
   near(five.travel.start, four.exit + 0.4, "travel at T + 400 ms");
   near(five.start, four.exit + 2.8, "entries at T + 2800 ms");
-  near(five.subtitles[0].fadeIn, four.exit + 3.7, "subtitle at T + 3700 ms");
   assert.throws(
     () => sahara((s) => (s.chapters[4].camera.travel = 3)),
     /travel/i
@@ -577,16 +453,71 @@ test("the opening plays once and the camera only moves in it or in a travel", ()
     assert.deepEqual(camera(f), camera(f - 1), `camera moved at frame ${f}`);
   }
   assert.notDeepEqual(camera(from), camera(to));
-  // Never a cut: the travel moves a little on every frame.
+  // Never a cut: the travel moves a little on every frame, pitch included.
   for (let f = from + 1; f <= to; f++) {
     const [a, b] = [camera(f - 1), camera(f)];
     assert.ok(Math.hypot(a.lon - b.lon, a.lat - b.lat) < 0.6, `jump at ${f}`);
+    assert.ok(Math.abs(a.pitch - b.pitch) < 0.5, `pitch jump at ${f}`);
   }
   assert.equal(frameState(seq, frameOf(6.4)).chapter, 0);
   assert.equal(frameState(seq, frameOf(7.3)).subtitle.opacity, 0);
   assert.ok(frameState(seq, frameOf(7.4)).subtitle.opacity > 0);
 });
 
+// @req REQ-186
+test("the plein écran relief cameras look down at 70° (66° on the Chad basin) with a 40° field", () => {
+  const seq = sahara();
+  const [a, , , , b] = holdCameras(seq);
+  assert.equal(RELIEF.fov, 40);
+  assert.equal(FULLSCREEN.pitch, 70);
+  // data/cameras-fullscreen.json, « fit »: camera A on North Africa,
+  // 12 881 km from 8° E 18.74° N; camera B on the Chad basin, 5 947 km from
+  // 16° E 13.29° N, pitched 66°. `radius` is the focal length over the
+  // distance in Earth radii.
+  assert.deepEqual(
+    { lon: a.lon, lat: a.lat, pitch: a.pitch, centreY: a.centreY },
+    { lon: 8, lat: 18.7415, pitch: 70, centreY: 880 }
+  );
+  assert.ok(Math.abs(a.radius - 1304.5) < 1, `camera A radius ${a.radius}`);
+  assert.deepEqual(
+    { lon: b.lon, lat: b.lat, pitch: b.pitch, centreY: b.centreY },
+    { lon: 16, lat: 13.2853, pitch: 66, centreY: 880 }
+  );
+  assert.ok(Math.abs(b.radius - 2825.7) < 1, `camera B radius ${b.radius}`);
+  // The globe fills the frame: the « fit » boxes of cameras-fullscreen.json
+  // land where the design's renders put them, to the pixel.
+  const extent = (camera, [lon0, lon1], [lat0, lat1]) => {
+    const points = [];
+    for (let i = 0; i <= 50; i++)
+      for (let j = 0; j <= 50; j++)
+        points.push(
+          project(
+            camera,
+            lon0 + ((lon1 - lon0) * i) / 50,
+            lat0 + ((lat1 - lat0) * j) / 50
+          )
+        );
+    const xs = points.map((p) => p.x);
+    const ys = points.map((p) => p.y);
+    return [Math.min(...xs), Math.max(...xs), Math.min(...ys), Math.max(...ys)];
+  };
+  const close = (actual, expected, what) =>
+    actual.forEach((v, i) =>
+      assert.ok(Math.abs(v - expected[i]) < 1, `${what}: ${actual}`)
+    );
+  close(extent(a, [-17, 33], [4, 37]), [0, 1080, 544.06, 1215.94], "camera A");
+  close(extent(b, [6, 26], [7, 23]), [40, 1040, 494.63, 1185.37], "camera B");
+  const centre = project(a, 8, 18.7415);
+  assert.ok(Math.abs(centre.y - 880) < 1e-6 && Math.abs(centre.x - 540) < 1e-6);
+  // The opening tilts from straight down to the hold pitch, then holds.
+  const pitch = (f) => frameState(seq, f).camera.pitch;
+  assert.equal(pitch(0), 90);
+  assert.equal(pitch(frameOf(6)), 70);
+  // A flat chained video keeps the same view centre.
+  assert.equal(holdCameras(sahara((s) => (s.style = "flat")))[0].centreY, 880);
+});
+
+// The opacities a frame carries, flattened to dotted paths.
 const opacities = (state, prefix = "", out = {}) => {
   for (const [key, value] of Object.entries(state ?? {})) {
     if (["camera", "grade", "dim", "bars", "chapter", "relief"].includes(key))
@@ -600,32 +531,32 @@ const opacities = (state, prefix = "", out = {}) => {
 };
 
 // @req REQ-186
-test("a subtitle is on screen only while nothing else enters, leaves or travels", () => {
+test("nothing leaves before its chapter ends, and nothing enters while a chapter leaves", () => {
   const seq = sahara();
-  const others = (f) => {
-    const { subtitle, ...rest } = frameState(seq, f);
-    return { rest, shown: subtitle?.opacity > 0 };
-  };
-  for (let f = 1; f < frameCount(seq) - 1; f++) {
-    const now = others(f);
-    if (!now.shown) continue;
-    assert.deepEqual(others(f - 1).rest, now.rest, `change before ${f}`);
-    assert.deepEqual(others(f + 1).rest, now.rest, `change after ${f}`);
-  }
-});
-
-// @req REQ-186
-test("one layer never leaves while another enters", () => {
-  const seq = sahara();
+  const timeline = chapterTimeline(seq);
   let before = opacities(frameState(seq, 0));
   for (let f = 1; f < frameCount(seq); f++) {
     const now = opacities(frameState(seq, f));
-    const keys = new Set([...Object.keys(before), ...Object.keys(now)]);
-    const delta = [...keys].map((k) => (now[k] ?? 0) - (before[k] ?? 0));
-    assert.ok(
-      !(delta.some((d) => d > 1e-9) && delta.some((d) => d < -1e-9)),
-      `something enters while something leaves at frame ${f}`
+    const t = f / 30;
+    const leaving = timeline.chapters.some(
+      (c) => t > c.exit && t <= c.exit + 0.4 + 1e-9
     );
+    for (const key of new Set([...Object.keys(before), ...Object.keys(now)])) {
+      const delta = (now[key] ?? 0) - (before[key] ?? 0);
+      if (leaving)
+        assert.ok(delta <= 1e-9, `${key} enters while a chapter leaves, ${f}`);
+      else if (
+        delta < -1e-9 &&
+        !key.startsWith("subtitle.") &&
+        !(key.startsWith("features.") && now[key] >= 0.55 - 1e-9)
+      ) {
+        const ending = t > timeline.ending.start;
+        const between = timeline.chapters.some(
+          (c, i) => t > c.exit && t < (timeline.chapters[i + 1]?.start ?? 0)
+        );
+        assert.ok(ending || between, `${key} leaves early at frame ${f}`);
+      }
+    }
     before = now;
   }
 });
@@ -633,7 +564,7 @@ test("one layer never leaves while another enters", () => {
 // @req REQ-186
 test("signature, title and imagery line never move; only the ending removes the first two", () => {
   const seq = sahara();
-  for (let f = 0; f < frameOf(55.7); f += 15) {
+  for (let f = 0; f < frameOf(54.9); f += 15) {
     const { text, caption } = frameState(seq, f);
     assert.deepEqual(text, { signature: 1, title: 1 });
     assert.match(caption.imagery, /^NASA/);
@@ -643,12 +574,12 @@ test("signature, title and imagery line never move; only the ending removes the 
   assert.match(end.caption.imagery, /^NASA Earth Observatory/);
   assert.ok(end.caption.lines.every((l) => l.opacity === 0));
   assert.equal(end.dim, 1);
-  for (let f = frameOf(57.2); f < frameCount(seq); f++)
+  for (let f = frameOf(56.4); f < frameCount(seq); f++)
     assert.deepEqual(frameState(seq, f), end, "the closing hold is still");
 });
 
 // @req REQ-186
-test("Carte, Période and Source change with each chapter; the imagery line stays", () => {
+test("Carte, Période and Source change with each chapter; a repeated line and the imagery line stay", () => {
   const seq = sahara();
   const caption = (seconds) => frameState(seq, frameOf(seconds)).caption;
   assert.deepEqual(
@@ -663,11 +594,16 @@ test("Carte, Période and Source change with each chapter; the imagery line stay
     caption(9).imagery,
     "NASA Earth Observatory ; relief : NOAA, exagéré"
   );
-  assert.equal(caption(19).lines[0].text, "le grand désert chez al-Idrīsī");
-  // Chapters 2 and 3 share their Source line: it stays through the change.
-  for (let f = frameOf(25.3); f <= frameOf(26.2); f++)
-    assert.equal(frameState(seq, f).caption.lines[2].opacity, 1);
-  assert.ok(caption(25.5).lines[0].opacity < 1);
+  assert.equal(
+    caption(19).lines[0].text,
+    "trois bandes d'après al-Idrīsī, approximatives"
+  );
+  const shared = sahara(
+    (s) => (s.chapters[2].caption.source = s.chapters[1].caption.source)
+  );
+  for (let f = frameOf(23.5); f <= frameOf(24.2); f++)
+    assert.equal(frameState(shared, f).caption.lines[2].opacity, 1);
+  assert.ok(frameState(shared, frameOf(23.6)).caption.lines[0].opacity < 1);
 });
 
 // @req REQ-186
@@ -686,7 +622,7 @@ test("a chapter marker shows one bar per chapter, only from three chapters", () 
   assert.equal(frameState(seq, frameOf(3)).marker.opacity, 0);
   assert.equal(frameState(seq, frameOf(9)).marker.opacity, 1);
   // The line swaps by fading in the empty interval; the bars only recolour.
-  const gap = frameState(seq, frameOf(16.1)).marker;
+  const gap = frameState(seq, frameOf(15.8)).marker;
   assert.equal(gap.line.opacity, 0);
   assert.equal(gap.opacity, 1);
 
@@ -713,20 +649,16 @@ test("with a chapter marker, the title must hold on one line", () => {
 });
 
 // @req REQ-186
-test("a chapter needs one to three subtitles, and a video at most five chapters", () => {
-  assert.throws(
-    () => sahara((s) => (s.chapters[0].subtitles = [])),
-    /subtitle/
-  );
-  assert.throws(
-    () => sahara((s) => s.chapters[0].subtitles.push("Un.", "Deux.")),
-    /three/
-  );
+test("a chapter needs at least one chunk, and a video at most five chapters", () => {
+  assert.throws(() => sahara((s) => (s.chapters[0].sentences = [])), /chunk/);
+  assert.throws(() => sahara((s) => (s.chapters[0].sentences = [[]])), /chunk/);
   assert.throws(
     () => sahara((s) => s.chapters.push(structuredClone(s.chapters[1]))),
     /five/
   );
-  const short = sahara((s) => (s.chapters[0].subtitles = ["Un mot."]));
+  const short = sahara(
+    (s) => (s.chapters[0].sentences = [[{ text: "Un deux trois." }]])
+  );
   const [one] = chapterTimeline(short).chapters;
   near(one.exit - one.start, 6, "a chapter holds at least 6 s");
 });
@@ -752,9 +684,9 @@ test("ending A needs the page online and shows the sentence and the bare domain"
     variant: "B",
     opacity: 1,
   });
-  // The closing block fades in from 56.7 s, once the base has darkened.
-  assert.equal(frameState(b, frameOf(56.6)).closing, null);
-  const entering = frameState(b, frameOf(56.8)).closing.opacity;
+  // The closing block fades in from 55.9 s, once the base has darkened.
+  assert.equal(frameState(b, frameOf(55.8)).closing, null);
+  const entering = frameState(b, frameOf(56)).closing.opacity;
   assert.ok(entering > 0 && entering < 1);
   assert.equal(frameState(b, frameOf(30)).closing, null);
   assert.throws(
@@ -765,19 +697,31 @@ test("ending A needs the page online and shows the sentence and the bare domain"
 });
 
 // @req REQ-186
-test("a historical chapter draws a documented outline that fades in whole", () => {
+test("a historical chapter draws a documented outline that enters whole with its chunk", () => {
   const seq = sahara();
   assert.equal(seq.chapters[4].outline.geometry.type, "Polygon");
-  const hold = frameState(seq, frameOf(49));
+  const chunk = chapterTimeline(seq).chapters[4].chunks[1];
+  assert.deepEqual(
+    chunk.entries.map((e) => e.ref),
+    ["Méga-Tchad"]
+  );
+  const t0 = frameOf(chunk.appear);
+  assert.equal(frameState(seq, t0).outline.opacity, 0);
+  assert.equal(frameState(seq, t0 + 18).outline.opacity, 1);
+  assert.equal(frameState(seq, t0 + 21).outline.label, 1);
+  const hold = frameState(seq, frameOf(50));
   assert.deepEqual(Object.keys(hold.outline).sort(), ["label", "opacity"]);
-  assert.equal(hold.outline.opacity, 1);
   assert.match(hold.caption.imagery, /; l'imagerie montre le paysage actuel$/);
   assert.doesNotMatch(frameState(seq, frameOf(40)).caption.imagery, /actuel/);
-  const start = frameOf(46.1);
-  assert.equal(frameState(seq, start).outline.opacity, 0);
-  assert.equal(frameState(seq, start + 18).outline.opacity, 1);
   assert.equal(frameState(seq, frameOf(40)).outline, null);
 });
+
+// Chapter 1 and the historical chapter 5 alone: no mockup area in the way.
+const outlineOnly = (change) =>
+  sahara((s) => {
+    s.chapters.splice(1, 3);
+    change(s);
+  });
 
 // @req REQ-186
 test("an outline without its provenance, from a mockup or not a line, is refused", () => {
@@ -789,19 +733,32 @@ test("an outline without its provenance, from a mockup or not a line, is refused
     ["file", /file/],
   ])
     assert.throws(
-      () => sahara((s) => delete s.chapters[4].outline[field]),
+      () => outlineOnly((s) => delete s.chapters[1].outline[field]),
       message
     );
   assert.throws(
-    () => sahara((s) => (s.chapters[4].outline.file = "congo.sequence.json")),
+    () =>
+      outlineOnly((s) => (s.chapters[1].outline.file = "congo.sequence.json")),
     /LineString or Polygon/
   );
   assert.throws(
-    () => sahara((s) => (s.chapters[4].outline.file = "missing.geojson")),
+    () => outlineOnly((s) => (s.chapters[1].outline.file = "missing.geojson")),
     /missing\.geojson/
   );
   // A synthetic outline may only appear in an illustrative proof.
-  assert.throws(() => sahara((s) => delete s.demo), /illustrative/i);
+  const synthetic = (s) => {
+    s.chapters[1].outline.file = "synthetic-outline.geojson";
+    s.chapters[1].outline.illustrative = true;
+  };
+  assert.doesNotThrow(() => outlineOnly(synthetic));
+  assert.throws(
+    () =>
+      outlineOnly((s) => {
+        synthetic(s);
+        delete s.demo;
+      }),
+    /illustrative/i
+  );
 
   const dir = mkdtempSync(join(tmpdir(), "ethniafrica-outline-"));
   try {
@@ -811,7 +768,8 @@ test("an outline without its provenance, from a mockup or not a line, is refused
     mockup.properties.status = "MOCKUP, not for publication";
     writeFileSync(join(dir, "mockup.geojson"), JSON.stringify(mockup));
     const input = structuredClone(saharaJson);
-    input.chapters[4].outline.file = "mockup.geojson";
+    input.chapters.splice(1, 3);
+    input.chapters[1].outline.file = "mockup.geojson";
     assert.throws(() => loadSequence(input, { dir }), /mockup/i);
   } finally {
     rmSync(dir, { recursive: true, force: true });
@@ -819,9 +777,81 @@ test("an outline without its provenance, from a mockup or not a line, is refused
 });
 
 // @req REQ-186
-test("every chapter's hold layout stays in the safe zone", () => {
+test("the plein écran bands: title, names, subtitle, veil, legend and credits", () => {
+  assert.deepEqual(BANDS, {
+    x: [60, 1020],
+    // The design's table says « 100 to about 270 »; its own head (signature
+    // 36, gap 12, title 84, gap 12, marker 32) ends at 276.
+    head: [100, 276],
+    names: [290, 1290],
+    subtitle: { y: [1316, 1452], axis: 540, maxLineWidth: 900 },
+    veil: 1540,
+    credits: [1652, 1884],
+  });
+});
+
+// @req REQ-186
+test("every Sahara chapter's hold layout fits the plein écran bands", () => {
   const seq = sahara();
-  seq.chapters.forEach((_, i) =>
-    assert.deepEqual(checkLayout(holdLayout(seq, i)), [], `chapter ${i + 1}`)
+  seq.chapters.forEach((_, i) => {
+    const layout = holdLayout(seq, i);
+    assert.equal(layout.frame, "fullscreen");
+    assert.deepEqual(checkLayout(layout), [], `chapter ${i + 1}`);
+    const caption = layout.elements.find((e) => e.kind === "caption").box;
+    assert.equal(caption.y + caption.h, 1884, "credits are bottom aligned");
+    for (const e of layout.elements.filter((x) => x.kind === "subtitle"))
+      assert.equal(e.box.x + e.box.w / 2, 540, `${e.id} centred on x 540`);
+  });
+});
+
+// @req REQ-186
+test("the feed safe zone is a guide in plein écran; each band is a limit", () => {
+  const layout = holdLayout(sahara(), 1);
+  // The subtitle and the credits sit below the feed safe zone (y 1248):
+  // accepted by the operator, so no problem is reported.
+  assert.ok(
+    layout.elements.some((e) => e.kind === "subtitle" && e.box.y > 1248)
   );
+  assert.deepEqual(checkLayout(layout), []);
+  const moved = (kind, change) => {
+    const copy = structuredClone(layout);
+    change(copy.elements.find((e) => e.kind === kind).box);
+    return checkLayout(copy).join("\n");
+  };
+  assert.match(
+    moved("title", (b) => (b.y = 300)),
+    /title.*band/
+  );
+  assert.match(
+    moved("label", (b) => (b.y = 1300)),
+    /band/
+  );
+  assert.match(
+    moved("subtitle", (b) => (b.x += 30)),
+    /centred/
+  );
+  assert.match(
+    moved("subtitle", (b) => {
+      b.x = 80;
+      b.w = 920;
+    }),
+    /900/
+  );
+  assert.match(
+    moved("caption", (b) => (b.y -= 20)),
+    /bottom/
+  );
+  assert.match(
+    moved("legend", (b) => (b.y = 1500)),
+    /band/
+  );
+  assert.match(
+    moved("signature", (b) => (b.x = 40)),
+    /band/
+  );
+  // Two names drawn over each other are refused on the browser's boxes.
+  const crowded = structuredClone(layout);
+  const label = crowded.elements.find((e) => e.kind === "label");
+  crowded.elements.push({ ...structuredClone(label), id: "copy" });
+  assert.match(checkLayout(crowded).join("\n"), /overlap/);
 });
