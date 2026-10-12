@@ -78,5 +78,115 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web et bibliographique combinant « Seretse », « Setswana », « Tswana », « personal name », « surname », « meaning », « transmission » et « obituary », ainsi que la consultation directe de « President Seretse Khama » n'ont pas établi de lignée homonyme de Seretse dotée d'une origine distincte et documentable ; la diffusion dans plusieurs pays ne suffit pas à créer un homonyme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Seretse est d'abord un nom personnel chez les Bangwato, au Botswana : c'est celui que reçoit à sa naissance Seretse Khama, en 1921. Deux sources lui donnent un sens différent ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Seretse",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel des Bangwato, au Botswana ; son sens n'est pas le même selon les sources.",
+        "periodLabel": "Donné en 1921 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Seretse est un nom personnel chez les Bangwato, au Botswana. Il est connu par Seretse Khama, chef des Bangwato puis premier président du Botswana, qui l'a reçu à sa naissance. Les sources lues ne disent pas comment ce nom est ensuite devenu un nom de famille, et elles ne s'accordent pas sur son sens.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "President Seretse Khama",
+                "author": "South African History Online",
+                "year": null,
+                "url": "https://sahistory.org.za/people/president-seretse-khama",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Notice biographique de South African History Online. Elle donne la naissance de Seretse Khama le 1er juillet 1921 à Serowe, au Bechuanaland, et explique que son nom veut dire « l'argile qui lie », en souvenir de la réconciliation entre son père et son grand-père. La page ne porte pas de date de publication. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Seretse est donné à l'enfant né le 1er juillet 1921 à Serowe, petit-fils du roi Khama III, selon South African History Online. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand ce nom a été donné à cet enfant, pas depuis quand il existe en setswana.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Seretse Khama",
+                "role": "enfant qui reçoit le nom"
+              },
+              {
+                "name": "Khama III",
+                "role": "grand-père de l'enfant, roi des Bangwato"
+              }
+            ],
+            "sources": [
+              {
+                "title": "President Seretse Khama",
+                "author": "South African History Online",
+                "year": null,
+                "url": "https://sahistory.org.za/people/president-seretse-khama",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Notice biographique de South African History Online. Elle donne la naissance de Seretse Khama le 1er juillet 1921 à Serowe, au Bechuanaland, et explique que son nom veut dire « l'argile qui lie », en souvenir de la réconciliation entre son père et son grand-père. La page ne porte pas de date de publication. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Explication non datée"
+            },
+            "statement": "Le nom Seretse voudrait dire « l'argile qui lie » : il rappellerait la réconciliation entre le père et le grand-père de l'enfant, selon South African History Online.",
+            "hypothesisGroup": "sens du nom Seretse",
+            "sources": [
+              {
+                "title": "President Seretse Khama",
+                "author": "South African History Online",
+                "year": null,
+                "url": "https://sahistory.org.za/people/president-seretse-khama",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Notice biographique de South African History Online. Elle donne la naissance de Seretse Khama le 1er juillet 1921 à Serowe, au Bechuanaland, et explique que son nom veut dire « l'argile qui lie », en souvenir de la réconciliation entre son père et son grand-père. La page ne porte pas de date de publication. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1949,
+              "to": 1949,
+              "label": "Proposée en 1949"
+            },
+            "era": "colonial",
+            "statement": "Le nom Seretse voudrait dire « cœur de la terre rouge », selon un article du journaliste Eric Robins repris dans le Negro Digest en 1949.",
+            "hypothesisGroup": "sens du nom Seretse",
+            "sources": [
+              {
+                "title": "White Queen in Darkest Africa",
+                "author": "Eric Robins, Negro Digest, vol. 8, no 2",
+                "year": 1949,
+                "url": "https://archive.org/details/sim_black-world_1949-12_8_2",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 59-60",
+                "notes": "Article du New York Daily News repris dans le Negro Digest de décembre 1949, lu sur l'exemplaire numérisé d'archive.org. L'article commence page 59 ; page 60, il écrit que le nom Seretse veut dire « heart of the red earth ». C'est un article de presse américain de son époque, au ton marqué par les clichés coloniaux ; il est cité ici pour le sens qu'il donne au nom. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
