@@ -105,5 +105,248 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Barma désigne un peuple du Tchad, au sud-est du lac Tchad, qui se nomme lui-même Barma. Ses voisins et les voyageurs l'ont surtout appelé Bagirmi, du nom du royaume que ce peuple a formé. On ne sait pas avec certitude d'où vient le nom Bagirmi ; nous présentons plus bas l'explication que nous avons lue et ce qu'en pensait un voyageur du XIXe siècle.",
+    "names": [
+      {
+        "nameText": "Barma",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bmi",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; noté vers 1852 comme une prononciation de Bagrimma.",
+        "usedIn": ["bmi"],
+        "periodLabel": "Écrit dès 1857 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Barma désigne le peuple qui a fondé et dominé le royaume du Bagirmi ; ce peuple parle le tar barma, selon S. P. Reyna. Le nom Bagirmi désigne plutôt la société de ce royaume, où vivaient aussi des Arabes et des Peuls.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bagirmi, Encyclopedia of World Cultures",
+                "author": "S. P. Reyna",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/bagirmi",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Lu le 11 octobre 2026 sur encyclopedia.com. La notice dit que les Barma parlent le tar barma et rapporte une tradition sur le nom Bagirmi, sans la dater."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1872,
+              "to": 1881,
+              "label": "Séjour de 1872 (récit publié en 1881)"
+            },
+            "era": "polity",
+            "statement": "Le nom Barma, au pluriel Barmage, est la forme que prend dans la langue du pays le nom des habitants du Bagirmi, selon l'explorateur allemand Gustav Nachtigal.",
+            "sources": [
+              {
+                "title": "Sahara und Sudan. Ergebnisse sechsjähriger Reisen in Afrika, deuxième partie",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 667",
+                "notes": "Berlin, Weidmannsche Buchhandlung, 1881. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'explorateur allemand a séjourné au Baguirmi en 1872."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1852,
+              "to": 1857,
+              "label": "Séjour de 1852 (récit publié en 1857)"
+            },
+            "era": "polity",
+            "statement": "Le nom Barma a une forme proche chez le voyageur allemand Heinrich Barth : l'adjectif Bagrimma, écrit-il, sonne souvent comme « Barma ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Barma",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 3",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri31857bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 431, note",
+                "notes": "New York, D. Appleton, 1857 ; voyage de 1849-1855, séjour au Bagirmi en 1852. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bagirmi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du royaume des Barma, puis du peuple ; on ne sait pas d'où il vient.",
+        "usedIn": ["fra", "eng"],
+        "periodLabel": "Écrit dès 1802 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1872,
+              "to": 1881,
+              "label": "Séjour de 1872 (récit publié en 1881)"
+            },
+            "era": "polity",
+            "statement": "Le nom Bagirmi désigne un royaume et la population installée près de ses rivières. Selon Gustav Nachtigal, il n'était pas celui d'un peuple plus ancien : il apparaît quand l'État se forme. Son origine est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Sahara und Sudan. Ergebnisse sechsjähriger Reisen in Afrika, deuxième partie",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 666-667",
+                "notes": "Berlin, Weidmannsche Buchhandlung, 1881. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'explorateur allemand a séjourné au Baguirmi en 1872."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1872,
+              "to": 1881,
+              "label": "Séjour de 1872 (récit publié en 1881)"
+            },
+            "era": "polity",
+            "statement": "Le nom Bagirmi s'écrit aussi Baqirmi dans les écrits arabes, et Baqarmi chez les gens du Bornou, selon Gustav Nachtigal.",
+            "sources": [
+              {
+                "title": "Sahara und Sudan. Ergebnisse sechsjähriger Reisen in Afrika, deuxième partie",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 667",
+                "notes": "Berlin, Weidmannsche Buchhandlung, 1881. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'explorateur allemand a séjourné au Baguirmi en 1872."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1852,
+              "to": 1857,
+              "label": "Séjour de 1852 (récit publié en 1857)"
+            },
+            "era": "polity",
+            "statement": "Le nom Bagirmi est la façon dont on le prononce dans le pays, selon Heinrich Barth ; il sonne aussi Bagrimmi, et les gens du Bornou l'écrivent Begharmi ou Bekarmi.",
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 3",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri31857bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 431, note",
+                "notes": "New York, D. Appleton, 1857 ; voyage de 1849-1855, séjour au Bagirmi en 1852. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1799,
+              "to": 1802,
+              "label": "Lettre de 1799 (publiée en 1802)"
+            },
+            "era": "polity",
+            "statement": "Le nom Bagirmi a une forme proche, Begarme, chez le voyageur allemand Frederick Hornemann : c'est un pays au nord-est du Bornou, qui en dépend, et dont la capitale s'appelle Mesna. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays existait déjà avant lui.",
+            "formAsWritten": "Begarme",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Journal of Frederick Horneman's Travels, from Cairo to Mourzouk",
+                "author": "Frederick Hornemann",
+                "year": 1802,
+                "url": "https://archive.org/details/journaloffrederi00horn",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 114",
+                "notes": "Londres, G. et W. Nicol, 1802. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, voyageur allemand, décrit le Bagirmi d'après ce qu'on lui en dit au Fezzan, dans une lettre datée de Tripoli en août 1799."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1250,
+              "to": 1299,
+              "label": "Seconde moitié du XIIIe siècle, selon l'auteur"
+            },
+            "statement": "Le nom Ibkârem désigne un peuple que mentionne le géographe arabe Ibn Saʿīd au XIIIe siècle, selon Gustav Nachtigal. Nachtigal juge peu probable qu'il s'agisse des Bagirmi.",
+            "sources": [
+              {
+                "title": "Sahara und Sudan. Ergebnisse sechsjähriger Reisen in Afrika, deuxième partie",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 667",
+                "notes": "Berlin, Weidmannsche Buchhandlung, 1881. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'explorateur allemand a séjourné au Baguirmi en 1872."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Bagirmi viendrait de l'arabe bagar, « bétail », et mia, « cent » : ce serait le tribut que les Arabes et les Peuls devaient à leur premier souverain, selon une tradition que rapporte S. P. Reyna.",
+            "hypothesisGroup": "origine du nom Bagirmi",
+            "sources": [
+              {
+                "title": "Bagirmi, Encyclopedia of World Cultures",
+                "author": "S. P. Reyna",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/bagirmi",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Lu le 11 octobre 2026 sur encyclopedia.com. La notice dit que les Barma parlent le tar barma et rapporte une tradition sur le nom Bagirmi, sans la dater."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Rapportée en 1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Bagirmi viendrait de baqar mija, « cent bœufs », parce que les premiers chefs de l'État exigeaient chaque année cent têtes de bétail de chaque groupe d'habitants, selon une explication courante que rapporte Gustav Nachtigal. Il la juge lui-même peu vraisemblable.",
+            "hypothesisGroup": "origine du nom Bagirmi",
+            "sources": [
+              {
+                "title": "Sahara und Sudan. Ergebnisse sechsjähriger Reisen in Afrika, deuxième partie",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 667",
+                "notes": "Berlin, Weidmannsche Buchhandlung, 1881. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'explorateur allemand a séjourné au Baguirmi en 1872."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -114,5 +114,199 @@
         "source_kind": "press"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nembe désigne une ville-État ijo du delta du Niger, dans l'État de Bayelsa au Nigeria, et ses habitants, qui se nomment eux-mêmes Nembe. Les Européens les ont longtemps appelés Brass, du nom de la rivière où ils commerçaient. On ne sait pas avec certitude d'où viennent ces deux noms ; nous présentons plus bas la seule explication de Brass que nous avons lue.",
+    "names": [
+      {
+        "nameText": "Nembe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nvm",
+        "namedBy": null,
+        "shortLine": "Le nom de la ville-État et de son peuple dans leur langue ; écrit dès 1903.",
+        "usedIn": ["nvm", "eng"],
+        "periodLabel": "Écrit dès 1903 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Nembe désigne une ville-État du delta oriental du Niger qui a accueilli des gens de langues différentes et commercé avec les Européens au temps de la traite et de l'huile de palme, selon Ebiegberi Joe Alagoa. Les sources que nous avons lues n'expliquent pas l'origine de ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Land and People of Bayelsa State: Central Niger Delta, ch. 6 : Traditions of Origin",
+                "author": "Ebiegberi Joe Alagoa",
+                "year": 1999,
+                "url": "https://nigeriareposit.nln.gov.ng/handle/20.500.14186/1065",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 89",
+                "notes": "Port Harcourt, Onyoma Research Publications, 1999, ouvrage dirigé par Ebiegberi Joe Alagoa ; lu le 12 octobre 2026 dans le dépôt numérique de la Bibliothèque nationale du Nigeria."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Nembe est souvent suivi de Brass entre parenthèses quand on parle du commerce atlantique, selon Nkparom C. Ejituwu. L'ancienne zone de gouvernement local de Brass a été divisée en trois, dont une zone de Nembe et une de Brass, selon Ebiegberi Joe Alagoa.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Land and People of Bayelsa State: Central Niger Delta, ch. 1 : Introduction",
+                "author": "Ebiegberi Joe Alagoa",
+                "year": 1999,
+                "url": "https://nigeriareposit.nln.gov.ng/handle/20.500.14186/1065",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Port Harcourt, Onyoma Research Publications, 1999, ouvrage dirigé par Ebiegberi Joe Alagoa ; lu le 12 octobre 2026 dans le dépôt numérique de la Bibliothèque nationale du Nigeria."
+              },
+              {
+                "title": "The Land and People of Bayelsa State: Central Niger Delta, ch. 14 : The Atlantic Trade",
+                "author": "Nkparom C. Ejituwu",
+                "year": 1999,
+                "url": "https://nigeriareposit.nln.gov.ng/handle/20.500.14186/1065",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 197",
+                "notes": "Port Harcourt, Onyoma Research Publications, 1999, ouvrage dirigé par Ebiegberi Joe Alagoa ; lu le 12 octobre 2026 dans le dépôt numérique de la Bibliothèque nationale du Nigeria."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nembe sert aussi pour la langue chez Adebiyi Tepowa, qui écrit indifféremment « la langue nembe » et « la langue brass » dans ses notes de grammaire.",
+            "sources": [
+              {
+                "title": "Notes on the (Nembe) Brass Language, Journal of the Royal African Society, vol. 4, n° 13",
+                "author": "Adebiyi Tepowa",
+                "year": 1904,
+                "url": "https://archive.org/details/rosettaproject_ijs_multiple-1",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 117",
+                "notes": "Londres, octobre 1904 ; préface datée de Benin City, le 12 mai 1904. Lu le 11 octobre 2026 dans une copie non officielle de l'article déposée sur Internet Archive par le Rosetta Project."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1903,
+              "to": 1903,
+              "label": "1903"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nembe apparaît par écrit sur la page de titre d'un Évangile de Jean imprimé à Londres en 1903, « Nembe bebe ». La bibliothèque de Harvard, qui l'a reçu en 1910, le présente comme l'Évangile de Jean « in Ijo (Idzo) Brass Dialect ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Nembe bebe",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Ebi Egberi ne St. John ge yemi. Nembe bebe",
+                "author": "British and Foreign Bible Society",
+                "year": 1903,
+                "url": "https://archive.org/details/gospelofjohn-southeastijo",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre",
+                "notes": "Londres, British and Foreign Bible Society, 1903 : l'Évangile de Jean en langue nembe. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive ; une page ajoutée par la bibliothèque de Harvard, qui l'a reçu en 1910, le présente comme l'Évangile « in Ijo (Idzo) Brass Dialect »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Brass",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "eng",
+        "namedBy": "Les traitants européens",
+        "shortLine": "Le nom que les Européens donnaient à Nembe et à sa rivière ; son origine est incertaine.",
+        "usedIn": ["eng"],
+        "periodLabel": "Écrit dès 1823",
+        "accounts": [
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Brass désigne Nembe dans certains documents européens, selon l'historien Atei Mark Okorobia ; c'est aussi le nom de la rivière par laquelle Nembe commerçait. Son origine est incertaine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Land and People of Bayelsa State: Central Niger Delta, ch. 15 : The Impact of the Atlantic Trade",
+                "author": "Atei Mark Okorobia",
+                "year": 1999,
+                "url": "https://nigeriareposit.nln.gov.ng/handle/20.500.14186/1065",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 205 et p. 207",
+                "notes": "Port Harcourt, Onyoma Research Publications, 1999, ouvrage dirigé par Ebiegberi Joe Alagoa ; lu le 12 octobre 2026 dans le dépôt numérique de la Bibliothèque nationale du Nigeria."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1823,
+              "to": 1823,
+              "label": "1823"
+            },
+            "era": "polity",
+            "statement": "Le nom Brass a peut-être une forme proche chez le capitaine britannique John Adams : à Bonny, on appelle « brass country negroes », les gens du pays de laiton, les habitants d'un pays voisin nommé Allakoo. Les sources ne disent pas s'il s'agit du même pays que Nembe. C'est la plus ancienne trace possible de ce nom que le projet connaît.",
+            "formAsWritten": "brass country negroes",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Remarks on the Country Extending from Cape Palmas to the River Congo",
+                "author": "John Adams",
+                "year": 1823,
+                "url": "https://archive.org/details/remarksoncountr00adamgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 122 et p. 129",
+                "notes": "Londres, G. et W. B. Whittaker, 1823. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur est un capitaine de navire britannique qui commerçait sur cette côte ; il décrit le delta tel que le voient les traitants de Bonny."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1823,
+              "to": 1823,
+              "label": "Proposée en 1823"
+            },
+            "era": "polity",
+            "statement": "Le nom Brass viendrait des grands bassins de laiton, en anglais brass, que les Européens apportaient à Bonny et que les gens de la côte utilisaient pour faire évaporer l'eau de mer et en tirer du sel, selon John Adams.",
+            "hypothesisGroup": "origine du nom Brass",
+            "sources": [
+              {
+                "title": "Remarks on the Country Extending from Cape Palmas to the River Congo",
+                "author": "John Adams",
+                "year": 1823,
+                "url": "https://archive.org/details/remarksoncountr00adamgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 122 et p. 129",
+                "notes": "Londres, G. et W. B. Whittaker, 1823. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur est un capitaine de navire britannique qui commerçait sur cette côte ; il décrit le delta tel que le voient les traitants de Bonny."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -127,5 +127,390 @@
         "notes": "Témoignage publié par un membre du groupe qui se présente comme Diawando ; consulté le 29 septembre 2026."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Diawambé, au singulier Diawando, désigne un groupe de l'Afrique de l'Ouest lié aux Peuls, surtout au Mali, que les pays malinké et bambara appellent Diokoramé. Il s'écrit aussi Jaawambe en pulaar. Les sources ne s'accordent pas sur l'origine de ces deux noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Diawambé",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ful",
+        "namedBy": null,
+        "shortLine": "Le nom du groupe en peul, Diawando au singulier ; écrit Diavandous dès 1846.",
+        "usedIn": ["ful", "fra"],
+        "periodLabel": "Écrit dès 1846 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'association"
+            },
+            "era": "modern",
+            "statement": "Le nom Jaawambe, Jaawando au singulier, désigne pour l'association Tabital Pulaaku International des « conseillers et auxiliaires armés des rimbe », qu'elle range parmi les nobles. Elle les dit d'origine peule, réputés pour leur talent dans la stratégie guerrière et le gouvernement, et porteurs surtout des noms Diaw, Ndjim, Daf, Niane et Bocoum.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sociétés",
+                "author": "Tabital Pulaaku International",
+                "year": null,
+                "url": "https://www.tabitalpulaaku.org/societes/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page d'une association internationale peule, qui décrit notamment la société du Fouta-Toro. Lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Diawando évoque une conduite faite de noblesse, de dignité, d'humilité et de générosité, selon « les vieilles Diawando » que cite Alpha Niane. Le nom Diawambé désigne pour lui un groupe de plus d'un million de personnes, qui parlent surtout le poular, le khassonké et le soninké.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Diawando (Diogoramè), blog Le bout du fil",
+                "author": "Alpha Niane",
+                "year": 2018,
+                "url": "https://leboutdufil.wordpress.com/2018/09/15/diawando-diogorame/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Billet du 15 septembre 2018, mis à jour le 25 avril 2021. Lu le 11 octobre 2026. L'auteur dit avoir pour grand-père un « grand Diawando »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1959,
+              "to": 1959,
+              "label": "1959"
+            },
+            "era": "colonial",
+            "statement": "Le nom Diawambé, au singulier Diawando, désigne pour Robert Pageard une fraction ethnique du Soudan occidental. Son origine est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Note sur les Diawambé ou Diokoramé, Journal de la Société des Africanistes, t. 29, fasc. 2",
+                "author": "Robert Pageard",
+                "year": 1959,
+                "url": "https://www.persee.fr/doc/jafr_0037-9166_1959_num_29_2_1907",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 239",
+                "notes": "Lu le 12 octobre 2026 sur Persée, dans le texte intégral de l'article. L'auteur s'appuie surtout sur le récit oral d'Aliou Kida, dépositaire de l'histoire des Diawambé, à Néma, dans le cercle de Nioro."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Diawambé est rangé par Maurice Delafosse parmi les castes des Peuls, avec la mention « courtiers et tisserands », et les Peuls ne leur étendent pas leur nom de Foulbé, écrit-il. Robert Pageard note en 1959 qu'une confusion s'est faite dans les sources européennes entre les Diawambé et les Maboubé, griots et souvent tisserands.",
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 119 et p. 135",
+                "notes": "Paris, Émile Larose, 1912. Lu le 11 octobre 2026 dans l'édition numérique du Projet Gutenberg, qui garde la pagination du livre. L'auteur était administrateur colonial ; ses classements des peuples sont ceux de l'administration de son temps."
+              },
+              {
+                "title": "Note sur les Diawambé ou Diokoramé, Journal de la Société des Africanistes, t. 29, fasc. 2",
+                "author": "Robert Pageard",
+                "year": 1959,
+                "url": "https://www.persee.fr/doc/jafr_0037-9166_1959_num_29_2_1907",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 239",
+                "notes": "Lu le 12 octobre 2026 sur Persée, dans le texte intégral de l'article. L'auteur s'appuie surtout sur le récit oral d'Aliou Kida, dépositaire de l'histoire des Diawambé, à Néma, dans le cercle de Nioro."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1856,
+              "label": "Voyage au Kaarta (récit publié en 1856)"
+            },
+            "era": "polity",
+            "statement": "Le nom Diawambé est écrit Diavandous par Anne Raffenel au Kaarta : il note que les Diavaras et les Diavandous occupent l'ouest de ce pays.",
+            "formAsWritten": "Diavandous",
+            "sources": [
+              {
+                "title": "Nouveau voyage dans le pays des nègres, tome premier",
+                "author": "Anne Raffenel",
+                "year": 1856,
+                "url": "https://archive.org/details/nouveauvoyagedan00raff",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 283",
+                "notes": "Paris, Imprimerie de N. Chaix, 1856. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Le récit porte le regard d'un officier colonial français du milieu du XIXe siècle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1843,
+              "to": 1846,
+              "label": "Voyage de 1843-1844 (récit publié en 1846)"
+            },
+            "era": "polity",
+            "statement": "Le nom Diawambé a une forme proche, Diavandous, chez le voyageur français Anne Raffenel, qui en rencontre au village de Tata-Guiemby, au Bondou, selon Robert Pageard. C'est la plus ancienne trace de ce nom que le projet connaît. Le groupe existait déjà avant lui.",
+            "formAsWritten": "Diavandous",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Note sur les Diawambé ou Diokoramé, Journal de la Société des Africanistes, t. 29, fasc. 2",
+                "author": "Robert Pageard",
+                "year": 1959,
+                "url": "https://www.persee.fr/doc/jafr_0037-9166_1959_num_29_2_1907",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 239",
+                "notes": "Lu le 12 octobre 2026 sur Persée, dans le texte intégral de l'article. L'auteur s'appuie surtout sur le récit oral d'Aliou Kida, dépositaire de l'histoire des Diawambé, à Néma, dans le cercle de Nioro."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Proposée en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Diawambé viendrait d'un radical diawa ou diaw qu'il partagerait avec Diawara, nom d'un groupe soninké, selon une supposition de Maurice Delafosse, qui juge les deux groupes très semblables dans leur place sociale.",
+            "hypothesisGroup": "origine du nom Diawambé",
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 271, note 215",
+                "notes": "Paris, Émile Larose, 1912. Lu le 11 octobre 2026 dans l'édition numérique du Projet Gutenberg, qui garde la pagination du livre. L'auteur était administrateur colonial ; ses classements des peuples sont ceux de l'administration de son temps."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Rapportée en 1856"
+            },
+            "statement": "Le nom Diawambé viendrait de Diavandou, le sixième frère d'une famille qui aurait aidé un roi peul nommé Dénia à prendre le pouvoir : le roi l'aurait fait chef d'une caste, appelée de son nom caste des Diavandous, selon une légende sur l'histoire des Peuls que rapporte Anne Raffenel.",
+            "hypothesisGroup": "origine du nom Diawambé",
+            "sources": [
+              {
+                "title": "Nouveau voyage dans le pays des nègres, tome second",
+                "author": "Anne Raffenel",
+                "year": 1856,
+                "url": "https://archive.org/details/nouveauvoyagedan00raff",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 303-304",
+                "notes": "Paris, Imprimerie de N. Chaix, 1856. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive, qui réunit les deux tomes. L'auteur présente cette légende comme un récit des « rapsodes africains » sur l'histoire des Peuls et la formation de leurs castes."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Diokoramé",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Malinké et les Bambara",
+        "shortLine": "Le nom du groupe en pays malinké, bambara et soninké ; écrit Djogorani dès 1932.",
+        "usedIn": ["bam", "fra"],
+        "periodLabel": "Écrit dès 1932 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Diokoramé s'écrit Diogoramè chez Alpha Niane, qui en fait le nom que les Soninké donnent aux Diawambé.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Diawando (Diogoramè), blog Le bout du fil",
+                "author": "Alpha Niane",
+                "year": 2018,
+                "url": "https://leboutdufil.wordpress.com/2018/09/15/diawando-diogorame/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Billet du 15 septembre 2018, mis à jour le 25 avril 2021. Lu le 11 octobre 2026. L'auteur dit avoir pour grand-père un « grand Diawando »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1959,
+              "to": 1959,
+              "label": "1959"
+            },
+            "era": "colonial",
+            "statement": "Le nom Diokoramé figure dans le titre de l'article de Robert Pageard, « Note sur les Diawambé ou Diokoramé ». C'est, écrit-il, le nom par lequel on désigne les Diawambé en pays malinké et bambara.",
+            "formAsWritten": "Diokoramé",
+            "sources": [
+              {
+                "title": "Note sur les Diawambé ou Diokoramé, Journal de la Société des Africanistes, t. 29, fasc. 2",
+                "author": "Robert Pageard",
+                "year": 1959,
+                "url": "https://www.persee.fr/doc/jafr_0037-9166_1959_num_29_2_1907",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 239 et p. 251",
+                "notes": "Lu le 12 octobre 2026 sur Persée, dans le texte intégral de l'article. L'auteur s'appuie surtout sur le récit oral d'Aliou Kida, dépositaire de l'histoire des Diawambé, à Néma, dans le cercle de Nioro."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1936,
+              "to": 1936,
+              "label": "1936"
+            },
+            "era": "colonial",
+            "statement": "Le nom Diokoramé s'écrit Diogoramé dans le titre d'une étude d'Ibrahima Bathily, « Les Diawandos ou Diogoramé », faite de traditions orales recueillies à Djenné, Ségou et Nioro, selon Robert Pageard, qui la cite.",
+            "sources": [
+              {
+                "title": "Note sur les Diawambé ou Diokoramé, Journal de la Société des Africanistes, t. 29, fasc. 2",
+                "author": "Robert Pageard",
+                "year": 1959,
+                "url": "https://www.persee.fr/doc/jafr_0037-9166_1959_num_29_2_1907",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 240",
+                "notes": "Lu le 12 octobre 2026 sur Persée, dans le texte intégral de l'article. L'auteur s'appuie surtout sur le récit oral d'Aliou Kida, dépositaire de l'histoire des Diawambé, à Néma, dans le cercle de Nioro. L'auteur cite Ibrahima Bathily, « Les Diawandos ou Diogoramé », L'Éducation africaine, avril-juin 1936 ; nous n'avons pas lu ce texte nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Diokoramé a une forme proche, Djogorani, chez Charles Monteil, dans son livre sur Djenné : les « affranchis » que le Tarikh es-Soudan appelle Djogorani sont ceux que les Peuls de l'ouest nomment Dyawanbé, écrit-il, selon Robert Pageard, qui le cite. C'est la plus ancienne trace de ce nom que le projet connaît. Le groupe existait déjà avant lui.",
+            "formAsWritten": "Djogorani",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Note sur les Diawambé ou Diokoramé, Journal de la Société des Africanistes, t. 29, fasc. 2",
+                "author": "Robert Pageard",
+                "year": 1959,
+                "url": "https://www.persee.fr/doc/jafr_0037-9166_1959_num_29_2_1907",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 251-252",
+                "notes": "Lu le 12 octobre 2026 sur Persée, dans le texte intégral de l'article. L'auteur s'appuie surtout sur le récit oral d'Aliou Kida, dépositaire de l'histoire des Diawambé, à Néma, dans le cercle de Nioro. L'auteur cite Charles Monteil, Djenné, Paris, 1932, p. 55 et p. 95 ; nous n'avons pas lu ce livre nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "XVIIe siècle, selon le Tarikh es-Soudan"
+            },
+            "statement": "Le nom Zoghrâni désigne, dans le Tarikh es-Soudan, une chronique arabe de Tombouctou, une tribu mêlée aux troubles du début de la domination marocaine. Robert Pageard juge que ce mot arabe semble bien traduire le malinké Diokoramé, mais les sources ne disent pas avec certitude s'il s'agit du même groupe.",
+            "sources": [
+              {
+                "title": "Note sur les Diawambé ou Diokoramé, Journal de la Société des Africanistes, t. 29, fasc. 2",
+                "author": "Robert Pageard",
+                "year": 1959,
+                "url": "https://www.persee.fr/doc/jafr_0037-9166_1959_num_29_2_1907",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 251-252",
+                "notes": "Lu le 12 octobre 2026 sur Persée, dans le texte intégral de l'article. L'auteur s'appuie surtout sur le récit oral d'Aliou Kida, dépositaire de l'histoire des Diawambé, à Néma, dans le cercle de Nioro."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1959,
+              "to": 1959,
+              "label": "Rapportée en 1959"
+            },
+            "era": "colonial",
+            "statement": "Le nom Diokoramé se décomposerait en dion, « captif », oron, « homme libre, noble », et bé, « il y a » : il voudrait dire « homme libre parmi les captifs ou issu des captifs », selon une analyse que rapporte Robert Pageard sans dire de qui elle vient.",
+            "hypothesisGroup": "origine du nom Diokoramé",
+            "sources": [
+              {
+                "title": "Note sur les Diawambé ou Diokoramé, Journal de la Société des Africanistes, t. 29, fasc. 2",
+                "author": "Robert Pageard",
+                "year": 1959,
+                "url": "https://www.persee.fr/doc/jafr_0037-9166_1959_num_29_2_1907",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 251",
+                "notes": "Lu le 12 octobre 2026 sur Persée, dans le texte intégral de l'article. L'auteur s'appuie surtout sur le récit oral d'Aliou Kida, dépositaire de l'histoire des Diawambé, à Néma, dans le cercle de Nioro."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "Proposée en 1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Diokoramé viendrait, sous la forme Djogorani, du soninké, qui l'aurait pris au mandingue dyogoro, contraction de dyo oro, « affranchi », littéralement « esclave libéré », selon Charles Monteil, que cite Robert Pageard.",
+            "hypothesisGroup": "origine du nom Diokoramé",
+            "sources": [
+              {
+                "title": "Note sur les Diawambé ou Diokoramé, Journal de la Société des Africanistes, t. 29, fasc. 2",
+                "author": "Robert Pageard",
+                "year": 1959,
+                "url": "https://www.persee.fr/doc/jafr_0037-9166_1959_num_29_2_1907",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 252",
+                "notes": "Lu le 12 octobre 2026 sur Persée, dans le texte intégral de l'article. L'auteur s'appuie surtout sur le récit oral d'Aliou Kida, dépositaire de l'histoire des Diawambé, à Néma, dans le cercle de Nioro. L'auteur cite Charles Monteil, Djenné, Paris, 1932, p. 95 ; nous n'avons pas lu ce livre nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1940,
+              "to": 1940,
+              "label": "Proposée en 1940"
+            },
+            "era": "colonial",
+            "statement": "Le nom Diokoramé, sous la forme Diagorani, voudrait dire simplement « gens du Diagha », selon Louis Tauxier, que cite Robert Pageard.",
+            "hypothesisGroup": "origine du nom Diokoramé",
+            "sources": [
+              {
+                "title": "Note sur les Diawambé ou Diokoramé, Journal de la Société des Africanistes, t. 29, fasc. 2",
+                "author": "Robert Pageard",
+                "year": 1959,
+                "url": "https://www.persee.fr/doc/jafr_0037-9166_1959_num_29_2_1907",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 252",
+                "notes": "Lu le 12 octobre 2026 sur Persée, dans le texte intégral de l'article. L'auteur s'appuie surtout sur le récit oral d'Aliou Kida, dépositaire de l'histoire des Diawambé, à Néma, dans le cercle de Nioro. L'auteur cite Louis Tauxier, Histoire des Bambara, Paris, 1940, note de la p. 119 ; nous n'avons pas lu ce livre nous-mêmes."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
