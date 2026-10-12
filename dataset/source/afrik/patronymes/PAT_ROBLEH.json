@@ -23,7 +23,10 @@
     {
       "spelling": "Roble",
       "attestations": [
-        { "countryId": "DJI", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "DJI",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -103,5 +106,129 @@
       "fieldPath": "homonyms",
       "reason": "Les sources consultées sur Robleh et Roble ne permettent pas de présenter un autre nom écrit de la même manière, mais d'origine différente. Les recherches ont porté sur les noms de personnes, de peuples et de lieux."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Robleh est un nom personnel somali, porté notamment à Djibouti. Il n'y désigne pas une famille : chez les Somalis, chacun porte son nom, puis celui de son père et celui de son grand-père. On ne sait pas avec certitude ce qu'il veut dire ; nous présentons plus bas la seule explication relevée.",
+    "names": [
+      {
+        "nameText": "Robleh",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel somali, qui sert aussi de nom du père ; pas un nom de famille.",
+        "periodLabel": "Écrit Roblay dès 1856 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Robleh est un nom personnel, non un nom de famille : chez les Somalis, il peut être le nom d'une personne, celui de son père ou celui de son grand-père, selon la règle que décrit Cabdalla Cumar Mansuur. On ne sait pas avec certitude ce qu'il veut dire ; la seule explication relevée est présentée à part.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Somali names and individual identity",
+                "author": "Cabdalla Cumar Mansuur",
+                "year": 2021,
+                "url": "https://wardheernews.com/wp-content/uploads/2021/06/Somali-names-and-indvidual-identity-By-Abdalla-Mansuur.pdf",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 3",
+                "notes": "Texte daté du 14 juin 2021, publié par WardheerNews ; l'adresse d'origine ne répond plus : il a été lu dans la copie de l'Internet Archive du 20 septembre 2021. Section « Anthroponyms » : le nom somali se compose d'un nom personnel, du nom du père et du nom du grand-père ; « a system of name(s)-surname does not exist ». Page 4 : à l'étranger, le pays d'accueil exige un nom de famille et retient le nom du père ou du grand-père. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Décrit en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Robleh peut devenir un nom de famille hors des pays somalis : les pays d'accueil exigent un nom de famille et retiennent pour cela le nom du père ou celui du grand-père, selon Cabdalla Cumar Mansuur.",
+            "sources": [
+              {
+                "title": "Somali names and individual identity",
+                "author": "Cabdalla Cumar Mansuur",
+                "year": 2021,
+                "url": "https://wardheernews.com/wp-content/uploads/2021/06/Somali-names-and-indvidual-identity-By-Abdalla-Mansuur.pdf",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 4",
+                "notes": "Texte daté du 14 juin 2021, publié par WardheerNews ; l'adresse d'origine ne répond plus : il a été lu dans la copie de l'Internet Archive du 20 septembre 2021. Section « Anthroponyms » : le nom somali se compose d'un nom personnel, du nom du père et du nom du grand-père ; « a system of name(s)-surname does not exist ». Page 4 : à l'étranger, le pays d'accueil exige un nom de famille et retient le nom du père ou du grand-père. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Voyage de 1854-1855, récit publié en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Robleh est aussi, sous la forme Roblay, celui d'un chef des Gudabirsi, l'ugaz Roblay, déjà mort quand passe Richard Burton.",
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa; or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 243",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856 ; exemplaire numérisé sur archive.org. Récit d'un voyage fait en 1854-1855 dans le pays somali et jusqu'à Harar. Page 174, sur les Issa : leur chef, l'ugaz, « is generally called “Roblay” — Prince Rainy, — the name or rather title being one of good omen ». Page 243 : « Their late chief, Ugaz Roblay », chez les Gudabirsi. Voyageur britannique, cité pour les formes qu'il écrit et ce qu'on lui rapporte. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Proposé en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Robleh voudrait dire « prince pluvieux » : ce serait un titre de bon augure chez les Issa, où une sécheresse suffit à justifier un changement de dynastie, selon Richard Burton.",
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa; or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 174",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856 ; exemplaire numérisé sur archive.org. Récit d'un voyage fait en 1854-1855 dans le pays somali et jusqu'à Harar. Page 174, sur les Issa : leur chef, l'ugaz, « is generally called “Roblay” — Prince Rainy, — the name or rather title being one of good omen ». Page 243 : « Their late chief, Ugaz Roblay », chez les Gudabirsi. Voyageur britannique, cité pour les formes qu'il écrit et ce qu'on lui rapporte. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Voyage de 1854-1855, récit publié en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Robleh apparaît sous une forme proche, Roblay, chez l'explorateur Richard Burton : c'est ainsi, écrit-il, qu'on appelle le plus souvent l'ugaz, le chef des Issa. C'est la plus ancienne trace de ce nom que le projet connaît ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Roblay",
+            "birth": true,
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa; or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 174",
+                "notes": "Londres, Longman, Brown, Green, and Longmans, 1856 ; exemplaire numérisé sur archive.org. Récit d'un voyage fait en 1854-1855 dans le pays somali et jusqu'à Harar. Page 174, sur les Issa : leur chef, l'ugaz, « is generally called “Roblay” — Prince Rainy, — the name or rather title being one of good omen ». Page 243 : « Their late chief, Ugaz Roblay », chez les Gudabirsi. Voyageur britannique, cité pour les formes qu'il écrit et ce qu'on lui rapporte. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

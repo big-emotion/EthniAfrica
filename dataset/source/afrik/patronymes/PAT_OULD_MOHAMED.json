@@ -80,5 +80,116 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Ould Mohamed à un peuple en Mauritanie. Nous n'avons pas encore consulté de source consacrée à ce nom. Les formes « Ould X » et « Ahl X » indiquent d'abord une filiation ou une maison. Elles ne suffisent pas à identifier une tribu ou un peuple."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ould Mohamed veut dire « fils de Mohamed » : ould est le mot hassaniya pour « fils ». Chez les Maures de Mauritanie, il dit de qui une personne est le fils, non à quelle famille elle appartient. On l'a aussi écrit Ould-Mohammed. Nous présentons plus bas ce qu'en disent les sources.",
+    "names": [
+      {
+        "nameText": "Ould Mohamed",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mey",
+        "namedBy": null,
+        "shortLine": "« Fils de Mohamed » : chez les Maures, la marque de filiation suivie du nom du père.",
+        "periodLabel": "Écrit Ould-Mohammed dès 1867 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ould Mohamed se lit « fils de Mohamed » : ould veut dire « fils, enfant » en hassaniya, la langue des Maures, selon René Basset. Il nomme donc le père d'une personne, et non une famille.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Mission au Sénégal, tome I, fascicule II : notes sur le hassania",
+                "author": "René Basset",
+                "year": 1910,
+                "url": "https://archive.org/details/f2missionausng01bass",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 360",
+                "notes": "Paris, Ernest Leroux, Publications de la Faculté des lettres d'Alger ; exemplaire numérisé sur archive.org, daté de 1910 par sa notice. Lexique hassania-français, entrée « ould, pl. aoûlâd : fils, enfant ». Le hassania, ou hassaniya, est la langue des Maures. Lu le 11 octobre 2026."
+              },
+              {
+                "title": "Pourquoi les Mauritaniens ont-ils un « Ould » dans leur nom ?",
+                "author": "Jeune Afrique",
+                "year": 2005,
+                "url": "https://www.jeuneafrique.com/215605/archives-thematique/pourquoi-les-mauritaniens-ont-ils-un-ould-dans-leur-nom/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Réponse à une question de lecteur, publiée le 16 octobre 2005. « Ould », « fils de », y est décrit comme une marque de filiation, équivalent de « Ben » en arabe classique ; avant la colonisation, on disait Ould et l'on écrivait Ben, puis l'administration française a employé Ould dans toutes les transcriptions, usage que l'État indépendant a gardé. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "Rapporté en 2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Ould Mohamed porte une marque de filiation que l'on disait ould et que l'on écrivait ben avant la colonisation. L'administration française a écrit ould partout, et l'État indépendant a gardé cet usage, selon Jeune Afrique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Pourquoi les Mauritaniens ont-ils un « Ould » dans leur nom ?",
+                "author": "Jeune Afrique",
+                "year": 2005,
+                "url": "https://www.jeuneafrique.com/215605/archives-thematique/pourquoi-les-mauritaniens-ont-ils-un-ould-dans-leur-nom/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Réponse à une question de lecteur, publiée le 16 octobre 2005. « Ould », « fils de », y est décrit comme une marque de filiation, équivalent de « Ben » en arabe classique ; avant la colonisation, on disait Ould et l'on écrivait Ben, puis l'administration française a employé Ould dans toutes les transcriptions, usage que l'État indépendant a gardé. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "Rapporté en 2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Ould Mohamed peut aussi s'écrire ben Mohamed : une même personne peut porter ben sur son acte de naissance en arabe et ould sur son passeport en français, selon Jeune Afrique.",
+            "sources": [
+              {
+                "title": "Pourquoi les Mauritaniens ont-ils un « Ould » dans leur nom ?",
+                "author": "Jeune Afrique",
+                "year": 2005,
+                "url": "https://www.jeuneafrique.com/215605/archives-thematique/pourquoi-les-mauritaniens-ont-ils-un-ould-dans-leur-nom/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Réponse à une question de lecteur, publiée le 16 octobre 2005. « Ould », « fils de », y est décrit comme une marque de filiation, équivalent de « Ben » en arabe classique ; avant la colonisation, on disait Ould et l'on écrivait Ben, puis l'administration française a employé Ould dans toutes les transcriptions, usage que l'État indépendant a gardé. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1867,
+              "to": 1867,
+              "label": "1867"
+            },
+            "era": "polity",
+            "statement": "Le nom Ould Mohamed apparaît par écrit sous une forme proche, Ould-Mohammed, dans l'Annuaire du Sénégal pour 1867. Il y figure dans le nom du cheikh des Trarza, Sidi-Ould-Mohammed-el-Habib, et dans celui du chef d'une fraction des Ouled-Délim, Ely-Ould-Mohammed. C'est la plus ancienne trace de ce nom que le projet connaît ; la filiation qu'il exprime est bien plus ancienne.",
+            "formAsWritten": "Ould-Mohammed",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Annuaire du Sénégal et dépendances pour l'année 1867",
+                "author": "Colonie du Sénégal",
+                "year": 1867,
+                "url": "https://archive.org/details/bub_gb_6XERAQAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 115",
+                "notes": "Annuaire officiel de la colonie, numérisé par Google et déposé sur archive.org. Page 115, liste des « principaux chefs des pays en relation avec la colonie » : « Trarza. — Sidi-Ould-Mohammed-el-Habib, cheikh » et, pour une fraction des Ouled-Délim, « Ely-Ould-Mohammed, surnommé Rmouga ». Document de l'administration coloniale, cité pour les formes qu'il écrit. Page vue en image. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

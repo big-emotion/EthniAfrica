@@ -76,5 +76,64 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Sankara à un peuple au Burkina Faso. Nous n'avons pas encore consulté de source consacrée à ce nom. Notre fiche évoque le changement de nom de la Haute-Volta par Thomas Sankara. Cet événement ne renseigne pas sur l'origine de son nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sankara est un nom de famille du Burkina Faso, porté par des Silmi-Mossi de langue mooré, selon le projet de répertoire des patronymes du pays. On ne sait pas avec certitude d'où il vient, et nous n'en connaissons pas de trace écrite ancienne ; nous présentons plus bas la seule explication relevée.",
+    "names": [
+      {
+        "nameText": "Sankara",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille silmi-mossi du Burkina Faso ; son origine reste incertaine.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sankara est rattaché par le projet de répertoire des patronymes du Burkina Faso à des Silmi-Mossi de langue mooré, que l'on trouve à Tema Bokin, dans le Passoré. On ne sait pas avec certitude d'où vient le nom, et nous n'en connaissons pas de trace écrite ancienne.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel du Burkina Faso",
+                "year": null,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 179",
+                "notes": "Document de travail daté de mai 2025 et marqué « version provisoire », sans validation finale visible, lu sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle de ce répertoire n'a été trouvée. Le document recueille des traditions sans appareil critique : ses explications restent des propositions. Notice SANKARA, lue en entier. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Proposé en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Sankara serait lié au partage d'un héritage entre un Peul et sa femme moaga. Il voudrait dire « division de deux familles » ou « courageux et imperturbable », selon le projet de répertoire des patronymes du Burkina Faso.",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel du Burkina Faso",
+                "year": null,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 179",
+                "notes": "Document de travail daté de mai 2025 et marqué « version provisoire », sans validation finale visible, lu sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle de ce répertoire n'a été trouvée. Le document recueille des traditions sans appareil critique : ses explications restent des propositions. Notice SANKARA : « patronyme lié à un partage d'héritage d'un peul à sa femme moaga ». Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
