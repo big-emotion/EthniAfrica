@@ -1,6 +1,6 @@
 ---
 title: "Self-names to verify through oral sources (« à vérifier par sources orales »)"
-status: "ruled 2026-10-10, waves 3, 4, 5, 6 and 8 added 2026-10-11 — kept as they are until an oral or fieldwork pass"
+status: "ruled 2026-10-10, waves 3, 4, 5, 6 and 8 added 2026-10-11, wave 12 added 2026-10-12 — kept as they are until an oral or fieldwork pass"
 related:
   - docs/editorial/doctrine.md
   - docs/editorial/strategy/colonial-periods.md
@@ -103,6 +103,17 @@ check each one orally.
 | ----------- | ------- | ------------------------------------------------------------------------------------ |
 | `PPL_EKET`  | Ekid    | a source stating the people use the name; Glottolog lists it only as a language name |
 | `PPL_GONJA` | Ngbanya | a source stating the people use the name for themselves                              |
+
+## Wave 12 of the long tail — ruled 2026-10-12
+
+No source we opened lets the people say these names for themselves at first
+hand. The operator ruled to keep them and to check each one orally.
+
+| Fiche        | Name      | What is missing                                                                                               |
+| ------------ | --------- | ------------------------------------------------------------------------------------------------------------- |
+| `PPL_TAIZI`  | Tajuasohn | a source stating the people use the name; ISO 639-3 (`tja`) and Glottolog give it only as the language's name |
+| `PPL_GIZIGA` | Marva     | the source itself: J. Lukas (1970) is read second-hand, through the community site mandaras.info              |
+| `PPL_MARGI`  | Margyi    | the source itself: Hoffmann (1963) is read second-hand, through the community site mandaras.info              |
 
 ## Related case: Bilād Ṣinqīṭ (`MRT`)
 

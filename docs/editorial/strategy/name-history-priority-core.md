@@ -205,6 +205,50 @@ review:
   - the self-names Ekid (`PPL_EKET`) and Ngbanya (`PPL_GONJA`) are on
     [the oral verification list](self-names-to-verify-orally.md).
 
+- **Waves 12 and 13 of the long tail — ruled 2026-10-12.** Source rulings:
+  - one title, one locator for _Edhina Ekogidho_ (Saarelma-Maunumaa): the
+    Helda handle 10138/151197 holds no file, so every fiche cites the open
+    UNAM PDF that `PAT_IIPUMBU` already used (`PAT_POHAMBA`, `PAT_RIRUAKO`,
+    `PAT_SHIKONGO`), with its pages;
+  - _Basutoland Records_: the archive.org scan `basutolandrecor00theagoog`
+    is vol. II (1853-1861), its title page says so, and `basutolandrecord01basu`
+    is vol. I (1833-1852). `LSO` now cites vol. II, introduction p. v, for
+    « Lesuto … changed into Basutoland »; `PAT_SEKHONYANA` cites vol. I. Each
+    volume has one title;
+  - Ibn Battûta, _Voyages_, tome II (`ldpd_5998008_001`): the title page reads
+    « deuxième tirage », M DCCC LXXVII. `PAT_HASSAN` and `PAT_MOHAMED` now
+    date it 1877, as tome IV is dated by its own second printing (1879);
+  - `PPL_KAKWA` moves to the Nilotic family (`FLG_NILOTIQUE`): its sources
+    place the Kakwa among the Bari, in Eastern Nilotic;
+  - `PAT_OWUSU` is a personal name, as Christaller (1881) describes it:
+    `non_hereditary_patronymic`, unit `individual`, following `PAT_NYOBE`
+    and `PAT_RAMGOOLAM`. The model needs no `nameSystem` gap for it.
+    `PAT_SANKARA` stays as it is until a second source turns up;
+  - accepted as they are: the Ndyuka birth on Kahn's catalogue title of 1931
+    (« Djuka », `PPL_OKANISI`); the Bugakhoe birth on a publisher's page
+    (`PPL_BUGAKWE`); mandaras.info as a `community` source for Marva
+    (`PPL_GIZIGA`) and Margyi (`PPL_MARGI`), second-hand and named; Saleh's
+    usage on Behind the Name, attributed (`PAT_SALEH`); Hanks's Seidi
+    hypothesis (`PAT_SEIDI`); the Diokoramé birth through Pageard, with the
+    Tarikh's Zoghrâni as an uncertain trace (`PPL_DIAWAMBE`); the At Mẓab
+    birth of 1985, second-hand (`PPL_MOZABITE`); the Garifuna birth of 1764,
+    quoted by Young (`PPL_GARIFUNA`); Seselwa first on
+    `PPL_FRANCO_SEYCHELLOIS`, with its caveat; Gran'bla not restored without
+    a second source.
+
+  To upgrade or follow up:
+  - `PPL_JIE_SUD` stays unwritten until Verswijver (2015) is read;
+  - the Polyglotta Africana URL sits under two titles and two kinds across
+    the corpus: give it one;
+  - Malagasy name meanings: look for a Malagasy anthroponymy source rather
+    than build meanings from dictionary words;
+  - `PPL_KAKWA` keeps a pre-wave note calling its classification contested
+    (`whyProblematic`) and its `classificationStatus` « contested »: review
+    them against the sources;
+  - the self-names Tajuasohn (`PPL_TAIZI`), Marva (`PPL_GIZIGA`) and Margyi
+    (`PPL_MARGI`) are on
+    [the oral verification list](self-names-to-verify-orally.md).
+
 - **What may be a birth — ruled 2026-10-10.** A close form may be a birth
   when the tile says so (« a une forme proche », Coulibaly and Koorabarri). A
   press article (Soudan du Sud, 2011), a form a chronicler gives as the
