@@ -83,7 +83,7 @@ which the engine reuses. Rendering never authorizes publication.
     { "start": 42.54, "end": 43.54, "speaker": 0, "fr": "Et encore une fois," }
   ],
   "boxes": [{ "start": 42.5, "end": 56, "text": "NAME, VERIFIED ROLE" }],
-  "credit_line": "Name, role · source : Channel (YouTube)",
+  "credit_line": "Name (@speaker) · source : @show (Show name)",
   "thumbnail": {
     "frame_at": 100,
     "title_lines": ["LINE ONE", "LINE TWO"],
@@ -94,7 +94,9 @@ which the engine reuses. Rendering never authorizes publication.
 
 Several `clips` make jump cuts; phrase times stay on the source clock and the
 engine moves them onto the reel. A gap under 0.6 s between captions is held so
-the text does not blink. Boxes use the same source clock and are never held
+the text does not blink. The credit names the speaker's and the show's
+Instagram accounts when the operator gives them (the reel is posted there, and
+a handle is how the viewer finds them); otherwise the YouTube channel. Boxes use the same source clock and are never held
 past their `end`: a box lingering over the next idea misattributes it.
 
 The engine covers horizontal interview sources. A vertical source (a TikTok or
