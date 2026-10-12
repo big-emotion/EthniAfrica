@@ -70,7 +70,13 @@ export function inspectCard() {
     ),
   ]
     .map(text)
-    .filter(Boolean);
+    // Atlas markers print bare numbers; the keys and the map description name them.
+    .filter((s) => s && !/^\d+$/.test(s));
+  // The design system's own words for keys, territories, marks and the period (1.2.0).
+  const mapDescription =
+    spec.map && window.EthniCards?.altText
+      ? window.EthniCards.altText({ map: spec.map, timeline: spec.timeline })
+      : "";
   const blocks = [...panel.children].filter(
     (node) => !node.matches(".ec-source,.ec-credit,.ec-sign")
   );
@@ -82,7 +88,9 @@ export function inspectCard() {
   });
   const alt =
     spec.alt ||
-    [spec.imageAlt, ...mapText, ...reading].filter(Boolean).join(". ");
+    [spec.imageAlt, mapDescription, ...mapText, ...reading]
+      .filter(Boolean)
+      .join(". ");
   return {
     fit: card._report,
     errors: [...new Set(errors)],

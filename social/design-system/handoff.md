@@ -8,8 +8,9 @@ on 12 October 2026, recorded in `version.json`. It adds the historical atlas map
 dotted present-day borders, the independence map's marks, the period marker) and
 a collision check for every map. No 1.1 rule changed. The sample data changed in
 three 1.1 cards (`seq-3`, `map-fula-nombre-region`, `map-fula-part`: one label
-moved each), and seven sample cards were added. The renderer integration of
-1.2.0 is pending: see « Renderer integration of 1.2.0 » below.
+moved each), and seven sample cards were added. The renderer integrated 1.2.0
+on 12 October 2026 and passes its 38 accepted references: see « Renderer
+integration of 1.2.0 » below and the [adapter status](../renderer/README.md).
 
 The text that follows describes the 1.1.0 acceptance and remains true for it.
 
@@ -192,9 +193,10 @@ The fit report of an atlas map adds `report.atlas: {entries, numbered, inline (n
 
 ## Renderer integration of 1.2.0
 
-`social/renderer` reads this folder and pins the 31 references of 1.1.0 in
-`reference-manifest.json`. Until it is updated, its fidelity check fails on the
-three re-rendered 1.1 cards and does not know the seven new ones. To integrate:
+Done on 12 October 2026: `social/renderer` now pins the 38 references of
+1.2.0-proposition in `reference-manifest.json`, kept in
+`.local/research/social-production-2026-10-09/design-system-1.2.0-accepted/`;
+the steps below are what was done.
 
 1. Render `handoff/cards.sample.json` on the pinned browser (`runtime.json`) in
    diagnostic mode and compare with the 38 proposed references in
