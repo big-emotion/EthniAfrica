@@ -97,5 +97,147 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Phiri », « Chewa », « Malawi », « Zambia », « clan », « surname », « matrilineal », « onomastics », « etymology », « transmission », « alliance », « caste », « homonym » et « obituary », le mémoire de Nthala et la page Forebears dédiée ; l'étude déjà utilisée dans la fiche Banda a été écartée n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Phiri est celui d'un des deux grands clans des Chewa, au Malawi et en Zambie, celui des rois qui portaient le titre de Kalonga. Il est aujourd'hui transmis comme nom de famille. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Phiri",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un des deux grands clans chewa, celui des rois ; son origine est racontée de plusieurs façons.",
+        "periodLabel": "Écrit dès 1892 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Phiri désigne un des deux grands clans des Chewa, avec Banda. Le mot piri veut dire « colline » dans le dictionnaire du mang'anja publié en 1892 par David Clement Scott. Plusieurs légendes expliquent comment le clan a reçu ce nom ; l'archéologue Yusuf Juwayeyi pense que les Chewa avaient déjà des noms de clan et que ces récits expliquent une origine oubliée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Archaeology and Oral Tradition in Malawi: Origins and Early History of the Chewa",
+                "author": "Yusuf M. Juwayeyi",
+                "year": 2020,
+                "url": "https://dokumen.pub/archaeology-and-oral-tradition-in-malawi-origins-and-early-history-of-the-chewa-1847012531-9781847012531.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11 ; p. 37-38",
+                "notes": "Woodbridge, James Currey, 2020. Lu sur une copie non officielle en ligne. Page 11 : le livre de Samuel Josia Ntara, Mbiri ya Achewa, paraît d'abord en 1944 ou en 1945 ; l'auteur le cite dans sa traduction anglaise de 1973. Pages 37-38 : l'auteur cite en entier la légende recueillie par Ntara sur la naissance des noms Phiri et Banda (Ntara 1973, p. 6), puis une autre légende rapportée par Ian Linden en 1972 (Linden 1972, p. 14) ; il juge que les Chewa avaient des noms de clan depuis toujours et que ces légendes expliquent une origine oubliée. Nous n'avons pas lu Ntara ni Linden eux-mêmes. Relu le 12 octobre 2026."
+              },
+              {
+                "title": "A Cyclopaedic Dictionary of the Mang'anja Language Spoken in British Central Africa",
+                "author": "David Clement Scott",
+                "year": 1892,
+                "url": "https://archive.org/details/acyclopdicdicti00commgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 140 ; p. 528",
+                "notes": "Édimbourg, Foreign Mission Committee of the Church of Scotland, 1892. Lu sur l'exemplaire numérisé d'archive.org. Article Dzina, « nom », p. 140 : certaines familles ont chacune leur nom, « the Abanda, Apiri, &c. », que l'auteur compare aux noms de famille. Article Piri, p. 528 : « a hill, mountain ». Missionnaire de la mission de Blantyre, cité ici pour les formes qu'il écrit. Relu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "1892"
+            },
+            "era": "colonial",
+            "statement": "Le nom Phiri a une forme proche, Apiri, dans le dictionnaire du mang'anja du missionnaire David Clement Scott : il cite « les Abanda, les Apiri » parmi les familles qui ont chacune leur nom, comparable à un nom de famille. C'est la plus ancienne trace de ce nom que le projet connaît ; le clan qu'il désigne existait déjà avant elle.",
+            "formAsWritten": "Apiri",
+            "birth": true,
+            "actors": [
+              {
+                "name": "David Clement Scott",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Cyclopaedic Dictionary of the Mang'anja Language Spoken in British Central Africa",
+                "author": "David Clement Scott",
+                "year": 1892,
+                "url": "https://archive.org/details/acyclopdicdicti00commgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 140 ; p. 528",
+                "notes": "Édimbourg, Foreign Mission Committee of the Church of Scotland, 1892. Lu sur l'exemplaire numérisé d'archive.org. Article Dzina, « nom », p. 140 : certaines familles ont chacune leur nom, « the Abanda, Apiri, &c. », que l'auteur compare aux noms de famille. Article Piri, p. 528 : « a hill, mountain ». Missionnaire de la mission de Blantyre, cité ici pour les formes qu'il écrit. Relu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1400,
+              "to": null,
+              "label": "À partir de 1400 environ"
+            },
+            "statement": "Le clan Phiri dirige alors la société chewa sur le plan politique, sous le titre de Kalonga, tandis que le clan Banda garde l'autorité rituelle, selon Grant Nthala.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Chewa Art of Drumming and Its Influence on Modern Malawian Music",
+                "author": "Grant Macloly Moloko Nthala",
+                "year": 2009,
+                "url": "https://scholar.ufs.ac.za/server/api/core/bitstreams/e9174187-e670-478d-a826-bdb824b67f56/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 51",
+                "notes": "Mémoire, Université de l'État-Libre, 2009, lu dans le PDF intégral. Page 51 : la société chewa avait une direction double, à l'image de ses deux clans principaux, Banda et Phiri ; la direction des Phiri, à partir de 1400 environ, porte le titre de Kalonga. L'auteur s'appuie sur Boucher et sur Kings M. Phiri. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1944,
+              "to": 1945,
+              "label": "Rapportée par Ntara en 1944 ou 1945"
+            },
+            "era": "colonial",
+            "statement": "Le nom Phiri viendrait d'une nuit passée dans la brousse : un groupe parti chercher des racines aurait dormi au sommet d'une colline et aurait été surnommé Phiri, « ceux de la colline », selon une légende recueillie par Samuel Josia Ntara.",
+            "hypothesisGroup": "origine du nom Phiri",
+            "sources": [
+              {
+                "title": "Archaeology and Oral Tradition in Malawi: Origins and Early History of the Chewa",
+                "author": "Yusuf M. Juwayeyi",
+                "year": 2020,
+                "url": "https://dokumen.pub/archaeology-and-oral-tradition-in-malawi-origins-and-early-history-of-the-chewa-1847012531-9781847012531.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11 ; p. 37-38",
+                "notes": "Woodbridge, James Currey, 2020. Lu sur une copie non officielle en ligne. Page 11 : le livre de Samuel Josia Ntara, Mbiri ya Achewa, paraît d'abord en 1944 ou en 1945 ; l'auteur le cite dans sa traduction anglaise de 1973. Pages 37-38 : l'auteur cite en entier la légende recueillie par Ntara sur la naissance des noms Phiri et Banda (Ntara 1973, p. 6), puis une autre légende rapportée par Ian Linden en 1972 (Linden 1972, p. 14) ; il juge que les Chewa avaient des noms de clan depuis toujours et que ces légendes expliquent une origine oubliée. Nous n'avons pas lu Ntara ni Linden eux-mêmes. Relu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1972,
+              "to": 1972,
+              "label": "Rapportée en 1972"
+            },
+            "era": "modern",
+            "statement": "Le nom Phiri viendrait d'un choix de route : pendant la migration, ceux qui passaient par les montagnes seraient devenus les Phiri, et ceux qui suivaient les vallées les Banda, selon une autre légende rapportée par Ian Linden.",
+            "hypothesisGroup": "origine du nom Phiri",
+            "sources": [
+              {
+                "title": "Archaeology and Oral Tradition in Malawi: Origins and Early History of the Chewa",
+                "author": "Yusuf M. Juwayeyi",
+                "year": 2020,
+                "url": "https://dokumen.pub/archaeology-and-oral-tradition-in-malawi-origins-and-early-history-of-the-chewa-1847012531-9781847012531.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11 ; p. 37-38",
+                "notes": "Woodbridge, James Currey, 2020. Lu sur une copie non officielle en ligne. Page 11 : le livre de Samuel Josia Ntara, Mbiri ya Achewa, paraît d'abord en 1944 ou en 1945 ; l'auteur le cite dans sa traduction anglaise de 1973. Pages 37-38 : l'auteur cite en entier la légende recueillie par Ntara sur la naissance des noms Phiri et Banda (Ntara 1973, p. 6), puis une autre légende rapportée par Ian Linden en 1972 (Linden 1972, p. 14) ; il juge que les Chewa avaient des noms de clan depuis toujours et que ces légendes expliquent une origine oubliée. Nous n'avons pas lu Ntara ni Linden eux-mêmes. Relu le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
