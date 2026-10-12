@@ -127,5 +127,370 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Mozabites désigne un peuple berbère de la vallée du Mzab, autour de Ghardaïa, dans le Sahara algérien, de religion ibadite, qui se nomme lui-même At Mẓab. Sa langue se nomme tumẓabt. D'autres noms existent : Beni-Mzab chez les auteurs arabes, et Azzaba dans le Sahara. Les sources ne s'accordent pas toujours sur l'origine de ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "At Mẓab",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mzb",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent dans leur langue ; au singulier, Umẓab.",
+        "periodLabel": "Écrit depuis 1985 au moins ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom At Mẓab est celui que se donnent les Mozabites dans leur langue, la tumẓabt ; au singulier, on dit Umẓab, selon le dictionnaire mozabite-français d'Ahmed Nouh-Mefnoune et Brahim Abdessalam, deux auteurs mozabites.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionnaire mozabite-français",
+                "author": "Ahmed Nouh-Mefnoune et Brahim Abdessalam",
+                "year": 2011,
+                "url": "https://www.asadlis-amazigh.com/fr/wp-content/uploads/livres/Dictionnaire%20Mozabite%20Francais.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Alger, ENAG, étude réalisée pour le Haut Commissariat à l'Amazighité. Lu le 12 octobre 2026 dans une copie non officielle mise en ligne par le site Asadlis Amazigh. La préface le présente comme le premier dictionnaire mozabite-français écrit par des Mozabites.",
+                "page": "p. 368, article umẓab"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "1985"
+            },
+            "era": "modern",
+            "statement": "Le nom At Mẓab apparaît dans le titre d'un recueil de textes mozabites publié en 1985 par Jean Delheure, Iwalen d tmeǧǧa n At Mzab, « faits et dires du Mzab », selon le dictionnaire de Nouh-Mefnoune et Abdessalam. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "At MZAB",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionnaire mozabite-français",
+                "author": "Ahmed Nouh-Mefnoune et Brahim Abdessalam",
+                "year": 2011,
+                "url": "https://www.asadlis-amazigh.com/fr/wp-content/uploads/livres/Dictionnaire%20Mozabite%20Francais.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Alger, ENAG, étude réalisée pour le Haut Commissariat à l'Amazighité. Lu le 12 octobre 2026 dans une copie non officielle mise en ligne par le site Asadlis Amazigh. La préface le présente comme le premier dictionnaire mozabite-français écrit par des Mozabites.",
+                "page": "préface, note 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mozabites",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "La forme française, écrite au milieu du XIXe siècle, du nom du Mzab.",
+        "periodLabel": "Écrit depuis 1845 au moins ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mozabites désigne aujourd'hui la communauté de la vallée du Mzab, attachée à ses coutumes et à sa doctrine ibadite, selon l'historien Mammar Chachoua. Leur langue figure dans la norme internationale ISO 639-3 sous le nom de tumzabt.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Mozabite Heritage: Authenticity of Identity and Continuity of Existence",
+                "author": "Mammar Chachoua",
+                "year": 2025,
+                "url": "https://asjp.cerist.dz/en/downArticle/136/11/3/275367",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Djoussour El-maarefa, vol. 11, n° 3, septembre 2025, Université Hassiba Ben Bouali de Chlef ; article lu le 12 octobre 2026.",
+                "page": "p. 999-1000"
+              },
+              {
+                "title": "ISO 639-3, Tumzabt [mzb]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/mzb",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1845,
+              "to": 1845,
+              "label": "1845"
+            },
+            "era": "polity",
+            "statement": "Le nom Mozabites apparaît sous une forme proche, Mzabit, chez l'officier français Eugène Daumas, qui parle du « schisme des Mzabit » dans un livre publié en 1845. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Mzabit",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Le Sahara algérien : études géographiques, statistiques et historiques sur la région au sud des établissements français en Algérie",
+                "author": "Eugène Daumas",
+                "year": 1845,
+                "url": "https://archive.org/details/lesaharaalgrie00daumuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Langlois et Leclercq, 1845, publié par ordre du gouvernement dans l'Exploration scientifique de l'Algérie. Lu dans la numérisation d'Internet Archive le 12 octobre 2026. Le livre porte le regard de l'administration militaire française en Algérie.",
+                "page": "p. 53"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1852,
+              "to": 1852,
+              "label": "1852"
+            },
+            "statement": "Le nom Mozabites figure dans une note du baron de Slane à sa traduction d'Ibn Khaldoun, publiée à Alger en 1852 : la doctrine kharidjite y compte encore des partisans chez les Mozabites et chez les habitants de l'île de Djerba.",
+            "formAsWritten": "Mozabites",
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome I",
+                "author": "Ibn Khaldoun, traduit par William Mac Guckin de Slane",
+                "year": 1852,
+                "url": "https://archive.org/details/ibn-khaldun-histoire-des-berberes-et-des-dynasties-musulmanes-de-l-afrique-septentrionale-v-1",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Alger, Imprimerie du Gouvernement, publié par ordre du ministre de la Guerre. Lu sur la numérisation d'Internet Archive le 12 octobre 2026.",
+                "page": "p. 204, note"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Beni-Mzab",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "« Les gens du Mzab » ; le nom Mzab viendrait d'une tribu zénète.",
+        "periodLabel": "Écrit depuis le XIVe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1301,
+              "to": 1400,
+              "label": "XIVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Mzab apparaît chez l'historien Ibn Khaldoun pour un territoire situé entre deux déserts, où des bourgades portent les noms des familles zénètes qui les ont fondées, et pour une fraction des Zenata. La traduction du baron de Slane l'écrit « Mozab ». C'est la plus ancienne trace de ce nom que le projet connaît. Le pays et ses habitants existaient déjà avant lui.",
+            "formAsWritten": "Mozab",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome I",
+                "author": "Ibn Khaldoun, traduit par William Mac Guckin de Slane",
+                "year": 1852,
+                "url": "https://archive.org/details/ibn-khaldun-histoire-des-berberes-et-des-dynasties-musulmanes-de-l-afrique-septentrionale-v-1",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Alger, Imprimerie du Gouvernement, publié par ordre du ministre de la Guerre. Lu sur la numérisation d'Internet Archive le 12 octobre 2026.",
+                "page": "p. 49"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant l'arrivée des Beni-Mzab, selon leur tradition"
+            },
+            "statement": "On parle alors d'Oued-Mezar pour désigner le pays qu'on appelle aujourd'hui le Mzab, selon des lettrés du Mzab interrogés par Adrien Berbrugger, dont le baron de Slane publie la note.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome III",
+                "author": "Ibn Khaldoun, traduit par William Mac Guckin de Slane",
+                "year": 1856,
+                "url": "https://archive.org/details/bub_gb_T9IOAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Alger, Imprimerie du Gouvernement. Lu sur la numérisation d'Internet Archive le 11 octobre 2026. Une note du traducteur reproduit une note d'Adrien Berbrugger sur le mot Azzaba, écrite après un voyage au Mzab en 1851.",
+                "page": "p. 203-204, note"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Proposée en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Mzab viendrait de celui de la tribu des Banu Mus'ab, une branche des Berbères zénètes, devenu Mzab en berbère, selon l'historien Mammar Chachoua.",
+            "hypothesisGroup": "origine du nom Mzab",
+            "sources": [
+              {
+                "title": "The Mozabite Heritage: Authenticity of Identity and Continuity of Existence",
+                "author": "Mammar Chachoua",
+                "year": 2025,
+                "url": "https://asjp.cerist.dz/en/downArticle/136/11/3/275367",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Djoussour El-maarefa, vol. 11, n° 3, septembre 2025, Université Hassiba Ben Bouali de Chlef ; article lu le 12 octobre 2026.",
+                "page": "p. 1000"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1845,
+              "to": 1845,
+              "label": "Rapportée en 1845"
+            },
+            "era": "polity",
+            "statement": "Le nom Beni-Mzab viendrait du nom de la terre où vivent les Mozabites, appelée Mzab, ou plutôt de celui d'une rivière qui coule sur cette terre, selon un texte du lettré musulman Sidi Khelil que traduit Eugène Daumas.",
+            "hypothesisGroup": "origine du nom Mzab",
+            "sources": [
+              {
+                "title": "Le Sahara algérien : études géographiques, statistiques et historiques sur la région au sud des établissements français en Algérie",
+                "author": "Eugène Daumas",
+                "year": 1845,
+                "url": "https://archive.org/details/lesaharaalgrie00daumuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Paris, Langlois et Leclercq, 1845, publié par ordre du gouvernement dans l'Exploration scientifique de l'Algérie. Lu dans la numérisation d'Internet Archive le 12 octobre 2026. Le livre porte le regard de l'administration militaire française en Algérie.",
+                "page": "p. 54"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Azzaba",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "Un nom donné aux Beni-Mzab dans le Sahara ; son origine est discutée.",
+        "periodLabel": "XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Azzaba vit encore dans celui du conseil religieux qui dirige la société mozabite, la Ḥalqat al-ʿAzāba, mise en place après 1018, selon l'historien Mammar Chachoua.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Mozabite Heritage: Authenticity of Identity and Continuity of Existence",
+                "author": "Mammar Chachoua",
+                "year": 2025,
+                "url": "https://asjp.cerist.dz/en/downArticle/136/11/3/275367",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Djoussour El-maarefa, vol. 11, n° 3, septembre 2025, Université Hassiba Ben Bouali de Chlef ; article lu le 12 octobre 2026.",
+                "page": "p. 1003"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "1856"
+            },
+            "statement": "Le nom Azzaba désigne les Beni-Mzab dans le Sahara algérien, selon une note d'Adrien Berbrugger que publie le baron de Slane. La grande mosquée de Touggourt porte encore le nom de Djamâ-el-Azzabia.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome III",
+                "author": "Ibn Khaldoun, traduit par William Mac Guckin de Slane",
+                "year": 1856,
+                "url": "https://archive.org/details/bub_gb_T9IOAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Alger, Imprimerie du Gouvernement. Lu sur la numérisation d'Internet Archive le 11 octobre 2026. Une note du traducteur reproduit une note d'Adrien Berbrugger sur le mot Azzaba, écrite après un voyage au Mzab en 1851.",
+                "page": "p. 203-204, note"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1851,
+              "to": 1851,
+              "label": "1851"
+            },
+            "statement": "Le nom Azzaba sert aussi aux Mozabites eux-mêmes : le cheikh Baba, chef religieux de l'Oued-Mzab, l'emploie pour désigner les habitants de Berriane dans une lettre qu'il adresse à leur assemblée, selon Adrien Berbrugger, qui rapporte cet échange de son voyage au Mzab.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome III",
+                "author": "Ibn Khaldoun, traduit par William Mac Guckin de Slane",
+                "year": 1856,
+                "url": "https://archive.org/details/bub_gb_T9IOAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Alger, Imprimerie du Gouvernement. Lu sur la numérisation d'Internet Archive le 11 octobre 2026. Une note du traducteur reproduit une note d'Adrien Berbrugger sur le mot Azzaba, écrite après un voyage au Mzab en 1851.",
+                "page": "p. 203-204, note"
+              }
+            ],
+            "era": "polity"
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Proposée en 1856"
+            },
+            "statement": "Le nom Azzaba voudrait dire « les hommes non mariés », c'est-à-dire les initiés ou les affiliés à la doctrine kharidjite, selon le baron de Slane. Berbrugger pense lui aussi que le mot désigne la doctrine plutôt que le peuple.",
+            "hypothesisGroup": "origine du nom Azzaba",
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome III",
+                "author": "Ibn Khaldoun, traduit par William Mac Guckin de Slane",
+                "year": 1856,
+                "url": "https://archive.org/details/bub_gb_T9IOAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Alger, Imprimerie du Gouvernement. Lu sur la numérisation d'Internet Archive le 11 octobre 2026. Une note du traducteur reproduit une note d'Adrien Berbrugger sur le mot Azzaba, écrite après un voyage au Mzab en 1851.",
+                "page": "p. 203-204, note"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Rapportée en 1856"
+            },
+            "statement": "Le nom Azzaba viendrait de azebou, « ils se fixèrent » : arrivés dans ce pays désolé que personne ne leur disputerait, les ancêtres s'y seraient établis. C'est l'explication que des lettrés du Mzab donnent à Adrien Berbrugger, qui leur en laisse la responsabilité.",
+            "hypothesisGroup": "origine du nom Azzaba",
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome III",
+                "author": "Ibn Khaldoun, traduit par William Mac Guckin de Slane",
+                "year": 1856,
+                "url": "https://archive.org/details/bub_gb_T9IOAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Alger, Imprimerie du Gouvernement. Lu sur la numérisation d'Internet Archive le 11 octobre 2026. Une note du traducteur reproduit une note d'Adrien Berbrugger sur le mot Azzaba, écrite après un voyage au Mzab en 1851.",
+                "page": "p. 203-204, note"
+              }
+            ],
+            "era": "colonial"
+          }
+        ]
+      }
+    ]
   }
 }

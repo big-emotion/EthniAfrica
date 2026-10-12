@@ -119,5 +119,197 @@
         "source_kind": "discovery"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Siwi désigne un peuple berbère de l'oasis de Siwa, dans le désert occidental de l'Égypte, et sa langue ; ce peuple se nomme lui-même Isiwan. D'autres noms existent : Siwans en anglais, et, dans l'Antiquité, Ammoniens. On ne sait pas avec certitude d'où vient le nom de l'oasis ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Isiwan",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "siz",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les habitants de l'oasis de Siwa.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Isiwan est celui des habitants de l'oasis dans leur langue berbère, qu'ils appellent ǝǧlan n-Isiwan, « la langue des Siwis », selon le linguiste Christfried Naumann. On ne sait pas avec certitude quand ce nom a été écrit pour la première fois.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "An acoustically based phonology and morphophonology of Siwi (Berber)",
+                "author": "Christfried Naumann, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://www.eva.mpg.de/linguistics/past-research-resources/phonetics-and-phonology/an-acoustically-based-phonology-and-morphophonology-of-siwi-berber/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page de présentation d'un projet de recherche passé, lue le 12 octobre 2026. « Siwi (or ǝǧlan n-Isiwan 'the language of the Siwis') »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Siwi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du peuple et de sa langue, proche de celui de l'oasis.",
+        "periodLabel": "Écrit sous une forme proche depuis 1799 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Siwi sert de nom de référence à la langue de l'oasis dans la norme internationale ISO 639-3, sous le code siz.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, Siwi [siz]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/siz",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1792,
+              "to": 1799,
+              "label": "Voyage de 1792, publié en 1799"
+            },
+            "era": "polity",
+            "statement": "Le nom Siwi apparaît sous une forme proche, Siwa, le nom de l'oasis, chez le voyageur anglais William George Browne, qui s'y rend en 1792 et parle des « people of Siwa », les gens de Siwa. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "people of Siwa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels in Africa, Egypt, and Syria, from the year 1792 to 1798",
+                "author": "William George Browne",
+                "year": 1799,
+                "url": "https://archive.org/details/travelsinafricae00brow",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Cadell et Davies, 1799. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un voyageur anglais de la fin du XVIIIe siècle.",
+                "page": "p. 28"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Moyen Âge, chez les auteurs arabes"
+            },
+            "statement": "On parle alors de Schantaria ou de Santrieh, écrits de diverses façons, pour désigner l'oasis chez les historiens et géographes arabes. Ces noms deviennent plus tard Siouah, puis Siwa, selon Charles Dalrymple Belgrave.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Siwa: the Oasis of Jupiter Ammon",
+                "author": "Charles Dalrymple Belgrave",
+                "year": 1923,
+                "url": "https://www.gutenberg.org/ebooks/74874",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, John Lane, lu dans l'édition numérique du Projet Gutenberg le 12 octobre 2026, qui reproduit la pagination de l'original. L'auteur a été en poste à Siwa en 1920 et 1921 pour l'administration des districts frontaliers.",
+                "page": "p. 89"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -400,
+              "to": -301,
+              "label": "IVe siècle avant notre ère"
+            },
+            "era": "polity",
+            "statement": "On parle alors des Ammoniens pour désigner les habitants de l'oasis, dont le dieu, que les Égyptiens avaient assimilé à leur Amon, rendait l'un des oracles les plus célèbres du monde antique, selon Charles Dalrymple Belgrave.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Siwa: the Oasis of Jupiter Ammon",
+                "author": "Charles Dalrymple Belgrave",
+                "year": 1923,
+                "url": "https://www.gutenberg.org/ebooks/74874",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, John Lane, lu dans l'édition numérique du Projet Gutenberg le 12 octobre 2026, qui reproduit la pagination de l'original. L'auteur a été en poste à Siwa en 1920 et 1921 pour l'administration des districts frontaliers.",
+                "page": "p. 76"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -499,
+              "to": -400,
+              "label": "Ve siècle avant notre ère"
+            },
+            "era": "polity",
+            "statement": "On parle alors d'Ammoniens pour désigner les habitants de l'oasis, un nom qu'ils se donnaient eux-mêmes d'après le dieu Ammon, selon l'historien grec Hérodote, que cite Charles Dalrymple Belgrave.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Siwa: the Oasis of Jupiter Ammon",
+                "author": "Charles Dalrymple Belgrave",
+                "year": 1923,
+                "url": "https://www.gutenberg.org/ebooks/74874",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, John Lane, lu dans l'édition numérique du Projet Gutenberg le 12 octobre 2026, qui reproduit la pagination de l'original. L'auteur a été en poste à Siwa en 1920 et 1921 pour l'administration des districts frontaliers.",
+                "page": "p. 77"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Siwans",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "eng",
+        "namedBy": null,
+        "shortLine": "Le nom anglais des habitants de l'oasis.",
+        "periodLabel": "Écrit depuis 1923 au moins",
+        "accounts": [
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "1923"
+            },
+            "era": "modern",
+            "statement": "Le nom Siwans désigne les habitants de l'oasis dans le livre que publie en 1923 Charles Dalrymple Belgrave, qui y a été en poste. Il les présente comme les descendants d'un peuple plus ancien, d'origine berbère et non arabe, avec une langue à eux, parlée mais non écrite. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "aspect": "usage",
+            "formAsWritten": "Siwans",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Siwa: the Oasis of Jupiter Ammon",
+                "author": "Charles Dalrymple Belgrave",
+                "year": 1923,
+                "url": "https://www.gutenberg.org/ebooks/74874",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, John Lane, lu dans l'édition numérique du Projet Gutenberg le 12 octobre 2026, qui reproduit la pagination de l'original. L'auteur a été en poste à Siwa en 1920 et 1921 pour l'administration des districts frontaliers.",
+                "page": "p. 2 et 18"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
