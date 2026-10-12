@@ -11,7 +11,10 @@
     {
       "spelling": "Sekhonyana",
       "attestations": [
-        { "countryId": "LSO", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "LSO",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -75,5 +78,134 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sekhonyana est d'abord le nom personnel d'un fils du roi Moshoeshoe, au Lesotho. Il est aujourd'hui celui d'une famille de chefs. Les sources lues n'en donnent pas le sens.",
+    "names": [
+      {
+        "nameText": "Sekhonyana",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un fils du roi Moshoeshoe, devenu celui d'une famille de chefs du Lesotho.",
+        "periodLabel": "Écrit dès 1851 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sekhonyana est celui d'une des familles royales du Lesotho, dont dépend la branche 'Maseribane, selon le Lesotho Times. Ce nom est d'abord celui d'un fils du roi Moshoeshoe, connu aussi sous son nom de baptême, Nehemiah. Les sources lues ne disent pas ce que veut dire Sekhonyana ; on ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "BNP supporters barred from Jonathan's widow",
+                "author": "Lesotho Times",
+                "year": 2011,
+                "url": "https://lestimes.com/?p=6841",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article du 11 août 2011, sans signature. Il range les Sekhonyana parmi les familles royales du Lesotho qui ont dirigé le Basotho National Party, et écrit que la branche 'Maseribane relève de la famille Sekhonyana. Lu le 11 octobre 2026."
+              },
+              {
+                "title": "Basutoland Records, vol. I (1833-1852)",
+                "author": "George McCall Theal (compilateur)",
+                "year": 1883,
+                "url": "https://archive.org/details/basutolandrecord01basu",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 404 ; p. 504",
+                "notes": "Le Cap, W. A. Richards & Sons, imprimeurs du gouvernement, 1883 ; recueil de documents officiels, lu sur l'exemplaire numérisé d'archive.org. Page 404 : lettre du chef Moshoeshoe, signée de sa marque, au chef barolong Moroka, Thaba Bosiu, 2 juin 1851 : « my son Sekonyana ». Page 504 : en décembre 1852, Moshoeshoe envoie « his son Nehemiah Sekonyana ». Recueil publié par l'administration coloniale du Cap, à lire comme tel. Relu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "Décrit en 2011"
+            },
+            "era": "modern",
+            "statement": "Le nom Sekhonyana désigne une famille qui dispute la direction du Basotho National Party à la famille Molapo, selon le Lesotho Times.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "BNP supporters barred from Jonathan's widow",
+                "author": "Lesotho Times",
+                "year": 2011,
+                "url": "https://lestimes.com/?p=6841",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article du 11 août 2011, sans signature. Il range les Sekhonyana parmi les familles royales du Lesotho qui ont dirigé le Basotho National Party, et écrit que la branche 'Maseribane relève de la famille Sekhonyana. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "Publié en 1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sekhonyana est écrit sous cette forme par J. C. MacGregor : Moshoeshoe aurait envoyé Masupha, Makhobalo et Sekhonyana au secours du chef Moletsane, selon les traditions qu'il rapporte.",
+            "formAsWritten": "Sekhonyana",
+            "actors": [
+              {
+                "name": "J. C. MacGregor",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Basuto Traditions",
+                "author": "J. C. MacGregor",
+                "year": 1905,
+                "url": "https://archive.org/details/basutotraditions00macg",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 32",
+                "notes": "Le Cap, Argus, 1905. Lu sur l'exemplaire numérisé d'archive.org. L'auteur, fonctionnaire de l'administration du Basutoland, rapporte des traditions des groupes qui forment la nation basotho ; il écrit que Moshoeshoe envoya Masupha, Makhobalo et Sekhonyana au secours de Moletsane. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1851,
+              "to": 1851,
+              "label": "2 juin 1851"
+            },
+            "era": "polity",
+            "statement": "Le nom Sekhonyana a une forme proche, Sekonyana, dans une lettre du roi Moshoeshoe au chef barolong Moroka, écrite à Thaba Bosiu. Le roi y parle de « mon fils Sekonyana », parti en expédition sans son accord. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "Sekonyana",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Moshoeshoe",
+                "role": "roi des Basotho, auteur de la lettre"
+              },
+              {
+                "name": "Moroka",
+                "role": "chef barolong, destinataire"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Basutoland Records, vol. I (1833-1852)",
+                "author": "George McCall Theal (compilateur)",
+                "year": 1883,
+                "url": "https://archive.org/details/basutolandrecord01basu",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 404",
+                "notes": "Le Cap, W. A. Richards & Sons, imprimeurs du gouvernement, 1883 ; recueil de documents officiels, lu sur l'exemplaire numérisé d'archive.org. Lettre du chef Moshoeshoe, signée de sa marque, au chef barolong Moroka, Thaba Bosiu, 2 juin 1851 : « my son Sekonyana ». Recueil publié par l'administration coloniale du Cap, à lire comme tel. Relu le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

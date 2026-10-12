@@ -96,5 +96,131 @@
       "fieldPath": "homonyms",
       "reason": "Les formes Ouyahia, Ou Yahia, Aït Yahia et Yahiaoui ont été comparées dans la thèse et les catalogues ; aucune seconde origine autonome sous la graphie exacte Ouyahia n’a été établie."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ouyahia est un nom de famille kabyle, en Algérie. Une seule explication de son origine est connue : il voudrait dire « de la famille de Yahia » ; nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Ouyahia",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille kabyle, formé avec ou, qui marquerait l'appartenance à une famille.",
+        "periodLabel": "Écrit dès 2013 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Ouyahia est un nom de famille kabyle, porté dans les daïras de Timezrit, Sidi-Aïch et Chemini, en Algérie. Une seule explication de son origine est connue ; nous la présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La patronymie dans les daïras de Timezrit, Sidi-Aïch et Chemini : étude morphologique et sémantique",
+                "author": "Mustapha Tidjet",
+                "year": 2013,
+                "url": "https://fr.doczz.net/doc/6484275/la-patronymie-dans-les-dairas-de-timezrit--sidi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 126",
+                "notes": "Thèse de doctorat, Université Mouloud Mammeri de Tizi-Ouzou, janvier 2013. Lue le 12 octobre 2026 dans une copie non officielle mise en ligne sur doczz ; la thèse figure au catalogue collectif algérien des thèses. Pages 14 et 15 : la loi du 23 mars 1882 rend le patronyme d'état civil obligatoire en Algérie. Page 119 : les Pères Blancs écrivent la particule ou à part, comme dans « Sidi Ali Ou-yahi », d'après Genevois (1996). Page 126 : ou, morphème berbère de filiation ou d'appartenance, singulier de Ait/At ; Oulmahdi « de la famille Mahdi », puis Oukaci, Ourabah, Oussadi, Ouyahia et Oubrahem. Page 166, parmi les noms bibliques : Yahia, le prophète qui a baptisé Jésus ; « Yahyaoui, Ouyahia, Ait Yahia « de la famille Yahya » ». Page 205, parmi les noms de souhait : « Saidi, Saidani, Saidoun, Boussaid ; Bensaid de Saïd « heureux » »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "Proposée en 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Ouyahia serait formé de ou, un mot berbère qui marque la filiation ou l'appartenance et sert de singulier à Aït, et du nom Yahia, celui du prophète qui a baptisé Jésus. Il voudrait dire « de la famille de Yahia », comme Oulmahdi veut dire « de la famille Mahdi », selon Mustapha Tidjet.",
+            "hypothesisGroup": "origine du nom Ouyahia",
+            "sources": [
+              {
+                "title": "La patronymie dans les daïras de Timezrit, Sidi-Aïch et Chemini : étude morphologique et sémantique",
+                "author": "Mustapha Tidjet",
+                "year": 2013,
+                "url": "https://fr.doczz.net/doc/6484275/la-patronymie-dans-les-dairas-de-timezrit--sidi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 126, 166",
+                "notes": "Thèse de doctorat, Université Mouloud Mammeri de Tizi-Ouzou, janvier 2013. Lue le 12 octobre 2026 dans une copie non officielle mise en ligne sur doczz ; la thèse figure au catalogue collectif algérien des thèses. Pages 14 et 15 : la loi du 23 mars 1882 rend le patronyme d'état civil obligatoire en Algérie. Page 119 : les Pères Blancs écrivent la particule ou à part, comme dans « Sidi Ali Ou-yahi », d'après Genevois (1996). Page 126 : ou, morphème berbère de filiation ou d'appartenance, singulier de Ait/At ; Oulmahdi « de la famille Mahdi », puis Oukaci, Ourabah, Oussadi, Ouyahia et Oubrahem. Page 166, parmi les noms bibliques : Yahia, le prophète qui a baptisé Jésus ; « Yahyaoui, Ouyahia, Ait Yahia « de la famille Yahya » ». Page 205, parmi les noms de souhait : « Saidi, Saidani, Saidoun, Boussaid ; Bensaid de Saïd « heureux » »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1882,
+              "to": 1882,
+              "label": "23 mars 1882"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ouyahia appartient aux noms de famille d'état civil, que la loi française du 23 mars 1882 a rendus obligatoires en Algérie, selon Mustapha Tidjet. Les sources consultées ne disent pas quand ce nom a été inscrit pour la première fois.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "La patronymie dans les daïras de Timezrit, Sidi-Aïch et Chemini : étude morphologique et sémantique",
+                "author": "Mustapha Tidjet",
+                "year": 2013,
+                "url": "https://fr.doczz.net/doc/6484275/la-patronymie-dans-les-dairas-de-timezrit--sidi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 14-15",
+                "notes": "Thèse de doctorat, Université Mouloud Mammeri de Tizi-Ouzou, janvier 2013. Lue le 12 octobre 2026 dans une copie non officielle mise en ligne sur doczz ; la thèse figure au catalogue collectif algérien des thèses. Pages 14 et 15 : la loi du 23 mars 1882 rend le patronyme d'état civil obligatoire en Algérie. Page 119 : les Pères Blancs écrivent la particule ou à part, comme dans « Sidi Ali Ou-yahi », d'après Genevois (1996). Page 126 : ou, morphème berbère de filiation ou d'appartenance, singulier de Ait/At ; Oulmahdi « de la famille Mahdi », puis Oukaci, Ourabah, Oussadi, Ouyahia et Oubrahem. Page 166, parmi les noms bibliques : Yahia, le prophète qui a baptisé Jésus ; « Yahyaoui, Ouyahia, Ait Yahia « de la famille Yahya » ». Page 205, parmi les noms de souhait : « Saidi, Saidani, Saidoun, Boussaid ; Bensaid de Saïd « heureux » »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1996,
+              "to": 1996,
+              "label": "Rapporté en 1996"
+            },
+            "era": "modern",
+            "statement": "Le nom Ouyahia a une forme proche, Ou-yahi, dans « Sidi Ali Ou-yahi », un nom que Mustapha Tidjet cite d'après Genevois pour montrer comment les Pères Blancs écrivaient la particule ou à part. Les sources ne disent pas s'il s'agit du même nom.",
+            "formAsWritten": "Ou-yahi",
+            "sources": [
+              {
+                "title": "La patronymie dans les daïras de Timezrit, Sidi-Aïch et Chemini : étude morphologique et sémantique",
+                "author": "Mustapha Tidjet",
+                "year": 2013,
+                "url": "https://fr.doczz.net/doc/6484275/la-patronymie-dans-les-dairas-de-timezrit--sidi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 119",
+                "notes": "Thèse de doctorat, Université Mouloud Mammeri de Tizi-Ouzou, janvier 2013. Lue le 12 octobre 2026 dans une copie non officielle mise en ligne sur doczz ; la thèse figure au catalogue collectif algérien des thèses. Pages 14 et 15 : la loi du 23 mars 1882 rend le patronyme d'état civil obligatoire en Algérie. Page 119 : les Pères Blancs écrivent la particule ou à part, comme dans « Sidi Ali Ou-yahi », d'après Genevois (1996). Page 126 : ou, morphème berbère de filiation ou d'appartenance, singulier de Ait/At ; Oulmahdi « de la famille Mahdi », puis Oukaci, Ourabah, Oussadi, Ouyahia et Oubrahem. Page 166, parmi les noms bibliques : Yahia, le prophète qui a baptisé Jésus ; « Yahyaoui, Ouyahia, Ait Yahia « de la famille Yahya » ». Page 205, parmi les noms de souhait : « Saidi, Saidani, Saidoun, Boussaid ; Bensaid de Saïd « heureux » »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Ouyahia apparaît par écrit dans la thèse de Mustapha Tidjet sur les noms de famille de Timezrit, Sidi-Aïch et Chemini. C'est la plus ancienne trace de cette forme que le projet connaît ; elle dit quand un auteur l'a notée, pas depuis quand le nom est porté.",
+            "formAsWritten": "Ouyahia",
+            "birth": true,
+            "sources": [
+              {
+                "title": "La patronymie dans les daïras de Timezrit, Sidi-Aïch et Chemini : étude morphologique et sémantique",
+                "author": "Mustapha Tidjet",
+                "year": 2013,
+                "url": "https://fr.doczz.net/doc/6484275/la-patronymie-dans-les-dairas-de-timezrit--sidi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 126",
+                "notes": "Thèse de doctorat, Université Mouloud Mammeri de Tizi-Ouzou, janvier 2013. Lue le 12 octobre 2026 dans une copie non officielle mise en ligne sur doczz ; la thèse figure au catalogue collectif algérien des thèses. Pages 14 et 15 : la loi du 23 mars 1882 rend le patronyme d'état civil obligatoire en Algérie. Page 119 : les Pères Blancs écrivent la particule ou à part, comme dans « Sidi Ali Ou-yahi », d'après Genevois (1996). Page 126 : ou, morphème berbère de filiation ou d'appartenance, singulier de Ait/At ; Oulmahdi « de la famille Mahdi », puis Oukaci, Ourabah, Oussadi, Ouyahia et Oubrahem. Page 166, parmi les noms bibliques : Yahia, le prophète qui a baptisé Jésus ; « Yahyaoui, Ouyahia, Ait Yahia « de la famille Yahya » ». Page 205, parmi les noms de souhait : « Saidi, Saidani, Saidoun, Boussaid ; Bensaid de Saïd « heureux » »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

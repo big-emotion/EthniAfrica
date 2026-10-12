@@ -105,5 +105,102 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Said », « Saïd », « Swahili », « Comorian », « surname », « onomastics », « etymology » et « transmission », ainsi que la consultation directe de « Said Surname Origin, Meaning & Last Name History » n'ont établi aucune règle propre à Said permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Said est un nom de personne arabe, déjà porté au XIVe siècle par un juriste de Mogadiscio, sur la côte de l'Afrique de l'Est. Il est aussi porté comme nom de famille. Une seule explication de son sens est connue ; nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Said",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne déjà porté au XIVe siècle sur la côte de l'Afrique de l'Est.",
+        "periodLabel": "Écrit dès le XIVe siècle ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Said est un nom de personne arabe, porté aussi comme nom de famille. Une seule explication de son sens est connue ; nous la présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La patronymie dans les daïras de Timezrit, Sidi-Aïch et Chemini : étude morphologique et sémantique",
+                "author": "Mustapha Tidjet",
+                "year": 2013,
+                "url": "https://fr.doczz.net/doc/6484275/la-patronymie-dans-les-dairas-de-timezrit--sidi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 205",
+                "notes": "Thèse de doctorat, Université Mouloud Mammeri de Tizi-Ouzou, janvier 2013. Lue le 12 octobre 2026 dans une copie non officielle mise en ligne sur doczz ; la thèse figure au catalogue collectif algérien des thèses. Pages 14 et 15 : la loi du 23 mars 1882 rend le patronyme d'état civil obligatoire en Algérie. Page 119 : les Pères Blancs écrivent la particule ou à part, comme dans « Sidi Ali Ou-yahi », d'après Genevois (1996). Page 126 : ou, morphème berbère de filiation ou d'appartenance, singulier de Ait/At ; Oulmahdi « de la famille Mahdi », puis Oukaci, Ourabah, Oussadi, Ouyahia et Oubrahem. Page 166, parmi les noms bibliques : Yahia, le prophète qui a baptisé Jésus ; « Yahyaoui, Ouyahia, Ait Yahia « de la famille Yahya » ». Page 205, parmi les noms de souhait : « Saidi, Saidani, Saidoun, Boussaid ; Bensaid de Saïd « heureux » »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "Proposée en 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Said voudrait dire « heureux », selon Mustapha Tidjet, qui étudie des noms de famille d'Algérie. En arabe, le mot saʿīd veut bien dire « heureux, fortuné », selon le dictionnaire de Kazimirski.",
+            "hypothesisGroup": "origine du nom Said",
+            "sources": [
+              {
+                "title": "La patronymie dans les daïras de Timezrit, Sidi-Aïch et Chemini : étude morphologique et sémantique",
+                "author": "Mustapha Tidjet",
+                "year": 2013,
+                "url": "https://fr.doczz.net/doc/6484275/la-patronymie-dans-les-dairas-de-timezrit--sidi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 205",
+                "notes": "Thèse de doctorat, Université Mouloud Mammeri de Tizi-Ouzou, janvier 2013. Lue le 12 octobre 2026 dans une copie non officielle mise en ligne sur doczz ; la thèse figure au catalogue collectif algérien des thèses. Pages 14 et 15 : la loi du 23 mars 1882 rend le patronyme d'état civil obligatoire en Algérie. Page 119 : les Pères Blancs écrivent la particule ou à part, comme dans « Sidi Ali Ou-yahi », d'après Genevois (1996). Page 126 : ou, morphème berbère de filiation ou d'appartenance, singulier de Ait/At ; Oulmahdi « de la famille Mahdi », puis Oukaci, Ourabah, Oussadi, Ouyahia et Oubrahem. Page 166, parmi les noms bibliques : Yahia, le prophète qui a baptisé Jésus ; « Yahyaoui, Ouyahia, Ait Yahia « de la famille Yahya » ». Page 205, parmi les noms de souhait : « Saidi, Saidani, Saidoun, Boussaid ; Bensaid de Saïd « heureux » »."
+              },
+              {
+                "title": "Dictionnaire arabe-français, tome 1",
+                "author": "Albert de Biberstein Kazimirski",
+                "year": 1860,
+                "url": "https://archive.org/details/dictionnairearab01bibeuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 1091",
+                "notes": "Paris, Maisonneuve, 1860. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 1091, à la racine s-ʿ-d : le mot saʿīd est traduit « Heureux, fortuné ». Le dictionnaire ne le donne pas, à cette page, comme nom de personne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1300,
+              "to": 1399,
+              "label": "XIVe siècle"
+            },
+            "statement": "Le nom Said apparaît sous une forme proche, Sa'ïd, dans la traduction française du récit de voyage d'Ibn Battûta : c'est le nom d'un juriste né à Makdachaou, l'actuelle Mogadiscio, qu'il rencontre dans la mosquée de Hîly. C'est la plus ancienne trace de ce nom que le projet connaît ; c'est ici un nom de personne, pas un nom de famille.",
+            "formAsWritten": "Sa'ïd",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Ibn Battûta",
+                "role": "voyageur qui rapporte ce nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Voyages d'Ibn Batoutah, texte arabe accompagné d'une traduction, tome IV",
+                "author": "Ibn Battûta ; traduction de C. Defrémery et B. R. Sanguinetti",
+                "year": 1879,
+                "url": "https://archive.org/details/ldpd_5998008_003",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 83",
+                "notes": "Paris, Imprimerie nationale, deuxième tirage de 1879, d'après la page de titre du tome IV. Récit de voyage du XIVe siècle, lu dans la traduction française sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 83, dans la mosquée de Hîly : « un vertueux jurisconsulte originaire de Makdachaou et que l'on appelait Sa'ïd »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

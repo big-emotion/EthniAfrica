@@ -99,5 +99,83 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Sipoto », « Sipotó », « Bubi », « Bioko », « surname », « baptism », « etymology » et « transmission », ainsi que la consultation directe de « Las autoridades guineanas niegan el visado de entrada al diputado del Parlamento balear Cecili Buale i Ramis » n'ont établi aucune règle propre à Sipoto permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sipoto, écrit Sipotó dans des registres de 1912 et 1913, est un nom bubi de l'île de Bioko, en Guinée équatoriale. On ne sait pas avec certitude ce qu'il veut dire ni s'il désigne un clan : la seule source lue le donne comme second nom d'un homme baptisé en 1912.",
+    "names": [
+      {
+        "nameText": "Sipoto",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom bubi de Bioko, écrit Sipotó en 1912 ; son sens n'est pas connu.",
+        "periodLabel": "Écrit dès 1912",
+        "accounts": [
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Décrit en 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Sipoto, écrit Sipotó, est le second nom d'Andrés Buele Siesa, fils de Buele et de Siesá, né à Basilé Bubi en 1911, selon une lettre de son fils publiée en 2003. La lettre ne dit pas ce que veut dire ce nom ni s'il vient d'un clan ; le fils porte, lui, le nom Buele.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Las autoridades guineanas niegan el visado de entrada al diputado del Parlamento balear Cecili Buale i Ramis",
+                "author": "Cecili Buele i Ramis",
+                "year": 2003,
+                "url": "https://guinea-ecuatorial.net/inicio.asp?cd=ni1609",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Lettre datée de Majorque le 3 janvier 2003, publiée le 5 janvier 2003 sur un portail d'information sur la Guinée équatoriale, lu le 11 octobre 2026. L'auteur, fils d'Andrés Buele Siesa « Sipotó », né à Basilé Bubi le 14 décembre 1911, cite le livre 2 des baptêmes : « Andrés B. Sipotó », baptisé à Basilé le 25 décembre 1912, « hijo de Buele y de Siesá » ; et le livre des confirmations, folio 29 : le 31 août 1913, « Andrés Sipotó, hijo de Buele y de Siesa ». La lettre ne dit pas ce que veut dire Sipotó ni s'il désigne un clan. Le titre publié écrit Buale, la signature Buele."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sipoto apparaît par écrit sous la forme Sipotó dans un livre de baptêmes : Andrés B. Sipotó est baptisé à Basilé, sur l'île de Bioko, le 25 décembre 1912, selon la transcription qu'en donne son fils en 2003. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un registre l'a écrit, pas depuis quand il est porté.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Las autoridades guineanas niegan el visado de entrada al diputado del Parlamento balear Cecili Buale i Ramis",
+                "author": "Cecili Buele i Ramis",
+                "year": 2003,
+                "url": "https://guinea-ecuatorial.net/inicio.asp?cd=ni1609",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Lettre datée de Majorque le 3 janvier 2003, publiée le 5 janvier 2003 sur un portail d'information sur la Guinée équatoriale, lu le 11 octobre 2026. L'auteur, fils d'Andrés Buele Siesa « Sipotó », né à Basilé Bubi le 14 décembre 1911, cite le livre 2 des baptêmes : « Andrés B. Sipotó », baptisé à Basilé le 25 décembre 1912, « hijo de Buele y de Siesá » ; et le livre des confirmations, folio 29 : le 31 août 1913, « Andrés Sipotó, hijo de Buele y de Siesa ». La lettre ne dit pas ce que veut dire Sipotó ni s'il désigne un clan. Le titre publié écrit Buale, la signature Buele."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sipoto est de nouveau écrit Sipotó dans le livre des confirmations, le 31 août 1913, pour Andrés Sipotó, fils de Buele et de Siesa, selon la même lettre.",
+            "sources": [
+              {
+                "title": "Las autoridades guineanas niegan el visado de entrada al diputado del Parlamento balear Cecili Buale i Ramis",
+                "author": "Cecili Buele i Ramis",
+                "year": 2003,
+                "url": "https://guinea-ecuatorial.net/inicio.asp?cd=ni1609",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Lettre datée de Majorque le 3 janvier 2003, publiée le 5 janvier 2003 sur un portail d'information sur la Guinée équatoriale, lu le 11 octobre 2026. L'auteur, fils d'Andrés Buele Siesa « Sipotó », né à Basilé Bubi le 14 décembre 1911, cite le livre 2 des baptêmes : « Andrés B. Sipotó », baptisé à Basilé le 25 décembre 1912, « hijo de Buele y de Siesá » ; et le livre des confirmations, folio 29 : le 31 août 1913, « Andrés Sipotó, hijo de Buele y de Siesa ». La lettre ne dit pas ce que veut dire Sipotó ni s'il désigne un clan. Le titre publié écrit Buale, la signature Buele."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

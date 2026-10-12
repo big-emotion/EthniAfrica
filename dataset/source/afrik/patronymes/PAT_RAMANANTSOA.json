@@ -81,5 +81,68 @@
       "fieldPath": "homonyms",
       "reason": "La presse d'archive, les catalogues et les recherches exactes consultés n'établissent pas de lignée homonyme d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ramanantsoa est un nom de personne malgache, porté aujourd'hui comme nom de famille. Il commence par Ra, que le malgache place devant les noms de personnes. On ne sait pas avec certitude ce que veut dire le reste du nom ni d'où il vient : les sources que nous avons lues ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Ramanantsoa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne malgache porté comme nom de famille ; on ne sait pas avec certitude ce qu'il veut dire.",
+        "periodLabel": "Écrit dès 1942 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ramanantsoa est un nom de personne malgache, porté comme nom de famille, par exemple par Bernard Ramanantsoa, auteur de livres sur la gestion des entreprises. Il commence par Ra, que le malgache place devant les noms de personnes. Les sources lues ne disent ni ce que veut dire le reste du nom, ni d'où il vient, ni comment il se transmet.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Notice bibliographique « Stratégie de l'entreprise et diversification / J.-P. Détrie et B. Ramanantsoa »",
+                "author": "Bibliothèque nationale de France",
+                "year": 1983,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb347540511",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice de la Bibliothèque nationale de France, lue le 11 octobre 2026. Livre de Jean-Pierre Détrie et de « Ramanantsoa, Bernard (1948-....) », daté de 1983. Il ne dit rien de l'origine du nom."
+              },
+              {
+                "title": "Dictionnaire malgache-français",
+                "author": "Antoine Abinal et Victorin Malzac",
+                "year": 1888,
+                "url": "https://archive.org/details/dictionnairemalg00abin",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 456",
+                "notes": "Tananarive, Imprimerie de la Mission catholique, 1888. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 456, article Ra : « Article personnel qui se met ordinairement devant les noms propres : Ra-bé, Ra-láy, qu'on écrit Rabe, Ralay ». Auteurs de l'époque coloniale, cités ici pour les formes qu'ils relèvent."
+              }
+            ]
+          },
+          {
+            "period": { "from": 1942, "to": 1942, "label": "1942" },
+            "statement": "Le nom Ramanantsoa apparaît par écrit comme nom d'auteur d'une thèse de médecine de Raymond Ramanantsoa, datée de 1942, selon le catalogue de la Bibliothèque nationale de France. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est donné.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notice bibliographique « Contribution à l'étude des muscles dans les scolioses essentielles , thèse... par Raymond Ramanantsoa,... »",
+                "author": "Bibliothèque nationale de France",
+                "year": 1942,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb32554727g",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice de la Bibliothèque nationale de France, lue le 11 octobre 2026. Thèse de médecine de « Ramanantsoa, Raymond (1913-....) », datée de 1942 ; la notice ne donne pas le lieu. C'est la plus ancienne publication sous ce nom que donne le catalogue."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

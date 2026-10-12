@@ -76,5 +76,63 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Rita à un peuple à São Tomé-et-Príncipe. Nous n'avons pas encore consulté de source consacrée à ce nom. La fiche sur les Forros cite trois noms d'origine portugaise : Trovoada, Espírito Santo et Vera Cruz. Leur usage ne permet pas de rattacher tous les noms portugais aux Forros."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Rita est un nom de famille porté à São Tomé-et-Príncipe. C'est d'abord un prénom féminin, devenu aussi un nom de famille. On ne sait pas avec certitude quand ni comment il l'est devenu à São Tomé-et-Príncipe.",
+    "names": [
+      {
+        "nameText": "Rita",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un prénom féminin devenu nom de famille, porté à São Tomé-et-Príncipe.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Rita est un nom de famille portugais, italien et espagnol qui reprend un prénom féminin. Ce prénom serait une forme courte de Margherita, « Marguerite », choisie surtout en l'honneur d'une sainte italienne du XVe siècle, selon le dictionnaire de Patrick Hanks. Le dictionnaire ne dit pas comment ce prénom est devenu un nom de famille à São Tomé-et-Príncipe.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Rita Name Meaning and Rita Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=rita",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch : « Italian, Portuguese, Spanish, and Catalan: from the female personal name Rita, a shortened form of Margharita ‘Margaret’, chosen in particular in honor of a 15th-century Italian saint who bore the name in this form. » L'entrée ne parle pas de São Tomé-et-Príncipe. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "30 septembre 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Rita figure dans la légende d'une photographie des Nations unies : Mateus Meira Rita, ministre des Affaires étrangères de São Tomé-et-Príncipe, y parle devant l'Assemblée générale. La légende ne dit rien de l'origine du nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Foreign Affairs Minister of Sao Tome and Principe Addresses Fifty-Eighth Session of Assembly",
+                "author": "UN Photo / Michelle Poiré",
+                "year": 2003,
+                "url": "https://dam.media.un.org/asset-management/2AM9LO1RWI97",
+                "tier": "official",
+                "source_kind": "archive",
+                "notes": "Notice de la photothèque des Nations unies, identifiant UN7776532, datée du 30 septembre 2003 à New York. Légende : « Mateus Meira Rita, Minister for Foreign Affairs and Cooperation of Sao Tome and Principe, addresses the fifty-eighth session of the General Assembly. » Elle ne dit rien de l'origine du nom. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
