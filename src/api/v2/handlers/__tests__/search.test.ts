@@ -349,6 +349,7 @@ describe("ftsSearchHandler — places", () => {
     nameMain: "Yamoussoukro",
     placeType: "ville",
     countryId: "CIV",
+    countryIds: ["CIV"],
     summary: "Capitale politique.",
     nameHistory: null,
     relevance: 1,
