@@ -87,5 +87,87 @@
       "fieldPath": "homonyms",
       "reason": "Les catalogues et recherches exactes consultés n'établissent pas de lignée homonyme d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Rakotoarisoa est un nom de personne malgache, porté aujourd'hui comme nom de famille. Il commence par Ra, que le malgache place devant les noms de personnes. On ne sait pas avec certitude ce que veut dire le reste du nom ni d'où il vient : les sources que nous avons lues ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Rakotoarisoa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne malgache porté comme nom de famille ; on ne sait pas avec certitude ce qu'il veut dire.",
+        "periodLabel": "Écrit dès 1953 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Rakotoarisoa est un nom de personne malgache, porté comme nom de famille, par exemple par Jean-Aimé Rakotoarisoa, archéologue à l'université d'Antananarivo. Il commence par Ra, que le malgache place devant les noms de personnes. Les sources lues ne disent ni ce que veut dire le reste du nom, ni d'où il vient, ni comment il se transmet.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Notice de personne « Rakotoarisoa, Jean-Aimé »",
+                "author": "Bibliothèque nationale de France",
+                "year": null,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb13327959b",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice d'autorité de la Bibliothèque nationale de France, lue le 11 octobre 2026. Elle présente Jean-Aimé Rakotoarisoa comme docteur en géographie et en archéologie, directeur du Musée d'art et d'archéologie de l'université d'Antananarivo depuis 1973. Elle ne dit rien de l'origine du nom."
+              },
+              {
+                "title": "Dictionnaire malgache-français",
+                "author": "Antoine Abinal et Victorin Malzac",
+                "year": 1888,
+                "url": "https://archive.org/details/dictionnairemalg00abin",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 456",
+                "notes": "Tananarive, Imprimerie de la Mission catholique, 1888. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 456, article Ra : « Article personnel qui se met ordinairement devant les noms propres : Ra-bé, Ra-láy, qu'on écrit Rabe, Ralay ». Auteurs de l'époque coloniale, cités ici pour les formes qu'ils relèvent."
+              }
+            ]
+          },
+          {
+            "period": { "from": 1953, "to": 1953, "label": "1953" },
+            "era": "colonial",
+            "statement": "Le nom Rakotoarisoa apparaît par écrit sur une carte du Service géologique de Madagascar, à Tananarive, qui porte la mention « Dressé par Rakotoarisoa G. », selon le catalogue de la Bibliothèque nationale de France. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est donné.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notice bibliographique « Madagascar. Service géologique. Région aurifère de Mananjary, structure régionale et répartition des gisements, 1 : 200.000 / H. de La Roche, 1952 ; Dressé par Rakotoarisoa G. »",
+                "author": "Bibliothèque nationale de France",
+                "year": 1953,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb40731511k",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice de la Bibliothèque nationale de France, lue le 11 octobre 2026. Carte du Service géologique de Madagascar, Tananarive, datée de 1953, dont le titre porte « Dressé par Rakotoarisoa G. ». C'est la plus ancienne trace de ce nom que donne le catalogue."
+              }
+            ]
+          },
+          {
+            "period": { "from": 1888, "to": 1888, "label": "1888" },
+            "era": "colonial",
+            "statement": "Le nom Rakoto est déjà un nom de personne : le dictionnaire d'Antoine Abinal et Victorin Malzac l'emploie dans l'exemple « Satro-dRakoto, pour satroka ny Rakoto ». Ce dictionnaire traduit aussi le mot kóto par « un garçon », sans dire si le nom vient de ce mot.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Dictionnaire malgache-français",
+                "author": "Antoine Abinal et Victorin Malzac",
+                "year": 1888,
+                "url": "https://archive.org/details/dictionnairemalg00abin",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 332 ; p. 456",
+                "notes": "Tananarive, Imprimerie de la Mission catholique, 1888. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 456, article Ra : « Article personnel qui se met ordinairement devant les noms propres : Ra-bé, Ra-láy, qu'on écrit Rabe, Ralay ». Même page, article R : « Satro-dRakóto, pour satroka ny Rakoto », exemple où Rakoto est un nom de personne. Page 332 : « Kóto, s. Un garçon ». Auteurs de l'époque coloniale, cités ici pour les formes qu'ils relèvent."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
