@@ -6,6 +6,8 @@ import {
   reelDuration,
   reelPhrases,
   reelBoxes,
+  reelOverlays,
+  overlayTrack,
   toSrt,
   captionTrack,
 } from "./plan.mjs";
@@ -173,6 +175,50 @@ test("boxes move to the reel clock without bridging", () => {
 
 test("a plan without boxes has none", () => {
   assert.deepEqual(reelBoxes(plan()), []);
+});
+
+test("a caption may be written in `text`, in any language, instead of `fr`", () => {
+  const p = plan({
+    phrases: [{ start: 10.2, end: 12, text: "Same-language caption." }],
+  });
+  assert.deepEqual(validatePlan(p), []);
+  assert.match(toSrt(reelPhrases(p)), /Same-language caption\./);
+});
+
+test("an on-screen text overlay needs a position inside the source frame", () => {
+  const errors = validatePlan(
+    plan({
+      overlays: [
+        { start: 10, end: 12, text: "« sauvage »", x: 0.5, y: 0.3 },
+        { start: 12, end: 13, text: "Hors cadre", x: 1.4, y: 0.3 },
+        { start: 12, end: 13, text: " ", x: 0.5, y: 0.5 },
+      ],
+    })
+  );
+  assert.equal(errors.length, 2);
+  assert.match(errors.join(), /overlay 2.*position/);
+  assert.match(errors.join(), /overlay 3.*text/);
+});
+
+test("overlays may show together; the track lists what is on screen in each stretch", () => {
+  const p = plan({
+    overlays: [
+      { start: 10, end: 14, text: "Un", x: 0.5, y: 0.2 },
+      { start: 12, end: 16, text: "Deux", x: 0.5, y: 0.8 },
+    ],
+  });
+  assert.deepEqual(
+    overlayTrack(reelOverlays(p), reelDuration(p)).map((s) => [
+      s.active,
+      Number(s.seconds.toFixed(3)),
+    ]),
+    [
+      [[0], 2],
+      [[0, 1], 2],
+      [[1], 2],
+      [[], 4],
+    ]
+  );
 });
 
 test("the caption track covers the whole reel, gaps included", () => {

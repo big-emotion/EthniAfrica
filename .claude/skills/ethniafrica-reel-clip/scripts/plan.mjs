@@ -1,7 +1,8 @@
-// The plan of a translated clip: where the excerpt sits in the source, and the
-// French captions timed on the speaker's voice. Phrase times stay on the
-// source clock, so the operator can check them against the original video;
-// they move to the reel clock only here.
+// The plan of a reel clip: where the excerpt sits in the source, the captions
+// timed on the speaker's voice (translated or in the source language), the
+// boxes framing the argument and the overlays that replace on-screen text.
+// Times stay on the source clock, so the operator can check them against the
+// original video; they move to the reel clock only here.
 
 // Two lines of the 70 px caption face fit about 28 characters each in the
 // 960 px text column. The browser measures the real fit at render time; this
@@ -18,6 +19,16 @@ const BRIDGE_SECONDS = 0.6;
 const characters = (text) =>
   [...new Intl.Segmenter("fr", { granularity: "grapheme" }).segment(text)]
     .length;
+
+// `fr` is the field of the first translated reels; `text` serves any language.
+const captionText = (p) => {
+  const text = p.text ?? p.fr;
+  return typeof text === "string" ? text.trim() : "";
+};
+
+const inClip = (clips, item) =>
+  clips.some(([a, b]) => item.start >= a && item.end <= b);
+const isFraction = (v) => typeof v === "number" && v >= 0 && v <= 1;
 
 export function validatePlan(plan) {
   const errors = [];
@@ -37,11 +48,10 @@ export function validatePlan(plan) {
   if (!phrases.length) errors.push("phrases: at least one caption is required");
   phrases.forEach((p, i) => {
     const label = `phrase ${i + 1}`;
-    const text = typeof p.fr === "string" ? p.fr.trim() : "";
-    if (!text) errors.push(`${label}: French text is required`);
+    const text = captionText(p);
+    if (!text) errors.push(`${label}: caption text is required`);
     if (!(p.end > p.start)) errors.push(`${label}: end must follow start`);
-    if (!clips.some(([a, b]) => p.start >= a && p.end <= b))
-      errors.push(`${label}: outside every clip`);
+    if (!inClip(clips, p)) errors.push(`${label}: outside every clip`);
     if (i > 0 && p.start < phrases[i - 1].end)
       errors.push(`${label}: overlaps phrase ${i}`);
     const count = characters(text);
@@ -66,6 +76,18 @@ export function validatePlan(plan) {
     if (i > 0 && b.start < boxes[i - 1].end)
       errors.push(`${label}: overlaps box ${i}`);
   });
+  const overlays = Array.isArray(plan.overlays) ? plan.overlays : [];
+  overlays.forEach((o, i) => {
+    const label = `overlay ${i + 1}`;
+    if (typeof o.text !== "string" || !o.text.trim())
+      errors.push(`${label}: text is required`);
+    if (!(o.end > o.start)) errors.push(`${label}: end must follow start`);
+    if (!inClip(clips, o)) errors.push(`${label}: outside every clip`);
+    if (!isFraction(o.x) || !isFraction(o.y))
+      errors.push(
+        `${label}: position x, y must be fractions of the source frame`
+      );
+  });
   return errors;
 }
 
@@ -76,12 +98,40 @@ const MAX_BOX_CHARACTERS = 70;
 // Boxes frame what the speaker argues ("POUR ELLE, …"): they are timed on the
 // source clock like the phrases, but never bridged, since a box that lingers
 // over the next idea misattributes it.
-export const reelBoxes = (plan) =>
-  (plan.boxes || []).map((b) => ({
-    ...b,
-    start: toReelTime(plan.clips, b.start),
-    end: toReelTime(plan.clips, b.end),
+const toReel = (plan, items) =>
+  (items || []).map((item) => ({
+    ...item,
+    start: toReelTime(plan.clips, item.start),
+    end: toReelTime(plan.clips, item.end),
   }));
+
+export const reelBoxes = (plan) => toReel(plan, plan.boxes);
+
+// Overlays replace text the author burned into the picture, so they follow the
+// original's own timing and may share the screen.
+export const reelOverlays = (plan) => toReel(plan, plan.overlays);
+
+// One stretch per change in what is on screen; `active` indexes the overlays
+// drawn together in that stretch.
+export function overlayTrack(overlays, duration) {
+  const cuts = [
+    ...new Set([0, duration, ...overlays.flatMap((o) => [o.start, o.end])]),
+  ]
+    .filter((t) => t >= 0 && t <= duration)
+    .sort((a, b) => a - b);
+  const track = [];
+  for (let i = 0; i < cuts.length - 1; i++) {
+    const [from, to] = [cuts[i], cuts[i + 1]];
+    const active = overlays
+      .map((o, index) => (o.start <= from && o.end >= to ? index : -1))
+      .filter((index) => index >= 0);
+    const last = track.at(-1);
+    if (last && String(last.active) === String(active))
+      last.seconds += to - from;
+    else track.push({ active, seconds: to - from });
+  }
+  return track;
+}
 
 export const reelDuration = (plan) =>
   round(plan.clips.reduce((sum, [a, b]) => sum + (b - a), 0));
@@ -98,10 +148,9 @@ function toReelTime(clips, t) {
 }
 
 export function reelPhrases(plan) {
-  const moved = plan.phrases.map((p) => ({
+  const moved = toReel(plan, plan.phrases).map((p) => ({
     ...p,
-    start: toReelTime(plan.clips, p.start),
-    end: toReelTime(plan.clips, p.end),
+    text: captionText(p),
   }));
   for (let i = 0; i < moved.length - 1; i++) {
     const next = moved[i + 1].start;
@@ -119,7 +168,8 @@ const srtTime = (t) => {
 export const toSrt = (phrases) =>
   phrases
     .map(
-      (p, i) => `${i + 1}\n${srtTime(p.start)} --> ${srtTime(p.end)}\n${p.fr}\n`
+      (p, i) =>
+        `${i + 1}\n${srtTime(p.start)} --> ${srtTime(p.end)}\n${p.text}\n`
     )
     .join("\n");
 
