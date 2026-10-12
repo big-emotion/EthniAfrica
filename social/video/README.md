@@ -46,7 +46,19 @@ A sequence with `chapters` is a 0.3.0 video: the 0.2.0 opening once (globe to th
 - **Historical outline.** A chapter `outline` points to a GeoJSON LineString or Polygon file and must carry its `source`, `study`, `elevationModel` and `levelMetres`: only a contour at a published shoreline level is drawn, never a freehand shape. A file marked as a mockup is refused. The outline is round dots over dark dots, its inside tinted at 14 %, labelled « contour reconstitué », and it fades in whole like any overlay: a lake never fills, dries or shrinks on screen. `illustrative: true` marks a synthetic outline, accepted only in a demo sequence, and the tape then says so.
 - **Endings.** After the last chapter, everything leaves with the title and the top signature, the base darkens and the closing block holds 2.5 s; the imagery line stays. Ending A (signature, slogan, one sentence about what the page holds, the bare domain in the cards' pill) requires `pageOnline: true`, so a video never promises a page that does not exist; ending B is the signature and slogan only. Neither asks the viewer for anything.
 
-The glyph boxes are checked against the safe zone on every frame where a chapter is fully drawn and on the last frame. `fixtures/sahara.chapters.sequence.json` is the design's worked example with its illustrative text; its Méga-Tchad outline is `fixtures/synthetic-outline.geojson`, a plain octagon, and the real contour is produced separately.
+The glyph boxes are checked against the safe zone on every frame where a chapter is fully drawn and on the last frame. `fixtures/sahara.chapters.sequence.json` is the design's worked example with its illustrative text; its Méga-Tchad outline is `fixtures/synthetic-outline.geojson`, a plain octagon; the real contour is `data/megachad-325m.geojson` (below).
+
+## Mega-Chad outline
+
+`data/megachad-325m.geojson` is the highest palaeoshoreline of Mega-Chad for the Sahara video, as the operator ruled on 12 October 2026 (design 0.3.0-proposition): the 325 m contour traced on ETOPO 2022. The level comes from Leblanc et al. (2006), _Palaeogeography, Palaeoclimatology, Palaeoecology_ 239, 16–27, DOI 10.1016/j.palaeo.2006.01.003: the shoreline remains « have a constant elevation of 325 ± 5 m amsl » (p. 16 and p. 20). Other studies place it a few metres higher: Drake and Bristow (2006) average 329 m, with older ridges at 335 m. The video's source line names the study and the elevation model. The designer's mock-up contour is never a substitute.
+
+```sh
+ETHNIAFRICA_VIDEO_ASSETS=PATH node social/video/shoreline.mjs --date YYYY-MM-DD
+```
+
+The script reads the same verified ETOPO 2022 tile as the relief option, checked against its SHA-256. It keeps one lake: the low ground that water from present-day Lake Chad reaches without rising to 325 m. In ETOPO 2022 the basin overflows at 324.99 m near 15.31° E 10.26° N, towards the Benue. That is the Mayo Kebbi spillway that Leblanc et al. tie to the 325 m level. The fill stops there, so the line closes across the spillway instead of following the Benue valley. Every other 325 m line in the region is ignored. The script checks that the result covers the Bodélé, the lake's northern pool.
+
+Simplification is Douglas–Peucker at 0.02° (about 2 km, one DEM cell, under one pixel when the Sahara fills a 1080 px frame), then rounding to 0.001°. Islands under 100 km² are filled in. The file records its own provenance, area and vertex count. The DEM stays outside git; the derived GeoJSON is small and public domain, so it is committed. `npm run test:social-video` checks the committed file, and the acceptance run regenerates it from the DEM and compares bytes.
 
 ## Rules enforced before rendering
 
