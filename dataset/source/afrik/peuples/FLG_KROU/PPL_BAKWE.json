@@ -133,5 +133,122 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bakwé désigne un peuple de langue krou du sud-ouest de la Côte d'Ivoire, entre Soubré, Sassandra et San-Pédro. C'était d'abord le nom de sa tribu principale, selon Maurice Delafosse ; nous n'avons pas lu de source qui dise si ce peuple se donne aussi un autre nom. Un autre nom, Gbe, lui a été rattaché par des linguistes, mais ce rapprochement est discuté. On ne sait pas avec certitude d'où vient le nom Bakwé ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Bakwé",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bjw",
+        "namedBy": null,
+        "shortLine": "Le nom courant de ce peuple, écrit Bakoué dès 1904 ; son origine n'est pas documentée.",
+        "usedIn": ["bjw", "fra"],
+        "periodLabel": "Écrit dès 1904 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1979,
+              "to": 1979,
+              "label": "1979"
+            },
+            "era": "modern",
+            "statement": "Le nom Bakwé désigne le peuple autochtone d'un canton de la sous-préfecture de Soubré, au cœur d'une région forestière peu peuplée, selon le géographe Alfred Schwartz. On ne sait pas avec certitude d'où vient ce nom : nous n'avons pas encore lu de source qui l'explique.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Colonisation agricole spontanée et émergence de nouveaux milieux sociaux dans le Sud-Ouest ivoirien : l'exemple du canton bakwé de la sous-préfecture de Soubré",
+                "author": "Alfred Schwartz",
+                "year": 1979,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/sci_hum/04192.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Cahiers ORSTOM, série Sciences humaines, vol. XVI, nos 1-2, 1979, p. 83-101. Lu sur la base Horizon de l'IRD.",
+                "page": "p. 83"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bakwé apparaît sous la forme Bakoué chez l'administrateur colonial Maurice Delafosse, qui le donne à tout le groupe krou de l'ouest, d'après la tribu qu'il tient pour la principale ; la frontière avec le groupe bété suit à peu près le Sassandra. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne vivait là bien avant lui.",
+            "formAsWritten": "Bakoué",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 68",
+                "notes": "Paris, Ernest Leroux, 1904. Lu sur sa numérisation par la bibliothèque de l'université de Toronto."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gbe",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom relevé en 1854 que des linguistes ont rattaché aux Bakwé ; ce rattachement est discuté.",
+        "usedIn": ["eng", "fra"],
+        "periodLabel": "Écrit dès 1854",
+        "accounts": [
+          {
+            "period": {
+              "from": 1993,
+              "to": 1993,
+              "label": "1993"
+            },
+            "era": "modern",
+            "statement": "Le nom Gbe est rattaché aux Bakwé par Maurice Delafosse, puis par Diedrich Westermann en 1948. Alfred Schwartz y voit une erreur : Sigismund Koelle situait les Gbé à l'ouest des Gio et à l'est de Grand Bassa, au Liberia, et il s'agirait bien plutôt des Gbi, un groupe de l'est du Liberia. Les sources ne disent donc pas avec certitude s'il s'agit du même peuple.",
+            "sources": [
+              {
+                "title": "Sous-peuplement et développement dans le sud-ouest de la Côte d'Ivoire",
+                "author": "Alfred Schwartz",
+                "year": 1993,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_2/etudes_theses/37792.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 80-82",
+                "notes": "Paris, ORSTOM, 1993. Lu sur la base Horizon de l'IRD."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gbe est, selon Maurice Delafosse, celui que le linguiste Sigismund Koelle donne en 1854, dans sa Polyglotta Africana, aux Bakwé proprement dits.",
+            "formAsWritten": "Gbe",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 70",
+                "notes": "Paris, Ernest Leroux, 1904. Lu sur sa numérisation par la bibliothèque de l'université de Toronto."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

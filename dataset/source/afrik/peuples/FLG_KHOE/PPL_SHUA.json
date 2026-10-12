@@ -144,5 +144,118 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Shua désigne un peuple du nord-est du Botswana, autour de Nata, de Nxai Pan et des salines du Makgadikgadi, et sa langue. Ce peuple se nommerait lui-même Shwakhwe, un nom relevé sous la forme Shua-Khwe, mais nous n'avons pas encore lu de source qui dise qu'il se nomme ainsi. On ne sait pas avec certitude d'où viennent ces noms, ni depuis quand on les écrit ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Shwakhwe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "shg",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donneraient, relevé sous la forme Shua-Khwe ; son origine n'est pas documentée.",
+        "usedIn": ["shg"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Shwakhwe a une forme proche, Shua-Khwe, parmi les noms de la langue shua que relève Eugene S. L. Chan, avec Mashuakwe, Sesarwa et Tshumakwe ; la langue se parle notamment autour de Nata, de Gweta et dans le Boteti. Nous n'avons pas encore lu de source qui dise si ce peuple se nomme ainsi lui-même, ni d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Numeral Systems of the World's Languages : Shua",
+                "author": "Eugene S. L. Chan",
+                "year": null,
+                "url": "https://lingweb.eva.mpg.de/channumerals/Shua.htm",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Page hébergée par l'Institut Max Planck d'anthropologie évolutionnaire ; données fournies par William McGregor en 2011. Lue le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Shua",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "shg",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple et de sa langue chez les linguistes ; son origine n'est pas documentée.",
+        "usedIn": ["eng", "shg"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Shua désigne une langue khoe de l'est du Kalahari, proche du tshwa, dont les locuteurs vivaient surtout autour de Nxai Pan et du Makgadikgadi, selon les linguistes Andy Chebanne et Mawande Dlali. On ne sait pas avec certitude d'où vient ce nom, et nous n'avons pas encore trouvé sa plus ancienne trace écrite.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The curse of poverty and marginalisation in language development: The case of Khoisan languages of Botswana",
+                "author": "Andy Chebanne et Mawande Dlali",
+                "year": 2019,
+                "url": "http://www.scielo.org.za/scielo.php?script=sci_arttext&pid=S2224-33802019000300012",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Stellenbosch Papers in Linguistics Plus, vol. 58."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Shua est celui que la norme ISO 639-3 donne à leur langue, sous le code shg.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, code shg : Shua",
+                "author": "SIL International",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/shg",
+                "tier": "official",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "era": "colonial",
+            "statement": "Le nom Shua n'apparaît pas chez l'anthropologue Isaac Schapera. Le long du bas Botletle et jusqu'à la dépression du Makgadikgadi, il décrit des chasseurs-cueilleurs qu'il connaît sous un nom bantou, Mahura, et dont personne, écrit-il, n'a noté le nom qu'ils se donnent. Les sources ne disent pas s'il s'agit des Shua.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 36",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
