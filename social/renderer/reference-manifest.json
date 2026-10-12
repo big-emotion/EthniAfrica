@@ -1,6 +1,6 @@
 {
-  "designVersion": "1.1.0-proposition",
-  "source": "Operator-supplied Claude Design references received 10 October 2026; two map references reconciled to the unchanged accepted engine by explicit operator decision on the same date.",
+  "designVersion": "1.2.0-proposition",
+  "source": "Operator-supplied Claude Design references received 10 October 2026; two map references reconciled to the unchanged accepted engine by explicit operator decision on the same date. Version 1.2.0-proposition accepted by the operator on 12 October 2026: 28 references of 1.1.0 kept unchanged, three 1.1 cards whose sample label moved re-rendered on the pinned browser, seven atlas cards added from the pinned browser after comparison with Claude Design's 1.2.0 references.",
   "files": [
     {
       "id": "seq-1",
@@ -15,7 +15,7 @@
     {
       "id": "seq-3",
       "file": "seq-3.png",
-      "sha256": "fd750b6d8bb687c06d7d9849291dffc9570e649580867f7d3b5ae374dd40f81c"
+      "sha256": "abf610ac7b55be1d6ff732de3d62470970f846232054a930ba3f25ab3b0a5259"
     },
     {
       "id": "seq-4",
@@ -150,12 +150,47 @@
     {
       "id": "map-fula-nombre-region",
       "file": "map-fula-nombre-region.png",
-      "sha256": "6aa3b78868df412fa00fbf13e3a9460c5fc612bde426e473a64dfc779b41ac4c"
+      "sha256": "5393b1ed1cbaaa409bdc5b4abd15ff051cb31b53cf8ffc17e4486226c1d25d31"
     },
     {
       "id": "map-fula-part",
       "file": "map-fula-part.png",
-      "sha256": "6e78b64baf6922b073bf7e6b68c7581ec7bbf55731acf4b1684d737c74750c25"
+      "sha256": "0ef4c931feb484ebf09c6b5a796c0a4f7ea9ba115fa70d21d5b6dd25c7623f8f"
+    },
+    {
+      "id": "atlas-1880",
+      "file": "atlas-1880.png",
+      "sha256": "cc4ee185c31a08384d1ade891b9c2c2f72f349e2dca1b841e36c7f37ad7e2a60"
+    },
+    {
+      "id": "atlas-1914",
+      "file": "atlas-1914.png",
+      "sha256": "f72664bef9669b9ed1e70a0b089f9a8605ce8f9b26027bc986f374123a37b946"
+    },
+    {
+      "id": "atlas-independances",
+      "file": "atlas-independances.png",
+      "sha256": "eeeed62111c8512306c9abdefcef1d27b3aa0c5ec0c8c15feb3ae5a6f2096f0a"
+    },
+    {
+      "id": "atlas-1500",
+      "file": "atlas-1500.png",
+      "sha256": "700ea44308140a51d283730e3890a6a8b7ce0f5e6b929d0e091ad3415cbc3a64"
+    },
+    {
+      "id": "atlas-1880-parchemin",
+      "file": "atlas-1880-parchemin.png",
+      "sha256": "62592008e66567c2793ef4806ef57a9c2755d8f45145c97a0c6dfcaaed4f9ede"
+    },
+    {
+      "id": "atlas-capacite-45",
+      "file": "atlas-capacite-45.png",
+      "sha256": "0904b961e85d15f21d51d5362b867593f95d094c550923f69aab4aa229bfea49"
+    },
+    {
+      "id": "atlas-proto-collisions",
+      "file": "atlas-proto-collisions.png",
+      "sha256": "7d293f5d942127eefeae4aab8ef7ca00c51917cf12c54ea5c7eb660bc96282e0"
     }
   ],
   "reconciliation": {
@@ -171,6 +206,64 @@
         "id": "map-fula-parchemin",
         "previousSha256": "180d7529a995724945b9c1fa4e2b3274685afaf5c59275eafed762a87d3beb11",
         "acceptedSha256": "ef5eb6d85fb2fcce4c88e4b428c8fe95216ebb55d877ccdd05f679af54bdfbde"
+      }
+    ]
+  },
+  "integration-1.2.0": {
+    "date": "2026-10-12",
+    "decision": "Operator accepted EthniAfrica Cartes 1.2.0-proposition and asked for its integration (claude-design-1.2.0-prompt.md). References for re-rendered and new cards are the pinned browser's renders; Claude Design's own 1.2.0 references are kept separately as evidence. No tolerance or engine change.",
+    "changes": [
+      {
+        "id": "seq-3",
+        "previousSha256": "fd750b6d8bb687c06d7d9849291dffc9570e649580867f7d3b5ae374dd40f81c",
+        "acceptedSha256": "abf610ac7b55be1d6ff732de3d62470970f846232054a930ba3f25ab3b0a5259"
+      },
+      {
+        "id": "map-fula-nombre-region",
+        "previousSha256": "6aa3b78868df412fa00fbf13e3a9460c5fc612bde426e473a64dfc779b41ac4c",
+        "acceptedSha256": "5393b1ed1cbaaa409bdc5b4abd15ff051cb31b53cf8ffc17e4486226c1d25d31"
+      },
+      {
+        "id": "map-fula-part",
+        "previousSha256": "6e78b64baf6922b073bf7e6b68c7581ec7bbf55731acf4b1684d737c74750c25",
+        "acceptedSha256": "0ef4c931feb484ebf09c6b5a796c0a4f7ea9ba115fa70d21d5b6dd25c7623f8f"
+      }
+    ],
+    "added": [
+      {
+        "id": "atlas-1880",
+        "sha256": "cc4ee185c31a08384d1ade891b9c2c2f72f349e2dca1b841e36c7f37ad7e2a60",
+        "claudeDesignSha256": "68d85c0d2f99455a326195ca37a1fdad901838ce7b0169a7d1aa8001bfaa0ded"
+      },
+      {
+        "id": "atlas-1914",
+        "sha256": "f72664bef9669b9ed1e70a0b089f9a8605ce8f9b26027bc986f374123a37b946",
+        "claudeDesignSha256": "f2a7cdaf5069e2290982cde57f011a83649d8367d870b77464e10f08577f6a2e"
+      },
+      {
+        "id": "atlas-independances",
+        "sha256": "eeeed62111c8512306c9abdefcef1d27b3aa0c5ec0c8c15feb3ae5a6f2096f0a",
+        "claudeDesignSha256": "432a852a97efd0984d113e1162e03da4b5c7864df70fb82721314b2fe2a3f151"
+      },
+      {
+        "id": "atlas-1500",
+        "sha256": "700ea44308140a51d283730e3890a6a8b7ce0f5e6b929d0e091ad3415cbc3a64",
+        "claudeDesignSha256": "402bc67602bb280d17a216f009e37d5932cace45ad4568db51fd58f0ab303bc9"
+      },
+      {
+        "id": "atlas-1880-parchemin",
+        "sha256": "62592008e66567c2793ef4806ef57a9c2755d8f45145c97a0c6dfcaaed4f9ede",
+        "claudeDesignSha256": "a5390895dd95410dbdbc67dd9b4ff4aa862177e5de28bc22b3c58ecdace6035a"
+      },
+      {
+        "id": "atlas-capacite-45",
+        "sha256": "0904b961e85d15f21d51d5362b867593f95d094c550923f69aab4aa229bfea49",
+        "claudeDesignSha256": "2c50a7128497301fa4377fa575d16de73a422b7609e7785ad9fe9e753bc7d252"
+      },
+      {
+        "id": "atlas-proto-collisions",
+        "sha256": "7d293f5d942127eefeae4aab8ef7ca00c51917cf12c54ea5c7eb660bc96282e0",
+        "claudeDesignSha256": "c4b69bed05d8d8f3f022a7d13c549453e009450bf40ebb6a2918fda29d83adac"
       }
     ]
   }

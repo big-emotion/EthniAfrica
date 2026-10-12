@@ -216,6 +216,103 @@ test("the review page opens at phone width and keeps each card's alternative tex
 });
 
 // @req REQ-186
+test("1.2.0 filled maps take dotted borders; unknown layers stay refused", () => {
+  for (const id of ["atlas-1914", "atlas-independances"])
+    assert.doesNotThrow(() =>
+      validateInput(single(id), "diagnostic", samples.version)
+    );
+  const zigzag = single("atlas-1914");
+  zigzag.cards[0].map.borders = "zigzag";
+  assert.throws(
+    () => validateInput(zigzag, "diagnostic", samples.version),
+    /border/i
+  );
+  const unbordered = single("map-fula");
+  unbordered.cards[0].map.borders = "none";
+  assert.throws(
+    () => validateInput(unbordered, "diagnostic", samples.version),
+    /borders/i
+  );
+});
+
+// @req REQ-186
+test("an atlas map with collisions is refused outside diagnostic mode", async (t) => {
+  const d = single("atlas-proto-collisions");
+  const f = await fixture(t, d);
+  const r = await renderSequence({ ...f, mode: "diagnostic" });
+  assert.equal(r.cards[0].fit.collisions, 25);
+  const proof = await fixture(t, d);
+  await assert.rejects(
+    renderSequence({ ...proof, mode: "proof" }),
+    /Chevauchements|collision/i
+  );
+  await assert.rejects(access(proof.output));
+  const undemo = structuredClone(d);
+  delete undemo.cards[0].demo;
+  const final = await fixture(t, undemo);
+  await assert.rejects(renderSequence(final), /Chevauchements|collision/i);
+  await assert.rejects(access(final.output));
+});
+
+// @req REQ-186
+test("recovery refuses a report carrying collisions or atlas warnings", async (t) => {
+  const f = await fixture(t, single("atlas-1880"));
+  const r = await renderSequence({ ...f, mode: "proof" });
+  assert.equal(r.cards[0].fit.collisions, 0);
+  const path = join(f.output, "report.json");
+  const original = structuredClone(r);
+  r.cards[0].fit.collisions = 2;
+  await writeFile(path, JSON.stringify(r));
+  await assert.rejects(verifyOutput(f), /collision/i);
+  const minGap = structuredClone(original);
+  minGap.cards[0].fit.atlas.minGap = 20;
+  await writeFile(path, JSON.stringify(minGap));
+  await assert.rejects(verifyOutput(f), /atlas/i);
+  await writeFile(path, JSON.stringify(original));
+  assert.equal((await verifyOutput(f)).cards.length, 1);
+});
+
+// @req REQ-186
+test("atlas alternative text names regional keys, territories, marks and the period", async (t) => {
+  const alt = async (id) => {
+    const f = await fixture(t, single(id));
+    return (await renderSequence({ ...f, mode: "diagnostic" })).cards[0].alt;
+  };
+  const card = (id) => samples.cards.find((c) => c.id === id);
+  const a1880 = await alt("atlas-1880");
+  assert.match(a1880, /Repère de période : 1880/);
+  assert.match(a1880, /Ouest : /);
+  for (const e of card("atlas-1880").map.atlas.entries.slice(0, 5))
+    assert.ok(a1880.includes(e.name.replace(/\*/g, "")), e.name);
+  assert.ok(!/(^|\. )\d+\. \d+\./.test(a1880), "bare key numbers in alt");
+  const a1914 = await alt("atlas-1914");
+  for (const cl of card("atlas-1914").map.categorical.classes)
+    assert.ok(a1914.includes(cl.label), cl.label);
+  const zone = card("atlas-1914").map.categorical.zones.find(
+    (z) => z.label !== false
+  );
+  assert.ok(a1914.includes(zone.name.replace(/\n/g, " ")), zone.name);
+  const indep = await alt("atlas-independances");
+  assert.match(indep, /Jamais colonisé/);
+  for (const mk of card("atlas-independances").map.marks.filter(
+    (m) => m.legend
+  ))
+    assert.ok(indep.includes(mk.legend), mk.legend);
+});
+
+// @req REQ-186
+test("unsafe atlas geometry is refused before it becomes SVG markup", async (t) => {
+  const d = single("atlas-1880");
+  const entry = d.cards[0].map.atlas.entries.find((e) => e.zone);
+  entry.zone.cx = '1" onload="throw 1';
+  const f = await fixture(t, d);
+  await assert.rejects(
+    renderSequence({ ...f, mode: "diagnostic" }),
+    /geometry/i
+  );
+});
+
+// @req REQ-186
 test("unsafe map geometry is refused before it becomes SVG markup", async (t) => {
   const d = single("map-a");
   d.cards[0].map.areas[0].paths = ['M0,0\" onload=\"throw 1'];
