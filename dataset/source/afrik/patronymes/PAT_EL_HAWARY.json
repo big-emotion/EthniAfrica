@@ -118,5 +118,163 @@
   "nisbaSubtype": {
     "value": "tribal",
     "sourceRefs": ["al-hawari-local-sources"]
+  },
+  "nameHistory": {
+    "summary": "Le nom El Hawary est un nom de relation arabe, une nisba, que l'on écrit aussi al Hawary ou al-Hawari. Dans le cas d'un cheikh d'Oran mort en 1439, un auteur le rattache au groupe berbère des Hawwara. Les sources consultées ne disent pas si les familles égyptiennes qui le portent en descendent ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "El Hawary",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une nisba arabe rattachée aux Hawwara, un groupe berbère ; lue dès 1439 sous la forme al-Hawari.",
+        "periodLabel": "Écrit depuis 1439 sous une forme proche ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom El Hawary est une nisba, c'est-à-dire un nom qui indique l'appartenance à un groupe ou à un lieu. Dans l'article consulté, la nisba al-Hawari est analysée comme un rattachement à Hawwara, un groupe berbère ; l'article ne dit pas si cela vaut pour chaque famille Hawary d'Égypte.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "الشيخ الهواري من خلال المصادر المحلية",
+                "author": "Dahou Faghrour et Taqi al-Din Boukaabar",
+                "year": null,
+                "url": "https://asjp.cerist.dz/en/downArticle/45/16/27/28166",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 207-208",
+                "notes": "Article universitaire (Université d'Oran 1) diffusé sur la plateforme algérienne ASJP, lu en texte intégral arabe le 12 octobre 2026. Pages 207-208 : le cheikh est Muhammad ibn Umar al-Hawari ; Abu Ras al-Nasir le dit nisba à Hawwara et à Awlad Hawwar, fils de Mazigh, fils de Burnus ; al-Mazari et al-Zayyani le disent au contraire chérif, descendant d'Ali ; l'article juge qu'il n'est pas chérif."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom El Hawary viendrait d'un rattachement à Hawwara et à Awlad Hawwar, fils de Mazigh, fils de Burnus, selon Abu Ras al-Nasir, cité par Dahou Faghrour et Taqi al-Din Boukaabar à propos du cheikh d'Oran.",
+            "hypothesisGroup": "origine du nom El Hawary",
+            "sources": [
+              {
+                "title": "الشيخ الهواري من خلال المصادر المحلية",
+                "author": "Dahou Faghrour et Taqi al-Din Boukaabar",
+                "year": null,
+                "url": "https://asjp.cerist.dz/en/downArticle/45/16/27/28166",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 207-208",
+                "notes": "Article universitaire (Université d'Oran 1) diffusé sur la plateforme algérienne ASJP, lu en texte intégral arabe le 12 octobre 2026. Pages 207-208 : le cheikh est Muhammad ibn Umar al-Hawari ; Abu Ras al-Nasir le dit nisba à Hawwara et à Awlad Hawwar, fils de Mazigh, fils de Burnus ; al-Mazari et al-Zayyani le disent au contraire chérif, descendant d'Ali ; l'article juge qu'il n'est pas chérif."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1439,
+              "to": 1439,
+              "label": "Mort en 1439"
+            },
+            "era": "polity",
+            "statement": "Le nom El Hawary apparaît par écrit sous une forme proche, al-Hawari, chez le cheikh Muhammad ibn Umar al-Hawari, mort à Oran le 29 septembre 1439, selon un article universitaire qui s'appuie sur Ibn Sa'd al-Ansari al-Tilimsani. C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne dit pas que les familles égyptiennes d'aujourd'hui en descendent.",
+            "formAsWritten": "الهواري",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Muhammad ibn Umar al-Hawari",
+                "role": "cheikh d'Oran qui porte le nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "الشيخ الهواري من خلال المصادر المحلية",
+                "author": "Dahou Faghrour et Taqi al-Din Boukaabar",
+                "year": null,
+                "url": "https://asjp.cerist.dz/en/downArticle/45/16/27/28166",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 211",
+                "notes": "Article universitaire (Université d'Oran 1) diffusé sur la plateforme algérienne ASJP, lu en texte intégral arabe le 12 octobre 2026. Page 211 : mort du cheikh à Oran, le 843 de l'hégire, soit le 29 septembre 1439, à 92 ans. L'article s'appuie surtout sur Ibn Sa'd al-Ansari al-Tilimsani, qu'il présente comme le plus ancien auteur à lui consacrer une notice."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "al Hawary",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Employé aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom al Hawary est la graphie latine que le site égyptien FineArt Sector emploie pour un artiste né à Giza en 1976 et mort en 2013.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Biography: Saleh Abdel Sabour Abdel Qader Mohamed Mahmoud al Hawary",
+                "author": "FineArt Sector",
+                "year": null,
+                "url": "https://www.fineart.gov.eg/eng/cv/cv.asp?IDS=966",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Notice du site FineArt Sector, lue le 12 octobre 2026. Le nom est écrit « al Hawary » en lettres latines ; la notice donne la naissance à Giza en 1976 et la mort en 2013."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "al-Hawari",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Écrit depuis 1439",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1439,
+              "to": 1439,
+              "label": "Mort en 1439"
+            },
+            "era": "polity",
+            "statement": "Le nom al-Hawari est celui du cheikh d'Oran Muhammad ibn Umar, dont les sources donnent des filiations différentes : berbère pour Abu Ras al-Nasir, chérif descendant d'Ali pour al-Mazari et al-Zayyani. L'article consulté juge qu'il n'est probablement pas chérif.",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Muhammad ibn Umar al-Hawari",
+                "role": "cheikh d'Oran qui porte le nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "الشيخ الهواري من خلال المصادر المحلية",
+                "author": "Dahou Faghrour et Taqi al-Din Boukaabar",
+                "year": null,
+                "url": "https://asjp.cerist.dz/en/downArticle/45/16/27/28166",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 207-208",
+                "notes": "Article universitaire (Université d'Oran 1) diffusé sur la plateforme algérienne ASJP, lu en texte intégral arabe le 12 octobre 2026. Pages 207-208 : le cheikh est Muhammad ibn Umar al-Hawari ; Abu Ras al-Nasir le dit nisba à Hawwara et à Awlad Hawwar, fils de Mazigh, fils de Burnus ; al-Mazari et al-Zayyani le disent au contraire chérif, descendant d'Ali ; l'article juge qu'il n'est pas chérif."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
