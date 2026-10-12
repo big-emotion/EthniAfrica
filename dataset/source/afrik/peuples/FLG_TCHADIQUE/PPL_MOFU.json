@@ -137,5 +137,209 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Mofu désigne des montagnards des monts Mandara, au nord et au sud de la rivière Tsanaga, dans l'Extrême-Nord du Cameroun. Les anciens se nomment eux-mêmes « les hommes des rochers » : ndu ma ngwa-ay au nord de la Tsanaga, ndu do ngwa-ay au sud. Le nom Mofu leur a été donné de l'extérieur, et son origine est incertaine ; nous présentons plus bas ses traces.",
+    "names": [
+      {
+        "nameText": "Ndu ma ngwa-ay",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "« Les hommes des rochers » : le nom que se donnent les anciens, au nord de la Tsanaga.",
+        "periodLabel": "Écrit depuis 1972",
+        "accounts": [
+          {
+            "period": {
+              "from": 1970,
+              "to": 1972,
+              "label": "Enquête de 1970 (publiée en 1972)"
+            },
+            "era": "modern",
+            "statement": "Le nom ndu ma ngwa-ay, « les hommes des rochers », est celui par lequel se reconnaissent les hommes âgés au nord de la Tsanaga ; au sud, ils disent ndu do ngwa-ay, et refusent le nom Mofu, selon l'ethnologue Jeanne-Françoise Vincent. C'est la plus ancienne trace de ce nom que le projet connaît. Ces montagnards vivaient déjà sur leurs massifs avant elle.",
+            "formAsWritten": "ndu ma ngwa-ay",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Données sur le mariage et la situation de la femme mofu (massifs de Duvangar et de Wazan, Cameroun du Nord)",
+                "author": "Jeanne-Françoise Vincent",
+                "year": 1972,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/sci_hum/00965.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 312",
+                "notes": "Cahiers ORSTOM, série Sciences humaines, vol. IX, n° 3, 1972, p. 309-323, lu en texte intégral le 11 octobre 2026. Enquête menée d'avril à juin 1970."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mofu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom donné de l'extérieur, écrit sur une carte allemande en 1912 ; les jeunes le reprennent.",
+        "periodLabel": "Écrit depuis 1912",
+        "accounts": [
+          {
+            "period": {
+              "from": 1970,
+              "to": 1972,
+              "label": "Enquête de 1970 (publiée en 1972)"
+            },
+            "era": "modern",
+            "statement": "Le nom Mofu commence à être repris par les jeunes générations, qui savent que l'administration les range sous ce nom, alors que les hommes âgés le refusent, selon Jeanne-Françoise Vincent.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Données sur le mariage et la situation de la femme mofu (massifs de Duvangar et de Wazan, Cameroun du Nord)",
+                "author": "Jeanne-Françoise Vincent",
+                "year": 1972,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/sci_hum/00965.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 312",
+                "notes": "Cahiers ORSTOM, série Sciences humaines, vol. IX, n° 3, 1972, p. 309-323, lu en texte intégral le 11 octobre 2026. Enquête menée d'avril à juin 1970."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Depuis 1928"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mofu désigne des populations, et non plus un seul massif, dans les rapports de tournée des administrateurs français à partir de 1928, selon Jeanne-Françoise Vincent, qui les a lus aux Archives nationales de Yaoundé. Ils l'emploient ensuite couramment pour les montagnards du nord de la Tsanaga.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Données sur le mariage et la situation de la femme mofu (massifs de Duvangar et de Wazan, Cameroun du Nord)",
+                "author": "Jeanne-Françoise Vincent",
+                "year": 1972,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/sci_hum/00965.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 312",
+                "notes": "Cahiers ORSTOM, série Sciences humaines, vol. IX, n° 3, 1972, p. 309-323, lu en texte intégral le 11 octobre 2026. Enquête menée d'avril à juin 1970."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mofu apparaît par écrit sur la carte allemande de Moisel, dans son édition de 1912, pour un massif au nord de la Tsanaga, selon Jeanne-Françoise Vincent. C'est la plus ancienne trace de ce nom que le projet connaît. Les montagnards de ce massif y vivaient déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Données sur le mariage et la situation de la femme mofu (massifs de Duvangar et de Wazan, Cameroun du Nord)",
+                "author": "Jeanne-Françoise Vincent",
+                "year": 1972,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/sci_hum/00965.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 312",
+                "notes": "Cahiers ORSTOM, série Sciences humaines, vol. IX, n° 3, 1972, p. 309-323, lu en texte intégral le 11 octobre 2026. Enquête menée d'avril à juin 1970. L'auteure cite la carte Moisel, feuille Maroua C 4, consultée aux Archives nationales de Yaoundé ; nous ne l'avons pas vue."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1972,
+              "to": 1972,
+              "label": "Proposée en 1972"
+            },
+            "era": "modern",
+            "statement": "Le nom Mofu serait un nom donné de l'extérieur, peut-être d'abord par les Fulbe, et à coup sûr par les administrateurs européens, qui l'auraient d'abord appliqué aux montagnards du nord de la Tsanaga, selon Jeanne-Françoise Vincent, pour qui son origine reste incertaine.",
+            "hypothesisGroup": "origine du nom Mofu",
+            "sources": [
+              {
+                "title": "Données sur le mariage et la situation de la femme mofu (massifs de Duvangar et de Wazan, Cameroun du Nord)",
+                "author": "Jeanne-Françoise Vincent",
+                "year": 1972,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/sci_hum/00965.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 310 et p. 312",
+                "notes": "Cahiers ORSTOM, série Sciences humaines, vol. IX, n° 3, 1972, p. 309-323, lu en texte intégral le 11 octobre 2026. Enquête menée d'avril à juin 1970."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gudur",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les Mofu du nord donnent aux montagnards du sud de la Tsanaga, d'après le massif de Gudur.",
+        "periodLabel": "Écrit depuis 1972",
+        "accounts": [
+          {
+            "period": {
+              "from": 1970,
+              "to": 1972,
+              "label": "Enquête de 1970 (publiée en 1972)"
+            },
+            "era": "modern",
+            "statement": "Le nom Gudur est celui que les Mofu du nord donnent aux montagnards du sud de la Tsanaga. Il rappelle l'autorité religieuse que le massif de Gudur exerçait sur les massifs voisins avant l'arrivée des Européens, selon Jeanne-Françoise Vincent, qui le reprend pour eux. C'est la plus ancienne trace de cet emploi du nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Données sur le mariage et la situation de la femme mofu (massifs de Duvangar et de Wazan, Cameroun du Nord)",
+                "author": "Jeanne-Françoise Vincent",
+                "year": 1972,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/sci_hum/00965.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 312",
+                "notes": "Cahiers ORSTOM, série Sciences humaines, vol. IX, n° 3, 1972, p. 309-323, lu en texte intégral le 11 octobre 2026. Enquête menée d'avril à juin 1970."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kora Daba",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Fulbe",
+        "shortLine": "Le nom que les Fulbe voisins donnent aux montagnards du sud de la Tsanaga.",
+        "periodLabel": "Écrit depuis 1972",
+        "accounts": [
+          {
+            "period": {
+              "from": 1970,
+              "to": 1972,
+              "label": "Enquête de 1970 (publiée en 1972)"
+            },
+            "era": "modern",
+            "statement": "Le nom Kora Daba est celui que les Fulbe voisins donnent aux montagnards du sud de la Tsanaga, qu'ils ne comptent pas parmi les Mofu ; ils les rapprochent peut-être ainsi des Daba, des montagnards plus au sud, selon Jeanne-Françoise Vincent. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Données sur le mariage et la situation de la femme mofu (massifs de Duvangar et de Wazan, Cameroun du Nord)",
+                "author": "Jeanne-Françoise Vincent",
+                "year": 1972,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/sci_hum/00965.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 310",
+                "notes": "Cahiers ORSTOM, série Sciences humaines, vol. IX, n° 3, 1972, p. 309-323, lu en texte intégral le 11 octobre 2026. Enquête menée d'avril à juin 1970."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
