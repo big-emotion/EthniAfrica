@@ -21,7 +21,8 @@ describe("OpenAPI v2 place contract", () => {
       nameMain: place.nameMain,
       names: [place.nameMain],
       summary: place.summary,
-      country: { id: place.countryId, name: "Côte d'Ivoire" },
+      country: { id: place.countryIds[0], name: "Côte d'Ivoire" },
+      countries: [{ id: place.countryIds[0], name: "Côte d'Ivoire" }],
       associatedPeoples: place.associatedPeoples.map(({ peopleId }) => ({
         id: peopleId,
         name: null,
@@ -33,5 +34,41 @@ describe("OpenAPI v2 place contract", () => {
     };
 
     expect(validateAgainstSchema(PLACE_REF, served)).toBeNull();
+  });
+
+  // A region has no single country: `country` is null and `countries` lists
+  // them all, in the fiche's order.
+  // @req REQ-193
+  it("describes a region that spans several countries", () => {
+    const served = {
+      id: "LOC_SAHARA",
+      placeType: "region",
+      nameMain: "Sahara",
+      names: ["Sahara"],
+      summary: "s",
+      country: null,
+      countries: [
+        { id: "DZA", name: "Algérie" },
+        { id: "NER", name: "Niger" },
+      ],
+      associatedPeoples: [],
+      gaps: [],
+      sources: [],
+      nameHistory: null,
+    };
+
+    expect(validateAgainstSchema(PLACE_REF, served)).toBeNull();
+    expect(
+      validateAgainstSchema(
+        { $ref: "#/components/schemas/PlaceSummaryV2" },
+        {
+          id: "LOC_SAHARA",
+          placeType: "region",
+          nameMain: "Sahara",
+          countryId: null,
+          countryIds: ["DZA", "NER"],
+        }
+      )
+    ).toBeNull();
   });
 });

@@ -12,6 +12,8 @@ const fr = {
     autre: "Lieu",
   } as Record<string, string>,
   fallbackType: "Lieu",
+  /** A region that spans several countries: « 10 pays ». */
+  countryCount: (count: number) => `${count} pays`,
   sections: {
     summary: "En bref",
     related: "Pays et peuples liés",
@@ -27,14 +29,20 @@ export type PlaceCopy = typeof fr;
 // @req REQ-196
 export const placeCopy: Record<Language, PlaceCopy> = { fr };
 
-/** « Ville · Côte d'Ivoire »: what the place is, then where. */
-// @req REQ-196
+/**
+ * « Ville · Côte d'Ivoire »: what the place is, then where. A region over
+ * several countries reads « Région · 10 pays »; the list is on the page.
+ */
+// @req REQ-193
 export function placeSubtitle(
   language: Language,
   placeType: string,
-  countryName: string | null
+  countries: { name: string | null }[]
 ): string {
   const copy = placeCopy[language];
   const type = copy.typeLabels[placeType] ?? copy.fallbackType;
-  return countryName ? `${type} · ${countryName}` : type;
+  if (countries.length > 1)
+    return `${type} · ${copy.countryCount(countries.length)}`;
+  const name = countries[0]?.name;
+  return name ? `${type} · ${name}` : type;
 }

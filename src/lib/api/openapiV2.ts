@@ -5723,9 +5723,21 @@ const options: swaggerJsdoc.Options = {
               enum: ["ville", "region", "site-historique", "autre"],
             },
             nameMain: { type: "string", example: "Yamoussoukro" },
-            countryId: { type: "string", example: "CIV" },
+            countryId: {
+              type: ["string", "null"],
+              example: "CIV",
+              description:
+                "The place's country when it lies in one; null for a region that spans several (read countryIds).",
+            },
+            countryIds: {
+              type: "array",
+              items: { type: "string" },
+              example: ["CIV"],
+              description:
+                "Every country the place lies in, in the fiche's order: one for a town, several for a region such as the Sahara.",
+            },
           },
-          required: ["id", "placeType", "nameMain", "countryId"],
+          required: ["id", "placeType", "nameMain", "countryId", "countryIds"],
         },
         PlaceV2: {
           type: "object",
@@ -5745,12 +5757,27 @@ const options: swaggerJsdoc.Options = {
             },
             summary: { type: "string" },
             country: {
-              type: "object",
+              type: ["object", "null"],
+              description:
+                "The place's country when it lies in one; null for a region that spans several (read countries).",
               properties: {
                 id: { type: "string", example: "CIV" },
                 name: { type: ["string", "null"] },
               },
               required: ["id", "name"],
+            },
+            countries: {
+              type: "array",
+              description:
+                "Every country the place lies in, in the fiche's order: one for a town, several for a region such as the Sahara.",
+              items: {
+                type: "object",
+                properties: {
+                  id: { type: "string", example: "CIV" },
+                  name: { type: ["string", "null"] },
+                },
+                required: ["id", "name"],
+              },
             },
             associatedPeoples: {
               type: "array",
@@ -5780,6 +5807,7 @@ const options: swaggerJsdoc.Options = {
             "names",
             "summary",
             "country",
+            "countries",
             "associatedPeoples",
             "gaps",
             "sources",
@@ -5794,7 +5822,17 @@ const options: swaggerJsdoc.Options = {
             id: { type: "string", example: "LOC_YAMOUSSOUKRO" },
             nameMain: { type: "string", example: "Yamoussoukro" },
             placeType: { type: "string", example: "ville" },
-            countryId: { type: "string", example: "CIV" },
+            countryId: {
+              type: ["string", "null"],
+              example: "CIV",
+              description:
+                "The place's country when it lies in one; null for a region that spans several (read countryIds).",
+            },
+            countryIds: {
+              type: "array",
+              items: { type: "string" },
+              example: ["CIV"],
+            },
             summary: { type: "string" },
             nameHistory: {
               oneOf: [

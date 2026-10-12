@@ -63,8 +63,18 @@ function corpus(overrides: Partial<CorpusSnapshot> = {}): CorpusSnapshot {
         id: "LOC_IBADAN",
         placeType: "ville",
         nameMain: "Ibadan",
-        countryId: "NGA",
+        countryIds: ["NGA"],
         associatedPeoples: [{ peopleId: "PPL_YORUBA" }],
+        summary: "s",
+        content: { gaps: [], sources: [] },
+        nameHistory: null,
+      },
+      {
+        id: "LOC_SAHEL",
+        placeType: "region",
+        nameMain: "Sahel",
+        countryIds: ["NER", "MLI"],
+        associatedPeoples: [],
         summary: "s",
         content: { gaps: [], sources: [] },
         nameHistory: null,
@@ -137,6 +147,7 @@ describe("buildCorpusExpectations", () => {
       "afrik_countries",
       "afrik_people_countries",
       "afrik_places",
+      "afrik_place_countries",
       "afrik_place_peoples",
       "afrik_words",
       "afrik_patronymes",
@@ -226,6 +237,20 @@ describe("buildCorpusExpectations", () => {
         content: { gaps: [], sources: [] },
         name_history: null,
       },
+      {
+        id: "LOC_SAHEL",
+        place_type: "region",
+        name_main: "Sahel",
+        country_id: null,
+        summary: "s",
+        content: { gaps: [], sources: [] },
+        name_history: null,
+      },
+    ]);
+    expect(expectationFor("afrik_place_countries").rows).toEqual([
+      { place_id: "LOC_IBADAN", country_id: "NGA", position: 0 },
+      { place_id: "LOC_SAHEL", country_id: "NER", position: 0 },
+      { place_id: "LOC_SAHEL", country_id: "MLI", position: 1 },
     ]);
     expect(expectationFor("afrik_place_peoples").rows).toEqual([
       { place_id: "LOC_IBADAN", people_id: "PPL_YORUBA", relation: null },

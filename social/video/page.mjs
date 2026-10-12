@@ -81,6 +81,96 @@ void main() {
   colour = vec4(c * (1.0 - 0.24 * t), 1.0);
 }\`;
 
+// Relief (board 6): a sphere mesh raised by the height model, seen through
+// the perspective camera computed in sequence.mjs. Imagery and overlays are
+// draped on it and lit by one fixed light plus a soft fill.
+const CAMERA_GLSL = \`
+uniform vec3 camPos, camRight, camUp, camFwd; uniform float focal; uniform vec2 centre;
+const vec3 SPACE = vec3(7.0, 6.0, 5.0) / 255.0;
+const vec3 ATMOS = vec3(143.0, 184.0, 204.0) / 255.0;
+vec3 vignette(vec3 c, vec2 px) {
+  float nx = (px.x / 1080.0 - 0.5) * 2.0;
+  float ny = (px.y / 1920.0 - 0.36) * 2.0 * (1920.0 / 1080.0) * 0.6;
+  float t = smoothstep(0.0, 1.0, clamp((sqrt(nx * nx * 0.8 + ny * ny) - 0.6) / 0.75, 0.0, 1.0));
+  return c * (1.0 - 0.24 * t);
+}\`;
+// Space and the atmosphere rim, from each pixel's ray: the rim falls off
+// over 4.5 % of the radius, as on the flat globe.
+const SKY_FRAG = \`#version 300 es
+precision highp float;
+\${CAMERA_GLSL}
+out vec4 colour;
+void main() {
+  vec2 px = vec2(gl_FragCoord.x, 1920.0 - gl_FragCoord.y);
+  vec3 dir = normalize(camFwd + camRight * (px.x - centre.x) / focal - camUp * (px.y - centre.y) / focal);
+  float b = dot(camPos, dir);
+  float closest = b > 0.0 ? length(camPos) : length(camPos - b * dir);
+  float glow = exp(-max(closest - 1.0, 0.0) / 0.045) * 0.55;
+  colour = vec4(vignette(mix(SPACE, ATMOS, glow), px), 1.0);
+}\`;
+const HEIGHT_GLSL = \`
+uniform sampler2D worldH, regionH; uniform vec4 bounds; uniform float exaggeration;
+bool inRegion(vec2 ll) { return ll.x >= bounds.x && ll.x <= bounds.y && ll.y >= bounds.z && ll.y <= bounds.w; }
+vec2 regionUV(vec2 ll) { return vec2((ll.x - bounds.x) / (bounds.y - bounds.x), (bounds.w - ll.y) / (bounds.w - bounds.z)); }
+vec2 worldUV(vec2 ll) { return vec2((ll.x + 180.0) / 360.0, (90.0 - ll.y) / 180.0); }
+float metres(vec2 ll) {
+  float h = inRegion(ll) ? textureLod(regionH, regionUV(ll), 0.0).r : textureLod(worldH, worldUV(ll), 0.0).r;
+  return max(h, 0.0);
+}\`;
+const MESH_VERT = \`#version 300 es
+precision highp float;
+\${CAMERA_GLSL}
+\${HEIGHT_GLSL}
+in vec2 lonlat;
+out vec2 vLonLat;
+void main() {
+  float lon = radians(lonlat.x), lat = radians(lonlat.y);
+  vec3 n = vec3(cos(lat) * sin(lon), sin(lat), cos(lat) * cos(lon));
+  vec3 v = n * (1.0 + metres(lonlat) * exaggeration / 6371000.0) - camPos;
+  float depth = dot(v, camFwd);
+  vec2 px = vec2(centre.x + focal * dot(v, camRight) / depth, centre.y - focal * dot(v, camUp) / depth);
+  const float near = 0.01, far = 20.0;
+  float z = (far + near) / (far - near) * depth - 2.0 * far * near / (far - near);
+  gl_Position = vec4((2.0 * px.x / 1080.0 - 1.0) * depth, (1.0 - 2.0 * px.y / 1920.0) * depth, z, depth);
+  vLonLat = lonlat;
+}\`;
+const MESH_FRAG = \`#version 300 es
+precision highp float;
+\${CAMERA_GLSL}
+\${HEIGHT_GLSL}
+uniform sampler2D world, region, overlay;
+uniform float grade, ambient, sun; uniform vec3 light;
+in vec2 vLonLat;
+out vec4 colour;
+const vec3 WARM = vec3(255.0, 238.0, 221.0) / 255.0;
+vec3 graded(vec3 c) {
+  float sat = mix(0.85, 0.70, grade), expo = mix(0.90, 0.76, grade);
+  float con = mix(1.06, 0.96, grade), warm = mix(0.35, 0.45, grade);
+  float lum = dot(c, vec3(0.2126, 0.7152, 0.0722));
+  c = vec3(lum) + sat * (c - vec3(lum));
+  c = (c * expo - 0.5) * con + 0.5;
+  return clamp(c * (1.0 - warm + warm * WARM), 0.0, 1.0);
+}
+void main() {
+  vec2 ll = vLonLat;
+  bool inside = inRegion(ll);
+  vec3 c = graded(inside ? texture(region, regionUV(ll)).rgb : texture(world, worldUV(ll)).rgb);
+  if (inside) { vec4 o = texture(overlay, regionUV(ll)); c = c * (1.0 - o.a) + o.rgb; }
+  // Shade from the height grid itself, so slopes read at its resolution.
+  vec2 size = vec2(inside ? textureSize(regionH, 0) : textureSize(worldH, 0));
+  vec2 stepDeg = inside ? vec2(bounds.y - bounds.x, bounds.w - bounds.z) / size : vec2(360.0, 180.0) / size;
+  float lat = radians(ll.y), lon = radians(ll.x);
+  float dx = (metres(ll + vec2(stepDeg.x, 0.0)) - metres(ll - vec2(stepDeg.x, 0.0))) / (2.0 * stepDeg.x * 111320.0 * max(cos(lat), 0.01));
+  float dy = (metres(ll + vec2(0.0, stepDeg.y)) - metres(ll - vec2(0.0, stepDeg.y))) / (2.0 * stepDeg.y * 111320.0);
+  vec3 local = normalize(vec3(-exaggeration * dx, -exaggeration * dy, 1.0));
+  vec3 up = vec3(cos(lat) * sin(lon), sin(lat), cos(lat) * cos(lon));
+  vec3 east = vec3(cos(lon), 0.0, -sin(lon));
+  vec3 north = vec3(-sin(lat) * sin(lon), cos(lat), -sin(lat) * cos(lon));
+  vec3 normal = local.x * east + local.y * north + local.z * up;
+  c *= ambient + sun * max(dot(normal, light), 0.0);
+  colour = vec4(vignette(clamp(c, 0.0, 1.0), vec2(gl_FragCoord.x, 1920.0 - gl_FragCoord.y)), 1.0);
+}\`;
+
 const gl = document.getElementById("earth").getContext("webgl2", { preserveDrawingBuffer: true, antialias: false });
 let program;
 function compile(type, src) {
@@ -99,13 +189,94 @@ async function texture(unit, url) {
   gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
   gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
 }
-window.setup = async (bounds) => {
+function link(vertex, fragment) {
+  const p = gl.createProgram();
+  gl.attachShader(p, compile(gl.VERTEX_SHADER, vertex));
+  gl.attachShader(p, compile(gl.FRAGMENT_SHADER, fragment));
+  gl.linkProgram(p);
+  if (!gl.getProgramParameter(p, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(p));
+  return p;
+}
+function quad(prog) {
+  const vao = gl.createVertexArray();
+  gl.bindVertexArray(vao);
+  gl.bindBuffer(gl.ARRAY_BUFFER, gl.createBuffer());
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+  const loc = gl.getAttribLocation(prog, "p");
+  gl.enableVertexAttribArray(loc); gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+  return vao;
+}
+async function heights(unit, url, [w, h]) {
+  const data = new Float32Array(await (await fetch(url)).arrayBuffer());
+  const t = gl.createTexture();
+  gl.activeTexture(gl.TEXTURE0 + unit); gl.bindTexture(gl.TEXTURE_2D, t);
+  gl.texImage2D(gl.TEXTURE_2D, 0, gl.R16F, w, h, 0, gl.RED, gl.FLOAT, data);
+  for (const [k, v] of [[gl.TEXTURE_MIN_FILTER, gl.LINEAR], [gl.TEXTURE_MAG_FILTER, gl.LINEAR], [gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE], [gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE]])
+    gl.texParameteri(gl.TEXTURE_2D, k, v);
+}
+// A coarse world grid (0.5°) outside the hold bounds and a fine grid inside.
+// The bounds are whole degrees, so both grids meet on shared vertices.
+function sphereMesh(bounds, step) {
+  const [lonMin, lonMax, latMin, latMax] = bounds;
+  const vertices = [];
+  const indices = [];
+  const grid = (lon0, lat0, nx, ny, dLon, dLat, skip) => {
+    const base = vertices.length / 2;
+    for (let j = 0; j <= ny; j++) for (let i = 0; i <= nx; i++) vertices.push(lon0 + i * dLon, lat0 - j * dLat);
+    for (let j = 0; j < ny; j++) for (let i = 0; i < nx; i++) {
+      if (skip && skip(lon0 + (i + 0.5) * dLon, lat0 - (j + 0.5) * dLat)) continue;
+      const a = base + j * (nx + 1) + i, b = a + 1, c = a + nx + 1, d = c + 1;
+      indices.push(a, c, b, b, c, d);
+    }
+  };
+  grid(-180, 90, 720, 360, 0.5, 0.5, (lon, lat) => lon > lonMin && lon < lonMax && lat > latMin && lat < latMax);
+  const nx = Math.min(1000, Math.ceil((lonMax - lonMin) / step));
+  const ny = Math.min(1000, Math.ceil((latMax - latMin) / step));
+  grid(lonMin, latMax, nx, ny, (lonMax - lonMin) / nx, (latMax - latMin) / ny);
+  return { vertices: new Float32Array(vertices), indices: new Uint32Array(indices) };
+}
+let relief = null;
+async function setupRelief(bounds, setup) {
+  const sky = link(VERT, SKY_FRAG);
+  const mesh = link(MESH_VERT, MESH_FRAG);
+  const skyQuad = quad(sky);
+  const geometry = sphereMesh(bounds, setup.meshStep);
+  const vao = gl.createVertexArray();
+  gl.bindVertexArray(vao);
+  gl.bindBuffer(gl.ARRAY_BUFFER, gl.createBuffer());
+  gl.bufferData(gl.ARRAY_BUFFER, geometry.vertices, gl.STATIC_DRAW);
+  const loc = gl.getAttribLocation(mesh, "lonlat");
+  gl.enableVertexAttribArray(loc); gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+  gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, gl.createBuffer());
+  gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, geometry.indices, gl.STATIC_DRAW);
+  gl.bindVertexArray(null);
+  await heights(2, "/relief/world.f32", setup.world);
+  await heights(3, "/relief/region.f32", setup.region);
+  const overlay = gl.createTexture();
+  // Four samples per pixel smooth the limb and the mesh's silhouettes.
+  const samples = Math.min(4, gl.getParameter(gl.MAX_SAMPLES));
+  const fb = gl.createFramebuffer();
+  gl.bindFramebuffer(gl.FRAMEBUFFER, fb);
+  for (const [format, attachment] of [[gl.RGBA8, gl.COLOR_ATTACHMENT0], [gl.DEPTH_COMPONENT24, gl.DEPTH_ATTACHMENT]]) {
+    const rb = gl.createRenderbuffer();
+    gl.bindRenderbuffer(gl.RENDERBUFFER, rb);
+    gl.renderbufferStorageMultisample(gl.RENDERBUFFER, samples, format, 1080, 1920);
+    gl.framebufferRenderbuffer(gl.FRAMEBUFFER, attachment, gl.RENDERBUFFER, rb);
+  }
+  gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+  for (const prog of [sky, mesh]) {
+    gl.useProgram(prog);
+    for (const [name, unit] of [["world", 0], ["region", 1], ["worldH", 2], ["regionH", 3], ["overlay", 4]])
+      gl.uniform1i(gl.getUniformLocation(prog, name), unit);
+    gl.uniform4f(gl.getUniformLocation(prog, "bounds"), ...bounds);
+    gl.uniform1f(gl.getUniformLocation(prog, "exaggeration"), setup.exaggeration);
+  }
+  relief = { sky, mesh, skyQuad, vao, count: geometry.indices.length, overlay, fb, drapeKey: null, canvas: document.createElement("canvas") };
+}
+
+window.setup = async (bounds, reliefSetup) => {
   if (!gl) throw new Error("WebGL2 unavailable");
-  program = gl.createProgram();
-  gl.attachShader(program, compile(gl.VERTEX_SHADER, VERT));
-  gl.attachShader(program, compile(gl.FRAGMENT_SHADER, FRAG));
-  gl.linkProgram(program);
-  if (!gl.getProgramParameter(program, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(program));
+  program = link(VERT, FRAG);
   gl.useProgram(program);
   gl.bindBuffer(gl.ARRAY_BUFFER, gl.createBuffer());
   gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
@@ -116,6 +287,7 @@ window.setup = async (bounds) => {
   gl.uniform1i(gl.getUniformLocation(program, "world"), 0);
   gl.uniform1i(gl.getUniformLocation(program, "region"), 1);
   gl.uniform4f(gl.getUniformLocation(program, "bounds"), ...bounds);
+  if (reliefSetup) await setupRelief(bounds, reliefSetup);
   await document.fonts.load('38px Anton'); await document.fonts.load('600 28px Fraunces');
   await document.fonts.load('800 28px "Nunito Sans"'); await document.fonts.load('400 22px "Nunito Sans"'); await document.fonts.load('400 22px "Noto Sans"');
   await document.fonts.ready;
@@ -188,20 +360,105 @@ function river(d, state) {
   return g;
 }
 
-window.drawFrame = (f) => {
+// The overlay layers in the design's order: fills, borders, edges, rivers.
+function overlayLayers(f) {
+  const visible = f.areas.filter((a) => a.opacity > 0);
+  return [
+    visible.map(areaFill),
+    f.borders.filter((b) => b.opacity > 0).map(border),
+    visible.map(areaEdge),
+    f.rivers.filter((r) => r.state.core > 0 || r.state.glow > 0).map((r) => river(r.d, r.state)),
+  ];
+}
+// Draws the overlays into the region's map and uploads it as the drape.
+// The SVG is the flat style's own, so strokes, hatching and glow match.
+async function drape(f) {
+  const key = JSON.stringify([f.areas, f.borders, f.rivers].map((list) => list.map((x) => x.opacity ?? x.state)));
+  if (key === relief.drapeKey) return;
+  relief.drapeKey = key;
+  const { width, height, scale } = f.relief.drape;
+  const [w, h] = [Math.round(width * scale), Math.round(height * scale)];
+  const svg = document.createElementNS(SVG, "svg");
+  svg.setAttribute("width", w); svg.setAttribute("height", h);
+  svg.setAttribute("viewBox", \`0 0 \${width} \${height}\`);
+  svg.innerHTML = "<defs>" + document.querySelector("#lines defs").innerHTML + "</defs>";
+  for (const layer of overlayLayers(f)) {
+    const g = document.createElementNS(SVG, "g");
+    g.setAttribute("fill", "none"); g.setAttribute("stroke-linecap", "round"); g.setAttribute("stroke-linejoin", "round");
+    g.append(...layer);
+    svg.append(g);
+  }
+  const url = URL.createObjectURL(new Blob([new XMLSerializer().serializeToString(svg)], { type: "image/svg+xml" }));
+  const img = new Image();
+  img.src = url;
+  await img.decode();
+  URL.revokeObjectURL(url);
+  relief.canvas.width = w; relief.canvas.height = h;
+  const ctx = relief.canvas.getContext("2d");
+  ctx.clearRect(0, 0, w, h);
+  ctx.drawImage(img, 0, 0, w, h);
+  gl.activeTexture(gl.TEXTURE4); gl.bindTexture(gl.TEXTURE_2D, relief.overlay);
+  gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, true);
+  gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA8, gl.RGBA, gl.UNSIGNED_BYTE, relief.canvas);
+  gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, false);
+  gl.generateMipmap(gl.TEXTURE_2D);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR_MIPMAP_LINEAR);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+}
+async function drawRelief(f) {
+  await drape(f);
+  const v = f.relief.view;
+  gl.bindFramebuffer(gl.FRAMEBUFFER, relief.fb);
   gl.viewport(0, 0, 1080, 1920);
-  gl.uniform2f(gl.getUniformLocation(program, "centre"), f.centre.x, f.centre.y);
-  gl.uniform1f(gl.getUniformLocation(program, "radius"), f.camera.radius);
-  gl.uniform2f(gl.getUniformLocation(program, "view"), f.camera.lon * Math.PI / 180, f.camera.lat * Math.PI / 180);
-  gl.uniform1f(gl.getUniformLocation(program, "grade"), f.grade);
+  for (const prog of [relief.sky, relief.mesh]) {
+    gl.useProgram(prog);
+    gl.uniform3f(gl.getUniformLocation(prog, "camPos"), ...v.position);
+    gl.uniform3f(gl.getUniformLocation(prog, "camRight"), ...v.right);
+    gl.uniform3f(gl.getUniformLocation(prog, "camUp"), ...v.screenUp);
+    gl.uniform3f(gl.getUniformLocation(prog, "camFwd"), ...v.forward);
+    gl.uniform1f(gl.getUniformLocation(prog, "focal"), v.focal);
+    gl.uniform2f(gl.getUniformLocation(prog, "centre"), f.centre.x, f.centre.y);
+  }
+  gl.disable(gl.DEPTH_TEST);
+  gl.useProgram(relief.sky);
+  gl.bindVertexArray(relief.skyQuad);
   gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+  gl.clear(gl.DEPTH_BUFFER_BIT);
+  gl.enable(gl.DEPTH_TEST);
+  gl.useProgram(relief.mesh);
+  gl.uniform1f(gl.getUniformLocation(relief.mesh, "grade"), f.grade);
+  gl.uniform1f(gl.getUniformLocation(relief.mesh, "ambient"), f.relief.ambient);
+  gl.uniform1f(gl.getUniformLocation(relief.mesh, "sun"), f.relief.sun);
+  gl.uniform3f(gl.getUniformLocation(relief.mesh, "light"), ...f.relief.light);
+  gl.bindVertexArray(relief.vao);
+  gl.drawElements(gl.TRIANGLES, relief.count, gl.UNSIGNED_INT, 0);
+  gl.bindVertexArray(null);
+  gl.bindFramebuffer(gl.READ_FRAMEBUFFER, relief.fb);
+  gl.bindFramebuffer(gl.DRAW_FRAMEBUFFER, null);
+  gl.blitFramebuffer(0, 0, 1080, 1920, 0, 0, 1080, 1920, gl.COLOR_BUFFER_BIT, gl.NEAREST);
+  gl.bindFramebuffer(gl.FRAMEBUFFER, null);
   gl.finish();
+  for (const id of ["fills", "borders", "edges", "rivers"]) document.getElementById(id).replaceChildren();
+}
 
-  document.getElementById("fills").replaceChildren(...f.areas.filter((a) => a.opacity > 0).map(areaFill));
-  document.getElementById("borders").replaceChildren(...f.borders.filter((b) => b.opacity > 0).map(border));
-  document.getElementById("edges").replaceChildren(...f.areas.filter((a) => a.opacity > 0).map(areaEdge));
-  const rivers = document.getElementById("rivers");
-  rivers.replaceChildren(...f.rivers.filter((r) => r.state.core > 0 || r.state.glow > 0).map((r) => river(r.d, r.state)));
+window.drawFrame = async (f) => {
+  if (f.relief) await drawRelief(f);
+  else {
+    gl.viewport(0, 0, 1080, 1920);
+    gl.uniform2f(gl.getUniformLocation(program, "centre"), f.centre.x, f.centre.y);
+    gl.uniform1f(gl.getUniformLocation(program, "radius"), f.camera.radius);
+    gl.uniform2f(gl.getUniformLocation(program, "view"), f.camera.lon * Math.PI / 180, f.camera.lat * Math.PI / 180);
+    gl.uniform1f(gl.getUniformLocation(program, "grade"), f.grade);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    gl.finish();
+    const [fills, borders, edges, rivers] = overlayLayers(f);
+    document.getElementById("fills").replaceChildren(...fills);
+    document.getElementById("borders").replaceChildren(...borders);
+    document.getElementById("edges").replaceChildren(...edges);
+    document.getElementById("rivers").replaceChildren(...rivers);
+  }
 
   const names = document.getElementById("names");
   names.replaceChildren();
