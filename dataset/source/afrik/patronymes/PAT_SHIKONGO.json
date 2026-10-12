@@ -82,5 +82,161 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Shikongo », « Ovambo », « Oshiwambo », « Namibia », « surname », « clan », « etymology » et « transmission », ainsi que la consultation directe de « Shikongo Surname Origin, Meaning & Last Name History » n'ont établi aucune règle propre à Shikongo permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Shikongo est un nom de famille ambo, en Namibie. C'est d'abord un nom personnel : les Ambo ajoutaient au nom d'une personne celui de son père, et les noms de famille se sont formés sur ces noms de pères, surtout depuis les années 1950. Une source propose un sens à ce nom ; nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Shikongo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ndo",
+        "namedBy": null,
+        "shortLine": "Un ancien nom personnel ambo, de Namibie, devenu aussi nom de famille.",
+        "periodLabel": "Porté dès 1858 ; nom de famille aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Décrit en 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Shikongo est un ancien nom personnel ambo, encore donné aux garçons dans les registres de baptême qu'étudie Minna Saarelma-Maunumaa, et porté aussi comme nom de famille. Une seule source consultée propose un sens à ce nom ; nous la présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Edhina Ekogidho — Names as Links: The Encounter between African and European Anthroponymic Systems among the Ambo People in Namibia",
+                "author": "Minna Saarelma-Maunumaa",
+                "year": 2003,
+                "url": "https://digital.unam.edu.na/bitstream/handle/11070.1/21230/Ekogidho_2003.pdf?isAllowed=y&sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 147, 217 et 345",
+                "notes": "Studia Fennica Linguistica 11, Helsinki, Société de littérature finnoise (SKS), 2003, livre tiré de la thèse de doctorat de l'autrice ; lu le 12 octobre 2026 dans le PDF déposé au dépôt numérique de l'Université de Namibie, dont la pagination est celle du livre. Page 147 : les Ambo ajoutaient au nom d'une personne le nom de son père, comme dans « Nelago lyaShikongo » ; un système de noms de famille à l'européenne s'est formé peu à peu, « especially since the 1950s », sur ces anciens noms de pères. Page 217 : Shikongo, « old personal name », compte 16 occurrences, plus 2 sous la forme Šikongo, parmi les noms donnés aux hommes en second nom de baptême dans les registres étudiés. Page 345 : Shikongo figure deux fois dans la liste des noms de famille de théologiens ambo, tirée de Nambala (1995)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Proposée en 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Shikongo viendrait du mot ndonga oshikongo, la recherche de jeunes filles pour la cour du chef, selon Minna Saarelma-Maunumaa, qui reprend le dictionnaire ndonga de Tirronen.",
+            "hypothesisGroup": "origine du nom Shikongo",
+            "sources": [
+              {
+                "title": "Edhina Ekogidho — Names as Links: The Encounter between African and European Anthroponymic Systems among the Ambo People in Namibia",
+                "author": "Minna Saarelma-Maunumaa",
+                "year": 2003,
+                "url": "https://digital.unam.edu.na/bitstream/handle/11070.1/21230/Ekogidho_2003.pdf?isAllowed=y&sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 217 et 292 ; note 435, p. 309",
+                "notes": "Studia Fennica Linguistica 11, Helsinki, Société de littérature finnoise (SKS), 2003, livre tiré de la thèse de doctorat de l'autrice ; lu le 12 octobre 2026 dans le PDF déposé au dépôt numérique de l'Université de Namibie, dont la pagination est celle du livre. Page 217 : Shikongo est classé « old personal name », avec un renvoi à la note 435. Note 435, page 309 : « In Ndonga, oshikongo means 'search for girls for the chief's court' (Tirronen 1986, p. 145) ». Page 292 : Ashikongo et Shikongo sont rangés parmi les noms qui rappellent un événement. Le dictionnaire cité est T. E. Tirronen, Ndonga–English Dictionary, Oniipa, 1986, que nous n'avons pas consulté."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1950,
+              "to": null,
+              "label": "Surtout depuis les années 1950"
+            },
+            "statement": "Le nom Shikongo devient un nom de famille quand les Ambo adoptent peu à peu un nom transmis aux enfants, fait d'un ancien nom de père, selon Minna Saarelma-Maunumaa. Avant, Shikongo suivait le nom d'un enfant pour dire qui était son père.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Edhina Ekogidho — Names as Links: The Encounter between African and European Anthroponymic Systems among the Ambo People in Namibia",
+                "author": "Minna Saarelma-Maunumaa",
+                "year": 2003,
+                "url": "https://digital.unam.edu.na/bitstream/handle/11070.1/21230/Ekogidho_2003.pdf?isAllowed=y&sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 147",
+                "notes": "Studia Fennica Linguistica 11, Helsinki, Société de littérature finnoise (SKS), 2003, livre tiré de la thèse de doctorat de l'autrice ; lu le 12 octobre 2026 dans le PDF déposé au dépôt numérique de l'Université de Namibie, dont la pagination est celle du livre. Page 147 : les Ambo ajoutaient au nom d'une personne le nom de son père, comme dans « Nelago lyaShikongo » ; un système de noms de famille à l'européenne s'est formé peu à peu, « especially since the 1950s », sur ces anciens noms de pères."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1883,
+              "to": 1883,
+              "label": "1883"
+            },
+            "era": "polity",
+            "statement": "Le nom Shikongo est celui d'Abraham Shikongo, l'un des six hommes baptisés le 6 janvier 1883 à Omulonga, au premier baptême public en pays ambo, selon Minna Saarelma-Maunumaa. Deux historiens laissent penser que c'est le nom de son père ; le missionnaire Tobias Reijonen écrivait en 1883 que c'était son ancien nom.",
+            "sources": [
+              {
+                "title": "Edhina Ekogidho — Names as Links: The Encounter between African and European Anthroponymic Systems among the Ambo People in Namibia",
+                "author": "Minna Saarelma-Maunumaa",
+                "year": 2003,
+                "url": "https://digital.unam.edu.na/bitstream/handle/11070.1/21230/Ekogidho_2003.pdf?isAllowed=y&sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 131-132 ; note 254, p. 185",
+                "notes": "Studia Fennica Linguistica 11, Helsinki, Société de littérature finnoise (SKS), 2003, livre tiré de la thèse de doctorat de l'autrice ; lu le 12 octobre 2026 dans le PDF déposé au dépôt numérique de l'Université de Namibie, dont la pagination est celle du livre. Pages 131-132 : le 6 janvier 1883, premier baptême public en pays ambo, à Omulonga, par le missionnaire Tobias Reijonen ; parmi les six hommes, « Abraham Shikongo », d'après Nambala (1994) et Peltola (1958). Note 254, page 185 : Peltola et Nambala donnent l'impression que ces noms africains sont des noms de pères, mais Reijonen (1883, p. 71) écrit que c'étaient les anciens noms des baptisés."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1874,
+              "label": "De 1858 à 1874"
+            },
+            "era": "polity",
+            "statement": "Le nom Shikongo est celui de Shikongo shaKalulu, roi de l'Ondonga de 1858 à 1874, selon Romie Nghitevelekwa et Napandulwe Shiweda. C'est la plus ancienne trace de ce nom que le projet connaît ; les sources ne disent pas si les familles Shikongo d'aujourd'hui descendent de ce roi.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Omandongo: “The site of the forsaken mission station, and a reminder of the plights of pioneering times”",
+                "author": "Romie Nghitevelekwa et Napandulwe Shiweda",
+                "year": 2019,
+                "url": "https://sites.utu.fi/intertwined-histories/omandongo-the-site-of-the-forsaken-mission-station-and-a-reminder-of-the-plights-of-pioneering-times/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Article du projet de recherche Intertwined Histories – 150 Years of Finnish–Namibian Relations, Université de Turku, publié le 19 novembre 2019, lu le 12 octobre 2026. Il écrit que l'Ondonga était alors gouverné par « Omukwaniilwa (King) Shikongo shaKalulu, who ruled from 1858 to 1874 », et que les missionnaires finlandais arrivent à Omandongo, en pays ambo, le 9 juillet 1870. Il ne parle pas du nom de famille."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "S̆ikongo",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "ndo",
+        "namedBy": null,
+        "shortLine": "L'ancienne écriture ndonga du nom Shikongo.",
+        "periodLabel": "XXe siècle",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "XXe siècle"
+            },
+            "statement": "Le nom S̆ikongo est l'ancienne écriture ndonga de Shikongo : au cours du XXe siècle, l'orthographe du ndonga a remplacé s̆ par sh, selon Minna Saarelma-Maunumaa, qui relève les deux formes dans les registres de baptême.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Edhina Ekogidho — Names as Links: The Encounter between African and European Anthroponymic Systems among the Ambo People in Namibia",
+                "author": "Minna Saarelma-Maunumaa",
+                "year": 2003,
+                "url": "https://digital.unam.edu.na/bitstream/handle/11070.1/21230/Ekogidho_2003.pdf?isAllowed=y&sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 205 et 217",
+                "notes": "Studia Fennica Linguistica 11, Helsinki, Société de littérature finnoise (SKS), 2003, livre tiré de la thèse de doctorat de l'autrice ; lu le 12 octobre 2026 dans le PDF déposé au dépôt numérique de l'Université de Namibie, dont la pagination est celle du livre. Page 205 : l'orthographe du ndonga a changé au XXe siècle, dont le passage de š à sh (d'après Fourie 1992) ; exemple relevé dans les registres : « Šikongo: Shikongo ». Page 217 : 16 occurrences de Shikongo et 2 de Šikongo parmi les seconds noms de baptême."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
