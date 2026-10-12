@@ -80,7 +80,7 @@
     "social:render": "node social/renderer/render.mjs",
     "social:check-design": "node social/renderer/fidelity.mjs",
     "test:social-renderer": "node --test social/renderer/*.test.mjs",
-    "test:social-video": "node --test social/video/sequence.test.mjs social/video/shoreline.test.mjs",
+    "test:social-video": "node --test social/video/sequence.test.mjs social/video/shoreline.test.mjs social/video/areas.test.mjs",
     "test:social-video-acceptance": "node --test social/video/*.test.mjs",
     "social:package": "node .claude/skills/ethniafrica-social-production/scripts/package.mjs",
     "social:research": "node .claude/skills/ethniafrica-social-production/scripts/research.mjs",
