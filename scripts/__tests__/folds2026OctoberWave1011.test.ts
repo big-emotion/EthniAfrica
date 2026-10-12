@@ -206,6 +206,7 @@ describe("what the other people keepers carry over", () => {
   // @req REQ-178
   it("leaves Hietshware to the Tshwa", () => {
     expect(exonymsOf("PPL_SHUA")).not.toContain("Hietshware");
+    expect(exonymsOf("PPL_SHUA")).not.toContain("Hietshwari");
     expect(exonymsOf("PPL_TSHUWA")).toContain("Hietshware");
   });
 
@@ -235,6 +236,19 @@ describe("what the other people keepers carry over", () => {
 });
 
 describe("the Muwalladeen fiche", () => {
+  // They speak Yemeni Arabic: filed with the other Arabic-speaking peoples,
+  // not under Niger-Congo where a leftover Swahili filing had put them.
+  // @req REQ-178
+  it("is filed under the Semitic family, as their language is", () => {
+    const fiche = readPeople("PPL_MUWALLADEEN");
+
+    expect(peopleFile("PPL_MUWALLADEEN")).toMatch(
+      /FLG_SEMITIQUE\/PPL_MUWALLADEEN\.json$/
+    );
+    expect(fiche.languageFamilyId).toBe("FLG_SEMITIQUE");
+    expect(fiche.content.appellations.linguisticFamily).toBe("FLG_SEMITIQUE");
+  });
+
   // @req REQ-178
   it("names the Muwalladeen and keeps their name history", () => {
     const fiche = readPeople("PPL_MUWALLADEEN");
