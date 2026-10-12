@@ -96,5 +96,87 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Matumbi désigne un peuple des collines Matumbi, dans le sud-est de la Tanzanie, et sa langue, le kimatumbi. Ce peuple se nomme lui-même Matumbi ; ses membres parlent d'eux-mêmes comme des Wamatumbi dans les récits recueillis en 1966-1967. On ne sait pas avec certitude d'où vient le nom : aucune source que nous avons lue ne l'explique. Nous présentons plus bas ce que les sources disent de ses usages.",
+    "names": [
+      {
+        "nameText": "Matumbi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mgw",
+        "namedBy": null,
+        "shortLine": "Le nom des gens des collines Matumbi et de leur langue ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit Matumbiberge dès 1909 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Matumbi est le nom de référence de cette langue dans la norme internationale ISO 639-3, sous le code mgw. On ne sait pas avec certitude d'où il vient.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, Matumbi [mgw]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/mgw",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1907,
+              "label": "Soulèvement Maji Maji, 1905-1907 ; récits recueillis en 1966-1967"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wamatumbi est celui que des témoins, interrogés surtout dans les collines Matumbi, emploient pour parler des leurs au temps de la domination allemande. L'un d'eux dit que les Wamatumbi, et surtout les Wawolo, les gens des hauteurs, ne voulaient depuis toujours être dirigés par personne, ce qui explique selon lui leur révolte.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Records of the Maji Maji Rising, Part One",
+                "author": "G. C. K. Gwassa et John Iliffe",
+                "year": null,
+                "url": "https://archive.org/details/maji-maji-1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Historical Association of Tanzania, Paper n° 4, Nairobi, East African Publishing House, 1967 ; lu sur la numérisation d'Internet Archive le 12 octobre 2026. Environ la moitié des documents sont des récits oraux recueillis par G. C. K. Gwassa en 1966-1967, surtout dans les Matumbi (introduction). Le témoin cité n'est pas nommé dans la page lue ; la traduction du swahili est celle des éditeurs."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1909,
+              "to": 1909,
+              "label": "1909"
+            },
+            "era": "colonial",
+            "statement": "Le nom Matumbi apparaît par écrit, sous la forme proche Matumbiberge, « les monts Matumbi », dans le livre de l'ancien gouverneur Gustav Adolf von Götzen sur le soulèvement de 1905-1906. Il y parle de ces monts et de leurs habitants, qu'il dit farouches. C'est la plus ancienne trace de ce nom que le projet connaît. Le nom désigne ici des montagnes et ceux qui y vivent.",
+            "formAsWritten": "Matumbiberge",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Deutsch-Ostafrika im Aufstand 1905/06",
+                "author": "Gustav Adolf von Götzen",
+                "year": 1909,
+                "url": "https://archive.org/details/deutsch-ostafrika-im-aufstand-1905-06",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 4",
+                "notes": "Berlin, Ernst Siegfried Mittler und Sohn, 1909, lu sur la numérisation d'Internet Archive le 12 octobre 2026. Introduction géographique : les « Matumbiberge » sont citées parmi les massifs qui s'élèvent de la plaine côtière, avec leur population dite « trotzig, wild ». Le livre date de 1909, mais nous n'avons pas cherché de trace plus ancienne dans les textes allemands antérieurs."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
