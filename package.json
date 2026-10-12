@@ -84,7 +84,8 @@
     "test:social-video-acceptance": "node --test social/video/*.test.mjs",
     "social:package": "node .claude/skills/ethniafrica-social-production/scripts/package.mjs",
     "social:research": "node .claude/skills/ethniafrica-social-production/scripts/research.mjs",
-    "test:social-production": "node --test .claude/skills/ethniafrica-social-production/scripts/*.test.mjs"
+    "test:social-production": "node --test .claude/skills/ethniafrica-social-production/scripts/*.test.mjs",
+    "test:social-clip": "node --test .claude/skills/ethniafrica-reel-clip/scripts/*.test.mjs"
   },
   "dependencies": {
     "@radix-ui/react-alert-dialog": "^1.1.24",
