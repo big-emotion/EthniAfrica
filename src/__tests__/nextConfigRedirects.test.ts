@@ -1,5 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 
+import retiredPeopleLedger from "../../dataset/source/afrik/_retired-identifiers.json";
 import retiredPatronymes from "../../dataset/source/afrik/patronymes/_retired-identifiers.json";
 import { getPatronymeRoute } from "@/lib/routing";
 
@@ -114,5 +115,21 @@ describe("a retired people id in the API", () => {
     );
 
     expect(entry).toBeUndefined();
+  });
+
+  // A withdrawn id has no successor, so the API answers it with a plain 404.
+  // @req REQ-084
+  it("leaves an id the ledger withdrew without a successor alone", async () => {
+    const withdrawn = retiredPeopleLedger.filter(
+      (entry) => entry.decision === "withdrawn"
+    );
+    const redirects = await loadRedirects();
+
+    expect(withdrawn.length).toBeGreaterThan(0);
+    for (const { retiredId } of withdrawn) {
+      expect(
+        destinationOf(redirects, `/api/v2/peoples/${retiredId}/:rest*`)
+      ).toBeUndefined();
+    }
   });
 });

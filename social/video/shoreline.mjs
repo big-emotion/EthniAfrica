@@ -128,7 +128,7 @@ function fillLevels(grid, seedIndex) {
 // other cell is lifted to at least the level, so only the kept basin's
 // outline is traced. A saddle keeps diagonal lake cells apart, matching the
 // 4-neighbour fill.
-function contourRings(grid, lake, level) {
+export function contourRings(grid, lake, level) {
   const { width, height, data } = grid;
   const value = (x, y) => {
     const i = y * width + x;
@@ -246,7 +246,7 @@ function simplifyPath(points, tolerance) {
 
 // Douglas–Peucker on a closed ring, split at its first vertex and the vertex
 // farthest from it so both anchors are real corners of the ring.
-function simplifyRing(ring, tolerance) {
+export function simplifyRing(ring, tolerance) {
   const [x0, y0] = ring[0];
   let far = 0;
   for (let i = 1; i < ring.length - 1; i++)

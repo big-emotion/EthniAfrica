@@ -88,6 +88,28 @@ The script reads the same verified ETOPO 2022 tile as the relief option, checked
 
 Simplification is Douglas–Peucker at 0.02° (about 2 km, one DEM cell, under one pixel when the Sahara fills a 1080 px frame), then rounding to 0.001°. Islands under 100 km² are filled in. The file records its own provenance, area and vertex count. The DEM stays outside git; the derived GeoJSON is small and public domain, so it is committed. `npm run test:social-video` checks the committed file, and the acceptance run regenerates it from the DEM and compares bytes.
 
+## Sahara areas
+
+`data/areas/*.geojson` are the seven approximate areas of the Sahara video (design 0.4.0): hatched, dashed edge, legend « Zone approximative ». Each file is one GeoJSON Feature whose properties are exactly `name` (the French label on screen), `kind: "approximate"`, `category` (`region`, `historical-name` or `people`), `source`, `citation`, `derivation`, `licence` and `date`. The designer's hand-drawn placeholder (`sahara-areas-mock.json`) is never an input.
+
+```sh
+ETHNIAFRICA_VIDEO_ASSETS=PATH node social/video/areas.mjs
+```
+
+The script reads four pinned downloads, each checked against its SHA-256: Ecoregions 2017 (Dinerstein et al. 2017, CC BY 4.0) and three Natural Earth 5.1.2 layers (geography regions, admin 0 countries at 1:50m, populated places), plus the Natural Earth river file the river layer already uses. Every area is a combination of these sources painted on one 0.05° grid, so « Sahara minus east of the Nile » or « Africa minus part of Egypt » are cell operations with no clipping library. The outline is traced back with the Mega-Chad contour tracer, simplified by Douglas–Peucker at 0.05° (one cell, under one pixel when Africa fills a 1080 px frame), and rounded to 0.01°. Parts and holes under 5,000 km² are dropped.
+
+| Area                                   | Chapter | Rule                                                                                                                                                                   |
+| -------------------------------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `sahara` « Sahara »                    | 1, 4    | The Ecoregions 2017 ecoregions named after the Sahara, plus the Tibesti–Jebel Uweinat massifs, on Africa's land.                                                       |
+| `desert` « Grand désert »              | 2       | The Sahara west of the Nile. Al-Idrīsī, 1154, in Dozy and de Goeje (1866), French p. 9: « au nord au grand désert (Sahara) qui sépare le Soudan du pays des Berbers ». |
+| `berberes` « Pays des Berbères »       | 2       | Africa's land north of the Sahara in each grid column, outside Egypt and west of the Nile.                                                                             |
+| `noirs` « Pays des Noirs »             | 2       | The Sahelian Acacia savanna and the two flooded savannas it encloses, outside the Sahara and west of the Nile.                                                         |
+| `libye` « Libye »                      | 3       | The African mainland minus Egypt east of the Nile. Herodotus IV.41–42: Libya begins after Egypt and is surrounded by sea; IV.181 puts Siwa in Libya.                   |
+| `touaregs` « Kel Tamasheq (Touaregs) » | 3       | Convex hull of the places and massifs named in the corpus fiche `PPL_TUAREG`, each town widened by 1°.                                                                 |
+| `libyque` « Désert libyque »           | 4       | Natural Earth's « Libyan Desert » label region, kept inside the Sahara and west of the Nile.                                                                           |
+
+The al-Idrīsī areas are EthniAfrica's reconstruction of a medieval description, not borders, and each file says so. The Tuareg area overstates on purpose: a hull takes in empty desert and lands shared with neighbours. It was compared by eye with GREG (1964 atlas), which states no licence and is not used. The labels are proposals for the editorial approval. `npm run test:social-video` checks the committed files (validity, bounding boxes, places covered and left out, provenance); the acceptance run regenerates them from the downloads and compares bytes. With `ETHNIAFRICA_VIDEO_AREAS_MOCK` pointing at the mock-up, it also checks that no area reuses its vertices; without it, that check is reported as skipped.
+
 ## Rules enforced before rendering
 
 - **Imagery:** only the verified sources are accepted, Blue Marble NG July 2004 and Sentinel-2 cloudless 2016. The local file must match its recorded SHA-256. The caption names the imagery.

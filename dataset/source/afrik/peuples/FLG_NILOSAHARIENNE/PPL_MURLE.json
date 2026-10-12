@@ -1,7 +1,7 @@
 {
   "id": "PPL_MURLE",
   "nameMain": "Murle",
-  "languageFamilyId": "FLG_NILOTIQUE",
+  "languageFamilyId": "FLG_NILOSAHARIENNE",
   "currentCountries": ["SSD", "ETH"],
   "content": {
     "appellations": {
@@ -19,7 +19,7 @@
       "originOfExonyms": "Les Dinka appellent ce peuple Beir, les Luo et les Nuer Jebe, et les Anuak Ajibba. Ces noms apparaissent dans les publications coloniales britanniques avant la reconnaissance de Murle, le nom que le peuple se donne lui-même. Murle désigne tout le groupe. Les personnes extérieures sont appelées moden, qui signifierait ennemis ou étrangers.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Murle est aujourd'hui universellement accepte et utilise tant par les Murle eux-memes que par les administrations soudanaise et ethiopienne. Il figure dans les recensements, les accords de paix et les publications academiques.",
-      "linguisticFamily": "FLG_NILOTIQUE",
+      "linguisticFamily": "FLG_NILOSAHARIENNE",
       "ethnoLinguisticGroup": "Surmic (branche sud-occidentale des langues nilotiques orientales)",
       "historicalRegion": "Plateau de Boma, vallee de Lotilla, comte de Pibor (Soudan du Sud); regions frontieres du sud-ouest de l'Ethiopie",
       "currentCountries": ["SSD", "ETH"]

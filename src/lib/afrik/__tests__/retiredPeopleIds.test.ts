@@ -7,7 +7,7 @@ import { RETIRED_PEOPLE_IDS } from "../retiredPeopleIds";
 const AFRIK_ROOT = join(process.cwd(), "dataset", "source", "afrik");
 
 interface LedgerEntry {
-  decision: "merged" | "renamed" | "kept-distinct";
+  decision: "merged" | "renamed" | "kept-distinct" | "withdrawn";
   retiredId: string;
   successorId: string | null;
 }
@@ -34,11 +34,29 @@ describe("RETIRED_PEOPLE_IDS", () => {
   it("mirrors every merged and renamed entry of the retired-identifiers ledger", () => {
     const expected = Object.fromEntries(
       readLedger()
-        .filter((entry) => entry.decision !== "kept-distinct")
+        .filter(
+          (entry) => entry.decision === "merged" || entry.decision === "renamed"
+        )
         .map((entry) => [entry.retiredId, entry.successorId])
     );
 
     expect(RETIRED_PEOPLE_IDS).toEqual(expected);
+  });
+
+  // A withdrawn id has no successor: redirecting it would send readers to a
+  // fiche that never took its place, so it must stay a plain 404.
+  // @req REQ-027
+  it("holds no redirect for a withdrawn or kept-distinct id", () => {
+    const unredirected = readLedger().filter(
+      (entry) =>
+        entry.decision === "withdrawn" || entry.decision === "kept-distinct"
+    );
+
+    expect(unredirected.length).toBeGreaterThan(0);
+    for (const { retiredId, successorId } of unredirected) {
+      expect(successorId, retiredId).toBeNull();
+      expect(RETIRED_PEOPLE_IDS[retiredId], retiredId).toBeUndefined();
+    }
   });
 
   // @req REQ-027

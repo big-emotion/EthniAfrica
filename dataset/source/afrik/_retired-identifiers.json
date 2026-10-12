@@ -852,5 +852,19 @@
     "successorId": "PPL_MWANI",
     "reason": "The fiche describes the Mwani of the northern Mozambican coast, whose language, kiMwani (ISO wmw), is a language of its own rather than the Swahili of the whole coast (PPL_SWAHILI). It takes their name: main name Mwani, the Mwani self-name first in its name history; the Waswahili meaning account and Krapf's 1850 « Kisuaheli » account stay as written.",
     "decidedOn": "2026-10-12"
+  },
+  {
+    "decision": "withdrawn",
+    "retiredId": "PPL_YERIMA",
+    "successorId": null,
+    "reason": "Not an attested people. « Yerima » is a title of the Kanem-Bornu political order, not the name of a population; the fiche's population, sub-groups and rites had no source. Withdrawn with no successor: no other fiche took its place, so the id redirects nowhere. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-12"
+  },
+  {
+    "decision": "withdrawn",
+    "retiredId": "PPL_KIRDI",
+    "successorId": null,
+    "reason": "Not a people but a pejorative umbrella term laid over many distinct peoples. Its history is now told on the word fiche WRD_KIRDI, and the peoples it covers keep their own fiches. Withdrawn with no successor: a word fiche is not a people, so the id redirects nowhere. Its prose stays readable in the git history.",
+    "decidedOn": "2026-10-12"
   }
 ]
