@@ -59,6 +59,8 @@ describe("the name Bakwé in Schwartz 1993", () => {
     expect(births).toHaveLength(1);
     expect(births[0].period.from).toBe(1895);
     expect(births[0].statement).toMatch(/Pobéguin/);
+    // The Sassandra up to Kouati was not yet occupied in 1895 (ruled 2026-10-12).
+    expect(births[0].era).toBe("polity");
     expect(births[0].sources[0].page).toBe("p. 88");
     expect(births[0].sources[0].notes).toMatch(/second main|pas ouvert/);
     // The spelling of 1895 was not read, so none is invented.
