@@ -128,5 +128,132 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Argobba désigne un peuple musulman d'Éthiopie, qui vit surtout dans l'ancien Ifat, au nord-est du Choa, sur les collines du sud du Wollo et autour de Harar, et qui se nomme lui-même Argobba. Il désigne aussi sa langue, proche de l'amharique. On ne sait pas avec certitude d'où vient ce nom : les sources que nous avons lues ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Argobba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "agj",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple et de sa langue ; il est écrit Argoba dès 1836.",
+        "periodLabel": "Écrit depuis 1836 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Argobba désigne aujourd'hui un peuple et sa langue, encore parlée autour de Harar, dans l'Ifat, au nord-est du Choa, et sur les collines du sud du Wollo. Cette langue recule au profit de celles des voisins amhara, oromo et afar, selon l'historien Ahmed Hassen. On ne sait pas avec certitude d'où vient le nom : les sources que nous avons lues ne l'expliquent pas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Gafat and Argobba of Ethiopia : a Historical Survey of the Two Ethio Semitic Linguistic Communities",
+                "author": "Ahmed Hassen",
+                "year": 2023,
+                "url": "https://dergipark.org.tr/en/pub/toplumsalbilimler/article/1352052",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 408",
+                "notes": "Uluslararası Toplumsal Bilimler Dergisi (TOBİDER), vol. 7, n° 3, 2023, p. 401-413. L'auteur enseigne à l'université d'Addis-Abeba. Article en libre accès lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Argobba est celui sous lequel on connaît encore aujourd'hui la population des anciens États musulmans d'Ifat et de Fatagar, sur les contreforts sud du Choa, selon l'historien Eike Haberland. Il signale aussi leurs villages fortifiés au sud-est de Harar et sur le bord est du Choa.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 24 : La corne de l'Afrique",
+                "author": "Eike Haberland",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 774",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1836,
+              "to": 1839,
+              "label": "Mai 1836, livre de 1839"
+            },
+            "era": "polity",
+            "statement": "Le nom Argobba apparaît sous la forme Argoba chez le missionnaire Joseph Wolff : en mai 1836, sur un bateau de la mer Rouge, il rencontre un jeune musulman venu d'« Argoba », qu'il présente comme la capitale du roi du Choa, et note que les Arabes l'appellent Tshebret. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Argoba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Journal of the Rev. Joseph Wolff, in a Series of Letters to Sir Thomas Baring",
+                "author": "Joseph Wolff",
+                "year": 1839,
+                "url": "https://archive.org/details/journalrevjosep00wolfgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 330",
+                "notes": "Londres, James Burns, 1839. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1836,
+              "to": 1839,
+              "label": "1836, livre de 1839"
+            },
+            "era": "polity",
+            "statement": "Le nom Argobba désigne déjà une langue chez Joseph Wolff, qui compte l'argoba parmi les langues parlées en Abyssinie.",
+            "formAsWritten": "Argoba",
+            "sources": [
+              {
+                "title": "Journal of the Rev. Joseph Wolff, in a Series of Letters to Sir Thomas Baring",
+                "author": "Joseph Wolff",
+                "year": 1839,
+                "url": "https://archive.org/details/journalrevjosep00wolfgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 340",
+                "notes": "Londres, James Burns, 1839. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Moyen Âge, selon cette lecture"
+            },
+            "era": "polity",
+            "statement": "Le nom Argobba désigne aujourd'hui une langue dont les locuteurs, avec ceux du gouragué oriental et du harari, ont peut-être formé au Moyen Âge les premières communautés musulmanes du Choa et de l'Awfat, selon l'historien Tadesse Tamrat.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 17 : La Corne de l'Afrique : les Salomonides en Éthiopie et les États de la Corne de l'Afrique",
+                "author": "Tadesse Tamrat",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 461",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

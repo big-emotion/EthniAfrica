@@ -126,5 +126,407 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ndzundza désigne l'une des deux branches des Ndebele du Sud, en Afrique du Sud, surtout au Mpumalanga et au Gauteng ; ses membres se nomment AmaNdebele, ou abakwaNdzundza. D'autres noms existent : Ndebele du Transvaal et Ndebele du Sud, qui les distinguent des Ndebele du Zimbabwe, et Mapoch, le nom d'un de leurs chefs. Les sources ne s'accordent pas sur l'origine du nom Ndebele ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Ndzundza",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nbl",
+        "namedBy": null,
+        "shortLine": "Le nom de cette branche des Ndebele du Sud, d'après Ndzundza, rival de Manala après la mort du roi Musi.",
+        "periodLabel": "Écrit depuis 1952 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndzundza désigne la branche des Ndebele du Sud qui vit surtout au Mpumalanga et au Gauteng. Il reprend celui de Ndzundza, qui se sépara de Manala, le fils aîné du roi Musi, après la mort de celui-ci, selon South African History Online.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "South African History Online — Ndebele",
+                "author": "South African History Online",
+                "year": 2026,
+                "url": "https://sahistory.org.za/article/ndebele",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Article publié le 24 mars 2011, mis à jour le 20 juillet 2026 ; lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1883,
+              "to": 1883,
+              "label": "1883"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ndzundza est celui du peuple que la république sud-africaine du Transvaal combat en 1883 : son roi Nyabela se rend en juillet, après huit mois de résistance, et ses terres sont confisquées, selon South African History Online.",
+            "sources": [
+              {
+                "title": "South African History Online — Ndebele",
+                "author": "South African History Online",
+                "year": 2026,
+                "url": "https://sahistory.org.za/article/ndebele",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Article publié le 24 mars 2011, mis à jour le 20 juillet 2026 ; lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1952,
+              "to": 1952,
+              "label": "1952"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndzundza apparaît en 1952 dans la carte des langues d'Afrique du Sud de N. J. van Warmelo, publiée par le ministère des Affaires indigènes du régime d'apartheid : le ndebele du sud du Transvaal n'y est parlé que par deux tribus, les Manala et les Ndzundza, selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Ndebele »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/ndebele/e05106",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1952",
+                "notes": "Entrée lue le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "AmaNdebele",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nbl",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Ndebele du Sud ; on le rattache au mot sotho matebele.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom AmaNdebele désigne les deux branches d'un peuple d'origine nguni installé au XVIIe siècle dans ce qui deviendra le Transvaal ; au XIXe siècle, ce peuple accueille les réfugiés nguni de Mzilikazi et leur donne son nom, selon le Dictionary of South African English. Nous ne savons pas quand ce nom a été écrit pour la première fois pour ce peuple, et son origine est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Ndebele »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/ndebele/e05106",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1822,
+              "to": 1824,
+              "label": "Vers 1822"
+            },
+            "era": "polity",
+            "statement": "Le nom AmaNdebele a une forme sotho, Tebele, qui désigne déjà les Ndzundza, des Nguni du Transvaal, quand Mzilikazi s'installe parmi eux sur la rivière Steelpoort. Grossi des Ndzundza et d'autres maTebele, son propre peuple finit par être appelé lui aussi Tebele ou Ndebele, selon l'historien N. Parsons en 1982, que cite le Dictionary of South African English.",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Matabele »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/matabele/e04597",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1982",
+                "notes": "Entrée lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom AmaNdebele serait une adaptation, dans les langues nguni, du mot matebele des Sotho et des Tswana, selon le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Ndebele",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Ndebele »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/ndebele/e05106",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1948,
+              "to": 1948,
+              "label": "Proposée en 1948"
+            },
+            "era": "modern",
+            "statement": "Le nom AmaNdebele viendrait, par le sotho matebele, du verbe teba, « s'enfoncer » : les guerriers nguni se baissaient derrière leurs grands boucliers, selon le dictionnaire zoulou-anglais de Doke et Vilakazi, que cite le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Ndebele",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Matabele »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/matabele/e04597",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom AmaNdebele viendrait plutôt, par le sotho matebele, du mot sotho et setswana thebe, « bouclier », selon le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Ndebele",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Matabele »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/matabele/e04597",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1961,
+              "to": 1961,
+              "label": "Proposée en 1961"
+            },
+            "era": "modern",
+            "statement": "Le nom AmaNdebele voudrait dire, sous sa forme sotho Matabele, « les réfugiés », parce que les gens de Mzilikazi étaient des étrangers en fuite devant Chaka, selon l'auteur T. V. Bulpin, que cite le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Ndebele",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Matabele »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/matabele/e04597",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1961",
+                "notes": "Entrée lue le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ndebele du Transvaal",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom savant qui les distingue des Ndebele du Zimbabwe.",
+        "periodLabel": "Seconde moitié du XIXe siècle et XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1996,
+              "to": 1996,
+              "label": "1996"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndebele du Transvaal sert à l'historien Ngwabi Bhebe, en 1996, pour l'un des peuples du nord qui résistent à l'expansion des Boers entre 1850 et 1880, avec les Venda et les Sotho.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 7 : Les Britanniques, les Boers et les Africains en Afrique du Sud, 1850-1880",
+                "author": "Ngwabi Bhebe",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 193",
+                "notes": "UNESCO, volume dirigé par J. F. A. Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1937,
+              "to": 1937,
+              "label": "1937"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndebele du Transvaal, Transvaal Ndebele en anglais, apparaît en 1937 chez l'ethnologue N. J. van Warmelo : ces tribus ne doivent pas être confondues avec les Ndebele du Matabeleland, car elles vivaient déjà là depuis plusieurs siècles, selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Transvaal Ndebele",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Ndebele »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/ndebele/e05106",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1937",
+                "notes": "Entrée lue le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ndebele du Sud",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom courant des Ndzundza et des Manala, distincts des Ndebele du Zimbabwe.",
+        "periodLabel": "Écrit depuis 1975 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndebele du Sud, Southern Ndebele en anglais, apparaît en 1975 dans le magazine Drum, qui parle de l'opposition au « homeland » que le régime d'apartheid veut créer pour eux, selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Southern Ndebele",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Ndebele »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/ndebele/e05106",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1975",
+                "notes": "Entrée lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndebele du Sud désigne aujourd'hui les Ndzundza du Mpumalanga et du Gauteng, selon South African History Online.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "South African History Online — Ndebele",
+                "author": "South African History Online",
+                "year": 2026,
+                "url": "https://sahistory.org.za/article/ndebele",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Article publié le 24 mars 2011, mis à jour le 20 juillet 2026 ; lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mapoch",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un chef ndzundza, que les Boers et les Britanniques ont aussi donné à son peuple.",
+        "periodLabel": "De 1876 aux années 1980",
+        "accounts": [
+          {
+            "period": {
+              "from": 1876,
+              "to": 1876,
+              "label": "Juillet 1876"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mapoch apparaît dans une dépêche envoyée du Cap le 14 juillet 1876 par le gouverneur H. Barkly, sur la guerre entre la république du Transvaal et Sekhukhune : il y parle du « petit chef Mapoch », installé non loin de Middelburg, qui veut rester neutre avec environ 5 000 hommes. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Correspondence Respecting the War between the Transvaal Republic and Neighbouring Native Tribes, and Generally with Reference to Native Affairs in South Africa",
+                "author": "Colonial Office, Royaume-Uni",
+                "year": 1877,
+                "url": "https://archive.org/details/correspondencer02offigoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 63",
+                "notes": "Londres, Harrison and Sons pour le Stationery Office, 1877. Recueil de dépêches présenté au Parlement britannique ; lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1876,
+              "to": 1876,
+              "label": "Août 1876"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mapoch désigne aussi, dès août 1876, les hommes de ce chef : un récit de presse repris dans la même correspondance décrit « les Mapochs » qui combattent aux côtés des Boers contre Sekhukhune.",
+            "formAsWritten": "Mapochs",
+            "sources": [
+              {
+                "title": "Correspondence Respecting the War between the Transvaal Republic and Neighbouring Native Tribes, and Generally with Reference to Native Affairs in South Africa",
+                "author": "Colonial Office, Royaume-Uni",
+                "year": 1877,
+                "url": "https://archive.org/details/correspondencer02offigoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 114",
+                "notes": "Londres, Harrison and Sons pour le Stationery Office, 1877. Recueil de dépêches présenté au Parlement britannique ; lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1983,
+              "to": 1983,
+              "label": "1983"
+            },
+            "era": "modern",
+            "statement": "Le nom Mapoch sert encore en 1983 : le magazine Pace présente les Ndebele d'Afrique du Sud comme les Ndebele du chef Mapoch, pour ne pas les confondre avec ceux du Matabeleland, au Zimbabwe, selon le Dictionary of South African English.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Ndebele »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/ndebele/e05106",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1983",
+                "notes": "Entrée lue le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

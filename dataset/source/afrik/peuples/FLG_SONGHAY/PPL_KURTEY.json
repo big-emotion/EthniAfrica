@@ -124,5 +124,65 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kurtey désigne un peuple de la vallée du Niger, dans la région de Tillabéri, au Niger, et c'est le nom qu'il se donne lui-même. On ne sait pas avec certitude d'où vient ce nom, ni depuis quand il est employé : les sources que nous avons pu lire en gardent seulement quelques traces, que nous présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Kurtey",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "dje",
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple du fleuve Niger, dans la région de Tillabéri ; une commune porte son nom.",
+        "periodLabel": "Écrit depuis 1969 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "2011"
+            },
+            "era": "modern",
+            "statement": "Le nom Kurtey figure dans l'annuaire statistique de la région de Tillabéri parmi les groupes qui forment le fond du peuplement des rives du Niger, avec les Kaado et les Wogo. Une commune du département de Tillabéri s'appelle Kourteye.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Annuaire statistique régional de Tillabéri 2005-2010",
+                "author": "Institut national de la statistique du Niger",
+                "year": 2011,
+                "url": "https://stat-niger.org/wp-content/uploads/tillaberi/as_tillaberi_2005_2010_edition_2011.pdf",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "page": "p. 7 et p. 22",
+                "notes": "Édition 2011, lue le 11 octobre 2026 dans le PDF mis en ligne par l'Institut."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1969,
+              "to": 1969,
+              "label": "1969"
+            },
+            "era": "modern",
+            "statement": "Le nom Kurtey figure dans le titre d'une étude de l'anthropologue Jean-Pierre Olivier de Sardan parue en 1969, Les Voleurs d'hommes : notes sur l'histoire des Kurtey, que recense Edmond Bernus en 1971. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les Voleurs d'hommes : notes sur l'histoire des Kurtey, par J.-P. Olivier de Sardan (compte rendu)",
+                "author": "Edmond Bernus",
+                "year": 1971,
+                "url": "https://doi.org/10.2307/1159693",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 73-74",
+                "notes": "Africa, vol. 41, n° 1, janvier 1971. Notice lue le 11 octobre 2026 sur le site de Cambridge University Press ; le compte rendu lui-même et le livre recensé, paru en 1969 dans la collection Études nigériennes (n° 25), n'étaient pas accessibles et nous ne les avons pas lus."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

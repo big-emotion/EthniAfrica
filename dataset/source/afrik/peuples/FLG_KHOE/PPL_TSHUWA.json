@@ -142,5 +142,367 @@
         "source_kind": "ngo"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Tshwa désigne un peuple du centre-est du Botswana et de l'ouest du Zimbabwe, et un ensemble de parlers khoe. Au début du XXe siècle, ceux du district de Tati se nommaient eux-mêmes Hiechware, selon un auteur de 1930 ; au Zimbabwe, la communauté de Tsholotsho nomme sa langue Tshwao. D'autres noms existent : Tsoa et Kua, d'autres façons d'écrire Tshwa, et Sarwa, un nom tswana pour tous les San. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Hiechware",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donnaient les San du district de Tati, selon un auteur de 1930.",
+        "usedIn": ["eng"],
+        "periodLabel": "Écrit dès 1930, d'après des travaux de 1917",
+        "accounts": [
+          {
+            "period": {
+              "from": 1956,
+              "to": 1956,
+              "label": "1956"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hiechware figure dans le dictionnaire de Dorothea Bleek, écrit hie ou hietʃware, pour une langue des environs de Tati, en Rhodésie du Sud ; elle range sous ce nom les relevés de Bryden, de Dornan et de Selous.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Bushman Dictionary",
+                "author": "Dorothea F. Bleek",
+                "year": 1956,
+                "url": "https://archive.org/details/bushmandictionar00blee",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction, tableau des langues et dialectes",
+                "notes": "New Haven, American Oriental Society, publié après la mort de l'autrice. Lu sur la numérisation des bibliothèques de l'université de Floride. L'autrice emploie le nom « Bushman » de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hiechware apparaît chez l'anthropologue Isaac Schapera pour des chasseurs-cueilleurs du district de Tati, à l'est du protectorat du Bechuanaland et dans les districts voisins de la Rhodésie du Sud. Ce serait le nom qu'ils se donnent, écrit-il d'après les travaux de S. S. Dornan publiés à partir de 1917 ; on les appelle couramment Masarwa. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne vivait déjà dans cette région.",
+            "formAsWritten": "Hiechware",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 36",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "Proposée en 1930"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hiechware voudrait dire « gens du pays ouvert », selon Isaac Schapera, qui s'appuie sur S. S. Dornan. Le dictionnaire de Dorothea Bleek, qui reprend aussi les relevés de Dornan, explique hie tʃo, « Mosarwa, Bushman », par hie, « le pays ouvert, le veld », et tʃo, « personne », au pluriel hie tʃware.",
+            "hypothesisGroup": "origine du nom Hiechware",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 36",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque."
+              },
+              {
+                "title": "A Bushman Dictionary",
+                "author": "Dorothea F. Bleek",
+                "year": 1956,
+                "url": "https://archive.org/details/bushmandictionar00blee",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "entrée « hie tʃo »",
+                "notes": "New Haven, American Oriental Society, publié après la mort de l'autrice. Lu sur la numérisation des bibliothèques de l'université de Floride. L'autrice emploie le nom « Bushman » de son époque."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tshwa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "hio",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple et de ses parlers chez les linguistes ; son origine n'est pas documentée.",
+        "usedIn": ["eng", "hio"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tshwa désigne une langue khoe de l'est du Kalahari, proche du shua, selon les linguistes Andy Chebanne et Mawande Dlali. On ne sait pas avec certitude d'où vient ce nom, et nous n'avons pas encore trouvé sa plus ancienne trace écrite.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The curse of poverty and marginalisation in language development: The case of Khoisan languages of Botswana",
+                "author": "Andy Chebanne et Mawande Dlali",
+                "year": 2019,
+                "url": "http://www.scielo.org.za/scielo.php?script=sci_arttext&pid=S2224-33802019000300012",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Stellenbosch Papers in Linguistics Plus, vol. 58."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tsoa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "hio",
+        "namedBy": null,
+        "shortLine": "Une autre façon d'écrire Tshwa, celle de la norme ISO.",
+        "usedIn": ["eng"],
+        "periodLabel": "En usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tsoa est celui que la norme ISO 639-3 donne à leur langue, sous le code hio.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, code hio : Tsoa",
+                "author": "SIL International",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/hio",
+                "tier": "official",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kua",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre façon d'écrire le même nom, pour les parlers de la lisière est du Kalahari.",
+        "usedIn": ["eng"],
+        "periodLabel": "En usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kua désigne, avec Tsua, des parlers de la lisière est du bassin du Kalahari, selon les linguistes Andy Chebanne et Mawande Dlali.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The curse of poverty and marginalisation in language development: The case of Khoisan languages of Botswana",
+                "author": "Andy Chebanne et Mawande Dlali",
+                "year": 2019,
+                "url": "http://www.scielo.org.za/scielo.php?script=sci_arttext&pid=S2224-33802019000300012",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Stellenbosch Papers in Linguistics Plus, vol. 58."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tshwao",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que la communauté san de Tsholotsho, au Zimbabwe, donne à sa langue.",
+        "usedIn": ["eng"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Tshwao désigne la langue des San du district de Tsholotsho, au Zimbabwe : c'est le nom qu'emploie Davy Ndlovu, un responsable de la communauté, pour le projet de la faire revivre. Moins de dix personnes la parlent encore couramment, selon la journaliste Lulu Brenda Harris, alors que la Constitution du Zimbabwe reconnaît la langue khoisan. On ne sait pas avec certitude d'où vient le nom Tshwao.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Khoisan language on the brink of extinction",
+                "author": "Lulu Brenda Harris",
+                "year": 2021,
+                "url": "https://cite.org.zw/efforts-to-revive-khoisan-language-hit-brick-wall/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Centre for Innovation and Technology (CITE), Bulawayo, 2 juin 2021 ; lu le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sarwa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "tsn",
+        "namedBy": "Tswana",
+        "shortLine": "Un nom tswana, souvent méprisant, pour tous les San ; son origine est discutée.",
+        "usedIn": ["tsn", "eng"],
+        "periodLabel": "Écrit dès 1871 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sarwa, sous la forme Masarwa, sert, surtout chez les locuteurs du setswana, à désigner de façon méprisante les San du nord du Kalahari, selon le Dictionary of South African English. Son origine est discutée : les explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Masarwa »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/masarwa/e04585",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sarwa, sous la forme Masarwa, est, selon l'anthropologue Isaac Schapera, le seul sous lequel on connaît les Bushmen du sud du protectorat du Bechuanaland, au service des Bechuana : ils n'ont pas de nom particulier pour eux-mêmes, écrit-il.",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 33",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1871,
+              "to": 1871,
+              "label": "1871"
+            },
+            "era": "polity",
+            "statement": "Le nom Sarwa apparaît dans les formes Barwa et Masarwa chez J. Mackenzie : les Bechuana du sud appellent les Bushmen Barwa, ceux du nord Masarwa, selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il désigne vivaient là bien avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Masarwa »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/masarwa/e04585",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Le dictionnaire cite J. Mackenzie, Ten Years North of the Orange River, 1871, p. 128 ; nous n'avons pas lu ce livre nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "Proposée en 1930"
+            },
+            "statement": "Le nom Sarwa viendrait d'une racine que partagent plusieurs langues bantoues, comme dans BaTwa, BaRwa ou MaSarwa, et voudrait dire « gens du sud ». Isaac Schapera rapporte cette explication courante en notant qu'elle ne fait pas l'unanimité.",
+            "hypothesisGroup": "origine du nom Sarwa",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 31",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "Proposée en 1930"
+            },
+            "statement": "Le nom Sarwa viendrait de la même racine bantoue et voudrait plutôt dire « gens de la brousse », une explication qu'Isaac Schapera juge plus vraisemblable.",
+            "hypothesisGroup": "origine du nom Sarwa",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 31",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Proposée en 1928"
+            },
+            "statement": "Le nom Sarwa voudrait dire « abandonnés » : il aurait d'abord désigné les Bechuana eux-mêmes, qui l'auraient ensuite donné à leurs serviteurs comme un titre de mépris, selon E. H. L. Schwarz, cité par le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Sarwa",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Masarwa »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/masarwa/e04585",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

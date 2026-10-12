@@ -135,5 +135,140 @@
         "notes": "Revue Matatu, volumes 27-28, 2003 ; travail universitaire indépendant de celui de Drewal, consulté le 10 septembre 2026."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bakweri désigne un peuple des pentes du mont Cameroun, qui se nomme lui-même Vàkpè, et Mòkpè pour une seule personne. Le nom Bakweri apparaît par écrit au XIXe siècle, sous la forme Bakwiri. Nous n'avons trouvé qu'une explication de son origine ; nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Vàkpè",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bri",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent, Mòkpè pour une personne et pour leur langue.",
+        "periodLabel": "Forme proche écrite en 1953 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Vàkpè est celui que les Bakweri se donnent collectivement, et Mòkpè désigne une seule personne ainsi que la langue, selon le dictionnaire d'Edwin Ardener. Nous n'avons pas trouvé de source qui explique son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Mòkpè (Bakweri) – English Dictionary, présentation de l'ouvrage",
+                "author": "Edwin Ardener, édité par Bruce Connell",
+                "year": 1997,
+                "url": "https://www.koeppe.de/titel_print_mokpe-bakweri-english-dictionary",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Rüdiger Köppe Verlag, Archiv afrikanistischer Manuskripte, vol. 3. Lu sur la page de présentation de l'éditeur, pas dans le dictionnaire lui-même. Passages : « The Bakweri refer to themselves collectively as Vàkpè, or Mòkpè in the singular » ; « Their language, Bakweri, Baakpe (Guthrie 1953), or typically simply Mòkpè »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1953,
+              "to": 1953,
+              "label": "1953"
+            },
+            "era": "colonial",
+            "statement": "Le nom Vàkpè apparaît sous une forme proche, « Baakpe », chez le linguiste Guthrie, comme nom de leur langue, selon la présentation du dictionnaire d'Edwin Ardener. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà là avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mòkpè (Bakweri) – English Dictionary, présentation de l'ouvrage",
+                "author": "Edwin Ardener, édité par Bruce Connell",
+                "year": 1997,
+                "url": "https://www.koeppe.de/titel_print_mokpe-bakweri-english-dictionary",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Rüdiger Köppe Verlag, Archiv afrikanistischer Manuskripte, vol. 3. Lu sur la page de présentation de l'éditeur, pas dans le dictionnaire lui-même. Passages : « The Bakweri refer to themselves collectively as Vàkpè, or Mòkpè in the singular » ; « Their language, Bakweri, Baakpe (Guthrie 1953), or typically simply Mòkpè »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bakweri",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom le plus courant, écrit Bakwiri en 1863 ; il voudrait dire « gens de la brousse ».",
+        "periodLabel": "Écrit depuis 1863 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bakweri désigne le peuple qui vit sur les pentes du mont Cameroun, dans le sud-ouest du pays, selon la présentation du dictionnaire d'Edwin Ardener.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Mòkpè (Bakweri) – English Dictionary, présentation de l'ouvrage",
+                "author": "Edwin Ardener, édité par Bruce Connell",
+                "year": 1997,
+                "url": "https://www.koeppe.de/titel_print_mokpe-bakweri-english-dictionary",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Rüdiger Köppe Verlag, Archiv afrikanistischer Manuskripte, vol. 3. Lu sur la page de présentation de l'éditeur, pas dans le dictionnaire lui-même. Passages : « The Bakweri refer to themselves collectively as Vàkpè, or Mòkpè in the singular » ; « Their language, Bakweri, Baakpe (Guthrie 1953), or typically simply Mòkpè »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1861,
+              "to": 1862,
+              "label": "1861-1862, publié en 1863"
+            },
+            "era": "polity",
+            "statement": "Le nom Bakweri apparaît sous une forme proche, « Bakwiri », chez l'explorateur Richard F. Burton, pour le peuple qui vit au sud du mont Cameroun. Une carte marine plus ancienne, qu'il ne date pas, écrivait déjà « Bakwileh ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà là avant elle.",
+            "formAsWritten": "Bakwiri",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Abeokuta and the Camaroons Mountains: an exploration, vol. II",
+                "author": "Richard F. Burton",
+                "year": 1863,
+                "url": "https://archive.org/details/abeokutaandcama01burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 43 et p. 48",
+                "notes": "Londres, Tinsley Brothers, lu sur la numérisation d'Internet Archive. L'auteur, consul britannique à Fernando Po, monte au mont Cameroun en décembre 1861 et janvier 1862. Passage : « the Bakwileh (for Bakwiri) south of the mountain »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1863,
+              "to": 1863,
+              "label": "Proposée en 1863"
+            },
+            "era": "polity",
+            "statement": "Le nom Bakweri viendrait de kwiri, « brousse », dans la langue isubu de leurs voisins de Bimbia : un « M'okwiri » serait un homme de la tribu bakwiri, un « homme de la brousse », selon Richard F. Burton.",
+            "hypothesisGroup": "origine du nom Bakweri",
+            "sources": [
+              {
+                "title": "Abeokuta and the Camaroons Mountains: an exploration, vol. II",
+                "author": "Richard F. Burton",
+                "year": 1863,
+                "url": "https://archive.org/details/abeokutaandcama01burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 40, note",
+                "notes": "Londres, Tinsley Brothers, lu sur la numérisation d'Internet Archive. L'auteur, consul britannique à Fernando Po, monte au mont Cameroun en décembre 1861 et janvier 1862. Passage : « Meaning a man of the Bakwiri tribe or bushmen, from kwiri, a bush. The word is Isubu »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

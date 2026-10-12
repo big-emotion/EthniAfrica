@@ -183,5 +183,213 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ju|'hoansi désigne un peuple de chasseurs-cueilleurs du nord-est de la Namibie et du nord-ouest du Botswana, autour de Nyae Nyae et de Dobe, et c'est le nom qu'il se donne lui-même. Les auteurs européens l'ont longtemps appelé !Kung, ou Kung. On ne sait pas avec certitude depuis quand le nom Ju|'hoansi est employé ; nous présentons plus bas ses traces et ce que veulent dire ses mots.",
+    "names": [
+      {
+        "nameText": "Ju|'hoansi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ktz",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple de Nyae Nyae et de Dobe ; ses mots disent « personne » et « vrai ».",
+        "periodLabel": "Écrit sous une forme proche dès 1984 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1998,
+              "to": 2026,
+              "label": "De 1998 à aujourd'hui"
+            },
+            "era": "modern",
+            "statement": "Le nom Ju|'hoansi est celui sous lequel ce peuple de Nyae Nyae, en Namibie, a obtenu de l'État une autorité traditionnelle reconnue, la Juǀ'hoan Traditional Authority. Son chef, Tsamkxao ǂOma, est nommé en 1998, selon Robert Hitchcock et Melinda Kelly.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Customary land rights, communal land and development: The case of the Juǀ’hoansi and the Nyae Nyae Conservancy",
+                "author": "Robert K. Hitchcock et Melinda C. Kelly",
+                "year": 2026,
+                "url": "https://doi.org/10.64640/j9f12m83",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Namibian Journal of Environment, vol. 12, section C, p. 1-11, paru le 6 février 2026. Lu en texte intégral le 12 octobre 2026 dans le PDF publié par la revue."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens en ju|'hoan"
+            },
+            "statement": "Le nom Ju|'hoansi se compose de mots que traduit la grammaire de Patrick Dickens : jù veut dire « une personne », ǀ'hoàn veut dire « vrai, réel », et -sì marque le pluriel. Les sources que nous avons lues ne disent pas qui a d'abord formé ce nom, ni quand.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Concise Grammar of Juǀ’hoan, with a Juǀ’hoan-English glossary and a subject index",
+                "author": "Patrick J. Dickens, édité par Rainer Vossen et Megan Biesele",
+                "year": 2005,
+                "url": "https://dokumen.pub/a-concise-grammar-of-juhoan-with-a-juhoan-english-glossary-and-a-subject-index-3896451456.html",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "leçon 2, leçon 4 et leçon 5",
+                "notes": "Cologne, Rüdiger Köppe, collection Quellen zur Khoisan-Forschung, n° 17, 2005. Lu le 11 octobre 2026 dans une copie non officielle mise en ligne sur dokumen.pub, sans pagination."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1989,
+              "to": 1992,
+              "label": "1989-1992"
+            },
+            "statement": "Le nom Ju|'hoansi prend son écriture actuelle avec l'orthographe que le linguiste Patrick Dickens met au point entre 1989 et 1992 pour que ses locuteurs puissent l'écrire. Le gouvernement namibien l'adopte ensuite à la place d'une orthographe plus ancienne, selon l'anthropologue Megan Biesele.",
+            "actors": [
+              {
+                "name": "Patrick Dickens",
+                "role": "linguiste, auteur de l'orthographe du ju|'hoan"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Concise Grammar of Juǀ’hoan, with a Juǀ’hoan-English glossary and a subject index",
+                "author": "Patrick J. Dickens, édité par Rainer Vossen et Megan Biesele",
+                "year": 2005,
+                "url": "https://dokumen.pub/a-concise-grammar-of-juhoan-with-a-juhoan-english-glossary-and-a-subject-index-3896451456.html",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "introduction de Megan Biesele",
+                "notes": "Cologne, Rüdiger Köppe, collection Quellen zur Khoisan-Forschung, n° 17, 2005. Lu le 11 octobre 2026 dans une copie non officielle mise en ligne sur dokumen.pub, sans pagination."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ju|'hoansi apparaît sous une forme proche, Ju/Wasi, dans le titre d'une étude de John Marshall et Claire Ritchie publiée au Cap en 1984 : Where Are the Ju/Wasi of Nyae Nyae? C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Ju/Wasi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Customary land rights, communal land and development: The case of the Juǀ’hoansi and the Nyae Nyae Conservancy",
+                "author": "Robert K. Hitchcock et Melinda C. Kelly",
+                "year": 2026,
+                "url": "https://doi.org/10.64640/j9f12m83",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10",
+                "notes": "Namibian Journal of Environment, vol. 12, section C, p. 1-11, paru le 6 février 2026. Lu en texte intégral le 12 octobre 2026 dans le PDF publié par la revue. La bibliographie cite John Marshall et Claire Ritchie, Where Are the Ju/Wasi of Nyae Nyae? Changes in a Bushman Society: 1958–1981, Centre for African Area Studies, université du Cap, 1984, que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "era": "colonial",
+            "statement": "On parle alors de !Khu, « communément appelés Kung », pour ce peuple du nord-est de l'actuelle Namibie, selon l'anthropologue Isaac Schapera.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 33",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive le 11 octobre 2026. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "!Kung",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'ancien nom de ce peuple chez les auteurs européens, qui l'étendaient aussi à ses voisins.",
+        "periodLabel": "Écrit dès 1906",
+        "accounts": [
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "era": "colonial",
+            "statement": "Le nom !Kung désigne alors chez Isaac Schapera tout un ensemble de groupes qui parlent la même langue, de la Namibie actuelle jusqu'au sud de l'Angola, où certains se donnent le même nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 33-34",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive le 11 octobre 2026. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom !Kung figure, écrit Kung, dans le titre d'une étude d'H. Werner parue en 1906 sur les « Heikum- und Kungbuschleute », selon la bibliographie d'Isaac Schapera. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Kung",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 33, note",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive le 11 octobre 2026. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque. La note cite H. Werner, Zeitschrift für Ethnologie, vol. 38, 1906, que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "Proposée en 1930"
+            },
+            "era": "colonial",
+            "statement": "Le nom !Kung voudrait dire simplement « personnes, gens » ; employé seul, il désignerait pour eux les Bushmen, selon Isaac Schapera.",
+            "hypothesisGroup": "origine du nom !Kung",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 33",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive le 11 octobre 2026. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
