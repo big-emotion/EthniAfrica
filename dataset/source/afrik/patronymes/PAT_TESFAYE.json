@@ -16,6 +16,24 @@
           "sourceRefs": ["afrik-candidate-queue"]
         }
       ]
+    },
+    {
+      "spelling": "Tesfay",
+      "attestations": [
+        {
+          "countryId": "ERI",
+          "sourceRefs": ["dafn-tesfay"]
+        }
+      ]
+    },
+    {
+      "spelling": "Tesfai",
+      "attestations": [
+        {
+          "countryId": "ERI",
+          "sourceRefs": ["dafn-tesfai", "munzinger-1859-bogos"]
+        }
+      ]
     }
   ],
   "transmissionMode": "non_hereditary",
@@ -43,6 +61,11 @@
       "countryId": "ETH",
       "status": "attested",
       "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "countryId": "ERI",
+      "status": "attested",
+      "sourceRefs": ["dafn-tesfay", "dafn-tesfai"]
     }
   ],
   "alliances": [],
@@ -65,6 +88,30 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Entrée communautaire consultée le 2 septembre 2026 : elle donne la graphie amharique ተስፋዬ et la glose « my hope ». Elle ne documente ni lignée ni transmission. Les versions anglaise, allemande et italienne de Wikipédia n'ont été contrôlées que comme pistes et ne sont pas citées."
+    },
+    {
+      "sourceKey": "dafn-tesfay",
+      "title": "Dictionary of American Family Names, 2e éd. — Tesfay",
+      "url": "https://www.ancestry.com/last-name-meaning/tesfay?geo-lang=en",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 ; le site affiche aussi une traduction française. La notice dit : nom personnel éthiopien et érythréen, équivalent tigrigna de l'amharique Tesfaye. Les Éthiopiens et les Érythréens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+    },
+    {
+      "sourceKey": "dafn-tesfai",
+      "title": "Dictionary of American Family Names, 2e éd. — Tesfai",
+      "url": "https://www.ancestry.com/last-name-meaning/tesfai?geo-lang=en",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 ; le site affiche aussi une traduction française. La notice dit : nom érythréen, variante du nom tigrigna Tesfay, que l'on trouve presque exclusivement chez les Érythréens. Les Érythréens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+    },
+    {
+      "sourceKey": "munzinger-1859-bogos",
+      "title": "Ueber die Sitten und das Recht der Bogos",
+      "url": "https://archive.org/details/ueberdiesittenu00munzgoog",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Winterthur, J. Wurster & Comp., 1859. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 55 : un certain Muass avait du côté de sa mère, chez les Marea, « mächtige Verwandte, das sogenannte Beit Tesfai ». L'auteur ne dit pas ce que veut dire le nom."
     }
   ],
   "gaps": [
