@@ -133,5 +133,191 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Lagwan désigne la langue du Logone et ceux qui la parlent, dans la région du Logone, entre le Cameroun et le Tchad. On ne sait pas comment ce peuple se nomme lui-même. D'autres noms existent : Logone, Kotoko et Makari. Nous n'avons trouvé de source qui explique l'origine d'aucun de ces noms ; nous présentons plus bas ce que disent les sources de leur histoire.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Lagwan",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "kot",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue du Logone dans les classements actuels ; nous n'avons pas trouvé sa plus ancienne trace.",
+        "periodLabel": "Usage actuel",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage actuel"
+            },
+            "era": "modern",
+            "statement": "Le nom Lagwan désigne la langue du Logone. Le catalogue Glottolog donne aussi les noms Lagwane, Lagouane, Logone et Kotoko-Logone pour la même langue. On ne sait pas depuis quand ce nom est employé : nous n'avons pas trouvé sa plus ancienne trace.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Lagwan (lagw1237)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/lagw1237",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "fiche en ligne",
+                "notes": "Lue en ligne le 12 octobre 2026. Liste les noms alternatifs de la langue ; n'explique pas leur origine."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Logone",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du pays et du fleuve où vivent ces gens, écrit Loggun dès 1823 par l'explorateur Denham.",
+        "periodLabel": "Cité dès 1823 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1852,
+              "to": 1852,
+              "label": "1852"
+            },
+            "era": "polity",
+            "statement": "Le nom Logone, que l'explorateur Heinrich Barth écrit Logón ou Légone, désigne chez lui un pays et ses habitants, qu'il rattache à la grande nation des Masa avec les Kotoko, les Musgu et les Mandara. Il juge les gens du Logone très proches des Musgu, dont ils se seraient séparés assez récemment.",
+            "formAsWritten": "Logón",
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 3",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri31857bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 178 et p. 281",
+                "notes": "Londres, Longman, 1857. Lu sur Internet Archive le 12 octobre 2026. Voyage de 1851-1852. Page 178 : le Logone rattaché aux Masa ; page 281 : « the territory of Logón or Légone »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1823,
+              "to": 1823,
+              "label": "1823"
+            },
+            "era": "polity",
+            "statement": "Le nom Loggun apparaît dans le récit du major Dixon Denham, au Bornou : à Kouka, il cherche à voir un homme originaire de Loggun, revenu de Sennaar. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays et ses habitants existaient bien avant lui.",
+            "formAsWritten": "Loggun",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Narrative of Travels and Discoveries in Northern and Central Africa, in the Years 1822, 1823, and 1824",
+                "author": "Dixon Denham, Hugh Clapperton et Walter Oudney",
+                "year": 1826,
+                "url": "https://archive.org/details/narrativetravel02salagoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 109",
+                "notes": "Deuxième édition, tome I, Londres, John Murray, 1826. Lu sur Internet Archive le 12 octobre 2026. Le passage appartient au récit du séjour de Denham au Bornou en 1823."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kotoko",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom plus large qui réunit les gens du Logone et d'autres groupes ; son origine est inconnue d'après Nachtigal.",
+        "periodLabel": "Cité dès 1852",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Kotoko est tenu pour équivalent de Makari par l'explorateur Gustav Nachtigal, qui écrit que l'origine de ces deux noms est inconnue. Il l'applique aux habitants de la province du Bornou qui porte ce nom et du petit pays vassal du Logone, proches parents des gens des îles du Tchad, des Musgu, des Gamergu et des gens du Mandara.",
+            "aspect": "meaning",
+            "formAsWritten": "Kötöko",
+            "sources": [
+              {
+                "title": "Sahara und Sudan. Ergebnisse sechsjähriger Reisen in Afrika, deuxième partie",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 426",
+                "notes": "Berlin, Weidmann, 1881. Lu sur Internet Archive le 12 octobre 2026. Voyage de 1870 à 1874, publié en 1881. Nachtigal écrit Kötöko et Mākāri."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1852,
+              "to": 1852,
+              "label": "1852"
+            },
+            "era": "polity",
+            "statement": "Le nom Kotoko, que Barth écrit Kótoko, est pour lui un autre nom des Makari : il compte les Kotoko, ou Makari, parmi les peuples de la grande nation des Masa, avec les gens du Logone, les Mandara, les Musgu, les Gamergu et les Batta. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait là bien avant lui.",
+            "formAsWritten": "Kótoko",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 3",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri31857bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 178",
+                "notes": "Londres, Longman, 1857. Lu sur Internet Archive le 12 octobre 2026. Voyage de 1851-1852."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Makari",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un autre nom, tenu pour équivalent de Kotoko par Nachtigal et Barth ; son origine est inconnue d'après Nachtigal.",
+        "periodLabel": "Cité dès 1852",
+        "accounts": [
+          {
+            "period": {
+              "from": 1852,
+              "to": 1852,
+              "label": "1852"
+            },
+            "era": "polity",
+            "statement": "Le nom Makari apparaît chez Heinrich Barth comme un autre nom des Kotoko, dans la phrase qui range les Kotoko, ou Makari, parmi les peuples de la grande nation des Masa. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait là bien avant lui.",
+            "formAsWritten": "Makari",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 3",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri31857bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 178",
+                "notes": "Londres, Longman, 1857. Lu sur Internet Archive le 12 octobre 2026. Voyage de 1851-1852. Barth écrit Makari."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

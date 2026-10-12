@@ -119,5 +119,274 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ghomara désigne un ensemble de neuf tribus du Rif occidental, au Maroc, dont deux seulement parlent encore en partie le berbère. On ne sait pas comment ce peuple se nomme lui-même. Ighmaren est la forme berbère de son nom au pluriel, selon Gabriel Camps et Jean Vignet-Zunz, et les Espagnols et les Portugais écrivent Gomera. Les sources ne s'accordent pas sur l'origine du nom ; nous les présentons plus bas.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Ghomara",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom courant de cette confédération du Rif occidental, cité dès le Xe siècle ; plusieurs origines sont proposées.",
+        "periodLabel": "Cité dès le Xe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1998,
+              "to": 1998,
+              "label": "1998"
+            },
+            "era": "modern",
+            "statement": "Le nom Ghomara désigne aujourd'hui un ensemble de neuf tribus du Rif occidental, dont deux seulement, les Beni Bou Zra et les Beni Mansor, sont restées en partie berbérophones. Cet ensemble garde le nom des Ghomara, qui ont joué un rôle important pendant tout le haut Moyen Âge, selon Gabriel Camps et Jean Vignet-Zunz. Les sources ne s'accordent pas sur l'origine du nom ; elles sont présentées dans les tuiles qui suivent.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ghomâra, Encyclopédie berbère, 20",
+                "author": "G. Camps et J. Vignet-Zunz",
+                "year": 1998,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1923",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3110-3119",
+                "notes": "Gauda – Girrei, Aix-en-Provence, Edisud, 1998, article G44. Lu sur OpenEdition Journals le 12 octobre 2026. Paragraphes 1 et 7."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1998,
+              "to": 1998,
+              "label": "Rapportée en 1998"
+            },
+            "era": "modern",
+            "statement": "Le nom Ghomara viendrait du pluriel berbère ighmaren, qui renverrait à un mode de vie : les Ghomara seraient des chasseurs et des bûcherons qui vivent de la forêt, selon H. Ferhat, cité par Gabriel Camps et Jean Vignet-Zunz.",
+            "hypothesisGroup": "origine du nom Ghomara",
+            "sources": [
+              {
+                "title": "Ghomâra, Encyclopédie berbère, 20",
+                "author": "G. Camps et J. Vignet-Zunz",
+                "year": 1998,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1923",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3110-3119",
+                "notes": "Gauda – Girrei, Aix-en-Provence, Edisud, 1998, article G44. Lu sur OpenEdition Journals le 12 octobre 2026. Paragraphe 1. Hypothèse de H. Ferhat rapportée de seconde main ; nous n'avons pas lu son texte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1998,
+              "to": 1998,
+              "label": "Rapportée en 1998"
+            },
+            "era": "modern",
+            "statement": "Le nom Ghomara viendrait d'un échange de places entre les sons du mot berbère amghar, « chef », « personne qui détient l'autorité », selon M. Mezzine, cité par Gabriel Camps et Jean Vignet-Zunz.",
+            "hypothesisGroup": "origine du nom Ghomara",
+            "sources": [
+              {
+                "title": "Ghomâra, Encyclopédie berbère, 20",
+                "author": "G. Camps et J. Vignet-Zunz",
+                "year": 1998,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1923",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3110-3119",
+                "notes": "Gauda – Girrei, Aix-en-Provence, Edisud, 1998, article G44. Lu sur OpenEdition Journals le 12 octobre 2026. Paragraphe 1. Hypothèse de M. Mezzine rapportée de seconde main ; nous n'avons pas lu son texte. Les auteurs écrivent « métathèse » de amghar."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1300,
+              "to": 1399,
+              "label": "XIVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Ghomara voudrait dire en arabe « masse d'eau ou de gens qui submergent », parce que le pays aurait été « submergé » par les chorfas, descendants du Prophète, selon Ibn Khaldoun, cité par Gabriel Camps et Jean Vignet-Zunz. Les deux auteurs notent que le même Ibn Khaldoun leur attribue ailleurs une ascendance berbère.",
+            "hypothesisGroup": "origine du nom Ghomara",
+            "sources": [
+              {
+                "title": "Ghomâra, Encyclopédie berbère, 20",
+                "author": "G. Camps et J. Vignet-Zunz",
+                "year": 1998,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1923",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3110-3119",
+                "notes": "Gauda – Girrei, Aix-en-Provence, Edisud, 1998, article G44. Lu sur OpenEdition Journals le 12 octobre 2026. Paragraphe 1. Hypothèse d'Ibn Khaldoun rapportée de seconde main ; nous n'avons pas retrouvé le passage dans la traduction du baron de Slane (tome I)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1300,
+              "to": 1399,
+              "label": "XIVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Ghomara serait celui des enfants d'un ancêtre appelé Ghomar, fils de Mestaf, fils de Felil, fils de Masmoud, selon la généalogie qu'Ibn Khaldoun rapporte ; Gabriel Camps et Jean Vignet-Zunz y voient un ancêtre qui aurait donné son nom au groupe.",
+            "hypothesisGroup": "origine du nom Ghomara",
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome I",
+                "author": "Ibn Khaldoun, traduit par William Mac Guckin de Slane",
+                "year": 1852,
+                "url": "https://archive.org/details/ibn-khaldun-histoire-des-berberes-et-des-dynasties-musulmanes-de-l-afrique-septentrionale-v-1",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 170",
+                "notes": "Alger, imprimerie du gouvernement, 1852. Lu sur Internet Archive le 12 octobre 2026. Page 170 : « Ceux-ci sont les enfants de Ghomar, fils de Mestaf, fils de Felil, fils de Masmoud »."
+              },
+              {
+                "title": "Ghomâra, Encyclopédie berbère, 20",
+                "author": "G. Camps et J. Vignet-Zunz",
+                "year": 1998,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1923",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3110-3119",
+                "notes": "Gauda – Girrei, Aix-en-Provence, Edisud, 1998, article G44. Lu sur OpenEdition Journals le 12 octobre 2026. Paragraphe 1 : Ibn Khaldoun fait des Ghomara des descendants de Masmouda et leur ancêtre éponyme est appelé Ghomer."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1068,
+              "to": 1068,
+              "label": "1068"
+            },
+            "era": "polity",
+            "statement": "Le nom Ghomara désigne chez le géographe al-Bakri une tribu berbère dont le pays touche le territoire de Nokour et où un faux prophète nommé Ha-mim a prêché ; il cite aussi l'un de ses membres, Magcen, devenu seigneur de Ceuta après s'être converti à l'islam.",
+            "formAsWritten": "Ghomara",
+            "sources": [
+              {
+                "title": "Description de l'Afrique septentrionale, traduction de William Mac Guckin de Slane, édition revue et corrigée",
+                "author": "Abou-Obeïd el-Bekri (al-Bakrī)",
+                "year": 1913,
+                "url": "https://archive.org/details/fr103andalus05",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 197 et p. 204",
+                "notes": "Alger, Jourdan, 1913. Lu sur Internet Archive le 12 octobre 2026. Le texte arabe d'al-Bakri date de 1068."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 900,
+              "to": 999,
+              "label": "Xe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Ghomara apparaît sous la forme proche Balad Ghumar, le « pays de Ghumar », chez le géographe al-Muqaddasî, qui y voit une partie du Sous proche, selon Gabriel Camps et Jean Vignet-Zunz ; nous n'avons pas lu ce texte. C'est la plus ancienne trace de ce nom que le projet connaît. Les sources ne disent pas s'il s'agit exactement du même peuple. Ibn Khaldoun compte pourtant les Ghomara parmi les plus anciens peuples du Maroc, selon Camps et Vignet-Zunz.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Ghomâra, Encyclopédie berbère, 20",
+                "author": "G. Camps et J. Vignet-Zunz",
+                "year": 1998,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1923",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3110-3119",
+                "notes": "Gauda – Girrei, Aix-en-Provence, Edisud, 1998, article G44. Lu sur OpenEdition Journals le 12 octobre 2026. Paragraphes 1 et 8. Trace rapportée de seconde main : Camps et Vignet-Zunz citent al-Muqaddasî, Description de l'Occident musulman, traduction de Charles Pellat, Alger, 1950, p. 6."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Dans les temps anciens, selon la tradition"
+            },
+            "era": "polity",
+            "statement": "On parle alors des « Gens du Sous », Ahl Sous, pour désigner ceux qui auraient peuplé le pays des Ghomara avant eux, selon une croyance des Ghomara du Rif que rapportent Gabriel Camps et Jean Vignet-Zunz. Le nom de Sous aurait alors couvert tout le Maroc atlantique, de Tanger à Agadir.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Ghomâra, Encyclopédie berbère, 20",
+                "author": "G. Camps et J. Vignet-Zunz",
+                "year": 1998,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1923",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3110-3119",
+                "notes": "Gauda – Girrei, Aix-en-Provence, Edisud, 1998, article G44. Lu sur OpenEdition Journals le 12 octobre 2026. Paragraphes 8 à 10. Croyance rapportée par les auteurs, appuyée par Yaqut (XIIIe siècle) et al-Muqaddasî (Xe siècle) qu'ils citent."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ighmaren",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme berbère du nom, au pluriel, selon Gabriel Camps et Jean Vignet-Zunz.",
+        "periodLabel": "Rapporté en 1998",
+        "accounts": [
+          {
+            "period": {
+              "from": 1998,
+              "to": 1998,
+              "label": "Rapporté en 1998"
+            },
+            "era": "modern",
+            "statement": "Le nom Ighmaren est la forme berbère, au pluriel, du nom Ghomara, selon Gabriel Camps et Jean Vignet-Zunz, qui le rapportent à propos d'une hypothèse de H. Ferhat. Les sources que nous avons lues ne disent pas si les Ghomara l'emploient pour se nommer eux-mêmes ni depuis quand.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Ghomâra, Encyclopédie berbère, 20",
+                "author": "G. Camps et J. Vignet-Zunz",
+                "year": 1998,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1923",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3110-3119",
+                "notes": "Gauda – Girrei, Aix-en-Provence, Edisud, 1998, article G44. Lu sur OpenEdition Journals le 12 octobre 2026. Paragraphe 1."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gomera",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Espagnols et les Portugais, selon Gabriel Camps et Jean Vignet-Zunz",
+        "shortLine": "La forme que les Espagnols et les Portugais emploient pour ce nom depuis le XVe siècle.",
+        "periodLabel": "Employé depuis le XVe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1400,
+              "to": 1499,
+              "label": "XVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Gomera est, chez les Espagnols et les Portugais, la seule forme en usage depuis le XVe siècle, selon Gabriel Camps et Jean Vignet-Zunz ; il se maintient dans le nom du Peñón de Vélez de la Gomera, l'un des derniers presidios, des places fortes espagnoles, de la côte du Rif. C'est la plus ancienne trace de ce nom que le projet connaît ; elle est rapportée de seconde main. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Ghomâra, Encyclopédie berbère, 20",
+                "author": "G. Camps et J. Vignet-Zunz",
+                "year": 1998,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1923",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3110-3119",
+                "notes": "Gauda – Girrei, Aix-en-Provence, Edisud, 1998, article G44. Lu sur OpenEdition Journals le 12 octobre 2026. Paragraphe 2. Les auteurs ajoutent que le rapprochement avec l'île canarienne de Gomera n'est plus accepté."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
