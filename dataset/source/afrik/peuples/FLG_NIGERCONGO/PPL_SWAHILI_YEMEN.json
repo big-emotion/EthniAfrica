@@ -126,5 +126,61 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Muwalladeen désigne au Yémen des personnes dont la famille a des liens anciens hors du pays, souvent avec l'Afrique de l'Est ; il est souvent employé pour les rabaisser. La fiche cite aussi les noms Akhdam et Muhamasheen, qui désignent au Yémen une autre communauté ; leur histoire n'est pas racontée ici.",
+    "names": [
+      {
+        "nameText": "Muwalladeen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "Un nom arabe pour les Yéménites d'ascendance mêlée, souvent employé pour les rabaisser.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "2022"
+            },
+            "statement": "Le nom Muwalladeen désigne les Yéménites dont la famille a des liens anciens hors du Yémen, parfois d'origine mêlée, avec un père ou un grand-père yéménite et une mère ou une grand-mère étrangère. Le nom est souvent employé de façon méprisante, mais les plus jeunes l'acceptent plus facilement que leurs aînés, selon Marina de Regt et Aisha Aljaedy.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Muwalladeen in Yemen: Racialization, Stigmatization and Discrimination in Times of War",
+                "author": "Marina de Regt et Aisha Aljaedy",
+                "year": 2022,
+                "url": "https://sanaacenter.org/publications/main-publications/18105",
+                "tier": "referenced",
+                "source_kind": "ngo",
+                "notes": "Sana'a Center for Strategic Studies, 18 juillet 2022, lu en ligne. Passages : « The term is often used in a derogatory way, and Muwalladeen have been the target of discriminatory practices for decades » ; les plus jeunes « embrace their Muwallad status more easily than older people »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "2014"
+            },
+            "statement": "Le nom Muwalladeen veut dire, selon un dictionnaire arabe, « un Arabe qui n'est pas purement arabe ». Il sert surtout pour les enfants d'un parent africain, selon Atiaf Alwazir. Le militant Hussein Musleh, qu'elle cite, y voit une manière de rappeler à la personne qu'elle n'est pas un Yéménite « pur ». On ne sait pas avec certitude depuis quand ce nom est employé ainsi.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Yemen's 'Muwaladeen': The struggle for equal citizenship",
+                "author": "Atiaf Alwazir",
+                "year": 2014,
+                "url": "https://www.aljazeera.com/opinions/2014/4/5/yemens-muwaladeen-the-struggle-for-equal-citizenship",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Al Jazeera English, tribune du 5 avril 2014, lue en ligne."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
