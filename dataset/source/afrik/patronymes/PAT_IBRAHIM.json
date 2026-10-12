@@ -74,6 +74,46 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Entrée communautaire consultée le 2 septembre 2026. Elle classe Ibrahim comme nom de famille arabe, ourdou et haoussa issu du nom personnel Ibrahim, avec la graphie إبراهيم. Elle ne documente pas une lignée africaine particulière."
+    },
+    {
+      "sourceKey": "uk-hm-passport-2026-sudan-names",
+      "title": "Sudan: Knowledge Base profile",
+      "url": "https://www.gov.uk/government/publications/sudan-knowledge-base-profile/sudan-knowledge-base-profile",
+      "tier": "official",
+      "source_kind": "government",
+      "notes": "Version 4.0 publiée le 16 mars 2026, mise à jour le 23 mars 2026 ; relue le 12 octobre 2026. « Names in Sudan consist of 4 names » (le prénom, le nom du père, celui du grand-père, celui de l'arrière-grand-père) ; « Surnames do not exist in Sudan; it is common practice to take the male grandparent's name in place of a surname. »"
+    },
+    {
+      "sourceKey": "verney-2019-sudan-names",
+      "title": "Tongue-tied: How interpreting errors hurt Sudanese asylum cases",
+      "url": "https://sssuk.org/sites/default/files/sudanStudies/SS59.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Sudan Studies, no 59, janvier 2019. Relu le 12 octobre 2026 dans une copie archivée du numéro (Internet Archive), le lien d'origine ne répondant plus. L'auteur écrit que, dans le système soudanais, fils et filles prennent aussi les noms de leur père et de leur grand-père paternel, ce qui déroute souvent les fonctionnaires européens."
+    },
+    {
+      "sourceKey": "quran-14-35-hamidullah",
+      "title": "Le Coran, sourate 14, verset 35 — traduction de Muhammad Hamidullah",
+      "url": "https://quran.com/fr/14:35?translations=31",
+      "tier": "referenced",
+      "source_kind": "repository",
+      "notes": "Traduction française de Muhammad Hamidullah, lue sur le site Quran.com le 12 octobre 2026. La sourate 14 s'intitule Ibrahim ; au verset 35 : « Et (rappelle-toi) quand Abraham dit : Seigneur ! Fais de cette cité un lieu sûr… » (le texte arabe affiche ابراهيم)."
+    },
+    {
+      "sourceKey": "aljazeera-2011-khalil-ibrahim",
+      "title": "Profile: Khalil Ibrahim",
+      "url": "https://www.aljazeera.com/news/2011/12/25/profile-khalil-ibrahim",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Article du 25 décembre 2011, lu le 12 octobre 2026 : il présente Khalil Ibrahim comme le chef du groupe rebelle darfouri JEM. Il n'indique pas de qui Ibrahim est le nom dans cette suite."
+    },
+    {
+      "sourceKey": "newarab-2025-sonallah-ibrahim",
+      "title": "Renowned Egyptian novelist Sonallah Ibrahim dies at 88",
+      "url": "https://www.newarab.com/news/renowned-egyptian-novelist-sonallah-ibrahim-dies-88",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Article du 13 août 2025, lu le 12 octobre 2026 : « Egyptian novelist Sonallah Ibrahim », né au Caire en 1937. Il n'indique pas de qui Ibrahim est le nom dans cette suite."
     }
   ],
   "gaps": [
@@ -109,5 +149,115 @@
       "fieldPath": "countries",
       "reason": "Les sources propres à « Ibrahim » n'ont pas confirmé les pays où il est porté ; les recherches par pays n'ont pas livré de registre officiel directement exploitable pour cette fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ibrahim est un nom personnel arabe, celui d'Abraham dans le Coran. Au Soudan, où il n'existe pas de nom de famille, il entre dans la chaîne des noms où chacun reprend le nom de son père et de son grand-père ; on le lit aussi en dernière position de noms complets au Soudan et en Égypte. Les sources lues ne disent pas quand il est devenu un nom de famille.",
+    "names": [
+      {
+        "nameText": "Ibrahim",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "Un nom personnel arabe, celui d'Abraham dans le Coran, porté aussi comme nom du père.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "aspect": "meaning",
+            "statement": "Le nom Ibrahim est un nom personnel arabe : c'est celui d'Abraham dans le Coran, dont la sourate 14 porte le nom. Les sources lues ne disent pas quand il est devenu un nom de famille.",
+            "sources": [
+              {
+                "title": "Le Coran, sourate 14, verset 35 — traduction de Muhammad Hamidullah",
+                "author": "Muhammad Hamidullah (traduction)",
+                "year": null,
+                "url": "https://quran.com/fr/14:35?translations=31",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "sourate 14, verset 35",
+                "notes": "Traduction française de Muhammad Hamidullah, lue sur le site Quran.com le 12 octobre 2026. La sourate 14 s'intitule Ibrahim ; au verset 35 : « Et (rappelle-toi) quand Abraham dit : Seigneur ! Fais de cette cité un lieu sûr… » (le texte arabe affiche ابراهيم)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom Ibrahim entre au Soudan dans le système commun à tous les noms personnels, où chacun reprend les noms de son père et de son grand-père. Le gouvernement britannique note qu'il n'existe pas de nom de famille au Soudan et qu'on prend souvent le nom du grand-père à la place.",
+            "sources": [
+              {
+                "title": "Sudan: Knowledge Base profile",
+                "author": "Gouvernement du Royaume-Uni (GOV.UK)",
+                "year": 2026,
+                "url": "https://www.gov.uk/government/publications/sudan-knowledge-base-profile/sudan-knowledge-base-profile",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section « Sudan: names »",
+                "notes": "Version 4.0 publiée le 16 mars 2026, mise à jour le 23 mars 2026 ; relue le 12 octobre 2026. « Names in Sudan consist of 4 names » (le prénom, le nom du père, celui du grand-père, celui de l'arrière-grand-père) ; « Surnames do not exist in Sudan; it is common practice to take the male grandparent's name in place of a surname. »"
+              },
+              {
+                "title": "Tongue-tied: How interpreting errors hurt Sudanese asylum cases",
+                "author": "Peter Verney",
+                "year": 2019,
+                "url": "https://sssuk.org/sites/default/files/sudanStudies/SS59.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 68",
+                "notes": "Sudan Studies, no 59, janvier 2019. Relu le 12 octobre 2026 dans une copie archivée du numéro (Internet Archive), le lien d'origine ne répondant plus. L'auteur écrit que, dans le système soudanais, fils et filles prennent aussi les noms de leur père et de leur grand-père paternel, ce qui déroute souvent les fonctionnaires européens."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "2011"
+            },
+            "era": "modern",
+            "statement": "Le nom Ibrahim est le dernier élément du nom de Khalil Ibrahim, chef d'un mouvement rebelle du Darfour dont Al Jazeera annonce la mort en décembre 2011. La page ne dit pas de qui Ibrahim est le nom dans cette suite.",
+            "sources": [
+              {
+                "title": "Profile: Khalil Ibrahim",
+                "author": "Al Jazeera",
+                "year": 2011,
+                "url": "https://www.aljazeera.com/news/2011/12/25/profile-khalil-ibrahim",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article du 25 décembre 2011, lu le 12 octobre 2026 : il présente Khalil Ibrahim comme le chef du groupe rebelle darfouri JEM. Il n'indique pas de qui Ibrahim est le nom dans cette suite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Ibrahim est le dernier élément du nom de Sonallah Ibrahim, romancier égyptien né au Caire en 1937, dont The New Arab annonce la mort en août 2025. L'article ne dit pas de qui Ibrahim est le nom dans cette suite.",
+            "sources": [
+              {
+                "title": "Renowned Egyptian novelist Sonallah Ibrahim dies at 88",
+                "author": "The New Arab",
+                "year": 2025,
+                "url": "https://www.newarab.com/news/renowned-egyptian-novelist-sonallah-ibrahim-dies-88",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article du 13 août 2025, lu le 12 octobre 2026 : « Egyptian novelist Sonallah Ibrahim », né au Caire en 1937. Il n'indique pas de qui Ibrahim est le nom dans cette suite."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
