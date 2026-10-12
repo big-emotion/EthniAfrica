@@ -508,12 +508,13 @@
     "kingdoms": [
       {
         "name": "Royaume de Maravi",
-        "period": "XVIe siècle - XVIIe siècle",
+        "period": "XVIe siècle - XVIIIe siècle",
         "entryType": "polity",
         "timeRange": {
           "startYear": 1501,
-          "endYear": 1700,
-          "precision": "century"
+          "endYear": 1800,
+          "precision": "approximate",
+          "datingNote": "Selon Kings M. Phiri, Owen J. M. Kalinga et Hoyce H. K. Bhila (HGA V), l'empire maravi se désintègre au XVIIIe siècle ; la fiche l'arrêtait au XVIIe siècle. La date de formation n'est pas établie : cette fiche retient le XVIe siècle, la fiche du peuple chewa le XVe."
         },
         "dominantPeoples": ["Chewa", "autres peuples bantous"],
         "politicalCenters": ["Centres autour du lac Malawi"],
@@ -798,6 +799,13 @@
         "tier": "official",
         "source_kind": "intergovernmental",
         "notes": "Le recensement a demandé à chaque personne son groupe (« tribe »). Parts calculées sur 17 506 022 personnes et arrondies à une décimale : Chewa 34,4 %, Lomwe 18,9 %, Yao 13,3 %, Ngoni 10,4 %, Tumbuka 9,2 %, Sena 3,8 %, Nyanja 1,9 % (la ligne « Nyanja » du recensement, distincte de la ligne Mang'anja), Tonga 1,8 %. « Autres » (6,3 %) est le complément des parts arrondies ; le reste exact du recensement est 6,4 %. Les Mang'anja (3,2 %), les Nkhonde (1,0 %), les Lambya, les Sukwa et les autres groupes restent dans « Autres ». Copie du rapport hébergée par le bureau de l'UNFPA au Malawi, lue le 6 octobre 2026."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, V, ch. 21 : La Zambézie du Nord : la région du lac Malawi",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par B. A. Ogot, chapitre de Kings M. Phiri, Owen J. M. Kalinga et Hoyce H. K. Bhila (1999), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 696. « Au XVIIIe siècle, l'Empire maravi se désintégra. »"
       }
     ],
     "demographics": {
