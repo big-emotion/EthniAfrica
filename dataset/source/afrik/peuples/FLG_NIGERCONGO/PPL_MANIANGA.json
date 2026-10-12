@@ -108,7 +108,7 @@
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Manianga désigne un groupe kongo de la région de Luozi, sur la rive nord du fleuve Congo, dans la province du Kongo-Central en RD Congo, qui se nomme dans sa langue BaManianga. On les appelle aussi Basundi. Le nom Manianga est d'abord écrit pour un grand marché de la région. Les sources ne s'accordent pas sur la façon dont il est devenu un nom de peuple ; nous les présentons plus bas.",
+    "summary": "Le nom Manianga désigne un groupe kongo de la région de Luozi, sur la rive nord du fleuve Congo, dans la province du Kongo-Central en RD Congo, qui se nomme dans sa langue BaManianga. On les appelle aussi Basundi, mais aucune source que nous avons lue ne dit qu'ils se donnent eux-mêmes ce nom. Le nom Manianga est d'abord écrit pour un grand marché de la région. Les sources ne s'accordent pas sur la façon dont il est devenu un nom de peuple ; nous les présentons plus bas.",
     "names": [
       {
         "nameText": "BaManianga",
@@ -245,12 +245,34 @@
       {
         "nameText": "Basundi",
         "nameStatus": "current",
-        "selfGiven": true,
+        "selfGiven": false,
         "languageOfOrigin": null,
         "namedBy": null,
         "shortLine": "Un autre nom de ce groupe, écrit par Stanley en 1877 ; ba- marque le pluriel des noms de personnes.",
         "periodLabel": "Écrit dès 1877",
         "accounts": [
+          {
+            "period": {
+              "from": 1948,
+              "to": 1948,
+              "label": "1948"
+            },
+            "era": "colonial",
+            "statement": "Le nom Basundi englobe les Manianga chez le linguiste G. Van Bulck, qui les range parmi les « Basuundi orientaux ou Ba-Manyaanga », parlant un dialecte oriental du kisundi. Il note aussi que les Bakongo emploient souvent le nom BaSuundi comme une injure, au sens de « sauvage ». Il ne dit pas que les Manianga se donnent ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les recherches linguistiques au Congo belge",
+                "author": "G. Van Bulck",
+                "year": 1948,
+                "url": "http://www.kaowarsom.be/documents/MEMOIRES_VERHANDELINGEN/Sciences_morales_politique/Hum.Sc.(IRCB)_T.XVI,_VAN%20BULCK%20R.%20P.%20G._Les%20recherches%20linguistiques%20au%20Congo%20Belge_1948.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 332, 376",
+                "notes": "Bruxelles, Institut royal colonial belge, Mémoires de la section des sciences morales et politiques, t. XVI, 1948. Lu le 12 octobre 2026 dans le PDF de l'Académie royale des sciences d'outre-mer. Page 332 : « Les BaManyanga = BaManyangasi […] parlent un dialecte oriental de KiSuundi », et « BaSuundi » est « souvent usité comme péjoratif » par les BaKoongo. Page 376 : « Dialecte des Basuundi orientaux ou Ba-Manyaanga ». Le dictionnaire kikongo-français de K. E. Laman (1936), lu aussi, fait des Basundi une tribu du nord du fleuve et de Manyanga un village et un marché, sans dire comment les Manianga se nomment."
+              }
+            ]
+          },
           {
             "period": {
               "from": 1877,

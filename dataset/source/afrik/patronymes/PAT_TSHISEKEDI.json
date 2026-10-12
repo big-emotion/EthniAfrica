@@ -6,7 +6,7 @@
   },
   "id": "PAT_TSHISEKEDI",
   "nameMain": "Tshisekedi",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Tshisekedi",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -60,7 +60,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "la recherche web et bibliographique combinant « Tshisekedi », « Luba », « Tshiluba », « surname », « clan », « etymology », « transmission » et « obituary », ainsi que la consultation directe de « Tshisekedi Surname Origin, Meaning & Last Name History » n'ont pas établi que la catégorie provisoire « clan_name » décrive Tshisekedi lui-même ; elle reste un classement de travail et non une origine démontrée."
+      "reason": "Les sources lues donnent Tshisekedi comme le nom d'un village des Lulua en 1937, puis comme le nom d'une personne en 1943 ; aucune n'en fait un nom de clan. Le modèle n'a pas de case pour un nom de personne devenu nom de famille : la fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",

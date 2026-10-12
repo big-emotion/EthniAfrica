@@ -4055,10 +4055,22 @@ export function checkNameHistoryBlocks(datasetRoot: string): ValidationResult {
       // FR53-dup): a people's history names the name it gives itself, and
       // no block tells one name twice — the readers key names by their text.
       const names = parsed.data.names;
-      if (directory === "peuples" && !names.some((name) => name.selfGiven)) {
+      const selfNameUnknown = parsed.data.selfNameUnknown === true;
+      if (
+        directory === "peuples" &&
+        !selfNameUnknown &&
+        !names.some((name) => name.selfGiven)
+      ) {
         errors.push(
           `REQ-196: ${file}: nameHistory names no name the people gives itself (selfGiven)`
         );
+      }
+      if (selfNameUnknown) {
+        for (const { nameText } of names.filter((name) => name.selfGiven)) {
+          errors.push(
+            `REQ-196: ${file}: nameHistory declares selfNameUnknown, but "${nameText}" is self-given`
+          );
+        }
       }
       const seen = new Set<string>();
       for (const { nameText } of names) {

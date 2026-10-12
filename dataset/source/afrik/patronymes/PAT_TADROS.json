@@ -6,7 +6,7 @@
   },
   "id": "PAT_TADROS",
   "nameMain": "Tadros",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Tadros",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -70,11 +70,15 @@
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+      "reason": "Les sources lues disent que Tadros est un nom personnel, pas comment il se transmet comme nom de famille : le mode reste « other »."
     },
     {
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Tadros à un peuple en Égypte. Nous n'avons pas encore consulté de source consacrée à ce nom. Un lien avec les Coptes d'Égypte reste à étudier."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Le Dictionary of American Family Names fait de Tadros un nom personnel ; aucune source consultée n'en fait un nom de clan. Le modèle n'a pas de case pour un nom personnel devenu nom de famille : la fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     }
   ],
   "nameHistory": {

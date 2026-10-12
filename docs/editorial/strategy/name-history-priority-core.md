@@ -205,6 +205,58 @@ review:
   - the self-names Ekid (`PPL_EKET`) and Ngbanya (`PPL_GONJA`) are on
     [the oral verification list](self-names-to-verify-orally.md).
 
+- **Waves 10 and 11 of the long tail — ruled 2026-10-12.** Validator and
+  self-names:
+  - a people whose self-name no source gives: the block carries
+    `selfNameUnknown: true` and its summary says plainly « On ne sait pas
+    comment ce peuple se nomme lui-même ». The validator then accepts a
+    people with no self-given name, and refuses `selfNameUnknown` beside a
+    self-given name. Applied to `PPL_SHUA` (Shwakhwe, a name of the
+    language, is no longer marked self-given) and to `PPL_HOA`, whose
+    history is now written (ǂHoan, ǂHua, ǂ'Amkoe);
+  - Basundi on `PPL_MANIANGA` is no longer self-given: Laman's dictionary
+    (1936) and Van Bulck (1948), both read, do not say the Manianga call
+    themselves so; Van Bulck counts them among the eastern Basundi.
+    BaManianga stays self-given, on Mfuka's usage (1981);
+  - Bakwé stays self-given on Delafosse (`PPL_BAKWE`). Srigbe,
+    « devins-guérisseurs », is added as a self-name on Schwartz (1993,
+    p. 88), the first scholarly source found for it.
+
+  Classification (pre-wave fields), following `PAT_NYOBE` and
+  `PAT_RAMGOOLAM`:
+  - personal and birth names filed as clan names are now
+    `non_hereditary_patronymic`, unit `individual`, each with a `nameSystem`
+    gap saying the class is the closest one: `PAT_ZINSOU`, `PAT_TADROS`,
+    `PAT_WANI`, `PAT_TSHISEKEDI`. `PAT_YAO` and `PAT_YOHANNES` already were;
+  - `PAT_VIEIRA`, a family name of Portuguese origin, keeps `clan_name`, the
+    closest class the model offers for a hereditary family name, with the
+    lineage as its unit and a `nameSystem` gap saying it is not a Pepel clan;
+  - `PAT_YALINGA` and `PAT_YAKITE` stay as they are: no source shows either
+    as a family name. Review both for removal later.
+
+  Sources:
+  - a hypothesis that rests only on our own reading of a dictionary is
+    dropped when a sourced reading exists (Leslau, on `PAT_WOLDE` and
+    `PAT_TESHOME`, where the _Dictionary of American Family Names_ gives the
+    sense), and kept, labelled as our reading, when it is the only origin
+    (`PAT_WABERI`);
+  - Yohannes gets a birth in Dillmann's _Lexicon linguae aethiopicae_
+    (1865, col. 1421), written as a close form in Ge'ez script;
+  - Vieira's account that rested on our own Papel fiche now cites Minority
+    Rights Group (2007) for its use among the Pepel, and the _Dictionary of
+    American Family Names_ adds a place-name origin;
+  - Soumanou: the Benin ministry list (2024) no longer opens at its address,
+    and it lists private applicants; the Islam West Africa Collection record
+    replaces it;
+  - Roscoe 1911 is cited at one locator, the corpus form, also on
+    `PAT_MUKASA` (pp. 70 and 291 checked on that scan).
+
+  Accepted as they are: Bajuni's birth in 1678, known second-hand through
+  Nurse; BaManianga as self-given; a village as the birth of Tshibangu; the
+  Vilakazi accounts of 1947 not restored until the Pretoria manuscript is
+  read; Noirot's two editions kept apart (`PAT_SALIFOU`, `PAT_SOUMARE`);
+  births read in a catalogue title, as for Kahn.
+
 - **What may be a birth — ruled 2026-10-10.** A close form may be a birth
   when the tile says so (« a une forme proche », Coulibaly and Koorabarri). A
   press article (Soudan du Sud, 2011), a form a chronicler gives as the

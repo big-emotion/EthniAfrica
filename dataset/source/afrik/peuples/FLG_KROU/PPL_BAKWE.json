@@ -135,7 +135,7 @@
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Bakwé désigne un peuple de langue krou du sud-ouest de la Côte d'Ivoire, entre Soubré, Sassandra et San-Pédro. C'était d'abord le nom de sa tribu principale, selon Maurice Delafosse ; nous n'avons pas lu de source qui dise si ce peuple se donne aussi un autre nom. Un autre nom, Gbe, lui a été rattaché par des linguistes, mais ce rapprochement est discuté. On ne sait pas avec certitude d'où vient le nom Bakwé ; nous présentons plus bas ce que disent les sources.",
+    "summary": "Le nom Bakwé désigne un peuple de langue krou du sud-ouest de la Côte d'Ivoire, entre Soubré, Sassandra et San-Pédro. C'était d'abord le nom de sa tribu principale, selon Maurice Delafosse ; ce peuple se désigne aussi lui-même comme Srigbe, selon le géographe Alfred Schwartz. Un autre nom, Gbe, lui a été rattaché par des linguistes, mais ce rapprochement est discuté. On ne sait pas avec certitude d'où vient le nom Bakwé ; nous présentons plus bas ce que disent les sources.",
     "names": [
       {
         "nameText": "Bakwé",
@@ -189,6 +189,39 @@
                 "source_kind": "academic",
                 "page": "p. 68",
                 "notes": "Paris, Ernest Leroux, 1904. Lu sur sa numérisation par la bibliothèque de l'université de Toronto."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Srigbe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom qu'ils se donnent, « devins-guérisseurs », selon Alfred Schwartz.",
+        "periodLabel": "Écrit en 1993",
+        "accounts": [
+          {
+            "period": {
+              "from": 1993,
+              "to": 1993,
+              "label": "1993"
+            },
+            "era": "modern",
+            "statement": "Le nom Srigbe est celui par lequel les Bakwé se désignent eux-mêmes, selon le géographe Alfred Schwartz. Il voudrait dire « devins-guérisseurs », parce qu'ils savent préparer des remèdes contre toutes sortes de maux. C'est la seule source que nous avons lue qui le donne.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Sous-peuplement et développement dans le sud-ouest de la Côte d'Ivoire",
+                "author": "Alfred Schwartz",
+                "year": 1993,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_2/etudes_theses/37792.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 88",
+                "notes": "Paris, ORSTOM, 1993. Lu sur la base Horizon de l'IRD le 12 octobre 2026. Page 88 : les Bakwé, « se désignant eux-mêmes par le terme de srigbe, \"devins-guérisseurs\", par allusion à leur dextérité à fabriquer des médecines \"tous azimuts\" »."
               }
             ]
           }
