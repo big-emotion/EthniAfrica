@@ -92,5 +92,199 @@
       "fieldPath": "homonyms",
       "reason": "La recherche de Baldé et Balde dans le mémoire de Sadjo n’a pas distingué de lignées homonymes ; l’absence d’accent est conservée comme variante graphique, non comme autre origine."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Baldé est un nom de clan des Fulɓe, ou Peuls, porté en Guinée-Bissau comme en Guinée, où des familles Baldé figurent parmi les familles nobles du Gabú. On l'écrit aussi Balde, et Slate le dit écrit Bah. Les sources consultées n'expliquent pas son origine ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "Baldé",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan des Fulɓe, écrit Baldé dès 1907 ; son origine n'est pas expliquée.",
+        "periodLabel": "Écrit depuis 1907",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Rapporté en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Baldé est celui des familles du clan appelé ururó, l'un des quatre clans principaux des Fulas de Guinée-Bissau, avec les Djal-Djaló, les Daêdjô et les Péêdjô, selon Tcherno Djaló, cité par Ibu Sadjo. Les sources lues n'expliquent pas d'où vient le nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Fulas e Mandingas na luta pelo poder e conquista do Império de Kaabu: causas e consequências (século XVI-XIX)",
+                "author": "Ibu Sadjo",
+                "year": 2019,
+                "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/3467/1/ibu%20djalo_tcc.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 20",
+                "notes": "Mémoire de bacharelado, UNILAB, 2019, lu en texte intégral le 12 octobre 2026. À la p. 20, le mémoire cite Tcherno Djaló, O Mestiço e o Poder (Lisbonne, Nova Veja, 2013, p. 72) : « os do clã Djal-Djaló, usam o nome Diallo, Djaló ou Jaló, os do clã ururó, o nome de Baldé, os do clã Daêdjô, o nome de Bari e os do clã Péêdjô, o nome de sòh »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Rapporté en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Baldé est, avec Embaló, celui des familles de régulos, les chefs politiques des Fulas de Guinée-Bissau, rangées parmi les familles nobles, selon Tcherno Djaló, cité par Ibu Sadjo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Fulas e Mandingas na luta pelo poder e conquista do Império de Kaabu: causas e consequências (século XVI-XIX)",
+                "author": "Ibu Sadjo",
+                "year": 2019,
+                "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/3467/1/ibu%20djalo_tcc.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21",
+                "notes": "Mémoire de bacharelado, UNILAB, 2019, lu en texte intégral le 12 octobre 2026. À la p. 21, le mémoire cite le même ouvrage de Tcherno Djaló : en haut de la société fula de Guinée-Bissau se trouvent « os Régulos com os apelidos Embalo e Baldé », et « Baldé e Embaló são nobres »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "Rapporté en 2011"
+            },
+            "era": "modern",
+            "statement": "Le nom Baldé est l'un des quatre noms de famille que portent presque tous les Fulɓe de Guinée, avec Diallo, Barry et Sow ; l'article précise qu'on l'écrit aussi Bah, selon Maura Kelly.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Does Dominique Strauss-Kahn's accuser, Nafissatou Diallo, have the most common surname in Guinea?",
+                "author": "Maura Kelly",
+                "year": 2011,
+                "url": "https://slate.com/news-and-politics/2011/07/does-dominique-strauss-kahn-s-accuser-nafissatou-diallo-have-the-most-common-surname-in-guinea.html",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Slate, 27 juillet 2011, lu le 13 octobre 2026. Presque tous les Fulbe de Guinée portent l'un de quatre noms de famille : « Diallo, also spelled Jalloh ; Barry ; Balde, also spelled Bah ; and Sow »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1933,
+              "to": 1933,
+              "label": "1933"
+            },
+            "era": "colonial",
+            "statement": "Le nom Balde est porté en 1933 par Dembel Balde de Sama, l'un des régulos du Gabú, que l'administrateur de la circonscription nomme dans une lettre au directeur des Services et Négociations indigènes, selon Eduardo Costa Dias.",
+            "formAsWritten": "Balde",
+            "actors": [
+              {
+                "name": "Dembel Balde de Sama",
+                "role": "régulo de Sama, nommé dans la lettre"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Regulado do Gabú, 1900-1930: a difícil compatibilização entre legitimidades tradicionais e a reorganização do espaço colonial",
+                "author": "Eduardo Costa Dias",
+                "year": 2006,
+                "url": "https://ojs.letras.up.pt/index.php/AfricanaStudia/article/download/7254/6643/23885",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 122",
+                "notes": "Africana Studia, n° 9, 2006, p. 99-125, Centre d'études africaines de l'Université de Porto, lu en texte intégral le 13 octobre 2026. Page 122 : lettre de 1933 de l'administrateur du Gabú, Francisco Artur Mendes, qui demande comment punir deux régulos, « Dembel Balde de Sama » et « Nadhu Embalo de Paxana »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Baldé correspond au Fouta-Djalon au nom de lignée Ourouro, dont l'animal emblème serait la chèvre, selon André Arcin, qui prévient qu'il ne garantit pas l'exactitude de ces renseignements.",
+            "sources": [
+              {
+                "title": "La Guinée française",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 289-290",
+                "notes": "Paris, Challamel, 1907. Administrateur colonial. Lu sur le texte numérisé d'archive.org le 12 octobre 2026 ; cité pour les formes et les classements qu'il rapporte, non pour ses théories sur les races. Page 289 : « Ourouro — Ba ou Baldé » parmi les équivalents au Fouta-Dialo. Page 290 : parmi les animaux emblèmes (n'téné) du Fouta-Dialo, « Ourouro : la chèvre » ; Arcin ajoute qu'il ne veut pas garantir l'exactitude de ces renseignements."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Baldé apparaît par écrit chez André Arcin, qui compte « les Ba ou Baldé » parmi les quatre tribus peules de départ, avec les Dialo, les So et les N'Daédio. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand des familles le portent.",
+            "formAsWritten": "Baldé",
+            "birth": true,
+            "sources": [
+              {
+                "title": "La Guinée française",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 289",
+                "notes": "Paris, Challamel, 1907. Administrateur colonial. Lu sur le texte numérisé d'archive.org le 12 octobre 2026 ; cité pour les formes et les classements qu'il rapporte, non pour ses théories sur les races. Page 289 : « Les Ba ou Baldé, les Dialo, les So, les N'Daédio », donnés comme les quatre tribus peules de départ, puis « Ourouro — Ba ou Baldé » parmi les équivalents au Fouta-Dialo."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Balde",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Écrit depuis 1933",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1933,
+              "to": 1933,
+              "label": "1933"
+            },
+            "era": "colonial",
+            "statement": "Le nom Balde est la graphie sans accent de Baldé, celle de la lettre de l'administrateur du Gabú en 1933 et de l'article de Slate en 2011.",
+            "sources": [
+              {
+                "title": "Regulado do Gabú, 1900-1930: a difícil compatibilização entre legitimidades tradicionais e a reorganização do espaço colonial",
+                "author": "Eduardo Costa Dias",
+                "year": 2006,
+                "url": "https://ojs.letras.up.pt/index.php/AfricanaStudia/article/download/7254/6643/23885",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 122",
+                "notes": "Africana Studia, n° 9, 2006, p. 99-125, Centre d'études africaines de l'Université de Porto, lu en texte intégral le 13 octobre 2026. Page 122 : « Dembel Balde de Sama », sans accent."
+              },
+              {
+                "title": "Does Dominique Strauss-Kahn's accuser, Nafissatou Diallo, have the most common surname in Guinea?",
+                "author": "Maura Kelly",
+                "year": 2011,
+                "url": "https://slate.com/news-and-politics/2011/07/does-dominique-strauss-kahn-s-accuser-nafissatou-diallo-have-the-most-common-surname-in-guinea.html",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Slate, 27 juillet 2011, lu le 13 octobre 2026. L'article écrit « Balde » sans accent."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

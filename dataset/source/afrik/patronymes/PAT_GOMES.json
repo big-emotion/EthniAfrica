@@ -101,5 +101,171 @@
       "fieldPath": "homonyms",
       "reason": "la notice exacte du Dictionary of American Family Names, les catalogues bibliographiques et les recherches « Gomes » associées au Cap-Vert n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Gomes est un nom de famille d'origine portugaise, porté en Guinée-Bissau, où des Guinéens l'ont reçu à la place ou à côté de noms de leur propre langue. Au Portugal, il vient d'un ancien patronyme, un nom formé sur celui du père. On ne sait pas avec certitude depuis quand ni comment il est arrivé en Guinée-Bissau.",
+    "names": [
+      {
+        "nameText": "Gomes",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille portugais, écrit dans les livres de lignages du XIIIe-XIVe siècle ; porté en Guinée-Bissau.",
+        "periodLabel": "Écrit au Portugal dès le XIIIe-XIVe siècle ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Décrit en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Gomes figure dans le nom complet Dinis Gomes, mis en regard du nom pepel Djebdjin Cá dans un tableau de noms pepel et de leurs équivalents portugais ; Nelson Jaime Có et Maria Helena de Paula y voient des noms guinéens remplacés par des noms portugais, qui font perdre à la personne nommée la référence à son groupe d'origine.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Antroponímia e toponímia guineenses: desafios linguístico-culturais",
+                "author": "Nelson Jaime Có et Maria Helena de Paula",
+                "year": 2024,
+                "url": "https://revistas.unilab.edu.br/index.php/njingaesape/article/download/1849/1335/6922",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 226 ; tableau « Antropônimos em pepel »",
+                "notes": "Résumé et diapositives présentés au 1er Séminaire international de toponymie et d'anthroponymie (15 et 16 août 2024), Revue Njinga & Sepé, vol. 4, numéro spécial I, lus en texte intégral le 12 octobre 2026. Le tableau met en regard des noms pepel, comme « Djebdjin Cá », et leur équivalent en portugais, comme « Dinis Gomes ». Le résumé parle d'effacements ethniques dans des noms et des sur-noms guinéens « transmutados » en noms d'origine portugaise."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2020,
+              "label": "Relevé en 2019 et 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Gomes figure dans des noms complets comme Geraldo Gomes Correia ou Luzia Gomes Oliveira, cités parmi les exemples de noms portugais des candidats guinéens à l'université en 2019 et 2020 ; Janifer Nunes da Fonseca et Léia Cruz de Menezes Rodrigues écrivent que ces noms reflètent l'influence du colonisateur.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Estudo dos antropônimos guineenses: valores linguísticos-culturais",
+                "author": "Janifer Nunes da Fonseca et Léia Cruz de Menezes Rodrigues",
+                "year": null,
+                "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/5896/1/JANIFER%20NUNES%20DA%20FONSECA%20.PDF.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17-18",
+                "notes": "Article d'étudiantes de l'UNILAB, lu en texte intégral le 12 octobre 2026. Il étudie les noms des candidats guinéens inscrits à deux concours d'entrée de l'université (2019 et 2020). Page 18, exemples de noms en portugais : « Geraldo Gomes Correia », « Sandra Cardoso Gaspar Gomes », « Luzia Gomes Oliveira ». Page 18 aussi : les noms portugais « refletem a influência do colonizador ; não correspondem às tradições africanas »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Proposée en 1928"
+            },
+            "statement": "Le nom Gomes serait lié au mot gothique guma, « homme », que l'on retrouve dans l'ancien haut-allemand gomo, selon José Leite de Vasconcelos.",
+            "hypothesisGroup": "origine du nom Gomes",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 49",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 12 octobre 2026 sur l'exemplaire numérisé d'archive.org. Page 49, dans la liste des noms tirés des livres de lignages des XIIIe et XIVe siècles (section 14, à partir de la p. 45) : « Gomes 144, noutros documentos mais exactamente Gomez (patronimico). De certo se liga com got. guma « homem », em alto-al. ant. gomo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Gomes est, au Portugal, un ancien patronyme devenu nom de famille, c'est-à-dire un nom formé sur celui du père, selon José Leite de Vasconcelos. Il précise que d'autres documents l'écrivent plus exactement Gomez.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 49",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 12 octobre 2026 sur l'exemplaire numérisé d'archive.org. Page 49, dans la liste des noms tirés des livres de lignages des XIIIe et XIVe siècles (section 14, à partir de la p. 45) : « Gomes 144, noutros documentos mais exactamente Gomez (patronimico). De certo se liga com got. guma « homem », em alto-al. ant. gomo »."
+              },
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 120",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 12 octobre 2026 sur l'exemplaire numérisé d'archive.org. Page 120 : liste alphabétique de noms de famille d'aujourd'hui venus de patronymes médiévaux, où figure « Gomes (vid. p. 49) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1200,
+              "to": 1399,
+              "label": "XIIIe-XIVe siècle"
+            },
+            "statement": "Le nom Gomes apparaît par écrit, sous cette forme, dans les livres de lignages portugais des XIIIe et XIVe siècles, que cite José Leite de Vasconcelos. C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne dit rien de son arrivée en Guinée-Bissau.",
+            "formAsWritten": "Gomes",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 49",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 12 octobre 2026 sur l'exemplaire numérisé d'archive.org. Page 49, dans la liste des noms tirés des livres de lignages des XIIIe et XIVe siècles (section 14, à partir de la p. 45) : « Gomes 144, noutros documentos mais exactamente Gomez (patronimico). De certo se liga com got. guma « homem », em alto-al. ant. gomo »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gomez",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Écrit dans des documents portugais anciens",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Gomez est la forme que José Leite de Vasconcelos juge plus exacte, dans d'autres documents portugais anciens, pour le patronyme que l'on écrit Gomes.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 49",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 12 octobre 2026 sur l'exemplaire numérisé d'archive.org. Page 49, dans la liste des noms tirés des livres de lignages des XIIIe et XIVe siècles (section 14, à partir de la p. 45) : « Gomes 144, noutros documentos mais exactamente Gomez (patronimico). De certo se liga com got. guma « homem », em alto-al. ant. gomo »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
