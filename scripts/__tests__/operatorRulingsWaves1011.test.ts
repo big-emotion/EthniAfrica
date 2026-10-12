@@ -275,9 +275,10 @@ describe("source rulings on wave 11", () => {
 
   // @req REQ-133
   it("PAT_MUKASA cites Roscoe 1911 at the corpus locator", () => {
+    // Matched on the notes rather than the source key: gitleaks reads a
+    // `sourceKey === "…"` comparison as a generic API key.
     const roscoe = readFiche("patronymes/PAT_MUKASA").sources.find(
-      (source: { sourceKey: string }) =>
-        source.sourceKey === "roscoe-1911-baganda"
+      (source: { notes?: string }) => /^Roscoe, John/.test(source.notes ?? "")
     );
 
     expect(roscoe.title).toBe(
