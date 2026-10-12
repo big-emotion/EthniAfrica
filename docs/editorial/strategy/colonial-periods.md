@@ -480,7 +480,7 @@ without an era.
 ## The rulings on waves 12 and 13, ruled 2026-10-12
 
 The operator followed the recommendations that waves 12 (peoples) and 13
-(family names) of the long tail left open. The rulings set an era on 10
+(family names) of the long tail left open. The rulings set an era on 9
 accounts; the others already read as ruled.
 
 - **`polity`: before colonial rule.** John and Katherine Petherick's Moru of
@@ -495,9 +495,8 @@ accounts; the others already read as ruled.
   the ruling on Egyptian antiquity).
 - **`colonial`: under the colonising state.** Le Vaillant's « Baster » of
   1790 and Sparrman's « bastards » of 1786, at the Cape
-  (`PPL_KHOISAN_CREOLE`). The Petauke record (`PAT_SAKALA`, both accounts,
-  the undated meaning included, since both rest on it): the place and date
-  of the fieldwork, Northern Rhodesia in 1958–1961, decide, not the year
+  (`PPL_KHOISAN_CREOLE`). The Sakala birth in the Petauke record
+  (`PAT_SAKALA`): the place and date of the fieldwork, Northern Rhodesia in 1958–1961, decide, not the year
   of publication, 1965. Sakaita Savimbi in the Bailundo uprising of 1902
   (`PAT_SAVIMBI`); the 1987 meaning tile, which spans 1902 to the 1980s,
   stays without an era (rule 8).
@@ -517,5 +516,5 @@ accounts; the others already read as ruled.
   `PAT_SOILIHI` accounts of 1999 and 2022 carry no era.
 
 Counted over every fiche with a name history, the fiches now carry 4,997
-accounts in 724 fiches: 1,350 `polity`, 1,122 `colonial`, 1,604 `modern`, 921
+accounts in 724 fiches: 1,350 `polity`, 1,121 `colonial`, 1,604 `modern`, 922
 without an era.

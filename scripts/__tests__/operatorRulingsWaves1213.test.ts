@@ -140,14 +140,16 @@ describe("era rulings on waves 12 and 13", () => {
     }
   );
 
-  // Both Sakala accounts rest on the Petauke record of that fieldwork.
+  // Only the birth is dated by the Petauke fieldwork; the undated meaning
+  // keeps no era (rule 6), although it cites the same record.
   // @req REQ-178
-  it("dates both Sakala accounts by the Petauke fieldwork", () => {
+  it("leaves the undated Sakala meaning without an era", () => {
     const fiche: Fiche = readFiche("patronymes/PAT_SAKALA");
     const accounts = fiche.nameHistory.names.flatMap((entry) => entry.accounts);
+    const undated = accounts.filter(({ period }) => period.from === null);
 
-    expect(accounts).toHaveLength(2);
-    for (const account of accounts) expect(account.era).toBe("colonial");
+    expect(undated).toHaveLength(1);
+    expect(undated[0].era).toBeUndefined();
   });
 
   // @req REQ-178
