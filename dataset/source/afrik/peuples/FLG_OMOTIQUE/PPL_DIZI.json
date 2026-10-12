@@ -122,5 +122,165 @@
         "source_kind": "official_statistics"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Dizi désigne un peuple de langue omotique du sud-ouest de l'Éthiopie, autour de la ville de Maji, qui se nomme lui-même Dizi. On l'a longtemps appelé Maji, du nom de sa plus grande chefferie et de la ville fondée sur son territoire. Le nom Dizi est écrit au moins depuis 1969 ; nous n'avons pas trouvé de source qui explique son origine.",
+    "names": [
+      {
+        "nameText": "Dizi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mdx",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent, écrit au moins depuis 1969 ; son origine n'est pas connue.",
+        "periodLabel": "Écrit depuis 1969 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1983,
+              "to": 1983,
+              "label": "1983"
+            },
+            "era": "modern",
+            "statement": "Le nom Dizi est celui que ce peuple se donne, selon l'ethnologue Eike Haberland. Jusque-là, on le connaissait surtout sous le nom de Maji. Nous n'avons pas trouvé de source qui explique l'origine du nom Dizi.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "An Amharic manuscript on the mythical history of the Adi kyaz (Dizi, south-west Ethiopia), Bulletin of the School of Oriental and African Studies, vol. 46, n° 2",
+                "author": "Eike Haberland",
+                "year": 1983,
+                "url": "https://doi.org/10.1017/S0041977X00078836",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 240",
+                "notes": "Lu sur la page de l'article chez Cambridge University Press, qui en donne le début. Passage : « The Dizi (as they call themselves) have hitherto been generally known as the Maji, a term derived from the name of their largest chiefdom »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1969,
+              "to": 1969,
+              "label": "1969"
+            },
+            "era": "modern",
+            "statement": "Le nom Dizi apparaît par écrit, à côté de celui de Maji, dans le titre d'une communication du linguiste James B. Keefer, « The Interrogative in the Maji (Dizi) Language of Kaffa Province », présentée à Addis-Abeba, selon la bibliographie de The Non-Semitic Languages of Ethiopia. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà là avant elle.",
+            "formAsWritten": "Dizi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Bibliography, dans The Non-Semitic Languages of Ethiopia",
+                "author": "M. Lionel Bender (dir.)",
+                "year": 1976,
+                "url": "https://archive.org/details/rosettaproject_mdx_references-1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 689",
+                "notes": "East Lansing, African Studies Center, Michigan State University, lu sur la numérisation de la bibliographie par le Rosetta Project sur Internet Archive. Nous n'avons pas lu la communication de Keefer elle-même."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Maji",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de leur plus grande chefferie, longtemps employé pour tout le peuple.",
+        "periodLabel": "Écrit depuis 1920 ; ancien usage des études",
+        "accounts": [
+          {
+            "period": {
+              "from": 1983,
+              "to": 1983,
+              "label": "Proposée en 1983"
+            },
+            "era": "modern",
+            "statement": "Le nom Maji viendrait de leur plus grande chefferie, où se trouve la principale ville amhara de la région, selon Eike Haberland. Le nom de la chefferie a ensuite servi pour tout le peuple.",
+            "hypothesisGroup": "origine du nom Maji",
+            "sources": [
+              {
+                "title": "An Amharic manuscript on the mythical history of the Adi kyaz (Dizi, south-west Ethiopia), Bulletin of the School of Oriental and African Studies, vol. 46, n° 2",
+                "author": "Eike Haberland",
+                "year": 1983,
+                "url": "https://doi.org/10.1017/S0041977X00078836",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 240",
+                "notes": "Lu sur la page de l'article chez Cambridge University Press, qui en donne le début. Passage : « The Dizi (as they call themselves) have hitherto been generally known as the Maji, a term derived from the name of their largest chiefdom »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1898,
+              "to": 1898,
+              "label": "1898"
+            },
+            "era": "polity",
+            "statement": "Le nom Maji est aussi celui de chefs dizi, le Maji Gyesh et le Majikuri, sur le territoire desquels l'armée de l'empereur Ménélik II fonde la ville de Maji en 1898, selon le chercheur Jon Abbink.",
+            "sources": [
+              {
+                "title": "Eternal periphery? Toward a socio-political history of Maji, an Ethiopian frontier town, 1898-2020",
+                "author": "Jon Abbink",
+                "year": 2024,
+                "url": "https://doi.org/10.31235/osf.io/4a35y",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4-5",
+                "notes": "Prépublication déposée sur SocArXiv le 2 mars 2024 ; l'article a paru dans l'International Journal of African Historical Studies, vol. 56, n° 3, 2023, p. 277-295. Lu dans le texte de la prépublication."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "polity",
+            "statement": "Le nom Maji apparaît par écrit chez l'officier britannique L. F. I. Athill, pour une ville, un plateau et le titre du chef local, « Maji Kuri ». C'est la plus ancienne trace de ce nom que le projet connaît. Les Dizi vivaient déjà là avant elle.",
+            "formAsWritten": "Maji",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Through South-Western Abyssinia to the Nile, The Geographical Journal, vol. 56, n° 5",
+                "author": "L. F. I. Athill",
+                "year": 1920,
+                "url": "https://archive.org/details/sim_geographical-journal_1920-11_56_5",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 358",
+                "notes": "Royal Geographical Society, Londres, novembre 1920, lu sur la numérisation d'Internet Archive. L'auteur est un officier britannique. Passage : « Dibo, or, to give him his native title, the “Maji Kuri,” the native chief of Maji »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1937,
+              "to": 1937,
+              "label": "1937"
+            },
+            "era": "colonial",
+            "statement": "Le nom Maji, écrit « Magi » à l'italienne, désigne le peuple dans le titre d'une étude de l'historien Carlo Conti Rossini, « Il popolo dei Magi nell'Etiopia meridionale e il suo linguaggio », selon la bibliographie de The Non-Semitic Languages of Ethiopia.",
+            "formAsWritten": "Magi",
+            "sources": [
+              {
+                "title": "Bibliography, dans The Non-Semitic Languages of Ethiopia",
+                "author": "M. Lionel Bender (dir.)",
+                "year": 1976,
+                "url": "https://archive.org/details/rosettaproject_mdx_references-1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 673",
+                "notes": "East Lansing, African Studies Center, Michigan State University, lu sur la numérisation de la bibliographie par le Rosetta Project sur Internet Archive. La même bibliographie cite aussi les Elementi di lingua Magi du père Giovanni Toselli, 1939, p. 708. Nous n'avons pas lu ces ouvrages."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

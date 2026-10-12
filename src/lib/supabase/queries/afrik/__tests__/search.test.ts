@@ -242,7 +242,7 @@ describe("ftsSearchEntities", () => {
       rows: [
         peopleRow("PPL_BETE", "Bété", { confidence: 0.71, exactMatch: true }),
         peopleRow("PPL_BETI", "Béti", { confidence: 0.61 }),
-        peopleRow("PPL_BETI_FANG", "Béti-Fang", { confidence: 0.67 }),
+        peopleRow("PPL_BETI_EKANG", "Béti-Ekang", { confidence: 0.67 }),
         peopleRow("PPL_AMHARA", "Amhara", { confidence: 0.77 }),
       ],
     };
@@ -252,7 +252,7 @@ describe("ftsSearchEntities", () => {
     expect(result.peoples.map((p) => p.nameMain)).toEqual([
       "Bété",
       "Béti",
-      "Béti-Fang",
+      "Béti-Ekang",
       "Amhara",
     ]);
   });

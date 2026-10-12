@@ -92,5 +92,101 @@
       "fieldPath": "homonyms",
       "reason": "Warsame et Warsama ont été recherchés comme noms de personne, lexèmes et toponymes ; aucun homonyme distinct et sourcé n'a été établi."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Warsame est un nom personnel somali, porté aussi au Kenya et à Djibouti. Les Somalis n'ayant pas, traditionnellement, de nom de famille héréditaire, il ne devient le plus souvent un nom de famille qu'après l'émigration de ceux qui le portent. Une forme proche, Warsama, apparaît par écrit en 1897. Nous présentons plus bas l'explication de son sens que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Warsame",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel somali ; les dictionnaires le traduisent par « porteur de bonnes nouvelles ».",
+        "periodLabel": "Écrit dès 1897 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Warsame est un nom personnel somali, que l'on trouve aussi au Kenya et à Djibouti. Comme les Somalis n'ont traditionnellement pas de nom de famille héréditaire, il n'a le plus souvent été enregistré comme nom de famille qu'aux États-Unis, après l'immigration de ceux qui le portent, selon le Dictionary of American Family Names.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Warsame",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/warsame?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 ; le site affiche aussi une traduction française. La notice dit : nom personnel somali dérivé de war, « nouvelles », et interprété comme « porteur de bonnes nouvelles » ; on le trouve aussi au Kenya et à Djibouti. Les Somalis n'ayant traditionnellement pas de nom de famille héréditaire, le nom n'a le plus souvent été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1991,
+              "to": 2022,
+              "label": "Proposé en 1991, repris en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Warsame voudrait dire « celui qui apporte de bonnes nouvelles », selon le dictionnaire somali-anglais de R. David Zorc, Madina M. Osman et Virginia Luling. Le Dictionary of American Family Names le fait venir du mot war, « nouvelles », et le traduit par « porteur de bonnes nouvelles ».",
+            "hypothesisGroup": "origine du nom Warsame",
+            "sources": [
+              {
+                "title": "Somali-English Dictionary",
+                "author": "R. David Zorc, Madina M. Osman et Virginia Luling",
+                "year": 1991,
+                "url": "https://archive.org/details/somali-english-dictionary-revised",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 489 et p. 492",
+                "notes": "Deuxième édition revue et augmentée, 1991. Lu le 12 octobre 2026 dans une copie non officielle déposée sur Internet Archive par un particulier. Page 492 : « Warsame name-m Warsame Lit: one who brings good news » ; page 489 : war, « news, information, communication, report »."
+              },
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Warsame",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/warsame?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 ; le site affiche aussi une traduction française. La notice dit : nom personnel somali dérivé de war, « nouvelles », et interprété comme « porteur de bonnes nouvelles » ; on le trouve aussi au Kenya et à Djibouti. Les Somalis n'ayant traditionnellement pas de nom de famille héréditaire, le nom n'a le plus souvent été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1897,
+              "label": "1897"
+            },
+            "statement": "Le nom Warsame apparaît par écrit sous une forme proche, Warsama, dans le dictionnaire somali-anglais du père Évangéliste de Larajasse : c'est un nom d'homme dans des phrases d'exemple, comme « comment va le fils de Warsama ? ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Warsama",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Évangéliste de Larajasse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Somali-English and English-Somali Dictionary",
+                "author": "Évangéliste de Larajasse",
+                "year": 1897,
+                "url": "https://archive.org/details/cu31924026888820",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 15",
+                "notes": "Dictionnaire publié en 1897 par un missionnaire catholique. Lu le 12 octobre 2026 sur l'exemplaire numérisé de la bibliothèque de l'université Cornell, sur archive.org. Page 15, à l'entrée bahsi : « inanki Warsama wa side? », traduit « how is the son of Warsama? ». Le nom revient comme nom d'homme pages 30 et 111."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

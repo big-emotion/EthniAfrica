@@ -1,0 +1,115 @@
+{
+  "design": "EthniAfrica Vidéo carte 0.3.0-proposition",
+  "subject": "Sahara, exemple en cinq chapitres",
+  "demo": "Illustrative copy from the design's worked example, for layout and timing proofs only; not approved publication text. The Méga-Tchad outline is a synthetic octagon.",
+  "style": "relief",
+  "imagery": "bmng-2004-07-topo-bathy",
+  "camera": [
+    { "at": 0, "lon": 18, "lat": 6, "radius": 300 },
+    { "at": 3, "lon": 12, "lat": 15, "radius": 380 },
+    { "at": 6, "lon": 9, "lat": 21, "radius": 900 }
+  ],
+  "title": "D'où vient le nom Sahara\u00a0?",
+  "highlight": { "text": "Sahara" },
+  "chapters": [
+    {
+      "title": "D'où vient le nom",
+      "names": [{ "kind": "region", "name": "Sahara", "lon": 8, "lat": 23 }],
+      "legend": [
+        { "label": "Région nommée, sans limites tracées", "name": "Sahara" }
+      ],
+      "caption": {
+        "carte": "relief et nom de la région, sans limites",
+        "periode": "aujourd'hui",
+        "source": "Natural Earth (noms)"
+      },
+      "subtitles": [
+        "Sahara vient de l'arabe *ṣaḥrāʾ* (صحراء), «\u00a0désert\u00a0».",
+        "Le lien avec la couleur du sol est une hypothèse."
+      ]
+    },
+    {
+      "title": "Ce que le mot désignait",
+      "names": [{ "kind": "region", "name": "Sahara", "lon": 8, "lat": 23 }],
+      "legend": [
+        { "label": "Région nommée, sans limites tracées", "name": "Sahara" }
+      ],
+      "caption": {
+        "carte": "le grand désert chez al-Idrīsī",
+        "periode": "vers 1154",
+        "source": "[textes cités]"
+      },
+      "subtitles": [
+        "Vers\u00a01154, al-Idrīsī nomme ainsi le grand désert",
+        "entre «\u00a0pays\u00a0des\u00a0Berbères\u00a0» et «\u00a0pays\u00a0des\u00a0Noirs\u00a0»."
+      ]
+    },
+    {
+      "title": "D'autres noms, côte à côte",
+      "names": [
+        { "kind": "region", "name": "Tanezrouft", "lon": 0.5, "lat": 23 },
+        { "kind": "region", "name": "Ténéré", "lon": 11, "lat": 18.5 }
+      ],
+      "legend": [{ "label": "Région sans limites", "name": "Ténéré" }],
+      "caption": {
+        "carte": "régions nommées, sans limites",
+        "periode": "de l'Antiquité à aujourd'hui",
+        "source": "[textes cités]"
+      },
+      "subtitles": [
+        "D'autres noms ont désigné ce désert.",
+        "Aucun n'a remplacé les autres\u00a0: ils coexistent."
+      ]
+    },
+    {
+      "title": "Comment le nom a circulé",
+      "places": [
+        { "name": "Fès", "lon": -5, "lat": 34.03, "side": "right" },
+        { "name": "Tombouctou", "lon": -3, "lat": 16.77, "side": "right" }
+      ],
+      "legend": [{ "label": "Ville citée", "place": "Fès" }],
+      "caption": {
+        "carte": "deux villes citées par Léon l'Africain",
+        "periode": "1550",
+        "source": "[textes cités]"
+      },
+      "subtitles": [
+        "En 1550, Léon l'Africain écrit «\u00a0Sarra\u00a0».",
+        "Quand «\u00a0Libye\u00a0» a quitté les cartes\u00a0? On l'ignore."
+      ]
+    },
+    {
+      "title": "Le Sahara a-t-il été vert\u00a0?",
+      "camera": { "lon": 16, "lat": 14.5, "radius": 2600, "travel": 1.8 },
+      "outline": {
+        "name": "Méga-Tchad",
+        "file": "synthetic-outline.geojson",
+        "labelAt": [16, 15.6],
+        "source": "synthetic octagon for the renderer proof",
+        "study": "[étude publiée]",
+        "elevationModel": "NOAA ETOPO 2022",
+        "levelMetres": 325,
+        "illustrative": true
+      },
+      "names": [
+        {
+          "kind": "water",
+          "name": "Lac Tchad actuel",
+          "lon": 14.3,
+          "lat": 13.1
+        }
+      ],
+      "legend": [{ "label": "Contour reconstitué", "outline": true }],
+      "caption": {
+        "carte": "rivage du Méga-Tchad, reconstitué d'après le relief",
+        "periode": "il y a environ 14\u00a0500 à 5\u00a0000 ans",
+        "source": "[étude publiée]\u00a0; NOAA, ETOPO 2022"
+      },
+      "subtitles": [
+        "Il y a 14\u00a0500 à 5\u00a0000 ans, un grand lac couvrait ce bassin.",
+        "La fin de cette période humide reste discutée."
+      ]
+    }
+  ],
+  "ending": { "variant": "B" }
+}

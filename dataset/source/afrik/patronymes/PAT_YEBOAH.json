@@ -11,7 +11,10 @@
     {
       "spelling": "Yeboah",
       "attestations": [
-        { "countryId": "GHA", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "GHA",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -75,5 +78,92 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Yeboah est un nom de famille akan du Ghana, que le père donne à son enfant. C'est d'abord un nom de personne, et l'on ne sait pas avec certitude ce qu'il veut dire. On l'écrivait autrefois Yeboa ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Yeboah",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille akan du Ghana, donné par le père ; on ne sait pas avec certitude ce qu'il veut dire.",
+        "periodLabel": "Forme proche écrite dès 1881 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Yeboah est un nom de personne akan du Ghana devenu nom de famille, d'origine inexpliquée selon le Dictionary of American Family Names. On ne sait donc pas avec certitude ce qu'il veut dire. Le même dictionnaire voit dans le h final une façon anglaise d'écrire ces noms ghanéens.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e édition — entrée Yeboah",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/yeboah?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 11 octobre 2026. La notice dit : Afrique de l'Ouest (Ghana), d'un nom de personne masculin akan d'étymologie inexpliquée ; le h final de ces noms ghanéens est une façon anglaise de les écrire."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "Décrit en 2006"
+            },
+            "era": "modern",
+            "statement": "Le nom Yeboah, écrit Yeboa, fait partie des noms de famille akan que le père donne à son enfant et qui suivent les clans paternels, selon le linguiste Kofi Agyekum. Il le range aussi parmi les noms portés dans tout le pays akan, sans attache à une seule région.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Sociolinguistic of Akan Personal Names",
+                "author": "Kofi Agyekum",
+                "year": 2006,
+                "url": "https://www.njas.fi/njas/article/download/24/16/38",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Nordic Journal of African Studies, vol. 15, n° 2, 2006, p. 206-235. Lu dans le PDF de la revue le 11 octobre 2026. Page 214 : le tableau des noms de jour donne Yao en twi et Ekow en fante pour le garçon né le jeudi. Pages 215-216 : les noms de famille akan sont donnés par le père et rattachés aux douze clans paternels ; Yeboa figure parmi les exemples. Page 218 : Yɛboa fait partie des noms portés dans tout le pays akan.",
+                "page": "p. 215-216 ; p. 218"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "statement": "Une forme proche du nom Yeboah, Yeboa, apparaît dans le dictionnaire du twi du missionnaire de Bâle Johann Gottlieb Christaller, dans sa liste des noms de personnes. Le même livre cite Obiri Yeboa dans la liste des rois de l'Asante. C'est la plus ancienne trace de cette forme proche que le projet connaît ; elle dit quand un auteur l'a notée, pas depuis quand le nom est porté.",
+            "formAsWritten": "Yeboa",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Johann Gottlieb Christaller",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 646 ; annexe G, p. 667",
+                "notes": "Bâle, Evangelical Missionary Society, 1881. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 646 : la liste des rois de l'Asante, où figure « Obiri Yeboa ». Annexe G, « Proper Names of Persons », page 667 : la forme « Yeboa » dans la liste des noms de personnes, sans explication ; l'auteur écrit que, pour beaucoup de ces noms, le sens premier n'est pas connu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -11,7 +11,10 @@
     {
       "spelling": "Zwane",
       "attestations": [
-        { "countryId": "SWZ", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "SWZ",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -75,5 +78,124 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Zwane est le nom d'un clan que l'historien Alfred T. Bryant situe en Eswatini, chez les Swazi. Les sources ne s'accordent pas sur la branche nguni d'où il viendrait, et l'on ne sait pas avec certitude ce que le mot veut dire ; nous présentons plus bas ce qu'elles disent.",
+    "names": [
+      {
+        "nameText": "Zwane",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan d'Eswatini, chez les Swazi ; on ne sait pas avec certitude d'où il vient.",
+        "periodLabel": "Écrit dès 1929",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Zwane désigne un clan, non une seule famille. Aucune source consultée ne dit ce que le mot veut dire ; nous présentons plus bas deux explications de l'origine du clan, qui ne s'accordent pas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bryant-a-t-olden-times-in-zululand-and-natal-containing-earlier-political-histor",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 311",
+                "notes": "Londres, Longmans, Green and Co., 1929. Lu le 11 octobre 2026 dans une copie non officielle déposée sur Internet Archive. L'auteur, missionnaire au Natal, s'appuie sur les traditions qu'il a recueillies. Page 311, à propos des clans d'Eswatini : les Maseko, « as well as the Mahlambi, the Simelane, the Zwane, the Shongwe, the Kambule, the Tabete and other clans, claim to be of Ntungwa-Nguni origin, and therefore of the same type as the Zulus »."
+              },
+              {
+                "title": "Olden Times in Zululand and Natal",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bryant-a-t-olden-times-in-zululand-and-natal-containing-earlier-political-histor",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 181",
+                "notes": "Londres, Longmans, Green and Co., 1929. Lu le 11 octobre 2026 dans une copie non officielle déposée sur Internet Archive. Page 181 : les amaNgwe, de la branche que l'auteur appelle eMbo, « along with the Zwanes and others, sprang from a certain common ancestor, Ntsele »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Rapporté en 1929"
+            },
+            "era": "colonial",
+            "hypothesisGroup": "origine du clan Zwane",
+            "statement": "Le nom Zwane serait celui d'un clan venu des Nguni ntungwa, du même type que les Zoulous : c'est ce que disent les Zwane d'Eswatini, comme les Maseko, les Simelane et d'autres clans, selon Alfred T. Bryant.",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bryant-a-t-olden-times-in-zululand-and-natal-containing-earlier-political-histor",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 311",
+                "notes": "Londres, Longmans, Green and Co., 1929. Lu le 11 octobre 2026 dans une copie non officielle déposée sur Internet Archive. L'auteur, missionnaire au Natal, s'appuie sur les traditions qu'il a recueillies. Page 311, à propos des clans d'Eswatini : les Maseko, « as well as the Mahlambi, the Simelane, the Zwane, the Shongwe, the Kambule, the Tabete and other clans, claim to be of Ntungwa-Nguni origin, and therefore of the same type as the Zulus »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Proposé en 1929"
+            },
+            "hypothesisGroup": "origine du clan Zwane",
+            "statement": "Le nom Zwane serait celui d'un clan issu du même ancêtre, Ntsele, que les amaNgwe, un peuple de la branche nguni que l'auteur appelle eMbo, selon Alfred T. Bryant.",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bryant-a-t-olden-times-in-zululand-and-natal-containing-earlier-political-histor",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 181",
+                "notes": "Londres, Longmans, Green and Co., 1929. Lu le 11 octobre 2026 dans une copie non officielle déposée sur Internet Archive. Page 181 : les amaNgwe, de la branche que l'auteur appelle eMbo, « along with the Zwanes and others, sprang from a certain common ancestor, Ntsele »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "1929"
+            },
+            "era": "colonial",
+            "statement": "Le nom Zwane apparaît par écrit chez Alfred T. Bryant, missionnaire et historien, qui le cite parmi les clans d'Eswatini. C'est la plus ancienne trace de ce nom que le projet connaît ; le clan est plus ancien que ce livre.",
+            "formAsWritten": "Zwane",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Alfred T. Bryant",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bryant-a-t-olden-times-in-zululand-and-natal-containing-earlier-political-histor",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 311",
+                "notes": "Londres, Longmans, Green and Co., 1929. Lu le 11 octobre 2026 dans une copie non officielle déposée sur Internet Archive. L'auteur, missionnaire au Natal, s'appuie sur les traditions qu'il a recueillies. Page 311, à propos des clans d'Eswatini : les Maseko, « as well as the Mahlambi, the Simelane, the Zwane, the Shongwe, the Kambule, the Tabete and other clans, claim to be of Ntungwa-Nguni origin, and therefore of the same type as the Zulus »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -151,5 +151,357 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Vili désigne un peuple de la côte de Loango, au Congo, au Gabon et dans l'enclave de Cabinda, qui se nomme lui-même Vili, au pluriel Bavili. D'autres noms existent : Fiote, que ce peuple emploie aussi pour lui-même, et Loango, le nom de l'ancien royaume. Les sources ne s'accordent pas sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Vili",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "vif",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent ; deux explications s'opposent sur son origine.",
+        "usedIn": ["vif", "fra", "eng"],
+        "periodLabel": "Écrit dès 1906 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Vili désigne aujourd'hui une langue vivante dans la norme ISO 639-3, sous le code vif. On ne sait pas avec certitude d'où vient ce nom : deux explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "ISO 639-3, code vif : Vili",
+                "author": "SIL International",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/vif",
+                "tier": "official",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Vili apparaît au pluriel, Bavili, chez le commerçant anglais R. E. Dennett, qui désigne ainsi les habitants du Loango, sur la côte entre la rivière Mayumba au nord et la Chiluango au sud. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne vivait là bien avant lui.",
+            "formAsWritten": "Bavili",
+            "birth": true,
+            "sources": [
+              {
+                "title": "At the back of the black man's mind, or Notes on the kingly office in West Africa",
+                "author": "R. E. Dennett",
+                "year": 1906,
+                "url": "https://archive.org/details/atbackofblackman00dennuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 3",
+                "notes": "Londres, Macmillan, 1906. Lu sur sa numérisation par la bibliothèque de l'université de Toronto. L'auteur, commerçant anglais au Congo, emploie le vocabulaire racial de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Proposée en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Vili, sous la forme Bawili, voudrait dire « filous » ou « escrocs » : les Bayombe de l'arrière-pays l'auraient donné aux gens de la côte, qui les dupaient dans le commerce et livraient autrefois des captifs aux marchands d'esclaves européens, selon Eduard Pechuël-Loesche.",
+            "hypothesisGroup": "origine du nom Vili",
+            "sources": [
+              {
+                "title": "Volkskunde von Loango",
+                "author": "Eduard Pechuël-Loesche",
+                "year": 1907,
+                "url": "https://archive.org/details/volkskundevonlo00loegoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Stuttgart, Strecker & Schröder, 1907. Lu sur sa numérisation par Google. Chapitre « Stämme: Art, Namen und Vermischung »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Proposée en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Vili, sous la forme Bawili, pourrait aussi venir de kuwila, « être lié, uni », ou de mwila, luwilu, ce qui lie une communauté, selon Eduard Pechuël-Loesche, qui lui préfère pourtant l'explication par « filous ».",
+            "hypothesisGroup": "origine du nom Vili",
+            "sources": [
+              {
+                "title": "Volkskunde von Loango",
+                "author": "Eduard Pechuël-Loesche",
+                "year": 1907,
+                "url": "https://archive.org/details/volkskundevonlo00loegoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2, note",
+                "notes": "Stuttgart, Strecker & Schröder, 1907. Lu sur sa numérisation par Google. Chapitre « Stämme: Art, Namen und Vermischung »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Fiote",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom que les gens de Loango se donnaient aussi ; trois explications de son origine s'opposent.",
+        "usedIn": ["vif", "eng", "deu", "por"],
+        "periodLabel": "Écrit sous une forme proche dès 1887",
+        "accounts": [
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Fiote est, selon Eduard Pechuël-Loesche, celui par lequel les gens de Loango se désignent en général, au pluriel Bafioti, surtout face aux autres peuples. Il ne le tient pas pour le nom d'un ancien peuple uni.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Volkskunde von Loango",
+                "author": "Eduard Pechuël-Loesche",
+                "year": 1907,
+                "url": "https://archive.org/details/volkskundevonlo00loegoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Stuttgart, Strecker & Schröder, 1907. Lu sur sa numérisation par Google. Chapitre « Stämme: Art, Namen und Vermischung »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1898,
+              "to": 1898,
+              "label": "1898"
+            },
+            "era": "colonial",
+            "statement": "Le nom Fiote est la forme qu'écrit R. E. Dennett dans un chapitre paru d'abord dans la revue Folk-Lore ; pour son recueil de 1898, la Folk-Lore Society retient pourtant l'orthographe Fjort, « avec quelque hésitation », selon la préface d'E. Sidney Hartland.",
+            "sources": [
+              {
+                "title": "Notes on the folklore of the Fjort (French Congo)",
+                "author": "R. E. Dennett",
+                "year": 1898,
+                "url": "https://archive.org/details/notesonfolkloreo00dennuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre et préface",
+                "notes": "Londres, Folk-Lore Society, 1898, avec une préface d'E. Sidney Hartland datée de juillet 1898. Lu sur sa numérisation par la bibliothèque de l'université de Toronto."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1887,
+              "label": "1887"
+            },
+            "statement": "Le nom Fiote a une forme proche, Fjort, dans le titre du livre du commerçant anglais R. E. Dennett sur ses sept années passées dans la région du Congo. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne vivait là bien avant lui.",
+            "formAsWritten": "Fjort",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Seven Years among the Fjort, being an English Trader's Experiences in the Congo District",
+                "author": "R. E. Dennett",
+                "year": 1887,
+                "url": "https://archive.org/details/sevenyearsamongf00denn",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "titre",
+                "notes": "Londres, Sampson Low, Marston, Searle & Rivington, 1887. Lu sur sa numérisation par Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "Rapporté en 1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Fiote viendrait du portugais filhote, « petit garnement », selon de vieux commerçants portugais cités par le commerçant C. Sanders, dont R. E. Dennett rapporte les propos.",
+            "hypothesisGroup": "origine du nom Fiote",
+            "sources": [
+              {
+                "title": "At the back of the black man's mind, or Notes on the kingly office in West Africa",
+                "author": "R. E. Dennett",
+                "year": 1906,
+                "url": "https://archive.org/details/atbackofblackman00dennuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 4",
+                "notes": "Londres, Macmillan, 1906. Lu sur sa numérisation par la bibliothèque de l'université de Toronto. L'auteur, commerçant anglais au Congo, emploie le vocabulaire racial de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "Proposée en 1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Fiote serait un mot kongo, employé aussi pour dire « petit », formé de fia ou via, « planter », et uta, « porter » : il voudrait dire « celui qui propage », par opposition à Vianga, le créateur, selon R. E. Dennett.",
+            "hypothesisGroup": "origine du nom Fiote",
+            "sources": [
+              {
+                "title": "At the back of the black man's mind, or Notes on the kingly office in West Africa",
+                "author": "R. E. Dennett",
+                "year": 1906,
+                "url": "https://archive.org/details/atbackofblackman00dennuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 4",
+                "notes": "Londres, Macmillan, 1906. Lu sur sa numérisation par la bibliothèque de l'université de Toronto. L'auteur, commerçant anglais au Congo, emploie le vocabulaire racial de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Proposée en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Fiote voudrait dire « gens à la peau sombre », bantu ba fiote, par opposition aux gens à la peau claire, bantu ba ndundu, qui tiennent une place dans leurs traditions, selon Eduard Pechuël-Loesche.",
+            "hypothesisGroup": "origine du nom Fiote",
+            "sources": [
+              {
+                "title": "Volkskunde von Loango",
+                "author": "Eduard Pechuël-Loesche",
+                "year": 1907,
+                "url": "https://archive.org/details/volkskundevonlo00loegoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Stuttgart, Strecker & Schröder, 1907. Lu sur sa numérisation par Google. Chapitre « Stämme: Art, Namen und Vermischung »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Loango",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de l'ancien royaume de la côte, qui a servi à nommer ses habitants.",
+        "usedIn": ["fra", "eng", "por"],
+        "periodLabel": "Écrit dès 1591 dans les sources lues",
+        "accounts": [
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Loango donne Baloango, les gens de Loango, que Eduard Pechuël-Loesche cite parmi les noms de groupes qui n'ont pas besoin d'explication, sans y voir le nom d'un peuple à part.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Volkskunde von Loango",
+                "author": "Eduard Pechuël-Loesche",
+                "year": 1907,
+                "url": "https://archive.org/details/volkskundevonlo00loegoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Stuttgart, Strecker & Schröder, 1907. Lu sur sa numérisation par Google. Chapitre « Stämme: Art, Namen und Vermischung »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Loango, écrit Luango, désigne chez R. E. Dennett le pays dont les Bavili sont les habitants.",
+            "sources": [
+              {
+                "title": "At the back of the black man's mind, or Notes on the kingly office in West Africa",
+                "author": "R. E. Dennett",
+                "year": 1906,
+                "url": "https://archive.org/details/atbackofblackman00dennuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 3",
+                "notes": "Londres, Macmillan, 1906. Lu sur sa numérisation par la bibliothèque de l'université de Toronto. L'auteur, commerçant anglais au Congo, emploie le vocabulaire racial de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1776,
+              "to": 1776,
+              "label": "1776"
+            },
+            "era": "polity",
+            "statement": "Le nom Loango figure dans le titre de l'Histoire de Loango, Kakongo, et autres royaumes d'Afrique, que l'abbé Liévin-Bonaventure Proyart rédige d'après les mémoires des missionnaires français.",
+            "formAsWritten": "Loango",
+            "sources": [
+              {
+                "title": "Histoire de Loango, Kakongo, et autres royaumes d'Afrique",
+                "author": "Liévin-Bonaventure Proyart",
+                "year": 1776,
+                "url": "https://archive.org/details/histoiredeloango00proy_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre",
+                "notes": "Paris, C. P. Berton et N. Crapart, 1776. Rédigée d'après les mémoires des préfets apostoliques de la mission française. Lu sur sa numérisation par Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1591,
+              "to": 1591,
+              "label": "1591"
+            },
+            "era": "polity",
+            "statement": "Le nom Loango apparaît dans le récit de Filippo Pigafetta, publié à Rome en 1591 d'après les récits du Portugais Duarte Lopes : au nord du royaume de Kongo, le long de la mer, s'étend le royaume de Loango, dont le roi est appelé Maniloango. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume qu'il désigne existait déjà avant ce livre.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Duarte Lopes",
+                "role": "voyageur portugais dont Pigafetta rapporte les récits"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Report of the Kingdom of Congo and of the Surrounding Countries, drawn out of the writings and discourses of the Portuguese Duarte Lopez, by Filippo Pigafetta, in Rome, 1591",
+                "author": "Filippo Pigafetta",
+                "year": 1881,
+                "url": "https://archive.org/details/reportofkingdomo00lope",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 24-25",
+                "notes": "Traduction anglaise de Margarite Hutchinson, Londres, 1881, de la Relatione del reame di Congo publiée à Rome en 1591. Lu dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

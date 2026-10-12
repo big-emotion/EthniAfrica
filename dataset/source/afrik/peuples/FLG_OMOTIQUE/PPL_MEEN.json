@@ -127,5 +127,412 @@
         "source_kind": "official_statistics"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Me'en désigne un peuple du sud-ouest de l'Éthiopie, à l'ouest de l'Omo, qui se nomme lui-même Me'en. D'autres noms existent : Mekan, une forme plus ancienne du même mot, Shuro, le nom que lui donnaient ses voisins kafa, Tishana, un nom venu des Éthiopiens du Nord après la conquête de 1898, et Bodi, pour ses groupes d'éleveurs de l'est de l'Omo. Les sources ne disent pas toujours d'où viennent ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Me'en",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mym",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; il veut dire « êtres humains » dans sa langue.",
+        "periodLabel": "En usage aujourd'hui, surtout depuis 1974",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Me'en désigne aujourd'hui ce peuple, qui l'emploie lui-même ; le mot veut dire « êtres humains », et une seule personne se dit Me'enit, selon l'anthropologue Jon Abbink. On ne sait pas avec certitude d'où vient le nom ; l'explication qu'il propose est présentée à part.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Tribal Formation on the Ethiopian Fringe : Toward a History of the 'Tishana'",
+                "author": "Jon Abbink",
+                "year": 1990,
+                "url": "https://hdl.handle.net/1887/9022",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22 et p. 39, note 2",
+                "notes": "Northeast African Studies, vol. 12, n° 1, 1990, p. 21-42. Lu dans le dépôt en libre accès de l'université de Leyde le 11 octobre 2026. Enquête de terrain de l'auteur chez les Me'en en 1986 et en 1988."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1974,
+              "to": null,
+              "label": "Depuis 1974"
+            },
+            "era": "modern",
+            "statement": "Le nom Me'en devient, après la révolution éthiopienne de 1974, celui sous lequel ce peuple est reconnu comme une nationalité, selon Jon Abbink.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Tribal Formation on the Ethiopian Fringe : Toward a History of the 'Tishana'",
+                "author": "Jon Abbink",
+                "year": 1990,
+                "url": "https://hdl.handle.net/1887/9022",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22 et p. 38",
+                "notes": "Northeast African Studies, vol. 12, n° 1, 1990, p. 21-42. Lu dans le dépôt en libre accès de l'université de Leyde le 11 octobre 2026. Enquête de terrain de l'auteur chez les Me'en en 1986 et en 1988."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1990,
+              "to": 1990,
+              "label": "Proposée en 1990"
+            },
+            "era": "modern",
+            "statement": "Le nom Me'en viendrait du nom de leur langue, tuk-te-Me'en, « la bouche des êtres humains », selon Jon Abbink.",
+            "sources": [
+              {
+                "title": "Tribal Formation on the Ethiopian Fringe : Toward a History of the 'Tishana'",
+                "author": "Jon Abbink",
+                "year": 1990,
+                "url": "https://hdl.handle.net/1887/9022",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "Northeast African Studies, vol. 12, n° 1, 1990, p. 21-42. Lu dans le dépôt en libre accès de l'université de Leyde le 11 octobre 2026. Enquête de terrain de l'auteur chez les Me'en en 1986 et en 1988."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1840,
+              "to": 1890,
+              "label": "Années 1840 et 1850, livre publié en 1890"
+            },
+            "era": "polity",
+            "statement": "Le nom Me'en a une forme proche et plus ancienne, Mekan : le voyageur Antoine d'Abbadie, qui a recueilli ses renseignements dans les années 1840 et 1850, la donne comme le nom que se donne une partie des Suwro, selon Jon Abbink. Le son k placé entre deux voyelles est ensuite devenu un coup de glotte, d'où Me'en. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tribal Formation on the Ethiopian Fringe : Toward a History of the 'Tishana'",
+                "author": "Jon Abbink",
+                "year": 1990,
+                "url": "https://hdl.handle.net/1887/9022",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 23 et p. 39, note 3",
+                "notes": "Northeast African Studies, vol. 12, n° 1, 1990, p. 21-42. Lu dans le dépôt en libre accès de l'université de Leyde le 11 octobre 2026. Enquête de terrain de l'auteur chez les Me'en en 1986 et en 1988. L'auteur cite A. d'Abbadie, 1890 ; nous n'avons pas lu ce livre."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mekan",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "mym",
+        "namedBy": null,
+        "shortLine": "La forme ancienne du nom Me'en, notée au XIXe siècle ; elle ne s'entend plus aujourd'hui.",
+        "periodLabel": "XIXe siècle et début du XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1840,
+              "to": 1890,
+              "label": "Années 1840 et 1850, livre publié en 1890"
+            },
+            "era": "polity",
+            "statement": "Le nom Mekan apparaît chez le voyageur Antoine d'Abbadie, qui le donne comme le nom que se donne une partie des Suwro, d'après des renseignements recueillis dans les années 1840 et 1850, selon Jon Abbink. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tribal Formation on the Ethiopian Fringe : Toward a History of the 'Tishana'",
+                "author": "Jon Abbink",
+                "year": 1990,
+                "url": "https://hdl.handle.net/1887/9022",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 23",
+                "notes": "Northeast African Studies, vol. 12, n° 1, 1990, p. 21-42. Lu dans le dépôt en libre accès de l'université de Leyde le 11 octobre 2026. Enquête de terrain de l'auteur chez les Me'en en 1986 et en 1988. L'auteur cite A. d'Abbadie, 1890 ; nous n'avons pas lu ce livre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1890,
+              "to": 1913,
+              "label": "De 1890 à 1913"
+            },
+            "era": "polity",
+            "statement": "Le nom Mekan désigne, chez Antoine d'Abbadie en 1890 et chez Carlo Conti Rossini en 1913, des locuteurs du me'en qui auraient mené leurs troupeaux des deux côtés de l'Omo et du Shorum, suppose Jon Abbink.",
+            "sources": [
+              {
+                "title": "Tribal Formation on the Ethiopian Fringe : Toward a History of the 'Tishana'",
+                "author": "Jon Abbink",
+                "year": 1990,
+                "url": "https://hdl.handle.net/1887/9022",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 23",
+                "notes": "Northeast African Studies, vol. 12, n° 1, 1990, p. 21-42. Lu dans le dépôt en libre accès de l'université de Leyde le 11 octobre 2026. Enquête de terrain de l'auteur chez les Me'en en 1986 et en 1988."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mekan ne s'entend plus aujourd'hui sous cette forme, que Jon Abbink écrit ici Meken : le son k placé entre deux voyelles est devenu un coup de glotte, d'où Me'en, selon lui.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Tribal Formation on the Ethiopian Fringe : Toward a History of the 'Tishana'",
+                "author": "Jon Abbink",
+                "year": 1990,
+                "url": "https://hdl.handle.net/1887/9022",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 39, note 3",
+                "notes": "Northeast African Studies, vol. 12, n° 1, 1990, p. 21-42. Lu dans le dépôt en libre accès de l'université de Leyde le 11 octobre 2026. Enquête de terrain de l'auteur chez les Me'en en 1986 et en 1988."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Shuro",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "kbr",
+        "namedBy": "Les Kafa, voisins du nord",
+        "shortLine": "Le premier nom connu de ce peuple, donné par ses voisins kafa : « les Noirs ».",
+        "periodLabel": "XIXe siècle et début du XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Shuro, « les Noirs » en langue kafa, est celui que les habitants de l'ancien royaume du Kaffa donnaient au peuple qu'on appelle aujourd'hui Me'en ; c'est le premier nom que l'on connaît pour lui, selon Jon Abbink.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Tribal Formation on the Ethiopian Fringe : Toward a History of the 'Tishana'",
+                "author": "Jon Abbink",
+                "year": 1990,
+                "url": "https://hdl.handle.net/1887/9022",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 23",
+                "notes": "Northeast African Studies, vol. 12, n° 1, 1990, p. 21-42. Lu dans le dépôt en libre accès de l'université de Leyde le 11 octobre 2026. Enquête de terrain de l'auteur chez les Me'en en 1986 et en 1988."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1887,
+              "label": "1887"
+            },
+            "era": "polity",
+            "statement": "Le nom Shuro apparaît par écrit, sous la forme Sciuro, chez le voyageur italien A. Cecchi, qui publie en 1887 un court vocabulaire de cette langue, selon Jon Abbink. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Sciuro",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tribal Formation on the Ethiopian Fringe : Toward a History of the 'Tishana'",
+                "author": "Jon Abbink",
+                "year": 1990,
+                "url": "https://hdl.handle.net/1887/9022",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 23",
+                "notes": "Northeast African Studies, vol. 12, n° 1, 1990, p. 21-42. Lu dans le dépôt en libre accès de l'université de Leyde le 11 octobre 2026. Enquête de terrain de l'auteur chez les Me'en en 1986 et en 1988. L'auteur cite Cecchi, 1887, p. 445-456 ; nous n'avons pas lu ce livre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1900,
+              "label": "Récit publié en 1900"
+            },
+            "era": "polity",
+            "statement": "Le nom Shuro désigne encore, chez l'officier russe Bulatovitch, qui accompagne la campagne du ras Wolde Ghiorgis pour conquérir le Kaffa, plusieurs groupes d'éleveurs organisés en « États indépendants », selon Jon Abbink.",
+            "sources": [
+              {
+                "title": "Tribal Formation on the Ethiopian Fringe : Toward a History of the 'Tishana'",
+                "author": "Jon Abbink",
+                "year": 1990,
+                "url": "https://hdl.handle.net/1887/9022",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 27",
+                "notes": "Northeast African Studies, vol. 12, n° 1, 1990, p. 21-42. Lu dans le dépôt en libre accès de l'université de Leyde le 11 octobre 2026. Enquête de terrain de l'auteur chez les Me'en en 1986 et en 1988."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tishana",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "mym",
+        "namedBy": "Les Éthiopiens du Nord, surtout des Amhara venus du Godjam et du Choa",
+        "shortLine": "Un nom donné après la conquête de 1898 ; c'est d'abord un mot de salutation en me'en.",
+        "periodLabel": "De 1898 à 1974 environ",
+        "accounts": [
+          {
+            "period": {
+              "from": 1898,
+              "to": 1936,
+              "label": "De 1898 à 1936"
+            },
+            "era": "polity",
+            "statement": "Le nom Tishana est celui que les Éthiopiens du Nord, surtout des Amhara venus du Godjam et du Choa, donnent aux groupes de langue surma des régions qu'ils conquièrent après 1898. Il couvre alors plus de groupes que les seuls Me'en, et aucun peuple ne l'a choisi pour lui-même, selon Jon Abbink.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Tribal Formation on the Ethiopian Fringe : Toward a History of the 'Tishana'",
+                "author": "Jon Abbink",
+                "year": 1990,
+                "url": "https://hdl.handle.net/1887/9022",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21-22 et p. 27",
+                "notes": "Northeast African Studies, vol. 12, n° 1, 1990, p. 21-42. Lu dans le dépôt en libre accès de l'université de Leyde le 11 octobre 2026. Enquête de terrain de l'auteur chez les Me'en en 1986 et en 1988."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1990,
+              "to": 1990,
+              "label": "Proposée en 1990"
+            },
+            "era": "modern",
+            "statement": "Le nom Tishana viendrait d'un mot de salutation de la langue me'en, selon Jon Abbink.",
+            "sources": [
+              {
+                "title": "Tribal Formation on the Ethiopian Fringe : Toward a History of the 'Tishana'",
+                "author": "Jon Abbink",
+                "year": 1990,
+                "url": "https://hdl.handle.net/1887/9022",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "Northeast African Studies, vol. 12, n° 1, 1990, p. 21-42. Lu dans le dépôt en libre accès de l'université de Leyde le 11 octobre 2026. Enquête de terrain de l'auteur chez les Me'en en 1986 et en 1988."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "polity",
+            "statement": "Le nom Tishana apparaît pour la première fois dans les publications en 1913, dans un livre de Montandon sur les Gimira, des peuples qui vivent au nord des Tishana, selon Jon Abbink. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tribal Formation on the Ethiopian Fringe : Toward a History of the 'Tishana'",
+                "author": "Jon Abbink",
+                "year": 1990,
+                "url": "https://hdl.handle.net/1887/9022",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "Northeast African Studies, vol. 12, n° 1, 1990, p. 21-42. Lu dans le dépôt en libre accès de l'université de Leyde le 11 octobre 2026. Enquête de terrain de l'auteur chez les Me'en en 1986 et en 1988. Nous n'avons pas lu le livre de Montandon."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bodi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des groupes me'en restés éleveurs à l'est de l'Omo.",
+        "periodLabel": "Depuis la fin du XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bodi désigne la petite part des Me'en, environ 2 500 personnes, restée éleveuse à l'est du cours inférieur de l'Omo, selon Jon Abbink, qui les appelle Bodi-Me'en.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Tribal Formation on the Ethiopian Fringe : Toward a History of the 'Tishana'",
+                "author": "Jon Abbink",
+                "year": 1990,
+                "url": "https://hdl.handle.net/1887/9022",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "Northeast African Studies, vol. 12, n° 1, 1990, p. 21-42. Lu dans le dépôt en libre accès de l'université de Leyde le 11 octobre 2026. Enquête de terrain de l'auteur chez les Me'en en 1986 et en 1988."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1899,
+              "label": "Voyage de 1896, récit publié en 1899"
+            },
+            "era": "polity",
+            "statement": "Le nom Bodi apparaît sous une forme proche, Bodà, dans le récit de l'expédition de Vittorio Bottego, arrivée sur l'Omo en juillet 1896, que publient en 1899 L. Vannutelli et C. Citerni, selon David Turton. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Bodà",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Exploration in the Lower Omo Valley of Southwestern Ethiopia between 1890 and 1910",
+                "author": "David Turton",
+                "year": null,
+                "url": "https://www.mursi.org/pdf/exploration-in-the-lower-omo-valley.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Version révisée d'une communication publiée en 1981 dans les actes du congrès L'Africa ai tempi di Daniele Comboni, à Rome ; lue sur le site Mursi Online le 11 octobre 2026. Le texte en ligne ne date pas sa révision. L'auteur cite Vannutelli et Citerni, L'Omo, 1899 ; nous n'avons pas lu ce livre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Bodà viendrait sans doute des guides dime de l'expédition Bottego, selon David Turton.",
+            "sources": [
+              {
+                "title": "Exploration in the Lower Omo Valley of Southwestern Ethiopia between 1890 and 1910",
+                "author": "David Turton",
+                "year": null,
+                "url": "https://www.mursi.org/pdf/exploration-in-the-lower-omo-valley.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Version révisée d'une communication publiée en 1981 dans les actes du congrès L'Africa ai tempi di Daniele Comboni, à Rome ; lue sur le site Mursi Online le 11 octobre 2026. Le texte en ligne ne date pas sa révision."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

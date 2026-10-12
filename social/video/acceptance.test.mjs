@@ -9,8 +9,8 @@ import { mkdtemp, readFile, rm, symlink } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 import sharp from "sharp";
-import { loadSequence } from "./sequence.mjs";
-import { renderFrame, encodeVideo } from "./render.mjs";
+import { loadSequence, frameState, frameCount, project } from "./sequence.mjs";
+import { renderFrame, renderFrames, encodeVideo } from "./render.mjs";
 
 const assets = process.env.ETHNIAFRICA_VIDEO_ASSETS;
 const congo = JSON.parse(
@@ -198,4 +198,104 @@ test("a relief video needs the verified height model", async () => {
   } finally {
     await rm(dir, { recursive: true, force: true });
   }
+});
+
+// Chained chapters (0.3.0-proposition). The flat style keeps these renders
+// short; the relief proof is inspected by eye.
+const fixtures = new URL("./fixtures/", import.meta.url);
+const saharaJson = JSON.parse(
+  await readFile(new URL("sahara.chapters.sequence.json", fixtures))
+);
+const sahara = (ending) =>
+  loadSequence(
+    {
+      ...structuredClone(saharaJson),
+      style: "flat",
+      ...(ending && { ending }),
+    },
+    { dir: fixtures }
+  );
+const pixel = async (png, x, y) => {
+  const { data } = await sharp(png)
+    .extract({ left: x, top: y, width: 1, height: 1 })
+    .raw()
+    .toBuffer({ resolveWithObject: true });
+  return [data[0], data[1], data[2]];
+};
+const inkDistance = (rgb, hex) =>
+  Math.hypot(
+    ...rgb.map((v, i) => v - parseInt(hex.slice(1 + 2 * i, 3 + 2 * i), 16))
+  );
+
+// @req REQ-186
+test("a chapter hold draws its marker bars and subtitle box; the band is empty between chapters", async () => {
+  // 28 s: chapter 3 of 5 reads its first subtitle. 25.8 s: chapter 2 has
+  // left and chapter 3 has not entered.
+  const [hold, gap] = await renderFrames(sahara(), [840, 774], options());
+  const bars = ["#a8977f", "#a8977f", "#e8b96a", "#4a3c2c", "#4a3c2c"];
+  for (const [j, ink] of bars.entries())
+    assert.ok(
+      inkDistance(await pixel(hold, 134 + j * 34, 442), ink) < 12,
+      `bar ${j + 1} is ${ink}`
+    );
+  // The left padding of the box: #15100b at 82 % stays dark over any ground.
+  const box = await windowStats(hold, 127, 975, 10);
+  const luma =
+    0.2126 * box.mean[0] + 0.7152 * box.mean[1] + 0.0722 * box.mean[2];
+  assert.ok(luma < 60 && box.sd < 4, "the subtitle sits on its dark box");
+  const [text, empty] = [
+    await windowStats(hold, 250, 975, 40),
+    await windowStats(gap, 250, 975, 40),
+  ];
+  assert.ok(text.max > 200, "the subtitle is drawn");
+  assert.ok(empty.max < text.max - 60, "the band is empty between chapters");
+});
+
+// @req REQ-186
+test("ending A adds the site pill; both endings keep the imagery line", async () => {
+  const a = sahara({
+    variant: "A",
+    pageOnline: true,
+    sentence: "L'histoire du nom Sahara est sur le site.",
+  });
+  const b = sahara();
+  const [endA] = await renderFrames(a, [frameCount(a) - 1], options());
+  const [endB] = await renderFrames(b, [frameCount(b) - 1], options());
+  const accentPixels = async (png) => {
+    let count = 0;
+    for (let x = 240; x < 840; x += 2)
+      if (inkDistance(await pixel(png, x, 884), "#e8b96a") < 40) count++;
+    return count;
+  };
+  assert.ok((await accentPixels(endA)) > 10, "ending A shows the pill");
+  assert.equal(await accentPixels(endB), 0, "ending B shows no pill");
+  for (const png of [endA, endB])
+    assert.ok(
+      (await windowStats(png, 200, 1226, 20)).max > 120,
+      "the imagery credit stays on the last frame"
+    );
+});
+
+// @req REQ-186
+test("a reconstructed outline is drawn in dots, never as a solid line", async () => {
+  const seq = sahara();
+  const frame = 1470; // 49 s, chapter 5 fully drawn
+  const [hold] = await renderFrames(seq, [frame], options());
+  const { camera } = frameState(seq, frame);
+  const [from, to] = [project(camera, 19, 14.5), project(camera, 18.1, 12.4)];
+  let bright = 0;
+  const samples = 60;
+  for (let i = 0; i < samples; i++) {
+    const t = 0.2 + (0.6 * i) / samples;
+    const rgb = await pixel(
+      hold,
+      Math.round(from.x + (to.x - from.x) * t),
+      Math.round(from.y + (to.y - from.y) * t)
+    );
+    if (inkDistance(rgb, "#bfe0ea") < 70) bright++;
+  }
+  assert.ok(
+    bright > samples * 0.15 && bright < samples * 0.85,
+    `dots and gaps along the outline (${bright} of ${samples} bright)`
+  );
 });

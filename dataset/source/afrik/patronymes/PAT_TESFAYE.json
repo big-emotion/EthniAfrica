@@ -16,6 +16,24 @@
           "sourceRefs": ["afrik-candidate-queue"]
         }
       ]
+    },
+    {
+      "spelling": "Tesfay",
+      "attestations": [
+        {
+          "countryId": "ERI",
+          "sourceRefs": ["dafn-tesfay"]
+        }
+      ]
+    },
+    {
+      "spelling": "Tesfai",
+      "attestations": [
+        {
+          "countryId": "ERI",
+          "sourceRefs": ["dafn-tesfai", "munzinger-1859-bogos"]
+        }
+      ]
     }
   ],
   "transmissionMode": "non_hereditary",
@@ -43,6 +61,11 @@
       "countryId": "ETH",
       "status": "attested",
       "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "countryId": "ERI",
+      "status": "attested",
+      "sourceRefs": ["dafn-tesfay", "dafn-tesfai"]
     }
   ],
   "alliances": [],
@@ -65,6 +88,30 @@
       "tier": "unverified",
       "source_kind": "community",
       "notes": "Entrée communautaire consultée le 2 septembre 2026 : elle donne la graphie amharique ተስፋዬ et la glose « my hope ». Elle ne documente ni lignée ni transmission. Les versions anglaise, allemande et italienne de Wikipédia n'ont été contrôlées que comme pistes et ne sont pas citées."
+    },
+    {
+      "sourceKey": "dafn-tesfay",
+      "title": "Dictionary of American Family Names, 2e éd. — Tesfay",
+      "url": "https://www.ancestry.com/last-name-meaning/tesfay?geo-lang=en",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 ; le site affiche aussi une traduction française. La notice dit : nom personnel éthiopien et érythréen, équivalent tigrigna de l'amharique Tesfaye. Les Éthiopiens et les Érythréens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+    },
+    {
+      "sourceKey": "dafn-tesfai",
+      "title": "Dictionary of American Family Names, 2e éd. — Tesfai",
+      "url": "https://www.ancestry.com/last-name-meaning/tesfai?geo-lang=en",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 ; le site affiche aussi une traduction française. La notice dit : nom érythréen, variante du nom tigrigna Tesfay, que l'on trouve presque exclusivement chez les Érythréens. Les Érythréens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+    },
+    {
+      "sourceKey": "munzinger-1859-bogos",
+      "title": "Ueber die Sitten und das Recht der Bogos",
+      "url": "https://archive.org/details/ueberdiesittenu00munzgoog",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Winterthur, J. Wurster & Comp., 1859. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 55 : un certain Muass avait du côté de sa mère, chez les Marea, « mächtige Verwandte, das sogenannte Beit Tesfai ». L'auteur ne dit pas ce que veut dire le nom."
     }
   ],
   "gaps": [
@@ -100,5 +147,247 @@
       "fieldPath": "countries",
       "reason": "La source propre au nom n'a pas confirmé le pays où il est porté ; les recherches « Tesfaye » avec Ethiopia, Eritrea et les variantes de la fiche n'ont pas livré de registre officiel exploitable."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Tesfaye est un nom personnel éthiopien ; Tesfay, que l'on écrit aussi Tesfai, est sa forme en tigrigna, portée surtout en Érythrée. Il sert de second nom aux enfants d'un homme qui le porte, sans devenir un nom de famille. Une forme proche, Tesfaie, apparaît par écrit en 1853. Nous présentons plus bas l'explication de son sens que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Tesfaye",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel éthiopien, porté en second par les enfants d'un Tesfaye.",
+        "periodLabel": "Écrit dès 1853 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1996,
+              "to": 2022,
+              "label": "Décrit en 1996 et en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Tesfaye est un nom personnel éthiopien. En Éthiopie, une personne porte son propre nom suivi du nom personnel de son père, parfois de celui de son grand-père. Chez l'enfant d'un Tesfaye, Tesfaye est donc le nom du père, et il ne passe pas aux petits-enfants.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Names of Persons: National Usages for Entry in Catalogues",
+                "author": "IFLA Universal Bibliographic Control and International MARC Programme",
+                "year": 1996,
+                "url": "https://www.ifla.org/files/assets/cataloguing/pubs/names-of-persons_1996.pdf",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 64-65",
+                "notes": "Quatrième édition, Munich, K. G. Saur, 1996, lue dans le PDF de l'IFLA le 12 octobre 2026. La notice Éthiopie, p. 64-65, fournie par la bibliothèque de l'université d'Addis-Abeba et approuvée par la Bibliothèque et les Archives nationales en octobre 1994, compose le nom d'un nom personnel, suivi du nom personnel du père, parfois de celui du grand-père. Elle cite Wolde Mariam parmi les noms composés, W. Berhan pour Wolde Berhan parmi les abréviations, et l'abuna Lukas Tewolde parmi les exemples. Elle note que le Code civil de 1960 prescrit un nom de famille, usage qui ne s'est pas encore répandu."
+              },
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Tesfaye",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/tesfaye?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 ; le site affiche aussi une traduction française. La notice dit : nom personnel éthiopien interprété comme « mon espoir » en amharique. Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Tesfaye voudrait dire « mon espoir » en amharique, selon le Dictionary of American Family Names. Le mot tasfa, « espoir », figure dans le dictionnaire du guèze de Wolf Leslau et dans la notice du site Behind the Name, qui y rattache le nom.",
+            "hypothesisGroup": "origine du nom Tesfaye",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Tesfaye",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/tesfaye?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 ; le site affiche aussi une traduction française. La notice dit : nom personnel éthiopien interprété comme « mon espoir » en amharique. Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              },
+              {
+                "title": "Comparative Dictionary of Geʿez (Classical Ethiopic)",
+                "author": "Wolf Leslau",
+                "year": 1987,
+                "url": "https://archive.org/details/leslau-comparative-dictionary-of-geez-1987",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 490",
+                "notes": "Wiesbaden, Otto Harrassowitz, 1987. Lu le 12 octobre 2026 dans une copie non officielle déposée sur Internet Archive par un particulier. Page 490, entrée *saffawa : tasfā, « hope, expectation, promise » ; le mot täsfa, « hope », existe aussi en tigré, en tigrigna, en amharique et en argobba."
+              },
+              {
+                "title": "Meaning, origin and history of the name Tesfaye — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/tesfaye",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice du site Behind the Name, lue le 12 octobre 2026. Elle écrit le nom ተስፋዬ et le fait venir de l'amharique tasfa, « hope »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1853,
+              "to": 1853,
+              "label": "1853"
+            },
+            "era": "polity",
+            "statement": "Le nom Tesfaye apparaît par écrit sous une forme proche, Tesfaie, dans le Giornale di Roma : un jeune homme d'Adoua, Maria Tesfaie, y lit un texte en amharique lors de la fête de l'Épiphanie du collège de la Propagande, à Rome. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "Tesfaie",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Giornale di Roma, n° 8",
+                "author": "Giornale di Roma",
+                "year": 1853,
+                "url": "https://archive.org/details/giornale-di-roma-1853-01-images",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 1",
+                "notes": "Rome, typographie Salviucci, mercredi 12 janvier 1853. Lu le 11 octobre 2026 sur l'exemplaire numérisé de la Biblioteca Nazionale Centrale de Rome, sur archive.org. Le compte rendu de l'académie polyglotte du collège urbain de la Propagande, tenue pour l'Épiphanie, cite au numéro 43 un « Saggio di prosa amarica » lu par « sig. Maria Tesfaie di Adua nell'Abissinia »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tesfay",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel surtout érythréen, porté en second par les enfants d'un Tesfay.",
+        "periodLabel": "Écrit Tesfai dès 1859 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Tesfay est un nom personnel en Éthiopie et en Érythrée. Comme ces deux pays n'ont pas de nom de famille héréditaire, il n'a été enregistré comme nom de famille qu'aux États-Unis, après l'immigration de ceux qui le portent, selon le Dictionary of American Family Names.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Tesfay",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/tesfay?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 ; le site affiche aussi une traduction française. La notice dit : nom personnel éthiopien et érythréen, équivalent tigrigna de l'amharique Tesfaye. Les Éthiopiens et les Érythréens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Tesfay serait la forme tigrigna du nom amharique Tesfaye, que le Dictionary of American Family Names traduit par « mon espoir ». Le mot täsfa, « espoir », existe en tigrigna comme en amharique, selon le dictionnaire de Wolf Leslau.",
+            "hypothesisGroup": "origine du nom Tesfay",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Tesfay",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/tesfay?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 ; le site affiche aussi une traduction française. La notice dit : nom personnel éthiopien et érythréen, équivalent tigrigna de l'amharique Tesfaye. Les Éthiopiens et les Érythréens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              },
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Tesfaye",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/tesfaye?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 ; le site affiche aussi une traduction française. La notice dit : nom personnel éthiopien interprété comme « mon espoir » en amharique. Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              },
+              {
+                "title": "Comparative Dictionary of Geʿez (Classical Ethiopic)",
+                "author": "Wolf Leslau",
+                "year": 1987,
+                "url": "https://archive.org/details/leslau-comparative-dictionary-of-geez-1987",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 490",
+                "notes": "Wiesbaden, Otto Harrassowitz, 1987. Lu le 12 octobre 2026 dans une copie non officielle déposée sur Internet Archive par un particulier. Page 490, entrée *saffawa : tasfā, « hope, expectation, promise » ; le mot täsfa, « hope », existe aussi en tigré, en tigrigna, en amharique et en argobba."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tesfai",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Tesfai est une variante de Tesfay que l'on trouve presque seulement chez les Érythréens, selon le Dictionary of American Family Names.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Tesfai",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/tesfai?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 ; le site affiche aussi une traduction française. La notice dit : nom érythréen, variante du nom tigrigna Tesfay, que l'on trouve presque exclusivement chez les Érythréens. Les Érythréens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1859,
+              "to": 1859,
+              "label": "1859"
+            },
+            "era": "polity",
+            "statement": "Le nom Tesfai apparaît par écrit chez Werner Munzinger, dans son livre sur le droit des Bogos : chez les Marea, il nomme « Beit Tesfai » des parents puissants qu'un homme avait du côté de sa mère. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Tesfai",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Werner Munzinger",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Ueber die Sitten und das Recht der Bogos",
+                "author": "Werner Munzinger",
+                "year": 1859,
+                "url": "https://archive.org/details/ueberdiesittenu00munzgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 55",
+                "notes": "Winterthur, J. Wurster & Comp., 1859. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 55 : un certain Muass avait du côté de sa mère, chez les Marea, « mächtige Verwandte, das sogenannte Beit Tesfai ». L'auteur ne dit pas ce que veut dire le nom."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

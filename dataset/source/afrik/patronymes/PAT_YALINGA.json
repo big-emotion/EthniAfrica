@@ -11,7 +11,10 @@
     {
       "spelling": "Yalinga",
       "attestations": [
-        { "countryId": "CAF", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "CAF",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -93,5 +96,42 @@
       "fieldPath": "bearers",
       "reason": "Les recherches exactes du nom dans les sources centrafricaines et internationales n'ont identifié aucun porteur vérifiable répondant aux critères du schéma."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Yalinga est connu comme celui d'une localité de Centrafrique, dans la Haute-Kotto. On ne sait pas avec certitude qu'il soit aussi un nom de famille : aucune source consultée ne le montre, et aucune ne dit d'où vient le nom.",
+    "names": [
+      {
+        "nameText": "Yalinga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'une localité de Centrafrique ; on ne sait pas s'il est aussi un nom de famille.",
+        "periodLabel": "Attesté comme lieu aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Carte de 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Yalinga désigne une localité de la Haute-Kotto, en Centrafrique, sur la carte du pays que publient les Nations unies. Cette carte ne dit pas s'il est aussi porté comme nom de famille.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Central African Republic, Map No. 4048 Rev. 9.1",
+                "author": "Nations unies, section de l'information géospatiale",
+                "year": 2020,
+                "url": "https://www.un.org/geospatial/sites/www.un.org.geospatial/files/files/documents/2020/Apr/central_african_republic_4048_r9.1_feb20.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "Carte officielle des Nations unies révisée en février 2020, lue le 11 octobre 2026. Elle place la localité de Yalinga dans la Haute-Kotto. Elle ne dit rien d'un nom de famille."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

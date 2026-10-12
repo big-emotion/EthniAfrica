@@ -1654,7 +1654,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
       "La fiche rapporte que des Fang auraient entretenu cette réputation pour tenir les visiteurs à distance. Elle ne cite toutefois pas de source consacrée à cette affirmation. Ce récit demande donc une vérification avant de pouvoir être retenu.",
     ],
     entities: [
-      { kind: "people", id: "PPL_FANG_GABON", label: "Fang" },
+      { kind: "people", id: "PPL_FANG", label: "Fang" },
       { kind: "country", id: "GAB", label: "Gabon" },
       { kind: "country", id: "GNQ", label: "Guinée équatoriale" },
       { kind: "country", id: "CMR", label: "Cameroun" },
@@ -1756,7 +1756,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
       "Ces noms correspondent à des usages différents : celui des personnes concernées, celui de leurs voisins et celui des chercheurs. Les catalogues de langues reprennent surtout ce dernier.",
     ],
     entities: [
-      { kind: "people", id: "PPL_WEST_TAA", label: "!Xoon occidental" },
+      { kind: "people", id: "PPL_TAA", label: "!Xoon occidental" },
       { kind: "country", id: "BWA", label: "Botswana" },
       { kind: "country", id: "NAM", label: "Namibie" },
     ],

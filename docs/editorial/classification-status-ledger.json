@@ -355,11 +355,6 @@
     "rationale": "« Le terme Pahouin est une deformation coloniale francaise », Pangwe etant le « terme allemand utilise pendant la colonisation de Kamerun », et la calomnie du cannibalisme a servi la violence coloniale."
   },
   {
-    "id": "PPL_BETI_FANG",
-    "status": "colonial-legacy",
-    "rationale": "La fiche qualifie Beti-Fang de construction coloniale, Pahouin ayant ete repris par les colonisateurs europeens et Pangwe etant la denomination allemande pour fusionner des identites distinctes."
-  },
-  {
     "id": "PPL_BEZANOZANO",
     "status": "contested",
     "rationale": "« Historiquement stigmatise sous la domination Merina, ou il est devenu synonyme d'andevo (esclave) » puis revendique positivement : la stigmatisation vient d'un pouvoir malgache, non colonial."
@@ -373,16 +368,6 @@
     "id": "PPL_BIDYOGO",
     "status": "colonial-legacy",
     "rationale": "La fiche fait du nom courant un usage europeen : « le terme Bijago est d'usage portugais, utilise depuis les premiers contacts europeens au 15e siecle », « Bissago, utilise par les marins portugais »."
-  },
-  {
-    "id": "PPL_BIJAGO_BIDYOGO",
-    "status": "colonial-legacy",
-    "rationale": "« Le nom Bissagos, donne par les premiers navigateurs europeens (Anglais, Allemands, puis Portugais) au XVe-XVIe siecle » est a l'origine des formes Bijago / Bidyogo aujourd'hui concurrentes."
-  },
-  {
-    "id": "PPL_BIJAOGO",
-    "status": "colonial-legacy",
-    "rationale": "« Les differentes formes du nom refletent les transcriptions variees par les explorateurs et administrateurs portugais (XVIe siecle), puis francais et britanniques »."
   },
   {
     "id": "PPL_BILLE",
@@ -628,16 +613,6 @@
     "id": "PPL_FANG",
     "status": "colonial-legacy",
     "rationale": "« Pahouin est le terme utilise par les colonisateurs francais », Pangwe la denomination allemande et Pamue l'espagnole, termes associes aux « stereotypes coloniaux de cannibalisme »."
-  },
-  {
-    "id": "PPL_FANG_EQGUINEE",
-    "status": "colonial-legacy",
-    "rationale": "Pamue est la forme espagnole utilisee par les colonisateurs espagnols, Pahouin l'appellation coloniale generale et Pangwe la forme germanisee, alors que les Fang se designent Fan ou Fang."
-  },
-  {
-    "id": "PPL_FANG_GABON",
-    "status": "colonial-legacy",
-    "rationale": "La fiche dit Pahouin pejoratif car forge par les administrateurs coloniaux au 19e siecle, Pangwe etant l'equivalent allemand, alors que Fan est l'endonyme prefere par le peuple."
   },
   {
     "id": "PPL_FIPA",
@@ -1460,16 +1435,6 @@
     "rationale": "La fiche dit que Matabele 'fut employe par les Sotho-Tswana voisins' et est percu comme depreciatif par les Ndebele, qui preferent AmaNdebele ; les colons n'ont fait que le reprendre."
   },
   {
-    "id": "PPL_NDEBELE_MACRO",
-    "status": "colonial-legacy",
-    "rationale": "« Matabele est la forme anglicisée utilisée par les Britanniques pour désigner les Ndebele du Zimbabwe » : un exonyme forgé par le colonisateur."
-  },
-  {
-    "id": "PPL_NDEBELE_MZ",
-    "status": "contested",
-    "rationale": "L'identité Ndebele au Mozambique est « peu documentée dans les sources primaires » et la frontière avec « l'identité Shangaan-Nguni plus large est floue » : un désaccord de délimitation, sans acteur colonial."
-  },
-  {
     "id": "PPL_NDEBELE_SA",
     "status": "contested",
     "rationale": "La fiche argue la confusion avec les Ndebele du Zimbabwe, 'branches distinctes du tronc nguni, separees depuis le XVIe siecle au moins', et non une denomination forgee par un acteur colonial."
@@ -1860,11 +1825,6 @@
     "rationale": "Le probleme pose est la confusion Suri/Surma dans la presse touristique et les classifications, Surma etant « abandonne dans la nomenclature scientifique » (Unseth 1997) : debat savant, sans auteur colonial."
   },
   {
-    "id": "PPL_SURMA",
-    "status": "contested",
-    "rationale": "« Le terme Surma est un exonyme administratif utilisé par le gouvernement éthiopien » alors que « les membres du groupe se désignent eux-mêmes comme Suri »."
-  },
-  {
     "id": "PPL_SWAHILI",
     "status": "colonial-legacy",
     "rationale": "L'exonyme fautif est européen : « Arabes de la côte (terme inexact et problématique utilisé par les Européens) », le nom ayant été « adopté par les Européens » pour désigner les côtiers."
@@ -1880,9 +1840,9 @@
     "rationale": "« La désignation Swahili pour ces populations est académique plutôt qu'auto-attribuée » : « les Bajuni insistent sur leur identité distincte » et se disent Bajuni ou Bravanese."
   },
   {
-    "id": "PPL_SWAHILI_YEMEN",
+    "id": "PPL_MUWALLADEEN",
     "status": "contested",
-    "rationale": "« Les termes Akhdam et Muwalladeen sont chargés de stigmatisation raciale et sociale » ; Akhdam signifie « serviteurs en arabe et est utilisé de manière péjorative » par la société yéménite."
+    "rationale": "« Le nom est souvent employé pour rabaisser » et « Beaucoup cachent leurs origines pour ne pas être mis à l'écart » : un nom donné par la société yéménite, sans auteur colonial."
   },
   {
     "id": "PPL_SWAZI",
@@ -1985,11 +1945,6 @@
     "rationale": "Prose mince : le grief est que « la dénomination Tsao ne figure pas dans les grandes bases de données linguistiques standards » et la confusion avec les groupes voisins, pas un nom colonial."
   },
   {
-    "id": "PPL_TSAO_KXA",
-    "status": "colonial-legacy",
-    "rationale": "Bushmen, d'origine coloniale neerlandaise et britannique, est dit historiquement charge de connotations coloniales et deshumanisantes, la communaute se designant elle-meme comme Tshao."
-  },
-  {
     "id": "PPL_TSHUWA",
     "status": "contested",
     "rationale": "Sesarwa ou Sarwa, nom donne par les Tswana, est juge pejoratif car il implique une subordination aux Tswana, et Basarwa comme Bushmen sont juges reducteurs ou rejetes."
@@ -2068,11 +2023,6 @@
     "id": "PPL_WE",
     "status": "colonial-legacy",
     "rationale": "Guere est un exonyme donne par un administrateur colonial francais pour les populations au sud des Dan, et la fragmentation We / Guere / Krahn est amplifiee par les frontieres coloniales."
-  },
-  {
-    "id": "PPL_WEST_TAA",
-    "status": "reconstructive",
-    "rationale": "« La designation West Taa est une denomination linguistique externe », forgee par les linguistes du projet DoBeS ; « les locuteurs se designent par leur propre ethnonyme (!Xoon ou 'N|ohan) »."
   },
   {
     "id": "PPL_WIYANA",

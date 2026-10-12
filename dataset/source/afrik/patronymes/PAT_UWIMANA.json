@@ -71,5 +71,94 @@
       "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Uwimana est un nom du Rwanda et du Burundi. Il veut dire « il est à Imana », le nom de Dieu dans ces deux pays, selon la missionnaire Rosemary Guillebaud. Un père le donne à son enfant pour louer la bonté d'Imana. Le nom sert aussi de nom de famille.",
+    "names": [
+      {
+        "nameText": "Uwimana",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kin",
+        "namedBy": null,
+        "shortLine": "Un nom du Rwanda et du Burundi qui veut dire « il est à Imana », selon une missionnaire en 1950.",
+        "periodLabel": "Écrit dès 1950 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1974,
+              "to": 1974,
+              "label": "Septembre 1974"
+            },
+            "era": "modern",
+            "statement": "Le nom Uwimana sert de nom de famille à un Rwandais chargé de superviser des coopératives, dans un télégramme envoyé de Kigali par l'ambassade des États-Unis.",
+            "formAsWritten": "UWIMANA",
+            "sources": [
+              {
+                "title": "Young Professionals Educational Travel for CU/AF Chard (télégramme Kigali 00497)",
+                "author": "Ambassade des États-Unis à Kigali",
+                "year": 1974,
+                "url": "https://archive.org/details/State-Dept-cable-1974-214240",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 1",
+                "notes": "Télégramme du 11 septembre 1974, de l'ambassade des États-Unis à Kigali au département d'État, rendu public en 2005 et déposé sur Internet Archive. Relu le 12 octobre 2026. Il porte en objet « J.M.V. UWIMANA » et note : « UWIMANA DEPARTED KIGALI 10 SEPT AS SCHEDULED » ; il ajoute que cet homme est chargé de superviser des coopératives au Rwanda."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1950,
+              "to": 1950,
+              "label": "Décrit en 1950"
+            },
+            "era": "colonial",
+            "statement": "Le nom Uwimana veut dire « il est à Imana », Imana étant le nom de Dieu au Rwanda et au Burundi. C'est l'un des noms par lesquels un père loue la bonté d'Imana en nommant son enfant, selon la missionnaire Rosemary Guillebaud.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Idea of God in Ruanda-Urundi",
+                "author": "Rosemary Guillebaud",
+                "year": 1950,
+                "url": "https://archive.org/details/dli.ernet.233313",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 194-195",
+                "notes": "Chapitre 6 du livre African Ideas of God, dirigé par Edwin W. Smith, Londres, Edinburgh House Press, 1950. L'autrice, de la Church Missionary Society, a traduit la Bible en kirundi. Lu le 12 octobre 2026 dans la numérisation de la Digital Library of India hébergée par Internet Archive ; les pages 194 et 195 ont été vues en image. Page 194 : c'est le père qui nomme l'enfant ; les noms en italique sont communs aux deux pays, les autres sont de l'Urundi. Page 195, parmi les noms qui louent la bonté d'Imana : « Uwimana, ‘He is Imana's’ », en italique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1950,
+              "to": 1950,
+              "label": "1950"
+            },
+            "era": "colonial",
+            "statement": "Le nom Uwimana apparaît par écrit chez Rosemary Guillebaud, une missionnaire qui a traduit la Bible en kirundi. Elle le donne comme un nom porté à la fois au Ruanda et en Urundi, les actuels Rwanda et Burundi. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand une autrice l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Uwimana",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Rosemary Guillebaud",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Idea of God in Ruanda-Urundi",
+                "author": "Rosemary Guillebaud",
+                "year": 1950,
+                "url": "https://archive.org/details/dli.ernet.233313",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 194-195",
+                "notes": "Chapitre 6 du livre African Ideas of God, dirigé par Edwin W. Smith, Londres, Edinburgh House Press, 1950. L'autrice, de la Church Missionary Society, a traduit la Bible en kirundi. Lu le 12 octobre 2026 dans la numérisation de la Digital Library of India hébergée par Internet Archive ; les pages 194 et 195 ont été vues en image. Page 194 : c'est le père qui nomme l'enfant ; les noms en italique sont communs aux deux pays, les autres sont de l'Urundi. Page 195, parmi les noms qui louent la bonté d'Imana : « Uwimana, ‘He is Imana's’ », en italique."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -11,7 +11,10 @@
     {
       "spelling": "Tembo",
       "attestations": [
-        { "countryId": "ZMB", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "ZMB",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -75,5 +78,75 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Tembo est un nom de famille porté notamment chez les Ngoni du nord du Malawi, où il est écrit dès 1899. On ne sait pas avec certitude d'où il vient ni ce qu'il veut dire : le projet n'a pas trouvé de source qui l'explique.",
+    "names": [
+      {
+        "nameText": "Tembo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille écrit dès 1899 chez les Ngoni du nord du Malawi.",
+        "periodLabel": "Écrit dès 1899 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Tembo est un nom de famille, porté après le prénom. Les sources que le projet a lues ne disent ni d'où il vient ni ce qu'il veut dire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Among the Wild Ngoni: Being Some Chapters in the History of the Livingstonia Mission in British Central Africa",
+                "author": "Walter Angus Elmslie",
+                "year": 1899,
+                "url": "https://archive.org/details/amongwildngonibe00elms",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 285 et 296",
+                "notes": "New York, Revell, 1899. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 285 : Mawalera Tembo est installé à la station de Njuyu pour y conduire le travail de la mission ; il a été baptisé en 1890 avec son frère Makara. Page 296 : il assiste, en 1897, à l'installation du chef suprême des Ngoni qui succède à Mombera. Récit d'un missionnaire de l'époque coloniale, cité ici pour la forme qu'il écrit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1899,
+              "to": 1899,
+              "label": "1899"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tembo apparaît par écrit chez Walter Angus Elmslie, missionnaire de la mission de Livingstonia chez les Ngoni du nord du Malawi. Il le donne à Mawalera Tembo, instituteur de la station de Njuyu, baptisé en 1890. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est porté.",
+            "formAsWritten": "Tembo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Walter Angus Elmslie",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Mawalera Tembo",
+                "role": "porte ce nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Among the Wild Ngoni: Being Some Chapters in the History of the Livingstonia Mission in British Central Africa",
+                "author": "Walter Angus Elmslie",
+                "year": 1899,
+                "url": "https://archive.org/details/amongwildngonibe00elms",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 285 et 296",
+                "notes": "New York, Revell, 1899. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 285 : Mawalera Tembo est installé à la station de Njuyu pour y conduire le travail de la mission ; il a été baptisé en 1890 avec son frère Makara. Page 296 : il assiste, en 1897, à l'installation du chef suprême des Ngoni qui succède à Mombera. Récit d'un missionnaire de l'époque coloniale, cité ici pour la forme qu'il écrit."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

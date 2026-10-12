@@ -351,6 +351,10 @@
       {
         "name": "Lugbara",
         "peopleId": "PPL_LUGBARA"
+      },
+      {
+        "name": "Suri",
+        "peopleId": "PPL_SURI"
       }
     ],
     "linguisticCharacteristics": {

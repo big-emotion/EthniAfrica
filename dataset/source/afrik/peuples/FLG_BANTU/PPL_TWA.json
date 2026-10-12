@@ -158,5 +158,324 @@
         "notes": "Atteste la graphie ancienne « pigmée »."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Twa désigne un peuple des Grands Lacs, au Rwanda, au Burundi, dans l'est de la république démocratique du Congo et en Ouganda, qui se nomme lui-même Batwa, et Mutwa pour une seule personne. D'autres noms existent : Pygmées, un mot savant venu du grec, et des noms méprisants que lui donnent ses voisins, comme Abayanda. On ne sait pas avec certitude d'où vient le nom Twa ; ce que disent les sources est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Batwa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne : Batwa au pluriel, Mutwa pour une personne.",
+        "periodLabel": "Écrit depuis 1903 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Batwa est celui que la plupart de ces gens se donnent ; une seule personne se dit Mutwa. Dans la plupart des langues bantoues, le radical -twa désigne des chasseurs-cueilleurs, ou d'anciens chasseurs-cueilleurs, reconnus comme les premiers habitants d'une région et tenus en très basse estime, selon l'anthropologue Jerome Lewis. Les sources que nous avons lues n'expliquent pas l'origine de ce radical.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Batwa Pygmies of the Great Lakes Region",
+                "author": "Jerome Lewis",
+                "year": 2000,
+                "url": "https://citizenshiprightsafrica.org/wp-content/uploads/2001/03/Lewis-Batwa-report-MRG-2000.pdf",
+                "tier": "referenced",
+                "source_kind": "ngo",
+                "page": "p. 5",
+                "notes": "Rapport de Minority Rights Group International, Londres, 2000 ; lu dans la copie en ligne le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Batwa se prononce Barhwa dans certaines régions. Selon le ton, il peut être respectueux ou insultant : au Burundi, des Batwa qui se disent « développés » préfèrent qu'on les appelle Abaterambere, « ceux qui avancent », selon Jerome Lewis.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Batwa Pygmies of the Great Lakes Region",
+                "author": "Jerome Lewis",
+                "year": 2000,
+                "url": "https://citizenshiprightsafrica.org/wp-content/uploads/2001/03/Lewis-Batwa-report-MRG-2000.pdf",
+                "tier": "referenced",
+                "source_kind": "ngo",
+                "page": "p. 5",
+                "notes": "Rapport de Minority Rights Group International, Londres, 2000 ; lu dans la copie en ligne le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1891,
+              "to": 1894,
+              "label": "Voyage de 1891-1893, livre de 1894"
+            },
+            "era": "colonial",
+            "statement": "Le nom Batwa apparaît, sous la forme Watwa, chez l'explorateur Oscar Baumann, qui donne aussi la forme Batwa : en Urundi, il voit dans les Watwa, dispersés dans tout le pays, la population la plus ancienne, et note que ce nom est surtout donné aux peuples pygmées des forêts du sud du Congo. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "birth": true,
+            "formAsWritten": "Watwa",
+            "sources": [
+              {
+                "title": "Durch Massailand zur Nilquelle : Reisen und Forschungen der Massai-Expedition des deutschen Antisklaverei-Komite in den Jahren 1891-1893",
+                "author": "Oscar Baumann",
+                "year": 1894,
+                "url": "https://www.gutenberg.org/ebooks/68057",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Berlin, Dietrich Reimer, 1894. Lu dans l'édition du Projet Gutenberg le 12 octobre 2026 ; la page est celle de l'édition imprimée, que cette édition indique.",
+                "page": "p. 82 et p. 215"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1903,
+              "label": "Observations depuis 1896, livre de 1903"
+            },
+            "era": "colonial",
+            "statement": "Le nom Batwa s'écrit Watwa chez le missionnaire Jean-Michel van der Burgt, arrivé dans l'Urundi en 1896, qui publie en 1903 des notices sur les « Pygmées-Watwa » de ce pays.",
+            "formAsWritten": "Watwa",
+            "sources": [
+              {
+                "title": "Un grand peuple de l'Afrique équatoriale : éléments d'une monographie sur l'Urundi et les Warundi",
+                "author": "Jean-Michel van der Burgt",
+                "year": 1903,
+                "url": "https://archive.org/details/ungrandpeuplede00burggoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. V et p. VII",
+                "notes": "Bois-le-Duc, Société « L'illustration catholique », 1903. L'auteur, missionnaire, est arrivé dans l'Urundi en 1896. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1903,
+              "to": 1903,
+              "label": "1903"
+            },
+            "era": "colonial",
+            "statement": "Le nom Batwa désigne, chez Jean-Michel van der Burgt, un peuple que les Bantous de l'Urundi méprisent : jamais un Murundi, écrit-il, n'accepterait d'épouser une Mutwa.",
+            "formAsWritten": "Mutwa",
+            "sources": [
+              {
+                "title": "Un grand peuple de l'Afrique équatoriale : éléments d'une monographie sur l'Urundi et les Warundi",
+                "author": "Jean-Michel van der Burgt",
+                "year": 1903,
+                "url": "https://archive.org/details/ungrandpeuplede00burggoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. XXXII",
+                "notes": "Bois-le-Duc, Société « L'illustration catholique », 1903. L'auteur, missionnaire, est arrivé dans l'Urundi en 1896. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Pygmée",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "grc",
+        "namedBy": "Des explorateurs européens, à la fin du XIXe siècle",
+        "shortLine": "Un mot venu du grec, appliqué à la fin du XIXe siècle à des peuples de petite taille d'Afrique centrale.",
+        "periodLabel": "Pour ce peuple, écrit depuis 1903",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Pygmée viendrait du latin Pygmaei, lui-même tiré du grec pugmaios, « grand comme le poing », selon le Dictionnaire de l'Académie française.",
+            "sources": [
+              {
+                "title": "Dictionnaire de l'Académie française, 9e édition, entrée « pygmée »",
+                "author": "Académie française",
+                "year": null,
+                "url": "https://www.dictionnaire-academie.fr/article/A9P5144",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue sur le site du Dictionnaire de l'Académie française le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1694,
+              "to": 1694,
+              "label": "1694"
+            },
+            "statement": "Le nom Pygmée désigne en français, en 1694, un « petit homme qui n'a qu'une coudée de hauteur » ; selon les Anciens, les Pygmées combattaient les grues, d'après le Dictionnaire de l'Académie française.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Dictionnaire de l'Académie française, 1re édition, entrée « pygmée »",
+                "author": "Académie française",
+                "year": null,
+                "url": "https://www.dictionnaire-academie.fr/article/A1P0524",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "tome 2, p. 346",
+                "notes": "Entrée lue sur le site du Dictionnaire de l'Académie française le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1880,
+              "to": 1900,
+              "label": "Fin du XIXe siècle"
+            },
+            "statement": "Le nom Pygmée est donné à la fin du XIXe siècle par des explorateurs à des populations de petite taille d'Afrique centrale et méridionale, selon le Dictionnaire de l'Académie française.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Dictionnaire de l'Académie française, 9e édition, entrée « pygmée »",
+                "author": "Académie française",
+                "year": null,
+                "url": "https://www.dictionnaire-academie.fr/article/A9P5144",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue sur le site du Dictionnaire de l'Académie française le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1891,
+              "to": 1894,
+              "label": "Voyage de 1891-1893, livre de 1894"
+            },
+            "era": "colonial",
+            "statement": "Le nom Pygmée est rapproché de ce peuple, sous sa forme allemande Pygmäen, par Oscar Baumann, qui décrit dans le nord de l'Urundi « une tribu des Watwa, apparentée aux Pygmées ». C'est la plus ancienne trace de ce nom pour ce peuple que le projet connaît. Le peuple existait déjà avant elle.",
+            "birth": true,
+            "formAsWritten": "Pygmäen",
+            "sources": [
+              {
+                "title": "Durch Massailand zur Nilquelle : Reisen und Forschungen der Massai-Expedition des deutschen Antisklaverei-Komite in den Jahren 1891-1893",
+                "author": "Oscar Baumann",
+                "year": 1894,
+                "url": "https://www.gutenberg.org/ebooks/68057",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Berlin, Dietrich Reimer, 1894. Lu dans l'édition du Projet Gutenberg le 12 octobre 2026 ; la page est celle de l'édition imprimée, que cette édition indique.",
+                "page": "p. 82"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1903,
+              "label": "Observations depuis 1896, livre de 1903"
+            },
+            "era": "colonial",
+            "statement": "Le nom Pygmée est appliqué en français aux Twa de l'Urundi par Jean-Michel van der Burgt, qui parle en 1903 des « Pygmées-Watwa ».",
+            "formAsWritten": "Pygmées-Watwa",
+            "sources": [
+              {
+                "title": "Un grand peuple de l'Afrique équatoriale : éléments d'une monographie sur l'Urundi et les Warundi",
+                "author": "Jean-Michel van der Burgt",
+                "year": 1903,
+                "url": "https://archive.org/details/ungrandpeuplede00burggoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. V et p. VII",
+                "notes": "Bois-le-Duc, Société « L'illustration catholique », 1903. L'auteur, missionnaire, est arrivé dans l'Urundi en 1896. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Pygmée est un terme savant, que les voisins des Batwa emploient souvent pour les insulter. La plupart des Batwa le rejettent, mais leurs militants l'acceptent pour montrer leur solidarité avec les autres peuples pygmées d'Afrique centrale, selon Jerome Lewis.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Batwa Pygmies of the Great Lakes Region",
+                "author": "Jerome Lewis",
+                "year": 2000,
+                "url": "https://citizenshiprightsafrica.org/wp-content/uploads/2001/03/Lewis-Batwa-report-MRG-2000.pdf",
+                "tier": "referenced",
+                "source_kind": "ngo",
+                "page": "p. 5",
+                "notes": "Rapport de Minority Rights Group International, Londres, 2000 ; lu dans la copie en ligne le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Abayanda",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des voisins des Batwa",
+        "shortLine": "Un nom méprisant, « ceux qui volent », que des chercheurs ont cru choisi par les Batwa d'Ouganda.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Abayanda, « ceux qui volent », fait partie des noms méprisants que les voisins donnent aux Batwa, comme Abashenzi, « les gens non civilisés », ou Gutyoza, « les gens méprisés », selon Jerome Lewis.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Batwa Pygmies of the Great Lakes Region",
+                "author": "Jerome Lewis",
+                "year": 2000,
+                "url": "https://citizenshiprightsafrica.org/wp-content/uploads/2001/03/Lewis-Batwa-report-MRG-2000.pdf",
+                "tier": "referenced",
+                "source_kind": "ngo",
+                "page": "p. 13",
+                "notes": "Rapport de Minority Rights Group International, Londres, 2000 ; lu dans la copie en ligne le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Abayanda serait, selon certains chercheurs, celui que préfèrent les Batwa d'Ouganda. Pendant l'enquête de Minority Rights Group, ces Batwa ne se nommaient pourtant que Batwa, selon Jerome Lewis.",
+            "sources": [
+              {
+                "title": "The Batwa Pygmies of the Great Lakes Region",
+                "author": "Jerome Lewis",
+                "year": 2000,
+                "url": "https://citizenshiprightsafrica.org/wp-content/uploads/2001/03/Lewis-Batwa-report-MRG-2000.pdf",
+                "tier": "referenced",
+                "source_kind": "ngo",
+                "page": "p. 5 et p. 29, note 2",
+                "notes": "Rapport de Minority Rights Group International, Londres, 2000 ; lu dans la copie en ligne le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
