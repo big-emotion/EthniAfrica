@@ -126,5 +126,148 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bafut désigne un peuple de la région du Nord-Ouest du Cameroun, sa langue, sa ville et sa chefferie, qui se nomme lui-même Bɨfɨɨ. Le nom Bafut apparaît par écrit en 1889 et devient le nom administratif officiel à l'époque allemande. Les sources que nous avons lues ne donnent qu'une explication de son origine ; nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Bɨfɨɨ",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bfd",
+        "namedBy": null,
+        "shortLine": "Le nom que les Bafut se donnent, à eux-mêmes et à leur langue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bɨfɨɨ est celui que les Bafut se donnent à eux-mêmes et qu'ils donnent à leur langue, selon les linguistes Pierpaolo Di Carlo et Ayu'nwi N. Neba. On ne sait pas avec certitude depuis quand il est en usage.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The So-Called Royal Register of Bafut within the Bafut Language Ecology",
+                "author": "Pierpaolo Di Carlo et Ayu'nwi N. Neba",
+                "year": 2019,
+                "url": "https://www.acsu.buffalo.edu/~pierpaol/RL_03_DiCarloNeba-RoyalBafut.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 49, note 2",
+                "notes": "Chapitre 3 d'un ouvrage collectif, lu dans l'épreuve de mise en page datée du 15 novembre 2019 que Pierpaolo Di Carlo met en ligne sur sa page de l'université de Buffalo."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bafut",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit dès 1889, devenu le nom administratif à l'époque allemande.",
+        "periodLabel": "Écrit dès 1889 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bafut désigne à la fois une ville, une chefferie traditionnelle, une subdivision administrative, un peuple et sa langue, dans la région du Nord-Ouest du Cameroun, selon Pierpaolo Di Carlo et Ayu'nwi N. Neba. Ce peuple se nomme lui-même Bɨfɨɨ.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The So-Called Royal Register of Bafut within the Bafut Language Ecology",
+                "author": "Pierpaolo Di Carlo et Ayu'nwi N. Neba",
+                "year": 2019,
+                "url": "https://www.acsu.buffalo.edu/~pierpaol/RL_03_DiCarloNeba-RoyalBafut.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 31 et p. 49, note 2",
+                "notes": "Chapitre 3 d'un ouvrage collectif, lu dans l'épreuve de mise en page datée du 15 novembre 2019 que Pierpaolo Di Carlo met en ligne sur sa page de l'université de Buffalo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Rapporté en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Bafut viendrait de la langue mungaka, selon Pierpaolo Di Carlo et Ayu'nwi N. Neba.",
+            "hypothesisGroup": "origine du nom Bafut",
+            "sources": [
+              {
+                "title": "The So-Called Royal Register of Bafut within the Bafut Language Ecology",
+                "author": "Pierpaolo Di Carlo et Ayu'nwi N. Neba",
+                "year": 2019,
+                "url": "https://www.acsu.buffalo.edu/~pierpaol/RL_03_DiCarloNeba-RoyalBafut.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 49, note 2",
+                "notes": "Chapitre 3 d'un ouvrage collectif, lu dans l'épreuve de mise en page datée du 15 novembre 2019 que Pierpaolo Di Carlo met en ligne sur sa page de l'université de Buffalo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1916,
+              "label": "Époque coloniale allemande, 1895-1916"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bafut devient l'appellation administrative officielle pendant l'époque coloniale allemande, selon Pierpaolo Di Carlo et Ayu'nwi N. Neba.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "The So-Called Royal Register of Bafut within the Bafut Language Ecology",
+                "author": "Pierpaolo Di Carlo et Ayu'nwi N. Neba",
+                "year": 2019,
+                "url": "https://www.acsu.buffalo.edu/~pierpaol/RL_03_DiCarloNeba-RoyalBafut.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 49, note 2",
+                "notes": "Chapitre 3 d'un ouvrage collectif, lu dans l'épreuve de mise en page datée du 15 novembre 2019 que Pierpaolo Di Carlo met en ligne sur sa page de l'université de Buffalo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1889,
+              "to": 1889,
+              "label": "Mai-juin 1889, publié en 1895"
+            },
+            "statement": "Le nom Bafut apparaît par écrit dans le récit de l'explorateur allemand Eugen Zintgraff, publié en 1895. Pendant son voyage de Baliburg vers la Bénoué, en mai et juin 1889, on le met en garde contre le chef de Bafut ; il arrive ensuite dans cette ville, qu'il trouve quatre ou cinq fois plus étendue que le village de Bali. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Bafut",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Eugen Zintgraff",
+                "role": "explorateur allemand, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Nord-Kamerun",
+                "author": "Eugen Zintgraff",
+                "year": 1895,
+                "url": "https://archive.org/details/nordkamerunschil00zint",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 225 et p. 231-232",
+                "notes": "Berlin, Gebrüder Paetel, 1895, lu dans l'exemplaire numérisé d'Internet Archive. Chapitre VII, « De Baliburg à la Bénoué, mai à juin 1889 »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
