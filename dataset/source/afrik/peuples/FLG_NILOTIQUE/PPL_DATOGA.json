@@ -129,5 +129,320 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Datoga désigne un peuple d'éleveurs du nord et du centre de la Tanzanie, autour de Mbulu et de Singida, qui se nomme lui-même Datoga ; on écrit aussi Datooga. D'autres noms existent : Taturu, sous lequel les voyageurs du XIXe siècle le connaissent, Mang'ati, « l'ennemi », chez les Maasai, et Barabaig, le nom de son groupe le plus connu. Les sources ne disent pas toujours d'où viennent ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Datoga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tcc",
+        "namedBy": null,
+        "shortLine": "Le nom que préfèrent aujourd'hui la plupart des Datoga ; ceux d'Itigi disent Tatog.",
+        "periodLabel": "Écrit depuis 1894 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Datoga désigne aujourd'hui une douzaine de sous-groupes d'éleveurs du centre et du nord de la Tanzanie. Plus de neuf sur dix de ses membres préfèrent ce nom, sauf les Bianjid d'Itigi, qui disent Tatog, selon l'historien Samwel Shanga Mhajida. Les sources que nous avons lues n'expliquent pas son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Collapse of a Pastoral Economy : the Datoga of Central and Northern Tanzania from the 1830s to the 2000s",
+                "author": "Samwel Shanga Mhajida",
+                "year": 2019,
+                "url": "https://archive.org/details/oapen-20.500.12657-25755",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 23, note 17, et p. 48",
+                "notes": "Göttingen University Press, 2019, livre en libre accès ; lu dans sa copie déposée sur archive.org par la bibliothèque OAPEN le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1891,
+              "to": 1894,
+              "label": "Voyage de 1891-1893, livre de 1894"
+            },
+            "era": "polity",
+            "statement": "Le nom Datoga apparaît sous une forme proche, Tatoga, chez l'explorateur Oscar Baumann, qui écrit que les Wataturu « se nomment eux-mêmes Tatoga ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Tatoga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Durch Massailand zur Nilquelle : Reisen und Forschungen der Massai-Expedition des deutschen Antisklaverei-Komite in den Jahren 1891-1893",
+                "author": "Oscar Baumann",
+                "year": 1894,
+                "url": "https://www.gutenberg.org/ebooks/68057",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 168",
+                "notes": "Berlin, Dietrich Reimer, 1894. Lu dans l'édition du Projet Gutenberg le 11 octobre 2026 ; la page est celle de l'édition imprimée, que cette édition indique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1898,
+              "label": "Voyage de 1896-1897, livre de 1898"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tatoga est encore, selon W. Werther, chef de l'expédition allemande dans l'Irangi, celui que se donnent les habitants du pays de Mangati qu'on appelle Wataturu.",
+            "formAsWritten": "Tatoga",
+            "sources": [
+              {
+                "title": "Die mittleren Hochländer des nördlichen Deutsch-Ost-Afrika : wissenschaftliche Ergebnisse der Irangi-Expedition 1896-1897",
+                "author": "W. Werther",
+                "year": 1898,
+                "url": "https://archive.org/details/diemittlerenhoc00wertgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 38",
+                "notes": "Berlin, Hermann Paetel, 1898. Récit du chef de l'expédition coloniale allemande dans l'Irangi, lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1959,
+              "label": "Années 1930 et 1950"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tatoga est celui que préfèrent les anthropologues et les sociologues du gouvernement dans les années 1930 et 1950, selon Samwel Shanga Mhajida.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Collapse of a Pastoral Economy : the Datoga of Central and Northern Tanzania from the 1830s to the 2000s",
+                "author": "Samwel Shanga Mhajida",
+                "year": 2019,
+                "url": "https://archive.org/details/oapen-20.500.12657-25755",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 23, note 17",
+                "notes": "Göttingen University Press, 2019, livre en libre accès ; lu dans sa copie déposée sur archive.org par la bibliothèque OAPEN le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Taturu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom sous lequel les voyageurs du XIXe siècle connaissent les Datoga.",
+        "periodLabel": "Écrit depuis 1860 ; en usage aujourd'hui pour un sous-groupe",
+        "accounts": [
+          {
+            "period": {
+              "from": 1857,
+              "to": 1860,
+              "label": "Voyage de 1857-1858, livre de 1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Taturu apparaît, sous la forme Wataturu, chez l'explorateur britannique Richard Burton, qui décrit un peuple d'éleveurs autrefois riche en bétail, établi de la région de Tura jusqu'au sud-est du lac Victoria. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Wataturu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa: A Picture of Exploration, volume II",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://archive.org/details/lakeregionsofcen21860burt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 219-221",
+                "notes": "Londres, Longman, Green, Longman and Roberts, 1860 ; lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1891,
+              "to": 1894,
+              "label": "Voyage de 1891-1893, livre de 1894"
+            },
+            "era": "polity",
+            "statement": "Le nom Taturu, toujours sous la forme Wataturu, est chez Oscar Baumann le nom d'un peuple proche des Maasai, qui se nomme lui-même Tatoga.",
+            "formAsWritten": "Wataturu",
+            "sources": [
+              {
+                "title": "Durch Massailand zur Nilquelle : Reisen und Forschungen der Massai-Expedition des deutschen Antisklaverei-Komite in den Jahren 1891-1893",
+                "author": "Oscar Baumann",
+                "year": 1894,
+                "url": "https://www.gutenberg.org/ebooks/68057",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 168",
+                "notes": "Berlin, Dietrich Reimer, 1894. Lu dans l'édition du Projet Gutenberg le 11 octobre 2026 ; la page est celle de l'édition imprimée, que cette édition indique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Taturu désigne aujourd'hui surtout les Bianjid, un sous-groupe datoga d'Itigi que ses voisins absorbent peu à peu, selon Samwel Shanga Mhajida.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Collapse of a Pastoral Economy : the Datoga of Central and Northern Tanzania from the 1830s to the 2000s",
+                "author": "Samwel Shanga Mhajida",
+                "year": 2019,
+                "url": "https://archive.org/details/oapen-20.500.12657-25755",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 23",
+                "notes": "Göttingen University Press, 2019, livre en libre accès ; lu dans sa copie déposée sur archive.org par la bibliothèque OAPEN le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mang'ati",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "mas",
+        "namedBy": "Les Maasai",
+        "shortLine": "Le nom que leur donnaient les Maasai : « l'ennemi ».",
+        "periodLabel": "XIXe siècle et XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1890,
+              "label": "Jusqu'aux années 1890"
+            },
+            "era": "polity",
+            "statement": "Le nom Mang'ati veut dire « l'ennemi » chez les Maasai, qui appelaient les Datoga Ol Mang'ati l toroto, « le véritable ennemi », pendant leurs guerres du XIXe siècle, selon Samwel Shanga Mhajida.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Collapse of a Pastoral Economy : the Datoga of Central and Northern Tanzania from the 1830s to the 2000s",
+                "author": "Samwel Shanga Mhajida",
+                "year": 2019,
+                "url": "https://archive.org/details/oapen-20.500.12657-25755",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 23, note 17, et p. 63",
+                "notes": "Göttingen University Press, 2019, livre en libre accès ; lu dans sa copie déposée sur archive.org par la bibliothèque OAPEN le 11 octobre 2026. L'auteur s'appuie sur Henry Fosbrooke, 1948."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1891,
+              "to": 1894,
+              "label": "Voyage de 1891-1893, livre de 1894"
+            },
+            "era": "polity",
+            "statement": "Le nom Mang'ati figure, sous la forme Mangati, chez Oscar Baumann : il désigne l'ennemi dont les Maasai souhaitent la mort quand passe une étoile filante. Baumann donne aussi ce nom à un pays, Mangati, où les Wataturu vivent en nombre. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Mangati",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Durch Massailand zur Nilquelle : Reisen und Forschungen der Massai-Expedition des deutschen Antisklaverei-Komite in den Jahren 1891-1893",
+                "author": "Oscar Baumann",
+                "year": 1894,
+                "url": "https://www.gutenberg.org/ebooks/68057",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 163 et p. 169",
+                "notes": "Berlin, Dietrich Reimer, 1894. Lu dans l'édition du Projet Gutenberg le 11 octobre 2026 ; la page est celle de l'édition imprimée, que cette édition indique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1968,
+              "to": 1968,
+              "label": "Mai 1968"
+            },
+            "era": "modern",
+            "statement": "Le nom Mang'ati sert encore à l'État tanzanien en mai 1968 : le ministre de l'Intérieur parle des Wamang'ati qu'il veut installer dans des villages ujamaa, selon Samwel Shanga Mhajida.",
+            "formAsWritten": "Wamang’ati",
+            "sources": [
+              {
+                "title": "The Collapse of a Pastoral Economy : the Datoga of Central and Northern Tanzania from the 1830s to the 2000s",
+                "author": "Samwel Shanga Mhajida",
+                "year": 2019,
+                "url": "https://archive.org/details/oapen-20.500.12657-25755",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 15",
+                "notes": "Göttingen University Press, 2019, livre en libre accès ; lu dans sa copie déposée sur archive.org par la bibliothèque OAPEN le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Barabaig",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du plus connu des groupes datoga, parfois employé pour tout le peuple.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Barabaig désigne le plus connu des groupes datoga ; des auteurs comme George J. Klima, en 1970, l'emploient pour tout le peuple, selon Samwel Shanga Mhajida.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Collapse of a Pastoral Economy : the Datoga of Central and Northern Tanzania from the 1830s to the 2000s",
+                "author": "Samwel Shanga Mhajida",
+                "year": 2019,
+                "url": "https://archive.org/details/oapen-20.500.12657-25755",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 23, note 17",
+                "notes": "Göttingen University Press, 2019, livre en libre accès ; lu dans sa copie déposée sur archive.org par la bibliothèque OAPEN le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Récit recueilli en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Barabaig viendrait de bâtons : pendant la migration depuis le Serengeti, un groupe aurait coupé des morceaux de bois pour dire qu'il ne voulait pas aller plus loin, selon un récit recueilli par Samwel Shanga Mhajida auprès de Datoga du Wembere.",
+            "sources": [
+              {
+                "title": "The Collapse of a Pastoral Economy : the Datoga of Central and Northern Tanzania from the 1830s to the 2000s",
+                "author": "Samwel Shanga Mhajida",
+                "year": 2019,
+                "url": "https://archive.org/details/oapen-20.500.12657-25755",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 57-58",
+                "notes": "Göttingen University Press, 2019, livre en libre accès ; lu dans sa copie déposée sur archive.org par la bibliothèque OAPEN le 11 octobre 2026. Récit recueilli lors d'un entretien avec Makaranga, le 20 septembre 2014."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

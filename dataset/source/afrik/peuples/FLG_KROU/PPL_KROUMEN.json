@@ -139,5 +139,206 @@
         "notes": "Texte de l'édition de 1911, cité pour les graphies Kroomen, Krooboys, Krus et Croos."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kroumen désigne un peuple de langues krou du littoral sud-ouest de la Côte d'Ivoire, entre Tabou et San Pedro, aussi présent au Liberia voisin ; ses membres se reconnaissent aujourd'hui dans ce nom. Écrit Kroomen ou krumen, il a d'abord désigné, au XIXe siècle, les marins et les travailleurs de toute cette côte. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Kroumen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom d'abord donné aux marins de la côte, que des peuples de Côte d'Ivoire ont fait leur.",
+        "periodLabel": "Écrit depuis 1824 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kroumen désigne aujourd'hui un peuple de Côte d'Ivoire, dont les membres reconnaissent ce nom comme le leur. Au XIXe siècle, il désignait surtout les marins et les travailleurs migrants venus de plusieurs populations de l'est du Liberia et de l'actuelle Côte d'Ivoire, selon l'ethnomusicologue Elina Djebbari. Son origine est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La danse bollo des Kroumen en Côte d'Ivoire. Circulations transatlantiques et quadrilles créoles en Afrique de l'Ouest",
+                "author": "Elina Djebbari",
+                "year": 2023,
+                "url": "https://journals.openedition.org/ethnomusicologie/5068",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 10-11",
+                "notes": "Cahiers d'ethnomusicologie, n° 36, 2023, p. 85-103 ; lu sur OpenEdition le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1803,
+              "to": 1803,
+              "label": "1803"
+            },
+            "statement": "Le nom Kroumen apparaît sous une forme proche, Kroomen, chez Thomas Winterbottom, dans son livre sur les peuples voisins de la Sierra Leone : « les Kroos, ou Kroomen », écrit-il, sont un peuple très travailleur, qui s'engage souvent sur les navires européens de la côte comme marins et comme commerçants. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "birth": true,
+            "formAsWritten": "Kroomen",
+            "sources": [
+              {
+                "title": "An Account of the Native Africans in the Neighbourhood of Sierra Leone, vol. I",
+                "author": "Thomas Winterbottom",
+                "year": 1803,
+                "url": "https://archive.org/details/accountofnativea01wint",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9",
+                "notes": "Londres, C. Whittingham, 1803. Lu dans l'exemplaire numérisé sur archive.org le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1809,
+              "to": 1824,
+              "label": "1809-1824"
+            },
+            "statement": "Le nom Kroumen s'écrit Kroomen dans un recueil britannique de 1824 tiré des rapports de G. R. Collier et de Charles MacCarthy : il y désigne une tribu de la côte située entre le cap Mount et le cap Palmas, dont huit cents hommes travaillaient déjà comme manœuvres en Sierra Leone en 1809.",
+            "formAsWritten": "Kroomen",
+            "sources": [
+              {
+                "title": "West-African Sketches : Compiled from the Reports of Sir G. R. Collier, Sir Charles MacCarthy, and Other Official Sources",
+                "author": "G. R. Collier et Charles MacCarthy",
+                "year": 1824,
+                "url": "https://archive.org/details/westafricansket00maccgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 85-86",
+                "notes": "Londres, L. B. Seeley and Son, 1824. Le recueil ne porte pas de nom d'auteur : il est tiré des rapports de ces deux officiers et d'autres sources officielles, et nous le citons sous leurs noms, comme les catalogues. Lu dans l'exemplaire numérisé sur archive.org le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1780,
+              "to": 1900,
+              "label": "Des années 1780 à la fin du XIXe siècle"
+            },
+            "statement": "Le nom Kroumen correspond aux « krumen » que les bateaux embarquent tout au long du XIXe siècle sur cette côte, en route vers l'est, selon l'historien Yves Person. Dès les années 1780, des navires y prenaient des « fishmen » comme interprètes ou manœuvres, et cette activité gagne peu à peu la côte jusqu'au Sassandra.",
+            "formAsWritten": "krumen",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 24 : États et peuples de Sénégambie et de haute Guinée",
+                "author": "Yves Person",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 700-701",
+                "notes": "UNESCO, volume dirigé par J. F. A. Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Rapportée en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Kroumen viendrait de l'anglais crew men, « hommes d'équipage » : c'est l'explication la plus répandue chez les personnes concernées, selon Elina Djebbari.",
+            "hypothesisGroup": "origine du nom Kroumen",
+            "sources": [
+              {
+                "title": "La danse bollo des Kroumen en Côte d'Ivoire. Circulations transatlantiques et quadrilles créoles en Afrique de l'Ouest",
+                "author": "Elina Djebbari",
+                "year": 2023,
+                "url": "https://journals.openedition.org/ethnomusicologie/5068",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 10",
+                "notes": "Cahiers d'ethnomusicologie, n° 36, 2023, p. 85-103 ; lu sur OpenEdition le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "Proposée en 1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Kroumen viendrait plutôt de Kru men, « les hommes kru » : l'historien Alfred Schwartz rejette l'explication par crew men et rattache le nom au peuple kru, selon Elina Djebbari.",
+            "hypothesisGroup": "origine du nom Kroumen",
+            "sources": [
+              {
+                "title": "La danse bollo des Kroumen en Côte d'Ivoire. Circulations transatlantiques et quadrilles créoles en Afrique de l'Ouest",
+                "author": "Elina Djebbari",
+                "year": 2023,
+                "url": "https://journals.openedition.org/ethnomusicologie/5068",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 10 et note 6",
+                "notes": "Cahiers d'ethnomusicologie, n° 36, 2023, p. 85-103 ; lu sur OpenEdition le 11 octobre 2026. L'autrice cite Alfred Schwartz, « Quelques repères dans l'histoire des Kroumen », Revue française d'histoire d'outre-mer, 1980 ; nous n'avons pas lu cet article."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Proposée en 1911"
+            },
+            "era": "modern",
+            "statement": "Le nom Kroumen, écrit Krumen, ne viendrait pas de l'anglais crew mais de Kraoh, le nom ancien de l'une de leurs tribus, selon l'Encyclopædia Britannica de 1911.",
+            "formAsWritten": "Krumen",
+            "hypothesisGroup": "origine du nom Kroumen",
+            "sources": [
+              {
+                "title": "Encyclopædia Britannica, 11e édition, vol. 15 : Krumen",
+                "author": "Encyclopædia Britannica",
+                "year": 1911,
+                "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Krumen",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "page": "p. 933",
+                "notes": "Article lu dans sa transcription sur Wikisource le 11 octobre 2026 : « The name has been wrongly derived from the English word “crew” […] It is probably from Kraoh, the primitive name of one of their tribes ». La page est celle de l'édition imprimée."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Krou",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom générique donné à la fin du XIXe siècle aux populations entre le San Pedro et le Cavally.",
+        "periodLabel": "Depuis la fin du XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1880,
+              "to": 1900,
+              "label": "Fin du XIXe siècle"
+            },
+            "statement": "Le nom Krou, Kru en anglais, sert à la fin du XIXe siècle de nom commun aux populations installées entre le San Pedro et le Cavally, selon Alfred Schwartz, que cite Elina Djebbari.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La danse bollo des Kroumen en Côte d'Ivoire. Circulations transatlantiques et quadrilles créoles en Afrique de l'Ouest",
+                "author": "Elina Djebbari",
+                "year": 2023,
+                "url": "https://journals.openedition.org/ethnomusicologie/5068",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 10",
+                "notes": "Cahiers d'ethnomusicologie, n° 36, 2023, p. 85-103 ; lu sur OpenEdition le 11 octobre 2026. L'autrice cite Alfred Schwartz, 1980 ; nous n'avons pas lu cet article."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
