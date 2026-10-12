@@ -8,8 +8,8 @@
     "appellations": {
       "mainName": "Bakwé",
       "selfAppellation": "Bakwé",
-      "exonyms": ["Bakoue", "Bakwe", "Bakoué"],
-      "originOfExonyms": "Bakoue et Bakoue sont des variantes orthographiques utilisees dans la litterature coloniale et les textes administratifs francais. Bakwe est la graphie anglophone. Le terme Bakwé est lui-meme l'appellation la plus repandue et correspond a l'autodenomination du groupe. Ils font partie du vaste ensemble ethno-linguistique Krou (ou Kru), regroupe sous le nom de Krou oriental (Eastern Kru).",
+      "exonyms": ["Bakoue", "Bakwe", "Bakoué", "Tuwè"],
+      "originOfExonyms": "Bakoue et Bakoue sont des variantes orthographiques utilisees dans la litterature coloniale et les textes administratifs francais. Bakwe est la graphie anglophone. Le terme Bakwé est lui-meme l'appellation la plus repandue et correspond a l'autodenomination du groupe. Ils font partie du vaste ensemble ethno-linguistique Krou (ou Kru), regroupe sous le nom de Krou oriental (Eastern Kru). Les Krou les surnomment aussi Tuwè, un nom péjoratif qui voudrait dire « ceux qui sont sous les arbres », selon Alfred Schwartz.",
       "whyProblematic": "Le terme Bakwé est parfois confondu avec les Kroumen (peuple cotier distinct du meme ensemble Krou), ce qui cree des ambiguites dans la litterature. Les Bakwé sont distincts des Kroumen (peche et activites maritimes) et des Wane (groupe voisin).",
       "contemporaryUsage": "Bakwé est le terme officiel utilise en Cote d'Ivoire et dans la litterature academique. L'appellation Bakoue est utilisee dans les anciens documents administratifs. Le terme Krou (Kru) designe l'ensemble ethno-linguistique auquel appartiennent les Bakwé. En Cote d'Ivoire, les Bakwé s'identifient egalement comme faisant partie du Bas-Sassandra et de la region de San-Pedro.",
       "linguisticFamily": "FLG_KROU",
@@ -135,7 +135,7 @@
     ]
   },
   "nameHistory": {
-    "summary": "Le nom Bakwé désigne un peuple de langue krou du sud-ouest de la Côte d'Ivoire, entre Soubré, Sassandra et San-Pédro. C'était d'abord le nom de sa tribu principale, selon Maurice Delafosse ; ce peuple se désigne aussi lui-même comme Srigbe, selon le géographe Alfred Schwartz. Un autre nom, Gbe, lui a été rattaché par des linguistes, mais ce rapprochement est discuté. On ne sait pas avec certitude d'où vient le nom Bakwé ; nous présentons plus bas ce que disent les sources.",
+    "summary": "Le nom Bakwé désigne un peuple de langue krou du sud-ouest de la Côte d'Ivoire, entre Soubré, Sassandra et San-Pédro. Selon le géographe Alfred Schwartz, il est cité dès 1895 par l'administrateur Henri Pobéguin, et il viendrait de l'expression ba-kwè, « attraper-tirer », que les ancêtres de ce peuple scandaient pour hisser et tirer ensemble. Maurice Delafosse l'écrit en 1904 et le tient pour le nom de la tribu principale. Les Krou les surnomment tuwè, et ils se désignent eux-mêmes comme Srigbe, toujours selon Schwartz. Un autre nom, Gbe, leur a été rattaché par des linguistes, mais ce rapprochement est discuté. Schwartz est la seule source que nous avons lue sur l'origine du nom Bakwé ; nous présentons plus bas ce que disent les sources.",
     "names": [
       {
         "nameText": "Bakwé",
@@ -143,10 +143,32 @@
         "selfGiven": true,
         "languageOfOrigin": "bjw",
         "namedBy": null,
-        "shortLine": "Le nom courant de ce peuple, écrit Bakoué dès 1904 ; son origine n'est pas documentée.",
+        "shortLine": "Le nom courant de ce peuple, cité dès 1895 ; Alfred Schwartz le tire d'une expression « attraper-tirer ».",
         "usedIn": ["bjw", "fra"],
-        "periodLabel": "Écrit dès 1904 ; en usage aujourd'hui",
+        "periodLabel": "Cité dès 1895 ; en usage aujourd'hui",
         "accounts": [
+          {
+            "period": {
+              "from": 1993,
+              "to": 1993,
+              "label": "Proposée en 1993"
+            },
+            "era": "modern",
+            "statement": "Le nom Bakwé viendrait de l'expression ba-kwè, « attraper-tirer », que les ancêtres de ce peuple scandaient pour hisser et tirer ensemble, comme nous disons « oh ! hisse », selon Alfred Schwartz. Il écrit qu'il ignore par qui et dans quelles circonstances exactes le nom a été imposé. C'est la seule explication que nous avons lue.",
+            "hypothesisGroup": "origine du nom Bakwé",
+            "sources": [
+              {
+                "title": "Sous-peuplement et développement dans le sud-ouest de la Côte d'Ivoire",
+                "author": "Alfred Schwartz",
+                "year": 1993,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_2/etudes_theses/37792.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 88",
+                "notes": "Paris, ORSTOM, 1993. Lu sur la base Horizon de l'IRD le 12 octobre 2026. Page 88 : les Bakwé « devraient leur nom à l'expression ba-kwè, \"attraper-tirer\" », que scandaient leurs ancêtres pour effectuer à l'unisson un travail de levage et de traction."
+              }
+            ]
+          },
           {
             "period": {
               "from": 1979,
@@ -154,7 +176,7 @@
               "label": "1979"
             },
             "era": "modern",
-            "statement": "Le nom Bakwé désigne le peuple autochtone d'un canton de la sous-préfecture de Soubré, au cœur d'une région forestière peu peuplée, selon le géographe Alfred Schwartz. On ne sait pas avec certitude d'où vient ce nom : nous n'avons pas encore lu de source qui l'explique.",
+            "statement": "Le nom Bakwé désigne le peuple autochtone d'un canton de la sous-préfecture de Soubré, au cœur d'une région forestière peu peuplée, selon le géographe Alfred Schwartz.",
             "aspect": "meaning",
             "sources": [
               {
@@ -176,9 +198,8 @@
               "label": "1904"
             },
             "era": "colonial",
-            "statement": "Le nom Bakwé apparaît sous la forme Bakoué chez l'administrateur colonial Maurice Delafosse, qui le donne à tout le groupe krou de l'ouest, d'après la tribu qu'il tient pour la principale ; la frontière avec le groupe bété suit à peu près le Sassandra. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne vivait là bien avant lui.",
+            "statement": "Le nom Bakwé apparaît sous la forme Bakoué chez l'administrateur colonial Maurice Delafosse, qui le donne à tout le groupe krou de l'ouest, d'après la tribu qu'il tient pour la principale ; la frontière avec le groupe bété suit à peu près le Sassandra. Le peuple qu'il désigne vivait là bien avant lui.",
             "formAsWritten": "Bakoué",
-            "birth": true,
             "sources": [
               {
                 "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
@@ -189,6 +210,27 @@
                 "source_kind": "academic",
                 "page": "p. 68",
                 "notes": "Paris, Ernest Leroux, 1904. Lu sur sa numérisation par la bibliothèque de l'université de Toronto."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "1895"
+            },
+            "statement": "Le nom Bakwé est cité dès 1895 par l'administrateur Henri Pobéguin, qui remonta alors le fleuve Sassandra jusqu'à Kouati, selon Alfred Schwartz. Nous n'avons pas ouvert le texte de Pobéguin, et nous ne savons donc pas comment il écrit le nom. Le peuple qu'il désigne vivait là bien avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Sous-peuplement et développement dans le sud-ouest de la Côte d'Ivoire",
+                "author": "Alfred Schwartz",
+                "year": 1993,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_2/etudes_theses/37792.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 88",
+                "notes": "Paris, ORSTOM, 1993. Lu sur la base Horizon de l'IRD le 12 octobre 2026. Mention rapportée de seconde main : Schwartz écrit que le nom est cité dès 1895 par H. Pobéguin et renvoie à sa carte « H. Pobéguin, 1895-1896, feuille 6 », que nous n'avons pas ouverte."
               }
             ]
           }
@@ -222,6 +264,39 @@
                 "source_kind": "academic",
                 "page": "p. 88",
                 "notes": "Paris, ORSTOM, 1993. Lu sur la base Horizon de l'IRD le 12 octobre 2026. Page 88 : les Bakwé, « se désignant eux-mêmes par le terme de srigbe, \"devins-guérisseurs\", par allusion à leur dextérité à fabriquer des médecines \"tous azimuts\" »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tuwè",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Krou, selon Alfred Schwartz",
+        "shortLine": "Un surnom péjoratif que les Krou donnent aux Bakwé, « ceux qui sont sous les arbres », selon Alfred Schwartz.",
+        "periodLabel": "Écrit en 1993",
+        "accounts": [
+          {
+            "period": {
+              "from": 1993,
+              "to": 1993,
+              "label": "1993"
+            },
+            "era": "modern",
+            "statement": "Le nom tuwè est un surnom péjoratif que les Krou donnent aux Bakwé, selon le géographe Alfred Schwartz. Il voudrait dire « ceux qui sont sous les arbres ». C'est la seule source que nous avons lue qui le donne.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Sous-peuplement et développement dans le sud-ouest de la Côte d'Ivoire",
+                "author": "Alfred Schwartz",
+                "year": 1993,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_2/etudes_theses/37792.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 88",
+                "notes": "Paris, ORSTOM, 1993. Lu sur la base Horizon de l'IRD le 12 octobre 2026. Page 88 : « Surnommés - péjorativement - tuwè, \"(ceux qui sont) sous les arbres\", par les Krou »."
               }
             ]
           }
