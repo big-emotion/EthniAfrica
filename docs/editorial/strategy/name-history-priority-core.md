@@ -5,6 +5,7 @@ related:
   - docs/editorial/strategy/name-history-timeline-2026-10-08.md
   - docs/audience/audit-2026-10-08.md
   - docs/editorial/doctrine.md
+  - docs/editorial/strategy/name-history-long-tail-waves.md
 ---
 
 # Name-history priority core
@@ -311,3 +312,134 @@ review:
 - **Summary account and hypothesis tiles — ruled 2026-10-09.** On
   `PPL_FULA`, the meaning account no longer retells the hypotheses that have
   their own tiles: it keeps what only it says and all its sources.
+
+# The long tail: wave order
+
+The priority core above is a short list picked by hand. The rest of the corpus
+is written in waves of 60 subjects, each wave six batches of ten and one pull
+request, reviewed by the operator before it merges (ETNI-2011). Waves 4 to 13
+took the long tail in the order the corpus offered it. This section fixes the
+order of what is left, from wave 14.
+
+## Coverage at 2026-10-12
+
+A subject is **complete** when its fiche carries a `nameHistory` block that the
+shared schema accepts (`parseNameHistory`, the check
+`checkNameHistoryBlocks` in `scripts/validateAfrikData.ts` runs on every
+fiche). The schema asks for a summary, names with their accounts, a source on
+every account and the self-given name of a people; it does not judge the
+quality of the sources, which the operator reviews in each wave. The count
+skips the `V1` archive and the `_`-prefixed helper files.
+
+| Folder                 | Fiches | Complete | Without |
+| ---------------------- | -----: | -------: | ------: |
+| `peuples`              |    687 |      465 |     222 |
+| `patronymes`           |    790 |      247 |     543 |
+| `langues`              |     39 |       39 |       0 |
+| `famille_linguistique` |     25 |       25 |       0 |
+| `pays`                 |     54 |       54 |       0 |
+| `lieux`                |      4 |        4 |       0 |
+| `mots`                 |      2 |        2 |       0 |
+
+Every wave pull request runs `npm run report:name-history-waves` and pastes
+the new coverage table. The same command prints the summary of the next waves.
+
+## What demand data exists
+
+- **Fiche visits (P): readable, and used.** The site's Plausible instance
+  answers its stats API without credentials, as the audience-audit skill
+  describes. On 2026-10-12 the pages breakdown was read for 2026-06-01 to
+  2026-10-12 and the people and family-name pages were committed as
+  `scripts/data/ficheVisits-2026-10-12.json`, so the order can be rebuilt
+  offline. These are unique visitors who accepted the consent banner, the same
+  floor as in the first section. Of the 222 peoples and 543 family names
+  left, 35 peoples and 28 family names have at least one visitor; the busiest
+  have two to four.
+- **Search queries (Q): not read for the tail.** The first section lists the
+  queries read on 2026-10-09. A fresh read of the `search:submit` query
+  property was not done: it was not authorised for this work, and the first
+  read showed that 307 of 396 events carry no query anyway. No query count
+  is invented here.
+- **Search Console and AI answers: no access**, as in the first section.
+- **TikTok and social posts (T, S):** they name the subjects of the core list
+  only. They say nothing of the tail.
+
+So for most of the tail there is no measured demand at all, only a handful of
+visits. The order below is **an editorial proxy, not a ranking by readers**.
+Revise it when Search Console or a month of query text is available.
+
+## The proxies, and their limits
+
+1. **Visited fiche** (tier 1): at least one visitor in the snapshot. A single
+   visitor is a weak signal, but it is the only measured one.
+2. **Stated population** (peoples, tiers 2 to 4): the total on the people's
+   own fiche, in bands of 1 million and 100,000. A large people is more
+   likely to be searched, but population is size, not curiosity; 2 peoples
+   state none and fall in the last band.
+3. **Countries spanned** (family names, tiers 2 and 3): a name found in two
+   or more countries goes before a name found in one. This favours wide
+   names over local ones that may be searched just as much.
+
+Not used: the number of sources on a fiche (it measures how easy the work
+is, not demand), inbound references and retired-identifier redirects (too few
+to separate subjects).
+
+| Kind        | Tier 1 visited | Tier 2            | Tier 3          | Tier 4 |
+| ----------- | -------------: | ----------------- | --------------- | ------ |
+| people      |             35 | 11 (>= 1M)        | 74 (>= 100k)    | 102    |
+| family name |             28 | 34 (2+ countries) | 481 (1 country) | none   |
+
+## The method
+
+1. List every people and family-name fiche without a complete `nameHistory`.
+2. Put each in its demand tier (above).
+3. Inside a tier, group peoples by linguistic family and family names by their
+   first country, so the neighbours of one wave share sources. A group ranks
+   by its visitors, then its population, then its spread; inside a group the
+   same keys order the subjects, then the id.
+4. Cut the sequence into waves of 60, peoples and family names alternating
+   from wave 14 as waves 10 and 11 did. When one kind runs out the other
+   continues; the last wave of each kind is short (42 peoples, 3 family
+   names).
+
+The script is deterministic: same corpus and same snapshot, same order.
+Finished subjects leave the list, so the groups re-rank slightly from one
+wave to the next: regenerate the list at the start of each wave rather than
+reading an old one.
+
+Known limits of the result:
+
+- Tier 1 mixes many families, so waves 14 and 16 are less cohesive than the
+  later ones. Visits come before shared sources.
+- Several tier 1 peoples are aggregates (for example `PPL_BANTU`,
+  `PPL_MANDE_MACRO`, `PPL_AUTRES_PEUPLES_BANTOUS`). Whether a macro or
+  catch-all fiche deserves a name history is for the operator to rule when
+  wave 14 is reviewed.
+- Family names are grouped by the first country the fiche lists, which is an
+  editorial order, not a ranking.
+
+## The next waves
+
+Summary by wave. The ids, grouped by family or country, are in
+[the generated list](name-history-long-tail-waves.md).
+
+| Wave | Kind        | Subjects | Family or country mix                                                          | First id             | Last id         |
+| ---- | ----------- | -------- | ------------------------------------------------------------------------------ | -------------------- | --------------- |
+| 14   | people      | 60       | `FLG_BANTU` 18, `FLG_NIGERCONGO` 6, `FLG_KWA` 5, `FLG_MANDE` 5, 16 more        | `PPL_EBRIE`          | `PPL_SENGA`     |
+| 15   | family-name | 60       | `EGY` 6, `CMR` 4, `DZA` 4, `GNB` 4, 25 more                                    | `PAT_ABAZA`          | `PAT_BA`        |
+| 16   | people      | 60       | `FLG_BANTU` 15, `FLG_NIGERCONGO` 11, `FLG_COUCHITIQUE` 8, `FLG_KWA` 8, 11 more | `PPL_LAMBYA`         | `PPL_BASKETO`   |
+| 17   | family-name | 60       | `COD` 27, `ETH` 19, `NGA` 12, `TGO` 1, 1 more                                  | `PAT_JOHNSON`        | `PAT_GYANG`     |
+| 18   | people      | 60       | `FLG_BANTU` 31, `FLG_COUCHITIQUE` 16, `FLG_KWA` 11, `FLG_KROU` 2               | `PPL_VIDUNDA`        | `PPL_WONNIN`    |
+| 19   | family-name | 60       | `UGA` 19, `KEN` 18, `MOZ` 16, `NGA` 7                                          | `PAT_KEHINDE`        | `PAT_NYUSI`     |
+| 20   | people      | 42       | `FLG_CREOLE` 7, `FLG_KROU` 6, `FLG_TCHADIQUE` 5, `FLG_NIGERCONGO` 4, 11 more   | `PPL_AIZI`           | `PPL_COPTES`    |
+| 21   | family-name | 60       | `CMR` 15, `EGY` 15, `MAR` 15, `DZA` 14, 1 more                                 | `PAT_ATEBA`          | `PAT_ABDULAI`   |
+| 22   | family-name | 60       | `TZA` 14, `AGO` 13, `GHA` 13, `LBY` 11, 1 more                                 | `PAT_ADDO`           | `PAT_NSABIMANA` |
+| 23   | family-name | 60       | `BEN` 9, `BWA` 9, `COG` 9, `RWA` 9, 4 more                                     | `PAT_NTIBANTUNGANYA` | `PAT_KOLINGBA`  |
+| 24   | family-name | 60       | `CIV` 8, `GAB` 8, `MUS` 8, `SLE` 8, 5 more                                     | `PAT_MOKOM`          | `PAT_BINDANG`   |
+| 25   | family-name | 60       | `LSO` 7, `MWI` 7, `SSD` 7, `STP` 7, 6 more                                     | `PAT_BORICO`         | `PAT_BATIONO`   |
+| 26   | family-name | 60       | `CPV` 5, `DJI` 5, `GMB` 5, `LBR` 5, 10 more                                    | `PAT_ILBOUDO`        | `PAT_NHASSE`    |
+| 27   | family-name | 3        | `NER` 2, `MLI` 1                                                               | `PAT_ISSAKA`         | `PAT_GUINDO`    |
+
+Command: `npm run report:name-history-waves` (coverage and this summary);
+`npx tsx scripts/afrik/nameHistoryWaveOrder.ts --list` (the full list).
+No wave is launched by this section.

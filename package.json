@@ -37,6 +37,7 @@
     "check:rls-coverage": "tsx scripts/ci/checkRlsCoverage.ts",
     "check:skill-parity": "tsx scripts/ci/checkSkillParity.ts",
     "check:source-kinds": "tsx scripts/ci/checkSourceKindCoverage.ts",
+    "report:name-history-waves": "tsx scripts/afrik/nameHistoryWaveOrder.ts",
     "report:search-answer-coverage": "tsx scripts/ci/reportSearchAnswerCoverage.ts",
     "check:workflow-shell": "tsx scripts/checkWorkflowShellSyntax.ts",
     "confluence:bootstrap:build": "tsx scripts/buildConfluenceBootstrap.ts",
