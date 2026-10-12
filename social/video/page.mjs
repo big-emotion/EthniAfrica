@@ -7,6 +7,7 @@ export const PAGE_HTML = `<!doctype html>
 @font-face{font-family:Fraunces;src:url(/fonts/Fraunces.ttf);font-weight:100 900}
 @font-face{font-family:"Nunito Sans";src:url(/fonts/NunitoSans.ttf);font-weight:200 1000}
 @font-face{font-family:"Noto Sans";src:url(/fonts/NotoSans-Variable.ttf);font-weight:100 900}
+@font-face{font-family:"Noto Sans Arabic";src:url(/fonts/NotoSansArabic-SemiBold.ttf);font-weight:600}
 html,body{margin:0;background:#070605}
 #frame{position:relative;width:1080px;height:1920px;overflow:hidden;background:#070605;color:#f3e9da;font-family:"Nunito Sans","Noto Sans",sans-serif}
 #frame>*{position:absolute;left:0;top:0}
@@ -19,14 +20,20 @@ html,body{margin:0;background:#070605}
 .plate{height:54px;padding:0 22px;display:flex;align-items:center;border-radius:999px;background:rgba(243,233,218,.95);box-shadow:0 2px 10px rgba(11,8,6,.45);font-family:Anton,"Noto Sans",sans-serif;font-size:38px;line-height:54px;color:#15100b;white-space:nowrap}
 </style></head><body><div id="frame">
 <canvas id="earth" width="1080" height="1920"></canvas>
-<svg id="lines" width="1080" height="1920" viewBox="0 0 1080 1920" aria-hidden="true"><defs><filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="6"/></filter><pattern id="hatch-a" patternUnits="userSpaceOnUse" width="18" height="18" patternTransform="rotate(45)"><rect width="18" height="18" fill="#e8b96a" fill-opacity="0.10"/><line x1="9" y1="0" x2="9" y2="18" stroke="#0b0806" stroke-opacity="0.45" stroke-width="8"/><line x1="9" y1="0" x2="9" y2="18" stroke="#e8b96a" stroke-width="4"/></pattern><pattern id="swatch-hatch-a" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(45)"><line x1="3.5" y1="0" x2="3.5" y2="7" stroke="#e8b96a" stroke-width="2"/></pattern><pattern id="hatch-b" patternUnits="userSpaceOnUse" width="18" height="18" patternTransform="rotate(45)"><rect width="18" height="18" fill="#6cc3b5" fill-opacity="0.10"/><line x1="9" y1="0" x2="9" y2="18" stroke="#0b0806" stroke-opacity="0.45" stroke-width="8"/><line x1="9" y1="0" x2="9" y2="18" stroke="#6cc3b5" stroke-width="4"/></pattern><pattern id="swatch-hatch-b" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(45)"><line x1="3.5" y1="0" x2="3.5" y2="7" stroke="#6cc3b5" stroke-width="2"/></pattern><pattern id="hatch-c" patternUnits="userSpaceOnUse" width="18" height="18" patternTransform="rotate(45)"><rect width="18" height="18" fill="#e3876a" fill-opacity="0.10"/><line x1="9" y1="0" x2="9" y2="18" stroke="#0b0806" stroke-opacity="0.45" stroke-width="8"/><line x1="9" y1="0" x2="9" y2="18" stroke="#e3876a" stroke-width="4"/></pattern><pattern id="swatch-hatch-c" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(45)"><line x1="3.5" y1="0" x2="3.5" y2="7" stroke="#e3876a" stroke-width="2"/></pattern></defs><g id="fills"></g><g id="borders" fill="none" stroke-linecap="round" stroke-linejoin="round"></g><g id="edges" fill="none" stroke-linecap="round" stroke-linejoin="round"></g><g id="rivers" fill="none" stroke-linecap="round" stroke-linejoin="round"></g></svg>
+<svg id="lines" width="1080" height="1920" viewBox="0 0 1080 1920" aria-hidden="true"><defs><filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="6"/></filter><pattern id="hatch-a" patternUnits="userSpaceOnUse" width="18" height="18" patternTransform="rotate(45)"><rect width="18" height="18" fill="#e8b96a" fill-opacity="0.10"/><line x1="9" y1="0" x2="9" y2="18" stroke="#0b0806" stroke-opacity="0.45" stroke-width="8"/><line x1="9" y1="0" x2="9" y2="18" stroke="#e8b96a" stroke-width="4"/></pattern><pattern id="swatch-hatch-a" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(45)"><line x1="3.5" y1="0" x2="3.5" y2="7" stroke="#e8b96a" stroke-width="2"/></pattern><pattern id="hatch-b" patternUnits="userSpaceOnUse" width="18" height="18" patternTransform="rotate(45)"><rect width="18" height="18" fill="#6cc3b5" fill-opacity="0.10"/><line x1="9" y1="0" x2="9" y2="18" stroke="#0b0806" stroke-opacity="0.45" stroke-width="8"/><line x1="9" y1="0" x2="9" y2="18" stroke="#6cc3b5" stroke-width="4"/></pattern><pattern id="swatch-hatch-b" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(45)"><line x1="3.5" y1="0" x2="3.5" y2="7" stroke="#6cc3b5" stroke-width="2"/></pattern><pattern id="hatch-c" patternUnits="userSpaceOnUse" width="18" height="18" patternTransform="rotate(45)"><rect width="18" height="18" fill="#e3876a" fill-opacity="0.10"/><line x1="9" y1="0" x2="9" y2="18" stroke="#0b0806" stroke-opacity="0.45" stroke-width="8"/><line x1="9" y1="0" x2="9" y2="18" stroke="#e3876a" stroke-width="4"/></pattern><pattern id="swatch-hatch-c" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(45)"><line x1="3.5" y1="0" x2="3.5" y2="7" stroke="#e3876a" stroke-width="2"/></pattern></defs><g id="fills"></g><g id="borders" fill="none" stroke-linecap="round" stroke-linejoin="round"></g><g id="edges" fill="none" stroke-linecap="round" stroke-linejoin="round"></g><g id="rivers" fill="none" stroke-linecap="round" stroke-linejoin="round"></g><g id="outlines" stroke-linejoin="round"></g></svg>
 <div style="width:1080px;height:600px;background:linear-gradient(180deg,rgba(7,6,5,.72) 0px,rgba(7,6,5,.55) 420px,rgba(7,6,5,0) 600px)"></div>
 <div id="names"></div>
 <div style="top:940px;width:1080px;height:980px;background:linear-gradient(180deg,rgba(21,16,11,0) 0px,rgba(21,16,11,.92) 130px,rgba(21,16,11,.92) 980px)"></div>
 <div id="head" style="left:120px;top:290px;width:840px;display:flex;flex-direction:column;gap:12px"></div>
+<div id="subtitles" style="left:120px;top:948px;width:660px"></div>
 <div id="panel" style="left:120px;top:1064px;width:660px;height:176px;display:flex;flex-direction:column;justify-content:flex-end;gap:16px"></div>
+<div id="closing" style="left:120px;width:840px;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center"></div>
 </div>
 <script>
+// The ending darkens the base to the design's brightness 0.45 (board 10),
+// which the end frames apply where a hold applies 0.84: hence their ratio.
+const END_GLSL = \`
+float ending(float dim) { return mix(1.0, 0.45 / 0.84, dim); }\`;
 const VERT = \`#version 300 es
 in vec2 p; void main(){ gl_Position = vec4(p, 0.0, 1.0); }\`;
 // Grade, limb darkening, atmosphere and vignette follow the design's
@@ -35,9 +42,10 @@ const FRAG = \`#version 300 es
 precision highp float;
 uniform vec2 centre; uniform float radius; uniform vec2 view;
 uniform sampler2D world; uniform sampler2D region; uniform vec4 bounds;
-uniform float grade;
+uniform float grade, dim;
 out vec4 colour;
 const float PI = 3.141592653589793;
+\${END_GLSL}
 const vec3 SPACE = vec3(7.0, 6.0, 5.0) / 255.0;
 const vec3 ATMOS = vec3(143.0, 184.0, 204.0) / 255.0;
 const vec3 WARM = vec3(255.0, 238.0, 221.0) / 255.0;
@@ -78,21 +86,22 @@ void main() {
   float nx = (px.x / 1080.0 - 0.5) * 2.0;
   float ny = (px.y / 1920.0 - 0.36) * 2.0 * (1920.0 / 1080.0) * 0.6;
   float t = smoothstep(0.0, 1.0, clamp((sqrt(nx * nx * 0.8 + ny * ny) - 0.6) / 0.75, 0.0, 1.0));
-  colour = vec4(c * (1.0 - 0.24 * t), 1.0);
+  colour = vec4(c * (1.0 - 0.24 * t) * ending(dim), 1.0);
 }\`;
 
 // Relief (board 6): a sphere mesh raised by the height model, seen through
 // the perspective camera computed in sequence.mjs. Imagery and overlays are
 // draped on it and lit by one fixed light plus a soft fill.
 const CAMERA_GLSL = \`
-uniform vec3 camPos, camRight, camUp, camFwd; uniform float focal; uniform vec2 centre;
+uniform vec3 camPos, camRight, camUp, camFwd; uniform float focal, dim; uniform vec2 centre;
+\${END_GLSL}
 const vec3 SPACE = vec3(7.0, 6.0, 5.0) / 255.0;
 const vec3 ATMOS = vec3(143.0, 184.0, 204.0) / 255.0;
 vec3 vignette(vec3 c, vec2 px) {
   float nx = (px.x / 1080.0 - 0.5) * 2.0;
   float ny = (px.y / 1920.0 - 0.36) * 2.0 * (1920.0 / 1080.0) * 0.6;
   float t = smoothstep(0.0, 1.0, clamp((sqrt(nx * nx * 0.8 + ny * ny) - 0.6) / 0.75, 0.0, 1.0));
-  return c * (1.0 - 0.24 * t);
+  return c * (1.0 - 0.24 * t) * ending(dim);
 }\`;
 // Space and the atmosphere rim, from each pixel's ray: the rim falls off
 // over 4.5 % of the radius, as on the flat globe.
@@ -290,6 +299,7 @@ window.setup = async (bounds, reliefSetup) => {
   if (reliefSetup) await setupRelief(bounds, reliefSetup);
   await document.fonts.load('38px Anton'); await document.fonts.load('600 28px Fraunces');
   await document.fonts.load('800 28px "Nunito Sans"'); await document.fonts.load('400 22px "Nunito Sans"'); await document.fonts.load('400 22px "Noto Sans"');
+  await document.fonts.load('600 36px "Noto Sans Arabic"', "\\u0635\\u062d\\u0631\\u0627\\u0621");
   await document.fonts.ready;
   return [...document.fonts].map((f) => ({ family: f.family, status: f.status }));
 };
@@ -338,6 +348,10 @@ const SWATCHES = {
   river: '<line x1="4" y1="12" x2="40" y2="12" stroke="#6fcbe2" stroke-width="12" stroke-linecap="round" opacity="0.45"/><line x1="4" y1="12" x2="40" y2="12" stroke="#e4f6fb" stroke-width="4.5" stroke-linecap="round"/>',
   "border-quiet": '<line x1="2" y1="12" x2="42" y2="12" stroke="#f3e9da" stroke-opacity="0.8" stroke-width="2.5" stroke-dasharray="7 5"/>',
   "border-strong": '<line x1="2" y1="12" x2="42" y2="12" stroke="#0b0806" stroke-opacity="0.55" stroke-width="8"/><line x1="2" y1="12" x2="42" y2="12" stroke="#f3e9da" stroke-opacity="0.92" stroke-width="3.5"/>',
+  outline: '<line x1="5" y1="12" x2="39" y2="12" stroke="#bfe0ea" stroke-width="5" stroke-linecap="round" stroke-dasharray="0.1 10"/>',
+  place: '<circle cx="22" cy="12" r="6.5" fill="#f3e9da" stroke="#0b0806" stroke-opacity="0.7" stroke-width="3"/>',
+  region: '<text x="22" y="21" text-anchor="middle" font-family="Anton" font-size="22" letter-spacing="2.6" fill="#f3e9da">Aa</text>',
+  water: '<text x="22" y="20" text-anchor="middle" font-family="Nunito Sans" font-style="italic" font-weight="700" font-size="22" fill="#bfe0ea">Aa</text>',
 };
 for (const [k, v] of Object.entries(INK)) {
   SWATCHES["certain-" + k] = \`<rect x="2" y="2" width="40" height="20" rx="3" fill="\${v}" fill-opacity="0.35" stroke="\${v}" stroke-width="3"/>\`;
@@ -360,7 +374,19 @@ function river(d, state) {
   return g;
 }
 
-// The overlay layers in the design's order: fills, borders, edges, rivers.
+// Board 10: a reconstructed outline is round dots over dark dots, its inside
+// barely tinted; it fades in whole and never fills, dries or shrinks.
+function outline(o) {
+  const dots = { fill: "none", "stroke-linecap": "round", "stroke-dasharray": "0.1 11" };
+  return group(o.opacity,
+    ...(o.closed ? [path(o.d, { fill: "#8fd3e6", "fill-opacity": 0.14, "fill-rule": "evenodd" })] : []),
+    path(o.d, { ...dots, stroke: "#0b0806", "stroke-opacity": 0.6, "stroke-width": 9 }),
+    path(o.d, { ...dots, stroke: "#bfe0ea", "stroke-width": 5 }));
+}
+
+// The overlay layers in the design's order: fills, borders, edges, rivers,
+// then a reconstructed outline.
+const LAYERS = ["fills", "borders", "edges", "rivers", "outlines"];
 function overlayLayers(f) {
   const visible = f.areas.filter((a) => a.opacity > 0);
   return [
@@ -368,12 +394,13 @@ function overlayLayers(f) {
     f.borders.filter((b) => b.opacity > 0).map(border),
     visible.map(areaEdge),
     f.rivers.filter((r) => r.state.core > 0 || r.state.glow > 0).map((r) => river(r.d, r.state)),
+    f.outline && f.outline.opacity > 0 ? [outline(f.outline)] : [],
   ];
 }
 // Draws the overlays into the region's map and uploads it as the drape.
 // The SVG is the flat style's own, so strokes, hatching and glow match.
 async function drape(f) {
-  const key = JSON.stringify([f.areas, f.borders, f.rivers].map((list) => list.map((x) => x.opacity ?? x.state)));
+  const key = JSON.stringify([[f.areas, f.borders, f.rivers].map((list) => list.map((x) => x.opacity ?? x.state)), f.outline?.opacity, f.relief.drape]);
   if (key === relief.drapeKey) return;
   relief.drapeKey = key;
   const { width, height, scale } = f.relief.drape;
@@ -419,6 +446,7 @@ async function drawRelief(f) {
     gl.uniform3f(gl.getUniformLocation(prog, "camUp"), ...v.screenUp);
     gl.uniform3f(gl.getUniformLocation(prog, "camFwd"), ...v.forward);
     gl.uniform1f(gl.getUniformLocation(prog, "focal"), v.focal);
+    gl.uniform1f(gl.getUniformLocation(prog, "dim"), f.dim);
     gl.uniform2f(gl.getUniformLocation(prog, "centre"), f.centre.x, f.centre.y);
   }
   gl.disable(gl.DEPTH_TEST);
@@ -440,7 +468,7 @@ async function drawRelief(f) {
   gl.blitFramebuffer(0, 0, 1080, 1920, 0, 0, 1080, 1920, gl.COLOR_BUFFER_BIT, gl.NEAREST);
   gl.bindFramebuffer(gl.FRAMEBUFFER, null);
   gl.finish();
-  for (const id of ["fills", "borders", "edges", "rivers"]) document.getElementById(id).replaceChildren();
+  for (const id of LAYERS) document.getElementById(id).replaceChildren();
 }
 
 window.drawFrame = async (f) => {
@@ -451,13 +479,10 @@ window.drawFrame = async (f) => {
     gl.uniform1f(gl.getUniformLocation(program, "radius"), f.camera.radius);
     gl.uniform2f(gl.getUniformLocation(program, "view"), f.camera.lon * Math.PI / 180, f.camera.lat * Math.PI / 180);
     gl.uniform1f(gl.getUniformLocation(program, "grade"), f.grade);
+    gl.uniform1f(gl.getUniformLocation(program, "dim"), f.dim);
     gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
     gl.finish();
-    const [fills, borders, edges, rivers] = overlayLayers(f);
-    document.getElementById("fills").replaceChildren(...fills);
-    document.getElementById("borders").replaceChildren(...borders);
-    document.getElementById("edges").replaceChildren(...edges);
-    document.getElementById("rivers").replaceChildren(...rivers);
+    overlayLayers(f).forEach((layer, i) => document.getElementById(LAYERS[i]).replaceChildren(...layer));
   }
 
   const names = document.getElementById("names");
@@ -481,17 +506,59 @@ window.drawFrame = async (f) => {
     name.className = { plate: "plate", area: "area-name", water: "water halo", region: "region halo" }[l.style];
     names.append(name);
   }
+  const outlineLabel = f.outline?.label;
+  if (outlineLabel && outlineLabel.opacity > 0) {
+    // The second line is mandatory: the shape is derived, not observed.
+    const name = el("div", \`position:absolute;left:\${outlineLabel.x}px;top:\${outlineLabel.y}px;transform:translate(-50%,-50%);opacity:\${outlineLabel.opacity};font-style:italic;font-weight:700;color:#bfe0ea;text-align:center;white-space:nowrap\`);
+    name.className = "outline-name halo";
+    name.append(el("div", "font-size:30px;line-height:34px", outlineLabel.name), el("div", "font-size:20px;line-height:24px", "contour reconstitu\\u00e9"));
+    names.append(name);
+  }
 
+  const tape = (style) => el("span", "padding:3px 12px;border-radius:999px;background:#ffe58a;color:#2b2100;font-size:16px;line-height:22px;font-weight:800;" + style, f.tape);
   const head = document.getElementById("head");
   head.replaceChildren();
-  const signature = el("div", "display:flex;align-items:center;gap:12px");
+  const signature = el("div", \`display:flex;align-items:center;gap:12px;opacity:\${f.head.signature}\`);
   const logo = el("img", "width:36px;height:36px;display:block");
   logo.src = "/logo.png"; logo.alt = "Logo EthniAfrica";
   signature.append(logo, el("span", "font-family:Fraunces,Georgia,serif;font-weight:600;font-size:28px;line-height:36px;color:#f3e9da", "EthniAfrica"));
-  if (f.demo) signature.append(el("span", "margin-left:8px;padding:3px 12px;border-radius:999px;background:#ffe58a;color:#2b2100;font-size:16px;line-height:22px;font-weight:800", "Texte illustratif"));
-  const title = el("h1", "margin:0;font-family:Anton,'Noto Sans',sans-serif;font-weight:400;font-size:76px;line-height:80px;color:#f3e9da;text-shadow:0 0 2px rgba(11,8,6,.9),0 2px 14px rgba(11,8,6,.7)");
+  if (f.tape) signature.append(tape("margin-left:8px"));
+  // A chained video keeps its title on one line, so the marker stays in the
+  // title band; the browser's box check catches a title that overflows.
+  const title = el("h1", \`margin:0;font-family:Anton,'Noto Sans',sans-serif;font-weight:400;font-size:\${f.head.titleSize}px;line-height:\${f.head.titleSize + 4}px;color:#f3e9da;text-shadow:0 0 2px rgba(11,8,6,.9),0 2px 14px rgba(11,8,6,.7);opacity:\${f.head.title}\${f.marker ? ";white-space:pre" : ""}\`);
   for (const part of f.title) title.append(part.colour ? el("span", "color:" + part.colour, part.text) : document.createTextNode(part.text));
   head.append(signature, title);
+  let marker = null;
+  if (f.marker) {
+    // The bars only change colour and the line only fades: nothing slides.
+    marker = el("div", \`display:flex;align-items:center;gap:14px;opacity:\${f.marker.opacity}\`);
+    const bars = el("div", "display:flex;gap:6px");
+    for (const ink of f.marker.bars) bars.append(el("span", \`width:28px;height:4px;border-radius:2px;background:\${ink}\`));
+    marker.append(bars, el("span", \`font-size:26px;line-height:32px;font-weight:800;color:#e8b96a;text-shadow:0 0 6px rgba(11,8,6,.8);white-space:pre;opacity:\${f.marker.line.opacity}\`, f.marker.line.text));
+    head.append(marker);
+  }
+
+  // One backing box per line, opacity the only animated property (board 9).
+  const subtitles = document.getElementById("subtitles");
+  subtitles.replaceChildren();
+  const subtitleBoxes = [];
+  if (f.subtitle && f.subtitle.opacity > 0) {
+    subtitles.style.opacity = f.subtitle.opacity;
+    f.subtitle.lines.forEach((line, i) => {
+      const row = el("div", \`position:absolute;left:0;top:\${i * 54}px;white-space:pre;font-size:36px;line-height:54px;font-weight:700;color:#f3e9da\`);
+      const box = el("span", "background:rgba(21,16,11,.82);padding:6px 14px;border-radius:6px");
+      for (const run of line) {
+        if (run.arabic) {
+          const word = el("bdi", "font-family:'Noto Sans Arabic',sans-serif;font-style:normal;font-weight:600", run.text);
+          word.lang = "ar"; word.dir = "rtl";
+          box.append(word);
+        } else box.append(run.italic ? el("i", null, run.text) : document.createTextNode(run.text));
+      }
+      row.append(box);
+      subtitles.append(row);
+      subtitleBoxes.push(box);
+    });
+  }
 
   const panel = document.getElementById("panel");
   panel.replaceChildren();
@@ -508,17 +575,43 @@ window.drawFrame = async (f) => {
     legend.append(row);
   }
   const caption = el("p", "margin:0;font-size:22px;line-height:28px;color:#cbbba3");
-  f.caption.forEach(([label, text], i) => {
-    if (i) caption.append(el("br"));
-    caption.append(el("b", "font-weight:700;color:#f3e9da", label + "\\u00a0:"), document.createTextNode(" " + text));
-  });
+  for (const line of f.caption) {
+    const row = el("span", \`display:block;opacity:\${line.opacity}\`);
+    row.append(el("b", "font-weight:700;color:#f3e9da", line.label + "\\u00a0:"), document.createTextNode(" " + line.text.replaceAll(" : ", "\\u00a0: ").replaceAll(" ; ", "\\u00a0; ")));
+    caption.append(row);
+  }
   panel.append(legend, caption);
+
+  // Board 10's closing: signature and slogan; ending A adds what the page
+  // holds and the bare domain. Neither asks the viewer for anything.
+  const closing = document.getElementById("closing");
+  closing.replaceChildren();
+  const closingParts = [];
+  if (f.closing && f.closing.opacity > 0) {
+    const a = f.closing.variant === "A";
+    closing.style.top = (a ? 540 : 600) + "px";
+    closing.style.opacity = f.closing.opacity;
+    const big = el("img", "width:72px;height:72px;display:block");
+    big.src = "/logo.png"; big.alt = "Logo EthniAfrica";
+    closingParts.push(big,
+      el("span", "font-family:Fraunces,Georgia,serif;font-weight:600;font-size:64px;line-height:72px;color:#f3e9da", "EthniAfrica"),
+      el("span", "font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:400;font-size:28px;line-height:36px;color:#cbbba3", "L\\u2019Afrique \\u00e0 travers ses noms"));
+    if (a) closingParts.push(
+      el("span", "margin-top:28px;font-size:30px;line-height:40px;font-weight:700;color:#f3e9da", f.closing.sentence),
+      el("span", "margin-top:6px;padding:12px 28px;border-radius:999px;border:2px solid #e8b96a;color:#e8b96a;font-size:34px;line-height:40px;font-weight:800;letter-spacing:.04em", f.closing.address));
+    // The top signature has left, so the tape moves to the top right.
+    if (f.tape) closingParts.push(tape("position:fixed;right:120px;top:300px"));
+    closing.append(...closingParts);
+  }
 
   // Report the real glyph boxes so the safe zone is checked on what was drawn.
   const boxes = [];
   const add = (id, node) => { const r = node.getBoundingClientRect(); boxes.push({ id, box: { x: r.left, y: r.top, w: r.width, h: r.height } }); };
   add("signature", signature); add("title", title); add("legend", legend); add("caption", caption);
-  for (const n of names.querySelectorAll(".place,.plate,.area-name,.water,.region")) add(n.textContent, n);
+  if (marker) add("marker", marker);
+  subtitleBoxes.forEach((box) => add("subtitle " + box.textContent, box));
+  closingParts.forEach((part, i) => add("closing " + i, part));
+  for (const n of names.querySelectorAll(".place,.plate,.area-name,.water,.region,.outline-name")) add(n.textContent, n);
   return boxes;
 };
 </script></body></html>`;

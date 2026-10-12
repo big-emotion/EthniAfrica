@@ -1,6 +1,6 @@
 # Satellite video renderer
 
-This renderer produces the 12-second vertical geographic videos of roadmap step 9. It follows the accepted Claude Design system **EthniAfrica Vidéo carte 0.2.0-proposition** (accepted by the operator on 11 October 2026). Its design source and decision stay in the coordinator's local evidence folder, as for the cards. Flat satellite imagery is the default style. Relief is an accepted option for landform subjects and wide establishing shots. A successful render never authorizes publication: the three editorial approvals and an explicit publishing instruction still apply.
+This renderer produces the vertical geographic videos of roadmap step 9: the 12-second video of the accepted Claude Design system **EthniAfrica Vidéo carte 0.2.0-proposition** (accepted on 11 October 2026), and the 45 to 60 s video chained in chapters of **0.3.0-proposition** (accepted on 12 October 2026), which extends 0.2.0 without changing it. Their design sources and decisions stay in the coordinator's local evidence folder, as for the cards. Flat satellite imagery is the default style. Relief is an accepted option for landform subjects and wide establishing shots. A successful render never authorizes publication: the three editorial approvals and an explicit publishing instruction still apply.
 
 ## Commands
 
@@ -9,7 +9,7 @@ npm run test:social-video
 ETHNIAFRICA_VIDEO_ASSETS=PATH npm run test:social-video-acceptance
 ```
 
-The first command runs the sequence rules, which need no imagery. The second also renders frames and encodes a full video. It needs the verified imagery folder, which stays outside git, and FFmpeg on the workstation. The folder holds `imagery/world.topo.bathy.200407.3x21600x10800.jpg` and, for relief, `relief/ETOPO_2022_v1_60s_N90W180_surface.tif`; both are checked against their recorded SHA-256. A missing folder fails the run; it is never reported as a pass. In code, `loadSequence` validates a sequence file, `renderFrame` returns one PNG and `encodeVideo` writes `video.mp4` with a `manifest.json`.
+The first command runs the sequence rules, which need no imagery. The second also renders frames and encodes a full video. It needs the verified imagery folder, which stays outside git, and FFmpeg on the workstation. The folder holds `imagery/world.topo.bathy.200407.3x21600x10800.jpg` and, for relief, `relief/ETOPO_2022_v1_60s_N90W180_surface.tif`; both are checked against their recorded SHA-256. A missing folder fails the run; it is never reported as a pass. In code, `loadSequence` validates a sequence file, `renderFrame` returns one PNG, `renderFrames` returns several from one browser session, and `encodeVideo` writes `video.mp4` with a `manifest.json`.
 
 ## Why this engine
 
@@ -31,6 +31,22 @@ Relief follows design board 6. The globe becomes a mesh raised by NOAA ETOPO 202
 Areas, borders and rivers are drawn with the flat style's own SVG into the region's map, then draped on the mesh, so they follow the terrain and hide behind ridges. Names stay flat and horizontal, placed above the raised ground. The caption adds « Relief : NOAA, exagéré ».
 
 The camera keys set the framing. A continental shot (`fixtures/west-relief.sequence.json`, radius 900) puts the horizon just under the title, as the design does. A closer shot pushes the horizon up behind the title scrim. A mesh is heavier than the flat shader: a relief video takes over ten minutes to encode on the workstation.
+
+## Chained chapters
+
+A sequence with `chapters` is a 0.3.0 video: the 0.2.0 opening once (globe to the region, 0 to 6 s), then one to five chapters on the same frame, then an ending. Each chapter is one map state with its own features, names, legend and caption, one to three subtitles and its line under the title. The schedule is computed in whole frames from the design's timing tables, so every event stays on its 0.1 s grid however many chapters are chained. The Sahara fixture reproduces the design's `timeline.json` exactly: chapters at 6.4, 16.2, 25.9, 34.6 and 46.1 s, 59.7 s in all.
+
+- **Strict order.** The last subtitle leaves, then everything drawn leaves together in 400 ms, then 200 ms of plain imagery (or the camera travel), then the next chapter enters: chapter line, caption and legend, overlays, names, and its first subtitle last. A subtitle is on screen only while nothing else enters, leaves or travels. The tests check both rules on every frame, not on a sample.
+- **Same region, new place.** A chapter without `camera` keeps the camera still. A chapter with `camera` is a new place: the base returns to its travel grade, the camera travels 1.8 to 2.4 s and stops dead, then the base recedes again. There is never a cut: on a phone, a hard cut between two satellite views reads as a new video in the feed.
+- **Length from reading.** A chapter lasts as long as its subtitles, at least 6 s. A subtitle stays at full opacity for max(1.5 s, characters ÷ 15 + 0.3 s), rounded up to 0.1 s, at most 7 s. Every grapheme counts once (spaces, punctuation and a letter with its diacritic included), so the count matches what a reader sees, not how the text is encoded.
+- **Lines.** At most 32 characters a line, two lines, 64 in all; longer text is refused rather than shrunk. Lines are balanced and break only at a plain space: authors keep a number and its unit, a phrase in guillemets, « vers » and its year, or an article and its noun together with non-breaking spaces. A break that leaves one or two words on the second line is refused. `*word*` sets a transcribed word in italic.
+- **Arabic script.** Once per video, for the word under discussion only, in parentheses right after its italic transcription: `*ṣaḥrāʾ* (صحراء)`. It is set in Noto Sans Arabic SemiBold, isolated right to left, and never parted from its transcription by a line break. Arabic anywhere else in a sequence is refused.
+- **Marker and title.** From three chapters on, one bar per chapter and the line « n · titre » sit 12 px under the title. The bars only change colour and the line only fades in the empty interval: nothing slides. The title must then hold on one line, so the marker stays in the title band; below three chapters there is neither bar nor line.
+- **Caption.** Carte, Période and Source change with each chapter; a line the next chapter repeats stays on screen through the change. The imagery line never leaves: on a historical chapter it swaps, during the empty interval, to the short credit and « l'imagerie montre le paysage actuel », as on board 10, because the long credit and the note do not fit on one line together. That chapter's Source line names the elevation model.
+- **Historical outline.** A chapter `outline` points to a GeoJSON LineString or Polygon file and must carry its `source`, `study`, `elevationModel` and `levelMetres`: only a contour at a published shoreline level is drawn, never a freehand shape. A file marked as a mockup is refused. The outline is round dots over dark dots, its inside tinted at 14 %, labelled « contour reconstitué », and it fades in whole like any overlay: a lake never fills, dries or shrinks on screen. `illustrative: true` marks a synthetic outline, accepted only in a demo sequence, and the tape then says so.
+- **Endings.** After the last chapter, everything leaves with the title and the top signature, the base darkens and the closing block holds 2.5 s; the imagery line stays. Ending A (signature, slogan, one sentence about what the page holds, the bare domain in the cards' pill) requires `pageOnline: true`, so a video never promises a page that does not exist; ending B is the signature and slogan only. Neither asks the viewer for anything.
+
+The glyph boxes are checked against the safe zone on every frame where a chapter is fully drawn and on the last frame. `fixtures/sahara.chapters.sequence.json` is the design's worked example with its illustrative text; its Méga-Tchad outline is `fixtures/synthetic-outline.geojson`, a plain octagon; the real contour is `data/megachad-325m.geojson` (below).
 
 ## Mega-Chad outline
 
@@ -57,6 +73,8 @@ Simplification is Douglas–Peucker at 0.02° (about 2 km, one DEM cell, under o
 ## Limits
 
 - **Reproducibility:** pixel-for-pixel repeats are expected only on the same machine and pinned browser, not across operating systems. The manifest records Chromium, Playwright and FFmpeg versions and the hashes of the sequence, imagery, engine and video. `productionReady` is always false.
-- **Not implemented yet:** Sentinel-2 tiles, exits for longer sequences, the subtitle band (step 10), and a check that names do not overlap each other. Bulk access to Sentinel-2 tiles still needs to be checked.
+- **Not implemented yet:** Sentinel-2 tiles, a check that names do not overlap each other, and two 0.3.0 map elements: name chips (other names of the same thing) and the attestation list, as well as the period ribbon of a historical chapter. Bulk access to Sentinel-2 tiles still needs to be checked.
+- **Ending grade:** the design's end frames darken the imagery to brightness 0.45 where a hold uses 0.84; the shader applies their ratio. The saturation change on those frames is not reproduced.
+- **Relief drapes:** a chained relief video drapes its overlays once per hold camera, at that hold's scale, so strokes keep their design width at each place; the imagery and height crops cover every hold.
 - **Width estimates:** the layout gate estimates text widths from ratios calibrated on the design fonts; the browser's real glyph boxes decide at export.
 - **Test fixtures:** `fixtures/congo.sequence.json` (a river) and `fixtures/west-areas.sequence.json` (the design's three fictional areas, with Natural Earth borders taken from the accepted card map `social/design-system/assets/Cartes/afrique-ouest.json`). `fixtures/west-relief.sequence.json` frames the same areas in relief. All three carry illustrative copy and the « Texte illustratif » tape. They are not approved publication text.

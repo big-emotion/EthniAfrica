@@ -44,6 +44,7 @@ Every text colour holds at least 4.5:1 on `ground` in both themes, and still on 
 - **Nunito Sans** (`text`) for everything else, as on the site and on the earlier carousels. It lacks a few African letters (ɛ, ɔ, ɲ, ƙ, ɖ, ɣ); **Noto Sans** draws those letters only, as a fallback. Prefer setting such names in a title, a table term or a field name, where Anton draws them all.
 - **Fraunces** (`wordmark`) only for the word EthniAfrica and the slogan in the signature.
 - **Noto Sans Ethiopic** is the last fallback in both stacks, so a Geʽez autonym renders.
+- **Noto Sans Arabic** SemiBold serves the map videos only (Vidéo carte 0.3.0): once per video, for the word under discussion, in parentheses after its transcription. The cards do not load it.
 
 | Style                | Export px                                            | Read at 430 px | Read at 375 px | Read at 320 px |
 | -------------------- | ---------------------------------------------------- | -------------- | -------------- | -------------- |
