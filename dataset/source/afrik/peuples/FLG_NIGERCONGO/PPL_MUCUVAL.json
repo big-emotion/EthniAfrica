@@ -111,5 +111,64 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kuvale désigne un peuple d'éleveurs du sud-ouest de l'Angola, dans le désert du Namibe, dont la langue est proche de celle des Herero. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Les formes Mucuval, OvaKuvale et Cubal, que la fiche relève aussi, n'ont pas été retrouvées dans une source que nous avons ouverte : nous n'en disons donc rien ici. On ne sait pas avec certitude d'où vient le nom Kuvale.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Kuvale",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les chercheurs emploient pour ce peuple d'éleveurs et pour sa langue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Kuvale désigne, pour la généticienne Sandra Oliveira et ses collègues, les éleveurs bantouphones du désert du Namibe angolais, qui forment avec les Himba la force dominante de la tradition pastorale herero. Les auteurs n'expliquent pas ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Genome-wide variation in the Angolan Namib Desert reveals unique pre-Bantu ancestry",
+                "author": "Sandra Oliveira et al.",
+                "year": 2023,
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10516492/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Science Advances, vol. 9, n° 38, 22 septembre 2023, eadh3822 ; lu le 12 octobre 2026 dans la version HTML de PubMed Central, sans pagination. Introduction : « the Bantu-speaking Kuvale and Himba, who constitute part of the Herero pastoral tradition of southwestern Africa »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kuvale est celui que le catalogue Glottolog donne à la langue de ce peuple, code ISO olu. Il ne dit pas d'où vient ce nom, et ne relève pas d'autre forme. On ne sait pas avec certitude d'où il vient.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Kuvale (kuva1244)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/kuva1244",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Page du catalogue Glottolog, lue le 12 octobre 2026 à partir du code ISO olu. Elle ne donne que le nom Kuvale."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

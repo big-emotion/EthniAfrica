@@ -101,5 +101,265 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Yem désigne un peuple du sud-ouest de l'Éthiopie, qui se nomme lui-même Yem. Les voisins et les voyageurs l'ont longtemps appelé Janjero, un nom que beaucoup de Yem jugent méprisant, et son royaume porte aussi le nom Yamma. Les sources ne s'accordent pas toujours sur l'origine de ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Yem",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "jnj",
+        "namedBy": null,
+        "shortLine": "Le nom propre de ce peuple du sud-ouest de l'Éthiopie ; un nom positif, face à Janjero.",
+        "periodLabel": "Écrit depuis 1955 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1995,
+              "to": 1995,
+              "label": "1995"
+            },
+            "era": "modern",
+            "statement": "Le nom Yem est celui que l'on emploie dans le langage officiel éthiopien, parce que le nom Janjero peut avoir un sens méprisant, selon des personnes interrogées en 1995 par l'ethnologue Wossen Marion Popp. Elle note que Yem semble n'être employé officiellement que depuis la création de nouvelles unités administratives.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Yem, Janjero, Oromo? Die Konstruktion ethnischer Identität im sozialen Wandel",
+                "author": "Wossen Marion Popp",
+                "year": 1997,
+                "url": "https://www.uni-bielefeld.de/fakultaeten/soziologie/fakultaet/arbeitsbereiche/ab6/ag_sozialanthropologie/working_paper/WP268.PDF",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 20 et p. 22",
+                "notes": "Working Paper n° 268, université de Bielefeld, faculté de sociologie. Enquête de terrain de mai à août 1995. Année d'après la date de création du fichier PDF (avril 1997). Texte en allemand, lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1995,
+              "to": 1995,
+              "label": "1995"
+            },
+            "era": "modern",
+            "statement": "Le nom Yem est celui que le parti Yem Peoples' Democratic Movement, fondé en 1991, emploie comme un nom positif pour ce que l'on appelait Janjero, selon Wossen Marion Popp. Une partie des habitants de la zone de Jimma, qui viennent du même royaume, refusent ce nom et se disent Janjero.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Yem, Janjero, Oromo? Die Konstruktion ethnischer Identität im sozialen Wandel",
+                "author": "Wossen Marion Popp",
+                "year": 1997,
+                "url": "https://www.uni-bielefeld.de/fakultaeten/soziologie/fakultaet/arbeitsbereiche/ab6/ag_sozialanthropologie/working_paper/WP268.PDF",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 20, p. 24 et p. 29",
+                "notes": "Working Paper n° 268, université de Bielefeld, faculté de sociologie. Enquête de terrain de mai à août 1995. Année d'après la date de création du fichier PDF (avril 1997). Texte en allemand, lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1955,
+              "to": 1955,
+              "label": "1955"
+            },
+            "era": "modern",
+            "statement": "Le nom Yem figure dans l'étude de G. W. B. Huntingford parue en 1955 comme nom propre des Janjero, selon Wossen Marion Popp, qui renvoie à la page 137 de cette étude. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Yem",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Yem, Janjero, Oromo? Die Konstruktion ethnischer Identität im sozialen Wandel",
+                "author": "Wossen Marion Popp",
+                "year": 1997,
+                "url": "https://www.uni-bielefeld.de/fakultaeten/soziologie/fakultaet/arbeitsbereiche/ab6/ag_sozialanthropologie/working_paper/WP268.PDF",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 20",
+                "notes": "Working Paper n° 268, université de Bielefeld. Année d'après la date de création du fichier PDF (avril 1997). Texte en allemand, lu le 12 octobre 2026. Popp cite G. W. B. Huntingford, The Galla of Ethiopia: the Kingdoms of Kafa and Janjero, Londres, International African Institute, 1955, p. 137, que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1613,
+              "to": 1614,
+              "label": "1613-1614"
+            },
+            "era": "polity",
+            "statement": "On parle alors du royaume de Gingiro, un petit royaume que la rivière Zebee entoure presque et dont le roi donne audience seul, du haut d'une tour, selon le récit du voyage du père Antonio Fernandez en 1613-1614, que rapporte Manuel de Almeida.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The travels of the Jesuits in Ethiopia",
+                "author": "Manuel de Almeida, traduit par John Stevens",
+                "year": 1710,
+                "url": "https://archive.org/details/travelsofjesuits00alme",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 190, p. 197 et p. 204",
+                "notes": "Londres, J. Knapton et autres, 1710. Traduction anglaise de la première partie de l'Historia geral de Ethiopia d'Almeida (Coimbra, 1660). Numérisation de la bibliothèque John Carter Brown, lue sur Internet Archive le 12 octobre 2026. Le récit du voyage du père Antonio Fernandez y est rapporté de seconde main."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Janjero",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom sous lequel les voisins et les voyageurs ont longtemps désigné ce peuple ; beaucoup de Yem le jugent méprisant.",
+        "periodLabel": "Écrit depuis 1613 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1995,
+              "to": 1995,
+              "label": "1995"
+            },
+            "era": "modern",
+            "statement": "Le nom Janjero reste celui que beaucoup d'habitants de la zone de Jimma se donnent, selon Wossen Marion Popp, qui les a interrogés en 1995. Un homme âgé lui a dit : « Nous sommes Janjero et nous n'avons rien à voir avec ces Yem chrétiens » (traduit de l'allemand). Les autres disent qu'ils n'ont pas honte de leur origine.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Yem, Janjero, Oromo? Die Konstruktion ethnischer Identität im sozialen Wandel",
+                "author": "Wossen Marion Popp",
+                "year": 1997,
+                "url": "https://www.uni-bielefeld.de/fakultaeten/soziologie/fakultaet/arbeitsbereiche/ab6/ag_sozialanthropologie/working_paper/WP268.PDF",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 29",
+                "notes": "Working Paper n° 268, université de Bielefeld, faculté de sociologie. Enquête de terrain de mai à août 1995. Année d'après la date de création du fichier PDF (avril 1997). Texte en allemand, lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1997,
+              "to": 1997,
+              "label": "Proposée en 1997"
+            },
+            "era": "modern",
+            "statement": "Le nom Janjero serait rapproché du mot amharique sinjero, qui veut dire « singe », ce qui lui donnerait un sens méprisant, selon des personnes interrogées en 1995 par Wossen Marion Popp.",
+            "hypothesisGroup": "origine du nom Janjero",
+            "sources": [
+              {
+                "title": "Yem, Janjero, Oromo? Die Konstruktion ethnischer Identität im sozialen Wandel",
+                "author": "Wossen Marion Popp",
+                "year": 1997,
+                "url": "https://www.uni-bielefeld.de/fakultaeten/soziologie/fakultaet/arbeitsbereiche/ab6/ag_sozialanthropologie/working_paper/WP268.PDF",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "Working Paper n° 268, université de Bielefeld, faculté de sociologie. Enquête de terrain de mai à août 1995. Année d'après la date de création du fichier PDF (avril 1997). Texte en allemand, lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1613,
+              "to": 1614,
+              "label": "Rapportée pour 1613-1614"
+            },
+            "era": "polity",
+            "statement": "Le nom Gingiro voudrait dire « singe » : le récit y voit le nom qui convient le mieux au roi, que ses gestes feraient ressembler à un singe, selon le père Antonio Fernandez, tel que le rapporte Manuel de Almeida.",
+            "hypothesisGroup": "origine du nom Janjero",
+            "sources": [
+              {
+                "title": "The travels of the Jesuits in Ethiopia",
+                "author": "Manuel de Almeida, traduit par John Stevens",
+                "year": 1710,
+                "url": "https://archive.org/details/travelsofjesuits00alme",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 197",
+                "notes": "Londres, J. Knapton et autres, 1710. Traduction anglaise de la première partie de l'Historia geral de Ethiopia d'Almeida (Coimbra, 1660). Numérisation de la bibliothèque John Carter Brown, lue sur Internet Archive le 12 octobre 2026. Le récit du voyage du père Antonio Fernandez y est rapporté de seconde main."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom Janjero désigne le peuple et le royaume que l'on appelle aujourd'hui Yem. Selon G. W. B. Huntingford, cité par Wossen Marion Popp, il est plus courant que les noms propres Yamma et Yem. On ne sait pas avec certitude d'où il vient ; les explications sont présentées ci-dessous.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Yem, Janjero, Oromo? Die Konstruktion ethnischer Identität im sozialen Wandel",
+                "author": "Wossen Marion Popp",
+                "year": 1997,
+                "url": "https://www.uni-bielefeld.de/fakultaeten/soziologie/fakultaet/arbeitsbereiche/ab6/ag_sozialanthropologie/working_paper/WP268.PDF",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 23",
+                "notes": "Working Paper n° 268, université de Bielefeld. Année d'après la date de création du fichier PDF (avril 1997). Texte en allemand, lu le 12 octobre 2026. Popp cite G. W. B. Huntingford, 1955, p. 137, que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1613,
+              "to": 1614,
+              "label": "1613-1614"
+            },
+            "era": "polity",
+            "statement": "Le nom Janjero apparaît sous une forme proche, Gingiro, dans le récit du voyage du père jésuite Antonio Fernandez vers le royaume de Gingiro en 1613-1614, que rapporte Manuel de Almeida. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume existait déjà avant lui.",
+            "formAsWritten": "Gingiro",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The travels of the Jesuits in Ethiopia",
+                "author": "Manuel de Almeida, traduit par John Stevens",
+                "year": 1710,
+                "url": "https://archive.org/details/travelsofjesuits00alme",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 190, p. 197 et p. 204",
+                "notes": "Londres, J. Knapton et autres, 1710. Traduction anglaise de la première partie de l'Historia geral de Ethiopia d'Almeida (Coimbra, 1660). Numérisation de la bibliothèque John Carter Brown, lue sur Internet Archive le 12 octobre 2026. Le récit du voyage du père Antonio Fernandez y est rapporté de seconde main."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Yamma",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "jnj",
+        "namedBy": null,
+        "shortLine": "Un autre nom propre de ce peuple et de son royaume, donné avec Yem par Huntingford en 1955.",
+        "periodLabel": "Écrit depuis 1955",
+        "accounts": [
+          {
+            "period": {
+              "from": 1955,
+              "to": 1955,
+              "label": "1955"
+            },
+            "era": "modern",
+            "statement": "Le nom Yamma figure dans l'étude de G. W. B. Huntingford parue en 1955, avec Yem, comme nom propre des Janjero, selon Wossen Marion Popp, qui renvoie à la page 137 de cette étude. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume existait déjà avant lui.",
+            "formAsWritten": "Yamma",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Yem, Janjero, Oromo? Die Konstruktion ethnischer Identität im sozialen Wandel",
+                "author": "Wossen Marion Popp",
+                "year": 1997,
+                "url": "https://www.uni-bielefeld.de/fakultaeten/soziologie/fakultaet/arbeitsbereiche/ab6/ag_sozialanthropologie/working_paper/WP268.PDF",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 23",
+                "notes": "Working Paper n° 268, université de Bielefeld. Année d'après la date de création du fichier PDF (avril 1997). Texte en allemand, lu le 12 octobre 2026. Popp cite G. W. B. Huntingford, 1955, p. 137, que nous n'avons pas lu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

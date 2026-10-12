@@ -102,5 +102,133 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Sagala désigne un peuple de la région de Morogoro, en Tanzanie centrale, et sa langue. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. D'autres noms existent : Sagara, une autre façon d'écrire le même nom, et Wasagara, la forme que donne l'explorateur Richard Burton en 1860. On ne sait pas avec certitude d'où vient le nom ; nous présentons plus bas ce que les sources disent de ses formes.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Sagala",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple et de sa langue, dans la norme internationale ; on ne sait pas d'où il vient.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sagala est le nom de référence de cette langue dans la norme internationale ISO 639-3, sous le code sbm. On ne sait pas avec certitude quand il a été écrit pour la première fois sous cette forme, ni d'où il vient.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, Sagala [sbm]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/sbm",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Sagala désigne, chez la linguiste Flore Bollaert, une langue parlée par un groupe de la région de Morogoro, dans une zone très montagneuse. Elle compte 106 331 locuteurs d'après le recensement de Muzale et Rugemalira (2008), qu'elle cite.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The synchronic phonology and nominal morphology of Sagala (Bantu G39, Tanzania): A preliminary study",
+                "author": "Flore Bollaert",
+                "year": 2018,
+                "url": "https://www.africanstudies.ugent.be/wp-content/uploads/2018/03/BA-Thesis-Flore-Bollaert.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Mémoire de bachelier, Université de Gand, 2018, lu le 12 octobre 2026 dans le PDF du site du département d'études africaines. Les chiffres de Muzale et Rugemalira (2008, p. 79-80) sont rapportés par Bollaert ; nous n'avons pas lu leur ouvrage. Les trois personnes qui ont fourni les mots (p. 6-8) disent le sagala ou le kisagala langue de leur enfance ; le mémoire ne dit pas comment les locuteurs nomment leur peuple."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sagara",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre écriture de Sagala, car les locuteurs disent le l ou le r sans faire de différence.",
+        "periodLabel": "En usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Sagara est la forme que donne à la langue la liste de Muzale et Rugemalira (2008), selon la linguiste Flore Bollaert. Elle explique que, dans cette langue, les sons l et r sont libres : les personnes interrogées disent l'un ou l'autre pour un même mot, par exemple lwanda ou rwanda pour « rivière ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The synchronic phonology and nominal morphology of Sagala (Bantu G39, Tanzania): A preliminary study",
+                "author": "Flore Bollaert",
+                "year": 2018,
+                "url": "https://www.africanstudies.ugent.be/wp-content/uploads/2018/03/BA-Thesis-Flore-Bollaert.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1 et p. 20",
+                "notes": "Mémoire de bachelier, Université de Gand, 2018, lu le 12 octobre 2026 dans le PDF. P. 1 : la liste de Muzale et Rugemalira (2008) écrit « Sagara » ; p. 20 : les consultants alternent [l] et [r]. Le mémoire ne dit pas laquelle des deux écritures le peuple préfère."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wasagara",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme que donne Burton en 1860 pour les gens du pays d'Usagara ; on ne sait pas si ce sont les mêmes gens.",
+        "periodLabel": "Écrit dès 1860",
+        "accounts": [
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Wasagara apparaît par écrit dans le livre de l'explorateur Richard Burton, qui parcourt en 1857 les monts d'Usagara. Il range les Wasagara avec les Wazaramo et les Wazegura parmi les peuples où deux hommes se jurent fraternité de sang. C'est la plus ancienne trace de ce nom que le projet connaît. Les sources ne disent pas si ces Wasagara sont les mêmes gens que le peuple nommé Sagala aujourd'hui.",
+            "formAsWritten": "Wasagara",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa, vol. 1",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://archive.org/details/lakeregionsofcen11860burt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 47 et p. 114",
+                "notes": "Londres, Longman, Green, Longman and Roberts, 1860, lu sur la numérisation d'Internet Archive le 12 octobre 2026. P. 47 : les « Usagara Mountains » ; p. 114 : « the Wazaramo, the Wazegura, and the Wasagara ». Burton ne dit pas d'où vient le nom."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

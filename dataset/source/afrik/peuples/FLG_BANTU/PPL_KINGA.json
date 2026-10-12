@@ -107,5 +107,147 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kinga désigne un peuple des hautes terres du sud de la Tanzanie, et la langue qu'il parle. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. D'autres noms existent : Wakinga, la forme avec le préfixe swahili, et Ekikinga, un nom de la langue. On ne sait pas avec certitude d'où vient le nom Kinga ; nous présentons plus bas ce que les sources en disent.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Kinga",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple des hautes terres du sud de la Tanzanie et de sa langue ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit dès 1877 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kinga est le nom de référence de cette langue dans la norme internationale ISO 639-3, sous le code zga. Le catalogue Glottolog la dit vivante et parlée en Tanzanie et au Malawi. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, code zga : Kinga",
+                "author": "SIL International",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/zga",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lu le 12 octobre 2026."
+              },
+              {
+                "title": "Glottolog 5.3 — Kinga (nucl1379)",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/nucl1379",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues de l'Institut Max-Planck, consulté le 12 octobre 2026. Noms relevés : Kinga, Ekikinga, Kikinga ; pays : Malawi et Tanzanie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1877,
+              "to": 1877,
+              "label": "Novembre 1877"
+            },
+            "era": "polity",
+            "statement": "Le nom Kinga apparaît par écrit sous une forme proche, Ukinga, dans le journal du consul britannique John Frederic Elton, à la date du 25 novembre 1877 : il y parle de la rivière Mbarafu, qui coule de la « chaîne d'Ukinga », puis de cette chaîne qui reste sur sa gauche toute la journée. Le journal a été publié en 1879 par H. B. Cotterill. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Ukinga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels and Researches among the Lakes and Mountains of Eastern and Central Africa",
+                "author": "John Frederic Elton, édité par H. B. Cotterill",
+                "year": 1879,
+                "url": "https://archive.org/details/travelsandresea00fredgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 369-370",
+                "notes": "Londres, John Murray, 1879, d'après les journaux de Elton, consul britannique à Mozambique, mort en décembre 1877. Lu dans la numérisation d'Internet Archive le 12 octobre 2026. Elton meurt le 19 décembre 1877."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wakinga",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme de Kinga avec le préfixe swahili qui désigne les gens.",
+        "periodLabel": "Écrit dès 1879",
+        "accounts": [
+          {
+            "period": {
+              "from": 1879,
+              "to": 1879,
+              "label": "1879"
+            },
+            "era": "polity",
+            "statement": "Le nom Wakinga est celui que l'explorateur Joseph Thomson donne en 1879 aux gens du chef Makula, près du lac Nyasa. Il écrit qu'ils ne sont pas des Wachungu, comme l'avaient cru Elton et Cotterill, mais des Wakinga venus des hautes montagnes du nord du lac pour des raisons politiques. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Wakinga",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Makula",
+                "role": "chef dont Thomson décrit le peuple"
+              }
+            ],
+            "sources": [
+              {
+                "title": "To the Central African Lakes and Back, volume 1",
+                "author": "Joseph Thomson",
+                "year": 1881,
+                "url": "https://archive.org/details/tocentralafrica00thomgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 272",
+                "notes": "Londres, Sampson Low, 1881, récit de l'expédition de la Royal Geographical Society de 1878-1880. Lu dans la numérisation d'Internet Archive le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ekikinga",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de la langue kinga, avec le préfixe de classe qui désigne une langue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Ekikinga est un autre nom de la langue kinga, que le catalogue Glottolog relève avec Kikinga. On ne sait pas avec certitude depuis quand ces noms sont employés, ni qui les emploie.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Kinga (nucl1379)",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/nucl1379",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues de l'Institut Max-Planck, consulté le 12 octobre 2026. Noms relevés : Kinga, Ekikinga, Kikinga ; pays : Malawi et Tanzanie."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -95,5 +95,110 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kimbu désigne un peuple bantou de Tanzanie et la langue qu'il parle. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Les voyageurs européens l'écrivent Wakimbu dès 1859, à l'ouest de l'Ugogo et dans l'Unyamwezi. On ne sait pas avec certitude d'où vient le nom Kimbu. Nous présentons plus bas ce que les sources disent.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Kimbu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple de Tanzanie et de sa langue, écrit Wakimbu en 1859 ; son origine est inconnue.",
+        "periodLabel": "Écrit Wakimbu dès 1859 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kimbu est le nom de référence de cette langue dans la norme internationale ISO 639-3, sous le code kiv. On ne sait pas avec certitude d'où il vient.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, Kimbu [kiv]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/kiv",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1877,
+              "to": 1877,
+              "label": "1877"
+            },
+            "era": "polity",
+            "statement": "Le nom Wakimbu désigne chez l'explorateur Verney Lovett Cameron une tribu de Wanyamwezi chassée par les guerres de ses anciens foyers, qui a défriché la brousse sur la route de l'Unyanyembe. Il passe en 1873 par un de leurs villages, Pururu.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Across Africa, vol. 1",
+                "author": "Verney Lovett Cameron",
+                "year": 1877,
+                "url": "https://archive.org/details/acrossafrica01came",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 127-128",
+                "notes": "Londres, Daldy, Isbister and Co., 1877. Lu le 12 octobre 2026 sur la numérisation d'Internet Archive. Récit du voyage de 1873 : « the Wakimbu, a tribe of Wanyamwesi driven by wars from their former homes », puis le village de Wakimbu de Pururu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Wakimbu désigne chez Richard Burton des émigrés installés dans l'Unyamwezi, qui disent descendre des terres au sud de l'Unyanyembe et avoir quitté Nguru, l'Usanga et l'Usenga sous les attaques des Warori. Il appelle leur pays Ukimbu, au sud de l'Unyamwezi, et note que leur langue diffère du kinyamwezi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa: A Picture of Exploration, volume II",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://archive.org/details/lakeregionsofcen21860burt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 2, 19-20",
+                "notes": "Londres, Longman, Green, Longman and Roberts, 1860. Lu le 12 octobre 2026 sur la numérisation d'Internet Archive. P. 2 : l'Unyamwezi est borné « southwards by Ukimbu » ; p. 19-20 : section « The Wakimbu »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1859,
+              "to": 1859,
+              "label": "1859"
+            },
+            "era": "polity",
+            "statement": "Le nom Kimbu apparaît par écrit sous une forme proche, Wakimbu, dans l'article de Richard Burton sur les régions des lacs d'Afrique centrale, où il parle aussi d'un sultan de l'Ugogo « of Mkimbu origin ». Burton y écrit que des « villages of Wakimbu » se multiplient dans le Mgunda Mk'hali. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "formAsWritten": "Wakimbu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Equatorial Africa, Journal of the Royal Geographical Society, vol. 29",
+                "author": "Richard F. Burton",
+                "year": 1859,
+                "url": "https://archive.org/details/in.ernet.dli.2015.70694",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 155",
+                "notes": "Lu le 12 octobre 2026 sur la numérisation d'Internet Archive. Burton y parle de « Sultan Kihuyo, a man of Mkimbu origin » dans l'Ugogo et de « villages of Wakimbu » qui se multiplient dans le Mgunda Mk'hali, après son voyage de 1857-1858."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

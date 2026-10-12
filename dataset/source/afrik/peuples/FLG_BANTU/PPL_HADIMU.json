@@ -105,5 +105,132 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Hadimu, ou Wahadimu au pluriel en swahili, désigne les descendants des premiers habitants de l'île de Zanzibar. Les sources que nous avons lues le présentent comme un nom donné par d'autres, qui voudrait dire « serviteur ». On ne sait pas comment ce peuple se nomme lui-même. Les sources ne s'accordent pas sur tous les points de cette histoire ; nous les présentons plus bas.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Wahadimu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "swh",
+        "namedBy": null,
+        "shortLine": "Le nom que l'on donne aux habitants anciens de l'île de Zanzibar ; il voudrait dire « serviteur ».",
+        "periodLabel": "Écrit depuis 1872 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wahadimu désigne, chez Robert Lyne, les descendants des premiers habitants de l'île de Zanzibar, qui vivent surtout sur la côte est, dans des villages de pêcheurs ; il écrit Mhadimu au singulier. Il ajoute que les conquérants du nord leur ont fait payer des impôts et fait faire des corvées, mais ne les ont jamais réduits en esclavage.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Zanzibar in Contemporary Times: A Short History of the Southern East in the Nineteenth Century",
+                "author": "Robert Nunez Lyne",
+                "year": 1905,
+                "url": "https://archive.org/details/zanzibarinconte00lynegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 238",
+                "notes": "Londres, Hurst and Blackett, 1905. Lu sur la numérisation d'Internet Archive le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "Proposée en 1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mhadimu voudrait dire « serviteur » : il aurait été donné aux premiers habitants de l'île par des tribus du nord, quand elles ont conquis le pays, selon Robert Lyne.",
+            "hypothesisGroup": "origine du nom Hadimu",
+            "sources": [
+              {
+                "title": "Zanzibar in Contemporary Times: A Short History of the Southern East in the Nineteenth Century",
+                "author": "Robert Nunez Lyne",
+                "year": 1905,
+                "url": "https://archive.org/details/zanzibarinconte00lynegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 238",
+                "notes": "Londres, Hurst and Blackett, 1905. Lu sur la numérisation d'Internet Archive le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1872,
+              "to": 1872,
+              "label": "Proposée en 1872"
+            },
+            "era": "polity",
+            "statement": "Le nom Mahadimu viendrait du mot arabe makhadim, qui veut dire « serviles », selon Richard Burton.",
+            "hypothesisGroup": "origine du nom Hadimu",
+            "sources": [
+              {
+                "title": "Zanzibar: City, Island, and Coast, volume I",
+                "author": "Richard F. Burton",
+                "year": 1872,
+                "url": "https://archive.org/details/zanzibarcityisla01burt_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 412",
+                "notes": "Londres, Tinsley Brothers, 1872. Lu sur la numérisation d'Internet Archive le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1872,
+              "to": 1872,
+              "label": "1872"
+            },
+            "era": "polity",
+            "statement": "Le nom Hadimu apparaît sous une forme proche, Mahadimu, dans le livre de Richard Burton sur Zanzibar, publié en 1872. Burton y décrit les Mahadimu comme des « serviles » de l'île, qui paient un impôt par tête. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Mahadimu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Zanzibar: City, Island, and Coast, volume I",
+                "author": "Richard F. Burton",
+                "year": 1872,
+                "url": "https://archive.org/details/zanzibarcityisla01burt_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 412 et p. 414",
+                "notes": "Londres, Tinsley Brothers, 1872. Lu sur la numérisation d'Internet Archive le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant la conquête, selon Burton"
+            },
+            "statement": "Les Mahadimu seraient les anciens maîtres de l'île de Zanzibar, réduits à la servitude par des conquérants venus du nord, selon Richard Burton. Les sources que nous avons lues ne disent pas sous quel nom ils se désignaient alors.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Zanzibar: City, Island, and Coast, volume I",
+                "author": "Richard F. Burton",
+                "year": 1872,
+                "url": "https://archive.org/details/zanzibarcityisla01burt_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 414",
+                "notes": "Londres, Tinsley Brothers, 1872. Lu sur la numérisation d'Internet Archive le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

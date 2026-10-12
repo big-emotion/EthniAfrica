@@ -117,5 +117,86 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Wogo désigne un groupe songhay qui vit sur les îles du fleuve Niger, dans la région de Tillabéri, et qui se nomme lui-même Wogo. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ses traces.",
+    "names": [
+      {
+        "nameText": "Wogo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un groupe songhay des îles du fleuve Niger, autour de Tillabéri ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit depuis 1964 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1997,
+              "to": 1997,
+              "label": "1997"
+            },
+            "era": "modern",
+            "statement": "Le nom Wogo est celui que des habitants de l'île de Sawani, au nord de Tillabéri, donnent à leur langue, en alternance avec Songhay et Zarma, selon des linguistes de SIL qui les ont interrogés en 1997.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Southern Songhay Speech Varieties In Niger: A Sociolinguistic Survey of the Zarma, Songhay, Kurtey, Wogo, and Dendi Peoples of Niger",
+                "author": "Byron Harrison, Annette Harrison et Michael J. Rueck, SIL",
+                "year": 1997,
+                "url": "https://media.corban.edu/hydra/media/files/2019/09/10/southern-songhay-silesr1999_004-1.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2 et p. 16",
+                "notes": "Rapport de SIL Niger (décembre 1997) sur une enquête menée de janvier à mars 1997, SILESR 1999-004. Lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1979,
+              "to": 1987,
+              "label": "1979-1987"
+            },
+            "era": "modern",
+            "statement": "Le nom Wogo désigne, chez les linguistes Robert Nicolaï (1979) et Rougga (1987), le peuple des îles du Niger au nord et au sud de Tillabéri, dont ils rangent le parler dans le dialecte kaado, selon une enquête de SIL de 1997.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Southern Songhay Speech Varieties In Niger: A Sociolinguistic Survey of the Zarma, Songhay, Kurtey, Wogo, and Dendi Peoples of Niger",
+                "author": "Byron Harrison, Annette Harrison et Michael J. Rueck, SIL",
+                "year": 1997,
+                "url": "https://media.corban.edu/hydra/media/files/2019/09/10/southern-songhay-silesr1999_004-1.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Rapport de SIL Niger (décembre 1997) sur une enquête menée de janvier à mars 1997, SILESR 1999-004. SIL cite Nicolaï, 1979, p. 13, et Rougga, 1987, p. 16-17, que nous n'avons pas lus. Lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1964,
+              "to": 1969,
+              "label": "1964-1969"
+            },
+            "era": "modern",
+            "statement": "Le nom Wogo figure dans le titre d'une collection d'enregistrements, « Niger, population wogo », que l'ethnologue Jean-Pierre Olivier de Sardan a réunie dans l'archipel de Tillabéri entre 1964 et 1969 pour un film sur un mariage wogo. C'est la plus ancienne trace de ce nom que le projet connaît. Le groupe existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Niger, population wogo (collection CNRSMH_I_1970_022)",
+                "author": "Jean-Pierre Olivier de Sardan, collecteur et déposant ; Centre de recherche en ethnomusicologie (CREM)",
+                "year": null,
+                "url": "https://archives.crem-cnrs.fr/archives/collections/CNRSMH_I_1970_022/",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Fiche de la collection dans les archives sonores du CREM : 42 enregistrements, dates de la fiche 1964 à 1969, ceux de chaque enregistrement 1963 à 1969. Seules les métadonnées sont en ligne ; nous n'avons pas écouté les enregistrements. Fiche lue le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -99,5 +99,106 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Minungu désigne un peuple bantou établi de part et d'autre de la frontière entre l'Angola et la République démocratique du Congo. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Un autre nom existe : Nyinungu, que le linguiste Jacky Maniacky emploie pour sa langue. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Minungu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom sous lequel ce peuple et sa langue sont le mieux connus ; écrit Minungo en 1875.",
+        "periodLabel": "Écrit Minungo depuis 1875 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Minungu est celui sous lequel on connaît le mieux, dans la littérature, une langue bantoue parlée de part et d'autre de la frontière entre l'Angola et la République démocratique du Congo, selon le linguiste Jacky Maniacky. Il écrit que les études socio-historiques la rattachent aux langues lunda et que presque rien n'a été écrit sur elle. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Notes on Nyinungu, (Unclassified Bantu, Cokwe-Lunda group)",
+                "author": "Jacky Maniacky",
+                "year": 2008,
+                "url": "https://www.uni-koeln.de/phil-fak/afrikanistik/wocal/schedule/abstracts/6-4-2%20Jacky%20Maniacky.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Résumé d'une page pour le 6e Congrès mondial de linguistique africaine (WOCAL 6, Cologne, 2008) ; lu le 12 octobre 2026 sur le site de l'université de Cologne. L'auteur travaille au Musée royal de l'Afrique centrale, à Tervuren, à partir d'enregistrements faits à Lubumbashi en 2008."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1875,
+              "to": 1875,
+              "label": "5 août 1875, journal publié en 1880"
+            },
+            "era": "polity",
+            "statement": "Le nom Minungu apparaît par écrit sous une forme proche, Minungo, dans le journal de l'explorateur allemand Paul Pogge, qui s'arrête le 5 août 1875 dans un village « du peuple minungo ». Il écrit que les Minungo se distinguent des Songo par leur langue, la forme de leurs cases et des lois moins sévères. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Minungo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Paul Pogge",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Im Reiche des Muata Jamwo. Tagebuch meiner im Auftrage der Deutschen Gesellschaft zur Erforschung Aequatorial-Afrika's in die Lunda-Staaten unternommenen Reise",
+                "author": "Paul Pogge",
+                "year": 1880,
+                "url": "https://archive.org/details/imreichedesmuata00pogg",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 42",
+                "notes": "Berlin, Dietrich Reimer, 1880. Journal du voyage de 1875-1876, lu le 12 octobre 2026 dans la numérisation d'Internet Archive. La page écrit, à la date du 5 août : « Wir machen Halt in einem Negerdorfe, dem Minungo-Stamme gehörig. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nyinungu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que le linguiste Jacky Maniacky emploie pour la langue minungu.",
+        "periodLabel": "Écrit en 2008",
+        "accounts": [
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Nyinungu est celui que le linguiste Jacky Maniacky emploie pour la langue qu'il a étudiée à partir d'enregistrements faits à Lubumbashi en 2008. Il écrit qu'elle est « mieux connue dans la littérature sous le nom de Minungu ». Il ne dit pas si ses locuteurs se nomment ainsi.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Notes on Nyinungu, (Unclassified Bantu, Cokwe-Lunda group)",
+                "author": "Jacky Maniacky",
+                "year": 2008,
+                "url": "https://www.uni-koeln.de/phil-fak/afrikanistik/wocal/schedule/abstracts/6-4-2%20Jacky%20Maniacky.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Résumé d'une page pour le 6e Congrès mondial de linguistique africaine (WOCAL 6, Cologne, 2008) ; lu le 12 octobre 2026 sur le site de l'université de Cologne. L'auteur travaille au Musée royal de l'Afrique centrale, à Tervuren, à partir d'enregistrements faits à Lubumbashi en 2008."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

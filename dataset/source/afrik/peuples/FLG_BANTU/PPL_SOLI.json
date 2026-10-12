@@ -103,5 +103,110 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Soli désigne un peuple de la région de Lusaka, en Zambie, et sa langue, que les sources rangent dans le groupe bantu botatwe. On ne sait pas comment ce peuple se nomme lui-même. On ne sait pas non plus avec certitude d'où vient le nom Soli ; nous présentons plus bas ses traces.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Soli",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "sby",
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple de la région de Lusaka, en Zambie, et de sa langue ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit depuis 1931 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Soli est le nom de référence de la langue de ce peuple dans la norme internationale ISO 639-3, sous le code sby.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, Soli [sby]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/sby",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Soli désigne une langue du groupe bantu botatwe, avec le tonga, le lenje, l'ila, le sala, le toka-leya et le kaonde-ila, selon une étude de 2023 sur la langue sala.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Birth and Sociolinguistic Features of Sala Language of Zambia. To What Extent is Sala Language Related to Bantu Botatwe Group of Languages?",
+                "author": "Elliot Machinyise, Martin Chabu et Mercy Zemba",
+                "year": 2023,
+                "url": "https://rsisinternational.org/journals/ijriss/Digital-Library/volume-7-issue-8/993-1000.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 994",
+                "notes": "International Journal of Research and Innovation in Social Science, vol. 7, n° 8, 2023, p. 993-1000. Les auteurs citent P. C. Manchishi et E. T. Musona, The People of Zambia: A Short History of the Soli from 1500 to 1900, Lusaka, Multimedia Publication, sans date, que nous n'avons pas lu. Lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "1931"
+            },
+            "era": "colonial",
+            "statement": "Le nom Soli apparaît dans le livre de l'anthropologue Clement Doke sur les Lamba, publié en 1931. Doke y cite les peuples lenje, ila et soli, chez qui les mères portent leur bébé dans une peau, alors que les Lamba utilisent un tissu d'écorce. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Soli",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lambas of Northern Rhodesia: a study of their customs and beliefs",
+                "author": "Clement M. Doke",
+                "year": 1931,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283446",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 136",
+                "notes": "Londres, Harrap, 1931. Lu sur la numérisation d'Internet Archive le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1500,
+              "label": "Vers 1500"
+            },
+            "era": "polity",
+            "statement": "Un groupe que les auteurs appellent Soli vivrait vers 1500 dans la région de Chisamba, en Zambie centrale, selon P. C. Manchishi, cité par Machinyise et ses collègues. Vers 1700, les Bene Mukuni l'auraient chassé vers Lusaka. Les sources que nous avons lues ne disent pas sous quel nom ce groupe se désignait alors.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Birth and Sociolinguistic Features of Sala Language of Zambia. To What Extent is Sala Language Related to Bantu Botatwe Group of Languages?",
+                "author": "Elliot Machinyise, Martin Chabu et Mercy Zemba",
+                "year": 2023,
+                "url": "https://rsisinternational.org/journals/ijriss/Digital-Library/volume-7-issue-8/993-1000.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 994 et p. 995",
+                "notes": "International Journal of Research and Innovation in Social Science, vol. 7, n° 8, 2023, p. 993-1000. Les auteurs citent P. C. Manchishi et E. T. Musona, The People of Zambia: A Short History of the Soli from 1500 to 1900, Lusaka, Multimedia Publication, sans date, que nous n'avons pas lu. Lu le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

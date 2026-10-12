@@ -112,5 +112,232 @@
         "source_kind": "repository"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Lamba désigne un peuple bantou du Copperbelt, en Zambie, et du sud du Katanga, en République démocratique du Congo, qui se nomme lui-même Lamba et appelle son pays Ilamba. On ne sait pas avec certitude d'où vient le nom Lamba : les sources lues ne l'expliquent pas. Le nom composé Lala-Lamba vient d'un manuel de langue de 1908 et ne désigne pas un peuple à part. La plus ancienne trace de Lamba date de 1798, sous la forme Arambas.",
+    "names": [
+      {
+        "nameText": "Lamba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lam",
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple du Copperbelt zambien et du sud du Katanga ; la plus ancienne trace écrite date de 1798.",
+        "periodLabel": "Écrit depuis 1798 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant le nom, selon les récits lamba"
+            },
+            "era": "polity",
+            "statement": "On parle alors, dans les récits que les vieux Lamba font à Clement Doke, d'un pays que Luchyele aurait mis en ordre, où vivaient peu de gens, sans chef. Plus tard serait venu de l'ouest un homme supérieur, Chipimpi, devenu le premier chef lamba.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Récits lamba sur Luchyele et Chipimpi, recueillis par Clement M. Doke dans The Lambas of Northern Rhodesia",
+                "author": "Clement M. Doke",
+                "year": 1931,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283446",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "page": "p. 30-31",
+                "narrative": "Luchyele et Chipimpi, les débuts de l'histoire lamba",
+                "carrier": "De vieux Lamba interrogés par Clement M. Doke",
+                "place": "Pays lamba (Ilamba), Rhodésie du Nord",
+                "notes": "Récit recueilli par l'auteur auprès de vieux Lamba et publié dans son livre ; lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1798,
+              "to": 1798,
+              "label": "21 septembre 1798"
+            },
+            "era": "polity",
+            "statement": "Le nom Lamba apparaît par écrit, sous la forme proche Arambas, dans le journal du Portugais Francisco de Lacerda, le 21 septembre 1798 : on lui assure qu'au sud vivent « les Arambas et les Ambos, amis paisibles du Cazembe », dans la traduction de Burton. Clement Doke y reconnaît les Lamba et y voit leur plus ancienne mention. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Arambas",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lands of Cazembe : Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida et Francisco João Pinto, traduit par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/cu31924081259271",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 99",
+                "notes": "Londres, John Murray, 1873 ; lu dans l'exemplaire numérisé d'Internet Archive le 12 octobre 2026. Entrée du journal du 21 septembre 1798, dans la traduction anglaise de Burton."
+              },
+              {
+                "title": "The Lambas of Northern Rhodesia: A Study of their Customs and Beliefs",
+                "author": "Clement M. Doke",
+                "year": 1931,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283446",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 30",
+                "notes": "Londres, George G. Harrap & Co., 1931 ; lu dans l'exemplaire numérisé d'Internet Archive le 12 octobre 2026. L'auteur, missionnaire baptiste, travaille chez les Lamba de 1914 à 1921."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1908,
+              "to": 1908,
+              "label": "1908"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lamba désigne en 1908, chez le linguiste A. C. Madan, l'un des trois peuples du district où l'on parle le lala. Madan le place des deux côtés de la frontière du Congo, des hautes eaux des rivières Lunsenfwa et Kafuwe jusqu'à la Luapula.",
+            "sources": [
+              {
+                "title": "Lala-Lamba Handbook: A Short Introduction to the South-western Division of the Wisa-Lala Dialect of Northern Rhodesia, with Stories and Vocabulary",
+                "author": "A. C. Madan",
+                "year": 1908,
+                "url": "https://archive.org/details/lalalambahandbo00madagoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 4",
+                "notes": "Oxford, Clarendon Press, 1908 ; lu dans l'exemplaire numérisé d'Internet Archive le 12 octobre 2026. L'introduction est signée de Mkushi, Rhodésie du Nord-Ouest, en juillet 1907."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "1931"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lamba désigne chez Clement Doke les gens de langue lamba, qui occupent environ 25 000 milles carrés, en partie en Rhodésie du Nord, en partie dans la pointe sud du Katanga belge. Doke note qu'en lamba un Lamba se dit umulamba.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Lambas of Northern Rhodesia: A Study of their Customs and Beliefs",
+                "author": "Clement M. Doke",
+                "year": 1931,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283446",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17 et note sur l'orthographe (page non numérotée)",
+                "notes": "Londres, George G. Harrap & Co., 1931 ; lu dans l'exemplaire numérisé d'Internet Archive le 12 octobre 2026. L'auteur, missionnaire baptiste, travaille chez les Lamba de 1914 à 1921."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Lamba est le nom de référence de la langue dans la norme internationale ISO 639-3, sous le code lam. On ne sait pas d'où vient le nom : les sources lues ne l'expliquent pas.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, Lamba [lam]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/lam",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ilamba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lam",
+        "namedBy": null,
+        "shortLine": "Le nom que les Lamba donnent à leur pays, que les missionnaires appellent Lambaland.",
+        "periodLabel": "Écrit depuis 1931",
+        "accounts": [
+          {
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "1931"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ilamba apparaît par écrit chez Clement Doke : le pays des gens de langue lamba, que les missionnaires appellent Lambaland, est nommé Ilamba par le peuple lui-même, selon lui. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays existait déjà avant elle.",
+            "formAsWritten": "Ilamba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lambas of Northern Rhodesia: A Study of their Customs and Beliefs",
+                "author": "Clement M. Doke",
+                "year": 1931,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283446",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17",
+                "notes": "Londres, George G. Harrap & Co., 1931 ; lu dans l'exemplaire numérisé d'Internet Archive le 12 octobre 2026. L'auteur, missionnaire baptiste, travaille chez les Lamba de 1914 à 1921."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Lala-Lamba",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'une langue, venu du titre d'un manuel de 1908, qui réunit le lala et le lamba ; pas celui d'un peuple.",
+        "periodLabel": "Écrit depuis 1908",
+        "accounts": [
+          {
+            "period": {
+              "from": 1908,
+              "to": 1908,
+              "label": "1908"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lala-Lamba apparaît par écrit dans le titre du Lala-Lamba Handbook de A. C. Madan, un manuel de langue de 1908. Madan y écrit que les parlers lala et lamba sont si proches que connaître l'un suffit pour l'autre. Il parle des gens qui parlent le lala-lamba-wisa. Le nom désigne donc un parler et non un peuple. C'est la plus ancienne trace de ce nom que le projet connaît. Les Lala et les Lamba existaient déjà avant elle.",
+            "formAsWritten": "Lala-Lamba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Lala-Lamba Handbook: A Short Introduction to the South-western Division of the Wisa-Lala Dialect of Northern Rhodesia, with Stories and Vocabulary",
+                "author": "A. C. Madan",
+                "year": 1908,
+                "url": "https://archive.org/details/lalalambahandbo00madagoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "titre, préface et p. 6",
+                "notes": "Oxford, Clarendon Press, 1908 ; lu dans l'exemplaire numérisé d'Internet Archive le 12 octobre 2026. L'introduction est signée de Mkushi, Rhodésie du Nord-Ouest, en juillet 1907."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "1931"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lala-Lamba figure en 1931 dans une note de Clement Doke, qui rappelle que Madan a traité ensemble le lala et le lamba, deux langues sœurs selon lui. Doke ajoute que le wisa est aussi distinct du lamba que le wemba.",
+            "sources": [
+              {
+                "title": "The Lambas of Northern Rhodesia: A Study of their Customs and Beliefs",
+                "author": "Clement M. Doke",
+                "year": 1931,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283446",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 23, note 1",
+                "notes": "Londres, George G. Harrap & Co., 1931 ; lu dans l'exemplaire numérisé d'Internet Archive le 12 octobre 2026. L'auteur, missionnaire baptiste, travaille chez les Lamba de 1914 à 1921."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

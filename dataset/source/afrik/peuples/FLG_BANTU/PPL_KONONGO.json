@@ -106,5 +106,156 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Konongo désigne un peuple de l'ouest de la Tanzanie, dans la région de Rukwa et de Katavi, et la langue qu'il parle. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Le nom Wakonongo, avec le préfixe swahili, est la forme la plus ancienne que nous ayons trouvée, et Konongo-Ruwila est le nom que les catalogues donnent à la langue. On ne sait pas avec certitude d'où vient le nom Konongo ; nous présentons plus bas ce que les sources en disent.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Konongo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple de l'ouest de la Tanzanie et de sa langue ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit dès 1860 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Konongo est le nom de référence de cette langue dans la norme internationale ISO 639-3, sous le code kcz. Le catalogue Glottolog la décrit comme une langue de Tanzanie en danger, et la range avec le ruwila sous le nom Konongo-Ruwila. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, code kcz : Konongo",
+                "author": "SIL International",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/kcz",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lu le 12 octobre 2026."
+              },
+              {
+                "title": "Glottolog 5.3 — Konongo-Ruwila (kono1265)",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/kono1265",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues de l'Institut Max-Planck, consulté le 12 octobre 2026. Noms relevés : Konongo, Kikonongo, Konongo-Ruwila ; pays : Tanzanie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "2009"
+            },
+            "era": "modern",
+            "statement": "Le nom Konongo désigne, dans l'étude de Tony Waters sur la région de Rukwa, l'un des peuples de l'ouest de la Tanzanie, avec les Fipa, les Pimbwe, les Bende et les Kimbu. Il note que les récits d'explorateurs du XIXe siècle appellent « Nyamwezi » les chefs konongo, comme Simba.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Social Organization and Social Status in Nineteenth and Twentieth Century Rukwa, Tanzania",
+                "author": "Tony Waters",
+                "year": 2009,
+                "url": "https://asq.africa.ufl.edu/wp-content/uploads/sites/168/Waters-V11Is1.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 57 et p. 62",
+                "notes": "African Studies Quarterly, vol. 11, n° 1, automne 2009 ; lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1877,
+              "to": 1877,
+              "label": "1877"
+            },
+            "era": "polity",
+            "statement": "Le nom Konongo est celui du peuple dont Simba est le chef quand, en 1877, un marchand de la côte, Matumula, passe avec un représentant du roi des Belges un accord qui cède Karema, un port du lac Tanganyika. Tony Waters présente Simba comme un chef nyamwezi et konongo, et situe l'accord dans l'enceinte qui lui appartient.",
+            "actors": [
+              {
+                "name": "Simba",
+                "role": "chef des Konongo, selon Tony Waters"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Social Organization and Social Status in Nineteenth and Twentieth Century Rukwa, Tanzania",
+                "author": "Tony Waters",
+                "year": 2009,
+                "url": "https://asq.africa.ufl.edu/wp-content/uploads/sites/168/Waters-V11Is1.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 66",
+                "notes": "African Studies Quarterly, vol. 11, n° 1, automne 2009 ; lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Konongo apparaît par écrit sous une forme proche, Wakonongo, dans le livre de l'explorateur Richard Burton paru en 1860. Burton y rapporte que les Wakimbu, installés à Unyamwezi, disent avoir quitté Nguru, Usanga et Usenga avec leurs voisins les Wakonongo et les Wamia, chassés par les attaques des Warori. Il cite plus loin les Wakonongo parmi les peuples que les Warori attaquent. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Wakonongo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa: A Picture of Exploration, volume II",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://archive.org/details/lakeregionsofcen21860burt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 19 et p. 272",
+                "notes": "Londres, 1860. Lu le 12 octobre 2026 dans l'édition numérique du Projet Gutenberg, établie à partir de la même édition, dont la pagination est celle de l'édition de 1860."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Konongo-Ruwila",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les catalogues de langues donnent à la langue, avec le ruwila voisin.",
+        "periodLabel": "En usage chez les linguistes aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Konongo-Ruwila est celui que le catalogue Glottolog donne à la langue konongo, dont il fait un seul ensemble avec le ruwila. Glottolog relève aussi les formes Konongo et Kikonongo. On ne sait pas avec certitude depuis quand ce nom est employé.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Konongo-Ruwila (kono1265)",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/kono1265",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues de l'Institut Max-Planck, consulté le 12 octobre 2026. Noms relevés : Konongo, Kikonongo, Konongo-Ruwila ; pays : Tanzanie."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

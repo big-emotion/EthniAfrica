@@ -94,5 +94,66 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Pangwa désigne un peuple des hautes terres du sud de la Tanzanie et sa langue. On ne sait pas comment ce peuple se nomme lui-même. On ne sait pas non plus avec certitude d'où vient le nom Pangwa ; nous présentons plus bas ses traces.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Pangwa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "pbr",
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple des hautes terres du sud de la Tanzanie et de sa langue ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit depuis 1881 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Pangwa est le nom de référence de la langue de ce peuple dans la norme internationale ISO 639-3, sous le code pbr.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, Pangwa [pbr]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/pbr",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Pangwa apparaît sous une forme proche, Wapangwa, chez l'explorateur Joseph Thomson. Il y désigne une petite tribu qui vit sur des montagnes sans arbres, à 6 000 ou 7 000 pieds d'altitude (environ 1 800 à 2 100 mètres), près du village de Msendisi, sur la route de son expédition de 1878 à 1880. C'est la plus ancienne trace de ce nom que le projet connaît. Les sources que nous avons lues ne disent pas si ce groupe est celui des Pangwa d'aujourd'hui.",
+            "formAsWritten": "Wapangwa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "To the Central African Lakes and Back, volume 1",
+                "author": "Joseph Thomson",
+                "year": 1881,
+                "url": "https://archive.org/details/tocentralafrica00thomgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 247",
+                "notes": "Récit de l'expédition de la Société royale de géographie, 1878-1880. Lu sur la numérisation d'Internet Archive le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -97,5 +97,142 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Mpoto désigne un peuple du sud-ouest de la Tanzanie, sur la côte du lac Nyasa, dans le district de Mbinga. On ne sait pas comment ce peuple se nomme lui-même : les sources que nous avons lues ne le disent pas. L'explorateur Friedrich Fülleborn l'écrit Wampoto en 1906. Le nom Nyasa, donné d'après le lac, s'applique chez lui à d'autres riverains. On ne sait pas avec certitude d'où vient le nom Mpoto ; nous présentons plus bas ce que disent les sources.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Mpoto",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les sources donnent à ce peuple de la côte du lac Nyasa et à sa langue, le chiMpoto.",
+        "periodLabel": "Écrit depuis 1906 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Publié en 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Mpoto est celui que Margaret P. Mwingira et Robert Botne donnent à ce peuple de la côte du lac Nyasa, dans le district de Mbinga, et le nom de sa langue est le chiMpoto.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Mpoto Fables and Folktales (N.14, Tanzania)",
+                "author": "Margaret P. Mwingira et Robert Botne",
+                "year": 2018,
+                "url": "https://koeppe.de/titel_mpoto-fables-and-folktales-n-14-tanzania",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Rüdiger Köppe Verlag, 2018. Page de présentation de l'éditeur, lue le 12 octobre 2026 ; elle ne cite pas la source de l'explication du nom. Nous n'avons pas lu le livre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Proposée en 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Mpoto voudrait dire « nord », selon la présentation que fait l'éditeur de Mpoto Fables and Folktales : ce groupe serait une branche des Matengo, installée sur les collines au nord de Songea pendant l'invasion des Ngoni.",
+            "hypothesisGroup": "origine du nom Mpoto",
+            "sources": [
+              {
+                "title": "Mpoto Fables and Folktales (N.14, Tanzania)",
+                "author": "Margaret P. Mwingira et Robert Botne",
+                "year": 2018,
+                "url": "https://koeppe.de/titel_mpoto-fables-and-folktales-n-14-tanzania",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Rüdiger Köppe Verlag, 2018. Page de présentation de l'éditeur, lue le 12 octobre 2026 ; elle ne cite pas la source de l'explication du nom. Nous n'avons pas lu le livre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mpoto apparaît sous une forme proche, « Wampoto », dans le livre de Friedrich Fülleborn : ce sont, écrit-il, les habitants les plus au sud du rivage allemand du Nyasa, entre Mbamba et Neu-Helgoland. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Wampoto",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Das Deutsche Njassa- und Ruwuma-Gebiet, Land und Leute, nebst Bemerkungen über die Schire-Länder (Deutsch-Ost-Afrika, vol. IX)",
+                "author": "Friedrich Fülleborn",
+                "year": 1906,
+                "url": "https://archive.org/details/deutschostafrik00stuhgoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 407",
+                "notes": "Berlin, Dietrich Reimer. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive. Le livre reprend les publications antérieures et les observations de l'auteur lors de l'expédition au Nyasa."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nyasa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "les Ngoni et les swahilophones",
+        "shortLine": "Le nom, tiré du lac, que des sources donnent à ce peuple et que Fülleborn applique à d'autres riverains.",
+        "periodLabel": "Écrit depuis 1906",
+        "accounts": [
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nyasa désigne chez Friedrich Fülleborn, sous la forme « Wanjassa », les riverains du lac installés entre les Wakissi et les Wampoto, surtout autour de Wiedhafen : ce sont les Ngoni et les swahilophones qui les appellent ainsi, alors que, interrogés, ces gens se disent de leur village. Fülleborn ne donne donc pas ce nom aux Wampoto. Les sources que nous avons lues ne disent pas à partir de quand on l'applique aux Mpoto.",
+            "formAsWritten": "Wanjassa",
+            "sources": [
+              {
+                "title": "Das Deutsche Njassa- und Ruwuma-Gebiet, Land und Leute, nebst Bemerkungen über die Schire-Länder (Deutsch-Ost-Afrika, vol. IX)",
+                "author": "Friedrich Fülleborn",
+                "year": 1906,
+                "url": "https://archive.org/details/deutschostafrik00stuhgoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 407",
+                "notes": "Berlin, Dietrich Reimer. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive. Le livre reprend les publications antérieures et les observations de l'auteur lors de l'expédition au Nyasa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wanjassa désigne, chez les swahilophones de la côte, tous les riverains du lac Nyasa, « gens de l'eau » ; la forme du pays est Anyanja, selon Friedrich Fülleborn.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Das Deutsche Njassa- und Ruwuma-Gebiet, Land und Leute, nebst Bemerkungen über die Schire-Länder (Deutsch-Ost-Afrika, vol. IX)",
+                "author": "Friedrich Fülleborn",
+                "year": 1906,
+                "url": "https://archive.org/details/deutschostafrik00stuhgoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 406-407",
+                "notes": "Berlin, Dietrich Reimer. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive. Le livre reprend les publications antérieures et les observations de l'auteur lors de l'expédition au Nyasa."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
