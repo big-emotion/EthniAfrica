@@ -1,18 +1,27 @@
 {
   "id": "PPL_SURI",
   "nameMain": "Suri",
-  "languageFamilyId": "FLG_COUCHITIQUE",
+  "languageFamilyId": "FLG_NILOSAHARIENNE",
   "currentCountries": ["ETH"],
   "classificationStatus": "contested",
   "content": {
     "appellations": {
       "mainName": "Suri",
       "selfAppellation": "Suri",
-      "exonyms": ["Surma", "Chai", "Tirmaga", "Timaga", "Baale"],
-      "originOfExonyms": "Le terme Surma est employe dans la litterature europeenne et journalistique pour designer collectivement les Suri, Mursi et Me'en. Chai et Tirmaga (Timaga) sont les deux sous-groupes principaux qui se designent eux-memes sous le nom de Suri. Baale est un troisieme sous-groupe plus eloigne linguistiquement. Le terme Surma a ete abandonne dans la nomenclature scientifique car il designait aussi une langue specifique (Unseth 1997).",
+      "exonyms": [
+        "Surma",
+        "Chai",
+        "Tirmaga",
+        "Timaga",
+        "Baale",
+        "Shuri",
+        "Dhuri",
+        "Churi"
+      ],
+      "originOfExonyms": "Le terme Surma est employe dans la litterature europeenne et journalistique pour designer collectivement les Suri, Mursi et Me'en. Chai et Tirmaga (Timaga) sont les deux sous-groupes principaux qui se designent eux-memes sous le nom de Suri. Baale est un troisieme sous-groupe plus eloigne linguistiquement. Le terme Surma a ete abandonne dans la nomenclature scientifique car il designait aussi une langue specifique (Unseth 1997). Shuri, Dhuri et Churi sont d'autres formes du nom, relevées par les catalogues de langues que cite Glottolog ; Joshua Project donne aussi Dhuri.",
       "whyProblematic": "La confusion entre Suri et Surma est frequente dans la presse touristique et la vulgarisation. Les Suri se distinguent des Mursi et des Me'en, bien que les trois forment le collectif Surma dans certaines classifications. Linguistiquement, Chai et Tirmaga parlent des dialectes tres proches, tandis que Baale est plus distinct.",
       "contemporaryUsage": "Le terme Suri est utilise dans le recensement ethiopien de 2007 pour distinguer ce groupe des Mursi et des Me'en. Le woreda administratif porte officiellement le nom de Suri woreda, dans la zone West Omo du SNNPR.",
-      "linguisticFamily": "FLG_COUCHITIQUE",
+      "linguisticFamily": "FLG_NILOSAHARIENNE",
       "ethnoLinguisticGroup": "Surmic du Sud-Est (Nilo-Saharien), branche Tirma-Chai-Mursi",
       "historicalRegion": "Vallee superieure de l'Omo, Keffa et Maji, sud-ouest de l'Ethiopie",
       "currentCountries": ["ETH"]
@@ -103,6 +112,12 @@
         "url": "https://glottolog.org/resource/languoid/id/suri1267",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Joshua Project — Suri, Tirmaga-Chai in Ethiopia",
+        "url": "https://joshuaproject.net/people_groups/15130",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
       }
     ]
   },

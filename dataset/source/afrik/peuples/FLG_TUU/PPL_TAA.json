@@ -139,6 +139,13 @@
         "url": "https://www.culturalsurvival.org/publications/cultural-survival-quarterly/foragers-first-peoples-kalahari-san-today",
         "tier": "referenced",
         "source_kind": "ngo"
+      },
+      {
+        "title": "Glottolog — West !Xoon",
+        "url": "https://glottolog.org/resource/languoid/id/xooo1239",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Lu le 12 octobre 2026. Glottolog classe le West !Xoon comme une langue de la branche Taa, dans la famille Tuu."
       }
     ]
   },

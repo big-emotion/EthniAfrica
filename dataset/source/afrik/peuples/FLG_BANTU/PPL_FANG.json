@@ -25,7 +25,8 @@
       "Okak (Guinee equatoriale)",
       "Nzaman (Nzaman-Betsi, vallee de l'Okano et de l'Ogooue, Gabon)",
       "Meke (sous-groupe gabonais)",
-      "Atsi (Batsi)"
+      "Atsi (Batsi)",
+      "Esangui (clan fang de la famille Nguema, qui tient le pouvoir en Guinée équatoriale depuis l'indépendance de 1968)"
     ],
     "origins": {
       "ancientOrigins": "Les Fang sont un peuple bantou dont les proto-locuteurs ont ete situes, par glottochronologie (méthode qui date une séparation entre langues d'après la part de vocabulaire qu'elles ont gardée en commun), dans la foret du sud du Cameroun il y a plus de 4 000 ans. Les etudes linguistiques les classent dans le groupe Beti-Fang (zone A70) de la famille Niger-Congo. Les traditions orales et les evidences historiques situent leur origine dans les savanes au nord de leur territoire actuel, possiblement associees a une fuite devant les razzias esclavagistes haoussa du nord.",
@@ -186,6 +187,12 @@
         "tier": "referenced",
         "source_kind": "academic",
         "notes": "Présentation de recherche du laboratoire Dynamique du langage, CNRS et Université Lyon 2. Range les Fang avec les Beti et les Bulu dans le groupe dit pahouin, et tient le nom Mpangwe, Pamouay ou Pamue pour un nom donné par des voisins, probablement les Mpongwe."
+      },
+      {
+        "title": "Minority Rights Group — Equatorial Guinea",
+        "url": "https://minorityrights.org/country/equatorial-guinea/",
+        "tier": "referenced",
+        "source_kind": "ngo"
       }
     ]
   },

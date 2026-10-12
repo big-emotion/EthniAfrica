@@ -55,6 +55,28 @@
           "sourceRefs": ["bamadaba-jamuw"]
         }
       ]
+    },
+    {
+      "spelling": "Turay",
+      "attestations": [
+        {
+          "countryId": "SLE",
+          "sourceRefs": ["dafn-turay", "sierra-leone-blue-book-1915"]
+        }
+      ]
+    },
+    {
+      "spelling": "Touray",
+      "attestations": [
+        {
+          "countryId": "GMB",
+          "sourceRefs": [
+            "dafn-touray",
+            "geographical-journal-1921-07",
+            "peace-corps-mandinka-course"
+          ]
+        }
+      ]
     }
   ],
   "transmissionMode": "other",
@@ -138,6 +160,16 @@
       "countryId": "CIV",
       "status": "attested",
       "sourceRefs": ["massing-2000-wangara"]
+    },
+    {
+      "countryId": "SLE",
+      "status": "attested",
+      "sourceRefs": ["dafn-turay", "sierra-leone-blue-book-1915"]
+    },
+    {
+      "countryId": "GMB",
+      "status": "attested",
+      "sourceRefs": ["dafn-touray", "geographical-journal-1921-07"]
     }
   ],
   "alliances": [
@@ -207,6 +239,46 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Massing, Andreas, Cahiers d'Études africaines, 158, XL-2, 2000, p. 281-308 ; texte intégral en accès libre, consulté le 29 septembre 2026. Le paragraphe 16 dit que les rois du Zaghari étaient du clan Touré ; la note 12 appelle à étudier ce clan, l'un des principaux du Niger moyen, cité comme « blanc » et royal, ce qui laisserait penser à une origine berbère ou arabe ; le paragraphe 38 range les Touré parmi les noms de clan bambara venus, apparemment, de la région de Ségou et de San, à l'origine de Kong. L'article traite de la diaspora soninké et non du seul clan Touré : ce sont des passages incidents, à lire comme des indications."
+    },
+    {
+      "sourceKey": "dafn-turay",
+      "title": "Dictionary of American Family Names, 2nd edition — Turay",
+      "url": "https://www.ancestry.com/last-name-meaning/turay?geo-lang=en",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Entrée de la deuxième édition du Dictionary of American Family Names (Oxford University Press, 2022), reproduite par Ancestry et lue le 11 octobre 2026 dans sa version française affichée par le site. Entrée Turay : en Afrique de l'Ouest, surtout en Sierra Leone et au Liberia, variante du nom du clan Touré des Mandingues, puis des Limba et des Temne de Sierra Leone ; à comparer avec Touray. L'entrée donne aussi un nom hongrois sans lien."
+    },
+    {
+      "sourceKey": "sierra-leone-blue-book-1915",
+      "title": "Sierra Leone Blue Book 1915",
+      "url": "https://archive.org/details/blue-book-sierra-leone-1915",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Annuaire administratif de la colonie, publié en 1916. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Liste du personnel de l'administration provinciale : un « Sixth Grade Clerk » nommé Turay, entré en fonction le 19 octobre 1914. La pagination imprimée n'est pas lisible sur la numérisation ; nous donnons le numéro de vue. Passage : vue 144 de l'exemplaire numérisé, Provincial Administration."
+    },
+    {
+      "sourceKey": "dafn-touray",
+      "title": "Dictionary of American Family Names, 2nd edition — Touray",
+      "url": "https://www.ancestry.com/last-name-meaning/touray?geo-lang=en",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Entrée de la deuxième édition du Dictionary of American Family Names (Oxford University Press, 2022), reproduite par Ancestry et lue le 11 octobre 2026 dans sa version française affichée par le site. Entrée Touray : en Afrique de l'Ouest, surtout en Gambie, variante de Touré ; à comparer avec Turay."
+    },
+    {
+      "sourceKey": "geographical-journal-1921-07",
+      "title": "The Geographical Journal, vol. 58, n° 1, juillet 1921",
+      "url": "https://archive.org/details/sim_geographical-journal_1921-07_58_1",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. La lettre est signée « Brook, Major, late R.F.A., Touray Kunda, Lower Salum, MacCarthy Island Province, Gambia Protectorate. April 1921 ». La pagination imprimée n'est pas lisible sur la numérisation ; nous donnons le numéro de vue. Passage : rubrique Correspondence, lettre « Stone Circles in Gambia », vue 93 de l'exemplaire numérisé."
+    },
+    {
+      "sourceKey": "peace-corps-mandinka-course",
+      "title": "A Basic Mandinka Course with Cultural Notes",
+      "url": "https://archive.org/details/micro_IA41153146_0556",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Cours de mandinka pour les volontaires du Peace Corps en Gambie, diffusé par ERIC (ED 131 734) ; la notice ERIC donne une date d'édition entre crochets, [65], que nous n'avons pas pu vérifier. Lu sur la numérisation d'archive.org le 11 octobre 2026. Leçon sur les noms : dialogue de « Keba Touray », exercice citant « Mustapha Touray (Ture) », mot kontongo pour le nom de clan, et note : « the Tourays call the Ceesays their slaves »."
     }
   ],
   "gaps": [

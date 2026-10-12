@@ -123,6 +123,13 @@
         "url": "https://www.101lasttribes.com/tribes/ewondo.html",
         "tier": "unverified",
         "source_kind": "community"
+      },
+      {
+        "title": "Encyclopedia Britannica — Fang",
+        "url": "https://www.britannica.com/topic/Fang-people",
+        "tier": "unverified",
+        "source_kind": "encyclopedia",
+        "notes": "Article « Fang », lu le 12 octobre 2026. Il range sous ce nom trois groupes : les Beti au nord (Yaunde ou Ewondo, Bene), les Bulu (Bulu, Fong, Zaman, Yelinda) et les Fang au sud (Fang, Ntumu, Mvae)."
       }
     ]
   },

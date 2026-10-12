@@ -32,8 +32,7 @@
         "dataset/source/afrik/peuples/FLG_KXA/PPL_BUGAKWE.json",
         "dataset/source/afrik/peuples/FLG_KXA/PPL_HOA.json",
         "dataset/source/afrik/peuples/FLG_KXA/PPL_JUHOANSI.json",
-        "dataset/source/afrik/peuples/FLG_KXA/PPL_KXA_MACRO.json",
-        "dataset/source/afrik/peuples/FLG_KXA/PPL_TSAO_KXA.json"
+        "dataset/source/afrik/peuples/FLG_KXA/PPL_KXA_MACRO.json"
       ],
       "evidence": [
         {
@@ -87,8 +86,7 @@
       "reviewedFiles": [
         "dataset/source/afrik/peuples/FLG_TUU/PPL_NUU.json",
         "dataset/source/afrik/peuples/FLG_TUU/PPL_TAA.json",
-        "dataset/source/afrik/peuples/FLG_TUU/PPL_TUU_MACRO.json",
-        "dataset/source/afrik/peuples/FLG_TUU/PPL_WEST_TAA.json"
+        "dataset/source/afrik/peuples/FLG_TUU/PPL_TUU_MACRO.json"
       ],
       "evidence": [
         {
