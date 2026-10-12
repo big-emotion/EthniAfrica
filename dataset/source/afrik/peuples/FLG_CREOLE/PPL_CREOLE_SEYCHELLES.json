@@ -116,5 +116,137 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Créoles seychellois désigne la population des Seychelles qui parle le créole seychellois et qui se nomme elle-même Seselwa, un mot créole qui veut dire « des Seychelles » et qui nomme aussi sa langue, le kreol seselwa. On ne sait pas avec certitude depuis quand ce nom est en usage.",
+    "names": [
+      {
+        "nameText": "Seselwa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "crs",
+        "namedBy": null,
+        "shortLine": "En créole, l'adjectif « des Seychelles », qui nomme aussi la langue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Seselwa est en créole l'adjectif qui dit l'origine seychelloise : en zonm seselwa veut dire « un homme des Seychelles », en fanm seselwaz « une femme des Seychelles ». La langue se nomme kreol, ou kreol seselwa, selon les linguistes Susanne Maria Michaelis et Marcel Rosalie. On ne sait pas avec certitude depuis quand ce nom est en usage.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Seychelles Creole structure dataset",
+                "author": "Susanne Maria Michaelis et Marcel Rosalie",
+                "year": null,
+                "url": "https://apics-online.info/surveys/56",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Atlas of Pidgin and Creole Language Structures Online (APiCS Online), chapitre non daté sur sa page, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1978,
+              "to": null,
+              "label": "Depuis 1978"
+            },
+            "era": "modern",
+            "statement": "Le nom kreol seselwa est celui d'une des trois langues officielles des Seychelles, avec l'anglais et le français. C'est la langue commune d'environ 99 % de la population, selon Susanne Maria Michaelis et Marcel Rosalie.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Seychelles Creole structure dataset",
+                "author": "Susanne Maria Michaelis et Marcel Rosalie",
+                "year": null,
+                "url": "https://apics-online.info/surveys/56",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Atlas of Pidgin and Creole Language Structures Online (APiCS Online), chapitre non daté sur sa page, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1770,
+              "to": 1770,
+              "label": "1770"
+            },
+            "era": "colonial",
+            "statement": "Le nom Seselwa renvoie à un archipel peuplé à partir de 1770 : cette année-là, des Français, venus surtout de l'île Maurice, s'y installent, selon Susanne Maria Michaelis et Marcel Rosalie.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Seychelles Creole structure dataset",
+                "author": "Susanne Maria Michaelis et Marcel Rosalie",
+                "year": null,
+                "url": "https://apics-online.info/surveys/56",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Atlas of Pidgin and Creole Language Structures Online (APiCS Online), chapitre non daté sur sa page, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1756,
+              "to": 1756,
+              "label": "1er novembre 1756"
+            },
+            "era": "colonial",
+            "statement": "Le nom Seselwa renvoie à celui que reçoit l'archipel : Isle de Sechelles, gravé avec les armes de France sur une pierre de possession posée sur un rocher qui domine l'actuel port de Victoria, selon le journal Seychelles Nation.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Stone of Possession",
+                "author": "Seychelles Nation",
+                "year": 2020,
+                "url": "https://nation.sc/articles/6677/the-stone-of-possession",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article du 31 octobre 2020, lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Créoles seychellois",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Le nom français de la langue que parle ce peuple.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom créole seychellois est en français celui de la langue kreol seselwa, une langue créole à base de français, selon Susanne Maria Michaelis et Marcel Rosalie.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Seychelles Creole structure dataset",
+                "author": "Susanne Maria Michaelis et Marcel Rosalie",
+                "year": null,
+                "url": "https://apics-online.info/surveys/56",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Atlas of Pidgin and Creole Language Structures Online (APiCS Online), chapitre non daté sur sa page, lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
