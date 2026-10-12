@@ -101,5 +101,92 @@
       "fieldPath": "homonyms",
       "reason": "la notice exacte du Dictionary of American Family Names, les catalogues bibliographiques et les recherches « Barros » associées au Cap-Vert n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Barros est un nom de famille d'origine portugaise, que les sources lues rattachent à des noms de lieux. Elles ne disent ni depuis quand ni comment il est arrivé en Afrique, au Cap-Vert et à São Tomé-et-Príncipe. On ne sait pas avec certitude depuis quand il est écrit.",
+    "names": [
+      {
+        "nameText": "Barros",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un nom de famille d'origine portugaise, tiré d'un nom de lieu ; on ne sait pas quand il est arrivé en Afrique.",
+        "periodLabel": "Origine portugaise",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Barros est un nom de famille portugais, galicien et espagnol. Les sources lues le tirent de noms de lieux ; elles ne disent rien des familles du Cap-Vert ni de São Tomé-et-Príncipe.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names — Barros",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2013,
+                "url": "https://web.archive.org/web/20220126162754/https://www.ancestry.com/name-origin?surname=barros",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, notice reproduite par Ancestry, qui l'attribue à l'édition de 2013. Lue le 13 octobre 2026 dans la copie du 26 janvier 2022 conservée par la Wayback Machine, le site d'Ancestry refusant l'accès. La notice dit : nom espagnol, galicien et portugais, nom d'habitation répandu tiré de nombreux lieux formés sur barro, « argile », « limon ». Elle ne dit rien de l'Afrique."
+              },
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 165-166",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'archive.org. Pages 165-166 : l'auteur annonce « uma lista alfabetica de apelidos modernos tirados de nomes geograficos », les uns venus de villes, villages ou hameaux, d'autres de domaines ou de lieux-dits ; Barros figure dans cette liste, entre Barreto et Barroso, sans note."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "Publié en 2013"
+            },
+            "statement": "Le nom Barros viendrait de l'un des nombreux lieux dont le nom est formé sur barro, « argile » ou « limon », selon le Dictionary of American Family Names.",
+            "hypothesisGroup": "origine du nom Barros",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names — Barros",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2013,
+                "url": "https://web.archive.org/web/20220126162754/https://www.ancestry.com/name-origin?surname=barros",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, notice reproduite par Ancestry, qui l'attribue à l'édition de 2013. Lue le 13 octobre 2026 dans la copie du 26 janvier 2022 conservée par la Wayback Machine, le site d'Ancestry refusant l'accès. La notice dit : nom espagnol, galicien et portugais, nom d'habitation répandu tiré de nombreux lieux formés sur barro, « argile », « limon ». Elle ne dit rien de l'Afrique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Proposée en 1928"
+            },
+            "statement": "Le nom Barros serait, au Portugal, un nom de famille tiré d'un nom de lieu, un village, un domaine ou un lieu-dit, comme Barreto ou Barroso, selon le linguiste José Leite de Vasconcelos.",
+            "hypothesisGroup": "origine du nom Barros",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 165-166",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'archive.org. Pages 165-166 : l'auteur annonce « uma lista alfabetica de apelidos modernos tirados de nomes geograficos », les uns venus de villes, villages ou hameaux, d'autres de domaines ou de lieux-dits ; Barros figure dans cette liste, entre Barreto et Barroso, sans note."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -92,5 +92,187 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web combinant « Banda », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », qui comprenait le terme « homonyme », et la lecture de « Gender, Religion and Migration: A Study of Malawian Chewa and Yawo Muslim Women in Durban, 1994–2017 », n'ont pas établi de lignée homonyme d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Banda est celui d'un des deux grands clans des Chewa, au Malawi : celui qui garde l'autorité rituelle et passe pour savoir faire venir la pluie. Il est aussi un nom de clan chez les Yao. Les sources lues ne disent pas ce qu'il désigne en Zambie. Elles ne s'accordent pas sur l'origine du nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Banda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un des deux grands clans chewa, celui de l'autorité rituelle ; son origine est racontée de plusieurs façons.",
+        "periodLabel": "Écrit dès 1892 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Banda désigne l'un des deux grands clans des Chewa, avec Phiri. Selon l'archéologue Yusuf Juwayeyi, le clan Banda garde l'autorité rituelle, tandis que le clan Phiri exerce l'autorité politique ; la prêtresse qui appelle la pluie, appelée Makewana, en est la cheffe. Plusieurs légendes expliquent comment le clan a reçu son nom ; Juwayeyi pense que les Chewa avaient déjà des noms de clan et que ces récits expliquent une origine oubliée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Archaeology and Oral Tradition in Malawi: Origins and Early History of the Chewa",
+                "author": "Yusuf M. Juwayeyi",
+                "year": 2020,
+                "url": "https://dokumen.pub/archaeology-and-oral-tradition-in-malawi-origins-and-early-history-of-the-chewa-1847012531-9781847012531.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 37-38 ; p. 41",
+                "notes": "Woodbridge, James Currey, 2020. Lu sur une copie non officielle en ligne. Page 11 : le livre de Samuel Josia Ntara, Mbiri ya Achewa, paraît d'abord en 1944 ou en 1945 ; l'auteur le cite dans sa traduction anglaise de 1973. Page 37 : l'auteur cite en entier la légende recueillie par Ntara (Ntara 1973, p. 6) : ceux qui avaient dormi au pied d'une colline, et avaient dû aplanir l'herbe, furent appelés Banda, « ceux qui foulent l'herbe sous leurs pieds », et ceux qui avaient dormi au sommet Phiri. Page 38 : une autre légende, rapportée par Ian Linden en 1972 (Linden 1972, p. 14), fait des Phiri ceux qui passèrent par les montagnes et des Banda ceux qui suivirent les vallées ; Mangadzi, prêtresse qui appelle la pluie, porte le titre de Makewana et dirige le clan Banda ; les petits clans Mbewe et Mwale sont comptés avec les Banda parmi ceux qui seraient arrivés avant les Phiri. Page 40 : Schoffeleers place l'arrivée des Banda entre 1200 et 1400. Page 41 : Marwick voit chez les Banda les gardiens du rituel de la pluie. Nous n'avons lu ni Ntara, ni Linden, ni Schoffeleers. Relu le 12 octobre 2026."
+              },
+              {
+                "title": "Gender, Religion and Migration: A Study of Malawian Chewa and Yawo Muslim Women in Durban, 1994–2017",
+                "author": "Joseph Y. Mbalaka",
+                "year": null,
+                "url": "https://researchspace.ukzn.ac.za/bitstreams/181a927d-f2c5-41ff-8677-9fb4e2be0244/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 47",
+                "notes": "Thèse de doctorat de Joseph Y. Mbalaka, University of KwaZulu-Natal, lue en texte intégral ; elle cite des sources de 2022 et la page de l'université annonçant le diplômé date de septembre 2023, alors que le dépôt porte 2017, année qui borne la période étudiée. Pages citées selon la pagination de la thèse (page 47 = page 61 du PDF ; page 49 = page 63 ; page 50 = page 64). Page 47 : Banda est « possiblement des plus vieux groupes », étroitement lié au sol et reconnu capable de faire venir la pluie, d'après Pike ; la tribu compte quatre clans, Banda, Phiri, Nkhoma et Mwale. Page 49 : noms de clan Phiri (colline), Banda (« ceux qui foulent l'herbe sous leurs pieds »), Mwale (de kumwalira, « mourir »), Linde, Kwenda, Mbewe, Mphandwe (« un éclat du clan Banda »), d'après Ntara 1973, p. 6-7 ; les Yawo, venus du Mozambique au XIXe siècle, ont les mêmes noms de clan, par exemple le chef Malemia, du clan amwale, d'après Mitchell 1956. Page 50 : une Chewa du clan Mwale et une Yawo du clan Amwale se reconnaissent parentes. Nous n'avons lu ni Ntara, ni Pike, ni Mitchell. Lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Décrit dans une thèse de doctorat récente"
+            },
+            "era": "modern",
+            "statement": "Le nom Banda se retrouve chez les Yawo du Malawi : une thèse sur des femmes chewa et yawo installées à Durban note que des noms de clan comme abanda, apiri ou amwale se rencontrent à la fois chez les Chewa et chez les Yawo, qui seraient arrivés du Mozambique au XIXe siècle.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Gender, Religion and Migration: A Study of Malawian Chewa and Yawo Muslim Women in Durban, 1994–2017",
+                "author": "Joseph Y. Mbalaka",
+                "year": null,
+                "url": "https://researchspace.ukzn.ac.za/bitstreams/181a927d-f2c5-41ff-8677-9fb4e2be0244/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 49-50",
+                "notes": "Thèse de doctorat de Joseph Y. Mbalaka, University of KwaZulu-Natal, lue en texte intégral ; elle cite des sources de 2022 et la page de l'université annonçant le diplômé date de septembre 2023, alors que le dépôt porte 2017, année qui borne la période étudiée. Pages citées selon la pagination de la thèse (page 47 = page 61 du PDF ; page 49 = page 63 ; page 50 = page 64). Page 47 : Banda est « possiblement des plus vieux groupes », étroitement lié au sol et reconnu capable de faire venir la pluie, d'après Pike ; la tribu compte quatre clans, Banda, Phiri, Nkhoma et Mwale. Page 49 : noms de clan Phiri (colline), Banda (« ceux qui foulent l'herbe sous leurs pieds »), Mwale (de kumwalira, « mourir »), Linde, Kwenda, Mbewe, Mphandwe (« un éclat du clan Banda »), d'après Ntara 1973, p. 6-7 ; les Yawo, venus du Mozambique au XIXe siècle, ont les mêmes noms de clan, par exemple le chef Malemia, du clan amwale, d'après Mitchell 1956. Page 50 : une Chewa du clan Mwale et une Yawo du clan Amwale se reconnaissent parentes. Nous n'avons lu ni Ntara, ni Pike, ni Mitchell. Lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1944,
+              "to": 1945,
+              "label": "Proposée en 1944 ou 1945"
+            },
+            "era": "colonial",
+            "statement": "Le nom Banda viendrait d'une nuit passée dans la brousse : un groupe parti chercher des racines aurait dormi au pied d'une colline et aurait dû aplanir l'herbe, d'où le nom Banda, « ceux qui foulent l'herbe sous leurs pieds », selon une légende recueillie par Samuel Josia Ntara.",
+            "hypothesisGroup": "origine du nom Banda",
+            "sources": [
+              {
+                "title": "Archaeology and Oral Tradition in Malawi: Origins and Early History of the Chewa",
+                "author": "Yusuf M. Juwayeyi",
+                "year": 2020,
+                "url": "https://dokumen.pub/archaeology-and-oral-tradition-in-malawi-origins-and-early-history-of-the-chewa-1847012531-9781847012531.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 37",
+                "notes": "Woodbridge, James Currey, 2020. Lu sur une copie non officielle en ligne. Page 11 : le livre de Samuel Josia Ntara, Mbiri ya Achewa, paraît d'abord en 1944 ou en 1945 ; l'auteur le cite dans sa traduction anglaise de 1973. Page 37 : l'auteur cite en entier la légende recueillie par Ntara (Ntara 1973, p. 6) : ceux qui avaient dormi au pied d'une colline, et avaient dû aplanir l'herbe, furent appelés Banda, « ceux qui foulent l'herbe sous leurs pieds », et ceux qui avaient dormi au sommet Phiri. Page 38 : une autre légende, rapportée par Ian Linden en 1972 (Linden 1972, p. 14), fait des Phiri ceux qui passèrent par les montagnes et des Banda ceux qui suivirent les vallées ; Mangadzi, prêtresse qui appelle la pluie, porte le titre de Makewana et dirige le clan Banda ; les petits clans Mbewe et Mwale sont comptés avec les Banda parmi ceux qui seraient arrivés avant les Phiri. Page 40 : Schoffeleers place l'arrivée des Banda entre 1200 et 1400. Page 41 : Marwick voit chez les Banda les gardiens du rituel de la pluie. Nous n'avons lu ni Ntara, ni Linden, ni Schoffeleers. Relu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1972,
+              "to": 1972,
+              "label": "Rapportée en 1972"
+            },
+            "era": "modern",
+            "statement": "Le nom Banda viendrait d'un choix de route : pendant la migration, à Choma, ceux qui suivirent les vallées se seraient appelés Banda, et ceux qui passèrent par les montagnes Phiri, selon une autre légende rapportée par Ian Linden.",
+            "hypothesisGroup": "origine du nom Banda",
+            "sources": [
+              {
+                "title": "Archaeology and Oral Tradition in Malawi: Origins and Early History of the Chewa",
+                "author": "Yusuf M. Juwayeyi",
+                "year": 2020,
+                "url": "https://dokumen.pub/archaeology-and-oral-tradition-in-malawi-origins-and-early-history-of-the-chewa-1847012531-9781847012531.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38",
+                "notes": "Woodbridge, James Currey, 2020. Lu sur une copie non officielle en ligne. Page 11 : le livre de Samuel Josia Ntara, Mbiri ya Achewa, paraît d'abord en 1944 ou en 1945 ; l'auteur le cite dans sa traduction anglaise de 1973. Page 37 : l'auteur cite en entier la légende recueillie par Ntara (Ntara 1973, p. 6) : ceux qui avaient dormi au pied d'une colline, et avaient dû aplanir l'herbe, furent appelés Banda, « ceux qui foulent l'herbe sous leurs pieds », et ceux qui avaient dormi au sommet Phiri. Page 38 : une autre légende, rapportée par Ian Linden en 1972 (Linden 1972, p. 14), fait des Phiri ceux qui passèrent par les montagnes et des Banda ceux qui suivirent les vallées ; Mangadzi, prêtresse qui appelle la pluie, porte le titre de Makewana et dirige le clan Banda ; les petits clans Mbewe et Mwale sont comptés avec les Banda parmi ceux qui seraient arrivés avant les Phiri. Page 40 : Schoffeleers place l'arrivée des Banda entre 1200 et 1400. Page 41 : Marwick voit chez les Banda les gardiens du rituel de la pluie. Nous n'avons lu ni Ntara, ni Linden, ni Schoffeleers. Relu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Banda est aussi, sous la forme Abanda, celui d'un clan des Yao : Alice Werner écrit que le chef yao Kapeni appartenait au clan des Abanda et qu'à sa mort le pouvoir passa au fils de sa sœur, puisque la filiation se compte par la mère.",
+            "aspect": "usage",
+            "formAsWritten": "Abanda",
+            "sources": [
+              {
+                "title": "The Natives of British Central Africa",
+                "author": "Alice Werner",
+                "year": 1906,
+                "url": "https://www.gutenberg.org/cache/epub/71018/pg71018-images.html",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 253-254",
+                "notes": "Londres, Archibald Constable, 1906 ; lu dans la transcription intégrale du Projet Gutenberg, dont les numéros de page sont donnés entre crochets. Page 252 : l'auteure cite R. S. Hynde, selon qui les Yao se divisent en clans portant chacun son nom, « e.g. the Amwale, the Asomba, the Apiri clan » ; elle ajoute que « mwale » veut dire « une fille », « somba » « un poisson » et que « piri » veut dire « montagne » en nyanja ; l'exemple de mariage qui suit écrit « Mwale ». Page 253 : la filiation se compte par la mère. Page 254 : le chef yao Kapeni appartenait au clan des Abanda et eut pour successeur le fils de sa sœur. L'index du livre renvoie à la page 253 pour Abanda ; la transcription place cette phrase après le repère de la page 254. Lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "1892"
+            },
+            "era": "colonial",
+            "statement": "Le nom Banda a une forme proche, Abanda, dans le dictionnaire du mang'anja du missionnaire David Clement Scott : il cite « les Abanda, les Apiri » parmi les familles qui ont chacune leur nom, comparable à un nom de famille. C'est la plus ancienne trace de ce nom que le projet connaît ; le clan qu'il désigne existait déjà avant elle.",
+            "formAsWritten": "Abanda",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Cyclopaedic Dictionary of the Mang'anja Language Spoken in British Central Africa",
+                "author": "David Clement Scott",
+                "year": 1892,
+                "url": "https://archive.org/details/acyclopdicdicti00commgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 140",
+                "notes": "Édimbourg, Foreign Mission Committee of the Church of Scotland, 1892. Lu sur l'exemplaire numérisé d'archive.org. Article Dzina, « nom », p. 140 : certaines familles ont chacune leur nom, « the Abanda, Apiri, &c. », que l'auteur compare aux noms de famille. Article Mwale, p. 408 : « a species of PALM », sans lien avec un clan. Missionnaire de la mission de Blantyre, cité ici pour les formes qu'il écrit. Relu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1200,
+              "to": 1400,
+              "label": "Entre 1200 et 1400 environ"
+            },
+            "era": "polity",
+            "statement": "Le clan Banda existe alors déjà : selon plusieurs historiens des traditions chewa, il aurait quitté le pays luba avant le clan Phiri et serait arrivé au Malawi entre 1200 et 1400 environ, d'après Matthew Schoffeleers, cité par Yusuf Juwayeyi.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Archaeology and Oral Tradition in Malawi: Origins and Early History of the Chewa",
+                "author": "Yusuf M. Juwayeyi",
+                "year": 2020,
+                "url": "https://dokumen.pub/archaeology-and-oral-tradition-in-malawi-origins-and-early-history-of-the-chewa-1847012531-9781847012531.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 40",
+                "notes": "Woodbridge, James Currey, 2020. Lu sur une copie non officielle en ligne. Page 11 : le livre de Samuel Josia Ntara, Mbiri ya Achewa, paraît d'abord en 1944 ou en 1945 ; l'auteur le cite dans sa traduction anglaise de 1973. Page 37 : l'auteur cite en entier la légende recueillie par Ntara (Ntara 1973, p. 6) : ceux qui avaient dormi au pied d'une colline, et avaient dû aplanir l'herbe, furent appelés Banda, « ceux qui foulent l'herbe sous leurs pieds », et ceux qui avaient dormi au sommet Phiri. Page 38 : une autre légende, rapportée par Ian Linden en 1972 (Linden 1972, p. 14), fait des Phiri ceux qui passèrent par les montagnes et des Banda ceux qui suivirent les vallées ; Mangadzi, prêtresse qui appelle la pluie, porte le titre de Makewana et dirige le clan Banda ; les petits clans Mbewe et Mwale sont comptés avec les Banda parmi ceux qui seraient arrivés avant les Phiri. Page 40 : Schoffeleers place l'arrivée des Banda entre 1200 et 1400. Page 41 : Marwick voit chez les Banda les gardiens du rituel de la pluie. Nous n'avons lu ni Ntara, ni Linden, ni Schoffeleers. Relu le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
