@@ -395,7 +395,7 @@ test("every character counts once, spaces and punctuation included", () => {
   assert.equal(subtitleCharacters("ṣaḥrāʾ"), 6);
   assert.equal(subtitleCharacters("صحراء"), 5);
   // Italic markers are markup, not characters.
-  assert.equal(subtitleCharacters("l'arabe *ṣaḥrāʾ*"), 15);
+  assert.equal(subtitleCharacters("l'arabe *ṣaḥrāʾ*"), 14);
 });
 
 // @req REQ-186
@@ -470,6 +470,7 @@ test("Arabic script stays beside its italic transcription, in parentheses, on on
     `Sahara vient de l'arabe *ṣaḥrāʾ* (صحراء), «${NBSP}désert${NBSP}».`
   );
   assert.equal(lines.length, 2);
+  assert.deepEqual(lines[0], [{ text: "Sahara vient de l'arabe" }]);
   assert.deepEqual(lines[1][0], { text: "ṣaḥrāʾ", italic: true });
   assert.equal(lines[1].find((r) => r.arabic).text, "صحراء");
   assert.equal(lineTexts(lines)[1], `ṣaḥrāʾ (صحراء), «${NBSP}désert${NBSP}».`);
@@ -588,7 +589,8 @@ test("the opening plays once and the camera only moves in it or in a travel", ()
 
 const opacities = (state, prefix = "", out = {}) => {
   for (const [key, value] of Object.entries(state ?? {})) {
-    if (["camera", "grade", "dim", "bars"].includes(key)) continue;
+    if (["camera", "grade", "dim", "bars", "chapter", "relief"].includes(key))
+      continue;
     const path = `${prefix}${key}`;
     if (typeof value === "number") out[path] = value;
     else if (value && typeof value === "object")
@@ -750,7 +752,10 @@ test("ending A needs the page online and shows the sentence and the bare domain"
     variant: "B",
     opacity: 1,
   });
-  assert.equal(frameState(b, frameOf(56.6)).closing.opacity, 0);
+  // The closing block fades in from 56.7 s, once the base has darkened.
+  assert.equal(frameState(b, frameOf(56.6)).closing, null);
+  const entering = frameState(b, frameOf(56.8)).closing.opacity;
+  assert.ok(entering > 0 && entering < 1);
   assert.equal(frameState(b, frameOf(30)).closing, null);
   assert.throws(
     () => sahara((s) => (s.ending = { variant: "B", sentence })),
