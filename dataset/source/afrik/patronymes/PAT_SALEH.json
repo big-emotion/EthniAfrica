@@ -109,5 +109,70 @@
       "fieldPath": "countries",
       "reason": "Les sources propres à « Saleh » n'ont pas confirmé les pays où il est porté ; les recherches par pays n'ont pas livré de registre officiel directement exploitable pour cette fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Saleh est le nom d'un prophète que nomme le Coran ; on l'emploie aussi comme nom de famille arabe. On ne sait pas avec certitude ce qu'il veut dire : les sources que nous avons consultées ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Saleh",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un prophète du Coran, employé aussi comme nom de famille arabe.",
+        "periodLabel": "Écrit en français dès 1786 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Saleh est aussi employé comme nom de famille arabe, selon le site Behind the Name, qui le rattache au nom personnel Salih. On ne sait pas avec certitude ce que veut dire ce nom : les sources que nous avons consultées ne l'expliquent pas.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the surname Saleh — Behind the Name",
+                "author": "Behind the Name",
+                "year": 2024,
+                "url": "https://surnames.behindthename.com/name/saleh",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site d'onomastique en ligne, lu le 11 octobre 2026. Entrée ajoutée le 6 octobre 2024 : nom de famille arabe, « From the given name Salih », écrit صالح."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1786,
+              "to": 1786,
+              "label": "1786"
+            },
+            "statement": "Le nom Saleh apparaît par écrit dans la traduction française du Coran de Claude Savary : c'est le nom d'un prophète que le texte dit envoyé aux Thémudéens. C'est la plus ancienne trace de cette forme que le projet connaît ; le nom figure déjà dans le texte arabe du Coran, plus ancien que cette traduction.",
+            "formAsWritten": "Saleh",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Claude Savary",
+                "role": "traducteur qui écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Le Coran, tome 1",
+                "author": "Claude Savary (traduction)",
+                "year": 1786,
+                "url": "https://archive.org/details/lecoran01savagoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 173, 248",
+                "notes": "Amsterdam, Leide, Rotterdam et Utrecht, Libraires associés, 1786. Traduction française du Coran, lue sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 173 : « Saleh, Ministre de nos volontés, auprès des Thémudéens », avec une note qui le dit « fils d'Abid » et « élu Prophète ». Page 248 : « Ô Saleh ! répondirent les Thémudéens »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
