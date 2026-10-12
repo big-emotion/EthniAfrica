@@ -2131,6 +2131,12 @@ const options: swaggerJsdoc.Options = {
             "The subject's name history (REQ-196, ARCH-028): one shape on every subject, validated by the one shared schema before it is loaded. Absent when the fiche declares none yet.",
           properties: {
             summary: { type: "string", minLength: 1 },
+            selfNameUnknown: {
+              type: "boolean",
+              enum: [true],
+              description:
+                "No source gives the name the people uses for itself; no name is then self-given.",
+            },
             names: {
               type: "array",
               minItems: 1,

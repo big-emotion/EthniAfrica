@@ -111,7 +111,7 @@
     }
   ],
   "nameHistory": {
-    "summary": "Le nom Wolde est un nom personnel éthiopien. Il ouvre souvent un nom chrétien composé, comme Wolde Mariam, et sert aussi de second nom aux enfants d'un homme qui le porte, sans devenir un nom de famille. Les sources ne disent pas tout à fait la même chose de son sens ; nous les présentons plus bas.",
+    "summary": "Le nom Wolde est un nom personnel éthiopien. Il ouvre souvent un nom chrétien composé, comme Wolde Mariam, et sert aussi de second nom aux enfants d'un homme qui le porte, sans devenir un nom de famille. Nous présentons plus bas l'explication de son sens que nous connaissons.",
     "names": [
       {
         "nameText": "Wolde",
@@ -171,27 +171,6 @@
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
                 "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 ; le site affiche aussi une traduction française. La notice dit : nom personnel éthiopien interprété comme « mon fils » en guèze ou en amharique ; souvent premier élément d'un nom chrétien comme Woldemariam, où il se traduit par « fils de ». Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": null,
-              "to": null,
-              "label": "Lecture d'après un dictionnaire de 1987"
-            },
-            "statement": "Le nom Wolde viendrait du mot guèze wald, « fils, enfant », que le dictionnaire de Wolf Leslau donne aussi sous la forme walda dans walda wald, « petit-fils ». C'est la lecture que nous faisons à partir de ce dictionnaire, qui ne parle pas du nom.",
-            "hypothesisGroup": "origine du nom Wolde",
-            "sources": [
-              {
-                "title": "Comparative Dictionary of Geʿez (Classical Ethiopic)",
-                "author": "Wolf Leslau",
-                "year": 1987,
-                "url": "https://archive.org/details/leslau-comparative-dictionary-of-geez-1987",
-                "tier": "referenced",
-                "source_kind": "academic",
-                "page": "p. 613",
-                "notes": "Wiesbaden, Otto Harrassowitz, 1987. Lu le 12 octobre 2026 dans une copie non officielle déposée sur Internet Archive par un particulier. Page 613, entrée wald : « son, child, boy, young one, disciple, servant », avec l'expression walda wald, « grandson », petit-fils."
               }
             ]
           },

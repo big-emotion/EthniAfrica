@@ -88,7 +88,7 @@
     }
   ],
   "nameHistory": {
-    "summary": "Le nom Teshome est un nom personnel éthiopien. Il sert de second nom aux enfants d'un homme qui le porte, sans devenir un nom de famille : il change à chaque génération. Une forme proche, Tesciomè, apparaît par écrit en 1914. Deux lectures de son sens sont proposées ; nous les présentons plus bas.",
+    "summary": "Le nom Teshome est un nom personnel éthiopien. Il sert de second nom aux enfants d'un homme qui le porte, sans devenir un nom de famille : il change à chaque génération. Une forme proche, Tesciomè, apparaît par écrit en 1914. Nous présentons plus bas l'explication de son sens que nous connaissons.",
     "names": [
       {
         "nameText": "Teshome",
@@ -148,27 +148,6 @@
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
                 "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 ; le site affiche aussi une traduction française. La notice dit : nom personnel éthiopien interprété comme « il a été choisi ». Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
-              }
-            ]
-          },
-          {
-            "period": {
-              "from": null,
-              "to": null,
-              "label": "Lecture d'après un dictionnaire de 1987"
-            },
-            "statement": "Le nom Teshome se rattacherait au verbe amharique šomä, « nommer à une charge », que le dictionnaire du guèze de Wolf Leslau rapproche du guèze śēma, « placer, nommer, ordonner ». Il voudrait alors dire « il a été nommé ». C'est la lecture que nous faisons à partir de ce dictionnaire, qui ne parle pas du nom.",
-            "hypothesisGroup": "origine du nom Teshome",
-            "sources": [
-              {
-                "title": "Comparative Dictionary of Geʿez (Classical Ethiopic)",
-                "author": "Wolf Leslau",
-                "year": 1987,
-                "url": "https://archive.org/details/leslau-comparative-dictionary-of-geez-1987",
-                "tier": "referenced",
-                "source_kind": "academic",
-                "page": "p. 540",
-                "notes": "Wiesbaden, Otto Harrassowitz, 1987. Lu le 12 octobre 2026 dans une copie non officielle déposée sur Internet Archive par un particulier. Page 540, entrée sym I, śēma : « set, put, place, appoint (to an office), ordain » ; parmi les formes éthiopiennes, l'amharique šomä, « appoint to an office »."
               }
             ]
           },
