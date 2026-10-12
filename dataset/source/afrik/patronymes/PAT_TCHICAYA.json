@@ -11,7 +11,10 @@
     {
       "spelling": "Tchicaya",
       "attestations": [
-        { "countryId": "COG", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "COG",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -75,5 +78,111 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Tchicaya est un nom de famille, écrit dès 1947 au Journal officiel. Une forme proche, Tschikaya, est écrite dès 1879 dans le récit d'une expédition allemande partie de la côte de Loango, dans l'actuel Congo. On ne sait pas avec certitude d'où vient ce nom ni ce qu'il veut dire.",
+    "names": [
+      {
+        "nameText": "Tchicaya",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille écrit dès 1947 au Journal officiel.",
+        "periodLabel": "Écrit dès 1947 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Tchicaya est un nom de famille. Les sources que le projet a lues ne disent ni d'où il vient ni ce qu'il veut dire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Journal officiel de la République française. Débats parlementaires, Assemblée nationale, compte rendu de la séance du 6 juin 1947",
+                "author": "Assemblée nationale",
+                "year": 1947,
+                "url": "https://archive.org/details/sim_journal-officiel-de-la-republique-francaise_1947-06-07_50",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1967",
+                "notes": "Numéro du 7 juin 1947. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. La liste des députés qui ont voté écrit « Félix-Tchicaya », p. 1967 ; le nom revient sous cette forme dans les scrutins du même numéro."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1947,
+              "to": 1947,
+              "label": "1947"
+            },
+            "statement": "Le nom Tchicaya apparaît par écrit au Journal officiel, dans la liste des députés qui ont voté à l'Assemblée nationale le 6 juin 1947, sous la forme Félix-Tchicaya. C'est la plus ancienne trace de cette forme que le projet connaît ; elle dit quand le nom a été écrit ainsi, pas depuis quand il est porté.",
+            "formAsWritten": "Félix-Tchicaya",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Félix-Tchicaya",
+                "role": "député qui porte ce nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Journal officiel de la République française. Débats parlementaires, Assemblée nationale, compte rendu de la séance du 6 juin 1947",
+                "author": "Assemblée nationale",
+                "year": 1947,
+                "url": "https://archive.org/details/sim_journal-officiel-de-la-republique-francaise_1947-06-07_50",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1967",
+                "notes": "Numéro du 7 juin 1947. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. La liste des députés qui ont voté écrit « Félix-Tchicaya », p. 1967 ; le nom revient sous cette forme dans les scrutins du même numéro."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tschikaya",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une forme proche de Tchicaya, écrite en 1879 par un voyageur allemand.",
+        "periodLabel": "Écrit en 1879",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1874,
+              "to": 1874,
+              "label": "Juillet 1874, publié en 1879"
+            },
+            "era": "polity",
+            "statement": "Le nom Tschikaya, une forme proche de Tchicaya, apparaît dans le récit de Paul Güssfeldt : c'est le nom du porteur du sextant de son expédition, partie le 6 juillet 1874 vers la forêt du Mayombe. C'est la plus ancienne trace de cette forme que le projet connaît ; le récit ne dit pas si cet homme portait le même nom de famille que les Tchicaya d'aujourd'hui.",
+            "formAsWritten": "Tschikaya",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Paul Güssfeldt",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Die Loango-Expedition ausgesandt von der Deutschen Gesellschaft zur Erforschung Aequatorial-Africas, 1873-1876, erste Abtheilung",
+                "author": "Paul Güssfeldt",
+                "year": 1879,
+                "url": "https://archive.org/details/dieloangoexpedi01falkgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 149",
+                "notes": "Leipzig, P. Frohberg, 1879. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 149 : au départ de l'expédition vers le Mayombe, le 6 juillet 1874, Güssfeldt nomme parmi les hommes qui marchent près de lui « der Sextantenträger Tschikaya », le porteur du sextant. Récit d'un voyageur allemand, cité ici pour la forme qu'il écrit."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

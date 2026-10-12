@@ -87,5 +87,238 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sy est un nom de clan du Fouta Toro, porté chez les Toucouleurs et les Peuls du Sénégal et de Mauritanie. On l'écrit aussi Si, et autrefois Sih. On ne sait pas avec certitude ce qu'il veut dire ; nous présentons plus bas la seule explication trouvée.",
+    "names": [
+      {
+        "nameText": "Sy",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan du Fouta Toro, écrit dès 1913 sous la forme Sih.",
+        "periodLabel": "Écrit dès 1913 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sy désigne un clan, ce que les Peuls du Fouta appellent un yettôde, selon les Chroniques du Foûta sénégalais. On ne sait pas avec certitude ce que veut dire le mot ; nous présentons plus bas la seule explication trouvée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Chroniques du Foûta sénégalais, traduites de deux manuscrits arabes inédits de Siré-Abbâs-Soh",
+                "author": "Siré-Abbâs-Soh ; traduction de Maurice Delafosse avec la collaboration de Henri Gaden",
+                "year": 1913,
+                "url": "https://archive.org/details/chroniquesdufo00sir",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 197-198, 296",
+                "notes": "Paris, Ernest Leroux, 1913, Collection de la Revue du monde musulman. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Les deux manuscrits de Siré-Abbâs-Soh, généalogiste du Fouta, parviennent à Henri Gaden en 1911 (avertissement, p. 1). Traducteurs de l'époque coloniale, cités pour les formes et les récits qu'ils relèvent. Page 296, glossaire : Sih, « Nom d'un clan du Foûta » ; les Silbe du Damga ont « comme yettôde ou nom de clan Sih ». Pages 197-198 : « la facilité avec laquelle on change de yettôde »."
+              },
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 11 octobre 2026. Entrée Sí : parler toucouleur ; catégories nùmu (forgerons) et maabube (tisserands)."
+              },
+              {
+                "title": "Dictionary of American Family Names, 2nd edition — Sy",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/sy?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée de la deuxième édition du Dictionary of American Family Names (Oxford University Press, 2022), reproduite par Ancestry et lue le 11 octobre 2026 dans sa version française affichée par le site. Entrée Sy : en Afrique de l'Ouest (Mauritanie, Sénégal, Mali, Guinée), nom du clan Sy des Toucouleurs ; le nom figure aussi chez les Soninké. L'entrée donne aussi des noms chinois, philippins, français et allemands sans lien."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sy figure dans le dictionnaire des noms de clan mandingues sous la forme Sí. Il le note chez les Toucouleurs, avec deux groupes de métier : les forgerons et les tisserands.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 11 octobre 2026. Entrée Sí : parler toucouleur ; catégories nùmu (forgerons) et maabube (tisserands)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sy apparaît par écrit sous la forme Sih dans la chronique du généalogiste Siré-Abbâs-Soh, traduite en 1913 par Maurice Delafosse avec Henri Gaden : elle parle de « la postérité de Mâlik-Sih ». Le glossaire en fait le nom d'un clan du Fouta. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un document l'a écrit, pas depuis quand le nom est porté.",
+            "formAsWritten": "Sih",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Siré-Abbâs-Soh",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Maurice Delafosse",
+                "role": "la transcrit en français"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Chroniques du Foûta sénégalais, traduites de deux manuscrits arabes inédits de Siré-Abbâs-Soh",
+                "author": "Siré-Abbâs-Soh ; traduction de Maurice Delafosse avec la collaboration de Henri Gaden",
+                "year": 1913,
+                "url": "https://archive.org/details/chroniquesdufo00sir",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 46, 296",
+                "notes": "Paris, Ernest Leroux, 1913, Collection de la Revue du monde musulman. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Les deux manuscrits de Siré-Abbâs-Soh, généalogiste du Fouta, parviennent à Henri Gaden en 1911 (avertissement, p. 1). Traducteurs de l'époque coloniale, cités pour les formes et les récits qu'ils relèvent. Page 46 : « quinze hommes de la postérité de Mâlik-Sih ». Page 296, glossaire : « Sih. — Nom d'un clan du Foûta. La forme du pluriel est Sihsibe ou Sisîbe. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "Décrit en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sy, écrit Sih, est porté selon les mêmes Chroniques par des groupes de rangs différents : des familles de lettrés musulmans, les Tôrodbe, mais aussi des tisserands et des forgerons.",
+            "sources": [
+              {
+                "title": "Chroniques du Foûta sénégalais, traduites de deux manuscrits arabes inédits de Siré-Abbâs-Soh",
+                "author": "Siré-Abbâs-Soh ; traduction de Maurice Delafosse avec la collaboration de Henri Gaden",
+                "year": 1913,
+                "url": "https://archive.org/details/chroniquesdufo00sir",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 142, 216, 296",
+                "notes": "Paris, Ernest Leroux, 1913, Collection de la Revue du monde musulman. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Les deux manuscrits de Siré-Abbâs-Soh, généalogiste du Fouta, parviennent à Henri Gaden en 1911 (avertissement, p. 1). Traducteurs de l'époque coloniale, cités pour les formes et les récits qu'ils relèvent. Page 142 : d'autres clans ont fourni des tisserands, « des Sokoma, des Sih, des Dyah » ; il y a aussi « des forgerons de yettôdé Sih », dont l'origine serait maure selon Siré-Abbâs. Page 216 : la tribu de Boggel, « composée de Tôrodbe Sîsibe ou de clan Sih ». Page 296 : les Silbe du Damga ont aussi le clan Sih."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "Rapporté en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sy pouvait se prendre par la mère : Henri Gaden rapporte qu'un ancêtre de l'almami Ahmadu-Hammâd, né d'une femme du clan Sih, prit ce nom chez ses oncles maternels et le transmit, alors que ses propres ancêtres étaient du clan Wan.",
+            "sources": [
+              {
+                "title": "Chroniques du Foûta sénégalais, traduites de deux manuscrits arabes inédits de Siré-Abbâs-Soh",
+                "author": "Siré-Abbâs-Soh ; traduction de Maurice Delafosse avec la collaboration de Henri Gaden",
+                "year": 1913,
+                "url": "https://archive.org/details/chroniquesdufo00sir",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 197-198",
+                "notes": "Paris, Ernest Leroux, 1913, Collection de la Revue du monde musulman. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Les deux manuscrits de Siré-Abbâs-Soh, généalogiste du Fouta, parviennent à Henri Gaden en 1911 (avertissement, p. 1). Traducteurs de l'époque coloniale, cités pour les formes et les récits qu'ils relèvent. Pages 197-198, glossaire, entrée 'Aty : Delafosse rapporte, d'après Gaden, « la facilité avec laquelle on change de yettôde » ; Siwa, « né d'une femme des Sisîbe », se réfugia dans la famille de sa mère « et prit le yettôde Sih, qu'il transmit à ses descendants »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1917,
+              "to": 1917,
+              "label": "Décrit en 1917"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sy, écrit Si, est classé en 1917 par Paul Marty, administrateur colonial, parmi les clans nobles des Toucouleurs. Il y rattache Malik Si, premier souverain musulman du Boundou, et note que ce clan a presque quitté le Fouta pour l'est.",
+            "sources": [
+              {
+                "title": "Études sur l'Islam au Sénégal, tome 2 : les doctrines et les institutions",
+                "author": "Paul Marty",
+                "year": 1917,
+                "url": "https://archive.org/details/EtudesSurLislamAuSnngal2LesDotrinesEtLesInstitutions",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 326",
+                "notes": "Paris, Ernest Leroux, 1917, Collection de la Revue du monde musulman. Lu le 11 octobre 2026 sur une copie non officielle de la numérisation de Gallica déposée sur archive.org. Auteur administrateur colonial, cité pour les classements qu'il donne. Page 326 : parmi les nobles (Torodbé), « Si, dont faisait partie Al-Hadj Malik Si, le premier souverain musulman du Boundou. Il a à peu près disparu du Fouta pour émigrer vers l'est »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Sy viendrait du mot soninké si, « cheval », selon le Dictionary of American Family Names, qui le donne comme un nom de clan toucouleur porté aussi chez les Soninké.",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2nd edition — Sy",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/sy?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée de la deuxième édition du Dictionary of American Family Names (Oxford University Press, 2022), reproduite par Ancestry et lue le 11 octobre 2026 dans sa version française affichée par le site. Entrée Sy : nom du clan Sy des Toucouleurs, « apparemment basé sur le mot Soninke si « cheval » » ; le nom figure aussi chez les Soninké. Le dictionnaire ne cite pas sa source."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Si",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1917,
+              "to": 1917,
+              "label": "Décrit en 1917"
+            },
+            "era": "colonial",
+            "statement": "Le nom Si est l'écriture de Sy chez Paul Marty en 1917 ; le dictionnaire des noms de clan mandingues écrit Sí.",
+            "sources": [
+              {
+                "title": "Études sur l'Islam au Sénégal, tome 2 : les doctrines et les institutions",
+                "author": "Paul Marty",
+                "year": 1917,
+                "url": "https://archive.org/details/EtudesSurLislamAuSnngal2LesDotrinesEtLesInstitutions",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 326",
+                "notes": "Paris, Ernest Leroux, 1917, Collection de la Revue du monde musulman. Lu le 11 octobre 2026 sur une copie non officielle de la numérisation de Gallica déposée sur archive.org. Auteur administrateur colonial, cité pour les classements qu'il donne. Page 326 : « Si, dont faisait partie Al-Hadj Malik Si »."
+              },
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 11 octobre 2026. Entrée Sí."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

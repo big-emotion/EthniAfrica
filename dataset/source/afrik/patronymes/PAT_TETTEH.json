@@ -105,5 +105,92 @@
       "fieldPath": "spellings[1]",
       "reason": "Les recherches « Teteh Ga name », « Teteh Ghana naming » et la source GNA consultée n'ont pas confirmé la variante sans double t final ; elle reste attribuée à la file de candidats."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Tetteh est, chez les Ga du Ghana, le nom que reçoit le deuxième garçon d'une famille. C'est un nom donné d'après le rang de naissance, pas un nom de clan. Les sources en donnent le sens et une remarque sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Tetteh",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "gaa",
+        "namedBy": null,
+        "shortLine": "Un nom ga donné au deuxième garçon d'une famille, d'après son rang de naissance.",
+        "periodLabel": "Forme proche écrite dès 1858 ; donné aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tetteh est un nom de rang de naissance : chez les Ga, on le donne d'ordinaire au deuxième garçon, avec l'appellation Mpata, tandis que le premier reçoit Tettey, selon un dossier de la Ghana News Agency. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas la seule remarque que nous connaissons.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Sustaining the Ga Tradition with the Unique Naming Pattern",
+                "author": "Laudia Sawer, Ghana News Agency",
+                "year": 2024,
+                "url": "https://gna.org.gh/2024/07/sustaining-the-ga-tradition-with-the-unique-naming-pattern/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Dossier publié à Tema le 2 juillet 2024, lu le 11 octobre 2026. Il écrit que le premier garçon reçoit d'ordinaire le nom Tettey, et que le deuxième et le troisième prennent Tetteh (Mpata) et Kwei ou Mensa. La graphie Teteh n'y figure pas."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "Proposée en 1858"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tetteh ne viendrait pas des nombres twi, à la différence des noms donnés aux enfants nés plus tard, comme Mesa et Mansa pour le troisième enfant ou Badu pour le dixième, selon le missionnaire Johannes Zimmermann.",
+            "hypothesisGroup": "origine du nom Tetteh",
+            "sources": [
+              {
+                "title": "A Grammatical Sketch of the Akra- or Gã-Language, vol. II (vocabulaire)",
+                "author": "Johannes Zimmermann",
+                "year": 1858,
+                "url": "https://archive.org/details/agrammaticalske01zimmgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 289 du vocabulaire",
+                "notes": "Stuttgart, imprimé pour la Société missionnaire de Bâle, 1858. Lu le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org, qui réunit la grammaire et le vocabulaire ; la page porte la signature « Zimmermann, Akra-Vocab. ». Deux entrées Tete s'y suivent : l'une « pr. n. of firstborn sons », l'autre « pr. n. of second sons ». La première ajoute que les noms donnés selon le rang de naissance viennent des nombres otyi (twi), « with the exception of Tete, Dede, Tete, Koko and Tsotso ». Auteur de l'époque coloniale, cité ici pour les formes qu'il relève."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "1858"
+            },
+            "era": "colonial",
+            "statement": "Une forme proche du nom Tetteh, Tete, apparaît par écrit dans le vocabulaire du ga de Johannes Zimmermann, missionnaire de Bâle, comme nom des deuxièmes fils. Il le distingue d'un autre Tete, le nom des fils aînés. C'est la plus ancienne trace de cette forme proche que le projet connaît ; elle dit quand un auteur l'a notée, pas depuis quand le nom est donné.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Johannes Zimmermann",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Grammatical Sketch of the Akra- or Gã-Language, vol. II (vocabulaire)",
+                "author": "Johannes Zimmermann",
+                "year": 1858,
+                "url": "https://archive.org/details/agrammaticalske01zimmgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 289 du vocabulaire",
+                "notes": "Stuttgart, imprimé pour la Société missionnaire de Bâle, 1858. Lu le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org, qui réunit la grammaire et le vocabulaire ; la page porte la signature « Zimmermann, Akra-Vocab. ». Deux entrées Tete s'y suivent : l'une « pr. n. of firstborn sons », l'autre « pr. n. of second sons ». La première ajoute que les noms donnés selon le rang de naissance viennent des nombres otyi (twi), « with the exception of Tete, Dede, Tete, Koko and Tsotso ». Auteur de l'époque coloniale, cité ici pour les formes qu'il relève."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

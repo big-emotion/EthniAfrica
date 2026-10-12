@@ -129,5 +129,294 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Anuak désigne un peuple de langue nilotique de l'ouest de l'Éthiopie, autour de Gambela, et du Soudan du Sud voisin, qui se nomme lui-même Anywaa. D'autres noms existent : Yambo, que lui donnent les Oromo et les Amhara, et Bär, chez les Nuer et les Dinka. On ne sait pas avec certitude d'où vient le nom Anywaa ; ce que proposent les sources est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Anywaa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "anu",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; on l'a rapproché d'un verbe qui veut dire « partager ».",
+        "periodLabel": "Écrit depuis 1906 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Anywaa désigne un peuple qui vit en Éthiopie, le long du Baro, de l'Alworo et du Gilo, et au Soudan du Sud, sur l'Akobo et le Pibor ; c'est le nom qu'il se donne, que la linguiste Marie Lusted écrit aɲwa. On ne sait pas avec certitude d'où il vient ; l'explication proposée est présentée à part.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Anywa, dans The Non-Semitic Languages of Ethiopia",
+                "author": "Marie Lusted",
+                "year": 1976,
+                "url": "https://archive.org/details/rosettaproject_anu_detail-2",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 495",
+                "notes": "Chapitre 20 de l'ouvrage dirigé par M. Lionel Bender, East Lansing, African Studies Center, Michigan State University, 1976. Lu dans une copie non officielle numérisée par le Rosetta Project sur archive.org le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1976,
+              "to": 1976,
+              "label": "Proposée en 1976"
+            },
+            "era": "modern",
+            "statement": "Le nom Anywaa viendrait du verbe ɲwak, « partager » : il dirait l'habitude de ce peuple de partager sa nourriture et ses biens entre ses membres, selon Marie Lusted.",
+            "sources": [
+              {
+                "title": "Anywa, dans The Non-Semitic Languages of Ethiopia",
+                "author": "Marie Lusted",
+                "year": 1976,
+                "url": "https://archive.org/details/rosettaproject_anu_detail-2",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 495",
+                "notes": "Chapitre 20 de l'ouvrage dirigé par M. Lionel Bender, East Lansing, African Studies Center, Michigan State University, 1976. Lu dans une copie non officielle numérisée par le Rosetta Project sur archive.org le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1899,
+              "to": 1901,
+              "label": "Relevé de 1899-1900, publié en 1901"
+            },
+            "era": "colonial",
+            "statement": "Le nom Anywaa apparaît sous des formes proches, Nyuak ou Anuak, chez l'officier britannique H. H. Austin, qui relève le cours du Sobat : le village d'Ashel est, écrit-il, le premier d'un petit groupe de la tribu « Nyuak ou Anuak », installé sur la rive. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "birth": true,
+            "formAsWritten": "Nyuak",
+            "sources": [
+              {
+                "title": "Survey of the Sobat Region",
+                "author": "H. H. Austin",
+                "year": 1901,
+                "url": "https://archive.org/details/sim_geographical-journal_1901-05_17_5",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 496-497",
+                "notes": "The Geographical Journal, vol. 17, n° 5, mai 1901. Relevé fait par l'auteur, officier britannique, à partir de la fin de 1899. Lu dans l'exemplaire numérisé sur archive.org le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "statement": "Le nom Anywaa est écrit Anjuak par le voyageur allemand Oscar Neumann : il rappelle en 1906 que les Anjuak, ou Jambo, des affluents du Sobat, le Baro, le Gelo et l'Akobo, parlent la même langue que des peuples de la rive est du lac Victoria.",
+            "formAsWritten": "Anjuak",
+            "sources": [
+              {
+                "title": "Zeitschrift für Ethnologie, vol. 38 : comptes rendus de la Société berlinoise d'anthropologie, d'ethnologie et de préhistoire",
+                "author": "Oscar Neumann",
+                "year": 1906,
+                "url": "https://archive.org/details/zeitschriftfuret3819unse",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 161",
+                "notes": "Intervention d'Oscar Neumann lors d'une séance de la Société, lue dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. Il y rappelle une conférence faite à la Société de géographie de Berlin après son dernier voyage."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1912,
+              "label": "Enquête de 1910, publiée en 1912"
+            },
+            "statement": "Le nom Anywaa est écrit Anywak par le linguiste allemand Diedrich Westermann, qui publie en 1912 des notes et un court vocabulaire de leur langue. Il les situe sur le Sobat, au nord-ouest de Nasser, et en Abyssinie, sur le Baro et entre le Gelo et l'Akobo.",
+            "sources": [
+              {
+                "title": "Some Notes and a Short Vocabulary of the Anywak Language",
+                "author": "Diedrich Westermann",
+                "year": 1912,
+                "url": "https://archive.org/details/rosettaproject_anu_detail-1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Tiré à part des Mitteilungen des Seminars für Orientalische Sprachen zu Berlin, XVe année, troisième partie, Berlin, 1912. Lu dans une copie non officielle numérisée par le Rosetta Project sur archive.org le 11 octobre 2026 ; la pagination de la revue n'y est pas lisible avec certitude.",
+                "page": "p. 59"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Anuak",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme la plus répandue dans les textes écrits en anglais ; ce peuple dit Anywaa.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1976,
+              "to": 1976,
+              "label": "1976"
+            },
+            "era": "modern",
+            "statement": "Le nom Anuak figure dans le titre de travaux de missionnaires sur la langue, comme le manuel d'Hoekstra pour apprendre l'anuak et l'étude de A. Keefer sur le verbe anuak, que cite Marie Lusted ; elle-même écrit Anywa.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Anywa, dans The Non-Semitic Languages of Ethiopia",
+                "author": "Marie Lusted",
+                "year": 1976,
+                "url": "https://archive.org/details/rosettaproject_anu_detail-2",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 496",
+                "notes": "Chapitre 20 de l'ouvrage dirigé par M. Lionel Bender, East Lansing, African Studies Center, Michigan State University, 1976. Lu dans une copie non officielle numérisée par le Rosetta Project sur archive.org le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1899,
+              "to": 1901,
+              "label": "Relevé de 1899-1900, publié en 1901"
+            },
+            "era": "colonial",
+            "statement": "Le nom Anuak apparaît chez H. H. Austin, qui parle de la tribu « Nyuak ou Anuak » du Sobat, puis des « Anuaks, ou Nyuaks », qui vivent sur les deux rives du Baro. C'est la plus ancienne trace de cette forme que le projet connaît.",
+            "birth": true,
+            "formAsWritten": "Anuak",
+            "sources": [
+              {
+                "title": "Survey of the Sobat Region",
+                "author": "H. H. Austin",
+                "year": 1901,
+                "url": "https://archive.org/details/sim_geographical-journal_1901-05_17_5",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 496-497",
+                "notes": "The Geographical Journal, vol. 17, n° 5, mai 1901. Relevé fait par l'auteur, officier britannique, à partir de la fin de 1899. Lu dans l'exemplaire numérisé sur archive.org le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Yambo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Oromo et les Amhara",
+        "shortLine": "Le nom que leur donnent les Oromo et les Amhara.",
+        "periodLabel": "Écrit depuis 1900 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Yambo est celui que les Oromo et les Amhara donnent aux Anywaa, selon Marie Lusted.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Anywa, dans The Non-Semitic Languages of Ethiopia",
+                "author": "Marie Lusted",
+                "year": 1976,
+                "url": "https://archive.org/details/rosettaproject_anu_detail-2",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 495",
+                "notes": "Chapitre 20 de l'ouvrage dirigé par M. Lionel Bender, East Lansing, African Studies Center, Michigan State University, 1976. Lu dans une copie non officielle numérisée par le Rosetta Project sur archive.org le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1900,
+              "label": "Août 1897, livre de 1900"
+            },
+            "era": "polity",
+            "statement": "Le nom Yambo apparaît chez Charles Michel, second de la mission française de Bonchamps partie d'Éthiopie vers le Nil : sur la route de Goré à Bouré, il cite les Yambos parmi les peuples du pays, avec les Guimiras et les Souros. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Yambos",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mission de Bonchamps. Vers Fachoda, à la rencontre de la mission Marchand, à travers l'Éthiopie",
+                "author": "Charles Michel",
+                "year": 1900,
+                "url": "https://archive.org/details/missiondeboncham00mich",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 182",
+                "notes": "Paris, Plon, 1900. L'auteur était le second de la mission ; lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "statement": "Le nom Yambo est écrit Jambo par Oscar Neumann, qui l'emploie comme un second nom des Anjuak.",
+            "formAsWritten": "Jambo",
+            "sources": [
+              {
+                "title": "Zeitschrift für Ethnologie, vol. 38 : comptes rendus de la Société berlinoise d'anthropologie, d'ethnologie et de préhistoire",
+                "author": "Oscar Neumann",
+                "year": 1906,
+                "url": "https://archive.org/details/zeitschriftfuret3819unse",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 161",
+                "notes": "Intervention d'Oscar Neumann lors d'une séance de la Société, lue dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. Il y rappelle une conférence faite à la Société de géographie de Berlin après son dernier voyage."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bär",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Nuer et les Dinka",
+        "shortLine": "Le nom que leur donnent les Nuer et les Dinka.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bär est celui que les Nuer et les Dinka donnent aux Anywaa, selon Marie Lusted.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Anywa, dans The Non-Semitic Languages of Ethiopia",
+                "author": "Marie Lusted",
+                "year": 1976,
+                "url": "https://archive.org/details/rosettaproject_anu_detail-2",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 495-496",
+                "notes": "Chapitre 20 de l'ouvrage dirigé par M. Lionel Bender, East Lansing, African Studies Center, Michigan State University, 1976. Lu dans une copie non officielle numérisée par le Rosetta Project sur archive.org le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

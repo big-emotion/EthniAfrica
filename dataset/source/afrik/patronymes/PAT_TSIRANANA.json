@@ -81,5 +81,69 @@
       "fieldPath": "homonyms",
       "reason": "La biographie officielle, les catalogues et recherches exactes consultés n'établissent pas de lignée Tsiranana d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Tsiranana est un nom malgache, connu surtout comme celui de Philibert Tsiranana, député de Madagascar puis premier président de la République malgache, dont la mère venait d'un grand clan tsimihety. On ne sait pas avec certitude d'où vient ce nom ni ce qu'il veut dire : les sources consultées n'en disent rien.",
+    "names": [
+      {
+        "nameText": "Tsiranana",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom malgache connu par Philibert Tsiranana ; on ne sait pas avec certitude ce qu'il veut dire.",
+        "periodLabel": "Écrit dès 1956 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tsiranana est connu surtout comme celui de Philibert Tsiranana, né à Anahidrano, dans le district d'Antsohihy. La base de l'Assemblée nationale rattache sa famille aux Tsimihety par sa mère, mais elle ne dit pas d'où vient le nom ; on ne sait donc pas avec certitude son origine ni son sens.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Philibert Tsiranana — Base de données des députés français depuis 1789",
+                "author": "Assemblée nationale",
+                "year": null,
+                "url": "https://www2.assemblee-nationale.fr/sycomore/fiche?num_dept=7169",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Fiche lue le 11 octobre 2026. Mandat de député de Madagascar du 2 janvier 1956 au 8 décembre 1958, puis du 9 décembre 1958 au 15 juillet 1959. La biographie de la IVe République le dit né vers 1910 à Anahidrano, dans le district d'Antsohihy, et écrit que sa mère était issue de l'un des grands clans tsimihety. Elle ne dit rien de l'origine ni du sens du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1956,
+              "to": 1956,
+              "label": "1956"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tsiranana figure dans les mandats de l'Assemblée nationale française : Philibert Tsiranana y siège comme député de Madagascar à partir du 2 janvier 1956, selon la base Sycomore. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle ne dit pas depuis quand il est porté.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Philibert Tsiranana",
+                "role": "député de Madagascar qui porte ce nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Philibert Tsiranana — Base de données des députés français depuis 1789",
+                "author": "Assemblée nationale",
+                "year": null,
+                "url": "https://www2.assemblee-nationale.fr/sycomore/fiche?num_dept=7169",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Fiche lue le 11 octobre 2026. Mandat de député de Madagascar du 2 janvier 1956 au 8 décembre 1958, puis du 9 décembre 1958 au 15 juillet 1959. La biographie de la IVe République le dit né vers 1910 à Anahidrano, dans le district d'Antsohihy, et écrit que sa mère était issue de l'un des grands clans tsimihety. Elle ne dit rien de l'origine ni du sens du nom."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

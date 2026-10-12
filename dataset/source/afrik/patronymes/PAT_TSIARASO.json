@@ -81,5 +81,124 @@
       "fieldPath": "homonyms",
       "reason": "L'étude dédiée et les recherches exactes n'établissent pas de lignée Tsiaraso d'origine distincte de la dynastie bemazava-sakalava."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Tsiaraso est un nom de roi chez les Bemazava, une dynastie sakalava du nord-ouest de Madagascar : plusieurs souverains l'ont porté l'un après l'autre, avec un numéro. On ne sait pas avec certitude ce qu'il veut dire, car les sources consultées n'en donnent pas le sens ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "Tsiaraso",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de roi repris de génération en génération par la dynastie bemazava, chez les Sakalava.",
+        "periodLabel": "Écrit dès 1898 ; porté encore à la fin du XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1997,
+              "to": 1997,
+              "label": "Décrit en 1997"
+            },
+            "era": "modern",
+            "statement": "Le nom Tsiaraso est celui des rois de la dynastie bemazava-sakalava, qui le reprennent avec un numéro : Tsiaraso Victor III et son fils Tsiaraso Rachidy IV ont rebâti le Palais royal d'Ankify sur les ruines de l'enclos royal de Tsiaraso Ier, selon Lesley A. Sharp. On ne sait pas avec certitude ce que veut dire ce nom : les sources consultées ne le disent pas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Royal Difficulties: A Question of Succession in an Urbanized Sakalava Kingdom",
+                "author": "Lesley A. Sharp",
+                "year": 1997,
+                "url": "https://www.africabib.org/rec.php?RID=163126607",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 270-307",
+                "notes": "Journal of Religion in Africa, vol. 27, n° 3, août 1997. Lu le 11 octobre 2026 : la notice et le résumé publiés par AfricaBib, pas l'article entier. Le résumé dit que Tsiaraso Victor III et son fils Tsiaraso Rachidy IV ont rebâti le Palais royal d'Ankify sur les ruines du doany, l'enclos royal, de Tsiaraso I."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1969,
+              "to": 1969,
+              "label": "Décrit en 1969"
+            },
+            "era": "modern",
+            "statement": "Le nom Tsiaraso revient chez plusieurs rois de la chefferie bemazava d'Ambanja, dans le Sambirano : Roland Waast cite Tsiaraso II et Tsiaraso III dans son étude de l'organisation sociale de la région.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Opération anacarde : rapport sociologique",
+                "author": "Roland Waast",
+                "year": 1969,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers13-02/14190.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1 ; p. 17-18 ; p. 25-26",
+                "notes": "Rapport multigraphié de l'ORSTOM, Tananarive, 1969, lu le 11 octobre 2026 dans la base Horizon de l'IRD. Page 1 : la dynastie bemazava, venue du Boina, est la dernière conquérante arrivée dans le Sambirano, vers 1840. Pages 17-18 : les Bemazava, branche aînée écartée du trône du Boina, fondent la chefferie d'Ambanja ; Boanamaka est le fondateur de la chefferie. Page 25 : un manantany, ministre, de Tsiaraso II. Page 26, note : « Cas de Tsiaraso III »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1898,
+              "to": 1898,
+              "label": "1898"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tsiaraso apparaît dans les plaintes que trois souverains du Nord-Ouest, Tsialana II, Tsiaraso Ier et la reine Binao, adressent au gouverneur général Gallieni, qui les reçoit le 8 juillet 1898. C'est ce que rapporte Pela Ravailtera, d'après une étude de Cassam Aly Ndandahizara. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom est écrit, pas depuis quand il est porté.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Tsiaraso Ier",
+                "role": "roi bemazava, l'un des auteurs des plaintes"
+              },
+              {
+                "name": "Joseph Gallieni",
+                "role": "gouverneur général, qui reçoit les plaintes"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Le mécontentement des souverains du Nord-Ouest",
+                "author": "Pela Ravailtera, L'Express de Madagascar",
+                "year": 2023,
+                "url": "https://lexpress.mg/25/08/2023/le-mecontentement-des-souverains-du-nord-ouest/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Chronique historique publiée le 25 août 2023, lue le 11 octobre 2026. Elle rapporte que le gouverneur général Gallieni reçoit, le 8 juillet 1898, les mêmes plaintes de Tsialana II, de Tsiaraso Ier et de la reine Binao, et que Tsiaraso Ier fait rassembler des troupes dans les villages du Bas et du Haut-Sambirano. Elle cite l'étude de Cassam Aly Ndandahizara sur l'insurrection d'Ambalavelona en 1898, que nous n'avons pas lue."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1840,
+              "to": 1840,
+              "label": "Vers 1840"
+            },
+            "era": "polity",
+            "statement": "Le nom Tsiaraso sera porté par les rois d'une dynastie qui arrive alors dans le Sambirano : les Bemazava, branche aînée écartée du trône du Boina, y fondent la chefferie d'Ambanja avec leur chef Boanamaka, selon Roland Waast.",
+            "before": true,
+            "actors": [
+              {
+                "name": "Boanamaka",
+                "role": "fondateur de la chefferie bemazava"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Opération anacarde : rapport sociologique",
+                "author": "Roland Waast",
+                "year": 1969,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers13-02/14190.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1 ; p. 17-18 ; p. 25-26",
+                "notes": "Rapport multigraphié de l'ORSTOM, Tananarive, 1969, lu le 11 octobre 2026 dans la base Horizon de l'IRD. Page 1 : la dynastie bemazava, venue du Boina, est la dernière conquérante arrivée dans le Sambirano, vers 1840. Pages 17-18 : les Bemazava, branche aînée écartée du trône du Boina, fondent la chefferie d'Ambanja ; Boanamaka est le fondateur de la chefferie. Page 25 : un manantany, ministre, de Tsiaraso II. Page 26, note : « Cas de Tsiaraso III »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

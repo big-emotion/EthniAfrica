@@ -1,0 +1,23 @@
+{
+  "type": "Feature",
+  "properties": {
+    "status": "SYNTHETIC renderer test geometry: a plain octagon, not a shoreline. Never publish it.",
+    "crs": "EPSG:4326, [longitude, latitude]"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [16, 17.5],
+        [18.1, 16.6],
+        [19, 14.5],
+        [18.1, 12.4],
+        [16, 11.5],
+        [13.9, 12.4],
+        [13, 14.5],
+        [13.9, 16.6],
+        [16, 17.5]
+      ]
+    ]
+  }
+}

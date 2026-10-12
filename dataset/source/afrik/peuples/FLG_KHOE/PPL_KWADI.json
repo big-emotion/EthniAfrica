@@ -126,5 +126,138 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kwepe est celui que se donne un petit groupe d'éleveurs du désert du Namib, dans le sud-ouest de l'Angola, le long du fleuve Kuroka. Ses ancêtres parlaient le kwadi, une langue aujourd'hui éteinte, et ce peuple est aussi connu sous ce nom. Les sources consultées ne disent pas d'où viennent ces deux noms, ni quand ils ont été écrits pour la première fois.",
+    "names": [
+      {
+        "nameText": "Kwepe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent aujourd'hui les descendants des locuteurs du kwadi.",
+        "usedIn": ["eng", "por"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kwepe est celui que se donne un groupe d'éleveurs de petit bétail vivant le long du Kuroka, descendants des locuteurs du kwadi, qui parlent désormais le kuvale, une langue bantoue, selon Sandra Oliveira, Anne-Maria Fehn et leurs collègues. Deux femmes se souvenaient encore d'une bonne part de l'ancienne langue. On ne sait pas avec certitude d'où vient ce nom, et nous n'avons pas encore trouvé sa plus ancienne trace écrite.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Genome-wide variation in the Angolan Namib Desert reveals unique pre-Bantu ancestry",
+                "author": "Sandra Oliveira, Anne-Maria Fehn et al.",
+                "year": 2023,
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10516492/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Science Advances, vol. 9, no 38, eadh3822, 22 septembre 2023."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kwepe n'apparaît pas chez l'anthropologue Isaac Schapera. Entre le Capondo et le Korocas, dans la province de Mossamedes, il signale des « Bushmen » qu'on ne connaît que par des noms bantous, BaKwando, BaKwisso, BaKubai et BaKorocas, et dont on ignore la langue. Les sources ne disent pas si les Kwepe en font partie.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 36",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kwadi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "kwz",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue éteinte des Kwepe chez les linguistes ; son origine n'est pas documentée.",
+        "usedIn": ["eng", "por"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kwadi désigne une branche isolée de la famille khoe-kwadi, parlée jusqu'au milieu du XXe siècle par les Kwepe, dans le désert du Namib angolais, près de l'embouchure du Kuroka, selon Sandra Oliveira, Anne-Maria Fehn et leurs collègues. On ne sait pas avec certitude d'où vient ce nom, ni depuis quand on l'écrit.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Genome-wide variation in the Angolan Namib Desert reveals unique pre-Bantu ancestry",
+                "author": "Sandra Oliveira, Anne-Maria Fehn et al.",
+                "year": 2023,
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10516492/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Science Advances, vol. 9, no 38, eadh3822, 22 septembre 2023."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kwadi est celui que la norme ISO 639-3 donne à cette langue, qu'elle classe comme éteinte, sous le code kwz.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, code kwz : Kwadi",
+                "author": "SIL International",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/kwz",
+                "tier": "official",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1965,
+              "to": 1965,
+              "label": "1965"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kwadi désigne la langue que le linguiste Ernst Westphal enregistre en 1965 auprès de ses locuteurs, selon Sandra Oliveira, Anne-Maria Fehn et leurs collègues. Leur étude ne dit pas s'il employait déjà ce nom.",
+            "sources": [
+              {
+                "title": "Genome-wide variation in the Angolan Namib Desert reveals unique pre-Bantu ancestry",
+                "author": "Sandra Oliveira, Anne-Maria Fehn et al.",
+                "year": 2023,
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10516492/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Science Advances, vol. 9, no 38, eadh3822, 22 septembre 2023."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -139,5 +139,129 @@
         "tier": "referenced"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nafusi désigne les Berbères du Djebel Nefoussa, en Libye, et leur langue ; en berbère, ils se nomment Infusen et leur massif s'appelle Adrar n Infusen. Il rappelle celui des Nafusa, une confédération berbère que les Arabes trouvent dans ces montagnes au VIIe siècle. Les sources lues ne donnent qu'une explication de l'origine de ce nom ; nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Infusen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "jbn",
+        "namedBy": null,
+        "shortLine": "Le nom berbère de ce peuple ; leur massif s'appelle Adrar n Infusen.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Infusen désigne les Berbères de confession ibadite qui peuplent le Djebel Nefoussa, en Libye ; en berbère, le massif s'appelle Adrar n Infusen, selon la notice de la Bibliothèque nationale de France. On ne sait pas avec certitude depuis quand cette forme berbère est écrite.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Notice d'autorité RAMEAU : Nefoussa, Djebel (Libye)",
+                "author": "Bibliothèque nationale de France",
+                "year": 2019,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb17857456z",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Notice créée le 20 décembre 2019, lue le 11 octobre 2026. Elle présente le massif comme peuplé de Berbères de confession ibadite, les Infusen, et donne parmi les formes rejetées Adrar n Infusen."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nafusi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les catalogues de langues donnent au berbère du Djebel Nefoussa.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Nafusi est celui que retiennent aujourd'hui les catalogues de langues pour le berbère du Djebel Nefoussa, selon Glottolog.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 : Nafusi",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/nafu1238",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche de langue lue le 11 octobre 2026 : code ISO 639-3 jbn, classée parmi les langues berbères."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nafusa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'une confédération berbère du Djebel Nefoussa au VIIe siècle.",
+        "periodLabel": "Connu dès le VIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1301,
+              "to": 1400,
+              "label": "XIVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Nafusa viendrait de celui de Nefous, l'ancêtre dont les Nefouça descendraient, selon les généalogistes berbères cités par Ibn Khaldoun. Il les compte parmi les plus grandes tribus berbères, autour de Tripoli, et note qu'une montagne porte leur nom.",
+            "formAsWritten": "Nefouça",
+            "hypothesisGroup": "origine du nom Nafusa",
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome I",
+                "author": "Ibn Khaldoun, traduit par le baron de Slane",
+                "year": 1852,
+                "url": "https://archive.org/details/ibn-khaldun-histoire-des-berberes-et-des-dynasties-musulmanes-de-l-afrique-septentrionale-v-1",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 226-227",
+                "notes": "Traduction française publiée à Alger en 1852, lue dans l'exemplaire numérisé d'Internet Archive. Ibn Khaldoun a vécu de 1332 à 1406."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 643,
+              "to": 644,
+              "label": "Vers 643-644"
+            },
+            "statement": "Le nom Nafusa est celui d'une confédération berbère que les Arabes trouvent lors de leur conquête de la Tripolitaine. Le Djebel Nafusa, alors couvert d'oliveraies et de pâturages, en est le bastion, selon l'historien Hussain Monès. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 9 : La conquête de l'Afrique du Nord et la résistance berbère",
+                "author": "Hussain Monès",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 255, p. 257 et p. 259",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -140,5 +140,108 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nyabwa désigne un peuple de langue krou du centre-ouest de la Côte d'Ivoire, entre la Lobo et le Sassandra, qui se nomme lui-même Nyabwa. En français, on écrit souvent Niaboua ; au début de la colonisation, l'administration parlait des « Bas ». Nous n'avons pas trouvé de source qui explique l'origine du nom Nyabwa ; ce que nous savons de son histoire est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Nyabwa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nwb",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple et de sa langue ; on ne sait pas d'où il vient.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Nyabwa est celui sous lequel les linguistes rangent aujourd'hui la langue de ce peuple, avec deux parlers, le nyabwa proprement dit et le nyedebwa, selon le catalogue Glottolog. On ne sait pas avec certitude d'où vient ce nom ni quand il a été écrit pour la première fois.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog — Nyabwa",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/nyab1255",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues de l'Institut Max Planck, page lue le 11 octobre 2026. Le catalogue y range deux parlers, le nyabwa proprement dit et le nyedebwa."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Niaboua",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "La forme française du nom Nyabwa.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "Livre publié en 1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Niaboua est, avec Niadéboua et Kouzié, l'un des noms sous lesquels on repère aujourd'hui les groupes installés entre la Lobo et le Sassandra, à l'ouest d'Issia, selon l'anthropologue Jean-Pierre Dozon.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La société bété : histoires d'une « ethnie » de Côte d'Ivoire",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_05/17296.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 84 et p. 264",
+                "notes": "Karthala et ORSTOM, lu dans le texte intégral publié par l'IRD le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bas",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": "L'administration coloniale française",
+        "shortLine": "Le nom que l'administration coloniale donnait aux groupes entre la Lobo et le Sassandra.",
+        "periodLabel": "Début du XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1905,
+              "to": null,
+              "label": "À partir de 1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom « Bas » est celui que les autorités coloniales françaises donnent, après la création des postes d'Issia et de Daloa, aux groupes établis entre la Lobo et le Sassandra, selon Jean-Pierre Dozon. Ces groupes se trouvent ainsi tenus à l'écart du « pays bété », alors que les premières enquêtes reconnaissent leur proche parenté avec les Bété.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "La société bété : histoires d'une « ethnie » de Côte d'Ivoire",
+                "author": "Jean-Pierre Dozon",
+                "year": 1985,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/b_fdi_03_05/17296.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 263-264",
+                "notes": "Karthala et ORSTOM, lu dans le texte intégral publié par l'IRD le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
