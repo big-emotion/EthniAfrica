@@ -121,5 +121,163 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Americo-Liberians désigne les Afro-Américains libres arrivés en 1822 sur la côte du Liberia avec l'American Colonization Society, et leurs descendants, qui se nomment ainsi eux-mêmes. Un autre nom existe : Congoes, donné d'abord aux Africains libérés de navires négriers, puis étendu aux Libériens d'origine américaine. Nous ne savons pas avec certitude qui a employé le premier le nom Americo-Liberians, ni d'où vient le nom Congoes.",
+    "names": [
+      {
+        "nameText": "Americo-Liberians",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "eng",
+        "namedBy": null,
+        "shortLine": "Le nom des colons noirs américains du Liberia et de leurs descendants ; ils se le donnent eux-mêmes.",
+        "periodLabel": "Écrit depuis 1906 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom Americo-Liberians désigne les colons noirs américains arrivés en 1822 sur la côte du Liberia avec l'American Colonization Society, et leurs descendants, qui déclarent l'indépendance du pays en 1847, selon le guide Liberia: A Country Study. Il précise que le gouvernement a compté jusqu'en 1980 une catégorie à part, les descendants d'esclaves émancipés venus de l'hémisphère occidental, autrefois appelés Americo-Liberians.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Liberia: A Country Study",
+                "author": "Harold D. Nelson (dir.), American University, Foreign Area Studies",
+                "year": 1984,
+                "url": "https://archive.org/details/DTIC_ADA159331",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 3",
+                "notes": "Washington, Government Printing Office, Area Handbook Series, 1984. Lu dans l'exemplaire numérisé de la bibliothèque DTIC sur archive.org le 12 octobre 2026 ; la numérisation mêle l'ordre des pages et la page est celle du pied de page lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage des colons et de leurs descendants"
+            },
+            "statement": "Le nom Americo-Liberians est celui que les colons et leurs descendants se donnent eux-mêmes, selon le guide Liberia: A Country Study. Ce guide ajoute que les premiers colons se disaient plutôt « Americans », et que les Africains de la région comme les autorités britanniques de Sierra Leone les reconnaissaient sous ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Liberia: A Country Study",
+                "author": "Harold D. Nelson (dir.), American University, Foreign Area Studies",
+                "year": 1984,
+                "url": "https://archive.org/details/DTIC_ADA159331",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. xxiii et p. 3",
+                "notes": "Washington, Government Printing Office, Area Handbook Series, 1984. Lu dans l'exemplaire numérisé de la bibliothèque DTIC sur archive.org le 12 octobre 2026 ; la numérisation mêle l'ordre des pages et la page est celle du pied de page lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "modern",
+            "statement": "Le nom Americo-Liberians apparaît dans le livre Liberia de Harry Johnston, publié à Londres en 1906 : son chapitre XVII, « The Americo-Liberians », estime à 12 000 au plus les habitants d'origine américaine que l'auteur a comptés lors de sa visite de 1904. C'est la plus ancienne trace de ce nom que le projet connaît. Le groupe existait déjà avant lui.",
+            "birth": true,
+            "formAsWritten": "Americo-Liberians",
+            "sources": [
+              {
+                "title": "Liberia, vol. I",
+                "author": "Harry Johnston",
+                "year": 1906,
+                "url": "https://archive.org/details/liberiaj01johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 340",
+                "notes": "Londres, Hutchinson, 1906. Lu dans l'exemplaire numérisé sur archive.org le 12 octobre 2026. L'auteur est un administrateur colonial britannique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1822,
+              "to": null,
+              "label": "Depuis 1822"
+            },
+            "statement": "On parle alors d'« Americans », les Américains, pour désigner les colons noirs arrivés en 1822. Ils se disent eux-mêmes ainsi, et les Africains de la région comme les autorités britanniques voisines les reconnaissent sous ce nom, selon le guide Liberia: A Country Study.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Liberia: A Country Study",
+                "author": "Harold D. Nelson (dir.), American University, Foreign Area Studies",
+                "year": 1984,
+                "url": "https://archive.org/details/DTIC_ADA159331",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 3",
+                "notes": "Washington, Government Printing Office, Area Handbook Series, 1984. Lu dans l'exemplaire numérisé de la bibliothèque DTIC sur archive.org le 12 octobre 2026 ; la numérisation mêle l'ordre des pages et la page est celle du pied de page lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Congoes",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "eng",
+        "namedBy": null,
+        "shortLine": "Le nom des Africains libérés de navires négriers, étendu ensuite aux descendants des colons.",
+        "periodLabel": "Écrit depuis 1984 au moins ; encore employé",
+        "accounts": [
+          {
+            "period": {
+              "from": 1980,
+              "to": 1989,
+              "label": "Années 1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Congoes sert alors à désigner, le plus souvent, tous les Libériens d'origine américaine, selon le guide Liberia: A Country Study. Le guide note que les Americo-Liberians le trouvent péjoratif.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Liberia: A Country Study",
+                "author": "Harold D. Nelson (dir.), American University, Foreign Area Studies",
+                "year": 1984,
+                "url": "https://archive.org/details/DTIC_ADA159331",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 98",
+                "notes": "Washington, Government Printing Office, Area Handbook Series, 1984. Lu dans l'exemplaire numérisé de la bibliothèque DTIC sur archive.org le 12 octobre 2026 ; la numérisation mêle l'ordre des pages et la page est celle du pied de page lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Congoes apparaît dans le guide Liberia: A Country Study, publié en 1984 : les Africains libérés de navires négriers par les patrouilles navales américaines et installés au Liberia y sont « connus collectivement » sous ce nom. Ils étaient environ 300 en 1843, et plus de 5 000 en 1860. Le guide ne dit pas depuis quand le nom existe, ni d'où il vient. C'est la plus ancienne trace de ce nom que le projet connaît. Les personnes qu'il désigne existaient déjà avant lui.",
+            "birth": true,
+            "formAsWritten": "Congoes",
+            "sources": [
+              {
+                "title": "Liberia: A Country Study",
+                "author": "Harold D. Nelson (dir.), American University, Foreign Area Studies",
+                "year": 1984,
+                "url": "https://archive.org/details/DTIC_ADA159331",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 24",
+                "notes": "Washington, Government Printing Office, Area Handbook Series, 1984. Lu dans l'exemplaire numérisé de la bibliothèque DTIC sur archive.org le 12 octobre 2026 ; la numérisation mêle l'ordre des pages et la page est celle du pied de page lu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

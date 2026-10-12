@@ -134,5 +134,218 @@
         "notes": "Article academique evalue par les pairs, revue New West Indian Guide (Brill, 2013) ; source des chiffres demographiques."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Saamaka désigne l'un des six peuples marrons du Suriname et de la Guyane française, descendants d'Africains enfuis des plantations surinamiennes entre 1690 et 1712. Il se nomme lui-même Saamaka, écrit longtemps Saramaka. Les colons néerlandais l'appelaient aussi Boschnegers, un nom donné à tous les Marrons du pays. Nous ne savons pas avec certitude d'où vient le nom Saamaka ; une explication est présentée plus bas.",
+    "names": [
+      {
+        "nameText": "Saamaka",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "srm",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple marron se donne dans ses documents officiels ; il s'écrivait Saramaka.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom Saamaka désigne l'un des six peuples marrons du Suriname et de Guyane, qui compte aujourd'hui environ 120 000 personnes avec les cinq autres, selon l'anthropologue Richard Price. La plupart de ses ancêtres, nés en Afrique, se sont enfuis des plantations surinamiennes entre 1690 et 1712. On ne sait pas avec certitude d'où vient le nom ; l'explication connue est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Peuple Saramaka contre État du Suriname : combat pour la forêt et les droits de l'homme",
+                "author": "Richard Price",
+                "year": 2012,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers19-10/010057453.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7, note 2, et p. 20",
+                "notes": "IRD, Karthala et CIRESC, collection « Esclavages », 2012, traduction française. Lu le 12 octobre 2026 sur la base documentaire de l'IRD. Les numéros de page sont ceux des en-têtes du PDF."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Saamaka apparaît dans le livre que Richard Price publie en 2012, Peuple Saramaka contre État du Suriname : les gens connus jusqu'ici sous le nom de Saramaka y commencent à se désigner eux-mêmes, dans leurs documents officiels, comme Saamaka. Le livre date ce changement du « milieu des années 2010 », ce qui ne peut pas être exact pour un livre de 2012 ; nous ne connaissons donc pas sa date. C'est la plus ancienne trace de cette forme que le projet connaît. Le peuple existait déjà avant elle.",
+            "birth": true,
+            "formAsWritten": "Saamaka",
+            "sources": [
+              {
+                "title": "Peuple Saramaka contre État du Suriname : combat pour la forêt et les droits de l'homme",
+                "author": "Richard Price",
+                "year": 2012,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers19-10/010057453.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7, note 2",
+                "notes": "IRD, Karthala et CIRESC, collection « Esclavages », 2012, traduction française. Lu le 12 octobre 2026 sur la base documentaire de l'IRD. Les numéros de page sont ceux des en-têtes du PDF."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1690,
+              "to": 1712,
+              "label": "Entre 1690 et 1712"
+            },
+            "statement": "On parle alors de gens d'une même plantation pour désigner les fugitifs réfugiés dans la forêt : les premiers groupes gardent le nom de leur plantation pour base de leur identité, comme les Matjáu, les Nasí ou les Dómbi, selon Richard Price. Ces groupes sont à l'origine des clans que les Saamaka comptent aujourd'hui.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Peuple Saramaka contre État du Suriname : combat pour la forêt et les droits de l'homme",
+                "author": "Richard Price",
+                "year": 2012,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers19-10/010057453.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18-19, et p. 20",
+                "notes": "IRD, Karthala et CIRESC, collection « Esclavages », 2012, traduction française. Lu le 12 octobre 2026 sur la base documentaire de l'IRD. Les numéros de page sont ceux des en-têtes du PDF."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Saramaka",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'ancienne graphie du nom, tirée du fleuve Saramacca ; on la trouve dès 1770 sous une forme proche.",
+        "periodLabel": "Écrit depuis 1770 ; encore employé",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Saramaka reste celui sous lequel on connaissait ce peuple avant le changement d'écriture des années 2010, selon Richard Price. Nous ne savons pas dire avec certitude jusqu'à quand il a servi dans les écrits officiels.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Peuple Saramaka contre État du Suriname : combat pour la forêt et les droits de l'homme",
+                "author": "Richard Price",
+                "year": 2012,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers19-10/010057453.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7, note 2",
+                "notes": "IRD, Karthala et CIRESC, collection « Esclavages », 2012, traduction française. Lu le 12 octobre 2026 sur la base documentaire de l'IRD. Les numéros de page sont ceux des en-têtes du PDF."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1770,
+              "to": 1770,
+              "label": "1770"
+            },
+            "statement": "Le nom Saramaka apparaît sous une forme proche, « Saramecaansche Negers », chez Jan Jacob Hartsinck, dans sa Beschryving van Guiana publiée à Amsterdam en 1770. Il y décrit ces Marrons comme des descendants d'esclaves enfuis du temps des Anglais, installés dans la forêt le long des rivières Suriname, Saramacca et Copename. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "formAsWritten": "Saramecaansche Negers",
+            "sources": [
+              {
+                "title": "Beschryving van Guiana, of de wildekust, in Zuid-America, tome II",
+                "author": "Jan Jacob Hartsinck",
+                "year": 1770,
+                "url": "https://archive.org/details/beschryvingvangu02hart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 749",
+                "notes": "Amsterdam, Gerrit Tielenburg, 1770. Lu dans l'exemplaire numérisé sur archive.org le 12 octobre 2026 ; le s long de l'imprimé est transcrit s, et les numéros de page sont lus sur la reconnaissance de texte de la numérisation, qui les abîme parfois."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1861,
+              "to": 1861,
+              "label": "Rapportée en 1861"
+            },
+            "statement": "Le nom Saramaka serait lié au fleuve Saramacca, où vivaient ces Marrons quand la paix fut signée en 1762, selon l'historien Julien Wolbers. Établis ensuite sur le haut Suriname, ils restèrent connus sous le nom de Saramacca-negers, écrit-il.",
+            "hypothesisGroup": "origine du nom Saramaka",
+            "sources": [
+              {
+                "title": "Geschiedenis van Suriname",
+                "author": "Julien Wolbers",
+                "year": 1861,
+                "url": "https://www.gutenberg.org/ebooks/56257",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 158",
+                "notes": "Préface datée d'Utrecht, septembre 1861. Lu dans l'édition numérique du Projet Gutenberg le 12 octobre 2026. Les numéros de page de l'original n'y sont pas imprimés : la page est comptée à partir du repère p. 154 déjà cité pour le passage sur Auka."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bush Negroes",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "eng",
+        "namedBy": null,
+        "shortLine": "Le nom donné par les colons à tous les Marrons du Suriname, en néerlandais Boschnegers.",
+        "periodLabel": "Écrit depuis 1770 ; encore rencontré",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bush Negroes, en néerlandais Bos Negers, désigne ensemble les six peuples marrons du Suriname, dont les Saramaka, selon l'anthropologue Diane Vernon. On dit aussi Noirs Marrons en français et Busi Nengee en ndjuka.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les représentations du corps chez les Noirs Marrons Ndjuka du Surinam et de la Guyane française",
+                "author": "Diane Vernon",
+                "year": 1992,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_2/etudes_theses/36991.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10",
+                "notes": "Paris, Éditions de l'ORSTOM, collection Études et thèses ; texte lu le 12 octobre 2026 sur la base documentaire de l'IRD."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1770,
+              "to": 1770,
+              "label": "1770"
+            },
+            "statement": "Le nom Bush Negroes apparaît sous une forme proche, le néerlandais « Boschnegers », chez Jan Jacob Hartsinck en 1770 : l'auteur parle des Marrons dont le nombre était estimé à cinq ou six mille quelques années plus tôt. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il désigne existaient déjà avant lui.",
+            "birth": true,
+            "formAsWritten": "Boschnegers",
+            "sources": [
+              {
+                "title": "Beschryving van Guiana, of de wildekust, in Zuid-America, tome II",
+                "author": "Jan Jacob Hartsinck",
+                "year": 1770,
+                "url": "https://archive.org/details/beschryvingvangu02hart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 751",
+                "notes": "Amsterdam, Gerrit Tielenburg, 1770. Lu dans l'exemplaire numérisé sur archive.org le 12 octobre 2026 ; le s long de l'imprimé est transcrit s, et les numéros de page sont lus sur la reconnaissance de texte de la numérisation, qui les abîme parfois."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
