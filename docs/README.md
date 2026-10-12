@@ -43,6 +43,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Source tier rulings](editorial/source-review/README.md)
 - [Sources écrites par l'IA — lots d'octobre 2026](editorial/source-review/ai-source-batches-2026-10.md)
 - [Colonial periods](editorial/strategy/colonial-periods.md)
+- [Name history: the long tail, wave by wave](editorial/strategy/name-history-long-tail-waves.md)
 - [Name-history priority core](editorial/strategy/name-history-priority-core.md)
 - [Name-history timeline (decided 2026-10-08)](editorial/strategy/name-history-timeline-2026-10-08.md)
 - [Funding presentation — October 2026](editorial/strategy/presentation-2026-10/README.md)
