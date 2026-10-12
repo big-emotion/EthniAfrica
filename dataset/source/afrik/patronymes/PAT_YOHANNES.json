@@ -100,5 +100,64 @@
       "fieldPath": "bearers",
       "reason": "Les recherches biographiques sur « Yohannes » dans les résultats de catalogues et répertoires consultés n'ont pas permis d'identifier un porteur décédé dont ce segment soit explicitement documenté dans la position patronymique pertinente. Les personnes vivantes repérées ont été exclues."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Yohannes est un nom de personne d'Éthiopie et d'Érythrée, l'équivalent de Jean. Il ne s'y transmet pas comme un nom de famille ; il n'en est devenu un qu'aux États-Unis, selon un dictionnaire des noms de famille. Une forme proche, ዮሐንስ, en écriture guèze, apparaît par écrit en 1865 dans un dictionnaire du guèze.",
+    "names": [
+      {
+        "nameText": "Yohannes",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne d'Éthiopie et d'Érythrée, l'équivalent de Jean ; pas un nom de famille héréditaire.",
+        "periodLabel": "Écrit ዮሐንስ dès 1865 ; donné aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Yohannes est un nom de personne éthiopien et érythréen, l'équivalent de Jean, selon le Dictionary of American Family Names. Les Éthiopiens et les Érythréens n'ont pas de nom de famille héréditaire : Yohannes n'est devenu un nom de famille qu'aux États-Unis, quand des personnes qui le portaient y ont été enregistrées.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2nd ed. — Yohannes (Ancestry)",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/yohannes",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 11 octobre 2026. La notice dit : éthiopien et érythréen, du nom de personne Yohannes, équivalent de John ; les Éthiopiens et les Érythréens n'ayant pas de nom de famille héréditaire, ce nom n'a été enregistré comme tel qu'après l'émigration de ses porteurs aux États-Unis. Elle signale aussi une forme américaine de l'allemand Johannes, sans lien avec ce nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1865,
+              "to": 1865,
+              "label": "1865"
+            },
+            "statement": "Le nom Yohannes apparaît par écrit sous une forme proche, ዮሐንስ, en écriture guèze, dans le dictionnaire du guèze d'August Dillmann, qui la traduit par Johannes, c'est-à-dire Jean. Dillmann la donne parmi les noms propres, comme le nom de plusieurs patriarches d'Alexandrie et d'un roi d'Éthiopie du XVIIe siècle. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "ዮሐንስ",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Lexicon linguae aethiopicae",
+                "author": "August Dillmann",
+                "year": 1865,
+                "url": "https://archive.org/details/lexiconlinguaeae00dilluoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "col. 1421",
+                "notes": "Leipzig, T. O. Weigel, 1865. Lu le 12 octobre 2026 sur l'exemplaire numérisé d'archive.org (bibliothèque de l'université de Toronto), image n734. Le dictionnaire est imprimé en colonnes ; la colonne 1421 appartient à la liste des noms propres, rangée par lettre. Entrée « ዮሐንስ፡ Johannes », suivie des patriarches d'Alexandrie de ce nom, d'un roi d'Éthiopie du XVIIe siècle et de Yohannes Kama, « niger ». Dillmann ne dit pas ce que veut dire le nom."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

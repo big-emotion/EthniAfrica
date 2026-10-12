@@ -11,7 +11,10 @@
     {
       "spelling": "Thabane",
       "attestations": [
-        { "countryId": "LSO", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "LSO",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -75,5 +78,75 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Thabane est un nom de famille porté au Lesotho. Il est écrit dès 1906 dans un rapport sur les écoles du Basutoland, l'ancien nom du Lesotho. On ne sait pas avec certitude d'où vient ce nom ni ce qu'il veut dire : le projet n'a pas trouvé de source qui l'explique.",
+    "names": [
+      {
+        "nameText": "Thabane",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille écrit dès 1906 au Basutoland, l'actuel Lesotho.",
+        "periodLabel": "Écrit dès 1906 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Thabane est un nom de famille, porté après le prénom. Les sources que le projet a lues ne disent ni d'où il vient ni ce qu'il veut dire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Report on Education in Basutoland, 1905-6",
+                "author": "E. B. Sargant",
+                "year": 1906,
+                "url": "https://archive.org/details/reportoneducati00sarggoog",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 124 et 170",
+                "notes": "Rapport du conseiller pour l'éducation, Londres, Longmans, Green, 1906. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 124 : à l'école de Masianokeng, sur la route de Mafeteng à Maseru, le personnel compte Ezekiel Thabane. Page 170 : à l'école de la mission que dirige M. Dieterlen, à une heure au nord de Hlotse, seuls Bonolo Motsamai et Louisa Thabane font encore la classe. Rapport de l'administration coloniale, cité ici pour la forme qu'il écrit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Thabane apparaît par écrit dans le rapport sur l'enseignement au Basutoland publié en 1906 par E. B. Sargant. Il le donne à Ezekiel Thabane, qui fait partie du personnel de l'école de Masianokeng, et à Louisa Thabane, qui fait la classe dans une école de mission au nord de Hlotse. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est porté.",
+            "formAsWritten": "Thabane",
+            "birth": true,
+            "actors": [
+              {
+                "name": "E. B. Sargant",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Ezekiel Thabane",
+                "role": "porte ce nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Report on Education in Basutoland, 1905-6",
+                "author": "E. B. Sargant",
+                "year": 1906,
+                "url": "https://archive.org/details/reportoneducati00sarggoog",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 124 et 170",
+                "notes": "Rapport du conseiller pour l'éducation, Londres, Longmans, Green, 1906. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 124 : à l'école de Masianokeng, sur la route de Mafeteng à Maseru, le personnel compte Ezekiel Thabane. Page 170 : à l'école de la mission que dirige M. Dieterlen, à une heure au nord de Hlotse, seuls Bonolo Motsamai et Louisa Thabane font encore la classe. Rapport de l'administration coloniale, cité ici pour la forme qu'il écrit."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

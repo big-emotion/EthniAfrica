@@ -14,9 +14,10 @@
         "Bissago",
         "Bidjogo",
         "Bijagós",
-        "Bijago (français)"
+        "Bijago (français)",
+        "Bugago"
       ],
-      "originOfExonyms": "Le terme Bijago (ou Bijagós) est d'usage portugais, utilise depuis les premiers contacts europeens au 15e siecle. Le nom Bidyogo est la forme vernaculaire en langue bidyogo. Le terme Bissago, utilise par les marins portugais, designe a la fois le peuple et l'archipel. L'archipel est appele Bijagós en portugais (Arquipelago dos Bijagós) et Iles Bissagos en français.",
+      "originOfExonyms": "Le terme Bijago (ou Bijagós) est d'usage portugais, utilise depuis les premiers contacts europeens au 15e siecle. Le nom Bidyogo est la forme vernaculaire en langue bidyogo. Le terme Bissago, utilise par les marins portugais, designe a la fois le peuple et l'archipel. L'archipel est appele Bijagós en portugais (Arquipelago dos Bijagós) et Iles Bissagos en français. Bugago est une autre forme du nom, donnée par Joshua Project et par les catalogues de langues que cite Glottolog.",
       "whyProblematic": "Le bijago a été classé à tort parmi les langues tchadiques. Il appartient aux langues atlantiques du Niger-Congo et présente des liens avec le groupe Bak. Confondre ces familles donne une image inexacte de la langue parlée par les Bidyogo.",
       "contemporaryUsage": "Le terme Bidyogo est utilise par le groupe lui-meme et dans la litterature scientifique francophone. Bijago est la forme internationale et portugaise. En Guinee-Bissau, la langue est la plus importante de l'archipel dans les zones rurales, meme si le creole guineen (Kriol) est devenu dominant en milieu urbain et scolaire depuis les annees 1990. Le bijago n'est pas enseigne dans les ecoles.",
       "linguisticFamily": "FLG_ATLANTIQUE",
@@ -126,6 +127,254 @@
         "title": "Kumakonda African Travel — Bijagos Islands matriarchal society",
         "url": "https://kumakonda.com/bijagos-islands-in-guinea-bissau-where-women-rule/",
         "tier": "unverified"
+      },
+      {
+        "title": "Joshua Project – Bijogo in Guinea-Bissau",
+        "url": "https://joshuaproject.net/people_groups/10838",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      },
+      {
+        "title": "Minority Rights Group – Guinea-Bissau country profile, 2024",
+        "url": "https://minorityrights.org/country/guinea-bissau/",
+        "tier": "referenced",
+        "source_kind": "ngo"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bidyogo désigne le peuple de l'archipel des Bijagós, en Guinée-Bissau, qui se nomme lui-même Bidyogo ou Bijogo. D'autres noms existent : Bijagó en portugais, Bissagos en français. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Bidyogo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple emploie pour lui-même ; une forme proche est écrite en 1854.",
+        "periodLabel": "Écrit depuis 1854 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2002,
+              "to": 2002,
+              "label": "Livre publié en 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Bidyogo, écrit aussi Bijogo, est celui que les habitants des îles Bijagós emploient pour eux-mêmes et pour leur langue, en alternance avec le mot portugais Bijagó, selon le linguiste Guillaume Segerer.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La langue bijogo de Bubaque (Guinée-Bissau)",
+                "author": "Guillaume Segerer",
+                "year": 2002,
+                "url": "http://www.guillaumesegerer.fr/Ling/Documents/Pub/Segerer_2002-bijogo.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 12",
+                "notes": "Louvain et Paris, Peeters, 2002, collection Afrique et Langage, 3. Lu dans le texte que l'auteur met en ligne sur son site le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2002,
+              "to": 2002,
+              "label": "Proposée en 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Bidyogo serait la forme que le nom portugais Bijagó a prise en kriol, le créole de Guinée-Bissau, selon Guillaume Segerer, qui avance cette idée avec prudence.",
+            "hypothesisGroup": "origine du nom Bidyogo",
+            "sources": [
+              {
+                "title": "La langue bijogo de Bubaque (Guinée-Bissau)",
+                "author": "Guillaume Segerer",
+                "year": 2002,
+                "url": "http://www.guillaumesegerer.fr/Ling/Documents/Pub/Segerer_2002-bijogo.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 12",
+                "notes": "Louvain et Paris, Peeters, 2002, collection Afrique et Langage, 3. Lu dans le texte que l'auteur met en ligne sur son site le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Une forme proche du nom Bidyogo, Bidṣṓgo, coiffe en 1854 deux listes de mots de la Polyglotta Africana du linguiste Sigismund Koelle, l'une de l'île d'Ánkāras, l'autre de l'île de Wūn. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple vivait déjà dans les îles avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite. Remarques placées sous les parlers « (Bidṣṓgo) Án·kāras » et « (Bidṣṓgo) Wūn » des sections XII-A-a-2a et XII-A-a-2b."
+              },
+              {
+                "title": "La langue bijogo de Bubaque (Guinée-Bissau)",
+                "author": "Guillaume Segerer",
+                "year": 2002,
+                "url": "http://www.guillaumesegerer.fr/Ling/Documents/Pub/Segerer_2002-bijogo.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 14",
+                "notes": "Louvain et Paris, Peeters, 2002, collection Afrique et Langage, 3. Lu dans le texte que l'auteur met en ligne sur son site le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bijogo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre graphie du nom Bidyogo, celle qu'emploie Guillaume Segerer.",
+        "periodLabel": "En usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2002,
+              "to": 2002,
+              "label": "Livre publié en 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Bijogo est la graphie que choisit Guillaume Segerer pour le peuple et pour sa langue ; il relève aussi les variantes bijugu et bujugu.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La langue bijogo de Bubaque (Guinée-Bissau)",
+                "author": "Guillaume Segerer",
+                "year": 2002,
+                "url": "http://www.guillaumesegerer.fr/Ling/Documents/Pub/Segerer_2002-bijogo.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 12-13",
+                "notes": "Louvain et Paris, Peeters, 2002, collection Afrique et Langage, 3. Lu dans le texte que l'auteur met en ligne sur son site le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bijagó",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "por",
+        "namedBy": "Les Portugais",
+        "shortLine": "Le nom portugais des îles et de leurs habitants ; écrit dès 1594.",
+        "periodLabel": "Écrit depuis 1594 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2002,
+              "to": 2002,
+              "label": "Livre publié en 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Bijagó désigne en portugais les îles, leurs habitants et leur langue, selon Guillaume Segerer ; c'est le seul nom employé pour les îles. On ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La langue bijogo de Bubaque (Guinée-Bissau)",
+                "author": "Guillaume Segerer",
+                "year": 2002,
+                "url": "http://www.guillaumesegerer.fr/Ling/Documents/Pub/Segerer_2002-bijogo.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 12",
+                "notes": "Louvain et Paris, Peeters, 2002, collection Afrique et Langage, 3. Lu dans le texte que l'auteur met en ligne sur son site le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1594,
+              "to": 1594,
+              "label": "Texte daté de 1594"
+            },
+            "era": "polity",
+            "statement": "Le nom Bijagó apparaît par écrit, au pluriel Bijagós, dans le Tratado breve dos rios de Guiné d'André Álvares de Almada : il nomme ainsi les îles situées au sud du rio Grande et le peuple qui les habite. C'est la plus ancienne trace de ce nom que le projet connaît. Les habitants des îles vivaient déjà là avant elle.",
+            "formAsWritten": "Bijagós",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tratado breve dos rios de Guiné do Cabo-Verde",
+                "author": "André Álvares de Almada",
+                "year": 1841,
+                "url": "https://archive.org/details/tratadobrevedosr00alma",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 53-54",
+                "notes": "Texte daté de 1594, publié pour la première fois à Porto en 1841 par Diogo Köpke. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1456,
+              "to": 1456,
+              "label": "1456"
+            },
+            "era": "polity",
+            "statement": "Le nom Bijagó n'est pas encore écrit quand le navigateur Alvise Ca' da Mosto approche l'archipel : il voit deux grandes îles habitées, mais ne peut pas parler avec leurs habitants, selon Guillaume Segerer.",
+            "before": true,
+            "sources": [
+              {
+                "title": "La langue bijogo de Bubaque (Guinée-Bissau)",
+                "author": "Guillaume Segerer",
+                "year": 2002,
+                "url": "http://www.guillaumesegerer.fr/Ling/Documents/Pub/Segerer_2002-bijogo.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "notes": "Louvain et Paris, Peeters, 2002, collection Afrique et Langage, 3. Lu dans le texte que l'auteur met en ligne sur son site le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bissagos",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Le nom français de l'archipel ; une forme proche est écrite à la fin du XVIIe siècle.",
+        "periodLabel": "Fin du XVIIe siècle à aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1700,
+              "label": "Fin du XVIIe siècle"
+            },
+            "statement": "Une forme proche du nom Bissagos, Bizagots, figure dans le titre d'un dictionnaire français des langues de la concession de la Compagnie royale du Sénégal ; la partie consacrée à cette langue est perdue, selon Guillaume Segerer. C'est la plus ancienne trace de ce nom que le projet connaît. Les habitants des îles vivaient déjà là avant elle.",
+            "formAsWritten": "Bizagots",
+            "birth": true,
+            "sources": [
+              {
+                "title": "La langue bijogo de Bubaque (Guinée-Bissau)",
+                "author": "Guillaume Segerer",
+                "year": 2002,
+                "url": "http://www.guillaumesegerer.fr/Ling/Documents/Pub/Segerer_2002-bijogo.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 14, note 5",
+                "notes": "Louvain et Paris, Peeters, 2002, collection Afrique et Langage, 3. Lu dans le texte que l'auteur met en ligne sur son site le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

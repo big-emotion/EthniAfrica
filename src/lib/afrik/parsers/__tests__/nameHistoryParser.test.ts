@@ -278,6 +278,28 @@ describe("parseNameHistory", () => {
   });
 
   // @req REQ-196
+  it("keeps a block's statement that no source gives the self-name", () => {
+    const parsed = parseNameHistory({
+      ...nameHistory(),
+      selfNameUnknown: true,
+    });
+
+    expect(parsed.errors).toEqual([]);
+    expect(parsed.data!.selfNameUnknown).toBe(true);
+  });
+
+  // @req REQ-196
+  it("refuses selfNameUnknown set to anything but true", () => {
+    const parsed = parseNameHistory({
+      ...nameHistory(),
+      selfNameUnknown: false,
+    });
+
+    expect(parsed.success).toBe(false);
+    expect(parsed.errors.join("\n")).toMatch(/selfNameUnknown/);
+  });
+
+  // @req REQ-196
   it("refuses an era outside polity, colonial and modern", () => {
     const parsed = parseNameHistory(
       nameHistory([account({ era: "precolonial" })])

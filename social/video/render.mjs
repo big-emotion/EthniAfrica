@@ -11,12 +11,13 @@ import { PAGE_HTML } from "./page.mjs";
 import {
   IMAGERY,
   FPS,
-  TOTAL_FRAMES,
   WIDTH,
   HEIGHT,
   VIEW_CENTRE,
   RELIEF,
   frameState,
+  frameCount,
+  holdCameras,
   project,
   unproject,
   tiltedCamera,
@@ -31,6 +32,7 @@ const FONTS = [
   "Fraunces.ttf",
   "NunitoSans.ttf",
   "NotoSans-Variable.ttf",
+  "NotoSansArabic-SemiBold.ttf",
 ];
 // SwiftShader keeps WebGL on the CPU, so the same frame gives the same pixels
 // on a given machine regardless of the GPU.
@@ -64,18 +66,18 @@ async function engineHash() {
   return sha256(Buffer.concat(parts));
 }
 
-// Geographic bounds of the map the final camera shows, so the full
-// resolution crop covers the hold with a margin. Rows under the title scrim
+// Geographic bounds of the map every hold camera shows, so the full
+// resolution crop covers each hold with a margin. Rows under the title scrim
 // and the bottom veil are left out: a tilted view would otherwise reach the
 // horizon and spread the crop over ground nobody can read.
 function holdBounds(seq) {
-  const { camera } = frameState(seq, TOTAL_FRAMES - 1);
   const hits = [];
-  for (let x = 0; x <= WIDTH; x += WIDTH / 12)
-    for (let y = 200; y <= 1300; y += 50) {
-      const ground = unproject(camera, x, y);
-      if (ground) hits.push(ground);
-    }
+  for (const camera of holdCameras(seq))
+    for (let x = 0; x <= WIDTH; x += WIDTH / 12)
+      for (let y = 200; y <= 1300; y += 50) {
+        const ground = unproject(camera, x, y);
+        if (ground) hits.push(ground);
+      }
   if (!hits.length) return [-180, 180, -90, 90];
   const lons = hits.map((g) => g.lon);
   const lats = hits.map((g) => g.lat);
@@ -255,21 +257,41 @@ const rings = (g) =>
 
 const featureInk = (f) => (f.kind === "area" ? INKS[f.ink] : WATER_INK);
 
+// A chained video highlights its subject in the accent, as on board 7: its
+// chapters draw different features, so no single ink would hold throughout.
+const ACCENT = "#e8b96a";
+
 function titleParts(seq) {
-  const subject = seq.features.find((f) => f.plate) ?? seq.features[0];
-  const [text, feature] = seq.highlight
-    ? [
-        seq.highlight.text,
-        seq.features.find((f) => f.id === seq.highlight.feature),
-      ]
-    : [subject?.name, subject];
+  let text;
+  let colour = ACCENT;
+  if (seq.chapters) text = seq.highlight?.text;
+  else {
+    const subject = seq.features.find((f) => f.plate) ?? seq.features[0];
+    const feature = seq.highlight
+      ? seq.features.find((f) => f.id === seq.highlight.feature)
+      : subject;
+    text = seq.highlight ? seq.highlight.text : subject?.name;
+    colour = feature && featureInk(feature);
+  }
   const at = text ? seq.title.lastIndexOf(text) : -1;
   if (at < 0) return [{ text: seq.title }];
   return [
     { text: seq.title.slice(0, at) },
-    { text, colour: featureInk(feature) },
+    { text, colour },
     { text: seq.title.slice(at + text.length) },
   ].filter((p) => p.text);
+}
+
+function legendSwatch(item, content) {
+  if (item.name) return content.names.find((n) => n.name === item.name).kind;
+  if (item.place) return "place";
+  if (item.outline) return "outline";
+  const f = content.features.find((x) => x.id === item.feature);
+  return f.kind === "area"
+    ? `${f.certainty}-${f.ink}`
+    : f.kind === "border"
+      ? `border-${f.strength}`
+      : "river";
 }
 
 function labelStyle(f) {
@@ -303,10 +325,11 @@ function reliefLight(seq) {
 }
 
 // Draped overlays live in the region's own map: longitude scaled by the
-// cosine of the middle latitude, in screen pixels of the hold.
-function drapeFrame(seq, bounds) {
+// cosine of the middle latitude, in screen pixels of the hold that shows
+// them, so strokes keep their design width at every hold.
+function drapeFrame(radius, bounds) {
   const [lonMin, lonMax, latMin, latMax] = bounds;
-  const ppd = (seq.camera.at(-1).radius * Math.PI) / 180;
+  const ppd = (radius * Math.PI) / 180;
   const cosLat = Math.cos((((latMin + latMax) / 2) * Math.PI) / 180);
   const width = (lonMax - lonMin) * cosLat * ppd;
   const height = (latMax - latMin) * ppd;
@@ -322,31 +345,61 @@ function drapeFrame(seq, bounds) {
   };
 }
 
+const NO_CONTENT = { features: [], names: [], places: [], legend: [] };
+
 function payload(seq, frame, relief) {
   const state = frameState(seq, frame);
   const { camera } = state;
-  const of = (kind) => seq.features.filter((f) => f.kind === kind);
+  // A chained video draws the current chapter; its ending draws no map.
+  const content = seq.chapters
+    ? (seq.chapters[state.chapter] ?? NO_CONTENT)
+    : seq;
+  const features = content.features ?? [];
+  const of = (kind) => features.filter((f) => f.kind === kind);
   const raise = (lon, lat) =>
     (relief.heightAt(lon, lat) * RELIEF.exaggeration) / EARTH_RADIUS_M;
   const place = relief
     ? (lon, lat) => project(camera, lon, lat, raise(lon, lat))
     : (lon, lat) => project(camera, lon, lat);
-  const draw = relief ? relief.drape.place : place;
+  const drape = relief?.drapes[Math.max(state.chapter ?? 0, 0)];
+  const draw = relief ? drape.place : place;
+  const outline = content.outline;
   return {
     centre: VIEW_CENTRE,
     camera,
     grade: state.grade,
-    demo: !!seq.demo,
+    dim: state.dim ?? 0,
+    tape: seq.demo
+      ? outline?.illustrative
+        ? "Texte illustratif · contour de synthèse"
+        : "Texte illustratif"
+      : null,
     relief: relief && {
       view: tiltedCamera(camera),
       exaggeration: RELIEF.exaggeration,
       ...relief.light,
       drape: {
-        width: relief.drape.width,
-        height: relief.drape.height,
-        scale: relief.drape.scale,
+        width: drape.width,
+        height: drape.height,
+        scale: drape.scale,
       },
     },
+    outline: outline &&
+      state.outline && {
+        d:
+          outline.geometry.type === "Polygon"
+            ? outline.geometry.coordinates
+                .map((ring) => linePath(draw, ring, true))
+                .join("")
+            : linePath(draw, outline.geometry.coordinates),
+        closed: outline.geometry.type === "Polygon",
+        opacity: state.outline.opacity,
+        label: {
+          name: outline.name,
+          opacity: state.outline.label,
+          ...place(...outline.labelAt),
+        },
+      },
     areas: of("area").map((f) => ({
       d: rings(f.geometry)
         .map((ring) => linePath(draw, ring, true))
@@ -366,7 +419,7 @@ function payload(seq, frame, relief) {
       d: linePath(draw, f.geometry.coordinates),
       state: state.features[f.id],
     })),
-    labels: seq.features
+    labels: features
       .filter((f) => f.kind !== "border")
       .map((f) => ({
         name: f.name,
@@ -375,37 +428,49 @@ function payload(seq, frame, relief) {
         opacity: state.labels[f.id],
         ...place(...f.labelAt),
       })),
-    names: (seq.names ?? []).map((n) => ({
+    names: (content.names ?? []).map((n) => ({
       name: n.name,
       style: n.kind,
       opacity: state.names[n.name],
       ...place(n.lon, n.lat),
     })),
-    places: (seq.places ?? []).map((p) => ({
+    places: (content.places ?? []).map((p) => ({
       name: p.name,
       side: p.side,
       opacity: state.places[p.name],
       ...place(p.lon, p.lat),
     })),
+    head: {
+      signature: state.text.signature,
+      title: state.text.title,
+      titleSize: seq.chapters ? 72 : 76,
+    },
     title: titleParts(seq),
-    legend: seq.legend.map((item, i) => {
-      const f = seq.features.find((x) => x.id === item.feature);
+    marker: state.marker ?? null,
+    subtitle: state.subtitle ?? null,
+    closing: state.closing ?? null,
+    legend: content.legend.map((item, i) => {
+      const f = item.feature && features.find((x) => x.id === item.feature);
       return {
         label: item.label,
         opacity: state.legend[i],
-        swatch:
-          f.kind === "area"
-            ? `${f.certainty}-${f.ink}`
-            : f.kind === "border"
-              ? `border-${f.strength}`
-              : "river",
-        colour: f.kind === "area" ? INKS[f.ink] : "#f3e9da",
+        swatch: legendSwatch(item, content),
+        colour: f?.kind === "area" ? INKS[f.ink] : "#f3e9da",
       };
     }),
-    caption: captionLines(seq).map((line) => {
-      const at = line.indexOf(" : ");
-      return [line.slice(0, at), line.slice(at + 3)];
-    }),
+    caption: seq.chapters
+      ? [
+          ...state.caption.lines,
+          { label: "Imagerie", text: state.caption.imagery, opacity: 1 },
+        ]
+      : captionLines(seq).map((line) => {
+          const at = line.indexOf(" : ");
+          return {
+            label: line.slice(0, at),
+            text: line.slice(at + 3),
+            opacity: 1,
+          };
+        }),
   };
 }
 
@@ -437,17 +502,18 @@ async function openRenderer(seq, assets) {
           heights[key].data.byteLength
         ),
       ]);
-    const ppd = (seq.camera.at(-1).radius * Math.PI) / 180;
+    const holds = holdCameras(seq);
+    const closest = Math.max(...holds.map((c) => c.radius));
     relief = {
       hash: heights.hash,
       heightAt: heightSampler(imagery.bounds, heights),
       light: reliefLight(seq),
-      drape: drapeFrame(seq, imagery.bounds),
+      drapes: holds.map((c) => drapeFrame(c.radius, imagery.bounds)),
       setup: {
         world: [heights.world.width, heights.world.height],
         region: [heights.region.width, heights.region.height],
-        // About three screen pixels per mesh cell at the hold.
-        meshStep: 3 / ppd,
+        // About three screen pixels per mesh cell at the closest hold.
+        meshStep: (3 * 180) / (closest * Math.PI),
         exaggeration: RELIEF.exaggeration,
       },
     };
@@ -484,15 +550,21 @@ async function openRenderer(seq, assets) {
     );
     if (fonts.some((f) => f.status !== "loaded"))
       throw new Error("A required font is not loaded");
+    const last = frameCount(seq) - 1;
     const render = async (frame) => {
+      const state = frameState(seq, frame);
       const boxes = await page.evaluate(
         (f) => window.drawFrame(f),
         payload(seq, frame, relief)
       );
-      if (frame === TOTAL_FRAMES - 1) {
+      // The glyph boxes are checked on every hold: the last frame, and every
+      // fully drawn chapter of a chained video.
+      if (frame === last || state.subtitle?.opacity === 1) {
         const problems = checkLayout({ elements: boxes });
         if (problems.length)
-          throw new Error(`Hold layout: ${problems.join("; ")}`);
+          throw new Error(
+            `Hold layout at frame ${frame}: ${problems.join("; ")}`
+          );
       }
       return page.screenshot({ type: "png", animations: "disabled" });
     };
@@ -509,14 +581,23 @@ async function openRenderer(seq, assets) {
   }
 }
 
-export async function renderFrame(seq, frame, { assets }) {
-  frameState(seq, frame);
+// Several frames in one browser session: a relief setup costs more than a
+// frame, so proofs and tests ask for their key frames together.
+export async function renderFrames(seq, frames, { assets }) {
+  frames.forEach((frame) => frameState(seq, frame));
   const renderer = await openRenderer(seq, assets);
   try {
-    return await renderer.render(frame);
+    const pngs = [];
+    for (const frame of frames) pngs.push(await renderer.render(frame));
+    return pngs;
   } finally {
     await renderer.close();
   }
+}
+
+export async function renderFrame(seq, frame, options) {
+  const [png] = await renderFrames(seq, [frame], options);
+  return png;
 }
 
 export async function encodeVideo(seq, outDir, { assets }) {
@@ -570,7 +651,7 @@ export async function encodeVideo(seq, outDir, { assets }) {
         code === 0 ? ok() : ko(new Error(`FFmpeg failed: ${stderr}`))
       )
     );
-    for (let f = 0; f < TOTAL_FRAMES; f++) {
+    for (let f = 0; f < frameCount(seq); f++) {
       const png = await renderer.render(f);
       if (!ffmpeg.stdin.write(png))
         await new Promise((ok) => ffmpeg.stdin.once("drain", ok));
@@ -587,7 +668,7 @@ export async function encodeVideo(seq, outDir, { assets }) {
     width: WIDTH,
     height: HEIGHT,
     fps: FPS,
-    frames: TOTAL_FRAMES,
+    frames: frameCount(seq),
     demo: !!seq.demo,
     // Mechanical export only: editorial approvals live in the checkpoint.
     productionReady: false,

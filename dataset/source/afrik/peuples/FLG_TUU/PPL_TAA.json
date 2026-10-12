@@ -139,6 +139,268 @@
         "url": "https://www.culturalsurvival.org/publications/cultural-survival-quarterly/foragers-first-peoples-kalahari-san-today",
         "tier": "referenced",
         "source_kind": "ngo"
+      },
+      {
+        "title": "Glottolog — West !Xoon",
+        "url": "https://glottolog.org/resource/languoid/id/xooo1239",
+        "tier": "official",
+        "source_kind": "linguistic_reference",
+        "notes": "Lu le 12 octobre 2026. Glottolog classe le West !Xoon comme une langue de la branche Taa, dans la famille Tuu."
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Taa désigne une langue du Botswana et de la Namibie et les gens qui la parlent. Ses locuteurs nomment eux-mêmes leur langue Taa-ǂaan, de taa, « personne », et se donnent par ailleurs des noms de groupe différents. D'autres noms existent : ǃXóõ, chez les linguistes, et Masarwa, un nom tswana appliqué à tous les San du Botswana. Les sources ne s'accordent pas sur l'origine de ce dernier nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Taa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nmn",
+        "namedBy": null,
+        "shortLine": "Le nom que ses locuteurs donnent à leur langue ; taa veut dire « personne ».",
+        "usedIn": ["eng", "nmn"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Taa désigne une langue du Botswana et de la Namibie, aussi appelée ǃXoon ou ǃXóõ, que parlent environ 3 000 personnes, selon le projet de documentation DoBeS. Ses locuteurs se donnent des noms de groupe différents et ne se voient pas forcément comme un seul peuple, mais tous appellent leur langue commune Taa-ǂaan. Nous n'avons pas encore trouvé la plus ancienne trace écrite de ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Taa language",
+                "author": "DoBeS, programme de documentation des langues en danger",
+                "year": null,
+                "url": "https://dobes.mpi.nl/projects/taa/language/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page du projet de documentation du taa, hébergée par l'Institut Max Planck de psycholinguistique ; lue le 11 octobre 2026."
+              },
+              {
+                "title": "Taa : People & Culture",
+                "author": "DoBeS, programme de documentation des langues en danger",
+                "year": null,
+                "url": "https://dobes.mpi.nl/projects/taa/people/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page du projet de documentation du taa, hébergée par l'Institut Max Planck de psycholinguistique ; lue le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Taa est le mot taa, qui veut dire « personne » ou « être humain » dans cette langue ; dans Taa-ǂaan, le nom que ses locuteurs donnent à leur langue, ǂaan veut dire « langue », selon le projet DoBeS.",
+            "sources": [
+              {
+                "title": "Taa : People & Culture",
+                "author": "DoBeS, programme de documentation des langues en danger",
+                "year": null,
+                "url": "https://dobes.mpi.nl/projects/taa/people/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page du projet de documentation du taa, hébergée par l'Institut Max Planck de psycholinguistique ; lue le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "ǃXóõ",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "nmn",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue dans la norme ISO et chez les linguistes.",
+        "usedIn": ["eng", "nmn"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom ǃXóõ est écrit !Xoon par les linguistes Andy Chebanne et Mawande Dlali, qui en font une langue de la famille tuu parlée au Botswana. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The curse of poverty and marginalisation in language development: The case of Khoisan languages of Botswana",
+                "author": "Andy Chebanne et Mawande Dlali",
+                "year": 2019,
+                "url": "http://www.scielo.org.za/scielo.php?script=sci_arttext&pid=S2224-33802019000300012",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Stellenbosch Papers in Linguistics Plus, vol. 58."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "2018"
+            },
+            "era": "modern",
+            "statement": "Le nom ǃXóõ est celui que la norme ISO 639-3 donne à la langue, sous le code nmn ; depuis 2018, elle l'écrit avec le signe du clic ǃ au lieu du point d'exclamation.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, code nmn : ǃXóõ",
+                "author": "SIL International",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/nmn",
+                "tier": "official",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Masarwa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "tsn",
+        "namedBy": "Tswana",
+        "shortLine": "Un nom tswana, souvent méprisant, pour tous les San ; son origine est discutée.",
+        "usedIn": ["tsn", "eng"],
+        "periodLabel": "Écrit dès 1871 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Masarwa sert, surtout chez les locuteurs du setswana, à désigner de façon méprisante les San du nord du Kalahari, selon le Dictionary of South African English. Son origine est discutée : les explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Masarwa »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/masarwa/e04585",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "era": "colonial",
+            "statement": "Le nom Masarwa est, selon l'anthropologue Isaac Schapera, le seul sous lequel on connaît les Bushmen du sud du protectorat du Bechuanaland, au service des Bechuana : ils n'ont pas de nom particulier pour eux-mêmes, écrit-il.",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 33",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1871,
+              "to": 1871,
+              "label": "1871"
+            },
+            "era": "polity",
+            "statement": "Le nom Masarwa apparaît chez J. Mackenzie : les Bechuana du nord appellent ainsi les Bushmen, ceux du sud disent Barwa, selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il désigne vivaient là bien avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Masarwa »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/masarwa/e04585",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Le dictionnaire cite J. Mackenzie, Ten Years North of the Orange River, 1871, p. 128 ; nous n'avons pas lu ce livre nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "Proposée en 1930"
+            },
+            "statement": "Le nom Masarwa viendrait d'une racine que partagent plusieurs langues bantoues, comme dans BaTwa, BaRwa ou MaSarwa, et voudrait dire « gens du sud ». Isaac Schapera rapporte cette explication courante en notant qu'elle ne fait pas l'unanimité.",
+            "hypothesisGroup": "origine du nom Masarwa",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 31",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "Proposée en 1930"
+            },
+            "statement": "Le nom Masarwa viendrait de la même racine bantoue et voudrait plutôt dire « gens de la brousse », une explication qu'Isaac Schapera juge plus vraisemblable.",
+            "hypothesisGroup": "origine du nom Masarwa",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 31",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Proposée en 1928"
+            },
+            "statement": "Le nom Masarwa voudrait dire « abandonnés » : il aurait d'abord désigné les Bechuana eux-mêmes, qui l'auraient ensuite donné à leurs serviteurs comme un titre de mépris, selon E. H. L. Schwarz, cité par le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Masarwa",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Masarwa »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/masarwa/e04585",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          }
+        ]
       }
     ]
   }

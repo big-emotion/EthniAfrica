@@ -76,5 +76,114 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web et bibliographique combinant « Wafula », « Luhya », « Luhyia », « rainy season », « personal name », « surname », « etymology » et « transmission », ainsi que la consultation directe de « A Genealogical Linguistic Implication of the Abaluhyia Naming System » n'ont pas établi de lignée homonyme de Wafula dotée d'une origine distincte et documentable ; la diffusion dans plusieurs pays ne suffit pas à créer un homonyme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Wafula est un nom luhya du Kenya. Chez les Vugusu, on le donne à un garçon né pendant une forte pluie, selon l'anthropologue Günter Wagner. Le nom sert aussi de nom de famille ; les sources ne disent pas depuis quand.",
+    "names": [
+      {
+        "nameText": "Wafula",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom luhya donné à un garçon né pendant une forte pluie, selon une étude de 1949.",
+        "periodLabel": "Écrit dès 1949 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1961,
+              "to": 1961,
+              "label": "Octobre 1961"
+            },
+            "statement": "Le nom Wafula sert de nom de famille à Julius Wafula, un étudiant arrivé de Nairobi, au Kenya, dans le journal étudiant d'un collège de l'Oregon, aux États-Unis.",
+            "formAsWritten": "Wafula",
+            "sources": [
+              {
+                "title": "The Crescent, vol. 73, n° 1",
+                "author": "Dixie Retherford et Fran Whitaker",
+                "year": 1961,
+                "url": "https://archive.org/details/crescent_1961-63",
+                "tier": "unverified",
+                "source_kind": "press",
+                "page": "p. 1",
+                "notes": "Numéro du 6 octobre 1961 de The Crescent, le journal étudiant du George Fox College, à Newberg, dans l'Oregon, aux États-Unis, déposé sur Internet Archive. Relu le 12 octobre 2026. Page 1, un article de Dixie Retherford et Fran Whitaker présente trois étudiants arrivés de Nairobi : « Julius Wafula, Bowers Ukiru, and Andrew Munne », puis écrit « Wafula, father of three children »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1949,
+              "to": 1949,
+              "label": "Décrit en 1949"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wafula est un nom d'enfance que la mère donne à un garçon né pendant une forte pluie, chez les Vugusu, au Kenya. Une fille née dans les mêmes conditions peut s'appeler Nafula, selon l'anthropologue Günter Wagner.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Bantu of North Kavirondo",
+                "author": "Günter Wagner",
+                "year": 1949,
+                "url": "https://archive.org/details/TheBantuOfNorthKavirondo",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "vol. 1, p. 282, 314",
+                "notes": "Londres, Oxford University Press pour l'International African Institute, 1949, vol. 1. Lu le 12 octobre 2026 dans une numérisation déposée sur Internet Archive par un particulier (copie non officielle). Page 314, sur les noms d'enfance que choisit la mère : « Among the Vugusu boys' names frequently take the prefix wa- and girls' names the prefix na- Thus a child who was born during a heavy rain might be named Wafula if a boy and Nafula if a girl ». Page 282 : la pierre appelée « stone of Wafula » ; « Wafula is the spirit for whom, many generations ago, the first sacrificial hut of this kind is said to have been erected ». Auteur de l'époque coloniale, cité ici pour les formes qu'il relève."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1949,
+              "to": 1949,
+              "label": "Décrit en 1949"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wafula est aussi, chez les Vugusu, celui d'un esprit : la pierre posée devant la hutte des sacrifices s'appelle « la pierre de Wafula », car la première hutte de ce genre aurait été bâtie pour lui il y a bien des générations, selon Günter Wagner. Le livre ne dit pas si cet esprit a un lien avec le nom donné aux enfants.",
+            "sources": [
+              {
+                "title": "The Bantu of North Kavirondo",
+                "author": "Günter Wagner",
+                "year": 1949,
+                "url": "https://archive.org/details/TheBantuOfNorthKavirondo",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "vol. 1, p. 282, 314",
+                "notes": "Londres, Oxford University Press pour l'International African Institute, 1949, vol. 1. Lu le 12 octobre 2026 dans une numérisation déposée sur Internet Archive par un particulier (copie non officielle). Page 314, sur les noms d'enfance que choisit la mère : « Among the Vugusu boys' names frequently take the prefix wa- and girls' names the prefix na- Thus a child who was born during a heavy rain might be named Wafula if a boy and Nafula if a girl ». Page 282 : la pierre appelée « stone of Wafula » ; « Wafula is the spirit for whom, many generations ago, the first sacrificial hut of this kind is said to have been erected ». Auteur de l'époque coloniale, cité ici pour les formes qu'il relève."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1949,
+              "to": 1949,
+              "label": "1949"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wafula apparaît par écrit dans l'étude de Günter Wagner sur les Bantous du nord du Kavirondo, au Kenya. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Wafula",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Günter Wagner",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Bantu of North Kavirondo",
+                "author": "Günter Wagner",
+                "year": 1949,
+                "url": "https://archive.org/details/TheBantuOfNorthKavirondo",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "vol. 1, p. 282, 314",
+                "notes": "Londres, Oxford University Press pour l'International African Institute, 1949, vol. 1. Lu le 12 octobre 2026 dans une numérisation déposée sur Internet Archive par un particulier (copie non officielle). Page 314, sur les noms d'enfance que choisit la mère : « Among the Vugusu boys' names frequently take the prefix wa- and girls' names the prefix na- Thus a child who was born during a heavy rain might be named Wafula if a boy and Nafula if a girl ». Page 282 : la pierre appelée « stone of Wafula » ; « Wafula is the spirit for whom, many generations ago, the first sacrificial hut of this kind is said to have been erected ». Auteur de l'époque coloniale, cité ici pour les formes qu'il relève."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

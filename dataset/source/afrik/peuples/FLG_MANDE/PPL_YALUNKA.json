@@ -168,5 +168,202 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Yalunka désigne un peuple de langue mandé de Guinée, de Sierra Leone, du Mali et du Sénégal, appelé aussi Dialonké en français. Mungo Park l'écrit Jallonka dès 1799, et Sigismund Koelle note Dṣalún·ga en 1854. Le massif du Fouta-Djalon porte une forme de ce nom. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Jalunga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "yal",
+        "namedBy": null,
+        "shortLine": "Le nom des gens du pays de Dṣálu, noté Dṣalún·ga par Koelle en 1854.",
+        "periodLabel": "Écrit Dṣalún·ga dès 1854",
+        "accounts": [
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "Rapporté en 1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Jalunga désignerait les gens du pays de Dṣálu, que les Peuls ont conquis et appelé Fúta-Dṣálu, « le Dṣálu possédé par les Peuls », selon Sigismund Koelle. Il note que ce pays appartenait aux Dṣálu, ou Dṣalún·ga, avant la conquête peule.",
+            "hypothesisGroup": "origine du nom Jalunga",
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Jalunga apparaît sous une forme proche, Dṣalún·ga, dans la Polyglotta Africana de Sigismund Koelle, publiée en 1854. Il y note aussi le nom de la langue, Dṣálun·ka, parlée au Dṣálu, que les Peuls appellent Fúta-Dṣálu. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Yalunka",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit Jallonka dès 1799 par Mungo Park.",
+        "periodLabel": "Écrit Jallonka dès 1799",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Yalunka est celui que retiennent aujourd'hui les catalogues de langues pour la langue de ce peuple, classée dans la famille mandé, à côté du soussou, selon Glottolog. Les sources que nous avons lues ne disent pas d'où vient le nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 : Yalunka",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/yalu1240",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche de langue lue le 11 octobre 2026 : code ISO 639-3 yal, classée dans la famille mandé, groupe soussou-yalunka."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1797,
+              "to": 1799,
+              "label": "1797, publié en 1799"
+            },
+            "era": "polity",
+            "statement": "Le nom Yalunka apparaît par écrit sous une forme proche, Jallonka, dans le récit de voyage de l'Écossais Mungo Park, publié en 1799. En 1797, il traverse ce qu'il appelle le désert jallonka et note que les Jallonkas sont gouvernés, comme les Mandingues, par de petits chefs indépendants les uns des autres. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Jallonkas",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Mungo Park",
+                "role": "voyageur écossais, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels in the Interior Districts of Africa",
+                "author": "Mungo Park",
+                "year": 1799,
+                "url": "https://www.gutenberg.org/ebooks/74976",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 338",
+                "notes": "Londres, W. Bulmer pour G. Nicol, 1799 ; voyage de 1795-1797. Lu le 11 octobre 2026 dans l'édition numérique du projet Gutenberg, qui reproduit la pagination d'origine."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dialonké",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme française du nom, écrite dès 1907 ; le Fouta-Djalon en porte une autre forme.",
+        "periodLabel": "Écrit dès 1907 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1974,
+              "to": 1974,
+              "label": "1974"
+            },
+            "era": "modern",
+            "statement": "Le nom Dialonké, ou Jalonké, se retrouve dans celui du Fouta-Djalon : une partie de ce massif porte le nom des populations, « pays des Peul et des Jalonké ou Dyalonké », selon Michèle Fieloux, qui rend compte en 1974 d'un livre de Thierno Diallo.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Compte rendu de Thierno Diallo, Les institutions politiques du Fouta Dyalon au XIXe siècle",
+                "author": "Michèle Fieloux",
+                "year": 1974,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1974_num_14_54_2655_t1_0402_0000_2",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 402",
+                "notes": "Cahiers d'études africaines, vol. 14, n° 54, 1974, lu sur Persée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Proposée en 1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dialonké serait apparenté à celui des Dialo du moyen Sénégal, selon une lecture d'André Arcin en 1911 : il présente les Dialonké comme parents des Dialo et écrit Fouta Dialo pour le nom du massif.",
+            "hypothesisGroup": "origine du nom Dialonké",
+            "sources": [
+              {
+                "title": "Histoire de la Guinée française : rivières du Sud, Fouta-Dialo, région du sud du Soudan",
+                "author": "André Arcin",
+                "year": 1911,
+                "url": "https://archive.org/details/histoiredelaguin00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 71",
+                "notes": "Paris, 1911, lu dans l'exemplaire numérisé d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dialonké apparaît sous cette forme chez André Arcin en 1907. Il présente les Dialonké du nord du cercle de Koïn comme les anciens possesseurs de tout le pays. C'est la plus ancienne trace de cette forme que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Dialonké",
+            "birth": true,
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 50",
+                "notes": "Paris, 1907, lu dans l'exemplaire numérisé d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

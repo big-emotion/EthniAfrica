@@ -149,5 +149,121 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Rendille désigne un peuple d'éleveurs de chameaux du nord du Kenya, entre Marsabit et le lac Turkana, et c'est le nom qu'il se donne lui-même : il appelle sa langue af i rend'ille. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ses plus anciennes traces.",
+    "names": [
+      {
+        "nameText": "Rendille",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "rel",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple d'éleveurs du nord du Kenya ; écrit Randile dès 1888.",
+        "periodLabel": "Écrit sous une forme proche dès 1888 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1969,
+              "to": 1978,
+              "label": "1969-1978"
+            },
+            "era": "modern",
+            "statement": "Le nom Rendille désigne un peuple du sud du district de Marsabit, que le recensement kényan de 1969 compte à 18 729 personnes. Il appelle sa langue af i rend'ille, selon le linguiste Bernd Heine.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Sam Languages: A History of Rendille, Boni and Somali",
+                "author": "Bernd Heine",
+                "year": 1978,
+                "url": "https://archive.org/details/HeineTheSamLanguagesAHistoryOfRendilleBoniAndSomali1978",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Afroasiatic Linguistics, vol. 6, n° 2, Malibu, Undena, 1978. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1896,
+              "label": "1892 (récit publié en 1896)"
+            },
+            "era": "polity",
+            "statement": "Le nom Rendille est écrit Rendile par l'Américain William Astor Chanler, qui prépare en 1892 un voyage pour rencontrer « une grande tribu appelée Rendile », connue seulement par ouï-dire, entre le lac Stéphanie et le mont Kenya.",
+            "formAsWritten": "Rendile",
+            "sources": [
+              {
+                "title": "Through Jungle and Desert: Travels in Eastern Africa",
+                "author": "William Astor Chanler",
+                "year": 1896,
+                "url": "https://archive.org/details/cu31924028595993",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 4",
+                "notes": "Londres et New York, Macmillan, 1896 ; voyage de 1892-1894. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1894,
+              "label": "1888 (récit publié en 1894)"
+            },
+            "era": "polity",
+            "statement": "Le nom Rendille apparaît sous une forme proche, Randile, dans le récit de l'expédition du comte Teleki écrit par Ludwig von Höhnel : il y parle des Randile, « une tribu tout à fait différente » des habitants du mont Nyiro, qui vit aussi dans le pays samburu. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Randile",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Discovery of Lakes Rudolf and Stefanie, vol. II",
+                "author": "Ludwig von Höhnel",
+                "year": 1894,
+                "url": "https://archive.org/details/discoveryoflakes02hhne",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 74",
+                "notes": "Londres, Longmans, Green, 1894 ; traduction anglaise du récit de l'expédition du comte Samuel Teleki (1887-1888). Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ariaal",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "rel",
+        "namedBy": null,
+        "shortLine": "Le nom de la section des Rendille du sud, éleveurs de bœufs et proches des Samburu.",
+        "periodLabel": "Écrit depuis 1978",
+        "accounts": [
+          {
+            "period": {
+              "from": 1978,
+              "to": 1978,
+              "label": "1978"
+            },
+            "era": "modern",
+            "statement": "Le nom Ariaal désigne la section sud de la société rendille, tournée vers l'élevage des bœufs et proche des Samburu, à côté des « Rendille proprement dits », éleveurs de chameaux, selon Bernd Heine. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Sam Languages: A History of Rendille, Boni and Somali",
+                "author": "Bernd Heine",
+                "year": 1978,
+                "url": "https://archive.org/details/HeineTheSamLanguagesAHistoryOfRendilleBoniAndSomali1978",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Afroasiatic Linguistics, vol. 6, n° 2, Malibu, Undena, 1978. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

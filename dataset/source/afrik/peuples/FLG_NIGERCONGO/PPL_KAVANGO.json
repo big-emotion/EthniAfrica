@@ -125,5 +125,549 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kavango désigne cinq peuples des rives du bas Okavango, en Namibie et en Angola, qui se nomment eux-mêmes Vakwangari, Vambundza, Vasambyu, Vagciriku et Hambukushu. Kavango est d'abord un nom du fleuve ; on a aussi dit Okavango. Les sources ne s'accordent pas sur l'origine de ce nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Vakwangari",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Kwangali, l'un des cinq peuples kavango.",
+        "periodLabel": "Écrit depuis 1861 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "Publié en 1981"
+            },
+            "statement": "Le nom Vakwangari est celui que se donne l'un des cinq peuples kavango, les Kwangali, selon Gordon D. Gibson. Nous n'avons pas trouvé de source qui explique son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Kavango Peoples",
+                "author": "Gordon D. Gibson, Thomas J. Larson et Cecilia R. McGurk",
+                "year": 1981,
+                "url": "https://the-eis.com/elibrary/search/2168",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Wiesbaden, Franz Steiner Verlag, lu dans le fac-similé déposé à l'Environmental Information Service de Namibie. Introduction de Gordon D. Gibson. Passage : « they identify their ethnic units as Vakwangari, Vambundza, Vasambyu, Vagciriku, and Hambukushu »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1859,
+              "to": 1861,
+              "label": "1859-1861"
+            },
+            "era": "polity",
+            "statement": "Le nom Vakwangari apparaît sous une forme proche, « Ovaquangari », dans le récit du voyageur Charles John Andersson. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Ovaquangari",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Okavango River: a narrative of travel, exploration, and adventure",
+                "author": "Charles John Andersson",
+                "year": 1861,
+                "url": "https://archive.org/details/okavangorivernar00andeuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 239",
+                "notes": "Édition de New York, Harper & Brothers, 1861, lue sur la numérisation d'Internet Archive. L'auteur, voyageur et commerçant suédois, atteint le fleuve en 1859. Passage : « East of the Ovaquangari are the Ovabundja »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Vambundza",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Mbunza, l'un des cinq peuples kavango.",
+        "periodLabel": "Écrit depuis 1861 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "Publié en 1981"
+            },
+            "statement": "Le nom Vambundza est celui que se donne l'un des cinq peuples kavango, les Mbunza, selon Gordon D. Gibson. Nous n'avons pas trouvé de source qui explique son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Kavango Peoples",
+                "author": "Gordon D. Gibson, Thomas J. Larson et Cecilia R. McGurk",
+                "year": 1981,
+                "url": "https://the-eis.com/elibrary/search/2168",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Wiesbaden, Franz Steiner Verlag, lu dans le fac-similé déposé à l'Environmental Information Service de Namibie. Introduction de Gordon D. Gibson. Passage : « they identify their ethnic units as Vakwangari, Vambundza, Vasambyu, Vagciriku, and Hambukushu »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1859,
+              "to": 1861,
+              "label": "1859-1861"
+            },
+            "era": "polity",
+            "statement": "Le nom Vambundza apparaît sous une forme proche, « Ovabundja », dans le récit du voyageur Charles John Andersson. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Ovabundja",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Okavango River: a narrative of travel, exploration, and adventure",
+                "author": "Charles John Andersson",
+                "year": 1861,
+                "url": "https://archive.org/details/okavangorivernar00andeuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 239",
+                "notes": "Édition de New York, Harper & Brothers, 1861, lue sur la numérisation d'Internet Archive. L'auteur, voyageur et commerçant suédois, atteint le fleuve en 1859. Passage : « East of the Ovaquangari are the Ovabundja »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Vasambyu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Shambyu, l'un des cinq peuples kavango.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "Publié en 1981"
+            },
+            "statement": "Le nom Vasambyu est celui que se donne l'un des cinq peuples kavango, les Shambyu, selon Gordon D. Gibson. Nous n'avons pas trouvé de source qui explique son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Kavango Peoples",
+                "author": "Gordon D. Gibson, Thomas J. Larson et Cecilia R. McGurk",
+                "year": 1981,
+                "url": "https://the-eis.com/elibrary/search/2168",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Wiesbaden, Franz Steiner Verlag, lu dans le fac-similé déposé à l'Environmental Information Service de Namibie. Introduction de Gordon D. Gibson. Passage : « they identify their ethnic units as Vakwangari, Vambundza, Vasambyu, Vagciriku, and Hambukushu »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Vagciriku",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Gciriku, l'un des cinq peuples kavango.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "Publié en 1981"
+            },
+            "statement": "Le nom Vagciriku est celui que se donne l'un des cinq peuples kavango, les Gciriku, selon Gordon D. Gibson. Nous n'avons pas trouvé de source qui explique son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Kavango Peoples",
+                "author": "Gordon D. Gibson, Thomas J. Larson et Cecilia R. McGurk",
+                "year": 1981,
+                "url": "https://the-eis.com/elibrary/search/2168",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Wiesbaden, Franz Steiner Verlag, lu dans le fac-similé déposé à l'Environmental Information Service de Namibie. Introduction de Gordon D. Gibson. Passage : « they identify their ethnic units as Vakwangari, Vambundza, Vasambyu, Vagciriku, and Hambukushu »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Hambukushu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Mbukushu, l'un des cinq peuples kavango.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "Publié en 1981"
+            },
+            "statement": "Le nom Hambukushu est celui que se donne l'un des cinq peuples kavango, les Mbukushu, selon Gordon D. Gibson. Nous n'avons pas trouvé de source qui explique son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Kavango Peoples",
+                "author": "Gordon D. Gibson, Thomas J. Larson et Cecilia R. McGurk",
+                "year": 1981,
+                "url": "https://the-eis.com/elibrary/search/2168",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Wiesbaden, Franz Steiner Verlag, lu dans le fac-similé déposé à l'Environmental Information Service de Namibie. Introduction de Gordon D. Gibson. Passage : « they identify their ethnic units as Vakwangari, Vambundza, Vasambyu, Vagciriku, and Hambukushu »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kavango",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom du fleuve, passé à ses riverains ; son origine reste discutée.",
+        "periodLabel": "Pour les peuples, écrit depuis 1981 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "Publié en 1981"
+            },
+            "statement": "Le nom Kavango désigne cinq peuples du bas Okavango, mais ce n'est pas le nom qu'ils se donnent : ils se nomment Vakwangari, Vambundza, Vasambyu, Vagciriku et Hambukushu, selon Gordon D. Gibson. Kavango est leur nom pour le fleuve. Son origine est discutée ; nous présentons les explications plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Kavango Peoples",
+                "author": "Gordon D. Gibson, Thomas J. Larson et Cecilia R. McGurk",
+                "year": 1981,
+                "url": "https://the-eis.com/elibrary/search/2168",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Wiesbaden, Franz Steiner Verlag, lu dans le fac-similé déposé à l'Environmental Information Service de Namibie. Introduction de Gordon D. Gibson."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Depuis le fleuve jusqu'aux habitants"
+            },
+            "statement": "Le nom Kavango a désigné d'abord le fleuve, puis le territoire le long du fleuve, et enfin ses habitants, selon l'historien Andreas E. Eckl.",
+            "sources": [
+              {
+                "title": "Konfrontation und Kooperation am Kavango (Nord-Namibia) von 1891 bis 1921",
+                "author": "Andreas E. Eckl",
+                "year": 2004,
+                "url": "https://kups.ub.uni-koeln.de/1321/1/Kavango.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5, note 1",
+                "notes": "Thèse de doctorat, université de Cologne, lue dans le texte déposé par l'université. Passage : « Ursprünglich bezeichnete er den angolanisch-namibischen Grenzfluß (von portugiesisch ‚Cubango‘), später wurde er auch für das Territorium entlang des Flusses und schließlich für die Bewohner dieser Region verwendet »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "1981"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kavango remplace, dans les publications récentes de Namibie, celui d'« Okavango people », selon Gordon D. Gibson, qui l'adopte pour respecter l'usage des intéressés. C'est la plus ancienne trace de ce nom pour les peuples que le projet connaît. Les peuples qu'il désigne vivaient déjà là avant lui.",
+            "formAsWritten": "Kavango",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Kavango Peoples",
+                "author": "Gordon D. Gibson, Thomas J. Larson et Cecilia R. McGurk",
+                "year": 1981,
+                "url": "https://the-eis.com/elibrary/search/2168",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Wiesbaden, Franz Steiner Verlag, lu dans le fac-similé déposé à l'Environmental Information Service de Namibie. Introduction de Gordon D. Gibson. Passage : « in recent publications, in Namibia at least, they are called the Kavango people, giving proper attention to their own usage »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1859,
+              "to": 1861,
+              "label": "1859-1861"
+            },
+            "era": "polity",
+            "statement": "On parle alors de peuples distincts : le voyageur Charles John Andersson nomme les « Ovaquangari », sur la rive nord du fleuve, puis, plus à l'est, les « Ovabundja » et les « Bavickos ».",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Okavango River: a narrative of travel, exploration, and adventure",
+                "author": "Charles John Andersson",
+                "year": 1861,
+                "url": "https://archive.org/details/okavangorivernar00andeuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 239",
+                "notes": "Édition de New York, Harper & Brothers, 1861, lue sur la numérisation d'Internet Archive. L'auteur, voyageur et commerçant suédois, atteint le fleuve en 1859."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "Proposée en 1906"
+            },
+            "era": "polity",
+            "statement": "Le nom Okavango voudrait dire « la hanche gauche » en herero : les ancêtres des Herero, venus vers le sud entre ce fleuve et le Kunene, l'auraient nommé ainsi, selon le missionnaire J. Irle, que cite Maria Fisch. Elle juge cette explication fausse ; nous n'avons pas lu le texte d'Irle.",
+            "hypothesisGroup": "origine du nom Kavango",
+            "sources": [
+              {
+                "title": "Ursprung und Bedeutung des Namens Okavango, Journal of the South West African Scientific Society, vol. 40-41",
+                "author": "Maria Fisch",
+                "year": 1986,
+                "url": "https://the-eis.com/elibrary/search/18688",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7-8 et p. 16",
+                "notes": "Volume daté 1985-1986 et 1986-1987, lu dans le fac-similé déposé à l'Environmental Information Service de Namibie. L'autrice date le texte d'Irle de 1908 à la page 7 et de 1906 à la page 16. Passage : « Kunene heißt ‘rechte Seite’, der rechtsliegende, während Okavango ‘die linke Hüfte’, der linksliegende heißt »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1986,
+              "label": "Proposée en 1985-1986"
+            },
+            "era": "colonial",
+            "statement": "Le nom Okavango viendrait d'une erreur d'écoute ou d'écriture du voyageur Andersson : kavango voudrait dire « petit endroit » dans les parlers des riverains, et le préfixe o- viendrait des langues herero ou ndonga, selon Maria Fisch. Les anciens interrogés par Maria Fisch ne connaissaient pas ce nom.",
+            "hypothesisGroup": "origine du nom Kavango",
+            "sources": [
+              {
+                "title": "Ursprung und Bedeutung des Namens Okavango, Journal of the South West African Scientific Society, vol. 40-41",
+                "author": "Maria Fisch",
+                "year": 1986,
+                "url": "https://the-eis.com/elibrary/search/18688",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9 et p. 19",
+                "notes": "Volume daté 1985-1986 et 1986-1987, lu dans le fac-similé déposé à l'Environmental Information Service de Namibie. Passage : « In den Anliegerdialekten bedeutet das Wort kavango ‘kleiner Platz’ »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1986,
+              "label": "Proposée en 1985-1986"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kavango pourrait venir de Kavanga, un chef de district venu du peuple ngangela, installé chez les Kwangali : les Ndonga appelaient « fleuve de Kavanga » la partie du fleuve où il vivait, selon Maria Fisch, qui présente ce lien comme possible.",
+            "hypothesisGroup": "origine du nom Kavango",
+            "sources": [
+              {
+                "title": "Ursprung und Bedeutung des Namens Okavango, Journal of the South West African Scientific Society, vol. 40-41",
+                "author": "Maria Fisch",
+                "year": 1986,
+                "url": "https://the-eis.com/elibrary/search/18688",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 12-13",
+                "notes": "Volume daté 1985-1986 et 1986-1987, lu dans le fac-similé déposé à l'Environmental Information Service de Namibie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2004,
+              "to": 2004,
+              "label": "Proposée en 2004"
+            },
+            "era": "modern",
+            "statement": "Le nom Kavango viendrait du portugais Cubango, le nom du fleuve en Angola, selon l'historien Andreas E. Eckl.",
+            "hypothesisGroup": "origine du nom Kavango",
+            "sources": [
+              {
+                "title": "Konfrontation und Kooperation am Kavango (Nord-Namibia) von 1891 bis 1921",
+                "author": "Andreas E. Eckl",
+                "year": 2004,
+                "url": "https://kups.ub.uni-koeln.de/1321/1/Kavango.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5, note 1",
+                "notes": "Thèse de doctorat, université de Cologne, lue dans le texte déposé par l'université. Passage : « Ursprünglich bezeichnete er den angolanisch-namibischen Grenzfluß (von portugiesisch ‚Cubango‘), später wurde er auch für das Territorium entlang des Flusses und schließlich für die Bewohner dieser Region verwendet »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Kavango figure peut-être déjà, sous la forme « Mukuru Mukovanja », chez le voyageur Charles John Andersson, pour un fleuve dont lui parlent les Ovambo. Maria Fisch y lit Mukuro gwaKavanga, « le fleuve de Kavanga ». Les sources ne disent pas avec certitude s'il s'agit du même nom.",
+            "sources": [
+              {
+                "title": "Ursprung und Bedeutung des Namens Okavango, Journal of the South West African Scientific Society, vol. 40-41",
+                "author": "Maria Fisch",
+                "year": 1986,
+                "url": "https://the-eis.com/elibrary/search/18688",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 12",
+                "notes": "Volume daté 1985-1986 et 1986-1987, lu dans le fac-similé déposé à l'Environmental Information Service de Namibie. L'autrice cite Charles John Andersson, Lake Ngami, 1856, p. 447 ; nous n'avons pas lu ce livre. Passage : « a river called Mukuru Mukovanja »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Okavango",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'ancien nom écrit du fleuve et de ses riverains, apparu en 1861.",
+        "periodLabel": "Écrit depuis 1861 ; remplacé par Kavango pour les peuples",
+        "accounts": [
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "Publié en 1981"
+            },
+            "statement": "Le nom Okavango a longtemps servi, dans les publications, pour les gens installés le long du cours inférieur du fleuve, selon Gordon D. Gibson. Il repose, selon lui, sur le nom que les Ovambo et les Herero donnent au fleuve.",
+            "sources": [
+              {
+                "title": "The Kavango Peoples",
+                "author": "Gordon D. Gibson, Thomas J. Larson et Cecilia R. McGurk",
+                "year": 1981,
+                "url": "https://the-eis.com/elibrary/search/2168",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Wiesbaden, Franz Steiner Verlag, lu dans le fac-similé déposé à l'Environmental Information Service de Namibie. Introduction de Gordon D. Gibson."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1986,
+              "label": "Enquête publiée en 1985-1986"
+            },
+            "era": "colonial",
+            "statement": "Le nom Okavango était absent des chants, des poèmes et des proverbes traditionnels, selon les anciens interrogés par Maria Fisch : ils ne l'avaient entendu que dans la bouche des Européens.",
+            "sources": [
+              {
+                "title": "Ursprung und Bedeutung des Namens Okavango, Journal of the South West African Scientific Society, vol. 40-41",
+                "author": "Maria Fisch",
+                "year": 1986,
+                "url": "https://the-eis.com/elibrary/search/18688",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "notes": "Volume daté 1985-1986 et 1986-1987, lu dans le fac-similé déposé à l'Environmental Information Service de Namibie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Okavango n'est employé par aucun habitant du Ngamiland, écrit en 1923 l'administrateur britannique Stigand, que cite Maria Fisch.",
+            "sources": [
+              {
+                "title": "Ursprung und Bedeutung des Namens Okavango, Journal of the South West African Scientific Society, vol. 40-41",
+                "author": "Maria Fisch",
+                "year": 1986,
+                "url": "https://the-eis.com/elibrary/search/18688",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10",
+                "notes": "Volume daté 1985-1986 et 1986-1987, lu dans le fac-similé déposé à l'Environmental Information Service de Namibie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1861,
+              "to": 1861,
+              "label": "1861"
+            },
+            "era": "polity",
+            "statement": "Le nom Okavango apparaît par écrit dans le récit de Charles John Andersson, pour le fleuve que les « Ovaquangari », dit-il, appellent ainsi. C'est la plus ancienne trace de ce nom que le projet connaît. Il désigne alors le fleuve, pas encore ses habitants.",
+            "formAsWritten": "Okavango",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Okavango River: a narrative of travel, exploration, and adventure",
+                "author": "Charles John Andersson",
+                "year": 1861,
+                "url": "https://archive.org/details/okavangorivernar00andeuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 220",
+                "notes": "Édition de New York, Harper & Brothers, 1861, lue sur la numérisation d'Internet Archive. L'auteur, voyageur et commerçant suédois, atteint le fleuve en 1859. Passage : « this river, called by the Ovaquangari “Okavango” »."
+              },
+              {
+                "title": "Ursprung und Bedeutung des Namens Okavango, Journal of the South West African Scientific Society, vol. 40-41",
+                "author": "Maria Fisch",
+                "year": 1986,
+                "url": "https://the-eis.com/elibrary/search/18688",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 16",
+                "notes": "Volume daté 1985-1986 et 1986-1987, lu dans le fac-similé déposé à l'Environmental Information Service de Namibie. Selon M. Fisch, le nom Okavango apparaît pour la première fois dans ce livre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1700,
+              "to": 1799,
+              "label": "XVIIIe siècle"
+            },
+            "statement": "On parle alors de Cubango sur des cartes portugaises, pour une rivière de la source du fleuve, selon Maria Fisch. Plus en aval, les riverains appellent son cours moyen mukuro.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Ursprung und Bedeutung des Namens Okavango, Journal of the South West African Scientific Society, vol. 40-41",
+                "author": "Maria Fisch",
+                "year": 1986,
+                "url": "https://the-eis.com/elibrary/search/18688",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "notes": "Volume daté 1985-1986 et 1986-1987, lu dans le fac-similé déposé à l'Environmental Information Service de Namibie."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

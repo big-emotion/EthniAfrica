@@ -109,5 +109,87 @@
       "fieldPath": "transmissionMode",
       "reason": "Les recherches « Sqalli transmission patronyme », « Sqalli filiation » et « Sqalli hereditary surname » n’ont pas établi si, ni comment, cette forme se transmet dans les communautés concernées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sqalli est un nom de famille du Maroc, très courant dans l'extrême nord du pays. Il viendrait de l'arabe ṣiqillī, « Sicilien », selon un linguiste. On ne sait pas avec certitude depuis quand il est porté au Maroc ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Sqalli",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille du nord du Maroc qui viendrait de l'arabe ṣiqillī, « Sicilien ».",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2026,
+              "to": 2026,
+              "label": "Décrit en 2026"
+            },
+            "era": "modern",
+            "statement": "Le nom Sqalli, écrit ṣqallī en transcription savante, est la seule forme reconnue au Maroc, comme nom de famille, du mot arabe ṣiqillī, et il est très courant dans l'extrême nord du pays, selon Aldo Nicosia. On ne sait pas avec certitude depuis quand il y est porté ; nous présentons plus bas la seule explication de son origine que nous connaissons.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "From Geonomastics to Human History: ṣiqillī in the Maghrebi Varieties of Arabic and Maltese",
+                "author": "Aldo Nicosia",
+                "year": 2026,
+                "url": "https://aidacatania.unict.it/AIDA16_Booklet_of_Abstracts_09_06_2026_DEF.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 96",
+                "notes": "Résumé d'une communication au 16e congrès de l'Association internationale de dialectologie arabe (AIDA), Catane, 23-26 juin 2026, dans le livret des résumés. Lu le 11 octobre 2026. Il suit le mot ṣiqillī, « Sicilien », au Maghreb sur au moins cinq siècles ; au Maroc, la seule forme reconnue, comme nom de famille ou comme adjectif, est ṣqallī, très courante dans l'extrême nord du pays ; en Tunisie, le mot a donné au moins trois noms de famille, ṣaklī, ṣqallī et zgollī, surtout dans le nord-est (Kelibia, Korba, Menzel Temime)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2026,
+              "to": 2026,
+              "label": "Proposée en 2026"
+            },
+            "era": "modern",
+            "statement": "Le nom Sqalli viendrait de l'arabe ṣiqillī, « Sicilien », un mot qui a voyagé dans l'ouest et le sud de la Méditerranée, jusqu'au Maroc, selon Aldo Nicosia. Cette explication dit d'où vient le mot, pas que chaque famille qui le porte vient de Sicile.",
+            "hypothesisGroup": "origine du nom Sqalli",
+            "sources": [
+              {
+                "title": "From Geonomastics to Human History: ṣiqillī in the Maghrebi Varieties of Arabic and Maltese",
+                "author": "Aldo Nicosia",
+                "year": 2026,
+                "url": "https://aidacatania.unict.it/AIDA16_Booklet_of_Abstracts_09_06_2026_DEF.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 96",
+                "notes": "Résumé d'une communication au 16e congrès de l'Association internationale de dialectologie arabe (AIDA), Catane, 23-26 juin 2026, dans le livret des résumés. Lu le 11 octobre 2026. Il suit le mot ṣiqillī, « Sicilien », au Maghreb sur au moins cinq siècles ; au Maroc, la seule forme reconnue, comme nom de famille ou comme adjectif, est ṣqallī, très courante dans l'extrême nord du pays ; en Tunisie, le mot a donné au moins trois noms de famille, ṣaklī, ṣqallī et zgollī, surtout dans le nord-est (Kelibia, Korba, Menzel Temime)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2026,
+              "to": 2026,
+              "label": "Décrit en 2026"
+            },
+            "era": "modern",
+            "statement": "Le nom Sqalli a des parents en Tunisie : le même mot y a donné au moins trois noms de famille, Ṣaklī, Ṣqallī et Zgollī, surtout dans le nord-est du pays, à Kelibia, Korba et Menzel Temime, selon Aldo Nicosia.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "From Geonomastics to Human History: ṣiqillī in the Maghrebi Varieties of Arabic and Maltese",
+                "author": "Aldo Nicosia",
+                "year": 2026,
+                "url": "https://aidacatania.unict.it/AIDA16_Booklet_of_Abstracts_09_06_2026_DEF.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 96",
+                "notes": "Résumé d'une communication au 16e congrès de l'Association internationale de dialectologie arabe (AIDA), Catane, 23-26 juin 2026, dans le livret des résumés. Lu le 11 octobre 2026. Il suit le mot ṣiqillī, « Sicilien », au Maghreb sur au moins cinq siècles ; au Maroc, la seule forme reconnue, comme nom de famille ou comme adjectif, est ṣqallī, très courante dans l'extrême nord du pays ; en Tunisie, le mot a donné au moins trois noms de famille, ṣaklī, ṣqallī et zgollī, surtout dans le nord-est (Kelibia, Korba, Menzel Temime)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -11,7 +11,10 @@
     {
       "spelling": "Vilakati",
       "attestations": [
-        { "countryId": "SWZ", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "SWZ",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -75,5 +78,82 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Vilakati est un nom de famille d'Eswatini. Une forme proche, Vilakazi, figure dès 1929 parmi les noms de clans nguni du Zoulouland et du Natal. On ne sait pas avec certitude depuis quand la forme Vilakati est écrite, ni d'où vient le nom : le projet n'a pas encore pu lire de source qui l'explique.",
+    "names": [
+      {
+        "nameText": "Vilakati",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille d'Eswatini, proche du nom de clan Vilakazi.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "Écrit ainsi en 1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Vilakati s'écrit ainsi, avec un t, comme nom de famille en Eswatini, selon une notice biographique publiée par Paul S. Dayhoff.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Vilakati, Norman Magodzi",
+                "author": "Paul S. Dayhoff",
+                "year": 1999,
+                "url": "https://dacb.org/stories/eswatini/vilakati-norman/",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Notice du Dictionary of African Christian Biography, reprise avec permission de Living Stones in Africa: Pioneers of the Church of the Nazarene, édition révisée, 1999. Lue le 12 octobre 2026. Elle écrit le nom Vilakati pour Norman Magodzi Vilakati, un jeune gardien de troupeaux venu d'un enclos proche de la mission d'Endzingeni, en Eswatini. Elle ne parle ni du clan ni de l'origine du nom."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Vilakazi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une forme proche de Vilakati : un nom de clan écrit dès 1929.",
+        "periodLabel": "Écrit dès 1929 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "1929"
+            },
+            "era": "modern",
+            "statement": "Le nom Vilakazi, une forme proche de Vilakati, figure dans la liste des clans nguni du Zoulouland et du Natal publiée par le missionnaire Alfred T. Bryant. C'est la plus ancienne trace de cette forme que le projet connaît ; Bryant ne dit pas si ce clan est le même que celui des Vilakati d'Eswatini.",
+            "formAsWritten": "Vilakazi",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Alfred T. Bryant",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bryant-a-t-olden-times-in-zululand-and-natal-containing-earlier-political-histor",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 683, 685, 691 et 696",
+                "notes": "Londres, Longmans, Green and Co., 1929. Lu le 12 octobre 2026 dans une copie non officielle déposée sur Internet Archive. La « liste de plus de 800 clans et sous-clans nguni de l'Est, établis à l'origine au Zoulouland et au Natal » donne pour chaque clan son nom de clan (isibongo), son nom d'adresse et son clan parent : Vilakazi y figure aux pages 683, 685, 691 et 696. Auteur missionnaire de l'époque coloniale, cité ici pour la forme qu'il écrit."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
