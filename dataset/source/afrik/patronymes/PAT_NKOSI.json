@@ -102,5 +102,160 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Nkosi », « Zulu », « Swazi », « sibongo », « Dlamini », « clan », « surname », « onomastics », « etymology », « transmission », « alliance », « caste », « homonym » et « obituary », ainsi que la monographie swazi et la page Forebears dédiée n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Nkosi est un nom de clan nguni, celui de la famille du chef suprême des Swazi en 1935. Le même mot veut dire « chef » en zoulou. Alfred T. Bryant l'écrit Nkosi en 1929 parmi les sous-clans swazi. Les sources lues ne disent pas d'où vient le nom ; nous ne le savons pas avec certitude.",
+    "names": [
+      {
+        "nameText": "Nkosi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan nguni, aussi le mot zoulou pour « chef » ; celui de la famille royale swazi en 1935.",
+        "periodLabel": "Écrit dès 1929 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "Défini en 1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nkosi est aussi un mot zoulou : inkosi, que le dictionnaire d'Alfred T. Bryant écrit i-nKosi, veut dire « roi » ou « chef ». Ce sens ne dit pas d'où vient le nom de clan ; les sources lues ne le disent pas non plus, et on ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Zulu-English Dictionary",
+                "author": "Alfred T. Bryant",
+                "year": 1905,
+                "url": "https://archive.org/details/zuluenglishdicti00brya",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 319",
+                "notes": "Pinetown, Mariannhill Mission Press, 1905, lu le 12 octobre 2026 dans la numérisation d'Internet Archive. L'auteur est un missionnaire catholique du Natal. Page 319 : « i-nKosi … King or chief (of which there was only one among the Zulus) ; applied, by courtesy, to one in very high position… lord ; magistrate ; gentleman ». Le dictionnaire ne cite pas le nom de clan à cette entrée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1935,
+              "to": 1935,
+              "label": "Décrit en 1935"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nkosi est le nom de clan, le « sib name », du chef suprême des Swazi, Sobhuza II, selon l'ethnologue du gouvernement N. J. van Warmelo, qui note que beaucoup de chefs du Swaziland le portent.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 34",
+                "notes": "Pretoria, Government Printer, 1935 (Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V), lu le 13 octobre 2026 dans la copie numérisée de l'Université de Pretoria, reproduite sur Internet Archive. L'auteur est l'ethnologue du gouvernement. Page 34, section « Swaziland » : « Thus the sib name of the Paramount Chief, Sobhuza II, is Nkosi and it will be noticed that there is, as one would expect, a marked preponderance of Chiefs of that name. » L'auteur note aussi que le nom de famille d'un chef ne dit pas toujours de quoi sa tribu est faite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Temps de Zwide et de Dingane, selon Alfred T. Bryant"
+            },
+            "era": "polity",
+            "statement": "Le nom Nkosi est aussi celui d'une branche cadette de la maison aînée des Kumalo, les aba-kwa-Nkosi de Lutili, établis autour des collines d'emaPéndwana, au-delà de la Mkuze, selon Alfred T. Bryant.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 420",
+                "notes": "Londres, Longmans, Green, 1929, lu le 12 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 420 : après la migration des Kumalo, Mlotsha prend « the major portion of the clan », « whose section of the clan was named the aba-kwa-Nkosi of Lutili », autour des collines d'emaPéndwana, au-delà de la Mkuze."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Proposée en 1929"
+            },
+            "era": "modern",
+            "statement": "Le nom Nkosi serait celui d'un des sous-clans nés de l'arrivée des emaLangeni dans le groupe emBo, avec ceux de Ngwane, d'ekuNene et de Mavuso, selon Alfred T. Bryant.",
+            "hypothesisGroup": "origine du nom Nkosi",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 312",
+                "notes": "Londres, Longmans, Green, 1929, lu le 12 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 312 : « At length came the great eMbó-Nguni intrusion of a portion of the emaLangeni clan, who subsequently split up into the Ngwane, Nkosi, ekuNene, Mavuso and other sub-clans. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Proposée en 1929"
+            },
+            "era": "modern",
+            "statement": "Le nom Nkosi serait celui d'un ancêtre de la maison royale swazie, car Alfred T. Bryant place un Nkosi, mort en 1473, puis un second, mort en 1689, dans la liste des rois swazi, qu'il juge peu sûre avant 1700.",
+            "hypothesisGroup": "origine du nom Nkosi",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 314-315",
+                "notes": "Londres, Longmans, Green, 1929, lu le 12 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Pages 314 et 315 : le tableau généalogique des emaLangeni donne « Nkosi I. (d. 1473) » et « Nkosi II. (d. 1689) » ; le texte précédent donne une autre liste, plus récente, qui compte aussi un Nkosi, père de Dlamini. Bryant dit ces généalogies peu sûres avant 1700."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "1929"
+            },
+            "era": "modern",
+            "statement": "Le nom Nkosi apparaît par écrit, sous la forme Nkosi, chez Alfred T. Bryant, comme celui d'un des sous-clans swazi issus des emaLangeni. C'est la plus ancienne trace du nom de clan que le projet connaît ; le clan est plus ancien que ce livre.",
+            "formAsWritten": "Nkosi",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Alfred T. Bryant",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 312",
+                "notes": "Londres, Longmans, Green, 1929, lu le 12 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 312 : la phrase sur les sous-clans Ngwane, Nkosi, ekuNene et Mavuso, citée plus haut."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
