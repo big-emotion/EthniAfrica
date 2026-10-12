@@ -125,5 +125,117 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Swahili du Mozambique désigne les communautés musulmanes de langue bantoue de la côte nord du Mozambique. Leur langue se nomme kiMwani ; on les appelle Mwani, ou Swahili. On ne sait pas avec certitude d'où vient le nom Mwani ; l'origine du mot swahili est discutée, et ses explications sont présentées avec l'histoire du peuple swahili.",
+    "names": [
+      {
+        "nameText": "Mwani",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "wmw",
+        "namedBy": null,
+        "shortLine": "Le nom des gens de la côte nord et de leur langue, le kiMwani ; on ne sait pas d'où il vient.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mwani, ou ibo, désigne une langue bantoue de la côte nord du Mozambique, que parlent environ 100 000 personnes, selon le linguiste Jacques Leclerc. Il la compte parmi les langues nationales du pays sous le nom de kiMwani, et la range dans le groupe swahili, parlé à Pemba, Mocímboa, Ibo, Macomia et Palma.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Mozambique",
+                "author": "Jacques Leclerc, L'aménagement linguistique dans le monde",
+                "year": 2023,
+                "url": "https://axl.cefan.ulaval.ca/afrique/mozambique.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "CEFAN, Université Laval, page mise à jour le 18 décembre 2023 et lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mwani est le nom de référence de cette langue dans la norme internationale ISO 639-3, sous le code wmw. On ne sait pas avec certitude quand il a été écrit pour la première fois, ni d'où il vient.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, Mwani [wmw]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/wmw",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Waswahili",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "swh",
+        "namedBy": null,
+        "shortLine": "« Les gens de la côte » ; un nom partagé avec les Swahili de toute la côte est-africaine.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom Waswahili désigne les gens de la côte, par opposition à ceux de l'intérieur et des collines, selon le missionnaire Johann Ludwig Krapf. Son origine est discutée ; les explications sont présentées avec l'histoire du peuple swahili de toute la côte.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Outline of the Elements of the Kisuáheli Language, with special reference to the Kiníka dialect",
+                "author": "Johann Ludwig Krapf",
+                "year": 1850,
+                "url": "https://archive.org/details/outlineofelement00krapiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9-11",
+                "notes": "Tübingen, L. F. Fues, lu sur la numérisation d'Internet Archive le 11 octobre 2026. L'auteur, missionnaire, vit alors près de Mombasa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1850,
+              "to": 1850,
+              "label": "1850"
+            },
+            "statement": "Le nom Kisuaheli désigne chez Johann Ludwig Krapf la langue de la côte, qu'il dit parlée, ou du moins comprise, de l'équateur jusqu'aux comptoirs portugais de Mozambique. Le Mozambique entre ainsi dans ce qu'il appelle la côte swahili.",
+            "aspect": "usage",
+            "formAsWritten": "Kisuaheli",
+            "sources": [
+              {
+                "title": "Outline of the Elements of the Kisuáheli Language, with special reference to the Kiníka dialect",
+                "author": "Johann Ludwig Krapf",
+                "year": 1850,
+                "url": "https://archive.org/details/outlineofelement00krapiala",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 8",
+                "notes": "Tübingen, L. F. Fues, lu sur la numérisation d'Internet Archive le 11 octobre 2026. L'auteur, missionnaire, vit alors près de Mombasa."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -118,5 +118,62 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Khainai, employé jusqu'ici par ce site, ne figure dans aucune des sources que nous avons lues. Ce peuple san du Kalahari central, au Botswana, y est nommé ǁGana ou ǁGanakhoe, et il s'écrit aussi Gxana. On ne sait pas avec certitude d'où vient le nom ǁGana ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "ǁGana",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "gnk",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple san dans les sources ; son origine n'est pas connue.",
+        "periodLabel": "Relevé à la fin du XXe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom ǁGana désigne une langue khoe du Kalahari central et le peuple qui la parle. Le catalogue Glottolog relève plusieurs façons de l'écrire, comme G//ana, Gxana ou //Ganakhwe ; il ne cite pas la forme Khainai. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — //Gana (gana1274)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/gana1274",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues, lu le 11 octobre 2026. Il relève les noms donnés à la langue par d'autres catalogues : //Gana, //Ganakhwe, G//ana, Gxana, Gxanna, Dxana, /Khessakoe, Kanakoe, Ganakue."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1997,
+              "to": 1997,
+              "label": "1997"
+            },
+            "era": "modern",
+            "statement": "Le nom ǁGana s'écrit ǁGanakhoe chez l'anthropologue Kazuyoshi Sugawara, qui étudie les noms de personnes des ǀGui et des ǁGana de la région de Xade, dans la réserve du Kalahari central.",
+            "sources": [
+              {
+                "title": "A name as a mnemonic device: an ethnographic study of personal names among the Central San (|Gui and ||Gana)",
+                "author": "Kazuyoshi Sugawara",
+                "year": 1997,
+                "url": "https://minpaku.repo.nii.ac.jp/records/4158",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Bulletin of the National Museum of Ethnology, vol. 22, n° 1, p. 1-92, 1997. Article en japonais ; nous n'avons lu que son résumé anglais, le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
