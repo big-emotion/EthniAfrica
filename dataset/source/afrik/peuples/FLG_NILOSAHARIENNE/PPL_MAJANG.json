@@ -96,5 +96,209 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Majang désigne un peuple de cultivateurs des forêts du sud-ouest de l'Éthiopie, et la langue qu'il parle. D'après le linguiste Andreas Joswig, Majang, Mesengo et Mezhenger sont des écritures voisines du nom que ce peuple se donne. Les anthropologues écrivent plutôt Majangir. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que les sources disent de chacun.",
+    "names": [
+      {
+        "nameText": "Majang",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mpe",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne, sous des écritures voisines, selon le linguiste Andreas Joswig.",
+        "periodLabel": "Écrit en 2019 ; Majangir depuis 1971",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Majang est celui que le linguiste Andreas Joswig emploie pour la langue et le peuple. Il écrit que Majang, Mesengo et Mezhenger sont des écritures différentes du nom que le peuple se donne, et qu'il ne connaît aucun nom péjoratif appliqué aujourd'hui à ce peuple. C'est la plus ancienne trace de la forme Majang seule que le projet connaît. Le peuple est connu sous la forme Majangir depuis au moins 1971.",
+            "formAsWritten": "Majang",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Majang Language",
+                "author": "Andreas Joswig",
+                "year": 2019,
+                "url": "https://hdl.handle.net/1887/73814",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 33",
+                "notes": "Thèse de l'université de Leyde, collection LOT, Amsterdam, 2019. Lu le 13 octobre 2026 dans l'extrait déposé à Leyde (p. 33 à 41)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant le nom, selon des traditions orales des années 1960"
+            },
+            "statement": "On parle alors d'un peuple de forêt venu de plus au sud, probablement des environs du plateau de Boma, au Soudan du Sud, selon des traditions orales que l'anthropologue Jack Stauder a recueillies dans les années 1960, d'après Joswig. Ce peuple serait monté peu à peu vers le nord, dans les forêts de l'ouest de l'Éthiopie.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Majang Language",
+                "author": "Andreas Joswig",
+                "year": 2019,
+                "url": "https://hdl.handle.net/1887/73814",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38",
+                "notes": "Thèse de l'université de Leyde, collection LOT, Amsterdam, 2019. Joswig cite Stauder (1970, p. 108), que nous n'avons pas lu ; il écrit que les Majang auraient quitté le plateau de Boma « il y a quelques générations » (p. 36). Lu le 13 octobre 2026 dans l'extrait déposé à Leyde (p. 33 à 41)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Majangir",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "mpe",
+        "namedBy": null,
+        "shortLine": "L'écriture que l'anthropologue Jack Stauder a donnée au nom de ce peuple dans son livre de 1971.",
+        "periodLabel": "Écrit depuis 1971",
+        "accounts": [
+          {
+            "period": {
+              "from": 1971,
+              "to": 1971,
+              "label": "1971"
+            },
+            "era": "modern",
+            "statement": "Le nom Majangir est celui que l'anthropologue Jack Stauder donne à ce peuple dans son livre de 1971, The Majangir: Ecology and Society of a Southwest Ethiopian People, où il parle de « northern and southern Majangir » (p. 5), selon Andreas Joswig. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Majangir: ecology and society of a Southwest Ethiopian people (notice de catalogue)",
+                "author": "Jack Stauder",
+                "year": 1971,
+                "url": "https://library.africamuseum.be/bib/269895",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Notice de la bibliothèque du Musée royal de l'Afrique centrale : Cambridge University Press, 1971, XII et 200 pages ; sujet « Majangir (African people) ». Nous avons lu la notice et n'avons pas lu le livre. Lu le 13 octobre 2026."
+              },
+              {
+                "title": "The Majang Language",
+                "author": "Andreas Joswig",
+                "year": 2019,
+                "url": "https://hdl.handle.net/1887/73814",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 41",
+                "notes": "Thèse de l'université de Leyde, collection LOT, Amsterdam, 2019. Joswig cite Stauder (1971, p. 5) : « variations in dialect […] are very few between northern and southern Majangir ». Il compte Majangir parmi les noms donnés à la langue (p. 33). Lu le 13 octobre 2026 dans l'extrait déposé à Leyde (p. 33 à 41)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mesengo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'une des écritures du nom du peuple, que le recensement éthiopien de 2007 emploie à côté de Mejenger.",
+        "periodLabel": "Écrit en 2007 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2007,
+              "to": 2007,
+              "label": "2007"
+            },
+            "era": "modern",
+            "statement": "Le nom Mesengo figure, écrit Messengo, dans le recensement éthiopien de 2007, qui compte 10 871 personnes sous ce nom et 21 951 sous le nom Mejenger. Andreas Joswig dit que les deux noms désignent le même peuple et ne sait pas pourquoi le recensement les sépare. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Messengo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Majang Language",
+                "author": "Andreas Joswig",
+                "year": 2019,
+                "url": "https://hdl.handle.net/1887/73814",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 35",
+                "notes": "Thèse de l'université de Leyde, collection LOT, Amsterdam, 2019. Joswig cite le recensement (Samia, 2007a, p. 91), que nous n'avons pas lu. Lu le 13 octobre 2026 dans l'extrait déposé à Leyde (p. 33 à 41)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mezhenger",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'autre écriture du nom du peuple que le recensement éthiopien de 2007 emploie, sous la forme Mejenger.",
+        "periodLabel": "Écrit en 2007 ; en usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2007,
+              "to": 2007,
+              "label": "2007"
+            },
+            "era": "modern",
+            "statement": "Le nom Mezhenger s'écrit Mejenger dans le recensement éthiopien de 2007, qui compte 21 951 personnes sous ce nom et 10 871 sous le nom Mesengo. Andreas Joswig dit que les deux noms désignent le même peuple, et qu'une zone administrative porte le nom de Mezhenger. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Mejenger",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Majang Language",
+                "author": "Andreas Joswig",
+                "year": 2019,
+                "url": "https://hdl.handle.net/1887/73814",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 35",
+                "notes": "Thèse de l'université de Leyde, collection LOT, Amsterdam, 2019. Joswig cite le recensement (Samia, 2007a, p. 91 ; 2007b, p. 44), que nous n'avons pas lu. Lu le 13 octobre 2026 dans l'extrait déposé à Leyde (p. 33 à 41)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ato Majangeronk",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mpe",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne la langue, qui signifie « la bouche des gens Majang ».",
+        "periodLabel": "Rapporté en 2019",
+        "accounts": [
+          {
+            "period": {
+              "from": 1998,
+              "to": 1998,
+              "label": "1998"
+            },
+            "era": "modern",
+            "statement": "Le nom Ato Majangeronk est un nom que le peuple se donne pour sa langue et qui signifie « la bouche des gens Majang », selon la liste des noms des langues surmiques que Gerrit Dimmendaal a publiée en 1998 et qu'Andreas Joswig reprend. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Majang Language",
+                "author": "Andreas Joswig",
+                "year": 2019,
+                "url": "https://hdl.handle.net/1887/73814",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 33",
+                "notes": "Thèse de l'université de Leyde, collection LOT, Amsterdam, 2019. Joswig cite la liste de Dimmendaal (1998b, p. 26 et suivantes), que nous n'avons pas lue. Lu le 13 octobre 2026 dans l'extrait déposé à Leyde (p. 33 à 41)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
