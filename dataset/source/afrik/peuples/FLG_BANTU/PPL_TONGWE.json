@@ -84,7 +84,8 @@
       {
         "title": "Tongwe Trust",
         "url": "http://www.tongwetrust.org",
-        "tier": "needs_review"
+        "tier": "unverified",
+        "source_kind": "community"
       },
       {
         "title": "Wild Philanthropy, Ntakata Tanzania: introducing the Tongwe Trust",
@@ -108,6 +109,164 @@
         "url": "https://www.101lasttribes.com/tribes/tongwe.html",
         "tier": "unverified",
         "source_kind": "community"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Tongwe désigne un peuple de l'ouest de la Tanzanie, sur la rive est du lac Tanganyika, autour des monts Mahale et de la forêt de Ntakata, et la langue qu'il parle. Ce peuple se nomme lui-même Tongwe, selon le Tongwe Trust, une organisation fondée par des habitants de villages tongwe. On ne sait pas avec certitude d'où vient le nom Tongwe ; nous présentons plus bas ses traces.",
+    "names": [
+      {
+        "nameText": "Tongwe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tny",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple et de sa langue ; il apparaît en 1869 sous la forme Tongwé, comme un lieu du lac Tanganyika.",
+        "periodLabel": "Écrit Tongwé en 1869 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tongwe est celui que le Tongwe Trust emploie pour parler du peuple tongwe. Cette organisation, créée en 2002, est en grande partie fondée et dirigée par des habitants de villages tongwe. Elle présente la forêt de Ntakata comme la nouvelle terre culturelle de ce peuple, où il vit depuis des siècles.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Tongwe Trust",
+                "author": "Tongwe Trust",
+                "year": null,
+                "url": "http://www.tongwetrust.org",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Le site parle à la première personne (« notre histoire »). Page d'accueil, rubrique « Our Story », lue le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tongwe est le nom de référence de la langue de ce peuple dans la norme internationale ISO 639-3, sous le code tny. Le catalogue Glottolog relève aussi Kitongwe et Sitongwe. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, code tny : Tongwe",
+                "author": "SIL International",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/tny",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 13 octobre 2026."
+              },
+              {
+                "title": "Glottolog 5.3 — Tongwe (tong1320)",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/tong1320",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues de l'Institut Max-Planck, consulté le 13 octobre 2026. Noms relevés : Kitongwe, Sitongwe, Tongwe ; pays : Tanzanie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "Publié en 2009"
+            },
+            "era": "modern",
+            "statement": "Le nom Tongwe désigne chez l'historien Tony Waters l'un des groupes de langue bende de la région de Rukwa, avec les Bende et les Holoholo. Il note que ces trois noms sont considérés comme des variantes de la langue bende, et que le tongwe se parle encore dans des villages proches de Kigoma.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Social Organization and Social Status in Nineteenth and Twentieth Century Rukwa, Tanzania",
+                "author": "Tony Waters",
+                "year": 2009,
+                "url": "https://asq.africa.ufl.edu/wp-content/uploads/sites/168/Waters-V11Is1.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 61 et note 20",
+                "notes": "Passages « Traditional Tribal and Linguistic Divisions of Rukwa » et note 20. African Studies Quarterly, vol. 11, no 1, automne 2009 ; lu dans le PDF le 13 octobre 2026. Page lue sur le numéro imprimé en en-tête."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Watongwe désigne, dans le Deutsches Kolonial-Lexikon de 1920, les habitants de la région de Tongwe, sur la rive est du lac Tanganyika, un peu au sud d'Ujiji. Le dictionnaire, qui cite Reichard (1892), les dit venus de la rive ouest du lac, bons bateliers et pirates redoutés ; il cite aussi Ramsay, selon qui chaque village est une forteresse.",
+            "aspect": "usage",
+            "formAsWritten": "Watongwe",
+            "sources": [
+              {
+                "title": "Deutsches Kolonial-Lexikon, Band III",
+                "author": "Heinrich Schnee (dir.)",
+                "year": 1920,
+                "url": "https://archive.org/details/bub_gb_bY4zAQAAMAAJ",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 691",
+                "notes": "Article « Watongwe », signé Weule. Le projet n'a pas lu l'ouvrage de Reichard (1892) que l'article cite. Leipzig, Quelle & Meyer, 1920. Encyclopédie coloniale allemande, écrite dans le vocabulaire colonial de son époque ; lu sur la numérisation d'Internet Archive le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1874,
+              "to": 1874,
+              "label": "Voyage de 1874, journal publié en 1875"
+            },
+            "era": "polity",
+            "statement": "Le nom Watongwe désigne, dans le journal du lieutenant Verney Lovett Cameron, un peuple qui vivait dans un « ancien Utongwe » de la rive est du lac, à partir du cap Kungwe. Selon les informations que Cameron note, les fils du chef du Kowendi l'en auraient chassé : la plupart de ceux qui ont échappé se sont installés en Ufipa, mêlés aux Fipa.",
+            "aspect": "usage",
+            "formAsWritten": "Watongwe",
+            "sources": [
+              {
+                "title": "Lieut. Cameron's Diary, dans The Journal of the Royal Geographical Society of London, vol. 45",
+                "author": "Verney Lovett Cameron, éd. Clements R. Markham",
+                "year": 1875,
+                "url": "https://archive.org/details/s572id13663830",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 208 et p. 215",
+                "notes": "P. 208 : « The Watongwe (or most of them) who escaped have settled in Ufipa ». P. 215 : « Wapimbwe and Watongwe live in Ufipa mixed up with Bafipa ». Journal de voyage de l'année 1874, publié dans la revue de la Société royale de géographie ; lu sur la numérisation d'Internet Archive le 13 octobre 2026. Page lue sur l'en-tête de la page et sur l'index du volume, qui renvoie aux pages 208 et 215 pour les Watongwe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1869,
+              "to": 1869,
+              "label": "1869"
+            },
+            "era": "polity",
+            "birth": true,
+            "statement": "Le nom Tongwe apparaît sous la forme « Tongwé » dans le journal de David Livingstone, à la date du 15 juillet 1869, publié en 1874. Livingstone y note que le marchand Mohamad Bogharib venait de Tongwé, un lieu qu'il ne décrit pas dans ce passage. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Tongwé",
+            "sources": [
+              {
+                "title": "The Last Journals of David Livingstone, in Central Africa, from 1865 to his Death, vol. II",
+                "author": "David Livingstone, édité par Horace Waller",
+                "year": 1874,
+                "url": "https://archive.org/details/lastjournalsofda02livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 19",
+                "notes": "Entrée du 15 juillet 1869 : « came up to Mohamad Bogharib, who had come from Tongwé ». Livingstone écrit encore, le 16 décembre 1871, « Engage paddlers to Tongwé and a guide » (p. 161). Le projet n'a pas lu de texte plus ancien. Londres, John Murray, 1874 ; lu sur la numérisation d'Internet Archive le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          }
+        ]
       }
     ]
   }
