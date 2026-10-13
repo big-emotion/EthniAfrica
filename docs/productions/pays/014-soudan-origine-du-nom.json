@@ -1,0 +1,35 @@
+{
+  "campaign": "soudan-origine-du-nom",
+  "typologie": "pays",
+  "episode": 14,
+  "question": {
+    "fr": "D'où vient le nom Soudan ?"
+  },
+  "myth": {
+    "fr": "« Soudan » est-il le nom d'un peuple ?"
+  },
+  "subjects": [
+    {
+      "kind": "country",
+      "id": "SDN",
+      "label": {
+        "fr": "Soudan"
+      }
+    }
+  ],
+  "sitePath": "/fr/atlas/pays/SDN",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7691457964913200406",
+      "publishedAt": "2026-10-01"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/Dd7Z15PiAHf/",
+      "publishedAt": "2026-10-01"
+    }
+  ]
+}

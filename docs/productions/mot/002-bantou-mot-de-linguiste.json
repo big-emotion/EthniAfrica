@@ -39,6 +39,18 @@
       "format": "video",
       "url": "https://www.youtube.com/shorts/rUF0su2g918",
       "publishedAt": "2026-09-07"
+    },
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7691495399965625622",
+      "publishedAt": "2026-10-01"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/Dd7qhCXiD8L/",
+      "publishedAt": "2026-10-01"
     }
   ],
   "poster": {

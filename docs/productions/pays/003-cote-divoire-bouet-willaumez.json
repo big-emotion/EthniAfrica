@@ -28,6 +28,22 @@
       "format": "video",
       "url": "https://www.youtube.com/shorts/9cUREZbgI5k",
       "publishedAt": "2026-09-15"
+    },
+    {
+      "network": "x",
+      "format": "texte",
+      "url": "https://x.com/ethniafrica/status/2100035410697060675",
+      "publishedAt": "2026-09-16"
+    },
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "publishedAt": "2026-09-16"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "publishedAt": "2026-09-16"
     }
   ],
   "poster": {

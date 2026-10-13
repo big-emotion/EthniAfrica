@@ -1,0 +1,40 @@
+{
+  "campaign": "2026-10-09-uganda-name-carousel",
+  "typologie": "pays",
+  "episode": 18,
+  "question": {
+    "fr": "D'où vient le nom Ouganda ?"
+  },
+  "myth": {
+    "fr": "Le nom Ouganda est-il né avec l'indépendance de 1962 ?"
+  },
+  "subjects": [
+    {
+      "kind": "country",
+      "id": "UGA",
+      "label": {
+        "fr": "Ouganda"
+      }
+    }
+  ],
+  "sitePath": "/fr/atlas/pays/UGA",
+  "publications": [
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/DeSEv5tiE4P/",
+      "publishedAt": "2026-10-09"
+    },
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7694724913197894934",
+      "publishedAt": "2026-10-09"
+    },
+    {
+      "network": "facebook",
+      "format": "carrousel",
+      "publishedAt": "2026-10-09"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "campaign": "pulaaku-code-peul-carrousel",
+  "typologie": "mot",
+  "episode": 22,
+  "question": {
+    "fr": "D'où vient le mot pulaaku ?"
+  },
+  "myth": {
+    "fr": "Le pulaaku est-il le « code » des Peuls ?"
+  },
+  "subjects": [],
+  "sitePath": "/fr/about",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7691595230780411158",
+      "publishedAt": "2026-10-01"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/Dd8W6TUiJvr/",
+      "publishedAt": "2026-10-01"
+    }
+  ]
+}
