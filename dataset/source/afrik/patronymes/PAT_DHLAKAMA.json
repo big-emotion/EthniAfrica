@@ -75,5 +75,121 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Dhlakama est un nom de famille du Mozambique. Le mouvement qu'a dirigé Afonso Dhlakama l'a parfois écrit Jacama. On ne sait pas avec certitude d'où il vient ni ce qu'il veut dire : les sources consultées ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Dhlakama",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille du Mozambique, dont les sources consultées n'expliquent pas l'origine.",
+        "periodLabel": "Écrit dès 1975 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Dhlakama est un nom de famille du Mozambique. Les sources consultées ne disent ni d'où il vient ni ce qu'il veut dire. On ne sait pas avec certitude.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Sub-Saharan Africa Report, JPRS 81671",
+                "author": "Joint Publications Research Service",
+                "year": 1982,
+                "url": "https://archive.org/details/jprs-report_jprs-81671",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 58",
+                "notes": "Recueil du service américain de traduction et de reprise de presse, numéro 2683, 31 août 1982, lu sur l'exemplaire numérisé d'archive.org. Il reprend en anglais l'article « NRM Background, Links With South Africa Reviewed », d'Africa Confidential, numéro 15, 21 juin 1982, pp. 1-5. À la page 58, l'article écrit que trois hommes se disputent la direction du mouvement après la mort d'André, dont Dhlakama, et que le mouvement écrit parfois son nom « Jacama » dans ses documents internes. Il ne dit rien de l'origine du nom. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1982,
+              "to": 1982,
+              "label": "Rapporté en 1982"
+            },
+            "era": "modern",
+            "statement": "Le nom Dhlakama est celui de l'un des trois hommes qui prétendent à la direction de la Résistance nationale mozambicaine après la mort de son chef, André, selon Africa Confidential (21 juin 1982), repris par le service américain JPRS.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sub-Saharan Africa Report, JPRS 81671",
+                "author": "Joint Publications Research Service",
+                "year": 1982,
+                "url": "https://archive.org/details/jprs-report_jprs-81671",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 58",
+                "notes": "Recueil du service américain de traduction et de reprise de presse, numéro 2683, 31 août 1982, lu sur l'exemplaire numérisé d'archive.org. Il reprend en anglais l'article « NRM Background, Links With South Africa Reviewed », d'Africa Confidential, numéro 15, 21 juin 1982, pp. 1-5. À la page 58, l'article écrit que trois hommes se disputent la direction du mouvement après la mort d'André, dont Dhlakama, et que le mouvement écrit parfois son nom « Jacama » dans ses documents internes. Il ne dit rien de l'origine du nom. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "2 janvier 1975"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dhlakama apparaît par écrit dans un télégramme de l'ambassade des États-Unis à Dar es Salaam daté du 2 janvier 1975. Il y est question de Samuel Dhlakama, présenté comme sous-ministre de la Santé du gouvernement de transition du Mozambique. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un télégramme l'a écrit, pas depuis quand des familles le portent.",
+            "formAsWritten": "DHLAKAMA",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Telegram Dar es Salaam, 2 janvier 1975",
+                "author": "Ambassade des États-Unis à Dar es Salaam",
+                "year": 1975,
+                "url": "https://archive.org/details/StateDeptcable1975-112288",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 1",
+                "notes": "Télégramme diplomatique du département d'État américain adressé à Washington, objet « Mozambique Deputy Health Minister in Tanzania », déclassifié en 2006 et lu sur la copie d'archive.org. Il rapporte l'arrivée à Dar es Salaam, le 30 décembre, de « Samuel Dhlakama, described as junior minister for health in the Mozambique transitional government ». Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Jacama",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une écriture de Dhlakama que la Résistance nationale mozambicaine a employée dans ses documents internes.",
+        "periodLabel": "Écrit en 1982",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1982,
+              "to": 1982,
+              "label": "Rapporté en 1982"
+            },
+            "era": "modern",
+            "statement": "Le nom Jacama est la façon dont la Résistance nationale mozambicaine écrit parfois Dhlakama dans ses documents internes, selon Africa Confidential (21 juin 1982), repris par le service américain JPRS.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sub-Saharan Africa Report, JPRS 81671",
+                "author": "Joint Publications Research Service",
+                "year": 1982,
+                "url": "https://archive.org/details/jprs-report_jprs-81671",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 58",
+                "notes": "Recueil du service américain de traduction et de reprise de presse, numéro 2683, 31 août 1982, lu sur l'exemplaire numérisé d'archive.org. Il reprend en anglais l'article « NRM Background, Links With South Africa Reviewed », d'Africa Confidential, numéro 15, 21 juin 1982, pp. 1-5. À la page 58, l'article écrit que trois hommes se disputent la direction du mouvement après la mort d'André, dont Dhlakama, et que le mouvement écrit parfois son nom « Jacama » dans ses documents internes. Il ne dit rien de l'origine du nom. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

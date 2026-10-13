@@ -75,5 +75,141 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Cossa est un nom de famille du Mozambique. Des textes écrivent Cossa le nom d'un pays et d'un peuple du sud du Mozambique, que l'on écrit aujourd'hui Khosa. Les sources consultées ne disent pas si le nom de famille en vient, ni ce qu'il veut dire.",
+    "names": [
+      {
+        "nameText": "Cossa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille du Mozambique, écrit aussi pour un peuple tsonga du sud, que l'on écrit aujourd'hui Khosa.",
+        "periodLabel": "Écrit dès 1878 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Cossa est un nom de famille du Mozambique. On ne sait pas avec certitude ce qu'il veut dire : les sources consultées ne le disent pas. Elles disent seulement que Cossa est aussi l'écriture d'un nom de groupe tsonga, présenté plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "History Of Xitsonga Speaking Tribes",
+                "author": "Vonakani Maluleke",
+                "year": 2016,
+                "url": "https://archive.org/details/history-of-xitsonga-speaking-tribes",
+                "tier": "unverified",
+                "source_kind": "community",
+                "page": "p. 40",
+                "notes": "Livre en anglais d'un auteur tsonga, lu sur la copie déposée sur archive.org (copie non officielle). À la page 40, la légende d'une carte de Rita-Ferreira (1982) sur les groupes tsonga vers 1730-1780 énumère « the Tembe, Khosa (“Cossa”), Valoyi (“Va-Lois”), Maluleke (“Maluleques”) ». L'auteur rapporte la carte de Rita-Ferreira sans la reproduire ; il ne dit pas si le nom de famille Cossa en vient. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1450,
+              "to": 1450,
+              "label": "Vers 1450, selon un texte de 2014"
+            },
+            "era": "polity",
+            "statement": "On parle alors du groupe khosa, que Vonakani Maluleke note aussi « Cossa » d'après une carte de Rita-Ferreira. Gerhard Liesegang place ses débuts vers 1450, avec un point d'interrogation, et son extension jusqu'à Inharrime vers 1620.",
+            "before": true,
+            "sources": [
+              {
+                "title": "East and Northeast of the Borders of the Southeastern Bantu: Partly visible population movements and invisible lineage states",
+                "author": "Gerhard Liesegang",
+                "year": 2014,
+                "url": "https://archive.org/details/borders-of-se-bantu-400-1900",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 15",
+                "notes": "Texte de juillet 2014, diffusé comme manuscrit, de Gerhard Liesegang, du département d'histoire de l'Universidade Eduardo Mondlane ; copie non officielle déposée sur archive.org, lue en entier. À la page 15, il écrit : « In the case of the Khosa group or lineage family there was some kind of maximum extension between the founding (1450?) to around 1620 (to Inharrime) ». Lu le 13 octobre 2026."
+              },
+              {
+                "title": "History Of Xitsonga Speaking Tribes",
+                "author": "Vonakani Maluleke",
+                "year": 2016,
+                "url": "https://archive.org/details/history-of-xitsonga-speaking-tribes",
+                "tier": "unverified",
+                "source_kind": "community",
+                "page": "p. 40",
+                "notes": "Livre en anglais d'un auteur tsonga, lu sur la copie déposée sur archive.org (copie non officielle). À la page 40, la légende d'une carte de Rita-Ferreira (1982) sur les groupes tsonga vers 1730-1780 énumère « the Tembe, Khosa (“Cossa”), Valoyi (“Va-Lois”), Maluleke (“Maluleques”) ». L'auteur rapporte la carte de Rita-Ferreira sans la reproduire ; il ne dit pas si le nom de famille Cossa en vient. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1878,
+              "to": 1878,
+              "label": "Publié en 1878"
+            },
+            "era": "polity",
+            "statement": "Le nom Cossa apparaît par écrit dans l'Itinerario de uma viagem á caça dos elephantes, de Diocleciano Fernandes das Neves, publié à Lisbonne en 1878. L'auteur y parle des « terras de Cossa », séparées de celles de Moamba par le fleuve Incómate. C'est la plus ancienne trace de ce nom que le projet connaît ; elle nomme un pays et son peuple, non une famille. Les sources lues ne disent pas si le nom de famille en vient.",
+            "formAsWritten": "Cossa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Itinerario de uma viagem á caça dos elephantes",
+                "author": "Diocleciano Fernandes das Neves",
+                "year": 1878,
+                "url": "https://archive.org/details/itinerariodeuma00nevegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 27",
+                "notes": "Lisbonne, Typographia Universal de Thomaz Quintino Antunes, 1878 ; exemplaire numérisé par Google, lu sur archive.org. À la page 27, l'auteur écrit : « Partimos ás seis e meia, em direcção ás terras de Cossa [...] o rio Incômáte, que divide as terras da Moamba das de Cossa ». Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1894,
+              "to": 1894,
+              "label": "Publié en 1894"
+            },
+            "era": "polity",
+            "statement": "Le nom Cossa désigne en 1894 une « tribu », selon l'officier portugais Alfredo Augusto Caldas Xavier. Il écrit que le chef de l'armée de Gungunhana, le roi de Gaza, est « da tribu cossa ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Reconhecimento do Limpopo",
+                "author": "Alfredo Augusto Caldas Xavier",
+                "year": 1894,
+                "url": "https://archive.org/details/reconhecimentod00xavigoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 14",
+                "notes": "Lisbonne, Imprensa Nacional, 1894 ; exemplaire numérisé par Google, lu sur archive.org. À la page 14, l'auteur écrit que « o chefe do exercito do Gungunhana é um buingéla ou landim, da tribu cossa, chamado Maguinguana ». Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1983,
+              "to": 1983,
+              "label": "Décembre 1983"
+            },
+            "era": "modern",
+            "statement": "Le nom Cossa est porté au Mozambique : le quotidien Notícias de Maputo publie le 5 décembre 1983 un article signé Hilario Cossa, que traduit le service américain JPRS.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sub-Saharan Africa Report, JPRS-SSA-84-036",
+                "author": "Joint Publications Research Service",
+                "year": 1984,
+                "url": "https://archive.org/details/jprs-report_jprs-ssa-84-036",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 27",
+                "notes": "Recueil du service américain de traduction et de reprise de presse, 23 mars 1984, lu sur l'exemplaire numérisé d'archive.org. À la page 27, l'article « Gang of thieves caught by Maputo vigilance groups », d'après Notícias de Maputo du 5 décembre 1983, p. 1, est présenté « by Hilario Cossa ». Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
