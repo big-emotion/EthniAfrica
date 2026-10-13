@@ -116,5 +116,152 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kera désigne un peuple de langue tchadique du sud du Tchad, autour de Fianga et du lac de Tikem, avec une partie au Cameroun. Il se nomme lui-même Kera. Nous n'avons trouvé aucun autre nom pour lui. On ne sait pas avec certitude d'où vient le nom Kera : les sources lues ne l'expliquent pas. Sa plus ancienne trace connue du projet date de 1965.",
+    "names": [
+      {
+        "nameText": "Kera",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ker",
+        "namedBy": null,
+        "shortLine": "Le nom que le peuple se donne ; on ne sait pas d'où il vient. Écrit depuis 1965.",
+        "periodLabel": "Écrit depuis 1965 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "2019"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom Kera est celui que la communauté kéra emploie pour elle-même : dans le résumé de son forum de 2019, l'Association Culturelle Kéra parle du peuple Kéra, à cheval entre le Cameroun et le Tchad, et de sa langue et de sa culture.",
+            "sources": [
+              {
+                "title": "Forum sur la langue et la culture Kéra, 2e édition",
+                "author": "Association Culturelle Kéra (ACK), André Kadandji",
+                "year": 2019,
+                "url": "https://www.researchgate.net/publication/339457479_FORUM_SUR_LA_LANGUE_ET_LA_CULTURE_KERA_2_eme_Edition_Concu_par_l%27Association_Culturelle_Kera_ACK_Avec_la_collaboration_de_AKD_et_AKTBA",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Publication de l'association de la communauté kéra, pour le forum tenu du 28 février au 2 mars 2019. Seul le résumé, lu sur la page ResearchGate le 13 octobre 2026, a pu être ouvert ; le texte intégral demande un compte.",
+                "carrier": "Association Culturelle Kéra",
+                "place": "Cameroun et Tchad"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom Kera est le nom de référence de la langue dans la norme internationale ISO 639-3, sous le code ker. On ne sait pas d'où il vient : les sources lues ne l'expliquent pas.",
+            "sources": [
+              {
+                "title": "ISO 639-3, Kera [ker]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/ker",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 13 octobre 2026. Elle ne donne aucun autre nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2007,
+              "to": 2007,
+              "label": "Thèse de 2007, terrain de 1992 à 2006"
+            },
+            "era": "modern",
+            "aspect": "meaning",
+            "statement": "Le nom Kera désigne un peuple d'environ 50 000 personnes, dans le sud du Tchad et dans des parties du Cameroun, et sa langue tchadique orientale, selon la linguiste Mary Pearce. Environ 40 000 vivent à la campagne et 10 000 dans des villes du Tchad et du Cameroun. Les sources lues n'expliquent pas l'origine du nom.",
+            "sources": [
+              {
+                "title": "The interaction of tone with voicing and foot structure: evidence from Kera phonetics and phonology",
+                "author": "Mary Pearce",
+                "year": 2007,
+                "url": "https://discovery.ucl.ac.uk/id/eprint/1445070/1/U592383.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 16",
+                "notes": "Thèse de doctorat, University College London, 2007. Lu dans le PDF en accès libre de UCL Discovery le 13 octobre 2026 ; numéro de page imprimé, vérifié sur l'image de la page. L'autrice a vécu à Koupor, dans la sous-préfecture de Fianga, de 1992 à 2002, avec deux séjours en 2004 et 2006."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2007,
+              "to": 2007,
+              "label": "Thèse de 2007, terrain de 1992 à 2006"
+            },
+            "era": "modern",
+            "statement": "Le nom Kera est parfois mis de côté en voyage : les Kera, qui sentent la domination des Tupuri et ont adopté beaucoup de leurs coutumes, se disent alors Tupuri, selon Mary Pearce. Elle note aussi que le kera est une langue tchadique, alors que le tupuri, parlé par leurs voisins les plus proches, est une langue nigéro-congolaise.",
+            "sources": [
+              {
+                "title": "The interaction of tone with voicing and foot structure: evidence from Kera phonetics and phonology",
+                "author": "Mary Pearce",
+                "year": 2007,
+                "url": "https://discovery.ucl.ac.uk/id/eprint/1445070/1/U592383.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 256",
+                "notes": "Thèse de doctorat, University College London, 2007. Lu dans le PDF en accès libre de UCL Discovery le 13 octobre 2026 ; numéro de page imprimé, vérifié sur l'image de la page. L'autrice a vécu à Koupor, dans la sous-préfecture de Fianga, de 1992 à 2002, avec deux séjours en 2004 et 2006."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1965,
+              "to": 1965,
+              "label": "Livre publié en 1965"
+            },
+            "era": "modern",
+            "formAsWritten": "Kéra",
+            "birth": true,
+            "statement": "Le nom Kera apparaît par écrit, sous la forme Kéra, dans Le bassin du moyen Logone du géographe Jean Cabot, qui présente les Kéra comme un rameau des Toubouri, établi à l'est et au sud du lac de Tikem. Selon lui, ils se distinguent des Toubouri surtout par leur langue, et des villages ou des quartiers voisins parlent tantôt l'une, tantôt l'autre. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "sources": [
+              {
+                "title": "Le bassin du moyen Logone",
+                "author": "Jean Cabot",
+                "year": 1965,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_6/Mem_cm/10420.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 78",
+                "notes": "Paris, ORSTOM, coll. Mémoires, n° 8. Lu dans la numérisation de l'IRD (Horizon) le 13 octobre 2026. Le numéro de page est celui imprimé, vérifié sur l'image de la page ; la section « Les Kéra » s'y trouve."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Peuplement des lacs Fianga et Tikem, sans date"
+            },
+            "before": true,
+            "statement": "Le groupe que le nom Kera désignera plus tard se forme, selon le géographe Christian Seignobos, près des lacs Fianga et Tikem, où s'achève la migration de groupes venus du Chari, du pays dam (Mondo, Mafalling, Bousso), à côté des gens du pays tupuri.",
+            "sources": [
+              {
+                "title": "Mise en place du peuplement et répartition ethnique",
+                "author": "Christian Seignobos",
+                "year": 2000,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers16-08/010021994.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "planche 7",
+                "notes": "Dans Atlas de la province Extrême-Nord Cameroun, IRD, 2000 ; la planche n'a pas de numéro de page propre. Lu dans le PDF de l'IRD (Horizon) le 13 octobre 2026, section « Les Tupuri »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
