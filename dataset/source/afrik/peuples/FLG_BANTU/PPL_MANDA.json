@@ -90,5 +90,74 @@
         "source_kind": "encyclopedia"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Manda désigne un peuple du sud de la Tanzanie, le long du lac Nyasa, et la langue qu'il parle. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. On ne sait pas avec certitude depuis quand ni d'où vient le nom Manda. Il ne faut pas le confondre avec le nom Nyasa, qui désigne le lac.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Manda",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple de la rive est du lac Nyasa et de sa langue ; on ne sait pas d'où il vient.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Manda est le nom de la langue dans la norme ISO 639-3, sous le code mgs, avec la précision « Tanzania ». Maho la range, dans sa liste de 2009, sous le code N11, avec la variante Manda-Matumba.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, Manda (Tanzania) [mgs]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/mgs",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 13 octobre 2026."
+              },
+              {
+                "title": "New Updated Guthrie List Online (NUGL Online), version du 4 juin 2009",
+                "author": "Jouni Filip Maho",
+                "year": 2009,
+                "url": "https://web.archive.org/web/20180203191542/http://goto.glocalnet.net/mahopapers/nuglonline.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 79",
+                "notes": "Liste de classification des langues bantoues, lue le 13 octobre 2026 dans la copie du 3 février 2018 conservée par la Wayback Machine. Entrée N11, « Manda mgs, Manda-Matumba », dans le groupe N10, « Manda Group »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Manda désigne chez le linguiste Rasmus Bernander une langue bantoue parlée le long du lac Nyasa, dans le sud de la Tanzanie. Il la dit presque non décrite. On ne sait pas avec certitude d'où vient ce nom, ni depuis quand il est écrit.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Grammar and grammaticalization in Manda: An analysis of the wider TAM domain in a Tanzanian Bantu language",
+                "author": "Rasmus Bernander",
+                "year": 2017,
+                "url": "https://gupea.ub.gu.se/handle/2077/52690",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Thèse de doctorat, université de Göteborg, 2017. Nous avons lu seulement le résumé de la notice du dépôt de l'université, le 13 octobre 2026 ; le texte de la thèse n'a pas pu être ouvert."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
