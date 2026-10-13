@@ -108,5 +108,144 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Tafi désigne un peuple de quatre villes du district de Hohoe, dans la région de la Volta, au Ghana. Ce peuple se nomme lui-même Baagbɔ, et sa langue s'appelle Tɩgbɔ. Tafi est le nom que lui auraient donné les Ewe, selon la tradition des Tafi : il voudrait dire « voleurs de têtes ». Cette tradition est la seule explication que nous avons lue ; nous la présentons plus bas, avec sa plus ancienne trace écrite, de 1898.",
+    "names": [
+      {
+        "nameText": "Baagbɔ",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tcd",
+        "namedBy": null,
+        "shortLine": "Le nom que les Tafi se donnent ; leur langue s'appelle Tɩgbɔ.",
+        "usedIn": ["tcd"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Baagbɔ, qui fait Agbɔ au singulier, est celui que les Tafi se donnent, et leur langue s'appelle Tɩgbɔ, selon la linguiste Mercy Bobuafor. Les sources que nous avons lues n'expliquent pas l'origine de ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A grammar of Tafi",
+                "author": "Mercy Bobuafor",
+                "year": 2013,
+                "url": "https://hdl.handle.net/1887/20916",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Thèse, université de Leyde, LOT, 2013. Lue dans une copie non officielle du texte complet ; la notice de l'université de Leyde donne la thèse. Page 1, section 1.1 : « They refer to themselves as Baagbɔ (sg. Agbɔ) and their language as Tɩgbɔ »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tafi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "ewe",
+        "namedBy": "Les Ewe, selon les Tafi",
+        "shortLine": "Le nom que les Ewe auraient donné à ce peuple, écrit dès 1898 ; il voudrait dire « voleurs de têtes ».",
+        "usedIn": ["ewe", "eng", "fra"],
+        "periodLabel": "Écrit dès 1898 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Tafi viendrait de l'ewe tǎfilawo, « voleurs de têtes » : selon les Tafi, leurs guerriers, qui étaient aussi chasseurs, décapitaient de nuit des Ewe qui voulaient prendre leurs terres, et les Ewe disaient que les « voleurs de têtes » avaient encore frappé. C'est ainsi que les Ewe leur auraient donné ce nom, selon la tradition que rapporte Mercy Bobuafor.",
+            "hypothesisGroup": "origine du nom Tafi",
+            "sources": [
+              {
+                "title": "A grammar of Tafi",
+                "author": "Mercy Bobuafor",
+                "year": 2013,
+                "url": "https://hdl.handle.net/1887/20916",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "pp. 1 et 3",
+                "notes": "Thèse, université de Leyde, LOT, 2013. Lue dans une copie non officielle du texte complet ; la notice de l'université de Leyde donne la thèse. Page 1 : le nom Tafi, que les Tafi disent donné par les Ewe voisins, voudrait dire « voleurs de têtes (humaines) » ; page 3 : le récit des décapitations et l'exclamation des Ewe, « This is how the Ewes gave them the ethnonym Tafi »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Tafi désigne le peuple, sa langue et son pays, dans quatre villes du district de Hohoe, dans la région de la Volta : Agɔme, Abuiƒe, Madɔ et Atome. Le recensement ghanéen de 2010 y compte 16 700 habitants, selon Mercy Bobuafor. Les sources n'expliquent le nom que par la tradition des Tafi ; nous la présentons ici.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A grammar of Tafi",
+                "author": "Mercy Bobuafor",
+                "year": 2013,
+                "url": "https://hdl.handle.net/1887/20916",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Thèse, université de Leyde, LOT, 2013. Lue dans une copie non officielle du texte complet ; la notice de l'université de Leyde donne la thèse. Page 1 : « Tafi is the name used by other people to refer to the place, language and the people » ; quatre communautés ; 16 700 habitants au recensement de 2010."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1898,
+              "to": 1898,
+              "label": "1898"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tafi apparaît par écrit chez l'officier Rudolf Plehn, qui range les Tafi parmi quatre peuples voisins de Misahöhe et note que les Avatime, en arrivant, avaient déjà trouvé les Tafi sur place. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Tafi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Beiträge zur Völkerkunde des Togo-Gebietes",
+                "author": "Rudolf Plehn",
+                "year": 1898,
+                "url": "https://archive.org/details/beitrgezurvlkerk00pleh",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "pp. 17-18",
+                "notes": "Thèse de doctorat, université de Halle, 1898 ; la pagination citée est celle de cette thèse. Lu en allemand dans la numérisation d'Internet Archive ; traduction de l'équipe. Page 17 : « Die vier Stämme Avatime, Logha, Tafi, Nyambo » ; page 18 : « dass die Avatime bei ihrer Einwanderung die Tafi-Leute bereits vorfanden ». Pages lues sur l'image des pages."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant le nom Tafi"
+            },
+            "statement": "On parle alors d'Assini comme du pays d'où les ancêtres des Tafi disent être venus. Ils racontent avoir traversé le Volta, puis la rivière Dayĩ grâce à un python, avant de s'installer à Anatu, au pied d'une montagne. Ils disent aussi vivre sur leurs terres avant l'arrivée des Avatime et des Ewe, selon la tradition rapportée par Mercy Bobuafor.",
+            "before": true,
+            "sources": [
+              {
+                "title": "A grammar of Tafi",
+                "author": "Mercy Bobuafor",
+                "year": 2013,
+                "url": "https://hdl.handle.net/1887/20916",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "pp. 1-3",
+                "notes": "Thèse, université de Leyde, LOT, 2013. Lue dans une copie non officielle du texte complet ; la notice de l'université de Leyde donne la thèse. Pages 1 à 3 : tradition orale des Tafi sur la migration depuis Assini, la traversée du Volta et de la rivière Dayĩ, l'installation à Anatu, et leur présence avant les Avatime et les Ewe."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
