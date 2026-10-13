@@ -99,5 +99,108 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Oyda désigne un peuple de la zone Gamo-Gofa, dans le sud-ouest de l'Éthiopie, sa langue et le district où il vit ; il se nomme lui-même Oyda. Les anciens relient ce nom à un mot qui veut dire « siège ». On ne connaît pas la plus ancienne trace de ce nom. Nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Oyda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "oyd",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple, de sa langue et de son district ; les anciens le relient à un mot qui veut dire « siège ».",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Oyda désigne la langue, ceux qui la parlent et la région où ils vivent, selon la linguiste Azeb Amha. Le district administratif porte le même nom et fait partie de la zone Gamo-Gofa, dans le sud-ouest de l'Éthiopie.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Multi-media documentation of the Oyda Language",
+                "author": "Azeb Amha",
+                "year": 2013,
+                "url": "https://researchonline.jcu.edu.au/28529/1/28529_Amha_2013.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Dépliant de présentation du projet de documentation de la langue oyda ; l'année est celle du nom du fichier déposé sur JCU Research Online. Lu dans le PDF le 13 octobre 2026. Section « The Oyda People And Their Locality »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "Rapportée en 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Oyda viendrait du mot oida, qui veut dire « siège », selon des anciens oyda, dont la linguiste Azeb Amha rapporte le récit. Leurs ancêtres, au bout d'un long voyage du sud-est vers le nord-ouest, auraient ainsi dit le confort et l'hospitalité du lieu, en déclarant que c'était la place où il fallait être, le siège.",
+            "hypothesisGroup": "origine-du-nom-oyda",
+            "sources": [
+              {
+                "title": "Multi-media documentation of the Oyda Language",
+                "author": "Azeb Amha",
+                "year": 2013,
+                "url": "https://researchonline.jcu.edu.au/28529/1/28529_Amha_2013.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Dépliant de présentation du projet de documentation de la langue oyda ; l'année est celle du nom du fichier déposé sur JCU Research Online. Lu dans le PDF le 13 octobre 2026. Le récit est celui des anciens oyda, que l'autrice ne nomme pas ; elle écrit « allegedly »."
+              },
+              {
+                "title": "Oyda – DOBES Documentation of Endangered Languages, Max Planck Institute / JCU, 2013",
+                "author": "Projet DOBES (Max Planck Institute for Psycholinguistics)",
+                "year": 2013,
+                "url": "https://dobes.mpi.nl/projects/oyda/",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Page du projet, non datée (dernière mise à jour affichée : 18 juin 2017) ; lue le 13 octobre 2026. La page dit que le nom du peuple et de la langue vient du nom oyda, « siège », et qu'il évoque le confort et l'hospitalité que le lieu offrait aux différents clans ; elle relaie le même récit."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Oida",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "oyd",
+        "namedBy": null,
+        "shortLine": "Une autre façon d'écrire Oyda, avec un coup de glotte au début.",
+        "periodLabel": "En usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Oyda s'écrit aussi ʔoida, avec un coup de glotte au début, selon la linguiste Azeb Amha. C'est aussi, dans ce dépliant, le mot qui veut dire « siège ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Multi-media documentation of the Oyda Language",
+                "author": "Azeb Amha",
+                "year": 2013,
+                "url": "https://researchonline.jcu.edu.au/28529/1/28529_Amha_2013.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Dépliant de présentation du projet de documentation de la langue oyda ; l'année est celle du nom du fichier déposé sur JCU Research Online. Lu dans le PDF le 13 octobre 2026. Le dépliant écrit « Oyda [or: ʔoida] »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

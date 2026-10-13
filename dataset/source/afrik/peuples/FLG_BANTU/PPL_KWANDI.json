@@ -93,5 +93,88 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kwandi désigne un peuple de langue luyi du Barotseland, dans l'ouest de la Zambie, voisin des Kwangwa ; on écrit aussi Akwandi. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Nous n'avons trouvé aucune explication sourcée de l'origine du nom ; nous présentons plus bas ce que disent les sources.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Kwandi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple luyana du Barotseland ; une forme proche, Akwandi, est citée d'après un ouvrage de 1973.",
+        "periodLabel": "Une forme proche est citée d'après un ouvrage de 1973 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Kwandi désigne, dans la thèse de Liswaniso Kamuwanga, l'un des peuples du groupe luyana du Barotseland, avec les Kwangwa, les Muenyi et les Mbowe. Kamuwanga écrit que les Kwandi parlent un dialecte luyi, ce qui montre leur lien avec ce groupe.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Prayer for protection: a comparative perspective on Psalms in relation to Lozi prayer traditions",
+                "author": "Liswaniso Kamuwanga",
+                "year": 2008,
+                "url": "https://repository.up.ac.za/server/api/core/bitstreams/ade0dfa8-65e2-42d7-afcf-914a6ab8ad2f/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "Thèse de doctorat, université de Pretoria, 2008 ; chapitre 2, « Overview and research review », lu dans le PDF du chapitre le 13 octobre 2026. Section 2.2.2, « Migration and settlement » : l'auteur s'appuie sur Turner (1952), Gluckman (1968) et Jalla (1954), que le projet n'a pas lus. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1973,
+              "to": 1973,
+              "label": "1973, d'après Mainga"
+            },
+            "era": "modern",
+            "statement": "Le nom Kwandi a une forme proche, Akwandi, que Liswaniso Kamuwanga reprend en 2008 de l'historienne Mutumba Mainga (1973, p. 28) et de Brown (1998, p. 27). Mwanambinyi, parti du royaume luyana de Kalabo, installe sa chefferie dans la région de Senanga, et son peuple « est connu » sous le nom d'Akwandi. C'est la plus ancienne trace de ce nom que le projet connaît ; elle est de seconde main, car le projet n'a lu ni Mainga ni Brown. Elle ne dit pas depuis quand ce nom est employé.",
+            "formAsWritten": "Akwandi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Prayer for protection: a comparative perspective on Psalms in relation to Lozi prayer traditions",
+                "author": "Liswaniso Kamuwanga",
+                "year": 2008,
+                "url": "https://repository.up.ac.za/server/api/core/bitstreams/ade0dfa8-65e2-42d7-afcf-914a6ab8ad2f/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 26",
+                "notes": "Thèse de doctorat, université de Pretoria, 2008 ; chapitre 2, « Overview and research review », lu dans le PDF du chapitre le 13 octobre 2026. Section 2.2.3, « Kingship and expansion » : « His people are known as Akwandi (Mainga 1973:28; Brown 1998:27) ». Le projet n'a pas lu les deux ouvrages cités. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant le nom, selon la tradition rapportée"
+            },
+            "statement": "Avant que le nom Akwandi soit attesté, des petits groupes de la famille royale quittent le royaume luyana de Mboo, installé à Kalabo, et descendent vers le sud, après des querelles de succession, selon Liswaniso Kamuwanga, qui suit Jalla (1954). Les sources que nous avons lues ne disent pas sous quel nom les gens de Mwanambinyi se désignaient alors.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Prayer for protection: a comparative perspective on Psalms in relation to Lozi prayer traditions",
+                "author": "Liswaniso Kamuwanga",
+                "year": 2008,
+                "url": "https://repository.up.ac.za/server/api/core/bitstreams/ade0dfa8-65e2-42d7-afcf-914a6ab8ad2f/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 26",
+                "notes": "Thèse de doctorat, université de Pretoria, 2008 ; chapitre 2, « Overview and research review », lu dans le PDF du chapitre le 13 octobre 2026. Section 2.2.3 : « small bands of royalties drifted southwards from the Kalabo settlement perhaps after succession feuds ». Le projet n'a pas lu Jalla (1954). Page lue sur l'image."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
