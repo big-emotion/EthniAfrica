@@ -257,5 +257,343 @@
       "fieldPath": "peoples",
       "reason": "Le nom est aussi donné chez les Khassonké et les Somono, que nous ne présentons pas encore comme peuples."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Dembélé est un nom de clan, ou jamu, porté surtout au Mali, chez les Bambara, les Malinké, les Minyanka et les Sénoufo, entre autres. En bambara, il s'écrit Denbele ou Danbɛlɛ. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Dembélé",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan bambara, malinké, minyanka et sénoufo ; son origine est discutée.",
+        "periodLabel": "Écrit dès 1892 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Dembélé est la graphie française de Denbele, un nom de clan, ou jamu. Le dictionnaire des noms de clan le donne chez les Bambara, les Malinké, les Khassonké, les Somono, les Sénoufo et les Minyanka, sans lui donner de sens. Son origine est discutée ; nous présentons plus bas les explications que nous connaissons.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet lu le 11 octobre 2026. Entrée Denbele : variante Danbɛlɛ, six groupes, aucun sens donné au nom."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 31",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe, dirigé par A. Davydov et relu par V. Vydrin. Lu dans le PDF du dépôt de l'université le 11 octobre 2026 ; les passages cités sont traduits par nous. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages et les hypothèses qu'il transmet. Notice Denbele, page 31 : les graphies françaises et les groupes qui portent le nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Dembélé a pour équivalents, dans d'autres groupes, Traoré, Diouf chez les Wolof et Mukɔrɔ, selon le dictionnaire des noms de clan. Le clan observe des interdits : le vautour et, dans la région de Bougouni, le python.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet lu le 11 octobre 2026. Entrée Denbele : équivalents Traore, Juf et Mukɔrɔ ; interdits tuga, le vautour, et, à Bougouni, miniɲan, le python."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2002,
+              "to": 2007,
+              "label": "Écrit en 2002, cité en 2007"
+            },
+            "era": "modern",
+            "statement": "Le nom Dembélé serait frère des noms Traoré et Diabaté, et ces trois noms seraient partenaires de plaisanterie des Koné, des Diarra, des Kanté et des Condé. C'est ce qu'écrit Doumbia en 2002, cité par R. Jones dans une étude sur Bamako ; une partie seulement des habitants interrogés par Jones connaissaient ces liens.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 32",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe, dirigé par A. Davydov et relu par V. Vydrin. Lu dans le PDF du dépôt de l'université le 11 octobre 2026 ; les passages cités sont traduits par nous. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages et les hypothèses qu'il transmet. Notice Denbele, page 32 : citation en anglais de l'étude de R. Jones, 2007, p. 60, qui renvoie à Doumbia 2002, p. 33. L'étude de Jones n'a pas été lue ; seule la citation qu'en donne le mémoire l'a été."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dembélé est rangé par Hippolyte Bazin parmi les principaux noms de famille bambara, et parmi les plus nobles. Il l'écrit chaque fois avec le nom Traoré : « Dembélé ou Taraouélé », puis « Dembélé ou Tarawélé ».",
+            "formAsWritten": "Dembélé",
+            "actors": [
+              {
+                "name": "Hippolyte Bazin",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Dictionnaire bambara-français, précédé d'un abrégé de grammaire bambara",
+                "author": "Hippolyte Bazin",
+                "year": 1906,
+                "url": "https://archive.org/details/DictionnaireBambaraBazin",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 7 et p. 151",
+                "notes": "Paris, Imprimerie nationale, 1906. L'auteur est vicaire apostolique du Soudan français. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 7 de l'abrégé de grammaire, sur les noms de famille, ou dyamou ; page 151, article Dyamou."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dembélé a un surnom, Nogoka, et figure dans un proverbe, « les Dembélé ne sont pas des Peuls », qu'Hippolyte Bazin présente comme une parole méprisante pour les Peuls.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionnaire bambara-français, précédé d'un abrégé de grammaire bambara",
+                "author": "Hippolyte Bazin",
+                "year": 1906,
+                "url": "https://archive.org/details/DictionnaireBambaraBazin",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 396 et p. 438",
+                "notes": "Paris, Imprimerie nationale, 1906. L'auteur est vicaire apostolique du Soudan français. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 396, article Méré ; page 438, article Nogoka, « surnom des Dembélé »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dembélé est associé par Louis Desplagnes à un interdit alimentaire : les Traoré-Dembélé ne doivent pas manger les fruits du fromager.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Le plateau central nigérien : une mission archéologique et ethnographique au Soudan français",
+                "author": "Louis Desplagnes",
+                "year": 1907,
+                "url": "https://archive.org/details/leplateaucentral00desp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 159",
+                "notes": "Paris, Émile Larose, 1907. L'auteur, lieutenant d'infanterie coloniale, rend compte d'une mission menée dans la boucle du Niger, autour de Bandiagara et de Djenné. Auteur de l'époque coloniale, cité pour ce qu'il rapporte et pour ses propres hypothèses. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 159 : les « Taraore-Dembele qui ne doivent pas manger des fruits du fromager »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1892,
+              "label": "Voyage de 1887-1889, récit publié en 1892"
+            },
+            "era": "polity",
+            "statement": "Le nom Dembélé est écrit « Dambélé » par Louis-Gustave Binger chez les Sénoufo, qu'il appelle Siène-ré, avec d'autres noms de famille mandé. Binger pense que les Sénoufo ont pris ces noms aux Mandé au temps de l'empire du Mali.",
+            "formAsWritten": "Dambélé",
+            "actors": [
+              {
+                "name": "Louis-Gustave Binger",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 1, p. 513",
+                "notes": "Hachette, Paris, 1892, deux tomes ; le récit avait d'abord paru dans la revue Le Tour du monde en 1891. Lu dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée, le 11 octobre 2026. Tome 1, page 513 : chez les Siène-ré, « des Kouroubari, des Kamara, et des Dambélé »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1892,
+              "label": "Voyage de 1887-1889, récit publié en 1892"
+            },
+            "era": "polity",
+            "statement": "Le nom Dembélé est écrit « dambélé » par Louis-Gustave Binger, une forme proche, qui décrit Sanancoro, au sud de Bamako, comme un village « tous bambara, des tribus sokho et dambélé ». C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand un voyageur l'a noté, pas depuis quand des familles le portent.",
+            "formAsWritten": "dambélé",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Louis-Gustave Binger",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 1, p. 17",
+                "notes": "Hachette, Paris, 1892, deux tomes ; le récit avait d'abord paru dans la revue Le Tour du monde en 1891. Lu dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée, le 11 octobre 2026. Tome 1, page 17, étape du 2 juillet 1887 à Sanancoro."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1230,
+              "to": 1230,
+              "label": "Vers 1230, selon l'auteur"
+            },
+            "era": "polity",
+            "statement": "Le nom Dembélé serait celui de familles alliées aux Traoré, aux Konaté et à d'autres dans la confédération de Ganna, vaincue vers 1230. Les Dembélé et les Konaté se seraient alors déclarés griots des vainqueurs, selon Louis Desplagnes.",
+            "sources": [
+              {
+                "title": "Le plateau central nigérien : une mission archéologique et ethnographique au Soudan français",
+                "author": "Louis Desplagnes",
+                "year": 1907,
+                "url": "https://archive.org/details/leplateaucentral00desp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 196",
+                "notes": "Paris, Émile Larose, 1907. L'auteur, lieutenant d'infanterie coloniale, rend compte d'une mission menée dans la boucle du Niger, autour de Bandiagara et de Djenné. Auteur de l'époque coloniale, cité pour ce qu'il rapporte et pour ses propres hypothèses. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 196 : « les confédérés Ndao, Fofana, Dion, Taraoré, Dembelé, Konaté », puis « les Dembelé et les Konaté se déclarèrent griots des vainqueurs ». L'auteur renvoie au Tarikh es-Soudan et aux légendes soninké publiées par Tautain en 1895."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Proposée en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dembélé serait un terme qui rappelle les familles maures, ou Fontankis : la famille royale Traoré des anciens clans Ouakoré appellerait ainsi ses jeunes gens pour montrer ses origines et ses alliances, selon Louis Desplagnes.",
+            "hypothesisGroup": "origine du nom Dembélé",
+            "sources": [
+              {
+                "title": "Le plateau central nigérien : une mission archéologique et ethnographique au Soudan français",
+                "author": "Louis Desplagnes",
+                "year": 1907,
+                "url": "https://archive.org/details/leplateaucentral00desp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 148",
+                "notes": "Paris, Émile Larose, 1907. L'auteur, lieutenant d'infanterie coloniale, rend compte d'une mission menée dans la boucle du Niger, autour de Bandiagara et de Djenné. Auteur de l'époque coloniale, cité pour ce qu'il rapporte et pour ses propres hypothèses. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 148 : la famille royale Taraore « offre la particularité, pour montrer ses multiples origines et alliances, de dénommer les jeunes gens Dembele, terme qui rappelle les familles maures ou Fontankis »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1959,
+              "to": 2017,
+              "label": "Notée en 1959, rapportée en 2017"
+            },
+            "statement": "Le nom Dembélé voudrait dire « le fils du serpent », de den, « enfant », et bele, « serpent ». C'est une explication populaire notée en 1959 par Molinie, un officier de la marine française, d'après des griots qu'il ne nomme pas, selon le mémoire d'E. A. Bogacheva.",
+            "hypothesisGroup": "origine du nom Dembélé",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 32-33",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe, dirigé par A. Davydov et relu par V. Vydrin. Lu dans le PDF du dépôt de l'université le 11 octobre 2026 ; les passages cités sont traduits par nous. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages et les hypothèses qu'il transmet. Notice Denbele, pages 32 et 33, rubrique « étymologie populaire », d'après le dictionnaire des noms rédigé en 1959 par Molinie pour les Européens en poste en Afrique-Occidentale française. Ce dictionnaire n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "Proposée en 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Dembélé viendrait des langues voltaïques : en sénoufo, plusieurs noms de groupes sociaux finissent en -mbele, comme fonombele, les forgerons. Un nom proche, Tembele, a un rang élevé chez les Dogon. Le mémoire d'E. A. Bogacheva présente cette hypothèse comme probable, pas comme établie.",
+            "hypothesisGroup": "origine du nom Dembélé",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 33",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe, dirigé par A. Davydov et relu par V. Vydrin. Lu dans le PDF du dépôt de l'université le 11 octobre 2026 ; les passages cités sont traduits par nous. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages et les hypothèses qu'il transmet. Notice Denbele, page 33, rubrique « étymologie scientifique probable », tirée sans source précisée du matériau réuni par V. Vydrin et A. Davydov."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Denbele",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bam",
+        "namedBy": null,
+        "shortLine": "La forme bambara du nom de clan Dembélé.",
+        "usedIn": ["bam"],
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Denbele est la forme bambara du nom de clan que le français écrit Dembélé. Le dictionnaire des noms de clan l'écrit aussi Danbɛlɛ et donne Donsira comme nom des femmes du clan, sans donner de sens au nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet lu le 11 octobre 2026. Entrée Denbele : variante Danbɛlɛ ; Donsira, nom des femmes du clan ; aucun sens donné au nom."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

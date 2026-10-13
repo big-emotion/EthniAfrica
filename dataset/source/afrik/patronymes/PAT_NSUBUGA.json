@@ -82,5 +82,93 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Nsubuga », « Baganda », « Buganda », « Uganda », « clan name », « totem », « onomastics », « etymology », « transmission », « alliance », « caste », « homonym » et « obituary », les dépôts de Makerere et Tangaza sur les noms ganda, ainsi que la page Forebears dédiée n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Nsubuga est un nom que les Baganda, en Ouganda, donnaient aux garçons du clan du Poisson-poumon, le clan Mamba, d'après John Roscoe en 1911 ; Nansubuga est sa forme pour les filles. On ne sait pas avec certitude ce qu'il veut dire : les sources lues ne lui donnent pas de sens.",
+    "names": [
+      {
+        "nameText": "Nsubuga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lug",
+        "namedBy": null,
+        "shortLine": "Un nom de garçon du clan ganda du Poisson-poumon (Mamba) ; son sens reste inconnu.",
+        "periodLabel": "Écrit dès 1911",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Nsubuga n'a pas de sens connu dans les sources lues. On ne sait pas avec certitude ce qu'il veut dire : Roscoe le donne parmi les noms du clan sans l'expliquer.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of Their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 151",
+                "notes": "Londres, Macmillan, 1911 ; numérisation d'Internet Archive. Chapitre VI, « The clans and their totems » : à la fin du clan du Poisson-poumon (Lung-fish, Mamba), Roscoe écrit « Boys were named : Mbiru, Nsubuga, Kasozi… » puis « Girls were named : Namubiru, Nansubuga… ». Missionnaire et ethnographe britannique, cité pour les formes qu'il écrit et ce qu'on lui rapporte. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Décrit en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Nsubuga est de ceux que les Baganda tiennent de leur clan. Une étude de 2024 sur les noms de clan ganda, menée à Kampala et à Wakiso auprès de 15 personnes, dit que ces noms donnent une identité propre aux Baganda et aident à éviter l'inceste, mais que l'école, la religion et la ville poussent à leur préférer des noms plus récents. Le résumé lu ne cite pas Nsubuga.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Changing trends in naming practices among the Baganda : a case of clan names",
+                "author": "Viola Nantayi",
+                "year": 2024,
+                "url": "https://makir.mak.ac.ug/items/d814cfc1-7dc2-4416-b64d-ff0552d34903",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "résumé",
+                "notes": "Mémoire de master, Makerere University, Kampala, 2024. Seul le résumé de la notice est ouvert : le texte intégral n'est pas accessible. Le résumé ne nomme pas Nsubuga. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nsubuga apparaît par écrit chez John Roscoe, parmi les noms de garçons du clan du Poisson-poumon : après Mbiru, l'ancêtre du clan, il écrit Nsubuga, puis Kasozi et Kizito. Pour les filles, il donne Nansubuga. C'est la plus ancienne trace de ce nom que le projet connaisse ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Nsubuga",
+            "birth": true,
+            "actors": [
+              {
+                "name": "John Roscoe",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Baganda: An Account of Their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 151",
+                "notes": "Londres, Macmillan, 1911 ; numérisation d'Internet Archive. Chapitre VI, « The clans and their totems » : à la fin du clan du Poisson-poumon (Lung-fish, Mamba), Roscoe écrit « Boys were named : Mbiru, Nsubuga, Kasozi… » puis « Girls were named : Namubiru, Nansubuga… ». Missionnaire et ethnographe britannique, cité pour les formes qu'il écrit et ce qu'on lui rapporte. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

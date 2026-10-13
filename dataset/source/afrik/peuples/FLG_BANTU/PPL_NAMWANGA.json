@@ -105,6 +105,185 @@
         "url": "https://glottolog.org/resource/languoid/id/nyam1275",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Mwanga of Zambia – PeopleGroups.org",
+        "url": "https://peoplegroups.org/people_groups/pg015612/",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Namwanga désigne un peuple de langue bantoue établi de part et d'autre de la frontière entre la Zambie et la Tanzanie, autour de Nakonde et d'Isoka, qui se nomme lui-même Winamwanga. En Tanzanie, on dit plutôt Nyamwanga. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Winamwanga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mwn",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne, écrit dès 1897 ; son origine n'est pas connue.",
+        "periodLabel": "Écrit depuis 1897 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Winamwanga est celui qu'emploie H. M. F. Sinkamba dans Imikalile ya Winamwanga, un livre écrit en chinamwanga et imprimé à Ndola, en Zambie, pour que les jeunes aient des livres dans leur langue. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Imikalile ya Winamwanga",
+                "author": "H. M. F. Sinkamba",
+                "year": 1984,
+                "url": "https://archive.org/details/imikalile-ya-winamwanga",
+                "tier": "referenced",
+                "source_kind": "community",
+                "page": "titre et préface",
+                "notes": "Livre en chinamwanga imprimé à Ndola. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Nous ne lisons pas le chinamwanga ; nous en retenons seulement le nom du peuple et celui de la langue."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1897,
+              "label": "Rapport pour 1896, publié en 1897"
+            },
+            "era": "colonial",
+            "statement": "Le nom Winamwanga apparaît par écrit dans le rapport de la station de Mwenzo publié en 1897 par la mission de Livingstonia, de l'Église libre d'Écosse : le missionnaire y note que les gens du Wiwa parlent la même langue que les Winamwanga. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Winamwanga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Livingstonia Mission of the Free Church of Scotland, with Report for 1896-1897",
+                "author": "Église libre d'Écosse, Comité des missions étrangères",
+                "year": 1897,
+                "url": "https://archive.org/details/livingstoniamiss00unse",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 31",
+                "notes": "Rapport de la station de Mwenzo, tenue par le pasteur Alexander Dewar. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nyamwanga",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "mwn",
+        "namedBy": null,
+        "shortLine": "Le nom employé en Tanzanie ; noté dès 1879 sous la forme Inyamwanga.",
+        "periodLabel": "Noté depuis 1879 ; en usage en Tanzanie",
+        "accounts": [
+          {
+            "period": {
+              "from": 1890,
+              "to": 1891,
+              "label": "Entre fin 1890 et début 1891"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nyamwanga figure dans le récit d'Alfred Sharpe, qui se rend depuis Mwenzo à la ville de Chikanamalira, « chef suprême du peuple wa-nyamwanga ».",
+            "formAsWritten": "Wa-Nyamwanga",
+            "sources": [
+              {
+                "title": "A Journey to Garenganze",
+                "author": "Alfred Sharpe",
+                "year": 1892,
+                "url": "https://archive.org/details/in.ernet.dli.2015.463859",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 46",
+                "notes": "Proceedings of the Royal Geographical Society, vol. 14, 1892. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1879,
+              "to": 1879,
+              "label": "Octobre 1879"
+            },
+            "era": "polity",
+            "statement": "Le nom Nyamwanga sert aussi chez Thomson à nommer les habitants : il range les Wanyamwanga parmi les peuples du haut plateau, avec les Wanyika, les Wamambwe et les Walungu, entre lesquels il ne voit pas de frontière nette.",
+            "formAsWritten": "Wanyamwanga",
+            "sources": [
+              {
+                "title": "To the Central African Lakes and Back, volume 1",
+                "author": "Joseph Thomson",
+                "year": 1881,
+                "url": "https://archive.org/details/tocentralafrica00thomgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 316",
+                "notes": "Londres, Sampson Low, 1881, récit de l'expédition de la Royal Geographical Society de 1878-1880. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1879,
+              "to": 1879,
+              "label": "18 octobre 1879"
+            },
+            "era": "polity",
+            "statement": "Le nom Nyamwanga apparaît, sous une forme proche, dans le récit de l'explorateur écossais Joseph Thomson : après les monts Chingambo, son expédition entre dans « un nouveau pays appelé Inyamwanga », dont le chef, Mlilo, réside à Mswilo. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Inyamwanga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "To the Central African Lakes and Back, volume 1",
+                "author": "Joseph Thomson",
+                "year": 1881,
+                "url": "https://archive.org/details/tocentralafrica00thomgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 293-294",
+                "notes": "Londres, Sampson Low, 1881, récit de l'expédition de la Royal Geographical Society de 1878-1880. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Namwanga",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "mwn",
+        "namedBy": null,
+        "shortLine": "Le nom courant en Zambie, écrit dès 1899 ; son origine n'est pas connue.",
+        "periodLabel": "Écrit depuis 1899 ; en usage en Zambie",
+        "accounts": [
+          {
+            "period": {
+              "from": 1898,
+              "to": 1899,
+              "label": "1898, publié en 1899"
+            },
+            "era": "colonial",
+            "statement": "Le nom Namwanga apparaît par écrit dans la communication du capitaine Boileau, membre de la commission de frontière anglo-allemande, publiée par The Geographical Journal : il range les Namwanga parmi les peuples que la nouvelle frontière traverse, « à peu près également partagés » entre les deux côtés. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Namwanga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Nyasa-Tanganyika Plateau",
+                "author": "Capitaine Boileau",
+                "year": 1899,
+                "url": "https://archive.org/details/sim_geographical-journal_1899-06_13_6",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 584-585",
+                "notes": "The Geographical Journal, vol. 13, n° 6, juin 1899, communication lue à la Royal Geographical Society le 24 avril 1899. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

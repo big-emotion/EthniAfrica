@@ -88,5 +88,62 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Essomba », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la lecture de « Traditions et Cultures — Communauté urbaine de Yaoundé » et « Origines des Éwondo : récit de Ndougsa Vincent » n'ont établi aucune règle propre à Essomba permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Essomba est un nom de lignage ewondo, au Cameroun. Les sources lues ne donnent ni son sens ni sa plus ancienne trace écrite : on ne sait pas avec certitude depuis quand il existe. Elles le montrent dans le premier nom de Yaoundé, « chez Essomba », et dans un récit sur l'origine des familles ewondo ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Essomba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de lignage ewondo, au Cameroun, aussi celui d'un chef de Yaoundé.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Rapporté en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Essomba serait celui d'Essomba Na Ba'ana, l'un des trois enfants de Foura Togo et de sa femme Na Baana, dont les descendants auraient donné plusieurs familles et lignages ewondo, selon un récit attribué à Ndougsa Vincent que publie la presse camerounaise.",
+            "sources": [
+              {
+                "title": "Origines des Éwondo : récit de Ndougsa Vincent",
+                "author": "Armand Djaleu",
+                "year": 2024,
+                "url": "https://actucameroun.com/2024/02/18/histoire-voici-les-origines-des-ewondo/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article de presse du 18 février 2024, lu le 13 octobre 2026 dans la copie conservée par Internet Archive. Il reproduit un récit attribué à Ndougsa Vincent, sans transcription primaire : Foura Togo aurait eu trois enfants avec Na Baana, dont Essomba Na Ba'ana, et la descendance d'Essomba Na Ba'ana aurait donné plusieurs familles ewondo, comme les Mvog Atangana Mballa, Mvog Tsoungui Mballa et Mvog Fouda Mballa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant l'arrivée des Allemands"
+            },
+            "era": "polity",
+            "statement": "Le nom Essomba est celui du chef dont dépend le premier nom de Yaoundé, Epsum, qui veut dire « chez Essomba », selon la Communauté urbaine de Yaoundé.",
+            "sources": [
+              {
+                "title": "Traditions et Cultures — Communauté urbaine de Yaoundé",
+                "author": "Communauté urbaine de Yaoundé",
+                "year": null,
+                "url": "https://yaounde.cm/?page_id=1907",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section « Histoire », paragraphe sur les Ewondo",
+                "notes": "Page officielle de la Communauté urbaine de Yaoundé, sans date, lue le 13 octobre 2026. Elle dit que chaque famille ewondo est sous la direction d'un chef, et que « le premier nom de Yaoundé est « Epsum » c'est-à-dire, chez « Essomba » », ou « N'tsonun », chez « Essono Éla ». Elle ne donne ni le sens ni l'origine du nom Essomba."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

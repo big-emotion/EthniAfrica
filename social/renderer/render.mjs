@@ -43,6 +43,13 @@ const plain = (s) =>
       .replace(/\{area-[abc]:([^}]+)\}/g, "$1")
   );
 const nonempty = (s) => typeof s === "string" && s.trim().length > 0;
+const isCoordinate = (v) =>
+  v == null ||
+  Number.isFinite(v) ||
+  (Array.isArray(v) && v.every(isCoordinate));
+// Acceptance cases 11 and 14 of handoff.md (1.2.0).
+const ATLAS_MIN_GAP = 44,
+  ATLAS_MAX_LEADER = 72;
 const types = new Set([
   "opener",
   "explanation",
@@ -144,7 +151,7 @@ export function validateInput(data, mode = "final", version) {
       required(c.map && (c.map.dataRef || c.map.data), "Missing map data");
       if (c.map.dataRef) safePath(c.map.dataRef);
       required(
-        ["none", "quiet", "strong"].includes(c.map.borders || "none"),
+        ["none", "quiet", "strong", "dotted"].includes(c.map.borders || "none"),
         "Unknown border layer"
       );
       required(
@@ -159,10 +166,11 @@ export function validateInput(data, mode = "final", version) {
             c.map.view[3] > 0,
           "Invalid map view"
         );
-      if (c.map.highlight || c.map.choropleth)
+      // 1.2.0 fills present-day states over dotted borders (maps.md, filled maps).
+      if (c.map.highlight || c.map.choropleth || c.map.categorical)
         required(
-          c.map.borders === "quiet",
-          "Distribution maps require quiet borders"
+          ["quiet", "dotted"].includes(c.map.borders),
+          "Distribution maps require quiet or dotted borders"
         );
     }
     required(c.alt == null || nonempty(c.alt), "Empty alternative text");
@@ -284,6 +292,8 @@ async function snapshot(options) {
       const paths = [
         d.land,
         d.borders,
+        d.africa,
+        d.bordersMerged,
         d.inset?.d,
         ...(d.countries || []).map((x) => x.d),
         ...(d.lakes || []).map((x) => x.d),
@@ -297,6 +307,36 @@ async function snapshot(options) {
         ),
         "Invalid SVG map geometry"
       );
+      // The atlas engine writes these coordinates straight into SVG attributes.
+      const m = c.map;
+      const coordinates = [
+        ...Object.values(d.centers || {}),
+        ...(m.atlas?.entries || []).flatMap((e) => [
+          e.x,
+          e.y,
+          e.offset,
+          ...(e.zone
+            ? [
+                "cx",
+                "cy",
+                "rx",
+                "ry",
+                "rot",
+                "wobble",
+                "labelAt",
+                "points",
+              ].map((k) => e.zone[k])
+            : []),
+        ]),
+        ...(m.atlas?.keys || []).flatMap((k) => [k.x, k.y, k.width, k.columns]),
+        ...(m.categorical?.zones || []).flatMap((z) => [
+          z.at,
+          z.leader,
+          z.size,
+        ]),
+        ...(m.marks || []).map((mk) => mk.offset),
+      ];
+      required(coordinates.every(isCoordinate), "Invalid atlas map geometry");
     }
   }
   return {
@@ -573,6 +613,19 @@ export async function verifyOutput(options) {
           !card.errors.length,
         "Invalid final/proof layout report"
       );
+    if (report.mode !== "diagnostic") {
+      required(
+        !(card.fit.collisions > 0),
+        "Map collisions in final/proof report"
+      );
+      const atlas = card.fit.atlas;
+      if (atlas)
+        required(
+          (atlas.minGap == null || atlas.minGap >= ATLAS_MIN_GAP) &&
+            (atlas.maxLeader == null || atlas.maxLeader <= ATLAS_MAX_LEADER),
+          "Atlas spacing outside the accepted limits"
+        );
+    }
     if (report.mode === "final")
       required(card.demo === false, "Demo in final report");
   }

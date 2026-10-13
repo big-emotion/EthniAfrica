@@ -234,6 +234,20 @@
     },
     "kingdoms": [
       {
+        "name": "Royaume de Kerma (Koush)",
+        "period": "IIe millénaire av. J.-C. (âge d'or vers 1780-1580 av. J.-C.)",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": -1780,
+          "endYear": -1500,
+          "precision": "approximate",
+          "datingNote": "Les bornes encadrent l'âge d'or du royaume de Koush, dont Kerma est la capitale, de 1780 à 1580 av. J.-C. selon Shehata Adam (HGA II), puis la conquête égyptienne commencée sous Thoutmosis Ier (vers 1500 av. J.-C.). Le royaume est plus ancien, mais la source ne date pas ses débuts."
+        },
+        "dominantPeoples": ["Nubiens"],
+        "politicalCenters": ["Kerma (capitale)"],
+        "historicalRole": "Royaume de Koush, dont la capitale est Kerma. Entre 1780 et 1580 av. J.-C., il profite de l'affaiblissement de la royauté égyptienne pour capter le commerce entre la basse et la haute vallée du Nil : c'est son âge d'or, selon Shehata Adam (HGA II). Les armées égyptiennes conquièrent ensuite, non sans mal, le couloir nubien, à partir du règne de Thoutmosis Ier."
+      },
+      {
         "name": "Royaume de Koush",
         "period": "VIIIe siècle av. J.-C. - IVe siècle apr. J.-C.",
         "entryType": "polity",
@@ -291,16 +305,17 @@
       },
       {
         "name": "Sultanat de Darfour",
-        "period": "XVIIe siècle - 1916",
+        "period": "Vers 1640 - 1874, puis 1898 - 1916",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1601,
+          "startYear": 1640,
           "endYear": 1916,
-          "precision": "century"
+          "precision": "approximate",
+          "datingNote": "Selon Y. F. Hasan et B. A. Ogot (HGA V), le sultanat kayra dure d'environ 1640 à 1874, est rétabli en 1898, puis annexé par le Soudan anglo-égyptien en 1916. Entre 1874 et 1898, le Darfour n'est pas un sultanat indépendant. La fiche donnait auparavant « XVIIe siècle - 1916 », sans cette interruption."
         },
         "dominantPeoples": ["Four", "Arabes soudanais", "autres groupes"],
         "politicalCenters": ["El Fasher"],
-        "historicalRole": "Sultanat islamique, contrôle du commerce transsaharien, résistance à la colonisation britannique, conquête britannique (1916)."
+        "historicalRole": "Sultanat de la dynastie kayra, dont Sulaymān Solongdungu est probablement le fondateur, vers 1640. Il prend fin en 1874, est rétabli en 1898, puis annexé en 1916, selon Y. F. Hasan et B. A. Ogot (HGA V). Sultanat islamique, contrôle du commerce transsaharien, résistance à la colonisation britannique, conquête britannique (1916)."
       },
       {
         "name": "Condominium anglo-égyptien",
@@ -478,6 +493,20 @@
         "url": "https://www.unfpa.org/data/world-population/SD",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Histoire générale de l'Afrique, V, ch. 7 : Le Soudan de 1500 à 1800",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par B. A. Ogot, chapitre d'Y. F. Hasan et B. A. Ogot (1999), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 224. « Le Sultanat kayra dura de 1640 environ à 1874. Il fut rétabli en 1898, puis finalement annexé par le Soudan anglo-égyptien en 1916. »"
+      },
+      {
+        "title": "Histoire générale de l'Afrique, II, ch. 8 : La Nubie, trait d'union entre l'Afrique centrale et la Méditerranée, facteur géographique de civilisation",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par G. Mokhtar, chapitre de Shehata Adam, avec le concours de J. Vercoutter (1980), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 257. La période de 1780 à 1580 av. J.-C. « semble avoir été l'âge d'or du royaume de Koush. Sa capitale, Kerma […] ». Page 258. « La conquête du Couloir nubien par les armées égyptiennes ne fut pas aisée » ; les Égyptiens conquièrent dès Thoutmosis Ier la région entre la IIe et la IVe cataracte."
       }
     ],
     "demographics": {

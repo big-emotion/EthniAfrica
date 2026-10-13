@@ -207,8 +207,8 @@
   "dense": false
  },
  "References/seq-3.png": {
-  "url": "/_blob/4c85b41aa380e5c5fc0a7c055cc42ec2",
-  "blob": "4c85b41aa380e5c5fc0a7c055cc42ec2",
+  "url": "/_blob/ea0e27704fd7d1950c057b4ab55e6878",
+  "blob": "ea0e27704fd7d1950c057b4ab55e6878",
   "w": 1080,
   "h": 1350,
   "kind": "reference",
@@ -378,8 +378,8 @@
   "dense": false
  },
  "References/map-fula-nombre-region.png": {
-  "url": "/_blob/3ed29311ef1d1b82ac627efb1c258e24",
-  "blob": "3ed29311ef1d1b82ac627efb1c258e24",
+  "url": "/_blob/f817e6f6c8a8a1cd60c0d952d309d39d",
+  "blob": "f817e6f6c8a8a1cd60c0d952d309d39d",
   "w": 1080,
   "h": 1350,
   "kind": "reference",
@@ -387,8 +387,8 @@
   "dense": false
  },
  "References/map-fula-part.png": {
-  "url": "/_blob/ecc67be8a4da2a7269733ebb86fc3243",
-  "blob": "ecc67be8a4da2a7269733ebb86fc3243",
+  "url": "/_blob/98e66e5783870050d0e89cb7846b3e2b",
+  "blob": "98e66e5783870050d0e89cb7846b3e2b",
   "w": 1080,
   "h": 1350,
   "kind": "reference",
@@ -398,6 +398,84 @@
  "Lecture/carte-fulbe-degrade-430.png": {
   "url": "/_blob/9e5d5205ea8fb4173ef641793a601eb7",
   "blob": "9e5d5205ea8fb4173ef641793a601eb7",
+  "kind": "preview-size"
+ },
+ "References/atlas-1880.png": {
+  "url": "/_blob/a50aa4c19e08c3cdce5df7d2bc16b08b",
+  "blob": "a50aa4c19e08c3cdce5df7d2bc16b08b",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 352,
+  "dense": false
+ },
+ "References/atlas-1880-parchemin.png": {
+  "url": "/_blob/69e03da0855367e968fd3829c5b48aad",
+  "blob": "69e03da0855367e968fd3829c5b48aad",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 352,
+  "dense": false
+ },
+ "References/atlas-1914.png": {
+  "url": "/_blob/3538a13aff39b23c4094ce6de16dc8a5",
+  "blob": "3538a13aff39b23c4094ce6de16dc8a5",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 455,
+  "dense": false
+ },
+ "References/atlas-independances.png": {
+  "url": "/_blob/60e3f5cc8024894f2c6ad6fdda65be57",
+  "blob": "60e3f5cc8024894f2c6ad6fdda65be57",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 452,
+  "dense": false
+ },
+ "References/atlas-1500.png": {
+  "url": "/_blob/184428a99d0c3008002ba171452c4f3d",
+  "blob": "184428a99d0c3008002ba171452c4f3d",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 419,
+  "dense": false
+ },
+ "References/atlas-capacite-45.png": {
+  "url": "/_blob/2123f2a09127a7fccead8e034c9dea22",
+  "blob": "2123f2a09127a7fccead8e034c9dea22",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 352,
+  "dense": false
+ },
+ "References/atlas-proto-collisions.png": {
+  "url": "/_blob/842ed0b2f5c178c8ab873cdda3911ec0",
+  "blob": "842ed0b2f5c178c8ab873cdda3911ec0",
+  "w": 1080,
+  "h": 1350,
+  "kind": "reference",
+  "panelHeight": 325,
+  "dense": false
+ },
+ "Lecture/atlas-serie-430.png": {
+  "url": "/_blob/9cec86377da99aa29eaad981c14914bc",
+  "blob": "9cec86377da99aa29eaad981c14914bc",
+  "kind": "preview-size"
+ },
+ "Lecture/atlas-serie-320.png": {
+  "url": "/_blob/d37f0b8c794f46893da85f3cc323b5b0",
+  "blob": "d37f0b8c794f46893da85f3cc323b5b0",
+  "kind": "preview-size"
+ },
+ "Lecture/atlas-nuit-parchemin-430.png": {
+  "url": "/_blob/383f004eb3b4ae63e5c5254f9bed1b8f",
+  "blob": "383f004eb3b4ae63e5c5254f9bed1b8f",
   "kind": "preview-size"
  }
 }

@@ -1,0 +1,509 @@
+{
+  "_meta": {
+    "format": "AFRIK JSON v2",
+    "entity": "lieu",
+    "directives": "Première région sur plusieurs pays (countryIds). Chaque forme garde sa date et sa source ; aucun nom n'est retenu contre les autres."
+  },
+  "id": "LOC_SAHARA",
+  "placeType": "region",
+  "nameMain": "Sahara",
+  "countryIds": [
+    "DZA",
+    "EGY",
+    "LBY",
+    "MLI",
+    "MAR",
+    "MRT",
+    "NER",
+    "SDN",
+    "TCD",
+    "TUN"
+  ],
+  "associatedPeoples": [
+    {
+      "peopleId": "PPL_TUAREG",
+      "relation": "Dans la langue des Touaregs, les mots ténéré et tanezruft désignent des étendues désertes ; ils sont devenus les noms de régions du Sahara."
+    }
+  ],
+  "summary": "Le Sahara est le grand désert du nord de l'Afrique, sur une dizaine de pays. Son nom vient d'un mot arabe qui veut dire « désert » : comment ce mot ordinaire est-il devenu le nom de cette région ?",
+  "gaps": [
+    {
+      "field": "countryIds",
+      "reason": "Le Sahara occidental, territoire au statut contesté, fait partie du Sahara, mais il n'a pas encore de fiche pays sur le site."
+    },
+    {
+      "field": "nameHistory.names[0].namedBy",
+      "reason": "Nous ne savons pas qui a employé le premier le mot arabe pour ce désert : c'est un mot ordinaire de la langue, sans date de naissance connue."
+    },
+    {
+      "field": "nameHistory.names[0].accounts",
+      "reason": "Nous avons vérifié le mot arabe d'al-Idrīsī dans le texte original : al-ṣaḥrāʾ. Nous avons lu Ibn Khaldūn seulement en traduction française : le mot arabe qu'il emploie reste à vérifier."
+    },
+    {
+      "field": "nameHistory.names[0].accounts",
+      "reason": "Nous ne savons pas encore quand les cartes et les livres d'Europe ont cessé d'appeler ce désert « Libye » pour l'appeler « Sahara », ni quand le nom apparaît pour la première fois en français."
+    },
+    {
+      "field": "nameHistory.names",
+      "reason": "Nous n'avons trouvé aucune source qui donne un nom du Sahara tout entier dans une langue du désert. Dans la langue des Touaregs, ténéré veut dire « plaine, désert » et tanezruft « désert sans eau ni pâturage » : ce sont des noms ordinaires devenus les noms de régions précises. Les mots du hassaniya, du teda, du kanouri et du songhay restent à chercher, y compris auprès de leurs locuteurs."
+    }
+  ],
+  "sources": [
+    {
+      "title": "An Arabic-English Lexicon, racine ṣ-ḥ-r",
+      "author": "Edward William Lane",
+      "year": 1863,
+      "url": "https://www.laneslexicon.com/word/%D8%B5%D8%AD%D8%B1%D8%A7",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Livre I, articles ṣaḥrāʾ, ṣuḥra et aṣḥar ; lu dans la transcription numérique du dictionnaire, page imprimée à vérifier."
+    },
+    {
+      "title": "al-Ṣaḥrāʾ",
+      "author": "Yves Callot, Robert Vernet et Jean Bisson",
+      "year": 1995,
+      "url": "https://referenceworks.brill.com/display/entries/EIEO/COM-0974.xml",
+      "tier": "referenced",
+      "source_kind": "encyclopedia",
+      "notes": "Encyclopédie de l'Islam, deuxième édition, tome VIII ; seul le premier paragraphe a été lu."
+    },
+    {
+      "title": "Britannica — Sahara",
+      "author": "Jeffrey Allman Gritzner et la rédaction de l'Encyclopaedia Britannica",
+      "year": null,
+      "url": "https://www.britannica.com/place/Sahara-desert-Africa",
+      "tier": "referenced",
+      "source_kind": "encyclopedia",
+      "notes": "Consulté le 11 octobre 2026."
+    },
+    {
+      "title": "Sahara, n.",
+      "author": "Oxford English Dictionary",
+      "year": 1909,
+      "url": "https://www.oed.com/dictionary/sahara_n",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Article publié en 1909, non révisé ; seule la partie publique a été lue."
+    },
+    {
+      "title": "Online Etymology Dictionary, entrée Sahara",
+      "author": "Douglas Harper, Online Etymology Dictionary",
+      "year": null,
+      "url": "https://www.etymonline.com/word/Sahara",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Rapporte l'explication du lexicographe Klein."
+    },
+    {
+      "title": "Description de l'Afrique et de l'Espagne",
+      "author": "al-Idrīsī, texte arabe et traduction de Reinhart Dozy et Michael Jan de Goeje",
+      "year": 1866,
+      "url": "https://archive.org/details/descriptiondela00idrgoog",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "page": "traduction, p. 9 ; texte arabe, p. 7-8",
+      "notes": "Ouvrage achevé en 1154. Traduction française, p. 9 ; texte arabe, p. 7-8, où le mot est al-ṣaḥrāʾ."
+    },
+    {
+      "title": "Chronica do descobrimento e conquista de Guiné",
+      "author": "Gomes Eanes de Zurara, édition du vicomte de Santarém",
+      "year": 1841,
+      "url": "https://archive.org/details/chronicadodesco00zuragoog",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "page": "chapitre XIII, p. 83",
+      "notes": "Chronique achevée vers 1453, restée manuscrite jusqu'à cette édition de 1841."
+    },
+    {
+      "title": "The History and Description of Africa",
+      "author": "Léon l'Africain (al-Ḥasan al-Wazzān), traduction anglaise de John Pory (1600), édition de Robert Brown",
+      "year": 1896,
+      "url": "https://archive.org/details/historyanddescr03porygoog",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "page": "livre I, p. 124",
+      "notes": "Texte italien imprimé à Venise en 1550 ; Pory a traduit la version latine de 1556. La graphie « Sarra » a été vérifiée dans l'édition italienne de 1583 ; nous n'avons pas vu celle de 1550."
+    },
+    {
+      "title": "Purchas his Pilgrimage",
+      "author": "Samuel Purchas",
+      "year": 1613,
+      "url": "https://archive.org/details/purchashispilgri00purc_0",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "page": "livre III, p. 228 ; livre VI, p. 535",
+      "notes": "« Zahara » au livre III, sur l'Asie ; « Sarra » au livre VI, sur l'Afrique."
+    },
+    {
+      "title": "Histoires, livre IV, chapitres 181 et 185",
+      "author": "Hérodote, traduction anglaise d'A. D. Godley",
+      "year": 1920,
+      "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0126%3Abook%3D4%3Achapter%3D181",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Texte grec du Ve siècle av. J.-C."
+    },
+    {
+      "title": "Saharien, -ienne",
+      "author": "Trésor de la langue française informatisé (ATILF-CNRS)",
+      "year": null,
+      "url": "https://www.cnrtl.fr/definition/saharien",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Le dictionnaire ne traite pas le nom propre Sahara, seulement l'adjectif."
+    },
+    {
+      "title": "Dictionnaire abrégé touareg-français (dialecte Ahaggar), tome II",
+      "author": "Charles de Foucauld, publié par René Basset",
+      "year": 1920,
+      "url": "https://archive.org/details/foucauld-touareg-abrege-2",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "page": "p. 275 et p. 303",
+      "notes": "Articles ténéré, p. 275, et tănezrouft, p. 303."
+    },
+    {
+      "title": "Dictionnaire français-touareg (dialecte des Taïtoq)",
+      "author": "Émile Masqueray",
+      "year": 1893,
+      "url": "https://archive.org/details/masqueray-dictionnaire-francais-touareg",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "page": "p. 85",
+      "notes": "Article « Désert »."
+    }
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sahara est le nom actuel de ce désert. Il vient d'un mot arabe ordinaire, qui veut dire « désert ». Les auteurs grecs, puis européens, l'ont longtemps appelé Libye. Le sens premier du mot arabe est discuté. L'histoire de ces noms est présentée plus bas.",
+    "names": [
+      {
+        "nameText": "Sahara",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "Du mot arabe ṣaḥrāʾ, « désert » : un mot ordinaire devenu le nom d'une région.",
+        "usedIn": ["fra"],
+        "periodLabel": "Écrit en arabe au XIIe siècle, en portugais vers 1453, en anglais en 1613",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Arabe classique"
+            },
+            "statement": "Le nom Sahara vient du mot arabe ṣaḥrāʾ (صحراء), qui veut dire « désert » : une étendue plate et nue, sans arbres ni collines. En arabe, c'est un nom ordinaire, qui peut désigner n'importe quel désert.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "An Arabic-English Lexicon, racine ṣ-ḥ-r",
+                "author": "Edward William Lane",
+                "year": 1863,
+                "url": "https://www.laneslexicon.com/word/%D8%B5%D8%AD%D8%B1%D8%A7",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Livre I, articles ṣaḥrāʾ, ṣuḥra et aṣḥar ; lu dans la transcription numérique du dictionnaire, page imprimée à vérifier."
+              },
+              {
+                "title": "Britannica — Sahara",
+                "author": "Jeffrey Allman Gritzner et la rédaction de l'Encyclopaedia Britannica",
+                "year": null,
+                "url": "https://www.britannica.com/place/Sahara-desert-Africa",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Consulté le 11 octobre 2026."
+              },
+              {
+                "title": "Sahara, n.",
+                "author": "Oxford English Dictionary",
+                "year": 1909,
+                "url": "https://www.oed.com/dictionary/sahara_n",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Article publié en 1909, non révisé ; seule la partie publique a été lue."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Arabe classique"
+            },
+            "statement": "Le mot ṣaḥrāʾ est, selon l'Encyclopédie de l'Islam, le féminin de l'adjectif aṣḥar, « fauve », la couleur d'une terre nue. D'autres ouvrages disent seulement que les deux mots sont liés, sans dire que l'un vient de l'autre.",
+            "aspect": "meaning",
+            "hypothesisGroup": "sens premier du mot arabe",
+            "sources": [
+              {
+                "title": "al-Ṣaḥrāʾ",
+                "author": "Yves Callot, Robert Vernet et Jean Bisson",
+                "year": 1995,
+                "url": "https://referenceworks.brill.com/display/entries/EIEO/COM-0974.xml",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopédie de l'Islam, deuxième édition, tome VIII ; seul le premier paragraphe a été lu."
+              },
+              {
+                "title": "Online Etymology Dictionary, entrée Sahara",
+                "author": "Douglas Harper, Online Etymology Dictionary",
+                "year": null,
+                "url": "https://www.etymonline.com/word/Sahara",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Rapporte l'explication du lexicographe Klein."
+              },
+              {
+                "title": "Britannica — Sahara",
+                "author": "Jeffrey Allman Gritzner et la rédaction de l'Encyclopaedia Britannica",
+                "year": null,
+                "url": "https://www.britannica.com/place/Sahara-desert-Africa",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Consulté le 11 octobre 2026."
+              },
+              {
+                "title": "An Arabic-English Lexicon, racine ṣ-ḥ-r",
+                "author": "Edward William Lane",
+                "year": 1863,
+                "url": "https://www.laneslexicon.com/word/%D8%B5%D8%AD%D8%B1%D8%A7",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Livre I, articles ṣaḥrāʾ, ṣuḥra et aṣḥar ; lu dans la transcription numérique du dictionnaire, page imprimée à vérifier."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": -499,
+              "to": -400,
+              "label": "Ve siècle av. J.-C."
+            },
+            "era": "polity",
+            "statement": "Avant le nom Sahara, l'historien grec Hérodote décrit l'intérieur de la Libye, nom qu'il donne à l'Afrique à l'ouest de l'Égypte, comme une région désertique et sans eau, sans lui donner de nom propre.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoires, livre IV, chapitres 181 et 185",
+                "author": "Hérodote, traduction anglaise d'A. D. Godley",
+                "year": 1920,
+                "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0126%3Abook%3D4%3Achapter%3D181",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Texte grec du Ve siècle av. J.-C."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1154,
+              "to": 1154,
+              "label": "1154"
+            },
+            "era": "polity",
+            "statement": "Le nom Sahara désigne, chez le géographe al-Idrīsī en 1154, « le grand désert (Sahara) qui sépare le Soudan du pays des Berbers », selon la traduction française de son livre. Le texte arabe dit al-ṣaḥrāʾ al-muttaṣila, « le désert d'un seul tenant », entre la terre des Noirs et celle des Berbères. Le mot « grand » et le mot « Sahara » entre parenthèses viennent des traducteurs. Le Soudan est alors le pays des peuples noirs, au sud du désert.",
+            "birth": true,
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "al-Idrīsī",
+                "role": "géographe, écrit pour le roi Roger II de Sicile"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Description de l'Afrique et de l'Espagne",
+                "author": "al-Idrīsī, texte arabe et traduction de Reinhart Dozy et Michael Jan de Goeje",
+                "year": 1866,
+                "url": "https://archive.org/details/descriptiondela00idrgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "traduction, p. 9 ; texte arabe, p. 7-8",
+                "notes": "Ouvrage achevé en 1154. Traduction française, p. 9 ; texte arabe, p. 7-8, où le mot est al-ṣaḥrāʾ."
+              },
+              {
+                "title": "al-Ṣaḥrāʾ",
+                "author": "Yves Callot, Robert Vernet et Jean Bisson",
+                "year": 1995,
+                "url": "https://referenceworks.brill.com/display/entries/EIEO/COM-0974.xml",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopédie de l'Islam, deuxième édition, tome VIII ; seul le premier paragraphe a été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1440,
+              "to": 1460,
+              "label": "Vers 1453, à propos de voyages des années 1440"
+            },
+            "era": "polity",
+            "statement": "Le nom Sahara est écrit « Zaara » par le chroniqueur portugais Gomes Eanes de Zurara, pour la terre côtière au sud du cap Bojador ; il écrit que c'est ainsi que l'on appelle cette terre. Restée manuscrite jusqu'en 1841, sa chronique n'a pas pu faire connaître le mot.",
+            "formAsWritten": "Zaara",
+            "actors": [
+              {
+                "name": "Gomes Eanes de Zurara",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Chronica do descobrimento e conquista de Guiné",
+                "author": "Gomes Eanes de Zurara, édition du vicomte de Santarém",
+                "year": 1841,
+                "url": "https://archive.org/details/chronicadodesco00zuragoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chapitre XIII, p. 83",
+                "notes": "Chronique achevée vers 1453, restée manuscrite jusqu'à cette édition de 1841."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1550,
+              "to": 1600,
+              "label": "1550, traduit en anglais en 1600"
+            },
+            "era": "polity",
+            "statement": "Le nom Sahara est donné comme le nom arabe du désert, « Sarra », dans la Description de l'Afrique de Léon l'Africain, imprimée à Venise en 1550. Le texte appelle ce désert « Libye » et ajoute que ce mot arabe veut dire « désert ».",
+            "formAsWritten": "Sarra",
+            "actors": [
+              {
+                "name": "Léon l'Africain (al-Ḥasan al-Wazzān)",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "John Pory",
+                "role": "traduit le livre en anglais en 1600"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The History and Description of Africa",
+                "author": "Léon l'Africain (al-Ḥasan al-Wazzān), traduction anglaise de John Pory (1600), édition de Robert Brown",
+                "year": 1896,
+                "url": "https://archive.org/details/historyanddescr03porygoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "livre I, p. 124",
+                "notes": "Texte italien imprimé à Venise en 1550 ; Pory a traduit la version latine de 1556. La graphie « Sarra » a été vérifiée dans l'édition italienne de 1583 ; nous n'avons pas vu celle de 1550."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1613,
+              "to": 1613,
+              "label": "1613"
+            },
+            "era": "polity",
+            "statement": "Le nom Sahara entre dans la langue anglaise en 1613, selon l'Oxford English Dictionary, chez Samuel Purchas. Celui-ci écrit « Zahara » dans un passage sur les écoles de droit musulman. Plus loin dans le même livre, il reprend Léon l'Africain et écrit « Sarra ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sahara, n.",
+                "author": "Oxford English Dictionary",
+                "year": 1909,
+                "url": "https://www.oed.com/dictionary/sahara_n",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Article publié en 1909, non révisé ; seule la partie publique a été lue."
+              },
+              {
+                "title": "Purchas his Pilgrimage",
+                "author": "Samuel Purchas",
+                "year": 1613,
+                "url": "https://archive.org/details/purchashispilgri00purc_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "livre III, p. 228 ; livre VI, p. 535",
+                "notes": "« Zahara » au livre III, sur l'Asie ; « Sarra » au livre VI, sur l'Afrique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1845,
+              "to": 1846,
+              "label": "1845-1846"
+            },
+            "statement": "Le nom Sahara a donné en français l'adjectif « saharien », relevé dans un dictionnaire en 1845-1846 : le nom propre était donc en usage à cette date.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Saharien, -ienne",
+                "author": "Trésor de la langue française informatisé (ATILF-CNRS)",
+                "year": null,
+                "url": "https://www.cnrtl.fr/definition/saharien",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Le dictionnaire ne traite pas le nom propre Sahara, seulement l'adjectif."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Libye",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "grc",
+        "namedBy": "Les auteurs grecs, puis latins",
+        "accounts": [
+          {
+            "period": {
+              "from": -499,
+              "to": -400,
+              "label": "Ve siècle av. J.-C."
+            },
+            "era": "polity",
+            "statement": "Le nom Libye désigne chez Hérodote toute l'Afrique à l'ouest de l'Égypte ; le désert n'en est que l'intérieur, au-delà d'une crête de sable qui va de Thèbes d'Égypte aux colonnes d'Hercule.",
+            "sources": [
+              {
+                "title": "Histoires, livre IV, chapitres 181 et 185",
+                "author": "Hérodote, traduction anglaise d'A. D. Godley",
+                "year": 1920,
+                "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0126%3Abook%3D4%3Achapter%3D181",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Texte grec du Ve siècle av. J.-C."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1550,
+              "to": 1613,
+              "label": "De 1550 à 1613 au moins"
+            },
+            "era": "polity",
+            "statement": "Le nom Libye reste le nom du désert dans les livres d'Europe : chez Léon l'Africain en 1550, qui le donne comme le nom latin, chez son traducteur anglais en 1600 et chez Samuel Purchas en 1613. Ils ajoutent que les Arabes l'appellent Sarra.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The History and Description of Africa",
+                "author": "Léon l'Africain (al-Ḥasan al-Wazzān), traduction anglaise de John Pory (1600), édition de Robert Brown",
+                "year": 1896,
+                "url": "https://archive.org/details/historyanddescr03porygoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "livre I, p. 124",
+                "notes": "Texte italien imprimé à Venise en 1550 ; Pory a traduit la version latine de 1556. La graphie « Sarra » a été vérifiée dans l'édition italienne de 1583 ; nous n'avons pas vu celle de 1550."
+              },
+              {
+                "title": "Purchas his Pilgrimage",
+                "author": "Samuel Purchas",
+                "year": 1613,
+                "url": "https://archive.org/details/purchashispilgri00purc_0",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Livre VI, sur l'Afrique."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

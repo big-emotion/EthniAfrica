@@ -176,5 +176,148 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web combinant « Hassan », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la consultation de l'article « On the Mental Representation of Arabic Roots », les deux fiches Behind the Name et la biographie officielle tanzanienne de Samia Suluhu Hassan n'ont pas établi de lignée homonyme d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Hassan est un nom personnel arabe, que l'on porte aussi, en Somalie par exemple, comme nom du père à la suite de son propre nom ; on l'écrit Xasan en somali. Ce n'est pas un nom de clan. Les sources ne s'accordent pas sur ce qu'il veut dire ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Hassan",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel arabe, porté aussi comme nom du père ou de famille ; ce n'est pas un nom de clan.",
+        "periodLabel": "Écrit dès le XIVe siècle ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "Décrit en 2008"
+            },
+            "statement": "Le nom Hassan est un nom d'homme arabe qui se prononce comme l'adjectif voulant dire « beau ». Rien ne prouve que le nom garde ce sens : certains arabophones l'entendent comme « beau », d'autres comme « bon », d'autres sans aucun sens, selon les linguistes Ali Idrissi, Jean-François Prunet et Renée Béland.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "On the Mental Representation of Arabic Roots",
+                "author": "Ali Idrissi, Jean-François Prunet et Renée Béland",
+                "year": 2008,
+                "url": "https://medfam.umontreal.ca/wp-content/uploads/sites/32/publicationsBelandR_representationArabic2008.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 242, 244-245",
+                "notes": "Linguistic Inquiry, vol. 39, n° 2, 2008. Lu en texte intégral le 11 octobre 2026. Page 242 : Hassan, nom d'homme arabe qui se prononce comme l'adjectif voulant dire « beau » ; un nom n'en garde pas pour autant le sens. Pages 244-245 : des arabophones le relient à « beau », d'autres à « bon », d'autres à rien."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "Décrit en 1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Hassan est, chez les Somali, un nom personnel : il peut suivre le nom d'une personne comme nom de son père, car les Somali n'ont en général pas de nom de famille, selon B. W. Andrzejewski.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Recommendations for Somali Entries in Library Cataloguing Systems",
+                "author": "B. W. Andrzejewski",
+                "year": 1980,
+                "url": "https://www.cambridge.org/core/journals/african-research-and-documentation/article/abs/recommendations-for-somali-entries-in-library-cataloguing-systems/7B1BAF9FA536389313CA58F386A8DAAF",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21",
+                "notes": "African Research & Documentation, n° 22, 1980, p. 21-22. Lu le 11 octobre 2026 dans le texte d'ouverture que publie Cambridge Core : les Somali n'ont en général pas de nom de famille ; une personne porte son nom, suivi de celui de son père et parfois de son grand-père."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1300,
+              "to": 1399,
+              "label": "XIVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Hassan apparaît sous une forme proche, Haçan, dans le récit de voyage d'Ibn Battûta : c'est le nom du sultan de Couloua, l'actuelle Kilwa, sur la côte de l'Afrique de l'Est. C'est la plus ancienne trace de ce nom que le projet connaît ; le nom arabe est plus ancien que ce récit, et c'est ici un nom personnel, pas un nom de famille.",
+            "formAsWritten": "Haçan",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Ibn Battûta",
+                "role": "voyageur qui rapporte ce nom"
+              },
+              {
+                "name": "Abou'lmozhaffer Haçan",
+                "role": "sultan de Couloua dans le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Voyages d'Ibn Batoutah, texte arabe accompagné d'une traduction, tome II",
+                "author": "Ibn Battûta ; traduction de C. Defrémery et B. R. Sanguinetti",
+                "year": 1877,
+                "url": "https://archive.org/details/ldpd_5998008_001",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 193",
+                "notes": "Paris, Imprimerie nationale, deuxième tirage de 1877, d'après la page de titre du tome II. Récit de voyage du XIVe siècle, lu dans la traduction française sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. « Du sultan de Couloua » : « elle avait pour sultan Abou'lmozhaffer Haçan »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "Proposée en 1860"
+            },
+            "statement": "Le nom Hassan viendrait de l'adjectif arabe qui veut dire « beau, joli », selon le dictionnaire arabe-français d'Albert de Biberstein Kazimirski.",
+            "hypothesisGroup": "origine du nom Hassan",
+            "sources": [
+              {
+                "title": "Dictionnaire arabe-français, tome 1",
+                "author": "Albert de Biberstein Kazimirski",
+                "year": 1860,
+                "url": "https://archive.org/details/dictionnairearab01bibeuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 428",
+                "notes": "Paris, Maisonneuve, 1860. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. « Beau, joli (et de là, n. pr. d'homme, Hassan) »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Xasan",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "som",
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Xasan est la forme somalie du nom Hassan, selon le site Behind the Name.",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Xasan",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/xasan",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site d'onomastique en ligne, lu le 11 octobre 2026. Page Xasan : « Somali form of Hasan »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

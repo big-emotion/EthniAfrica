@@ -82,5 +82,110 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Njeri », « Kikuyu », « Kenya », « surname », « prénom », « onomastique », « étymologie », « clan », « transmission », « alliance », « caste », « homonyme » et « nécrologie », ainsi que la page Forebears dédiée n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Njeri est un nom de femme kikuyu, du Kenya. Le récit des origines kikuyu le rattache à l'une des neuf filles de Gikuyu et de Mumbi, dont le clan est Aceera ; nous présentons ce récit plus bas. Les Gusii l'ont repris sous la forme Ncheri. On ne sait pas avec certitude ce qu'il veut dire.",
+    "names": [
+      {
+        "nameText": "Njeri",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kik",
+        "namedBy": null,
+        "shortLine": "Un nom de femme kikuyu, lié au clan Aceera du récit des origines.",
+        "periodLabel": "Écrit dès 1922 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "Décrit en 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Njeri est le seul nom de femme que les Gusii aient emprunté aux Kikuyu, selon Zipporah K. Otiso : ils l'écrivent Ncheri, une forme adaptée à l'ekegusii. Elle ne sait pas pourquoi ils n'ont repris que celui-là.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Gender identity through the Ekegusii naming system",
+                "author": "Zipporah K. Otiso",
+                "year": 2017,
+                "url": "https://erepository.uonbi.ac.ke/server/api/core/bitstreams/9cd30361-434c-4fe3-bdcf-495e7fb30e62/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 77",
+                "notes": "Article publié dans The University of Nairobi Journal of Language and Linguistics, volume 6, 2017, p. 64-82. Lu le 13 octobre 2026 dans le dépôt de l'université de Nairobi. Page 77 : « Women have only one borrowed name, Ncheri. This name is from the Kikuyu name Njeri » ; la raison pour laquelle seul ce nom a été repris est, écrit l'auteur, « a mystery »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "Décrit en 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Njeri, nom de femme, a une place particulière dans la règle des noms kikuyu que décrivent Nobuko et Peter S. Nganga, qui ne le citent que comme nom d'une fille de Gikuyu : une Kikuyu mariée prend pour dernier nom le nom personnel du père de son mari.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ケニア・キクユ族の親族制度と子どものネーミング・ルール (The Kinship System and Rule for Naming Children in Kikuyu People of Kenya)",
+                "author": "Nobuko Nganga et Peter S. Nganga",
+                "year": 2013,
+                "url": "https://nagasaki-u.repo.nii.ac.jp/record/7484/files/shakaikagaku75_25.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 25, 27-28",
+                "notes": "Article en japonais, revue de la faculté d'éducation de l'université de Nagasaki, n° 75, 2013, p. 25-33. Lu le 13 octobre 2026 dans le dépôt de l'université. Page 27 : le nom personnel de l'enfant reprend celui d'un grand-parent. Page 28 : pour une femme, le dernier nom devient, au mariage, le nom personnel du père de son mari ; Njeri n'y est cité que comme nom de fille de Gikuyu (page 26)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "Rapporté en 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Njeri serait celui de l'une des neuf filles de Gikuyu et de Mumbi, les premiers ancêtres du récit des origines kikuyu. Chaque fille aurait fondé un clan à son nom, et le clan Aceera viendrait d'elle, selon Nobuko et Peter S. Nganga, qui résument Jomo Kenyatta.",
+            "hypothesisGroup": "origine du nom Njeri",
+            "sources": [
+              {
+                "title": "ケニア・キクユ族の親族制度と子どものネーミング・ルール (The Kinship System and Rule for Naming Children in Kikuyu People of Kenya)",
+                "author": "Nobuko Nganga et Peter S. Nganga",
+                "year": 2013,
+                "url": "https://nagasaki-u.repo.nii.ac.jp/record/7484/files/shakaikagaku75_25.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 26",
+                "notes": "Article en japonais, revue de la faculté d'éducation de l'université de Nagasaki, n° 75, 2013, p. 25-33. Lu le 13 octobre 2026 dans le dépôt de l'université. Page 26 : d'après Jomo Kenyatta, les neuf filles de Gikuyu et Mumbi fondent neuf clans à leur nom, dont « Aceera-Njeri »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Njeri apparaît par écrit dans le procès-verbal d'une enquête judiciaire de Nairobi sur la mort de vingt et un Africains tués le 16 mars 1922 : deux des morts se nomment « Njeri wa Ewongo » et « Njeri binti Kamau ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un acte officiel l'a écrit, pas depuis quand le nom est donné.",
+            "formAsWritten": "Njeri",
+            "birth": true,
+            "sources": [
+              {
+                "title": "East Africa: Papers relating to native disturbances in Kenya (March, 1922)",
+                "author": "Gouvernement britannique (Cmd. 1691)",
+                "year": 1922,
+                "url": "https://archive.org/details/eastafricapapers00keny",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 15",
+                "notes": "Londres, H.M. Stationery Office, mai 1922, présenté au Parlement. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; page vue en image. Page 15, « Enclosure 3 in No. 2 », enquête judiciaire n° 4 de 1922 : la liste des vingt et un morts compte « 2 Njeri wa Ewongo » et « 4 Njeri binti Kamau »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

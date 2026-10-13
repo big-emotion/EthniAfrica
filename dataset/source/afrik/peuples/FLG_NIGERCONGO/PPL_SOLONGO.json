@@ -120,5 +120,165 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Solongo désigne un groupe kongo de la côte nord-ouest de l'Angola, autour de Soyo, à l'embouchure du fleuve Congo, qui se nomme lui-même Solongo, ou Nsolongo. Un autre nom existe : Mussurongo, la forme portugaise. On ne sait pas avec certitude d'où vient le nom Solongo ; nous présentons plus bas ce qu'en disent les anciens du Soyo.",
+    "names": [
+      {
+        "nameText": "Solongo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kng",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Kongo du Soyo, sur la côte nord-ouest de l'Angola.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Solongo, ou Nsolongo, désigne la communauté du Soyo, dans la province du Zaïre, au nord de l'Angola, et sa langue, le kisolongo, selon Eugénia Emília Sacala Kosi, qui étudie leur histoire. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce qu'en disent des anciens.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Nsamu ya nkinkulu kye Soyo : yetu moko ye maduki (Narrativa de origem do Soyo : uma entrevista com mais velhos)",
+                "author": "Eugénia Emília Sacala Kosi",
+                "year": 2022,
+                "url": "https://revistas.unilab.edu.br/index.php/njingaesape/article/download/1059/686/3740",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 230 et p. 233",
+                "notes": "Njinga & Sepé, revue de l'université UNILAB, São Francisco do Conde (Brésil), vol. 2, n° 2, 2022, p. 230-238. Entretiens avec trois anciens du Soyo, Tomás Paulo, Paulo Pedro et Estevão Nvemba, publiés en kikongo et en portugais. Lu le 11 octobre 2026. Le résumé en portugais parle de la « comunidade nsolongo da província do Zaire »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Rapporté en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Solongo viendrait de nsolotu, le nom que portaient, selon deux anciens du Soyo, les ancêtres venus de la région de Mbanza Kongo, la capitale du royaume, avant de se disperser. Eugénia Emília Sacala Kosi a recueilli ce récit ; il ne dit pas ce que veut dire nsolotu.",
+            "hypothesisGroup": "origine du nom Solongo",
+            "sources": [
+              {
+                "title": "Nsamu ya nkinkulu kye Soyo : yetu moko ye maduki (Narrativa de origem do Soyo : uma entrevista com mais velhos)",
+                "author": "Eugénia Emília Sacala Kosi",
+                "year": 2022,
+                "url": "https://revistas.unilab.edu.br/index.php/njingaesape/article/download/1059/686/3740",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 233-234",
+                "notes": "Njinga & Sepé, revue de l'université UNILAB, São Francisco do Conde (Brésil), vol. 2, n° 2, 2022, p. 230-238. Entretiens avec trois anciens du Soyo, Tomás Paulo, Paulo Pedro et Estevão Nvemba, publiés en kikongo et en portugais. Lu le 11 octobre 2026. Récit de l'origine du Soyo donné par Paulo Pedro et Estevão Nvemba, en kikongo : « Ekanda dya nsolongo e tuki dyandi nsolotu ». La traduction de ce passage est la nôtre ; l'article n'en donne pas."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1816,
+              "to": 1818,
+              "label": "1816, récit publié en 1818"
+            },
+            "era": "polity",
+            "statement": "Le nom Solongo n'apparaît pas dans le récit de l'expédition britannique de James Kingston Tuckey sur le fleuve Congo : on y parle des « hommes du Sonio », venus à bord, dont plusieurs sont chrétiens à la manière portugaise. ",
+            "before": true,
+            "sources": [
+              {
+                "title": "Narrative of an Expedition to Explore the River Zaire, Usually Called the Congo, in South Africa, in 1816",
+                "author": "James Kingston Tuckey",
+                "year": 1818,
+                "url": "https://archive.org/details/narrativeofexped00tuck",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 79",
+                "notes": "Londres, John Murray, 1818. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mussurongo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme portugaise du nom, écrite dès 1875.",
+        "periodLabel": "Écrit depuis 1875 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mussurongo, ou mussorongo, reste en usage en portugais : l'un des anciens du Soyo interrogés par Eugénia Emília Sacala Kosi l'emploie pour parler des siens.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Nsamu ya nkinkulu kye Soyo : yetu moko ye maduki (Narrativa de origem do Soyo : uma entrevista com mais velhos)",
+                "author": "Eugénia Emília Sacala Kosi",
+                "year": 2022,
+                "url": "https://revistas.unilab.edu.br/index.php/njingaesape/article/download/1059/686/3740",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 231",
+                "notes": "Njinga & Sepé, revue de l'université UNILAB, São Francisco do Conde (Brésil), vol. 2, n° 2, 2022, p. 230-238. Entretiens avec trois anciens du Soyo, Tomás Paulo, Paulo Pedro et Estevão Nvemba, publiés en kikongo et en portugais. Lu le 11 octobre 2026. L'ancien Tomás Paulo dit « Os mussorongo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1875,
+              "to": 1875,
+              "label": "Récit publié en 1875"
+            },
+            "era": "polity",
+            "statement": "Le nom Mussurongo couvre chez Joachim John Monteiro les gens de la côte jusqu'à Mangue Grande ; plus au sud, jusqu'à Ambriz, vivent selon lui des Mushicongo.",
+            "formAsWritten": "Mussurongos",
+            "sources": [
+              {
+                "title": "Angola and the River Congo",
+                "author": "Joachim John Monteiro",
+                "year": 1876,
+                "url": "https://archive.org/details/angolarivercongo00montrich",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 58",
+                "notes": "New York, Macmillan, 1876 ; la première édition a paru à Londres en 1875. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1875,
+              "to": 1875,
+              "label": "Récit publié en 1875"
+            },
+            "era": "polity",
+            "statement": "Le nom Mussurongo apparaît par écrit chez le naturaliste Joachim John Monteiro, pour qui les habitants des rives du Congo, de l'embouchure jusqu'un peu au-dessus de Porto da Lenha, forment la « tribu Mussurongo ». Il les décrit en pilleurs de navires. C'est la plus ancienne trace de ce nom que le projet connaît. Les Solongo vivaient déjà sur cette côte avant lui.",
+            "formAsWritten": "Mussurongo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Angola and the River Congo",
+                "author": "Joachim John Monteiro",
+                "year": 1876,
+                "url": "https://archive.org/details/angolarivercongo00montrich",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 50-51",
+                "notes": "New York, Macmillan, 1876 ; la première édition a paru à Londres en 1875. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

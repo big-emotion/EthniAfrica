@@ -112,13 +112,14 @@ const FOLDS: Fold[] = [
     },
   },
   {
+    // The Bafumbira and Kinyabwisha it carried moved on 2026-10-11 to
+    // PPL_RWANDAIS_HUTU, once the keeper was limited to Burundi.
     retired: ["PPL_HUTU_BURUNDI"],
     keeper: "FLG_NIGERCONGO/PPL_KIRUNDI_HUTU",
     carried: {
       sourceTitle:
         "Accord d'Arusha pour la Paix et la Réconciliation au Burundi, 2000",
-      subGroup: "Bafumbira",
-      dialect: "Kinyabwisha",
+      subGroup: "Imbo",
       exonym: "Wahutu",
     },
   },
@@ -242,10 +243,16 @@ describe("duplicate people fiches folded on 2026-10-10", () => {
     (keeper) => {
       const { sources } = readKeeper(keeper).content;
       const titles = sources.map((source: { title: string }) => source.title);
+      // One UNESDOC permalink covers a whole volume of the Histoire générale
+      // de l'Afrique, and each signed chapter is cited as its own source, so
+      // two chapters of one volume are two locators, not a fold left over.
       const urls = sources
-        .map((source: { url: string | null }) => source.url)
-        .filter(Boolean)
-        .map(locator);
+        .filter((source: { url: string | null }) => source.url)
+        .map((source: { title: string; url: string }) =>
+          source.url.startsWith("https://unesdoc.unesco.org/")
+            ? `${locator(source.url)} ${source.title}`
+            : locator(source.url)
+        );
 
       expect(new Set(titles).size).toBe(titles.length);
       expect(new Set(urls).size).toBe(urls.length);

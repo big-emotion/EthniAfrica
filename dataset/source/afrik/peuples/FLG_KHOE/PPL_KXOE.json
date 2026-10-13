@@ -164,5 +164,220 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Khwe désigne un peuple de la région de l'Okavango et de la bande de Caprivi, en Namibie et au Botswana, qui se nomme lui-même Khwe. D'autres noms existent : Kxoe, une autre orthographe, Khwedam pour la langue, Hukwe, écrit par les voyageurs, et Barakwengo, un nom donné par des voisins. Les sources consultées ne disent pas d'où viennent ces noms ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "Khwe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "xuu",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent, écrit ainsi par les communautés depuis l'orthographe de 2000.",
+        "usedIn": ["xuu", "eng"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Khwe désigne, chez les linguistes Andy Chebanne et Mawande Dlali, une langue khoe de l'ouest du Kalahari, au Botswana. Ils notent que les communautés emploient l'orthographe khwe mise en place en 2000. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The curse of poverty and marginalisation in language development: The case of Khoisan languages of Botswana",
+                "author": "Andy Chebanne et Mawande Dlali",
+                "year": 2019,
+                "url": "http://www.scielo.org.za/scielo.php?script=sci_arttext&pid=S2224-33802019000300012",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Stellenbosch Papers in Linguistics Plus, vol. 58."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kxoe",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "xuu",
+        "namedBy": null,
+        "shortLine": "Une autre orthographe de Khwe, celle des linguistes et de la norme ISO.",
+        "usedIn": ["eng", "deu"],
+        "periodLabel": "En usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kxoe est celui que la norme ISO 639-3 donne à leur langue, sous le code xuu.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, code xuu : Kxoe",
+                "author": "SIL International",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/xuu",
+                "tier": "official",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Khwedam",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "xuu",
+        "namedBy": null,
+        "shortLine": "Le nom de leur langue, ajouté en 2017 dans la norme ISO.",
+        "usedIn": ["xuu", "eng"],
+        "periodLabel": "Inscrit dans la norme ISO depuis 2017",
+        "accounts": [
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Khwedam est ajouté en 2017 comme second nom de leur langue dans la norme ISO 639-3, à côté de Kxoe. On ne sait pas avec certitude depuis quand il est employé.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, code xuu : Kxoe, Khwedam",
+                "author": "SIL International",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/xuu",
+                "tier": "official",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Hukwe",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit par les voyageurs et les savants du début du XXe siècle.",
+        "usedIn": ["deu", "eng"],
+        "periodLabel": "Écrit dès 1921-1922",
+        "accounts": [
+          {
+            "period": {
+              "from": 1956,
+              "to": 1956,
+              "label": "1956"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hukwe désigne, dans le dictionnaire de Dorothea Bleek, une langue de la région de Caprivi, au nord des Tsaukwe.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Bushman Dictionary",
+                "author": "Dorothea F. Bleek",
+                "year": 1956,
+                "url": "https://archive.org/details/bushmandictionar00blee",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction, tableau des langues et dialectes",
+                "notes": "New Haven, American Oriental Society, publié après la mort de l'autrice. Lu sur la numérisation des bibliothèques de l'université de Floride. L'autrice emploie le nom « Bushman » de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1922,
+              "label": "1921-1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hukwe apparaît dans le titre d'une étude de J. H. Wilhelm sur le vocabulaire des langues des !Kuh et des Hukwe, parue en 1921-1922, selon la bibliographie d'Isaac Schapera. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne vivait déjà dans cette région.",
+            "formAsWritten": "Hukwe",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 35, en note",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Barakwengo",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit au début du XXe siècle ; son origine n'est pas documentée.",
+        "usedIn": ["deu", "eng"],
+        "periodLabel": "Écrit sous une forme proche dès 1907",
+        "accounts": [
+          {
+            "period": {
+              "from": 1966,
+              "to": 1966,
+              "label": "1966"
+            },
+            "era": "colonial",
+            "statement": "Le nom Barakwengo est écrit Mbarakwengo par J. P. van S. Bruwer, qui nomme ainsi, avec la forme !Kgu, l'une des quatre sections de « Bushmen » du Sud-Ouest africain, selon le Dictionary of South African English. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Heikum »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Heikum/e02987",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Barakwengo a une forme proche, Makwengo, chez le géographe Siegfried Passarge : c'est ainsi, écrit-il d'après une lettre de Franz Seiner, que s'appellent les « Buschmänner » peu nombreux et très craintifs du Mabula, entre le Luiana et le Kwando. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne vivait déjà dans cette région.",
+            "formAsWritten": "Makwengo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Die Buschmänner der Kalahari",
+                "author": "Siegfried Passarge",
+                "year": 1907,
+                "url": "https://archive.org/details/diebuschmnnerde00passgoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6-7",
+                "notes": "Berlin, 1907. Lu sur sa numérisation par Google. L'auteur emploie le nom « Buschmänner » de son époque."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

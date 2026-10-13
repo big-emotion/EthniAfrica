@@ -130,6 +130,209 @@
         "url": "https://www.101lasttribes.com/tribes/lobi.html",
         "tier": "unverified",
         "source_kind": "community"
+      },
+      {
+        "title": "Lobi in Burkina Faso – Joshua Project, 2025",
+        "url": "https://joshuaproject.net/people_groups/13082/UV",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Lobi désigne un peuple de langue gur qui vit des deux côtés de la Volta Noire, autour de Gaoua au Burkina Faso, en Côte d'Ivoire et au Ghana, et qui se nomme lui-même Lobi. Ses voisins birifor l'appellent LoWiilisi. On ne sait pas d'où vient le nom Lobi ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Lobi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Lobi ; son origine reste inconnue.",
+        "periodLabel": "Écrit dès 1888 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Lobi est celui que les Lobi emploient eux-mêmes pour se nommer, ce qui les distingue des Birifor et des autres groupes que des auteurs rangent avec eux. Les personnes interrogées par Michèle Fiéloux ne semblaient pas connaître son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les sentiers de la nuit : les migrations rurales lobi de la Haute-Volta vers la Côte d'Ivoire",
+                "author": "Michèle Fiéloux",
+                "year": 1980,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/pt5/travaux_d/10005.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7",
+                "notes": "ORSTOM, Travaux et documents n° 110, Paris, 1980, issu d'une thèse soutenue en 1975 ; enquête menée en pays lobi de décembre 1971 à décembre 1972. Lu dans le texte intégral publié par l'IRD le 11 octobre 2026. Page 7 : le terme lobi, dont l'origine ne semble pas connue des informateurs, est employé par les Lobi eux-mêmes pour se désigner."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit au présent par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Lobi sert aussi de repère d'orientation dans la région : sous la forme Lo, il désigne l'ouest, et Dagaa l'est. Un même village peut se dire Lo face à ses voisins de l'ouest et Dagaa face à ceux de l'est, selon l'Encyclopedia of World Cultures.",
+            "sources": [
+              {
+                "title": "Lobi-Dagarti Peoples — Orientation and Ethnonyms",
+                "author": "Encyclopedia of World Cultures (auteur non nommé sur la page)",
+                "year": null,
+                "url": "https://www.everyculture.com/Africa-Middle-East/Lobi-Dagarti-Peoples-Orientation-and-Ethnonyms.html",
+                "tier": "unverified",
+                "source_kind": "academic",
+                "notes": "Article d'encyclopédie diffusé par le site everyculture.com, lu le 11 octobre 2026. Sa bibliographie s'appuie sur Henri Labouret (1931), Madeleine Père (1988), Michèle Fiéloux (1980) et les travaux de Jack Goody."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit au présent par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Lobi a reculé au Ghana : des groupes des environs de Nandom et de Lawra préfèrent aujourd'hui se dire Dagara, un nom jugé plus prestigieux, d'autant que l'administration les obligeait à choisir une seule appellation, selon l'Encyclopedia of World Cultures.",
+            "sources": [
+              {
+                "title": "Lobi-Dagarti Peoples — Orientation and Ethnonyms",
+                "author": "Encyclopedia of World Cultures (auteur non nommé sur la page)",
+                "year": null,
+                "url": "https://www.everyculture.com/Africa-Middle-East/Lobi-Dagarti-Peoples-Orientation-and-Ethnonyms.html",
+                "tier": "unverified",
+                "source_kind": "academic",
+                "notes": "Article d'encyclopédie diffusé par le site everyculture.com, lu le 11 octobre 2026. Sa bibliographie s'appuie sur Henri Labouret (1931), Madeleine Père (1988), Michèle Fiéloux (1980) et les travaux de Jack Goody."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "Rapporté en 1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Lobi, écrit Lobe, sert dans les recensements du Ghana à compter ensemble Lobi et Birifor, si bien que le nombre de Lobi y reste inconnu, selon Michèle Fiéloux.",
+            "formAsWritten": "Lobe",
+            "sources": [
+              {
+                "title": "Les sentiers de la nuit : les migrations rurales lobi de la Haute-Volta vers la Côte d'Ivoire",
+                "author": "Michèle Fiéloux",
+                "year": 1980,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/pt5/travaux_d/10005.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7",
+                "notes": "ORSTOM, Travaux et documents n° 110, Paris, 1980, issu d'une thèse soutenue en 1975 ; enquête menée en pays lobi de décembre 1971 à décembre 1972. Lu dans le texte intégral publié par l'IRD le 11 octobre 2026. Page 7 : au Ghana, les Lobi sont confondus avec les Birifor sous l'appellation de Lobe dans les recensements."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lobi est souvent étendu à tort, selon Maurice Delafosse, aux différents peuples qui vivent au nord de Bouna ; les Lobi n'en forment qu'une petite partie. Il en fait pourtant le nom de tout un groupe de langues, « du nom de sa tribu la plus connue ».",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 224",
+                "notes": "Paris, Ernest Leroux, 1904. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1888,
+              "label": "Février 1888"
+            },
+            "era": "polity",
+            "statement": "Le nom Lobi apparaît par écrit chez l'explorateur Louis-Gustave Binger : à Léra, des Mandé lui disent que la langue de leurs voisins ressemble à celle des « gens du Lobi ». Binger l'emploie pour un pays. C'est la plus ancienne trace de ce nom que le projet connaît ; les Lobi vivaient déjà dans la région avant elle.",
+            "formAsWritten": "gens du Lobi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "« Du Niger au golfe de Guinée », Le Tour du monde",
+                "author": "Louis-Gustave Binger",
+                "year": null,
+                "url": "https://archive.org/details/dunigeraugolfede00bing",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 78",
+                "notes": "Récit du voyage de 1887-1889 paru dans la revue Le Tour du monde, lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026. La page 78 raconte l'étape de Léra, en février 1888. L'année de parution du fascicule ne figure pas sur la page lue."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1770,
+              "to": 1770,
+              "label": "Vers 1770"
+            },
+            "era": "polity",
+            "statement": "Le nom Lobi n'est pas encore écrit quand les premiers groupes lobi auraient franchi la Volta Noire, vers 1770, en plusieurs vagues, par Batié-Nord et par Nako. Michèle Fiéloux avance cette date comme une première hypothèse, d'après Henri Labouret et la tradition orale.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Les sentiers de la nuit : les migrations rurales lobi de la Haute-Volta vers la Côte d'Ivoire",
+                "author": "Michèle Fiéloux",
+                "year": 1980,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/pt5/travaux_d/10005.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 19",
+                "notes": "ORSTOM, Travaux et documents n° 110, Paris, 1980, issu d'une thèse soutenue en 1975 ; enquête menée en pays lobi de décembre 1971 à décembre 1972. Lu dans le texte intégral publié par l'IRD le 11 octobre 2026. Page 19 : la date de 1770 est retenue « à titre de première hypothèse » pour le passage des premiers groupes lobi dans la région de Batié-Nord."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "LoWiilisi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Birifor",
+        "shortLine": "Le nom que les Birifor donnent aux Lobi de la région de Gaoua.",
+        "periodLabel": "Usage décrit à la fin du XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit au présent par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom LoWiilisi est celui que les Birifor donnent aux « vrais Lobi », ceux des environs de Gaoua, selon l'Encyclopedia of World Cultures. L'article ne dit pas ce que veut dire ce nom.",
+            "sources": [
+              {
+                "title": "Lobi-Dagarti Peoples — Orientation and Ethnonyms",
+                "author": "Encyclopedia of World Cultures (auteur non nommé sur la page)",
+                "year": null,
+                "url": "https://www.everyculture.com/Africa-Middle-East/Lobi-Dagarti-Peoples-Orientation-and-Ethnonyms.html",
+                "tier": "unverified",
+                "source_kind": "academic",
+                "notes": "Article d'encyclopédie diffusé par le site everyculture.com, lu le 11 octobre 2026. Sa bibliographie s'appuie sur Henri Labouret (1931), Madeleine Père (1988), Michèle Fiéloux (1980) et les travaux de Jack Goody."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

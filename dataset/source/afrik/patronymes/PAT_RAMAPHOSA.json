@@ -82,5 +82,65 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Ramaphosa », « Venda », « surname », « clan name », « etymology », « transmission » et « obituary », ainsi que la consultation directe de « Ramaphosa Surname Origin, Meaning & Last Name History » n'ont établi aucune règle propre à Ramaphosa permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ramaphosa est un nom de famille d'Afrique du Sud. Les sources lues n'en donnent ni l'origine ni le sens.",
+    "names": [
+      {
+        "nameText": "Ramaphosa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille d'Afrique du Sud, dont l'origine n'est pas connue.",
+        "periodLabel": "Écrit dès 1984 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ramaphosa est un nom de famille sud-africain, celui de Samuel Ramaphosa, policier, et de ses enfants, selon South African History Online. Les sources lues ne disent pas d'où vient ce nom ni ce qu'il veut dire ; on ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Matamela Cyril Ramaphosa",
+                "author": "South African History Online",
+                "year": null,
+                "url": "https://sahistory.org.za/people/matamela-cyril-ramaphosa",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Notice biographique de South African History Online. Elle donne la naissance de Cyril Ramaphosa à Johannesburg le 17 novembre 1952 et le nom de ses parents, Erdmuth et Samuel Ramaphosa. Elle ne dit rien de l'origine du nom. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "7 octobre 1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Ramaphosa apparaît dans un portrait du Sunday Express de Johannesburg consacré à Cyril Ramaphosa, secrétaire général du syndicat national des mineurs, repris en anglais par un recueil de presse américain. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand la presse l'a écrit, pas depuis quand la famille le porte.",
+            "formAsWritten": "Ramaphosa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Sub-Saharan Africa Report, JPRS-SSA-84-117",
+                "author": "Joint Publications Research Service",
+                "year": 1984,
+                "url": "https://archive.org/details/DTIC_ADA368539",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 40-42",
+                "notes": "Recueil du service américain de traduction et de reprise de presse, 7 novembre 1984, lu sur l'exemplaire numérisé d'archive.org. Sous le titre « Controversial Cyril Ramaphosa Speaks Out », il reprend l'article de Peter Wallington « Scargill Union Is Our Model, Says Black Miners' Leader », paru dans le Sunday Express de Johannesburg le 7 octobre 1984, p. 7, sur le secrétaire général du syndicat national des mineurs. Relu le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

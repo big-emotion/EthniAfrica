@@ -110,5 +110,97 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nyika désigne un peuple du nord du Malawi et du nord-est de la Zambie, autour du plateau du Nyika, et la langue qu'il parle. On ne sait pas comment ce peuple se nomme lui-même : les sources que nous avons lues ne le disent pas. Le même nom sert aussi pour d'autres groupes, comme les Nyiha de Tanzanie, dont cette fiche ne retrace pas l'histoire. On ne sait pas avec certitude d'où vient le nom Nyika ; nous présentons plus bas ses traces.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Nyika",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "nkv",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple et de sa langue ; il apparaît en 1897 sous la forme A-nyika, au nord-ouest du Nyasaland.",
+        "periodLabel": "Écrit A-nyika en 1897 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2008,
+              "to": null,
+              "label": "Depuis 2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Nyika est le nom de référence de la langue de ce peuple dans la norme internationale ISO 639-3, sous le code nkv, créé en 2008 avec la forme « Nyika (Malawi and Zambia) » pour la distinguer d'autres langues du même nom. Le catalogue Glottolog la rattache au Malawi et à la Zambie. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, code nkv : Nyika (Malawi and Zambia)",
+                "author": "SIL International",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/nkv",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 13 octobre 2026."
+              },
+              {
+                "title": "Glottolog 5.3 — Nyika (Malawi and Zambia) (nyik1246)",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/nyik1246",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues de l'Institut Max-Planck, consulté le 13 octobre 2026. Noms relevés : Nyika (Malawi and Zambia), Nyika ; pays : Malawi, Zambie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Livre de 1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Wanyika désigne chez l'explorateur Joseph Thomson des hommes armés de boucliers et de lances qui entrent dans un village près de son camp, sur la route entre les lacs Nyassa et Tanganyika. Thomson appelle Nyika le pays qu'il traverse ensuite. Les sources que le projet a lues ne disent pas s'il s'agit du même peuple que les Nyika du Malawi et de la Zambie.",
+            "formAsWritten": "Wanyika",
+            "sources": [
+              {
+                "title": "To the Central African Lakes and Back, volume 1",
+                "author": "Joseph Thomson",
+                "year": 1881,
+                "url": "https://archive.org/details/tocentralafrica00thomgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 283",
+                "notes": "Chapitre VII, « The Wanyika » : « we learned that they were Wanyika, a tribe through which we would have to pass ». L'en-tête de cette page est mal reconnu dans la numérisation (lu 285) ; le numéro 283 se déduit des pages voisines, 282 et 284, que le texte numérisé donne clairement. Le projet n'a pas pu vérifier ce numéro sur l'image. Londres, Sampson Low, 1881 ; lu sur la numérisation d'Internet Archive le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1897,
+              "label": "1897"
+            },
+            "era": "colonial",
+            "birth": true,
+            "statement": "Le nom A-nyika apparaît par écrit dans le livre de l'administrateur britannique Harry Johnston sur l'Afrique centrale britannique, publié en 1897. Johnston y range les A-nyika, « dans une certaine mesure », dans la famille des Ba-tumbuka, avec les Wa-henga et les A-poka, en notant que leurs liens sont obscurs. Il écrit aussi que les A-nyika du nord-ouest du Nyasaland se taillent les incisives du haut à la hache. C'est la plus ancienne trace de ce nom pour ce peuple que le projet connaisse. Le peuple existait déjà avant lui.",
+            "formAsWritten": "A-nyika",
+            "sources": [
+              {
+                "title": "British Central Africa",
+                "author": "Harry H. Johnston",
+                "year": 1897,
+                "url": "https://archive.org/details/britishafrica00johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 390 et p. 424",
+                "notes": "P. 390 : « to some extent the Wa-henga, A-nyika, and A-poka, though these two latter groups are of somewhat obscure affinities ». P. 424 : « the A-nyika of the same district chip the upper incisors by means of an axe ». Londres, Methuen, 1897 ; lu sur la numérisation d'Internet Archive le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

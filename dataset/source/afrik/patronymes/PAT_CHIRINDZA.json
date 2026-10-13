@@ -75,5 +75,153 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Chirindza est un nom de famille du Mozambique, que l'on trouve aussi sous la forme Xirindza dans un dictionnaire xitsonga. Les sources consultées ne disent pas ce qu'il veut dire. Elles lui donnent une origine possible, que nous présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Chirindza",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille du Mozambique, donné par des auteurs comme un nom de clan venu de Manhiça, au sud.",
+        "periodLabel": "Écrit dès 1980 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Chirindza est un nom de famille du Mozambique. On ne sait pas avec certitude ce qu'il veut dire : les sources consultées ne le disent pas. Elles donnent seulement un lieu d'origine possible, présenté plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "East and Northeast of the Borders of the Southeastern Bantu: Partly visible population movements and invisible lineage states",
+                "author": "Gerhard Liesegang",
+                "year": 2014,
+                "url": "https://archive.org/details/borders-of-se-bantu-400-1900",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 41",
+                "notes": "Texte de juillet 2014, diffusé comme manuscrit, de Gerhard Liesegang, du département d'histoire de l'Universidade Eduardo Mondlane ; copie non officielle déposée sur archive.org, lue en entier. À la page 41, il écrit : « The presence of clan names from the south like Chirindza (from Manhica in the South), Gwambe (from Inharrime) among the Vilankulu [...] suggest that these movements combed up the Chopi country ». Lu le 13 octobre 2026."
+              },
+              {
+                "title": "Tihlùngù ta Rixaka (Dikixinari ya Ririmi ra Xitsonga)",
+                "author": "Marhanele Max Makisi et Vonani Freddy Bila",
+                "year": 2016,
+                "url": "https://archive.org/details/dikixinari",
+                "tier": "unverified",
+                "source_kind": "linguistic_reference",
+                "page": "p. 866-867",
+                "notes": "Dictionnaire de la langue xitsonga, Polokwane, Timbila Poetry Project, et Elim, Bila Publishers and Communications, 2016 ; copie non officielle déposée sur archive.org, lue aux entrées. L'entrée « Xirindza » (p. 866) renvoie à « Xirindzi », et l'entrée « Xirindzi » (p. 867) dit « vito-xivongo xa Varonga va Nkomati ». Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Proposé en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Chirindza serait celui d'un clan venu du sud, de Manhiça, que l'on retrouve chez les Vilankulu. Gerhard Liesegang le cite avec Gwambe, venu d'Inharrime, comme signe de déplacements de groupes du sud vers le nord, selon un texte de 2014.",
+            "hypothesisGroup": "origine du nom Chirindza",
+            "sources": [
+              {
+                "title": "East and Northeast of the Borders of the Southeastern Bantu: Partly visible population movements and invisible lineage states",
+                "author": "Gerhard Liesegang",
+                "year": 2014,
+                "url": "https://archive.org/details/borders-of-se-bantu-400-1900",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 41",
+                "notes": "Texte de juillet 2014, diffusé comme manuscrit, de Gerhard Liesegang, du département d'histoire de l'Universidade Eduardo Mondlane ; copie non officielle déposée sur archive.org, lue en entier. À la page 41, il écrit : « The presence of clan names from the south like Chirindza (from Manhica in the South), Gwambe (from Inharrime) among the Vilankulu [...] suggest that these movements combed up the Chopi country ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Rapporté en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Chirindza serait proche de Xirindzi, que le dictionnaire xitsonga Tihlùngù ta Rixaka donne comme nom de clan des Ronga du Nkomati, selon ce dictionnaire paru en 2016. Le dictionnaire écrit aussi Xirindza, et renvoie cette forme à Xirindzi.",
+            "hypothesisGroup": "origine du nom Chirindza",
+            "sources": [
+              {
+                "title": "Tihlùngù ta Rixaka (Dikixinari ya Ririmi ra Xitsonga)",
+                "author": "Marhanele Max Makisi et Vonani Freddy Bila",
+                "year": 2016,
+                "url": "https://archive.org/details/dikixinari",
+                "tier": "unverified",
+                "source_kind": "linguistic_reference",
+                "page": "p. 866-867",
+                "notes": "Dictionnaire de la langue xitsonga, Polokwane, Timbila Poetry Project, et Elim, Bila Publishers and Communications, 2016 ; copie non officielle déposée sur archive.org, lue aux entrées. L'entrée « Xirindza » (p. 866) renvoie à « Xirindzi », et l'entrée « Xirindzi » (p. 867) dit « vito-xivongo xa Varonga va Nkomati ». Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "3 décembre 1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Chirindza apparaît par écrit dans le quotidien Notícias de Maputo du 3 décembre 1980, selon la traduction du service américain JPRS. Geraldo Antonio Chirindza figure parmi les membres de la commission électorale provinciale. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un journal l'a écrit, pas depuis quand des familles le portent.",
+            "formAsWritten": "Chirindza",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Sub-Saharan Africa Report, JPRS 77207",
+                "author": "Joint Publications Research Service",
+                "year": 1981,
+                "url": "https://archive.org/details/jprs-report_jprs-77207",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 27",
+                "notes": "Recueil du service américain de traduction et de reprise de presse, numéro 2347, 21 janvier 1981, lu sur l'exemplaire numérisé d'archive.org. À la page 27, un compte rendu tiré du quotidien Notícias de Maputo du 3 décembre 1980, pp. 1-2, donne la composition de la commission électorale provinciale, approuvée par la commission nationale, avec « Geraldo Antonio Chirindza » parmi ses membres. Il ne dit rien de l'origine du nom. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Xirindza",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une forme proche de Chirindza, écrite ainsi dans un dictionnaire xitsonga.",
+        "periodLabel": "Écrit en 2016",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Rapporté en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Xirindza est la forme que donne le dictionnaire xitsonga Tihlùngù ta Rixaka, paru en 2016. L'entrée renvoie à Xirindzi, que le dictionnaire donne comme nom de clan des Ronga du Nkomati.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Tihlùngù ta Rixaka (Dikixinari ya Ririmi ra Xitsonga)",
+                "author": "Marhanele Max Makisi et Vonani Freddy Bila",
+                "year": 2016,
+                "url": "https://archive.org/details/dikixinari",
+                "tier": "unverified",
+                "source_kind": "linguistic_reference",
+                "page": "p. 866-867",
+                "notes": "Dictionnaire de la langue xitsonga, Polokwane, Timbila Poetry Project, et Elim, Bila Publishers and Communications, 2016 ; copie non officielle déposée sur archive.org, lue aux entrées. L'entrée « Xirindza » (p. 866) renvoie à « Xirindzi », et l'entrée « Xirindzi » (p. 867) dit « vito-xivongo xa Varonga va Nkomati ». Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

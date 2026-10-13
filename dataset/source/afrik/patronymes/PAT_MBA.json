@@ -105,5 +105,177 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Mba », « Beti », « Fang », « Cameroun », « Gabon », « patronyme », « clan », « étymologie », « transmission » et « homonyme », ainsi que la page Forebears dédiée n'ont établi aucune règle propre à Mba permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mba est un nom de personne fang, porté surtout en Guinée équatoriale et au Gabon, que l'on écrit aussi M'ba. Chez les Fang, le nom d'un père devient le second nom de ses enfants. Les sources lues ne disent pas ce que veut dire Mba : on ne sait pas avec certitude d'où il vient.",
+    "names": [
+      {
+        "nameText": "Mba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne fang, écrit aussi M'ba ; son origine reste inconnue.",
+        "periodLabel": "Écrit Mba-Efanga dès 1913 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Décrit en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Mba, écrit Mbá, figure parmi les noms fang que cite Bonifacio Nguema Obiang-Mikue. Chez les Fang, écrit-il, le nom du père devient le nom commun de tous ses enfants.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La cultura para el reconocimiento de la identidad: caso de la cultura fang de Guinea Ecuatorial",
+                "author": "Bonifacio Nguema Obiang-Mikue",
+                "year": 2023,
+                "url": "https://doi.org/10.29166/catedra.v6i1.4282",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 178-179",
+                "notes": "Article de Revista Cátedra 6(1), 2023, pp. 171-186, DOI 10.29166/catedra.v6i1.4282. Lu le 13 octobre 2026 dans le PDF en espagnol. Page 178 : l'auteur cite Rosendo Ela Nsue Mibui (2005, p. 92) pour dire que le nom du père devient le nom de famille commun de tous ses fils et filles. Page 179 : il cite Mbá parmi les noms fang jugés originaux. Nous n'avons pas lu l'ouvrage de Nsue Mibui."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Décrit en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Mba est un nom d'Afrique centrale, surtout de Guinée équatoriale et du Gabon, que le Dictionary of American Family Names écrit aussi M'ba. Le dictionnaire n'en donne pas l'explication.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Mba",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/mba?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lu le 13 octobre 2026 ; le site affiche une traduction française. La notice dit : Afrique centrale (principalement Guinée équatoriale et Gabon ; également M'ba) : inexpliqué."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "Écrit en 2005, cité en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Mba compte parmi les noms fang que Rosendo Ela Nsue Mibui juge originaux : il n'y trouve ni dérivation ni composition qui en donnerait le sens. On ne sait donc pas avec certitude ce qu'il veut dire. Cet auteur est cité par Bonifacio Nguema Obiang-Mikue.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La cultura para el reconocimiento de la identidad: caso de la cultura fang de Guinea Ecuatorial",
+                "author": "Bonifacio Nguema Obiang-Mikue",
+                "year": 2023,
+                "url": "https://doi.org/10.29166/catedra.v6i1.4282",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 179",
+                "notes": "Article de Revista Cátedra 6(1), 2023, pp. 171-186, DOI 10.29166/catedra.v6i1.4282. Lu le 13 octobre 2026 dans le PDF en espagnol. Page 179 : l'auteur cite Rosendo Ela Nsue Mibui (2005, p. 102), qui range Mbá parmi les noms fang qui paraissent « netamente originales », sans possibilité de dérivation ni de composition. Nous n'avons pas lu l'ouvrage de Nsue Mibui."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "Livre publié en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mba figure dans un récit fang que Günter Tessmann publie : Küi, l'un des frères du héros Mode, s'appelait d'abord Mba a Sama. Selon le récit, c'est sa sottise qui lui vaut son nom actuel.",
+            "sources": [
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 2",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku02tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21",
+                "notes": "Berlin, Ernst Wasmuth, 1913. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'Internet Archive (Museum of African Art, Washington). Page 21 : « Küi den Namen Mba a Sama, und nur ihre Torheit hat ihnen die jetzigen Namen verschafft »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mba apparaît par écrit, sous la forme Mba-Efanga, dans le livre de Günter Tessmann sur les Fang, qu'il appelle Pangwe : une note nomme Mba-Efanga, de la famille Essauong, parmi les hommes qui ont fait des cicatrices ornementales, ici contre cinq rangées de perles. Le nom y est suivi de celui du père, Efanga, selon l'usage fang que décrit Tessmann. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Mba-Efanga",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Günter Tessmann",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 1",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku01tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 201",
+                "notes": "Berlin, Ernst Wasmuth, 1913. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'Internet Archive (Museum of African Art, Washington). Note de bas de page : « e hergestellt von Mba-Efanga (Essauong) für 5 Reihen Perlen ». La note liste les tatouages d'un homme de la famille Essauong et ce que chaque faiseur a reçu."
+              },
+              {
+                "title": "Die Pangwe. Völkerkundliche Monographie eines westafrikanischen Negerstammes, tome 2",
+                "author": "Günter Tessmann",
+                "year": 1913,
+                "url": "https://archive.org/details/diepangwevlkerku02tess",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 285",
+                "notes": "Berlin, Ernst Wasmuth, 1913. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'Internet Archive (Museum of African Art, Washington). Page 285 : le nom d'un fils est suivi de celui de son père ; l'exemple donné est Boka-Essun, Boka fils d'Essun."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "M'ba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Décrit en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom M'ba est une autre graphie de Mba, selon le Dictionary of American Family Names, qui le cite pour l'Afrique centrale, surtout la Guinée équatoriale et le Gabon.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Mba",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/mba?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lu le 13 octobre 2026 ; le site affiche une traduction française. La notice dit : Afrique centrale (principalement Guinée équatoriale et Gabon ; également M'ba) : inexpliqué."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

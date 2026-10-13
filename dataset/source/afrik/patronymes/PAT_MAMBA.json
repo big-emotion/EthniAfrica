@@ -11,7 +11,14 @@
     {
       "spelling": "Mamba",
       "attestations": [
-        { "countryId": "SWZ", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "SWZ",
+          "sourceRefs": [
+            "afrik-candidate-queue",
+            "patricks-2002-swazi-surnames",
+            "van-warmelo-1935-survey"
+          ]
+        }
       ]
     }
   ],
@@ -20,20 +27,30 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [
+      {
+        "claim": "Richard Patricks range le clan Mamba parmi ceux dont le nom de louange commence par nkhosi, « seigneur », comme celui des Dlamini, la famille royale swazie, et y lit que les ancêtres du clan étaient autrefois Dlamini. C'est une lecture de l'auteur, non une filiation démontrée.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["patricks-2002-swazi-surnames"]
+      }
+    ]
   },
   "peoples": [
     {
       "peopleId": "PPL_SWAZI",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["afrik-candidate-queue", "patricks-2002-swazi-surnames"]
     }
   ],
   "countries": [
     {
       "countryId": "SWZ",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": [
+        "afrik-candidate-queue",
+        "patricks-2002-swazi-surnames",
+        "van-warmelo-1935-survey"
+      ]
     }
   ],
   "alliances": [],
@@ -48,12 +65,32 @@
       "tier": "unverified",
       "source_kind": "ai_generated",
       "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+    },
+    {
+      "sourceKey": "patricks-2002-swazi-surnames",
+      "title": "Tibongo Netinanatelo Temaswati : Swazi Surnames and Their Praisenames (copie non officielle)",
+      "url": "https://archive.org/details/tibongo-netinanatelo-temaswati-swazi-surnames-and-their-praisenames",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 12 octobre 2026. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms. Le recueil range les noms de famille du Swaziland et des régions d'Afrique du Sud et du Mozambique jadis gouvernées par les rois swazis ; son entrée MAMBA donne les lieux, les clans avec lesquels on ne se marie pas, et le nom de louange."
+    },
+    {
+      "sourceKey": "van-warmelo-1935-survey",
+      "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+      "url": "https://repository.up.ac.za/handle/2263/77107",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V, Pretoria, 1935 ; scan de l'université de Pretoria, lue le 12 octobre 2026. La partie 2, « Swaziland », donne par district, à la date de janvier 1935, les chefs, leur nom de clan (isibongo), leur nom de louange (isinanatelo) et le nombre de contribuables adultes de sexe masculin. Page 34 : le chef Bulawako, district de Bremersdorp, nom de clan « Mamba, abaka or Ginindza, abaka », nom de louange Lendze."
     }
   ],
   "gaps": [
     {
-      "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "fieldPath": "origin.oralTraditions",
+      "reason": "Le recueil de Patricks donne le nom de louange du clan, recueilli auprès d'informateurs qu'il ne nomme pas, mais aucun récit d'origine daté, avec son transmetteur et sa transcription, n'a été trouvé pour le nom Mamba."
+    },
+    {
+      "fieldPath": "origin.writtenChronicles",
+      "reason": "Aucune chronique ancienne expliquant l'origine du nom Mamba n'a été lue : le recensement de van Warmelo (1935) ne fait que le noter comme nom de clan d'un chef."
     },
     {
       "fieldPath": "alliances",
@@ -75,5 +112,140 @@
       "fieldPath": "transmissionMode",
       "reason": "Le clan totémique ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mamba est un nom de clan swazi, l'un des noms de famille les plus portés au Swaziland. On ne sait pas avec certitude d'où il vient. Un chercheur du Musée national le rattache à la famille royale Dlamini, dont le clan se serait détaché ; nous le présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Mamba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan swazi, écrit dès 1935 ; on ne sait pas avec certitude d'où il vient.",
+        "periodLabel": "Écrit dès 1935 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1976,
+              "to": 2002,
+              "label": "Recueilli de 1976 à 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Mamba est l'un des noms de famille les plus portés au Swaziland : le recueil de noms swazis de Richard Patricks le cite juste après les dix premiers, avec Vilakati, Hlophe, Mavuso et Fakudze. Le même recueil le range parmi les noms de clans et donne les lieux où le clan vit, eNgudzeni, kaMbhoke et kaHhohho.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Tibongo Netinanatelo Temaswati : Swazi Surnames and Their Praisenames (copie non officielle)",
+                "author": "Richard Patricks",
+                "year": 2002,
+                "url": "https://archive.org/details/tibongo-netinanatelo-temaswati-swazi-surnames-and-their-praisenames",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6 (introduction) et p. 32 (entrée MAMBA)",
+                "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 12 octobre 2026. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms. P. 6 : « Then come the Vilakati, Mamba, Hlophe, Mavuso, and Fakudze » ; p. 32 : entrée MAMBA."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1976,
+              "to": 2002,
+              "label": "Recueilli de 1976 à 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Mamba désigne un clan swazi dont les membres ne se marient pas avec les Ginindza ni avec les Mabuza, et dont le nom de louange commence par nkhosi, « seigneur », puis mamba. On ne sait pas avec certitude d'où vient le nom ; une lecture est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Tibongo Netinanatelo Temaswati : Swazi Surnames and Their Praisenames (copie non officielle)",
+                "author": "Richard Patricks",
+                "year": 2002,
+                "url": "https://archive.org/details/tibongo-netinanatelo-temaswati-swazi-surnames-and-their-praisenames",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 32 (entrée MAMBA) ; introduction, sections b et d",
+                "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 12 octobre 2026. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms. Dans l'entrée, le signe « X » désigne les clans avec lesquels le mariage est interdit (guide de lecture, p. 10)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1935,
+              "to": 1935,
+              "label": "Janvier 1935"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mamba apparaît par écrit dans le recensement des chefs du Swaziland que l'ethnologue N. J. van Warmelo publie en 1935. Le chef Bulawako, du district de Bremersdorp, y porte le nom de clan « Mamba, abaka » (ou Ginindza), avec le nom de louange Lendze. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un recensement l'a noté, pas depuis quand le clan existe. Le clan existait déjà avant lui.",
+            "formAsWritten": "Mamba",
+            "birth": true,
+            "actors": [
+              {
+                "name": "N. J. van Warmelo",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Bulawako",
+                "role": "chef recensé sous ce nom de clan"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 34 (partie 2, Swaziland)",
+                "notes": "Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V, Pretoria, 1935 ; scan de l'université de Pretoria, lue le 12 octobre 2026. La partie 2, « Swaziland », donne par district, à la date de janvier 1935, les chefs, leur nom de clan (isibongo), leur nom de louange (isinanatelo) et le nombre de contribuables adultes de sexe masculin. Ligne du chef Bulawako, colonne « Isibongo » : Mamba, abaka or Ginindza, abaka ; colonne « Isinanatelo » : Lendze ; total 105 contribuables adultes, district de Bremersdorp."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2002,
+              "to": 2002,
+              "label": "Proposé en 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Mamba serait celui d'une branche de la famille royale Dlamini, puisque son nom de louange commence par nkhosi, « seigneur », comme celui des Dlamini : les ancêtres du clan auraient été autrefois Dlamini, selon Richard Patricks.",
+            "hypothesisGroup": "origine du nom Mamba",
+            "sources": [
+              {
+                "title": "Tibongo Netinanatelo Temaswati : Swazi Surnames and Their Praisenames (copie non officielle)",
+                "author": "Richard Patricks",
+                "year": 2002,
+                "url": "https://archive.org/details/tibongo-netinanatelo-temaswati-swazi-surnames-and-their-praisenames",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction, section d (clans dont le nom de louange commence par nkhosi)",
+                "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 12 octobre 2026. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1861,
+              "to": 1861,
+              "label": "Écrit en 1861"
+            },
+            "statement": "Le nom Mamba s'écrit comme le mot zoulou mamba, précédé de im, que le dictionnaire de John William Colenso définit ainsi : « Very deadly snake », un serpent très venimeux. Les sources lues ne disent pas si le nom du clan vient de ce mot.",
+            "sources": [
+              {
+                "title": "Zulu-English Dictionary",
+                "author": "John William Colenso",
+                "year": 1861,
+                "url": "https://archive.org/details/zuluenglishdict00dcgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 284",
+                "notes": "Pietermaritzburg, 1861, lu dans la numérisation d'Internet Archive le 12 octobre 2026. Entrée « Mamba (Im), n. Very deadly snake »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

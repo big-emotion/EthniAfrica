@@ -10,9 +10,11 @@
       "exonyms": [
         "Ari (variante orthographique commune)",
         "Aare",
-        "Gayil (pour le sous-groupe Gayil)"
+        "Gayil (pour le sous-groupe Gayil)",
+        "Ara",
+        "Aro"
       ],
-      "originOfExonyms": "Aari ou Ari est à la fois le nom que le peuple se donne et celui qu'emploient les personnes extérieures. Il désigne le groupe et sa langue dans les sources éthiopiennes, les recensements et les recherches sur ses modes de vie. Aari, Ari et Aare sont différentes manières de transcrire la même prononciation. Certains groupes portent aussi des noms locaux, comme Gayil (Galila), Bako ou Seyki.",
+      "originOfExonyms": "Aari ou Ari est à la fois le nom que le peuple se donne et celui qu'emploient les personnes extérieures. Il désigne le groupe et sa langue dans les sources éthiopiennes, les recensements et les recherches sur ses modes de vie. Aari, Ari et Aare sont différentes manières de transcrire la même prononciation. Certains groupes portent aussi des noms locaux, comme Gayil (Galila), Bako ou Seyki. Le catalogue Glottolog donne aussi Ara et Aro parmi les autres noms de la langue.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Aari est utilisé de manière cohérente dans les recensements officiels éthiopiens (2007 : 289 835 Aari ethniques), dans la littérature scientifique et par les membres du groupe. Depuis la réforme fédérale éthiopienne de 1991, les Aari bénéficient d'une certaine autonomie dans la région SNNPR (Southern Nations, Nationalities and Peoples' Region) et ont pu revendiquer leur identité culturelle avec davantage de liberté.",
       "linguisticFamily": "FLG_OMOTIQUE",
@@ -141,6 +143,43 @@
         "url": "https://www.cia.gov/the-world-factbook/countries/ethiopia/",
         "tier": "official",
         "source_kind": "government"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Aari désigne un peuple de langue omotique du sud de l'Éthiopie, autour de Jinka, qui se nomme lui-même Aari, une forme qu'on écrit aussi Ari. On ne sait pas avec certitude d'où vient le nom Aari ni quand il a été écrit pour la première fois ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Aari",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "aiw",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple du sud de l'Éthiopie ; son origine n'est pas connue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Aari désigne un peuple du sud de l'Éthiopie et sa langue omotique. Les catalogues de langues l'écrivent aussi Ari, Ara ou Aro, et lui rattachent les noms Bako et Ari-Galila, selon Glottolog. On ne sait pas avec certitude d'où vient ce nom, et nous n'avons pas trouvé sa plus ancienne trace écrite.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Aari (aari1239)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/aari1239",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle recense les formes Aari, Ara, Ari, Ari-Galila, Aro, Bako et Boko."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

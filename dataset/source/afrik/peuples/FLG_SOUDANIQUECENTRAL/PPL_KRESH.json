@@ -127,5 +127,207 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kresh désigne un peuple de langue soudanique centrale de l'ouest du Bahr el-Ghazal, au Soudan du Sud, qui se nomme lui-même Gbaya. Les gens du Darfour l'appelaient Fertit, un nom qu'ils donnaient aux peuples non musulmans du sud. On ne sait pas avec certitude d'où vient le nom Kresh ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Gbaya",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "krs",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple ; il est partagé avec des peuples non apparentés.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Gbaya est l'un des noms de ce peuple et de sa langue dans les catalogues de langues : Glottolog l'inscrit sous la forme Gbaya (Sudan), à côté de Kresh, Kreish, Kreich, Kredj, Kpala et Kpara. On ne sait pas avec certitude d'où vient ce nom, et nous n'avons pas trouvé sa plus ancienne trace écrite.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Kresh-Woro (gbay1288)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/gbay1288",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle recense les formes Gbaya (Sudan), Gbaya, Kpala, Kpara, Kparla, Kredj, Kreich, Kreish et Kresh."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kresh",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom donné de l'extérieur ; écrit Kredj dès 1869.",
+        "periodLabel": "Écrit dès 1869 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kresh est celui sous lequel les catalogues de langues rangent ce peuple et sa langue, qu'ils écrivent aussi Kreish, Kreich ou Kredj, selon Glottolog. On ne sait pas avec certitude qui a donné ce nom ni d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Kresh-Woro (gbay1288)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/gbay1288",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle recense les formes Kresh, Kreish, Kreich, Kredj et Gbaya."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "1873"
+            },
+            "statement": "Le nom Kresh est écrit Kredy par Georg Schweinfurth, qui publie un vocabulaire de leur langue. Il note que les gens du Darfour les appellent simplement Fertit, et leur pays Dar-Fertit, au sud du Darfour.",
+            "aspect": "usage",
+            "formAsWritten": "Kredy",
+            "sources": [
+              {
+                "title": "Linguistische Ergebnisse einer Reise nach Centralafrika",
+                "author": "Georg Schweinfurth",
+                "year": 1873,
+                "url": "https://archive.org/details/bub_gb_i_YUAAAAYAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 53",
+                "notes": "Berlin, Wiegandt et Hempel, 1873. Vocabulaires recueillis pendant le voyage de 1868 à 1871. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1863,
+              "to": 1869,
+              "label": "Voyage de 1863, publié en 1869"
+            },
+            "statement": "Le nom Kresh apparaît, écrit Kredj, dans le récit du voyageur Theodor von Heuglin : il parle du « grand peuple des Kredj ou Fertit », installé entre les Zande du nord, la rivière Kosanga et le Darfour. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Kredj",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Theodor von Heuglin",
+                "role": "voyageur, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Reise in das Gebiet des Weissen Nil und seiner westlichen Zuflüsse in den Jahren 1862-1864",
+                "author": "Theodor von Heuglin",
+                "year": 1869,
+                "url": "https://archive.org/details/reiseindasgebiet00heug",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 18 et p. 217",
+                "notes": "Leipzig et Heidelberg, C. F. Winter, 1869. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Fertit",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les musulmans du Darfour et les Arabes, selon William George Browne",
+        "shortLine": "Le nom que le Darfour donnait aux peuples non musulmans du sud ; écrit dès 1799.",
+        "periodLabel": "Écrit dès 1799 ; employé au XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "1873"
+            },
+            "statement": "Le nom Fertit est celui que les gens du Darfour donnent simplement aux Kresh, selon Georg Schweinfurth.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Linguistische Ergebnisse einer Reise nach Centralafrika",
+                "author": "Georg Schweinfurth",
+                "year": 1873,
+                "url": "https://archive.org/details/bub_gb_i_YUAAAAYAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 53",
+                "notes": "Berlin, Wiegandt et Hempel, 1873. Vocabulaires recueillis pendant le voyage de 1868 à 1871. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1793,
+              "to": 1799,
+              "label": "Séjour de 1793 à 1796, publié en 1799"
+            },
+            "era": "polity",
+            "statement": "Le nom Fertit apparaît dans le récit du voyageur anglais William George Browne : c'est le pays d'où viennent les esclaves vendus au Darfour, « le pays des idolâtres ». Browne ne nomme pas les Kresh ; le nom couvre alors tout ce pays au sud du Darfour. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il désigne existaient déjà avant lui.",
+            "formAsWritten": "Fertit",
+            "birth": true,
+            "actors": [
+              {
+                "name": "William George Browne",
+                "role": "voyageur anglais, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels in Africa, Egypt, and Syria, from the year 1792 to 1798",
+                "author": "William George Browne",
+                "year": 1799,
+                "url": "https://archive.org/details/travelsinafricae00brow",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 297",
+                "notes": "Londres, T. Cadell junior et W. Davies, 1799. L'auteur a séjourné au Darfour de 1793 à 1796. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1799,
+              "to": 1799,
+              "label": "Proposée en 1799"
+            },
+            "era": "polity",
+            "statement": "Le nom Fertit viendrait d'une racine arabe qui veut dire « être mauvais » ; les musulmans du Darfour et les Arabes l'auraient donné aux peuples non musulmans de leur voisinage, selon William George Browne.",
+            "hypothesisGroup": "origine du nom Fertit",
+            "sources": [
+              {
+                "title": "Travels in Africa, Egypt, and Syria, from the year 1792 to 1798",
+                "author": "William George Browne",
+                "year": 1799,
+                "url": "https://archive.org/details/travelsinafricae00brow",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 326",
+                "notes": "Londres, T. Cadell junior et W. Davies, 1799. L'auteur a séjourné au Darfour de 1793 à 1796. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -140,5 +140,109 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Masa désigne un peuple des plaines du Logone et du Mayo-Kebbi, au Tchad et dans le nord du Cameroun, autour de Yagoua, qui se nomme lui-même Masana. En français, on écrit souvent Massa, et un autre nom, Banana, apparaît dans les rapports coloniaux. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Masana",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mcn",
+        "namedBy": null,
+        "shortLine": "Le nom que le peuple se donne ; son origine n'est pas connue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Masana figure, avec Masa, Banana, Bonana, Walai et Walia, parmi les formes que la Bibliothèque nationale de France rattache au peuple qu'elle appelle massa. On ne sait pas avec certitude d'où vient ce nom ; aucune source lue ne l'explique.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Notice d'autorité RAMEAU : Massa (peuple d'Afrique)",
+                "author": "Bibliothèque nationale de France",
+                "year": null,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb11961645z",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Notice de vocabulaire du catalogue de la bibliothèque ; elle cite J. Poirier, Ethnologie régionale (1972-1978), et D. Levinson, Encyclopedia of World Cultures (1991-1996). lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Massa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "La forme française du nom, celle des bibliothèques et des études.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1988,
+              "to": 1988,
+              "label": "1988"
+            },
+            "era": "modern",
+            "statement": "Le nom Massa sert dans les études françaises, comme chez Laurent Feckoua, qui cite les Massa et les Mousseye aux côtés des Toupouri.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Le mariage en pays toupouri (Tchad et Cameroun)",
+                "author": "Laurent Feckoua",
+                "year": 1988,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/colloques/25798.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 160",
+                "notes": "Dans Daniel Barreteau et Henri Tourneux (dir.), Le milieu et les hommes : recherches comparatives et historiques dans le bassin du lac Tchad, actes du 2e colloque Méga-Tchad, Paris, ORSTOM, 1988. Lu dans le texte intégral publié par l'IRD, lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Banana",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom des rapports coloniaux du Mayo-Kebbi, écrit en 1930.",
+        "periodLabel": "Écrit en 1930",
+        "accounts": [
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "era": "colonial",
+            "statement": "Le nom Banana apparaît dans un rapport de 1930 du chef de la circonscription du Mayo-Kebbi, qui écrit que « les Toubouris et les Bananas ont conservé la coutume » de la dot, selon Laurent Feckoua qui le cite. C'est la plus ancienne trace de ce nom que le projet connaît ; nous n'avons pas lu ce rapport. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Bananas",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Le mariage en pays toupouri (Tchad et Cameroun)",
+                "author": "Laurent Feckoua",
+                "year": 1988,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/colloques/25798.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 182",
+                "notes": "Dans Daniel Barreteau et Henri Tourneux (dir.), Le milieu et les hommes : recherches comparatives et historiques dans le bassin du lac Tchad, actes du 2e colloque Méga-Tchad, Paris, ORSTOM, 1988. Lu dans le texte intégral publié par l'IRD, lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

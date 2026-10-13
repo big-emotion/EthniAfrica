@@ -3,6 +3,184 @@
   "nameMain": "Kono",
   "languageFamilyId": "FLG_MANDE",
   "currentCountries": ["SLE", "GIN"],
+  "nameHistory": {
+    "summary": "Le nom Kono désigne un peuple de langue manden de l'est de la Sierra Leone, dans le district de Kono, qui se nomme lui-même Kono. Une tradition rapportée par l'historien Yves Person en explique l'origine ; nous la présentons plus bas, avec les plus anciennes traces du nom.",
+    "names": [
+      {
+        "nameText": "Kono",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kno",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple des hauts plateaux de l'est de la Sierra Leone.",
+        "periodLabel": "Écrit dès 1854 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par les auteurs"
+            },
+            "statement": "Le nom Kono désigne un peuple manden des hauts plateaux de l'est de la Sierra Leone, proche des Vai par la langue et par l'histoire, selon Yves Person. On ne sait pas avec certitude d'où il vient : une tradition l'explique, et d'autres historiens discutent les récits de ce peuple sur ses débuts.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 12 : Les peuples côtiers – premiers contacts avec les Portugais – de la Casamance aux lagunes ivoiriennes",
+                "author": "Yves Person",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 346",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 18 : Les peuples de la Guinée supérieure (entre la Côte d'Ivoire et la Casamance)",
+                "author": "Bassey W. Andah",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 589",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1854,
+              "label": "Liste publiée en 1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Kono apparaît par écrit, sous la forme « Kọ́no », chez le linguiste Sigismund Koelle, qui situe ce pays à l'ouest et au nord des Kisi et à l'est des Mende. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Kọ́no",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "section II-3",
+                "notes": "Londres, Church Missionary House. Les remarques de Koelle sont lues dans leur transcription par le jeu de données Lexibank le 11 octobre 2026, pas sur l'imprimé : « The position of Kọ́no is west and north of Kísi, south o[f] Kérense, east of Mẹ́nde ». Koelle a interrogé à Freetown des personnes libérées de la traite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1800,
+              "to": 1880,
+              "label": "Au XIXe siècle, jusque vers 1880"
+            },
+            "era": "polity",
+            "statement": "Le nom Kono désigne, chez Yves Person, un peuple manden enfermé dans les montagnes de l'intérieur, que l'avance des Mende a séparé des Vai de la côte. Ces montagnes recèlent des diamants qu'on ignore encore.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 24 : États et peuples de Sénégambie et de haute Guinée",
+                "author": "Yves Person",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 698",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1490,
+              "to": 1510,
+              "label": "Au tournant des XVe et XVIe siècles"
+            },
+            "era": "polity",
+            "statement": "Le nom Kono désigne, chez Christophe Wondji, une partie du premier mouvement manden vers la côte : les Kono et les Vai, venus du haut Niger sous la direction du clan des Camara.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 13 : Les États et les cultures de la côte de haute Guinée",
+                "author": "Christophe Wondji",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 419",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1460,
+              "label": "Avant les années 1460"
+            },
+            "era": "polity",
+            "statement": "Le nom Kono désigne, chez Yves Person, des Manden installés dans la forêt de l'actuelle Sierra Leone avant l'arrivée des Portugais, peut-être dès le siècle précédent. Une partie des clans venus du haut Niger avec les Kamara serait restée en chemin pour former ce peuple.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 12 : Les peuples côtiers – premiers contacts avec les Portugais – de la Casamance aux lagunes ivoiriennes",
+                "author": "Yves Person",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 346",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "Rapporté en 1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Kono viendrait d'un mot manden qui veut dire « attendre » : selon la tradition de Fadama, un centre de traditions manden, ces immigrants auraient été appelés ainsi parce qu'ils attendaient des nouvelles de l'avant-garde, puis seraient restés sur les hauts plateaux, selon Yves Person.",
+            "hypothesisGroup": "origine du nom Kono",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 12 : Les peuples côtiers – premiers contacts avec les Portugais – de la Casamance aux lagunes ivoiriennes",
+                "author": "Yves Person",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 346, note 11",
+                "notes": "UNESCO, volume dirigé par Djibril Tamsir Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026 : « Kono, en manden, veut dire attendre. Selon la tradition de Fadama (centre de traditions manden), ces immigrants ont été ainsi appelés parce qu'ils étaient en position d'attente ». La note ne nomme pas les porteurs de cette tradition."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1990,
+              "to": 1990,
+              "label": "Lecture publiée en 1990"
+            },
+            "era": "modern",
+            "statement": "Le nom Kono est celui d'un peuple dont certaines traditions disent qu'il aurait été laissé en arrière. B. W. Andah juge ces traditions trompeuses : pour lui, les Kono, les Vai et des locuteurs du dama, une langue disparue, formaient plutôt une bande continue de l'est de la Sierra Leone à la mer.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 18 : Les peuples de la Guinée supérieure (entre la Côte d'Ivoire et la Casamance)",
+                "author": "Bassey W. Andah",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 589",
+                "notes": "UNESCO, volume dirigé par Mohammed El Fasi et Ivan Hrbek, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026 : « Les traditions selon lesquelles les Kono auraient été laissés en arrière semblent prêter à confusion ». L'auteur ne parle pas de l'origine du nom."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Kono",

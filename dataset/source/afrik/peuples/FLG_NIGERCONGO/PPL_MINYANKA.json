@@ -97,5 +97,197 @@
         "notes": "Peer-reviewed article published by Cambridge University Press; supports the naming and self-identification note."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Minyanka désigne un peuple du sud du Mali, qui se nomme lui-même Bamana. D'autres noms existent : Mamara, celui que le catalogue Glottolog donne à sa langue. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources. Bamana n'est pas ici le nom du peuple bambara, que l'on appelle aussi ainsi.",
+    "names": [
+      {
+        "nameText": "Bamana",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les Minyanka se donnent ; il voudrait dire « ceux qui refusent le maître ».",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1983,
+              "to": 1983,
+              "label": "Proposée en 1983"
+            },
+            "era": "modern",
+            "statement": "Le nom Bamana voudrait dire « ceux qui refusent le maître » dans l'usage populaire, selon Jean-Paul Colleyn et Danielle Jonckers. Par maître, il faut entendre aussi bien Allah, le dieu suprême des musulmans, que le maître politique.",
+            "hypothesisGroup": "origine du nom Bamana",
+            "sources": [
+              {
+                "title": "« Ceux qui refusent le maître » : la conception du pouvoir chez les Minyanka du Mali",
+                "author": "Jean-Paul Colleyn et Danielle Jonckers",
+                "year": 1983,
+                "url": "https://www.cambridge.org/core/journals/africa/article/abs/ceux-qui-refusent-le-maitre-la-conception-du-pouvoir-chez-les-minyanka-du-mali/10D44A79F1FF3B3F9C4E211F24E4BB21",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 43",
+                "notes": "Africa, vol. 53, n° 4, octobre 1983, p. 43-58. Seul l'extrait de la première page, publié par Cambridge University Press, a été lu le 12 octobre 2026 ; le reste de l'article est payant et n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1983,
+              "to": 1983,
+              "label": "1983"
+            },
+            "era": "modern",
+            "statement": "Le nom Bamana est celui que se donnent les personnes que tout le monde appelle aujourd'hui Minyanka, selon Jean-Paul Colleyn et Danielle Jonckers. Il désigne la population restée fidèle à ses traditions religieuses et non islamisée. Nous n'avons pas trouvé de trace plus ancienne de ce nom chez les Minyanka.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "« Ceux qui refusent le maître » : la conception du pouvoir chez les Minyanka du Mali",
+                "author": "Jean-Paul Colleyn et Danielle Jonckers",
+                "year": 1983,
+                "url": "https://www.cambridge.org/core/journals/africa/article/abs/ceux-qui-refusent-le-maitre-la-conception-du-pouvoir-chez-les-minyanka-du-mali/10D44A79F1FF3B3F9C4E211F24E4BB21",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 43",
+                "notes": "Africa, vol. 53, n° 4, octobre 1983, p. 43-58. Seul l'extrait de la première page, publié par Cambridge University Press, a été lu le 12 octobre 2026 ; le reste de l'article est payant et n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1983,
+              "to": 1983,
+              "label": "1983"
+            },
+            "era": "modern",
+            "statement": "Le nom bamana djomo sert à désigner la langue minyanka, par opposition au bambara, appelé blo djomo, « la langue des esclaves », parce que tous ceux que les armées du royaume bambara de Ségou emmenaient en captivité l'apprenaient, selon Jean-Paul Colleyn et Danielle Jonckers.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "« Ceux qui refusent le maître » : la conception du pouvoir chez les Minyanka du Mali",
+                "author": "Jean-Paul Colleyn et Danielle Jonckers",
+                "year": 1983,
+                "url": "https://www.cambridge.org/core/journals/africa/article/abs/ceux-qui-refusent-le-maitre-la-conception-du-pouvoir-chez-les-minyanka-du-mali/10D44A79F1FF3B3F9C4E211F24E4BB21",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 43",
+                "notes": "Africa, vol. 53, n° 4, octobre 1983, p. 43-58. Seul l'extrait de la première page, publié par Cambridge University Press, a été lu le 12 octobre 2026 ; le reste de l'article est payant et n'a pas été lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Minyanka",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que tout le monde emploie pour ce peuple, sans doute déformé de Myanka ; écrit Mienka en 1892.",
+        "periodLabel": "Écrit Mienka depuis 1892 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1983,
+              "to": 1983,
+              "label": "Proposée en 1983"
+            },
+            "era": "modern",
+            "statement": "Le nom Minyanka viendrait d'une déformation de Myanka, due aux premiers auteurs européens, selon Jean-Paul Colleyn et Danielle Jonckers. Ils ajoutent que les intéressés emploient rarement Myanka.",
+            "hypothesisGroup": "origine du nom Minyanka",
+            "sources": [
+              {
+                "title": "« Ceux qui refusent le maître » : la conception du pouvoir chez les Minyanka du Mali",
+                "author": "Jean-Paul Colleyn et Danielle Jonckers",
+                "year": 1983,
+                "url": "https://www.cambridge.org/core/journals/africa/article/abs/ceux-qui-refusent-le-maitre-la-conception-du-pouvoir-chez-les-minyanka-du-mali/10D44A79F1FF3B3F9C4E211F24E4BB21",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 43",
+                "notes": "Africa, vol. 53, n° 4, octobre 1983, p. 43-58. Seul l'extrait de la première page, publié par Cambridge University Press, a été lu le 12 octobre 2026 ; le reste de l'article est payant et n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1983,
+              "to": 1983,
+              "label": "1983"
+            },
+            "era": "modern",
+            "statement": "Le nom Minyanka est aujourd'hui officiellement consacré et désigne le peuple du sud du Mali dont Jean-Paul Colleyn et Danielle Jonckers étudient la conception du pouvoir. On ne sait pas avec certitude d'où vient ce nom ; une explication est donnée plus haut.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "« Ceux qui refusent le maître » : la conception du pouvoir chez les Minyanka du Mali",
+                "author": "Jean-Paul Colleyn et Danielle Jonckers",
+                "year": 1983,
+                "url": "https://www.cambridge.org/core/journals/africa/article/abs/ceux-qui-refusent-le-maitre-la-conception-du-pouvoir-chez-les-minyanka-du-mali/10D44A79F1FF3B3F9C4E211F24E4BB21",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 43",
+                "notes": "Africa, vol. 53, n° 4, octobre 1983, p. 43-58. Seul l'extrait de la première page, publié par Cambridge University Press, a été lu le 12 octobre 2026 ; le reste de l'article est payant et n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "1892, récit du voyage de 1887-1889"
+            },
+            "era": "polity",
+            "statement": "Le nom Minyanka apparaît sous une forme proche, Mienka, chez l'explorateur Louis-Gustave Binger, qui désigne ainsi un pays, appelé aussi Mianka ou Mienkala, « peuplé exclusivement de Siène-ré ou de Sénoufo ». Les sources ne disent pas s'il s'agit du même peuple. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Mienka",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 1, p. 232 et p. 373",
+                "notes": "Paris, Hachette, 1892, deux tomes ; récit du voyage de 1887-1889. Lu le 12 octobre 2026 dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mamara",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que le catalogue Glottolog donne à la langue minyanka, sous la forme Mamara Senoufo.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mamara Senoufo est celui que le catalogue Glottolog retient pour la langue minyanka, code ISO myk. Il relève aussi les formes Mianka, Minianka, Miniyanka, Minya, Minyanka et Tupiire. Il ne dit pas d'où viennent ces noms.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Mamara Senoufo (mama1271)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/mama1271",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Page du catalogue Glottolog, lue le 12 octobre 2026. Elle liste les autres noms sans date ni explication."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

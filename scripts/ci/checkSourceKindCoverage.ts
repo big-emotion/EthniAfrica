@@ -24,9 +24,18 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * same day: three untyped citations left with the duplicate people fiches
  * folded into their keepers. 1061 -> 1057 on 2026-10-11: four untyped citations
  * left with the fifteen duplicate people fiches folded that day, and a fifth,
- * African Voice, was typed as press when it moved to PPL_FULA.
+ * African Voice, was typed as press when it moved to PPL_FULA. 1056 -> 1047
+ * the same day: nine untyped citations left with the twenty-four duplicate
+ * people fiches of waves 4 and 5; the untyped ones carried into a keeper keep
+ * their count. 1047 -> 1037 on 2026-10-11: ten untyped citations left with the
+ * duplicate people fiches folded after wave 8; the one carried to the new
+ * Afizere fiche keeps its count. 1037 -> 1029 on 2026-10-12: eight untyped
+ * citations left with the duplicate people fiches folded after wave 10.
+ * 1029 -> 1026 the same day: three untyped citations left with the Khainai
+ * and Koyra fiches folded after wave 12. 1026 -> 1025 on 2026-10-13: wave 16
+ * typed the Tongwe Trust citation of PPL_TONGWE (community, tier unverified).
  */
-export const UNTYPED_SOURCE_RATCHET = 1056;
+export const UNTYPED_SOURCE_RATCHET = 1025;
 
 export interface UntypedSource {
   file: string;

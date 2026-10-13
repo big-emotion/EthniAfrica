@@ -1,6 +1,6 @@
 ---
 title: "Self-names to verify through oral sources (« à vérifier par sources orales »)"
-status: "ruled 2026-10-10, wave 3 added 2026-10-11 — kept as they are until an oral or fieldwork pass"
+status: "ruled 2026-10-10, waves 3, 4, 5, 6 and 8 added 2026-10-11, wave 12 added 2026-10-12 — kept as they are until an oral or fieldwork pass"
 related:
   - docs/editorial/doctrine.md
   - docs/editorial/strategy/colonial-periods.md
@@ -39,6 +39,81 @@ kind of name it is. They wait for the same oral check.
 | `PPL_NUBIENS` | Nobiin     | the name of one Nubian language and of its speakers' community; a source for the people as a whole |
 | `PPL_BAGGAR`  | Djuhayna   | the Arab family the Baggara claim descent from; a source saying they use it as their own name      |
 | `PPL_FOUR`    | Fora       | an alternative name of the language in Glottolog; a source naming the people by it                 |
+
+## Waves 4 and 5 of the long tail — ruled 2026-10-11
+
+The fiche gives these as self-names, but no source we opened says the people
+use them for themselves. The operator ruled to keep them and to check each
+one orally.
+
+| Fiche                   | Name       | What is missing                                                            |
+| ----------------------- | ---------- | -------------------------------------------------------------------------- |
+| `PPL_TEKE`              | Teke       | a source stating the people use the name for themselves                    |
+| `PPL_HAYA`              | Haya       | a source for Bahaya as the people's own name                               |
+| `PPL_HARATINE`          | Haratine   | same                                                                       |
+| `PPL_HADIYA`            | Hadiya     | same                                                                       |
+| `PPL_BEROM`             | Berom      | same                                                                       |
+| `PPL_BONO`              | Bono       | same                                                                       |
+| `PPL_TSWA`              | Tswa       | same                                                                       |
+| `PPL_BANTOUS_SOMALIENS` | Mushunguli | same                                                                       |
+| `PPL_AGAW`              | Agaw       | same                                                                       |
+| `PPL_NYATURU`           | Arimi      | same; the source gives Rimi as a name of the language                      |
+| `PPL_LUNGU`             | Lungu      | same                                                                       |
+| `PPL_TABWA`             | Tabwa      | same                                                                       |
+| `PPL_FRAFRA`            | Farefare   | same; the source gives it as the name of the language and of its speakers  |
+| `PPL_DAWRO`             | Dawro      | same, for the form Dawuro                                                  |
+| `PPL_IRAMBA`            | Nyiramba   | same                                                                       |
+| `PPL_GUAN`              | Guan       | same                                                                       |
+| `PPL_NGANGUELA`         | Nganguela  | same; the fiche says the Ovimbundu gave it and only two groups accepted it |
+
+One name is marked `former` with no source on whether it is still used:
+`PPL_AKYE`, Kurobu, the name the Baoulé gave the Akyé in 1904. It waits for
+the same oral check.
+
+Tindiga (`langues/hts`) needs no such check: Werther
+(1898) writes that the people east of Lake Eyasi call themselves Watindiga,
+so the name is now marked as self-given.
+
+## Wave 6 of the long tail — ruled 2026-10-11
+
+No source we opened says the people use these names for themselves. The
+operator ruled to keep them and to check each one orally. Three self-names
+the batches found no source for were not written at all: « Awome »,
+« Akpakip Oro » and « Wangonde ».
+
+| Fiche           | Name     | What is missing                                                                 |
+| --------------- | -------- | ------------------------------------------------------------------------------- |
+| `PPL_TEKE_NORD` | Tege     | a source naming the people by it; Glottolog gives it as the name of the variety |
+| `PPL_TOPOSA`    | Toposa   | a source stating the people use the name for themselves                         |
+| `PPL_LALA`      | Ilala    | same                                                                            |
+| `PPL_KALAIBARI` | Kalabari | same                                                                            |
+
+One reading waits for a speaker rather than for a source: on `PPL_SOLONGO`,
+the link between Solongo and _nsolotu_, the name two elders of Soyo gave
+their ancestors (Sacala Kosi, 2022), is the agent's reading. It stays
+flagged until a Kikongo speaker checks it.
+
+## Wave 8 of the long tail — ruled 2026-10-11
+
+The fiche gives these as self-names on its own word: no source we opened says
+the people use them for themselves. The operator ruled to keep them and to
+check each one orally.
+
+| Fiche       | Name    | What is missing                                                                      |
+| ----------- | ------- | ------------------------------------------------------------------------------------ |
+| `PPL_EKET`  | Ekid    | a source stating the people use the name; Glottolog lists it only as a language name |
+| `PPL_GONJA` | Ngbanya | a source stating the people use the name for themselves                              |
+
+## Wave 12 of the long tail — ruled 2026-10-12
+
+No source we opened lets the people say these names for themselves at first
+hand. The operator ruled to keep them and to check each one orally.
+
+| Fiche        | Name      | What is missing                                                                                               |
+| ------------ | --------- | ------------------------------------------------------------------------------------------------------------- |
+| `PPL_TAIZI`  | Tajuasohn | a source stating the people use the name; ISO 639-3 (`tja`) and Glottolog give it only as the language's name |
+| `PPL_GIZIGA` | Marva     | the source itself: J. Lukas (1970) is read second-hand, through the community site mandaras.info              |
+| `PPL_MARGI`  | Margyi    | the source itself: Hoffmann (1963) is read second-hand, through the community site mandaras.info              |
 
 ## Related case: Bilād Ṣinqīṭ (`MRT`)
 

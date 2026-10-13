@@ -95,5 +95,259 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Soumaré est un nom de clan soninké, porté au Sénégal, en Mauritanie et au Mali. On l'écrit aussi Soumare. Les sources ne s'accordent pas sur son origine ; nous présentons plus bas les explications proposées.",
+    "names": [
+      {
+        "nameText": "Soumaré",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan soninké, écrit dès 1881 ; on ne sait pas avec certitude d'où il vient.",
+        "periodLabel": "Écrit dès 1881 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Soumaré est un nom de clan que le dictionnaire des noms de clan mandingues écrit Sumare. Il le range chez les Soninké, parmi les familles d'hommes libres.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 11 octobre 2026. Entrée Sumare : parler soninké ; catégories hɔ́rɔn (hommes libres) et tontigi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Soumaré désigne un clan soninké. Son origine est discutée ; nous présentons les explications séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 11 octobre 2026. Entrée Sumare, sans indication de sens."
+              },
+              {
+                "title": "Nianguiry Kanté, « Diadiè Soumaré, le Président serviteur de l'Association pour la Promotion de la Langue et de la Culture Soninké xeenu ! n'est plus », Revue africaine des sciences sociales et de la santé publique, vol. 1, n° 2, 2019",
+                "author": "Nianguiry Kanté",
+                "year": 2019,
+                "url": "https://revue-rasp.org/rasp/article/download/14/269/3504",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 92",
+                "notes": "Hommage publié par un chercheur soninké. Relu le 11 octobre 2026. Page 92 : « en soninké, le nom Soumaré signifie : « fait du bien pour ton prochain » ». Le sens est donné en passant, sans source ni analyse du mot."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Proposé en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Soumaré voudrait dire « fait du bien pour ton prochain » en soninké, selon Nianguiry Kanté, qui donne ce sens en passant, sans dire d'où il le tient.",
+            "hypothesisGroup": "origine du nom Soumaré",
+            "sources": [
+              {
+                "title": "Nianguiry Kanté, « Diadiè Soumaré, le Président serviteur de l'Association pour la Promotion de la Langue et de la Culture Soninké xeenu ! n'est plus », Revue africaine des sciences sociales et de la santé publique, vol. 1, n° 2, 2019",
+                "author": "Nianguiry Kanté",
+                "year": 2019,
+                "url": "https://revue-rasp.org/rasp/article/download/14/269/3504",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 92",
+                "notes": "Hommage publié par un chercheur soninké. Relu le 11 octobre 2026. Page 92 : « en soninké, le nom Soumaré signifie : « fait du bien pour ton prochain » ». Le sens est donné en passant, sans source ni analyse du mot."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Proposé en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Soumaré voudrait dire « fils de Souma », selon André Arcin, administrateur colonial, qui le relève chez les Bamana et les Sosé.",
+            "hypothesisGroup": "origine du nom Soumaré",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 299",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 299 : « Parmi les Bamana et chez les Sosé, on trouve encore des Soumana et des Soumaré (fils de Souma) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "statement": "Le nom Soumaré apparaît par écrit chez Ernest Noirot, qui accompagne en 1881 une mission française au Fouta-Djalon : il nomme le muletier de la mission, Ibrahima Soumaré. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un document l'a écrit, pas depuis quand le nom est porté.",
+            "formAsWritten": "Soumaré",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Ernest Noirot",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "À travers le Fouta-Diallon et le Bambouc (Soudan occidental)",
+                "author": "Ernest Noirot",
+                "year": 1890,
+                "url": "https://archive.org/details/traverslefoutadi00noir",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 166",
+                "notes": "Paris, Marpon et Flammarion ; la notice de l'exemplaire numérisé donne 1890. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. L'auteur accompagne en 1881 la mission du docteur Bayol au Fouta-Djalon (introduction ; lettres datées de juin et juillet 1881). Cité ici pour les formes qu'il écrit. Page 166 : « Notre muletier, Ibrahima Soumaré, s'est constitué son infirmier »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "Rapporté en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Soumaré, écrit Sumâre, figure dans le récit que Siré-Abbâs-Soh fait de Koli Tenguella : Gelâdyo-Sumâre, venu de l'Assaba, reçoit avec ses descendants le droit de choisir les chefs du Fouta.",
+            "sources": [
+              {
+                "title": "Chroniques du Foûta sénégalais, traduites de deux manuscrits arabes inédits de Siré-Abbâs-Soh",
+                "author": "Siré-Abbâs-Soh ; traduction de Maurice Delafosse avec la collaboration de Henri Gaden",
+                "year": 1913,
+                "url": "https://archive.org/details/chroniquesdufo00sir",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 149",
+                "notes": "Paris, Ernest Leroux, 1913, Collection de la Revue du monde musulman. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Les deux manuscrits de Siré-Abbâs-Soh, généalogiste du Fouta, parviennent à Henri Gaden en 1911 (avertissement, p. 1). Traducteurs de l'époque coloniale, cités pour les formes et les récits qu'ils relèvent. Page 149 : le cousin de Malal, « Gelâdyo-Sumâre », vient du Hâyrengâl ; Koli lui donne le droit de rester assis sur une peau de prière pendant la remise du turban au nouveau satigi ; ces prérogatives passent ensuite « aux Sumarnâbe issus de Gelâdyo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "Décrit en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Soumaré est celui que les Peuls du Fouta Toro donnent, au pluriel Sumarnâbe, à des familles venues des montagnes de l'Assaba, en Mauritanie, selon Maurice Delafosse et Henri Gaden. Ils en font un nom de clan soninké.",
+            "sources": [
+              {
+                "title": "Chroniques du Foûta sénégalais, traduites de deux manuscrits arabes inédits de Siré-Abbâs-Soh",
+                "author": "Siré-Abbâs-Soh ; traduction de Maurice Delafosse avec la collaboration de Henri Gaden",
+                "year": 1913,
+                "url": "https://archive.org/details/chroniquesdufo00sir",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 112, 248, 299",
+                "notes": "Paris, Ernest Leroux, 1913, Collection de la Revue du monde musulman. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Les deux manuscrits de Siré-Abbâs-Soh, généalogiste du Fouta, parviennent à Henri Gaden en 1911 (avertissement, p. 1). Traducteurs de l'époque coloniale, cités pour les formes et les récits qu'ils relèvent. Page 112 : « les Sumarnâbe du Fûta du Tôro, ils sont originaires du Hâyrengâl ». Page 248 : les gens du massif de l'Assaba « étaient des Soninké des clans Sumare (Sumarnâbe) et Kamara ». Page 299 : Sumarnâbe, pluriel du nom donné par les Peuls à des gens de l'Assaba « qui ont pour yettôde Sumare : ce dernier mot est un nom de clan soninké »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Rapporté en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Soumaré figure dans une légende soninké du Guidimakha, notée en 1912 par l'administrateur Colombani : Maka-Malindouho Soumaré y est le chef du village de Kabinné, dans l'Assaba, quand arrive le conquérant Ganné Kamara.",
+            "sources": [
+              {
+                "title": "Chroniques du Foûta sénégalais, traduites de deux manuscrits arabes inédits de Siré-Abbâs-Soh",
+                "author": "Siré-Abbâs-Soh ; traduction de Maurice Delafosse avec la collaboration de Henri Gaden",
+                "year": 1913,
+                "url": "https://archive.org/details/chroniquesdufo00sir",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 131-132",
+                "notes": "Paris, Ernest Leroux, 1913, Collection de la Revue du monde musulman. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Les deux manuscrits de Siré-Abbâs-Soh, généalogiste du Fouta, parviennent à Henri Gaden en 1911 (avertissement, p. 1). Traducteurs de l'époque coloniale, cités pour les formes et les récits qu'ils relèvent. Document VII, « Extraits d'une monographie du Guidimaka par l'Administrateur des Colonies Colombani (décembre 1912) », p. 131-132 : Ganné Kamara s'installe dans le village de Kabinné, « dont le chef s'appelait Maka-Malindouho Soumaré »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1917,
+              "to": 1917,
+              "label": "Décrit en 1917"
+            },
+            "era": "colonial",
+            "statement": "Le nom Soumaré est classé en 1917 par Paul Marty, administrateur colonial, parmi les familles de tunka des Soninké du Sénégal, celles où l'on choisissait les rois.",
+            "sources": [
+              {
+                "title": "Études sur l'Islam au Sénégal, tome 2 : les doctrines et les institutions",
+                "author": "Paul Marty",
+                "year": 1917,
+                "url": "https://archive.org/details/EtudesSurLislamAuSnngal2LesDotrinesEtLesInstitutions",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 327",
+                "notes": "Paris, Ernest Leroux, 1917, Collection de la Revue du monde musulman. Lu le 11 octobre 2026 sur une copie non officielle de la numérisation de Gallica déposée sur archive.org. Auteur administrateur colonial, cité pour les classements qu'il donne. Page 327 : les « Tunka lemmé ou familles de tunka. C'était parmi eux qu'on choisissait les rois du pays. Les principales familles sont : les Batchili (ou Bakili), les Diawara, les Tunkara, les Soumaré, les Diabira »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "Rapporté en 1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Soumaré figure dans des traditions orales du Jankoloni, au Mali, recueillies par Claude Meillassoux : des guerriers mossi y auraient détruit ou absorbé la plupart des clans soumaré, selon Michel Izard.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 9 : Les peuples et les royaumes de la boucle du Niger et du bassin des Volta du XIIe au XVIe siècle",
+                "author": "Michel Izard",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 242",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française. Relu le 11 octobre 2026 dans une copie non officielle de l'édition française déposée sur archive.org (https://archive.org/details/unesco-histoire-generale-d-afrique) ; l'exemplaire officiel est sur l'UNESDOC. Page 242 : d'après les traditions orales recueillies par Claude Meillassoux, « les Mosi auraient anéanti ou assimilé la majorité des clans soumaré, tandis que les clans jariso (« diariso ») résistaient victorieusement aux envahisseurs »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Soumare",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": []
+      }
+    ]
+  }
 }

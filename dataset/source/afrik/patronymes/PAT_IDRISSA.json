@@ -16,12 +16,6 @@
           "sourceRefs": ["behindthename-idrissa", "niger-cm-2024-idrissa"]
         }
       ]
-    },
-    {
-      "spelling": "Idrissou",
-      "attestations": [
-        { "countryId": "NER", "sourceRefs": ["afrik-candidate-queue"] }
-      ]
     }
   ],
   "transmissionMode": "non_hereditary",
@@ -121,7 +115,94 @@
     },
     {
       "fieldPath": "homonyms",
-      "reason": "Les formes Idrissa, Idrissou et Idris ont été distinguées dans les recherches onomastiques ; aucune origine indépendante de la forme ouest-africaine d'Idris n'a été établie pour constituer un homonyme."
+      "reason": "Les formes Idrissa et Idris ont été distinguées dans les recherches onomastiques ; aucune origine indépendante de la forme ouest-africaine d'Idris n'a été établie pour constituer un homonyme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Idrissa est un prénom porté au Niger, que l'on trouve aussi en second nom. Il est écrit dès 1907 en Guinée. On ne sait pas avec certitude d'où il vient ; nous présentons plus bas ce que disent les sources lues.",
+    "names": [
+      {
+        "nameText": "Idrissa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un prénom porté au Niger, aussi en second nom ; écrit dès 1907 en Guinée.",
+        "periodLabel": "Écrit dès 1907 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Idrissa est porté au Niger comme prénom et comme second nom. Les nominations du Conseil des ministres du 4 janvier 2024 le donnent aux deux places, par exemple dans Idrissa Yayé et Oumarou Idrissa.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Conseil des ministres du 04/01/2024 : adoption de plusieurs projets de textes et mesures nominatives",
+                "author": "Gouvernement du Niger",
+                "year": 2024,
+                "url": "https://www.gouv.ne/index.php/les-communiques-du-gouvernement/510-conseil-des-ministres-du-04-01-2024-adoption-de-plusieurs-projets-de-textes-et-mesures-nominatives",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Communiqué officiel du 4 janvier 2024, lu le 11 octobre 2026. Les mesures nominatives citent notamment Idrissa Yayé, Oumarou Idrissa, Zakari Idrissa et Idrissa Abdou. Le communiqué ne dit rien de l'origine du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Idrissa est un prénom. On ne sait pas avec certitude d'où il vient : aucune étude lue n'en retrace l'origine ni l'écriture.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Conseil des ministres du 04/01/2024 : adoption de plusieurs projets de textes et mesures nominatives",
+                "author": "Gouvernement du Niger",
+                "year": 2024,
+                "url": "https://www.gouv.ne/index.php/les-communiques-du-gouvernement/510-conseil-des-ministres-du-04-01-2024-adoption-de-plusieurs-projets-de-textes-et-mesures-nominatives",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Communiqué officiel du 4 janvier 2024, lu le 11 octobre 2026. Le communiqué atteste l'usage du nom au Niger ; il ne dit rien de son origine."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Idrissa apparaît par écrit chez André Arcin, qui décrit la Guinée française. Un informateur lui dit que les principales familles de griots se divisent en quatre classes : Anabi Yousoufa, Issaga, Yakouba et Idrissa. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est porté.",
+            "formAsWritten": "Idrissa",
+            "birth": true,
+            "actors": [
+              {
+                "name": "André Arcin",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 267",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. L'auteur écrit, « si j'ai bien compris l'explication confuse de mon informateur », que les principales familles de griots (Yéli) sont divisées en quatre classes : « Anabi Yousoufa, Issaga, Yakouba, Idrissa ». Il ne dit pas d'où viennent ces noms."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

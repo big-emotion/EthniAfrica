@@ -138,5 +138,173 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Podoko désigne un peuple de montagnards du nord des monts Mandara, à l'ouest de Mora, dans l'Extrême-Nord du Cameroun. C'est le nom de l'administration ; ce peuple se nomme lui-même Podokwa, et sa langue est connue sous le nom de parekwa. Personne, à notre connaissance, n'a établi d'où vient le nom Podokwa ; nous présentons plus bas ses traces et une hypothèse.",
+    "names": [
+      {
+        "nameText": "Podokwa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "pbi",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple des monts Mandara ; on l'écrit aussi Podokwo.",
+        "periodLabel": "Écrit sous une forme proche dès 1950",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Podokwa désigne un peuple de quatre grands clans établi sur le massif du nord, à l'ouest de Mora. Aucune étymologie de ce nom n'est connue avec certitude, selon Gerhard Müller-Kosack, qui en propose lui-même une, présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Podokwa (Cameroon)",
+                "author": "Gerhard Müller-Kosack",
+                "year": null,
+                "url": "https://www.mandaras.info/Podokwa.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page du site mandaras.info consacrée aux Podokwa, lue le 11 octobre 2026. L'auteur cite Lembezat (1950, 1952), Hallaire (1991), Boulet et ses coauteurs (1984), Barreteau (1984) et R. Lukas (1973), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1950,
+              "to": 1952,
+              "label": "1950-1952"
+            },
+            "era": "colonial",
+            "statement": "Le nom Podokwa apparaît sous une forme proche, Podogo, sur la carte ethnique de Bertrand Lembezat publiée en 1950 ; en 1952, Lembezat écrit qu'il vaudrait mieux écrire Podokwo, selon Gerhard Müller-Kosack. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà sur ces montagnes avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Bertrand Lembezat",
+                "role": "administrateur colonial, chef de la subdivision de Mora en 1939, puis ethnologue"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Podokwa (Cameroon)",
+                "author": "Gerhard Müller-Kosack",
+                "year": null,
+                "url": "https://www.mandaras.info/Podokwa.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page du site mandaras.info consacrée aux Podokwa, lue le 11 octobre 2026. L'auteur cite Lembezat (1950, 1952), Hallaire (1991), Boulet et ses coauteurs (1984), Barreteau (1984) et R. Lukas (1973), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Récit non daté"
+            },
+            "statement": "Le nom Padakwa, une forme proche, figure dans des traditions orales des Dughwede et des Guduf, dans les monts de Gwoza au Nigeria, qui disent que les Padakwa ont autrefois vécu sur leurs terres, selon Gerhard Müller-Kosack. Ce lien n'a pas encore été vraiment étudié.",
+            "sources": [
+              {
+                "title": "The Podokwa (Cameroon)",
+                "author": "Gerhard Müller-Kosack",
+                "year": null,
+                "url": "https://www.mandaras.info/Podokwa.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page du site mandaras.info consacrée aux Podokwa, lue le 11 octobre 2026. L'auteur cite Lembezat (1950, 1952), Hallaire (1991), Boulet et ses coauteurs (1984), Barreteau (1984) et R. Lukas (1973), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "Proposée en 1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Podokwa viendrait d'un mot qui veut dire « pierre » ou « rocher », kwa en mafa et kwire en dughwede : il désignerait les gens des montagnes, selon Gerhard Müller-Kosack.",
+            "hypothesisGroup": "origine du nom Podokwa",
+            "sources": [
+              {
+                "title": "The Podokwa (Cameroon)",
+                "author": "Gerhard Müller-Kosack",
+                "year": null,
+                "url": "https://www.mandaras.info/Podokwa.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page du site mandaras.info consacrée aux Podokwa, lue le 11 octobre 2026. L'auteur cite Lembezat (1950, 1952), Hallaire (1991), Boulet et ses coauteurs (1984), Barreteau (1984) et R. Lukas (1973), que nous n'avons pas lus."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Podoko",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "L'administration",
+        "shortLine": "Le nom administratif de ce peuple au Cameroun, porté par trois cantons.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1991,
+              "to": 1991,
+              "label": "Décrit en 1991"
+            },
+            "era": "modern",
+            "statement": "Le nom Podoko est celui que donne l'administration à ce peuple de près de 13 000 personnes. Faute d'un chef commun à tout le groupe, l'administration l'a partagé en trois cantons, aujourd'hui Podoko-Nord, Podoko-Centre et Podoko-Sud, selon la géographe Antoinette Hallaire. Les sources que nous avons lues ne disent pas quand ce nom est apparu.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Paysans montagnards du Nord-Cameroun : les monts Mandara",
+                "author": "Antoinette Hallaire",
+                "year": 1991,
+                "url": "https://books.openedition.org/irdeditions/15063",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "paragraphe 53 et tableau IV",
+                "notes": "ORSTOM, collection À travers champs, 1991. Chapitre « Les caractères généraux des monts Mandara », lu dans l'édition en ligne d'IRD Éditions le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Parekwa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "pbi",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue des Podokwa chez les linguistes ; on l'écrit aussi Parkwa.",
+        "periodLabel": "Écrit depuis 1984",
+        "accounts": [
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "modern",
+            "statement": "Le nom parekwa désigne chez le linguiste Daniel Barreteau, en 1984, la langue des Podokwa, qu'il range parmi les parlers du wandala de l'est, selon Gerhard Müller-Kosack. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Podokwa (Cameroon)",
+                "author": "Gerhard Müller-Kosack",
+                "year": null,
+                "url": "https://www.mandaras.info/Podokwa.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page du site mandaras.info consacrée aux Podokwa, lue le 11 octobre 2026. L'auteur cite Lembezat (1950, 1952), Hallaire (1991), Boulet et ses coauteurs (1984), Barreteau (1984) et R. Lukas (1973), que nous n'avons pas lus."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

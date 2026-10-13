@@ -165,5 +165,214 @@
         "notes": "Recueil d'un historien universitaire ; un chapitre est consacré à la cérémonie du Bois Caïman. Indiqué comme étude de référence sur le débat historiographique ; le chapitre lui-même n'a pas été relu pour cette fiche."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ayisyen désigne le peuple d'Haïti, dans les Caraïbes, issu en grande partie d'Africains déportés vers la colonie française de Saint-Domingue. C'est le nom que ce peuple se donne en créole haïtien ; en français, on dit Haïtiens. Le pays prend le nom d'Haïti à l'indépendance, en 1804 ; avant la colonisation, ses premiers habitants appelaient l'île Ayiti. Nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Ayisyen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "hat",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Haïtiens dans leur propre langue, le créole.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Ayisyen est l'équivalent créole de Haïtiens. Dans la traduction créole, non officielle, de l'article 5 de la Constitution de 1987, que cite le linguiste Jacques Leclerc, on lit « tout Ayisyen » là où le texte français dit « tous les Haïtiens ». On ne sait pas avec certitude quand le nom Ayisyen a été écrit pour la première fois.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Haïti",
+                "author": "Jacques Leclerc, L'aménagement linguistique dans le monde",
+                "year": 2025,
+                "url": "https://axl.cefan.ulaval.ca/amsudant/haiti.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "CEFAN, Université Laval, page révisée le 17 mai 2025 et lue le 12 octobre 2026. La page précise qu'il n'existe pas de version créole officielle de la Constitution de 1987.",
+                "page": "section sur la Constitution, article 5"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Ayisyen a pour pendant Ayiti, le nom du pays en créole : la République d'Haïti s'y appelle Repiblik d'Ayiti, selon Jacques Leclerc. La langue du pays, elle, se nomme kreyòl, selon la linguiste Dominique Fattier.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Haïti",
+                "author": "Jacques Leclerc, L'aménagement linguistique dans le monde",
+                "year": 2025,
+                "url": "https://axl.cefan.ulaval.ca/amsudant/haiti.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "CEFAN, Université Laval, page révisée le 17 mai 2025 et lue le 12 octobre 2026."
+              },
+              {
+                "title": "Survey chapter: Haitian Creole",
+                "author": "Dominique Fattier",
+                "year": 2013,
+                "url": "https://apics-online.info/surveys/49",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Atlas of Pidgin and Creole Language Structures Online, lue le 11 octobre 2026. « Autoglossonym: kreyòl » ; « Other name: French: créole haïtien »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Haïtiens",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Le nom français des habitants d'Haïti, écrit dans la Constitution de 1805.",
+        "periodLabel": "Écrit depuis 1805 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom Haïtiens désigne les habitants et les citoyens d'Haïti. Il vient du nom que le pays prend à l'indépendance. On ne sait pas avec certitude d'où vient ce nom de pays ; nous présentons plus bas l'explication que donne la source.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Haïti",
+                "author": "Jacques Leclerc, L'aménagement linguistique dans le monde",
+                "year": 2025,
+                "url": "https://axl.cefan.ulaval.ca/amsudant/haiti.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "CEFAN, Université Laval, page révisée le 17 mai 2025 et lue le 12 octobre 2026.",
+                "page": "section 3, Données historiques"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1805,
+              "to": 1805,
+              "label": "20 mai 1805"
+            },
+            "statement": "Le nom Haïtiens apparaît dans la Constitution impériale de 1805 : son article 3 parle des « citoyens haïtiens », et son article 14 dit que « les Haïtiens » ne seront plus connus que sous le nom générique de Noirs. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Haïtiens",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Haïti, Constitution impériale du 20 mai 1805",
+                "author": "Digithèque de matériaux juridiques et politiques, Université de Perpignan",
+                "year": 1805,
+                "url": "https://mjp.univ-perp.fr/constit/ht1805.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Texte établi d'après Louis-Joseph Janvier, Les Constitutions d'Haïti, Paris, Marpon et Flammarion, 1886. Lu sur la Digithèque le 12 octobre 2026.",
+                "page": "articles 3 et 14"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1804,
+              "to": 1804,
+              "label": "1er janvier 1804"
+            },
+            "statement": "On parle alors des « indigènes d'Hayti » dans l'Acte d'indépendance et dans la proclamation du général en chef de l'Armée indigène, Jean-Jacques Dessalines. L'île y prend le nom d'Hayti, bientôt écrit Haïti, selon la Digithèque de l'Université de Perpignan.",
+            "before": true,
+            "actors": [
+              {
+                "name": "Jean-Jacques Dessalines",
+                "role": "général en chef de l'Armée indigène, puis empereur"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Haïti, Acte d'indépendance, 1er janvier 1804",
+                "author": "Digithèque de matériaux juridiques et politiques, Université de Perpignan",
+                "year": 1804,
+                "url": "https://mjp.univ-perp.fr/constit/ht1804.htm",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Texte de l'Acte et de la proclamation du général en chef, reproduit d'après la brochure de l'Imprimerie du Gouvernement à Port-au-Prince conservée aux Archives nationales britanniques (CO 137/111). Lu sur la Digithèque le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1697,
+              "to": 1803,
+              "label": "1697-1803"
+            },
+            "statement": "On parle alors de Saint-Domingue pour désigner la partie occidentale de l'île, que le traité de Ryswick reconnaît à la France en 1697, selon Jacques Leclerc. La colonie garde ce nom jusqu'à l'indépendance.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Haïti",
+                "author": "Jacques Leclerc, L'aménagement linguistique dans le monde",
+                "year": 2025,
+                "url": "https://axl.cefan.ulaval.ca/amsudant/haiti.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "CEFAN, Université Laval, page révisée le 17 mai 2025 et lue le 12 octobre 2026.",
+                "page": "section 3, Données historiques"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1492,
+              "label": "Avant 1492"
+            },
+            "statement": "On parle alors d'Ayiti, « terre des hautes montagnes », de Quisqueya ou de Bohio : ce sont les noms que les premiers habitants, Arawaks ou Taïnos, donnaient à leur île, selon Jacques Leclerc. Christophe Colomb la nomme Española en 1492.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Haïti",
+                "author": "Jacques Leclerc, L'aménagement linguistique dans le monde",
+                "year": 2025,
+                "url": "https://axl.cefan.ulaval.ca/amsudant/haiti.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "CEFAN, Université Laval, page révisée le 17 mai 2025 et lue le 12 octobre 2026.",
+                "page": "section 3, Données historiques"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Haïtiens vient de Haïti, qui viendrait d'un mot amérindien, ayiti, aïtij ou ahitij. Plusieurs auteurs y voient un dérivé de l'arawak aetti, « pierre », d'où le sens de « terre élevée » ou « terre de hautes montagnes », selon Jacques Leclerc.",
+            "hypothesisGroup": "origine du nom Haïti",
+            "sources": [
+              {
+                "title": "Haïti",
+                "author": "Jacques Leclerc, L'aménagement linguistique dans le monde",
+                "year": 2025,
+                "url": "https://axl.cefan.ulaval.ca/amsudant/haiti.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "CEFAN, Université Laval, page révisée le 17 mai 2025 et lue le 12 octobre 2026.",
+                "page": "section 3, Données historiques"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

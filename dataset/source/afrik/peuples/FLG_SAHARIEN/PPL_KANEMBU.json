@@ -140,5 +140,124 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kanembu désigne un peuple de la région du lac Tchad, surtout au Kanem, qui se nomme lui-même Kanembu. Ce nom le rattache au pays du Kanem. Un autre nom existe : Barebari, employé en haoussa pour les peuples du Kanem-Bornou. On ne sait pas avec certitude d'où vient le nom du Kanem.",
+    "names": [
+      {
+        "nameText": "Kanembu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kbl",
+        "namedBy": null,
+        "shortLine": "Le nom des gens du Kanem, écrit Kanemboo dès 1823.",
+        "periodLabel": "Écrit depuis 1826 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Kanembu désigne les gens du Kanem, le pays situé au nord-est du lac Tchad, comme le note dès 1823 le voyageur Dixon Denham. On ne sait pas avec certitude d'où vient le nom du Kanem.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Narrative of Travels and Discoveries in Northern and Central Africa",
+                "author": "Dixon Denham, Hugh Clapperton et Walter Oudney",
+                "year": 1826,
+                "url": "https://archive.org/details/dli.ministry.04703",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 46",
+                "notes": "Londres, John Murray, 1826. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un officier britannique de son temps."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1823,
+              "to": 1826,
+              "label": "Février 1823, publié en 1826"
+            },
+            "era": "polity",
+            "statement": "Le nom Kanembu apparaît par écrit, sous la forme Kanemboo, chez le voyageur britannique Dixon Denham. À Lari, au nord du lac Tchad, il note que les habitants sont « des gens du Kanem, connus sous le nom de Kanemboo ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Kanemboo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Dixon Denham",
+                "role": "officier et voyageur britannique, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Narrative of Travels and Discoveries in Northern and Central Africa",
+                "author": "Dixon Denham, Hugh Clapperton et Walter Oudney",
+                "year": 1826,
+                "url": "https://archive.org/details/dli.ministry.04703",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 46",
+                "notes": "Londres, John Murray, 1826. Lu dans la numérisation d'Internet Archive. Le récit porte le regard d'un officier britannique de son temps."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 872,
+              "to": 872,
+              "label": "Vers 872"
+            },
+            "era": "polity",
+            "statement": "Le nom Kanembu n'apparaît pas encore quand le pays entre dans les écrits : vers 872, l'auteur arabe al-Yaʿqūbī mentionne le Kanem, alors dominé par un peuple appelé Zaghawa, selon l'historien Dierk Lange.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 15 : La région du Tchad en tant que carrefour",
+                "author": "Dierk Lange",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 474",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Barebari",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "hau",
+        "namedBy": null,
+        "shortLine": "Le nom haoussa des peuples du Kanem-Bornou, Kanembu compris.",
+        "periodLabel": "Usage ancien en pays haoussa",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom Barebari, ou Beri-beri, est celui que les Haoussa employaient en général pour les peuples de l'empire du Kanem-Bornou. Les noms Kanembu et Kanuri n'y sont devenus courants qu'à l'époque moderne, selon l'historien M. Adamu.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 11 : Les Hawsa et leurs voisins du Soudan central",
+                "author": "M. Adamu",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 306",
+                "notes": "UNESCO, édition française, lu dans l'exemplaire numérisé du volume."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

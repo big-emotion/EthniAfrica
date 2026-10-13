@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 import { withSentryConfig } from "@sentry/nextjs/config";
 
+import retiredPatronymes from "./dataset/source/afrik/patronymes/_retired-identifiers.json";
 import { RETIRED_PEOPLE_IDS } from "./src/lib/afrik/retiredPeopleIds";
 
 const nextConfig: NextConfig = {
@@ -78,17 +79,20 @@ const nextConfig: NextConfig = {
         destination: "/fr/atlas/noms/:slug",
         permanent: true,
       },
-      // PAT_KAMARA was an empty duplicate folded into PAT_CAMARA.
-      {
-        source: "/fr/atlas/noms/PAT_KAMARA",
-        destination: "/fr/atlas/noms/PAT_CAMARA",
-        permanent: true,
-      },
-      {
-        source: "/en/atlas/names/PAT_KAMARA",
-        destination: "/fr/atlas/noms/PAT_CAMARA",
-        permanent: true,
-      },
+      // A folded family-name fiche: its published addresses land on the
+      // keeper. The patronyme ledger lists every fold.
+      ...retiredPatronymes.flatMap(({ retiredId, successorId }) => [
+        {
+          source: `/fr/atlas/noms/${retiredId}`,
+          destination: `/fr/atlas/noms/${successorId}`,
+          permanent: true,
+        },
+        {
+          source: `/en/atlas/names/${retiredId}`,
+          destination: `/fr/atlas/noms/${successorId}`,
+          permanent: true,
+        },
+      ]),
       // The fiche pages redirect a retired people id themselves; the API has
       // no page to do it, and would serve the stale row until a prune and a
       // 404 after. Built from the same ledger, so a merge redirects both.

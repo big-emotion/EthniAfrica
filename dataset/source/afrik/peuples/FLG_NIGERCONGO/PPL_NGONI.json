@@ -4,6 +4,251 @@
   "languageFamilyId": "FLG_NIGERCONGO",
   "currentCountries": ["MWI", "TZA", "ZMB", "MOZ"],
   "classificationStatus": "colonial-legacy",
+  "nameHistory": {
+    "summary": "Le nom Ngoni désigne des peuples du Malawi, de la Tanzanie, de la Zambie et du Mozambique, issus de guerriers venus du sud de l'Afrique au XIXe siècle, qui se nomment eux-mêmes Ngoni, ou Abangoni. D'autres noms existent : Mazitu, Maviti et Zinyama, donnés par leurs voisins. Les sources que nous avons lues n'expliquent pas l'origine de ces noms ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "Ngoni",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ngo",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent ces peuples, Abangoni au pluriel ; on dit aussi Angoni.",
+        "usedIn": ["ngo"],
+        "periodLabel": "Écrit dès 1878 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ngoni sert aujourd'hui pour ces peuples et pour leur langue, le chingoni ou kingoni. Le catalogue Glottolog relève aussi la forme Angoni.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog — Ngoni",
+                "author": "Glottolog",
+                "year": 2026,
+                "url": "https://glottolog.org/resource/languoid/id/ngon1269",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Consulté le 11 octobre 2026. Les autres noms de la langue y sont repris d'autres catalogues : Angoni, Chingoni, Kingoni."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom Ngoni désigne des peuples issus des guerriers qui quittent le sud de l'Afrique au temps de Chaka, traversent le Zambèze et s'installent jusqu'aux grands lacs, selon le missionnaire Walter Angus Elmslie. Les sources que nous avons lues ne disent pas d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Among the Wild Ngoni: being some chapters in the history of the Livingstonia Mission in British Central Africa",
+                "author": "Walter Angus Elmslie",
+                "year": 1899,
+                "url": "https://archive.org/details/amongwildngonibe00elms",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "New York, Chicago et Toronto, Fleming H. Revell, 1899. Lu dans la numérisation d'Internet Archive. Le titre porte le regard d'un missionnaire de la fin du XIXe siècle.",
+                "page": "p. 13-27"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1891,
+              "to": 1891,
+              "label": "1891"
+            },
+            "statement": "Le nom Ngoni, ou Abangoni, est celui de ce peuple et de sa langue chez le missionnaire Walter Angus Elmslie, qui vit chez les Ngoni de Mombera, à l'ouest du lac Nyassa, depuis 1884. Il note que ce nom inspire encore la terreur aux peuples du lac et du plateau.",
+            "sources": [
+              {
+                "title": "Introductory Grammar of the Ngoni (Zulu) Language, as spoken in Mombera's country",
+                "author": "Walter Angus Elmslie",
+                "year": 1891,
+                "url": "https://archive.org/details/introductory-grammar-of-the-ngoni-zulu-language",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Aberdeen, G. & W. Fraser, 1891. Lu dans la numérisation d'Internet Archive. L'auteur, missionnaire de la mission de Livingstonia, vit chez les Ngoni de Mombera depuis 1884.",
+                "page": "Préface et introduction"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1876,
+              "to": 1878,
+              "label": "1876, publié en 1878"
+            },
+            "era": "polity",
+            "statement": "Le nom Ngoni apparaît par écrit, sous la forme Mwangoni, chez l'explorateur Henry Morton Stanley. C'est ainsi, écrit-il, que les Nyamwezi appellent les Watuta, l'un des groupes issus de ces guerriers venus du sud. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Mwangoni",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Through the Dark Continent, vol. I (New York, 1878)",
+                "author": "Henry M. Stanley",
+                "year": 1878,
+                "url": "https://archive.org/details/throughdarkcontivolume1stan",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "New York, Harper & Brothers, 1878. Lu dans la numérisation d'Internet Archive. Stanley est dans l'Unyamwezi en mai 1876.",
+                "page": "p. 503"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mazitu",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que leur donnaient les peuples du lac Nyassa au temps de Livingstone.",
+        "periodLabel": "Écrit dès 1865 ; sorti de l'usage",
+        "accounts": [
+          {
+            "period": {
+              "from": 1861,
+              "to": 1865,
+              "label": "Années 1860, publié en 1865"
+            },
+            "era": "polity",
+            "statement": "Le nom Mazitu apparaît par écrit chez David et Charles Livingstone, qui parlent des « Mazite ou Mazitu » vivant sur les hauteurs au nord du lac Nyassa et attaquant les villages de la plaine. Ce sont, écrivent-ils, des Zoulous venus du sud. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Mazite or Mazitu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Narrative of an Expedition to the Zambesi and its Tributaries, and of the Discovery of the Lakes Shirwa and Nyassa, 1858-1864",
+                "author": "David et Charles Livingstone",
+                "year": 1865,
+                "url": "https://archive.org/details/bub_gb_q0hqAyeZ_VAC",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, John Murray, 1865. Lu dans la numérisation d'Internet Archive.",
+                "page": "p. 381"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1861,
+              "to": 1865,
+              "label": "Années 1860, publié en 1865"
+            },
+            "era": "polity",
+            "statement": "Le nom Mazitu prend aussi la forme Azitu chez David et Charles Livingstone, à propos de raids à l'ouest du lac Nyassa.",
+            "sources": [
+              {
+                "title": "Narrative of an Expedition to the Zambesi and its Tributaries, and of the Discovery of the Lakes Shirwa and Nyassa, 1858-1864",
+                "author": "David et Charles Livingstone",
+                "year": 1865,
+                "url": "https://archive.org/details/bub_gb_q0hqAyeZ_VAC",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, John Murray, 1865. Lu dans la numérisation d'Internet Archive.",
+                "page": "p. 497"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Zinyama",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "« Les bêtes sauvages » : le nom que leur donnaient des villageois qui fuyaient leurs raids.",
+        "periodLabel": "Écrit en 1865",
+        "accounts": [
+          {
+            "period": {
+              "from": 1861,
+              "to": 1865,
+              "label": "Années 1860, publié en 1865"
+            },
+            "era": "polity",
+            "statement": "Le nom Zinyama, « les bêtes sauvages », est celui que des villageois réfugiés à l'ouest du lac Nyassa donnent aux Mazitu qui prennent leurs récoltes, selon David et Charles Livingstone. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Zinyama",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Narrative of an Expedition to the Zambesi and its Tributaries, and of the Discovery of the Lakes Shirwa and Nyassa, 1858-1864",
+                "author": "David et Charles Livingstone",
+                "year": 1865,
+                "url": "https://archive.org/details/bub_gb_q0hqAyeZ_VAC",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, John Murray, 1865. Lu dans la numérisation d'Internet Archive.",
+                "page": "p. 505"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Maviti",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom donné en Afrique de l'Est à ces guerriers venus du sud ; on écrivait aussi Mafitte.",
+        "periodLabel": "Écrit dès 1878 ; sorti de l'usage",
+        "accounts": [
+          {
+            "period": {
+              "from": 1899,
+              "to": 1899,
+              "label": "1899"
+            },
+            "statement": "Le nom Maviti désigne les Ngoni, selon le missionnaire Walter Angus Elmslie, qui reprend le récit de Stanley sur les « Mafitte (Maviti) ».",
+            "sources": [
+              {
+                "title": "Among the Wild Ngoni: being some chapters in the history of the Livingstonia Mission in British Central Africa",
+                "author": "Walter Angus Elmslie",
+                "year": 1899,
+                "url": "https://archive.org/details/amongwildngonibe00elms",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "New York, Chicago et Toronto, Fleming H. Revell, 1899. Lu dans la numérisation d'Internet Archive. Le titre porte le regard d'un missionnaire de la fin du XIXe siècle.",
+                "page": "p. 25-26"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1876,
+              "to": 1878,
+              "label": "1876, publié en 1878"
+            },
+            "era": "polity",
+            "statement": "Le nom Maviti apparaît par écrit chez Henry Morton Stanley, sous les formes Mafitte et Ma-viti, à côté de Manitu. Il désigne ainsi les gens d'un général de Chaka, installés entre le lac Nyassa et le Tanganyika, dont les Watuta sont une branche. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Mafitte",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Through the Dark Continent, vol. I (New York, 1878)",
+                "author": "Henry M. Stanley",
+                "year": 1878,
+                "url": "https://archive.org/details/throughdarkcontivolume1stan",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "New York, Harper & Brothers, 1878. Lu dans la numérisation d'Internet Archive. Stanley est dans l'Unyamwezi en mai 1876.",
+                "page": "p. 499 et p. 503"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "appellations": {
       "mainName": "Ngoni",

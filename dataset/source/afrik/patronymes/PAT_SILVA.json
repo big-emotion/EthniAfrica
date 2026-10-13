@@ -14,6 +14,10 @@
         {
           "countryId": "CPV",
           "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "AGO",
+          "sourceRefs": ["afrik-candidate-queue"]
         }
       ]
     },
@@ -22,6 +26,10 @@
       "attestations": [
         {
           "countryId": "CPV",
+          "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "AGO",
           "sourceRefs": ["afrik-candidate-queue"]
         }
       ]
@@ -50,6 +58,11 @@
   "countries": [
     {
       "countryId": "CPV",
+      "status": "attested",
+      "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "countryId": "AGO",
       "status": "attested",
       "sourceRefs": ["afrik-candidate-queue"]
     }
@@ -101,5 +114,115 @@
       "fieldPath": "homonyms",
       "reason": "la notice exacte du Dictionary of American Family Names, les catalogues bibliographiques et les recherches « Silva » associées au Cap-Vert n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Silva est un nom de famille d'origine portugaise, porté au Cap-Vert. Il s'écrit aussi da Silva. Les sources lui donnent deux origines possibles ; nous les présentons plus bas. On ne sait pas avec certitude depuis quand il est porté au Cap-Vert.",
+    "names": [
+      {
+        "nameText": "Silva",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un nom de famille d'origine portugaise, porté au Cap-Vert ; deux origines sont proposées.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Silva est un nom de famille portugais et galicien. Un dictionnaire lui donne deux origines possibles, que nous présentons séparément ; il ne dit rien des familles du Cap-Vert.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Silva Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks et al.",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/silva?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue en anglais le 11 octobre 2026. La notice fait de Silva un nom portugais, galicien et italien : soit le nom d'un des nombreux lieux appelés Silva, soit un nom tiré de l'ancien portugais et de l'ancien galicien silva, « bois », puis « ronce ». Elle ajoute que des familles juives séfarades l'ont pris au moment de leur conversion forcée au catholicisme."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Publié en 2022"
+            },
+            "statement": "Le nom Silva viendrait d'un des nombreux lieux appelés Silva au Portugal, en Galice ou en Italie, selon le Dictionary of American Family Names.",
+            "hypothesisGroup": "origine du nom Silva",
+            "sources": [
+              {
+                "title": "Silva Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks et al.",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/silva?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue en anglais le 11 octobre 2026. La notice fait de Silva un nom portugais, galicien et italien : soit le nom d'un des nombreux lieux appelés Silva, soit un nom tiré de l'ancien portugais et de l'ancien galicien silva, « bois », puis « ronce ». Elle ajoute que des familles juives séfarades l'ont pris au moment de leur conversion forcée au catholicisme."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Publié en 2022"
+            },
+            "statement": "Le nom Silva viendrait du mot silva, « bois », puis « ronce », en ancien portugais et en ancien galicien : il désignerait quelqu'un qui vivait près d'un bois, selon le Dictionary of American Family Names.",
+            "hypothesisGroup": "origine du nom Silva",
+            "sources": [
+              {
+                "title": "Silva Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks et al.",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/silva?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue en anglais le 11 octobre 2026. La notice fait de Silva un nom portugais, galicien et italien : soit le nom d'un des nombreux lieux appelés Silva, soit un nom tiré de l'ancien portugais et de l'ancien galicien silva, « bois », puis « ronce ». Elle ajoute que des familles juives séfarades l'ont pris au moment de leur conversion forcée au catholicisme."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "da Silva",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Une autre forme du nom Silva, précédée de « da », « de la ».",
+        "periodLabel": "Porté aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom da Silva est une autre forme du nom Silva : da réunit la préposition de, « de », et l'article a, « la », selon le Dictionary of American Family Names.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Da Silva Surname Meaning — Dictionary of American Family Names, 2nd edition",
+                "author": "Patrick Hanks et al.",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/da%20silva?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue en anglais le 11 octobre 2026. La notice fait de Da Silva une variante portugaise et galicienne de Silva, avec da, la contraction de la préposition de, « de », et de l'article a, « la »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

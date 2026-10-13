@@ -29,14 +29,17 @@
       "Creoles de Cacheu (ancien centre commercial)",
       "Creoles de Bolama (ancienne capitale coloniale)",
       "Kristons (Catholics de langue portugaise)",
-      "Lançados (descendants de Portugais métissés avec des Africaines)"
+      "Lançados (descendants de Portugais métissés avec des Africaines)",
+      "Fijus di Fidalgu (Filhos de Fidalgo) : descendants de Portugais nobles et femmes africaines, portant des noms de famille portugais (da Silva, Carvalho, Fonseca)",
+      "Kriol de Ziguinchor : variante de la communaute creole en Casamance senegalaise"
     ],
     "origins": {
       "ancientOrigins": "Les Créoles de Guinée-Bissau sont nés du contact entre les populations africaines locales (Mandingue, Balante, Papel, Manjak, Fulani) et les colons et marchands portugais à partir du XVe siècle. Les premiers établissements portugais furent créés à Cacheu (XVIe siècle), Geba, Bissau et Joal. Des individus d'horizons divers — aventuriers, marchands, exilés, naufragés, clercs d'Europe et du Cap-Vert, et esclaves africains — se mêlèrent dans ces comptoirs fluviaux, donnant naissance à une culture et une langue créoles distinctes.",
       "formationPeriod": "Le créole de Guinée-Bissau se forma probablement comme langue maternelle à partir du XVIIe siècle dans les comptoirs portugais de Cacheu, Geba, Bissau et Joal. Il dérive du créole initié sur l'île de Santiago au Cap-Vert, transporté sur le continent par les lançados et les commerçants cap-verdiens. L'identité créole ethnique s'est consolidée sous la colonisation portugaise (XIXe-XXe siècles), les Créoles occupant un rôle d'intermédiaires entre l'administration coloniale et les populations africaines.",
       "migrationRoutes": [
         "Du Cap-Vert (île de Santiago) vers les comptoirs de la côte de Guinée, XVe-XVIe siècles, via les lançados",
-        "Diffusion depuis les centres côtiers et fluviaux (Cacheu, Bissau, Geba) vers l'intérieur du pays"
+        "Diffusion depuis les centres côtiers et fluviaux (Cacheu, Bissau, Geba) vers l'intérieur du pays",
+        "Extension vers la Casamance (Senegal) : les Creoles de Ziguinchor forment une communaute distincte au 19e siecle"
       ],
       "historicalSettlementZones": [
         "Bissau (capitale, principal centre créole)",
@@ -80,7 +83,7 @@
     "demography": {
       "totalPopulation": 20000,
       "referenceYear": 2025,
-      "source": "International Kreol Magazine (2024) : les Créoles représentent environ 1% d'une population de près de 2 millions en Guinée-Bissau, soit environ 20 000 personnes. Joshua Project : Crioulo, Upper Guinea in Guinea-Bissau, 301 000 locuteurs natifs du kriyol (incluant ceux d'autres origines ethniques). Note : la communauté créole ethnique (métis afro-portugais) est distincte et bien plus petite que l'ensemble des locuteurs du kriyol.",
+      "source": "International Kreol Magazine (2024) : les Créoles représentent environ 1% d'une population de près de 2 millions en Guinée-Bissau, soit environ 20 000 personnes. Joshua Project : Crioulo, Upper Guinea in Guinea-Bissau, 301 000 locuteurs natifs du kriyol (incluant ceux d'autres origines ethniques). Note : la communauté créole ethnique (métis afro-portugais) est distincte et bien plus petite que l'ensemble des locuteurs du kriyol. Une autre estimation, fondée sur les 250 000 locuteurs natifs du kriyol que compte Ethnologue, donne 200 000 Créoles en Guinée-Bissau, 46 500 en Casamance et 20 000 au Portugal en 2025.",
       "distributionByCountry": [
         {
           "country": "GNB",
@@ -119,6 +122,208 @@
         "url": "https://www.britannica.com/place/Guinea-Bissau",
         "tier": "unverified",
         "source_kind": "encyclopedia"
+      },
+      {
+        "title": "APiCS Online — Guinea-Bissau Kriyol (survey chapter)",
+        "url": "https://apics-online.info/surveys/33",
+        "tier": "referenced",
+        "source_kind": "academic"
+      },
+      {
+        "title": "Revista Africa e Africanidades — Guinee-Bissau et la langue guineenne",
+        "url": "https://africaeafricanidades.com.br/documentos/ARTLIVRE071025.pdf",
+        "tier": "needs_review"
+      },
+      {
+        "title": "PopulationPyramid.net — Guinea-Bissau 2024",
+        "url": "https://www.populationpyramid.net/guinea-bissau/2024/",
+        "tier": "unverified"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Crioulo de Guinée-Bissau désigne les Créoles afro-portugais de Guinée-Bissau et la langue qu'ils parlent, qui se nomme elle-même kriyol. Le portugais dit crioulo ou guineense. Avant ces noms, les sources parlent des lançados, des Portugais installés parmi les peuples des rivières de Guinée, et de leurs descendants afro-portugais. Les sources que nous avons lues n'expliquent pas l'origine du nom kriyol ; nous présentons plus bas leur histoire.",
+    "names": [
+      {
+        "nameText": "Kriyol",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "pov",
+        "namedBy": null,
+        "shortLine": "Le nom que ses locuteurs donnent à leur langue, en Guinée-Bissau et en Casamance.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom kriyol est celui que ses locuteurs donnent à leur langue, en Guinée-Bissau et à Ziguinchor, au sud du Sénégal, selon les linguistes Incanha Intumbo, Liliana Inverno et John Holm. C'est aujourd'hui la langue la plus parlée du pays, celle qui sert entre peuples de langues différentes. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Survey chapter: Guinea-Bissau Kriyol",
+                "author": "Incanha Intumbo, Liliana Inverno et John Holm",
+                "year": 2013,
+                "url": "https://apics-online.info/surveys/33",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Atlas of Pidgin and Creole Language Structures Online, lu le 11 octobre 2026. « Locally it is called Kriyol » ; « Autoglossonym: Kriyol » ; « Other names: Portuguese: crioulo, guineense »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1594,
+              "to": 1594,
+              "label": "1594"
+            },
+            "era": "polity",
+            "statement": "Le nom kriyol ne figure pas chez André Álvares de Almada en 1594, mais il décrit sur le Rio Grande de nombreux Africains qui savent parler portugais et s'habillent à la portugaise. Des femmes appelées tangomas servent les lançados et voyagent avec eux d'une rivière à l'autre, jusqu'à l'île de Santiago.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Tratado breve dos rios de Guiné do Cabo-Verde",
+                "author": "André Álvares de Almada",
+                "year": 1594,
+                "url": "https://archive.org/details/tratadobrevedosr00alma",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 60",
+                "notes": "Texte de 1594, daté ainsi par l'Histoire générale de l'Afrique, vol. IV, p. 203 ; édition de Diogo Köpke, Porto, 1841, lue dans la numérisation d'Internet Archive le 11 octobre 2026. L'auteur est natif de l'île de Santiago du Cap-Vert. Chapitre XI, sur le Rio Grande et le pays des Beafares : « Entre estes negros andão muitos que sabem fallar a nossa lingoa Portugueza » ; « muitas negras ladinas chamadas Tangomas, porque servem aos lançados »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Crioulo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Le nom portugais de la langue et de ceux qui la parlent.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom crioulo est, avec guineense, le nom portugais du kriyol, selon les linguistes Incanha Intumbo, Liliana Inverno et John Holm.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Survey chapter: Guinea-Bissau Kriyol",
+                "author": "Incanha Intumbo, Liliana Inverno et John Holm",
+                "year": 2013,
+                "url": "https://apics-online.info/surveys/33",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Atlas of Pidgin and Creole Language Structures Online, lu le 11 octobre 2026. « Locally it is called Kriyol » ; « Autoglossonym: Kriyol » ; « Other names: Portuguese: crioulo, guineense »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1935,
+              "to": null,
+              "label": "Depuis 1935"
+            },
+            "statement": "Le nom crioulo désigne, chez les linguistes Alfa I. Sow et Mohamed H. Abdulaziz, la langue créole du Cap-Vert et de la Guinée-Bissau, qui emprunte surtout au portugais. Ces langues, écrivent-ils, sont devenues d'authentiques langues africaines.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 18 : Langue et évolution sociale",
+                "author": "Alfa I. Sow et Mohamed H. Abdulaziz",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 558",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Lançados",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Les Portugais installés parmi les peuples des rivières de Guinée, dès le XVIe siècle.",
+        "periodLabel": "Écrit depuis 1594 ; sorti de l'usage",
+        "accounts": [
+          {
+            "period": {
+              "from": 1450,
+              "to": 1800,
+              "label": "XVe-XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom lançados désigne, chez l'historien C. Wondji, des marchands venus surtout du Portugal et des îles du Cap-Vert à partir du XVe siècle, très nombreux autour de Cacheu et de Geba. Leurs descendants, de plus en plus souvent métis au XVIIe siècle, forment une communauté afro-portugaise qui dirige le commerce local.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 13 : Les États et les cultures de la côte de haute Guinée",
+                "author": "C. Wondji",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 439-440",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom lançados viendrait du portugais lançar, « jeter » : ce seraient des gens qu'on « lance » parmi les Noirs pour faire du commerce, selon l'historien Walter Rodney, que cite C. Wondji.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 13 : Les États et les cultures de la côte de haute Guinée",
+                "author": "C. Wondji",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 439-440",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1594,
+              "to": 1594,
+              "label": "1594"
+            },
+            "era": "polity",
+            "statement": "Le nom lançados apparaît dans le Tratado breve dos rios de Guiné d'André Álvares de Almada, écrit en 1594 : ces « Portugais lançados » parcourent toutes les rivières et les terres des Africains pour y faire du commerce. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Portuguezes lançados",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tratado breve dos rios de Guiné do Cabo-Verde",
+                "author": "André Álvares de Almada",
+                "year": 1594,
+                "url": "https://archive.org/details/tratadobrevedosr00alma",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 15",
+                "notes": "Texte de 1594, daté ainsi par l'Histoire générale de l'Afrique, vol. IV, p. 203 ; édition de Diogo Köpke, Porto, 1841, lue dans la numérisation d'Internet Archive le 11 octobre 2026. L'auteur est natif de l'île de Santiago du Cap-Vert. « Hoje atravessão estes Portuguezes lançados todos os rios e terras dos negros »."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

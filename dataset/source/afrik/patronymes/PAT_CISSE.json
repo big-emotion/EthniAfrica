@@ -12,7 +12,9 @@
       "spelling": "Cissé",
       "attestations": [
         { "countryId": "SEN", "sourceRefs": ["afrik-candidate-queue"] },
-        { "countryId": "MLI", "sourceRefs": ["afrik-candidate-queue"] }
+        { "countryId": "MLI", "sourceRefs": ["afrik-candidate-queue"] },
+        { "countryId": "GMB", "sourceRefs": ["afrik-candidate-queue"] },
+        { "countryId": "SLE", "sourceRefs": ["afrik-candidate-queue"] }
       ]
     },
     {
@@ -26,6 +28,18 @@
       "spelling": "Sisse",
       "attestations": [
         { "countryId": "SEN", "sourceRefs": ["afrik-candidate-queue"] }
+      ]
+    },
+    {
+      "spelling": "Ceesay",
+      "attestations": [
+        { "countryId": "GMB", "sourceRefs": ["afrik-candidate-queue"] }
+      ]
+    },
+    {
+      "spelling": "Sesay",
+      "attestations": [
+        { "countryId": "SLE", "sourceRefs": ["afrik-candidate-queue"] }
       ]
     }
   ],
@@ -84,6 +98,16 @@
       "countryId": "MLI",
       "status": "attested",
       "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "countryId": "GMB",
+      "status": "attested",
+      "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "countryId": "SLE",
+      "status": "attested",
+      "sourceRefs": ["afrik-candidate-queue"]
     }
   ],
   "alliances": [],
@@ -126,10 +150,6 @@
   ],
   "gaps": [
     {
-      "fieldPath": "origin",
-      "reason": "Aucun sens du nom Cissé n'est établi dans les sources que nous avons consultées : elles disent où le clan est attesté et ce qu'il a fait, pas ce que le mot veut dire. Les récits et lectures ci-dessus sont des pistes attribuées, aucune n'est retenue comme la bonne."
-    },
-    {
       "fieldPath": "alliances",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
@@ -149,5 +169,417 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Cissé est un nom de clan, ou jamu, porté chez les Soninké, les Malinké et les Songhaï. En malinké et en bambara, il se dit Sise ; d'autres graphies existent, Cisse et Sisse. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Cissé",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan soninké, malinké et songhaï ; son origine reste discutée.",
+        "periodLabel": "Écrit dès 1853 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Cissé est la graphie française de Sìsɛ, un nom de clan, ou jamu, que le dictionnaire des noms de clan mandingues rattache aux Soninké, aux Malinké et aux Songhaï. Ce dictionnaire ne lui donne pas de sens. Les explications de son origine sont discutées ; nous les présentons séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet relu le 11 octobre 2026. Entrée Sìsɛ : variante Sise, groupes soninké, malinké et songhaï, aucun sens donné au nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Cissé a pour équivalents Woniwogi, Teworo, Gumu, Gbilimu et Sengor, des noms tenus pour le même clan. Ses porteurs sont liés aux Keïta par une parenté à plaisanterie, selon le dictionnaire des noms de clan mandingues et le mémoire d'E. A. Bogacheva.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet relu le 11 octobre 2026. Entrée Sìsɛ : équivalents Woniwogi, Teworo, Gumu, Gbilimu et Sengor ; parenté à plaisanterie (sinankun) avec Keyita."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 127-128",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe. Lu dans le PDF du dépôt institutionnel de l'université le 11 octobre 2026. Notice Sìsɛ : mêmes équivalents ; parenté à plaisanterie (sinanku) avec Kéyità."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "1901"
+            },
+            "era": "colonial",
+            "statement": "Le nom Cissé est écrit « Sissé » par Maurice Delafosse, qui le compte parmi les noms de famille des Bambara. Une note donne aussi les Sissé parmi les noms de famille malinké, d'après les missionnaires du Saint-Esprit.",
+            "formAsWritten": "Sissé",
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 237",
+                "notes": "Paris, E. Leroux, 1901. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Auteur de l'époque coloniale, cité ici pour les formes qu'il relève. Page 237 : « des Keïta, des Sissé, des Kamara » parmi les familles bamana, et en note la liste des noms de famille malinké « d'après les Pères du Saint-Esprit », qui se termine par « Sissé »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Cissé est, selon Louis Desplagnes, un nom de famille devenu un titre : après l'avènement de Cheikou Amadou, émir peul d'Hamdallahi, les Peuls l'auraient pris pour désigner les gens qui connaissent le Coran. Dans la vallée du Niger, il serait un titre, comme Touré au Sénégal.",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Cheikou Amadou",
+                "role": "émir peul d'Hamdallahi dans le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Le plateau central nigérien : une mission archéologique et ethnographique au Soudan français",
+                "author": "Louis Desplagnes, lieutenant d'infanterie coloniale",
+                "year": 1907,
+                "url": "https://archive.org/details/leplateaucentral00desp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 136, 199",
+                "notes": "Paris, E. Larose, 1907. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Officier de l'époque coloniale, cité ici pour ce qu'il écrit du nom, non comme une autorité. Page 136, note 1 : « Cissé, nom de famille qui a été, après l'avènement de Cheikou Amadou, Lobbo Cissé comme émir Foulbés d'Hamadallahi, pris par les Foulbés comme titre des gens connaissant le Coran, synonyme de « Thalibé ». Dans la vallée du Niger, Cissé est un titre comme Touré au Sénégal. » Page 199 : le marabout peul Amadou, « revêtu du titre de Cissé » quand il se révolte, appel que l'auteur date de 1810."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Proposé en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Cissé serait l'un des noms pris par des Peuls entrés dans un « clan des serpents », avec Sankaré et Sidibé, selon Louis Desplagnes.",
+            "hypothesisGroup": "origine du nom Cissé",
+            "sources": [
+              {
+                "title": "Le plateau central nigérien : une mission archéologique et ethnographique au Soudan français",
+                "author": "Louis Desplagnes, lieutenant d'infanterie coloniale",
+                "year": 1907,
+                "url": "https://archive.org/details/leplateaucentral00desp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 136",
+                "notes": "Paris, E. Larose, 1907. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Officier de l'époque coloniale, cité ici pour ce qu'il écrit du nom, non comme une autorité. Page 136 : des Foulbés « qui font partie de ce clan des serpents deviennent les […] Sankare, les Cissé, les Sidibé, enfin les So ». Hypothèse de l'époque coloniale."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1853,
+              "to": 1853,
+              "label": "Récit publié en 1853"
+            },
+            "era": "polity",
+            "statement": "Le nom Cissé apparaît par écrit chez Hyacinthe Hecquard, qui rencontre au Fouta-Djalon une ancienne épouse de l'almami, « appelée Maïmouna-Cissé ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un voyageur l'a noté, pas depuis quand le clan le porte.",
+            "formAsWritten": "Maïmouna-Cissé",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Hyacinthe Hecquard",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Voyage sur la côte et dans l'intérieur de l'Afrique occidentale",
+                "author": "Hyacinthe Hecquard",
+                "year": 1853,
+                "url": "https://archive.org/details/bub_gb_R6YTAAAAYAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 280",
+                "notes": "Paris, Bénard, 1853. Récit de voyage d'un officier français jusqu'à la cour de l'almami du Fouta-Djalon. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive (exemplaire de Harvard). Page 280, chapitre VII : « une ancienne femme de l'almami, appelée Maïmouna-Cissé »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Temps de Soundiata, selon les traditions"
+            },
+            "era": "polity",
+            "statement": "Le nom Cissé figure dans la tradition du Manden parmi les cinq clans de marabouts alliés de Soundiata dès la première heure, proclamés « gardiens de la foi ». Les Sise du Wagadu, convertis à l'islam, y sont dits ses alliés politiques, selon Djibril Tamsir Niane.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 158-159, note 45",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française. Page 158 : les cinq clans maraboutiques alliés de la première heure, parmi lesquels les Sise du Wagadu, islamisés et alliés politiques de Sunjata Keita ; note 45, page 159 : la tradition dit que les rois du Wagadu, les Sise, furent les alliés de première heure de Sunjata Keita. Relevé repris des notes de la fiche, qui citent ces pages ; l'exemplaire n'a pas été rouvert pour cette rédaction."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Société songhaï, selon l'historien"
+            },
+            "statement": "Le nom Cissé est celui de l'un des plus anciens clans de la société songhaï, d'origine soninké, avec les Touré, les Sylla, les Tunkara, les Diakité, les Dramé et les Diawara, selon Sékéné Mody Cissoko.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 8 : Les Songhay du XIIe au XVIe siècle",
+                "author": "Sékéné Mody Cissoko",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 230",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française. Page 230 : « Les plus anciens étaient d'origine soninke (Ture, Sylla, Tunkara, Sise, Jakite, Drame, Jawara) ». Citation relue dans la fiche du nom Touré le 10 octobre 2026 ; l'exemplaire n'a pas été rouvert pour cette rédaction."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Proposé en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Cissé serait celui du premier roi des Soninké, Kaya Maghan Cissé, qui les aurait conduits vers la fin du VIIIe siècle : c'est une lecture de Maurice Delafosse, que F. de Medeiros rapporte parmi celles qui font venir d'ailleurs les fondateurs du Ghana.",
+            "actors": [
+              {
+                "name": "Kaya Maghan",
+                "role": "premier roi des Soninké dans cette lecture"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 5 : Les peuples du Soudan : mouvements de populations",
+                "author": "F. de Medeiros",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 153",
+                "notes": "UNESCO, volume dirigé par M. El Fasi et I. Hrbek, édition française. Page 153 : la lecture de Delafosse (1912) qui fait conduire les Soninké par Kaya Maghan Cissé, leur premier roi, vers la fin du VIIIe siècle, rapportée comme un exemple d'interprétation qui explique la fondation du Ghana par des fondateurs venus d'ailleurs. Le texte de Delafosse n'a pas été lu. Relevé repris des notes de la fiche ; l'exemplaire n'a pas été rouvert pour cette rédaction."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "Proposé en 1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Cissé serait d'abord un titre religieux : au temps de l'askia Mohammed, Sise était un titre, comme Ture, selon Sékéné Mody Cissoko.",
+            "hypothesisGroup": "origine du nom Cissé",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 8 : Les Songhay du XIIe au XVIe siècle",
+                "author": "Sékéné Mody Cissoko",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 219, note 13",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française. Page 219, note 13 : « à l'époque, Ture (« touré ») était un titre religieux tout comme Sise (« cissé ») ». Citation relue dans la fiche du nom Touré le 10 octobre 2026 ; l'exemplaire n'a pas été rouvert pour cette rédaction."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Cissé voudrait dire « maître du cheval blanc » en soninké, si désignant le cheval. L'aîné de deux frères, maître du cheval blanc, serait devenu Sise, et le cadet, maître de l'écurie, Suwaré. C'est le récit d'un ouvrage en n'ko de Souleymane Kanté, selon la traduction russe qu'en donne E. A. Bogacheva.",
+            "hypothesisGroup": "origine du nom Cissé",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 128",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe. Lu dans le PDF du dépôt institutionnel de l'université le 11 octobre 2026. Notice Sìsɛ : le récit tiré de l'ouvrage en n'ko de Souleymane Kanté, cité dans son édition de 2004 ; le texte original n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Récit de la tradition"
+            },
+            "statement": "Le nom Cissé est rattaché à un fils de Dinga, et les Sise comptent dans le Manden parmi les « cinq premiers musulmans », selon le dictionnaire des noms de clan mandingues.",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet relu le 11 octobre 2026. Entrée Sìsɛ, commentaire en russe : on les fait remonter à un fils de Diŋa ; dans le Manden, l'un des « cinq premiers musulmans »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "Récit recueilli en 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Cissé remonte à deux ancêtres, Nfalefin et Nfawulen, selon Babou Condé, griot de Fadama, dans la préfecture de Kouroussa en Guinée. Nfalefin, un marabout, s'installa à Bayi ; Nfawulen était cultivateur. Le récit est rapporté par E. A. Bogacheva.",
+            "actors": [
+              {
+                "name": "Nfalefin et Nfawulen",
+                "role": "ancêtres des Cissé dans le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 128",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe. Lu dans le PDF du dépôt institutionnel de l'université le 11 octobre 2026. Notice Sìsɛ : le récit du griot Babou Condé, de Fadama, recueilli lors d'entretiens menés en 2017 (pp. 10-11 pour la présentation de ces entretiens)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sise",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme malinké et bambara du nom de clan Cissé.",
+        "usedIn": ["bam", "emk"],
+        "periodLabel": "Écrit dès 1901 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sise est la forme malinké et bambara du nom de clan que le français écrit Cissé. Le dictionnaire des noms de clan l'écrit Sìsɛ, avec la variante Sise, sans lui donner de sens.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Bailleul, Davydov, Erman, Maslinsky, Méric et Vydrin",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français du Corpus bambara de référence (2011-2020). Fichier complet relu le 11 octobre 2026. Entrée Sìsɛ : variante Sise, aucun sens donné au nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "1901"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sise apparaît par écrit chez Maurice Delafosse, qui le compte parmi les noms de famille des Dioula. C'est la plus ancienne trace de cette forme que le projet connaît ; le clan qui la porte est plus ancien que ce manuel.",
+            "formAsWritten": "Sise",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 115",
+                "notes": "Paris, E. Leroux, 1901. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Auteur de l'époque coloniale, cité ici pour les formes qu'il relève. Page 115 : « Les noms de famille chez les Dyoula sont les suivants : Watara, Kurubari, […] Doso, Sise, Dayorokè »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Cisse",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": []
+      },
+      {
+        "nameText": "Sisse",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": []
+      }
+    ]
+  }
 }

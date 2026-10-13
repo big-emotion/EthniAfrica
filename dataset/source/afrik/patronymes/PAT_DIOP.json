@@ -104,5 +104,93 @@
       "fieldPath": "homonyms",
       "reason": "L’entrée DAFN/FamilySearch a été recherchée pour des origines distinctes de Diop ; elle mentionne plusieurs peuples sénégalais mais ne distingue pas de lignée homonyme séparée."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Diop est un nom de clan des Wolof et des Lébou du Sénégal. Il est écrit Diop dans un annuaire officiel de la colonie dès 1865. Un dictionnaire de noms de famille le dit d'étymologie inexpliquée : on ne sait pas avec certitude d'où il vient.",
+    "names": [
+      {
+        "nameText": "Diop",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan wolof et lébou du Sénégal, écrit Diop dès 1865 ; son sens n'est pas expliqué.",
+        "periodLabel": "Écrit dès 1865 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Diop est un nom de clan des Wolof et des Lébou du Sénégal, porté aussi chez d'autres peuples sénégalais, selon le Dictionary of American Family Names. Le dictionnaire dit son étymologie inexpliquée ; on ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Diop",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/diop?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e éd., Oxford University Press, 2022, notice reproduite par Ancestry et lue le 12 octobre 2026. L'entrée dit, en français sur la page : Afrique de l'Ouest, principalement le Sénégal, « à partir du nom du clan Diop du Wolof et des peuples Lebou étroitement liés d'étiologie inexpliquée », nom présent aussi parmi d'autres peuples sénégalais ; elle renvoie à Jobe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "Édition de 1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Diop est, selon Ihechukwu Madubuike, l'un des noms de famille wolof les plus courants, que les enfants reçoivent de leur père, avec Ndiaye, Mbang, Fall et Gueye. Il note aussi que les chefs traditionnels de Dakar sont en général des Diop.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Handbook of African Names",
+                "author": "Ihechukwu Madubuike",
+                "year": 1994,
+                "url": "https://dokumen.pub/a-handbook-of-african-names-2-revnbsped-0894104381-9780894104381-0894104373.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 69 (page que donne l'index du volume)",
+                "notes": "2e éd., Three Continents Press, 1994, lue le 12 octobre 2026 sur une transcription numérique miroir du volume imprimé. Dans la section sur les Wolof, les enfants prennent le nom familial du père ; les noms les plus courants, transmis par les hommes, sont « Diop, Ndiaye, Mbang, Fall, Gueye, Mbaye, Sek, Diao », et les chefs traditionnels de Dakar sont en général des Diop. Le texte numérisé est mal découpé : la page 69 est celle que l'index attribue à Diop."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1865,
+              "to": 1865,
+              "label": "1865"
+            },
+            "era": "colonial",
+            "statement": "Le nom Diop apparaît par écrit, sous la forme Diop, dans l'Annuaire du Sénégal de 1865 : « Akar-Diop » y figure parmi les interprètes auxiliaires de la colonie, en poste à Mbidjem, qui est alors le siège d'un cercle français. C'est la plus ancienne trace de ce nom que le projet connaît ; le clan est plus ancien que cet annuaire.",
+            "formAsWritten": "Diop",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Akar-Diop",
+                "role": "figure dans cette liste"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Annuaire du Sénégal et dépendances pour l'année 1865",
+                "author": "Colonie du Sénégal",
+                "year": 1865,
+                "url": "https://archive.org/details/annuairedugouve01afrigoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 83",
+                "notes": "Saint-Louis, Imprimerie du Gouvernement, 1865, lu le 13 octobre 2026 dans la numérisation d'Internet Archive (catalogue : « Annuaire du Gouvernement général de l'Afrique occidentale française »). Page 83, liste des interprètes auxiliaires de 2e classe : la ligne « Akar-Diop, à Mbidjem » suit celles de Demba, à Nguiguis, et d'Alpha, à Saldé. Le même annuaire nomme plus loin « Doumbé Diop » parmi les titulaires de licences (p. 99). Mbidjem est le chef-lieu d'un « Cercle de Mbidjem » dans la liste des commandants du même volume."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

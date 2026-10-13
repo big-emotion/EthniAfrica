@@ -18,6 +18,19 @@
         {
           "countryId": "COM",
           "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "SDN",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
+      ]
+    },
+    {
+      "spelling": "Abdalla",
+      "attestations": [
+        {
+          "countryId": "SDN",
+          "sourceRefs": ["afrik-candidate-queue"]
         }
       ]
     }
@@ -60,6 +73,11 @@
     },
     {
       "countryId": "COM",
+      "status": "attested",
+      "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "countryId": "SDN",
       "status": "attested",
       "sourceRefs": ["afrik-candidate-queue"]
     }
@@ -127,5 +145,84 @@
       "fieldPath": "countries",
       "reason": "Les sources propres à « Abdallah » n'ont pas confirmé les pays où il est porté ; les recherches exactes par pays n'ont pas livré de registre officiel directement exploitable pour cette fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Abdallah est un nom personnel arabe, formé de ʿabd, « serviteur », et d'Allāh, « Dieu », devenu nom de famille dans plusieurs pays d'Afrique. Les sources consultées ne disent pas depuis quand ni comment il sert de nom de famille ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "Abdallah",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel arabe, « serviteur de Dieu », employé comme nom de famille ; on ne sait pas depuis quand.",
+        "periodLabel": "Employé aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "statement": "Le nom Abdallah est classé par le dictionnaire communautaire Behind the Name comme un nom de famille swahili tiré du prénom Abdallah ; cette entrée ne fixe ni date ni pays précis.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the surname Abdallah — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://surnames.behindthename.com/name/abdallah",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Entrée communautaire lue le 13 octobre 2026. Elle classe Abdallah comme nom de famille tiré du prénom Abdallah, avec l'usage « Swahili »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2026,
+              "to": 2026,
+              "label": "Décrit en 2026"
+            },
+            "era": "modern",
+            "statement": "Le nom Abdallah peut tenir lieu de nom de famille au Soudan, où, selon le gouvernement britannique, il n'existe pas de nom de famille : on y porte le prénom puis ceux du père, du grand-père et de l'arrière-grand-père, et le nom du grand-père tient souvent lieu de nom de famille. Le texte ne cite pas Abdallah ; ce rapprochement est le nôtre.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sudan: Knowledge Base profile",
+                "author": "HM Passport Office",
+                "year": 2026,
+                "url": "https://www.gov.uk/government/publications/sudan-knowledge-base-profile/sudan-knowledge-base-profile",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section « Sudan: names »",
+                "notes": "Document du Home Office britannique, version 4.0, lu le 13 octobre 2026. Il dit que les noms au Soudan sont au nombre de quatre (prénom, noms du père, du grand-père et de l'arrière-grand-père) et que « surnames do not exist in Sudan ; it is common practice to take the male grandparent's name in place of a surname ». Le texte ne cite pas Abdallah."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Abdallah est formé du mot arabe ʿabd, qui désigne un esclave, un serviteur ou celui qui sert Dieu, et d'Allāh, « Dieu », selon le lexique d'Edward William Lane, qui cite l'emploi « ʿabdu llāhi ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "An Arabic-English Lexicon",
+                "author": "Edward William Lane",
+                "year": 1863,
+                "url": "https://arabiclexicon.hawramani.com/%D8%B9%D8%A8%D8%AF/",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée « ʿabd »",
+                "notes": "Lexique d'Edward William Lane (Londres, 1863-1893), lu sur la reproduction en ligne du Hawramani Arabic Lexicon le 13 octobre 2026. L'entrée donne à ʿabd le sens de « male slave », puis de serviteur ou d'adorateur de Dieu, et cite l'emploi « ʿabdu llāhi ». La reproduction en ligne n'indique pas les pages du livre."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

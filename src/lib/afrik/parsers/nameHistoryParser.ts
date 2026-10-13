@@ -220,6 +220,10 @@ const nameSchema = z
 export const nameHistorySchema = z
   .object({
     summary: z.string().trim().min(1),
+    // No source gives the name some peoples use for themselves (Shua,
+    // ǂHoan). The block says so rather than marking an outside name as
+    // self-given; the validator then refuses any self-given name beside it.
+    selfNameUnknown: z.literal(true).optional(),
     names: z
       .array(nameSchema)
       .min(1, { message: "a name history holds at least one name" }),

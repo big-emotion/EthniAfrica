@@ -131,5 +131,106 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Meru désigne un peuple bantou des pentes nord et est du mont Kenya, au Kenya, qui se nomme lui-même Ameru. Ce peuple réunit neuf sous-groupes, dont les Imenti, les Tigania, les Igembe et les Tharaka. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Ameru",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mer",
+        "namedBy": null,
+        "shortLine": "Le nom que porte ce peuple du mont Kenya ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit depuis 1896 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ameru, ou Meru, désigne aujourd'hui un groupe bantou formé de neuf sous-groupes : les Igembe, les Tigania, les Imenti, les Miutini, les Igoji, les Tharaka, les Chuka, les Muthambi et les Mwimbi, selon Catherine S. Dolan. Leurs terres s'étendent au nord et au nord-est du mont Kenya. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Meru",
+                "author": "Catherine S. Dolan",
+                "year": null,
+                "url": "https://www.encyclopedia.com/places/africa/kenyan-political-geography/meru",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article de l'Encyclopedia of World Cultures Supplement, lu sur Encyclopedia.com le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1925,
+              "to": 1925,
+              "label": "Vers 1925"
+            },
+            "era": "colonial",
+            "statement": "Le nom Meru recouvre alors des sections nombreuses, aux limites floues : les habitants du Mwimbe et leurs voisins de l'Igoji refusent d'être appelés Meru, bien qu'ils en partagent beaucoup de coutumes et de mots, selon l'administrateur colonial Granville St John Orde-Browne.",
+            "sources": [
+              {
+                "title": "The Vanishing Tribes of Kenya",
+                "author": "Granville St John Orde-Browne",
+                "year": 1925,
+                "url": "https://archive.org/details/vanishingtribeso0000jord",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 26",
+                "notes": "Londres. L'auteur a été administrateur colonial dans la région du mont Kenya. Lu dans l'exemplaire numérisé le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1908,
+              "to": 1908,
+              "label": "1908"
+            },
+            "era": "colonial",
+            "statement": "Le nom Meru devient celui d'un poste administratif britannique, établi en 1908 pour contrôler les peuples situés au nord d'Embu, selon Granville St John Orde-Browne.",
+            "sources": [
+              {
+                "title": "The Vanishing Tribes of Kenya",
+                "author": "Granville St John Orde-Browne",
+                "year": 1925,
+                "url": "https://archive.org/details/vanishingtribeso0000jord",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 34-35",
+                "notes": "Londres. L'auteur a été administrateur colonial dans la région du mont Kenya. Lu dans l'exemplaire numérisé le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1893,
+              "to": 1893,
+              "label": "1893"
+            },
+            "era": "polity",
+            "statement": "Le nom Meru est celui que les porteurs de la caravane du géologue John Walter Gregory donnent au mont Kenya en 1893 ; Gregory précise que c'est le nom employé par les gens de Zanzibar. C'est la plus ancienne trace de ce nom que le projet connaît. Il y désigne une montagne, et les sources lues ne disent pas si le nom du peuple en vient.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Great Rift Valley: Being the Narrative of a Journey to Mount Kenya and Lake Baringo",
+                "author": "John Walter Gregory",
+                "year": 1896,
+                "url": "https://archive.org/details/greatriftvalleyb00greg",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 151 et p. 162, note 1",
+                "notes": "Londres. Récit d'un voyage fait en 1893, lu dans l'exemplaire numérisé le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

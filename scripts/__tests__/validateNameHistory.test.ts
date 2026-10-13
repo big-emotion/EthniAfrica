@@ -128,6 +128,35 @@ describe("checkNameHistoryBlocks", () => {
     ]);
   });
 
+  // No source gives some peoples' self-name (Shua, ǂHoan): the block says so
+  // plainly instead of marking an outside name as self-given.
+  // @req REQ-196
+  it("passes a people fiche that declares its self-name unknown", () => {
+    const block = { ...nameHistory([account()]), selfNameUnknown: true };
+    block.names[0].selfGiven = false;
+    writeJson(tmpDir, "peuples/FLG_TEST/PPL_TEST.json", {
+      id: "PPL_TEST",
+      nameHistory: block,
+    });
+
+    expect(checkNameHistoryBlocks(tmpDir).errors).toEqual([]);
+  });
+
+  // @req REQ-196
+  it("fails a block that declares its self-name unknown while a name is self-given", () => {
+    const block = { ...nameHistory([account()]), selfNameUnknown: true };
+    writeJson(tmpDir, "peuples/FLG_TEST/PPL_TEST.json", {
+      id: "PPL_TEST",
+      nameHistory: block,
+    });
+
+    expect(checkNameHistoryBlocks(tmpDir).errors).toEqual([
+      expect.stringMatching(
+        /PPL_TEST\.json.*selfNameUnknown.*"Testa" is self-given/
+      ),
+    ]);
+  });
+
   // @req REQ-196
   it("fails a block that tells the same name twice", () => {
     const block = nameHistory([account()]);

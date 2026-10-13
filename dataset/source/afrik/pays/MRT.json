@@ -485,13 +485,28 @@
     },
     "kingdoms": [
       {
-        "name": "Empire Almoravide",
-        "period": "VIIe siècle - XIIe siècle",
+        "name": "Empire du Ghana (Wagadu)",
+        "period": "IVe - XIIIe siècles",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 601,
-          "endYear": 1200,
-          "precision": "century"
+          "startYear": 300,
+          "endYear": 1300,
+          "precision": "approximate",
+          "datingNote": "Selon Augustin F. C. Holl (GHA IX), la plupart des grandes villes du Sahel, dont Koumbi Saleh, paraissent fondées entre 300 et 600. La fin reprend la borne de la fiche du Mali (XIIIe siècle). La conquête almoravide de 1076, longtemps admise, est mise en doute par Mohammed El Fasi et Ivan Hrbek (HGA III)."
+        },
+        "dominantPeoples": ["Soninké"],
+        "politicalCenters": ["Koumbi Saleh (capitale)"],
+        "historicalRole": "Empire appelé Ghana ou Wagadu, selon Abdoulaye Bathily (HGA III). Sa capitale, Koumbi Saleh, se trouve dans le sud-est de l'actuelle Mauritanie. Avec d'autres villes du fleuve Sénégal et du Niger, elle relie le monde musulman aux pays de la savane et de la forêt. La fiche du Mali décrit le même empire."
+      },
+      {
+        "name": "Empire Almoravide",
+        "period": "XIe siècle - XIIe siècle",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1039,
+          "endYear": 1147,
+          "precision": "approximate",
+          "datingNote": "Selon Ivan Hrbek et Jean Devisse (HGA III), le mouvement almoravide commence vers 1039 (430 de l'hégire). La fin, 1147, reprend la borne de la fiche du Maroc. La fiche faisait auparavant commencer l'empire au VIIe siècle, date qui ne correspond à aucun événement almoravide."
         },
         "dominantPeoples": ["Berbères Sanhaja (Lemtouna", "Massufa", "Godala)"],
         "politicalCenters": ["Aoudaghost", "Marrakech (capitale de l'empire)"],
@@ -740,6 +755,34 @@
         "url": "https://www.unfpa.org/data/world-population/MR",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Histoire générale de l'Afrique, III, ch. 13 : Les Almoravides",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par M. El Fasi et I. Hrbek, chapitre d'Ivan Hrbek et Jean Devisse (1990), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 372. La première phase du mouvement almoravide « débuta aux environs de 430/1039 et s'acheva en 445/1053 »."
+      },
+      {
+        "title": "General History of Africa, IX: General History of Africa Revisited — Introduction",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000396045",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par A. F. C. Holl, chapitre d'Augustin F. C. Holl (2025), en libre accès sous licence CC BY-SA 3.0 IGO, lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 869. « Most of the major towns and cities (Kumbi-Saleh, Tegdaoust, Niani, Gao, Es-Suk) seem to have been founded between 300 and 600 CE »."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, III, ch. 27 : Relations entre les différentes régions de l'Afrique",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par M. El Fasi et I. Hrbek, chapitre d'Abdoulaye Bathily, avec la collaboration de Claude Meillassoux (1990), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 784. « Ghana/Kumbi, capitale de l'empire du Ghana/Wagadu » assure avec d'autres villes la jonction entre le monde musulman et les pays de la savane et de la forêt."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, III, ch. 3 : Étapes du développement de l'Islam et de sa diffusion en Afrique",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par M. El Fasi et I. Hrbek, chapitre de Mohammed El Fasi et Ivan Hrbek (1990), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 100. « On a de plus en plus tendance à estimer que cette conquête [almoravide du Ghana, en 469/1076] n'a jamais eu lieu »."
       }
     ],
     "demographics": {

@@ -13,7 +13,7 @@
       "attestations": [
         {
           "countryId": "MOZ",
-          "sourceRefs": ["corpus-ppl-ndau-moz-organisation"]
+          "sourceRefs": ["corpus-ppl-ndau-organisation"]
         }
       ]
     }
@@ -49,16 +49,16 @@
   },
   "peoples": [
     {
-      "peopleId": "PPL_NDAU_MOZ",
+      "peopleId": "PPL_NDAU",
       "status": "attested",
-      "sourceRefs": ["corpus-ppl-ndau-moz-organisation"]
+      "sourceRefs": ["corpus-ppl-ndau-organisation"]
     }
   ],
   "countries": [
     {
       "countryId": "MOZ",
       "status": "attested",
-      "sourceRefs": ["corpus-ppl-ndau-moz-organisation"]
+      "sourceRefs": ["corpus-ppl-ndau-organisation"]
     },
     {
       "countryId": "ZWE",
@@ -83,7 +83,7 @@
   "homonyms": [],
   "sources": [
     {
-      "sourceKey": "corpus-ppl-ndau-moz-organisation",
+      "sourceKey": "corpus-ppl-ndau-organisation",
       "title": "EthniAfrica — fiche du peuple Ndau, organisation clanique",
       "url": null,
       "tier": "unverified",
@@ -128,5 +128,174 @@
       "fieldPath": "homonyms",
       "reason": "Deux questions distinctes, dont aucune n'est tranchée. Bryant distingue une branche Lushozi-Dube sans lui donner d'origine séparée, et faute de trajectoire distincte attestée elle est traitée comme une subdivision. Reste la seconde, plus lourde : la fiche rattache le nom aux Ndau du Mozambique, quand tout ce que Bryant documente est le clan du littoral zoulou. Le passage de l'un à l'autre par les conquêtes nguni de Soshangane est plausible et n'a été établi par aucune source consultée ; les deux ne sont donc ni fusionnés ni déclarés homonymes, faute de savoir lequel des deux ils sont."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Dube est un nom de clan nguni, porté au Zululand puis au Natal, en Afrique du Sud. Au XIXe siècle, au moins deux groupes le portent : un clan de la Mhlathuze et les Qadi, appelés aussi Amadube. On ne sait pas avec certitude d'où vient ce nom : les sources consultées ne lui donnent pas d'origine.",
+    "names": [
+      {
+        "nameText": "Dube",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan nguni du Zululand et du Natal ; on ne sait pas avec certitude d'où il vient.",
+        "periodLabel": "Écrit dès 1852 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dube est aussi un mot zoulou : idube désigne le zèbre, selon le dictionnaire d'Alfred Bryant. Aucune source consultée ne dit que le nom du clan vient de ce mot.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Zulu-English Dictionary",
+                "author": "Alfred T. Bryant",
+                "year": 1905,
+                "url": "https://archive.org/details/zuluenglishdicti00brya",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 117",
+                "notes": "Pinetown (Natal), Mariannhill Mission Press, 1905. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Page 117 : « i(li)-Dube, Zebra » ; aussi des perles à rayures et un plant de maïs aux feuilles striées. L'entrée ne parle pas du nom de clan."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1852,
+              "to": 1852,
+              "label": "1852"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dube apparaît par écrit sous la forme Amadube, un autre nom des Qadi, donné « d'après leur premier chef », dans les travaux d'une commission du Natal. Le rapport dit ce chef, Udube, tué par Shaka. C'est la plus ancienne trace de ce nom que le projet connaît. Les sources ne disent pas si les Dube d'aujourd'hui descendent des Qadi ou du clan de la Mhlathuze.",
+            "formAsWritten": "Amadube",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Udube",
+                "role": "premier chef des Qadi dans le rapport"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Proceedings of the Commission appointed to inquire into the past and present state of the Kafirs in the District of Natal",
+                "author": "Commission to Inquire into the Past and Present State of the Kafirs, Natal",
+                "year": 1852,
+                "url": "https://archive.org/details/proceedings00kafigoog",
+                "tier": "official",
+                "source_kind": "archive",
+                "page": "p. 45",
+                "notes": "Pietermaritzburg, J. Archbell, 1852 ; première séance le 1er novembre 1852. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive (exemplaire de Harvard). Page 45, dans un relevé des groupes du district : « Amacadi, Amaqudi or Amaxadi. This tribe sometimes called also Amadube from their first chief […]. Their chief Udube was slain and the tribe scattered by Tyaka »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1837,
+              "to": 1837,
+              "label": "1837"
+            },
+            "era": "polity",
+            "statement": "Le nom Dube est celui d'un chef des Qadi, Dube, fils de Silwane, tué avec la plupart des siens sur l'ordre de Dingane en 1837, selon Alfred Bryant. Le rapport de 1852 dit le chef Udube tué par Shaka ; les sources ne disent pas s'il s'agit du même homme.",
+            "actors": [
+              {
+                "name": "Dube, fils de Silwane",
+                "role": "chef des Qadi dans le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bryant-a-t-olden-times-in-zululand-and-natal-containing-earlier-political-histor",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 483, 493-494",
+                "notes": "Londres, Longmans, Green and Co., 1929. Bryant écrit depuis la mission catholique du Natal, à l'époque coloniale, d'après des récits recueillis sur les ancêtres des clans. Lu le 11 octobre 2026 dans une copie non officielle déposée sur Internet Archive ; un exemplaire de bibliothèque est en prêt sous l'identifiant bwb_KT-091-892. Page 483 : « Dube, son of Silwane » ; page 493 : « Dube, head of the emaQadini branch of the family » ; page 494 : le différend né « in the early months of 1837 », puis le massacre des Qadi par Dingane, « most of them, including Dube »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1827,
+              "label": "Avant 1827, selon l'historien"
+            },
+            "era": "polity",
+            "statement": "Le nom Dube est celui d'un clan qui vivait sur la rive nord de la lagune de la Mhlathuze, au Zululand, sous le chef Kushwayo. Alfred Bryant en fait un clan frère des Mbonambi, issu de la même souche.",
+            "actors": [
+              {
+                "name": "Kushwayo",
+                "role": "chef du clan dans le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bryant-a-t-olden-times-in-zululand-and-natal-containing-earlier-political-histor",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 106",
+                "notes": "Londres, Longmans, Green and Co., 1929. Bryant écrit depuis la mission catholique du Natal, à l'époque coloniale, d'après des récits recueillis sur les ancêtres des clans. Lu le 11 octobre 2026 dans une copie non officielle déposée sur Internet Archive ; un exemplaire de bibliothèque est en prêt sous l'identifiant bwb_KT-091-892. Page 106 : « The Dube people, under the chieftain Kushwayo (Maqamehlezi) […]. They were brother clans, both originating from the same parental stock. Their main settlement was along the northern banks of the Mhlatuze lagoon »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1827,
+              "to": 1827,
+              "label": "Mars 1827"
+            },
+            "era": "polity",
+            "statement": "Le nom Dube est encore celui d'un clan qui garde son pays en mars 1827 : les marchands d'ivoire Farewell et Isaacs y trouvent son chef Nzwakele, fils de Kushwayo, selon Alfred Bryant.",
+            "actors": [
+              {
+                "name": "Nzwakele",
+                "role": "chef du clan dans le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bryant-a-t-olden-times-in-zululand-and-natal-containing-earlier-political-histor",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 106",
+                "notes": "Londres, Longmans, Green and Co., 1929. Bryant écrit depuis la mission catholique du Natal, à l'époque coloniale, d'après des récits recueillis sur les ancêtres des clans. Lu le 11 octobre 2026 dans une copie non officielle déposée sur Internet Archive ; un exemplaire de bibliothèque est en prêt sous l'identifiant bwb_KT-091-892. Page 106 : « when in March, 1827, Farewell and Isaacs travelled that way in search of ivory, they found Nzwakele, son of Kushwayo, in some mild sense still reigning in the old fatherland »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Règne de Dingane, selon l'historien"
+            },
+            "era": "polity",
+            "statement": "Le nom Dube passe ensuite au Natal : sous Dingane, le chef Nzwakele est tué, et la plupart des Dube franchissent la Thukela. En 1929, Alfred Bryant les dit dispersés partout au Natal.",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bryant-a-t-olden-times-in-zululand-and-natal-containing-earlier-political-histor",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 107",
+                "notes": "Londres, Longmans, Green and Co., 1929. Bryant écrit depuis la mission catholique du Natal, à l'époque coloniale, d'après des récits recueillis sur les ancêtres des clans. Lu le 11 octobre 2026 dans une copie non officielle déposée sur Internet Archive ; un exemplaire de bibliothèque est en prêt sous l'identifiant bwb_KT-091-892. Page 107 : le clan est voué au massacre de son vieux chef Nzwakele et à la dispersion sous Dingane, « most of its adherents fleeing over the Tukela into Whiteman's Natal, where they are now found everywhere scattered »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

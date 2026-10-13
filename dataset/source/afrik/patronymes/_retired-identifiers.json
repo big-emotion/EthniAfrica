@@ -1,0 +1,121 @@
+[
+  {
+    "decision": "merged",
+    "retiredId": "PAT_KAMARA",
+    "successorId": "PAT_CAMARA",
+    "reason": "An empty duplicate: its spellings (Kamara, Camara), countries (LBR, SLE) and peoples (Vai, Malinké, Kono) were already PAT_CAMARA's, and its only sources were the candidate-queue stub and internal notes.",
+    "decidedOn": "2026-10-07"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_DARBOE",
+    "successorId": "PAT_DABO",
+    "reason": "Darboe is the Gambian spelling of the Dabo clan name. Folded in: the spelling Darboe in Gambia, now attested by The Point (Banjul, 31 December 2025) instead of the candidate queue. Its Malinké and Gambia links were already the keeper's, with better sources.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_FOFANAH",
+    "successorId": "PAT_FOFANA",
+    "reason": "Fofanah is the Sierra Leone spelling of Fofana. Folded in: the spelling Fofanah and Sierra Leone as a country, now attested by The Sierra Leone Telegraph (29 August 2014) instead of the candidate queue.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_YOUSSOUF",
+    "successorId": "PAT_YUSUF",
+    "reason": "Youssouf is a form of the personal name Yusuf (Joseph of the Quran); Yusuf has the best sources. Folded in: its two written name-history accounts (meaning, after Behind the Name; Omar Ahmed Youssouf, Présidence de Djibouti 2017), the spelling Youssouf in Chad, Djibouti and the Comoros (Forebears), the bearer Omar Ahmed Youssouf, its origin claims and its Behind the Name, Présidence and Forebears sources. Not carried: the spelling Yousouf and the Somali and Comorian links, which rested on the candidate queue alone.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_YOUSSEF",
+    "successorId": "PAT_YUSUF",
+    "reason": "Youssef is a transcription of the Arabic Yusuf. Folded in: the spelling Youssef in Egypt, now attested by the Atlantic Council's « Who Are Egypt's New Ministers? » (2015), and its Behind the Name origin claim and source. Not carried: the Arabs of Africa link, which rested on the candidate queue alone.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_OSMAN",
+    "successorId": "PAT_OUSMANE",
+    "reason": "Osman (and Othman) are forms of the personal name Ousmane, the third caliph's. Folded in: the spellings Osman and Othman and Sudan as a country (candidate queue).",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_ALLY",
+    "successorId": "PAT_ALI",
+    "reason": "Ally is a variant of Ali (Dictionary of American Family Names). Folded in: the spelling Ally and Tanzania (Office of the Solicitor General), the supposed Swahili link, the DAFN claim and its two sources.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_BEN_ALI",
+    "successorId": "PAT_BENALI",
+    "reason": "Benali is Ben Ali with the space removed by the civil registry. Folded in: Tunisia as a country for both spellings and the Insaniyat review of Chabchoub (2017), which records that change.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_ABOUBAKAR",
+    "successorId": "PAT_ABUBAKAR",
+    "reason": "Aboubakar and Aboubacar are the Cameroonian forms of Abubakar. Folded in: the spelling Aboubacar (Gabana and Bello, 2025) and the spelling Aboubakar, now attested by Camer.be (2020) instead of the candidate queue, Cameroon, the Ryan and Gabana-Bello claim and the Gabana and Bello source. Ryan (1981) was already cited by the keeper under another key. Not carried: the Fula link, which rested on the candidate queue alone.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_CEESAY",
+    "successorId": "PAT_CISSE",
+    "reason": "Ceesay is the Gambian spelling of Cissé. Folded in: the spelling Ceesay and Gambia as a country (candidate queue).",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_SESAY",
+    "successorId": "PAT_CISSE",
+    "reason": "Sesay is the Sierra Leone spelling of Cissé. Folded in: the spelling Sesay and Sierra Leone as a country (candidate queue).",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_MOUSSA",
+    "successorId": "PAT_MUSA",
+    "reason": "Moussa is the French spelling of Musa, which the keeper's summary already names. Folded in: the spelling Moussa in Niger (Behind the Name; the Niger council of ministers of 9 September 2023), Musa in Niger (Behind the Name), Niger as a country, the supposed Zarma link with a gap saying why it is only supposed, and the Behind the Name claim. Not carried: the candidate-queue stub, which the keeper did not cite.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_ABDALLA",
+    "successorId": "PAT_ABDALLAH",
+    "reason": "Abdalla is the Sudanese spelling of Abdallah. Folded in: the spellings Abdalla and Abdallah in Sudan and Sudan as a country, on the candidate queue the keeper already cites.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_DA_SILVA",
+    "successorId": "PAT_SILVA",
+    "reason": "da Silva is a form of Silva, which the keeper already gives. Folded in: the Angola attestation of Silva and da Silva, and Angola as a country, on the candidate queue the keeper already cites.",
+    "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_TURAY",
+    "successorId": "PAT_TOURE",
+    "reason": "Turay is the Sierra Leone spelling of Touré (Dictionary of American Family Names), already a variant spelling in the keeper's name history. Folded in: the spelling Turay and Sierra Leone as a country, on DAFN and the Sierra Leone Blue Book 1915, which the keeper's name history already cites. Not carried: the candidate-queue stub.",
+    "decidedOn": "2026-10-12"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_TOURAY",
+    "successorId": "PAT_TOURE",
+    "reason": "Touray is the Gambian spelling of Touré (Dictionary of American Family Names), already a variant spelling in the keeper's name history. Folded in: the spelling Touray and the Gambia as a country, on DAFN, The Geographical Journal of July 1921 and the Peace Corps Mandinka course, which the keeper's name history already cites. Not carried: the candidate-queue stub; its Malinké link, already the keeper's.",
+    "decidedOn": "2026-10-12"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_TESFAY",
+    "successorId": "PAT_TESFAYE",
+    "reason": "Tesfay is the Tigrinya equivalent of Tesfaye (Dictionary of American Family Names), already in the keeper's name history with Tesfai. Folded in: the spellings Tesfay and Tesfai and Eritrea as a country, on DAFN and Munzinger 1859, which the keeper's name history already cites. Not carried: the candidate-queue stub and its Tigray link, which rested on it alone; Forebears, an aggregator that gives no meaning.",
+    "decidedOn": "2026-10-12"
+  }
+]

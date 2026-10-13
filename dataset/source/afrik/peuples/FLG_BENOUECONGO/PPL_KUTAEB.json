@@ -127,5 +127,193 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kuteb désigne un peuple du sud-est du Nigeria, autour de Takum, dans l'État de Taraba, avec quelques villages au Cameroun ; on l'écrit aussi Kutep ou Kutev, et c'est aussi le nom de sa langue. D'autres noms existent : Mbarike, le plus ancien que nous ayons trouvé par écrit, et Zumper, un surnom. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Kuteb",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kub",
+        "namedBy": null,
+        "shortLine": "Le nom du peuple de Takum et de sa langue, écrit aussi Kutep ou Kutev.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kuteb désigne aujourd'hui un peuple de plus de 100 000 personnes, qui vit surtout dans la zone de gouvernement local de Takum, dans l'État de Taraba, et la langue qu'il parle, selon la présentation de la grammaire de Robert Koops. On ne sait pas avec certitude d'où vient ce nom ni quand il a été écrit pour la première fois.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Grammar of Kuteb : A Jukunoid Language of East-Central Nigeria — présentation de l'éditeur",
+                "author": "Rüdiger Köppe Verlag",
+                "year": 2009,
+                "url": "https://www.koeppe.de/titel_a-grammar-of-kuteb",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page de l'éditeur présentant la grammaire de Robert Koops, premier volume des monographies de la Kay Williamson Educational Foundation, lue le 11 octobre 2026. Nous n'avons pas lu la grammaire elle-même."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1990,
+              "to": 1990,
+              "label": "1990"
+            },
+            "era": "modern",
+            "statement": "Le nom Kuteb figure dans le titre de la thèse du linguiste Robert Koops, Aspects of the Grammar of Kuteb, soutenue à l'université du Colorado.",
+            "sources": [
+              {
+                "title": "Notice bibliographique : Aspects of the Grammar of Kuteb",
+                "author": "Glottolog",
+                "year": 1990,
+                "url": "https://glottolog.org/resource/reference/id/74449",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la thèse de Robert Koops, université du Colorado à Boulder, 1990, lue sur Glottolog le 11 octobre 2026. Nous n'avons pas lu la thèse elle-même."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mbarike",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le plus ancien nom écrit que nous connaissions pour la langue des Kuteb, en 1854.",
+        "periodLabel": "Écrit en 1854 ; repris en 1925",
+        "accounts": [
+          {
+            "period": {
+              "from": 1925,
+              "to": 1925,
+              "label": "1925"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mbarike figure encore chez l'ethnographe britannique Charles Kingsley Meek, qui écrit « Zumper (Mbarike) » dans sa liste des langues du nord du Nigeria et « Mbarikwe (Zumper) » ailleurs dans le même ouvrage.",
+            "sources": [
+              {
+                "title": "The Northern Tribes of Nigeria, volume II",
+                "author": "Charles Kingsley Meek",
+                "year": 1925,
+                "url": "https://archive.org/details/the-northern-tribes-of-nigeria_202208",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38 et p. 137",
+                "notes": "Londres, 1925. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Mbarike apparaît par écrit dans la Polyglotta Africana du missionnaire Sigismund Koelle, qui l'écrit Mbárīkẹ pour une langue que le catalogue Glottolog identifie aujourd'hui comme le kuteb. C'est la plus ancienne trace de ce nom que le projet connaît. Les Kuteb vivaient déjà autour de Takum avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu le 11 octobre 2026 dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite. La transcription la classe sous la référence XII-E-18 ; Glottolog la rattache au kuteb (code kute1248)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Zumper",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Jukun, selon Charles Kingsley Meek",
+        "shortLine": "Un surnom donné aux gens des collines de Takum ; il voudrait dire « cannibales ».",
+        "periodLabel": "Époque coloniale",
+        "accounts": [
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Zumper, écrit Zumperr, désigne dans les notes de l'administration britannique le peuple des collines au sud de Takum, près de la frontière du Cameroun. Ces notes le présentent comme un surnom ; son origine reste discutée.",
+            "aspect": "meaning",
+            "formAsWritten": "Zumperr",
+            "sources": [
+              {
+                "title": "Notes on the Tribes, Provinces, Emirates and States of the Northern Provinces of Nigeria",
+                "author": "O. Temple, sous la direction de C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 394",
+                "notes": "Le Cap, Argus Printing and Publishing, 1919. Recueil compilé à partir des rapports de l'administration britannique ; la notice citée nomme comme sources les officiers U. F. Ruxton, A. E. Churcher, A. Auchinleck et K. Hamilton. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Zumper serait un surnom qui veut dire « cannibales », et le vrai nom de ce peuple serait Likam, selon les notes de l'administration britannique réunies par O. Temple.",
+            "hypothesisGroup": "origine du nom Zumper",
+            "sources": [
+              {
+                "title": "Notes on the Tribes, Provinces, Emirates and States of the Northern Provinces of Nigeria",
+                "author": "O. Temple, sous la direction de C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 394",
+                "notes": "Le Cap, Argus Printing and Publishing, 1919. Recueil compilé à partir des rapports de l'administration britannique ; la notice citée nomme comme sources les officiers U. F. Ruxton, A. E. Churcher, A. Auchinleck et K. Hamilton. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "Proposée en 1931"
+            },
+            "era": "colonial",
+            "statement": "Le nom Zumper viendrait d'un titre jukun, Zompere, « les cannibales », que les Jukun donnaient aux peuples des collines autour de Takum, selon l'ethnographe Charles Kingsley Meek.",
+            "hypothesisGroup": "origine du nom Zumper",
+            "sources": [
+              {
+                "title": "A Sudanese Kingdom : An Ethnographical Study of the Jukun-Speaking Peoples of Nigeria",
+                "author": "Charles Kingsley Meek",
+                "year": 1931,
+                "url": "https://archive.org/details/in.ernet.dli.2015.36396",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38",
+                "notes": "Londres, 1931. Lu dans l'exemplaire numérisé par la Digital Library of India et diffusé par Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -699,7 +699,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
       "Le nom a ensuite circulé dans d’autres usages. Le mot turc yamyam en serait issu, et une plante porte encore le nom scientifique Impatiens niamniamensis. Ces mots gardent ainsi la trace d’une réputation attribuée aux Azande.",
     ],
     entities: [
-      { kind: "people", id: "PPL_AZANDE_SUD", label: "Azande" },
+      { kind: "people", id: "PPL_ZANDE", label: "Azande" },
       { kind: "country", id: "SSD", label: "Soudan du Sud" },
       { kind: "country", id: "COD", label: "République démocratique du Congo" },
       { kind: "country", id: "CAF", label: "République centrafricaine" },
@@ -787,7 +787,8 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
       "Le regroupement réunit des peuples aux langues et aux cultures différentes. Depuis les années 1990, un mouvement politique reprend le nom dans « Kirditude » pour affirmer une identité commune. Un mot donné de l’extérieur peut ainsi être réutilisé par des personnes qu’il désignait.",
     ],
     entities: [
-      { kind: "people", id: "PPL_KIRDI", label: "Kirdi" },
+      { kind: "people", id: "PPL_MAFA", label: "Mafa" },
+      { kind: "people", id: "PPL_SARA", label: "Sara" },
       { kind: "country", id: "CMR", label: "Cameroun" },
       { kind: "country", id: "TCD", label: "Tchad" },
       { kind: "country", id: "NGA", label: "Nigeria" },
@@ -1056,7 +1057,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
       "Ces regroupements rendent les Vatswa moins visibles dans les chiffres publiés. La fiche rattache cette confusion aux usages de l’administration coloniale portugaise, qui écrivait Tshwa. Il faut donc regarder les catégories du recensement avant d’interpréter ses nombres.",
     ],
     entities: [
-      { kind: "people", id: "PPL_TSWA_MOZ", label: "Vatswa" },
+      { kind: "people", id: "PPL_TSWA", label: "Vatswa" },
       { kind: "people", id: "PPL_RONGA", label: "Ronga" },
       { kind: "country", id: "MOZ", label: "Mozambique" },
     ],
@@ -1654,7 +1655,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
       "La fiche rapporte que des Fang auraient entretenu cette réputation pour tenir les visiteurs à distance. Elle ne cite toutefois pas de source consacrée à cette affirmation. Ce récit demande donc une vérification avant de pouvoir être retenu.",
     ],
     entities: [
-      { kind: "people", id: "PPL_FANG_GABON", label: "Fang" },
+      { kind: "people", id: "PPL_FANG", label: "Fang" },
       { kind: "country", id: "GAB", label: "Gabon" },
       { kind: "country", id: "GNQ", label: "Guinée équatoriale" },
       { kind: "country", id: "CMR", label: "Cameroun" },
@@ -1756,7 +1757,7 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
       "Ces noms correspondent à des usages différents : celui des personnes concernées, celui de leurs voisins et celui des chercheurs. Les catalogues de langues reprennent surtout ce dernier.",
     ],
     entities: [
-      { kind: "people", id: "PPL_WEST_TAA", label: "!Xoon occidental" },
+      { kind: "people", id: "PPL_TAA", label: "!Xoon occidental" },
       { kind: "country", id: "BWA", label: "Botswana" },
       { kind: "country", id: "NAM", label: "Namibie" },
     ],

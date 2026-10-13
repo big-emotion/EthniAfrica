@@ -25,12 +25,12 @@
     "writtenChronicles": [],
     "linguisticReconstructions": [
       {
-        "claim": "Ghebre procède du guèze gäbrä, « serviteur de » ; Ghebremichael se lit « serviteur de Michel », composé théophore formé sur l'archange.",
-        "claimStatus": "established",
-        "sourceRefs": ["leslau-1987-geez", "familysearch-ethiopia-naming"]
+        "claim": "Ghebremichael se lirait « serviteur de Michel », composé sur le nom de l'archange : son premier élément répondrait au guèze gabr, « esclave, serviteur », que donne le dictionnaire de Wolf Leslau. Le dictionnaire ne parle pas de ce nom ; la lecture reste une hypothèse.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["leslau-1987-geez"]
       },
       {
-        "claim": "Le système habesha ne comporte pas de nom de famille héréditaire : le second élément est le nom personnel du père, celui du grand-père servant à désambiguïser. Il change donc à chaque génération.",
+        "claim": "En Éthiopie, on ne porte pas de nom de famille héréditaire : après son prénom, on porte le nom personnel du père, qui change donc à chaque génération, selon le Cultural Atlas.",
         "claimStatus": "established",
         "sourceRefs": ["cultural-atlas-ethiopian-naming"]
       }
@@ -69,7 +69,7 @@
       "url": "https://culturalatlas.sbs.com.au/ethiopian-culture/ethiopian-culture-naming",
       "tier": "referenced",
       "source_kind": "linguistic_reference",
-      "notes": "Cultural Atlas, publié par SBS (radiodiffuseur public australien). Établit l'absence de nom de famille et la structure prénom + prénom du père, le grand-père servant à désambiguïser."
+      "notes": "Cultural Atlas, publié par SBS (radiodiffuseur public australien), lu le 11 octobre 2026 à sa nouvelle adresse, theculturalatlas.org. Il dit qu'en Éthiopie on n'a pas de nom de famille et décrit la forme « prénom, puis prénom du père ». Il ne parle ni du nom du grand-père, ni de l'Érythrée, ni du nom Ghebremichael."
     },
     {
       "sourceKey": "leslau-1987-geez",
@@ -78,14 +78,6 @@
       "tier": "official",
       "source_kind": "academic",
       "notes": "Leslau, Wolf, Otto Harrassowitz, Wiesbaden, 1987. Lexique de référence du guèze. Les quatre éléments portés par les fiches habesha y ont été vérifiés un à un dans le texte intégral : gabr « esclave, serviteur, vassal » (le verbe gabra valant « faire, agir »), wald « fils » — l'état construit walda wald donnant « petit-fils » —, hayl « puissance, force, vaillance » et kabr « honneur, gloire, prestige ». Remplace ici un site de généalogie qui portait seul ces étymologies."
-    },
-    {
-      "sourceKey": "familysearch-ethiopia-naming",
-      "title": "Ethiopia Naming Customs",
-      "url": "https://www.familysearch.org/en/wiki/Ethiopia_Naming_Customs",
-      "tier": "unverified",
-      "source_kind": "community",
-      "notes": "Wiki généalogique de FamilySearch. Contributif : cité pour les éléments guèzes Gäbrä (« serviteur de ») et Wäldä (« fils de »), à recouper sur un dictionnaire de guèze."
     }
   ],
   "gaps": [
@@ -106,8 +98,116 @@
       "reason": "L'homonymie est la règle et non l'exception dans un système patronymique non héréditaire : elle n'y est pas une donnée à recenser."
     }
   ],
-  "patronymicChainDepth": {
-    "generations": 3,
-    "sourceRefs": ["cultural-atlas-ethiopian-naming"]
+  "nameHistory": {
+    "summary": "Le nom Ghebremichael est un prénom porté en Érythrée. Il sert aussi de second nom : c'est alors le prénom du père, et non un nom de famille. Il se lirait « serviteur de Michel » ; nous présentons plus bas la source de cette lecture.",
+    "names": [
+      {
+        "nameText": "Ghebremichael",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un prénom d'Érythrée, porté aussi comme second nom : celui du père.",
+        "periodLabel": "Écrit dès 1809 sous une forme proche ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ghebremichael est un prénom. En Éthiopie, on ne porte pas de nom de famille : on place après son prénom celui de son père. Ce second nom change donc à chaque génération, selon le Cultural Atlas.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Ethiopian Culture — Naming",
+                "author": "Cultural Atlas",
+                "year": null,
+                "url": "https://culturalatlas.sbs.com.au/ethiopian-culture/ethiopian-culture-naming",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Page lue le 11 octobre 2026 à sa nouvelle adresse, theculturalatlas.org, vers laquelle renvoie ce lien. Elle dit : « People do not have a surname in Ethiopia » et décrit la forme « [personal name] [father's personal name] ». Elle ne parle ni de l'Érythrée ni du nom Ghebremichael."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ghebremichael réunit deux mots, Ghebre et Michael. Il se lirait « serviteur de Michel » ; la source de cette lecture est présentée séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Comparative Dictionary of Geʿez (Classical Ethiopic)",
+                "author": "Wolf Leslau",
+                "year": 1987,
+                "url": "https://archive.org/details/leslau-comparative-dictionary-of-geez-1987",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 178",
+                "notes": "Wiesbaden, Otto Harrassowitz, 1987. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Entrée gabra : le nom gabr (pluriel 'agbərt) veut dire « slave, servant, bondsman, vassal ». Le dictionnaire ne parle pas du nom Ghebremichael."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1987,
+              "to": 1987,
+              "label": "Sens donné en 1987"
+            },
+            "statement": "Le nom Ghebremichael se lirait « serviteur de Michel » : son premier mot répond au guèze gabr, qui veut dire « esclave, serviteur » dans le dictionnaire de Wolf Leslau.",
+            "sources": [
+              {
+                "title": "Comparative Dictionary of Geʿez (Classical Ethiopic)",
+                "author": "Wolf Leslau",
+                "year": 1987,
+                "url": "https://archive.org/details/leslau-comparative-dictionary-of-geez-1987",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 178",
+                "notes": "Wiesbaden, Otto Harrassowitz, 1987. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Entrée gabra : le nom gabr (pluriel 'agbərt) veut dire « slave, servant, bondsman, vassal ». Le dictionnaire ne parle pas du nom Ghebremichael."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1809,
+              "to": 1809,
+              "label": "1809"
+            },
+            "era": "polity",
+            "statement": "Le nom Ghebremichael apparaît sous une forme proche, Guebra Michael, dans le journal de Henry Salt que publie George Annesley, vicomte Valentia. C'est le nom du guide abyssin qui accompagne Salt en 1805, sur la route qui monte de Massaoua vers les hauts plateaux. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est porté.",
+            "formAsWritten": "Guebra Michael",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Henry Salt",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Guebra Michael",
+                "role": "guide du voyage"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Voyages and Travels to India, Ceylon, the Red Sea, Abyssinia, and Egypt, in the Years 1802, 1803, 1804, 1805, and 1806",
+                "author": "George Annesley, vicomte Valentia",
+                "year": 1809,
+                "url": "https://archive.org/details/voyagestravelsin02moun",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "vol. II, p. 478",
+                "notes": "Londres, William Miller, 1809, volume II. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Le journal de Henry Salt, cité entre guillemets, écrit près de Hamhamou : « Guebra Michael, our Abyssinian guide, came to us »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

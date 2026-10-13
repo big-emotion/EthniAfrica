@@ -82,5 +82,108 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Sebego », « Tswana », « Botswana », « surname », « clan », « onomastics », « etymology » et « transmission », ainsi que la consultation directe de « Sebego Surname Origin, Meaning & Last Name History » n'ont établi aucune règle propre à Sebego permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sebego est d'abord celui d'un chef des Bangwaketse, au sud de l'actuel Botswana, fils du roi Makaba II. Les sources lues n'en donnent pas le sens.",
+    "names": [
+      {
+        "nameText": "Sebego",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un chef des Bangwaketse, fils du roi Makaba II, au XIXe siècle.",
+        "periodLabel": "Écrit dès 1842 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Sebego est d'abord connu comme le nom personnel d'un fils du roi Makaba II, qui prend la direction des Bangwaketse à la mort de son père. Les sources lues ne disent pas ce que veut dire ce nom, ni d'où viennent les familles qui le portent aujourd'hui ; on ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Short History of the Bangwaketse",
+                "author": "Isaac Schapera",
+                "year": 1942,
+                "url": "https://archive.org/details/african-studies_1942-03_1_1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3 ; p. 6-7",
+                "notes": "African Studies, vol. 1, no 1, mars 1942. Lu sur l'exemplaire numérisé d'archive.org. Page 3 : Makaba II succède à son père Moleta. Page 6 : Sebego, fils de Makaba de la seconde maison, prend la direction des Bangwaketse après la mort de Makaba. Page 7 : les voyageurs Bain et Biddulph le rencontrent à Selokolela en août 1826 ; au début de 1827, il rend visite à Moffat chez les Barolong de Tswaing. Schapera cite le journal d'Andrew Geddes Bain publié dans The African Monthly, vol. IV, 1908, que nous n'avons pas lu nous-mêmes. Relu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1827,
+              "to": 1842,
+              "label": "Visite de 1827, récit publié en 1842"
+            },
+            "era": "polity",
+            "statement": "Le nom Sebego est écrit Sebegue par le missionnaire Robert Moffat : « Sebegue, the son of Makaba », roi des Bangwaketse, vient le chercher chez les Barolong pour l'emmener dans sa capitale. Isaac Schapera place cette visite au début de 1827, à Tswaing, sur la rivière Molopo.",
+            "formAsWritten": "Sebegue",
+            "actors": [
+              {
+                "name": "Robert Moffat",
+                "role": "missionnaire, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Missionary Labours and Scenes in Southern Africa",
+                "author": "Robert Moffat",
+                "year": 1842,
+                "url": "https://archive.org/details/10450139bsb",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 469",
+                "notes": "Londres, John Snow, 1842. Lu sur l'exemplaire numérisé d'archive.org (Bayerische Staatsbibliothek). Le missionnaire raconte la visite de « Sebegue, the son of Makaba », roi des Bauangketsi, venu le chercher chez les Barolong. Récit d'un missionnaire de la London Missionary Society, à lire comme tel. Lu le 11 octobre 2026."
+              },
+              {
+                "title": "A Short History of the Bangwaketse",
+                "author": "Isaac Schapera",
+                "year": 1942,
+                "url": "https://archive.org/details/african-studies_1942-03_1_1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3 ; p. 6-7",
+                "notes": "African Studies, vol. 1, no 1, mars 1942. Lu sur l'exemplaire numérisé d'archive.org. Page 3 : Makaba II succède à son père Moleta. Page 6 : Sebego, fils de Makaba de la seconde maison, prend la direction des Bangwaketse après la mort de Makaba. Page 7 : les voyageurs Bain et Biddulph le rencontrent à Selokolela en août 1826 ; au début de 1827, il rend visite à Moffat chez les Barolong de Tswaing. Schapera cite le journal d'Andrew Geddes Bain publié dans The African Monthly, vol. IV, 1908, que nous n'avons pas lu nous-mêmes. Relu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1826,
+              "to": 1826,
+              "label": "Août 1826"
+            },
+            "era": "polity",
+            "statement": "Le nom Sebego figure dans le journal du voyageur Andrew Geddes Bain, qui rencontre ce chef à Selokolela en août 1826, selon l'historien Isaac Schapera. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un voyageur l'a noté, pas depuis quand le nom est donné.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Andrew Geddes Bain",
+                "role": "voyageur, auteur du journal"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Short History of the Bangwaketse",
+                "author": "Isaac Schapera",
+                "year": 1942,
+                "url": "https://archive.org/details/african-studies_1942-03_1_1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3 ; p. 6-7",
+                "notes": "African Studies, vol. 1, no 1, mars 1942. Lu sur l'exemplaire numérisé d'archive.org. Page 3 : Makaba II succède à son père Moleta. Page 6 : Sebego, fils de Makaba de la seconde maison, prend la direction des Bangwaketse après la mort de Makaba. Page 7 : les voyageurs Bain et Biddulph le rencontrent à Selokolela en août 1826 ; au début de 1827, il rend visite à Moffat chez les Barolong de Tswaing. Schapera cite le journal d'Andrew Geddes Bain publié dans The African Monthly, vol. IV, 1908, que nous n'avons pas lu nous-mêmes. Relu le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

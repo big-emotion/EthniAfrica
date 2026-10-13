@@ -42,6 +42,7 @@ export async function getPlaceHandler(id: string): Promise<PlaceHandlerResult> {
       names: namesOf(place),
       summary: rest.summary,
       country: rest.country,
+      countries: rest.countries,
       associatedPeoples: rest.associatedPeoples,
       gaps: Array.isArray(content.gaps) ? content.gaps : [],
       sources: Array.isArray(content.sources) ? content.sources : [],

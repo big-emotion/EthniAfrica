@@ -87,8 +87,8 @@ describe("groupPeopleResults", () => {
         peopleGroupLabel: "Kongo",
       }),
       people({
-        id: "PPL_KONGO_BRAZZA",
-        name: "Kongo de Brazzaville",
+        id: "PPL_KONGO_CABINDA",
+        name: "Kongo du Cabinda",
         peopleGroupId: "PGRP_KONGO",
         peopleGroupLabel: "Kongo",
       }),
@@ -109,8 +109,8 @@ describe("groupPeopleResults", () => {
         peopleGroupLabel: "Kongo",
       }),
       people({
-        id: "PPL_KONGO_BRAZZA",
-        name: "Kongo de Brazzaville",
+        id: "PPL_YOMBE",
+        name: "Yombe",
         peopleGroupId: "PGRP_KONGO",
         peopleGroupLabel: "Kongo",
       }),

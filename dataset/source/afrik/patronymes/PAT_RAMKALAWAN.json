@@ -96,5 +96,90 @@
       "fieldPath": "homonyms",
       "reason": "les résultats exacts « Ramkalawan », le catalogue des Seychelles National Archives, le Family Tree Project et les recherches patrimoniales décrites par O'Gorman n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ramkalawan est un nom de famille des Seychelles, porté par une famille venue de l'Inde par Maurice. À Maurice, on l'écrit d'abord comme le seul nom d'une personne, en 1881. On ne sait pas avec certitude ce qu'il veut dire.",
+    "names": [
+      {
+        "nameText": "Ramkalawan",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille des Seychelles venu de l'Inde par Maurice ; son sens n'est pas expliqué.",
+        "periodLabel": "Écrit à Maurice dès 1881 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ramkalawan est un nom de famille porté aux Seychelles, où un communiqué de la présidence de la République le donne en 2025. Les sources consultées n'expliquent pas ce qu'il veut dire ni comment il s'est formé.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "President Ramkalawan Presides Over Promotion Ceremony for Seychelles Defence Forces Officers",
+                "author": "State House Seychelles",
+                "year": 2025,
+                "url": "https://statehouse.gov.sc/news/6503/president-ramkalawan-presides-over-promotion-ceremony-for-seychelles-defence-forces-officers",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Communiqué de la présidence des Seychelles du 20 juin 2025. Lu le 11 octobre 2026. Il nomme « President Wavel Ramkalawan ». Cité ici pour la forme du nom ; aucune origine du nom n'y est avancée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1883,
+              "to": 1883,
+              "label": "1883, selon un récit de 2018"
+            },
+            "statement": "Le nom Ramkalawan est celui d'une famille des Seychelles dont l'arrière-grand-père quitta en 1883 son village de Parsauni, au Bihar, pour travailler dans une plantation de canne à sucre à Maurice ; après sa mort, sa femme et ses deux fils partirent pour les Seychelles. C'est ce que raconte Wavel Ramkalawan, cité par l'agence de presse indienne PTI, qui ne dit pas si cet aïeul portait déjà le nom.",
+            "actors": [
+              {
+                "name": "Wavel Ramkalawan",
+                "role": "raconte l'histoire de sa famille"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Seychelles leader's journey to land of his ancestors in Bihar",
+                "author": "Press Trust of India",
+                "year": 2018,
+                "url": "https://www.orissapost.com/seychelles-leaders-journey-to-land-of-his-ancestors-in-bihar/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Dépêche de l'agence PTI datée de New Delhi, reprise par Orissa Post le 9 janvier 2018. Lue le 11 octobre 2026. Wavel Ramkalawan y dit que son arrière-grand-père quitta en 1883 son village de Parsauni, au Bihar, pour Maurice, où il fut placé dans une plantation de canne à sucre ; qu'à sa mort, à 48 ans, sa femme et ses deux fils partirent pour les Seychelles ; et que son grand-père y épousa une femme du pays. La dépêche ne donne pas le nom de l'arrière-grand-père."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ramkalawan apparaît par écrit dans le recueil des décisions de la Cour suprême de Maurice pour 1881. Il y est le seul nom d'un homme jugé devant un magistrat. C'est la plus ancienne trace de ce nom que le projet connaît ; rien n'y relie cet homme à la famille Ramkalawan des Seychelles.",
+            "formAsWritten": "Ramkalawan",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Mauritius Reports, 1881",
+                "author": "Cour suprême de Maurice",
+                "year": 1881,
+                "url": "https://hdl.handle.net/2027/mdp.35112102968577",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 28",
+                "notes": "Recueil des décisions de la Cour suprême de Maurice pour 1881. Lu sur l'exemplaire numérisé de HathiTrust le 11 octobre 2026. Page 28 : une ordonnance de magistrat concernant deux hommes, « Sam and Ramkalawan », chacun nommé par un seul nom."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

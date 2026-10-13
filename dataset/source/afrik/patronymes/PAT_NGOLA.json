@@ -6,7 +6,7 @@
   },
   "id": "PAT_NGOLA",
   "nameMain": "Ngola",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Ngola",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -97,7 +97,7 @@
   "gaps": [
     {
       "fieldPath": "nameSystem",
-      "reason": "Les sources consultées décrivent ngola comme le titre du roi du Ndongo, puis comme un élément du titre de la reine Nzinga ; aucune ne parle d'un clan. La classe et l'unité sociale indiquées sur cette fiche sont provisoires, en attendant une classe pour un titre royal."
+      "reason": "Les sources consultées décrivent ngola comme le titre du roi du Ndongo, puis comme un élément du titre de la reine Nzinga ; aucune ne parle d'un clan. Le modèle n'a pas de case pour un titre royal : la fiche le range parmi les patronymes non héréditaires, la case la plus proche."
     },
     {
       "fieldPath": "origin",
@@ -127,5 +127,135 @@
       "fieldPath": "transmissionMode",
       "reason": "Aucune source consultée ne dit comment ce nom se transmet."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ngola est d'abord le titre des rois du Ndongo, dans l'actuel Angola ; c'est de lui que viendrait le nom Angola, selon l'Histoire générale de l'Afrique. On ne sait pas avec certitude comment ce titre est devenu un nom de famille.",
+    "names": [
+      {
+        "nameText": "Ngola",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kmb",
+        "namedBy": null,
+        "shortLine": "Le titre des rois du Ndongo, d'où viendrait le nom de l'Angola.",
+        "periodLabel": "Titre attesté vers 1500 ; écrit dès 1520",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "era": "modern",
+            "statement": "Le nom Ngola désigne d'abord le titre que portait le roi du Ndongo. On ne sait pas avec certitude comment il est devenu un nom de famille : les sources lues parlent du titre, jamais d'un nom de famille ni d'un clan.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 19 : Le Royaume du Kongo et ses voisins",
+                "author": "Jan Vansina, à partir d'une contribution de Théophile Obenga",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 604",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot. « dont le roi portait le titre de ngola, qui donna ensuite le mot Angola ». Contenu recoupé le 11 octobre 2026 sur l'édition anglaise, que South African History Online met en ligne, l'édition française n'ayant pas pu être rouverte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "XVIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Ngola entre dans le titre de la reine Nzinga : réfugiée au Matamba, elle signait ses lettres « Nzinga Mbandi Ngola », c'est-à-dire reine du Ndongo et du Matamba, selon l'UNESCO.",
+            "sources": [
+              {
+                "title": "Nzinga Mbandi: Queen of Ndongo and Matamba, Histoire générale de l'Afrique, unité pédagogique",
+                "author": "UNESCO, texte de Sylvia Serbin et Ana Joubeaud",
+                "year": 2014,
+                "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Nzinga_Mbandi_Queen_of_Ndongo_and_Matamba_English.pdf",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 45 du PDF",
+                "notes": "Copie non officielle hébergée sur Wikimedia Commons, relue le 11 octobre 2026. La reine, même après avoir fui au Matamba, signait sa correspondance du titre Nzinga Mbandi Ngola."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1622,
+              "to": 1623,
+              "label": "1622-1623"
+            },
+            "era": "polity",
+            "statement": "Le nom Ngola désigne le roi du Ndongo quand il se fait représenter par sa sœur, Nzinga Mbande, pour le traité de paix avec les Portugais, selon Jan Vansina.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 19 : Le Royaume du Kongo et ses voisins",
+                "author": "Jan Vansina, à partir d'une contribution de Théophile Obenga",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 615",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot. Le ngola représenté par sa sœur Nzinga Mbande au traité de 1622-1623. Contenu recoupé le 11 octobre 2026 sur l'édition anglaise, que South African History Online met en ligne, l'édition française n'ayant pas pu être rouverte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1520,
+              "to": 1520,
+              "label": "16 février 1520"
+            },
+            "era": "polity",
+            "statement": "Le nom Ngola apparaît par écrit sous une forme proche, Amgola, dans les instructions du roi du Portugal Manuel Ier à deux envoyés : ils doivent voir si « elRey dAmgola », le roi qui porte ce titre, veut se faire chrétien. C'est la plus ancienne trace de ce nom que le projet connaît ; le titre existait déjà avant ce texte.",
+            "formAsWritten": "elRey dAmgola",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Manuel Ier",
+                "role": "roi du Portugal, qui signe les instructions"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Monumenta Missionaria Africana, África ocidental, 1re série, vol. I (1471-1531) : Regimento de D. Manuel a Manuel Pacheco e Baltasar de Castro, 16 février 1520",
+                "author": "António Brásio (éd.), Agência Geral do Ultramar",
+                "year": 1952,
+                "url": "https://archive.org/details/monumentamissionariaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 431",
+                "notes": "Recueil de documents publié à Lisbonne en 1952, lu dans une copie non officielle mise en ligne sur Internet Archive le 11 octobre 2026. Le roi du Portugal demande à ses envoyés de voir si « elRey dAmgola », le roi d'Angola, veut se faire chrétien. Le document original est conservé à l'Arquivo da Torre do Tombo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1500,
+              "label": "Vers 1500"
+            },
+            "era": "polity",
+            "statement": "Le nom Ngola est le titre du roi du Ndongo, un État qui se forme alors au sud du royaume du Kongo, selon Jan Vansina.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 19 : Le Royaume du Kongo et ses voisins",
+                "author": "Jan Vansina, à partir d'une contribution de Théophile Obenga",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 604",
+                "notes": "UNESCO, volume dirigé par Bethwell Allan Ogot. L'État de Ndongo, « dont le roi portait le titre de ngola », était en formation vers 1500. Contenu recoupé le 11 octobre 2026 sur l'édition anglaise, que South African History Online met en ligne, l'édition française n'ayant pas pu être rouverte."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

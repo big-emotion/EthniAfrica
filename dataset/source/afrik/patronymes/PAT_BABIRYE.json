@@ -84,5 +84,86 @@
       "fieldPath": "homonyms",
       "reason": "La recherche web combinant « Babirye », « patronyme », « origine », « clan », « alliance », « caste », « obituary » et « homonyme », qui comprenait le terme « homonyme », et la lecture de « Meaning, origin and history of the name Babirye » et « Parliament of Uganda — Hon. Babalanda Milly Babirye » n'ont pas établi de lignée homonyme d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Babirye est un nom que l'on donne, au Buganda, en Ouganda, à une jumelle. Ce n'est pas le nom d'un clan. Un site de noms le traduit « premier des jumeaux » ; les autres sources lues disent seulement à qui on le donne. Nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Babirye",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lug",
+        "namedBy": null,
+        "shortLine": "Un nom du Buganda donné à une jumelle, avec Nakato pour l'autre.",
+        "periodLabel": "Écrit dès 1917 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1934,
+              "to": 1934,
+              "label": "Décrit en 1934"
+            },
+            "era": "colonial",
+            "statement": "Le nom Babirye est l'un des noms réservés aux jumeaux au Buganda : Nakato et Babirye pour deux filles, Waswa et Kato pour deux garçons, selon l'anthropologue Lucy Mair. On ne sait pas avec certitude ce que le mot veut dire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "An African People in the Twentieth Century",
+                "author": "Lucy Philip Mair",
+                "year": 1934,
+                "url": "https://archive.org/details/in.ernet.dli.2015.218591",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 44",
+                "notes": "Londres, George Routledge and Sons, 1934 ; thèse de doctorat de l'université de Londres. Relue le 13 octobre 2026 dans la numérisation de la Digital Library of India déposée sur Internet Archive. Page 44 : « For the twins themselves special names are prescribed — Waswa and Kato for two boys, Kato and Nakato for boy and girl, Nakato and Babirye for two girls ». La même page ajoute qu'il existe « a series of names for subsequent children »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Babirye voudrait dire « premier des jumeaux » en luganda, selon le site Behind the Name, qui en fait un nom féminin d'usage ganda.",
+            "hypothesisGroup": "sens du nom Babirye",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Babirye",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/babirye",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice du site Behind the Name, lue le 13 octobre 2026. Elle donne : « Means \"first of twins\" in Luganda », usage ganda, nom féminin, catégories « birth order » et « twins », mise à jour le 23 avril 2024. Elle ne cite aucune source."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1917,
+              "to": 1917,
+              "label": "1917"
+            },
+            "era": "colonial",
+            "statement": "Le nom Babirye apparaît par écrit dans la Gazette officielle de l'Ouganda, dans une liste de dons pour les œuvres de guerre : une personne y est inscrite sous le nom de Maliyamu Babirye. C'est la plus ancienne trace de ce nom que le projet connaît ; le nom existait déjà avant cette liste.",
+            "formAsWritten": "Babirye",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Uganda Official Gazette, supplément du 30 novembre 1917 : War Relief Funds, Subscriptions received to date",
+                "author": "Gouvernement du Protectorat de l'Ouganda",
+                "year": 1917,
+                "url": "https://archive.org/details/gazette-uganda-1917v10",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 511",
+                "notes": "Supplément à la Gazette de l'Ouganda daté du 30 novembre, reproduit dans le volume de 1917 numérisé sur archive.org et lu le 13 octobre 2026. Les pages 509 à 511 listent les sommes reçues pour les œuvres de guerre (la Croix-Rouge britannique et l'ordre de Saint-Jean), versées par l'intermédiaire du commissaire de la province du Buganda. Page 511 : « Maliyamu Babirye … 2 00 » (2 roupies), parmi des centaines de noms de donateurs du Buganda."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

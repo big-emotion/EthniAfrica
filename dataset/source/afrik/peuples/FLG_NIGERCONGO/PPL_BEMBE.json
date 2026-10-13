@@ -134,5 +134,185 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bembe désigne un peuple bantou du territoire de Fizi et des hauts plateaux de l'Itombwe, au Sud-Kivu (RD Congo), sur la rive ouest du lac Tanganyika, qui se nomme lui-même Babembe. Les voyageurs du XIXe siècle écrivaient Wabembe et appelaient son pays Ubembe. Les sources que nous avons lues n'expliquent pas l'origine de ce nom ; nous présentons plus bas son histoire.",
+    "names": [
+      {
+        "nameText": "Babembe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bmb",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple du Sud-Kivu, au pluriel.",
+        "periodLabel": "Écrit depuis 1949 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1949,
+              "to": 1949,
+              "label": "1949"
+            },
+            "era": "colonial",
+            "statement": "Le nom Babembe désigne, chez Frédéric Hautmann en 1949, les habitants du versant sud-est du massif de l'Itombwe, qu'il dit apparentés aux Warega de l'ouest et grands chasseurs. C'est la plus ancienne trace de cette forme que le projet connaît. Le peuple existait déjà avant elle, sous le nom de Wabembe dans les récits de voyage.",
+            "formAsWritten": "Babembe",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Étude ethnographique de l'Itombwe (district du Kivu, Congo belge)",
+                "author": "Frédéric Hautmann",
+                "year": 1949,
+                "url": "https://gh.copernicus.org/articles/4/175/1949/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 175",
+                "notes": "Geographica Helvetica, vol. 4, 1949, lu dans le PDF de l'éditeur le 11 octobre 2026. « La pente du sud-est est habitée par les Babembe, apparentés aux Warega de l'ouest, grands chasseurs »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bembe",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme sans préfixe, employée par les chercheurs.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bembe est celui que le catalogue Glottolog donne à la langue de ce peuple. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog, fiche « Bembe »",
+                "author": "Glottolog (Institut Max Planck d'anthropologie évolutionniste)",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/bemb1255",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues du monde, consulté le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1949,
+              "to": 1951,
+              "label": "1949-1951"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bembe désigne, chez l'anthropologue Daniel Biebuyck, un peuple installé au début des années 1950 surtout dans le territoire de Fizi et le secteur d'Itombwe. Les clans qu'il appelle les « vrais » Bembe font remonter leur origine à Ikama, l'ancêtre des Lega.",
+            "sources": [
+              {
+                "title": "Bembe",
+                "author": "Daniel P. Biebuyck",
+                "year": null,
+                "url": "https://danielbiebuyck.com/manuscripts/bembe/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notes de terrain de l'anthropologue, publiées sur son site, lues le 11 octobre 2026. Elles portent sur ses recherches de 1949 à 1951."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wabembe",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "swh",
+        "namedBy": null,
+        "shortLine": "La forme qu'écrivent Burton en 1860 et Stanley en 1878.",
+        "periodLabel": "Écrit depuis 1860",
+        "accounts": [
+          {
+            "period": {
+              "from": 1878,
+              "to": 1878,
+              "label": "1878"
+            },
+            "era": "polity",
+            "statement": "Le nom Wabembe revient chez l'explorateur Henry Morton Stanley en 1878, pour l'un des peuples de la rive ouest du lac Tanganyika, avec les Wavira et les Wagoma.",
+            "sources": [
+              {
+                "title": "Through the Dark Continent, volume II",
+                "author": "Henry M. Stanley",
+                "year": 1878,
+                "url": "https://archive.org/details/throughdarkconti1878stan2",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 57",
+                "notes": "Londres, Sampson Low, 1878, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Le tour du lac Tanganyika date de 1876. « the gulf which separates Ubwari promontory from Ubembe and Usansi » ; « the Wavira, Wagoma, or Wabembe »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Wabembe apparaît dans le récit de l'explorateur Richard Burton, paru en 1860 : le 23 avril 1858, après avoir traversé le lac Tanganyika, il aborde à Murivumba, une terre qui « appartient aux Wabembe ». Il y associe la réputation de mangeurs d'hommes qu'une carte de la mission de Mombasa prêtait déjà à ce peuple. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Wabembe",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa: A Picture of Exploration, volume II",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://archive.org/details/lakeregionsofcen21860burt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 114",
+                "notes": "Londres, Longman, Green, Longman and Roberts, 1860, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Récit du 23 avril 1858 : « The land belongs to the Wabembe ». Burton y reprend la réputation de mangeurs d'hommes que leur prêtait la « Mombas Mission Map »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ubembe",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du pays bembe, sur la rive ouest du lac Tanganyika.",
+        "periodLabel": "Écrit depuis 1878",
+        "accounts": [
+          {
+            "period": {
+              "from": 1878,
+              "to": 1878,
+              "label": "1878"
+            },
+            "era": "polity",
+            "statement": "Le nom Ubembe désigne chez Stanley, en 1878, le pays situé en face de la presqu'île d'Ubwari, sur la rive ouest du lac Tanganyika. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays était habité avant elle.",
+            "formAsWritten": "Ubembe",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Through the Dark Continent, volume II",
+                "author": "Henry M. Stanley",
+                "year": 1878,
+                "url": "https://archive.org/details/throughdarkconti1878stan2",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 57",
+                "notes": "Londres, Sampson Low, 1878, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Le tour du lac Tanganyika date de 1876. « the gulf which separates Ubwari promontory from Ubembe and Usansi » ; « the Wavira, Wagoma, or Wabembe »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

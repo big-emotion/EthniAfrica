@@ -124,5 +124,44 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Madi désigne un peuple des rives du Nil, entre Nimule, au Soudan du Sud, et les districts de Moyo et d'Adjumani, en Ouganda, qui se nomme lui-même Ma'di. On ne sait pas avec certitude d'où vient ce nom : les explications qui circulent ne s'appuient sur aucune source que nous ayons pu lire, et nous ne les présentons pas.",
+    "names": [
+      {
+        "nameText": "Ma'di",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mhi",
+        "namedBy": null,
+        "shortLine": "Le nom que le peuple se donne ; écrit Madi par un explorateur britannique en 1861.",
+        "periodLabel": "Écrit depuis 1863 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1861,
+              "to": 1863,
+              "label": "1861 (journal publié en 1863)"
+            },
+            "era": "polity",
+            "statement": "Le nom Ma'di apparaît par écrit, sous la forme « Madi », dans le journal de l'explorateur John Hanning Speke, publié en 1863 : au Karagwe, en 1861, il rapproche la langue d'un informateur de celles des gens de Kidi, de Gani et de Madi. Les peuples du sud, ajoute-t-il, disent Wamadi, alors qu'entre eux ces gens n'emploient pas ce préfixe. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Madi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Journal of the Discovery of the Source of the Nile",
+                "author": "John Hanning Speke",
+                "year": 1863,
+                "url": "https://archive.org/details/journalofdiscove00spek",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 234",
+                "notes": "Édimbourg et Londres, William Blackwood. Lu sur Internet Archive, lu le 11 octobre 2026. Le passage est daté de 1861, au Karagwe."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -115,5 +115,131 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Krachi désigne un peuple guan du centre-est du Ghana, autour de Kete-Krachi, dans la région de l'Oti, et sa langue. Nous n'avons pas trouvé de source qui dise comment ce peuple se nomme lui-même. Une liste officielle de 1877, que rapporte l'historien Carl Christian Reindorf, écrit Crackee et Karaki : c'est la plus ancienne trace que nous connaissions. On ne sait pas avec certitude d'où vient ce nom ; une histoire orale, rapportée par la Commission nationale de la culture, l'explique par une moquerie des seigneurs akyem. Nous présentons plus bas l'histoire de ces noms.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Krachi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les seigneurs akyem, selon l'histoire orale rapportée par la Commission nationale de la culture",
+        "shortLine": "Le nom d'usage officiel du peuple et de sa langue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Krachi est la graphie que la Commission nationale de la culture du Ghana emploie pour ce peuple. Le registre ISO 639-3 retient « Krache » pour la langue. On ne sait pas avec certitude d'où vient ce nom ; une explication est donnée plus bas.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "National Commission on Culture Ghana – Oti Region : Krachi history and culture",
+                "author": "National Commission on Culture (Ghana)",
+                "year": null,
+                "url": "https://ghanaculture.gov.gh/oti-region/",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Page « Oti Region – National Commission on Culture », section « The Krachis », lu le 13 octobre 2026. La page ne porte ni auteur ni date et présente le récit comme une histoire orale. « It was a corruption of this statement that the people had the name Ka-Akye, anglicized Krachi of today »."
+              },
+              {
+                "title": "ISO 639-3, code kye : Krache",
+                "author": "SIL International",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/kye",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Registre ISO 639-3, lu le 13 octobre 2026. Le nom de référence est « Krache » ; aucune autre appellation n'est listée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Date inconnue"
+            },
+            "statement": "Krachi viendrait, selon l'histoire orale que rapporte la Commission nationale de la culture du Ghana, d'une moquerie des seigneurs akyem. Quand les ancêtres de ce peuple, venus d'Awutu sur la côte, auraient voulu les quitter à cause des tributs, les Akyem, à Larteh Akuapem, leur auraient lancé « Ka-akye-won », « ils sont devenus insolvables ». L'expression, déformée en Ka-Akye, aurait donné le nom, que les Anglais ont écrit Krachi.",
+            "hypothesisGroup": "origine-krachi",
+            "sources": [
+              {
+                "title": "National Commission on Culture Ghana – Oti Region : Krachi history and culture",
+                "author": "National Commission on Culture (Ghana)",
+                "year": null,
+                "url": "https://ghanaculture.gov.gh/oti-region/",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Page « Oti Region – National Commission on Culture », section « The Krachis », lu le 13 octobre 2026. La page ne porte ni auteur ni date et présente le récit comme une histoire orale. « It was a corruption of this statement that the people had the name Ka-Akye, anglicized Krachi of today »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Krakye",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie que Reindorf juge correcte en 1895 ; le nom est écrit Crackee dès 1877.",
+        "periodLabel": "Écrit depuis 1877",
+        "accounts": [
+          {
+            "period": {
+              "from": 1877,
+              "to": 1877,
+              "label": "1877"
+            },
+            "statement": "Le nom Krakye apparaît en 1877, sous les graphies Crackee et Karaki, dans un livre diffusé par le bureau du secrétaire colonial adjoint à Lagos pour fixer l'orthographe d'environ 470 lieux de la côte, selon le pasteur Carl Christian Reindorf. Il juge ces graphies peu fidèles et écrit lui-même Krakye. C'est la plus ancienne trace de ce nom que le projet connaît, à travers ce que Reindorf en rapporte. Le peuple existait avant elle.",
+            "formAsWritten": "Crackee",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Carl Christian Reindorf",
+                "role": "rapporte cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The History of the Gold Coast and Asante",
+                "author": "Carl Christian Reindorf",
+                "year": 1895,
+                "url": "https://archive.org/details/historyofgoldcoa00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. IX",
+                "notes": "Bâle, 1895. L'auteur est un pasteur ghanéen de la Mission de Bâle qui s'appuie sur les traditions orales. Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; numéro de page lu sur l'image. « Crackee and Karaki = Krakye ». Reindorf rapporte le livre de 1877 sans le citer davantage ; nous ne l'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "1895"
+            },
+            "statement": "Krakye est écrit Karakye par Carl Christian Reindorf en 1895, dans un récit sur les Late de Larteh : après une famine, ils seraient partis vers Nkonya et Karakye. Les gens de Ntshummuru, alors à Karakye, leur auraient demandé d'où ils venaient.",
+            "sources": [
+              {
+                "title": "The History of the Gold Coast and Asante",
+                "author": "Carl Christian Reindorf",
+                "year": 1895,
+                "url": "https://archive.org/details/historyofgoldcoa00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 91-92",
+                "notes": "Bâle, 1895. L'auteur est un pasteur ghanéen de la Mission de Bâle qui s'appuie sur les traditions orales. Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; numéro de page lu sur l'image. « The cause of the emigration of the Lates to Nkonya, Karakye, &c. was the fetish Konkom » (p. 91) ; « The people of Ntshummuru, then at Karakye, asked the emigrants » (p. 92)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -128,5 +128,126 @@
   "totemicFoodProhibition": {
     "value": "Il est tabou pour un Muganda de consommer son propre clan, qu'il s'agisse de nourriture, de viande fraîche, de légume, de poisson ou de fruit.",
     "sourceRefs": ["buganda-heritage-clans", "roscoe-1911-baganda"]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ngonge est celui d'un clan ganda, en Ouganda, dont le totem est la loutre ; le site patrimonial du Buganda l'écrit Nggonge. Le nom du clan est celui de son totem.",
+    "names": [
+      {
+        "nameText": "Ngonge",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lug",
+        "namedBy": null,
+        "shortLine": "Le nom d'un clan ganda d'Ouganda, celui de son totem, la loutre.",
+        "periodLabel": "Écrit dès 1902 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Décrit en 1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ngonge désigne la loutre, totem principal du clan, dont le second totem est la genette. Chez les Baganda, un clan porte le nom de son totem, selon John Roscoe.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 138",
+                "notes": "Londres, Macmillan, 1911 ; lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Missionnaire anglican ; les chefs de clan lui ont été présentés par Apolo Kagwa, premier ministre du Buganda. Liste des clans et de leurs totems : « 4. The Otter (Ngonge) clan had the Genet (Kasimba) for its second totem »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ngonge apparaît par écrit sous une forme proche, Ñoñge, dans la liste des clans du Buganda que dresse Harry Johnston, qui le traduit par « loutre ». C'est la plus ancienne trace de ce nom que le projet connaît ; le clan existait déjà avant ce texte.",
+            "formAsWritten": "Ñoñge",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Harry Johnston",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Uganda Protectorate, vol. II",
+                "author": "Harry Johnston",
+                "year": 1902,
+                "url": "https://archive.org/details/cu31924087982504",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 691",
+                "notes": "Londres, Hutchinson, 1902 ; lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Liste des vingt-neuf clans du Buganda et de leurs totems : « 5. Ñoñge … Otter ». Johnston était le commissaire spécial britannique de l'Ouganda ; auteur de l'époque coloniale, cité ici pour la forme qu'il écrit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Au temps du roi Kintu, selon le récit du clan"
+            },
+            "era": "polity",
+            "statement": "On parle alors du clan de la Loutre comme des descendants de Mwanga Kisole, premier ministre du roi Kintu, selon le récit que les chefs du clan ont confié à John Roscoe.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Récit d'origine du clan de la Loutre",
+                "author": "Chefs du clan de la Loutre, recueillis par John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "Mwanga Kisole, ancêtre du clan, katikkiro du roi Kintu",
+                "carrier": "Les chefs du clan de la Loutre réunis par Apolo Kagwa",
+                "place": "Buganda",
+                "notes": "Récit transcrit par John Roscoe, The Baganda, 1911, p. 143 : « The Otter clan say that their forefather was Mwanga Kisole », katikkiro de Kintu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nggonge",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lug",
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "era": "modern",
+            "statement": "Le nom Nggonge est l'écriture actuelle du nom en luganda. Le site patrimonial du Buganda le range parmi les cinq clans d'origine, les Banansangwa.",
+            "sources": [
+              {
+                "title": "Clans",
+                "author": "Buganda Heritage and Information Centre",
+                "year": null,
+                "url": "https://www.bugandaheritage.org.uk/culture/clans",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site patrimonial ganda, relu le 11 octobre 2026. Il écrit Nggonge et range ce clan parmi les cinq clans d'origine, les Banansangwa : Ffumbe, Lugave, Nggonge, Njaza et Nnyonyi."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

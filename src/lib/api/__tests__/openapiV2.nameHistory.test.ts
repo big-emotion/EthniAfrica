@@ -87,6 +87,24 @@ describe("OpenAPI v2 nameHistory contract", () => {
   });
 
   // @req REQ-196
+  it("documents a block's statement that no source gives the self-name", () => {
+    const declared = {
+      ...structuredClone(VALID_NAME_HISTORY),
+      selfNameUnknown: true,
+    };
+    const refused = {
+      ...structuredClone(VALID_NAME_HISTORY),
+      selfNameUnknown: false,
+    };
+
+    expect(Object.keys(schemas.NameHistoryV2.properties)).toContain(
+      "selfNameUnknown"
+    );
+    expect(validateAgainstSchema(NAME_HISTORY_REF, declared)).toBeNull();
+    expect(validateAgainstSchema(NAME_HISTORY_REF, refused)).not.toBeNull();
+  });
+
+  // @req REQ-196
   it("rejects an account aspect the shared parser refuses", () => {
     const block = structuredClone(VALID_NAME_HISTORY);
     Object.assign(block.names[0].accounts[0], { aspect: "etymology" });

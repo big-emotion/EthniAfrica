@@ -151,5 +151,201 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Daza désigne la branche méridionale des Toubou, au nord et au nord-est du lac Tchad, du Borkou au Kanem, qui se nomme elle-même Daza et parle le dazaga. Les Arabes l'appellent Gorane. Les sources que nous avons lues n'expliquent pas d'où vient le nom Daza ; nous présentons plus bas comment il s'est étendu.",
+    "names": [
+      {
+        "nameText": "Daza",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "dzg",
+        "namedBy": null,
+        "shortLine": "Un nom d'abord porté par quelques tribus du Bahr el-Ghazal, puis par tous les Toubou du sud.",
+        "usedIn": ["dzg"],
+        "periodLabel": "Écrit depuis 1858 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Daza désigne aujourd'hui, avec celui de Gorhan, des groupes toubou qui vivent à l'est du Kanem, dans la région du Bahr el-Ghazal, selon Dierk Lange. Les sources que nous avons lues n'expliquent pas d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 10 : Royaumes et peuples du Tchad",
+                "author": "Dierk Lange",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 272",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Daza n'appartenait d'abord qu'à quelques tribus du Bahr el-Ghazal, les Sakerda et les Norea, selon l'explorateur allemand Gustav Nachtigal. On l'a ensuite donné au Bornou à tous les Toubou du sud, et il juge ce choix fondé, puisque tous appellent leur langue commune dazaga.",
+            "sources": [
+              {
+                "title": "Sahărâ und Sûdân. Ergebnisse sechsjähriger Reisen in Afrika, zweiter Theil",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 142 et p. 379",
+                "notes": "Berlin, Weidmann, 1881. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. P. 379 : « welche mit den Nôreâ bei den Tubu ausschliesslich als Dâza bezeichnet werden, ein Name, der dann in Bornû allen südlichen Tubu beigelegt wurde »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1879,
+              "to": 1879,
+              "label": "1879"
+            },
+            "era": "polity",
+            "statement": "Le nom Daza est, selon Gustav Nachtigal, celui que se donnent pour la plupart les gens du Bahr el-Ghazal. Il propose de partager toute la famille toubou, d'après ses deux dialectes, entre les Teda du Tibesti et du Kawar et les Daza du Borkou, du Bahr el-Ghazal et du Kanem.",
+            "sources": [
+              {
+                "title": "Sahărâ und Sûdân. Ergebnisse sechsjähriger Reisen in Afrika, erster Theil",
+                "author": "Gustav Nachtigal",
+                "year": 1879,
+                "url": "https://archive.org/details/bub_gb_3cMNAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 421",
+                "notes": "Berlin, Weidmann, 1879. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. « diejenigen des Bahar el-Ghazâl, welche sich grossentheils Dâzâ nennen »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1858,
+              "label": "Récit publié en 1858"
+            },
+            "era": "polity",
+            "statement": "Le nom Daza apparaît dans le récit de l'explorateur allemand Heinrich Barth, paru en anglais en 1858 : il rencontre au Bornou des Toubou de la tribu des Daza, chassés autrefois d'Agadem par les Touareg. C'est la plus ancienne trace de ce nom que le projet connaît. Les Daza existaient déjà avant elle.",
+            "formAsWritten": "Dáza",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Heinrich Barth",
+                "role": "explorateur, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. IV",
+                "author": "Heinrich Barth",
+                "year": 1858,
+                "url": "https://www.gutenberg.org/ebooks/76319",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 18",
+                "notes": "Londres, Longman, Brown, Green, Longmans & Roberts, 1858. « a number of Tebú of the tribe of the Dáza, or rather Búlgudá ». Lu dans le texte du projet Gutenberg le 11 octobre 2026 ; la page est celle de l'édition imprimée, vérifiée sur sa numérisation par Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gorane",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Arabes",
+        "shortLine": "Le nom que les Arabes donnent aux Daza, cité dès le début du VIIIe siècle.",
+        "periodLabel": "Cité avant 728 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par les auteurs"
+            },
+            "era": "modern",
+            "statement": "Le nom Gorane est une appellation que les Arabes donnent aux Daza, et il est encore en usage, selon Tadeusz Lewicki ; Dierk Lange l'écrit Gorhan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 11 : Le rôle du Sahara et des Sahariens dans les relations entre le Nord et le Sud",
+                "author": "Tadeusz Lewicki",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 319",
+                "notes": "UNESCO, volume dirigé par M. El Fasi et I. Hrbek, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 10 : Royaumes et peuples du Tchad",
+                "author": "Dierk Lange",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 272",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1879,
+              "to": 1879,
+              "label": "1879"
+            },
+            "era": "polity",
+            "statement": "Le nom Gorane s'écrit Qorân chez Gustav Nachtigal : les Arabes, note-t-il, appellent Tubu les Teda et Qorân les Daza, mais emploient parfois l'un ou l'autre nom pour tous.",
+            "formAsWritten": "Qorân",
+            "sources": [
+              {
+                "title": "Sahărâ und Sûdân. Ergebnisse sechsjähriger Reisen in Afrika, erster Theil",
+                "author": "Gustav Nachtigal",
+                "year": 1879,
+                "url": "https://archive.org/details/bub_gb_3cMNAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 421",
+                "notes": "Berlin, Weidmann, 1879. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. « Die Araber nennen jene Tubu und diese Qorân »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 728,
+              "label": "Avant 728"
+            },
+            "statement": "Le nom Gorane apparaît, sous la forme Kurān ou Korān, chez l'auteur arabe Wahb ibn Munabbih, qui écrivait avant 728, selon Tadeusz Lewicki. C'est la plus ancienne trace de ce nom que le projet connaît. Les Daza existaient déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, III, ch. 11 : Le rôle du Sahara et des Sahariens dans les relations entre le Nord et le Sud",
+                "author": "Tadeusz Lewicki",
+                "year": 1990,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184312",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 319",
+                "notes": "UNESCO, volume dirigé par M. El Fasi et I. Hrbek, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

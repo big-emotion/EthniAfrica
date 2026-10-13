@@ -178,5 +178,175 @@
       "fieldPath": "homonyms",
       "reason": "Seul l'homonyme français, sans rapport, a pu être documenté ; aucune autre origine homonyme distincte n'a été trouvée."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Bailly est un nom bété, en Côte d'Ivoire, rangé parmi les prénoms bété et présenté comme voulant dire « le beau », comme le nom Bagnon. Les sources lues n'en donnent qu'une explication pour chacun ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Bailly",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom bété de Côte d'Ivoire, présenté comme voulant dire « le beau ».",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bailly est un nom de personne bété, en Côte d'Ivoire. Une seule explication de son sens a été trouvée, rapportée par un traditionaliste ; elle reste une hypothèse, présentée à part.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Liste de prénoms bété (Le Messager, reprise sur blog, 2012)",
+                "author": "Le Messager (reprise sur blog)",
+                "year": 2012,
+                "url": "http://gozoa.unblog.fr/2012/04/21/liste-de-prenoms-bete/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Liste alphabétique de noms bété publiée sous l'intitulé Le Messager sur un blog, datée du 21 avril 2012, lue le 11 octobre 2026 ; l'article d'origine du journal n'a pas été consulté. Elle range Bailly et Bagnon parmi les prénoms bété, sans en donner le sens ni citer de source."
+              },
+              {
+                "title": "Côte d'Ivoire : voici la signification des noms Bété que vous connaissez",
+                "author": "Afrik Soir",
+                "year": 2021,
+                "url": "https://afriksoir.net/cote-divoire-voici-la-signification-des-noms-bete-que-vous-connaissez/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article du site d'actualité ivoirien, daté du 14 février 2021, lu le 11 octobre 2026. Il donne pour source de sa liste le traditionaliste Zahui Ouraga Aimé, sans détailler sa méthode nom par nom. Entrée « Bailly, Bagnon : Le beau » ; une autre entrée donne « Baï, Bagnon : beau, phénix ». La page Côte d'Ivoire Tourisme qui publie la même liste en juin 2021 n'est pas comptée à part."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Bailly figure dans une liste de prénoms bété publiée sous le titre du journal Le Messager et reprise sur un blog le 21 avril 2012. C'est la plus ancienne trace écrite de ce nom comme nom bété que le projet connaît ; elle dit quand la liste a été publiée, pas depuis quand le nom est porté.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Liste de prénoms bété (Le Messager, reprise sur blog, 2012)",
+                "author": "Le Messager (reprise sur blog)",
+                "year": 2012,
+                "url": "http://gozoa.unblog.fr/2012/04/21/liste-de-prenoms-bete/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Liste alphabétique de noms bété publiée sous l'intitulé Le Messager sur un blog, datée du 21 avril 2012, lue le 11 octobre 2026 ; l'article d'origine du journal n'a pas été consulté. Elle range Bailly et Bagnon parmi les prénoms bété, sans en donner le sens ni citer de source."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Publiée en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Bailly voudrait dire « le beau », comme le nom Bagnon, selon le traditionaliste Zahui Ouraga Aimé, dont la liste de noms bété est publiée par le site Afrik Soir.",
+            "hypothesisGroup": "origine du nom Bailly",
+            "sources": [
+              {
+                "title": "Côte d'Ivoire : voici la signification des noms Bété que vous connaissez",
+                "author": "Afrik Soir",
+                "year": 2021,
+                "url": "https://afriksoir.net/cote-divoire-voici-la-signification-des-noms-bete-que-vous-connaissez/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article du site d'actualité ivoirien, daté du 14 février 2021, lu le 11 octobre 2026. Il donne pour source de sa liste le traditionaliste Zahui Ouraga Aimé, sans détailler sa méthode nom par nom. Entrée « Bailly, Bagnon : Le beau » ; une autre entrée donne « Baï, Bagnon : beau, phénix ». La page Côte d'Ivoire Tourisme qui publie la même liste en juin 2021 n'est pas comptée à part."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bagnon",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom bété lié au bagnon, l'homme que son village désigne pour sa beauté.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bagnon est aussi celui d'une distinction bété : chaque village désigne son bagnon, un homme choisi pour sa beauté et ses qualités morales, consulté et respecté, selon l'historien Joachim Bonny.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Le bagnon ou culte de la beauté dans la société Bété",
+                "author": "Joachim Bonny",
+                "year": null,
+                "url": "https://rezoivoire.net/ivoire/patrimoine/2273/le-bagnon-ou-culte-de-la-beaute-dans-la-societe-bete.html",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article sans date du portail Rezo-Ivoire, signé par Joachim Bonny, docteur d'État en histoire et ancien directeur de l'Institut d'histoire et d'archéologie de l'université nationale de Côte d'Ivoire. Lu le 11 octobre 2026. Il décompose bagnon en ba, adjectif qui qualifie toute personne ou toute chose ayant une valeur esthétique, et gnon, « homme », et décrit la désignation du bagnon par chaque communauté villageoise. Il ne cite pas le nom Bailly, et ses notes ne sont pas reproduites en ligne."
+              },
+              {
+                "title": "EthniAfrica — fiche du peuple bété, organisation sociale",
+                "author": "EthniAfrica",
+                "year": null,
+                "url": null,
+                "tier": "unverified",
+                "source_kind": "repository",
+                "notes": "Reprise du chapitre consacré à l'organisation traditionnelle de notre fiche du peuple bété, qui décrit le bagnon comme une personne désignée dans chaque village selon des critères physiques et moraux, consultée et respectée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Bagnon figure dans la même liste de prénoms bété, publiée sous le titre du journal Le Messager et reprise sur un blog le 21 avril 2012. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand la liste a été publiée, pas depuis quand le nom est porté.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Liste de prénoms bété (Le Messager, reprise sur blog, 2012)",
+                "author": "Le Messager (reprise sur blog)",
+                "year": 2012,
+                "url": "http://gozoa.unblog.fr/2012/04/21/liste-de-prenoms-bete/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Liste alphabétique de noms bété publiée sous l'intitulé Le Messager sur un blog, datée du 21 avril 2012, lue le 11 octobre 2026 ; l'article d'origine du journal n'a pas été consulté. Elle range Bailly et Bagnon parmi les prénoms bété, sans en donner le sens ni citer de source."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Explication non datée"
+            },
+            "statement": "Le nom Bagnon viendrait de ba, qui qualifie ce qui est beau, et de gnon, « homme » : il voudrait dire « bel homme », selon l'historien Joachim Bonny.",
+            "hypothesisGroup": "origine du nom Bagnon",
+            "sources": [
+              {
+                "title": "Le bagnon ou culte de la beauté dans la société Bété",
+                "author": "Joachim Bonny",
+                "year": null,
+                "url": "https://rezoivoire.net/ivoire/patrimoine/2273/le-bagnon-ou-culte-de-la-beaute-dans-la-societe-bete.html",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article sans date du portail Rezo-Ivoire, signé par Joachim Bonny, docteur d'État en histoire et ancien directeur de l'Institut d'histoire et d'archéologie de l'université nationale de Côte d'Ivoire. Lu le 11 octobre 2026. Il décompose bagnon en ba, adjectif qui qualifie toute personne ou toute chose ayant une valeur esthétique, et gnon, « homme », et décrit la désignation du bagnon par chaque communauté villageoise. Il ne cite pas le nom Bailly, et ses notes ne sont pas reproduites en ligne."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

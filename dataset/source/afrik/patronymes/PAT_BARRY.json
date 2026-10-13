@@ -118,5 +118,284 @@
       "fieldPath": "homonyms",
       "reason": "La recherche des formes Barry et Bari dans Vieillard et Straussberger n’a pas mis au jour deux lignées distinctes ; les deux graphies sont traitées comme celles du même groupe Dayeeɓe."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Barry est un nom de clan des Fulɓe, ou Peuls, devenu nom de famille, surtout en Guinée. On l'écrit aussi Bari, et le clan s'appelle Dayeeɓe en peul. Les sources consultées n'expliquent pas son origine ; elles rapportent plusieurs explications du clan, que nous présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Barry",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan des Fulɓe, devenu nom de famille, écrit Barry dès 1939.",
+        "periodLabel": "Écrit dès 1939 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Barry est celui d'un clan des Fulɓe, ou Peuls, aussi porté comme nom de famille, surtout en Guinée et au Burkina Faso ; le dictionnaire qui le décrit juge son étymologie inexpliquée, selon Patrick Hanks.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Barry Surname Meaning — Dictionary of American Family Names, 2e édition",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/barry?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e édition, Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 dans l'affichage français du site, qui traduit automatiquement le texte anglais ; le sens est repris ici sans citation. L'entrée comporte plusieurs sens ; celui qui concerne ce nom dit en substance : Afrique de l'Ouest, surtout Guinée et Burkina Faso, nom du clan Barry du peuple peul, d'étymologie inexpliquée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Rapporté en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Barry est l'un des quatre noms de clan, ou yettore, qui servent de noms de famille au Fouta-Djalon et désignent ceux qui les portent comme Fulɓe, avec Diallo, Sow et Bah, selon John Straussberger.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Storming the Citadel: Decolonization and Political Contestation in Guinea's Futa Jallon, 1945–61",
+                "author": "John Straussberger",
+                "year": 2016,
+                "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/abs/storming-the-citadel-decolonization-and-political-contestation-in-guineas-futa-jallon-194561/1F793ADC739F5A7A6B328C7CCEF585C5",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 35",
+                "notes": "The Journal of African History 57/2, 2016, p. 231-249, DOI 10.1017/S0021853716000050. Lu sur la page de l'éditeur, qui donne la note 35 : « four yettore, or cross-rank groupings, that are often used as family names and mark the bearers as being Fulbe: Diallo, Barry, Sow, and Bah », avec un renvoi à W. Derman, Serfs, Peasants, and Socialists, p. 17-18. Le texte complet n'est pas en accès libre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Rapportée en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Barry, que Delafosse écrit Bari, serait celui du clan descendu de Ouoï, fille de l'Arabe Okba et de Tadiouma, fille du roi de Tôr, dans les traditions des Peuls fortement islamisés, selon Maurice Delafosse.",
+            "hypothesisGroup": "origine-barry",
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 212-213",
+                "notes": "Émile Larose, Paris, 1912. L'auteur est un administrateur colonial en Afrique-Occidentale française. Lu sur l'édition du Projet Gutenberg, qui marque les pages de l'imprimé, le 12 octobre 2026. Pages 212-213 : dans les traditions peules islamisées, Okba, fils de Yâsir, épouse Tadiouma, fille du roi de Tôr (Sinaï) et a quatre enfants : de Daa viendrait le clan des Dialloubé, de Ouoï celui des « Bari ou Daébé », de Noussou celui des Sô ou Férobé, et de Raabou celui des Ba ou Ourourbé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1939,
+              "to": 1939,
+              "label": "Rapportée en 1939"
+            },
+            "era": "colonial",
+            "statement": "Le nom Barry serait celui du groupe Dayeeɓe, l'un des quatre groupes issus des quatre enfants d'Ogba, fils de Yâsir, dont tous les Peuls du Fouta-Djalon disent descendre, selon Gilbert Vieillard.",
+            "hypothesisGroup": "origine-barry",
+            "sources": [
+              {
+                "title": "Notes sur les Peuls du Fouta-Djallon — Clans et familles",
+                "author": "Gilbert Vieillard",
+                "year": 1939,
+                "url": "https://webfuuta.site/bibliotheque/gilbert_vieillard/notes/chap03.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chap. III, « Clans et familles », section « Le clan »",
+                "notes": "Notes sur les coutumes des Peuls au Fouta Dialon, Librairie Larose, Paris, 1939, 124 pages, reproduites par WebFuuta, lues le 12 octobre 2026. La reproduction ne marque pas les pages de l'imprimé : le passage est donc cité par chapitre et section. Auteur de l'époque coloniale, cité comme témoin situé. Le passage dit que toute la race prétend remonter à Ogba, fils de Yâsir, et à ses quatre enfants, ancêtres des quatre groupes classiques, dont les Dayeeɓe (Bari, Barry)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Proposée en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Barry, que Delafosse écrit Bari, serait d'abord un nom de clan toucouleur, sur le modèle duquel le clan peul des Daébé aurait été formé au Fouta Toro, selon Maurice Delafosse, qui précise que ces mots ne se traduisent pas l'un l'autre.",
+            "hypothesisGroup": "origine-barry",
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 224 et note 160",
+                "notes": "Émile Larose, Paris, 1912. L'auteur est un administrateur colonial en Afrique-Occidentale française. Lu sur l'édition du Projet Gutenberg, qui marque les pages de l'imprimé, le 12 octobre 2026. Page 224 : les quatre clans principaux des Peuls « furent calqués sur les clans toucouleurs » : Sal devint Diallo, Ba devint Boli, Sô devint Pérédio, « Bari devint Daédio ». La note 160 précise que ce ne sont pas des traductions, mais des mots d'origines distinctes d'une même langue, employés les uns surtout par les Toucouleurs, les autres par les Peuls. Page 136 : les clans toucouleurs comptent les « Si ou Bari »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1939,
+              "to": 1939,
+              "label": "1939"
+            },
+            "era": "colonial",
+            "statement": "Le nom Barry apparaît par écrit dans les Notes sur les coutumes des Peuls au Fouta Dialon de Gilbert Vieillard, qui le donne avec Bari comme nom du groupe Dayeeɓe, l'un des quatre groupes classiques. C'est la plus ancienne trace de cette graphie que le projet connaît ; elle dit quand un auteur l'a notée, pas depuis quand le nom est porté.",
+            "formAsWritten": "Barry",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Gilbert Vieillard",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Notes sur les Peuls du Fouta-Djallon — Clans et familles",
+                "author": "Gilbert Vieillard",
+                "year": 1939,
+                "url": "https://webfuuta.site/bibliotheque/gilbert_vieillard/notes/chap03.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chap. III, « Clans et familles », section « Le clan »",
+                "notes": "Notes sur les coutumes des Peuls au Fouta Dialon, Librairie Larose, Paris, 1939, 124 pages, reproduites par WebFuuta, lues le 12 octobre 2026. La reproduction ne marque pas les pages de l'imprimé : le passage est donc cité par chapitre et section. Auteur de l'époque coloniale, cité comme témoin situé. Le passage dit que toute la race prétend remonter à Ogba, fils de Yâsir, et à ses quatre enfants, ancêtres des quatre groupes classiques, dont les Dayeeɓe (Bari, Barry)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bari",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie plus ancienne du même nom, relevée dès 1912 chez les Peuls.",
+        "periodLabel": "Écrit dès 1912",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1939,
+              "to": 1939,
+              "label": "Rapporté en 1939"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bari est, avec Diallo, Sô et Bâ, l'un des noms de clan que les Français notent avec soin parce que les Peuls leur donnent souvent, et il n'a plus aucune importance pour les Peuls eux-mêmes, selon Gilbert Vieillard.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Notes sur les Peuls du Fouta-Djallon — Clans et familles",
+                "author": "Gilbert Vieillard",
+                "year": 1939,
+                "url": "https://webfuuta.site/bibliotheque/gilbert_vieillard/notes/chap03.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chap. III, « Clans et familles », section « Le clan »",
+                "notes": "Notes sur les coutumes des Peuls au Fouta Dialon, Librairie Larose, Paris, 1939, 124 pages, reproduites par WebFuuta, lues le 12 octobre 2026. La reproduction ne marque pas les pages de l'imprimé : le passage est donc cité par chapitre et section. Auteur de l'époque coloniale, cité comme témoin situé. Le passage dit que les Français, qui ont connu les Peuls surtout par les Toucouleurs et les Mandingues, ont pris l'habitude de noter les noms de Diallo, Bari, Sô et Bâ que les Peuls leur donnent souvent au hasard, et que le fait d'être un Bari n'a plus aucune importance « aujourd'hui et depuis longtemps »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bari apparaît par écrit dans le Haut-Sénégal-Niger de Maurice Delafosse, qui le donne, avec Sangaré, comme nom de clan qui désigne le même clan que les Daébé, au singulier Daédio. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a notée, pas depuis quand le nom est porté.",
+            "formAsWritten": "Bari",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 135",
+                "notes": "Émile Larose, Paris, 1912. L'auteur est un administrateur colonial en Afrique-Occidentale française. Lu sur l'édition du Projet Gutenberg, qui marque les pages de l'imprimé, le 12 octobre 2026. Page 135 : parmi les noms de clan que les Peuls empruntent aux Toucouleurs ou aux Mandé, « Bari ou Sangaré (même clan que les Daébé) » ; les Daébé ont pour singulier Daédio."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dayeeɓe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom peul du clan dont Barry est le nom de famille, au pluriel.",
+        "periodLabel": "Écrit dès 1912",
+        "accounts": [
+          {
+            "period": {
+              "from": 1939,
+              "to": 1939,
+              "label": "Rapporté en 1939"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dayeeɓe est celui du groupe classique des Peuls du Fouta-Djalon dont les noms de famille sont Bari et Barry, selon Gilbert Vieillard.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Notes sur les Peuls du Fouta-Djallon — Clans et familles",
+                "author": "Gilbert Vieillard",
+                "year": 1939,
+                "url": "https://webfuuta.site/bibliotheque/gilbert_vieillard/notes/chap03.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chap. III, « Clans et familles », section « Le clan »",
+                "notes": "Notes sur les coutumes des Peuls au Fouta Dialon, Librairie Larose, Paris, 1939, 124 pages, reproduites par WebFuuta, lues le 12 octobre 2026. La reproduction ne marque pas les pages de l'imprimé : le passage est donc cité par chapitre et section. Auteur de l'époque coloniale, cité comme témoin situé. Le passage dit que toute la race prétend remonter à Ogba, fils de Yâsir, et à ses quatre enfants, ancêtres des quatre groupes classiques, dont les Dayeeɓe (Bari, Barry)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dayeeɓe apparaît par écrit, sous la forme proche Daébé, dans le Haut-Sénégal-Niger de Maurice Delafosse, qui note Daédio au singulier et relie le clan au nom Bari. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a notée, pas depuis quand le nom est employé.",
+            "formAsWritten": "Daébé",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 135",
+                "notes": "Émile Larose, Paris, 1912. L'auteur est un administrateur colonial en Afrique-Occidentale française. Lu sur l'édition du Projet Gutenberg, qui marque les pages de l'imprimé, le 12 octobre 2026. Page 135 : parmi les noms de clan que les Peuls empruntent aux Toucouleurs ou aux Mandé, « Bari ou Sangaré (même clan que les Daébé) » ; les Daébé ont pour singulier Daédio."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

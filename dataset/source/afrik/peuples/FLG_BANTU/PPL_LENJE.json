@@ -110,6 +110,173 @@
         "url": "https://glottolog.org/resource/languoid/id/lenj1248",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Boswell, D. – Chipimpi, Vulgar Clans, and Lala-Lamba Ethnohistory (reference aux Lenje), 2008",
+        "url": "https://scholarexchange.furman.edu/cgi/viewcontent.cgi?article=1001&context=ant-publications",
+        "tier": "referenced",
+        "source_kind": "academic"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Lenje désigne un peuple bantou de la Province centrale de la Zambie, qui se nomme lui-même Lenje, au pluriel Balenje ou Walenje. On l'appelle aussi Bene Mukuni, un nom qui renverrait au chef Mukuni et à son peuple. On ne sait pas avec certitude d'où vient le nom Lenje ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Lenje",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "leh",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple, de son pays et de sa langue, écrit dès 1908 ; son origine n'est pas expliquée.",
+        "periodLabel": "Écrit depuis 1908 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lenje est écrit Walenje, avec le préfixe du pluriel, par Edwin W. Smith et Andrew Murray Dale en 1920 : ils situent les Walenje, ou Beni Mukuni, au nord des Ba-ila, dont ils sont proches par la langue.",
+            "formAsWritten": "Walenje",
+            "sources": [
+              {
+                "title": "The Ila-Speaking Peoples of Northern Rhodesia, vol. I",
+                "author": "Edwin W. Smith et Andrew Murray Dale",
+                "year": 1920,
+                "url": "https://archive.org/details/ilaspeakingpeopl00smit",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. xxvii",
+                "notes": "Londres, Macmillan, 1920, note d'introduction, lue dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1908,
+              "to": 1908,
+              "label": "1908"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lenje ne correspond pas alors à une forte unité : les gens du district semblent se désigner entre eux par les noms de leurs clans, selon A. C. Madan. Les sources que nous avons lues n'expliquent pas d'où vient ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Lenje Handbook: A Short Introduction to the Lenje Dialect Spoken in North-West Rhodesia",
+                "author": "A. C. Madan",
+                "year": 1908,
+                "url": "https://archive.org/details/lenjehandbookas02madagoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 3-4",
+                "notes": "Oxford, Clarendon Press, 1908, préface, lue dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1908,
+              "to": 1908,
+              "label": "1908"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lenje apparaît dans le titre d'un manuel de langue publié en 1908 à Oxford par A. C. Madan. C'est, écrit-il, le nom courant du district que traverse le chemin de fer entre la rivière Kafue et Broken Hill, de ses habitants, les Walenje, et de leur langue, le chilenje. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Lenje",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Lenje Handbook: A Short Introduction to the Lenje Dialect Spoken in North-West Rhodesia",
+                "author": "A. C. Madan",
+                "year": 1908,
+                "url": "https://archive.org/details/lenjehandbookas02madagoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 3-4",
+                "notes": "Oxford, Clarendon Press, 1908, préface, lue dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bene Mukuni",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "leh",
+        "namedBy": null,
+        "shortLine": "Un nom qui renverrait au chef Mukuni et à son peuple ; écrit Beni Mukuni en 1920.",
+        "periodLabel": "Écrit depuis 1908",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bene Mukuni est écrit Beni Mukuni par Edwin W. Smith et Andrew Murray Dale, en 1920, comme autre nom des Walenje.",
+            "formAsWritten": "Beni Mukuni",
+            "sources": [
+              {
+                "title": "The Ila-Speaking Peoples of Northern Rhodesia, vol. I",
+                "author": "Edwin W. Smith et Andrew Murray Dale",
+                "year": 1920,
+                "url": "https://archive.org/details/ilaspeakingpeopl00smit",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. xxvii",
+                "notes": "Londres, Macmillan, 1920, note d'introduction, lue dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1908,
+              "to": 1908,
+              "label": "1908"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bene Mukuni renverrait au chef Mukuni et à son peuple, selon A. C. Madan, qui traduit ainsi le nom de leur langue, Chine Mukuni.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Lenje Handbook: A Short Introduction to the Lenje Dialect Spoken in North-West Rhodesia",
+                "author": "A. C. Madan",
+                "year": 1908,
+                "url": "https://archive.org/details/lenjehandbookas02madagoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 3-4",
+                "notes": "Oxford, Clarendon Press, 1908, préface, lue dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1908,
+              "to": 1908,
+              "label": "1908"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bene Mukuni a une forme proche, Chine Mukuni, chez A. C. Madan en 1908 : c'est, écrit-il, « la langue du chef Mukuni et de son peuple », le parler lenje qu'il prend pour modèle. C'est la plus ancienne trace de ce nom que le projet connaît. Le chef et son peuple sont plus anciens que lui.",
+            "formAsWritten": "Chine Mukuni",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Lenje Handbook: A Short Introduction to the Lenje Dialect Spoken in North-West Rhodesia",
+                "author": "A. C. Madan",
+                "year": 1908,
+                "url": "https://archive.org/details/lenjehandbookas02madagoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 3-4",
+                "notes": "Oxford, Clarendon Press, 1908, préface, lue dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

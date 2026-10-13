@@ -440,7 +440,7 @@
           "\"Kirdi\" (terme haoussa signifiant \"païen\"",
           "utilisé pour désigner les peuples non islamisés du Nord)"
         ],
-        "peopleId": "PPL_KIRDI",
+        "peopleId": null,
         "mainRegion": "Extrême-Nord du Cameroun (montagnes)",
         "languages": ["Langues tchadiques (plusieurs langues)", "français"],
         "languageFamily": "FLG_TCHADIQUE",

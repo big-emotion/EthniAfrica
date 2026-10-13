@@ -212,7 +212,8 @@
         "timeRange": {
           "startYear": 1501,
           "endYear": 1966,
-          "precision": "century"
+          "precision": "approximate",
+          "datingNote": "Le début au XVIe siècle suit la fiche et les traditions dynastiques. Selon J. B. Webster, B. A. Ogot et J.-P. Chrétien (HGA V), une nouvelle dynastie s'affirme au Burundi à la fin du XVIIe siècle et bloque l'expansion du Rwanda."
         },
         "dominantPeoples": [
           "Tutsi (noblesse)",
@@ -220,7 +221,7 @@
           "Twa (minorité)"
         ],
         "politicalCenters": ["Gitega (capitale royale)", "Muramvya"],
-        "historicalRole": "Royaume centralisé avec une monarchie sacrée (mwami). Système de chefferies hiérarchisées. Expansion territoriale et unification culturelle. Distinctions sociales complexes entre Hutu, Tutsi et Twa, instrumentalisées par le colonialisme."
+        "historicalRole": "Royaume centralisé avec une monarchie sacrée (mwami). Système de chefferies hiérarchisées. Expansion territoriale et unification culturelle. Distinctions sociales complexes entre Hutu, Tutsi et Twa, instrumentalisées par le colonialisme. Selon l'Histoire générale de l'Afrique, une nouvelle dynastie s'affirme à la fin du XVIIe siècle."
       },
       {
         "name": "Ruanda-Urundi",
@@ -368,6 +369,13 @@
         "tier": "official",
         "source_kind": "government",
         "notes": "Fiche officielle britannique de toponymie, édition 2025 : kirundi langue nationale (Constitution de 2005), français et anglais, ce dernier langue officielle depuis 2014 ; Gitega capitale politique depuis 2019, Bujumbura capitale économique."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par B. A. Ogot, chapitre de J. B. Webster, B. A. Ogot et J.-P. Chrétien (1999), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 889. « L'essor d'une nouvelle dynastie au Burundi bloqua son expansion [celle du Rwanda] à la fin du siècle », c'est-à-dire du XVIIe siècle."
       }
     ],
     "demographics": {

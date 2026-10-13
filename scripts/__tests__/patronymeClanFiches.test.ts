@@ -17,8 +17,8 @@ const EXPECTED = [
   ["PAT_DIABATE", "Diabate", "PPL_DAFING", "patrilineal"],
   ["PAT_FOFANA", "Fofana", "PPL_DIOULA", "patrilineal"],
   ["PAT_DOUMBIA", "Doumbia", "PPL_DIOULA", "patrilineal"],
-  ["PAT_SOW", "Sow", "PPL_WOLOF", "patrilineal"],
-  ["PAT_DUBE", "Dube", "PPL_NDAU_MOZ", "patrilineal"],
+  ["PAT_SOW", "Sow", "PPL_FULA", "patrilineal"],
+  ["PAT_DUBE", "Dube", "PPL_NDAU", "patrilineal"],
   ["PAT_MTHETHWA", "Mthethwa", "PPL_NDEBELE", "patrilineal"],
   ["PAT_NDLOVU", "Ndlovu", "PPL_NDEBELE", "patrilineal"],
   ["PAT_NXUMALO", "Nxumalo", "PPL_NDEBELE", "patrilineal"],
@@ -30,8 +30,15 @@ const EXPECTED = [
 // That fiche, the Fula of the forest (GIN, CIV, CMR, GAB), was folded into
 // PPL_FULA on 2026-10-11; the keeper's wider spread (Niger, Nigeria, Chad,
 // Sudan, Central Africa) is not something any Diallo source here attests.
+// Dube was attested on the Ndau of Mozambique (MOZ), folded into PPL_NDAU the
+// same day; no Dube source here attests the keeper's Malawi or South Africa.
+// Sow was first attested on the Wolof fiche; the operator re-attached it to the
+// Fulɓe and the Toucouleur on 2026-10-11. Its sources attest Guinea (Arcin,
+// Kelly), Senegal and Mauritania (DAFN), not the whole spread of PPL_FULA.
 const COUNTRY_FLOOR_OF_A_FOLDED_FICHE: Record<string, string[]> = {
   PAT_DIALLO: ["GIN", "CIV", "CMR", "GAB"],
+  PAT_DUBE: ["MOZ"],
+  PAT_SOW: ["GIN", "SEN", "MRT"],
 };
 
 interface Source {

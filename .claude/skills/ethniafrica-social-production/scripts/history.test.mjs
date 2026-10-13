@@ -9,12 +9,15 @@ import {
   writeFileSync,
   existsSync,
   symlinkSync,
+  readdirSync,
 } from "node:fs";
+import { createHash } from "node:crypto";
 import { join } from "node:path";
 import { tmpdir } from "node:os";
 import { createPiece, applyEvent, loadPiece, savePiece } from "./workflow.mjs";
 import { createPackage } from "./package.mjs";
 import { installPackageFixture } from "./package.fixture.mjs";
+import { installVideoPackageFixture } from "./package-video.fixture.mjs";
 import {
   archivePiece,
   inspectHistory,
@@ -22,13 +25,16 @@ import {
   cleanupPiece,
 } from "./history.mjs";
 
-function fixture(t) {
+function fixture(t, { deliver = true, video = false } = {}) {
   const root = mkdtempSync(join(tmpdir(), "social-history-"));
   t.after(() => rmSync(root, { recursive: true, force: true }));
   const id = "synthetic-history";
   const piece = `.local/productions/${id}`;
   createPiece(root, id, "Synthetic history", ["instagram", "facebook"]);
-  const f = installPackageFixture(root, piece);
+  const f = (video ? installVideoPackageFixture : installPackageFixture)(
+    root,
+    piece
+  );
   const event = (e) =>
     applyEvent(root, id, {
       expectedRevision: loadPiece(root, id).revision,
@@ -66,7 +72,7 @@ function fixture(t) {
     });
     event({ type: "approve", gate: 3, decision: "Synthetic approval" });
   };
-  delivery();
+  if (deliver) delivery();
   const publish = (network) =>
     event({
       type: "publication",
@@ -343,4 +349,186 @@ test("publication capture refuses a symlinked snapshot destination", (t) => {
   assert.throws(() => f.publish("instagram"), /symlink/i);
   assert.equal(loadPiece(f.root, f.id).publications.length, 0);
   assert.equal(existsSync(join(f.root, "social/media")), false);
+});
+
+// Historical reconciliation: a post published before approval 3 was recorded.
+function historicalFixture(t) {
+  const f = fixture(t, { deliver: false });
+  const media = readdirSync(join(f.root, f.piece, "exports"))
+    .filter((name) => name.endsWith(".png"))
+    .sort()
+    .map((name) => `${f.piece}/exports/${name}`);
+  const hash = (file) =>
+    createHash("sha256")
+      .update(readFileSync(join(f.root, file)))
+      .digest("hex");
+  const attestationFile = f.file("attestation.json", {
+    attestation: { networks: ["instagram", "facebook"] },
+    deliveredMedia: media.map((file) => ({ file, sha256: hash(file) })),
+  });
+  const copyFile = f.file("public-copy.json", {
+    cards: media.map(() => ({ text: "Carte de test", alt: "Un fond uni." })),
+  });
+  const reportFile = f.file("external-report.md", "Synthetic external report");
+  const report = (network) =>
+    f.event({
+      type: "publication-report",
+      network,
+      url: `https://example.org/${network}`,
+      publishedAt: "2026-10-10",
+      evidence: "Synthetic operator report",
+      evidenceFile: reportFile,
+    });
+  const reconcile = (network) =>
+    f.event({
+      type: "historical-publication",
+      network,
+      url: `https://example.org/${network}`,
+      publishedAt: "2026-10-10",
+      media,
+      attestationFile,
+      copyFile,
+      caption: "Légende observée",
+      firstComment: null,
+      evidence: "Synthetic operator attestation of the uploaded files",
+    });
+  return { ...f, media, report, reconcile, reportFile };
+}
+
+// @req REQ-186
+test("historical reconciliation needs a recorded report and never creates approval 3", (t) => {
+  const f = historicalFixture(t);
+  assert.throws(() => f.reconcile("instagram"), /report/i);
+  f.report("instagram");
+  f.report("facebook");
+  f.reconcile("instagram");
+  f.reconcile("facebook");
+  const state = loadPiece(f.root, f.id);
+  assert.equal(state.approvals[3], undefined);
+  assert.equal(state.publications[0].snapshot.historical, true);
+  assert.equal(state.publications[0].snapshot.media.length, f.media.length);
+  const h = f.archive();
+  const text = readFileSync(
+    join(f.root, ".local/publications", f.id, "history.md"),
+    "utf8"
+  );
+  assert.match(text, /approval 3 was not recorded/i);
+  assert.equal(h.publications.length, 2);
+  cleanupPiece(f.root, f.id);
+  assert.doesNotThrow(() => inspectHistory(f.root, f.id));
+});
+
+// @req REQ-186
+test("historical reconciliation refuses changed media and stale report evidence", (t) => {
+  const f = historicalFixture(t);
+  f.report("instagram");
+  const image = join(f.root, f.media[0]);
+  const bytes = readFileSync(image);
+  writeFileSync(image, "Changed after the attestation");
+  assert.throws(() => f.reconcile("instagram"), /attested/i);
+  writeFileSync(image, bytes);
+  f.file("external-report.md", "Changed");
+  assert.throws(() => f.reconcile("instagram"), /evidence/i);
+  f.file("external-report.md", "Synthetic external report");
+  f.reconcile("instagram");
+  assert.throws(() => f.reconcile("instagram"), /already/i);
+});
+
+// @req REQ-186
+test("an approved package keeps the normal publication path", (t) => {
+  const f = fixture(t);
+  f.file("external-report.md", "Synthetic external report");
+  f.event({
+    type: "publication-report",
+    network: "instagram",
+    url: "https://example.org/instagram",
+    publishedAt: "2026-10-10",
+    evidence: "Synthetic report",
+    evidenceFile: `${f.piece}/external-report.md`,
+  });
+  assert.throws(
+    () =>
+      f.event({
+        type: "historical-publication",
+        network: "instagram",
+        url: "https://example.org/instagram",
+        publishedAt: "2026-10-10",
+        media: [],
+        attestationFile: `${f.piece}/external-report.md`,
+        copyFile: `${f.piece}/external-report.md`,
+        caption: "x",
+        firstComment: null,
+        evidence: "x",
+      }),
+    /publication event/i
+  );
+});
+
+// @req REQ-186
+test("a rebased correction advances only with an explicit reconciliation that keeps both values", (t) => {
+  const f = fixture(t);
+  const evidence = f.file("integration.txt", "Synthetic integration evidence");
+  const corpus = f.file("corpus.json", { sources: [] });
+  const state = loadPiece(f.root, f.id);
+  state.corpusProposals = {
+    p: {
+      id: "c",
+      file: corpus,
+      pointer: "/sources",
+      before: { exists: true, value: [] },
+      value: ["approved/"],
+    },
+  };
+  savePiece(f.root, state, state.revision);
+  const check = (extra = {}) =>
+    f.event({
+      type: "corpus-progress",
+      proposal: "p",
+      status: "locally-checked",
+      evidence,
+      ...extra,
+    });
+  const reconciliation =
+    "Merged with later additions; one URL lost its trailing slash";
+  assert.throws(() => check({ reconciliation }), /not applied/i);
+  f.file("corpus.json", { sources: ["approved", "added later"] });
+  assert.throws(() => check(), /does not match/i);
+  check({ reconciliation });
+  const saved = loadPiece(f.root, f.id);
+  assert.deepEqual(saved.corpusProposals.p.value, ["approved/"]);
+  assert.deepEqual(saved.corpusProgress[0].observedValue, [
+    "approved",
+    "added later",
+  ]);
+  assert.equal(saved.corpusProgress[0].reconciliation, reconciliation);
+});
+
+// @req REQ-186
+test("a published video keeps the exact final video and its on-screen text in history", (t) => {
+  const f = fixture(t, { video: true });
+  const final = readFileSync(join(f.root, f.final, "video.mp4"));
+  f.publish("instagram");
+  f.publish("facebook");
+  const h = f.archive();
+  const snapshot = h.publications[0].snapshot;
+  assert.deepEqual(
+    snapshot.media.map((m) => m.file),
+    ["video.mp4"]
+  );
+  assert.match(snapshot.media[0].retained, /\.mp4$/);
+  assert.ok(snapshot.screen.includes("Sahara vient de l'arabe"));
+  assert.equal(snapshot.copy.accessibility.autoCaptions, "available");
+  cleanupPiece(f.root, f.id);
+  assert.deepEqual(
+    readFileSync(
+      join(f.root, `.local/publications/${f.id}`, snapshot.media[0].retained)
+    ),
+    final
+  );
+  const text = readFileSync(
+    join(f.root, `.local/publications/${f.id}/history.md`),
+    "utf8"
+  );
+  assert.match(text, /### On-screen text/);
+  assert.doesNotThrow(() => inspectHistory(f.root, f.id));
 });

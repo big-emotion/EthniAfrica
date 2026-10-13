@@ -2,7 +2,7 @@
   "id": "PPL_RWANDAIS_HUTU",
   "nameMain": "Rwandais (Hutu)",
   "languageFamilyId": "FLG_BANTU",
-  "currentCountries": ["RWA", "COD", "UGA", "BDI", "TZA"],
+  "currentCountries": ["RWA", "COD", "UGA"],
   "classificationStatus": "colonial-legacy",
   "content": {
     "appellations": {
@@ -14,12 +14,11 @@
       "contemporaryUsage": "Le gouvernement rwandais post-génocide a supprimé la mention de l'appartenance ethnique sur les cartes d'identité et promeut le programme Ndi Umunyarwanda (Je suis Rwandais). La distinction Hutu reste en usage en Burundi et dans la diaspora, mais les autorités rwandaises découragent son emploi comme marqueur identitaire premier.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Bantou (Zone J, sous-groupe Rwanda-Rundi)",
-      "historicalRegion": "Région des Grands Lacs africains, principalement Rwanda et Burundi actuels",
-      "currentCountries": ["RWA", "COD", "UGA", "BDI", "TZA"]
+      "historicalRegion": "Rwanda ; l'est de la RDC et le sud-ouest de l'Ouganda pour les Hutu de langue kinyarwanda",
+      "currentCountries": ["RWA", "COD", "UGA"]
     },
     "ethnicities": [
       "Abahutu du Rwanda central (anciens agriculteurs des collines)",
-      "Hutu du Burundi (Abahutu ba Burundi)",
       "Banyarwanda Hutu de RDC (provinces du Nord-Kivu et Sud-Kivu)",
       "Hutu d'Ouganda (Bafumbira, région de Kisoro)",
       "Hutu Kiga du nord-ouest (région historiquement à majorité hutu)",
@@ -28,7 +27,7 @@
       "Abahutu du centre et du sud (préfectures de Gitarama, Butare, Gikongoro)",
       "Abahutu de l'est (préfectures de Kibungo, Byumba)",
       "Banyarwanda Hutu de l'est de la RDC (Banyamulenge et Banyabwisha)",
-      "Barundi Hutu du Burundi (groupe démographiquement majoritaire)"
+      "Banyabwisha (Hutu de la chefferie de Bwisha, Nord-Kivu)"
     ],
     "origins": {
       "ancientOrigins": "Les Hutu font partie du grand groupe bantou qui a peuplé la région des Grands Lacs lors des migrations bantoues entre 3000 et 1000 av. J.-C. environ. Les premiers Hutu documentés étaient des agriculteurs sédentaires organisés en clans (inzu) et en lignages (umuryango). Les distinctions entre Hutu et Tutsi n'étaient pas initialement des catégories ethniques biologiques mais des différences de statut socio-économique : les éleveurs de bétail (plus de dix vaches) tendaient à être classés Tutsi, les cultivateurs Hutu. La mobilité sociale était possible : un Hutu prospère pouvait accéder au statut Tutsi (kwihutura) et inversement (gucupira).",
@@ -41,7 +40,6 @@
       ],
       "historicalSettlementZones": [
         "Rwanda central et méridional (collines de culture vivrière)",
-        "Burundi (nord et centre)",
         "Nord-Kivu et Sud-Kivu (RDC), surtout Masisi et Rutshuru",
         "Ouganda occidental, district de Kisoro (Bafumbira)",
         "Plaines et collines du Rwanda central",
@@ -65,13 +63,13 @@
       "isoCodes": ["kin"],
       "dialects": [
         "Kinyarwanda du Rwanda central",
-        "Kirundi (Burundi) — variété très proche, officiellement distinct",
         "Rufumbira (Ouganda, district de Kisoro) — dialecte kinyarwanda",
         "Ikinyabwishya (nord-ouest Rwanda)",
         "Kinyarwanda du nord (légèrement différent phonologiquement)",
         "Kinyarwanda du sud",
-        "Kirundi (proche, Burundi) — parfois considéré dialecte",
-        "Mufumbira (Uganda, dialecte frontalier)"
+        "Mufumbira (Uganda, dialecte frontalier)",
+        "Dialectes régionaux du Kivu (kinyarwanda de RDC)",
+        "Kinyabwisha (parler des Banyarwanda du Nord-Kivu)"
       ],
       "vehicularRole": "Le kinyarwanda (ISO 639-3 : kin) est la langue maternelle de la quasi-totalité des Hutu, Tutsi et Twa du Rwanda, démontrant que ces groupes forment une seule communauté linguistique (Banyarwanda). C'est l'une des quatre langues officielles du Rwanda avec le français, l'anglais et le swahili. Le kirundi, mutuellement intelligible, est la langue nationale du Burundi. Le français reste largement utilisé dans l'administration et l'éducation dans les pays francophones."
     },
@@ -88,19 +86,14 @@
       "diaspora": "Après le génocide de 1994, environ deux millions de Hutu (dont de nombreux génocidaires mêlés à des civils innocents) ont fui vers le Zaïre (RDC), le Tanzania et d'autres pays voisins. Une diaspora hutu existe en Europe (France, Belgique), en Amérique du Nord et en Afrique centrale. Les réfugiés des camps de RDC ont été impliqués dans des conflits armés continus. Une partie de la diaspora soutient les FDLR depuis l'étranger."
     },
     "demography": {
-      "totalPopulation": 12000000,
+      "totalPopulation": 9500000,
       "referenceYear": 2025,
-      "source": "Estimations basées sur : CIA World Factbook (Hutu = 84% Rwanda, 85% Burundi, données 2009 avant retrait officiel des statistiques ethniques en 2017) ; Rwanda NISR recensement 2022 (population totale 14,6 millions) ; UNFPA Burundi ; projections démographiques régionales. Note : depuis 2017, les gouvernements rwandais et burundais ne publient plus de données ethniques officielles conformément aux politiques de réconciliation nationale.",
+      "source": "Estimations basées sur : CIA World Factbook (Hutu = 84% Rwanda, 85% Burundi, données 2009 avant retrait officiel des statistiques ethniques en 2017) ; Rwanda NISR recensement 2022 (population totale 14,6 millions) ; UNFPA Burundi ; projections démographiques régionales. Note : depuis 2017, les gouvernements rwandais et burundais ne publient plus de données ethniques officielles conformément aux politiques de réconciliation nationale. Une autre estimation (UNFPA Rwanda 2025  données d'avant la suppression des catégories) compte environ 12 4 millions de Hutu au Rwanda  800 000 en RDC et 200 000 en Ouganda. Les sources lues ne permettent pas de choisir entre ces chiffres. Les Hutu du Burundi sont décrits sur la fiche Hutu du Burundi ; l'estimation reprise ici en comptait 10 000 000, et 150 000 en Tanzanie.",
       "distributionByCountry": [
         {
           "country": "RWA",
           "population": 7500000,
           "note": "Environ 84% de la population rwandaise (14,6 millions en 2025) selon les estimations pré-2017"
-        },
-        {
-          "country": "BDI",
-          "population": 10000000,
-          "note": "Environ 85% de la population burundaise (12,9 millions en 2025)"
         },
         {
           "country": "COD",
@@ -111,10 +104,6 @@
           "country": "UGA",
           "population": 500000,
           "note": "Bafumbira et Banyarwanda hutu dans le sud-ouest ougandais, district de Kisoro"
-        },
-        {
-          "country": "TZA",
-          "population": 150000
         }
       ]
     },
@@ -181,6 +170,255 @@
         "url": "https://www.ethnologue.com/language/kin",
         "tier": "official",
         "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "UNFPA — Rwanda Population 2025",
+        "url": "https://www.unfpa.org/data/world-population/RW",
+        "tier": "official",
+        "source_kind": "intergovernmental"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Hutu désigne, au Rwanda, l'une des catégories de la société, à côté des Tutsi et des Twa ; Bahutu en est le pluriel dans sa langue. D'autres noms existent : Wahutu, la forme swahilie des voyageurs de la fin du XIXe siècle. Les sources ne s'accordent pas sur le sens premier du nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Hutu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kin",
+        "namedBy": null,
+        "shortLine": "Le nom d'une des catégories de la société rwandaise ; Bahutu au pluriel.",
+        "usedIn": ["kin", "fra"],
+        "periodLabel": "Écrit dès 1894 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par les historiens"
+            },
+            "statement": "Le nom Hutu désigne, avec Tutsi et Twa, l'une des catégories de la société du Rwanda et du Burundi. Ces catégories traversent les clans : au Rwanda, dix-huit grands clans réunissent des Bahutu, des Batutsi et des Batwa, selon J. B. Webster, B. A. Ogot et J. P. Chrétien. Le sens premier du nom est discuté : les explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+                "author": "J. B. Webster, B. A. Ogot et J. P. Chrétien",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 879",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1957,
+              "to": 1957,
+              "label": "Mars 1957"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hutu est au cœur du Manifeste des Bahutu, publié en mars 1957 par neuf intellectuels hutu, favorable à « la promotion effective des Bahutu », selon Elikia M'Bokolo. Ce texte fournit l'idéologie des partis qui se forment alors, dont le PARMEHUTU.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VIII, ch. 8 : L'Afrique équatoriale de l'Ouest",
+                "author": "Elikia M'Bokolo",
+                "year": 1998,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184344",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 234",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1939,
+              "label": "Années 1930"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hutu est inscrit, dans les années 1930, dans les registres de l'administration belge et sur les cartes d'identité que chaque adulte doit porter : environ 84 % des Rwandais se déclarent alors hutu, selon Human Rights Watch. Le rapport note qu'après cette inscription, changer de groupe devient plus difficile.",
+            "sources": [
+              {
+                "title": "Leave None to Tell the Story: Genocide in Rwanda, chapitre « History »",
+                "author": "Alison Des Forges pour Human Rights Watch",
+                "year": 1999,
+                "url": "https://www.hrw.org/reports/1999/rwanda/Geno1-3-09.htm",
+                "tier": "referenced",
+                "source_kind": "ngo",
+                "notes": "Lu en ligne ; la page ne nomme pas son auteur, que le rapport publié désigne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1500,
+              "to": 1900,
+              "label": "XVIe-XIXe siècle, selon ces historiens"
+            },
+            "statement": "Le nom Hutu ne désigne pas, pour J. B. Webster, B. A. Ogot et J. P. Chrétien, une condition fixée une fois pour toutes : à supposer même que les cultivateurs aient été appelés Bahutu vers 1500, les changements des XVIIe-XIXe siècles ont fait passer les relations entre Hutu et Tutsi d'échanges locaux à une hiérarchie plus globale.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+                "author": "J. B. Webster, B. A. Ogot et J. P. Chrétien",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 892",
+                "notes": "Édition française diffusée par l'UNESCO sur unesdoc, lue dans une copie non officielle de l'ensemble des volumes mise en ligne sur Internet Archive (unesco-histoire-generale-d-afrique)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1894,
+              "to": 1895,
+              "label": "1894, publié en 1895"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hutu est écrit Wahutu par le comte Gustav Adolf von Götzen, qui traverse le Rwanda en 1894 : c'est ainsi, écrit-il, que les Wahuma appellent la population des campagnes. C'est la plus ancienne trace de ce nom que le projet connaît. Les sociétés qu'il désigne existaient bien avant lui.",
+            "formAsWritten": "Wahutu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Durch Afrika von Ost nach West",
+                "author": "Gustav Adolf von Götzen",
+                "year": 1895,
+                "url": "https://archive.org/details/durchafrikavones00gtze",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 161",
+                "notes": "Berlin, Dietrich Reimer, 1895 ; récit du voyage de 1893-1894, lu sur sa numérisation."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1894,
+              "label": "Avant la fin du XIXe siècle, selon Götzen"
+            },
+            "statement": "On parle alors, selon le comte von Götzen, de noms propres à chaque petit pays, comme les Wakiga du Lukiga ou les Wakissaka du Kissaka, pour désigner les cultivateurs installés de longue date que les Wahuma appellent Wahutu.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Durch Afrika von Ost nach West",
+                "author": "Gustav Adolf von Götzen",
+                "year": 1895,
+                "url": "https://archive.org/details/durchafrikavones00gtze",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 187",
+                "notes": "Berlin, Dietrich Reimer, 1895 ; récit du voyage de 1893-1894, lu sur sa numérisation."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "Rapporté en 1895"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wahutu voudrait dire « serfs » : c'est le sens que lui donneraient les Wahuma, les éleveurs qui dominent le pays, selon le comte von Götzen.",
+            "hypothesisGroup": "sens premier du nom Hutu",
+            "sources": [
+              {
+                "title": "Durch Afrika von Ost nach West",
+                "author": "Gustav Adolf von Götzen",
+                "year": 1895,
+                "url": "https://archive.org/details/durchafrikavones00gtze",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 161",
+                "notes": "Berlin, Dietrich Reimer, 1895 ; récit du voyage de 1893-1894, lu sur sa numérisation."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1903,
+              "to": 1903,
+              "label": "Proposée en 1903"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hutu voudrait dire « serf, esclave », comme l'indiqueraient les mots umuhutu ou umwiru, selon le missionnaire Jean-Michel van der Burgt, qui en fait le nom des « vaincus » du Burundi.",
+            "hypothesisGroup": "sens premier du nom Hutu",
+            "sources": [
+              {
+                "title": "Un grand peuple de l'Afrique équatoriale : éléments d'une monographie sur l'Urundi et les Warundi",
+                "author": "Jean-Michel van der Burgt",
+                "year": 1903,
+                "url": "https://archive.org/details/ungrandpeuplede00burggoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Bois-le-Duc, Société « L'illustration catholique », 1903 ; lu sur sa numérisation, articles « Aborigène » et « Abeille » de ce dictionnaire, dont nous n'avons pas pu lire la pagination."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "Proposée en 1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Hutu aurait d'abord désigné une personne subordonnée, ou la personne qui suit un homme plus puissant, avant de nommer la masse des gens ordinaires, selon le rapport de Human Rights Watch sur le génocide de 1994.",
+            "hypothesisGroup": "sens premier du nom Hutu",
+            "sources": [
+              {
+                "title": "Leave None to Tell the Story: Genocide in Rwanda, chapitre « History »",
+                "author": "Alison Des Forges pour Human Rights Watch",
+                "year": 1999,
+                "url": "https://www.hrw.org/reports/1999/rwanda/Geno1-3-09.htm",
+                "tier": "referenced",
+                "source_kind": "ngo",
+                "notes": "Lu en ligne ; la page ne nomme pas son auteur, que le rapport publié désigne."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wahutu",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "swa",
+        "namedBy": null,
+        "shortLine": "La forme du nom avec le préfixe swahili wa-, celle des voyageurs et missionnaires.",
+        "usedIn": ["swa", "deu"],
+        "periodLabel": "Écrit dès 1894 ; vieilli",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1894,
+              "to": 1895,
+              "label": "1894, publié en 1895"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wahutu est la forme qu'emploie le comte von Götzen pour la population des campagnes du Rwanda, un peuple bantou installé de longue date. Le préfixe wa- marque en swahili les habitants d'un pays. C'est la plus ancienne trace de cette forme que le projet connaît.",
+            "formAsWritten": "Wahutu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Durch Afrika von Ost nach West",
+                "author": "Gustav Adolf von Götzen",
+                "year": 1895,
+                "url": "https://archive.org/details/durchafrikavones00gtze",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 161 et 187",
+                "notes": "Berlin, Dietrich Reimer, 1895 ; récit du voyage de 1893-1894, lu sur sa numérisation."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

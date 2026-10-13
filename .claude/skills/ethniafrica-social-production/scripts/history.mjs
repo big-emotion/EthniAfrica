@@ -25,6 +25,7 @@ import {
   sep,
   dirname,
   extname,
+  basename,
 } from "node:path";
 import { pathToFileURL } from "node:url";
 import { inspectPackage } from "./package.mjs";
@@ -150,7 +151,10 @@ export function capturePublication(root, state, network) {
     recordedAt: new Date().toISOString(),
     verification:
       "Reported as the exact approved package; not an automatic check of the social platform",
-    cards: copy.cards,
+    // A video package has on-screen text instead of cards, and its
+    // description comes from the network adaptation, not from the media.
+    cards: copy.cards ?? [],
+    ...(copy.screen && { screen: copy.screen }),
     copy: {
       caption: adaptation.caption,
       firstComment: adaptation.firstComment,
@@ -158,12 +162,83 @@ export function capturePublication(root, state, network) {
       accessibility: {
         route: adaptation.capability.altRoute,
         instruction: adaptation.capability.altInstruction,
-        alternativeText: media.map((m) => m.alt),
+        alternativeText: copy.screen
+          ? copy.networks[config.networks.indexOf(adaptation)].alternativeText
+          : media.map((m) => m.alt),
+        ...(copy.screen && {
+          autoCaptions: adaptation.capability.autoCaptions,
+        }),
       },
     },
     sources: dossier.sources,
     claims: dossier.claims,
     images: dossier.images,
+    media,
+    evidence,
+  };
+}
+
+// For a post published before approval 3: binds the operator's attestation to
+// the exact files, without implying a verified package or a retrospective approval.
+export function captureHistoricalPublication(root, state, event) {
+  const { work } = paths(root, state.id);
+  const readJSON = (file) =>
+    JSON.parse(readFileSync(safe(root, need(file, "Evidence file")), "utf8"));
+  const attestation = readJSON(event.attestationFile);
+  if (!attestation.attestation?.networks?.includes(event.network))
+    fail("The media attestation does not cover this network");
+  if (!Array.isArray(event.media) || !event.media.length)
+    fail("Published media are required");
+  const attested = attestation.deliveredMedia ?? [];
+  if (
+    attested.length !== event.media.length ||
+    event.media.some(
+      (file, i) =>
+        attested[i].file !== file ||
+        attested[i].sha256 !== sha(readFileSync(safe(root, file)))
+    )
+  )
+    fail("Published media differ from the attested files");
+  const copy = readJSON(event.copyFile);
+  if (copy.cards?.length !== event.media.length)
+    fail("Card copy must match the published media");
+  if (event.firstComment !== null && typeof event.firstComment !== "string")
+    fail("First comment must be text or explicitly null");
+  const destination = join(work, ".published");
+  const media = event.media.map((file, i) => ({
+    file: basename(file),
+    alt: copy.cards[i].alt,
+    ...retainFile(root, file, destination, "media"),
+  }));
+  const dossier = state.research ? readJSON(state.research.file) : {};
+  const evidence = [
+    ...new Set([
+      event.attestationFile,
+      event.copyFile,
+      ...(dossier.sources ?? []).map((s) => s.recordFile),
+      ...(dossier.images ?? []).map((i) => i.rightsEvidence),
+    ]),
+  ].map((file) => retainFile(root, file, destination, "evidence"));
+  return {
+    historical: true,
+    recordedAt: new Date().toISOString(),
+    verification:
+      "Historical reconciliation: approval 3 was not recorded before publication. Media attested by the operator; not an automatic check of the social platform.",
+    cards: copy.cards,
+    copy: {
+      caption: need(event.caption, "Observed caption"),
+      firstComment: event.firstComment,
+      link: null,
+      accessibility: {
+        route: null,
+        instruction: null,
+        alternativeText: media.map((m) => m.alt),
+        published: "not verified",
+      },
+    },
+    sources: dossier.sources ?? [],
+    claims: dossier.claims ?? [],
+    images: dossier.images ?? [],
     media,
     evidence,
   };
@@ -225,7 +300,7 @@ function historyText(history) {
   const publications = history.publications
     .map((p) => {
       const s = p.snapshot;
-      return `## ${p.network} — ${p.publishedAt}\n\nURL: ${p.url ?? "Unknown (reported publication)"}\n\nEvidence: ${p.evidence}\n\n### Published cards\n\n${s.cards.map((c, i) => `${i + 1}. ${c.text}\n\nAlternative text: ${c.alt}`).join("\n\n")}\n\n### Caption\n\n${s.copy.caption}\n\nFirst comment: ${s.copy.firstComment ?? "None"}\n\n### Final exports\n\n${s.media.map((m) => `- [${m.file}](${m.retained})`).join("\n")}`;
+      return `## ${p.network} — ${p.publishedAt}\n\nURL: ${p.url ?? "Unknown (reported publication)"}\n\nEvidence: ${p.evidence}${s.historical ? `\n\n${s.verification}` : ""}\n\n${s.screen ? `### On-screen text\n\n${s.screen.map((line) => `- ${line.replaceAll("\n", " ")}`).join("\n")}` : `### Published cards\n\n${s.cards.map((c, i) => `${i + 1}. ${c.text}\n\nAlternative text: ${c.alt}`).join("\n\n")}`}\n\n### Caption\n\n${s.copy.caption}\n\nFirst comment: ${s.copy.firstComment ?? "None"}\n\n### Final exports\n\n${s.media.map((m) => `- [${m.file}](${m.retained})`).join("\n")}`;
     })
     .join("\n\n");
   // A single embedded record keeps retrieval possible without a permanent approval log.

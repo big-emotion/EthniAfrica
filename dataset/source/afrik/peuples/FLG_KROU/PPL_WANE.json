@@ -133,5 +133,137 @@
         "source_kind": "encyclopedia"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Wané désigne un petit peuple de langue krou du sud-ouest de la Côte d'Ivoire, autour de San-Pédro, qui se nomme lui-même Wané ; on l'écrit aussi Hwane ou Ngwané. Il est écrit Houané en 1904. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Wané",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "hwa",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple krou ; écrit Houané dès 1904.",
+        "periodLabel": "Écrit dès 1904 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Wané désigne un petit peuple du sud-ouest de la Côte d'Ivoire et sa langue krou. Les catalogues de langues l'écrivent aussi Wane, Hwane ou Ngwané, selon Glottolog. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Wané (wane1242)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/wane1242",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle recense les formes Wane, Wané, Hwane et Ngwané."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wané apparaît, écrit Houané, et aussi Hwĩne ou Hwãne, dans les vocabulaires de l'administrateur colonial Maurice Delafosse. Il désigne les habitants de la région de Victory, sur la côte, entre les Néyo et l'embouchure de la Nonoua ; Delafosse les dit appelés aussi Bodo et les range parmi les Bakoué. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Houané",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "administrateur colonial et linguiste, auteur des vocabulaires"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 70 et p. 74",
+                "notes": "Paris, Ernest Leroux, 1904. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Hwane",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "hwa",
+        "namedBy": null,
+        "shortLine": "Une autre façon d'écrire le nom Wané.",
+        "periodLabel": "En usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Hwane est une autre façon d'écrire le nom Wané, que l'on trouve dans les catalogues de langues, selon Glottolog.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Wané (wane1242)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/wane1242",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle recense les formes Wane, Wané, Hwane et Ngwané."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ngwané",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "hwa",
+        "namedBy": null,
+        "shortLine": "Une autre façon d'écrire le nom Wané.",
+        "periodLabel": "En usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ngwané est une autre façon d'écrire le nom Wané, que l'on trouve dans les catalogues de langues, selon Glottolog.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Wané (wane1242)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/wane1242",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle recense les formes Wane, Wané, Hwane et Ngwané."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

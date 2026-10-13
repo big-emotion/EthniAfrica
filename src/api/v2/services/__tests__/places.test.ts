@@ -66,8 +66,12 @@ describe("place service", () => {
         data: [{ id: "PPL_BAOULE", name_main: "Baoulé" }],
         error: null,
       }),
+      afrik_place_countries: query({
+        data: [{ country_id: "CIV", position: 0 }],
+        error: null,
+      }),
       afrik_countries: query({
-        data: { id: "CIV", name_fr: "Côte d'Ivoire" },
+        data: [{ id: "CIV", name_fr: "Côte d'Ivoire" }],
         error: null,
       }),
     });
@@ -80,12 +84,53 @@ describe("place service", () => {
       nameMain: "Yamoussoukro",
       summary: "Capitale politique de la Côte d'Ivoire.",
       country: { id: "CIV", name: "Côte d'Ivoire" },
+      countries: [{ id: "CIV", name: "Côte d'Ivoire" }],
       associatedPeoples: [
         { id: "PPL_BAOULE", name: "Baoulé", relation: "Le village est akouè." },
       ],
       content: { gaps: [], sources: [] },
       nameHistory,
     });
+  });
+
+  // A region has no single country: `country` is null and `countries` keeps
+  // the fiche's order, whatever order the database returns.
+  // @req REQ-193
+  it("reads a region with every country it spans, in the fiche's order", async () => {
+    routeTables({
+      afrik_places: query({
+        data: {
+          ...placeRow,
+          id: "LOC_SAHARA",
+          place_type: "region",
+          country_id: null,
+        },
+        error: null,
+      }),
+      afrik_place_peoples: query({ data: [], error: null }),
+      afrik_place_countries: query({
+        data: [
+          { country_id: "NER", position: 1 },
+          { country_id: "DZA", position: 0 },
+        ],
+        error: null,
+      }),
+      afrik_countries: query({
+        data: [
+          { id: "NER", name_fr: "Niger" },
+          { id: "DZA", name_fr: "Algérie" },
+        ],
+        error: null,
+      }),
+    });
+
+    const place = await getPlaceById("LOC_SAHARA");
+
+    expect(place.country).toBeNull();
+    expect(place.countries).toEqual([
+      { id: "DZA", name: "Algérie" },
+      { id: "NER", name: "Niger" },
+    ]);
   });
 
   // @req REQ-196
@@ -113,7 +158,15 @@ describe("place service", () => {
       error: null,
       count: 3,
     });
-    routeTables({ afrik_places: places });
+    routeTables({
+      afrik_places: places,
+      afrik_place_countries: query({
+        data: [
+          { place_id: "LOC_YAMOUSSOUKRO", country_id: "CIV", position: 0 },
+        ],
+        error: null,
+      }),
+    });
 
     const page = await listPlaces(2, 1);
 
@@ -125,6 +178,7 @@ describe("place service", () => {
           placeType: "ville",
           nameMain: "Yamoussoukro",
           countryId: "CIV",
+          countryIds: ["CIV"],
         },
       ],
     });

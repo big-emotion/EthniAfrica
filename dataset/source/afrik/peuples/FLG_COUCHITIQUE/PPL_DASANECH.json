@@ -167,5 +167,323 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Daasanach désigne un peuple du sud-ouest de l'Éthiopie, autour du delta de l'Omo et au nord du lac Turkana, aussi présent au Kenya et au Soudan du Sud. C'est le nom que ce peuple se donne lui-même. D'autres noms existent : Geleb, que lui donnent la plupart de ses voisins en Éthiopie, Merille et Shangilla au Kenya, Reshiat et Rusia chez les voyageurs de la fin du XIXe siècle. Les sources ne disent pas d'où viennent la plupart de ces noms ; ce qu'elles en disent est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Daasanach",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "dsh",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; nous ne savons pas quand il a été écrit pour la première fois.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Daasanach est celui que ce peuple se donne lui-même ; il appelle sa langue ʔaf Daasanac, « la bouche des Daasanach », c'est-à-dire leur langue, selon le linguiste Hans-Jürgen Sasse. Les sources que nous avons lues n'expliquent pas l'origine du nom, et nous ne savons pas quand il a été écrit pour la première fois.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dasenech, dans The Non-Semitic Languages of Ethiopia",
+                "author": "Hans-Jürgen Sasse",
+                "year": 1976,
+                "url": "https://archive.org/details/rosettaproject_dsh_detail-1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 196",
+                "notes": "Chapitre 9 de l'ouvrage dirigé par M. Lionel Bender, East Lansing, African Studies Center, Michigan State University, 1976. Lu dans une copie non officielle numérisée par le Rosetta Project sur archive.org le 11 octobre 2026. Les informateurs de l'auteur étaient des Daasanach d'Éthiopie, rencontrés en 1972."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Geleb",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "La plupart des peuples voisins, en Éthiopie",
+        "shortLine": "Le nom que lui donnent la plupart de ses voisins en Éthiopie.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Geleb, avec ses variantes Galab, Geleba ou Gelubba, est celui que la plupart des voisins des Daasanach leur donnent, comme les Amhara, les Oromo, les Konso et les Arbore, selon Hans-Jürgen Sasse. L'anthropologue Toru Sagawa note aussi qu'on les appelle Geleb en Éthiopie.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dasenech, dans The Non-Semitic Languages of Ethiopia",
+                "author": "Hans-Jürgen Sasse",
+                "year": 1976,
+                "url": "https://archive.org/details/rosettaproject_dsh_detail-1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 196",
+                "notes": "Chapitre 9 de l'ouvrage dirigé par M. Lionel Bender, East Lansing, African Studies Center, Michigan State University, 1976. Lu dans une copie non officielle numérisée par le Rosetta Project sur archive.org le 11 octobre 2026. Les informateurs de l'auteur étaient des Daasanach d'Éthiopie, rencontrés en 1972."
+              },
+              {
+                "title": "Daasanach",
+                "author": "Toru Sagawa",
+                "year": null,
+                "url": "https://www.mursi.org/neighbours/daasanach",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page du site Mursi Online, rédigée par l'anthropologue Toru Sagawa, de l'université Keio ; lue le 11 octobre 2026. La page ne porte pas de date."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Merille",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom employé au Kenya ; les sources ne s'accordent pas sur ce qu'il désigne exactement.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Merille, que Toru Sagawa écrit Merile, sert au Kenya pour désigner les Daasanach, selon cet anthropologue.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Daasanach",
+                "author": "Toru Sagawa",
+                "year": null,
+                "url": "https://www.mursi.org/neighbours/daasanach",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page du site Mursi Online, rédigée par l'anthropologue Toru Sagawa, de l'université Keio ; lue le 11 octobre 2026. La page ne porte pas de date."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1972,
+              "to": 1976,
+              "label": "Enquête de 1972, publiée en 1976"
+            },
+            "era": "modern",
+            "statement": "Le nom Marille serait employé par les Turkana, selon Hans-Jürgen Sasse. Ses propres informateurs daasanach appelaient marilli les Arbore, alors que ceux de l'anthropologue Herbert Lewis y voyaient une variété de la langue daasanach.",
+            "sources": [
+              {
+                "title": "Dasenech, dans The Non-Semitic Languages of Ethiopia",
+                "author": "Hans-Jürgen Sasse",
+                "year": 1976,
+                "url": "https://archive.org/details/rosettaproject_dsh_detail-1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 196",
+                "notes": "Chapitre 9 de l'ouvrage dirigé par M. Lionel Bender, East Lansing, African Studies Center, Michigan State University, 1976. Lu dans une copie non officielle numérisée par le Rosetta Project sur archive.org le 11 octobre 2026. Les informateurs de l'auteur étaient des Daasanach d'Éthiopie, rencontrés en 1972."
+              }
+            ],
+            "formAsWritten": "Marille"
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1894,
+              "label": "Voyage de 1888, livre de 1894"
+            },
+            "era": "polity",
+            "statement": "Le nom Marle figure chez Ludwig von Höhnel, compagnon du comte Samuel Teleki, pour un peuple du nord du lac Stéphanie qui vend aux Reshiat des perles de quartz rouge. Il range leur langue parmi les langues nilotiques. Les sources que nous avons lues ne disent pas s'il s'agit du même nom que Merille.",
+            "sources": [
+              {
+                "title": "Discovery of Lakes Rudolf and Stefanie, vol. II",
+                "author": "Ludwig von Höhnel",
+                "year": 1894,
+                "url": "https://archive.org/details/discoveryoflakes02hhne",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 167-169",
+                "notes": "Londres, Longmans, Green, 1894. Récit de l'expédition du comte Samuel Teleki ; lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026."
+              }
+            ],
+            "formAsWritten": "Marle"
+          }
+        ]
+      },
+      {
+        "nameText": "Reshiat",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que donnent aux Daasanach les voyageurs européens à partir de 1888.",
+        "periodLabel": "De 1888 au début du XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1888,
+              "to": 1894,
+              "label": "Voyage de 1888, livre de 1894"
+            },
+            "era": "polity",
+            "statement": "Le nom Reshiat apparaît chez Ludwig von Höhnel, qui accompagne l'expédition du comte Samuel Teleki : au pied du mont Nyiro, en 1888, on leur décrit la route du pays des Reshiat, au nord du lac Rudolf, aujourd'hui lac Turkana. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Discovery of Lakes Rudolf and Stefanie, vol. II",
+                "author": "Ludwig von Höhnel",
+                "year": 1894,
+                "url": "https://archive.org/details/discoveryoflakes02hhne",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 75-76",
+                "notes": "Londres, Longmans, Green, 1894. Récit de l'expédition du comte Samuel Teleki ; lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026. C'est une traduction anglaise abrégée de l'édition allemande de 1892, que nous n'avons pas lue."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1894,
+              "label": "Voyage de 1888, livre de 1894"
+            },
+            "era": "polity",
+            "statement": "Le nom Reshiat s'écrit aussi Rissiat chez Ludwig von Höhnel, qui situe ce peuple au bout nord du lac.",
+            "formAsWritten": "Rissiat",
+            "sources": [
+              {
+                "title": "Discovery of Lakes Rudolf and Stefanie, vol. II",
+                "author": "Ludwig von Höhnel",
+                "year": 1894,
+                "url": "https://archive.org/details/discoveryoflakes02hhne",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 138",
+                "notes": "Londres, Longmans, Green, 1894. Récit de l'expédition du comte Samuel Teleki ; lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1981,
+              "to": null,
+              "label": "Texte publié en 1981, revu ensuite"
+            },
+            "era": "modern",
+            "statement": "Le nom Reshiat désigne, chez les premiers voyageurs, le peuple qu'on appelle aujourd'hui Daasanach, selon l'anthropologue David Turton. Il remarque que ces voyageurs donnaient souvent des noms différents au même groupe.",
+            "sources": [
+              {
+                "title": "Exploration in the Lower Omo Valley of Southwestern Ethiopia between 1890 and 1910",
+                "author": "David Turton",
+                "year": null,
+                "url": "https://www.mursi.org/pdf/exploration-in-the-lower-omo-valley.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1-2",
+                "notes": "Version révisée d'une communication publiée en 1981 dans les actes du congrès L'Africa ai tempi di Daniele Comboni, à Rome ; la version en ligne cite des travaux de 1998. Lue sur le site Mursi Online le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Rusia",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme qu'Arthur Donaldson Smith jugeait plus proche de la prononciation locale, en 1895.",
+        "periodLabel": "Fin du XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1895,
+              "to": 1897,
+              "label": "Voyage de 1895, livre de 1897"
+            },
+            "era": "polity",
+            "statement": "Le nom Rusia apparaît chez le voyageur américain Arthur Donaldson Smith, arrivé au lac Rudolf en juillet 1895 : ceux que le comte Teleki appelle Reshiat, écrit-il, vivent dans un pays qu'il vaut mieux appeler Rusia, comme ses habitants le prononcent eux-mêmes. C'est la plus ancienne trace de cette forme que le projet connaît.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Through Unknown African Countries : the First Expedition from Somaliland to Lake Lamu",
+                "author": "Arthur Donaldson Smith",
+                "year": 1897,
+                "url": "https://archive.org/details/throughunknowna00smit",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 291, note 1",
+                "notes": "Londres et New York, Edward Arnold, 1897. Lu dans l'exemplaire numérisé sur archive.org le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Shangilla",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom employé au Kenya pour les Daasanach comme pour d'autres peuples, avec un sens méprisant.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Shangilla sert aussi au Kenya pour désigner les Daasanach, selon l'anthropologue Toru Sagawa.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Daasanach",
+                "author": "Toru Sagawa",
+                "year": null,
+                "url": "https://www.mursi.org/neighbours/daasanach",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page du site Mursi Online, rédigée par l'anthropologue Toru Sagawa, de l'université Keio ; lue le 11 octobre 2026. La page ne porte pas de date."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1974,
+              "label": "Surtout avant 1974"
+            },
+            "statement": "Le nom Shangilla, écrit Shängila, est très employé dans l'ouest et le sud-ouest de l'Éthiopie avec un sens méprisant, « noir », selon l'anthropologue Jon Abbink, qui en parle à propos des Me'en.",
+            "sources": [
+              {
+                "title": "Tribal Formation on the Ethiopian Fringe : Toward a History of the 'Tishana'",
+                "author": "Jon Abbink",
+                "year": 1990,
+                "url": "https://hdl.handle.net/1887/9022",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "Northeast African Studies, vol. 12, n° 1, 1990, p. 21-42. Lu dans le dépôt en libre accès de l'université de Leyde le 11 octobre 2026. Enquête de terrain de l'auteur chez les Me'en en 1986 et en 1988."
+              }
+            ],
+            "formAsWritten": "Shängila"
+          }
+        ]
+      }
+    ]
   }
 }

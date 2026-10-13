@@ -115,5 +115,200 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Boliwa est une graphie que les sources lues n'emploient pas. Il renvoie au peuple appelé Bole ou Bolewa, du nord-est du Nigeria, autour de Fika, qui se nomme lui-même anim Pikka, « ceux de Fika ». D'où vient le nom Bole, on ne le sait pas avec certitude ; nous présentons plus bas les explications proposées.",
+    "names": [
+      {
+        "nameText": "Anim Pikka",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bol",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Bole : « ceux de Fika ».",
+        "periodLabel": "Écrit Pika dès 1854 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom anim Pikka, ou biya Pikka, « ceux de Fika », est celui que se donnent les Bole ; ils appellent leur langue bo Pikka, « la langue de Fika ». Fika est la capitale traditionnelle de ce peuple, selon le projet de recherche de Russell G. Schuh.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bole, Yobe Languages Research Project",
+                "author": "Russell G. Schuh",
+                "year": null,
+                "url": "https://aflang.humanities.ucla.edu/language-materials/chadic-languages/yobe/bole/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page du projet de recherche sur les langues de l'État de Yobe, dirigé par Russell G. Schuh à l'université de Californie à Los Angeles, avec Alhaji Maina Gimba. Page non datée, lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom anim Pikka apparaît sous une forme proche, Pī́ka, dans la Polyglotta Africana de Sigismund Koelle, publiée en 1854 : c'est là le nom de la langue, que Koelle écrit aussi ʿPī́ka ou Fī́ka et situe au sud-ouest du Bornou. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite."
+              },
+              {
+                "title": "Bole, Yobe Languages Research Project",
+                "author": "Russell G. Schuh",
+                "year": null,
+                "url": "https://aflang.humanities.ucla.edu/language-materials/chadic-languages/yobe/bole/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page du projet de recherche sur les langues de l'État de Yobe, dirigé par Russell G. Schuh à l'université de Californie à Los Angeles, avec Alhaji Maina Gimba. Page non datée, lue le 11 octobre 2026. Elle cite la Polyglotta Africana de Sigismund Koelle (Londres, 1854), où la langue figure sous le nom Pika (VII.B.1)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bole",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom courant du peuple et de sa langue ; son origine reste incertaine.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bole désigne un peuple et sa langue des États de Yobe et de Gombe, au nord-est du Nigeria. Ce n'est pas le nom que ce peuple se donne, et son origine est incertaine, selon le projet de recherche de Russell G. Schuh.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bole, Yobe Languages Research Project",
+                "author": "Russell G. Schuh",
+                "year": null,
+                "url": "https://aflang.humanities.ucla.edu/language-materials/chadic-languages/yobe/bole/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page du projet de recherche sur les langues de l'État de Yobe, dirigé par Russell G. Schuh à l'université de Californie à Los Angeles, avec Alhaji Maina Gimba. Page non datée, lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Bole viendrait de la question bole « bo le ? », qui peut vouloir dire « pourquoi ? » ou « quelle langue ? » : des personnes qui ne parlaient pas la langue l'auraient entendue souvent et prise pour un nom de peuple, selon une explication que rapporte le projet de recherche de Russell G. Schuh.",
+            "hypothesisGroup": "origine du nom Bole",
+            "sources": [
+              {
+                "title": "Bole, Yobe Languages Research Project",
+                "author": "Russell G. Schuh",
+                "year": null,
+                "url": "https://aflang.humanities.ucla.edu/language-materials/chadic-languages/yobe/bole/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page du projet de recherche sur les langues de l'État de Yobe, dirigé par Russell G. Schuh à l'université de Californie à Los Angeles, avec Alhaji Maina Gimba. Page non datée, lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "Proposée en 1931"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bole contiendrait une racine bola, « pénis » ou « mâle », et voudrait dire « les hommes », selon C. K. Meek, dans un livre paru en 1931. Russell G. Schuh, qui cite cette explication, la rejette fermement : Bole n'est pas le nom que ce peuple se donne.",
+            "hypothesisGroup": "origine du nom Bole",
+            "sources": [
+              {
+                "title": "Bole, Yobe Languages Research Project",
+                "author": "Russell G. Schuh",
+                "year": null,
+                "url": "https://aflang.humanities.ucla.edu/language-materials/chadic-languages/yobe/bole/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page du projet de recherche sur les langues de l'État de Yobe, dirigé par Russell G. Schuh à l'université de Californie à Los Angeles, avec Alhaji Maina Gimba. Page non datée, lue le 11 octobre 2026. Elle cite C. K. Meek, Tribal Studies in Northern Nigeria, vol. 2, Londres, Kegan Paul, 1931, p. 288 ; nous n'avons pas lu ce livre nous-mêmes."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bolewa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit dès 1919 ; le haoussa dit Bolawa pour ce peuple.",
+        "periodLabel": "Écrit dès 1919 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bolewa est proche de Bolawa, le pluriel que le haoussa donne aux Bole ; le haoussa appelle leur langue bolanci, selon le projet de recherche de Russell G. Schuh.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bole, Yobe Languages Research Project",
+                "author": "Russell G. Schuh",
+                "year": null,
+                "url": "https://aflang.humanities.ucla.edu/language-materials/chadic-languages/yobe/bole/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page du projet de recherche sur les langues de l'État de Yobe, dirigé par Russell G. Schuh à l'université de Californie à Los Angeles, avec Alhaji Maina Gimba. Page non datée, lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bolewa apparaît par écrit dans les notes sur les peuples du nord du Nigeria publiées en 1919, compilées à partir de rapports officiels. Les Bolewa y ont leur centre dans l'État de Fika, et le récit de leur histoire est tiré des chroniques de Fika. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Bolewa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notes on the Tribes, Provinces, Emirates and States of the Northern Provinces of Nigeria",
+                "author": "O. Temple, sous la direction de C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 62-63",
+                "notes": "Le Cap, 1919, compilé à partir de rapports officiels, lu dans l'exemplaire numérisé d'Internet Archive. Pour les Bolewa, le livre cite des rapports de plusieurs administrateurs de Bornu et de Gombe."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

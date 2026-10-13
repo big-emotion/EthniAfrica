@@ -122,5 +122,63 @@
   "patronymicChainDepth": {
     "generations": 3,
     "sourceRefs": ["cultural-atlas-ethiopian-naming"]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kebreab est un nom personnel éthiopien. Il sert de second nom aux enfants d'un homme qui le porte, sans devenir un nom de famille : il change à chaque génération. Nous ne connaissons pas sa plus ancienne trace écrite. Nous présentons plus bas l'explication de son sens que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Kebreab",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel éthiopien, porté en second par les enfants d'un Kebreab.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kebreab est un nom personnel. En Éthiopie, une personne porte son propre nom suivi du nom personnel de son père : il n'y a pas de nom de famille héréditaire. Chez l'enfant d'un Kebreab, Kebreab est donc le nom du père, et il ne passe pas aux petits-enfants.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ethiopian Culture — Naming",
+                "author": "Nina Evason",
+                "year": 2018,
+                "url": "https://culturalatlas.sbs.com.au/ethiopian-culture/ethiopian-culture-naming",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Cultural Atlas, publié par SBS, le radiodiffuseur public australien ; notice de Nina Evason, 2018, lue le 11 octobre 2026. Elle dit qu'en Éthiopie un nom se compose du nom personnel suivi du nom personnel du père, et qu'il n'y a pas de nom de famille."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Lecture d'après un dictionnaire de 1987"
+            },
+            "statement": "Le nom Kebreab réunirait deux mots guèzes, kabr, « honneur, gloire », et ab, « père » : il voudrait dire « gloire du père ». C'est la lecture que nous faisons à partir du dictionnaire de Wolf Leslau, qui donne le sens des deux mots mais ne parle pas du nom.",
+            "hypothesisGroup": "origine du nom Kebreab",
+            "sources": [
+              {
+                "title": "Comparative Dictionary of Geʿez (Classical Ethiopic)",
+                "author": "Wolf Leslau",
+                "year": 1987,
+                "url": "https://archive.org/details/leslau-comparative-dictionary-of-geez-1987",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2 et p. 274",
+                "notes": "Wiesbaden, Otto Harrassowitz, 1987. Lu le 11 octobre 2026 dans une copie non officielle déposée sur Internet Archive par un particulier. Page 2 : ab, « father, forefather, ancestor » ; page 274 : kabr, « honor, glory, reverence, prestige »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

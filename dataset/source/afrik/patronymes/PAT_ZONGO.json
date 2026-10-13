@@ -103,5 +103,145 @@
       "fieldPath": "bearers",
       "reason": "La monographie nomme Zongo Kagnondo comme chef d'enclos à Dakola sans fournir de statut vital contemporain vérifiable ; les recherches biographiques n'ont pas établi de porteur décédé pertinent pour l'histoire du nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Zongo est un nom de famille mossi, au Burkina Faso, transmis par les pères. Un nom de famille lyélé s'écrit de la même façon ; il est distinct. Son sens est discuté ; nous présentons plus bas ce qu'en disent les sources.",
+    "names": [
+      {
+        "nameText": "Zongo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille mossi, transmis par les pères, au Burkina Faso.",
+        "periodLabel": "Écrit dès 1971 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Zongo est un nom de famille mossi, que l'on reçoit de son père. Il désigne un lignage, c'est-à-dire les descendants d'un même ancêtre par les hommes. Son sens est discuté ; nous le présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Activités agricoles et changements sociaux dans l'Ouest-Mossi",
+                "author": "Jean-Marie Kohler",
+                "year": 1971,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_2/memoires/04961.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 33",
+                "notes": "Mémoires ORSTOM n° 46, 1971, d'après des enquêtes faites à Dakola de mai 1965 à fin 1968. Lu dans le PDF intégral le 11 octobre 2026. Page 33 : la famille mossi est patrilinéaire ; la note 1 donne Zongo comme le patronyme d'un patrilignage de Dakola."
+              },
+              {
+                "title": "Noms des Kasena",
+                "author": "Urs et Idda Niggli",
+                "year": 2008,
+                "url": "https://sil-burkina.org/sites/default/files/Noms%20des%20Kassena.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 42",
+                "notes": "Société internationale de linguistique, Ouagadougou, 2008. Lu dans le PDF intégral le 11 octobre 2026. La section 6.4, « Exemples de noms de famille mossi », cite Zongo et Yaméogo, sans en donner le sens."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Proposé en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Zongo voudrait dire « respect voué à tout le monde sans distinction », selon le projet de répertoire des patronymes du Burkina Faso.",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 232-233",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire ». Lu le 11 octobre 2026 sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Notice ZONGO : « Ce patronyme signifie « Respect voué à tout le monde sans distinction ». Ils sont considérés comme les « maitres de la pluie », ou « la case à deux portes », « vestibule », ou encore « l'antichambre du chef ». » La notice suivante traite à part ZONGO/BAZONGO, « patronyme lyélé »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Décrit en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Zongo est associé, dans ce même projet de répertoire, à d'autres images : les Zongo y sont « les maîtres de la pluie », « la case à deux portes », « le vestibule » ou « l'antichambre du chef ». Le texte ne dit pas s'il s'agit de sens du mot ou de rôles de ceux qui le portent.",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 232-233",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire ». Lu le 11 octobre 2026 sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Notice ZONGO : « Ce patronyme signifie « Respect voué à tout le monde sans distinction ». Ils sont considérés comme les « maitres de la pluie », ou « la case à deux portes », « vestibule », ou encore « l'antichambre du chef ». » La notice suivante traite à part ZONGO/BAZONGO, « patronyme lyélé »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Décrit en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Zongo, ou Bazongo, est aussi un nom de famille lyélé, que le projet de répertoire présente à part, avec ses propres alliés à plaisanterie.",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 232-233",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire ». Lu le 11 octobre 2026 sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Notice ZONGO : « Ce patronyme signifie « Respect voué à tout le monde sans distinction ». Ils sont considérés comme les « maitres de la pluie », ou « la case à deux portes », « vestibule », ou encore « l'antichambre du chef ». » La notice suivante traite à part ZONGO/BAZONGO, « patronyme lyélé »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1971,
+              "to": 1971,
+              "label": "1971"
+            },
+            "era": "modern",
+            "statement": "Le nom Zongo apparaît par écrit chez Jean-Marie Kohler, qui l'a relevé à Dakola entre 1965 et 1968 : c'est le nom de famille du lignage des tambourinaires du chef, qui forme le quartier de Loungo. Kohler compte ce lignage parmi les plus anciens du village. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est porté.",
+            "formAsWritten": "Zongo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Jean-Marie Kohler",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Activités agricoles et changements sociaux dans l'Ouest-Mossi",
+                "author": "Jean-Marie Kohler",
+                "year": 1971,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_2/memoires/04961.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 33, note 1 ; p. 158",
+                "notes": "Mémoires ORSTOM n° 46, 1971, d'après des enquêtes faites à Dakola de mai 1965 à fin 1968. Lu dans le PDF intégral le 11 octobre 2026. Page 33, note 1 : « Le patrilignage des tambourinaires du chef de Dakola, dont le patronyme est Zongo, forme le quartier Loungo de Dakola. » Page 158 : « Les lignages les plus anciens à Dakola, ceux de Zongo Somtanaba et Guiguemdé Songa »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

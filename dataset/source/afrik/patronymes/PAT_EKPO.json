@@ -94,5 +94,88 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les sources consultées ne permettent pas de déterminer si Ekpo désigne historiquement un lignage, un clan ou une autre unité sociale."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ekpo est un nom de personne du sud-est du Nigeria. On ne sait pas avec certitude ce qu'il veut dire, ni depuis quand il sert de nom de famille. Un mot ibibio de même forme désigne l'esprit des ancêtres ; les sources lues ne relient pas le nom à ce mot.",
+    "names": [
+      {
+        "nameText": "Ekpo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne du sud-est du Nigeria, écrit dès 1908 ; son sens reste inconnu.",
+        "periodLabel": "Écrit dès 1908 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1972,
+              "to": 1972,
+              "label": "Décrit en 1972"
+            },
+            "era": "modern",
+            "statement": "Le nom Ekpo a la même forme qu'un mot ibibio, ekpo, que Elaine Marlowe Kaufman traduit « fantôme, esprit des ancêtres » et qui désigne aussi une société dont les hommes sortent masqués. Les sources lues ne disent pas si le nom de personne vient de ce mot, ni ce qu'il veut dire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ibibio Dictionary. Final Report",
+                "author": "Elaine Marlowe Kaufman",
+                "year": 1972,
+                "url": "https://archive.org/details/ERIC_ED067960",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 143 (p. 160 du fichier)",
+                "notes": "Stanford University, rapport pour l'Office of Education des États-Unis, juin 1972. Lu dans la numérisation d'Internet Archive le 13 octobre 2026. Entrée « ekpó » : « phantom, ghost of ancestors », aujourd'hui société dont les hommes sortent masqués à certaines époques de l'année."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Publié en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ekpo est aussi celui d'une conteuse, Akon Ekpo, « une femme de Nsan », dont Percy Amaury Talbot publie le conte des filles-herbes dans son livre de 1912.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "In the Shadow of the Bush",
+                "author": "P. Amaury Talbot",
+                "year": 1912,
+                "url": "https://archive.org/details/inshadowofbush00perc",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 136",
+                "notes": "Londres, William Heinemann, 1912 ; exemplaire numérisé sur archive.org. Page 136 : le conte « The Herb Daughters », donné « By Akon Ekpo, a Woman of Nsan ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1908,
+              "to": 1908,
+              "label": "Audience du 3 février 1908, livre publié en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ekpo apparaît par écrit dans le livre de Percy Amaury Talbot, publié en 1912 : au tribunal, le 3 février 1908, Obiri Awaw parle de sa sœur Ekpo Awaw. C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne dit pas si Ekpo est un prénom ou un nom de famille.",
+            "formAsWritten": "Ekpo Awaw",
+            "birth": true,
+            "sources": [
+              {
+                "title": "In the Shadow of the Bush",
+                "author": "P. Amaury Talbot",
+                "year": 1912,
+                "url": "https://archive.org/details/inshadowofbush00perc",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 112",
+                "notes": "Londres, William Heinemann, 1912 ; exemplaire numérisé sur archive.org. Page 112 : devant le tribunal, le 3 février 1908, « Obiri Awaw (sworn) stated : ‘Two years ago my sister Ekpo Awaw gave Usin to me as a friend.’ ». Talbot ne dit pas si Ekpo est un prénom ou un nom de famille. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

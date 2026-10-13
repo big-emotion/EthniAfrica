@@ -77,5 +77,42 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches exactes dans les catalogues et publications centrafricaines n'ont pas établi un homonyme de Sarandji doté d'une origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sarandji est un nom porté en République centrafricaine, celui notamment de Simplice Mathieu Sarandji, ancien Premier ministre. On ne sait pas avec certitude ce qu'il veut dire ni d'où il vient : aucune source que nous avons lue ne l'explique.",
+    "names": [
+      {
+        "nameText": "Sarandji",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom porté en Centrafrique ; on ne sait pas ce qu'il veut dire.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sarandji figure sur la page du gouvernement centrafricain consacrée au Premier ministre Simplice Mathieu Sarandji. La page ne dit rien de l'origine du nom ni de sa transmission.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Le Premier ministre",
+                "author": "Gouvernement de la République centrafricaine",
+                "year": null,
+                "url": "https://www.gouv.cf/article/17/le-premier-ministre",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Page institutionnelle non datée (mention « ©2018 » en pied de page). Elle écrit : « Son Excellence Monsieur Simplice Mathieur SARANDJI est le Premier ministre, Chef du gouvernement » ; « Mathieur » y est une coquille pour Mathieu. Elle ne dit rien de l'origine du nom ni de sa transmission. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

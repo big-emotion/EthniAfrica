@@ -79,5 +79,68 @@
       "fieldPath": "homonyms",
       "reason": "Les catalogues et recherches exactes consultés n'établissent pas de lignée Ravalomanana d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ravalomanana est un nom de personne malgache, porté aujourd'hui comme nom de famille. Il commence par Ra, que le malgache place devant les noms de personnes. On ne sait pas avec certitude ce que veut dire le reste du nom ni d'où il vient : les sources que nous avons lues ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Ravalomanana",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne malgache porté comme nom de famille ; on ne sait pas avec certitude ce qu'il veut dire.",
+        "periodLabel": "Écrit dès 2003 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ravalomanana est un nom de personne malgache, porté comme nom de famille, notamment par Marc Ravalomanana, élu président de Madagascar en 2002, que l'Académie des sciences d'outre-mer dit merina. Il commence par Ra, que le malgache place devant les noms de personnes. Les sources lues ne disent ni ce que veut dire le reste du nom, ni d'où il vient, ni comment il se transmet.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ravalomanana Marc — Académie des sciences d'outre-mer",
+                "author": "Académie des sciences d'outre-mer",
+                "year": null,
+                "url": "https://www.academieoutremer.fr/academiciens/?aId=132&tId=A",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'Académie, lue le 11 octobre 2026. Elle présente Marc Ravalomanana, élu président de la République de Madagascar le 6 mai 2002, et écrit : « Il appartient à l'ethnie Merina ». Elle ne dit rien de l'origine du nom."
+              },
+              {
+                "title": "Dictionnaire malgache-français",
+                "author": "Antoine Abinal et Victorin Malzac",
+                "year": 1888,
+                "url": "https://archive.org/details/dictionnairemalg00abin",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 456",
+                "notes": "Tananarive, Imprimerie de la Mission catholique, 1888. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 456, article Ra : « Article personnel qui se met ordinairement devant les noms propres : Ra-bé, Ra-láy, qu'on écrit Rabe, Ralay ». Auteurs de l'époque coloniale, cités ici pour les formes qu'ils relèvent."
+              }
+            ]
+          },
+          {
+            "period": { "from": 2003, "to": 2003, "label": "2003" },
+            "statement": "Le nom Ravalomanana apparaît par écrit dans le titre d'un livre de Charlotte-Arrisoa Rafenomanjato consacré à Marc Ravalomanana, publié en 2003, selon le catalogue de la Bibliothèque nationale de France. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est donné.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notice bibliographique « Ravalomanana Marc : de président de la rue, à président du palais / Rafenomanjato Charlotte-Arrisoa »",
+                "author": "Bibliothèque nationale de France",
+                "year": 2003,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb39068832m",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice de la Bibliothèque nationale de France, lue le 11 octobre 2026. Livre de Charlotte-Arrisoa Rafenomanjato, publié à Sainte-Marie (La Réunion) par Azalées éditions en 2003. C'est la plus ancienne publication que le catalogue donne avec ce nom dans son titre."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -388,6 +388,36 @@ function SourceList({
 /*  Main component                                                             */
 /* -------------------------------------------------------------------------- */
 
+function DelayedCiteButton({
+  label,
+  reducedMotion,
+}: {
+  label: string;
+  reducedMotion: boolean;
+}) {
+  const [visible, setVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => setVisible(true), CITE_DELAY_MS);
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <button
+      type="button"
+      aria-hidden={!visible}
+      tabIndex={visible ? 0 : -1}
+      className={cn(
+        "text-afh-caption underline underline-offset-2 transition-opacity",
+        reducedMotion ? "duration-[1ms]" : "duration-300",
+        visible ? "opacity-100" : "pointer-events-none opacity-0"
+      )}
+    >
+      {label}
+    </button>
+  );
+}
+
 const SourceChainSheet: React.FC<SourceChainSheetProps> = ({
   language: languageOverride,
   open,
@@ -408,17 +438,6 @@ const SourceChainSheet: React.FC<SourceChainSheetProps> = ({
   const language = languageOverride ?? routeLanguage;
   const copy = sourceTransparencyCopy[language].sourceChain;
   useUrlAnchorSync(open, anchorId, onOpenChange);
-
-  // "Cite this assertion" appears after a 4 s dwell.
-  const [showCite, setShowCite] = React.useState(false);
-  React.useEffect(() => {
-    if (!open) {
-      setShowCite(false);
-      return;
-    }
-    const t = setTimeout(() => setShowCite(true), CITE_DELAY_MS);
-    return () => clearTimeout(t);
-  }, [open]);
 
   const statementId = `${anchorId}-statement`;
 
@@ -545,18 +564,12 @@ const SourceChainSheet: React.FC<SourceChainSheetProps> = ({
 
         {/* 6. Cite affordance (appears after 4 s dwell) */}
         <section data-testid="section-cite" className="pt-1">
-          <button
-            type="button"
-            aria-hidden={!showCite}
-            tabIndex={showCite ? 0 : -1}
-            className={cn(
-              "text-afh-caption underline underline-offset-2 transition-opacity",
-              reducedMotion ? "duration-[1ms]" : "duration-300",
-              showCite ? "opacity-100" : "pointer-events-none opacity-0"
-            )}
-          >
-            {copy.citeAssertion}
-          </button>
+          {open ? (
+            <DelayedCiteButton
+              label={copy.citeAssertion}
+              reducedMotion={reducedMotion}
+            />
+          ) : null}
         </section>
       </SheetContent>
     </Sheet>

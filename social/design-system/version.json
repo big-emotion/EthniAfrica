@@ -1,15 +1,27 @@
 {
   "name": "EthniAfrica Cartes",
-  "version": "1.1.0-proposition",
-  "date": "2026-10-10",
+  "version": "1.2.0-proposition",
+  "date": "2026-10-12",
   "status": "accepted",
   "artifact": "https://claude.ai/artifact/FMuUA1zKTU9P8qwdrmmQML",
-  "referenceImages": ".local/research/social-production-2026-10-09/design-system-references/",
-  "readingPreviews": ".local/research/social-production-2026-10-09/design-system-lecture/",
+  "referenceImages": ".local/research/social-production-2026-10-09/design-system-1.2.0-references/",
+  "readingPreviews": ".local/research/social-production-2026-10-09/design-system-1.2.0-lecture/",
   "acceptance": {
-    "date": "2026-10-10",
+    "date": "2026-10-12",
     "by": "operator",
-    "decision": "The operator explicitly accepted EthniAfrica Cartes 1.1.0-proposition as the card design system in the production coordinator conversation.",
-    "scope": "Visual design reference; renderer integration and production acceptance checks remain pending."
+    "decision": "The operator accepted EthniAfrica Cartes 1.2.0-proposition (historical atlas map: approximate zones, regional keys, 1914 partition with named territories, dotted present-day borders, period marker, collision check) in the Claude Design conversation on 12 October 2026.",
+    "scope": "Visual design reference. The renderer integrated 1.2.0 on 12 October 2026 (reference manifest, 38 accepted references, tests; see social/renderer/README.md); sample entries, positions and dates are demonstration data, not validated content."
+  },
+  "previous": {
+    "version": "1.1.0-proposition",
+    "date": "2026-10-10",
+    "acceptance": {
+      "date": "2026-10-10",
+      "by": "operator",
+      "decision": "The operator explicitly accepted EthniAfrica Cartes 1.1.0-proposition as the card design system in the production coordinator conversation.",
+      "scope": "Visual design reference; renderer integration and production acceptance checks remain pending."
+    },
+    "referenceImages": ".local/research/social-production-2026-10-09/design-system-references/",
+    "readingPreviews": ".local/research/social-production-2026-10-09/design-system-lecture/"
   }
 }

@@ -103,5 +103,76 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Gedeo désigne un peuple de langue couchitique du sud de l'Éthiopie, qui se nomme lui-même Gedeo et a donné son nom à la zone administrative Gedeo. Des écrits plus anciens l'appelaient Darasa. On ne sait pas avec certitude d'où viennent ces deux noms.",
+    "names": [
+      {
+        "nameText": "Gedeo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "drs",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple et de sa zone administrative ; on ne sait pas d'où il vient.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Gedeo désigne aujourd'hui un peuple et la zone administrative où il vit, dans le sud de l'Éthiopie, voisine de la zone Guji de l'Ouest, selon le Bureau de la coordination des affaires humanitaires des Nations unies. On ne sait pas avec certitude d'où vient ce nom, et le projet n'en connaît pas encore de trace ancienne.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ethiopia: West Guji-Gedeo Conflict Displacement Flash Update #1, 9 May 2018",
+                "author": "Bureau de la coordination des affaires humanitaires des Nations unies (OCHA)",
+                "year": 2018,
+                "url": "https://reliefweb.int/report/ethiopia/ethiopia-west-guji-gedeo-conflict-displacement-flash-update-1-9-may-2018",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "Publié sur ReliefWeb, lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Darasa",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom ancien, employé par l'administration italienne en 1938.",
+        "periodLabel": "Écrit en 1938",
+        "accounts": [
+          {
+            "period": {
+              "from": 1938,
+              "to": 1938,
+              "label": "1938"
+            },
+            "era": "colonial",
+            "statement": "Le nom Darasa désigne, dans le guide de l'Afrique orientale italienne publié en 1938, un peuple d'environ 45 000 agriculteurs, rattaché aux Sidama de l'Est mais très influencé par les Oromo, que le guide appelle Galla ; selon d'autres, ajoute le guide, il serait lui-même d'origine oromo. L'administration italienne a alors une « Résidence des Darasa » à Banco et une vice-résidence à Dilla. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà là avant lui.",
+            "formAsWritten": "Darása",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Africa Orientale Italiana, Guida d'Italia della Consociazione Turistica Italiana",
+                "author": "Consociazione Turistica Italiana",
+                "year": 1938,
+                "url": "https://archive.org/details/africa-orientale-italiana_202601",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 559-560",
+                "notes": "Milan, première édition. Guide publié pendant l'occupation italienne de l'Éthiopie, lu dans l'exemplaire numérisé le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

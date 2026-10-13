@@ -106,5 +106,81 @@
         "notes": "Classification comparative interne des langues gbe (éwé, fon, aja, mina, gen)."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Tongu désigne un ensemble de communautés ewe établies le long du fleuve Volta, dans l'est du Ghana, distinct des Anlo de la côte. Nous n'avons pas trouvé de source qui dise comment ces communautés se nomment elles-mêmes. L'ouvrage de Jakob Spieth de 1906 écrit Tonu et parle des « Tonuer » : c'est la plus ancienne trace que nous connaissions. On ne sait pas avec certitude d'où vient ce nom. Nous présentons plus bas l'histoire de ces noms.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Tonu",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme que le pasteur Spieth note en 1906 pour le pays et ses habitants.",
+        "periodLabel": "Écrit depuis 1906",
+        "accounts": [
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "statement": "Le nom Tonu est écrit en 1906 par le missionnaire Jakob Spieth. Dans un récit de bataille, il écrit « Die Tonuer flohen während des Kampfes nach Hause », « les gens de Tonu s'enfuirent du combat vers chez eux » ; le texte ewe en regard dit « Tonuawo ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait avant elle.",
+            "formAsWritten": "Tonuer",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Jakob Spieth",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Die Ewe-Stämme : Material zur Kunde des Ewe-Volkes in Deutsch-Togo",
+                "author": "Jakob Spieth",
+                "year": 1906,
+                "url": "https://archive.org/details/dieewestmmemater00spie",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 28-29",
+                "notes": "1906, lu le 13 octobre 2026 dans la numérisation d'Internet Archive. Le texte allemand est p. 28, le texte ewe p. 29, dont le numéro est lu sur l'image. « Die Tonuer flohen während des Kampfes nach Hause » ; « Tonuawo si le tu la nu yi awe ». Le même ouvrage place à Tonu l'origine d'un esprit (tro), « Der tro stammt aus Tonu »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tongu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'usage officiel de la région et du peuple.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Date inconnue"
+            },
+            "statement": "Tongu désigne, dans un résumé d'histoire ewe attribué au professeur D. E. K. Amenumey, treize États du bord du Volta : « The 13 TONGU states were independent of one another », soumis aux influences concurrentes des Anlo, des Ada et des Akwamu. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ewe Association of Georgia : History of the Ewes",
+                "author": "D. E. K. Amenumey",
+                "year": null,
+                "url": "https://ewaga.org/about-us/history-of-the-ewes/",
+                "tier": "unverified",
+                "source_kind": "academic",
+                "notes": "Résumé « History of the Ewes – A Short Summary », attribué au professeur D. E. K. Amenumey (université de Cape Coast), publié sur le site de l'Ewe Association of Georgia, sans date : copie non officielle, lu le 13 octobre 2026. « The 13 TONGU states were independent of one another but subject to the competing influences of ANLO, ADA and AKWAMU »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

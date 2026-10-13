@@ -95,5 +95,128 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches exactes « Weldu homonym surname », « Weldu homonyme patronyme » et les variantes graphiques de la fiche n'ont pas établi deux origines distinctes et documentées pour la même forme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Weldu est un nom personnel porté en Érythrée ; une écriture proche, Woldu, est relevée en Éthiopie et en Érythrée. Il sert de second nom aux enfants d'un homme qui le porte, sans devenir un nom de famille. Une forme proche, Uoldù, apparaît par écrit en 1894. Nous présentons plus bas l'explication de son sens que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Weldu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel érythréen, porté en second par les enfants d'un Weldu.",
+        "periodLabel": "Écrit Uoldù dès 1894 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Écrit en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Weldu figure en deuxième position dans le nom complet d'une marathonienne érythréenne, sur la liste des engagées des Jeux olympiques de Tokyo. Le document donne le nom sans dire ce que cette place représente.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Tokyo 2020 athletics entry list and biographies — WELDU Nazret",
+                "author": "World Athletics",
+                "year": 2021,
+                "url": "https://media.aws.iaaf.org/competitioninfo/8b2c6d44-27b0-4b77-a7de-79211a26c079.pdf",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 7",
+                "notes": "Document de compétition de World Athletics, « Games of the XXXII Olympiad, Biographical Entry List, Women », lu dans le PDF le 12 octobre 2026. Page 7, épreuve du marathon : l'engagée érythréenne inscrite sous WELDU Nazret porte le nom complet Nazret Weldu Ghebrehiwet."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Weldu voudrait dire « son fils » : c'est le sens que le Dictionary of American Family Names donne à Woldu, une écriture proche. Le mot guèze wald, « fils, enfant », figure dans le dictionnaire de Wolf Leslau.",
+            "hypothesisGroup": "origine du nom Weldu",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Woldu",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/woldu?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 ; le site affiche aussi une traduction française. La notice dit : nom personnel éthiopien et érythréen interprété comme « son fils » en guèze, en amharique ou dans des langues voisines. Les Éthiopiens et les Érythréens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              },
+              {
+                "title": "Comparative Dictionary of Geʿez (Classical Ethiopic)",
+                "author": "Wolf Leslau",
+                "year": 1987,
+                "url": "https://archive.org/details/leslau-comparative-dictionary-of-geez-1987",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 613",
+                "notes": "Wiesbaden, Otto Harrassowitz, 1987. Lu le 12 octobre 2026 dans une copie non officielle déposée sur Internet Archive par un particulier. Page 613, entrée wald : « son, child, boy, young one, disciple, servant », avec l'expression walda wald, « grandson », petit-fils."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1894,
+              "to": 1894,
+              "label": "1894"
+            },
+            "era": "colonial",
+            "statement": "Le nom Weldu apparaît par écrit sous une forme proche, Uoldù, dans la Gazzetta Ufficiale du royaume d'Italie : Sebatù Uoldù, soldat érythréen du 4e bataillon indigène, y est cité pour sa conduite au combat d'Agordat. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "Uoldù",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Gazzetta Ufficiale del Regno d'Italia, n° 36, lundi 12 février 1894",
+                "author": "Royaume d'Italie",
+                "year": 1894,
+                "url": "https://www.gazzettaufficiale.it/eli/gu/1894/02/12/36/sg/pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 590",
+                "notes": "Journal officiel italien, lu dans le PDF du site officiel le 12 octobre 2026. Page 590, liste des récompenses pour le combat d'Agordat, en Érythrée : « Sebatù Uoldù, id. 4° id. », un ascari, c'est-à-dire un soldat africain de l'armée coloniale italienne, du 4e bataillon indigène, blessé, qui continua à combattre. La page ne dit pas ce que veut dire le nom."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Woldu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Woldu est un nom personnel en Éthiopie et en Érythrée. Ces deux pays n'ont pas de nom de famille héréditaire : Woldu n'a été enregistré comme nom de famille qu'aux États-Unis, après l'immigration de ceux qui le portent, selon le Dictionary of American Family Names.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Woldu",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/woldu?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 ; le site affiche aussi une traduction française. La notice dit : nom personnel éthiopien et érythréen interprété comme « son fils » en guèze, en amharique ou dans des langues voisines. Les Éthiopiens et les Érythréens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

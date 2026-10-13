@@ -155,5 +155,75 @@
         "source_kind": "official_statistics"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Male désigne un peuple de langue omotique du sud de l'Éthiopie, qui se nomme lui-même Maale. On ne sait pas avec certitude d'où vient ce nom ni quand il a été écrit pour la première fois ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Maale",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mdy",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple du sud de l'Éthiopie ; son origine n'est pas connue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Maale désigne un peuple du sud de l'Éthiopie et sa langue omotique. Les catalogues de langues l'écrivent aussi Maalé, Male ou Malé, selon Glottolog. On ne sait pas avec certitude d'où vient ce nom, et nous n'avons pas trouvé sa plus ancienne trace écrite.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Male (Ethiopia) (male1284)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/male1284",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle recense les formes Maale, Maalé, Male et Malé."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Male",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mdy",
+        "namedBy": null,
+        "shortLine": "Une autre façon d'écrire le nom Maale, courante dans les catalogues.",
+        "periodLabel": "En usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Male est une autre façon d'écrire le nom Maale : Glottolog inscrit la langue sous le nom Male (Ethiopia), tandis que l'atlas WALS l'appelle Maale.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Male (Ethiopia) (male1284)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/male1284",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle recense les formes Maale, Maalé, Male et Malé."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

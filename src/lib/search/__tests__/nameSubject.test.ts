@@ -162,7 +162,7 @@ describe("the subject of a name search", () => {
   // @req REQ-178
   it("does not treat a people's country split as another people", () => {
     const subjects = selectNameSubject(
-      [people("PPL_FANG", "Fang"), people("PPL_FANG_GABON", "Fang (Gabon)")],
+      [people("PPL_FANG", "Fang"), people("PPL_FANG_GAB", "Fang (Gabon)")],
       "fang"
     );
 
@@ -183,7 +183,7 @@ describe("the subject of a name search", () => {
     const subjects = selectNameSubject(
       [
         kongo("PPL_KONGO", "Kongo"),
-        kongo("PPL_KONGO_BRAZZA", "Kongo du Congo"),
+        kongo("PPL_KONGO_CABINDA", "Kongo du Cabinda"),
       ],
       "kongo"
     );

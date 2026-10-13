@@ -76,5 +76,65 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Guebuza à un peuple au Mozambique. Nous n'avons pas encore consulté de source consacrée à ce nom. La fiche sur les Ronga mentionne des noms de famille, sans donner d'exemple."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Guebuza est un nom de famille du Mozambique. On ne sait pas avec certitude d'où il vient ni ce qu'il veut dire : les sources consultées ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Guebuza",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille du Mozambique, dont les sources consultées n'expliquent pas l'origine.",
+        "periodLabel": "Écrit dès 1974",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Guebuza est un nom de famille du Mozambique. Les sources consultées ne disent ni d'où il vient ni ce qu'il veut dire. On ne sait pas avec certitude.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Diário de Lisboa 1974-09-20: ano 54, n.º 18567",
+                "author": "Diário de Lisboa",
+                "year": 1974,
+                "url": "https://archive.org/details/cc_dl_06820.170.26888",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 1",
+                "notes": "Quotidien de Lisbonne, numérisé par la Casa Comum de la Fondation Mário Soares et Maria Barroso et lu sur la copie d'archive.org. Page 1, dépêche de Lourenço Marques datée du 20 septembre : le gouvernement de transition du Mozambique a pris ses fonctions le matin même. Elle nomme « Armando Emílio Guebuza » ministre de l'Administration intérieure, parmi les ministres désignés par le Frelimo. Elle ne dit rien de l'origine du nom. Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1974,
+              "to": 1974,
+              "label": "20 septembre 1974"
+            },
+            "era": "colonial",
+            "statement": "Le nom Guebuza apparaît par écrit dans le Diário de Lisboa du 20 septembre 1974, qui nomme Armando Emílio Guebuza ministre de l'Administration intérieure du gouvernement de transition du Mozambique. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un journal l'a écrit, pas depuis quand des familles le portent.",
+            "formAsWritten": "Guebuza",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Diário de Lisboa 1974-09-20: ano 54, n.º 18567",
+                "author": "Diário de Lisboa",
+                "year": 1974,
+                "url": "https://archive.org/details/cc_dl_06820.170.26888",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 1",
+                "notes": "Quotidien de Lisbonne, numérisé par la Casa Comum de la Fondation Mário Soares et Maria Barroso et lu sur la copie d'archive.org. Page 1, dépêche de Lourenço Marques datée du 20 septembre : le gouvernement de transition du Mozambique a pris ses fonctions le matin même. Elle nomme « Armando Emílio Guebuza » ministre de l'Administration intérieure, parmi les ministres désignés par le Frelimo. Elle ne dit rien de l'origine du nom. Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

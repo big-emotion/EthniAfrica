@@ -109,7 +109,7 @@
       "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/2022-12/010075008.pdf",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Louis Tauxier, réédition Karthala de 2003 d'une enquête coloniale publiée en 1921. Les p. 171 et 203-205 ont été consultées : elles donnent Soro/Solo parmi les noms de clan sénoufo, discutent les sens « brave » et « léopard/panthère » et rapportent un récit d'origine pallakha. Le vocabulaire racial et les généralisations de l'ouvrage relèvent de son cadre colonial ; seuls les passages nommément localisés sont retenus."
+      "notes": "Louis Tauxier, administrateur colonial : manuscrit écrit entre novembre 1921 et août 1922, publié pour la première fois en 2003 par Karthala. Les p. 171 et 203-205 ont été consultées : elles donnent Soro/Solo parmi les noms de clan sénoufo, discutent les sens « brave » et « léopard/panthère » et rapportent un récit d'origine pallakha. Le vocabulaire racial et les généralisations de l'ouvrage relèvent de son cadre colonial ; seuls les passages nommément localisés sont retenus."
     },
     {
       "sourceKey": "burkina-provisional-patronyme-register",
@@ -133,5 +133,317 @@
       "fieldPath": "bearers",
       "reason": "Les recherches biographiques exactes sur Soro, Horo et Solo ont livré des personnes contemporaines ou des individus sans statut vital vérifiable ; aucun porteur décédé pertinent pour l'histoire du nom n'a été retenu."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Soro est un nom de clan des Sénoufo du nord de la Côte d'Ivoire, reçu du père ou de la mère. Il se dit Horo dans la région de Katiola et s'écrit aussi Solo. Les sources ne s'accordent pas sur son sens ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Soro",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan sénoufo de Côte d'Ivoire ; son sens reste discuté.",
+        "periodLabel": "Écrit dès 1921 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Soro est celui d'un clan sénoufo des régions de Boundiali et de Korhogo. On peut le recevoir du père ou de la mère, mais le clan de la mère compte le plus. Les sources lui donnent plusieurs sens et plusieurs animaux ; nous les présentons séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La perception des Sénoufo de Côte d'Ivoire de leurs noms traditionnels",
+                "author": "Yalamoussa Coulibaly",
+                "year": 2019,
+                "url": "https://www.histoire-univdaloa.net/wp-content/uploads/2019/10/RISH-JUIN-2019-DEF.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 39",
+                "notes": "Revue ivoirienne des sciences historiques, no 5, juin 2019, p. 37-44. Le lien d'origine sur le site de la revue ne répond plus (erreur 404 le 11 octobre 2026) ; le numéro a été lu dans la copie conservée par la Wayback Machine d'Internet Archive le 27 novembre 2022 (web.archive.org/web/20221127203320/https://www.histoire-univdaloa.net/wp-content/uploads/2019/10/RISH-JUIN-2019-DEF.pdf). Page 39 : à la naissance, l'individu appartient « soit au Tienne de son père ou encore à celui de sa mère » ; « le Tienne de la mère reste toujours le plus important ». Le tienne, ou fè, est le nom de clan."
+              },
+              {
+                "title": "La perception des Sénoufo de Côte d'Ivoire de leurs noms traditionnels",
+                "author": "Yalamoussa Coulibaly",
+                "year": 2019,
+                "url": "https://www.histoire-univdaloa.net/wp-content/uploads/2019/10/RISH-JUIN-2019-DEF.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 42",
+                "notes": "Revue ivoirienne des sciences historiques, no 5, juin 2019, p. 37-44. Le lien d'origine sur le site de la revue ne répond plus (erreur 404 le 11 octobre 2026) ; le numéro a été lu dans la copie conservée par la Wayback Machine d'Internet Archive le 27 novembre 2022 (web.archive.org/web/20221127203320/https://www.histoire-univdaloa.net/wp-content/uploads/2019/10/RISH-JUIN-2019-DEF.pdf). Page 42, tableau 1, repris de T. F. Ouattara (2010, p. 188) : le nom Soro des régions de Boundiali et de Korhogo se dit Horo dans la région de Katiola ; ses équivalents mandé sont Coulibaly et Keita ; ses éponymes animaux sont l'hippopotame, le léopard et l'éléphant."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Décrit en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Soro répond aux noms mandé Coulibaly et Keita, et il est associé à l'hippopotame, au léopard et à l'éléphant selon les régions, d'après un tableau que reprend Yalamoussa Coulibaly.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La perception des Sénoufo de Côte d'Ivoire de leurs noms traditionnels",
+                "author": "Yalamoussa Coulibaly",
+                "year": 2019,
+                "url": "https://www.histoire-univdaloa.net/wp-content/uploads/2019/10/RISH-JUIN-2019-DEF.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 42",
+                "notes": "Revue ivoirienne des sciences historiques, no 5, juin 2019, p. 37-44. Le lien d'origine sur le site de la revue ne répond plus (erreur 404 le 11 octobre 2026) ; le numéro a été lu dans la copie conservée par la Wayback Machine d'Internet Archive le 27 novembre 2022 (web.archive.org/web/20221127203320/https://www.histoire-univdaloa.net/wp-content/uploads/2019/10/RISH-JUIN-2019-DEF.pdf). Page 42, tableau 1, repris de T. F. Ouattara (2010, p. 188) : le nom Soro des régions de Boundiali et de Korhogo se dit Horo dans la région de Katiola ; ses équivalents mandé sont Coulibaly et Keita ; ses éponymes animaux sont l'hippopotame, le léopard et l'éléphant."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Décrit en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Soro est lié au nom Silué, et aussi au nom Sékongo, par une parenté à plaisanterie : les deux clans se doivent aide et arbitrage et échangent des moqueries, surtout aux funérailles, selon Yalamoussa Coulibaly.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La perception des Sénoufo de Côte d'Ivoire de leurs noms traditionnels",
+                "author": "Yalamoussa Coulibaly",
+                "year": 2019,
+                "url": "https://www.histoire-univdaloa.net/wp-content/uploads/2019/10/RISH-JUIN-2019-DEF.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 43",
+                "notes": "Revue ivoirienne des sciences historiques, no 5, juin 2019, p. 37-44. Le lien d'origine sur le site de la revue ne répond plus (erreur 404 le 11 octobre 2026) ; le numéro a été lu dans la copie conservée par la Wayback Machine d'Internet Archive le 27 novembre 2022 (web.archive.org/web/20221127203320/https://www.histoire-univdaloa.net/wp-content/uploads/2019/10/RISH-JUIN-2019-DEF.pdf). Page 43 : les matriclans sont liés par paires, à la fois de dépendance réciproque et de plaisanterie : « Yéo et Tuo, Soro et Silué, Soro et Sékongo » ; chez les Tagbana, « Horo et Hala ; Hili et N'kongo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Soro est aussi, au Burkina Faso, un nom de famille yarsé et un nom de famille san, selon le projet de répertoire des patronymes. Les sources ne disent pas s'il s'agit du même nom que le clan sénoufo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel du Burkina Faso",
+                "year": null,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 189-190",
+                "notes": "Document de travail daté de mai 2025 et marqué « version provisoire », lu le 11 octobre 2026 dans une copie non officielle déposée sur PDFCoffee ; aucune publication officielle de ce répertoire n'a été trouvée. Les récits qu'il rapporte ne nomment pas de narrateur. Pages 189-190 : une notice SORO décrit des Yarsé qui auraient d'abord été des Ouédraogo et glose le nom par « se cacher ou se confondre aux Yarse » ; une seconde notice dit seulement « SORO est un patronyme san »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1922,
+              "label": "Rapporté en 1921-1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Soro voudrait dire « brave » : quand les Pallakha descendaient du ciel, un grand couteau dressé sur la terre les menaçait, et l'un d'eux, attaché à une chaîne, tomba dessus et le renversa ; on le nomma alors Soro. C'est ce que rapportent des Pallakha, selon Louis Tauxier.",
+            "hypothesisGroup": "origine du nom Soro",
+            "actors": [
+              {
+                "name": "Louis Tauxier",
+                "role": "administrateur colonial, rapporte le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les États de Kong (Côte d'Ivoire)",
+                "author": "Louis Tauxier",
+                "year": 2003,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/2022-12/010075008.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 203-204",
+                "notes": "Manuscrit rédigé par Louis Tauxier, administrateur colonial, entre novembre 1921 et août 1922, publié pour la première fois en 2003 par Karthala avec une introduction d'Edmond Bernus. Lu dans le PDF du dépôt Horizon de l'IRD le 11 octobre 2026. Pages 203-204 : chez les Pallakha, « Solo ou Soro (qui correspond à Kouloubali) » ; « Solo ou Soro veut dire brave », et l'auteur rapporte le récit pallakha du couteau renversé pendant la descente du ciel, sans nommer qui le lui a dit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1908,
+              "to": 1909,
+              "label": "Proposée en 1908-1909"
+            },
+            "era": "colonial",
+            "statement": "Le nom Soro viendrait de soroo, le nom du léopard ou de la panthère en sénoufo, selon Maurice Delafosse, cité par Louis Tauxier. Le sens « brave » en serait dérivé ; le représentant du canton des Pallakha à Korhogo l'aurait confirmé à Tauxier.",
+            "hypothesisGroup": "origine du nom Soro",
+            "sources": [
+              {
+                "title": "Les États de Kong (Côte d'Ivoire)",
+                "author": "Louis Tauxier",
+                "year": 2003,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/2022-12/010075008.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 204-205, note 9",
+                "notes": "Manuscrit rédigé par Louis Tauxier, administrateur colonial, entre novembre 1921 et août 1922, publié pour la première fois en 2003 par Karthala avec une introduction d'Edmond Bernus. Lu dans le PDF du dépôt Horizon de l'IRD le 11 octobre 2026. Note 9 : Maurice Delafosse (Le peuple Siéna ou Sénoufo, p. 77) donne soroo comme le nom du léopard ou de la panthère en sénoufo ; Tauxier s'y range et ajoute que le représentant du canton des Pallakha à Korhogo a fini par lui dire que soro ou sorao veut bien dire léopard. L'ouvrage de Delafosse n'a pas été lu par le projet ; il est cité d'après Tauxier."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Soro est celui de deux chefs de village du canton pallakha, à Guiébélé et à Kakono, dans le rôle d'impôt de Korhogo de 1922 que recopie Louis Tauxier.",
+            "formAsWritten": "Soro",
+            "sources": [
+              {
+                "title": "Les États de Kong (Côte d'Ivoire)",
+                "author": "Louis Tauxier",
+                "year": 2003,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/2022-12/010075008.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 175",
+                "notes": "Manuscrit rédigé par Louis Tauxier, administrateur colonial, entre novembre 1921 et août 1922, publié pour la première fois en 2003 par Karthala avec une introduction d'Edmond Bernus. Lu dans le PDF du dépôt Horizon de l'IRD le 11 octobre 2026. Page 175 : liste des villages du canton pallakha d'après le rôle d'impôt de Korhogo de 1922, avec les chefs de Guiébélé et de Kakono qui portent le nom Soro."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1922,
+              "label": "Écrit en 1921-1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Soro apparaît par écrit chez Louis Tauxier, qui le range parmi les noms de clan que l'on retrouve chez tous les Sénoufo et le fait correspondre au nom dioula Kouloubali. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le clan existe.",
+            "formAsWritten": "Soro",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Louis Tauxier",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les États de Kong (Côte d'Ivoire)",
+                "author": "Louis Tauxier",
+                "year": 2003,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/2022-12/010075008.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 164",
+                "notes": "Manuscrit rédigé par Louis Tauxier, administrateur colonial, entre novembre 1921 et août 1922, publié pour la première fois en 2003 par Karthala avec une introduction d'Edmond Bernus. Lu dans le PDF du dépôt Horizon de l'IRD le 11 octobre 2026. Page 164 : chez les Tafiré du Koumbala, « Tuo, Soro, Silivué, Sékou, Yè (Yèo) et Sula » sont donnés comme des noms de clan « à peu près identiques chez tous les Sénoufo » ; « Soro » équivaudrait au dioula « Kouloubali »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Horo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme du nom de clan Soro chez les Tagbana de la région de Katiola.",
+        "periodLabel": "Écrit dès 2019 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Décrit en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Horo est lié chez les Tagbana au nom Hala par une parenté à plaisanterie, selon Yalamoussa Coulibaly.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La perception des Sénoufo de Côte d'Ivoire de leurs noms traditionnels",
+                "author": "Yalamoussa Coulibaly",
+                "year": 2019,
+                "url": "https://www.histoire-univdaloa.net/wp-content/uploads/2019/10/RISH-JUIN-2019-DEF.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 43",
+                "notes": "Revue ivoirienne des sciences historiques, no 5, juin 2019, p. 37-44. Le lien d'origine sur le site de la revue ne répond plus (erreur 404 le 11 octobre 2026) ; le numéro a été lu dans la copie conservée par la Wayback Machine d'Internet Archive le 27 novembre 2022 (web.archive.org/web/20221127203320/https://www.histoire-univdaloa.net/wp-content/uploads/2019/10/RISH-JUIN-2019-DEF.pdf). Page 43 : les matriclans sont liés par paires, à la fois de dépendance réciproque et de plaisanterie : « Yéo et Tuo, Soro et Silué, Soro et Sékongo » ; chez les Tagbana, « Horo et Hala ; Hili et N'kongo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Horo figure chez Yalamoussa Coulibaly comme la forme que prend le nom Soro dans la région de Katiola. C'est la plus ancienne trace de cette forme que le projet connaît ; elle dit quand un auteur l'a notée, pas depuis quand elle est portée.",
+            "formAsWritten": "Horo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "La perception des Sénoufo de Côte d'Ivoire de leurs noms traditionnels",
+                "author": "Yalamoussa Coulibaly",
+                "year": 2019,
+                "url": "https://www.histoire-univdaloa.net/wp-content/uploads/2019/10/RISH-JUIN-2019-DEF.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 42",
+                "notes": "Revue ivoirienne des sciences historiques, no 5, juin 2019, p. 37-44. Le lien d'origine sur le site de la revue ne répond plus (erreur 404 le 11 octobre 2026) ; le numéro a été lu dans la copie conservée par la Wayback Machine d'Internet Archive le 27 novembre 2022 (web.archive.org/web/20221127203320/https://www.histoire-univdaloa.net/wp-content/uploads/2019/10/RISH-JUIN-2019-DEF.pdf). Page 42, tableau 1, repris de T. F. Ouattara (2010, p. 188) : le nom Soro des régions de Boundiali et de Korhogo se dit Horo dans la région de Katiola ; ses équivalents mandé sont Coulibaly et Keita ; ses éponymes animaux sont l'hippopotame, le léopard et l'éléphant."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Solo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre forme du nom de clan Soro, notée chez les Pallakha.",
+        "periodLabel": "Écrit en 1921-1922",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1921,
+              "to": 1922,
+              "label": "Écrit en 1921-1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Solo apparaît chez Louis Tauxier, qui écrit « Solo ou Soro » pour ce nom de clan des Pallakha, avec le pluriel Solilo. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand cette forme est dite.",
+            "formAsWritten": "Solo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Louis Tauxier",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les États de Kong (Côte d'Ivoire)",
+                "author": "Louis Tauxier",
+                "year": 2003,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/2022-12/010075008.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 203-204",
+                "notes": "Manuscrit rédigé par Louis Tauxier, administrateur colonial, entre novembre 1921 et août 1922, publié pour la première fois en 2003 par Karthala avec une introduction d'Edmond Bernus. Lu dans le PDF du dépôt Horizon de l'IRD le 11 octobre 2026. Pages 203-204 : chez les Pallakha, « Solo ou Soro (qui correspond à Kouloubali) » ; « Solo ou Soro veut dire brave », et l'auteur rapporte le récit pallakha du couteau renversé pendant la descente du ciel, sans nommer qui le lui a dit."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

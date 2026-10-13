@@ -127,5 +127,237 @@
         "tier": "referenced"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bongo désigne un peuple de langue soudanique centrale du Soudan du Sud, au sud et à l'est de Wau, qui se nomme lui-même Bongo. Ses voisins lui donnent d'autres noms : Dor chez les Dinka, A-Kumā chez les Zande, O-Bong chez les Jur. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Bongo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bot",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple du Soudan du Sud ; écrit dès 1869.",
+        "periodLabel": "Écrit dès 1869 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bongo désigne un peuple du Soudan du Sud et sa langue soudanique centrale. Les catalogues de langues lui rattachent aussi les formes Bungu et Dor, selon Glottolog. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Bongo (bong1285)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/bong1285",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle recense les formes Bongo, Bungu et Dor."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "1873"
+            },
+            "statement": "Le nom Bongo est celui que le botaniste Georg Schweinfurth donne à ce peuple et à sa langue, dont il publie un vocabulaire. Il ajoute les noms que lui donnent ses voisins : Dor chez les Dinka, A-Kumā chez les Zande, qu'il appelle Nyamnyam, et O-Bong chez les Jur.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Linguistische Ergebnisse einer Reise nach Centralafrika",
+                "author": "Georg Schweinfurth",
+                "year": 1873,
+                "url": "https://archive.org/details/bub_gb_i_YUAAAAYAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Berlin, Wiegandt et Hempel, 1873. Vocabulaires recueillis pendant le voyage de 1868 à 1871. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1863,
+              "to": 1869,
+              "label": "Voyage de 1863, publié en 1869"
+            },
+            "statement": "Le nom Bongo apparaît dans le récit du voyageur Theodor von Heuglin, qui parcourt le Bahr el-Ghazal en 1863 : c'est le nom d'un district et d'un groupe qui vit autour du camp de son expédition. Heuglin range ce groupe dans le peuple qu'il appelle Dor. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Bongo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Theodor von Heuglin",
+                "role": "voyageur, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Reise in das Gebiet des Weissen Nil und seiner westlichen Zuflüsse in den Jahren 1862-1864",
+                "author": "Theodor von Heuglin",
+                "year": 1869,
+                "url": "https://archive.org/details/reiseindasgebiet00heug",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 170 et p. 194",
+                "notes": "Leipzig et Heidelberg, C. F. Winter, 1869. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dor",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Dinka, selon Georg Schweinfurth",
+        "shortLine": "Le nom que les Dinka donnent aux Bongo ; écrit dès 1860.",
+        "periodLabel": "Écrit dès 1860 ; encore cité par les catalogues de langues",
+        "accounts": [
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "1873"
+            },
+            "statement": "Le nom Dor est celui que les Dinka donnent aux Bongo, selon Georg Schweinfurth.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Linguistische Ergebnisse einer Reise nach Centralafrika",
+                "author": "Georg Schweinfurth",
+                "year": 1873,
+                "url": "https://archive.org/details/bub_gb_i_YUAAAAYAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Berlin, Wiegandt et Hempel, 1873. Vocabulaires recueillis pendant le voyage de 1868 à 1871. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1863,
+              "to": 1869,
+              "label": "Voyage de 1863, publié en 1869"
+            },
+            "statement": "Le nom Dor désigne, chez Theodor von Heuglin, un grand peuple qui s'étend loin vers le sud-est à partir de la rivière Wau. Heuglin y range les Bongo et les Dambo, et publie un petit vocabulaire de leur langue.",
+            "sources": [
+              {
+                "title": "Reise in das Gebiet des Weissen Nil und seiner westlichen Zuflüsse in den Jahren 1862-1864",
+                "author": "Theodor von Heuglin",
+                "year": 1869,
+                "url": "https://archive.org/details/reiseindasgebiet00heug",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 160, p. 194 et p. 381-382",
+                "notes": "Leipzig et Heidelberg, C. F. Winter, 1869. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1858,
+              "to": 1860,
+              "label": "Voyage de janvier 1858, publié en 1860"
+            },
+            "statement": "Le nom Dor apparaît dans le compte rendu du commerçant John Petherick, lu à Londres en novembre 1860 : en janvier 1858, il dit traverser vers le sud « le pays des Dor ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Dor",
+            "birth": true,
+            "actors": [
+              {
+                "name": "John Petherick",
+                "role": "commerçant et voyageur, auteur du compte rendu"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Memorandum of a Journey from Khartúm by the White Nile, Bahr el Gazal, and in the Interior of Central Africa, during the Years 1857 and 1858",
+                "author": "John Petherick",
+                "year": 1860,
+                "url": "https://archive.org/details/jstor-1798877",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 36-37",
+                "notes": "Proceedings of the Royal Geographical Society of London, vol. 5, séance du 26 novembre 1860, p. 27-39. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "A-Kumā",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Zande, selon Georg Schweinfurth",
+        "shortLine": "Le nom que les Zande donnaient aux Bongo, selon Schweinfurth en 1873.",
+        "periodLabel": "Écrit en 1873",
+        "accounts": [
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "1873"
+            },
+            "statement": "Le nom A-Kumā est celui que les Zande, que Georg Schweinfurth appelle Nyamnyam, donnent aux Bongo. Schweinfurth l'écrit aussi A-Kumá dans sa liste des noms de peuples en langue zande. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "A-Kumā",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Linguistische Ergebnisse einer Reise nach Centralafrika",
+                "author": "Georg Schweinfurth",
+                "year": 1873,
+                "url": "https://archive.org/details/bub_gb_i_YUAAAAYAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3 et p. 46",
+                "notes": "Berlin, Wiegandt et Hempel, 1873. Vocabulaires recueillis pendant le voyage de 1868 à 1871. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "O-Bong",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Jur, selon Georg Schweinfurth",
+        "shortLine": "Le nom que les Jur donnaient aux Bongo, selon Schweinfurth en 1873.",
+        "periodLabel": "Écrit en 1873",
+        "accounts": [
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "1873"
+            },
+            "statement": "Le nom O-Bong est celui que les Jur, que Georg Schweinfurth écrit Dyur, donnent aux Bongo. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "O-Bong",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Linguistische Ergebnisse einer Reise nach Centralafrika",
+                "author": "Georg Schweinfurth",
+                "year": 1873,
+                "url": "https://archive.org/details/bub_gb_i_YUAAAAYAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Berlin, Wiegandt et Hempel, 1873. Vocabulaires recueillis pendant le voyage de 1868 à 1871. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

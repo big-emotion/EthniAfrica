@@ -104,5 +104,140 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ndamba désigne un peuple de langue bantoue de la vallée du Kilombero, dans le centre-sud de la Tanzanie, qui se nomme lui-même Wandamba ; wa- marque le pluriel des personnes. Les sources ne s'accordent pas toujours sur l'origine de ce nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Wandamba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ndj",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne, écrit dès 1926 ; son sens reste discuté.",
+        "periodLabel": "Écrit depuis 1926 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1965,
+              "to": 1965,
+              "label": "1965"
+            },
+            "era": "modern",
+            "statement": "Le nom Wandamba est celui qu'emploie Blasius Undole dans « Habari za Wandamba », une histoire de son peuple tapée à la machine en swahili en 1965. Les historiens G. C. K. Gwassa et John Iliffe la citent pour raconter comment le chef Undole refusa en 1905 l'eau du maji maji dans son pays, l'Undamba.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Records of the Maji Maji Rising, Part One",
+                "author": "G. C. K. Gwassa et John Iliffe",
+                "year": null,
+                "url": "https://archive.org/details/maji-maji-1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 19 et notes",
+                "notes": "Historical Association of Tanzania, Paper n° 4, préface datée de décembre 1967. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Nous n'avons pas lu le texte de Blasius Undole lui-même."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1926,
+              "to": 1936,
+              "label": "Article de 1926, cité en 1936"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wandamba apparaît par écrit dans le titre d'un article d'A. G. O. Hodgson sur les coutumes de chasse des « Wandamba de la vallée de l'Ulanga », publié en 1926 dans le Journal of the Royal Anthropological Institute, selon James George Frazer, qui le cite. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Aftermath: a Supplement to The Golden Bough",
+                "author": "James George Frazer",
+                "year": 1936,
+                "url": "https://archive.org/details/aftermathasupple025677mbp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 22, note 2",
+                "notes": "Londres, Macmillan, 1936. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'auteur cite A. G. O. Hodgson, Journal of the Royal Anthropological Institute, vol. 56, 1926, p. 62 et suivantes ; nous n'avons pas lu cet article."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1863,
+              "label": "Avant le règne de Mtengera, vers 1863"
+            },
+            "era": "polity",
+            "statement": "Le nom Wandamba regroupait déjà, selon A. T. et G. M. Culwick, les petites communautés dispersées dans les marais de la vallée avant le règne du chef bena Mtengera : les Wamwera, les Wambowa, et des réfugiés venus des hauteurs, comme les Wachanya ou les Wahungu. Ce nom commun ne faisait pas d'eux un seul peuple organisé, écrivent-ils.",
+            "sources": [
+              {
+                "title": "Ubena of the Rivers",
+                "author": "A. T. Culwick et G. M. Culwick",
+                "year": 1935,
+                "url": "https://archive.org/details/in.ernet.dli.2015.219469",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "Londres, George Allen & Unwin, 1935. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1935,
+              "to": 1935,
+              "label": "Proposée en 1935"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wandamba voudrait dire « ceux qui habitent le pays bas », selon A. T. et G. M. Culwick, qui écrivent depuis la vallée du Kilombero.",
+            "hypothesisGroup": "origine du nom Wandamba",
+            "sources": [
+              {
+                "title": "Ubena of the Rivers",
+                "author": "A. T. Culwick et G. M. Culwick",
+                "year": 1935,
+                "url": "https://archive.org/details/in.ernet.dli.2015.219469",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "Londres, George Allen & Unwin, 1935. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ndamba",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "ndj",
+        "namedBy": null,
+        "shortLine": "La forme sans le préfixe wa-, employée par les linguistes.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndamba est la forme sans le préfixe wa- qu'emploient les catalogues de langues : Glottolog nomme ainsi la langue de ce peuple, dont le code est ndj.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Ndamba",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/ndam1239",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues de l'Institut Max Planck, page lue le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

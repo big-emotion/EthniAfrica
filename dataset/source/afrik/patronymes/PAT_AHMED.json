@@ -159,5 +159,127 @@
       "fieldPath": "countries",
       "reason": "Les sources propres à « Ahmed » n'ont pas confirmé les pays où il est porté ; les recherches exactes par pays n'ont pas livré de registre officiel directement exploitable pour cette fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ahmed est un nom personnel arabe, qui renvoie au Prophète de l'islam. Au Soudan et en Somalie, il se transmet dans une chaîne de noms, où chacun porte aussi le nom de son père et de son grand-père, plutôt que comme un nom de famille fixe. En somali, il s'écrit Axmed. Les sources lues ne disent pas quand il est devenu un nom de famille.",
+    "names": [
+      {
+        "nameText": "Ahmed",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "Un nom personnel arabe, porté aussi comme nom du père ou du grand-père.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ahmed est un nom personnel arabe, que le Coran donne au messager annoncé par Jésus. Sous la forme Amadu, en haoussa, il renvoie au Prophète de l'islam, selon Pauline M. Ryan. Les sources lues ne disent pas quand il est devenu un nom de famille en Afrique.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Le Coran, sourate 61, verset 6 — traduction de Muhammad Hamidullah",
+                "author": "Muhammad Hamidullah (traduction)",
+                "year": null,
+                "url": "https://quran.com/fr/61:6?translations=31",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "sourate 61, verset 6",
+                "notes": "Traduction française de Muhammad Hamidullah, lue sur le site Quran.com le 11 octobre 2026. Jésus y annonce « un Messager à venir après moi, dont le nom sera « Aḥmad » »."
+              },
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 142",
+                "notes": "Names, vol. 29, no 2, 1981, p. 139-164. Lu dans le PDF intégral le 11 octobre 2026. L'étude porte sur les noms des Haoussa du nord du Nigeria, musulmans pour la plupart ; la majorité des noms donnés lors de la cérémonie du nom y sont tirés du Coran. Tableau I : « Amadu — The Prophet »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ahmed se transmet au Soudan, comme les autres noms personnels, dans une chaîne où les fils et les filles portent aussi les noms de leur père et de leur grand-père paternel, selon Peter Verney.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Tongue-tied: How interpreting errors hurt Sudanese asylum cases",
+                "author": "Peter Verney",
+                "year": 2019,
+                "url": "https://sssuk.org/sites/default/files/sudanStudies/SS59.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 68",
+                "notes": "Sudan Studies, no 59, janvier 2019. Lu le 11 octobre 2026 dans une copie archivée du numéro, le lien d'origine ne répondant plus. L'auteur écrit que, dans le système soudanais, fils et filles prennent aussi les noms de leur père et de leur grand-père paternel, ce qui déroute souvent les fonctionnaires européens, et cite le cas d'un Darfouri nommé Adam Suleiman."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Texte du Coran"
+            },
+            "statement": "Le nom Ahmed apparaît sous une forme proche, Aḥmad, dans le Coran, où Jésus annonce un messager « dont le nom sera Aḥmad », selon la traduction de Muhammad Hamidullah. C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne dit pas quand il a commencé à être porté en Afrique.",
+            "formAsWritten": "Aḥmad",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Le Coran, sourate 61, verset 6 — traduction de Muhammad Hamidullah",
+                "author": "Muhammad Hamidullah (traduction)",
+                "year": null,
+                "url": "https://quran.com/fr/61:6?translations=31",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "sourate 61, verset 6",
+                "notes": "Traduction française de Muhammad Hamidullah, lue sur le site Quran.com le 11 octobre 2026. Jésus y annonce « un Messager à venir après moi, dont le nom sera « Aḥmad » »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Axmed",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "som",
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Axmed est l'écriture somali d'Ahmed. Il entre dans le système somali de trois noms, celui de la personne, celui de son père et celui de son grand-père, sans nom de famille au sens européen, selon Cabdalla Cumar Mansuur, qui cite le nom Maxamed Cali Axmed.",
+            "sources": [
+              {
+                "title": "Somali names and individual identity",
+                "author": "Cabdalla Cumar Mansuur",
+                "year": 2021,
+                "url": "https://wardheernews.com/wp-content/uploads/2021/06/Somali-names-and-indvidual-identity-By-Abdalla-Mansuur.pdf",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Texte publié par WardheerNews le 14 juin 2021, lu le 11 octobre 2026 dans sa version en ligne sur le site du journal (wardheernews.com/somali-names-and-individual-identity), le PDF n'étant pas accessible ce jour-là. L'auteur décrit le système somali de trois noms : le nom personnel, celui du père et celui du grand-père ; il écrit qu'il n'existe pas de système de nom de famille et prend pour exemple le nom Maxamed Cali Axmed. Un autre de ses exemples, en écriture anglaise, emploie la forme Ahmed."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

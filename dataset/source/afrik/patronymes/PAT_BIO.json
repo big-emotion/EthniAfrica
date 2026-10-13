@@ -93,5 +93,109 @@
       "fieldPath": "homonyms",
       "reason": "Les usages de Bio comme nom simple ou élément de noms composés ont été recherchés dans Williams et Schottman ; aucune lignée homonyme distincte n'est démontrée."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Bio est un nom de personne des Baatombu, au Bénin et au Nigeria : c'est le nom d'un garçon, troisième enfant d'une série de noms qui suivent le rang de naissance. Ce n'est pas un nom de clan, mais il peut s'ajouter à un nom de clan. Les sources lues donnent deux récits sur l'origine de ces noms, que nous présentons plus bas. On ne sait pas avec certitude depuis quand le nom Bio est écrit.",
+    "names": [
+      {
+        "nameText": "Bio",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bba",
+        "namedBy": null,
+        "shortLine": "Le nom du troisième garçon dans la série des noms de rang de naissance des Baatombu, au Bénin et au Nigeria.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bio est le nom masculin du troisième enfant chez les Baatombu : la série des garçons est Woru, Sabi, Bio, Boni, Sani, Tori. Ces noms se transmettent par la mère et peuvent se porter seuls ; ils ne forment pas un nom de clan, selon Azibaoguanasi Williams.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Personal names and power: Binary personal naming system of the Baatombu people in Nigeria and Republic of Benin",
+                "author": "Azibaoguanasi Williams",
+                "year": 2023,
+                "url": "https://onomajournal.org/wp-content/uploads/2024/01/Onoma-58-3.03-Williams-final.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 320",
+                "notes": "Azibaoguanasi Williams, Onoma 58, 2023, p. 305-324, DOI 10.34158/ONOMA.58/2023/17. Article évalué, fondé sur des entretiens et observations de terrain au Nigeria et au Bénin entre 2018 et 2021. L'autrice emploie Baatombu, le nom que les personnes concernées se donnent. Page 315 : les noms de rang étaient ajoutés à un nom de clan, par exemple Woru-Mora, Bio-Gberu ou Sabi-Yeruma. Page 318 (table 2) : Bio Weene et Bio Waare figurent parmi les noms royaux masculins de la dynastie Morayara. Page 320 : table des noms de rang de naissance ouverts, où Bio est le nom masculin du troisième enfant (Woru, Sabi, Bio, Boni, Sani, Tori), avec Bake pour une fille ; ces noms sont transmis par la mère, peuvent se porter seuls ou s'ajouter à un autre nom ; une légende baatombu les tire des noms des trois fils de Kisra, une autre version dit qu'ils sont aussi anciens que la culture baatombu elle-même. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bio s'ajoute aussi à un nom de clan ou de maison, comme dans Bio-Gberu, et entre dans des noms royaux de la dynastie Morayara, Bio Weene et Bio Waare, selon Azibaoguanasi Williams.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Personal names and power: Binary personal naming system of the Baatombu people in Nigeria and Republic of Benin",
+                "author": "Azibaoguanasi Williams",
+                "year": 2023,
+                "url": "https://onomajournal.org/wp-content/uploads/2024/01/Onoma-58-3.03-Williams-final.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 315 ; p. 318",
+                "notes": "Azibaoguanasi Williams, Onoma 58, 2023, p. 305-324, DOI 10.34158/ONOMA.58/2023/17. Article évalué, fondé sur des entretiens et observations de terrain au Nigeria et au Bénin entre 2018 et 2021. L'autrice emploie Baatombu, le nom que les personnes concernées se donnent. Page 315 : les noms de rang étaient ajoutés à un nom de clan, par exemple Woru-Mora, Bio-Gberu ou Sabi-Yeruma. Page 318 (table 2) : Bio Weene et Bio Waare figurent parmi les noms royaux masculins de la dynastie Morayara. Page 320 : table des noms de rang de naissance ouverts, où Bio est le nom masculin du troisième enfant (Woru, Sabi, Bio, Boni, Sani, Tori), avec Bake pour une fille ; ces noms sont transmis par la mère, peuvent se porter seuls ou s'ajouter à un autre nom ; une légende baatombu les tire des noms des trois fils de Kisra, une autre version dit qu'ils sont aussi anciens que la culture baatombu elle-même. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Rapportée en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Bio viendrait, comme les autres noms de rang de naissance, des noms que portaient les trois fils du légendaire Kisra, selon une légende baatombu que rapporte Azibaoguanasi Williams.",
+            "hypothesisGroup": "origine du nom Bio",
+            "sources": [
+              {
+                "title": "Personal names and power: Binary personal naming system of the Baatombu people in Nigeria and Republic of Benin",
+                "author": "Azibaoguanasi Williams",
+                "year": 2023,
+                "url": "https://onomajournal.org/wp-content/uploads/2024/01/Onoma-58-3.03-Williams-final.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 320",
+                "notes": "Azibaoguanasi Williams, Onoma 58, 2023, p. 305-324, DOI 10.34158/ONOMA.58/2023/17. Article évalué, fondé sur des entretiens et observations de terrain au Nigeria et au Bénin entre 2018 et 2021. L'autrice emploie Baatombu, le nom que les personnes concernées se donnent. Page 315 : les noms de rang étaient ajoutés à un nom de clan, par exemple Woru-Mora, Bio-Gberu ou Sabi-Yeruma. Page 318 (table 2) : Bio Weene et Bio Waare figurent parmi les noms royaux masculins de la dynastie Morayara. Page 320 : table des noms de rang de naissance ouverts, où Bio est le nom masculin du troisième enfant (Woru, Sabi, Bio, Boni, Sani, Tori), avec Bake pour une fille ; ces noms sont transmis par la mère, peuvent se porter seuls ou s'ajouter à un autre nom ; une légende baatombu les tire des noms des trois fils de Kisra, une autre version dit qu'ils sont aussi anciens que la culture baatombu elle-même. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Rapportée en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Bio serait aussi ancien que la culture baatombu elle-même : selon une autre version, rapportée par Azibaoguanasi Williams, ce sont les Baatombu qui auraient donné ces noms aux fils de Kisra, et non l'inverse.",
+            "hypothesisGroup": "origine du nom Bio",
+            "sources": [
+              {
+                "title": "Personal names and power: Binary personal naming system of the Baatombu people in Nigeria and Republic of Benin",
+                "author": "Azibaoguanasi Williams",
+                "year": 2023,
+                "url": "https://onomajournal.org/wp-content/uploads/2024/01/Onoma-58-3.03-Williams-final.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 320",
+                "notes": "Azibaoguanasi Williams, Onoma 58, 2023, p. 305-324, DOI 10.34158/ONOMA.58/2023/17. Article évalué, fondé sur des entretiens et observations de terrain au Nigeria et au Bénin entre 2018 et 2021. L'autrice emploie Baatombu, le nom que les personnes concernées se donnent. Page 315 : les noms de rang étaient ajoutés à un nom de clan, par exemple Woru-Mora, Bio-Gberu ou Sabi-Yeruma. Page 318 (table 2) : Bio Weene et Bio Waare figurent parmi les noms royaux masculins de la dynastie Morayara. Page 320 : table des noms de rang de naissance ouverts, où Bio est le nom masculin du troisième enfant (Woru, Sabi, Bio, Boni, Sani, Tori), avec Bake pour une fille ; ces noms sont transmis par la mère, peuvent se porter seuls ou s'ajouter à un autre nom ; une légende baatombu les tire des noms des trois fils de Kisra, une autre version dit qu'ils sont aussi anciens que la culture baatombu elle-même. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

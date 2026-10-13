@@ -109,5 +109,125 @@
   "patronymicChainDepth": {
     "generations": 3,
     "sourceRefs": ["cultural-atlas-ethiopian-naming"]
+  },
+  "nameHistory": {
+    "summary": "Le nom Wolde Mariam est un nom personnel éthiopien qui sert aussi de nom du père : l'enfant porte après son propre nom celui de son père, qui change donc à chaque génération. On l'écrit aussi Walda Maryam. Nous présentons plus bas l'explication de son sens.",
+    "names": [
+      {
+        "nameText": "Wolde Mariam",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel éthiopien, porté comme nom du père ; il change à chaque génération.",
+        "periodLabel": "Écrit dès 1904 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1996,
+              "to": 1996,
+              "label": "Décrit en 1996"
+            },
+            "era": "modern",
+            "statement": "Le nom Wolde Mariam est un nom personnel en Éthiopie. Placé après le nom d'une personne, il est celui de son père : ce n'est pas un nom de famille transmis d'une génération à l'autre, selon le guide de catalogage de l'IFLA.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Names of Persons: National Usages for Entry in Catalogues",
+                "author": "IFLA Universal Bibliographic Control and International MARC Programme",
+                "year": 1996,
+                "url": "https://www.ifla.org/files/assets/cataloguing/pubs/names-of-persons_1996.pdf",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 64",
+                "notes": "Quatrième édition, 1996, lue dans le PDF de l'IFLA le 11 octobre 2026. La notice Éthiopie, vérifiée par la bibliothèque de l'université d'Addis-Abeba en 1994, range Wolde Mariam parmi les noms personnels du père, composés et parfois écrits en un seul mot. Elle note que le Code civil de 1960 prescrit un nom de famille, usage qui ne s'est pas encore répandu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1987,
+              "to": 1987,
+              "label": "Proposé en 1987"
+            },
+            "era": "modern",
+            "statement": "Le nom Wolde Mariam voudrait dire « fils de Marie » : wolde viendrait du guèze walda, la forme liée de wald, « fils », selon le dictionnaire de Wolf Leslau.",
+            "hypothesisGroup": "origine du nom Wolde Mariam",
+            "sources": [
+              {
+                "title": "Comparative Dictionary of Geʿez (Classical Ethiopic)",
+                "author": "Wolf Leslau",
+                "year": 1987,
+                "url": "https://archive.org/details/leslau-comparative-dictionary-of-geez-1987",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 612",
+                "notes": "Wiesbaden, Otto Harrassowitz, 1987 ; lu sur une copie non officielle mise en ligne sur Internet Archive. Entrée wald : « son, child, boy, young one, disciple, servant », avec la forme liée walda, comme dans walda wald, « petit-fils »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "polity",
+            "statement": "Le nom Wolde Mariam apparaît par écrit sous une forme proche, Walda Mâryâm, dans une chronique du règne de Théodoros II traduite par Casimir Mondon-Vidailhet : c'est le nom que se donne l'auteur, un lettré du Choa. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Walda Mâryâm",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Casimir Mondon-Vidailhet",
+                "role": "publie cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Chronique de Théodoros II, roi des rois d'Éthiopie (1853-1868), d'après un manuscrit original",
+                "author": "Walda Mâryâm, traduit par Casimir Mondon-Vidailhet",
+                "year": 1904,
+                "url": "https://archive.org/details/chroniquedetho02wald",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 51",
+                "notes": "Paris, E. Guilmoto, 1904 ; lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. L'auteur de la chronique se présente lui-même : « son nom est Walda Mâryâm », originaire de Mehouy-Qollâ-Warraw, dans le Choa. La préface du traducteur le nomme « l'alaqâ Walda-Mâryâm »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Walda Maryam",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "polity",
+            "statement": "Le nom Walda Maryam est une autre transcription de Wolde Mariam, plus proche de l'écriture guèze ; Casimir Mondon-Vidailhet l'écrit Walda Mâryâm.",
+            "sources": [
+              {
+                "title": "Chronique de Théodoros II, roi des rois d'Éthiopie (1853-1868), d'après un manuscrit original",
+                "author": "Walda Mâryâm, traduit par Casimir Mondon-Vidailhet",
+                "year": 1904,
+                "url": "https://archive.org/details/chroniquedetho02wald",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 51",
+                "notes": "Paris, E. Guilmoto, 1904 ; lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. L'auteur de la chronique se présente lui-même : « son nom est Walda Mâryâm », originaire de Mehouy-Qollâ-Warraw, dans le Choa. La préface du traducteur le nomme « l'alaqâ Walda-Mâryâm »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -11,13 +11,19 @@
     {
       "spelling": "Kollie",
       "attestations": [
-        { "countryId": "LBR", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "LBR",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     },
     {
       "spelling": "Kolli",
       "attestations": [
-        { "countryId": "LBR", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "LBR",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -81,5 +87,42 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kollie est un nom de personne des Kpelle, au Liberia. Les sources lues ne disent ni ce qu'il veut dire ni depuis quand il est écrit : on ne sait pas avec certitude d'où il vient.",
+    "names": [
+      {
+        "nameText": "Kollie",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne kpelle du Liberia ; son origine reste inconnue.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Décrit en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Kollie est un nom de personne que le Dictionary of American Family Names trouve chez les Kpelle du Liberia, sans en expliquer l'origine. Le dictionnaire traite à part un nom allemand de même forme, lui aussi inexpliqué.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Kollie",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/kollie?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lu le 13 octobre 2026 ; le site affiche une traduction française. La notice dit : Afrique de l'Ouest (Libéria) : du nom personnel Kollie, d'étymologie inexpliquée, trouvé chez le peuple kpelle ; allemand : inexpliqué. Elle ajoute que le nom est rare aux États-Unis et très rare en Allemagne."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

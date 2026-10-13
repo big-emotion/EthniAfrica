@@ -273,7 +273,6 @@
               "to": 728,
               "label": "Avant 728"
             },
-            "era": "polity",
             "statement": "Le nom Gorane apparaît, sous la forme Kurān ou Korān, chez l'auteur arabe Wahb ibn Munabbih, qui écrivait avant 728, selon Tadeusz Lewicki. C'est la plus ancienne trace de ce nom que le projet connaît. Les Daza existaient déjà avant lui.",
             "birth": true,
             "sources": [
@@ -303,7 +302,8 @@
         "Tibbu",
         "Tebou",
         "Gorane (terme arabe pour les Daza)",
-        "Umbararo"
+        "Umbararo",
+        "Tubu"
       ],
       "originOfExonyms": "Le terme Toubou viendrait du vieux tebu : tou (Tibesti, massif montagneux) et bou (habitants, en kanembou) ; il voudrait donc dire habitants du Tibesti. Le terme Gorane, utilisé par les Arabes et repris par l'administration coloniale française, désigne plus particulièrement les Daza. Hérodote mentionna des troglodytes éthiopiens que l'on identifie parfois aux ancêtres des Toubou.",
       "whyProblematic": "Les Kanembou ont donné le nom Toubou à l'ensemble du groupe. Ses deux principales composantes se nomment elles-mêmes Teda et Daza. L'usage de Gorane pour les Daza ajoute une possibilité de confusion.",
@@ -320,7 +320,10 @@
       "Anakaza (clan Daza, nord-central du Tchad)",
       "Maghya (Magomi, ancienne tribu royale liée aux dynasties du Kanem-Bornu)",
       "Tumagra (clan Teda du Tibesti, source de l'autorité du derde)",
-      "Kréda / Karra (groupe apparenté, Bahr el Ghazal)"
+      "Kréda / Karra (groupe apparenté, Bahr el Ghazal)",
+      "Teda du Kawar (Niger oriental, oasis de Kawar)",
+      "Teda du Nigeria (petite communauté dans le nord-est)",
+      "Teda du Soudan (communauté diasporique)"
     ],
     "origins": {
       "ancientOrigins": "Les Toubou sont un peuple nilo-saharien autochtone du Sahara central, dont les origines remontent à la période du Sahara vert (avant 3000 av. J.-C.). Les théories sur leur origine sont débattues : certains auteurs les font venir du Fezzan ou du Kawar (actuelle Libye), d'autres les rattachent à des populations nilotiques, d'autres encore les considèrent comme des Berbères métissés de populations sub-sahariennes. Les Toubou sont mentionnés par Ibn Qutaybah au 8e siècle aux côtés des Zaghawa, et par al-Khwarizmi au 9e siècle sous le nom de Daza. Hérodote évoque au 5e siècle av. J.-C. des troglodytes éthiopiens vivant dans des grottes du Sahara, parfois identifiés comme leurs lointains ancêtres.",
@@ -329,7 +332,9 @@
         "Populations autochtones du Sahara central, sans migration fondatrice documentée",
         "Expansion vers le Fezzan libyen et les oasis de Koufra, Kufra et Awjila (Libye)",
         "Expansion vers le Kawar et Bilma (Niger), dont l'oasis était sous leur contrôle jusqu'en 1870",
-        "Dispersion dans les grandes villes tchadiennes (N'Djamena, Faya-Largeau) aux 20e-21e siècles"
+        "Dispersion dans les grandes villes tchadiennes (N'Djamena, Faya-Largeau) aux 20e-21e siècles",
+        "Circuits de nomadisme pastoral entre le Tibesti et les oasis du Kawar (Niger) et du Fezzan (Libye)",
+        "Migrations saisonnières vers le Borkou et l'Ennedi (Tchad) pour les pâturages"
       ],
       "historicalSettlementZones": [
         "Massif du Tibesti (Tchad septentrional) : coeur historique des Teda, altitude jusqu'à 3415 m (Emi Koussi)",
@@ -337,7 +342,8 @@
         "Ennedi (Fada) : zone des Daza orientaux",
         "Fezzan (Libye méridionale) : présence historique des Teda et Daza",
         "Kawar et Bilma (Niger) : oasis sous influence toubou jusqu'au 19e siècle",
-        "Bahr el Ghazal et Kanem (Tchad occidental) : zone des Daza méridionaux"
+        "Bahr el Ghazal et Kanem (Tchad occidental) : zone des Daza méridionaux",
+        "Nord-est du Nigeria : petite diaspora"
       ],
       "unificationsOrDivisions": "Les Teda (nord, Tibesti) et les Daza (sud, Borkou-Ennedi) constituent les deux sous-groupes principaux, parlant des langues nilo-sahariennes proches mais distinctes (Tedaga et Dazaga). Les Daza sont plus nombreux. L'autorité traditionnelle suprême est le derde, chef spirituel issu du clan Tumagra des Teda, résidant à Zouar. En pratique, les Toubou sont très individualistes, organisés en clans et sous-clans jaloux de leur autonomie. Une tentative d'organisation politique commune est incarnée par le Conseil national toubou (créé en 1999) qui revendique un État autonome dans le nord du Tchad, le sud de la Libye et le nord-est du Niger.",
       "externalInfluences": "Islamisation progressive à partir du 11e-12e siècle via l'empire Kanem-Bornu. Contacts avec les Touaregs (Niger occidental), les Zaghawa (est), les Arabes (Libye). Colonisation française (début 20e siècle) : administration militaire maintenue dans la région BET jusqu'en 1965. Pression ottomane via la Libye. Conflit avec la Libye de Kadhafi : dépossession de la citoyenneté des Toubous libyens (2007), expulsions (2009), révolte TFSL (2008).",
@@ -375,7 +381,7 @@
     "demography": {
       "totalPopulation": 5745000,
       "referenceYear": 2025,
-      "source": "Estimations basées sur Wikipedia FR (Toubou), SIL Ethnologue (Tedaga tuq, Dazaga dzg), Minority Rights Group International, recensements tchadien (2009 BET : 286 986 hab., dont 55,96 % Daza et 22,63 % Teda) et nigérien. Note : les estimations varient fortement selon les sources (de 200 000 selon certaines sources anciennes à plus de 5 millions selon les sources récentes incluant la diaspora et les groupes apparentés).",
+      "source": "Estimations basées sur Wikipedia FR (Toubou), SIL Ethnologue (Tedaga tuq, Dazaga dzg), Minority Rights Group International, recensements tchadien (2009 BET : 286 986 hab., dont 55,96 % Daza et 22,63 % Teda) et nigérien. Note : les estimations varient fortement selon les sources (de 200 000 selon certaines sources anciennes à plus de 5 millions selon les sources récentes incluant la diaspora et les groupes apparentés). Pour les seuls Teda, une estimation donne 160 700 personnes en 2025 (Joshua Project), dont 112 000 au Tchad, 29 000 au Niger et 4 700 au Nigeria.",
       "distributionByCountry": [
         {
           "country": "TCD",
@@ -439,6 +445,35 @@
         "title": "Africa Is a Country - A forsaken people (2021)",
         "url": "https://africasacountry.com/2021/04/a-forsaken-people",
         "tier": "referenced"
+      },
+      {
+        "title": "Britannica — Teda people",
+        "url": "https://www.britannica.com/topic/Teda",
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
+      },
+      {
+        "title": "Joshua Project — Tedaga language (tuq)",
+        "url": "https://joshuaproject.net/languages/tuq",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      },
+      {
+        "title": "Joshua Project — Tubu Teda in Chad",
+        "url": "https://joshuaproject.net/people_groups/15316/CD",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      },
+      {
+        "title": "Amara Accessibility Media — Tedaga language now supported on Amara",
+        "url": "https://blog.amara.org/2020/09/14/tedaga-language-now-supported-on-amara/",
+        "tier": "needs_review"
+      },
+      {
+        "title": "Country Studies US — Chad",
+        "url": "https://countrystudies.us/chad/19.htm",
+        "tier": "referenced",
+        "source_kind": "government"
       }
     ]
   }

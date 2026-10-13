@@ -7,7 +7,7 @@
     "appellations": {
       "mainName": "Bisa",
       "selfAppellation": "Bisa",
-      "exonyms": ["Wisa", "Biisa", "Vaviza", "Muizas"],
+      "exonyms": ["Wisa", "Biisa", "Vaviza", "Muizas", "Wiza", "Muiza"],
       "originOfExonyms": "Dans le journal de voyage de Lacerda (1798), le chroniqueur Dionizio Rebello Curvo designa les Bisa sous le nom de Vaviza ou Muizas. Ces termes exonyms sont aujourd'hui obsoletes. Le terme Wisa ou Biisa est utilise pour designer la langue dans certaines classifications (Maho 2009).",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Bisa est utilise couramment en Zambie et dans les sources academiques et missionnaires. La langue est souvent classee sous l'appellation Lala-Bisa (code ISO 639-3 leb) en raison de la parente etroite entre les langues Bisa et Lala. Le Joshua Project distingue les Bisa (436 000) et les Lala-Bisa (864 000) comme groupes separés.",
@@ -113,6 +113,274 @@
         "title": "Bisa Tribe Safari Tours – Kingsfari",
         "url": "https://www.kingsfari.com/experiences/bisa-tribe-of-zambia",
         "tier": "unverified"
+      },
+      {
+        "title": "Joshua Project – Lala-Bisa in Zambia",
+        "url": "https://joshuaproject.net/people_groups/19057/ZA",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bisa désigne un peuple bantou du nord-est de la Zambie, entre le lac Bangweulu et les monts Muchinga, qui se nomme lui-même Bisa. À la fin du XVIIIe siècle, les Portugais de Tete l'appelaient Muizas, et sa langue est classée aujourd'hui sous le nom de lala-bisa. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Bisa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; Livingstone l'écrit Babisa en 1857.",
+        "periodLabel": "Écrit depuis 1857 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bisa désigne aujourd'hui un peuple du nord-est de la Zambie, dont le pays s'étend entre le Luapula et les monts Muchinga, selon l'Histoire générale de l'Afrique. Les sources que nous avons lues n'expliquent pas l'origine de ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 21 : La Zambézie du Nord : la région du lac Malawi",
+                "author": "K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 691",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bisa entre aussi dans le nom lala-bisa, que le catalogue Glottolog donne à la langue que les Bisa partagent avec leurs voisins lala.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog, fiche « Lala-Bisa »",
+                "author": "Glottolog (Institut Max Planck d'anthropologie évolutionniste)",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/lala1264",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues du monde, consulté le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "À la veille de la conquête coloniale"
+            },
+            "era": "polity",
+            "statement": "Le nom Bisa désigne, chez l'historien David Chanaiwa, l'une des petites communautés de la future Rhodésie du Nord, avec les Lungu, les Iwa et les Senga. Victimes des raids de royaumes voisins, elles espèrent obtenir des Britanniques « la protection, la paix et la sécurité ».",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VII, ch. 9 : Initiatives et résistances africaines en Afrique méridionale",
+                "author": "David Chanaiwa",
+                "year": 1987,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 222",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "1873"
+            },
+            "era": "polity",
+            "statement": "Le nom Bisa change de forme selon la langue de celui qui parle, selon l'explorateur Richard Burton : Livingstone écrit Abisa ou Babisa, comme les Makololo, et le swahili dit Wabisa ou Wabisha. Burton y rattache les Muizas des écrits portugais.",
+            "sources": [
+              {
+                "title": "The Lands of Cazembe: Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida, traduit et annoté par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/landsofcazembel00roya",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 33, note",
+                "notes": "Londres, John Murray pour la Royal Geographical Society, 1873, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Note de Burton sur la lettre de Lacerda : « Dr. Livingstone writes à la Makololo Abisa, or Babisa, the Kisawahili Wabisa or Wabisha »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Bisa apparaît sous une forme proche, Babisa, dans le récit de voyage de David Livingstone, paru en 1857. Il y croise des marchands babisa qui apportent des cotonnades depuis Mozambique, et il écrit que Babisa, ou Aiza, est « le nom propre d'une grande tribu du nord ». C'est la plus ancienne trace de cette forme que le projet connaît. Le peuple existait déjà avant elle, sous le nom de Muizas dans les écrits portugais.",
+            "formAsWritten": "Babisa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 567 et p. 617",
+                "notes": "Londres, John Murray, 1857, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Page 567 : « English cotton goods which come from Mozambique by Babisa traders » ; page 617 : « Moiza or Muiza, the singular of the word Babisa or Aiza, the proper name of a large tribe to the north ». Livingstone traverse la région en 1855-1856."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1750,
+              "to": 1830,
+              "label": "Vers 1750-1830"
+            },
+            "era": "polity",
+            "statement": "Le nom Bisa désigne, chez les historiens K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila, un peuple de marchands. À partir de 1750 environ, les Bisa portent l'ivoire vers les Yao et la côte, et ils ont en 1775 la réputation d'être l'une des nations les plus tournées vers le commerce de la région.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 21 : La Zambézie du Nord : la région du lac Malawi",
+                "author": "K. M. Phiri, O. J. M. Kalinga et H. H. K. Bhila",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 691",
+                "notes": "UNESCO, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Muizas",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom qu'écrivent les Portugais de Tete en 1798 ; Livingstone y voit le singulier de Babisa.",
+        "periodLabel": "Écrit en 1798 ; sorti de l'usage",
+        "accounts": [
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "1873"
+            },
+            "era": "polity",
+            "statement": "Le nom Muizas s'écrit aussi Moizes, Movizas, Invizas ou Aizas, selon les auteurs que relève l'explorateur Richard Burton en 1873.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Lands of Cazembe: Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida, traduit et annoté par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/landsofcazembel00roya",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 33, note",
+                "notes": "Londres, John Murray pour la Royal Geographical Society, 1873, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Note de Burton : « Also termed Moizes, Movizas, Invizas, and Aizas »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "Proposée en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Muizas viendrait de Muiza, le singulier de Babisa, selon David Livingstone. D'après lui, le nom Monomoizes des anciens auteurs portugais serait formé sur ce mot, avec mono, « chef », comme si l'on appelait les Écossais « les lords Douglas ».",
+            "sources": [
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 617",
+                "notes": "Londres, John Murray, 1857, lu dans la numérisation d'Internet Archive le 11 octobre 2026. « Monomoizes was formed from Moiza or Muiza, the singular of the word Babisa or Aiza » ; Livingstone précise que mono, moene ou mona veulent dire « chef »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1798,
+              "to": 1798,
+              "label": "1798"
+            },
+            "era": "polity",
+            "statement": "Le nom Muizas apparaît dans une lettre que Francisco de Lacerda e Almeida, gouverneur portugais des Rios de Sena, écrit à Tete le 22 mars 1798 : le Kazembe, écrit-il, règne sur les Muizas. Il rapporte aussi qu'en 1793 des marchands muizas sont venus vendre de l'ivoire à un Portugais de la région. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Muizas",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Francisco José de Lacerda e Almeida",
+                "role": "gouverneur portugais des Rios de Sena, auteur de la lettre"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Lands of Cazembe: Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida, traduit et annoté par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/landsofcazembel00roya",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 33 et p. 35",
+                "notes": "Londres, John Murray pour la Royal Geographical Society, 1873, lu dans la numérisation d'Internet Archive le 11 octobre 2026. La lettre est datée de Tete, le 22 mars 1798 (note p. 33). Page 33 : « now rules, as an independent prince, the Muizas » ; page 35 : « In 1793 they came to trade with him in ivory ». Le titre de gouverneur des Rios de Sena est donné p. 50."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Vaviza",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre forme du nom, relevée par Burton en 1873.",
+        "periodLabel": "Rapporté en 1873",
+        "accounts": [
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "1873"
+            },
+            "era": "polity",
+            "statement": "Le nom Vaviza est la forme que préfère un auteur que Burton nomme Das Neves, selon la note de Richard Burton publiée en 1873. C'est la plus ancienne trace de ce nom que le projet connaît, de seconde main : nous n'avons pas lu Das Neves.",
+            "formAsWritten": "Vaviza",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lands of Cazembe: Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida, traduit et annoté par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/landsofcazembel00roya",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 33, note",
+                "notes": "Londres, John Murray pour la Royal Geographical Society, 1873, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Note de Burton : « Das Neves (p. 397) prefers \"Vaviza\" ». Le journal de 1798 écrit aussi « Yaviza (Muizas) » p. 49, sans doute la même forme mal imprimée ou mal numérisée."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

@@ -17,6 +17,159 @@
     { "name": "Luba", "peopleId": "PPL_LUBA" },
     { "name": "Luba-Katanga", "peopleId": "PPL_LUBA_KATANGA" }
   ],
+  "nameHistory": {
+    "summary": "Le nom kiluba désigne la langue des Luba du Katanga, dans le sud-est de la République démocratique du Congo, et c'est le nom que ses locuteurs lui donnent. On y retrouve le nom des Luba, précédé de ki- ; au Kasaï, le même nom se dit tshiluba. Les linguistes l'appellent aussi luba-katanga. Les sources que nous avons lues n'expliquent pas l'origine du nom Luba lui-même.",
+    "names": [
+      {
+        "nameText": "Kiluba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lub",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue des Luba du Katanga, formé sur le nom du peuple.",
+        "periodLabel": "Écrit dès 1908 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom kiluba désigne la langue parlée au Katanga, alors appelé Shaba ; elle diffère très nettement des langues parlées au Kasaï, selon Ndaywel è Nziem.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 20 : Le système politique luba et lunda : émergence et expansion",
+                "author": "Ndaywel è Nziem",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 651",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé du volume le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens donné par les auteurs"
+            },
+            "statement": "Le nom kiluba est formé sur le nom des Luba, précédé d'un préfixe. Un tel préfixe sert à former le nom d'une langue, comme Buluba, « la langue des Baluba », chez William M. Morrison en 1906. Au Katanga, J.-M. Jenniges note en 1908 que ki- se prononce tshi- quand on va vers le nord : on dit tshi-tanda pour ki-tanda. Nous n'avons pas trouvé de source qui explique l'origine du nom Luba lui-même.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Grammar and Dictionary of the Buluba-Lulua Language as spoken in the Upper Kasai and Congo Basin",
+                "author": "William M. Morrison",
+                "year": 1906,
+                "url": "https://archive.org/details/grammaranddicti01missgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 16",
+                "notes": "New York, American Tract Society, 1906, pour la mission presbytérienne américaine de Luebo. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              },
+              {
+                "title": "Traité de kiluba-sanga, tel qu'il est parlé au secteur du Haut-Luapula (Katanga) et régions limitrophes",
+                "author": "J.-M. Jenniges",
+                "year": 1908,
+                "url": "https://archive.org/details/traitdekilubas00jennuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "page de titre et prolégomènes, § 1, alphabet",
+                "notes": "Publication de l'État indépendant du Congo, 1908. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1909,
+              "to": 1909,
+              "label": "1909"
+            },
+            "era": "colonial",
+            "statement": "Le nom kiluba figure dans le titre du dictionnaire d'Em. Jenniges, publié par le ministère des Colonies de Belgique, qui expose « la langue kiluba telle qu'elle se parle au Katanga ».",
+            "sources": [
+              {
+                "title": "Dictionnaire français-kiluba, exposant le vocabulaire de la langue kiluba telle qu'elle se parle au Katanga",
+                "author": "Em. Jenniges",
+                "year": 1909,
+                "url": "https://archive.org/details/dictionnairefran00jennuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "page de titre",
+                "notes": "Publié par le ministère des Colonies de Belgique, Bruxelles, 1909. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1908,
+              "to": 1908,
+              "label": "1908"
+            },
+            "era": "colonial",
+            "statement": "Le nom kiluba figure dans le titre du traité de J.-M. Jenniges, publié par l'État indépendant du Congo, qui décrit le kiluba-sanga parlé au Haut-Luapula, au Katanga. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Traité de kiluba-sanga, tel qu'il est parlé au secteur du Haut-Luapula (Katanga) et régions limitrophes",
+                "author": "J.-M. Jenniges",
+                "year": 1908,
+                "url": "https://archive.org/details/traitdekilubas00jennuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "page de titre et prolégomènes, § 1, alphabet",
+                "notes": "Publication de l'État indépendant du Congo, 1908. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Luba-Katanga",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les linguistes donnent au kiluba, pour le distinguer du luba du Kasaï.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom luba-katanga est celui que le catalogue Glottolog donne au kiluba, pour le distinguer du luba-lulua parlé au Kasaï. L'historien Ndaywel è Nziem appelle les Luba du Katanga Luba shankadi. Nous n'avons pas trouvé la plus ancienne trace de ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog — Luba-Katanga (luba1250)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/luba1250",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche lue le 11 octobre 2026."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 20 : Le système politique luba et lunda : émergence et expansion",
+                "author": "Ndaywel è Nziem",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 643",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé du volume le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": "non_vehicular",
     "dialects": [],

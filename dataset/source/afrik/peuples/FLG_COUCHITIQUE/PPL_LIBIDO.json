@@ -100,8 +100,8 @@
         "source_kind": "missionary_database"
       },
       {
-        "title": "Getachew & Jima — A History of the Mareko People (Southern Ethiopia), Jimma University repository, 2017",
-        "url": "https://repository.ju.edu.et/bitstream/handle/123456789/1309/",
+        "title": "Yohannes Tesfaye — A History of the Mareko People (Southern Ethiopia) 1880s-1991, Jimma University repository, 2017",
+        "url": "https://repository.ju.edu.et/handle/123456789/1309",
         "tier": "referenced",
         "source_kind": "academic"
       },
@@ -109,6 +109,266 @@
         "title": "Maaga Indigenous Conflict Resolution Institution among Libido People. International Journal of Scientific and Research Publications, 2016",
         "url": "https://www.ijsrp.org/research-paper-0116/ijsrp-p4949.pdf",
         "tier": "needs_review"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Libido désigne un peuple du centre-sud de l'Éthiopie, dans la zone de Gurage, et sa langue. Il se nomme lui-même Libido, mais ses voisins l'appellent Mareko, un nom qui désignait d'abord la région à l'ouest du lac Zway. Les sources ne s'accordent pas sur l'origine du nom Mareko ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Libido",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "liq",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; on ne sait pas quand il a été écrit pour la première fois.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Libido désigne un peuple du centre-sud de l'Éthiopie, que ses voisins appellent Mareko. Selon Yohannes Tesfaye, les deux noms sont employés l'un pour l'autre, et les Mareko disent aussi se nommer Libido. Leur langue, le libixxan, est celle « qui appartient aux Libido ». On ne sait pas avec certitude quand le nom Libido a été écrit pour la première fois.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A history of the Mareko people (southern Ethiopia) 1880s-1991",
+                "author": "Yohannes Tesfaye",
+                "year": 2017,
+                "url": "https://repository.ju.edu.et/handle/123456789/1309",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11 et p. 16",
+                "notes": "Mémoire de master en histoire, Université de Jimma, février 2017. Lu le 13 octobre 2026 dans le PDF du mémoire, pagination imprimée. L'auteur s'appuie sur des informateurs mareko (dont Edemo Kamilo, Hailu Gagoro et Demeke Ahmed), sur Edemo Herego (1998), Tesfa Gebreyese, Philippe Lebel (1974) et Valentina Peveri (2015), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Libido serait celui du père des Libido, venu d'Arabie et installé à Harar, d'où ses enfants se seraient dispersés en trois groupes, selon les traditions orales des Libido que rapporte Yohannes Tesfaye.",
+            "hypothesisGroup": "libido-origine",
+            "sources": [
+              {
+                "title": "A history of the Mareko people (southern Ethiopia) 1880s-1991",
+                "author": "Yohannes Tesfaye",
+                "year": 2017,
+                "url": "https://repository.ju.edu.et/handle/123456789/1309",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11",
+                "notes": "Mémoire de master en histoire, Université de Jimma, février 2017. Lu le 13 octobre 2026 dans le PDF du mémoire, pagination imprimée. L'auteur s'appuie sur des informateurs mareko (dont Edemo Kamilo, Hailu Gagoro et Demeke Ahmed), sur Edemo Herego (1998), Tesfa Gebreyese, Philippe Lebel (1974) et Valentina Peveri (2015), que nous n'avons pas lus."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mareko",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les voisins des Libido",
+        "shortLine": "Le nom que les voisins donnent aux Libido, d'abord celui de leur région ; sa plus ancienne trace lue date de 1890.",
+        "periodLabel": "Écrit Marako dès 1890 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Mareko aurait d'abord servi à nommer la région à l'ouest du lac Zway, avant de nommer aussi les gens qui y vivent, selon Yohannes Tesfaye. Les voisins l'ont employé les premiers pour désigner cette région. Son origine est discutée : les explications sont présentées à part.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A history of the Mareko people (southern Ethiopia) 1880s-1991",
+                "author": "Yohannes Tesfaye",
+                "year": 2017,
+                "url": "https://repository.ju.edu.et/handle/123456789/1309",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 16-17",
+                "notes": "Mémoire de master en histoire, Université de Jimma, février 2017. Lu le 13 octobre 2026 dans le PDF du mémoire, pagination imprimée. L'auteur s'appuie sur des informateurs mareko (dont Edemo Kamilo, Hailu Gagoro et Demeke Ahmed), sur Edemo Herego (1998), Tesfa Gebreyese, Philippe Lebel (1974) et Valentina Peveri (2015), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Mareko viendrait de Marqos : vers 1284, le missionnaire orthodoxe Abune Zena Marqos aurait fondé une église nommée Marqos à l'emplacement de la ville de Koshe, et ce nom serait devenu Mareko ou Mareqo, nom de la région puis du peuple, selon Tesfa Gebreyese et Philippe Lebel (1974), que cite Yohannes Tesfaye. Il juge cette explication religieuse la plus probable.",
+            "hypothesisGroup": "mareko-origine",
+            "sources": [
+              {
+                "title": "A history of the Mareko people (southern Ethiopia) 1880s-1991",
+                "author": "Yohannes Tesfaye",
+                "year": 2017,
+                "url": "https://repository.ju.edu.et/handle/123456789/1309",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 15 et p. 17",
+                "notes": "Mémoire de master en histoire, Université de Jimma, février 2017. Lu le 13 octobre 2026 dans le PDF du mémoire, pagination imprimée. L'auteur s'appuie sur des informateurs mareko (dont Edemo Kamilo, Hailu Gagoro et Demeke Ahmed), sur Edemo Herego (1998), Tesfa Gebreyese, Philippe Lebel (1974) et Valentina Peveri (2015), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Mareko viendrait de l'empereur Menelik II : après avoir vaincu les Libido, il aurait salué le discours d'un de leurs anciens, doux « comme du miel », et dit qu'il les appellerait désormais ye mare eqa, selon des informateurs mareko que rapporte Yohannes Tesfaye, qui cite Edemo Herego (1998).",
+            "hypothesisGroup": "mareko-origine",
+            "sources": [
+              {
+                "title": "A history of the Mareko people (southern Ethiopia) 1880s-1991",
+                "author": "Yohannes Tesfaye",
+                "year": 2017,
+                "url": "https://repository.ju.edu.et/handle/123456789/1309",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 15-16",
+                "notes": "Mémoire de master en histoire, Université de Jimma, février 2017. Lu le 13 octobre 2026 dans le PDF du mémoire, pagination imprimée. L'auteur s'appuie sur des informateurs mareko (dont Edemo Kamilo, Hailu Gagoro et Demeke Ahmed), sur Edemo Herego (1998), Tesfa Gebreyese, Philippe Lebel (1974) et Valentina Peveri (2015), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Mareko viendrait de ye mare eqaye, « mon pot de miel » : Menelik II aurait ainsi nommé le peuple à cause du tribut de miel qu'il lui payait, selon la plupart des Mareko et selon Sintayhu Worku, que cite Yohannes Tesfaye.",
+            "hypothesisGroup": "mareko-origine",
+            "sources": [
+              {
+                "title": "A history of the Mareko people (southern Ethiopia) 1880s-1991",
+                "author": "Yohannes Tesfaye",
+                "year": 2017,
+                "url": "https://repository.ju.edu.et/handle/123456789/1309",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 16",
+                "notes": "Mémoire de master en histoire, Université de Jimma, février 2017. Lu le 13 octobre 2026 dans le PDF du mémoire, pagination imprimée. L'auteur s'appuie sur des informateurs mareko (dont Edemo Kamilo, Hailu Gagoro et Demeke Ahmed), sur Edemo Herego (1998), Tesfa Gebreyese, Philippe Lebel (1974) et Valentina Peveri (2015), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Mareko servirait chez les Wolayta à désigner les Hadiya et voudrait dire « Arabes », selon des étudiants wolayta que cite Yohannes Tesfaye, qui renvoie à Valentina Peveri (2015).",
+            "hypothesisGroup": "mareko-origine",
+            "sources": [
+              {
+                "title": "A history of the Mareko people (southern Ethiopia) 1880s-1991",
+                "author": "Yohannes Tesfaye",
+                "year": 2017,
+                "url": "https://repository.ju.edu.et/handle/123456789/1309",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17",
+                "notes": "Mémoire de master en histoire, Université de Jimma, février 2017. Lu le 13 octobre 2026 dans le PDF du mémoire, pagination imprimée. L'auteur s'appuie sur des informateurs mareko (dont Edemo Kamilo, Hailu Gagoro et Demeke Ahmed), sur Edemo Herego (1998), Tesfa Gebreyese, Philippe Lebel (1974) et Valentina Peveri (2015), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1890,
+              "to": 1890,
+              "label": "1890"
+            },
+            "era": "polity",
+            "statement": "Le nom Mareko apparaît sous la forme Marako chez l'explorateur Antoine d'Abbadie, dont le livre publié en 1890 écrit que Tufte est le pays que les Walayta nomment Marako. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Marako",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Géographie de l'Éthiopie : ce que j'ai entendu, faisant suite à ce que j'ai vu, tome I",
+                "author": "Antoine d'Abbadie",
+                "year": 1890,
+                "url": "https://archive.org/details/geographiedelet00abba",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 111",
+                "notes": "Paris, Gustave Mesnil, 1890. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, page vérifiée sur l'image. Passage : « Habaloso, Odoro et Fanta sont des lieux dans Tufte, nommé Marako par les Walayta »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tufte",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un ancien nom, que les Walayta rendent par Marako ; sa plus ancienne trace lue date de 1886.",
+        "periodLabel": "Écrit Tuftè dès 1886",
+        "accounts": [
+          {
+            "period": {
+              "from": 1890,
+              "to": 1890,
+              "label": "1890"
+            },
+            "era": "polity",
+            "statement": "Le nom Tufte désigne chez Antoine d'Abbadie un pays et un peuple que les Walayta nomment aussi Marako. Il écrit que les Danta ne se battent pas contre les Tufte ou Marako, parce qu'ils sont comme leurs esclaves.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Géographie de l'Éthiopie : ce que j'ai entendu, faisant suite à ce que j'ai vu, tome I",
+                "author": "Antoine d'Abbadie",
+                "year": 1890,
+                "url": "https://archive.org/details/geographiedelet00abba",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 111",
+                "notes": "Paris, Gustave Mesnil, 1890. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, page vérifiée sur l'image. D'Abbadie raconte ce qu'on lui a dit ; il ne date pas ses informations."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1886,
+              "to": 1886,
+              "label": "1886"
+            },
+            "era": "polity",
+            "statement": "Le nom Tuftè apparaît par écrit chez l'explorateur italien Antonio Cecchi : à l'est du Garo, de l'autre côté du Ghibiè, vivent les Tuftè, une population nomade et indépendante, qui élève des troupeaux et vit presque seulement de viande et de lait. Cecchi ne dit pas qu'ils s'appellent Marako ; d'Abbadie le dit en 1890. C'est la plus ancienne trace de ce nom que le projet a lue. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Tuftè",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Da Zeila alle frontiere del Caffa, vol. II",
+                "author": "Antonio Cecchi",
+                "year": 1886,
+                "url": "https://archive.org/details/dazeilaallefront02cecc",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 460, note 1",
+                "notes": "Roma, Ermanno Loescher, 1886, publié par la Société géographique italienne. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, page vérifiée sur l'image. Passage : « sono i Tuftè, popolazione nomade, indipendente, dedita alla pastorizia »."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

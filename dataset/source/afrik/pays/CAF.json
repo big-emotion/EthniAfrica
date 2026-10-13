@@ -624,7 +624,7 @@
         "name": "Sango",
         "selfAppellation": "Sango",
         "exonyms": ["Sango (terme utilisé par les Européens)"],
-        "peopleId": "PPL_SANGO",
+        "peopleId": "PPL_SANGO_SCT",
         "mainRegion": "Toutes les régions de la RCA",
         "languages": [
           "Sango (sag",
@@ -632,7 +632,7 @@
           "langue véhiculaire)",
           "français"
         ],
-        "languageFamily": "FLG_BANTU",
+        "languageFamily": "FLG_SOUDANIQUECENTRAL",
         "appellationRemarks": "\"Sango\" est l'auto-appellation. Pas de terme péjoratif connu. Le sango est une langue véhiculaire importante en RCA, parlée par la majorité de la population."
       },
       {
@@ -792,9 +792,9 @@
         {
           "name": "Sango",
           "percentageInCountry": 14.3,
-          "peopleId": "PPL_SANGO",
+          "peopleId": "PPL_SANGO_SCT",
           "region": "Toutes les régions de la RCA",
-          "languageFamily": "FLG_BANTU"
+          "languageFamily": "FLG_SOUDANIQUECENTRAL"
         },
         {
           "name": "Manja",

@@ -88,5 +88,64 @@
       "fieldPath": "homonyms",
       "reason": "Les trois gloses concurrentes de la même notice ont été vérifiées, mais aucune source consultée ne les rattache à des lignées homonymes distinctes."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ouoba est un nom de famille de l'est du Burkina Faso, porté autour de Fada N'Gourma. On ne sait pas avec certitude ce qu'il veut dire, et nous n'en connaissons pas de trace écrite ancienne ; la seule source relevée en propose plusieurs sens, que nous présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Ouoba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille de l'est du Burkina Faso ; son sens reste incertain.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ouoba est rattaché par le projet de répertoire des patronymes du Burkina Faso à des familles originaires de Kantchari et de Logobou, dans l'Est, que l'on trouve aussi à Fada N'Gourma et dans la Tapoa. On ne sait pas avec certitude ce qu'il veut dire, ni depuis quand il est écrit.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel du Burkina Faso",
+                "year": null,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 165",
+                "notes": "Document de travail daté de mai 2025 et marqué « version provisoire », sans validation finale visible, lu sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle de ce répertoire n'a été trouvée. Le document recueille des traditions sans appareil critique : ses explications restent des propositions. Notice OUOBA, lue en entier. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Proposé en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Ouoba voudrait dire « celui qui se lave lui-même », « il n'est pas tombé » ou « se cache et cherche ». Il viendrait de uooni, « se cacher », et de kiba, « gagner », selon le projet de répertoire des patronymes du Burkina Faso.",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel du Burkina Faso",
+                "year": null,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 165",
+                "notes": "Document de travail daté de mai 2025 et marqué « version provisoire », sans validation finale visible, lu sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle de ce répertoire n'a été trouvée. Le document recueille des traditions sans appareil critique : ses explications restent des propositions. Notice OUOBA : trois sens proposés, puis un rapprochement avec uooni et kiba, sans analyse linguistique. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

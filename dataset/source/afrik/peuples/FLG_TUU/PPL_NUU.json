@@ -124,5 +124,273 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nǀuu désigne la langue d'un peuple san du sud du Kalahari, en Afrique du Sud, et ce peuple lui-même, dont la communauté est aujourd'hui connue sous le nom de ǂKhomani. D'autres noms existent : Nǁŋǃke, écrit en 1930, et Nǀusan, un nom nama. Les sources disent peu de chose de l'origine de ces noms ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "Nǀuu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ngh",
+        "namedBy": null,
+        "shortLine": "Le nom de leur langue, dont Ouma Katrina Esau est la dernière locutrice courante.",
+        "usedIn": ["ngh", "eng", "afr"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Nǀuu, écrit N|uu, désigne une langue san de la famille tuu, dont Ouma Katrina Esau est la dernière locutrice courante, selon un article de l'université du Cap paru en 2023. Une vingtaine d'anciens la parlaient encore quand elle est réapparue dans le Cap-Nord, à la fin des années 1990. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ouma Katrina Esau: Reviving a language, one child at a time",
+                "author": "Nadia Krige",
+                "year": 2023,
+                "url": "https://www.news.uct.ac.za/article/-2023-03-31-ouma-katrina-esau-reviving-a-language-one-child-at-a-time",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "UCT News, université du Cap, 31 mars 2023."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2004,
+              "to": 2004,
+              "label": "2004"
+            },
+            "era": "modern",
+            "statement": "Le nom Nǀuu est écrit N|uu dans une vidéo de l'UNESCO et de Discovery Channel : la langue avait été déclarée éteinte en 1973, et un premier locuteur encore vivant a été identifié à la fin des années 1990.",
+            "sources": [
+              {
+                "title": "Language: Niuu (‡Khomani), South Africa",
+                "author": "Discovery Channel et UNWorks",
+                "year": 2004,
+                "url": "https://www.unesco.org/archives/multimedia/document-1781",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "Vidéo publiée par Discovery Channel avec UNWorks en 2004, conservée dans les archives multimédias de l'UNESCO ; texte d'accompagnement lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2019,
+              "label": "2018-2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Nǀuu a une forme proche, Nǀu, qui devient en 2018 le nom de référence de la langue dans la norme ISO 639-3 ; dès 2019, la norme la nomme Nǁng, sous le code ngh.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, code ngh : Nǁng",
+                "author": "SIL International",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/ngh",
+                "tier": "official",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "ǂKhomani",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la communauté aujourd'hui ; il est écrit dès 1936 pour une langue du nord de la Gordonia.",
+        "usedIn": ["eng", "afr"],
+        "periodLabel": "Écrit dès 1936 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2004,
+              "to": 2004,
+              "label": "2004"
+            },
+            "era": "modern",
+            "statement": "Le nom ǂKhomani désigne une communauté san d'Afrique du Sud, dont la plupart des membres parlent surtout le nama ou l'afrikaans ; le nǀuu ne s'emploie plus qu'entre ses derniers locuteurs, selon une vidéo de l'UNESCO et de Discovery Channel. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Language: Niuu (‡Khomani), South Africa",
+                "author": "Discovery Channel et UNWorks",
+                "year": 2004,
+                "url": "https://www.unesco.org/archives/multimedia/document-1781",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "Vidéo publiée par Discovery Channel avec UNWorks en 2004, conservée dans les archives multimédias de l'UNESCO ; texte d'accompagnement lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1956,
+              "to": 1956,
+              "label": "1956"
+            },
+            "era": "modern",
+            "statement": "Le nom ǂKhomani désigne, dans le dictionnaire de Dorothea Bleek, une langue du nord de la Gordonia, qu'elle range dans le groupe du sud.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Bushman Dictionary",
+                "author": "Dorothea F. Bleek",
+                "year": 1956,
+                "url": "https://archive.org/details/bushmandictionar00blee",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction, tableau des langues et dialectes",
+                "notes": "New Haven, American Oriental Society, publié après la mort de l'autrice. Lu sur la numérisation des bibliothèques de l'université de Floride. L'autrice emploie le nom « Bushman » de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1936,
+              "to": 1936,
+              "label": "1936"
+            },
+            "era": "modern",
+            "statement": "Le nom ǂKhomani apparaît dans le titre d'une étude de C. M. Doke sur la phonétique de leur langue, parue en 1936 dans la revue Bantu Studies, selon la bibliographie de Dorothea Bleek. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne vivait déjà dans le nord de la Gordonia.",
+            "formAsWritten": "ǂkhomani",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Bushman Dictionary",
+                "author": "Dorothea F. Bleek",
+                "year": 1956,
+                "url": "https://archive.org/details/bushmandictionar00blee",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction, index des références",
+                "notes": "New Haven, American Oriental Society, publié après la mort de l'autrice. Lu sur la numérisation des bibliothèques de l'université de Floride. L'autrice emploie le nom « Bushman » de son époque."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nǁŋǃke",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom écrit en 1930 pour un peuple de Griqualand West et de Gordonia ; il voudrait dire « gens de la maison ».",
+        "usedIn": ["eng"],
+        "periodLabel": "Écrit dès 1930",
+        "accounts": [
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "era": "modern",
+            "statement": "Le nom Nǁŋǃke apparaît sous une forme proche chez l'anthropologue Isaac Schapera, pour un peuple de Griqualand West et de Gordonia dont il ne reste, écrit-il, que quelques personnes employées dans les fermes du district de Langeberg. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne vivait là bien avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 32",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "Proposée en 1930"
+            },
+            "era": "modern",
+            "statement": "Le nom Nǁŋǃke voudrait dire « gens de la maison », selon Isaac Schapera.",
+            "hypothesisGroup": "origine du nom Nǁŋǃke",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 32",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nǀusan",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "naq",
+        "namedBy": "Nama",
+        "shortLine": "Un nom nama écrit dès 1861 ; on ne sait pas s'il désignait déjà les Nǀuu.",
+        "usedIn": ["naq", "eng"],
+        "periodLabel": "Écrit dès 1861",
+        "accounts": [
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nǀusan est, selon l'anthropologue Isaac Schapera, celui que les Nama donnent aux ǀnuǁen des vallées du haut Nossob et de l'Auob, dans le sud-est du Sud-Ouest africain.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 33",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1861,
+              "to": 1861,
+              "label": "1861"
+            },
+            "era": "polity",
+            "statement": "Le nom Nǀusan apparaît dans le titre d'une liste manuscrite de la « langue des ǀnusan », dialecte du Kalahari, que le missionnaire J. G. Krönlein envoie en 1861, selon Dorothea Bleek. C'est la plus ancienne trace de ce nom que le projet connaît. Les sources ne disent pas si ce nom désignait déjà les Nǀuu de Gordonia.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Bushman Dictionary",
+                "author": "Dorothea F. Bleek",
+                "year": 1956,
+                "url": "https://archive.org/details/bushmandictionar00blee",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction",
+                "notes": "New Haven, American Oriental Society, publié après la mort de l'autrice. Lu sur la numérisation des bibliothèques de l'université de Floride. L'autrice emploie le nom « Bushman » de son époque."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

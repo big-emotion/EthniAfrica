@@ -75,5 +75,65 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Chiziane est un nom de famille du Mozambique. On ne sait pas avec certitude d'où il vient ni ce qu'il veut dire : les sources consultées ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Chiziane",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille du Mozambique, dont les sources consultées n'expliquent pas l'origine.",
+        "periodLabel": "Écrit dès 1985",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Chiziane est un nom de famille du Mozambique. Les sources consultées ne disent ni d'où il vient ni ce qu'il veut dire. On ne sait pas avec certitude.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Sub-Saharan Africa Report, JPRS-SSA-85-078",
+                "author": "Joint Publications Research Service",
+                "year": 1985,
+                "url": "https://archive.org/details/jprs-report_jprs-ssa-85-078",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 52",
+                "notes": "Recueil du service américain de traduction et de reprise de presse, 30 août 1985, lu sur l'exemplaire numérisé d'archive.org. À la page 52, la brève « Cashew marketing figures », d'après le quotidien Notícias de Maputo du 1er juillet 1985, p. 2, rapporte une réunion tenue dans le district de Manjacaze, dans la province de Gaza, pour la fin de la vente des noix de cajou : un chèque est remis à un commerçant par « local party secretary Alberto Chiziane ». Elle ne dit rien de l'origine du nom. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "1er juillet 1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Chiziane apparaît par écrit dans une brève du quotidien Notícias de Maputo du 1er juillet 1985, traduite par le service américain JPRS. Alberto Chiziane, secrétaire local du parti, y remet un chèque à un commerçant du district de Manjacaze, dans la province de Gaza. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un journal l'a écrit, pas depuis quand des familles le portent.",
+            "formAsWritten": "Chiziane",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Sub-Saharan Africa Report, JPRS-SSA-85-078",
+                "author": "Joint Publications Research Service",
+                "year": 1985,
+                "url": "https://archive.org/details/jprs-report_jprs-ssa-85-078",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 52",
+                "notes": "Recueil du service américain de traduction et de reprise de presse, 30 août 1985, lu sur l'exemplaire numérisé d'archive.org. À la page 52, la brève « Cashew marketing figures », d'après le quotidien Notícias de Maputo du 1er juillet 1985, p. 2, rapporte une réunion tenue dans le district de Manjacaze, dans la province de Gaza, pour la fin de la vente des noix de cajou : un chèque est remis à un commerçant par « local party secretary Alberto Chiziane ». Elle ne dit rien de l'origine du nom. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

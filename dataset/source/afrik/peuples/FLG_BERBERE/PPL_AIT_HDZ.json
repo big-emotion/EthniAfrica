@@ -117,5 +117,207 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ait Hadiddou désigne une tribu de la confédération Ait Yafelman, dans le Haut Atlas du Maroc, qui se nomme elle-même Ait Hadiddou. D'autres formes existent : Haddidou, l'ancienne graphie, et Haliddou, la prononciation de leurs voisins Ayt Merγad. Les sources ne s'accordent pas sur l'origine du nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Ait Hadiddou",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tzm",
+        "namedBy": null,
+        "shortLine": "Le nom de cette tribu du Haut Atlas ; il renverrait à un ancêtre, Hadiddu.",
+        "periodLabel": "Écrit depuis 1888 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom Ait Hadiddou désigne une tribu de la confédération Ait Yafelman, qui compte aussi les Ait Izdig, les Ait Yihya et les Ait Murghad, selon l'anthropologue David M. Hart. Au XIXe siècle, le voyageur Charles de Foucauld la décrit comme une fraction très nombreuse, surtout nomade, installée à la source de l'oued Ziz. L'origine du nom est discutée ; les explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Ait 'Atta of Southern Morocco: Daily Life and Recent History",
+                "author": "David M. Hart",
+                "year": 1984,
+                "url": "https://archive.org/details/the-ait-atta-of-southern-morocco-daily-life-and-recent-history-david-hart-pdf_compress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 45-46",
+                "notes": "Wisbech, Middle East and North African Studies Press. Lu sur Internet Archive (copie non officielle), lu le 12 octobre 2026."
+              },
+              {
+                "title": "Reconnaissance au Maroc, 1883-1884 (Texte)",
+                "author": "Charles de Foucauld",
+                "year": 1888,
+                "url": "https://www.gutenberg.org/ebooks/75296",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 347",
+                "notes": "Paris, Challamel, 1888. Lu dans l'édition numérique du Projet Gutenberg, qui ne reprend pas la pagination de l'original ; la page est celle que donne l'index du volume pour le district des Aït Ḥediddou, lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1888,
+              "label": "1888"
+            },
+            "era": "polity",
+            "statement": "Le nom Ait Hadiddou apparaît sous une forme proche, « Aït Ḥediddou », chez Charles de Foucauld, dans le récit de son voyage de 1883-1884 publié en 1888. Il y parle d'une « fraction très nombreuse des Aït Iafelman, mais composée surtout de nomades ». C'est la plus ancienne trace de ce nom que le projet connaît. La tribu existait déjà avant lui.",
+            "birth": true,
+            "formAsWritten": "Aït Ḥediddou",
+            "sources": [
+              {
+                "title": "Reconnaissance au Maroc, 1883-1884 (Texte)",
+                "author": "Charles de Foucauld",
+                "year": 1888,
+                "url": "https://www.gutenberg.org/ebooks/75296",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 347",
+                "notes": "Paris, Challamel, 1888. Lu dans l'édition numérique du Projet Gutenberg, qui ne reprend pas la pagination de l'original ; la page est celle que donne l'index du volume pour le district des Aït Ḥediddou, lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "Rapportée en 1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Ait Hadiddou viendrait de Hadiddu, l'un des cinq fils de Midul, ancêtre de la confédération Ait Yafelman, selon une tradition de cette confédération que rapporte David M. Hart. Les autres fils seraient Izdig, Yihya, Agra et Yumur, ancêtres des tribus voisines.",
+            "hypothesisGroup": "origine du nom Ait Hadiddou",
+            "sources": [
+              {
+                "title": "The Ait 'Atta of Southern Morocco: Daily Life and Recent History",
+                "author": "David M. Hart",
+                "year": 1984,
+                "url": "https://archive.org/details/the-ait-atta-of-southern-morocco-daily-life-and-recent-history-david-hart-pdf_compress",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 46",
+                "notes": "Wisbech, Middle East and North African Studies Press. Lu sur Internet Archive (copie non officielle), lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "Rapportée en 1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Ait Hadiddou voudrait dire « petit » ou « costaud », d'après une source orale que citent les chercheurs M. Peyron et G. Camps. Ils jugent obscur le sens du nom de cet ancêtre.",
+            "hypothesisGroup": "origine du nom Ait Hadiddou",
+            "sources": [
+              {
+                "title": "Hadiddou",
+                "author": "M. Peyron et G. Camps, Encyclopédie berbère, 21",
+                "year": 1999,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1848",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1",
+                "notes": "Notice de l'Encyclopédie berbère, p. 3278-3283 de l'édition imprimée. Lue en ligne sur OpenEdition le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "Rapportée en 1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Ait Hadiddou se rattacherait peut-être à imidulin, un terme qui désigne des groupes transhumants et sédentaires du centre du Maroc, selon M. Peyron et G. Camps, qui renvoient à l'ethnologue Laoust (1934).",
+            "hypothesisGroup": "origine du nom Ait Hadiddou",
+            "sources": [
+              {
+                "title": "Hadiddou",
+                "author": "M. Peyron et G. Camps, Encyclopédie berbère, 21",
+                "year": 1999,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1848",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 4",
+                "notes": "Notice de l'Encyclopédie berbère, p. 3278-3283 de l'édition imprimée. Lue en ligne sur OpenEdition le 12 octobre 2026. Nous n'avons pas lu Laoust."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Haddidou",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'ancienne graphie française, en usage jusque vers 1950.",
+        "periodLabel": "Jusque vers 1950",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1950,
+              "label": "Jusque vers 1950"
+            },
+            "statement": "Le nom Haddidou est l'ancienne graphie du nom Hadiddou, employée jusque vers 1950, selon M. Peyron et G. Camps. La graphie Hadiddou lui a succédé.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Hadiddou",
+                "author": "M. Peyron et G. Camps, Encyclopédie berbère, 21",
+                "year": 1999,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1848",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1",
+                "notes": "Notice de l'Encyclopédie berbère, p. 3278-3283 de l'édition imprimée. Lue en ligne sur OpenEdition le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Haliddou",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "tzm",
+        "namedBy": "Ayt Merγad",
+        "shortLine": "La façon dont les voisins Ayt Merγad prononcent le nom Hadiddou.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Haliddou est la prononciation du nom Hadiddou chez leurs voisins, les Ayt Merγad, selon M. Peyron et G. Camps. On ne sait pas avec certitude quand cette forme a été écrite pour la première fois.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Hadiddou",
+                "author": "M. Peyron et G. Camps, Encyclopédie berbère, 21",
+                "year": 1999,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1848",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1",
+                "notes": "Notice de l'Encyclopédie berbère, p. 3278-3283 de l'édition imprimée. Lue en ligne sur OpenEdition le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

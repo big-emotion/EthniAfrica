@@ -101,5 +101,82 @@
       "fieldPath": "homonyms",
       "reason": "la notice exacte du Dictionary of American Family Names, les catalogues bibliographiques et les recherches « Pereira » associées au Cap-Vert n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Pereira est un nom de famille portugais et galicien, porté au Cap-Vert et en Guinée-Bissau. On ne sait pas avec certitude depuis quand il y est porté. Le mot pereira veut dire « poirier » en portugais ; nous présentons plus bas les deux explications de l'origine du nom que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Pereira",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un nom de famille portugais, porté au Cap-Vert et en Guinée-Bissau ; son origine reste discutée.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Pereira est un nom de famille portugais et galicien, tiré du mot pereira, « poirier ». Le dictionnaire de Patrick Hanks hésite entre deux façons dont ce mot est devenu un nom de famille ; nous les présentons séparément. Les sources lues ne disent pas depuis quand il est porté au Cap-Vert.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Pereira Name Meaning and Pereira Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=pereira",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée Pereira du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch : « Portuguese and Galician: topographic name from Portuguese pereira 'pear tree' or a habitational name from a place called with this word in Portugal and Galicia (Spain) ». Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Proposé en 2003"
+            },
+            "statement": "Le nom Pereira aurait d'abord désigné quelqu'un qui vivait près d'un poirier, selon le dictionnaire de Patrick Hanks.",
+            "hypothesisGroup": "origine du nom Pereira",
+            "sources": [
+              {
+                "title": "Pereira Name Meaning and Pereira Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=pereira",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée Pereira du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch : « Portuguese and Galician: topographic name from Portuguese pereira 'pear tree' or a habitational name from a place called with this word in Portugal and Galicia (Spain) ». Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Proposé en 2003"
+            },
+            "statement": "Le nom Pereira viendrait plutôt d'un lieu appelé Pereira, au Portugal ou en Galice, d'où venait le premier porteur, selon le même dictionnaire de Patrick Hanks.",
+            "hypothesisGroup": "origine du nom Pereira",
+            "sources": [
+              {
+                "title": "Pereira Name Meaning and Pereira Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=pereira",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée Pereira du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch : « Portuguese and Galician: topographic name from Portuguese pereira 'pear tree' or a habitational name from a place called with this word in Portugal and Galicia (Spain) ». Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -64,7 +64,8 @@ merge or deploy. Research interpretation remains the agent's responsibility.
 7. Before approval 3, verify the promised public destination against the actual
    supported answer, not just an HTTP success or a merged PR. If unavailable,
    resolve it or rewrite the invitation and record `no-link`. Review the changed
-   proof when meaning or destination changes. Final review rejects `pending`.
+   proof when meaning or destination changes; verifying the same pending address
+   and invitation is not a change (see below). Final review rejects `pending`.
 
 ## Dossier format
 
@@ -114,11 +115,71 @@ skipped states and an unchanged local target are refused. Changed evidence is
 marked `evidenceCurrent: false` on recovery and prevents further advancement.
 Do not report such a record as current verified evidence.
 
-A canonical fiche edit changes the proof's source fingerprint. Conservatively,
-this reopens approval 2 and downstream delivery while preserving approval 1.
-Refresh the comparison and present the affected proof; retain the earlier
-proposal's integration history. Never rewrite hashes to hide the change. A newly
-searched name or other substantive new research also needs a revised proof.
+When the correction was merged together with later edits to the same field (for
+example sources added by another change, or a URL normalized to match an existing
+locator), the field no longer equals the approved value byte for byte. Record
+`locally-checked` with a `reconciliation` explaining each difference. The helper
+keeps the approved proposal unchanged and stores the integrated field as
+`observedValue`, so both remain visible. It refuses when the field still holds
+the reviewed `before` value: a correction that was never applied cannot be
+reconciled. Do not use this to accept a change of meaning; that needs a revised
+proof.
+
+### Integrated corrections keep the proof current
+
+A canonical fiche edit changes the proof's source fingerprint. Applying the
+corrections the operator approved is the expected outcome of approval 2, not a
+change to what was reviewed, so it does not reopen the proof. A reviewed fiche
+whose hash changed stays current when all of these hold:
+
+- at least one approved correction for that fiche has a `locally-checked` record
+  (or a later status) in the current checkpoint;
+- each such correction's pointer holds the approved value, or the recorded
+  reconciled `observedValue`;
+- putting those pointers back to their reviewed `before` values (removing a
+  field that did not exist) gives exactly the reviewed JSON structure.
+
+Any other change reopens approval 2 and downstream delivery while preserving
+approval 1: a later unrelated edit to the same fiche, a corrected field
+reverted or changed again, or an edit recorded without its `locally-checked`
+progress. A change of meaning still needs a revised proof. Never rewrite hashes
+to hide a change.
+
+The checkpoint stores only the reviewed fiche's sha256, not its bytes. Writing
+the JSON again does not reproduce the repository's formatting (prettier output
+differs from `JSON.stringify`), so the helper recovers the reviewed bytes from
+git history: the newest commit of that path whose content has the reviewed
+sha256. Limits: the reviewed version must have been committed and be reachable
+from the checked-out branch; otherwise, or when git is unavailable, the edit
+reopens approval 2. Comparison is structural, so key order matters and
+whitespace does not. This needs no new checkpoint field and applies equally to
+checkpoints saved before the rule existed.
+
+Record `locally-checked` for every correction of an edited fiche before any
+other event. A `corpus-progress` event does not save an intermediate approval
+status, but any other event saved while a fiche holds unrecorded corrections
+saves the proof as `stale`. A checkpoint saved that way, including one saved
+before this rule, is recovered with `restore-approval` (gate `2` and a
+`reason`). It restores the same approval and decision only when the fiches
+pass the rule above, every other reviewed file is unchanged, corpus coverage is
+unchanged, the angle was not approved again, the design and dossier were not
+replaced and no angle, research, copy or design correction was requested after
+the approval. Approval 3, if it was staled at the same time, needs a new final
+review.
+
+A newly searched name or other substantive new research also needs a revised
+proof.
+
+### Verifying a pending destination
+
+Review 2 saves the reviewed `destination` and a hash of the dossier without it.
+Changing the dossier from that `pending` destination to `verified` with the same
+`url` and `invitation` keeps approval 2: it completes the promise shown in the
+proof. Any other dossier edit, another invitation or address, or a move from
+`no-link` (which adds a link the proof did not show) reopens approval 2. Final
+review still checks the verification fields and evidence. Checkpoints reviewed
+before this rule lack the saved destination, so for them every dossier edit
+reopens approval 2.
 
 The tool writes each comparison to a new directory under the piece. A lock and
 staging directory protect the final rename. Normal failure removes them. After

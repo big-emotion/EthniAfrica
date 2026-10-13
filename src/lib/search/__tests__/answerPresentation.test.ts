@@ -38,7 +38,7 @@ describe("presentAnswerWhere", () => {
       unit: "percent",
       estimate: true,
       rows: [
-        { peopleId: "PPL_KONGO_BRAZZA", value: 40 },
+        { peopleId: "PPL_KONGO", value: 40 },
         { peopleId: "PPL_UNNAMED", value: 5 },
       ],
       unsplitPercent: 55,
@@ -46,14 +46,12 @@ describe("presentAnswerWhere", () => {
 
     const shown = presentAnswerWhere(
       where,
-      [people("PPL_KONGO_BRAZZA", "Kongo (Brazzaville)")],
+      [people("PPL_KONGO", "Kongo")],
       "fr"
     );
 
-    expect(shown?.where.rows).toEqual([
-      { peopleId: "PPL_KONGO_BRAZZA", value: 40 },
-    ]);
-    expect(shown?.labels).toEqual({ PPL_KONGO_BRAZZA: "Kongo (Brazzaville)" });
+    expect(shown?.where.rows).toEqual([{ peopleId: "PPL_KONGO", value: 40 }]);
+    expect(shown?.labels).toEqual({ PPL_KONGO: "Kongo" });
   });
 
   // « Teke, Mbochi, Nzebi… » was typed into the mockup; the page may name only
@@ -63,14 +61,14 @@ describe("presentAnswerWhere", () => {
     const where: AnswerWhere = {
       unit: "percent",
       estimate: true,
-      rows: [{ peopleId: "PPL_KONGO_BRAZZA", value: 40 }],
+      rows: [{ peopleId: "PPL_KONGO", value: 40 }],
       unsplitPercent: 60,
     };
 
     const shown = presentAnswerWhere(
       where,
       [
-        people("PPL_KONGO_BRAZZA", "Kongo (Brazzaville)"),
+        people("PPL_KONGO", "Kongo"),
         people("PPL_TEKE", "Teke"),
         people("PPL_MBOCHI", "Mbochi"),
         people("PPL_VILI", "Vili"),
@@ -87,16 +85,13 @@ describe("presentAnswerWhere", () => {
     const where: AnswerWhere = {
       unit: "percent",
       estimate: true,
-      rows: [{ peopleId: "PPL_KONGO_BRAZZA", value: 40 }],
+      rows: [{ peopleId: "PPL_KONGO", value: 40 }],
       unsplitPercent: 60,
     };
 
     expect(
-      presentAnswerWhere(
-        where,
-        [people("PPL_KONGO_BRAZZA", "Kongo (Brazzaville)")],
-        "fr"
-      )?.unsplitPeopleNames
+      presentAnswerWhere(where, [people("PPL_KONGO", "Kongo")], "fr")
+        ?.unsplitPeopleNames
     ).toBeUndefined();
   });
 

@@ -14,7 +14,14 @@
         { "countryId": "DJI", "sourceRefs": ["afrik-candidate-queue"] },
         { "countryId": "SOM", "sourceRefs": ["afrik-candidate-queue"] },
         { "countryId": "EGY", "sourceRefs": ["afrik-candidate-queue"] },
-        { "countryId": "COM", "sourceRefs": ["afrik-candidate-queue"] }
+        { "countryId": "COM", "sourceRefs": ["afrik-candidate-queue"] },
+        { "countryId": "TZA", "sourceRefs": ["tanzania-osg-ally-possi"] }
+      ]
+    },
+    {
+      "spelling": "Ally",
+      "attestations": [
+        { "countryId": "TZA", "sourceRefs": ["tanzania-osg-ally-possi"] }
       ]
     }
   ],
@@ -38,6 +45,11 @@
         "claim": "Le Dictionary of American Family Names, reproduit par FamilySearch, rattache également le patronyme arabe au nom personnel ʿAlī, décrit comme signifiant « élevé », « noble » ou « sublime ».",
         "claimStatus": "established",
         "sourceRefs": ["familysearch-ali"]
+      },
+      {
+        "claim": "Le Dictionary of American Family Names, reproduit par FamilySearch, décrit Ally comme une variante musulmane de Ali ; aucune filiation clanique swahilie n'est établie par cette notice.",
+        "claimStatus": "established",
+        "sourceRefs": ["familysearch-ally"]
       }
     ]
   },
@@ -61,6 +73,11 @@
       "peopleId": "PPL_COMORIEN",
       "status": "attested",
       "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "peopleId": "PPL_SWAHILI",
+      "status": "supposed",
+      "sourceRefs": ["afrik-candidate-queue"]
     }
   ],
   "countries": [
@@ -83,6 +100,11 @@
       "countryId": "COM",
       "status": "attested",
       "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "countryId": "TZA",
+      "status": "attested",
+      "sourceRefs": ["tanzania-osg-ally-possi"]
     }
   ],
   "alliances": [],
@@ -121,6 +143,22 @@
       "tier": "referenced",
       "source_kind": "repository",
       "notes": "Notice consultée intégralement. FamilySearch reproduit l'entrée du Dictionary of American Family Names (Oxford University Press, 2022), qui rattache le nom arabe au nom personnel ʿAlī. La notice ne suffit pas à attribuer tous les porteurs africains à un même peuple."
+    },
+    {
+      "sourceKey": "tanzania-osg-ally-possi",
+      "title": "Office of the Solicitor General — Dr. Ally Possi",
+      "url": "https://www.osg.go.tz/administration/members/solicitor-general",
+      "tier": "official",
+      "source_kind": "government",
+      "notes": "Page officielle consultée intégralement. Elle atteste la graphie Ally dans l'identité publique du Solicitor General tanzanien, sans préciser si ce composant est héréditaire, clanique ou personnel."
+    },
+    {
+      "sourceKey": "familysearch-ally",
+      "title": "Ally Name Meaning and Ally Family History at FamilySearch",
+      "url": "https://www.familysearch.org/en/surname?surname=ally",
+      "tier": "referenced",
+      "source_kind": "repository",
+      "notes": "Notice consultée intégralement. FamilySearch reproduit le Dictionary of American Family Names, qui présente Ally comme une variante musulmane de Ali. Cette entrée lexicographique ne documente pas un clan swahili particulier."
     }
   ],
   "gaps": [
@@ -156,5 +194,117 @@
       "fieldPath": "homonyms",
       "reason": "Les sources consultées distinguent les usages de ʿAlī comme prénom, comme nom qui ne se transmet pas de génération en génération et comme nom divin. Elles ne permettent pas encore de présenter un autre nom africain écrit de la même façon, mais d'origine différente."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ali est un nom personnel arabe, ʿAlī, porté dans de nombreux pays musulmans, en Afrique comme ailleurs. Chez les Somali comme dans les pays arabes, il entre dans le nom d'une personne comme prénom, comme nom du père ou comme nom du grand-père, et ne se transmet pas comme un nom de famille. Les sources le rattachent à un mot arabe qui veut dire « élevé » ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Ali",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel arabe, porté comme nom du père ; il voudrait dire « élevé ».",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ali est le nom personnel arabe ʿAlī, qui voudrait dire « élevé, sublime », selon le Dictionary of American Family Names. Le dictionnaire al-Wasīṭ de l'Académie de la langue arabe du Caire donne au mot ʿaliyy les sens « élevé », « fort » et « de haut rang ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e édition — entrée Ali",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://en.geneanet.org/surnames/ALI",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press. Entrée reproduite par Geneanet, lue le 11 octobre 2026 dans une copie archivée de la page (26 janvier 2025) : « Arabic: from the personal name ʿAlī ‘high, lofty, sublime’ », nom porté par ʿAlī ibn Abī Ṭālib, premier imam des chiites."
+              },
+              {
+                "title": "معنى «علي» في المعجم — مجمع اللغة العربية بالقاهرة",
+                "author": "Académie de la langue arabe du Caire",
+                "year": null,
+                "url": "https://www.arabicacademy.gov.eg/ar/%D9%85%D8%AD%D8%B1%D9%83-%D8%A7%D9%84%D8%A8%D8%AD%D8%AB/%D9%85%D8%B9%D8%AC%D9%85/dic-19/%D8%B9%D9%84%D9%8A",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée du dictionnaire al-Wasīṭ, lue en arabe le 11 octobre 2026. Le mot العَلِيُّ y est défini comme « élevé », « solide, fort » et « seigneur de haut rang », de la racine ع ل و."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "Décrit en 2006"
+            },
+            "era": "modern",
+            "statement": "Le nom Ali entre, chez les Somali, dans une suite de noms qui ne comporte pas de nom de famille : le nom personnel, puis celui du père, puis celui du grand-père paternel, comme dans Ali Omar Elmi, selon un guide britannique des usages de nommage diffusé par Interpol.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Guide to Names and Naming Practices",
+                "author": "Gouvernement du Royaume-Uni, guide diffusé par Interpol",
+                "year": 2006,
+                "url": "https://www.fbiic.gov/public/2008/nov/Naming_practice_guide_UK_2006.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 8",
+                "notes": "Guide de mars 2006, lu le 11 octobre 2026 dans une copie archivée du PDF. Page 8, section « Somali » : « personal name + father's personal name + paternal grandfather's personal name », sans nom de famille, avec l'exemple d'un fils nommé Ali Omar Elmi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "Décrit en 2006"
+            },
+            "era": "modern",
+            "statement": "Le nom Ali se place de la même façon dans les noms arabes, de l'Égypte au Maroc : un nom personnel, suivi de celui du père et de celui du grand-père, auquel s'ajoute de plus en plus souvent un nom de famille, selon le même guide.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Guide to Names and Naming Practices",
+                "author": "Gouvernement du Royaume-Uni, guide diffusé par Interpol",
+                "year": 2006,
+                "url": "https://www.fbiic.gov/public/2008/nov/Naming_practice_guide_UK_2006.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 33",
+                "notes": "Guide de mars 2006, lu le 11 octobre 2026 dans une copie archivée du PDF. Page 33, section « Arab Muslim », qui couvre notamment l'Égypte, la Mauritanie, le Soudan, la Libye, la Tunisie, l'Algérie et le Maroc : un nom personnel, suivi de celui du père et de celui du grand-père ; un nom de famille s'y ajoute de plus en plus souvent."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Décrit en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Ali compte parmi les noms arabes que des communautés musulmanes non arabes ont empruntés, parfois en changeant leur prononciation, selon Reima Al-Jarf.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Interchange of Personal Names in Muslim Communities: An Onomastic Study",
+                "author": "Reima Al-Jarf",
+                "year": 2023,
+                "url": "https://doi.org/10.32996/jgcs.2023.3.1.5",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 42",
+                "notes": "Journal of Gender, Culture and Society, vol. 3, n° 1, 2023, lu le 11 octobre 2026 dans le PDF de l'éditeur. Page 42 : des noms arabes comme Mohammed, Ali et Fatimah ont été empruntés par des communautés musulmanes, avec des changements de prononciation. L'article ne traite pas de l'Afrique."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

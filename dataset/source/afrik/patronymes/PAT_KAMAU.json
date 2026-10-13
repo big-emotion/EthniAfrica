@@ -76,5 +76,72 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web combinant « Kamau », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de l'entrée « Kamau Name Meaning and Kamau Family History », qui reproduit le Dictionary of American Family Names, n'ont pas établi de lignée homonyme d'origine distincte ni d'autre homonyme documentable."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kamau est un nom de personne kikuyu, au Kenya. D'après le Dictionary of American Family Names, il vient du nom d'une génération d'initiés du XVIIIe siècle, et on ne sait pas avec certitude ce qu'il veut dire. Hobley l'écrivait Kamao en 1922. Les sources lues ne le rattachent à aucun clan.",
+    "names": [
+      {
+        "nameText": "Kamau",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kik",
+        "namedBy": null,
+        "shortLine": "Un nom de personne kikuyu, aussi nom d'une génération d'initiés ; son sens reste inconnu.",
+        "periodLabel": "Écrit dès 1922 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "era": "modern",
+            "statement": "Le nom Kamau est un nom kikuyu dont on ne sait pas avec certitude ce qu'il veut dire. Selon Patrick Hanks, c'est le nom d'une génération d'initiés traditionnelle du XVIIIe siècle, que le texte appelle « regiment set ». Le passage d'un nom de personne à un nom de famille y est présenté avec réserve.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Kamau Name Meaning and Kamau Family History",
+                "author": "FamilySearch, d'après Patrick Hanks (Dictionary of American Family Names)",
+                "year": 2006,
+                "url": "https://www.familysearch.org/en/surname?surname=kamau",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "entrée « Kamau »",
+                "notes": "Entrée FamilySearch attribuée au Dictionary of American Family Names de Patrick Hanks (2003, 2006). Elle dit : « Kikuyu name of uncertain meaning, the name of a traditional ‘regiment set’ in the 18th century ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kamau apparaît par écrit sous une forme proche, Kamao, chez l'administrateur Charles William Hobley. Il écrit Kamao dans les deux listes de générations de circoncision que lui donnent quatre anciens kikuyu, aux sixième et septième rangs. C'est la plus ancienne trace de ce nom que le projet connaisse ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Kamao",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Charles William Hobley",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Bantu Beliefs and Magic",
+                "author": "Charles William Hobley",
+                "year": 1922,
+                "url": "https://archive.org/details/bantubeliefsmagi00hobl",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 88 et p. 90",
+                "notes": "Londres, H. F. & G. Witherby, 1922 ; numérisation d'Internet Archive ; pages vues en image. Page 88 : « 6. Kamao » dans la première liste des générations (rika) ; page 90 : « 7. Kamao » dans la seconde. Administrateur colonial britannique, cité pour les formes qu'il écrit. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

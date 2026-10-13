@@ -134,5 +134,232 @@
         "source_kind": "intergovernmental"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bideyat désigne un peuple de l'Ennedi, au nord-est du Tchad, proche des Zaghawa, qui se nommait lui-même Baele, selon un voyageur du XIXe siècle. Bideyat est le nom que lui donnaient les Arabes du Soudan ; ses voisins lui donnaient d'autres noms, comme Anna ou Terawia. Les sources que nous avons lues n'expliquent pas l'origine du nom Bideyat.",
+    "names": [
+      {
+        "nameText": "Baele",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les gens de l'Ennedi se donnaient, selon Nachtigal en 1881.",
+        "periodLabel": "Écrit dès 1881",
+        "accounts": [
+          {
+            "period": {
+              "from": 1871,
+              "to": 1881,
+              "label": "Renseignements de 1871 (récit publié en 1881)"
+            },
+            "era": "polity",
+            "statement": "Le nom Baele est celui que les habitants de l'Ennedi se donnent eux-mêmes, selon l'explorateur allemand Gustav Nachtigal. Ils appellent leur pays Baele Bê, la maison ou le domaine des Baele. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Baele",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Sahara und Sudan. Ergebnisse sechsjähriger Reisen in Afrika, deuxième partie",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 154",
+                "notes": "Berlin, Weidmannsche Buchhandlung, 1881. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'explorateur allemand a voyagé au Kanem, au Borkou et au Baguirmi de 1871 à 1873 ; il n'est pas allé dans l'Ennedi et en parle d'après des informateurs."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1871,
+              "to": 1881,
+              "label": "Renseignements de 1871 (récit publié en 1881)"
+            },
+            "era": "polity",
+            "statement": "Le nom Baele est celui que Gustav Nachtigal décide d'employer, parce que c'est celui que le peuple se donne et qu'aucun des autres noms, Anna, Terawia ou Bideyat, ne s'est imposé partout. Le nom Baele Bê reste inconnu hors du pays, ajoute-t-il.",
+            "sources": [
+              {
+                "title": "Sahara und Sudan. Ergebnisse sechsjähriger Reisen in Afrika, deuxième partie",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 161",
+                "notes": "Berlin, Weidmannsche Buchhandlung, 1881. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'explorateur allemand a voyagé au Kanem, au Borkou et au Baguirmi de 1871 à 1873 ; il n'est pas allé dans l'Ennedi et en parle d'après des informateurs."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bideyat",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Arabes du Soudan",
+        "shortLine": "Le nom arabe de ce peuple de l'Ennedi ; on ne sait pas d'où il vient.",
+        "usedIn": ["fra", "ara"],
+        "periodLabel": "Écrit dès 1881 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1871,
+              "to": 1881,
+              "label": "Renseignements de 1871 (récit publié en 1881)"
+            },
+            "era": "polity",
+            "statement": "Le nom Bideyat désigne les habitants de l'Ennedi, au nord-est du Tchad, que Gustav Nachtigal rapproche des Zaghawa. Les sources que nous avons lues n'expliquent pas l'origine de ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Sahara und Sudan. Ergebnisse sechsjähriger Reisen in Afrika, deuxième partie",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 154 et p. 161",
+                "notes": "Berlin, Weidmannsche Buchhandlung, 1881. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'explorateur allemand a voyagé au Kanem, au Borkou et au Baguirmi de 1871 à 1873 ; il n'est pas allé dans l'Ennedi et en parle d'après des informateurs."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1871,
+              "to": 1881,
+              "label": "Renseignements de 1871 (récit publié en 1881)"
+            },
+            "era": "polity",
+            "statement": "Le nom Bideyat apparaît, écrit Bidêjât, chez l'explorateur allemand Gustav Nachtigal : les Arabes du Soudan appellent l'Ennedi Beled el-Bidêjât, le pays des Bideyat. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Beled el-Bidêjât",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Sahara und Sudan. Ergebnisse sechsjähriger Reisen in Afrika, deuxième partie",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 154",
+                "notes": "Berlin, Weidmannsche Buchhandlung, 1881. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'explorateur allemand a voyagé au Kanem, au Borkou et au Baguirmi de 1871 à 1873 ; il n'est pas allé dans l'Ennedi et en parle d'après des informateurs."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Anna",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Toubou",
+        "shortLine": "Le nom que les Toubou donnaient aux Baele, selon Nachtigal en 1881.",
+        "periodLabel": "Écrit dès 1881",
+        "accounts": [
+          {
+            "period": {
+              "from": 1871,
+              "to": 1881,
+              "label": "Renseignements de 1871 (récit publié en 1881)"
+            },
+            "era": "polity",
+            "statement": "Le nom Anna est celui que les Toubou, et en particulier les Daza, donnent aux gens de l'Ennedi, selon Gustav Nachtigal. Les Daza appellent leur pays Eï Annanga, « les rochers des Anna ». C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Anna",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Sahara und Sudan. Ergebnisse sechsjähriger Reisen in Afrika, deuxième partie",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 126 et p. 154",
+                "notes": "Berlin, Weidmannsche Buchhandlung, 1881. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'explorateur allemand a voyagé au Kanem, au Borkou et au Baguirmi de 1871 à 1873 ; il n'est pas allé dans l'Ennedi et en parle d'après des informateurs."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1871,
+              "to": 1881,
+              "label": "Renseignements de 1871 (récit publié en 1881)"
+            },
+            "era": "polity",
+            "statement": "Le nom Anna se retrouverait dans Ennedi, nom du pays chez les Teda, qui serait formé de Anna et de di, « l'ouest » : le pays des Anna de l'ouest, selon Gustav Nachtigal.",
+            "sources": [
+              {
+                "title": "Sahara und Sudan. Ergebnisse sechsjähriger Reisen in Afrika, deuxième partie",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 161",
+                "notes": "Berlin, Weidmannsche Buchhandlung, 1881. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'explorateur allemand a voyagé au Kanem, au Borkou et au Baguirmi de 1871 à 1873 ; il n'est pas allé dans l'Ennedi et en parle d'après des informateurs."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1871,
+              "to": 1881,
+              "label": "Renseignements de 1871 (récit publié en 1881)"
+            },
+            "era": "polity",
+            "statement": "Le nom Anna se retrouverait aussi dans Nakazza, nom d'un groupe du Borkou formé de gens de l'Ennedi et de Daza : Nakazza viendrait de Anna et de kazza, « réunis », selon Gustav Nachtigal.",
+            "sources": [
+              {
+                "title": "Sahara und Sudan. Ergebnisse sechsjähriger Reisen in Afrika, deuxième partie",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 126",
+                "notes": "Berlin, Weidmannsche Buchhandlung, 1881. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'explorateur allemand a voyagé au Kanem, au Borkou et au Baguirmi de 1871 à 1873 ; il n'est pas allé dans l'Ennedi et en parle d'après des informateurs."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Terawia",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Awlad Sulayman",
+        "shortLine": "Le nom que les Arabes Awlad Sulayman donnaient aux Baele en 1881.",
+        "periodLabel": "Écrit dès 1881",
+        "accounts": [
+          {
+            "period": {
+              "from": 1871,
+              "to": 1881,
+              "label": "Renseignements de 1871 (récit publié en 1881)"
+            },
+            "era": "polity",
+            "statement": "Le nom Terawia est celui que les Arabes Awlad Sulayman donnent aux gens de l'Ennedi, dont ils appellent le pays Beled el-Terâwia, selon Gustav Nachtigal. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Beled el-Terâwia",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Sahara und Sudan. Ergebnisse sechsjähriger Reisen in Afrika, deuxième partie",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 154",
+                "notes": "Berlin, Weidmannsche Buchhandlung, 1881. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'explorateur allemand a voyagé au Kanem, au Borkou et au Baguirmi de 1871 à 1873 ; il n'est pas allé dans l'Ennedi et en parle d'après des informateurs."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -116,5 +116,225 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Gwadloupéyen désigne en créole les habitants de la Guadeloupe, que le français appelle Guadeloupéens ; il reprend Gwadloup, le nom créole de l'île. On les dit aussi créoles, un mot né dans les colonies d'Amérique dont l'origine est discutée. Nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Gwadloupéyen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "gcf",
+        "namedBy": null,
+        "shortLine": "Le nom créole des habitants de la Guadeloupe, qui reprend Gwadloup, le nom créole de l'île.",
+        "accounts": [
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Proposée en 2014"
+            },
+            "statement": "Le nom Gwadloupéyen reprend Gwadloup, le nom de l'île en créole. Ce nom viendrait de l'espagnol, où il est celui d'un monastère d'Estrémadure, selon le linguiste Hector Poullet, que résume Michel David. Les sources que nous avons lues ne datent pas la première trace du nom des habitants.",
+            "hypothesisGroup": "origine du nom Gwadloup",
+            "sources": [
+              {
+                "title": "Éléments pour un dictionnaire historique du créole guadeloupéen = Choukamo kréyòl Gwadloup : zouti 1 : eritaj / Hector Poullet",
+                "author": "Michel David",
+                "year": null,
+                "url": "https://www.academieoutremer.fr/images/files/20220621_258940259bb32e377165508cb8d093f3.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Recension publiée par l'Académie des sciences d'outre-mer de l'ouvrage d'Hector Poullet, Caraïbéditions, 2014, lue dans le texte mis en ligne par l'Académie. Nous n'avons pas lu l'ouvrage lui-même."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Guadeloupéens",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom français des habitants de la Guadeloupe, celui qu'emploie la statistique publique.",
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "2024"
+            },
+            "statement": "Le nom Guadeloupéens est celui qu'emploie l'Insee, l'institut français de la statistique, pour les habitants de l'archipel : en 2024, les Guadeloupéens de 60 ans et plus forment 33 % de la population.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "L'essentiel sur… la Guadeloupe",
+                "author": "Insee",
+                "year": null,
+                "url": "https://www.insee.fr/fr/statistiques/4481456",
+                "tier": "official",
+                "source_kind": "official_statistics",
+                "notes": "Fiche de l'Institut national de la statistique et des études économiques, lue en ligne le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Créoles",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un mot né dans les colonies d'Amérique pour les gens nés sur place ; son origine est discutée.",
+        "periodLabel": "Écrit aux Antilles depuis 1667",
+        "accounts": [
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "1873"
+            },
+            "statement": "Le nom créole désigne, dans le dictionnaire de Littré, un homme blanc ou une femme blanche originaire des colonies ; « nègre créole » y désigne une personne noire née aux colonies, par opposition à celle qui arrive par la traite. L'origine du mot est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "créole",
+                "author": "Émile Littré",
+                "year": 1873,
+                "url": "https://www.littre.org/definition/cr%C3%A9ole",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "sens 1",
+                "notes": "Dictionnaire de la langue française, lu sur le site qui en reprend le texte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1667,
+              "to": 1667,
+              "label": "1667"
+            },
+            "statement": "Le nom créole apparaît aux Antilles françaises chez le missionnaire Jean-Baptiste Du Tertre, en 1667 : sous le gouvernement des seigneurs des îles, les « libres Créoles, c'est-à-dire ceux qui étaient nés dans le pays », ne paient pas de droits. C'est la plus ancienne trace de ce nom aux Antilles que le projet connaît. Le mot existait déjà en espagnol, sous la forme criollo, selon le dictionnaire de Littré.",
+            "formAsWritten": "Créoles",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Jean-Baptiste Du Tertre",
+                "role": "missionnaire dominicain, auteur de l'ouvrage"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale des Antilles habitées par les François, tome II",
+                "author": "Jean-Baptiste Du Tertre",
+                "year": 1667,
+                "url": "https://archive.org/details/histoiregenerale00dute_1",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 441",
+                "notes": "Paris, Thomas Jolly, 1667. L'auteur est un missionnaire dominicain des Antilles. Lu dans l'exemplaire numérisé d'Internet Archive."
+              },
+              {
+                "title": "créole",
+                "author": "Émile Littré",
+                "year": 1873,
+                "url": "https://www.littre.org/definition/cr%C3%A9ole",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "Étymologie",
+                "notes": "Dictionnaire de la langue française, lu sur le site qui en reprend le texte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom créole viendrait de l'espagnol criollo, qu'on fait venir de criar, « élever, nourrir », selon le dictionnaire de Littré, qui juge cette formation très irrégulière.",
+            "hypothesisGroup": "origine du mot créole",
+            "sources": [
+              {
+                "title": "créole",
+                "author": "Émile Littré",
+                "year": 1873,
+                "url": "https://www.littre.org/definition/cr%C3%A9ole",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "Étymologie",
+                "notes": "Dictionnaire de la langue française, lu sur le site qui en reprend le texte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom créole serait un mot caraïbe, selon d'autres auteurs que cite le dictionnaire de Littré sans les nommer.",
+            "hypothesisGroup": "origine du mot créole",
+            "sources": [
+              {
+                "title": "créole",
+                "author": "Émile Littré",
+                "year": 1873,
+                "url": "https://www.littre.org/definition/cr%C3%A9ole",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "Étymologie",
+                "notes": "Dictionnaire de la langue française, lu sur le site qui en reprend le texte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom créole serait un mot inventé par les conquérants espagnols des Indes occidentales, selon l'Académie espagnole, que cite le dictionnaire de Littré.",
+            "hypothesisGroup": "origine du mot créole",
+            "sources": [
+              {
+                "title": "créole",
+                "author": "Émile Littré",
+                "year": 1873,
+                "url": "https://www.littre.org/definition/cr%C3%A9ole",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "Étymologie",
+                "notes": "Dictionnaire de la langue française, lu sur le site qui en reprend le texte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1704,
+              "to": 1704,
+              "label": "Traduit en français en 1704"
+            },
+            "statement": "Le nom créole viendrait des Africains réduits en esclavage en Amérique : ils appelaient criollo leurs enfants nés aux Indes, pour les distinguer de ceux nés en Guinée, et les Espagnols leur auraient pris ce mot, selon l'historien Garcilaso de la Vega, que cite le supplément du dictionnaire de Littré.",
+            "hypothesisGroup": "origine du mot créole",
+            "sources": [
+              {
+                "title": "créole",
+                "author": "Émile Littré",
+                "year": 1873,
+                "url": "https://www.littre.org/definition/cr%C3%A9ole",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "Supplément, étymologie",
+                "notes": "Dictionnaire de la langue française, lu sur le site qui en reprend le texte."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

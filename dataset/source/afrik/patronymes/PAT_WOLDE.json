@@ -109,5 +109,102 @@
       "fieldPath": "bearers",
       "reason": "Les recherches biographiques sur « Wolde » dans les résultats de catalogues et répertoires consultés n'ont pas permis d'identifier un porteur décédé dont ce segment soit explicitement documenté dans la position patronymique pertinente. Les personnes vivantes repérées ont été exclues."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Wolde est un nom personnel éthiopien. Il ouvre souvent un nom chrétien composé, comme Wolde Mariam, et sert aussi de second nom aux enfants d'un homme qui le porte, sans devenir un nom de famille. Nous présentons plus bas l'explication de son sens que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Wolde",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel éthiopien, souvent au début d'un nom chrétien composé.",
+        "periodLabel": "Écrit dès 1790 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1996,
+              "to": 1996,
+              "label": "Décrit en 1996"
+            },
+            "era": "modern",
+            "statement": "Le nom Wolde ouvre de nombreux noms personnels composés en Éthiopie, comme Wolde Mariam ou Wolde Berhan, qu'on abrège parfois en W. Berhan. Placé après le nom d'une personne, un tel nom est celui de son père, selon le guide de catalogage de l'IFLA. Il ne devient pas un nom de famille transmis aux petits-enfants : les Éthiopiens n'ont pas de nom de famille héréditaire, selon le Dictionary of American Family Names.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Names of Persons: National Usages for Entry in Catalogues",
+                "author": "IFLA Universal Bibliographic Control and International MARC Programme",
+                "year": 1996,
+                "url": "https://www.ifla.org/files/assets/cataloguing/pubs/names-of-persons_1996.pdf",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 64-65",
+                "notes": "Quatrième édition, Munich, K. G. Saur, 1996, lue dans le PDF de l'IFLA le 12 octobre 2026. La notice Éthiopie, p. 64-65, fournie par la bibliothèque de l'université d'Addis-Abeba et approuvée par la Bibliothèque et les Archives nationales en octobre 1994, compose le nom d'un nom personnel, suivi du nom personnel du père, parfois de celui du grand-père. Elle cite Wolde Mariam parmi les noms composés, W. Berhan pour Wolde Berhan parmi les abréviations, et l'abuna Lukas Tewolde parmi les exemples. Elle note que le Code civil de 1960 prescrit un nom de famille, usage qui ne s'est pas encore répandu."
+              },
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Wolde",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/wolde?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 ; le site affiche aussi une traduction française. La notice dit : nom personnel éthiopien interprété comme « mon fils » en guèze ou en amharique ; souvent premier élément d'un nom chrétien comme Woldemariam, où il se traduit par « fils de ». Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Wolde voudrait dire « mon fils » en guèze ou en amharique et, au début d'un nom chrétien comme Woldemariam, « fils de », selon le Dictionary of American Family Names.",
+            "hypothesisGroup": "origine du nom Wolde",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Wolde",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/wolde?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 ; le site affiche aussi une traduction française. La notice dit : nom personnel éthiopien interprété comme « mon fils » en guèze ou en amharique ; souvent premier élément d'un nom chrétien comme Woldemariam, où il se traduit par « fils de ». Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1790,
+              "to": 1790,
+              "label": "1790"
+            },
+            "era": "polity",
+            "statement": "Le nom Wolde apparaît par écrit sous une forme proche, Welled, dans le récit de voyage de James Bruce : Welled Amlac est un homme du Maitsha que Bruce a soigné à Gondar. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Welled",
+            "birth": true,
+            "actors": [
+              {
+                "name": "James Bruce",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels to Discover the Source of the Nile, in the Years 1768, 1769, 1770, 1771, 1772, and 1773, vol. 4",
+                "author": "James Bruce",
+                "year": 1790,
+                "url": "https://archive.org/details/travelstodiscove04bruc",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 2-3",
+                "notes": "Édimbourg, J. Ruthven, pour G. G. J. et J. Robinson, 1790, volume 4. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 2 : Bruce fait halte chez « Shalaka Welled Amlac », qu'il connaissait à Gondar. Page 3 : à Gondar, il avait reçu chez lui un malade venu du Maitsha avec deux serviteurs, Welled Amlac. Récit d'un voyageur écossais, cité ici pour la forme qu'il écrit."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

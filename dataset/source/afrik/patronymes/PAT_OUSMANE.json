@@ -43,6 +43,24 @@
           "sourceRefs": ["ryan-1981-hausa-nomenclature"]
         }
       ]
+    },
+    {
+      "spelling": "Osman",
+      "attestations": [
+        {
+          "countryId": "SDN",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
+      ]
+    },
+    {
+      "spelling": "Othman",
+      "attestations": [
+        {
+          "countryId": "SDN",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
+      ]
     }
   ],
   "transmissionMode": "non_hereditary",
@@ -88,6 +106,11 @@
       "countryId": "NGA",
       "status": "attested",
       "sourceRefs": ["ryan-1981-hausa-nomenclature"]
+    },
+    {
+      "countryId": "SDN",
+      "status": "attested",
+      "sourceRefs": ["afrik-candidate-queue"]
     }
   ],
   "alliances": [],
@@ -137,5 +160,77 @@
       "fieldPath": "homonyms",
       "reason": "Les graphies Ousmane, Usman, Ousman et Usuman ont été comparées dans les deux études ; aucune lignée homonyme d’origine distincte n’y est établie."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ousmane est un nom personnel musulman, qui renvoie au troisième calife de l'islam. Chez les Haoussa du Nigeria, il se dit Usuman. Les sources lues ne disent pas quand il est devenu un nom de famille.",
+    "names": [
+      {
+        "nameText": "Ousmane",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel musulman, celui du troisième calife de l'islam.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ousmane est un nom personnel musulman qui renvoie à un compagnon du Prophète devenu le troisième calife ; les Haoussa du nord du Nigeria le donnent sous la forme Usuman, selon Pauline M. Ryan. Les sources lues ne disent pas quand il est devenu un nom de famille.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 143",
+                "notes": "Names, vol. 29, no 2, 1981, p. 139-164. Lu dans le PDF intégral le 11 octobre 2026. L'étude porte sur les noms des Haoussa du nord du Nigeria, musulmans pour la plupart ; la majorité des noms donnés lors de la cérémonie du nom y sont tirés du Coran. Tableau I : « Usuman — Companion of the Prophet and third Caliph »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Usuman",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "hau",
+        "namedBy": null,
+        "shortLine": "La forme haoussa du nom Ousmane.",
+        "periodLabel": "Écrit dès 1981",
+        "accounts": [
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "1981"
+            },
+            "era": "modern",
+            "statement": "Le nom Usuman figure parmi les noms musulmans que Pauline M. Ryan relève en 1981 chez les Haoussa du nord du Nigeria, où il renvoie au troisième calife. C'est la plus ancienne trace de cette forme que le projet connaît ; elle dit quand une autrice l'a notée, pas depuis quand elle est donnée.",
+            "formAsWritten": "Usuman",
+            "birth": true,
+            "sources": [
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 143",
+                "notes": "Names, vol. 29, no 2, 1981, p. 139-164. Lu dans le PDF intégral le 11 octobre 2026. L'étude porte sur les noms des Haoussa du nord du Nigeria, musulmans pour la plupart ; la majorité des noms donnés lors de la cérémonie du nom y sont tirés du Coran. Tableau I : « Usuman — Companion of the Prophet and third Caliph »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -14,6 +14,148 @@
   "spellingAliases": [],
   "familyId": "FLG_TUU",
   "peoples": [],
+  "nameHistory": {
+    "summary": "Le nom nǁng désigne une langue à clics du sud du Kalahari, en Afrique du Sud, dont il ne restait en 2016 que quelques locuteurs, près d'Upington. Ses locuteurs l'appellent nǀuu, et les linguistes rangent sous le nom nǁng ce parler et celui des ǂKhomani. En 1930, on appelait /nusan des gens de cette région. Les sources que nous avons lues n'expliquent pas l'origine de ces noms.",
+    "names": [
+      {
+        "nameText": "Nǀuu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ngh",
+        "namedBy": null,
+        "shortLine": "Le nom que lui donnent ses derniers locuteurs, près d'Upington.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "2016"
+            },
+            "era": "modern",
+            "statement": "Le nǀuu n'a plus, en 2016, que trois locutrices qui le parlent couramment, trois sœurs qui vivent près d'Upington, dans la province du Cap-Nord. La plus jeune, Katrina Esau, dite Ouma Geelmeid, l'enseigne avec un livre de lecture en nǀuu, afrikaans et anglais, selon la notice de l'université du Cap.",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Katrina Esau, dite Ouma Geelmeid",
+                "role": "locutrice et enseignante du nǀuu"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Ouma Geelmeid ke kx'u ǁxaǁxa Nǀuu (Ouma Geelmeid teaches Nǀuu)",
+                "author": "Sheena Shah et Matthias Brenzinger, avec Katrina Esau, Claudia du Plessis et Mary-Ann Prins",
+                "year": 2016,
+                "url": "https://open.uct.ac.za/items/32d4895a-649c-4a86-b0d7-0e88f225bace/full",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "notice",
+                "notes": "Le Cap, CALDi, université du Cap, 2016. Notice du dépôt de l'université du Cap lue le 11 octobre 2026 ; nous n'avons pas lu le livre lui-même."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nǁng",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les linguistes",
+        "shortLine": "Le nom qu'emploient les linguistes pour ce parler et celui des ǂKhomani.",
+        "periodLabel": "En usage chez les linguistes",
+        "accounts": [
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "2005"
+            },
+            "era": "modern",
+            "statement": "Le nom nǁng désigne chez le linguiste Tom Güldemann un sous-groupe de la famille tuu, qui réunit le parler des ǂKhomani et celui d'une personne, Nǀhuki, que le linguiste Westphal avait noté. Nous n'avons pas trouvé la plus ancienne trace de ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Studies in Tuu (Southern Khoisan)",
+                "author": "Tom Güldemann",
+                "year": 2005,
+                "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 13, tableau 1",
+                "notes": "University of Leipzig Papers on Africa, Languages and Literatures, n° 23, Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "ǂKhomani",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des ǂKhomani, donné aussi à leur parler.",
+        "periodLabel": "Écrit dès 1937",
+        "accounts": [
+          {
+            "period": {
+              "from": 1937,
+              "to": 1937,
+              "label": "1937"
+            },
+            "era": "modern",
+            "statement": "Le nom ǂkhomani désigne un parler dans les titres de deux études de Clement M. Doke et de Louis F. Maingard parues en 1937 dans Bushmen of the Southern Kalahari, selon la bibliographie de Tom Güldemann. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Studies in Tuu (Southern Khoisan)",
+                "author": "Tom Güldemann",
+                "year": 2005,
+                "url": "https://ul.qucosa.de/api/qucosa%3A33604/attachment/ATT-0/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 13 et p. 29",
+                "notes": "University of Leipzig Papers on Africa, Languages and Literatures, n° 23, Leipzig, 2005. Lu en texte intégral dans le dépôt de l'université de Leipzig le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "/Nusan",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Kama, selon Isaac Schapera",
+        "shortLine": "Un nom donné par des voisins khoekhoe aux gens de la haute vallée du Nossob.",
+        "periodLabel": "Écrit en 1930",
+        "accounts": [
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "era": "colonial",
+            "statement": "Le nom /nusan est celui que les « Hottentots » kama donnent aux /nu//en, des Bushmen de la haute vallée du Nossob, selon Isaac Schapera. Les sources que nous avons lues ne disent pas si ce nom désigne exactement les locuteurs du nǀuu.",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 33",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive le 11 octobre 2026. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "content": {
     "vehicularRole": null,
     "dialects": ["N|u", "||Ng!ke"],

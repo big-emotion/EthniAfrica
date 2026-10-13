@@ -242,7 +242,7 @@ describe("ftsSearchEntities", () => {
       rows: [
         peopleRow("PPL_BETE", "Bété", { confidence: 0.71, exactMatch: true }),
         peopleRow("PPL_BETI", "Béti", { confidence: 0.61 }),
-        peopleRow("PPL_BETI_FANG", "Béti-Fang", { confidence: 0.67 }),
+        peopleRow("PPL_BETI_EKANG", "Béti-Ekang", { confidence: 0.67 }),
         peopleRow("PPL_AMHARA", "Amhara", { confidence: 0.77 }),
       ],
     };
@@ -252,7 +252,7 @@ describe("ftsSearchEntities", () => {
     expect(result.peoples.map((p) => p.nameMain)).toEqual([
       "Bété",
       "Béti",
-      "Béti-Fang",
+      "Béti-Ekang",
       "Amhara",
     ]);
   });
@@ -1005,6 +1005,7 @@ describe("ftsSearchEntities", () => {
         nameMain: "Yamoussoukro",
         placeType: "ville",
         countryId: "CIV",
+        countryIds: ["CIV"],
         summary: "Capitale politique.",
         nameHistory: { summary: "s", names: [] },
         relevance: 1,
@@ -1014,6 +1015,39 @@ describe("ftsSearchEntities", () => {
     ]);
     expect(result.placesTotal).toBe(1);
     expect(result.total).toBe(1);
+  });
+
+  // Migration 106: a region lists all its countries and has no single one.
+  // @req REQ-193
+  it("keeps every country of a region a place search returns", async () => {
+    placesPayload = {
+      total: 1,
+      rows: [
+        {
+          id: "LOC_SAHARA",
+          nameMain: "Sahara",
+          placeType: "region",
+          countryId: null,
+          countryIds: ["DZA", "NER"],
+          summary: "s",
+          nameHistory: null,
+          relevance: 1,
+          exactMatch: true,
+          normalizedScore: 1,
+        },
+      ],
+    };
+
+    const result = await ftsSearchEntities({
+      q: "sahara",
+      limit: 20,
+      offset: 0,
+    });
+
+    expect(result.places[0]).toMatchObject({
+      countryId: null,
+      countryIds: ["DZA", "NER"],
+    });
   });
 
   // Code may reach a database that has not applied migration 100 yet; a

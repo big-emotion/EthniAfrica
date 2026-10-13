@@ -371,18 +371,17 @@
     "kingdoms": [
       {
         "name": "Royaumes Mossi",
-        "period": "XIe siècle - XIXe siècle (apogée), maintien jusqu'à la colonisation",
+        "period": "Fin du XVe siècle - XIXe siècle (apogée), maintien jusqu'à la colonisation",
         "entryType": "polity",
         "timeRange": {
-          "startYear": 1001,
+          "startYear": 1495,
           "endYear": 1900,
           "precision": "approximate",
-          "datingNote": "Le libellé couvre plusieurs périodes distinctes ; les bornes retenues encadrent l'ensemble."
+          "datingNote": "Le début suit Michel Izard (HGA IV), qui place l'apparition de Naaba Wûbri, fondateur de la dynastie de Ouagadougou, à la fin du XVe siècle (1495, par « hypothèse formelle »). Des chronologies plus longues font remonter les débuts plus haut : la fiche retenait le XIe siècle. Selon Michel Izard et Joseph Ki-Zerbo (HGA V), le système politique moaga ne se met en place de façon définitive qu'à la fin du XVIIe et au XVIIIe siècle. La fin encadre la conquête coloniale."
         },
         "dominantPeoples": ["Mossi (Moose)"],
         "politicalCenters": [
-          "Ouagadougou (Wogodogo",
-          "capitale du royaume de Ouagadougou)",
+          "Ouagadougou (Wogodogo, capitale du royaume de Ouagadougou)",
           "Yatenga",
           "Tenkodogo",
           "Fada N'Gourma"
@@ -701,6 +700,20 @@
         "tier": "referenced",
         "source_kind": "encyclopedia",
         "notes": "Notice encyclopédique éditorialisée. Lue le 16 septembre 2026 : elle nomme les royaumes mossi de Tenkodogo, Yatenga, Ouagadougou, Fada N'Gourma et Boussouma, et situe la formation des royaumes à la fin du 15e siècle, les Mossi datant eux-mêmes leur pouvoir des environs de 1500."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, IV, ch. 9 : Les peuples et les royaumes de la boucle du Niger et du bassin des Volta du XIIe au XVIe siècle",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par D. T. Niane, chapitre de Michel Izard (1985), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 254. Naaba Wûbri fonde la dynastie régnante du royaume de Wogodogo ; l'auteur situe son apparition politique « à l'extrême fin du XVe siècle (1495 par hypothèse formelle) »."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, V, ch. 12 : Du Niger à la Volta",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par B. A. Ogot, chapitre de Michel Izard et Joseph Ki-Zerbo (1999), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 384. La fin du XVIIe et le XVIIIe siècle « voient la mise en place définitive du système politique moaga, et cela aussi bien au Yatenga que dans le Mogho central et méridional »."
       }
     ],
     "demographics": {

@@ -16,13 +16,40 @@
           "sourceRefs": ["ryan-1981-abubakar", "statehouse-cabinet-abubakar"]
         }
       ]
+    },
+    {
+      "spelling": "Aboubakar",
+      "attestations": [
+        {
+          "countryId": "CMR",
+          "sourceRefs": ["camer-2020-aboubakar-abbo"]
+        }
+      ]
+    },
+    {
+      "spelling": "Aboubacar",
+      "attestations": [
+        {
+          "countryId": "CMR",
+          "sourceRefs": ["gabana-bello-2025-cameroon-anthroponyms"]
+        }
+      ]
     }
   ],
   "transmissionMode": "non_hereditary",
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [],
+    "writtenChronicles": [
+      {
+        "claim": "Ryan documente Abubakar comme nom public islamique renvoyant au premier calife dans l’onomastique haoussa du nord du Nigeria ; Gabana et Bello attestent séparément Aboubacar parmi les noms de califes devenus patronymes au Nord-Cameroun.",
+        "claimStatus": "established",
+        "sourceRefs": [
+          "ryan-1981-abubakar",
+          "gabana-bello-2025-cameroon-anthroponyms"
+        ]
+      }
+    ],
     "linguisticReconstructions": [
       {
         "claim": "Ryan classe Abubakar parmi les noms masculins islamiques de la nomenclature haoussa et l'identifie au premier calife ; la page consacrée au nom le présente comme une forme d'Abu Bakr employée au Nigeria.",
@@ -33,6 +60,11 @@
         "claim": "Dans le système haoussa décrit par Chamo, le nom personnel peut devenir le second élément du nom d'un enfant sans constituer un nom de famille héréditaire stable.",
         "claimStatus": "established",
         "sourceRefs": ["chamo-2018-abubakar"]
+      },
+      {
+        "claim": "Une source communautaire donne Boubacar comme une variante ouest-africaine d'Aboubacar, lui-même rattaché à Abubakar ; Boubacar a sa propre fiche.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["btn-boubacar"]
       }
     ]
   },
@@ -47,7 +79,19 @@
     {
       "countryId": "NGA",
       "status": "attested",
-      "sourceRefs": ["statehouse-cabinet-abubakar", "cbn-balewa-abubakar"]
+      "sourceRefs": [
+        "statehouse-cabinet-abubakar",
+        "cbn-balewa-abubakar",
+        "ryan-1981-abubakar"
+      ]
+    },
+    {
+      "countryId": "CMR",
+      "status": "attested",
+      "sourceRefs": [
+        "gabana-bello-2025-cameroon-anthroponyms",
+        "camer-2020-aboubakar-abbo"
+      ]
     }
   ],
   "alliances": [],
@@ -100,16 +144,36 @@
       "tier": "official",
       "source_kind": "government",
       "notes": "Notice officielle consultée directement. Elle documente le premier Premier ministre du Nigeria, son nom complet et ses dates 1912-1966 ; elle sert uniquement à l'attestation nationale et au porteur décédé."
+    },
+    {
+      "sourceKey": "gabana-bello-2025-cameroon-anthroponyms",
+      "title": "Anthroponymes et dynamique identitaire dans les sociétés camerounaises : des noms locaux aux appellations importées (XVIIIe–XXe siècles)",
+      "url": "https://www.researchgate.net/publication/393426204_Anthroponymes_et_dynamique_identitaire_dans_les_societes_camerounaises_Des_noms_locaux_aux_appellations_importees_XVllle-XXe_siecles",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Jean Francis Gabana et Assana Bello, contribution publiée en 2025 dans Le patrimoine culturel des populations des sites défensifs du pourtour du lac Tchad à l’épreuve de la modernité, p. 301-321. Les p. 312-314 décrivent l’adoption de noms de califes comme patronymes et l’adaptation phonologique de noms arabo-islamiques au Nord-Cameroun."
+    },
+    {
+      "sourceKey": "btn-boubacar",
+      "title": "Boubacar — Behind the Name",
+      "url": "https://www.behindthename.com/name/boubacar",
+      "tier": "unverified",
+      "source_kind": "community",
+      "notes": "Page communautaire consultée directement. Elle relie Boubacar à Aboubacar puis à Abubakar. Cette chaîne graphique n'étant pas documentée par une étude dédiée dans les résultats consultés, elle reste classée non vérifiée."
+    },
+    {
+      "sourceKey": "camer-2020-aboubakar-abbo",
+      "title": "Cameroun - Portrait: Qui est le maire Aboubakar Abbo tant souhaité à la tête des CVUC?",
+      "url": "https://www.camer.be/81625/11:1/cameroun-portrait-qui-est-le-maire-aboubakar-abbo-tant-souhaite-a-la-tete-des-cvuc-cameroon.html",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Darren Lambo Ebelle, Camer.be, 7 août 2020, lu le 11 octobre 2026. Portrait d'Aboubakar Abbo, né en 1960 dans l'arrondissement de Belel (Adamaoua, Cameroun), maire de Belel. Il atteste la graphie Aboubakar au Cameroun, sans rien dire de son origine."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin.oralTraditions",
       "reason": "La requête « Abubakar Hausa oral tradition griot lineage », Ryan (1981), Chamo (2018) et Amoo, Ajayi et Sabo (2022) n'ont livré ni griot nommé ni transcription attribuable à Abubakar."
-    },
-    {
-      "fieldPath": "origin.writtenChronicles",
-      "reason": "Les recherches « Abubakar Hausa Arabic chronicle manuscript » et « Abubakar Nigeria colonial record » n'ont pas livré de chronique dédiée établissant l'entrée de cette forme dans l'usage haoussa."
     },
     {
       "fieldPath": "alliances",
@@ -123,5 +187,116 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches « Abubakar homonym etymology » et les sources consacrées à Abubakar et Abu Bakr n'ont pas établi une graphie identique d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Abubakar est un nom personnel musulman, la forme haoussa d'Abou Bakr, le nom du premier calife de l'islam. Il est donné à un garçon, au Nigeria et chez les Haoussa. Au Cameroun, on l'écrit aussi Aboubacar ou Aboubakar. Les sources consultées le décrivent comme un nom personnel ; elles ne disent pas depuis quand il sert aussi de nom de famille.",
+    "names": [
+      {
+        "nameText": "Abubakar",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme haoussa d'Abou Bakr, nom du premier calife, donnée à un garçon.",
+        "usedIn": ["hau"],
+        "periodLabel": "Écrit dès 1888 ; donné aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "Décrit en 1981"
+            },
+            "era": "modern",
+            "statement": "Le nom Abubakar est l'un des noms musulmans donnés à un garçon haoussa lors de la cérémonie du nom. Il renvoie à Abou Bakr, compagnon du Prophète et premier calife, selon Pauline Ryan.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 141-142",
+                "notes": "Names, vol. 29, n° 2, 1981, p. 139-164. Lu le 11 octobre 2026 dans le PDF de l'American Name Society. Pages 141-142 : la plupart des noms de la cérémonie viennent du Coran ; au tableau I, « Abubakar — First Islamic Caliph »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "Décrit en 1981"
+            },
+            "era": "modern",
+            "statement": "Le nom Abubakar va avec un autre nom, Siddiku, forme haoussa d'as-Siddiq, « le Véridique », le surnom d'Abou Bakr. Siddiku est lui aussi donné comme nom, selon Pauline Ryan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 142",
+                "notes": "Names, vol. 29, n° 2, 1981, p. 139-164. Lu le 11 octobre 2026 dans le PDF de l'American Name Society. Page 142 : « Abubakar, companion of the Prophet, acquired the additional name As-siddiq (the Truthful) which in Hausa form became Sidiku »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1888,
+              "label": "1888"
+            },
+            "era": "polity",
+            "statement": "Le nom Abubakar apparaît par écrit dans le supplément au dictionnaire haoussa du missionnaire J. F. Schön, qui le donne comme nom propre d'homme. C'est la plus ancienne trace de cette forme que le projet connaît ; elle dit quand un auteur l'a notée, pas depuis quand le nom est donné.",
+            "formAsWritten": "Abubakar",
+            "birth": true,
+            "actors": [
+              {
+                "name": "J. F. Schön",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Appendix to the Dictionary of the Hausa Language",
+                "author": "J. F. Schön",
+                "year": 1888,
+                "url": "https://archive.org/details/schon-dictionary-of-the-hausa-language-with-appendix",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 2",
+                "notes": "Londres, Church Missionary House, 1888 ; supplément au dictionnaire haoussa publié en 1876. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Page 2 : « Abubakar, p.n. m. », nom propre d'homme. Auteur missionnaire de l'époque coloniale, cité pour la forme qu'il relève."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant la forme haoussa"
+            },
+            "statement": "Le nom Abou Bakr est celui du compagnon du Prophète devenu le premier calife de l'islam. La forme haoussa Abubakar le reprend, selon Pauline Ryan.",
+            "before": true,
+            "sources": [
+              {
+                "title": "An Introduction to Hausa Personal Nomenclature",
+                "author": "Pauline M. Ryan",
+                "year": 1981,
+                "url": "https://ans-names.pitt.edu/ans/article/download/942/941/1886",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 142",
+                "notes": "Names, vol. 29, n° 2, 1981, p. 139-164. Lu le 11 octobre 2026 dans le PDF de l'American Name Society. Page 142 et tableau I : Abubakar renvoie au premier calife."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -133,5 +133,136 @@
       "fieldPath": "homonyms",
       "reason": "Les catalogues d’autorité et recherches onomastiques consultés n’ont pas révélé une seconde origine distincte sous la graphie Aït Ahmed ; la variation Aït/Ait/At relève de l’orthographe."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Aït Ahmed est un nom berbère qui se comprend « les enfants d'Ahmed » : Aït, ou At, est la particule qui précède un nom d'homme dans les noms de tribus et de villages de Kabylie. Il s'écrit aussi Ait Ahmed et At Ḥmed. Les sources lues ne disent rien de son usage au Maroc. On ne sait pas avec certitude depuis quand ni comment il est devenu un nom de famille.",
+    "names": [
+      {
+        "nameText": "Aït Ahmed",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom berbère de Kabylie, « les enfants d'Ahmed », d'abord nom de tribu et de village.",
+        "periodLabel": "Écrit dès 1872 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Aït Ahmed se comprend « les enfants d'Ahmed » : At, ou Aït, est la particule berbère qui précède un nom d'homme dans les noms de lieux de Kabylie, et Ahmed est un nom arabe de la racine ḤMD, « louer, célébrer », selon un mémoire de l'université de Tizi-Ouzou.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les noms des lieux et des villages de deux daïras, Iferhounene et Aïn El Hammam : étude sémantique et morphologique",
+                "author": "Aït Benali Azouaou et Ben Boussad Karima",
+                "year": 2020,
+                "url": "https://dspace.ummto.dz/bitstreams/7a6caabf-eff9-42d6-b9ff-50540cc1e417/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 39-40",
+                "notes": "Mémoire de master, Université Mouloud Mammeri de Tizi-Ouzou, 2019-2020, lu en texte intégral le 13 octobre 2026. Les noms composés relevés comprennent At Aḥmed, rangé parmi les noms formés d'une particule et d'un nom. Pages 39-40, tableau d'analyse : « Ait Ahmed (At Ḥmed) », racine ḤMD, « l'anthroponyme arabe, venant de la racine ḤMD signifiant louer, célébrer » ; glose « les enfants d'Ahmed ». Le mémoire étudie des noms de lieux, non des noms de famille."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1872,
+              "to": 1872,
+              "label": "1872"
+            },
+            "era": "colonial",
+            "statement": "Le nom Aït Ahmed apparaît par écrit dans l'ouvrage de Hanoteau et Letourneux sur la Kabylie : ils décrivent une tribu des Aït Ahmed, l'une des sept tribus de la confédération des Aït Sedka, dans le cercle de Drâ el-Mizan. C'est la plus ancienne trace de ce nom que le projet connaît ; elle nomme une tribu, non une famille, et le nom est plus ancien qu'elle.",
+            "formAsWritten": "Aït Ahmed",
+            "birth": true,
+            "sources": [
+              {
+                "title": "La Kabylie et les coutumes kabyles, tome I",
+                "author": "Adolphe Hanoteau et Aristide Letourneux",
+                "year": 1872,
+                "url": "https://archive.org/details/bub_gb_8jgbAAAAYAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 272-273",
+                "notes": "Paris, 1872 ; exemplaire numérisé d'archive.org (tome I), lu le 13 octobre 2026. Pages 272-273 : le cercle de Drâ el-Mizan, « Confédération des Aït Sedka. Sept tribus : Iouadhien, Aoukdal, Aït Ahmed, Aït Chebla… », puis « Tribu des Aït Ahmed » avec ses villages. Page 247 : un village « Aït Ahmed (les enfants d'Ahmed) » ; les auteurs glosent de même d'autres noms en Aït, comme « Aït Hammou (les enfants de Hammou) ». Les auteurs sont un général d'état-major et un magistrat de l'administration française de l'Algérie."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ait Ahmed",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie sans tréma du nom Aït Ahmed, que l'on trouve dès 1872.",
+        "periodLabel": "Écrit dès 1872",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1872,
+              "to": 1872,
+              "label": "1872"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ait Ahmed, sans tréma, est la graphie que Hanoteau et Letourneux donnent à un village de Kabylie, avec la glose « les enfants d'Ahmed ».",
+            "aspect": "usage",
+            "formAsWritten": "Ait Ahmed",
+            "sources": [
+              {
+                "title": "La Kabylie et les coutumes kabyles, tome I",
+                "author": "Adolphe Hanoteau et Aristide Letourneux",
+                "year": 1872,
+                "url": "https://archive.org/details/bub_gb_8jgbAAAAYAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 247",
+                "notes": "Paris, 1872 ; exemplaire numérisé d'archive.org (tome I), lu le 13 octobre 2026. Pages 272-273 : le cercle de Drâ el-Mizan, « Confédération des Aït Sedka. Sept tribus : Iouadhien, Aoukdal, Aït Ahmed, Aït Chebla… », puis « Tribu des Aït Ahmed » avec ses villages. Page 247 : un village « Aït Ahmed (les enfants d'Ahmed) » ; les auteurs glosent de même d'autres noms en Aït, comme « Aït Hammou (les enfants de Hammou) ». Les auteurs sont un général d'état-major et un magistrat de l'administration française de l'Algérie."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "At Ḥmed",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'écriture berbère du nom Aït Ahmed, relevée comme nom de village en Kabylie.",
+        "periodLabel": "Écrit en 2019-2020",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2020,
+              "label": "Décrit en 2019-2020"
+            },
+            "era": "modern",
+            "statement": "Le nom At Ḥmed est l'écriture berbère du nom Aït Ahmed : un mémoire de l'université de Tizi-Ouzou le relève parmi les noms de villages des daïras d'Iferhounene et d'Aïn El Hammam et le glose « les enfants d'Ahmed ».",
+            "aspect": "usage",
+            "formAsWritten": "At Ḥmed",
+            "sources": [
+              {
+                "title": "Les noms des lieux et des villages de deux daïras, Iferhounene et Aïn El Hammam : étude sémantique et morphologique",
+                "author": "Aït Benali Azouaou et Ben Boussad Karima",
+                "year": 2020,
+                "url": "https://dspace.ummto.dz/bitstreams/7a6caabf-eff9-42d6-b9ff-50540cc1e417/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 39-40",
+                "notes": "Mémoire de master, Université Mouloud Mammeri de Tizi-Ouzou, 2019-2020, lu en texte intégral le 13 octobre 2026. Les noms composés relevés comprennent At Aḥmed, rangé parmi les noms formés d'une particule et d'un nom. Pages 39-40, tableau d'analyse : « Ait Ahmed (At Ḥmed) », racine ḤMD, « l'anthroponyme arabe, venant de la racine ḤMD signifiant louer, célébrer » ; glose « les enfants d'Ahmed ». Le mémoire étudie des noms de lieux, non des noms de famille."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

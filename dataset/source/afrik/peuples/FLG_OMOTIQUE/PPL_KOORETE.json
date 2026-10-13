@@ -126,5 +126,402 @@
         "source_kind": "encyclopedia"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Koorete désigne la langue du peuple koore, dans le sud de l'Éthiopie, à l'est des lacs Abaya et Chamo ; le peuple se nomme lui-même Koore. D'autres noms existent : Amarro, Badittu, Koyra et Alada. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Koorete",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kqy",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue des Koore, formé sur le nom du peuple.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Koorete désigne la langue des Koore. Il est formé du nom du peuple, Koore, suivi de la terminaison -te, qui sert à nommer une langue à partir du nom d'un peuple, selon la linguiste Beletu Redda. On ne sait pas avec certitude d'où vient le nom Koore, et nous n'avons pas trouvé sa plus ancienne trace écrite.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Morphology of Koorete",
+                "author": "Beletu Redda",
+                "year": 2003,
+                "url": "https://www.kooretebible.com/sites/www.kooretebible.com/files/BELETU%20REDDA.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Mémoire de master en linguistique, université d'Addis-Abeba, juin 2003. Lu le 11 octobre 2026 dans une copie mise en ligne par un site de traduction de la Bible en koorete (copie non officielle)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Koore est aujourd'hui le nom officiel de ce peuple, et le mieux accepté par lui, selon Beletu Redda.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Morphology of Koorete",
+                "author": "Beletu Redda",
+                "year": 2003,
+                "url": "https://www.kooretebible.com/sites/www.kooretebible.com/files/BELETU%20REDDA.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Mémoire de master en linguistique, université d'Addis-Abeba, juin 2003. Lu le 11 octobre 2026 dans une copie mise en ligne par un site de traduction de la Bible en koorete (copie non officielle)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Rapporté en 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Koore viendrait de Koorso, un nom de lieu qui voudrait dire « lieu ancien », là où vivaient les Koore, selon Ato Darcho Buusso, un habitant interrogé par la linguiste Beletu Redda.",
+            "hypothesisGroup": "origine du nom Koore",
+            "sources": [
+              {
+                "title": "The Morphology of Koorete",
+                "author": "Beletu Redda",
+                "year": 2003,
+                "url": "https://www.kooretebible.com/sites/www.kooretebible.com/files/BELETU%20REDDA.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Mémoire de master en linguistique, université d'Addis-Abeba, juin 2003. Lu le 11 octobre 2026 dans une copie mise en ligne par un site de traduction de la Bible en koorete (copie non officielle)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Amarro",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du pays des Koore, donné aussi au peuple ; une forme proche est écrite dès 1897.",
+        "periodLabel": "Écrit sous une forme proche dès 1897 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Amarro est celui du pays où vivent les Koore, le district spécial d'Amarro, selon Beletu Redda en 2003. D'autres peuples l'emploient aussi pour les Koore eux-mêmes.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Morphology of Koorete",
+                "author": "Beletu Redda",
+                "year": 2003,
+                "url": "https://www.kooretebible.com/sites/www.kooretebible.com/files/BELETU%20REDDA.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3-4",
+                "notes": "Mémoire de master en linguistique, université d'Addis-Abeba, juin 2003. Lu le 11 octobre 2026 dans une copie mise en ligne par un site de traduction de la Bible en koorete (copie non officielle)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1899,
+              "label": "Voyage de 1896, publié en 1899"
+            },
+            "era": "polity",
+            "statement": "Le nom Amarro est écrit Amarr dans le récit de l'expédition Bottego : les éleveurs boran et leurs voisins appellent ainsi les cultivateurs des montagnes, selon Lamberto Vannutelli et Carlo Citerni. Près de Burji, le nom désigne alors les habitants de Burgi et des villages voisins, et non leurs voisins du nord, qu'ils appellent Badditu.",
+            "formAsWritten": "Amarr",
+            "sources": [
+              {
+                "title": "L'Omo : viaggio d'esplorazione nell'Africa orientale",
+                "author": "Lamberto Vannutelli et Carlo Citerni",
+                "year": 1899,
+                "url": "https://archive.org/details/lomoviaggiodespl00vann",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 183-184",
+                "notes": "Milan, Hoepli, 1899. Récit de la seconde expédition de Vittorio Bottego, 1895-1897. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1897,
+              "label": "Voyage d'avril 1895, publié en 1897"
+            },
+            "era": "polity",
+            "statement": "Le nom Amarro apparaît sous une forme proche, Amara, dans le récit du voyageur américain Arthur Donaldson Smith : il nomme ainsi un peuple qui vit haut dans les montagnes, et ces montagnes elles-mêmes. L'explorateur Eugenio Ruspoli avait séjourné chez ce peuple et avait été tué au pied des montagnes. Le nom désigne alors les gens de Burji plutôt que les Koore : c'est près de Burgi que Lamberto Vannutelli et Carlo Citerni visitent la tombe de Ruspoli. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il désigne existaient déjà avant lui.",
+            "formAsWritten": "Amara",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Arthur Donaldson Smith",
+                "role": "voyageur américain, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Through Unknown African Countries: The First Expedition from Somaliland to Lake Lamu",
+                "author": "Arthur Donaldson Smith",
+                "year": 1897,
+                "url": "https://archive.org/details/throughunknowna00smit",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 213-214",
+                "notes": "Londres et New York, Edward Arnold, 1897. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              },
+              {
+                "title": "L'Omo : viaggio d'esplorazione nell'Africa orientale",
+                "author": "Lamberto Vannutelli et Carlo Citerni",
+                "year": 1899,
+                "url": "https://archive.org/details/lomoviaggiodespl00vann",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Milan, Hoepli, 1899. Récit de la seconde expédition de Vittorio Bottego, 1895-1897. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive.",
+                "page": "p. 206-207"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1899,
+              "to": 1899,
+              "label": "Proposée en 1899"
+            },
+            "era": "polity",
+            "statement": "Le nom Amarro viendrait du nom des Amhara : réputés travailleurs, ils auraient donné leur nom à un mot commun que les éleveurs appliquaient aux cultivateurs des montagnes, selon Lamberto Vannutelli et Carlo Citerni.",
+            "hypothesisGroup": "origine du nom Amarro",
+            "sources": [
+              {
+                "title": "L'Omo : viaggio d'esplorazione nell'Africa orientale",
+                "author": "Lamberto Vannutelli et Carlo Citerni",
+                "year": 1899,
+                "url": "https://archive.org/details/lomoviaggiodespl00vann",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 183",
+                "notes": "Milan, Hoepli, 1899. Récit de la seconde expédition de Vittorio Bottego, 1895-1897. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Rapporté en 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Amarro viendrait d'un groupe venu du Menz, en pays amhara, et conduit par un prêtre appelé Kaba, selon la tradition que rapporte Ato Darcho Buusso, un habitant interrogé par la linguiste Beletu Redda. Elle cite aussi des chercheurs pour qui les dynasties d'Amarro disaient descendre d'Amhara ou de Tigréens.",
+            "hypothesisGroup": "origine du nom Amarro",
+            "sources": [
+              {
+                "title": "The Morphology of Koorete",
+                "author": "Beletu Redda",
+                "year": 2003,
+                "url": "https://www.kooretebible.com/sites/www.kooretebible.com/files/BELETU%20REDDA.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3-4",
+                "notes": "Mémoire de master en linguistique, université d'Addis-Abeba, juin 2003. Lu le 11 octobre 2026 dans une copie mise en ligne par un site de traduction de la Bible en koorete (copie non officielle)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Badittu",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Oromo, selon Enrico Cerulli cité par Beletu Redda",
+        "shortLine": "Un nom donné aux Koore dans la langue des Oromo ; écrit Badditu dès 1899.",
+        "periodLabel": "Écrit dès 1899 ; encore cité par les catalogues de langues",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Badittu, ou Badditu, fait partie des noms que d'autres peuples donnent aux Koore, selon Beletu Redda.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Morphology of Koorete",
+                "author": "Beletu Redda",
+                "year": 2003,
+                "url": "https://www.kooretebible.com/sites/www.kooretebible.com/files/BELETU%20REDDA.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Mémoire de master en linguistique, université d'Addis-Abeba, juin 2003. Lu le 11 octobre 2026 dans une copie mise en ligne par un site de traduction de la Bible en koorete (copie non officielle)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Proposée en 1929"
+            },
+            "era": "polity",
+            "statement": "Le nom Badittu aurait été donné aux Koore il y a des siècles par les Oromo, selon l'orientaliste Enrico Cerulli, que cite Beletu Redda. Nous n'avons pas lu le texte de Cerulli.",
+            "hypothesisGroup": "origine du nom Badittu",
+            "sources": [
+              {
+                "title": "The Morphology of Koorete",
+                "author": "Beletu Redda",
+                "year": 2003,
+                "url": "https://www.kooretebible.com/sites/www.kooretebible.com/files/BELETU%20REDDA.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Mémoire de master en linguistique, université d'Addis-Abeba, juin 2003. Lu le 11 octobre 2026 dans une copie mise en ligne par un site de traduction de la Bible en koorete (copie non officielle)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1899,
+              "label": "Voyage de 1896, publié en 1899"
+            },
+            "era": "polity",
+            "statement": "Le nom Badittu apparaît, écrit Badditu, dans le récit de l'expédition Bottego : quand ils parlent la langue des Boran, les gens de Burji appellent ainsi leurs voisins du nord. Leur langue, la badditu, se parle à partir de Naddalè, selon Lamberto Vannutelli et Carlo Citerni. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Badditu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "L'Omo : viaggio d'esplorazione nell'Africa orientale",
+                "author": "Lamberto Vannutelli et Carlo Citerni",
+                "year": 1899,
+                "url": "https://archive.org/details/lomoviaggiodespl00vann",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 184",
+                "notes": "Milan, Hoepli, 1899. Récit de la seconde expédition de Vittorio Bottego, 1895-1897. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Koyra",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Konso, selon Lamberto Vannutelli et Carlo Citerni",
+        "shortLine": "Un nom donné par les Konso ; une forme proche est écrite dès 1899.",
+        "periodLabel": "Écrit sous une forme proche dès 1899 ; en usage chez les linguistes",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Koyra est l'un des noms sous lesquels des catalogues de langues, dont l'atlas WALS, rangent la langue koorete, selon Glottolog. Beletu Redda le cite parmi les noms que d'autres donnent aux Koore.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Koorete (koor1239)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/koor1239",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle recense les formes Amaarro, Amarro, Badditu, Badittu, Gidiccho, Koore, Koorete, Koré, Koyra, Kwera et Nuna."
+              },
+              {
+                "title": "The Morphology of Koorete",
+                "author": "Beletu Redda",
+                "year": 2003,
+                "url": "https://www.kooretebible.com/sites/www.kooretebible.com/files/BELETU%20REDDA.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Mémoire de master en linguistique, université d'Addis-Abeba, juin 2003. Lu le 11 octobre 2026 dans une copie mise en ligne par un site de traduction de la Bible en koorete (copie non officielle)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1899,
+              "label": "Voyage de 1896, publié en 1899"
+            },
+            "era": "polity",
+            "statement": "Le nom Koyra apparaît sous une forme proche, Coirà, dans le récit de l'expédition Bottego : c'est le nom que les Konso donnent à l'ensemble des cultivateurs des montagnes que les Boran appellent Amarr, selon Lamberto Vannutelli et Carlo Citerni. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il désigne existaient déjà avant lui.",
+            "formAsWritten": "Coirà",
+            "birth": true,
+            "sources": [
+              {
+                "title": "L'Omo : viaggio d'esplorazione nell'Africa orientale",
+                "author": "Lamberto Vannutelli et Carlo Citerni",
+                "year": 1899,
+                "url": "https://archive.org/details/lomoviaggiodespl00vann",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 184",
+                "notes": "Milan, Hoepli, 1899. Récit de la seconde expédition de Vittorio Bottego, 1895-1897. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Alada",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Konso, selon Lamberto Vannutelli et Carlo Citerni",
+        "shortLine": "Le nom que les Konso donnaient aux Badditu, selon un récit de 1899.",
+        "periodLabel": "Écrit en 1899",
+        "accounts": [
+          {
+            "period": {
+              "from": 1896,
+              "to": 1899,
+              "label": "Voyage de 1896, publié en 1899"
+            },
+            "era": "polity",
+            "statement": "Le nom Alada est celui que les Konso donnent aux Badditu, selon Lamberto Vannutelli et Carlo Citerni. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Alada",
+            "birth": true,
+            "sources": [
+              {
+                "title": "L'Omo : viaggio d'esplorazione nell'Africa orientale",
+                "author": "Lamberto Vannutelli et Carlo Citerni",
+                "year": 1899,
+                "url": "https://archive.org/details/lomoviaggiodespl00vann",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 184",
+                "notes": "Milan, Hoepli, 1899. Récit de la seconde expédition de Vittorio Bottego, 1895-1897. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

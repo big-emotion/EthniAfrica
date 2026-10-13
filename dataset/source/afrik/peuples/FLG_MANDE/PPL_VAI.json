@@ -146,5 +146,337 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Vai désigne un peuple de langue mandé de la côte, entre le cap Mount, au Liberia, et la rivière Gallinas, en Sierra Leone, qui se nomme lui-même Vai. Le nom a été écrit Vey, Foy, Vy ou Vei, et un royaume du XVIIe siècle, Kquoja, a prêté son nom à la langue. Les sources ne s'accordent pas sur l'origine du nom Vai ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Vai",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "vai",
+        "namedBy": null,
+        "shortLine": "Écrit Vey au XVIIe siècle ; son origine reste discutée.",
+        "periodLabel": "Écrit depuis le XVIIe siècle ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1968,
+              "to": 1968,
+              "label": "Usage décrit en 1968"
+            },
+            "era": "modern",
+            "statement": "Le nom Vai désigne un peuple et sa langue, autour du cap Mount, partagés entre le Liberia et la Sierra Leone. Ce n'est peut-être qu'au XIXe siècle que tous ses groupes ont accepté ce nom, selon P. E. H. Hair ; son origine reste discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Introduction à la réimpression des Outlines of a grammar of the Vei language de Sigismund Koelle",
+                "author": "P. E. H. Hair",
+                "year": 1968,
+                "url": "https://archive.org/details/outlinesofgramma00koeluoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction non paginée, parties « The term 'Vai' » et « The early history of Vai »",
+                "notes": "Gregg International Publishers, Farnborough, 1968, réimpression publiée avec l'African Language Review du Fourah Bay College. Lu le 11 octobre 2026 dans l'exemplaire numérisé, qui place cette introduction avant le texte de 1854."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1820,
+              "to": 1829,
+              "label": "Années 1820"
+            },
+            "statement": "Le nom Vai s'écrit « Vei » chez les Américano-Libériens de Monrovia, qui entrent alors en contact de plus en plus étroit avec ce peuple, selon P. E. H. Hair.",
+            "sources": [
+              {
+                "title": "Introduction à la réimpression des Outlines of a grammar of the Vei language de Sigismund Koelle",
+                "author": "P. E. H. Hair",
+                "year": 1968,
+                "url": "https://archive.org/details/outlinesofgramma00koeluoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction non paginée, parties « The term 'Vai' » et « The early history of Vai »",
+                "notes": "Gregg International Publishers, Farnborough, 1968, réimpression publiée avec l'African Language Review du Fourah Bay College. Lu le 11 octobre 2026 dans l'exemplaire numérisé, qui place cette introduction avant le texte de 1854."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1795,
+              "to": 1805,
+              "label": "Vers 1800"
+            },
+            "era": "polity",
+            "statement": "Le nom Vai a une forme proche, « Foy », dans des rapports de la colonie britannique de Sierra Leone, qui mentionnent de temps en temps le peuple foy du cap Mount, selon P. E. H. Hair.",
+            "sources": [
+              {
+                "title": "Introduction à la réimpression des Outlines of a grammar of the Vei language de Sigismund Koelle",
+                "author": "P. E. H. Hair",
+                "year": 1968,
+                "url": "https://archive.org/details/outlinesofgramma00koeluoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction non paginée, parties « The term 'Vai' » et « The early history of Vai »",
+                "notes": "Gregg International Publishers, Farnborough, 1968, réimpression publiée avec l'African Language Review du Fourah Bay College. Lu le 11 octobre 2026 dans l'exemplaire numérisé, qui place cette introduction avant le texte de 1854."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1668,
+              "to": 1668,
+              "label": "1668"
+            },
+            "era": "polity",
+            "statement": "Le nom Vai, écrit Vey, est alors en train de disparaître, selon Olfert Dapper : les Vey, anciens habitants du pays, ont été réduits à un petit nombre par la guerre des Karou, aidés des Folgia, et ne tiennent plus que quelques villages ruinés.",
+            "sources": [
+              {
+                "title": "Naukeurige beschrijvinge der Afrikaensche gewesten",
+                "author": "Olfert Dapper",
+                "year": 1668,
+                "url": "https://archive.org/details/gri_33125009359999",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 384",
+                "notes": "Description de l'Afrique en néerlandais, publiée à Amsterdam par Jacob van Meurs, lue dans l'exemplaire numérisé le 11 octobre 2026, pages vues en image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1600,
+              "to": 1668,
+              "label": "Première moitié du XVIIe siècle, publié en 1668"
+            },
+            "era": "polity",
+            "statement": "Le nom Vai apparaît par écrit sous la forme « Vey » dans la description de l'Afrique d'Olfert Dapper, faite à partir de récits de marchands néerlandais : « Vey-berkoma », le pays de Vey, près du cap Mount. Selon P. E. H. Hair, ces sources néerlandaises datent de la première moitié du XVIIe siècle. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà là avant lui.",
+            "formAsWritten": "Vey",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Naukeurige beschrijvinge der Afrikaensche gewesten",
+                "author": "Olfert Dapper",
+                "year": 1668,
+                "url": "https://archive.org/details/gri_33125009359999",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 384",
+                "notes": "Description de l'Afrique en néerlandais, publiée à Amsterdam par Jacob van Meurs, lue dans l'exemplaire numérisé le 11 octobre 2026, pages vues en image."
+              },
+              {
+                "title": "Introduction à la réimpression des Outlines of a grammar of the Vei language de Sigismund Koelle",
+                "author": "P. E. H. Hair",
+                "year": 1968,
+                "url": "https://archive.org/details/outlinesofgramma00koeluoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction non paginée, parties « The term 'Vai' » et « The early history of Vai »",
+                "notes": "Gregg International Publishers, Farnborough, 1968, réimpression publiée avec l'African Language Review du Fourah Bay College. Lu le 11 octobre 2026 dans l'exemplaire numérisé, qui place cette introduction avant le texte de 1854."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1668,
+              "to": 1668,
+              "label": "Proposée en 1668"
+            },
+            "era": "polity",
+            "statement": "Le nom Vai viendrait du nom de la langue de ce peuple, Vey, selon Olfert Dapper, qui écrit que les Vey sont « ainsi nommés d'après leur langue ».",
+            "hypothesisGroup": "origine du nom Vai",
+            "sources": [
+              {
+                "title": "Naukeurige beschrijvinge der Afrikaensche gewesten",
+                "author": "Olfert Dapper",
+                "year": 1668,
+                "url": "https://archive.org/details/gri_33125009359999",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 384",
+                "notes": "Description de l'Afrique en néerlandais, publiée à Amsterdam par Jacob van Meurs, lue dans l'exemplaire numérisé le 11 octobre 2026, pages vues en image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1851,
+              "to": 1854,
+              "label": "Proposée en 1851, publiée en 1854"
+            },
+            "statement": "Le nom Vai viendrait du peuple que les Vai ont conquis en arrivant sur la côte : venus du pays mani, ils en auraient pris le pays et le nom, selon Sigismund Koelle. Il précise que les Vai qu'il a interrogés n'avaient aucune opinion sur l'origine de leur nom.",
+            "hypothesisGroup": "origine du nom Vai",
+            "sources": [
+              {
+                "title": "Outlines of a grammar of the Vei language, together with a Vei-English vocabulary",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://archive.org/details/outlinesofgramma00koeluoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. iii-iv",
+                "notes": "Londres, Church Missionary House, 1854 ; la préface est datée de juillet 1851. Lu le 11 octobre 2026 dans la réimpression de 1968 numérisée."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Vei",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": "vai",
+        "namedBy": null,
+        "periodLabel": "Écrit Vei et Vy au XIXe siècle",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "statement": "Le nom Vei est la forme que retient Sigismund Koelle dans sa grammaire, la première de cette langue. Il y écrit que le pays vei va de la région des Gallinas, au nord, jusqu'au Half Cape Mount, au sud.",
+            "sources": [
+              {
+                "title": "Outlines of a grammar of the Vei language, together with a Vei-English vocabulary",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://archive.org/details/outlinesofgramma00koeluoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. iii",
+                "notes": "Londres, Church Missionary House, 1854 ; la préface est datée de juillet 1851. Lu le 11 octobre 2026 dans la réimpression de 1968 numérisée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1849,
+              "to": 1849,
+              "label": "1849"
+            },
+            "statement": "Le nom Vei est l'orthographe de Sigismund Koelle dans le récit de son voyage au cap Mount. L'éditeur du récit précise que le nom s'écrit d'ordinaire « Vy », et que l'orthographe alors adoptée donnerait « Vai ».",
+            "formAsWritten": "Vy",
+            "sources": [
+              {
+                "title": "Narrative of an expedition into the Vy country of West Africa, and the discovery of a system of syllabic writing",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1849,
+                "url": "https://archive.org/details/narrativeanexpe00koelgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 8, note",
+                "notes": "Lu le 11 octobre 2026 dans l'exemplaire numérisé. La note est de l'éditeur du récit, pas de Koelle."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kquoja",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Nom d'un royaume et de sa langue au XVIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1668,
+              "to": 1668,
+              "label": "1668"
+            },
+            "era": "polity",
+            "statement": "Le nom Kquoja désigne chez Olfert Dapper un royaume du cap Mount et la langue qu'on y parle alors : « Kquoja-berkoma », le pays de Kquoja, est ainsi nommé d'après la langue de ses habitants. Le royaume comprend aussi le pays de Vey.",
+            "formAsWritten": "Kquoja",
+            "sources": [
+              {
+                "title": "Naukeurige beschrijvinge der Afrikaensche gewesten",
+                "author": "Olfert Dapper",
+                "year": 1668,
+                "url": "https://archive.org/details/gri_33125009359999",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 384",
+                "notes": "Description de l'Afrique en néerlandais, publiée à Amsterdam par Jacob van Meurs, lue dans l'exemplaire numérisé le 11 octobre 2026, pages vues en image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1668,
+              "to": 1968,
+              "label": "1668, relu en 1968"
+            },
+            "statement": "Le nom Kquoja est celui sous lequel le livre de 1668 donne un vocabulaire de la langue, un vocabulaire qui est sans aucun doute du vai, selon P. E. H. Hair. Il en déduit que des gens parlant vai vivaient près du cap Mount au milieu du XVIe siècle.",
+            "sources": [
+              {
+                "title": "Introduction à la réimpression des Outlines of a grammar of the Vei language de Sigismund Koelle",
+                "author": "P. E. H. Hair",
+                "year": 1968,
+                "url": "https://archive.org/details/outlinesofgramma00koeluoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "introduction non paginée, parties « The term 'Vai' » et « The early history of Vai »",
+                "notes": "Gregg International Publishers, Farnborough, 1968, réimpression publiée avec l'African Language Review du Fourah Bay College. Lu le 11 octobre 2026 dans l'exemplaire numérisé, qui place cette introduction avant le texte de 1854."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gallinas",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Nom de rivière et de région depuis le XVIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1668,
+              "to": 1668,
+              "label": "1668"
+            },
+            "era": "polity",
+            "statement": "Le nom Gallinas est d'abord celui d'une rivière, que les Portugais appellent « Rio Galinhas », la rivière des poules, à cause des nombreuses poules des environs, selon Olfert Dapper. Ses habitants la nomment Maqualbary.",
+            "formAsWritten": "Rio Galinhas",
+            "sources": [
+              {
+                "title": "Naukeurige beschrijvinge der Afrikaensche gewesten",
+                "author": "Olfert Dapper",
+                "year": 1668,
+                "url": "https://archive.org/details/gri_33125009359999",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 383",
+                "notes": "Description de l'Afrique en néerlandais, publiée à Amsterdam par Jacob van Meurs, lue dans l'exemplaire numérisé le 11 octobre 2026, pages vues en image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1851,
+              "to": 1854,
+              "label": "1851-1854"
+            },
+            "statement": "Le nom Gallinas désigne pour Sigismund Koelle la partie nord du pays vei. Dans les sources que nous avons lues, c'est un nom de rivière et de région, pas un nom du peuple vai.",
+            "sources": [
+              {
+                "title": "Outlines of a grammar of the Vei language, together with a Vei-English vocabulary",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://archive.org/details/outlinesofgramma00koeluoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. iii",
+                "notes": "Londres, Church Missionary House, 1854 ; la préface est datée de juillet 1851. Lu le 11 octobre 2026 dans la réimpression de 1968 numérisée."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

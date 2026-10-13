@@ -14,6 +14,7 @@ import {
 } from "node:fs";
 import { resolve, relative, isAbsolute, join, dirname, sep } from "node:path";
 import { pathToFileURL } from "node:url";
+import { execFileSync } from "node:child_process";
 const CORPUS = "dataset/source/afrik/";
 const fail = (message) => {
   throw new Error(message);
@@ -94,6 +95,73 @@ function pointer(document, path) {
     value: parent[key],
   };
 }
+// The dossier keeps only the reviewed fiche's sha256. Re-serialising JSON does
+// not reproduce the repository's formatting, so the exact reviewed bytes are
+// recovered from version history; an uncommitted reviewed version is unprovable.
+function committedVersion(root, file, sha256) {
+  const env = Object.fromEntries(
+    Object.entries(process.env).filter(([key]) => !key.startsWith("GIT_"))
+  );
+  const run = (args) =>
+    execFileSync("git", args, {
+      cwd: resolve(root),
+      env,
+      stdio: ["ignore", "pipe", "ignore"],
+      maxBuffer: 64 * 1024 * 1024,
+    });
+  try {
+    const revisions = run(["log", "--format=%H", "--", file])
+      .toString("utf8")
+      .split("\n")
+      .filter(Boolean);
+    for (const revision of revisions) {
+      const bytes = run(["show", `${revision}:./${file}`]);
+      if (sha(bytes) === sha256) return JSON.parse(bytes.toString("utf8"));
+    }
+  } catch {
+    return null;
+  }
+  return null;
+}
+// Returns the reviewed document when the fiche differs from it only by
+// `applied` corrections, each holding its integrated value; otherwise null.
+export function reviewedRecord(root, file, sha256, applied) {
+  const text = readFileSync(inside(root, file), "utf8");
+  if (sha(text) === sha256) return JSON.parse(text);
+  const changes = applied.filter((c) => c.file === file);
+  if (!changes.length) return null;
+  const document = JSON.parse(text);
+  try {
+    for (const change of changes) {
+      const p = pointer(document, change.pointer);
+      if (!p.exists || !equal(p.value, change.value)) return null;
+      if (change.before.exists)
+        p.parent[p.key] = structuredClone(change.before.value);
+      else delete p.parent[p.key];
+    }
+  } catch {
+    return null;
+  }
+  const reviewed = committedVersion(root, file, sha256);
+  return reviewed && equal(reviewed, document) ? reviewed : null;
+}
+// Without a checkpoint (package preparation), the dossier's own proposals
+// whose value is present count as applied; approval gates pass the
+// checkpoint's locally-checked corrections instead.
+function presentProposals(root, input, file) {
+  const document = JSON.parse(readFileSync(inside(root, file), "utf8"));
+  return (input.findings ?? []).flatMap((f) => {
+    if (f.file !== file || !f.proposal) return [];
+    try {
+      const p = pointer(document, f.pointer);
+      return p.exists && equal(p.value, f.proposal.value)
+        ? [{ file, pointer: f.pointer, before: f.before, value: p.value }]
+        : [];
+    } catch {
+      return [];
+    }
+  });
+}
 export function discoverCorpus(root, terms) {
   list(terms, "Search terms");
   const normalize = (s) =>
@@ -128,7 +196,11 @@ export function discoverCorpus(root, terms) {
   walk(inside(root, CORPUS));
   return found;
 }
-export function assessResearch(root, inputFile, { forDelivery = false } = {}) {
+export function assessResearch(
+  root,
+  inputFile,
+  { forDelivery = false, applied } = {}
+) {
   const dependencies = {};
   const read = (file) => {
     const bytes = readFileSync(inside(root, file));
@@ -159,8 +231,17 @@ export function assessResearch(root, inputFile, { forDelivery = false } = {}) {
     if (!r.file.startsWith(CORPUS) || !r.file.endsWith(".json"))
       fail("Record must be a corpus JSON file");
     const text = read(r.file);
-    if (sha(text) !== r.sha256) fail(`Corpus record changed: ${r.file}`);
-    documents.set(r.file, JSON.parse(text));
+    const reviewed =
+      sha(text) === r.sha256
+        ? JSON.parse(text)
+        : reviewedRecord(
+            root,
+            r.file,
+            r.sha256,
+            applied ?? presentProposals(root, input, r.file)
+          );
+    if (!reviewed) fail(`Corpus record changed: ${r.file}`);
+    documents.set(r.file, reviewed);
   }
   const sources = list(input.sources, "Sources");
   unique(sources, "source");
@@ -397,10 +478,22 @@ export function verifyProgress(root, report, event, previous) {
     fail("Corpus statuses must advance in order");
   const evidence = need(event.evidence, "Progress evidence");
   const evidenceHash = sha(readFileSync(inside(root, evidence)));
+  let observedValue;
   if (event.status === "locally-checked") {
     const data = JSON.parse(readFileSync(inside(root, c.file), "utf8"));
-    if (!equal(pointer(data, c.pointer).value, c.value))
-      fail("Local corpus does not match the prepared correction");
+    const observed = pointer(data, c.pointer).value;
+    // A correction merged after other edits may legitimately differ; keep the
+    // approved value untouched and record what was actually integrated.
+    if (!equal(observed, c.value)) {
+      if (!event.reconciliation)
+        fail("Local corpus does not match the prepared correction");
+      need(event.reconciliation, "Reconciliation explanation");
+      if (c.before?.exists && equal(observed, c.before.value))
+        fail(
+          "Correction not applied: the corpus still holds the reviewed value"
+        );
+      observedValue = observed;
+    }
   }
   if (event.status === "proposed") url(event.url);
   if (event.status === "integrated") need(event.commit, "Integration commit");
@@ -413,6 +506,7 @@ export function verifyProgress(root, report, event, previous) {
   }
   return {
     ...event,
+    ...(observedValue === undefined ? {} : { observedValue }),
     evidenceHash,
     recordedAt: new Date().toISOString(),
     verification:

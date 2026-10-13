@@ -132,5 +132,125 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Luchazi désigne un peuple de l'est de l'Angola, qui se nomme lui-même Luchazi. Les Ovimbundu et le recensement portugais le rangeaient sous le nom de Nganguela, qu'il n'a pas adopté. Les sources que nous avons lues n'expliquent pas d'où vient le nom Luchazi ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "Luchazi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lch",
+        "namedBy": null,
+        "shortLine": "Un nom écrit Louchazès par l'explorateur Serpa Pinto en 1881.",
+        "usedIn": ["lch"],
+        "periodLabel": "Écrit depuis 1881 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1991,
+              "to": 1991,
+              "label": "Décrit en 1991"
+            },
+            "era": "modern",
+            "statement": "Le nom Luchazi est celui que porte l'un des peuples de l'est de la catégorie nganguela, en Angola, selon la Bibliothèque du Congrès : comme les Lwena et les Mbunda, les Luchazi n'acceptaient pas le nom de Nganguela. Les sources que nous avons lues n'expliquent pas d'où vient le nom Luchazi.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Angola: A Country Study, section « Nganguela »",
+                "author": "Library of Congress, Federal Research Division",
+                "year": 1991,
+                "url": "https://countrystudies.us/angola/63.htm",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Bibliothèque du Congrès des États-Unis, série Country Studies, 3e édition. Copie non officielle du texte, mise en ligne par countrystudies.us, lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1877,
+              "to": 1881,
+              "label": "1877-1878, récit publié en 1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Luchazi apparaît, écrit Louchazès, dans le récit de l'explorateur portugais Alexandre de Serpa Pinto. Il campe sur la Couito « dans le pays des Louchasès » et les distingue de leurs voisins, les Quimbandès et les Ganguélas. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Louchazès",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Alexandre de Serpa Pinto",
+                "role": "explorateur, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Comment j'ai traversé l'Afrique, tome I",
+                "author": "Alexandre de Serpa Pinto",
+                "year": 1881,
+                "url": "https://archive.org/details/commentjaitraver01serp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 302 et p. 306",
+                "notes": "Paris, Hachette, 1881, traduction française. Récit du voyage de 1877-1878. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. P. 302 : « les assagaies aux Louchazès et leurs bêches aux Ganguélas » ; p. 306 : « nous allâmes camper dans le pays des Louchasès »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nganguela",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Ovimbundu",
+        "shortLine": "Un nom péjoratif des Ovimbundu, que les Luchazi n'ont pas adopté.",
+        "periodLabel": "Écrit dès 1881",
+        "accounts": [
+          {
+            "period": {
+              "from": 1991,
+              "to": 1991,
+              "label": "Décrit en 1991"
+            },
+            "era": "modern",
+            "statement": "Le nom Nganguela est un terme péjoratif que les Ovimbundu appliquaient aux peuples vivant à l'est et au sud-est de chez eux, selon la Bibliothèque du Congrès. Les Luchazi, comme les Lwena et les Mbunda, ne l'acceptaient pas.",
+            "sources": [
+              {
+                "title": "Angola: A Country Study, section « Nganguela »",
+                "author": "Library of Congress, Federal Research Division",
+                "year": 1991,
+                "url": "https://countrystudies.us/angola/63.htm",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Bibliothèque du Congrès des États-Unis, série Country Studies, 3e édition. Copie non officielle du texte, mise en ligne par countrystudies.us, lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1877,
+              "to": 1881,
+              "label": "1877-1878, récit publié en 1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Nganguela sert de titre, écrit Ganguélas, au chapitre où Alexandre de Serpa Pinto décrit les Louchazès. Son récit les distingue pourtant des Ganguélas, à qui les gens de la région achètent leurs bêches.",
+            "formAsWritten": "Ganguélas",
+            "sources": [
+              {
+                "title": "Comment j'ai traversé l'Afrique, tome I",
+                "author": "Alexandre de Serpa Pinto",
+                "year": 1881,
+                "url": "https://archive.org/details/commentjaitraver01serp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 302-306",
+                "notes": "Paris, Hachette, 1881, traduction française. Récit du voyage de 1877-1878. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. Titre courant du chapitre : « Parmi les Ganguélas »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

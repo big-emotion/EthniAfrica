@@ -276,6 +276,36 @@
         "historicalRole": "Peuples Soussou de la côte, rôle commercial important, traditions maritimes. Conakry et la Basse-Guinée sont dominées par les Soussou."
       },
       {
+        "name": "Empire toucouleur (Ségou)",
+        "period": "1852 - 1890",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1852,
+          "endYear": 1890,
+          "precision": "approximate",
+          "datingNote": "Le début est le djihad d'El Hadj Oumar dans la région des Bambara, en 1852, selon Albert Adu Boahen (HGA VI). La fin est la prise de Ségou par les troupes françaises, en 1890 ; Ahmadou, chef de l'empire, résiste jusqu'à sa mort à Sokoto, en 1898, selon Godfrey N. Uzoigwe (HGA VII)."
+        },
+        "dominantPeoples": ["Toucouleurs (Halpulaar)"],
+        "politicalCenters": ["Ségou"],
+        "historicalRole": "État né du djihad lancé par El Hadj Oumar Tall en 1852 dans la région des Bambara, avec Ségou pour centre. Selon Albert Adu Boahen (HGA VI), il s'étend des sources du Sénégal et de la Gambie, dans l'actuelle Guinée, jusqu'à Tombouctou. Les victoires françaises de Koundian (1889), Ségou (1890) et Youri (1891) le font disparaître ; son chef Ahmadou continue la résistance jusqu'à sa mort, en 1898."
+      },
+      {
+        "name": "Empire de Samori Touré (empire manden)",
+        "period": "1881 - 1898",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1881,
+          "endYear": 1898,
+          "precision": "approximate",
+          "datingNote": "En 1881, Samori Touré a déjà unifié un empire, selon M'Baye Gueye et Albert Adu Boahen (HGA VII) ; ses conquêtes commencent dans les années 1870, selon Albert Adu Boahen (HGA VI). La fin est sa capture, en 1898, selon Godfrey N. Uzoigwe (HGA VII)."
+        },
+        "dominantPeoples": ["Dioula (Jula)", "Malinké"],
+        "politicalCenters": [
+          "Savanes du sud, entre le nord de l'actuelle Sierra Leone et la rivière Sassandra"
+        ],
+        "historicalRole": "Empire bâti par Samori Touré dans les savanes du sud, entre le nord de l'actuelle Sierra Leone et la rivière Sassandra, en Côte d'Ivoire. Selon Albert Adu Boahen (HGA VI), il s'étend du nord de la Sierra Leone et de la Guinée actuelles jusqu'à Bamako et englobe Kankan, grand centre de commerce et d'islam dioula. L'Histoire générale de l'Afrique l'appelle « empire manden » ; il est aussi désigné par le nom du Wassoulou, la région d'origine de Samori. En 1882, lors de la première rencontre avec les Français, il est encore en pleine expansion. Samori résiste jusqu'à sa capture, en 1898."
+      },
+      {
         "name": "Colonie française de Guinée",
         "period": "1891 - 1958",
         "entryType": "colonial",
@@ -523,6 +553,27 @@
         "tier": "unverified",
         "source_kind": "discovery",
         "notes": "Reprend l'estimation de 2018 du World Factbook de la CIA (Peuls 33,4 %, Malinkés 29,4 %, Soussous 21,2 %). D'autres relais attribuent à la même estimation des parts différentes, et le Factbook n'est plus publié."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VI, ch. 3 : Tendances et processus nouveaux dans l'Afrique du XIXe siècle",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par J. F. A. Ajayi, chapitre d'Albert Adu Boahen (1996), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 67. L'auteur cite les djihād de Cheikou Amadou au Macina en 1818 (le texte imprime « Marina ») et d'al-Hadjdj ˓Umar « dans la région des Bambara en 1852 ». Page 68. L'empire d'al-Hadjdj ˓Umar « allait des sources du Sénégal et de la Gambie à Tombouctou » ; celui de Samori Touré « s'étendait depuis le nord de la Sierra Leone et de la Guinée actuelles jusqu'à Bamako, et englobait le fameux et important centre commercial et islamique juula de Kankan »."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VII, ch. 2 : Partage européen et conquête de l'Afrique : aperçu général",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par A. A. Boahen, chapitre de Godfrey N. Uzoigwe (1987), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 56. Samori Touré est « capturé (1898) » ; les victoires de Koudian (1889), Ségou (1890) et Youri (1891) « firent disparaître l'empire tukuloor de Ségou », dont le chef Ahmadu résiste jusqu'à sa mort, à Sokoto, en 1898."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VII, ch. 6 : Initiatives et résistances africaines en Afrique occidentale de 1880 à 1914",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par A. A. Boahen, chapitre de M'Baye Gueye et Albert Adu Boahen (1987), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 147. « En 1881, il avait déjà fait » de la partie méridionale des savanes soudanaises, entre le nord de l'actuelle Sierra Leone et la rivière Sassandra, « un empire unifié sous son autorité incontestée »."
       }
     ],
     "demographics": {

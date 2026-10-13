@@ -32,6 +32,15 @@
           "sourceRefs": ["corpus-ppl-dioula-organisation"]
         }
       ]
+    },
+    {
+      "spelling": "Fofanah",
+      "attestations": [
+        {
+          "countryId": "SLE",
+          "sourceRefs": ["sltelegraph-2014-fofanah"]
+        }
+      ]
     }
   ],
   "transmissionMode": "patrilineal",
@@ -79,6 +88,11 @@
       "countryId": "GNB",
       "status": "attested",
       "sourceRefs": ["corpus-ppl-dioula-organisation"]
+    },
+    {
+      "countryId": "SLE",
+      "status": "attested",
+      "sourceRefs": ["sltelegraph-2014-fofanah"]
     }
   ],
   "alliances": [
@@ -164,6 +178,14 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Canut, Cécile, et Smith, Étienne, Cahiers d'études africaines, numéro 184, 2006, p. 687 et suivantes. Citée pour la mise en garde qu'elle porte : l'idée que la parenté à plaisanterie apaiserait les conflits y est traitée comme une hypothèse héritée de Radcliffe-Brown et reprise par les études sur la résolution des conflits, donc comme un discours à analyser et non comme un effet mesuré. La page de début est vérifiée, la page de fin ne l'est pas."
+    },
+    {
+      "sourceKey": "sltelegraph-2014-fofanah",
+      "title": "Health minister Miatta Kargbo sacked",
+      "url": "https://thesierraleonetelegraph.com/health-minister-miatta-kargbo-sacked",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Abdul Rashid Thomas, The Sierra Leone Telegraph, 29 août 2014, lu le 11 octobre 2026. L'article cite le communiqué de la présidence nommant le Dr Abu Bakarr Fofanah ministre de la Santé de Sierra Leone. Il atteste la graphie Fofanah en Sierra Leone, sans rien dire de son origine."
     }
   ],
   "gaps": [
@@ -175,5 +197,217 @@
       "fieldPath": "homonyms",
       "reason": "Fofana est porté dans les aires mandingue et soninké sans qu'une source dédiée établisse deux origines distinctes. Le dictionnaire des jamuw traite cette dispersion sous une entrée unique — il y attache cinq codes d'aire dialectale qu'il ne développe pas — et range Fònba, Magasa, Dancogo, Kamara et Diomandé parmi ses équivalences, des noms de clan d'autres peuples tenus pour le même. Une équivalence n'est pas une homonymie : elle dit que deux noms désignent le même groupe, non que le même nom en désigne deux."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Fofana est un nom de clan porté chez les Malinké, les Soninké et les Dioula. On l'écrit Fófana en bambara. Les sources ne s'accordent pas sur son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Fofana",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan mandingue et soninké, écrit dès 1892 ; on ne sait pas avec certitude d'où il vient.",
+        "periodLabel": "Écrit dès 1892 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Fofana désigne un clan. Aucune source lue ne lui donne de sens établi : le premier auteur qui s'y essaie avoue que son étymologie lui échappe. Les explications proposées sont présentées séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 11 octobre 2026. Entrée Fófana : aucun sens n'est donné au nom."
+              },
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, tome 2",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74721",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 2, p. 377",
+                "notes": "Paris, Hachette, 1892, deux tomes. Lu dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée, le 11 octobre 2026. Officier et voyageur de l'époque coloniale, cité ici pour les formes qu'il relève. « L'étymologie de Fofana m'échappe »."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 42-43",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, 2017, dirigé par A. Davydov et relu par V. Vydrin, lu en texte intégral le 11 octobre 2026 ; traduction du russe par nos soins. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Notice Fófana : peuples, statuts et interdits, sans récit d'origine."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Fofana est porté chez les Malinké, les Soninké, les Kagoro, les Khassonké et au Wassoulou, selon le mémoire d'E. A. Bogacheva. Le dictionnaire des noms de clan le compte aussi parmi les clans du Wago, l'une des trois grandes subdivisions des Soninké.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 42",
+                "notes": "Mémoire de licence en russe, Université d'État de Saint-Pétersbourg, 2017, dirigé par A. Davydov et relu par V. Vydrin, lu en texte intégral le 11 octobre 2026 ; traduction du russe par nos soins. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour les témoignages qu'il transmet. Notice Fófana : peuples malinké, soninké, kagoro, khassonké et wassoulounké."
+              },
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 11 octobre 2026. Entrée Wago : « une des trois grandes subdivisions des Soninké, dont le berceau serait le Wagadou », avec la liste de ses clans, dont Fofana."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1892,
+              "label": "Voyage de 1887-1889, récit publié en 1892"
+            },
+            "statement": "Le nom Fofana est, pour Louis-Gustave Binger, celui de groupes de familles dispersés parmi les autres Mandé, qui ne forment pas un peuple à part ; il les décrit comme une sorte de caste, musulmans ou non, et les divise selon leurs interdits.",
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, tome 2",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74721",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 2, p. 377",
+                "notes": "Paris, Hachette, 1892, deux tomes. Lu dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée, le 11 octobre 2026. Officier et voyageur de l'époque coloniale, cité ici pour les formes qu'il relève. « des groupes de familles qui ne portent d'autre titre que celui de Fofana », puis leurs subdivisions : Fofana-Kagoro, Fofana du Nouroukrou, de Nyamina, du Bakhounou et du Ouorodougou."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1892,
+              "label": "1887, récit publié en 1892"
+            },
+            "statement": "Le nom Fofana apparaît par écrit chez Louis-Gustave Binger, qui présente son ancien domestique comme « Diawé, un Fofana de Dogofili ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un voyageur l'a noté, pas depuis quand des familles le portent.",
+            "formAsWritten": "Fofana",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Louis-Gustave Binger",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Diawé",
+                "role": "domestique de Binger, qui porte ce nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74720",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 1, p. 9",
+                "notes": "Paris, Hachette, 1892, deux tomes. Lu dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée, le 11 octobre 2026. Officier et voyageur de l'époque coloniale, cité ici pour les formes qu'il relève. Départ de Médine le 14 mai 1887 : « mon ancien domestique, Diawé, un Fofana de Dogofili »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "Proposée en 1892"
+            },
+            "statement": "Le nom Fofana viendrait peut-être de fo, « parler », et de fana, « ensemble », selon Louis-Gustave Binger, qui dit pourtant que l'étymologie du nom lui échappe.",
+            "hypothesisGroup": "origine du nom Fofana",
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, tome 2",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74721",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 2, p. 377",
+                "notes": "Paris, Hachette, 1892, deux tomes. Lu dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée, le 11 octobre 2026. Officier et voyageur de l'époque coloniale, cité ici pour les formes qu'il relève. « L'étymologie de Fofana m'échappe ; fo cependant veut dire parler, et fana ensemble »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Rapportée en 1907"
+            },
+            "statement": "Le nom Fofana serait celui d'un groupe d'origine soninké, reste d'une très ancienne caste commune à tous les Mandé, selon une hypothèse de Le Châtelier que reprend André Arcin.",
+            "hypothesisGroup": "origine du nom Fofana",
+            "sources": [
+              {
+                "title": "La Guinée française",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 279",
+                "notes": "Paris, Challamel, 1907. Administrateur colonial. Lu sur le texte numérisé d'archive.org le 11 octobre 2026 ; cité pour les formes et les classements qu'il rapporte, non pour ses théories sur les races. « Les Fofana qui semblent bien, comme l'indique M. Le Châtelier, être d'origine Soninké […] M. Le Châtelier émet l'hypothèse […] que le groupe des Fofana représenterait la survivance d'une ancienne caste commune à toute la famille Mandé ». L'ouvrage de Le Châtelier n'a pas été lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Fófana",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bam",
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Fófana est l'écriture bambara de Fofana dans le dictionnaire des noms de clan, qui lui donne pour équivalents Fònba, Magasa, Dancogo, Kamara et Jɔ́mànde, des noms tenus pour le même clan.",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 11 octobre 2026. Entrée Fófana et ses équivalents."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

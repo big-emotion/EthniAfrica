@@ -18,9 +18,17 @@ import {
 import { resolve, join, relative, isAbsolute, sep } from "node:path";
 import { pathToFileURL } from "node:url";
 
-import { assessResearch, discoverCorpus, verifyProgress } from "./research.mjs";
+import {
+  assessResearch,
+  discoverCorpus,
+  reviewedRecord,
+  verifyProgress,
+} from "./research.mjs";
 import { inspectPackage } from "./package.mjs";
-import { capturePublication } from "./history.mjs";
+import {
+  capturePublication,
+  captureHistoricalPublication,
+} from "./history.mjs";
 
 const AREA = ".local/productions";
 const STAGES = ["brief", "research", "proof", "produce", "package", "ready"];
@@ -75,6 +83,68 @@ function current(root, files) {
   });
 }
 
+const digest = (value) => createHash("sha256").update(value).digest("hex");
+
+// Approved corrections whose integration was checked in the corpus. The fiche
+// then holds the approved value, or the recorded reconciled one.
+function appliedCorrections(state) {
+  if (!state.research) return [];
+  return state.research.corrections.flatMap((correction) => {
+    const checked = (state.corpusProgress ?? []).find(
+      (p) =>
+        p.proposal === `${state.research.hash}:${correction.id}` &&
+        p.status === "locally-checked"
+    );
+    return checked
+      ? [{ ...correction, value: checked.observedValue ?? correction.value }]
+      : [];
+  });
+}
+
+const withoutDestination = (dossier) =>
+  digest(JSON.stringify({ ...dossier, destination: null }));
+
+// Verifying the pending destination already shown in the proof completes the
+// reviewed promise rather than changing it. Checkpoints saved before the
+// reviewed destination was recorded cannot prove that and stay conservative.
+function destinationVerified(root, research) {
+  if (!research.withoutDestination) return false;
+  const dossier = JSON.parse(
+    readFileSync(filePath(root, research.file), "utf8")
+  );
+  const before = research.destination;
+  const after = dossier.destination;
+  return (
+    withoutDestination(dossier) === research.withoutDestination &&
+    before?.status === "pending" &&
+    after?.status === "verified" &&
+    after.url === before.url &&
+    after.invitation === before.invitation
+  );
+}
+
+// An approved artifact is current when unchanged, or when it is a reviewed
+// fiche that differs from the proof version only by integrated approved
+// corrections, or (proof only) the dossier whose pending destination was verified.
+function approvalCurrent(root, state, gate, files) {
+  const applied = appliedCorrections(state);
+  const reviewed = state.approvals[2]?.files ?? {};
+  return Object.entries(files).every(([file, hash]) => {
+    try {
+      if (fingerprint(root, file) === hash) return true;
+      if (gate === 2 && file === state.research?.file)
+        return destinationVerified(root, state.research);
+      return (
+        applied.some((c) => c.file === file) &&
+        reviewed[file] !== undefined &&
+        reviewedRecord(root, file, reviewed[file], applied) !== null
+      );
+    } catch {
+      return false;
+    }
+  });
+}
+
 function readStored(root, id) {
   const text = readFileSync(join(pieceDir(root, id), "suivi.md"), "utf8");
   const json = /^```json\n([\s\S]*?)\n```$/m.exec(text)?.[1];
@@ -102,10 +172,16 @@ function invalidate(state, from) {
 }
 
 export function loadPiece(root, id) {
-  const state = readStored(root, id);
+  return refresh(root, readStored(root, id));
+}
+
+function refresh(root, state) {
   for (let gate = 1; gate <= 3; gate++) {
     const approval = state.approvals[gate];
-    if (approval?.status === "approved" && !current(root, approval.files)) {
+    if (
+      approval?.status === "approved" &&
+      !approvalCurrent(root, state, gate, approval.files)
+    ) {
       invalidate(state, gate);
       state.stage = gate === 1 ? "brief" : gate === 2 ? "research" : "package";
       state.nextAction = `Changed or missing artifacts: revisit approval ${gate}`;
@@ -310,7 +386,13 @@ export function applyEvent(root, id, event) {
 function applyLockedEvent(root, id, event) {
   if (existsSync(join(resolve(root), ".local/publications", id)))
     fail("Piece is archived; complete closure before starting a new piece");
-  const state = loadPiece(root, id);
+  // A fiche edit becomes expected only once each of its corrections is
+  // recorded, one event at a time; progress records therefore leave approval
+  // status to the next load instead of persisting an intermediate state.
+  const state =
+    event.type === "corpus-progress"
+      ? readStored(root, id)
+      : loadPiece(root, id);
   if (event.expectedRevision !== state.revision)
     fail("Checkpoint revision changed; reload before applying the event");
   state.intendedNetworks ??= [...state.networks];
@@ -370,22 +452,37 @@ function applyLockedEvent(root, id, event) {
         required(event.researchFile, "Research dossier");
         const research = assessResearch(root, event.researchFile);
         Object.assign(files, research.dependencies);
+        const bytes = readFileSync(filePath(root, event.researchFile));
+        if (digest(bytes) !== research.dependencies[event.researchFile])
+          fail("Research dossier changed during review");
+        const dossier = JSON.parse(bytes.toString("utf8"));
         state.research = {
           file: event.researchFile,
           hash: research.dependencies[event.researchFile],
           corrections: research.corrections,
           searchTerms: research.searchTerms,
           matchedFiles: research.matchedFiles,
+          destination: dossier.destination,
+          withoutDestination: withoutDestination(dossier),
         };
       }
       if (gate === 3) {
         if (!state.research) fail("Research dossier is required");
+        const applied = appliedCorrections(state);
         const research = assessResearch(root, state.research.file, {
           forDelivery: true,
+          applied,
         });
         Object.assign(files, research.dependencies);
         required(event.packageDir, "Verified package directory");
-        const delivery = inspectPackage(root, event.packageDir, state.networks);
+        const delivery = inspectPackage(
+          root,
+          event.packageDir,
+          state.networks,
+          {
+            applied,
+          }
+        );
         if (delivery.researchFile !== state.research.file)
           fail("Package research differs from the approved proof");
         Object.assign(files, delivery.files);
@@ -422,7 +519,9 @@ function applyLockedEvent(root, id, event) {
           fail("Research coverage changed; present the updated proof");
       }
       if (gate === 3)
-        inspectPackage(root, state.package.directory, state.networks);
+        inspectPackage(root, state.package.directory, state.networks, {
+          applied: appliedCorrections(state),
+        });
       state.approvals[gate] = {
         ...review,
         status: "approved",
@@ -445,6 +544,52 @@ function applyLockedEvent(root, id, event) {
           : gate === 2
             ? "Produce and check final media, then prepare the package"
             : "Deliver the approved package; posting requires an explicit instruction";
+      break;
+    }
+    case "restore-approval": {
+      // Before integrated corrections were recognised, recording them persisted
+      // the proof as stale. Restore that exact approval only when nothing but
+      // those corrections changed; any reopened proof needs a new review.
+      const reason = required(event.reason, "Restoration reason");
+      const approval = state.approvals[2];
+      if (event.gate !== 2) fail("Only the proof approval can be restored");
+      if (approval?.status !== "stale")
+        fail("Only a stale proof approval can be restored");
+      if (state.waitingFor?.startsWith("approval-"))
+        fail("Resolve the pending review before restoring an approval");
+      approved(1);
+      if (state.approvals[1].at > approval.at)
+        fail("The angle was approved again after the proof");
+      if (
+        state.corrections.some(
+          (c) =>
+            ["angle", "research", "copy", "design"].includes(c.kind) &&
+            c.at > approval.at
+        )
+      )
+        fail("A correction was requested after the proof approval");
+      if (
+        !state.design ||
+        approval.files[state.design.file] !== state.design.hash ||
+        approval.files[state.research?.file] !== state.research?.hash
+      )
+        fail("The design or research dossier was replaced after the proof");
+      if (!approvalCurrent(root, state, 2, approval.files))
+        fail("Reviewed artifacts changed beyond the approved corrections");
+      if (
+        JSON.stringify(
+          discoverCorpus(root, state.research.searchTerms).map((m) => m.file)
+        ) !== JSON.stringify(state.research.matchedFiles)
+      )
+        fail("Research coverage changed; present the updated proof");
+      state.approvals[2] = {
+        ...approval,
+        status: "approved",
+        restored: { reason, at: new Date().toISOString() },
+      };
+      state.stage = "produce";
+      state.nextAction =
+        "Produce and check final media, then prepare the package";
       break;
     }
     case "revise": {
@@ -588,6 +733,37 @@ function applyLockedEvent(root, id, event) {
       });
       state.nextAction =
         "Reconcile the reported publication's actual media and copy; preserve working files and existing approval history";
+      break;
+    }
+    case "historical-publication": {
+      if (state.approvals[3]?.status === "approved")
+        fail("An approved package uses the publication event");
+      const report = state.publicationReports?.find(
+        (r) =>
+          r.network === event.network &&
+          r.url === event.url &&
+          r.publishedAt === event.publishedAt
+      );
+      if (!report) fail("A recorded publication report is required");
+      if (!report.evidenceCurrent)
+        fail("Publication report evidence changed or missing");
+      if (
+        state.publications.some(
+          (p) => p.network === event.network && p.url === event.url
+        )
+      )
+        fail("Publication already reconciled");
+      state.publications.push({
+        atRevision: state.revision + 1,
+        network: event.network,
+        url: event.url,
+        publishedAt: event.publishedAt,
+        evidence: required(event.evidence, "Attributed media evidence"),
+        snapshot: captureHistoricalPublication(root, state, event),
+      });
+      delete state.cancellations[event.network];
+      state.nextAction =
+        "Verify remaining networks and corpus work, then consolidate history and clean verified intermediates";
       break;
     }
     case "publication":

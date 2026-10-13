@@ -75,5 +75,112 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Shongwe est un nom de clan des Swazi, en Eswatini et en Afrique du Sud. Alfred T. Bryant le range en 1929 parmi les anciens clans de la vallée de l'Usutu, et une tradition locale fait venir une de ses branches du nord du Zoulouland. On ne sait pas avec certitude ce qu'il veut dire.",
+    "names": [
+      {
+        "nameText": "Shongwe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan swazi ; les sources consultées n'expliquent pas son sens.",
+        "periodLabel": "Écrit dès 1929 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "Défini en 1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Shongwe s'écrit comme le mot zoulou ishongwe, nom d'un petit arbuste du veld aux fleurs blanches comestibles, selon le dictionnaire d'Alfred T. Bryant. Aucune source consultée ne relie le nom du clan à cet arbuste ; on ne sait pas avec certitude ce que veut dire le nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Zulu-English Dictionary",
+                "author": "Alfred T. Bryant",
+                "year": 1905,
+                "url": "https://archive.org/details/zuluenglishdicti00brya",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 580",
+                "notes": "Pinetown, Mariannhill Mission Press, 1905, lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur est un missionnaire catholique du Natal. Page 580 : « i(li)-Shongwe, n. Milk-shrub (Xysmalobium lapathifolium), a small veldt-shrub whose white flowers are eaten as imifino and carrot-like root used as medicine for stomach-complaints ». Le dictionnaire ne cite pas le nom de clan à cette entrée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "1929"
+            },
+            "era": "colonial",
+            "statement": "Le nom Shongwe apparaît par écrit chez Alfred T. Bryant, qui le range parmi les clans de la vallée de l'Usutu, en Eswatini, qui se disaient d'origine ntungwa-nguni, comme les Zoulous. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; le clan qui le porte est plus ancien que ce livre.",
+            "formAsWritten": "Shongwe",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Alfred T. Bryant",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 311-312",
+                "notes": "Londres, Longmans, Green, 1929, lu le 11 octobre 2026 dans la numérisation d'Internet Archive ; texte et pages vérifiés le 12 octobre 2026 sur une copie non officielle déposée sur Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 311 : dans la vallée de l'aSutu (l'Usutu) vivaient les Maseko ; « These, as well as the Mahlambi, the Simelane, the Zwane, the Shongwe, the Kambule, the Tabete and other clans, claim to be of Ntungwa-Nguni origin, and therefore of the same type as the Zulus ». Page 312 : vient ensuite l'arrivée d'une partie des emaLangeni, qui se divisent en Ngwane et autres sous-clans ; les Ngwane sont le groupe des rois swazi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Règne de Somhlolo, selon la tradition"
+            },
+            "era": "polity",
+            "statement": "Le nom Shongwe est porté par les Shongwe Matsamo, qui viendraient du nord du Zoulouland, près de l'embouchure de la Pongola. Chassés par les Zoulous, ils se seraient établis en Eswatini sous le roi Somhlolo, selon une tradition rapportée par une page d'histoire locale de Barberton.",
+            "sources": [
+              {
+                "title": "Swazi History — History of the Swazi Tribes in Barberton",
+                "author": "Umjindi, site d'histoire locale de Barberton",
+                "year": null,
+                "url": "https://umjindi.co.za/pages/menu/history/swazi.html",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page d'histoire locale de Barberton, en Afrique du Sud, lue le 12 octobre 2026. Elle rapporte, « According to tradition », l'histoire des « Shongwe Matsamo » : une tribu indépendante venue du nord du Zoulouland, près de l'embouchure de la Pongolo, chassée par les Zoulous (« driven out by the Zulu ») vers le village de Bulunga, sous le roi Somhlolo, quand Tikuni était chef des Matsamo ; puis, entre 1856 et 1865, les hommes du chef Matsafeni, fils de Tikuni, envoyés par Mswati II défendre le royaume contre des peuples sotho, et son village principal, à l'ouest de la rivière Mlumati, appelé Ka-Shongwe. La page ne cite pas de sources écrites ; elle indique seulement « Information supplied by Hans Bornman »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1865,
+              "label": "Entre 1856 et 1865, selon la tradition"
+            },
+            "era": "polity",
+            "statement": "Le nom Shongwe est celui du chef Matsafeni Shongwe, que le roi Mswati II aurait envoyé avec les siens défendre le royaume swazi contre des peuples sotho. Son village principal se serait appelé Ka-Shongwe, selon la même page d'histoire locale.",
+            "sources": [
+              {
+                "title": "Swazi History — History of the Swazi Tribes in Barberton",
+                "author": "Umjindi, site d'histoire locale de Barberton",
+                "year": null,
+                "url": "https://umjindi.co.za/pages/menu/history/swazi.html",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page d'histoire locale de Barberton, en Afrique du Sud, lue le 12 octobre 2026. Elle rapporte, « According to tradition », l'histoire des « Shongwe Matsamo » : une tribu indépendante venue du nord du Zoulouland, près de l'embouchure de la Pongolo, chassée par les Zoulous (« driven out by the Zulu ») vers le village de Bulunga, sous le roi Somhlolo, quand Tikuni était chef des Matsamo ; puis, entre 1856 et 1865, les hommes du chef Matsafeni, fils de Tikuni, envoyés par Mswati II défendre le royaume contre des peuples sotho, et son village principal, à l'ouest de la rivière Mlumati, appelé Ka-Shongwe. La page ne cite pas de sources écrites ; elle indique seulement « Information supplied by Hans Bornman »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

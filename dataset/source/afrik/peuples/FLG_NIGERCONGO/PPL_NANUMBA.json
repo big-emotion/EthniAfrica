@@ -101,5 +101,67 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nanumba désigne un peuple du nord-est du Ghana, dont le chef suprême, le Bimbilla Naa, vit à Bimbilla, capitale du pays de Nanuŋ. On ne sait pas comment ce peuple se nomme lui-même, ni d'où vient le nom Nanumba : les sources que nous avons lues ne le disent pas. La plus ancienne trace de ce nom que nous connaissons date de 1912.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Nanumba",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple du nord du Ghana, écrit dès 1912 ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit dès 1912 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "2011"
+            },
+            "era": "modern",
+            "statement": "Le nom Nanumba désigne, chez l'anthropologue Peter Skalník, le groupe dont le chef suprême, le Bimbilla Naa, vit à Bimbilla, capitale du pays de Nanuŋ. Skalník écrit que ce groupe est né d'une sorte de pacte entre Nmantambu, l'ancêtre fondateur, avec les chefs venus avec lui, et les prêtres de la terre, qui vivaient déjà là. Il ne dit pas d'où vient le nom lui-même.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Chiefdom at War with Chiefless People while the State Looks on",
+                "author": "Peter Skalník",
+                "year": 2011,
+                "url": "https://www.sociostudies.org/journal/articles/140614/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 57",
+                "notes": "Social Evolution & History, vol. 10, n° 1, mars 2011, p. 55-121. Lu dans le PDF de l'article, publié sur le site de la revue (sociostudies.org), le 13 octobre 2026. Skalník écrit Nanuŋ pour le pays et Nmantambu pour l'ancêtre fondateur."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nanumba apparaît par écrit en 1912 dans la Grammatik der Dagomba-Sprache du médecin missionnaire Rudolf Fisch. Il y situe les Nanumba, environ 20 000 personnes, au sud des Dagbamba, entre l'Oti et le Kulukpene, et dit qu'ils parlent le Nanumle, un dialecte du dagbani. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Nanumba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Grammatik der Dagomba-Sprache",
+                "author": "Rudolf Fisch",
+                "year": 1912,
+                "url": "https://archive.org/details/rosettaproject_dag_detail-2",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "Einleitung, p. V",
+                "notes": "1912, lu dans la numérisation du Rosetta Project sur archive.org, qui découpe le livre en parties. Fisch, médecin de la Mission de Bâle, a recueilli la langue à Aburi auprès de Musa, un jeune Dagbamba né à Karaga. Le passage sur les Nanumba est à la page V, numéro lu sur l'image de la page suivante, qui porte VI."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

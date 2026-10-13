@@ -32,9 +32,7 @@
         "dataset/source/afrik/peuples/FLG_KXA/PPL_BUGAKWE.json",
         "dataset/source/afrik/peuples/FLG_KXA/PPL_HOA.json",
         "dataset/source/afrik/peuples/FLG_KXA/PPL_JUHOANSI.json",
-        "dataset/source/afrik/peuples/FLG_KXA/PPL_KUNG.json",
-        "dataset/source/afrik/peuples/FLG_KXA/PPL_KXA_MACRO.json",
-        "dataset/source/afrik/peuples/FLG_KXA/PPL_TSAO_KXA.json"
+        "dataset/source/afrik/peuples/FLG_KXA/PPL_KXA_MACRO.json"
       ],
       "evidence": [
         {
@@ -57,7 +55,6 @@
         "dataset/source/afrik/peuples/FLG_SONGHAY/PPL_KOYRA_CHIINI.json",
         "dataset/source/afrik/peuples/FLG_SONGHAY/PPL_KURTEY.json",
         "dataset/source/afrik/peuples/FLG_SONGHAY/PPL_SONGHAY_GURMA.json",
-        "dataset/source/afrik/peuples/FLG_SONGHAY/PPL_SONGHAY_MACRO.json",
         "dataset/source/afrik/peuples/FLG_SONGHAY/PPL_SONGHAY_NIGERIEN.json",
         "dataset/source/afrik/peuples/FLG_SONGHAY/PPL_WOGO.json",
         "dataset/source/afrik/peuples/FLG_SONGHAY/PPL_ZARMA.json"
@@ -89,8 +86,7 @@
       "reviewedFiles": [
         "dataset/source/afrik/peuples/FLG_TUU/PPL_NUU.json",
         "dataset/source/afrik/peuples/FLG_TUU/PPL_TAA.json",
-        "dataset/source/afrik/peuples/FLG_TUU/PPL_TUU_MACRO.json",
-        "dataset/source/afrik/peuples/FLG_TUU/PPL_WEST_TAA.json"
+        "dataset/source/afrik/peuples/FLG_TUU/PPL_TUU_MACRO.json"
       ],
       "evidence": [
         {

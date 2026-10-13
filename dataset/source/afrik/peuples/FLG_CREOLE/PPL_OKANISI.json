@@ -142,5 +142,313 @@
         "notes": "Article academique evalue par les pairs, revue New West Indian Guide (Brill, 2013) ; source des chiffres demographiques."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Okanisi désigne un peuple marron du Suriname et de la Guyane française, descendant d'Africains enfuis des plantations au XVIIIe siècle. Il se nomme lui-même Okanisi et Ndyuka ; les colons néerlandais l'appelaient Aukaners. Les sources ne s'accordent pas sur l'origine de ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Okanisi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "djk",
+        "namedBy": null,
+        "shortLine": "Un nom que le peuple se donne ; il viendrait d'Auka, une plantation.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Mai 2022"
+            },
+            "statement": "Le nom Okanisi est un des deux noms que se donnent les Marrons du fleuve Tapanahoni, avec Ndyuka, selon le capitaine Baja Gazon, interrogé à Diitabiki.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Monikondee research, entretien avec le capitaine Baja Gazon",
+                "author": "VRIZA",
+                "year": 2022,
+                "url": "https://vriza.org/en/monikondee-research/",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "Histoire des noms Ndyuka et Okanisi",
+                "carrier": "Baja Gazon, capitaine",
+                "place": "Diitabiki, sur le fleuve Tapanahoni, Suriname",
+                "notes": "Entretien de mai 2022, résumé en anglais sur la page du documentaire participatif Monikondee, lue le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "1994"
+            },
+            "statement": "Le nom Okanisi apparaît dans le titre du dictionnaire okanisi-anglais publié en 1994 à Paramaribo par le Summer Institute of Linguistics, A buku fu Okanisi anga Ingiisi wowtu, avec les contributions d'Evert D. Koanting et Carlo T. Velanti. C'est la plus ancienne trace écrite de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Okanisi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A buku fu Okanisi anga Ingiisi wowtu (Aukan-English Dictionary)",
+                "author": "Louis Shanks (dir.), avec Evert D. Koanting et Carlo T. Velanti",
+                "year": 1994,
+                "url": "https://archive.org/details/rosettaproject_djk_detail-1",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "page de titre",
+                "notes": "Paramaribo, Summer Institute of Linguistics, 1994. Extrait de trois pages (présentation et page de titre) numérisé par le Rosetta Project, lu sur Internet Archive le 12 octobre 2026 ; le titre est imprimé en capitales."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2002,
+              "to": 2002,
+              "label": "Proposée en 2002"
+            },
+            "statement": "Le nom Okanisi viendrait d'Aukaners, le nom que les colons néerlandais donnaient au groupe avec lequel ils ont signé des traités de paix sur la plantation Auka, selon la linguiste Laurence Goury. Elle le présente comme le nom que revendiquent les Ndjuka de la rivière Cottica.",
+            "hypothesisGroup": "origine du nom Okanisi",
+            "sources": [
+              {
+                "title": "Un exemple de restructuration grammaticale : le morphème de en ndjuka",
+                "author": "Laurence Goury",
+                "year": 2002,
+                "url": "https://amerindia.cnrs.fr/wp-content/uploads/2021/02/Un-exemple-de-restructuration-grammaticale-le-morphe%CC%80me-de-en-ndjuka.-Laurence-GOURY.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Amerindia, n° 26-27, 2001-2002, CELIA-IRD Guyane ; article lu le 12 octobre 2026.",
+                "page": "p. 293, note 1"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Rapportée en 2022"
+            },
+            "statement": "Le nom Okanisi viendrait d'Auka, la plantation où les ancêtres étaient esclaves avant de se libérer, selon le capitaine Baja Gazon.",
+            "hypothesisGroup": "origine du nom Okanisi",
+            "sources": [
+              {
+                "title": "Monikondee research, entretien avec le capitaine Baja Gazon",
+                "author": "VRIZA",
+                "year": 2022,
+                "url": "https://vriza.org/en/monikondee-research/",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "Histoire des noms Ndyuka et Okanisi",
+                "carrier": "Baja Gazon, capitaine",
+                "place": "Diitabiki, sur le fleuve Tapanahoni, Suriname",
+                "notes": "Entretien de mai 2022, résumé en anglais sur la page du documentaire participatif Monikondee, lue le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ndyuka",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "djk",
+        "namedBy": null,
+        "shortLine": "Un nom que le peuple se donne, lié au fleuve Tapanahoni.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Ndyuka, écrit aussi Ndjuka, désigne l'un des six peuples marrons du Suriname. Leur pays ancestral, le fleuve Tapanahoni, s'appelle Ndjuka Liba, « fleuve Ndjuka », selon l'anthropologue Diane Vernon.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les représentations du corps chez les Noirs Marrons Ndjuka du Surinam et de la Guyane française",
+                "author": "Diane Vernon",
+                "year": 1992,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_2/etudes_theses/36991.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Paris, Éditions de l'ORSTOM, collection Études et thèses ; texte lu le 12 octobre 2026 sur la base documentaire de l'IRD.",
+                "page": "p. 9-10"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "1931"
+            },
+            "statement": "Le nom Ndyuka apparaît sous une forme proche, Djuka, dans le titre du livre que Morton Charles Kahn publie en 1931 à New York sur les Marrons de la Guyane hollandaise. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Djuka, the Bush Negroes of Dutch Guiana",
+                "author": "Morton Charles Kahn",
+                "year": 1931,
+                "url": "https://archive.org/details/djukabushnegroes0000kahn",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "New York, The Viking Press, 1931. Notice d'Internet Archive lue le 12 octobre 2026 ; le livre n'y est consultable qu'en prêt, et seul son titre a été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1712,
+              "to": 1760,
+              "label": "1712-1760"
+            },
+            "statement": "On parle alors de marrons pour désigner les ancêtres des Ndyuka, qui s'enfuient des plantations entre 1712 et 1760. Le gouvernement du Suriname signe la paix avec eux à partir de 1760, selon Diane Vernon.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Les représentations du corps chez les Noirs Marrons Ndjuka du Surinam et de la Guyane française",
+                "author": "Diane Vernon",
+                "year": 1992,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_2/etudes_theses/36991.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Paris, Éditions de l'ORSTOM, collection Études et thèses ; texte lu le 12 octobre 2026 sur la base documentaire de l'IRD.",
+                "page": "p. 11"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Rapportée en 2022"
+            },
+            "statement": "Le nom Ndyuka viendrait du cri d'un oiseau qui a fait savoir aux ancêtres qu'ils étaient arrivés à la crique Ndyuka, selon le capitaine Baja Gazon.",
+            "hypothesisGroup": "origine du nom Ndyuka",
+            "sources": [
+              {
+                "title": "Monikondee research, entretien avec le capitaine Baja Gazon",
+                "author": "VRIZA",
+                "year": 2022,
+                "url": "https://vriza.org/en/monikondee-research/",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "Histoire des noms Ndyuka et Okanisi",
+                "carrier": "Baja Gazon, capitaine",
+                "place": "Diitabiki, sur le fleuve Tapanahoni, Suriname",
+                "notes": "Entretien de mai 2022, résumé en anglais sur la page du documentaire participatif Monikondee, lue le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Aukan",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "nld",
+        "namedBy": null,
+        "shortLine": "Le nom néerlandais, tiré de la plantation où fut signée la paix de 1760.",
+        "periodLabel": "Écrit depuis 1861 au moins ; encore employé",
+        "accounts": [
+          {
+            "period": {
+              "from": 2010,
+              "to": 2010,
+              "label": "18 janvier 2010"
+            },
+            "statement": "Le nom Aukan cesse d'être le nom de référence de la langue dans la norme internationale ISO 639-3 : on lui préfère Eastern Maroon Creole, « créole marron de l'Est ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, Eastern Maroon Creole [djk]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": 2010,
+                "url": "https://iso639-3.sil.org/code/djk",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 12 octobre 2026. Demande de changement 2009-071, adoptée le 18 janvier 2010."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1861,
+              "to": 1861,
+              "label": "1861"
+            },
+            "statement": "Le nom Aukan apparaît sous la forme « Aukaner boschnegers » dans l'histoire du Suriname de Julien Wolbers, publiée en 1861. Wolbers explique que la paix de 1760 a été conclue sur la plantation forestière d'Auka, à plus de 50 milles de chez eux, et qu'on les appelle depuis d'après ce lieu. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Aukaner boschnegers",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Geschiedenis van Suriname",
+                "author": "Julien Wolbers",
+                "year": 1861,
+                "url": "https://www.gutenberg.org/ebooks/56257",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Préface datée d'Utrecht, septembre 1861. Lu dans l'édition numérique du Projet Gutenberg le 12 octobre 2026, qui reproduit la pagination de l'original.",
+                "page": "p. 154"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bush Negroes",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "eng",
+        "namedBy": null,
+        "shortLine": "Le nom que les colons donnaient à tous les Marrons du Suriname.",
+        "periodLabel": "Époque coloniale ; encore rencontré",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Bush Negroes, en néerlandais Bos Negers, désigne ensemble les six peuples marrons du Suriname, dont les Ndjuka, selon Diane Vernon. Ils disent eux-mêmes Busi Nengee, et en français Noirs Marrons.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les représentations du corps chez les Noirs Marrons Ndjuka du Surinam et de la Guyane française",
+                "author": "Diane Vernon",
+                "year": 1992,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_2/etudes_theses/36991.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Paris, Éditions de l'ORSTOM, collection Études et thèses ; texte lu le 12 octobre 2026 sur la base documentaire de l'IRD.",
+                "page": "p. 10"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1861,
+              "to": 1861,
+              "label": "1861"
+            },
+            "statement": "Le nom Bush Negroes apparaît sous une forme proche, le néerlandais « boschnegers », dans l'histoire du Suriname de Julien Wolbers, publiée en 1861. C'est la plus ancienne trace de ce nom que le projet connaît. Les peuples qu'il désigne existaient déjà avant lui.",
+            "formAsWritten": "boschnegers",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Geschiedenis van Suriname",
+                "author": "Julien Wolbers",
+                "year": 1861,
+                "url": "https://www.gutenberg.org/ebooks/56257",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Préface datée d'Utrecht, septembre 1861. Lu dans l'édition numérique du Projet Gutenberg le 12 octobre 2026, qui reproduit la pagination de l'original.",
+                "page": "p. 154"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

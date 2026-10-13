@@ -110,5 +110,171 @@
         "source_kind": "repository"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ndowe désigne un ensemble de peuples bantous de la côte du Río Muni, en Guinée équatoriale, et des îles voisines, qui se nomment eux-mêmes Ndowe. Les colonisateurs espagnols les ont appelés Playeros, « gens de la plage ». Deux explications de l'origine du nom Ndowe existent ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Ndowe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom commun des peuples de la côte ; on ne sait pas quand il apparaît par écrit.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Ndowe est le nom commun que se donnent plusieurs peuples de la côte, comme les Kombe, les Benga, les Iyasa ou les Bweko, selon l'universitaire Augusto Iyanga Pendi. Son origine est discutée. On ne sait pas avec certitude quand ce nom apparaît par écrit.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Los Ndowe de Guinea Ecuatorial",
+                "author": "Augusto Iyanga Pendi",
+                "year": 1993,
+                "url": "https://doi.org/10.15366/rea1993.12.003",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 62-63",
+                "notes": "Revista de Estudios Africanos, n° 12-13, 1993, p. 59-88. Lu en texte intégral."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1993,
+              "to": 1993,
+              "label": "Proposée en 1993"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndowe viendrait de ndo, « tenus », et de we, « nous » : il voudrait dire « nous qui sommes tenus ensemble », comme les maillons d'une chaîne, selon Augusto Iyanga Pendi.",
+            "hypothesisGroup": "origine du nom Ndowe",
+            "sources": [
+              {
+                "title": "Los Ndowe de Guinea Ecuatorial",
+                "author": "Augusto Iyanga Pendi",
+                "year": 1993,
+                "url": "https://doi.org/10.15366/rea1993.12.003",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 62",
+                "notes": "Revista de Estudios Africanos, n° 12-13, 1993, p. 59-88. Lu en texte intégral."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1993,
+              "to": 1993,
+              "label": "Rapportée en 1993"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndowe serait celui de deux jumeaux, Ndowe a Mbimba et Ndowe a Modungu, enfants de Mbimba et de Modungu, dont descendraient toutes les tribus ndowe, selon la tradition généalogique ndowe que rapporte Augusto Iyanga Pendi. Il précise que ce récit ne peut pas servir de preuve historique.",
+            "hypothesisGroup": "origine du nom Ndowe",
+            "sources": [
+              {
+                "title": "Los Ndowe de Guinea Ecuatorial",
+                "author": "Augusto Iyanga Pendi",
+                "year": 1993,
+                "url": "https://doi.org/10.15366/rea1993.12.003",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 64",
+                "notes": "Revista de Estudios Africanos, n° 12-13, 1993, p. 59-88. Lu en texte intégral."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mumu a manga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "« Homme de la mer » : le titre que les Ndowe se donnaient à eux-mêmes.",
+        "periodLabel": "Usage décrit en 1993",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage décrit par l'auteur"
+            },
+            "statement": "Le nom mumu a manga, au pluriel nga manga, « l'homme de la mer », « ceux de la mer », est un titre que les Ndowe se donnaient à eux-mêmes. Le vrai Ndowe se dit « nti mua mumu a manga », « pur homme de la plage », selon Augusto Iyanga Pendi.",
+            "sources": [
+              {
+                "title": "Los Ndowe de Guinea Ecuatorial",
+                "author": "Augusto Iyanga Pendi",
+                "year": 1993,
+                "url": "https://doi.org/10.15366/rea1993.12.003",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 61",
+                "notes": "Revista de Estudios Africanos, n° 12-13, 1993, p. 59-88. Lu en texte intégral."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Playeros",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "spa",
+        "namedBy": null,
+        "shortLine": "« Gens de la plage » : le nom donné par les colonisateurs espagnols aux peuples de la côte.",
+        "periodLabel": "Depuis l'époque coloniale",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1968,
+              "label": "Époque coloniale"
+            },
+            "era": "colonial",
+            "statement": "Le nom Playeros est celui que les colonisateurs ont donné aux peuples qu'ils trouvaient sur la côte, Ndowe, Balengue, Basek et Bissio, et parfois à des Fang, à cause de leur proximité de la mer, selon Augusto Iyanga Pendi.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Los Ndowe de Guinea Ecuatorial",
+                "author": "Augusto Iyanga Pendi",
+                "year": 1993,
+                "url": "https://doi.org/10.15366/rea1993.12.003",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 61",
+                "notes": "Revista de Estudios Africanos, n° 12-13, 1993, p. 59-88. Lu en texte intégral."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1993,
+              "to": 1993,
+              "label": "1993"
+            },
+            "era": "modern",
+            "statement": "Le nom Playeros reste employé en plusieurs sens, du plus large au plus étroit : tous les habitants d'une bande côtière d'environ 70 kilomètres, ou seulement les Ndowe, les Basek, les Balengue et les Bissio. Augusto Iyanga Pendi le juge impropre pour les Ndowe.",
+            "sources": [
+              {
+                "title": "Los Ndowe de Guinea Ecuatorial",
+                "author": "Augusto Iyanga Pendi",
+                "year": 1993,
+                "url": "https://doi.org/10.15366/rea1993.12.003",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 60-63",
+                "notes": "Revista de Estudios Africanos, n° 12-13, 1993, p. 59-88. Lu en texte intégral."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

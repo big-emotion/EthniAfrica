@@ -106,5 +106,125 @@
       "fieldPath": "homonyms",
       "reason": "Les catalogues et recherches exactes consultés n'établissent pas de lignée homonyme d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ranaivo est un nom de personne malgache, que des familles portent aussi comme nom de famille. Un dictionnaire du XIXe siècle le range parmi les noms d'hommes formés sur aivo, « cadet » ; c'est la seule explication que nous connaissons, et nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Ranaivo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne malgache, porté aussi comme nom de famille ; un dictionnaire le rattache à « cadet ».",
+        "periodLabel": "Écrit dès 1878 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ranaivo est un nom de personne malgache, que des familles portent aussi comme nom de famille, comme le poète Flavien Ranaivo. Il commence par Ra, que le malgache place devant les noms de personnes ; nous présentons plus bas la seule explication du reste du nom que nous connaissons.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Notice de personne « Ranaivo, Flavien (1914-1999) »",
+                "author": "Bibliothèque nationale de France",
+                "year": null,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb11921117h",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice d'autorité de la Bibliothèque nationale de France : graphie, Madagascar, dates 1914-1999 et activités de Flavien Ranaivo."
+              },
+              {
+                "title": "Dictionnaire malgache-français",
+                "author": "Antoine Abinal et Victorin Malzac",
+                "year": 1888,
+                "url": "https://archive.org/details/dictionnairemalg00abin",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 10-11 ; p. 456",
+                "notes": "Tananarive, Imprimerie de la Mission catholique, 1888. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Pages 10-11, article Aivo : « Dérivé de Ivo (milieu, centre), intermédiaire, cadet, puîné » ; « Andrianaivo, Inaivo, Naivo, Ranaivo, noms d'hommes ». Page 456, article Ra : « Article personnel qui se met ordinairement devant les noms propres : Ra-bé, Ra-lay, qu'on écrit Rabe, Ralay ». Auteurs de l'époque coloniale, cités ici pour les formes qu'ils relèvent."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1888,
+              "label": "Proposé en 1888"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ranaivo serait formé sur aivo, qui veut dire « intermédiaire, cadet, puîné » : le dictionnaire d'Antoine Abinal et Victorin Malzac le range à ce mot parmi les noms d'hommes, avec Andrianaivo, Inaivo et Naivo.",
+            "hypothesisGroup": "origine du nom Ranaivo",
+            "sources": [
+              {
+                "title": "Dictionnaire malgache-français",
+                "author": "Antoine Abinal et Victorin Malzac",
+                "year": 1888,
+                "url": "https://archive.org/details/dictionnairemalg00abin",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 10-11 ; p. 456",
+                "notes": "Tananarive, Imprimerie de la Mission catholique, 1888. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Pages 10-11, article Aivo : « Dérivé de Ivo (milieu, centre), intermédiaire, cadet, puîné » ; « Andrianaivo, Inaivo, Naivo, Ranaivo, noms d'hommes ». Page 456, article Ra : « Article personnel qui se met ordinairement devant les noms propres : Ra-bé, Ra-lay, qu'on écrit Rabe, Ralay ». Auteurs de l'époque coloniale, cités ici pour les formes qu'ils relèvent."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1882,
+              "to": 1882,
+              "label": "1882"
+            },
+            "era": "polity",
+            "statement": "Le nom Ranaivo sert d'exemple de nom de personne dans la grammaire malgache de G. Cousins, publiée à Antananarivo : l'élève doit le ranger, avec Rasoa, parmi les noms de personnes.",
+            "formAsWritten": "Ranaivo",
+            "sources": [
+              {
+                "title": "Gramara Malagasy lehibe",
+                "author": "G. Cousins",
+                "year": 1882,
+                "url": "https://hdl.handle.net/2027/inu.30000096941533",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 5",
+                "notes": "Antananarivo, London Missionary Society, 1882. Lu sur l'exemplaire numérisé de HathiTrust le 11 octobre 2026. Page 5 : « Naona ny hoe Rabe, satria anaran' olona » (Rabe est un nom, parce que c'est un nom de personne) ; l'exercice 4 demande de ranger parmi les noms de personnes, entre autres, « Rasoa » et « Ranaivo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1878,
+              "to": 1878,
+              "label": "1878"
+            },
+            "era": "polity",
+            "statement": "Le nom Ranaivo apparaît par écrit dans un article du missionnaire L. Dahle sur la grammaire malgache, où il désigne une personne dans une phrase d'exemple. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "an-dRanaivo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "L. Dahle",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Studies in the Malagasy Language, no. II : On the « Inflection » of the Verb in Malagasy",
+                "author": "L. Dahle",
+                "year": 1878,
+                "url": "https://hdl.handle.net/2027/mdp.39015026992027",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 93",
+                "notes": "Article de The Antananarivo Annual and Madagascar Magazine, numéro de Noël 1878, à partir de la p. 77 ; la table des matières le signe « Rev. L. Dahle, N. M. S. ». Lu sur l'exemplaire numérisé de HathiTrust le 11 octobre 2026. Page 93 : la phrase d'exemple « hampampitondra an-dRanaivo ny mpanompony ity volanao ity aho », où Ranaivo est un nom de personne."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

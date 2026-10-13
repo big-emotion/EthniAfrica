@@ -43,9 +43,16 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * and PAT_ABAZA decided oral_needed. 1341 -> 1321 on 2026-10-10: batch 1 of
  * ETNI-2010 decided, PAT_LAWSON oral_needed and 19 sources replaced. 1321 -> 1241
  * on 2026-10-10: batches 2 to 5 of ETNI-2010 decided, 27 rejected, Lawson (Togo)
- * oral_needed and 52 sources replaced.
+ * oral_needed and 52 sources replaced. 1241 -> 1231 on 2026-10-11: the
+ * candidate-queue stubs of the family-name fiches folded after wave 7 left
+ * with them; where a spelling rested on the queue alone, an opened source
+ * now attests it on the keeper. 1231 -> 1228 on 2026-10-11: the candidate-queue
+ * stubs of the three family-name fiches folded after wave 9 left with them.
+ * 1228 -> 1225 on 2026-10-12: the candidate-queue stubs of the three
+ * family-name fiches folded after wave 11 left with them; the keepers attest
+ * the carried spellings with opened sources.
  */
-export const UNREVIEWED_AI_GENERATED_RATCHET = 1241;
+export const UNREVIEWED_AI_GENERATED_RATCHET = 1225;
 
 export interface AiGeneratedSourcesResult {
   ok: boolean;

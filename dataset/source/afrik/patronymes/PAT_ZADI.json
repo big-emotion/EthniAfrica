@@ -130,5 +130,143 @@
       "fieldPath": "transmissionMode",
       "reason": "La thèse de Gronner nomme un père et son fils portant Zadi dans des positions différentes au sein de leurs noms, ce qui ne suffit pas à définir une règle générale. Ni la BnF, ni Wiktionnaire, ni les recherches « Zadi transmission patronyme bété » ne documentent le mode de transmission ; la valeur reste « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Zadi est un nom de personne bété, en Côte d'Ivoire, porté aujourd'hui comme nom de famille. On ne sait pas avec certitude ce qu'il veut dire ; la seule explication trouvée est présentée plus bas.",
+    "names": [
+      {
+        "nameText": "Zadi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne bété, devenu nom de famille ; on ne sait pas ce qu'il veut dire.",
+        "periodLabel": "Écrit dès 1982 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Zadi est un nom que des pères bété donnent à leurs fils, d'après les chroniques de villages publiées par Joël Gronner. Il est porté aujourd'hui comme nom de famille en Côte d'Ivoire. On ne sait pas avec certitude ce qu'il veut dire : la seule explication trouvée vient d'un article de presse.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les Bété de Soubré et le développement régional (sud-ouest de la Côte d'Ivoire)",
+                "author": "Joël Gronner",
+                "year": 1982,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers14-08/03780.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 87",
+                "notes": "Thèse de troisième cycle, EHESS, publiée par l'ORSTOM en 1982 ; lue dans le PDF intégral du fonds documentaire de l'IRD le 11 octobre 2026. Les chroniques villageoises qu'elle transcrit ont été racontées à l'auteur par les anciens des villages."
+              },
+              {
+                "title": "Côte d'Ivoire : Voici la signification des noms Bété que vous connaissez",
+                "author": "Afrik Soir",
+                "year": 2021,
+                "url": "https://afriksoir.net/cote-divoire-voici-la-signification-des-noms-bete-que-vous-connaissez/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article du 14 février 2021, relu le 11 octobre 2026. La liste donne « Zadi : Nom de jumeaux », sans citer de source ni dire qui a recueilli cette explication."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Proposée en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Zadi serait un nom donné aux jumeaux, selon une liste de noms bété publiée par le média ivoirien Afrik Soir.",
+            "hypothesisGroup": "origine du nom Zadi",
+            "sources": [
+              {
+                "title": "Côte d'Ivoire : Voici la signification des noms Bété que vous connaissez",
+                "author": "Afrik Soir",
+                "year": 2021,
+                "url": "https://afriksoir.net/cote-divoire-voici-la-signification-des-noms-bete-que-vous-connaissez/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article du 14 février 2021, relu le 11 octobre 2026. La liste donne « Zadi : Nom de jumeaux », sans citer de source ni dire qui a recueilli cette explication."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1982,
+              "to": 1982,
+              "label": "1982"
+            },
+            "era": "modern",
+            "statement": "Le nom Zadi apparaît par écrit dans la thèse de Joël Gronner sur les Bété de Soubré, qui transcrit les chroniques des villages. La chronique des Gbazéwa raconte qu'un homme, Gnaoré, « eut un fils qu'il appela Zadi ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Zadi",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Joël Gronner",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les Bété de Soubré et le développement régional (sud-ouest de la Côte d'Ivoire)",
+                "author": "Joël Gronner",
+                "year": 1982,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers14-08/03780.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 87",
+                "notes": "Thèse de troisième cycle, EHESS, publiée par l'ORSTOM en 1982 ; lue dans le PDF intégral du fonds documentaire de l'IRD le 11 octobre 2026. Les chroniques villageoises qu'elle transcrit ont été racontées à l'auteur par les anciens des villages. Page 87 : « Gnaoré aussi eut un fils qu'il appela Zadi », puis « Zadi est allé fonder le village Zadiayo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1903,
+              "to": 1903,
+              "label": "Vers 1903, selon la chronique des Gbazéwa"
+            },
+            "era": "polity",
+            "statement": "Le nom Zadi devient celui d'un village : Zadi, fils de Gnaoré, part fonder Zadiayo quand les habitants de Gbeuta se séparent, la même année où Gbazi fonde Gbazéwa, en 1903, selon la chronique des Gbazéwa publiée par Joël Gronner.",
+            "sources": [
+              {
+                "title": "Les Bété de Soubré et le développement régional (sud-ouest de la Côte d'Ivoire)",
+                "author": "Joël Gronner",
+                "year": 1982,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers14-08/03780.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 87",
+                "notes": "Thèse de troisième cycle, EHESS, publiée par l'ORSTOM en 1982 ; lue dans le PDF intégral du fonds documentaire de l'IRD le 11 octobre 2026. Les chroniques villageoises qu'elle transcrit ont été racontées à l'auteur par les anciens des villages."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Récit des Zadiayo"
+            },
+            "statement": "Le nom Zadi a aussi donné son nom à un cours d'eau, le marigot Zadiouriguéhi, « le marigot du doigt de Zadi ». Selon la chronique des Zadiayo, un chasseur d'éléphants nommé Zadi s'y blessa au pouce en tirant au fusil.",
+            "sources": [
+              {
+                "title": "Les Bété de Soubré et le développement régional (sud-ouest de la Côte d'Ivoire)",
+                "author": "Joël Gronner",
+                "year": 1982,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers14-08/03780.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 82",
+                "notes": "Thèse de troisième cycle, EHESS, publiée par l'ORSTOM en 1982 ; lue dans le PDF intégral du fonds documentaire de l'IRD le 11 octobre 2026. Les chroniques villageoises qu'elle transcrit ont été racontées à l'auteur par les anciens des villages."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

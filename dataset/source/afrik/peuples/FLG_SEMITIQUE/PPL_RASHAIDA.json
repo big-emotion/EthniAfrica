@@ -114,5 +114,86 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Rashaida désigne des groupes arabophones d'Érythrée et du Soudan, qui se nomment ainsi eux-mêmes. Des groupes de descendance qui portent le même nom, écrit Rashāyidah, vivent aussi en Égypte, en Palestine, en Jordanie, au Koweït et en Arabie saoudite. Les sources ne s'accordent pas sur l'origine commune de ces groupes ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Rashaida",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "Le nom que portent des groupes de bédouins arabes de plusieurs pays, dont l'Érythrée et le Soudan.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Rashāyidah, écrit aussi Rashaida, est porté par des groupes de descendance de langue arabe en Égypte, en Érythrée, en Palestine, en Jordanie, au Koweït, en Arabie saoudite et au Soudan, qui s'en disent tous porteurs, selon Nils Anfinset, Leif Manger et leurs collègues. Une partie d'entre eux construit aujourd'hui un récit commun de départ d'Arabie, qui explique pourquoi ils partagent ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Can a Local Descent Group Become an International Network? Research on the Rashāyidah in Five Countries",
+                "author": "Nils Anfinset, Leif Ole Manger, Mohammed Suleiman Shunnaq et al.",
+                "year": 2022,
+                "url": "https://escholarship.org/uc/item/3n34q1zb",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 63",
+                "notes": "Kinship, vol. 2, n° 2, 2022. Lu en libre accès le 13 octobre 2026 ; la page citée est la page imprimée du résumé et de l'introduction. Les auteurs écrivent le nom Rashāyidah et citent des récits de voyageurs et de chercheurs des XIXe et XXe siècles."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1848,
+              "to": 1852,
+              "label": "Voyage d'avril 1848, rapport publié en 1852"
+            },
+            "statement": "Le nom Rashâyideh figure dans le rapport de l'expédition américaine sur la mer Morte : le 20 avril 1848, des hommes de la tribu Rashâyideh viennent servir de guides et de messagers. Les sources lues ne disent pas s'il s'agit du même peuple que les Rashaida d'Érythrée et du Soudan. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Rashâyideh",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Official Report of the United States' Expedition to Explore the Dead Sea and the River Jordan",
+                "author": "William F. Lynch",
+                "year": 1852,
+                "url": "https://archive.org/details/officialreportu00lyncgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 32",
+                "notes": "Rapport publié à Baltimore en 1852, lu sur la numérisation d'Internet Archive ; la page citée est la page imprimée, vérifiée sur l'image. Il décrit l'expédition d'avril 1848 sur la mer Morte. Ce n'est pas un récit sur l'Érythrée ni sur le Soudan."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1996,
+              "to": 2008,
+              "label": "Rapportée en 1996 et 2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Rashaida va avec celui d'un ancêtre, Rashid az-Zool, dont tous les Rashaida du Soudan passent pour descendre : la plupart y voient le père de leurs trois branches principales, selon l'anthropologue William C. Young, rapporté par Robert Perdue.",
+            "sources": [
+              {
+                "title": "The Rashaida Bedouin",
+                "author": "Robert Perdue",
+                "year": 2008,
+                "url": "http://campusweb.howardcc.edu/salih/culture/Arabic_2-7_Robert_Perdue-Rashayyida_Bedu.pdf",
+                "tier": "unverified",
+                "source_kind": "academic",
+                "page": "p. 8 du fichier",
+                "notes": "Travail d'étudiant daté du 16 mars 2008, déposé sur le site d'un cours (Cultures of the Middle East). Il rapporte l'anthropologue William C. Young, The Rashaayda Bedouin, 1996, p. 102, que nous n'avons pas lu. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

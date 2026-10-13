@@ -77,11 +77,11 @@
     },
     {
       "sourceKey": "roscoe-1911-baganda",
-      "title": "The Baganda: an account of their native customs and beliefs",
-      "url": "https://archive.org/details/cu31924028599433",
+      "title": "The Baganda: An Account of their Native Customs and Beliefs",
+      "url": "https://archive.org/details/bagandaaccountof00roscuoft",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Roscoe, John, Macmillan, Londres, 1911 ; l'auteur est missionnaire de la Church Missionary Society. Pages lues sur l'exemplaire numérisé d'archive.org (bibliothèque de Cornell), dont les numéros imprimés figurent en tête de page : les jumeaux garçons nommés Mukasa et les filles Namukasa, d'après le dieu (p. 70) ; l'enfant trouvé sur l'île de Bubembe, que les anciens disent venu de Bukasa et appellent « un Mukasa » (p. 291). Ouvrage d'un auteur de l'époque coloniale, cité pour ce que les Ganda lui ont raconté du nom, non pour ses classements. Il parle du nom du dieu et d'un usage pour les jumeaux : il n'explique pas comment Mukasa est devenu un nom de famille."
+      "notes": "Roscoe, John, Macmillan, Londres, 1911 ; l'auteur est missionnaire de la Church Missionary Society. Pages relues le 12 octobre 2026 sur l'exemplaire numérisé d'archive.org que citent les autres fiches (bibliothèque de l'université de Toronto), dont les numéros imprimés figurent en tête de page : les jumeaux garçons nommés Mukasa et les filles Namukasa, d'après le dieu (p. 70) ; l'enfant trouvé sur l'île de Bubembe, que les anciens disent venu de Bukasa et appellent « un Mukasa » (p. 291). Ouvrage d'un auteur de l'époque coloniale, cité pour ce que les Ganda lui ont raconté du nom, non pour ses classements. Il parle du nom du dieu et d'un usage pour les jumeaux : il n'explique pas comment Mukasa est devenu un nom de famille."
     },
     {
       "sourceKey": "dacb-joseph-mukasa",
@@ -117,5 +117,138 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Mukasa », « BAGANDA », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée et les travaux ou notices propres au nom cités dans la fiche n'ont établi aucune règle propre à l'ensemble des emplois de Mukasa permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mukasa est un nom de personne ganda. C'est aussi le nom d'un dieu des Baganda, que John Roscoe place au premier rang des dieux. Les sources lues disent qu'il est donné aux garçons jumeaux et au garçon né avec deux cordons ombilicaux. Une explication rapportée en 1911 le tire de l'île de Bukasa. On ne sait pas avec certitude comment il est devenu un nom de famille.",
+    "names": [
+      {
+        "nameText": "Mukasa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lug",
+        "namedBy": null,
+        "shortLine": "Un nom ganda, aussi celui d'un dieu du lac Victoria ; il vient peut-être de l'île de Bukasa.",
+        "periodLabel": "Écrit dès 1885 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1998,
+              "to": 1998,
+              "label": "Travail d'étudiant de 1998"
+            },
+            "era": "modern",
+            "statement": "Le nom Mukasa fait partie des noms que les Baganda donnent selon les circonstances de la naissance : « Nnambi ou Mukasa » sont donnés aux enfants nés avec deux cordons ombilicaux, et le garçon s'appelle Mukasa. Cet usage est décrit dans un travail d'étudiant de 1998, qui renvoie pour ces noms de circonstance au livre de M. B. Nsimbi paru en 1980.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Naming Systems of the Baganda and Their Significance for Christian Baptism",
+                "author": "Willy Frank Lukati",
+                "year": 1998,
+                "url": "https://repository.tangaza.ac.ke/server/api/core/bitstreams/5b87969e-a6ef-48b5-8544-73e1d45e750b/content",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 18",
+                "notes": "Travail de fin d'études en études religieuses, Tangaza College (université catholique d'Afrique de l'Est), Nairobi, février 1998, lu dans son texte intégral. Section 3.3.2, « Circumstantial Names », p. 18 : « NNAMBI or MUKASA: these are names given to children who are born with two umbilical cords. If the child is a boy, he is called MUKASA » ; la note 45 renvoie à M. B. Nsimbi, Amannya Amaganda N'ennono zaago, Kampala, Longman, 1980, p. 5. Nous n'avons pas lu le livre de Nsimbi. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Décrit en 1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mukasa est donné chez les Baganda aux garçons jumeaux, selon John Roscoe : les jumeaux portaient le nom du dieu, Mukasa pour les garçons et Namukasa pour les filles, et ils étaient sous sa protection. Roscoe ne dit pas qui lui a rapporté cet usage.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 70",
+                "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé de l'université de Toronto sur archive.org. Page 70 : « Twins were always named after the god, the boys took the name of Mukasa, and the girls of Namukasa ; both were under the protection of the god ». Ethnographie de l'époque coloniale, citée pour ce que les Ganda lui ont raconté, non pour ses classements. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Décrit en 1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mukasa est celui d'un dieu des Baganda, qui tenait « the highest rank among the gods of Uganda », selon John Roscoe. Son temple principal se trouvait sur l'île de Bubembe, dans le lac Victoria. Les légendes qu'on lui raconte laissent penser, écrit Roscoe, que ce dieu fut d'abord un homme que sa bonté fit tenir pour un dieu.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 290-291",
+                "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé de l'université de Toronto sur archive.org. Pages 290-291 : « Mukasa held the highest rank among the gods of Uganda » ; temple principal sur l'île Bubembe, dans le lac Victoria Nyanza ; « it seems to be almost certain that he was a human being who, because of his benevolence, came to be regarded as a god ». Ethnographie de l'époque coloniale, citée pour ce que les Ganda lui ont raconté, non pour ses classements. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Proposée en 1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mukasa viendrait de l'île de Bukasa, selon le récit que John Roscoe rapporte sur le dieu. Un enfant, né sous le nom de Selwanga, est trouvé assis sous un grand arbre près du lac, sur l'île de Bubembe. Les anciens du village concluent qu'il vient de Bukasa et l'appellent « un Mukasa », c'est-à-dire un homme de l'île de Bukasa, et ce nom lui reste. Ce récit explique le nom du dieu, pas celui des familles qui le portent aujourd'hui.",
+            "hypothesisGroup": "origine-mukasa",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 291",
+                "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé de l'université de Toronto sur archive.org. Page 291 : « they concluded that he had come from Bukasa, and called him a Mukasa (that is a person from the island of Bukasa), and this name attached itself to him from that time ». Roscoe ne nomme pas la personne qui lui a raconté la légende. Ethnographie de l'époque coloniale, citée pour ce que les Ganda lui ont raconté, non pour ses classements. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1885,
+              "to": 1885,
+              "label": "1885, récit publié en 1889"
+            },
+            "era": "polity",
+            "statement": "Le nom Mukasa apparaît par écrit chez le missionnaire Robert P. Ashe, de deux façons. C'est le nom du dieu du lac, « Mukasa, the Neptune of the Nyanza » : les prêtres du Lubare refusent que le roi aille sur le lac tant que ce dieu n'a pas reçu ses offrandes. C'est aussi le nom d'origine d'un jeune lecteur de la mission, devenu Samweli au baptême, qui dit un jour à Ashe : « Do not call me Mukasa — Mukasa is dead. I am Samweli. » C'est la plus ancienne trace de ce nom que le projet connaît. Les Baganda existaient déjà avant lui.",
+            "formAsWritten": "Mukasa",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Robert P. Ashe",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Two Kings of Uganda; or, Life by the Shores of Victoria Nyanza",
+                "author": "Robert P. Ashe",
+                "year": 1890,
+                "url": "https://archive.org/details/twokingsofuganda00ashe",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 149, 159 et 228",
+                "notes": "Londres, Sampson Low, Marston, Searle & Rivington, 1890, « nouvelle édition à bon marché » (le livre est paru pour la première fois en 1889) ; exemplaire numérisé sur archive.org. Page 149 : « Do not call me Mukasa — Mukasa is dead. I am Samweli » ; page 228 : « His native name was Mukasa » ; page 159 : les prêtres du Lubare ne laissent pas le roi aller sur le lac « as they said that Mukasa, the Neptune of the Nyanza, had not yet been propitiated ». Ces pages suivent la mort de Lugalama, le 31 janvier 1885, et précèdent de peu un passage daté de juin 1885 (p. 154). Missionnaire, cité pour les formes qu'il écrit. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

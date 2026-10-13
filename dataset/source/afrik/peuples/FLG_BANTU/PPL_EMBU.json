@@ -118,5 +118,114 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Embu désigne un peuple bantou des pentes sud-est du mont Kenya, au Kenya, très proche des Mbeere, qui l'emploie lui-même ; c'est aussi le nom de sa langue, le kiembu, et d'une ville. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Embu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ebu",
+        "namedBy": null,
+        "shortLine": "Le nom du peuple des pentes sud-est du mont Kenya, écrit dès 1860.",
+        "periodLabel": "Écrit depuis 1860 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Embu désigne un peuple des pentes sud-est du mont Kenya, autour de la ville d'Embu, qui partage avec les Mbeere des ancêtres et des traditions. Ses traditions orales situent son origine tout près de là, selon le site Traditional Music and Cultures of Kenya. Les sources que nous avons lues n'expliquent pas d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Embu and Mbeere — introduction",
+                "author": "Traditional Music and Cultures of Kenya (bluegecko.org)",
+                "year": null,
+                "url": "http://www.bluegecko.org/kenya/tribes/embu/index.htm",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page lue le 11 octobre 2026. L'auteur dit s'appuyer surtout sur H. S. Kabeca Mwaniki, Embu Historical Texts (Nairobi, 1974), recueil d'entretiens avec une trentaine d'anciens embu, mbeere, chuka et ndia, que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1910,
+              "label": "Vers 1906-1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Embu désigne chez l'administrateur britannique Charles William Hobley l'une des régions d'où viennent les ouvriers agricoles que des Kamba commencent à employer, avec le pays mbeere et le sud du mont Kenya.",
+            "sources": [
+              {
+                "title": "Ethnology of A-Kamba and Other East African Tribes",
+                "author": "Charles William Hobley",
+                "year": 1910,
+                "url": "https://archive.org/details/ethnologyofakamb00hobluoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 84",
+                "notes": "Cambridge, Cambridge University Press, 1910. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026. L'auteur date cet usage des trois ou quatre années précédentes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1851,
+              "to": 1851,
+              "label": "Août 1851, récit publié en 1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Embu s'écrit Uembu chez le missionnaire Johann Ludwig Krapf : à Kitui, le chef Kivoi lui présente Rumu wa Kikandi, qui se dit « de la tribu Uembu », dont le pays se trouve tout près du mont Kenya, à cinq ou six jours de marche.",
+            "formAsWritten": "Uembu",
+            "actors": [
+              {
+                "name": "Rumu wa Kikandi",
+                "role": "informateur embu de Krapf à Kitui"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels, Researches, and Missionary Labours during an Eighteen Years' Residence in Eastern Africa",
+                "author": "Johann Ludwig Krapf",
+                "year": 1860,
+                "url": "https://archive.org/details/travelsresearch00ravegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 311",
+                "notes": "Londres, Trübner, 1860. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026. Journal du 5 août 1851."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1849,
+              "to": 1849,
+              "label": "Décembre 1849, récit publié en 1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Embu a une forme proche, Uimbu, chez le missionnaire Johann Ludwig Krapf, qui cite les tribus de « Mbe et Uimbu », proches du mont Kenya, dont la langue mêle selon lui le kikamba et le kikuyu. C'est la plus ancienne trace de ce nom que le projet connaît. Les Embu vivaient déjà sur les pentes du mont Kenya avant lui.",
+            "formAsWritten": "Uimbu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels, Researches, and Missionary Labours during an Eighteen Years' Residence in Eastern Africa",
+                "author": "Johann Ludwig Krapf",
+                "year": 1860,
+                "url": "https://archive.org/details/travelsresearch00ravegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 297",
+                "notes": "Londres, Trübner, 1860. Lu dans l'exemplaire numérisé par Internet Archive le 11 octobre 2026. Récit du premier voyage au pays kamba, fin 1849. Mbe y désigne sans doute les Mbeere ; c'est notre lecture."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

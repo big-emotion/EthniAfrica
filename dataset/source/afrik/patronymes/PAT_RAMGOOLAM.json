@@ -6,7 +6,7 @@
   },
   "id": "PAT_RAMGOOLAM",
   "nameMain": "Ramgoolam",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Ramgoolam",
@@ -18,8 +18,8 @@
       ]
     }
   ],
-  "transmissionMode": "patrilineal",
-  "designatedSocialUnit": "lineage",
+  "transmissionMode": "other",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [
@@ -104,6 +104,116 @@
     {
       "fieldPath": "homonyms",
       "reason": "les résultats exacts « Ramgoolam », les Indian Immigration Archives du Mahatma Gandhi Institute, les publications de l'Aapravasi Ghat et les catalogues bibliographiques sur l'engagisme à Maurice n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Le nom Ramgoolam a d'abord été un prénom, celui d'un travailleur engagé, avant de devenir un nom de famille à Maurice. Le modèle n'a pas de case pour un prénom devenu nom de famille : la fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
+    },
+    {
+      "fieldPath": "transmissionMode",
+      "reason": "Les sources lues disent comment le prénom est devenu un nom de famille dans une lignée, pas comment il se transmet depuis : le mode reste « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ramgoolam est un nom de famille de Maurice, venu de l'Inde du Nord avec les travailleurs engagés. Il a d'abord été un prénom. On ne sait pas avec certitude ce qu'il veut dire.",
+    "names": [
+      {
+        "nameText": "Ramgoolam",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un prénom d'Inde du Nord devenu nom de famille à Maurice.",
+        "periodLabel": "Écrit dès 1873 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Aujourd'hui"
+            },
+            "era": "modern",
+            "statement": "Le nom Ramgoolam est un nom de famille porté à Maurice. On ne sait pas avec certitude ce qu'il veut dire : aucune des sources lues n'en donne le sens.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Sirdars as intermediaries in nineteenth century Indian Ocean indentured labour migration",
+                "author": "Crispin Bates et Marina Carter",
+                "year": 2017,
+                "url": "https://www.pure.ed.ac.uk/ws/portalfiles/portal/25061873/crispin_bates_accepted.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 13 de la version acceptée",
+                "notes": "Modern Asian Studies 51(2), 2017 ; version acceptée relue le 11 octobre 2026. « Moheeth Ramgoolam migrated from the Saran district of Bihar in 1896 » ; son fils Kewal est « later to be known as Seewoosagur Ramgoolam ». Le texte ne donne pas le sens du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1914,
+              "to": 1920,
+              "label": "1914-1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ramgoolam est enregistré comme nom de famille d'un soldat du bataillon de travailleurs de Maurice pendant la Première Guerre mondiale, selon le catalogue des Archives nationales britanniques.",
+            "sources": [
+              {
+                "title": "Medal card of Ramgoolam, S., Mauritius Labour Battalion",
+                "author": "The National Archives (Royaume-Uni)",
+                "year": null,
+                "url": "https://discovery.nationalarchives.gov.uk/details/r/D4772971",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "cote WO 372/16/137806",
+                "notes": "Fiche de médaille de la Première Guerre mondiale, datée 1914-1920 par le catalogue, lue le 11 octobre 2026. Le catalogue range Ramgoolam dans le champ du nom de famille, avec l'initiale S., soldat no 1096 du bataillon de travailleurs de Maurice."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1900,
+              "label": "1896-1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ramgoolam arrive à Maurice avec Moheeth Ramgoolam, parti du district de Saran, au Bihar, en 1896. Son fils Kewal, né en 1900, sera connu sous le nom de Seewoosagur Ramgoolam : le nom du père devient celui du fils, selon Crispin Bates et Marina Carter.",
+            "sources": [
+              {
+                "title": "Sirdars as intermediaries in nineteenth century Indian Ocean indentured labour migration",
+                "author": "Crispin Bates et Marina Carter",
+                "year": 2017,
+                "url": "https://www.pure.ed.ac.uk/ws/portalfiles/portal/25061873/crispin_bates_accepted.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 13 de la version acceptée",
+                "notes": "Modern Asian Studies 51(2), 2017 ; version acceptée relue le 11 octobre 2026. « Moheeth Ramgoolam migrated from the Saran district of Bihar in 1896 » ; son fils Kewal est « later to be known as Seewoosagur Ramgoolam ». Le texte ne donne pas le sens du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "1873"
+            },
+            "statement": "Le nom Ramgoolam apparaît comme prénom dans une affaire venue du Bengale et jugée à Londres en 1873 : celui d'un garçon, Ramgoolam Sahoo, selon le catalogue des Archives nationales britanniques. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Ramgoolam Sahoo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Judgment No 78 of 1873, appel au Comité judiciaire du Conseil privé depuis la Haute Cour de Calcutta (Bengale)",
+                "author": "The National Archives (Royaume-Uni)",
+                "year": 1873,
+                "url": "https://discovery.nationalarchives.gov.uk/details/r/C17160946",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "cote PCAP 6/109/2",
+                "notes": "Notice du catalogue des Archives nationales britanniques, lue le 11 octobre 2026. Parmi les intimés figure « Ramgoolam Sahoo », fils mineur de Hurnundun Lall Sahoo : Ramgoolam y est le prénom, Sahoo le nom de famille. L'affaire vient du Bengale, en Inde."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
