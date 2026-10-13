@@ -114,5 +114,243 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nyangatom désigne un peuple d'agro-pasteurs de la basse vallée de l'Omo, au sud-ouest de l'Éthiopie, près de la frontière avec le Soudan du Sud, qui se nomme lui-même ainsi. On l'a longtemps connu sous d'autres noms, comme Bume et Donyiro. Selon l'anthropologue Serge Tornay, Nyangatom viendrait d'un surnom que leurs voisins leur donnaient, Nyam-etom, « mangeurs d'éléphants », que ces guerriers auraient changé en « fusils jaunes ». Nous présentons plus bas ce que les sources disent de chaque nom.",
+    "names": [
+      {
+        "nameText": "Nyangatom",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nnj",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne et que l'anthropologue Serge Tornay a mis dans le titre de son livre de 2001.",
+        "periodLabel": "Écrit en 2001 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2001,
+              "to": 2001,
+              "label": "Proposée en 2001"
+            },
+            "era": "modern",
+            "statement": "Le nom Nyangatom viendrait du surnom nyam-etom, « mangeurs d'éléphants », que leurs voisins du groupe karimojong leur donnaient. Les Nyangatom l'auraient déformé en nyang-atom, « fusils jaunes », en pensant aux canons de fusil neufs et brillants dans lesquels ces guerriers aimaient se reconnaître, selon Serge Tornay, dont Éloi Ficquet rapporte l'explication.",
+            "hypothesisGroup": "origine du nom Nyangatom",
+            "sources": [
+              {
+                "title": "Serge Tornay, Les Fusils jaunes. Générations et politique en pays nyangatom (Éthiopie)",
+                "author": "Éloi Ficquet",
+                "year": 2003,
+                "url": "http://journals.openedition.org/lhomme/19562",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 339-341",
+                "notes": "Compte rendu paru dans L'Homme, n° 167-168, 2003, p. 339-341 ; mis en ligne le 11 septembre 2008. La version en ligne ne donne pas la page de chaque paragraphe. Le livre (Nanterre, Société d'ethnologie, 2001, 363 p.) n'a pas été lu. Ficquet écrit que le titre du livre, Les Fusils jaunes, correspond à la traduction du composé nyang-atom. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant le nom, selon Serge Tornay"
+            },
+            "era": "polity",
+            "statement": "On parle alors d'un peuple en formation : par un calcul sur les générations, Serge Tornay date du début du XVIIIe siècle la génération des Fondateurs, les Ngi-seu-kop, du pays nyangatom. La chronologie qu'il en tire reste approximative, dit Éloi Ficquet.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Serge Tornay, Les Fusils jaunes. Générations et politique en pays nyangatom (Éthiopie)",
+                "author": "Éloi Ficquet",
+                "year": 2003,
+                "url": "http://journals.openedition.org/lhomme/19562",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 339-341",
+                "notes": "Compte rendu paru dans L'Homme, n° 167-168, 2003, p. 339-341 ; mis en ligne le 11 septembre 2008. La version en ligne ne donne pas la page de chaque paragraphe. Le livre (Nanterre, Société d'ethnologie, 2001, 363 p.) n'a pas été lu. Ficquet résume la méthode de Tornay : une simulation démographique sur les classes de générations, qui lui permet de proposer le début du XVIIIe siècle. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2001,
+              "to": 2001,
+              "label": "2001"
+            },
+            "era": "modern",
+            "statement": "Le nom Nyangatom est celui que l'anthropologue Serge Tornay met dans le titre de son livre de 2001, Les Fusils jaunes. Générations et politique en pays nyangatom (Éthiopie), selon le compte rendu d'Éloi Ficquet. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Serge Tornay, Les Fusils jaunes. Générations et politique en pays nyangatom (Éthiopie)",
+                "author": "Éloi Ficquet",
+                "year": 2003,
+                "url": "http://journals.openedition.org/lhomme/19562",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 339-341",
+                "notes": "Compte rendu paru dans L'Homme, n° 167-168, 2003, p. 339-341 ; mis en ligne le 11 septembre 2008. La version en ligne ne donne pas la page de chaque paragraphe. Le livre (Nanterre, Société d'ethnologie, 2001, 363 p.) n'a pas été lu.  Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nyam-etom",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les voisins du groupe karimojong",
+        "shortLine": "Le surnom « mangeurs d'éléphants » que les voisins karimojong donnaient aux Nyangatom, selon Serge Tornay.",
+        "periodLabel": "Rapporté en 2003",
+        "accounts": [
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Nyam-etom, « mangeurs d'éléphants », est un surnom dont les voisins des Nyangatom, du groupe linguistique et culturel karimojong, les affublaient, selon Serge Tornay, dont Éloi Ficquet rapporte l'explication. Le compte rendu ne dit pas depuis quand ni pourquoi. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "nyam-etom",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Serge Tornay, Les Fusils jaunes. Générations et politique en pays nyangatom (Éthiopie)",
+                "author": "Éloi Ficquet",
+                "year": 2003,
+                "url": "http://journals.openedition.org/lhomme/19562",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 339-341",
+                "notes": "Compte rendu paru dans L'Homme, n° 167-168, 2003, p. 339-341 ; mis en ligne le 11 septembre 2008. La version en ligne ne donne pas la page de chaque paragraphe. Le livre (Nanterre, Société d'ethnologie, 2001, 363 p.) n'a pas été lu.  Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bume",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'un des noms sous lesquels les explorateurs ont connu ce peuple, écrit Buma en 1888.",
+        "periodLabel": "Écrit Buma dès 1888",
+        "accounts": [
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Bume est l'un des deux noms, avec Dongiro, sous lesquels les Nyangatom étaient connus avant les travaux de Serge Tornay, écrit Pume par Éloi Ficquet. Ficquet ajoute qu'ils n'avaient été mentionnés que par des explorateurs qui avaient traversé le sud de l'Éthiopie au début du XXe siècle.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Serge Tornay, Les Fusils jaunes. Générations et politique en pays nyangatom (Éthiopie)",
+                "author": "Éloi Ficquet",
+                "year": 2003,
+                "url": "http://journals.openedition.org/lhomme/19562",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 339-341",
+                "notes": "Compte rendu paru dans L'Homme, n° 167-168, 2003, p. 339-341 ; mis en ligne le 11 septembre 2008. La version en ligne ne donne pas la page de chaque paragraphe. Le livre (Nanterre, Société d'ethnologie, 2001, 363 p.) n'a pas été lu. Ficquet écrit : « Connus sous les appellations de Pume ou Dongiro, les Nyangatom n'avaient été mentionnés que par les observations craintives des explorateurs ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1894,
+              "label": "Visite de 1888, récit publié en 1894"
+            },
+            "era": "polity",
+            "statement": "Le nom Bume a une forme proche, Buma, chez le comte Samuel Teleki et Ludwig von Höhnel, qui placent en 1888 les Buma et les Marle au nord du lac Rudolf et disent leurs dialectes nilotiques. L'anthropologue David Turton reconnaît dans ces Buma les Nyangatom d'aujourd'hui. C'est la plus ancienne trace d'une forme proche de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Buma",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Discovery of lakes Rudolf and Stefanie : a narrative of Count Samuel Teleki's exploring and hunting expedition in eastern equatorial Africa in 1887 and 1888, vol. II",
+                "author": "Ludwig von Höhnel",
+                "year": 1894,
+                "url": "https://archive.org/details/discoveryoflakes02hhne",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 168-169",
+                "notes": "Récit de l'expédition du comte Teleki, qui atteint le lac Rudolf, aujourd'hui lac Turkana, en avril 1888. Les Buma sont nommés au bas de la p. 168, puis à la p. 169 : un jour de marche des Reshiat aux établissements des Buma et des Marle ; les dialectes turkana, donyiro, buma et marle y sont dits nilotiques. Lu le 13 octobre 2026 sur le scan de l'Internet Archive ; le numéro de page est vérifié sur l'image."
+              },
+              {
+                "title": "Exploration in the lower Omo valley of southwestern Ethiopia between 1890 and 1910",
+                "author": "David Turton",
+                "year": null,
+                "url": "https://www.mursi.org/pdf/exploration-in-the-lower-omo-valley.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Version révisée d'une communication de 1981, publiée sur le site mursi.org. Turton écrit « the Buma (Nyangatom) » en parlant des peuples que Teleki et von Höhnel rencontrent en 1888. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Donyiro",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'un des noms sous lesquels ce peuple était connu avant les travaux de Tornay, écrit aussi Dongiro.",
+        "periodLabel": "Écrit Donyiro dès 1888 ; Dongiro en 2003",
+        "accounts": [
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Donyiro a une forme proche, Dongiro, que cite Éloi Ficquet comme l'un des noms sous lesquels les Nyangatom étaient connus avant les travaux de Serge Tornay. C'est la plus ancienne trace d'une forme proche de ce nom, appliquée aux Nyangatom, que le projet connaît.",
+            "formAsWritten": "Dongiro",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Serge Tornay, Les Fusils jaunes. Générations et politique en pays nyangatom (Éthiopie)",
+                "author": "Éloi Ficquet",
+                "year": 2003,
+                "url": "http://journals.openedition.org/lhomme/19562",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 339-341",
+                "notes": "Compte rendu paru dans L'Homme, n° 167-168, 2003, p. 339-341 ; mis en ligne le 11 septembre 2008. La version en ligne ne donne pas la page de chaque paragraphe. Le livre (Nanterre, Société d'ethnologie, 2001, 363 p.) n'a pas été lu.  Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1894,
+              "label": "Visite de 1888, récit publié en 1894"
+            },
+            "era": "polity",
+            "statement": "Le nom Donyiro figure chez Ludwig von Höhnel pour un peuple du nord-ouest du lac Rudolf, que le voyageur dit proche des Turkana et dont il range le dialecte parmi les langues nilotiques, à côté de celui des Buma. Les sources que nous avons lues ne disent pas si ce peuple est celui que Serge Tornay appelle ainsi.",
+            "formAsWritten": "Dónyiro",
+            "sources": [
+              {
+                "title": "Discovery of lakes Rudolf and Stefanie : a narrative of Count Samuel Teleki's exploring and hunting expedition in eastern equatorial Africa in 1887 and 1888, vol. II",
+                "author": "Ludwig von Höhnel",
+                "year": 1894,
+                "url": "https://archive.org/details/discoveryoflakes02hhne",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 168-169",
+                "notes": "Récit de l'expédition du comte Teleki, qui atteint le lac Rudolf, aujourd'hui lac Turkana, en avril 1888. Höhnel écrit p. 168 : « on the north-west are the Donyiro, who are nearly related to the Turkana » ; la liste des dialectes nilotiques est à la p. 169. Lu le 13 octobre 2026 sur le scan de l'Internet Archive ; le numéro de page est vérifié sur l'image."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
