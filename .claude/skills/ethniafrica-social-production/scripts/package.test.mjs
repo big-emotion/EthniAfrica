@@ -1,10 +1,17 @@
 // @req REQ-186
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync, writeFileSync, existsSync } from "node:fs";
+import {
+  readFileSync,
+  writeFileSync,
+  existsSync,
+  copyFileSync,
+  appendFileSync,
+} from "node:fs";
 import { join } from "node:path";
 import { createPackage, inspectPackage } from "./package.mjs";
 import { packageFixture } from "./package.fixture.mjs";
+import { videoPackageFixture } from "./package-video.fixture.mjs";
 
 // @req REQ-186
 test("a checked package preserves media order, exact copy, credits and alternative text", (t) => {
@@ -324,5 +331,249 @@ test("license URLs need rights evidence and network alternatives still undergo l
         "facebook",
       ]),
     /language|editorial/i
+  );
+});
+
+const both = ["instagram", "facebook"];
+
+// @req REQ-186
+test("a final video package delivers the exact video, its on-screen text and each network's copy", (t) => {
+  const f = videoPackageFixture(t);
+  const r = createPackage(f.root, f.configPath, f.output, both);
+  assert.deepEqual(
+    r.media.map((m) => m.file),
+    ["video.mp4"]
+  );
+  assert.deepEqual(
+    readFileSync(join(f.root, f.output, "video.mp4")),
+    readFileSync(join(f.root, f.final, "video.mp4"))
+  );
+  const post = readFileSync(join(f.root, f.output, "post.md"), "utf8");
+  assert.equal((post.match(/### Légende/g) || []).length, 2);
+  assert.match(post, /### Premier commentaire\n\nAucun/);
+  assert.match(post, /### Placement du lien/);
+  assert.match(post, /incrustés/);
+  assert.match(post, /sous-titres automatiques/i);
+  assert.ok(post.includes(f.config.networks[0].capability.altInstruction));
+  const copy = JSON.parse(
+    readFileSync(join(f.root, f.output, "public-copy.json"), "utf8")
+  );
+  for (const line of [
+    "D'où vient le nom Sahara ?",
+    "Ce que le mot désignait",
+    "Sahara vient de l'arabe",
+    "Source : al-Idrīsī, 1154",
+    "« Pays des Noirs »",
+    "Tout l'atlas des noms est en ligne.",
+    "Retrouvez tout l'atlas",
+  ])
+    assert.ok(
+      copy.screen.some((s) => s.replaceAll("\u00a0", " ") === line),
+      line
+    );
+  assert.equal(copy.networks[0].caption, f.config.networks[0].caption);
+  assert.doesNotThrow(() => inspectPackage(f.root, f.output, both));
+  appendFileSync(join(f.root, f.output, "video.mp4"), "x");
+  assert.throws(() => inspectPackage(f.root, f.output, both), /changed/i);
+});
+
+// @req REQ-186
+test("demo, mockup and excerpt videos cannot become a final package", (t) => {
+  for (const [mutate, pattern] of [
+    [
+      (f) => {
+        const p = join(f.root, f.sequence);
+        const seq = JSON.parse(readFileSync(p, "utf8"));
+        seq.demo = "Illustrative copy";
+        writeFileSync(p, JSON.stringify(seq));
+        f.writeManifest((m) => (m.demo = true));
+      },
+      /demo|proof/i,
+    ],
+    [
+      (f) => {
+        copyFileSync(
+          join(
+            process.cwd(),
+            "social/video/fixtures/synthetic-areas/noirs.geojson"
+          ),
+          join(f.root, "piece/video-input/areas/noirs.geojson")
+        );
+      },
+      /mockup/i,
+    ],
+    [
+      (f) => f.writeManifest((m) => (m.range = { from: 0, to: 30 })),
+      /excerpt|proof/i,
+    ],
+    [(f) => f.writeManifest((m) => (m.demo = true)), /demo|proof/i],
+  ]) {
+    const f = videoPackageFixture(t);
+    mutate(f);
+    assert.throws(
+      () => createPackage(f.root, f.configPath, f.output, both),
+      pattern
+    );
+    assert.equal(existsSync(join(f.root, f.output)), false);
+  }
+});
+
+// @req REQ-186
+test("the video manifest must match the video bytes, the sequence, the voice and the accepted design", (t) => {
+  for (const [mutate, pattern] of [
+    [(f) => appendFileSync(join(f.root, f.final, "video.mp4"), "x"), /video/i],
+    [
+      (f) => {
+        const p = join(f.root, f.sequence);
+        const seq = JSON.parse(readFileSync(p, "utf8"));
+        seq.chapters[0].title = "D'où vient ce nom";
+        writeFileSync(p, JSON.stringify(seq));
+      },
+      /sequence/i,
+    ],
+    [
+      (f) => f.writeManifest((m) => (m.audio.sha256 = "0".repeat(64))),
+      /audio|voice/i,
+    ],
+    [(f) => f.writeManifest((m) => (m.frames -= 30)), /frame/i],
+    [
+      (f) =>
+        f.file("video-design.json", {
+          name: "EthniAfrica Vidéo carte",
+          version: "0.4.0-proposition",
+          status: "proposed",
+        }),
+      /design/i,
+    ],
+    [
+      (f) =>
+        f.file("video-design.json", {
+          name: "EthniAfrica Vidéo carte",
+          version: "0.5.0-proposition",
+          status: "accepted",
+        }),
+      /design/i,
+    ],
+  ]) {
+    const f = videoPackageFixture(t);
+    mutate(f);
+    assert.throws(
+      () => createPackage(f.root, f.configPath, f.output, both),
+      pattern
+    );
+  }
+});
+
+// @req REQ-186
+test("the video account route bounds duration, aspect, copy and accessibility", (t) => {
+  for (const [mutate, pattern] of [
+    [(c) => (c.format = "photo-carousel"), /video/i],
+    [(c) => (c.maxDurationSeconds = 10), /duration/i],
+    [(c) => delete c.maxDurationSeconds, /duration/i],
+    [(c) => (c.aspect = "4:5"), /aspect/i],
+    [(c) => (c.captionMax = 2), /caption/i],
+    [(c) => delete c.autoCaptions, /caption/i],
+    [(c) => (c.altRoute = "native"), /alternative/i],
+  ]) {
+    const f = videoPackageFixture(t);
+    mutate(f.config.networks[0].capability);
+    f.save();
+    assert.throws(
+      () => createPackage(f.root, f.configPath, f.output, both),
+      pattern
+    );
+  }
+});
+
+// @req REQ-186
+test("a native alternative text route carries the network's description of the video", (t) => {
+  const f = videoPackageFixture(t);
+  const n = f.config.networks[0];
+  n.capability.altRoute = "native";
+  n.capability.altMax = 100;
+  n.alternativeText = [
+    {
+      file: "video.mp4",
+      text: "Une carte du Sahara montre trois bandes de terre.",
+    },
+  ];
+  f.save();
+  createPackage(f.root, f.configPath, f.output, both);
+  const post = readFileSync(join(f.root, f.output, "post.md"), "utf8");
+  assert.ok(post.includes(n.alternativeText[0].text));
+  const copy = JSON.parse(
+    readFileSync(join(f.root, f.output, "public-copy.json"), "utf8")
+  );
+  assert.deepEqual(copy.networks[0].alternativeText, [
+    n.alternativeText[0].text,
+  ]);
+  assert.deepEqual(copy.networks[1].alternativeText, []);
+});
+
+// @req REQ-186
+test("video links follow the data-driven account routes and the existing network rules", (t) => {
+  const destination = (f) => {
+    const p = join(f.root, f.config.research);
+    const research = JSON.parse(readFileSync(p, "utf8"));
+    research.destination = {
+      status: "verified",
+      invitation: "Read the answer",
+      url: "https://example.org/answer",
+      checkedAt: "2026-10-13",
+      support: "Synthetic observation",
+      evidence: f.file("live.txt", "Synthetic answer capture"),
+    };
+    writeFileSync(p, JSON.stringify(research));
+  };
+  const networks = ["youtube", "instagram"];
+  const f = videoPackageFixture(t, networks);
+  destination(f);
+  const youtube = f.config.networks[0];
+  youtube.link = { placement: "caption", url: "https://example.org/answer" };
+  youtube.caption += " https://example.org/answer";
+  f.save();
+  assert.throws(
+    () => createPackage(f.root, f.configPath, f.output, networks),
+    /route/i
+  );
+  youtube.capability.linkPlacements = ["none", "caption"];
+  f.save();
+  assert.doesNotThrow(() =>
+    createPackage(f.root, f.configPath, f.output, networks)
+  );
+  const instagram = f.config.networks[1];
+  instagram.link = { placement: "caption", url: "https://example.org/answer" };
+  instagram.caption += " https://example.org/answer";
+  instagram.capability.linkPlacements = ["none", "caption"];
+  f.save();
+  assert.throws(
+    () => createPackage(f.root, f.configPath, "piece/instagram", networks),
+    /clickable caption link/i
+  );
+});
+
+// @req REQ-186
+test("an optional cover is the video's own declared frame", (t) => {
+  const f = videoPackageFixture(t);
+  f.config.cover = { frame: 30 };
+  f.save();
+  const r = createPackage(f.root, f.configPath, f.output, both);
+  assert.deepEqual(
+    r.media.map((m) => m.file),
+    ["video.mp4", "cover.png"]
+  );
+  const png = readFileSync(join(f.root, f.output, "cover.png"));
+  assert.equal(png.readUInt32BE(16), 1080);
+  assert.equal(png.readUInt32BE(20), 1920);
+  assert.match(
+    readFileSync(join(f.root, f.output, "post.md"), "utf8"),
+    /cover\.png/
+  );
+  assert.doesNotThrow(() => inspectPackage(f.root, f.output, both));
+  f.config.cover = { frame: 100000 };
+  f.save();
+  assert.throws(
+    () => createPackage(f.root, f.configPath, "piece/far", both),
+    /cover|frame/i
   );
 });
