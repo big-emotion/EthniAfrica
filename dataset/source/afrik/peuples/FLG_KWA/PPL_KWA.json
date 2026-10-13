@@ -92,5 +92,258 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Gwa désigne un petit peuple lagunaire du sud-est de la Côte d'Ivoire, installé au bord de la lagune Potou, à l'est d'Abidjan. Ce peuple se nomme lui-même Gwa, qu'on écrit aussi Goua, et ses voisins l'appellent M'bato. Il ne faut pas le confondre avec la famille de langues dite kwa. Les sources ne s'accordent pas sur qui lui a donné le nom M'bato ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Gwa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'origine de ce peuple lagunaire, écrit dès 1904 ; on écrit aussi Goua.",
+        "usedIn": ["fra"],
+        "periodLabel": "Écrit dès 1904 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Gwa est le nom d'origine de ce peuple, que les peuples voisins ont transformé avec le temps, selon Kouassi Magloire Koroko. La sous-préfecture d'Oghlwapo porte un nom qui voudrait dire « maison des Gwa ». Ne confondez pas ce peuple avec la famille de langues dite kwa.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Regards croisés sur un peuple ivoirien peu connu : les Gwa",
+                "author": "Kouassi Magloire Koroko",
+                "year": 2023,
+                "url": "http://djiboul.org/wp-content/uploads/2024/01/Tire-a-part-Kouassi-Magloire-KOROKO.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "pp. 282-283",
+                "notes": "Djiboul, décembre 2023, p. 280-289 (tiré à part). Lu le 13 octobre 2026. Page 283 : « Le terme Gwa ou Goua est le nom originel de ce peuple » ; page 282 : le nom d'Oghlwapo signifie « maison des Gwa »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gwa apparaît par écrit chez l'administrateur colonial Maurice Delafosse, qui décrit un peuple des bords de la lagune Potou, formé de deux tribus, les Dabre et les Ndoma, qui parlent la même langue. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple vivait là bien avant lui.",
+            "formAsWritten": "Gwa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11",
+                "notes": "Paris, Ernest Leroux, 1904. Lu sur sa numérisation par la bibliothèque de l'université de Toronto. Page 11 : « Les Gwa (appelés Mbato par les Akyè, les Kyama (Ébrié) et les Agni) habitent les bords de la lagune Potou ». Page lue sur l'image de la page."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Goua",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre façon d'écrire Gwa, employée dès 1904.",
+        "usedIn": ["fra"],
+        "periodLabel": "Écrit dès 1904",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Goua est une autre façon d'écrire Gwa : Maurice Delafosse l'emploie dans le même passage, pour la langue des « Goua » et pour ce peuple voisin des Ébrié. Kouassi Magloire Koroko note que le nom s'écrit souvent ainsi.",
+            "formAsWritten": "Goua",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11",
+                "notes": "Paris, Ernest Leroux, 1904. Lu sur sa numérisation par la bibliothèque de l'université de Toronto. Page 11 : « La langue des Goua se rapproche beaucoup de celle de leurs voisins de l'ouest, les Kyama ou Ébrié ». Page lue sur l'image de la page."
+              },
+              {
+                "title": "Regards croisés sur un peuple ivoirien peu connu : les Gwa",
+                "author": "Kouassi Magloire Koroko",
+                "year": 2023,
+                "url": "http://djiboul.org/wp-content/uploads/2024/01/Tire-a-part-Kouassi-Magloire-KOROKO.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 282",
+                "notes": "Djiboul, décembre 2023, p. 280-289 (tiré à part). Lu le 13 octobre 2026. Page 282 : le nom Gwa est « souvent orthographié goua »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "M'bato",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des peuples voisins : les Akyè, les Ébrié et les Agni selon Delafosse ; les Abouré selon Koroko",
+        "shortLine": "Le nom que des voisins donnent aux Gwa, écrit dès 1900 ; qui l'a donné est discuté.",
+        "usedIn": ["fra"],
+        "periodLabel": "Écrit dès 1900 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "2023"
+            },
+            "era": "modern",
+            "statement": "Le nom M'bato aurait été donné à ce peuple par les Abouré, selon les informateurs de Kouassi Magloire Koroko.",
+            "hypothesisGroup": "qui a donné le nom M'bato",
+            "sources": [
+              {
+                "title": "Regards croisés sur un peuple ivoirien peu connu : les Gwa",
+                "author": "Kouassi Magloire Koroko",
+                "year": 2023,
+                "url": "http://djiboul.org/wp-content/uploads/2024/01/Tire-a-part-Kouassi-Magloire-KOROKO.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 283",
+                "notes": "Djiboul, décembre 2023, p. 280-289 (tiré à part). Lu le 13 octobre 2026. Page 283 : « Selon nos informateurs, il leur a été attribué par les Abouré »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "2023"
+            },
+            "era": "modern",
+            "statement": "Le nom M'bato prête à confusion : beaucoup d'Ivoiriens le rattachent à la ville de M'batto, au centre-est du pays, selon Kouassi Magloire Koroko, qui s'appuie sur Jean-Noël Loucou (1984).",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Regards croisés sur un peuple ivoirien peu connu : les Gwa",
+                "author": "Kouassi Magloire Koroko",
+                "year": 2023,
+                "url": "http://djiboul.org/wp-content/uploads/2024/01/Tire-a-part-Kouassi-Magloire-KOROKO.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 280",
+                "notes": "Djiboul, décembre 2023, p. 280-289 (tiré à part). Lu le 13 octobre 2026. Page 280 et note 1 : le rapprochement avec la localité de M'batto vient, selon l'auteur, des travaux de Loucou (1984), que nous n'avons pas ouverts."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "2023"
+            },
+            "era": "modern",
+            "statement": "Le nom M'bato désigne les Gwa, que l'on appelle couramment ainsi, selon Kouassi Magloire Koroko. Les sources ne s'accordent pas sur qui le leur a donné ; nous présentons plus bas ce qu'elles disent.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Regards croisés sur un peuple ivoirien peu connu : les Gwa",
+                "author": "Kouassi Magloire Koroko",
+                "year": 2023,
+                "url": "http://djiboul.org/wp-content/uploads/2024/01/Tire-a-part-Kouassi-Magloire-KOROKO.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 282",
+                "notes": "Djiboul, décembre 2023, p. 280-289 (tiré à part). Lu le 13 octobre 2026. Page 282 : « Les Gwa communément appelés M'bato »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom M'bato est celui que les Akyè, les Ébrié (Kyama) et les Agni donnent aux Gwa, selon Maurice Delafosse.",
+            "hypothesisGroup": "qui a donné le nom M'bato",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11",
+                "notes": "Paris, Ernest Leroux, 1904. Lu sur sa numérisation par la bibliothèque de l'université de Toronto. Page 11 : « appelés Mbato par les Akyè, les Kyama (Ébrié) et les Agni ». Page lue sur l'image de la page."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom M'bato figure chez François-Joseph Clozel et Roger Villamur, qui disent que les M'bato faisaient partie du groupe accrédiou, issu de la famille Agoury, puis se sont installés entre la Comoé et la lagune Potou.",
+            "formAsWritten": "M'bato",
+            "sources": [
+              {
+                "title": "Les coutumes indigènes de la Côte d'Ivoire",
+                "author": "François-Joseph Clozel et Roger Villamur",
+                "year": 1902,
+                "url": "https://archive.org/details/lescoutumesindig00cloz",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 49",
+                "notes": "Paris, A. Challamel, 1902. Lu sur sa numérisation d'Internet Archive. Page 49 : « Les M'bato faisaient partie du groupe accrediou […] entre le Comoé et la lagune Potou ». Page lue sur l'image de la page."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom M'bato apparaît sous une forme proche, Bato, chez l'administrateur colonial Maurice Delafosse, qui compte « une partie des Bato de la lagune Potou » parmi les gens qui comprennent l'agni. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Bato",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Essai de manuel de la langue agni parlée dans la moitié orientale de la Côte d'Ivoire",
+                "author": "Maurice Delafosse",
+                "year": 1900,
+                "url": "https://archive.org/details/essaidemanuelde00delagoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. VI",
+                "notes": "Paris, 1900. Lu sur sa numérisation d'Internet Archive. Préface, page VI : « Une partie des Bato de la lagune Potou et des Ébrié ». Page lue sur l'image de la page."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

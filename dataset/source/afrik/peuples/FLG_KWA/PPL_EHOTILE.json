@@ -95,5 +95,300 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bétibé désigne un peuple de pêcheurs des îles de la lagune Aby, dans le sud-est de la Côte d'Ivoire, que les chercheurs appellent aussi Éotilé, Ehotilé ou Mékyibo. Sa langue est le bétiné. Les sources que nous avons lues n'expliquent pas l'origine des noms Ehotilé et Bétibé. Elles donnent pour le nom Vétéré, que les voyageurs lui donnent dès 1714, le sens « pêcheurs » ; nous présentons plus bas ces traces.",
+    "names": [
+      {
+        "nameText": "Bétibé",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple lagunaire que d'autres appellent Éotilé ; sa langue est le bétiné.",
+        "usedIn": ["fra"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Bétibé désigne le peuple que d'autres appellent Éotilé ou Mékyibo, et sa langue est le bétiné, selon Éric Pete. Les actes du colloque où il écrit sont réunis sous le titre de colloque sur les Bétibé. Les sources que nous avons lues n'expliquent pas l'origine de ce nom, et elles ne donnent pas la première fois qu'il a été écrit.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Aïzi et Éotilé : deux peuples lagunaires aux liens historiques anciens",
+                "author": "Éric Pete",
+                "year": 2025,
+                "url": "https://www.revue-akofena.com/wp-content/uploads/2025/01/07-ActColl-Eric-PETE_077-088.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 78",
+                "notes": "Akofena, hors-série no 10 (actes du 2e colloque sur les Bétibé), janvier 2025, p. 77-88. Lu le 13 octobre 2026. Page 78 : « le Bétiné, la langue des Bétibé, Mékyibo ou Éotilé » ; le nom Bétibé figure aussi dans le titre du colloque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Bétibé est celui que porte le peuple que certains appellent Pèpèyuli et d'autres Éotilé, selon Blath Esther Azagni. Dans leurs traditions orales, les Éotilé se disent aussi « Mekyibo ou Betibé ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les Bétibé (Éotilé) et la formation des villages aïzi de langue lelou (XIIIe - début XXe siècles)",
+                "author": "Blath Esther Azagni",
+                "year": 2021,
+                "url": "https://www.ziglobitha.org/wp-content/uploads/2021/11/03-Blath-Esther-AZAGNI-pp31-52.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "pp. 31 et 37",
+                "notes": "Ziglôbitha, 2021, p. 31-52. Lu le 13 octobre 2026. Page 31 : « connus sous le nom de Pèpèyuli par les uns et Eotilé par les autres, les Betibé » ; page 37 : « traditions orales éotilé (Mekyibo ou Betibé) »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ehotilé",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les sources donnent à ce peuple ; une forme proche, Ewutile, est écrite dès 1904.",
+        "usedIn": ["fra"],
+        "periodLabel": "Forme proche écrite dès 1904 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Éotilé, écrit aussi Ehotilé, est celui qu'emploient Kadjomou Ferdinand Ayemou et Éric Pete pour le peuple des îles de la lagune Aby, dans le sud-est de la Côte d'Ivoire. Les sources que nous avons lues n'expliquent pas son origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Abouré et Eotilé : deux peuples liés par l'histoire (XVIIe-début XXe siècles)",
+                "author": "Kadjomou Ferdinand Ayemou",
+                "year": 2021,
+                "url": "https://www.ziglobitha.org/wp-content/uploads/2021/11/01-Kadjomou-Ferdinand-AYEMOU-pp01-16.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Ziglôbitha, 2021, p. 1-16. Lu le 13 octobre 2026. Page 1 : résumé, qui emploie Eotilé pour ce peuple."
+              },
+              {
+                "title": "Aïzi et Éotilé : deux peuples lagunaires aux liens historiques anciens",
+                "author": "Éric Pete",
+                "year": 2025,
+                "url": "https://www.revue-akofena.com/wp-content/uploads/2025/01/07-ActColl-Eric-PETE_077-088.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 77",
+                "notes": "Akofena, hors-série no 10 (actes du 2e colloque sur les Bétibé), janvier 2025, p. 77-88. Lu le 13 octobre 2026. Page 77 : le titre et le résumé emploient Éotilé ; Éric Pete écrit aussi Bétibé et Mékyibo."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Ewuture est, selon Blath Esther Azagni, la façon dont les Nzima appellent les Éotilé. Elle cite Claude-Hélène Perrot (2008) et ne dit pas si Ehotilé vient de ce mot.",
+            "formAsWritten": "Ewuture",
+            "sources": [
+              {
+                "title": "Les Bétibé (Éotilé) et la formation des villages aïzi de langue lelou (XIIIe - début XXe siècles)",
+                "author": "Blath Esther Azagni",
+                "year": 2021,
+                "url": "https://www.ziglobitha.org/wp-content/uploads/2021/11/03-Blath-Esther-AZAGNI-pp31-52.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 42",
+                "notes": "Ziglôbitha, 2021, p. 31-52. Lu le 13 octobre 2026. Page 42 et note 24 : « Appellation des Eotilé par les Nzima » ; l'auteur cite Perrot (2008, p. 27), que nous n'avons pas ouvert."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ehotilé apparaît sous une forme proche, Ewutile, chez l'administrateur colonial Maurice Delafosse, qui écrit que les Agni appellent ainsi les Mékyibo des lagunes d'Assinie et de Grand-Bassam, pêcheurs et navigateurs qui vivent sur les îles. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Ewutile",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "notes": "Paris, Ernest Leroux, 1904. Lu sur sa numérisation par la bibliothèque de l'université de Toronto. Page 9 : « Les Mekyibo (appelés Ewutre ou Ewutile par les Agni […] ) ». Page lue sur l'image de la page."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mékyibo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom qu'emploie Delafosse en 1904 pour ce peuple et sa langue des lagunes d'Assinie.",
+        "usedIn": ["fra"],
+        "periodLabel": "Écrit dès 1904",
+        "accounts": [
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Mékyibo est, avec Bétibé et Éotilé, l'un des trois noms que donne Éric Pete au peuple dont la langue est le bétiné.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Aïzi et Éotilé : deux peuples lagunaires aux liens historiques anciens",
+                "author": "Éric Pete",
+                "year": 2025,
+                "url": "https://www.revue-akofena.com/wp-content/uploads/2025/01/07-ActColl-Eric-PETE_077-088.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 78",
+                "notes": "Akofena, hors-série no 10 (actes du 2e colloque sur les Bétibé), janvier 2025, p. 77-88. Lu le 13 octobre 2026. Page 78 : « le Bétiné, la langue des Bétibé, Mékyibo ou Éotilé »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mékyibo apparaît par écrit chez l'administrateur colonial Maurice Delafosse, qui l'emploie pour un peuple de pêcheurs de la lagune d'Abi et des îles voisines, dont il note la langue, le mékyibo. Il ne dit pas qui a donné ce nom. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Mekyibo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "notes": "Paris, Ernest Leroux, 1904. Lu sur sa numérisation par la bibliothèque de l'université de Toronto. Page 9 : « Les Mekyibo […] semblent être les plus anciens habitants des lagunes d'Assinie et de Grand-Bassam ». Page lue sur l'image de la page."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Vétéré",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Abouré, selon Maurice Delafosse",
+        "shortLine": "Un nom écrit dès 1714 par un voyageur ; il voudrait dire « pêcheurs ».",
+        "usedIn": ["fra"],
+        "periodLabel": "Écrit dès 1714",
+        "accounts": [
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Vétéré est celui que les Abouré donnent à ce peuple, sous les formes Vyetre, Byetri ou Vetere, et c'est celui que les voyageurs emploient le plus souvent, selon Maurice Delafosse.",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "notes": "Paris, Ernest Leroux, 1904. Lu sur sa numérisation par la bibliothèque de l'université de Toronto. Page 9 : « Vyetre ou Byetri ou Vetere par les Abouré, généralement désignés par les voyageurs sous le nom de Vétéré ». Page lue sur l'image de la page."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1714,
+              "to": 1714,
+              "label": "1714"
+            },
+            "era": "polity",
+            "statement": "Le nom Veterez viendrait d'un mot de la langue du pays qui voudrait dire « pêcheurs », parce que la pêche est la seule occupation de ce peuple, selon le père Godefroy Loyer.",
+            "hypothesisGroup": "origine du nom Vétéré",
+            "sources": [
+              {
+                "title": "Relation du voyage du royaume d'Issyny, Côte d'Or, païs de Guinée, en Afrique",
+                "author": "Godefroy Loyer",
+                "year": 1714,
+                "url": "https://archive.org/details/bub_gb_evFQU9g03goC",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 158",
+                "notes": "Paris, chez Arnoul Seneuze et Jean-Raoul Morel, 1714. Lu dans la numérisation de Google Livres sur Internet Archive. Page 158 : « d'où ils tirent leur nom de Veterez, qui en langue du pays veut dire pêcheurs ». Page lue sur l'image de la page."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1714,
+              "to": 1714,
+              "label": "1714"
+            },
+            "era": "polity",
+            "statement": "Le nom Veterez apparaît par écrit dans la relation du voyage du père Godefroy Loyer au royaume d'Issyny, publiée en 1714. Loyer décrit des gens qui vivent mêlés aux habitants d'Issyny, avec des cases bâties sur pilotis au milieu de la rivière. Éric Pete reconnaît dans les Veterez les Éotilé, comme Maurice Delafosse le fait pour les Vétéré des voyageurs. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Veterez",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Relation du voyage du royaume d'Issyny, Côte d'Or, païs de Guinée, en Afrique",
+                "author": "Godefroy Loyer",
+                "year": 1714,
+                "url": "https://archive.org/details/bub_gb_evFQU9g03goC",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 158",
+                "notes": "Paris, chez Arnoul Seneuze et Jean-Raoul Morel, 1714. Lu dans la numérisation de Google Livres sur Internet Archive. Page 158 : Loyer parle des « Veterez » et de leurs cases sur pilotis. Édition de 1714 ; Éric Pete cite l'édition de 1935, page 178. Page lue sur l'image de la page."
+              },
+              {
+                "title": "Aïzi et Éotilé : deux peuples lagunaires aux liens historiques anciens",
+                "author": "Éric Pete",
+                "year": 2025,
+                "url": "https://www.revue-akofena.com/wp-content/uploads/2025/01/07-ActColl-Eric-PETE_077-088.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 83",
+                "notes": "Akofena, hors-série no 10 (actes du 2e colloque sur les Bétibé), janvier 2025, p. 77-88. Lu le 13 octobre 2026. Page 83, note 2 : « Veterez = Vitré = Eotilé = Bétibé »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
