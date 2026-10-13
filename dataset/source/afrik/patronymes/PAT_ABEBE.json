@@ -100,5 +100,92 @@
       "fieldPath": "countries",
       "reason": "La source propre au nom n'a pas confirmé le pays où il est porté ; les recherches « Abebe » avec Ethiopia, Eritrea et les variantes de la fiche n'ont pas livré de registre officiel exploitable."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Abebe est un nom personnel éthiopien. Il sert de second nom aux enfants d'un homme qui le porte, sans devenir un nom de famille. On ne sait pas avec certitude quand il est écrit pour la première fois : le projet n'en connaît pas de trace ancienne. Nous présentons plus bas l'explication de son sens que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Abebe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel éthiopien, porté en second par les enfants d'un Abebe.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1996,
+              "to": 2025,
+              "label": "Décrit en 1996 et en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Abebe est un nom personnel éthiopien. En Éthiopie, une personne porte son propre nom suivi du nom personnel de son père, parfois de celui de son grand-père. Chez l'enfant d'un Abebe, Abebe est donc le nom du père, et il ne passe pas aux petits-enfants. Le site Behind the Name le range parmi les noms amhariques.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Names of Persons: National Usages for Entry in Catalogues",
+                "author": "IFLA Universal Bibliographic Control and International MARC Programme",
+                "year": 1996,
+                "url": "https://www.ifla.org/files/assets/cataloguing/pubs/names-of-persons_1996.pdf",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 64-65",
+                "notes": "Quatrième édition, Munich, K. G. Saur, 1996, lue dans le PDF de l'IFLA le 12 octobre 2026. La notice Éthiopie, p. 64-65, fournie par la bibliothèque de l'université d'Addis-Abeba et approuvée par la Bibliothèque et les Archives nationales en octobre 1994, compose le nom d'un nom personnel, suivi du nom personnel du père, parfois de celui du grand-père. Elle cite Wolde Mariam parmi les noms composés, W. Berhan pour Wolde Berhan parmi les abréviations, et l'abuna Lukas Tewolde parmi les exemples. Elle note que le Code civil de 1960 prescrit un nom de famille, usage qui ne s'est pas encore répandu."
+              },
+              {
+                "title": "Meaning, origin and history of the name Abebe — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/abebe",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice du site Behind the Name, lue le 13 octobre 2026. Elle écrit le nom አበበ, le dit masculin et amharique, le tire de አበባ (ʾababa), « flower », et donne Abeba comme forme féminine. Entrée ajoutée le 23 décembre 2025."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Proposé en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Abebe viendrait du mot amharique abäba, « fleur », selon le site Behind the Name et une notice d'Ancestry. Le dictionnaire du guèze de Wolf Leslau donne abäba, « fleur », comme mot amharique.",
+            "hypothesisGroup": "origine du nom Abebe",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Abebe — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/abebe",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice du site Behind the Name, lue le 13 octobre 2026. Elle écrit le nom አበበ, le dit masculin et amharique, le tire de አበባ (ʾababa), « flower », et donne Abeba comme forme féminine. Entrée ajoutée le 23 décembre 2025."
+              },
+              {
+                "title": "Abebe — nom de famille : sens et histoire familiale — Ancestry",
+                "author": "Ancestry",
+                "year": null,
+                "url": "https://www.ancestry.com/last-name-meaning/abebe?geo-lang=en",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice d'Ancestry lue le 13 octobre 2026 ; le site affiche une traduction française. Elle dit : nom éthiopien, probablement tiré du mot amharique abeba, « fleur », « florissant ». La page ne nomme pas l'ouvrage dont la notice est tirée."
+              },
+              {
+                "title": "Comparative Dictionary of Geʿez (Classical Ethiopic)",
+                "author": "Wolf Leslau",
+                "year": 1987,
+                "url": "https://archive.org/details/leslau-comparative-dictionary-of-geez-1987",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Wiesbaden, Otto Harrassowitz, 1987. Lu le 13 octobre 2026 dans une copie non officielle déposée sur Internet Archive par un particulier. Page 2, entrée ʾabāba, « perfume, sweet odor » : le mot guèze viendrait probablement du mot amharique abäba, « flower ». Le dictionnaire traite d'un nom commun, pas du nom de personne."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
