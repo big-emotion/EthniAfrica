@@ -116,5 +116,133 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Dirasha désigne un peuple du sud-ouest de l'Éthiopie et sa langue. Les Dirasha se nomment eux-mêmes Diraaŝ, selon le linguiste Richard Hayward. D'autres noms existent : Gidole et Gardulla. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Dirasha",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "gdl",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; sa plus ancienne trace connue, Diraaŝ, date de 1981.",
+        "periodLabel": "Écrit Diraaŝ dès 1981 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Dirasha désigne une langue du sud-ouest de l'Éthiopie et le peuple qui la parle. Le catalogue de langues Glottolog recense pour elle les formes Dhirasha, Diraasha, Dirayta, Gardula, Gardulla, Ghidole et Gidole. On ne sait pas avec certitude d'où vient le nom Dirasha.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog — Dirasha (dira1242)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/dira1242",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue, lue le 13 octobre 2026. Elle liste les noms de la langue sans les expliquer."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "1981"
+            },
+            "era": "modern",
+            "statement": "Le nom Dirasha apparaît sous une forme proche, Diraaŝ, chez le linguiste Richard Hayward, qui écrit en 1981 que le dirayta est parlé par un peuple qui se nomme lui-même Diraaŝ. Le titre de son article donne aussi Dirayta et Gidole. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Diraaŝ",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Nominal suffixes in Dirayta (Gidole)",
+                "author": "R. J. Hayward",
+                "year": 1981,
+                "url": "https://www.cambridge.org/core/journals/bulletin-of-the-school-of-oriental-and-african-studies/article/abs/nominal-suffixes-in-dirayta-gidole/69FED2989C36C5B7093A902FDB940BC0",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 126",
+                "notes": "Bulletin of the School of Oriental and African Studies, vol. 44, n° 1, 1981, p. 126-144. Seul l'extrait en ligne a été lu, le 13 octobre 2026. Extrait : « Dirayta (ɗiraytá) is an Eastern Cushitic language spoken by a people calling themselves Diraaŝ. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gidole",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la langue en Éthiopie, gidoliñña ; sa plus ancienne trace connue date de 1981.",
+        "periodLabel": "Écrit dès 1981 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "1981"
+            },
+            "era": "modern",
+            "statement": "Le nom Gidole figure entre parenthèses dans le titre de l'article du linguiste Richard Hayward sur les suffixes nominaux du dirayta, paru en 1981. L'extrait de l'article dit que la langue est connue en Éthiopie sous le nom de gidoliñña. Les sources que nous avons lues ne disent pas d'où vient ce nom. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Gidole",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Nominal suffixes in Dirayta (Gidole)",
+                "author": "R. J. Hayward",
+                "year": 1981,
+                "url": "https://www.cambridge.org/core/journals/bulletin-of-the-school-of-oriental-and-african-studies/article/abs/nominal-suffixes-in-dirayta-gidole/69FED2989C36C5B7093A902FDB940BC0",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 126",
+                "notes": "Bulletin of the School of Oriental and African Studies, vol. 44, n° 1, 1981, p. 126-144. Seul l'extrait en ligne a été lu, le 13 octobre 2026. Extrait : « the language is known in Ethiopia as Gidoliñña »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gardulla",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un pays que Bieber cite en 1920 ; les sources ne disent pas s'il est celui des Dirasha.",
+        "periodLabel": "Écrit dès 1920",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "polity",
+            "statement": "Le nom Gardulla apparaît chez l'ethnologue Friedrich Julius Bieber, qui écrit, dans son livre sur le Kafa, que les nobles du Kafa nouent leurs cheveux dans un foulard, comme le font les Ometo du pays Gardulla. Les sources que nous avons lues ne disent pas si ce pays est celui des Dirasha, même si le catalogue Glottolog range Gardulla parmi les noms de leur langue. C'est la plus ancienne trace de ce nom que le projet a lue.",
+            "formAsWritten": "Gardulla",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Kaffa : ein altkuschitisches Volkstum in Inner-Afrika, vol. I",
+                "author": "Friedrich Julius Bieber",
+                "year": 1920,
+                "url": "https://archive.org/details/kaffaeinaltkusch02bieb",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 291",
+                "notes": "Münster, Aschendorff, collection Anthropos, 1920. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, page vérifiée sur l'image. Passage : « wie die Ometo des Landes Gardulla »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

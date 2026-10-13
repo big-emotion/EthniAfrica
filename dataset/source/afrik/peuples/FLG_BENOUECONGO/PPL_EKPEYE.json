@@ -117,5 +117,65 @@
         "source_kind": "ngo"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ekpeye désigne un peuple du delta du Niger, dans l'État de Rivers, au Nigeria, et sa langue. On ne sait pas comment ce peuple se nomme lui-même, ni d'où vient le nom Ekpeye, ni quand il a été écrit pour la première fois : les sources que nous avons lues ne le disent pas.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Ekpeye",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple du delta du Niger et de sa langue ; on ne sait pas d'où il vient.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ekpeye est le nom de référence de cette langue dans la norme internationale ISO 639-3, sous le code ekp. On ne sait pas avec certitude quand il a été écrit pour la première fois, ni d'où il vient.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, Ekpeye [ekp]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/ekp",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Ekpeye désigne, chez l'historienne Izeoma Chinda, l'un des voisins des Ikwerre, avec les Ogba et les Abua. Elle écrit que les traditions ikwerre relient l'origine des Ekpeye à celle des Ogba et des Ikwerre, par un ancêtre appelé Akalaka, venu de l'empire du Bénin, mais elle ne dit pas d'où vient le nom Ekpeye.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Ikwerre Intergroup Relations and its Impact on Their Culture",
+                "author": "Izeoma C. Chinda",
+                "year": 2017,
+                "url": "https://www.ajol.info/index.php/afrrev/article/view/157119",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 90",
+                "notes": "AFRREV, revue internationale pluridisciplinaire, vol. 11, n° 2, série n° 46, avril 2017, p. 83-98. Lu dans le PDF de l'article sur African Journals Online le 13 octobre 2026 ; le numéro de page est imprimé en tête de chaque page."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -92,5 +92,66 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Museveni », « Banyankole », « l’Ouganda », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la source dédiée « President Museveni » et la page Forebears propre au nom, consultées directement, n’a établi aucune règle propre à Museveni permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Museveni est celui de Yoweri Kaguta Museveni, président de l'Ouganda depuis 1986, né en 1944 dans une famille d'éleveurs de l'Ankole. Selon la présidence ougandaise, son nom vient de soldats ougandais appelés « Abaseveni ». Les sources lues ne disent pas si ce nom existait avant lui, ni s'il se transmet comme nom de clan.",
+    "names": [
+      {
+        "nameText": "Museveni",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du président ougandais, qui viendrait de soldats appelés « Abaseveni », du septième régiment.",
+        "periodLabel": "Écrit dès 2023 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Page publiée en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Museveni viendrait du mot « Abaseveni », qui désigne des soldats ougandais du septième régiment des King's African Rifles, où l'on enrôla beaucoup d'Ougandais pendant la Seconde Guerre mondiale, selon la présidence de l'Ouganda. D'après cette page, Yoweri Kaguta Museveni, né en 1944, a reçu son nom de ces soldats.",
+            "hypothesisGroup": "origine-museveni",
+            "sources": [
+              {
+                "title": "The President - State House Uganda",
+                "author": "State House Uganda",
+                "year": 2023,
+                "url": "https://statehouse.go.ug/president",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section « Early Political Awareness »",
+                "notes": "Page de présentation du président sur le site de la présidence de l'Ouganda ; ses métadonnées la datent du 18 juillet 2023, avec une modification le 30 janvier 2025. Elle écrit : « Yoweri Kaguta Museveni was born in 1944 during the Second World War and his name was taken from the Abaseveni, who were Ugandan servicemen in the Seventh Regiment of the King’s African Rifles into which many Ugandans had been drafted. He was born in a peasant pastoralist family in Ankole ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Page publiée en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Museveni apparaît par écrit, sous cette forme, dans la page de présentation du président sur le site de la présidence de l'Ouganda, publiée en 2023. C'est la plus ancienne trace de ce nom que le projet a lue ; la page ne cite aucun document de l'époque.",
+            "formAsWritten": "Museveni",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The President - State House Uganda",
+                "author": "State House Uganda",
+                "year": 2023,
+                "url": "https://statehouse.go.ug/president",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section « Early Political Awareness »",
+                "notes": "Page de présentation du président sur le site de la présidence de l'Ouganda ; ses métadonnées la datent du 18 juillet 2023, avec une modification le 30 janvier 2025. Elle écrit : « Yoweri Kaguta Museveni was born in 1944 during the Second World War and his name was taken from the Abaseveni, who were Ugandan servicemen in the Seventh Regiment of the King’s African Rifles into which many Ugandans had been drafted. He was born in a peasant pastoralist family in Ankole ». Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

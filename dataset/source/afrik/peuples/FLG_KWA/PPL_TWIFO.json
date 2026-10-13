@@ -114,5 +114,241 @@
         "notes": "Première compilation systématique des proverbes akan (mmebusem), établie à partir des dialectes twi (asante, akuapem) et fante."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Twifo désigne un peuple akan du sud du Ghana, entre la Pra et l'Ofin, et le pays qu'il occupe. Il se nomme lui-même Twifo. Les sources européennes anciennes l'écrivent Kuyforo en 1668, Juffer en 1705 et Tufel en 1819 : c'est Christaller qui, en 1881, donne ces graphies comme celles de Twifo. On ne sait pas avec certitude d'où vient le nom ; le site de Twifoman le tire de Twi et de fo, « gens ». Nous présentons plus bas l'histoire de ces noms.",
+    "names": [
+      {
+        "nameText": "Twifo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne, écrit Twiforo par Christaller en 1881.",
+        "periodLabel": "Écrit depuis 1881 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "statement": "Le nom Twifo est écrit Twiforo en 1881 par le missionnaire Johann Gottlieb Christaller, qui le donne comme celui d'un pays du nord de Wasa et de la tribu tshi qui l'habite. Il ajoute que les Européens l'ont écrit « Juffer, Tufel ». C'est la plus ancienne trace de cette forme que le projet connaît ; des formes plus anciennes sont présentées plus bas.",
+            "formAsWritten": "Twiforo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Johann Gottlieb Christaller",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 530",
+                "notes": "Bâle, 1881, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. « Twiforo [F. Kwiforo] a country of the Gold Coast to the north of Wasa, and the Tshi tribe inhabiting it, written by Europ.: Juffer, Tufel &c. »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "colonial",
+            "statement": "Twifo désigne, dans l'appendice de Christaller sur la colonie de la Côte de l'Or, un pays entre Wasa, Asen et Adanse ; les habitants font partie des « vraies » tribus akan, et la capitale est Mampon. Christaller écrit « Twiforo » et donne aussi « Kwiforo, Tshuforo, Juffer, Tufel ». On ne sait pas avec certitude d'où vient le nom ; une explication est donnée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 637-638",
+                "notes": "Bâle, 1881, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. « 9. Twiforo (Kwiforo, Tshuforo, Juffer, Tufel), a country between Wasa, Asen & Adanse. The inhabitants belong to the genuine Akan tribes. Capital: Mampoñ »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Date inconnue"
+            },
+            "statement": "Twifo viendrait, selon le site de Twifoman, de la langue et de la culture de ce peuple : Twi serait la langue, un dialecte akan, et le suffixe fo voudrait dire « gens ». Le site écrit : « Their name, Twifo, comes from the language they speak and their culture and traditions ».",
+            "hypothesisGroup": "origine-twifo",
+            "sources": [
+              {
+                "title": "TWIFOMAN : History",
+                "author": "TWIFOMAN (auteur non indiqué)",
+                "year": null,
+                "url": "https://www.twifoman.com/history/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page « OUR HISTORY » du site de Twifoman, lu le 13 octobre 2026. Le texte n'est ni signé ni daté ; le pied de page porte « Copyright © 2026 ». « The word Twi is the language, which is an Akan dialect, and the suffix fo means people »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kuyforo",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une forme proche, écrite par Dapper en 1668 pour un royaume de la Côte de l'Or.",
+        "periodLabel": "Écrit depuis 1668",
+        "accounts": [
+          {
+            "period": {
+              "from": 1668,
+              "to": 1668,
+              "label": "1668"
+            },
+            "era": "polity",
+            "statement": "Le nom Kuyforo est écrit en 1668 par Olfert Dapper pour un royaume qui a Wassa à l'ouest, Abramboe au sud, Bonoe au nord et Akany à l'est : « Het Koningrijk van Kuyforo ». Dapper note que les Néerlandais y font peu de commerce : « Weinigh handel hebben d'onzen met deze volken ». C'est une forme proche de Twifo : nous la rattachons à Twifo parce que Christaller (1881) donne Kwiforo comme forme fante de Twiforo. Dapper ne le dit pas lui-même. C'est la plus ancienne trace de ce pays que le projet connaisse.",
+            "formAsWritten": "Kuyforo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Olfert Dapper",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Naukeurige beschrijvinge der Afrikaensche gewesten",
+                "author": "Olfert Dapper",
+                "year": 1668,
+                "url": "https://archive.org/details/gri_33125009359999",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 457-458",
+                "notes": "Description de l'Afrique en néerlandais, publiée à Amsterdam par Jacob van Meurs, lu le 13 octobre 2026 dans l'exemplaire numérisé ; numéro de page lu sur l'image. P. 457 : « Kui-foro » parmi les voisins de Wassa et « Kuyforo » parmi ceux d'Abramboe ; p. 458 : article « Het Koningrijk van Kuyforo »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Juffer",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie du marchand néerlandais Bosman, en 1705.",
+        "periodLabel": "Écrit en 1705",
+        "accounts": [
+          {
+            "period": {
+              "from": 1705,
+              "to": 1705,
+              "label": "1705"
+            },
+            "era": "polity",
+            "statement": "Le nom Juffer est écrit en 1705 par Willem Bosman, qui range ce pays parmi les trois pays soumis à Dinkira avec Wassa et Encasse : « viz. Wassa, Encasse and Juffer ». Christaller (1881) donne Juffer comme une graphie européenne de Twifo ; Bosman ne le dit pas lui-même. C'est une forme proche de Twifo.",
+            "formAsWritten": "Juffer",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Willem Bosman",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A New and Accurate Description of the Coast of Guinea, divided into the Gold, the Slave, and the Ivory Coasts",
+                "author": "Willem Bosman",
+                "year": 1705,
+                "url": "https://archive.org/details/newaccuratedescr00bosm",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 73",
+                "notes": "Traduction anglaise de 1705, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. « they have three Countries in subjection to them [...] viz. Wassa, Encasse and Juffer ; each of these borders upon one another, and the last upon Commany »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tufel",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie du voyageur Bowdich, en 1819.",
+        "periodLabel": "Écrit en 1819",
+        "accounts": [
+          {
+            "period": {
+              "from": 1819,
+              "to": 1819,
+              "label": "1819"
+            },
+            "era": "polity",
+            "statement": "Le nom Tufel est écrit en 1819 par le voyageur britannique Thomas Edward Bowdich : le roi asante Osei Tutu « subjected the Tufel country ». Christaller (1881) donne Tufel comme une graphie européenne de Twifo ; Bowdich ne le dit pas lui-même. C'est une forme proche de Twifo.",
+            "formAsWritten": "Tufel",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Thomas Edward Bowdich",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Mission from Cape Coast Castle to Ashantee",
+                "author": "Thomas Edward Bowdich",
+                "year": 1819,
+                "url": "https://archive.org/details/missionfromcapec00bowd",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 233",
+                "notes": "Londres, John Murray, 1819, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. Page 233 déduite du numéro 234 imprimé sur la page suivante."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tu a ankɔ",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du tabouret et du palais de Twifo, non celui du peuple.",
+        "periodLabel": "Date inconnue",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Date inconnue"
+            },
+            "statement": "Tu a ankɔ est, selon le site de Twifoman, le nom du tabouret et du palais de Twifo : tu voudrait dire « partir, migrer » et a ankɔ « n'est pas parti ». Ce serait la trace d'un groupe resté sur place quand les autres Aduana sont partis. Le site ne présente pas ce nom comme celui du peuple.",
+            "sources": [
+              {
+                "title": "TWIFOMAN : History",
+                "author": "TWIFOMAN (auteur non indiqué)",
+                "year": null,
+                "url": "https://www.twifoman.com/history/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page « OUR HISTORY » du site de Twifoman, lu le 13 octobre 2026. « That is why the Twifo stool and Palace is called the tu a ankɔ stool ». Le site traduit « did not migrate »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

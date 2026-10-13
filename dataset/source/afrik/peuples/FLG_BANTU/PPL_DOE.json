@@ -100,5 +100,98 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Doe désigne un peuple de la côte de Tanzanie et la langue qu'il parle. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Les voyageurs du XIXe siècle écrivent Wadoe. On ne sait pas avec certitude d'où vient le nom Doe ; ce que disent les sources est présenté plus bas.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Doe",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple de la côte de Tanzanie, écrit Wadoe depuis 1852 ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit Wadoe dès 1852 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Doe est le nom de la langue dans la norme ISO 639-3, sous le code doe. Maho la range, dans sa liste de 2009, sous le code G301. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, Doe [doe]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/doe",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 13 octobre 2026."
+              },
+              {
+                "title": "New Updated Guthrie List Online (NUGL Online), version du 4 juin 2009",
+                "author": "Jouni Filip Maho",
+                "year": 2009,
+                "url": "https://web.archive.org/web/20180203191542/http://goto.glocalnet.net/mahopapers/nuglonline.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 48",
+                "notes": "Liste de classification des langues bantoues, lue le 13 octobre 2026 dans la copie du 3 février 2018 conservée par la Wayback Machine. Entrée G301, « Doe doe »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1860,
+              "label": "Voyage de 1857-1859, livre de 1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Wadoe désigne chez l'explorateur Richard Burton une tribu dont l'habitat se trouve, dit-il, entre les gens de Saadani, sur le littoral, et les Wak'hwere, près de K'hutu, à l'ouest ; ces derniers sont sans doute les Kwere ; il la dit jadis puissante, puis affaiblie par les Wakamba et par les Wazegura. Burton écrit aussi qu'en 1857 la famine fit fuir beaucoup de Wadoe vers le sud. Il reprend à leur sujet des récits de cannibalisme, que nous rapportons comme des rumeurs de l'époque.",
+            "formAsWritten": "Wadoe",
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa: a Picture of Exploration",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://archive.org/details/lakeregionsCent00Burt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 98",
+                "notes": "Lu dans la numérisation d'Internet Archive le 13 octobre 2026, tome 1 ; la page a été vérifiée sur l'image. Tome 1. Burton place l'habitat des Wadoe entre les Watondwe de Saadani et les Wak'hwere de K'hutu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1852,
+              "to": 1860,
+              "label": "Voyage de 1852, récit publié en 1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Doe apparaît par écrit sous la forme Wadoe dans le récit du missionnaire Johann Ludwig Krapf, qui note en Usambara, en mars 1852, ce qu'on lui dit des « tribus Wadoe » : elles vivraient au sud du pays des Wasegua et auraient jadis dominé tout le pays au sud de la rivière Pangani. Krapf tient ces récits de tiers et y mêle des accusations de cannibalisme, que nous rapportons comme des rumeurs. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Wadoe",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels, Researches, and Missionary Labours during an Eighteen Years' Residence in Eastern Africa",
+                "author": "Johann Ludwig Krapf",
+                "year": 1860,
+                "url": "https://archive.org/details/travelsresearch00ravegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 392",
+                "notes": "Londres, Trübner. Lu dans la numérisation d'Internet Archive le 13 octobre 2026, dans la pagination de cette édition ; la page a été vérifiée sur l'image. Chapitre « Second journey to Usambara ». Krapf passe en Usambara du 10 février au 11 avril 1852."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

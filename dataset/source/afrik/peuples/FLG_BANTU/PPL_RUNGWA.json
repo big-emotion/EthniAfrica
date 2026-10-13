@@ -135,5 +135,106 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Rungwa désigne un peuple de la région de Rukwa et de Katavi, dans l'ouest de la Tanzanie, et la langue qu'il parle. On ne sait pas comment ce peuple se nomme lui-même : les sources que nous avons lues ne le disent pas. On ne connaît pas non plus la plus ancienne trace du nom ni son origine ; nous présentons plus bas ce que les sources en disent.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Rungwa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "rnw",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple et de sa langue dans les catalogues ; on ne connaît ni sa plus ancienne trace ni son origine.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Rungwa est le nom de référence de la langue de ce peuple dans la norme internationale ISO 639-3, sous le code rnw. Le catalogue Glottolog relève aussi Icilungwa, Ichirungwa, Lungwa et Runga. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, code rnw : Rungwa",
+                "author": "SIL International",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/rnw",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 13 octobre 2026."
+              },
+              {
+                "title": "Glottolog 5.3 — Rungwa (rung1255)",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/rung1255",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues de l'Institut Max-Planck, consulté le 13 octobre 2026. Noms relevés : Ichirungwa, Icilungwa, Lungwa, Runga, Rungwa ; pays : Tanzanie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "Publié en 2009"
+            },
+            "era": "modern",
+            "statement": "Le nom Rungwa désigne chez l'historien Tony Waters l'un des groupes de langue de la région de Rukwa, avec les Fipa et les Pimbwe. Pour lui, ce groupe vient de la Zambie, comme les Fipa. Il renvoie à deux autres études, de Willis (1981) et de Walsh et Swilla (2001), que le projet n'a pas lues.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Social Organization and Social Status in Nineteenth and Twentieth Century Rukwa, Tanzania",
+                "author": "Tony Waters",
+                "year": 2009,
+                "url": "https://asq.africa.ufl.edu/wp-content/uploads/sites/168/Waters-V11Is1.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 61 et note 17",
+                "notes": "Passage « Traditional Tribal and Linguistic Divisions of Rukwa » et note 17. African Studies Quarterly, vol. 11, no 1, automne 2009 ; lu dans le PDF le 13 octobre 2026. Page lue sur le numéro imprimé en en-tête."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Icilungwa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "rnw",
+        "namedBy": null,
+        "shortLine": "Une forme du nom que le catalogue Glottolog relève pour la langue rungwa, avec Ichirungwa et Lungwa.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Icilungwa est l'une des formes que le catalogue Glottolog relève pour la langue rungwa, avec Ichirungwa, Lungwa et Runga. Le catalogue ne dit pas qui emploie chacune de ces formes.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Rungwa (rung1255)",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/rung1255",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues de l'Institut Max-Planck, consulté le 13 octobre 2026. Noms relevés : Ichirungwa, Icilungwa, Lungwa, Runga, Rungwa ; pays : Tanzanie."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

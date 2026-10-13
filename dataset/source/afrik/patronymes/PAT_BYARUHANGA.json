@@ -88,5 +88,65 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Byaruhanga », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la lecture de « UPDF Bids Farewell To Brig Gen Winston Byaruhanga » n'ont établi aucune règle propre à Byaruhanga permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Byaruhanga est un nom que l'on trouve en Ouganda, par exemple dans le district de Ntungamo, dans le sud-ouest du pays. Les sources lues ne disent ni ce qu'il veut dire, ni à quel peuple ou clan il appartient : on ne sait pas avec certitude d'où il vient.",
+    "names": [
+      {
+        "nameText": "Byaruhanga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom porté en Ouganda ; les sources lues n'en donnent ni le sens ni l'origine.",
+        "periodLabel": "Écrit dès 1949 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2026,
+              "to": 2026,
+              "label": "Décrit en 2026"
+            },
+            "era": "modern",
+            "statement": "Le nom Byaruhanga est porté en Ouganda aujourd'hui : l'armée ougandaise annonce en 2026 la mort d'un général de brigade, Winston Byaruhanga, inhumé dans le district de Ntungamo. On ne sait pas avec certitude ce que le nom veut dire ni à quel peuple ou clan il appartient : l'avis ne le dit pas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "UPDF Bids Farewell To Brig Gen Winston Byaruhanga",
+                "author": "Uganda Peoples' Defence Forces",
+                "year": 2026,
+                "url": "https://www.updf.go.ug/obituary/updf-bids-farewell-to-brig-gen-winston-byaruhanga/",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Avis funéraire des Forces de défense du peuple ougandais, daté du 29 mai 2026. Lu le 13 octobre 2026. Il annonce la mort du général de brigade Winston Byaruhanga en Inde et son inhumation dans sa maison familiale de Rukoni, dans le district de Ntungamo. Il ne dit ni ce que le nom veut dire, ni à quel peuple ou clan il appartient."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1949,
+              "to": 1950,
+              "label": "Article de 1949, cité en avril 1950"
+            },
+            "era": "colonial",
+            "statement": "Le nom Byaruhanga apparaît par écrit dans la bibliographie que publie la revue Africa en avril 1950 : l'article « The Bamba: A tribe akin to Pygmies », signé D. B. Byaruhanga, a paru dans la revue Makerere en 1949. C'est la plus ancienne trace de ce nom que le projet connaît ; elle est de seconde main, puisque l'article n'a pas été lu, et le nom existait avant elle.",
+            "formAsWritten": "Byaruhanga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Africa: Journal of the International African Institute, vol. XX, n° 2, avril 1950 : Bibliography of current literature dealing with African languages and cultures",
+                "author": "International African Institute",
+                "year": 1950,
+                "url": "https://archive.org/details/africajournalofiv20n2unse",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 167",
+                "notes": "Édimbourg, University Press ; réimpression de 1963 numérisée sur archive.org, lue le 13 octobre 2026, page vue en image. Page 167, rubrique « Anthropology and Sociology » : « Byaruhanga, D. B. The Bamba: A tribe akin to Pygmies. Makerere, 3, 3, Sept.–Nov. 1949, 12–13 ». Le projet n'a pas lu l'article lui-même."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

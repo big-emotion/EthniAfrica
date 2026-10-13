@@ -122,5 +122,156 @@
         "source_kind": "ngo"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kunama désigne un peuple d'Érythrée et du nord de l'Éthiopie, qui se nomme lui-même Kunama. Ses voisins l'ont aussi appelé Baza. Les sources ne s'accordent pas sur l'origine du nom Kunama ; nous présentons plus bas ce qu'elles disent.",
+    "names": [
+      {
+        "nameText": "Kunama",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kun",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; sa plus ancienne trace lue date de 1864, une plus ancienne est rapportée.",
+        "periodLabel": "Écrit Kunáma dès 1864 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Kunama viendrait de Kuname, l'épouse d'un roi appelé Baden ou Bazen, dont de nombreux Kunama disent descendre, selon une tradition orale que rapportent les missionnaires comboniens.",
+            "hypothesisGroup": "kunama-origine",
+            "sources": [
+              {
+                "title": "A Journey through the Kunama Culture",
+                "author": "Comboni Missionaries' Team (Ayana F. Makda)",
+                "year": 2023,
+                "url": "https://combonimissionaries.co.uk/index.php/2023/07/05/8963/",
+                "tier": "unverified",
+                "source_kind": "ngo",
+                "notes": "Page des missionnaires comboniens (Royaume-Uni), datée du 5 juillet 2023. Lu le 13 octobre 2026. La page attribue le récit de Baden et de Kuname à la tradition orale sans nommer de porteur, et ne cite aucune source pour le voyageur arabe de 872."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1864,
+              "to": 1864,
+              "label": "1864"
+            },
+            "statement": "Le nom Kunama désigne chez Werner Munzinger la langue et le peuple des Bazen ou Kunáma. Il dit cette langue isolée : elle a peu de mots en commun avec celle des Barea voisins. Il la situe entre le Shiré et le Wolkait abyssins au sud, le Mareb à l'est et l'Atbara à l'ouest. On ne sait pas avec certitude d'où vient le nom Kunama ; l'explication que nous avons trouvée est présentée à part.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ostafrikanische Studien",
+                "author": "Werner Munzinger",
+                "year": 1864,
+                "url": "https://archive.org/details/ostafrikanisches00munz",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 78",
+                "notes": "Schaffhausen, Fr. Hurter, 1864, introduction. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, page vérifiée sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 900,
+              "to": 999,
+              "label": "Xe siècle"
+            },
+            "statement": "Le nom Kunama figurerait chez le géographe arabe Ibn Hawqal, qui dirait que les Kunama vivaient dans la vallée de la Barka, en Érythrée, selon les missionnaires comboniens. Nous n'avons pas pu lire Ibn Hawqal : les sources ne disent pas si ses Kunama sont ceux d'aujourd'hui.",
+            "sources": [
+              {
+                "title": "A Journey through the Kunama Culture",
+                "author": "Comboni Missionaries' Team (Ayana F. Makda)",
+                "year": 2023,
+                "url": "https://combonimissionaries.co.uk/index.php/2023/07/05/8963/",
+                "tier": "unverified",
+                "source_kind": "ngo",
+                "notes": "Page des missionnaires comboniens (Royaume-Uni), datée du 5 juillet 2023. Lu le 13 octobre 2026. La page attribue le récit de Baden et de Kuname à la tradition orale sans nommer de porteur, et ne cite aucune source pour le voyageur arabe de 872."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 872,
+              "to": 872,
+              "label": "872"
+            },
+            "statement": "Le nom Cunama figurerait chez un voyageur arabe venu à Alwa en 872, qui cite les tribus Barya et Cunama sur les bords du royaume d'Alwa, selon les missionnaires comboniens. Ils ne nomment pas ce voyageur et nous n'avons pas pu lire son texte : les sources ne disent pas si ses Cunama sont les Kunama d'aujourd'hui.",
+            "sources": [
+              {
+                "title": "A Journey through the Kunama Culture",
+                "author": "Comboni Missionaries' Team (Ayana F. Makda)",
+                "year": 2023,
+                "url": "https://combonimissionaries.co.uk/index.php/2023/07/05/8963/",
+                "tier": "unverified",
+                "source_kind": "ngo",
+                "notes": "Page des missionnaires comboniens (Royaume-Uni), datée du 5 juillet 2023. Lu le 13 octobre 2026. La page attribue le récit de Baden et de Kuname à la tradition orale sans nommer de porteur, et ne cite aucune source pour le voyageur arabe de 872."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1864,
+              "to": 1864,
+              "label": "1864"
+            },
+            "statement": "Le nom Kunama apparaît par écrit, sous la forme Kunáma, chez le voyageur suisse Werner Munzinger, qui écrit que le nom propre du peuple est Kunáma. Il ajoute que les Abyssins prennent les Kunama pour les anciens Axoumites et que les Kunama disent eux-mêmes être venus d'Abyssinie. C'est la plus ancienne trace de ce nom que le projet a lue. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Kunáma",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Ostafrikanische Studien",
+                "author": "Werner Munzinger",
+                "year": 1864,
+                "url": "https://archive.org/details/ostafrikanisches00munz",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 452",
+                "notes": "Schaffhausen, Fr. Hurter, 1864, chapitre « Reise durch das Land der Kunama ». Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, page vérifiée sur l'image. "
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Baza",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les voisins des Kunama",
+        "shortLine": "Le nom que les voisins des Kunama leur donnent, écrit aussi Bazen ; sa plus ancienne trace lue date de 1864.",
+        "periodLabel": "Écrit dès 1864",
+        "accounts": [
+          {
+            "period": {
+              "from": 1864,
+              "to": 1864,
+              "label": "1864"
+            },
+            "statement": "Le nom Baza, ou Bazen, apparaît par écrit chez Werner Munzinger, qui écrit que les voisins des Kunama les appellent ainsi. Il nomme leur pays Bazenland. C'est la plus ancienne trace de ce nom que le projet a lue. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Baza",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Ostafrikanische Studien",
+                "author": "Werner Munzinger",
+                "year": 1864,
+                "url": "https://archive.org/details/ostafrikanisches00munz",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 452",
+                "notes": "Schaffhausen, Fr. Hurter, 1864, chapitre « Reise durch das Land der Kunama ». Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, page vérifiée sur l'image. Le pays est nommé « Bazenlandes » à la dernière ligne de la même page."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

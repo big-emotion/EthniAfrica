@@ -96,5 +96,132 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Vidunda désigne un petit peuple des montagnes du district de Kilosa, dans la région de Morogoro, en Tanzanie, et sa langue, le chividunda. Ce peuple se nomme lui-même Vidunda, et sa langue Chividunda. D'autres noms existent : Ndunda, que le catalogue Glottolog relève pour la langue. On ne sait pas avec certitude d'où vient le nom Vidunda ; nous présentons plus bas ses traces.",
+    "names": [
+      {
+        "nameText": "Vidunda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "vid",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple, qui se dit vidunda au recensement de 1967 ; sa langue se nomme Chividunda.",
+        "periodLabel": "Écrit depuis 1967 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2007,
+              "to": 2007,
+              "label": "Publié en 2007"
+            },
+            "era": "modern",
+            "statement": "Le nom Vidunda désigne, chez le linguiste Karsten Legère, un petit groupe ethnique du Vidunda Ward, dans le district de Kilosa. Au recensement de 1967, le dernier à compter les ethnies, 19 585 personnes se disent membres du groupe vidunda. Le recensement de 2002 compte 9 794 habitants dans ce secteur.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Legere, K. – Vidunda (G38) as an Endangered Language?, ACAL 37, 2007",
+                "author": "Karsten Legère",
+                "year": 2007,
+                "url": "http://www.lingref.com/cpp/acal/37/paper1594.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 44 et p. 45",
+                "notes": "Section 3, « The research area ». Selected Proceedings of the 37th Annual Conference on African Linguistics, Cascadilla Proceedings Project, 2007 ; lu dans le PDF le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1967,
+              "to": 1967,
+              "label": "1967"
+            },
+            "era": "modern",
+            "birth": true,
+            "statement": "Le nom Vidunda apparaît au recensement de Tanzanie de 1967, le dernier à noter l'ethnie : 19 585 personnes s'y déclarent membres du groupe vidunda, selon le linguiste Karsten Legère. Le projet n'a pas lu le recensement lui-même. Legère signale aussi que Last a publié en 1885 un court vocabulaire de cette langue, mais il n'en donne pas le nom ; le projet n'a pas pu lire ce livre. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Vidunda",
+            "sources": [
+              {
+                "title": "Legere, K. – Vidunda (G38) as an Endangered Language?, ACAL 37, 2007",
+                "author": "Karsten Legère",
+                "year": 2007,
+                "url": "http://www.lingref.com/cpp/acal/37/paper1594.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 44 et p. 45, note 11",
+                "notes": "Le recensement est cité par Legère comme Tanzania 1971. La note 11 est celle sur Last (1885), Polyglotta Africana Orientalis, que le projet n'a pas trouvé en ligne. Selected Proceedings of the 37th Annual Conference on African Linguistics, Cascadilla Proceedings Project, 2007 ; lu dans le PDF le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Chividunda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "vid",
+        "namedBy": null,
+        "shortLine": "Le nom que cette langue porte dans la langue elle-même ; Legère le donne comme nom d'origine de la langue.",
+        "periodLabel": "Écrit depuis 2007 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2007,
+              "to": 2007,
+              "label": "Publié en 2007"
+            },
+            "era": "modern",
+            "birth": true,
+            "statement": "Le nom Chividunda apparaît dans l'article du linguiste Karsten Legère, publié en 2007, comme le nom que la langue vidunda porte dans cette langue. La langue est classée G38 dans la classification de Guthrie. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "formAsWritten": "Chividunda",
+            "sources": [
+              {
+                "title": "Legere, K. – Vidunda (G38) as an Endangered Language?, ACAL 37, 2007",
+                "author": "Karsten Legère",
+                "year": 2007,
+                "url": "http://www.lingref.com/cpp/acal/37/paper1594.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 44",
+                "notes": "Section 3, « The research area » : « autonym “Chividunda”, G38 in referential classification, Guthrie 1970 ». Selected Proceedings of the 37th Annual Conference on African Linguistics, Cascadilla Proceedings Project, 2007 ; lu dans le PDF le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ndunda",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un autre nom de la langue que le catalogue Glottolog relève ; on ne sait pas qui l'emploie.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndunda figure parmi les noms que le catalogue Glottolog relève pour la langue vidunda, avec Chividunda et Kividunda. Le catalogue ne dit pas qui l'emploie ni d'où il vient.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Vidunda (vidu1238)",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/vidu1238",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues de l'Institut Max-Planck, consulté le 13 octobre 2026. Noms relevés : Chividunda, Kividunda, Ndunda, Vidunda ; pays : Tanzanie."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -75,5 +75,87 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Chissano est un nom de famille du Mozambique. On ne sait pas avec certitude d'où il vient ni ce qu'il veut dire : les sources consultées ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Chissano",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille du Mozambique, dont les sources consultées n'expliquent pas l'origine.",
+        "periodLabel": "Écrit dès 1972",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Chissano est un nom de famille du Mozambique. Les sources consultées ne disent ni d'où il vient ni ce qu'il veut dire. On ne sait pas avec certitude.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Diário de Lisboa 1974-09-20: ano 54, n.º 18567",
+                "author": "Diário de Lisboa",
+                "year": 1974,
+                "url": "https://archive.org/details/cc_dl_06820.170.26888",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 1",
+                "notes": "Quotidien de Lisbonne, numérisé par la Casa Comum de la Fondation Mário Soares et Maria Barroso et lu sur la copie d'archive.org. Page 1, dépêche de Lourenço Marques datée du 20 septembre : le gouvernement de transition du Mozambique a pris ses fonctions le matin même. Elle nomme le premier ministre, « Joaquim Chissano ». Elle ne dit rien de l'origine du nom. Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1974,
+              "to": 1974,
+              "label": "20 septembre 1974"
+            },
+            "era": "colonial",
+            "statement": "Le nom Chissano est celui du premier ministre du gouvernement de transition du Mozambique, qui prend ses fonctions à Lourenço Marques le 20 septembre 1974, selon le Diário de Lisboa.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Diário de Lisboa 1974-09-20: ano 54, n.º 18567",
+                "author": "Diário de Lisboa",
+                "year": 1974,
+                "url": "https://archive.org/details/cc_dl_06820.170.26888",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 1",
+                "notes": "Quotidien de Lisbonne, numérisé par la Casa Comum de la Fondation Mário Soares et Maria Barroso et lu sur la copie d'archive.org. Page 1, dépêche de Lourenço Marques datée du 20 septembre : le gouvernement de transition du Mozambique a pris ses fonctions le matin même. Elle nomme le premier ministre, « Joaquim Chissano ». Elle ne dit rien de l'origine du nom. Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1972,
+              "to": 1972,
+              "label": "18 juillet 1972"
+            },
+            "era": "colonial",
+            "statement": "Le nom Chissano apparaît par écrit dans le Diário de Lisboa du 18 juillet 1972. Un ancien membre du Frelimo, interrogé par le journal, y cite Joaquim Chissano parmi les dirigeants du mouvement. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un journal l'a écrit, pas depuis quand des familles le portent.",
+            "formAsWritten": "Chissano",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Diário de Lisboa 1972-07-18: ano 52, n.º 17805",
+                "author": "Diário de Lisboa",
+                "year": 1972,
+                "url": "https://archive.org/details/cc_dl_06814.164.26059",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 2",
+                "notes": "Quotidien de Lisbonne, numérisé par la Casa Comum de la Fondation Mário Soares et Maria Barroso et lu sur la copie d'archive.org. Page 2, article « Situação confusa e tumultuosa na Frelimo » : le journal publie l'entretien d'un étudiant, ancien membre du Frelimo, avec un ancien dirigeant du mouvement. Le nom de « Joaquim Chissano » y figure dans les propos rapportés de l'interrogé. Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

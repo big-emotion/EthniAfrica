@@ -113,5 +113,155 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Xamir désigne le peuple agaw du Lasta et du Wag, dans le nord de l'Éthiopie. Il se nomme lui-même Xamir ; on l'écrit aussi Kamir ou Khamir. Sa langue s'appelle le xamtanga. On ne sait pas avec certitude d'où vient le nom Xamir ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Xamir",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "xan",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; sa plus ancienne trace connue, Hhámara, date de 1846.",
+        "periodLabel": "Écrit Hhámara dès 1846 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1883,
+              "to": 1883,
+              "label": "1883"
+            },
+            "era": "polity",
+            "statement": "Le nom Xamir, que le linguiste Leo Reinisch écrit Chamir, est celui que se donnent les Agaw du Lasta et du Wag. Leur langue s'appelle yamir gab, ou simplement yamir. Reinisch dit que le sens de la racine yam lui est inconnu. Il ne sait pas non plus d'où vient le nom Agau, que les Amhara et les Tigray donnent à toutes les tribus agaw.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Die Chamirsprache in Abessinien. I.",
+                "author": "Leo Reinisch",
+                "year": 1884,
+                "url": "https://archive.org/details/diechamirsprache00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 4-5 [574-575]",
+                "notes": "Wien, Carl Gerold's Sohn, 1884, tiré à part des Sitzungsberichte de l'Académie des sciences de Vienne (vol. 105, 1883). Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, pages vérifiées sur l'image. Reinisch a recueilli ces informations en 1875 à Massaoua, auprès d'un jeune Agaw de Soqota."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1846,
+              "to": 1846,
+              "label": "1846"
+            },
+            "era": "polity",
+            "statement": "Le nom Xamir apparaît sous une forme proche, Hhámara, chez le voyageur britannique Charles Beke, qui écrit que le Hhámara se parle chez les Agaw du Waag, la partie nord du Lasta. Nous n'avons pas lu Beke ; le linguiste Leo Reinisch le cite en 1883. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Hhámara",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Die Chamirsprache in Abessinien. I.",
+                "author": "Leo Reinisch",
+                "year": 1884,
+                "url": "https://archive.org/details/diechamirsprache00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5 [575], note 1",
+                "notes": "Wien, Carl Gerold's Sohn, 1884, tiré à part des Sitzungsberichte de l'Académie des sciences de Vienne (vol. 105, 1883). Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, pages vérifiées sur l'image. Reinisch cite Beke, Proceedings of the Philological Society, vol. 7, Londres, 1846, p. 90. Beke n'a pas été lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Xamtanga",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "xan",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue des Xamir ; sa plus ancienne trace connue, Kamtönga, date de 1841.",
+        "periodLabel": "Écrit Kamtönga dès 1841 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1841,
+              "to": 1841,
+              "label": "1841"
+            },
+            "era": "polity",
+            "statement": "Le nom Xamtanga viendrait de Kamtiga, « langue de Kam » : dans l'agaw de Damot, tiga voudrait dire « langue », selon Antoine d'Abbadie, que cite le linguiste Leo Reinisch. Reinisch n'a jamais entendu cette forme lui-même, mais il n'a aucune raison de douter de d'Abbadie.",
+            "hypothesisGroup": "xamtanga-origine",
+            "sources": [
+              {
+                "title": "Die Chamirsprache in Abessinien. I.",
+                "author": "Leo Reinisch",
+                "year": 1884,
+                "url": "https://archive.org/details/diechamirsprache00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5 [575], notes 2 et 3",
+                "notes": "Wien, Carl Gerold's Sohn, 1884, tiré à part des Sitzungsberichte de l'Académie des sciences de Vienne (vol. 105, 1883). Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, pages vérifiées sur l'image. Reinisch cite d'Abbadie, Journal asiatique, 1841, vol. 11, p. 388, et Actes de la Société philologique, vol. 1, p. 67. D'Abbadie n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1841,
+              "to": 1841,
+              "label": "1841"
+            },
+            "era": "polity",
+            "statement": "Le nom Xamtanga apparaît sous une forme proche, Kamtönga, chez Antoine d'Abbadie, qui l'emploie pour la langue des Agaw, selon le linguiste Leo Reinisch. Nous n'avons pas lu d'Abbadie. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Kamtönga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Die Chamirsprache in Abessinien. I.",
+                "author": "Leo Reinisch",
+                "year": 1884,
+                "url": "https://archive.org/details/diechamirsprache00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5 [575], note 2",
+                "notes": "Wien, Carl Gerold's Sohn, 1884, tiré à part des Sitzungsberichte de l'Académie des sciences de Vienne (vol. 105, 1883). Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, pages vérifiées sur l'image. Reinisch cite d'Abbadie, Journal asiatique, 1841, vol. 11, p. 388. D'Abbadie n'a pas été lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kamir",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "xan",
+        "namedBy": null,
+        "shortLine": "Une autre écriture de Xamir, que recensent les catalogues de langues.",
+        "periodLabel": "En usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kamir est l'une des formes que le catalogue de langues Glottolog recense pour le xamtanga, avec Khamir, Xamir, Khamta, Xamta, Khamtanga, Simt'anga et Agawinya. Nous ne savons pas d'où viennent ces formes ni quand elles ont été écrites pour la première fois.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog — Xamtanga (xamt1239)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/xamt1239",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue, lue le 13 octobre 2026. Elle liste les noms de la langue sans les expliquer."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

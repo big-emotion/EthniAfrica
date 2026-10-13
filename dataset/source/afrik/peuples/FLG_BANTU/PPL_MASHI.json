@@ -74,7 +74,11 @@
           "population": 5900,
           "note": "Provinces de Cuando Cubango (Rivungu, Siumi, Mavinga)"
         },
-        { "country": "NAM", "population": 400, "note": "Region du Caprivi" }
+        {
+          "country": "NAM",
+          "population": 400,
+          "note": "Region du Caprivi"
+        }
       ]
     },
     "sources": [
@@ -111,6 +115,85 @@
         "url": "https://ceds.ed.gov/iso639-3LanguageCodev7.aspx",
         "tier": "official",
         "source_kind": "government"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Mashi désigne un peuple de l'ouest de la Zambie et du sud-est de l'Angola, et la langue qu'il parle. Ce peuple se nomme lui-même Kwamashi, selon sa propre communauté. Le nom Masi est une autre écriture de Mashi. On ne sait pas avec certitude d'où vient le nom Mashi ; les sources que nous avons lues ne le disent pas.",
+    "names": [
+      {
+        "nameText": "Kwamashi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que la communauté mashi donne à son peuple, installé au bord du Kuandu, en Zambie et en Angola.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kwamashi est celui que la communauté mashi emploie pour son peuple, sur le site de la traduction du Nouveau Testament en mashi. Elle y dit que les Kwamashi vivent dans le district de Shang'ombo, en Zambie, et dans le sud de l'Angola, et que leurs chefs les ont conduits au pays Mashi. On ne sait pas avec certitude ce que veut dire ce nom, ni d'où il vient.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "About The Kwamashi People – mashibible.com",
+                "author": "Communauté kwamashi (site de la traduction du Nouveau Testament en mashi)",
+                "year": null,
+                "url": "https://mashibible.com",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page d'accueil du site de la communauté kwamashi, non datée, lue le 13 octobre 2026. Elle parle du peuple kwamashi et de sa langue mashi ; elle ne dit pas ce que veut dire le nom."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mashi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la langue et du peuple chez les linguistes, aussi écrit Masi ; son origine est inconnue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mashi est le nom de la langue dans la norme ISO 639-3, avec la précision « Zambia », sous le code mho. Maho la range, dans sa liste de 2009, sous le code K34, avec la variante Masi et le kwandu. On ne sait pas avec certitude quand ce nom a été écrit pour la première fois, ni d'où il vient.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, Mashi (Zambia) [mho]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/mho",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 13 octobre 2026."
+              },
+              {
+                "title": "New Updated Guthrie List Online (NUGL Online), version du 4 juin 2009",
+                "author": "Jouni Filip Maho",
+                "year": 2009,
+                "url": "https://web.archive.org/web/20180203191542/http://goto.glocalnet.net/mahopapers/nuglonline.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 65",
+                "notes": "Liste de classification des langues bantoues, lue le 13 octobre 2026 dans la copie du 3 février 2018 conservée par la Wayback Machine. Entrée K34, « Mashi mho, Masi, incl. Kwandu »."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

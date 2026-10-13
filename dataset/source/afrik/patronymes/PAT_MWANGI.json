@@ -78,5 +78,139 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web et bibliographique combinant « Mwangi », « Kikuyu », « le Kenya », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a pas établi de lignée homonyme d’origine distincte documentable ; la diffusion dans plusieurs pays ne suffit pas à créer un homonyme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mwangi est un nom de personne du Kenya, que l'on trouve chez les Kikuyu et chez les Kamba. C'est aussi, chez les Kikuyu, le nom d'une génération qui alterne avec Maina : le fils d'un Maina s'appelle Mwangi, écrit C. Dundas en 1915. On ne sait pas avec certitude ce que le nom veut dire ; les sources lues ne lui donnent pas de sens.",
+    "names": [
+      {
+        "nameText": "Mwangi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kik",
+        "namedBy": null,
+        "shortLine": "Un nom de personne kikuyu et kamba, aussi nom de génération kikuyu ; son sens reste inconnu.",
+        "periodLabel": "Écrit dès 1910",
+        "accounts": [
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "Décrit en 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Mwangi suit la règle kikuyu des noms, que décrivent Nobuko et Peter S. Nganga sans le citer : Les Kikuyu n'ont pas de nom de famille fixe : le dernier nom d'une personne est le nom personnel de son père, et le nom personnel d'un enfant reprend celui d'un de ses grands-parents.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ケニア・キクユ族の親族制度と子どものネーミング・ルール (The Kinship System and Rule for Naming Children in Kikuyu People of Kenya)",
+                "author": "Nobuko Nganga et Peter S. Nganga",
+                "year": 2013,
+                "url": "https://nagasaki-u.repo.nii.ac.jp/record/7484/files/shakaikagaku75_25.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 25, 27-28",
+                "notes": "Article en japonais, revue de la faculté d'éducation de l'université de Nagasaki, n° 75, 2013, p. 25-33. Lu le 13 octobre 2026 dans le dépôt de l'université. Page 25 : les Kikuyu n'ont pas de nom de famille fixe d'une génération à l'autre ; le dernier nom est le nom personnel du père. Pages 27-28 : le nom personnel de l'enfant reprend celui d'un grand-parent ; pour une femme, le dernier nom devient, au mariage, le nom personnel du père de son mari. L'article ne cite pas ce nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1915,
+              "to": 1915,
+              "label": "Décrit en 1915"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mwangi est aussi celui d'une génération kikuyu. C. Dundas en compte six, Ndemmi, Iregi, Maiina, Mwangi, Mwirungu et Chuma ; dans le district de Kiambu, deux noms seulement, Maiina et Mwangi, reviennent à tour de rôle, si bien que les fils d'un Maiina s'appellent Mwangi, et inversement.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Organization and Laws of Some Bantu Tribes in East Africa",
+                "author": "C. Dundas",
+                "year": 1915,
+                "url": "https://archive.org/details/dli.ministry.15598",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 244",
+                "notes": "Journal of the Royal Anthropological Institute of Great Britain and Ireland, volume 45, 1915 (la numérisation d'Internet Archive porte tout le volume). Lu le 13 octobre 2026 ; page 244 vue en image. Page 244, « Generations in Kikuyu » : la liste des six générations les plus connues ; dans le district de Kiambu, « only two names, Maiina and Mwangi, being used alternately. The sons of Maiina are therefore called Mwangi and vice versa ». Administrateur colonial, cité pour ce qu'il rapporte des Kikuyu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mwangi apparaît par écrit dans l'ethnologie des Kamba de C. W. Hobley, au deuxième rang d'un tableau sur la composition de familles du district d'Ulu : « Mwangi wa Nzuki », Mwangi fils de Nzuki. C'est, avec Mwan'gi chez les Routledge la même année, la plus ancienne trace de ce nom que le projet connaît ; le nom est plus ancien que ces livres.",
+            "formAsWritten": "Mwangi",
+            "birth": true,
+            "actors": [
+              {
+                "name": "C. W. Hobley",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Ethnology of A-Kamba and other East African tribes",
+                "author": "C. W. Hobley",
+                "year": 1910,
+                "url": "https://archive.org/details/ethnologyofakamb00hobluoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 13",
+                "notes": "Cambridge, Cambridge University Press, 1910. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive. Page 13, tableau « Statistics shewing the constitution of families », relevé dans le district d'Ulu par un administrateur ; sa deuxième ligne porte « Mwangi wa Nzuki ». Page vue en image. Administrateur colonial, cité pour la forme qu'il écrit."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mwan'gi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kik",
+        "namedBy": null,
+        "shortLine": "L'écriture du nom Mwangi chez les Routledge, en 1910, pour une génération kikuyu.",
+        "periodLabel": "Écrit en 1910",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mwan'gi est l'écriture, avec une apostrophe, que donnent W. Scoresby et Katherine Routledge pour une génération kikuyu : les hommes du premier rang des anciens, atteint quand on a un second enfant, appartiennent alors à la génération plus âgée, Mwan'gi, et la génération montante s'appelle Muirun'gu.",
+            "aspect": "usage",
+            "formAsWritten": "Mwan'gi",
+            "actors": [
+              {
+                "name": "W. Scoresby Routledge",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Katherine Routledge",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "With a Prehistoric People: the Akikuyu of British East Africa",
+                "author": "W. Scoresby Routledge et Katherine Routledge",
+                "year": 1910,
+                "url": "https://archive.org/details/withprehistoricp00rout",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 198",
+                "notes": "Londres, Edward Arnold, 1910. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive (bibliothèques de l'université de Californie). Page 198, chapitre sur les rangs officiels : « at present its members belong to the older generation, Mwan'gi », la génération montante étant « Muirun'gu ». Auteurs de l'époque coloniale, cités ici pour la forme qu'ils écrivent."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

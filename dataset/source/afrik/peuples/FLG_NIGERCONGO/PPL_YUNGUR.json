@@ -125,5 +125,108 @@
         "source_kind": "press"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Yungur désigne un peuple du nord-est du Nigeria qui se nomme lui-même Bena. À l'origine, Yungur est un nom donné de l'extérieur, que les Bena emploient aujourd'hui régulièrement quand ils parlent d'autres langues. Les linguistes écrivent souvent Bena-Yungur, un nom proposé en 1993. On ne sait pas avec certitude qui a donné le nom Yungur, quand, ni d'où il vient : les sources que nous avons lues ne le disent pas.",
+    "names": [
+      {
+        "nameText": "Bena",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "yun",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; les Laala se disent aussi Bena.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bena désigne les gens qui appellent leur langue ẽ́ẽ́ ɓə́nāā, « la langue bena », selon les linguistes Dmitry Idiatov et Mark Van de Velde. Les locuteurs des variétés laala, du groupe buto, se disent aussi Bena.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "LLACAN-CNRS – AdaGram Bena-Yungur",
+                "author": "Dmitry Idiatov et Mark Van de Velde",
+                "year": null,
+                "url": "https://llacan.cnrs.fr/AdaGram/bena-yungur.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page « Bena-Yungur » du projet AdaGram, LLACAN (CNRS), sans date de publication ; lue le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Yungur",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom donné de l'extérieur, que les Bena emploient aujourd'hui avec d'autres langues.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Yungur est à l'origine un nom donné de l'extérieur, mais les Bena l'emploient aujourd'hui régulièrement eux-mêmes, quand ils parlent d'autres langues, selon Dmitry Idiatov et Mark Van de Velde. Ils ne disent pas qui l'a donné ni d'où il vient.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "LLACAN-CNRS – AdaGram Bena-Yungur",
+                "author": "Dmitry Idiatov et Mark Van de Velde",
+                "year": null,
+                "url": "https://llacan.cnrs.fr/AdaGram/bena-yungur.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page « Bena-Yungur » du projet AdaGram, LLACAN (CNRS), sans date de publication ; lue le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bena-Yungur",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Ulrich Kleinewillinghöfer, selon AdaGram",
+        "shortLine": "Le nom de la langue que les linguistes préfèrent, proposé en 1993.",
+        "periodLabel": "Proposé en 1993",
+        "accounts": [
+          {
+            "period": {
+              "from": 1993,
+              "to": 1993,
+              "label": "1993"
+            },
+            "era": "modern",
+            "statement": "Le nom Bena-Yungur est proposé en 1993 par le linguiste Ulrich Kleinewillinghöfer comme nom de la langue, parce que les locuteurs des variétés laala se disent aussi Bena, selon la page AdaGram qui le suit. Nous n'avons pas lu son article. C'est la plus ancienne trace de ce nom que le projet connaît. La langue et le peuple existaient déjà avant lui.",
+            "formAsWritten": "Bena-Yungur",
+            "birth": true,
+            "sources": [
+              {
+                "title": "LLACAN-CNRS – AdaGram Bena-Yungur",
+                "author": "Dmitry Idiatov et Mark Van de Velde",
+                "year": null,
+                "url": "https://llacan.cnrs.fr/AdaGram/bena-yungur.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page « Bena-Yungur » du projet AdaGram, LLACAN (CNRS), sans date de publication ; lue le 13 octobre 2026. Elle cite : Ulrich Kleinewillinghöfer, 1993, « Nominalklassen im Mboi und Ɓəna-Lala der Yungur bzw. Ɓəna-Mboi-Gruppe », Afrika und Übersee 76. Cette mention est de seconde main.",
+                "page": "page web non paginée"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

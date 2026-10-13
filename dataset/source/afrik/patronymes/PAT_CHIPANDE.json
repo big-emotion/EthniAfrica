@@ -89,5 +89,85 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Chipande », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la lecture de « Violence and the Voice Note: The War for Cabo Delgado in Social Media (Mozambique, 2020) » et « Universidade Alberto Chipande — General Alberto Chipande » n'ont établi aucune règle propre à Chipande permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Chipande est un nom de famille du Mozambique, lié aux Makonde du Cabo Delgado. On ne sait pas avec certitude d'où il vient ni ce qu'il veut dire : les sources consultées ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Chipande",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille makonde du Mozambique, dont les sources consultées n'expliquent pas l'origine.",
+        "periodLabel": "Écrit dès 1972 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Chipande est un nom de famille du Mozambique. Les sources consultées ne disent ni d'où il vient ni ce qu'il veut dire. On ne sait pas avec certitude.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Violence and the Voice Note: The War for Cabo Delgado in Social Media (Mozambique, 2020)",
+                "author": "Paolo Israel",
+                "year": 2024,
+                "url": "https://scielo.org.za/scielo.php?lng=en&nrm=iso&pid=S0259-01902024000100005&script=sci_arttext&tlng=en",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Article de la revue Kronos, volume 50, numéro 1, Le Cap, mai 2024, lu en entier sur SciELO South Africa. La note 34 présente Alberto Chipande et Raimundo Pachinuapa comme les deux principaux dirigeants makonde du Frelimo, et le texte parle des « generals Chipande and Lidimu » comme de représentants makonde de la direction mozambicaine. L'article ne dit rien de l'origine du nom. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Décrit en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Chipande est celui de l'un des deux principaux dirigeants makonde du Frelimo, le général Alberto Chipande, selon Paolo Israel (2024), à propos de la guerre du Cabo Delgado en 2020.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Violence and the Voice Note: The War for Cabo Delgado in Social Media (Mozambique, 2020)",
+                "author": "Paolo Israel",
+                "year": 2024,
+                "url": "https://scielo.org.za/scielo.php?lng=en&nrm=iso&pid=S0259-01902024000100005&script=sci_arttext&tlng=en",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Article de la revue Kronos, volume 50, numéro 1, Le Cap, mai 2024, lu en entier sur SciELO South Africa. La note 34 présente Alberto Chipande et Raimundo Pachinuapa comme les deux principaux dirigeants makonde du Frelimo, et le texte parle des « generals Chipande and Lidimu » comme de représentants makonde de la direction mozambicaine. L'article ne dit rien de l'origine du nom. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1972,
+              "to": 1972,
+              "label": "18 juillet 1972"
+            },
+            "era": "colonial",
+            "statement": "Le nom Chipande apparaît par écrit dans le Diário de Lisboa du 18 juillet 1972. Un ancien membre du Frelimo, interrogé par le journal, y cite Alberto Chipande parmi les chefs de la guérilla des Makonde. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un journal l'a écrit, pas depuis quand des familles le portent.",
+            "formAsWritten": "Chipande",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Diário de Lisboa 1972-07-18: ano 52, n.º 17805",
+                "author": "Diário de Lisboa",
+                "year": 1972,
+                "url": "https://archive.org/details/cc_dl_06814.164.26059",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 2",
+                "notes": "Quotidien de Lisbonne, numérisé par la Casa Comum de la Fondation Mário Soares et Maria Barroso et lu sur la copie d'archive.org. Page 2, article « Situação confusa e tumultuosa na Frelimo » : le journal publie l'entretien d'un étudiant, ancien membre du Frelimo, avec un ancien dirigeant du mouvement. Le nom d'« Alberto Chipande » y figure avec celui d'un autre chef, parmi les « homens fortes » de la guérilla « dos macondes ». Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

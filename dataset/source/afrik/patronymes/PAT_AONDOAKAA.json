@@ -94,5 +94,72 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les sources consultées ne permettent pas de déterminer si Aondoakaa désigne historiquement un lignage, un clan ou une autre unité sociale."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Aondoakaa est un nom de personne du Nigeria. Il commence par Aondo, le mot tiv pour Dieu, comme beaucoup de noms tiv. On ne sait pas avec certitude ce que veut dire la suite du nom, ni à quel peuple les sources lues le rattachent. Le plus ancien écrit connu le donne comme nom d'un ministre de la Justice, en 2007.",
+    "names": [
+      {
+        "nameText": "Aondoakaa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne du Nigeria qui commence par Aondo, « Dieu » en tiv ; écrit dès 2007.",
+        "periodLabel": "Écrit dès 2007 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Proposé en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Aondoakaa serait un nom tiv en Aondo, « Dieu », comme ceux que Moufoutaou Adjeran range parmi les noms qui louent Dieu. C'est un rapprochement du projet : l'étude ne cite pas ce nom, et aucune source lue n'explique la fin du mot.",
+            "hypothesisGroup": "sens du nom Aondoakaa",
+            "sources": [
+              {
+                "title": "Individual Names With Tiv People From Nigeria And Cameroon",
+                "author": "Moufoutaou Adjeran",
+                "year": 2019,
+                "url": "https://univ-bejaia.dz/revue/jslcs/article/download/277/218/359",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17",
+                "notes": "Journal of Studies in Language, Culture and Society, vol. 2, no 2, 2019, p. 16-25 ; PDF intégral lu le 13 octobre 2026. L'auteur écrit que les noms individuels précédés de Aondo (« God ») ou de Ter (« Lord ») sont très liés à la croyance des Tiv, et en cite de nombreux, dont aondodoo (« God is good ») et aondoakula (« God guides »). Il ne cite pas Aondoakaa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2007,
+              "to": 2010,
+              "label": "Du 26 juillet 2007 au 10 février 2010"
+            },
+            "era": "modern",
+            "statement": "Le nom Aondoakaa figure sur la page du ministère fédéral de la Justice du Nigeria qui liste les anciens ministres de la Justice : Chief Michael A. Aondoakaa y est Attorney General de la Fédération du 26 juillet 2007 au 10 février 2010. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand cette personne a exercé, pas depuis quand le nom est porté.",
+            "formAsWritten": "AONDOAKAA",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Michael A. Aondoakaa",
+                "role": "Attorney General de la Fédération"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Past Attorney General of the Federation",
+                "author": "Federal Ministry of Justice",
+                "year": null,
+                "url": "https://justice.gov.ng/past-attorney-general-of-the-federation/",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "entrée n° 19",
+                "notes": "Page du ministère fédéral nigérian de la Justice, lue le 13 octobre 2026. Entrée n° 19 : « CHIEF MICHAEL A. AONDOAKAA, SAN », du « 26th July 2007 » au « 10th Feb. 2010 ». La page ne donne ni l'origine du nom ni le peuple de son porteur."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

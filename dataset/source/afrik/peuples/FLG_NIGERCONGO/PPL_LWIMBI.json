@@ -90,5 +90,89 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Luimbi, écrit aussi Lwimbi, désigne un peuple du centre de l'Angola, le long de la vallée du Cuanza, et sa langue. On ne sait pas comment ce peuple se nomme lui-même, ni d'où vient le nom Luimbi : les sources que nous avons lues ne le disent pas. La plus ancienne trace de ce nom que nous connaissons est Luimbe, écrit en 1881 par les explorateurs portugais Capelo et Ivens.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Luimbi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom du centre de l'Angola ; Luimbe est écrit dès 1881, on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit dès 1881 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1955,
+              "to": 1955,
+              "label": "1955"
+            },
+            "era": "colonial",
+            "statement": "Le nom Luimbi désigne, chez Cecil W. Scott en 1955, les gens qui parlent le luimbi et occupent une région au centre de l'Angola, le long de la vallée du Cuanza, de sa source jusqu'à près de son confluent avec le Luandu. Il ne dit pas d'où vient le nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Note on the Luimbi of Central Angola",
+                "author": "Cecil W. Scott",
+                "year": 1955,
+                "url": "https://www.cambridge.org/core/journals/africa/article/note-on-the-luimbi-of-central-angola/09A0A3E33535EA2E734174EBF255D11A",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 427",
+                "notes": "Africa, vol. 25, n° 4, octobre 1955, p. 427-429. Lu dans l'extrait que Cambridge Core affiche gratuitement (début de l'article), le 13 octobre 2026 ; nous n'avons pas lu la suite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Luimbi a une autre forme proche, Luimbas, chez le major Serpa Pinto, en 1881, dans la traduction anglaise de son récit de voyage : il écrit que les Ganguellas, entre le Cuqueima et le Cuanza, sont d'une autre race que les autres peuples du même nom, et qu'on les appelle Luimbas près du Cuqueima.",
+            "formAsWritten": "Luimbas",
+            "sources": [
+              {
+                "title": "How I Crossed Africa, vol. I",
+                "author": "Alexandre de Serpa Pinto, traduit par Alfred Elwes",
+                "year": 1881,
+                "url": "https://archive.org/details/howicrossedafric01serp",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 211",
+                "notes": "Londres, Sampson Low, Marston, Searle et Rivington, 1881, traduction anglaise du récit de Serpa Pinto (voyage de 1877-1879). Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; le numéro 211 est imprimé en haut de la page, et l'index du volume renvoie à « Luimbas, i. 211 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Luimbi a une forme proche, Luimbe, dans le récit des explorateurs Hermenegildo Capelo et Roberto Ivens, en 1881 : ils écrivent « terras de Luimbe » pour le pays qu'ils traversent après le Cuanza, et disent que les habitants de Luimbe sont « em parte ganguellas », en partie des Ganguellas. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Luimbe",
+            "birth": true,
+            "sources": [
+              {
+                "title": "De Benguella ás terras de Iácca, vol. I",
+                "author": "Hermenegildo Capelo et Roberto Ivens",
+                "year": 1881,
+                "url": "https://archive.org/details/debenguellasterr01cape",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 135",
+                "notes": "Lisbonne, Imprensa Nacional, 1881. Récit de l'expédition de 1877-1880, lu dans la numérisation d'Internet Archive le 13 octobre 2026. Page 135 lue sur l'image (le numéro est imprimé en haut) ; la phrase qui précède, sur « as terras de Luimbe », est à la page 134."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
