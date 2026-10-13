@@ -1,0 +1,119 @@
+{
+  "version": "1.2.0-proposition",
+  "proposal": "1.3.0-proposition",
+  "logo": "Logo/ethniafrica-logo.png",
+  "series": { "id": "mots", "episode": 1 },
+  "searchName": "[mot]",
+  "cards": [
+    {
+      "id": "mots-01",
+      "type": "opener",
+      "theme": "nuit",
+      "folio": "01/07",
+      "series": { "id": "mots", "episode": 1 },
+      "kicker": "Un mot sur l'Afrique",
+      "title": "D'où vient le mot *[mot]* ?",
+      "cue": "Faites défiler",
+      "demo": "Gabarit : texte à remplacer",
+      "provenance": "Beat 1 (le mot tel qu'on l'entend). Question fixe de la série 4. Aucun épisode n'est encore choisi : tout le texte entre crochets est à écrire."
+    },
+    {
+      "id": "mots-02",
+      "type": "explanation",
+      "theme": "nuit",
+      "folio": "02/07",
+      "series": { "id": "mots", "episode": 1 },
+      "kicker": "Le mot tel qu'on l'entend",
+      "title": "On l'entend *partout*",
+      "body": "[Où et comment on entend ce mot aujourd'hui, en une ou deux phrases sourcées.]",
+      "source": "[source]",
+      "demo": "Gabarit : texte à remplacer",
+      "provenance": "Beat 1, suite. Exemple d'usage attesté, jamais un usage supposé."
+    },
+    {
+      "id": "mots-03",
+      "type": "explanation",
+      "theme": "nuit",
+      "folio": "03/07",
+      "series": { "id": "mots", "episode": 1 },
+      "kicker": "Sa langue et son premier sens",
+      "title": "Un mot venu d'une autre *langue*",
+      "forms": {
+        "layout": "table",
+        "rows": [
+          ["[forme d'origine]", "[langue], [premier sens]"],
+          ["[forme française]", "[sens d'aujourd'hui]"]
+        ]
+      },
+      "note": "[Une phrase qui relie les deux sens.]",
+      "source": "[dictionnaire étymologique, page]",
+      "demo": "Gabarit : texte à remplacer",
+      "provenance": "Beat 2 (sa langue et son premier sens)."
+    },
+    {
+      "id": "mots-04",
+      "type": "dated",
+      "theme": "nuit",
+      "folio": "04/07",
+      "series": { "id": "mots", "episode": 1 },
+      "date": {
+        "display": "[date]",
+        "kind": "year",
+        "marker": {
+          "kind": "attestation",
+          "label": "Arrivée du mot en Afrique"
+        },
+        "name": "[mot]",
+        "designated": "[ce que le mot désignait alors]",
+        "usedBy": "[qui l'employait : voyageurs, commerçants, administration]"
+      },
+      "source": "[source datée]",
+      "demo": "Gabarit : texte à remplacer",
+      "provenance": "Beat 3 (comment il est arrivé en Afrique, et qui l'employait). Une date que la recherche ne trouve pas s'écrit « Date inconnue » (kind unknown)."
+    },
+    {
+      "id": "mots-05",
+      "type": "explanation",
+      "theme": "nuit",
+      "folio": "05/07",
+      "series": { "id": "mots", "episode": 1 },
+      "kicker": "Ce qu'il servait à dire",
+      "title": "Un mot qui *classait*",
+      "body": "[Ce que le mot servait à dire des gens qu'il désignait, avec une citation exacte entre guillemets et son auteur.]",
+      "source": "[source]",
+      "demo": "Gabarit : texte à remplacer",
+      "provenance": "Beat 4 (ce qu'il servait à dire). Titre à réécrire selon l'épisode."
+    },
+    {
+      "id": "mots-06",
+      "type": "explanation",
+      "theme": "nuit",
+      "folio": "06/07",
+      "series": { "id": "mots", "episode": 1 },
+      "kicker": "Le mot qu'ils emploient",
+      "title": "Le mot entendu mène au *nom employé*",
+      "forms": {
+        "layout": "pair",
+        "searchedLabel": "Le mot qu'on dit",
+        "searched": "[mot]",
+        "selfLabel": "Le mot qu'ils emploient",
+        "self": "[nom]"
+      },
+      "source": "[source]",
+      "demo": "Gabarit : texte à remplacer",
+      "provenance": "Beat 5, clôture fixe de la série 4 : le mot que les gens emploient pour eux-mêmes."
+    },
+    {
+      "id": "mots-07",
+      "type": "closing",
+      "theme": "nuit",
+      "folio": "07/07",
+      "series": { "id": "mots", "episode": 1 },
+      "title": "Notre objectif : raconter l'origine des noms, avec des sources.",
+      "body": "Cherchez [mot] sur EthniAfrica, lien en profil.",
+      "cta": { "domain": "ethniafrica.com" },
+      "demo": "Gabarit : texte à remplacer",
+      "provenance": "Phrase de fin de chaque légende (docs/editorial/strategy/social-series.md)."
+    }
+  ]
+}

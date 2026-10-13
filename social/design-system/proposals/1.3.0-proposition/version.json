@@ -1,0 +1,11 @@
+{
+  "name": "EthniAfrica Cartes",
+  "version": "1.3.0-proposition",
+  "date": "2026-10-13",
+  "status": "proposed",
+  "basedOn": "1.2.0-proposition",
+  "commission": "The operator approved on 13 October 2026 a design job for the social series frame (docs/editorial/strategy/social-series.md): one series band, one carousel model per series and one 9:16 video model.",
+  "previews": ".local/research/social-production-2026-10-09/design-system-1.3.0-proposition-previews/",
+  "acceptance": null,
+  "scope": "Proposal only. The accepted design system stays 1.2.0-proposition (../../version.json) until the operator accepts this version, normally after the Claude Design step in claude-design-brief.md. Sample text in the models is demonstration data or a labelled placeholder, not validated content."
+}

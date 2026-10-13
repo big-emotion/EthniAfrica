@@ -1,0 +1,73 @@
+{
+  "design": "EthniAfrica Cartes 1.3.0-proposition, vidéo de série",
+  "basedOn": "EthniAfrica Vidéo carte 0.4.0-proposition : sous-titres en morceaux, mot surligné sur la voix, règle de lecture",
+  "model": "models/01-pays.cards.json",
+  "demo": "Démonstration : texte non validé. Le texte dit reprend les cartes du modèle de la série 1.",
+  "size": [1080, 1920],
+  "fps": 30,
+  "card": { "top": 285, "height": 1350 },
+  "subtitle": { "top": 1660, "bottom": 1800, "left": 60, "right": 1020 },
+  "cover": { "card": "pays-01", "subtitle": false },
+  "cardTransition": "fondu enchaîné de 300 ms, rien ne glisse",
+  "imageMotion": "zoom lent de 100 à 104 % sur l'image de la carte, centré sur son point focal ; le panneau et le bandeau ne bougent pas",
+  "hold": 2.5,
+  "beats": [
+    {
+      "card": "pays-01",
+      "chunks": [
+        { "text": "Le nom Burkina Faso.", "duration": 1.8 },
+        { "text": "Qui a choisi ce nom ?", "duration": 2.7 }
+      ]
+    },
+    {
+      "card": "pays-02",
+      "chunks": [
+        { "text": "Deux mots, deux langues du pays.", "duration": 2.4 },
+        {
+          "text": "Burkina, en mooré : l'intégrité, l'honneur.",
+          "duration": 2.6
+        },
+        { "text": "Faso, en dioula : le pays.", "duration": 2.0 }
+      ]
+    },
+    {
+      "card": "pays-03",
+      "chunks": [
+        { "text": "Il date du 4 août 1984,", "duration": 2.4 },
+        { "text": "sous Thomas Sankara.", "duration": 2.6 }
+      ]
+    },
+    {
+      "card": "pays-04",
+      "chunks": [
+        { "text": "Avant, le pays s'appelait", "duration": 2.0 },
+        { "text": "Haute-Volta, un nom colonial", "duration": 2.0 },
+        { "text": "donné par décret en 1919.", "duration": 2.5 }
+      ]
+    },
+    {
+      "card": "pays-05",
+      "chunks": [
+        { "text": "Ses habitants sont les Burkinabè :", "duration": 2.4 },
+        { "text": "un mot pris aux trois", "duration": 1.6 },
+        { "text": "langues principales du pays.", "duration": 2.0 }
+      ]
+    },
+    {
+      "card": "pays-06",
+      "chunks": [
+        { "text": "Sur le sens du nom,", "duration": 1.6 },
+        { "text": "les sources sont d'accord.", "duration": 1.8 },
+        { "text": "Qui a choisi Haute-Volta ?", "duration": 1.8 },
+        { "text": "Elles ne le disent pas.", "duration": 1.6 }
+      ]
+    },
+    {
+      "card": "pays-07",
+      "chunks": [
+        { "text": "Cherchez Burkina Faso sur EthniAfrica,", "duration": 2.8 },
+        { "text": "lien en profil.", "duration": 1.4 }
+      ]
+    }
+  ]
+}

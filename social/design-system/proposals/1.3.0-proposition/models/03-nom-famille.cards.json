@@ -1,0 +1,153 @@
+{
+  "version": "1.2.0-proposition",
+  "proposal": "1.3.0-proposition",
+  "logo": "Logo/ethniafrica-logo.png",
+  "series": {
+    "id": "nom-famille",
+    "episode": 1
+  },
+  "searchName": "Yao",
+  "cards": [
+    {
+      "id": "nom-famille-01",
+      "type": "opener",
+      "theme": "nuit",
+      "folio": "01/07",
+      "series": {
+        "id": "nom-famille",
+        "episode": 1
+      },
+      "kicker": "Un nom de famille",
+      "title": "*Yao*, Kouassi : d'où vient ton nom ?",
+      "cue": "Faites défiler",
+      "demo": "Démonstration : texte non validé",
+      "provenance": "Beat 1 (le nom), question fixe de la série 3. Image à choisir."
+    },
+    {
+      "id": "nom-famille-02",
+      "type": "map",
+      "theme": "nuit",
+      "folio": "02/07",
+      "series": {
+        "id": "nom-famille",
+        "episode": 1
+      },
+      "kicker": "Où on le porte",
+      "title": "Des noms portés en {area-a:Côte d'Ivoire}",
+      "map": {
+        "dataRef": "Cartes/afrique-ouest.json",
+        "borders": "quiet",
+        "highlight": {
+          "isos": ["CIV"],
+          "tone": "area-a",
+          "legend": "Yao, Kouassi : chez les Baoulé et les Agni"
+        },
+        "countryLabels": "highlight",
+        "caption": {
+          "what": "pays où les fiches EthniAfrica attestent ces noms ; la couleur couvre tout le pays",
+          "when": "aujourd'hui",
+          "source": "fiches EthniAfrica Yao et Kouassi ; fond Natural Earth, domaine public"
+        }
+      },
+      "demo": "Démonstration : texte non validé",
+      "provenance": "Beat 2 (où il est porté). dataset/source/afrik/patronymes/PAT_YAO.json et PAT_KOUASSI.json, champ countries (CIV). Les formes Yaw et Kwasi du Ghana sont dans nameHistory mais pas dans le champ countries : le Ghana prend une couleur quand la fiche l'ajoute."
+    },
+    {
+      "id": "nom-famille-03",
+      "type": "explanation",
+      "theme": "nuit",
+      "folio": "03/07",
+      "series": {
+        "id": "nom-famille",
+        "episode": 1
+      },
+      "kicker": "Ce que le nom dit",
+      "title": "Un nom donné selon le *jour* de naissance",
+      "body": "Yao et Kouassi sont des noms de jour. On les donne à un garçon d'après le jour de la semaine où il est né. En agni, Yao est le garçon né le vendredi, Kouassi celui né le lundi.",
+      "source": "Maurice Delafosse, 1900, p. 132-134",
+      "demo": "Démonstration : texte non validé",
+      "provenance": "Beat 3 (ce qu'il raconte). PAT_YAO.json et PAT_KOUASSI.json, nameHistory « Usage contemporain » et « 1900 »."
+    },
+    {
+      "id": "nom-famille-04",
+      "type": "explanation",
+      "theme": "nuit",
+      "folio": "04/07",
+      "series": {
+        "id": "nom-famille",
+        "episode": 1
+      },
+      "kicker": "D'un pays à l'autre",
+      "title": "Le même nom, un autre *jour*",
+      "forms": {
+        "layout": "table",
+        "rows": [
+          ["Yao", "vendredi, en agni"],
+          ["Yaw", "jeudi, en twi (Ghana)"],
+          ["Kouassi", "lundi, en agni et en baoulé"],
+          ["Kwasi", "dimanche, en twi (Ghana)"]
+        ]
+      },
+      "note": "Selon les sources, le jour change d'une langue à l'autre.",
+      "source": "Delafosse, 1900 · Christaller, 1881 · Pagnet, 2005",
+      "demo": "Démonstration : texte non validé",
+      "provenance": "Beat 4 (ses formes d'un pays à l'autre). PAT_YAO.json (Yao, Yaw) et PAT_KOUASSI.json (Kouassi, Kwasi), nameHistory."
+    },
+    {
+      "id": "nom-famille-05",
+      "type": "dated",
+      "theme": "nuit",
+      "folio": "05/07",
+      "series": {
+        "id": "nom-famille",
+        "episode": 1
+      },
+      "date": {
+        "display": "1881",
+        "kind": "year",
+        "marker": {
+          "kind": "premiere",
+          "label": "Plus ancienne trace écrite repérée"
+        },
+        "name": "Yaw et Kwasi",
+        "designated": "le garçon né le jeudi, et celui né le dimanche, en twi",
+        "usedBy": "le missionnaire Johann Gottlieb Christaller, dans son dictionnaire du twi"
+      },
+      "source": "J. G. Christaller, 1881, p. 556 et 567",
+      "demo": "Démonstration : texte non validé",
+      "provenance": "Beat 3, suite (ce qu'il raconte, la plus ancienne trace). PAT_YAO.json nameHistory Yaw « 1881 » ; PAT_KOUASSI.json nameHistory Kwasi « 1881 ». La date dit quand un auteur a noté ces noms, pas depuis quand on les donne : à dire dans la voix."
+    },
+    {
+      "id": "nom-famille-06",
+      "type": "explanation",
+      "theme": "nuit",
+      "folio": "06/07",
+      "series": {
+        "id": "nom-famille",
+        "episode": 1
+      },
+      "kicker": "À toi",
+      "title": "Et ton nom, d'où *vient-il* ?",
+      "body": "Écris-le en commentaire. Le prochain épisode partira des noms que vous nous donnez.",
+      "demo": "Démonstration : texte non validé",
+      "provenance": "Beat 5, clôture fixe de la série 3 : l'épisode suivant est choisi parmi les noms des commentaires."
+    },
+    {
+      "id": "nom-famille-07",
+      "type": "closing",
+      "theme": "nuit",
+      "folio": "07/07",
+      "series": {
+        "id": "nom-famille",
+        "episode": 1
+      },
+      "title": "Notre objectif : raconter l'origine des noms, avec des sources.",
+      "body": "Cherchez Yao sur EthniAfrica, lien en profil.",
+      "cta": {
+        "domain": "ethniafrica.com"
+      },
+      "demo": "Démonstration : texte non validé",
+      "provenance": "Phrase de fin de chaque légende (docs/editorial/strategy/social-series.md)."
+    }
+  ]
+}

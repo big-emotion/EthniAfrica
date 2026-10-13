@@ -1,0 +1,120 @@
+{
+  "version": "1.2.0-proposition",
+  "proposal": "1.3.0-proposition",
+  "logo": "Logo/ethniafrica-logo.png",
+  "series": { "id": "pays", "episode": 1 },
+  "searchName": "Burkina Faso",
+  "cards": [
+    {
+      "id": "pays-01",
+      "type": "opener",
+      "theme": "nuit",
+      "folio": "01/07",
+      "series": { "id": "pays", "episode": 1 },
+      "kicker": "Le nom d'un pays",
+      "title": "Qui a choisi le nom *Burkina Faso* ?",
+      "cue": "Faites défiler",
+      "demo": "Démonstration : texte non validé",
+      "provenance": "Beat 1 (le nom et la question). Question fixe de la série 1. Image à choisir : le pays aujourd'hui, photographie sous licence libre."
+    },
+    {
+      "id": "pays-02",
+      "type": "explanation",
+      "theme": "nuit",
+      "folio": "02/07",
+      "series": { "id": "pays", "episode": 1 },
+      "kicker": "Ce que le nom veut dire",
+      "title": "Deux mots pris à deux *langues* du pays",
+      "forms": {
+        "layout": "table",
+        "rows": [
+          ["Burkina", "l'intégrité, l'honneur, en mooré"],
+          ["Faso", "le pays, la terre, en dioula"]
+        ]
+      },
+      "note": "Ensemble, les deux mots se traduisent par « la patrie des hommes intègres ».",
+      "source": "Alain Maharaux, 1995, p. 9",
+      "demo": "Démonstration : texte non validé",
+      "provenance": "Beat 2 (ce que le nom peut vouloir dire). dataset/source/afrik/pays/BFA.json, champ etymology et nameHistory « Usage contemporain » (Maharaux 1995, p. 9). Image à choisir."
+    },
+    {
+      "id": "pays-03",
+      "type": "dated",
+      "theme": "nuit",
+      "folio": "03/07",
+      "series": { "id": "pays", "episode": 1 },
+      "date": {
+        "display": "4 août 1984",
+        "kind": "exact",
+        "marker": { "kind": "adoption", "label": "Nom de l'État" },
+        "name": "Burkina Faso",
+        "designated": "le pays qui s'appelait jusque-là Haute-Volta",
+        "usedBy": "le gouvernement de Thomas Sankara, par une ordonnance du 2 août 1984"
+      },
+      "source": "Digithèque MJP, université de Perpignan · Histoire générale de l'Afrique, UNESCO, vol. VIII, 1998, p. 130",
+      "demo": "Démonstration : texte non validé",
+      "provenance": "Beat 3 (qui l'a donné, et quand). BFA.json, nameOriginActor et nameHistory « Depuis le 4 août 1984 ». La date de l'ordonnance repose sur Jeune Afrique (2014) : à vérifier par la recherche avant publication. Image à choisir."
+    },
+    {
+      "id": "pays-04",
+      "type": "dated",
+      "theme": "nuit",
+      "folio": "04/07",
+      "series": { "id": "pays", "episode": 1 },
+      "date": {
+        "display": "1er mars 1919",
+        "kind": "exact",
+        "marker": { "kind": "premiere", "label": "Le nom d'avant" },
+        "name": "Haute-Volta",
+        "designated": "une colonie de sept cercles, avec Ouagadougou pour chef-lieu",
+        "usedBy": "l'administration coloniale française, par un décret"
+      },
+      "source": "Décret du 1er mars 1919, article premier, Digithèque MJP",
+      "demo": "Démonstration : texte non validé",
+      "provenance": "Beat 4 (le nom d'avant). BFA.json, nameHistory Haute-Volta « 1er mars 1919 ». Image à choisir : le décret ou une carte de la colonie, document daté."
+    },
+    {
+      "id": "pays-05",
+      "type": "explanation",
+      "theme": "nuit",
+      "folio": "05/07",
+      "series": { "id": "pays", "episode": 1 },
+      "kicker": "Le nom des habitants",
+      "title": "*Burkinabè*, un mot pris à trois langues",
+      "body": "Le nom des habitants, burkinabè, emprunte aux trois langues principales du pays, selon le géographe Alain Maharaux. Les sources réunies ici ne disent pas de quelle langue vient la fin du mot.",
+      "source": "Alain Maharaux, 1995, p. 9",
+      "demo": "Démonstration : texte non validé",
+      "provenance": "Beat 4 (le nom des habitants). BFA.json, etymology et nameHistory « 1984 ». Image à choisir."
+    },
+    {
+      "id": "pays-06",
+      "type": "explanation",
+      "theme": "nuit",
+      "folio": "06/07",
+      "series": { "id": "pays", "episode": 1 },
+      "kicker": "Les autres lectures",
+      "title": "Sur le sens, les sources sont *d'accord*",
+      "body": "Les sources lues donnent toutes le même sens au nom Burkina Faso. Elles ne disent pas qui a proposé le nom Haute-Volta, ni pourquoi il a été retenu.",
+      "source": "Alain Maharaux, 1995 · Michel Izard, 1985, p. 263",
+      "demo": "Démonstration : texte non validé",
+      "provenance": "Beat 5 (les autres lectures). La fiche BFA.json ne rapporte aucune lecture concurrente du nom ; la carte le dit au lieu d'en inventer une. Si la recherche en trouve une, elle remplace ce texte, attribuée."
+    },
+    {
+      "id": "pays-07",
+      "type": "closing",
+      "theme": "nuit",
+      "folio": "07/07",
+      "series": { "id": "pays", "episode": 1 },
+      "kicker": "Le nom Burkina Faso, de 1984 à 1919",
+      "recap": [
+        { "date": "1984", "name": "Burkina Faso", "kind": "adoption" },
+        { "date": "1919", "name": "Haute-Volta", "kind": "premiere" }
+      ],
+      "title": "Notre objectif : raconter l'origine des noms, avec des sources.",
+      "body": "Cherchez Burkina Faso sur EthniAfrica, lien en profil.",
+      "cta": { "domain": "ethniafrica.com" },
+      "demo": "Démonstration : texte non validé",
+      "provenance": "Beat 6 (la phrase de clôture) : la phrase de fin de chaque légende, décidée le 13 octobre 2026 (docs/editorial/strategy/social-series.md)."
+    }
+  ]
+}
