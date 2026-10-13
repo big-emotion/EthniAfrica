@@ -112,5 +112,179 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kouya désigne un petit peuple de langue krou de la région de Vavoua, dans le centre-ouest de la Côte d'Ivoire. D'après des archéologues ivoiriens, ce peuple se reconnaît lui-même sous le nom Sokya ; ils citent aussi Kuya, Kouya, Sokia et Sékpéa. Aucune source que nous avons lue n'explique l'origine de ces noms ; nous présentons plus bas ce qu'elles disent de chacun.",
+    "names": [
+      {
+        "nameText": "Sokya",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kyf",
+        "namedBy": null,
+        "shortLine": "Le nom par lequel, selon des archéologues ivoiriens, ce peuple se reconnaît lui-même.",
+        "periodLabel": "Écrit Sôkouya en 2012 ; Sokya en 2024",
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Sokya est celui que ce peuple emploie pour se reconnaître, selon les archéologues Lah Louis Tui et ses collègues, qui le retiennent pour cette raison parmi plusieurs termes : Sékpéa, Kuya, Kouya, Sokia et Sokya.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La migration du peuple Sokya de Côte d'Ivoire",
+                "author": "Lah Louis Tui, Akoua Dibia Marie-Joelle Dapa, Mireille Aya Yobouée et Emmanuel Koya Gomun",
+                "year": 2024,
+                "url": "https://www.rass-pgpa.org/wp-content/uploads/2024/12/TAP-V4N3015-Definitif.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 209, note 2",
+                "notes": "La Revue Africaine des Sciences Sociales « Pensées genre. Penser autrement », vol. 4, n° 3, novembre 2024, p. 208-217. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Sokya a une forme proche, Sôkouya, que le chercheur Aka Konin écrit en 2012 dans « Kouya ou Sôkouya » pour un groupe du département de Vavoua, qu'il dit apparenté aux Niaboua. C'est la plus ancienne trace d'une forme proche de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Sôkouya",
+            "birth": true,
+            "sources": [
+              {
+                "title": "L'art musical chez les Niaboua, un peuple krou du centre-ouest de la Côte d'Ivoire",
+                "author": "Aka Konin",
+                "year": 2012,
+                "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/documents-social-sciences-humanities/niaboua.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 56-57, annexe 3 et note 92",
+                "notes": "Musée royal de l'Afrique centrale, Tervuren, 2012. Le PDF imprime deux pages par feuille ; la page est lue sur les numéros du feuillet. Le titre « Kouya ou Sôkouya (département de Vavoua) » ouvre une liste de termes musicaux, à droite de l'annexe 3 (p. 57) ; la note 92 de la p. 56 dit ce groupe apparenté aux Niaboua. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kouya",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "kyf",
+        "namedBy": null,
+        "shortLine": "Le nom sous lequel ce peuple figure dans les listes d'ethnies ivoiriennes et dans le livre de Denis Ramseyer.",
+        "periodLabel": "Écrit depuis 2006 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Kouya est celui que Denis Ramseyer met dans le titre de son livre de 2019, Les Kouya de Côte d'Ivoire. Un peuple forestier oublié, selon la bibliographie de Lah Louis Tui et de ses collègues.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La migration du peuple Sokya de Côte d'Ivoire",
+                "author": "Lah Louis Tui, Akoua Dibia Marie-Joelle Dapa, Mireille Aya Yobouée et Emmanuel Koya Gomun",
+                "year": 2024,
+                "url": "https://www.rass-pgpa.org/wp-content/uploads/2024/12/TAP-V4N3015-Definitif.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 216",
+                "notes": "La Revue Africaine des Sciences Sociales « Pensées genre. Penser autrement », vol. 4, n° 3, novembre 2024, p. 208-217. Le livre de Ramseyer (Genève, Fondation Musée Barbier-Mueller, 2019) est connu ici par la bibliographie de l'article ; nous ne l'avons pas lu. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "2006"
+            },
+            "era": "modern",
+            "statement": "Le nom Kouya figure parmi les peuples krou de Côte d'Ivoire dans la liste de soixante groupes que le centre norvégien Landinfo publie en 2006. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Kouya",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Côte d'Ivoire: Ethnicity, Ivoirité and Conflict",
+                "author": "Geir Skogseth (Landinfo)",
+                "year": 2006,
+                "url": "https://www.landinfo.no/asset/514/1/514_1.pdf",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 5",
+                "notes": "Rapport du centre norvégien d'information sur les pays d'origine, daté du 2 novembre 2006. Kouya figure dans la liste des groupes krou. La liste de soixante groupes y est reprise d'une liste de 1999 (CNCCI). Elle ne dit pas d'où viennent les noms. Lu le 13 octobre 2026 dans le PDF du centre."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sékpéa",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les gens de Gogobro",
+        "shortLine": "Le nom que les habitants de Gogobro donnent aux Sokya restés sur place, une ancienne appellation du peuple.",
+        "periodLabel": "Transmis oralement depuis le XVIIe siècle ; rapporté en 2024",
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Sékpéa est celui que les habitants de Gogobro, ou Gogokro, donnent aux rescapés des Sokya restés sur place, ce qui en fait une ancienne appellation du peuple, selon Lah Louis Tui et ses collègues.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La migration du peuple Sokya de Côte d'Ivoire",
+                "author": "Lah Louis Tui, Akoua Dibia Marie-Joelle Dapa, Mireille Aya Yobouée et Emmanuel Koya Gomun",
+                "year": 2024,
+                "url": "https://www.rass-pgpa.org/wp-content/uploads/2024/12/TAP-V4N3015-Definitif.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 209, note 3",
+                "notes": "La Revue Africaine des Sciences Sociales « Pensées genre. Penser autrement », vol. 4, n° 3, novembre 2024, p. 208-217. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1600,
+              "to": 1699,
+              "label": "Vers le XVIIe siècle, selon la tradition orale de Gogobro"
+            },
+            "era": "polity",
+            "statement": "Le nom Sépkéa, écrit aussi Sékpéa, est celui d'un peuple que les fondateurs du village de Gogobro disent avoir trouvé sur place en arrivant, vers le XVIIe siècle, selon Yao Kodjo, chef du village, interrogé en octobre 2021. Les chercheurs y voient l'ancêtre probable des Sokya. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Récit de Yao Kodjo, chef du village de Gogobro, recueilli en octobre 2021",
+                "author": "Yao Kodjo",
+                "year": 2021,
+                "url": "https://www.rass-pgpa.org/wp-content/uploads/2024/12/TAP-V4N3015-Definitif.pdf",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "Les fondateurs de Gogobro trouvent sur place un peuple nommé Sépkéa",
+                "carrier": "Yao Kodjo, chef du village de Gogobro",
+                "place": "Gogobro (Gogokro), canton Watta, région de Hiré",
+                "notes": "Entretien recueilli en octobre 2021 par Lah Louis Tui et ses collègues, publié dans La Revue Africaine des Sciences Sociales, vol. 4, n° 3, 2024, p. 213. Le chef raconte que sa grand-mère, remontant à la quatrième génération, était Sékpéa. Lu le 13 octobre 2026 dans l'article."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

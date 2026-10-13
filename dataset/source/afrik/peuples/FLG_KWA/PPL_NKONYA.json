@@ -101,5 +101,122 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nkonya désigne un peuple guang de la région de la Volta, au Ghana, et le pays où il vit, le long de la route de Kpando à Worawora. Ce peuple se nomme lui-même Nkunyáfɔ. Les sources que nous avons lues n'expliquent pas l'origine de ce nom ; nous présentons plus bas sa plus ancienne trace écrite, de 1881.",
+    "names": [
+      {
+        "nameText": "Nkunyáfɔ",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nko",
+        "namedBy": null,
+        "shortLine": "Le pluriel que les Nkonya emploient pour eux-mêmes dans leur langue.",
+        "usedIn": ["nko"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2007,
+              "to": 2007,
+              "label": "2007"
+            },
+            "era": "modern",
+            "statement": "Le nom Nkunyáfɔ est le pluriel que les Nkonya emploient pour eux-mêmes dans leur langue, selon le linguiste Wesley Peacock. Une personne seule se dit Okunyáyin. La langue, comme le pays, s'appelle Nkunyá. Les sources que nous avons lues n'expliquent pas l'origine de ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "An overview of the phonology of Nkonya",
+                "author": "Wesley Peacock",
+                "year": 2007,
+                "url": "https://www.webonary.org/nkonya/files/Nkonya_Phonology_FINAL.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 1",
+                "notes": "Collected Language Notes no 27, Institute of African Studies, université du Ghana, Legon, 2007. Lu le 13 octobre 2026 sur le site Webonary. Page 1 : le nom de la langue est Nkunyá ; une personne est un Okunyáyin, le pluriel est Nkunyáfɔ ; le pays s'appelle aussi Nkunyá. Le nom est noté avec des tons et une écriture phonétique dans la source."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nkonya",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom écrit dès 1881 pour ce peuple guang de l'est de la Volta.",
+        "usedIn": ["eng", "fra"],
+        "periodLabel": "Écrit dès 1881 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2007,
+              "to": 2007,
+              "label": "2007"
+            },
+            "era": "modern",
+            "statement": "Le nom Nkonya est celui que le linguiste Wesley Peacock emploie pour le peuple, sa langue et son pays, dans treize villes environ de la région de la Volta, le long de la route de Kpando à Worawora. Au recensement ghanéen de 2000, 25 599 personnes se sont déclarées nkonya.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "An overview of the phonology of Nkonya",
+                "author": "Wesley Peacock",
+                "year": 2007,
+                "url": "https://www.webonary.org/nkonya/files/Nkonya_Phonology_FINAL.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 1",
+                "notes": "Collected Language Notes no 27, Institute of African Studies, université du Ghana, Legon, 2007. Lu le 13 octobre 2026 sur le site Webonary. Page 1 et note 3 : environ treize villes ; 25 599 personnes déclarées nkonya au recensement de 2000, dont 13 085 dans la région de la Volta."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Nkonya apparaît par écrit dans la préface du dictionnaire twi du missionnaire Johann Gottlieb Christaller, qui le cite parmi les peuples à l'est de la Volta dont la langue est le guang. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Ṅkonyã",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A dictionary of the Asante and Fante language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. VII",
+                "notes": "Bâle, Société des missions évangéliques, 1881. Lu dans la numérisation d'Internet Archive. Préface, page VII, note 3 : « the tribes E. of the Volta speaking Guan, viz. Ntwummuru, Kărakye, Worawora or Boem, Ṅkonyã ». Page lue sur l'image de la page."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant le nom Nkonya"
+            },
+            "statement": "On parle alors de Larteh comme du pays d'où les Nkonya disent être venus vers leur région actuelle. Selon Wesley Peacock, les Nkonya du nord et ceux du sud ne s'accordent pas sur le moment de leur séparation.",
+            "before": true,
+            "sources": [
+              {
+                "title": "An overview of the phonology of Nkonya",
+                "author": "Wesley Peacock",
+                "year": 2007,
+                "url": "https://www.webonary.org/nkonya/files/Nkonya_Phonology_FINAL.pdf",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 5",
+                "notes": "Collected Language Notes no 27, Institute of African Studies, université du Ghana, Legon, 2007. Lu le 13 octobre 2026 sur le site Webonary. Page 5, note 20 : « Nkonya tradition states that the Nkonyas migrated to their present area from Larteh » ; la date de la séparation des deux communautés reste débattue entre elles."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

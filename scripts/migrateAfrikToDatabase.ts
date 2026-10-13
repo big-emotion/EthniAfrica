@@ -30,6 +30,7 @@ import { peopleNameIndex } from "@/lib/afrik/peopleNameIndex";
 import {
   loadAllPatronymeDossiers,
   loadPatronymes,
+  type PatronymeBatch,
   type PatronymeLoadReport,
 } from "@/lib/afrik/loaders/patronymeJsonLoader";
 import {
@@ -103,7 +104,7 @@ import { sweepInParallel } from "@/lib/parallelSweep";
  * @req REQ-032
  */
 const ENTITY_LANES = 8;
-import { chunk, fetchAllPages } from "./lib/supabasePaging";
+import { chunk, fetchAllPages, type PageResult } from "./lib/supabasePaging";
 
 interface MigrationSectionReport {
   total: number;
@@ -186,7 +187,13 @@ export interface MigrationOptions {
 
 type AdminClient = ReturnType<typeof createAdminClient>;
 type AfrikTable =
-  "afrik_language_families" | "afrik_peoples" | "afrik_countries";
+  | "afrik_language_families"
+  | "afrik_peoples"
+  | "afrik_countries"
+  | "afrik_people_countries"
+  | "afrik_people_languages"
+  | "afrik_languages"
+  | "afrik_patronymes";
 type ClassifiedAfrikTable = "afrik_language_families" | "afrik_peoples";
 
 function emptyDriftReport(): AfrikDriftReport {
@@ -233,6 +240,10 @@ export function emptyMigrationReport(): MigrationReport {
       afrik_language_families: emptyOrphanReport(),
       afrik_peoples: emptyOrphanReport(),
       afrik_countries: emptyOrphanReport(),
+      afrik_people_countries: emptyOrphanReport(),
+      afrik_people_languages: emptyOrphanReport(),
+      afrik_languages: emptyOrphanReport(),
+      afrik_patronymes: emptyOrphanReport(),
     },
     verification: {
       before: emptyDriftReport(),
@@ -792,22 +803,39 @@ async function detectRelationOrphans(
  * Paged rather than a plain `select("id")`: PostgREST truncates at 1000 rows
  * without saying so, and a truncated read would both hide orphans and shrink
  * the denominator the safety cap is measured against.
+ *
+ * A link table is keyed on a pair, written `owner|target` in the report, so
+ * the same cap and the same report cover a link a fiche dropped.
  */
 async function pruneCorpusOrphans(
   supabase: AdminClient,
   table: AfrikTable,
+  key: readonly [string] | readonly [string, string],
   sourceIds: readonly string[],
-  options: { prune: boolean }
+  options: { prune: boolean; refusal?: string | null }
 ): Promise<CorpusOrphanReport> {
-  const rows = await fetchAllPages<{ id: string }>((from, to) =>
-    supabase.from(table).select("id").range(from, to)
+  // The column list is built at runtime, which the generated client types
+  // cannot follow; every key column is text.
+  const rows = await fetchAllPages<Record<string, string>>(
+    (from, to) =>
+      supabase
+        .from(table)
+        .select(key.join(","))
+        .range(from, to) as unknown as PromiseLike<
+        PageResult<Record<string, string>>
+      >
   );
 
   const scan = scanCorpusOrphans({
     table,
-    databaseIds: rows.map((row) => row.id),
+    databaseIds: rows.map((row) => key.map((column) => row[column]).join("|")),
     sourceIds,
   });
+  // A caller that knows the corpus load is incomplete refuses on its behalf:
+  // a row missing from a partial load is not a row the corpus dropped.
+  if (options.refusal && scan.orphans.length > 0) {
+    scan.refusal = options.refusal;
+  }
 
   if (scan.orphans.length === 0) {
     return { ...scan, deleted: 0 };
@@ -830,7 +858,7 @@ async function pruneCorpusOrphans(
     return { ...scan, deleted: 0 };
   }
 
-  const { error } = await supabase.from(table).delete().in("id", scan.orphans);
+  const error = await deleteKeys(supabase, table, key, scan.orphans);
   if (error) {
     return {
       ...scan,
@@ -846,36 +874,118 @@ async function pruneCorpusOrphans(
   return { ...scan, deleted: scan.orphans.length };
 }
 
+async function deleteKeys(
+  supabase: AdminClient,
+  table: AfrikTable,
+  key: readonly [string] | readonly [string, string],
+  keys: readonly string[]
+): Promise<{ message: string } | null> {
+  if (key.length === 1) {
+    const { error } = await supabase
+      .from(table)
+      .delete()
+      .in(key[0], [...keys]);
+    return error;
+  }
+
+  const targetsByOwner = new Map<string, string[]>();
+  for (const pair of keys) {
+    const [owner, target] = pair.split("|");
+    targetsByOwner.set(owner, [...(targetsByOwner.get(owner) ?? []), target]);
+  }
+  for (const [owner, targets] of targetsByOwner) {
+    const { error } = await supabase
+      .from(table)
+      .delete()
+      .eq(key[0], owner)
+      .in(key[1], targets);
+    if (error) return error;
+  }
+  return null;
+}
+
+/**
+ * Entity tables first: deleting a people cascades to its links, so a link of
+ * a retired people is gone before the link scan could count it against the cap.
+ */
 async function scanAllCorpusOrphans(
   supabase: AdminClient,
   corpus: {
     languageFamilies: LanguageFamily[];
     peoples: People[];
     countries: Country[];
+    languages: LanguageRecord[];
+    peopleLanguageRows: PeopleLanguageRow[];
+    patronymes: PatronymeBatch;
   },
   options: { prune: boolean }
 ): Promise<Record<AfrikTable, CorpusOrphanReport>> {
   const ids = <T extends { id: string }>(records: T[]) =>
     records.map((record) => record.id);
+  const countryIds = new Set(ids(corpus.countries));
+  const peopleCountryKeys = corpus.peoples.flatMap((people) =>
+    (people.currentCountries ?? [])
+      .filter((countryId) => countryIds.has(countryId))
+      .map((countryId) => `${people.id}|${countryId}`)
+  );
 
   return {
     afrik_language_families: await pruneCorpusOrphans(
       supabase,
       "afrik_language_families",
+      ["id"],
       ids(corpus.languageFamilies),
       options
     ),
     afrik_peoples: await pruneCorpusOrphans(
       supabase,
       "afrik_peoples",
+      ["id"],
       ids(corpus.peoples),
       options
     ),
     afrik_countries: await pruneCorpusOrphans(
       supabase,
       "afrik_countries",
+      ["id"],
       ids(corpus.countries),
       options
+    ),
+    afrik_people_countries: await pruneCorpusOrphans(
+      supabase,
+      "afrik_people_countries",
+      ["people_id", "country_id"],
+      peopleCountryKeys,
+      options
+    ),
+    afrik_people_languages: await pruneCorpusOrphans(
+      supabase,
+      "afrik_people_languages",
+      ["people_id", "language_id"],
+      corpus.peopleLanguageRows.map(
+        (row) => `${row.people_id}|${row.language_id}`
+      ),
+      options
+    ),
+    afrik_languages: await pruneCorpusOrphans(
+      supabase,
+      "afrik_languages",
+      ["id"],
+      ids(corpus.languages),
+      options
+    ),
+    afrik_patronymes: await pruneCorpusOrphans(
+      supabase,
+      "afrik_patronymes",
+      ["id"],
+      ids(corpus.patronymes.dossiers),
+      {
+        ...options,
+        refusal:
+          corpus.patronymes.errors.length > 0
+            ? `Refusing to prune afrik_patronymes: ${corpus.patronymes.errors.length} dossier(s) failed to load, so their rows would look retired. Fix them first.`
+            : null,
+      }
     ),
   };
 }
@@ -1089,7 +1199,14 @@ export async function migrateAfrikToDatabase(
     // would not be a preview.
     report.corpusOrphans = await scanAllCorpusOrphans(
       supabase,
-      { languageFamilies, peoples, countries },
+      {
+        languageFamilies,
+        peoples,
+        countries,
+        languages: languageRecords,
+        peopleLanguageRows,
+        patronymes: patronymeBatch,
+      },
       { prune: false }
     );
     report.patronymes = await loadPatronymes(supabase, patronymeBatch, {
@@ -1203,7 +1320,14 @@ export async function migrateAfrikToDatabase(
   // for a row the corpus dropped.
   report.corpusOrphans = await scanAllCorpusOrphans(
     supabase,
-    { languageFamilies, peoples, countries },
+    {
+      languageFamilies,
+      peoples,
+      countries,
+      languages: languageRecords,
+      peopleLanguageRows,
+      patronymes: patronymeBatch,
+    },
     { prune }
   );
 

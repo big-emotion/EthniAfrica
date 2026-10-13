@@ -96,5 +96,133 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Burunge désigne un peuple d'Afrique orientale, aujourd'hui en Tanzanie, et la langue qu'il parle. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Le nom est écrit dès 1894 par l'explorateur Oscar Baumann. D'autres formes existent, comme Burungi et Bulunge. Les sources que nous avons lues ne disent pas d'où vient ce nom.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Burunge",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du peuple et de sa langue ; écrit dès 1894 dans un récit de voyage allemand. On ne sait pas d'où il vient.",
+        "periodLabel": "Écrit dès 1894 ; en usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Burunge désigne une langue, le burunge, et le peuple qui la parle. La norme ISO 639-3 l'enregistre sous le code bds. On ne sait pas avec certitude d'où vient ce nom : les sources que nous avons lues n'en proposent pas d'explication.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "ISO 639-3, Burunge [bds]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/bds",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1894,
+              "to": 1894,
+              "label": "1894"
+            },
+            "era": "polity",
+            "statement": "Le nom Burunge apparaît par écrit en 1894 dans le récit de l'explorateur Oscar Baumann, qui parcourt cette région d'Afrique orientale entre 1891 et 1893. Il y désigne une contrée et ses habitants, que l'auteur range avec ceux d'Ufiomi, d'Iraku et d'Uassi parmi les Wafiomi. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "formAsWritten": "Burunge",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Durch Massailand zur Nilquelle : Reisen und Forschungen der Massai-Expedition des deutschen Antisklaverei-Komite in den Jahren 1891-1893",
+                "author": "Oscar Baumann",
+                "year": 1894,
+                "url": "https://www.gutenberg.org/ebooks/68057",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 173 et p. 175",
+                "notes": "Berlin, Dietrich Reimer ; lu le 13 octobre 2026 dans l'édition du Projet Gutenberg, qui garde la pagination de l'original (repères [173] et [175]). Baumann écrit « Landschaften Ufiomi, Iraku, Uassi und Burunge » (p. 173) et « Die Burunge-Leute » (p. 175)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Burungi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre forme du nom Burunge, recensée par les listes de langues ; on ne sait pas depuis quand.",
+        "periodLabel": "En usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Burungi figure, avec Burunge, parmi les noms de la langue que recense Glottolog. Les sources que nous avons lues ne disent ni qui l'emploie ni depuis quand.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Burunge (buru1320)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/buru1320",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue, lue le 13 octobre 2026 : elle recense, parmi les noms de la langue, Burunge, Burungi, Bulunge, Mbulunge et Mbulugwe."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bulunge",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre forme du nom Burunge, recensée par les listes de langues ; on ne sait pas depuis quand.",
+        "periodLabel": "En usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bulunge figure, avec Burunge, parmi les noms de la langue que recense Glottolog. Les sources que nous avons lues ne disent ni qui l'emploie ni depuis quand.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Burunge (buru1320)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/buru1320",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue, lue le 13 octobre 2026 : elle recense, parmi les noms de la langue, Burunge, Burungi, Bulunge, Mbulunge et Mbulugwe."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

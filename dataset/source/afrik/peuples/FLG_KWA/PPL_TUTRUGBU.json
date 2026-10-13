@@ -105,5 +105,219 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nyangbo désigne un peuple de neuf communautés de la région de la Volta, au Ghana, et le pays où il vit. Dans leur langue, le tutrugbu, les linguistes appellent ce peuple Batrugbu. Les sources que nous avons lues donnent une seule explication du nom Nyangbo ; nous la présentons plus bas, avec ses plus anciennes traces, de 1895 et 1898. Il reste à vérifier auprès de ce peuple comment il se nomme lui-même.",
+    "names": [
+      {
+        "nameText": "Batrugbu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nyb",
+        "namedBy": null,
+        "shortLine": "Le nom du peuple dans sa langue, selon les linguistes ; la langue se dit Tutrugbu.",
+        "usedIn": ["nyb"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Batrugbu est celui que le linguiste Matthew Harley emploie pour le peuple de langue tutrugbu, qui compte neuf villes. Divine Kormla Gborsi écrit de même que le peuple de Nyagbo est appelé Batrugbu, alors que Tutrugbu est le nom de la langue. Les sources que nous avons lues n'expliquent pas l'origine de ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Compte rendu de Tutrugbu (Nyangbo) language and culture, de James Essegbey (Brill, 2019)",
+                "author": "Matthew Harley",
+                "year": 2021,
+                "url": "https://journals.openedition.org/lla/729",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 69",
+                "notes": "Linguistique et langues africaines, no 7, 2021, p. 69-73. Lu le 13 octobre 2026 sur le site de la revue. Page 69 : « the Batrugbu community » ; le même auteur parle de « nine Batrugbu towns » page 70."
+              },
+              {
+                "title": "Aspects of Tùtrùgbù (Nyagbo) phonology",
+                "author": "Divine Kormla Gborsi",
+                "year": 2015,
+                "url": "https://ugspace.ug.edu.gh/items/5f0a8005-9147-47a9-a1c3-58a248e64684",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Mémoire de master de philosophie en linguistique, université du Ghana, octobre 2015. Lu le 13 octobre 2026 sur le dépôt UGSpace. Page 1 : « The people of Nyagbo are called Bàtùgbù while the language is called Tùtrùgbù » ; le nom est écrit avec des tons dans la source."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tutrugbu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nyb",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue de ce peuple dans cette langue ; le peuple se dit Batrugbu.",
+        "usedIn": ["nyb", "eng"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Tutrugbu est celui de la langue parlée dans le pays de Nyagbo, dans la région de la Volta, selon Divine Kormla Gborsi. C'est l'une des quatorze langues dites des montagnes du Ghana et du Togo. Matthew Harley compte à peu près 2 000 habitants sur place et autant au-dehors.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Aspects of Tùtrùgbù (Nyagbo) phonology",
+                "author": "Divine Kormla Gborsi",
+                "year": 2015,
+                "url": "https://ugspace.ug.edu.gh/items/5f0a8005-9147-47a9-a1c3-58a248e64684",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Mémoire de master de philosophie en linguistique, université du Ghana, octobre 2015. Lu le 13 octobre 2026 sur le dépôt UGSpace. Page 1 : « Tùtrùgbù is the language spoken in the Nyagbo Traditional Area », l'une des quatorze langues des montagnes du Ghana et du Togo."
+              },
+              {
+                "title": "Compte rendu de Tutrugbu (Nyangbo) language and culture, de James Essegbey (Brill, 2019)",
+                "author": "Matthew Harley",
+                "year": 2021,
+                "url": "https://journals.openedition.org/lla/729",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 69",
+                "notes": "Linguistique et langues africaines, no 7, 2021, p. 69-73. Lu le 13 octobre 2026 sur le site de la revue. Page 69 : une population résidente d'un peu plus de 2 000 personnes, autant à l'extérieur."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nyangbo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du pays et du peuple dans les sources, peut-être écrit dès 1895 ; son sens est discuté.",
+        "usedIn": ["eng", "fra"],
+        "periodLabel": "Écrit dès 1895 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Nyangbo, écrit Nyagbo par Divine Kormla Gborsi, désigne le peuple et la zone traditionnelle de neuf communautés du district de Hohoe, aujourd'hui Afadzato Ouest, dans la région de la Volta. Les sources que nous avons lues ne donnent qu'une explication de ce nom, présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Aspects of Tùtrùgbù (Nyagbo) phonology",
+                "author": "Divine Kormla Gborsi",
+                "year": 2015,
+                "url": "https://ugspace.ug.edu.gh/items/5f0a8005-9147-47a9-a1c3-58a248e64684",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "pp. 1-3",
+                "notes": "Mémoire de master de philosophie en linguistique, université du Ghana, octobre 2015. Lu le 13 octobre 2026 sur le dépôt UGSpace. Pages 1 et 3 : le pays de Nyagbo, neuf communautés, district de Hohoe devenu Afadzato Ouest."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1898,
+              "to": 1898,
+              "label": "1898"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nyangbo viendrait d'une expression de la langue du peuple qui voudrait dire « ici, tout est là », comprise comme « il fait bon ici, bâtissons-y nos cases », selon Rudolf Plehn, qui l'écrit Nyambo.",
+            "hypothesisGroup": "origine du nom Nyangbo",
+            "sources": [
+              {
+                "title": "Beiträge zur Völkerkunde des Togo-Gebietes",
+                "author": "Rudolf Plehn",
+                "year": 1898,
+                "url": "https://archive.org/details/beitrgezurvlkerk00pleh",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18",
+                "notes": "Thèse de doctorat, université de Halle, 1898 ; la pagination citée est celle de cette thèse. Lu en allemand dans la numérisation d'Internet Archive ; traduction de l'équipe. Page 18 : « Nyambo heisst in der Stammessprache : Hier ist Alles vorhanden (Hier ist gut sein, hier lasset uns Hütten bauen) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1898,
+              "to": 1898,
+              "label": "1898"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nyangbo figure sous la forme Nyambo chez l'officier Rudolf Plehn, qui le range parmi quatre peuples voisins, à un jour de marche au sud-ouest de Misahöhe, dont chacun parle sa propre langue.",
+            "formAsWritten": "Nyambo",
+            "sources": [
+              {
+                "title": "Beiträge zur Völkerkunde des Togo-Gebietes",
+                "author": "Rudolf Plehn",
+                "year": 1898,
+                "url": "https://archive.org/details/beitrgezurvlkerk00pleh",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17",
+                "notes": "Thèse de doctorat, université de Halle, 1898 ; la pagination citée est celle de cette thèse. Lu en allemand dans la numérisation d'Internet Archive ; traduction de l'équipe. Page 17 : « Die vier Stämme Avatime, Logha, Tafi, Nyambo ». Page lue sur l'image de la page."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "1895"
+            },
+            "statement": "Le nom Nyangbo figure peut-être sous la forme Nyangmo chez Carl Christian Reindorf, qui cite Nyangmo parmi les habitants de Tokokoi, de Have, d'Amfoi et d'Avatime auxquels le roi Akoto envoie des messagers. Les sources que nous avons lues ne disent pas s'il s'agit du même peuple. C'est la plus ancienne trace proche de ce nom que le projet connaît.",
+            "formAsWritten": "Nyangmo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The History of the Gold Coast and Asante",
+                "author": "Carl Christian Reindorf",
+                "year": 1895,
+                "url": "https://archive.org/details/historyofgoldcoa00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 255",
+                "notes": "Bâle, chez l'auteur, 1895. Lu dans la numérisation d'Internet Archive. Page 255 : « the inhabitants of Tokokoi, Havé, Nyangmo, Amfoi, Avatime etc. ». Rapprochement avec Nyangbo fait par l'équipe, sans confirmation dans la source. Page lue sur l'image de la page."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant l'installation dans les montagnes"
+            },
+            "statement": "On parle alors d'Osu, près d'Accra, comme du lieu où vivaient les ancêtres de ce peuple, que sa langue appelle xwialẽ. D'après un informateur de Divine Kormla Gborsi, ils auraient ensuite gagné Adzina, près d'Akosombo, puis Tɔsrɔ̃ɛ, près d'Anum, puis Agu, au Togo, à l'endroit appelé Agunyagbo, avant de s'installer dans les montagnes d'Eweto.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Aspects of Tùtrùgbù (Nyagbo) phonology",
+                "author": "Divine Kormla Gborsi",
+                "year": 2015,
+                "url": "https://ugspace.ug.edu.gh/items/5f0a8005-9147-47a9-a1c3-58a248e64684",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "pp. 3-4",
+                "notes": "Mémoire de master de philosophie en linguistique, université du Ghana, octobre 2015. Lu le 13 octobre 2026 sur le dépôt UGSpace. Pages 3 et 4 : récit d'un informateur sur les migrations des ancêtres, d'Osu à Eweto, avec le séjour à Agunyagbo, au Togo."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

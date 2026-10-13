@@ -108,5 +108,134 @@
         "source_kind": "press"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kuwaa désigne un peuple de langue krou du comté de Lofa, dans le nord-ouest du Libéria, et la langue qu'il parle. Au Libéria, on l'appelle le plus souvent Belle ou Belleh. Selon les linguistes Frances Ingemann et Richard Thompson, ce peuple se nomme lui-même Kúwaa. Aucune source que nous avons lue n'explique l'origine de ces noms ; nous présentons plus bas ce qu'elles disent de chacun.",
+    "names": [
+      {
+        "nameText": "Kuwaa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "blh",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne, dans l'écriture que des linguistes ont retenue en 1972.",
+        "periodLabel": "Écrit depuis 1972 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1972,
+              "to": 1974,
+              "label": "1972-1974"
+            },
+            "era": "modern",
+            "statement": "Le nom Kuwaa figure dans le titre de la première liste de mots publiée de cette langue, « A Kuwaa (Belle) Wordlist », par Frances Ingemann et Richard Thompson. Les auteurs l'écrivent ainsi parce qu'il est proche de Kúwaa, le nom que le peuple se donne ; ils notent qu'au Libéria on dit plutôt Belleh ou Belle. C'est la plus ancienne trace de la forme Kuwaa que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Kuwaa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Kuwaa (Belle) Wordlist",
+                "author": "Frances Ingemann et Richard Thompson",
+                "year": 1972,
+                "url": "https://scholarworks.iu.edu/journals/index.php/lsj/article/view/4105",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17, note 1",
+                "notes": "Liberian Studies Journal, vol. 5, n° 1 (volume daté de 1972 à 1974), p. 17-23. Les bases bibliographiques donnent 1972 ou 1973. Les auteurs disent que c'est la première liste de mots publiée de cette langue.  Lu le 13 octobre 2026, numéro de page lu sur le bas de page du PDF."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant le nom, selon des traditions orales"
+            },
+            "statement": "On parle alors de gens de langue kuwaa arrivés au Libéria avec d'autres peuples krou, avant les peuples mandé, selon des traditions orales que Frances Ingemann et Richard Thompson rapportent. Ils ajoutent que les Gola ont peut-être été les premiers habitants du territoire kuwaa.",
+            "before": true,
+            "sources": [
+              {
+                "title": "A Kuwaa (Belle) Wordlist",
+                "author": "Frances Ingemann et Richard Thompson",
+                "year": 1972,
+                "url": "https://scholarworks.iu.edu/journals/index.php/lsj/article/view/4105",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18",
+                "notes": "Liberian Studies Journal, vol. 5, n° 1 (volume daté de 1972 à 1974), p. 17-23. Les bases bibliographiques donnent 1972 ou 1973. Les auteurs disent que c'est la première liste de mots publiée de cette langue. Le passage est à la p. 18 ; les auteurs ne disent ni qui porte ces traditions ni à quelle date. Lu le 13 octobre 2026, numéro de page lu sur le bas de page du PDF."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Belle",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom sous lequel ce peuple et sa langue sont le plus souvent appelés au Libéria, sans origine connue.",
+        "periodLabel": "Écrit depuis 1972 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1972,
+              "to": 1974,
+              "label": "1972-1974"
+            },
+            "era": "modern",
+            "statement": "Le nom Belle, ou Belleh, est celui sous lequel les Kuwaa et leur langue sont le plus souvent appelés au Libéria, selon Frances Ingemann et Richard Thompson. Il figure aussi dans le nom de la ville de Belle Baloma, où le kuwaa reste la langue dominante. C'est la plus ancienne trace de ce nom que le projet connaît. On ne sait pas avec certitude d'où il vient.",
+            "formAsWritten": "Belle",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Kuwaa (Belle) Wordlist",
+                "author": "Frances Ingemann et Richard Thompson",
+                "year": 1972,
+                "url": "https://scholarworks.iu.edu/journals/index.php/lsj/article/view/4105",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17 et note 1",
+                "notes": "Liberian Studies Journal, vol. 5, n° 1 (volume daté de 1972 à 1974), p. 17-23. Les bases bibliographiques donnent 1972 ou 1973. Les auteurs disent que c'est la première liste de mots publiée de cette langue. La ville est appelée Baloma en kuwaa. Lu le 13 octobre 2026, numéro de page lu sur le bas de page du PDF."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kwaa",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "blh",
+        "namedBy": "Des linguistes",
+        "shortLine": "L'écriture que des linguistes ont employée avant Kuwaa, proche du nom que le peuple se donne.",
+        "periodLabel": "Écrit dès 1952",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1952,
+              "to": 1952,
+              "label": "1952"
+            },
+            "era": "modern",
+            "statement": "Le nom Kwaa est celui que des linguistes donnent à ce peuple et à sa langue, notamment Diedrich Westermann et M. A. Bryan dans Languages of West Africa, paru en 1952, selon Frances Ingemann et Richard Thompson. Ces derniers le jugent proche du nom que le peuple emploie, Kúwaa. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Kwaa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Kuwaa (Belle) Wordlist",
+                "author": "Frances Ingemann et Richard Thompson",
+                "year": 1972,
+                "url": "https://scholarworks.iu.edu/journals/index.php/lsj/article/view/4105",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17, note 1",
+                "notes": "Liberian Studies Journal, vol. 5, n° 1 (volume daté de 1972 à 1974), p. 17-23. Les bases bibliographiques donnent 1972 ou 1973. Les auteurs disent que c'est la première liste de mots publiée de cette langue. Les auteurs renvoient à Westermann et Bryan, Languages of West Africa, Londres, Oxford University Press, 1952, p. 51, que nous n'avons pas lu. Lu le 13 octobre 2026, numéro de page lu sur le bas de page du PDF."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

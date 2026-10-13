@@ -96,5 +96,214 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Gban désigne un peuple de langue mandé du Sud, installé dans le centre-ouest de la Côte d'Ivoire, dans un triangle entre Sinfra, Gagnoa et Oumé. Il est le plus souvent connu sous le nom de Gagou. Début 2021, des Gban réunis en association ont demandé qu'on les appelle Gban plutôt que Gagou. Aucune source que nous avons lue n'explique l'origine du nom Gban. Pour Gagou, deux textes disent que ce nom vient des Gouro, leurs voisins ; nous présentons plus bas ce que les sources disent de chaque nom.",
+    "names": [
+      {
+        "nameText": "Gban",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ggu",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne et que son association demande d'employer à la place de Gagou.",
+        "periodLabel": "Écrit gbã en 1971 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Début 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Gban est celui que des Gban réunis dans l'association Toany demandent d'employer à la place de Gagou, lors d'un panel tenu à Yopougon, à Abidjan, début 2021, selon le journal en ligne Afrik Soir.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Côte d'Ivoire : A la découverte du riche patrimoine culturel en déperdition du peuple Gban",
+                "author": "Afrik Soir",
+                "year": 2021,
+                "url": "https://afriksoir.net/cote-divoire-a-la-decouverte-du-riche-patrimoine-culturel-en-deperdition-du-peuple-gban/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article en ligne publié le 14 janvier 2021. Il rend compte d'un panel organisé à Yopougon (Abidjan) par l'association Toany, formée de fils et de filles gban. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "1981"
+            },
+            "era": "modern",
+            "statement": "Le nom Gban a pour forme voisine gbã, que les chercheurs Jean-Pierre Chauveau, Jean-Pierre Dozon et Jacques Richard écrivent « gbã (ou gagu) » en 1981 pour désigner le peuple chez lequel ils ont mené une de leurs enquêtes, à côté des Malinké, des Gouro, des Bété et des Baoulé.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoires de riz, histoires d'igname : le cas de la moyenne Côte d'Ivoire",
+                "author": "Jean-Pierre Chauveau, Jean-Pierre Dozon et Jacques Richard",
+                "year": 1981,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/b_fdi_04-05/04329.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Texte déposé par l'IRD, dont la copie lue n'a pas la pagination de l'imprimé. Les auteurs écrivent « gbã (ou gagu) » dans leur introduction. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1979,
+              "to": 1979,
+              "label": "1979"
+            },
+            "era": "modern",
+            "statement": "Le nom gban est celui de la langue que Joseph Le Saoult décrit en 1976 dans son Étude descriptive du gban, selon le compte rendu de Maurice Houis. Houis la dit parlée par environ 22 000 personnes dans un triangle formé par Sinfra, Gagnoa et Oumé.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Le Saoult, Joseph, Étude descriptive du gban (Côte d'Ivoire) [compte rendu]",
+                "author": "Maurice Houis",
+                "year": 1979,
+                "url": "https://www.persee.fr/doc/jafr_0399-0346_1979_num_49_2_1990_t1_0174_0000_1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 174",
+                "notes": "Journal des africanistes, tome 49, fascicule 2, 1979, p. 174. Compte rendu du livre de Joseph Le Saoult (Paris, SELAF, 1976, 447 p.). Lu le 13 octobre 2026 sur Persée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1971,
+              "to": 1971,
+              "label": "1971"
+            },
+            "era": "modern",
+            "statement": "Le nom Gban a une forme proche, gbã, dans le titre d'un article du linguiste Joseph La Saout sur les alternances de consonnes et de voyelles « en gbã, guro et nwã », paru en 1971 dans les Annales de l'université d'Abidjan. Philip Ravenhill, qui le cite, précise que ce gbã est le peuple plus connu sous le nom de Gagou. C'est la plus ancienne trace d'une forme proche de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "gbã",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Wan Language",
+                "author": "Philip L. Ravenhill",
+                "year": null,
+                "url": "https://llacan.cnrs.fr/PDF/AutresMandenkan/ravenhil1.PDF",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 58",
+                "notes": "Fiche de données de deux pages (p. 57-58), fondée sur des recherches menées de 1972 à 1974 ; la copie numérisée du LLACAN ne porte pas de date de publication. Ravenhill cite : La Saout, J., 1971, « Alternance consonantique et vocalique en gbã, guro et nwã », Annales de l'université d'Abidjan, série H (Linguistique), tome IV, fasc. 1, p. 73-87, que nous n'avons pas lu. Il écrit : « his gbã and nwã are more commonly known as Gagou and Wan respectively ». Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gagou",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Gouro (Kweni), selon deux textes",
+        "shortLine": "Le nom sous lequel ce peuple est le plus connu depuis 1924, et que beaucoup de Gban jugent péjoratif.",
+        "periodLabel": "Écrit depuis 1924 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Début 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Gagou serait un nom péjoratif que les Gouro, voisins des Gban, leur ont donné, selon Afrik Soir en 2021, qui rend compte d'un panel de l'association Toany. Un texte en ligne non daté du site Rezo-Ivoire dit aussi que ce nom est celui que les Kweni, c'est-à-dire les Gouro, donnent aux Gban, et le rattache au mot baoulé Kago.",
+            "hypothesisGroup": "origine du nom Gagou",
+            "sources": [
+              {
+                "title": "Côte d'Ivoire : A la découverte du riche patrimoine culturel en déperdition du peuple Gban",
+                "author": "Afrik Soir",
+                "year": 2021,
+                "url": "https://afriksoir.net/cote-divoire-a-la-decouverte-du-riche-patrimoine-culturel-en-deperdition-du-peuple-gban/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Article en ligne publié le 14 janvier 2021. Il rend compte d'un panel organisé à Yopougon (Abidjan) par l'association Toany, formée de fils et de filles gban. Lu le 13 octobre 2026."
+              },
+              {
+                "title": "Les Mandé du Sud",
+                "author": "Rezo-Ivoire",
+                "year": null,
+                "url": "https://rezoivoire.net/ivoire/patrimoine/2172/les-mande-du-sud.html",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Texte en ligne sur le site Rezo-Ivoire, sans date ni nom d'auteur. Il écrit : « Les Gban sont généralement connu sous le nom de Gagou (du baoulé : Kago) que leur donnent les Kweni ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1979,
+              "to": 1979,
+              "label": "1979"
+            },
+            "era": "modern",
+            "statement": "Le nom Gagou est celui sous lequel l'ethnie de langue gban est « mieux connue » en 1979, selon le linguiste Maurice Houis. Il ajoute que l'on a appelé ces gens, « à tort semble-t-il », les « petits hommes de Côte d'Ivoire », voire des « pygmées de la forêt ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Le Saoult, Joseph, Étude descriptive du gban (Côte d'Ivoire) [compte rendu]",
+                "author": "Maurice Houis",
+                "year": 1979,
+                "url": "https://www.persee.fr/doc/jafr_0399-0346_1979_num_49_2_1990_t1_0174_0000_1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 174",
+                "notes": "Journal des africanistes, tome 49, fascicule 2, 1979, p. 174. Compte rendu du livre de Joseph Le Saoult (Paris, SELAF, 1976, 447 p.). Lu le 13 octobre 2026 sur Persée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "2006"
+            },
+            "era": "modern",
+            "statement": "Le nom Gagou figure parmi les peuples mandé du Sud de la Côte d'Ivoire dans la liste de soixante groupes que le centre norvégien Landinfo publie en 2006.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Côte d'Ivoire: Ethnicity, Ivoirité and Conflict",
+                "author": "Geir Skogseth (Landinfo)",
+                "year": 2006,
+                "url": "https://www.landinfo.no/asset/514/1/514_1.pdf",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 5",
+                "notes": "Rapport du centre norvégien d'information sur les pays d'origine, daté du 2 novembre 2006. La liste des groupes mandé du Sud est à la p. 5. La liste de soixante groupes y est reprise d'une liste de 1999 (CNCCI). Elle ne dit pas d'où viennent les noms. Lu le 13 octobre 2026 dans le PDF du centre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1924,
+              "to": 1924,
+              "label": "1924"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gagou figure dans le titre du livre de l'administrateur Louis Tauxier, Nègres gouro et gagou. Centre de la Côte d'Ivoire, paru en 1924 chez Geuthner. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Nègres gouro et gagou : centre de la Côte d'Ivoire (notice de Google Livres)",
+                "author": "Louis Tauxier",
+                "year": 1924,
+                "url": "https://books.google.fr/books/about/N%C3%A8gres_gouro_et_gagou.html?id=aRoYAAAAIAAJ&redir_esc=y",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Notice de Google Livres : Paris, Librairie orientaliste Paul Geuthner, 1924, 370 pages. Nous avons lu le titre sur la notice et n'avons pas lu le livre. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

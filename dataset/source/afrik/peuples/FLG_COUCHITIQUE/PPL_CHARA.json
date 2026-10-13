@@ -100,5 +100,325 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Chara est celui que l'État éthiopien donne à un peuple de la zone de Kaffa, dans le sud-ouest de l'Éthiopie, qui se nomme lui-même Tsaratsa. D'autres noms existent, donnés par ses voisins : Tsara, Charicho, Tom, et le nom plus large de Gimira. Les sources ne s'accordent pas sur l'origine de ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Tsaratsa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "cra",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne, selon un historien éthiopien ; on ne sait pas depuis quand il est écrit.",
+        "periodLabel": "En usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tsaratsa est celui que les Chara se donnent à eux-mêmes, selon Atnafu Mitiku, qui s'appuie sur un guide des nationalités d'Éthiopie de 1978. L'État éthiopien les nomme Chara. On ne sait pas quand ce nom a été écrit pour la première fois.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A History of Chara People, South West Ethiopia ca. 1897-1991",
+                "author": "Atnafu Mitiku",
+                "year": 2017,
+                "url": "https://repository.ju.edu.et/handle/123456789/793",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Mémoire de master, Université de Jimma, octobre 2017 ; lu le 13 octobre 2026 dans la version en ligne du dépôt de l'université. Pages imprimées au bas des feuillets. Le guide cité est celui de l'Institute of Ethiopian Nationalities Study, Short Guide to know nationalities in Ethiopia (Addis-Abeba, 1978), p. 19 ; nous ne l'avons pas lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Chara",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "L'État éthiopien",
+        "shortLine": "Le nom officiel du peuple en Éthiopie ; son origine est discutée. Écrit dès 1970 sous la forme Cara.",
+        "periodLabel": "Écrit dès 1970 ; en usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Chara est celui sous lequel l'État éthiopien connaît ce peuple, selon Atnafu Mitiku. Pour lui, l'origine du mot reste confuse selon les sources, et les explications des documents écrits et de la tradition orale ne concordent pas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A History of Chara People, South West Ethiopia ca. 1897-1991",
+                "author": "Atnafu Mitiku",
+                "year": 2017,
+                "url": "https://repository.ju.edu.et/handle/123456789/793",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4 (résumé) et p. 6",
+                "notes": "Mémoire de master, Université de Jimma, octobre 2017 ; lu le 13 octobre 2026 dans la version en ligne du dépôt de l'université. Pages imprimées au bas des feuillets."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Chara viendrait du nom d'une rivière qui coule vers l'Omo, selon Addisalem Melese et Abera Mekuria (2013), que cite Atnafu Mitiku. Il remarque que ces auteurs ne donnent pas le nom de la rivière : l'argument n'explique donc pas le sens du mot.",
+            "hypothesisGroup": "origine-chara",
+            "sources": [
+              {
+                "title": "A History of Chara People, South West Ethiopia ca. 1897-1991",
+                "author": "Atnafu Mitiku",
+                "year": 2017,
+                "url": "https://repository.ju.edu.et/handle/123456789/793",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Mémoire de master, Université de Jimma, octobre 2017 ; lu le 13 octobre 2026 dans la version en ligne du dépôt de l'université. Pages imprimées au bas des feuillets. Atnafu cite Addisalem Melese et Abera Mekuria, The Ethno-History of the Chara people (Hawassa, 2013), p. 13 ; nous ne l'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Chara est aussi rapproché du mot gimera, qui veut dire « ramasseur de miel » ou « grimpeur d'arbres », selon la Commission éthiopienne du tourisme (1975), que cite Atnafu Mitiku.",
+            "hypothesisGroup": "origine-chara",
+            "sources": [
+              {
+                "title": "A History of Chara People, South West Ethiopia ca. 1897-1991",
+                "author": "Atnafu Mitiku",
+                "year": 2017,
+                "url": "https://repository.ju.edu.et/handle/123456789/793",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Mémoire de master, Université de Jimma, octobre 2017 ; lu le 13 octobre 2026 dans la version en ligne du dépôt de l'université. Pages imprimées au bas des feuillets. Atnafu cite Ethiopian Tourism Commission, Ethiopians and the House They Live In (Addis-Abeba, 1975), p. 27 ; nous ne l'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1970,
+              "to": 1970,
+              "label": "1970"
+            },
+            "era": "modern",
+            "statement": "Le nom Chara apparaît par écrit sous une forme proche, Cara, en 1970, dans un article de l'historien Amnon Orent sur l'histoire du Kaffa avant 1897 (p. 265), selon Atnafu Mitiku. Nous n'avons pas lu l'article. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A History of Chara People, South West Ethiopia ca. 1897-1991",
+                "author": "Atnafu Mitiku",
+                "year": 2017,
+                "url": "https://repository.ju.edu.et/handle/123456789/793",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Mémoire de master, Université de Jimma, octobre 2017 ; lu le 13 octobre 2026 dans la version en ligne du dépôt de l'université. Pages imprimées au bas des feuillets. Atnafu cite Amnon Orent, « Refocusing on the History of Kafa prior to 1897 », Journal of African Historical Studies, vol. 3, n° 2 (Boston, 1970), p. 265."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tsara",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Na'o",
+        "shortLine": "Le nom que les Na'o donnent à ce peuple ; deux explications le relient à sara, « clan », ou à « jumeau ».",
+        "periodLabel": "En usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Tsara viendrait de sara, une expression na'o qui veut dire « clan » ou « groupe de gens », selon l'ethnologue Werner Lange, pour qui des commerçants oromo et amhara l'auraient donné. Atnafu Mitiku juge l'explication plausible, parce qu'elle rappelle la longue voisinage des Na'o et des Chara, mais la tradition chara ne la soutient pas.",
+            "hypothesisGroup": "origine-tsara",
+            "sources": [
+              {
+                "title": "A History of Chara People, South West Ethiopia ca. 1897-1991",
+                "author": "Atnafu Mitiku",
+                "year": 2017,
+                "url": "https://repository.ju.edu.et/handle/123456789/793",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7",
+                "notes": "Mémoire de master, Université de Jimma, octobre 2017 ; lu le 13 octobre 2026 dans la version en ligne du dépôt de l'université. Pages imprimées au bas des feuillets. Atnafu cite Lange, thèse de l'université Goethe de Francfort, 1975, p. 130 ; nous n'avons pas lu Lange."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Tsara viendrait d'un mot du chara lui-même, lié au mot « jumeau », selon trois informateurs d'Atnafu Mitiku, Tekle Loti, Duchi Slite et Bachi Woshani. La tradition dit que le premier homme et la première femme sont sortis ensemble de la terre à Kumba : ils étaient deux.",
+            "hypothesisGroup": "origine-tsara",
+            "sources": [
+              {
+                "title": "Entretiens sur le sens du nom Tsara, recueillis par Atnafu Mitiku",
+                "author": "Atnafu Mitiku",
+                "year": 2017,
+                "url": "https://repository.ju.edu.et/handle/123456789/793",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "page": "p. 7",
+                "notes": "Entretiens recueillis par Atnafu Mitiku et cités dans son mémoire de master (Université de Jimma, 2017) ; lu le 13 octobre 2026.",
+                "narrative": "Tsara est un mot chara lié au mot « jumeau » : le premier homme et la première femme sortirent ensemble de la terre à Kumba",
+                "carrier": "Tekle Loti, Duchi Slite et Bachi Woshani, informateurs d'Atnafu Mitiku"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Zara est celui que l'ethnologue Ernesta Cerulli écrit pour ce peuple, selon Atnafu Mitiku, qui renvoie à Peoples of Southwest, p. 97. La thèse ne donne pas l'année de cet ouvrage, que nous n'avons pas lu.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A History of Chara People, South West Ethiopia ca. 1897-1991",
+                "author": "Atnafu Mitiku",
+                "year": 2017,
+                "url": "https://repository.ju.edu.et/handle/123456789/793",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Mémoire de master, Université de Jimma, octobre 2017 ; lu le 13 octobre 2026 dans la version en ligne du dépôt de l'université. Pages imprimées au bas des feuillets. Atnafu cite Ernesta Cerulli, Peoples of Southwest…, p. 97, sans l'année."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Charicho",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Kaffecho",
+        "shortLine": "Le nom que les Kaffecho donnent aux Chara ; on ne sait pas depuis quand.",
+        "periodLabel": "Rapporté dans un mémoire de 2017",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Charicho est celui que les Kaffecho donnent aux Chara, selon Atnafu Mitiku. On ne sait pas depuis quand ce nom est employé.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A History of Chara People, South West Ethiopia ca. 1897-1991",
+                "author": "Atnafu Mitiku",
+                "year": 2017,
+                "url": "https://repository.ju.edu.et/handle/123456789/793",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Mémoire de master, Université de Jimma, octobre 2017 ; lu le 13 octobre 2026 dans la version en ligne du dépôt de l'université. Pages imprimées au bas des feuillets."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tom",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Me'enit",
+        "shortLine": "Le nom que les Me'enit donnent aux Chara ; on ne sait pas depuis quand.",
+        "periodLabel": "Rapporté dans un mémoire de 2017",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tom est celui que les Me'enit donnent aux Chara, selon Atnafu Mitiku. On ne sait pas depuis quand ce nom est employé.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A History of Chara People, South West Ethiopia ca. 1897-1991",
+                "author": "Atnafu Mitiku",
+                "year": 2017,
+                "url": "https://repository.ju.edu.et/handle/123456789/793",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Mémoire de master, Université de Jimma, octobre 2017 ; lu le 13 octobre 2026 dans la version en ligne du dépôt de l'université. Pages imprimées au bas des feuillets."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gimira",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Werner Lange",
+        "shortLine": "Un nom large, employé par Lange pour plusieurs peuples ; les Chara le jugent insultant.",
+        "periodLabel": "Rapporté dans un mémoire de 2017",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Gimira est le terme dont l'ethnologue Werner Lange se sert pour désigner ensemble la plupart des peuples de cette région. Selon Atnafu Mitiku, il est vague, les Chara le jugent insultant, et on ne sait pas quand ni comment il a commencé d'être employé.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A History of Chara People, South West Ethiopia ca. 1897-1991",
+                "author": "Atnafu Mitiku",
+                "year": 2017,
+                "url": "https://repository.ju.edu.et/handle/123456789/793",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Mémoire de master, Université de Jimma, octobre 2017 ; lu le 13 octobre 2026 dans la version en ligne du dépôt de l'université. Pages imprimées au bas des feuillets."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

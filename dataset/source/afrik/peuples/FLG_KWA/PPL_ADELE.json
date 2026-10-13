@@ -100,5 +100,127 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Adele désigne un peuple de la frontière entre le Ghana et le Togo, et sa langue. Il se nomme lui-même Bedere, selon deux linguistes de 1952, et appelle sa langue Gidire. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas leurs traces.",
+    "names": [
+      {
+        "nameText": "Bedere",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les Adele se donnent, selon Westermann et Bryan en 1952 ; ils écrivent aussi bedre.",
+        "periodLabel": "Écrit dès 1952",
+        "accounts": [
+          {
+            "period": {
+              "from": 1952,
+              "to": 1952,
+              "label": "1952"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bedere est celui que les Adele se donnent, selon les linguistes Diedrich Westermann et M. A. Bryan, qui écrivent aussi bedre. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Languages of West Africa",
+                "author": "Diedrich Westermann et M. A. Bryan",
+                "year": 1952,
+                "url": "https://archive.org/details/languagesofwesta0000west",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Handbook of African Languages, Institut africain international, 1952. Livre en prêt numérique : nous n'avons lu que l'extrait affiché par la recherche plein texte d'Internet Archive, le 13 octobre 2026, sans voir la page ; le numéro de page n'est pas connu. L'extrait écrit aussi « own name sedere » à côté de Adele ; nous ne savons pas à quoi cette forme se rapporte."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gidire",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la langue adele dans sa propre graphie, Gɩdɩrɛ ; sa première trace reste à trouver.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Gidire est le nom de la langue adele, que Omniglot écrit Gɩdɩrɛ dans l'alphabet de la langue. Il cite aussi les formes Bedere, Bidire, Gadre et Gidere.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Omniglot - Adele language and alphabet, 2023",
+                "author": "Simon Ager (Omniglot)",
+                "year": null,
+                "url": "https://www.omniglot.com/writing/adele.htm",
+                "tier": "unverified",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Adele",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les administrations et les linguistes donnent au peuple et à sa langue ; écrit dès 1932.",
+        "periodLabel": "Écrit dès 1932",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Adele désigne une langue kwa parlée au centre du Togo et au sud-est du Ghana par environ 37 400 personnes, dont 26 400 dans la préfecture de Sotouboua et 11 000 dans le district de Nkwanta, selon Omniglot.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Omniglot - Adele language and alphabet, 2023",
+                "author": "Simon Ager (Omniglot)",
+                "year": null,
+                "url": "https://www.omniglot.com/writing/adele.htm",
+                "tier": "unverified",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1933,
+              "label": "Rapport sur l'année 1932, publié en 1933"
+            },
+            "era": "colonial",
+            "statement": "Le nom Adele apparaît par écrit dans le rapport que le gouvernement britannique remet à la Société des Nations sur le Togo sous mandat britannique. Il cite les chefs principaux de Kete Krachi, d'Adele et d'Adjuati, puis « les deux petites tribus d'Adele et d'Adjuati », dont l'histoire et les coutumes n'ont pas encore été étudiées et qui ne sont liées ni entre elles ni aux tribus voisines. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Adele",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Report on the Administration of Togoland under British Mandate for the year 1932",
+                "author": "Colonial Office du Royaume-Uni",
+                "year": 1933,
+                "url": "https://archive.org/details/report-togoland-1932",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 6, 11",
+                "notes": "Rapport du gouvernement britannique au Conseil de la Société des Nations (Colonial No. 87/1933). Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; le numéro de page imprimé a été lu sur l'image."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

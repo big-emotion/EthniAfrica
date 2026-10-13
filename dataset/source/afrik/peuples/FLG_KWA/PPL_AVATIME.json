@@ -103,5 +103,311 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Avatime désigne un peuple de sept villes des collines de la région de la Volta, au Ghana, et le pays où il vit. Ce peuple se nomme lui-même Kedanima. Avatime est le nom que lui donnent ses voisins ewe, selon Russell Schuh. Les sources ne s'accordent pas sur l'origine de ce nom ; nous les présentons plus bas. Sa plus ancienne trace écrite que nous connaissons figure en 1895 chez Carl Christian Reindorf.",
+    "names": [
+      {
+        "nameText": "Kedanima",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "avn",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; son sens est discuté.",
+        "usedIn": ["avn"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Kedanima voudrait aussi dire « ceux qui soutiennent les autres », parce que les Avatime ont toujours prêté main-forte à leurs alliés pendant les guerres entre peuples, selon Divine Kwasi Gbagbo, qui présente cette explication comme une autre opinion.",
+            "hypothesisGroup": "sens du nom Kedanima",
+            "sources": [
+              {
+                "title": "Continuity and change in the musical traditions of the Avatime of Ghana",
+                "author": "Divine Kwasi Gbagbo",
+                "year": 2012,
+                "url": "https://etd.ohiolink.edu/acprod/odb_etd/etd/r/1501/10?clear=10&p10_accession_num=kent1334588315",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 24",
+                "notes": "Mémoire de master, Kent State University, 2012. Lu le 13 octobre 2026 sur la base OhioLINK. Page 24 : le nom Kedanima voudrait aussi dire « ceux qui appuient ou soutiennent les autres »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Kedanima viendrait d'une expression qui veut dire « gens de derrière », parce que les Avatime sont arrivés les derniers dans la région, selon Divine Kwasi Gbagbo. Witty Yao Hulla l'explique de la même façon : « les derniers arrivés ».",
+            "hypothesisGroup": "sens du nom Kedanima",
+            "sources": [
+              {
+                "title": "Continuity and change in the musical traditions of the Avatime of Ghana",
+                "author": "Divine Kwasi Gbagbo",
+                "year": 2012,
+                "url": "https://etd.ohiolink.edu/acprod/odb_etd/etd/r/1501/10?clear=10&p10_accession_num=kent1334588315",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 24",
+                "notes": "Mémoire de master, Kent State University, 2012. Lu le 13 octobre 2026 sur la base OhioLINK. Page 24 : les Avatime, arrivés les derniers, ont adopté le nom Kedanima, « littéralement gens de derrière » ; l'auteur renvoie à Adipa (1996, p. 6), que nous n'avons pas ouvert."
+              },
+              {
+                "title": "Change and continuity of Edzɔxɔxɔ Linyimewavu of the people of Dzogbefeme - Avatime",
+                "author": "Witty Yao Hulla",
+                "year": 2015,
+                "url": "https://ugspace.ug.edu.gh/items/6c4c724c-0016-41b9-ae82-deac84e71c7c",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 32",
+                "notes": "Mémoire de master de philosophie, département de musique, université du Ghana, 2015. Lu le 13 octobre 2026 sur le dépôt UGSpace. Page 32 : les Avatime se nomment Kedane, ce qui veut dire « les derniers » ou « ceux qui sont arrivés les derniers »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1995,
+              "to": 1995,
+              "label": "1995"
+            },
+            "era": "modern",
+            "statement": "Le nom Kedanima désigne l'ensemble de ce peuple : au singulier, on dit Kedone pour un homme et Kededze pour une femme, selon le linguiste Russell Schuh. Sa langue s'appelle Siya, ou Siyase. Les sources ne s'accordent pas sur le sens de Kedanima ; nous présentons plus bas les explications que nous avons lues.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Aspects of Avatime phonology",
+                "author": "Russell G. Schuh",
+                "year": 1995,
+                "url": "https://doi.org/10.32473/sal.v24i1.107410",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 32",
+                "notes": "Studies in African Linguistics, vol. 24, no 1, 1995, p. 31-67. Lu le 13 octobre 2026 sur le site de la revue. Page 32 : la langue est appelée Siya ou Siyase par ses locuteurs, qui se nomment Kedanima (au masculin singulier Kedone, au féminin singulier Kededze). La source note ces mots avec des tons et des voyelles spéciales."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Avatime",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "ewe",
+        "namedBy": "Les Ewe, selon Russell Schuh",
+        "shortLine": "Le nom que les Ewe donnent à ce peuple, écrit dès 1895 ; son origine est discutée.",
+        "usedIn": ["ewe", "eng", "fra"],
+        "periodLabel": "Écrit dès 1895 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Avatime viendrait de l'ewe Avetiwome, la zone de forêt où l'on aurait demandé aux Ahanta de s'installer à leur arrivée chez les Adaklu, d'où le nom Avatimeawo, « les gens de la forêt », selon Witty Yao Hulla. Divine Kwasi Gbagbo propose la même explication sous la forme Ave-ati-me, « ceux qui habitent la forêt », et la trouve crédible.",
+            "hypothesisGroup": "origine du nom Avatime",
+            "sources": [
+              {
+                "title": "Change and continuity of Edzɔxɔxɔ Linyimewavu of the people of Dzogbefeme - Avatime",
+                "author": "Witty Yao Hulla",
+                "year": 2015,
+                "url": "https://ugspace.ug.edu.gh/items/6c4c724c-0016-41b9-ae82-deac84e71c7c",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "pp. 27-28",
+                "notes": "Mémoire de master de philosophie, département de musique, université du Ghana, 2015. Lu le 13 octobre 2026 sur le dépôt UGSpace. Page 27 : les Ahanta reçoivent l'ordre de s'installer dans la zone de forêt, que l'ewe appelle Avetiwome ; page 28 : ils prennent alors le nom Avatimeawo, « les gens de la forêt »."
+              },
+              {
+                "title": "Continuity and change in the musical traditions of the Avatime of Ghana",
+                "author": "Divine Kwasi Gbagbo",
+                "year": 2012,
+                "url": "https://etd.ohiolink.edu/acprod/odb_etd/etd/r/1501/10?clear=10&p10_accession_num=kent1334588315",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Mémoire de master, Kent State University, 2012. Lu le 13 octobre 2026 sur la base OhioLINK. Page 1 : deuxième des trois explications, Ave + ati + me (forêt + arbre + gens) : « ceux qui habitent la forêt »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Avatime viendrait de l'ewe Avati-me, « ceux qui suivent Avati », du nom du chef que la tradition donne aux Avatime depuis leur pays ahanta, selon Divine Kwasi Gbagbo. Il juge cette explication fragile : Avati est un nom ewe, ce qui étonne pour un chef venu de si loin.",
+            "hypothesisGroup": "origine du nom Avatime",
+            "actors": [
+              {
+                "name": "Avati",
+                "role": "chef que la tradition attribue aux Avatime, depuis leur pays ahanta"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Continuity and change in the musical traditions of the Avatime of Ghana",
+                "author": "Divine Kwasi Gbagbo",
+                "year": 2012,
+                "url": "https://etd.ohiolink.edu/acprod/odb_etd/etd/r/1501/10?clear=10&p10_accession_num=kent1334588315",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Mémoire de master, Kent State University, 2012. Lu le 13 octobre 2026 sur la base OhioLINK. Page 1 : première des trois explications, Avati + me (Avati + gens) : « les suivants d'Avati » ; l'auteur ajoute qu'Avati serait le chef supposé des Avatime depuis leur pays ahanta."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Avatime viendrait de l'ewe Aʋa-tsi-wo-me, que Divine Kwasi Gbagbo traduit « guerre » + « restes » + « en eux », c'est-à-dire « les guerriers ». Il trouve cette explication crédible, comme celle de la forêt.",
+            "hypothesisGroup": "origine du nom Avatime",
+            "sources": [
+              {
+                "title": "Continuity and change in the musical traditions of the Avatime of Ghana",
+                "author": "Divine Kwasi Gbagbo",
+                "year": 2012,
+                "url": "https://etd.ohiolink.edu/acprod/odb_etd/etd/r/1501/10?clear=10&p10_accession_num=kent1334588315",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Mémoire de master, Kent State University, 2012. Lu le 13 octobre 2026 sur la base OhioLINK. Page 1 : troisième des trois explications, Aʋa + tsi + wo + me (guerre + restes + dans eux) : « guerriers »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Avatime désigne à la fois les habitants de ce pays et le pays lui-même, selon Divine Kwasi Gbagbo. Ce peuple parle une autre langue que l'ewe, bien qu'on le prenne souvent pour ewe. Les trois explications du nom viennent toutes de l'ewe, mais les sources ne s'accordent pas entre elles ; nous les présentons ici.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Continuity and change in the musical traditions of the Avatime of Ghana",
+                "author": "Divine Kwasi Gbagbo",
+                "year": 2012,
+                "url": "https://etd.ohiolink.edu/acprod/odb_etd/etd/r/1501/10?clear=10&p10_accession_num=kent1334588315",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Mémoire de master, Kent State University, 2012. Lu le 13 octobre 2026 sur la base OhioLINK. Page 1 : le nom désigne les habitants et leur pays ; les trois écoles d'étymologie s'accordent sur une origine ewe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1995,
+              "to": 1995,
+              "label": "1995"
+            },
+            "era": "modern",
+            "statement": "Le nom Avatime est l'appellation ewe de ce peuple, écrit Russell Schuh, qui la garde parce qu'elle est la plus répandue, dans les ouvrages comme au Ghana, pour parler du peuple et de sa langue.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Aspects of Avatime phonology",
+                "author": "Russell G. Schuh",
+                "year": 1995,
+                "url": "https://doi.org/10.32473/sal.v24i1.107410",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 32",
+                "notes": "Studies in African Linguistics, vol. 24, no 1, 1995, p. 31-67. Lu le 13 octobre 2026 sur le site de la revue. Page 32 : « Avatime est l'appellation ewe, mais je la conserve ici car c'est le terme le plus employé dans la littérature et au Ghana » (traduction de l'équipe)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1898,
+              "to": 1898,
+              "label": "1898"
+            },
+            "era": "colonial",
+            "statement": "Le nom Avatime viendrait d'une expression qui voudrait dire « une partie est allée plus loin », selon Rudolf Plehn, qui rapporte ce que lui ont dit les Avatime. Après leur installation dans les montagnes, une partie d'entre eux serait repartie vers le nord et aurait disparu ; ceux qui sont restés auraient alors pris ce nom.",
+            "hypothesisGroup": "origine du nom Avatime",
+            "sources": [
+              {
+                "title": "Beiträge zur Völkerkunde des Togo-Gebietes",
+                "author": "Rudolf Plehn",
+                "year": 1898,
+                "url": "https://archive.org/details/beitrgezurvlkerk00pleh",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18",
+                "notes": "Thèse de doctorat, université de Halle, 1898 ; la pagination citée est celle de cette thèse. Lu en allemand dans la numérisation d'Internet Archive ; traduction de l'équipe. Page 18 : « Sie hätten darauf erst den Namen Avatime (ein Theil ist weiter gegangen) angenommen », au conditionnel dans le texte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "1895"
+            },
+            "statement": "Le nom Avatime apparaît par écrit dans l'Histoire de la Côte de l'Or de Carl Christian Reindorf, qui cite une armée venue d'Avatime parmi les forces réunies par le chef Adsheshi contre le roi Akoto d'Akwamu. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Avatime",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The History of the Gold Coast and Asante",
+                "author": "Carl Christian Reindorf",
+                "year": 1895,
+                "url": "https://archive.org/details/historyofgoldcoa00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 253",
+                "notes": "Bâle, chez l'auteur, 1895. Lu dans la numérisation d'Internet Archive. Page 253 : « He got a large army from Avatime, Angula, etc. » ; le nom revient page 255. Page lue sur l'image de la page."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant l'arrivée des Avatime"
+            },
+            "statement": "On parle alors des Baya pour désigner la population qui vivait déjà dans ces montagnes, selon Rudolf Plehn, qui écrit qu'elle a disparu. Pour Divine Kwasi Gbagbo, les Baya et les Avatime ont combattu ensemble, puis les derniers Baya ont rejoint la communauté avatime.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Beiträge zur Völkerkunde des Togo-Gebietes",
+                "author": "Rudolf Plehn",
+                "year": 1898,
+                "url": "https://archive.org/details/beitrgezurvlkerk00pleh",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18",
+                "notes": "Thèse de doctorat, université de Halle, 1898 ; la pagination citée est celle de cette thèse. Lu en allemand dans la numérisation d'Internet Archive ; traduction de l'équipe. Page 18 : « Die ehemalige Bevölkerung der Landschaft, die Bayas, ist verschwunden »."
+              },
+              {
+                "title": "Continuity and change in the musical traditions of the Avatime of Ghana",
+                "author": "Divine Kwasi Gbagbo",
+                "year": 2012,
+                "url": "https://etd.ohiolink.edu/acprod/odb_etd/etd/r/1501/10?clear=10&p10_accession_num=kent1334588315",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 23",
+                "notes": "Mémoire de master, Kent State University, 2012. Lu le 13 octobre 2026 sur la base OhioLINK. Page 23 : les Baya et les Avatime à Oxulosu ont formé une force militaire commune, puis les restes des Baya ont été absorbés."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
