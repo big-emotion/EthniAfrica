@@ -118,5 +118,175 @@
         "source_kind": "official_statistics"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Manala désigne l'une des deux branches des Ndebele du Sud, en Afrique du Sud, installée autour de Pretoria. Elle fait remonter son nom à Manala, fils aîné du chef Musi. On l'appelle aussi abagaMabhena, du nom de la famille qui la dirige. Les noms plus larges AmaNdebele, Ndebele du Sud et Ndebele du Transvaal, qui réunissent aussi les Ndzundza, sont présentés avec l'histoire des Ndebele d'Afrique du Sud.",
+    "names": [
+      {
+        "nameText": "Manala",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nbl",
+        "namedBy": null,
+        "shortLine": "Le nom de la branche aînée des Ndebele du Sud, venu d'un fils du chef Musi.",
+        "periodLabel": "Écrit dès 1905 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Manala désigne les descendants de Manala, fils aîné du chef Musi, selon South African History Online. Il avait été désigné pour succéder à son père ; son frère Ndzundza lui a contesté cette place, puis, ayant perdu, est parti vers l'est, laissant Manala devenir chef du domaine paternel.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "South African History Online — Ndebele",
+                "author": "South African History Online",
+                "year": null,
+                "url": "https://sahistory.org.za/article/ndebele",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Page publiée le 24 mars 2011 et mise à jour le 20 juillet 2026, sans auteur nommé ; lue le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1935,
+              "label": "Proposée en 1905, reprise en 1935"
+            },
+            "era": "colonial",
+            "statement": "Le nom Manala viendrait du fils du chef Musi qui le portait : les Ndebele du sud tirent leurs noms de ses fils, selon The Native Tribes of the Transvaal en 1905, puis selon l'ethnologue N. J. van Warmelo en 1935, qui écrit que les Manala et les Ndzundza, groupes nommés d'après eux, font remonter leur origine à ses deux fils Manala et Ndzundza. Aucune des deux sources ne dit ce que le mot Manala voudrait dire.",
+            "hypothesisGroup": "origine du nom Manala",
+            "sources": [
+              {
+                "title": "The Native Tribes of the Transvaal",
+                "author": "General Staff, War Office, Royaume-Uni",
+                "year": 1905,
+                "url": "https://archive.org/details/nativetribesoftr00grea",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 33",
+                "notes": "Londres, Harrison and Sons pour His Majesty's Stationery Office, 1905. Ouvrage préparé pour l'état-major britannique ; lu dans l'exemplaire numérisé sur archive.org le 13 octobre 2026. Le numéro 33 est imprimé en tête de la page ; la section sur les Manala s'y trouve en entier."
+              },
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 87",
+                "notes": "Ethnological Publications, vol. V, Pretoria, Government Printer, 1935, publié par le département des Affaires indigènes ; lu dans l'exemplaire numérisé par l'université de Pretoria le 13 octobre 2026. Le passage « To his two sons Manala and Ndzundza » est à la page 87, numéro lu sur l'image de la page."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1935,
+              "to": 1935,
+              "label": "1935"
+            },
+            "era": "modern",
+            "statement": "Le nom Manala apparaît en 1935 sous la forme abagaManala chez l'ethnologue N. J. van Warmelo, qui l'écrit comme celui d'un groupe dirigé par Lot Mabhena. Il le dit aussi connu comme abagaMabhena, du nom de louange (isibongo) de la famille qui le dirige. Ce groupe vit alors autour de Hamanskraal, Rayton et Pretoria.",
+            "formAsWritten": "abagaManala",
+            "sources": [
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 88",
+                "notes": "Ethnological Publications, vol. V, Pretoria, Government Printer, 1935, publié par le département des Affaires indigènes ; lu dans l'exemplaire numérisé par l'université de Pretoria le 13 octobre 2026. Tableau « 15. Southern Transvaal Ndebele » de la page 88, numéro lu sur l'image de la page."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Manala apparaît par écrit en 1905 dans The Native Tribes of the Transvaal, un ouvrage préparé pour l'état-major britannique. Il y figure comme celui de l'un des quatre fils d'un chef nommé Musi, et comme celui de la « Manala section », dirigée par le chef Nyumba Mabena à Wallmansthal, avec environ 4 000 personnes. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Manala",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Native Tribes of the Transvaal",
+                "author": "General Staff, War Office, Royaume-Uni",
+                "year": 1905,
+                "url": "https://archive.org/details/nativetribesoftr00grea",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 33",
+                "notes": "Londres, Harrison and Sons pour His Majesty's Stationery Office, 1905. Ouvrage préparé pour l'état-major britannique ; lu dans l'exemplaire numérisé sur archive.org le 13 octobre 2026. Le numéro 33 est imprimé en tête de la page ; la section sur les Manala s'y trouve en entier."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mabhena",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la famille qui dirige les Manala, écrit Mabena dès 1905.",
+        "periodLabel": "Écrit dès 1905",
+        "accounts": [
+          {
+            "period": {
+              "from": 1935,
+              "to": 1935,
+              "label": "1935"
+            },
+            "era": "modern",
+            "statement": "Le nom abagaMabhena est, selon l'ethnologue N. J. van Warmelo, un autre nom du groupe des Manala : Mabhena est le nom de louange (isibongo) de la famille qui le dirige, et Lot Mabhena en est alors le chef.",
+            "formAsWritten": "abagaMabhena",
+            "sources": [
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 88",
+                "notes": "Ethnological Publications, vol. V, Pretoria, Government Printer, 1935, publié par le département des Affaires indigènes ; lu dans l'exemplaire numérisé par l'université de Pretoria le 13 octobre 2026. Tableau « 15. Southern Transvaal Ndebele » de la page 88, numéro lu sur l'image de la page."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mabhena a une forme proche, Mabena, dans The Native Tribes of the Transvaal, en 1905 : l'ouvrage appelle Nyumba Mabena le chef actuel de la section manala, installé à Wallmansthal. Il ne dit pas encore que Mabena est le nom de la famille régnante. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Mabena",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Native Tribes of the Transvaal",
+                "author": "General Staff, War Office, Royaume-Uni",
+                "year": 1905,
+                "url": "https://archive.org/details/nativetribesoftr00grea",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 33",
+                "notes": "Londres, Harrison and Sons pour His Majesty's Stationery Office, 1905. Ouvrage préparé pour l'état-major britannique ; lu dans l'exemplaire numérisé sur archive.org le 13 octobre 2026. Le numéro 33 est imprimé en tête de la page ; la section sur les Manala s'y trouve en entier."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

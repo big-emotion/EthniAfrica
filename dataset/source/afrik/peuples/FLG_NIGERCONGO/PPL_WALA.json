@@ -95,5 +95,131 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Wala désigne les gens de la ville de Wa, dans le nord-ouest du Ghana, et ceux qui reconnaissent l'autorité de son chef, le Wa Na. Selon l'historien Ivor Wilks, ceux qu'on range parmi les Wala se désignent eux-mêmes ainsi. Le nom viendrait du nom de la ville, Wa, selon l'anthropologue Robert Rattray, que Wilks cite ; nous présentons cette explication plus bas. La plus ancienne trace de ce nom que nous connaissons date du recensement de 1921.",
+    "names": [
+      {
+        "nameText": "Wala",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des gens de Wa et de ceux qui suivent le Wa Na ; il viendrait du nom de la ville, selon Rattray.",
+        "periodLabel": "Écrit dès 1921 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1989,
+              "to": 1989,
+              "label": "Rapportée en 1989"
+            },
+            "era": "modern",
+            "statement": "Le nom Wala viendrait du nom de la capitale, Wa : l'anthropologue Robert Rattray y voit un simple titre donné au hasard, appliqué aux peuples très divers qui sont, de nom, sous l'autorité du chef de Wa, selon Ivor Wilks, qui le cite. Wilks n'est pas d'accord avec tout : pour lui, les Wala sont ceux qui reconnaissent cette autorité et se disent partie du système de gouvernement dont les Wa Na font partie.",
+            "hypothesisGroup": "origine du nom Wala",
+            "sources": [
+              {
+                "title": "Wa and the Wala: Islam and Polity in Northwestern Ghana",
+                "author": "Ivor Wilks",
+                "year": 1989,
+                "url": "https://assets.cambridge.org/97805213/62108/sample/9780521362108ws.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 16",
+                "notes": "Cambridge University Press, 1989. Lu dans l'extrait que l'éditeur met en ligne (début du chapitre 1), le 13 octobre 2026 ; page imprimée lue sur l'image. Wilks écrit que Rattray s'exprimait « half a century ago » ; nous n'avons pas ouvert Rattray."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1989,
+              "to": 1989,
+              "label": "1989"
+            },
+            "era": "modern",
+            "statement": "Le nom Wala désigne, chez Ivor Wilks, ceux qui reconnaissent l'autorité des Wa Na et se disent partie du système de gouvernement dont ces chefs font partie : il ne désigne pas un groupe de même origine. Wilks écrit que les musulmans de culture mande qu'on range parmi les Wala se disent Wala, et que la classe dirigeante, d'origine mamprusi, se dit Wala pour presque tout, et parfois Wala piene, « Wala blancs ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Wa and the Wala: Islam and Polity in Northwestern Ghana",
+                "author": "Ivor Wilks",
+                "year": 1989,
+                "url": "https://assets.cambridge.org/97805213/62108/sample/9780521362108ws.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 16",
+                "notes": "Cambridge University Press, 1989. Lu dans l'extrait que l'éditeur met en ligne (début du chapitre 1), le 13 octobre 2026 ; page imprimée lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1925,
+              "to": 1925,
+              "label": "1925"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wala figure en 1925 dans un ordre en conseil du gouverneur de la Côte-de-l'Or, qui précise que le district de Wa comprend toutes les terres soumises au chef de la « Wala tribe ». Wilks cite ce passage. Nous n'avons pas ouvert l'ordre lui-même.",
+            "formAsWritten": "Wala",
+            "sources": [
+              {
+                "title": "Wa and the Wala: Islam and Polity in Northwestern Ghana",
+                "author": "Ivor Wilks",
+                "year": 1989,
+                "url": "https://assets.cambridge.org/97805213/62108/sample/9780521362108ws.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10",
+                "notes": "Cambridge University Press, 1989. Lu dans l'extrait que l'éditeur met en ligne (début du chapitre 1), le 13 octobre 2026 ; page imprimée lue sur l'image. Passage cité par Wilks entre guillemets, avec la note 16 que l'extrait ne contient pas."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wala apparaît par écrit en 1921, dans le recensement du district de Wa, qui classe les habitants par « tribu » et compte 16 905 Wala, selon Ivor Wilks. Nous n'avons pas ouvert le recensement lui-même. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Wala",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Wa and the Wala: Islam and Polity in Northwestern Ghana",
+                "author": "Ivor Wilks",
+                "year": 1989,
+                "url": "https://assets.cambridge.org/97805213/62108/sample/9780521362108ws.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 13",
+                "notes": "Cambridge University Press, 1989. Lu dans l'extrait que l'éditeur met en ligne (début du chapitre 1), le 13 octobre 2026 ; page imprimée lue sur l'image. Chiffres du recensement de 1921 rapportés par Wilks."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1898,
+              "to": 1898,
+              "label": "1898"
+            },
+            "statement": "On parle alors du « country of Wa », le pays de Wa, et non d'un peuple wala : le capitaine D. Mackworth, dans un rapport de renseignement militaire du 6 juin 1898, appelle ainsi l'ensemble des districts qui reconnaissent le roi de Wa pour chef, selon Ivor Wilks, qui le cite.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Wa and the Wala: Islam and Polity in Northwestern Ghana",
+                "author": "Ivor Wilks",
+                "year": 1989,
+                "url": "https://assets.cambridge.org/97805213/62108/sample/9780521362108ws.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10",
+                "notes": "Cambridge University Press, 1989. Lu dans l'extrait que l'éditeur met en ligne (début du chapitre 1), le 13 octobre 2026 ; page imprimée lue sur l'image. Rapport de Mackworth cité par Wilks ; nous n'avons pas ouvert le rapport."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

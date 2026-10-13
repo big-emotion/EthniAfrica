@@ -107,5 +107,131 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Lengola désigne un peuple de la forêt du centre-est de la République démocratique du Congo, de part et d'autre du Lualaba, et sa langue. Selon un ancien interrogé à Ubundu en 2020, ses ancêtres se disaient Aengoa ; Balila est un autre nom que des archives coloniales donnent à une partie d'entre eux. D'après ce même ancien, le nom Balengola viendrait d'un malentendu avec les colonisateurs. C'est la seule explication que nous avons lue.",
+    "names": [
+      {
+        "nameText": "Lengola",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "lej",
+        "namedBy": null,
+        "shortLine": "Le nom courant de ce peuple de la forêt du Lualaba ; un ancien le tire d'un malentendu avec les colonisateurs.",
+        "periodLabel": "Écrit dès 1932 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Recueillie en 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Balengola viendrait d'un malentendu : quand les colonisateurs ont demandé aux anciens qui ils étaient, ceux-ci auraient répondu qu'ils étaient les Aengoa ; les colonisateurs ne comprenant pas leur langue, ils auraient écrit Balengola. C'est ce que raconte un ancien lengola interrogé à Ubundu en février 2020, selon Birgit Ricquier et ses coauteurs. C'est la seule explication que nous avons lue.",
+            "hypothesisGroup": "origine du nom Lengola",
+            "sources": [
+              {
+                "title": "Paths in the eastern Congo rainforest: Vernacular histories, colonial interpretations and linguistic data on the settlement of the lower Lualaba",
+                "author": "Birgit Ricquier, Laurent Nieblas Ramirez, Alexandre Livingstone Smith, Shingo Takamura, David Kopa Wa Kopa et Véronique Joiris",
+                "year": 2023,
+                "url": "https://journals.openedition.org/afriques/4465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 58",
+                "notes": "Afriques, n° 14, 2023, mis en ligne le 5 février 2024. Lu sur OpenEdition Journals le 13 octobre 2026 ; le texte en ligne n'est pas paginé, les passages sont repérés par paragraphe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lengola figure en 1932 dans un texte d'archive de Van Belle, selon Birgit Ricquier et ses coauteurs, qui le lisent dans les archives : les Lengola de la rive gauche disent ne pas connaître ceux de la rive droite, tout en s'avouant « frères de tribu ». Nous n'avons pas ouvert ce texte et nous ne savons pas comment Van Belle écrit le nom. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Lengola",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Paths in the eastern Congo rainforest: Vernacular histories, colonial interpretations and linguistic data on the settlement of the lower Lualaba",
+                "author": "Birgit Ricquier, Laurent Nieblas Ramirez, Alexandre Livingstone Smith, Shingo Takamura, David Kopa Wa Kopa et Véronique Joiris",
+                "year": 2023,
+                "url": "https://journals.openedition.org/afriques/4465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 59",
+                "notes": "Afriques, n° 14, 2023, mis en ligne le 5 février 2024. Lu sur OpenEdition Journals le 13 octobre 2026 ; le texte en ligne n'est pas paginé, les passages sont repérés par paragraphe."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Aengoa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lej",
+        "namedBy": null,
+        "shortLine": "Le nom que les anciens auraient donné aux colonisateurs, selon un ancien interrogé en 2020.",
+        "periodLabel": "Rapporté en 2020",
+        "accounts": [
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Recueillie en 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Aengoa est, selon un ancien lengola interrogé à Ubundu en février 2020, celui que ses ancêtres ont donné aux colonisateurs quand ceux-ci leur ont demandé qui ils étaient. C'est la seule source que nous avons lue qui le donne.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Paths in the eastern Congo rainforest: Vernacular histories, colonial interpretations and linguistic data on the settlement of the lower Lualaba",
+                "author": "Birgit Ricquier, Laurent Nieblas Ramirez, Alexandre Livingstone Smith, Shingo Takamura, David Kopa Wa Kopa et Véronique Joiris",
+                "year": 2023,
+                "url": "https://journals.openedition.org/afriques/4465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 58",
+                "notes": "Afriques, n° 14, 2023, mis en ligne le 5 février 2024. Lu sur OpenEdition Journals le 13 octobre 2026 ; le texte en ligne n'est pas paginé, les passages sont repérés par paragraphe."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Balila",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom que des archives donnent aux Lengola de Kilima Pondo à Kisangani.",
+        "periodLabel": "Date non précisée",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Date non précisée"
+            },
+            "statement": "Le nom Balila désigne les Lengola de Kilima Pondo à Kisangani, alors que ceux d'Ubundu ont gardé le nom de Lengola, selon un document d'archive sans auteur ni date que citent Birgit Ricquier et ses coauteurs. Nous ne savons ni qui a donné ce nom ni d'où il vient.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Paths in the eastern Congo rainforest: Vernacular histories, colonial interpretations and linguistic data on the settlement of the lower Lualaba",
+                "author": "Birgit Ricquier, Laurent Nieblas Ramirez, Alexandre Livingstone Smith, Shingo Takamura, David Kopa Wa Kopa et Véronique Joiris",
+                "year": 2023,
+                "url": "https://journals.openedition.org/afriques/4465",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 59",
+                "notes": "Afriques, n° 14, 2023, mis en ligne le 5 février 2024. Lu sur OpenEdition Journals le 13 octobre 2026 ; le texte en ligne n'est pas paginé, les passages sont repérés par paragraphe."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
