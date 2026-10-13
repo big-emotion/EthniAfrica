@@ -2,10 +2,9 @@
 import { readdirSync, readFileSync } from "node:fs";
 import { extname, join, relative } from "node:path";
 import postcss from "postcss";
-import tailwindcss from "tailwindcss";
+import tailwindcss from "@tailwindcss/postcss";
 import { describe, expect, it } from "vitest";
 
-import tailwindConfig from "../../../../tailwind.config";
 import { CHARTER_FOCUS_RING } from "../charter-motion";
 
 /**
@@ -16,15 +15,12 @@ import { CHARTER_FOCUS_RING } from "../charter-motion";
  * config can.
  */
 async function compileUtilities(classNames: string): Promise<string> {
-  const result = await postcss([
-    tailwindcss({
-      ...tailwindConfig,
-      content: [
-        { raw: `<div class="${classNames}"></div>`, extension: "html" },
-      ],
-      corePlugins: { preflight: false },
-    }),
-  ]).process("@tailwind utilities;", { from: undefined });
+  const result = await postcss([tailwindcss()]).process(
+    `@import "tailwindcss" source(none);
+@config "./tailwind.config.ts";
+@source inline("${classNames}");`,
+    { from: join(process.cwd(), "focus-ring-test.css") }
+  );
   return result.css;
 }
 

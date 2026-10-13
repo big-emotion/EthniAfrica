@@ -54,7 +54,7 @@
 
 "use strict";
 
-/** `text-[14px]`, `xl:text-[10px]`, `text-[0.875rem]` — but not `text-[length:var(…)]`. */
+/** `text-[14px]`, `xl:text-[10px]`, `text-[0.875rem]` — but not a typed CSS variable font-size utility. */
 const ARBITRARY_UTILITY_RE = /\btext-\[\d+(?:\.\d+)?(?:px|rem|em)\]/;
 
 /** A `font-size` declaration and everything up to its terminator. */

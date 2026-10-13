@@ -121,6 +121,8 @@ describe("/[lang]/signalements page", () => {
 
   // @req REQ-014
   it("exports the public index metadata and caches its data for one minute", async () => {
+    vi.resetModules();
+    await import("../page");
     const metadata = await generateMetadata({ params: routeParams("fr") });
 
     expect(metadata).toMatchObject({

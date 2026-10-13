@@ -31,12 +31,7 @@
     "e2e/**/*.ts"
   ],
   "tailwind": { "entry": ["tailwind.config.ts!"] },
-  "ignoreDependencies": [
-    "sharp",
-    "puppeteer",
-    "@storybook/blocks",
-    "tailwindcss-animate"
-  ],
+  "ignoreDependencies": ["sharp", "puppeteer", "tailwindcss-animate"],
   "ignoreBinaries": ["vale"],
   "ignoreExportsUsedInFile": true
 }
