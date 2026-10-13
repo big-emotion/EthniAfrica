@@ -76,5 +76,108 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Kabila à un peuple en République démocratique du Congo. Nous n'avons pas encore consulté de source consacrée à ce nom. Nos fiches relatent la prise de pouvoir de Laurent-Désiré Kabila et ses effets sur les Ngbande. Ce récit ne renseigne pas sur l'origine du nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kabila est un nom porté en République démocratique du Congo. C'est aussi un mot swahili qui veut dire « tribu », et un nom d'esprit chez les Luba du Katanga. Il est écrit dès 1871 comme le nom d'une source chaude du pays des Manyema. On ne sait pas avec certitude d'où il vient ; nous présentons plus bas l'explication que nous avons trouvée.",
+    "names": [
+      {
+        "nameText": "Kabila",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom porté en RD Congo, écrit dès 1871 pour une source chaude ; on ne sait pas avec certitude d'où il vient.",
+        "periodLabel": "Écrit dès 1871 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Proposée en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Kabila viendrait du nom d'un esprit luba que les familles donnaient à leurs enfants avant l'arrivée du christianisme, selon Johan Roelstraete, qui cite Kabila avec Mwamba et Ngoy parmi ces noms d'esprits ou de génies.",
+            "hypothesisGroup": "origine du nom Kabila",
+            "sources": [
+              {
+                "title": "Congo en familiegeschiedenis — Wewe ni nani? (Wie ben je?)",
+                "author": "Johan Roelstraete",
+                "year": 2016,
+                "url": "https://www.familiegeschiedenis.be/sites/default/files/inline-files/Vlaamse_Stam_2016_3_Wewe_ni_nani.pdf",
+                "tier": "unverified",
+                "source_kind": "community",
+                "page": "p. 233",
+                "notes": "Vlaamse Stam, 52e année, n° 3, juillet-septembre 2016, revue de généalogie flamande, et non publication linguistique : page 233, section sur la nomination au Congo : chez les Luba, avant le christianisme, on choisissait des noms d'esprits ou de génies « zoals Kabila, Mwamba, Ngoy ». L'auteur ne cite pas de source pour ce point ; il en cite une pour le passage sur les Nande. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1882,
+              "to": 1882,
+              "label": "Sens du mot noté en 1882"
+            },
+            "statement": "Le nom Kabila est aussi un mot swahili : Johann Ludwig Krapf le définit en 1882 par « tribu, clan », un groupe moins étendu que le taifa, et le rapproche d'un mot arabe. Aucune source lue ne dit que le nom de famille vient de ce mot.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Dictionary of the Suahili Language",
+                "author": "Johann Ludwig Krapf",
+                "year": 1882,
+                "url": "https://archive.org/details/bwb_T5-CQF-144",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 123",
+                "notes": "Londres, 1882, article « kabila » : « tribe, clan, a subdivision less than taifa », avec renvoi à un mot arabe écrit en caractères arabes. Page vue en image sur Internet Archive. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kabila est celui d'esprits luba que décrit le missionnaire Pierre Colle : « Kabila la mendiante » et « Kabila femme ou fille de l'esprit ». Chacun est représenté par une statuette de femme assise.",
+            "sources": [
+              {
+                "title": "Les Baluba (Congo belge), tome II",
+                "author": "Pierre Colle",
+                "year": 1913,
+                "url": "https://archive.org/details/lesbalubacongob02coll",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 441",
+                "notes": "Bruxelles, Albert Dewit, 1913, tome II ; exemplaire numérisé sur archive.org. Page 441, liste des esprits et de leurs statuettes : « Kabila ka lulombo » et « Kabila ka vilye ». Missionnaire des Pères blancs, cité pour les formes qu'il écrit. Pagination vérifiée sur la page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1871,
+              "to": 1874,
+              "label": "Voyage de 1871, journal publié en 1874"
+            },
+            "era": "polity",
+            "statement": "Le nom Kabila apparaît par écrit dans le journal de David Livingstone : le 20 septembre 1871, dans le pays des Manyema, il campe près de la source chaude « appelée Kabila ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle nomme une source, pas une famille.",
+            "formAsWritten": "Kabila",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Last Journals of David Livingstone, in Central Africa, from 1865 to his Death, vol. II",
+                "author": "David Livingstone, édité par Horace Waller",
+                "year": 1874,
+                "url": "https://archive.org/details/lastjournalsofda02livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 153",
+                "notes": "Londres, John Murray, 1874, volume II ; exemplaire numérisé sur archive.org. Page 153, entrée du 20 septembre 1871 : « near the hot fountain called Kabila which is about blood-heat ». Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

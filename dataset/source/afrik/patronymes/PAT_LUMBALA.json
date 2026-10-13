@@ -122,5 +122,44 @@
       "fieldPath": "bearers",
       "reason": "Une personnalité politique congolaise vivante porte ce nom, mais aucune source consultée ne documente son origine ethnique dans ses propres mots ; aucun porteur décédé rattaché de façon spécifique à ce nom n'a pu être identifié avec une source assez solide pour être cité ici."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Lumbala est un nom de personne porté chez les Luba du Kasaï, en République démocratique du Congo : un récit missionnaire de 1935 le donne à un garçon luba, en 1916. On ne sait pas avec certitude d'où il vient ni ce qu'il veut dire : les sources lues ne le disent pas.",
+    "names": [
+      {
+        "nameText": "Lumbala",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom porté chez les Luba du Kasaï, écrit en 1935 pour un garçon luba ; son sens reste inconnu.",
+        "periodLabel": "Écrit dès 1935 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1916,
+              "to": 1935,
+              "label": "Récit de 1916, publié en 1935"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lumbala apparaît par écrit dans le récit du missionnaire C. R. Stegall : en 1916, un garçon d'environ huit ans qui suit une caravane entre Lusambo et Luebo répond « Mon nom est Lumbala ». La légende de la photographie le dit luba. C'est la plus ancienne trace de ce nom que le projet connaît ; elle nomme un garçon, pas une famille.",
+            "formAsWritten": "Lumbala",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Young Chief Makes His Choice",
+                "author": "C. R. Stegall",
+                "year": 1935,
+                "url": "https://archive.org/details/sim_presbyterians-today_1935-07_25_7",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 422",
+                "notes": "The Presbyterian Survey, juillet 1935 (numéro numérisé sous le titre The Presbyterians Today, volume 25, numéro 7). Page 422 : « My name is Lumbala » ; légende de la photographie : « Lumbala, a Baluba boy ». Récit de missionnaire, écrit dix-neuf ans après les faits. Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

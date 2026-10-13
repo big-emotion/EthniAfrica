@@ -86,5 +86,52 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Lumumba est un nom du Congo, connu par Patrice Lumumba, que les sources lues présentent comme tetela. On ne sait pas avec certitude d'où il vient ni ce qu'il veut dire : ces sources ne le disent pas, et nous n'avons pas trouvé de trace écrite ancienne du nom.",
+    "names": [
+      {
+        "nameText": "Lumumba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom porté en RD Congo, connu par Patrice Lumumba, présenté comme tetela ; son sens reste inconnu.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2010,
+              "to": 2010,
+              "label": "Décrit en 2010"
+            },
+            "era": "modern",
+            "statement": "Le nom Lumumba est celui de Patrice Lumumba, que le dictionnaire de Kisangani et Bobb présente comme tetela ; il situe les Tetela entre Lusambo et le haut fleuve Congo. L'Encyclopaedia Africana le dit aussi d'origine tetela. Aucune de ces sources ne dit ce que le nom veut dire.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Historical Dictionary of the Democratic Republic of the Congo, Third Edition",
+                "author": "Emizet François Kisangani et F. Scott Bobb",
+                "year": 2010,
+                "url": "https://shcas.shnu.edu.cn/_upload/article/files/dc/3d/863da74f4f1dbe922dc9702d9de9/a6f95c07-9183-4c78-a7c4-ec5ea565507a.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 321 et p. 501",
+                "notes": "Lanham, Scarecrow Press, 2010 ; copie non officielle, hébergée par un site universitaire. Page 321, entrée « Lumumba, Patrice Emery » ; page 501, entrée « Tetela » : « Patrice Lumumba was a Tetela ». Lu le 13 octobre 2026."
+              },
+              {
+                "title": "Lumumba, Patrice Emery",
+                "author": "Encyclopaedia Africana",
+                "year": null,
+                "url": "https://encyclopaediaafricana.com/lumumba-p-e/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page web de l'Encyclopaedia Africana, sans date visible ; elle écrit « Lumumba was of Tetela ethnic origins ». Elle ne traite pas de l'origine du nom. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

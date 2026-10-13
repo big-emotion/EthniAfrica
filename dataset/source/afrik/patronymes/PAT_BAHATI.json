@@ -84,5 +84,138 @@
       "fieldPath": "homonyms",
       "reason": "La recherche web combinant « Bahati », « patronyme », « origine », « clan », « alliance », « caste », « obituary » et « homonyme », qui comprenait le terme « homonyme », et la lecture de « Adaptation to land scarcity among small-scale farming households in South Kivu in the Democratic Republic of the Congo » et « Meaning, origin and history of the name Bahati » n'ont pas établi de lignée homonyme d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Bahati est un nom de personne porté au Congo, qui est aussi un mot swahili : il veut dire « chance, fortune ». Il est écrit dès 1873 comme le nom d'une femme de l'entourage de David Livingstone. Les sources ne s'accordent pas sur l'origine du mot, persane ou arabe ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Bahati",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom porté au Congo, aussi un mot swahili pour « chance » ; écrit dès 1873.",
+        "periodLabel": "Écrit dès 1873 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Décrit en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Bahati est porté en RD Congo comme nom de personne : il figure dans le nom de Dieudonné Bahati Shamamba, de l'Université catholique de Bukavu, auteur d'un article de 2023 sur le Sud-Kivu. L'article ne traite ni de l'origine du nom ni de sa transmission.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Adaptation to land scarcity among small-scale farming households in South Kivu in the Democratic Republic of the Congo",
+                "author": "Dieudonné Bahati Shamamba et al.",
+                "year": 2023,
+                "url": "https://www.frontiersin.org/journals/sustainable-food-systems/articles/10.3389/fsufs.2023.1277031/full",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Frontiers in Sustainable Food Systems, volume 7, 2023, DOI 10.3389/fsufs.2023.1277031. Le nom Bahati figure dans la liste des auteurs et dans l'affiliation à Bukavu ; la première partie de l'article a été lue. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1882,
+              "to": 1903,
+              "label": "Sens du mot noté en 1882 et en 1903"
+            },
+            "statement": "Le nom Bahati est aussi un mot swahili qui veut dire « chance, fortune », bonne ou mauvaise : c'est ce que donnent les dictionnaires de Krapf (1882) et de Madan (1903). Ils ne s'accordent pas sur l'origine du mot ; nous les présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Dictionary of the Suahili Language",
+                "author": "Johann Ludwig Krapf",
+                "year": 1882,
+                "url": "https://archive.org/details/bwb_T5-CQF-144",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 20",
+                "notes": "Londres, 1882, article « bakhti (bahati) » : « luck, fortune, chance ». Page vue en image. Lu le 13 octobre 2026."
+              },
+              {
+                "title": "Swahili-English Dictionary",
+                "author": "Arthur Cornwallis Madan",
+                "year": 1903,
+                "url": "https://archive.org/details/swahilienglishdi00madarich",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 20",
+                "notes": "Oxford, Clarendon Press, 1903, article « Bahati » : « fortune, chance, luck ». Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1903,
+              "to": 1903,
+              "label": "Proposée en 1903"
+            },
+            "statement": "Le nom Bahati viendrait d'un mot arabe, selon Arthur Cornwallis Madan, qui indique le mot comme arabe dans son dictionnaire swahili-anglais.",
+            "hypothesisGroup": "origine du mot bahati",
+            "sources": [
+              {
+                "title": "Swahili-English Dictionary",
+                "author": "Arthur Cornwallis Madan",
+                "year": 1903,
+                "url": "https://archive.org/details/swahilienglishdi00madarich",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 20",
+                "notes": "Oxford, Clarendon Press, 1903, article « Bahati » : l'étymologie est notée « Ar. ». Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1882,
+              "to": 1882,
+              "label": "Proposée en 1882"
+            },
+            "statement": "Le nom Bahati viendrait d'un mot persan, selon Johann Ludwig Krapf, qui écrit le mot bakhti et le range comme « mot persan ».",
+            "hypothesisGroup": "origine du mot bahati",
+            "sources": [
+              {
+                "title": "A Dictionary of the Suahili Language",
+                "author": "Johann Ludwig Krapf",
+                "year": 1882,
+                "url": "https://archive.org/details/bwb_T5-CQF-144",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 20",
+                "notes": "Londres, 1882, article « bakhti (bahati) » : « vox Pers. ». Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1873,
+              "to": 1874,
+              "label": "Récit de 1873, publié en 1874"
+            },
+            "era": "polity",
+            "statement": "Le nom Bahati apparaît par écrit dans le récit de la marche des compagnons de David Livingstone après sa mort : dans la caravane de Susi et de Chuma, Kaniki et Bahati, deux des femmes, meurent en quelques jours de maladie. C'est la plus ancienne trace de ce nom comme nom de personne que le projet connaît ; elle nomme une femme, pas une famille.",
+            "formAsWritten": "Bahati",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Last Journals of David Livingstone, in Central Africa, from 1865 to his Death, vol. II",
+                "author": "David Livingstone, édité par Horace Waller",
+                "year": 1874,
+                "url": "https://archive.org/details/lastjournalsofda02livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 320",
+                "notes": "Londres, John Murray, 1874, volume II ; exemplaire numérisé sur archive.org. Page 320 : « Kaniki and Bahati, two of the women, expired in a few days ». Récit rédigé par Horace Waller d'après Susi et Chuma, en-tête de page « 1873 ». Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
