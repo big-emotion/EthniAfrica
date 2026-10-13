@@ -100,5 +100,272 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Shinasha désigne un peuple du nord-ouest de l'Éthiopie, dans la zone de Metekel, et sa langue. Les Shinasha disent se nommer eux-mêmes Boro. D'autres noms existent : Sinicho et Dängäbo, que des Oromo leur ont donnés. Les sources ne s'accordent pas sur l'origine du nom Shinasha ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Boro",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bwo",
+        "namedBy": null,
+        "shortLine": "Le nom que les Shinasha disent se donner, d'après un ancêtre ; une source le dit plus ancien que Shinasha.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Boro viendrait d'un ancêtre appelé Boro, l'un des fils de Shao, selon des anciens shinasha que rapporte l'historien Abebe Ano Alula. Ils disent que leur nom d'origine n'est pas Shinasha mais Boro, et qu'ils se disent encore Boro.",
+            "hypothesisGroup": "boro-origine",
+            "sources": [
+              {
+                "title": "The Shinasha Relation with other Gonga People",
+                "author": "Abebe Ano Alula",
+                "year": 2012,
+                "url": "https://journals.wgu.edu.et/index.php/star/article/download/37/32",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 116",
+                "notes": "Science, Technology and Arts Research Journal (STAR Journal), vol. 1, n° 3, juillet-septembre 2012, p. 115-125, Université de Wollega. Lu le 13 octobre 2026 dans le PDF de la revue. L'auteur a interrogé des anciens de Bullen, Dibate, Dangur et Wonbara. Les anciens interrogés sont des informateurs oraux ; leurs noms ne sont pas donnés."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Boro est un nom plus ancien du groupe, selon une source universitaire que cite la Commission de l'immigration et du statut de réfugié du Canada en 2014 ; Shinasha reste le nom le plus courant. On ne sait pas avec certitude quand le nom Boro a été écrit pour la première fois.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ethiopia: Situation of the Shinasha ethnic group, including treatment by the majority population and authorities (2012-July 2014) [ETH104906.E]",
+                "author": "Immigration and Refugee Board of Canada, Research Directorate",
+                "year": 2014,
+                "url": "https://www.ecoi.net/en/document/1292401.html",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Réponse à une demande d'information du 15 juillet 2014, lue le 13 octobre 2026 sur ecoi.net. Elle cite Alula (2012) pour « Boro is an older name for the group » et indique que Shinasha est le nom le plus courant."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Shinasha",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom le plus courant, donné de l'extérieur ; sa plus ancienne trace connue, Xinâx, remonte à 1622.",
+        "periodLabel": "Écrit Xinâx dès 1622 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Shinasha viendrait de l'expression amharique shi-nna-shi, « des multitudes », que les Amhara auraient lancée quand ils attaquèrent le pays de Damot : « des milliers de Shinasha sont venus nous envahir ». Elle viendrait de la foule de gens chassés des hautes terres, selon des informateurs shinasha et l'érudit Aleqa Taye (1987), que rapporte Abebe Ano Alula.",
+            "hypothesisGroup": "shinasha-origine",
+            "sources": [
+              {
+                "title": "The Shinasha Relation with other Gonga People",
+                "author": "Abebe Ano Alula",
+                "year": 2012,
+                "url": "https://journals.wgu.edu.et/index.php/star/article/download/37/32",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 116",
+                "notes": "Science, Technology and Arts Research Journal (STAR Journal), vol. 1, n° 3, juillet-septembre 2012, p. 115-125, Université de Wollega. Lu le 13 octobre 2026 dans le PDF de la revue. L'auteur a interrogé des anciens de Bullen, Dibate, Dangur et Wonbara. Alula cite Taye (1987), que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Date non précisée"
+            },
+            "statement": "Le nom Shinasha serait une insulte à Kaffa et à Dauro, où Schinascha ou Sinitscho voudrait dire à peu près Waito, « mangeur de viande impure », selon Antoine d'Abbadie, que cite l'ethnologue Friedrich Julius Bieber en 1920. Nous n'avons pas lu d'Abbadie, et Bieber ne donne pas la date du passage.",
+            "hypothesisGroup": "shinasha-origine",
+            "sources": [
+              {
+                "title": "Kaffa : ein altkuschitisches Volkstum in Inner-Afrika, vol. I",
+                "author": "Friedrich Julius Bieber",
+                "year": 1920,
+                "url": "https://archive.org/details/kaffaeinaltkusch02bieb",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 53",
+                "notes": "Münster, Aschendorff, collection Anthropos, 1920. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, page vérifiée sur l'image. Bieber cite d'Abbadie sans donner son texte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Date non précisée"
+            },
+            "statement": "Le nom Sinasse figure chez le voyageur portugais Manuel de Almeida comme une ville principale des Gonga, qui semble être un lieu shinasha, selon Abebe Ano Alula. Nous n'avons pas lu Almeida et Alula ne donne pas la date du passage ; il renvoie à l'édition de Beckingham et Huntingford (1954). Les sources ne disent pas s'il s'agit du même nom.",
+            "formAsWritten": "Sinasse",
+            "sources": [
+              {
+                "title": "The Shinasha Relation with other Gonga People",
+                "author": "Abebe Ano Alula",
+                "year": 2012,
+                "url": "https://journals.wgu.edu.et/index.php/star/article/download/37/32",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 116",
+                "notes": "Science, Technology and Arts Research Journal (STAR Journal), vol. 1, n° 3, juillet-septembre 2012, p. 115-125, Université de Wollega. Lu le 13 octobre 2026 dans le PDF de la revue. L'auteur a interrogé des anciens de Bullen, Dibate, Dangur et Wonbara. Alula renvoie à Beckingham et Huntingford (1954), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Date non précisée"
+            },
+            "statement": "Le nom Shinasha est donné par le voyageur britannique Charles Beke comme celui de la dernière région où l'on parle la langue gonga ; il le dit être le Chinchon des Portugais. Nous n'avons pas lu Beke et Bieber, qui le cite en 1920, ne donne pas la date.",
+            "formAsWritten": "Shinasha",
+            "sources": [
+              {
+                "title": "Kaffa : ein altkuschitisches Volkstum in Inner-Afrika, vol. I",
+                "author": "Friedrich Julius Bieber",
+                "year": 1920,
+                "url": "https://archive.org/details/kaffaeinaltkusch02bieb",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 52",
+                "notes": "Münster, Aschendorff, collection Anthropos, 1920. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, page vérifiée sur l'image. Bieber cite Beke sans donner la date de son texte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1622,
+              "to": 1622,
+              "label": "1622"
+            },
+            "era": "polity",
+            "statement": "Le nom Shinasha apparaît sous une forme proche, Xinâx, chez le missionnaire jésuite Pedro Páez, dans son histoire de l'Éthiopie rédigée en 1622 : il écrit que le pays de Xinâx est habité par des Gonga. Nous n'avons pas lu Páez ; l'ethnologue Friedrich Julius Bieber le rapporte en 1920. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Xinâx",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Kaffa : ein altkuschitisches Volkstum in Inner-Afrika, vol. I",
+                "author": "Friedrich Julius Bieber",
+                "year": 1920,
+                "url": "https://archive.org/details/kaffaeinaltkusch02bieb",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3 et p. 50",
+                "notes": "Münster, Aschendorff, collection Anthropos, 1920. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, page vérifiée sur l'image. Page 3 : l'ouvrage de Páez, rédigé en 1622 et publié en 1906 par Camillo Beccari. Page 50 : « das Land Xinâx (Schinascha) von Gonga bewohnt ». Páez n'a pas été lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sinicho",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des Oromo",
+        "shortLine": "Le nom que des Oromo donnent aux Shinasha, d'après le piment ; sa plus ancienne trace connue date de 1920.",
+        "periodLabel": "Écrit dès 1920",
+        "accounts": [
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Sinicho voudrait dire « piment fort » en oromo : les Oromo auraient associé les Shinasha à ce piment à cause de leur forte résistance à l'expansion oromo, selon l'historien Tessema Ta'a (1980), que rapporte Abebe Ano Alula. Des informateurs de Wonbara disent que les Oromo installés là les appellent encore ainsi.",
+            "hypothesisGroup": "sinicho-sens",
+            "sources": [
+              {
+                "title": "The Shinasha Relation with other Gonga People",
+                "author": "Abebe Ano Alula",
+                "year": 2012,
+                "url": "https://journals.wgu.edu.et/index.php/star/article/download/37/32",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 116",
+                "notes": "Science, Technology and Arts Research Journal (STAR Journal), vol. 1, n° 3, juillet-septembre 2012, p. 115-125, Université de Wollega. Lu le 13 octobre 2026 dans le PDF de la revue. L'auteur a interrogé des anciens de Bullen, Dibate, Dangur et Wonbara. Alula cite Tessema (1980), que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "polity",
+            "statement": "Le nom Sinicho apparaît sous les formes Sinico et Sinitscho chez Antoine d'Abbadie, qui le donne pour le nom du peuple gonga, selon l'ethnologue Friedrich Julius Bieber, qui le rapporte en 1920. Nous n'avons pas lu d'Abbadie, et Bieber ne donne pas la date du passage. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Sinitscho",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Kaffa : ein altkuschitisches Volkstum in Inner-Afrika, vol. I",
+                "author": "Friedrich Julius Bieber",
+                "year": 1920,
+                "url": "https://archive.org/details/kaffaeinaltkusch02bieb",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 53",
+                "notes": "Münster, Aschendorff, collection Anthropos, 1920. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, page vérifiée sur l'image. Bieber cite d'Abbadie sans donner son texte ; la date retenue est celle de Bieber."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dängäbo",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des Oromo",
+        "shortLine": "Un autre nom que des Oromo donnent aux Shinasha, tiré d'un lieu du Metekel.",
+        "periodLabel": "En usage chez des Oromo du Metekel",
+        "accounts": [
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Dängäbo est un nom que des Oromo donnent aux Shinasha du Metekel. Il viendrait du nom d'un lieu, Dängäb : les Oromo arrivés dans la région auraient appelé les Shinasha d'après cet endroit, selon l'historien Abebe Ano Alula. On ne sait pas avec certitude quand ce nom a été écrit pour la première fois.",
+            "hypothesisGroup": "dangabo-sens",
+            "sources": [
+              {
+                "title": "The Shinasha Relation with other Gonga People",
+                "author": "Abebe Ano Alula",
+                "year": 2012,
+                "url": "https://journals.wgu.edu.et/index.php/star/article/download/37/32",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 116",
+                "notes": "Science, Technology and Arts Research Journal (STAR Journal), vol. 1, n° 3, juillet-septembre 2012, p. 115-125, Université de Wollega. Lu le 13 octobre 2026 dans le PDF de la revue. L'auteur a interrogé des anciens de Bullen, Dibate, Dangur et Wonbara. Alula s'appuie sur ses informateurs oraux du Metekel."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

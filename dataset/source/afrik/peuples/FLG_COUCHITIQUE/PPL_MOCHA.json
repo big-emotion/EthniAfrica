@@ -109,5 +109,149 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Mocha désigne, chez des voyageurs et des linguistes, un royaume puis une langue du sud-ouest de l'Éthiopie. Le peuple concerné se nomme Shekkacho. Les sources que nous avons lues ne disent pas avec certitude si tous les Moca des écrits anciens sont les Shekkacho d'aujourd'hui ; nous présentons plus bas ce qu'elles disent.",
+    "names": [
+      {
+        "nameText": "Shekkacho",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "moy",
+        "namedBy": null,
+        "shortLine": "Le nom du peuple de la zone de Sheka ; on ne sait pas quand il a été écrit pour la première fois.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2007,
+              "to": 2007,
+              "label": "2007"
+            },
+            "era": "modern",
+            "statement": "Le nom Shekacho désigne le plus grand groupe de la zone de Sheka, dans le sud-ouest de l'Éthiopie, où il représente 34,7 % de la population. Au recensement de 2007, 77 561 personnes se sont déclarées Shekacho et 37 576 Sheko, que ce recensement compte comme deux groupes. On ne sait pas avec certitude quand le nom Shekkacho a été écrit pour la première fois.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ethiopia: Situation of the Shekha ethnic group, including the relation to the Ogaden ethnic group, the Ethiopian and Somali Regional Administration, and the Ogaden National Liberation Front (2013-2015)",
+                "author": "Immigration and Refugee Board of Canada, Research Directorate",
+                "year": 2015,
+                "url": "https://www.ecoi.net/en/document/1297530.html",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Réponse à une demande d'information, publiée sur ecoi.net le 1er octobre 2015 et lue le 13 octobre 2026. Le document traite d'abord d'un autre groupe, appelé Shekha ; il cite aussi le recensement éthiopien de 2007 pour les Shekacho et les Sheko, d'où viennent les chiffres."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mocha",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un royaume puis d'une langue du sud-ouest de l'Éthiopie ; sa plus ancienne trace lue, Moccia, date de 1886.",
+        "periodLabel": "Écrit Moccia dès 1886",
+        "accounts": [
+          {
+            "period": {
+              "from": 1959,
+              "to": 1959,
+              "label": "1959"
+            },
+            "era": "modern",
+            "statement": "Le nom Mocǎ sert de titre au dictionnaire du linguiste Wolf Leslau, publié en 1959 par les presses de l'université de Californie, qui décrit la langue du sud-ouest de l'Éthiopie que l'on appelle aujourd'hui shekkacho. Un site sur les traductions de la Bible en Éthiopie liste Mocha parmi les noms de cette langue. Nous n'avons pas lu le dictionnaire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A dictionary of Mocǎ (southwestern Ethiopia)",
+                "author": "Wolf Leslau",
+                "year": 1959,
+                "url": "https://openlibrary.org/books/OL217235M",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Notice du catalogue Open Library : Berkeley, University of California Press, 1959, 83 pages, University of California Publications in Linguistics, vol. 18. Lue le 13 octobre 2026 ; seule la notice a été lue."
+              },
+              {
+                "title": "Shekkacho",
+                "author": "EthiopiaScripture.org",
+                "year": null,
+                "url": "https://ethiopiascripture.org/languages/s/shekkacho",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "notes": "Page d'un site sur les traductions de la Bible en Éthiopie, lue le 13 octobre 2026. Elle liste les noms de la langue : Mocha, Shakacho, Shekacho, Shekecho, Shekicho, Shekka, Šakačo, Šekki noono ; elle n'explique pas leur origine."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "polity",
+            "statement": "Le nom Moca est, selon l'ethnologue Friedrich Julius Bieber, celui que les Oromo donnent à la tribu Scheqo du peuple Sche et à son pays. Bieber parle aussi du roi de Motscha, ou Scheqo, la tribu la plus au nord des Sche, qui se soumet au ras Tessama en février 1898. Les sources ne disent pas si ce Moca est le peuple shekkacho ou un autre peuple sche, comme les Sheko.",
+            "formAsWritten": "Moca",
+            "sources": [
+              {
+                "title": "Kaffa : ein altkuschitisches Volkstum in Inner-Afrika, vol. I",
+                "author": "Friedrich Julius Bieber",
+                "year": 1920,
+                "url": "https://archive.org/details/kaffaeinaltkusch02bieb",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 123 et p. 103",
+                "notes": "Münster, Aschendorff, collection Anthropos, 1920. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, page vérifiée sur l'image. Page 123 : « den Stamm Scheqo der Sche und dessen Land mit dem Namen Moca » ; page 103 : la soumission du roi de Motscha. Les deux pages ont été vérifiées sur l'image. Bieber est cité sur la fiche du peuple sheko, pour la forme Schako."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Date non précisée"
+            },
+            "statement": "Le nom Mocha figure, à côté de Sheka, dans une liste du voyageur portugais Manuel de Almeida que cite l'historien Abebe Ano Alula en 2012 : les Gonga comprendraient les Kafa, les Shinasha, les Bosha ou Garo, les Mao ou Anfillo et les Sheka ou Mocha. Nous n'avons pas lu Almeida et Alula ne donne pas la date du passage.",
+            "formAsWritten": "Mocha",
+            "sources": [
+              {
+                "title": "The Shinasha Relation with other Gonga People",
+                "author": "Abebe Ano Alula",
+                "year": 2012,
+                "url": "https://journals.wgu.edu.et/index.php/star/article/download/37/32",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 121",
+                "notes": "Science, Technology and Arts Research Journal (STAR Journal), vol. 1, n° 3, juillet-septembre 2012, p. 115-125, Université de Wollega. Lu le 13 octobre 2026 dans le PDF de la revue. L'auteur a interrogé des anciens de Bullen, Dibate, Dangur et Wonbara. Alula donne la liste entre guillemets sans référence de page pour Almeida."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1886,
+              "to": 1886,
+              "label": "1886"
+            },
+            "era": "polity",
+            "statement": "Le nom Moccia apparaît par écrit dans le récit de l'explorateur italien Antonio Cecchi : selon ses guides, le royaume de Moccia s'étend au nord du mont Mulata, dans la région de Ghera. Il parle plus loin des terres de Moccia ou Seco, de l'autre côté de la rivière Gabbà. C'est la plus ancienne trace de ce nom que le projet a lue. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Moccia",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Da Zeila alle frontiere del Caffa, vol. II",
+                "author": "Antonio Cecchi",
+                "year": 1886,
+                "url": "https://archive.org/details/dazeilaallefront02cecc",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 388 et p. 465",
+                "notes": "Roma, Ermanno Loescher, 1886, publié par la Société géographique italienne. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, page vérifiée sur l'image. Page 388 : « il regno di Moccia e i Nonnò-Ilù » ; page 465 : « quelle di Moccia o Seco »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
