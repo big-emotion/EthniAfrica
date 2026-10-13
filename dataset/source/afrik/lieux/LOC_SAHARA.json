@@ -37,7 +37,7 @@
     },
     {
       "field": "nameHistory.names[0].accounts",
-      "reason": "Nous avons lu al-Idrīsī et Ibn Khaldūn en traduction française. Le mot arabe exact qu'ils emploient reste à vérifier dans le texte original."
+      "reason": "Nous avons vérifié le mot arabe d'al-Idrīsī dans le texte original : al-ṣaḥrāʾ. Nous avons lu Ibn Khaldūn seulement en traduction française : le mot arabe qu'il emploie reste à vérifier."
     },
     {
       "field": "nameHistory.names[0].accounts",
@@ -101,7 +101,8 @@
       "url": "https://archive.org/details/descriptiondela00idrgoog",
       "tier": "referenced",
       "source_kind": "archive",
-      "notes": "Ouvrage achevé en 1154 ; lu dans la traduction française de 1866, le mot arabe exact n'a pas été vérifié."
+      "page": "traduction, p. 9 ; texte arabe, p. 7-8",
+      "notes": "Ouvrage achevé en 1154. Traduction française, p. 9 ; texte arabe, p. 7-8, où le mot est al-ṣaḥrāʾ."
     },
     {
       "title": "Chronica do descobrimento e conquista de Guiné",
@@ -120,8 +121,8 @@
       "url": "https://archive.org/details/historyanddescr03porygoog",
       "tier": "referenced",
       "source_kind": "archive",
-      "page": "livre I, vers la p. 124",
-      "notes": "Texte italien imprimé à Venise en 1550 ; Pory a traduit la version latine de 1556. La graphie italienne n'a pas été vérifiée."
+      "page": "livre I, p. 124",
+      "notes": "Texte italien imprimé à Venise en 1550 ; Pory a traduit la version latine de 1556. La graphie « Sarra » a été vérifiée dans l'édition italienne de 1583 ; nous n'avons pas vu celle de 1550."
     },
     {
       "title": "Purchas his Pilgrimage",
@@ -130,7 +131,8 @@
       "url": "https://archive.org/details/purchashispilgri00purc_0",
       "tier": "referenced",
       "source_kind": "archive",
-      "notes": "Livre VI, sur l'Afrique."
+      "page": "livre III, p. 228 ; livre VI, p. 535",
+      "notes": "« Zahara » au livre III, sur l'Asie ; « Sarra » au livre VI, sur l'Afrique."
     },
     {
       "title": "Histoires, livre IV, chapitres 181 et 185",
@@ -157,8 +159,8 @@
       "url": "https://archive.org/details/foucauld-touareg-abrege-2",
       "tier": "referenced",
       "source_kind": "linguistic_reference",
-      "page": "p. 975",
-      "notes": "Article ténéré."
+      "page": "p. 275 et p. 303",
+      "notes": "Articles ténéré, p. 275, et tănezrouft, p. 303."
     },
     {
       "title": "Dictionnaire français-touareg (dialecte des Taïtoq)",
@@ -167,7 +169,7 @@
       "url": "https://archive.org/details/masqueray-dictionnaire-francais-touareg",
       "tier": "referenced",
       "source_kind": "linguistic_reference",
-      "page": "p. 85-86",
+      "page": "p. 85",
       "notes": "Article « Désert »."
     }
   ],
@@ -298,7 +300,7 @@
               "label": "1154"
             },
             "era": "polity",
-            "statement": "Le nom Sahara désigne, chez le géographe al-Idrīsī en 1154, « le grand désert qui sépare le Soudan du pays des Berbers », selon la traduction française de son livre. Le Soudan est alors le pays des peuples noirs, au sud du désert.",
+            "statement": "Le nom Sahara désigne, chez le géographe al-Idrīsī en 1154, « le grand désert (Sahara) qui sépare le Soudan du pays des Berbers », selon la traduction française de son livre. Le texte arabe dit al-ṣaḥrāʾ al-muttaṣila, « le désert d'un seul tenant », entre la terre des Noirs et celle des Berbères. Le mot « grand » et le mot « Sahara » entre parenthèses viennent des traducteurs. Le Soudan est alors le pays des peuples noirs, au sud du désert.",
             "birth": true,
             "aspect": "usage",
             "actors": [
@@ -315,7 +317,8 @@
                 "url": "https://archive.org/details/descriptiondela00idrgoog",
                 "tier": "referenced",
                 "source_kind": "archive",
-                "notes": "Ouvrage achevé en 1154 ; lu dans la traduction française de 1866, le mot arabe exact n'a pas été vérifié."
+                "page": "traduction, p. 9 ; texte arabe, p. 7-8",
+                "notes": "Ouvrage achevé en 1154. Traduction française, p. 9 ; texte arabe, p. 7-8, où le mot est al-ṣaḥrāʾ."
               },
               {
                 "title": "al-Ṣaḥrāʾ",
@@ -383,8 +386,8 @@
                 "url": "https://archive.org/details/historyanddescr03porygoog",
                 "tier": "referenced",
                 "source_kind": "archive",
-                "page": "livre I, vers la p. 124",
-                "notes": "Texte italien imprimé à Venise en 1550 ; Pory a traduit la version latine de 1556. La graphie italienne n'a pas été vérifiée."
+                "page": "livre I, p. 124",
+                "notes": "Texte italien imprimé à Venise en 1550 ; Pory a traduit la version latine de 1556. La graphie « Sarra » a été vérifiée dans l'édition italienne de 1583 ; nous n'avons pas vu celle de 1550."
               }
             ]
           },
@@ -395,7 +398,7 @@
               "label": "1613"
             },
             "era": "polity",
-            "statement": "Le nom Sahara entre dans la langue anglaise en 1613, selon l'Oxford English Dictionary, chez Samuel Purchas. Celui-ci reprend Léon l'Africain et écrit « Sarra », puis « Zahara ».",
+            "statement": "Le nom Sahara entre dans la langue anglaise en 1613, selon l'Oxford English Dictionary, chez Samuel Purchas. Celui-ci écrit « Zahara » dans un passage sur les écoles de droit musulman. Plus loin dans le même livre, il reprend Léon l'Africain et écrit « Sarra ».",
             "aspect": "usage",
             "sources": [
               {
@@ -414,7 +417,8 @@
                 "url": "https://archive.org/details/purchashispilgri00purc_0",
                 "tier": "referenced",
                 "source_kind": "archive",
-                "notes": "Livre VI, sur l'Afrique."
+                "page": "livre III, p. 228 ; livre VI, p. 535",
+                "notes": "« Zahara » au livre III, sur l'Asie ; « Sarra » au livre VI, sur l'Afrique."
               }
             ]
           },
@@ -454,7 +458,7 @@
               "label": "Ve siècle av. J.-C."
             },
             "era": "polity",
-            "statement": "Le nom Libye désigne chez Hérodote toute l'Afrique à l'ouest de l'Égypte ; le désert n'en est que l'intérieur, au-delà d'une ligne de dunes qui va de Thèbes d'Égypte aux colonnes d'Hercule.",
+            "statement": "Le nom Libye désigne chez Hérodote toute l'Afrique à l'ouest de l'Égypte ; le désert n'en est que l'intérieur, au-delà d'une crête de sable qui va de Thèbes d'Égypte aux colonnes d'Hercule.",
             "sources": [
               {
                 "title": "Histoires, livre IV, chapitres 181 et 185",
@@ -474,7 +478,7 @@
               "label": "De 1550 à 1613 au moins"
             },
             "era": "polity",
-            "statement": "Le nom Libye reste le nom européen du désert chez Léon l'Africain en 1550, chez son traducteur anglais en 1600 et chez Samuel Purchas en 1613, qui ajoutent que les Arabes l'appellent Sarra.",
+            "statement": "Le nom Libye reste le nom du désert dans les livres d'Europe : chez Léon l'Africain en 1550, qui le donne comme le nom latin, chez son traducteur anglais en 1600 et chez Samuel Purchas en 1613. Ils ajoutent que les Arabes l'appellent Sarra.",
             "aspect": "usage",
             "sources": [
               {
@@ -484,8 +488,8 @@
                 "url": "https://archive.org/details/historyanddescr03porygoog",
                 "tier": "referenced",
                 "source_kind": "archive",
-                "page": "livre I, vers la p. 124",
-                "notes": "Texte italien imprimé à Venise en 1550 ; Pory a traduit la version latine de 1556. La graphie italienne n'a pas été vérifiée."
+                "page": "livre I, p. 124",
+                "notes": "Texte italien imprimé à Venise en 1550 ; Pory a traduit la version latine de 1556. La graphie « Sarra » a été vérifiée dans l'édition italienne de 1583 ; nous n'avons pas vu celle de 1550."
               },
               {
                 "title": "Purchas his Pilgrimage",
