@@ -78,5 +78,44 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Kayembe », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de le rapport « Scramble for the Congo: Anatomy of an Ugly War » et son annexe prosopographique sur les forces armées congolaises, n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kayembe est un nom de famille de la République démocratique du Congo. Un rapport de 2000 présente un porteur de ce nom comme un Luba du Kasaï. On ne sait pas avec certitude ce que le nom veut dire ni d'où il vient : les sources lues ne le disent pas.",
+    "names": [
+      {
+        "nameText": "Kayembe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille congolais, porté par un Luba du Kasaï en 2000 ; son sens est inconnu.",
+        "periodLabel": "Écrit dès 2000 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2000,
+              "to": 2000,
+              "label": "Rapport du 20 décembre 2000"
+            },
+            "era": "modern",
+            "statement": "Le nom Kayembe apparaît par écrit dans l'annexe D d'un rapport de l'International Crisis Group, qui présente le général Dieudonné Kayembe comme un Luba du Kasaï. C'est la plus ancienne trace de ce nom que le projet connaît ; le rapport donne l'origine du porteur, pas celle du nom, et le nom est plus ancien que lui.",
+            "formAsWritten": "Kayembe",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Scramble for the Congo: Anatomy of an Ugly War",
+                "author": "International Crisis Group",
+                "year": 2000,
+                "url": "https://www.justice.gov/file/275476/dl?inline=",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "annexe D, page 119 du PDF",
+                "notes": "Rapport n° 26 de l'International Crisis Group pour l'Afrique, 20 décembre 2000, conservé dans le dépôt documentaire du Department of Justice des États-Unis, lu en entier. L'annexe D décrit « Major General Dieudonné Kayembe » comme « A Luba from Kasai ». Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

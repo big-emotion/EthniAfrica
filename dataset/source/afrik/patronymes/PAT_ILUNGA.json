@@ -80,5 +80,86 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Ilunga », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la consultation de le « Historical Dictionary of the Democratic Republic of the Congo » et la recherche de l'explication populaire dite « intraduisible », rejetée faute de source linguistique n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ilunga est un nom luba du Congo. Il est écrit dès 1890 dans une tradition lunda, comme le nom d'un chasseur. Les sources lues ne donnent pas son sens ; on ne sait pas avec certitude d'où il vient.",
+    "names": [
+      {
+        "nameText": "Ilunga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom luba, écrit dès 1890 dans une tradition lunda comme nom d'un chasseur ; son sens reste inconnu.",
+        "periodLabel": "Écrit dès 1890 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2010,
+              "to": 2010,
+              "label": "Légende rapportée en 2010"
+            },
+            "era": "modern",
+            "statement": "Le nom Ilunga est celui de deux figures de la légende luba : Kalala Ilunga, neveu de Kongolo, et son parent Kibinda Ilunga, qui serait parti vers 1600 fonder l'empire lunda, selon Kisangani et Bobb. Le dictionnaire ne donne pas de sens au nom.",
+            "sources": [
+              {
+                "title": "Historical Dictionary of the Democratic Republic of the Congo, Third Edition",
+                "author": "Emizet François Kisangani et F. Scott Bobb",
+                "year": 2010,
+                "url": "https://shcas.shnu.edu.cn/_upload/article/files/dc/3d/863da74f4f1dbe922dc9702d9de9/a6f95c07-9183-4c78-a7c4-ec5ea565507a.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 255 et p. 274",
+                "notes": "Lanham, Scarecrow Press, 2010 ; copie non officielle, hébergée par un site universitaire. Page 255, entrée « Kalala Ilunga » (« According to legend… A nephew of Kongolo ») ; page 274, entrée « Kibinda Ilunga ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ilunga est celui d'Ilunga Nsungu, que le missionnaire Pierre Colle appelle « l'un des ancêtres de la race » des Luba : la confrérie du mbulye ya mutuma serait née près du lac Kisale, au pays d'Ilunga Nsungu.",
+            "sources": [
+              {
+                "title": "Les Baluba (Congo belge), tome II",
+                "author": "R. P. Colle",
+                "year": 1913,
+                "url": "https://archive.org/details/lesbalubacongob02coll",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 567-568",
+                "notes": "Bruxelles, Albert Dewit, 1913, tome II ; exemplaire numérisé sur archive.org. Pages 567-568, confrérie du mbulye ya mutuma : « au pays de Ilunga nsungu, l'un des ancêtres de la race ». Missionnaire des Pères blancs, cité pour ce qu'il rapporte. Pagination vérifiée sur la page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1890,
+              "to": 1890,
+              "label": "Récit publié en 1890"
+            },
+            "era": "polity",
+            "statement": "Le nom Ilunga apparaît par écrit dans la tradition lunda que publie Henrique de Carvalho : c'est le nom d'un chasseur, un « chibinda », qui arrive avec un groupe de jeunes chasseurs sur les bords du Cajidixi, là où les servantes de la reine Luéji se baignent. C'est la plus ancienne trace de ce nom que le projet connaît ; elle nomme un personnage de tradition, pas une famille d'aujourd'hui.",
+            "formAsWritten": "Ilunga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Ethnographia e historia tradicional dos povos da Lunda",
+                "author": "Henrique Augusto Dias de Carvalho",
+                "year": 1890,
+                "url": "https://archive.org/details/ethnographiaehi00carvgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 66-67",
+                "notes": "Lisbonne, Imprimerie nationale, 1890 ; exemplaire numérisé sur archive.org. Page 66 : « Vinha á frente d'esse grupo o chibinda (čibida « caçador ») Ilunga » ; page 67 : « Ilunga mandou acampar ». Officier portugais, cité pour la tradition qu'il recueille. Pages vues en image. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -92,5 +92,74 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Kalonji », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de la notice « Lumumba, Patrice Emery » de l'Encyclopaedia Africana et l'entrée MPNS de Kew, n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kalonji est un nom du Kasaï, en République démocratique du Congo. Il est écrit dès 1955 comme le nom d'un groupe luba, les Kalonji, dans un récit de guerre. On ne sait pas avec certitude d'où il vient, ni ce qu'il veut dire : les sources lues ne le disent pas.",
+    "names": [
+      {
+        "nameText": "Kalonji",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom du Kasaï, écrit dès 1955 pour un groupe luba ; les sources lues n'en donnent pas le sens.",
+        "periodLabel": "Écrit dès 1955 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1959,
+              "to": 1959,
+              "label": "Juillet 1959"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kalonji est devenu en juillet 1959 le nom d'une aile du Mouvement national congolais, le MNC/Kalonji, d'après Albert Kalonji, porte-parole des Luba du Kasaï qui venait de quitter le parti avec d'autres responsables, selon le dictionnaire de Kisangani et Bobb et l'Encyclopaedia Africana.",
+            "sources": [
+              {
+                "title": "Historical Dictionary of the Democratic Republic of the Congo, Third Edition",
+                "author": "Emizet François Kisangani et F. Scott Bobb",
+                "year": 2010,
+                "url": "https://shcas.shnu.edu.cn/_upload/article/files/dc/3d/863da74f4f1dbe922dc9702d9de9/a6f95c07-9183-4c78-a7c4-ec5ea565507a.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 256",
+                "notes": "Lanham, Scarecrow Press, 2010 ; copie non officielle, hébergée par un site universitaire. Page 256, entrée « Kalonji Ditunga, Albert » : il rompt avec le MNC en juillet 1959 et forme un groupe « known as MNC/Kalonji ». Lu le 13 octobre 2026."
+              },
+              {
+                "title": "Lumumba, Patrice Emery",
+                "author": "Encyclopaedia Africana",
+                "year": null,
+                "url": "https://encyclopaediaafricana.com/lumumba-p-e/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page web de l'Encyclopaedia Africana, sans date visible ; elle dit que l'une des ailes du MNC est connue comme « M.N.C./Kalonji, after a Luba Kasai spokesman, Albert Kalonji ». Elle ne donne pas d'étymologie du nom. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1955,
+              "to": 1955,
+              "label": "1955"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kalonji apparaît par écrit dans le récit luba que K. Karara publie en 1955, avec sa traduction française : c'est le nom d'un groupe, les « Kalonji », qui combat les Kuanga et s'empare de leur territoire. C'est la plus ancienne trace de ce nom que le projet connaît ; elle nomme un groupe, pas une famille d'aujourd'hui.",
+            "formAsWritten": "Kalonji",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Kaayowa",
+                "author": "K. Karara",
+                "year": 1955,
+                "url": "https://archive.org/details/sim_kongo-overzee_1955_21_1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 36-37",
+                "notes": "Kongo-Overzee, tome XXI (1955), numéro 1, page 28 et suivantes ; texte en luba avec traduction française. Page 36, texte luba (« mukua Kalonji »), page 37, traduction : « les Kalonji furent vaincus d'abord. La seconde fois, les Kalonji vainquirent les Kuanga ». Pages vues en image. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

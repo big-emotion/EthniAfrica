@@ -121,5 +121,49 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les mêmes recherches n'ont pas permis de déterminer si « Hamdi » désigne un individu, une lignée, un clan, une caste, une classe d'âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Hamdi est un nom arabe, tiré d'un prénom bâti sur la racine ḥ-m-d, « louange ». Les sources lues n'en donnent qu'une explication ; nous la présentons plus bas. On ne sait pas avec certitude depuis quand il est porté en Algérie ou en Tunisie : le projet n'y a pas trouvé de trace datée.",
+    "names": [
+      {
+        "nameText": "Hamdi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom arabe tiré d'un prénom, de la racine ḥ-m-d, « louange ».",
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2023,
+              "label": "Proposé en 2021 et en 2023"
+            },
+            "statement": "Le nom Hamdi viendrait d'un prénom Hamdi, bâti sur la racine arabe ḥ-m-d, « louange », comme Hamid ou Mohammed, selon le Concise Oxford Dictionary of Family Names in Britain. Le site Behind the Name dit aussi que ce nom de famille vient du prénom Hamdi.",
+            "hypothesisGroup": "origine du nom Hamdi",
+            "sources": [
+              {
+                "title": "Hamdi — nom de famille : sens et histoire familiale — Ancestry",
+                "author": "Oxford University Press, The Concise Oxford Dictionary of Family Names in Britain",
+                "year": 2021,
+                "url": "https://www.ancestry.com/last-name-meaning/hamdi?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2021, notice reproduite par Ancestry. Lue le 13 octobre 2026 ; le site affiche une traduction française. La notice dit : nom tiré d'un prénom dérivé de la racine arabe ḥ-m-d, « louange » ; à comparer à Hamid, Mahmood et Mohammed. Ce dictionnaire traite des noms portés en Grande-Bretagne : il ne parle ni de l'Algérie ni de la Tunisie."
+              },
+              {
+                "title": "User-submitted surname Hamdi — Behind the Name",
+                "author": "Behind the Name",
+                "year": 2023,
+                "url": "https://surnames.behindthename.com/name/hamdi/submitted",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice contributive lue le 13 octobre 2026, ajoutée le 4 mai 2023 par un contributeur anonyme. Elle dit seulement que le nom de famille vient du prénom Hamdi et le range parmi les noms arabes, sans pays."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

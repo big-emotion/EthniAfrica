@@ -82,5 +82,132 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Ngoy », « Luba », « la RDC », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a établi aucune règle propre à Ngoy permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ngoy est porté en République démocratique du Congo ; la fiche le rattache, sans certitude, aux Luba. Chez les Baluba que décrit le père Colle, entre la Lukuga et le Lualaba, il est en 1913 le nom d'un génie que l'on croit habiter le crocodile, et comme celui d'une famille des Baluba-hemba. Colle écrit aussi que ses porteurs se marient entre eux. Les sources lues ne disent pas ce que le nom veut dire.",
+    "names": [
+      {
+        "nameText": "Ngoy",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom luba, celui d'un génie du crocodile et d'une famille, écrit dès 1913.",
+        "periodLabel": "Écrit dès 1913 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ngoy apparaît par écrit dans la monographie du père Colle sur les Baluba, publiée en 1913, qui le met en tête des noms les plus portés : « Ngoy, Mwamba, Nkulu, Kabila ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un missionnaire l'a écrit, pas depuis quand des familles le portent. Le peuple luba existait déjà avant ce texte.",
+            "formAsWritten": "Ngoy",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les Baluba (Congo belge), tome I",
+                "author": "R. P. Colle",
+                "year": 1913,
+                "url": "https://archive.org/details/lesbalubacongobe01coll",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 258",
+                "notes": "Collection de monographies ethnographiques publiée par Cyr. van Overbergh, Bruxelles, Albert Dewit et Institut international de bibliographie, 1913 ; l'auteur est un missionnaire des Pères Blancs et décrit de l'extérieur le pays des Baluba, limité au nord par la Lukuga et au sud et à l'ouest par le Luvwa et le Lualaba (tome I, p. 3). Lu dans la numérisation d'archive.org. Page 258 : « Quelques-uns prédominent, de même qu'en nos pays les noms : Pierre, Paul, François, Marie, etc. Ainsi en est-il de : Ngoy, Mwamba, Nkulu, Kabila [...] ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ngoy est celui d'une des familles des Baluba-hemba, avec Luba, Kitentu, Mwika et Basonga, selon le père Colle. Il écrit que les ba Ngoy habitent entre la Luisi et la Lukusu.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les Baluba (Congo belge), tome I",
+                "author": "R. P. Colle",
+                "year": 1913,
+                "url": "https://archive.org/details/lesbalubacongobe01coll",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 3",
+                "notes": "Collection de monographies ethnographiques publiée par Cyr. van Overbergh, Bruxelles, Albert Dewit et Institut international de bibliographie, 1913 ; l'auteur est un missionnaire des Pères Blancs et décrit de l'extérieur le pays des Baluba, limité au nord par la Lukuga et au sud et à l'ouest par le Luvwa et le Lualaba (tome I, p. 3). Lu dans la numérisation d'archive.org. Page 3 : « Les Baluba-hemba sont les familles Ngoy, Luba, Kitentu, Mwika, Basonga. Les ba Ngoy habitent entre la Luisi et la Lukusu. » Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ngoy est aussi celui d'un génie que les Baluba croient habiter le crocodile vivant, selon le père Colle. Son objet rituel est une courge vide sur laquelle on fixe deux cauries qui figurent les yeux ; une mère poursuivie par ce génie, puis son enfant, se tracent une ligne blanche sur le côté gauche du visage.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les Baluba (Congo belge), tome II",
+                "author": "R. P. Colle",
+                "year": 1913,
+                "url": "https://archive.org/details/lesbalubacongob02coll",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 438",
+                "notes": "Collection de monographies ethnographiques publiée par Cyr. van Overbergh, Bruxelles, Albert Dewit et Institut international de bibliographie, 1913 ; l'auteur est un missionnaire des Pères Blancs et décrit de l'extérieur le pays des Baluba, limité au nord par la Lukuga et au sud et à l'ouest par le Luvwa et le Lualaba (tome I, p. 3). Lu dans la numérisation d'archive.org. Page 438 : « Ngoy, qui est censé habiter le crocodile vivant (voir 104), a comme fétiche une courge vide, sur laquelle on a fixé deux cauries, représentant les yeux. » Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ngoy est porté par des garçons et des filles qui se marient entre eux, écrit le père Colle : si l'exogamie est bien un trait essentiel du totémisme, elle ne se rencontre pas chez eux. Il n'ose pas se prononcer sur un totémisme, mais note que le génie Ngoy s'incarne dans le crocodile et que les Ngoy et cette espèce échangent des services réciproques.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les Baluba (Congo belge), tome II",
+                "author": "R. P. Colle",
+                "year": 1913,
+                "url": "https://archive.org/details/lesbalubacongob02coll",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 463",
+                "notes": "Collection de monographies ethnographiques publiée par Cyr. van Overbergh, Bruxelles, Albert Dewit et Institut international de bibliographie, 1913 ; l'auteur est un missionnaire des Pères Blancs et décrit de l'extérieur le pays des Baluba, limité au nord par la Lukuga et au sud et à l'ouest par le Luvwa et le Lualaba (tome I, p. 3). Lu dans la numérisation d'archive.org. Page 463 : « [...] celle-ci [l'exogamie] ne se rencontre pas pour les Nkulu, les Ngoy, etc. Les porteurs de ces noms, garçons et filles, se marient entre eux. » ; « Le génie du Ngoy, par exemple, s'incarnant dans le crocodile, entre celui-ci (l'espèce) et les Ngoy s'établissent des relations déterminées, reposant sur des services réciproques. » Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "Proposée en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ngoy viendrait d'un génie qui impose son nom à l'enfant : selon le père Colle, les génies cherchent à être honorés et gagnent des protégés en imposant leur nom, et il range Ngoy parmi les noms de génies donnés aux enfants.",
+            "hypothesisGroup": "origine du nom Ngoy",
+            "sources": [
+              {
+                "title": "Les Baluba (Congo belge), tome I",
+                "author": "R. P. Colle",
+                "year": 1913,
+                "url": "https://archive.org/details/lesbalubacongobe01coll",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 256-258",
+                "notes": "Collection de monographies ethnographiques publiée par Cyr. van Overbergh, Bruxelles, Albert Dewit et Institut international de bibliographie, 1913 ; l'auteur est un missionnaire des Pères Blancs et décrit de l'extérieur le pays des Baluba, limité au nord par la Lukuga et au sud et à l'ouest par le Luvwa et le Lualaba (tome I, p. 3). Lu dans la numérisation d'archive.org. Pages 256 à 258 : « Les génies cherchent à être honorés par les hommes. Le meilleur moyen pour eux est d'en faire des clients, des protégés. Ils obtiennent ce résultat en imposant leur nom. » Ngoy figure dans la liste qui suit. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

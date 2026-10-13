@@ -76,5 +76,98 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Kasongo à un peuple en République démocratique du Congo. Nous n'avons pas encore consulté de source consacrée à ce nom. Nos fiches citent un titre de chef kaonde et un chef tetela du XIXe siècle. Elles ne décrivent pas la transmission de Kasongo comme nom de famille."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kasongo est un nom de personne de la République démocratique du Congo. Cameron l'écrit en 1874 pour un chef ; en 1960, il est celui du président de la Chambre des députés, un Tetela, et Kapanga le range parmi les noms luba. On ne sait pas avec certitude ce qu'il veut dire ni s'il a un seul point de départ : les sources lues ne le disent pas.",
+    "names": [
+      {
+        "nameText": "Kasongo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom congolais écrit dès 1874, porté par des Luba et des Tetela ; son sens est inconnu.",
+        "periodLabel": "Écrit dès 1874 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1960,
+              "to": 1961,
+              "label": "Notices de 1960 et de 1961"
+            },
+            "era": "modern",
+            "statement": "Le nom Kasongo est celui du président de la Chambre des députés du Congo en 1960, Joseph-Georges Kasongo, que le CRISP présente comme un Tetela, né à Dar es Salam. Les sources lues ne disent pas si son nom a la même origine que celui du chef de 1874.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Onze mois de crise politique au Congo",
+                "author": "Centre de recherche et d'information socio-politiques (CRISP)",
+                "year": 1961,
+                "url": "https://www.cairn.info/revue-courrier-hebdomadaire-du-crisp-1961-30-page-1.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "notice « Kasongo Joseph-Georges », annexe",
+                "notes": "Courrier hebdomadaire du CRISP, n° 120, 1961, pages 1 à 24, lu sur Cairn.info. L'annexe donne des notices biographiques de responsables congolais de 1960-1961. Dans la rubrique « Les Présidents des Chambres », la notice de Kasongo Joseph-Georges le dit né le 25 décembre 1919 à Dar es Salam et « Otetela ». Lu le 13 octobre 2026."
+              },
+              {
+                "title": "Office of the Historian — Memorandum of Conversation, 27 July 1960, FRUS 1958–1960, volume XIV, document 152",
+                "author": "Office of the Historian, U.S. Department of State",
+                "year": null,
+                "url": "https://history.state.gov/historicaldocuments/frus1958-60v14/d152",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "document 152, p. 359",
+                "notes": "La liste des participants à la conversation du 27 juillet 1960 entre le secrétaire d'État américain et Patrice Lumumba nomme « Mr. Kasongo, President of the Chamber of Deputies ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "Publié en 2009"
+            },
+            "era": "modern",
+            "statement": "Le nom Kasongo est rangé par Kasongo M. Kapanga parmi les noms luba très répandus au Congo, avec Kazadi, Mujinga, Kabongo et Kabamba.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Legitimizing the invented Congolese space: The gaze from within in early Congolese fiction",
+                "author": "Kasongo M. Kapanga",
+                "year": 2009,
+                "url": "https://letterkunde.africa/article/view/3462/4236",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 34",
+                "notes": "Tydskrif vir Letterkunde 46 (1), 2009, p. 28-39, texte intégral lu. À la page 34, à propos du nom de l'auteur Badibanga, Kapanga écrit que, comme beaucoup de noms luba, tels Kasongo, Kazadi, Mujinga, Kabongo et Kabamba, Badibanga est très répandu au Congo. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1874,
+              "to": 1874,
+              "label": "Septembre 1874"
+            },
+            "era": "polity",
+            "statement": "Le nom Kasongo apparaît par écrit dans le récit de Verney Lovett Cameron, qui reçoit en septembre 1874 la visite de Kasongo, chef du district, avant de traverser la Lomami. C'est la plus ancienne trace de ce nom que le projet connaît ; le récit dit le nom d'un chef, pas celui d'une famille, et le nom est plus ancien que lui.",
+            "formAsWritten": "Kasongo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Across Africa (édition de New York)",
+                "author": "Verney Lovett Cameron",
+                "year": 1877,
+                "url": "https://archive.org/details/acrossafrica00came",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 276-277",
+                "notes": "New York, Harper and Brothers, 1877 ; exemplaire numérisé sur archive.org. Chapitre XXI, p. 276 : en septembre 1874, avant de passer la Lomami, Cameron reçoit « a visit from Kasongo, the chief of the district » ; p. 277, la procession de « Kasongo ». Voyageur britannique, cité pour les formes qu'il écrit. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
