@@ -500,6 +500,34 @@
         "historicalRole": "Royaume saharien puissant, contrôle du commerce transsaharien, expansion de l'islam, développement de la civilisation kanembu, résistance aux colonisateurs."
       },
       {
+        "name": "Sultanat du Baguirmi",
+        "period": "XVIe siècle - fin du XIXe siècle",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1522,
+          "endYear": 1897,
+          "precision": "approximate",
+          "datingNote": "Les années 1522 (fondation) et 1897 (protectorat français) viennent de la fiche du peuple barma ; elles ne sont pas vérifiées dans l'Histoire générale de l'Afrique. Celle-ci atteste le sultanat au XVIIIe siècle, sous Muḥammad al-Amīn (vers 1751-1785)."
+        },
+        "dominantPeoples": ["Barma"],
+        "politicalCenters": ["Massenya (capitale)"],
+        "historicalRole": "Sultanat musulman du bassin du Tchad, voisin du Borno et du Ouaddaï. Sous Muḥammad al-Amīn (vers 1751-1785), il rejette la suzeraineté du Borno et attaque ses frontières de l'est, selon B. M. Barkindo (HGA V)."
+      },
+      {
+        "name": "Sultanat du Ouaddaï (Wadaï)",
+        "period": "Attesté au XVIIIe siècle - 1911",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1747,
+          "endYear": 1911,
+          "precision": "approximate",
+          "datingNote": "Les sources citées ne donnent pas de date de fondation : le sultanat existe déjà quand Jawda commence à régner, vers 1747. Ce règne est le plus ancien repère daté ici, pas le début du sultanat. La fin suit Mohamed H. Chérif (HGA VI) : isolé, le Wadaï survit jusqu'en 1911."
+        },
+        "dominantPeoples": ["Non précisés dans les sources citées"],
+        "politicalCenters": ["Non précisé dans les sources citées"],
+        "historicalRole": "Sultanat du bassin du Tchad. Sous Jawda (vers 1747-1795), il s'étend vers le Baḥr al-Ghazāl, selon B. M. Barkindo (HGA V), et bat l'armée du Darfour, dont il capture le sultan, selon Y. F. Hasan et B. A. Ogot (HGA V). Son isolement lui permet de durer jusqu'en 1911, selon Mohamed H. Chérif (HGA VI)."
+      },
+      {
         "name": "Chefferies Sara",
         "period": "Depuis plusieurs siècles",
         "entryType": "polity",
@@ -711,6 +739,27 @@
         "tier": "official",
         "source_kind": "government",
         "notes": "Répartition des groupes ethniques d'après l'estimation de 2014-2015, lue dans une copie archivée de janvier 2026 ; la publication a cessé d'être mise à jour début 2026. Elle compte par regroupements de plusieurs peuples : un pourcentage n'est rattaché à une fiche que lorsque le regroupement ne désigne qu'un seul peuple."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, V, ch. 17 : Le Kānem-Borno : ses relations avec la Méditerranée, le Baguirmi et les autres États du bassin du Tchad",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par B. A. Ogot, chapitre de B. M. Barkindo (1999), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 564. « Au Baguirmi, Muḥammad al-Amīn (vers 1751-1785) rejeta la suzeraineté du Borno […] tandis que, de son côté, le Wadai, sous Jawda (vers 1747-1795), poursuivait sa politique expansionniste en direction du Baḥr al-Ghazāl »."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, V, ch. 7 : Le Soudan de 1500 à 1800",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par B. A. Ogot, chapitre d'Y. F. Hasan et B. A. Ogot (1999), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 225. Vers le milieu du XVIIIe siècle, « le Sultan du Wadai, Muḥammad Djawda, défit l'armée fūr et captura le Sultan »."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VI, ch. 17 : Nouveaux développements au Maghreb : l'Algérie, la Tunisie et la Libye",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par J. F. A. Ajayi, chapitre de Mohamed H. Chérif (1996), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 515. « L'isolement du Wadaī et du Barḳa a assuré leur survivance jusqu'en 1911 »."
       }
     ],
     "demographics": {

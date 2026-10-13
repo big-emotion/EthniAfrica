@@ -11,9 +11,18 @@
     {
       "spelling": "Farah",
       "attestations": [
-        { "countryId": "ETH", "sourceRefs": ["afrik-candidate-queue"] },
-        { "countryId": "DJI", "sourceRefs": ["afrik-candidate-queue"] },
-        { "countryId": "SOM", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "ETH",
+          "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "DJI",
+          "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "SOM",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -97,5 +106,92 @@
       "fieldPath": "homonyms",
       "reason": "Les sources consultées ne permettent pas encore de présenter un autre nom écrit comme Farah, mais d'origine différente."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Farah est un nom de personne arabe que portent des Somali, en Somalie et en Éthiopie. Les Somali n'ayant traditionnellement pas de nom de famille héréditaire, c'est d'abord un nom de personne. Il voudrait dire « joie » ; nous présentons plus bas l'explication de son sens.",
+    "names": [
+      {
+        "nameText": "Farah",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne arabe porté par des Somali ; il voudrait dire « joie ».",
+        "periodLabel": "Écrit Farih dès 1856 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Décrit en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Farah est un nom de personne chez les Somali, en Somalie et en Éthiopie. Les Somali n'ayant traditionnellement pas de nom de famille héréditaire, il n'a été enregistré comme nom de famille, dans la plupart des cas, qu'après l'immigration de ses porteurs aux États-Unis, selon le Dictionary of American Family Names.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Farah",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/farah?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lu le 13 octobre 2026 ; le site affiche une traduction française. La notice dit, pour la forme somalie : du nom personnel Farah, parent de la forme arabe ; on le trouve aussi en Éthiopie. Elle ajoute que les Somali n'ont traditionnellement pas de nom de famille héréditaire, et que le nom a été enregistré comme tel dans la plupart des cas seulement après l'immigration de ses porteurs aux États-Unis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Farah viendrait de l'arabe faraḥ, « joie », selon le Dictionary of American Family Names, qui dit le nom porté par des musulmans comme par des chrétiens.",
+            "hypothesisGroup": "origine du nom Farah",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Farah",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/farah?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lu le 13 octobre 2026 ; le site affiche une traduction française. La notice dit, pour la forme arabe : d'un nom personnel fondé sur faraḥ, « joie » ; les porteurs de ce nom de famille sont musulmans et chrétiens."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Récit publié en 1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Farah apparaît par écrit sous une forme proche, Farih, chez l'explorateur Richard Burton : à Zayla, on lui montre un homme du nom de Farih Badaun, et une note donne Farih parmi les noms d'hommes des Somali. C'est la plus ancienne trace de cette forme que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Farih",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Richard F. Burton",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa; or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 57 et p. 114",
+                "notes": "Londres, Longman, Brown, Green et Longmans, 1856. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'archive.org (bibliothèque de l'université Harvard, numérisation Google). Page 57 : « at Zayla I was shown a Bedouin, by name Farih Badaun ». Page 114, note : « Their names also are generally derived from their Pagan ancestors […] Men are called Rirash, Igah, Beuh, Fahi, Samattar, Farih, Madar… » ; la note suit un passage sur les Somal. Burton voyage en 1854-1855."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

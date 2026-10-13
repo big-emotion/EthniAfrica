@@ -116,5 +116,130 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Margi désigne un peuple de langue tchadique du nord-est du Nigeria, dans les États de Borno et d'Adamawa, qui se nomme lui-même Margyi, selon le linguiste Carl Hoffmann. Les sources anglaises l'ont longtemps écrit Marghi. Nous n'avons pas trouvé de source qui dise d'où vient ce nom ; ce que nous savons est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Margi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mrt",
+        "namedBy": null,
+        "shortLine": "Un nom écrit dès 1857 sous la forme Marghi ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit depuis 1857 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1963,
+              "to": 1963,
+              "label": "Rapporté en 1963"
+            },
+            "era": "modern",
+            "statement": "Le nom Margi est celui que se donnent les Margi eux-mêmes, sous la forme Margyi, pour leur peuple comme pour leur langue, selon le linguiste Carl Hoffmann, que rapporte le site mandaras.info.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "mandaras.info — The Margi",
+                "author": "mandaras.info (Mandaras Publishing)",
+                "year": null,
+                "url": "https://www.mandaras.info/Margi.html",
+                "tier": "referenced",
+                "source_kind": "community",
+                "notes": "Page du site consacré aux monts Mandara, publiée par Mandaras Publishing, lue le 12 octobre 2026. Elle ne donne ni son auteur ni sa date. Elle cite Carl Hoffmann, A Grammar of the Margi Language, 1963, p. 1 ; nous n'avons pas lu cette grammaire."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1970,
+              "to": 1970,
+              "label": "1970"
+            },
+            "era": "modern",
+            "statement": "Le nom Margi se précise selon les lieux : l'anthropologue James Vaughan appelle Marghi babal les Margi des plaines du centre et Marghi Dzirngu ceux qui vivent près des montagnes, selon le site mandaras.info.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "mandaras.info — The Margi",
+                "author": "mandaras.info (Mandaras Publishing)",
+                "year": null,
+                "url": "https://www.mandaras.info/Margi.html",
+                "tier": "referenced",
+                "source_kind": "community",
+                "notes": "Page du site consacré aux monts Mandara, publiée par Mandaras Publishing, lue le 12 octobre 2026. Elle ne donne ni son auteur ni sa date. Elle cite James H. Vaughan, 1970, p. 68 ; nous n'avons pas lu ce texte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "1931"
+            },
+            "era": "colonial",
+            "statement": "Le nom Margi s'écrit ainsi, sans h, chez l'anthropologue britannique C. K. Meek, dans ses études sur les peuples du nord du Nigeria. Cette orthographe est aujourd'hui plus répandue que Marghi, selon le site mandaras.info.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "mandaras.info — The Margi",
+                "author": "mandaras.info (Mandaras Publishing)",
+                "year": null,
+                "url": "https://www.mandaras.info/Margi.html",
+                "tier": "referenced",
+                "source_kind": "community",
+                "notes": "Page du site consacré aux monts Mandara, publiée par Mandaras Publishing, lue le 12 octobre 2026. Elle ne donne ni son auteur ni sa date. Elle cite C. K. Meek, Tribal Studies in Northern Nigeria, 1931, tome I, p. 213-251 ; nous n'avons pas lu ce livre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Margi s'écrit Marghi dans les notes réunies par O. Temple sur les tribus du nord du Nigeria : il y désigne une tribu de l'extrême sud-est de la province du Bornou et des districts voisins de Marghi et d'Uba. Les Marghi ne se souviennent pas d'un temps où ils auraient vécu ailleurs, et l'on sait peu de chose de leur origine.",
+            "aspect": "usage",
+            "formAsWritten": "Marghi",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Notes on the Tribes, Provinces, Emirates and States of the Northern Provinces of Nigeria",
+                "author": "O. Temple, sous la direction de C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "source_kind": "archive",
+                "page": "p. 271",
+                "notes": "Le Cap, Argus Printing and Publishing, 1919, recueil compilé à partir de rapports officiels britanniques. Lu dans l'exemplaire numérisé de l'université de Toronto sur Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1851,
+              "to": 1857,
+              "label": "Voyage de 1851 (récit publié en 1857)"
+            },
+            "era": "polity",
+            "statement": "Le nom Margi apparaît par écrit sous la forme Marghi dans le récit du voyageur allemand Heinrich Barth : en mai 1851, à Kukawa, il apprend qu'un chef du Bornou vient de faire une razzia dans le pays marghi. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle. On ne sait pas avec certitude d'où vient ce nom.",
+            "formAsWritten": "Marghi",
+            "birth": true,
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Travels and Discoveries in North and Central Africa, vol. II",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri02bart_2",
+                "source_kind": "archive",
+                "page": "p. 347",
+                "notes": "Londres, Longman, Brown, Green, Longmans & Roberts, 1857. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

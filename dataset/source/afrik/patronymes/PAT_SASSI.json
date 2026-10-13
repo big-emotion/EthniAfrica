@@ -104,5 +104,65 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « Sassi lignée », « Sassi clan », « Sassi tribe » et « Sassi place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sassi est un nom de famille de Tunisie, déjà porté en 1741 par une famille de caïds de Béja. On ne sait pas avec certitude d'où il vient : les sources que nous avons consultées n'en donnent pas l'origine.",
+    "names": [
+      {
+        "nameText": "Sassi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille de Tunisie, porté en 1741 par des caïds de Béja ; son origine n'est pas connue.",
+        "periodLabel": "Écrit dès 1741",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Sassi est un nom de famille de Tunisie, que porte une famille de caïds de Béja, les Oulad-ben-Sassi, dans une chronique du XVIIIe siècle. On ne sait pas avec certitude d'où il vient ni ce qu'il veut dire : les sources que nous avons consultées ne le disent pas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Mechra el melki, chronique tunisienne (1705-1771), pour servir à l'histoire des quatre premiers beys de la famille husseïnite",
+                "author": "Mohammed Seghir ben Youssef ; traduction de Victor Serres et Mohammed Lasram",
+                "year": 1900,
+                "url": "https://archive.org/details/39020001794604-mechraelmelkich",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 201, 253",
+                "notes": "Tunis, Imprimerie rapide, 1900. Chronique de Mohammed Seghir ben Youssef, de Béja, traduite en français ; lue sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 201 : Younès laisse à Tamkart « le caïd Brahim ben Sassi », puis donne ses ordres aux « Oulad-ben-Sassi » ; une note date l'arrivée devant Tabarca du 12 juin 1741. Page 253 : « Les Oulad-ben-Sassi, caïds de Béja ». L'index renvoie aussi à Ali, Hassine et Mahmoud ben Sassi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1741,
+              "to": 1741,
+              "label": "1741"
+            },
+            "era": "polity",
+            "statement": "Le nom Sassi apparaît dans la chronique tunisienne de Mohammed Seghir ben Youssef, de Béja, traduite en français en 1900. Elle nomme en 1741 le caïd Brahim ben Sassi et sa famille, les Oulad-ben-Sassi, près de Tabarca et de Béja. C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne dit pas d'où vient le nom.",
+            "formAsWritten": "Sassi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Mechra el melki, chronique tunisienne (1705-1771), pour servir à l'histoire des quatre premiers beys de la famille husseïnite",
+                "author": "Mohammed Seghir ben Youssef ; traduction de Victor Serres et Mohammed Lasram",
+                "year": 1900,
+                "url": "https://archive.org/details/39020001794604-mechraelmelkich",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 201, 253",
+                "notes": "Tunis, Imprimerie rapide, 1900. Chronique de Mohammed Seghir ben Youssef, de Béja, traduite en français ; lue sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 201 : Younès laisse à Tamkart « le caïd Brahim ben Sassi », puis donne ses ordres aux « Oulad-ben-Sassi » ; une note date l'arrivée devant Tabarca du 12 juin 1741. Page 253 : « Les Oulad-ben-Sassi, caïds de Béja ». L'index renvoie aussi à Ali, Hassine et Mahmoud ben Sassi."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

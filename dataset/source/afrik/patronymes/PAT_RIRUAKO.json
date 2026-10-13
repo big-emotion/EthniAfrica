@@ -88,5 +88,106 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Riruako », « Ovaherero », « Herero », « surname », « lineage », « etymology », « transmission » et « obituary », ainsi que la consultation directe de « Politics of reparations: unravelling the power relations in the Herero/Nama genocide reparations claims » n'ont établi aucune règle propre à Riruako permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Riruako est un nom de famille herero, en Namibie. Les sources lues n'en donnent ni l'origine ni le sens.",
+    "names": [
+      {
+        "nameText": "Riruako",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille herero, en Namibie, dont l'origine n'est pas connue.",
+        "periodLabel": "Écrit dès 1976 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Riruako est un nom de famille herero, en Namibie. Chez les Herero, le nom du père ou d'un ancêtre illustre sert souvent de nom de famille, selon Minna Saarelma-Maunumaa. Les sources lues ne disent pas de quel ancêtre vient ce nom ni ce qu'il veut dire ; on ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Edhina Ekogidho — Names as Links: The Encounter between African and European Anthroponymic Systems among the Ambo People in Namibia",
+                "author": "Minna Saarelma-Maunumaa",
+                "year": 2003,
+                "url": "https://digital.unam.edu.na/bitstream/handle/11070.1/21230/Ekogidho_2003.pdf?isAllowed=y&sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 62 ; p. 188",
+                "notes": "Monographie de Minna Saarelma-Maunumaa, publiée par la Finnish Literature Society en 2003, lue dans le PDF en texte intégral déposé sur le dépôt de l'Université de Namibie, pagination imprimée. Page 62 : chez les Herero, le nom du père ou d'un ancêtre illustre sert de nom de famille, d'après Otto (1985). Page 188, note 307 : chez les Herero, on a aussi pris comme nom de famille le nom d'ancêtres éminents. Nous n'avons pas lu Otto lui-même. Relu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Décrit en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Riruako désigne aussi un des deux camps herero dans les demandes de réparations pour le génocide, le « groupe Riruako », face au groupe Maherero, selon Penohole Brock.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Politics of reparations: unravelling the power relations in the Herero/Nama genocide reparations claims",
+                "author": "Penohole Brock",
+                "year": 2019,
+                "url": "https://open.uct.ac.za/items/35f782fa-ea3a-430d-9701-89f2a7a5bf6a/full",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Mémoire de master, Université du Cap, 2019 ; notice et résumé lus dans le dépôt de l'université. Le résumé décrit les Herero divisés en deux camps, « the Riruako group and the Maherero group », dans les demandes de réparations pour le génocide. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Époque coloniale, date non précisée"
+            },
+            "era": "colonial",
+            "statement": "Le nom Riruako est déjà celui d'Amon Riruako, père du chef Kuaima Riruako, qui signe une plainte adressée aux Nations unies contre l'occupation sud-africaine du Sud-Ouest africain, selon Die Republikein.",
+            "sources": [
+              {
+                "title": "Chief Riruako sterf",
+                "author": "Catherine Sasman, Die Republikein",
+                "year": 2014,
+                "url": "https://web.archive.org/web/20140617183221/http://republikein.com.na/politiek/chief-riruako-sterf.224012",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article en afrikaans du quotidien namibien Die Republikein, 3 juin 2014, lu dans sa copie archivée par la Wayback Machine. Il rapporte que le chef est né sous le nom d'Issaskar Kakuremdiro avant de prendre le prénom de son grand-père Kuaima, et que son père, Amon Riruako, a signé une plainte adressée à l'ancienne Société des Nations, devenue l'ONU, contre l'occupation sud-africaine illégale du Sud-Ouest africain. L'article ne date pas cette plainte. Relu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1976,
+              "to": 1976,
+              "label": "24 mai 1976"
+            },
+            "statement": "Le nom Riruako apparaît dans un télégramme de la mission des États-Unis aux Nations unies, à New York, qui parle d'un représentant namibien nommé Riruako. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand ce nom a été écrit, pas depuis quand la famille le porte.",
+            "formAsWritten": "Riruako",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Telegram USUN New York 2234, 24 mai 1976",
+                "author": "Mission des États-Unis auprès des Nations unies",
+                "year": 1976,
+                "url": "https://archive.org/details/StateDeptcable1976-253434",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 1-2",
+                "notes": "Télégramme diplomatique du département d'État américain, déclassifié en 2006, lu sur la copie d'archive.org. Il rapporte une démarche de « Namibian National Convention rep Riruako », dont le chef est appelé « Chief Kapuuo », auprès de la mission du Brésil aux Nations unies. Relu le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

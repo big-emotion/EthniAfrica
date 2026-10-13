@@ -127,5 +127,153 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Maban désigne un peuple de langue nilotique du nord-est du Soudan du Sud, près de la frontière éthiopienne, qui se nomme lui-même Maban. D'autres noms ont servi : Burun, pour un ensemble plus large de peuples des collines, et Gura, le nom que leur donnent les Berta. Nous n'avons pas trouvé de source qui explique l'origine de ces noms.",
+    "names": [
+      {
+        "nameText": "Maban",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mfz",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent, écrit « Meban » en 1932 ; son origine n'est pas connue.",
+        "periodLabel": "Écrit depuis 1932 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom Maban désigne un peuple que l'on rangeait autrefois parmi les Burun. Nous n'avons pas trouvé de source qui explique d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Pagan Tribes of the Nilotic Sudan",
+                "author": "Charles G. Seligman et Brenda Z. Seligman",
+                "year": 1932,
+                "url": "https://archive.org/details/in.ernet.dli.2015.57118",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 443",
+                "notes": "Londres, George Routledge & Sons, lu sur la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Maban apparaît, sous la forme « Meban », chez les anthropologues Charles et Brenda Seligman. D'après la carte des tribus publiée à Khartoum et les enquêtes de l'administrateur Chataway, ce nom remplace celui de Gura, et le nom Burun ne couvre plus qu'une petite région. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà là avant elle.",
+            "formAsWritten": "Meban",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Pagan Tribes of the Nilotic Sudan",
+                "author": "Charles G. Seligman et Brenda Z. Seligman",
+                "year": 1932,
+                "url": "https://archive.org/details/in.ernet.dli.2015.57118",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 421",
+                "notes": "Londres, George Routledge & Sons, lu sur la numérisation d'Internet Archive. Passage : « Gura, which is the Berta name for the Meban, gives place to this name »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Burun",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un ancien nom qui couvrait plusieurs peuples des collines, dont les Maban.",
+        "periodLabel": "Écrit depuis 1874 ; abandonné pour les Maban",
+        "accounts": [
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Burun ne peut plus, selon Charles et Brenda Seligman, servir pour tous les habitants du sud de la province du Fung : ces peuples, dont les Meban, avaient jusque-là été regroupés sous ce nom. Nous n'avons pas trouvé de source qui explique son origine.",
+            "sources": [
+              {
+                "title": "Pagan Tribes of the Nilotic Sudan",
+                "author": "Charles G. Seligman et Brenda Z. Seligman",
+                "year": 1932,
+                "url": "https://archive.org/details/in.ernet.dli.2015.57118",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 421 et p. 443",
+                "notes": "Londres, George Routledge & Sons, lu sur la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1869,
+              "to": 1874,
+              "label": "1869-1873"
+            },
+            "statement": "Le nom Burun apparaît sous une forme proche, « Burum », chez le voyageur autrichien Ernst Marno, pour la population païenne des montagnes du sud de la Gezira, vers le Sobat et le Yabus. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Burum",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Reisen im Gebiete des blauen und weissen Nil, im egyptischen Sudan und den angrenzenden Negerländern, in den Jahren 1869 bis 1873",
+                "author": "Ernst Marno",
+                "year": 1874,
+                "url": "https://archive.org/details/reisenimgebiete00marngoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 31",
+                "notes": "Vienne, Carl Gerold's Sohn, lu sur la numérisation d'Internet Archive. La numérisation lit « Burum » ; Charles et Brenda Seligman citent le même livre avec la forme « Burun ». Passage : « Burum, der heidnischen Bevölkerung der südlichen Berge des Innern der Gesireh gegen den Sobat und Jabos zu »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gura",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Berta",
+        "shortLine": "Le nom que leur donnent les Berta, leurs voisins ; il a cédé la place à Meban.",
+        "periodLabel": "Écrit en 1932",
+        "accounts": [
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gura est le nom que les Berta donnent aux Meban, selon Charles et Brenda Seligman, qui notent qu'il cède la place à celui de Meban. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Gura",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Pagan Tribes of the Nilotic Sudan",
+                "author": "Charles G. Seligman et Brenda Z. Seligman",
+                "year": 1932,
+                "url": "https://archive.org/details/in.ernet.dli.2015.57118",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 421",
+                "notes": "Londres, George Routledge & Sons, lu sur la numérisation d'Internet Archive. Passage : « Gura, which is the Berta name for the Meban »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

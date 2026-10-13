@@ -110,5 +110,130 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kwere désigne un peuple de la région de Bagamoyo, sur la côte de la Tanzanie, et sa langue, le kikwere en swahili. La langue s'appelle Ngh'wele chez ses locuteurs, et le projet retient ce nom comme celui que le peuple se donne. On ne sait pas avec certitude d'où viennent les noms Kwere et Ngh'wele : les sources lues ne les expliquent pas. La plus ancienne trace de Kwere date de 1871, celle de Ngh'wele de 2003.",
+    "names": [
+      {
+        "nameText": "Ngh'wele",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "cwe",
+        "namedBy": null,
+        "shortLine": "Le nom que porte la langue chez ses locuteurs, kikwere en swahili ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit depuis 2003 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Janvier 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Ngh'wele apparaît par écrit dans la liste de mots trilingue ngh'wele, swahili et anglais du linguiste Karsten Legère, datée de janvier 2003. Il y désigne la langue, écrite (Chi-)Ngh'wele et appelée kikwere en swahili, et Legère l'a revue avec des locuteurs ngh'wele. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Ngh'wele",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Trilingual Ngh'wele-Swahili-English and Swahili-Ngh'wele-English wordlist",
+                "author": "Karsten Legère",
+                "year": 2003,
+                "url": "https://web.archive.org/web/20120513211856/http://www.sprak.gu.se/digitalAssets/1307/1307411_nghwele.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1 et p. 4",
+                "notes": "Département des langues orientales et africaines, université de Göteborg, janvier 2003 ; lu dans la copie archivée du fichier PDF le 12 octobre 2026. La liste vient de documents réunis dans les années 1970 par des étudiants de Dar es Salaam, revus en 2001 et 2002 avec des locuteurs ngh'wele."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom Ngh'wele désigne la langue des Kwere. Les sources lues ne disent pas si les Kwere l'emploient aussi pour eux-mêmes ; le projet le retient comme leur nom, faute d'un autre nom connu. On ne sait pas ce qu'il veut dire ni d'où il vient : la liste de Legère ne l'explique pas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Trilingual Ngh'wele-Swahili-English and Swahili-Ngh'wele-English wordlist",
+                "author": "Karsten Legère",
+                "year": 2003,
+                "url": "https://web.archive.org/web/20120513211856/http://www.sprak.gu.se/digitalAssets/1307/1307411_nghwele.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Département des langues orientales et africaines, université de Göteborg, janvier 2003 ; lu dans la copie archivée du fichier PDF le 12 octobre 2026. La liste vient de documents réunis dans les années 1970 par des étudiants de Dar es Salaam, revus en 2001 et 2002 avec des locuteurs ngh'wele."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kwere",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du peuple et de la langue en Tanzanie ; la plus ancienne trace écrite, Wakwere, date de 1871.",
+        "periodLabel": "Écrit depuis 1871 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1871,
+              "to": 1871,
+              "label": "1871"
+            },
+            "era": "polity",
+            "statement": "Le nom Kwere apparaît par écrit sous la forme Wakwere dans le récit du journaliste Henry Morton Stanley, qui traverse en mars 1871 l'Ukwere, le pays des Wakwere : il le place à deux jours de marche de la côte, entre les Wazaramo et les Wadoe. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Wakwere",
+            "birth": true,
+            "sources": [
+              {
+                "title": "How I Found Livingstone: Travels, Adventures and Discoveries in Central Africa",
+                "author": "Henry M. Stanley",
+                "year": 1872,
+                "url": "https://archive.org/details/howifoundlivings03stan",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 226 et p. 238",
+                "notes": "New York, Scribner, Armstrong & Co., 1872 ; lu dans l'exemplaire numérisé d'Internet Archive le 12 octobre 2026, dans la pagination de cette édition. Le journaliste traverse le pays en mars et avril 1871."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kwere est le nom de référence de la langue dans la norme internationale ISO 639-3, sous le code cwe. En swahili, la langue se dit kikwere, selon Karsten Legère.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, Kwere [cwe]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/cwe",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 12 octobre 2026."
+              },
+              {
+                "title": "Trilingual Ngh'wele-Swahili-English and Swahili-Ngh'wele-English wordlist",
+                "author": "Karsten Legère",
+                "year": 2003,
+                "url": "https://web.archive.org/web/20120513211856/http://www.sprak.gu.se/digitalAssets/1307/1307411_nghwele.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Département des langues orientales et africaines, université de Göteborg, janvier 2003 ; lu dans la copie archivée du fichier PDF le 12 octobre 2026. La liste vient de documents réunis dans les années 1970 par des étudiants de Dar es Salaam, revus en 2001 et 2002 avec des locuteurs ngh'wele."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

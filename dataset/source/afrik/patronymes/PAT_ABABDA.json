@@ -102,5 +102,163 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "La mise en colonnes du tableau de Barnard et son « Ababda(?) » ne permettent pas de trancher entre clan, tribu ou autre collectif pour cette forme ; l'unité reste donc « other » plutôt que d'inventer une précision."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ababda est celui d'une tribu de nomades du désert oriental, entre le Nil et la mer Rouge, en Égypte et au Soudan. On l'écrit aussi Ababde ou Ababdeh. Les sources consultées ne disent pas ce que le nom veut dire ; elles se partagent sur l'origine des Ababda, que certaines rangent parmi les groupes beja et que d'autres disent venus d'Arabie. Nous présentons ces avis plus bas.",
+    "names": [
+      {
+        "nameText": "Ababda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'une tribu nomade d'Égypte et du Soudan, écrit Ababde en 1819 ; son sens n'est pas expliqué.",
+        "periodLabel": "Écrit depuis 1819 sous une forme proche ; employé aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "Décrit en 2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Ababda serait celui de descendants de tribus arabes, selon les nomades du sud de l'Égypte, près d'Assouan, que Vincent Battesti a rencontrés ; il note aussi qu'ils montrent de forts liens avec la culture beja.",
+            "hypothesisGroup": "origine des Ababda",
+            "sources": [
+              {
+                "title": "First pictures from a new fieldwork with the ʿAbābdah, South Egypt",
+                "author": "Vincent Battesti",
+                "year": 2015,
+                "url": "https://vbat.org/article699.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page du site de l'anthropologue Vincent Battesti, publiée le 30 mars 2015, lue le 13 octobre 2026. Photographies prises en février 2015 dans le wadi Abu Subeira, près d'Assouan. Le texte dit que ce groupe de nomades « call themselves originally descendants of Arab tribes » et montre « strong connections with the overarching Beja culture »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "Décrit en 2009"
+            },
+            "era": "modern",
+            "statement": "Le nom Ababda serait celui d'une tribu de l'ensemble beja du désert oriental, selon Hans Barnard, qui l'écrit pourtant « Ababda(?) » dans son tableau des clans, avec un point d'interrogation, et qui compte aussi parmi les habitants du désert des Bédouins venus d'Arabie.",
+            "hypothesisGroup": "origine des Ababda",
+            "sources": [
+              {
+                "title": "The Archaeology of Pastoral Nomads between the Nile and the Red Sea",
+                "author": "Hans Barnard",
+                "year": 2009,
+                "url": "https://isac.uchicago.edu/sites/oi.uchicago.edu/files/uploads/shared/docs/ois5.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21, 25",
+                "notes": "Dans Jeffrey Szuchman (dir.), Nomads, Tribes, and the State in the Ancient Near East, Oriental Institute Seminars 5, 2009, lu dans le fichier complet de l'éditeur le 12 octobre 2026. Page 21 : les Ababda dans la liste de l'ensemble beja. Page 25, tableau 2.2, d'après Murray (1935), Paul (1954) et Wendrich (2008) : « Ababda(?) » dans la colonne des clans, avec un point d'interrogation."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1819,
+              "to": 1819,
+              "label": "Publié en 1819"
+            },
+            "era": "polity",
+            "statement": "Le nom Ababda désigne des gens qui, selon John Lewis Burckhardt, se vantent d'une origine chez les Bédouins d'Arabie.",
+            "hypothesisGroup": "origine des Ababda",
+            "sources": [
+              {
+                "title": "Travels in Nubia",
+                "author": "John Lewis Burckhardt",
+                "year": 1819,
+                "url": "https://archive.org/details/travelsinnubia00burc",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 149",
+                "notes": "Londres, John Murray, 1819, publié après la mort de l'auteur en 1817, lu dans l'exemplaire numérisé le 12 octobre 2026. Page 149 : les Ababde sont dits indignes « of that origin from the Arabian Bedouins, of which they boast »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Ababda est celui d'une tribu nomade du désert oriental, entre le Nil et la mer Rouge. Les sources lues ne disent pas ce que le nom veut dire ; elles se partagent sur l'origine de la tribu, présentée plus haut.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Archaeology of Pastoral Nomads between the Nile and the Red Sea",
+                "author": "Hans Barnard",
+                "year": 2009,
+                "url": "https://isac.uchicago.edu/sites/oi.uchicago.edu/files/uploads/shared/docs/ois5.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21",
+                "notes": "Dans Jeffrey Szuchman (dir.), Nomads, Tribes, and the State in the Ancient Near East, Oriental Institute Seminars 5, 2009, lu dans le fichier complet de l'éditeur le 12 octobre 2026. Page 21 : le texte compte les Ababda parmi les clans et tribus de l'ensemble beja, dont beaucoup se considèrent comme beja, d'autres étant des Bédouins Ma'aza ou Rashaida venus d'Arabie aux XVIIIe et XIXe siècles ; beaucoup parlent l'arabe, d'autres le beja."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1819,
+              "to": 1819,
+              "label": "Publié en 1819"
+            },
+            "era": "polity",
+            "statement": "Le nom Ababda apparaît par écrit sous une forme proche, Ababde, chez John Lewis Burckhardt, qui compte les Ababde et les Bisharye parmi les deux grandes tribus de Bédouins entre la Nubie et la mer Rouge, et place les Ababde au sud de Kosseir, jusqu'à la latitude de Derr. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand la tribu porte ce nom.",
+            "formAsWritten": "Ababde",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels in Nubia",
+                "author": "John Lewis Burckhardt",
+                "year": 1819,
+                "url": "https://archive.org/details/travelsinnubia00burc",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 148",
+                "notes": "Londres, John Murray, 1819, publié après la mort de l'auteur en 1817, lu dans l'exemplaire numérisé le 12 octobre 2026. Page 148 : « the Ababde and Bisharye » comme les deux tribus principales des Bédouins entre la Nubie et la mer Rouge ; l'Arabe est écrit en regard de Ababde ; les Ababde occupent « the country south of Kosseir, nearly as far as the latitude of Derr »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ababde",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Écrit en 1819",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1819,
+              "to": 1819,
+              "label": "Publié en 1819"
+            },
+            "era": "polity",
+            "statement": "Le nom Ababde est la graphie de Ababda chez John Lewis Burckhardt, qui l'écrit aussi en lettres arabes dans son récit publié en 1819.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Travels in Nubia",
+                "author": "John Lewis Burckhardt",
+                "year": 1819,
+                "url": "https://archive.org/details/travelsinnubia00burc",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 148",
+                "notes": "Londres, John Murray, 1819, publié après la mort de l'auteur en 1817, lu dans l'exemplaire numérisé le 12 octobre 2026. Page 148 : « the Ababde and Bisharye » comme les deux tribus principales des Bédouins entre la Nubie et la mer Rouge ; l'Arabe est écrit en regard de Ababde ; les Ababde occupent « the country south of Kosseir, nearly as far as the latitude of Derr »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

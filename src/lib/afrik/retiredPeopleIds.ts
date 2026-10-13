@@ -7,7 +7,8 @@ import retiredIdentifiers from "../../../dataset/source/afrik/_retired-identifie
  * would drift the first time someone updated one and not the other.
  *
  * Only merged and renamed entries appear here. A kept-distinct decision
- * records why two ids stay separate and redirects nothing.
+ * records why two ids stay separate, and a withdrawn one retires an id with no
+ * successor; neither redirects anything.
  */
 // @req REQ-027
 export const RETIRED_PEOPLE_IDS: Readonly<Record<string, string>> =
@@ -19,7 +20,7 @@ export const RETIRED_PEOPLE_IDS: Readonly<Record<string, string>> =
         ): entry is (typeof retiredIdentifiers)[number] & {
           successorId: string;
         } =>
-          entry.decision !== "kept-distinct" &&
+          (entry.decision === "merged" || entry.decision === "renamed") &&
           typeof entry.successorId === "string"
       )
       .map((entry) => [entry.retiredId, entry.successorId])

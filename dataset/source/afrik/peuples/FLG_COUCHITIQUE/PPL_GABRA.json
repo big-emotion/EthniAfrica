@@ -127,5 +127,97 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Gabra désigne un peuple d'éleveurs de chameaux de langue oromo, autour du désert de Chalbi, au nord du Kenya, et au sud de l'Éthiopie, qui se nomme lui-même Gabra. Des auteurs l'ont aussi appelé les Boran à chameaux. On ne sait pas avec certitude d'où vient le nom Gabra ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Gabra",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "gax",
+        "namedBy": null,
+        "shortLine": "Écrit Gabbra en 1895 ; son origine n'est pas connue.",
+        "periodLabel": "Écrit depuis 1895 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1980,
+              "to": 1982,
+              "label": "Enquête de 1980, publiée en 1982"
+            },
+            "era": "modern",
+            "statement": "Le nom Gabra désigne un peuple qui parle une variété de la langue borana et qui forme ses propres unités politiques, divisées en cinq phratries, selon l'anthropologue Reizo Harako. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The role of abela in the Gabra society: a case study of gerontocratic society of the pastoralists",
+                "author": "Reizo Harako",
+                "year": 1982,
+                "url": "https://repository.kulib.kyoto-u.ac.jp/server/api/core/bitstreams/48461ea2-dbe5-4c66-9b4b-136c46cb96e9/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 63",
+                "notes": "African Study Monographs, numéro supplémentaire 1, 1982, p. 63-69, lu le 11 octobre 2026 dans le dépôt de l'université de Kyoto. Enquête de terrain menée en 1980."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1897,
+              "label": "Voyage de 1895, récit publié en 1897"
+            },
+            "era": "polity",
+            "statement": "Le nom Gabra apparaît par écrit sous la forme « Gabbra » chez l'explorateur américain Arthur Donaldson Smith, qui les présente comme des Boran de basse caste, vivant dans des villages dispersés au pays boran. C'est la plus ancienne trace de ce nom que le projet connaît. Les Gabra vivaient déjà dans la région avant lui.",
+            "formAsWritten": "Gabbra",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Through unknown African countries : the first expedition from Somaliland to Lake Lamu",
+                "author": "Arthur Donaldson Smith",
+                "year": 1897,
+                "url": "https://archive.org/details/throughunknownaf00smit",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 182",
+                "notes": "Londres et New York, Edward Arnold, 1897. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Le passage date du 22 mars 1895, près de la source d'El Dere, au pays boran."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Boran à chameaux",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Employé par des auteurs avant 1982",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 1982,
+              "label": "Avant 1982"
+            },
+            "statement": "Le nom Boran à chameaux, Camel Borana en anglais, est celui que certains auteurs ont donné aux Gabra, qu'on prenait alors pour un groupe du peuple borana, selon Reizo Harako.",
+            "formAsWritten": "Camel Borana",
+            "sources": [
+              {
+                "title": "The role of abela in the Gabra society: a case study of gerontocratic society of the pastoralists",
+                "author": "Reizo Harako",
+                "year": 1982,
+                "url": "https://repository.kulib.kyoto-u.ac.jp/server/api/core/bitstreams/48461ea2-dbe5-4c66-9b4b-136c46cb96e9/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 63",
+                "notes": "African Study Monographs, numéro supplémentaire 1, 1982, p. 63-69, lu le 11 octobre 2026 dans le dépôt de l'université de Kyoto. Enquête de terrain menée en 1980."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

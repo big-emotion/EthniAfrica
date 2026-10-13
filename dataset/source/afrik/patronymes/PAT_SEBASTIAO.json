@@ -85,5 +85,117 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Sebastião à un peuple en Angola. Nous n'avons pas encore consulté de source consacrée à ce nom. Les mentions trouvées concernent la Fortaleza de São Sebastião, au Mozambique. Elles désignent un lieu et n'expliquent pas le nom de famille. Les exemples de noms portugais cités pour les créoles de Guinée-Bissau ne suffisent pas à expliquer leur usage en Angola."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sebastião est un nom de famille porté en Angola, où on l'écrit aussi Sebastiao. C'est d'abord un prénom chrétien, la forme portugaise de Sébastien, devenu aussi un nom de famille. On ne sait pas avec certitude quand ni comment il l'est devenu en Angola ; nous présentons plus bas la seule explication que nous avons trouvée.",
+    "names": [
+      {
+        "nameText": "Sebastião",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un prénom chrétien devenu nom de famille, porté en Angola.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sebastião reprend le prénom Sebastião, la forme portugaise de Sébastien. Le dictionnaire de Patrick Hanks rattache ce prénom au latin Sebastianus, le nom d'un saint chrétien du IIIe siècle ; il aurait d'abord désigné un homme venu de Sébastée, une ville dont le nom vient du grec sebastos, « vénéré ». Le dictionnaire ne dit rien de l'Angola.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Sebastiao Name Meaning and Sebastiao Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=sebastiao",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch : « German, English, French, and Jewish; Spanish (Sebastián): from the personal name Sebastian, Latin Sebastianus, borne by a 3rd-century Christian saint. This was originally an ethnic name meaning ‘man from Sebastia’, a city in Pontus named from Greek sebastos ‘revered’ (the Greek equivalent of Augustus). » La page de la forme Sebastiao affiche l'entrée écrite pour Sebastian ; elle relève aussi des porteurs de la forme Sebastiao au Brésil, au Portugal et en Angola. Elle ne dit rien de l'usage du nom en Angola. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Mai 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Sebastião est porté en Angola comme nom de famille : Pedro Sebastião y est ministre d'État jusqu'en mai 2021, selon une dépêche de l'agence Lusa. La dépêche ne dit rien de l'origine du nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "PR exonera chefe da sua Casa de Segurança e ministro de Estado",
+                "author": "Lusa / VerAngola",
+                "year": 2021,
+                "url": "https://www.verangola.net/va/pt/052021/Politica/25736/PR-exonera-chefe-da-sua-Casa-de-Seguran%C3%A7a-e-ministro-de-Estado.htm",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Dépêche du 31 mai 2021. Le président angolais « exonerou esta Segunda-feira o chefe da sua Casa de Segurança e ministro de Estado, Pedro Sebastião ». Elle ne dit rien de l'origine du nom. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Proposé en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Sebastião pourrait être devenu un nom angolais par le baptême et l'état civil. À l'époque coloniale, les missionnaires donnaient aux Ovimbundu baptisés des noms de saints, et l'état civil remplaçait des noms en umbundu par des noms portugais, selon Severino Canhola Dungue. Il ne cite pas ce nom en particulier.",
+            "sources": [
+              {
+                "title": "O nome: Identidade cultural do povo Ovimbundu",
+                "author": "Severino Canhola Dungue",
+                "year": 2025,
+                "url": "https://www.ajol.info/index.php/academicus/article/download/285659/269148/667445",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 28-30",
+                "notes": "Revue Academicus, vol. 3, n° 1, 2025, p. 23-34, publiée le 7 janvier 2025 ; texte intégral lu sur AJOL. Pages 29-30 : à l'époque coloniale, les missionnaires donnaient aux Ovimbundu baptisés des noms de saints à la place de leurs noms, et au registre civil des noms en umbundu étaient remplacés par des noms portugais (exemple donné : « Nangoya – Gomes »), d'après Chimbinda (2009). L'article ne cite pas le nom Sebastião. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sebastiao",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Le même nom écrit sans tilde, dans les registres et les bases de données.",
+        "periodLabel": "Porté aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sebastiao est le même nom écrit sans tilde. La base de FamilySearch relève des porteurs de cette forme au Brésil, au Portugal et en Angola.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sebastiao Name Meaning and Sebastiao Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=sebastiao",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch : « German, English, French, and Jewish; Spanish (Sebastián): from the personal name Sebastian, Latin Sebastianus, borne by a 3rd-century Christian saint. This was originally an ethnic name meaning ‘man from Sebastia’, a city in Pontus named from Greek sebastos ‘revered’ (the Greek equivalent of Augustus). » La page de la forme Sebastiao affiche l'entrée écrite pour Sebastian ; elle relève aussi des porteurs de la forme Sebastiao au Brésil, au Portugal et en Angola. Elle ne dit rien de l'usage du nom en Angola. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

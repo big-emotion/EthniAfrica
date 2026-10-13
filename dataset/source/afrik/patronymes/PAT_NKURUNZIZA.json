@@ -82,5 +82,64 @@
       "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Nkurunziza est un nom de personne du Burundi. Une dépêche d'agence de 2008 lui donne le sens « bonne nouvelle », sans dire comment il se forme ; les autres sources lues ne parlent pas de lui. On ne sait pas avec certitude depuis quand il est écrit, ni ce que sa forme veut dire mot à mot.",
+    "names": [
+      {
+        "nameText": "Nkurunziza",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne du Burundi, qui voudrait dire « bonne nouvelle » ; son origine reste mal connue.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "Décrit en 2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Nkurunziza voudrait dire « bonne nouvelle », selon une dépêche de l'agence Associated Press de 2008 sur les noms burundais, qui ne dit pas comment il se forme.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "In Burundi, names speak volumes",
+                "author": "Associated Press",
+                "year": 2008,
+                "url": "https://www.tehrantimes.com/news/165386/In-Burundi-names-speak-volumes",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Dépêche de l'agence Associated Press datée de Bujumbura, reprise par le Tehran Times le 18 mars 2008. Lue le 13 octobre 2026. Elle écrit à propos du nom de famille de l'ancien chef rebelle devenu président, Pierre Nkurunziza, qu'il « means good news » ; elle ne dit pas comment le nom se décompose. Elle précise aussi que les enfants reçoivent traditionnellement deux noms en kirundi, que la colonisation a fait préférer des prénoms européens et que transmettre le nom de famille du père reste rare."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "Décrit en 2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Nkurunziza est porté dans un pays où, selon l'anthropologue Léandre Simbananiye, le système ancien veut que chacun ait un nom différent de celui de son père, tandis que le système de noms de famille hérités a été introduit par la colonisation et le christianisme.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les noms de personnes au Burundi : un support du lien social",
+                "author": "Léandre Simbananiye",
+                "year": 2005,
+                "url": "https://www.anthropologie-societes.ant.ulaval.ca/sites/anthropologie-societes.ant.ulaval.ca/files/articles/fichiers/A&S_29-1_167-181.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 171",
+                "notes": "Anthropologie et Sociétés, 29 (1), 2005, p. 167-181. Lu le 13 octobre 2026. Page 171 : au Burundi, le système traditionnel où chacun porte un nom différent de celui de son père cohabite avec le système patronymique introduit par la colonisation et le christianisme ; Simbananiye cite Rodegem (1965, p. 9), pour qui les missionnaires qui tentèrent d'imposer le nom du père connurent « un fiasco ». Pages 173-174 : de nombreux noms burundais portent sur Imana, l'Être suprême. L'article ne cite pas le nom Nkurunziza."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

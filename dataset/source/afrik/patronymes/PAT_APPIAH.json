@@ -11,7 +11,10 @@
     {
       "spelling": "Appiah",
       "attestations": [
-        { "countryId": "GHA", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "GHA",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -75,5 +78,92 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Appiah est un nom de personne akan, du Ghana. Une forme proche, Apea, est écrite en 1881 ; le h final est l'écriture anglaise des noms ghanéens de ce genre. Les sources lues ne disent pas ce qu'il veut dire : on ne sait pas avec certitude d'où il vient.",
+    "names": [
+      {
+        "nameText": "Appiah",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom d'homme akan du Ghana ; son sens reste inconnu.",
+        "periodLabel": "Écrit Apea dès 1881 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Décrit en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Appiah est un nom d'homme akan, que le Dictionary of American Family Names dit d'origine inexpliquée. Le dictionnaire note que le h final est l'écriture anglaise habituelle de ces noms ghanéens.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Appiah",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/appiah?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lu le 13 octobre 2026 ; le site affiche une traduction française. La notice dit : Afrique de l'Ouest (Ghana) : d'un nom personnel masculin akan d'étymologie inexpliquée ; le h final dans les noms ghanéens comme celui-ci est l'anglicisation caractéristique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Liste des fonctionnaires de 1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Appiah est porté en 1921 par plusieurs employés de l'administration de la colonie de la Côte-de-l'Or, dont un artisan des chemins de fer, un employé payeur du régiment de la Côte-de-l'Or, un infirmier et un préparateur du service vétérinaire.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Gold Coast Colony. Blue Book 1921",
+                "author": "Gouvernement de la colonie de la Côte-de-l'Or (Accra)",
+                "year": 1921,
+                "url": "https://archive.org/details/blue-book-gold-coast-1921",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 134",
+                "notes": "Registre annuel de la colonie, avec la liste de ses fonctionnaires ; exemplaire numérisé sur archive.org. Lu le 13 octobre 2026. Page 134, liste alphabétique des fonctionnaires : « Appiah, H. » (artisan, chemins de fer), « Appiah, J. M. » (employé payeur, régiment de la Côte-de-l'Or), « Appiah, W. » (infirmier, service médical) et « Appiah, S. K. » (préparateur, service vétérinaire), avec d'autres Appiah. La liste donne les noms écrits ainsi : famille d'abord, puis initiales."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Décrit en 1881"
+            },
+            "statement": "Le nom Appiah apparaît par écrit sous une forme proche, Apea, dans le dictionnaire de Johann Gottlieb Christaller : l'entrée « Apea » le donne comme nom propre d'homme, et la liste des noms de personnes akan le cite sans explication. C'est la plus ancienne trace de cette forme que le projet connaît ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Apea",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Johann Gottlieb Christaller",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 368 et p. 666-667",
+                "notes": "Bâle, Evangelical Missionary Society, 1881 ; exemplaire numérisé sur archive.org. Lu le 13 octobre 2026. Page 368 : « Apea, pr. n. m. » (nom propre masculin). Annexe G, « Proper Names of Persons », p. 666-667 : chacun porte d'ordinaire deux noms, dont l'un dit le jour de naissance ; Apea figure dans la liste de la page 667 sans explication, et l'auteur note que de beaucoup de ces noms le sens premier n'est pas connu. Missionnaire de Bâle, cité pour les formes qu'il écrit."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

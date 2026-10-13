@@ -134,5 +134,104 @@
         "source_kind": "official_statistics"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bugakwe désigne un groupe san du delta de l'Okavango et des rives du fleuve Okavango, au Botswana, en Namibie et en Angola, qui se nomme lui-même Bugakhoe, « les Khwe de la brousse ». Les linguistes rangent son parler parmi ceux du khwe, aussi écrit kxoe. On ne sait pas avec certitude quand ce nom apparaît pour la première fois par écrit : la plus ancienne trace que nous connaissons date de 1997. Les autres noms de la fiche, comme Kxoe ou Barakwena, désignent l'ensemble des Khwe.",
+    "names": [
+      {
+        "nameText": "Bugakhoe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "xuu",
+        "namedBy": null,
+        "shortLine": "Le nom que ce groupe san se donne : « les Khwe de la brousse ».",
+        "periodLabel": "Écrit depuis 1997 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Bugakhoe veut dire « les Khwe de la brousse » : il désigne les Khwe qui vivent au Botswana, selon la présentation de la grammaire du khwe de Christa Kilian-Hatz. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Grammar of Modern Khwe (Central Khoisan)",
+                "author": "Christa Kilian-Hatz",
+                "year": 2008,
+                "url": "https://www.koeppe.de/titel_a-grammar-of-modern-khwe-central-khoisan",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Cologne, Rüdiger Köppe, collection Research in Khoisan Studies, vol. 23. Présentation de l'ouvrage sur le site de l'éditeur, lue le 12 octobre 2026 ; nous n'avons pas lu la grammaire elle-même."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Buga figure parmi les groupes khoe que les linguistes distinguent autour du district de Chobe, au Botswana, à côté des //Ani, des /Anda et des Kxoe, selon l'historien Jeff Ramsay.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Chobe District (1)",
+                "author": "Jeff Ramsay",
+                "year": 2021,
+                "url": "https://mmegi.bw/ampArticle/100263",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Chronique parue dans Mmegi, journal du Botswana, le 10 août 2021, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Classement actuel des langues"
+            },
+            "era": "modern",
+            "statement": "Le nom Buga-Kxoe désigne, dans le catalogue de langues Glottolog, un des six parlers de la langue kxoe, aussi appelée khwe.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog, entrée « Buga-Kxoe »",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/buga1248",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue de l'Institut Max Planck d'anthropologie évolutionnaire, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1997,
+              "to": 1997,
+              "label": "1997 (rapporté en 2008)"
+            },
+            "era": "modern",
+            "statement": "Le nom Bugakhoe figure, sous la forme « Bùga-Khwe », dans le classement des parlers khwe que propose le linguiste Matthias Brenzinger en 1997, selon la présentation de la grammaire du khwe de Christa Kilian-Hatz. C'est la plus ancienne trace de ce nom que le projet connaît. Ce groupe existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Grammar of Modern Khwe (Central Khoisan)",
+                "author": "Christa Kilian-Hatz",
+                "year": 2008,
+                "url": "https://www.koeppe.de/titel_a-grammar-of-modern-khwe-central-khoisan",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Cologne, Rüdiger Köppe, collection Research in Khoisan Studies, vol. 23. Présentation de l'ouvrage sur le site de l'éditeur, lue le 12 octobre 2026 ; nous n'avons pas lu la grammaire elle-même."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

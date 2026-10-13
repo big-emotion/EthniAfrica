@@ -82,5 +82,102 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Wanjiru », « Kikuyu », « Gikuyu », « personal name », « surname », « etymology », « transmission » et « obituary », ainsi que la consultation directe de « Wanjiru Surname Origin, Meaning & Last Name History » n'ont établi aucune règle propre à Wanjiru permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Wanjiru est un nom de femme chez les Kikuyu, au Kenya. Il passe d'une grand-mère à sa petite-fille et rappelle le clan Anjiru. Le récit des origines kikuyu le rattache à l'une des filles des premiers ancêtres ; nous présentons ce récit plus bas.",
+    "names": [
+      {
+        "nameText": "Wanjiru",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kik",
+        "namedBy": null,
+        "shortLine": "Un nom de femme kikuyu, transmis par la grand-mère, lié au clan Anjiru.",
+        "periodLabel": "Écrit dès 1910 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "Décrit en 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Wanjiru est un nom personnel de femme chez les Kikuyu. Il se transmet toutes les deux générations, de la grand-mère à la petite-fille, et il montre que la famille appartient au clan Anjiru, selon Nobuko et Peter S. Nganga. Le même article explique que le dernier nom d'un Kikuyu est le nom personnel de son père : il n'explique pas comment Wanjiru devient un nom de famille.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ケニア・キクユ族の親族制度と子どものネーミング・ルール (The Kinship System and Rule for Naming Children in Kikuyu People of Kenya)",
+                "author": "Nobuko Nganga et Peter S. Nganga",
+                "year": 2013,
+                "url": "https://nagasaki-u.repo.nii.ac.jp/record/7484/files/shakaikagaku75_25.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 25-28",
+                "notes": "Article en japonais, revue de la faculté d'éducation de l'université de Nagasaki, n° 75, 2013, p. 25-33. Relu le 12 octobre 2026 dans le dépôt de l'université. Page 25 : les Kikuyu n'ont pas de nom de famille fixe ; le dernier nom est le nom personnel du père. Page 26 : d'après Jomo Kenyatta, les neuf filles de Gikuyu et Mumbi fondent neuf clans à leur nom, dont « Anjiru-Wanjiru ». Pages 27-28 : le nom personnel se transmet des grands-parents aux petits-enfants ; une grand-mère et une petite-fille nommées Wanjiru montrent que la famille appartient au clan Anjiru."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "Rapporté en 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Wanjiru serait celui de l'une des neuf filles de Gikuyu et Mumbi, les premiers ancêtres du récit des origines kikuyu. Chaque fille aurait fondé un clan à son nom, et le clan Anjiru viendrait d'elle, selon Nobuko et Peter S. Nganga, qui résument Jomo Kenyatta.",
+            "hypothesisGroup": "wanjiru-origine",
+            "sources": [
+              {
+                "title": "ケニア・キクユ族の親族制度と子どものネーミング・ルール (The Kinship System and Rule for Naming Children in Kikuyu People of Kenya)",
+                "author": "Nobuko Nganga et Peter S. Nganga",
+                "year": 2013,
+                "url": "https://nagasaki-u.repo.nii.ac.jp/record/7484/files/shakaikagaku75_25.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 26",
+                "notes": "Article en japonais, revue de la faculté d'éducation de l'université de Nagasaki, n° 75, 2013, p. 25-33. Relu le 12 octobre 2026 dans le dépôt de l'université. Page 25 : les Kikuyu n'ont pas de nom de famille fixe ; le dernier nom est le nom personnel du père. Page 26 : d'après Jomo Kenyatta, les neuf filles de Gikuyu et Mumbi fondent neuf clans à leur nom, dont « Anjiru-Wanjiru ». Pages 27-28 : le nom personnel se transmet des grands-parents aux petits-enfants ; une grand-mère et une petite-fille nommées Wanjiru montrent que la famille appartient au clan Anjiru."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wanjiru apparaît par écrit dans un conte kikuyu publié en 1910 par W. Scoresby et Katherine Routledge. C'est le nom d'une jeune fille que les siens sacrifient pour faire venir la pluie. Les Routledge tiennent ce conte d'une femme qu'ils nomment Nagatiu. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; elle dit quand des auteurs l'ont noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Wan-ji-ru",
+            "birth": true,
+            "actors": [
+              {
+                "name": "W. Scoresby Routledge",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Katherine Routledge",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Nagatiu",
+                "role": "raconte le conte, selon les auteurs"
+              }
+            ],
+            "sources": [
+              {
+                "title": "With a Prehistoric People: the Akikuyu of British East Africa",
+                "author": "W. Scoresby Routledge et Katherine Routledge",
+                "year": 1910,
+                "url": "https://archive.org/details/withprehistoricp00rout",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 287-289",
+                "notes": "Londres, Edward Arnold, 1910. Relu le 12 octobre 2026 dans la numérisation d'Internet Archive (bibliothèques de l'université de Californie). Pages 287-289 : le conte « The tale of the maiden who was sacrificed by her kin », « told by Na-ga-ti-u, Mother of one of the herds of the Chief N'Du-i-Ni » ; le devin y dit : « the maiden is Wan-ji-ru ». Auteurs de l'époque coloniale, cités ici pour la forme qu'ils écrivent."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

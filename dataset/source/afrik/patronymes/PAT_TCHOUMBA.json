@@ -11,7 +11,10 @@
     {
       "spelling": "Tchoumba",
       "attestations": [
-        { "countryId": "CMR", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "CMR",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -75,5 +78,65 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Tchoumba est un nom de famille porté au Cameroun. Il est écrit dès 1956 au Journal officiel, à propos d'une élection au Cameroun. On ne sait pas avec certitude d'où vient ce nom ni ce qu'il veut dire : le projet n'a pas trouvé de source qui l'explique.",
+    "names": [
+      {
+        "nameText": "Tchoumba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille du Cameroun, écrit dès 1956 au Journal officiel.",
+        "periodLabel": "Écrit dès 1956 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Tchoumba est un nom de famille. Les sources que le projet a lues ne disent ni d'où il vient ni ce qu'il veut dire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Journal officiel de la République française. Débats parlementaires, Assemblée nationale, compte rendu de la séance du 30 mai 1956",
+                "author": "Assemblée nationale",
+                "year": 1956,
+                "url": "https://archive.org/details/sim_journal-officiel-de-la-republique-francaise_1956-05-31_58",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 2130",
+                "notes": "Numéro du 31 mai 1956. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 2130 : dans le rapport sur l'élection des députés du Cameroun, « M. Tchoumba », candidat battu, a contesté le résultat ; le rapporteur relève qu'il a obtenu 448 voix au bureau de vote de New Bell numéro un, à Douala."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1956,
+              "to": 1956,
+              "label": "1956"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tchoumba apparaît par écrit au Journal officiel, dans le débat du 30 mai 1956 sur l'élection des députés du Cameroun. Il y est porté par un candidat battu à Douala, qui avait contesté le résultat. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est porté.",
+            "formAsWritten": "Tchoumba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Journal officiel de la République française. Débats parlementaires, Assemblée nationale, compte rendu de la séance du 30 mai 1956",
+                "author": "Assemblée nationale",
+                "year": 1956,
+                "url": "https://archive.org/details/sim_journal-officiel-de-la-republique-francaise_1956-05-31_58",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 2130",
+                "notes": "Numéro du 31 mai 1956. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 2130 : dans le rapport sur l'élection des députés du Cameroun, « M. Tchoumba », candidat battu, a contesté le résultat ; le rapporteur relève qu'il a obtenu 448 voix au bureau de vote de New Bell numéro un, à Douala."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

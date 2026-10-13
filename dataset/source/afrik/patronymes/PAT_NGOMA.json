@@ -120,5 +120,86 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Ngoma », « Kongo », « le Congo et la RDC », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a établi aucune règle propre à Ngoma permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ngoma est un nom de personne du Congo-Brazzaville et de la République démocratique du Congo, qui est aussi le mot kikongo pour « tambour ». Les sources lues ne disent pas depuis quand il s'écrit comme nom de personne, ni s'il désigne un clan. On ne sait pas avec certitude d'où il vient ; une explication est présentée plus bas.",
+    "names": [
+      {
+        "nameText": "Ngoma",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne kongo, aussi le mot pour « tambour » ; son origine reste incertaine.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1887,
+              "to": 1887,
+              "label": "Décrit en 1887"
+            },
+            "statement": "Le nom Ngoma est aussi un mot de la langue kongo : le missionnaire William Holman Bentley l'enregistre dans son dictionnaire de 1887 avec le sens « tambour ».",
+            "aspect": "meaning",
+            "formAsWritten": "Ngoma",
+            "sources": [
+              {
+                "title": "Dictionary and Grammar of the Kongo Language, entrée Ngoma",
+                "author": "W. Holman Bentley",
+                "year": 1887,
+                "url": "https://archive.org/details/dictionarygramma00bent",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 373",
+                "notes": "Publié en 1887 pour la mission baptiste du fleuve Congo, dictionnaire de la langue telle qu'on la parle à San Salvador. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'archive.org. Page 373, partie kongo-anglais : « Ngoma, 2, n., drum », avec « etembo dia ngoma, the mouth of a drum » ; l'entrée suivante donne un autre sens, « amorphophalus » (une plante). Missionnaire baptiste, cité pour la forme et le sens du mot."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1959,
+              "to": 1959,
+              "label": "Décrit en 1959"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ngoma ne porte pas le préfixe ki- qui, selon l'ethnologue Marcel Soret, marque aujourd'hui le nom d'un clan kongo, la kanda, chez les Kongo du Congo-Brazzaville ; Soret ne cite pas ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les Kongo nord-occidentaux",
+                "author": "Marcel Soret",
+                "year": 1959,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/2024-05/010027635.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 73",
+                "notes": "Marcel Soret, avec André Jacquot pour la linguistique, Presses universitaires de France et Institut international africain, 1959 ; texte intégral lu sur la base Horizon de l'IRD. Page 73 : le clan, la kanda, réunit les familles apparentées par les femmes et se marque aujourd'hui par un nom particulier, « avec préfixe ki- ». Une recherche du mot Ngoma dans le texte ne donne aucun résultat : le livre ne parle pas de ce nom. Relu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Rapportée en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Ngoma serait un nom tiré d'un objet, le tambour, comme Mpanu, « pagne », Matadi, « pierres » ou Mbele, « couteau », selon Samuel Malonga, qui écrit sur les noms de famille du Kongo Central, en République démocratique du Congo, sans citer de source.",
+            "hypothesisGroup": "origine du nom Ngoma",
+            "sources": [
+              {
+                "title": "Samuel Malonga, « Patronymies en RDC, le cas du Kongo Central », Mbokamosika, 26 avril 2023",
+                "author": "Samuel Malonga",
+                "year": 2023,
+                "url": "https://www.mbokamosika.com/2023/04/patronymies-en-rdc-le-cas-du-kongo-central.html",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Article de blog lu en ligne, sans pagination. La phrase lue : « Il existe aussi des patronymes relatifs aux objets : Mpanu (pagne), Matadi (pierres), Mbele (couteau), Mbungu (vase, verre, coupe), Ngoma (tam-tam). » L'article ne cite pas de source pour cette liste et traite du Kongo Central, non du Congo-Brazzaville. Relu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

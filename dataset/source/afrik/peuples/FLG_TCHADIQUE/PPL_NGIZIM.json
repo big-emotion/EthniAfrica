@@ -123,5 +123,147 @@
         "tier": "referenced"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ngizim désigne un peuple du nord-est du Nigeria, autour de Potiskum, qui se nomme lui-même Ngizim. Une chronique du Bornou l'emploie déjà au XVIe siècle. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Ngizim",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ngi",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; une chronique du Bornou l'emploie dès le XVIe siècle.",
+        "periodLabel": "XVIe siècle à aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "Dictionnaire publié en 1981"
+            },
+            "era": "modern",
+            "statement": "Le nom Ngizim est celui que la langue elle-même emploie pour une personne ngizim et pour la langue, selon le dictionnaire du linguiste Russell G. Schuh. Nous n'avons pas trouvé de source qui explique d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Dictionary of Ngizim",
+                "author": "Russell G. Schuh",
+                "year": 1981,
+                "url": "https://archive.org/details/schuh-a-dictionary-of-ngizim-1981",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 210",
+                "notes": "Berkeley, University of California Press, 1981, collection University of California Publications in Linguistics, 99. Lu dans une copie non officielle déposée sur Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant l'époque moderne"
+            },
+            "statement": "Le nom Ngizim est peu employé en pays haoussa avant l'époque moderne : les Haoussa désignent alors tous les peuples de l'empire du Bornou par un seul nom, Barebari, selon l'historien Mahdi Adamu.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 11 : Les Hawsa et leurs voisins du Soudan central",
+                "author": "Mahdi Adamu",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 306",
+                "notes": "UNESCO, volume dirigé par D. T. Niane, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "Livre publié en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Ngizim est écrit Nghizim par l'explorateur Heinrich Barth, qui résume la chronique de l'imam Ahmad ibn Furtu. Il note que ce peuple est celui qu'on appelle alors couramment Nkizam.",
+            "formAsWritten": "Nghizim",
+            "sources": [
+              {
+                "title": "Travels and Discoveries in North and Central Africa, vol. 2 (édition de New York)",
+                "author": "Heinrich Barth",
+                "year": 1857,
+                "url": "https://archive.org/details/travelsdiscoveri21857bart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 654-655",
+                "notes": "New York, D. Appleton, 1857, réédition américaine de l'édition de Londres. Récit du voyage de l'auteur en Afrique centrale de 1849 à 1855. Lu dans la numérisation d'Internet Archive le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Ngizim n'apparaît pas dans la Polyglotta Africana du linguiste Sigismund Koelle : la langue y figure sous le nom de N·gṓdṣin, que Koelle prend pour une ville et un district soumis au Bornou. Russell G. Schuh y reconnaît Ngojin, une ville qui compte dans l'histoire ngizim.",
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite. Remarque placée sous la langue « N·gṓdṣin » de la section VII-B-3-b."
+              },
+              {
+                "title": "A Dictionary of Ngizim",
+                "author": "Russell G. Schuh",
+                "year": 1981,
+                "url": "https://archive.org/details/schuh-a-dictionary-of-ngizim-1981",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. vii-viii",
+                "notes": "Berkeley, University of California Press, 1981, collection University of California Publications in Linguistics, 99. Lu dans une copie non officielle déposée sur Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1571,
+              "to": 1583,
+              "label": "Règne d'Idris Alawoma, années 1571-1583 selon H. R. Palmer"
+            },
+            "era": "polity",
+            "statement": "Le nom Ngizim apparaît dans la chronique de l'imam Ahmad ibn Furtu, qui raconte les guerres du roi Idris Alawoma du Bornou contre « la tribu des Ngizim » et contre les Ngizim de l'ouest, appelés Binawa, selon la traduction anglaise de H. R. Palmer. C'est la plus ancienne trace de ce nom que le projet connaît. Les Ngizim vivaient déjà là avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "History of the First Twelve Years of the Reign of Mai Idris Alooma of Bornu (1571-1583)",
+                "author": "Ahmad ibn Furtu, traduit et annoté par H. R. Palmer",
+                "year": 1926,
+                "url": "https://archive.org/details/first-twelve-years-of-idris-alooma",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "pages 7-8 et 51-52 du manuscrit",
+                "notes": "Chronique écrite en arabe par l'imam du roi Idris Alawoma, traduite et publiée en 1926. Lu dans la réédition Routledge de 2018 mise en ligne sur Internet Archive le 11 octobre 2026 ; copie non officielle. La traduction écrit N'gizim."
+              },
+              {
+                "title": "Histoire générale de l'Afrique, V, ch. 17 : Le Kānem-Borno : ses relations avec la Méditerranée, le Baguirmi et les autres États du bassin du Tchad",
+                "author": "B. M. Barkindo",
+                "year": 1999,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 546",
+                "notes": "UNESCO, volume dirigé par B. A. Ogot, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

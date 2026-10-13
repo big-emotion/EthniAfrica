@@ -124,5 +124,130 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Baga désigne des peuples de la côte de Guinée, entre le rio Nunez et Conakry, qui l'emploient eux-mêmes entre leurs groupes. Il apparaît par écrit dès 1594. On ne sait pas avec certitude d'où il vient : les sources que nous avons lues ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Baga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des peuples de la côte de Guinée ; écrit dès 1594, son origine reste inconnue.",
+        "usedIn": ["fra", "sus"],
+        "periodLabel": "Écrit dès 1594 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1957,
+              "to": 1957,
+              "label": "Usage décrit par l'autrice"
+            },
+            "era": "colonial",
+            "statement": "Le nom Baga désigne les riziculteurs qui peuplent la côte marécageuse de Guinée, de la rive sud du rio Nunez jusqu'à la hauteur de Conakry, selon l'ethnologue Denise Paulme. Pour les Baga eux-mêmes, sont Baga les descendants de ceux qui sont venus chercher refuge dans les marais. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Des riziculteurs africains : les Baga (Guinée française), Cahiers d'outre-mer, n° 39",
+                "author": "Denise Paulme",
+                "year": 1957,
+                "url": "https://www.persee.fr/doc/caoum_0373-5834_1957_num_10_39_2044",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 257 et p. 262",
+                "notes": "Lu le 12 octobre 2026 sur Persée, dans le texte intégral de l'article. L'autrice a enquêté en Guinée française en 1954 et 1955."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1954,
+              "to": 1957,
+              "label": "Enquête de 1954-1955 (article publié en 1957)"
+            },
+            "era": "colonial",
+            "statement": "Le nom Baga couvre plusieurs groupes, selon Denise Paulme : les Baga Sitemou du cercle de Boké, les Baga Koba des îles au sud du rio Pongo, et ceux que les Soussou appellent Baga Foré, de fore, « païen » en soussou. Ces derniers se nomment eux-mêmes Baga bulunits, « Baga des marais ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Des riziculteurs africains : les Baga (Guinée française), Cahiers d'outre-mer, n° 39",
+                "author": "Denise Paulme",
+                "year": 1957,
+                "url": "https://www.persee.fr/doc/caoum_0373-5834_1957_num_10_39_2044",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 260",
+                "notes": "Lu le 12 octobre 2026 sur Persée, dans le texte intégral de l'article. L'autrice a enquêté en Guinée française en 1954 et 1955."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1954,
+              "to": 1957,
+              "label": "Enquête de 1954-1955 (article publié en 1957)"
+            },
+            "era": "colonial",
+            "statement": "Le nom Baga reste inscrit sur les recensements pour les deux mille habitants du canton de Sobané, près de Boffa, alors qu'ils parlent désormais le soussou entre eux, selon Denise Paulme. Elle cite cette phrase : « Nos pères étaient Baga, nous sommes Soussou. »",
+            "sources": [
+              {
+                "title": "Des riziculteurs africains : les Baga (Guinée française), Cahiers d'outre-mer, n° 39",
+                "author": "Denise Paulme",
+                "year": 1957,
+                "url": "https://www.persee.fr/doc/caoum_0373-5834_1957_num_10_39_2044",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 277",
+                "notes": "Lu le 12 octobre 2026 sur Persée, dans le texte intégral de l'article. L'autrice a enquêté en Guinée française en 1954 et 1955."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Baga sert aussi entre les groupes baga eux-mêmes, selon Sigismund Koelle. Il distingue trois pays baga : celui de Kalum, celui du rio Pongo et celui du rio Nunez. Les gens du rio Nunez appellent Kuba ceux de Kalum, qui les appellent en retour Baga sintene ou Baheraka, « les gens nus ».",
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu le 11 octobre 2026 dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown ; pour le baga, son informateur, Stephen, venait du pays de Kalum."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1594,
+              "to": 1594,
+              "label": "1594"
+            },
+            "era": "polity",
+            "statement": "Le nom Baga apparaît, écrit « Bagas », chez le capitaine André Álvares de Almada, né au Cap-Vert : il parle de la terre des Bagas et des Coquolins, au rio Nunez, et ajoute que les Nalous, les Bagas et les Coquolins se comprennent entre eux. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Bagas",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tratado breve dos rios de Guiné do Cabo-Verde",
+                "author": "André Álvares de Almada",
+                "year": 1594,
+                "url": "https://archive.org/details/tratadobrevedosr00alma",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 69",
+                "notes": "Texte écrit en 1594 par un capitaine né au Cap-Vert, publié à Porto par Diogo Köpke en 1841. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -11,17 +11,23 @@ import { PAGE_HTML } from "./page.mjs";
 import {
   IMAGERY,
   FPS,
-  TOTAL_FRAMES,
   WIDTH,
   HEIGHT,
-  VIEW_CENTRE,
   RELIEF,
+  BANDS,
   frameState,
+  frameCount,
+  holdCameras,
   project,
   unproject,
   tiltedCamera,
   captionLines,
   checkLayout,
+  viewCentre,
+  tapeText,
+  chapterLabels,
+  placeLabels,
+  placeBox,
 } from "./sequence.mjs";
 
 const here = new URL(".", import.meta.url);
@@ -31,6 +37,7 @@ const FONTS = [
   "Fraunces.ttf",
   "NunitoSans.ttf",
   "NotoSans-Variable.ttf",
+  "NotoSansArabic-SemiBold.ttf",
 ];
 // SwiftShader keeps WebGL on the CPU, so the same frame gives the same pixels
 // on a given machine regardless of the GPU.
@@ -64,18 +71,21 @@ async function engineHash() {
   return sha256(Buffer.concat(parts));
 }
 
-// Geographic bounds of the map the final camera shows, so the full
-// resolution crop covers the hold with a margin. Rows under the title scrim
+// Geographic bounds of the map every hold camera shows, so the full
+// resolution crop covers each hold with a margin. Rows under the title scrim
 // and the bottom veil are left out: a tilted view would otherwise reach the
 // horizon and spread the crop over ground nobody can read.
 function holdBounds(seq) {
-  const { camera } = frameState(seq, TOTAL_FRAMES - 1);
   const hits = [];
-  for (let x = 0; x <= WIDTH; x += WIDTH / 12)
-    for (let y = 200; y <= 1300; y += 50) {
-      const ground = unproject(camera, x, y);
-      if (ground) hits.push(ground);
-    }
+  const [top, bottom] = seq.chapters
+    ? [BANDS.names[0], BANDS.veil]
+    : [200, 1300];
+  for (const camera of holdCameras(seq))
+    for (let x = 0; x <= WIDTH; x += WIDTH / 12)
+      for (let y = top; y <= bottom; y += 50) {
+        const ground = unproject(camera, x, y);
+        if (ground) hits.push(ground);
+      }
   if (!hits.length) return [-180, 180, -90, 90];
   const lons = hits.map((g) => g.lon);
   const lats = hits.map((g) => g.lat);
@@ -255,21 +265,42 @@ const rings = (g) =>
 
 const featureInk = (f) => (f.kind === "area" ? INKS[f.ink] : WATER_INK);
 
+// A chained video highlights its subject in the accent, as on board 7: its
+// chapters draw different features, so no single ink would hold throughout.
+const ACCENT = "#e8b96a";
+
 function titleParts(seq) {
-  const subject = seq.features.find((f) => f.plate) ?? seq.features[0];
-  const [text, feature] = seq.highlight
-    ? [
-        seq.highlight.text,
-        seq.features.find((f) => f.id === seq.highlight.feature),
-      ]
-    : [subject?.name, subject];
+  let text;
+  let colour = ACCENT;
+  if (seq.chapters) text = seq.highlight?.text;
+  else {
+    const subject = seq.features.find((f) => f.plate) ?? seq.features[0];
+    const feature = seq.highlight
+      ? seq.features.find((f) => f.id === seq.highlight.feature)
+      : subject;
+    text = seq.highlight ? seq.highlight.text : subject?.name;
+    colour = feature && featureInk(feature);
+  }
   const at = text ? seq.title.lastIndexOf(text) : -1;
   if (at < 0) return [{ text: seq.title }];
   return [
     { text: seq.title.slice(0, at) },
-    { text, colour: featureInk(feature) },
+    { text, colour },
     { text: seq.title.slice(at + text.length) },
   ].filter((p) => p.text);
+}
+
+function legendSwatch(item, content) {
+  if (item.approximate) return "approximate";
+  if (item.name) return content.names.find((n) => n.name === item.name).kind;
+  if (item.place) return "place";
+  if (item.outline) return "outline";
+  const f = content.features.find((x) => x.id === item.feature);
+  return f.kind === "area"
+    ? `${f.certainty}-${f.ink}`
+    : f.kind === "border"
+      ? `border-${f.strength}`
+      : "river";
 }
 
 function labelStyle(f) {
@@ -303,10 +334,11 @@ function reliefLight(seq) {
 }
 
 // Draped overlays live in the region's own map: longitude scaled by the
-// cosine of the middle latitude, in screen pixels of the hold.
-function drapeFrame(seq, bounds) {
+// cosine of the middle latitude, in screen pixels of the hold that shows
+// them, so strokes keep their design width at every hold.
+function drapeFrame(radius, bounds) {
   const [lonMin, lonMax, latMin, latMax] = bounds;
-  const ppd = (seq.camera.at(-1).radius * Math.PI) / 180;
+  const ppd = (radius * Math.PI) / 180;
   const cosLat = Math.cos((((latMin + latMax) / 2) * Math.PI) / 180);
   const width = (lonMax - lonMin) * cosLat * ppd;
   const height = (latMax - latMin) * ppd;
@@ -322,36 +354,105 @@ function drapeFrame(seq, bounds) {
   };
 }
 
-function payload(seq, frame, relief) {
+const NO_CONTENT = { features: [], names: [], places: [], legend: [] };
+
+// The names a chapter places on its map (0.4.0 board 13), once per chapter
+// at its hold camera, on the raised ground in relief: the page draws them
+// where the rule put them, and a name with no room goes to the legend.
+function chapterPlacement(seq, index, relief, cache) {
+  if (!cache.has(index)) {
+    const camera = holdCameras(seq)[index];
+    const at = relief
+      ? (lon, lat) => project(camera, lon, lat, raiseFor(relief)(lon, lat))
+      : (lon, lat) => project(camera, lon, lat);
+    const specs = chapterLabels(seq, index);
+    const obstacles = (seq.chapters[index].places ?? []).map((p) =>
+      placeBox(camera, p, (_, lon, lat) => at(lon, lat))
+    );
+    const placed = placeLabels(
+      specs.map((l) => ({ ...l, anchor: at(...l.lonLat) })),
+      obstacles
+    );
+    cache.set(
+      index,
+      specs.map((spec, i) => ({ ...spec, ...placed[i] }))
+    );
+  }
+  return cache.get(index);
+}
+
+const raiseFor = (relief) => (lon, lat) =>
+  (relief.heightAt(lon, lat) * RELIEF.exaggeration) / EARTH_RADIUS_M;
+
+function payload(seq, frame, relief, placements = new Map()) {
   const state = frameState(seq, frame);
   const { camera } = state;
-  const of = (kind) => seq.features.filter((f) => f.kind === kind);
-  const raise = (lon, lat) =>
-    (relief.heightAt(lon, lat) * RELIEF.exaggeration) / EARTH_RADIUS_M;
+  // A chained video draws the current chapter; its ending draws no map.
+  const content = seq.chapters
+    ? (seq.chapters[state.chapter] ?? NO_CONTENT)
+    : seq;
+  const features = content.features ?? [];
+  const of = (kind) => features.filter((f) => f.kind === kind);
   const place = relief
-    ? (lon, lat) => project(camera, lon, lat, raise(lon, lat))
+    ? (lon, lat) => project(camera, lon, lat, raiseFor(relief)(lon, lat))
     : (lon, lat) => project(camera, lon, lat);
-  const draw = relief ? relief.drape.place : place;
+  const drape = relief?.drapes[Math.max(state.chapter ?? 0, 0)];
+  const draw = relief ? drape.place : place;
+  const outline = content.outline;
+  const placed =
+    seq.chapters && state.chapter !== null
+      ? chapterPlacement(seq, state.chapter, relief, placements)
+      : [];
+  const centre = (box) => ({ x: box.x + box.w / 2, y: box.y + box.h / 2 });
+  const opacityOf = (spec) =>
+    spec.kind === "name"
+      ? state.names[spec.key]
+      : spec.style === "outline"
+        ? state.outline.label
+        : state.labels[spec.key];
+  const outlinePlace = placed.find((p) => p.style === "outline");
   return {
-    centre: VIEW_CENTRE,
+    layout: seq.chapters ? "fullscreen" : "feed",
+    chapter: state.chapter ?? null,
+    centre: viewCentre(camera),
     camera,
     grade: state.grade,
-    demo: !!seq.demo,
+    dim: state.dim ?? 0,
+    tape: tapeText(seq),
     relief: relief && {
       view: tiltedCamera(camera),
       exaggeration: RELIEF.exaggeration,
       ...relief.light,
       drape: {
-        width: relief.drape.width,
-        height: relief.drape.height,
-        scale: relief.drape.scale,
+        width: drape.width,
+        height: drape.height,
+        scale: drape.scale,
       },
     },
+    outline: outline &&
+      state.outline && {
+        d:
+          outline.geometry.type === "Polygon"
+            ? outline.geometry.coordinates
+                .map((ring) => linePath(draw, ring, true))
+                .join("")
+            : linePath(draw, outline.geometry.coordinates),
+        closed: outline.geometry.type === "Polygon",
+        opacity: state.outline.opacity,
+        label: {
+          name: outline.name,
+          opacity: outlinePlace?.box ? state.outline.label : 0,
+          ...(outlinePlace?.box
+            ? centre(outlinePlace.box)
+            : place(...outline.labelAt)),
+        },
+      },
     areas: of("area").map((f) => ({
       d: rings(f.geometry)
         .map((ring) => linePath(draw, ring, true))
         .join(""),
       ink: f.ink,
+      hatch: f.hatch ?? 45,
       uncertain: f.certainty === "uncertain",
       opacity: state.features[f.id].opacity,
     })),
@@ -366,49 +467,100 @@ function payload(seq, frame, relief) {
       d: linePath(draw, f.geometry.coordinates),
       state: state.features[f.id],
     })),
-    labels: seq.features
-      .filter((f) => f.kind !== "border")
-      .map((f) => ({
-        name: f.name,
-        style: labelStyle(f),
-        colour: f.kind === "area" ? INKS[f.ink] : null,
-        opacity: state.labels[f.id],
-        ...place(...f.labelAt),
-      })),
-    names: (seq.names ?? []).map((n) => ({
-      name: n.name,
-      style: n.kind,
-      opacity: state.names[n.name],
-      ...place(n.lon, n.lat),
-    })),
-    places: (seq.places ?? []).map((p) => ({
+    ...(seq.chapters
+      ? placedNames(placed, opacityOf, centre)
+      : {
+          labels: features
+            .filter((f) => f.kind !== "border")
+            .map((f) => ({
+              name: f.name,
+              style: labelStyle(f),
+              colour: f.kind === "area" ? INKS[f.ink] : null,
+              opacity: state.labels[f.id],
+              ...place(...f.labelAt),
+            })),
+          names: (content.names ?? []).map((n) => ({
+            name: n.name,
+            style: n.kind,
+            kind: "name",
+            opacity: state.names[n.name],
+            ...place(n.lon, n.lat),
+          })),
+        }),
+    places: (content.places ?? []).map((p) => ({
       name: p.name,
       side: p.side,
       opacity: state.places[p.name],
       ...place(p.lon, p.lat),
     })),
+    head: {
+      signature: state.text.signature,
+      title: state.text.title,
+      titleSize: seq.chapters ? 80 : 76,
+    },
     title: titleParts(seq),
-    legend: seq.legend.map((item, i) => {
-      const f = seq.features.find((x) => x.id === item.feature);
-      return {
-        label: item.label,
-        opacity: state.legend[i],
-        swatch:
-          f.kind === "area"
-            ? `${f.certainty}-${f.ink}`
-            : f.kind === "border"
-              ? `border-${f.strength}`
-              : "river",
-        colour: f.kind === "area" ? INKS[f.ink] : "#f3e9da",
-      };
-    }),
-    caption: captionLines(seq).map((line) => {
-      const at = line.indexOf(" : ");
-      return [line.slice(0, at), line.slice(at + 3)];
-    }),
+    marker: state.marker ?? null,
+    subtitle: state.subtitle ?? null,
+    closing: state.closing ?? null,
+    legend: [
+      ...content.legend.map((item, i) => {
+        const f = item.feature && features.find((x) => x.id === item.feature);
+        return {
+          label: item.label,
+          opacity: state.legend[i],
+          swatch: legendSwatch(item, content),
+          colour:
+            f?.kind === "area"
+              ? INKS[f.ink]
+              : item.approximate
+                ? "#cbbba3"
+                : "#f3e9da",
+        };
+      }),
+      ...placed
+        .filter((p) => !p.box)
+        .map((p) => ({
+          label: p.text,
+          opacity: opacityOf(p),
+          swatch: "text",
+          colour: "#f3e9da",
+        })),
+    ],
+    caption: seq.chapters
+      ? [
+          ...state.caption.lines,
+          { label: "Imagerie", text: state.caption.imagery, opacity: 1 },
+        ]
+      : captionLines(seq).map((line) => {
+          const at = line.indexOf(" : ");
+          return {
+            label: line.slice(0, at),
+            text: line.slice(at + 3),
+            opacity: 1,
+          };
+        }),
   };
 }
 
+// Placed map names of a chained video: feature labels and names, each at
+// the centre of its box and the size the rule chose. The outline's label
+// travels with the outline.
+function placedNames(placed, opacityOf, centre) {
+  const drawn = placed.filter((p) => p.box && p.style !== "outline");
+  const entry = (p) => ({
+    name: p.text,
+    style: p.style,
+    size: p.size,
+    kind: p.kind,
+    colour: ["area", "quoted"].includes(p.style) ? INKS[p.ink] : null,
+    opacity: opacityOf(p),
+    ...centre(p.box),
+  });
+  return {
+    labels: drawn.filter((p) => p.kind === "label").map(entry),
+    names: drawn.filter((p) => p.kind === "name").map(entry),
+  };
+}
 async function openRenderer(seq, assets) {
   const imagery = await prepareImagery(seq, assets);
   const runtime = JSON.parse(
@@ -437,17 +589,18 @@ async function openRenderer(seq, assets) {
           heights[key].data.byteLength
         ),
       ]);
-    const ppd = (seq.camera.at(-1).radius * Math.PI) / 180;
+    const holds = holdCameras(seq);
+    const closest = Math.max(...holds.map((c) => c.radius));
     relief = {
       hash: heights.hash,
       heightAt: heightSampler(imagery.bounds, heights),
       light: reliefLight(seq),
-      drape: drapeFrame(seq, imagery.bounds),
+      drapes: holds.map((c) => drapeFrame(c.radius, imagery.bounds)),
       setup: {
         world: [heights.world.width, heights.world.height],
         region: [heights.region.width, heights.region.height],
-        // About three screen pixels per mesh cell at the hold.
-        meshStep: 3 / ppd,
+        // About three screen pixels per mesh cell at the closest hold.
+        meshStep: (3 * 180) / (closest * Math.PI),
         exaggeration: RELIEF.exaggeration,
       },
     };
@@ -484,17 +637,27 @@ async function openRenderer(seq, assets) {
     );
     if (fonts.some((f) => f.status !== "loaded"))
       throw new Error("A required font is not loaded");
+    const last = frameCount(seq) - 1;
+    const placements = new Map();
     const render = async (frame) => {
+      const state = frameState(seq, frame);
       const boxes = await page.evaluate(
         (f) => window.drawFrame(f),
-        payload(seq, frame, relief)
+        payload(seq, frame, relief, placements)
       );
-      if (frame === TOTAL_FRAMES - 1) {
-        const problems = checkLayout({ elements: boxes });
+      // The glyph boxes are checked on every hold: the last frame, and every
+      // frame of a chained video where a chunk is fully drawn.
+      if (frame === last || state.subtitle?.opacity === 1) {
+        const problems = checkLayout({
+          frame: seq.chapters ? "fullscreen" : "feed",
+          elements: boxes,
+        });
         if (problems.length)
-          throw new Error(`Hold layout: ${problems.join("; ")}`);
+          throw new Error(
+            `Hold layout at frame ${frame}: ${problems.join("; ")}`
+          );
       }
-      return page.screenshot({ type: "png", animations: "disabled" });
+      return captureFrame(page);
     };
     return {
       render,
@@ -509,17 +672,120 @@ async function openRenderer(seq, assets) {
   }
 }
 
-export async function renderFrame(seq, frame, { assets }) {
-  frameState(seq, frame);
+// The frame is already drawn when its pixels are captured. Under
+// SwiftShader, headless Chromium now and then never answers one screenshot
+// request (seen on frames 205 and 207 of the Sahara demo in one run, on none
+// of them in the next): waiting longer does not help, while a new request
+// returns at once. So a request gets 20 s, and a timed-out one is made again,
+// three times at most; the page is not redrawn, so no pixel can change.
+const CAPTURE = { attempts: 3, timeout: 20000 };
+export async function captureFrame(page) {
+  for (let attempt = 1; ; attempt++) {
+    try {
+      return await page.screenshot({
+        type: "png",
+        animations: "disabled",
+        timeout: CAPTURE.timeout,
+      });
+    } catch (error) {
+      if (error.name !== "TimeoutError" || attempt >= CAPTURE.attempts)
+        throw error;
+    }
+  }
+}
+
+// Several frames in one browser session: a relief setup costs more than a
+// frame, so proofs and tests ask for their key frames together.
+export async function renderFrames(seq, frames, { assets }) {
+  frames.forEach((frame) => frameState(seq, frame));
   const renderer = await openRenderer(seq, assets);
   try {
-    return await renderer.render(frame);
+    const pngs = [];
+    for (const frame of frames) pngs.push(await renderer.render(frame));
+    return pngs;
   } finally {
     await renderer.close();
   }
 }
 
-export async function encodeVideo(seq, outDir, { assets }) {
+export async function renderFrame(seq, frame, options) {
+  const [png] = await renderFrames(seq, [frame], options);
+  return png;
+}
+
+// The voice file is checked again at export: the words were timed on the
+// audio whose SHA-256 they record, and FFmpeg must read the same length.
+async function checkVoice(voice) {
+  const hash = sha256(await readFile(voice.audio));
+  if (hash !== voice.sha256)
+    throw new Error(
+      `The voice ${voice.audio} changed after it was timed: its SHA-256 differs from the words JSON`
+    );
+  const duration = Number(
+    execFileSync("ffprobe", [
+      "-v",
+      "error",
+      "-show_entries",
+      "format=duration",
+      "-of",
+      "csv=p=0",
+      voice.audio,
+    ]).toString()
+  );
+  if (!(Math.abs(duration - voice.duration) <= 1 / FPS))
+    throw new Error(
+      `The voice lasts ${duration} s; its words JSON says ${voice.duration} s`
+    );
+  return { sha256: hash, duration };
+}
+
+// The voice is muxed as AAC at 48 kHz, cut to the encoded frames and padded
+// with silence to their end, so the video always keeps the schedule's
+// length: the audio never shortens it.
+function audioArgs(voice, from, seconds) {
+  if (!voice) return { input: [], output: ["-an"] };
+  return {
+    input: [
+      "-ss",
+      String(from / FPS),
+      "-t",
+      String(seconds),
+      "-i",
+      voice.audio,
+    ],
+    output: [
+      "-map",
+      "0:v",
+      "-map",
+      "1:a",
+      "-c:a",
+      "aac",
+      "-b:a",
+      "192k",
+      "-ar",
+      "48000",
+      "-af",
+      `apad=whole_dur=${seconds}`,
+      "-flags:a",
+      "+bitexact",
+    ],
+  };
+}
+
+// `range` ({ from, to }, frames) encodes an excerpt, for a short proof.
+export async function encodeVideo(seq, outDir, { assets, range }) {
+  const count = frameCount(seq);
+  const { from, to } = range ?? { from: 0, to: count };
+  if (
+    !Number.isInteger(from) ||
+    !Number.isInteger(to) ||
+    from < 0 ||
+    to > count ||
+    from >= to
+  )
+    throw new Error(`An excerpt runs between frames 0 and ${count}`);
+  const audio = seq.voice ? await checkVoice(seq.voice) : null;
+  const sound = audioArgs(seq.voice, from, (to - from) / FPS);
   await mkdir(outDir, { recursive: true });
   const file = join(outDir, "video.mp4");
   const renderer = await openRenderer(seq, assets);
@@ -541,6 +807,7 @@ export async function encodeVideo(seq, outDir, { assets }) {
         "png",
         "-i",
         "-",
+        ...sound.input,
         "-c:v",
         "libx264",
         "-preset",
@@ -551,7 +818,7 @@ export async function encodeVideo(seq, outDir, { assets }) {
         "yuv420p",
         "-r",
         String(FPS),
-        "-an",
+        ...sound.output,
         "-map_metadata",
         "-1",
         "-fflags",
@@ -570,7 +837,7 @@ export async function encodeVideo(seq, outDir, { assets }) {
         code === 0 ? ok() : ko(new Error(`FFmpeg failed: ${stderr}`))
       )
     );
-    for (let f = 0; f < TOTAL_FRAMES; f++) {
+    for (let f = from; f < to; f++) {
       const png = await renderer.render(f);
       if (!ffmpeg.stdin.write(png))
         await new Promise((ok) => ffmpeg.stdin.once("drain", ok));
@@ -587,7 +854,9 @@ export async function encodeVideo(seq, outDir, { assets }) {
     width: WIDTH,
     height: HEIGHT,
     fps: FPS,
-    frames: TOTAL_FRAMES,
+    frames: to - from,
+    ...(range && { range: { from, to } }),
+    audio,
     demo: !!seq.demo,
     // Mechanical export only: editorial approvals live in the checkpoint.
     productionReady: false,

@@ -90,5 +90,68 @@
       "fieldPath": "homonyms",
       "reason": "Les catalogues et recherches exactes consultés n'établissent pas de lignée homonyme d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Randrianarisoa est un nom de personne malgache, porté aujourd'hui comme nom de famille. Il commence par Ra, que le malgache place devant les noms de personnes. On ne sait pas avec certitude ce que veut dire le reste du nom ni d'où il vient : les sources que nous avons lues ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Randrianarisoa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne malgache porté comme nom de famille ; on ne sait pas avec certitude ce qu'il veut dire.",
+        "periodLabel": "Écrit dès 1961 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Randrianarisoa est un nom de personne malgache, porté comme nom de famille, par exemple par Pierre Randrianarisoa, auteur de livres sur Madagascar. Il commence par Ra, que le malgache place devant les noms de personnes. Les sources lues ne disent ni ce que veut dire le reste du nom, ni d'où il vient, ni comment il se transmet.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Notice bibliographique « L'Enfant et son éducation dans la civilisation traditionnelle malgache / Pierre Randrianarisoa »",
+                "author": "Bibliothèque nationale de France",
+                "year": 1981,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb34813196c",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice de la Bibliothèque nationale de France, lue le 11 octobre 2026. Livre de Pierre Randrianarisoa daté de 1981. Il ne dit rien de l'origine du nom."
+              },
+              {
+                "title": "Dictionnaire malgache-français",
+                "author": "Antoine Abinal et Victorin Malzac",
+                "year": 1888,
+                "url": "https://archive.org/details/dictionnairemalg00abin",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 456",
+                "notes": "Tananarive, Imprimerie de la Mission catholique, 1888. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 456, article Ra : « Article personnel qui se met ordinairement devant les noms propres : Ra-bé, Ra-láy, qu'on écrit Rabe, Ralay ». Auteurs de l'époque coloniale, cités ici pour les formes qu'ils relèvent."
+              }
+            ]
+          },
+          {
+            "period": { "from": 1961, "to": 1961, "label": "1961" },
+            "statement": "Le nom Randrianarisoa apparaît par écrit comme nom d'auteur de la deuxième édition d'un livre de Pierre Randrianarisoa, imprimée à Vire en 1961, selon le catalogue de la Bibliothèque nationale de France. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est donné.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notice bibliographique « Premiers visages. Jacqueline Bastide. [2e édition.] / P. Randrianarisoa,... »",
+                "author": "Bibliothèque nationale de France",
+                "year": 1961,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb33148388s",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice de la Bibliothèque nationale de France, lue le 11 octobre 2026. Deuxième édition d'un livre de Pierre Randrianarisoa, imprimé à Vire en 1961. C'est la plus ancienne publication sous ce nom que donne le catalogue."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

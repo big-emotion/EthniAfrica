@@ -76,5 +76,63 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Sirleaf à un peuple au Libéria. Nous n'avons pas encore consulté de source consacrée à ce nom. Notre fiche sur les Gola présente Ellen Johnson Sirleaf comme une personnalité gola. L'appartenance d'une personne à un peuple ne suffit pas à expliquer l'origine de son nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sirleaf est un nom de famille du Liberia. Un dictionnaire de noms de famille y voit une forme modifiée d'un nom mandingue ; aucune autre source consultée ne l'explique, et on ne sait pas avec certitude depuis quand il est écrit.",
+    "names": [
+      {
+        "nameText": "Sirleaf",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille du Liberia, qui serait une forme modifiée du nom mandingue Sheriff.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sirleaf est un nom de famille du Liberia. Une seule source consultée explique son origine ; nous présentons cette explication plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Sirleaf Surname Meaning — Dictionary of American Family Names, 2e édition",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/sirleaf?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e édition, Oxford University Press, 2022, notice reproduite par Ancestry et lu le 11 octobre 2026. La notice dit : « West African (Liberia): altered form of the predominantly Mandinka Muslim name Sheriff »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposée en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Sirleaf serait une forme modifiée de Sheriff, un nom porté surtout par des Mandingues musulmans, selon le Dictionary of American Family Names.",
+            "hypothesisGroup": "origine du nom Sirleaf",
+            "sources": [
+              {
+                "title": "Sirleaf Surname Meaning — Dictionary of American Family Names, 2e édition",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/sirleaf?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e édition, Oxford University Press, 2022, notice reproduite par Ancestry et lu le 11 octobre 2026. La notice dit : « West African (Liberia): altered form of the predominantly Mandinka Muslim name Sheriff »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -122,5 +122,293 @@
         "source_kind": "official_statistics"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Harari désigne le peuple de la vieille ville de Harar, dans l'est de l'Éthiopie, et sa langue. Ce peuple se nomme lui-même Gey usu', d'après Gey, le nom qu'il donne à sa ville ; les Amhara et les Oromo l'appellent Adare. Les sources ne s'accordent pas toujours sur l'origine de ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Gey usu'",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "har",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Harari, d'après Gey, le nom qu'ils donnent à leur ville.",
+        "periodLabel": "Écrit en 2015 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Gey usu' est celui que se donnent les Harari, alors que les Amhara et les Oromo les appellent Adare, selon l'histoire de Harar publiée par l'État régional du peuple harari. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Gey-usu'",
+            "birth": true,
+            "sources": [
+              {
+                "title": "History of Harar and the Hararis",
+                "author": "Bureau de la culture, du patrimoine et du tourisme de l'État régional du peuple harari ; version revue par Wehib M. Ahmed",
+                "year": 2015,
+                "url": "https://www.everythingharar.com/files/History_of_Harar_and_Harari-HNL.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 30",
+                "notes": "Harar, octobre 2015 (2008 du calendrier éthiopien). Lu le 12 octobre 2026 dans une copie non officielle mise en ligne par le site everythingharar.com."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1958,
+              "to": 1958,
+              "label": "1958"
+            },
+            "era": "modern",
+            "statement": "Le nom Gey usu' commence par gé, « la ville » : c'est ainsi que les habitants de Harar désignent leur ville, et ils appellent aussi leur langue gé sinān, « la langue de la ville », selon le linguiste Wolf Leslau. Les sources que nous avons lues ne disent pas ce que veut dire la fin du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Verb in Harari (South Ethiopic)",
+                "author": "Wolf Leslau",
+                "year": 1958,
+                "url": "https://archive.org/details/verbinhararisout00lesl",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Berkeley, University of California Press, 1958. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1856,
+              "label": "Voyage de 1854-1855 (récit publié en 1856)"
+            },
+            "era": "polity",
+            "statement": "On parle alors de Harar Gay pour la ville elle-même : c'est le nom que lui donnent ses habitants, selon le voyageur britannique Richard Burton.",
+            "before": true,
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa, or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 304",
+                "notes": "Londres, Longman, Brown, Green and Longmans, 1856 ; voyage de l'hiver 1854-1855. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Harari",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom officiel du peuple de Harar et de sa langue, écrit dès 1856.",
+        "periodLabel": "Écrit dès 1856 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Harari est le nom officiel de ce peuple, que les Arabes emploient aussi pour les habitants de la ville, selon l'histoire de Harar publiée par l'État régional du peuple harari.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "History of Harar and the Hararis",
+                "author": "Bureau de la culture, du patrimoine et du tourisme de l'État régional du peuple harari ; version revue par Wehib M. Ahmed",
+                "year": 2015,
+                "url": "https://www.everythingharar.com/files/History_of_Harar_and_Harari-HNL.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 30",
+                "notes": "Harar, octobre 2015 (2008 du calendrier éthiopien). Lu le 12 octobre 2026 dans une copie non officielle mise en ligne par le site everythingharar.com."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1958,
+              "to": 1958,
+              "label": "1958"
+            },
+            "era": "modern",
+            "statement": "Le nom Harari est celui que les savants occidentaux ont adopté pour la langue de la ville, selon Wolf Leslau ; ses locuteurs l'appellent surtout adare.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Verb in Harari (South Ethiopic)",
+                "author": "Wolf Leslau",
+                "year": 1958,
+                "url": "https://archive.org/details/verbinhararisout00lesl",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Berkeley, University of California Press, 1958. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1856,
+              "label": "Voyage de 1854-1855 (récit publié en 1856)"
+            },
+            "era": "polity",
+            "statement": "Le nom Harari apparaît par écrit chez Richard Burton, qui publie en 1856 une grammaire et un vocabulaire de la langue harari, « the Harari tongue ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple et sa langue existaient déjà avant lui.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Richard F. Burton",
+                "role": "voyageur britannique, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa, or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "préface, p. XXVII",
+                "notes": "Londres, Longman, Brown, Green and Longmans, 1856 ; voyage de l'hiver 1854-1855. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1809,
+              "to": 1814,
+              "label": "Voyage de 1809-1810 (récit publié en 1814)"
+            },
+            "era": "polity",
+            "statement": "On parle alors de Hurrur pour la ville et pour son parler : le voyageur britannique Henry Salt publie un vocabulaire de la langue de Hurrur, recueilli auprès d'habitants de la ville.",
+            "before": true,
+            "sources": [
+              {
+                "title": "A Voyage to Abyssinia, and Travels into the Interior of that Country",
+                "author": "Henry Salt",
+                "year": 1814,
+                "url": "https://archive.org/details/voyageAbyssinia00Salt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, F. C. and J. Rivington, 1814 ; voyage de 1809-1810. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive. Le vocabulaire est recueilli auprès de Hadjee Abdelkader, Hadjee Belal « et d'autres natifs » ; la page est celle que donne Wolf Leslau (1958, p. 1, note 1).",
+                "page": "appendice I, p. vi-x"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "Proposée en 2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Harari viendrait de Harla, le nom d'un peuple ancien de la région dont les Harari seraient les descendants : la ville porterait ainsi le nom du peuple, selon l'histoire de Harar publiée par l'État régional du peuple harari.",
+            "hypothesisGroup": "origine du nom Harari",
+            "sources": [
+              {
+                "title": "History of Harar and the Hararis",
+                "author": "Bureau de la culture, du patrimoine et du tourisme de l'État régional du peuple harari ; version revue par Wehib M. Ahmed",
+                "year": 2015,
+                "url": "https://www.everythingharar.com/files/History_of_Harar_and_Harari-HNL.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 30",
+                "notes": "Harar, octobre 2015 (2008 du calendrier éthiopien). Lu le 12 octobre 2026 dans une copie non officielle mise en ligne par le site everythingharar.com."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Adare",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que donnent les Amhara et les Oromo aux Harari ; les Harari l'emploient pour leur langue.",
+        "periodLabel": "Écrit sous une forme proche dès 1856",
+        "accounts": [
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Adare est celui que donnent aux Harari leurs voisins amhara et oromo, selon l'histoire de Harar publiée par l'État régional du peuple harari.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "History of Harar and the Hararis",
+                "author": "Bureau de la culture, du patrimoine et du tourisme de l'État régional du peuple harari ; version revue par Wehib M. Ahmed",
+                "year": 2015,
+                "url": "https://www.everythingharar.com/files/History_of_Harar_and_Harari-HNL.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 30",
+                "notes": "Harar, octobre 2015 (2008 du calendrier éthiopien). Lu le 12 octobre 2026 dans une copie non officielle mise en ligne par le site everythingharar.com."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1958,
+              "to": 1958,
+              "label": "1958"
+            },
+            "era": "modern",
+            "statement": "Le nom adare est le nom courant de la langue harari chez ses propres locuteurs ; c'est à l'origine une expression galla, c'est-à-dire oromo, selon Wolf Leslau.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Verb in Harari (South Ethiopic)",
+                "author": "Wolf Leslau",
+                "year": 1958,
+                "url": "https://archive.org/details/verbinhararisout00lesl",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Berkeley, University of California Press, 1958. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1856,
+              "label": "Voyage de 1854-1855 (récit publié en 1856)"
+            },
+            "era": "polity",
+            "statement": "Le nom Adare apparaît sous des formes proches chez Richard Burton : les Somali appellent la ville de Harar « Adari », et les Galla, c'est-à-dire les Oromo, « Adaray ». C'est la plus ancienne trace de ce nom que le projet connaît. La ville et ses habitants existaient déjà avant lui.",
+            "formAsWritten": "Adari",
+            "birth": true,
+            "sources": [
+              {
+                "title": "First Footsteps in East Africa, or, An Exploration of Harar",
+                "author": "Richard F. Burton",
+                "year": 1856,
+                "url": "https://archive.org/details/firstfootstepsi00burtgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 304",
+                "notes": "Londres, Longman, Brown, Green and Longmans, 1856 ; voyage de l'hiver 1854-1855. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

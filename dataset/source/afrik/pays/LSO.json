@@ -121,14 +121,14 @@
             "formAsWritten": "Lesuto",
             "sources": [
               {
-                "title": "Basutoland Records, vol. I",
-                "author": "George McCall Theal",
+                "title": "Basutoland Records, vol. II (1853-1861)",
+                "author": "George McCall Theal (compilateur)",
                 "year": 1883,
                 "url": "https://archive.org/details/basutolandrecor00theagoog",
                 "tier": "referenced",
                 "source_kind": "archive",
-                "page": "introduction",
-                "notes": "Le Cap, W. A. Richards & Sons, 1883, lu en fac-similé le 10 octobre 2026. L'introduction écrit que les cinq groupes « were called the Basuto, and the country which they occupied was termed the Lesuto, which we have changed into Basutoland »."
+                "page": "introduction, p. v",
+                "notes": "Le Cap, W. A. Richards & Sons, imprimeurs du gouvernement, 1883 ; recueil de documents officiels, lu en fac-similé sur l'exemplaire numérisé d'archive.org. La page de titre porte « Vol. II. 1853-1861 ». L'introduction, p. v, écrit que les cinq groupes « were called the Basuto, and the country which they occupied was termed the Lesuto, which we have changed into Basutoland ». Recueil publié par l'administration coloniale du Cap, à lire comme tel. Volume relu le 12 octobre 2026."
               }
             ]
           },
@@ -339,14 +339,14 @@
             "aspect": "imposition",
             "sources": [
               {
-                "title": "Basutoland Records, vol. I",
-                "author": "George McCall Theal",
+                "title": "Basutoland Records, vol. II (1853-1861)",
+                "author": "George McCall Theal (compilateur)",
                 "year": 1883,
                 "url": "https://archive.org/details/basutolandrecor00theagoog",
                 "tier": "referenced",
                 "source_kind": "archive",
-                "page": "introduction",
-                "notes": "Le Cap, W. A. Richards & Sons, 1883, lu en fac-similé le 10 octobre 2026. L'introduction écrit que les cinq groupes « were called the Basuto, and the country which they occupied was termed the Lesuto, which we have changed into Basutoland »."
+                "page": "introduction, p. v",
+                "notes": "Le Cap, W. A. Richards & Sons, imprimeurs du gouvernement, 1883 ; recueil de documents officiels, lu en fac-similé sur l'exemplaire numérisé d'archive.org. La page de titre porte « Vol. II. 1853-1861 ». L'introduction, p. v, écrit que les cinq groupes « were called the Basuto, and the country which they occupied was termed the Lesuto, which we have changed into Basutoland ». Recueil publié par l'administration coloniale du Cap, à lire comme tel. Volume relu le 12 octobre 2026."
               }
             ]
           }
@@ -501,11 +501,11 @@
         "notes": "Donne en note la série Mossouto, Bassoutos, Lessouto pour le pays, Sessouto pour la langue, et la reprend plus loin en traduisant « Lessouto, le pays du Mossouto ». L'auteur ne propose aucune étymologie de la racine Sotho elle-même : le mot n'y apparaît hors composition qu'une fois. Volume lu en fac-similé le 9 septembre 2026."
       },
       {
-        "title": "George McCall Theal, Basutoland Records, volume I, Le Cap, W. A. Richards & Sons, 1883",
+        "title": "Basutoland Records, vol. II (1853-1861)",
         "url": "https://archive.org/details/basutolandrecor00theagoog",
         "tier": "referenced",
         "source_kind": "archive",
-        "notes": "L'introduction écrit que les cinq groupes « étaient appelés les Basuto, et le pays qu'ils occupaient était appelé le Lesuto, ce que nous avons changé en Basutoland ». La substitution du nom colonial est ainsi reconnue par la série d'archives de l'administration elle-même. Passage lu en fac-similé le 9 septembre 2026."
+        "notes": "George McCall Theal (compilateur), Le Cap, W. A. Richards & Sons, 1883 ; la page de titre porte « Vol. II. 1853-1861 ». L'introduction, p. v, écrit que les cinq groupes « étaient appelés les Basuto, et le pays qu'ils occupaient était appelé le Lesuto, ce que nous avons changé en Basutoland ». La substitution du nom colonial est ainsi reconnue par la série d'archives de l'administration elle-même. Volume relu le 12 octobre 2026."
       },
       {
         "title": "Lesotho Independence Act 1966, Royaume-Uni, 1966 chapitre 24, article 1",

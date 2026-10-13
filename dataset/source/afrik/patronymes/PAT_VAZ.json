@@ -76,5 +76,85 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Vaz à un peuple à São Tomé-et-Príncipe. Nous n'avons pas encore consulté de source consacrée à ce nom. Les mentions trouvées concernent le lagon Fernan Vaz, au Gabon. Elles désignent un lieu et n'expliquent pas le nom de famille. La fiche sur les Forros cite trois noms d'origine portugaise : Trovoada, Espírito Santo et Vera Cruz. Leur usage ne permet pas de rattacher tous les noms portugais aux Forros."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Vaz est un nom de famille d'origine portugaise, porté à São Tomé-et-Príncipe. Au Portugal, un linguiste en fait un ancien nom de filiation, celui du fils d'un Vasco. On ne sait pas avec certitude depuis quand ni comment il est arrivé dans l'archipel.",
+    "names": [
+      {
+        "nameText": "Vaz",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille d'origine portugaise porté à São Tomé-et-Príncipe.",
+        "periodLabel": "Écrit au Portugal dès 1463 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Vaz est un nom de famille porté aujourd'hui à São Tomé-et-Príncipe : une juriste qui le porte, alors ministre de la Justice, y a été nommée Première ministre, selon l'agence Lusa. On ne sait pas avec certitude depuis quand ni comment ce nom est arrivé dans l'archipel ; nous présentons plus bas la seule explication de son origine que nous connaissons.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ilza Amado Vaz nomeada primeira-ministra de São Tomé e Príncipe",
+                "author": "Agence Lusa, reprise par RTP",
+                "year": null,
+                "url": "https://www.rtp.pt/noticias/mundo/ilza-amado-vaz-nomeada-primeira-ministra-de-sao-tome-e-principe_n1626411",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Dépêche lue le 11 octobre 2026 ; la page ne montre pas sa date. Elle nomme « Ilza Maria dos Santos Amado Vaz », juriste et ministre de la Justice, de l'Administration publique et des Droits humains, nommée Première ministre et cheffe du gouvernement."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Proposée en 1928"
+            },
+            "statement": "Le nom Vaz serait au départ un nom de filiation, celui du fils d'un Vasco : il viendrait de Velasci, une forme latine qui veut dire « de Velascus », selon le linguiste José Leite de Vasconcelos.",
+            "hypothesisGroup": "origine du nom Vaz",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 66 ; p. 109",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org. Page 66 : « Vaz é propriamente patronimico de Vasco ». Page 109 : « O moderno apelido Vaz vem de Velasci, genetivo de Velascus »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1463,
+              "to": 1463,
+              "label": "1463"
+            },
+            "statement": "Le nom Vaz apparaît au Portugal dans un document de 1463 qui nomme « Johane, de 9 annos, filho de Johan Vaz », selon José Leite de Vasconcelos. C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne dit rien de son arrivée à São Tomé-et-Príncipe.",
+            "formAsWritten": "Vaz",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 340-341",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org. Pages 340-341 : un document de 1463 publié dans l'Archivo Histórico Português nomme « Johane, de 9 annos, filho de Johan Vaz »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

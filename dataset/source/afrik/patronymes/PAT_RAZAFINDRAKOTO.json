@@ -90,5 +90,69 @@
       "fieldPath": "homonyms",
       "reason": "Les archives, catalogues et recherches exactes consultés n'établissent pas de lignée Razafindrakoto d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Razafindrakoto est un nom de personne malgache, porté aujourd'hui comme nom de famille. Il commence par Ra, que le malgache place devant les noms de personnes. On ne sait pas avec certitude ce que veut dire le reste du nom ni d'où il vient : les sources que nous avons lues ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Razafindrakoto",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne malgache porté comme nom de famille ; on ne sait pas avec certitude ce qu'il veut dire.",
+        "periodLabel": "Écrit dès 1959 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Razafindrakoto est un nom de personne malgache, porté comme nom de famille, par exemple par Charles Razafindrakoto, auteur d'un livre sur l'apiculture à Madagascar. Il commence par Ra, que le malgache place devant les noms de personnes. Les sources lues ne disent ni ce que veut dire le reste du nom, ni d'où il vient, ni comment il se transmet.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Notice bibliographique « L'apiculture à Madagascar / par Charles Razafindrakoto »",
+                "author": "Bibliothèque nationale de France",
+                "year": 1972,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb36030471f",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice de la Bibliothèque nationale de France, lue le 11 octobre 2026. Elle attribue ce livre, daté de 1972, à « Razafindrakoto, Charles (1938-....) ». Elle ne dit rien de l'origine du nom."
+              },
+              {
+                "title": "Dictionnaire malgache-français",
+                "author": "Antoine Abinal et Victorin Malzac",
+                "year": 1888,
+                "url": "https://archive.org/details/dictionnairemalg00abin",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 456",
+                "notes": "Tananarive, Imprimerie de la Mission catholique, 1888. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 456, article Ra : « Article personnel qui se met ordinairement devant les noms propres : Ra-bé, Ra-láy, qu'on écrit Rabe, Ralay ». Auteurs de l'époque coloniale, cités ici pour les formes qu'ils relèvent."
+              }
+            ]
+          },
+          {
+            "period": { "from": 1959, "to": 1959, "label": "1959" },
+            "era": "colonial",
+            "statement": "Le nom Razafindrakoto apparaît par écrit comme nom d'auteur d'un livre en malgache, Angano sady ela no vao, imprimé à Tananarive en 1959, selon le catalogue de la Bibliothèque nationale de France. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est donné.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notice bibliographique « Angano sady ela no vao / navaozina sy misy sary nataon' i Jean Razafindrakoto »",
+                "author": "Bibliothèque nationale de France",
+                "year": 1959,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb34954145q",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice de la Bibliothèque nationale de France, lue le 11 octobre 2026. Livre en malgache de Jean Razafindrakoto, Tananarive, Imprimerie protestante, 1959, 44 pages. C'est la plus ancienne publication sous ce nom que donne le catalogue."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

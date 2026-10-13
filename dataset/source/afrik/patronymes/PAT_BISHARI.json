@@ -110,5 +110,132 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "La source qualifie Bishariyyn de tribu, catégorie absente du vocabulaire fermé de designatedSocialUnit ; « other » est conservé et ne doit pas être remplacé arbitrairement par « clan » ou « lineage »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Bishari est celui de l'une des grandes tribus des Beja, des nomades du désert oriental de l'Égypte et du Soudan. Les sources consultées l'écrivent de plusieurs façons : Bisharye en 1819, puis Bishareen et Bishariyyn ; notre fiche note aussi Bisharin. Elles ne disent pas ce que le nom veut dire.",
+    "names": [
+      {
+        "nameText": "Bishari",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'une grande tribu des Beja, écrit Bisharye en 1819 ; son sens n'est pas expliqué.",
+        "periodLabel": "Écrit depuis 1819 sous une forme proche ; employé aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2002,
+              "to": 2002,
+              "label": "Décrit en 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Bishari, écrit Bishariyyn, est celui de l'une des trois principales tribus beja, avec les Amar'ar/Atmaan et les Hadendowa, qui vivent surtout au nord-est du Soudan et parlent toutes le tu bedawiye, selon Sara Pantuliano. Les sources lues ne disent pas ce que le nom veut dire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Sustaining Livelihoods across the Rural-Urban Divide: Changes and Challenges Facing the Beja Pastoralists of North Eastern Sudan",
+                "author": "Sara Pantuliano",
+                "year": 2002,
+                "url": "https://www.iied.org/sites/default/files/pdfs/migrate/9163IIED.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "IIED, 2002, lu en texte intégral le 12 octobre 2026. Page 1 : « The main tribes are the Amar'ar/Atmaan, the Bishariyyn and the Hadendowa, who mostly live in North-Eastern Sudan », tous réunis par le tu bedawiye."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1819,
+              "to": 1819,
+              "label": "Publié en 1819"
+            },
+            "era": "polity",
+            "statement": "Le nom Bishari apparaît par écrit sous une forme proche, Bisharye, chez John Lewis Burckhardt, qui compte les Ababde et les Bisharye parmi les deux grandes tribus de Bédouins entre la Nubie et la mer Rouge, et place les Bisharye dans les montagnes au sud des Ababde, jusqu'à Suakin. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand la tribu porte ce nom.",
+            "formAsWritten": "Bisharye",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels in Nubia",
+                "author": "John Lewis Burckhardt",
+                "year": 1819,
+                "url": "https://archive.org/details/travelsinnubia00burc",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 148",
+                "notes": "Londres, John Murray, 1819, publié après la mort de l'auteur en 1817, lu dans l'exemplaire numérisé le 12 octobre 2026. Page 148 : « two principal tribes, the Ababde and Bisharye » ; les Bisharye « inhabit the mountains from thence southwards, as far as Suakin ». L'Arabe est écrit en regard du nom."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bishareen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Écrit en 2009",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "Décrit en 2009"
+            },
+            "era": "modern",
+            "statement": "Le nom Bishareen est la graphie de Bishari chez Hans Barnard, qui range cette tribu dans l'ensemble beja du désert oriental, avec deux groupes, Umm Ali et Umm Nagi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Archaeology of Pastoral Nomads between the Nile and the Red Sea",
+                "author": "Hans Barnard",
+                "year": 2009,
+                "url": "https://isac.uchicago.edu/sites/oi.uchicago.edu/files/uploads/shared/docs/ois5.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21, 27",
+                "notes": "Dans Jeffrey Szuchman (dir.), Nomads, Tribes, and the State in the Ancient Near East, Oriental Institute Seminars 5, 2009, lu dans le fichier complet de l'éditeur le 12 octobre 2026. Page 21 : les Bishareen dans la liste des clans et tribus de l'ensemble beja. Page 27, tableau 2.2 : Bishareen avec deux groupes, Umm Ali et Umm Nagi, et leurs sous-groupes."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bishariyyn",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Écrit en 2002",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2002,
+              "to": 2002,
+              "label": "Décrit en 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Bishariyyn est la graphie de Bishari chez Sara Pantuliano, qui étudie des éleveurs de cette tribu et de celle des Amar'ar/Atmaan dans la province de Halaib, au nord-est du Soudan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sustaining Livelihoods across the Rural-Urban Divide: Changes and Challenges Facing the Beja Pastoralists of North Eastern Sudan",
+                "author": "Sara Pantuliano",
+                "year": 2002,
+                "url": "https://www.iied.org/sites/default/files/pdfs/migrate/9163IIED.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "IIED, 2002, lu en texte intégral le 12 octobre 2026. Page 1 : « The main tribes are the Amar'ar/Atmaan, the Bishariyyn and the Hadendowa, who mostly live in North-Eastern Sudan », tous réunis par le tu bedawiye."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

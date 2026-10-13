@@ -86,5 +86,42 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Sambi », « Comoros », « Comorian », « surname », « onomastics », « etymology », « Lozi » et « transmission », ainsi que la consultation directe de « Sambi Surname Origin, Meaning & Last Name History » n'ont établi aucune règle propre à Sambi permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sambi est un nom porté aux Comores, celui notamment d'Ahmed Abdallah Sambi, président de l'Union des Comores de 2006 à 2011. On ne sait pas avec certitude d'où il vient ni comment il se transmet : aucune source que nous avons lue ne l'explique.",
+    "names": [
+      {
+        "nameText": "Sambi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom porté aux Comores ; on ne sait pas d'où il vient.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Novembre 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Sambi est celui sous lequel la presse désigne Ahmed Abdallah Sambi, président des Comores de 2006 à 2011, selon une dépêche de l'AFP. Les sources lues ne disent ni d'où vient le nom ni comment il se transmet.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Comores : l'ancien président Sambi jugé pour « haute trahison »",
+                "author": "AFP / Le360 Afrique",
+                "year": 2022,
+                "url": "https://afrique.le360.ma/politique/comores-lancien-president-sambi-juge-pour-haute-trahison_NXFT6M3Z3VAV7A2J65G6ST565A",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Dépêche du 21 novembre 2022. Elle nomme « l'ex-président comorien Ahmed Abdallah Sambi » et, dans la légende de la photographie, « Sambi, qui a été président de 2006 à 2011 ». Elle ne dit rien de l'origine du nom. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

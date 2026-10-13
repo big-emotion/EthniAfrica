@@ -351,6 +351,26 @@
       {
         "name": "Lugbara",
         "peopleId": "PPL_LUGBARA"
+      },
+      {
+        "name": "Suri",
+        "peopleId": "PPL_SURI"
+      },
+      {
+        "name": "Mursi",
+        "peopleId": "PPL_MURSI"
+      },
+      {
+        "name": "Bodi (Me'en)",
+        "peopleId": "PPL_BODI"
+      },
+      {
+        "name": "Me'en",
+        "peopleId": "PPL_MEEN"
+      },
+      {
+        "name": "Murle",
+        "peopleId": "PPL_MURLE"
       }
     ],
     "linguisticCharacteristics": {

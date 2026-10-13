@@ -339,7 +339,7 @@ describe("validateAfrikData – new integrity checks", () => {
 
   describe("checkRetiredIdentifiers (FR27)", () => {
     const ledgerEntry = (
-      decision: "merged" | "renamed" | "kept-distinct",
+      decision: "merged" | "renamed" | "kept-distinct" | "withdrawn",
       retiredId: string,
       successorId: string | null
     ) => ({
@@ -422,6 +422,35 @@ describe("validateAfrikData – new integrity checks", () => {
       expect(result.ok).toBe(false);
       expect(result.errors.some((e) => e.includes("PPL_SENGA"))).toBe(true);
       expect(result.errors.some((e) => e.includes("PPL_ZOULOU"))).toBe(true);
+    });
+
+    // A withdrawn id is a retirement with no successor: nothing to redirect to,
+    // so the entry is valid only when the fiche is gone and no successor is named.
+    // @req REQ-027
+    it("accepts a withdrawn id with no fiche and no successor", () => {
+      writeFLG(tmpDir, "FLG_BANTU");
+      writePPL(tmpDir, "FLG_BANTU", "PPL_ZULU");
+      writeLedger(tmpDir, [ledgerEntry("withdrawn", "PPL_YERIMA", null)]);
+
+      const result = checkRetiredIdentifiers(tmpDir);
+      expect(result.errors).toEqual([]);
+      expect(result.ok).toBe(true);
+    });
+
+    // @req REQ-027
+    it("fails when a withdrawn id names a successor or still has a fiche", () => {
+      writeFLG(tmpDir, "FLG_BANTU");
+      writePPL(tmpDir, "FLG_BANTU", "PPL_ZULU");
+      writePPL(tmpDir, "FLG_BANTU", "PPL_KIRDI");
+      writeLedger(tmpDir, [
+        ledgerEntry("withdrawn", "PPL_YERIMA", "PPL_ZULU"),
+        ledgerEntry("withdrawn", "PPL_KIRDI", null),
+      ]);
+
+      const result = checkRetiredIdentifiers(tmpDir);
+      expect(result.ok).toBe(false);
+      expect(result.errors.some((e) => e.includes("PPL_YERIMA"))).toBe(true);
+      expect(result.errors.some((e) => e.includes("PPL_KIRDI"))).toBe(true);
     });
 
     // @req REQ-027
@@ -516,6 +545,34 @@ describe("validateAfrikData – new integrity checks", () => {
       const result = checkPeopleReferencesResolve(tmpDir);
       expect(result.errors).toEqual([]);
       expect(result.ok).toBe(true);
+    });
+
+    // @req REQ-027
+    it("fails a reference to a withdrawn id, which resolves nowhere", () => {
+      writeReferencingCorpus(tmpDir);
+      writeFileSync(
+        join(tmpDir, "pays", "ZAF.json"),
+        JSON.stringify({
+          id: "ZAF",
+          content: { majorPeoples: [{ peopleId: "PPL_YERIMA" }] },
+        })
+      );
+      writeFileSync(
+        join(tmpDir, RETIRED_IDENTIFIERS_LEDGER),
+        JSON.stringify([
+          {
+            decision: "withdrawn",
+            retiredId: "PPL_YERIMA",
+            successorId: null,
+            reason: "A title, not a people, withdrawn without a successor.",
+            decidedOn: "2026-10-12",
+          },
+        ])
+      );
+
+      const result = checkPeopleReferencesResolve(tmpDir);
+      expect(result.ok).toBe(false);
+      expect(result.errors.some((e) => e.includes("PPL_YERIMA"))).toBe(true);
     });
 
     // @req REQ-027

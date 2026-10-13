@@ -11,7 +11,10 @@
     {
       "spelling": "Nhaca",
       "attestations": [
-        { "countryId": "MOZ", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "MOZ",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -75,5 +78,135 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Nhaca est le nom d'une chefferie ronga de la baie de Delagoa, que le missionnaire Henri-Alexandre Junod lit dès 1554 dans un rapport portugais, sous la forme Inyaka. Selon lui, le chef Nyaka a laissé son nom à une île de la baie. Les sources lues ne disent pas ce que ce nom veut dire : on ne sait pas avec certitude d'où il vient.",
+    "names": [
+      {
+        "nameText": "Nhaca",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de chefferie ronga de la baie de Delagoa, écrit Inyaka dès 1554 ; son sens n'est pas connu.",
+        "periodLabel": "Écrit dès 1554 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Décrit en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nhaca est celui d'une chefferie de la baie de Delagoa : selon Henri-Alexandre Junod, qui l'écrit Nyaka, le chef de ce nom a laissé son nom à l'île d'Inyak, où vivent encore ses descendants. Les sources lues ne disent pas ce que le nom veut dire ; on ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 26",
+                "notes": "Neuchâtel, Attinger, 1912, lu le 12 octobre 2026 dans la numérisation d'Internet Archive. Page 26 : « The chief Nyaka has left his name to the Inyak Island », et la phrase qui suit sur l'île « where his descendants now live ». L'auteur y cite le rapport portugais de 1554 (page précédente). Il ne dit pas ce que le nom veut dire."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1896,
+              "label": "Proposée en 1896"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nhaca serait celui d'un ancêtre que ses descendants auraient repris : Henri-Alexandre Junod note que les chefs de la baie, dont Inyaka, se sont peut-être appelés du nom de leurs ancêtres, comme ils le font toujours, selon lui.",
+            "hypothesisGroup": "origine du nom Nhaca",
+            "sources": [
+              {
+                "title": "Grammaire ronga, suivie d'un manuel de conversation et d'un vocabulaire ronga-portugais-français-anglais",
+                "author": "Henri-Alexandre Junod",
+                "year": 1896,
+                "url": "https://archive.org/details/grammairerongasu00junouoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10",
+                "notes": "Lausanne, Georges Bridel, publié par les soins du gouvernement portugais ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive. Section XIII : après avoir cité le rapport de 1554, l'auteur écrit qu'on ne saurait affirmer que les chefs nommés régnaient eux-mêmes alors, car ce peuvent être déjà « de leurs descendants qui se sont appelés du nom de leurs ancêtres, comme ils le font toujours ». Il parle de Tembé, Mpfoumo et Ribombo ; il ne développe pas ce point pour Inyaka."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1554,
+              "to": 1554,
+              "label": "1554"
+            },
+            "era": "polity",
+            "statement": "Le nom Nhaca apparaît, écrit Inyaka, dans le rapport daté de 1554 du chroniqueur portugais Perestrello, que Junod cite : le premier fleuve de la baie sépare les terres du roi Zembé de celles du roi Inyaka. C'est une forme proche, et la plus ancienne trace de ce nom que le projet connaît ; elle est de seconde main, lue chez Junod. Le nom est peut-être déjà celui de descendants d'un chef plus ancien, car Junod ne sait pas si ce chef vivait alors.",
+            "formAsWritten": "Inyaka",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Perestrello",
+                "role": "écrit ce rapport, selon Junod"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Grammaire ronga, suivie d'un manuel de conversation et d'un vocabulaire ronga-portugais-français-anglais",
+                "author": "Henri-Alexandre Junod",
+                "year": 1896,
+                "url": "https://archive.org/details/grammairerongasu00junouoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 10",
+                "notes": "Lausanne, Georges Bridel, publié par les soins du gouvernement portugais ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive. Section XIII : Junod cite le rapport que le chroniqueur portugais Perestrello a daté de 1554 : « Le premier du côté sud s'appelle Zembé ; il sépare les terres d'un roi ainsi nommé de celles du roi Inyaka avec lequel nous nous rencontrâmes par la suite. » Il y reconnaît Zembé comme Tembé. Nous n'avons pas lu le rapport portugais lui-même."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nyaka",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une graphie du même nom de chef ronga, telle que Junod la lit en 1554 puis l'écrit en 1912.",
+        "periodLabel": "Écrit dès 1554",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1554,
+              "to": 1554,
+              "label": "1554"
+            },
+            "era": "polity",
+            "statement": "Le nom Nyaka est la graphie qu'Henri-Alexandre Junod donne en 1912 au roi du rapport portugais de 1554 : le fleuve du sud sépare la terre du roi Zembé de la domination du roi Nyaka. C'est une traduction anglaise de Junod, de seconde main. Le chef y a laissé son nom à l'île d'Inyak, selon lui.",
+            "formAsWritten": "Nyaka",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Perestrello",
+                "role": "écrit ce rapport, selon Junod"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Life of a South African Tribe, vol. I : The Social Life",
+                "author": "Henri-Alexandre Junod",
+                "year": 1912,
+                "url": "https://archive.org/details/cu31924012891127",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 25-26",
+                "notes": "Neuchâtel, Attinger, 1912, lu le 12 octobre 2026 dans la numérisation d'Internet Archive. Pages 25 et 26 : Junod traduit en anglais le passage du chroniqueur Perestrello (rapport de 1554) : « …it separates the land of a king of that name from the dominion of the king Nyaka… », puis écrit que ce chef « has left his name to the Inyak Island ». Nous n'avons pas lu le rapport portugais lui-même."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

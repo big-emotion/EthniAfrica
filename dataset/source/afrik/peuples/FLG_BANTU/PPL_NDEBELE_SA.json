@@ -120,5 +120,509 @@
         "source_kind": "official_statistics"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom AmaNdebele est celui d'un peuple d'origine nguni du Mpumalanga et du Gauteng, en Afrique du Sud, qui forme deux branches, les Ndzundza et les Manala. D'autres noms existent : Ndebele du Sud et Ndebele du Transvaal, qui les distinguent des Ndebele du Zimbabwe, et abaNdungwa, un nom ancien. Les sources ne s'accordent pas sur l'origine du nom Ndebele ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "AmaNdebele",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nbl",
+        "namedBy": null,
+        "shortLine": "Le nom des Ndebele du Sud ; on le rattache au mot sotho matebele, et son origine est discutée.",
+        "periodLabel": "Écrit depuis 1905 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom AmaNdebele désigne les deux branches d'un peuple d'origine nguni installé au XVIIe siècle dans ce qui deviendra le Transvaal ; au XIXe siècle, ce peuple accueille les réfugiés nguni de Mzilikazi, selon le Dictionary of South African English. L'origine du nom est discutée ; les explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Ndebele »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/ndebele/e05106",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1822,
+              "to": 1824,
+              "label": "Vers 1822"
+            },
+            "era": "polity",
+            "statement": "Le nom AmaNdebele a une forme sotho, Tebele, qui désigne déjà les Ndzundza, des Nguni du Transvaal, quand Mzilikazi s'installe parmi eux sur la rivière Steelpoort. Grossi des Ndzundza et d'autres maTebele, son propre peuple finit par être appelé lui aussi Tebele ou Ndebele, selon l'historien N. Parsons en 1982, que cite le Dictionary of South African English.",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Matabele »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/matabele/e04597",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1982",
+                "notes": "Entrée lue le 11 octobre 2026."
+              }
+            ],
+            "before": true
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom AmaNdebele apparaît pour ces tribus du Transvaal en 1905, sous la forme Amandebele, dans The Native Tribes of the Transvaal, un ouvrage préparé pour l'état-major britannique : il les range sous le titre « The Zulu or Amandebele Tribes (usually known as Matabele) » et les dit issues de quatre fils d'un chef nommé Musi, dont Nzunza et Manala. C'est la plus ancienne trace de ce nom pour ce peuple que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Amandebele",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Native Tribes of the Transvaal",
+                "author": "General Staff, War Office, Royaume-Uni",
+                "year": 1905,
+                "url": "https://archive.org/details/nativetribesoftr00grea",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 33",
+                "notes": "Londres, Harrison and Sons pour His Majesty's Stationery Office, 1905. Ouvrage préparé pour l'état-major britannique ; lu dans l'exemplaire numérisé sur archive.org le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom AmaNdebele serait une adaptation, dans les langues nguni, du mot matebele des Sotho et des Tswana, selon le Dictionary of South African English. Pour le linguiste Philemon Buti Skhosana en 2010, c'est un nom que les voisins sotho ont donné aux Nguni du Transvaal, et que ces Nguni ont ensuite gardé.",
+            "hypothesisGroup": "origine du nom Ndebele",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Ndebele »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/ndebele/e05106",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 11 octobre 2026."
+              },
+              {
+                "title": "The (ama)Ndebele of Africa and their name ‘(ama)Ndebele’",
+                "author": "Philemon Buti Skhosana",
+                "year": 2010,
+                "url": "https://dspace5.zcu.cz/handle/11025/6424",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 148-149",
+                "notes": "Acta Fakulty filozofické Západočeské univerzity v Plzni, 2010, n° 2, pp. 136-150 ; lu dans le fichier PDF du dépôt de l'université de Plzeň le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1948,
+              "label": "Proposée en 1929, reprise en 1948"
+            },
+            "era": "modern",
+            "statement": "Le nom AmaNdebele viendrait, par le sotho matebele, du verbe teba, « s'enfoncer » : les guerriers nguni se baissaient derrière leurs grands boucliers, selon l'historien A. T. Bryant en 1929, puis selon le dictionnaire zoulou-anglais de Doke et Vilakazi, en 1948, que cite le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Ndebele",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal, containing earlier political history of the Eastern Nguni clans",
+                "author": "A. T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 425",
+                "notes": "Londres, Longmans, Green and Co., 1929 ; lu dans l'exemplaire numérisé sur archive.org le 12 octobre 2026."
+              },
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Matabele »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/matabele/e04597",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom AmaNdebele viendrait plutôt, par le sotho matebele, du mot sotho et setswana thebe, « bouclier », selon le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Ndebele",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Matabele »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/matabele/e04597",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1961,
+              "to": 1961,
+              "label": "Proposée en 1961"
+            },
+            "era": "modern",
+            "statement": "Le nom AmaNdebele voudrait dire, sous sa forme sotho Matabele, « les réfugiés », parce que les gens de Mzilikazi étaient des étrangers en fuite devant Chaka, selon l'auteur T. V. Bulpin, que cite le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Ndebele",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Matabele »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/matabele/e04597",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1961",
+                "notes": "Entrée lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1935,
+              "to": 1935,
+              "label": "Proposée en 1935"
+            },
+            "era": "modern",
+            "statement": "Le nom AmaNdebele, sous sa forme sotho maTebele, serait le nom que les Sotho donnaient à l'ensemble des tribus nguni venues du sud-est, selon l'ethnologue N. J. van Warmelo en 1935. Il écrit que l'on ne sait rien de l'origine du nom lui-même.",
+            "hypothesisGroup": "origine du nom Ndebele",
+            "sources": [
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 87",
+                "notes": "Ethnological Publications, vol. V, Pretoria, Government Printer, 1935, publié par le département des Affaires indigènes ; lu dans l'exemplaire numérisé par l'université de Pretoria le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Proposée en 1921"
+            },
+            "era": "modern",
+            "statement": "Le nom AmaNdebele voudrait dire « ceux qui ont répandu les amabele » : amabele désigne le sorgho, et le verbe anda veut dire « multiplier » ou « répandre », selon H. C. M. Fourie dans sa thèse de 1921, que rapporte Skhosana en 2010.",
+            "hypothesisGroup": "origine du nom Ndebele",
+            "sources": [
+              {
+                "title": "The (ama)Ndebele of Africa and their name ‘(ama)Ndebele’",
+                "author": "Philemon Buti Skhosana",
+                "year": 2010,
+                "url": "https://dspace5.zcu.cz/handle/11025/6424",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 147",
+                "notes": "Acta Fakulty filozofické Západočeské univerzity v Plzni, 2010, n° 2, pp. 136-150 ; lu dans le fichier PDF du dépôt de l'université de Plzeň le 12 octobre 2026. Skhosana ne retient pas cette explication."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Proposée en 1921"
+            },
+            "era": "modern",
+            "statement": "Le nom AmaNdebele voudrait dire « gens aux longues poitrines » : le préfixe ama-, l'adjectif -nde « long » et le nom -bele « poitrine », selon H. C. M. Fourie dans sa thèse de 1921, que rapporte Skhosana en 2010.",
+            "hypothesisGroup": "origine du nom Ndebele",
+            "sources": [
+              {
+                "title": "The (ama)Ndebele of Africa and their name ‘(ama)Ndebele’",
+                "author": "Philemon Buti Skhosana",
+                "year": 2010,
+                "url": "https://dspace5.zcu.cz/handle/11025/6424",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 147-148",
+                "notes": "Acta Fakulty filozofické Západočeské univerzity v Plzni, 2010, n° 2, pp. 136-150 ; lu dans le fichier PDF du dépôt de l'université de Plzeň le 12 octobre 2026. Skhosana ne retient pas cette explication."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Proposée en 1921"
+            },
+            "era": "modern",
+            "statement": "Le nom AmaNdebele viendrait d'un chef ancien nommé Ndebele, comme les Zoulous et les Xhosa portent le nom de leurs ancêtres Zulu et Xosa, selon H. C. M. Fourie dans sa thèse de 1921, que rapporte Skhosana en 2010. Fourie dit seulement qu'un tel chef a pu exister.",
+            "hypothesisGroup": "origine du nom Ndebele",
+            "sources": [
+              {
+                "title": "The (ama)Ndebele of Africa and their name ‘(ama)Ndebele’",
+                "author": "Philemon Buti Skhosana",
+                "year": 2010,
+                "url": "https://dspace5.zcu.cz/handle/11025/6424",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 147-148",
+                "notes": "Acta Fakulty filozofické Západočeské univerzity v Plzni, 2010, n° 2, pp. 136-150 ; lu dans le fichier PDF du dépôt de l'université de Plzeň le 12 octobre 2026. Skhosana ne retient pas cette explication."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "Proposée en 1980"
+            },
+            "era": "modern",
+            "statement": "Le nom AmaNdebele viendrait aussi, par le sotho, du verbe tebela, « chasser, repousser », selon C. J. Coetzee dans sa thèse de 1980, que rapporte Skhosana en 2010.",
+            "hypothesisGroup": "origine du nom Ndebele",
+            "sources": [
+              {
+                "title": "The (ama)Ndebele of Africa and their name ‘(ama)Ndebele’",
+                "author": "Philemon Buti Skhosana",
+                "year": 2010,
+                "url": "https://dspace5.zcu.cz/handle/11025/6424",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 148",
+                "notes": "Acta Fakulty filozofické Západočeské univerzity v Plzni, 2010, n° 2, pp. 136-150 ; lu dans le fichier PDF du dépôt de l'université de Plzeň le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ndebele du Sud",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom courant des Ndebele du Gauteng et du Mpumalanga, distincts de ceux du Zimbabwe.",
+        "periodLabel": "Écrit depuis 1935 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1935,
+              "to": 1935,
+              "label": "1935"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndebele du Sud, Southern Ndebele en anglais, apparaît en 1935 chez l'ethnologue N. J. van Warmelo : il partage les Ndebele du Transvaal en un groupe du sud et un groupe du nord, et parle de leurs parlers comme du « Southern » et du « Northern Ndebele ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Southern Ndebele",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 87",
+                "notes": "Ethnological Publications, vol. V, Pretoria, Government Printer, 1935, publié par le département des Affaires indigènes ; lu dans l'exemplaire numérisé par l'université de Pretoria le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndebele du Sud, Southern Ndebele en anglais, apparaît en 1975 dans le magazine Drum, qui parle de l'opposition au « homeland » que le régime d'apartheid veut créer pour eux, selon le Dictionary of South African English.",
+            "formAsWritten": "Southern Ndebele",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Ndebele »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/ndebele/e05106",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1975",
+                "notes": "Entrée lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndebele du Sud, ou Southern Transvaal Ndebele, désigne aujourd'hui les Ndebele du Gauteng et du Mpumalanga, l'un des trois grands groupes ndebele : les deux autres sont les Ndebele du Nord, au Limpopo, et ceux du Zimbabwe, selon South African History Online.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "South African History Online — Ndebele",
+                "author": "South African History Online",
+                "year": 2026,
+                "url": "https://sahistory.org.za/article/ndebele",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Article publié le 24 mars 2011, mis à jour le 20 juillet 2026 ; lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ndebele du Transvaal",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom savant, écrit dès 1930, qui les distingue des Ndebele du Zimbabwe.",
+        "periodLabel": "Écrit depuis 1930 ; en usage chez les chercheurs au XXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "1930"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndebele du Transvaal, Transvaal Ndebele en anglais, figure en 1930 dans le titre Transvaal Ndebele Texts, premier volume de la série des Ethnological Publications du département des Affaires indigènes, dont l'ethnologue N. J. van Warmelo est l'auteur. Ce titre est connu par la liste des volumes de la série, imprimée au début de son étude de 1935. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Transvaal Ndebele",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "liste des volumes de la série, au début du livre (page non numérotée)",
+                "notes": "Ethnological Publications, vol. V, Pretoria, Government Printer, 1935, publié par le département des Affaires indigènes ; lu dans l'exemplaire numérisé par l'université de Pretoria le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1935,
+              "to": 1935,
+              "label": "1935"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndebele du Transvaal sert à van Warmelo, en 1935, à distinguer ces tribus des autres amaNdebele, ceux de Rhodésie du Sud. Il les dit connues sous le nom amaNdebele, ou maTebele chez les Sotho, et partagées en un groupe du sud et un groupe du nord.",
+            "sources": [
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 87",
+                "notes": "Ethnological Publications, vol. V, Pretoria, Government Printer, 1935, publié par le département des Affaires indigènes ; lu dans l'exemplaire numérisé par l'université de Pretoria le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1937,
+              "to": 1937,
+              "label": "1937"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndebele du Transvaal, Transvaal Ndebele en anglais, apparaît en 1937 chez l'ethnologue N. J. van Warmelo : ces tribus ne doivent pas être confondues avec les Ndebele du Matabeleland, car elles vivaient déjà là depuis plusieurs siècles, selon le Dictionary of South African English.",
+            "formAsWritten": "Transvaal Ndebele",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Ndebele »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/ndebele/e05106",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "citation de 1937",
+                "notes": "Entrée lue le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1996,
+              "to": 1996,
+              "label": "1996"
+            },
+            "era": "modern",
+            "statement": "Le nom Ndebele du Transvaal sert à l'historien Ngwabi Bhebe, en 1996, pour l'un des peuples du nord qui résistent à l'expansion des Boers entre 1850 et 1880, avec les Venda et les Sotho.",
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, VI, ch. 7 : Les Britanniques, les Boers et les Africains en Afrique du Sud, 1850-1880",
+                "author": "Ngwabi Bhebe",
+                "year": 1996,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 193",
+                "notes": "UNESCO, volume dirigé par J. F. A. Ajayi, édition française lue dans l'exemplaire numérisé de l'UNESDOC le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "abaNdungwa",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom ancien, encore cité en 1935, que l'on rapproche du zoulou abaNtungwa.",
+        "periodLabel": "Cité en 1935",
+        "accounts": [
+          {
+            "period": {
+              "from": 1935,
+              "to": 1935,
+              "label": "1935"
+            },
+            "era": "modern",
+            "statement": "Le nom abaNdungwa, baThokwa chez les Sotho, est un nom par lequel ces tribus du Transvaal sont encore en partie connues en 1935, selon van Warmelo. Il y voit l'équivalent du terme zoulou abaNtungwa, un nom ancien qui semble désigner les tribus zouloues proprement dites, et en tire une preuve de leur origine nguni du Natal. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "abaNdungwa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 87",
+                "notes": "Ethnological Publications, vol. V, Pretoria, Government Printer, 1935, publié par le département des Affaires indigènes ; lu dans l'exemplaire numérisé par l'université de Pretoria le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

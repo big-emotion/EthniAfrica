@@ -128,5 +128,60 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Tajuasohn désigne un petit peuple de langue krou du comté de Sinoe, au Liberia, et sa langue. C'est le nom qui sert aujourd'hui dans les catalogues de langues ; on trouve aussi Tajuason, Tajuoso ou Tajuosohn. Les sources que nous avons lues ne disent pas si ce peuple se nomme lui-même ainsi. On ne sait pas avec certitude d'où vient ce nom ni quand il a été écrit pour la première fois, et nous n'avons trouvé aucune trace écrite du nom Taizi.",
+    "names": [
+      {
+        "nameText": "Tajuasohn",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tja",
+        "namedBy": null,
+        "shortLine": "Le nom du peuple et de sa langue dans les catalogues ; son origine n'est pas connue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tajuasohn est le nom de référence de la langue dans la norme internationale ISO 639-3, sous le code tja, et dans le catalogue Glottolog, qui relève aussi les formes Tajuason, Tajuoso et Tajuosohn. Joshua Project, une base de données missionnaire, situe ce peuple dans le comté de Sinoe, au nord de Greenville, réparti en cinq clans.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, Tajuasohn [tja]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/tja",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 12 octobre 2026."
+              },
+              {
+                "title": "Glottolog 5.3, Tajuasohn (taju1238)",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank (dir.)",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/taju1238",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche de la langue, lue le 12 octobre 2026. Autres noms relevés : Tajuason, Tajuoso, Tajuosohn."
+              },
+              {
+                "title": "Tajuasohn in Liberia",
+                "author": "Joshua Project",
+                "year": null,
+                "url": "https://joshuaproject.net/people_groups/15203/LI",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "notes": "Fiche lue le 12 octobre 2026 : Sinoe county, au nord de Greenville ; la langue est aussi appelée Tajuason ou Tajuosohn et parlée dans cinq clans locaux. La fiche ne dit pas comment ce peuple se nomme lui-même."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

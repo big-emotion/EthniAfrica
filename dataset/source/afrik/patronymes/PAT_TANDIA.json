@@ -75,5 +75,71 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Tandia est un nom de famille soninké, porté sur la rive mauritanienne du fleuve Sénégal. On ne sait pas avec certitude ce qu'il veut dire ni d'où il vient : le projet n'a trouvé aucune explication sourcée.",
+    "names": [
+      {
+        "nameText": "Tandia",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille soninké, écrit dès 1917 ; son sens n'est pas connu.",
+        "periodLabel": "Écrit dès 1917 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Tandia désigne une famille soninké. On ne sait pas avec certitude ce que veut dire le mot ni d'où il vient : le projet n'a trouvé aucune explication sourcée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Études sur l'Islam au Sénégal, tome 2 : les doctrines et les institutions",
+                "author": "Paul Marty",
+                "year": 1917,
+                "url": "https://archive.org/details/EtudesSurLislamAuSnngal2LesDotrinesEtLesInstitutions",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 328",
+                "notes": "Paris, Ernest Leroux, 1917, Collection de la Revue du monde musulman. Lu le 11 octobre 2026 sur une copie non officielle de la numérisation de Gallica déposée sur archive.org. Auteur administrateur colonial, cité pour les classements qu'il donne. Page 328 : chez les Sarakollés de la rive droite (Guidimakha), « les cordonniers (castes Tandia, Silia, Soumbounou...) ». L'auteur ne dit rien du sens du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1917,
+              "to": 1917,
+              "label": "1917"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tandia apparaît par écrit chez Paul Marty, administrateur colonial, en 1917 : il le range parmi les familles de cordonniers des Soninké du Guidimakha, sur la rive droite du fleuve Sénégal. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un document l'a écrit, pas depuis quand le nom est porté.",
+            "formAsWritten": "Tandia",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Paul Marty",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Études sur l'Islam au Sénégal, tome 2 : les doctrines et les institutions",
+                "author": "Paul Marty",
+                "year": 1917,
+                "url": "https://archive.org/details/EtudesSurLislamAuSnngal2LesDotrinesEtLesInstitutions",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 328",
+                "notes": "Paris, Ernest Leroux, 1917, Collection de la Revue du monde musulman. Lu le 11 octobre 2026 sur une copie non officielle de la numérisation de Gallica déposée sur archive.org. Auteur administrateur colonial, cité pour les classements qu'il donne. Page 328 : chez les Sarakollés de la rive droite (Guidimakha), « les cordonniers (castes Tandia, Silia, Soumbounou...) »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

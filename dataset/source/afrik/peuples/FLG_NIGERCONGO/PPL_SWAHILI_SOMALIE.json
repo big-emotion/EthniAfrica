@@ -119,5 +119,232 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Swahili de Somalie désigne deux communautés de la côte sud de la Somalie : les Bajuni, des îles et de la côte entre Kismayo et Lamu, qui se nomment aussi Watikuu, et les gens de Barawa, les Wabarawa. Nous présentons plus bas l'histoire de chacun de ces noms.",
+    "names": [
+      {
+        "nameText": "Watikuu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "swh",
+        "namedBy": null,
+        "shortLine": "Un nom que les Bajuni se donnent : « les gens de la grande terre ».",
+        "periodLabel": "Écrit depuis 1913 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Watikuu, ou Tikuu, est l'un des noms que les Bajuni se donnent ; il viendrait de ti, « pays, terre », et kuu, « grand », selon le linguiste Derek Nurse.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Review of the Bajuni sections of the Report on Minority Groups in Somalia",
+                "author": "Derek Nurse",
+                "year": null,
+                "url": "https://www.mun.ca/linguistics/media/production/memorial/academic/faculty-of-humanities-and-social-sciences/linguistics/media-library/more/e-books/Bajuni%20refugees.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4 du fichier",
+                "notes": "Document non daté de l'université Memorial de Terre-Neuve, lu dans le fichier en ligne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Watikuu apparaît par écrit chez l'administrateur colonial C. H. Stigand : les autres habitants de l'île de Pate appellent ainsi les Bajuni, « ceux de la terre ferme ». C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Watikuu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Land of Zinj, being an account of British East Africa, its ancient history and present inhabitants",
+                "author": "C. H. Stigand",
+                "year": 1913,
+                "url": "https://archive.org/details/landofzinjbeinga00stig",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 168",
+                "notes": "Londres, Constable, lu sur la numérisation d'Internet Archive. L'auteur, administrateur colonial britannique, traduit aussi la Chronique de Pate. Passage : « They were called Watikuu=of the mainland, by the other inhabitants of the island »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bajuni",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Leur nom le plus courant ; il viendrait des « enfants de Juni », selon une tradition.",
+        "periodLabel": "Trace indirecte depuis 1678 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1678,
+              "to": 1678,
+              "label": "1678"
+            },
+            "era": "polity",
+            "statement": "Le nom Bajuni apparaît dans l'histoire de la présence portugaise écrite par Justus Strandes : plus de mille Bajuni s'allient aux Portugais contre Pate en 1678, selon le linguiste Derek Nurse, qui cite cet ouvrage. C'est la plus ancienne trace de ce nom que le projet connaît. Nous n'avons pas lu Strandes, et nous ne savons pas quelle forme du nom portent ses sources. Le peuple vivait déjà là avant elle.",
+            "sources": [
+              {
+                "title": "Bajuni: people, society, geography, history, language",
+                "author": "Derek Nurse",
+                "year": null,
+                "url": "https://aflat.org/files/dnurse/Bajuni.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18 du fichier",
+                "notes": "Document de travail du linguiste, non daté, lu dans le fichier qu'il a déposé en ligne ; le fichier a été créé en 2013."
+              }
+            ],
+            "birth": true
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bajuni est écrit ainsi chez C. H. Stigand, qui décrit leur installation à Faza, sur l'île de Pate. C'est la plus ancienne trace de cette forme que nous avons lue nous-mêmes.",
+            "formAsWritten": "Bajuni",
+            "sources": [
+              {
+                "title": "The Land of Zinj, being an account of British East Africa, its ancient history and present inhabitants",
+                "author": "C. H. Stigand",
+                "year": 1913,
+                "url": "https://archive.org/details/landofzinjbeinga00stig",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 168",
+                "notes": "Londres, Constable, lu sur la numérisation d'Internet Archive. L'auteur, administrateur colonial britannique, traduit aussi la Chronique de Pate."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "Rapportée en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bajuni viendrait de Bani Juni, « les enfants de Juni », un ancêtre unique, Juni bin Katada, venu de Médine, selon ce qu'on rapporte à C. H. Stigand.",
+            "hypothesisGroup": "origine du nom Bajuni",
+            "sources": [
+              {
+                "title": "The Land of Zinj, being an account of British East Africa, its ancient history and present inhabitants",
+                "author": "C. H. Stigand",
+                "year": 1913,
+                "url": "https://archive.org/details/landofzinjbeinga00stig",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 168",
+                "notes": "Londres, Constable, lu sur la numérisation d'Internet Archive. L'auteur, administrateur colonial britannique, traduit aussi la Chronique de Pate. Passage : « The name of “Bajuni” is said to be derived from Bani Juni=the children of Juni »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gunya",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un autre nom des Bajuni, que l'on trouve dans leurs chants anciens.",
+        "periodLabel": "Trace indirecte depuis 1598",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Chants non datés"
+            },
+            "statement": "Le nom Mgunya désigne les Bajuni dans le titre d'un de leurs chants les plus connus, le Vave kwa Mgunya, « le vave pour les Bajuni », chanté chaque année au moment de brûler la brousse, selon Derek Nurse.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bajuni: people, society, geography, history, language",
+                "author": "Derek Nurse",
+                "year": null,
+                "url": "https://aflat.org/files/dnurse/Bajuni.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18 du fichier",
+                "notes": "Document de travail du linguiste, non daté, lu dans le fichier qu'il a déposé en ligne ; le fichier a été créé en 2013."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1598,
+              "to": 1598,
+              "label": "1598"
+            },
+            "era": "polity",
+            "statement": "Le nom Gunya apparaît sous une forme proche, « Vanagunes », dans une lettre du vice-roi portugais des Indes du 6 janvier 1598, qui interdit de laisser Pate se fortifier contre eux, selon Derek Nurse, qui cite l'historien Organ. C'est la plus ancienne trace de ce nom que le projet connaît ; nous n'avons pas lu la lettre.",
+            "formAsWritten": "Vanagunes",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Bajuni: people, society, geography, history, language",
+                "author": "Derek Nurse",
+                "year": null,
+                "url": "https://aflat.org/files/dnurse/Bajuni.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18 du fichier",
+                "notes": "Document de travail du linguiste, non daté, lu dans le fichier qu'il a déposé en ligne ; le fichier a été créé en 2013. Passage : « to defend themselves against the Vanagunes (= Gunya, Bajuni) »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wabarawa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Les gens de Barawa, une ville de la côte somalienne.",
+        "periodLabel": "Trace indirecte depuis la fin du XVIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1586,
+              "to": 1587,
+              "label": "Vers 1586-1587, selon une chronique publiée en 1913"
+            },
+            "era": "polity",
+            "statement": "Le nom Wabarawa apparaît dans la Chronique de Pate, traduite par C. H. Stigand : sous le sultan Bwana Hejra, en l'an 995 de l'hégire, des étrangers venus de Barawa arrivent à Pate et sont appelés ainsi. C'est la plus ancienne trace de ce nom que le projet connaît. La ville de Barawa existait déjà avant elle.",
+            "formAsWritten": "Wabarawa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Land of Zinj, being an account of British East Africa, its ancient history and present inhabitants",
+                "author": "C. H. Stigand",
+                "year": 1913,
+                "url": "https://archive.org/details/landofzinjbeinga00stig",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 51",
+                "notes": "Londres, Constable, lu sur la numérisation d'Internet Archive. L'auteur, administrateur colonial britannique, traduit aussi la Chronique de Pate. Passage : « At this time foreigners came into the country of Pate and they were called Wabarawa »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

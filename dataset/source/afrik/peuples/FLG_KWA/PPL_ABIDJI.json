@@ -100,5 +100,176 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Abidji désigne un peuple du sud de la Côte d'Ivoire, établi dans la région de Sikensi, au nord-est d'Abidjan. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. D'autres noms existent : Ari, que Maurice Delafosse donne à ce peuple en 1904, et Abigi, que lui donnent les Agni. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Abidji",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom courant de ce peuple ; Delafosse le tient en 1904 pour le nom que lui donnent les Adyoukrou.",
+        "periodLabel": "Écrit depuis 1892 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Abidji désigne un peuple basé au nord-est d'Abidjan, dont le rite du Dipri est l'une des cérémonies traditionnelles les plus importantes, selon Jean-Jacques Essoh et Mamadou Yeo. Ils n'expliquent pas ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Le Dipri chez les Abidji de Côte d'Ivoire : entre démonstration de pouvoirs mystiques et valorisation de l'art culinaire",
+                "author": "Jean-Jacques Essoh et Mamadou Yeo",
+                "year": 2024,
+                "url": "https://www.revuedugralifah.com/wp-content/uploads/2024/12/13-J-J-ESSOH-et-M-YEO-_170-180.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 170",
+                "notes": "Revue du GRALIFAH, 2024, p. 170-180 ; lu le 12 octobre 2026 dans le PDF de la revue. Le résumé présente les Abidji comme un peuple basé au nord-est d'Abidjan."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sans date"
+            },
+            "statement": "Le nom Abidji désigne un peuple qui se serait formé, selon une page du site Rezo-Ivoire, de la rencontre de deux courants d'immigration. L'un, qui semble issu des Alladian, au sud de la lagune Ebrié, a donné les Abidji Enyébé, à l'ouest ; l'autre, venu de l'est et issu du groupe ashanti, a donné les Abidji Ogbru. Le texte dit que ce peuple n'existait pas avant cette rencontre. On ne sait pas avec certitude d'où vient le nom Abidji.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Le peuple Abidji",
+                "author": "Rezo-Ivoire",
+                "year": null,
+                "url": "https://rezoivoire.net/ivoire/patrimoine/3811/le-peuple-abidji.html",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page du site Rezo-Ivoire, non datée, lue le 12 octobre 2026. Elle reprend un texte non signé et cite une collection numérique de documents de sciences humaines et sociales. Elle ne dit pas d'où vient le nom Abidji."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Abidji est, selon Maurice Delafosse, celui que les Adyoukrou donnent aux Ari. Les Agni les appellent Abigi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 12",
+                "notes": "Paris, Ernest Leroux ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "1892, récit du voyage de 1887-1889"
+            },
+            "statement": "Le nom Abidji figure chez Louis-Gustave Binger, qui parle de « l'Abidji (district au nord de l'Adjessi) », où l'on parle le même dialecte qu'à Dabou. Les sources ne disent pas s'il s'agit du même peuple que celui dont parle Delafosse en 1904. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Abidji",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, tome 2",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74721",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 2, p. 332",
+                "notes": "Paris, Hachette, 1892, deux tomes ; récit du voyage de 1887-1889. Lu le 12 octobre 2026 dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ari",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que Maurice Delafosse emploie en 1904 pour ce peuple, entre le Bandama et l'Agnéby.",
+        "periodLabel": "Écrit en 1904",
+        "accounts": [
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ari désigne, chez l'administrateur colonial Maurice Delafosse, le peuple que les Agni appellent Abigi et les Adyoukrou Abidji. Il l'établit entre le Bandama et l'Agnéby, avec les villages de Sikanzi et de Bessédi, et note que les invasions agni l'ont réduit et tendent à l'absorber. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà dans ce pays avant elle.",
+            "formAsWritten": "Ari",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 12",
+                "notes": "Paris, Ernest Leroux ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Abigi",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Agni, selon Maurice Delafosse",
+        "shortLine": "Le nom que les Agni donnent à ce peuple, selon Maurice Delafosse en 1904.",
+        "periodLabel": "Écrit en 1904",
+        "accounts": [
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Abigi est, selon l'administrateur colonial Maurice Delafosse, celui que les Agni donnent aux Ari, que les Adyoukrou appellent Abidji. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Abigi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 12",
+                "notes": "Paris, Ernest Leroux ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

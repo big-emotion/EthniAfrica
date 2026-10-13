@@ -80,5 +80,115 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Zuma », « Zulu », « clan name », « morphology », « -zum- », « surname », « transmission » et « obituary », ainsi que la consultation directe de « The Morphological Analysis of Zulu Clan Names » n'ont établi aucune règle propre à Zuma permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Zuma est un nom de clan zoulou, en Afrique du Sud. Une seule explication de son origine est publiée à notre connaissance, et elle n'est pas confirmée par ailleurs ; nous la présentons plus bas avec la plus ancienne trace du nom.",
+    "names": [
+      {
+        "nameText": "Zuma",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan zoulou d'Afrique du Sud ; on ne sait pas avec certitude d'où il vient.",
+        "periodLabel": "Écrit dès 1929 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Zuma est un nom de clan zoulou, que le linguiste Celani Lucky Zwane étudie au KwaZulu-Natal. Il rapproche ce nom du verbe zuma, « prendre par surprise » ; cette explication est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Morphological Analysis of Zulu Clan Names",
+                "author": "Celani Lucky Zwane",
+                "year": 2020,
+                "url": "https://doi.org/10.5430/elr.v9n3p36",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 37 ; p. 40",
+                "notes": "English Linguistics Research, vol. 9, n° 3, Sciedu Press, 2020, p. 36-49. Analyse des noms de clan zoulous à partir d'entretiens menés près de Ladysmith, au KwaZulu-Natal (p. 37). Lu dans le PDF de l'éditeur le 11 octobre 2026. Paragraphe 6.1.3, « Zuma (Fight Unaware) », p. 40 : la racine -zum-, « prendre par surprise », et la finale -a ; le nom aurait été donné à des gens qui attaquaient leurs ennemis par surprise."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Proposée en 2020"
+            },
+            "era": "modern",
+            "hypothesisGroup": "origine du nom Zuma",
+            "statement": "Le nom Zuma viendrait de la racine -zum-, « prendre par surprise » : il aurait été donné à des gens qui attaquaient leurs ennemis sans qu'ils s'y attendent, et sonnerait comme un avertissement, selon Celani Lucky Zwane.",
+            "sources": [
+              {
+                "title": "The Morphological Analysis of Zulu Clan Names",
+                "author": "Celani Lucky Zwane",
+                "year": 2020,
+                "url": "https://doi.org/10.5430/elr.v9n3p36",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 37 ; p. 40",
+                "notes": "English Linguistics Research, vol. 9, n° 3, Sciedu Press, 2020, p. 36-49. Analyse des noms de clan zoulous à partir d'entretiens menés près de Ladysmith, au KwaZulu-Natal (p. 37). Lu dans le PDF de l'éditeur le 11 octobre 2026. Paragraphe 6.1.3, « Zuma (Fight Unaware) », p. 40 : la racine -zum-, « prendre par surprise », et la finale -a ; le nom aurait été donné à des gens qui attaquaient leurs ennemis par surprise."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "1929"
+            },
+            "era": "modern",
+            "statement": "Le nom Zuma apparaît par écrit chez Alfred T. Bryant, comme celui d'un ancêtre placé, avec un « peut-être », en tête de la généalogie du clan des Nxamalala, sur la Tugela ; il le dit mort vers 1699. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le clan le porte.",
+            "formAsWritten": "Zuma",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Alfred T. Bryant",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bryant-a-t-olden-times-in-zululand-and-natal-containing-earlier-political-histor",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 520 ; p. 522",
+                "notes": "Londres, Longmans, Green and Co., 1929. Lu le 11 octobre 2026 dans une copie non officielle déposée sur Internet Archive. Page 520 : le clan des Nxamalala, dans la boucle de la Tugela, descend d'une lignée qui remonte « perchance » à Zuma. Page 522 : leur généalogie s'ouvre sur « Zuma (d. c. 1699) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1861,
+              "to": 1861,
+              "label": "1861"
+            },
+            "before": true,
+            "statement": "Le mot zuma existe alors en zoulou comme verbe : il veut dire « prendre par surprise, tomber soudain sur », selon le dictionnaire de John William Colenso. Ce dictionnaire ne le donne pas comme nom de clan.",
+            "sources": [
+              {
+                "title": "Zulu-English Dictionary",
+                "author": "John William Colenso",
+                "year": 1861,
+                "url": "https://archive.org/details/zuluenglishdict00dcgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 546",
+                "notes": "Pietermaritzburg, 1861, lu dans la numérisation d'Internet Archive le 11 octobre 2026. Entrée « Zuma, v. Take by surprise, come suddenly upon ». Le dictionnaire ne donne pas Zuma comme nom de clan."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

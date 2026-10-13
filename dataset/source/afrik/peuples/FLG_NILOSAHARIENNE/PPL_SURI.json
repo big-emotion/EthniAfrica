@@ -1,0 +1,371 @@
+{
+  "id": "PPL_SURI",
+  "nameMain": "Suri",
+  "languageFamilyId": "FLG_NILOSAHARIENNE",
+  "currentCountries": ["ETH"],
+  "classificationStatus": "contested",
+  "content": {
+    "appellations": {
+      "mainName": "Suri",
+      "selfAppellation": "Suri",
+      "exonyms": [
+        "Surma",
+        "Chai",
+        "Tirmaga",
+        "Timaga",
+        "Baale",
+        "Shuri",
+        "Dhuri",
+        "Churi"
+      ],
+      "originOfExonyms": "Le terme Surma est employe dans la litterature europeenne et journalistique pour designer collectivement les Suri, Mursi et Me'en. Chai et Tirmaga (Timaga) sont les deux sous-groupes principaux qui se designent eux-memes sous le nom de Suri. Baale est un troisieme sous-groupe plus eloigne linguistiquement. Le terme Surma a ete abandonne dans la nomenclature scientifique car il designait aussi une langue specifique (Unseth 1997). Shuri, Dhuri et Churi sont d'autres formes du nom, relevées par les catalogues de langues que cite Glottolog ; Joshua Project donne aussi Dhuri.",
+      "whyProblematic": "La confusion entre Suri et Surma est frequente dans la presse touristique et la vulgarisation. Les Suri se distinguent des Mursi et des Me'en, bien que les trois forment le collectif Surma dans certaines classifications. Linguistiquement, Chai et Tirmaga parlent des dialectes tres proches, tandis que Baale est plus distinct.",
+      "contemporaryUsage": "Le terme Suri est utilise dans le recensement ethiopien de 2007 pour distinguer ce groupe des Mursi et des Me'en. Le woreda administratif porte officiellement le nom de Suri woreda, dans la zone West Omo du SNNPR.",
+      "linguisticFamily": "FLG_NILOSAHARIENNE",
+      "ethnoLinguisticGroup": "Surmic du Sud-Est (Nilo-Saharien), branche Tirma-Chai-Mursi",
+      "historicalRegion": "Vallee superieure de l'Omo, Keffa et Maji, sud-ouest de l'Ethiopie",
+      "currentCountries": ["ETH"]
+    },
+    "ethnicities": ["Chai", "Tirmaga", "Baale"],
+    "origins": {
+      "ancientOrigins": "Selon la tradition orale suri, le groupe est originaire du Plateau de Boma (actuel Soudan du Sud), de la vallee de l'Omo et du Plateau de Gobi de Maji. Ils auraient migre vers leur territoire actuel il y a environ 200 ans. Les Suri font partie de la grande famille linguistique Surmic, dont l'origine geographique proto-surmic se situe dans le sud-ouest ethiopien, pres de Maji.",
+      "formationPeriod": "Migration vers le territoire actuel il y a environ 200 ans (fin du XVIIIe siecle). Les migrants ont absorbe des groupes locaux dans leur progression. Depuis la fin du XIXe siecle, les Suri subissent les pressions des troupes imperiales ethiopiennes et des colons nordiques.",
+      "migrationRoutes": [
+        "Plateau de Boma (Soudan du Sud) vers la vallee de l'Omo",
+        "Plateau de Gobi Maji vers la montagne Shologoy",
+        "Extension vers l'Akobo (est du Nil Bleu)"
+      ],
+      "historicalSettlementZones": [
+        "Suri woreda, zone West Omo, SNNPR, Ethiopie",
+        "Plaines semi-arides, vallees et collines autour de Kibish",
+        "Zone frontaliere avec le Soudan du Sud (Plateau de Boma)"
+      ],
+      "unificationsOrDivisions": "Les trois sous-groupes (Chai, Tirmaga, Baale) partagent un territoire, une culture et une economie similaires mais parlent des langues distinctes. Le terme collectif Suri s'est impose par la nomenclature administrative du woreda.",
+      "externalInfluences": "Harcelement par les troupes imperiales ethiopiennes depuis la fin du XIXe siecle. Fuite de nombreux Suri vers le Plateau de Boma au Soudan apres 1925. Introduction d'armes automatiques en provenance du Soudan dans les annees 1980. Impact du barrage Gilgel Gibe III (complete en 2016) qui a elimine l'agriculture sur les berges fluviales et engendre une penurie d'eau. Plantations de canne a sucre d'Etat occupant les terres de paturage.",
+      "majorHistoricalEvents": "Harcèlement par les troupes ethiopiennes depuis la fin du XIXe siecle. Migrations forcees vers le Soudan apres 1925. Trafic d'armes depuis le Soudan dans les annees 1980. Conference de paix inter-ethnique en 2008. Mise en service du barrage Gilgel Gibe III en 2016 avec impacts devastateurs sur les moyens de subsistance. Tentatives de l'Etat de confisquer les terres au profit du Parc National de l'Omo."
+    },
+    "organization": {
+      "traditionalPoliticalSystem": "Systeme egalitaire sans chef executif. La prise de decision collective s'opere lors d'assemblees d'hommes presidees par le komoru (chef rituel). Le komoru est elu au sein de certains lignages claniques et n'a qu'une fonction ceremonielle sans pouvoir executif.",
+      "clanOrganization": "Organisation clanique patrilineaire. Les clans determinent l'election du komoru et la transmission du role de faiseur de pluie (hereditaire, reserve aux hommes d'un lignage specifique). Les villages regroupent de 40 a 2 500 personnes.",
+      "ageClassSystems": "Systeme de classes d'age masculines en deux categories principales : les Tegay (jeunes guerriers, non maries, gardiens du betail) et les Rora (anciens juniors, principaux decideurs ; initiation tous les 20 a 30 ans par des epreuves de privation et de flagellation).",
+      "roleOfLineages": "Les lignages patrilineaires determinent l'acces au betail, les droits de paturage et les responsabilites cerimoniales. La richesse en betail (30 a 40 bovins par homme marie en moyenne) est le principal indicateur de statut social.",
+      "religiousAuthority": "Le komoru assume des fonctions religieuses et rituelles. Le faiseur de pluie (role hereditaire masculin, specifique a certains lignages) mediatise les relations avec les forces naturelles en mâchant des copeaux d'un arbre specifique meles a de l'argile."
+    },
+    "languages": {
+      "mainLanguage": "Suri (Chai-Tirmaga)",
+      "isoCodes": ["suq"],
+      "dialects": ["Chai", "Tirmaga", "Baale (plus distant)"],
+      "vehicularRole": "La langue suri (code ISO suq pour le Suri/Chai-Tirmaga) appartient au groupe Surmic du Sud-Est de la famille Nilo-Saharienne. Elle est etroitement apparentee au mursi. Peu de Suri maîtrisent l'amharique (langue officielle ethiopienne), et le taux d'alphabetisation reste bas, bien qu'en progression grace a l'ouverture d'ecoles dans la region."
+    },
+    "culture": {
+      "majorRites": "Le saginé (combat a la perche) est le rite de passage central pour les jeunes hommes : il confere prestige et est indispensable pour trouver une epouse. Les combats se deroulent entre villages lors des recoltes, avec 20 a 30 participants par camp. Le processus d'initiation des Rora dure 20 a 30 ans et comprend des periodes de privation et de flagellation. L'insertion du plateau labial (dhebi a tugoin) constitue le rite de passage des jeunes femmes vers l'age adulte, initie a 15-16 ans.",
+      "symbols": "Le plateau labial en argile ou en bois est le symbole culturel le plus visible des Suri (et Mursi), portant des significations de beaute, fertilite et statut social. Plus le plateau est grand, plus la dot en betail est elevee. Le betail (bovins) est le symbole supreme de richesse, de prestige et d'identite : les hommes leur donnent des noms, leur composent des chants et risquent leur vie pour les proteger.",
+      "artsAndMusic": "La peinture corporelle est une pratique artistique centrale : hommes et femmes s'enduisent de melanges d'argile blanche, de terre rouge, de feuilles et de fleurs ecrasees, se peignant mutuellement (sans miroirs). Les fleurs colorees sont portees sur la tete lors des fetes. La tradition orale (poemes, chants sur le betail) est le principal vecteur de memoire culturelle.",
+      "spiritualities": "Croyances animistes predominantes (environ 97% de la population). Le dieu celeste Tumu (ou Tuma) est venere. Croyance dans les esprits ancestraux. Des devineresses feminines medient les relations avec le monde spirituel. Le faiseur de pluie occupe un role central dans les relations avec les forces naturelles. Presence marginale du christianisme evangelique (200 a 300 croyants), notamment autour de Kibish."
+    },
+    "historicalRole": {
+      "kingdomsOrChiefdoms": "Pas de royaume ou de chefferie centralise. Organisation egalitaire en assemblees villageoises. Le komoru (chef rituel) n'a aucun pouvoir executif. La prise de decision est collective et deliberative.",
+      "relationsWithNeighbors": "Relations de tension reguliere avec les Nyangatom (ennemis principaux, au sud, du cluster Ateker) et les Toposa (aussi du cluster Ateker) qui pillent le betail suri. Conflits saisonniers pour l'acces aux terres, a l'eau et aux paturages. Echanges commerciaux avec les Dizi (achat de poteries). Pressions des 12 autres groupes ethniques coexistant dans le Sud-Ouest ethiopien.",
+      "conflictsOrAlliances": "Conflits recurrents avec les Nyangatom et Toposa pour le betail. Harcèlement par les troupes imperiales ethiopiennes depuis la fin du XIXe siecle. Introduction d'armes automatiques depuis le Soudan dans les annees 1980 ayant aggrave les conflits. Menaces persistantes liees aux projets de developpement etatiques (barrages, plantations).",
+      "diaspora": "Migrations temporaires vers le Plateau de Boma (Soudan du Sud) dans les periodes de conflits, notamment apres 1925. Pas de diaspora etablie hors de la sous-region."
+    },
+    "demography": {
+      "totalPopulation": 35000,
+      "referenceYear": 2025,
+      "source": "Estimation 2025 fondee sur le recensement ethiopien de 2007 et les donnees de l'Atlas of Humanity (34 000 en 2016). Recensement 1998 : 20 622 (estimation). Estimation 2016 : environ 32 000 (Wikipedia / Surma people).",
+      "distributionByCountry": [
+        {
+          "country": "ETH",
+          "population": 35000
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Suri Tribe – Atlas of Humanity",
+        "url": "https://www.atlasofhumanity.com/suri",
+        "tier": "unverified"
+      },
+      {
+        "title": "Why the Surma People of Ethiopia Wear Lip Plates – Africa Rebirth, 2024",
+        "url": "https://www.africarebirth.com/the-origin-and-significance-of-wearing-lip-plates-among-ethiopias-surma-people/",
+        "tier": "unverified"
+      },
+      {
+        "title": "The Surma Tribe of Ethiopia, History, Culture and Facts – Kabira Safaris, 2025",
+        "url": "https://kabirasafaris.com/surma/",
+        "tier": "unverified"
+      },
+      {
+        "title": "Suri people – 101 Last Tribes",
+        "url": "https://www.101lasttribes.com/tribes/suri.html",
+        "tier": "unverified",
+        "source_kind": "community"
+      },
+      {
+        "title": "Suri Tribe – Simien Ethiopia Tours",
+        "url": "https://simienethiopiatours.com/south-omo-tribes/suri-tribe/",
+        "tier": "unverified"
+      },
+      {
+        "title": "Glottolog — Tirma-Chai (suri1267)",
+        "url": "https://glottolog.org/resource/languoid/id/suri1267",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Joshua Project — Suri, Tirmaga-Chai in Ethiopia",
+        "url": "https://joshuaproject.net/people_groups/15130",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Suri désigne un peuple d'agro-pasteurs du sud-ouest de l'Éthiopie, près de la frontière du Soudan du Sud, et c'est le nom qu'il se donne quand il parle à des étrangers. Entre eux, ses membres se disent Chai ou Tirma, du nom de leurs deux sections. On les appelle aussi Surma. On ne sait pas avec certitude d'où viennent les noms Suri et Surma ; nous présentons plus bas leurs traces.",
+    "names": [
+      {
+        "nameText": "Suri",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "suq",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne quand il parle à des étrangers ; entre eux, on dit Chai ou Tirma.",
+        "periodLabel": "Écrit depuis 1984 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1990,
+              "to": 1993,
+              "label": "1990-1993"
+            },
+            "era": "modern",
+            "statement": "Le nom Suri est celui que ce peuple emploie le plus souvent en parlant à des étrangers, même s'il connaît le nom Surma, selon l'anthropologue Jon Abbink, qui l'a étudié en 1990 et 1991.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Famine, gold and guns: the Suri of southwestern Ethiopia, 1985-91",
+                "author": "Jon Abbink",
+                "year": 1993,
+                "url": "https://hdl.handle.net/1887/9057",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 218 et p. 224, note 1",
+                "notes": "Disasters, vol. 17, n° 3, 1993, p. 218-225. Lu le 11 octobre 2026 dans la numérisation déposée par l'université de Leyde."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Suri figure dans le recensement éthiopien de 1984, qui traite les Suri et les Surma comme deux groupes distincts, selon Jon Abbink. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Famine, gold and guns: the Suri of southwestern Ethiopia, 1985-91",
+                "author": "Jon Abbink",
+                "year": 1993,
+                "url": "https://hdl.handle.net/1887/9057",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 224, note 1",
+                "notes": "Disasters, vol. 17, n° 3, 1993, p. 218-225. Lu le 11 octobre 2026 dans la numérisation déposée par l'université de Leyde. L'auteur cite le rapport analytique du recensement de 1984 pour la région du Kaffa, publié en 1990 (p. 33), que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Il y a environ deux siècles, selon la tradition"
+            },
+            "era": "polity",
+            "statement": "Les ancêtres des Chai se seraient formés ou seraient arrivés près du mont Naita, à la frontière du Soudan, il y a environ deux cents ans, selon leurs traditions orales rapportées par Jon Abbink. Les sources que nous avons lues ne disent pas sous quel nom.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Ritual and political forms of violent practice among the Suri of southern Ethiopia",
+                "author": "Jon Abbink",
+                "year": 1998,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2870396/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 277",
+                "notes": "Cahiers d'études africaines, n° 150-152, 1998, p. 271-295. Lu le 11 octobre 2026 dans la numérisation déposée par l'université de Leyde."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Surma",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom sous lequel ce peuple est le plus connu au dehors, dans les livres et la presse.",
+        "periodLabel": "Écrit depuis 1984",
+        "accounts": [
+          {
+            "period": {
+              "from": 1997,
+              "to": 1997,
+              "label": "1997"
+            },
+            "era": "modern",
+            "statement": "Le nom Surma sert de nom principal à Jon Abbink dans un article de 1997 sur l'autorité dans cette société, où il précise que ce peuple est aussi appelé Suri.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Authority and leadership in Surma society (Ethiopia)",
+                "author": "Jon Abbink",
+                "year": 1997,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2888105/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 317",
+                "notes": "Africa (Rome), vol. 52, n° 3, 1997, p. 317-342. Lu le 11 octobre 2026 dans la numérisation déposée par l'université de Leyde."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1990,
+              "to": 1993,
+              "label": "1990-1993"
+            },
+            "era": "modern",
+            "statement": "Le nom Surma est le nom sous lequel ce peuple est connu du grand public, par exemple dans les livres et articles de Carol Beckwith et Angela Fisher parus en 1990 et 1991, selon Jon Abbink.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Famine, gold and guns: the Suri of southwestern Ethiopia, 1985-91",
+                "author": "Jon Abbink",
+                "year": 1993,
+                "url": "https://hdl.handle.net/1887/9057",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 224, note 1, et p. 225",
+                "notes": "Disasters, vol. 17, n° 3, 1993, p. 218-225. Lu le 11 octobre 2026 dans la numérisation déposée par l'université de Leyde."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Surma figure dans le recensement éthiopien de 1984, à côté du nom Suri, comme celui d'un groupe distinct, selon Jon Abbink. C'est la plus ancienne trace de ce nom que le projet connaît. On ne sait pas avec certitude d'où il vient.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Famine, gold and guns: the Suri of southwestern Ethiopia, 1985-91",
+                "author": "Jon Abbink",
+                "year": 1993,
+                "url": "https://hdl.handle.net/1887/9057",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 224, note 1",
+                "notes": "Disasters, vol. 17, n° 3, 1993, p. 218-225. Lu le 11 octobre 2026 dans la numérisation déposée par l'université de Leyde. L'auteur cite le rapport analytique du recensement de 1984 pour la région du Kaffa, publié en 1990 (p. 33), que nous n'avons pas lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Chai",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "suq",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne l'une des deux sections des Suri, à l'est de la rivière Kibish.",
+        "periodLabel": "Écrit depuis 1984",
+        "accounts": [
+          {
+            "period": {
+              "from": 1984,
+              "to": 1984,
+              "label": "1984"
+            },
+            "era": "modern",
+            "statement": "Le nom Chai désigne une section des Suri qui vit à l'est de la rivière Kibish, chez les anthropologues David et Pat Turton en 1984, selon Jon Abbink. C'est la plus ancienne trace de ce nom que le projet connaît. La section existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Famine, gold and guns: the Suri of southwestern Ethiopia, 1985-91",
+                "author": "Jon Abbink",
+                "year": 1993,
+                "url": "https://hdl.handle.net/1887/9057",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 218",
+                "notes": "Disasters, vol. 17, n° 3, 1993, p. 218-225. Lu le 11 octobre 2026 dans la numérisation déposée par l'université de Leyde. L'auteur cite David et Pat Turton (1984), p. 187, que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1998,
+              "to": 1998,
+              "label": "Proposée en 1998"
+            },
+            "era": "modern",
+            "statement": "Le nom Chai, que se donne cette section, serait compris comme « nous nous vengeons, nous leur rendons la pareille », selon Jon Abbink, qui y voit un reflet de l'esprit guerrier que les observateurs extérieurs prêtent aux Chai.",
+            "hypothesisGroup": "origine du nom Chai",
+            "sources": [
+              {
+                "title": "Ritual and political forms of violent practice among the Suri of southern Ethiopia",
+                "author": "Jon Abbink",
+                "year": 1998,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2870396/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 278",
+                "notes": "Cahiers d'études africaines, n° 150-152, 1998, p. 271-295. Lu le 11 octobre 2026 dans la numérisation déposée par l'université de Leyde."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tirma",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "suq",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne l'autre section des Suri, à côté des Chai.",
+        "periodLabel": "Écrit depuis 1993",
+        "accounts": [
+          {
+            "period": {
+              "from": 1993,
+              "to": 1993,
+              "label": "1993"
+            },
+            "era": "modern",
+            "statement": "Le nom Tirma désigne l'une des deux sections des Suri, l'autre étant les Chai, chez Jon Abbink. C'est la plus ancienne trace de ce nom que le projet connaît. On ne sait pas avec certitude d'où il vient.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Famine, gold and guns: the Suri of southwestern Ethiopia, 1985-91",
+                "author": "Jon Abbink",
+                "year": 1993,
+                "url": "https://hdl.handle.net/1887/9057",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 218 et p. 224, note 1",
+                "notes": "Disasters, vol. 17, n° 3, 1993, p. 218-225. Lu le 11 octobre 2026 dans la numérisation déposée par l'université de Leyde."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

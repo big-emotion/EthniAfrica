@@ -82,5 +82,44 @@
       "fieldPath": "homonyms",
       "reason": "Les graphies Wako, Waqo et Waaqo ont été recherchées comme noms et comme rapprochements avec Waaqa ; aucune source savante ne permet d'enregistrer un homonyme distinct ou de valider ce rapprochement pour cette fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Wako est un nom porté en Éthiopie. On ne sait pas avec certitude d'où il vient : les sources que nous avons pu lire n'en donnent pas le sens.",
+    "names": [
+      {
+        "nameText": "Wako",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom porté en Éthiopie ; les sources lues n'en donnent pas le sens.",
+        "periodLabel": "Écrit en 2023 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Wako figure dans le nom de Wario Wako, chercheur de l'université de Jimma, en Éthiopie, premier auteur d'un article sur l'entraide chez les Borana Oromo. C'est la seule trace écrite de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est porté.",
+            "formAsWritten": "Wako",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Indigenous Social Protection Mechanism: The Practices and Challenges of Buusaa-gonofaa in the Borana Oromo, Southern Ethiopia",
+                "author": "Wario Wako, Dejene Gemechu Chala, Nega Jibat Gemede et Debebe Ero",
+                "year": 2023,
+                "url": "https://journals.brandonu.ca/jrcd/article/download/2292/627/7475",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 84-85",
+                "notes": "Journal of Rural and Community Development, vol. 18, n° 4, 2023, p. 84-102. Relu le 12 octobre 2026 en texte intégral. Le premier auteur, Wario Wako, est rattaché à l'université de Jimma, en Éthiopie ; l'article porte sur l'entraide chez les Borana Oromo. Il ne dit rien du sens du nom Wako."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

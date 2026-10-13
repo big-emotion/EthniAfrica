@@ -11,13 +11,19 @@
     {
       "spelling": "Sanneh",
       "attestations": [
-        { "countryId": "GMB", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "GMB",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     },
     {
       "spelling": "Sané",
       "attestations": [
-        { "countryId": "GMB", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "GMB",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -81,5 +87,146 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sanneh est un nom de famille mandingue de Gambie ; Bertrand-Bocandé l'écrivait Sané en 1849, en Casamance et sur la Gambie. Il est, avec Manneh, l'un des deux noms de la lignée princière du Kaabu, selon des traditions recueillies en Gambie. On ne sait pas avec certitude ce qu'il veut dire ; les sources lues ne lui donnent pas de sens.",
+    "names": [
+      {
+        "nameText": "Sanneh",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom mandingue de Gambie, l'un des deux noms de la lignée princière du Kaabu.",
+        "periodLabel": "Écrit Sané dès 1849 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sanneh désigne une lignée mandingue que les traditions de Gambie rattachent au Kaabu. On ne sait pas avec certitude ce qu'il veut dire : les sources lues ne lui donnent pas de sens.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Oral Traditions from the Gambia",
+                "author": "Donald R. Wright",
+                "year": 1979,
+                "url": "https://archive.org/details/oraltraditionsfr0000wrig",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Athens (Ohio), Ohio University Center for International Studies, Africa Program, 1979 : entretiens enregistrés en Gambie et traduits. L'ouvrage n'est consultable qu'en prêt sur archive.org ; nous en avons lu les passages par la recherche dans le texte, sans pouvoir relever les pages. Passages lus : « The two traditional surnames of the nyancho in Kabu are Sanneh and Manneh » et, dans un entretien, « We are related. Wali, Sanneh, and Manneh are the same ». Lu le 11 octobre 2026."
+              },
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 113",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Saane : nom de clan mandinka, dont les porteurs faisaient partie au Kaabu des ɲanco, un ordre de « chevaliers » ; aucun sens donné au nom. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1979,
+              "to": 1979,
+              "label": "Publié en 1979"
+            },
+            "era": "modern",
+            "statement": "Le nom Sanneh est, avec Manneh, l'un des deux noms traditionnels des nyancho, la lignée princière du Kaabu, selon le recueil de traditions de Gambie publié par Donald R. Wright. Un des témoins y dit que les Wali, les Sanneh et les Manneh sont parents, « les mêmes ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Oral Traditions from the Gambia",
+                "author": "Donald R. Wright",
+                "year": 1979,
+                "url": "https://archive.org/details/oraltraditionsfr0000wrig",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Athens (Ohio), Ohio University Center for International Studies, Africa Program, 1979 : entretiens enregistrés en Gambie et traduits. L'ouvrage n'est consultable qu'en prêt sur archive.org ; nous en avons lu les passages par la recherche dans le texte, sans pouvoir relever les pages. Passages lus : « The two traditional surnames of the nyancho in Kabu are Sanneh and Manneh » et, dans un entretien, « We are related. Wali, Sanneh, and Manneh are the same ». Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "Décrit en 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Sanneh, que le mémoire d'E. A. Bogacheva écrit Saane, y est donné pour un nom de clan mandinka : au Kaabu, ses porteurs faisaient partie des ɲanco, un ordre de « chevaliers ».",
+            "sources": [
+              {
+                "title": "Les noms de clan du Manden (jamu) dans les sources africaines, occidentales et arabes",
+                "author": "E. A. Bogacheva",
+                "year": 2017,
+                "url": "https://hdl.handle.net/11701/10975",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 113",
+                "notes": "Mémoire de licence, Université d'État de Saint-Pétersbourg, 2017, en russe ; dirigé par A. Davydov, relu par V. Vydrin. Lu dans le fichier déposé par l'université. Un mémoire de licence n'est pas une publication relue par des pairs : il est cité pour ce qu'il rapporte. Notice Saane, lue en russe. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1849,
+              "to": 1849,
+              "label": "1849"
+            },
+            "statement": "Le nom Sanneh apparaît par écrit sous une forme proche, Sané, chez Bertrand-Bocandé, qui donne le Feridou, en haute Casamance, pour un pays des « familles Jata et Sané ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand des familles le portent.",
+            "formAsWritten": "Sané",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notes sur la Guinée portugaise ou Sénégambie méridionale, Bulletin de la Société de géographie, 3e série, tome 12",
+                "author": "Bertrand-Bocandé",
+                "year": 1849,
+                "url": "https://archive.org/details/bulletindelasoci12pari",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 61",
+                "notes": "Article paru dans le Bulletin de la Société de géographie, troisième série, Paris, Arthus-Bertrand, 1849 ; exemplaire numérisé du tome 12 sur archive.org. L'auteur, résident français à Sédhiou, en Casamance, dresse la liste des pays mandingues avec leurs familles : page 61, le Feridou, « familles Jata et Sané » ; page 63, sur la rive gauche de la Gambie et au pays de Goumous, des villages « famille Sané ». Il est cité pour les formes qu'il écrit. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sané",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1849,
+              "to": 1849,
+              "label": "1849"
+            },
+            "statement": "Le nom Sané est la forme qu'écrit Bertrand-Bocandé pour des familles mandingues de la haute Casamance, de la rive gauche de la Gambie et du pays de Goumous, dans l'actuelle Guinée-Bissau.",
+            "sources": [
+              {
+                "title": "Notes sur la Guinée portugaise ou Sénégambie méridionale, Bulletin de la Société de géographie, 3e série, tome 12",
+                "author": "Bertrand-Bocandé",
+                "year": 1849,
+                "url": "https://archive.org/details/bulletindelasoci12pari",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 61 et 63",
+                "notes": "Article paru dans le Bulletin de la Société de géographie, troisième série, Paris, Arthus-Bertrand, 1849 ; exemplaire numérisé du tome 12 sur archive.org. L'auteur, résident français à Sédhiou, en Casamance, dresse la liste des pays mandingues avec leurs familles : page 61, le Feridou, « familles Jata et Sané » ; page 63, sur la rive gauche de la Gambie et au pays de Goumous, des villages « famille Sané ». Il est cité pour les formes qu'il écrit. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

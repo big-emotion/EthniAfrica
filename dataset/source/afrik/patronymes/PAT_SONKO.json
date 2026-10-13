@@ -88,5 +88,137 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sonko est le nom d'un lignage mandingue du Niumi, un ancien royaume au bord du fleuve Gambie. Deux récits différents racontent son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Sonko",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un lignage mandingue de Gambie, noté dès 1786.",
+        "periodLabel": "Noté dès 1786 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sonko désigne l'un des trois lignages qui se partageaient le pouvoir au Niumi, avec les Jammeh et les Manneh. Son origine est racontée de deux façons ; nous les présentons séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Koli Tengela in Sonko Traditions of Origin: An Example of the Process of Change in Mandinka Oral Tradition",
+                "author": "Donald R. Wright",
+                "year": 1978,
+                "url": "https://www.webpulaaku.site/tenhella/koli-tenhella-mandinka-sonko-origins-traditions.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Donald R. Wright, History in Africa, vol. 5, 1978, p. 257-271 (DOI 10.2307/3171489). Lu le 11 octobre 2026 sur une copie non officielle publiée par webPulaaku, sans pagination. L'article décrit le Niumi comme un État mandingue du fleuve Gambie, dont les lignages dominants sont les Jammeh, les Manneh et les Sonko ; les Sonko parlent mandingue tout en se disant d'ascendance peule."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1786,
+              "to": 1786,
+              "label": "1786"
+            },
+            "era": "polity",
+            "statement": "Le nom Sonko apparaît par écrit chez le voyageur français Golberry, reçu en 1786 à la cour du royaume de Barra, l'actuel Niumi : il nomme le fondateur Amari-Sonko, le régent Ali-Sonko et l'héritier Sonko-Ari. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un document l'a écrit, pas depuis quand le nom est porté.",
+            "formAsWritten": "Amari-Sonko",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Silvester Meinrad Xavier Golberry",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Travels in Africa, performed by Silvester Meinrad Xavier Golberry, in the western parts of that vast continent, vol. II, translated from the French by W. Mudford",
+                "author": "Silvester Meinrad Xavier Golberry ; traduction de W. Mudford",
+                "year": 1808,
+                "url": "https://archive.org/details/travelsinafrica01mudfgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "vol. II, p. 114-116",
+                "notes": "Deuxième édition, Londres, Jones and Bumford, 1808 ; l'original français, Fragments d'un voyage en Afrique, paraît à Paris en 1802. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 114 : la tradition des Mandingues de la Gambie fait de « Amari-Sonko, a celebrated Manding warrior » le conquérant de Barra, Kollar et Badibou ; page 115 : l'héritier présomptif « Sonko-Ari » ; page 116 : « In 1786, Ali-Sonko had governed this kingdom for seven years ». Voyageur cité pour ce qu'il note."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1786,
+              "to": 1786,
+              "label": "Rapporté en 1786"
+            },
+            "era": "polity",
+            "statement": "Le nom Sonko viendrait d'Amari-Sonko, un guerrier mandingue descendu de l'intérieur avec une armée, qui aurait conquis Barra, Kollar et Badibou, selon la tradition que Golberry recueille en 1786.",
+            "hypothesisGroup": "origine du nom Sonko",
+            "sources": [
+              {
+                "title": "Travels in Africa, performed by Silvester Meinrad Xavier Golberry, in the western parts of that vast continent, vol. II, translated from the French by W. Mudford",
+                "author": "Silvester Meinrad Xavier Golberry ; traduction de W. Mudford",
+                "year": 1808,
+                "url": "https://archive.org/details/travelsinafrica01mudfgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "vol. II, p. 114-116",
+                "notes": "Deuxième édition, Londres, Jones and Bumford, 1808 ; l'original français, Fragments d'un voyage en Afrique, paraît à Paris en 1802. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 114 : la tradition des Mandingues de la Gambie fait de « Amari-Sonko, a celebrated Manding warrior » le conquérant de Barra, Kollar et Badibou ; page 115 : l'héritier présomptif « Sonko-Ari » ; page 116 : « In 1786, Ali-Sonko had governed this kingdom for seven years ». Voyageur cité pour ce qu'il note."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1974,
+              "to": 1975,
+              "label": "Raconté en 1974 et 1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Sonko viendrait d'un surnom, Sonkalakore, « un groupe de gens querelleurs », qu'un chef jammeh du Niumi aurait donné aux compagnons de Koli Tengela, venus du Fouta sous le nom peul de Bah, selon la tradition que les Sonko du Niumi racontent à Donald Wright.",
+            "hypothesisGroup": "origine du nom Sonko",
+            "sources": [
+              {
+                "title": "Koli Tengela in Sonko Traditions of Origin: An Example of the Process of Change in Mandinka Oral Tradition",
+                "author": "Donald R. Wright",
+                "year": 1978,
+                "url": "https://www.webpulaaku.site/tenhella/koli-tenhella-mandinka-sonko-origins-traditions.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "narrative": "Koli Tengela et l'origine du nom Sonko",
+                "carrier": "Des Sonko et d'autres habitants du Bas-Niumi, interrogés par Donald Wright",
+                "place": "Niumi, Gambie",
+                "notes": "Donald R. Wright, History in Africa, vol. 5, 1978, p. 257-271 (DOI 10.2307/3171489). Lu le 11 octobre 2026 sur une copie non officielle publiée par webPulaaku, sans pagination. Récit d'origine que récitent les Sonko du Niumi, recueilli par l'auteur auprès de cinq habitants du Bas-Niumi, dont trois Sonko (entretiens de septembre 1974 à avril 1975, note 4) : le chef jammeh dit à Koli « your name is Sonkalakore — a group of quarrelsome people », et la tradition en tire le passage du nom peul Bah au nom Sonko."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1978,
+              "to": 1978,
+              "label": "Analysé en 1978"
+            },
+            "era": "modern",
+            "statement": "Le nom Sonko n'est rattaché à Koli Tengela que depuis le XXe siècle, selon Donald Wright : avant, les Sonko du Niumi racontaient l'histoire d'Amari Sonko, que notent Golberry en 1786 et le commerçant Thomas Brown en 1871.",
+            "sources": [
+              {
+                "title": "Koli Tengela in Sonko Traditions of Origin: An Example of the Process of Change in Mandinka Oral Tradition",
+                "author": "Donald R. Wright",
+                "year": 1978,
+                "url": "https://www.webpulaaku.site/tenhella/koli-tenhella-mandinka-sonko-origins-traditions.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Donald R. Wright, History in Africa, vol. 5, 1978, p. 257-271 (DOI 10.2307/3171489). Lu le 11 octobre 2026 sur une copie non officielle publiée par webPulaaku, sans pagination. L'auteur juge que la légende de Koli Tengela est une adoption du XXe siècle, qui a servi aux Sonko à justifier leur place dans l'autorité coloniale ; il cite Golberry (1786, publié en 1802) et la lettre de Thomas Brown du 27 septembre 1871 pour la tradition d'Amari Sonko."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -87,6 +87,46 @@
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Notice bibliographique institutionnelle consultée le 2 septembre 2026 : Yoram Erder, Journal of Near Eastern Studies 49(4), 1990, p. 339-350. La notice confirme l'existence d'un débat savant sur l'origine coranique du nom, mais ne livre pas le texte intégral ni une conclusion transposable aux lignages africains."
+    },
+    {
+      "sourceKey": "uk-hm-passport-2026-sudan-names",
+      "title": "Sudan: Knowledge Base profile",
+      "url": "https://www.gov.uk/government/publications/sudan-knowledge-base-profile/sudan-knowledge-base-profile",
+      "tier": "official",
+      "source_kind": "government",
+      "notes": "Version 4.0 publiée le 16 mars 2026, mise à jour le 23 mars 2026 ; relue le 12 octobre 2026. « Names in Sudan consist of 4 names » (le prénom, le nom du père, celui du grand-père, celui de l'arrière-grand-père) ; « Surnames do not exist in Sudan; it is common practice to take the male grandparent's name in place of a surname. »"
+    },
+    {
+      "sourceKey": "verney-2019-sudan-names",
+      "title": "Tongue-tied: How interpreting errors hurt Sudanese asylum cases",
+      "url": "https://sssuk.org/sites/default/files/sudanStudies/SS59.pdf",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Sudan Studies, no 59, janvier 2019. Relu le 12 octobre 2026 dans une copie archivée du numéro (Internet Archive), le lien d'origine ne répondant plus. L'auteur écrit que, dans le système soudanais, fils et filles prennent aussi les noms de leur père et de leur grand-père paternel, ce qui déroute souvent les fonctionnaires européens."
+    },
+    {
+      "sourceKey": "quran-19-56-hamidullah",
+      "title": "Le Coran, sourate 19, verset 56 — traduction de Muhammad Hamidullah",
+      "url": "https://quran.com/fr/19:56?translations=31",
+      "tier": "referenced",
+      "source_kind": "repository",
+      "notes": "Traduction française de Muhammad Hamidullah, lue sur le site Quran.com le 12 octobre 2026. « Et mentionne Idris, dans le Livre. C'était un véridique et un Prophète. » (le texte arabe affiche ادريس)."
+    },
+    {
+      "sourceKey": "dabanga-2014-ali-idris",
+      "title": "Sudan security arrests activist Mohamed Salah again",
+      "url": "https://dabangasudan.org/en?p=185641",
+      "tier": "referenced",
+      "source_kind": "press",
+      "notes": "Article du 21 mars 2014, lu le 12 octobre 2026 : il parle du meurtre d'Ali Abakar Musa Idris, un étudiant darfouri, le 11 mars lors d'une manifestation à l'université de Khartoum. Il n'indique pas de qui Idris est le nom dans cette suite."
+    },
+    {
+      "sourceKey": "awate-hamid-idris",
+      "title": "« If You Want Us to End Our Armed struggle… »",
+      "url": "https://awate.com/?p=13709",
+      "tier": "unverified",
+      "source_kind": "press",
+      "notes": "Page du site Awate.com, sans date lue, consultée le 12 octobre 2026 : elle nomme « Hamid Idris Awate » et le présente comme le chef de la petite troupe qui lance la lutte armée érythréenne le 1er septembre 1961 au mont Adal. Elle ne dit pas de qui Idris est le nom dans cette suite."
     }
   ],
   "gaps": [
@@ -122,5 +162,177 @@
       "fieldPath": "countries",
       "reason": "Les sources propres à « Idris » n'ont pas confirmé les pays où il est porté ; les recherches par pays n'ont pas livré de registre officiel directement exploitable pour cette fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Idris est un nom personnel arabe, celui d'un prophète nommé dans le Coran. Au Soudan, où il n'existe pas de nom de famille, il entre dans la chaîne des noms où chacun reprend le nom de son père et de son grand-père ; on le lit aussi dans des noms complets au Soudan et en Érythrée. On ne sait pas avec certitude d'où il vient ; nous présentons plus bas deux explications.",
+    "names": [
+      {
+        "nameText": "Idris",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ara",
+        "namedBy": null,
+        "shortLine": "Un nom personnel arabe, celui d'un prophète du Coran ; on ne sait pas avec certitude d'où il vient.",
+        "periodLabel": "Écrit dans le Coran ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "aspect": "meaning",
+            "statement": "Le nom Idris est un nom personnel arabe : c'est celui d'un prophète que le Coran mentionne à la sourate 19, verset 56. Son origine est discutée ; nous présentons plus bas ce que disent les sources lues.",
+            "sources": [
+              {
+                "title": "Le Coran, sourate 19, verset 56 — traduction de Muhammad Hamidullah",
+                "author": "Muhammad Hamidullah (traduction)",
+                "year": null,
+                "url": "https://quran.com/fr/19:56?translations=31",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "sourate 19, verset 56",
+                "notes": "Traduction française de Muhammad Hamidullah, lue sur le site Quran.com le 12 octobre 2026. « Et mentionne Idris, dans le Livre. C'était un véridique et un Prophète. » (le texte arabe affiche ادريس)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Texte du Coran"
+            },
+            "formAsWritten": "ادريس",
+            "birth": true,
+            "statement": "Le nom Idris apparaît par écrit dans le Coran, à la sourate 19, verset 56, qui demande de le mentionner « dans le Livre » et le dit « véridique » et « Prophète », selon la traduction de Muhammad Hamidullah. C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne dit pas quand il a commencé à être porté en Afrique.",
+            "sources": [
+              {
+                "title": "Le Coran, sourate 19, verset 56 — traduction de Muhammad Hamidullah",
+                "author": "Muhammad Hamidullah (traduction)",
+                "year": null,
+                "url": "https://quran.com/fr/19:56?translations=31",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "sourate 19, verset 56",
+                "notes": "Traduction française de Muhammad Hamidullah, lue sur le site Quran.com le 12 octobre 2026. « Et mentionne Idris, dans le Livre. C'était un véridique et un Prophète. » (le texte arabe affiche ادريس)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "hypothesisGroup": "origine du nom Idris",
+            "statement": "Le nom Idris viendrait de la racine arabe d-r-s, « étudier, apprendre », et voudrait dire « interprète » ou « enseignant », selon le site Behind the Name, qui ne l'avance qu'avec réserve (« peut-être »).",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Idris — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/idris-1",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Entrée communautaire relue le 12 octobre 2026 : « Possibly means 'interpreter, teacher' in Arabic », rapprochée de la racine arabe darasa, « étudier » ; références citées : Hans Wehr, A Dictionary of Modern Written Arabic, 1979, p. 321, et Salahuddin Ahmed, A Dictionary of Muslim Names, 1999, p. 77 (non relus). Formes liées : Idriss, Driss, Idrissa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1990,
+              "to": 1990,
+              "label": "Proposé en 1990"
+            },
+            "hypothesisGroup": "origine du nom Idris",
+            "statement": "Le nom Idris viendrait de l'influence de la littérature de Qumrân sur l'islam naissant, d'après le titre de l'article que Yoram Erder lui consacre en 1990. Nous n'avons lu que la notice de cet article, pas son texte.",
+            "sources": [
+              {
+                "title": "The Origin of the Name Idrīs in the Qurʾān: A Study of the Influence of Qumran Literature on Early Islam",
+                "author": "Yoram Erder",
+                "year": 1990,
+                "url": "https://cris.tau.ac.il/en/publications/the-origin-of-the-name-idr%C4%ABs-in-the-qur%CA%BE%C4%81n-a-study-of-the-influen/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 339-350",
+                "notes": "Journal of Near Eastern Studies 49(4), 1990. Seule la notice de l'université de Tel-Aviv a été lue le 12 octobre 2026 (titre, auteur, revue, pages, mots-clés dont onomastique) ; ni l'article ni son résumé n'ont été lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "aspect": "usage",
+            "statement": "Le nom Idris entre au Soudan dans le système commun à tous les noms personnels, où chacun reprend les noms de son père et de son grand-père. Le gouvernement britannique note qu'il n'existe pas de nom de famille au Soudan et qu'on prend souvent le nom du grand-père à la place.",
+            "sources": [
+              {
+                "title": "Sudan: Knowledge Base profile",
+                "author": "Gouvernement du Royaume-Uni (GOV.UK)",
+                "year": 2026,
+                "url": "https://www.gov.uk/government/publications/sudan-knowledge-base-profile/sudan-knowledge-base-profile",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "section « Sudan: names »",
+                "notes": "Version 4.0 publiée le 16 mars 2026, mise à jour le 23 mars 2026 ; relue le 12 octobre 2026. « Names in Sudan consist of 4 names » (le prénom, le nom du père, celui du grand-père, celui de l'arrière-grand-père) ; « Surnames do not exist in Sudan; it is common practice to take the male grandparent's name in place of a surname. »"
+              },
+              {
+                "title": "Tongue-tied: How interpreting errors hurt Sudanese asylum cases",
+                "author": "Peter Verney",
+                "year": 2019,
+                "url": "https://sssuk.org/sites/default/files/sudanStudies/SS59.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 68",
+                "notes": "Sudan Studies, no 59, janvier 2019. Relu le 12 octobre 2026 dans une copie archivée du numéro (Internet Archive), le lien d'origine ne répondant plus. L'auteur écrit que, dans le système soudanais, fils et filles prennent aussi les noms de leur père et de leur grand-père paternel, ce qui déroute souvent les fonctionnaires européens."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Idris est le dernier élément du nom d'Ali Abakar Musa Idris, un étudiant darfouri que Radio Dabanga nomme dans un article de mars 2014. L'article ne dit pas de qui Idris est le nom dans cette suite.",
+            "sources": [
+              {
+                "title": "Sudan security arrests activist Mohamed Salah again",
+                "author": "Radio Dabanga",
+                "year": 2014,
+                "url": "https://dabangasudan.org/en?p=185641",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article du 21 mars 2014, lu le 12 octobre 2026 : il parle du meurtre d'Ali Abakar Musa Idris, un étudiant darfouri, le 11 mars lors d'une manifestation à l'université de Khartoum. Il n'indique pas de qui Idris est le nom dans cette suite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Cité sur le site Awate.com"
+            },
+            "statement": "Le nom Idris se lit en deuxième position dans le nom de Hamid Idris Awate, que le site Awate.com présente comme le chef de la petite troupe qui lance la lutte armée érythréenne le 1er septembre 1961. La page ne dit pas de qui Idris est le nom dans cette suite.",
+            "sources": [
+              {
+                "title": "« If You Want Us to End Our Armed struggle… »",
+                "author": "Awate.com",
+                "year": null,
+                "url": "https://awate.com/?p=13709",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Page du site Awate.com, sans date lue, consultée le 12 octobre 2026 : elle nomme « Hamid Idris Awate » et le présente comme le chef de la petite troupe qui lance la lutte armée érythréenne le 1er septembre 1961 au mont Adal. Elle ne dit pas de qui Idris est le nom dans cette suite."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

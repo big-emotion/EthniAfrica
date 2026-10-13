@@ -94,5 +94,96 @@
       "fieldPath": "homonyms",
       "reason": "Le mot français « sorgho », la graphie Yirga de l'en-tête provisoire et l'entrée YIRGA distincte ont été comparés ; la documentation ne suffit pas à établir une lignée homonyme précise."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sorgho est un nom de famille mossi du Burkina Faso, transmis par les pères, porté autour de Tenkodogo. Son sens est discuté : la seule explication trouvée vient d'un répertoire encore provisoire ; nous la présentons plus bas. Le projet n'a pas encore trouvé de trace écrite ancienne de ce nom.",
+    "names": [
+      {
+        "nameText": "Sorgho",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille mossi, transmis par les pères, au Burkina Faso.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sorgho est un nom de famille mossi. Chez les Mossi, ce nom est celui d'un groupe de descendants d'un même ancêtre par les hommes, le buudu, dont les membres ne se marient pas entre eux, selon Michel Izard. Son sens est discuté ; nous le présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La Lance et les guenilles",
+                "author": "Michel Izard",
+                "year": 1973,
+                "url": "https://www.persee.fr/doc/hom_0439-4216_1973_num_13_3_367368?pageId=T1_141",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 141",
+                "notes": "L'Homme, vol. 13, n° 3, 1973, p. 139-149. Lu sur Persée le 11 octobre 2026. Page 141 : le buudu mossi est un groupe de descendance patrilinéaire et une unité exogamique, défini notamment « par le nom collectif (sondre) que portent tous ses membres »."
+              },
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 189",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire ». Lu le 11 octobre 2026 sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Notice SORGHO/YIRGA : « Les SORGHO sont les Mosse. Ce patronyme signifie « guêpe ». Ils sont de la Famille royale de Tenkodogo. Ils viennent de Gambaga, on les trouve dans la province du Boulgou (Tenkodogo et Bané). »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Proposé en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Sorgho voudrait dire « guêpe », selon le projet de répertoire des patronymes du Burkina Faso.",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 189",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire ». Lu le 11 octobre 2026 sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Notice SORGHO/YIRGA : « Les SORGHO sont les Mosse. Ce patronyme signifie « guêpe ». Ils sont de la Famille royale de Tenkodogo. Ils viennent de Gambaga, on les trouve dans la province du Boulgou (Tenkodogo et Bané). »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Décrit en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Sorgho est porté, selon le même projet de répertoire, par des familles de la lignée royale de Tenkodogo, installées dans le Boulgou, à Tenkodogo et à Bané. Le répertoire les dit venues de Gambaga, au Ghana, sans citer de source.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
+                "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
+                "tier": "unverified",
+                "source_kind": "government",
+                "page": "p. 189",
+                "notes": "Document de travail de la Direction du patrimoine culturel du Burkina Faso, daté de mai 2025 et marqué « version provisoire ». Lu le 11 octobre 2026 sur une copie non officielle déposée sur PDFCoffee ; aucune publication officielle n'a été trouvée. Notice SORGHO/YIRGA : « Les SORGHO sont les Mosse. Ce patronyme signifie « guêpe ». Ils sont de la Famille royale de Tenkodogo. Ils viennent de Gambaga, on les trouve dans la province du Boulgou (Tenkodogo et Bané). »"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

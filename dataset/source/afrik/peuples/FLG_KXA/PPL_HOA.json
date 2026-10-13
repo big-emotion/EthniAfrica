@@ -129,5 +129,221 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom ǂHoan désigne un peuple du sud-est du Botswana, au bord du désert du Kalahari, et la langue qu'il parle. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. D'autres noms existent : ǂHua, une autre orthographe, et ǂ'Amkoe, un nom choisi par les linguistes pour la langue. Nous présentons plus bas ce que les sources disent de ces noms.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "ǂHoan",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple et de sa langue chez les linguistes ; son origine n'est pas documentée.",
+        "usedIn": ["eng"],
+        "periodLabel": "Écrit ǂHṑã dès 1973 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom ǂHoan désigne une langue khoisan du sud-est du Botswana, parlée au sud de la réserve de Khutse, autour de Tswaane, Dutlwe, Tsia, Salajwe et Khudumelapye, selon le linguiste Chris Collins. Il la dit si proche du sasi, parlé autour de Lethajwe et d'Artesia, que leurs locuteurs se comprennent. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "ǂHoan Syntax",
+                "author": "Chris Collins",
+                "year": null,
+                "url": "http://web.archive.org/web/20060907122453/http://ling.cornell.edu/khoisan/hoan/hoansyntax.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page de l'université Cornell, non datée, lue le 12 octobre 2026 dans la copie du 7 septembre 2006 conservée par la Wayback Machine. Elle situe la langue et dit le sasi et le ǂHoan mutuellement compréhensibles ; elle ne dit pas comment les locuteurs se nomment."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "2011"
+            },
+            "era": "modern",
+            "statement": "Le nom ǂHoan désigne, chez les linguistes Linda Gerlach et Falko Berthold, une langue menacée du district de Kweneng, au Botswana, au bord du désert du Kalahari. Ils rappellent qu'elle n'a été rattachée qu'en 2010 à une famille de langues, appelée kx'a.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The sociolinguistic situation of ǂHoan, a moribund 'Khoisan' language of Botswana",
+                "author": "Linda Gerlach et Falko Berthold",
+                "year": 2011,
+                "url": "https://journals.ub.uni-koeln.de/index.php/AAeo/article/view/3555",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1-2",
+                "notes": "Afrikanistik online, 2011, aujourd'hui Afrikanistik-Aegyptologie-Online. Lu le 12 octobre 2026 dans le PDF de la revue. Résumé et § 1.1 : la langue ǂHoan, « moribund », au bord du Kalahari ; Heine et Honken la rattachent en 2010 à la famille kx'a. L'article ne dit pas comment les locuteurs se nomment."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "2021"
+            },
+            "era": "modern",
+            "statement": "Le nom ǂHoan sert aussi à désigner le peuple dans les études génétiques. Les généticiens Brigitte Pakendorf et Mark Stoneking expliquent que c'était l'ancien nom de la langue, gardé parce que la première étude sur ce groupe l'employait.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The genomic prehistory of peoples speaking Khoisan languages",
+                "author": "Brigitte Pakendorf et Mark Stoneking",
+                "year": 2021,
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8117426/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Human Molecular Genetics, vol. 30, n° R1, 2021, p. R49-R55 ; article mis en ligne le 19 octobre 2020. Lu le 12 octobre 2026 dans la version HTML de PubMed Central, sans pagination. Légende de la figure 1 : « ǂ'Amkoe is the actual name of the language spoken by the ǂHoan », les études génétiques gardant l'ancien nom de la langue pour ce groupe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1973,
+              "to": 1973,
+              "label": "1973"
+            },
+            "era": "modern",
+            "statement": "Le nom ǂHoan apparaît par écrit sous une forme proche, ǂHṑã, dans le titre d'un article du linguiste Jeffrey S. Gruber sur les mots de parenté, paru en 1973 dans la revue Linguistic Inquiry, selon la bibliographie de Linda Gerlach et Falko Berthold. Nous n'avons pas lu l'article. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "formAsWritten": "ǂHṑã",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The sociolinguistic situation of ǂHoan, a moribund 'Khoisan' language of Botswana",
+                "author": "Linda Gerlach et Falko Berthold",
+                "year": 2011,
+                "url": "https://journals.ub.uni-koeln.de/index.php/AAeo/article/view/3555",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 15",
+                "notes": "Afrikanistik online, 2011, aujourd'hui Afrikanistik-Aegyptologie-Online. Lu le 12 octobre 2026 dans le PDF de la revue. Bibliographie, p. 15 : « Gruber, Jeffrey S. 1973 'ǂHṑã kinship terms.' Linguistic Inquiry 4,4: 427-449 ». L'article de Gruber lui-même n'a pas été lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "ǂHua",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre orthographe de ǂHoan, celle de la norme ISO pour leur langue.",
+        "usedIn": ["eng"],
+        "periodLabel": "En usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "2019"
+            },
+            "era": "modern",
+            "statement": "Le nom ǂHua est celui que la norme ISO 639-3 donne à leur langue, sous le code huc. La demande de 2019 qui lui ajoute le nom ǂ'Amkhoe note que les auteurs écrivent ce nom tantôt avec un u, tantôt avec un o.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Change Request Number 2019-055 (huc)",
+                "author": "Kirk Miller",
+                "year": 2019,
+                "url": "https://iso639-3.sil.org/sites/iso639-3/files/change_requests/2019/2019-055.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 1-3",
+                "notes": "Demande de modification de la norme ISO 639-3 pour le code huc, adoptée le 23 janvier 2020, lue le 12 octobre 2026 sur le site de l'autorité d'enregistrement (SIL International). Page 2 : le nom ǂ'Amkoe aurait été proposé par Köhler, selon Linda Gerlach ; Chris Collins écrit que le terme a été inventé par les linguistes, qu'il veut dire « personne » dans les parlers concernés et qu'aucun groupe ne dit parler le ǂ'amkoe. La demande cite aussi la grammaire de Collins et Gruber (2013, p. 9), que nous n'avons pas lue."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "ǂ'Amkoe",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des linguistes",
+        "shortLine": "Un nom savant, qui veut dire « personne », choisi par les linguistes pour la langue.",
+        "usedIn": ["eng"],
+        "periodLabel": "En usage chez les linguistes aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "2019"
+            },
+            "era": "modern",
+            "statement": "Le nom ǂ'Amkoe veut dire « personne » dans les parlers qu'il regroupe. Ce sont les linguistes qui l'ont choisi : aucun locuteur ne dit parler le ǂ'amkoe, selon le linguiste Chris Collins, cité dans une demande de modification de la norme ISO 639-3. On ne sait pas avec certitude depuis quand ce nom est employé.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Change Request Number 2019-055 (huc)",
+                "author": "Kirk Miller",
+                "year": 2019,
+                "url": "https://iso639-3.sil.org/sites/iso639-3/files/change_requests/2019/2019-055.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 2",
+                "notes": "Demande de modification de la norme ISO 639-3 pour le code huc, adoptée le 23 janvier 2020, lue le 12 octobre 2026 sur le site de l'autorité d'enregistrement (SIL International). Page 2 : le nom ǂ'Amkoe aurait été proposé par Köhler, selon Linda Gerlach ; Chris Collins écrit que le terme a été inventé par les linguistes, qu'il veut dire « personne » dans les parlers concernés et qu'aucun groupe ne dit parler le ǂ'amkoe. La demande cite aussi la grammaire de Collins et Gruber (2013, p. 9), que nous n'avons pas lue."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "2016"
+            },
+            "era": "modern",
+            "statement": "Le nom ǂ'Amkoe désigne une langue du sud du Kalahari, au Botswana, dont le nǃaqriaxe, le ǂHoan et le sasi sont trois variétés, selon la présentation du livre de la linguiste Linda Gerlach.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Nǃaqriaxe – The Phonology of an endangered Language of Botswana",
+                "author": "Linda Gerlach",
+                "year": 2016,
+                "url": "https://www.harrassowitz-verlag.de/Naqriaxe_%E2%80%93_The_Phonology_of_an_endangered_Language_of_Botswana/title_988.ahtml",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Wiesbaden, Harrassowitz, 2016, collection Asien- und Afrikastudien der Humboldt-Universität zu Berlin, vol. 47. Seule la présentation de l'éditeur a été lue, le 12 octobre 2026 : « Nǃaqriaxe is a variety of a language called ǂ'Amkoe », dont les deux autres variétés sont le ǂHoan et le sasi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "2021"
+            },
+            "era": "modern",
+            "statement": "Le nom ǂ'Amkoe est le vrai nom de la langue que parlent les ǂHoan, selon les généticiens Brigitte Pakendorf et Mark Stoneking.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The genomic prehistory of peoples speaking Khoisan languages",
+                "author": "Brigitte Pakendorf et Mark Stoneking",
+                "year": 2021,
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8117426/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Human Molecular Genetics, vol. 30, n° R1, 2021, p. R49-R55 ; article mis en ligne le 19 octobre 2020. Lu le 12 octobre 2026 dans la version HTML de PubMed Central, sans pagination. Légende de la figure 1 : « ǂ'Amkoe is the actual name of the language spoken by the ǂHoan », les études génétiques gardant l'ancien nom de la langue pour ce groupe."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

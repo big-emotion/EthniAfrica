@@ -129,5 +129,163 @@
         "source_kind": "official_statistics"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Sisala désigne un peuple de cultivateurs du nord-ouest du Ghana et du sud-ouest du Burkina Faso, autour de Tumu et de Léo. On ne sait pas comment ce peuple se nomme lui-même : les sources que nous avons lues ne le disent pas. On écrit aussi Sissala, Sisaala ou Sisaali, et en 1912 Louis Tauxier le range parmi les Gourounsi. On ne sait pas avec certitude d'où vient le nom Sisala ; nous présentons plus bas ce que disent les sources.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Sisala",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'un des noms que les sources donnent à ce peuple et à sa langue, écrit Sissalas dès 1912.",
+        "periodLabel": "Écrit depuis 1912 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sisala est l'un des noms que le catalogue de langues Glottolog relève pour les langues de ce peuple, au Ghana comme au Burkina Faso, à côté de Sisaala, Sissala et Issala.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Tumulung Sisaala (tumu1242)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/tumu1242",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue, avec ses autres noms. Autres noms relevés : Sisala, Sisala Tumu, Sissala, Issala, Hissala, Sisai. Lu le 12 octobre 2026."
+              },
+              {
+                "title": "Glottolog 5.3 — Western Sisaala (west2465)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/west2465",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue, avec ses autres noms. Autres noms relevés : Sisaala, Sisala, Sisai, Issala, Hissala. Lu le 12 octobre 2026."
+              },
+              {
+                "title": "Glottolog 5.3 — Sissala of Burkina Faso (siss1242)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/siss1242",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue, avec ses autres noms. Autres noms relevés : Sisaali, Sisala, Sissala. Lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sisala apparaît sous une forme proche, « Sissalas », dans le livre de Louis Tauxier sur les pays mossi et gourounsi, qui consacre un chapitre aux Sissalas : il les situe au sud des Nounoumas, vers le 11e degré de latitude nord, en petit nombre dans la résidence de Léo et en plus grand nombre dans le nord de la Côte-de-l'Or. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Le Noir du Soudan : pays mossi et gourounsi",
+                "author": "Louis Tauxier",
+                "year": 1912,
+                "url": "https://archive.org/details/le-noir-du-soudan-pays-mossi-et-gourounsi-louis-tauxier-1912.",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Paris, Larose. Lu dans une copie non officielle mise en ligne sur Internet Archive, lu le 12 octobre 2026 ; le texte numérisé ne porte pas les numéros de page. Passages lus : le chapitre « Les Sissalas » et la présentation des populations du cercle de Léo."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sisaala",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie que les catalogues de langues retiennent pour les langues du Ghana.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sisaala est celui que le catalogue de langues Glottolog retient pour deux langues du Ghana, le sisaala occidental et le tumulung sisaala. Pour la langue du Burkina Faso, il donne Sissala et relève aussi la forme Sisaali.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Western Sisaala (west2465)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/west2465",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue, avec ses autres noms. Autres noms relevés : Sisaala, Sisala, Sisai, Issala, Hissala. Lu le 12 octobre 2026."
+              },
+              {
+                "title": "Glottolog 5.3 — Tumulung Sisaala (tumu1242)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/tumu1242",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue, avec ses autres noms. Autres noms relevés : Sisala, Sisala Tumu, Sissala, Issala, Hissala, Sisai. Lu le 12 octobre 2026."
+              },
+              {
+                "title": "Glottolog 5.3 — Sissala of Burkina Faso (siss1242)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/siss1242",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue, avec ses autres noms. Autres noms relevés : Sisaali, Sisala, Sissala. Lu le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gourounsi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom général que Tauxier donne à plusieurs peuples du Burkina Faso, dont les Sissalas.",
+        "periodLabel": "Écrit depuis 1912",
+        "accounts": [
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gourounsi comprend chez Louis Tauxier les Sissalas, qu'il place à l'extrême sud de cet ensemble, entre les autres Gourounsi et les Dagari.",
+            "sources": [
+              {
+                "title": "Le Noir du Soudan : pays mossi et gourounsi",
+                "author": "Louis Tauxier",
+                "year": 1912,
+                "url": "https://archive.org/details/le-noir-du-soudan-pays-mossi-et-gourounsi-louis-tauxier-1912.",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Paris, Larose. Lu dans une copie non officielle mise en ligne sur Internet Archive, lu le 12 octobre 2026 ; le texte numérisé ne porte pas les numéros de page. Passages lus : le chapitre « Les Sissalas » et la présentation des populations du cercle de Léo."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

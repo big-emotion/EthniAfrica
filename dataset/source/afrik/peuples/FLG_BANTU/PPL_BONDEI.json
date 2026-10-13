@@ -108,5 +108,109 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bondei désigne un peuple des basses terres de la région de Tanga, en Tanzanie, entre les monts Usambara et la mer, et sa langue. On ne sait pas comment ce peuple se nomme lui-même. On ne sait pas non plus avec certitude d'où vient le nom Bondei ; nous présentons plus bas ses traces.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Bondei",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "bou",
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple des basses terres de la région de Tanga, en Tanzanie, et de sa langue.",
+        "periodLabel": "Écrit depuis 1860 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bondei est le nom de référence de la langue de ce peuple dans la norme internationale ISO 639-3, sous le code bou.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, Bondei [bou]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/bou",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Bondei désigne un peuple installé depuis longtemps dans les basses terres du district de Muheza, dans la région de Tanga, selon l'historien Mikidady Mhando, qui a recueilli en mars 2022 des témoignages oraux auprès de membres de ce peuple.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The History of Utani and Burial Traditions of the Bondei People",
+                "author": "Mhando Mashaka Mikidady",
+                "year": 2023,
+                "url": "https://dergipark.org.tr/tr/download/article-file/3486509",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 12",
+                "notes": "International Journal of Social and Humanities Sciences, vol. 7, n° 2, 2023, p. 11-22. Lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Bondei désigne aussi, chez le missionnaire Johann Ludwig Krapf, un district que le père du roi Kmeri a conquis, et jusqu'où les deux premiers rois de l'Usambara étendaient leur royaume, selon ce que lui dit son guide Minjie-Minjie.",
+            "sources": [
+              {
+                "title": "Travels, Researches, and Missionary Labours during an Eighteen Years' Residence in Eastern Africa",
+                "author": "Johann Ludwig Krapf",
+                "year": 1860,
+                "url": "https://archive.org/details/travelsresearch00ravegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 382",
+                "notes": "Londres, Trübner, 1860. Chapitre IX, « Second journey to Usambara ». Lu sur la numérisation d'Internet Archive le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Bondei apparaît chez le missionnaire Johann Ludwig Krapf, dans le récit publié en 1860 de son second voyage en Usambara. Il y désigne un district entre la côte et la vallée de la Kerenge, dont le kishinsi est le dialecte principal. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Bondei",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels, Researches, and Missionary Labours during an Eighteen Years' Residence in Eastern Africa",
+                "author": "Johann Ludwig Krapf",
+                "year": 1860,
+                "url": "https://archive.org/details/travelsresearch00ravegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 378",
+                "notes": "Londres, Trübner, 1860. Chapitre IX, « Second journey to Usambara ». Lu sur la numérisation d'Internet Archive le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

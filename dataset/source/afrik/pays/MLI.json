@@ -428,6 +428,64 @@
         "historicalRole": "Confédérations nomades du Sahara, contrôle des routes transsahariennes."
       },
       {
+        "name": "Empire peul du Macina (Diina)",
+        "period": "1818 - 1862",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1818,
+          "endYear": 1862,
+          "precision": "approximate",
+          "datingNote": "Le début est le djihad de Cheikou Amadou au Macina, en 1818, selon Albert Adu Boahen (HGA VI). La fin, 1862, est la prise de Hamdallaye par les troupes d'El Hadj Oumar Tall, datée par la fiche du peuple peul du Macina d'après David Robinson ; elle n'est pas lue dans l'Histoire générale de l'Afrique."
+        },
+        "dominantPeoples": ["Peuls (Fulbe) du Macina"],
+        "politicalCenters": ["Hamdallaye (capitale)"],
+        "historicalRole": "État musulman fondé par Cheikou Amadou après le djihad de 1818, dans le delta intérieur du Niger. Sa capitale est Hamdallaye. Il disparaît quand les troupes d'El Hadj Oumar Tall prennent cette ville."
+      },
+      {
+        "name": "Empire toucouleur (Ségou)",
+        "period": "1852 - 1890",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1852,
+          "endYear": 1890,
+          "precision": "approximate",
+          "datingNote": "Le début est le djihad d'El Hadj Oumar dans la région des Bambara, en 1852, selon Albert Adu Boahen (HGA VI). La fin est la prise de Ségou par les troupes françaises, en 1890 ; Ahmadou, chef de l'empire, résiste jusqu'à sa mort à Sokoto, en 1898, selon Godfrey N. Uzoigwe (HGA VII)."
+        },
+        "dominantPeoples": ["Toucouleurs (Halpulaar)"],
+        "politicalCenters": ["Ségou"],
+        "historicalRole": "État né du djihad lancé par El Hadj Oumar Tall en 1852 dans la région des Bambara, avec Ségou pour centre. Les victoires françaises de Koundian (1889), Ségou (1890) et Youri (1891) le font disparaître ; son chef Ahmadou continue la résistance jusqu'à sa mort, en 1898."
+      },
+      {
+        "name": "Royaume du Kénédougou",
+        "period": "XVIIIe siècle - 1898",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1701,
+          "endYear": 1898,
+          "precision": "approximate",
+          "datingNote": "Selon Kwame Arhin et Joseph Ki-Zerbo (HGA VI), le Kénédougou s'organise au XVIIIe siècle autour de Sikasso, et la puissance des Traoré se fonde entre 1850 et 1860. La fiche du peuple sénoufo place la fondation au XVIIe siècle. La fin, 1898, est la conquête française donnée par cette fiche ; elle n'est pas lue dans la source citée."
+        },
+        "dominantPeoples": ["Sénoufo", "Dioula (Jula)"],
+        "politicalCenters": ["Sikasso (capitale)"],
+        "historicalRole": "Royaume des Traoré, Sénoufo islamisés, organisé autour de Sikasso et issu de l'influence de Kong. Entre 1850 et 1860, Laoula fonde la puissance des Traoré sur les petites chefferies sénoufo ; à partir de 1875, le roi Tiéba la confirme et repousse le siège de Samori Touré derrière la forteresse de Sikasso, selon Kwame Arhin et Joseph Ki-Zerbo (HGA VI)."
+      },
+      {
+        "name": "Empire de Samori Touré (empire manden)",
+        "period": "1881 - 1898",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1881,
+          "endYear": 1898,
+          "precision": "approximate",
+          "datingNote": "En 1881, Samori Touré a déjà unifié un empire, selon M'Baye Gueye et Albert Adu Boahen (HGA VII) ; ses conquêtes commencent dans les années 1870, selon Albert Adu Boahen (HGA VI). La fin est sa capture, en 1898, selon Godfrey N. Uzoigwe (HGA VII)."
+        },
+        "dominantPeoples": ["Dioula (Jula)", "Malinké"],
+        "politicalCenters": [
+          "Savanes du sud, entre le nord de l'actuelle Sierra Leone et la rivière Sassandra"
+        ],
+        "historicalRole": "Empire bâti par Samori Touré dans les savanes du sud, entre le nord de l'actuelle Sierra Leone et la rivière Sassandra, en Côte d'Ivoire. L'Histoire générale de l'Afrique l'appelle « empire manden » ; il est aussi désigné par le nom du Wassoulou, la région d'origine de Samori. En 1882, lors de la première rencontre avec les Français, il est encore en pleine expansion. Samori résiste jusqu'à sa capture, en 1898."
+      },
+      {
         "name": "Soudan français",
         "period": "1892 - 1960",
         "entryType": "colonial",
@@ -711,6 +769,34 @@
         "tier": "referenced",
         "source_kind": "academic",
         "notes": "Article de recherche, DOI 10.4000/medievalista.7706, consulté le 23 septembre 2026. Analyse les usages médiévaux du nom Mali dans les récits arabes et l’Atlas catalan de 1375, en les distinguant de la République actuelle. Les attestations du nom n’en établissent pas le sens premier."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VI, ch. 3 : Tendances et processus nouveaux dans l'Afrique du XIXe siècle",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par J. F. A. Ajayi, chapitre d'Albert Adu Boahen (1996), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 67. L'auteur cite les djihād de Cheikou Amadou au Macina en 1818 (le texte imprime « Marina ») et d'al-Hadjdj ˓Umar « dans la région des Bambara en 1852 »."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VII, ch. 2 : Partage européen et conquête de l'Afrique : aperçu général",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par A. A. Boahen, chapitre de Godfrey N. Uzoigwe (1987), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 56. Samori Touré est « capturé (1898) » ; les victoires de Koudian (1889), Ségou (1890) et Youri (1891) « firent disparaître l'empire tukuloor de Ségou », dont le chef Ahmadu résiste jusqu'à sa mort, à Sokoto, en 1898."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VII, ch. 6 : Initiatives et résistances africaines en Afrique occidentale de 1880 à 1914",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par A. A. Boahen, chapitre de M'Baye Gueye et Albert Adu Boahen (1987), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 147. « En 1881, il avait déjà fait » de la partie méridionale des savanes soudanaises, entre le nord de l'actuelle Sierra Leone et la rivière Sassandra, « un empire unifié sous son autorité incontestée »."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VI, ch. 25 : États et peuples de la boucle du Niger et de la Volta",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par J. F. A. Ajayi, chapitre de Kwame Arhin et Joseph Ki-Zerbo (1996), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 724. Le Kénédougou est « organisé au XVIIIe siècle autour de Sikasso » ; « c'est entre 1850 et 1860 que Laoula fonde la puissance des Traoré sur les petites chefferies senufo »."
       }
     ],
     "demographics": {

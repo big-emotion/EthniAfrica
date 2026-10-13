@@ -82,5 +82,222 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Sithole », « Zulu », « clan name », « clan praise », « surname », « etymology » et « transmission », ainsi que la consultation directe de « Sithole Surname Origin, Meaning & Last Name History » n'ont établi aucune règle propre à Sithole permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sithole est un isibongo, un nom de clan des peuples nguni, porté chez les Zoulous et les Ndébélé. Alfred T. Bryant l'écrivait Sitôle en 1929. Les sources ne s'accordent pas sur l'origine du clan, et une seule propose un sens au nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Sithole",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan nguni, écrit Sitôle en 1929 ; il pourrait venir du mot qui veut dire « génisse ».",
+        "periodLabel": "Écrit dès 1929 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sithole est un isibongo, c'est-à-dire un nom de clan, que l'on appelle aussi nom de louange. Les sources ne s'accordent pas sur l'origine de ce clan, et une seule propose un sens au nom ; nous les présentons séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Sithole Surname Meaning — The Oxford Dictionary of Family Names in Britain and Ireland",
+                "author": "Patrick Hanks, Richard Coates et Peter McClure",
+                "year": 2016,
+                "url": "https://www.ancestry.com/last-name-meaning/sithole?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "The Oxford Dictionary of Family Names in Britain and Ireland, Oxford University Press, 2016, notice reproduite par Ancestry et lu le 11 octobre 2026. La notice fait de Sithole un isibongo, un nom totémique ou nom de louange, tiré du ndébélé isithole, « génisse », ou peut-être du mot apparenté d'une langue proche comme le zoulou."
+              },
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 251",
+                "notes": "Londres, Longmans, Green, 1929, lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 251, en marge « Sitôle » : le pays des « aba-kwa-Sitôle », près du mont Hlazakazi ; « Sitôle origins are a puzzling problem » ; l'auteur soupçonne une parenté avec les Tembu, que les Sitôle de son temps nient, et rapporte que certains font d'eux une branche des emaNgwaneni, ce que d'autres nient ; il nomme leur chef Jobe, fils de Mapita, et juge peu sûre la liste de ses ancêtres. L'accent circonflexe de Sitôle est celui de l'imprimé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Proposée en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Sithole viendrait du mot ndébélé isithole, « génisse », ou peut-être du même mot dans une langue proche comme le zoulou, selon The Oxford Dictionary of Family Names in Britain and Ireland.",
+            "hypothesisGroup": "origine du nom Sithole",
+            "sources": [
+              {
+                "title": "Sithole Surname Meaning — The Oxford Dictionary of Family Names in Britain and Ireland",
+                "author": "Patrick Hanks, Richard Coates et Peter McClure",
+                "year": 2016,
+                "url": "https://www.ancestry.com/last-name-meaning/sithole?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "The Oxford Dictionary of Family Names in Britain and Ireland, Oxford University Press, 2016, notice reproduite par Ancestry et lu le 11 octobre 2026. La notice fait de Sithole un isibongo, un nom totémique ou nom de louange, tiré du ndébélé isithole, « génisse », ou peut-être du mot apparenté d'une langue proche comme le zoulou."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "Défini en 1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sithole s'écrit comme le mot zoulou isithole, que le dictionnaire d'Alfred T. Bryant écrit isi-Tole et traduit par « génisse ». Le dictionnaire ne parle pas du nom de clan.",
+            "sources": [
+              {
+                "title": "A Zulu-English Dictionary",
+                "author": "Alfred T. Bryant",
+                "year": 1905,
+                "url": "https://archive.org/details/zuluenglishdicti00brya",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 640",
+                "notes": "Pinetown, Mariannhill Mission Press, 1905, lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur est un missionnaire catholique du Natal. Page 640 : « isi-Tole (Thole), n. Heifer, already fit for the bull, or pregnant with her first calf ». Le dictionnaire ne cite pas le nom de clan à cette entrée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "1929"
+            },
+            "era": "modern",
+            "statement": "Le nom Sithole apparaît par écrit sous la forme Sitôle chez Alfred T. Bryant, qui situe le pays des aba-kwa-Sitôle près du mont Hlazakazi, au bord de la Mzinyati. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; le clan qui le porte est plus ancien que ce livre.",
+            "formAsWritten": "Sitôle",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Alfred T. Bryant",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 251",
+                "notes": "Londres, Longmans, Green, 1929, lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 251, en marge « Sitôle » : le pays des « aba-kwa-Sitôle », près du mont Hlazakazi ; « Sitôle origins are a puzzling problem » ; l'auteur soupçonne une parenté avec les Tembu, que les Sitôle de son temps nient, et rapporte que certains font d'eux une branche des emaNgwaneni, ce que d'autres nient ; il nomme leur chef Jobe, fils de Mapita, et juge peu sûre la liste de ses ancêtres. L'accent circonflexe de Sitôle est celui de l'imprimé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Temps de Shaka, selon Alfred T. Bryant"
+            },
+            "era": "polity",
+            "statement": "Le nom Sithole est alors celui du clan de Jobe, fils de Mapita, que Bryant présente comme le chef des Sitôle au temps de Shaka. Il ajoute que la liste des ancêtres de Jobe est peu sûre.",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 251",
+                "notes": "Londres, Longmans, Green, 1929, lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 251, en marge « Sitôle » : le pays des « aba-kwa-Sitôle », près du mont Hlazakazi ; « Sitôle origins are a puzzling problem » ; l'auteur soupçonne une parenté avec les Tembu, que les Sitôle de son temps nient, et rapporte que certains font d'eux une branche des emaNgwaneni, ce que d'autres nient ; il nomme leur chef Jobe, fils de Mapita, et juge peu sûre la liste de ses ancêtres. L'accent circonflexe de Sitôle est celui de l'imprimé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Proposée en 1929"
+            },
+            "era": "modern",
+            "statement": "Le nom Sithole serait celui d'un clan parent des Tembu, ou leur très ancien voisin, et comme eux d'origine ntungwa-nguni, selon Alfred T. Bryant. Les Sitôle de son temps niaient cette parenté.",
+            "hypothesisGroup": "origine du clan Sithole",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 251",
+                "notes": "Londres, Longmans, Green, 1929, lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 251, en marge « Sitôle » : le pays des « aba-kwa-Sitôle », près du mont Hlazakazi ; « Sitôle origins are a puzzling problem » ; l'auteur soupçonne une parenté avec les Tembu, que les Sitôle de son temps nient, et rapporte que certains font d'eux une branche des emaNgwaneni, ce que d'autres nient ; il nomme leur chef Jobe, fils de Mapita, et juge peu sûre la liste de ses ancêtres. L'accent circonflexe de Sitôle est celui de l'imprimé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Rapportée en 1929"
+            },
+            "era": "modern",
+            "statement": "Le nom Sithole serait celui d'une branche du clan emaNgwaneni, selon des récits qu'Alfred T. Bryant rapporte. Il précise que d'autres récits le nient.",
+            "hypothesisGroup": "origine du clan Sithole",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 251",
+                "notes": "Londres, Longmans, Green, 1929, lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 251, en marge « Sitôle » : le pays des « aba-kwa-Sitôle », près du mont Hlazakazi ; « Sitôle origins are a puzzling problem » ; l'auteur soupçonne une parenté avec les Tembu, que les Sitôle de son temps nient, et rapporte que certains font d'eux une branche des emaNgwaneni, ce que d'autres nient ; il nomme leur chef Jobe, fils de Mapita, et juge peu sûre la liste de ses ancêtres. L'accent circonflexe de Sitôle est celui de l'imprimé."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sitôle",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'écriture du nom Sithole chez Alfred T. Bryant, en 1929.",
+        "periodLabel": "Écrit en 1929",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "1929"
+            },
+            "era": "modern",
+            "statement": "Le nom Sitôle est l'écriture de Sithole dans l'histoire des clans nguni d'Alfred T. Bryant, publiée en 1929.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 251",
+                "notes": "Londres, Longmans, Green, 1929, lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 251, en marge « Sitôle » : le pays des « aba-kwa-Sitôle », près du mont Hlazakazi ; « Sitôle origins are a puzzling problem » ; l'auteur soupçonne une parenté avec les Tembu, que les Sitôle de son temps nient, et rapporte que certains font d'eux une branche des emaNgwaneni, ce que d'autres nient ; il nomme leur chef Jobe, fils de Mapita, et juge peu sûre la liste de ses ancêtres. L'accent circonflexe de Sitôle est celui de l'imprimé."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
