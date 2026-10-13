@@ -8,6 +8,7 @@ import {
   writeFileSync,
   readFileSync,
   rmSync,
+  appendFileSync,
 } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
@@ -22,6 +23,7 @@ import {
 
 import { createPackage } from "./package.mjs";
 import { installPackageFixture } from "./package.fixture.mjs";
+import { installVideoPackageFixture } from "./package-video.fixture.mjs";
 import { archivePiece } from "./history.mjs";
 
 function fixture(t) {
@@ -233,6 +235,41 @@ test("three approvals stop the workflow at the actual reviewed versions", (t) =>
   const state = loadPiece(f.root, f.id);
   assert.equal(state.stage, "ready");
   assert.deepEqual(state.publications, []);
+});
+
+// @req REQ-186
+test("approval 3 verifies and fingerprints a video package like a card package", (t) => {
+  const f = fixture(t);
+  f.review(1, [f.file("brief.md")]);
+  f.approve(1);
+  f.design();
+  f.review(2, [f.file("proof.png")]);
+  f.approve(2);
+  const video = installVideoPackageFixture(
+    f.root,
+    `.local/productions/${f.id}`
+  );
+  const packageDir = `.local/productions/${f.id}/delivery-video`;
+  createPackage(f.root, video.configPath, packageDir, [
+    "instagram",
+    "facebook",
+  ]);
+  f.event({
+    type: "review",
+    gate: 3,
+    files: [`${packageDir}/post.md`],
+    packageDir,
+    summary: "Synthetic video delivery",
+  });
+  const files = loadPiece(f.root, f.id).reviews[3].files;
+  for (const file of [
+    `${packageDir}/video.mp4`,
+    `${video.final}/video.mp4`,
+    video.sequence,
+  ])
+    assert.ok(files[file], file);
+  appendFileSync(join(f.root, packageDir, "video.mp4"), "x");
+  assert.throws(() => f.approve(3), /changed/i);
 });
 
 // @req REQ-186

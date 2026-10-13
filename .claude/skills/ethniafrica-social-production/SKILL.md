@@ -178,6 +178,8 @@ assemble a new delivery revision. Use `packageDir` at review 3. The helper check
 all media, copy, rights records and dependencies and rejects missing networks or
 an unsupported link route. Present `post.md` and the exact numbered images;
 never infer publication authorization from successful generation or approval 3.
+A video piece uses the same package with `kind: "video"`. Present `post.md`
+and the exact `video.mp4`.
 
 ## Retention
 

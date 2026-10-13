@@ -17,6 +17,7 @@ import { tmpdir } from "node:os";
 import { createPiece, applyEvent, loadPiece, savePiece } from "./workflow.mjs";
 import { createPackage } from "./package.mjs";
 import { installPackageFixture } from "./package.fixture.mjs";
+import { installVideoPackageFixture } from "./package-video.fixture.mjs";
 import {
   archivePiece,
   inspectHistory,
@@ -24,13 +25,16 @@ import {
   cleanupPiece,
 } from "./history.mjs";
 
-function fixture(t, { deliver = true } = {}) {
+function fixture(t, { deliver = true, video = false } = {}) {
   const root = mkdtempSync(join(tmpdir(), "social-history-"));
   t.after(() => rmSync(root, { recursive: true, force: true }));
   const id = "synthetic-history";
   const piece = `.local/productions/${id}`;
   createPiece(root, id, "Synthetic history", ["instagram", "facebook"]);
-  const f = installPackageFixture(root, piece);
+  const f = (video ? installVideoPackageFixture : installPackageFixture)(
+    root,
+    piece
+  );
   const event = (e) =>
     applyEvent(root, id, {
       expectedRevision: loadPiece(root, id).revision,
@@ -497,4 +501,34 @@ test("a rebased correction advances only with an explicit reconciliation that ke
     "added later",
   ]);
   assert.equal(saved.corpusProgress[0].reconciliation, reconciliation);
+});
+
+// @req REQ-186
+test("a published video keeps the exact final video and its on-screen text in history", (t) => {
+  const f = fixture(t, { video: true });
+  const final = readFileSync(join(f.root, f.final, "video.mp4"));
+  f.publish("instagram");
+  f.publish("facebook");
+  const h = f.archive();
+  const snapshot = h.publications[0].snapshot;
+  assert.deepEqual(
+    snapshot.media.map((m) => m.file),
+    ["video.mp4"]
+  );
+  assert.match(snapshot.media[0].retained, /\.mp4$/);
+  assert.ok(snapshot.screen.includes("Sahara vient de l'arabe"));
+  assert.equal(snapshot.copy.accessibility.autoCaptions, "available");
+  cleanupPiece(f.root, f.id);
+  assert.deepEqual(
+    readFileSync(
+      join(f.root, `.local/publications/${f.id}`, snapshot.media[0].retained)
+    ),
+    final
+  );
+  const text = readFileSync(
+    join(f.root, `.local/publications/${f.id}/history.md`),
+    "utf8"
+  );
+  assert.match(text, /### On-screen text/);
+  assert.doesNotThrow(() => inspectHistory(f.root, f.id));
 });

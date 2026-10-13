@@ -1,6 +1,8 @@
 # Publication package
 
 Roadmap step 6 assembles approved final renders and agent-written adaptations.
+A card carousel and a vertical video share this package; see
+[Video pieces](#video-pieces) for what differs.
 It uses the accepted card renderer, the [research dossier](research-and-corpus.md)
 and the existing strict plain-language checker. It never posts, schedules or
 changes an account. The operator still gives approval 3 for the exact delivery.
@@ -93,10 +95,115 @@ Each revision contains:
 - `editorial-check.txt`: the strict checker output, including review warnings.
 - `package.json`: the integrity manifest used for resumption and final approval.
 
+A video revision holds `video.mp4` instead of the PNG cards: a byte-identical
+copy of the checked export. It can also hold `cover.png`. Its `post.md` adds
+the duration, the accessibility routes and the complete on-screen text, and its
+`public-copy.json` lists that text under `screen`.
+
 `post.md` is the operator-facing document. The other text files support checks;
 they are not additional documents for the operator to complete. Captions and
 comments are reproduced exactly; edit the input and generate a new revision
 instead of hand-editing the generated post.
+
+## Video pieces
+
+A vertical video from `social/video` goes through approval 3 the same way: same
+command, same networks, link rules, research dossier, strict language check,
+staging and integrity manifest. Only the media checks and the account route
+differ. The operator decided this on 13 October 2026.
+
+```json
+{
+  "schema": 1,
+  "kind": "video",
+  "sequence": "PIECE/video/sequence.json",
+  "video": "PIECE/video/final-v1",
+  "design": "PIECE/video/design-version.json",
+  "cover": { "frame": 210 },
+  "research": "PIECE/research.json",
+  "networks": [
+    {
+      "network": "instagram",
+      "caption": "…",
+      "firstComment": null,
+      "link": { "placement": "none" },
+      "capability": {
+        "account": "…",
+        "checkedAt": "2026-10-13",
+        "observation": "…",
+        "evidence": "PIECE/accounts/instagram.png",
+        "format": "video",
+        "maxDurationSeconds": 90,
+        "aspect": "9:16",
+        "captionMax": 2200,
+        "altRoute": "unavailable",
+        "autoCaptions": "available",
+        "altInstruction": "…",
+        "linkPlacements": ["none"]
+      }
+    }
+  ]
+}
+```
+
+| Field      | Meaning                                                                                                                                                                                              |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `kind`     | `"video"`. Left out, the package is a card carousel as above.                                                                                                                                        |
+| `sequence` | The sequence file the video was encoded from. Its areas, outline and voice resolve from its own folder, as `encodeVideo` resolved them.                                                              |
+| `video`    | The folder `encodeVideo` wrote: `video.mp4` and `manifest.json`.                                                                                                                                     |
+| `design`   | The accepted video design record, `{ name, version, status: "accepted" }`. The sequence's `design` must read `name version`, for example `EthniAfrica Vidéo carte 0.4.0-proposition`.                |
+| `cover`    | Optional. `{ frame }` delivers `cover.png`, that frame of the video, for networks whose upload asks for a cover.                                                                                     |
+| Capability | `format: "video"`, positive `maxDurationSeconds`, `aspect` such as `"9:16"`, `captionMax`, `commentMax` when a first comment exists, `altRoute`, `altInstruction`, `autoCaptions`, `linkPlacements`. |
+
+There is no `voice` field: the sequence already names its audio and words
+file, and a second declaration could disagree with the one the video was
+encoded from. The helper fingerprints both files through the sequence.
+
+**Why these refusals.** A demo sequence, a demo manifest or an excerpt
+(`range`) is a proof, never a delivery. The sequence loader already refuses a
+mockup area or a synthetic outline outside a demo, so the package loads the
+sequence instead of re-implementing that rule. The manifest binds the export
+to its inputs: the helper requires the manifest's video hash to match
+`video.mp4`, its sequence hash to match the loaded sequence, its audio hash to
+match the voice, and its frame count to match the sequence. FFprobe then
+confirms the file itself: size, frame count, frame rate and an audio track
+exactly when the sequence is voiced. `productionReady` stays false in every
+video manifest. It records mechanical export only, so the package does not
+read it; the three approvals still decide.
+
+`encodeVideo` hashes the loaded sequence, whose voice paths are absolute. A
+piece moved to another folder or checkout after encoding needs a new encode
+before packaging. This is deliberate: the package proves that this exact
+sequence produced this exact file.
+
+**Accessibility.** Subtitles are burned into the video, so every reader sees
+them without a platform feature. `public-copy.json` holds the whole on-screen
+text in screen order: title, each chapter's line, map names, legend, the
+Carte, Période and Source lines, every subtitle chunk, intro, outro and the
+ending sentence. The strict check reads that file. The sequence file itself is
+not checked, because it also holds coordinates, sources and file names. The
+fixed brand slogan of the closing block is design, not piece copy. For each
+network, record whether the platform offers a description field
+(`altRoute`) and automatic captions (`autoCaptions`). Write the operator's
+instruction in `altInstruction`, for example not to add automatic captions over
+the burned-in ones. With `native` or `description`, the adaptation supplies
+`alternativeText: [{ "file": "video.mp4", "text": "…" }]`; with `unavailable`,
+none is required.
+
+**Links.** The rules do not change with the format. Each placement must
+appear in the account's verified `linkPlacements`. Instagram, Facebook and
+TikTok never rely on a clickable caption link, and only Facebook takes a
+first-comment link. A YouTube description link is accepted only when its
+capability lists `caption`. Record that placement only when the evidence shows
+the description link is clickable for that video format. A Short may differ
+from a long video, so the account route decides, not the network name.
+
+**What remains manual.** The helper does not judge the rights to the satellite
+imagery or to a voice. The on-screen Source line names the imagery, and the
+dossier keeps its reuse record. Watch the delivered `video.mp4` with sound at
+phone size before approval 3. A cover is extracted from the video again at
+each verification, so a retouched cover cannot pass; choose another frame
+instead.
 
 ## Changes and recovery
 
