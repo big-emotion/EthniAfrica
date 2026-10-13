@@ -74,5 +74,64 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web combinant « Katana », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de la liste officielle des candidats du TVET CDACC et des recherches ciblées dans les dépôts universitaires kenyans sur les noms mijikenda, n'ont pas établi de lignée homonyme d'origine distincte ni d'autre homonyme documentable."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Katana est porté au Kenya par des Mijikenda. On ne sait pas avec certitude ce qu'il veut dire ni d'où il vient : les sources lues n'en disent rien et le projet n'en connaît aucune trace ancienne. Un nom hongrois s'écrit de la même façon, sans lien connu avec lui.",
+    "names": [
+      {
+        "nameText": "Katana",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom porté par des Mijikenda au Kenya ; son sens et sa première trace restent inconnus.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Katana n'a pas de sens connu dans les sources lues. On ne sait pas avec certitude ce qu'il veut dire. Le Dictionary of American Family Names donne à Katana un seul sens, hongrois, « soldat » (katona) ; rien dans les sources lues ne le relie au nom mijikenda.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Katana Name Meaning and Katana Family History",
+                "author": "FamilySearch, d'après Patrick Hanks (Dictionary of American Family Names)",
+                "year": 2006,
+                "url": "https://www.familysearch.org/en/surname?surname=katana",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "entrée « Katana »",
+                "notes": "Entrée FamilySearch attribuée au Dictionary of American Family Names de Patrick Hanks (2003, 2006). Elle traite d'un nom hongrois : « occupational name from katona ‘soldier’ ». Aucun Kenya dans l'entrée. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Relevé en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Katana figure, en dernière position du nom complet, dans une liste officielle de candidats à des postes publics au Kenya, publiée en 2024. Elle range ce porteur parmi les Mijikenda et donne le comté de Kilifi comme lieu de naissance. Un porteur ne montre pas à lui seul comment le nom se transmet.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "List of Applicants for Advertised Positions in TVET CDACC",
+                "author": "TVET Curriculum Development, Assessment and Certification Council (Kenya)",
+                "year": 2024,
+                "url": "https://tvetcdacc.go.ke/wp-content/uploads/2024/07/LIST-OF-APPLICANTS-FOR-ADVERTISED-POSITIONS-IN-TVET-CDACC-1.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "n° 173 de la liste",
+                "notes": "Liste officielle de candidats à des postes d'un organisme public kényan, publiée en juillet 2024. Une ligne porte le nom Katana en dernière position du nom complet, avec le comté de naissance Kilifi et l'ethnicité Mijikenda. La liste ne donne ni sens ni origine. Le candidat n'est pas nommé ici. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

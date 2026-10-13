@@ -84,5 +84,93 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches sur la graphie exacte « Ojok » dans les index onomastiques et l’étude de Charles Amone sur la nomination des enfants acholi et ses tableaux nom par nom n’ont pas établi une seconde origine distincte disposant de sa propre provenance."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ojok est un nom de personne acholi, du nord de l'Ouganda. On le donne à l'enfant né avec une marque inhabituelle sur le corps, que les Acholi attribuent à jok, une puissance surnaturelle ; Ajok est sa forme féminine. Ce n'est pas un nom de famille reçu des parents. Les Langi le connaissent aussi.",
+    "names": [
+      {
+        "nameText": "Ojok",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ach",
+        "namedBy": null,
+        "shortLine": "Un nom donné à l'enfant né avec une marque inhabituelle, attribuée à jok, puissance surnaturelle.",
+        "periodLabel": "Écrit dès 1923 ; donné aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Décrit en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Ojok est donné chez les Acholi à l'enfant né avec une marque ou un trait inhabituel sur une partie du corps. Selon Charles Amone, les Acholi attribuent ces naissances hors norme à jok, le dieu, et appellent ces noms des « noms de jok ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Identity, Memory and Gender in Child Naming Among the Acholi People of Northern Uganda",
+                "author": "Charles Amone",
+                "year": 2014,
+                "url": "https://ijournals.in/wp-content/uploads/2017/07/IJSRC-2505.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 20",
+                "notes": "International Journal of Social Relevance & Concern 2(5), 2014, p. 17-24. Tableau des noms de jok : Ojok/Ajok, « Born with some unusual mark or feature on some body part » ; texte précédent : toute naissance hors norme est attribuée à jok. Historien de l'université de Gulu. Texte du PDF lu en entier. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2026,
+              "to": 2026,
+              "label": "Décrit en 2026"
+            },
+            "era": "modern",
+            "statement": "Le nom Ojok est donné chez les Langi à l'enfant né avec des malformations visibles, que l'on explique par une influence surnaturelle, selon Jacob Godfrey Agea et Marus Eton. Okul est un nom du même genre.",
+            "sources": [
+              {
+                "title": "Naming as Cultural Epistemology: Knowledge, Belief, and Identity in Lango Personal Naming",
+                "author": "Jacob Godfrey Agea et Marus Eton",
+                "year": 2026,
+                "url": "https://doi.org/10.37284/eajtcr.9.1.5010",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 257",
+                "notes": "East African Journal of Traditions, Culture and Religion 9(1), 2026, p. 251-273. Tableau des noms liés à la naissance et aux traits physiques : « Ojok/Ajok : a child born with visible deformities… supernatural influence ». Étude de 131 noms recueillis auprès de 78 détenteurs de savoir langi. PDF de la revue lu en entier. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ojok apparaît par écrit chez l'administrateur Jack Herbert Driberg, dans son livre sur les Langi : c'est le nom de l'enfant né avec des dents, Ajok pour une fille. Driberg le tire de jok, « dieu », qui marque une influence surnaturelle sur la naissance. C'est la plus ancienne trace de ce nom que le projet connaisse ; elle vient des Langi, voisins des Acholi, et le nom est plus ancien qu'elle.",
+            "formAsWritten": "Ojok",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Jack Herbert Driberg",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Lango: A Nilotic Tribe of Uganda",
+                "author": "J. H. Driberg",
+                "year": 1923,
+                "url": "https://archive.org/details/in.ernet.dli.2015.218025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 152",
+                "notes": "Londres, T. Fisher Unwin, 1923. Page 152 : « A child born with teeth is named Ojok (fem. Ajok) », note 3 : « From Jok (god), indicating a supernatural influence governing its birth ». Administrateur colonial britannique, cité pour ce qu'il écrit des Langi. Numérisation de la Digital Library of India hébergée par Internet Archive ; page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
