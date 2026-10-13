@@ -84,5 +84,72 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web et bibliographique combinant « Nakato », « Ganda », « l’Ouganda », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la source dédiée « Conflict and Forced Migration in the Emergence and Shaping of Runyaruguru » et la page Forebears propre au nom, consultées directement, n’a pas établi de lignée homonyme d’origine distincte documentable ; la diffusion dans plusieurs pays ne suffit pas à créer un homonyme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Nakato est un nom de personne ganda. Chez les Baganda, il revient à la fille qui naît en second dans une paire de jumeaux. Dans un livre de 1911, c'est aussi le nom de la première épouse du dieu Budo, donné à une veuve du roi envoyée à ce dieu. On ne sait pas avec certitude ce qu'il veut dire.",
+    "names": [
+      {
+        "nameText": "Nakato",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lug",
+        "namedBy": null,
+        "shortLine": "Un nom ganda donné à la fille née en second dans une paire de jumeaux ; son sens n'est pas connu.",
+        "periodLabel": "Écrit dès 1911 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Mémoire de 2019, entretien de 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Nakato est donné chez les Baganda à la fille qui naît en second dans une paire de jumeaux. Quand les deux enfants sont des filles, l'aînée s'appelle Babirye et la cadette Nakato. Quand le garçon naît le premier, il s'appelle Waswa et sa sœur Nakato. Cette règle est rapportée par une personne interrogée, Rose Nairuba, dans le mémoire de Wadiko Iren.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Contextual Study of 1 Samuel 1:1–20 in Relation to Naming Practices of the Lugbara",
+                "author": "Wadiko Iren",
+                "year": 2019,
+                "url": "https://kyuspace.kyu.ac.ug/server/api/core/bitstreams/a01f6712-047f-4e8b-a12b-0eb0c7d23cc6/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 115-116",
+                "notes": "Mémoire de master, Kyambogo University, juillet 2019, lu dans son texte intégral. Pages 115 et 116 : l'autrice rapporte la règle des noms de jumeaux chez les Baganda d'après un entretien du 16 février 2018 avec Rose Nairuba (note 261). Nous connaissons ce témoignage par le mémoire seulement, sans transcription de l'entretien. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nakato apparaît par écrit chez le missionnaire John Roscoe : quand le nouveau roi entre dans son enclos, il envoie au dieu Budo une veuve du roi précédent comme épouse, et cette femme reçoit le titre de Nakato. Roscoe écrit que c'est le nom de la première épouse du dieu, qui aurait fait jaillir un puits sacré sur la colline de Budo en mettant un enfant au monde. C'est la plus ancienne trace de ce nom que le projet connaît. Les Baganda existaient déjà avant lui.",
+            "formAsWritten": "Nakato",
+            "birth": true,
+            "actors": [
+              {
+                "name": "John Roscoe",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 204",
+                "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé de l'université de Toronto sur archive.org. Chapitre VII, « The King », p. 204 : « this woman was given the title Nakato, the name of Budo's first wife, who, when she gave birth to a child, caused the sacred well Nansove to spring forth on Budo hill ». Ethnographie de l'époque coloniale, citée pour ce que les Ganda lui ont raconté, non pour ses classements. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
