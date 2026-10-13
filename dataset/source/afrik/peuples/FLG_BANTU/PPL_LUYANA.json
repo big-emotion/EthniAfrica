@@ -102,5 +102,136 @@
         "source_kind": "intergovernmental"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Luyana désigne une langue de la province de l'Ouest de la Zambie et, selon les auteurs, soit le groupe qui régnait sur la plaine de Bulozi avant les Kololo, soit les peuples issus de ce groupe. On ne sait pas comment ce peuple se nomme lui-même. Le nom est proche de Luyi, un nom plus ancien traité avec l'histoire du peuple lozi. Les sources ne s'accordent pas sur le sens du nom ; nous les présentons plus bas.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Luyana",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une langue de Zambie que ses locuteurs appellent Esiluyana ; son sens a deux lectures chez les historiens.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Luyana désigne une langue bantoue du sud-ouest de la Zambie, que ses locuteurs appellent Esiluyana, selon Omniglot. Un alphabet latin a été mis au point en 2011 et la langue s'enseigne dans les écoles primaires et secondaires de Zambie. Omniglot cite aussi les noms Louyi, Lui, Luyi, Si-Luyana et Rouyi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Luyana language and alphabet – Omniglot",
+                "author": "Simon Ager (Omniglot)",
+                "year": null,
+                "url": "https://www.omniglot.com/writing/luyana.htm",
+                "tier": "unverified",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1979,
+              "to": 1979,
+              "label": "Proposée en 1979"
+            },
+            "era": "modern",
+            "statement": "Le nom Luyana viendrait de Luyi, le nom du groupe qui régnait à Bulozi, auquel s'ajoute le suffixe -ana, qui donne une idée de petitesse, selon George Nyambe Sumbwa. Il donne pour exemple Kaunduana, « petit Kaundu », et Kateana, « petit Kate ». Pour lui, Luyana désigne les peuples issus des Luyi, comme les Kwangwa, les Kwandi et ceux de Kalabo.",
+            "hypothesisGroup": "sens du nom Luyana",
+            "sources": [
+              {
+                "title": "A History of the Luyana of Kalabo to 1906",
+                "author": "George Nyambe Sumbwa",
+                "year": 1979,
+                "url": "https://dspace.unza.zm/handle/123456789/1963",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 175-176",
+                "notes": "Mémoire de master en histoire, Université de Zambie, Lusaka, 1979. Lu dans le PDF numérisé du dépôt de l'université le 13 octobre 2026 ; le numéro de page imprimé a été lu sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1979,
+              "to": 1979,
+              "label": "Rapporté en 1979"
+            },
+            "era": "modern",
+            "statement": "Le nom Luyana serait celui du groupe qui régnait à Bulozi avant la venue des Kololo, employé comme Luyi, selon les histoires du Bulozi que George Nyambe Sumbwa résume. Il propose pour sa part de séparer les deux mots.",
+            "hypothesisGroup": "sens du nom Luyana",
+            "sources": [
+              {
+                "title": "A History of the Luyana of Kalabo to 1906",
+                "author": "George Nyambe Sumbwa",
+                "year": 1979,
+                "url": "https://dspace.unza.zm/handle/123456789/1963",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 175-176",
+                "notes": "Mémoire de master en histoire, Université de Zambie, Lusaka, 1979. Lu dans le PDF numérisé du dépôt de l'université le 13 octobre 2026 ; le numéro de page imprimé a été lu sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1973,
+              "to": 1973,
+              "label": "1973"
+            },
+            "era": "modern",
+            "statement": "Le nom Luyana figure dans le titre du livre de l'historienne zambienne Mutumba Mainga, Bulozi under the Luyana Kings, publié en 1973. L'éditeur écrit qu'il suit les origines des Luyana et du peuple lozi, la naissance de la royauté luyana et l'invasion des Kololo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bulozi under the Luyana Kings: Political Evolution and State Formation in Pre-Colonial Zambia",
+                "author": "Mutumba Mainga",
+                "year": 1973,
+                "url": "https://muse.jhu.edu/book/16801",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Longman, Londres, 1973 ; réédité par Gadsden Publishers en 2010. Nous n'avons lu que la présentation de l'éditeur sur Project MUSE, lue le 13 octobre 2026, qui donne la date de 1973 ; nous n'avons pas lu le livre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1903,
+              "to": 1903,
+              "label": "Publié en 1903"
+            },
+            "era": "colonial",
+            "statement": "Le nom Luyana apparaît chez le missionnaire Adolphe Jalla comme un lieu : le major Goold Adams comptait aller à pied au Mashi, « et au Luyana », où il devait retrouver son cheval, puis son wagon. Le texte ne dit pas si ce lieu porte le nom du peuple. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Luyana",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Adolphe Jalla",
+                "role": "missionnaire, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Pionniers parmi les ma-Rotsé",
+                "author": "Adolphe Jalla",
+                "year": 1903,
+                "url": "https://archive.org/details/pionniersparmile00jall",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 200",
+                "notes": "Paris, 1903. L'auteur est un missionnaire de la Mission de Paris installé à Léalui. Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; le numéro de page imprimé a été lu sur l'image."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

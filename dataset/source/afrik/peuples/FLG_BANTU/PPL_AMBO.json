@@ -102,5 +102,43 @@
         "source_kind": "encyclopedia"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ambo désigne un peuple de l'est de la Zambie, qui vit de part et d'autre de la Luangwa. Il porte le même nom que les Ovambo de Namibie et d'Angola, et il ne faut pas les confondre. On ne sait pas comment ce peuple se nomme lui-même, ni avec certitude d'où vient le nom ; nous présentons plus bas sa plus ancienne trace.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Ambo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du peuple de la Luangwa, en Zambie ; sa plus ancienne trace connue est un titre de livre de 1964.",
+        "periodLabel": "Écrit dès 1964",
+        "accounts": [
+          {
+            "period": {
+              "from": 1964,
+              "to": 1964,
+              "label": "1964"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ambo apparaît dans le titre de l'étude de l'ethnologue Bronislaw Stefaniszyn, Social and Ritual Life of the Ambo of Northern Rhodesia, publiée en 1964. Selon l'éditeur, elle décrit les clans et les lignages, l'organisation du village et de la chefferie, la naissance, le mariage, la mort et les croyances religieuses. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Social and Ritual Life of the Ambo of Northern Rhodesia",
+                "author": "Bronislaw Stefaniszyn",
+                "year": 1964,
+                "url": "https://www.routledge.com/Social-and-Ritual-Life-of-the-Ambo-of-Northern-Rhodesia/Stefaniszyn-Apthorpe/p/book/9781138598522",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Publié en 1964 par l'Institut africain international (Oxford University Press), réédité par Routledge en 2018. Nous n'avons lu que la présentation de l'éditeur et la notice d'Internet Archive, lues le 13 octobre 2026, qui donnent le titre et la date de 1964 ; nous n'avons pas lu le livre."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

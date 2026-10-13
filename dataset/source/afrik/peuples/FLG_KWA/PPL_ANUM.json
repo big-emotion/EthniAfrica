@@ -102,5 +102,94 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Anum désigne une communauté guang et sa ville, sur la rive est du lac Volta, dans l'est du Ghana, qui se nomme elle-même Anum. On ne sait pas avec certitude d'où vient le nom ; nous présentons plus bas ses plus anciennes traces.",
+    "names": [
+      {
+        "nameText": "Anum",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La ville et le peuple guang de la Volta ; Reindorf écrit le nom dès 1895, en parlant d'un chef Anum Asamoa.",
+        "periodLabel": "Écrit dès 1895",
+        "accounts": [
+          {
+            "period": {
+              "from": 1724,
+              "to": 1728,
+              "label": "1724-1728"
+            },
+            "era": "polity",
+            "statement": "Le nom Anum est celui du peuple dont le premier représentant, Kwasi Anyane, arrive en 1724 sur le site d'Osase, aujourd'hui Anum, envoyé par Kolihue, qui tenait le siège d'Anum à Nyanawase. Le reste du groupe le rejoint en 1728. Ce récit est celui que le vieux Kwao Tawia, de Boso, a donné en 1984 à l'historien Kwame Ampene.",
+            "sources": [
+              {
+                "title": "The Story of Boso",
+                "author": "Kwame Ampene",
+                "year": 2013,
+                "url": "https://justiceghana.com/index.php/en/2012-01-24-13-47-49/6644-the-story-of-boso",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "Histoire de Boso et des peuples guan du moyen bassin de la Volta",
+                "carrier": "Kwao Tawia, abusuapanyin du siège paramount de Boso, âgé de 92 ans",
+                "place": "Boso, district d'Asuogyaman, Ghana",
+                "notes": "Récit recueilli en 1984 par Kwame Ampene, fondateur de la Guan Historical Society, et publié en 2013 sur le site JusticeGhana. Lu sur le site le 13 octobre 2026. C'est un récit de Boso sur l'arrivée des Anum : nous n'avons pas de récit donné par un porteur d'Anum."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1864,
+              "to": 1881,
+              "label": "1864-1881"
+            },
+            "statement": "Le nom Anum désigne chez Reindorf un lieu de la Volta, à soixante milles à l'intérieur, au milieu d'une région de coton, où une station est établie. Elle est quittée en 1864, devant l'invasion des Asante, puis réoccupée en 1881.",
+            "formAsWritten": "Anum",
+            "sources": [
+              {
+                "title": "The History of the Gold Coast and Asante",
+                "author": "Carl Christian Reindorf",
+                "year": 1895,
+                "url": "https://archive.org/details/historyofgoldcoa00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 228",
+                "notes": "Bâle, imprimé pour l'auteur, 1895, lu dans l'exemplaire numérisé sur archive.org ; numéro de page lu sur l'image. Reindorf, pasteur africain de la Mission de Bâle à Christiansborg, s'appuie sur les traditions orales qu'il a recueillies."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "Publié en 1895"
+            },
+            "era": "colonial",
+            "statement": "Le nom Anum apparaît par écrit chez le pasteur Carl Christian Reindorf, dans son histoire de 1895. À la veille de l'accession d'Osei Tutu au trône d'Asante, il parle d'Anum Asamoa, « chef des gens d'Anum », qui vivaient alors à Nsawam, et de 700 hommes armés d'Anum qui l'escortent jusqu'à Kumase. C'est la plus ancienne trace écrite de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Anum",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Carl Christian Reindorf",
+                "role": "pasteur et historien, auteur"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The History of the Gold Coast and Asante",
+                "author": "Carl Christian Reindorf",
+                "year": 1895,
+                "url": "https://archive.org/details/historyofgoldcoa00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 50",
+                "notes": "Bâle, imprimé pour l'auteur, 1895, lu dans l'exemplaire numérisé sur archive.org ; numéro de page lu sur l'image. Reindorf, pasteur africain de la Mission de Bâle à Christiansborg, s'appuie sur les traditions orales qu'il a recueillies."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
