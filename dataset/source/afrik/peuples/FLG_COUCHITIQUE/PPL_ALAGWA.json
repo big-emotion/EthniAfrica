@@ -103,5 +103,198 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Alagwa désigne un peuple de langue couchitique du district de Kondoa, en Tanzanie centrale, et sa langue ; il se nomme lui-même Alagwa. D'autres noms existent : Wasi, ou Waasi, que lui donnent ses voisins, et Alawa, la forme iraqw. On ne connaît pas la plus ancienne trace du nom Alagwa. Les sources ne s'accordent pas toujours sur l'origine de ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Alagwa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "wbj",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple de la région de Kondoa ; Alagwa'ísa est le nom de sa langue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Alagwa désigne, chez les linguistes Hannah Gibson et Maarten Mous, un peuple de langue couchitique de la région de Kondoa, en Tanzanie centrale, voisin des Rangi, qui parlent une langue bantoue. Dans leur propre langue, les Alagwa appellent leur langue Alagwa'ísa, avec la fin -ísa qui sert pour les noms de langues.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Exploring contact in Rangi- and Alagwa-speaking communities",
+                "author": "Hannah Gibson et Maarten Mous",
+                "year": 2024,
+                "url": "https://lheaf.org/wp-content/uploads/2024/04/gibsonmous_exploring-contact-in-rangi-and-alagwa_lheaf.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Chapitre à paraître dans Social foundations of Language Contact (Language Science Press) ; lu dans la prépublication déposée sur le site de LHEAF le 13 octobre 2026, dont la pagination est celle du PDF. Section 2.2 : les auteurs citent aussi Mous (2016), la seule grammaire publiée de la langue. Page lue sur l'image."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wasi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "les voisins des Alagwa, dont les Rangi",
+        "shortLine": "Le nom que les voisins donnent aux Alagwa ; en rangi, il voudrait dire « habitants d'origine ».",
+        "periodLabel": "Écrit Wassi dès 1898 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Wasi, aussi écrit Waasi, est celui sous lequel les Alagwa sont le mieux connus en Tanzanie, selon Hannah Gibson et Maarten Mous. Les Rangi les appellent Vasi, et leur langue est souvent appelée Chasi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Exploring contact in Rangi- and Alagwa-speaking communities",
+                "author": "Hannah Gibson et Maarten Mous",
+                "year": 2024,
+                "url": "https://lheaf.org/wp-content/uploads/2024/04/gibsonmous_exploring-contact-in-rangi-and-alagwa_lheaf.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Chapitre à paraître dans Social foundations of Language Contact (Language Science Press) ; lu dans la prépublication déposée sur le site de LHEAF le 13 octobre 2026, dont la pagination est celle du PDF. Section 2.2. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Proposée en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Wasi viendrait de Vasi, un mot bantu qui veut dire « habitant d'origine » en rangi, selon Hannah Gibson et Maarten Mous, qui citent Derek Nurse (1979). Les Rangi voient ainsi dans les Alagwa les premiers habitants de la région, et dans leur propre peuple des nouveaux venus.",
+            "hypothesisGroup": "origine-du-nom-wasi",
+            "sources": [
+              {
+                "title": "Exploring contact in Rangi- and Alagwa-speaking communities",
+                "author": "Hannah Gibson et Maarten Mous",
+                "year": 2024,
+                "url": "https://lheaf.org/wp-content/uploads/2024/04/gibsonmous_exploring-contact-in-rangi-and-alagwa_lheaf.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Chapitre à paraître dans Social foundations of Language Contact (Language Science Press) ; lu dans la prépublication déposée sur le site de LHEAF le 13 octobre 2026, dont la pagination est celle du PDF. Les auteurs renvoient à Nurse (1979, p. 390-392), que le projet n'a pas lu. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "Rapportée en 1900"
+            },
+            "statement": "Le nom Waassi rappellerait celui de Muassi, présenté comme l'ancêtre des Waassi dans une tradition des Warangi que rapporte le capitaine Kannenberg. Selon cette tradition, Muassi est le frère de Mvangi, l'ancêtre des Warangi.",
+            "formAsWritten": "Waassi",
+            "hypothesisGroup": "origine-du-nom-wasi",
+            "sources": [
+              {
+                "title": "Reise durch die kamitischen Sprachgebiete um Kondoa, Mittheilungen von Forschungsreisenden und Gelehrten aus den deutschen Schutzgebieten, vol. 13",
+                "author": "Hauptmann Kannenberg",
+                "year": 1900,
+                "url": "https://archive.org/details/mittheilungenvon13unse",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 145",
+                "notes": "Berlin, E. S. Mittler, 1900 ; l'article commence à la page 144. Kannenberg écrit que les Warangi disent « merkwürdiger Weise » que Muassi, ancêtre des Waassi, est le frère de leur propre ancêtre Mvangi ; il ne dit pas que le nom vient de cet ancêtre. Lu sur la numérisation d'Internet Archive le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1898,
+              "to": 1898,
+              "label": "1898"
+            },
+            "statement": "Le nom Wasi apparaît sous la forme Wassi dans le livre du lieutenant Werther sur l'expédition d'Irangi de 1896-1897, publié en 1898. Il y parle des « Wassi-Leute », les gens de Wassi, qui habitent des petits pays d'Irangi : Wassi proprement dit, Borissa, Derewa, Changaha et Faräi. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Wassi-Leute",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Die mittleren Hochländer des nördlichen Deutsch-Ost-Afrika",
+                "author": "C. Waldemar Werther",
+                "year": 1898,
+                "url": "https://archive.org/details/diemittlerenhoc00wertgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 41",
+                "notes": "Berlin, Hermann Paetel, 1898 ; résultats scientifiques de l'expédition d'Irangi de 1896-1897. Chapitre sur l'Irangi : Werther écrit « Die von den Wassi-Leuten bewohnten sind : das eigentliche Wassi, dann Borissa, Derewa, Changaha und Faräi ». Lu sur la numérisation d'Internet Archive le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Alawa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "irk",
+        "namedBy": "les Iraqw",
+        "shortLine": "La forme iraqw du nom, que l'on lit dans les études linguistiques ; un clan sandawe la porte aussi.",
+        "periodLabel": "Écrit en 1925 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Alawa est une variante qui figure dans la littérature linguistique, selon Hannah Gibson et Maarten Mous. Ils la disent être la forme iraqw du même nom, et citent Greenberg (1966) et Tucker et Bryan (1956). Un clan important des Sandawe porte aussi ce nom ; il est d'origine alagwa et nyaturu, selon Ten Raa (1969).",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Exploring contact in Rangi- and Alagwa-speaking communities",
+                "author": "Hannah Gibson et Maarten Mous",
+                "year": 2024,
+                "url": "https://lheaf.org/wp-content/uploads/2024/04/gibsonmous_exploring-contact-in-rangi-and-alagwa_lheaf.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Chapitre à paraître dans Social foundations of Language Contact (Language Science Press) ; lu dans la prépublication déposée sur le site de LHEAF le 13 octobre 2026, dont la pagination est celle du PDF. Section 2.2. Le projet n'a lu aucun des trois ouvrages cités. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1925,
+              "to": 1925,
+              "label": "1925"
+            },
+            "era": "colonial",
+            "statement": "Le nom Alawa figure dans le titre d'un article de 1925 de F. J. Bagshawe sur les peuples de la vallée de Kondoa Irangi : « the Wasi, or Alawa ». Le projet ne connaît cette trace que par la bibliographie de Gibson et Mous ; il n'a pas lu l'article. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "the Wasi, or Alawa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Exploring contact in Rangi- and Alagwa-speaking communities",
+                "author": "Hannah Gibson et Maarten Mous",
+                "year": 2024,
+                "url": "https://lheaf.org/wp-content/uploads/2024/04/gibsonmous_exploring-contact-in-rangi-and-alagwa_lheaf.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 20",
+                "notes": "Chapitre à paraître dans Social foundations of Language Contact (Language Science Press) ; lu dans la prépublication déposée sur le site de LHEAF le 13 octobre 2026, dont la pagination est celle du PDF. Bibliographie : Bagshawe (1925), « The Peoples of the Happy Valley (East Africa) », 4e partie, Journal of the Royal African Society 25(97), p. 59-74. Seul le titre a été lu, dans cette bibliographie. Page lue sur l'image."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
