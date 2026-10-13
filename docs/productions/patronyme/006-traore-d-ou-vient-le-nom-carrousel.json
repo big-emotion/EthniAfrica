@@ -1,0 +1,35 @@
+{
+  "campaign": "traore-d-ou-vient-le-nom-carrousel",
+  "typologie": "patronyme",
+  "episode": 6,
+  "question": {
+    "fr": "D'où vient le nom Traoré ?"
+  },
+  "myth": {
+    "fr": "Traoré veut-il dire « va l'appeler » ?"
+  },
+  "subjects": [
+    {
+      "kind": "patronyme",
+      "id": "PAT_TRAORE",
+      "label": {
+        "fr": "Traoré"
+      }
+    }
+  ],
+  "sitePath": "/fr/atlas/noms/PAT_TRAORE",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7692365612080778518",
+      "publishedAt": "2026-10-03"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/DeBs_E3CHMG/",
+      "publishedAt": "2026-10-03"
+    }
+  ]
+}

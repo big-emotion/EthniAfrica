@@ -1,0 +1,35 @@
+{
+  "campaign": "bamileke-d-ou-vient-le-nom",
+  "typologie": "peuple",
+  "episode": 20,
+  "question": {
+    "fr": "D'où vient le nom Bamiléké ?"
+  },
+  "myth": {
+    "fr": "Le nom Bamiléké est-il né d'un interprète parlant à des Européens ?"
+  },
+  "subjects": [
+    {
+      "kind": "people",
+      "id": "PPL_BAMILEKE",
+      "label": {
+        "fr": "Bamiléké"
+      }
+    }
+  ],
+  "sitePath": "/fr/atlas/peuples/PPL_BAMILEKE",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7691459642077007126",
+      "publishedAt": "2026-10-01"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/Dd7ako5iCdI/",
+      "publishedAt": "2026-10-01"
+    }
+  ]
+}

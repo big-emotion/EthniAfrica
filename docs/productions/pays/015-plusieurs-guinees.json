@@ -1,0 +1,67 @@
+{
+  "campaign": "plusieurs-guinees",
+  "typologie": "pays",
+  "episode": 15,
+  "question": {
+    "fr": "D'où vient le nom Guinée ?"
+  },
+  "myth": {
+    "fr": "La Guinée a-t-elle été la première à porter ce nom ?"
+  },
+  "subjects": [
+    {
+      "kind": "country",
+      "id": "GIN",
+      "label": {
+        "fr": "Guinée"
+      }
+    },
+    {
+      "kind": "country",
+      "id": "GNB",
+      "label": {
+        "fr": "Guinée-Bissau"
+      }
+    },
+    {
+      "kind": "country",
+      "id": "GNQ",
+      "label": {
+        "fr": "Guinée équatoriale"
+      }
+    }
+  ],
+  "sitePath": "/fr/atlas/pays/GIN",
+  "publications": [
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/r-rKkCBKmaQ",
+      "publishedAt": "2026-10-05"
+    },
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7693026000862514454",
+      "publishedAt": "2026-10-05"
+    },
+    {
+      "network": "instagram",
+      "format": "video",
+      "url": "https://www.instagram.com/p/DeGSXSMqlCu/",
+      "publishedAt": "2026-10-05"
+    },
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7693024390425873686",
+      "publishedAt": "2026-10-05"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/DeGRh_MCIaB/",
+      "publishedAt": "2026-10-05"
+    }
+  ]
+}
