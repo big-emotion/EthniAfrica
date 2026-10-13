@@ -84,5 +84,65 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Lubega », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de la page mémorielle du clan Ngabi-Nsamba, ses renvois à J. Roscoe et M. B. Nsimbi, et des recherches ciblées sur Lubega dans les travaux consacrés aux clans du Buganda, n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Lubega est un nom de personne ganda. Un article de 2024 le range parmi les noms que portent les garçons du clan Ngabi. On ne sait pas avec certitude ce qu'il veut dire, ni s'il est propre à ce clan.",
+    "names": [
+      {
+        "nameText": "Lubega",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lug",
+        "namedBy": null,
+        "shortLine": "Un nom ganda porté par des garçons du clan Ngabi ; son sens et son origine ne sont pas connus.",
+        "periodLabel": "Écrit dès 2024 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Retour de Kimera de Bunyoro, selon le récit du clan"
+            },
+            "era": "polity",
+            "statement": "Le nom Lubega entre dans le nom Nsamba Lubega Lunkonge, celui du demi-frère du roi Kimera dans le récit du clan Ngabi : il revient de Bunyoro avec Kimera, qui le fait ensuite chef du clan. L'article qui rapporte ce récit le présente comme une croyance, et d'autres versions existent.",
+            "sources": [
+              {
+                "title": "Uganda. Ngabi Clan the King’s Therapists and Herd’s men",
+                "author": "Comboni Missionaries Ireland",
+                "year": 2024,
+                "url": "https://combonimissionaries.ie/2024/10/17/uganda-ngabi-clan-the-kings-therapists-and-herds-men/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "page": "paragraphe sur Nsamba et Kimera",
+                "notes": "Article publié le 17 octobre 2024 sur le site des missionnaires comboniens d'Irlande ; il ne cite pas de source écrite et s'appuie sur ce que l'on croit et raconte dans le clan. Il dit que le fondateur du clan est venu de Bunyoro « with his half-brother Nsamba Lubega Lunkonge ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Article d'octobre 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Lubega apparaît dans un article de 2024 sur le clan ganda Ngabi, qui le range parmi les noms donnés aux garçons du clan, avec Bukenya, Kasozi, Jjengo, Kabitto, Kamoga et Lubinga. C'est la plus ancienne trace de ce nom que le projet connaît. Ce n'est pas le nom du clan, qui s'appelle Ngabi.",
+            "formAsWritten": "Lubega",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Uganda. Ngabi Clan the King’s Therapists and Herd’s men",
+                "author": "Comboni Missionaries Ireland",
+                "year": 2024,
+                "url": "https://combonimissionaries.ie/2024/10/17/uganda-ngabi-clan-the-kings-therapists-and-herds-men/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "page": "paragraphe sur les noms du clan",
+                "notes": "Article publié le 17 octobre 2024 sur le site des missionnaires comboniens d'Irlande ; il ne cite pas de source écrite et s'appuie sur ce que l'on croit et raconte dans le clan. Il écrit : « Some of the male names given to babies from the Ngabi clan are Bukenya, Kasozi, Jjengo, Kabitto, Kamoga, Lubega, and Lubinga ». Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

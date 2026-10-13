@@ -125,5 +125,172 @@
   "totemicFoodProhibition": {
     "value": "Il est tabou pour un Muganda de consommer son propre clan, qu'il s'agisse de nourriture, de viande fraîche, de légume, de poisson ou de fruit.",
     "sourceRefs": ["buganda-heritage-clans", "roscoe-1911-baganda"]
+  },
+  "nameHistory": {
+    "summary": "Le nom Lugave est celui d'un clan ganda, au Buganda, en Ouganda. Le clan porte le nom de son totem, le pangolin. Il se compte parmi les plus anciens clans du pays. Les sources lues ne disent pas d'où vient le mot lui-même.",
+    "names": [
+      {
+        "nameText": "Lugave",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lug",
+        "namedBy": null,
+        "shortLine": "Le nom d'un clan ganda, qui est aussi celui de son totem, le pangolin.",
+        "periodLabel": "Écrit dès 1902 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Lugave désigne le pangolin, totem principal du clan, dont le second totem est le champignon, butiko. Chez les Baganda, chaque clan est connu par son totem principal, selon John Roscoe.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Brief History of the Kingdom of Buganda",
+                "author": "Royaume du Buganda",
+                "year": 2025,
+                "url": "https://buganda.or.ug/wp-content/uploads/2025/04/Final-Print-BRIEF-HISTORY-OF-THE-KINGDOM-OF-BUGANDA-3.pdf",
+                "tier": "unverified",
+                "source_kind": "community",
+                "page": "p. 4",
+                "notes": "Brochure publiée par le royaume sur son propre site. Section « Origin of the Clan System » : les premiers clans sont Lugave (« Pangolin »), Ffumbe, Nnyonyi, Njaza, Mmamba et Ngeye ; les Baganda y sont décrits comme venus avec les migrations bantoues entre 1200 et 1500. Lu le 13 octobre 2026."
+              },
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 132 et p. 138",
+                "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé de l'université de Toronto sur archive.org. Dans sa préface (p. x-xi), Roscoe, missionnaire, dit avoir recueilli ses informations chez Sir Apolo Kagwa, qui fit venir les anciens, les prêtres et « the principal men from each clan ». Page 132 : chaque clan a « a principal totem, by which the clan was known, called its Muziro ». Page 138, « List of the Clans with their Totems », nº 11 : le clan du « Manis », ou pangolin, « (Lugave) », avec pour second totem « the Mushroom (Butiko) ». Ethnographie de l'époque coloniale, citée pour ce que les Ganda lui ont raconté, non pour ses classements. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Rapporté en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Lugave figure parmi les plus anciens clans du Buganda, avec Ffumbe, Nnyonyi, Njaza, Mmamba et Ngeye, selon l'histoire publiée par le royaume. Le site du patrimoine ganda le compte parmi les cinq clans d'origine appelés Banansangwa, un mot qui veut dire « les clans indigènes ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Brief History of the Kingdom of Buganda",
+                "author": "Royaume du Buganda",
+                "year": 2025,
+                "url": "https://buganda.or.ug/wp-content/uploads/2025/04/Final-Print-BRIEF-HISTORY-OF-THE-KINGDOM-OF-BUGANDA-3.pdf",
+                "tier": "unverified",
+                "source_kind": "community",
+                "page": "p. 4",
+                "notes": "Brochure publiée par le royaume sur son propre site. Section « Origin of the Clan System » : les premiers clans sont Lugave (« Pangolin »), Ffumbe, Nnyonyi, Njaza, Mmamba et Ngeye ; les Baganda y sont décrits comme venus avec les migrations bantoues entre 1200 et 1500. Lu le 13 octobre 2026."
+              },
+              {
+                "title": "Buganda Heritage and Information Centre — Clans",
+                "author": "Buganda Heritage and Information Centre",
+                "year": null,
+                "url": "https://www.bugandaheritage.org.uk/culture/clans",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site patrimonial ganda. Il écrit : « In the beginning, there were five original clans referred to as Banansangwa simply meaning the indigenous clans and they are: Ffumbe, Lugave, Nggonge, Njaza and Nnyonyi », puis : « These went on expanding to 52 clans by 1966 ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Décrit en 1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lugave est celui d'un clan qui a des charges à la cour du roi, selon le missionnaire John Roscoe, qui lui consacre la section « The Manis Clan ». Le clan garde les tambours royaux Mujaguzo, dont le chef Ntenga fournit les batteurs, et le tapis d'apparat Kiyu, sur lequel le roi se tenait pour les cérémonies d'État. L'intendant en chef de la reine est pris dans ce clan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 153",
+                "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé de l'université de Toronto sur archive.org. Dans sa préface (p. x-xi), Roscoe, missionnaire, dit avoir recueilli ses informations chez Sir Apolo Kagwa, qui fit venir les anciens, les prêtres et « the principal men from each clan ». Section « The Manis Clan » : les tambours royaux Mujaguzo, le chef Ntenga, l'intendant en chef de la reine, le tapis royal Kiyu « confided to this clan ». Ethnographie de l'époque coloniale, citée pour ce que les Ganda lui ont raconté, non pour ses classements. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lugave apparaît, sous la forme Lugave, dans la liste des clans ganda de John Roscoe, missionnaire, onzième de la liste. Le clan y est désigné par le « Manis », ou pangolin, avec le nom « Lugave » entre parenthèses. Ce n'est pas la plus ancienne trace du nom : Johnston a écrit Lugavwe en 1902.",
+            "formAsWritten": "Lugave",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 138",
+                "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé de l'université de Toronto sur archive.org. Dans sa préface (p. x-xi), Roscoe, missionnaire, dit avoir recueilli ses informations chez Sir Apolo Kagwa, qui fit venir les anciens, les prêtres et « the principal men from each clan ». « List of the Clans with their Totems », nº 11 : le clan du « Manis », ou pangolin, « (Lugave) », avec pour second totem « the Mushroom (Butiko) ». Ethnographie de l'époque coloniale, citée pour ce que les Ganda lui ont raconté, non pour ses classements. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Arrivée de Kintu, selon les traditions"
+            },
+            "era": "polity",
+            "statement": "Le nom Lugave est celui d'un clan qui se dit établi dans le Busiro avant l'arrivée du roi Kintu. Il fait remonter son origine à Mukibe Sekiwunga, à qui Kintu aurait donné une colline, selon ce que les hommes du clan rapportent à John Roscoe.",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 153",
+                "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé de l'université de Toronto sur archive.org. Dans sa préface (p. x-xi), Roscoe, missionnaire, dit avoir recueilli ses informations chez Sir Apolo Kagwa, qui fit venir les anciens, les prêtres et « the principal men from each clan ». Section « The Manis Clan » : « they assert that they were already established in the Busiro district when Kintu came. Their forefather was Mukibe Sekiwunga, to whom Kintu gave the Kapaka hill ». Ethnographie de l'époque coloniale, citée pour ce que les Ganda lui ont raconté, non pour ses classements. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lugave apparaît par écrit sous une forme proche, Lugavwe, dans la liste des clans du Buganda que dresse Harry Johnston, qui le traduit par « Manis (the scaly ant-eater) », le pangolin. C'est la plus ancienne trace de ce nom que le projet connaît ; le clan existait déjà avant ce texte.",
+            "formAsWritten": "Lugavwe",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Uganda Protectorate, vol. II",
+                "author": "Harry Johnston",
+                "year": 1902,
+                "url": "https://archive.org/details/cu31924087982504",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 692",
+                "notes": "Londres, Hutchinson, 1902 ; lu sur l'exemplaire numérisé d'archive.org. Liste des vingt-neuf clans du Buganda et de leurs totems : « 26. Lugavwe … Manis (the scaly ant-eater) ». Johnston était le commissaire spécial britannique de l'Ouganda ; auteur de l'époque coloniale, cité ici pour la forme qu'il écrit. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
