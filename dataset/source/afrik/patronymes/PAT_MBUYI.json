@@ -84,5 +84,87 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web et bibliographique combinant « Mbuyi », « Luba », « Tshiluba », « twin name », « surname », « clan », « transmission », « alliance » et « obituary », ainsi que l'article sur les noms d'enfants spéciaux luba-kasaï et la page Forebears dédiée n'ont pas établi de lignée homonyme d'origine distincte documentable ; la diffusion dans plusieurs pays ne suffit pas à créer un homonyme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mbuyi est, chez les Luba du Kasaï, le nom que l'on donne au premier-né de jumeaux. Il est aussi un nom de famille en République démocratique du Congo. Les sources lues ne disent pas comment on est passé de l'un à l'autre.",
+    "names": [
+      {
+        "nameText": "Mbuyi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lua",
+        "namedBy": null,
+        "shortLine": "Chez les Luba du Kasaï, le nom du premier-né de jumeaux ; aussi un nom de famille congolais.",
+        "periodLabel": "Écrit dès 2023 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Décrit en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Mbuyi est, chez les Luba du Kasaï, le nom du premier-né de jumeaux, que l'on appelle aussi Tshibuabua. Les parents de jumeaux deviennent alors Muambuyi pour la mère et Shambuyi pour le père, selon Donat Nkuna Betu et Benjamin Kalonga Kanumbedia.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Socio-Cultural Meanings of Special Children Names in the Luba Culture of Kasaï",
+                "author": "Donat Nkuna Betu et Benjamin Kalonga Kanumbedia",
+                "year": 2023,
+                "url": "https://www.researchgate.net/publication/385699879_Socio-Cultural_Meanings_of_Special_Children_Names_in_The_Luba_Culture_of_Kasai",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 630",
+                "notes": "Journal of Digital Learning and Distance Education, vol. 2, n° 7, décembre 2023, p. 627-633, texte intégral lu sur le site de l'éditeur. Dans la liste des enfants nés dans des circonstances particulières, à la rubrique des naissances multiples, l'article écrit « Mbuyi, also called Tshibuabua (the first born of twins) ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mbuyi est aussi un nom de famille congolais, selon Wikipédia.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Mbuyi",
+                "author": "Wikipédia (article en anglais)",
+                "year": null,
+                "url": "https://en.wikipedia.org/wiki/Mbuyi",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Article lu en entier. Sa première phrase dit que Mbuyi est un nom de famille congolais ; il liste sept porteurs. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Publié en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Mbuyi apparaît par écrit dans l'article de Betu et Kanumbedia sur les noms des enfants nés dans des circonstances particulières chez les Luba du Kasaï. C'est la plus ancienne trace de ce nom que le projet connaît ; la coutume qu'il décrit est plus ancienne que l'article.",
+            "formAsWritten": "Mbuyi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Socio-Cultural Meanings of Special Children Names in the Luba Culture of Kasaï",
+                "author": "Donat Nkuna Betu et Benjamin Kalonga Kanumbedia",
+                "year": 2023,
+                "url": "https://www.researchgate.net/publication/385699879_Socio-Cultural_Meanings_of_Special_Children_Names_in_The_Luba_Culture_of_Kasai",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 630",
+                "notes": "Journal of Digital Learning and Distance Education, vol. 2, n° 7, décembre 2023, p. 627-633, texte intégral lu sur le site de l'éditeur. Le nom y est écrit Mbuyi, dans la liste des noms selon la naissance multiple. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
