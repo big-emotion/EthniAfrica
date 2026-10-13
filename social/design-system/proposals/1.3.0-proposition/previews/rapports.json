@@ -1,0 +1,821 @@
+[
+  {
+    "series": "pays",
+    "reports": [
+      {
+        "id": "pays-01",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 458,
+        "panelTop": 892,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 596.546875,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "pays-02",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 690,
+        "panelTop": 660,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 596.546875,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "pays-03",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 692,
+        "panelTop": 658,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 596.546875,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "pays-04",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 662,
+        "panelTop": 688,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 596.546875,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "pays-05",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 590,
+        "panelTop": 760,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 596.546875,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "pays-06",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 545,
+        "panelTop": 805,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 596.546875,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "pays-07",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 769,
+        "panelTop": 581,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 596.546875,
+          "lines": 1,
+          "hidden": []
+        }
+      }
+    ]
+  },
+  {
+    "series": "nom-recu",
+    "reports": [
+      {
+        "id": "nom-recu-01",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 570,
+        "panelTop": 780,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 516.515625,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "nom-recu-02",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 545,
+        "panelTop": 805,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 516.515625,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "nom-recu-03",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 631,
+        "panelTop": 719,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 516.515625,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "nom-recu-04",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 780,
+        "panelTop": 570,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 516.515625,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "nom-recu-05",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 590,
+        "panelTop": 760,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 516.515625,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "nom-recu-06",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 590,
+        "panelTop": 760,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 516.515625,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "nom-recu-07",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 446,
+        "panelTop": 904,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 516.515625,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "nom-recu-08",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 601,
+        "panelTop": 749,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 516.515625,
+          "lines": 1,
+          "hidden": []
+        }
+      }
+    ]
+  },
+  {
+    "series": "nom-famille",
+    "reports": [
+      {
+        "id": "nom-famille-01",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 458,
+        "panelTop": 892,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 465.71875,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "nom-famille-02",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 428,
+        "panelTop": 922,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 465.71875,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "nom-famille-03",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 545,
+        "panelTop": 805,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 465.71875,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "nom-famille-04",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 797,
+        "panelTop": 553,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 465.71875,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "nom-famille-05",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 700,
+        "panelTop": 650,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 465.71875,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "nom-famille-06",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 356,
+        "panelTop": 994,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 465.71875,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "nom-famille-07",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 601,
+        "panelTop": 749,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 465.71875,
+          "lines": 1,
+          "hidden": []
+        }
+      }
+    ]
+  },
+  {
+    "series": "mots",
+    "reports": [
+      {
+        "id": "mots-01",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 458,
+        "panelTop": 892,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 546.078125,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "mots-02",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 410,
+        "panelTop": 940,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 546.078125,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "mots-03",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 645,
+        "panelTop": 705,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 546.078125,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "mots-04",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 658,
+        "panelTop": 692,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 546.078125,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "mots-05",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 410,
+        "panelTop": 940,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 546.078125,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "mots-06",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 670,
+        "panelTop": 680,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 546.078125,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "mots-07",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 601,
+        "panelTop": 749,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 546.078125,
+          "lines": 1,
+          "hidden": []
+        }
+      }
+    ]
+  },
+  {
+    "series": "frontieres",
+    "reports": [
+      {
+        "id": "frontieres-01",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 570,
+        "panelTop": 780,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 504.84375,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "frontieres-02",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 468,
+        "panelTop": 882,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 504.84375,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "frontieres-03",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 606,
+        "panelTop": 744,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 504.84375,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "frontieres-04",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 658,
+        "panelTop": 692,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 504.84375,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "frontieres-05",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 500,
+        "panelTop": 850,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 504.84375,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "frontieres-06",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 503,
+        "panelTop": 847,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 504.84375,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "frontieres-fin",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 601,
+        "panelTop": 749,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 504.84375,
+          "lines": 1,
+          "hidden": []
+        }
+      }
+    ]
+  },
+  {
+    "series": "afrique-tout",
+    "reports": [
+      {
+        "id": "afrique-tout-01",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 458,
+        "panelTop": 892,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 518.109375,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "afrique-tout-02",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 500,
+        "panelTop": 850,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 518.109375,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "afrique-tout-03",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 517,
+        "panelTop": 833,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 518.109375,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "afrique-tout-04",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 766,
+        "panelTop": 584,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 518.109375,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "afrique-tout-05",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 410,
+        "panelTop": 940,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 518.109375,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "afrique-tout-06",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 401,
+        "panelTop": 949,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 518.109375,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "afrique-tout-fin",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 601,
+        "panelTop": 749,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 518.109375,
+          "lines": 1,
+          "hidden": []
+        }
+      }
+    ]
+  },
+  {
+    "series": "villes",
+    "reports": [
+      {
+        "id": "villes-01",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 570,
+        "panelTop": 780,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 514.890625,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "villes-02",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 555,
+        "panelTop": 795,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 514.890625,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "villes-03",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 616,
+        "panelTop": 734,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 514.890625,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "villes-04",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 616,
+        "panelTop": 734,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 514.890625,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "villes-05",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 455,
+        "panelTop": 895,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 514.890625,
+          "lines": 1,
+          "hidden": []
+        }
+      },
+      {
+        "id": "villes-fin",
+        "ok": true,
+        "warnings": [],
+        "panelHeight": 601,
+        "panelTop": 749,
+        "collisions": 0,
+        "band": {
+          "top": 0,
+          "bottom": 72,
+          "height": 72,
+          "right": 514.890625,
+          "lines": 1,
+          "hidden": []
+        }
+      }
+    ]
+  }
+]

@@ -2,9 +2,24 @@
 
 For the operator to paste into a new Claude Design conversation, with the
 accepted EthniAfrica Cartes 1.2.0-proposition design system attached (the
-artifact named in `social/design-system/version.json`) and the preview images of
-this proposal (`version.json` → `previews`). The prototype in this folder is the
-starting point, not a constraint: where the design judges better, it says why.
+artifact named in `social/design-system/version.json`). The prototype in this
+folder is the starting point, not a constraint: where the design judges better,
+it says why.
+
+**Every file of this proposal is in one folder** of the public repository,
+branch `feat/social-design-system-1.3.0-proposition`:
+https://github.com/big-emotion/EthniAfrica/tree/feat/social-design-system-1.3.0-proposition/social/design-system/proposals/1.3.0-proposition
+
+- `README.md`: the proposal's specification;
+- `series-band.css`, `series-band.js`: the band prototype;
+- `models/0N-<series>.cards.json`: the seven carousel models;
+- `video.model.json`: the 9:16 video model;
+- `previews/`: the rendered images. One folder per series (`01-pays/` to
+  `07-villes/`) with the cards at 1080 × 1350 and the reading previews
+  `lecture-430.png` and `lecture-320.png`; `bandeau/` (the seven bands at
+  « n° 100 »); `video/` (cover `00-couverture.png`, one frame per card, every
+  subtitle chunk, `zones-couvertes.png`, and the silent animatic
+  `animatic-sans-voix.mp4`); `rapports.json` (every card's fit report).
 
 ---
 
@@ -42,6 +57,26 @@ caption ends with « Cherchez [nom] sur EthniAfrica, lien en profil. »
 
 Public text is French, connected and plain (the DITP approach). Keep African
 spellings, attribution, exact quotations and real uncertainty.
+
+## The operator's decisions (13 October 2026)
+
+These are settled; draw them, do not reopen them.
+
+1. **Band position: at the top of the card.**
+2. **Space: the band takes 72 px from the text panel** (panel limit 828 px on a
+   series card); the image window keeps its 450 px.
+3. **Episode number in `accent`** (gold).
+4. **Video layout: decided on the rendering.** Draw both options asked for in
+   section 3 and show them at feed size with the covered zones; the operator
+   chooses on the boards.
+5. **Video ending: keep « Cherchez [nom] sur EthniAfrica, lien en profil. »**
+   It is a deliberate exception for the series to the 0.4.0 rule that endings
+   never ask the viewer for anything; record it as such.
+6. **Images: yes.** Every model card that carries an image gets one (see
+   section 2).
+
+Also fix: the video frames still show the carousel prompt « Faites défiler »;
+a video never shows it.
 
 ## 1. The series band
 
@@ -91,8 +126,14 @@ Return each model as sample cards in `handoff/cards.sample.json` (ids
 `serie-<id>-NN`) with reference images, so the renderer can pin them. Show the
 carousel of each series at 430 px and 320 px.
 
-The models need images: none has one yet. Use the existing sample images only
-where they truthfully fit, otherwise the plain ground, and mark the slot.
+The models need images: none has one yet, and the cards render with an empty
+upper half. For each card of each model, propose the image it should carry
+(photograph, historical map, archive document, portrait) and say what it shows.
+Use an existing sample image where it truthfully fits. Otherwise name a
+candidate with its source and licence type (public domain, open licence, the
+operator's own); never generate an image that passes for a real place, person
+or document, and never invent a source. A slot without a verified candidate is
+marked « image à trouver » with what it must show.
 
 ## 3. One 9:16 video model, common to all series
 
@@ -138,7 +179,8 @@ how it differs from endings A and B.
 5. A handoff section « Renderer integration of 1.3.0 » listing the new fields,
    the new refusals, the new references and the existing references that change
    (there should be none: cards without `series` must render as in 1.2.0).
-6. The open choices, each with the proposal's answer and its reason.
+6. The image proposal per card (section 2).
+7. The one open choice, the video layout, shown on boards for the operator.
 
 ## Out of scope
 

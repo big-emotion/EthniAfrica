@@ -141,8 +141,8 @@ node social/design-system/proposals/1.3.0-proposition/preview.mjs OUT_DIR
 Both need the pinned Chromium of `social/renderer/runtime.json`. The lockfile now
 installs Playwright 1.64, whose own browser build differs from that pin; set
 `ETHNIAFRICA_CHROMIUM` to the pinned headless shell when the installed
-Playwright ships another browser. The previews of 13 October 2026 are in the
-production evidence folder named in `version.json`: per series `01.png` …
+Playwright ships another browser. The previews of 13 October 2026 are in
+`previews/`, next to this file: per series `01.png` …
 (1080 × 1350, band included) and `lecture-430.png`, `lecture-320.png`;
 `bandeau/` (the seven bands at « n° 100 »); `video/` (cover, one frame per card,
 every subtitle chunk, `zones-couvertes.png` and a silent 42.5 s animatic).
