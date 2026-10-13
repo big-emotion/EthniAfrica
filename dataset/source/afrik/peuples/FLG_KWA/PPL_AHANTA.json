@@ -81,5 +81,134 @@
         "source_kind": "discovery"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ahanta désigne un peuple akan de la côte ouest du Ghana, de Busua à Sekondi, et sa langue. Nous n'avons pas trouvé de source qui dise comment ce peuple se nomme lui-même. Le voyageur Thomas Edward Bowdich l'écrit Ahantas en 1819 ; Olfert Dapper écrit en 1668 Anten, un nom proche que nous rattachons à Ahanta. On ne sait pas avec certitude d'où vient ce nom. L'explication « pays des jumeaux », souvent répétée, ne s'appuie que sur des pages grand public : nous ne la présentons pas. Nous présentons plus bas l'histoire de ces noms.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Ahanta",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du peuple, de sa langue et de son pays, écrit Ahantas dès 1819.",
+        "periodLabel": "Écrit depuis 1819 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1819,
+              "to": 1819,
+              "label": "1819"
+            },
+            "era": "polity",
+            "statement": "Le nom Ahanta est écrit Ahantas en 1819 par le voyageur britannique Thomas Edward Bowdich. Il range les Ahantas, comme les Asante, les Warsaw et les Akim, parmi les peuples dont les membres disent appartenir à une même famille, l'Annôna. C'est la plus ancienne trace de cette forme que le projet ait pu vérifier.",
+            "formAsWritten": "Ahantas",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Thomas Edward Bowdich",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Mission from Cape Coast Castle to Ashantee",
+                "author": "Thomas Edward Bowdich",
+                "year": 1819,
+                "url": "https://archive.org/details/missionfromcapec00bowd",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 230",
+                "notes": "Londres, John Murray, 1819, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. « Ashantees, Warsaws, Akims, Ahantas, or men of any of the nations before mentioned will severally declare, that they belong to the Annôna family »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "colonial",
+            "statement": "Ahanta désigne, dans l'appendice de Christaller sur la colonie de la Côte de l'Or, la région de la côte « de Busua à Sakunne » (Sekondi), avec les villes d'Axim, Busua, Butiri et Takorade. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 637",
+                "notes": "Bâle, 1881, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. « Ahanta proper from Busua to Sakunne (Seccondee). Towns: Axim, Akoda, Mfuma, Busua, Butiri, Takorade, Sakunne »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Ahanta est le nom que le registre ISO 639-3 retient, sans autre appellation, pour la langue de ce peuple.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, code aha : Ahanta",
+                "author": "SIL International",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/aha",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Registre ISO 639-3, lu le 13 octobre 2026. Le nom de référence est « Ahanta » ; aucune autre appellation n'est listée."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Anten",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une forme proche, écrite par Dapper en 1668 pour un royaume de la côte.",
+        "periodLabel": "Écrit en 1668",
+        "accounts": [
+          {
+            "period": {
+              "from": 1668,
+              "to": 1668,
+              "label": "1668"
+            },
+            "era": "polity",
+            "statement": "Le nom Anten est écrit en 1668 par Olfert Dapper pour un royaume de la côte, voisin de Komenda : « Anten is een vruchtbaer lant van hoenderen en kabrieten », un pays fertile en poules et en chèvres. Nous le tenons pour une forme proche d'Ahanta parce qu'il occupe la même côte, à l'ouest de Komenda ; Dapper n'écrit pas Ahanta et ne dit pas qu'il s'agit du même pays.",
+            "formAsWritten": "Anten",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Olfert Dapper",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Naukeurige beschrijvinge der Afrikaensche gewesten",
+                "author": "Olfert Dapper",
+                "year": 1668,
+                "url": "https://archive.org/details/gri_33125009359999",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 437",
+                "notes": "Description de l'Afrique en néerlandais, publiée à Amsterdam par Jacob van Meurs, lu le 13 octobre 2026 dans l'exemplaire numérisé ; numéro de page lu sur l'image. Le passage commence au bas de la colonne de gauche. P. 437 aussi : « Koninkrijk van Guaffo, of groot Kommendo [...] paelt ten weften aen de Koningrijken van Ante en Tabeu »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

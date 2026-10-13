@@ -114,5 +114,362 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Batammariba, en ditammari, désigne un peuple du nord-ouest du Bénin et du nord du Togo ; Otammari en est la forme du singulier, selon le compte rendu de Brice Boussari. L'administration coloniale française, les chercheurs et leurs voisins l'ont longtemps appelé Somba, un nom donné de l'extérieur que les sources disent péjoratif ; au Togo, on parle aussi des Tamberma. Les sources ne s'accordent pas sur l'origine du nom Somba ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Batammariba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tbz",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple en ditammari : « ceux qui construisent bien », selon un compte rendu de 1988.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Batammariba désigne les gens du Koutammakou, dans le nord-est du Togo et le Bénin voisin, dont les maisons-tours en terre s'appellent takienta. L'UNESCO l'emploie dans le titre de son inscription : « Koutammakou, le pays des Batammariba ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Koutammakou, the Land of the Batammariba – UNESCO World Heritage, 2004",
+                "author": "UNESCO, Centre du patrimoine mondial",
+                "year": 2004,
+                "url": "https://whc.unesco.org/en/list/1140",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "notes": "Page de la liste du patrimoine mondial, lue le 13 octobre 2026 sur une copie de la page conservée par Internet Archive, le site de l'UNESCO refusant la lecture directe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1988,
+              "to": 1988,
+              "label": "Rapportée en 1988"
+            },
+            "era": "modern",
+            "statement": "Le nom Bètammaribè, forme proche de Batammariba, voudrait dire « ceux qui construisent bien » ou les « bons maçons », selon le compte rendu que Brice Boussari fait en 1988 du livre d'Albert-Marie Maurice. Le compte rendu ne dit pas qui propose ce sens.",
+            "aspect": "meaning",
+            "formAsWritten": "Bètammaribè",
+            "sources": [
+              {
+                "title": "Maurice (Albert-Marie) : Atakora, Otiau, Otammari, Osuri, peuples du Nord Bénin (1950)",
+                "author": "Brice Boussari",
+                "year": 1988,
+                "url": "https://www.persee.fr/doc/outre_0300-9513_1988_num_75_280_2688_t1_0372_0000_2",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 372-373",
+                "notes": "Compte rendu paru dans la Revue française d'histoire d'outre-mer, tome 75, n° 280, 3e trimestre 1988, du livre d'Albert-Marie Maurice (Paris, Académie des sciences d'outre-mer, 1986). Lu sur Persée le 13 octobre 2026. La page exacte du passage n'est pas relevée : le compte rendu tient sur deux pages."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Otammari",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "tbz",
+        "namedBy": null,
+        "shortLine": "La forme du singulier du nom Batammariba, écrite Otammari dans le titre d'un livre de 1986.",
+        "periodLabel": "Écrit dès 1986",
+        "accounts": [
+          {
+            "period": {
+              "from": 1988,
+              "to": 1988,
+              "label": "1988"
+            },
+            "era": "modern",
+            "statement": "Le nom Otammari désigne, dans le compte rendu de Brice Boussari qui résume le livre d'Albert-Marie Maurice, l'un des trois groupes de l'Atakora, avec les Otiau et les Osuri ; au pluriel, ces noms deviennent Bètiabè, Bètammaribè et Bèsuribè. Les Bètammaribè occupent la chaîne de montagnes de Kuniangu à Pouya. Boussari écrit que l'origine commune de ces groupes n'est pas encore établie.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Maurice (Albert-Marie) : Atakora, Otiau, Otammari, Osuri, peuples du Nord Bénin (1950)",
+                "author": "Brice Boussari",
+                "year": 1988,
+                "url": "https://www.persee.fr/doc/outre_0300-9513_1988_num_75_280_2688_t1_0372_0000_2",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 372-373",
+                "notes": "Compte rendu paru dans la Revue française d'histoire d'outre-mer, tome 75, n° 280, 3e trimestre 1988, du livre d'Albert-Marie Maurice (Paris, Académie des sciences d'outre-mer, 1986). Lu sur Persée le 13 octobre 2026. La page exacte du passage n'est pas relevée : le compte rendu tient sur deux pages."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "1986"
+            },
+            "era": "modern",
+            "statement": "Le nom Otammari figure en 1986 dans le titre du livre d'Albert-Marie Maurice, Atakora, Otiau, Otammari, Osuri, peuples du Nord Bénin (1950), tel que le cite Brice Boussari dans son compte rendu de 1988. Nous n'avons pas ouvert le livre. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Otammari",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Maurice (Albert-Marie) : Atakora, Otiau, Otammari, Osuri, peuples du Nord Bénin (1950)",
+                "author": "Brice Boussari",
+                "year": 1988,
+                "url": "https://www.persee.fr/doc/outre_0300-9513_1988_num_75_280_2688_t1_0372_0000_2",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 372-373",
+                "notes": "Compte rendu paru dans la Revue française d'histoire d'outre-mer, tome 75, n° 280, 3e trimestre 1988, du livre d'Albert-Marie Maurice (Paris, Académie des sciences d'outre-mer, 1986). Lu sur Persée le 13 octobre 2026. La page exacte du passage n'est pas relevée : le compte rendu tient sur deux pages."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Somba",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom donné de l'extérieur, écrit dès 1909 ; ses origines possibles sont discutées.",
+        "periodLabel": "Écrit dès 1909",
+        "accounts": [
+          {
+            "period": {
+              "from": 1988,
+              "to": 1988,
+              "label": "Proposée en 1988"
+            },
+            "era": "modern",
+            "statement": "Le nom Somba viendrait du bariba, où il voudrait dire « les hommes de la brousse », selon Dunglas, que rapporte Brice Boussari en 1988.",
+            "hypothesisGroup": "origine du nom Somba",
+            "sources": [
+              {
+                "title": "Maurice (Albert-Marie) : Atakora, Otiau, Otammari, Osuri, peuples du Nord Bénin (1950)",
+                "author": "Brice Boussari",
+                "year": 1988,
+                "url": "https://www.persee.fr/doc/outre_0300-9513_1988_num_75_280_2688_t1_0372_0000_2",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 372-373",
+                "notes": "Compte rendu paru dans la Revue française d'histoire d'outre-mer, tome 75, n° 280, 3e trimestre 1988, du livre d'Albert-Marie Maurice (Paris, Académie des sciences d'outre-mer, 1986). Lu sur Persée le 13 octobre 2026. La page exacte du passage n'est pas relevée : le compte rendu tient sur deux pages."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1988,
+              "to": 1988,
+              "label": "Proposée en 1988"
+            },
+            "era": "modern",
+            "statement": "Le nom Somba voudrait dire « qui marche nu », selon Troesler, que rapporte Brice Boussari en 1988. Boussari écrit que Troesler ne précise pas dans quelle langue.",
+            "hypothesisGroup": "origine du nom Somba",
+            "sources": [
+              {
+                "title": "Maurice (Albert-Marie) : Atakora, Otiau, Otammari, Osuri, peuples du Nord Bénin (1950)",
+                "author": "Brice Boussari",
+                "year": 1988,
+                "url": "https://www.persee.fr/doc/outre_0300-9513_1988_num_75_280_2688_t1_0372_0000_2",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 372-373",
+                "notes": "Compte rendu paru dans la Revue française d'histoire d'outre-mer, tome 75, n° 280, 3e trimestre 1988, du livre d'Albert-Marie Maurice (Paris, Académie des sciences d'outre-mer, 1986). Lu sur Persée le 13 octobre 2026. La page exacte du passage n'est pas relevée : le compte rendu tient sur deux pages."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1988,
+              "to": 1988,
+              "label": "Proposée en 1988"
+            },
+            "era": "modern",
+            "statement": "Le nom Somba serait le mot par lequel les Waba désignaient les Bètammaribè et, par extension, toutes les populations du cercle de Natitingou, selon l'historien béninois Emmanuel Tiando, que rapporte Brice Boussari en 1988.",
+            "hypothesisGroup": "origine du nom Somba",
+            "sources": [
+              {
+                "title": "Maurice (Albert-Marie) : Atakora, Otiau, Otammari, Osuri, peuples du Nord Bénin (1950)",
+                "author": "Brice Boussari",
+                "year": 1988,
+                "url": "https://www.persee.fr/doc/outre_0300-9513_1988_num_75_280_2688_t1_0372_0000_2",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 372-373",
+                "notes": "Compte rendu paru dans la Revue française d'histoire d'outre-mer, tome 75, n° 280, 3e trimestre 1988, du livre d'Albert-Marie Maurice (Paris, Académie des sciences d'outre-mer, 1986). Lu sur Persée le 13 octobre 2026. La page exacte du passage n'est pas relevée : le compte rendu tient sur deux pages."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2000,
+              "to": 2000,
+              "label": "Proposée en 2000"
+            },
+            "era": "modern",
+            "statement": "Le nom Somba aurait été emprunté, probablement, au nom de leurs voisins baatombu, selon l'anthropologue Tilo Grätz. Il écrit qu'il existe des versions différentes sur l'origine du mot.",
+            "hypothesisGroup": "origine du nom Somba",
+            "sources": [
+              {
+                "title": "La rébellion de Kaba (1916-1917) dans l'imaginaire politique au Bénin",
+                "author": "Tilo Grätz",
+                "year": 2000,
+                "url": "https://journals.openedition.org/etudesafricaines/44",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section « Les administrateurs français », § 4",
+                "notes": "Cahiers d'études africaines, n° 160, 2000, p. 675-704. Lu sur OpenEdition Journals le 13 octobre 2026 ; le texte en ligne n'est pas paginé, les passages sont donc repérés par section et par paragraphe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1945,
+              "to": 1945,
+              "label": "1945"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sombas est, selon un ancien administrateur colonial, Henri Desanti, le nom général que les Français ont donné aux populations de l'Atakora. Il l'écrit en 1945 dans son livre Du Danhomé au Bénin-Niger, que cite Tilo Grätz.",
+            "formAsWritten": "Sombas",
+            "sources": [
+              {
+                "title": "La rébellion de Kaba (1916-1917) dans l'imaginaire politique au Bénin",
+                "author": "Tilo Grätz",
+                "year": 2000,
+                "url": "https://journals.openedition.org/etudesafricaines/44",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 12 ; Desanti, 1945, p. 54, d'après Grätz",
+                "notes": "Cahiers d'études africaines, n° 160, 2000, p. 675-704. Lu sur OpenEdition Journals le 13 octobre 2026 ; le texte en ligne n'est pas paginé, les passages sont donc repérés par section et par paragraphe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1969,
+              "to": 1969,
+              "label": "1969"
+            },
+            "era": "modern",
+            "statement": "Le nom Somba est une dénomination péjorative donnée de l'extérieur et reprise par l'administration coloniale, selon l'historien Jean-Pierre Chrétien, qui commente le livre de Paul Mercier. Il écrit qu'elle désigne en fait les Bètâmmadibè et les Bèsorubè.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "P. Mercier, Tradition, changement, histoire. Les « Somba » du Dahomey septentrional",
+                "author": "Jean-Pierre Chrétien",
+                "year": 1969,
+                "url": "https://www.persee.fr/doc/ahess_0395-2649_1969_num_24_3_422085_t1_0640_0000_1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 640",
+                "notes": "Compte rendu paru dans Annales. Économies, Sociétés, Civilisations, 24e année, n° 3, 1969, p. 640-648, du livre de Paul Mercier (Paris, Anthropos, 1968). Lu sur Persée le 13 octobre 2026. La note 3 se trouve au début du compte rendu ; la page 640 est déduite de l'ouverture de l'article, non lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2000,
+              "to": 2000,
+              "label": "2000"
+            },
+            "era": "modern",
+            "statement": "Le nom Somba ou Soumba a dominé la plupart des discours des administrateurs et des chercheurs, selon Tilo Grätz. Il écrit qu'aujourd'hui ce nom est plutôt considéré comme une insulte.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La rébellion de Kaba (1916-1917) dans l'imaginaire politique au Bénin",
+                "author": "Tilo Grätz",
+                "year": 2000,
+                "url": "https://journals.openedition.org/etudesafricaines/44",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "sections « Premiers travaux de recherche », § 2, et « Les administrateurs français », § 5",
+                "notes": "Cahiers d'études africaines, n° 160, 2000, p. 675-704. Lu sur OpenEdition Journals le 13 octobre 2026 ; le texte en ligne n'est pas paginé, les passages sont donc repérés par section et par paragraphe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1909,
+              "to": 1909,
+              "label": "1909"
+            },
+            "statement": "Le nom Somba apparaît en 1909 dans le titre d'un texte de l'administrateur Hummel, « Extrait de notes de M. l'Administrateur Hummel sur le pays Somba », paru au Journal officiel du Dahomey, selon la bibliographie de Tilo Grätz. Nous n'avons pas ouvert ce texte. C'est la plus ancienne trace de ce nom que le projet connaît. Les gens qu'il désigne vivaient là bien avant lui.",
+            "formAsWritten": "Somba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "La rébellion de Kaba (1916-1917) dans l'imaginaire politique au Bénin",
+                "author": "Tilo Grätz",
+                "year": 2000,
+                "url": "https://journals.openedition.org/etudesafricaines/44",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "bibliographie, entrée Hummel, 1909",
+                "notes": "Cahiers d'études africaines, n° 160, 2000, p. 675-704. Lu sur OpenEdition Journals le 13 octobre 2026 ; le texte en ligne n'est pas paginé, les passages sont donc repérés par section et par paragraphe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Date non précisée"
+            },
+            "statement": "On parle d'abord de Kafiris, un mot qui signifie « païens », pour tous ces groupes de l'Atakora, selon Tilo Grätz. Leurs voisins, en partie musulmans, les appelaient ainsi.",
+            "before": true,
+            "sources": [
+              {
+                "title": "La rébellion de Kaba (1916-1917) dans l'imaginaire politique au Bénin",
+                "author": "Tilo Grätz",
+                "year": 2000,
+                "url": "https://journals.openedition.org/etudesafricaines/44",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "section « Les administrateurs français », § 4",
+                "notes": "Cahiers d'études africaines, n° 160, 2000, p. 675-704. Lu sur OpenEdition Journals le 13 octobre 2026 ; le texte en ligne n'est pas paginé, les passages sont donc repérés par section et par paragraphe."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tamberma",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom qu'on emploie pour les gens du nord du Togo auxquels ce peuple est rattaché.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1988,
+              "to": 1988,
+              "label": "1988"
+            },
+            "era": "modern",
+            "statement": "Le nom Tamberma désigne, chez Brice Boussari, les gens du nord du Togo auxquels de nombreux traits culturels rattachent les Otiau, les Otammari et les Osuri de l'Atakora. Les sources que nous avons lues ne disent pas d'où vient ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Maurice (Albert-Marie) : Atakora, Otiau, Otammari, Osuri, peuples du Nord Bénin (1950)",
+                "author": "Brice Boussari",
+                "year": 1988,
+                "url": "https://www.persee.fr/doc/outre_0300-9513_1988_num_75_280_2688_t1_0372_0000_2",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 372-373",
+                "notes": "Compte rendu paru dans la Revue française d'histoire d'outre-mer, tome 75, n° 280, 3e trimestre 1988, du livre d'Albert-Marie Maurice (Paris, Académie des sciences d'outre-mer, 1986). Lu sur Persée le 13 octobre 2026. La page exacte du passage n'est pas relevée : le compte rendu tient sur deux pages."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

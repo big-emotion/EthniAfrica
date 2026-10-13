@@ -103,5 +103,88 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Irob désigne un peuple chrétien du nord-est du Tigray, en Éthiopie, qui parle le saho. Il se nomme lui-même Irob. On ne sait pas avec certitude d'où vient ce nom ; nous présentons plus bas l'explication que rapporte le linguiste Leo Reinisch en 1878.",
+    "names": [
+      {
+        "nameText": "Irob",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ssy",
+        "namedBy": null,
+        "shortLine": "Le nom des chrétiens saho du Tigray ; sa plus ancienne trace connue date de 1878.",
+        "periodLabel": "Écrit dès 1878 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1878,
+              "to": 1878,
+              "label": "1878"
+            },
+            "era": "polity",
+            "statement": "Le nom Irob voudrait dire « Européens » : les Irob et les autres Saho disent que les Irob descendent de Grecs venus s'installer, qui faisaient le commerce sur la route de Zula, l'ancienne Adulis, vers l'Abyssinie, selon le linguiste Leo Reinisch. Il ne peut pas dire si cette tradition est historique ou si elle vient d'une explication populaire du nom.",
+            "hypothesisGroup": "irob-origine",
+            "sources": [
+              {
+                "title": "Die Sprache der Irob-Saho in Abessinien",
+                "author": "Leo Reinisch",
+                "year": 1878,
+                "url": "https://archive.org/details/diesprachederiro00reinuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 4 [90]",
+                "notes": "Wien, Karl Gerold's Sohn, 1878, tiré à part des Sitzungsberichte de l'Académie des sciences de Vienne, vol. 90. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive. Page vérifiée sur l'image. Reinisch rapporte ce que les Irob disent d'eux-mêmes et ce que disent les autres Saho."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1878,
+              "to": 1878,
+              "label": "1878"
+            },
+            "era": "polity",
+            "statement": "Le nom Irob désigne chez le linguiste Leo Reinisch un peuple de montagne qui vit dans des maisons isolées, sans former de villages. Il le dit divisé en deux grandes familles, les Boknayto et les Agladä, d'environ 1 500 personnes chacune, et chrétien alors que les Saho voisins sont devenus musulmans. On ne sait pas avec certitude d'où vient ce nom ; l'explication que rapporte Reinisch est présentée à part.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Die Sprache der Irob-Saho in Abessinien",
+                "author": "Leo Reinisch",
+                "year": 1878,
+                "url": "https://archive.org/details/diesprachederiro00reinuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 3-4 [89-90]",
+                "notes": "Wien, Karl Gerold's Sohn, 1878, tiré à part des Sitzungsberichte de l'Académie des sciences de Vienne, vol. 90. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive. Pages vérifiées sur l'image pour la page 4 ; la page 3 a été lue dans le texte numérisé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1878,
+              "to": 1878,
+              "label": "1878"
+            },
+            "era": "polity",
+            "statement": "Le nom Irob apparaît par écrit dans le titre et le texte de l'étude du linguiste autrichien Leo Reinisch sur la langue des Irob-Saho, publiée à Vienne en 1878. Reinisch y décrit les Irob comme un peuple chrétien, divisé en deux grandes familles, qui parle la langue saho. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Irob",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Die Sprache der Irob-Saho in Abessinien",
+                "author": "Leo Reinisch",
+                "year": 1878,
+                "url": "https://archive.org/details/diesprachederiro00reinuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "page de titre et p. 3-4",
+                "notes": "Wien, Karl Gerold's Sohn, 1878, tiré à part des Sitzungsberichte de l'Académie des sciences de Vienne, vol. 90. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive. Les pages 3 et 4 (numérotées [89] et [90]) ont été lues ; la page 4 a été vérifiée sur l'image."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

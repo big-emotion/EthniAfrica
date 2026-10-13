@@ -107,5 +107,285 @@
         "tier": "referenced"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Segeju désigne un peuple de la côte nord-est de la Tanzanie et du sud-est du Kenya, qui se nomme lui-même Wasegeju, selon les récits de ses membres rapportés en 1949. D'autres noms existent : Daiso, Wakirau, et les formes que les Portugais écrivent dès 1571. Les sources ne s'accordent pas sur l'origine du nom Segeju ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Segeju",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du peuple de la côte de Tanga et de Vanga ; son origine est discutée.",
+        "periodLabel": "Écrit Moceguejos dès 1571 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Segeju est le nom de la langue dans la norme ISO 639-3, sous le code seg. Maho la range, dans sa liste de 2009, avec le digo parmi les langues mijikenda du sud.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, Segeju [seg]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/seg",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 13 octobre 2026."
+              },
+              {
+                "title": "New Updated Guthrie List Online (NUGL Online), version du 4 juin 2009",
+                "author": "Jouni Filip Maho",
+                "year": 2009,
+                "url": "https://web.archive.org/web/20180203191542/http://goto.glocalnet.net/mahopapers/nuglonline.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 42",
+                "notes": "Liste de classification des langues bantoues, lue le 13 octobre 2026 dans la copie du 3 février 2018 conservée par la Wayback Machine. Entrée E731, « Segeju seg », dans le groupe E73-732, mijikenda du sud."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1949,
+              "to": 1949,
+              "label": "1949"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wasegeju désigne en 1949, chez E. C. Baker, les gens de la tribu segeju, dont le pays se nomme Usegeju. Ils occupent alors la côte de Vanga, juste au nord de la frontière entre le Kenya et le Tanganyika, jusqu'à Mwambani, à environ sept milles au sud de Tanga. Baker les compte environ 12 000 au Tanganyika en 1931.",
+            "aspect": "usage",
+            "formAsWritten": "Wasegeju",
+            "sources": [
+              {
+                "title": "Notes on the History of the Wasegeju",
+                "author": "E. C. Baker",
+                "year": 1949,
+                "url": "https://archive.org/details/tanzania-notes-records_1949-06_27",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17",
+                "notes": "Tanganyika Notes and Records, n° 27, 1949 ; lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; la page a été vérifiée sur l'image. Début du chapitre « Notes on the History of the Wasegeju », qui fait de Wasegeju le nom des gens et d'Usegeju celui du pays."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom Segeju désigne un peuple de la côte du Tanganyika et du Kenya, que les Portugais écrivent déjà Moceguejos en 1571. Son origine est discutée : les sources proposent deux explications, présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Notes on the History of the Wasegeju",
+                "author": "E. C. Baker",
+                "year": 1949,
+                "url": "https://archive.org/details/tanzania-notes-records_1949-06_27",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17-19",
+                "notes": "Tanganyika Notes and Records, n° 27, 1949 ; lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; la page a été vérifiée sur l'image. Baker réunit les récits de la tribu et ceux de deux cheikhs ; il dit lui-même que beaucoup reste incomplet et à corriger."
+              },
+              {
+                "title": "Portuguese Records Relating to the Wasegeju",
+                "author": "Sir John Milner Gray",
+                "year": 1950,
+                "url": "https://archive.org/details/tanzania-notes-records_1950-07_29",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 86",
+                "notes": "Tanganyika Notes and Records, n° 29, juillet 1950 ; lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; la page a été vérifiée sur l'image. Gray cite Monclaro (1571) et la forme Moceguejos."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1949,
+              "to": 1949,
+              "label": "Rapportée en 1949"
+            },
+            "era": "colonial",
+            "statement": "Le nom Segeju viendrait des mots swahilis kusega, « retrousser ses vêtements », et juu, « haut » : ce seraient les gens qui retroussaient leur pagne pour bouger plus librement, selon E. C. Baker, qui dit que c'est l'explication la plus admise. Des membres de la tribu racontent que ce nom leur fut donné quand ils passèrent la rivière Umba : leur tenue retroussée fit fuir les femmes de Vumba, qui crièrent « wasegee juu » à leurs hommes. Baker note que leur arrivée à Vumba date du XVIIe siècle.",
+            "hypothesisGroup": "origine-segeju",
+            "sources": [
+              {
+                "title": "Notes on the History of the Wasegeju",
+                "author": "E. C. Baker",
+                "year": 1949,
+                "url": "https://archive.org/details/tanzania-notes-records_1949-06_27",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 19",
+                "notes": "Tanganyika Notes and Records, n° 27, 1949 ; lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; la page a été vérifiée sur l'image. Passage « As for their sobriquet Wasegeju ». Baker rapporte l'explication admise et le récit de la plupart des membres de la tribu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1949,
+              "to": 1949,
+              "label": "Rapportée en 1949"
+            },
+            "era": "colonial",
+            "statement": "Le nom Segeju viendrait de Wasingaji, nom que les Segeju auraient porté quand ils vivaient à Singa, avant qu'il devienne Wasegeju, selon le cheikh Ali bin Hemed, qui rapporte l'avis de certains membres de la tribu. Le cheikh Hemed bin Abdullah dit de même que les Wasinga, descendants des survivants de la cité légendaire de Rikhami, devinrent plus tard les Wasegeju. Les deux explications nous viennent par Baker.",
+            "hypothesisGroup": "origine-segeju",
+            "sources": [
+              {
+                "title": "Notes on the History of the Wasegeju",
+                "author": "E. C. Baker",
+                "year": 1949,
+                "url": "https://archive.org/details/tanzania-notes-records_1949-06_27",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18-19",
+                "notes": "Tanganyika Notes and Records, n° 27, 1949 ; lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; la page a été vérifiée sur l'image. Le cheikh Hemed bin Abdullah est cité p. 18, le cheikh Ali bin Hemed p. 18 et 19. Baker ne dit pas avoir vérifié ces récits."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1700,
+              "to": 1778,
+              "label": "Cartes de 1700 à 1778"
+            },
+            "era": "polity",
+            "statement": "Le nom Segeju figure sur des cartes de 1700 à 1778 sous les formes Mosseguales, Mossegayes puis Mosseguejos, que Baker dit suivies d'un bref commentaire sur leur humeur guerrière. Selon lui, les Segeju vivaient alors près de Malindi et de Mombasa.",
+            "formAsWritten": "Mosseguejos",
+            "sources": [
+              {
+                "title": "Notes on the History of the Wasegeju",
+                "author": "E. C. Baker",
+                "year": 1949,
+                "url": "https://archive.org/details/tanzania-notes-records_1949-06_27",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 19",
+                "notes": "Tanganyika Notes and Records, n° 27, 1949 ; lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; la page a été vérifiée sur l'image. Baker cite ces cartes sans les nommer ; nous n'avons pas vu les cartes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1609,
+              "to": 1609,
+              "label": "1609"
+            },
+            "era": "polity",
+            "statement": "Le nom Mosseguejos désigne en 1609, chez le frère dominicain João dos Santos, des éleveurs de la côte de Malindi, très nombreux et installés là depuis peu d'années. Son livre Ethiopia Oriental leur consacre un chapitre, où il décrit leur coiffe d'argile et leur nourriture de lait et de sang de bétail. Nous le lisons traduit par John Milner Gray.",
+            "formAsWritten": "Mosseguejos",
+            "sources": [
+              {
+                "title": "Portuguese Records Relating to the Wasegeju",
+                "author": "Sir John Milner Gray",
+                "year": 1950,
+                "url": "https://archive.org/details/tanzania-notes-records_1950-07_29",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 86-87",
+                "notes": "Tanganyika Notes and Records, n° 29, juillet 1950 ; lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; la page a été vérifiée sur l'image. Gray cite et traduit le chapitre « Of the Cafres Mosseguejos and their barbarous customs » ; nous n'avons pas lu le livre de 1609 lui-même."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1571,
+              "to": 1571,
+              "label": "1571"
+            },
+            "era": "polity",
+            "statement": "Le nom Segeju apparaît par écrit sous une forme proche, Moceguejos, chez le jésuite Francisco Monclaro, qui passe à Malindi en 1571. Il y dit que ce sont des « Cafres » de l'intérieur, voisins des habitants de la ville et différents de tous les autres de la côte. Nous ne l'avons pas lu : c'est John Milner Gray qui le cite et le traduit en 1950. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Moceguejos",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Portuguese Records Relating to the Wasegeju",
+                "author": "Sir John Milner Gray",
+                "year": 1950,
+                "url": "https://archive.org/details/tanzania-notes-records_1950-07_29",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 86",
+                "notes": "Tanganyika Notes and Records, n° 29, juillet 1950 ; lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; la page a été vérifiée sur l'image. Gray appelle Monclaro le premier auteur portugais à parler des Wasegeju et note que Monclaro tenait ses informations de conversations, à Malindi, sans les voir lui-même."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Daiso",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un autre nom des Segeju, pris selon Baker à Dhaicho, dans le pays kamba, où ils s'étaient réfugiés.",
+        "periodLabel": "Écrit depuis 1949",
+        "accounts": [
+          {
+            "period": {
+              "from": 1949,
+              "to": 1949,
+              "label": "1949"
+            },
+            "era": "colonial",
+            "statement": "Le nom Daiso, écrit aussi Daicho ou Dhaicho, apparaît par écrit chez E. C. Baker, qui dit que les Segeju l'ont gagné après avoir fui les Galla, depuis Mangea et Malindi, jusqu'à Dhaicho, dans le pays kamba. Baker ajoute que leur dialecte, dit-on, appartient au groupe kikuyu-kamba. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Daiso",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notes on the History of the Wasegeju",
+                "author": "E. C. Baker",
+                "year": 1949,
+                "url": "https://archive.org/details/tanzania-notes-records_1949-06_27",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 19",
+                "notes": "Tanganyika Notes and Records, n° 27, 1949 ; lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; la page a été vérifiée sur l'image. Baker donne ces renseignements d'après ce qu'on lui a dit ; il ne cite pas de document plus ancien."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wakirau",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un autre nom des Segeju, tiré de Kirau, où ils auraient séjourné avant de descendre vers le sud.",
+        "periodLabel": "Écrit depuis 1949",
+        "accounts": [
+          {
+            "period": {
+              "from": 1949,
+              "to": 1949,
+              "label": "1949"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wakirau apparaît par écrit chez E. C. Baker, qui rapporte le cheikh Ali bin Hemed : manquant de pâturages à Singa, les Segeju seraient allés à Kirau, d'où ils tiendraient ce nom, parmi beaucoup d'autres. Baker écrit aussi qu'on les a connus sous le nom de Kilio, puis de Wakirau. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Wakirau",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notes on the History of the Wasegeju",
+                "author": "E. C. Baker",
+                "year": 1949,
+                "url": "https://archive.org/details/tanzania-notes-records_1949-06_27",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18-19",
+                "notes": "Tanganyika Notes and Records, n° 27, 1949 ; lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; la page a été vérifiée sur l'image. Le passage sur Kirau est p. 18 ; celui sur les noms Kilio et Wakirau est p. 19."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

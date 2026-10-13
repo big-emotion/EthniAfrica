@@ -125,5 +125,229 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Dafing désigne un peuple de l'ouest du Burkina Faso, autour de la boucle du Mouhoun, que l'on retrouve au Mali sous le nom de Marka. Le nom Marka est celui qu'un locuteur donne au peuple en général ; Dafing est le nom le plus courant au Burkina Faso, que certains jugent péjoratif. D'autres formes existent : Dafin, Meka, Maraka. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Marka",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "rkm",
+        "namedBy": null,
+        "shortLine": "Le nom général de ce peuple, au Burkina Faso comme au Mali, aussi écrit Maraka.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Marka désigne le peuple en général, au Burkina Faso comme au Mali, selon Jean-Luc Banworo, locuteur de la langue, cité par Byron et Annette Harrison. Ces auteurs écrivent aussi Meka, Merka, Maraka ou Marakan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sociolinguistic survey report for the Marka-Dafin language",
+                "author": "Byron Harrison et Annette Harrison",
+                "year": 2002,
+                "url": "https://www.sil.org/resources/archives/9180",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 5",
+                "notes": "Rapport d'enquête de SIL International sur la langue marka-dafin du Burkina Faso, daté de 2001 sur sa page de titre et publié dans la série des rapports d'enquête de 2002. Lu le 13 octobre 2026 dans une copie conservée par les archives d'Internet Archive. Les auteurs rapportent Cyriaque Zié (1985), Isidore Ouonni (1995) et un entretien avec Jean-Luc Banworo, que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "1901"
+            },
+            "statement": "Le nom Marka désigne, chez Maurice Delafosse, les Soninké, qui se donnent eux-mêmes le nom de Marka-nke ou de Marka ; les Dyoula, eux, appellent ainsi les Soninké. Les sources lues ne disent pas s'il s'agit du même peuple que les Marka-Dafin. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Marka",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue. Étude grammaticale du dialecte dyoula",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 269-270",
+                "notes": "Livre publié à Paris en 1901, lu sur la numérisation d'Internet Archive ; la page 270 est vérifiée sur l'image. La note de bas de page sur le nom Marka donné aux Soninké par les Dyoula est à la page 270."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "Proposée en 1901"
+            },
+            "statement": "Le nom Marka viendrait du Markadougou, le pays d'où, selon les Dyoula, les Soninké seraient venus, d'après Maurice Delafosse.",
+            "hypothesisGroup": "origine du nom Marka",
+            "sources": [
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue. Étude grammaticale du dialecte dyoula",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 269-270",
+                "notes": "Livre publié à Paris en 1901, lu sur la numérisation d'Internet Archive ; la page 270 est vérifiée sur l'image. La note de bas de page sur le nom Marka donné aux Soninké par les Dyoula est à la page 270."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dafing",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom le plus courant de ce peuple au Burkina Faso, qui voudrait dire « bouche noire » en jula.",
+        "periodLabel": "Depuis au moins 1888",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Dafin, écrit aussi Dafi ou Dafingkakan, est propre aux Marka du Burkina Faso et reste le terme le plus courant pour eux, bien qu'un catéchiste de Djibasso le juge péjoratif, selon Byron et Annette Harrison, qui rapportent ses propos.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sociolinguistic survey report for the Marka-Dafin language",
+                "author": "Byron Harrison et Annette Harrison",
+                "year": 2002,
+                "url": "https://www.sil.org/resources/archives/9180",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 5",
+                "notes": "Rapport d'enquête de SIL International sur la langue marka-dafin du Burkina Faso, daté de 2001 sur sa page de titre et publié dans la série des rapports d'enquête de 2002. Lu le 13 octobre 2026 dans une copie conservée par les archives d'Internet Archive. Les auteurs rapportent Cyriaque Zié (1985), Isidore Ouonni (1995) et un entretien avec Jean-Luc Banworo, que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1889,
+              "label": "Voyage de 1887 à 1889"
+            },
+            "era": "polity",
+            "statement": "Le nom Dafing apparaît chez le capitaine Louis-Gustave Binger, qui parle des Dafing de Ouahabou, au Dafina, dans le récit de son voyage de 1887 à 1889 : il écrit que ceux qui se disent Dafing à Ouahabou viennent du Fouta sénégalais, du Bondou, du Bambouk et d'autres pays du haut Sénégal, arrivés au temps des guerres d'El-Hadj Omar, de 1850 à 1862. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Dafing",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, dans Le Tour du monde",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://archive.org/details/dunigeraugolfede00bing",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 122",
+                "notes": "Récit du voyage de 1887 à 1889. Lu sur sa numérisation par Internet Archive, cataloguée comme l'édition Hachette de 1892 ; les pages numérisées portent l'en-tête du Tour du monde, où le récit a paru en livraisons, et c'est cette pagination que nous citons. La page citée est la page imprimée, vérifiée sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1889,
+              "label": "Voyage de 1887 à 1889"
+            },
+            "era": "polity",
+            "statement": "Le nom Dafing désigne chez Binger des gens du Dafina, une population d'« étrangers », diamma ou lounta en mandé : une première vague serait venue des villes du Niger après la fin de l'ancien empire du Mali, vers la fin du XVIIe siècle, et une seconde au temps des guerres d'El-Hadj Omar.",
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, dans Le Tour du monde",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://archive.org/details/dunigeraugolfede00bing",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 122",
+                "notes": "Récit du voyage de 1887 à 1889. Lu sur sa numérisation par Internet Archive, cataloguée comme l'édition Hachette de 1892 ; les pages numérisées portent l'en-tête du Tour du monde, où le récit a paru en livraisons, et c'est cette pagination que nous citons. La page citée est la page imprimée, vérifiée sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1889,
+              "label": "Voyage de 1887 à 1889"
+            },
+            "era": "polity",
+            "statement": "Le nom Dafing viendrait d'une variété d'ânes à museau noir, que l'on appelle dafing, « bouche noire » : elle aurait donné son nom au pays, le Dafina, puis à ses habitants, selon ce qu'on a dit à Binger, qui juge cette explication « fort hasardée ».",
+            "hypothesisGroup": "origine du nom Dafing",
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, dans Le Tour du monde",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://archive.org/details/dunigeraugolfede00bing",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 122",
+                "notes": "Récit du voyage de 1887 à 1889. Lu sur sa numérisation par Internet Archive, cataloguée comme l'édition Hachette de 1892 ; les pages numérisées portent l'en-tête du Tour du monde, où le récit a paru en livraisons, et c'est cette pagination que nous citons. La page citée est la page imprimée, vérifiée sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2001,
+              "to": 2001,
+              "label": "Proposée en 2001"
+            },
+            "era": "modern",
+            "statement": "Le nom Dafin viendrait du mot jula da, « bouche », et fin, « noir » : les femmes marka se noirciraient la lèvre inférieure et les gencives pour se faire belles, selon Cyriaque Zié, locuteur de la langue, et Isidore Ouonni, que citent Byron et Annette Harrison.",
+            "hypothesisGroup": "origine du nom Dafing",
+            "sources": [
+              {
+                "title": "Sociolinguistic survey report for the Marka-Dafin language",
+                "author": "Byron Harrison et Annette Harrison",
+                "year": 2002,
+                "url": "https://www.sil.org/resources/archives/9180",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 5",
+                "notes": "Rapport d'enquête de SIL International sur la langue marka-dafin du Burkina Faso, daté de 2001 sur sa page de titre et publié dans la série des rapports d'enquête de 2002. Lu le 13 octobre 2026 dans une copie conservée par les archives d'Internet Archive. Les auteurs rapportent Cyriaque Zié (1985), Isidore Ouonni (1995) et un entretien avec Jean-Luc Banworo, que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2001,
+              "to": 2001,
+              "label": "Proposée en 2001"
+            },
+            "era": "modern",
+            "statement": "Le nom Dafin viendrait de l'histoire d'un fils guerrier assoiffé de vengeance, selon Cyriaque Zié, que citent Byron et Annette Harrison sans en donner le récit.",
+            "hypothesisGroup": "origine du nom Dafing",
+            "sources": [
+              {
+                "title": "Sociolinguistic survey report for the Marka-Dafin language",
+                "author": "Byron Harrison et Annette Harrison",
+                "year": 2002,
+                "url": "https://www.sil.org/resources/archives/9180",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 5",
+                "notes": "Rapport d'enquête de SIL International sur la langue marka-dafin du Burkina Faso, daté de 2001 sur sa page de titre et publié dans la série des rapports d'enquête de 2002. Lu le 13 octobre 2026 dans une copie conservée par les archives d'Internet Archive. Les auteurs rapportent Cyriaque Zié (1985), Isidore Ouonni (1995) et un entretien avec Jean-Luc Banworo, que nous n'avons pas lus."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -106,5 +106,211 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nkoya désigne un peuple de la province de l'Ouest de la Zambie, dans le district de Kaoma, anciennement Mankoya, et la langue qu'il parle. Ce peuple se nomme lui-même Nkoya. D'autres noms existent : Mashasha, celui d'un peuple dont le chef Mwene Kahare garde un titre royal. Les sources ne s'accordent pas toujours sur l'origine du nom Nkoya ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Nkoya",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "nka",
+        "namedBy": null,
+        "shortLine": "Le nom du peuple et de sa langue ; il viendrait d'un nom de forêt, ou d'une déformation de « Kola ».",
+        "periodLabel": "Écrit Makonya en 1900 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "Publié en 1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Nkoya désigne, chez l'anthropologue Wim van Binsbergen, les habitants du royaume du chef Mutondo, près de Kaoma, qui se disent membres du groupe nkoya et parlent de préférence la langue nkoya. D'autres habitants de la région se rattachent aux Lozi ou aux Luvale et aux Luchazi, venus d'Angola.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Kazanga Festival – Scholarly Publications Leiden University",
+                "author": "Wim M. J. van Binsbergen",
+                "year": 1994,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2870800/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 100",
+                "notes": "Le texte décrit le festival Kazanga de 1989 et la région du chef Mutondo. Article « The Kazanga Festival: Ethnicity as Cultural Mediation and Transformation in Central Western Zambia », African Studies, vol. 53, no 2, 1994 ; lu dans le PDF le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "Proposée en 1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Nkoya viendrait du nom d'une zone boisée, autour du confluent du Zambèze et de la Kabompo, que le groupe de la dynastie aurait adopté, selon van Binsbergen. Il écrit ensuite que ce nom a d'abord désigné une forêt, puis une dynastie, puis un district, avant de désigner un groupe ethnique, une langue et une culture.",
+            "hypothesisGroup": "origine-nkoya",
+            "sources": [
+              {
+                "title": "The Kazanga Festival – Scholarly Publications Leiden University",
+                "author": "Wim M. J. van Binsbergen",
+                "year": 1994,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2870800/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 100 et p. 103",
+                "notes": "P. 100 : « The dynastic group adopted the name of Nkoya, derived from the name of a forested area ». P. 103 : « From the name of a forest, via that of a dynasty and a district, the name came to designate an ethnic group ». Article « The Kazanga Festival: Ethnicity as Cultural Mediation and Transformation in Central Western Zambia », African Studies, vol. 53, no 2, 1994 ; lu dans le PDF le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "Proposée en 1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Nkoya viendrait d'une déformation de « Kola », le nom du cœur du pays lunda, selon une indication que van Binsbergen rapporte sans pouvoir en juger la vraisemblance linguistique. Il dit lui-même qu'il ne sait pas si elle tient.",
+            "hypothesisGroup": "origine-nkoya",
+            "sources": [
+              {
+                "title": "The Kazanga Festival – Scholarly Publications Leiden University",
+                "author": "Wim M. J. van Binsbergen",
+                "year": 1994,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2870800/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 100, note 23",
+                "notes": "Note 23 : « There are indications (whose linguistic plausibility I cannot judge) that the name Nkoya goes back even further: that it is a corruption of the name 'Kola' ». Article « The Kazanga Festival: Ethnicity as Cultural Mediation and Transformation in Central Western Zambia », African Studies, vol. 53, no 2, 1994 ; lu dans le PDF le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1947,
+              "to": 1947,
+              "label": "1947"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nkoya désigne alors la langue et ceux qui la parlent, au moment où le pasteur Johasaphat Shimunika traduit le Nouveau Testament et les Psaumes dans cette langue, selon van Binsbergen.",
+            "aspect": "usage",
+            "formAsWritten": "Nkoya",
+            "sources": [
+              {
+                "title": "The Kazanga Festival – Scholarly Publications Leiden University",
+                "author": "Wim M. J. van Binsbergen",
+                "year": 1994,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2870800/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 101",
+                "notes": "Le texte dit que la langue « était alors appelée Nkoya, avec ses locuteurs » (traduction du projet). La traduction a été publiée à Londres en 1952, selon la note 26. Article « The Kazanga Festival: Ethnicity as Cultural Mediation and Transformation in Central Western Zambia », African Studies, vol. 53, no 2, 1994 ; lu dans le PDF le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mankoya désigne chez les missionnaires Edwin Smith et Andrew Dale des voisins des Ba-ila, à l'ouest, dont la langue et les coutumes diffèrent beaucoup de celles des Ba-ila.",
+            "aspect": "usage",
+            "formAsWritten": "Mankoya",
+            "sources": [
+              {
+                "title": "The Ila-Speaking Peoples of Northern Rhodesia, vol. I",
+                "author": "Edwin W. Smith et Andrew Murray Dale",
+                "year": 1920,
+                "url": "https://archive.org/details/ilaspeakingpeopl00smit",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. xxvii",
+                "notes": "Introduction, liste des peuples voisins des Ba-ila. Les auteurs parlent d'après leurs années de mission, à l'époque de la Rhodésie du Nord. Londres, Macmillan, 1920 ; lu sur la numérisation d'Internet Archive le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "1900"
+            },
+            "era": "colonial",
+            "birth": true,
+            "statement": "Le nom Nkoya apparaît sous une forme proche, « Makonya », en 1900, quand ce peuple est incorporé à l'État colonial de la Rhodésie du Nord, selon van Binsbergen. L'auteur n'indique pas le document qui porte cette forme. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Makonya",
+            "sources": [
+              {
+                "title": "The Kazanga Festival – Scholarly Publications Leiden University",
+                "author": "Wim M. J. van Binsbergen",
+                "year": 1994,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2870800/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 100",
+                "notes": "Le texte écrit que les Nkoya furent « incorporés comme les « Makonya » dans l'État colonial de la Rhodésie du Nord en 1900 » (traduction du projet). Le projet n'a pas pu lire de document plus ancien. Article « The Kazanga Festival: Ethnicity as Cultural Mediation and Transformation in Central Western Zambia », African Studies, vol. 53, no 2, 1994 ; lu dans le PDF le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1700,
+              "to": 1799,
+              "label": "XVIIIe siècle"
+            },
+            "era": "polity",
+            "before": true,
+            "statement": "Un royaume est fondé alors dans la région où vivent aujourd'hui les Nkoya, par des dissidents de l'empire lunda, ancêtres du chef Mutondo, selon van Binsbergen.",
+            "sources": [
+              {
+                "title": "The Kazanga Festival – Scholarly Publications Leiden University",
+                "author": "Wim M. J. van Binsbergen",
+                "year": 1994,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2870800/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 100",
+                "notes": "Le texte situe cette fondation au XVIIIe siècle. Article « The Kazanga Festival: Ethnicity as Cultural Mediation and Transformation in Central Western Zambia », African Studies, vol. 53, no 2, 1994 ; lu dans le PDF le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mashasha",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple dont le chef Mwene Kahare garde un titre royal, voisin des Nkoya.",
+        "periodLabel": "En usage en 1994",
+        "accounts": [
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "Publié en 1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Mashasha désigne chez van Binsbergen un peuple dont le titre royal, Mwene Kahare, est l'un des deux seuls de la région à avoir survécu à l'incorporation dans l'État lozi, avec celui de Mutondo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Kazanga Festival – Scholarly Publications Leiden University",
+                "author": "Wim M. J. van Binsbergen",
+                "year": 1994,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2870800/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 101",
+                "notes": "Le texte compte Mwene Kahare « du peuple Mashasha » parmi les titres royaux gardés. Il ne dit pas d'où vient le nom Mashasha. Article « The Kazanga Festival: Ethnicity as Cultural Mediation and Transformation in Central Western Zambia », African Studies, vol. 53, no 2, 1994 ; lu dans le PDF le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

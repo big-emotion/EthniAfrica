@@ -118,5 +118,328 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Mankanya désigne un peuple de langue atlantique du nord-ouest de la Guinée-Bissau, de la Casamance et de la Gambie, qui se nomme lui-même Bahula, « les gens de Hula ». D'autres noms existent : Bawuh, que se donne une minorité, Mancanha en portugais, Mancagne en français, et Brame, plus ancien. Les sources ne s'accordent pas toujours sur l'origine de ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Bahula",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "knf",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne la majorité de ce peuple : « les gens de Hula ».",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom Bahula veut dire « les gens de Hula », Hula étant l'ancien nom de la ville principale du peuple, que l'on appelle aujourd'hui Bula, selon le linguiste T. J. D. Gaved. La langue se nomme Uhula.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A grammar of Mankanya: An Atlantic language of Guinea-Bissau, Senegal and the Gambia. Leiden University, 2020",
+                "author": "T. J. D. Gaved",
+                "year": 2020,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2969896/view",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Thèse de doctorat de l'université de Leyde (LOT, Amsterdam, 2020). Lu dans le dépôt en libre accès de l'université de Leyde le 13 octobre 2026 ; seul le premier chapitre est en ligne à cette adresse, et la page citée est celle de ce chapitre. L'auteur a recueilli ses données de 2000 à 2012 auprès de locuteurs vivant au Sénégal."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Bahula apparaît dans la grammaire que T. J. D. Gaved publie en 2020 : la majorité du peuple s'y donne ce nom. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "bahula",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A grammar of Mankanya: An Atlantic language of Guinea-Bissau, Senegal and the Gambia. Leiden University, 2020",
+                "author": "T. J. D. Gaved",
+                "year": 2020,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2969896/view",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Thèse de doctorat de l'université de Leyde (LOT, Amsterdam, 2020). Lu dans le dépôt en libre accès de l'université de Leyde le 13 octobre 2026 ; seul le premier chapitre est en ligne à cette adresse, et la page citée est celle de ce chapitre. L'auteur a recueilli ses données de 2000 à 2012 auprès de locuteurs vivant au Sénégal."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bawuh",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "knf",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne une petite partie du peuple, qui rappelle la ville de Co.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Bawuh est celui que se donne un petit nombre de Mankanya, qui rappellent ainsi leur origine dans la ville de Co, selon T. J. D. Gaved. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "bawuh",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A grammar of Mankanya: An Atlantic language of Guinea-Bissau, Senegal and the Gambia. Leiden University, 2020",
+                "author": "T. J. D. Gaved",
+                "year": 2020,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2969896/view",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Thèse de doctorat de l'université de Leyde (LOT, Amsterdam, 2020). Lu dans le dépôt en libre accès de l'université de Leyde le 13 octobre 2026 ; seul le premier chapitre est en ligne à cette adresse, et la page citée est celle de ce chapitre. L'auteur a recueilli ses données de 2000 à 2012 auprès de locuteurs vivant au Sénégal."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Proposée en 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Bawuh et le nom Bahula montreraient peut-être un ancien jeu de changements de consonnes entre Hula et Wuh, qui n'existe plus aujourd'hui, selon T. J. D. Gaved.",
+            "hypothesisGroup": "origine du nom Bawuh",
+            "sources": [
+              {
+                "title": "A grammar of Mankanya: An Atlantic language of Guinea-Bissau, Senegal and the Gambia. Leiden University, 2020",
+                "author": "T. J. D. Gaved",
+                "year": 2020,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2969896/view",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1, note 1",
+                "notes": "Thèse de doctorat de l'université de Leyde (LOT, Amsterdam, 2020). Lu dans le dépôt en libre accès de l'université de Leyde le 13 octobre 2026 ; seul le premier chapitre est en ligne à cette adresse, et la page citée est celle de ce chapitre. L'auteur a recueilli ses données de 2000 à 2012 auprès de locuteurs vivant au Sénégal."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mankanya",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que d'autres donnent à ce peuple, écrit Mancanha en portugais et Mancagne en français.",
+        "periodLabel": "Depuis au moins 1917",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mankanya est un nom venu de l'extérieur, et non celui que la majorité du peuple se donne, selon T. J. D. Gaved. L'orthographe officielle de la langue est reconnue par le Sénégal en 2005 et publiée en 2006, ce qui en fait une langue nationale.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A grammar of Mankanya: An Atlantic language of Guinea-Bissau, Senegal and the Gambia. Leiden University, 2020",
+                "author": "T. J. D. Gaved",
+                "year": 2020,
+                "url": "https://scholarlypublications.universiteitleiden.nl/access/item:2969896/view",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1 et p. 6",
+                "notes": "Thèse de doctorat de l'université de Leyde (LOT, Amsterdam, 2020). Lu dans le dépôt en libre accès de l'université de Leyde le 13 octobre 2026 ; seul le premier chapitre est en ligne à cette adresse, et la page citée est celle de ce chapitre. L'auteur a recueilli ses données de 2000 à 2012 auprès de locuteurs vivant au Sénégal."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1989,
+              "to": 1989,
+              "label": "Rapportée en 1989"
+            },
+            "era": "modern",
+            "statement": "Le nom Mancanha viendrait du nom d'un chef de Bula, Mancanha M'boss : au moment du choix d'un nouveau chef, à l'époque portugaise, la population répond « Mancanha » aux autorités, qui écrivent alors ce nom pour désigner les anciens Brames, selon Mamadu Jao, rapporté en 2019 par Aua Silá.",
+            "hypothesisGroup": "origine du nom Mankanya",
+            "sources": [
+              {
+                "title": "O povo Brame ou Mancanha da Guiné-Bissau : um estudo sobre ritual fúnebre Toca-Choro (Toka Tchur)",
+                "author": "Aua Silá",
+                "year": 2019,
+                "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/1482/1/2019_proj_auasila.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7-8",
+                "notes": "Projet de recherche de licence en humanités, Université de l'intégration internationale de la lusophonie afro-brésilienne (UNILAB), 2019. Lu le 13 octobre 2026. L'auteure rapporte Mamadu Jao, « Estrutura política e relações de poder entre os Brâmes ou Mancanhas », Soronda n° 8, juillet 1989, p. 47-61, que nous n'avons pas lu."
+              },
+              {
+                "title": "O tronco linguístico Brâme e seus subgrupos étnicos Pepéis, Manjacos e Mancanhas : afinidades e diferenças",
+                "author": "Antonio Abipinte Té",
+                "year": 2019,
+                "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/3539/1/ANT%c3%93NIO%20ABIPINTE%20T%c3%89%20Mono.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 47",
+                "notes": "Mémoire de licence en anthropologie, Université de l'intégration internationale de la lusophonie afro-brésilienne (UNILAB), 2019. Lu le 13 octobre 2026. La page citée est celle du fichier, qui correspond à la table des matières du mémoire ; l'auteur rapporte Mamadu Jao (Soronda, 1989, et un ouvrage de 2003), que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "Rapportée en 2009"
+            },
+            "era": "modern",
+            "statement": "Le nom Mancanha serait une création de l'administration portugaise : elle aurait divisé les Brames en trois groupes, Mancanha, Manjaco et Papel, pour affaiblir leur résistance, selon l'historienne Paula Pinto, qui cite Carlos Lopes.",
+            "hypothesisGroup": "origine du nom Mankanya",
+            "sources": [
+              {
+                "title": "O tronco linguístico Brâme e seus subgrupos étnicos Pepéis, Manjacos e Mancanhas : afinidades e diferenças",
+                "author": "Antonio Abipinte Té",
+                "year": 2019,
+                "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/3539/1/ANT%c3%93NIO%20ABIPINTE%20T%c3%89%20Mono.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 45",
+                "notes": "Mémoire de licence en anthropologie, Université de l'intégration internationale de la lusophonie afro-brésilienne (UNILAB), 2019. Lu le 13 octobre 2026. La page citée est celle du fichier, qui correspond à la table des matières du mémoire ; l'auteur rapporte Mamadu Jao (Soronda, 1989, et un ouvrage de 2003), que nous n'avons pas lu. L'auteur cite Paula Pinto, Tradição e modernidade na Guiné-Bissau, 2009, p. 35, qui cite Carlos Lopes ; nous n'avons lu ni l'un ni l'autre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1917,
+              "to": 1917,
+              "label": "1917, rapportée en 2019"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mancanha figure chez Ernesto de Vasconcellos en 1917, sous une forme que nous ne connaissons pas exactement : il écrit que les Mancanha étaient à l'origine un sous-groupe des Banhum, dans le pays du Kaabu, selon Mamadu Jao, cité par Antonio Abipinte Té. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "O tronco linguístico Brâme e seus subgrupos étnicos Pepéis, Manjacos e Mancanhas : afinidades e diferenças",
+                "author": "Antonio Abipinte Té",
+                "year": 2019,
+                "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/3539/1/ANT%c3%93NIO%20ABIPINTE%20T%c3%89%20Mono.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 46",
+                "notes": "Mémoire de licence en anthropologie, Université de l'intégration internationale de la lusophonie afro-brésilienne (UNILAB), 2019. Lu le 13 octobre 2026. La page citée est celle du fichier, qui correspond à la table des matières du mémoire ; l'auteur rapporte Mamadu Jao (Soronda, 1989, et un ouvrage de 2003), que nous n'avons pas lu. L'auteur cite Mamadu Jao (2003, p. 112), qui cite Ernesto de Vasconcellos (1917, p. 94) ; nous n'avons lu ni l'un ni l'autre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant le nom Mancanha"
+            },
+            "statement": "On parle alors de Brames pour désigner ensemble ceux que l'on appellera Mancanha, Manjaco et Pepel, selon Mamadu Jao, qui cite António Carreira, rapporté par Antonio Abipinte Té.",
+            "before": true,
+            "sources": [
+              {
+                "title": "O tronco linguístico Brâme e seus subgrupos étnicos Pepéis, Manjacos e Mancanhas : afinidades e diferenças",
+                "author": "Antonio Abipinte Té",
+                "year": 2019,
+                "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/3539/1/ANT%c3%93NIO%20ABIPINTE%20T%c3%89%20Mono.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 44",
+                "notes": "Mémoire de licence en anthropologie, Université de l'intégration internationale de la lusophonie afro-brésilienne (UNILAB), 2019. Lu le 13 octobre 2026. La page citée est celle du fichier, qui correspond à la table des matières du mémoire ; l'auteur rapporte Mamadu Jao (Soronda, 1989, et un ouvrage de 2003), que nous n'avons pas lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Brame",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'ancien nom commun des Mancanha, des Manjaco et des Pepel, écrit aussi Bram ou Bramos.",
+        "periodLabel": "Nom ancien, d'avant la division en trois groupes",
+        "accounts": [
+          {
+            "period": {
+              "from": 1989,
+              "to": 2003,
+              "label": "Rapportée en 1989 et 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Brame désigne, chez Mamadu Jao, un seul peuple, aussi écrit Burâmes, Bramos ou Beramos, qui se serait divisé en Mancanha, Manjaco et Pepel après l'arrivée des Portugais, selon Antonio Abipinte Té, qui le rapporte.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "O tronco linguístico Brâme e seus subgrupos étnicos Pepéis, Manjacos e Mancanhas : afinidades e diferenças",
+                "author": "Antonio Abipinte Té",
+                "year": 2019,
+                "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/3539/1/ANT%c3%93NIO%20ABIPINTE%20T%c3%89%20Mono.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 44",
+                "notes": "Mémoire de licence en anthropologie, Université de l'intégration internationale de la lusophonie afro-brésilienne (UNILAB), 2019. Lu le 13 octobre 2026. La page citée est celle du fichier, qui correspond à la table des matières du mémoire ; l'auteur rapporte Mamadu Jao (Soronda, 1989, et un ouvrage de 2003), que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1989,
+              "to": 1989,
+              "label": "Rapportée en 1989"
+            },
+            "era": "modern",
+            "statement": "Le nom Brame viendrait de Braima, un homme pauvre qui s'enfuit avec Bula, une femme de famille riche, jusqu'au lieu que l'on appelle aujourd'hui Bula, où ceux qui les rejoignent sont nommés Brames, selon un récit que rapporte Mamadu Jao, cité par Aua Silá.",
+            "hypothesisGroup": "origine du nom Brame",
+            "sources": [
+              {
+                "title": "O povo Brame ou Mancanha da Guiné-Bissau : um estudo sobre ritual fúnebre Toca-Choro (Toka Tchur)",
+                "author": "Aua Silá",
+                "year": 2019,
+                "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/1482/1/2019_proj_auasila.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7",
+                "notes": "Projet de recherche de licence en humanités, Université de l'intégration internationale de la lusophonie afro-brésilienne (UNILAB), 2019. Lu le 13 octobre 2026. L'auteure rapporte Mamadu Jao, « Estrutura política e relações de poder entre os Brâmes ou Mancanhas », Soronda n° 8, juillet 1989, p. 47-61, que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "Rapportée en 2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Burâmos serait une déformation d'Ibahim, un prénom musulman que portait un roi islamisé de l'île de Bolama avant l'arrivée des Portugais, selon une idée que cite Mamadu Jao, rapporté par Antonio Abipinte Té.",
+            "hypothesisGroup": "origine du nom Brame",
+            "sources": [
+              {
+                "title": "O tronco linguístico Brâme e seus subgrupos étnicos Pepéis, Manjacos e Mancanhas : afinidades e diferenças",
+                "author": "Antonio Abipinte Té",
+                "year": 2019,
+                "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/3539/1/ANT%c3%93NIO%20ABIPINTE%20T%c3%89%20Mono.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 46",
+                "notes": "Mémoire de licence en anthropologie, Université de l'intégration internationale de la lusophonie afro-brésilienne (UNILAB), 2019. Lu le 13 octobre 2026. La page citée est celle du fichier, qui correspond à la table des matières du mémoire ; l'auteur rapporte Mamadu Jao (Soronda, 1989, et un ouvrage de 2003), que nous n'avons pas lu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

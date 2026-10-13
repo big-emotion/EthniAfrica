@@ -107,5 +107,198 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Siwu désigne la langue de deux groupes de l'est du Ghana, les Akpafu et les Lolobi, dans la région de l'Oti, et par extension leur peuple. Nous n'avons pas trouvé de source qui dise comment ce peuple se nomme lui-même. Le nom Akpafu est écrit en 1887 par un visiteur ghanéen, David Asante ; c'est la plus ancienne trace que nous connaissions. On ne sait pas avec certitude d'où viennent ces noms. Nous présentons plus bas leur histoire.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Siwu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la langue, que le registre ISO 639-3 retient.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Siwu est le nom que le registre ISO 639-3 retient, sans autre appellation, pour la langue des Akpafu et des Lolobi. Nous n'avons pas trouvé la plus ancienne trace de ce nom ni son origine.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, code akp : Siwu",
+                "author": "SIL International",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/akp",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Registre ISO 639-3, lu le 13 octobre 2026. Le nom de référence est « Siwu » ; aucune autre appellation n'est listée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "2018"
+            },
+            "era": "modern",
+            "statement": "Siwu est, chez Jennifer Stasak en 2018, le nom de la langue, parlée par deux groupes : « the Akpafu and Lolobi ». Les anciens du village d'Akpafu-Odomi « only speak Siwu ». L'article ne dit pas d'où vient le nom.",
+            "sources": [
+              {
+                "title": "Wycliffe Bible Translators : A Story of Restoration: The Siwu of Ghana",
+                "author": "Jennifer Stasak",
+                "year": 2018,
+                "url": "https://wycliffe.org/blog/posts/a-story-of-restoration-the-siwu-of-ghana",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "notes": "Billet de blog de Wycliffe Bible Translators daté du 8 mars 2018, lu le 13 octobre 2026. « There are two distinct Siwu-speaking groups that we met with when we visited Ghana: the Akpafu and Lolobi »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Akpafu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du groupe de l'ouest, écrit dès 1887 par David Asante.",
+        "periodLabel": "Écrit depuis 1887 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1887,
+              "to": 1887,
+              "label": "1887"
+            },
+            "statement": "Le nom Akpafu est écrit en 1887 par David Asante, qui visite en janvier cette année-là les villes de montagne du Buem. Il y compte deux villes, « Akpafu-gã » sur la montagne et « Akpafu-Dome » dans la plaine, selon la traduction qu'en donne Mark Dingemanse. C'est la plus ancienne trace de ce nom que le projet connaît, à travers cette traduction. Le peuple existait avant elle.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "David Asante",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Ideophone : A visit to Akpafu by David Asante, 1887",
+                "author": "Mark Dingemanse (traduction), d'après David Asante",
+                "year": 2011,
+                "url": "https://ideophone.org/akpafu-david-asante-1887/",
+                "tier": "referenced",
+                "source_kind": "community",
+                "notes": "Article de blog daté du 21 janvier 2011 : traduction anglaise de 2009, par Mark Dingemanse, du récit d'une visite faite en janvier 1887 par David Asante, écrit en twi, traduit en allemand par Christaller (Asante 1889, p. 106-133). Nous n'avons lu que cette traduction, lu le 13 octobre 2026. L'article ne donne pas de numéros de page."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "2018"
+            },
+            "era": "modern",
+            "statement": "Akpafu est, chez Jennifer Stasak en 2018, le nom d'un des deux groupes qui parlent siwu ; le second est celui des Lolobi. Les deux groupes se seraient séparés « il y a plus de cent ans », mais « personne n'avait une idée précise » de la façon dont cela a commencé.",
+            "sources": [
+              {
+                "title": "Wycliffe Bible Translators : A Story of Restoration: The Siwu of Ghana",
+                "author": "Jennifer Stasak",
+                "year": 2018,
+                "url": "https://wycliffe.org/blog/posts/a-story-of-restoration-the-siwu-of-ghana",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "notes": "Billet de blog de Wycliffe Bible Translators daté du 8 mars 2018, lu le 13 octobre 2026. « The Akpafu and Lolobi separated over a hundred years ago »; « no one seemed to have a concrete idea of how the separation [...] actually began »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Lolobi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du groupe de l'est, écrit dès 1887 par David Asante.",
+        "periodLabel": "Écrit depuis 1887 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1887,
+              "to": 1887,
+              "label": "1887"
+            },
+            "statement": "Le nom Lolobi est écrit en 1887 par David Asante parmi les villes de montagne du Buem : « Lolobi consists of two towns », selon la traduction de Mark Dingemanse. C'est la plus ancienne trace de ce nom que le projet connaît, à travers cette traduction. Le peuple existait avant elle.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "David Asante",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Ideophone : A visit to Akpafu by David Asante, 1887",
+                "author": "Mark Dingemanse (traduction), d'après David Asante",
+                "year": 2011,
+                "url": "https://ideophone.org/akpafu-david-asante-1887/",
+                "tier": "referenced",
+                "source_kind": "community",
+                "notes": "Article de blog daté du 21 janvier 2011 : traduction anglaise de 2009, par Mark Dingemanse, du récit d'une visite faite en janvier 1887 par David Asante, écrit en twi, traduit en allemand par Christaller (Asante 1889, p. 106-133). Nous n'avons lu que cette traduction, lu le 13 octobre 2026. L'article ne donne pas de numéros de page."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mawu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom qu'on donne aux Akpafu aujourd'hui ; nous n'avons pas pu dire par qui.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "2011"
+            },
+            "era": "modern",
+            "statement": "Mawu est, sur un blog de linguistique en 2011, le nom que porte le peuple dont le pasteur H. B. K. Ogbete a écrit l'histoire en 1998 : « the Mawu people of eastern Ghana (also known as the Akpafu) ». Un lecteur écrit en 2013 que les Akpafu se connaissent eux-mêmes sous le nom Mawu. Nous n'avons pas pu lire le livre d'Ogbete, et ce témoignage d'un seul lecteur ne suffit pas à dire que ce nom est celui du peuple.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Ideophone : H.B.K. Ogbete, A history of the Akpafus",
+                "author": "Mark Dingemanse",
+                "year": 2011,
+                "url": "https://ideophone.org/ogbete-1998-history-akpafu/",
+                "tier": "referenced",
+                "source_kind": "community",
+                "notes": "Article de blog daté du 18 mars 2011 qui met en ligne le livre d'Ogbete (Onyase Press, 1998), lu le 13 octobre 2026. Nous n'avons pas lu le livre. La page ne donne pas de numéros de page."
+              },
+              {
+                "title": "The Ideophone : A visit to Akpafu by David Asante, 1887",
+                "author": "Mark Dingemanse (traduction), d'après David Asante",
+                "year": 2011,
+                "url": "https://ideophone.org/akpafu-david-asante-1887/",
+                "tier": "referenced",
+                "source_kind": "community",
+                "notes": "Article de blog daté du 21 janvier 2011, lu le 13 octobre 2026. Le commentaire d'Atikpo Michael Senyo Kwame (2013), parmi les réponses à l'article, dit que les Akpafu se connaissent eux-mêmes sous le nom « MAWU ». La page ne donne pas de numéros de page."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

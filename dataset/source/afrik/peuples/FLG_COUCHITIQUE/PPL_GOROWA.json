@@ -106,5 +106,268 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Gorowa désigne un peuple du centre-nord de la Tanzanie, dans la région de Babati, et sa langue. Il se nomme lui-même Gorwaa. D'autres noms existent : Fiome, Mbulu et Gobreik. Les sources ne s'accordent pas sur l'origine de ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Gorwaa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "gow",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; une forme reconstruite très ancienne est proposée comme origine.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Gorwaa désigne un peuple de la région de Babati, en Tanzanie, et sa langue. Les Gorwaa se disent Gorwaa, un homme gorwaa se dit Gormo et une femme Gorto'o ; leur langue est le tsifrír Gorwaa, ou Gorti'i, selon le linguiste Andrew Harvey. Les Gorwaa et les Iraqw se voient comme deux groupes distincts, même si leurs langues se comprennent largement. On ne sait pas avec certitude quand ce nom a été écrit pour la première fois.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Harvey A., Gorwaa (Tanzania) – Language Documentation and Description Journal",
+                "author": "Andrew Harvey",
+                "year": 2019,
+                "url": "https://www.lddjournal.org/article/1200/galley/2445/download/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 127 et p. 144",
+                "notes": "« Gorwaa (Tanzania) — Language Contexts », Language Documentation and Description, vol. 16, 2019, p. 127-168. Lu le 13 octobre 2026 dans le PDF de la revue, pagination imprimée. Harvey cite Kießling et Mous (2003), Wilson (1952), Bagshawe (1925) et Whiteley (1958), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2003,
+              "label": "2003"
+            },
+            "era": "modern",
+            "statement": "Le nom Gorwaa viendrait d'une forme reconstruite, goburaa, qui aurait désigné un groupe proche de la communauté d'où viennent le gorwaa, l'iraqw, l'alagwa et le burunge, selon les linguistes Kießling et Mous (2003), que cite Andrew Harvey. Le gorwaa en serait la forme la plus proche.",
+            "hypothesisGroup": "gorwaa-origine",
+            "sources": [
+              {
+                "title": "Harvey A., Gorwaa (Tanzania) – Language Documentation and Description Journal",
+                "author": "Andrew Harvey",
+                "year": 2019,
+                "url": "https://www.lddjournal.org/article/1200/galley/2445/download/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 144",
+                "notes": "« Gorwaa (Tanzania) — Language Contexts », Language Documentation and Description, vol. 16, 2019, p. 127-168. Lu le 13 octobre 2026 dans le PDF de la revue, pagination imprimée. Harvey cite Kießling et Mous (2003), Wilson (1952), Bagshawe (1925) et Whiteley (1958), que nous n'avons pas lus."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gorowa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "gow",
+        "namedBy": null,
+        "shortLine": "Une autre écriture de Gorwaa, employée par des chercheurs britanniques dès 1925.",
+        "periodLabel": "Écrit dès 1925 ; en usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1925,
+              "to": 1925,
+              "label": "1925"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gorowa apparaît dans les travaux de chercheurs britanniques de l'époque coloniale, comme ceux de Bagshawe (1925) et de Whiteley (1958), selon le linguiste Andrew Harvey. Nous n'avons lu aucun de ces textes. Le swahili en tire Mgorowa, Wagorowa et Kigorowa. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Gorowa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Harvey A., Gorwaa (Tanzania) – Language Documentation and Description Journal",
+                "author": "Andrew Harvey",
+                "year": 2019,
+                "url": "https://www.lddjournal.org/article/1200/galley/2445/download/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 144",
+                "notes": "« Gorwaa (Tanzania) — Language Contexts », Language Documentation and Description, vol. 16, 2019, p. 127-168. Lu le 13 octobre 2026 dans le PDF de la revue, pagination imprimée. Harvey cite Kießling et Mous (2003), Wilson (1952), Bagshawe (1925) et Whiteley (1958), que nous n'avons pas lus."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Fiome",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Swahili et des explorateurs allemands",
+        "shortLine": "Un nom swahili tiré d'une montagne, employé par des explorateurs allemands ; sa plus ancienne trace lue date de 1894.",
+        "periodLabel": "Écrit Wafiomi dès 1894",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Fiome viendrait d'un des noms de la montagne volcanique à l'est de Babati, appelée aujourd'hui mont Kwaraa, selon le linguiste Andrew Harvey. Quelques Gorwaa se disent encore Fiomi, mais ce n'est pas très répandu.",
+            "hypothesisGroup": "fiome-origine",
+            "sources": [
+              {
+                "title": "Harvey A., Gorwaa (Tanzania) – Language Documentation and Description Journal",
+                "author": "Andrew Harvey",
+                "year": 2019,
+                "url": "https://www.lddjournal.org/article/1200/galley/2445/download/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 143-144",
+                "notes": "« Gorwaa (Tanzania) — Language Contexts », Language Documentation and Description, vol. 16, 2019, p. 127-168. Lu le 13 octobre 2026 dans le PDF de la revue, pagination imprimée. Harvey cite Kießling et Mous (2003), Wilson (1952), Bagshawe (1925) et Whiteley (1958), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1894,
+              "to": 1894,
+              "label": "1894"
+            },
+            "era": "polity",
+            "statement": "Le nom Fiome apparaît sous la forme Wafiomi chez l'explorateur autrichien Oscar Baumann, qui descend en janvier vers la région d'Ufiomi, près de la montagne du même nom. Baumann nomme Wafiomi l'ensemble des tribus des régions d'Ufiomi, d'Iraku, d'Uassi et de Burunge, qu'il dit former un tout par la langue et par les usages. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Wafiomi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Durch Massailand zur Nilquelle : Reisen und Forschungen der Massai-Expedition des deutschen Antisklaverei-Komite in den Jahren 1891-1893",
+                "author": "Oscar Baumann",
+                "year": 1894,
+                "url": "https://www.gutenberg.org/ebooks/68057",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 116 et p. 173-174",
+                "notes": "Berlin, Dietrich Reimer ; Lu le 13 octobre 2026 dans l'édition du Projet Gutenberg, qui garde la pagination de l'original. La pagination est celle des repères [116] et [174] de l'édition Gutenberg ; Baumann date son passage à Ufiomi du 8 au 10 janvier."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mbulu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du plus grand village iraqw, qui nomme de plus en plus les Gorwaa et les Iraqw ; trace lue : 1894.",
+        "periodLabel": "Écrit Wambulu dès 1894 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Mbulu est celui du plus grand village iraqw. Il désigne de plus en plus à la fois les Iraqw et les Gorwaa, surtout chez les jeunes des villes comme Arusha, qui se disent de souche mbulu et appellent leur langue mbulu ou kimbulu. Harvey y voit un terme qui couvre « locuteur d'une langue couchitique ». Il ne sait pas si ce nom remplacera Gorwaa.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Harvey A., Gorwaa (Tanzania) – Language Documentation and Description Journal",
+                "author": "Andrew Harvey",
+                "year": 2019,
+                "url": "https://www.lddjournal.org/article/1200/galley/2445/download/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 137 et p. 144",
+                "notes": "« Gorwaa (Tanzania) — Language Contexts », Language Documentation and Description, vol. 16, 2019, p. 127-168. Lu le 13 octobre 2026 dans le PDF de la revue, pagination imprimée. Harvey cite Kießling et Mous (2003), Wilson (1952), Bagshawe (1925) et Whiteley (1958), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1894,
+              "to": 1894,
+              "label": "1894"
+            },
+            "era": "polity",
+            "statement": "Le nom Mbulu apparaît sous la forme Wambulu chez Oscar Baumann, qui écrit que les gens d'Iraku, les seuls des Wafiomi à avoir la réputation d'être bons, sont le plus souvent appelés Wambulu par les Swahili. Il ne parle pas des Gorwaa sous ce nom. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Wambulu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Durch Massailand zur Nilquelle : Reisen und Forschungen der Massai-Expedition des deutschen Antisklaverei-Komite in den Jahren 1891-1893",
+                "author": "Oscar Baumann",
+                "year": 1894,
+                "url": "https://www.gutenberg.org/ebooks/68057",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 175",
+                "notes": "Berlin, Dietrich Reimer ; Lu le 13 octobre 2026 dans l'édition du Projet Gutenberg, qui garde la pagination de l'original. Même édition que pour Wafiomi ; la page est celle du repère [175]."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gobreik",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Datooga",
+        "shortLine": "Le mot que les Datooga emploient pour les Gorwaa ; il viendrait d'un groupe plus ancien. Trace : 1952.",
+        "periodLabel": "Rapporté en 1952 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Gobreik est aujourd'hui le mot que les Datooga emploient pour les Gorwaa. Les linguistes Kießling et Mous (2003) pensent pourtant que, vu son ancienneté, il ne désignait pas les Gorwaa eux-mêmes mais un groupe plus ancien de locuteurs couchitiques, dont descendent les Gorwaa et les Iraqw, selon Andrew Harvey. Les traditions orales gorwaa disent que les Gorwaa, les Iraqw, les Alagwa et les Burunge sont nés d'un même père.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Harvey A., Gorwaa (Tanzania) – Language Documentation and Description Journal",
+                "author": "Andrew Harvey",
+                "year": 2019,
+                "url": "https://www.lddjournal.org/article/1200/galley/2445/download/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 130",
+                "notes": "« Gorwaa (Tanzania) — Language Contexts », Language Documentation and Description, vol. 16, 2019, p. 127-168. Lu le 13 octobre 2026 dans le PDF de la revue, pagination imprimée. Harvey cite Kießling et Mous (2003), Wilson (1952), Bagshawe (1925) et Whiteley (1958), que nous n'avons pas lus."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1952,
+              "to": 1952,
+              "label": "1952"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gobreik apparaît dans les traditions orales des Datooga que rapporte Wilson en 1952, selon le linguiste Andrew Harvey : vers 1700, le chef barbaig Ruida vient dans la région du Hanang et y trouve des Datooga installés à côté de cultivateurs qu'ils appellent Gobreik. Nous n'avons pas lu Wilson. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Gobreik",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Harvey A., Gorwaa (Tanzania) – Language Documentation and Description Journal",
+                "author": "Andrew Harvey",
+                "year": 2019,
+                "url": "https://www.lddjournal.org/article/1200/galley/2445/download/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 130",
+                "notes": "« Gorwaa (Tanzania) — Language Contexts », Language Documentation and Description, vol. 16, 2019, p. 127-168. Lu le 13 octobre 2026 dans le PDF de la revue, pagination imprimée. Harvey cite Kießling et Mous (2003), Wilson (1952), Bagshawe (1925) et Whiteley (1958), que nous n'avons pas lus. Wilson (1952, p. 42 et 45)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

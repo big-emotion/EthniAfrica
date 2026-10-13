@@ -104,5 +104,288 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Tokaleya, aussi écrit Toka-Leya, désigne deux peuples voisins de la province du Sud de la Zambie, près des chutes Victoria : les Toka et les Leya. Selon la chefferie, les habitants se disent Baleya, Batoka ou Batoka-Leya. D'autres noms existent : Toka, ou Batoka, et Leya, ou Baleya. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas. On ne connaît pas la plus ancienne trace du nom composé Toka-Leya.",
+    "names": [
+      {
+        "nameText": "Tokaleya",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que portent ensemble les Toka et les Leya ; l'origine de sa forme composée reste discutée.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "Publié en 2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Toka-Leya est, selon l'enquête linguistique de 2015, le terme que les Occidentaux emploient pour parler à la fois des gens et de leur langue. Dans les chefferies de Sekute et de Musukotwani, on l'accepte aussi : les habitants disent Batoka ou Batoka-Leya, et Chitoka-Leya pour la langue. Dans la chefferie de Mukuni, ils préfèrent se dire seulement Baleya.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sawka, Mbewe, Josephat, Schwertfeger – The Toka-Leya of Zambia: Linguistic Survey Report, Partners in Bible Translation, 2015",
+                "author": "Kenneth S. Sawka, Christopher Mbewe, Daka Josephat et Jacob Schwertfeger",
+                "year": 2015,
+                "url": "https://partnersinbibletranslation.org/wp-content/uploads/2018/03/Toka-Leya_Survey_2015.pdf",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "page": "p. 4",
+                "notes": "Section 1.2, « Terminology ». Enquête menée en 2013 dans les districts de Livingstone, Kazungula, Zimba et Kalomo ; lu dans le PDF du rapport le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "Rapportée en 2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Toka-Leya voudrait dire « se séparer des Tonga », selon une théorie que rapporte l'enquête de 2015 sans en nommer l'auteur. Les gens de la région sont par ailleurs proches des Tonga par la langue.",
+            "hypothesisGroup": "origine-tokaleya",
+            "sources": [
+              {
+                "title": "Sawka, Mbewe, Josephat, Schwertfeger – The Toka-Leya of Zambia: Linguistic Survey Report, Partners in Bible Translation, 2015",
+                "author": "Kenneth S. Sawka, Christopher Mbewe, Daka Josephat et Jacob Schwertfeger",
+                "year": 2015,
+                "url": "https://partnersinbibletranslation.org/wp-content/uploads/2018/03/Toka-Leya_Survey_2015.pdf",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "page": "p. 8",
+                "notes": "Section 1.3, « Historical background ». L'enquête écrit que « certains ont théorisé » ce sens, sans citer de personne. Enquête menée en 2013 dans les districts de Livingstone, Kazungula, Zimba et Kalomo ; lu dans le PDF du rapport le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "Rapportée en 2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Toka-Leya viendrait d'une erreur d'écriture : selon un récit rapporté par l'enquête de 2015, un administrateur colonial aurait écrit « Toka-Leya » sur une carte, pour désigner une zone d'un sous-groupe tonga appelé Leya, en écrivant toka au lieu de tonga. L'enquête ne cite ni la carte ni l'administrateur.",
+            "hypothesisGroup": "origine-tokaleya",
+            "sources": [
+              {
+                "title": "Sawka, Mbewe, Josephat, Schwertfeger – The Toka-Leya of Zambia: Linguistic Survey Report, Partners in Bible Translation, 2015",
+                "author": "Kenneth S. Sawka, Christopher Mbewe, Daka Josephat et Jacob Schwertfeger",
+                "year": 2015,
+                "url": "https://partnersinbibletranslation.org/wp-content/uploads/2018/03/Toka-Leya_Survey_2015.pdf",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "page": "p. 8",
+                "notes": "Section 1.3, « Historical background ». L'enquête présente cette erreur comme « reportée » et dit qu'elle a alimenté l'idée fausse que le toka-leya serait un simple dialecte du tonga. Enquête menée en 2013 dans les districts de Livingstone, Kazungula, Zimba et Kalomo ; lu dans le PDF du rapport le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Toka",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom que les gens de Musukotwani disent avoir reçu des Kololo, qui auraient déformé « Tonga ».",
+        "periodLabel": "Écrit Batoka en 1857 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "Publié en 2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Batoka désigne, selon l'enquête de 2015, les habitants du nord du Zambèze, à l'ouest des chutes Victoria. Les Baleya vivent plus à l'est, du même côté du fleuve.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sawka, Mbewe, Josephat, Schwertfeger – The Toka-Leya of Zambia: Linguistic Survey Report, Partners in Bible Translation, 2015",
+                "author": "Kenneth S. Sawka, Christopher Mbewe, Daka Josephat et Jacob Schwertfeger",
+                "year": 2015,
+                "url": "https://partnersinbibletranslation.org/wp-content/uploads/2018/03/Toka-Leya_Survey_2015.pdf",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "page": "p. 6",
+                "notes": "Section 1.3, « Historical background ». Enquête menée en 2013 dans les districts de Livingstone, Kazungula, Zimba et Kalomo ; lu dans le PDF du rapport le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1990,
+              "to": 1990,
+              "label": "Rapportée en 2015, d'après une étude de 1990"
+            },
+            "era": "modern",
+            "statement": "Le nom Toka viendrait d'une déformation du mot Tonga que les Kololo auraient employée les premiers, selon le peuple du chef Musukotwani, d'après une étude de Mubitana (1990) que cite l'enquête de 2015. Le même récit explique le titre Musukotwani, donné au chef par les Kololo, par un mot qui voudrait dire « traverser ».",
+            "hypothesisGroup": "origine-toka",
+            "sources": [
+              {
+                "title": "Sawka, Mbewe, Josephat, Schwertfeger – The Toka-Leya of Zambia: Linguistic Survey Report, Partners in Bible Translation, 2015",
+                "author": "Kenneth S. Sawka, Christopher Mbewe, Daka Josephat et Jacob Schwertfeger",
+                "year": 2015,
+                "url": "https://partnersinbibletranslation.org/wp-content/uploads/2018/03/Toka-Leya_Survey_2015.pdf",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "page": "p. 8",
+                "notes": "Section 1.3, « Historical background ». L'enquête cite Mubitana (1990), que le projet n'a pas lu : l'explication est donc connue de seconde main. Enquête menée en 2013 dans les districts de Livingstone, Kazungula, Zimba et Kalomo ; lu dans le PDF du rapport le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Batoka, ou Batonga, couvre selon les missionnaires Edwin Smith et Andrew Dale les restes de nombreuses tribus, au sud du pays ila. Pour les deux auteurs, leur langue est proche de l'ila.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Ila-Speaking Peoples of Northern Rhodesia, vol. I",
+                "author": "Edwin W. Smith et Andrew Murray Dale",
+                "year": 1920,
+                "url": "https://archive.org/details/ilaspeakingpeopl00smit",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. xxvii",
+                "notes": "Introduction, liste des peuples voisins des Ba-ila. Les auteurs parlent d'après leurs années de mission, à l'époque de la Rhodésie du Nord. Londres, Macmillan, 1920 ; lu sur la numérisation d'Internet Archive le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1865,
+              "to": 1865,
+              "label": "Publié en 1865"
+            },
+            "era": "polity",
+            "statement": "Le nom Batonga, « indépendants », est celui que se donnent, selon David et Charles Livingstone, des gens d'origine batoka qui vivent près de la Kafue. Les deux auteurs les appellent aussi Balengi.",
+            "aspect": "usage",
+            "formAsWritten": "Batonga",
+            "sources": [
+              {
+                "title": "Narrative of an Expedition to the Zambesi and its Tributaries",
+                "author": "David et Charles Livingstone",
+                "year": 1865,
+                "url": "https://archive.org/details/narrativeofexpe00livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 220",
+                "notes": "Chapitre XI : « The people here are of Batoka origin […] and call themselves Batonga (independents) or Balengi ». Le livre rapporte l'expédition du Zambèze menée à partir de 1858. Londres, John Murray, 1865 ; lu sur la numérisation d'Internet Archive le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "1857"
+            },
+            "era": "polity",
+            "birth": true,
+            "statement": "Le nom Batoka apparaît par écrit dans le récit de voyage de David Livingstone, publié en 1857. Il y désigne un peuple qui vit sur de grandes îles du Zambèze et que le chef kololo Sebituane attaque. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Batoka",
+            "sources": [
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 86",
+                "notes": "Chapitre IV, « Career of Sebituane » : Livingstone écrit que Sebituane descendit le fleuve « among the Bashubia and Batoka, who were then living in all their glory ». C'est la première occurrence trouvée dans le corps du livre ; le projet n'a pas lu d'ouvrage plus ancien. Londres, John Murray, 1857 ; lu sur la numérisation d'Internet Archive le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Leya",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que préfèrent les gens de la chefferie de Mukuni ; le mot voudrait dire « détourner », « séparer ».",
+        "periodLabel": "Écrit Balea en 1920 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "Publié en 2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Baleya est celui que les habitants de la chefferie de Mukuni préfèrent pour se désigner, selon l'enquête de 2015. Ils disent Chileya pour leur langue et n'emploient pas le mot toka.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sawka, Mbewe, Josephat, Schwertfeger – The Toka-Leya of Zambia: Linguistic Survey Report, Partners in Bible Translation, 2015",
+                "author": "Kenneth S. Sawka, Christopher Mbewe, Daka Josephat et Jacob Schwertfeger",
+                "year": 2015,
+                "url": "https://partnersinbibletranslation.org/wp-content/uploads/2018/03/Toka-Leya_Survey_2015.pdf",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "page": "p. 4",
+                "notes": "Section 1.2, « Terminology ». Enquête menée en 2013 dans les districts de Livingstone, Kazungula, Zimba et Kalomo ; lu dans le PDF du rapport le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "Rapportée en 2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Leya viendrait d'un mot qui veut dire « détourner », « séparer » ou « tenir à l'écart des ennuis », selon un récit que rapporte l'enquête de 2015 sans en nommer l'auteur.",
+            "hypothesisGroup": "origine-leya",
+            "sources": [
+              {
+                "title": "Sawka, Mbewe, Josephat, Schwertfeger – The Toka-Leya of Zambia: Linguistic Survey Report, Partners in Bible Translation, 2015",
+                "author": "Kenneth S. Sawka, Christopher Mbewe, Daka Josephat et Jacob Schwertfeger",
+                "year": 2015,
+                "url": "https://partnersinbibletranslation.org/wp-content/uploads/2018/03/Toka-Leya_Survey_2015.pdf",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "page": "p. 8",
+                "notes": "Section 1.3, « Historical background ». L'enquête écrit « un autre récit dit que la traduction du mot leya est… ». Enquête menée en 2013 dans les districts de Livingstone, Kazungula, Zimba et Kalomo ; lu dans le PDF du rapport le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "birth": true,
+            "statement": "Le nom Balea apparaît sous une forme proche de Baleya dans le livre des missionnaires Edwin Smith et Andrew Dale, publié en 1920. Ils y appellent Sekute « le chef des Balea », sur son île de Kalai, dans le Zambèze. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Balea",
+            "sources": [
+              {
+                "title": "The Ila-Speaking Peoples of Northern Rhodesia, vol. I",
+                "author": "Edwin W. Smith et Andrew Murray Dale",
+                "year": 1920,
+                "url": "https://archive.org/details/ilaspeakingpeopl00smit",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 28",
+                "notes": "Chapitre II, « History ». Les auteurs racontent l'arrivée du chef kololo Sebitwane, qu'un différend entre Sekute et le chef des Basubia a fait venir. Le projet n'a pas trouvé de trace plus ancienne : une carte de Livingstone de 1853-1854 y est reproduite en planche, mais ses noms ne se lisent pas sur la numérisation. Londres, Macmillan, 1920 ; lu sur la numérisation d'Internet Archive le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

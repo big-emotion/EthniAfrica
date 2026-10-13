@@ -94,5 +94,154 @@
         "notes": "Première compilation systématique des proverbes akan (mmebusem), établie à partir des dialectes twi (asante, akuapem) et fante."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Assin désigne un peuple akan du sud du Ghana, entre la Pra et la côte. Il se nomme lui-même Asen, la forme que le missionnaire Johann Gottlieb Christaller écrit en 1881. Les Anglais écrivent Assin : le voyageur Thomas Edward Bowdich emploie cette graphie dès 1819, et c'est la plus ancienne trace sûre que nous ayons pu vérifier. On ne sait pas avec certitude d'où vient ce nom ; l'historien Carl Christian Reindorf en propose une explication en 1895. Nous présentons plus bas l'histoire de ces noms.",
+    "names": [
+      {
+        "nameText": "Asen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne, écrit Aseñ par Christaller en 1881.",
+        "periodLabel": "Écrit depuis 1881",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "statement": "Le nom Asen est, chez le missionnaire Johann Gottlieb Christaller en 1881, celui d'« un pays de la Gold Coast », qui a les Fante au sud, Wasa et Twifo à l'ouest, Adanse au nord et Akem à l'est. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait avant elle.",
+            "formAsWritten": "Aseñ",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Johann Gottlieb Christaller",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 423",
+                "notes": "Bâle, 1881, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. « Aseñ, a country of the Gold Coast, having Fante in the south, Wasa and Twiforo in the west, Adanse (a province of Asante) in the north, Akem in the east ». La même page donne le verbe señ, « surpasser, dépasser »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "1895"
+            },
+            "era": "colonial",
+            "statement": "Asen désigne, chez Carl Christian Reindorf en 1895, l'un des districts que les tribus tshi occupent entre Kumasi et la Pra, après celui d'Amanse. On ne sait pas avec certitude d'où vient ce nom ; une explication est donnée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The History of the Gold Coast and Asante",
+                "author": "Carl Christian Reindorf",
+                "year": 1895,
+                "url": "https://archive.org/details/historyofgoldcoa00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 43",
+                "notes": "Bâle, 1895. L'auteur est un pasteur ghanéen de la Mission de Bâle qui s'appuie sur les traditions orales. Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; numéro de page lu sur l'image. « The next district was Asen [...] North of Amanse was the Ofeso district and that of Takiman »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "1895"
+            },
+            "era": "colonial",
+            "statement": "Asen viendrait, selon Carl Christian Reindorf en 1895, de « wanseñ », qui voudrait dire « ils surpassent en nombre » le lieu qu'ils occupaient alors sur la rive droite de la Pra : « numerically surpassing the site they then occupied on the right bank of the Pra ».",
+            "hypothesisGroup": "origine-asen",
+            "sources": [
+              {
+                "title": "The History of the Gold Coast and Asante",
+                "author": "Carl Christian Reindorf",
+                "year": 1895,
+                "url": "https://archive.org/details/historyofgoldcoa00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 43",
+                "notes": "Bâle, 1895. L'auteur est un pasteur ghanéen de la Mission de Bâle qui s'appuie sur les traditions orales. Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; numéro de page lu sur l'image. « The next district was Asen, i.e. wanseñ, which means, numerically surpassing the site they then occupied on the right bank of the Pra ». Le dictionnaire de Christaller (1881, p. 423) donne le verbe señ, « surpasser », mais ne relie pas ce verbe au nom du pays."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Assin",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie anglaise du nom, que le voyageur Bowdich emploie dès 1819.",
+        "periodLabel": "Écrit depuis 1819 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1819,
+              "to": 1819,
+              "label": "1819"
+            },
+            "era": "polity",
+            "statement": "Le nom Assin est écrit en 1819 par le voyageur britannique Thomas Edward Bowdich, qui note à Moisee « the last Assin town », au pied des collines qui marquent la frontière du royaume asante. Son voyage date de 1817. C'est la plus ancienne trace de ce nom que le projet ait pu vérifier. Le peuple existait avant elle.",
+            "formAsWritten": "Assin",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Thomas Edward Bowdich",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Mission from Cape Coast Castle to Ashantee",
+                "author": "Thomas Edward Bowdich",
+                "year": 1819,
+                "url": "https://archive.org/details/missionfromcapec00bowd",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 27",
+                "notes": "Londres, John Murray, 1819, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. « halted at Moisee, [...] the last Assin town, at the foot of three high hills covered with wood [...] the barriers of the Ashantee kingdom »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1819,
+              "to": 1819,
+              "label": "1819"
+            },
+            "era": "polity",
+            "statement": "Assin désigne aussi, chez Bowdich, l'un des peuples que le roi asante Osei Tutu a vaincus : « Sai Tootoo defeated the Akims and Assins ». Bowdich écrit plus loin que des villes assin ont été détruites lors de l'invasion asante de 1807.",
+            "sources": [
+              {
+                "title": "Mission from Cape Coast Castle to Ashantee",
+                "author": "Thomas Edward Bowdich",
+                "year": 1819,
+                "url": "https://archive.org/details/missionfromcapec00bowd",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 233",
+                "notes": "Londres, John Murray, 1819, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. Page 233 déduite du numéro 234 imprimé sur la page suivante. « Sai Tootoo defeated the Akims and Assins, subjected the Tufel country, and subdued many small states in the neighbourhood »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

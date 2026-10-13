@@ -128,5 +128,397 @@
         "notes": "Atteste la graphie ancienne « pigmée »."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Aka désigne un peuple de forêt du sud-ouest de la République centrafricaine et du nord de la république du Congo, qui se nomme lui-même BaAka. D'autres noms existent : Biaka, Bayaka, Babenzele, des noms que lui donnent ses voisins, comme Mbenga et Babinga, et le mot savant Pygmée, que beaucoup jugent blessant. On ne sait pas avec certitude d'où vient le nom Aka ; ce que disent les sources est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "BaAka",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "axk",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple de forêt se donne ; ses voisins en emploient d'autres.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Aka est le nom de la langue dans la liste de Maho de 2009, sous le code C104, avec Babenzele ; la norme ISO 639-3 l'appelle Yaka (République centrafricaine), sous le code axk. On ne sait pas avec certitude d'où vient le nom Aka ; les sources que nous avons lues ne le disent pas.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, Yaka (Central African Republic) [axk]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/axk",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 13 octobre 2026."
+              },
+              {
+                "title": "New Updated Guthrie List Online (NUGL Online), version du 4 juin 2009",
+                "author": "Jouni Filip Maho",
+                "year": 2009,
+                "url": "https://web.archive.org/web/20180203191542/http://goto.glocalnet.net/mahopapers/nuglonline.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 25",
+                "notes": "Liste de classification des langues bantoues, lue le 13 octobre 2026 dans la copie du 3 février 2018 conservée par la Wayback Machine. Entrée C104, « Yaka axk, Aka, incl. Babenzele »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom BaAka est donné par les chercheurs Marine Robillard et Serge Bahuchet, dans leur tableau des noms des peuples de forêt d'Afrique centrale, à un peuple de 30 000 à 50 000 personnes de la République centrafricaine et du Congo. Ils y rappellent que Bahuchet écrivait déjà en 1993 : « En vérité, les Pygmées n'existent pas. Les hommes qui existent ont noms Baka, BaBongo, BaKola, BaAka… ».",
+            "aspect": "usage",
+            "formAsWritten": "BaAka",
+            "sources": [
+              {
+                "title": "Les Pygmées et les autres : terminologie, catégorisation et politique",
+                "author": "Marine Robillard et Serge Bahuchet",
+                "year": 2012,
+                "url": "https://journals.openedition.org/africanistes/4253",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "tableau 1 et § 1",
+                "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 13 octobre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée. Le tableau 1 donne (Ba)Aka, avec les autres noms Bayaka, Biaka, Babinga, Bambenga, BaMbenzele et Babenzele ; la citation de 1993 ouvre l'article."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Biaka",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un autre nom des Aka, employé dans les livres, selon l'encyclopédie et le tableau de Robillard et Bahuchet.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Biaka figure parmi les autres noms des Aka, avec Bayaka et Babenzele, dans le tableau de Robillard et Bahuchet et dans l'article de l'encyclopédie de Gale. On ne sait pas avec certitude depuis quand il est écrit.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les Pygmées et les autres : terminologie, catégorisation et politique",
+                "author": "Marine Robillard et Serge Bahuchet",
+                "year": 2012,
+                "url": "https://journals.openedition.org/africanistes/4253",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "tableau 1",
+                "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 13 octobre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée. Colonne « Autres noms » de la ligne (Ba)Aka."
+              },
+              {
+                "title": "Aka – Countries and Their Cultures, Gale (encyclopedia.com)",
+                "author": "Gale, Countries and Their Cultures (article non signé dans la page lue)",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/aka",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article lu le 13 octobre 2026 sur encyclopedia.com, sans date ni pagination. Il donne les noms Pygmies, Biaka, Bayaka et Bambenzele et la langue diaka. La page lue ne nomme pas l'auteur."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bayaka",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un autre nom des Aka, lu dans les ouvrages sur ce peuple.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bayaka figure parmi les autres noms des Aka dans le tableau de Robillard et Bahuchet et dans l'article de l'encyclopédie de Gale. On ne sait pas avec certitude depuis quand il est écrit.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les Pygmées et les autres : terminologie, catégorisation et politique",
+                "author": "Marine Robillard et Serge Bahuchet",
+                "year": 2012,
+                "url": "https://journals.openedition.org/africanistes/4253",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "tableau 1",
+                "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 13 octobre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée. Colonne « Autres noms » de la ligne (Ba)Aka."
+              },
+              {
+                "title": "Aka – Countries and Their Cultures, Gale (encyclopedia.com)",
+                "author": "Gale, Countries and Their Cultures (article non signé dans la page lue)",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/aka",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article lu le 13 octobre 2026 sur encyclopedia.com, sans date ni pagination. Il donne les noms Pygmies, Biaka, Bayaka et Bambenzele et la langue diaka. La page lue ne nomme pas l'auteur."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Babenzele",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un autre nom des Aka, écrit aussi Bambenzele ; il désigne parfois un groupe de ce peuple.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Babenzele figure, écrit aussi BaMbenzele ou Bambenzele, parmi les autres noms des Aka dans le tableau de Robillard et Bahuchet, dans l'article de l'encyclopédie de Gale et dans la liste de Maho, qui l'inclut dans la langue aka. On ne sait pas avec certitude depuis quand il est écrit.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les Pygmées et les autres : terminologie, catégorisation et politique",
+                "author": "Marine Robillard et Serge Bahuchet",
+                "year": 2012,
+                "url": "https://journals.openedition.org/africanistes/4253",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "tableau 1",
+                "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 13 octobre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée. Colonne « Autres noms » de la ligne (Ba)Aka."
+              },
+              {
+                "title": "Aka – Countries and Their Cultures, Gale (encyclopedia.com)",
+                "author": "Gale, Countries and Their Cultures (article non signé dans la page lue)",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/aka",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article lu le 13 octobre 2026 sur encyclopedia.com, sans date ni pagination. Il donne les noms Pygmies, Biaka, Bayaka et Bambenzele et la langue diaka. La page lue ne nomme pas l'auteur."
+              },
+              {
+                "title": "New Updated Guthrie List Online (NUGL Online), version du 4 juin 2009",
+                "author": "Jouni Filip Maho",
+                "year": 2009,
+                "url": "https://web.archive.org/web/20180203191542/http://goto.glocalnet.net/mahopapers/nuglonline.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 25",
+                "notes": "Liste de classification des langues bantoues, lue le 13 octobre 2026 dans la copie du 3 février 2018 conservée par la Wayback Machine. Entrée C104, « Yaka axk, Aka, incl. Babenzele »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mbenga",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les villageois ngando et ngbaka",
+        "shortLine": "Le nom que des voisins agriculteurs donnent aux Aka, écrit ba.mbenga par Bahuchet et Guillaume en 1982.",
+        "periodLabel": "Écrit depuis 1982",
+        "accounts": [
+          {
+            "period": {
+              "from": 1982,
+              "to": 1982,
+              "label": "1982"
+            },
+            "era": "modern",
+            "statement": "Le nom Mbenga, écrit ba.mbenga, est celui que les villageois ngando et ngbaka de la République centrafricaine donnent aux Aka, selon Serge Bahuchet et Henri Guillaume en 1982, cités par Robillard et Bahuchet. Les Aka appellent de leur côté bilo l'ensemble des villageois. Nous n'avons pas lu l'article de 1982. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "aspect": "imposition",
+            "formAsWritten": "ba.mbenga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les Pygmées et les autres : terminologie, catégorisation et politique",
+                "author": "Marine Robillard et Serge Bahuchet",
+                "year": 2012,
+                "url": "https://journals.openedition.org/africanistes/4253",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 20",
+                "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 13 octobre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée. La note renvoie à Bahuchet et Guillaume 1982, « Aka-Farmer relations in the northwest Congo basin », p. 193, que nous n'avons pas lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Babinga",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des colons français",
+        "shortLine": "La forme que les colons français ont tirée de ba.mbenga ; un livre de 1978 l'emploie encore.",
+        "periodLabel": "Écrit depuis 1978",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage des colons français, non daté"
+            },
+            "era": "colonial",
+            "statement": "Le nom Babinga est la forme que des colons français ont tirée de ba.mbenga, le nom que des villageois donnent aux Aka, selon Robillard et Bahuchet. On le retrouve encore dans la littérature pour ce peuple de forêt, disent-ils.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Les Pygmées et les autres : terminologie, catégorisation et politique",
+                "author": "Marine Robillard et Serge Bahuchet",
+                "year": 2012,
+                "url": "https://journals.openedition.org/africanistes/4253",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 20",
+                "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 13 octobre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée. Les auteurs ne donnent pas de date pour la reprise du terme par les colons."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1978,
+              "to": 1978,
+              "label": "1978"
+            },
+            "era": "modern",
+            "statement": "Le nom Babinga apparaît par écrit dans le titre d'un livre de Lucien Demesse paru en 1978, Changements techno-économiques et sociaux chez les Pygmées Babinga (nord-Congo et sud-Centrafrique), que Robillard et Bahuchet citent comme exemple d'emploi du mot. Nous n'avons pas lu le livre. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Babinga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Changements techno-économiques et sociaux chez les Pygmées Babinga (nord-Congo et sud-Centrafrique)",
+                "author": "Lucien Demesse",
+                "year": 1978,
+                "url": "https://journals.openedition.org/africanistes/4253",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 20 et bibliographie",
+                "notes": "Paris, Peeters-SELAF, 2 volumes. Titre lu le 13 octobre 2026 dans la note 20 et la bibliographie de l'article de Robillard et Bahuchet (2012) ; nous n'avons pas lu le livre."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Pygmée",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "grc",
+        "namedBy": null,
+        "shortLine": "Un mot savant venu du grec, que beaucoup jugent blessant ; ce peuple a son propre nom, BaAka.",
+        "periodLabel": "En usage, contesté, aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Pygmée viendrait du latin Pygmaei, lui-même tiré du grec pugmaios, « grand comme le poing », selon le Dictionnaire de l'Académie française.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionnaire de l'Académie française, 9e édition, entrée « pygmée »",
+                "author": "Académie française",
+                "year": null,
+                "url": "https://www.dictionnaire-academie.fr/article/A9P5144",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée lue sur le site du Dictionnaire de l'Académie française le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Pygmée est, selon Robillard et Bahuchet, un mot usuel et historique qui réunit en réalité de nombreuses sociétés différentes, dont les Aka. Ils écrivent qu'il disparaît des publications, frappé d'opprobre, et rappellent que ces peuples ont chacun leur propre nom. On ne sait pas avec certitude depuis quand ce mot est employé pour les Aka.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les Pygmées et les autres : terminologie, catégorisation et politique",
+                "author": "Marine Robillard et Serge Bahuchet",
+                "year": 2012,
+                "url": "https://journals.openedition.org/africanistes/4253",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "§ 1-2",
+                "notes": "Journal des africanistes, 82 (1-2), 2012 ; lu le 13 octobre 2026 sur le site de la revue (OpenEdition), en accès libre, sans pagination imprimée. Résumé et début du texte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Pygmée est, selon l'article de l'encyclopédie Countries and Their Cultures, un terme en général méprisant, qui met en avant la taille des personnes. L'article note que les chercheurs préfèrent parler de « tropical forest foragers », des chasseurs-cueilleurs de la forêt tropicale, en attendant que ces peuples choisissent eux-mêmes comment on les appelle.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Aka – Countries and Their Cultures, Gale (encyclopedia.com)",
+                "author": "Gale, Countries and Their Cultures (article non signé dans la page lue)",
+                "year": null,
+                "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/aka",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Article lu le 13 octobre 2026 sur encyclopedia.com, sans date ni pagination. Il donne les noms Pygmies, Biaka, Bayaka et Bambenzele et la langue diaka. La page lue ne nomme pas l'auteur."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1694,
+              "to": 1694,
+              "label": "1694"
+            },
+            "statement": "Le nom Pygmée désigne en français, en 1694, un « petit homme qui n'a qu'une coudée de hauteur » ; selon les Anciens, les Pygmées combattaient les grues, d'après le Dictionnaire de l'Académie française.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Dictionnaire de l'Académie française, 1re édition, entrée « pygmée »",
+                "author": "Académie française",
+                "year": null,
+                "url": "https://www.dictionnaire-academie.fr/article/A1P0524",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "tome 2, p. 346",
+                "notes": "Entrée lue sur le site du Dictionnaire de l'Académie française le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
