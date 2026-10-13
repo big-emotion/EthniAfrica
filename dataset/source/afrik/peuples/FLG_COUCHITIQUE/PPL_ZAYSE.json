@@ -109,5 +109,98 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Zayse désigne un peuple d'Éthiopie et la langue qu'il parle, que les références associent à celle des Zargulla ou Zergulla. On ne sait pas comment le peuple zayse se nomme lui-même : aucune source que nous avons lue ne le dit. Seuls les Zargulla, un groupe proche, disent s'appeler Gamo. Les sources que nous avons lues ne disent pas d'où viennent ces noms.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Zayse",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du peuple et de sa langue ; on ne sait pas d'où il vient ni depuis quand il est écrit.",
+        "periodLabel": "En usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Zayse désigne une langue d'Éthiopie et le peuple qui la parle. La norme ISO 639-3 l'enregistre avec Zergulla sous le nom Zayse-Zergulla, code zay. On ne sait pas avec certitude d'où vient ce nom : les sources que nous avons lues n'en proposent pas d'explication.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "ISO 639-3, Zayse-Zergulla [zay]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/zay",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Zayse figure, avec Zaysse, Zeyse et Zaysete, parmi les noms de la langue que recense Glottolog. Les sources que nous avons lues ne disent ni qui l'emploie ni depuis quand.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Zayse-Zergulla (zays1235)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/zays1235",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue, lue le 13 octobre 2026 : elle recense Zayse, Zayse-Zergulla, Zaysse, Zaysé, Zeyse et Zaysete comme noms de la langue."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Zargulla",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un groupe proche des Zayse, qui se nomme lui-même Gamo ; on ne sait pas d'où il vient.",
+        "periodLabel": "En usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Zargulla, écrit aussi Zergulla, désigne un groupe de langue est-ometo d'environ 8 000 personnes selon le recensement de 1994, dans le district de Bonke. Ses membres se nomment eux-mêmes Gamo, selon le Centre d'études africaines de Leiden. On ne sait pas d'où vient le nom Zargulla.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Placing the Dead and Nurturing the Living: Documentation of house-construction and terrace farming in Zargulla",
+                "author": "Centre d'études africaines de Leiden (ASCL)",
+                "year": 2016,
+                "url": "https://www.ascleiden.nl/news/new-research-project-placing-dead-and-nurturing-living-documentation-house-construction-and",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Annonce d'un projet de recherche sur le zargulla, publiée le 13 octobre 2016 et lue le 13 octobre 2026. Elle dit : « The Zargulla (self-name 'Gamo') people live in parts of the Southern Ethiopian Highlands » et les compte à environ 8 000 selon le recensement de 1994."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -94,5 +94,110 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Tsamay, ou Tsamai, désigne un peuple du sud-ouest de l'Éthiopie et la langue qu'il parle. On ne sait pas comment ce peuple se nomme lui-même : le linguiste Graziano Savà appelle sa langue ts'amakko, mais aucune source que nous avons lue ne dit si c'est aussi le nom que le peuple se donne. D'autres formes existent, comme Tsemay. Les sources que nous avons lues ne disent pas d'où viennent ces noms.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Tsamai",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la langue dans la norme ISO ; on ne sait pas d'où il vient ni depuis quand il est écrit.",
+        "periodLabel": "En usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tsamai désigne une langue d'Éthiopie, le tsamai, et le peuple qui la parle. La norme ISO 639-3 l'enregistre sous le code tsb. On ne sait pas avec certitude d'où vient ce nom : les sources que nous avons lues n'en proposent pas d'explication.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "ISO 639-3, Tsamai [tsb]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/tsb",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tsamakko",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la langue chez le linguiste Graziano Savà, écrit Ts'amakko dans le titre de sa grammaire de 2005.",
+        "periodLabel": "Écrit dès 2005 ; en usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Tsamakko apparaît par écrit en 2005 dans le titre de la grammaire du linguiste Graziano Savà, A Grammar of Ts'amakko, selon la présentation de l'éditeur. Le linguiste a travaillé à Luqa, l'un des seize villages d'éleveurs du pays tsamakko. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Grammar of Tsamakko",
+                "author": "Graziano Savà",
+                "year": 2005,
+                "url": "https://www.koeppe.de/titel_a-grammar-of-tsamakko",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page de présentation de l'éditeur Rüdiger Köppe (Cologne), lue le 13 octobre 2026 : elle donne le titre, la collection Cushitic Language Studies (volume 22), 274 pages, et dit que la langue, le ts'amakko, est parlée par moins de 10 000 personnes dans le sud-ouest de l'Éthiopie. Nous n'avons lu que cette page ; elle ne dit pas si c'est aussi le nom que le peuple se donne."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tsemay",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre forme du nom Tsamay, recensée par les listes de langues ; on ne sait pas depuis quand.",
+        "periodLabel": "En usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tsemay figure, avec Tsamai, Tsamakko et Ts'amay, parmi les noms de la langue que recense Glottolog. Les sources que nous avons lues ne disent ni qui l'emploie ni depuis quand.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Tsamai (tsam1247)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/tsam1247",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue, lue le 13 octobre 2026 : elle recense Tsamai, Tsamakko, Tsamako, Ts'amay, Tsemay, S'amai, Tamaha, Cule, Kuile et Kule comme noms de la langue."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -119,5 +119,290 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Na'o désigne un peuple de la zone de Kafa, dans le sud-ouest de l'Éthiopie, qui se nomme lui-même Na'o. Nayi, ou Nayee, est le nom de sa langue. Ses voisins l'appellent autrement : Tol, Tolwo, Suc et La'andi. Les sources ne s'accordent pas sur l'origine du nom Na'o ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Na'o",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "noz",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; son origine est discutée. Écrit dès 1975 par l'ethnologue Werner Lange.",
+        "periodLabel": "Écrit dès 1975 ; en usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Na'o désigne un peuple de la zone de Kafa, dans le sud-ouest de l'Éthiopie. Selon Aemero Gesese, ses membres s'appellent eux-mêmes Na'o et Nayee, le premier mot pour la nation, le second pour la langue. L'origine du mot est discutée entre chercheurs.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A History of Na'o People of Goba Wäräda, Kafa Zone, Southwest Ethiopia: Ca. 1897-1991",
+                "author": "Aemero Gesese",
+                "year": 2019,
+                "url": "https://repository.ju.edu.et/handle/123456789/5286",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Mémoire de master, Université de Jimma, novembre 2019 ; lu le 13 octobre 2026 dans la version en ligne du dépôt de l'université. Pages imprimées au bas des feuillets."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Na'o viendrait d'un mot des Kaffecho qui veut dire « enfant », selon l'ethnologue Werner Lange. Les informateurs d'Aemero Gesese ne sont pas d'accord : ils disent que les Kaffecho emploient le mot bushoo pour « enfant ».",
+            "hypothesisGroup": "origine-nao",
+            "sources": [
+              {
+                "title": "A History of Na'o People of Goba Wäräda, Kafa Zone, Southwest Ethiopia: Ca. 1897-1991",
+                "author": "Aemero Gesese",
+                "year": 2019,
+                "url": "https://repository.ju.edu.et/handle/123456789/5286",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Mémoire de master, Université de Jimma, novembre 2019 ; lu le 13 octobre 2026 dans la version en ligne du dépôt de l'université. Pages imprimées au bas des feuillets. Gesese cite Werner Lange, thèse de l'université Goethe de Francfort, 1975, pp. 63-64 ; nous n'avons pas lu Lange. Informateurs cités : Tekele Luti, Dämese Bongo et Tämene Fäsysa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Na'o figure dans la thèse de 1975 de l'ethnologue Werner Lange sur les peuples du sud-ouest de l'Éthiopie, aux pages 63 et 64, selon Aemero Gesese. Nous n'avons pas lu Lange. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A History of Na'o People of Goba Wäräda, Kafa Zone, Southwest Ethiopia: Ca. 1897-1991",
+                "author": "Aemero Gesese",
+                "year": 2019,
+                "url": "https://repository.ju.edu.et/handle/123456789/5286",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Mémoire de master, Université de Jimma, novembre 2019 ; lu le 13 octobre 2026 dans la version en ligne du dépôt de l'université. Pages imprimées au bas des feuillets. Gesese cite Lange (Remnants of a Vanishing Culture, Francfort, 1975), pp. 63-64."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nayi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "noz",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue na'o et, par extension, du peuple ; écrit dès 1994 dans une esquisse de sa grammaire.",
+        "periodLabel": "Écrit dès 1994 ; en usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Nayi désigne la langue du peuple na'o et, par extension, ce peuple. La norme ISO 639-3 l'enregistre sous le code noz. Selon Aemero Gesese, les Na'o disent aussi Nayee pour leur langue.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "ISO 639-3, Nayi [noz]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/noz",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 13 octobre 2026."
+              },
+              {
+                "title": "A History of Na'o People of Goba Wäräda, Kafa Zone, Southwest Ethiopia: Ca. 1897-1991",
+                "author": "Aemero Gesese",
+                "year": 2019,
+                "url": "https://repository.ju.edu.et/handle/123456789/5286",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Mémoire de master, Université de Jimma, novembre 2019 ; lu le 13 octobre 2026 dans la version en ligne du dépôt de l'université. Pages imprimées au bas des feuillets."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "1994"
+            },
+            "era": "modern",
+            "statement": "Le nom Nayi apparaît par écrit en 1994 dans le titre d'une esquisse de la grammaire de cette langue, A sketch of the Nayi grammar, due au linguiste Aklilu Yilma, selon la bibliographie d'un rapport de 2002. Nous n'avons pas lu l'esquisse. C'est la plus ancienne trace de ce nom que le projet connaît ; la langue existait déjà avant elle.",
+            "formAsWritten": "Nayi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Sociolinguistic Survey Report of the Chara, Dime, Melo, and Nayi Languages of Ethiopia, Part I",
+                "author": "Aklilu Yilma et Ralph Siebert",
+                "year": 2002,
+                "url": "https://web.archive.org/web/2012/http://www.sil.org/silesr/2002/029/silesr2002-029.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11",
+                "notes": "Rapport électronique n° 2002-029 de SIL International ; lu le 13 octobre 2026 dans la copie de la Wayback Machine de 2012, car l'adresse d'origine ne répond plus. Pages imprimées en tête des feuillets. L'esquisse figure dans la liste des références : Yilma, Aklilu, 1994, S.L.L.E. Linguistic Reports 16:1-20."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tol",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Sheko et les Bench",
+        "shortLine": "Le nom que les Sheko et les Bench donnent aux Na'o ; Aemero Gesese ne lui trouve pas de sens.",
+        "periodLabel": "En usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tol est celui que les Sheko et les Bench donnent aux Na'o, selon Aemero Gesese, qui n'a pas pu en trouver le sens. On ne sait pas depuis quand ce nom est employé.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A History of Na'o People of Goba Wäräda, Kafa Zone, Southwest Ethiopia: Ca. 1897-1991",
+                "author": "Aemero Gesese",
+                "year": 2019,
+                "url": "https://repository.ju.edu.et/handle/123456789/5286",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Mémoire de master, Université de Jimma, novembre 2019 ; lu le 13 octobre 2026 dans la version en ligne du dépôt de l'université. Pages imprimées au bas des feuillets."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tolwo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Me'en de l'ouest",
+        "shortLine": "Le nom que les Me'en de l'ouest donnent aux Na'o ; Aemero Gesese ne lui trouve pas de sens.",
+        "periodLabel": "En usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Tolwo est celui que les Me'en de l'ouest donnent aux Na'o, selon Aemero Gesese, qui n'a pas pu en trouver le sens. On ne sait pas depuis quand ce nom est employé.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A History of Na'o People of Goba Wäräda, Kafa Zone, Southwest Ethiopia: Ca. 1897-1991",
+                "author": "Aemero Gesese",
+                "year": 2019,
+                "url": "https://repository.ju.edu.et/handle/123456789/5286",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Mémoire de master, Université de Jimma, novembre 2019 ; lu le 13 octobre 2026 dans la version en ligne du dépôt de l'université. Pages imprimées au bas des feuillets."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Suc",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Me'en de l'est",
+        "shortLine": "Le nom que les Me'en de l'est donnent aux Na'o ; Aemero Gesese ne lui trouve pas de sens.",
+        "periodLabel": "En usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Suc est celui que les Me'en de l'est, au-delà de la rivière Sharmi (qui disent aussi Su), donnent aux Na'o, selon Aemero Gesese, qui n'a pas pu en trouver le sens. On ne sait pas depuis quand ce nom est employé.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A History of Na'o People of Goba Wäräda, Kafa Zone, Southwest Ethiopia: Ca. 1897-1991",
+                "author": "Aemero Gesese",
+                "year": 2019,
+                "url": "https://repository.ju.edu.et/handle/123456789/5286",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Mémoire de master, Université de Jimma, novembre 2019 ; lu le 13 octobre 2026 dans la version en ligne du dépôt de l'université. Pages imprimées au bas des feuillets."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "La'andi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Chara",
+        "shortLine": "Le nom que les Chara donnent aux Na'o ; Aemero Gesese ne lui trouve pas de sens.",
+        "periodLabel": "En usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom La'andi est celui que les Chara donnent aux Na'o, selon Aemero Gesese, qui n'a pas pu en trouver le sens. On ne sait pas depuis quand ce nom est employé.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A History of Na'o People of Goba Wäräda, Kafa Zone, Southwest Ethiopia: Ca. 1897-1991",
+                "author": "Aemero Gesese",
+                "year": 2019,
+                "url": "https://repository.ju.edu.et/handle/123456789/5286",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3",
+                "notes": "Mémoire de master, Université de Jimma, novembre 2019 ; lu le 13 octobre 2026 dans la version en ligne du dépôt de l'université. Pages imprimées au bas des feuillets."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
