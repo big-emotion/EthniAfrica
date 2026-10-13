@@ -98,7 +98,7 @@
         "source_kind": "academic"
       },
       {
-        "title": "Dunham, Gordon – A Grammatical Sketch of Mbugwe (Bantu F.34, Tanzania), Koeppe Verlag",
+        "title": "Mous, Maarten – A Grammatical Sketch of Mbugwe (Bantu F.34, Tanzania), Koeppe Verlag, 2004",
         "url": "https://www.koeppe.de/titel_print_a-grammatical-sketch-of-mbugwe-bantu-f-34-tanzania",
         "tier": "referenced",
         "source_kind": "academic"
@@ -108,6 +108,155 @@
         "url": "https://scholarlypublications.universiteitleiden.nl/access/item:3144215/download",
         "tier": "referenced",
         "source_kind": "academic"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Mbugwe désigne un peuple du centre-nord de la Tanzanie, au sud du lac Manyara, et la langue qu'il parle. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Les Maasai appellent son pays Ltoroto. On ne sait pas avec certitude d'où vient le nom Mbugwe ; ce que disent les sources est présenté plus bas.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Mbugwe",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple du sud du lac Manyara, écrit Wambugwe depuis 1892 ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit Wambugwe dès 1892 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mbugwe est le nom de la langue dans la norme ISO 639-3, sous le code mgz. Maho la range, dans sa liste de 2009, sous le code F34, avec la variante Buwe. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, Mbugwe [mgz]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/mgz",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 13 octobre 2026."
+              },
+              {
+                "title": "New Updated Guthrie List Online (NUGL Online), version du 4 juin 2009",
+                "author": "Jouni Filip Maho",
+                "year": 2009,
+                "url": "https://web.archive.org/web/20180203191542/http://goto.glocalnet.net/mahopapers/nuglonline.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 45",
+                "notes": "Liste de classification des langues bantoues, lue le 13 octobre 2026 dans la copie du 3 février 2018 conservée par la Wayback Machine. Entrée F34, « Mbugwe mgz, Buwe »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2004,
+              "to": 2004,
+              "label": "2004"
+            },
+            "era": "modern",
+            "statement": "Le nom Mbugwe désigne chez le linguiste Maarten Mous un petit groupe de la région d'Arusha, autour de la ville de Magugu. Selon la présentation de son éditeur, des traditions orales disent que les Mbugwe étaient d'abord des Rangi, partis vers le nord chercher du sel.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Grammatical Sketch of Mbugwe (Bantu F.34, Tanzania)",
+                "author": "Maarten Mous",
+                "year": 2004,
+                "url": "https://www.koeppe.de/titel_print_a-grammatical-sketch-of-mbugwe-bantu-f-34-tanzania",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page de présentation de l'éditeur Köppe, lue le 13 octobre 2026. Nous n'avons pas lu le livre, publié en 2004 dans la collection Grammatical Analyses of African Languages ; la page ne donne pas de pagination."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1894,
+              "label": "Voyage de 1892-1893, livre de 1894"
+            },
+            "era": "polity",
+            "statement": "Le nom Wambugwe désigne chez Oscar Baumann un peuple qui forme avec les Warangi, c'est-à-dire les Rangi, un seul groupe, bien que leurs pays soient assez éloignés. Baumann écrit que les Wambugwe font venir leur origine d'Irangi, au sud, et que leur arrivée remonte à bien des générations.",
+            "formAsWritten": "Wambugwe",
+            "sources": [
+              {
+                "title": "Durch Massailand zur Nilquelle : Reisen und Forschungen der Massai-Expedition des deutschen Antisklaverei-Komite in den Jahren 1891-1893",
+                "author": "Oscar Baumann",
+                "year": 1894,
+                "url": "https://www.gutenberg.org/ebooks/68057",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 180-181",
+                "notes": "Berlin, Dietrich Reimer ; lu le 13 octobre 2026 dans l'édition du Projet Gutenberg, qui garde la pagination de l'original. Chapitre sur les peuples du bassin fermé ; la phrase commence « Die Stämme der Wambugwe und Warangi […] »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1894,
+              "label": "Voyage de 1892, livre de 1894"
+            },
+            "era": "polity",
+            "statement": "Le nom Mbugwe apparaît par écrit sous les formes Umbugwe, pour le pays, et Wambugwe, pour ses habitants, dans le récit de l'explorateur Oscar Baumann, qui y arrive au début de mars 1892 et y rencontre le chef Mtakayko. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Wambugwe",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Durch Massailand zur Nilquelle : Reisen und Forschungen der Massai-Expedition des deutschen Antisklaverei-Komite in den Jahren 1891-1893",
+                "author": "Oscar Baumann",
+                "year": 1894,
+                "url": "https://www.gutenberg.org/ebooks/68057",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 21-23",
+                "notes": "Berlin, Dietrich Reimer ; lu le 13 octobre 2026 dans l'édition du Projet Gutenberg, qui garde la pagination de l'original. Le pays est annoncé p. 18 et décrit p. 21-22 ; les habitants sont nommés Wambugwe p. 23. Baumann dit qu'aucun Européen n'y était encore venu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ltoroto",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "mas",
+        "namedBy": "Les Maasai",
+        "shortLine": "Le nom que les Maasai donnent au pays des Mbugwe, relevé par Baumann en 1892-1893.",
+        "periodLabel": "Écrit depuis 1894",
+        "accounts": [
+          {
+            "period": {
+              "from": 1892,
+              "to": 1894,
+              "label": "Voyage de 1892-1893, livre de 1894"
+            },
+            "era": "polity",
+            "statement": "Le nom Ltoroto apparaît par écrit chez Oscar Baumann comme le nom que les Maasai donnent au pays d'Umbugwe, ceux-ci ayant, écrit-il, leur propre nom pour chaque pays. Son guide Ndaikai lui annonce le « Ol Mangati Ltoroto », que Baumann traduit par « pays de guerre ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "aspect": "imposition",
+            "formAsWritten": "Ltoroto",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Durch Massailand zur Nilquelle : Reisen und Forschungen der Massai-Expedition des deutschen Antisklaverei-Komite in den Jahren 1891-1893",
+                "author": "Oscar Baumann",
+                "year": 1894,
+                "url": "https://www.gutenberg.org/ebooks/68057",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 21 et p. 165",
+                "notes": "Berlin, Dietrich Reimer ; lu le 13 octobre 2026 dans l'édition du Projet Gutenberg, qui garde la pagination de l'original. Le nom est donné p. 165 comme celui que les Maasai emploient pour Umbugwe ; la traduction « Kriegsland » figure p. 21."
+              }
+            ]
+          }
+        ]
       }
     ]
   }

@@ -93,5 +93,158 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Machinga désigne en Tanzanie un peuple de la côte sud, dans la région de Lindi, et la langue qu'il parle. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Le même mot désigne aussi un groupe yao, que les sources ne relient pas à ce peuple. On ne sait pas avec certitude d'où vient le nom Machinga ; ce que disent les sources est présenté plus bas.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Machinga",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom qui désigne en Tanzanie un peuple de la côte sud, et ailleurs un groupe yao ; son origine est inconnue.",
+        "periodLabel": "En usage aujourd'hui ; un mot déjà noté en 1866",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Machinga est le nom de la langue dans la norme ISO 639-3, sous le code mvw. Glottolog la range parmi les langues makonde, et Maho l'inclut dans le makonde, sous le code P23, dans sa liste de 2009.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, Machinga [mvw]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/mvw",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 13 octobre 2026."
+              },
+              {
+                "title": "New Updated Guthrie List Online (NUGL Online), version du 4 juin 2009",
+                "author": "Jouni Filip Maho",
+                "year": 2009,
+                "url": "https://web.archive.org/web/20180203191542/http://goto.glocalnet.net/mahopapers/nuglonline.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 84",
+                "notes": "Liste de classification des langues bantoues, lue le 13 octobre 2026 dans la copie du 3 février 2018 conservée par la Wayback Machine. Entrée P23, « Makonde kde, incl. Machinga mvw »."
+              },
+              {
+                "title": "Machinga – Glottolog 5.3, mach1265",
+                "author": "Hammarström, Forkel, Haspelmath et Bank (éd.), Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/mach1265",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue, lue le 13 octobre 2026. La classification donne Machinga sous Makonde ; le pays est la Tanzanie ; la notice ne donne pas d'autre nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens non daté"
+            },
+            "statement": "Le nom Machinga désigne en Tanzanie un peuple de la côte sud, dans la région de Lindi, et la langue qu'il parle. Le même mot désigne aussi un groupe yao. On ne sait pas avec certitude d'où vient ce nom, ni s'il s'agit du même mot ; les explications des sources sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "ISO 639-3, Machinga [mvw]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/mvw",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 13 octobre 2026."
+              },
+              {
+                "title": "The Last Journals of David Livingstone, in Central Africa, from 1865 to his Death, vol. I",
+                "author": "David Livingstone, édité par Horace Waller",
+                "year": 1874,
+                "url": "https://archive.org/details/lastjournalsofda01livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 46 et p. 50",
+                "notes": "Londres, John Murray, 1874 ; lu le 13 octobre 2026 dans la numérisation d'Internet Archive. Livingstone note en 1866 « the Machinga, a Waiyau tribe »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1950,
+              "to": 1950,
+              "label": "Rapportée en 1950"
+            },
+            "era": "colonial",
+            "statement": "Le nom Machinga viendrait du pays de collines appelé Machinga : chez les Yao, la tribu des Machinga réunit ceux qui font remonter leur ascendance aux Yao qui vivaient dans ce pays vallonné, selon l'archidiacre R. G. P. Lamburn. Ses notes disent que les tribus yao portent le nom du lieu où elles ont vécu d'abord. Elles ne disent pas si le même mot a donné son nom au peuple de Lindi.",
+            "hypothesisGroup": "sens-machinga",
+            "sources": [
+              {
+                "title": "Some Notes on the Yao",
+                "author": "Archidiacre R. G. P. Lamburn",
+                "year": 1950,
+                "url": "https://archive.org/details/tanzania-notes-records_1950-07_29",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 73",
+                "notes": "Tanganyika Notes and Records, n° 29, juillet 1950 ; lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; la page a été vérifiée sur l'image. Les notes ont été écrites « quelques années » plus tôt, dit la rédaction."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1866,
+              "to": 1874,
+              "label": "Journal de 1866, publié en 1874"
+            },
+            "era": "polity",
+            "statement": "Le nom Machinga, qu'on lit aussi Maxinga sur des cartes portugaises de la route vers Cazembe, signifie « montagnes » seulement, écrit David Livingstone le 9 novembre 1866 : on trouve aussi « Saxa de Maxinga », « rochers de montagnes » ou « montagnes de rochers ». Ce passage parle d'un nom de lieu. Il ne dit pas si le nom des gens en vient.",
+            "hypothesisGroup": "sens-machinga",
+            "sources": [
+              {
+                "title": "The Last Journals of David Livingstone, in Central Africa, from 1865 to his Death, vol. I",
+                "author": "David Livingstone, édité par Horace Waller",
+                "year": 1874,
+                "url": "https://archive.org/details/lastjournalsofda01livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 145",
+                "notes": "Londres, John Murray, 1874 ; lu le 13 octobre 2026 dans la numérisation d'Internet Archive. Passage daté du 9 novembre 1866, sur la géographie portugaise de la région du Mando."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1866,
+              "to": 1874,
+              "label": "Journal de 1866, publié en 1874"
+            },
+            "era": "polity",
+            "statement": "Le nom Machinga figure chez David Livingstone, qui note en 1866, près du Rovuma, les Machinga, « a Waiyau tribe », c'est-à-dire une tribu yao, dont il décrit la façon de se limer les dents. Les sources que nous avons lues ne disent pas s'il s'agit des mêmes gens que le peuple de Lindi. On ne sait pas avec certitude depuis quand le nom Machinga désigne ce dernier.",
+            "formAsWritten": "Machinga",
+            "sources": [
+              {
+                "title": "The Last Journals of David Livingstone, in Central Africa, from 1865 to his Death, vol. I",
+                "author": "David Livingstone, édité par Horace Waller",
+                "year": 1874,
+                "url": "https://archive.org/details/lastjournalsofda01livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 46 et p. 50",
+                "notes": "Londres, John Murray, 1874 ; lu le 13 octobre 2026 dans la numérisation d'Internet Archive. Livingstone voyage alors vers le Rovuma, avant d'arriver au Mataka."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

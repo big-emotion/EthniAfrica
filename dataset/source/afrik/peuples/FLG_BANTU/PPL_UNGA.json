@@ -101,5 +101,120 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Unga désigne un peuple de pêcheurs des îles et des marais du lac Bangweulu, en Zambie. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Les textes de 1911 écrivent Wa-Unga ou Waunga. On ne sait pas avec certitude d'où vient le nom Unga ; ce que disent les sources est présenté plus bas.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Unga",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des pêcheurs des îles et des marais du lac Bangweulu ; il s'écrit Wa-Unga depuis 1911.",
+        "periodLabel": "Écrit Wa-Unga dès 1911 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "2024"
+            },
+            "era": "modern",
+            "statement": "Le nom BaUnga désigne, chez Gwenna Breton et ses collègues, un peuple des zones humides de Bangweulu, apparenté aux Bemba, qui dit avoir trouvé les BaTwa à son arrivée de la République démocratique du Congo. Ils s'appuient sur le livre de Brelsford de 1946 et sur un rapport de 1994.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "BaTwa populations from Zambia retain ancestry of past hunter-gatherer groups",
+                "author": "Gwenna Breton, Lawrence Barham, George Mudenda, Himla Soodyall, Carina M. Schlebusch et Mattias Jakobsson",
+                "year": 2024,
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11344834/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Nature Communications, vol. 15, art. 7307, 2024 ; lu le 13 octobre 2026 dans la version HTML de PubMed Central, sans pagination. Les notes 48 et 49 de l'article renvoient à Brelsford (1946) et à Gregerson (1994)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Unga désigne chez l'anthropologue Ichiro Imai les seuls habitants des îles des marais de Bangweulu : les autres pêcheurs, les N'gumbo, les Kabende et les Eisa, viennent des villages de la terre ferme. Imai compte 16 000 Unga d'après le recensement de 1969, et dit que tous parlent le bemba. Sa carte de la région cite aussi les Mukulu, les Lunda, les N'gumbo, les Aushi, les Kabende, les Bisa, les Bemba et les Lala.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Fishing Life in the Bangweulu Swamps: A Socio-ecological Study of the Swamp Fishermen in Zambia",
+                "author": "Ichiro Imai",
+                "year": 1985,
+                "url": "https://jambo.africa.kyoto-u.ac.jp/kiroku/asm_suppl/abstracts/pdf/ASM%20%20Sup.4/Ichiro%20IMAI.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 51-52",
+                "notes": "African Study Monographs, Supplementary Issue 4, mars 1985, p. 49-88 ; lu le 13 octobre 2026 dans le PDF de l'université de Kyoto ; la page a été vérifiée sur le PDF. Le recensement cité est celui de 1969, dont le rapport final est de 1974."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Unga se retrouve, selon Frank Melland, dans Lunga, nom que l'on donne au nord du pays des Wa-Unga : il pense que Lunga serait une contraction de Lu-Unga. Il tient les Wa-Unga pour probablement une branche de la famille wisa-lala, installée de longue date au sud-est des marais de Bangweulu et venue, semble-t-il, d'un pays à l'ouest du Luapula. Il pense qu'ils ont probablement repoussé dans les marais profonds les premiers habitants, les Wa-Twa.",
+            "formAsWritten": "Wa-Unga",
+            "sources": [
+              {
+                "title": "Bangweulu Swamps and the Wa-Unga, The Geographical Journal, vol. 38, n° 4",
+                "author": "Frank H. Melland",
+                "year": 1911,
+                "url": "https://archive.org/details/sim_geographical-journal_1911-10_38_4",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 381",
+                "notes": "The Geographical Journal, octobre 1911 ; lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; la page a été vérifiée sur l'image. L'auteur signe « Native Commissioner, South Awemba Division, North-East Rhodesia ». Melland dit connaître les Wa-Unga depuis neuf ans, mais peu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Unga apparaît par écrit sous la forme Wa-Unga chez Frank Melland, dans un article d'octobre 1911, et sous la forme Waunga chez Cullen Gouldsbury et Hubert Sheane, dans un livre de 1911. Nous ne savons pas lequel des deux textes est le plus ancien. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Wa-Unga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Bangweulu Swamps and the Wa-Unga, The Geographical Journal, vol. 38, n° 4",
+                "author": "Frank H. Melland",
+                "year": 1911,
+                "url": "https://archive.org/details/sim_geographical-journal_1911-10_38_4",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 381",
+                "notes": "The Geographical Journal, octobre 1911 ; lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; la page a été vérifiée sur l'image. L'auteur signe « Native Commissioner, South Awemba Division, North-East Rhodesia ». Titre de l'article et premières lignes : « Bangweulu Swamps and the Wa-Unga »."
+              },
+              {
+                "title": "The Great Plateau of Northern Rhodesia: Being Some Impressions of the Tanganyika Plateau",
+                "author": "Cullen Gouldsbury et Hubert Sheane",
+                "year": 1911,
+                "url": "https://archive.org/details/greatplateauofno00goul",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 13-14",
+                "notes": "Londres, Edward Arnold, 1911 ; lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; la page a été vérifiée sur l'image. Le passage « The Waunga » est à la fin de la p. 13 et au début de la p. 14."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
