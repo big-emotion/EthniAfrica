@@ -76,5 +76,116 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web combinant « Kiwanuka », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de l'ouvrage d'Aloysius M. Lugira sur la religion traditionnelle africaine, notamment sa notice Kiwanuka consacrée au monde spirituel baganda, n'ont pas établi de lignée homonyme d'origine distincte ni d'autre homonyme documentable."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kiwanuka est un nom de personne ganda. C'est aussi le nom d'un dieu des Baganda, celui de la foudre. Il apparaît par écrit en 1886 chez un missionnaire. Les sources lues ne disent pas si le nom des personnes vient de celui du dieu, et on ne sait pas avec certitude ce qu'il veut dire.",
+    "names": [
+      {
+        "nameText": "Kiwanuka",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lug",
+        "namedBy": null,
+        "shortLine": "Un nom ganda, aussi celui du dieu de la foudre ; on ne sait pas si le nom des personnes vient du dieu.",
+        "periodLabel": "Écrit dès 1886 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1998,
+              "to": 1998,
+              "label": "Liste de martyrs publiée en 1998"
+            },
+            "era": "modern",
+            "statement": "Le nom Kiwanuka est porté par deux des martyrs ganda du XIXe siècle, selon les listes d'un travail d'étudiant de 1998 : « A. Kiwanuka » parmi les martyrs catholiques et « Kiwanuka Gayaza » parmi les martyrs protestants. Ce travail ne dit pas d'où vient leur nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Naming Systems of the Baganda and Their Significance for Christian Baptism",
+                "author": "Willy Frank Lukati",
+                "year": 1998,
+                "url": "https://repository.tangaza.ac.ke/server/api/core/bitstreams/5b87969e-a6ef-48b5-8544-73e1d45e750b/content",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 7 et p. 42",
+                "notes": "Travail de fin d'études en études religieuses, Tangaza College (université catholique d'Afrique de l'Est), Nairobi, février 1998, lu dans son texte intégral. Page 7 : « The Catholic martyrs who were burnt at Namugongo were: … A. Kiwanuka … » et « The Protestant martyrs who were burnt at Namugongo were: … Kiwanuka Gayaza … ». Page 42 : la liste des vingt-deux martyrs catholiques donne encore « A. Kiwanuka ». Pages relues dans le texte extrait du PDF. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Article de 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Kiwanuka est celui d'un dieu des Baganda, qu'un article de 2018 appelle « god of lightning » et dit fils de Katonda-Ggulu, le dieu du ciel.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Uganda: The Ganda Tradition",
+                "author": "David Musoke",
+                "year": 2018,
+                "url": "https://combonimissionaries.ie/?p=2488",
+                "tier": "unverified",
+                "source_kind": "community",
+                "page": "section sur les dieux, paragraphe sur Katonda-Ggulu",
+                "notes": "Article publié le 2 mars 2018 sur le site des missionnaires comboniens d'Irlande ; il ne cite aucune source écrite. Il dit Kiwanuka « god of lightning », fils de Katonda-Ggulu, « god of the sky ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kiwanuka est celui d'un dieu de la foudre chez les Baganda, selon John Roscoe. Quand la foudre frappait un jardin et abattait des arbres, les femmes jetaient un couteau et de l'herbe hors de la maison, pour dire au dieu Kiwanuka qu'elles étaient là et qu'il n'avait pas besoin de couper d'autres arbres fruitiers.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 432",
+                "notes": "Londres, Macmillan, 1911 ; exemplaire numérisé de l'université de Toronto sur archive.org. Chapitre XIII, « Agriculture and Food », p. 432 : « When lightning struck a garden and killed some of the trees, the women threw a knife and some grass out at the door, to let the god Kiwanuka know that they were there ». Le texte numérisé donne « someof » ; nous corrigeons l'espace. Ethnographie de l'époque coloniale, citée pour ce que les Ganda lui ont raconté, non pour ses classements. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1886,
+              "to": 1887,
+              "label": "Fin 1886 ou début 1887, récit publié en 1889"
+            },
+            "era": "polity",
+            "statement": "Le nom Kiwanuka apparaît par écrit chez le missionnaire Robert P. Ashe, comme celui du « God of Thunder ». Après l'incendie de l'enclos du roi Mwanga, la foudre frappe le magasin du premier ministre, et Ashe écrit que Kiwanuka, le dieu du tonnerre, ne pouvait pas laisser le roi chassé de ses maisons par le feu sans envoyer un coup de foudre chez le premier ministre. C'est la plus ancienne trace de ce nom que le projet connaît. Les Baganda existaient déjà avant lui.",
+            "formAsWritten": "Kiwanuka",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Robert P. Ashe",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Two Kings of Uganda; or, Life by the Shores of Victoria Nyanza",
+                "author": "Robert P. Ashe",
+                "year": 1890,
+                "url": "https://archive.org/details/twokingsofuganda00ashe",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 210",
+                "notes": "Londres, Sampson Low, Marston, Searle & Rivington, 1890, « nouvelle édition à bon marché » (le livre est paru pour la première fois en 1889) ; exemplaire numérisé sur archive.org. Page 210 : « The chancellor's store-house was soon struck by lightning. Kiwanuka, the God of Thunder, could not allow the divine Kabaka to be driven out of his houses by fire without sending a thunderbolt into the Katikiro's enclosure ». Le passage suit le récit d'une lettre portée au roi le 3 décembre 1886 (p. 206) : l'incendie date de peu après. Missionnaire, cité pour les formes qu'il écrit. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -61,11 +61,11 @@
   "sources": [
     {
       "sourceKey": "tangaza-ganda-kizza",
-      "title": "Naming among the Ganda",
+      "title": "The Naming Systems of the Baganda and Their Significance for Christian Baptism",
       "url": "https://repository.tangaza.ac.ke/server/api/core/bitstreams/5b87969e-a6ef-48b5-8544-73e1d45e750b/content",
       "tier": "referenced",
       "source_kind": "repository",
-      "notes": "Étude de Tangaza College consultée dans son PDF intégral. La section 3.3.2 sur les noms circonstanciels cite explicitement Kizza et renvoie à M. B. Nsimbi, Amannya Amaganda N'ennono Zaago (1980). Le document distingue ces noms des noms de clan dans une section séparée."
+      "notes": "Travail de fin d'études de Willy Frank Lukati, Tangaza College, Nairobi, février 1998, lu dans son texte intégral. La section 3.3.2 sur les noms circonstanciels cite explicitement Kizza et renvoie à M. B. Nsimbi, Amannya Amaganda N'ennono Zaago (1980). Le document distingue ces noms des noms de clan dans une section séparée."
     }
   ],
   "gaps": [
@@ -85,5 +85,43 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web combinant « Kizza », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de l'étude de Tangaza College sur la nomination chez les Ganda, sa section sur les noms circonstanciels et son renvoi à M. B. Nsimbi, n'ont pas établi de lignée homonyme d'origine distincte ni d'autre homonyme documentable."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kizza est un nom de personne ganda. Chez les Baganda, on le donne à l'enfant, garçon ou fille, qui naît après des jumeaux. On ne sait pas avec certitude ce qu'il veut dire. Les sources lues n'en donnent qu'une description récente : le projet ne connaît pas encore sa première trace écrite.",
+    "names": [
+      {
+        "nameText": "Kizza",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lug",
+        "namedBy": null,
+        "shortLine": "Un nom ganda donné à l'enfant qui naît après des jumeaux ; sa plus ancienne trace écrite est inconnue.",
+        "periodLabel": "Décrit en 1998 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1998,
+              "to": 1998,
+              "label": "Travail d'étudiant de 1998"
+            },
+            "era": "modern",
+            "statement": "Le nom Kizza fait partie des noms que les Baganda donnent selon les circonstances de la naissance : on le donne à l'enfant, garçon ou fille, qui naît après des jumeaux. Cet usage est décrit dans un travail d'étudiant de 1998, qui renvoie pour ces noms de circonstance au livre de M. B. Nsimbi sur les noms ganda, paru en 1980.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Naming Systems of the Baganda and Their Significance for Christian Baptism",
+                "author": "Willy Frank Lukati",
+                "year": 1998,
+                "url": "https://repository.tangaza.ac.ke/server/api/core/bitstreams/5b87969e-a6ef-48b5-8544-73e1d45e750b/content",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 18",
+                "notes": "Travail de fin d'études en études religieuses, Tangaza College (université catholique d'Afrique de l'Est), Nairobi, février 1998, lu dans son texte intégral. Section 3.3.2, « Circumstantial Names », p. 18 : « KIZZA: This is a name given to a child (whether a boy or a girl) who follows the twins. » ; la note 45 renvoie à M. B. Nsimbi, Amannya Amaganda N'ennono zaago, Kampala, Longman, 1980, p. 5. Nous n'avons pas lu le livre de Nsimbi. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

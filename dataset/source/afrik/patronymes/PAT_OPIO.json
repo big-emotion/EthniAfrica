@@ -53,7 +53,7 @@
     {
       "sourceKey": "agea-eton-lango-naming-2026",
       "title": "Naming as Cultural Epistemology: Knowledge, Belief, and Identity in Lango Personal Naming",
-      "url": "https://www.researchgate.net/publication/405133463_Naming_as_Cultural_Epistemology_Knowledge_Belief_and_Identity_in_Lango_Personal_Naming",
+      "url": "https://doi.org/10.37284/eajtcr.9.1.5010",
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Jacob Godfrey Agea et Marus Eton, East African Journal of Traditions, Culture and Religion 9(1), 2026, DOI 10.37284/eajtcr.9.1.5010. L’étude de 131 noms recueillis auprès de 78 détenteurs de savoir donne Ocen/Acen pour le second jumeau et Opio/Apio pour le premier."
@@ -84,5 +84,113 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches sur la graphie exacte « Opio » dans les index onomastiques et l’enquête de terrain d’Agea et Eton sur 131 noms lango et les recherches par graphie exacte dans ses tableaux n’ont pas établi une seconde origine distincte disposant de sa propre provenance."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Opio est un nom de personne des peuples luo du nord de l'Ouganda, donné à l'aîné de jumeaux, Apio pour une fille. Les Acholi l'écrivent aussi Opiyo. Ce n'est pas un nom de famille reçu des parents. Johnston le relevait déjà en 1902 chez les Luo du Kavirondo.",
+    "names": [
+      {
+        "nameText": "Opio",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "laj",
+        "namedBy": null,
+        "shortLine": "Un nom donné à l'aîné de jumeaux chez les Langi ; Apio au féminin.",
+        "periodLabel": "Écrit dès 1902 ; donné aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2026,
+              "to": 2026,
+              "label": "Décrit en 2026"
+            },
+            "era": "modern",
+            "statement": "Le nom Opio est donné chez les Langi au premier-né de jumeaux, Apio pour une fille, selon Jacob Godfrey Agea et Marus Eton. Ils y voient un rang à part, celui de la primauté entre jumeaux.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Naming as Cultural Epistemology: Knowledge, Belief, and Identity in Lango Personal Naming",
+                "author": "Jacob Godfrey Agea et Marus Eton",
+                "year": 2026,
+                "url": "https://doi.org/10.37284/eajtcr.9.1.5010",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 266",
+                "notes": "East African Journal of Traditions, Culture and Religion 9(1), 2026, p. 251-273. Tableau 8 : Opio/Apio, « The firstborn twin, holding special cultural significance… symbolic primacy within twinship traditions ». Étude de 131 noms recueillis auprès de 78 détenteurs de savoir langi. PDF de la revue lu en entier. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Décrit en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Opio est écrit Opiyo chez les Acholi, où il désigne l'aîné de jumeaux, Apiyo pour une fille, selon Charles Amone.",
+            "sources": [
+              {
+                "title": "Identity, Memory and Gender in Child Naming Among the Acholi People of Northern Uganda",
+                "author": "Charles Amone",
+                "year": 2014,
+                "url": "https://ijournals.in/wp-content/uploads/2017/07/IJSRC-2505.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 20",
+                "notes": "International Journal of Social Relevance & Concern 2(5), 2014, p. 17-24. Tableau des noms de jok : Opiyo/Apiyo, « Elder of twins ». Historien de l'université de Gulu. Texte du PDF lu en entier. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Opio est celui de l'aîné de deux jumeaux garçons chez les Langi, selon l'administrateur Jack Herbert Driberg, qui le donne aussi à l'aîné quand le cadet est une fille. Il ajoute que si l'un de ces enfants meurt à la naissance, le garçon suivant s'appelle Opio, qu'il soit jumeau ou non.",
+            "sources": [
+              {
+                "title": "The Lango: A Nilotic Tribe of Uganda",
+                "author": "J. H. Driberg",
+                "year": 1923,
+                "url": "https://archive.org/details/in.ernet.dli.2015.218025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 152",
+                "notes": "Londres, T. Fisher Unwin, 1923. Page 152 : tableau des noms de jumeaux (« Two males. — Name of elder : Opio ») et note 1 : « Should one of these die at birth, the next male child is called Opio, whether one of twins or not ». Administrateur colonial britannique, cité pour ce qu'il écrit des Langi. Numérisation de la Digital Library of India hébergée par Internet Archive ; page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "statement": "Le nom Opio apparaît par écrit chez l'administrateur britannique Harry Johnston : il écrit « Opio » comme un nom d'homme et « Apio » comme un nom de femme chez les Ja-luo, c'est-à-dire les Luo du Kavirondo, en expliquant que le a devant la racine marque la femme et le o l'homme. C'est la plus ancienne trace de ce nom que le projet connaisse ; elle parle des Luo du Kavirondo, pas des Langi, et le nom est plus ancien qu'elle.",
+            "formAsWritten": "Opio",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Harry Johnston",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Uganda Protectorate, vol. II",
+                "author": "Harry Johnston",
+                "year": 1902,
+                "url": "https://archive.org/details/cu31924087982504",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 795",
+                "notes": "Londres, Hutchinson, 1902 ; numérisation d'Internet Archive. Page 795, section sur les Nilotiques de la région du lac Victoria, à propos des Ja-luo : « Men and women have the same names. But in many instances… “Opio” is a male name, and “Apio” is a female name. » Administrateur britannique, cité pour ce qu'il écrit. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

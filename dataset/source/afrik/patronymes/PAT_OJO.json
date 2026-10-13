@@ -92,5 +92,101 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches « Ojo homonym etymology » et « Ojo surname origin other language » n'ont pas établi une graphie identique d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ojo est un nom yoruba, au Nigeria, que l'on donne à un garçon d'après les circonstances de sa naissance : il est venu au monde avec le cordon ombilical autour du cou. Ce n'est pas le nom d'un clan. Les sources lues disent à qui on le donne, pas ce que le mot veut dire. On l'écrit aussi Òjó.",
+    "names": [
+      {
+        "nameText": "Ojo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "yor",
+        "namedBy": null,
+        "shortLine": "Un nom yoruba donné à un garçon né avec le cordon autour du cou.",
+        "periodLabel": "Écrit dès 1921 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ojo est un nom yoruba, au Nigeria, que l'on donne à un garçon né avec le cordon ombilical enroulé autour du cou. Pour la même naissance, une fille reçoit Aina. On ne sait pas avec certitude ce que le mot lui-même veut dire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Òjó — YorubaNames",
+                "author": "YorubaNames",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/Ojo?lang=yo",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Dictionnaire collaboratif des noms yoruba, lu le 13 octobre 2026. Il écrit Òjó avec tous ses tons. Il le glose « A male child who was born with his umbilical cord tied around his neck », le range parmi les noms àmútọ̀runwá, « brought from heaven », et donne Àìná comme nom de même sens, surtout pour les filles. La page ne nomme pas ses contributeurs."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ojo apparaît par écrit chez Samuel Johnson, dans sa liste des noms yoruba donnés d'après les circonstances de la naissance : un enfant né avec le cordon autour du cou s'appelle Ojo ou Aina, et Ojo n'est jamais donné à une fille. C'est la plus ancienne trace de ce nom que le projet connaît ; le livre paraît après la mort de l'auteur et le nom existait avant lui.",
+            "formAsWritten": "Ojo",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Samuel Johnson",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The History of the Yorubas",
+                "author": "Samuel Johnson",
+                "year": 1921,
+                "url": "https://archive.org/details/historyofyorubas00john",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 81",
+                "notes": "Première édition en 1921, préparée par O. Johnson d'après le manuscrit de l'auteur, pasteur d'Oyo, mort en 1901. Lu sur l'exemplaire numérisé d'archive.org (Lagos, CMS Bookshops) le 13 octobre 2026. Page 81, section « Yoruba names » : « Ojo or Aina is a child born with the cord twined round its neck. […] Ojo, however, is never given to females, Aina may be male or female. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Òjó",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "yor",
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Òjó est l'écriture du même nom avec ses tons. Le dictionnaire YorubaNames l'écrit ainsi.",
+            "sources": [
+              {
+                "title": "Òjó — YorubaNames",
+                "author": "YorubaNames",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/Ojo?lang=yo",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Dictionnaire collaboratif des noms yoruba, lu le 13 octobre 2026. Il écrit Òjó avec tous ses tons. Il le glose « A male child who was born with his umbilical cord tied around his neck », le range parmi les noms àmútọ̀runwá, « brought from heaven », et donne Àìná comme nom de même sens, surtout pour les filles. La page ne nomme pas ses contributeurs."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

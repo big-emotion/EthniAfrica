@@ -95,5 +95,64 @@
       "fieldPath": "nameSystem",
       "reason": "Aucune source consultée ne fait de Eze un nom de clan : les sources y voient le titre ezè, « roi » ou « chef », employé aussi comme nom personnel. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet jamais."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Eze est aussi un mot igbo, au Nigeria, qui veut dire « roi ». Les sources lues ne disent pas depuis quand il est porté comme nom de personne, ni comment il passe d'une génération à l'autre comme nom de famille.",
+    "names": [
+      {
+        "nameText": "Eze",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ibo",
+        "namedBy": null,
+        "shortLine": "Un mot igbo qui veut dire « roi », porté comme nom de personne ; écrit dès 1899.",
+        "periodLabel": "Écrit dès 1899 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1899,
+              "to": 1899,
+              "label": "Décrit en 1899"
+            },
+            "statement": "Le nom Eze est aussi un mot igbo : le père A. Ganot le traduit « roi » dans sa grammaire de 1899. Les sources lues ne disent pas si le nom de personne vient de ce mot.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Grammaire ibo",
+                "author": "A. Ganot",
+                "year": 1899,
+                "url": "https://archive.org/details/grammaireibo00gano",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 93",
+                "notes": "Paris, Librairie orientale et américaine, 1899, par le P. A. Ganot, de la Congrégation du Saint-Esprit ; exemplaire numérisé sur archive.org. Page 93, « Exercice V, Vocabulaire » : « ézè, roi ». Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1899,
+              "to": 1899,
+              "label": "Publié en 1899"
+            },
+            "statement": "Le nom Eze apparaît par écrit sous la forme ézè dans la grammaire du père A. Ganot, publiée à Paris en 1899, qui le traduit « roi ». C'est la plus ancienne trace de ce nom que le projet connaît ; c'est un mot de la langue, pas la preuve d'un nom porté par des personnes.",
+            "formAsWritten": "ézè",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Grammaire ibo",
+                "author": "A. Ganot",
+                "year": 1899,
+                "url": "https://archive.org/details/grammaireibo00gano",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 93",
+                "notes": "Paris, Librairie orientale et américaine, 1899, par le P. A. Ganot, de la Congrégation du Saint-Esprit ; exemplaire numérisé sur archive.org. Page 93, « Exercice V, Vocabulaire » : « ézè, roi ». Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -101,5 +101,113 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches sur la graphie exacte « Chebet » dans les index onomastiques et la thèse kipsigis de Bossi (2023) et l’étude du système tugen de Jerono (2019) n’ont pas établi une seconde origine distincte disposant de sa propre provenance."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Chebet est un nom de personne kipsigis, un peuple kalenjin du Kenya : la linguiste Madeline Claire Bossi l'emploie pour une femme dans ses exemples. On ne sait pas avec certitude ce qu'il veut dire. Le projet propose une lecture, fondée sur Hollis (1909) : un nom de naissance féminin bâti sur le mot « jour ».",
+    "names": [
+      {
+        "nameText": "Chebet",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "sgc",
+        "namedBy": null,
+        "shortLine": "Un nom de personne kipsigis, féminin ; son sens est discuté, peut-être lié au mot « jour ».",
+        "periodLabel": "Écrit dès 2023 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1909,
+              "to": 1909,
+              "label": "Lecture du projet, d'après un livre de 1909"
+            },
+            "statement": "Le nom Chebet serait un nom de naissance féminin bâti sur pet, « jour » : chez les Nandi, Hollis donne Ki-pet pour un garçon « né le matin », note que le préfixe che ou chep marque la fille, et définit pet comme le moment du jour de 9 h à 14 h. Hollis ne cite pas Chebet : c'est une lecture du projet, qui rapproche ces deux passages.",
+            "aspect": "meaning",
+            "hypothesisGroup": "origine du nom Chebet",
+            "sources": [
+              {
+                "title": "The Nandi, their language and folk-lore",
+                "author": "Alfred Claud Hollis",
+                "year": 1909,
+                "url": "https://archive.org/details/cu31924029888777",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 67 et p. 96",
+                "notes": "Oxford, Clarendon Press, 1909 ; numérisation d'Internet Archive. Page 67 : liste des noms de naissance, « Ki-pet, born in the morning » ; note 1 : « The feminine prefix, chep (chem, che), is used in all the following names if a girl ». Page 96 : « The day is divided as follows… Pet, from 9 a.m. to 2 p.m. ». Administrateur colonial britannique, cité pour ce qu'il écrit des Nandi, voisins et proches des Kipsigis. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Chebet apparaît par écrit chez la linguiste Madeline Claire Bossi, qui l'emploie comme nom de femme dans ses phrases d'exemple sur le kipsigis et le traduit « Chebet » : « Chebet hit herself ». Elle l'écrit aussi Cheebeet, avec Kibeet pour un autre nom donné en exemple. C'est la plus ancienne trace de ce nom que le projet connaisse ; elle dit quand une autrice l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Chebet",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Madeline Claire Bossi",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Epistemic modality across syntactic categories in Kipsigis",
+                "author": "Madeline Claire Bossi",
+                "year": 2023,
+                "url": "https://escholarship.org/uc/item/7d70r63x",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 57 du PDF, exemple (110)",
+                "notes": "Thèse, University of California, Berkeley, 2023, 174 pages du PDF. Exemple (110) : « Chebet hit herself » ; exemple (196), p. 83 : « Kibeet ‘Kibet’ and Cheebeet ‘Chebet’ ». Texte intégral lu ; la page indiquée est celle du PDF. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Chebeet",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "sgc",
+        "namedBy": null,
+        "shortLine": "La graphie Chebeet du même nom, à voyelle redoublée.",
+        "periodLabel": "Écrit dès 2023",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Chebeet est une autre graphie de Chebet, qui double la voyelle : Madeline Claire Bossi écrit Cheebeet, et Chéebéèt avec les tons, dans ses exemples. C'est la plus ancienne trace de cette graphie que le projet connaisse.",
+            "formAsWritten": "Cheebeet",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Madeline Claire Bossi",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Epistemic modality across syntactic categories in Kipsigis",
+                "author": "Madeline Claire Bossi",
+                "year": 2023,
+                "url": "https://escholarship.org/uc/item/7d70r63x",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 61 et p. 88 du PDF, exemples (123) et (219)",
+                "notes": "Thèse, University of California, Berkeley, 2023, 174 pages du PDF. Exemple (123) : « Chéebéèt… ‘Chebet brought me to him’ » ; exemple (219) : « Cheebeet… ‘I told Chebet… ’ ». Texte intégral lu ; la page indiquée est celle du PDF. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

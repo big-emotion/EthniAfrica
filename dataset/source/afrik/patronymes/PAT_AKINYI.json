@@ -92,5 +92,94 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches sur la graphie exacte « Akinyi » dans les index onomastiques et les sections anthroponymiques d’Oluoch (2022) et de Dholuo Grammar for Beginners n’ont pas établi une seconde origine distincte disposant de sa propre provenance."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Akinyi est un nom de personne luo, du Kenya : on le donne à une fille née au lever du soleil, de 5 h à 7 h du matin. Okinyi est sa forme masculine. Chez les Luo, ce n'est pas un nom de clan : c'est le nom d'esprit que reçoit l'enfant selon l'heure de sa naissance.",
+    "names": [
+      {
+        "nameText": "Akinyi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "luo",
+        "namedBy": null,
+        "shortLine": "Un nom donné à une fille née au lever du soleil ; Okinyi pour un garçon.",
+        "periodLabel": "Écrit dès 2022 ; donné aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Décrit en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Akinyi est un nom d'esprit, ou « nying juok », chez les Luo : on le donne à l'enfant né au lever du soleil, entre 5 h et 7 h, Okinyi au garçon, selon Angeline Oluoch. Le préfixe a marque la fille, le o le garçon. L'enfant reçoit d'abord un prénom courant, puis ce nom d'esprit.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Morpho-semantic Study of Toponyms in Dholuo",
+                "author": "Angeline A. Oluoch",
+                "year": 2022,
+                "url": "https://erepository.uonbi.ac.ke/items/a3c4bee8-cbe3-4861-95be-02de1999ade8",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 31",
+                "notes": "Mémoire, University of Nairobi, 2022. Section sur l'anthroponymie dholuo : le « nying juok », nom d'esprit, vient de la place du soleil à la naissance. « …at sunrise, (5-7 am) the juok name is Akinyi/Okinyi », puis Anyango de 7 h à 10 h, Achieng de 11 h à 13 h, Odhiambo/Adhiambo en fin d'après-midi. Texte intégral lu depuis le dépôt de l'université. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Décrit en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Akinyi est d'abord un nom de naissance, non un nom de famille : Angeline Oluoch écrit que, chez les Luo, le nom du père s'ajoute après les deux premiers noms de l'enfant et que le troisième nom est d'ordinaire le nom de famille.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Morpho-semantic Study of Toponyms in Dholuo",
+                "author": "Angeline A. Oluoch",
+                "year": 2022,
+                "url": "https://erepository.uonbi.ac.ke/items/a3c4bee8-cbe3-4861-95be-02de1999ade8",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 31",
+                "notes": "Mémoire, University of Nairobi, 2022. Même page : « Dholuo upholds the Patronymic naming system with the father's names assigned as additional ones after the child's first and second names ; the third name is usually the surname ». Texte intégral lu depuis le dépôt de l'université. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Akinyi apparaît par écrit chez Angeline Oluoch, dans un mémoire sur les noms de lieux en dholuo, qui l'écrit Akinyi/Okinyi. C'est la plus ancienne trace de ce nom que le projet connaisse ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Akinyi/Okinyi",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Angeline A. Oluoch",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Morpho-semantic Study of Toponyms in Dholuo",
+                "author": "Angeline A. Oluoch",
+                "year": 2022,
+                "url": "https://erepository.uonbi.ac.ke/items/a3c4bee8-cbe3-4861-95be-02de1999ade8",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 31",
+                "notes": "Mémoire, University of Nairobi, 2022. Section sur l'anthroponymie dholuo : le « nying juok », nom d'esprit, vient de la place du soleil à la naissance. « …at sunrise, (5-7 am) the juok name is Akinyi/Okinyi », puis Anyango de 7 h à 10 h, Achieng de 11 h à 13 h, Odhiambo/Adhiambo en fin d'après-midi. Texte intégral lu depuis le dépôt de l'université. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

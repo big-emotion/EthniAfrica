@@ -78,5 +78,66 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web et bibliographique combinant « Mutiso », « Kamba », « le Kenya », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a pas établi de lignée homonyme d’origine distincte documentable ; la diffusion dans plusieurs pays ne suffit pas à créer un homonyme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mutiso est un nom de personne du Kenya, que l'on trouve à Machakos, en pays kamba. On ne sait pas avec certitude ce qu'il veut dire : les sources lues ne lui donnent pas de sens, et aucune ne dit s'il est un nom kamba de naissance.",
+    "names": [
+      {
+        "nameText": "Mutiso",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne trouvé à Machakos, au Kenya ; son sens reste inconnu.",
+        "periodLabel": "Écrit dès 1955",
+        "accounts": [
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Décrit en 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Mutiso n'est pas cité dans l'étude de David Caballero Mariscal sur les noms kamba de Machakos. Elle explique qu'un Kamba reçoit à sa naissance un nom lié au moment du jour, au temps qu'il fait ou à une circonstance de la grossesse ou de l'accouchement ; aucune source lue ne dit si Mutiso en fait partie. On ne sait pas avec certitude ce qu'il veut dire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Nombres tradicionales kamba como instrumento de relación y elemento representativo de identidad y patrimonio intangible entre los akamba del área rural Machakos",
+                "author": "David Caballero Mariscal",
+                "year": 2018,
+                "url": "https://uhu.es/publicaciones/ojs/index.php/erebea/article/view/3569",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 61-87",
+                "notes": "Erebea. Revista de Humanidades y Ciencias Sociales, n° 8, 2018, p. 61-87 ; enquête de terrain auprès d'une famille kamba de la région rurale de Machakos, en 2017. Lu le 13 octobre 2026 (texte en espagnol). Résumé et tableau 3 : le nom donné à la naissance dépend du moment du jour, du temps ou d'une circonstance de la naissance ; le tableau ne contient pas Mutiso."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1955,
+              "to": 1955,
+              "label": "1955"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mutiso apparaît par écrit dans la liste des personnes entendues par la commission royale pour l'Afrique de l'Est, en 1953-1955 : « Mutiso, Mr. Joseph, Machakos ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un rapport l'a écrit, pas depuis quand le nom est porté.",
+            "formAsWritten": "Mutiso",
+            "birth": true,
+            "sources": [
+              {
+                "title": "East Africa Royal Commission 1953-1955 Report",
+                "author": "East Africa Royal Commission",
+                "year": 1955,
+                "url": "https://archive.org/details/east-africa-rcomm-1953-55",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 453",
+                "notes": "Cmd. 9475, présenté au Parlement en juin 1955. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive. Appendice III, « Names of Persons who gave evidence before the Royal Commission », partie Kenya, page 453 : « Mutiso, Mr. Joseph, Machakos »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

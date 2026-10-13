@@ -84,5 +84,136 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches sur la graphie exacte « Kipchoge » dans les index onomastiques et l’article NOS qui énonce le nom et les recherches bibliographiques Kalenjin/Tugen/Kipsigis par graphie exacte n’ont pas établi une seconde origine distincte disposant de sa propre provenance."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kipchoge est un nom de naissance de garçon kalenjin, du Kenya : les noms de garçons commencent par Kip-, ceux des filles par Chep-. Il viendrait d'une naissance près d'un grenier à grains, selon un article de presse néerlandais, ou serait pris à un ancêtre, selon un auteur de 1923. Nous présentons ces deux pistes plus bas.",
+    "names": [
+      {
+        "nameText": "Kipchoge",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kln",
+        "namedBy": null,
+        "shortLine": "Un nom de naissance de garçon kalenjin ; son origine est discutée.",
+        "periodLabel": "Écrit dès 1923 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Décrit en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Kipchoge est un nom de naissance de garçon kalenjin. Selon NOS, les noms kalenjin renvoient à la circonstance dans laquelle l'enfant est né, et beaucoup de Kenyans portent le même nom sans être de la même famille. L'origine de Kipchoge est discutée : nous présentons les pistes plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Waarom heten ze allemaal Kip?",
+                "author": "NOS (radiodiffuseur public néerlandais)",
+                "year": 2014,
+                "url": "https://nos.nl/artikel/635315-waarom-heten-ze-allemaal-kip",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article de la rubrique sport de NOS, 13 avril 2014. Lu le 13 octobre 2026. L'article range Kipchoge, avec Kipsang, Kipketer, Kiplagat et d'autres, parmi les noms de coureurs kalenjin qui commencent par Kip- et précise que le nom renvoie à la circonstance de la naissance ; il note aussi que beaucoup de Kenyans portent le même nom sans être parents."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Proposée en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Kipchoge viendrait d'une naissance près d'un grenier à grains, selon le diffuseur public néerlandais NOS.",
+            "hypothesisGroup": "origine du nom Kipchoge",
+            "sources": [
+              {
+                "title": "Waarom heten ze allemaal Kip?",
+                "author": "NOS (radiodiffuseur public néerlandais)",
+                "year": 2014,
+                "url": "https://nos.nl/artikel/635315-waarom-heten-ze-allemaal-kip",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article de la rubrique sport de NOS, 13 avril 2014. Lu le 13 octobre 2026. L'article donne le sens « geboren nabij graanopslag », « né près d'un grenier à grains », pour Kipchoge ; c'est une source de presse, et non une étude sur ce nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "Proposée en 1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kipchoge serait pris à un ancêtre, comme la plupart des noms de naissance nandi : selon Charles Hemsted, on dit que l'esprit d'un ancêtre apparaît à la femme enceinte et que l'enfant reçoit alors son nom.",
+            "hypothesisGroup": "origine du nom Kipchoge",
+            "sources": [
+              {
+                "title": "The Tribal Organisation of the Nandi",
+                "author": "Charles Hemsted",
+                "year": 1923,
+                "url": "https://archive.org/details/journalof162019211924east",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Journal of the East Africa and Uganda Natural History Society, n° 18, mars 1923 ; Londres, Longmans, Green. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive. Page 5 : « Birth names are usually taken from some ancestor, and it is alleged that the shades of ancestors frequently appear to pregnant women » ; Kipchoge figure parmi les exemples de noms de garçons, mais l'auteur ne dit pas de quel ancêtre il vient. Auteur de l'époque coloniale, cité pour ce qu'il écrit des Nandi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "Décrit en 1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kipchoge n'est pas un nom de famille chez les Nandi de 1923 : Charles Hemsted écrit que l'enfant le garde jusqu'à l'âge de guerrier, puis qu'on l'appelle « fils de » suivi du nom de son père, par exemple arap Kibe.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Tribal Organisation of the Nandi",
+                "author": "Charles Hemsted",
+                "year": 1923,
+                "url": "https://archive.org/details/journalof162019211924east",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Journal of the East Africa and Uganda Natural History Society, n° 18, mars 1923 ; Londres, Longmans, Green. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive. Page 5 : « The birth name is then dropped and the father's name adopted — thus Toimur becomes arap Kibe (the son of Kibe) ». L'exemple est donné pour Toimur, non pour Kipchoge. Auteur de l'époque coloniale, cité pour ce qu'il écrit des Nandi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kipchoge apparaît par écrit dans un article de Charles Hemsted sur l'organisation de la tribu nandi : il le donne comme exemple de nom de naissance de garçon, avec Toimur. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Kipchoge",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Charles Hemsted",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Tribal Organisation of the Nandi",
+                "author": "Charles Hemsted",
+                "year": 1923,
+                "url": "https://archive.org/details/journalof162019211924east",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Journal of the East Africa and Uganda Natural History Society, n° 18, mars 1923 ; Londres, Longmans, Green. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive. Page 5, section « Names and Ages » : « Examples of boys' names : Toimur, Kipchoge ». Page vue en image. Auteur de l'époque coloniale, cité pour ce qu'il écrit des Nandi."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

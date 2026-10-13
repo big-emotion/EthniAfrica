@@ -92,5 +92,115 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches « Ogunleye homonym etymology » et « Ogunleye surname origin other language » n'ont pas établi une graphie identique d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ogunleye est un nom yoruba de personne, au Nigeria, qui contient le nom d'Ogun, dieu du fer. Ce n'est pas le nom d'un clan. Un seul dictionnaire de noms en donne le sens ; nous présentons plus bas cette lecture. On l'écrit aussi Ogúnlẹ́yẹ.",
+    "names": [
+      {
+        "nameText": "Ogunleye",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "yor",
+        "namedBy": null,
+        "shortLine": "Un nom yoruba du Nigeria qui contient le nom d'Ogun, dieu du fer.",
+        "periodLabel": "Écrit dès 1922 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Ogunleye voudrait dire « Ògún a de l'honneur, de la dignité », avec le nom d'Ògún, dieu yoruba du fer, selon le dictionnaire YorubaNames. On ne sait pas avec certitude comment le nom s'est formé : cette lecture est la seule que nous ayons trouvée.",
+            "hypothesisGroup": "sens du nom Ogunleye",
+            "sources": [
+              {
+                "title": "Ogúnlẹ́yẹ — YorubaNames",
+                "author": "YorubaNames",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/Ogu%CD%81nl%E1%BA%B9%CD%81y%E1%BA%B9",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Dictionnaire collaboratif des noms yoruba, lu le 13 octobre 2026. Il écrit Ogúnlẹ́yẹ avec tous ses tons. Il donne le sens « Ògún has honour », le découpage ògún-ní-ẹ̀yẹ, avec ògún, « Ògún, the Yorùbá god of iron », ní, « to have », et ẹ̀yẹ, « honour, dignity, respect », et la forme courte Lẹ́yẹ. La page ne nomme pas ses contributeurs."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Décrit en 1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ogunleye appartient à une famille de noms yoruba construits avec le nom d'un dieu. Samuel Johnson en donne d'autres, comme Ogundipe, et dit que le nom du dieu indique la divinité que vénère la famille. Il ne cite pas Ogunleye.",
+            "sources": [
+              {
+                "title": "The History of the Yorubas",
+                "author": "Samuel Johnson",
+                "year": 1921,
+                "url": "https://archive.org/details/historyofyorubas00john",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 82-83",
+                "notes": "Première édition en 1921, préparée par O. Johnson d'après le manuscrit de l'auteur, pasteur d'Oyo, mort en 1901. Lu sur l'exemplaire numérisé d'archive.org (Lagos, CMS Bookshops) le 13 octobre 2026. Page 83 : « Some names are compounded with fetish names showing the deity worshipped in the family », avec « Ogundipe, Ogun (the god of war) consoles me with this » et « Ogunseye, Ogun has done the becoming thing » ; page 82, « Olaleye, Honour comes fittingly, or is full of dignity ». Johnson ne cite pas Ogunleye."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ogunleye apparaît par écrit dans l'annuaire officiel de la colonie de la Gold Coast, dans la liste du personnel médical : un employé s'y appelle Thomas Ogunleye Falana, engagé le 1er décembre 1922. Le nom y est écrit entre un prénom, Thomas, et un autre nom, Falana. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit où un document l'a noté, pas d'où le nom vient.",
+            "formAsWritten": "Ogunleye",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Gold Coast Colony. Blue Book 1922-3",
+                "author": "Gouvernement de la colonie de la Gold Coast",
+                "year": 1923,
+                "url": "https://archive.org/details/blue-book-gold-coast-1922",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 81",
+                "notes": "Annuaire officiel de la colonie pour 1922, numérisé sur archive.org et lu le 13 octobre 2026, page vue en image. Page 81, rubrique « Medical (continued) » : « Thomas Ogunleye Falana », engagé le 1er décembre 1922, entre « Karimu G. Tayro » et « Mercy Addy »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ogúnlẹ́yẹ",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "yor",
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ogúnlẹ́yẹ est l'écriture du même nom avec ses tons. Le dictionnaire YorubaNames l'écrit ainsi.",
+            "sources": [
+              {
+                "title": "Ogúnlẹ́yẹ — YorubaNames",
+                "author": "YorubaNames",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/Ogu%CD%81nl%E1%BA%B9%CD%81y%E1%BA%B9",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Dictionnaire collaboratif des noms yoruba, lu le 13 octobre 2026. Il écrit Ogúnlẹ́yẹ avec tous ses tons. Il donne le sens « Ògún has honour », le découpage ògún-ní-ẹ̀yẹ, avec ògún, « Ògún, the Yorùbá god of iron », ní, « to have », et ẹ̀yẹ, « honour, dignity, respect », et la forme courte Lẹ́yẹ. La page ne nomme pas ses contributeurs."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

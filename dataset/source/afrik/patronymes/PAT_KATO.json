@@ -76,5 +76,76 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web combinant « Kato », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de le mémoire de Wadiko Iren sur les pratiques de nomination et sa section comparative consacrée aux noms de jumeaux baganda, n'ont pas établi de lignée homonyme d'origine distincte ni d'autre homonyme documentable."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kato est un nom de personne ganda. Chez les Baganda, il revient au garçon qui naît en second dans une paire de jumeaux. Il apparaît par écrit en 1885 dans le récit d'un missionnaire. On ne sait pas avec certitude ce qu'il veut dire : les sources lues ne le disent pas.",
+    "names": [
+      {
+        "nameText": "Kato",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lug",
+        "namedBy": null,
+        "shortLine": "Un nom ganda donné au garçon né en second dans une paire de jumeaux ; son sens n'est pas connu.",
+        "periodLabel": "Écrit dès 1885 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Mémoire de 2019, entretien de 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Kato est donné chez les Baganda au garçon qui naît en second dans une paire de jumeaux. Quand les deux enfants sont des garçons, l'aîné s'appelle Waswa et le cadet Kato. Quand les jumeaux sont une fille et un garçon, Kato est le garçon né après sa sœur, qui s'appelle alors Babirye. Cette règle est rapportée par une personne interrogée, Rose Nairuba, dans le mémoire de Wadiko Iren.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Contextual Study of 1 Samuel 1:1–20 in Relation to Naming Practices of the Lugbara",
+                "author": "Wadiko Iren",
+                "year": 2019,
+                "url": "https://kyuspace.kyu.ac.ug/server/api/core/bitstreams/a01f6712-047f-4e8b-a12b-0eb0c7d23cc6/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 115-116",
+                "notes": "Mémoire de master, Kyambogo University, juillet 2019, lu dans son texte intégral. Pages 115 et 116 : l'autrice rapporte la règle des noms de jumeaux chez les Baganda d'après un entretien du 16 février 2018 avec Rose Nairuba (note 261). Nous connaissons ce témoignage par le mémoire seulement, sans transcription de l'entretien. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1885,
+              "to": 1885,
+              "label": "Juin 1885, récit publié en 1889"
+            },
+            "era": "polity",
+            "statement": "Le nom Kato apparaît par écrit chez le missionnaire Robert P. Ashe : en juin 1885, un page du roi Mwanga nommé Kato porte son message au roi. Ce page est l'élève d'un Français et un ami d'Ashe. Le récit ne dit pas si ce Kato est un jumeau. C'est la plus ancienne trace de ce nom que le projet connaît. Les Baganda existaient déjà avant lui.",
+            "formAsWritten": "Kato",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Robert P. Ashe",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Kato",
+                "role": "page du roi Mwanga dans le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Two Kings of Uganda; or, Life by the Shores of Victoria Nyanza",
+                "author": "Robert P. Ashe",
+                "year": 1890,
+                "url": "https://archive.org/details/twokingsofuganda00ashe",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 154",
+                "notes": "Londres, Sampson Low, Marston, Searle & Rivington, 1890, « nouvelle édition à bon marché » (le livre est paru pour la première fois en 1889) ; exemplaire numérisé sur archive.org. Page 154 : « Kato, the page who took my message, \"re-delivered\" me in a very polite manner. He was one of the Frenchman's pupils, and a great friend of mine », dans un passage qui suit une date : « About this time, June of 1885 ». Missionnaire, cité pour les formes qu'il écrit. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

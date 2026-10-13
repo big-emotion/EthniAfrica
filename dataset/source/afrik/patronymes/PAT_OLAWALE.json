@@ -101,5 +101,121 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches « Olawale homonym etymology » et « Olawale surname origin other language » n'ont pas établi une graphie identique d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Olawale est un nom yoruba de personne, au Nigeria. Ce n'est pas le nom d'un clan. Un seul dictionnaire de noms en donne le sens, « la prospérité est arrivée à la maison » ; nous présentons plus bas cette lecture. On l'écrit aussi Ọláwálé.",
+    "names": [
+      {
+        "nameText": "Olawale",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "yor",
+        "namedBy": null,
+        "shortLine": "Un nom yoruba du Nigeria qui voudrait dire « la prospérité est arrivée à la maison ».",
+        "periodLabel": "Écrit dès 1921 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Olawale voudrait dire « la prospérité est arrivée à la maison », avec ọlá, « richesse », wá, « arriver », et ilé, « maison », selon le dictionnaire YorubaNames. On ne sait pas avec certitude comment le nom s'est formé : cette lecture est la seule que nous ayons trouvée pour ce nom.",
+            "hypothesisGroup": "sens du nom Olawale",
+            "sources": [
+              {
+                "title": "Ọláwálé — YorubaNames",
+                "author": "YorubaNames",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/Olawale",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Dictionnaire collaboratif des noms yoruba, lu le 13 octobre 2026. Il écrit Ọláwálé avec tous ses tons. Il donne le sens « Prosperity came home », le découpage ọlá-wá-ilé, avec ọlá, « wealth », wá, « comes, arrives », et ilé, « home, house », et les formes voisines Ọlá, Wálé et Ọláálé (Bénin, Kétou). La page ne nomme pas ses contributeurs."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Décrit en 1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Olawale appartient à une famille de noms yoruba où l'on trouve ola, « honneur », et wale, « arrive à la maison ». Samuel Johnson donne des noms bâtis de la même façon, comme Olaleye et Odewale. Il ne cite pas Olawale dans ces listes.",
+            "sources": [
+              {
+                "title": "The History of the Yorubas",
+                "author": "Samuel Johnson",
+                "year": 1921,
+                "url": "https://archive.org/details/historyofyorubas00john",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 82-83",
+                "notes": "Première édition en 1921, préparée par O. Johnson d'après le manuscrit de l'auteur, pasteur d'Oyo, mort en 1901. Lu sur l'exemplaire numérisé d'archive.org (Lagos, CMS Bookshops) le 13 octobre 2026. Page 83 : « Odewale, Ode comes to the house i.e. visits the family » ; page 82, les noms en Ola- sont d'abord ceux des familles de haut rang, « but are now used more or less indiscriminately », avec « Olaleye, Honour comes fittingly ». Johnson ne cite pas ce nom dans ces listes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Olawale apparaît par écrit chez Samuel Johnson, dans un tableau de noms complets : c'est un nom de femme, suivi de son oriki, Asabi, et de son totem, Opo. Il l'écrit avec un point sous le o. C'est la plus ancienne trace de ce nom que le projet connaît ; le livre paraît après la mort de l'auteur et le nom existait avant lui.",
+            "formAsWritten": "Ọlawale",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Samuel Johnson",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The History of the Yorubas",
+                "author": "Samuel Johnson",
+                "year": 1921,
+                "url": "https://archive.org/details/historyofyorubas00john",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 87",
+                "notes": "Première édition en 1921, préparée par O. Johnson d'après le manuscrit de l'auteur, pasteur d'Oyo, mort en 1901. Lu sur l'exemplaire numérisé d'archive.org (Lagos, CMS Bookshops) le 13 octobre 2026. Page 87, section « Yoruba names » : un tableau de noms complets, avec le nom, l'oriki et le totem. La colonne des femmes commence par « Ọlawale », oriki « Asabi », totem « Opo ». Page vue en image."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ọláwálé",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "yor",
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ọláwálé est l'écriture du même nom avec ses tons et ses points sous les lettres. Le dictionnaire YorubaNames l'écrit ainsi.",
+            "sources": [
+              {
+                "title": "Ọláwálé — YorubaNames",
+                "author": "YorubaNames",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/Olawale",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Dictionnaire collaboratif des noms yoruba, lu le 13 octobre 2026. Il écrit Ọláwálé avec tous ses tons. Il donne le sens « Prosperity came home », le découpage ọlá-wá-ilé, avec ọlá, « wealth », wá, « comes, arrives », et ilé, « home, house », et les formes voisines Ọlá, Wálé et Ọláálé (Bénin, Kétou). La page ne nomme pas ses contributeurs."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -101,5 +101,136 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches sur la graphie exacte « Ochieng » dans les index onomastiques et les sections anthroponymiques d’Oluoch (2022) et de Dholuo Grammar for Beginners n’ont pas établi une seconde origine distincte disposant de sa propre provenance."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ochieng est un nom de naissance de garçon luo, du Kenya. On le donne à l'enfant né vers midi, entre onze heures et treize heures, ou, selon une autre source, quand le soleil brille ; les filles reçoivent la forme Achieng. Chez les Luo, le nom du père s'ajoute ensuite et le troisième nom sert d'ordinaire de nom de famille.",
+    "names": [
+      {
+        "nameText": "Ochieng",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "luo",
+        "namedBy": null,
+        "shortLine": "Un nom de naissance de garçon luo, donné à l'enfant né vers midi.",
+        "periodLabel": "Forme proche écrite dès 1902 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Décrit en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Ochieng est donné à un garçon luo né vers midi, entre onze heures et treize heures, selon Angeline A. Oluoch, qui l'écrit O/Achieng, le O pour un garçon et le A pour une fille. La grammaire de Peter Onyango Onyoyo dit plutôt que c'est le nom du garçon né quand le soleil brille.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Morpho-semantic Study of Toponyms in Dholuo",
+                "author": "Angeline A. Oluoch",
+                "year": 2022,
+                "url": "https://erepository.uonbi.ac.ke/items/a3c4bee8-cbe3-4861-95be-02de1999ade8",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 31",
+                "notes": "Mémoire de l'université de Nairobi, 2022. Lu le 13 octobre 2026 dans le dépôt de l'université. Page 31 : le « nying juok » (« nom de l'esprit ») est donné selon la position du soleil ; « births between 11 -1pm acquires O/Achieng » ; le nom du père est ajouté après le premier et le deuxième nom, et le troisième sert d'ordinaire de nom de famille."
+              },
+              {
+                "title": "Dholuo Grammar for Beginners",
+                "author": "Peter Onyango Onyoyo",
+                "year": null,
+                "url": "https://erepository.uonbi.ac.ke/bitstream/handle/11295/71359/Dholuo%20grammar%20for%20beginners.pdf?sequence=1",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 60",
+                "notes": "Grammaire publiée par Lake Publishers & Enterprises, sans date sur la copie lue. Lu le 13 octobre 2026 dans le dépôt de l'université de Nairobi. Page 60, rubrique « Phenomenon » : « A male child born when the sun is shining is Ochieng', and a female is Achieng »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Décrit en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Ochieng est l'un des noms de naissance que les Luo appellent nying juok, « nom de l'esprit », et qu'ils donnent selon la position du soleil. Angeline A. Oluoch écrit que le nom du père s'ajoute ensuite après le premier et le deuxième nom, et que le troisième nom sert d'ordinaire de nom de famille.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Morpho-semantic Study of Toponyms in Dholuo",
+                "author": "Angeline A. Oluoch",
+                "year": 2022,
+                "url": "https://erepository.uonbi.ac.ke/items/a3c4bee8-cbe3-4861-95be-02de1999ade8",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 31",
+                "notes": "Mémoire de l'université de Nairobi, 2022. Lu le 13 octobre 2026 dans le dépôt de l'université. Page 31 : le « nying juok » (« nom de l'esprit ») est donné selon la position du soleil ; « births between 11 -1pm acquires O/Achieng » ; le nom du père est ajouté après le premier et le deuxième nom, et le troisième sert d'ordinaire de nom de famille."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "statement": "Le nom Ochieng a une forme proche, Achieng, qui apparaît par écrit chez C. W. Hobley en 1902 : c'est le nom du chef de la subdivision Akelu, dans un grand peuple d'origine nilotique installé au sud de la baie d'Ugowe. C'est la plus ancienne trace d'une forme proche de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Achieng",
+            "birth": true,
+            "actors": [
+              {
+                "name": "C. W. Hobley",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Eastern Uganda: An Ethnological Survey",
+                "author": "C. W. Hobley",
+                "year": 1902,
+                "url": "https://archive.org/details/easternugandaan00hoblgoog",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 56",
+                "notes": "Londres, Anthropological Institute of Great Britain and Ireland. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive. Page 56 : sous « Kalachonyo », « A large tribe of Nilotic origin on the south side of Ugowe Bay », la liste des subdivisions et de leurs chefs donne « Akelu — Achieng ». Hobley écrit ici pour l'administration britannique et cite les noms comme on les lui rapporte."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ochieng'",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "luo",
+        "namedBy": null,
+        "shortLine": "L'écriture du nom Ochieng avec une apostrophe finale, comme dans une grammaire du luo.",
+        "periodLabel": "Écrit dans une grammaire du dholuo",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sans date"
+            },
+            "statement": "Le nom Ochieng' est l'écriture, avec une apostrophe finale, que donne la grammaire de Peter Onyango Onyoyo pour le nom du garçon luo né quand le soleil brille, la fille s'appelant Achieng'.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dholuo Grammar for Beginners",
+                "author": "Peter Onyango Onyoyo",
+                "year": null,
+                "url": "https://erepository.uonbi.ac.ke/bitstream/handle/11295/71359/Dholuo%20grammar%20for%20beginners.pdf?sequence=1",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 23, 60",
+                "notes": "Grammaire publiée par Lake Publishers & Enterprises, sans date sur la copie lue. Lu le 13 octobre 2026 dans le dépôt de l'université de Nairobi. Page 23 : « Ochieng' — Achieng' » dans la liste des noms d'hommes et de femmes qui commencent par O- et par A-. Page 60 : « A male child born when the sun is shining is Ochieng', and a female is Achieng »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

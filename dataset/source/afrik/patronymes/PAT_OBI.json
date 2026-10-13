@@ -99,5 +99,133 @@
       "fieldPath": "nameSystem",
       "reason": "Aucune source consultée ne fait de Obi un nom de clan : les sources y voient un titre ou la forme courte d'un nom personnel. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet jamais."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Obi est un nom igbo, au Nigeria. Il viendrait soit d'un titre, soit d'un nom plus long raccourci ; les sources lues ne tranchent pas. Un autre nom Obi, japonais, existe, sans lien avec lui. Nous présentons plus bas les lectures proposées.",
+    "names": [
+      {
+        "nameText": "Obi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ibo",
+        "namedBy": null,
+        "shortLine": "Un nom igbo du Nigeria, qui serait un titre ou la forme courte d'un nom plus long.",
+        "periodLabel": "Écrit dès 1832 sous une forme proche, Obie ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Obi est un nom igbo, au Nigeria. Il viendrait soit d'un titre, soit d'un nom plus long raccourci ; on ne sait pas avec certitude lequel. Nous présentons les deux lectures plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Obi Name Meaning and Obi Family History at FamilySearch",
+                "author": "Patrick Hanks",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=obi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Entrée Obi du Dictionary of American Family Names de Patrick Hanks (2003, 2006), hébergée par FamilySearch. Lu le 13 octobre 2026. Texte : « West African (Nigeria): Igbo name, from the title obì, denoting either an elder or a chief, a traditional Igbo king ». L'entrée propose aussi une forme courte d'un nom personnel comme Obialo, « the heart is at peace », et cite un nom de famille japonais Obi, d'origine distincte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2006,
+              "label": "Proposé en 2003, repris en 2006"
+            },
+            "era": "modern",
+            "statement": "Le nom Obi viendrait du titre igbo obì, que porte un ancien, un chef ou un roi traditionnel, selon le Dictionary of American Family Names de Patrick Hanks. Le dictionnaire igbo de Northcote Thomas donne déjà le mot obi au sens de « roi ».",
+            "hypothesisGroup": "sens du nom Obi",
+            "sources": [
+              {
+                "title": "Obi Name Meaning and Obi Family History at FamilySearch",
+                "author": "Patrick Hanks",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=obi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Entrée Obi du Dictionary of American Family Names de Patrick Hanks (2003, 2006), hébergée par FamilySearch. Lu le 13 octobre 2026. Texte : « West African (Nigeria): Igbo name, from the title obì, denoting either an elder or a chief, a traditional Igbo king ». L'entrée propose aussi une forme courte d'un nom personnel comme Obialo, « the heart is at peace », et cite un nom de famille japonais Obi, d'origine distincte."
+              },
+              {
+                "title": "Anthropological Report on the Ibo-Speaking Peoples of Nigeria, Part V: Addenda to Ibo-English Dictionary",
+                "author": "Northcote W. Thomas",
+                "year": 1914,
+                "url": "https://archive.org/details/anthropologicalr05thomuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 101",
+                "notes": "Londres, Harrison and Sons, 1914 ; exemplaire numérisé sur archive.org. Auteur de l'époque coloniale, anthropologue du gouvernement de la colonie, cité ici pour les mots qu'il relève. Lu le 13 octobre 2026. Page 101, dictionnaire igbo-anglais : « obi, king ». Le dictionnaire donne le mot, non le nom de famille."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2006,
+              "label": "Proposé en 2003, repris en 2006"
+            },
+            "era": "modern",
+            "statement": "Le nom Obi serait la forme courte d'un nom igbo plus long, comme Obialo, que le dictionnaire de Patrick Hanks traduit par « le cœur est en paix ». Le dictionnaire igbo de Northcote Thomas donne le mot obi au sens de « cœur ».",
+            "hypothesisGroup": "sens du nom Obi",
+            "sources": [
+              {
+                "title": "Obi Name Meaning and Obi Family History at FamilySearch",
+                "author": "Patrick Hanks",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=obi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Entrée Obi du Dictionary of American Family Names de Patrick Hanks (2003, 2006), hébergée par FamilySearch. Lu le 13 octobre 2026. Texte : « West African (Nigeria): Igbo name, from the title obì, denoting either an elder or a chief, a traditional Igbo king ». L'entrée propose aussi une forme courte d'un nom personnel comme Obialo, « the heart is at peace », et cite un nom de famille japonais Obi, d'origine distincte."
+              },
+              {
+                "title": "Anthropological Report on the Ibo-Speaking Peoples of Nigeria, Part V: Addenda to Ibo-English Dictionary",
+                "author": "Northcote W. Thomas",
+                "year": 1914,
+                "url": "https://archive.org/details/anthropologicalr05thomuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 101",
+                "notes": "Londres, Harrison and Sons, 1914 ; exemplaire numérisé sur archive.org. Auteur de l'époque coloniale, anthropologue du gouvernement de la colonie, cité ici pour les mots qu'il relève. Lu le 13 octobre 2026. Page 101, dictionnaire igbo-anglais : « obi (A), heart, fathom » ; l'article voisin donne aussi « obi, living, dwelling ». Le dictionnaire donne le mot, non le nom de famille."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1832,
+              "to": 1837,
+              "label": "Voyage de 1832, récit publié en 1837"
+            },
+            "era": "polity",
+            "statement": "Le nom Obi apparaît par écrit sous une forme proche, Obie, chez Macgregor Laird et R. A. K. Oldfield, qui nomment ainsi le roi d'Eboe, aujourd'hui Aboh, dont ils reçoivent les envoyés sur le Niger en 1832. C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne dit pas s'il s'agit du nom d'un homme ou d'un titre, et le nom existait avant elle.",
+            "formAsWritten": "Obie",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Macgregor Laird et R. A. K. Oldfield",
+                "role": "écrivent cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Narrative of an Expedition into the Interior of Africa by the River Niger in the Steam-Vessels Quorra and Alburkah in 1832, 1833 and 1834, vol. I",
+                "author": "Macgregor Laird et R. A. K. Oldfield",
+                "year": 1837,
+                "url": "https://archive.org/details/narrativeofexped01lair",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 92",
+                "notes": "Londres, Richard Bentley, 1837 ; tome I numérisé sur archive.org, lu le 13 octobre 2026, page vue en image. Page 92, titre courant « Mission from King Obie » : deux chefs envoyés par « King Obie » viennent accueillir l'expédition avant Eboe, que l'on écrit aujourd'hui Aboh ; « King Obie was to present us on our arrival with two bullocks, ten goats, and six hundred yams ». Voyageurs britanniques, cités pour la forme qu'ils écrivent."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
