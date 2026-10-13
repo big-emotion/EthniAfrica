@@ -104,7 +104,9 @@ type TableName =
   | "afrik_countries"
   | "afrik_people_countries"
   | "afrik_people_relations"
-  | "afrik_dossiers";
+  | "afrik_dossiers"
+  | "afrik_languages"
+  | "afrik_patronymes";
 
 interface DatabaseRow {
   id?: string;
@@ -144,6 +146,8 @@ function createSupabaseDouble(options: SupabaseDoubleOptions = {}) {
     afrik_people_countries: [...(options.rows?.afrik_people_countries ?? [])],
     afrik_people_relations: [...(options.rows?.afrik_people_relations ?? [])],
     afrik_dossiers: [...(options.rows?.afrik_dossiers ?? [])],
+    afrik_languages: [...(options.rows?.afrik_languages ?? [])],
+    afrik_patronymes: [...(options.rows?.afrik_patronymes ?? [])],
   };
   const operations: UpsertOperation[] = [];
   const upsertCalls: UpsertCall[] = [];
@@ -173,6 +177,21 @@ function createSupabaseDouble(options: SupabaseDoubleOptions = {}) {
         );
         return { error: null };
       },
+      // A link table is keyed on a pair: one owner, several targets.
+      eq: (ownerColumn: string, owner: string) => ({
+        in: async (targetColumn: string, targets: string[]) => {
+          deleted.push({
+            table,
+            ids: targets.map((target) => `${owner}|${target}`),
+          });
+          rows[table] = rows[table].filter(
+            (row) =>
+              row[ownerColumn] !== owner ||
+              !targets.includes(row[targetColumn] as string)
+          );
+          return { error: null };
+        },
+      }),
     })),
     upsert: vi.fn(
       async (
@@ -1637,6 +1656,171 @@ describe("migrateAfrikToDatabase", () => {
 
     expect(report.corpusOrphans.afrik_peoples.orphans).toEqual([
       "PPL_KHOZA_FAUXEX",
+    ]);
+    expect(database.deleted).toEqual([]);
+  });
+});
+
+/**
+ * The three entity tables were the only ones `--prune` reached. Languages a
+ * people no longer declares, retired patronymes and links a fiche dropped all
+ * stayed in the database for good, and the post-sync verification stayed red
+ * on rows no tool could remove. These cover the wider reach; the cap is the
+ * same unit's (scripts/__tests__/afrikCorpusOrphans.test.ts).
+ */
+describe("migrateAfrikToDatabase --prune beyond the entity tables", () => {
+  // Twenty declared rows against one ghost keeps every table at 4.8%, inside
+  // the cap, so these exercise the deletion rather than the refusal.
+  const declared = Array.from({ length: 20 }, (_, index) => ({
+    ...peopleFixture,
+    id: `${betePeople.id}_${index}`,
+  })) as People[];
+
+  beforeEach(() => {
+    vi.mocked(loadAllPeoples).mockResolvedValue(declared);
+  });
+
+  // @req REQ-032
+  it("removes a people↔country link the fiche no longer declares", async () => {
+    const database = useSupabaseDouble({
+      rows: {
+        afrik_people_countries: [
+          { people_id: declared[0].id, country_id: "LBR" },
+        ],
+      },
+    });
+
+    const report = await migrateAfrikToDatabase({
+      dryRun: false,
+      prune: true,
+      writeErrorReport: false,
+      target: recetteTarget,
+    });
+
+    expect(report.corpusOrphans.afrik_people_countries.orphans).toEqual([
+      `${declared[0].id}|LBR`,
+    ]);
+    expect(database.deleted).toContainEqual({
+      table: "afrik_people_countries",
+      ids: [`${declared[0].id}|LBR`],
+    });
+    expect(database.rows.afrik_people_countries).toHaveLength(20);
+  });
+
+  // @req REQ-032
+  it("removes a language code no people declares any more", async () => {
+    const codes = [
+      "bev",
+      "bet",
+      "btg",
+      ...Array.from({ length: 17 }, (_, i) => `x${String(i).padStart(2, "0")}`),
+    ];
+    vi.mocked(loadAllLanguages).mockReturnValue(
+      codes.map((id) => ({
+        id,
+        name: id,
+        familyId: peopleFixture.languageFamilyId,
+        nameProvenance: "derived" as const,
+      }))
+    );
+    const database = useSupabaseDouble({
+      rows: { afrik_languages: [...codes, "zzz"].map((id) => ({ id })) },
+    });
+
+    const report = await migrateAfrikToDatabase({
+      dryRun: false,
+      prune: true,
+      writeErrorReport: false,
+      target: recetteTarget,
+    });
+
+    expect(report.corpusOrphans.afrik_languages.deleted).toBe(1);
+    expect(database.deleted).toContainEqual({
+      table: "afrik_languages",
+      ids: ["zzz"],
+    });
+  });
+
+  // @req REQ-032
+  it("removes a retired patronyme", async () => {
+    const dossiers = Array.from({ length: 20 }, (_, i) => ({
+      id: `PAT_N${i}`,
+    }));
+    vi.mocked(loadAllPatronymeDossiers).mockReturnValue({
+      dossiers: dossiers as never,
+      errors: [],
+    });
+    const database = useSupabaseDouble({
+      rows: { afrik_patronymes: [...dossiers, { id: "PAT_RETIRED" }] },
+    });
+
+    const report = await migrateAfrikToDatabase({
+      dryRun: false,
+      prune: true,
+      writeErrorReport: false,
+      target: recetteTarget,
+    });
+
+    expect(report.corpusOrphans.afrik_patronymes.deleted).toBe(1);
+    expect(database.deleted).toContainEqual({
+      table: "afrik_patronymes",
+      ids: ["PAT_RETIRED"],
+    });
+  });
+
+  // @req REQ-032
+  it("refuses to prune patronymes while a dossier on disk fails to load", async () => {
+    // An unreadable dossier is missing from the batch, so its row would look
+    // retired: deleting it would unpublish a name because of a typo.
+    const dossiers = Array.from({ length: 20 }, (_, i) => ({
+      id: `PAT_N${i}`,
+    }));
+    vi.mocked(loadAllPatronymeDossiers).mockReturnValue({
+      dossiers: dossiers as never,
+      errors: ["PAT_BROKEN.json: invalid JSON"],
+    });
+    const database = useSupabaseDouble({
+      rows: { afrik_patronymes: [...dossiers, { id: "PAT_BROKEN" }] },
+    });
+
+    const report = await migrateAfrikToDatabase({
+      dryRun: false,
+      prune: true,
+      writeErrorReport: false,
+      target: recetteTarget,
+    });
+
+    expect(report.corpusOrphans.afrik_patronymes.refusal).toMatch(
+      /failed to load/
+    );
+    expect(database.deleted).not.toContainEqual(
+      expect.objectContaining({ table: "afrik_patronymes" })
+    );
+  });
+
+  // @req REQ-032
+  it("reports a stale link in a preview without deleting it", async () => {
+    const database = useSupabaseDouble({
+      rows: {
+        afrik_people_countries: [
+          ...declared.map((people) => ({
+            people_id: people.id,
+            country_id: "CIV",
+          })),
+          { people_id: declared[0].id, country_id: "LBR" },
+        ],
+      },
+    });
+
+    const report = await migrateAfrikToDatabase({
+      dryRun: true,
+      prune: true,
+      writeErrorReport: false,
+      target: recetteTarget,
+    });
+
+    expect(report.corpusOrphans.afrik_people_countries.orphans).toEqual([
+      `${declared[0].id}|LBR`,
     ]);
     expect(database.deleted).toEqual([]);
   });

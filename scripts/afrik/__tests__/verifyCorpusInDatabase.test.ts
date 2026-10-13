@@ -387,4 +387,30 @@ describe("compareTable", () => {
       "PPL_YORUBA: git holds 2 row(s), the database 2, and they differ",
     ]);
   });
+
+  // A count alone said "16 too many" and left the reader to guess which: the
+  // keys are what a prune preview has to be checked against.
+  // @req REQ-032
+  it("names each row the database holds beyond what git declares", () => {
+    const expectation = expectationFor("afrik_language_families");
+
+    const verdict = compareTable(expectation, {
+      count: 3,
+      sampleRows: [
+        {
+          content: { summary: "x" },
+          name_en: null,
+          name_fr: "Bantu",
+          id: "FLG_BANTU",
+        },
+      ],
+      extraKeys: ["FLG_SAHARIEN", "FLG_OMOTIQUE"],
+    });
+
+    expect(verdict.mismatches).toEqual([
+      "row count: git holds 1, the database has 3",
+      "FLG_SAHARIEN: in the database, not in git",
+      "FLG_OMOTIQUE: in the database, not in git",
+    ]);
+  });
 });
