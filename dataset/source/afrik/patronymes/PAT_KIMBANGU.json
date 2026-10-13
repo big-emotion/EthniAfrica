@@ -86,5 +86,86 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Kimbangu », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de la notice biographique complète de Simon Kimbangu dans l'Encyclopaedia Africana et les recherches ciblées sur l'étymologie et la transmission du nom, n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kimbangu est un nom kikongo, porté par le prédicateur Simon Kimbangu. Selon une encyclopédie, il se dirait « celui qui révèle la vérité cachée ». Les sources lues ne disent pas si c'est un nom de clan ; nous présentons les explications plus bas.",
+    "names": [
+      {
+        "nameText": "Kimbangu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kon",
+        "namedBy": null,
+        "shortLine": "Un nom kikongo, porté par Simon Kimbangu ; il voudrait dire « celui qui révèle la vérité cachée ».",
+        "periodLabel": "Écrit dès 1961 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1887,
+              "to": 1887,
+              "label": "Dictionnaire de 1887"
+            },
+            "statement": "Le mot kimbangu existe en kikongo avant les premières traces du nom : le dictionnaire de Bentley le donne avec le sens de « petit panier ». Les sources lues ne disent pas si le nom Kimbangu a un rapport avec ce mot.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Dictionary and Grammar of the Kongo Language, as spoken at San Salvador",
+                "author": "William Holman Bentley",
+                "year": 1887,
+                "url": "https://archive.org/details/dictionarygramma00bent",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 297",
+                "notes": "Londres, Baptist Missionary Society et Trübner, 1887 ; exemplaire numérisé sur archive.org. À la page 297, l'entrée Kimbangu est glosée « (small) basket » ; l'entrée Kimbangumuna, « somersault ». Le dictionnaire ne parle pas du nom de personne."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1987,
+              "to": 1987,
+              "label": "Proposée en 1987"
+            },
+            "era": "modern",
+            "statement": "Le nom Kimbangu viendrait du mot kikongo kimbangu, qui voudrait dire « celui qui révèle la vérité cachée », selon Bennetta Jules-Rosette, dans l'Encyclopedia of Religion.",
+            "hypothesisGroup": "origine du nom Kimbangu",
+            "sources": [
+              {
+                "title": "Kimbangu, Simon, dans Encyclopedia of Religion",
+                "author": "Bennetta Jules-Rosette",
+                "year": 1987,
+                "url": "https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/kimbangu-simon",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Notice reprise sur Encyclopedia.com, lue en entier. Sa phrase sur le nom dit qu'en kikongo kimbangu veut dire « celui qui révèle la vérité cachée ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1961,
+              "to": 1961,
+              "label": "Publié en 1961"
+            },
+            "era": "modern",
+            "statement": "Le nom Kimbangu apparaît par écrit dans une notice du CRISP de 1961 qui présente Charles Kisolokele comme le fils aîné de Simon Kimbangu. C'est la plus ancienne trace de ce nom que le projet connaît ; des traces plus anciennes existent sans doute, le projet ne les a pas lues, et le nom est plus ancien que cette notice.",
+            "formAsWritten": "Simon Kimbangu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Onze mois de crise politique au Congo",
+                "author": "Centre de recherche et d'information socio-politiques (CRISP)",
+                "year": 1961,
+                "url": "https://www.cairn.info/revue-courrier-hebdomadaire-du-crisp-1961-30-page-1.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "annexe, notice 11",
+                "notes": "Courrier hebdomadaire du CRISP, n° 120, 1961, pages 1 à 24, lu sur Cairn.info. L'annexe donne des notices biographiques de responsables congolais de 1960-1961. La notice 11, « Kisolokele Charles », le dit né en 1914 à Kamba, Mukongo, « Fils aîné de Simon Kimbangu ». Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

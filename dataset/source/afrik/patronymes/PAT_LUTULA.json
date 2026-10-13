@@ -119,5 +119,44 @@
       "fieldPath": "homonyms",
       "reason": "Aucune entité distincte portant ce nom n'a été trouvée."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Lutula est un nom de famille de la République démocratique du Congo. En 1961, le CRISP le donne à un homme politique qu'il présente comme un Tetela. On ne sait pas avec certitude ce que le nom veut dire ni d'où il vient : les sources lues ne le disent pas.",
+    "names": [
+      {
+        "nameText": "Lutula",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille congolais, porté en 1961 par un Tetela ; son sens est inconnu.",
+        "periodLabel": "Écrit dès 1961 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1961,
+              "to": 1961,
+              "label": "Publié en 1961"
+            },
+            "era": "modern",
+            "statement": "Le nom Lutula apparaît par écrit dans une notice du CRISP de 1961 sur Joseph Bonaventure Lutula, que la notice dit né le 6 octobre 1927 et « Otetela ». C'est la plus ancienne trace de ce nom que le projet connaît ; la notice donne l'origine de son porteur, pas celle du nom, et le nom est plus ancien qu'elle.",
+            "formAsWritten": "Lutula",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Onze mois de crise politique au Congo",
+                "author": "Centre de recherche et d'information socio-politiques (CRISP)",
+                "year": 1961,
+                "url": "https://www.cairn.info/revue-courrier-hebdomadaire-du-crisp-1961-30-page-1.htm",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "annexe, notice 26",
+                "notes": "Courrier hebdomadaire du CRISP, n° 120, 1961, pages 1 à 24, lu sur Cairn.info. L'annexe donne des notices biographiques de responsables congolais de 1960-1961. La notice 26, « Lutula Joseph, Bonaventure », commence par « Né le 6.10.1927. Otetela. Secrétaire du Congrès de Lodja (mars 1960) ». Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
