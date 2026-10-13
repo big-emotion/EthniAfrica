@@ -121,5 +121,205 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Yeyi, aussi écrit Wayeyi, désigne un peuple du nord-ouest du Botswana, autour du delta de l'Okavango, et du nord-est de la Namibie, ainsi que la langue qu'il parle, le shiyeyi. Ce peuple se nomme lui-même Wayeyi ; dès les années 1850, deux voyageurs écrivent qu'il se dit Bayeye, « les hommes ». D'autres noms existent : Bakoba, ou Makoba, un nom que les Tswana lui ont donné. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Wayeyi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "yey",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple ; en 1856, un voyageur le note sous la forme Bayeye, qui voudrait dire « les hommes ».",
+        "periodLabel": "Écrit Bayeye en 1856 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "Mise à jour en 2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Wayeyi est celui que Minority Rights Group emploie pour ce peuple du nord-ouest du Botswana, qui parle le shiyeyi. Selon cette fiche, les Wayeyi affirment leur identité en 1999 en installant un chef suprême, puis, en 2008, un représentant wayeyi entre pour la première fois à la Chambre des chefs du Botswana.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Minority Rights Group – Wayeyi in Botswana",
+                "author": "Minority Rights Group",
+                "year": 2008,
+                "url": "https://minorityrights.org/communities/wayeyi/",
+                "tier": "referenced",
+                "source_kind": "ngo",
+                "notes": "Rubriques « Historical context » et « Current issues ». Fiche mise à jour en avril 2008 ; lue sur une copie de la Wayback Machine le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Yeyi est le nom de référence de la langue de ce peuple dans la norme internationale ISO 639-3, sous le code yey. Le catalogue Glottolog relève aussi Shiyeyi, Ciyei et Yei. On ne sait pas avec certitude d'où vient le nom Yeyi sous cette forme.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Yeyi (yeyi1239)",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/yeyi1239",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues de l'Institut Max-Planck, consulté le 13 octobre 2026. Noms relevés : Ceyei, Ciyei, Koba, Kuba, Seyei, Seyeyi, Shiyeyi, Yeei, Yei, Yeyi ; pays : Botswana, Namibie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Proposée en 1856, reprise en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Bayeye voudrait dire « les hommes », selon l'explorateur Charles John Andersson, qui écrit que ce peuple se nomme ainsi lui-même. David Livingstone, qui écrit Bayeiye, donne le même sens l'année suivante.",
+            "hypothesisGroup": "origine-wayeyi",
+            "sources": [
+              {
+                "title": "Lake Ngami; or, Explorations and Discoveries during Four Years' Wanderings in the Wilds of South Western Africa",
+                "author": "Charles John Andersson",
+                "year": 1856,
+                "url": "https://archive.org/details/lakengamiorexplo00ande",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 437",
+                "notes": "Chapitre XXXV : les Batoana (Tswana) « ont réduit [les anciens habitants] à l'état d'esclavage […]. Ces gens, cependant, se donnent le nom de Bayeye, ou « Hommes » » (traduction du projet). Édition de New York, Harper & Brothers, 1856 ; lu sur la numérisation d'Internet Archive le 13 octobre 2026. Page lue sur l'image."
+              },
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 64",
+                "notes": "Chapitre III : « They call themselves Bayeiye, i. e. men ». Livingstone parle des gens qu'il rencontre au bord de la rivière Zouga, sur la route du lac Ngami. Londres, John Murray, 1857 ; lu sur la numérisation d'Internet Archive le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "1856"
+            },
+            "era": "polity",
+            "birth": true,
+            "statement": "Le nom Bayeye apparaît sous une forme proche de Wayeyi dans le livre de l'explorateur Charles John Andersson sur le lac Ngami, publié en 1856. Andersson l'y donne comme le nom que se donnent les anciens habitants de la région du lac, soumis par les Batoana (Tswana). C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Bayeye",
+            "sources": [
+              {
+                "title": "Lake Ngami; or, Explorations and Discoveries during Four Years' Wanderings in the Wilds of South Western Africa",
+                "author": "Charles John Andersson",
+                "year": 1856,
+                "url": "https://archive.org/details/lakengamiorexplo00ande",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 437",
+                "notes": "Chapitre XXXV : la même phrase donne aussi le nom Bakoba ou Makoba. Le projet n'a pas lu d'ouvrage plus ancien. Édition de New York, Harper & Brothers, 1856 ; lu sur la numérisation d'Internet Archive le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bakoba",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Tswana (Batoana), qui avaient soumis ce peuple",
+        "shortLine": "Un nom que les Tswana ont donné à ce peuple soumis ; il voudrait dire « serfs » et il est jugé blessant.",
+        "periodLabel": "Écrit en 1856 et en 1857",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Koba, sans le préfixe ba-, figure parmi les noms que le catalogue Glottolog relève pour la langue yeyi, avec Kuba.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Yeyi (yeyi1239)",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/yeyi1239",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues de l'Institut Max-Planck, consulté le 13 octobre 2026. Noms relevés : Ceyei, Ciyei, Koba, Kuba, Seyei, Seyeyi, Shiyeyi, Yeei, Yei, Yeyi ; pays : Botswana, Namibie."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "Proposée en 1856, reprise en 1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Bakoba, ou Makoba, voudrait dire « serfs » : les Batoana (Tswana) l'auraient donné à ce peuple après l'avoir soumis, selon Charles John Andersson. David Livingstone écrit que ce nom contient « un peu l'idée d'esclaves ».",
+            "hypothesisGroup": "origine-bakoba",
+            "sources": [
+              {
+                "title": "Lake Ngami; or, Explorations and Discoveries during Four Years' Wanderings in the Wilds of South Western Africa",
+                "author": "Charles John Andersson",
+                "year": 1856,
+                "url": "https://archive.org/details/lakengamiorexplo00ande",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 437",
+                "notes": "Chapitre XXXV : « giving them a name corresponding to their condition, viz., Bakoba or Makoba, that is, serfs ». Édition de New York, Harper & Brothers, 1856 ; lu sur la numérisation d'Internet Archive le 13 octobre 2026. Page lue sur l'image."
+              },
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 64",
+                "notes": "Chapitre III : « the Bechuanas call them Bakoba, which contains somewhat of the idea of slaves ». Londres, John Murray, 1857 ; lu sur la numérisation d'Internet Archive le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "1856"
+            },
+            "era": "polity",
+            "birth": true,
+            "statement": "Le nom Bakoba apparaît par écrit, avec la variante Makoba, dans le livre de Charles John Andersson publié en 1856. Il y désigne les anciens habitants de la région du lac Ngami, soumis par les Batoana. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Bakoba",
+            "sources": [
+              {
+                "title": "Lake Ngami; or, Explorations and Discoveries during Four Years' Wanderings in the Wilds of South Western Africa",
+                "author": "Charles John Andersson",
+                "year": 1856,
+                "url": "https://archive.org/details/lakengamiorexplo00ande",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 437",
+                "notes": "Chapitre XXXV. Le projet n'a pas lu d'ouvrage plus ancien. Édition de New York, Harper & Brothers, 1856 ; lu sur la numérisation d'Internet Archive le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
