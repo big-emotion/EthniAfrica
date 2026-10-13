@@ -53,7 +53,7 @@
     {
       "sourceKey": "agea-eton-lango-naming-2026",
       "title": "Naming as Cultural Epistemology: Knowledge, Belief, and Identity in Lango Personal Naming",
-      "url": "https://www.researchgate.net/publication/405133463_Naming_as_Cultural_Epistemology_Knowledge_Belief_and_Identity_in_Lango_Personal_Naming",
+      "url": "https://doi.org/10.37284/eajtcr.9.1.5010",
       "tier": "referenced",
       "source_kind": "academic",
       "notes": "Jacob Godfrey Agea et Marus Eton, East African Journal of Traditions, Culture and Religion 9(1), 2026, DOI 10.37284/eajtcr.9.1.5010. L’étude de 131 noms recueillis auprès de 78 détenteurs de savoir donne Ocen/Acen pour le second jumeau et Opio/Apio pour le premier."
@@ -84,5 +84,93 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches sur la graphie exacte « Ocen » dans les index onomastiques et l’enquête de terrain d’Agea et Eton sur 131 noms lango et les recherches par graphie exacte dans ses tableaux n’ont pas établi une seconde origine distincte disposant de sa propre provenance."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ocen est un nom de personne des Langi et des Acholi, du nord de l'Ouganda : on le donne au second jumeau, Acen pour une fille. Ce n'est pas un nom de famille reçu des parents. Driberg écrivait une forme proche, Ochyen, en 1923.",
+    "names": [
+      {
+        "nameText": "Ocen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "laj",
+        "namedBy": null,
+        "shortLine": "Un nom donné au second jumeau chez les Langi et les Acholi ; Acen au féminin.",
+        "periodLabel": "Écrit dès 1923 ; donné aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2026,
+              "to": 2026,
+              "label": "Décrit en 2026"
+            },
+            "era": "modern",
+            "statement": "Le nom Ocen est donné chez les Langi au second jumeau, Acen pour une fille, selon Jacob Godfrey Agea et Marus Eton. Certains voient avec ironie dans le second-né l'aîné, parce qu'il aurait poussé le premier dehors.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Naming as Cultural Epistemology: Knowledge, Belief, and Identity in Lango Personal Naming",
+                "author": "Jacob Godfrey Agea et Marus Eton",
+                "year": 2026,
+                "url": "https://doi.org/10.37284/eajtcr.9.1.5010",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 266",
+                "notes": "East African Journal of Traditions, Culture and Religion 9(1), 2026, p. 251-273. Tableau 8 : Ocen/Acen, « The second-born twin. Some people ironically consider the second-born twin the ‘older’ twin because he/she is thought to have pushed the first twin out ». Étude de 131 noms recueillis auprès de 78 détenteurs de savoir langi. PDF de la revue lu en entier. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Décrit en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Ocen est donné chez les Acholi au cadet de jumeaux, Acen pour une fille, selon Charles Amone. Amone cite à part Ocan, nom courant qui dit la peine des parents à la naissance.",
+            "sources": [
+              {
+                "title": "Identity, Memory and Gender in Child Naming Among the Acholi People of Northern Uganda",
+                "author": "Charles Amone",
+                "year": 2014,
+                "url": "https://ijournals.in/wp-content/uploads/2017/07/IJSRC-2505.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 20 et p. 24",
+                "notes": "International Journal of Social Relevance & Concern 2(5), 2014, p. 17-24. Page 20, tableau des noms de jok : Ocen/Acen, « Younger of twin ». Page 24 : « Acan and Ocan are also common because they depict hardship ». Historien de l'université de Gulu. Texte du PDF lu en entier. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1923,
+              "to": 1923,
+              "label": "1923"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ocen apparaît par écrit sous une forme proche, Ochyen, chez l'administrateur Jack Herbert Driberg, dans son livre sur les Langi : c'est le nom du cadet de jumeaux, Achyen pour une fille. C'est la plus ancienne trace de ce nom que le projet connaisse ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Ochyen",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Jack Herbert Driberg",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Lango: A Nilotic Tribe of Uganda",
+                "author": "J. H. Driberg",
+                "year": 1923,
+                "url": "https://archive.org/details/in.ernet.dli.2015.218025",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 152",
+                "notes": "Londres, T. Fisher Unwin, 1923. Page 152 : tableau des noms de jumeaux : « Name of younger : Odongo or Ochyen », « Ochyen », « Achyen », « Adongo ». Administrateur colonial britannique, cité pour ce qu'il écrit des Langi. Numérisation de la Digital Library of India hébergée par Internet Archive ; page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

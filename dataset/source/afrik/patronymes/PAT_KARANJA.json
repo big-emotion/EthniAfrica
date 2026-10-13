@@ -82,5 +82,114 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web combinant « Karanja », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de le mémoire « Kikuyu Male Teachers' Constructions of Manhood in Nyandarua County, Kenya » et ses références, n'ont pas établi de lignée homonyme d'origine distincte ni d'autre homonyme documentable."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Karanja est un nom de personne kikuyu, au Kenya. On ne sait pas avec certitude ce qu'il veut dire : le Dictionary of American Family Names le dit sans explication. Il est écrit dès 1910 chez les Kikuyu, et c'est aussi le nom d'une génération d'initiés. Les sources lues ne le rattachent à aucun clan.",
+    "names": [
+      {
+        "nameText": "Karanja",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kik",
+        "namedBy": null,
+        "shortLine": "Un nom de personne kikuyu, aussi nom d'une génération d'initiés ; son sens reste inconnu.",
+        "periodLabel": "Écrit dès 1910 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "era": "modern",
+            "statement": "Le nom Karanja n'a pas de sens connu : le Dictionary of American Family Names le range parmi les noms kényans sans explication. On ne sait pas avec certitude ce qu'il veut dire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Karanja Name Meaning and Karanja Family History",
+                "author": "FamilySearch, d'après Patrick Hanks (Dictionary of American Family Names)",
+                "year": 2006,
+                "url": "https://www.familysearch.org/en/surname?surname=karanja",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "entrée « Karanja »",
+                "notes": "Entrée FamilySearch attribuée au Dictionary of American Family Names de Patrick Hanks (2003, 2006). Elle dit seulement : « Kenyan: unexplained ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Décrit en 1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Karanja est aussi le nom d'une génération de circoncision kikuyu : Charles William Hobley le place au huitième rang de la première liste que lui donnent des anciens, et le cite aussi dans la seconde. L'un de ces anciens s'appelle lui-même Karanja wa Hiti.",
+            "sources": [
+              {
+                "title": "Bantu Beliefs and Magic",
+                "author": "Charles William Hobley",
+                "year": 1922,
+                "url": "https://archive.org/details/bantubeliefsmagi00hobl",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 88-89 et p. 91",
+                "notes": "Londres, H. F. & G. Witherby, 1922 ; numérisation d'Internet Archive ; pages vues en image. Page 88 : « Four well-known elders, named Katonyo wa Munene, Karanja wa Hiti… » ; page 89 : « 8. Karanja » dans la première liste ; page 91 : « Karanja » dans la seconde. Administrateur colonial britannique, cité pour les formes qu'il écrit. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Karanja est proche de Karanjai, le surnom que les Kikuyu donnent au commerçant John Boyes, « celui qui mange des haricots », selon son récit. Boyes ajoute que des pères nomment leurs fils Karanjai en son honneur. Il explique le surnom, pas le nom Karanja : on ne sait pas si c'est le même mot.",
+            "sources": [
+              {
+                "title": "John Boyes, King of the Wa-Kikuyu: A True Story of Travel and Adventure in Africa",
+                "author": "John Boyes",
+                "year": 1911,
+                "url": "https://archive.org/details/b24877025",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 126-127 et p. 302",
+                "notes": "Londres, Methuen, 1911, texte rédigé avec C. W. L. Bulpett ; numérisation d'Internet Archive. Pages 126-127 : « His people called me Karanjai, meaning literally ‘Who eats beans’ », et des pères disent avoir nommé leurs fils Karanjai en son honneur ; page 302 : « native name of Karanjai, or ‘The eater of beans’ ». Commerçant britannique, cité pour ce qu'il rapporte de son surnom. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Karanja apparaît par écrit chez W. Scoresby Routledge et Katherine Routledge, dans leur livre sur les Kikuyu : ils citent « Karanja, interprète du tribunal à Nyeri » parmi ceux qui leur ont renseigné les règles de justice. C'est la plus ancienne trace de ce nom que le projet connaisse ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Karanja",
+            "birth": true,
+            "actors": [
+              {
+                "name": "W. Scoresby Routledge et Katherine Routledge",
+                "role": "écrivent cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "With a Prehistoric People: the Akikuyu of British East Africa",
+                "author": "W. Scoresby Routledge et Katherine Routledge",
+                "year": 1910,
+                "url": "https://archive.org/details/withprehistoricp00rout",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 216",
+                "notes": "Londres, Edward Arnold, 1910 ; numérisation d'Internet Archive. Page 216, liste des informateurs sur la justice kikuyu : « District 3 … Karanja, Court interpreter at Nyeri ». Page 220 : le nom désigne aussi le garçon d'un exemple. Auteurs de l'époque coloniale, cités pour les formes qu'ils écrivent. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
