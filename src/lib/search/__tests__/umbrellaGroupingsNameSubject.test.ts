@@ -10,7 +10,6 @@ import type { SearchResult } from "@/types/afrik-frontend";
 const CORPUS = join(process.cwd(), "dataset/source/afrik");
 
 const FICHE_PATHS: Record<string, string> = {
-  PPL_KIRDI: "peuples/FLG_TCHADIQUE/PPL_KIRDI.json",
   PPL_MAFA: "peuples/FLG_TCHADIQUE/PPL_MAFA.json",
   PPL_SARA: "peuples/FLG_SOUDANIQUECENTRAL/PPL_SARA.json",
   PPL_MANDE_DU_SUD: "peuples/FLG_MANDE/PPL_MANDE_DU_SUD.json",
@@ -45,17 +44,19 @@ const subjectsWithNameHistory = (query: string) =>
 
 // Operator ruling on wave 3 of ETNI-2011: Kirdi is an outsiders' name laid on
 // some forty peoples, and Mandé du Sud a linguists' branch. Neither is a
-// people, so neither carries a name history; each says so on the answer page
-// and the names stay on the member peoples.
+// people, and the names stay on the member peoples. Since 2026-10-12 Kirdi is
+// no longer a people fiche at all: the word's history is a word fiche.
 describe("umbrella entries that are not peoples", () => {
-  // @req REQ-178
-  it("Kirdi says it is a name given to many peoples and points to the Mafa and the Sara", () => {
-    const kirdi = readFiche("PPL_KIRDI");
+  // @req REQ-196
+  it("Kirdi is told as a word, not as a people", () => {
+    const word = JSON.parse(
+      readFileSync(join(CORPUS, "mots/WRD_KIRDI.json"), "utf8")
+    );
 
-    expect(kirdi.nameHistory).toBeUndefined();
-    expect(kirdi.content.searchAnswer.lead).toMatch(/pas un peuple/);
-    expect(kirdi.content.searchAnswer.lead).toMatch(/Mafa/);
-    expect(kirdi.content.searchAnswer.lead).toMatch(/Sara/);
+    expect(word.nameHistory.summary).toMatch(/pas le nom d'un peuple/);
+    expect(word.relatedSubjects.map((subject) => subject.id)).toEqual(
+      expect.arrayContaining(["PPL_MAFA", "PPL_SARA"])
+    );
   });
 
   // @req REQ-178

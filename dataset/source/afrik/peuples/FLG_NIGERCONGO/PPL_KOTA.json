@@ -120,5 +120,170 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kota désigne un ensemble de peuples bantous du nord-est du Gabon, autour de l'Ivindo et de l'Ogooué, dont l'une des tribus se nomme elle-même Bakota. Un autre nom existe : Kota-Kota, que les tribus voisines donnent aux Bakota proprement dits. Les voyageurs du XIXe siècle écrivaient Okôta. Nous n'avons pas trouvé de source qui explique l'origine de ce nom ; ce que nous savons est présenté plus bas.",
+    "names": [
+      {
+        "nameText": "Bakota",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "koq",
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les Bakota de l'Ivindo, étendu à une dizaine de tribus voisines.",
+        "periodLabel": "Forme proche écrite en 1874 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1965,
+              "to": 1970,
+              "label": "Enquêtes de 1965 à 1970"
+            },
+            "era": "modern",
+            "statement": "Le nom Bakota désigne, au sens large, une bonne dizaine de tribus du Gabon, dont les Mahongwé, les Shamaye et les Shaké : leurs membres se disent Bakota avant de donner le nom de leur tribu, selon Louis Perrois. Ces tribus ne se comprennent pas toujours d'un dialecte à l'autre. Au sens étroit, le nom désigne une seule tribu de l'Ivindo. On ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "La circoncision bakota (Gabon)",
+                "author": "Louis Perrois",
+                "year": 1968,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/sci_hum/19825.pdf",
+                "source_kind": "academic",
+                "page": "p. 7 et p. 29",
+                "notes": "Cahiers ORSTOM, série Sciences humaines, vol. V, n° 1, 1968. Lu dans le texte intégral publié par l'IRD le 11 octobre 2026. L'enquête a commencé en 1965."
+              },
+              {
+                "tier": "referenced",
+                "title": "Chronique du pays kota (Gabon) : la tradition orale, les migrations kota ; les archives, la pénétration européenne du pays kota (1866-1930)",
+                "author": "Louis Perrois",
+                "year": 1970,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/sci_hum/19824.pdf",
+                "source_kind": "academic",
+                "page": "p. 20 et p. 32, note 3",
+                "notes": "Cahiers ORSTOM, série Sciences humaines, vol. VII, n° 2, 1970. Lu dans le texte intégral publié par l'IRD le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1965,
+              "to": 1970,
+              "label": "Enquêtes de 1965 à 1970"
+            },
+            "era": "modern",
+            "statement": "Le nom Bakota est celui que se donnent eux-mêmes les Bakota de l'Ivindo, les « vrais » Bakota ; les autres tribus les appellent souvent Kota-Kota pour les distinguer de l'ensemble, selon Louis Perrois.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Chronique du pays kota (Gabon) : la tradition orale, les migrations kota ; les archives, la pénétration européenne du pays kota (1866-1930)",
+                "author": "Louis Perrois",
+                "year": 1970,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/sci_hum/19824.pdf",
+                "source_kind": "academic",
+                "page": "p. 32, note 3",
+                "notes": "Cahiers ORSTOM, série Sciences humaines, vol. VII, n° 2, 1970. Lu dans le texte intégral publié par l'IRD le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1874,
+              "to": 1875,
+              "label": "Voyage de 1874 (récit publié en 1875)"
+            },
+            "era": "polity",
+            "statement": "Le nom Bakota apparaît par écrit sous une forme proche, Okôta, dans le récit du marquis de Compiègne, qui atteint le 16 janvier 1874 les premiers villages okôta, sur la grande île de Kamba, dans l'Ogooué ; Louis Perrois cite ce passage. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "okôta",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Marquis de Compiègne",
+                "role": "voyageur français, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Chronique du pays kota (Gabon) : la tradition orale, les migrations kota ; les archives, la pénétration européenne du pays kota (1866-1930)",
+                "author": "Louis Perrois",
+                "year": 1970,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/sci_hum/19824.pdf",
+                "source_kind": "academic",
+                "page": "p. 71-72",
+                "notes": "Cahiers ORSTOM, série Sciences humaines, vol. VII, n° 2, 1970. Lu dans le texte intégral publié par l'IRD le 11 octobre 2026. L'auteur cite le marquis de Compiègne, L'Afrique équatoriale, tome 2, 1875, p. 83 et suivantes ; nous n'avons pas lu ce livre nous-mêmes."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kota-Kota",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les tribus voisines des Bakota de l'Ivindo, selon Louis Perrois",
+        "shortLine": "Le nom que d'autres tribus donnent aux Bakota proprement dits.",
+        "periodLabel": "Écrit depuis 1968",
+        "accounts": [
+          {
+            "period": {
+              "from": 1965,
+              "to": 1968,
+              "label": "Enquête publiée en 1968"
+            },
+            "era": "modern",
+            "statement": "Le nom Kota-Kota désigne les Bakota proprement dits, l'une des tribus du grand groupe kota de l'Ivindo ; les autres tribus l'emploient pour les distinguer de l'ensemble des Bakota, selon Louis Perrois.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "La circoncision bakota (Gabon)",
+                "author": "Louis Perrois",
+                "year": 1968,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/sci_hum/19825.pdf",
+                "source_kind": "academic",
+                "page": "p. 7",
+                "notes": "Cahiers ORSTOM, série Sciences humaines, vol. V, n° 1, 1968. Lu dans le texte intégral publié par l'IRD le 11 octobre 2026. L'enquête a commencé en 1965."
+              },
+              {
+                "tier": "referenced",
+                "title": "Chronique du pays kota (Gabon) : la tradition orale, les migrations kota ; les archives, la pénétration européenne du pays kota (1866-1930)",
+                "author": "Louis Perrois",
+                "year": 1970,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/sci_hum/19824.pdf",
+                "source_kind": "academic",
+                "page": "p. 32, note 3",
+                "notes": "Cahiers ORSTOM, série Sciences humaines, vol. VII, n° 2, 1970. Lu dans le texte intégral publié par l'IRD le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1968,
+              "to": 1968,
+              "label": "1968"
+            },
+            "era": "modern",
+            "statement": "Le nom Kota-Kota apparaît par écrit sous la forme Kota-kota dans l'étude de Louis Perrois sur la circoncision bakota, qui en fait un autre nom des Bakota proprement dits. C'est la plus ancienne trace de ce nom que le projet connaît. Cette tribu existait déjà avant lui.",
+            "formAsWritten": "Kota-kota",
+            "birth": true,
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "La circoncision bakota (Gabon)",
+                "author": "Louis Perrois",
+                "year": 1968,
+                "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_4/sci_hum/19825.pdf",
+                "source_kind": "academic",
+                "page": "p. 7",
+                "notes": "Cahiers ORSTOM, série Sciences humaines, vol. V, n° 1, 1968. Lu dans le texte intégral publié par l'IRD le 11 octobre 2026. L'enquête a commencé en 1965."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -96,5 +96,26 @@
     "successorId": "PAT_SILVA",
     "reason": "da Silva is a form of Silva, which the keeper already gives. Folded in: the Angola attestation of Silva and da Silva, and Angola as a country, on the candidate queue the keeper already cites.",
     "decidedOn": "2026-10-11"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_TURAY",
+    "successorId": "PAT_TOURE",
+    "reason": "Turay is the Sierra Leone spelling of Touré (Dictionary of American Family Names), already a variant spelling in the keeper's name history. Folded in: the spelling Turay and Sierra Leone as a country, on DAFN and the Sierra Leone Blue Book 1915, which the keeper's name history already cites. Not carried: the candidate-queue stub.",
+    "decidedOn": "2026-10-12"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_TOURAY",
+    "successorId": "PAT_TOURE",
+    "reason": "Touray is the Gambian spelling of Touré (Dictionary of American Family Names), already a variant spelling in the keeper's name history. Folded in: the spelling Touray and the Gambia as a country, on DAFN, The Geographical Journal of July 1921 and the Peace Corps Mandinka course, which the keeper's name history already cites. Not carried: the candidate-queue stub; its Malinké link, already the keeper's.",
+    "decidedOn": "2026-10-12"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_TESFAY",
+    "successorId": "PAT_TESFAYE",
+    "reason": "Tesfay is the Tigrinya equivalent of Tesfaye (Dictionary of American Family Names), already in the keeper's name history with Tesfai. Folded in: the spellings Tesfay and Tesfai and Eritrea as a country, on DAFN and Munzinger 1859, which the keeper's name history already cites. Not carried: the candidate-queue stub and its Tigray link, which rested on it alone; Forebears, an aggregator that gives no meaning.",
+    "decidedOn": "2026-10-12"
   }
 ]

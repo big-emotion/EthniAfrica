@@ -87,5 +87,188 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kara désigne un peuple de l'île d'Ukara, dans le lac Victoria, au nord-ouest de la Tanzanie, et la langue qu'il parle. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. D'autres noms existent : Wakara, la forme swahilie, et Regi, un autre nom de la langue. On ne sait pas avec certitude d'où vient le nom Kara ; nous présentons plus bas ce que les sources en disent.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Kara",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple de l'île d'Ukara et de sa langue ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit dès 1875 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kara désigne une langue bantoue qu'on parle surtout sur l'île d'Ukara, au nord de l'île d'Ukerewe, dans le lac Victoria, selon l'enquête de SIL International de 2014. L'enquête la range parmi les langues du groupe haya-jita, et la dit vivante, aux côtés de sa voisine le kerewe.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Sociolinguistic Survey of the Kara and Kerewe Peoples",
+                "author": "Staci Bradshaw et Shannon Odom, SIL International",
+                "year": 2016,
+                "url": "https://www.sil.org/system/files/reapdata/13/19/93/131993945882893200361553033650738600931/silesr2017_002.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "SIL Electronic Survey Report 2017-002, décembre 2016. Enquête menée du 14 au 25 septembre 2014 dans le district d'Ukerewe ; lu le 12 octobre 2026 dans une copie conservée par Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "2011"
+            },
+            "era": "modern",
+            "statement": "Le nom Kara est d'abord, selon les auteurs d'un recueil de proverbes de 2011, celui d'une petite île du groupe d'Ukerewe, dont les anciens ont raconté ces proverbes. Ils écrivent que le peuple kara vit surtout de la pêche et de la culture de la pomme de terre. On ne sait pas avec certitude d'où vient le nom de l'île.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A collection of 100 Kara proverbs (Tanzania)",
+                "author": "Père Pascal Durand et catéchiste Joseph Nkumbulwa",
+                "year": 2011,
+                "url": "https://afriprov.tangaza.ac.ke/wp-content/uploads/2008/11/images_afriprov_books_karaproverbs.pdf",
+                "tier": "referenced",
+                "source_kind": "community",
+                "page": "p. 2-3",
+                "notes": "Recueil imprimé à Mwanza en mai 2011, en kara, en swahili, en anglais et en français. Les proverbes viennent des anciens kara et ont été dictés par M. Mtesiga Felisiani Mtwale, de l'île d'Ukara ; lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1875,
+              "to": 1875,
+              "label": "1875"
+            },
+            "era": "polity",
+            "statement": "Le nom Kara apparaît par écrit sous une forme proche, Wakara, dans le récit de l'explorateur Henry Morton Stanley, qui parle des « Wakara » de l'île d'Ukara lors de son tour du lac Victoria en 1875. Il les dit prompts à empoisonner leurs flèches à la vue d'un canot, et rapporte que les Kerewe leur prêtent des pouvoirs sur les crocodiles. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Wakara",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Through the Dark Continent, vol. I",
+                "author": "Henry M. Stanley",
+                "year": 1878,
+                "url": "https://archive.org/details/throughdarkcont04stangoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 162, p. 223 et p. 253",
+                "notes": "Londres, Sampson Low, Marston, Searle et Rivington, 1878. Lu dans la numérisation d'Internet Archive le 12 octobre 2026. Récit paru en 1878 ; la visite à Ukerewe date de juin 1875, le passage devant Ukara de mars 1875."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wakara",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "swh",
+        "namedBy": null,
+        "shortLine": "La forme swahilie du nom, avec le préfixe wa- qui désigne les gens.",
+        "periodLabel": "Écrit dès 1875 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "2011"
+            },
+            "era": "modern",
+            "statement": "Le nom Wakara désigne, en swahili, les habitants de l'île d'Ukara, selon l'introduction swahilie du recueil de proverbes de 2011. Ils précisent que l'île d'Ukara fait partie des îles d'Ukerewe, un district de la région de Mwanza.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A collection of 100 Kara proverbs (Tanzania)",
+                "author": "Père Pascal Durand et catéchiste Joseph Nkumbulwa",
+                "year": 2011,
+                "url": "https://afriprov.tangaza.ac.ke/wp-content/uploads/2008/11/images_afriprov_books_karaproverbs.pdf",
+                "tier": "referenced",
+                "source_kind": "community",
+                "page": "p. 2-3",
+                "notes": "Recueil imprimé à Mwanza en mai 2011, en kara, en swahili, en anglais et en français. Les proverbes viennent des anciens kara et ont été dictés par M. Mtesiga Felisiani Mtwale, de l'île d'Ukara ; lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1875,
+              "to": 1875,
+              "label": "1875"
+            },
+            "era": "polity",
+            "statement": "Le nom Wakara apparaît dans le récit de Stanley sur son tour du lac Victoria, publié en 1878, pour les gens de l'île d'Ukara. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Wakara",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Through the Dark Continent, vol. I",
+                "author": "Henry M. Stanley",
+                "year": 1878,
+                "url": "https://archive.org/details/throughdarkcont04stangoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 223 et p. 253",
+                "notes": "Londres, Sampson Low, Marston, Searle et Rivington, 1878. Lu dans la numérisation d'Internet Archive le 12 octobre 2026. Récit paru en 1878 ; la visite à Ukerewe date de juin 1875."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Regi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un autre nom de la langue kara, que donnent les catalogues de langues.",
+        "periodLabel": "Écrit dès 2016 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Regi est un autre nom de la langue kara, que le rapport de SIL International de 2016 donne dans le passage où il cite l'Ethnologue de Lewis (2014). Le catalogue Glottolog le relève aussi, avec Kara. C'est la plus ancienne trace de ce nom que le projet connaît ; on ne sait pas avec certitude d'où il vient. Le peuple et sa langue existaient déjà avant elle.",
+            "aspect": "usage",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Sociolinguistic Survey of the Kara and Kerewe Peoples",
+                "author": "Staci Bradshaw et Shannon Odom, SIL International",
+                "year": 2016,
+                "url": "https://www.sil.org/system/files/reapdata/13/19/93/131993945882893200361553033650738600931/silesr2017_002.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "SIL Electronic Survey Report 2017-002, décembre 2016. Enquête menée du 14 au 25 septembre 2014 dans le district d'Ukerewe ; lu le 12 octobre 2026 dans une copie conservée par Internet Archive."
+              },
+              {
+                "title": "Glottolog 5.3 — Kara (Tanzania) (kara1481)",
+                "author": "Harald Hammarström, Robert Forkel, Martin Haspelmath et Sebastian Bank",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/kara1481",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues de l'Institut Max-Planck, consulté le 12 octobre 2026. Noms relevés : Kara (Tanzania), Kara, Regi ; pays : Tanzanie."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

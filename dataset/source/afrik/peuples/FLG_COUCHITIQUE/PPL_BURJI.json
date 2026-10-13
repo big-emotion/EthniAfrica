@@ -118,5 +118,246 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Burji désigne un peuple de langue couchitique du sud de l'Éthiopie et du nord du Kenya, au sud des lacs Abaya et Chamo. En 1899, des voyageurs italiens donnent ce nom, écrit Burgi, au plus grand village de la région. Les mêmes auteurs écrivent que ce peuple se nomme Bàmbala dans sa langue ; les catalogues de langues citent aussi Daashi. Ses voisins éleveurs l'appelaient Amarr. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Burji",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bji",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple, écrit Burgi en 1899 pour son plus grand village.",
+        "periodLabel": "Écrit dès 1899 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Burji désigne un peuple du sud de l'Éthiopie et du nord du Kenya, et sa langue couchitique. Les catalogues de langues lui rattachent aussi les noms Daashi, Bambala et Bembala, selon Glottolog. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Burji (burj1242)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/burj1242",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle recense les formes Burji, Buryí, Daashi, Bambala et Bembala."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1899,
+              "label": "Voyage de mars 1896, publié en 1899"
+            },
+            "era": "polity",
+            "statement": "Le nom Burji apparaît, écrit Burgi, dans le récit de la seconde expédition de l'explorateur italien Vittorio Bottego, publié par Lamberto Vannutelli et Carlo Citerni. C'est le nom du plus grand village de la région, où l'expédition arrive en mars 1896. Les caravanes somali, konso et boran appellent ses habitants « Amarr du village Burgi », ou plus brièvement Amarr Burgi. Les mêmes auteurs rapportent que l'explorateur Eugenio Ruspoli avait atteint avant eux « le territoire des Amara Burgi », selon les survivants de son expédition. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Burgi",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Lamberto Vannutelli",
+                "role": "officier de l'expédition, auteur du récit"
+              },
+              {
+                "name": "Carlo Citerni",
+                "role": "officier de l'expédition, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "L'Omo : viaggio d'esplorazione nell'Africa orientale",
+                "author": "Lamberto Vannutelli et Carlo Citerni",
+                "year": 1899,
+                "url": "https://archive.org/details/lomoviaggiodespl00vann",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9, p. 172, p. 183 et p. 188",
+                "notes": "Milan, Hoepli, 1899. Récit de la seconde expédition de Vittorio Bottego, 1895-1897. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bàmbala",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bji",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donnait dans sa langue, selon un récit de 1899.",
+        "periodLabel": "Écrit dès 1899 ; cité par les catalogues de langues",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bambala, ou Bembala, figure parmi les noms de la langue burji dans les catalogues de langues, selon Glottolog.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Burji (burj1242)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/burj1242",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle recense les formes Burji, Daashi, Bambala et Bembala."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1896,
+              "to": 1899,
+              "label": "Voyage de mars 1896, publié en 1899"
+            },
+            "era": "polity",
+            "statement": "Le nom Bàmbala apparaît dans le récit de l'expédition Bottego : c'est, dans leur propre langue, le nom que se donnent les gens de Burji, et celui de leur langue, selon Lamberto Vannutelli et Carlo Citerni. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Bàmbala",
+            "birth": true,
+            "sources": [
+              {
+                "title": "L'Omo : viaggio d'esplorazione nell'Africa orientale",
+                "author": "Lamberto Vannutelli et Carlo Citerni",
+                "year": 1899,
+                "url": "https://archive.org/details/lomoviaggiodespl00vann",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 184",
+                "notes": "Milan, Hoepli, 1899. Récit de la seconde expédition de Vittorio Bottego, 1895-1897. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Daashi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bji",
+        "namedBy": null,
+        "shortLine": "Un nom de ce peuple et de sa langue cité par les catalogues de langues.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Daashi figure parmi les noms de la langue burji dans les catalogues de langues, selon Glottolog. On ne sait pas avec certitude d'où vient ce nom, et nous n'avons pas trouvé sa plus ancienne trace écrite.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Burji (burj1242)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/burj1242",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle recense les formes Burji, Daashi, Bambala et Bembala."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Amarr",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les éleveurs boran et leurs voisins, selon Lamberto Vannutelli et Carlo Citerni",
+        "shortLine": "Le nom que les éleveurs voisins donnaient aux cultivateurs des montagnes ; écrit dès 1897.",
+        "periodLabel": "Écrit dès 1897 ; employé à la fin du XIXe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1896,
+              "to": 1899,
+              "label": "Voyage de mars 1896, publié en 1899"
+            },
+            "era": "polity",
+            "statement": "Le nom Amarr est celui que les Boran et les autres éleveurs des pentes de la grande chaîne de montagnes donnent aux cultivateurs des montagnes, selon Lamberto Vannutelli et Carlo Citerni. Près de Burji, il désigne les habitants de Burgi, Corbaia, Salle, Gamiu et Lemmu. Dans certains lieux, ces gens l'auraient adopté eux-mêmes.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "L'Omo : viaggio d'esplorazione nell'Africa orientale",
+                "author": "Lamberto Vannutelli et Carlo Citerni",
+                "year": 1899,
+                "url": "https://archive.org/details/lomoviaggiodespl00vann",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 183",
+                "notes": "Milan, Hoepli, 1899. Récit de la seconde expédition de Vittorio Bottego, 1895-1897. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1897,
+              "label": "Voyage d'avril 1895, publié en 1897"
+            },
+            "era": "polity",
+            "statement": "Le nom Amarr apparaît sous une forme proche, Amara, dans le récit du voyageur américain Arthur Donaldson Smith : il nomme ainsi un peuple qui vit haut dans les montagnes, chez qui l'explorateur Eugenio Ruspoli avait séjourné et était mort, et ces montagnes elles-mêmes. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Amara",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Arthur Donaldson Smith",
+                "role": "voyageur américain, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Through Unknown African Countries: The First Expedition from Somaliland to Lake Lamu",
+                "author": "Arthur Donaldson Smith",
+                "year": 1897,
+                "url": "https://archive.org/details/throughunknowna00smit",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 213-214",
+                "notes": "Londres et New York, Edward Arnold, 1897. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1899,
+              "to": 1899,
+              "label": "Proposée en 1899"
+            },
+            "era": "polity",
+            "statement": "Le nom Amarr viendrait du nom des Amhara : réputés travailleurs, ils auraient donné leur nom à un mot commun pour les peuples les plus laborieux, selon Lamberto Vannutelli et Carlo Citerni, qui jugent cette origine difficile à retrouver.",
+            "hypothesisGroup": "origine du nom Amarr",
+            "sources": [
+              {
+                "title": "L'Omo : viaggio d'esplorazione nell'Africa orientale",
+                "author": "Lamberto Vannutelli et Carlo Citerni",
+                "year": 1899,
+                "url": "https://archive.org/details/lomoviaggiodespl00vann",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 183",
+                "notes": "Milan, Hoepli, 1899. Récit de la seconde expédition de Vittorio Bottego, 1895-1897. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

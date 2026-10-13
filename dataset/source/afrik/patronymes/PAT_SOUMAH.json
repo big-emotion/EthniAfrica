@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Fiche générée depuis la file d'attente des candidats (vague 1 du plan de couverture anthroponymique). Elle ne porte aucune recherche : ne pas étendre ses affirmations sans appliquer le protocole docs/runbooks/anthroponym-fiche-research.md."
+    "directives": "Fiche enrichie à partir d'André Arcin (1907) et du dictionnaire Bamadaba. Ne pas étendre ses affirmations sans source consultée."
   },
   "id": "PAT_SOUMAH",
   "nameMain": "Soumah",
@@ -11,13 +11,19 @@
     {
       "spelling": "Soumah",
       "attestations": [
-        { "countryId": "GIN", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["arcin-1907-guinee-francaise"]
+        }
       ]
     },
     {
       "spelling": "Souma",
       "attestations": [
-        { "countryId": "GIN", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["arcin-1907-guinee-francaise", "bamadaba-jamuw"]
+        }
       ]
     }
   ],
@@ -25,27 +31,55 @@
   "designatedSocialUnit": "clan",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "writtenChronicles": [
+      {
+        "claim": "André Arcin écrit en 1907 que les Souma sont les chefs par excellence des Soso du centre et des Dialonké de l'ouest. Selon lui, ils se séparent du Ouagadou, puis sont chassés du Manding après la mort de Soumangourou, tué par Soundiata Keïta, et gagnent le Fouta puis la côte. Leur grand fief est le Gania, près de Kindia, et le premier État qu'ils fondent du côté de la mer est le Dubréka. Ce récit est celui d'un administrateur colonial, qui rapporte des traditions sans toujours les attribuer.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["arcin-1907-guinee-francaise"]
+      }
+    ],
+    "linguisticReconstructions": [
+      {
+        "claim": "Selon André Arcin, les Souma ou Soumaoro sont apparentés aux Keïta des Malinké : ils « paraissent être de même famille que les Keïta », et leur totem, le lion, est le même que celui des familles royales. Il note aussi le caïman.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["arcin-1907-guinee-francaise"]
+      },
+      {
+        "claim": "Le dictionnaire des noms de clan mandingues donne Suma, sans autre indication, et Sumaoro, avec les variantes Sumaworo et Sumanguru, comme deux entrées séparées. Il ne dit donc pas que Soumah et Soumaoro sont un seul nom, contrairement à ce que suggère Arcin.",
+        "claimStatus": "contested",
+        "sourceRefs": ["bamadaba-jamuw", "arcin-1907-guinee-francaise"]
+      }
+    ]
   },
   "peoples": [
     {
       "peopleId": "PPL_SOUSSOU",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["arcin-1907-guinee-francaise"]
     }
   ],
   "countries": [
     {
       "countryId": "GIN",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["arcin-1907-guinee-francaise"]
     }
   ],
   "alliances": [],
-  "casteOrSocialFunction": null,
+  "casteOrSocialFunction": {
+    "value": "Selon André Arcin (1907), les Souma sont les chefs par excellence des Soso du centre. Au Gania, ils sont les chefs suprêmes sans commander directement les provinces. Cette fonction politique est décrite en 1907 : elle ne dit pas ce que le nom recouvre aujourd'hui.",
+    "sourceRefs": ["arcin-1907-guinee-francaise"]
+  },
   "bearers": [],
-  "homonyms": [],
+  "homonyms": [
+    {
+      "label": "Soumaré",
+      "entityType": "patronyme",
+      "entityId": "PAT_SOUMARE",
+      "distinction": "Arcin signale chez les Bamana et les Soso des Soumana et des Soumaré, qu'il explique par « fils de Souma ». Soumaré a sa propre fiche : le lien avec Soumah est une explication de 1907, pas un fait établi.",
+      "sourceRefs": ["arcin-1907-guinee-francaise"]
+    }
+  ],
   "sources": [
     {
       "sourceKey": "afrik-candidate-queue",
@@ -53,33 +87,189 @@
       "url": null,
       "tier": "unverified",
       "source_kind": "ai_generated",
-      "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+      "notes": "Ce nom figurait à notre relevé de couverture avant toute recherche. Cette entrée garde la trace de ce point de départ : les affirmations de la fiche reposent désormais sur les sources qui suivent."
+    },
+    {
+      "sourceKey": "arcin-1907-guinee-francaise",
+      "title": "La Guinée française : races, religions, coutumes, production, commerce",
+      "url": "https://archive.org/details/laguinefrana00arci",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "André Arcin, administrateur colonial, Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 13 octobre 2026, pages 281 et 298-299. Texte d'un témoin colonial, cité pour ce qu'il écrit des Souma et non comme dernier mot sur leur histoire."
+    },
+    {
+      "sourceKey": "bamadaba-jamuw",
+      "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+      "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 11 octobre 2026. Entrées Suma (sans autre indication) et Sumaoro (variantes Sumaworo et Sumanguru), distinctes."
     }
   ],
   "gaps": [
     {
-      "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "fieldPath": "origin.oralTraditions",
+      "reason": "Arcin parle de « récits des vieillards » sur les guerres de Sama-nténé Bokary et de Kandé Bourama, mais ne les rapporte pas. Aucun récit oral sur l'origine du nom lui-même n'a été trouvé dans les sources consultées : Arcin (1907) et le dictionnaire Bamadaba."
     },
     {
       "fieldPath": "alliances",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
-      "fieldPath": "casteOrSocialFunction",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Arcin (1907) et le dictionnaire des noms de clan mandingues ne citent aucune parenté à plaisanterie ni alliance entre Soumah et un autre nom documenté ici. Il décrit seulement une parenté supposée avec les Keïta."
     },
     {
       "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
-      "fieldPath": "homonyms",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Arcin cite Soumangourou et Kandé Bourama, mais seul le premier est relié au nom Soumaoro, que les sources consultées distinguent de Soumah. Le projet n'a pas de fiche personne pour eux. Aucun porteur vivant n'est enregistré."
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+      "reason": "Arcin (1907) parle de familles et de tribus sans dire comment le nom se transmet. Le dictionnaire Bamadaba ne le précise pas non plus : le mode de transmission reste à documenter."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Soumah est un nom de clan soussou, en Guinée ; on l'écrit aussi Souma. Son origine est discutée : la seule explication trouvée est présentée plus bas.",
+    "names": [
+      {
+        "nameText": "Soumah",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan soussou de Guinée, écrit dès 1907 sous la forme Souma.",
+        "periodLabel": "Écrit sous une forme proche dès 1907 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Soumah désigne un clan soussou. On ne sait pas avec certitude d'où il vient. Le dictionnaire des noms de clan mandingues donne Suma et Sumaoro comme deux noms distincts.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 11 octobre 2026. Entrées Suma (sans autre indication) et Sumaoro (variantes Sumaworo et Sumanguru), distinctes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Soumah apparaît par écrit sous une forme proche, Souma, chez André Arcin, administrateur colonial, en 1907 : il en fait la famille des chefs des Soussou du centre et des Dialonké de l'ouest de la Guinée. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un document l'a écrit, pas depuis quand le nom est porté.",
+            "formAsWritten": "Souma",
+            "birth": true,
+            "actors": [
+              {
+                "name": "André Arcin",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 298",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 298 : « les Souma sont les chefs par excellence des Soso du Centre et des Dialonké occidentaux »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Décrit en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Soumah, écrit Souma, est celui d'un clan qui commande le Gania, autour de Kindia, et qui a fondé sur la côte l'État du Dubréka, selon André Arcin.",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 298-299",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 298 : « Le grand fief des Souma est le Gania (cercle de Kindia) ». Page 299 : « Le premier Etat fondé par eux du côté de la mer fut le Dubréka »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Proposé en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Soumah serait une autre forme de Soumaoro, et le clan serait parent des Keïta, selon André Arcin, qui écrit « Les Souma ou Soumaoro ».",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 281, 298",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Page 281 : « Les Souma ou Soumaoro. n'téné : le lion, le caïman, apparentés aux Keïta Malinké ». Page 298 : ils « paraissent être de même famille que les Keïta » et furent chassés du Manding après la mort de Soumangourou."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Souma",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1907,
+              "to": 1907,
+              "label": "Décrit en 1907"
+            },
+            "era": "colonial",
+            "statement": "Le nom Souma est l'écriture d'André Arcin en 1907 ; le dictionnaire des noms de clan mandingues écrit Suma.",
+            "sources": [
+              {
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
+                "author": "André Arcin",
+                "year": 1907,
+                "url": "https://archive.org/details/laguinefrana00arci",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 281, 298",
+                "notes": "Paris, Augustin Challamel, 1907. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Auteur administrateur colonial, cité pour les formes et les explications qu'il donne. Pages 281 et 298 : écriture Souma."
+              },
+              {
+                "title": "Bamadaba — dictionnaire des noms claniques (jamuw)",
+                "author": "Corpus bambara de référence",
+                "year": null,
+                "url": "http://cormand.huma-num.fr/dicos/jamuw.zip",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Annexe des noms de clan du Bamadaba, dictionnaire électronique bambara-français (Bailleul, Davydov, Erman, Maslinsky, Méric, Vydrin, 2011-2020, CC BY-NC-SA). Fichier complet relu le 11 octobre 2026. Entrée Suma."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

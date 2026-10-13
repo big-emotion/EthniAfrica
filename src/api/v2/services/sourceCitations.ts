@@ -150,7 +150,7 @@ async function nameFiches(entities: SourceCitationEntity[]): Promise<void> {
 
   // A people's name is `nameMain`; only a country carries `nameFr`. Reading
   // the wrong one is silent — the label simply stays the identifier — which is
-  // how `PPL_KHAINAI` reached the rendered page.
+  // how a raw `PPL_` identifier once reached the rendered page.
   const peopleNames = new Map(
     peoples.map((people) => [people.id, people.nameMain])
   );

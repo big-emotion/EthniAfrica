@@ -835,6 +835,20 @@
         "historicalRole": "Peuples voltaiques/gur, traditions agricoles, cérémonies d'initiation (Poro chez les Sénoufo). Résistance à la colonisation française."
       },
       {
+        "name": "Royaume de Kong",
+        "period": "1710 (début du XVIIIe siècle) - 1897",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1710,
+          "endYear": 1897,
+          "precision": "approximate",
+          "datingNote": "Le début est la prise du pouvoir de Sékou Wattara à Kong. L'historien N. G. Kodjo la fixe en 1710, d'après des documents écrits et des sources orales, et date sa mort de 1745 d'après la chronique de Gonja, selon Edmond Bernus (postface aux États de Kong de Louis Tauxier, 2003). Michel Izard et Joseph Ki-Zerbo (HGA V) la placent au début du XVIIIe siècle, sans année. La fin est la destruction de Kong par Samori Touré, en mai 1897."
+        },
+        "dominantPeoples": ["Dioula (Jula)", "Sénoufo"],
+        "politicalCenters": ["Kong (capitale)"],
+        "historicalRole": "Au début du XVIIIe siècle, en 1710 selon l'historien N. G. Kodjo, Sékou Wattara écarte les autres groupes dioula et règne à Kong, avec une armée où des soldats sénoufo servent sous des officiers dioula, selon Michel Izard et Joseph Ki-Zerbo (HGA V). Kong devient un grand centre de commerce et d'islam. Samori Touré attaque et détruit la ville en mai 1897, selon M'Baye Gueye et Albert Adu Boahen (HGA VII)."
+      },
+      {
         "name": "Colonie de Côte d'Ivoire",
         "period": "1893 - 1960",
         "entryType": "colonial",
@@ -1112,6 +1126,27 @@
         "tier": "unverified",
         "source_kind": "community",
         "notes": "Site d'information ivoirien ; il rattache le nom de la commune d'Abidjan à Bouët-Willaumez."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, V, ch. 12 : Du Niger à la Volta",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par B. A. Ogot, chapitre de Michel Izard et Joseph Ki-Zerbo (1999), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 400. Sékou Wattara « élimina, au début du XVIIIe siècle, les autres groupes jula et régna à Nafana et à Kong grâce à une puissante armée »."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VII, ch. 6 : Initiatives et résistances africaines en Afrique occidentale de 1880 à 1914",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184322",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par A. A. Boahen, chapitre de M'Baye Gueye et Albert Adu Boahen (1987), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 150. Samori Touré « attaquait et détruisait Kong en mai 1897 »."
+      },
+      {
+        "title": "Edmond Bernus, postface à Louis Tauxier, Les États de Kong (Côte d'Ivoire), Karthala, 2003",
+        "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/2022-12/010075008.pdf",
+        "tier": "referenced",
+        "source_kind": "academic",
+        "notes": "Livre publié à Paris par Karthala en 2003, lu dans le texte intégral mis en ligne par l'IRD le 12 octobre 2026. Page 243. Pour l'arrivée au pouvoir de Sékou Ouatara (Wattara), l'historien N. G. Kodjo « fixe cet avènement en 1710 », avec des arguments « beaucoup plus sûrs - documents écrits et sources orales ». Page 246. Kodjo date le règne de 1710 à 1745 ; il a eu connaissance de documents écrits, « tels que la chronique de Gonja qui fixe la date de la mort de Sékou »."
       }
     ],
     "demographics": {

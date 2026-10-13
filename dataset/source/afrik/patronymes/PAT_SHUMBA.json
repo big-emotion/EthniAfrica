@@ -84,5 +84,93 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Shumba », « Shona », « lion », « totem », « surname », « clan », « etymology » et « transmission », ainsi que la consultation directe de « Shumba Surname Origin, Meaning & Last Name History » n'ont établi aucune règle propre à Shumba permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Shumba est un totem de clan shona, au Zimbabwe ; c'est aussi le mot shona qui veut dire « lion ». Il est noté comme nom de totem dès 1918. Les sources consultées ne disent ni d'où vient le nom du clan ni depuis quand il sert de nom de famille.",
+    "names": [
+      {
+        "nameText": "Shumba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un totem de clan shona, au Zimbabwe ; le même mot veut dire « lion ».",
+        "periodLabel": "Écrit dès 1918 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1915,
+              "to": 1915,
+              "label": "Défini en 1915"
+            },
+            "era": "colonial",
+            "statement": "Le nom Shumba est aussi le mot qui veut dire « lion » en karanga, une langue shona : le manuel de C. S. Louw traduit lion par shumba. Ce sens ne dit pas depuis quand le mot sert de nom de clan ni de nom de famille.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Manual of the Chikaranga Language, with Grammar, Exercises, Useful Phrases and Vocabulary",
+                "author": "C. S. Louw",
+                "year": 1915,
+                "url": "https://archive.org/details/amanualchikaran00louwgoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 220",
+                "notes": "Bulawayo, Philpott & Collins, 1915, lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur est missionnaire en Rhodésie du Sud. Page 220 du vocabulaire anglais-karanga : « lion, shumba (4) ». Le manuel ne parle pas du nom de clan."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Shumba est le totem, ou mutupo, des Mhari, un clan shona dont le poème de louange célèbre le lion, selon une page communautaire de poésie africaine. Elle reprend un poème recueilli par Hodza.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Shumba Murambwi praises",
+                "author": "African Poems",
+                "year": null,
+                "url": "https://africanpoems.net/praise/the-shumba-murambwi-praises",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site communautaire de poésie africaine, lu le 11 octobre 2026. La présentation du poème de louange dit qu'il célèbre le lion, Shumba, totem que les Mhari ont adopté pour leur clan, et que le poème a été recueilli par Hodza ; elle s'appuie sur le livre d'Alec Pongweni, The Oral Traditions of the Shona People of Zimbabwe (2012). La page ne donne pas de numéro de page."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1918,
+              "to": 1918,
+              "label": "1918"
+            },
+            "era": "colonial",
+            "statement": "Le nom Shumba apparaît par écrit comme nom de totem chez Samuel S. Dornan, qui écrit que le lion, shumba, est un des totems des Varozwe et des Makaranga, dans les districts de Chibe et de Chilimanzi. C'est la plus ancienne trace de ce nom de totem que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand des clans le portent.",
+            "formAsWritten": "shumba",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Samuel S. Dornan",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Killing of the Divine King in South Africa",
+                "author": "Samuel S. Dornan",
+                "year": 1918,
+                "url": "https://archive.org/details/southafricanjour15sout",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 395",
+                "notes": "South African Journal of Science, vol. 15, 1918, communication lue le 11 juillet 1918 devant la South African Association for the Advancement of Science ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive. L'auteur est un pasteur missionnaire. Page 395 : « The lion, shumba, is also one of the totems of Varozwe and of the Makaranga generally, and is found in the Chibe and Chilimanzi districts. » Auteur de l'époque coloniale, cité ici pour la forme qu'il relève."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

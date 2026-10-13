@@ -12,6 +12,7 @@ import { BackToTop } from "@/components/layout/BackToTop";
  * scroll after the first is dropped, in the test only.
  */
 let pendingFrames: FrameRequestCallback[] = [];
+let currentScrollY = 0;
 
 /**
  * The control is only ever exercised through the page: a reader scrolls, the
@@ -19,7 +20,7 @@ let pendingFrames: FrameRequestCallback[] = [];
  * focus goes with it. Every test here drives it that way.
  */
 function scrollTo(y: number) {
-  window.scrollY = y;
+  currentScrollY = y;
   fireEvent.scroll(window);
 
   const due = pendingFrames;
@@ -42,7 +43,8 @@ const button = () =>
 
 beforeEach(() => {
   window.innerHeight = 800;
-  window.scrollY = 0;
+  currentScrollY = 0;
+  vi.spyOn(window, "scrollY", "get").mockImplementation(() => currentScrollY);
   // happy-dom leaves scrollTo unimplemented, and the assertions here are
   // about what the control asks the page to do, not about the page moving.
   window.scrollTo = vi.fn() as unknown as typeof window.scrollTo;
@@ -55,6 +57,7 @@ beforeEach(() => {
 });
 
 afterEach(() => {
+  vi.restoreAllMocks();
   vi.unstubAllGlobals();
   document.querySelector("body > header")?.remove();
 });
@@ -88,7 +91,7 @@ describe("BackToTop", () => {
 
   // @req REQ-114
   it("offers itself on a page restored mid-document, with no scroll to hear", () => {
-    window.scrollY = 2400;
+    currentScrollY = 2400;
 
     render(<BackToTop />);
 

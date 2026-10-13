@@ -101,5 +101,191 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches « Yao homonym etymology » et « Yao surname origin other language » n'ont pas établi une graphie identique d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Yao est un nom que reçoit à la naissance un garçon agni ou baoulé, en Côte d'Ivoire, d'après le jour où il naît. Au Ghana, en twi, le même nom s'écrit Yaw. Les sources ne le rattachent pas au même jour selon la langue ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Yao",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom donné à la naissance à un garçon, d'après le jour de la semaine où il naît.",
+        "periodLabel": "Écrit dès 1900 ; donné aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Yao est un nom de jour : on le donne à un garçon d'après le jour de la semaine où il est né. Il est aussi porté comme nom de famille, mais c'est d'abord un nom de personne, pas un nom de clan. Ce jour n'est pas le même dans toutes les langues ; nous présentons les sources séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Essai de manuel de la langue agni, parlée dans la moitié orientale de la Côte d'Ivoire",
+                "author": "Maurice Delafosse",
+                "year": 1900,
+                "url": "https://archive.org/details/essaidemanuelde00delagoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 132, note 1 ; p. 133",
+                "notes": "Paris, J. André, 1900. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 133 : les garçons nés le « vendredi (ya) » sont appelés Yao ; les noms d'hommes sont formés du nom du jour précédé du préfixe Kwa, qui « dans Yao » a disparu, avec les formes Kwao, Kwau, Kwaw et Kwa. Page 132, note 1 : « Le nom Yao se prononce Yaw, Ya et même souvent A » après un autre nom. La préface compte le Baoulé dans le domaine de la langue agni. Auteur de l'époque coloniale, cité ici pour les formes qu'il relève."
+              },
+              {
+                "title": "Dictionary of American Family Names, 2e édition — entrée Yao",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/yao?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 11 octobre 2026. Parmi plusieurs origines chinoises, la notice donne : Afrique de l'Ouest (Ghana), nom akan, variante de Yaw."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "Proposé en 1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom Yao serait formé sur ya, le nom du vendredi en agni ; le préfixe Kwa que portent les autres noms de garçons y aurait disparu, et l'on dirait aussi Kwao ou Kwaw, selon Maurice Delafosse.",
+            "sources": [
+              {
+                "title": "Essai de manuel de la langue agni, parlée dans la moitié orientale de la Côte d'Ivoire",
+                "author": "Maurice Delafosse",
+                "year": 1900,
+                "url": "https://archive.org/details/essaidemanuelde00delagoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 132, note 1 ; p. 133",
+                "notes": "Paris, J. André, 1900. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 133 : les garçons nés le « vendredi (ya) » sont appelés Yao ; les noms d'hommes sont formés du nom du jour précédé du préfixe Kwa, qui « dans Yao » a disparu, avec les formes Kwao, Kwau, Kwaw et Kwa. Page 132, note 1 : « Le nom Yao se prononce Yaw, Ya et même souvent A » après un autre nom. La préface compte le Baoulé dans le domaine de la langue agni. Auteur de l'époque coloniale, cité ici pour les formes qu'il relève."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "1900"
+            },
+            "era": "colonial",
+            "statement": "Le nom Yao apparaît par écrit chez Maurice Delafosse, qui le donne comme le nom agni du garçon né le vendredi. Il note qu'on le prononce aussi Yaw ou Ya. C'est la plus ancienne trace de cette graphie que le projet connaît ; elle dit quand un auteur l'a notée, pas depuis quand le nom est donné.",
+            "formAsWritten": "Yao",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Essai de manuel de la langue agni, parlée dans la moitié orientale de la Côte d'Ivoire",
+                "author": "Maurice Delafosse",
+                "year": 1900,
+                "url": "https://archive.org/details/essaidemanuelde00delagoog",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 132, note 1 ; p. 133",
+                "notes": "Paris, J. André, 1900. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 133 : les garçons nés le « vendredi (ya) » sont appelés Yao ; les noms d'hommes sont formés du nom du jour précédé du préfixe Kwa, qui « dans Yao » a disparu, avec les formes Kwao, Kwau, Kwaw et Kwa. Page 132, note 1 : « Le nom Yao se prononce Yaw, Ya et même souvent A » après un autre nom. La préface compte le Baoulé dans le domaine de la langue agni. Auteur de l'époque coloniale, cité ici pour les formes qu'il relève."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Yaw",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le même nom en twi, au Ghana, où il est donné au garçon né le jeudi.",
+        "periodLabel": "Écrit dès 1881 ; donné aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Yaw est donné chez les Akan du Ghana au garçon né le jeudi ; en fante, on dit Ekow, selon Kofi Agyekum, qui l'écrit Yao dans son tableau. Il est aussi porté comme nom de famille, selon un dictionnaire des noms de famille.",
+            "sources": [
+              {
+                "title": "The Sociolinguistic of Akan Personal Names",
+                "author": "Kofi Agyekum",
+                "year": 2006,
+                "url": "https://www.njas.fi/njas/article/download/24/16/38",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Nordic Journal of African Studies, vol. 15, n° 2, 2006, p. 206-235. Lu dans le PDF de la revue le 11 octobre 2026. Page 214 : le tableau des noms de jour donne Yao en twi et Ekow en fante pour le garçon né le jeudi. Pages 215-216 : les noms de famille akan sont donnés par le père et rattachés aux douze clans paternels ; Yeboa figure parmi les exemples. Page 218 : Yɛboa fait partie des noms portés dans tout le pays akan.",
+                "page": "p. 214"
+              },
+              {
+                "title": "Dictionary of American Family Names, 2e édition — entrée Yaw",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/yaw?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 11 octobre 2026. La notice donne, parmi d'autres origines : Afrique de l'Ouest (Ghana), d'un nom de personne masculin akan désignant le garçon né le jeudi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Proposé en 1881"
+            },
+            "statement": "Le nom Yaw serait celui d'un des sept génies qui auraient donné leur nom aux jours de la semaine, ici le jeudi, Yawda : chaque garçon recevrait le nom du génie de son jour, selon Johann Gottlieb Christaller.",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 556 ; annexe D, p. 662-663",
+                "notes": "Bâle, Evangelical Missionary Society, 1881. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 556 : « Yaw, F. Kwaw, pr. n. of a male born on Thursday » et « Yaw-da, Thursday ». Annexe D : les sept jours de la semaine porteraient le nom de sept génies, dont Yaw ; chaque garçon reçoit le nom de son jour, la syllabe Kwa, de akoa, « homme », précédant le nom du génie, « Kwaw (F.) or only Yaw » pour le jeudi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "statement": "Le nom Yaw apparaît dans le dictionnaire du twi de Johann Gottlieb Christaller, missionnaire de Bâle, qui le donne au garçon né le jeudi et note la forme fante Kwaw. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Yaw",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Johann Gottlieb Christaller",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 556 ; annexe D, p. 662-663",
+                "notes": "Bâle, Evangelical Missionary Society, 1881. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 556 : « Yaw, F. Kwaw, pr. n. of a male born on Thursday » et « Yaw-da, Thursday ». Annexe D : les sept jours de la semaine porteraient le nom de sept génies, dont Yaw ; chaque garçon reçoit le nom de son jour, la syllabe Kwa, de akoa, « homme », précédant le nom du génie, « Kwaw (F.) or only Yaw » pour le jeudi."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

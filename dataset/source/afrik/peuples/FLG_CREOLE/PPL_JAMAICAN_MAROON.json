@@ -146,5 +146,180 @@
         "notes": "Page éducative sans auteur identifié ni source citée ; utilisée uniquement pour l'ordre de grandeur de la population totale (5 000 à 10 000 personnes), croisée avec les estimations par ville tirées de sources « referenced »."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Maroons désigne en Jamaïque les communautés fondées par des Africains réduits en esclavage qui se sont enfuis, et leurs descendants, qui l'emploient aussi pour eux-mêmes. Il est en usage avant 1730, selon un historien qui écrit en 1803. Il viendrait de l'espagnol, mais les sources ne s'accordent pas sur le mot d'origine ; nous présentons plus bas leurs explications.",
+    "names": [
+      {
+        "nameText": "Maroons",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "eng",
+        "namedBy": null,
+        "shortLine": "Un nom en usage avant 1730 ; il viendrait d'un mot espagnol discuté.",
+        "periodLabel": "En usage avant 1730 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Maroons désigne les Africains réduits en esclavage qui se sont enfuis et ont fondé leurs propres communautés indépendantes, en Jamaïque comme au Brésil ou au Suriname, selon l'historien Charles H. Ford. Son origine est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "First Maroon War",
+                "author": "Charles H. Ford",
+                "year": 2023,
+                "url": "https://www.ebsco.com/research-starters/history/first-maroon-war",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "EBSCO Research Starters, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "2021"
+            },
+            "statement": "Le nom Maroons est aussi celui qu'emploient pour eux-mêmes des membres de ces communautés : Harcourt Fuller, un Maroon de Moore Town, dit dans le magazine National Geographic que les Maroons préféreraient mourir plutôt que vivre en servitude.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Meet the legendary community that fought for its freedom in Jamaica",
+                "author": "Ashante Infantry",
+                "year": 2021,
+                "url": "https://www.nationalgeographic.com/culture/article/legendary-community-that-fought-for-its-freedom-in-jamaica",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "National Geographic, 19 février 2021, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1739,
+              "to": 1740,
+              "label": "1739-1740"
+            },
+            "statement": "Le nom Maroons est celui des deux groupes, au vent et sous le vent, à qui les traités de 1739 et de 1740 accordent une autonomie limitée en Jamaïque, selon Charles H. Ford.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "First Maroon War",
+                "author": "Charles H. Ford",
+                "year": 2023,
+                "url": "https://www.ebsco.com/research-starters/history/first-maroon-war",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "EBSCO Research Starters, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1730,
+              "to": 1730,
+              "label": "Vers 1730, selon un récit de 1803"
+            },
+            "statement": "Le nom Maroon désigne, jusque vers 1730, le seul groupe des premiers fugitifs de l'époque espagnole ; il s'étend alors aux gens de Cudjoe, quand des expéditions partent contre eux, selon l'historien Robert Charles Dallas, qui écrit en 1803. C'est la plus ancienne trace de ce nom que le projet connaît, rapportée par Dallas. Les communautés qu'il désigne existaient déjà avant elle.",
+            "formAsWritten": "Maroon",
+            "actors": [
+              {
+                "name": "Cudjoe",
+                "role": "chef des Maroons contre qui partent les expéditions"
+              }
+            ],
+            "birth": true,
+            "sources": [
+              {
+                "title": "The History of the Maroons, vol. I",
+                "author": "Robert Charles Dallas",
+                "year": 1803,
+                "url": "https://archive.org/details/cihm_44228",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 33",
+                "notes": "Londres, 1803, lu dans l'exemplaire numérisé d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1774,
+              "to": 1774,
+              "label": "1774"
+            },
+            "statement": "Le nom Maroons figure, sous la forme Marons, en titre d'une section de l'histoire de la Jamaïque d'Edward Long, publiée en 1774.",
+            "formAsWritten": "Marons",
+            "sources": [
+              {
+                "title": "The History of Jamaica, vol. II",
+                "author": "Edward Long",
+                "year": 1774,
+                "url": "https://archive.org/details/historyofjamaica02long",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 338",
+                "notes": "Londres, 1774, lu dans l'exemplaire numérisé d'Internet Archive. La section s'intitule « Marons » ; l'explication du nom est en note."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1774,
+              "to": 1774,
+              "label": "Proposée en 1774"
+            },
+            "statement": "Le nom Maroon viendrait probablement de l'espagnol marrano, un porc d'un an. Il aurait d'abord été donné aux chasseurs de porcs sauvages, pour les distinguer des boucaniers, qui chassaient les bœufs et les chevaux sauvages, selon Edward Long.",
+            "hypothesisGroup": "origine du nom Maroon",
+            "sources": [
+              {
+                "title": "The History of Jamaica, vol. II",
+                "author": "Edward Long",
+                "year": 1774,
+                "url": "https://archive.org/details/historyofjamaica02long",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 338",
+                "notes": "Londres, 1774, lu dans l'exemplaire numérisé d'Internet Archive. La section s'intitule « Marons » ; l'explication du nom est en note."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2023,
+              "label": "Rapporté en 2021 et en 2023"
+            },
+            "statement": "Le nom Maroon viendrait de l'espagnol cimarrón, « sauvage, indomptable », selon l'historien Charles H. Ford. Ashante Infantry, dans le magazine National Geographic, donne à cimarrón le sens de bétail échappé.",
+            "hypothesisGroup": "origine du nom Maroon",
+            "sources": [
+              {
+                "title": "First Maroon War",
+                "author": "Charles H. Ford",
+                "year": 2023,
+                "url": "https://www.ebsco.com/research-starters/history/first-maroon-war",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "EBSCO Research Starters, lu le 11 octobre 2026."
+              },
+              {
+                "title": "Meet the legendary community that fought for its freedom in Jamaica",
+                "author": "Ashante Infantry",
+                "year": 2021,
+                "url": "https://www.nationalgeographic.com/culture/article/legendary-community-that-fought-for-its-freedom-in-jamaica",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "National Geographic, 19 février 2021, lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

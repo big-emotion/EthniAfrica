@@ -76,5 +76,65 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Tchalla à un peuple au Togo. Nous n'avons pas encore consulté de source consacrée à ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Tchalla est un nom de famille porté au Togo. Il est écrit dès 1986 dans un annuaire britannique des États du monde. On ne sait pas avec certitude d'où vient ce nom ni ce qu'il veut dire : le projet n'a pas trouvé de source qui l'explique.",
+    "names": [
+      {
+        "nameText": "Tchalla",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille du Togo, écrit dès 1986.",
+        "periodLabel": "Écrit dès 1986 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Tchalla est un nom de famille, porté après le prénom. Les sources que le projet a lues ne disent ni d'où il vient ni ce qu'il veut dire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Statesman's Year-Book 1986-1987",
+                "author": "John Paxton",
+                "year": 1986,
+                "url": "https://archive.org/details/statesmansyearbo1986unse",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 1177",
+                "notes": "Annuaire des États du monde, Londres, Macmillan. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 1177, article Togo : dans le gouvernement de novembre 1985, le ministre du Commerce et des Transports est Pali Yao Tchalla."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "1986"
+            },
+            "era": "modern",
+            "statement": "Le nom Tchalla apparaît par écrit dans The Statesman's Year-Book, un annuaire publié à Londres. Il le donne au ministre togolais du Commerce et des Transports en novembre 1985. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est porté.",
+            "formAsWritten": "Tchalla",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Statesman's Year-Book 1986-1987",
+                "author": "John Paxton",
+                "year": 1986,
+                "url": "https://archive.org/details/statesmansyearbo1986unse",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 1177",
+                "notes": "Annuaire des États du monde, Londres, Macmillan. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 1177, article Togo : dans le gouvernement de novembre 1985, le ministre du Commerce et des Transports est Pali Yao Tchalla."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

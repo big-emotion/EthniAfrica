@@ -8,6 +8,7 @@ import {
   writeFileSync,
   readFileSync,
   rmSync,
+  appendFileSync,
 } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
@@ -22,7 +23,9 @@ import {
 
 import { createPackage } from "./package.mjs";
 import { installPackageFixture } from "./package.fixture.mjs";
+import { installVideoPackageFixture } from "./package-video.fixture.mjs";
 import { archivePiece } from "./history.mjs";
+import { commitCorpus } from "./corpus.fixture.mjs";
 
 function fixture(t) {
   const root = mkdtempSync(join(tmpdir(), "social-workflow-"));
@@ -233,6 +236,41 @@ test("three approvals stop the workflow at the actual reviewed versions", (t) =>
   const state = loadPiece(f.root, f.id);
   assert.equal(state.stage, "ready");
   assert.deepEqual(state.publications, []);
+});
+
+// @req REQ-186
+test("approval 3 verifies and fingerprints a video package like a card package", (t) => {
+  const f = fixture(t);
+  f.review(1, [f.file("brief.md")]);
+  f.approve(1);
+  f.design();
+  f.review(2, [f.file("proof.png")]);
+  f.approve(2);
+  const video = installVideoPackageFixture(
+    f.root,
+    `.local/productions/${f.id}`
+  );
+  const packageDir = `.local/productions/${f.id}/delivery-video`;
+  createPackage(f.root, video.configPath, packageDir, [
+    "instagram",
+    "facebook",
+  ]);
+  f.event({
+    type: "review",
+    gate: 3,
+    files: [`${packageDir}/post.md`],
+    packageDir,
+    summary: "Synthetic video delivery",
+  });
+  const files = loadPiece(f.root, f.id).reviews[3].files;
+  for (const file of [
+    `${packageDir}/video.mp4`,
+    `${video.final}/video.mp4`,
+    video.sequence,
+  ])
+    assert.ok(files[file], file);
+  appendFileSync(join(f.root, packageDir, "video.mp4"), "x");
+  assert.throws(() => f.approve(3), /changed/i);
 });
 
 // @req REQ-186
@@ -666,4 +704,234 @@ test("final approval requires a verified package and fingerprints its actual med
   const changed = loadPiece(f.root, f.id);
   assert.equal(changed.approvals[3].status, "stale");
   assert.equal(changed.approvals[2].status, "approved");
+});
+
+// A proof approved with two corrections to one committed fiche. The fiche's
+// formatting is deliberately one JSON.stringify would not reproduce.
+function correctedPiece(t, destination) {
+  const f = fixture(t);
+  f.review(1, [f.file("brief.md")]);
+  f.approve(1);
+  f.design();
+  f.review(2, [f.file("proof.png")]);
+  const path = `.local/productions/${f.id}/research.json`;
+  const dossier = JSON.parse(readFileSync(join(f.root, path), "utf8"));
+  const fiche = "dataset/source/afrik/pays/TEST.json";
+  mkdirSync(join(f.root, "dataset/source/afrik/pays"), { recursive: true });
+  const reviewed =
+    '{\n  "name": "Synthetic fixture", "summary": "Old",\n  "notes": "Kept",\n  "source": {}\n}\n';
+  writeFileSync(join(f.root, fiche), reviewed);
+  commitCorpus(f.root);
+  dossier.records = [
+    {
+      file: fiche,
+      sha256: createHash("sha256").update(reviewed).digest("hex"),
+    },
+  ];
+  const finding = (id, pointer, before, value) => ({
+    id,
+    claim: "c1",
+    file: fiche,
+    pointer,
+    before,
+    kind: "missing",
+    rationale: "Synthetic discrepancy",
+    proposal: { value, certainty: "supported" },
+  });
+  dossier.findings = [
+    finding("fix1", "/summary", { exists: true, value: "Old" }, "New"),
+    finding("fix2", "/source/page", { exists: false }, "p. 2"),
+  ];
+  if (destination) dossier.destination = destination;
+  f.file("research.json", JSON.stringify(dossier));
+  f.event({
+    type: "review",
+    gate: 2,
+    researchFile: path,
+    files: [f.file("proof.png")],
+    summary: "Review corrections",
+  });
+  f.approve(2);
+  const proposals = Object.keys(loadPiece(f.root, f.id).corpusProposals);
+  const evidence = f.file("checks.txt", "Simulated successful checks");
+  const fields = {
+    proposed: { url: "https://example.org/review/1" },
+    integrated: { commit: "fixture-commit" },
+  };
+  const record = (
+    id,
+    statuses = ["locally-checked", "proposed", "integrated"]
+  ) =>
+    statuses.forEach((status) =>
+      f.event({
+        type: "corpus-progress",
+        proposal: proposals.find((p) => p.endsWith(`:${id}`)),
+        status,
+        evidence,
+        ...fields[status],
+      })
+    );
+  const corrected = reviewed
+    .replace('"Old"', '"New"')
+    .replace('"source": {}', '"source": { "page": "p. 2" }');
+  const integrate = (text = corrected) =>
+    writeFileSync(join(f.root, fiche), text);
+  return { ...f, path, dossier, corrected, integrate, record };
+}
+
+const approval = (f, gate) => loadPiece(f.root, f.id).approvals[gate]?.status;
+
+// @req REQ-186
+test("approved corrections integrated through review keep the proof approved up to final approval", (t) => {
+  const f = correctedPiece(t);
+  f.integrate();
+  f.record("fix1");
+  f.record("fix2", ["locally-checked"]);
+  assert.equal(approval(f, 2), "approved");
+  f.review(3, [f.file("post.md")]);
+  f.approve(3);
+  assert.equal(approval(f, 3), "approved");
+  assert.equal(approval(f, 2), "approved");
+});
+
+// @req REQ-186
+test("a later unrelated edit to a corrected fiche reopens the proof", (t) => {
+  const f = correctedPiece(t);
+  f.integrate();
+  f.record("fix1");
+  f.record("fix2");
+  assert.equal(approval(f, 2), "approved");
+  f.integrate(f.corrected.replace('"Kept"', '"Changed"'));
+  assert.equal(approval(f, 2), "stale");
+  assert.equal(approval(f, 1), "approved");
+});
+
+// @req REQ-186
+test("a correction never checked or no longer present reopens the proof", (t) => {
+  const unchecked = correctedPiece(t);
+  unchecked.integrate();
+  assert.equal(approval(unchecked, 2), "stale");
+
+  const reverted = correctedPiece(t);
+  reverted.integrate();
+  reverted.record("fix1", ["locally-checked"]);
+  reverted.record("fix2", ["locally-checked"]);
+  assert.equal(approval(reverted, 2), "approved");
+  reverted.integrate(reverted.corrected.replace('"New"', '"Old"'));
+  assert.equal(approval(reverted, 2), "stale");
+});
+
+// @req REQ-186
+test("a proof reopened only by integrated corrections is restored without a new decision", (t) => {
+  // Any event saved between the fiche edit and its progress records persists
+  // the proof as stale; the Sahara checkpoint was saved that way before this rule.
+  const persistStale = (piece) =>
+    piece.event({ type: "checkpoint", nextAction: "Record corpus progress" });
+  const f = correctedPiece(t);
+  f.integrate();
+  persistStale(f);
+  f.record("fix1");
+  f.record("fix2");
+  const state = loadPiece(f.root, f.id);
+  assert.equal(state.approvals[2].status, "stale");
+  const restore = () =>
+    f.event({
+      type: "restore-approval",
+      gate: 2,
+      reason: "Only the approved corrections changed the reviewed fiche",
+    });
+  f.integrate(f.corrected.replace('"Kept"', '"Changed"'));
+  assert.throws(restore, /changed/i);
+  f.integrate();
+  restore();
+  const restored = loadPiece(f.root, f.id);
+  assert.equal(restored.approvals[2].status, "approved");
+  assert.equal(restored.approvals[2].decision, state.approvals[2].decision);
+  assert.equal(restored.stage, "produce");
+  assert.throws(restore, /stale/i);
+
+  const revised = correctedPiece(t);
+  revised.integrate();
+  persistStale(revised);
+  revised.record("fix1");
+  revised.record("fix2");
+  revised.event({ type: "revise", kind: "copy", reason: "Operator rewords" });
+  assert.throws(
+    () =>
+      revised.event({
+        type: "restore-approval",
+        gate: 2,
+        reason: "Attempt after a requested correction",
+      }),
+    /correction/i
+  );
+});
+
+const pending = {
+  status: "pending",
+  url: "https://example.org/answer",
+  invitation: "An answer is promised",
+};
+
+function verifyDestination(f, { destination = {}, dossier = {} } = {}) {
+  const current = JSON.parse(readFileSync(join(f.root, f.path), "utf8"));
+  f.file(
+    "research.json",
+    JSON.stringify({
+      ...current,
+      ...dossier,
+      destination: {
+        ...current.destination,
+        status: "verified",
+        checkedAt: "2026-10-13",
+        support: "The page answers the promised question",
+        evidence: f.file("destination.txt", "Synthetic page capture"),
+        ...destination,
+      },
+    })
+  );
+}
+
+// @req REQ-186
+test("verifying the pending destination shown in the proof keeps the proof approved", (t) => {
+  const f = correctedPiece(t, pending);
+  verifyDestination(f);
+  assert.equal(approval(f, 2), "approved");
+  f.review(3, [f.file("post.md")]);
+  f.approve(3);
+  assert.equal(approval(f, 3), "approved");
+});
+
+// @req REQ-186
+test("a destination verified with another promise, address or dossier change reopens the proof", (t) => {
+  const invitation = correctedPiece(t, pending);
+  verifyDestination(invitation, {
+    destination: { invitation: "A different promise" },
+  });
+  assert.equal(approval(invitation, 2), "stale");
+
+  const address = correctedPiece(t, pending);
+  verifyDestination(address, {
+    destination: { url: "https://example.org/other" },
+  });
+  assert.equal(approval(address, 2), "stale");
+
+  const dossier = correctedPiece(t, pending);
+  verifyDestination(dossier, { dossier: { subject: "Changed subject" } });
+  assert.equal(approval(dossier, 2), "stale");
+});
+
+// @req REQ-186
+test("a checkpoint saved before the reviewed destination was recorded keeps the conservative rule", (t) => {
+  const f = correctedPiece(t, pending);
+  const state = loadPiece(f.root, f.id);
+  delete state.research.destination;
+  delete state.research.withoutDestination;
+  savePiece(f.root, state, state.revision);
+  f.integrate();
+  f.record("fix1");
+  f.record("fix2");
+  assert.equal(approval(f, 2), "approved");
+  verifyDestination(f);
+  assert.equal(approval(f, 2), "stale");
 });

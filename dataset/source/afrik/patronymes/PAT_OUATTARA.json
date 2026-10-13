@@ -115,5 +115,229 @@
       "fieldPath": "origin.oralTraditions",
       "reason": "Le seul récit réuni ici est une synthèse venue de l'extérieur. Un récit sur les familles de Kong, rapporté par un officier français en 1888-1889, figure dans la fiche Daou ; nous ne l'avons pas relu pour celle-ci."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ouattara est un nom de clan des Dioula, ou Mandé du commerce, devenu nom de famille en Côte d'Ivoire, au Burkina Faso et au Mali. Les sources consultées n'expliquent pas le mot ; elles rapportent deux récits sur l'origine des familles qui le portent, que nous présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Ouattara",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan des Dioula, écrit Ouattara dès 1887 par un voyageur français.",
+        "periodLabel": "Écrit dès 1887 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ouattara est celui d'un clan des Dioula, porté surtout en Côte d'Ivoire, au Burkina Faso et au Mali ; le dictionnaire qui le décrit juge son étymologie inexpliquée, selon Patrick Hanks.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ouattara Surname Meaning — Dictionary of American Family Names, 2e édition",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/ouattara?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e édition, Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 dans l'affichage français du site, qui traduit automatiquement le texte anglais ; le sens est repris ici sans citation. L'entrée dit en substance : Afrique de l'Ouest, surtout Côte d'Ivoire, Burkina Faso et Mali, nom du clan Ouattara du peuple dioula, d'étymologie inexpliquée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Rapporté en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ouattara, que Delafosse écrit Ouatara, serait celui d'une famille venue directement de Djenné, avec les familles Dao, Barho, Kérou et Touré, selon ce que l'on prétend à Kong, d'après Maurice Delafosse.",
+            "hypothesisGroup": "origine-ouattara",
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 325",
+                "notes": "Émile Larose, Paris, 1912. L'auteur est un administrateur colonial en Afrique-Occidentale française. Lu sur l'édition du Projet Gutenberg, qui marque les pages de l'imprimé, le 12 octobre 2026. Page 325 : « A Kong on prétend que les familles Ouatara, Dao, Barho, Kérou et Touré seraient venues directement de Dienné », tandis que d'autres familles seraient venues plus tard de Bégho."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "Rapportée en 1892"
+            },
+            "statement": "Le nom Ouattara serait celui d'une famille venue de Ténenguéra avec les familles Barou et Daou, quand elles ont quitté les pays mandé ; son ancêtre Fatiéba, « le père Tiéba », aurait ouvert les expéditions qui ont rendu sa famille maîtresse de la région de Kong, selon Louis-Gustave Binger.",
+            "hypothesisGroup": "origine-ouattara",
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, récit paru dans Le Tour du monde",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://archive.org/details/dunigeraugolfede00bing",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 111-112",
+                "notes": "Exemplaire numérisé d'archive.org (Hachette, 1892, selon la notice), lu le 12 octobre 2026 ; ses pages portent l'en-tête « Le Tour du monde » et la pagination citée est celle de cet exemplaire. Récit d'un officier français en mission, 1887-1889. Pages 111-112 : de Ténenguéra, un village de la route de Kong vers le Djimini, serait venue la fraction des Mandé Dioula qui comprenait les familles Ouattara, Barou et Daou ; l'ancêtre des Ouattara, Fatiéba, « le père Tiéba », commence les expéditions qui font de sa famille la maîtresse de la région, puis son successeur Sékou Ouattara prend Kong."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Rapporté en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ouattara, que Delafosse écrit Ouatara, figure parmi les clans que les Sénoufo se donnent volontiers, avec Kouloubali, Koné ou Touré, aux côtés de leurs propres noms de clan, selon Maurice Delafosse.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 141",
+                "notes": "Émile Larose, Paris, 1912. L'auteur est un administrateur colonial en Afrique-Occidentale française. Lu sur l'édition du Projet Gutenberg, qui marque les pages de l'imprimé, le 12 octobre 2026. Page 141 : comme les Samorho et les Sia, les Sénoufo « s'attribuent fréquemment des noms de clan dioula, banmana ou malinké (Kouloubali, Ouatara, Koné… ) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "Rapporté en 1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ouattara, que Delafosse écrit Ouatara, est cité en tête des principaux clans dioula, avant Konaté, Sissé ou Koné, selon Maurice Delafosse.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 138",
+                "notes": "Émile Larose, Paris, 1912. L'auteur est un administrateur colonial en Afrique-Occidentale française. Lu sur l'édition du Projet Gutenberg, qui marque les pages de l'imprimé, le 12 octobre 2026. Page 138 : les Dioula « se divisent en clans, dont les principaux sont ceux des Ouatara, des Konaté… », puis une longue liste."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1888,
+              "label": "Février 1888"
+            },
+            "statement": "Le nom Ouattara est porté par le roi de Kong, Karamokho-oulé, et par le chef de la ville, Diarawary, que Binger rencontre à Kong en février 1888.",
+            "actors": [
+              {
+                "name": "Karamokho-oulé Ouattara",
+                "role": "roi de Kong en 1888, cité par Binger"
+              },
+              {
+                "name": "Diarawary Ouattara",
+                "role": "chef de la ville de Kong en 1888, cité par Binger"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, récit paru dans Le Tour du monde",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://archive.org/details/dunigeraugolfede00bing",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 86",
+                "notes": "Exemplaire numérisé d'archive.org (Hachette, 1892, selon la notice), lu le 12 octobre 2026 ; ses pages portent l'en-tête « Le Tour du monde » et la pagination citée est celle de cet exemplaire. Récit d'un officier français en mission, 1887-1889. Page 86 : à Kong, le 20 ou 21 février 1888, l'auteur est reçu par le roi Karamokho-oulé Ouattara et par Diarawary Ouattara, « chef de la ville de Kong »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1892,
+              "label": "Écrit en 1887, publié en 1892"
+            },
+            "era": "polity",
+            "statement": "Le nom Ouattara apparaît par écrit dans le récit de voyage de Louis-Gustave Binger, qui le donne à un envoyé venu de Niélé et reçu à Fourou. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est porté.",
+            "formAsWritten": "Ouattara",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Louis-Gustave Binger",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, récit paru dans Le Tour du monde",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://archive.org/details/dunigeraugolfede00bing",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 62",
+                "notes": "Exemplaire numérisé d'archive.org (Hachette, 1892, selon la notice), lu le 12 octobre 2026 ; ses pages portent l'en-tête « Le Tour du monde » et la pagination citée est celle de cet exemplaire. Récit d'un officier français en mission, 1887-1889. Page 62 : parmi les envoyés venus de Niélé, « un Ouattara qui porte une barbe de sapeur » rend visite à l'auteur à Fourou ; l'entrée du journal tombe entre le lundi 5 et le 9 décembre, c'est-à-dire en 1887 d'après le jour de la semaine."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ouatara",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie à un seul t que Delafosse emploie en 1912.",
+        "periodLabel": "Écrit en 1912",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ouatara apparaît par écrit dans le Haut-Sénégal-Niger de Maurice Delafosse, qui le place en tête des principaux clans dioula. C'est la plus ancienne trace de cette graphie que le projet connaît ; Binger écrivait déjà Ouattara vingt ans plus tôt.",
+            "formAsWritten": "Ouatara",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Maurice Delafosse",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Haut-Sénégal-Niger (Soudan français), tome I : le pays, les peuples, les langues",
+                "author": "Maurice Delafosse",
+                "year": 1912,
+                "url": "https://www.gutenberg.org/ebooks/77844",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 138",
+                "notes": "Émile Larose, Paris, 1912. L'auteur est un administrateur colonial en Afrique-Occidentale française. Lu sur l'édition du Projet Gutenberg, qui marque les pages de l'imprimé, le 12 octobre 2026. Page 138 : les Dioula « se divisent en clans, dont les principaux sont ceux des Ouatara, des Konaté… », puis une longue liste."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -85,5 +85,42 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Sanhá à un peuple en Guinée-Bissau. Nous n'avons pas encore consulté de source consacrée à ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sanhá est un nom de famille porté en Guinée-Bissau, celui notamment de Malam Bacai Sanhá, ancien président de la République. On ne sait pas avec certitude d'où il vient : aucune source que nous avons lue n'en donne l'origine.",
+    "names": [
+      {
+        "nameText": "Sanhá",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille de Guinée-Bissau ; on ne sait pas d'où il vient.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "Rapporté en 2009"
+            },
+            "era": "modern",
+            "statement": "Le nom Sanhá est celui de Malam Bacai Sanhá, que sa notice biographique dit né en 1947 dans la région de Quinara, en Guinée-Bissau, musulman et beafada, un peuple qu'elle rattache aux Mandingues. Les sources lues ne disent ni d'où vient le nom ni comment il se transmet.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Malam Bacai Sanhá",
+                "author": "Roberto Ortiz de Zárate Arce, CIDOB",
+                "year": 2009,
+                "url": "https://www.cidob.org/lider-politico/malam-bacai-sanha",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice des biographies de dirigeants politiques du CIDOB (Barcelone), texte à jour jusqu'en juillet 2009. Elle donne « Nacimiento: 5 Mayo 1947 Darsalame, sector de Empada, región de Quinara » et le dit « Musulmán de la etnia mandinga beafada ». Elle ne dit rien de l'origine du nom. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -35,7 +35,13 @@
   "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
-    "writtenChronicles": [],
+    "writtenChronicles": [
+      {
+        "claim": "Le chroniqueur arabe Ibn Khaldūn parle du roi du Mali Mansa Mūsā et lui donne vingt-cinq ans de règne. L'historien D. T. Niane corrige cette durée et place le règne entre 1307 et 1332.",
+        "claimStatus": "established",
+        "sourceRefs": ["hga-iv-niane"]
+      }
+    ],
     "linguisticReconstructions": [
       {
         "claim": "Ryan atteste Musa dans la nomenclature masculine islamique haoussa et le rapproche de Moïse. Amoo, Ajayi et Sabo confirment que Musa figure parmi les noms de prophètes employés dans les pratiques de nomination musulmanes haoussa.",
@@ -51,6 +57,18 @@
         "claim": "Moussa est présenté comme une transcription de l'arabe Mūsā couramment employée en Afrique de l'Ouest.",
         "claimStatus": "claimed",
         "sourceRefs": ["behindthename-moussa"]
+      },
+      {
+        "claim": "Selon Arthur Jeffery, le nom arabe Mūsā désigne Moïse et était reconnu comme un nom étranger par les philologues arabes. Il viendrait de l'hébreu, ou plus probablement du syriaque ou de l'éthiopien, et aucun usage sûr n'est connu avant le Coran.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["jeffery-1938-musa"]
+      }
+    ],
+    "historicalSyntheses": [
+      {
+        "claim": "L'Histoire générale de l'Afrique de l'UNESCO présente Kanku Mūsā, neveu de Sunjata Keita, connu sous le nom de Mansa Mūsā Ier, comme le plus connu des empereurs du Mali. Son pèlerinage à La Mecque, en 1325, l'a rendu célèbre.",
+        "claimStatus": "established",
+        "sourceRefs": ["hga-iv-niane"]
       }
     ]
   },
@@ -64,6 +82,11 @@
       "peopleId": "PPL_ZARMA",
       "status": "supposed",
       "sourceRefs": ["niger-cm-2023-moussa"]
+    },
+    {
+      "peopleId": "PPL_MALINKE",
+      "status": "supposed",
+      "sourceRefs": ["hga-iv-niane"]
     }
   ],
   "countries": [
@@ -81,7 +104,15 @@
   "alliances": [],
   "casteOrSocialFunction": null,
   "bearers": [],
-  "homonyms": [],
+  "homonyms": [
+    {
+      "label": "mūsa (« chat » en haoussa)",
+      "entityType": "other",
+      "entityId": null,
+      "distinction": "Le dictionnaire haoussa de Schön donne, juste après le nom propre Mūsa (« Moïse »), un nom commun mūsa qui veut dire « chat ». Les deux mots s'écrivent de la même façon, mais le second n'est pas un nom de personne.",
+      "sourceRefs": ["schon-1876-musa"]
+    }
+  ],
   "sources": [
     {
       "sourceKey": "ryan-1981-musa",
@@ -130,16 +161,36 @@
       "tier": "official",
       "source_kind": "government",
       "notes": "Communiqué officiel du Gouvernement du Niger, consulté en français. Les mesures nominatives attestent la graphie Moussa au Niger ; elles ne renseignent ni le peuple des porteurs ni l'étymologie du nom."
+    },
+    {
+      "sourceKey": "hga-iv-niane",
+      "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+      "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+      "tier": "official",
+      "source_kind": "intergovernmental",
+      "notes": "UNESCO, dir. D. T. Niane, 1985 ; chapitre de D. T. Niane, lu dans le PDF intégral le 12 octobre 2026. Pages imprimées : vers 1307, le trône échoit à « un neveu de Sunjata Keita, Kanku Mūsā, connu sous le nom de Mansa Mūsā Ier », qui règne de 1307 à 1332 environ, avec un pèlerinage à La Mecque en 1325 (p. 171) ; Ibn Khaldūn lui accorde vingt-cinq ans de règne, ce que l'auteur corrige (p. 173, note 62) ; les traditions orales « font rarement mention » de lui et le jugent « infidèle à la tradition ancestrale manden » (p. 176, note 68). Le chapitre ne donne pas le sens du nom."
+    },
+    {
+      "sourceKey": "jeffery-1938-musa",
+      "title": "The Foreign Vocabulary of the Qur'ān",
+      "url": "https://archive.org/details/foreignvocabular030753mbp",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Arthur Jeffery, Baroda, Oriental Institute, 1938, entrée Mūsā, p. 274-275, lue dans l'exemplaire numérisé d'archive.org le 12 octobre 2026. Les philologues arabes (al-Jawālīqī, Muʿarrab) tenaient le nom pour étranger ; certains le tiraient d'un mot voulant dire « eau et arbres » en hébreu, d'autres en copte. Jeffery juge possible une origine directe dans l'hébreu, mais plus probable un passage par le syriaque ou l'éthiopien, et ne connaît aucun usage bien attesté avant le Coran."
+    },
+    {
+      "sourceKey": "schon-1876-musa",
+      "title": "Dictionary of the Hausa Language",
+      "url": "https://archive.org/details/schon-dictionary-of-the-hausa-language-with-appendix",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "James Frederick Schön, Londres, Church Missionary House, 1876, p. 167. Entrée « Mūsa, propr. noun, Moses » suivie d'un autre mot, mūsa, « chat ». Auteur missionnaire, cité pour les formes qu'il relève."
     }
   ],
   "gaps": [
     {
       "fieldPath": "origin.oralTraditions",
-      "reason": "La requête « Musa Hausa oral tradition griot lineage », Ryan (1981), Chamo (2018) et Amoo, Ajayi et Sabo (2022) n'ont livré ni griot nommé ni transcription attribuable à Musa."
-    },
-    {
-      "fieldPath": "origin.writtenChronicles",
-      "reason": "Les recherches « Musa Hausa Arabic chronicle manuscript » et « Musa Nigeria colonial record » n'ont livré aucune chronique dédiée établissant l'histoire de cette forme dans la nomenclature haoussa."
+      "reason": "Aucun récit oral sur l'origine du nom n'a été trouvé. Ryan (1981), Chamo (2018), Amoo, Ajayi et Sabo (2022) et la requête « Musa Hausa oral tradition griot lineage » n'ont rien donné. L'Histoire générale de l'Afrique (IV, p. 176, note 68) signale seulement que les traditions orales mandingues parlent peu de Mansa Mūsā : cela concerne le roi, pas l'origine de son nom."
     },
     {
       "fieldPath": "alliances",
@@ -151,29 +202,115 @@
     },
     {
       "fieldPath": "bearers",
-      "reason": "La page du gouvernement nigérian et les recherches « Musa Nigeria obituary biography » n'ont fourni aucune notice dédiée de porteur décédé ajoutant une information anthroponymique ; aucun vivant n'a été enregistré."
-    },
-    {
-      "fieldPath": "homonyms",
-      "reason": "Les sources consultées ne permettent pas encore de présenter un autre nom écrit comme Musa, mais d'origine différente."
+      "reason": "Mansa Mūsā Ier, empereur du Mali de 1307 à 1332 environ, porte ce nom selon l'Histoire générale de l'Afrique, mais le projet n'a pas encore de fiche personne pour lui. Aucun porteur vivant n'est enregistré."
     },
     {
       "fieldPath": "peoples",
-      "reason": "Le lien de la forme Moussa avec les Zarma du Niger reste supposé : les travaux d'anthroponymie songhay-zarma consultés ne l'attestent pas."
+      "reason": "Le lien avec les Malinké reste supposé : l'Histoire générale de l'Afrique fait de Mansa Mūsā un neveu de Sunjata Keita, sans dire que le nom est propre à ce peuple. Le lien de la forme Moussa avec les Zarma du Niger reste supposé lui aussi : les travaux d'anthroponymie songhay-zarma consultés ne l'attestent pas."
     }
   ],
   "nameHistory": {
-    "summary": "Le nom Musa est un prénom musulman porté chez les Haoussa, au Nigeria, qui sert aussi de second nom, celui du père, et parfois de nom de famille. En français, on l'écrit souvent Moussa. Son origine proposée est présentée plus bas.",
+    "summary": "Le nom Musa est la forme arabe du nom du prophète Moïse. Il est porté comme prénom musulman en Afrique de l'Ouest, au Mali dès le XIVe siècle et aujourd'hui chez les Haoussa, et sert aussi de nom du père. En français, on l'écrit souvent Moussa. Le chemin du nom entre l'hébreu et l'arabe est discuté : les hypothèses sont présentées plus bas.",
     "names": [
       {
         "nameText": "Musa",
         "nameStatus": "current",
         "selfGiven": true,
-        "languageOfOrigin": null,
+        "languageOfOrigin": "ara",
         "namedBy": null,
-        "shortLine": "Un prénom musulman haoussa, rapproché de Moïse, porté aussi comme nom du père.",
-        "periodLabel": "Écrit dès 1876 ; porté aujourd'hui",
+        "shortLine": "La forme arabe du nom de Moïse, prénom musulman en Afrique de l'Ouest, porté aussi comme nom du père.",
+        "periodLabel": "Porté au Mali dès le XIVe siècle ; porté aujourd'hui",
         "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": 600,
+              "label": "Avant le VIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Musa, le prophète porte le nom de Moïse dans la Bible hébraïque. Selon Arthur Jeffery, le nom arabe en vient sans doute par le syriaque ou l'éthiopien, peut-être directement de l'hébreu.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Foreign Vocabulary of the Qur'ān",
+                "author": "Arthur Jeffery",
+                "year": 1938,
+                "url": "https://archive.org/details/foreignvocabular030753mbp",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 274-275"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 600,
+              "to": 699,
+              "label": "VIIe siècle, dans le Coran"
+            },
+            "era": "polity",
+            "statement": "Le nom Musa apparaît en arabe dans le Coran, sous la forme Mūsā, pour désigner le prophète Moïse. Selon Arthur Jeffery, aucun usage sûr de ce nom n'est connu avant le Coran.",
+            "formAsWritten": "Mūsā",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Foreign Vocabulary of the Qur'ān",
+                "author": "Arthur Jeffery",
+                "year": 1938,
+                "url": "https://archive.org/details/foreignvocabular030753mbp",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 274-275"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Rapporté en 1938"
+            },
+            "statement": "Le nom Musa était tenu pour un nom étranger par les philologues arabes. Certains le tiraient d'un mot qui voudrait dire « eau et arbres », en hébreu selon les uns, en copte selon les autres, d'après Arthur Jeffery.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Foreign Vocabulary of the Qur'ān",
+                "author": "Arthur Jeffery",
+                "year": 1938,
+                "url": "https://archive.org/details/foreignvocabular030753mbp",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 274-275"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1307,
+              "to": 1332,
+              "label": "Règne de 1307 à 1332 environ"
+            },
+            "era": "polity",
+            "statement": "Le nom Musa est porté au XIVe siècle par Kanku Mūsā, empereur du Mali connu sous le nom de Mansa Mūsā Ier, selon l'Histoire générale de l'Afrique de l'UNESCO.",
+            "formAsWritten": "Kanku Mūsā",
+            "actors": [
+              {
+                "name": "Kanku Mūsā, ou Mansa Mūsā Ier",
+                "role": "porte le nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire générale de l'Afrique, IV, ch. 6 : Le Mali et la deuxième expansion manden",
+                "author": "Djibril Tamsir Niane",
+                "year": 1985,
+                "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184313",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "p. 171"
+              }
+            ]
+          },
           {
             "period": {
               "from": 1996,
@@ -225,9 +362,8 @@
               "label": "1876"
             },
             "era": "polity",
-            "statement": "Le nom Musa apparaît par écrit dans le dictionnaire haoussa du missionnaire James Frederick Schön, qui l'écrit Mūsa et le traduit par « Moïse ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "statement": "Le nom Musa apparaît dans le dictionnaire haoussa du missionnaire James Frederick Schön, qui l'écrit Mūsa et le traduit par « Moïse ». Cette entrée dit quand un auteur a noté le nom en haoussa, pas depuis quand il est donné.",
             "formAsWritten": "Mūsa",
-            "birth": true,
             "actors": [
               {
                 "name": "James Frederick Schön",
@@ -250,5 +386,9 @@
         ]
       }
     ]
+  },
+  "searchAnswer": {
+    "lead": "Musa, souvent écrit Moussa en français, est la forme arabe du nom du prophète Moïse. C'est un prénom musulman répandu en Afrique de l'Ouest, porté aussi comme nom du père.",
+    "followUp": "Comment le nom de Moïse est-il arrivé en Afrique de l'Ouest ?"
   }
 }

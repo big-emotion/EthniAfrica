@@ -161,12 +161,12 @@ export function EgoNetworkGraph({
   const [liveMessage, setLiveMessage] = React.useState(() =>
     copy.intro(center.nameMain, visibleEdges.length)
   );
-  const stopRefs = React.useRef<Map<string, SVGElement>>(new Map());
+  const stopElements = React.useMemo(() => new Map<string, SVGElement>(), []);
 
   function registerRef(key: string) {
     return (element: SVGElement | null) => {
-      if (element) stopRefs.current.set(key, element);
-      else stopRefs.current.delete(key);
+      if (element) stopElements.set(key, element);
+      else stopElements.delete(key);
     };
   }
 
@@ -175,7 +175,7 @@ export function EgoNetworkGraph({
     if (!stop) return;
     setActiveIndex(index);
     setLiveMessage(announcementFor(stop, center, language));
-    stopRefs.current.get(stop.key)?.focus();
+    stopElements.get(stop.key)?.focus();
   }
 
   function handleKeyDown(event: React.KeyboardEvent<SVGSVGElement>) {

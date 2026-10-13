@@ -111,5 +111,241 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nabdam désigne un peuple du nord-est du Ghana, dans la région du Haut-Est, qui se nomme lui-même Nabdam. Les Britanniques l'ont aussi rangé sous le nom Frafra, avec ses voisins. D'autres noms existent : Nabt, le nom de sa langue, et Nabnam. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Nabdam",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne, selon Cardinall en 1920 ; il désigne aussi un district.",
+        "periodLabel": "Écrit depuis 1920 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Nabdam désigne un groupe ethnique et le district où il vit, selon le chercheur Joseph Octavius Akolgo. Il n'explique pas ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Investiture of Chiefs, a Relic of Colonialism?",
+                "author": "Joseph Octavius Akolgo",
+                "year": 2024,
+                "url": "https://www.jstage.jst.go.jp/article/ascwp/4/0/4_39/_pdf/-char/ja",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 46, note 9",
+                "notes": "ASC-TUFS Working Papers, vol. 4, 2024 ; lu le 12 octobre 2026 dans le PDF de la revue. Note 9 : « Nabdam refers to an ethnic group and a district comprising the group. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nabdam est l'un des noms que les peuples des districts de Navarro et de Zuaragu se donnent eux-mêmes, selon A. W. Cardinall, qui dit employer pour chaque peuple son propre nom. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Natives of the Northern Territories of the Gold Coast : their customs, religion and folklore",
+                "author": "A. W. Cardinall",
+                "year": 1920,
+                "url": "https://archive.org/details/nativesofnorther00carduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. viii",
+                "notes": "Londres, George Routledge & Sons ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive. Préface : « Throughout I have taken the names employed by the people themselves to describe their tribe. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nabdam apparaît par écrit chez l'administrateur britannique A. W. Cardinall, parmi les principaux peuples des districts de Navarro et de Zuaragu, avec les Nankanni, les Talensi, les Kassena et les Builsa. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà dans ce pays avant elle.",
+            "formAsWritten": "Nabdam",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Natives of the Northern Territories of the Gold Coast : their customs, religion and folklore",
+                "author": "A. W. Cardinall",
+                "year": 1920,
+                "url": "https://archive.org/details/nativesofnorther00carduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Londres, George Routledge & Sons ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive. Préface : « Throughout I have taken the names employed by the people themselves to describe their tribe. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Frafra",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Britanniques, selon A. W. Cardinall",
+        "shortLine": "Le nom que les Britanniques donnaient à tous les Nankanni, Nabdam et Talensi.",
+        "periodLabel": "Écrit Fra-Fra en 1920",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "Proposée en 1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Frafra viendrait d'une formule que ces peuples murmurent pour remercier ou pour demander, « Fra-Fra » ou « Fura-Fura », selon A. W. Cardinall.",
+            "hypothesisGroup": "origine du nom Frafra",
+            "sources": [
+              {
+                "title": "The Natives of the Northern Territories of the Gold Coast : their customs, religion and folklore",
+                "author": "A. W. Cardinall",
+                "year": 1920,
+                "url": "https://archive.org/details/nativesofnorther00carduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. viii",
+                "notes": "Londres, George Routledge & Sons ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive. Préface : « Throughout I have taken the names employed by the people themselves to describe their tribe. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Frafra, écrit Fra-Fra, regroupe pour les Britanniques tous les Nankanni, les Nabdam et les Talensi, selon A. W. Cardinall.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Natives of the Northern Territories of the Gold Coast : their customs, religion and folklore",
+                "author": "A. W. Cardinall",
+                "year": 1920,
+                "url": "https://archive.org/details/nativesofnorther00carduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. viii",
+                "notes": "Londres, George Routledge & Sons ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive. Préface : « Throughout I have taken the names employed by the people themselves to describe their tribe. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gurunsi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des étrangers, comme les Mossi et les Mamprussi, selon A. W. Cardinall",
+        "shortLine": "Le nom que les Mossi et les Mamprussi donnent à tous ces peuples ; écrit Grunshi en 1920.",
+        "periodLabel": "Écrit Grunshi en 1920",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gurunsi s'écrit Grunshi chez A. W. Cardinall, qui y voit un nom donné par des étrangers comme les Mossi et les Mamprussi à l'ensemble de ces peuples. Il ajoute que les Britanniques l'ont ensuite découpé en trois, Fra-Fra, Grunshi et Kanjaga.",
+            "aspect": "usage",
+            "formAsWritten": "Grunshi",
+            "sources": [
+              {
+                "title": "The Natives of the Northern Territories of the Gold Coast : their customs, religion and folklore",
+                "author": "A. W. Cardinall",
+                "year": 1920,
+                "url": "https://archive.org/details/nativesofnorther00carduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. viii",
+                "notes": "Londres, George Routledge & Sons ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive. Préface : « Throughout I have taken the names employed by the people themselves to describe their tribe. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nabt",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la langue des Nabdam, que l'association Nabt Nkɔr emploie.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Nabt est celui que l'association ghanéenne Nabt Nkɔr emploie pour la langue du Haut-Est qu'elle veut enseigner ; son nom veut dire « la voix des Nabt ». Sa page ne dit pas d'où vient le nom Nabt. On ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Who We Are",
+                "author": "NABT NKOR (Nabt Centre for Cultural Studies)",
+                "year": null,
+                "url": "https://www.nabtnkornccs.org/en/about-us/who-we-are",
+                "tier": "unverified",
+                "source_kind": "ngo",
+                "notes": "Page d'une association ghanéenne, non datée, lue le 12 octobre 2026. Elle écrit que « Nabt Nkɔr » veut dire « la voix des Nabt », parle de la culture « nabdam » et de la langue nabt du Haut-Est, et nomme sa revue et son journal d'après les Nabnam."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nabnam",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom que l'association Nabt Nkɔr emploie pour le district et son peuple.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Nabnam figure dans le nom de la revue et du journal de l'association Nabt Nkɔr, et dans une légende qui parle du « district nabnam et de son peuple ». Sa page ne dit pas d'où vient ce nom. On ne sait pas avec certitude d'où il vient.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Who We Are",
+                "author": "NABT NKOR (Nabt Centre for Cultural Studies)",
+                "year": null,
+                "url": "https://www.nabtnkornccs.org/en/about-us/who-we-are",
+                "tier": "unverified",
+                "source_kind": "ngo",
+                "notes": "Page d'une association ghanéenne, non datée, lue le 12 octobre 2026. Elle écrit que « Nabt Nkɔr » veut dire « la voix des Nabt », parle de la culture « nabdam » et de la langue nabt du Haut-Est, et nomme sa revue et son journal d'après les Nabnam."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

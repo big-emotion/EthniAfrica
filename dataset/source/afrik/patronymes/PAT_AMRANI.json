@@ -120,5 +120,127 @@
       "fieldPath": "homonyms",
       "reason": "Les répertoires onomastiques, catalogues d’autorité et recherches multilingues consultés n’ont pas permis de distinguer deux origines autonomes sous la même graphie Amrani."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Amrani est un nom de famille d'Algérie, relevé en Kabylie, que l'on écrit aussi Ɛemrani à la kabyle. Un mémoire le fait venir du prénom arabe Amran ; nous présentons ce que disent les sources lues. Elles ne disent pas depuis quand il est porté comme nom de famille.",
+    "names": [
+      {
+        "nameText": "Amrani",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille de Kabylie, tiré d'un prénom arabe selon un mémoire ; écrit dès 1926.",
+        "periodLabel": "Écrit dès 1926 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Décrit en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Amrani, que le mémoire écrit aussi Ɛemrani à la kabyle, est un nom de famille relevé à Berkouka et à Iguer-Guedmimen, en Kabylie. Selon les informateurs interrogés, le « véritable nom de clan » des porteurs est At iciban.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Étude linguistique des anthroponymes des deux localités kabyles : Berkouka et Iguer Guedmimen — analyses morphologique et sémantique",
+                "author": "Fetta Mestar et Melissa Ramdane Cherif",
+                "year": 2024,
+                "url": "https://dspace.ummto.dz/server/api/core/bitstreams/5591d5a2-d7be-409b-b845-7140f0d5df69/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38",
+                "notes": "Mémoire de master, Université Mouloud Mammeri de Tizi-Ouzou, 2023-2024. Lu dans le texte intégral le 12 octobre 2026. Entrée 11, « AMRANI / Ɛemrani », au chapitre II, p. 38. Les autrices ont interrogé sept informateurs de Berkouka et d'Iguer-Guedmimen, désignés par leurs initiales (p. 11) ; l'entrée ne dit pas lequel a parlé de ce nom. "
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Proposé en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Amrani viendrait du prénom arabe musulman Amran, qui voudrait dire « longue vie » ou « prospérité », selon un mémoire de master de l'université de Tizi-Ouzou. Il s'appuie sur le dictionnaire des patronymes algériens de Mustapha Tidjet (tome 2, p. 31), que nous n'avons pas lu : le sens est donc rapporté de seconde main.",
+            "hypothesisGroup": "origine du nom Amrani",
+            "sources": [
+              {
+                "title": "Étude linguistique des anthroponymes des deux localités kabyles : Berkouka et Iguer Guedmimen — analyses morphologique et sémantique",
+                "author": "Fetta Mestar et Melissa Ramdane Cherif",
+                "year": 2024,
+                "url": "https://dspace.ummto.dz/server/api/core/bitstreams/5591d5a2-d7be-409b-b845-7140f0d5df69/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38",
+                "notes": "Mémoire de master, Université Mouloud Mammeri de Tizi-Ouzou, 2023-2024. Lu dans le texte intégral le 12 octobre 2026. Entrée 11, « AMRANI / Ɛemrani », au chapitre II, p. 38. Les autrices ont interrogé sept informateurs de Berkouka et d'Iguer-Guedmimen, désignés par leurs initiales (p. 11) ; l'entrée ne dit pas lequel a parlé de ce nom. "
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1926,
+              "to": 1926,
+              "label": "1926"
+            },
+            "era": "colonial",
+            "statement": "Le nom Amrani apparaît par écrit dans la notice de la Bibliothèque nationale de France consacrée au chanteur Dahmane el-Harrachi : elle donne Amrani comme nom de naissance d'Abderrahmane Amrani, né à El Biar, en Algérie, en 1926. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un porteur est né, pas depuis quand le nom existe, et le prénom Amran dont il vient peut-être est bien plus ancien.",
+            "formAsWritten": "Amrani",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Abderrahmane Amrani, dit Dahmane el-Harrachi",
+                "role": "porte ce nom à sa naissance, selon la notice"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Notice de personne : Dahmane el-Harrachi (1926-1980)",
+                "author": "Bibliothèque nationale de France",
+                "year": null,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb13954498s",
+                "tier": "official",
+                "source_kind": "repository",
+                "page": "notice FRBNF13954498, rubriques « Nom de naissance » et « Formes rejetées »",
+                "notes": "Notice d'autorité lue le 12 octobre 2026. Elle donne « Pseudonyme de Abderrahmane Amrani » comme nom de naissance, la naissance le 7 juillet 1926 à El Biar (Algérie), la mort le 31 août 1980 à Aïn Benian, et, parmi les formes rejetées, « Amrani, Abderrahmane » et sa translittération arabe « ʿAmrānī, ʿAbd al-Raḥmān »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ɛemrani",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'écriture kabyle de Amrani, relevée dans un mémoire de 2024.",
+        "periodLabel": "Relevé en 2024",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Décrit en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Ɛemrani est l'écriture kabyle de Amrani dans un mémoire de master de l'université de Tizi-Ouzou, qui lui donne la même explication : un dérivé du prénom arabe Amran.",
+            "sources": [
+              {
+                "title": "Étude linguistique des anthroponymes des deux localités kabyles : Berkouka et Iguer Guedmimen — analyses morphologique et sémantique",
+                "author": "Fetta Mestar et Melissa Ramdane Cherif",
+                "year": 2024,
+                "url": "https://dspace.ummto.dz/server/api/core/bitstreams/5591d5a2-d7be-409b-b845-7140f0d5df69/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 38",
+                "notes": "Mémoire de master, Université Mouloud Mammeri de Tizi-Ouzou, 2023-2024. Lu dans le texte intégral le 12 octobre 2026. Entrée 11, « AMRANI / Ɛemrani », au chapitre II, p. 38. Les autrices ont interrogé sept informateurs de Berkouka et d'Iguer-Guedmimen, désignés par leurs initiales (p. 11) ; l'entrée ne dit pas lequel a parlé de ce nom. "
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -115,5 +115,143 @@
         "source_kind": "press"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Toura désigne un peuple de langue mandé de l'ouest de la Côte d'Ivoire, qui vit dans les monts du Toura, au nord de Man. Ce peuple se nomme lui-même wɛɛmɛɛbo, selon le linguiste Thomas Bearth. Le nom Toura aurait été donné par ses voisins du nord. Les sources ne s'accordent pas toujours sur l'origine des noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Wɛɛmɛɛbo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "neb",
+        "namedBy": null,
+        "shortLine": "Le nom que les Toura se donnent, d'après Thomas Bearth : wɛɛ, « toura », mɛɛ, « personne », bo, marque du pluriel.",
+        "periodLabel": "Écrit en 1971",
+        "accounts": [
+          {
+            "period": {
+              "from": 1962,
+              "to": 1962,
+              "label": "Proposée en 1962"
+            },
+            "era": "modern",
+            "statement": "Le nom wɛɛ viendrait du mot qui désigne la graine du palmier à huile, très appréciée des Toura : wɛɛmɛɛ voudrait alors dire « mangeur de graines de palmier », selon B. Holas, cité par Thomas Bearth. Bearth n'y croit guère : le ton et la longueur du mot wɛɛ, « toura », ne sont pas ceux du mot qui désigne la graine, ce qui ferait plutôt penser à une explication populaire.",
+            "hypothesisGroup": "origine du nom wɛɛ",
+            "sources": [
+              {
+                "title": "L'énoncé toura (Côte d'Ivoire)",
+                "author": "Thomas Bearth",
+                "year": 1971,
+                "url": "https://archive.org/details/ERIC_ED070351",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Thèse de doctorat soutenue à l'université de Genève en 1970 ; Norman, Summer Institute of Linguistics, université d'Oklahoma, 1971. Lue sur la copie ERIC d'Internet Archive le 12 octobre 2026. Hypothèse de B. Holas (1962) rapportée de seconde main, avec la critique de Bearth ; nous n'avons pas lu l'étude de Holas. Transcription sans les tons."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1971,
+              "to": 1971,
+              "label": "1971"
+            },
+            "era": "modern",
+            "statement": "Le nom wɛɛmɛɛbo est celui par lequel les Toura se désignent eux-mêmes, selon Thomas Bearth. Il se décompose en wɛɛ, « toura », mɛɛ, « personne », et bo, la marque du pluriel ; de même, wɛɛluu est le « pays toura » et wɛɛwoo la « langue toura ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "L'énoncé toura (Côte d'Ivoire)",
+                "author": "Thomas Bearth",
+                "year": 1971,
+                "url": "https://archive.org/details/ERIC_ED070351",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Thèse de doctorat soutenue à l'université de Genève en 1970 ; Norman, Summer Institute of Linguistics, université d'Oklahoma, 1971. Lue sur la copie ERIC d'Internet Archive le 12 octobre 2026. Transcription sans les tons ; la thèse note ces formes avec leurs tons."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1971,
+              "to": 1971,
+              "label": "1971"
+            },
+            "era": "modern",
+            "statement": "Le nom wɛɛmɛɛbo apparaît par écrit dans la thèse du linguiste Thomas Bearth sur la langue toura, qui le donne comme celui par lequel les Toura se désignent eux-mêmes. C'est la plus ancienne trace de ce nom que le projet connaît. Les Toura s'en servaient bien avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "L'énoncé toura (Côte d'Ivoire)",
+                "author": "Thomas Bearth",
+                "year": 1971,
+                "url": "https://archive.org/details/ERIC_ED070351",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Thèse de doctorat soutenue à l'université de Genève en 1970 ; Norman, Summer Institute of Linguistics, université d'Oklahoma, 1971. Lue sur la copie ERIC d'Internet Archive le 12 octobre 2026. Transcription sans les tons."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Toura",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les voisins du nord des Toura, selon Lavergne de Tressan",
+        "shortLine": "Le nom officiel de ce peuple et de sa langue, donné par ses voisins du nord selon un auteur de 1953.",
+        "periodLabel": "Cité en 1953 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1971,
+              "to": 1971,
+              "label": "1971"
+            },
+            "era": "modern",
+            "statement": "Le nom Toura désigne à la fois le peuple et sa langue dans la littérature ethnographique et dans la nomenclature officielle, selon Thomas Bearth, qui s'y conforme. Le linguiste A. Prost, lui, emploie le terme que les Toura utilisent eux-mêmes pour la langue.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "L'énoncé toura (Côte d'Ivoire)",
+                "author": "Thomas Bearth",
+                "year": 1971,
+                "url": "https://archive.org/details/ERIC_ED070351",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Thèse de doctorat soutenue à l'université de Genève en 1970 ; Norman, Summer Institute of Linguistics, université d'Oklahoma, 1971. Lue sur la copie ERIC d'Internet Archive le 12 octobre 2026. Bearth cite la monographie d'A. Prost sur les langues mandé orientales (1953) ; nous n'avons pas lu cet ouvrage."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1953,
+              "to": 1953,
+              "label": "1953"
+            },
+            "era": "colonial",
+            "statement": "Le nom Toura aurait été donné aux Toura par leurs voisins du nord, selon Lavergne de Tressan, cité par Thomas Bearth. C'est la plus ancienne trace de ce nom que le projet connaît ; elle est rapportée de seconde main. Le peuple vivait déjà là avant lui.",
+            "hypothesisGroup": "origine du nom Toura",
+            "birth": true,
+            "sources": [
+              {
+                "title": "L'énoncé toura (Côte d'Ivoire)",
+                "author": "Thomas Bearth",
+                "year": 1971,
+                "url": "https://archive.org/details/ERIC_ED070351",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Thèse de doctorat soutenue à l'université de Genève en 1970 ; Norman, Summer Institute of Linguistics, université d'Oklahoma, 1971. Lue sur la copie ERIC d'Internet Archive le 12 octobre 2026. Bearth cite « Lavergne de Tressan (1953) » sans titre dans ce passage ; nous n'avons pas lu cet ouvrage. Bearth ne dit pas qui sont ces voisins du nord."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

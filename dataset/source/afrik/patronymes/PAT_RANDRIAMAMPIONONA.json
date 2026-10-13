@@ -90,5 +90,68 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches exactes n'établissent pas de lignée Randriamampionona d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Randriamampionona est un nom de personne malgache, porté aujourd'hui comme nom de famille. Il commence par Ra, que le malgache place devant les noms de personnes. On ne sait pas avec certitude ce que veut dire le reste du nom ni d'où il vient : les sources que nous avons lues ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Randriamampionona",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne malgache porté comme nom de famille ; on ne sait pas avec certitude ce qu'il veut dire.",
+        "periodLabel": "Écrit dès 1984 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Randriamampionona est un nom de personne malgache, porté comme nom de famille, par exemple par Lalao Randriamampionona, auteur d'une étude sur la théorie de l'histoire. Il commence par Ra, que le malgache place devant les noms de personnes. Les sources lues ne disent ni ce que veut dire le reste du nom, ni d'où il vient, ni comment il se transmet.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Notice bibliographique « Du Rôle de la pratique dans l'élaboration d'une philosophie et d'une théorie scientifique de l'histoire / Lalao Randriamampionona »",
+                "author": "Bibliothèque nationale de France",
+                "year": 1989,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb376178908",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice de la Bibliothèque nationale de France, lue le 11 octobre 2026. Elle attribue ce texte, daté de 1989, à « Randriamampionona, Lalao (1939-....) ». Elle ne dit rien de l'origine du nom."
+              },
+              {
+                "title": "Dictionnaire malgache-français",
+                "author": "Antoine Abinal et Victorin Malzac",
+                "year": 1888,
+                "url": "https://archive.org/details/dictionnairemalg00abin",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 456",
+                "notes": "Tananarive, Imprimerie de la Mission catholique, 1888. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 456, article Ra : « Article personnel qui se met ordinairement devant les noms propres : Ra-bé, Ra-láy, qu'on écrit Rabe, Ralay ». Auteurs de l'époque coloniale, cités ici pour les formes qu'ils relèvent."
+              }
+            ]
+          },
+          {
+            "period": { "from": 1984, "to": 1984, "label": "1984" },
+            "statement": "Le nom Randriamampionona apparaît par écrit comme nom d'auteur d'un livre de Modeste Randriamampionona, vétérinaire, imprimé à Toulouse en 1984, selon le catalogue de la Bibliothèque nationale de France. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est donné.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notice bibliographique « Les Tueries particulières à Madagascar »",
+                "author": "Bibliothèque nationale de France",
+                "year": 1984,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb361075682",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice de la Bibliothèque nationale de France, lue le 11 octobre 2026. Livre de Modeste Randriamampionona, vétérinaire, imprimé à Toulouse en 1984. C'est la plus ancienne publication sous ce nom que donne le catalogue."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

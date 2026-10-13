@@ -113,5 +113,135 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Belanda désigne un peuple du Soudan du Sud, dans l'ouest du Bahr el-Ghazal, qui se nomme lui-même Belanda Bor, ou Balanda Boor. Les Zande l'appelaient A-Rambiá. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Belanda Bor",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bxb",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple ; son origine n'est pas connue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Belanda Bor désigne un peuple du Soudan du Sud et sa langue, que les catalogues de langues écrivent aussi Bor, Bor-Belanda ou De Bor, selon Glottolog. On ne sait pas avec certitude d'où vient ce nom, et nous n'avons pas trouvé sa plus ancienne trace écrite.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Belanda Bor (bela1256)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/bela1256",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle recense les formes Belanda Bor, Bor, Bor-Belanda et De Bor."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Belanda",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom d'origine inconnue, écrit Bellánda dès 1873.",
+        "periodLabel": "Écrit dès 1873 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1868,
+              "to": 1874,
+              "label": "Voyage de 1868 à 1871, publié en 1874"
+            },
+            "statement": "Le nom Belanda est écrit Bellanda dans le récit de Georg Schweinfurth : il situe les Bellanda au sud du pays bongo, serrés entre les Bongo et les Zande.",
+            "formAsWritten": "Bellanda",
+            "sources": [
+              {
+                "title": "The Heart of Africa : Three Years' Travels and Adventures in the Unexplored Regions of Central Africa, from 1868 to 1871, vol. I",
+                "author": "Georg Schweinfurth",
+                "year": 1874,
+                "url": "https://archive.org/details/heartofafricathr01schw",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 258",
+                "notes": "Londres, Sampson Low, Marston, Low et Searle, deuxième édition, 1874, traduction anglaise d'Im Herzen von Afrika. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "1873"
+            },
+            "statement": "Le nom Belanda apparaît, écrit Bellánda, dans les vocabulaires du botaniste Georg Schweinfurth : il range les Bellánda, avec les Jur et les Dembo, parmi des groupes venus des Shilluk, et note qu'ils ont gardé presque sans changement la langue shilluk. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "Bellánda",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Georg Schweinfurth",
+                "role": "botaniste et voyageur, auteur des vocabulaires"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Linguistische Ergebnisse einer Reise nach Centralafrika",
+                "author": "Georg Schweinfurth",
+                "year": 1873,
+                "url": "https://archive.org/details/bub_gb_i_YUAAAAYAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 61-62",
+                "notes": "Berlin, Wiegandt et Hempel, 1873. Vocabulaires recueillis pendant le voyage de 1868 à 1871. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "A-Rambiá",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Zande, selon Georg Schweinfurth",
+        "shortLine": "Le nom que les Zande donnaient aux Belanda, selon Schweinfurth en 1873.",
+        "periodLabel": "Écrit en 1873",
+        "accounts": [
+          {
+            "period": {
+              "from": 1873,
+              "to": 1873,
+              "label": "1873"
+            },
+            "statement": "Le nom A-Rambiá est celui que les Zande donnent aux Bellánda, dans la liste des noms de peuples en langue zande que publie Georg Schweinfurth. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple qu'il désigne existait déjà avant lui.",
+            "formAsWritten": "A-Rambiá",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Linguistische Ergebnisse einer Reise nach Centralafrika",
+                "author": "Georg Schweinfurth",
+                "year": 1873,
+                "url": "https://archive.org/details/bub_gb_i_YUAAAAYAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 46",
+                "notes": "Berlin, Wiegandt et Hempel, 1873. Vocabulaires recueillis pendant le voyage de 1868 à 1871. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

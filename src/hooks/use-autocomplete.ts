@@ -155,10 +155,6 @@ export function useAutocomplete<T>({
 
     if (!longEnough) {
       latestTicket.current++;
-      setOptions((current) => (current.length === 0 ? current : []));
-      setAnswered(false);
-      setFailed(false);
-      setPending(false);
       return;
     }
 
@@ -174,12 +170,14 @@ export function useAutocomplete<T>({
         const capped =
           limit === undefined ? arranged : arranged.slice(0, limit);
         setOptions(capped);
+        setActiveIndex(-1);
         setAnswered(true);
         setFailed(false);
         callbacks.current.onResolved?.(capped, trimmed);
       } catch {
         if (ticket !== latestTicket.current) return;
         setOptions([]);
+        setActiveIndex(-1);
         setAnswered(false);
         setFailed(true);
       } finally {
@@ -190,18 +188,22 @@ export function useAutocomplete<T>({
     return () => clearTimeout(timer);
   }, [trimmed, longEnough, debounceMs, limit, attempt]);
 
-  // The highlight belongs to the list it was pointing into; a new list makes
-  // it meaningless rather than merely out of date.
-  useEffect(() => {
-    setActiveIndex(-1);
-  }, [options, trimmed]);
-
-  const setQuery = useCallback((next: string) => {
-    typed.current = true;
-    setQueryState(next);
-    setFailed(false);
-    setDismissed(false);
-  }, []);
+  const setQuery = useCallback(
+    (next: string) => {
+      typed.current = true;
+      setQueryState(next);
+      if (next.trim().length < minLength) {
+        latestTicket.current++;
+        setOptions([]);
+        setAnswered(false);
+        setPending(false);
+      }
+      setFailed(false);
+      setDismissed(false);
+      setActiveIndex(-1);
+    },
+    [minLength]
+  );
 
   const retry = useCallback(() => {
     setFailed(false);

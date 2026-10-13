@@ -104,5 +104,89 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Pimbwe désigne un peuple de la vallée du Rukwa, dans l'ouest de la Tanzanie, que l'on dit aussi Wapimbwe, avec le préfixe swahili des peuples. On ne sait pas comment ce peuple se nomme lui-même : les sources que nous avons lues ne le disent pas. On ne sait pas avec certitude d'où vient le nom Pimbwe ; nous présentons plus bas ce que disent les sources.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Pimbwe",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les livres emploient pour ce peuple ; Wapimbwe est la forme swahili.",
+        "periodLabel": "Écrit depuis 1874 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "Publié en 2009"
+            },
+            "era": "modern",
+            "statement": "Le nom Pimbwe est celui que l'historien Tony Waters retient pour parler du peuple et du lieu, alors que l'usage courant en Tanzanie dit Mpimbwe pour le lieu et Wapimbwe pour les gens.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Social Organization and Social Status in Nineteenth and Twentieth Century Rukwa – Waters, African Studies Quarterly vol.11 no.1",
+                "author": "Tony Waters",
+                "year": 2009,
+                "url": "https://asq.africa.ufl.edu/wp-content/uploads/sites/168/Waters-V11Is1.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 81, note 17",
+                "notes": "African Studies Quarterly, vol. 11, n° 1, automne 2009. Lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1880,
+              "to": 1881,
+              "label": "Voyage de 1880, livre de 1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Wapimbwe désigne, en mai 1880, une partie de la population mêlée du village de Gongwe, avec des Wakhonongo et des Wanyamwezi : Joseph Thomson les reconnaît à des marques de tatouage circulaires sur le dos.",
+            "formAsWritten": "Wapimbwe",
+            "sources": [
+              {
+                "title": "To the Central African Lakes and Back, volume 2",
+                "author": "Joseph Thomson",
+                "year": 1881,
+                "url": "https://archive.org/details/tocentralafrica01thomgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 231",
+                "notes": "Lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1874,
+              "to": 1875,
+              "label": "Voyage de 1874, journal publié en 1875"
+            },
+            "era": "polity",
+            "statement": "Le nom Pimbwe apparaît sous une forme proche, « Wapimbwe », dans le journal du lieutenant Verney Lovett Cameron : il note que des Wapimbwe vivent en Ufipa, mêlés aux Fipa, et d'autres en Ulungu, avec des chefs différents mais alliés aux Watuta. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Wapimbwe",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Lieut. Cameron's Diary, dans The Journal of the Royal Geographical Society of London, vol. 45",
+                "author": "Verney Lovett Cameron, éd. Clements R. Markham",
+                "year": 1875,
+                "url": "https://archive.org/details/s572id13663830",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 215",
+                "notes": "Journal de voyage de l'année 1874, publié dans la revue de la Société royale de géographie. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

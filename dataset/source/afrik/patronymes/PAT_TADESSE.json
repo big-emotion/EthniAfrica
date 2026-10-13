@@ -100,5 +100,106 @@
       "fieldPath": "countries",
       "reason": "La source propre au nom n'a pas confirmé le pays où il est porté ; les recherches « Tadesse » avec Ethiopia, Eritrea et les variantes de la fiche n'ont pas livré de registre officiel exploitable."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Tadesse est un nom personnel éthiopien. Il sert de second nom aux enfants d'un homme qui le porte, sans devenir un nom de famille : il change à chaque génération. Une forme proche, Taddese, apparaît par écrit en 1936. Nous présentons plus bas l'explication de son sens que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Tadesse",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel éthiopien, porté en second par les enfants d'un Tadesse.",
+        "periodLabel": "Écrit Taddese dès 1936 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1996,
+              "to": 2022,
+              "label": "Décrit en 1996 et en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Tadesse est un nom personnel éthiopien. En Éthiopie, une personne porte son propre nom suivi du nom personnel de son père, parfois de celui de son grand-père. Chez l'enfant d'un Tadesse, Tadesse est donc le nom du père, et il ne passe pas aux petits-enfants.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Names of Persons: National Usages for Entry in Catalogues",
+                "author": "IFLA Universal Bibliographic Control and International MARC Programme",
+                "year": 1996,
+                "url": "https://www.ifla.org/files/assets/cataloguing/pubs/names-of-persons_1996.pdf",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 64-65",
+                "notes": "Quatrième édition, Munich, K. G. Saur, 1996, lue dans le PDF de l'IFLA le 12 octobre 2026. La notice Éthiopie, p. 64-65, fournie par la bibliothèque de l'université d'Addis-Abeba et approuvée par la Bibliothèque et les Archives nationales en octobre 1994, compose le nom d'un nom personnel, suivi du nom personnel du père, parfois de celui du grand-père. Elle cite Wolde Mariam parmi les noms composés, W. Berhan pour Wolde Berhan parmi les abréviations, et l'abuna Lukas Tewolde parmi les exemples. Elle note que le Code civil de 1960 prescrit un nom de famille, usage qui ne s'est pas encore répandu."
+              },
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Tadesse",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/tadesse?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 ; le site affiche aussi une traduction française. La notice dit : nom personnel éthiopien interprété comme « il a été renouvelé » en amharique. Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Tadesse voudrait dire « il a été renouvelé » en amharique, selon le Dictionary of American Family Names. Le dictionnaire du guèze de Wolf Leslau donne le verbe haddasa, « renouveler, restaurer », et son passif tahaddasa.",
+            "hypothesisGroup": "origine du nom Tadesse",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Tadesse",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/tadesse?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 ; le site affiche aussi une traduction française. La notice dit : nom personnel éthiopien interprété comme « il a été renouvelé » en amharique. Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              },
+              {
+                "title": "Comparative Dictionary of Geʿez (Classical Ethiopic)",
+                "author": "Wolf Leslau",
+                "year": 1987,
+                "url": "https://archive.org/details/leslau-comparative-dictionary-of-geez-1987",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 226",
+                "notes": "Wiesbaden, Otto Harrassowitz, 1987. Lu le 12 octobre 2026 dans une copie non officielle déposée sur Internet Archive par un particulier. Page 226, entrée ḥaddasa : « renew, restore, renovate, repair » ; taḥaddasa, passif ; l'amharique addäsä, « be new »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1936,
+              "to": 1936,
+              "label": "1936"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tadesse apparaît par écrit sous une forme proche, Taddese, dans la Gazzetta Ufficiale du royaume d'Italie : Taddese, de Socotà, sous-chef dans la garde du dedjazmatch Haïlé Sélassié Gugsa, y est cité pour la bataille de l'Enderta, livrée au Tigré pendant l'invasion italienne. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "Taddese",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Gazzetta Ufficiale del Regno d'Italia, n° 274, jeudi 26 novembre 1936",
+                "author": "Royaume d'Italie",
+                "year": 1936,
+                "url": "https://www.gazzettaufficiale.it/eli/gu/1936/11/26/274/sg/pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 3406",
+                "notes": "Journal officiel italien, lu dans le PDF du site officiel le 12 octobre 2026. Page 3406, liste des médailles de bronze : « Taddese », de Socotà, « sottocapo nella guardia del degiac Hailè Sellassiè Gugsa », pour la « Battaglia dell'Endertà, 12 febbraio 1936 ». La page ne dit pas ce que veut dire le nom."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

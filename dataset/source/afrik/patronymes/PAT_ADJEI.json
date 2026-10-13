@@ -108,5 +108,44 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les sources consultées ne permettent pas de déterminer si Adjei désigne historiquement un lignage, un clan ou une autre unité sociale."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Adjei est porté au Ghana. Il apparaît par écrit en 1921, dans la liste des fonctionnaires de la colonie de la Côte-de-l'Or. Les sources lues ne disent ni ce qu'il veut dire ni à quel peuple il appartient : on ne sait pas avec certitude d'où il vient.",
+    "names": [
+      {
+        "nameText": "Adjei",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom porté au Ghana, écrit dès 1921 ; son sens reste inconnu.",
+        "periodLabel": "Écrit dès 1921 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Liste des fonctionnaires de 1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Adjei apparaît par écrit dans le registre annuel de la colonie de la Côte-de-l'Or pour 1921 : la liste des fonctionnaires, à la page 130, compte au moins huit employés nommés Adjei, dans des services aussi différents que les Travaux publics, la police et le Trésor. La même liste écrit aussi Adjey et Adjaye ; la source ne dit pas s'il s'agit du même nom. C'est la plus ancienne trace de cette forme que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "Adjei",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Gold Coast Colony. Blue Book 1921",
+                "author": "Gouvernement de la colonie de la Côte-de-l'Or (Accra)",
+                "year": 1921,
+                "url": "https://archive.org/details/blue-book-gold-coast-1921",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 130",
+                "notes": "Registre annuel de la colonie, avec la liste de ses fonctionnaires ; exemplaire numérisé sur archive.org. Lu le 13 octobre 2026. Page 130, liste alphabétique des fonctionnaires : « Adjei, E. A. » (employé temporaire, Travaux publics), « Adjei, S. K. », « Adjei, E. W. » (surintendant, police), « Adjei, C. G. », « Adjei, R. B. » (employé, secrétariat de la colonie), « Adjei, E. M. » et « Adjei, J. K. » (imprimerie), « Adjei, E. L. » (employé, Trésor). La liste écrit aussi « Adjey, E. P. » et plusieurs « Adjaye ». Les noms sont écrits ainsi : famille d'abord, puis initiales."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

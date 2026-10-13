@@ -33,7 +33,7 @@ html,body{margin:0;background:#0f0c09;color:#cbbba3;font-family:Andika,sans-seri
       var res = await EthniCards.mount(box, await card(it.id), { width: it.width || 430, resolve: R, logo: D.logo, diagnose: !!it.diagnose });
       var cap = document.createElement('div'); cap.className = 'pv-cap'; cap.textContent = it.caption || ''; box.appendChild(cap);
       var r = res.report, rep = document.createElement('div'); rep.className = 'pv-rep' + (r.ok ? '' : ' bad');
-      rep.innerHTML = '<b>' + (r.ok ? 'Tient' : 'Ne tient pas') + '</b> · panneau ' + r.panelHeight + ' px sur 900' + (r.dense ? ' · corps dense 28 px' : ' · corps 32 px') + (r.titleStep ? ' · titre 72 px' : '') + (r.warnings.length ? ' · ' + r.warnings.join(' ') : '') + ' · lu à ' + (it.width || 430) + ' px';
+      rep.innerHTML = '<b>' + (r.ok ? 'Tient' : 'Ne tient pas') + '</b> · panneau ' + r.panelHeight + ' px sur 900' + (r.dense ? ' · corps dense 28 px' : ' · corps 32 px') + (r.titleStep ? ' · titre 72 px' : '') + (r.atlas ? ' · ' + r.atlas.entries + ' entrées, ' + r.atlas.numbered + ' numérotées' + (r.atlas.minGap != null ? ', écart minimal ' + r.atlas.minGap + ' px' : '') : '') + (r.collisions != null ? ' · ' + r.collisions + ' collision' + (r.collisions > 1 ? 's' : '') : '') + (r.warnings.length ? ' · ' + r.warnings.join(' ') : '') + ' · lu à ' + (it.width || 430) + ' px';
       box.appendChild(rep);
     }
   } catch (e) { root.textContent = 'Aperçu indisponible : ' + e.message; }

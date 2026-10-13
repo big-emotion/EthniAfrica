@@ -109,5 +109,70 @@
         "source_kind": "official_statistics"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Sheko désigne un peuple de langue omotique du sud-ouest de l'Éthiopie, entre Tepi et Mizan, qui se nomme lui-même Sheko ; on l'écrit aussi Shekko ou Shako. On ne sait pas avec certitude d'où vient ce nom ni quand il a été écrit pour la première fois ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Sheko",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "she",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne ce peuple ; sa plus ancienne trace écrite n'est pas connue avec certitude.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Sheko désigne un peuple du sud-ouest de l'Éthiopie et sa langue omotique. Les catalogues de langues l'écrivent aussi Shekko, Shekka, Shakko, Shako, Shak ou Tschako, selon Glottolog. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Sheko (shek1245)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/shek1245",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue : elle recense les formes Shak, Shakko, Shako, Shekka, Shekko, Sheko et Tschako."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "polity",
+            "statement": "Le nom Schako, proche de Sheko, figure dans le livre de l'explorateur Friedrich Julius Bieber sur le Kafa : c'est le nom d'un pays et d'un groupe qu'il range parmi ceux du peuple qu'il appelle Sche. Les sources ne disent pas s'il s'agit du même peuple que les Sheko.",
+            "formAsWritten": "Schako",
+            "actors": [
+              {
+                "name": "Friedrich Julius Bieber",
+                "role": "explorateur, auteur du livre"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Kaffa : ein altkuschitisches Volkstum in Inner-Afrika, vol. I",
+                "author": "Friedrich Julius Bieber",
+                "year": 1920,
+                "url": "https://archive.org/details/kaffaeinaltkusch02bieb",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 122 et p. 148",
+                "notes": "Münster, Aschendorff, collection Anthropos, 1920. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

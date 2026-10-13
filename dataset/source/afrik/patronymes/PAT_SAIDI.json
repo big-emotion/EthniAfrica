@@ -104,5 +104,87 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « Saidi lignée », « Saidi clan », « Saidi tribe » et « Saidi place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Saidi est un nom de famille d'Algérie, écrit dès 1948. Une seule explication de son origine est connue : il viendrait du nom Saïd, « heureux » ; nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Saidi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille d'Algérie, formé sur Saïd, « heureux », selon une thèse de 2013.",
+        "periodLabel": "Écrit dès 1948 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Saidi est un nom de famille d'Algérie. Mustapha Tidjet le range avec Saidani, Saidoun et Boussaid parmi les noms formés sur Saïd. Une seule explication de son origine est connue ; nous la présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "La patronymie dans les daïras de Timezrit, Sidi-Aïch et Chemini : étude morphologique et sémantique",
+                "author": "Mustapha Tidjet",
+                "year": 2013,
+                "url": "https://fr.doczz.net/doc/6484275/la-patronymie-dans-les-dairas-de-timezrit--sidi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 205",
+                "notes": "Thèse de doctorat, Université Mouloud Mammeri de Tizi-Ouzou, janvier 2013. Lue le 12 octobre 2026 dans une copie non officielle mise en ligne sur doczz ; la thèse figure au catalogue collectif algérien des thèses. Pages 14 et 15 : la loi du 23 mars 1882 rend le patronyme d'état civil obligatoire en Algérie. Page 119 : les Pères Blancs écrivent la particule ou à part, comme dans « Sidi Ali Ou-yahi », d'après Genevois (1996). Page 126 : ou, morphème berbère de filiation ou d'appartenance, singulier de Ait/At ; Oulmahdi « de la famille Mahdi », puis Oukaci, Ourabah, Oussadi, Ouyahia et Oubrahem. Page 166, parmi les noms bibliques : Yahia, le prophète qui a baptisé Jésus ; « Yahyaoui, Ouyahia, Ait Yahia « de la famille Yahya » ». Page 205, parmi les noms de souhait : « Saidi, Saidani, Saidoun, Boussaid ; Bensaid de Saïd « heureux » »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "Proposée en 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Saidi viendrait du nom Saïd, qui veut dire « heureux ». Il se rangerait parmi les noms qui expriment un souhait, selon Mustapha Tidjet.",
+            "hypothesisGroup": "origine du nom Saidi",
+            "sources": [
+              {
+                "title": "La patronymie dans les daïras de Timezrit, Sidi-Aïch et Chemini : étude morphologique et sémantique",
+                "author": "Mustapha Tidjet",
+                "year": 2013,
+                "url": "https://fr.doczz.net/doc/6484275/la-patronymie-dans-les-dairas-de-timezrit--sidi",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 205",
+                "notes": "Thèse de doctorat, Université Mouloud Mammeri de Tizi-Ouzou, janvier 2013. Lue le 12 octobre 2026 dans une copie non officielle mise en ligne sur doczz ; la thèse figure au catalogue collectif algérien des thèses. Pages 14 et 15 : la loi du 23 mars 1882 rend le patronyme d'état civil obligatoire en Algérie. Page 119 : les Pères Blancs écrivent la particule ou à part, comme dans « Sidi Ali Ou-yahi », d'après Genevois (1996). Page 126 : ou, morphème berbère de filiation ou d'appartenance, singulier de Ait/At ; Oulmahdi « de la famille Mahdi », puis Oukaci, Ourabah, Oussadi, Ouyahia et Oubrahem. Page 166, parmi les noms bibliques : Yahia, le prophète qui a baptisé Jésus ; « Yahyaoui, Ouyahia, Ait Yahia « de la famille Yahya » ». Page 205, parmi les noms de souhait : « Saidi, Saidani, Saidoun, Boussaid ; Bensaid de Saïd « heureux » »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1948,
+              "to": 1948,
+              "label": "18 juin 1948"
+            },
+            "era": "colonial",
+            "statement": "Le nom Saidi apparaît, écrit Saïdi, dans le compte rendu d'une séance de l'Assemblée de l'Union française : un orateur y cite le capitaine Saïdi Saddok, candidat aux élections à Fort-National, en Algérie. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est porté.",
+            "formAsWritten": "Saïdi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Journal officiel de la République française, Débats de l'Assemblée de l'Union française, 19 juin 1948",
+                "author": "Assemblée de l'Union française",
+                "year": 1948,
+                "url": "https://archive.org/details/sim_journal-officiel-de-la-republique-francaise_1948-06-19_32",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 546, 548",
+                "notes": "Compte rendu in extenso de la séance du vendredi 18 juin 1948, numéro 37 du 19 juin 1948. Lu le 12 octobre 2026 sur l'exemplaire numérisé d'archive.org. Pages 546 et 548 : un orateur cite le cas du « capitaine Saïdi Saddok, candidat à Fort-National », arrêté le jour du vote après avoir protesté contre le déroulement du scrutin, pour montrer l'arbitraire de ces condamnations en Algérie."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -76,5 +76,100 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Shayo à un peuple en Tanzanie. Nous n'avons pas encore consulté de source consacrée à ce nom. Les fiches consultées sur les peuples de Tanzanie ne détaillent pas les noms de famille."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Shayo est un nom de clan des Chagga du district de Rombo, sur les pentes du Kilimandjaro, en Tanzanie. Une forme proche, Shao, peut être tenue pour le même nom de clan. On ne sait pas avec certitude d'où il vient.",
+    "names": [
+      {
+        "nameText": "Shayo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan chagga du district de Rombo, au Kilimandjaro ; son origine n'est pas connue.",
+        "periodLabel": "Écrit dès 2020 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Décrit en 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Shayo est un nom de clan chez les Chagga du district de Rombo. Dans les listes d'élèves qu'étudient Amani Lusekelo et Victor Mtenga, un enfant porte un prénom, le nom d'un parent et un nom de clan. On ne sait pas avec certitude d'où vient le nom Shayo : les sources consultées n'en donnent ni le sens ni l'origine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Historicity of personal names in Tanzania: the case of the names in the Rombo-Chagga community in Kilimanjaro",
+                "author": "Amani Lusekelo et Victor Mtenga",
+                "year": 2020,
+                "url": "https://www.researchgate.net/publication/342876767_Historicity_of_personal_names_in_Tanzania_the_case_of_the_names_in_the_Rombo-Chagga_community_in_Kilimanjaro",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 105-106, 108",
+                "notes": "International Journal of Modern Anthropology, vol. 2, n° 13, 2020, p. 100-121, DOI 10.4314/ijma.v2i13.3. Lu en texte intégral le 12 octobre 2026 dans la copie que diffuse le dépôt de l'Université de Dar es Salaam. Page 105 : les noms d'élèves du district de Rombo, rangés en prénoms, noms des parents et noms de clan. Page 106 : les premiers clans se sont installés dans l'actuel district de Rombo. Page 108, tableau 4 : parmi 379 noms d'élèves, Shao revient 10 fois et Shayo 9 fois, parmi les treize noms de clan les plus fréquents. Note 1, même page : Shao et Shayo ne diffèrent que par un morphème et peuvent être traités comme des noms de clan semblables."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Shayo apparaît par écrit dans une étude d'Amani Lusekelo et Victor Mtenga sur les noms des élèves du district de Rombo, parmi les treize noms de clan les plus fréquents. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand des auteurs l'ont noté, pas depuis quand le clan existe.",
+            "formAsWritten": "Shayo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Historicity of personal names in Tanzania: the case of the names in the Rombo-Chagga community in Kilimanjaro",
+                "author": "Amani Lusekelo et Victor Mtenga",
+                "year": 2020,
+                "url": "https://www.researchgate.net/publication/342876767_Historicity_of_personal_names_in_Tanzania_the_case_of_the_names_in_the_Rombo-Chagga_community_in_Kilimanjaro",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 108",
+                "notes": "International Journal of Modern Anthropology, vol. 2, n° 13, 2020, p. 100-121, DOI 10.4314/ijma.v2i13.3. Lu en texte intégral le 12 octobre 2026 dans la copie que diffuse le dépôt de l'Université de Dar es Salaam. Page 105 : les noms d'élèves du district de Rombo, rangés en prénoms, noms des parents et noms de clan. Page 106 : les premiers clans se sont installés dans l'actuel district de Rombo. Page 108, tableau 4 : parmi 379 noms d'élèves, Shao revient 10 fois et Shayo 9 fois, parmi les treize noms de clan les plus fréquents. Note 1, même page : Shao et Shayo ne diffèrent que par un morphème et peuvent être traités comme des noms de clan semblables."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Shao",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan proche de Shayo, dans le même district de Rombo.",
+        "periodLabel": "Écrit dès 2020 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Shao est un autre nom de clan fréquent du district de Rombo. Il ne diffère du nom Shayo que par une partie du mot, et Amani Lusekelo et Victor Mtenga proposent de traiter les deux comme des noms de clan semblables. C'est la plus ancienne trace de cette forme que le projet connaît.",
+            "formAsWritten": "Shao",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Historicity of personal names in Tanzania: the case of the names in the Rombo-Chagga community in Kilimanjaro",
+                "author": "Amani Lusekelo et Victor Mtenga",
+                "year": 2020,
+                "url": "https://www.researchgate.net/publication/342876767_Historicity_of_personal_names_in_Tanzania_the_case_of_the_names_in_the_Rombo-Chagga_community_in_Kilimanjaro",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 108",
+                "notes": "International Journal of Modern Anthropology, vol. 2, n° 13, 2020, p. 100-121, DOI 10.4314/ijma.v2i13.3. Lu en texte intégral le 12 octobre 2026 dans la copie que diffuse le dépôt de l'Université de Dar es Salaam. Page 105 : les noms d'élèves du district de Rombo, rangés en prénoms, noms des parents et noms de clan. Page 106 : les premiers clans se sont installés dans l'actuel district de Rombo. Page 108, tableau 4 : parmi 379 noms d'élèves, Shao revient 10 fois et Shayo 9 fois, parmi les treize noms de clan les plus fréquents. Note 1, même page : Shao et Shayo ne diffèrent que par un morphème et peuvent être traités comme des noms de clan semblables."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
