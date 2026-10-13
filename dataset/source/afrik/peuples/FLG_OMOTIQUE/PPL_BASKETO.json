@@ -110,5 +110,122 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Basketo désigne un peuple du sud-ouest de l'Éthiopie, de langue omotique, qui se nomme lui-même Mesketo. Basketo est le nom que lui donnent ses voisins. Les sources lues ne disent pas d'où viennent ces deux noms.",
+    "names": [
+      {
+        "nameText": "Mesketo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "bst",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple emploie pour lui-même et pour sa langue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1993,
+              "to": 2002,
+              "label": "Enquête de 1993, rapport de 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Mesketo est celui que les locuteurs emploient pour leur langue et pour leur propre groupe, selon le linguiste Alemayehu Abebe.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sociolinguistic survey report of the Mesketo language of Ethiopia",
+                "author": "Alemayehu Abebe",
+                "year": 2002,
+                "url": "https://www.sil.org/resources/archives/9114",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 4",
+                "notes": "Rapport de SIL International (série des rapports d'enquête, 2002-067), fondé sur un travail de terrain à Bulk'i du 26 mars au 1er avril 1993. Lu le 13 octobre 2026 dans une copie conservée par les archives d'Internet Archive ; la page citée est celle de l'introduction. L'auteur cite M. L. Bender, Omotic: A new Afroasiatic language family, 1975, p. 236, que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Mesketo figure chez le linguiste M. L. Bender en 1975, qui l'emploie à côté de Basketo et donne deux parlers, Doko et Dollo, selon Alemayehu Abebe. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Mesketo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Sociolinguistic survey report of the Mesketo language of Ethiopia",
+                "author": "Alemayehu Abebe",
+                "year": 2002,
+                "url": "https://www.sil.org/resources/archives/9114",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 4",
+                "notes": "Rapport de SIL International (série des rapports d'enquête, 2002-067), fondé sur un travail de terrain à Bulk'i du 26 mars au 1er avril 1993. Lu le 13 octobre 2026 dans une copie conservée par les archives d'Internet Archive ; la page citée est celle de l'introduction. L'auteur cite M. L. Bender, Omotic: A new Afroasiatic language family, 1975, p. 236, que nous n'avons pas lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Basketo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les voisins des Mesketo",
+        "shortLine": "Le nom que les voisins donnent à ce peuple, devenu courant à l'extérieur.",
+        "periodLabel": "Depuis au moins 1975",
+        "accounts": [
+          {
+            "period": {
+              "from": 1993,
+              "to": 2002,
+              "label": "Enquête de 1993, rapport de 2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Basketo est celui que donnent les voisins des locuteurs mesketo, selon le linguiste Alemayehu Abebe.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Sociolinguistic survey report of the Mesketo language of Ethiopia",
+                "author": "Alemayehu Abebe",
+                "year": 2002,
+                "url": "https://www.sil.org/resources/archives/9114",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 4",
+                "notes": "Rapport de SIL International (série des rapports d'enquête, 2002-067), fondé sur un travail de terrain à Bulk'i du 26 mars au 1er avril 1993. Lu le 13 octobre 2026 dans une copie conservée par les archives d'Internet Archive ; la page citée est celle de l'introduction. L'auteur cite M. L. Bender, Omotic: A new Afroasiatic language family, 1975, p. 236, que nous n'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Basketo figure chez le linguiste M. L. Bender en 1975, qui l'emploie à côté de Mesketo, selon Alemayehu Abebe. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Basketo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Sociolinguistic survey report of the Mesketo language of Ethiopia",
+                "author": "Alemayehu Abebe",
+                "year": 2002,
+                "url": "https://www.sil.org/resources/archives/9114",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 4",
+                "notes": "Rapport de SIL International (série des rapports d'enquête, 2002-067), fondé sur un travail de terrain à Bulk'i du 26 mars au 1er avril 1993. Lu le 13 octobre 2026 dans une copie conservée par les archives d'Internet Archive ; la page citée est celle de l'introduction. L'auteur cite M. L. Bender, Omotic: A new Afroasiatic language family, 1975, p. 236, que nous n'avons pas lu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

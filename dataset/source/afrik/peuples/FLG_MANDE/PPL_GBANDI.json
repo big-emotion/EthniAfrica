@@ -108,5 +108,102 @@
         "source_kind": "official_statistics"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Gbandi désigne un peuple du nord-ouest du Liberia, voisin des Vaï et des Kpelle. On ne sait pas comment ce peuple se nomme lui-même : les sources lues ne le disent pas. Les voyageurs et les linguistes ont écrit son nom Gbándi, Gbandi puis Gbande. On ne sait pas avec certitude d'où vient ce nom.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Gbandi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les voyageurs et les linguistes donnent à ce peuple du Liberia depuis 1854.",
+        "periodLabel": "Depuis 1854",
+        "accounts": [
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Gbandi apparaît, écrit Gbándi, dans les remarques d'introduction de la Polyglotta Africana de Sigismund Koelle, qui note la langue d'un informant installé à Sierra Leone et place le pays gbandi à l'ouest du Nyériwa et au sud du Mende. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Gbándi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana (édition de Londres, 1854, scan d'Internet Archive)",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://archive.org/details/polyglottaafrica00koel",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "Introductory remarks, p. 3",
+                "notes": "Édition de Londres de 1854, lue sur la numérisation d'Internet Archive ; la page citée est la page imprimée des remarques d'introduction, vérifiée sur l'image. Koelle y note la langue d'un informant de Sierra Leone, Kémbe ou John Wilhelm, né à Singorawei."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "modern",
+            "statement": "Le nom Gbandi figure dans le tableau des peuples du Liberia que donne Harry Johnston : il désigne un peuple de 150 000 personnes, au nord des Vaï et au sud de Boporo. Johnston le dit « étroitement allié » aux Vaï, qui ressemblent aux Mandingues par bien des traits de caractère.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Liberia, vol. II",
+                "author": "Harry Johnston",
+                "year": 1906,
+                "url": "https://archive.org/details/liberiaj02johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 886 et p. 944",
+                "notes": "Livre publié à Londres en 1906, lu sur la numérisation d'Internet Archive ; la page citée est la page imprimée, vérifiée sur l'image."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gbande",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre écriture du nom Gbandi, employée par les chercheurs du musée Peabody en 1947.",
+        "periodLabel": "Depuis 1947",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1928,
+              "to": 1947,
+              "label": "Expédition de 1928, livre publié en 1947"
+            },
+            "era": "modern",
+            "statement": "Le nom Gbande apparaît chez George Schwab, qui l'emploie pour un peuple du Liberia et écrit qu'un chef kpelle de Boporo, Sowgbwoso, était, dit-on, d'extraction gbande. C'est la plus ancienne trace de cette forme que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Gbande",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Tribes of the Liberian Hinterland",
+                "author": "George Schwab",
+                "year": 1947,
+                "url": "https://archive.org/details/tribesofliberian00schw",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 21",
+                "notes": "Papers of the Peabody Museum, vol. XXXI, Cambridge (Massachusetts), 1947, lu sur la numérisation d'Internet Archive ; la page citée est la page imprimée, vérifiée sur l'image. Le livre rend compte de l'expédition du musée Peabody au Liberia, partie en 1928."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

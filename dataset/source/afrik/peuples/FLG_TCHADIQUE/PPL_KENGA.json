@@ -123,5 +123,87 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kenga désigne un peuple du centre du Tchad, à l'est de l'ancien royaume du Bagirmi. On ne sait pas comment ce peuple se nomme lui-même : les sources lues ne le disent pas. Le nom Kenga est aussi celui d'un district et d'un chef. On ne sait pas avec certitude d'où il vient.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Kenga",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un district et d'un peuple à l'est du Bagirmi, noté par Nachtigal en 1881.",
+        "periodLabel": "Depuis au moins 1881",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Livre publié en 1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Kenga apparaît, écrit Kênga, dans le deuxième tome de Sahara und Sudan que Gustav Nachtigal publie en 1881 : il le range parmi les « sièges rocheux » de l'est du royaume du Bagirmi, confiés à un dignitaire. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Kênga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Sahara und Sudan. Ergebnisse sechsjähriger Reisen in Afrika, deuxième partie",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 615",
+                "notes": "Deuxième tome (Borku, Kanem, Bornu, Bagirmi), publié à Leipzig en 1881, lu sur la numérisation d'Internet Archive ; les pages citées sont les pages imprimées, vérifiées sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Livre publié en 1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Kenga désigne chez Nachtigal un peuple resté païen, dont les gens ne sont pas regardés comme des sujets des rois du Bagirmi mais comme leurs alliés à part entière, dispensés de certaines marques de respect à la cour de Massenya.",
+            "sources": [
+              {
+                "title": "Sahara und Sudan. Ergebnisse sechsjähriger Reisen in Afrika, deuxième partie",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 618 et p. 695",
+                "notes": "Deuxième tome (Borku, Kanem, Bornu, Bagirmi), publié à Leipzig en 1881, lu sur la numérisation d'Internet Archive ; les pages citées sont les pages imprimées, vérifiées sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Livre publié en 1881"
+            },
+            "era": "polity",
+            "statement": "Le nom Kenga est celui d'un district du pays sokoro, où Dokko, chef d'un groupe de douze frères venus de l'est, fonde une colonie avant d'atteindre le Bagirmi ; Nachtigal écrit que Dokko porte aussi le surnom de Kenga et ne dit pas lequel des deux emplois est venu d'abord.",
+            "sources": [
+              {
+                "title": "Sahara und Sudan. Ergebnisse sechsjähriger Reisen in Afrika, deuxième partie",
+                "author": "Gustav Nachtigal",
+                "year": 1881,
+                "url": "https://archive.org/details/bub_gb_rxwGAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 694-695",
+                "notes": "Deuxième tome (Borku, Kanem, Bornu, Bagirmi), publié à Leipzig en 1881, lu sur la numérisation d'Internet Archive ; les pages citées sont les pages imprimées, vérifiées sur l'image."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

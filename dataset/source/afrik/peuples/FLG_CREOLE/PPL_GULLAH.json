@@ -130,5 +130,241 @@
         "notes": "Publication d'une organisation patrimoniale identifiable (World Monuments Fund, avec Leeds Museums & Galleries), contributeurs identifiés."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Gullah désigne un peuple afro-américain né sur la côte atlantique des États-Unis, dans les îles et les basses terres de la Caroline du Sud, de la Géorgie, de la Floride et de la Caroline du Nord, d'Africains réduits en esclavage venus surtout de la côte du riz. Il se nomme Gullah en Caroline du Sud et Geechee en Géorgie. Les sources ne s'accordent pas sur l'origine de ces deux noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Gullah",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne en Caroline du Sud ; son origine est discutée.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Gullah, ou Geechee, désigne un peuple afro-américain issu d'Africains réduits en esclavage, installé dans les îles et les basses terres de la Caroline du Sud, de la Géorgie, de la Floride et de la Caroline du Nord, selon M. Alpha Bah. En Caroline du Sud, Gullah est devenu le nom reconnu des habitants des îles, selon Althea Sumpter.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "South Carolina Encyclopedia - Gullah",
+                "author": "M. Alpha Bah",
+                "year": 2016,
+                "url": "https://www.scencyclopedia.org/sce/entries/gullah/",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopédie académique adossée à l'Institute for Southern Studies (University of South Carolina) ; entrée signée par M. Alpha Bah, publiée le 17 mai 2016 et révisée le 5 août 2022. Lue le 13 octobre 2026."
+              },
+              {
+                "title": "New Georgia Encyclopedia - Geechee and Gullah Culture (Althea Sumpter, Georgia Institute of Technology)",
+                "author": "Althea Sumpter",
+                "year": 2006,
+                "url": "https://www.georgiaencyclopedia.org/articles/arts-culture/geechee-and-gullah-culture/",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopédie académique à entrées signées ; article publié le 31 mars 2006 et révisé le 16 septembre 2020. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1822,
+              "to": 1822,
+              "label": "1822, rapportée en 1922"
+            },
+            "statement": "Le nom Gullah apparaît dans une publication du conseil municipal de Charleston en 1822, au moment d'une tentative de révolte d'esclaves : on y lit « Gullah Jack » et ses compagnons, des Noirs « Gullah or Angola », selon Ambrose E. Gonzales, qui la lit en 1922. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Gullah",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Black Border: Gullah Stories of the Carolina Coast (With a Glossary)",
+                "author": "Ambrose E. Gonzales",
+                "year": 1922,
+                "url": "https://archive.org/details/blackbordergulla00gonz",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9",
+                "notes": "Livre publié à Columbia (Caroline du Sud) en 1922, lu sur la numérisation d'Internet Archive ; la page citée est la page imprimée de l'avant-propos, vérifiée sur l'image. Gonzales y cite John Bennett, écrivain de Charleston, et une publication de 1822 du conseil municipal de Charleston, que nous n'avons pas lues."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1822,
+              "label": "Avant 1822"
+            },
+            "statement": "On parle alors d'Africains réduits en esclavage, venus surtout de la « côte du riz » de l'Afrique de l'Ouest, du Sénégal au sud du Liberia, pour désigner ceux dont les descendants se diront Gullah ou Geechee, selon M. Alpha Bah.",
+            "before": true,
+            "sources": [
+              {
+                "title": "South Carolina Encyclopedia - Gullah",
+                "author": "M. Alpha Bah",
+                "year": 2016,
+                "url": "https://www.scencyclopedia.org/sce/entries/gullah/",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopédie académique adossée à l'Institute for Southern Studies (University of South Carolina) ; entrée signée par M. Alpha Bah, publiée le 17 mai 2016 et révisée le 5 août 2022. Lue le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Proposée en 1922"
+            },
+            "statement": "Le nom Gullah serait une déformation d'Angola, selon Ambrose E. Gonzales, qui tire cette idée de la publication de 1822 où figurent les Noirs « Gullah or Angola ». M. Alpha Bah et Althea Sumpter rapportent aussi cette explication.",
+            "hypothesisGroup": "origine du nom Gullah",
+            "sources": [
+              {
+                "title": "The Black Border: Gullah Stories of the Carolina Coast (With a Glossary)",
+                "author": "Ambrose E. Gonzales",
+                "year": 1922,
+                "url": "https://archive.org/details/blackbordergulla00gonz",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9",
+                "notes": "Livre publié à Columbia (Caroline du Sud) en 1922, lu sur la numérisation d'Internet Archive ; la page citée est la page imprimée de l'avant-propos, vérifiée sur l'image. Gonzales y cite John Bennett, écrivain de Charleston, et une publication de 1822 du conseil municipal de Charleston, que nous n'avons pas lues."
+              },
+              {
+                "title": "South Carolina Encyclopedia - Gullah",
+                "author": "M. Alpha Bah",
+                "year": 2016,
+                "url": "https://www.scencyclopedia.org/sce/entries/gullah/",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopédie académique adossée à l'Institute for Southern Studies (University of South Carolina) ; entrée signée par M. Alpha Bah, publiée le 17 mai 2016 et révisée le 5 août 2022. Lue le 13 octobre 2026."
+              },
+              {
+                "title": "New Georgia Encyclopedia - Geechee and Gullah Culture (Althea Sumpter, Georgia Institute of Technology)",
+                "author": "Althea Sumpter",
+                "year": 2006,
+                "url": "https://www.georgiaencyclopedia.org/articles/arts-culture/geechee-and-gullah-culture/",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopédie académique à entrées signées ; article publié le 31 mars 2006 et révisé le 16 septembre 2020. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "Rapportée en 1922"
+            },
+            "statement": "Le nom Gullah serait celui d'un peuple d'Afrique de l'Ouest, que l'écrivain John Bennett place parmi les peuples du Liberia, à une trentaine de milles à l'intérieur des terres depuis Monrovia, selon Ambrose E. Gonzales ; M. Alpha Bah nomme les Gola, du Liberia et de la Sierra Leone.",
+            "hypothesisGroup": "origine du nom Gullah",
+            "sources": [
+              {
+                "title": "The Black Border: Gullah Stories of the Carolina Coast (With a Glossary)",
+                "author": "Ambrose E. Gonzales",
+                "year": 1922,
+                "url": "https://archive.org/details/blackbordergulla00gonz",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9",
+                "notes": "Livre publié à Columbia (Caroline du Sud) en 1922, lu sur la numérisation d'Internet Archive ; la page citée est la page imprimée de l'avant-propos, vérifiée sur l'image. Gonzales y cite John Bennett, écrivain de Charleston, et une publication de 1822 du conseil municipal de Charleston, que nous n'avons pas lues."
+              },
+              {
+                "title": "South Carolina Encyclopedia - Gullah",
+                "author": "M. Alpha Bah",
+                "year": 2016,
+                "url": "https://www.scencyclopedia.org/sce/entries/gullah/",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopédie académique adossée à l'Institute for Southern Studies (University of South Carolina) ; entrée signée par M. Alpha Bah, publiée le 17 mai 2016 et révisée le 5 août 2022. Lue le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Geechee",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne en Géorgie ; longtemps jugé péjoratif.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Geechee désigne les habitants des îles de Géorgie ; longtemps jugé négatif, il est devenu acceptable, selon Althea Sumpter.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "New Georgia Encyclopedia - Geechee and Gullah Culture (Althea Sumpter, Georgia Institute of Technology)",
+                "author": "Althea Sumpter",
+                "year": 2006,
+                "url": "https://www.georgiaencyclopedia.org/articles/arts-culture/geechee-and-gullah-culture/",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopédie académique à entrées signées ; article publié le 31 mars 2006 et révisé le 16 septembre 2020. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Rapportée en 2016"
+            },
+            "statement": "Le nom Geechee viendrait de la rivière Ogeechee, en Géorgie, selon M. Alpha Bah.",
+            "hypothesisGroup": "origine du nom Geechee",
+            "sources": [
+              {
+                "title": "South Carolina Encyclopedia - Gullah",
+                "author": "M. Alpha Bah",
+                "year": 2016,
+                "url": "https://www.scencyclopedia.org/sce/entries/gullah/",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopédie académique adossée à l'Institute for Southern Studies (University of South Carolina) ; entrée signée par M. Alpha Bah, publiée le 17 mai 2016 et révisée le 5 août 2022. Lue le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2006,
+              "to": 2016,
+              "label": "Rapportée en 2006 et 2016"
+            },
+            "statement": "Le nom Geechee renverrait aux Kissi, ou Geessi, de la Sierra Leone, de la Guinée et du Liberia, selon M. Alpha Bah ; Althea Sumpter cite aussi des chercheurs qui rattachent Gullah et Geechee à des peuples de la côte ouest-africaine, comme les Kissi, les Gola, les Mende, les Temne ou les Vai.",
+            "hypothesisGroup": "origine du nom Geechee",
+            "sources": [
+              {
+                "title": "South Carolina Encyclopedia - Gullah",
+                "author": "M. Alpha Bah",
+                "year": 2016,
+                "url": "https://www.scencyclopedia.org/sce/entries/gullah/",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopédie académique adossée à l'Institute for Southern Studies (University of South Carolina) ; entrée signée par M. Alpha Bah, publiée le 17 mai 2016 et révisée le 5 août 2022. Lue le 13 octobre 2026."
+              },
+              {
+                "title": "New Georgia Encyclopedia - Geechee and Gullah Culture (Althea Sumpter, Georgia Institute of Technology)",
+                "author": "Althea Sumpter",
+                "year": 2006,
+                "url": "https://www.georgiaencyclopedia.org/articles/arts-culture/geechee-and-gullah-culture/",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "notes": "Encyclopédie académique à entrées signées ; article publié le 31 mars 2006 et révisé le 16 septembre 2020. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
