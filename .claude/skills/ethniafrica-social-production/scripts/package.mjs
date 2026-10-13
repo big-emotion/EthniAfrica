@@ -384,7 +384,8 @@ function videoDelivery(root, config, read) {
     ].join("\n\n"),
   };
 }
-function assemble(root, configFile, networks) {
+// `applied` lists the approved corrections the checkpoint knows were integrated.
+function assemble(root, configFile, networks, applied) {
   const dependencies = {};
   const read = (file) => {
     const bytes = readFileSync(path(root, file));
@@ -408,7 +409,10 @@ function assemble(root, configFile, networks) {
     config.networks.some((n) => !networks.includes(n.network))
   )
     fail("Package networks do not match the selected networks");
-  const research = assessResearch(root, config.research, { forDelivery: true });
+  const research = assessResearch(root, config.research, {
+    forDelivery: true,
+    applied,
+  });
   Object.assign(dependencies, research.dependencies);
   const delivery =
     config.kind === "video"
@@ -591,11 +595,11 @@ export function createPackage(root, configFile, output, networks) {
     rmSync(lock, { recursive: true, force: true });
   }
 }
-export function inspectPackage(root, output, networks) {
+export function inspectPackage(root, output, networks, { applied } = {}) {
   const target = path(root, output);
   const manifestFile = `${output}/package.json`;
   const m = JSON.parse(readFileSync(path(root, manifestFile)));
-  const data = assemble(root, m.configFile, networks);
+  const data = assemble(root, m.configFile, networks, applied);
   for (const field of [
     "schema",
     "configFile",

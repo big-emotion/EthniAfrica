@@ -76,6 +76,11 @@ After approval 2, `corpus-progress` records an approved `proposal` key, the next
 `status`, an `evidence` file and the status-specific PR, commit or live-page facts.
 It never applies a correction or changes the website. Evidence freshness and
 historical integration records survive resumption and targeted proof revisions.
+A reviewed fiche changed only by approved corrections recorded as
+`locally-checked` keeps approval 2 current; `restore-approval` with `gate: 2` and
+a `reason` recovers a proof saved as stale before those records existed. The
+rule, its limits and the destination exception are in
+[Research and corpus alignment](research-and-corpus.md#integrated-corrections-keep-the-proof-current).
 
 ## Final delivery
 

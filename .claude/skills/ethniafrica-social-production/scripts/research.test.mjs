@@ -13,6 +13,7 @@ import {
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { createHash } from "node:crypto";
+import { commitCorpus } from "./corpus.fixture.mjs";
 import {
   assessResearch,
   discoverCorpus,
@@ -293,4 +294,54 @@ test("confirmed claims generate no correction and additions preserve unrelated f
   const r = assessResearch(f.root, f.save());
   assert.equal(r.proposed[f.fiche]["new/field"], "New value");
   assert.equal(r.proposed[f.fiche].etymology, "Earlier account");
+});
+
+// @req REQ-186
+test("an approved correction applied to a committed fiche keeps the reviewed record provable", (t) => {
+  const f = fixture(t);
+  // Formatting JSON.stringify cannot reproduce: only the committed bytes match.
+  const reviewed =
+    '{\n  "id": "EXAMPLE", "nameFr": "Testland",\n  "etymology": "Earlier account",\n  "birthDate": null\n}\n';
+  f.file(f.fiche, reviewed);
+  f.input.records[0].sha256 = hash(reviewed);
+  const input = f.save();
+  commitCorpus(f.root);
+  const corrected = reviewed.replace(
+    '"Earlier account"',
+    '"Earlier account. Recorded in 1880."'
+  );
+  f.file(f.fiche, corrected);
+  const r = assessResearch(f.root, input, { forDelivery: true });
+  assert.equal(r.dependencies[f.fiche], hash(corrected));
+  assert.equal(
+    r.proposed[f.fiche].etymology,
+    "Earlier account. Recorded in 1880."
+  );
+  assert.throws(
+    () => assessResearch(f.root, input, { applied: [] }),
+    /Corpus record changed/
+  );
+  f.file(f.fiche, corrected.replace('"Testland"', '"Otherland"'));
+  assert.throws(() => assessResearch(f.root, input), /Corpus record changed/);
+  f.file(f.fiche, reviewed.replace('"Earlier account"', '"Reconciled"'));
+  assert.throws(() => assessResearch(f.root, input), /Corpus record changed/);
+  const reconciled = { ...r.corrections[0], value: "Reconciled" };
+  assert.equal(
+    assessResearch(f.root, input, { applied: [reconciled] }).proposed[f.fiche]
+      .etymology,
+    "Earlier account. Recorded in 1880."
+  );
+});
+
+// @req REQ-186
+test("a changed record whose reviewed version was never committed stays unprovable", (t) => {
+  const f = fixture(t);
+  const input = f.save();
+  f.file(f.fiche, {
+    id: "EXAMPLE",
+    nameFr: "Testland",
+    etymology: "Earlier account. Recorded in 1880.",
+    birthDate: null,
+  });
+  assert.throws(() => assessResearch(f.root, input), /Corpus record changed/);
 });
