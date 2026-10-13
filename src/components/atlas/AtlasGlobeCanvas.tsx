@@ -308,15 +308,18 @@ export function AtlasGlobeCanvas({
   // Read inside the mount effect, which deliberately does not depend on the
   // surface; the effect below is what carries a change across.
   const surfaceRef = useRef(surface);
-  surfaceRef.current = surface;
   // What the live texture was actually painted for, which is not the same as
   // the prop the moment the mount effect re-runs for an overlay change.
   const appliedSurfaceRef = useRef(surface);
   const tissotRef = useRef(showTissot);
-  tissotRef.current = showTissot;
   const appliedTissotRef = useRef(showTissot);
   const focusRef = useRef<CountryId | null>(focusedCountryId);
   const replayRevealRef = useRef<(() => void) | null>(null);
+
+  useEffect(() => {
+    surfaceRef.current = surface;
+    tissotRef.current = showTissot;
+  }, [surface, showTissot]);
 
   useEffect(() => {
     reducedMotionRef.current = reducedMotion;

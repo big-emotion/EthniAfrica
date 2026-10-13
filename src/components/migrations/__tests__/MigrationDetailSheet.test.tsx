@@ -138,6 +138,45 @@ describe("MigrationDetailSheet", () => {
     });
   });
 
+  // @req REQ-101
+  it("closes the nested source sheet when the detail sheet closes", async () => {
+    const onOpenChange = vi.fn();
+    const { rerender } = render(
+      <MigrationDetailSheet
+        language="fr"
+        open
+        onOpenChange={onOpenChange}
+        event={EVENT}
+      />
+    );
+
+    fireEvent.click(screen.getByTestId("migration-source-chip-src-1"));
+    await waitFor(() => {
+      expect(screen.getByTestId("section-sources")).toBeInTheDocument();
+    });
+
+    rerender(
+      <MigrationDetailSheet
+        language="fr"
+        open={false}
+        onOpenChange={onOpenChange}
+        event={EVENT}
+      />
+    );
+    rerender(
+      <MigrationDetailSheet
+        language="fr"
+        open
+        onOpenChange={onOpenChange}
+        event={EVENT}
+      />
+    );
+
+    await waitFor(() => {
+      expect(screen.queryByTestId("section-sources")).not.toBeInTheDocument();
+    });
+  });
+
   // @req REQ-161
   it("names the kind of each source in the sheet a source chip opens", async () => {
     render(
