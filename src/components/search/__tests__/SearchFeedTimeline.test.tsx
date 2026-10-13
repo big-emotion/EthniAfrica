@@ -3,7 +3,7 @@ import { describe, expect, it, vi } from "vitest";
 
 import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
 import { SearchFeed } from "@/components/search/SearchFeed";
-import { getLocalizedRoute } from "@/lib/routing";
+import { getLanguageRoute, getLocalizedRoute } from "@/lib/routing";
 import { LINGALA_HISTORY } from "@/lib/search/__fixtures__/nameTimelineFixtures";
 import type { SearchResult } from "@/types/afrik-frontend";
 
@@ -100,7 +100,7 @@ describe("SearchFeed — the name-history timeline lens", () => {
     const link = screen.getByRole("link", {
       name: "Voir la fiche complète · Lingala",
     });
-    expect(link).toHaveAttribute("href", "/fr/atlas/langues/lin");
+    expect(link).toHaveAttribute("href", getLanguageRoute("fr", "lin"));
   });
 
   // The result page's 34% bounce cannot be split between « served in place »
