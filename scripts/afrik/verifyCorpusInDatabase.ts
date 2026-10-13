@@ -93,6 +93,8 @@ export interface TableObservation {
   count: number;
   /** The database's rows for the sampled keys, and only those. */
   sampleRows: Row[];
+  /** Primary keys (`a|b` for a pair) the database holds and git does not. */
+  extraKeys?: string[];
 }
 
 export interface TableVerdict {
@@ -392,6 +394,9 @@ export function compareTable(
       `row count: git holds ${expectation.rows.length}, the database has ${observation.count}`
     );
   }
+  for (const key of observation.extraKeys ?? []) {
+    mismatches.push(`${key}: in the database, not in git`);
+  }
 
   const sampleKeys = sampleKeysFor(expectation);
   const expected = groupBy(
@@ -497,7 +502,28 @@ async function observeTable(
     sampleRows.push(...rows);
   }
 
-  return { count: count ?? 0, sampleRows };
+  if ((count ?? 0) <= expectation.rows.length) {
+    return { count: count ?? 0, sampleRows };
+  }
+
+  // Only when the database is over: reading every key of a large table costs
+  // a few pages, and it is the one case a sample cannot name the culprits of.
+  const keyOf = (row: Row) =>
+    primaryKey.map((column) => String(row[column])).join("|");
+  const declared = new Set(expectation.rows.map(keyOf));
+  const databaseKeys = await fetchAllPages<Row>((from, to) => {
+    let query = supabase.from(table).select(primaryKey.join(","));
+    for (const column of primaryKey) query = query.order(column);
+    return query.range(from, to) as unknown as PromiseLike<{
+      data: Row[] | null;
+      error: unknown;
+    }>;
+  });
+  return {
+    count: count ?? 0,
+    sampleRows,
+    extraKeys: databaseKeys.map(keyOf).filter((key) => !declared.has(key)),
+  };
 }
 
 const MISMATCHES_SHOWN_PER_TABLE = 20;

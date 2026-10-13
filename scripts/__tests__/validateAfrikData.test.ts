@@ -14,6 +14,7 @@ import {
   checkPeopleFolderMatchesFamily,
   checkPplDuplicates,
   checkRetiredIdentifiers,
+  checkRetiredPatronymes,
   checkPeopleReferencesResolve,
   RETIRED_IDENTIFIERS_LEDGER,
   checkExternalIdentifierFormats,
@@ -332,6 +333,55 @@ describe("validateAfrikData – new integrity checks", () => {
       const result = checkPplDuplicates(tmpDir);
       expect(result.ok).toBe(false);
       expect(result.errors.some((e) => e.includes("PPL_ZULU"))).toBe(true);
+    });
+  });
+
+  // ── FR27 : checkRetiredPatronymes ──────────────────────────────────────────
+
+  describe("checkRetiredPatronymes (FR27)", () => {
+    function writePatronymes(ids: string[], ledger: unknown[]) {
+      const dir = join(tmpDir, "patronymes");
+      mkdirSync(dir, { recursive: true });
+      for (const id of ids) writeFileSync(join(dir, `${id}.json`), "{}");
+      writeFileSync(
+        join(dir, RETIRED_IDENTIFIERS_LEDGER),
+        JSON.stringify(ledger)
+      );
+    }
+    const merged = (retiredId: string, successorId: string) => ({
+      decision: "merged",
+      retiredId,
+      successorId,
+      reason: "Adjudicated for the test fixture, with a reason long enough.",
+      decidedOn: "2026-10-07",
+    });
+
+    // @req REQ-027
+    it("accepts a retired patronyme with no dossier whose successor has one", () => {
+      writePatronymes(["PAT_CAMARA"], [merged("PAT_KAMARA", "PAT_CAMARA")]);
+
+      const result = checkRetiredPatronymes(tmpDir);
+      expect(result.errors).toEqual([]);
+      expect(result.ok).toBe(true);
+    });
+
+    // @req REQ-027
+    it("fails on a retired dossier still on disk, a missing successor and a two-hop redirect", () => {
+      writePatronymes(
+        ["PAT_CAMARA", "PAT_KAMARA"],
+        [
+          merged("PAT_KAMARA", "PAT_CAMARA"),
+          merged("PAT_DARBOE", "PAT_DABO"),
+          merged("PAT_TURAY", "PAT_TOURAY"),
+          merged("PAT_TOURAY", "PAT_CAMARA"),
+        ]
+      );
+
+      const result = checkRetiredPatronymes(tmpDir);
+      expect(result.ok).toBe(false);
+      expect(result.errors.join("\n")).toMatch(/PAT_KAMARA is retired but/);
+      expect(result.errors.join("\n")).toMatch(/PAT_DABO.*no dossier/);
+      expect(result.errors.join("\n")).toMatch(/PAT_TURAY.*one hop/);
     });
   });
 
