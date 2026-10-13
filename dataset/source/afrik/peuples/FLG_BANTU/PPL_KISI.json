@@ -103,5 +103,65 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kisi désigne un peuple de la rive du lac Nyasa, au sud-ouest de la Tanzanie, et la langue bantoue qu'il parle ; on dit aussi Kikisi et Kese. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Les sources que nous avons lues n'expliquent pas l'origine du nom ; nous présentons plus bas ce qu'elles disent.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Kisi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple et d'une langue du lac Nyasa, écrit Wakisi dès 1900 ; son origine n'est pas documentée.",
+        "periodLabel": "Écrit Wakisi dès 1900 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kisi désigne une langue bantoue du district de Ludewa, dans le sud-ouest de la Tanzanie, selon le site Omniglot. La plupart de ses locuteurs vivent sur la rive nord-est du lac Nyasa et à l'ouest des monts Livingstone. La même page l'appelle aussi Kikisi et Kese.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Kisi – Omniglot, 2021",
+                "author": "Omniglot",
+                "year": 2021,
+                "url": "https://www.omniglot.com/writing/kisi.htm",
+                "tier": "unverified",
+                "source_kind": "linguistic_reference",
+                "notes": "Page de présentation de la langue, qui donne environ 11 000 locuteurs en 2012 ; lue le 13 octobre 2026. Elle ne dit pas comment les locuteurs se nomment."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1900,
+              "to": 1900,
+              "label": "1900"
+            },
+            "statement": "Le nom Kisi a une forme proche, Wakisi, dans le compte rendu que le médecin militaire F. Fülleborn donne en 1900 de ses voyages au lac Nyasa. Il écrit que les Wakisi, un peuple de pêcheurs, vivent sur la rive est du lac, de Langenburg à Wiedhafen, et que leurs femmes vendent dans les environs des pots qu'elles font elles-mêmes. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Wakisi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Über seine Reisen im Nyassa-Gebiet, Verhandlungen der Gesellschaft für Erdkunde zu Berlin, vol. 27",
+                "author": "F. Fülleborn",
+                "year": 1900,
+                "url": "https://archive.org/details/bub_gb_iO46AQAAIAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 382",
+                "notes": "Conférence du 7 juillet 1900, Berlin, W. H. Kühl, 1900. Le projet n'a pas trouvé de trace plus ancienne ; il n'a pas lu les rapports que Fülleborn a pu publier plus tôt. Lu sur la numérisation d'Internet Archive le 13 octobre 2026. Page lue sur l'image."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

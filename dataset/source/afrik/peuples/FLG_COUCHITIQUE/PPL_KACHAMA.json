@@ -98,5 +98,110 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kachama désigne un peuple d'Éthiopie et la langue qu'il parle, que les listes nomment kachama-ganjule. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. D'autres noms existent, comme Kachama-Ganjule et Gidicho. Les sources que nous avons lues ne disent pas d'où viennent ces noms.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Kachama-Ganjule",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la langue dans la norme ISO, qui réunit deux noms ; on ne sait pas d'où il vient.",
+        "periodLabel": "En usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kachama-Ganjule désigne une langue d'Éthiopie et le peuple qui la parle. La norme ISO 639-3 l'enregistre sous le code kcx. On ne sait pas avec certitude d'où vient ce nom, ni quand il a été écrit pour la première fois.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "ISO 639-3, Kachama-Ganjule [kcx]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/kcx",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kachama",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un des deux noms réunis dans Kachama-Ganjule, recensé par les listes de langues ; on ne sait pas depuis quand.",
+        "periodLabel": "En usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kachama figure parmi les noms de la langue que recense Glottolog, qui la regroupe avec le haro. Les sources que nous avons lues ne disent ni qui l'emploie ni depuis quand.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Kachama-Ganjule-Haro (kach1284)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/kach1284",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue, lue le 13 octobre 2026 : elle regroupe sous ce nom le kachama-ganjule et le haro, et recense Gatame, Gidicho, Haruro, Kachama, Kachama-Ganjule et Qechem comme noms de la langue."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gidicho",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un autre nom de la langue, recensé par les listes de langues ; on ne sait pas depuis quand.",
+        "periodLabel": "En usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Gidicho figure parmi les noms de la langue que recense Glottolog, qui la regroupe avec le haro. Les sources que nous avons lues ne disent ni qui l'emploie ni depuis quand.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Kachama-Ganjule-Haro (kach1284)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/kach1284",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue, lue le 13 octobre 2026 : elle regroupe sous ce nom le kachama-ganjule et le haro, et recense Gatame, Gidicho, Haruro, Kachama, Kachama-Ganjule et Qechem comme noms de la langue."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

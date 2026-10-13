@@ -130,5 +130,166 @@
         "source_kind": "ngo"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Godié désigne un peuple krou du sud-ouest de la Côte d'Ivoire, entre Sassandra et Fresco. Ce peuple se nomme lui-même Godié, qu'on a écrit Godyé dès 1904. Les habitants de Fresco se disent plutôt Koyo. Les sources ne s'accordent pas sur l'origine du nom Godié ; nous présentons plus bas les deux explications que nous avons lues.",
+    "names": [
+      {
+        "nameText": "Godié",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "god",
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple krou du sud-ouest ivoirien, écrit Godyé dès 1904 ; son origine est discutée.",
+        "usedIn": ["god", "fra"],
+        "periodLabel": "Écrit dès 1904 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1976,
+              "to": 1976,
+              "label": "1976"
+            },
+            "era": "modern",
+            "statement": "Le nom Godié désigne un peuple krou du sud-ouest de la Côte d'Ivoire. Dago Pascal Kokora, originaire de Fresco, juge que Godié, comme Dida, Bété ou Bakwé, est un nom commode qui recouvre des parlers apparentés. Les sources ne s'accordent pas sur l'origine du nom ; nous présentons plus bas ce que nous avons lu.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Studies in the grammar of Koyo",
+                "author": "Dago Pascal Kokora",
+                "year": 1976,
+                "url": null,
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 215",
+                "notes": "Thèse de doctorat, Indiana University, août 1976 (University Microfilms, 77-1909). Lue dans une copie non officielle. Page 215 : l'auteur écrit que Bété, Dida, Godié, Néyo, Bakwé sont des « imaginary cover terms for collections of related languages »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1971,
+              "to": 1971,
+              "label": "1971"
+            },
+            "era": "modern",
+            "statement": "Le nom Godié viendrait de deux éléments, gwe et dji, qui veulent dire « chimpanzé-panthère » : ce serait un surnom que les Néyo de Sassandra auraient donné aux Godié à cause de leur tempérament, semblable à celui de ces deux animaux quand ils se battent, selon Alfred Schwartz (1971), cité par Dago Pascal Kokora.",
+            "hypothesisGroup": "origine du nom Godié",
+            "sources": [
+              {
+                "title": "Studies in the grammar of Koyo",
+                "author": "Dago Pascal Kokora",
+                "year": 1976,
+                "url": null,
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 223",
+                "notes": "Thèse de doctorat, Indiana University, août 1976 (University Microfilms, 77-1909). Lue dans une copie non officielle. Page 223, note 7 : l'auteur résume Schwartz (1971) ; nous n'avons pas ouvert Schwartz."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1967,
+              "to": 1967,
+              "label": "1967"
+            },
+            "era": "modern",
+            "statement": "Le nom Godié viendrait de la phrase a ka gouen zie, « nous allons plus loin » : les Godié, qui ne voulaient pas passer la nuit avec les Dida, auraient dit ces mots en repartant, selon Kouassi Lowa (1967), cité par Dago Pascal Kokora.",
+            "hypothesisGroup": "origine du nom Godié",
+            "sources": [
+              {
+                "title": "Studies in the grammar of Koyo",
+                "author": "Dago Pascal Kokora",
+                "year": 1976,
+                "url": null,
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 223",
+                "notes": "Thèse de doctorat, Indiana University, août 1976 (University Microfilms, 77-1909). Lue dans une copie non officielle. Page 223, note 7 : l'auteur résume Kouassi-Lowa (1967, p. 23) ; nous n'avons pas ouvert ce texte."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1952,
+              "to": 1952,
+              "label": "1952"
+            },
+            "era": "colonial",
+            "statement": "Le nom Godié est celui que les Godia se donnent eux-mêmes, selon Diedrich Westermann et Margaret Bryan (1952), qui l'écrivent Godye et ajoutent qu'ils sont « de Go », à l'ouest des Kwaya, autour de Kotrou. Dago Pascal Kokora les cite.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Studies in the grammar of Koyo",
+                "author": "Dago Pascal Kokora",
+                "year": 1976,
+                "url": null,
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 222",
+                "notes": "Thèse de doctorat, Indiana University, août 1976 (University Microfilms, 77-1909). Lue dans une copie non officielle. Page 222 : citation de Westermann et Bryan (1952, p. 48) : « Godeye (Godia) call themselves Godye of Go » ; nous n'avons pas ouvert leur livre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "statement": "Le nom Godié apparaît sous la forme Godyé chez l'administrateur colonial Maurice Delafosse, qui l'emploie pour l'une des tribus du groupe krou qu'il appelle bété : les Godyé, qui comprennent sur la côte les Légré, puis les Nogbo, les Godyé proprement dits, au nord des Néyo et jusqu'au Sassandra, et les Baléko. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Godyé",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 68",
+                "notes": "Paris, Ernest Leroux, 1904. Lu sur sa numérisation par la bibliothèque de l'université de Toronto. Page 68 : « Les Godye viennent ensuite et comprennent : sur la côte les Légré […] ». Page lue sur l'image de la page."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Koyo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des habitants de Fresco, ou Koyere, que leur langue distingue des Godié.",
+        "usedIn": ["fra", "eng"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1976,
+              "to": 1976,
+              "label": "1976"
+            },
+            "era": "modern",
+            "statement": "Le nom Koyo est celui que Dago Pascal Kokora, originaire de Fresco, donne aux habitants de Koyere, le nom de leur petite ville côtière que les étrangers appellent Fresco, et à leur langue. Les Avikam et les Alladian disent Koyo et Ekoyo pour cette langue. Kokora préfère le nom Koyo à Godié pour cette langue et ne tient pas à ce qu'on la rattache aux Godié.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Studies in the grammar of Koyo",
+                "author": "Dago Pascal Kokora",
+                "year": 1976,
+                "url": null,
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "pp. 214-215",
+                "notes": "Thèse de doctorat, Indiana University, août 1976 (University Microfilms, 77-1909). Lue dans une copie non officielle. Page 214 : « the Koyo, who are the inhabitants of Koyere » ; les Avikam de Grand-Lahou et les Aladjan de Jacqueville disent Koyo et Ekoyo. Page 215 : l'auteur ne tient pas à ce que Koyo soit rangé sous Godié."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -92,5 +92,111 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Qabena, aussi écrit Qabeena ou K'abeena, désigne un peuple de langue couchitique de l'ouest du pays gurage, entre les rivières Omo et Bilate, dans le sud de l'Éthiopie. Le nom Hadiyya, qui désigne aussi un autre peuple, lui est resté attaché. On ne connaît pas la plus ancienne trace du nom Qabena. D'autres noms existent : Hadiyya Wambe, un nom ancien relevé par Antoine d'Abbadie. Nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Qabena",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "alw",
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple de l'ouest du pays gurage, proche des Allaaba ; son origine reste discutée.",
+        "periodLabel": "Écrit Qabeena en 2014",
+        "accounts": [
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Qabeena désigne, chez Ulrich Braukämper, un peuple de l'ouest du pays gurage, proche des Allaaba, qui parle un dialecte de la langue kambaata. Braukämper écrit que le nom Hadiyya reste employé aujourd'hui pour les Qabeena.",
+            "aspect": "usage",
+            "formAsWritten": "Qabeena",
+            "sources": [
+              {
+                "title": "A History of the Hadiyya in Southern Ethiopia",
+                "author": "Ulrich Braukämper",
+                "year": 2014,
+                "url": "https://archive.org/details/pdfcoffee.com_braukaemper-a-history-of-the-hadiyya-in-so-9783447192644-pdf-free",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Otto Harrassowitz, Wiesbaden, 2014, collection Aethiopistische Forschungen, 77. Lu dans une copie non officielle déposée sur Internet Archive ; les pages citées sont celles de l'édition imprimée. Chapitre 1, § 1.1 : « The denotation Hadiyya still exists today for the Qabeena in western Gurageland ». Page lue sur l'image."
+              },
+              {
+                "title": "A History of the Hadiyya in Southern Ethiopia",
+                "author": "Ulrich Braukämper",
+                "year": 2014,
+                "url": "https://archive.org/details/pdfcoffee.com_braukaemper-a-history-of-the-hadiyya-in-so-9783447192644-pdf-free",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "notes": "Otto Harrassowitz, Wiesbaden, 2014, collection Aethiopistische Forschungen, 77. Lu dans une copie non officielle déposée sur Internet Archive ; les pages citées sont celles de l'édition imprimée. Chapitre 1, § 1.1 : l'auteur note que les Qabeena et les Allaaba ont gardé la conscience d'une même origine. Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Rapportée en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Qabeena viendrait d'un ancêtre qui ne figure pas dans les généalogies, selon l'opinion qui domine chez les Qabeena et les Allaaba, que rapporte Ulrich Braukämper. Il écrit qu'il ne connaît aucun récit qui explique ce nom.",
+            "formAsWritten": "Qabeena",
+            "hypothesisGroup": "origine-du-nom-qabeena",
+            "sources": [
+              {
+                "title": "A History of the Hadiyya in Southern Ethiopia",
+                "author": "Ulrich Braukämper",
+                "year": 2014,
+                "url": "https://archive.org/details/pdfcoffee.com_braukaemper-a-history-of-the-hadiyya-in-so-9783447192644-pdf-free",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "notes": "Otto Harrassowitz, Wiesbaden, 2014, collection Aethiopistische Forschungen, 77. Lu dans une copie non officielle déposée sur Internet Archive ; les pages citées sont celles de l'édition imprimée. L'auteur a mené son enquête de terrain en 1973-1974 ; il écrit que les deux groupes pensent que leurs noms remontent à des ancêtres « not represented in the genealogies ». Page lue sur l'image."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Hadiyya Wambe",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom ancien des Qabeena, relevé par d'Abbadie à la fin du XIXe siècle ; il garde le nom Hadiyya.",
+        "periodLabel": "Cité dès 1890",
+        "accounts": [
+          {
+            "period": {
+              "from": 1890,
+              "to": 1890,
+              "label": "1890, d'après Braukämper"
+            },
+            "era": "polity",
+            "statement": "Le nom Hadiyya Wambe, aussi écrit Womba, apparaît chez Antoine d'Abbadie, dans un ouvrage de 1890 que cite Ulrich Braukämper. D'Abbadie connaît le nom Hadiyya pour trois groupes de l'ouest de la vallée du Rift, dont les Hadiyya Wambe, que Braukämper rapproche des Qabeena d'aujourd'hui. C'est la plus ancienne trace de ce nom que le projet connaît ; elle est de seconde main, car le projet n'a pas lu d'Abbadie. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Hadiyya Wambe (Womba)",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A History of the Hadiyya in Southern Ethiopia",
+                "author": "Ulrich Braukämper",
+                "year": 2014,
+                "url": "https://archive.org/details/pdfcoffee.com_braukaemper-a-history-of-the-hadiyya-in-so-9783447192644-pdf-free",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Otto Harrassowitz, Wiesbaden, 2014, collection Aethiopistische Forschungen, 77. Lu dans une copie non officielle déposée sur Internet Archive ; les pages citées sont celles de l'édition imprimée. Chapitre 1 : « D'Abbadie (1890:110) […] knew of the name Hadiyya for three groups […] the Hadiyya Wambe (Womba), who correlate with the present-day Qabeena ». Le projet n'a pas lu d'Abbadie. Page lue sur l'image."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

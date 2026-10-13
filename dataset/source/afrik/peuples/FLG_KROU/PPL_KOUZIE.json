@@ -94,5 +94,89 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kouzié désigne un petit peuple de langue krou de la région de Buyo, dans le sud-ouest de la Côte d'Ivoire, et la langue qu'il parle. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Nous n'avons pas trouvé de source qui explique l'origine du nom Kouzié ; ce que nous savons de son histoire est présenté plus bas.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Kouzié",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "nwb",
+        "namedBy": null,
+        "shortLine": "Le nom sous lequel ce peuple et sa langue figurent dans les listes et dans les études, sans origine connue.",
+        "periodLabel": "Écrit depuis 2006 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "2018"
+            },
+            "era": "modern",
+            "statement": "Le nom kouzié est celui d'une langue krou de Côte d'Ivoire que les linguistes Allou Allou Serge Yannick et Andredou Assouan Pierre disent parlée par 3 249 personnes, soit 0,01 % de la population, d'après le recensement de 2014.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Étude du niveau de vitalité d'une langue minoritaire ivoirienne : le kouzié",
+                "author": "Allou Allou Serge Yannick et Andredou Assouan Pierre",
+                "year": 2018,
+                "url": "https://revues.imist.ma/index.php/SLC/article/download/14714/8148/36851",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Revue Sciences, Langage et Communication, vol. 2, n° 2, 2018. L'article parle de la langue ; il ne dit ni comment le peuple se nomme ni d'où vient le nom. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Kouzié désigne, chez le chercheur Aka Konin, un groupe de la sous-préfecture de Buyo qu'il tient pour apparenté aux Niaboua, comme les Niédéboua et les Kouya. Un chant niaboua, « Kagbè blôka », que Konin recueille, raconte l'arrivée des Kouzié.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "L'art musical chez les Niaboua, un peuple krou du centre-ouest de la Côte d'Ivoire",
+                "author": "Aka Konin",
+                "year": 2012,
+                "url": "https://www.africamuseum.be/sites/default/files/media/docs/research/publications/rmca/online/documents-social-sciences-humanities/niaboua.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 56 (note 92), p. 58 et p. 66-67",
+                "notes": "Musée royal de l'Afrique centrale, Tervuren, 2012. Le PDF imprime deux pages par feuille ; la page est lue sur les numéros du feuillet. La note 92 (p. 56) dit les Kouzié apparentés aux Niaboua ; la liste de termes musicaux kouzié est à la p. 58 ; le septième chant de l'annexe 7 (p. 66-67) est traduit « l'arrivée des Kouzié ». La traduction du chant est de l'auteur. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2006,
+              "to": 2006,
+              "label": "2006"
+            },
+            "era": "modern",
+            "statement": "Le nom Kouzié figure parmi les peuples krou de Côte d'Ivoire dans la liste de soixante groupes que le centre norvégien Landinfo publie en 2006. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Kouzié",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Côte d'Ivoire: Ethnicity, Ivoirité and Conflict",
+                "author": "Geir Skogseth (Landinfo)",
+                "year": 2006,
+                "url": "https://www.landinfo.no/asset/514/1/514_1.pdf",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 5",
+                "notes": "Rapport du centre norvégien d'information sur les pays d'origine, daté du 2 novembre 2006. Kouzié figure dans la liste des groupes krou. La liste de soixante groupes y est reprise d'une liste de 1999 (CNCCI). Elle ne dit pas d'où viennent les noms. Lu le 13 octobre 2026 dans le PDF du centre."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

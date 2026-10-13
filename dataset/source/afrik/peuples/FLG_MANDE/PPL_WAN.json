@@ -99,5 +99,213 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Wan désigne un peuple du centre-ouest de la Côte d'Ivoire, installé entre Béoumi et Mankono, dont la langue fait partie des langues mandé du Sud. L'anthropologue Philip Ravenhill, qui l'a étudié de 1972 à 1974, écrit Wan parce que cette forme se rapproche le plus de ce que les Wan disent d'eux-mêmes. L'administration française a écrit Noua puis Ouan, et des linguistes ont écrit Nwa. Aucune source que nous avons lue n'explique l'origine de ces noms ; nous présentons plus bas ce qu'elles disent de chacun.",
+    "names": [
+      {
+        "nameText": "Wan",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "wan",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne, dans l'écriture jugée la plus proche de sa prononciation par Philip Ravenhill.",
+        "periodLabel": "Écrit Ouan dès 1911 ; Wan depuis les années 1970",
+        "accounts": [
+          {
+            "period": {
+              "from": 1972,
+              "to": 1974,
+              "label": "Recherches de 1972 à 1974"
+            },
+            "era": "modern",
+            "statement": "Le nom Wan est la forme que Philip Ravenhill choisit pour écrire le nom de ce peuple, parce qu'elle est, sans signes particuliers, la plus proche de ce que les Wan disent eux-mêmes, à peu près /wanà/. Il le dit en comparant avec Noua, Ouan et Nwa.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Wan Language",
+                "author": "Philip L. Ravenhill",
+                "year": null,
+                "url": "https://llacan.cnrs.fr/PDF/AutresMandenkan/ravenhil1.PDF",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 57",
+                "notes": "Fiche de données de deux pages (p. 57-58) fondée sur des recherches menées de 1972 à 1974 ; la copie numérisée du LLACAN ne porte pas de date de publication. Le passage sur le nom est à la p. 57. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Juillet à septembre 1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wan a une forme proche, Ouan, dans le titre d'un rapport de l'administration française de 1911, « Rapport sur les opérations de désarmements des pays Ouan (Noua et Mona) », que cite l'archéologue Kouakou Sylvain Koffi. C'est la plus ancienne trace d'une forme proche de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Ouan",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Wan and their migrations in Côte d'Ivoire",
+                "author": "Kouakou Sylvain Koffi",
+                "year": 2024,
+                "url": "https://edition-efua.acaref.net/wp-content/uploads/sites/6/2024/11/7-KOFFI-Kouakou-Sylvain.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 169, note 3, et p. 177",
+                "notes": "Revue ASTR-Ghana, éditions e.f.u.a, p. 164-179 (pagination de la copie lue). Le titre est lu dans la note 3 (p. 169) et dans la liste des sources écrites (p. 177) ; il s'agit de la cote 1 EE 87. L'auteur cite les Archives nationales de Côte d'Ivoire, que nous n'avons pas consultées. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant le nom, selon des traditions orales rapportées en 1997"
+            },
+            "statement": "On parle alors d'un ancien groupe nommé Kwanin, établi entre le Sassandra et la rive est de la Comoé, auquel les Wan auraient appartenu, selon des traditions orales que Georges Niangoran-Bouah a recueillies et que Kouakou Sylvain Koffi rapporte. Koffi présente aussi d'autres explications de l'origine des Wan.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Wan and their migrations in Côte d'Ivoire",
+                "author": "Kouakou Sylvain Koffi",
+                "year": 2024,
+                "url": "https://edition-efua.acaref.net/wp-content/uploads/sites/6/2024/11/7-KOFFI-Kouakou-Sylvain.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 170",
+                "notes": "Revue ASTR-Ghana, éditions e.f.u.a, p. 164-179 (pagination de la copie lue). Koffi cite le livre de Niangoran-Bouah (1997, p. 26), que nous n'avons pas lu. L'auteur cite les Archives nationales de Côte d'Ivoire, que nous n'avons pas consultées. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ouan",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "L'administration française",
+        "shortLine": "L'écriture que l'administration française a employée après Noua, et que les listes ivoiriennes ont gardée.",
+        "periodLabel": "Écrit dès 1911",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Juillet à septembre 1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ouan figure dans le titre d'un rapport de l'administration française, « Rapport sur les opérations de désarmements des pays Ouan (Noua et Mona) », rédigé de juillet à septembre 1911 et cité par Kouakou Sylvain Koffi. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Ouan",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Wan and their migrations in Côte d'Ivoire",
+                "author": "Kouakou Sylvain Koffi",
+                "year": 2024,
+                "url": "https://edition-efua.acaref.net/wp-content/uploads/sites/6/2024/11/7-KOFFI-Kouakou-Sylvain.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 169, note 3, et p. 177",
+                "notes": "Revue ASTR-Ghana, éditions e.f.u.a, p. 164-179 (pagination de la copie lue). Le titre est lu dans la note 3 (p. 169) et dans la liste des sources écrites (p. 177) ; il s'agit de la cote 1 EE 87. L'auteur cite les Archives nationales de Côte d'Ivoire, que nous n'avons pas consultées. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Orthographe administrative qui a remplacé Noua"
+            },
+            "statement": "Le nom Ouan est l'écriture administrative qui a remplacé Noua, selon Philip Ravenhill. La source ne dit pas à quelle date.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Wan Language",
+                "author": "Philip L. Ravenhill",
+                "year": null,
+                "url": "https://llacan.cnrs.fr/PDF/AutresMandenkan/ravenhil1.PDF",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 57",
+                "notes": "Fiche de données de deux pages (p. 57-58) fondée sur des recherches menées de 1972 à 1974 ; la copie numérisée du LLACAN ne porte pas de date de publication. Ravenhill écrit : « The original administrative orthography was Noua, but this has since been replaced by Ouan ». Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Noua",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "L'administration française",
+        "shortLine": "La première écriture administrative du nom, avant Ouan, d'après les archives et Philip Ravenhill.",
+        "periodLabel": "Écrit dès 1910",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Noua figure en 1910 dans le titre d'un rapport du cercle de Mankono, « Rapport de tournée dans le pays Noua, voyage à Zuénoula », que cite l'archéologue Kouakou Sylvain Koffi. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Noua",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Wan and their migrations in Côte d'Ivoire",
+                "author": "Kouakou Sylvain Koffi",
+                "year": 2024,
+                "url": "https://edition-efua.acaref.net/wp-content/uploads/sites/6/2024/11/7-KOFFI-Kouakou-Sylvain.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 169, note 3",
+                "notes": "Revue ASTR-Ghana, éditions e.f.u.a, p. 164-179 (pagination de la copie lue). Le titre est lu dans la note 3 ; il s'agit de la cote 1 EE 86. L'auteur cite les Archives nationales de Côte d'Ivoire, que nous n'avons pas consultées. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nwã",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des linguistes",
+        "shortLine": "L'écriture que des linguistes (Prost, Welmers) emploient pour la langue et le peuple.",
+        "periodLabel": "Écrit dès 1953",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1953,
+              "to": 1953,
+              "label": "1953"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nwã figure dans l'étude du linguiste R. P. A. Prost sur les langues mandé du Sud, publiée à Dakar en 1953, selon Philip Ravenhill. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Nwã",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Wan Language",
+                "author": "Philip L. Ravenhill",
+                "year": null,
+                "url": "https://llacan.cnrs.fr/PDF/AutresMandenkan/ravenhil1.PDF",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 57 et p. 58",
+                "notes": "Fiche de données de deux pages (p. 57-58) fondée sur des recherches menées de 1972 à 1974 ; la copie numérisée du LLACAN ne porte pas de date de publication. Ravenhill écrit que Prost emploie Nwã et que Welmers (1971) emploie Nwa. Il cite Prost, Les langues mandé-sud du groupe Mana-Busa, Dakar, IFAN, mémoire n° 26, 1953, que nous n'avons pas lu. Il ne dit pas pourquoi ces linguistes choisissent cette forme. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

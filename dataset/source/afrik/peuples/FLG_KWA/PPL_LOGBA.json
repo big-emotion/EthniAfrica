@@ -89,5 +89,167 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Logba désigne un peuple des montagnes de la région de la Volta, au Ghana. Ce peuple se nomme lui-même Akpanawo, et sa langue s'appelle l'ikpana. Logba est le nom que lui donnent les Ewe, selon Kofi Dorvlo. Les sources ne s'accordent pas sur l'origine de ce nom ; nous présentons plus bas les deux récits que nous avons lus et sa plus ancienne trace, de 1898.",
+    "names": [
+      {
+        "nameText": "Akpanawo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lgq",
+        "namedBy": null,
+        "shortLine": "Le nom que les Logba se donnent ; leur langue, l'ikpana, est expliquée par « vérité ».",
+        "usedIn": ["lgq"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Akpanawo est celui que les Logba se donnent : un homme est un Akpananyi, une femme une Akpanadzɛ. La langue s'appelle Ikpana, que certains locuteurs expliquent par « défenseurs de la vérité », parce que ikpá veut dire « vérité », selon le linguiste Kofi Dorvlo. Les sources que nous avons lues n'expliquent pas autrement l'origine de ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A grammar of Logba (Ikpana)",
+                "author": "Kofi Dorvlo",
+                "year": 2008,
+                "url": "https://hdl.handle.net/1887/12945",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Thèse, université de Leyde, LOT, 2008. Lue dans une copie non officielle du texte complet ; la notice de l'université de Leyde donne la thèse. Chapitre 1, section 1.1, page 1 : « The Logba people call themselves Akpanawo » ; l'explication de l'ikpana par « défenseurs de la vérité » est donnée par certains locuteurs."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Logba",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "ewe",
+        "namedBy": "Les Ewe, selon Kofi Dorvlo",
+        "shortLine": "Le nom que les Ewe donnent à ce peuple, écrit dès 1898 ; son origine est discutée.",
+        "usedIn": ["ewe", "eng", "fra"],
+        "periodLabel": "Écrit dès 1898 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Logba viendrait de deux mots de la langue logba, la « faire » et ɔgbá « chemin » : des chasseurs qui vivaient hors des murs de Notsie auraient aidé les Ewe à ouvrir la route quand ils partirent, et les Ewe qui les entendaient dire « ouvrez le chemin » les auraient appelés ainsi. Kofi Dorvlo présente ce récit comme une autre version.",
+            "hypothesisGroup": "origine du nom Logba",
+            "sources": [
+              {
+                "title": "A grammar of Logba (Ikpana)",
+                "author": "Kofi Dorvlo",
+                "year": 2008,
+                "url": "https://hdl.handle.net/1887/12945",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Thèse, université de Leyde, LOT, 2008. Lue dans une copie non officielle du texte complet ; la notice de l'université de Leyde donne la thèse. Page 1 : « Another account suggests that the name is from two Logba words, la ‘to make’ and ɔgbá ‘path’ »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Logba viendrait des mots ewe lɔ́ « ramasser » et gbě « déchets », selon un locuteur logba cité par Kofi Dorvlo : quand les Ewe quittèrent Notsie, au Togo, ceux qui allaient devant ouvraient la route en coupant et en ramassant les broussailles épaisses.",
+            "hypothesisGroup": "origine du nom Logba",
+            "sources": [
+              {
+                "title": "A grammar of Logba (Ikpana)",
+                "author": "Kofi Dorvlo",
+                "year": 2008,
+                "url": "https://hdl.handle.net/1887/12945",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Thèse, université de Leyde, LOT, 2008. Lue dans une copie non officielle du texte complet ; la notice de l'université de Leyde donne la thèse. Page 1 : « According to one story from an indigenous Logba speaker, Logba is derived from two Ewe words lɔ́ ‘collect’ gbě ‘rubbish’ »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2008,
+              "to": 2008,
+              "label": "2008"
+            },
+            "era": "modern",
+            "statement": "Le nom Logba désigne le peuple et son pays des montagnes de la région de la Volta, selon Kofi Dorvlo, qui parle d'étymologies populaires pour son origine. Les sources ne s'accordent pas sur ce nom ; nous présentons plus bas les deux récits que nous avons lus.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A grammar of Logba (Ikpana)",
+                "author": "Kofi Dorvlo",
+                "year": 2008,
+                "url": "https://hdl.handle.net/1887/12945",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Thèse, université de Leyde, LOT, 2008. Lue dans une copie non officielle du texte complet ; la notice de l'université de Leyde donne la thèse. Page 1 : « There are folk etymologies for the name Logba »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1898,
+              "to": 1898,
+              "label": "1898"
+            },
+            "era": "colonial",
+            "statement": "Le nom Logba apparaît par écrit chez l'officier Rudolf Plehn, qui range les Logba parmi quatre peuples voisins de Misahöhe et rapporte que, d'après ce qu'il a pu apprendre, les Logba sont arrivés dans le pays après les Avatime. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Logba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Beiträge zur Völkerkunde des Togo-Gebietes",
+                "author": "Rudolf Plehn",
+                "year": 1898,
+                "url": "https://archive.org/details/beitrgezurvlkerk00pleh",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18",
+                "notes": "Thèse de doctorat, université de Halle, 1898 ; la pagination citée est celle de cette thèse. Lu en allemand dans la numérisation d'Internet Archive ; traduction de l'équipe. Pages 17 et 18 : le nom est écrit Logha page 17, puis Logba page 18, où Plehn écrit que les Logba et les Nyambo sont venus plus tard. Pages lues sur l'image des pages."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1750,
+              "label": "Jusque vers 1750"
+            },
+            "era": "polity",
+            "statement": "On parle alors des Makɔ pour désigner un peuple puissant qui dominait une grande partie de la région, jusqu'à sa défaite vers 1750. Les Logba en descendraient peut-être, selon des rapports que Kofi Dorvlo résume d'après Kropp Dakubu (2006).",
+            "before": true,
+            "sources": [
+              {
+                "title": "A grammar of Logba (Ikpana)",
+                "author": "Kofi Dorvlo",
+                "year": 2008,
+                "url": "https://hdl.handle.net/1887/12945",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Thèse, université de Leyde, LOT, 2008. Lue dans une copie non officielle du texte complet ; la notice de l'université de Leyde donne la thèse. Page 2 : « the Logba people possibly are the descendants of the powerful Makɔ́ ethnic group […] conquered around 1750 » ; l'auteur cite Dakubu (2006), que nous n'avons pas ouvert."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

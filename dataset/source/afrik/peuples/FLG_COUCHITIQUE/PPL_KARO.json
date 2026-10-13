@@ -92,5 +92,237 @@
         "source_kind": "encyclopedia"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Karo désigne un peuple du sud-ouest de l'Éthiopie, dans la vallée de l'Omo, et la langue qu'il parle. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. D'autres noms ont été écrits par des voyageurs : Kerre en 1894, Kere en 1898 et Cherre en 1899. Les sources que nous avons lues ne disent pas d'où vient le nom Karo.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Karo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du peuple et de sa langue aujourd'hui ; on ne sait pas d'où il vient ni quand il apparaît.",
+        "periodLabel": "En usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Karo désigne une langue d'Éthiopie et le peuple qui la parle. La norme ISO 639-3 l'enregistre sous le code kxh, avec la mention « Karo (Ethiopia) ». On ne sait pas avec certitude d'où vient ce nom, ni quand il a été écrit pour la première fois.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "ISO 639-3, Karo (Ethiopia) [kxh]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/kxh",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Karo est aussi celui que Glottolog donne à la langue, qu'elle appelle « Karo (Ethiopia) ». Elle recense, parmi ses autres noms, Kere, Kerre, Cherre et Amar.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Karo (Ethiopia) (karo1297)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/karo1297",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue, lue le 13 octobre 2026 : elle recense Amar, Cherre, Hamar-Koke, Kere et Kerre comme autres noms de la langue."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kara",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que l'anthropologue David Turton donne à ce peuple dans l'histoire des explorations de l'Omo.",
+        "periodLabel": "Employé par les chercheurs",
+        "usedIn": ["eng"],
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kara est celui que l'anthropologue David Turton emploie pour le peuple que les voyageurs de 1888 à 1896 écrivent Kerre, Kere et Cherre. Les sources que nous avons lues ne disent pas depuis quand ni par qui ce nom a d'abord été employé.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Exploration in the lower Omo valley of southwestern Ethiopia between 1890 and 1910",
+                "author": "David Turton",
+                "year": null,
+                "url": "https://www.mursi.org/pdf/exploration-in-the-lower-omo-valley.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1-4",
+                "notes": "Texte en ligne sur le site d'un projet consacré aux Mursi, version révisée d'un article paru d'abord en 1981 ; lu le 13 octobre 2026. Il rapproche « Kerre (Kara) » de von Höhnel (1938, p. 26) : nous n'avons pas lu cet article de 1938."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kerre",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La plus ancienne trace connue : un peuple d'éleveurs cité en 1894 dans le récit de l'expédition du comte Teleki.",
+        "periodLabel": "Écrit en 1894",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": 1894,
+              "to": 1894,
+              "label": "1894"
+            },
+            "era": "polity",
+            "statement": "Le nom Kerre apparaît par écrit en 1894 dans le récit du voyageur Ludwig von Höhnel, qui raconte l'expédition du comte Teleki de 1887 et 1888. Il l'écrit pour un peuple d'éleveurs de bovins, de moutons et de chèvres, qui possède trois villages et qu'il ne connaît que par ce que lui disent ses hôtes reshiat. Selon l'anthropologue David Turton, ces Kerre sont les Kara, que l'on appelle aujourd'hui Karo. C'est la plus ancienne trace de ce nom que le projet connaît, sous une forme proche ; le peuple existait déjà avant elle.",
+            "formAsWritten": "Kerre",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Discovery of lakes Rudolf and Stefanie : a narrative of Count Samuel Teleki's exploring and hunting expedition in eastern equatorial Africa in 1887 and 1888, vol. II",
+                "author": "Ludwig von Höhnel",
+                "year": 1894,
+                "url": "https://archive.org/details/discoveryoflakes02hhne",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 167-169",
+                "notes": "Londres, Longmans, Green and Co., 1894, traduction anglaise de l'édition allemande de 1892. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive. Le nom Kerre est d'abord cité p. 167 (le café vient des Aro « through the intermediary of the Kerre »), puis p. 168-169 ; l'auteur accompagnait l'expédition du comte Teleki, en 1888."
+              },
+              {
+                "title": "Exploration in the lower Omo valley of southwestern Ethiopia between 1890 and 1910",
+                "author": "David Turton",
+                "year": null,
+                "url": "https://www.mursi.org/pdf/exploration-in-the-lower-omo-valley.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Texte en ligne sur le site d'un projet consacré aux Mursi, version révisée d'un article paru d'abord en 1981 ; lu le 13 octobre 2026. Il rapproche « Kerre (Kara) » de von Höhnel (1938, p. 26) : nous n'avons pas lu cet article de 1938."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kere",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un grand village de l'Omo et de son petit royaume, écrit en 1898 par le chasseur Arthur Neumann.",
+        "periodLabel": "Écrit en 1898",
+        "usedIn": ["eng"],
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1898,
+              "to": 1898,
+              "label": "1898"
+            },
+            "era": "polity",
+            "statement": "Le nom Kere apparaît par écrit en 1898 dans le récit du chasseur Arthur Neumann. Il atteint, le 1er janvier 1896, un grand village palissadé au bord de l'Omo qu'il appelle Kere, et il décrit comme un petit royaume le district qui l'entoure, dirigé par un chef nommé Labugo. Selon David Turton, il campe alors chez les Kara. C'est la plus ancienne trace de ce nom sous cette graphie que le projet connaît ; le peuple existait déjà avant elle.",
+            "formAsWritten": "Kere",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Elephant-hunting in East Equatorial Africa : being an account of three years' ivory-hunting under Mount Kenia and among the Ndorobo savages of the Lorogi Mountains, including a trip to the north of Lake Rudolph",
+                "author": "Arthur H. Neumann",
+                "year": 1898,
+                "url": "https://archive.org/details/elephanthunting00neum",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 306-307",
+                "notes": "Londres, Rowland Ward, 1898 ; lu le 13 octobre 2026 dans la numérisation d'Internet Archive. L'arrivée à Kere est datée du 1er janvier 1896 (p. 306) ; le « kingdom » de Kere et le chef Labugo sont décrits p. 307."
+              },
+              {
+                "title": "Exploration in the lower Omo valley of southwestern Ethiopia between 1890 and 1910",
+                "author": "David Turton",
+                "year": null,
+                "url": "https://www.mursi.org/pdf/exploration-in-the-lower-omo-valley.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Texte en ligne sur le site d'un projet consacré aux Mursi, version révisée d'un article paru d'abord en 1981 ; lu le 13 octobre 2026. Il rapproche « Kerre (Kara) » de von Höhnel (1938, p. 26) : nous n'avons pas lu cet article de 1938."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Cherre",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que portent les habitants d'un village de l'Omo, écrit en italien en 1899 dans le récit de l'expédition Bottego.",
+        "periodLabel": "Écrit en 1899",
+        "usedIn": ["eng"],
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1899,
+              "to": 1899,
+              "label": "1899"
+            },
+            "era": "polity",
+            "statement": "Le nom Cherre apparaît par écrit en 1899 dans le récit de Lamberto Vannutelli et Carlo Citerni, qui accompagnaient l'expédition de Vittorio Bottego. Ils notent, le 26 et le 27 août 1896 selon David Turton, que les habitants d'un village de l'Omo sont dits Cherre, et que le grand village palissadé de la région, centre de ses échanges, a pris leur nom. Turton y reconnaît le principal village des Kara. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "formAsWritten": "Cherre",
+            "birth": true,
+            "sources": [
+              {
+                "title": "L'Omo : viaggio d'esplorazione nell'Africa orientale",
+                "author": "Lamberto Vannutelli et Carlo Citerni",
+                "year": 1899,
+                "url": "https://archive.org/details/lomoviaggiodespl00vann",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 328",
+                "notes": "Milan, Hoepli, 1899 ; lu le 13 octobre 2026 dans la numérisation d'Internet Archive, chapitre « Il basso Omo ». Le texte dit « Gli abitanti del villaggio diconsi Cherre » et « il principale dei Cherre ed ha nome da loro » ; l'année 1896 vient de Turton, non du texte lu. La page est celle de l'en-tête du chapitre (pp. 327 et 329 de part et d'autre)."
+              },
+              {
+                "title": "Exploration in the lower Omo valley of southwestern Ethiopia between 1890 and 1910",
+                "author": "David Turton",
+                "year": null,
+                "url": "https://www.mursi.org/pdf/exploration-in-the-lower-omo-valley.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Texte en ligne sur le site d'un projet consacré aux Mursi, version révisée d'un article paru d'abord en 1981 ; lu le 13 octobre 2026. Il rapproche « Kerre (Kara) » de von Höhnel (1938, p. 26) : nous n'avons pas lu cet article de 1938."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -101,5 +101,224 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Totela désigne un peuple bantou de la province de l'Ouest de la Zambie et de la bande de Caprivi, en Namibie, et sa langue. On ne sait pas comment ce peuple se nomme lui-même. Les formes Matotela et Batotela, avec un préfixe de pluriel, sont aussi écrites. On ne sait pas avec certitude d'où vient le nom ; nous présentons plus bas ses plus anciennes traces.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Totela",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom actuel du peuple et de sa langue ; sa première trace sans préfixe reste à trouver.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Totela désigne une langue bantoue de la province de l'Ouest de la Zambie et de la bande de Caprivi, au nord de la Namibie, selon la linguiste Thera Marie Crane. Elle la dit très menacée, avec moins de cinq mille locuteurs en Zambie, où le lozi est la langue principale des lieux où on la parle.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Completion and Dissociation in Totela Tense and Aspect",
+                "author": "Thera Marie Crane",
+                "year": 2012,
+                "url": "http://www.lingref.com/cpp/acal/42/paper2770.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 209",
+                "notes": "Actes de la 42e conférence annuelle de linguistique africaine (Somerville, Cascadilla Proceedings Project). Lu dans le PDF le 13 octobre 2026 ; le numéro de page imprimé a été lu sur le texte de la page."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1903,
+              "to": 1903,
+              "label": "Publié en 1903"
+            },
+            "era": "colonial",
+            "statement": "Le nom Totela est écrit ma-Totela pour les gens et bo-Totela pour leur pays chez le missionnaire Adolphe Jalla. Il range les ma-Totela dans le groupe des ma-Toka, à l'est des ma-Rotsé.",
+            "formAsWritten": "ma-Totela",
+            "actors": [
+              {
+                "name": "Adolphe Jalla",
+                "role": "missionnaire, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Pionniers parmi les ma-Rotsé",
+                "author": "Adolphe Jalla",
+                "year": 1903,
+                "url": "https://archive.org/details/pionniersparmile00jall",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 170, 197",
+                "notes": "Paris, 1903. L'auteur est un missionnaire de la Mission de Paris installé à Léalui. Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; le numéro de page imprimé a été lu sur l'image."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Matotela",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une forme avec préfixe de pluriel ; Coillard l'écrit ma-Totéla dès 1878, chez ses porteurs.",
+        "periodLabel": "Écrit dès 1878",
+        "accounts": [
+          {
+            "period": {
+              "from": 1898,
+              "to": 1898,
+              "label": "Publié en 1898, d'après un voyage de 1895-1896"
+            },
+            "era": "colonial",
+            "statement": "Le nom Matutela, une forme proche, désigne chez Alfred St Hill Gibbons un peuple de forgerons et de constructeurs de pirogues. Son pays s'étend, dit-il, jusqu'au Zambèze, au sud, et jusqu'au plateau des Matoka, à l'est.",
+            "formAsWritten": "Matutela",
+            "actors": [
+              {
+                "name": "Alfred St Hill Gibbons",
+                "role": "officier britannique, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Exploration and Hunting in Central Africa, 1895-96",
+                "author": "A. St. H. Gibbons",
+                "year": 1898,
+                "url": "https://archive.org/details/explorationandh00gibbgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 136",
+                "notes": "Londres, 1898. Récit d'un officier britannique, qui porte son regard d'étranger. Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; le numéro de page imprimé a été lu sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "Publié en 1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Matotela désigne chez Alfred St Hill Gibbons un peuple installé entre le pays des Matoka, à l'est, et celui des Barotse, à l'ouest. Il le range parmi les grands forgerons du pays.",
+            "formAsWritten": "Matotela",
+            "actors": [
+              {
+                "name": "Alfred St Hill Gibbons",
+                "role": "officier britannique, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Africa from South to North through Marotseland, vol. II",
+                "author": "A. St. H. Gibbons",
+                "year": 1904,
+                "url": "https://archive.org/details/africafromsoutht02gibb",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 50",
+                "notes": "Londres, 1904. Récit d'un officier britannique, qui porte son regard d'étranger. Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; le numéro de page imprimé a été lu sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1878,
+              "to": 1878,
+              "label": "Août 1878, publié en 1899"
+            },
+            "era": "polity",
+            "statement": "Le nom Matotela apparaît sous une forme proche, ma-Totéla, chez le missionnaire François Coillard. Dans une lettre de Séchéké datée du 30 août 1878, il compte des ma-Totéla parmi ses porteurs, venus de tribus soumises aux ba-Rotsi. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "ma-Totéla",
+            "birth": true,
+            "actors": [
+              {
+                "name": "François Coillard",
+                "role": "missionnaire, auteur de la lettre"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Sur le Haut-Zambèze : voyages et travaux de mission",
+                "author": "François Coillard",
+                "year": 1899,
+                "url": "https://archive.org/details/surlehautzambeze00coil",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 54",
+                "notes": "Lettres du missionnaire, ici celle de Séchéké datée du 30 août 1878, réunies en volume en 1899. Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; le numéro de page imprimé a été lu sur l'image."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Batotela",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre forme de pluriel, écrite en 1920 par Stirke ; les Barozi disent que ce peuple vivait là avant eux.",
+        "periodLabel": "Écrit en 1920",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Batotela désigne chez D. W. Stirke un peuple installé dans le pays avant l'arrivée des Barozi. Les Barozi disent qu'ils ont appris de lui à bâtir la case ronde.",
+            "formAsWritten": "Batotela",
+            "sources": [
+              {
+                "title": "Barotseland: Eight Years among the Barotse",
+                "author": "D. W. Stirke",
+                "year": 1920,
+                "url": "https://archive.org/details/barotselandeight00stir",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 133",
+                "notes": "Londres, 1920. L'auteur est un commissaire des affaires indigènes de la Rhodésie du Nord ; l'introduction est de Sir Harry Johnston. Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; le numéro de page imprimé a été lu sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Batotela figure chez D. W. Stirke dans la liste des peuples dont se composent les Barozi d'aujourd'hui, avec les Bakwangwa, les Bankoya et les Bambunda. C'est la plus ancienne trace de cette forme que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Batotela",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Barotseland: Eight Years among the Barotse",
+                "author": "D. W. Stirke",
+                "year": 1920,
+                "url": "https://archive.org/details/barotselandeight00stir",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 41",
+                "notes": "Londres, 1920. L'auteur est un commissaire des affaires indigènes de la Rhodésie du Nord ; l'introduction est de Sir Harry Johnston. Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; le numéro de page imprimé a été lu sur l'image."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

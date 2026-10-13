@@ -110,5 +110,180 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Aïzi désigne un peuple lagunaire du sud de la Côte d'Ivoire, installé autour de la lagune Ébrié, à l'ouest d'Abidjan. Selon Éric Pete, il se nomme lui-même Proukpô, « pêcheurs ». On écrit aussi son nom Ahizi, et la tradition éotilé appelle ses ancêtres Pèpèhili. Les sources que nous avons lues n'expliquent pas l'origine du nom Aïzi ; nous présentons plus bas ses traces, dont la plus ancienne date de 1902. Il reste à vérifier auprès de ce peuple comment il se nomme lui-même.",
+    "names": [
+      {
+        "nameText": "Proukpô",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom que les Aïzi se donneraient, qui voudrait dire « pêcheurs ».",
+        "usedIn": ["fra"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Proukpô, que l'on dit aussi Froukpô ou Ôprô selon les prononciations, est celui que les Aïzi se donnent eux-mêmes, selon Éric Pete. Il voudrait dire « pêcheurs ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Aïzi et Éotilé : deux peuples lagunaires aux liens historiques anciens",
+                "author": "Éric Pete",
+                "year": 2025,
+                "url": "https://www.revue-akofena.com/wp-content/uploads/2025/01/07-ActColl-Eric-PETE_077-088.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 83",
+                "notes": "Akofena, hors-série no 10 (actes du 2e colloque sur les Bétibé), janvier 2025, p. 77-88. Lu le 13 octobre 2026. Page 83 : « Les Aïzi s'appellent eux-mêmes Proukpô, Froukpô ou Ôprô selon différentes prononciations ; ce qui signifie pêcheurs »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Aïzi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom courant de ce peuple lagunaire, écrit Aizi dès 1902 ; on écrit aussi Ahizi.",
+        "usedIn": ["fra"],
+        "periodLabel": "Écrit dès 1902 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Aïzi désigne un peuple lagunaire du sud de la Côte d'Ivoire, dont les treize villages bordent la lagune Ébrié, selon Éric Pete. Les sources que nous avons lues n'expliquent pas l'origine de ce nom ni ne disent qui l'a donné.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Aïzi et Éotilé : deux peuples lagunaires aux liens historiques anciens",
+                "author": "Éric Pete",
+                "year": 2025,
+                "url": "https://www.revue-akofena.com/wp-content/uploads/2025/01/07-ActColl-Eric-PETE_077-088.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "pp. 78 et 81",
+                "notes": "Akofena, hors-série no 10 (actes du 2e colloque sur les Bétibé), janvier 2025, p. 77-88. Lu le 13 octobre 2026. Page 78 : « tous les treize villages aïzi » ; page 81 : l'auteur cite « le pays ahizi » dans une citation de Latte-Egue (2008)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom Aïzi apparaît sous la forme Aizi chez François-Joseph Clozel et Roger Villamur, qui décrivent le groupe aizi, originaire du pays de Lauzoua, à l'ouest de Grand-Lahou. Il compte une quinzaine de villages sur les bords de la lagune, entre Kraffy et Dabou, et deux familles, les Lélé et les Aizi-Yobo. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Aizi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les coutumes indigènes de la Côte d'Ivoire",
+                "author": "François-Joseph Clozel et Roger Villamur",
+                "year": 1902,
+                "url": "https://archive.org/details/lescoutumesindig00cloz",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 54",
+                "notes": "Paris, A. Challamel, 1902. Lu sur sa numérisation d'Internet Archive. Page 54 : « Le groupe Aizi est originaire du pays de Lauzoua à l'ouest de Grand-Lahou ». Page lue sur l'image de la page."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ahizi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre façon d'écrire Aïzi, employée dès 1904.",
+        "usedIn": ["fra"],
+        "periodLabel": "Écrit dès 1904",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ahizi est une autre façon d'écrire Aïzi : Maurice Delafosse écrit « les Ahizi ou Aïzi » d'après l'administrateur Lamblin, qui y voit une tribu à la langue particulière, venue de la région de Lozoua. Delafosse n'a pu obtenir aucun vocabulaire de leur langue.",
+            "formAsWritten": "Ahizi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 14",
+                "notes": "Paris, Ernest Leroux, 1904. Lu sur sa numérisation par la bibliothèque de l'université de Toronto. Page 14 : « Les Ahizi ou Aïzi forment, d'après mon collègue et ami M. l'administrateur Lamblin, une tribu de langue spéciale ». Page lue sur l'image de la page."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Pèpèhili",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Éotilé, selon leur tradition orale",
+        "shortLine": "Le nom que la tradition éotilé donne aux ancêtres des Aïzi, venus par leur pays.",
+        "usedIn": ["fra"],
+        "periodLabel": "Cité dans une tradition orale du XIVe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Pèpèhili, que l'on écrit aussi Pèpèyili ou Pèpèhiri, est celui d'un peuple de passage dans la tradition orale éotilé, qui a vécu avec les Éotilé avant de poursuivre sa route, selon Éric Pete. Blath Esther Azagni et lui y reconnaissent les premiers Aïzi, passés par le pays éotilé au XIVe siècle. Nous n'avons pas trouvé de trace écrite plus ancienne que ces travaux.",
+            "sources": [
+              {
+                "title": "Aïzi et Éotilé : deux peuples lagunaires aux liens historiques anciens",
+                "author": "Éric Pete",
+                "year": 2025,
+                "url": "https://www.revue-akofena.com/wp-content/uploads/2025/01/07-ActColl-Eric-PETE_077-088.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 85",
+                "notes": "Akofena, hors-série no 10 (actes du 2e colloque sur les Bétibé), janvier 2025, p. 77-88. Lu le 13 octobre 2026. Page 85 : tradition éotilé recueillie par Henriette Diabaté, citée par Pete : « Pèpèyili est un mgbayiè éotilé. C'est un peuple qui, à son arrivée, a vécu avec nous avant de continuer » ; la date du XIVe siècle est celle que l'auteur donne."
+              },
+              {
+                "title": "Les Bétibé (Éotilé) et la formation des villages aïzi de langue lelou (XIIIe - début XXe siècles)",
+                "author": "Blath Esther Azagni",
+                "year": 2021,
+                "url": "https://www.ziglobitha.org/wp-content/uploads/2021/11/03-Blath-Esther-AZAGNI-pp31-52.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 37",
+                "notes": "Ziglôbitha, 2021, p. 31-52. Lu le 13 octobre 2026. Page 37 : « les anciens aïzi étaient des Pèpèhiri Mekyibo » ; l'auteur s'appuie sur ses propres travaux de 2007, que nous n'avons pas ouverts."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

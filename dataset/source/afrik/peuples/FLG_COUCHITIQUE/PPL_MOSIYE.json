@@ -118,5 +118,153 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Mosiya désigne un peuple du nord de la zone Omo, au sud de l'Éthiopie, qui se nomme lui-même ainsi ; Mosiye est le nom de son pays, et Mositacha celui de sa langue. Ses voisins l'appellent Bussa. On ne connaît pas la plus ancienne trace de ces noms, et les sources que nous avons lues n'expliquent pas leur origine. Nous présentons plus bas ce qu'elles disent.",
+    "names": [
+      {
+        "nameText": "Mosiya",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "dox",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; Mosiye est le nom de son pays, Mositacha celui de sa langue.",
+        "periodLabel": "Écrit en 2016",
+        "accounts": [
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Mosiya est celui que le peuple se donne, selon la linguiste Erika Harlow. Mosiye est le nom de son pays et Mositacha celui de sa langue ; l'autrice emploie Mosiye pour désigner le peuple.",
+            "aspect": "usage",
+            "formAsWritten": "Mosiya",
+            "sources": [
+              {
+                "title": "Phonology of Mosiye",
+                "author": "Erika Harlow",
+                "year": 2016,
+                "url": "https://twu.arcabc.ca/_flysystem/repo-bin/2017-07/twu_319.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11",
+                "notes": "Mémoire de master, Trinity Western University, décembre 2016 ; lu dans le PDF déposé sur Arca le 13 octobre 2026. Section 1.1 : « Mosiya is the name the people call themselves; Mosiye is the name of their land; and Mositacha is the name of their language ». Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant le nom, selon des anciens mosiye"
+            },
+            "statement": "Les ancêtres des Mosiye seraient venus du pays borana, au sud, jusqu'à la montagne Puso, aussi appelée mont Gardula, où ils se seraient mêlés aux habitants dullay, selon les anciens mosiye que cite Erika Harlow. Les sources que nous avons lues ne disent pas sous quel nom ils se désignaient alors.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Phonology of Mosiye",
+                "author": "Erika Harlow",
+                "year": 2016,
+                "url": "https://twu.arcabc.ca/_flysystem/repo-bin/2017-07/twu_319.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 19",
+                "notes": "Mémoire de master, Trinity Western University, décembre 2016 ; lu dans le PDF déposé sur Arca le 13 octobre 2026. Section 1.2.2 : l'autrice rapporte ce que « Mosiye elders » lui ont dit ; elle ne les nomme pas et ne donne pas la date de cet épisode. Page lue sur l'image."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mosiye",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "dox",
+        "namedBy": null,
+        "shortLine": "Le nom du pays de ce peuple, sur le flanc est de la montagne Puso, que l'on emploie aussi pour le peuple.",
+        "periodLabel": "Écrit en 2016",
+        "accounts": [
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Mosiye désigne, chez Erika Harlow, le pays des Mosiya, sur le flanc est de la montagne Puso, au nord-ouest de la ville de Gidole. Elle s'en sert aussi pour parler du peuple. Les Mosiye seraient environ 19 000 d'après le recensement éthiopien de 2007.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Phonology of Mosiye",
+                "author": "Erika Harlow",
+                "year": 2016,
+                "url": "https://twu.arcabc.ca/_flysystem/repo-bin/2017-07/twu_319.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11",
+                "notes": "Mémoire de master, Trinity Western University, décembre 2016 ; lu dans le PDF déposé sur Arca le 13 octobre 2026. Section 1.1 : l'autrice cite le recensement de 2007 et Lewis, Simons et Fennig (2013), qu'elle ne détaille pas ici. Page lue sur l'image."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bussa",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "les voisins des Mosiye",
+        "shortLine": "Le nom que les voisins donnent aux Mosiye ; il n'est pas jugé insultant.",
+        "periodLabel": "En usage en 2016",
+        "accounts": [
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Bussa est celui sous lequel les voisins connaissent souvent les Mosiye, selon Erika Harlow. Ce n'est pas le nom que les Mosiye se donnent, mais il n'est pas jugé insultant.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Phonology of Mosiye",
+                "author": "Erika Harlow",
+                "year": 2016,
+                "url": "https://twu.arcabc.ca/_flysystem/repo-bin/2017-07/twu_319.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11",
+                "notes": "Mémoire de master, Trinity Western University, décembre 2016 ; lu dans le PDF déposé sur Arca le 13 octobre 2026. Section 1.1 : « To their neighbors, they are often known as the Bussa ». Page lue sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Bussa figure avec d'autres noms que l'Ethnologue donne à la langue mositacha, et ces noms sont aussi ceux de langues dullay, remarque Erika Harlow. Elle y voit peut-être la trace du mélange ancien des ancêtres des Mosiye avec des habitants dullay.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Phonology of Mosiye",
+                "author": "Erika Harlow",
+                "year": 2016,
+                "url": "https://twu.arcabc.ca/_flysystem/repo-bin/2017-07/twu_319.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 19",
+                "notes": "Mémoire de master, Trinity Western University, décembre 2016 ; lu dans le PDF déposé sur Arca le 13 octobre 2026. Section 1.2.2 : « alternate names given for Mositacha in the Ethnologue are also names of Dullay languages ». Elle ne les nomme pas ; le projet n'a pas lu cette entrée de l'Ethnologue. Page lue sur l'image."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
