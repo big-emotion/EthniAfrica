@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
 import { fireEvent, render, screen, within } from "@testing-library/react";
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 
 import type { SearchCompanionsData } from "@/api/v2/schemas/searchCompanions";
 import { SearchFeed } from "@/components/search/SearchFeed";
@@ -134,6 +134,24 @@ describe("the answer page", () => {
       name: searchFeedCopy.fr.blocks.ficheLink(peul.title),
     });
     expect(link).toHaveAttribute("href", expect.stringContaining("PPL_FULA"));
+  });
+
+  // A reader served by the answer and one who picked a row of the list are
+  // two behaviours; one surface name would fold them together.
+  // @req REQ-046
+  it("reports the way to the fiche under the answer's own surface", () => {
+    const onResultNavigate = vi.fn();
+    renderAnswer("peul", [subjectOf(peul, { id: "PPL_FULA" })], {
+      onResultNavigate,
+    });
+
+    fireEvent.click(
+      screen.getByRole("link", {
+        name: searchFeedCopy.fr.blocks.ficheLink(peul.title),
+      })
+    );
+
+    expect(onResultNavigate).toHaveBeenCalledWith("people", 1, "answer");
   });
 
   // @req REQ-178

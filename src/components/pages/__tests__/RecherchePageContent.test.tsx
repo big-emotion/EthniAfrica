@@ -1790,6 +1790,33 @@ describe("what the SERP reports about a search", () => {
     });
   });
 
+  // Since v5.0.0 the timeline is the page most searches open on, and its
+  // clicks were not counted at all (audit 2026-10-13).
+  // @req REQ-046
+  it("reports a fiche opened from the timeline under the timeline surface", async () => {
+    mockFetch.mockResolvedValue(okJson(searchApiResponse));
+    mockFicheFetch.mockResolvedValueOnce(
+      new Response(JSON.stringify({ data: { nameHistory: PEUL_HISTORY } }), {
+        status: 200,
+      })
+    );
+
+    await submit("Zulu");
+    await waitFor(() =>
+      expect(document.querySelector("[data-name-timeline]")).not.toBeNull()
+    );
+    fireEvent.click(
+      screen.getByRole("link", { name: /Voir la fiche complète/ })
+    );
+
+    expect(resultClicks()).toHaveLength(1);
+    expect(resultClicks()[0][1].props).toEqual({
+      surface: "timeline",
+      type: "people",
+      rank: 1,
+    });
+  });
+
   // A search that ran and a search that led somewhere were the same event.
   // @req REQ-046
   it("reports which rank of result tile the reader opened", async () => {

@@ -34,7 +34,8 @@ const lingala: SearchResult = {
 };
 
 function renderFeed(
-  nameHistories = [{ subject: lingala, nameHistory: LINGALA_HISTORY }]
+  nameHistories = [{ subject: lingala, nameHistory: LINGALA_HISTORY }],
+  onResultNavigate?: (type: string, rank: number, surface?: string) => void
 ) {
   return render(
     <SearchFeed
@@ -46,6 +47,7 @@ function renderFeed(
       leads={[]}
       companions={companions}
       nameHistories={nameHistories}
+      onResultNavigate={onResultNavigate}
     />
   );
 }
@@ -86,6 +88,33 @@ describe("SearchFeed — the name-history timeline lens", () => {
     expect(
       screen.queryByRole("list", { name: /Histoire du nom/ })
     ).not.toBeInTheDocument();
+  });
+
+  // Measured 2026-10-13 at 430 px: the timeline pages of « Mandé »,
+  // « Traoré » and « Côte d'Ivoire » held no link at all, so a reader served
+  // by the history had nowhere to go but back. The way on is the fiche.
+  // @req REQ-198
+  it("ends on the way to the subject's fiche", () => {
+    renderFeed();
+
+    const link = screen.getByRole("link", {
+      name: "Voir la fiche complète · Lingala",
+    });
+    expect(link).toHaveAttribute("href", "/fr/atlas/langues/lin");
+  });
+
+  // The result page's 34% bounce cannot be split between « served in place »
+  // and « left » while the timeline's clicks are filed under the list's.
+  // @req REQ-046
+  it("reports a click from the timeline under its own surface", () => {
+    const onResultNavigate = vi.fn();
+    renderFeed(undefined, onResultNavigate);
+
+    fireEvent.click(
+      screen.getByRole("link", { name: "Voir la fiche complète · Lingala" })
+    );
+
+    expect(onResultNavigate).toHaveBeenCalledWith("language", 1, "timeline");
   });
 
   // « Yoruba » names a people, whose name history is written, and a language,
