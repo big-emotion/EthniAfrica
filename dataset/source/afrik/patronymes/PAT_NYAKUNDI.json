@@ -82,5 +82,62 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Nyakundi », « Kisii », « Gusii », « Kenya », « surname », « onomastics », « etymology », « clan », « transmission », « alliance », « caste », « homonym » et « obituary », les dépôts universitaires kenyans, ainsi que la page Forebears dédiée n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Nyakundi est, chez les Gusii du Kenya, le nom d'un ancêtre que T. Olawale Elias présente en 1956 comme le fondateur des Getutu, l'une des sept divisions gusii. On ne sait pas avec certitude ce qu'il veut dire ; les sources lues ne lui donnent pas de sens, et aucune ne dit comment il est devenu un nom de famille.",
+    "names": [
+      {
+        "nameText": "Nyakundi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "guz",
+        "namedBy": null,
+        "shortLine": "Un nom d'ancêtre gusii, fondateur des Getutu ; son sens reste inconnu.",
+        "periodLabel": "Écrit dès 1956",
+        "accounts": [
+          {
+            "period": {
+              "from": 1956,
+              "to": 1956,
+              "label": "1956"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nyakundi apparaît par écrit dans un livre de T. Olawale Elias, qui appelle « le grand Nyakundi » le fondateur des Getutu, l'une des sept divisions gusii. Il nomme aussi Ogeto, petit-fils de Nyakundi, qui fait baisser le prix de la dot vers 1903, et Ichwara, son arrière-petit-fils, qui fait de même en 1930. Elias s'appuie sur une étude de Philip Mayer de 1951. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand Elias l'a écrit, pas depuis quand le nom existe.",
+            "formAsWritten": "Nyakundi",
+            "birth": true,
+            "actors": [
+              {
+                "name": "T. Olawale Elias",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Philip Mayer",
+                "role": "source d'Elias, selon lui"
+              },
+              {
+                "name": "Ogeto",
+                "role": "petit-fils de Nyakundi, selon Elias"
+              },
+              {
+                "name": "Ichwara",
+                "role": "arrière-petit-fils de Nyakundi, selon Elias"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Nature of African Customary Law",
+                "author": "T. Olawale Elias",
+                "year": 1956,
+                "url": "https://archive.org/details/t-olawale-elias-the-nature-of-african-customary-law-1956",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 204",
+                "notes": "Manchester University Press, 1956. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 13 octobre 2026. Page 204 : l'auteur résume Philip Mayer, « Two Studies in Applied Anthropology in Kenya » (1951, Colonial Research Studies, n° 3) et cite « Ogeto, a grandson of the great Nyakundi (founder of the Getutu tribe) » et « Ichwara, a great grandson of Nyakundi »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
