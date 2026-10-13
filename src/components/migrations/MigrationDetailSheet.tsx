@@ -98,7 +98,7 @@ export function MigrationDetailSheet({
 
   const [sourceSheetOpen, setSourceSheetOpen] = React.useState(false);
   React.useEffect(() => {
-    if (!open) setSourceSheetOpen(false);
+    if (!open) queueMicrotask(() => setSourceSheetOpen(false));
   }, [open]);
 
   const touchStartY = React.useRef<number | null>(null);

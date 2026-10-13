@@ -86,7 +86,8 @@ export function PinnedVersionBanner({
   const [collapsed, setCollapsed] = useState(false);
 
   useEffect(() => {
-    setCollapsed(readCollapsed(liveUrl));
+    const timer = setTimeout(() => setCollapsed(readCollapsed(liveUrl)), 0);
+    return () => clearTimeout(timer);
   }, [liveUrl]);
 
   const toggleCollapsed = () => {

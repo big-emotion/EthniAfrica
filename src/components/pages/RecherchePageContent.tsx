@@ -344,15 +344,22 @@ export function RecherchePageContent() {
   // is what keeps a `?q=` arrival to exactly one fetch.
   const isFirstRelationRun = useRef(true);
   useEffect(() => {
-    if (!committedQuery && !relation) {
+    let cancelled = false;
+    queueMicrotask(() => {
+      if (cancelled) return;
+      if (!committedQuery && !relation) {
+        isFirstRelationRun.current = false;
+        return;
+      }
+      performSearch(committedQuery, relation);
+      if (!isFirstRelationRun.current) {
+        syncURL(committedQuery, relation);
+      }
       isFirstRelationRun.current = false;
-      return;
-    }
-    performSearch(committedQuery, relation);
-    if (!isFirstRelationRun.current) {
-      syncURL(committedQuery, relation);
-    }
-    isFirstRelationRun.current = false;
+    });
+    return () => {
+      cancelled = true;
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [language, relation]);
 

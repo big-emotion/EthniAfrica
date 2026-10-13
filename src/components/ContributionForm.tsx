@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, type ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import type { Proof as AntibotProof } from "@/lib/antibot/proofOfWork";
 import { ProofOfWorkGate } from "@/components/flags/ProofOfWorkGate";
 import { Button } from "@/components/ui/button";
@@ -58,7 +58,7 @@ export function ContributionForm({
   const [honeypot, setHoneypot] = useState<string>("");
   const [proof, setProof] = useState<AntibotProof | null>(null);
   const [verificationError, setVerificationError] = useState<string>("");
-  const openedAt = useRef(Date.now());
+  const [openedAt] = useState(() => Date.now());
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -150,7 +150,7 @@ export function ContributionForm({
           },
           antibot: proof,
           website: honeypot,
-          elapsedMs: Date.now() - openedAt.current,
+          elapsedMs: Date.now() - openedAt,
         }),
       });
 
