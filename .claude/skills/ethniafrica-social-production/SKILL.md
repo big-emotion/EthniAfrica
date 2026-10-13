@@ -39,6 +39,10 @@ writing can proceed within the approved brief; visual proof requires the
 operator-supplied design system and verified rendering. Posting and deployment
 are never implicit.
 
+A piece belonging to a social series follows
+`docs/editorial/strategy/social-series.md`: its fixed beats, its series band on
+the accepted card system, its closing sentence and its campaign code.
+
 ## Start or resume
 
 Read `docs/editorial/doctrine.md`, `docs/editorial/reader-facing-register.md` and

@@ -69,6 +69,12 @@ rather than pointing at folders:
 **Read all three before answering anything.** They are the difference between a
 plan and a guess.
 
+**The series frame is `docs/editorial/strategy/social-series.md`** (operator,
+2026-10-13): seven series, their slots, fixed questions, episode beats, formats,
+channels and campaign codes. Every proposed piece names its series and episode,
+and an answer to « quoi publier » starts from that table. Change the frame only
+with the operator's word and record the change in that file.
+
 ## The rule that makes this skill worth invoking
 
 **Never propose a topic without stating how the comparable published content

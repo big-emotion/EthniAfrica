@@ -91,6 +91,11 @@ platform has none. LinkedIn and X also carry a text-with-link form.
 `scripts/lib/socialFormatMatrix.ts` holds the table itself, used by the gate;
 this paragraph is not a second copy to keep in sync.
 
+**Operator decision, 2026-10-13:** the social series
+(`docs/editorial/strategy/social-series.md`) no longer go to LinkedIn, paused
+for them, nor to X, stopped. The format matrix still allows those rows; a
+LinkedIn row is filed only for a piece actually posted there.
+
 ## Typologies are not corpus kinds
 
 A `langue`, `peuple`, `pays` or `patronyme` subject's `subjects[]` entry uses
