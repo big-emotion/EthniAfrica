@@ -133,16 +133,17 @@ export function SourceReviewChip({
     lastHumanAuditAt !== undefined &&
     lastHumanAuditAt !== "";
 
-  const [shouldPulse, setShouldPulse] = React.useState(false);
+  const buttonRef = React.useRef<HTMLButtonElement>(null);
 
   React.useEffect(() => {
+    buttonRef.current?.classList.remove("afh-chip-pulse");
     if (!hasAllData) return;
     if (typeof window === "undefined") return;
     ensureKeyframesInjected();
     const pulseKey = id ?? "__default__";
     const seen = readPulsedIds();
     if (!seen.has(pulseKey)) {
-      setShouldPulse(true);
+      buttonRef.current?.classList.add("afh-chip-pulse");
       seen.add(pulseKey);
       writePulsedIds(seen);
     }
@@ -199,6 +200,7 @@ export function SourceReviewChip({
   return (
     <span className="afh-chip-wrapper inline-flex items-center align-baseline">
       <button
+        ref={buttonRef}
         type="button"
         aria-label={ariaLabel}
         onClick={() => {
@@ -211,8 +213,7 @@ export function SourceReviewChip({
           "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2",
           "focus-visible:ring-[color:var(--afh-focus,var(--country-text,#2C2018))]",
           pillBgClasses,
-          variantClasses[variant],
-          shouldPulse && "afh-chip-pulse"
+          variantClasses[variant]
         )}
         data-variant={variant}
       >

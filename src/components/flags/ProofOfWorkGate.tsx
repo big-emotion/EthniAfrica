@@ -46,7 +46,9 @@ export function ProofOfWorkGate({
   // every render cannot restart the search — a solve is expensive, and running
   // it twice would double what the reader's device pays.
   const handlers = useRef({ onSolved, onFailed });
-  handlers.current = { onSolved, onFailed };
+  useEffect(() => {
+    handlers.current = { onSolved, onFailed };
+  }, [onSolved, onFailed]);
 
   useEffect(() => {
     let abandoned = false;
