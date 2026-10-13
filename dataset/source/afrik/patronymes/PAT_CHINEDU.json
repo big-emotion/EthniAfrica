@@ -109,5 +109,125 @@
       "fieldPath": "nameSystem",
       "reason": "Aucune source consultée ne fait de Chinedu un nom de clan : les sources y voient un nom personnel qui veut dire « Dieu guide ». Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet jamais."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Chinedu est un nom de personne igbo, au Nigeria, porté aussi comme nom de famille. Il contient chi, un mot qui renvoie à un être supérieur, et les sources le traduisent « Dieu guide ». On ne sait pas avec certitude depuis quand il est porté ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Chinedu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ibo",
+        "namedBy": null,
+        "shortLine": "Un nom igbo qui se traduit « Dieu guide », porté aussi comme nom de famille.",
+        "periodLabel": "Usage contemporain",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Chinedu est un nom de personne igbo que l'on traduit « Dieu guide ». Le mot chi, dans un nom, renvoie à un être supérieur, selon Oluchukwu et Nzuanke.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Sociolinguistics of Igbo Personal Names",
+                "author": "Linda Chinelo Nkamigbo",
+                "year": 2019,
+                "url": "https://www.nigerianjournalsonline.org/index.php/JOLLC/article/download/4155/3899/7523",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 173-174",
+                "notes": "Journal of Linguistics, Language and Culture, vol. 6, no 1, 2019, p. 158-178. Lu dans le PDF intégral le 13 octobre 2026. Section « Chi names » : avec le christianisme, les Igbo ont changé le « Chi », notion clé de leur philosophie, pour dire leur croyance en Dieu, d'où de nombreux noms en chi ; la liste donne « Chinedu, God leads »."
+              },
+              {
+                "title": "Meaning, origin and history of the name Chinedu — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/chinedu",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site collaboratif de prénoms, lu le 13 octobre 2026. La notice donne « God is leading » en igbo, avec les racines chi et dú. Contenu communautaire, sans source citée."
+              },
+              {
+                "title": "Onomastics and Translation: The Case of Igbo→English Translation of Chi Names",
+                "author": "Oluchukwu Asadu et Samson Fabian Nzuanke",
+                "year": 2014,
+                "url": "https://www.ajol.info/index.php/lwati/article/view/119750",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lwati: A Journal of Contemporary Research, vol. 11, no 3, 2014, p. 122-140 ; résumé lu sur la page de la revue le 13 octobre 2026. Les éléments chi et chukwu des noms igbo y renvoient à un être supérieur, le plus haut des dieux que reconnaissent les Igbo. L'étude porte sur les noms de trente étudiants de l'université Nnamdi Azikiwe, à Awka ; elle ne traite pas des noms de famille."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Décrit en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Chinedu sert de nom de famille chez les Igbo : Linda Chinelo Nkamigbo cite deux frères, l'un qui porte Chinedu comme nom de famille, l'autre Chukwuemeka, ce qui ne se faisait pas autrefois.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Sociolinguistics of Igbo Personal Names",
+                "author": "Linda Chinelo Nkamigbo",
+                "year": 2019,
+                "url": "https://www.nigerianjournalsonline.org/index.php/JOLLC/article/download/4155/3899/7523",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 171",
+                "notes": "Journal of Linguistics, Language and Culture, vol. 6, no 1, 2019, p. 158-178. Lu dans le PDF intégral le 13 octobre 2026. Section « Change of family names » : l'autrice note qu'aujourd'hui deux frères portent des noms de famille différents : « brother A bears Chinedu as surname and brother B answers Chukwuemeka as surname ». Elle y voit un changement d'usage : autrefois, ceux qui portaient le même nom de famille étaient censés être parents."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Décrit en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Chinedu fait partie des noms en chi que les Igbo ont multipliés avec le christianisme pour dire leur foi en Dieu, selon Linda Chinelo Nkamigbo, qui le traduit « Dieu guide ».",
+            "hypothesisGroup": "origine du nom Chinedu",
+            "sources": [
+              {
+                "title": "The Sociolinguistics of Igbo Personal Names",
+                "author": "Linda Chinelo Nkamigbo",
+                "year": 2019,
+                "url": "https://www.nigerianjournalsonline.org/index.php/JOLLC/article/download/4155/3899/7523",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 173-174",
+                "notes": "Journal of Linguistics, Language and Culture, vol. 6, no 1, 2019, p. 158-178. Lu dans le PDF intégral le 13 octobre 2026. Section « Chi names » : avec le christianisme, les Igbo ont changé le « Chi », notion clé de leur philosophie, pour dire leur croyance en Dieu, d'où de nombreux noms en chi ; la liste donne « Chinedu, God leads »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Chinedu viendrait de chi, « Dieu », et de dú, « guider » : « Dieu est en train de guider », selon Behind the Name.",
+            "hypothesisGroup": "origine du nom Chinedu",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Chinedu — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/chinedu",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site collaboratif de prénoms, lu le 13 octobre 2026. La notice donne « God is leading » en igbo, avec les racines chi et dú. Contenu communautaire, sans source citée."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

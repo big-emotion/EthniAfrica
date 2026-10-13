@@ -113,5 +113,156 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches « Babatunde homonym etymology » et « Babatunde surname origin other language » n'ont pas établi une graphie identique d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Babatunde est un nom de personne yoruba, au Nigeria, que l'on donne à un garçon né peu après la mort de son grand-père : les Yoruba y voient le retour du père de la famille. Les sources le lisent « le père est revenu ». Elles ne disent pas comment il passe d'une génération à l'autre comme nom de famille.",
+    "names": [
+      {
+        "nameText": "Babatunde",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "yor",
+        "namedBy": null,
+        "shortLine": "Un nom yoruba donné à un garçon né après la mort de son grand-père ; écrit dès 1910.",
+        "periodLabel": "Écrit dès 1910 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Babatunde est donné à un garçon né après la mort de son grand-père, selon la liste d'E. B. Ogundimu. On l'abrège en Tunde. YorubaNames dit qu'on le donne à un enfant né après la mort d'un père ou d'un grand-père, et que le nom marque ce retour.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Lessons from Africa: A Supplement to Middle School Courses in World Cultures, Global Studies, and World Geography",
+                "author": "Merry M. Merryfield (dir.)",
+                "year": 1989,
+                "url": "https://files.eric.ed.gov/fulltext/ED304395.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 47",
+                "notes": "ERIC Clearinghouse et Social Studies Development Center, Indiana University, 1989, leçon 5. Lu dans le PDF intégral le 13 octobre 2026. Le tableau « Some Yoruba Names and Their Meanings », attribué à E. B. Ogundimu, donne : « Babatunde, Tunde, Born after death of grandfather » (le texte imprimé porte « Rpm »)."
+              },
+              {
+                "title": "Babátúndé — YorubaNames",
+                "author": "YorubaNames",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/Babatunde",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Base collaborative de noms yoruba, lue le 13 octobre 2026. Elle donne la forme tonale Babátúndé, le sens « Father has returned », la précision que le nom est donné à un enfant né après la mort d'un père ou d'un grand-père, la décomposition baba-tún-dé et la variante Túndé. Contenu communautaire, sans date de rédaction."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Publié en 1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Babatunde voudrait dire « le père revient » : les Yoruba croient, selon Samuel Johnson, que des parents défunts naissent de nouveau dans la famille de leurs enfants, et l'on donne ce nom à un garçon né peu après la mort de son grand-père.",
+            "hypothesisGroup": "sens du nom Babatunde",
+            "sources": [
+              {
+                "title": "The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate",
+                "author": "Samuel Johnson",
+                "year": 1921,
+                "url": "https://archive.org/details/the-history-of-the-yorubas-from-the-earliest-times-to-the-beginning-of-the-british-protectorate",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 26 et p. 81",
+                "notes": "Londres, Routledge, 1921, édité par Obadiah Johnson d'après le manuscrit de son frère Samuel Johnson, pasteur yoruba de la Church Missionary Society. Pages lues le 13 octobre 2026 dans un autre exemplaire numérisé de la même édition de 1921 sur archive.org (historyofyorubas00john). Page 26 : les Yoruba croient que les parents défunts naissent de nouveau dans la famille de leurs enfants, d'où les noms « Babatunde, i.e., father comes again » et « Yetunde ». Page 81, chapitre « Yoruba Names » : « Babatunde means ‘father comes again,’ a name given to a male child born soon after the death of its grandfather ». Page 81 vue en image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Babatunde serait formé de baba, « père », de tún, « de nouveau », et de dé, « arriver, revenir » : « le père est revenu », selon la base collaborative YorubaNames, et selon Behind the Name qui donne les mêmes éléments.",
+            "hypothesisGroup": "sens du nom Babatunde",
+            "sources": [
+              {
+                "title": "Babátúndé — YorubaNames",
+                "author": "YorubaNames",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/Babatunde",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Base collaborative de noms yoruba, lue le 13 octobre 2026. Elle donne la forme tonale Babátúndé, le sens « Father has returned », la précision que le nom est donné à un enfant né après la mort d'un père ou d'un grand-père, la décomposition baba-tún-dé et la variante Túndé. Contenu communautaire, sans date de rédaction."
+              },
+              {
+                "title": "Meaning, origin and history of the name Babatunde — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/babatunde",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site collaboratif de prénoms, lu le 13 octobre 2026. La notice donne « father has come again » en yoruba, avec les racines baba, tún et dé, et le diminutif Tunde. Contenu communautaire, sans source citée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "Publié en 1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Babatunde apparaît par écrit dans un tableau du livre de R. E. Dennett, publié en 1910 : Babatunde, de la ville d'Abeokuta, figure parmi les personnes qui servent l'orisha Oshun, avec les offrandes qu'elles font. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "Babatunde",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Nigerian Studies; or, The Religious and Political System of the Yoruba",
+                "author": "R. E. Dennett",
+                "year": 1910,
+                "url": "https://archive.org/details/nigerianstudieso00denn",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 187",
+                "notes": "Londres, Macmillan, 1910 ; exemplaire numérisé sur archive.org. Page 187, tableau du chapitre XVI (« Shango, Oya, Oba, Oshun »), aux colonnes « Name », « Town », « Sacrifice », « Ewos or Ewaws » : sous le titre « Oshun », la ligne « Babatunde », ville « Abeokuta », offrandes « Goat, fowls, beans, youri (veg.) ». Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Babatundé",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "yor",
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Babatundé est une écriture du même nom avec un accent. YorubaNames l'écrit avec tous ses tons : Babátúndé.",
+            "sources": [
+              {
+                "title": "Babátúndé — YorubaNames",
+                "author": "YorubaNames",
+                "year": null,
+                "url": "https://www.yorubaname.com/entries/Babatunde",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Base collaborative de noms yoruba, lue le 13 octobre 2026. Elle donne la forme tonale Babátúndé, le sens « Father has returned », la précision que le nom est donné à un enfant né après la mort d'un père ou d'un grand-père, la décomposition baba-tún-dé et la variante Túndé. Contenu communautaire, sans date de rédaction."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

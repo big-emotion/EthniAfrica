@@ -126,5 +126,116 @@
       "fieldPath": "nameSystem",
       "reason": "Aucune source consultée ne fait de Chukwu un nom de clan : les sources y voient un nom personnel qui porte le nom de Dieu. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet jamais."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Chukwu est le nom que les Igbo, au Nigeria, donnent à l'être suprême, et il entre dans beaucoup de noms de personnes igbo. Les sources le lisent « le grand dieu ». Elles ne disent pas depuis quand il est porté comme nom de personne, ni comment il passe d'une génération à l'autre comme nom de famille.",
+    "names": [
+      {
+        "nameText": "Chukwu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ibo",
+        "namedBy": null,
+        "shortLine": "Le nom que les Igbo donnent à l'être suprême ; une forme proche est écrite dès 1854.",
+        "periodLabel": "Une forme proche dès 1854 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Chukwu désigne l'être suprême des Igbo ; Behind the Name précise que les Igbo chrétiens l'emploient aussi pour le Dieu chrétien. Dans un nom de personne, chi et chukwu renvoient à un être supérieur, selon Oluchukwu et Nzuanke.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Chukwu — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/chukwu",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site collaboratif de prénoms, lu le 13 octobre 2026. La notice donne « the great god » en igbo, tiré de chi, « dieu, être spirituel », et úkwú, « grand » ; elle ajoute que les Igbo chrétiens emploient le nom pour le Dieu chrétien. Contenu communautaire, sans source citée."
+              },
+              {
+                "title": "Onomastics and Translation: The Case of Igbo→English Translation of Chi Names",
+                "author": "Oluchukwu Asadu et Samson Fabian Nzuanke",
+                "year": 2014,
+                "url": "https://www.ajol.info/index.php/lwati/article/view/119750",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lwati: A Journal of Contemporary Research, vol. 11, no 3, 2014, p. 122-140 ; résumé lu sur la page de la revue le 13 octobre 2026. Les éléments chi et chukwu des noms igbo y renvoient à un être supérieur, le plus haut des dieux que reconnaissent les Igbo. L'étude porte sur les noms de trente étudiants de l'université Nnamdi Azikiwe, à Awka ; elle ne traite pas des noms de famille."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Publié en 1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Chukwu viendrait de chi, « dieu », et de ukwu, « grand » : « le grand dieu », selon George Thomas Basden, qui le range parmi les noms de l'être suprême des Igbo.",
+            "hypothesisGroup": "origine du nom Chukwu",
+            "sources": [
+              {
+                "title": "Among the Ibos of Nigeria",
+                "author": "George Thomas Basden",
+                "year": 1921,
+                "url": "https://archive.org/details/amongibosofniger00basd",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 216",
+                "notes": "Londres, Seeley, Service & Co., 1921 ; exemplaire numérisé sur archive.org. Page 216, chapitre « Some Aspects of Religion » : l'être suprême est désigné par plusieurs noms, dont « Chukwu (= Chi-ukwu) i.e. the Great God » ; dans le sud, « Chineke (God the Creator) is the prevailing name ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Chukwu viendrait de chi, « dieu, être spirituel », et de úkwú, « grand », selon Behind the Name.",
+            "hypothesisGroup": "origine du nom Chukwu",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Chukwu — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/chukwu",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site collaboratif de prénoms, lu le 13 octobre 2026. La notice donne « the great god » en igbo, tiré de chi, « dieu, être spirituel », et úkwú, « grand » ; elle ajoute que les Igbo chrétiens emploient le nom pour le Dieu chrétien. Contenu communautaire, sans source citée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "Voyage de 1854, journal publié en 1855"
+            },
+            "era": "polity",
+            "statement": "Le nom Chukwu apparaît par écrit sous une forme proche, Tshuku, dans le journal de Samuel Crowther : à Onitsha, en 1854, un chef répète « Oparra Tshuku », que Crowther traduit « Son of God », fils de Dieu. C'est la plus ancienne trace de ce nom que le projet connaît ; elle montre le mot, pas un nom porté par une personne.",
+            "formAsWritten": "Tshuku",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Journal of an Expedition up the Niger and Tshadda Rivers, undertaken by Macgregor Laird in connection with the British Government in 1854",
+                "author": "Samuel Crowther",
+                "year": 1855,
+                "url": "https://archive.org/details/journalofexpedit00crow",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 22",
+                "notes": "Londres, 1855 ; exemplaire numérisé sur archive.org. Journal du Rév. Samuel Crowther, page 22 (en-tête « The Gospel Preached ») : à Onitsha, le chef Tshukuma « frequently repeated the names, ‘Oparra Tshuku! Oparra Tshuku!’ Son of God! Son of God! ». Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
