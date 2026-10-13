@@ -10,6 +10,43 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [5.1.0] - 2026-10-13
+
+### Added
+
+- Name history (ETNI-2011, waves 4 to 17): every language and about 430 more peoples
+  and about 340 family names now carry a `nameHistory` block, each source opened and
+  typed.
+- Corpus: trace Musa from the Qur'an to Mansa Musa, and Soumah and Abaza from their
+  sources, with the reader demand that prompted each logged in the audience journal.
+- Places: a place fiche can span several countries; add the Sahara place fiche
+  (`LOC_SAHARA`).
+- Social production: verified carousel production with an agent handoff; card system
+  1.2.0 (historical atlas map); the satellite map video (design 0.2.0 to « Vidéo
+  carte » 0.4.0) with relief, areas, borders, water names, the Mega-Chad 325 m
+  shoreline on ETOPO 2022, chained chapters, subtitle chunks and a voiced track whose
+  spoken word is highlighted; packaging of the final vertical video for approval 3;
+  reconciliation of publications made before approval 3.
+- Skill `ethniafrica-reel-clip`: a video file and a one-line instruction become a
+  finished, subtitled reel.
+
+### Changed
+
+- Corpus: apply the operator's rulings on waves 4 to 13 and fold the duplicate people
+  fiches those waves created into their keepers, redirecting retired identifiers.
+- Corpus: order the long tail of name history and report its coverage.
+- Toolchain: migrate to Tailwind CSS 4 (`@tailwindcss/postcss`), ESLint 10, Vitest 5,
+  Storybook 10, knip 6 and dotenv 18.
+- Dependencies: production and development minor/patch groups; GitHub Actions
+  (`upload-artifact`, `download-artifact`, `setup-node`, `claude-code-action`).
+
+### Fixed
+
+- Corpus: apply the Sahara research corrections; complete the kingdoms of 18 country
+  fiches for the time-slice carousel.
+- Social: keep the hamza mark against its letter in video subtitles; keep a proof
+  approved after its corrections are integrated.
+
 ## [5.0.1] - 2026-10-11
 
 ### Changed
@@ -1640,7 +1677,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.0.1...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.1.0...HEAD
+[5.1.0]: https://github.com/big-emotion/ethniafrica/compare/v5.0.1...v5.1.0
 [5.0.1]: https://github.com/big-emotion/ethniafrica/compare/v5.0.0...v5.0.1
 [5.0.0]: https://github.com/big-emotion/ethniafrica/compare/v4.23.0...v5.0.0
 [4.23.0]: https://github.com/big-emotion/ethniafrica/compare/v4.22.0...v4.23.0
