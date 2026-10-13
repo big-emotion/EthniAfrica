@@ -125,5 +125,257 @@
   "totemicFoodProhibition": {
     "value": "Il est tabou pour un Muganda de consommer son propre clan, qu'il s'agisse de nourriture, de viande fraîche, de légume, de poisson ou de fruit.",
     "sourceRefs": ["buganda-heritage-clans", "roscoe-1911-baganda"]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ffumbe est celui d'un clan ganda, au Buganda, en Ouganda, que les sources rattachent à la civette, son totem. Un auteur de 1902 y voit pourtant un autre animal : nous présentons les deux lectures plus bas. Les Ganda disent ce clan installé dans le pays bien avant le roi Kintu. Les textes anciens l'écrivent Fumbe ou Fumbi.",
+    "names": [
+      {
+        "nameText": "Ffumbe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lug",
+        "namedBy": null,
+        "shortLine": "Le nom d'un clan ganda d'Ouganda, celui de son totem, la civette.",
+        "periodLabel": "Écrit dès 1902 sous une forme proche, Fumbi ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ffumbe est celui d'un clan ganda, au Buganda, et désigne la civette, son totem principal. Les sources ne disent pas toutes la même chose de l'animal : nous les présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Brief History of the Kingdom of Buganda",
+                "author": "Royaume du Buganda",
+                "year": 2025,
+                "url": "https://buganda.or.ug/wp-content/uploads/2025/04/Final-Print-BRIEF-HISTORY-OF-THE-KINGDOM-OF-BUGANDA-3.pdf",
+                "tier": "unverified",
+                "source_kind": "community",
+                "page": "p. 4",
+                "notes": "Brochure que le royaume du Buganda publie sur son propre site, sans appareil critique extérieur. Lu le 13 octobre 2026. Section 2.2, « Origin of the Clan System », page 4 de la brochure : « The earliest clans were the following: the Lugave (Pangolin), Ffumbe (Civet Cat), Nnyonyi (Cordon-blue Finch), Njaza (Reedbuck), Mmamba (Lungfish) and Ngeye (Colobus) ». Le texte situe les migrations des fondateurs « between 1200-1500 A.D. »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ffumbe est celui de l'un des cinq clans d'origine du Buganda. Le site patrimonial ganda les appelle Banansangwa, ce qui veut dire « les clans indigènes ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Clans",
+                "author": "Buganda Heritage and Information Centre",
+                "year": null,
+                "url": "https://www.bugandaheritage.org.uk/culture/clans",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site patrimonial ganda, qui parle de lui-même. Lu le 13 octobre 2026. Il écrit : « there were five original clans », appelés « Banansangwa simply meaning the indigenous clans », et les nomme : « Ffumbe, Lugave, Nggonge, Njaza and Nnyonyi ». Il ne dit pas quel est le totem de Ffumbe."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Proposé en 1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ffumbe désignerait la civette d'Afrique, selon John Roscoe, qui appelle ce clan « le clan de la Civette (Fumbe) » et lui donne la grenouille pour second totem. Le royaume du Buganda donne aujourd'hui la même traduction.",
+            "hypothesisGroup": "sens du nom Ffumbe",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 138",
+                "notes": "Londres, Macmillan, 1911 ; lu sur l'exemplaire numérisé d'archive.org le 13 octobre 2026. Missionnaire anglican ; les chefs de clan lui ont été présentés par Apolo Kagwa, premier ministre du Buganda. Liste des clans et de leurs totems : « 6. The Civet Cat (Fumbe) clan had the Frog (Kikerekere) for its second totem »."
+              },
+              {
+                "title": "Brief History of the Kingdom of Buganda",
+                "author": "Royaume du Buganda",
+                "year": 2025,
+                "url": "https://buganda.or.ug/wp-content/uploads/2025/04/Final-Print-BRIEF-HISTORY-OF-THE-KINGDOM-OF-BUGANDA-3.pdf",
+                "tier": "unverified",
+                "source_kind": "community",
+                "page": "p. 4",
+                "notes": "Brochure que le royaume du Buganda publie sur son propre site, sans appareil critique extérieur. Lu le 13 octobre 2026. Section 2.2, « Origin of the Clan System », page 4 de la brochure : « The earliest clans were the following: the Lugave (Pangolin), Ffumbe (Civet Cat), Nnyonyi (Cordon-blue Finch), Njaza (Reedbuck), Mmamba (Lungfish) and Ngeye (Colobus) ». Le texte situe les migrations des fondateurs « between 1200-1500 A.D. »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "Proposé en 1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ffumbe, écrit Fumbi, désignerait le lycaon, ou chien sauvage du Cap, selon Harry Johnston, qui le donne comme totem du troisième clan de sa liste de vingt-neuf clans du Buganda.",
+            "hypothesisGroup": "sens du nom Ffumbe",
+            "sources": [
+              {
+                "title": "The Uganda Protectorate, vol. II",
+                "author": "Harry Johnston",
+                "year": 1902,
+                "url": "https://archive.org/details/cu31924087982504",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 691",
+                "notes": "Londres, Hutchinson, 1902 ; lu sur l'exemplaire numérisé d'archive.org le 13 octobre 2026, page vue en image. Liste des vingt-neuf clans du Buganda et de leurs totems : « 3. Fumbi … Lycaon dog (Cape hunting dog) ». Johnston était le commissaire spécial britannique de l'Ouganda ; auteur de l'époque coloniale, cité ici pour la forme qu'il écrit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ffumbe apparaît par écrit sous une forme proche, Fumbi, dans la liste des clans du Buganda que dresse Harry Johnston. Il la place au troisième rang et la traduit par « Lycaon dog ». C'est la plus ancienne trace de ce nom que le projet connaît ; le clan existait déjà avant ce texte.",
+            "formAsWritten": "Fumbi",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Harry Johnston",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Uganda Protectorate, vol. II",
+                "author": "Harry Johnston",
+                "year": 1902,
+                "url": "https://archive.org/details/cu31924087982504",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 691",
+                "notes": "Londres, Hutchinson, 1902 ; lu sur l'exemplaire numérisé d'archive.org le 13 octobre 2026, page vue en image. Liste des vingt-neuf clans du Buganda et de leurs totems : « 3. Fumbi … Lycaon dog (Cape hunting dog) ». Johnston était le commissaire spécial britannique de l'Ouganda ; auteur de l'époque coloniale, cité ici pour la forme qu'il écrit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1200,
+              "to": 1500,
+              "label": "Entre 1200 et 1500 environ, selon le royaume du Buganda"
+            },
+            "era": "polity",
+            "statement": "On parle alors du clan de la Civette comme de l'un des premiers clans du Buganda. Le royaume du Buganda situe entre 1200 et 1500 environ les migrations des fondateurs, parmi lesquelles il place ce clan.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Brief History of the Kingdom of Buganda",
+                "author": "Royaume du Buganda",
+                "year": 2025,
+                "url": "https://buganda.or.ug/wp-content/uploads/2025/04/Final-Print-BRIEF-HISTORY-OF-THE-KINGDOM-OF-BUGANDA-3.pdf",
+                "tier": "unverified",
+                "source_kind": "community",
+                "page": "p. 4",
+                "notes": "Brochure que le royaume du Buganda publie sur son propre site, sans appareil critique extérieur. Lu le 13 octobre 2026. Section 2.2, « Origin of the Clan System », page 4 de la brochure : « The earliest clans were the following: the Lugave (Pangolin), Ffumbe (Civet Cat), Nnyonyi (Cordon-blue Finch), Njaza (Reedbuck), Mmamba (Lungfish) and Ngeye (Colobus) ». Le texte situe les migrations des fondateurs « between 1200-1500 A.D. »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Au temps du roi Kintu, selon le récit du clan"
+            },
+            "era": "polity",
+            "statement": "On parle alors du clan de la Civette comme du plus important des clans installés dans le pays avant la venue de Kintu. Il fait remonter son origine à Ntege, présenté comme un roi de l'Ouganda, selon le récit que les chefs du clan ont confié à John Roscoe.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Récit d'origine du clan de la Civette",
+                "author": "Chefs du clan de la Civette, recueillis par John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "Origine du clan de la Civette : Ntege, roi avant Kintu",
+                "carrier": "Les chefs du clan de la Civette réunis par Apolo Kagwa",
+                "place": "Buganda",
+                "notes": "Récit transcrit par John Roscoe, The Baganda, 1911, p. 145-146 : « The Civet-cat Clan were said to have been in possession of the country long before Kintu came, and were indeed the most important of the clans which were there prior to his arrival. They trace their origin to Ntege, who they say was king of Uganda. Kintu deposed this ruler, and gave him several estates with permission to retain the title of King (Kabaka) ». Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Fumbe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lug",
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Écrit ainsi en 1911"
+            },
+            "era": "colonial",
+            "statement": "Le nom Fumbe est l'écriture que John Roscoe donne à ce nom en 1911, dans « The Civet Cat (Fumbe) clan ».",
+            "formAsWritten": "Fumbe",
+            "sources": [
+              {
+                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "author": "John Roscoe",
+                "year": 1911,
+                "url": "https://archive.org/details/bagandaaccountof00roscuoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 138",
+                "notes": "Londres, Macmillan, 1911 ; lu sur l'exemplaire numérisé d'archive.org le 13 octobre 2026. Missionnaire anglican ; les chefs de clan lui ont été présentés par Apolo Kagwa, premier ministre du Buganda. Liste des clans et de leurs totems : « 6. The Civet Cat (Fumbe) clan had the Frog (Kikerekere) for its second totem »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Fumbi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lug",
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "Écrit ainsi en 1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom Fumbi est l'écriture que Harry Johnston donne à ce nom en 1902, dans sa liste des clans du Buganda.",
+            "formAsWritten": "Fumbi",
+            "sources": [
+              {
+                "title": "The Uganda Protectorate, vol. II",
+                "author": "Harry Johnston",
+                "year": 1902,
+                "url": "https://archive.org/details/cu31924087982504",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 691",
+                "notes": "Londres, Hutchinson, 1902 ; lu sur l'exemplaire numérisé d'archive.org le 13 octobre 2026, page vue en image. Liste des vingt-neuf clans du Buganda et de leurs totems : « 3. Fumbi … Lycaon dog (Cape hunting dog) ». Johnston était le commissaire spécial britannique de l'Ouganda ; auteur de l'époque coloniale, cité ici pour la forme qu'il écrit."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
