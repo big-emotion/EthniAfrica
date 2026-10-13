@@ -122,5 +122,106 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Saho désigne un peuple d'éleveurs d'Érythrée et du nord de l'Éthiopie, ainsi que sa langue. Il se nomme lui-même Saho, mais, selon le linguiste Leo Reinisch en 1890, seules deux de ses sept tribus se donnaient alors ce nom. On ne sait pas avec certitude d'où vient le nom Saho ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Saho",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ssy",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; sa plus ancienne trace connue, Shiho, date de 1791.",
+        "periodLabel": "Écrit Shiho dès 1791 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Saho voudrait dire « nomade » : saa signifierait « animaux » et hoo « gardien », ce qui rappelle l'ancien mode de vie pastoral du peuple, selon le ministère érythréen de l'Information.",
+            "sources": [
+              {
+                "title": "The Animal Caretakers : The Saho of Eritrea",
+                "author": "Ministère de l'Information de l'Érythrée (Shabait)",
+                "year": 2016,
+                "url": "https://shabait.com/2016/08/26/the-animal-caretakers-the-saho-of-eritrea/",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Article du site Shabait, daté du 26 août 2016, sans auteur nommé. Lu le 13 octobre 2026. Phrase lue : « The word “Saho” means “nomad,” (“saa” means animals and “hoo” means caretaker) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1890,
+              "to": 1890,
+              "label": "1890"
+            },
+            "statement": "Le nom Sahö désigne chez le linguiste autrichien Leo Reinisch le peuple saho, qu'il dit divisé en sept tribus. Seules les tribus Asaorta et Tär'uwa se donnent surtout ce nom, et elles appellent Bozät les cinq autres tribus ; elles sont aussi les seules à revendiquer le droit au nom Sahö. La langue saho est aussi celle des Irob. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Die Saho-Sprache, deuxième volume : Wörterbuch der Saho-Sprache",
+                "author": "Leo Reinisch",
+                "year": 1890,
+                "url": "https://archive.org/details/diesahosprache00reingoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 316 (article Sahö) et p. 91 (article Bozät)",
+                "notes": "Wien, Alfred Hölder, 1890. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, pages vérifiées sur l'image. "
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1859,
+              "to": 1859,
+              "label": "1859"
+            },
+            "statement": "Le nom Schoho figure chez le voyageur suisse Werner Munzinger, qui décrit le pays des Schoho entre Massaoua et la montagne abyssine. Il les dit divisés en plusieurs tribus, dont la plus grande, les Hasauerta, vit près d'Arkiko, et parlant une langue parente du somali et de l'oromo.",
+            "formAsWritten": "Schoho",
+            "sources": [
+              {
+                "title": "Die Schoho's und die Beduan bei Massua",
+                "author": "Werner Munzinger",
+                "year": 1859,
+                "url": "https://archive.org/details/zeitschriftfural06zeit",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 91",
+                "notes": "Zeitschrift für allgemeine Erdkunde, vol. 6, 1859, p. 89-110. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, page vérifiée sur l'image."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1791,
+              "to": 1791,
+              "label": "1791"
+            },
+            "era": "polity",
+            "statement": "Le nom Saho apparaît sous une forme proche, Shiho, chez l'explorateur écossais James Bruce, qui rencontre des Shiho sur sa route entre Massaoua et l'Abyssinie. Il les décrit comme les plus noirs des peuples qui bordent la mer Rouge, vêtus de cotonnade et logés dans des grottes ou de petites huttes d'herbe. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Shiho",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels to discover the source of the Nile, in the years 1768, 1769, 1770, 1771, 1772, and 1773, vol. 3",
+                "author": "James Bruce",
+                "year": 1791,
+                "url": "https://archive.org/details/travelstodiscove003bruc",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 394",
+                "notes": "Dublin, William Porter, édition en six volumes ; la page de titre du volume 3 porte la date de 1791. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive, page vérifiée sur l'image."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
