@@ -1,5 +1,5 @@
 import type { StorybookConfig } from "@storybook/react-vite";
-import path from "path";
+import { fileURLToPath } from "node:url";
 
 const config: StorybookConfig = {
   stories: [
@@ -7,11 +7,7 @@ const config: StorybookConfig = {
     "../src/stories/**/*.stories.@(js|jsx|mjs|ts|tsx)",
     "../src/components/**/*.stories.@(js|jsx|mjs|ts|tsx)",
   ],
-  addons: [
-    "@storybook/addon-essentials",
-    "@storybook/addon-interactions",
-    "@storybook/addon-a11y",
-  ],
+  addons: ["@storybook/addon-docs", "@storybook/addon-a11y"],
   framework: {
     name: "@storybook/react-vite",
     options: {},
@@ -28,7 +24,7 @@ const config: StorybookConfig = {
     config.resolve = config.resolve ?? {};
     config.resolve.alias = {
       ...(config.resolve.alias ?? {}),
-      "@": path.resolve(__dirname, "../src"),
+      "@": fileURLToPath(new URL("../src", import.meta.url)),
     };
     // Stories render without a connected database; use inert client values
     // so modules that initialize Supabase at import time can still load.
