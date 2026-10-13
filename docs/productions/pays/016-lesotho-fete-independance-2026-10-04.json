@@ -1,0 +1,35 @@
+{
+  "campaign": "lesotho-fete-independance-2026-10-04",
+  "typologie": "pays",
+  "episode": 16,
+  "question": {
+    "fr": "D'où vient le nom Lesotho ?"
+  },
+  "myth": {
+    "fr": "Le nom Lesotho est-il né avec l'indépendance de 1966 ?"
+  },
+  "subjects": [
+    {
+      "kind": "country",
+      "id": "LSO",
+      "label": {
+        "fr": "Lesotho"
+      }
+    }
+  ],
+  "sitePath": "/fr/atlas/pays/LSO",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7692987932927380758",
+      "publishedAt": "2026-10-05"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/DeGA4hWCD5B/",
+      "publishedAt": "2026-10-05"
+    }
+  ]
+}

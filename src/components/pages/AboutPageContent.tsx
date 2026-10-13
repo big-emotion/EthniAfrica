@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
+import { getAxisHubRoute } from "@/lib/hubs/axisRoutes";
 import { aboutCopy } from "@/lib/i18n/copy/about";
 import { getLocalizedRoute, getStaticPageRoute } from "@/lib/routing";
 import type { Language } from "@/types/shared";
@@ -116,7 +117,14 @@ export default function AboutPageContent({ language }: AboutPageContentProps) {
               data-testid={`about-access-mode-${mode.id}`}
               className="text-afh-small leading-relaxed text-afh-text-soft"
             >
-              <h3 className="font-bold text-afh-text">{mode.label}</h3>
+              <h3 className="font-bold text-afh-text">
+                <Link
+                  href={getAxisHubRoute(language, mode.id)}
+                  className={LINK_CLASS}
+                >
+                  {mode.label}
+                </Link>
+              </h3>
               <p
                 data-testid={`about-access-mode-description-${mode.id}`}
                 className="mt-afh-xs"

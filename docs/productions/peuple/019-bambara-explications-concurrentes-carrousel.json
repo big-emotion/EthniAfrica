@@ -1,0 +1,35 @@
+{
+  "campaign": "bambara-explications-concurrentes-carrousel",
+  "typologie": "peuple",
+  "episode": 19,
+  "question": {
+    "fr": "D'où vient le nom Bambara ?"
+  },
+  "myth": {
+    "fr": "Bambara veut-il dire « refus au maître » ?"
+  },
+  "subjects": [
+    {
+      "kind": "people",
+      "id": "PPL_BAMBARA",
+      "label": {
+        "fr": "Bambara"
+      }
+    }
+  ],
+  "sitePath": "/fr/atlas/peuples/PPL_BAMBARA",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7691461752487218454",
+      "publishedAt": "2026-10-01"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/Dd7bn_oiJik/",
+      "publishedAt": "2026-10-01"
+    }
+  ]
+}

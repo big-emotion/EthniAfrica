@@ -1,0 +1,35 @@
+{
+  "campaign": "soninke-noms-et-contextes-carrousel",
+  "typologie": "peuple",
+  "episode": 21,
+  "question": {
+    "fr": "D'où vient le nom Soninké ?"
+  },
+  "myth": {
+    "fr": "Soninké, Sarakholé, Marka et Wangara désignent-ils les mêmes personnes ?"
+  },
+  "subjects": [
+    {
+      "kind": "people",
+      "id": "PPL_SONINKE",
+      "label": {
+        "fr": "Soninké"
+      }
+    }
+  ],
+  "sitePath": "/fr/atlas/peuples/PPL_SONINKE",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7691455204566338838",
+      "publishedAt": "2026-10-01"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/Dd7Y4ntCCmP/",
+      "publishedAt": "2026-10-01"
+    }
+  ]
+}

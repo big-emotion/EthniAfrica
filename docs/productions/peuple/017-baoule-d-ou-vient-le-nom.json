@@ -26,7 +26,8 @@
     {
       "network": "instagram",
       "format": "carrousel",
-      "url": "https://www.instagram.com/p/DeMP6VPCHMf/"
+      "url": "https://www.instagram.com/p/DeMP6VPCHMf/",
+      "publishedAt": "2026-10-07"
     },
     { "network": "facebook", "format": "carrousel" },
     { "network": "youtube", "format": "carrousel" },

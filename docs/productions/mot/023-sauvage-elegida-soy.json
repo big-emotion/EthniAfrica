@@ -1,0 +1,33 @@
+{
+  "campaign": "sauvage-elegida-soy",
+  "typologie": "mot",
+  "episode": 23,
+  "question": {
+    "fr": "D'où vient le mot « sauvage » ?"
+  },
+  "myth": {
+    "fr": "Les peuples dits « sauvages » vivaient-ils « plutôt en bêtes qu'en hommes » ?"
+  },
+  "subjects": [],
+  "sitePath": "/fr/about",
+  "publications": [
+    {
+      "network": "instagram",
+      "format": "video",
+      "url": "https://www.instagram.com/p/DeT9oe1qltK/",
+      "publishedAt": "2026-10-10"
+    },
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7694997731269463318",
+      "publishedAt": "2026-10-10"
+    },
+    {
+      "network": "facebook",
+      "format": "video",
+      "url": "https://www.facebook.com/reel/4898579993759829",
+      "publishedAt": "2026-10-10"
+    }
+  ]
+}

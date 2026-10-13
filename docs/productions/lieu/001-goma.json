@@ -22,12 +22,14 @@
     {
       "network": "tiktok",
       "format": "video",
-      "url": "https://www.tiktok.com/@ethniafrica/video/7687890569099578646"
+      "url": "https://www.tiktok.com/@ethniafrica/video/7687890569099578646",
+      "publishedAt": "2026-09-21"
     },
     {
       "network": "instagram",
       "format": "video",
-      "url": "https://www.instagram.com/reel/Ddipp7NK1v7/"
+      "url": "https://www.instagram.com/reel/Ddipp7NK1v7/",
+      "publishedAt": "2026-09-21"
     },
     {
       "network": "youtube",

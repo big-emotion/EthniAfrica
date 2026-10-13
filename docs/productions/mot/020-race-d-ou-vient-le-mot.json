@@ -1,0 +1,33 @@
+{
+  "campaign": "race-d-ou-vient-le-mot",
+  "typologie": "mot",
+  "episode": 20,
+  "question": {
+    "fr": "D'où vient le mot « race » ?"
+  },
+  "myth": {
+    "fr": "Le chroniqueur portugais Zurara a-t-il été le premier à écrire le concept de race ?"
+  },
+  "subjects": [],
+  "sitePath": "/fr/about",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "carrousel",
+      "url": "https://www.tiktok.com/@ethniafrica/photo/7691440940384505091",
+      "publishedAt": "2026-09-30"
+    },
+    {
+      "network": "instagram",
+      "format": "carrousel",
+      "url": "https://www.instagram.com/p/Dd7SRKkCD1G/",
+      "publishedAt": "2026-09-30"
+    },
+    {
+      "network": "facebook",
+      "format": "carrousel",
+      "url": "https://www.facebook.com/photo/?fbid=122118789195465536&set=pcb.122118789309465536",
+      "publishedAt": "2026-09-30"
+    }
+  ]
+}

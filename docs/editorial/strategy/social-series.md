@@ -16,16 +16,16 @@ not yet tried. Reader-facing lines below are French, as published.
 
 ## The series
 
-| #   | Series                                                         | Slot                     | Fixed question                                    | Fixed closing                                                                                                       |
-| --- | -------------------------------------------------------------- | ------------------------ | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| 1   | « D'où vient le nom de mon pays ? »                            | Monday                   | « Qui a choisi ce nom ? »                         | Season finale: « Un nom change-t-il l'identité d'un peuple ? »                                                      |
-| 2   | « Le nom qu'on leur a donné »                                  | Wednesday                | « Comment s'appellent-ils eux-mêmes ? »           | « Et chez vous, comment dit-on ? »                                                                                  |
-| 3   | « Mon nom, mon histoire »                                      | Friday                   | « D'où vient ton nom ? »                          | The next episode is picked from the names readers give in the comments                                              |
-| 4   | « Les mots qu'on nous a collés »                               | Every other week         | « D'où vient ce mot qu'on dit sur l'Afrique ? »   | The word people use for themselves                                                                                  |
-| 5   | « Un peuple, plusieurs pays »                                  | Once a month (test)      | « Pourquoi le même peuple a-t-il deux noms ? »    | « La ligne a été tracée par-dessus des gens qui étaient déjà là. »                                                  |
-| 6   | « L'Afrique n'est pas un tout »                                | One season of 6 episodes | « Qui a fait de l'Afrique un seul bloc ? »        | Episode 6, signed « nous pensons » : « L'Afrique n'est pas un seul peuple. Elle peut choisir d'être un seul camp. » |
-| 7   | « Ce que les villes racontent »                                | Later                    | « Pourquoi cette ville s'appelle-t-elle ainsi ? » | Renamed cities (Léopoldville → Kinshasa, Salisbury → Harare)                                                        |
-| —   | Long form (names as a country's DNA, outside and inside views) | Kept aside               | —                                                 | Site dossiers and LinkedIn                                                                                          |
+| #   | Series                                                         | Slot                    | Fixed question                                    | Fixed closing                                                                                                       |
+| --- | -------------------------------------------------------------- | ----------------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| 1   | « D'où vient le nom de mon pays ? »                            | Monday                  | « Qui a choisi ce nom ? »                         | Season finale: « Un nom change-t-il l'identité d'un peuple ? »                                                      |
+| 2   | « Le nom qu'on leur a donné »                                  | Wednesday               | « Comment s'appellent-ils eux-mêmes ? »           | « Et chez vous, comment dit-on ? »                                                                                  |
+| 3   | « Mon nom, mon histoire »                                      | Friday                  | « D'où vient ton nom ? »                          | The next episode is picked from the names readers give in the comments                                              |
+| 4   | « Les mots qu'on nous a collés »                               | Tuesday, every 14 days  | « D'où vient ce mot qu'on dit sur l'Afrique ? »   | The word people use for themselves                                                                                  |
+| 5   | « Un peuple, plusieurs pays »                                  | First Thursday (test)   | « Pourquoi le même peuple a-t-il deux noms ? »    | « La ligne a été tracée par-dessus des gens qui étaient déjà là. »                                                  |
+| 6   | « L'Afrique n'est pas un tout »                                | Other Thursdays, 6 eps. | « Qui a fait de l'Afrique un seul bloc ? »        | Episode 6, signed « nous pensons » : « L'Afrique n'est pas un seul peuple. Elle peut choisir d'être un seul camp. » |
+| 7   | « Ce que les villes racontent »                                | Later                   | « Pourquoi cette ville s'appelle-t-elle ainsi ? » | Renamed cities (Léopoldville → Kinshasa, Salisbury → Harare)                                                        |
+| —   | Long form (names as a country's DNA, outside and inside views) | Kept aside              | —                                                 | Site dossiers and LinkedIn                                                                                          |
 
 Series 2 covers languages as well as peoples. « Le savais-tu ? », the quiz and
 the animated map are formats any series may use, not series.
@@ -52,6 +52,72 @@ others exist, attributed, never ranked by origin (`docs/productions/README.md`,
 "Never an assertion"). A claim resting only on a machine-written synthesis is
 researched before it is scripted (for example `PAT_KOFI`, `PAT_KWAME` and
 `PAT_KONE` on 2026-10-13).
+
+## Calendar
+
+Approved by the operator on 2026-10-13. The series start on Monday 2026-10-19.
+
+| Series | Rule                                                          | First dates                                     |
+| ------ | ------------------------------------------------------------- | ----------------------------------------------- |
+| 1      | Every Monday                                                  | 2026-10-19, 10-26, 11-02                        |
+| 2      | Every Wednesday                                               | 2026-10-21, 10-28, 11-04                        |
+| 3      | Every Friday                                                  | 2026-10-23, 10-30, 11-06                        |
+| 4      | Tuesday, every 14 days from 2026-10-27                        | 2026-10-27, 11-10, 11-24                        |
+| 5      | First Thursday of the month                                   | 2026-11-05, 12-03, 2027-01-07                   |
+| 6      | The other Thursdays until the season's six episodes are out   | 2026-10-22, 10-29, 11-12, 11-19, 11-26, 12-10   |
+| 7      | Not scheduled until place fiches exist                        | —                                               |
+| —      | LinkedIn, professional post (investors, contributors), Monday | From 2026-11-02, the launch plan's phase 3 date |
+
+Four or five series pieces a week, inside the four-to-six envelope of
+`docs/productions/README.md`. Series 4 uses a 14-day rule rather than ISO week
+parity because 2026 has 53 ISO weeks.
+
+## Preparation
+
+Each episode is prepared ahead, so research can go as far as the sources go:
+
+| When            | What                                                              |
+| --------------- | ----------------------------------------------------------------- |
+| Two weeks ahead | Research, to the end of the sources; fiche corrected if needed    |
+| One week ahead  | Production and the operator's three approvals (social-production) |
+| The day         | Publication, ledger row, campaign code                            |
+
+Asked « quoi faire aujourd'hui / cette semaine / ce mois-ci »,
+`/ethniafrica-content-strategist` answers from this calendar and the queue
+below: what goes out today, what must finish production this week, what to
+research for the week after next, and the dated exceptional opportunities of
+the next 30 days.
+
+## Episode queue
+
+The next episodes per series, in order. The strategist updates this table at
+each run: a published episode leaves it, a new one enters with its evidence.
+Fiche readiness was checked on 2026-10-13.
+
+| Series | Next episodes                                                                                    |
+| ------ | ------------------------------------------------------------------------------------------------ |
+| 1      | Burkina Faso (`BFA`) · Togo (`TGO`) · Gambie (`GMB`, six sources to review)                      |
+| 2      | Touareg (`PPL_TUAREG`) · Mossi (`PPL_MOSSI`) · Wolof (`PPL_WOLOF`, thin sources: research first) |
+| 3      | Yao and Kouassi (`PAT_YAO`, `PAT_KOUASSI`) · Touré (`PAT_TOURE`) · Diarra (`PAT_DIARRA`)         |
+| 4      | tribu · dialecte · indigène (no fiche: research first; each new `mot` needs the operator's word) |
+| 5      | Éwé (`PPL_EWE`) · Haoussa (`PPL_HAUSA`) · Mandingue                                              |
+| 6      | The six episodes listed under "How an episode is built"                                          |
+
+## Outside the series
+
+Two kinds of post sit outside the frame and never take a series slot unless
+the operator moves one.
+
+- **Exceptional posts**: an independence day, an international or special day,
+  a historical figure. Free format, carousel or video, and free structure. The
+  strategist lists the dated opportunities of the next 30 days at each run;
+  independence dates come from the source recorded in `colonial-periods.md`.
+  A name-origin exceptional post is filed in the ledger like any name piece;
+  any other one stays in the private library.
+- **Reposts of other accounts' content**: allowed, with the rights cleared by
+  the operator for each piece. A repost is not a produced piece, does not
+  count in the four-to-six envelope, and is filed in the private library
+  unless its caption frames it as a name or word origin.
 
 ## Formats per episode
 

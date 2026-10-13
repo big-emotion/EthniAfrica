@@ -6,6 +6,8 @@ import {
 } from "@/lib/articles/corpus";
 import { articleHref } from "@/components/articles/articlePaths";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
+import { discoveryPath, eligiblePublications } from "@/lib/discoveries/catalog";
+import { getDiscoveryPublications } from "@/lib/discoveries/entries";
 import {
   getCountryRoute,
   getFamilyRoute,
@@ -93,6 +95,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   )) {
     entries.push(
       entry(articleHref("fr", summary.slug), FICHE_CHANGE_FREQUENCY, 0.7)
+    );
+  }
+  // The same eligibility as the feed: an entry the reader would 404 on is
+  // never offered to a crawler.
+  for (const publication of eligiblePublications(getDiscoveryPublications())) {
+    entries.push(
+      entry(discoveryPath("fr", publication), FICHE_CHANGE_FREQUENCY, 0.5)
     );
   }
   return entries;
