@@ -121,5 +121,212 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Alago désigne un peuple du sud de l'État de Nasarawa, au Nigeria, autour de Keana et de Doma, et sa langue. Nous n'avons pas trouvé de source qui dise comment ce peuple se nomme lui-même. Les textes anciens que nous avons lus écrivent Arago ; la plus ancienne trace date de 1855. On ne sait pas avec certitude d'où vient ce nom : deux traditions rapportées en 1919 l'expliquent chacune à sa façon. Nous présentons plus bas l'histoire de ces noms.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Alago",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'aujourd'hui du peuple et de sa langue.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Alago est le nom que le registre ISO 639-3 retient, sans autre appellation, pour la langue de ce peuple. Nous n'avons pas trouvé la plus ancienne trace de ce nom : les textes de 1855 à 1919 que nous avons lus écrivent Arago.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, code ala : Alago",
+                "author": "SIL International",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/ala",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Registre ISO 639-3, lu le 13 octobre 2026. Le nom de référence est « Alago » ; aucune autre appellation n'est listée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "2023"
+            },
+            "era": "modern",
+            "statement": "Alago est le nom qu'emploie en 2023 l'auteur d'un article de la presse d'analyse politique, qui écrit « the Alago people » et « the Alago language ». L'article n'explique pas l'origine du nom.",
+            "sources": [
+              {
+                "title": "The Underexplored Tapestry of Nigeria's Alago People",
+                "author": "Ibrahim Mohammed Funsho",
+                "year": 2023,
+                "url": "https://intpolicydigest.org/the-platform/the-underexplored-tapestry-of-nigeria-s-alago-people/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "International Policy Digest, article daté du 10.12.2023 sur la page (le format du jour et du mois n'est pas précisé), lu le 13 octobre 2026. « each one a native speaker of the Alago language »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Arago",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'écriture des voyageurs et des administrateurs britanniques, dès 1855.",
+        "periodLabel": "Écrit depuis 1855",
+        "accounts": [
+          {
+            "period": {
+              "from": 1232,
+              "to": 1232,
+              "label": "Vers 1232, selon la tradition de Doma"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Arago, la tradition de Doma rapportée en 1919 place la fondation de Doma vers 1232 : une partie du peuple Gara aurait quitté Atagara, près d'Idah, et fondé l'État de Doma sous la conduite d'Andoma. C'est de ce groupe que la notice fait venir les Arago.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Notes on the tribes, provinces, emirates and states of the northern provinces of Nigeria",
+                "author": "O. Temple et C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 513",
+                "notes": "Cape Town, Argus, 1919, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. « A section of the Gara tribe left Atagara, near Ida, and came to their present location, founding the State of Doma (circ. 1232 A.D.) ». La notice « Arago » (p. 26) tient pour probable que les Arago sont de cette souche."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1855,
+              "to": 1855,
+              "label": "1855"
+            },
+            "era": "polity",
+            "statement": "Le nom Arago apparaît chez le pasteur Samuel Crowther en 1855, sous la forme « Arago », comme second nom de Doma, un pays de la rive droite de la Bénoué : « Doma, also called Arago ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait avant elle.",
+            "formAsWritten": "Arago",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Samuel Crowther",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Journal of an Expedition up the Niger and Tshadda Rivers, undertaken by Macgregor Laird in connection with the British Government in 1854",
+                "author": "Samuel Crowther",
+                "year": 1855,
+                "url": "https://archive.org/details/journalofexpedit00crow",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 202",
+                "notes": "Londres, 1855, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. Appendice I, lettre de Samuel Crowther sur les langues de la Bénoué. « The next country on the right side of the Tshadda, is Doma, also called Arago, a tribe of which is called Agatu »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1856,
+              "to": 1856,
+              "label": "1856"
+            },
+            "era": "polity",
+            "statement": "Le nom Arago est employé en 1856 par l'explorateur William Balfour Baikie pour la langue de Doma : « Doma, or as it is also termed the Arago language ». Il rapporte que Crowther a fait préparer un vocabulaire de cette langue.",
+            "sources": [
+              {
+                "title": "Narrative of an exploring voyage up the rivers Kwóra and Bínue",
+                "author": "William Balfour Baikie",
+                "year": 1856,
+                "url": "https://archive.org/details/narrativeofexplo00baik",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 111",
+                "notes": "Londres, 1856, lu le 13 octobre 2026 dans la numérisation d'Internet Archive. Numéro de page relevé dans l'en-tête du texte numérisé, non vérifié sur l'image. « Mr. Crowther got a vocabulary prepared of the Doma, or as it is also termed the Arago language »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Arago désigne, chez O. et C. L. Temple en 1919, un peuple d'environ 3 800 personnes, réparti entre les divisions d'Abuja et de Lafia, dans la province de Nassarawa, et le district de Koton Karifi, dans la province du Niger. On ne sait pas avec certitude d'où vient le nom ; deux explications sont données plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Notes on the tribes, provinces, emirates and states of the northern provinces of Nigeria",
+                "author": "O. Temple et C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 26",
+                "notes": "Cape Town, Argus, 1919, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. « The Arago number some 3,800, who are distributed over the Abuja and Lafia divisions of Nassarawa Province, and the Koton Karifi District in the Niger Province »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Arago viendrait, selon une tradition de Doma que rapportent O. et C. L. Temple en 1919, de « Aragogo ». Andoma, chef de Doma, serait parti en guerre contre Keana, qui avait trouvé des sources de sel et bâti une ville ; ses hommes auraient refusé de se battre, et il les aurait maudits en les appelant « Aragogo ».",
+            "hypothesisGroup": "origine-arago",
+            "sources": [
+              {
+                "title": "Notes on the tribes, provinces, emirates and states of the northern provinces of Nigeria",
+                "author": "O. Temple et C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 513",
+                "notes": "Cape Town, Argus, 1919, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. « Andoma cursed them, calling them Aragogo—hence their present name ». Le même récit figure p. 26, dans la notice « Arago »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Arago serait, selon une autre tradition rapportée dans la même notice de 1919, une déformation de « Ilagogo ». Andoma, au lieu de se battre, aurait fait piétiner les salines de Keana et proclamé « Ilagogo », « notre langue sera différente ».",
+            "hypothesisGroup": "origine-arago",
+            "sources": [
+              {
+                "title": "Notes on the tribes, provinces, emirates and states of the northern provinces of Nigeria",
+                "author": "O. Temple et C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 513",
+                "notes": "Cape Town, Argus, 1919, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. « proclaimed Ilagogo (our speech shall be different), of which expression Arago is a corruption »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

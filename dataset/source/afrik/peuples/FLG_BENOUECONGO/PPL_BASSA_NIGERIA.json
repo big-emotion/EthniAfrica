@@ -109,5 +109,183 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bassa Nge désigne un peuple de langue nupe des rives du Niger, autour du confluent du Niger et de la Bénoué, dans l'État de Kogi, au Nigeria. Il ne faut pas le confondre avec les Bassa du Liberia ni avec les Bassa du Cameroun. Nous n'avons pas trouvé de source qui dise comment ce peuple se nomme lui-même. La plus ancienne trace sûre date de 1919 : une notice de deux administrateurs britanniques écrit « Nge or Bassa-Nge ». Une association du peuple explique le nom par les administrateurs coloniaux. Nous présentons plus bas l'histoire de ces noms.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Bassa Nge",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les administrateurs coloniaux britanniques, selon l'association du peuple",
+        "shortLine": "Le nom officiel du peuple, qui le distingue des autres Bassa.",
+        "periodLabel": "Écrit depuis 1919 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1840,
+              "to": 1850,
+              "label": "Vers 1840-1850, selon la notice de 1919"
+            },
+            "era": "polity",
+            "statement": "Avant le nom Bassa Nge, la notice de 1919 place dans les années 1840-1850 le départ des Nge de la région de Kabba : ils payaient un tribut à l'émir de Bida, puis, sans esclaves pour le payer, ils fuirent sur les collines, et la moitié du peuple traversa le Niger pour s'installer près de Gbebe.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Notes on the tribes, provinces, emirates and states of the northern provinces of Nigeria",
+                "author": "O. Temple et C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 306",
+                "notes": "Cape Town, Argus, 1919, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. Numéro de page déduit de l'en-tête de la page suivante et de l'index (« Nge, page 305 »). « About the years 1840-50 A.D. [...] Half the tribe crossed the Niger and obtained permission from the Igara to settle at Kpata, Echo, Shite and Koji »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bassa Nge figure en 1919 dans la notice que les administrateurs O. et C. L. Temple consacrent à ce peuple, sous le titre « Nge or Bassa-Nge ». La notice s'appuie sur le capitaine F. Byng-Hall. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait avant elle.",
+            "formAsWritten": "Bassa-Nge",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Capitaine F. Byng-Hall",
+                "role": "source de la notice de 1919"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Notes on the tribes, provinces, emirates and states of the northern provinces of Nigeria",
+                "author": "O. Temple et C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 305",
+                "notes": "Cape Town, Argus, 1919, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. Numéro de page déduit de l'en-tête de la page suivante (306) et de l'index (« Bassa Nge. (See Nge, page 305.) »). Titre de la notice : « NGE or BASSA-NGE »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Date inconnue"
+            },
+            "statement": "Bassa Nge est, selon l'association Bassa Nge Community North America, un nom reçu des administrateurs coloniaux britanniques. Ils auraient appelé « Bassa » toutes les tribus de l'ancienne province de Bassa, puis ajouté à chacune un suffixe, « Nge » ou « Komu », pour les distinguer. L'association précise que les deux groupes n'ont « rien en commun » dans leur origine, leur culture ou leur histoire.",
+            "aspect": "imposition",
+            "hypothesisGroup": "origine-bassa-nge",
+            "sources": [
+              {
+                "title": "Bassa Nge Community North America : page « Our History | bassa-nge »",
+                "author": "Bassa Nge Community North America",
+                "year": null,
+                "url": "https://www.bassangecommunityna.org/our-ministries",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page de l'association de la diaspora bassa nge, intitulée « Our History | bassa-nge », lu le 13 octobre 2026. Le texte n'est pas daté ; le pied de page porte « 2022 ». « The name Bassa Nge was acquired from the white colonial officials »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Bassa Nge est le nom que l'association de la diaspora de ce peuple emploie pour elle-même, dans le nom de l'association et dans son récit d'histoire.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Bassa Nge Community North America : page « Our History | bassa-nge »",
+                "author": "Bassa Nge Community North America",
+                "year": null,
+                "url": "https://www.bassangecommunityna.org/our-ministries",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Page de l'association de la diaspora bassa nge, intitulée « Our History | bassa-nge », lu le 13 octobre 2026. Le texte n'est pas daté ; le pied de page porte « 2022 ». « The name Bassa Nge was acquired from the white colonial officials »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nge",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme courte que les administrateurs britanniques placent en tête en 1919.",
+        "periodLabel": "Écrit en 1919",
+        "accounts": [
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nge est, dans la notice de 1919 de O. et C. L. Temple, la première forme du titre « Nge or Bassa-Nge ». La notice écrit : « The Nge, sometimes called Ibara », et situe ce peuple sur les rives du Niger, d'Itobe à Gbebe, dans la province de Bassa. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Nge",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notes on the tribes, provinces, emirates and states of the northern provinces of Nigeria",
+                "author": "O. Temple et C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 305",
+                "notes": "Cape Town, Argus, 1919, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. Numéro de page déduit de l'en-tête de la page suivante et de l'index."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ibara",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un autre nom donné à ce peuple dans la notice de 1919.",
+        "periodLabel": "Écrit en 1919",
+        "accounts": [
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ibara est, dans la notice de 1919 de O. et C. L. Temple, un autre nom de ce peuple : « The Nge, sometimes called Ibara ». La notice ne dit ni par qui ce nom est employé ni pourquoi. C'est la plus ancienne trace de ce nom pour ce peuple que le projet connaît.",
+            "formAsWritten": "Ibara",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notes on the tribes, provinces, emirates and states of the northern provinces of Nigeria",
+                "author": "O. Temple et C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 305",
+                "notes": "Cape Town, Argus, 1919, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. Numéro de page déduit de l'en-tête de la page suivante et de l'index."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

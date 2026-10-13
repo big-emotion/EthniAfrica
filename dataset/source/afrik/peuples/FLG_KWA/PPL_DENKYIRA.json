@@ -97,5 +97,196 @@
         "tier": "referenced"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Denkyira désigne un ancien État akan du sud du Ghana, au sud-ouest d'Asante, et le peuple qui le formait. Il se nomme lui-même Denkyira ; le missionnaire Johann Gottlieb Christaller écrit Dankyira en 1881. Le marchand néerlandais Willem Bosman l'écrit Dinkira en 1705 : c'est la plus ancienne trace sûre que nous connaissions. Les Britanniques ont aussi écrit Dankara. L'historien Carl Christian Reindorf explique le nom par une expression akan, en 1895. Nous présentons plus bas l'histoire de ces noms.",
+    "names": [
+      {
+        "nameText": "Denkyira",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne, écrit Dankyira par Christaller en 1881.",
+        "periodLabel": "Écrit depuis 1881 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "colonial",
+            "statement": "Le nom Denkyira est écrit Dañkyira en 1881 par le missionnaire Johann Gottlieb Christaller, dans son appendice sur la géographie de la colonie de la Côte de l'Or. Il y désigne « une tribu akan jadis puissante », au nord de Wasa et au sud-ouest d'Asante, soumise par Asante en 1719. Sa capitale était Dwokwa, à quinze milles au nord-ouest de Cape Coast.",
+            "formAsWritten": "Dañkyira",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Johann Gottlieb Christaller",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 638",
+                "notes": "Bâle, 1881, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. Appendice « Gold Coast Colony ». « Dañkyira (Dankara Denkera, Dinkira), once a powerful Akan tribe N. of Wasa, S.W. of Asante [...] subdued by the rising power of Asante in 1719 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "1895"
+            },
+            "era": "colonial",
+            "statement": "Denkyira désigne, chez Carl Christian Reindorf en 1895, le premier grand État puissant des tribus tshi, détruit plus tard par Osei Tutu ; il l'écrit « Dankera ». On ne sait pas avec certitude d'où vient ce nom ; une explication est donnée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The History of the Gold Coast and Asante",
+                "author": "Carl Christian Reindorf",
+                "year": 1895,
+                "url": "https://archive.org/details/historyofgoldcoa00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 43",
+                "notes": "Bâle, 1895. L'auteur est un pasteur ghanéen de la Mission de Bâle qui s'appuie sur les traditions orales. Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; numéro de page lu sur l'image. Sommaire du chapitre IV : « Dankera, the first powerful state among the Tshi tribes [...] the destruction of the kingdom of Dankera by Osei Tutu »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "1895"
+            },
+            "era": "colonial",
+            "statement": "Denkyira viendrait, selon Carl Christian Reindorf en 1895, de l'expression akan « dan kyekyerewa », « petite construction misérable ». Il écrit « Dankera » : « The district of Dankera (i.e. dan kyekyerewa = small, wretched building) ».",
+            "hypothesisGroup": "origine-denkyira",
+            "sources": [
+              {
+                "title": "The History of the Gold Coast and Asante",
+                "author": "Carl Christian Reindorf",
+                "year": 1895,
+                "url": "https://archive.org/details/historyofgoldcoa00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 44",
+                "notes": "Bâle, 1895. L'auteur est un pasteur ghanéen de la Mission de Bâle qui s'appuie sur les traditions orales. Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; numéro de page lu sur l'image. « The district of Dankera (i.e. dañ kyekyerewa = small, wretched building) and Tshuforo tribes crossed the River Ofe and settled in the S.W. »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dinkira",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie du marchand néerlandais Bosman, en 1705.",
+        "periodLabel": "Écrit depuis 1705",
+        "accounts": [
+          {
+            "period": {
+              "from": 1705,
+              "to": 1705,
+              "label": "1705"
+            },
+            "era": "polity",
+            "statement": "Le nom Dinkira est écrit en 1705 par Willem Bosman, marchand néerlandais de la Côte de l'Or : « The first Country which produceth Gold is Dinkira, situate so far In-land ». Il ajoute que les marchands mettent cinq jours à y aller depuis Elmina, et que ce pays, d'abord petit, est devenu puissant par la valeur de ses gens. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait avant elle.",
+            "formAsWritten": "Dinkira",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Willem Bosman",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A New and Accurate Description of the Coast of Guinea, divided into the Gold, the Slave, and the Ivory Coasts",
+                "author": "Willem Bosman",
+                "year": 1705,
+                "url": "https://archive.org/details/newaccuratedescr00bosm",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 72",
+                "notes": "Traduction anglaise de 1705, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. Début de la lettre VI. « This Country, formerly restrained to a small compass of Land [...] is, by their Valour, so improved in Power » (p. 72-73). La même graphie revient p. 73 (« the Dinkirans »)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "colonial",
+            "statement": "Dinkira figure en 1881 parmi les graphies que Christaller donne à côté de Dañkyira : « Dankara Denkera, Dinkira ».",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 638",
+                "notes": "Bâle, 1881, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. Appendice « Gold Coast Colony », entrée « 10. Dañkyira »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dankara",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une graphie britannique, chez Bowdich en 1819.",
+        "periodLabel": "Écrit depuis 1819",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1819,
+              "to": 1819,
+              "label": "1819"
+            },
+            "era": "polity",
+            "statement": "Le nom Dankara est écrit en 1819 par le voyageur britannique Thomas Edward Bowdich : le roi asante Osei Tutu « conquered Dankara, the King of which, Intim Dakarey, was so considerable a trader in slaves » que le gouverneur néerlandais lui versait un traitement. C'est la plus ancienne trace de cette graphie que le projet connaît.",
+            "formAsWritten": "Dankara",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Thomas Edward Bowdich",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Mission from Cape Coast Castle to Ashantee",
+                "author": "Thomas Edward Bowdich",
+                "year": 1819,
+                "url": "https://archive.org/details/missionfromcapec00bowd",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 233",
+                "notes": "Londres, John Murray, 1819, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. Page 233 déduite du numéro 234 imprimé sur la page suivante."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

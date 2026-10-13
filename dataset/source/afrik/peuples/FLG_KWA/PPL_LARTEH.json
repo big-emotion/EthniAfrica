@@ -102,5 +102,228 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Larteh désigne un peuple guan des collines d'Akuapem, dans l'est du Ghana, et sa langue. Nous n'avons pas trouvé de source qui dise comment ce peuple se nomme lui-même. Christaller écrit en 1881 Date, forme twi, et note à côté Lete et Late, forme ga : c'est la plus ancienne trace que nous connaissions. On ne sait pas avec certitude d'où vient le nom Larteh. Reindorf explique en 1895 le nom Dente, celui d'un oracle, par un échange entre des Late en exil. Nous présentons plus bas l'histoire de ces noms.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Larteh",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie anglaise du nom, en usage aujourd'hui.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Larteh est le nom que le registre ISO 639-3 retient, sans autre appellation, pour la langue de ce peuple. Nous n'avons pas trouvé la plus ancienne trace de cette graphie ; les textes de 1881 et de 1895 que nous avons lus écrivent Date, Lete ou Late.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, code lar : Larteh",
+                "author": "SIL International",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/lar",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Registre ISO 639-3, lu le 13 octobre 2026. Le nom de référence est « Larteh » ; aucune autre appellation n'est listée."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Date",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme twi du nom, chez Christaller en 1881.",
+        "periodLabel": "Écrit depuis 1881",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "colonial",
+            "statement": "Le nom Date est écrit en 1881 par le missionnaire Johann Gottlieb Christaller pour la dix-septième localité d'Akuapem, composée de deux villes, Ahenase et Kubease, sur la montagne d'Akono, à trois ou quatre milles au sud-est d'Akuropon. Il note à côté : « Lete, Gã: Late ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait avant elle.",
+            "formAsWritten": "Date",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Johann Gottlieb Christaller",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 642",
+                "notes": "Bâle, 1881, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. Appendice « Gold Coast Colony », partie sur Akuapem. « No. 17. Date (Lete, Gã: Late) consists of 2 towns: a. Ahenase, b. Kubease, both lying on the Akono mountain, 3-4 miles S.E. of Akuropon »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "1895"
+            },
+            "era": "colonial",
+            "statement": "Date serait, selon Carl Christian Reindorf en 1895, la source du nom Dente, celui d'un oracle. Des Late, partis vers Karakye, auraient répondu aux gens de Ntshummuru qui leur demandaient d'où ils venaient : « From Tshi-Date ». Cette réponse aurait été déformée en Odente et appliquée ensuite à l'oracle Konkom.",
+            "hypothesisGroup": "origine-dente",
+            "sources": [
+              {
+                "title": "The History of the Gold Coast and Asante",
+                "author": "Carl Christian Reindorf",
+                "year": 1895,
+                "url": "https://archive.org/details/historyofgoldcoa00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 92",
+                "notes": "Bâle, 1895. L'auteur est un pasteur ghanéen de la Mission de Bâle qui s'appuie sur les traditions orales. Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; numéro de page lu sur l'image. « They replied, From Tshi-Date, which was corrupted for Odente and applied ever since to the fetish Konkom »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Lete",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme que Christaller note à côté de Date en 1881.",
+        "periodLabel": "Écrit depuis 1881",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lete est écrit en 1881 par Christaller, entre parenthèses après Date, pour les deux villes de la montagne d'Akono. Christaller ne dit pas qui emploie cette forme. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Lete",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 642",
+                "notes": "Bâle, 1881, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. « Date (Lete, Gã: Late) »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Late",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme ga du nom, chez Christaller en 1881 et Reindorf en 1895.",
+        "periodLabel": "Écrit depuis 1881",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "colonial",
+            "statement": "Le nom Late est donné en 1881 par Christaller comme la forme ga du nom Date. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Late",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 642",
+                "notes": "Bâle, 1881, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. « Date (Lete, Gã: Late) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1895,
+              "to": 1895,
+              "label": "1895"
+            },
+            "era": "colonial",
+            "statement": "Late est écrit en 1895 par Carl Christian Reindorf pour deux villes dont le roi s'appelait Ani Kotia, à côté de cinq villes de Kyerepong : « the two Late towns 30 under their king Ani Kotia ». Il écrit que les Guan et les Kyerepong étaient appelés « Guans (or Shuoyi) » par les Akra.",
+            "sources": [
+              {
+                "title": "The History of the Gold Coast and Asante",
+                "author": "Carl Christian Reindorf",
+                "year": 1895,
+                "url": "https://archive.org/details/historyofgoldcoa00rein",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 91",
+                "notes": "Bâle, 1895. L'auteur est un pasteur ghanéen de la Mission de Bâle qui s'appuie sur les traditions orales. Lu dans la numérisation d'Internet Archive le 13 octobre 2026 ; numéro de page lu sur l'image. « the five Kyerepong towns, viz., Abiriw, Odawu, Awukugua, Adukrom and Apirede were 50, and the two Late towns 30 under their king Ani Kotia »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kyerepong",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom que Christaller réserve à cinq autres villes d'Akuapem, distinctes de Date.",
+        "periodLabel": "Écrit depuis 1881",
+        "accounts": [
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "1881"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kyerepong est écrit Kyerepoñ en 1881 par Christaller : il le donne à cinq villes d'Akuapem, Abiriw, Odawu, Awukugua, Adukurom et Apirede. Date, au numéro suivant, est compté à part. Les sources que nous avons lues ne disent pas si Larteh est un sous-groupe des Kyerepong ou un peuple voisin. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Kyerepoñ",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 642",
+                "notes": "Bâle, 1881, lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; numéro de page lu sur l'image. « No. 12-16 under the name Kyerepoñ. - No. 17. Date (Lete, Gã: Late) »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
