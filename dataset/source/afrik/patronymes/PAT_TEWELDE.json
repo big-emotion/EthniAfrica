@@ -86,5 +86,150 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches exactes « Tewelde homonym surname », « Tewelde homonyme patronyme » et les variantes graphiques de la fiche n'ont pas établi deux origines distinctes et documentées pour la même forme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Tewelde est un nom personnel porté en Érythrée et en Éthiopie, que l'on écrit aussi Tewolde. Il sert de second nom aux enfants d'un homme qui le porte, sans devenir un nom de famille. Sa plus ancienne trace écrite que nous connaissons est la forme Teuoldé, en 1913. Nous présentons plus bas l'explication de son sens que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Tewelde",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel érythréen et éthiopien, porté en second par les enfants d'un Tewelde.",
+        "periodLabel": "Écrit Teuoldé dès 1913 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Écrit en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Tewelde est cité par le ministère érythréen de l'Information parmi les noms qui, entendus à l'étranger, font penser que celui qui les porte vient d'Érythrée ou d'Éthiopie. L'article regrette que des parents leur préfèrent aujourd'hui des noms étrangers.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Eritrean Names, Towards Cultural Identity — Eritrea Ministry of Information",
+                "author": "Ministère de l'Information de l'Érythrée",
+                "year": 2019,
+                "url": "https://shabait.com/2019/10/26/eritrean-names-towards-cultural-identity/",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Article publié le 26 octobre 2019 sur Shabait, le site du ministère érythréen de l'Information, lu le 12 octobre 2026. L'auteur n'est pas nommé. L'article cite Ghebrhiwet, Tewelde et Letekidan comme des noms qui, entendus à l'étranger, font reconnaître un Érythréen ou un Éthiopien. Il ne donne pas l'origine de ces noms."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Tewelde voudrait dire « il est né », selon la notice que le Dictionary of American Family Names consacre à Tewolde, une variante de Tewelde. Le dictionnaire du guèze de Wolf Leslau donne le verbe tawalda, passif de walada, « mettre au monde ».",
+            "hypothesisGroup": "origine du nom Tewelde",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Tewolde",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/tewolde?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 ; le site affiche aussi une traduction française. La notice dit : nom personnel éthiopien et érythréen, variante de Tewelde, interprété comme « il est né » en guèze, en amharique ou dans des langues voisines. Les Éthiopiens et les Érythréens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              },
+              {
+                "title": "Comparative Dictionary of Geʿez (Classical Ethiopic)",
+                "author": "Wolf Leslau",
+                "year": 1987,
+                "url": "https://archive.org/details/leslau-comparative-dictionary-of-geez-1987",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 613",
+                "notes": "Wiesbaden, Otto Harrassowitz, 1987. Lu le 12 octobre 2026 dans une copie non officielle déposée sur Internet Archive par un particulier. Page 613, entrée walada : « give birth, beget, bear (a child) » ; tawalda, « passive; also 'arise, come forth' »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Tewolde",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Tewolde est une variante de Tewelde, selon le Dictionary of American Family Names. Comme l'Éthiopie et l'Érythrée n'ont pas de nom de famille héréditaire, il n'a été enregistré comme nom de famille qu'aux États-Unis, après l'immigration de ceux qui le portent.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Tewolde",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/tewolde?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 ; le site affiche aussi une traduction française. La notice dit : nom personnel éthiopien et érythréen, variante de Tewelde, interprété comme « il est né » en guèze, en amharique ou dans des langues voisines. Les Éthiopiens et les Érythréens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1996,
+              "to": 1996,
+              "label": "Écrit en 1996"
+            },
+            "era": "modern",
+            "statement": "Le nom Tewolde figure dans le guide de catalogage de l'IFLA, où la notice Éthiopie donne en exemple l'abuna Lukas Tewolde : Tewolde y est le second nom.",
+            "sources": [
+              {
+                "title": "Names of Persons: National Usages for Entry in Catalogues",
+                "author": "IFLA Universal Bibliographic Control and International MARC Programme",
+                "year": 1996,
+                "url": "https://www.ifla.org/files/assets/cataloguing/pubs/names-of-persons_1996.pdf",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 64-65",
+                "notes": "Quatrième édition, Munich, K. G. Saur, 1996, lue dans le PDF de l'IFLA le 12 octobre 2026. La notice Éthiopie, p. 64-65, fournie par la bibliothèque de l'université d'Addis-Abeba et approuvée par la Bibliothèque et les Archives nationales en octobre 1994, compose le nom d'un nom personnel, suivi du nom personnel du père, parfois de celui du grand-père. Elle cite Wolde Mariam parmi les noms composés, W. Berhan pour Wolde Berhan parmi les abréviations, et l'abuna Lukas Tewolde parmi les exemples. Elle note que le Code civil de 1960 prescrit un nom de famille, usage qui ne s'est pas encore répandu."
+              }
+            ],
+            "aspect": "usage"
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Tewolde apparaît par écrit sous une forme proche, Teuoldé, dans un rapport sur la colonie italienne d'Érythrée : Meretab Teuoldé, d'Adi Nefas, y est le chef du district de Robrà, dans l'Akele Guzai. Teuoldé y est le second nom. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "Teuoldé",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Relazione sulla colonia Eritrea del R. commissario civile deputato Ferdinando Martini per gli esercizi 1902-907, vol. 3",
+                "author": "Ferdinando Martini",
+                "year": 1913,
+                "url": "https://archive.org/details/relazionesullaco03erit",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 1669",
+                "notes": "Rome, Tipografia della Camera dei deputati, 1913, rapport présenté par le ministre des Colonies. Lu sur l'exemplaire numérisé de l'université de l'Illinois, sur archive.org, le 12 octobre 2026. Page 1669, tableau des districts du commissariat régional de l'Akele Guzai : le district de Robrà a pour chef « Cagnasmac Meretab Teuoldé di Adi Nefas ». Le rapport ne dit pas ce que veut dire le nom."
+              }
+            ]
+          }
+        ],
+        "periodLabel": "Écrit Teuoldé dès 1913 ; porté aujourd'hui"
+      }
+    ]
+  }
 }

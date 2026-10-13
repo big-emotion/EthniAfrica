@@ -11,7 +11,10 @@
     {
       "spelling": "Samakuva",
       "attestations": [
-        { "countryId": "AGO", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "AGO",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -75,5 +78,66 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Samakuva est un nom de famille d'Angola. Les sources lues n'en donnent ni l'origine ni le sens.",
+    "names": [
+      {
+        "nameText": "Samakuva",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille d'Angola, dont l'origine n'est pas connue.",
+        "periodLabel": "Écrit dès 1993 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Samakuva est un nom de famille angolais, celui d'Isaías Samakuva, représentant de l'UNITA à Londres en 1993. Les sources lues ne disent pas d'où vient ce nom ni ce qu'il veut dire ; on ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "FBIS Daily Report, Sub-Saharan Africa, FBIS-AFR-93-047",
+                "author": "Foreign Broadcast Information Service",
+                "year": 1993,
+                "url": "https://archive.org/details/jprs-report_fbis-afr-93-047",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 30-31",
+                "notes": "Recueil quotidien du service américain d'écoute des médias étrangers, 12 mars 1993, lu sur l'exemplaire numérisé d'archive.org. Il transcrit un entretien diffusé le 10 mars 1993 par la télévision sud-africaine SABC avec « Brigadier Isaiaf Samakuva », représentant de l'UNITA à Londres. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1993,
+              "to": 1993,
+              "label": "10 mars 1993"
+            },
+            "era": "modern",
+            "statement": "Le nom Samakuva apparaît dans la transcription d'un entretien télévisé sur les négociations de paix en Angola, où l'UNITA est représentée par Isaías Samakuva, écrit « Isaiaf » par le transcripteur. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand la presse l'a écrit, pas depuis quand la famille le porte.",
+            "formAsWritten": "Samakuva",
+            "birth": true,
+            "sources": [
+              {
+                "title": "FBIS Daily Report, Sub-Saharan Africa, FBIS-AFR-93-047",
+                "author": "Foreign Broadcast Information Service",
+                "year": 1993,
+                "url": "https://archive.org/details/jprs-report_fbis-afr-93-047",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 30-31",
+                "notes": "Recueil quotidien du service américain d'écoute des médias étrangers, 12 mars 1993, lu sur l'exemplaire numérisé d'archive.org. Il transcrit un entretien diffusé le 10 mars 1993 par la télévision sud-africaine SABC avec « Brigadier Isaiaf Samakuva », représentant de l'UNITA à Londres. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

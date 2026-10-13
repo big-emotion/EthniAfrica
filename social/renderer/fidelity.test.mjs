@@ -2,7 +2,24 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import sharp from "sharp";
+import { readFile } from "node:fs/promises";
 import { compareImages } from "./fidelity.mjs";
+
+const json = async (path) => JSON.parse(await readFile(path, "utf8"));
+
+// @req REQ-186
+test("the reference manifest pins the accepted design version and every sample card", async () => {
+  const manifest = await json("social/renderer/reference-manifest.json");
+  const version = await json("social/design-system/version.json");
+  const samples = await json("social/design-system/handoff/cards.sample.json");
+  assert.equal(manifest.designVersion, version.version);
+  assert.equal(samples.version, version.version);
+  assert.deepEqual(
+    manifest.files.map((f) => f.id).sort(),
+    samples.cards.map((c) => c.id).sort()
+  );
+  for (const f of manifest.files) assert.equal(f.file, `${f.id}.png`);
+});
 
 const image = (colour, width = 100) =>
   sharp({ create: { width, height: 100, channels: 3, background: colour } })

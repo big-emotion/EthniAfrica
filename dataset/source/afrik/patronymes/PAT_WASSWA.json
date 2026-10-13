@@ -85,5 +85,98 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web et bibliographique combinant « Wasswa », « Waswa », « Baganda », « Buganda », « twin name », « surname », « etymology » et « transmission », ainsi que la consultation directe de « Waswa, a commoner in the Kingdom of Buganda (c.1865–c.1884) » n'ont pas établi de lignée homonyme de Wasswa dotée d'une origine distincte et documentable ; la diffusion dans plusieurs pays ne suffit pas à créer un homonyme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Wasswa est un nom du Buganda, en Ouganda, que l'on donne à l'aîné de deux jumeaux garçons. Les textes anciens l'écrivent Waswa. On ne sait pas avec certitude d'où vient ce mot : les sources lues disent à qui on le donne, pas ce qu'il veut dire.",
+    "names": [
+      {
+        "nameText": "Wasswa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lug",
+        "namedBy": null,
+        "shortLine": "Un nom du Buganda donné à l'aîné de deux jumeaux garçons.",
+        "periodLabel": "Attesté vers 1865 sous la forme Waswa ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1934,
+              "to": 1934,
+              "label": "Décrit en 1934"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wasswa, écrit Waswa, fait partie des noms réservés aux jumeaux au Buganda : Waswa et Kato pour deux garçons, selon l'anthropologue Lucy Mair. On ne sait pas avec certitude d'où vient le mot lui-même.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "An African People in the Twentieth Century",
+                "author": "Lucy Philip Mair",
+                "year": 1934,
+                "url": "https://archive.org/details/in.ernet.dli.2015.218591",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 44",
+                "notes": "Londres, George Routledge and Sons, 1934 ; thèse de doctorat de l'université de Londres. Relu le 12 octobre 2026 dans la numérisation de la Digital Library of India déposée sur Internet Archive. Page 44 : « For the twins themselves special names are prescribed — Waswa and Kato for two boys, Kato and Nakato for boy and girl, Nakato and Babirye for two girls ». La même page cite un homme nommé Yokana Waswa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1889,
+              "to": 1889,
+              "label": "1889, raconté en 1894"
+            },
+            "era": "polity",
+            "statement": "Le nom Wasswa, écrit Waswa, est celui d'un chef protestant, le mukwenda Waswa, qui résiste un temps à une attaque lors de la bataille de Kinakulia, en 1889, selon le pasteur Robert Pickering Ashe.",
+            "formAsWritten": "Waswa",
+            "actors": [
+              {
+                "name": "Robert Pickering Ashe",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Chronicles of Uganda",
+                "author": "Robert Pickering Ashe",
+                "year": 1894,
+                "url": "https://archive.org/details/chroniclesugand01ashegoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 139",
+                "notes": "Londres, Hodder and Stoughton, 1894. L'auteur, pasteur anglais, a vécu au Buganda. Relu le 12 octobre 2026 dans la numérisation d'Internet Archive. Page 139, sur la bataille de Kinakulia en 1889 : « The Mukwenda Waswa (a Protestant) sustained the attack for some time »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1865,
+              "to": 1865,
+              "label": "Vers 1865"
+            },
+            "era": "polity",
+            "statement": "Le nom Wasswa, sous une forme proche, Waswa, est celui que reçoit à sa naissance un garçon du Buganda qui sera plus tard connu sous le nom d'Apolo Kivebulaya. Il était l'aîné de jumeaux, selon l'historienne Emma Wild-Wood. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été donné à cet enfant, pas depuis quand il existe.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Apolo Kivebulaya",
+                "role": "reçoit ce nom à sa naissance, selon le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Waswa, a commoner in the Kingdom of Buganda (c.1865–c.1884)",
+                "author": "Emma Wild-Wood",
+                "year": 2020,
+                "url": "https://www.cambridge.org/core/books/abs/mission-of-apolo-kivebulaya/waswa-a-commoner-in-the-kingdom-of-buganda-c1865c1884/3BC8F0B346AAFFCD6C1EF624C8867C12",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Chapitre 2, p. 61-94, du livre The Mission of Apolo Kivebulaya, publié par Boydell and Brewer en 2020. Seul le résumé du chapitre a été lu, sur Cambridge Core, le 12 octobre 2026 : Apolo Kivebulaya est né sous le nom « Waswa », le nom de l'aîné de jumeaux garçons, au Buganda, sous le règne du kabaka Mutesa. Le résumé s'appuie aussi sur son autobiographie."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -93,5 +93,103 @@
       "fieldPath": "homonyms",
       "reason": "La recherche de Hamid et Hamidou chez Gabana et Bello n’a pas établi plusieurs origines homonymes distinctes."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Hamidou est un prénom d'origine arabe, que P. Humblot relève en 1918 chez les Malinké de Haute-Guinée. Il le rattache à l'arabe Hamid, « louable », et le dit proche d'Amadou. Les sources lues ne disent pas depuis quand ni où il sert aussi de nom de famille.",
+    "names": [
+      {
+        "nameText": "Hamidou",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un prénom d'origine arabe, de l'arabe Hamid, « louable » ; écrit dès 1918 en Haute-Guinée.",
+        "periodLabel": "Écrit dès 1918 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1918,
+              "to": 1918,
+              "label": "Décrit en 1918"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hamidou est un prénom musulman : P. Humblot le relève chez les Malinké de Haute-Guinée et dit qu'il vient de l'arabe Hamid, « louable, digne d'éloges », et qu'il est proche d'Amadou.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Du nom propre et des appellations chez les Malinké",
+                "author": "P. Humblot",
+                "year": 1918,
+                "url": "https://archive.org/details/bulletinducom2241919fren",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 401",
+                "notes": "Bulletin du Comité d'études historiques et scientifiques de l'Afrique occidentale française, 1918, n° 4 (octobre-décembre), p. 393 sqq., lu le 13 octobre 2026 dans la numérisation d'Internet Archive. La troisième partie passe en revue les prénoms recueillis dans le Bâté, le Sankaran, le Toron et le Kouranko, en Haute-Guinée. L'entrée « Hamidou » dit : « De l'arabe Hamid, louable, digne d'éloges. Doublet de Amadou. » L'en-tête de la page est mal reconnu par la numérisation (« 40i ») : nous lisons 401, en comptant depuis les pages voisines portant les numéros 394, 396 et 406."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1918,
+              "to": 1918,
+              "label": "Proposée en 1918"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hamidou viendrait de l'arabe Hamid, « louable », l'un des noms de Dieu, selon P. Humblot ; Behind the Name donne le même sens à Hamid, sans parler de la forme Hamidou.",
+            "hypothesisGroup": "origine du nom Hamidou",
+            "sources": [
+              {
+                "title": "Du nom propre et des appellations chez les Malinké",
+                "author": "P. Humblot",
+                "year": 1918,
+                "url": "https://archive.org/details/bulletinducom2241919fren",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 401",
+                "notes": "Bulletin du Comité d'études historiques et scientifiques de l'Afrique occidentale française, 1918, n° 4 (octobre-décembre), p. 393 sqq., lu le 13 octobre 2026 dans la numérisation d'Internet Archive. La troisième partie passe en revue les prénoms recueillis dans le Bâté, le Sankaran, le Toron et le Kouranko, en Haute-Guinée. L'entrée « Hamidou » dit : « De l'arabe Hamid, louable, digne d'éloges. Doublet de Amadou. » L'en-tête de la page est mal reconnu par la numérisation (« 40i ») : nous lisons 401, en comptant depuis les pages voisines portant les numéros 394, 396 et 406."
+              },
+              {
+                "title": "Meaning, origin and history of the name Hamid — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/hamid-1",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Dictionnaire communautaire de prénoms, lu le 13 octobre 2026. La notice de Hamid dit « praiseworthy » en arabe, de la racine ḥamida, « louer », et fait d'al-Ḥamīd l'un des 99 noms de Dieu ; elle s'appuie sur Ahmed (1999) et Wehr (1979), que nous n'avons pas lus. Pour la forme Hamidou, le site ne donne que « Western African » et « no name definition found »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1918,
+              "to": 1918,
+              "label": "1918"
+            },
+            "era": "colonial",
+            "statement": "Le nom Hamidou apparaît par écrit, sous la forme Hamidou, dans l'étude de P. Humblot sur les noms propres des Malinké de Haute-Guinée, publiée en 1918. C'est la plus ancienne trace de ce nom que le projet connaît ; le prénom est plus ancien que cette étude.",
+            "formAsWritten": "Hamidou",
+            "birth": true,
+            "actors": [
+              {
+                "name": "P. Humblot",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Du nom propre et des appellations chez les Malinké",
+                "author": "P. Humblot",
+                "year": 1918,
+                "url": "https://archive.org/details/bulletinducom2241919fren",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 401",
+                "notes": "Bulletin du Comité d'études historiques et scientifiques de l'Afrique occidentale française, 1918, n° 4 (octobre-décembre), p. 393 sqq., lu le 13 octobre 2026 dans la numérisation d'Internet Archive. La troisième partie passe en revue les prénoms recueillis dans le Bâté, le Sankaran, le Toron et le Kouranko, en Haute-Guinée. L'entrée « Hamidou » dit : « De l'arabe Hamid, louable, digne d'éloges. Doublet de Amadou. » L'en-tête de la page est mal reconnu par la numérisation (« 40i ») : nous lisons 401, en comptant depuis les pages voisines portant les numéros 394, 396 et 406."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

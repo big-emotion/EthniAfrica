@@ -87,5 +87,86 @@
       "fieldPath": "homonyms",
       "reason": "Les catalogues et recherches exactes consultés n'établissent pas de lignée Rakotomalala d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Rakotomalala est un nom de personne malgache, porté aujourd'hui comme nom de famille. Il commence par Ra, que le malgache place devant les noms de personnes. On ne sait pas avec certitude ce que veut dire le reste du nom ni d'où il vient : les sources que nous avons lues ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Rakotomalala",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne malgache porté comme nom de famille ; on ne sait pas avec certitude ce qu'il veut dire.",
+        "periodLabel": "Écrit dès 1924 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Rakotomalala est un nom de personne malgache, porté comme nom de famille, par exemple par Malanjaona Rakotomalala, coauteur d'un livre sur les ancêtres à Madagascar. Il commence par Ra, que le malgache place devant les noms de personnes. Les sources lues ne disent ni ce que veut dire le reste du nom, ni d'où il vient, ni comment il se transmet.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Madagascar : les ancêtres au quotidien",
+                "author": "L'Harmattan",
+                "year": 2001,
+                "url": "https://www.editions-harmattan.fr/catalogue/livre/madagascar-les-ancetres-au-quotidien/63859",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice de l'éditeur, lue le 11 octobre 2026. Livre de sciences humaines de Sophie Blanchy, Malanjaona Rakotomalala et Françoise Raison-Jourde. La notice atteste le nom, pas son origine."
+              },
+              {
+                "title": "Dictionnaire malgache-français",
+                "author": "Antoine Abinal et Victorin Malzac",
+                "year": 1888,
+                "url": "https://archive.org/details/dictionnairemalg00abin",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 456",
+                "notes": "Tananarive, Imprimerie de la Mission catholique, 1888. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 456, article Ra : « Article personnel qui se met ordinairement devant les noms propres : Ra-bé, Ra-láy, qu'on écrit Rabe, Ralay ». Auteurs de l'époque coloniale, cités ici pour les formes qu'ils relèvent."
+              }
+            ]
+          },
+          {
+            "period": { "from": 1924, "to": 1924, "label": "1924" },
+            "statement": "Le nom Rakotomalala apparaît par écrit comme nom d'auteur d'un texte d'Alphonse Rakotomalala sur la fièvre récurrente à Madagascar, daté de 1924, selon le catalogue de la Bibliothèque nationale de France. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est donné.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notice bibliographique « La fièvre récurrente (Tick-fever) à Madagascar »",
+                "author": "Bibliothèque nationale de France",
+                "year": 1924,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb36923953z",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice de la Bibliothèque nationale de France, lue le 11 octobre 2026. Texte d'Alphonse Rakotomalala daté de 1924 ; la notice ne donne pas le lieu d'édition. C'est la plus ancienne publication sous ce nom que donne le catalogue."
+              }
+            ]
+          },
+          {
+            "period": { "from": 1888, "to": 1888, "label": "1888" },
+            "era": "colonial",
+            "statement": "Le nom Rakoto est déjà un nom de personne : le dictionnaire d'Antoine Abinal et Victorin Malzac l'emploie dans l'exemple « Satro-dRakoto, pour satroka ny Rakoto ». Ce dictionnaire traduit aussi le mot kóto par « un garçon », sans dire si le nom vient de ce mot.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Dictionnaire malgache-français",
+                "author": "Antoine Abinal et Victorin Malzac",
+                "year": 1888,
+                "url": "https://archive.org/details/dictionnairemalg00abin",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 332 ; p. 456",
+                "notes": "Tananarive, Imprimerie de la Mission catholique, 1888. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 456, article Ra : « Article personnel qui se met ordinairement devant les noms propres : Ra-bé, Ra-láy, qu'on écrit Rabe, Ralay ». Même page, article R : « Satro-dRakóto, pour satroka ny Rakoto », exemple où Rakoto est un nom de personne. Page 332 : « Kóto, s. Un garçon ». Auteurs de l'époque coloniale, cités ici pour les formes qu'ils relèvent."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

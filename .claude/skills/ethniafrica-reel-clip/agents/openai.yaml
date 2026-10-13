@@ -1,0 +1,4 @@
+interface:
+  display_name: "EthniAfrica Reel Clip"
+  short_description: "Turn a video and an instruction into a subtitled reel with captions"
+  default_prompt: "Use $ethniafrica-reel-clip with a video file and an instruction to produce a subtitled EthniAfrica reel."

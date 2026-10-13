@@ -130,5 +130,293 @@
         "source_kind": "ngo"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Haiǁom désigne un peuple du nord de la Namibie, autour du pan d'Etosha, qui se nomme lui-même Haiǁom. D'autres noms existent : Heikum, une forme plus ancienne du même nom, et ǂAakhoe, associé à leur langue. Les sources ne s'accordent pas sur l'origine du nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Haiǁom",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "hgm",
+        "namedBy": null,
+        "shortLine": "Le nom qu'ils se donnent ; sources et anciens l'expliquent par le sommeil dans les arbres ou la brousse.",
+        "usedIn": ["hgm", "naq", "eng"],
+        "periodLabel": "Écrit dès 1925-1926 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Haiǁom désigne aujourd'hui un peuple de Namibie, parmi les premiers habitants connus du parc national d'Etosha, selon une fiche du ministère namibien de l'Environnement et du Tourisme. Son origine est discutée : les explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Etosha National Park: Past and present",
+                "author": "Ministry of Environment and Tourism, Republic of Namibia",
+                "year": null,
+                "url": "https://www.embassyofnamibia.fr/perch/resources/pdf/etosha-national-park-history-sheet-etosha.pdf",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Fiche de présentation non datée, diffusée par l'ambassade de Namibie en France ; lue le 11 octobre 2026. Rubrique « Before the park was a park »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Haiǁom est aussi celui de leur langue dans la norme ISO 639-3, qui l'écrit depuis 2018 avec le signe ǁ du clic latéral au lieu de deux barres obliques.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, code hgm : Haiǁom",
+                "author": "SIL International",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/hgm",
+                "tier": "official",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1925,
+              "to": 1926,
+              "label": "1925-1926"
+            },
+            "era": "colonial",
+            "statement": "Le nom Haiǁom apparaît sous la forme Hei-//om dans le titre d'un article de L. Fourie sur leurs coutumes, publié en 1925-1926, selon la bibliographie d'Isaac Schapera. C'est la plus ancienne trace de cette forme que le projet connaît. Le peuple qu'il désigne vivait déjà autour d'Etosha.",
+            "formAsWritten": "Hei-//om",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 34",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Haiǁom viendrait du nama heib, « buisson », et ǁom, « dormir » : il voudrait dire « ceux qui dorment dans la brousse », selon le Dictionary of South African English. O. Levinson le traduit de la même façon dans une histoire de la Namibie parue en 1976.",
+            "hypothesisGroup": "origine du nom Haiǁom",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Heikum »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Heikum/e02987",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "Proposée en 1930"
+            },
+            "era": "colonial",
+            "statement": "Le nom Haiǁom voudrait dire « habitants des arbres », selon l'anthropologue Isaac Schapera, qui l'écrit Hei-//om et le donne avec sa forme Heikum.",
+            "hypothesisGroup": "origine du nom Haiǁom",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 34",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Haiǁom viendrait des plates-formes, appelées #heeb, que ce peuple bâtissait dans les arbres pour se protéger des moustiques et du paludisme, en brûlant des plantes en dessous ; d'où leur surnom de « gens des arbres », selon une fiche du ministère namibien de l'Environnement et du Tourisme.",
+            "hypothesisGroup": "origine du nom Haiǁom",
+            "sources": [
+              {
+                "title": "Etosha National Park: Past and present",
+                "author": "Ministry of Environment and Tourism, Republic of Namibia",
+                "year": null,
+                "url": "https://www.embassyofnamibia.fr/perch/resources/pdf/etosha-national-park-history-sheet-etosha.pdf",
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Fiche de présentation non datée, diffusée par l'ambassade de Namibie en France ; lue le 11 octobre 2026. Rubrique « Before the park was a park »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "Rapporté en 2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Haiǁom viendrait du temps où les gens dormaient dans les arbres pour se protéger des lions et d'autres prédateurs, selon les anciens de Tsintsabis cités par Ron Swilling dans le magazine Travel Namibia.",
+            "hypothesisGroup": "origine du nom Haiǁom",
+            "sources": [
+              {
+                "title": "Etosha region – Tsintsabis Treesleeper Camp",
+                "author": "Ron Swilling",
+                "year": 2012,
+                "url": "https://travelnam.com/tsinsabis-treesleeper-camp/",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "narrative": "D'où vient le nom Haiǁom",
+                "carrier": "Anciens de Tsintsabis, cités par Ron Swilling",
+                "place": "Tsintsabis, Namibie",
+                "notes": "Article paru le 3 septembre 2012 dans le magazine Travel Namibia ; lu le 11 octobre 2026. L'article présente le camp Treesleeper, que gère la communauté haiǁom de Tsintsabis, et rapporte ce que disent « les grands-pères et les anciens »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Heikum",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": "naq",
+        "namedBy": null,
+        "shortLine": "Une forme plus ancienne du même nom, écrite par les voyageurs et les savants européens.",
+        "usedIn": ["eng", "deu", "afr"],
+        "periodLabel": "Écrit sous une forme proche dès 1731",
+        "accounts": [
+          {
+            "period": {
+              "from": 1966,
+              "to": 1966,
+              "label": "1966"
+            },
+            "era": "colonial",
+            "statement": "Le nom Heikum désigne, chez J. P. van S. Bruwer, l'une des quatre sections de « Bushmen » qui vivent encore dans le Sud-Ouest africain, selon le Dictionary of South African English.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Heikum »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Heikum/e02987",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1906,
+              "to": 1906,
+              "label": "1906"
+            },
+            "era": "colonial",
+            "statement": "Le nom Heikum figure en 1906 dans le titre d'une étude de H. Werner sur les « Heikum- und Kungbuschleute », publiée dans la Zeitschrift für Ethnologie, selon la bibliographie d'Isaac Schapera.",
+            "sources": [
+              {
+                "title": "The Khoisan Peoples of South Africa: Bushmen and Hottentots",
+                "author": "Isaac Schapera",
+                "year": 1930,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283438",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 33, en note",
+                "notes": "Londres, Routledge, première édition en 1930. Lu dans une réimpression numérisée par Internet Archive. L'auteur emploie les noms « Bushmen » et « Hottentots » de son époque."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1731,
+              "to": 1731,
+              "label": "1731"
+            },
+            "statement": "Le nom Heikum a une forme proche, Heykoms, dans la traduction anglaise par G. Medley de l'ouvrage de P. Kolben sur le cap de Bonne-Espérance, parue en 1731 : il y nomme une « nation » voisine des Chamtouers, au nord-est, selon le Dictionary of South African English. C'est la plus ancienne trace de ce nom que le projet connaît. Le dictionnaire y voit le même peuple, qui aurait d'abord vécu près du Cap ; nous n'avons pas lu d'autre source qui le confirme.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Heikum »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Heikum/e02987",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Heikum viendrait du nama Hei-ǁom, le nom que se donnent les Haiǁom, selon le Dictionary of South African English.",
+            "hypothesisGroup": "origine du nom Heikum",
+            "sources": [
+              {
+                "title": "Dictionary of South African English on Historical Principles, entrée « Heikum »",
+                "author": "Dictionary Unit for South African English",
+                "year": null,
+                "url": "https://dsae.co.za/entry/Heikum/e02987",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "ǂAakhoe",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom associé à leur langue dans les catalogues ; son origine n'est pas documentée.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom ǂAakhoe est associé à celui des Haiǁom dans le catalogue de langues Glottolog, qui range leurs parlers ensemble sous le nom Hai//om-Akhoe. On ne sait pas avec certitude d'où vient ce nom ni depuis quand il est employé.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog, Hai//om-Akhoe (haio1238)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/haio1238",
+                "tier": "official",
+                "source_kind": "linguistic_reference"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -102,5 +102,145 @@
         "tier": "referenced"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Néyo désigne un peuple de langue krou de l'embouchure du Sassandra, dans le sud-ouest de la Côte d'Ivoire, dont la langue s'appelle le néouolé. On ne sait pas comment ce peuple se nomme lui-même. Les administrateurs coloniaux écrivaient Néyau ou Néyaus. Nous n'avons pas trouvé de source qui explique l'origine du nom Néyo ; nous présentons plus bas ce que disent les sources de son histoire.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Néyo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom courant de ce peuple de Sassandra, écrit Néyaus dès 1902 par l'administrateur Thomann.",
+        "periodLabel": "Cité dès 1902 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Néyau est celui que l'administrateur colonial Georges Thomann donne à une peuplade du pays de Krou, dans l'ouest de la Côte d'Ivoire. Il place son territoire entre Kotrou à l'est et Victory à l'ouest, et écrit que sa langue, le néouolé, est connue presque sur tout le littoral, parce que ces hommes travaillent depuis longtemps dans les ports de la colonie.",
+            "formAsWritten": "Néyau",
+            "sources": [
+              {
+                "title": "Essai de manuel de la langue néouolé parlée dans la partie occidentale de la Côte d'Ivoire",
+                "author": "Georges Thomann",
+                "year": 1905,
+                "url": "https://archive.org/details/bub_gb_XEU-AAAAYAAJ",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "Préface, § I (« Domaine de la langue néouolé »)",
+                "notes": "Paris, Ernest Leroux, 1905. Lu sur la numérisation de l'université Harvard, sur Internet Archive, le 12 octobre 2026. Thomann dit avoir commencé l'étude de cette langue en 1893, quand il dirigeait le cercle de Sassandra."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Neyo, aussi écrit Niyo, apparaît chez Maurice Delafosse pour un peuple dont le pays s'appelle Nihiri et dont la langue est le niwole ou newole. Delafosse le place à Trépoint, Sassandra et Drewin et le dit formé de deux familles, les Bokré, d'origine bété, et les Kèbè, qui seraient venus d'un pays bakoué à l'ouest.",
+            "formAsWritten": "Neyo",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 68-69",
+                "notes": "Paris, Ernest Leroux, 1904. Lu sur sa numérisation par la bibliothèque de l'université de Toronto, le 12 octobre 2026. Le vocabulaire néouolé de ce livre a été recueilli en 1903 à Bondoukou auprès d'un Néyo de Sassandra, puis revu par Thomann."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom Néyaus apparaît dans un recueil de coutumes de la Côte d'Ivoire, où l'administrateur adjoint Georges Thomann l'emploie pour les habitants du cercle de Sassandra, répartis en deux groupes, Sassandra ou Bokré et Drewin ou Kéké. Il écrit que ces groupes, d'origines très variées, se sont si bien mêlés qu'ils ont acquis un type unique et une langue particulière, le néouolé. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait là bien avant lui.",
+            "formAsWritten": "Néyaus",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les coutumes indigènes de la Côte d'Ivoire",
+                "author": "François-Joseph Clozel et Roger Villamur",
+                "year": 1902,
+                "url": "https://archive.org/details/lescoutumesindig00cloz",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 494",
+                "notes": "Paris, Challamel, 1902. Lu sur Internet Archive le 12 octobre 2026. Chapitre « Coutumes des Kroumen de Sassandra », recueillies par M. G. Thomann ; première section, « De la famille ». Thomann publie aussi en 1901 un article sur la Sassandra dans le Bulletin du Comité de l'Afrique française, que nous n'avons pas lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Néouolé",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "ney",
+        "namedBy": null,
+        "shortLine": "Le nom de la langue des Néyo, écrit Néouolé dès 1902.",
+        "periodLabel": "Cité dès 1902",
+        "accounts": [
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom néouolé, ou néwolé, désigne la langue des Néyau, selon l'administrateur Georges Thomann, qui en publie un manuel. Il écrit que beaucoup de gens de la côte, des traitants d'Assinie et de Grand-Bassam aux gens de Jacqueville et de Grand-Lahou, la comprennent.",
+            "formAsWritten": "néouolé",
+            "sources": [
+              {
+                "title": "Essai de manuel de la langue néouolé parlée dans la partie occidentale de la Côte d'Ivoire",
+                "author": "Georges Thomann",
+                "year": 1905,
+                "url": "https://archive.org/details/bub_gb_XEU-AAAAYAAJ",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "Préface, § I (« Domaine de la langue néouolé »)",
+                "notes": "Paris, Ernest Leroux, 1905. Lu sur la numérisation de l'université Harvard, sur Internet Archive, le 12 octobre 2026. "
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1902,
+              "to": 1902,
+              "label": "1902"
+            },
+            "era": "colonial",
+            "statement": "Le nom Néouolé apparaît dans un recueil de coutumes de la Côte d'Ivoire comme la langue particulière des Néyaus, les habitants du cercle de Sassandra, selon Georges Thomann. C'est la plus ancienne trace de ce nom que le projet connaît. La langue existait déjà avant lui.",
+            "formAsWritten": "Néouolé",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les coutumes indigènes de la Côte d'Ivoire",
+                "author": "François-Joseph Clozel et Roger Villamur",
+                "year": 1902,
+                "url": "https://archive.org/details/lescoutumesindig00cloz",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 494",
+                "notes": "Paris, Challamel, 1902. Lu sur Internet Archive le 12 octobre 2026. Chapitre « Coutumes des Kroumen de Sassandra », recueillies par M. G. Thomann."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

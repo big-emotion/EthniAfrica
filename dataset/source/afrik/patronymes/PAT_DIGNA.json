@@ -108,5 +108,224 @@
       "fieldPath": "homonyms",
       "reason": "Le livre de Jackson et les références consultées ne permettent pas encore de présenter un autre nom écrit Digna ou Dignai, mais d'origine différente."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Digna est celui d'une famille de marchands de Suakin, ville portuaire de l'est du Soudan. On l'écrit aussi Dignai. Les sources ne s'accordent pas sur l'origine de la famille ni sur le sens du nom ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Digna",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'une famille de marchands de Suakin, au Soudan, écrit dès 1891 ; son sens reste discuté.",
+        "periodLabel": "Écrit dès 1891",
+        "accounts": [
+          {
+            "period": {
+              "from": 1926,
+              "to": 1926,
+              "label": "Décrit en 1926"
+            },
+            "era": "colonial",
+            "statement": "Le nom Digna est celui d'une famille connue de Suakin, que H. C. Jackson appelle aussi Dignai. Pour lui, c'est simplement un nom de famille : si la famille avait été assez nombreuse, il aurait pu devenir le nom d'une fraction de tribu, comme chez les Hadendoa. Il écarte deux explications du mot ; nous les présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Osman Digna",
+                "author": "H. C. Jackson",
+                "year": 1926,
+                "url": "https://archive.org/details/in.ernet.dli.2015.506204",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 22",
+                "notes": "Londres, Methuen, 1926. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026 ; les pages citées sont celles de l'impression. P. 22 : « Digna was merely the family name, which, if the family were ever to become sufficiently numerous, would ultimately be the designation of a section of a tribe »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1926,
+              "to": 1926,
+              "label": "Rapporté en 1926"
+            },
+            "era": "colonial",
+            "statement": "Le nom Digna viendrait de l'arabe « abu dign », « le père d'une barbe », selon certains auteurs que cite H. C. Jackson. Il ne les suit pas : une barbe n'a rien de remarquable dans l'est du Soudan.",
+            "hypothesisGroup": "origine du nom Digna",
+            "sources": [
+              {
+                "title": "Osman Digna",
+                "author": "H. C. Jackson",
+                "year": 1926,
+                "url": "https://archive.org/details/in.ernet.dli.2015.506204",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 22",
+                "notes": "Londres, Methuen, 1926. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026 ; les pages citées sont celles de l'impression. P. 22 : « Abu Dign in Arabic signifying the father of a beard. This, however, is no particular distinction in the Eastern Sudan. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1926,
+              "to": 1926,
+              "label": "Rapporté en 1926"
+            },
+            "era": "colonial",
+            "statement": "Le nom Digna viendrait du mot hadendoa « dikna », qui voudrait dire « laid », selon d'autres auteurs que cite H. C. Jackson. Il écarte cette explication : presque tous les habitants de Suakin ont la peau plus claire que les Hadendoa et les Béni Amer.",
+            "hypothesisGroup": "origine du nom Digna",
+            "sources": [
+              {
+                "title": "Osman Digna",
+                "author": "H. C. Jackson",
+                "year": 1926,
+                "url": "https://archive.org/details/in.ernet.dli.2015.506204",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 22",
+                "notes": "Londres, Methuen, 1926. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026 ; les pages citées sont celles de l'impression. P. 22 : « Dikna in the Hadendoa language denotes ugly [...] This account cannot be accepted »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1926,
+              "to": 1926,
+              "label": "Rapporté en 1926"
+            },
+            "era": "colonial",
+            "statement": "Le nom Digna serait celui d'une famille venue de Diyarbakır, en pays kurde, à Suakin vers 1512-1520, au temps du sultan Selim, puis alliée aux Hadendoa et aux Arteiga, selon une tradition locale que rapporte H. C. Jackson. Il situe aussi, à la fin du XVIIIe siècle, l'arrivée d'un certain Ali Digna, kurde de Diyarbakır, dont le fils Mohammed aurait eu Fagi et Abu Baler, père d'Osman Digna. Il ne dit pas comment concilier les deux dates, sinon que des ancêtres d'Ali Digna l'avaient précédé au XVIe siècle.",
+            "hypothesisGroup": "origine de la famille Digna",
+            "sources": [
+              {
+                "title": "Osman Digna",
+                "author": "H. C. Jackson",
+                "year": 1926,
+                "url": "https://archive.org/details/in.ernet.dli.2015.506204",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 22, 57",
+                "notes": "Londres, Methuen, 1926. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026 ; les pages citées sont celles de l'impression. P. 22 : « appear originally to have been Kurds from Diarbekr who came to Suakin about the time of Selim the Conqueror, A.D. 1512-1520 ». P. 57 : « Towards the close of the eighteenth century a man named Ali Digna came to Suakin from Diarbekr », avec la note « Some of his ancestors had preceded him at the beginning of the sixteenth century », et « as local tradition makes them to have done »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1891,
+              "to": 1891,
+              "label": "Proposé en 1891"
+            },
+            "statement": "Le nom Digna serait celui d'une famille d'origine turque, dont les ancêtres seraient venus de Constantinople trois cents ans plus tôt avant de s'allier aux Hadendowa, selon Francis Reginald Wingate. Il s'agit de la famille d'Osman Digna, qu'il présente comme l'un des marchands d'esclaves les plus habiles de Suakin.",
+            "hypothesisGroup": "origine de la famille Digna",
+            "sources": [
+              {
+                "title": "Mahdiism and the Egyptian Sudan: being an account of the rise and progress of Mahdiism and of subsequent events in the Sudan to the present time",
+                "author": "Francis Reginald Wingate",
+                "year": 1891,
+                "url": "https://archive.org/details/mahdiismandegyp01winggoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 92",
+                "notes": "Londres et New York, Macmillan, 1891. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 92 (en-tête « History of the Sudan », livre IV), section « Suakin, 1883 » : « the redoubtable Osman Digna. He was of Turkish extraction, his ancestors having come from Constantinople 300 years before ; but the family had intermarried with the Hadendowa tribe »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1891,
+              "to": 1891,
+              "label": "1891"
+            },
+            "statement": "Le nom Digna apparaît par écrit en 1891 dans l'ouvrage de Francis Reginald Wingate sur le mahdisme, qui nomme « Osman Digna », de Suakin, assiégeant la ville en 1883. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a écrit, pas depuis quand la famille le porte, et la famille existait déjà avant lui.",
+            "formAsWritten": "Osman Digna",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Francis Reginald Wingate",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Osman Digna",
+                "role": "personne que le texte nomme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Mahdiism and the Egyptian Sudan: being an account of the rise and progress of Mahdiism and of subsequent events in the Sudan to the present time",
+                "author": "Francis Reginald Wingate",
+                "year": 1891,
+                "url": "https://archive.org/details/mahdiismandegyp01winggoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 92",
+                "notes": "Londres et New York, Macmillan, 1891. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026. Page 92 (en-tête « History of the Sudan », livre IV), section « Suakin, 1883 » : « the redoubtable Osman Digna. He was of Turkish extraction, his ancestors having come from Constantinople 300 years before ; but the family had intermarried with the Hadendowa tribe »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Dignai",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'autre écriture de Digna, écrite dès 1926 pour la famille de Suakin.",
+        "periodLabel": "Écrit dès 1926",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1926,
+              "to": 1926,
+              "label": "Décrit en 1926"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dignai est l'autre écriture de Digna chez H. C. Jackson, qui parle de « la famille Digna, ou Dignai », de Suakin.",
+            "sources": [
+              {
+                "title": "Osman Digna",
+                "author": "H. C. Jackson",
+                "year": 1926,
+                "url": "https://archive.org/details/in.ernet.dli.2015.506204",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 22",
+                "notes": "Londres, Methuen, 1926. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026 ; les pages citées sont celles de l'impression. P. 22 : « The Digna, or Dignai, family »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1926,
+              "to": 1926,
+              "label": "1926"
+            },
+            "era": "colonial",
+            "statement": "Le nom Dignai apparaît par écrit dans la monographie que H. C. Jackson consacre à Osman Digna : il y désigne une famille connue de Suakin, active dans la vie civile de la ville. C'est la plus ancienne trace de cette écriture que le projet connaît ; elle dit quand un auteur l'a écrite, pas depuis quand la famille la porte.",
+            "formAsWritten": "Dignai",
+            "birth": true,
+            "actors": [
+              {
+                "name": "H. C. Jackson",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Osman Digna",
+                "author": "H. C. Jackson",
+                "year": 1926,
+                "url": "https://archive.org/details/in.ernet.dli.2015.506204",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 22",
+                "notes": "Londres, Methuen, 1926. Lu sur l'exemplaire numérisé d'archive.org le 12 octobre 2026 ; les pages citées sont celles de l'impression. P. 22 : « He belonged to a well-known Suakin family called the Dignai. »"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

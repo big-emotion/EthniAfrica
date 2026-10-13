@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -84,7 +84,132 @@
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+      "reason": "Les sources lues ne disent pas comment le nom Vieira se transmet en Guinée-Bissau : le mode reste « other »."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Vieira est un nom de famille d'origine portugaise : Alaiquet Papa Vieira Có ne le compte pas parmi les noms des sept clans pepel. Le modèle n'a pas de case pour un nom de famille héréditaire venu d'Europe : la fiche garde la case des noms de clan, la plus proche, avec la lignée pour unité, sans dire que Vieira est un clan."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Vieira est un nom de famille d'origine portugaise, porté en Guinée-Bissau, entre autres chez les Pepel, dont il n'est pas l'un des noms de clan. Au Portugal, un linguiste le range parmi les noms de famille tirés d'un nom de lieu, et un dictionnaire des noms de famille le rattache à des lieux appelés Vieira. On ne sait pas avec certitude depuis quand ni comment il est arrivé en Guinée-Bissau.",
+    "names": [
+      {
+        "nameText": "Vieira",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille d'origine portugaise porté en Guinée-Bissau, qui n'est pas un nom de clan pepel.",
+        "periodLabel": "Écrit au Portugal dès le XVIIe siècle ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2007,
+              "to": 2007,
+              "label": "2007"
+            },
+            "era": "modern",
+            "statement": "Le nom Vieira est porté en Guinée-Bissau, entre autres chez les Pepel : Minority Rights Group présente l'ancien chef de l'État João Bernardo Vieira comme issu de ce petit peuple. On ne sait pas avec certitude depuis quand ni comment ce nom d'origine portugaise y est arrivé.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "World Directory of Minorities and Indigenous Peoples — Guinea-Bissau",
+                "author": "Minority Rights Group International",
+                "year": 2007,
+                "url": "https://web.archive.org/web/20160103010129/http://www.refworld.org/docid/4954ce5fc.html",
+                "tier": "referenced",
+                "source_kind": "ngo",
+                "notes": "Notice pays publiée en 2007 et reprise par Refworld, le site du Haut-Commissariat des Nations unies pour les réfugiés. Lue le 12 octobre 2026 dans la copie du 3 janvier 2016 conservée par la Wayback Machine, le site de Refworld refusant l'accès. La notice dit que João Bernardo « Nino » Vieira venait « du petit peuple papel », qu'elle compte à 103 000 personnes, surtout sur l'île de Bissau. Elle ne parle pas du nom lui-même."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Décrit en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Vieira ne figure pas parmi les noms de famille des sept clans pepel, appelés djorson : Nanque ou Ié, Có, Cá, Indi, Djú, Té et Sá, selon Alaiquet Papa Vieira Có.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Reinado da etnia pepel na Guiné-Bissau: um estudo de caso de Pepel de Bijimita (1973-2023)",
+                "author": "Alaiquet Papa Vieira Có",
+                "year": 2024,
+                "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/5707/1/ALAIQUET%20PAPA%20VIEIRA%20C%c3%93.pdf",
+                "tier": "unverified",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Projet de fin de licence, Université de l'intégration internationale de la lusophonie afro-brésilienne (UNILAB), 2024, lu le 11 octobre 2026. Page 5 : les Pepel se divisent en sept clans, ou djorson, chacun avec son nom de famille : Djagra (Nanque ou Ié), Bassó (Có), Badjucumó (Cá), Batat (Indi), Bassuro (Djú), Bassafinté (Té) et Baiga (Sá)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1928,
+              "to": 1928,
+              "label": "Proposée en 1928"
+            },
+            "statement": "Le nom Vieira serait, au Portugal, un nom de famille tiré d'un nom de lieu, comme Viana ou Viseu, selon le linguiste José Leite de Vasconcelos.",
+            "hypothesisGroup": "origine du nom Vieira",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 166-167",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org. Pages 166-167 : liste des noms de famille tirés de noms de lieux, villes, villages ou domaines, où Vieira figure entre Vidal et Vilaça."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposée en 2022"
+            },
+            "statement": "Le nom Vieira viendrait de l'un des lieux appelés Vieira au Portugal et en Galice, un nom de lieu peut-être tiré de via, « chemin », ou du mot vieira, « coquille Saint-Jacques », le signe des pèlerins de Compostelle, selon le Dictionary of American Family Names.",
+            "hypothesisGroup": "origine du nom Vieira",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Vieira",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://web.archive.org/web/20251226120518/https://www.ancestry.com/last-name-meaning/vieira",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 12 octobre 2026 dans la copie du 26 décembre 2025 conservée par la Wayback Machine, le site d'Ancestry refusant l'accès. La notice dit : nom portugais et galicien, tiré de l'un des lieux appelés Vieira au Portugal et en Galice, peut-être dérivé de via, « chemin », ou formé sur vieira, « coquille Saint-Jacques », symbole du pèlerin revenu de Saint-Jacques-de-Compostelle. Elle ne choisit pas entre ces deux lectures."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1601,
+              "to": 1700,
+              "label": "XVIIe siècle"
+            },
+            "statement": "Le nom Vieira apparaît au Portugal dans un registre d'inscriptions du XVIIe siècle, où un Domingos Francisco est dit fils de Francisco Vieira, selon José Leite de Vasconcelos. C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne dit rien de son arrivée en Guinée-Bissau.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 130",
+                "notes": "Lisbonne, Imprensa Nacional, 1928. Lu le 11 octobre 2026 sur l'exemplaire numérisé d'archive.org. Page 130 : parmi les exemples du XVIIe siècle tirés du Livro das matrículas, vol. 1, « Domingos Francisco, filho de Francisco Vieira »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

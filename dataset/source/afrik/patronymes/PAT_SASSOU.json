@@ -75,5 +75,64 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Sassou fait partie du nom de Denis Sassou-Nguesso, président de la République du Congo, un Mbochi né à Edou, près d'Oyo. Un de ses fils porte aussi le nom Sassou Nguesso. On ne sait pas avec certitude ce que veut dire Sassou ni d'où il vient : aucune source que nous avons lue ne l'explique.",
+    "names": [
+      {
+        "nameText": "Sassou",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom porté au Congo avec Nguesso ; on ne sait pas ce qu'il veut dire.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "Rapporté en 2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Sassou fait partie du nom de Denis Sassou-Nguesso, président de la République du Congo, un Mbochi né en 1943 à Edou, près d'Oyo, selon le dictionnaire historique de John F. Clark et Samuel Decalo. Le dictionnaire ne dit pas ce que veut dire Sassou ni d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Historical Dictionary of Republic of the Congo",
+                "author": "John F. Clark et Samuel Decalo",
+                "year": 2012,
+                "url": "https://archive.org/details/historicaldictio0000clar",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "entrée « Sassou-Nguesso, Denis (General) »",
+                "notes": "Lanham, Scarecrow Press, 4e édition, 2012. Exemplaire de prêt numérisé d'archive.org, lu par la recherche plein texte. L'entrée dit : « An Mbochi born at Edou, near the town of Oyo, in the southern Cuvette region, in 1943 ». Elle ne dit rien de l'origine du nom. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Mai 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Sassou Nguesso est porté aussi par un fils du président : Denis Christel Sassou Nguesso devient ministre de la Coopération internationale en 2021, selon une dépêche de l'AFP.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Congo president Sassou Nguesso appoints son as minister in new govt",
+                "author": "AFP / Nation Africa",
+                "year": 2021,
+                "url": "https://nation.africa/kenya/news/africa/congo-president-sassou-nguesso-appoints-son-as-minister-in-new-govt-3402682",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Dépêche du 16 mai 2021 : « The President's son, Denis Christel Sassou Nguesso, will head up the newly-created ministry of international cooperation ». Elle ne dit rien de l'origine du nom. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

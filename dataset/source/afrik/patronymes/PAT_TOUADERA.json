@@ -85,5 +85,64 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Touadéra à un peuple en République centrafricaine. Nous n'avons pas encore consulté de source consacrée à ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Touadéra est un nom de famille de Centrafrique. Il est écrit dès 1986, sans accent, dans le catalogue des thèses soutenues en France. On ne sait pas avec certitude d'où vient ce nom ni ce qu'il veut dire : le projet n'a pas trouvé de source qui l'explique.",
+    "names": [
+      {
+        "nameText": "Touadéra",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille de Centrafrique, écrit dès 1986 sans accent.",
+        "periodLabel": "Écrit dès 1986 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Sens du nom"
+            },
+            "statement": "Le nom Touadéra est un nom de famille. Les sources que le projet a lues ne disent ni d'où il vient ni ce qu'il veut dire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Problèmes de Cauchy matriciels C∞ et dans les espaces de Sobolev, à caractéristiques multiples",
+                "author": "Faustin Touadera",
+                "year": 1986,
+                "url": "https://theses.fr/1986LIL10085",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "notice 1986LIL10085",
+                "notes": "Seule la notice de la thèse a été lue, pas la thèse. Notice d'une thèse de mathématiques pures soutenue à l'université de Lille 1 en 1986, numéro national 1986LIL10085. Lue le 12 octobre 2026 dans les données de theses.fr. L'auteur y est inscrit sous le nom « Touadera », prénom « Faustin », sans accent ; la notice d'autorité IdRef 031796222 le rattache à la Centrafrique."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "1986"
+            },
+            "statement": "Le nom Touadéra apparaît par écrit, sans accent, dans la notice d'une thèse de mathématiques soutenue à l'université de Lille en 1986. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est porté.",
+            "formAsWritten": "Touadera",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Problèmes de Cauchy matriciels C∞ et dans les espaces de Sobolev, à caractéristiques multiples",
+                "author": "Faustin Touadera",
+                "year": 1986,
+                "url": "https://theses.fr/1986LIL10085",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "notice 1986LIL10085",
+                "notes": "Seule la notice de la thèse a été lue, pas la thèse. Notice d'une thèse de mathématiques pures soutenue à l'université de Lille 1 en 1986, numéro national 1986LIL10085. Lue le 12 octobre 2026 dans les données de theses.fr. L'auteur y est inscrit sous le nom « Touadera », prénom « Faustin », sans accent ; la notice d'autorité IdRef 031796222 le rattache à la Centrafrique."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

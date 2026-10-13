@@ -112,5 +112,217 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kunda désigne un peuple de la vallée de la Luangwa, dans le district de Mambwe, en Zambie orientale, et sa langue. Ce peuple se nomme lui-même Kunda. Avant sa migration, il aurait porté un autre nom, Awetwe, selon un chef kunda. Il ne faut pas confondre le nom Kunda avec Chikunda, qui désigne d'autres gens et une autre langue. Les sources ne s'accordent pas sur l'origine du nom Kunda ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Kunda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple de la Luangwa, en Zambie orientale, et de sa langue ; on ne sait pas d'où il vient.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Kunda désigne un peuple de la vallée de la Luangwa, dans le district de Mambwe, en Zambie orientale, et la langue qu'il parle, selon une enquête linguistique de 2015. Elle écrit Kunda pour le peuple comme pour la langue, et précise que les Kunda ajoutent parfois le préfixe chi- pour nommer leur langue. L'origine du nom est discutée ; on ne sait pas avec certitude depuis quand il est écrit.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Kunda of Zambia – Partners in Bible Translation Survey, 2015",
+                "author": "Daison Banda, Christopher Mbewe, Daka Josephat et Kenneth S. Sawka",
+                "year": 2015,
+                "url": "http://partnersinbibletranslation.org/wp-content/uploads/2018/03/KundaSurvey_2015.pdf",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "page": "p. 4, 6",
+                "notes": "Rapport de Partners in Bible Translation sur une enquête menée du 16 au 25 septembre 2013 dans le district de Mambwe, PDF mis en ligne en 2015, lu le 12 octobre 2026. Page 4, § 1.2 : « Kunda is the name used in this report to refer to the people group as well as the language ». Page 6, § 1.4 : les Kunda habitent la vallée de la Luangwa entre le 13e et le 14e parallèle sud."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant la migration vers la Luangwa"
+            },
+            "statement": "Le nom Awetwe est celui que ce peuple aurait porté avant sa migration, selon le chef kunda Malama, cité par l'historien kunda Brown Mkunsha. Le nom Kunda aurait été pris plus tard, selon la même source. Celle-ci n'est pas datée : l'enquête de 2015 cite un manuscrit non publié de Mkunsha, daté de 2014.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Kunda of Zambia – Partners in Bible Translation Survey, 2015",
+                "author": "Daison Banda, Christopher Mbewe, Daka Josephat et Kenneth S. Sawka",
+                "year": 2015,
+                "url": "http://partnersinbibletranslation.org/wp-content/uploads/2018/03/KundaSurvey_2015.pdf",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "page": "p. 5",
+                "notes": "Rapport de Partners in Bible Translation sur une enquête menée du 16 au 25 septembre 2013 dans le district de Mambwe, PDF mis en ligne en 2015, lu le 12 octobre 2026. Page 5, citation de Brown Mkunsha : le chef Malama « has asserted that before their migration they were known as Awetwe » ; « the balance of evidence favours the view that it was assumed [the name Kunda] after the migration ». Le manuscrit de Mkunsha (Origins of the Kunda People, 2014) n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Kunda viendrait d'un nom de lieu, pris après la migration du peuple, selon l'historien kunda Brown Mkunsha, cité par l'enquête de 2015. Il observe que le groupe de sons nda se retrouve dans des mots de lieu, comme bunda, nganda (maison), munda (jardin) ou manda (tombe), et pense à un nom de région, comme Mbala ou Senga. Il estime que le groupe aurait traversé la Luangwa entre 1835 et 1845, ou plus tard.",
+            "hypothesisGroup": "origine-kunda",
+            "sources": [
+              {
+                "title": "The Kunda of Zambia – Partners in Bible Translation Survey, 2015",
+                "author": "Daison Banda, Christopher Mbewe, Daka Josephat et Kenneth S. Sawka",
+                "year": 2015,
+                "url": "http://partnersinbibletranslation.org/wp-content/uploads/2018/03/KundaSurvey_2015.pdf",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "page": "p. 5-6, 46",
+                "notes": "Rapport de Partners in Bible Translation sur une enquête menée du 16 au 25 septembre 2013 dans le district de Mambwe, PDF mis en ligne en 2015, lu le 12 octobre 2026. Page 5 : « The word Kunda, judging from homologous words, suggests a place name » ; page 6 : estimation de Mkunsha (2014) pour la traversée de la Luangwa ; page 46, note 2 : « It is at least possible that Kunda is a regional name like Mbala or Senga ». La même note écarte une autre explication, le mot nkunda, « pigeon », qui ne résisterait pas à l'examen."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Kunda viendrait du verbe bisa kukunda, qui désigne les rapports sexuels, selon un récit que rapporte l'enquête de 2015. Dans ce récit, un frère et une soeur ont enfreint un interdit de leur société, puis se sont séparés des Bisa avec leurs suivants et ont traversé la Luangwa. On aurait donné le nom kunda à ce groupe. L'enquête ne dit pas qui rapporte ce récit.",
+            "hypothesisGroup": "origine-kunda",
+            "sources": [
+              {
+                "title": "The Kunda of Zambia – Partners in Bible Translation Survey, 2015",
+                "author": "Daison Banda, Christopher Mbewe, Daka Josephat et Kenneth S. Sawka",
+                "year": 2015,
+                "url": "http://partnersinbibletranslation.org/wp-content/uploads/2018/03/KundaSurvey_2015.pdf",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "page": "p. 5-6",
+                "notes": "Rapport de Partners in Bible Translation sur une enquête menée du 16 au 25 septembre 2013 dans le district de Mambwe, PDF mis en ligne en 2015, lu le 12 octobre 2026. Pages 5-6 : « Another account of the origins of the Kunda people tells how a brother and sister engaged in sexual intercourse with each other [...] In the Bisa language intercourse is referred to as kukunda [...] The name kunda was assigned to this new group ». Le porteur du récit n'est pas nommé."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Kunda sert aussi de second nom à la langue seba, parlée dans la province du Katanga, en République démocratique du Congo. L'enquête de 2015 le dit distinct du nom du peuple de la Luangwa, et ajoute qu'il serait intéressant de chercher un lien entre eux.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Kunda of Zambia – Partners in Bible Translation Survey, 2015",
+                "author": "Daison Banda, Christopher Mbewe, Daka Josephat et Kenneth S. Sawka",
+                "year": 2015,
+                "url": "http://partnersinbibletranslation.org/wp-content/uploads/2018/03/KundaSurvey_2015.pdf",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "page": "p. 15",
+                "notes": "Rapport de Partners in Bible Translation sur une enquête menée du 16 au 25 septembre 2013 dans le district de Mambwe, PDF mis en ligne en 2015, lu le 12 octobre 2026. Page 15 : le Seba « has an alternate name of Kunda as well as Sewa, and Shishi » ; les auteurs notent que les Kunda de Zambie font remonter leur origine au Congo."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Awetwe",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un ancien nom du peuple, d'avant sa migration vers la Luangwa, que certains Kunda disent garder.",
+        "periodLabel": "Avant la migration ; gardé par une partie des Kunda",
+        "accounts": [
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Awetwe est encore porté, dit-on, par les Kunda installés à l'ouest de la Luangwa, sous la cheffe Nawalya, selon le chef kunda Malama, cité par l'enquête de 2015. On ne sait pas avec certitude quand ce nom a été écrit pour la première fois, ni d'où il vient.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Kunda of Zambia – Partners in Bible Translation Survey, 2015",
+                "author": "Daison Banda, Christopher Mbewe, Daka Josephat et Kenneth S. Sawka",
+                "year": 2015,
+                "url": "http://partnersinbibletranslation.org/wp-content/uploads/2018/03/KundaSurvey_2015.pdf",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "page": "p. 5",
+                "notes": "Rapport de Partners in Bible Translation sur une enquête menée du 16 au 25 septembre 2013 dans le district de Mambwe, PDF mis en ligne en 2015, lu le 12 octobre 2026. Page 5 : la section « living west of the river under Nawalya [is] said still to retain this name ». Page 6 : une colonie kunda vit sur la rive ouest de la Luangwa, sous la cheffe Nawalya."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Chikunda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les Kunda donnent parfois à leur langue ; il en désigne aussi une autre, au sud.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Chikunda est le nom que les Kunda de la Luangwa donnent parfois à leur langue, en ajoutant le préfixe chi-, selon l'enquête de 2015. Elle note que le même nom désigne en général une autre langue, parlée au Zimbabwe, au Mozambique et dans le sud-est de la Zambie, qui n'a pas de frontière commune avec celle des Kunda.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Kunda of Zambia – Partners in Bible Translation Survey, 2015",
+                "author": "Daison Banda, Christopher Mbewe, Daka Josephat et Kenneth S. Sawka",
+                "year": 2015,
+                "url": "http://partnersinbibletranslation.org/wp-content/uploads/2018/03/KundaSurvey_2015.pdf",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "page": "p. 4, 15",
+                "notes": "Rapport de Partners in Bible Translation sur une enquête menée du 16 au 25 septembre 2013 dans le district de Mambwe, PDF mis en ligne en 2015, lu le 12 octobre 2026. Page 4, § 1.2 : les Kunda ajoutent « occasionally » chi- ; page 15 : le Chikunda « does not share a border with the Kunda » ; les auteurs mesurent 43,2 % de ressemblance lexicale entre les deux langues (page 3, résumé)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1897,
+              "label": "1897"
+            },
+            "statement": "Le nom A-chikunda désigne chez l'administrateur britannique Harry Johnston des gens du Zambèze, de Zumbo à l'embouchure, plus ou moins liés aux Portugais. Il les décrit comme d'origine très mêlée, anciens esclaves des Portugais venus de bien des régions, qui ont fait du chikunda, fondé sur le nyanja, une langue commune. Il ne parle pas des Kunda de la Luangwa.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "British Central Africa",
+                "author": "Harry H. Johnston",
+                "year": 1897,
+                "url": "https://archive.org/details/britishafrica00johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 391",
+                "notes": "Londres, Methuen, 1897, lu sur la numérisation d'Internet Archive le 12 octobre 2026. Point 8 de sa classification des peuples de l'Afrique centrale britannique : « the A-chikunda, who speak a mongrel dialect chiefly based on the Nyanja stock »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

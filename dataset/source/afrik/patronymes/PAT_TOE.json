@@ -100,5 +100,42 @@
       "fieldPath": "transmissionMode",
       "reason": "L'entrée du Dictionary of American Family Names établit le passage d'un nom personnel masculin à un patronyme, mais pas sa règle de transmission familiale. Les recherches « Toe Kru inheritance surname » n'ont pas apporté cette information ; la valeur reste « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Toe est un nom de famille du Liberia, tiré d'un nom personnel d'homme porté chez les Kru et les Grebo. On ne sait pas ce que veut dire ce nom personnel, et le projet n'a pas encore trouvé de trace écrite ancienne de ce nom.",
+    "names": [
+      {
+        "nameText": "Toe",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille libérien, tiré d'un nom personnel d'homme kru ou grebo.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Toe est d'abord un nom personnel d'homme, porté chez les Kru et les Grebo du Liberia, devenu un nom de famille, selon le Dictionary of American Family Names. Ce dictionnaire ne sait pas expliquer le sens du mot.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2nd edition — Toe",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/toe?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée de la deuxième édition du Dictionary of American Family Names (Oxford University Press, 2022), reproduite par Ancestry et lue le 11 octobre 2026 dans sa version française affichée par le site. Entrée Toe : au Liberia, « d'un nom personnel masculin trouvé parmi les peuples Kru et grébos étroitement apparentés », d'étymologie inexpliquée. L'entrée distingue un Toé du Burkina Faso, lui aussi inexpliqué, et un nom birman sans lien."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

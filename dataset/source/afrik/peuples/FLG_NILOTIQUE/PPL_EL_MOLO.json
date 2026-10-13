@@ -110,5 +110,119 @@
         "source_kind": "official_statistics"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom El Molo désigne un petit peuple de pêcheurs de la rive sud-est du lac Turkana, au Kenya, qui se nomme aussi lui-même Gurapau, « les gens du lac », selon un site kényan de récits. Les sources ne s'accordent pas toujours sur l'origine du nom El Molo ; nous présentons plus bas ce qu'elles disent.",
+    "names": [
+      {
+        "nameText": "Gurapau",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que se donnent les El Molo : « les gens du lac ».",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Gurapau est celui que se donnent les El Molo, et il voudrait dire « les gens du lac », selon une page du site kényan Paukwa consacrée à leur récit des origines.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "El Molo Creation Myth: Born by the Lake",
+                "author": "Paukwa",
+                "year": null,
+                "url": "https://www.paukwa.or.ke/?p=18527",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site kényan consacré aux récits et au patrimoine, lu le 11 octobre 2026. La page n'est pas signée et ne cite pas de source."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "El Molo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Écrit Elmolo en 1888 ; son origine reste discutée.",
+        "periodLabel": "Écrit depuis 1888 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom El Molo désigne aujourd'hui ce peuple et sa langue, que le catalogue Glottolog enregistre sous ce nom, avec d'autres comme Elmolo, Dehes, Ldes ou Fura-Pawa. Son origine est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — El Molo (elmo1238)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/elmo1238",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1894,
+              "label": "Voyage de 1888, livre de 1894"
+            },
+            "era": "polity",
+            "statement": "Le nom El Molo apparaît par écrit sous la forme « Elmolo » chez Ludwig von Höhnel, compagnon du comte Teleki : cinq hommes rencontrés au sud du lac Rudolf, aujourd'hui le lac Turkana, se nomment eux-mêmes ainsi. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple vivait déjà au bord du lac avant lui.",
+            "formAsWritten": "Elmolo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Discovery of lakes Rudolf and Stefanie : a narrative of Count Samuel Teleki's exploring and hunting expedition in eastern equatorial Africa in 1887 and 1888, vol. II",
+                "author": "Ludwig von Höhnel",
+                "year": 1894,
+                "url": "https://archive.org/details/discoveryoflakes02hhne",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 111",
+                "notes": "Londres, Longmans, Green and Co., 1894, lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'auteur accompagnait l'expédition du comte Teleki ; la rencontre avec les Elmolo a lieu au sud du lac Rudolf, en 1888."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1888,
+              "to": 1894,
+              "label": "Proposée en 1894"
+            },
+            "era": "polity",
+            "statement": "Le nom El Molo viendrait de la langue oromo, que l'auteur appelle « galla », et voudrait dire « pauvre diable », comme le mot maasaï Ndorobbo, selon Ludwig von Höhnel.",
+            "hypothesisGroup": "origine du nom El Molo",
+            "sources": [
+              {
+                "title": "Discovery of lakes Rudolf and Stefanie : a narrative of Count Samuel Teleki's exploring and hunting expedition in eastern equatorial Africa in 1887 and 1888, vol. II",
+                "author": "Ludwig von Höhnel",
+                "year": 1894,
+                "url": "https://archive.org/details/discoveryoflakes02hhne",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 111",
+                "notes": "Londres, Longmans, Green and Co., 1894, lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'auteur accompagnait l'expédition du comte Teleki ; la rencontre avec les Elmolo a lieu au sud du lac Rudolf, en 1888."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

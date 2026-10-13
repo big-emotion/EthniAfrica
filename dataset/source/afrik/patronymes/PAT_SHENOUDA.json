@@ -76,5 +76,176 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Shenouda à un peuple en Égypte. Nous n'avons pas encore consulté de source consacrée à ce nom. Un lien avec les Coptes d'Égypte reste à étudier."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Shenouda est un nom personnel que portent les Coptes d'Égypte, d'après celui de Shenoute, abbé du Monastère Blanc mort vers 465. En français, on écrit aussi Chenouté ou Schénouti. Les sources ne s'accordent pas toujours sur ce qu'il veut dire ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Shenouda",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel copte, celui de l'abbé Shenoute, mort vers 465 ; son sens reste discuté.",
+        "periodLabel": "Écrit vers 400 sous une forme proche ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Shenouda correspond au nom de Shenoute, abbé du Monastère Blanc près d'Atripe, en Haute-Égypte. La Bibliothèque nationale de France relève pour cet abbé des formes comme Chenouté, Shenoud ou Shnudah. Ce que le nom veut dire reste discuté ; nous présentons l'explication connue plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Schénouti (0360?-0450?)",
+                "author": "Bibliothèque nationale de France",
+                "year": null,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb124717958",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice d'autorité de personne, créée en 1995 et mise à jour en 2003. Lue le 12 octobre 2026. Archimandrite du Monastère Blanc, près d'Atripe, en Haute-Égypte. Formes rejetées, entre autres : Chenouté, Schenoudi, Schnoudi, Shenoud, Shenoute, Shenouti, Shnudah et Sinuthius."
+              },
+              {
+                "title": "Shenoute’s Name",
+                "author": "Roger S. Bagnall",
+                "year": 2020,
+                "url": "http://hdl.handle.net/2333.1/05qfv49m",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "résumé ; par. 1",
+                "notes": "ISAW Papers 19, Institute for the Study of the Ancient World, Université de New York, 2020, sous licence CC BY. Lu en texte intégral le 12 octobre 2026 dans l'Ancient World Digital Library ; l'article numérote ses paragraphes au lieu de ses pages. Résumé et paragraphe 1 : l'abbé Shenoute d'Atripe, du Monastère Blanc, mort en 465 selon la date la plus souvent donnée."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1903,
+              "to": 1903,
+              "label": "Proposée en 1903"
+            },
+            "era": "colonial",
+            "statement": "Le nom Shenouda voudrait dire « fils de Dieu », selon Johannes Leipoldt en 1903, cité par Roger S. Bagnall ; une base de données de l'Université de Varsovie donne le même sens. Bagnall juge ce sens possible, mais curieux : le nom n'a d'article ni devant « fils » ni devant « Dieu », alors que le nom Psenpnouthes, qui a ce sens, en porte deux.",
+            "hypothesisGroup": "origine du nom Shenouda",
+            "sources": [
+              {
+                "title": "Shenoute’s Name",
+                "author": "Roger S. Bagnall",
+                "year": 2020,
+                "url": "http://hdl.handle.net/2333.1/05qfv49m",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "note 2",
+                "notes": "ISAW Papers 19, Institute for the Study of the Ancient World, Université de New York, 2020, sous licence CC BY. Lu en texte intégral le 12 octobre 2026 dans l'Ancient World Digital Library ; l'article numérote ses paragraphes au lieu de ses pages. Note 2 : le sens « son of god » remonte au moins à Leipoldt, 1903, p. 40, note 1 ; Bagnall le juge possible, mais relève l'absence d'article devant « fils » et devant « Dieu », que porte le nom Psenpnouthes."
+              },
+              {
+                "title": "Name 1085: Shenoute",
+                "author": "Database of Medieval Nubian Texts, Université de Varsovie",
+                "year": null,
+                "url": "https://dbmnt.pcma.uw.edu.pl/names/1085/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Base de données des textes de la Nubie médiévale, dirigée par Grzegorz Ochała. Lue le 12 octobre 2026. Fiche du nom Shenoute : nom masculin composé, d'origine égyptienne, venu de l'extérieur de la Nubie ; sens donné : « son of god » ; nom inspiré par l'abbé du Monastère Blanc, près d'Akhmim, mort vers 465."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 400,
+              "to": 403,
+              "label": "Vers 400-403"
+            },
+            "statement": "Le nom Shenouda apparaît sous une forme proche, Sinouthes, dans des papyrus grecs d'environ 400 à 403 : ils nomment Aurelius Sinouthes, fils de Victor, rameur venu d'Hermopolis, selon Roger S. Bagnall. C'est la plus ancienne trace sûre de ce nom que le projet connaît. Bagnall n'en trouve aucune plus ancienne, en dehors de l'abbé lui-même.",
+            "formAsWritten": "Sinouthes",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Aurelius Sinouthes",
+                "role": "porte ce nom dans les papyrus"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Shenoute’s Name",
+                "author": "Roger S. Bagnall",
+                "year": 2020,
+                "url": "http://hdl.handle.net/2333.1/05qfv49m",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "par. 5, 7",
+                "notes": "ISAW Papers 19, Institute for the Study of the Ancient World, Université de New York, 2020, sous licence CC BY. Lu en texte intégral le 12 octobre 2026 dans l'Ancient World Digital Library ; l'article numérote ses paragraphes au lieu de ses pages. Paragraphes 5 à 7 : Aurelius Sinouthes, fils de Victor, d'Hermopolis, rameur de la galère du gouverneur de la Thébaïde, connu par les papyrus P.Grenf. 2.80, 81, 81a et 82, vers 400-403 ; « It is the first such ». Avant l'abbé, le nom masculin n'a aucune attestation sûre."
+              }
+            ],
+            "era": "polity"
+          },
+          {
+            "period": {
+              "from": 550,
+              "to": 799,
+              "label": "Fin du VIe au VIIIe siècle"
+            },
+            "statement": "Le nom Shenouda, sous les formes Senouthios ou Sinouthios, devient courant en Égypte de la fin du VIe au VIIIe siècle, d'abord près du monastère de l'abbé. Ce succès viendrait du culte que l'Église non chalcédonienne rend à Shenoute, surtout sous le pape Damien, de 578 à 607, selon Roger S. Bagnall.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Shenoute’s Name",
+                "author": "Roger S. Bagnall",
+                "year": 2020,
+                "url": "http://hdl.handle.net/2333.1/05qfv49m",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "résumé ; par. 1, 7-9, 11, 15, 18",
+                "notes": "ISAW Papers 19, Institute for the Study of the Ancient World, Université de New York, 2020, sous licence CC BY. Lu en texte intégral le 12 octobre 2026 dans l'Ancient World Digital Library ; l'article numérote ses paragraphes au lieu de ses pages. Résumé et paragraphe 1 : 894 attestations du nom dans Trismegistos, surtout sous les formes Senouthios ou Sinouthios, de la fin du VIe au VIIIe siècle. Paragraphe 7 : aucune attestation sûre avant l'abbé. Paragraphes 8, 9, 11 et 15 : le nom se répand à Aphrodito, puis ailleurs à partir du milieu du VIe siècle. Paragraphe 18 : l'auteur relie ce succès à l'Église non chalcédonienne, sous le long règne du pape Damien (578-607)."
+              }
+            ],
+            "era": "polity"
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Moyen Âge"
+            },
+            "statement": "Le nom Shenouda figure aussi, sous la forme Shenoute, dans les textes de la Nubie médiévale. Une base de données de l'Université de Varsovie le classe comme un nom venu d'Égypte, inspiré par l'abbé du Monastère Blanc.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Name 1085: Shenoute",
+                "author": "Database of Medieval Nubian Texts, Université de Varsovie",
+                "year": null,
+                "url": "https://dbmnt.pcma.uw.edu.pl/names/1085/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Base de données des textes de la Nubie médiévale, dirigée par Grzegorz Ochała. Lue le 12 octobre 2026. Fiche du nom Shenoute : nom masculin composé, d'origine égyptienne, venu de l'extérieur de la Nubie ; sens donné : « son of god » ; nom inspiré par l'abbé du Monastère Blanc, près d'Akhmim, mort vers 465."
+              }
+            ],
+            "era": "polity"
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "Décrit en 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Shenouda garde une longue postérité chez les Coptes d'Égypte, qui vénèrent Shenoute comme l'une des grandes figures du monachisme égyptien ; des papes de l'Église copte l'ont porté, selon Roger S. Bagnall.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Shenoute’s Name",
+                "author": "Roger S. Bagnall",
+                "year": 2020,
+                "url": "http://hdl.handle.net/2333.1/05qfv49m",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "par. 1",
+                "notes": "ISAW Papers 19, Institute for the Study of the Ancient World, Université de New York, 2020, sous licence CC BY. Lu en texte intégral le 12 octobre 2026 dans l'Ancient World Digital Library ; l'article numérote ses paragraphes au lieu de ses pages. Paragraphe 1 : le nom a eu une longue postérité dans la communauté copte d'Égypte, où Shenoute est vénéré comme l'une des grandes figures du monachisme égyptien et où des papes ont porté son nom."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

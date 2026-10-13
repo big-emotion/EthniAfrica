@@ -103,5 +103,115 @@
       "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Bukuru est un nom personnel du Burundi : il signifie « le majeur » et se donne à l'un des jumeaux, avec Butoyi, « le mineur ». Ce n'est pas, dans l'usage traditionnel, un nom de famille transmis de père en fils. Les sources lues expliquent le sens du nom et la règle qui le donne, pas son origine plus ancienne ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Bukuru",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom donné à l'un des deux jumeaux au Burundi : « le majeur ».",
+        "periodLabel": "Écrit en 2005 ; donné aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Bukuru signifie « le majeur » : au Burundi, la naissance de jumeaux impose les noms Bukuru et Butoyi, « le mineur », selon Léandre Simbananiye.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les noms de personnes au Burundi : un support du lien social (Léandre Simbananiye, Anthropologie et Sociétés, 29(1), 2005, p. 167-181)",
+                "author": "Léandre Simbananiye",
+                "year": 2005,
+                "url": "https://doi.org/10.7202/011745ar",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 172",
+                "notes": "Article lu en entier sur le site d'Érudit le 13 octobre 2026. L'auteur s'appuie sur des entretiens menés en 1999 au Burundi et sur des noms relevés dans des registres paroissiaux, des écoles et l'état civil. Page 172 : la naissance de jumeaux impose les noms Bukuru et Butoyi, « le majeur » et « le mineur », et l'article explique cette règle par la conception des jumeaux comme un signe de malheur qui frappe la famille. L'article ne dit pas lequel des deux jumeaux reçoit lequel des deux noms, ni qui tient cette conception."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "Rapporté en 2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Bukuru relève d'une règle que l'on explique par la conception des jumeaux comme un signe de malheur qui frappe la famille, d'où un rite d'intégration à organiser, selon Léandre Simbananiye, qui ne dit pas qui tient cette conception.",
+            "sources": [
+              {
+                "title": "Les noms de personnes au Burundi : un support du lien social (Léandre Simbananiye, Anthropologie et Sociétés, 29(1), 2005, p. 167-181)",
+                "author": "Léandre Simbananiye",
+                "year": 2005,
+                "url": "https://doi.org/10.7202/011745ar",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 172",
+                "notes": "Article lu en entier sur le site d'Érudit le 13 octobre 2026. L'auteur s'appuie sur des entretiens menés en 1999 au Burundi et sur des noms relevés dans des registres paroissiaux, des écoles et l'état civil. Page 172 : la naissance de jumeaux impose les noms Bukuru et Butoyi, « le majeur » et « le mineur », et l'article explique cette règle par la conception des jumeaux comme un signe de malheur qui frappe la famille. L'article ne dit pas lequel des deux jumeaux reçoit lequel des deux noms, ni qui tient cette conception."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "Décrit en 2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Bukuru est un nom personnel du système traditionnel burundais, où chacun porte un nom différent de celui de son père ; ce système coexiste aujourd'hui avec des noms de famille introduits par la colonisation et le christianisme, selon Léandre Simbananiye.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les noms de personnes au Burundi : un support du lien social (Léandre Simbananiye, Anthropologie et Sociétés, 29(1), 2005, p. 167-181)",
+                "author": "Léandre Simbananiye",
+                "year": 2005,
+                "url": "https://doi.org/10.7202/011745ar",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 171",
+                "notes": "Article lu en entier sur le site d'Érudit le 13 octobre 2026. Page 171 : au Burundi, chacun porte un nom différent de celui de son père ; ce système traditionnel de nomination coexiste avec un système de noms de famille introduit par la colonisation et le christianisme, et il montre ses limites."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Bukuru apparaît par écrit dans l'article de Léandre Simbananiye sur les noms de personnes au Burundi, qui le donne avec Butoyi comme nom de jumeaux. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a notée, pas depuis quand le nom est donné.",
+            "formAsWritten": "Bukuru",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Léandre Simbananiye",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les noms de personnes au Burundi : un support du lien social (Léandre Simbananiye, Anthropologie et Sociétés, 29(1), 2005, p. 167-181)",
+                "author": "Léandre Simbananiye",
+                "year": 2005,
+                "url": "https://doi.org/10.7202/011745ar",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 172",
+                "notes": "Article lu en entier sur le site d'Érudit le 13 octobre 2026. L'auteur s'appuie sur des entretiens menés en 1999 au Burundi et sur des noms relevés dans des registres paroissiaux, des écoles et l'état civil. Page 172 : la naissance de jumeaux impose les noms Bukuru et Butoyi, « le majeur » et « le mineur », et l'article explique cette règle par la conception des jumeaux comme un signe de malheur qui frappe la famille. L'article ne dit pas lequel des deux jumeaux reçoit lequel des deux noms, ni qui tient cette conception."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

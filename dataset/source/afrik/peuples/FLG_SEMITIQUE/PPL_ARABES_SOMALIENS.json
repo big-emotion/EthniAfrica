@@ -124,5 +124,208 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Arabes somaliens désigne des communautés de la côte sud de la Somalie, à Mogadiscio, Merca et Barawa, issues en partie de marchands venus d'Arabie et de Perse. Elles se nomment Banaadiri, « les gens des ports », ou Reer Xamar, « le clan de Hamar », l'ancien nom de Mogadiscio. Nous présentons plus bas l'histoire de ces noms.",
+    "names": [
+      {
+        "nameText": "Banaadiri",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "som",
+        "namedBy": null,
+        "shortLine": "« Les gens des ports » : un nom de région devenu nom de personnes.",
+        "periodLabel": "Nom de personnes depuis 1991",
+        "accounts": [
+          {
+            "period": {
+              "from": 2012,
+              "to": 2012,
+              "label": "2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Banaadiri, « les gens des ports », est celui que se donnent les gens venus de la région du Banaadir, sur la côte sud de la Somalie, selon une chercheuse indépendante que cite la Commission de l'immigration et du statut de réfugié du Canada. Il s'emploie parfois à la place de Reer Hamar.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Somalia: The Reer Hamar and/or Benadiri, including the location of their traditional homeland, affiliated clans and risks they face from other clans (SOM104241.E)",
+                "author": "Direction des recherches, Commission de l'immigration et du statut de réfugié du Canada",
+                "year": 2012,
+                "url": "https://www.justice.gov/sites/default/files/eoir/legacy/2013/12/13/SOM104241.E.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Réponse à une demande d'information du 3 décembre 2012. Lue le 11 octobre 2026 dans la copie conservée par le département de la Justice des États-Unis. Elle cite Minority Rights Group, le centre norvégien Landinfo, le centre autrichien ACCORD et une chercheuse indépendante.",
+                "page": "section 1"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1991,
+              "to": 1991,
+              "label": "1991"
+            },
+            "era": "modern",
+            "statement": "Le nom Benadiri ne sert à désigner des personnes que depuis 1991 ; avant, c'était un nom de région, selon le centre norvégien Landinfo, que cite la Commission de l'immigration et du statut de réfugié du Canada. C'est la plus ancienne trace de ce nom de personnes que le projet connaît. Les communautés qu'il désigne existaient déjà avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Somalia: The Reer Hamar and/or Benadiri, including the location of their traditional homeland, affiliated clans and risks they face from other clans (SOM104241.E)",
+                "author": "Direction des recherches, Commission de l'immigration et du statut de réfugié du Canada",
+                "year": 2012,
+                "url": "https://www.justice.gov/sites/default/files/eoir/legacy/2013/12/13/SOM104241.E.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Réponse à une demande d'information du 3 décembre 2012. Lue le 11 octobre 2026 dans la copie conservée par le département de la Justice des États-Unis. Elle cite Minority Rights Group, le centre norvégien Landinfo, le centre autrichien ACCORD et une chercheuse indépendante.",
+                "page": "section 1"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1728,
+              "to": 1885,
+              "label": "1728-années 1880"
+            },
+            "era": "polity",
+            "statement": "On parle alors de la côte du Banaadir, sur laquelle les Omanais exercent une autorité lointaine, selon l'étude de la Bibliothèque du Congrès. Cette autorité dure de 1728, quand les Portugais perdent à Mombasa leur dernière place forte de la côte est-africaine, jusqu'au partage colonial des années 1880.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Somalia: A Country Study, chapitre « The Somali Peninsula on the Eve of Imperial Partition »",
+                "author": "Helen Chapin Metz (dir.), Federal Research Division, Bibliothèque du Congrès",
+                "year": 1992,
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 11 octobre 2026.",
+                "url": "https://countrystudies.us/somalia/7.htm",
+                "page": "chapitre « The Somali Peninsula on the Eve of Imperial Partition »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Reer Xamar",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "som",
+        "namedBy": null,
+        "shortLine": "« Le clan de Hamar », l'ancien nom de la vieille ville de Mogadiscio.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2010,
+              "to": 2012,
+              "label": "2010-2012"
+            },
+            "era": "modern",
+            "statement": "Le nom Reer Xamar, écrit aussi Reer Hamar, veut dire « le clan de Hamar », c'est-à-dire de Mogadiscio, selon Minority Rights Group. Une chercheuse indépendante précise qu'il s'agit des lignages liés à la vieille ville de pierre, appelée autrefois Hamar. Ces deux sources sont citées par la Commission de l'immigration et du statut de réfugié du Canada.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Somalia: The Reer Hamar and/or Benadiri, including the location of their traditional homeland, affiliated clans and risks they face from other clans (SOM104241.E)",
+                "author": "Direction des recherches, Commission de l'immigration et du statut de réfugié du Canada",
+                "year": 2012,
+                "url": "https://www.justice.gov/sites/default/files/eoir/legacy/2013/12/13/SOM104241.E.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Réponse à une demande d'information du 3 décembre 2012. Lue le 11 octobre 2026 dans la copie conservée par le département de la Justice des États-Unis. Elle cite Minority Rights Group, le centre norvégien Landinfo, le centre autrichien ACCORD et une chercheuse indépendante.",
+                "page": "section 1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gibil Madow",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "som",
+        "namedBy": null,
+        "shortLine": "Le nom de l'un des deux grands lignages des Reer Hamar.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2009,
+              "to": 2009,
+              "label": "2009"
+            },
+            "era": "modern",
+            "statement": "Le nom Gibil Madow désigne l'un des deux grands lignages des Reer Hamar, l'autre étant Gibil Cad, selon le centre autrichien ACCORD, que cite la Commission de l'immigration et du statut de réfugié du Canada.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Somalia: The Reer Hamar and/or Benadiri, including the location of their traditional homeland, affiliated clans and risks they face from other clans (SOM104241.E)",
+                "author": "Direction des recherches, Commission de l'immigration et du statut de réfugié du Canada",
+                "year": 2012,
+                "url": "https://www.justice.gov/sites/default/files/eoir/legacy/2013/12/13/SOM104241.E.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Réponse à une demande d'information du 3 décembre 2012. Lue le 11 octobre 2026 dans la copie conservée par le département de la Justice des États-Unis. Elle cite Minority Rights Group, le centre norvégien Landinfo, le centre autrichien ACCORD et une chercheuse indépendante.",
+                "page": "section 1.1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Arabes somaliens",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "fra",
+        "namedBy": null,
+        "shortLine": "Un nom descriptif pour les familles d'ascendance arabe de la côte somalienne.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Arabes somaliens n'a pas d'équivalent fixe dans les sources que nous avons lues. L'étude de la Bibliothèque du Congrès parle des « Arabes résidant à Mogadiscio », chez qui est surtout représentée la confrérie soufie Rifaiyah.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Somalia: A Country Study, chapitre « Religious Orders and the Cult of the Saints »",
+                "author": "Helen Chapin Metz (dir.), Federal Research Division, Bibliothèque du Congrès",
+                "year": 1992,
+                "tier": "referenced",
+                "source_kind": "government",
+                "notes": "Washington, Government Printing Office pour la Bibliothèque du Congrès. Lu sur countrystudies.us, copie non officielle du texte, le 11 octobre 2026.",
+                "url": "https://countrystudies.us/somalia/47.htm",
+                "page": "chapitre « Religious Orders and the Cult of the Saints »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1331,
+              "to": 1332,
+              "label": "Vers 1331"
+            },
+            "era": "polity",
+            "statement": "On parle alors des habitants de Maqdashaw, des marchands très riches, chez le voyageur Ibn Battuta. Son traducteur H. A. R. Gibb note que Mogadiscio a été fondée au Xe siècle comme comptoir par des Arabes du golfe Persique.",
+            "before": true,
+            "sources": [
+              {
+                "title": "The Travels of Ibn Battuta, A.D. 1325-1354, vol. II",
+                "author": "Ibn Battuta, traduit par H. A. R. Gibb",
+                "year": 1962,
+                "url": "https://archive.org/details/travelsofibnbatt02harg",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Cambridge, Hakluyt Society, lu sur la numérisation d'Internet Archive le 11 octobre 2026. La note 47 du traducteur porte sur la fondation de Mogadiscio.",
+                "page": "p. 373-374"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

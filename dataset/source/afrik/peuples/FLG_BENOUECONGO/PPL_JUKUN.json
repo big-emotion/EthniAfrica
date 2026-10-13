@@ -142,5 +142,370 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Jukun désigne un peuple de la vallée de la Bénoué, au Nigeria, autour de Wukari, qui se nomme lui-même Apa ; le groupe de Wukari se nomme Wapa. D'autres noms existent : Kwararafa, donné par les Haoussa, et Kwana, donné par les Kanouri. Les sources ne s'accordent pas sur l'origine du nom Jukun ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Apa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que les Jukun se donnent ; il veut dire « homme ».",
+        "periodLabel": "Relevé depuis 1854 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "1931"
+            },
+            "era": "colonial",
+            "statement": "Le nom Apa est celui que se donnent les Jukun et d'autres peuples de leur ancienne confédération : un Jukun peut se désigner comme Apa, « homme », même si tous les Apa ne sont pas jukun, selon H. R. Palmer. C. K. Meek relève apa pour « personne » dans le parler de Wukari.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Introduction à A Sudanese kingdom de C. K. Meek",
+                "author": "H. R. Palmer",
+                "year": 1931,
+                "url": "https://archive.org/details/in.ernet.dli.2015.36396",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. xiv-xv",
+                "notes": "Londres, Kegan Paul, Trench, Trubner & Co., 1931. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              },
+              {
+                "title": "A Sudanese kingdom : an ethnographical study of the Jukun-speaking peoples of Nigeria",
+                "author": "C. K. Meek",
+                "year": 1931,
+                "url": "https://archive.org/details/in.ernet.dli.2015.36396",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 2",
+                "notes": "Londres, Kegan Paul, Trench, Trubner & Co., 1931. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Apa est écrit « ápā » par Sigismund Koelle, qui le donne comme le nom que les Igala et les Igbo donnent à ce peuple.",
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous le parler « Dṣúku· »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wapa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Relevé en 1931 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "1931"
+            },
+            "era": "colonial",
+            "statement": "Le nom Wapa désigne le principal groupe jukun, établi à Wukari et autour, sous l'autorité du roi de Wukari, selon C. K. Meek.",
+            "sources": [
+              {
+                "title": "A Sudanese kingdom : an ethnographical study of the Jukun-speaking peoples of Nigeria",
+                "author": "C. K. Meek",
+                "year": 1931,
+                "url": "https://archive.org/details/in.ernet.dli.2015.36396",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Londres, Kegan Paul, Trench, Trubner & Co., 1931. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Jukun",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Écrit Dṣúku en 1854 ; son origine reste discutée.",
+        "periodLabel": "Écrit depuis 1854 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "1931"
+            },
+            "era": "colonial",
+            "statement": "Le nom Jukun désigne des peuples de la Bénoué qui parlent des langues proches et qui formaient le cœur du royaume de Kororofa, selon C. K. Meek. Son origine est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Sudanese kingdom : an ethnographical study of the Jukun-speaking peoples of Nigeria",
+                "author": "C. K. Meek",
+                "year": 1931,
+                "url": "https://archive.org/details/in.ernet.dli.2015.36396",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Londres, Kegan Paul, Trench, Trubner & Co., 1931. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "1931"
+            },
+            "era": "colonial",
+            "statement": "Le nom Jukun n'apparaît, sous cette forme, dans aucune tradition ni aucun document ancien connu de H. R. Palmer, qui cherche pourtant ses traces dans l'histoire du Bornou.",
+            "sources": [
+              {
+                "title": "Introduction à A Sudanese kingdom de C. K. Meek",
+                "author": "H. R. Palmer",
+                "year": 1931,
+                "url": "https://archive.org/details/in.ernet.dli.2015.36396",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. xxii",
+                "notes": "Londres, Kegan Paul, Trench, Trubner & Co., 1931. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Jukun a une forme proche, « Dṣúku », chez le linguiste Sigismund Koelle, qui en fait le nom d'une langue et d'un pays dont la capitale est Bióka, sur une grande rivière qui descend vers le pays igala. C'est la plus ancienne trace de ce nom que le projet connaît. Les Jukun vivaient déjà dans la vallée de la Bénoué avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous le parler « Dṣúku· »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "Proposée en 1931"
+            },
+            "era": "colonial",
+            "statement": "Le nom Jukun viendrait de Kwon ou Kwona, le nom kanouri du groupe dirigeant, auquel s'ajouterait un préfixe prononcé ju, ji, shu ou tchu, selon H. R. Palmer.",
+            "hypothesisGroup": "origine du nom Jukun",
+            "sources": [
+              {
+                "title": "Introduction à A Sudanese kingdom de C. K. Meek",
+                "author": "H. R. Palmer",
+                "year": 1931,
+                "url": "https://archive.org/details/in.ernet.dli.2015.36396",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. xv",
+                "notes": "Londres, Kegan Paul, Trench, Trubner & Co., 1931. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "Proposée en 1931"
+            },
+            "era": "colonial",
+            "statement": "Le nom Jukun serait parent du mot touareg imajegan, qui désigne les chefs, selon un rapport officiel de M. Abraham que cite H. R. Palmer, qui retient ce rapprochement.",
+            "hypothesisGroup": "origine du nom Jukun",
+            "sources": [
+              {
+                "title": "Introduction à A Sudanese kingdom de C. K. Meek",
+                "author": "H. R. Palmer",
+                "year": 1931,
+                "url": "https://archive.org/details/in.ernet.dli.2015.36396",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. xxxii-xxxiii",
+                "notes": "Londres, Kegan Paul, Trench, Trubner & Co., 1931. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Palmer cite un rapport officiel sur les Bolewa sans en donner le titre ; nous ne l'avons pas lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kwararafa",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "les Haoussa et les Noupé, selon les sources",
+        "shortLine": "Le nom haoussa du royaume jukun, attesté depuis le XIVe siècle.",
+        "periodLabel": "Attesté du XIVe au XVIIe siècle",
+        "accounts": [
+          {
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "Proposée en 1931"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kwararafa viendrait de Kwarar-apa, « les peuples qui se nomment Apa », le nom que les Haoussa donnent aux Jukun, selon H. R. Palmer.",
+            "hypothesisGroup": "origine du nom Kwararafa",
+            "sources": [
+              {
+                "title": "Introduction à A Sudanese kingdom de C. K. Meek",
+                "author": "H. R. Palmer",
+                "year": 1931,
+                "url": "https://archive.org/details/in.ernet.dli.2015.36396",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. xiv-xv",
+                "notes": "Londres, Kegan Paul, Trench, Trubner & Co., 1931. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Kwararafa est écrit « Kurórōfa » par Sigismund Koelle, qui le donne comme le nom que les gens du Bornou, les Haoussa et les Noupé donnent au pays jukun.",
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous le parler « Dṣúku· »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1562,
+              "to": 1671,
+              "label": "1562-1671, selon la Chronique de Kano"
+            },
+            "era": "polity",
+            "statement": "Le nom Kwararafa, écrit aussi Kororofa, revient dans la Chronique de Kano pour des attaques contre Kano sous Muhamma Zaki (1562-1618), sous Muhamma Kukuna (1652-1660) et en 1671, selon C. K. Meek.",
+            "sources": [
+              {
+                "title": "A Sudanese kingdom : an ethnographical study of the Jukun-speaking peoples of Nigeria",
+                "author": "C. K. Meek",
+                "year": 1931,
+                "url": "https://archive.org/details/in.ernet.dli.2015.36396",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 25-26",
+                "notes": "Londres, Kegan Paul, Trench, Trubner & Co., 1931. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1349,
+              "to": 1385,
+              "label": "Règne de Yaji à Kano, 1349-1385"
+            },
+            "era": "polity",
+            "statement": "Le nom Kwararafa apparaît dans la Chronique de Kano, une liste des rois de Kano traduite par H. R. Palmer : sous le roi Yaji, les Kwararafa seraient les seuls à refuser de le suivre. C. K. Meek y voit la plus ancienne mention de Kororofa, tout en notant que la chronique a sans doute été rédigée bien plus tard. C'est la plus ancienne trace de ce nom que le projet connaît. Le royaume existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Sudanese kingdom : an ethnographical study of the Jukun-speaking peoples of Nigeria",
+                "author": "C. K. Meek",
+                "year": 1931,
+                "url": "https://archive.org/details/in.ernet.dli.2015.36396",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 24-25",
+                "notes": "Londres, Kegan Paul, Trench, Trubner & Co., 1931. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Meek cite la traduction de la Chronique de Kano par H. R. Palmer ; nous n'avons pas lu la chronique elle-même."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kwana",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "les Kanouri, selon les sources",
+        "periodLabel": "Relevé depuis 1854",
+        "accounts": [
+          {
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "1931"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kwana, ou Gwana, est celui que les Kanouri du Bornou donnent aux peuples de l'ancienne confédération jukun, selon H. R. Palmer. Pour le groupe dirigeant lui-même, le kanouri dit plutôt Kona ou Kwona.",
+            "sources": [
+              {
+                "title": "Introduction à A Sudanese kingdom de C. K. Meek",
+                "author": "H. R. Palmer",
+                "year": 1931,
+                "url": "https://archive.org/details/in.ernet.dli.2015.36396",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. xiv-xv",
+                "notes": "Londres, Kegan Paul, Trench, Trubner & Co., 1931. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Kwana est écrit « Kóāna » par Sigismund Koelle, qui le donne comme un autre nom du pays jukun chez les gens du Bornou, les Haoussa et les Noupé.",
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous le parler « Dṣúku· »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

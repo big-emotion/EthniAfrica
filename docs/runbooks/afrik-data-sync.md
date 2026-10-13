@@ -508,6 +508,9 @@ the rows are dead weight and their counts drift the audits. Build the id list fr
 and run this against the same target, in the SQL editor for recette and through the SSH tunnel
 `deploy-production.yml` uses for production (see `docs/runbooks/production-deploy.md`):
 
+A `withdrawn` entry (a retirement with no successor) belongs in this list too: it has no
+redirect, but its rows are just as dead.
+
 ```bash
 jq -r '[.[] | select(.decision != "kept-distinct") | .retiredId] | map("('" + . + "')") | join(", ")' \
   dataset/source/afrik/_retired-identifiers.json

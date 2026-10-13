@@ -1,0 +1,26 @@
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Grande région (synthétique)",
+    "kind": "approximate",
+    "category": "region",
+    "source": "synthetic renderer test geometry",
+    "citation": "none: a plain polygon typed by hand, not a place",
+    "derivation": "rectangle or hexagon in round degrees",
+    "licence": "CC0 1.0",
+    "mockup": true,
+    "status": "SYNTHETIC placeholder for layout tests, never published"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [-16, 16],
+        [33, 16],
+        [33, 31],
+        [-16, 31],
+        [-16, 16]
+      ]
+    ]
+  }
+}

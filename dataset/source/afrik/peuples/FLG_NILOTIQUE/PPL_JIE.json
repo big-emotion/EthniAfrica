@@ -117,5 +117,77 @@
         "source_kind": "official_statistics"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Jie désigne un peuple d'éleveurs du district de Kotido, dans le Karamoja, au nord-est de l'Ouganda, qui se nomme lui-même Ngijie et appelle son pays Najie. On ne sait pas avec certitude quand ce nom apparaît pour la première fois par écrit, ni d'où il vient : nous n'avons lu aucune source sur ces points.",
+    "names": [
+      {
+        "nameText": "Ngijie",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kdj",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; son pays se nomme Najie.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Ngijie est celui que la communauté jie se donne dans sa langue, et Najie celui de son pays, selon Denis Ejoke, qui a mené son enquête auprès des anciens jie.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Rites of Passage of the Jie Community of Kotido District : a Case Study of Marriage in Jie County",
+                "author": "Denis Ejoke",
+                "year": 2024,
+                "url": "https://kyuspace.kyu.ac.ug/bitstreams/e023ad71-0771-485c-ba59-ec4f0e6d1a68/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Mémoire de master en études religieuses, université de Kyambogo, mars 2024. Lu sur le dépôt de l'université, lu le 11 octobre 2026.",
+                "page": "p. iii et 13"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Jie",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "kdj",
+        "namedBy": null,
+        "shortLine": "Le nom courant de ce peuple, sans le préfixe ngi-.",
+        "periodLabel": "En usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Jie désigne un des peuples de l'ensemble ateker, installé dans l'actuel district de Kotido, selon Denis Ejoke. Il rapporte que les Jie se seraient séparés des Turkana.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Rites of Passage of the Jie Community of Kotido District : a Case Study of Marriage in Jie County",
+                "author": "Denis Ejoke",
+                "year": 2024,
+                "url": "https://kyuspace.kyu.ac.ug/bitstreams/e023ad71-0771-485c-ba59-ec4f0e6d1a68/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Mémoire de master en études religieuses, université de Kyambogo, mars 2024. Lu sur le dépôt de l'université, lu le 11 octobre 2026.",
+                "page": "p. 1"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

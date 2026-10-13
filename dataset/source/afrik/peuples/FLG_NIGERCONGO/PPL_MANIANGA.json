@@ -106,5 +106,218 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Manianga désigne un groupe kongo de la région de Luozi, sur la rive nord du fleuve Congo, dans la province du Kongo-Central en RD Congo, qui se nomme dans sa langue BaManianga. On les appelle aussi Basundi, mais aucune source que nous avons lue ne dit qu'ils se donnent eux-mêmes ce nom. Le nom Manianga est d'abord écrit pour un grand marché de la région. Les sources ne s'accordent pas sur la façon dont il est devenu un nom de peuple ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "BaManianga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kng",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple dans sa propre langue, le kikongo ; on dit aussi Bisi Manianga.",
+        "accounts": [
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "1981"
+            },
+            "era": "modern",
+            "birth": true,
+            "formAsWritten": "BaManianga",
+            "statement": "Le nom BaManianga, pluriel de Manianga en kikongo, la langue de ce peuple, est celui que Simon Mfuka emploie pour lui dans sa thèse, après une enquête dans la région ; on les appelle aussi parfois Bisi Manianga, selon lui. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant lui.",
+            "sources": [
+              {
+                "title": "The Concept of Death and Its Impact Among Kongo-Manianga People of Lower-Zaire",
+                "author": "Simon Mfuka",
+                "year": 1981,
+                "url": "https://archive.org/details/bim_early-english-books-1641-1700_simon-mfuka_1981-06_ia40330108-29",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4 et p. 6",
+                "notes": "Thèse de doctorat, Graduate Theological Union, Berkeley, juin 1981. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Manianga",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "D'abord le nom d'un grand marché près du fleuve Congo, écrit Manyanga par Stanley en 1877.",
+        "periodLabel": "Écrit sous une forme proche dès 1877 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1990,
+              "to": 1990,
+              "label": "1990"
+            },
+            "era": "modern",
+            "statement": "Le nom Manianga désigne une région du Kongo-Central dans le titre d'un livre de l'historien congolais Kimpianga Mahaniah paru à Kinshasa en 1990, Repenser le commerce au Manianga.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Repenser le commerce au Manianga",
+                "author": "Kimpianga Mahaniah",
+                "year": 1990,
+                "url": "https://www.africamuseum.be/fr/research/collections_libraries/human_sciences/libraries/contemporary_history/reference/16483/africa_museum",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Notice du catalogue de la bibliothèque du Congo indépendant, Musée royal de l'Afrique centrale, lue le 11 octobre 2026. Livre publié à Kinshasa par les éditions du Centre de vulgarisation agricole, 186 pages, préface de Kaumba L. S. ; nous ne l'avons pas lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1877,
+              "to": 1878,
+              "label": "Juillet 1877 (récit publié en 1878)"
+            },
+            "era": "polity",
+            "statement": "Le nom Manianga apparaît sous une forme proche, Manyanga, dans le récit de Henry Morton Stanley : c'est un grand marché fréquenté, à quelques kilomètres du fleuve, où les gens de nombreux villages de l'amont rencontrent ceux de l'aval. C'est la plus ancienne trace de ce nom que le projet connaît. Le marché et ses habitants existaient déjà avant lui.",
+            "formAsWritten": "Manyanga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Through the Dark Continent, vol. II",
+                "author": "Henry Morton Stanley",
+                "year": 1878,
+                "url": "https://www.gutenberg.org/files/76825/76825-0.txt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chapitre XVI, récit du 16 juillet 1877",
+                "notes": "Récit de la descente du fleuve Congo, paru à Londres en 1878. Lu le 11 octobre 2026 dans la transcription du Projet Gutenberg, faite sur une édition de 1899. La transcription ne donne pas les pages de ce passage ; nous indiquons le chapitre et la date du récit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1981,
+              "to": 1981,
+              "label": "Rapporté en 1981"
+            },
+            "era": "modern",
+            "hypothesisGroup": "origine du nom Manianga",
+            "statement": "Le nom Manianga viendrait du verbe kikongo nianga ou nyanga, « rejeter, abandonner » : les BaManianga se seraient installés sur une terre méprisée, après avoir traversé le fleuve contre l'avis des autres groupes kongo, selon les informateurs de Simon Mfuka.",
+            "sources": [
+              {
+                "title": "The Concept of Death and Its Impact Among Kongo-Manianga People of Lower-Zaire",
+                "author": "Simon Mfuka",
+                "year": 1981,
+                "url": "https://archive.org/details/bim_early-english-books-1641-1700_simon-mfuka_1981-06_ia40330108-29",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5-6",
+                "notes": "Thèse de doctorat, Graduate Theological Union, Berkeley, juin 1981. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive. L'auteur rapporte ce que lui ont dit ses informateurs, qu'il ne nomme pas à cet endroit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1978,
+              "to": 1978,
+              "label": "Proposée en 1978"
+            },
+            "era": "modern",
+            "hypothesisGroup": "origine du nom Manianga",
+            "statement": "Le nom Manianga viendrait du grand marché de ce nom, sur la rive nord du fleuve : ceux qui s'y rendaient disaient aller au marché de Manianga, et le nom serait passé aux gens du lieu, selon l'anthropologue John Janzen, d'après le récit de Stanley, tel que le rapporte Simon Mfuka.",
+            "sources": [
+              {
+                "title": "The Concept of Death and Its Impact Among Kongo-Manianga People of Lower-Zaire",
+                "author": "Simon Mfuka",
+                "year": 1981,
+                "url": "https://archive.org/details/bim_early-english-books-1641-1700_simon-mfuka_1981-06_ia40330108-29",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 6",
+                "notes": "Thèse de doctorat, Graduate Theological Union, Berkeley, juin 1981. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive. L'auteur cite John M. Janzen, The Quest for Therapy in Lower Zaire (1978), que nous n'avons pas lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Basundi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un autre nom de ce groupe, écrit par Stanley en 1877 ; ba- marque le pluriel des noms de personnes.",
+        "periodLabel": "Écrit dès 1877",
+        "accounts": [
+          {
+            "period": {
+              "from": 1948,
+              "to": 1948,
+              "label": "1948"
+            },
+            "era": "colonial",
+            "statement": "Le nom Basundi englobe les Manianga chez le linguiste G. Van Bulck, qui les range parmi les « Basuundi orientaux ou Ba-Manyaanga », parlant un dialecte oriental du kisundi. Il note aussi que les Bakongo emploient souvent le nom BaSuundi comme une injure, au sens de « sauvage ». Il ne dit pas que les Manianga se donnent ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les recherches linguistiques au Congo belge",
+                "author": "G. Van Bulck",
+                "year": 1948,
+                "url": "http://www.kaowarsom.be/documents/MEMOIRES_VERHANDELINGEN/Sciences_morales_politique/Hum.Sc.(IRCB)_T.XVI,_VAN%20BULCK%20R.%20P.%20G._Les%20recherches%20linguistiques%20au%20Congo%20Belge_1948.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 332, 376",
+                "notes": "Bruxelles, Institut royal colonial belge, Mémoires de la section des sciences morales et politiques, t. XVI, 1948. Lu le 12 octobre 2026 dans le PDF de l'Académie royale des sciences d'outre-mer. Page 332 : « Les BaManyanga = BaManyangasi […] parlent un dialecte oriental de KiSuundi », et « BaSuundi » est « souvent usité comme péjoratif » par les BaKoongo. Page 376 : « Dialecte des Basuundi orientaux ou Ba-Manyaanga ». Le dictionnaire kikongo-français de K. E. Laman (1936), lu aussi, fait des Basundi une tribu du nord du fleuve et de Manyanga un village et un marché, sans dire comment les Manianga se nomment."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1877,
+              "to": 1878,
+              "label": "Avril 1877 (récit publié en 1878)"
+            },
+            "era": "polity",
+            "statement": "Le nom Basundi apparaît par écrit dans le récit de Henry Morton Stanley : fin avril 1877, il note que les esclaves vendus aux marchés de la région sont le plus souvent des Batekéé ou des Basundi du Nord. Il situe ensuite des Basundi à l'ouest-nord-ouest de Mowa, puis les rencontre en juillet, et les décrit avec mépris, comme beaucoup de voyageurs de son époque. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple vivait déjà là avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Through the Dark Continent, vol. II",
+                "author": "Henry Morton Stanley",
+                "year": 1878,
+                "url": "https://www.gutenberg.org/files/76825/76825-0.txt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chapitre XII, récit du 28 avril 1877 ; chapitre XIII, récit du 1er juin 1877 ; chapitre XVI, juillet 1877",
+                "notes": "Récit de la descente du fleuve Congo, paru à Londres en 1878. Lu le 11 octobre 2026 dans la transcription du Projet Gutenberg, faite sur une édition de 1899. La transcription ne donne pas les pages de ce passage ; nous indiquons le chapitre et la date du récit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1816,
+              "to": 1816,
+              "label": "1816 (cité par Stanley en 1878)"
+            },
+            "era": "polity",
+            "statement": "Sundi figure chez l'officier britannique James Tuckey, dans le récit de son expédition de 1816 sur le fleuve Congo, comme le nom d'une cataracte, selon Henry Morton Stanley. Les sources que nous avons lues ne disent pas s'il s'agit du même nom.",
+            "sources": [
+              {
+                "title": "Through the Dark Continent, vol. II",
+                "author": "Henry Morton Stanley",
+                "year": 1878,
+                "url": "https://www.gutenberg.org/files/76825/76825-0.txt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "chapitre X",
+                "notes": "Récit de la descente du fleuve Congo, paru à Londres en 1878. Lu le 11 octobre 2026 dans la transcription du Projet Gutenberg, faite sur une édition de 1899. La transcription ne donne pas les pages de ce passage ; nous indiquons le chapitre et la date du récit."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

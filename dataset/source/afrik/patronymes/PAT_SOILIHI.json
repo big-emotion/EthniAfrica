@@ -103,5 +103,137 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Soilihi », « Comoros », « Comorian », « surname », « onomastics », « etymology » et « transmission », ainsi que la consultation directe de « Soilihi Surname Origin, Meaning & Last Name History » n'ont établi aucune règle propre à Soilihi permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Soilihi est, aux Comores et à Mayotte, un nom personnel que l'on porte aussi après son propre nom comme nom du père. Ce nom du père ne se transmet pas comme un nom de famille français. Les sources le rapprochent de Saleh ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Soilihi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel comorien, porté aussi comme nom du père ; il serait une forme de Saleh.",
+        "periodLabel": "Écrit dès 1999 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "Décrit en 1999"
+            },
+            "statement": "Le nom Soilihi est un nom personnel. À Mayotte et aux Comores, le nom complet d'une personne est son nom personnel suivi de celui de son père, le sheredzo, qui ne passe pas aux petits-enfants, selon Mohamed M'Trengouéni, Soilihi Mouhktar et Noël J. Gueunier.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "« Nom, Prénom » : une étape vers l'uniformisation culturelle ? Identité et statut juridique à Mayotte (Océan Indien Occidental)",
+                "author": "Mohamed M'Trengouéni, Soilihi Mouhktar et Noël J. Gueunier",
+                "year": 1999,
+                "url": "https://www.migrantsoutremer.org/IMG/pdf/rss-france-est_1999_noms-mahorais.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3, 5",
+                "notes": "Revue des Sciences Sociales de la France de l'Est, 26, 1999, p. 45-53, lu le 11 octobre 2026 dans la version déposée par les auteurs, dont la pagination de 15 pages ne suit pas celle de la revue ; les pages données ici sont celles de cette version. Deux des trois auteurs sont mahorais. Page 3 : le nom du père dit après le nom personnel s'appelle sheredzo, « suite » ; les deux forment le nom complet. Page 5 : le sheredzo rattache à un père, non à une lignée, et ne passe pas à la génération suivante."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "Proposée en 1999"
+            },
+            "statement": "Le nom Soilihi serait une forme du nom Saleh : Soilih, que l'on prononce Swalihi, et Saleh seraient deux formes d'un même nom, l'une dite à Mayotte, l'autre écrite par l'administration, selon Mohamed M'Trengouéni, Soilihi Mouhktar et Noël J. Gueunier.",
+            "hypothesisGroup": "origine du nom Soilihi",
+            "sources": [
+              {
+                "title": "« Nom, Prénom » : une étape vers l'uniformisation culturelle ? Identité et statut juridique à Mayotte (Océan Indien Occidental)",
+                "author": "Mohamed M'Trengouéni, Soilihi Mouhktar et Noël J. Gueunier",
+                "year": 1999,
+                "url": "https://www.migrantsoutremer.org/IMG/pdf/rss-france-est_1999_noms-mahorais.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "notes": "Revue des Sciences Sociales de la France de l'Est, 26, 1999, p. 45-53, lu le 11 octobre 2026 dans la version déposée par les auteurs, dont la pagination de 15 pages ne suit pas celle de la revue ; les pages données ici sont celles de cette version. Deux des trois auteurs sont mahorais. Page 9 : après Muhammadi, dit Mmadi ou Madi, que l'administration écrit Mohamed, « Les mêmes observations peuvent être répétées pour des noms comme [...] “Soilih” (prononcer Swalihi) et “Saleh” »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposée en 2022"
+            },
+            "statement": "Le nom Soilihi, s'il est bien une forme de Saleh, remonterait au mot arabe ṣāliḥ, « pieux, vertueux », d'où vient le nom Salih, selon le Dictionary of American Family Names. Saleh est aussi le nom d'un messager de Dieu dans le Coran.",
+            "sources": [
+              {
+                "title": "Salih Surname Meaning — Dictionary of American Family Names, 2e édition",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/salih?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Dictionary of American Family Names, 2e édition, Oxford University Press, 2022, notice reproduite par Ancestry et lu le 11 octobre 2026. La notice fait de Salih un nom musulman tiré de l'arabe ṣāliḥ, « pious, righteous, virtuous », et rappelle que Saleh est le nom d'un messager de Dieu dans le Coran (7:75). La notice Saleh, lue le même jour, en fait une variante de Salih. Aucune des deux ne cite Soilihi."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "1999"
+            },
+            "statement": "Le nom Soilihi apparaît par écrit dans la signature de Soilihi Mouhktar, l'un des auteurs d'un article de 1999 sur les noms de Mayotte. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un article l'a écrit, pas depuis quand le nom est porté.",
+            "formAsWritten": "Soilihi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "« Nom, Prénom » : une étape vers l'uniformisation culturelle ? Identité et statut juridique à Mayotte (Océan Indien Occidental)",
+                "author": "Mohamed M'Trengouéni, Soilihi Mouhktar et Noël J. Gueunier",
+                "year": 1999,
+                "url": "https://www.migrantsoutremer.org/IMG/pdf/rss-france-est_1999_noms-mahorais.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Revue des Sciences Sociales de la France de l'Est, 26, 1999, p. 45-53, lu le 11 octobre 2026 dans la version déposée par les auteurs, dont la pagination de 15 pages ne suit pas celle de la revue ; les pages données ici sont celles de cette version. Deux des trois auteurs sont mahorais. Page 1 : la signature de l'article nomme ses trois auteurs, dont « Soilihi MOUHKTAR ». Le corps du texte écrit Soilih, sans i final."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Soilih",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'écriture du nom sans i final dans l'article de 1999 ; on la prononce Swalihi.",
+        "periodLabel": "Écrit en 1999",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "1999"
+            },
+            "statement": "Le nom Soilih est l'écriture, sans i final, que donne l'article de 1999 sur les noms de Mayotte ; il précise qu'on le prononce Swalihi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "« Nom, Prénom » : une étape vers l'uniformisation culturelle ? Identité et statut juridique à Mayotte (Océan Indien Occidental)",
+                "author": "Mohamed M'Trengouéni, Soilihi Mouhktar et Noël J. Gueunier",
+                "year": 1999,
+                "url": "https://www.migrantsoutremer.org/IMG/pdf/rss-france-est_1999_noms-mahorais.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "notes": "Revue des Sciences Sociales de la France de l'Est, 26, 1999, p. 45-53, lu le 11 octobre 2026 dans la version déposée par les auteurs, dont la pagination de 15 pages ne suit pas celle de la revue ; les pages données ici sont celles de cette version. Deux des trois auteurs sont mahorais. Page 9 : après Muhammadi, dit Mmadi ou Madi, que l'administration écrit Mohamed, « Les mêmes observations peuvent être répétées pour des noms comme [...] “Soilih” (prononcer Swalihi) et “Saleh” »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

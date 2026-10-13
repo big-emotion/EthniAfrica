@@ -75,5 +75,134 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Simango est un nom de famille ndau, au centre du Mozambique. On ne sait pas avec certitude ce qu'il veut dire : les sources consultées ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Simango",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille ndau, au Mozambique ; les sources consultées n'expliquent pas son sens.",
+        "periodLabel": "Écrit dès 1918 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "Décrit en 1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Simango est celui de C. Kamba Simango, un Ndau de l'Afrique orientale portugaise, l'actuel Mozambique, selon Natalie Curtis Burlin. Le livre ne dit pas ce que veut dire ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Songs and Tales from the Dark Continent, recorded from the singing and the sayings of C. Kamba Simango, Ndau Tribe, Portuguese East Africa, and Madikane Cele, Zulu Tribe, Natal, Zululand, South Africa",
+                "author": "Natalie Curtis Burlin",
+                "year": 1920,
+                "url": "https://archive.org/details/songstalesfromda00burl",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "page de titre ; p. 1",
+                "notes": "New York et Boston, G. Schirmer, 1920, lu le 11 octobre 2026 dans la numérisation d'Internet Archive. La page de titre écrit « C. Kamba Simango, Ndau Tribe, Portuguese East Africa ». Page 1 : « C. Ka'mba Sima'ngo is a full-blooded native » de la côte de l'Afrique orientale portugaise ; une note de la même page dit que les accents marquent la syllabe accentuée. Le livre ne dit pas ce que veut dire le nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Simango est de nouveau écrit dans le livre que Natalie Curtis Burlin consacre aux chants et aux récits de C. Kamba Simango, un Ndau de l'Afrique orientale portugaise.",
+            "formAsWritten": "Simango",
+            "actors": [
+              {
+                "name": "Natalie Curtis Burlin",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Songs and Tales from the Dark Continent, recorded from the singing and the sayings of C. Kamba Simango, Ndau Tribe, Portuguese East Africa, and Madikane Cele, Zulu Tribe, Natal, Zululand, South Africa",
+                "author": "Natalie Curtis Burlin",
+                "year": 1920,
+                "url": "https://archive.org/details/songstalesfromda00burl",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "page de titre ; p. 1",
+                "notes": "New York et Boston, G. Schirmer, 1920, lu le 11 octobre 2026 dans la numérisation d'Internet Archive. La page de titre écrit « C. Kamba Simango, Ndau Tribe, Portuguese East Africa ». Page 1 : « C. Ka'mba Sima'ngo is a full-blooded native » de la côte de l'Afrique orientale portugaise ; une note de la même page dit que les accents marquent la syllabe accentuée. Le livre ne dit pas ce que veut dire le nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1918,
+              "to": 1918,
+              "label": "1918"
+            },
+            "era": "colonial",
+            "statement": "Le nom Simango apparaît par écrit chez Natalie Curtis-Burlin, qui dit avoir enregistré les chants de Kamba Simango, venu de chez les Ndau de l'Afrique orientale portugaise, l'actuel Mozambique. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un livre l'a écrit, pas depuis quand des familles le portent.",
+            "formAsWritten": "Simango",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Natalie Curtis-Burlin",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Negro Folk-Songs — Hampton Series, Book II",
+                "author": "Natalie Curtis-Burlin",
+                "year": 1918,
+                "url": "https://archive.org/details/negrofol02curt",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "New York et Boston, G. Schirmer, 1918, lu le 12 octobre 2026 dans la numérisation d'Internet Archive. Avant-propos, page 4 : l'autrice dit avoir enregistré la musique de deux Africains, « Madikane Cele, a Zulu from Natal, and Kamba Simango, from the Ndau tribe of Portuguese East Africa », venus étudier à l'institut Hampton, aux États-Unis. Le livre ne dit pas ce que veut dire le nom."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Sima'ngo",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'écriture du nom Simango dans le livre de 1920, qui marque la syllabe accentuée.",
+        "periodLabel": "Écrit en 1920",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Sima'ngo est l'écriture de Simango dans le texte du livre de Natalie Curtis Burlin : le signe placé avant la dernière syllabe marque l'accent, selon une note de la page 1.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Songs and Tales from the Dark Continent, recorded from the singing and the sayings of C. Kamba Simango, Ndau Tribe, Portuguese East Africa, and Madikane Cele, Zulu Tribe, Natal, Zululand, South Africa",
+                "author": "Natalie Curtis Burlin",
+                "year": 1920,
+                "url": "https://archive.org/details/songstalesfromda00burl",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "page de titre ; p. 1",
+                "notes": "New York et Boston, G. Schirmer, 1920, lu le 11 octobre 2026 dans la numérisation d'Internet Archive. La page de titre écrit « C. Kamba Simango, Ndau Tribe, Portuguese East Africa ». Page 1 : « C. Ka'mba Sima'ngo is a full-blooded native » de la côte de l'Afrique orientale portugaise ; une note de la même page dit que les accents marquent la syllabe accentuée. Le livre ne dit pas ce que veut dire le nom."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

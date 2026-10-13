@@ -124,5 +124,247 @@
   "nisbaSubtype": {
     "value": "tribal",
     "sourceRefs": ["ifren-encyclopedie-berbere"]
+  },
+  "nameHistory": {
+    "summary": "Le nom Banu Ifran est celui d'une grande tribu berbère zénète du Maghreb et d'Andalousie, que l'on écrit aussi Beni Ifren. Les sources lues le montrent comme un nom de tribu, non comme un nom de famille d'aujourd'hui. Elles proposent plusieurs explications de son sens ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Banu Ifran",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'une grande tribu zénète du Maghreb ; son sens reste discuté.",
+        "periodLabel": "Nommé dès le XIVe siècle ; écrit ainsi dès 2019",
+        "accounts": [
+          {
+            "period": {
+              "from": 2001,
+              "to": 2001,
+              "label": "Décrit en 2001"
+            },
+            "era": "modern",
+            "statement": "Le nom Banu Ifran, que l'Encyclopédie berbère écrit Beni Ifren, est celui d'une grande tribu zénète du Maghreb. Selon Ibn Khaldoun, c'était l'une des quatre « grandes familles » qui commandaient les Zénètes lors de la conquête arabe. Ce que le nom veut dire reste discuté ; nous présentons plus bas les explications des sources.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ifren (Beni)",
+                "author": "C. Agabi",
+                "year": 2001,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1543",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3657, par. 1",
+                "notes": "Encyclopédie berbère, vol. 24, 2001, p. 3657-3659 ; texte intégral lu en ligne le 12 octobre 2026. Par. 1 : « L'une des quatre “grandes familles” qui, selon Ibn Khaldoun, commandaient les Zénètes au moment de la conquête arabe. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2001,
+              "to": 2001,
+              "label": "Décrit en 2001"
+            },
+            "era": "modern",
+            "statement": "Le nom Banu Ifran est porté, selon C. Agabi, par plusieurs tribus réparties en Tripolitaine, dans le sud de l'Ifriqiya, dans le Maghreb central et dans le Maghreb el-Aqsa. Il écrit que les plus anciennes mentions situent le gros de ce peuple dans l'ouest de l'ancienne Maurétanie césarienne.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Ifren (Beni)",
+                "author": "C. Agabi",
+                "year": 2001,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1543",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3657, par. 1",
+                "notes": "Encyclopédie berbère, vol. 24, 2001, p. 3657-3659 ; texte intégral lu en ligne le 12 octobre 2026. Par. 1 : « Le nom est porté par plusieurs tribus répandues en Tripolitaine, dans le sud de l'Ifriqiya, le Maghreb central et le Maghreb el-Aqsa. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 955,
+              "to": 955,
+              "label": "955"
+            },
+            "era": "polity",
+            "statement": "Le nom Banu Ifran passe aussi en Andalousie : après la défaite des Beni Ifren de Tlemcen devant l'armée fatimide, en 954, une partie d'entre eux franchit le détroit et s'empare des villes de Malaga, Jaén et Ronda en 955, selon C. Agabi.",
+            "sources": [
+              {
+                "title": "Ifren (Beni)",
+                "author": "C. Agabi",
+                "year": 2001,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1543",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3657-3658, par. 7",
+                "notes": "Encyclopédie berbère, vol. 24, 2001, p. 3657-3659 ; texte intégral lu en ligne le 12 octobre 2026. Par. 7 : « une partie d'entre eux franchit le Détroit et s'empare en al-Andalus, des villes de Malaga, Jaén et Ronda (955) »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2001,
+              "to": 2001,
+              "label": "Proposé en 2001"
+            },
+            "era": "modern",
+            "statement": "Le nom Banu Ifran viendrait du berbère « ifri », « caverne » ou « grotte », selon C. Agabi, qui y voit une allusion à une forme d'habitat. Il envisage que les Beni Ifren aient eu des ancêtres troglodytes, comme les Matmata, mais ne présente pas cette idée comme démontrée.",
+            "hypothesisGroup": "origine du nom Banu Ifran",
+            "sources": [
+              {
+                "title": "Ifren (Beni)",
+                "author": "C. Agabi",
+                "year": 2001,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1543",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3657, par. 1",
+                "notes": "Encyclopédie berbère, vol. 24, 2001, p. 3657-3659 ; texte intégral lu en ligne le 12 octobre 2026. Par. 1 : « Il est possible que les Beni Ifren aient eu des ancêtres troglodytiques »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1300,
+              "to": 1399,
+              "label": "Rapporté au XIVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Banu Ifran serait celui des descendants d'Ifri, fils d'Islîten, selon les généalogistes des Zénètes que cite Ibn Khaldoun. Ils font aussi des Maghraoua, des Beni-Irnîan et des Beni-Ouacîn des frères des Beni-Ifren, avec Islîten pour aïeul commun. Ibn Khaldoun note que d'autres généalogistes donnent d'autres pères à Ifri, et retient la généalogie qu'il tient d'Ibn Hazm.",
+            "hypothesisGroup": "origine du nom Banu Ifran",
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome III",
+                "author": "Ibn Khaldoun, traduit par William Mac Guckin de Slane",
+                "year": 1856,
+                "url": "https://archive.org/details/bub_gb_T9IOAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 197-198",
+                "notes": "Alger, Imprimerie du gouvernement, lu sur sa numérisation d'archive.org le 12 octobre 2026, dans la traduction française ; le texte arabe n'a pas été lu. Ibn Khaldoun a vécu de 1332 à 1406, selon l'Histoire générale de l'Afrique. P. 197 : « Selon les généalogistes de cette race, ils descendent d'Ifri, fils d'Islîten, fils de Mesra [...] Les Maghraoua, les Beni-Irnîan et les Beni-Ouacîn sont frères des Beni-Ifren ». P. 198 : « d'autres le représentent comme fils de Morra [...] sa véritable généalogie est celle que nous avons rapportée sur l'autorité d'Ibn-Hazm »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1300,
+              "to": 1399,
+              "label": "Rapporté au XIVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Banu Ifran viendrait du berbère « ifri », qui veut dire « caverne », selon Ibn Khaldoun. Dans une note, le traducteur William Mac Guckin de Slane ajoute que « ifri » et « tifri » veulent dire « cachette » ou « caverne » et dérivent du verbe « effer », « cacher ».",
+            "hypothesisGroup": "origine du nom Banu Ifran",
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome III",
+                "author": "Ibn Khaldoun, traduit par William Mac Guckin de Slane",
+                "year": 1856,
+                "url": "https://archive.org/details/bub_gb_T9IOAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 197-198",
+                "notes": "Alger, Imprimerie du gouvernement, lu sur sa numérisation d'archive.org le 12 octobre 2026, dans la traduction française ; le texte arabe n'a pas été lu. Ibn Khaldoun a vécu de 1332 à 1406, selon l'Histoire générale de l'Afrique. P. 197-198 : « En langue berbère, le mot ifri veut dire caverne », avec la note de bas de page de la p. 198 : « Ifri et tifri signifient cachette ou caverne en langue berbère et dérivent du verbe effer (cacher). »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Banu Ifran apparaît sous cette graphie dans le titre d'un article de 2019 de la revue Cross-Cultural Studies, qui étudie cette tribu au Maghreb et en Andalousie. C'est la plus ancienne trace de cette graphie que le projet connaît ; la tribu est bien plus ancienne que ce titre, puisqu'Ibn Khaldoun la nomme déjà au XIVe siècle.",
+            "formAsWritten": "Banu Ifran",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Gi-Dae Lim",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "A study on the Berber tribes ‘Banu Ifran’ of Andalucia and Maghreb",
+                "author": "Gi-Dae Lim",
+                "year": 2019,
+                "url": "https://journal.kci.go.kr/ccs/archive/articleView?artiId=ART002535759",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 339 (titre)",
+                "notes": "Cross-Cultural Studies 57, 2019, p. 339-367. Seule la notice de l'article (titre, auteur, résumé, mots-clés) a été lue le 12 octobre 2026 ; le texte intégral n'a pas été ouvert."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Beni Ifren",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'écriture de l'Encyclopédie berbère ; nommé Beni-Ifren dès le XIVe siècle chez Ibn Khaldoun.",
+        "periodLabel": "Nommé dès le XIVe siècle",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2001,
+              "to": 2001,
+              "label": "Décrit en 2001"
+            },
+            "era": "modern",
+            "statement": "Le nom Beni Ifren est l'écriture de l'Encyclopédie berbère pour Banu Ifran ; l'article de C. Agabi lui est consacré.",
+            "sources": [
+              {
+                "title": "Ifren (Beni)",
+                "author": "C. Agabi",
+                "year": 2001,
+                "url": "https://journals.openedition.org/encyclopedieberbere/1543",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 3657",
+                "notes": "Encyclopédie berbère, vol. 24, 2001, p. 3657-3659 ; texte intégral lu en ligne le 12 octobre 2026. "
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1300,
+              "to": 1399,
+              "label": "XIVe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Beni-Ifren apparaît par écrit dans l'Histoire des Berbères d'Ibn Khaldoun, telle que William Mac Guckin de Slane la traduit en 1856 : le texte y fait des Beni-Ifren la branche la plus considérable des Zénètes. La forme écrite est celle du traducteur. C'est la plus ancienne trace de ce nom que le projet connaît ; la tribu existait déjà avant lui, puisque Ibn Khaldoun lui donne un chef, Abou-Corra, vers le passage du califat des Omeyyades aux Abbassides.",
+            "formAsWritten": "Beni-Ifren",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Ibn Khaldoun",
+                "role": "auteur de l'ouvrage, du XIVe siècle"
+              },
+              {
+                "name": "William Mac Guckin de Slane",
+                "role": "traducteur qui fixe cette forme en 1856"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome III",
+                "author": "Ibn Khaldoun, traduit par William Mac Guckin de Slane",
+                "year": 1856,
+                "url": "https://archive.org/details/bub_gb_T9IOAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 197, 199",
+                "notes": "Alger, Imprimerie du gouvernement, lu sur sa numérisation d'archive.org le 12 octobre 2026, dans la traduction française ; le texte arabe n'a pas été lu. Ibn Khaldoun a vécu de 1332 à 1406, selon l'Histoire générale de l'Afrique. P. 197 : « Les Beni-Ifren formaient la branche la plus considérable de la grande tribu des Zenata ». P. 199 : « Vers l'époque où le khalifat passa des Omeïades aux Abbacides, les Beni-Ifren eurent pour chef Abou-Corra »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

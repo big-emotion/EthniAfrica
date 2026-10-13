@@ -90,5 +90,205 @@
       "fieldPath": "countries",
       "reason": "La source propre au nom n'a pas confirmé le pays où il est porté ; les recherches « Mekonnen » avec Ethiopia, Eritrea et les variantes de la fiche n'ont pas livré de registre officiel exploitable."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mekonnen est un nom personnel éthiopien, que l'on écrit aussi Mekonen ou Makonnen. Il sert de second nom aux enfants d'un homme qui le porte, sans devenir un nom de famille. Un dictionnaire de noms lui donne le sens d'« officier de l'armée » en amharique ; nous présentons plus bas l'explication de son sens.",
+    "names": [
+      {
+        "nameText": "Mekonnen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel éthiopien, porté en second par les enfants d'un Mekonnen.",
+        "periodLabel": "Écrit Mèkonen dès 1930 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1996,
+              "to": 2022,
+              "label": "Décrit en 1996 et en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Mekonnen est un nom personnel éthiopien. En Éthiopie, une personne porte son propre nom suivi du nom personnel de son père, parfois de celui de son grand-père. Chez l'enfant d'un Mekonnen, Mekonnen est donc le nom du père, et il ne passe pas aux petits-enfants.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Names of Persons: National Usages for Entry in Catalogues",
+                "author": "IFLA Universal Bibliographic Control and International MARC Programme",
+                "year": 1996,
+                "url": "https://www.ifla.org/files/assets/cataloguing/pubs/names-of-persons_1996.pdf",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 64-65",
+                "notes": "Quatrième édition, Munich, K. G. Saur, 1996, lu le 13 octobre 2026 dans le PDF de l'IFLA. La notice Éthiopie, p. 64-65, fournie par la bibliothèque de l'université d'Addis-Abeba et approuvée par la Bibliothèque et les Archives nationales en octobre 1994, compose le nom d'un nom personnel, suivi du nom personnel du père, parfois de celui du grand-père. Elle cite Wolde Mariam parmi les noms composés, W. Berhan pour Wolde Berhan parmi les abréviations, et l'abuna Lukas Tewolde parmi les exemples. Elle note que le Code civil de 1960 prescrit un nom de famille, usage qui ne s'est pas encore répandu."
+              },
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Mekonnen",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/mekonnen?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lu le 13 octobre 2026 ; le site affiche une traduction française. La notice dit : éthiopien, du nom personnel Mekonnen, qui signifie « officier de l'armée » en amharique ; elle renvoie à Makonnen et Mekonen. Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Mekonnen voudrait dire « officier de l'armée » en amharique, selon le Dictionary of American Family Names, qui renvoie aux formes Makonnen et Mekonen.",
+            "hypothesisGroup": "origine du nom Mekonnen",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Mekonnen",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/mekonnen?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lu le 13 octobre 2026 ; le site affiche une traduction française. La notice dit : éthiopien, du nom personnel Mekonnen, qui signifie « officier de l'armée » en amharique ; elle renvoie à Makonnen et Mekonen. Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1930,
+              "to": 1930,
+              "label": "Traduction publiée en 1930"
+            },
+            "era": "polity",
+            "statement": "Le nom Mekonnen apparaît par écrit sous une forme proche, Mèkonen, dans la traduction française de la chronique du règne de Ménélik II : le roi donne le gouvernement de Harar au balambaras Mèkonen, qui reçoit alors le titre de dèdjazmatch. C'est la plus ancienne trace de cette forme que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "Mèkonen",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Chronique du règne de Ménélik II, roi des rois d'Éthiopie",
+                "author": "Guèbrè Sellassié ; traduction de Tésfa Sellassié, publiée et annotée par Maurice de Coppet",
+                "year": 1930,
+                "url": "https://archive.org/details/chronique-du-regne-de-menelik-ii-roi-des-rois-dethiopie",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome I, image n857",
+                "notes": "Paris, Librairie orientale et américaine Maisonneuve frères, 1930. Traduction de l'amharique. Lu le 13 octobre 2026 sur la numérisation d'archive.org des deux tomes réunis, dont le texte est recomposé sans les numéros de page d'origine. Image n857 : « le roi donna le gouvernement de Harar au balambaras Mèkonen qui fut nommé dèdjazmatch », suivi d'une note du traducteur. Le texte est celui d'un chroniqueur de la cour, Guèbrè Sellassié, écrit en amharique ; le nom n'y est pas daté plus précisément."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1865,
+              "to": 1865,
+              "label": "1865"
+            },
+            "era": "polity",
+            "statement": "Le nom Mekonnen ressemble au mot guèze መኰንን, que le dictionnaire de Dillmann traduit par « juge », puis par « prince », « chef » ou « gouverneur ». Dillmann ne le donne pas comme nom de personne.",
+            "formAsWritten": "መኰንን",
+            "before": true,
+            "sources": [
+              {
+                "title": "Lexicon linguae aethiopicae",
+                "author": "August Dillmann",
+                "year": 1865,
+                "url": "https://archive.org/details/lexiconlinguaeae00dilluoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "col. 856",
+                "notes": "Leipzig, T. O. Weigel, 1865. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'archive.org (bibliothèque de l'université de Toronto). Le dictionnaire est imprimé en colonnes. Colonne 856, entrée « መኰንን » : « judex », puis « princeps, dominator, praefectus, dux, primus, praeses, satrapa, tyrannus, magistratus ». Dillmann ne dit pas que ce mot soit un nom de personne."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mekonen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Décrit en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Mekonen est une variante de Mekonnen, selon le Dictionary of American Family Names. Comme les Éthiopiens n'ont pas de nom de famille héréditaire, il n'a été enregistré comme nom de famille qu'après l'immigration de ses porteurs aux États-Unis.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Mekonen",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/mekonen?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lu le 13 octobre 2026 ; le site affiche une traduction française. La notice dit : éthiopien, variante de Mekonnen. Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Makonnen",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Écrit dès 1899",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Décrit en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Makonnen est une variante de Mekonnen, selon le Dictionary of American Family Names.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Makonnen",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/makonnen?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lu le 13 octobre 2026 ; le site affiche une traduction française. La notice dit : éthiopien, variante de Mekonnen. Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1899,
+              "to": 1899,
+              "label": "Article de 1899"
+            },
+            "era": "polity",
+            "statement": "Le nom Makonnen apparaît par écrit dans le titre d'un article français de 1899, « Chez le ras Makonnen », que la bibliographie de la traduction de la chronique de Ménélik II range parmi des articles de la revue Lectures pour tous. C'est la plus ancienne trace de cette graphie que le projet connaît ; nous ne l'avons lue que par cette bibliographie, publiée en 1930.",
+            "formAsWritten": "Makonnen",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Chronique du règne de Ménélik II, roi des rois d'Éthiopie",
+                "author": "Guèbrè Sellassié ; traduction de Tésfa Sellassié, publiée et annotée par Maurice de Coppet",
+                "year": 1930,
+                "url": "https://archive.org/details/chronique-du-regne-de-menelik-ii-roi-des-rois-dethiopie",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "bibliographie, p. 659 (image n2154)",
+                "notes": "Paris, Librairie orientale et américaine Maisonneuve frères, 1930. Traduction de l'amharique. Lu le 13 octobre 2026 sur la numérisation d'archive.org des deux tomes réunis, dont le texte est recomposé sans les numéros de page d'origine. Image n2154, fin de la page 659 de la bibliographie, juste avant le numéro 660 : « Chez le ras Makonnen. — Paris, 1899 (Même revue, novembre 1899) », à la suite d'un article de Lectures pour tous d'octobre 1899. L'image ne montre pas le nom de l'auteur de l'article. L'article lui-même n'a pas été lu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -142,5 +142,143 @@
         "notes": "Revue Matatu, volumes 27-28, 2003 ; travail universitaire indépendant de celui de Drewal, consulté le 10 septembre 2026."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Duala désigne un peuple bantou de la côte du Cameroun, établi à l'embouchure du Wouri, qui se nomme lui-même Duala. La grande ville de Douala porte son nom. Une seule explication de l'origine de ce nom est publiée à notre connaissance ; nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Duala",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "dua",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple de l'estuaire du Wouri, écrit dès 1854 sous une forme proche.",
+        "periodLabel": "Forme proche écrite en 1854 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2010,
+              "to": 2010,
+              "label": "Article publié en 2010"
+            },
+            "era": "modern",
+            "statement": "Le nom Duala désigne les premiers habitants de la plaine où s'étend Douala, avec les Bassa ; leurs quartiers portent des noms de clans formés sur bona, « clan, famille, descendant » en duala, comme Bonapriso, le clan de Priso, selon Dieudonné Martin Luther Bot. L'origine du nom est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Langue, origine et signification des toponymes de Douala",
+                "author": "Dieudonné Martin Luther Bot",
+                "year": 2010,
+                "url": "http://www.ddl.cnrs.fr/fulltext/fflac/Bot_2010_Toponyme_douala.pdf",
+                "source_kind": "academic",
+                "page": "p. 24-25",
+                "notes": "abá, n° 001, avril 2010, p. 23-29. Lu dans le texte publié par le laboratoire Dynamique du langage le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1855,
+              "to": 1855,
+              "label": "1855"
+            },
+            "era": "polity",
+            "statement": "Le nom Duala est écrit Dualla dans une grammaire de la langue imprimée par la mission baptiste au Cameroun : on y lit Motu Dualla, « un homme de Dualla », et, dans le vocabulaire, Madiba ma Dualla, traduit par « Cameroons river », le fleuve du Cameroun.",
+            "formAsWritten": "Dualla",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Grammatical Elements of the Dualla Language, with a Vocabulary",
+                "author": "Baptist Mission (Cameroons)",
+                "year": 1855,
+                "url": "https://archive.org/details/grammaticalelem00sakegoog",
+                "source_kind": "archive",
+                "page": "p. 9 ; vocabulaire, p. 20",
+                "notes": "Cameroons, Baptist Mission Press, 1855, compilé pour les missionnaires et les enseignants. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. La page de titre ne nomme pas l'auteur ; la notice d'Internet Archive l'attribue à A. J. S. Saker."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Duala apparaît par écrit sous une forme proche, Diwála, chez le linguiste Sigismund Koelle, qui donne ce nom à une langue et à son pays, que les Européens appellent « Cameroon ». C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "formAsWritten": "Diwála",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "section IX-A-2",
+                "notes": "Londres, Church Missionary House. Les remarques de Koelle sont lues dans leur transcription par le jeu de données Lexibank, pas sur l'imprimé. Koelle a interrogé à Freetown des personnes libérées de la traite."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2011,
+              "to": 2011,
+              "label": "Proposée en 2011"
+            },
+            "era": "modern",
+            "statement": "Le nom Duala viendrait d'Ewalé, l'ancêtre dont les Duala se disent les descendants, selon Jean Philémon Megopé Foondé, que résume Fouad Soufi ; Mbédi serait le père d'Ewalé.",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Douala, une ville africaine",
+                "author": "Fouad Soufi",
+                "year": 2014,
+                "url": "https://journals.codesria.org/index.php/arb/article/view/5024",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "Africa Review of Books, vol. 10, n° 2, CODESRIA. Compte rendu du livre de Jean Philémon Megopé Foondé, Douala : toponymes, histoire et cultures, Yaoundé, Ifrikiya, 2011. Lu le 11 octobre 2026 ; nous n'avons pas lu le livre lui-même."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Douala",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "shortLine": "L'orthographe française du nom, devenue celle de la grande ville du Cameroun.",
+        "periodLabel": "Nom de la ville depuis 1901",
+        "accounts": [
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "1901"
+            },
+            "era": "colonial",
+            "statement": "Le nom Douala devient en 1901 celui de la ville : les Allemands donnent alors des noms locaux à la ville et au fleuve, Duala et Wuri, et les descendants d'Ewalé proposent ce nom pour honorer leur ancêtre et marquer qu'ils sont les seuls maîtres de l'embouchure du Wouri, selon Jean Philémon Megopé Foondé, que résume Fouad Soufi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Douala, une ville africaine",
+                "author": "Fouad Soufi",
+                "year": 2014,
+                "url": "https://journals.codesria.org/index.php/arb/article/view/5024",
+                "source_kind": "academic",
+                "page": "p. 22",
+                "notes": "Africa Review of Books, vol. 10, n° 2, CODESRIA. Compte rendu du livre de Jean Philémon Megopé Foondé, Douala : toponymes, histoire et cultures, Yaoundé, Ifrikiya, 2011. Lu le 11 octobre 2026 ; nous n'avons pas lu le livre lui-même."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

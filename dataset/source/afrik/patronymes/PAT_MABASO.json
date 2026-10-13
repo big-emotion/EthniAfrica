@@ -80,5 +80,201 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Mabaso », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de le témoignage « What's in a Name? » archivé par Wits et des recherches ciblées sur Mabaso dans les travaux sur les noms de clan zoulous, n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mabaso est un isibongo, un nom de clan des peuples nguni, que la littérature écrit aussi Mabasa. Alfred T. Bryant l'écrit Mabaso en 1929. Les sources ne s'accordent pas sur l'origine du clan ni sur ce que le nom veut dire ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Mabaso",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan nguni, écrit Mabaso en 1929 ; les sources ne s'accordent pas sur son origine.",
+        "periodLabel": "Écrit dès 1929 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1935,
+              "to": 1935,
+              "label": "Décrit en 1935"
+            },
+            "era": "modern",
+            "statement": "Le nom Mabaso est un isibongo, un nom de clan, que l'ethnologue du gouvernement N. J. van Warmelo relève en 1935 pour plusieurs chefferies du Natal, rattachées aux Mntungwa. Les sources ne s'accordent pas sur l'origine du clan, et une seule propose un sens au nom ; nous les présentons séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 79",
+                "notes": "Pretoria, Government Printer, 1935 (Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V), lu le 13 octobre 2026 dans la copie numérisée de l'Université de Pretoria, reproduite sur Internet Archive. L'auteur est l'ethnologue du gouvernement. Dans le tableau des chefferies du district de Ndwedwe : le groupe « Nyuswa, abakwa » est dit « also known as Mabaso, abakwa, because a chief of that isibongo was appointed ». La même enquête range d'autres groupes « Mabaso, abakwa » parmi les Mntungwa, par exemple dans les districts d'Empangeni, d'Ixopo et de Msinga (p. 27 à 30)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Proposée en 1929"
+            },
+            "era": "modern",
+            "statement": "Le nom Mabaso voudrait dire « celui qui allume le feu » : ce serait le surnom d'un docteur nommé Funjwa, venu du pays Ndwandwe, à cause de ses bâtons à feu ; il aurait fondé vers 1770 le clan des aba-kwa-Mabaso, selon Alfred T. Bryant, qui le traduit « Mr. Fire-Kindler ».",
+            "hypothesisGroup": "origine du nom Mabaso",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 284",
+                "notes": "Londres, Longmans, Green, 1929, lu le 12 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 284 : un docteur nommé Funjwa venu du pays Ndwandwe, vers 1770, « he was named after them 'Mabaso' (Mr. Fire-Kindler) », les « fire-sticks » étant ses bâtons à feu,, épouse la veuve du roi des Malimbana et fonde « a new dynasty and a new clan, labelled the aba-kwa-Mabaso »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Proposée en 1929"
+            },
+            "era": "modern",
+            "statement": "Le nom Mabaso serait celui d'un homme du clan témbu, père de la fille qu'un chef témbu voulut épouser malgré l'interdit du mariage dans le clan : les Mabaso se seraient alors déclarés clan à part, selon la tradition des Témbu de l'intérieur que rapporte Alfred T. Bryant.",
+            "hypothesisGroup": "origine du nom Mabaso",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 243-245",
+                "notes": "Londres, Longmans, Green, 1929, lu le 12 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Pages 243 à 245, chapitre sur les Témbu : l'histoire d'un chef témbu qui s'éprend de la fille d'un homme du clan Mabaso, doit l'épouser malgré l'interdit du mariage dans le clan, et dont la famille se déclare alors « an entirely separate clan ». Bryant raconte aussi, à la suite, la ruse de ce Mabaso, qu'il qualifie de « consummate knave », et la juge être un conte d'enfants joué sur un nom d'ancêtre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Proposée en 1929"
+            },
+            "era": "modern",
+            "statement": "Le nom Mabaso serait celui d'un docteur renommé, fondateur du clan ; Alfred T. Bryant en doute et se demande si ce nom n'est pas plutôt l'isibongo, le nom de clan, dont on appelait Mangété, le père de Mtiyane.",
+            "hypothesisGroup": "origine du nom Mabaso",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 417-419",
+                "notes": "Londres, Longmans, Green, 1929, lu le 12 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Pages 417 à 419 : les Kumalo seraient une branche cadette des Mabaso, ou les deux clans viendraient d'un même clan-mère ; le clan Mabaso « (or Mabasa) » n'a laissé aucun fait d'histoire, et son seul nom notable est celui de Mabaso lui-même, un docteur renommé et sorcier ; Bryant doute que ce Mabaso soit le fondateur du clan et y voit peut-être l'isibongo par lequel on appelait Mangété, père de Mtiyane."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant la séparation des clans, selon Alfred T. Bryant"
+            },
+            "era": "polity",
+            "statement": "Les Mabaso et les Kumalo seraient issus d'un même clan-mère que Bryant ne nomme pas, ou les Kumalo seraient une branche cadette des Mabaso, qui en auraient été la maison aînée, selon Alfred T. Bryant.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 417-419",
+                "notes": "Londres, Longmans, Green, 1929, lu le 12 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Pages 417 à 419 : les Kumalo seraient une branche cadette des Mabaso, ou les deux clans viendraient d'un même clan-mère ; le clan Mabaso « (or Mabasa) » n'a laissé aucun fait d'histoire, et son seul nom notable est celui de Mabaso lui-même, un docteur renommé et sorcier ; Bryant doute que ce Mabaso soit le fondateur du clan et y voit peut-être l'isibongo par lequel on appelait Mangété, père de Mtiyane."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "1929"
+            },
+            "era": "modern",
+            "statement": "Le nom Mabaso apparaît par écrit, sous la forme Mabaso, chez Alfred T. Bryant, qui l'attribue à un homme du clan témbu dont la fille épouse un chef. C'est la plus ancienne trace de ce nom que le projet connaît ; le clan qui le porte est plus ancien que ce livre.",
+            "formAsWritten": "Mabaso",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Alfred T. Bryant",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 244",
+                "notes": "Londres, Longmans, Green, 1929, lu le 12 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 244 : le chef témbu s'éprend d'une « tribal-sister, daughter of a clansman named Mabaso » ; les Mabaso se proclament ensuite un clan à part."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mabasa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une graphie du même nom, que Bryant écrit entre parenthèses en 1929.",
+        "periodLabel": "Écrit dès 1929",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "1929"
+            },
+            "era": "modern",
+            "statement": "Le nom Mabasa est la graphie que donne Alfred T. Bryant, entre parenthèses, pour le clan Mabaso : « the Mabaso (or Mabasa) clan ». C'est la plus ancienne trace de cette graphie que le projet connaît.",
+            "formAsWritten": "Mabasa",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Alfred T. Bryant",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal — Containing Earlier Political History of the Eastern-Nguni Clans",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bwb_KT-091-892",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 418",
+                "notes": "Londres, Longmans, Green, 1929, lu le 12 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, missionnaire catholique au Natal, reconstitue l'histoire des clans nguni à partir de récits recueillis au tournant du siècle. Page 418 : « The Mabaso (or Mabasa) clan established no record in history »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

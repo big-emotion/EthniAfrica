@@ -123,5 +123,143 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Bobo désigne un peuple de langue mandé du sud-ouest du Burkina Faso, autour de Bobo-Dioulasso, et du sud du Mali. On ne sait pas comment ce peuple se nomme lui-même. D'autres noms existent : Bobofing, « Bobo noirs ». Le mot a aussi servi à nommer d'autres groupes de la région, que Binger appelle Bobo Dioula, Bobo Niéniégué et Bobo Oulé. Les sources ne s'accordent pas sur l'origine du nom ; nous les présentons plus bas.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Bobo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Dioula, selon Maurice Delafosse",
+        "shortLine": "Un nom que les Dioula auraient donné à ces gens, « muets » ; cité dès 1892 par Binger.",
+        "periodLabel": "Cité dès 1892 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "Proposée en 1901"
+            },
+            "statement": "Le nom Bobo viendrait d'un mot dioula qui veut dire « muet » : c'est un surnom que les Dioula donnent à la tribu des Boua, selon Maurice Delafosse.",
+            "hypothesisGroup": "origine du nom Bobo",
+            "sources": [
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue. Étude grammaticale du dialecte dyoula",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 196",
+                "notes": "Paris, Ernest Leroux, 1901. Lu sur la numérisation de la bibliothèque de l'université de Toronto, sur Internet Archive, le 12 octobre 2026. Dictionnaire français-dyoula, article « bobo, muet ; surnom donné par les Dyoula à la tribu des Boua »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "1901"
+            },
+            "statement": "Le nom Bobo désigne chez Maurice Delafosse les habitants d'origine de la région de Bobo-Dioulassou, qu'il appelle Boua ou Bobo, de la tribu des Bobofing, aux côtés des Tiéfo.",
+            "formAsWritten": "Bobo",
+            "sources": [
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue. Étude grammaticale du dialecte dyoula",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 4",
+                "notes": "Paris, Ernest Leroux, 1901. Lu sur la numérisation de la bibliothèque de l'université de Toronto, sur Internet Archive, le 12 octobre 2026. Delafosse dresse la liste des régions qui entourent le pays dyoula."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "1892"
+            },
+            "era": "polity",
+            "statement": "Le nom Bobo désigne chez le capitaine Louis-Gustave Binger les gens de la région de Bobo-Dioulasou, dont il distingue plusieurs familles : les Bobo Dioula, les Bobo Niéniégué, les Bobofing et les Bobo Oulé. C'est la plus ancienne trace de ce nom pour ce peuple que le projet connaît. Le peuple vivait là bien avant lui.",
+            "formAsWritten": "Bobo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, dans Le Tour du monde",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://archive.org/details/dunigeraugolfede00bing",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 107 et p. 113-114",
+                "notes": "Récit du voyage de 1887 à 1889. Lu sur sa numérisation par Internet Archive, cataloguée comme l'édition Hachette de 1892 ; les pages numérisées portent l'en-tête du Tour du monde, où le récit a paru en livraisons, et c'est cette pagination que nous citons. Page 107 : Binger va « auprès du chef des Bobo » et croise un village bobo nommé Kinimé ; pages 113-114 : les familles bobo."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bobofing",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom, « Bobo noirs », que Binger explique comme un moyen de les distinguer des autres Bobo.",
+        "periodLabel": "Cité dès 1892",
+        "accounts": [
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "Proposée en 1892"
+            },
+            "era": "polity",
+            "statement": "Le nom Bobofing, « Bobo noir », ne viendrait pas de la couleur de leur peau : on aurait donné ce nom aux Bobo pour les distinguer des Bobo Dioula, des Bobo Niéniégué et des Bobo Oulé, comme on distingue en pays mandé les cours d'eau par trois mots, Ba-fing, Ba-oulé et Ba-dié, « rivière noire, rouge ou blanche », selon le capitaine Louis-Gustave Binger.",
+            "hypothesisGroup": "origine du nom Bobofing",
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, dans Le Tour du monde",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://archive.org/details/dunigeraugolfede00bing",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 114",
+                "notes": "Récit du voyage de 1887 à 1889. Lu sur sa numérisation par Internet Archive, cataloguée comme l'édition Hachette de 1892 ; les pages numérisées portent l'en-tête du Tour du monde, où le récit a paru en livraisons, et c'est cette pagination que nous citons. Binger écrit « Bobo-fing, nom qui veut dire Bobo noir »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "1892"
+            },
+            "era": "polity",
+            "statement": "Le nom Bobofing apparaît chez le capitaine Louis-Gustave Binger pour la population des villages de Moussobadougou et de Niamouso, près de Koroma, qu'il décrit comme les gens d'origine de la région. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait là bien avant lui.",
+            "formAsWritten": "Bobofing",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, dans Le Tour du monde",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://archive.org/details/dunigeraugolfede00bing",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 113-114",
+                "notes": "Récit du voyage de 1887 à 1889. Lu sur sa numérisation par Internet Archive, cataloguée comme l'édition Hachette de 1892 ; les pages numérisées portent l'en-tête du Tour du monde, où le récit a paru en livraisons, et c'est cette pagination que nous citons. Voyage de 1887 à 1889. Page 113 : « deux villages Bobofing » ; page 114 : « les autochtones, les Bobofing »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

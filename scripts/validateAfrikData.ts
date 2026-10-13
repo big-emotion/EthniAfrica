@@ -937,7 +937,12 @@ export function checkPplDuplicates(datasetRoot: string): ValidationResult {
  */
 export const RETIRED_IDENTIFIERS_LEDGER = "_retired-identifiers.json";
 
-const RETIREMENT_DECISIONS = new Set(["merged", "renamed", "kept-distinct"]);
+const RETIREMENT_DECISIONS = new Set([
+  "merged",
+  "renamed",
+  "kept-distinct",
+  "withdrawn",
+]);
 
 interface RetiredIdentifierEntry {
   decision?: unknown;
@@ -970,12 +975,15 @@ function loadRetiredIdentifiers(datasetRoot: string): {
   }
 }
 
-/** retired id → successor id, for the ledger's merged and renamed entries. */
+/**
+ * retired id → successor id, for the ledger's merged and renamed entries. A
+ * withdrawn id has no successor and so no redirect: it is left to answer 404.
+ */
 function retiredSuccessors(datasetRoot: string): Map<string, string> {
   const successors = new Map<string, string>();
   for (const entry of loadRetiredIdentifiers(datasetRoot).entries) {
     if (
-      entry.decision !== "kept-distinct" &&
+      (entry.decision === "merged" || entry.decision === "renamed") &&
       typeof entry.retiredId === "string" &&
       typeof entry.successorId === "string"
     ) {
@@ -1101,7 +1109,9 @@ function collectPeopleReferences(datasetRoot: string): PeopleReference[] {
  * a people id is recorded, so it must describe the corpus as it is: a retired
  * id has no fiche, its successor has one and is not itself retired (a redirect
  * lands in one hop), and a kept-distinct pair still has both fiches, so the
- * pair is not re-examined by the next duplicate scan.
+ * pair is not re-examined by the next duplicate scan. A withdrawn id is a
+ * retirement with no successor (a title, a pejorative umbrella term): it has
+ * no fiche and redirects nowhere.
  */
 export function checkRetiredIdentifiers(datasetRoot: string): ValidationResult {
   const errors: string[] = [];
@@ -1124,7 +1134,7 @@ export function checkRetiredIdentifiers(datasetRoot: string): ValidationResult {
     }
     if (typeof decision !== "string" || !RETIREMENT_DECISIONS.has(decision)) {
       errors.push(
-        `${where} (${retiredId}): decision must be merged, renamed or kept-distinct`
+        `${where} (${retiredId}): decision must be merged, renamed, kept-distinct or withdrawn`
       );
     }
     if (typeof reason !== "string" || reason.trim().length < 20) {
@@ -1146,6 +1156,20 @@ export function checkRetiredIdentifiers(datasetRoot: string): ValidationResult {
       if (!fiches.has(retiredId)) {
         errors.push(
           `${where}: ${retiredId} is kept distinct but has no fiche file`
+        );
+      }
+      return;
+    }
+
+    if (decision === "withdrawn") {
+      if (successorId !== null && successorId !== undefined) {
+        errors.push(
+          `${where} (${retiredId}): a withdrawn decision has no successor`
+        );
+      }
+      if (fiches.has(retiredId)) {
+        errors.push(
+          `${where}: ${retiredId} is withdrawn but still exists as a fiche file`
         );
       }
       return;
@@ -2505,7 +2529,11 @@ export function checkSourceIdentity(datasetRoot: string): ValidationResult {
 // in waves 6 and 7, took their Factbook citations with them.
 // 123 -> 122 on 2026-10-11: the second Sango fiche, folded after wave 8, took
 // its Factbook citation with it.
-export const RETIRED_CIA_FACTBOOK_URL_CEILING = 122;
+// 122 -> 121 on 2026-10-12: the Surma fiche, folded into PPL_SURI after
+// wave 10, took its Factbook citation with it.
+// 121 -> 119 the same day: the Yerima and Kirdi fiches, retired after wave 12,
+// took their Factbook citations with them.
+export const RETIRED_CIA_FACTBOOK_URL_CEILING = 119;
 
 const LIVE_CIA_FACTBOOK =
   /cia\.gov\/(?:library\/publications\/)?the-world-factbook/i;
@@ -4055,10 +4083,22 @@ export function checkNameHistoryBlocks(datasetRoot: string): ValidationResult {
       // FR53-dup): a people's history names the name it gives itself, and
       // no block tells one name twice — the readers key names by their text.
       const names = parsed.data.names;
-      if (directory === "peuples" && !names.some((name) => name.selfGiven)) {
+      const selfNameUnknown = parsed.data.selfNameUnknown === true;
+      if (
+        directory === "peuples" &&
+        !selfNameUnknown &&
+        !names.some((name) => name.selfGiven)
+      ) {
         errors.push(
           `REQ-196: ${file}: nameHistory names no name the people gives itself (selfGiven)`
         );
+      }
+      if (selfNameUnknown) {
+        for (const { nameText } of names.filter((name) => name.selfGiven)) {
+          errors.push(
+            `REQ-196: ${file}: nameHistory declares selfNameUnknown, but "${nameText}" is self-given`
+          );
+        }
       }
       const seen = new Set<string>();
       for (const { nameText } of names) {
@@ -4429,7 +4469,12 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // 6469 -> 6385 on 2026-10-11: ten duplicate fiches of wave 8 were folded and
   // retired with the keys they lacked; the Afizere fiche split from Jarawa
   // carries every key.
-  peuple: 6385,
+  // 6385 -> 6285 on 2026-10-12: eleven duplicate fiches of wave 10 were folded
+  // and retired with the keys they lacked; PPL_SWAHILI_YEMEN became
+  // PPL_MUWALLADEEN.
+  // 6285 -> 6249 the same day: the Khainai, Koyra, Yerima and Kirdi fiches of
+  // wave 12 were folded or retired with the keys they lacked.
+  peuple: 6249,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next

@@ -116,5 +116,157 @@
         "tier": "referenced"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Myene désigne six peuples du littoral du Gabon, les Mpongwe, les Orungu, les Galwa, les Nkomi, les Adyumba et les Enenga, qui parlent une même langue et se nomment eux-mêmes Omyènè. C'est d'abord le nom de cette langue. Une seule explication de son origine est publiée ; nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Myene",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mye",
+        "namedBy": null,
+        "shortLine": "Le nom d'une langue du littoral gabonais, devenu celui des six peuples qui la parlent.",
+        "periodLabel": "Écrit depuis 1933 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "1975"
+            },
+            "era": "modern",
+            "statement": "Le nom Myene désigne d'abord un classement linguistique : une langue bantoue et les six peuples du Gabon qui la parlent, dont les Mpongwe de l'estuaire. Cette langue a servi de langue commune sur la côte, du sud du Cameroun jusqu'à Cabinda, selon Henry H. Bucher. L'origine du nom est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Mpongwe Origins: Historiographical Perspectives",
+                "author": "Henry H. Bucher",
+                "year": 1975,
+                "url": "https://www.cambridge.org/core/journals/history-in-africa/article/mpongwe-origins-historiographical-perspectives/06B13F448AA4DE814C189EDD2E3A78D9",
+                "source_kind": "academic",
+                "page": "p. 59 et note 1",
+                "notes": "History in Africa, vol. 2, p. 59-89. Lu le 11 octobre 2026 dans la première page et les notes que publie Cambridge University Press ; nous n'avons pas lu le reste de l'article."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1933,
+              "to": 1934,
+              "label": "Dictionnaire préfacé en 1933"
+            },
+            "era": "colonial",
+            "statement": "Le nom Myene s'emploie aussi sous la forme Ngw'Omyènè, le nom commun des tribus qui parlent cette langue : « nous sommes tous de langue omyènè », disent les Mpongwe, les Orungu, les Nkomi, les Galoa, les Enenga et les Adyumba, selon André Raponda-Walker.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Dictionnaire mpongwé-français, suivi d'éléments de grammaire",
+                "author": "André Raponda-Walker",
+                "year": 1995,
+                "url": "https://archive.org/details/raponda-walker-1995-dictionnaire-mpongwe-francais",
+                "source_kind": "academic",
+                "page": "p. 335",
+                "notes": "Réédition de 1995 par Les Classiques africains, pour la Fondation Raponda-Walker, d'un dictionnaire dont la lettre-préface de Mgr Louis Tardy est datée de Libreville, septembre 1933. Lu le 11 octobre 2026 dans une numérisation déposée sur Internet Archive ; copie non officielle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1933,
+              "to": 1934,
+              "label": "Dictionnaire préfacé en 1933"
+            },
+            "era": "colonial",
+            "statement": "Le nom Myene apparaît par écrit sous la forme Omyènè dans le dictionnaire mpongwé-français de l'abbé André Raponda-Walker, premier prêtre gabonais, qui en fait le nom de la langue des Mpongwe, des Galoa, des Adyoumba, des Nkomi, des Orungu et des Enenga. C'est la plus ancienne trace de ce nom que le projet connaît. Cette langue et ces peuples existaient déjà avant lui.",
+            "formAsWritten": "Omyènè",
+            "birth": true,
+            "actors": [
+              {
+                "name": "André Raponda-Walker",
+                "role": "prêtre gabonais, auteur du dictionnaire"
+              }
+            ],
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Dictionnaire mpongwé-français, suivi d'éléments de grammaire",
+                "author": "André Raponda-Walker",
+                "year": 1995,
+                "url": "https://archive.org/details/raponda-walker-1995-dictionnaire-mpongwe-francais",
+                "source_kind": "academic",
+                "page": "p. 440",
+                "notes": "Réédition de 1995 par Les Classiques africains, pour la Fondation Raponda-Walker, d'un dictionnaire dont la lettre-préface de Mgr Louis Tardy est datée de Libreville, septembre 1933. Lu le 11 octobre 2026 dans une numérisation déposée sur Internet Archive ; copie non officielle."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1819,
+              "to": 1819,
+              "label": "1819"
+            },
+            "era": "polity",
+            "statement": "Le nom Myene est absent de la description du Gabon que publie Thomas Edward Bowdich en 1819 : il écrit que les habitants appellent leur pays Empoongwa, une forme dans laquelle Henry H. Bucher retrouve le nom des Mpongwe de l'estuaire.",
+            "before": true,
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Mission from Cape Coast Castle to Ashantee, with a Statistical Account of that Kingdom, and Geographical Notices of Other Parts of the Interior of Africa",
+                "author": "Thomas Edward Bowdich",
+                "year": 1819,
+                "url": "https://archive.org/details/missionfromcapec00bowd",
+                "source_kind": "archive",
+                "page": "p. 425",
+                "notes": "Chapitre « Sketch of Gaboon ». Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              },
+              {
+                "tier": "referenced",
+                "title": "Mpongwe Origins: Historiographical Perspectives",
+                "author": "Henry H. Bucher",
+                "year": 1975,
+                "url": "https://www.cambridge.org/core/journals/history-in-africa/article/mpongwe-origins-historiographical-perspectives/06B13F448AA4DE814C189EDD2E3A78D9",
+                "source_kind": "academic",
+                "page": "note 16",
+                "notes": "History in Africa, vol. 2, p. 59-89. Lu le 11 octobre 2026 dans la première page et les notes que publie Cambridge University Press ; nous n'avons pas lu le reste de l'article."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1933,
+              "to": 1975,
+              "label": "Proposée en 1933, reprise en 1975"
+            },
+            "era": "colonial",
+            "statement": "Le nom Myene viendrait de l'expression myè nè, « je dis que », par laquelle on commence une affirmation dans cette langue, selon André Raponda-Walker, puis Henry H. Bucher.",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Dictionnaire mpongwé-français, suivi d'éléments de grammaire",
+                "author": "André Raponda-Walker",
+                "year": 1995,
+                "url": "https://archive.org/details/raponda-walker-1995-dictionnaire-mpongwe-francais",
+                "source_kind": "academic",
+                "page": "p. 8, note, et p. 440",
+                "notes": "Réédition de 1995 par Les Classiques africains, pour la Fondation Raponda-Walker, d'un dictionnaire dont la lettre-préface de Mgr Louis Tardy est datée de Libreville, septembre 1933. Lu le 11 octobre 2026 dans une numérisation déposée sur Internet Archive ; copie non officielle."
+              },
+              {
+                "tier": "referenced",
+                "title": "Mpongwe Origins: Historiographical Perspectives",
+                "author": "Henry H. Bucher",
+                "year": 1975,
+                "url": "https://www.cambridge.org/core/journals/history-in-africa/article/mpongwe-origins-historiographical-perspectives/06B13F448AA4DE814C189EDD2E3A78D9",
+                "source_kind": "academic",
+                "page": "p. 59 et note 1",
+                "notes": "History in Africa, vol. 2, p. 59-89. Lu le 11 octobre 2026 dans la première page et les notes que publie Cambridge University Press ; nous n'avons pas lu le reste de l'article."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

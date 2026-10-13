@@ -154,5 +154,219 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Jahanka désigne un peuple de lettrés musulmans d'ascendance soninké, qui parle une langue mandingue, en Guinée, au Sénégal, en Gambie et au Mali. On l'appelle aussi Diakhanké ou Jahanke. Les sources que nous avons lues rattachent ce nom à la ville de Diakha, dans le Bambouk ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Jahanka",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "jad",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple et de sa langue ; il voudrait dire « gens de Diakha ».",
+        "usedIn": ["eng", "jad"],
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Usage décrit par l'auteur"
+            },
+            "era": "modern",
+            "statement": "Le nom Jahanka désigne une variété de mandingue que parlent surtout les Diakhanke, ou Jahanke, descendants de Soninké passés peu à peu à une langue mandingue au fil de leurs migrations, selon le linguiste Coleman Donaldson. Il ajoute que la langue porte en anglais et en français plusieurs noms, comme Diakhanké, Diakhanka ou Jahanka. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Resources for learning Diakhanke (AKA Jahanka), blog An ka taa",
+                "author": "Coleman Donaldson",
+                "year": 2023,
+                "url": "https://www.ankataa.com/blog/2023/7/15/resources-for-learning-diakhanke-aka-jahanka",
+                "tier": "unverified",
+                "source_kind": "academic",
+                "notes": "Billet du 15 juillet 2023 d'un linguiste spécialiste des langues mandingues. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1965,
+              "to": 1965,
+              "label": "Proposée en 1965"
+            },
+            "era": "modern",
+            "statement": "Le nom Jahanka, Diakhanké en français, voudrait dire « gens de Diakha », selon l'ethnologue Pierre Smith. Ce Diakha serait Diakha-Bâ, ou Diakha-sur-Bafing, une ville du Bambouk où Bemba Laye, l'ancêtre des Soaré, aurait réuni autour de lui des familles de plusieurs clans, surtout soninké.",
+            "hypothesisGroup": "origine du nom Jahanka",
+            "actors": [
+              {
+                "name": "Bemba Laye Soaré",
+                "role": "ancêtre fondateur dans le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les Diakhanké. Histoire d'une dispersion",
+                "author": "Pierre Smith",
+                "year": 1965,
+                "url": "https://www.persee.fr/doc/bmsap_1297-7810_1965_sup_8_3_1491",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 233-234",
+                "notes": "Bulletins et mémoires de la Société d'anthropologie de Paris, t. 8, 1965, p. 231-262, lu sur Persée le 12 octobre 2026. L'auteur a enquêté en 1964 chez les Diakhanké du département de Kédougou, au Sénégal oriental."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Récit de la tradition diakhanké"
+            },
+            "statement": "Le nom Jahanka viendrait de Diakha, la ville que le fondateur des Diakhanké, El Hadj Salim Souaré, dit M'bemba Laye, aurait créée dans le Bambouk, sur le Bafing, en lui donnant le nom de son village natal. Ses habitants se seraient appelés Diakhango, « les gens de Diakha » en malinké, selon un site communautaire diakhanké.",
+            "hypothesisGroup": "origine du nom Jahanka",
+            "actors": [
+              {
+                "name": "El Hadj Salim Souaré",
+                "role": "fondateur dans le récit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Histoire des Diakhankhé",
+                "author": "Site Djakodico",
+                "year": null,
+                "url": "https://www.djakodico.com/history.php",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Site communautaire consacré au patrimoine diakhanké, sans auteur individuel nommé, lu le 12 octobre 2026. Il présente la fondation de Diakha par El Hadj Salim Souaré et le nom Diakhango donné à ses habitants."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Diakhanké",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme française du nom ; écrite Diakanké dès 1894.",
+        "usedIn": ["fra"],
+        "periodLabel": "Écrit dès 1894 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1965,
+              "to": 1965,
+              "label": "Enquête de 1964 (article publié en 1965)"
+            },
+            "era": "modern",
+            "statement": "Le nom Diakhanké désigne une sorte de confédération de clans de marabouts plutôt qu'un peuple, selon Pierre Smith : on ne peut guère être reconnu comme Diakhanké sans être musulman, et les Diakhanké reconnaissent à plusieurs de leurs clans des origines très différentes. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les Diakhanké. Histoire d'une dispersion",
+                "author": "Pierre Smith",
+                "year": 1965,
+                "url": "https://www.persee.fr/doc/bmsap_1297-7810_1965_sup_8_3_1491",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 233 et p. 235",
+                "notes": "Bulletins et mémoires de la Société d'anthropologie de Paris, t. 8, 1965, p. 231-262, lu sur Persée le 12 octobre 2026. L'auteur a enquêté en 1964 chez les Diakhanké du département de Kédougou, au Sénégal oriental."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1920,
+              "label": "1907-1908 (récit publié en 1920)"
+            },
+            "era": "colonial",
+            "statement": "Le nom Diakhanké s'écrit Diakanké chez Paul Marty, qui écrit pour l'administration coloniale : il parle de l'exode des Diakanké de la zaouïa de Bakadadji, à la lisière du Dinguiraye et du Fouta-Djalon, lors de sa dispersion en 1907-1908.",
+            "formAsWritten": "Diakanké",
+            "sources": [
+              {
+                "title": "Études sur l'Islam et les tribus du Soudan, tome IV",
+                "author": "Paul Marty",
+                "year": 1920,
+                "url": "https://archive.org/details/tudessurlislam04mart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 71",
+                "notes": "Paris, Ernest Leroux, 1920, collection de la Revue du monde musulman. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. L'auteur écrit pour l'administration coloniale, qui surveille alors les lettrés musulmans."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1915,
+              "to": 1915,
+              "label": "1915"
+            },
+            "era": "colonial",
+            "statement": "Le nom Diakhanké s'écrit Dyakhanké chez Charles Monteil, en 1915 : les Dyakhanké du Khasso, du Bondou, du Bambouk et de tous les pays entre la Gambie et le Niger viendraient de Diakha-sur-Bafing ou de ses colonies, selon Pierre Smith, qui le cite.",
+            "sources": [
+              {
+                "title": "Les Diakhanké. Histoire d'une dispersion",
+                "author": "Pierre Smith",
+                "year": 1965,
+                "url": "https://www.persee.fr/doc/bmsap_1297-7810_1965_sup_8_3_1491",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 243",
+                "notes": "Bulletins et mémoires de la Société d'anthropologie de Paris, t. 8, 1965, p. 231-262, lu sur Persée le 12 octobre 2026. L'auteur a enquêté en 1964 chez les Diakhanké du département de Kédougou, au Sénégal oriental. L'auteur cite Charles Monteil, Les Khassonké, Paris, 1915, p. 358 ; nous n'avons pas lu ce livre nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1894,
+              "label": "Voyage de 1892 (récit publié en 1894)"
+            },
+            "era": "colonial",
+            "statement": "Le nom Diakhanké a une forme proche, Diakanké, chez le médecin colonial André Rançon, qui passe en janvier 1892 à Sillacounda, dans le Niocolo : il le décrit comme « un gros village Diakanké d'environ huit cents habitants ». C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Diakanké",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dans la Haute-Gambie : voyage d'exploration scientifique",
+                "author": "André Rançon",
+                "year": 1894,
+                "url": "https://archive.org/details/danslahautegambi00ranc",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 447",
+                "notes": "Paris, Société d'éditions scientifiques, 1894. Lu le 12 octobre 2026 dans la numérisation d'Internet Archive. L'auteur, médecin des colonies, a voyagé en Haute-Gambie en 1891 et 1892."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1698,
+              "to": 1728,
+              "label": "Avant 1728 (relation publiée en 1728)"
+            },
+            "era": "polity",
+            "statement": "Le nom Diakha s'écrit Jaga dans la relation du père Labat, parue en 1728 : c'est une ville du Bambouk au centre d'une confédération de villages de marabouts marchands, selon Pierre Smith. Charles Monteil a plus tard identifié Jaga avec Diakha-sur-Bafing, ajoute Smith.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Les Diakhanké. Histoire d'une dispersion",
+                "author": "Pierre Smith",
+                "year": 1965,
+                "url": "https://www.persee.fr/doc/bmsap_1297-7810_1965_sup_8_3_1491",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 242-243",
+                "notes": "Bulletins et mémoires de la Société d'anthropologie de Paris, t. 8, 1965, p. 231-262, lu sur Persée le 12 octobre 2026. L'auteur a enquêté en 1964 chez les Diakhanké du département de Kédougou, au Sénégal oriental. L'auteur résume Jean-Baptiste Labat, Nouvelle relation de l'Afrique occidentale, Paris, 1728 ; nous n'avons pas lu ce livre nous-mêmes."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

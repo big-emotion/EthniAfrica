@@ -136,5 +136,121 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « Benali lignée », « Benali clan », « Benali tribe » et « Benali place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Benali est un nom de famille du Maghreb, formé de ben, « fils de », et du prénom Ali. En Tunisie, on l'écrit en un seul mot depuis que l'état civil a fait supprimer l'espace de Ben Ali, après l'indépendance. Les sources consultées ne disent pas d'où viennent les familles qui le portent.",
+    "names": [
+      {
+        "nameText": "Benali",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille formé de « ben », « fils de », et du prénom Ali.",
+        "periodLabel": "Un seul mot depuis l'indépendance de la Tunisie",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Rapporté en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Benali commence par ben, qui veut dire « fils de » : il se lit « fils d'Ali », selon le compte rendu de Noureddine Mihoubi, qui note le goût des noms tunisiens pour les noms commençant par Ben.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Ahmed Chabchoub, Voyage au pays des noms — Insaniyat / CRASC",
+                "author": "Noureddine Mihoubi",
+                "year": 2022,
+                "url": "https://insaniyat.crasc.dz/fr/article/ahmed-chabchoub-2017-voyage-au-pays-des-noms-essai-donomastique-culturelle-appliquee-a-la-tunisie-tunis-la-maison-tunisienne-du-livre-222-p",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 103-106 (troisième paragraphe)",
+                "notes": "Noureddine Mihoubi, compte rendu de l'ouvrage d'Ahmed Chabchoub, Voyage au pays des noms. Essai d'onomastique culturelle appliquée à la Tunisie (Tunis, La maison tunisienne du livre, 2017, 222 p.), Insaniyat, n° 98, 2022, p. 103-106, lu en ligne le 13 octobre 2026. Le compte rendu note que les noms de famille tunisiens montrent une prédilection pour les noms qui commencent par Ben, « fils de… », ou par Bou, « le père de… »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1956,
+              "to": null,
+              "label": "Après l'indépendance de la Tunisie"
+            },
+            "era": "modern",
+            "statement": "Le nom Benali s'écrit en un seul mot, en Tunisie, parce que l'état civil a fait supprimer l'espace entre Ben et le nom qui suit pour effacer un marqueur du tribalisme : Ben Ali est ainsi devenu Benali, selon Ahmed Chabchoub, dont Noureddine Mihoubi rapporte le propos. C'est la plus ancienne trace de cette graphie que le projet connaît ; elle vient d'un compte rendu de 2022 qui ne date pas le changement avec précision.",
+            "formAsWritten": "Benali",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Ahmed Chabchoub, Voyage au pays des noms — Insaniyat / CRASC",
+                "author": "Noureddine Mihoubi",
+                "year": 2022,
+                "url": "https://insaniyat.crasc.dz/fr/article/ahmed-chabchoub-2017-voyage-au-pays-des-noms-essai-donomastique-culturelle-appliquee-a-la-tunisie-tunis-la-maison-tunisienne-du-livre-222-p",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 103-106 (quatrième paragraphe)",
+                "notes": "Noureddine Mihoubi, compte rendu de l'ouvrage d'Ahmed Chabchoub, Voyage au pays des noms. Essai d'onomastique culturelle appliquée à la Tunisie (Tunis, La maison tunisienne du livre, 2017, 222 p.), Insaniyat, n° 98, 2022, p. 103-106, lu en ligne le 13 octobre 2026. Le compte rendu rapporte que, après l'indépendance, Bourguiba a voulu, par la généralisation de l'état civil, venir à bout du « marqueur du tribalisme (Ben X ou Ben Y) » en ordonnant de supprimer l'espace entre Ben et X, comme dans « Ben Ali » devenu « Benali ». Il ne date pas ce changement avec précision."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1925,
+              "to": 1925,
+              "label": "1925"
+            },
+            "era": "colonial",
+            "statement": "On se nomme alors par la filiation, avec ben, « fils de », entre les noms, comme dans « Ali ben Ahmed ben Amor Bouderbala » ; le décret beylical du 30 juin 1925 commence la réforme de l'état civil tunisien sans faire disparaître cet usage, selon Farid Benramdane.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Qui es-tu ? J'ai été dit. De la destruction de la filiation dans l'État civil d'Algérie ou éléments d'un onomacide sémantique",
+                "author": "Farid Benramdane",
+                "year": 2000,
+                "url": "https://insaniyat.crasc.dz/en/article/qui-es-tu-jai-ete-dit-de-la-destruction-de-la-filiation-dans-letat-civil-dalgerie-ou-elements-dun-onomacide-semantique",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 79-87 (section sur les patronymes algériens)",
+                "notes": "Insaniyat, 4(10), 2000, p. 79-87, lu en ligne le 13 octobre 2026. L'article dit qu'en Tunisie c'est le décret beylical du 30 juin 1925 qui a commencé la réforme de l'état civil, sans supprimer la nomination traditionnelle, par exemple « Ali ben Ahmed ben Amor Bouderbala ». La version en ligne ne marque pas les pages de l'imprimé."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ben Ali",
+        "nameStatus": "former",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie en deux mots, devenue Benali en Tunisie après l'indépendance.",
+        "periodLabel": "Avant la suppression de l'espace",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1956,
+              "to": null,
+              "label": "Après l'indépendance de la Tunisie"
+            },
+            "era": "modern",
+            "statement": "Le nom Ben Ali est la graphie en deux mots que l'état civil tunisien a remplacée par Benali, selon Ahmed Chabchoub, dont Noureddine Mihoubi rapporte le propos.",
+            "sources": [
+              {
+                "title": "Ahmed Chabchoub, Voyage au pays des noms — Insaniyat / CRASC",
+                "author": "Noureddine Mihoubi",
+                "year": 2022,
+                "url": "https://insaniyat.crasc.dz/fr/article/ahmed-chabchoub-2017-voyage-au-pays-des-noms-essai-donomastique-culturelle-appliquee-a-la-tunisie-tunis-la-maison-tunisienne-du-livre-222-p",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 103-106 (quatrième paragraphe)",
+                "notes": "Noureddine Mihoubi, compte rendu de l'ouvrage d'Ahmed Chabchoub, Voyage au pays des noms. Essai d'onomastique culturelle appliquée à la Tunisie (Tunis, La maison tunisienne du livre, 2017, 222 p.), Insaniyat, n° 98, 2022, p. 103-106, lu en ligne le 13 octobre 2026. Le compte rendu rapporte que, après l'indépendance, Bourguiba a voulu, par la généralisation de l'état civil, venir à bout du « marqueur du tribalisme (Ben X ou Ben Y) » en ordonnant de supprimer l'espace entre Ben et X, comme dans « Ben Ali » devenu « Benali ». Il ne date pas ce changement avec précision."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

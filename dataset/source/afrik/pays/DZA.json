@@ -376,12 +376,13 @@
     "kingdoms": [
       {
         "name": "Royaumes numides",
-        "period": "IIIe siècle av. J.-C. - Ier siècle apr. J.-C.",
+        "period": "IIIe siècle av. J.-C. - Ier siècle av. J.-C.",
         "entryType": "polity",
         "timeRange": {
           "startYear": -300,
-          "endYear": 100,
-          "precision": "century"
+          "endYear": -46,
+          "precision": "approximate",
+          "datingNote": "La fin correspond à la création par César de la province romaine d'Africa Nova sur le royaume du roi numide Juba Ier, après sa campagne africaine de 46 av. J.-C., selon A. Mahjoubi (HGA II). La fiche prolongeait ces royaumes jusqu'au Ier siècle de notre ère ; la source citée ne soutient pas cette borne."
         },
         "dominantPeoples": ["Numides (Berbères)"],
         "politicalCenters": ["Cirta (Constantine)", "Hippo Regius (Annaba)"],
@@ -682,6 +683,13 @@
         "url": "https://www.unfpa.org/data/world-population/DZ",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Histoire générale de l'Afrique, II, ch. 19 : La période romaine et post-romaine en Afrique du Nord",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184311",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par G. Mokhtar, chapitre d'A. Mahjoubi (1980), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 507. La province d'Africa Nova est créée par César « après sa campagne africaine contre les Pompéiens et leur allié le roi numide Juba Ier »."
       }
     ],
     "demographics": {

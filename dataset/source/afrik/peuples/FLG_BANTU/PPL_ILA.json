@@ -94,5 +94,232 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Ba-ila désigne un peuple du centre-sud de la Zambie, autour de la vallée de la Kafue, et la langue qu'il parle, l'ila. Ce peuple se nomme lui-même Ba-ila. D'autres noms existent : Mashukulumbwe, un nom que des voisins lui ont donné, et Matjokotjoko, un nom moqueur donné par les Ndebele. Les sources ne s'accordent pas toujours sur leur origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Ba-ila",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ilb",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne ; il viendrait d'une racine qui veut dire « mis à part ».",
+        "periodLabel": "Écrit Ba-ila en 1920 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ila est celui que la norme internationale ISO 639-3 donne à la langue de ce peuple, sous le code ilb. On ne sait pas avec certitude d'où vient ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, code ilb : Ila",
+                "author": "SIL International",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/ilb",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ba-ila désigne, selon les missionnaires Edwin Smith et Andrew Dale, les habitants d'un petit pays que les Ba-ila appellent Bwila. Eux seuls se disent « les vrais Ba-ila ». D'autres peuples qui parlent l'ila, comme les Bambo à l'ouest ou les Babizhi au sud, revendiquent aussi ce nom, qui est pour les deux auteurs le nom « sacré » de l'ensemble.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Ila-Speaking Peoples of Northern Rhodesia, vol. I",
+                "author": "Edwin W. Smith et Andrew Murray Dale",
+                "year": 1920,
+                "url": "https://archive.org/details/ilaspeakingpeopl00smit",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. xxv-xxvii",
+                "notes": "Introduction, classification des peuples de langue ila. Les auteurs parlent d'après leurs années de mission, à l'époque de la Rhodésie du Nord. Londres, Macmillan, 1920 ; lu sur la numérisation d'Internet Archive le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "Proposée en 1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ba-ila viendrait de zhila, « être tabou, mis à part », une racine bantoue ancienne, et voudrait dire « le peuple mis à part ». Les missionnaires Edwin Smith et Andrew Dale jugent cette explication la plus satisfaisante, et la trouvent conforme à l'esprit fier du peuple.",
+            "hypothesisGroup": "origine-ba-ila",
+            "sources": [
+              {
+                "title": "The Ila-Speaking Peoples of Northern Rhodesia, vol. I",
+                "author": "Edwin W. Smith et Andrew Murray Dale",
+                "year": 1920,
+                "url": "https://archive.org/details/ilaspeakingpeopl00smit",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. xxvi",
+                "notes": "Les auteurs écrivent que la racine existe en sotho (ila), zoulou (zila), ronga (yila), herero (zera), nyanja (yera). Ils rejettent d'autres sens du mot ila, « aller vers », « intestin distendu », « grain de maïs », qu'ils jugent peu satisfaisants. Londres, Macmillan, 1920 ; lu sur la numérisation d'Internet Archive le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ba-ila apparaît par écrit dans le livre des missionnaires Edwin Smith et Andrew Dale sur les peuples de langue ila, publié en 1920, selon cette édition. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Ba-ila",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Ila-Speaking Peoples of Northern Rhodesia, vol. I",
+                "author": "Edwin W. Smith et Andrew Murray Dale",
+                "year": 1920,
+                "url": "https://archive.org/details/ilaspeakingpeopl00smit",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. xxv-xxvi",
+                "notes": "Introduction. Le projet n'a pas trouvé de trace plus ancienne du nom Ba-ila, ni dans le récit de Livingstone (1857) ni dans celui de Coillard (1897), qu'il a cherchés. Londres, Macmillan, 1920 ; lu sur la numérisation d'Internet Archive le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "1857"
+            },
+            "era": "polity",
+            "before": true,
+            "statement": "On parle alors de Bashukulompo pour désigner les villageois du bord de la Kafue, coiffés d'un cône de cheveux. Smith et Dale rangent ce peuple parmi ceux qu'ils appellent plus tard Ba-ila, selon Livingstone et selon eux.",
+            "formAsWritten": "Bashukulompo",
+            "sources": [
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 215, 556 et 566",
+                "notes": "P. 556 : Livingstone décrit les hommes d'un village qui suivent « la mode de coiffure des Bashukulompo ». P. 566 : il écrit que la Kafue est parfois appelée « rivière Bashukulompo ». Le livre rapporte un voyage de 1855. Londres, John Murray, 1857 ; lu sur la numérisation d'Internet Archive le 12 octobre 2026."
+              },
+              {
+                "title": "The Ila-Speaking Peoples of Northern Rhodesia, vol. I",
+                "author": "Edwin W. Smith et Andrew Murray Dale",
+                "year": 1920,
+                "url": "https://archive.org/details/ilaspeakingpeopl00smit",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. xxv",
+                "notes": "L'identification des Mashukulumbwe aux peuples de langue ila est celle des auteurs, qui citent l'orthographe de Livingstone. Londres, Macmillan, 1920 ; lu sur la numérisation d'Internet Archive le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mashukulumbwe",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Lozi (Barotsi), voisins et conquérants",
+        "shortLine": "Un nom donné par les Lozi, qui renverrait à leur coiffure ; les Ila l'ont refusé.",
+        "periodLabel": "Écrit Bashukulompo en 1857 ; en usage en 1920",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "Proposée en 1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mashukulumbwe viendrait de deux mots lozi, kushukula, « rejeter les cheveux en arrière », et lumpwili, « masse de cheveux dressée », et ferait allusion à la coiffure du peuple. Smith et Dale rapportent cette explication du missionnaire Adolphe Jalla, de Lealui, et disent l'accepter. Ils notent que le nom n'est pas celui que ce peuple se donne et que les Lozi, ses voisins et conquérants, le lui ont donné.",
+            "hypothesisGroup": "origine-mashukulumbwe",
+            "sources": [
+              {
+                "title": "The Ila-Speaking Peoples of Northern Rhodesia, vol. I",
+                "author": "Edwin W. Smith et Andrew Murray Dale",
+                "year": 1920,
+                "url": "https://archive.org/details/ilaspeakingpeopl00smit",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. xxv",
+                "notes": "Les auteurs écrivent qu'il n'a pas été facile de trouver le sens du mot. Ils évitent ce nom, que le peuple ressent comme une moquerie. Londres, Macmillan, 1920 ; lu sur la numérisation d'Internet Archive le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "1857"
+            },
+            "era": "polity",
+            "birth": true,
+            "statement": "Le nom Bashukulompo, forme proche de Mashukulumbwe, apparaît par écrit dans le récit de voyage de David Livingstone, publié en 1857. Il y désigne des villageois de la Kafue à la coiffure en cône. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Bashukulompo",
+            "sources": [
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 215",
+                "notes": "Première occurrence trouvée dans le livre : le chef Mpepe laisse les marchands d'esclaves mambari commercer « dans tous les villages des Batoka et des Bashukulompo ». Livingstone la décrit page 556. Le projet n'a pas lu d'ouvrage plus ancien. Londres, John Murray, 1857 ; lu sur la numérisation d'Internet Archive le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Matjokotjoko",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Ndebele",
+        "shortLine": "Un nom moqueur donné par les Ndebele, à cause de la façon de parler des Ila.",
+        "periodLabel": "En usage en 1920",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "birth": true,
+            "statement": "Le nom Matjokotjoko apparaît par écrit dans le livre des missionnaires Edwin Smith et Andrew Dale, publié en 1920. Ils disent que les Ndebele (Matabele) appellent ainsi ce peuple en allusion à sa manière de parler, par dérision, et que le peuple s'en offense. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Matjokotjoko",
+            "sources": [
+              {
+                "title": "The Ila-Speaking Peoples of Northern Rhodesia, vol. I",
+                "author": "Edwin W. Smith et Andrew Murray Dale",
+                "year": 1920,
+                "url": "https://archive.org/details/ilaspeakingpeopl00smit",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. xxv",
+                "notes": "Les auteurs n'emploient pas ce nom, comme celui de Mashukulumbwe. Londres, Macmillan, 1920 ; lu sur la numérisation d'Internet Archive le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

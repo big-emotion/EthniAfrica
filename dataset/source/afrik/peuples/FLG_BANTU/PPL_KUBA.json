@@ -137,5 +137,190 @@
         "source_kind": "academic"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kuba désigne un royaume et les peuples qu'il réunit entre le Kasaï, le Sankuru et la Lulua, en République démocratique du Congo, dont le peuple central se nomme lui-même Bushongo. Ce sont leurs voisins qui les appellent Kuba. Les sources proposent une explication pour chacun de ces noms ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Bushongo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "buf",
+        "namedBy": null,
+        "shortLine": "Le nom que se donne le peuple central du royaume kuba.",
+        "periodLabel": "Écrit depuis 1910 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "Article publié en janvier 1960"
+            },
+            "statement": "Le nom Bushongo s'écrit aussi Bushong : Jan Vansina nomme ainsi la tribu centrale qui gouverne le royaume et dont le chef est le roi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Recording the Oral History of the Bakuba — I. Methods",
+                "author": "Jan Vansina",
+                "year": 1960,
+                "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/abs/recording-the-oral-history-of-the-bakubai-methods/11526C72F040F105E3E7ACC1C2DB9FD8",
+                "source_kind": "academic",
+                "page": "p. 43",
+                "notes": "The Journal of African History, vol. 1, n° 1, janvier 1960, p. 43-53. Lu le 11 octobre 2026 dans la première page que publie Cambridge University Press."
+              }
+            ],
+            "era": "colonial"
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1910,
+              "label": "Expédition de 1907-1909 (publiée en 1910)"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bushongo apparaît par écrit chez Emil Torday et Thomas A. Joyce comme celui d'une nation formée de sous-tribus autour des Bambala, qui vivent près de la capitale, le Mushenge. C'est la plus ancienne trace de ce nom que le projet connaît. Ce peuple existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Notes ethnographiques sur les peuples communément appelés Bakuba, ainsi que sur les peuplades apparentées : les Bushongo",
+                "author": "Emil Torday et Thomas A. Joyce",
+                "year": 1910,
+                "url": "https://archive.org/details/b3136603x",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "notes": "Bruxelles, Annales du Musée du Congo belge, Documents ethnographiques concernant les populations du Congo belge, tome II, fascicule 1. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'expédition a eu lieu d'octobre 1907 à septembre 1909."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "Proposée en 1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bushongo voudrait dire « peuple du shongo », une arme abandonnée que le roi a dessinée dans le sable pour les auteurs et qui serait un couteau de jet, selon Emil Torday et Thomas A. Joyce.",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Notes ethnographiques sur les peuples communément appelés Bakuba, ainsi que sur les peuplades apparentées : les Bushongo",
+                "author": "Emil Torday et Thomas A. Joyce",
+                "year": 1910,
+                "url": "https://archive.org/details/b3136603x",
+                "source_kind": "academic",
+                "page": "p. 43",
+                "notes": "Bruxelles, Annales du Musée du Congo belge, Documents ethnographiques concernant les populations du Congo belge, tome II, fascicule 1. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'expédition a eu lieu d'octobre 1907 à septembre 1909."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kuba",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Leurs voisins, d'abord les Luba selon Emil Torday et Thomas A. Joyce",
+        "shortLine": "Le nom que les voisins donnent au royaume et à ses peuples ; écrit dès 1885.",
+        "periodLabel": "Écrit depuis 1885 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1960,
+              "to": 1960,
+              "label": "Article publié en janvier 1960"
+            },
+            "statement": "Le nom Kuba désigne les peuples qui vivent entre le Sankuru, le Kasaï et la Lulua ; ce sont leurs voisins qui les appellent ainsi, selon Jan Vansina. Leurs chefferies forment un seul royaume, gouverné par la tribu des Bushong. L'origine du nom est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Recording the Oral History of the Bakuba — I. Methods",
+                "author": "Jan Vansina",
+                "year": 1960,
+                "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/abs/recording-the-oral-history-of-the-bakubai-methods/11526C72F040F105E3E7ACC1C2DB9FD8",
+                "source_kind": "academic",
+                "page": "p. 43",
+                "notes": "The Journal of African History, vol. 1, n° 1, janvier 1960, p. 43-53. Lu le 11 octobre 2026 dans la première page que publie Cambridge University Press."
+              }
+            ],
+            "era": "colonial"
+          },
+          {
+            "period": {
+              "from": 1907,
+              "to": 1910,
+              "label": "Expédition de 1907-1909 (publiée en 1910)"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kuba, sous la forme Bakuba, est celui sous lequel les Européens connaissent généralement ce peuple ; les Bushongo ne l'emploient jamais eux-mêmes, selon Emil Torday et Thomas A. Joyce.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Notes ethnographiques sur les peuples communément appelés Bakuba, ainsi que sur les peuplades apparentées : les Bushongo",
+                "author": "Emil Torday et Thomas A. Joyce",
+                "year": 1910,
+                "url": "https://archive.org/details/b3136603x",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "notes": "Bruxelles, Annales du Musée du Congo belge, Documents ethnographiques concernant les populations du Congo belge, tome II, fascicule 1. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'expédition a eu lieu d'octobre 1907 à septembre 1909."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1885,
+              "to": 1888,
+              "label": "Voyage de 1885 (récit publié en 1888)"
+            },
+            "statement": "Le nom Kuba apparaît par écrit sous la forme Bakuba dans le récit de Ludwig Wolf, médecin de l'expédition de Hermann Wissmann, qui part de Mukenge le 30 décembre 1884 pour visiter les Bakuba ; les Luba lui décrivent leur chef Lukengo comme puissant et redouté. C'est la plus ancienne trace de ce nom que le projet connaît. Ces peuples existaient déjà avant elle.",
+            "formAsWritten": "Bakuba",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Ludwig Wolf",
+                "role": "médecin militaire de l'expédition, auteur du récit"
+              }
+            ],
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Im Innern Afrikas. Die Erforschung des Kassai während der Jahre 1883, 1884 und 1885",
+                "author": "Hermann Wissmann, Ludwig Wolf, Curt von François et Hans Mueller",
+                "year": 1888,
+                "url": "https://archive.org/details/11630692bsb",
+                "source_kind": "archive",
+                "page": "p. 200",
+                "notes": "Leipzig, F. A. Brockhaus, 1888. Chapitre XI, récit de Ludwig Wolf sur son voyage au pays des Bakuba. Lu dans la numérisation d'Internet Archive le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "Proposée en 1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kuba viendrait d'un mot luba, kuba, « éclair » : Bakuba voudrait dire « peuple de l'éclair », un nom qui irait bien à des gens dont l'arme principale était le couteau de jet, selon Emil Torday et Thomas A. Joyce.",
+            "sources": [
+              {
+                "tier": "referenced",
+                "title": "Notes ethnographiques sur les peuples communément appelés Bakuba, ainsi que sur les peuplades apparentées : les Bushongo",
+                "author": "Emil Torday et Thomas A. Joyce",
+                "year": 1910,
+                "url": "https://archive.org/details/b3136603x",
+                "source_kind": "academic",
+                "page": "p. 9",
+                "notes": "Bruxelles, Annales du Musée du Congo belge, Documents ethnographiques concernant les populations du Congo belge, tome II, fascicule 1. Lu dans la numérisation d'Internet Archive le 11 octobre 2026. L'expédition a eu lieu d'octobre 1907 à septembre 1909."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -89,5 +89,68 @@
       "fieldPath": "homonyms",
       "reason": "Les sources officielles, catalogues et recherches exactes consultés n'établissent pas de lignée Ratsiraka d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ratsiraka est un nom de personne malgache, porté aujourd'hui comme nom de famille. Il commence par Ra, que le malgache place devant les noms de personnes. On ne sait pas avec certitude ce que veut dire le reste du nom ni d'où il vient : les sources que nous avons lues ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Ratsiraka",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne malgache porté comme nom de famille ; on ne sait pas avec certitude ce qu'il veut dire.",
+        "periodLabel": "Écrit dès 1983 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ratsiraka est un nom de personne malgache, porté comme nom de famille, notamment par Didier Ratsiraka, qui a été président de la République de Madagascar. Il commence par Ra, que le malgache place devant les noms de personnes. Les sources lues ne disent ni ce que veut dire le reste du nom, ni d'où il vient, ni comment il se transmet.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Notice bibliographique « Didier Ratsiraka : transition démocratique et pauvreté à Madagascar : entretien avec un président de la République à Madagascar / Cécile Lavrard-Meyer »",
+                "author": "Bibliothèque nationale de France",
+                "year": 2015,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb44415719g",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice de la Bibliothèque nationale de France, lue le 11 octobre 2026. Livre d'entretien daté de 2015. Il ne dit rien de l'origine du nom."
+              },
+              {
+                "title": "Dictionnaire malgache-français",
+                "author": "Antoine Abinal et Victorin Malzac",
+                "year": 1888,
+                "url": "https://archive.org/details/dictionnairemalg00abin",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 456",
+                "notes": "Tananarive, Imprimerie de la Mission catholique, 1888. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 456, article Ra : « Article personnel qui se met ordinairement devant les noms propres : Ra-bé, Ra-láy, qu'on écrit Rabe, Ralay ». Auteurs de l'époque coloniale, cités ici pour les formes qu'ils relèvent."
+              }
+            ]
+          },
+          {
+            "period": { "from": 1983, "to": 1983, "label": "1983" },
+            "statement": "Le nom Ratsiraka apparaît par écrit comme nom d'auteur d'un livre de Didier Ratsiraka publié à Paris en 1983, selon le catalogue de la Bibliothèque nationale de France. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est donné.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notice bibliographique « Stratégies pour l'an 2000 : du Tiers Monde à la troisième puissance mondiale / Didier Ratsiraka »",
+                "author": "Bibliothèque nationale de France",
+                "year": 1983,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb366247476",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice de la Bibliothèque nationale de France, lue le 11 octobre 2026. Livre de « Ratsiraka, Didier (1936-....) », publié à Paris par les Éditions Afrique Asie Amérique latine en 1983. C'est la plus ancienne publication sous ce nom que donne le catalogue."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

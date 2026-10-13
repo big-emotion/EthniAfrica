@@ -92,5 +92,184 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Mahou désigne le pays de Touba, dans le nord-ouest de la Côte d'Ivoire, et ses habitants, dont la langue est le mahouka. On ne sait pas comment ce peuple se nomme lui-même. Maou et Maouka sont des graphies de Maurice Delafosse. Les sources ne s'accordent pas sur l'origine du nom ; nous les présentons plus bas.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Mahou",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du pays de Touba et de ses habitants, cité dès 1901 ; une explication le tire d'un mot pour « envahisseurs ».",
+        "periodLabel": "Cité dès 1901 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Proposée en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Mahou, ou Mahouka, viendrait de l'expression « qui cigui môkâ » de la langue mahouka, qui voudrait dire « envahisseurs » : il renverrait à l'arrivée des guerriers Diomandé dans le nord-ouest de la Côte d'Ivoire à partir de la fin du XVIe siècle, selon les historiens Abou Bakayoko et Yalamoussa Coulibaly. Ils donnent cette explication dans le résumé de leur article ; nous n'en avons pas trouvé de développement dans le corps du texte.",
+            "hypothesisGroup": "origine du nom Mahou",
+            "sources": [
+              {
+                "title": "L'installation des Diomandé dans le Nord-ouest ivoirien (XVIème – XIXème siècle)",
+                "author": "Abou Bakayoko et Yalamoussa Coulibaly",
+                "year": 2025,
+                "url": "https://edition-efua.acaref.net/wp-content/uploads/sites/6/2025/11/2.-Abou-BAKAYOKO.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 39",
+                "notes": "Revue ASTR-GHANA, 2025. Lu en ligne le 12 octobre 2026. Résumé en français et en anglais, page 39."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Mahou désigne le territoire du nord-ouest de la Côte d'Ivoire, de Touba à Séguéla, que les Diomandé dominent du XVIe au XIXe siècle, et le peuple né de leur mélange avec les Yacouba, selon les historiens Abou Bakayoko et Yalamoussa Coulibaly. Les sources ne s'accordent pas sur l'origine du nom ; elle est présentée dans la tuile voisine.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "L'installation des Diomandé dans le Nord-ouest ivoirien (XVIème – XIXème siècle)",
+                "author": "Abou Bakayoko et Yalamoussa Coulibaly",
+                "year": 2025,
+                "url": "https://edition-efua.acaref.net/wp-content/uploads/sites/6/2025/11/2.-Abou-BAKAYOKO.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 39-40",
+                "notes": "Revue ASTR-GHANA, 2025. Lu en ligne le 12 octobre 2026. Résumé et introduction."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "statement": "Le nom Mahou, que Maurice Delafosse écrit aussi Maou, est pour lui celui du pays de Touba et des populations de langue mandé-tan qui y habitent, les Maouka ; il écrit qu'elles appellent leur pays Gyola ou Gyula. Il reconnaît s'être trompé dans son manuel de 1901 en donnant le nom « Guio ou Mahou » aux habitants d'origine mandé-fou du pays.",
+            "formAsWritten": "Maou",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 173-174",
+                "notes": "Paris, Ernest Leroux, 1904. Lu sur sa numérisation par la bibliothèque de l'université de Toronto, le 12 octobre 2026. Passage sur le dialecte des Maouka, quatrième groupe mandé-tan."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "1901"
+            },
+            "statement": "Le nom Mahou est donné, avec Guio et Guiola, aux habitants d'origine de la région de Touba chez Maurice Delafosse, qui rapporte les mots du capitaine Blondiaux : conquis par la famille konianka des Guiomandé, ils se seraient en partie mêlés à eux et en partie retirés vers le sud.",
+            "formAsWritten": "Mahou",
+            "sources": [
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue. Étude grammaticale du dialecte dyoula",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 288",
+                "notes": "Paris, Ernest Leroux, 1901. Lu sur la numérisation de la bibliothèque de l'université de Toronto, sur Internet Archive, le 12 octobre 2026. Delafosse corrigera cet emploi du nom en 1904."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "1901"
+            },
+            "statement": "Le nom Mahou apparaît dans le manuel de Maurice Delafosse, qui rapporte que les Vaï du Libéria disent être venus de l'est, une partie des leurs étant restée « de l'autre côté du pays des Mahou ». C'est la plus ancienne trace de ce nom que le projet connaît. Le pays et ses habitants existaient bien avant lui.",
+            "formAsWritten": "Mahou",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue. Étude grammaticale du dialecte dyoula",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 264",
+                "notes": "Paris, Ernest Leroux, 1901. Lu sur la numérisation de la bibliothèque de l'université de Toronto, sur Internet Archive, le 12 octobre 2026. Delafosse écrit que le pays des Mahou est la région de Touba."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mahouka",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "mxx",
+        "namedBy": null,
+        "shortLine": "Le nom des gens du Mahou et de leur langue, écrit Mau-ka par Delafosse dès 1901.",
+        "periodLabel": "Cité dès 1901 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "statement": "Le nom Maouka désigne chez Maurice Delafosse les gens du Mahou, qui parlent un dialecte presque identique à ceux des Ouassoulounka, des Konianka et des Manenka du sud ; il y distingue plusieurs groupes, dont les Maouka proprement dits, ou Gyo-mane-nka, de la région de Touba, et les gens de la région de Koro.",
+            "formAsWritten": "Maou-ka",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 173",
+                "notes": "Paris, Ernest Leroux, 1904. Lu sur sa numérisation par la bibliothèque de l'université de Toronto, le 12 octobre 2026. Passage sur le dialecte des Maouka."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "1901"
+            },
+            "statement": "Le nom Mau-ka désigne chez Maurice Delafosse un homme du Maou, et Mau-ka kà ou Gyomane-nka kà la langue du Maou ; il note le mot sous la forme du Mahou. C'est une forme proche du nom actuel et la plus ancienne trace de ce nom que le projet connaît. Les gens du Mahou existaient déjà avant lui.",
+            "formAsWritten": "Mau-ka",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Essai de manuel pratique de la langue mandé ou mandingue. Étude grammaticale du dialecte dyoula",
+                "author": "Maurice Delafosse",
+                "year": 1901,
+                "url": "https://archive.org/details/essaidemanuelpra00delauoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 278",
+                "notes": "Paris, Ernest Leroux, 1901. Lu sur la numérisation de la bibliothèque de l'université de Toronto, sur Internet Archive, le 12 octobre 2026. Section sur le dialecte maou, avec quelques phrases."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

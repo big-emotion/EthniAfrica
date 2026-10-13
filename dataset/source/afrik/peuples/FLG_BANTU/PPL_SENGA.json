@@ -114,5 +114,242 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Senga désigne un peuple de la province de Muchinga, dans le district de Chama, en Zambie, et sa langue, proche du tumbuka. Il ne faut pas le confondre avec le nom Nsenga, celui d'un autre peuple de l'est de la Zambie. D'autres formes existent : Asenga, avec le préfixe de classe bantou. Les sources ne s'accordent pas sur l'origine du nom Senga ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Senga",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple de Chama, en Zambie, et de sa langue ; deux origines sont proposées.",
+        "periodLabel": "En usage depuis 1857 au moins ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Senga désigne un peuple de la province de Muchinga, dans le district de Chama, en Zambie, et sa langue, selon une enquête linguistique de 2015. Elle écrit BaSenga pour le peuple et Chisenga pour la langue, à la manière bantoue, et dit la langue distincte, bien que proche du tumbuka. L'origine du nom est discutée ; les explications sont présentées plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Partners in Bible Translation – Senga Survey 2015",
+                "author": "Kenneth S. Sawka, Christopher Mbewe, Daka Josephat et Ezeckia Ngulube",
+                "year": 2015,
+                "url": "http://partnersinbibletranslation.org/wp-content/uploads/2018/03/SengaSurvey_2015.pdf",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "page": "p. 3, 4",
+                "notes": "Rapport de Partners in Bible Translation sur une enquête menée du 28 août au 5 septembre 2014 dans le district de Chama, PDF mis en ligne en 2015, lu le 12 octobre 2026. Page 3, résumé : « nearly 80,000 speakers of Senga » ; le Senga est « a distinct language on its own », le plus proche du tumbuka (71 % de ressemblance lexicale). Page 4, § 1.2 : « BaSenga is the term to refer to the people »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1780,
+              "to": 1800,
+              "label": "Entre 1780 et 1800"
+            },
+            "era": "polity",
+            "statement": "Le nom Bisa désigne alors les gens qui, entre 1780 et 1800, auraient traversé la Luangwa pour s'installer plus au nord, dans l'actuel district de Chama, selon Chondoka et Bota (2007), cités par l'enquête de 2015. Ce sont les gens que le nom Senga désignera plus tard.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Partners in Bible Translation – Senga Survey 2015",
+                "author": "Kenneth S. Sawka, Christopher Mbewe, Daka Josephat et Ezeckia Ngulube",
+                "year": 2015,
+                "url": "http://partnersinbibletranslation.org/wp-content/uploads/2018/03/SengaSurvey_2015.pdf",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "page": "p. 6",
+                "notes": "Rapport de Partners in Bible Translation sur une enquête menée du 28 août au 5 septembre 2014 dans le district de Chama, PDF mis en ligne en 2015, lu le 12 octobre 2026. Page 6 : « A small segment of the Bisa crossed the Luangwa River between 1780 and 1800 [...] in what is today Chama District » ; l'ouvrage de Chondoka et Bota (2007) n'a pas été lu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Senga viendrait du mot tumbuka musenga, qui veut dire « arrière-pays » (backwoods), selon l'enquête de 2015. Les Bisa auraient fini par cesser d'errer et par s'installer dans l'arrière-pays, et on leur aurait donné ce nom.",
+            "hypothesisGroup": "origine-senga",
+            "sources": [
+              {
+                "title": "Partners in Bible Translation – Senga Survey 2015",
+                "author": "Kenneth S. Sawka, Christopher Mbewe, Daka Josephat et Ezeckia Ngulube",
+                "year": 2015,
+                "url": "http://partnersinbibletranslation.org/wp-content/uploads/2018/03/SengaSurvey_2015.pdf",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "page": "p. 6",
+                "notes": "Rapport de Partners in Bible Translation sur une enquête menée du 28 août au 5 septembre 2014 dans le district de Chama, PDF mis en ligne en 2015, lu le 12 octobre 2026. Page 6 : « There are two possible origins of the name Senga. One comes from a Tumbuka word, musenga, meaning ‘backwoods’ ». Le rapport ne dit pas d'où il tient cette explication."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Senga viendrait du verbe bantou kusenga, « demander », selon l'enquête de 2015. Le nom se serait attaché à ces gens parce qu'ils demandaient aux Tumbuka de la nourriture ou une terre où s'installer.",
+            "hypothesisGroup": "origine-senga",
+            "sources": [
+              {
+                "title": "Partners in Bible Translation – Senga Survey 2015",
+                "author": "Kenneth S. Sawka, Christopher Mbewe, Daka Josephat et Ezeckia Ngulube",
+                "year": 2015,
+                "url": "http://partnersinbibletranslation.org/wp-content/uploads/2018/03/SengaSurvey_2015.pdf",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "page": "p. 6",
+                "notes": "Rapport de Partners in Bible Translation sur une enquête menée du 28 août au 5 septembre 2014 dans le district de Chama, PDF mis en ligne en 2015, lu le 12 octobre 2026. Page 6 : « a common Bantu verb kusenga meaning ‘to ask for’ was attached to the people because they would ask the Tumbuka for food or land to settle upon ». Le rapport ne dit pas d'où il tient cette explication."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Senga n'a pas de lien historique avec le nom Nsenga, celui d'un autre peuple, selon l'enquête de 2015 : les deux noms se ressemblent par hasard. L'enquête sur les Kunda note de son côté que le nom Senga est appliqué à tort au peuple nsenga.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Partners in Bible Translation – Senga Survey 2015",
+                "author": "Kenneth S. Sawka, Christopher Mbewe, Daka Josephat et Ezeckia Ngulube",
+                "year": 2015,
+                "url": "http://partnersinbibletranslation.org/wp-content/uploads/2018/03/SengaSurvey_2015.pdf",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "page": "p. 47",
+                "notes": "Rapport de Partners in Bible Translation sur une enquête menée du 28 août au 5 septembre 2014 dans le district de Chama, PDF mis en ligne en 2015, lu le 12 octobre 2026. Page 47 : « we do not think that Senga and Nsenga are related historically but the similarity in names is coincidental »."
+              },
+              {
+                "title": "The Kunda of Zambia – Partners in Bible Translation Survey, 2015",
+                "author": "Daison Banda, Christopher Mbewe, Daka Josephat et Kenneth S. Sawka",
+                "year": 2015,
+                "url": "http://partnersinbibletranslation.org/wp-content/uploads/2018/03/KundaSurvey_2015.pdf",
+                "tier": "unverified",
+                "source_kind": "missionary_database",
+                "page": "p. 14",
+                "notes": "Rapport de Partners in Bible Translation sur une enquête menée du 16 au 25 septembre 2013 dans le district de Mambwe, PDF mis en ligne en 2015, lu le 12 octobre 2026. Page 14 : le nsenga « is also mistakenly called Senga »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1857,
+              "label": "1857"
+            },
+            "era": "polity",
+            "statement": "Le nom Senga apparaît par écrit dans le récit de voyage de David Livingstone, publié en 1857, qui appelle Senga la région au nord des collines qui bordent le Zambèze, d'après les Basenga, ses habitants, réputés grands forgerons. Les sources que nous avons lues ne disent pas si ce sont les mêmes gens que les Senga de Chama aujourd'hui. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "formAsWritten": "Basenga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Missionary Travels and Researches in South Africa",
+                "author": "David Livingstone",
+                "year": 1857,
+                "url": "https://archive.org/details/missionarytravel03livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 594-595",
+                "notes": "Londres, John Murray, 1857, lu sur la numérisation d'Internet Archive le 12 octobre 2026. Chapitre XXIX : « The region to the north of the ranges of hills on our left is called Senga, from being the country of the Basenga, who are said to be great workers in iron ». Livingstone parle du Zambèze, près de Zumbo ; le livre ne situe pas ces Basenga par rapport à la haute Luangwa."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1865,
+              "to": 1865,
+              "label": "1865"
+            },
+            "era": "polity",
+            "statement": "Le nom Senga désigne chez David et Charles Livingstone le pays au nord des montagnes que l'on voit du Zambèze, près de Zumbo, et Asenga ou Basenga ses habitants. Ils disent ces gens de la même famille que les Manganja et les Maravi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Narrative of an Expedition to the Zambesi and its Tributaries",
+                "author": "David et Charles Livingstone",
+                "year": 1865,
+                "url": "https://archive.org/details/narrativeofexpe00livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 198",
+                "notes": "Londres, John Murray, 1865, lu sur la numérisation d'Internet Archive le 12 octobre 2026. Chapitre IX : « The country north of the mountains here in sight from the Zambesi is called Senga, and its inhabitants Asenga, or Basenga »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Asenga",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom Senga avec le préfixe de classe bantou a-, tel que l'écrivent Livingstone et Johnston.",
+        "periodLabel": "Écrit A-senga en 1865 et en 1897",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1865,
+              "to": 1865,
+              "label": "1865"
+            },
+            "era": "polity",
+            "statement": "Le nom Asenga apparaît par écrit, avec le préfixe de classe bantou a-, chez David et Charles Livingstone, qui le donnent comme équivalent de Basenga pour les habitants du pays Senga, au nord du Zambèze. C'est la plus ancienne trace de cette forme que le projet connaît ; le peuple existait déjà avant elle.",
+            "formAsWritten": "Asenga",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Narrative of an Expedition to the Zambesi and its Tributaries",
+                "author": "David et Charles Livingstone",
+                "year": 1865,
+                "url": "https://archive.org/details/narrativeofexpe00livi",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 198",
+                "notes": "Londres, John Murray, 1865, lu sur la numérisation d'Internet Archive le 12 octobre 2026. Chapitre IX : « its inhabitants Asenga, or Basenga »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1897,
+              "label": "1897"
+            },
+            "statement": "Le nom A-senga désigne chez l'administrateur britannique Harry Johnston l'un des peuples de la famille nyanja, au nord du Zambèze et sur la Luangwa. Une note ajoute qu'on les appelle parfois Ba-senga, et que leur langue est proche du bisa (Ki-bisa).",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "British Central Africa",
+                "author": "Harry H. Johnston",
+                "year": 1897,
+                "url": "https://archive.org/details/britishafrica00johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 390",
+                "notes": "Londres, Methuen, 1897, lu sur la numérisation d'Internet Archive le 12 octobre 2026. Point 6 de sa classification : « The A-senga of the north bank of the Zambezi and the river Luangwa » ; note 3 : « Sometimes called Ba-senga : their language is closely related to Ki-bisa »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

@@ -80,5 +80,96 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Ould Cheikh à un peuple en Mauritanie. Nous n'avons pas encore consulté de source consacrée à ce nom. Les formes « Ould X » et « Ahl X » indiquent d'abord une filiation ou une maison. Elles ne suffisent pas à identifier une tribu ou un peuple."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ould Cheikh veut dire « fils de Cheikh » : ould est le mot hassaniya pour « fils ». Chez les Maures de Mauritanie, il dit de qui une personne est le fils, non à quelle famille elle appartient. Nous présentons plus bas ce qu'en disent les sources.",
+    "names": [
+      {
+        "nameText": "Ould Cheikh",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "mey",
+        "namedBy": null,
+        "shortLine": "« Fils de Cheikh » : chez les Maures, la marque de filiation suivie du nom du père.",
+        "periodLabel": "Écrit dès 1921 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ould Cheikh se lit « fils de Cheikh » : ould veut dire « fils, enfant » en hassaniya, la langue des Maures, selon René Basset. Il nomme donc le père d'une personne, et non une famille.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Mission au Sénégal, tome I, fascicule II : notes sur le hassania",
+                "author": "René Basset",
+                "year": 1910,
+                "url": "https://archive.org/details/f2missionausng01bass",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 360",
+                "notes": "Paris, Ernest Leroux, Publications de la Faculté des lettres d'Alger ; exemplaire numérisé sur archive.org, daté de 1910 par sa notice. Lexique hassania-français, entrée « ould, pl. aoûlâd : fils, enfant ». Le hassania, ou hassaniya, est la langue des Maures. Lu le 11 octobre 2026."
+              },
+              {
+                "title": "Pourquoi les Mauritaniens ont-ils un « Ould » dans leur nom ?",
+                "author": "Jeune Afrique",
+                "year": 2005,
+                "url": "https://www.jeuneafrique.com/215605/archives-thematique/pourquoi-les-mauritaniens-ont-ils-un-ould-dans-leur-nom/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Réponse à une question de lecteur, publiée le 16 octobre 2005. « Ould », « fils de », y est décrit comme une marque de filiation, équivalent de « Ben » en arabe classique ; avant la colonisation, on disait Ould et l'on écrivait Ben, puis l'administration française a employé Ould dans toutes les transcriptions, usage que l'État indépendant a gardé. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "Rapporté en 2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Ould Cheikh porte une marque de filiation que l'on disait ould et que l'on écrivait ben avant la colonisation. L'administration française a écrit ould partout, et l'État indépendant a gardé cet usage, selon Jeune Afrique.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Pourquoi les Mauritaniens ont-ils un « Ould » dans leur nom ?",
+                "author": "Jeune Afrique",
+                "year": 2005,
+                "url": "https://www.jeuneafrique.com/215605/archives-thematique/pourquoi-les-mauritaniens-ont-ils-un-ould-dans-leur-nom/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Réponse à une question de lecteur, publiée le 16 octobre 2005. « Ould », « fils de », y est décrit comme une marque de filiation, équivalent de « Ben » en arabe classique ; avant la colonisation, on disait Ould et l'on écrivait Ben, puis l'administration française a employé Ould dans toutes les transcriptions, usage que l'État indépendant a gardé. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ould Cheikh apparaît par écrit sous une forme proche chez Paul Marty, dans la chaîne des maîtres d'un lettré du Brakna, où figure « Cheikh Mostafa ould Cheikh Al-Qadi ». Marty précise que Cheikh Al-Qadi est le père de Cheikh Mostafa. C'est la plus ancienne trace de ce nom que le projet connaît ; la filiation qu'il exprime est plus ancienne.",
+            "formAsWritten": "ould Cheikh",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Études sur l'Islam et les tribus maures : les Brakna",
+                "author": "Paul Marty",
+                "year": 1921,
+                "url": "https://archive.org/details/tudessurlislamet00mart",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 168",
+                "notes": "Paris, Ernest Leroux, 1921 ; exemplaire numérisé sur archive.org. Page 168, chaîne des maîtres d'un lettré dieïdiba : « Cheikh Mostafa ould Cheikh Al-Qadi (Cheikh Al-Qadi, père du précédent) ». L'auteur est un officier interprète de l'administration coloniale ; il est cité pour les formes qu'il écrit. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

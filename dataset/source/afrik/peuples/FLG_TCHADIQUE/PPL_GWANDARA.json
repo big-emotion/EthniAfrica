@@ -134,5 +134,109 @@
         "source_kind": "government"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Gwandara désigne un peuple du centre du Nigeria, autour de Keffi, de Lafia et d'Abuja, qui se nomme lui-même Gwandara ; sa langue est la plus proche du haoussa. Selon une tradition, ce nom serait celui d'un ancêtre venu de Kano. Les sources ne s'accordent pas toujours sur cette histoire ; nous présentons plus bas ce qu'elles disent.",
+    "names": [
+      {
+        "nameText": "Gwandara",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "gwn",
+        "namedBy": null,
+        "shortLine": "Écrit en 1919 ; ce serait le nom d'un ancêtre venu de Kano.",
+        "periodLabel": "Écrit depuis 1919 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Gwandara désigne un peuple d'environ 50 000 personnes du centre du Nigeria et sa langue, la langue tchadique la plus proche du haoussa, selon le linguiste Paul Newman. L'origine du nom n'est connue que par la tradition.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Tone splitting and Gwandara ethnohistory",
+                "author": "Paul Newman",
+                "year": 1985,
+                "url": "https://scholarworks.iu.edu/dspace/items/006fa62c-e412-49de-8f95-07c15d6019e8/full",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 233",
+                "notes": "Studies in African Linguistics, supplément 9, 1985, p. 233-237. Lu le 11 octobre 2026 dans le dépôt de l'université de l'Indiana."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "1985"
+            },
+            "era": "modern",
+            "statement": "Le nom Gwandara désigne, selon la tradition orale, des Haoussa partis de Kano pour ne pas accepter l'islam, selon Paul Newman. Les historiens placent ce départ sous des règnes différents, du XIVe au XVIIe siècle ; Newman pense qu'un petit groupe s'est mêlé à d'autres peuples du centre du Nigeria.",
+            "sources": [
+              {
+                "title": "Tone splitting and Gwandara ethnohistory",
+                "author": "Paul Newman",
+                "year": 1985,
+                "url": "https://scholarworks.iu.edu/dspace/items/006fa62c-e412-49de-8f95-07c15d6019e8/full",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 235-236",
+                "notes": "Studies in African Linguistics, supplément 9, 1985, p. 233-237. Lu le 11 octobre 2026 dans le dépôt de l'université de l'Indiana."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gwandara apparaît par écrit dans les notes des Temple sur les peuples du nord du Nigeria, rédigées à partir de rapports d'administrateurs coloniaux : les Gwandara y vivent autour de Keffi, de Lafia et d'Abuja. C'est la plus ancienne trace de ce nom que le projet connaît. Les Gwandara vivaient déjà dans la région avant lui.",
+            "formAsWritten": "Gwandara",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notes on the tribes, provinces, emirates and states of the northern provinces of Nigeria",
+                "author": "O. Temple et C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 118-119",
+                "notes": "Le Cap, Argus, 1919. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Notice « Gwandara », rédigée à partir des rapports d'administrateurs coloniaux qu'elle nomme."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "Rapportée en 1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gwandara serait celui du frère cadet d'un roi de Kano, qui aurait refusé de se convertir à l'islam et conduit une partie du peuple vers le sud, jusqu'à Gwagwa, selon le chef de Kem, que citent les Temple. Une autre version nomme le chef de ce départ Gwandara Madaiki.",
+            "hypothesisGroup": "origine du nom Gwandara",
+            "sources": [
+              {
+                "title": "Notes on the tribes, provinces, emirates and states of the northern provinces of Nigeria",
+                "author": "O. Temple et C. L. Temple",
+                "year": 1919,
+                "url": "https://archive.org/details/notesontribespro00tempuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 118-119",
+                "notes": "Le Cap, Argus, 1919. Lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Notice « Gwandara », rédigée à partir des rapports d'administrateurs coloniaux qu'elle nomme."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

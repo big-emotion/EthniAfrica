@@ -11,7 +11,10 @@
     {
       "spelling": "Ramaema",
       "attestations": [
-        { "countryId": "LSO", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "LSO",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -75,5 +78,65 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ramaema est un nom de famille du Lesotho. Les sources lues n'en donnent ni l'origine ni le sens.",
+    "names": [
+      {
+        "nameText": "Ramaema",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille du Lesotho, dont l'origine n'est pas connue.",
+        "periodLabel": "Écrit dès 1991 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Ramaema est un nom de famille du Lesotho, celui d'Elias Phisoana Ramaema, qui dirige le conseil militaire du pays de 1991 à 1993. Les sources lues ne disent pas d'où vient ce nom ni ce qu'il veut dire ; on ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Phisoana Ramaema",
+                "author": "Commonwealth Oral History Project",
+                "year": 2015,
+                "url": "https://commonwealthoralhistories.org/explandict/phisoana-ramaema/",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Notice du glossaire du projet d'histoire orale du Commonwealth, publiée le 7 juillet 2015. Elle présente Elias Phisoana Ramaema, né en 1933, président du conseil militaire du Lesotho de mai 1991 à avril 1993. Elle ne dit rien de l'origine du nom. Lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1991,
+              "to": 1991,
+              "label": "30 avril 1991"
+            },
+            "era": "modern",
+            "statement": "Le nom Ramaema apparaît dans les dépêches de l'agence sud-africaine SAPA sur le changement de pouvoir au Lesotho, d'abord écrit Ramaeme puis Ramaema. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand la presse l'a écrit, pas depuis quand la famille le porte.",
+            "formAsWritten": "Ramaema",
+            "birth": true,
+            "sources": [
+              {
+                "title": "FBIS Daily Report, Sub-Saharan Africa, FBIS-AFR-91-084",
+                "author": "Foreign Broadcast Information Service",
+                "year": 1991,
+                "url": "https://archive.org/details/jprs-report_fbis-afr-91-084",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 19-20",
+                "notes": "Recueil quotidien du service américain d'écoute des médias étrangers, 1er mai 1991, lu sur l'exemplaire numérisé d'archive.org. Il reprend deux dépêches de l'agence sud-africaine SAPA du 30 avril 1991 : la première nomme « Col Elias Phisoane Ramaeme », la seconde « Col Elias P. Ramaema », nouveau président du conseil militaire du Lesotho. Lu le 11 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

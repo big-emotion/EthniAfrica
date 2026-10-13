@@ -370,7 +370,8 @@
         "timeRange": {
           "startYear": 1401,
           "endYear": 1961,
-          "precision": "century"
+          "precision": "approximate",
+          "datingNote": "Le début au XVe siècle suit les traditions dynastiques retenues par la fiche. Selon J. B. Webster, B. A. Ogot et J.-P. Chrétien (HGA V), il est très probable que Ruganzu Ndori fonde une nouvelle dynastie au début du XVIIe siècle ; les règnes plus anciens se rattachent au mythique Kigwa et au légendaire Gihanga."
         },
         "dominantPeoples": [
           "Tutsi (noblesse)",
@@ -378,7 +379,7 @@
           "Twa (minorité)"
         ],
         "politicalCenters": ["Nyanza (capitale royale)", "Butare"],
-        "historicalRole": "Royaume centralisé avec une monarchie sacrée (mwami). Système de chefferies hiérarchisées. Expansion territoriale et unification culturelle. Distinctions sociales complexes entre Hutu, Tutsi et Twa, instrumentalisées par le colonialisme."
+        "historicalRole": "Royaume centralisé avec une monarchie sacrée (mwami). Système de chefferies hiérarchisées. Expansion territoriale et unification culturelle. Distinctions sociales complexes entre Hutu, Tutsi et Twa, instrumentalisées par le colonialisme. Selon l'Histoire générale de l'Afrique, une nouvelle dynastie, celle du tambour Kalinga, est très probablement fondée par Ruganzu Ndori au début du XVIIe siècle."
       },
       {
         "name": "Ruanda-Urundi",
@@ -520,6 +521,13 @@
         "url": "https://unstats.un.org/unsd/methodology/m49/",
         "tier": "official",
         "source_kind": "intergovernmental"
+      },
+      {
+        "title": "Histoire générale de l'Afrique, V, ch. 26 : La région des Grands Lacs, de 1500 à 1800",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par B. A. Ogot, chapitre de J. B. Webster, B. A. Ogot et J.-P. Chrétien (1999), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 889. « Il est très probable que Ruganzu Ndori fonda, au début du XVIIe siècle, une nouvelle dynastie, celle du tambour Kalinga. »"
       }
     ],
     "demographics": {

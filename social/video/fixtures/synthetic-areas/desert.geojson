@@ -1,0 +1,26 @@
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Bande centrale (synthétique)",
+    "kind": "approximate",
+    "category": "historical-name",
+    "source": "synthetic renderer test geometry",
+    "citation": "none: a plain polygon typed by hand, not a place",
+    "derivation": "rectangle or hexagon in round degrees",
+    "licence": "CC0 1.0",
+    "mockup": true,
+    "status": "SYNTHETIC placeholder for layout tests, never published"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [-15, 18],
+        [31, 18],
+        [31, 30],
+        [-15, 30],
+        [-15, 18]
+      ]
+    ]
+  }
+}

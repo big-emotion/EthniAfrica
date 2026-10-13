@@ -87,5 +87,69 @@
       "fieldPath": "homonyms",
       "reason": "Les catalogues et recherches exactes consultés n'établissent pas de lignée Rasoanaivo d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Rasoanaivo est un nom de personne malgache, porté aujourd'hui comme nom de famille. Il commence par Ra, que le malgache place devant les noms de personnes. On ne sait pas avec certitude ce que veut dire le reste du nom ni d'où il vient : les sources que nous avons lues ne l'expliquent pas.",
+    "names": [
+      {
+        "nameText": "Rasoanaivo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne malgache porté comme nom de famille ; on ne sait pas avec certitude ce qu'il veut dire.",
+        "periodLabel": "Écrit dès 1931 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Rasoanaivo est un nom de personne malgache, porté comme nom de famille, par exemple par Philippe Rasoanaivo, chercheur à Madagascar. Il commence par Ra, que le malgache place devant les noms de personnes. Les sources lues ne disent ni ce que veut dire le reste du nom, ni d'où il vient, ni comment il se transmet.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "IMRA, Malagasy Institute for Applied Research, Antananarivo, Madagascar — Excellence in Science: Profiles of Research Institutions in Developing Countries",
+                "author": "TWAS",
+                "year": 2010,
+                "url": "https://twas.org/sites/default/files/twas_packard_imra.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 20",
+                "notes": "Profil d'institut publié par TWAS avec le soutien de la Packard Foundation ; le fichier est daté de janvier 2010. Lu le 11 octobre 2026. La page 20 présente Philippe Rasoanaivo, chercheur en phytochimie à l'IMRA, à Madagascar, et une bourse reçue en 1978. Elle ne dit rien de l'origine du nom."
+              },
+              {
+                "title": "Dictionnaire malgache-français",
+                "author": "Antoine Abinal et Victorin Malzac",
+                "year": 1888,
+                "url": "https://archive.org/details/dictionnairemalg00abin",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 456",
+                "notes": "Tananarive, Imprimerie de la Mission catholique, 1888. Lu sur l'exemplaire numérisé d'archive.org le 11 octobre 2026. Page 456, article Ra : « Article personnel qui se met ordinairement devant les noms propres : Ra-bé, Ra-láy, qu'on écrit Rabe, Ralay ». Auteurs de l'époque coloniale, cités ici pour les formes qu'ils relèvent."
+              }
+            ]
+          },
+          {
+            "period": { "from": 1931, "to": 1931, "label": "1931" },
+            "statement": "Le nom Rasoanaivo apparaît par écrit comme nom d'auteur d'un manuel de solfège en malgache de Charles Rasoanaivo, daté de 1931, selon le catalogue de la Bibliothèque nationale de France. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand le nom a été écrit, pas depuis quand il est donné.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Notice bibliographique « Solfa, boky fianarana azy... nataon'i Charles Rasoanaivo,... »",
+                "author": "Bibliothèque nationale de France",
+                "year": 1931,
+                "url": "https://catalogue.bnf.fr/ark:/12148/cb32556919w",
+                "tier": "official",
+                "source_kind": "repository",
+                "notes": "Notice de la Bibliothèque nationale de France, lue le 11 octobre 2026. Manuel de solfège en malgache de Charles Rasoanaivo, daté de 1931 ; la notice ne donne pas le lieu d'édition. C'est la plus ancienne publication sous ce nom que donne le catalogue."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -84,5 +84,133 @@
       "fieldPath": "homonyms",
       "reason": "Les graphies Embaló et Embalo ont été recherchées dans le mémoire de Sadjo ; aucune origine homonyme distincte n’y est décrite."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Embaló est un nom de famille des Fulas de Guinée-Bissau, rangé parmi les familles nobles, dont des membres ont été régulos du Gabú, c'est-à-dire chefs politiques sous l'administration portugaise. On l'écrit aussi Embalo. Les sources consultées n'expliquent pas son origine ; nous présentons plus bas ce qu'elles en disent.",
+    "names": [
+      {
+        "nameText": "Embaló",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille fula noble de Guinée-Bissau, écrit Balô en 1916 ; son origine n'est pas expliquée.",
+        "periodLabel": "Écrit depuis 1916 sous une forme proche",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Rapporté en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Embaló est, avec Baldé, celui des familles de régulos, les chefs politiques des Fulas de Guinée-Bissau, rangées parmi les familles nobles, selon Tcherno Djaló, cité par Ibu Sadjo. Les sources lues n'expliquent pas d'où vient le nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Fulas e Mandingas na luta pelo poder e conquista do Império de Kaabu: causas e consequências (século XVI-XIX)",
+                "author": "Ibu Sadjo",
+                "year": 2019,
+                "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/3467/1/ibu%20djalo_tcc.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21",
+                "notes": "Mémoire de bacharelado, UNILAB, 2019, lu en texte intégral le 12 octobre 2026. À la p. 21, le mémoire cite le même ouvrage de Tcherno Djaló : en haut de la société fula de Guinée-Bissau se trouvent « os Régulos com os apelidos Embalo e Baldé », et « Baldé e Embaló são nobres »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1914,
+              "to": 1916,
+              "label": "Rapport publié en 1916"
+            },
+            "era": "colonial",
+            "statement": "Le nom Embaló apparaît par écrit sous une forme proche, Balô, dans le rapport de 1916 de l'administrateur du Geba, Calvet de Magalhães, qui nomme Monjour Meta Balô, chef fula libre du Gabú ; Eduardo Costa Dias complète ce nom en [Em]Bâlo. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand des familles le portent.",
+            "formAsWritten": "Balô",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Monjour Meta Balô",
+                "role": "régulo du Gabú, nommé dans le rapport"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Regulado do Gabú, 1900-1930: a difícil compatibilização entre legitimidades tradicionais e a reorganização do espaço colonial",
+                "author": "Eduardo Costa Dias",
+                "year": 2006,
+                "url": "https://ojs.letras.up.pt/index.php/AfricanaStudia/article/download/7254/6643/23885",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 102, 110",
+                "notes": "Africana Studia, n° 9, 2006, p. 99-125, Centre d'études africaines de l'Université de Porto, lu en texte intégral le 13 octobre 2026. Page 102 : « Monjour Meta [Em]Bâlo, régulo do Gabú entre 1906 e 1927 ». Page 110, note 24 : situation de 1914 dans la circonscription du Geba, avec « o fula forro Monjour Meta Balô (Magalhães, 1916: 3) ». Le rapport de Magalhães lui-même n'a pas été lu."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Embalo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Écrit depuis 1933",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1933,
+              "to": 1933,
+              "label": "1933"
+            },
+            "era": "colonial",
+            "statement": "Le nom Embalo, sans accent, est porté en 1933 par Nadhu Embalo de Paxana, l'un des régulos du Gabú, que l'administrateur de la circonscription nomme dans une lettre au directeur des Services et Négociations indigènes, selon Eduardo Costa Dias.",
+            "formAsWritten": "Embalo",
+            "actors": [
+              {
+                "name": "Nadhu Embalo de Paxana",
+                "role": "régulo de Paxana, nommé dans la lettre"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Regulado do Gabú, 1900-1930: a difícil compatibilização entre legitimidades tradicionais e a reorganização do espaço colonial",
+                "author": "Eduardo Costa Dias",
+                "year": 2006,
+                "url": "https://ojs.letras.up.pt/index.php/AfricanaStudia/article/download/7254/6643/23885",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 122",
+                "notes": "Africana Studia, n° 9, 2006, p. 99-125, Centre d'études africaines de l'Université de Porto, lu en texte intégral le 13 octobre 2026. Page 122 : lettre de 1933 de l'administrateur du Gabú qui nomme deux régulos, « Dembel Balde de Sama » et « Nadhu Embalo de Paxana »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Rapporté en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Embalo est la graphie sans accent d'Embaló que le mémoire d'Ibu Sadjo emploie en citant Tcherno Djaló.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Fulas e Mandingas na luta pelo poder e conquista do Império de Kaabu: causas e consequências (século XVI-XIX)",
+                "author": "Ibu Sadjo",
+                "year": 2019,
+                "url": "https://repositorio.unilab.edu.br/jspui/bitstream/123456789/3467/1/ibu%20djalo_tcc.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 21",
+                "notes": "Mémoire de bacharelado, UNILAB, 2019, lu en texte intégral le 12 octobre 2026. À la p. 21, le mémoire cite le même ouvrage de Tcherno Djaló : en haut de la société fula de Guinée-Bissau se trouvent « os Régulos com os apelidos Embalo e Baldé », et « Baldé e Embaló são nobres »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

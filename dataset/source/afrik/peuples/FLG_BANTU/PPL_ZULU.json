@@ -87,7 +87,7 @@
       "spiritualities": "Culte des ancetres (amadlozi) : les ancetres communiquent avec les vivants via les reves et les maladies. Les izangoma (divinateurs principalement femmes) et izinyanga (guerisseurs) sont des intermediaires entre vivants et ancetres. Christianisme tres repandu (eglise zioniste, methodiste, catholique), souvent syncrétise avec le culte ancestral. Croyance en l'umuti (remedes traditionnels magiques) et en la sorcellerie."
     },
     "historicalRole": {
-      "kingdomsOrChiefdoms": "Royaume Zoulou fonde vers 1574, puissant empire sous Shaka (1816-1828). Succession royale : Shaka (1816-1828), Dingane (1828-1840), Mpande (1840-1872), Cetshwayo (1872-1884), Dinuzulu (1884-1913). Absorption dans la Colonie du Natal (1897). Homeland de KwaZulu sous l'apartheid (1970-1994, ministre en chef Mangosuthu Buthelezi). Province du KwaZulu-Natal depuis 1994. Rois contemporains : Goodwill Zwelithini (1971-2021), Misuzulu kaZwelithini (depuis 2022).",
+      "kingdomsOrChiefdoms": "Selon la tradition, le clan zoulou remonte à Zulu kaMalandela, vers 1574 ; il ne devient un royaume qu'avec Shaka (1816-1828). En 1818, à la mort de Dingiswayo, Shaka prend la tête de la confédération mthethwa et l'intègre à l'État zoulou, selon Leonard D. Ngcongco (HGA VI). Après la guerre de 1879, le royaume est morcelé en treize chefferies, selon Ngwabi Bhebe (HGA VI). Succession royale : Shaka (1816-1828), Dingane (1828-1840), Mpande (1840-1872), Cetshwayo (1872-1884), Dinuzulu (1884-1913). Absorption dans la Colonie du Natal (1897). Homeland de KwaZulu sous l'apartheid (1970-1994, ministre en chef Mangosuthu Buthelezi). Province du KwaZulu-Natal depuis 1994. Rois contemporains : Goodwill Zwelithini (1971-2021), Misuzulu kaZwelithini (depuis 2022).",
       "relationsWithNeighbors": "Le Mfecane (annees 1820-1840) : l'expansion militaire Zoulou provoqua un effet en cascade de guerres, migrations et reorganisations politiques sur l'ensemble de l'Afrique australe, affectant Sotho, Tswana, Ndebele, Swazi et d'autres nations. Guerre contre les Voortrekkers (Boers) : defaite a Blood River (16 decembre 1838). Guerre Anglo-Zouloue (1879) : victoire a Isandlwana, defaite a Ulundi. Conflits ANC-Inkatha en KwaZulu-Natal (1976-1994) : milliers de morts.",
       "conflictsOrAlliances": "Guerre Anglo-Zouloue (1879) : la plus celebre confrontation militaire de l'histoire Zouloue. Bataille d'Isandlwana (22 janvier 1879) : 1 329 soldats britanniques et allies tues, plus grande defaite militaire britannique en Afrique. Rorke's Drift : resistance britannique (11 Victoria Cross decernes). Finalement, defaite zouloue a Ulundi (4 juillet 1879). Conflits Inkatha-ANC dans les annees 1980-1990. Insurrection de 2021 au KwaZulu-Natal (apres l'emprisonnement de Jacob Zuma).",
       "diaspora": "Importante diaspora urbaine dans le Gauteng (Johannesburg, Soweto), notamment liee aux mines et a l'industrie depuis le debut du XXe siecle. Communauté Ndebele au Zimbabwe (descendants de Mzilikazi, environ 1,5 million). Communautes Ngoni au Malawi, Mozambique, Tanzanie et Zambie (descendants de Zwangendaba, plusieurs centaines de milliers). Petite diaspora internationale (Royaume-Uni, Etats-Unis)."
@@ -172,6 +172,20 @@
         "url": "https://www.bbc.com/news/world-africa-56371742",
         "tier": "referenced",
         "source_kind": "press"
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VI, ch. 5 : Le Mfecane et l'émergence de nouveaux États africains",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par J. F. A. Ajayi, chapitre de Leonard D. Ngcongco (1996), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 131. « En 1818, Dingiswayo fut capturé par Zwide et mis à mort » ; Chaka prend sa place à la tête de la confédération mthethwa et l'« incorpora » dans l'État zulu."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, VI, ch. 7 : Les Britanniques, les Boers et les Africains en Afrique du Sud, 1850-1880",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184314",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par J. F. A. Ajayi, chapitre de Ngwabi Bhebe (1996), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 205. Après la guerre de 1879, sir Garnet Wolseley n'annexe pas le Zululand, « mais le morcela en treize chefferies indépendantes »."
       }
     ]
   },

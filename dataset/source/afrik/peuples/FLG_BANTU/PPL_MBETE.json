@@ -122,5 +122,175 @@
         "tier": "needs_review"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Mbete désigne un peuple du Gabon et de la République du Congo, et la langue qu'il parle. D'après un ouvrage de 1854, un homme né chez eux emploie ce nom pour son pays, sous la forme Bambéte : nous le retenons donc comme le nom que ce peuple se donne. D'autres noms existent, dont Obamba, noté par un voyageur français dans un livre de 1879. On ne sait pas avec certitude d'où vient le nom Mbete, et les sources que nous avons lues ne disent pas si les Obamba sont des Mbete ou un autre peuple. Nous présentons plus bas ce qu'elles disent.",
+    "names": [
+      {
+        "nameText": "Mbete",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple du Gabon et du Congo, noté Bambéte en 1854 ; on ne sait pas d'où il vient.",
+        "periodLabel": "Écrit Bambéte dès 1854 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Mbete désigne, au Metropolitan Museum of Art de New York, un groupe que le musée range parmi les peuples kota : une figure de reliquaire du XIXe siècle, venue du Gabon ou de la République du Congo, y porte l'étiquette « Kota peoples, Mbete group ». Les sources que nous avons lues n'expliquent pas d'où vient le nom Mbete.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Reliquary figure — The Metropolitan Museum of Art",
+                "author": "The Metropolitan Museum of Art",
+                "year": null,
+                "url": "https://www.metmuseum.org/art/collection/search/319234",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Fiche d'objet 2002.456.17, lue le 12 octobre 2026 dans les données ouvertes du musée : culture « Kota peoples, Mbete group », date « 19th century », pays « Gabon or Republic of Congo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mbete désigne, chez le linguiste Harry Johnston, une langue qu'il appelle aussi Bambete, Bumbete ou Li-mbete, et qu'il range parmi les parlers teke du nord-est. Il y reconnaît le « Bumbete » du Polyglotta Africana de Koelle.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Comparative Study of the Bantu and Semi-Bantu Languages, vol. 1",
+                "author": "Harry H. Johnston",
+                "year": 1919,
+                "url": "https://archive.org/details/comparativestudy01johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 809",
+                "notes": "Oxford, Clarendon Press, 1919. Lu le 12 octobre 2026 sur la numérisation d'Internet Archive. Liste des vocabulaires illustrés, nos 181 (Mbete, Bambete, Bumbete, Li-mbete ou teke du nord-est) et 182 (Li-mbamba ou Mbamba)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Mbete apparaît par écrit sous une forme proche, Bambéte, dans le Polyglotta Africana du missionnaire Sigismund Koelle. Koelle y donne la parole à Okiri, devenu Andrew Parker à Sierra Leone, né à Akiéra, « la capitale des Bimbéte », et place ce pays à l'ouest de Bambi et à l'est de Bambamba. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "formAsWritten": "Bambéte",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 14",
+                "notes": "Church Missionary House, Londres, 1854. Lu le 12 octobre 2026 sur la numérisation d'Internet Archive (polyglottaafrica00koel), « Introductory Remarks », p. 14. Entrée « 2. Bambéte », informateur Okiri."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Obamba",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom noté par un voyageur français en 1879 ; les sources ne disent pas s'il désigne des Mbete.",
+        "periodLabel": "Écrit dès 1879 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1919,
+              "to": 1919,
+              "label": "1919"
+            },
+            "era": "colonial",
+            "statement": "Le nom Obamba s'écrit « Obbamba » chez les explorateurs français, selon le linguiste Harry Johnston, qui y voit le nom d'une langue qu'il appelle Mbamba ou Li-mbamba. Il lui donne un numéro distinct de celui de la langue mbete, sans dire si les deux parlers sont ceux d'un seul peuple.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Comparative Study of the Bantu and Semi-Bantu Languages, vol. 1",
+                "author": "Harry H. Johnston",
+                "year": 1919,
+                "url": "https://archive.org/details/comparativestudy01johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 809",
+                "notes": "Oxford, Clarendon Press, 1919. Lu le 12 octobre 2026 sur la numérisation d'Internet Archive. Liste des vocabulaires illustrés, nos 181 (Mbete, Bambete, Bumbete, Li-mbete ou teke du nord-est) et 182 (Li-mbamba ou Mbamba)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1879,
+              "to": 1879,
+              "label": "1879"
+            },
+            "era": "polity",
+            "statement": "Le nom Obamba apparaît par écrit dans Trois voyages dans l'Afrique occidentale d'Alfred Marche, qui raconte une excursion « chez les Obamba qui sont sur la rive droite du fleuve », pendant son voyage de 1875 à 1877. Marche y décrit de grands villages entourés d'une palissade, aux cases séparées par des espaces. C'est la plus ancienne trace de ce nom, sous cette forme, que le projet connaît ; le peuple existait déjà avant elle.",
+            "formAsWritten": "Obamba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Trois voyages dans l'Afrique occidentale : Sénégal-Gambie, Casamance-Gabon-Ogooué",
+                "author": "Alfred Marche",
+                "year": 1879,
+                "url": "https://archive.org/details/troisvoyagesdan00marcgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 289-290",
+                "notes": "Paris, Hachette, 1879. Lu le 12 octobre 2026 sur la numérisation d'Internet Archive. Chapitre V, « Excursion chez les Obamba et à Doumé », qui s'ouvre à la page 289 ; le récit date du voyage de 1875 à 1877."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Obamba a peut-être une trace plus ancienne : Mbamba ou Babamba, dans le Polyglotta Africana de Koelle, où un homme nommé Thomas Pratt cite Bandsimbo comme la capitale des Bambamba. Harry Johnston y reconnaît les « Obbamba » des explorateurs français. Koelle ne le dit pas, et les sources ne disent pas s'il s'agit du même peuple.",
+            "formAsWritten": "Mbamba",
+            "sources": [
+              {
+                "title": "Polyglotta Africana",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 14",
+                "notes": "Church Missionary House, Londres, 1854. Lu le 12 octobre 2026 sur la numérisation d'Internet Archive (polyglottaafrica00koel), « Introductory Remarks », p. 14. Entrée « 4. Mbamba or Babamba »."
+              },
+              {
+                "title": "A Comparative Study of the Bantu and Semi-Bantu Languages, vol. 1",
+                "author": "Harry H. Johnston",
+                "year": 1919,
+                "url": "https://archive.org/details/comparativestudy01johnuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 809",
+                "notes": "Oxford, Clarendon Press, 1919. Lu le 12 octobre 2026 sur la numérisation d'Internet Archive. Liste des vocabulaires illustrés, nos 181 (Mbete, Bambete, Bumbete, Li-mbete ou teke du nord-est) et 182 (Li-mbamba ou Mbamba)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

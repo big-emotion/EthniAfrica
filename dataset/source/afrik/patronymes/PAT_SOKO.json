@@ -82,5 +82,64 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Soko », « Shona », « monkey », « totem », « surname », « clan », « etymology » et « transmission », ainsi que la consultation directe de « Soko Surname Origin, Meaning & Last Name History » n'ont établi aucune règle propre à Soko permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Soko est un nom de clan d'origine karanga, au Zimbabwe, dont le totem est le singe. Au centre du Malawi, les Ngoni le comptent parmi leurs clans venus d'ailleurs. On ne sait pas avec certitude depuis quand ce nom est écrit.",
+    "names": [
+      {
+        "nameText": "Soko",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan d'origine karanga, au Zimbabwe, dont le totem est le singe.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1978,
+              "to": 1978,
+              "label": "Décrit en 1978"
+            },
+            "era": "modern",
+            "statement": "Le nom Soko est celui d'un clan d'origine karanga dont le totem est le singe. Au centre du Malawi, les Ngoni le rangent parmi les clans venus d'autres peuples et désormais comptés comme ngoni, selon G. T. Nurse.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Clanship in Central Malawi",
+                "author": "G. T. Nurse",
+                "year": 1978,
+                "url": "https://www.ngonipeople.com/2010/10/clans-of-ngoni-according-to-gt-nurse.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "tableau I, section K (a)",
+                "notes": "Monographie publiée à Vienne-Föhrenau par Elisabeth Stiglmayr en 1978, collection Acta ethnologica et linguistica, n° 41. Lue le 12 octobre 2026 dans une copie non officielle d'un extrait, pages 50 à 62 selon sa reproduction, publiée le 28 octobre 2010 sur le blog ngonipeople.com. Le tableau I, section K (a), range Soko, d'origine karanga, parmi les clans d'origine non ngoni désormais comptés comme ngoni dans la région ngoni du centre du Malawi. Le texte dit plus loin que Soko est un clan d'origine karanga et que les clans Soko et Msimango ont tous deux le singe pour totem."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1978,
+              "to": 1978,
+              "label": "Proposé en 1978"
+            },
+            "era": "modern",
+            "statement": "Le nom Soko aurait été rapproché du nom Msimango, ce qui expliquerait le lien entre ces deux clans au Malawi, selon G. T. Nurse. Les deux clans avaient déjà le singe pour totem avant de se rencontrer : les Soko de Rhodésie, l'actuel Zimbabwe, et les Msimang du Swaziland, l'actuel Eswatini, ont encore ce même totem.",
+            "sources": [
+              {
+                "title": "Clanship in Central Malawi",
+                "author": "G. T. Nurse",
+                "year": 1978,
+                "url": "https://www.ngonipeople.com/2010/10/clans-of-ngoni-according-to-gt-nurse.html",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "texte sur les clans Msimango et Soko",
+                "notes": "Monographie publiée à Vienne-Föhrenau par Elisabeth Stiglmayr en 1978, collection Acta ethnologica et linguistica, n° 41. Lue le 12 octobre 2026 dans une copie non officielle d'un extrait, pages 50 à 62 selon sa reproduction, publiée le 28 octobre 2010 sur le blog ngonipeople.com. Le texte avance que le lien entre les clans Msimango et Soko pourrait venir d'un rapprochement entre leurs noms (« paronomasic implantation »). Il ajoute que les deux clans ont le singe pour totem, que ce partage est antérieur à leur rencontre, et que les Soko de Rhodésie et les Msimang du Swaziland ont encore le même totem."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

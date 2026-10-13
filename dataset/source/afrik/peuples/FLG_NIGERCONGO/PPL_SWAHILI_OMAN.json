@@ -130,5 +130,72 @@
         "tier": "unverified"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Zanzibari désigne en Oman des familles d'origine omanaise qui ont vécu à Zanzibar et sur la côte d'Afrique de l'Est, puis sont revenues en Oman, surtout après 1964. On les appelle aussi Swahili. On ne sait pas avec certitude depuis quand ces noms servent en Oman, ni d'où ils viennent dans cet usage.",
+    "names": [
+      {
+        "nameText": "Zanzibari",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom des familles omanaises revenues de Zanzibar et de la côte d'Afrique de l'Est.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Zanzibari désigne en Oman des familles nées à Zanzibar et « revenues » en Oman, souvent après la révolution de Zanzibar de 1964 et l'appel du sultan Qabous en 1970, selon Scott Erich. Considérés comme des Omanais de la diaspora à Zanzibar, ils deviennent en Oman des Zanzibari de la diaspora. On ne sait pas avec certitude depuis quand ce nom leur est donné.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Muscat to Mji Mkongwe",
+                "author": "Scott Erich",
+                "year": 2015,
+                "url": "https://www.icwa.org/muscat-to-mji-mkongwe/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Lettre de boursier de l'Institute of Current World Affairs, 30 novembre 2015, lue en ligne. L'auteur cite Marc Valeri, Oman: Politics and Society in the Qaboos State, p. 21 ; nous n'avons pas lu ce livre."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Swahili",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une étiquette donnée en Oman à une partie de ces familles, sans règle fixe.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Swahili, comme celui de Zanzibari, peut être en Oman une étiquette arbitraire, fondée sur des récits plutôt que sur des liens réels, selon Scott Erich. Des membres d'un même clan peuvent être tenus pour Swahili ou non, selon le chercheur Marc Valeri, qu'il cite.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Muscat to Mji Mkongwe",
+                "author": "Scott Erich",
+                "year": 2015,
+                "url": "https://www.icwa.org/muscat-to-mji-mkongwe/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Lettre de boursier de l'Institute of Current World Affairs, 30 novembre 2015, lue en ligne. L'auteur cite Marc Valeri, Oman: Politics and Society in the Qaboos State, p. 21 ; nous n'avons pas lu ce livre."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

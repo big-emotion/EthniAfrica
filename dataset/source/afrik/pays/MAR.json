@@ -464,6 +464,20 @@
         "historicalRole": "Dynastie berbère, développement de Fès, architecture mérinide."
       },
       {
+        "name": "Dynastie saadienne",
+        "period": "XVIe - XVIIe siècles",
+        "entryType": "polity",
+        "timeRange": {
+          "startYear": 1511,
+          "endYear": 1659,
+          "precision": "approximate",
+          "datingNote": "Seule l'entrée de Muḥammad al-Shaykh à Fès, le 13 septembre 1554, est datée par la source lue (Mohammed El Fasi, HGA V). Les années 1511 (début de la lutte saadienne dans le Sud) et 1659 (fin de la dynastie) sont des repères courants qui n'y ont pas été vérifiés."
+        },
+        "dominantPeoples": ["Arabes", "Berbères"],
+        "politicalCenters": ["Fès (à partir de 1554)"],
+        "historicalRole": "Dynastie qui s'impose au Maroc au XVIe siècle. La lutte entre l'ancienne dynastie et la nouvelle dure une dizaine d'années ; elle s'achève par l'entrée de Muḥammad al-Shaykh à Fès, le 13 septembre 1554, selon Mohammed El Fasi (HGA V)."
+      },
+      {
         "name": "Dynastie alaouite",
         "period": "1666-présent",
         "entryType": "polity",
@@ -673,6 +687,13 @@
         "url": "https://www.constituteproject.org/constitution/Morocco_2011",
         "tier": "referenced",
         "notes": "Texte de la Constitution : l'arabe demeure langue officielle de l'État, l'amazighe est aussi langue officielle, patrimoine commun de tous les Marocains."
+      },
+      {
+        "title": "Histoire générale de l'Afrique, V, ch. 8 : Le Maroc",
+        "url": "https://unesdoc.unesco.org/ark:/48223/pf0000184292",
+        "tier": "official",
+        "source_kind": "intergovernmental",
+        "notes": "UNESCO, volume dirigé par B. A. Ogot, chapitre de Mohammed El Fasi (1999), lu dans l'exemplaire numérisé de l'UNESDOC le 12 octobre 2026. Page 240. « La lutte entre l'ancienne et la nouvelle dynastie dura une dizaine d'années et fut couronnée par l'entrée de Muḥammad al-Shaykh à Fès le 13 septembre 1554. »"
       }
     ],
     "demographics": {

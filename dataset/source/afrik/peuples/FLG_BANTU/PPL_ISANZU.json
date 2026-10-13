@@ -97,5 +97,263 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Isanzu désigne un peuple du centre-nord de la Tanzanie, qui se nomme lui-même Anyihanzu. Sa langue est le kinyihanzu, que ses locuteurs appellent kiihanzu. On a écrit aussi Issansu, Ihanzu et, en swahili, Wanyisanzu. On ne sait pas avec certitude d'où vient le nom Isanzu ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Anyihanzu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "isn",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne : les gens d'Ihanzu, du nom de leur pays.",
+        "periodLabel": "Écrit depuis 1997 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Publié en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Anyihanzu est celui du peuple qui parle le kinyihanzu, langue que ses locuteurs appellent eux-mêmes kiihanzu, selon les linguistes Stanislav Beletskiy et Mark Paul Diyammi.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Phonological and Morphological Sketch of Isanzu Lect (Bantu, Tanzania)",
+                "author": "Stanislav Beletskiy et Mark Paul Diyammi",
+                "year": 2019,
+                "url": "https://cyberleninka.ru/article/n/a-phonological-and-morphological-sketch-of-isanzu-lect-bantu-tanzania",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Journal of Siberian Federal University. Humanities & Social Sciences, vol. 12, n° 1, 2019, p. 4-19. Lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1997,
+              "to": 1997,
+              "label": "Thèse de 1997"
+            },
+            "era": "modern",
+            "statement": "Le nom Anyihanzu veut dire « les gens d'Ihanzu » : le préfixe anya signifie « les gens de », et Ihanzu est le nom que ce peuple donne à son pays, selon l'anthropologue Todd Sanders. La forme complète, Anya-Ihanzu, s'entend toujours Anyihanzu.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Rainmaking, Gender and Power in Ihanzu, Tanzania, 1885-1995",
+                "author": "Todd Sanders",
+                "year": 1997,
+                "url": "https://researchonline.lse.ac.uk/id/eprint/132476",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chapitre 1, p. 1, note 1",
+                "notes": "Thèse de doctorat, London School of Economics. Lu le 12 octobre 2026 dans la numérisation déposée par l'école."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1997,
+              "to": 1997,
+              "label": "1997"
+            },
+            "era": "modern",
+            "statement": "Le nom Anyihanzu figure dans la thèse de l'anthropologue Todd Sanders, qui écrit que c'est le nom que ce peuple se donne et que les auteurs précédents l'ont appelé autrement. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
+            "formAsWritten": "Anyïhanzu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Rainmaking, Gender and Power in Ihanzu, Tanzania, 1885-1995",
+                "author": "Todd Sanders",
+                "year": 1997,
+                "url": "https://researchonline.lse.ac.uk/id/eprint/132476",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chapitre 1, p. 1, note 1",
+                "notes": "Thèse de doctorat, London School of Economics. Lu le 12 octobre 2026 dans la numérisation déposée par l'école."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Isanzu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que l'administration et la plupart des livres emploient pour ce peuple et sa langue.",
+        "periodLabel": "Écrit depuis 1894 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Publié en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Isanzu est celui que Stanislav Beletskiy et Mark Paul Diyammi donnent au parler de ce peuple dans leur esquisse de 2019. Ils relèvent aussi les graphies Ihaanzu, Issansu, Kiisanzu, Kinyihanzu et Kinyisanzu.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "A Phonological and Morphological Sketch of Isanzu Lect (Bantu, Tanzania)",
+                "author": "Stanislav Beletskiy et Mark Paul Diyammi",
+                "year": 2019,
+                "url": "https://cyberleninka.ru/article/n/a-phonological-and-morphological-sketch-of-isanzu-lect-bantu-tanzania",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Journal of Siberian Federal University. Humanities & Social Sciences, vol. 12, n° 1, 2019, p. 4-19. Lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Époque de l'administration britannique"
+            },
+            "era": "colonial",
+            "statement": "Le nom Isanzu est employé, avec Anisanzu et Wanisanzu, par les administrateurs britanniques, selon l'anthropologue Todd Sanders.",
+            "sources": [
+              {
+                "title": "Rainmaking, Gender and Power in Ihanzu, Tanzania, 1885-1995",
+                "author": "Todd Sanders",
+                "year": 1997,
+                "url": "https://researchonline.lse.ac.uk/id/eprint/132476",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chapitre 1, p. 1, note 1",
+                "notes": "Thèse de doctorat, London School of Economics. Lu le 12 octobre 2026 dans la numérisation déposée par l'école."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1894,
+              "to": 1894,
+              "label": "1894"
+            },
+            "era": "polity",
+            "statement": "Le nom Isanzu apparaît sous une forme proche, « Issansu », dans le livre d'Oscar Baumann, qui cite Issansu, Iramba et Eyambi parmi les contrées habitées au bord du fossé du lac Eyasi. Selon Todd Sanders, on trouve aussi Issansu chez Franz Stuhlmann en 1894 et Wa-Issansu chez Werther la même année. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Issansu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Durch Massailand zur Nilquelle : Reisen und Forschungen der Massai-Expedition des deutschen Antisklaverei-Komite in den Jahren 1891-1893",
+                "author": "Oscar Baumann",
+                "year": 1894,
+                "url": "https://www.gutenberg.org/ebooks/68057",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 141",
+                "notes": "Berlin, Dietrich Reimer. Lu le 12 octobre 2026 dans l'édition du Projet Gutenberg."
+              },
+              {
+                "title": "Rainmaking, Gender and Power in Ihanzu, Tanzania, 1885-1995",
+                "author": "Todd Sanders",
+                "year": 1997,
+                "url": "https://researchonline.lse.ac.uk/id/eprint/132476",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chapitre 1, p. 1, note 1",
+                "notes": "Thèse de doctorat, London School of Economics. Lu le 12 octobre 2026 dans la numérisation déposée par l'école. Sanders donne Stuhlmann (1894) et Werther (1894) ; nous n'avons pas lu ces deux livres."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ihanzu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du pays et, sans préfixe, celui des gens qui l'habitent, chez Todd Sanders.",
+        "periodLabel": "Écrit depuis 1961 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1997,
+              "to": 1997,
+              "label": "Thèse de 1997"
+            },
+            "era": "modern",
+            "statement": "Le nom Ihanzu est celui que Todd Sanders retient pour parler de ce peuple, en omettant le préfixe anya ; il désigne aussi leur pays. Le nom de la langue est Kinyihanzu.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Rainmaking, Gender and Power in Ihanzu, Tanzania, 1885-1995",
+                "author": "Todd Sanders",
+                "year": 1997,
+                "url": "https://researchonline.lse.ac.uk/id/eprint/132476",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chapitre 1, p. 1, note 1",
+                "notes": "Thèse de doctorat, London School of Economics. Lu le 12 octobre 2026 dans la numérisation déposée par l'école."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1961,
+              "to": 1963,
+              "label": "1961-1963"
+            },
+            "statement": "Le nom Ihanzu est employé, avec Isanzu, selon le contexte, par l'anthropologue Adam dans ses textes de 1961 à 1963, que cite Todd Sanders. C'est la plus ancienne trace de ce nom que le projet connaît ; nous ne la connaissons que par Sanders, car nous n'avons pas lu ces textes.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Rainmaking, Gender and Power in Ihanzu, Tanzania, 1885-1995",
+                "author": "Todd Sanders",
+                "year": 1997,
+                "url": "https://researchonline.lse.ac.uk/id/eprint/132476",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chapitre 1, p. 1, note 1",
+                "notes": "Thèse de doctorat, London School of Economics. Lu le 12 octobre 2026 dans la numérisation déposée par l'école. Sanders cite les textes d'Adam parus de 1961 à 1963 ; nous ne les avons pas lus."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Wanyisanzu",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "swh",
+        "namedBy": "les swahilophones",
+        "shortLine": "Le nom que les swahilophones donnent à ce peuple.",
+        "periodLabel": "Écrit depuis 1997",
+        "accounts": [
+          {
+            "period": {
+              "from": 1997,
+              "to": 1997,
+              "label": "Thèse de 1997"
+            },
+            "era": "modern",
+            "statement": "Le nom Wanyisanzu est celui que les swahilophones donnent à ce peuple, et celui que les agents de l'administration emploient le plus souvent, selon Todd Sanders ; ceux qui le connaissent mal disent Wanyiramba. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Wanyisanzu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Rainmaking, Gender and Power in Ihanzu, Tanzania, 1885-1995",
+                "author": "Todd Sanders",
+                "year": 1997,
+                "url": "https://researchonline.lse.ac.uk/id/eprint/132476",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "chapitre 1, p. 1, note 1",
+                "notes": "Thèse de doctorat, London School of Economics. Lu le 12 octobre 2026 dans la numérisation déposée par l'école."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

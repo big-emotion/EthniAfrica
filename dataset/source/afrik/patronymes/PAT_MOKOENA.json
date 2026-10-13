@@ -97,5 +97,116 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Mokoena », « SOTHO », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée et les travaux ou notices propres au nom cités dans la fiche n'ont établi aucune règle propre à l'ensemble des emplois de Mokoena permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mokoena est un nom de clan des Basotho : il désigne un membre du clan du crocodile, koena, dont le pluriel est Bakoena. Le missionnaire Eugène Casalis écrit Bakuénas dès 1859. Les sources lues donnent toutes le même sens au nom.",
+    "names": [
+      {
+        "nameText": "Mokoena",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan sotho, celui des hommes du crocodile ; écrit Bakuénas dès 1859.",
+        "periodLabel": "Écrit dès 1859 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Décrit en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Mokoena désigne, au singulier, un homme du clan du crocodile, koena ; au pluriel, ce clan est les Bakoena, « le peuple du crocodile », selon Ketlalemang Clement Maimane, qui s'appuie sur Kunene.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Confluences of Lithoko, Religious and Traditional Beliefs and Western Poetry in Modern Sesotho Poetry: An Intertextual Perspective",
+                "author": "Ketlalemang Clement Maimane",
+                "year": 2016,
+                "url": "https://repository.tml.nul.ls/bitstream/handle/20.500.14155/1150/Maimane_Confluences_2016.pdf?sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 134-135 (149-150 du fichier PDF)",
+                "notes": "Thèse de doctorat, University of KwaZulu-Natal, lue le 12 octobre 2026. La section 3.3.1.5 explique, d'après Kunene (1971), qu'un clan prend souvent son nom d'un animal : koena « crocodile », avec les préfixes personnels mo- et ba-, donne Mokoena au singulier et Bakoena, « People of the crocodile », au pluriel ; elle cite des lithoko où un chef est loué sous les noms Koena et Mokoena. Les pages imprimées 134 et 135 sont les pages 149 et 150 du fichier."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1859,
+              "to": 1859,
+              "label": "Proposée en 1859"
+            },
+            "era": "polity",
+            "statement": "Le nom Mokoena viendrait du crocodile : Eugène Casalis écrit que chaque tribu béchuana tire son nom d'un animal, et que les Bakuénas sont « les hommes du crocodile », qui appellent le crocodile leur père.",
+            "hypothesisGroup": "origine du nom Mokoena",
+            "sources": [
+              {
+                "title": "Les Bassoutos, ou vingt-trois années de séjour et d'observations au sud de l'Afrique",
+                "author": "Eugène Casalis",
+                "year": 1859,
+                "url": "https://archive.org/details/lesbassoutosouvi00casa",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 221",
+                "notes": "Paris, Meyrueis, 1859, lu le 12 octobre 2026 dans la numérisation d'Internet Archive. L'auteur est un missionnaire français établi chez les Basotho. Page 221 : « chaque tribu tire le sien d'un animal ou d'un végétal. Tous les Béchuanas se subdivisent ainsi en Bakuénas, les hommes du crocodile ; Batlapis, ceux du poisson… ». Les Bakuénas « appellent le crocodile leur père » et ne mangent pas sa chair. Page 222 : parmi les tribus des Bassoutos, « la principale est celle des Bakuénas », à laquelle appartient la famille régnante."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1905,
+              "to": 1905,
+              "label": "Rapporté en 1905"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mokoena est écrit ainsi pour un chef, Ratladi, et le nom Bakoena pour toute une tribu, dans les traditions que J. C. MacGregor recueille à Leribe : les Bakoena disent venir de Bopedi, dans le Transvaal, où ils vivaient au XVIIe siècle sous le chef Mosito.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Basuto Traditions",
+                "author": "J. C. MacGregor",
+                "year": 1905,
+                "url": "https://archive.org/details/basutotraditions00macg",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 9 et 24",
+                "notes": "Recueil de traditions sotho compilé « from native sources » par l'assistant commissaire de Leribe, introduction datée de Leribe, novembre 1904, lu le 12 octobre 2026 dans la numérisation d'Internet Archive. Page 9 : « THE BAKOENA. This is a branch of the old Bahlakoana tribe. They say they come from Bopedi… where they were living in the seventeenth century under their chief Mosito ». Page 24 : « Rathladi, a Mokoena chief », qui invite ses « Bakoena relations »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1859,
+              "to": 1859,
+              "label": "1859"
+            },
+            "era": "polity",
+            "statement": "Le nom Mokoena a une forme proche, Bakuénas, dans Les Bassoutos d'Eugène Casalis : le missionnaire l'écrit ainsi, au pluriel, pour « les hommes du crocodile ». C'est la plus ancienne trace de ce nom que le projet connaît ; le clan qui le porte est plus ancien que ce livre.",
+            "formAsWritten": "Bakuénas",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Eugène Casalis",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Les Bassoutos, ou vingt-trois années de séjour et d'observations au sud de l'Afrique",
+                "author": "Eugène Casalis",
+                "year": 1859,
+                "url": "https://archive.org/details/lesbassoutosouvi00casa",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 221",
+                "notes": "Paris, Meyrueis, 1859, lu le 12 octobre 2026 dans la numérisation d'Internet Archive. L'auteur est un missionnaire français établi chez les Basotho. Page 221 : la phrase « Tous les Béchuanas se subdivisent ainsi en Bakuénas, les hommes du crocodile ; Batlapis, ceux du poisson… », citée plus haut."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

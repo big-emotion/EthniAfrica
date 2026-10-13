@@ -85,5 +85,42 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Yakité à un peuple en République centrafricaine. Nous n'avons pas encore consulté de source consacrée à ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Yakité est connu comme celui d'un quartier de Bangui, en Centrafrique. On ne sait pas avec certitude qu'il soit aussi un nom de famille : aucune source consultée ne le montre, et aucune ne dit d'où vient le nom.",
+    "names": [
+      {
+        "nameText": "Yakité",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un quartier de Bangui ; on ne sait pas s'il est aussi un nom de famille.",
+        "periodLabel": "Attesté comme quartier aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "Carte de 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Yakité désigne un quartier de Bangui, la capitale de la Centrafrique, sur la carte des quartiers de la ville que publie l'initiative REACH. Cette carte ne dit pas s'il est aussi porté comme nom de famille.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "République centrafricaine - Ville de Bangui - Carte des quartiers",
+                "author": "REACH",
+                "year": 2017,
+                "url": "https://repository.impact-initiatives.org/document/impact/aa2a432f/caf_bangui_ref_quartiers_23jan2017_a0.pdf",
+                "tier": "referenced",
+                "source_kind": "ngo",
+                "notes": "Carte produite le 23 janvier 2017 ; arrondissements et quartiers d'après ACTED, REACH et OCHA. Lue le 11 octobre 2026 dans le PDF du dépôt d'IMPACT Initiatives. Le quartier Yakité y figure. La carte ne dit rien d'un nom de famille."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

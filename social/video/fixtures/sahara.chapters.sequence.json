@@ -1,0 +1,232 @@
+{
+  "design": "EthniAfrica Vidéo carte 0.4.0-proposition",
+  "subject": "Sahara, exemple en cinq chapitres",
+  "demo": "Illustrative copy from the design's worked example, for layout and timing proofs only; not approved publication text. Every area is a synthetic polygon marked as a mockup (fixtures/synthetic-areas), never publishable.",
+  "style": "relief",
+  "imagery": "bmng-2004-07-topo-bathy",
+  "camera": [
+    { "at": 0, "lon": 18, "lat": 6, "radius": 300 },
+    { "at": 3, "lon": 12, "lat": 15, "radius": 420 },
+    { "at": 6, "lon": 8, "lat": 18.7415, "radius": 1304.5 }
+  ],
+  "title": "D'où vient le nom Sahara ?",
+  "highlight": { "text": "Sahara" },
+  "chapters": [
+    {
+      "title": "D'où vient le nom",
+      "names": [{ "kind": "region", "name": "Sahara", "lon": 12, "lat": 23.5 }],
+      "legend": [
+        { "label": "Région nommée, sans limites tracées", "name": "Sahara" }
+      ],
+      "caption": {
+        "carte": "relief et nom de la région, sans limites",
+        "periode": "aujourd'hui",
+        "source": "Natural Earth (noms)"
+      },
+      "sentences": [
+        [
+          { "text": "Sahara vient de l'arabe", "enters": ["Sahara"] },
+          { "text": "*ṣaḥrāʾ* (صحراء), « désert »." }
+        ],
+        [
+          { "text": "Le lien avec la couleur" },
+          { "text": "du sol est une hypothèse." }
+        ]
+      ]
+    },
+    {
+      "title": "Ce que le mot désignait",
+      "features": [
+        {
+          "kind": "area",
+          "id": "desert",
+          "file": "synthetic-areas/desert.geojson",
+          "label": "quoted",
+          "ink": "a",
+          "labelAt": [4, 23.5],
+          "illustrative": true
+        },
+        {
+          "kind": "area",
+          "id": "berberes",
+          "file": "synthetic-areas/berberes.geojson",
+          "label": "quoted",
+          "ink": "b",
+          "labelAt": [1, 33],
+          "illustrative": true
+        },
+        {
+          "kind": "area",
+          "id": "noirs",
+          "file": "synthetic-areas/noirs.geojson",
+          "label": "quoted",
+          "ink": "c",
+          "labelAt": [2, 14],
+          "illustrative": true
+        }
+      ],
+      "legend": [
+        { "label": "« Désert »", "feature": "desert" },
+        { "label": "« Pays des Berbères »", "feature": "berberes" },
+        { "label": "« Pays des Noirs »", "feature": "noirs" },
+        { "label": "Zone approximative", "approximate": true }
+      ],
+      "caption": {
+        "carte": "trois bandes d'après al-Idrīsī, approximatives",
+        "periode": "vers 1154 ; relief actuel",
+        "source": "al-Idrīsī, 1154 ; [zones à sourcer]"
+      },
+      "sentences": [
+        [
+          { "text": "Vers 1154, al-Idrīsī" },
+          { "text": "nomme ainsi le désert", "enters": ["desert"] },
+          { "text": "entre le pays des Berbères", "enters": ["berberes"] },
+          { "text": "et celui des Noirs.", "enters": ["noirs"] }
+        ]
+      ]
+    },
+    {
+      "title": "D'autres noms, côte à côte",
+      "features": [
+        {
+          "kind": "area",
+          "id": "libye",
+          "file": "synthetic-areas/libye.geojson",
+          "ink": "a",
+          "illustrative": true
+        },
+        {
+          "kind": "area",
+          "id": "touaregs",
+          "file": "synthetic-areas/touaregs.geojson",
+          "ink": "b",
+          "illustrative": true
+        }
+      ],
+      "names": [
+        { "kind": "region", "name": "Ténéré", "lon": 10.6, "lat": 18.4 },
+        { "kind": "region", "name": "Tanezrouft", "lon": 0.2, "lat": 23.4 }
+      ],
+      "legend": [
+        { "label": "« Libye » d'Hérodote", "feature": "libye" },
+        { "label": "Où vivent des Touaregs", "feature": "touaregs" },
+        { "label": "Région sans limites", "name": "Ténéré" },
+        { "label": "Zone approximative", "approximate": true }
+      ],
+      "caption": {
+        "carte": "la « Libye » d'Hérodote, puis où vivent des Touaregs (un peuple, pas un État)",
+        "periode": "Ve siècle av. J.-C. ; aujourd'hui",
+        "source": "[textes cités] ; [aire à sourcer] ; Natural Earth (noms)"
+      },
+      "sentences": [
+        [
+          {
+            "text": "Hérodote disait « Libye »",
+            "enters": ["libye"]
+          },
+          { "text": "l'Afrique à l'ouest de l'Égypte." }
+        ],
+        [
+          { "text": "Chez les Touaregs,", "enters": ["touaregs"] },
+          {
+            "text": "*ténéré* et *tanezruft*",
+            "enters": ["Ténéré", "Tanezrouft"]
+          },
+          { "text": "sont des sortes de désert." }
+        ]
+      ]
+    },
+    {
+      "title": "Comment le nom a circulé",
+      "features": [
+        {
+          "kind": "area",
+          "id": "sahara",
+          "file": "synthetic-areas/sahara.geojson",
+          "ink": "a",
+          "label": "region",
+          "labelAt": [12, 23.5],
+          "illustrative": true
+        },
+        {
+          "kind": "area",
+          "id": "libyque",
+          "file": "synthetic-areas/libyque.geojson",
+          "ink": "b",
+          "label": "region",
+          "labelAt": [26, 25.5],
+          "illustrative": true
+        }
+      ],
+      "legend": [
+        { "label": "Sahara aujourd'hui", "feature": "sahara" },
+        { "label": "« Désert libyque »", "feature": "libyque" },
+        { "label": "Zone approximative", "approximate": true }
+      ],
+      "caption": {
+        "carte": "le Sahara et le « désert libyque », approximatifs",
+        "periode": "de 1550 à aujourd'hui",
+        "source": "[textes cités] ; [zones à sourcer]"
+      },
+      "sentences": [
+        [
+          { "text": "Aujourd'hui, le nom « Sahara »" },
+          { "text": "nomme tout le désert.", "enters": ["sahara"] }
+        ],
+        [
+          {
+            "text": "À l'est, le « désert libyque ».",
+            "enters": ["libyque"]
+          }
+        ]
+      ]
+    },
+    {
+      "title": "Le Sahara a-t-il été vert ?",
+      "camera": {
+        "lon": 16,
+        "lat": 13.2853,
+        "radius": 2825.7,
+        "pitch": 66,
+        "travel": 1.8
+      },
+      "outline": {
+        "name": "Méga-Tchad",
+        "file": "../data/megachad-325m.geojson",
+        "labelAt": [16, 15.6],
+        "source": "Leblanc et al. 2006",
+        "study": "Leblanc et al. (2006), Palaeogeography, Palaeoclimatology, Palaeoecology 239, 16–27",
+        "elevationModel": "NOAA ETOPO 2022",
+        "levelMetres": 325
+      },
+      "names": [
+        {
+          "kind": "water",
+          "name": "Lac Tchad actuel",
+          "lon": 14.4,
+          "lat": 13.1
+        }
+      ],
+      "legend": [{ "label": "Contour reconstitué", "outline": true }],
+      "caption": {
+        "carte": "rivage du Méga-Tchad, reconstitué d'après le relief",
+        "periode": "il y a environ 14 500 à 5 000 ans",
+        "source": "Leblanc et al. 2006 ; NOAA, ETOPO 2022"
+      },
+      "sentences": [
+        [
+          { "text": "Il y a 14 500 ans environ," },
+          {
+            "text": "un grand lac couvrait ce bassin.",
+            "enters": ["Méga-Tchad"]
+          }
+        ],
+        [
+          { "text": "La fin de cette période" },
+          { "text": "humide reste discutée." }
+        ]
+      ]
+    }
+  ],
+  "ending": { "variant": "B" }
+}

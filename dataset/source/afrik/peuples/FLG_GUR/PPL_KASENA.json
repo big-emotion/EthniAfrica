@@ -202,5 +202,166 @@
         "source_kind": "linguistic_reference"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Kasena désigne un peuple du nord du Ghana et du sud du Burkina Faso, autour de Navrongo et de Tiébélé, qui se nomme lui-même Kasena ; sa langue s'appelle le kasem. D'autres noms existent : Kassouna, l'orthographe des administrateurs français, et Gourounsi, un nom donné par des voisins. On ne sait pas avec certitude d'où vient le nom Kasena ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Kasena",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "xsm",
+        "namedBy": null,
+        "shortLine": "Écrit Kásm en 1854 ; son origine n'est pas connue.",
+        "periodLabel": "Écrit depuis 1854 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kasena est celui que ce peuple se donne lui-même, selon l'administrateur britannique A. W. Cardinall, qui l'écrit Kassena. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Natives of the Northern Territories of the Gold Coast : their customs, religion and folklore",
+                "author": "A. W. Cardinall",
+                "year": 1920,
+                "url": "https://archive.org/details/nativesofnorther00carduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. vii",
+                "notes": "Londres, George Routledge & Sons ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Préface : « Throughout I have taken the names employed by the people themselves to describe their tribe. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Kasena a une forme proche, Kasem, sous laquelle le catalogue Glottolog enregistre aujourd'hui la langue de ce peuple ; il relève aussi Kasena, Kassena et Kassem.",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Kasem (kase1253)",
+                "author": "Glottolog, Institut Max Planck d'anthropologie évolutionniste",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/kase1253",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Catalogue des langues, lu le 11 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1854,
+              "to": 1854,
+              "label": "1854"
+            },
+            "era": "polity",
+            "statement": "Le nom Kasena a une forme proche, « Kásm », chez le linguiste Sigismund Koelle, qui en fait le nom d'une langue parlée à l'est de Kúndṣọṛọ. C'est la plus ancienne trace de ce nom que le projet connaît. Les Kasena vivaient déjà dans la région avant lui.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "author": "Sigismund Wilhelm Koelle",
+                "year": 1854,
+                "url": "https://github.com/lexibank/polyglottaafricana",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous le parler « Kásm »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kassouna",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Écrit ainsi par l'administration française au début du XXe siècle",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kassouna est la forme qu'emploie l'administrateur colonial Louis Tauxier pour un peuple d'environ 30 000 personnes dans la résidence de Léo. Il le divise en Kassounas-Fras, à l'est, et en Kassounas-Bouras, au sud-est.",
+            "sources": [
+              {
+                "title": "Le Noir du Soudan : pays mossi et gourounsi",
+                "author": "Louis Tauxier",
+                "year": 1912,
+                "url": "https://archive.org/details/le-noir-du-soudan-pays-mossi-et-gourounsi-louis-tauxier-1912.",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lu le 11 octobre 2026 dans le texte de la numérisation d'Internet Archive, qui ne donne pas les pages ; passage du chapitre sur les Menkiéras, qui présente les Gourounsi de la résidence de Léo."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gourounsi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "les Mossi et les Mamprusi, selon les sources",
+        "periodLabel": "Employé par les voisins et l'administration coloniale",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gourounsi, écrit Grunshi, est un nom que donnent à ces peuples des étrangers comme les Mossi et les Mamprusi, selon A. W. Cardinall. Les Britanniques l'emploient surtout pour les Kasena, parce qu'un soldat d'un autre peuple a présenté le premier Kasena engagé comme un Grunshi.",
+            "sources": [
+              {
+                "title": "The Natives of the Northern Territories of the Gold Coast : their customs, religion and folklore",
+                "author": "A. W. Cardinall",
+                "year": 1920,
+                "url": "https://archive.org/details/nativesofnorther00carduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. viii",
+                "notes": "Londres, George Routledge & Sons ; lu le 11 octobre 2026 dans la numérisation d'Internet Archive. Préface : « Throughout I have taken the names employed by the people themselves to describe their tribe. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1912,
+              "to": 1912,
+              "label": "1912"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gourounsi est un nom général que les Mossi donnent à plusieurs peuples, dont les Kassouna, selon Louis Tauxier.",
+            "sources": [
+              {
+                "title": "Le Noir du Soudan : pays mossi et gourounsi",
+                "author": "Louis Tauxier",
+                "year": 1912,
+                "url": "https://archive.org/details/le-noir-du-soudan-pays-mossi-et-gourounsi-louis-tauxier-1912.",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Lu le 11 octobre 2026 dans le texte de la numérisation d'Internet Archive, qui ne donne pas les pages ; passage du chapitre sur les Menkiéras, qui présente les Gourounsi de la résidence de Léo."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

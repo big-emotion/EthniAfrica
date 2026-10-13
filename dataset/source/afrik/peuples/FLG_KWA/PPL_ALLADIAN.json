@@ -100,5 +100,178 @@
         "source_kind": "community"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Alladian désigne un peuple lagunaire du sud de la Côte d'Ivoire, établi autour de Jacqueville et de Petit-Bassam. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. D'autres noms existent : Jack-Jack, que lui donnaient les anciens navigateurs, et Kwakwa, un nom que ces navigateurs appliquaient à plusieurs peuples de la côte. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Alladian",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": "ald",
+        "namedBy": null,
+        "shortLine": "Le nom de ce peuple de la côte ivoirienne ; écrit Alaguian en 1904.",
+        "periodLabel": "Écrit Alaguian depuis 1904 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Alladjan, forme voisine d'Alladian, figure chez l'historien Kadjomou Ferdinand Ayemou parmi les peuples avec lesquels les Eotilé ont entretenu des relations. Il n'explique pas ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Abouré et Eotilé : deux peuples liés par l'histoire (XVIIe-début XXe siècles)",
+                "author": "Kadjomou Ferdinand Ayemou",
+                "year": 2021,
+                "url": "https://www.ziglobitha.org/wp-content/uploads/2021/11/01-Kadjomou-Ferdinand-AYEMOU-pp01-16.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Ziglôbitha, revue de l'université Peleforo Gon Coulibaly, numéro spécial 02, octobre 2021, p. 1-16 ; lu le 12 octobre 2026 dans le PDF de la revue. Le nom figure dans le résumé de l'article."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Alladian s'écrit Alaguian chez Maurice Delafosse, qui donne aussi Alagyà ou Aragyà. Il désigne le peuple de la bande de sable entre la mer et la lagune Ebrié, de Petit-Bassam jusqu'à Krafi, avec des colonies à Grand-Bassam, à Dabou et à Lahou. Sa langue est proche de l'avikam. Delafosse n'explique pas ce nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11-12",
+                "notes": "Paris, Ernest Leroux ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Alladian apparaît par écrit sous une forme proche, Alaguian, chez l'administrateur colonial Maurice Delafosse, qui parle aussi des Alagya de Jacqueville. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà sur cette côte avant elle.",
+            "formAsWritten": "Alaguian",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7 et p. 11",
+                "notes": "Paris, Ernest Leroux ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Jack-Jack",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les anciens navigateurs, selon Maurice Delafosse",
+        "shortLine": "Le nom que les anciens navigateurs donnaient aux Alagyà, selon Delafosse en 1904.",
+        "periodLabel": "Écrit depuis 1892",
+        "accounts": [
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Jack-Jack est, selon Maurice Delafosse, celui que les anciens navigateurs donnaient aux Alagyà, les Alladian. Il ne dit pas d'où vient ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 11",
+                "notes": "Paris, Ernest Leroux ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1892,
+              "to": 1892,
+              "label": "1892, récit du voyage de 1887-1889"
+            },
+            "statement": "Le nom Jack-Jack figure chez Louis-Gustave Binger, qui parle des « Jack-Jack qui vont à la pêche » et traversent les brisants de la barre de Grand-Bassam dans de toutes petites pirogues. Les sources ne disent pas s'il s'agit du même peuple que celui dont parle Delafosse en 1904. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "Jack-Jack",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Du Niger au golfe de Guinée par le pays de Kong et le Mossi, tome 2",
+                "author": "Louis-Gustave Binger",
+                "year": 1892,
+                "url": "https://www.gutenberg.org/ebooks/74721",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "tome 2, p. 311",
+                "notes": "Paris, Hachette, 1892, deux tomes ; récit du voyage de 1887-1889. Lu le 12 octobre 2026 dans la réédition numérique du Projet Gutenberg, qui conserve la pagination imprimée."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kwakwa",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les anciens navigateurs, selon Maurice Delafosse",
+        "shortLine": "Un nom que les anciens navigateurs donnaient à plusieurs peuples de la côte, dont les Alagya de Jacqueville.",
+        "periodLabel": "Écrit en 1904",
+        "accounts": [
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kwakwa est, selon Maurice Delafosse, celui que les anciens navigateurs donnaient à plusieurs peuples de la côte, notamment les Avikam de Lahou et les Alagya de Jacqueville. Il dit l'avoir déjà adopté, avant ce livre, pour désigner tout leur groupe de langues ; nous n'avons pas lu cet ouvrage antérieur. C'est la plus ancienne trace de ce nom que le projet connaît.",
+            "formAsWritten": "kwakwa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7, note 2",
+                "notes": "Paris, Ernest Leroux ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

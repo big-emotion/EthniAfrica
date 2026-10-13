@@ -152,5 +152,245 @@
         "notes": "Blog consacré au patrimoine culturel adioukrou, fondé sur des témoignages oraux nommés, sans bibliographie. Variantes citées : Adjukru, Adioukrou, Adyukru, Boubouri, Odjukru."
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Adioukrou désigne un peuple du sud de la Côte d'Ivoire, autour de Dabou, qui se nomme lui-même Odjoukrou, d'après le nom de son pays, Lodjoukrou. Un autre nom, Boubouri, lui a été donné par des Européens. Les sources ne s'accordent pas sur l'origine du nom Odjoukrou ; nous présentons plus bas les explications rapportées.",
+    "names": [
+      {
+        "nameText": "Odjoukrou",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "adj",
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne, tiré du nom de son pays, Lodjoukrou.",
+        "periodLabel": "Écrit Ogyukru dès 1904 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Odjoukrou vient du nom du pays, Lodjoukrou, dont il est synonyme : le mot désigne à la fois le pays, le peuple et sa culture, selon le linguiste Esso Lasm Constant. Son origine est discutée.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Onomastique des Odjoukrou : aspects toponymique et ethnonymique",
+                "author": "Esso Lasm Constant",
+                "year": 2021,
+                "url": "https://revues.acaref.net/wp-content/uploads/sites/3/2021/06/10ESSO-Lasm-Constant.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 177-178",
+                "notes": "Les Cahiers de l'ACAREF, revue de l'Académie africaine de recherches et d'études francophones, lu dans le PDF que la revue met en ligne en juin 2021, paginé p. 174-180 environ."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "Rapporté en 1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Odjoukrou viendrait, à travers Lodjoukrou, de la phrase « Lodj est guérie brusquement », tirée d'un récit de maladie, selon Lat Yedo d'Okpoyou et Abedi Aku de Bonn, dont Harris Memel-Fotê rapporte les récits.",
+            "hypothesisGroup": "origine du nom Odjoukrou",
+            "sources": [
+              {
+                "title": "Onomastique des Odjoukrou : aspects toponymique et ethnonymique",
+                "author": "Esso Lasm Constant",
+                "year": 2021,
+                "url": "https://revues.acaref.net/wp-content/uploads/sites/3/2021/06/10ESSO-Lasm-Constant.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 177",
+                "notes": "Les Cahiers de l'ACAREF, revue de l'Académie africaine de recherches et d'études francophones, lu dans le PDF que la revue met en ligne en juin 2021, paginé p. 174-180 environ. L'auteur résume Harris Memel-Fotê, Le Système politique de Lodjoukrou (1980), qui a recueilli ces récits auprès de personnes qui transmettent les traditions ; nous n'avons pas lu ce livre nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "Rapporté en 1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Odjoukrou viendrait de la phrase « la maladie t'a enténébré », selon Yoboué Yed Lasm de Lopou, dont Harris Memel-Fotê rapporte le récit.",
+            "hypothesisGroup": "origine du nom Odjoukrou",
+            "sources": [
+              {
+                "title": "Onomastique des Odjoukrou : aspects toponymique et ethnonymique",
+                "author": "Esso Lasm Constant",
+                "year": 2021,
+                "url": "https://revues.acaref.net/wp-content/uploads/sites/3/2021/06/10ESSO-Lasm-Constant.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 177",
+                "notes": "Les Cahiers de l'ACAREF, revue de l'Académie africaine de recherches et d'études francophones, lu dans le PDF que la revue met en ligne en juin 2021, paginé p. 174-180 environ. L'auteur résume Harris Memel-Fotê, Le Système politique de Lodjoukrou (1980), qui a recueilli ces récits auprès de personnes qui transmettent les traditions ; nous n'avons pas lu ce livre nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "Rapporté en 1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Odjoukrou viendrait de la phrase « tu n'es pas vite venu, la maladie m'a enténébré », selon Gongo Gnagne de Vieil-Aklodj, dont Harris Memel-Fotê rapporte le récit.",
+            "hypothesisGroup": "origine du nom Odjoukrou",
+            "sources": [
+              {
+                "title": "Onomastique des Odjoukrou : aspects toponymique et ethnonymique",
+                "author": "Esso Lasm Constant",
+                "year": 2021,
+                "url": "https://revues.acaref.net/wp-content/uploads/sites/3/2021/06/10ESSO-Lasm-Constant.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 177",
+                "notes": "Les Cahiers de l'ACAREF, revue de l'Académie africaine de recherches et d'études francophones, lu dans le PDF que la revue met en ligne en juin 2021, paginé p. 174-180 environ. L'auteur résume Harris Memel-Fotê, Le Système politique de Lodjoukrou (1980), qui a recueilli ces récits auprès de personnes qui transmettent les traditions ; nous n'avons pas lu ce livre nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1980,
+              "to": 1980,
+              "label": "Rapporté en 1980"
+            },
+            "era": "modern",
+            "statement": "Le nom Odjoukrou voudrait dire « qui n'accepte pas l'injustice », ou encore « qui croit se suffire », selon le pasteur Laurent Lasm, dans un mémoire sur les croyances et coutumes adjoukrou que cite Harris Memel-Fotê.",
+            "hypothesisGroup": "origine du nom Odjoukrou",
+            "sources": [
+              {
+                "title": "Onomastique des Odjoukrou : aspects toponymique et ethnonymique",
+                "author": "Esso Lasm Constant",
+                "year": 2021,
+                "url": "https://revues.acaref.net/wp-content/uploads/sites/3/2021/06/10ESSO-Lasm-Constant.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 177",
+                "notes": "Les Cahiers de l'ACAREF, revue de l'Académie africaine de recherches et d'études francophones, lu dans le PDF que la revue met en ligne en juin 2021, paginé p. 174-180 environ. L'auteur résume Harris Memel-Fotê, Le Système politique de Lodjoukrou (1980), qui a recueilli ces récits auprès de personnes qui transmettent les traditions ; nous n'avons pas lu ce livre nous-mêmes."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Odjoukrou apparaît sous une forme proche, Ogyukru, chez Maurice Delafosse en 1904, parmi les formes qu'il donne au nom de ce peuple. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Ogyukru",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 13",
+                "notes": "Paris, 1904, lu dans l'exemplaire numérisé d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Adioukrou",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre graphie du nom, écrite Adyoukrou dès 1904.",
+        "periodLabel": "Écrit dès 1904 ; en usage aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Adioukrou apparaît par écrit sous la forme Adyoukrou chez Maurice Delafosse en 1904 : il nomme ainsi le peuple qui vit entre la lagune Ébrié, l'Agnéby et le Bandama, autour de Dabou, Débrimou, Lopou et Toupa, et il appelle sa langue l'adyoukrou. Les sources que nous avons lues ne disent pas qui a fixé la graphie Adioukrou. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Adyoukrou",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 12-13",
+                "notes": "Paris, 1904, lu dans l'exemplaire numérisé d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Boubouri",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des Européens, selon Maurice Delafosse",
+        "shortLine": "Le nom d'une ancienne confédération, que des Européens donnaient à tout le peuple.",
+        "periodLabel": "Écrit dès 1904",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Boubouri désigne Bobor lok, la confédération de Boubouri, l'une des deux anciennes confédérations du pays avec celle de Debrimou, selon Esso Lasm Constant.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Onomastique des Odjoukrou : aspects toponymique et ethnonymique",
+                "author": "Esso Lasm Constant",
+                "year": 2021,
+                "url": "https://revues.acaref.net/wp-content/uploads/sites/3/2021/06/10ESSO-Lasm-Constant.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 177-178",
+                "notes": "Les Cahiers de l'ACAREF, revue de l'Académie africaine de recherches et d'études francophones, lu dans le PDF que la revue met en ligne en juin 2021, paginé p. 174-180 environ."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Boubouri est souvent donné à tout ce peuple par les Européens, d'après le nom de l'une de ses tribus, selon Maurice Delafosse en 1904. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Boubouri",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+                "author": "Maurice Delafosse",
+                "year": 1904,
+                "url": "https://archive.org/details/vocabulairescomp00delauoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 13",
+                "notes": "Paris, 1904, lu dans l'exemplaire numérisé d'Internet Archive."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

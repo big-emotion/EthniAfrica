@@ -82,5 +82,92 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Pohamba », « Ovambo », « Namibia », « surname », « personal name », « onomastics », « etymology », « clan », « transmission », « alliance », « caste », « homonym » et « obituary », les travaux de Saarelma-Maunumaa sur les noms ambo, ainsi que la page Forebears dédiée n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Pohamba est un nom de famille ovambo, en Namibie. Comme beaucoup de noms de famille ovambo, il vient d'un nom personnel. Les sources lues n'en donnent qu'un sens ; nous le présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Pohamba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel ovambo devenu nom de famille, en Namibie.",
+        "periodLabel": "Écrit en 1932 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Pohamba est un nom de famille ovambo, en Namibie. Chez les Ovambo, les noms de famille se sont formés surtout depuis les années 1950, à partir du nom du père, du grand-père ou d'un ancêtre, selon Minna Saarelma-Maunumaa. Les sources lues ne disent pas de quel ancêtre vient le nom des familles Pohamba.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Edhina Ekogidho — Names as Links: The Encounter between African and European Anthroponymic Systems among the Ambo People in Namibia",
+                "author": "Minna Saarelma-Maunumaa",
+                "year": 2003,
+                "url": "https://digital.unam.edu.na/bitstream/handle/11070.1/21230/Ekogidho_2003.pdf?isAllowed=y&sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 128-130 ; p. 147-150",
+                "notes": "Monographie de Minna Saarelma-Maunumaa, publiée par la Finnish Literature Society en 2003, lue dans le PDF en texte intégral déposé sur le dépôt de l'Université de Namibie, pagination imprimée. Pages 128-130 : chez les Ambo, le nom du père s'ajoutait au nom de l'enfant. Pages 147-150 : un système de noms de famille à l'européenne s'est installé peu à peu, surtout depuis les années 1950, à partir de ces noms de père, de grand-père ou d'un ancêtre plus ancien. Relu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "Rapporté en 1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Pohamba voudrait dire « chez le roi » : ce serait un nom donné à la naissance pour annoncer l'avenir de l'enfant, selon le missionnaire Karl Sckär, cité par Minna Saarelma-Maunumaa.",
+            "sources": [
+              {
+                "title": "Edhina Ekogidho — Names as Links: The Encounter between African and European Anthroponymic Systems among the Ambo People in Namibia",
+                "author": "Minna Saarelma-Maunumaa",
+                "year": 2003,
+                "url": "https://digital.unam.edu.na/bitstream/handle/11070.1/21230/Ekogidho_2003.pdf?isAllowed=y&sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 118",
+                "notes": "Monographie de Minna Saarelma-Maunumaa, publiée par la Finnish Literature Society en 2003, lue dans le PDF en texte intégral déposé sur le dépôt de l'Université de Namibie, pagination imprimée. Page 118 : selon le manuscrit du missionnaire Karl Sckär, Ovamboland, 1932, p. 59, conservé aux archives de la Mission évangélique unie à Wuppertal, les noms donnés lors de la cérémonie de naissance étaient souvent liés au moment du jour ou annonçaient l'avenir, par exemple Pohamba, « chez le roi ». Nous n'avons pas lu le manuscrit de Sckär lui-même. Relu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1932,
+              "to": 1932,
+              "label": "1932"
+            },
+            "era": "colonial",
+            "statement": "Le nom Pohamba figure dans un manuscrit du missionnaire Karl Sckär sur l'Ovamboland, parmi les noms donnés lors de la cérémonie de naissance, selon Minna Saarelma-Maunumaa. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Karl Sckär",
+                "role": "missionnaire, auteur du manuscrit"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Edhina Ekogidho — Names as Links: The Encounter between African and European Anthroponymic Systems among the Ambo People in Namibia",
+                "author": "Minna Saarelma-Maunumaa",
+                "year": 2003,
+                "url": "https://digital.unam.edu.na/bitstream/handle/11070.1/21230/Ekogidho_2003.pdf?isAllowed=y&sequence=1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 118",
+                "notes": "Monographie de Minna Saarelma-Maunumaa, publiée par la Finnish Literature Society en 2003, lue dans le PDF en texte intégral déposé sur le dépôt de l'Université de Namibie, pagination imprimée. Page 118 : selon le manuscrit du missionnaire Karl Sckär, Ovamboland, 1932, p. 59, conservé aux archives de la Mission évangélique unie à Wuppertal, les noms donnés lors de la cérémonie de naissance étaient souvent liés au moment du jour ou annonçaient l'avenir, par exemple Pohamba, « chez le roi ». Nous n'avons pas lu le manuscrit de Sckär lui-même. Relu le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
