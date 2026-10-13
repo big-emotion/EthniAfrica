@@ -100,5 +100,67 @@
         "tier": "referenced"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Arbore désigne un peuple du sud-ouest de l'Éthiopie et la langue qu'il parle. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Le nom est écrit dès 1897 par l'explorateur Arthur Donaldson Smith. Les sources que nous avons lues ne disent pas d'où il vient.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Arbore",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du peuple et de sa langue ; écrit dès 1897 par un explorateur américain. On ne sait pas d'où il vient.",
+        "periodLabel": "Écrit dès 1897 ; en usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Arbore désigne une langue d'Éthiopie, l'arbore, et le peuple qui la parle. La norme ISO 639-3 l'enregistre sous le code arv. On ne sait pas avec certitude d'où vient ce nom : les sources que nous avons lues n'en proposent pas d'explication.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "ISO 639-3, Arbore [arv]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/arv",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1897,
+              "to": 1897,
+              "label": "1897"
+            },
+            "era": "polity",
+            "statement": "Le nom Arbore apparaît par écrit en 1897 dans le récit de l'explorateur américain Arthur Donaldson Smith. Il y désigne une tribu « très riche et guerrière », voisine au nord-ouest d'un petit groupe de Watu Boran, près du lac Stefanie, dans un pays qu'il traverse en 1895. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "formAsWritten": "Arbore",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Through unknown African countries : the first expedition from Somaliland to Lake Lamu",
+                "author": "Arthur Donaldson Smith",
+                "year": 1897,
+                "url": "https://archive.org/details/throughunknownaf00smit",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 252",
+                "notes": "Londres et New York, Edward Arnold, 1897 ; lu le 13 octobre 2026 dans la numérisation d'Internet Archive. Le texte dit « the Arbore, a very rich and warlike tribe, of whom I shall speak later » (p. 252). Les dates du voyage sont de 1895."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

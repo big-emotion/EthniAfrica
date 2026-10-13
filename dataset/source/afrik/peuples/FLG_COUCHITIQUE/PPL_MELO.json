@@ -101,5 +101,123 @@
         "source_kind": "missionary_database"
       }
     ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Melo désigne un peuple d'Éthiopie et la langue qu'il parle. On ne sait pas comment ce peuple se nomme lui-même : aucune source que nous avons lue ne le dit. Le nom est écrit dès 1995 dans un rapport de linguistes. Une autre forme, Malo, figure dans le même rapport. Les sources que nous avons lues ne disent pas d'où viennent ces noms.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Melo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du peuple et de sa langue ; écrit dès 1995 dans un rapport de linguistes. On ne sait pas d'où il vient.",
+        "periodLabel": "Écrit dès 1995 ; en usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Melo désigne une langue d'Éthiopie, le melo, et le peuple qui la parle. La norme ISO 639-3 l'enregistre sous le code mfx. On ne sait pas avec certitude d'où vient ce nom : les sources que nous avons lues n'en proposent pas d'explication.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "ISO 639-3, Melo [mfx]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/mfx",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2002,
+              "to": 2002,
+              "label": "2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Melo désigne, dans un rapport de linguistes de SIL International publié en 2002, un groupe de langue de 58 039 personnes selon le recensement éthiopien de 1984, interrogé à Laha pour l'enquête de 1995.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sociolinguistic Survey Report of the Chara, Dime, Melo, and Nayi Languages of Ethiopia, Part I",
+                "author": "Aklilu Yilma et Ralph Siebert",
+                "year": 2002,
+                "url": "https://web.archive.org/web/2012/http://www.sil.org/silesr/2002/029/silesr2002-029.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4-5",
+                "notes": "Rapport électronique n° 2002-029 de SIL International ; lu le 13 octobre 2026 dans la copie de la Wayback Machine de 2012, car l'adresse d'origine ne répond plus. Pages imprimées en tête des feuillets."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1995,
+              "to": 1995,
+              "label": "1995"
+            },
+            "era": "modern",
+            "statement": "Le nom Melo apparaît par écrit en 1995 dans le titre d'une première version de ce rapport, Survey of Chara, Dime, Melo, and Nayi, selon la note qui ouvre la version de 2002. Nous n'avons pas lu la version de 1995. C'est la plus ancienne trace de ce nom que le projet connaît ; le peuple existait déjà avant elle.",
+            "formAsWritten": "Melo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Sociolinguistic Survey Report of the Chara, Dime, Melo, and Nayi Languages of Ethiopia, Part I",
+                "author": "Aklilu Yilma et Ralph Siebert",
+                "year": 2002,
+                "url": "https://web.archive.org/web/2012/http://www.sil.org/silesr/2002/029/silesr2002-029.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Rapport électronique n° 2002-029 de SIL International ; lu le 13 octobre 2026 dans la copie de la Wayback Machine de 2012, car l'adresse d'origine ne répond plus. Pages imprimées en tête des feuillets. La note donne : Survey of Little-known Languages of Ethiopia, Linguistic Report 25, mars 1995, Addis-Abeba, Institute of Ethiopian Studies et Summer Institute of Linguistics."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Malo",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre forme du nom Melo, écrite dans la légende de la carte d'un rapport de 2002 ; on ne sait pas pourquoi.",
+        "periodLabel": "Rapportée en 2002",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": 2002,
+              "to": 2002,
+              "label": "2002"
+            },
+            "era": "modern",
+            "statement": "Le nom Malo est écrit dans la légende de la carte du rapport de 2002 (« Chara, Dime, Malo, and Nayi in their geographical relations »), là où le texte du rapport écrit Melo. Le rapport ne dit pas pourquoi. On ne sait pas depuis quand ce nom est employé.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Sociolinguistic Survey Report of the Chara, Dime, Melo, and Nayi Languages of Ethiopia, Part I",
+                "author": "Aklilu Yilma et Ralph Siebert",
+                "year": 2002,
+                "url": "https://web.archive.org/web/2012/http://www.sil.org/silesr/2002/029/silesr2002-029.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 4",
+                "notes": "Rapport électronique n° 2002-029 de SIL International ; lu le 13 octobre 2026 dans la copie de la Wayback Machine de 2012, car l'adresse d'origine ne répond plus. Pages imprimées en tête des feuillets."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
