@@ -441,7 +441,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 621 -> 620 on 2026-10-11: three duplicate family-name fiches of wave 9 folded into their keepers; only Moussa cited a source of its own.
     // 620 -> 619 on 2026-10-12: three duplicate family-name fiches of wave 11 folded into their keepers; only Tesfay cited a source of its own.
     // 619 -> 620 on 2026-10-13: PAT_MAMBA now cites sources of its own (van Warmelo 1935, Patricks 2002), wave 15; it cited only the candidate queue before.
-    value: 620,
+    // 620 -> 622 on 2026-10-13: PAT_SOUMAH (Arcin 1907, Bamadaba) and PAT_ABAZA (a Wikipedia article) now cite sources of their own; both cited only the candidate queue before.
+    value: 622,
     method:
       "fiches dataset/source/afrik/patronymes/PAT_*.json portant un nameSystem et " +
       "au moins une source autre que la file d'attente des candidats — les fiches " +

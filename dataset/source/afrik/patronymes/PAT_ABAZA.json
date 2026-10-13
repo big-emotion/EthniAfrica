@@ -2,7 +2,7 @@
   "_meta": {
     "format": "AFRIK JSON v2",
     "entity": "patronyme",
-    "directives": "Fiche générée depuis la file d'attente des candidats (vague 1 du plan de couverture anthroponymique). Elle ne porte aucune recherche : ne pas étendre ses affirmations sans appliquer le protocole docs/runbooks/anthroponym-fiche-research.md."
+    "directives": "Fiche enrichie à partir de l'article de Wikipédia sur la famille Abaza, faute de source savante consultée. Ne pas étendre ses affirmations sans lire les ouvrages qu'il cite."
   },
   "id": "PAT_ABAZA",
   "nameMain": "Abaza",
@@ -13,7 +13,7 @@
       "attestations": [
         {
           "countryId": "EGY",
-          "sourceRefs": ["afrik-candidate-queue"]
+          "sourceRefs": ["wikipedia-en-abaza-family"]
         }
       ]
     }
@@ -23,14 +23,27 @@
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
-    "linguisticReconstructions": []
+    "linguisticReconstructions": [
+      {
+        "claim": "Selon l'article de Wikipédia sur la famille Abaza, le nom vient de l'ethnonyme Abaza, celui des Abazins du Caucase du Nord-Ouest, et fait partie des noms de lieu ou de peuple d'origine que portent des familles musulmanes. L'article rapporte que l'historienne Afaf Lutfi al-Sayyid-Marsot y voit plutôt l'hommage à « une grand-mère aimée » ou à son lieu de naissance.",
+        "claimStatus": "contested",
+        "sourceRefs": ["wikipedia-en-abaza-family"]
+      }
+    ],
+    "historicalSyntheses": [
+      {
+        "claim": "Selon l'article de Wikipédia, le nom vient d'une aïeule connue seulement sous le nom d'Abaza, d'origine abazine. Elle épouse le cheikh Muhammad al-Ayedi, chef de la famille al-Ayed, avant le règne de Muhammad Ali. Ses descendants se distinguent ensuite en « Awlad al-Aydeh » et « Awlad al-Abazyya ». L'article donne la région de Charqiya, dans le delta du Nil, comme base de la famille.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["wikipedia-en-abaza-family"]
+      }
+    ]
   },
   "peoples": [],
   "countries": [
     {
       "countryId": "EGY",
       "status": "attested",
-      "sourceRefs": ["afrik-candidate-queue"]
+      "sourceRefs": ["wikipedia-en-abaza-family"]
     }
   ],
   "alliances": [],
@@ -44,37 +57,125 @@
       "url": null,
       "tier": "unverified",
       "source_kind": "ai_generated",
-      "notes": "Ce nom figure à notre relevé de couverture : il a été retenu comme nom à documenter, mais aucune source dédiée n'a encore été consultée. La fiche existe donc pour signaler le nom, non pour ce qu'elle en affirme. Les vérifications à venir passeront par les registres électoraux, les instituts statistiques nationaux et les travaux d'onomastique du pays concerné."
+      "notes": "Ce nom figurait à notre relevé de couverture avant toute recherche. Cette entrée garde la trace de ce point de départ : les affirmations de la fiche reposent désormais sur les sources qui suivent."
+    },
+    {
+      "sourceKey": "wikipedia-en-abaza-family",
+      "title": "Abaza family",
+      "url": "https://en.wikipedia.org/wiki/Abaza_family",
+      "tier": "unverified",
+      "source_kind": "encyclopedia",
+      "notes": "Article de l'encyclopédie Wikipédia en anglais, lu le 13 octobre 2026. Cité faute d'une source savante accessible : l'article rapporte les thèses de l'historienne Afaf Lutfi al-Sayyid-Marsot (Egypt in the Reign of Muhammad Ali, 1984, p. 123), de Robert Springborg (Family, Power, and Politics in Egypt, 2016) et de David Mills (Dividing the Nile, 2014). Ces livres n'ont pas été consultés ici : les thèses sont donc rapportées comme l'article les présente."
     }
   ],
   "gaps": [
     {
-      "fieldPath": "origin",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "fieldPath": "origin.oralTraditions",
+      "reason": "Les sources consultées (l'article de Wikipédia sur la famille Abaza et les ouvrages qu'il cite) rapportent un récit d'origine familial, mais l'article n'indique ni qui le transmet ni comment il a été recueilli. Nous ne le classons donc pas comme tradition orale."
     },
     {
       "fieldPath": "alliances",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "L'article consulté mentionne l'union avec la famille al-Ayed, un mariage et non une parenté à plaisanterie. Aucune alliance de ce type avec un autre nom documenté ici n'a été trouvée."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "L'article décrit une grande famille aristocratique, aux titres de pacha et de bey, mais ne dit pas qu'une fonction sociale héréditaire s'attache au nom lui-même."
     },
     {
       "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "L'article cite des porteurs du nom, dont le poète et homme politique Aziz Abaza, mais le projet n'a pas encore de fiche personne pour eux. Aucun porteur vivant n'est enregistré."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
-      "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+      "reason": "Abaza est aussi le nom que se donnent les Abazins du Caucase, et il a donné son nom à l'Abazinie. Aucune fiche du projet ne décrit ce peuple, car il n'est pas africain : le lien se lit dans l'origine du nom."
     },
     {
       "fieldPath": "peoples",
-      "reason": "Nos fiches ne permettent pas encore de relier le nom Abaza à un peuple en Égypte. Nous n'avons pas encore consulté de source consacrée à ce nom."
+      "reason": "Le nom Abaza vient d'un peuple du Caucase du Nord-Ouest, pas d'un peuple d'Afrique. Nos fiches ne contiennent donc pas de peuple à relier en Égypte, et l'article consulté ne décrit pas la famille comme un peuple égyptien distinct."
+    },
+    {
+      "fieldPath": "transmissionMode",
+      "reason": "L'article consulté dit que le nom vient d'une aïeule et que la famille descend ensuite des frères Hassan et Boghdady, sans dire comment le nom se transmet. Ce point reste à documenter."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Abaza est un nom de famille de l'Égypte, tiré de l'ethnonyme des Abazins du Caucase. Son origine est discutée : une aïeule d'origine abazine, ou un lieu de naissance, ou un hommage. Les explications sont présentées plus bas, chacune attribuée.",
+    "names": [
+      {
+        "nameText": "Abaza",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille égyptien tiré de l'ethnonyme des Abazins du Caucase.",
+        "periodLabel": "Avant 1805 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant le nom"
+            },
+            "era": "polity",
+            "statement": "Abaza est le nom que se donnent les Abazins, un peuple du Caucase du Nord-Ouest, et il a donné son nom à l'Abazinie, selon l'article de Wikipédia sur la famille Abaza. Le nom existe donc avant la famille égyptienne.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Abaza family",
+                "author": "Wikipedia (anglais)",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Abaza_family",
+                "tier": "unverified",
+                "source_kind": "encyclopedia"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": 1805,
+              "label": "Avant le règne de Muhammad Ali"
+            },
+            "era": "polity",
+            "statement": "Le nom Abaza apparaît en Égypte avant le règne de Muhammad Ali (1805-1848), selon l'article de Wikipédia sur la famille Abaza : il serait le nom d'une aïeule d'origine abazine, qui épouse le chef de la famille al-Ayed. C'est la plus ancienne trace du nom en Égypte que le projet connaisse ; elle dit ce que l'article rapporte, pas depuis quand le nom est porté.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Abaza family",
+                "author": "Wikipedia (anglais)",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Abaza_family",
+                "tier": "unverified",
+                "source_kind": "encyclopedia"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Explications rapportées"
+            },
+            "era": "modern",
+            "aspect": "meaning",
+            "statement": "L'article de Wikipédia rapporte deux lectures du nom : un ethnonyme, comme d'autres noms musulmans qui disent un peuple d'origine, ou, selon l'historienne Afaf Lutfi al-Sayyid-Marsot, l'hommage à une grand-mère aimée ou à son lieu de naissance. Ni l'article ni nous ne tranchons.",
+            "sources": [
+              {
+                "title": "Abaza family",
+                "author": "Wikipedia (anglais)",
+                "year": 2026,
+                "url": "https://en.wikipedia.org/wiki/Abaza_family",
+                "tier": "unverified",
+                "source_kind": "encyclopedia"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "searchAnswer": {
+    "lead": "Abaza est le nom que se donnent les Abazins du Caucase. En Égypte, c'est aussi un nom de famille, qui viendrait d'une aïeule d'origine abazine.",
+    "followUp": "Comment un nom du Caucase est-il devenu un nom de famille égyptien ?"
+  }
 }
