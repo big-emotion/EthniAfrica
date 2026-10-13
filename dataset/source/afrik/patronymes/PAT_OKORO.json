@@ -96,5 +96,92 @@
       "fieldPath": "nameSystem",
       "reason": "Aucune source consultée ne fait de Okoro un nom de clan : les sources y voient un nom personnel qui veut dire « garçon » ou « jeune homme ». Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet jamais."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Okoro est un nom de personne igbo, au Nigeria, que l'on trouve aussi comme nom de famille. Ce n'est pas le nom d'un clan. Un dictionnaire de noms de famille le traduit « garçon, jeune homme ». Nous présentons cette lecture plus bas.",
+    "names": [
+      {
+        "nameText": "Okoro",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ibo",
+        "namedBy": null,
+        "shortLine": "Un nom de personne igbo du Nigeria, qui voudrait dire « garçon ».",
+        "periodLabel": "Écrit dès 1904 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Okoro est un nom de personne igbo, au Nigeria, que l'on trouve aussi comme nom de famille. On ne sait pas avec certitude comment il s'est formé : la seule lecture que nous avons trouvée est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Okoro Name Meaning and Okoro Family History at FamilySearch",
+                "author": "Patrick Hanks",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=okoro",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Entrée Okoro du Dictionary of American Family Names de Patrick Hanks (2003, 2006), hébergée par FamilySearch. Lu le 13 octobre 2026. Texte : « West African (Nigeria): from the Igbo personal name Okoro, meaning 'boy, young man'. Compare Okolo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2006,
+              "label": "Proposé en 2003, repris en 2006"
+            },
+            "era": "modern",
+            "statement": "Le nom Okoro voudrait dire « garçon, jeune homme », selon le Dictionary of American Family Names de Patrick Hanks, qui le rapproche du nom Okolo.",
+            "hypothesisGroup": "sens du nom Okoro",
+            "sources": [
+              {
+                "title": "Okoro Name Meaning and Okoro Family History at FamilySearch",
+                "author": "Patrick Hanks",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=okoro",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Entrée Okoro du Dictionary of American Family Names de Patrick Hanks (2003, 2006), hébergée par FamilySearch. Lu le 13 octobre 2026. Texte : « West African (Nigeria): from the Igbo personal name Okoro, meaning 'boy, young man'. Compare Okolo »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1904,
+              "to": 1904,
+              "label": "1904"
+            },
+            "era": "colonial",
+            "statement": "Le nom Okoro apparaît par écrit dans le nom de lieu Umu Okoro, que cite l'évêque James Johnson dans la revue de la Church Missionary Society. Il y voit le nom d'un homme important quand le village a été fondé, ou celui d'une personne célèbre dans l'histoire du pays igbo. C'est la plus ancienne trace de ce nom que le projet connaît ; le nom existait avant elle.",
+            "formAsWritten": "Okoro",
+            "birth": true,
+            "actors": [
+              {
+                "name": "James Johnson",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Some Tribes of Southern Nigeria, The Church Missionary Intelligencer",
+                "author": "James Johnson",
+                "year": 1904,
+                "url": "https://archive.org/details/1904TheChurchMissionaryIntelligencer",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 12",
+                "notes": "Revue de la Church Missionary Society, numéro de janvier 1904, article de l'évêque James Johnson ; volume numérisé sur archive.org, lu le 13 octobre 2026, page vue en image. Page 12 : « We may often hear some places similarly named, e.g., “Umu Okoro,” “Umu Ochi,” and “Umu Araka,” […] Koro, Ochi, and Araka being either the names of leading men when the towns or villages respectively named thus were established; or of persons famous for genius, strength, and military prowess […] in the history of the general Ibo Country ». Auteur de l'époque coloniale, cité pour ce qu'il rapporte."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

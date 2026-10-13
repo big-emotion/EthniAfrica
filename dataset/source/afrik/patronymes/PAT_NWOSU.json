@@ -103,5 +103,108 @@
       "fieldPath": "nameSystem",
       "reason": "Aucune source consultée ne fait de Nwosu un nom de clan : les sources y voient un nom personnel. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet jamais."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Nwosu est un nom de personne igbo, au Nigeria. Ce n'est pas le nom d'un clan. Un dictionnaire de noms de famille le traduit « enfant d'une personne vouée à un dieu ». Nous présentons plus bas cette lecture, avec ce qu'un missionnaire écrit en 1921 des osu, les personnes vouées à une divinité.",
+    "names": [
+      {
+        "nameText": "Nwosu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "ibo",
+        "namedBy": null,
+        "shortLine": "Un nom de personne igbo du Nigeria ; ce n'est pas un nom de clan.",
+        "periodLabel": "Écrit dès 2019 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Nwosu est un nom de personne igbo, au Nigeria, qui n'est pas celui d'un clan. On ne sait pas avec certitude comment il s'est formé : la seule lecture que nous avons trouvée est présentée plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Nwosu Name Meaning and Nwosu Family History at FamilySearch",
+                "author": "Patrick Hanks",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=nwosu",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Entrée Nwosu du Dictionary of American Family Names de Patrick Hanks (2003, 2006), hébergée par FamilySearch. Lu le 13 octobre 2026. Texte : « West African (Nigeria): from the Igbo personal name Nwosu, meaning 'child of a person dedicated to a god' ». Il cite aussi Chinua Achebe, Things Fall Apart : l'osu est « a person dedicated to a god, a thing set apart – a taboo forever and his children after him »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2003,
+              "to": 2006,
+              "label": "Proposé en 2003, repris en 2006"
+            },
+            "era": "modern",
+            "statement": "Le nom Nwosu viendrait du nom de personne igbo Nwosu, qui voudrait dire « enfant d'une personne vouée à un dieu », selon le Dictionary of American Family Names de Patrick Hanks. Le dictionnaire cite le romancier Chinua Achebe, pour qui une personne vouée à un dieu est mise à part pour toujours, et ses enfants avec elle.",
+            "hypothesisGroup": "sens du nom Nwosu",
+            "sources": [
+              {
+                "title": "Nwosu Name Meaning and Nwosu Family History at FamilySearch",
+                "author": "Patrick Hanks",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=nwosu",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Entrée Nwosu du Dictionary of American Family Names de Patrick Hanks (2003, 2006), hébergée par FamilySearch. Lu le 13 octobre 2026. Texte : « West African (Nigeria): from the Igbo personal name Nwosu, meaning 'child of a person dedicated to a god' ». Il cite aussi Chinua Achebe, Things Fall Apart : l'osu est « a person dedicated to a god, a thing set apart – a taboo forever and his children after him »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Nwosu apparaît par écrit dans l'article de Linda Chinelo Nkamigbo sur les noms de personne igbo, qui le range parmi des noms en train de disparaître sous l'influence du christianisme. C'est la plus ancienne trace de ce nom que le projet connaît ; le nom existait avant elle.",
+            "formAsWritten": "Nwosu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Sociolinguistics of Igbo Personal Names",
+                "author": "Linda Chinelo Nkamigbo",
+                "year": 2019,
+                "url": "https://www.nigerianjournalsonline.org/index.php/JOLLC/article/download/4155/3899/7523",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 174",
+                "notes": "Journal of Linguistics, Language and Culture, vol. 6, n° 1, 2019. Lu le 13 octobre 2026. Page 174, section « Name dropping » : « names such as Ohuabụnwa, Nweke, Nwaagwụ, Nwosu are fast disappearing », parce que les gens ajoutent chukwu à leur nom d'origine."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Décrit en 1921"
+            },
+            "era": "colonial",
+            "statement": "On parle alors des osu, des personnes vouées à l'alusi, la divinité d'un lieu, que le missionnaire George Thomas Basden voit vivre dans de petites cases sur un côté des marchés. Le dictionnaire de noms de famille rattache Nwosu à cette catégorie ; Basden ne parle pas du nom.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Among the Ibos of Nigeria",
+                "author": "George Thomas Basden",
+                "year": 1921,
+                "url": "https://archive.org/details/amongibosofniger00basd",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 196",
+                "notes": "Londres, Seeley, Service and Co., 1921 ; lu sur l'exemplaire numérisé d'archive.org le 13 octobre 2026. Missionnaire anglican ; auteur de l'époque coloniale, cité pour ce qu'il décrit. Page 196, à propos des marchés : « the tiny dwelling places of the Osu people, i.e. those who are devoted to the alusi or ju-ju of that particular place ». Basden ne parle pas du nom Nwosu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
