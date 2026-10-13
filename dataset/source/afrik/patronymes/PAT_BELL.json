@@ -93,5 +93,93 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web combinant « Bell », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », qui comprenait le terme « homonyme », et la lecture de « Économie, société et pouvoir chez les Duala anciens », n'ont pas établi de lignée homonyme d'origine distincte."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Bell est celui d'une des quatre grandes unités de l'ancienne société duala, au Cameroun. Il est écrit dès 1819 pour un chef de la côte, « King Bell ». Les sources lues n'expliquent pas d'où vient ce nom : on ne sait pas avec certitude s'il vient d'un mot duala ou d'un mot anglais.",
+    "names": [
+      {
+        "nameText": "Bell",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'une des quatre grandes unités duala, écrit « King Bell » dès 1819.",
+        "periodLabel": "Écrit dès 1819 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1975,
+              "to": 1975,
+              "label": "Décrit en 1975"
+            },
+            "statement": "Le nom Bell est celui de Bona jo, l'une des quatre grandes unités de l'ancienne société duala, avec Bonabéri, Akwa et Déido, selon Georges Balandier. Les Bell et les Akwa en sont les deux partenaires rivaux, et la filiation par le père y est dominante.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Économie, société et pouvoir chez les Duala anciens",
+                "author": "Georges Balandier",
+                "year": 1975,
+                "url": "https://www.persee.fr/doc/cea_0008-0055_1975_num_15_59_2576?pageId=T1_363",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 363",
+                "notes": "Cahiers d'Études africaines, vol. 15, no 59, 1975, p. 361-380. Page 363 lue le 13 octobre 2026 sur Persée : quatre unités principales nées de deux scissions du XIXe siècle portent le nom d'un ancêtre de référence, « Bona jo dit Bell », « Bona Bele dit Bonabèri », « Bona Kuo dit Akwa » et « Bona Ebelè dit Déido » ; les Bell et les Akwa sont les deux partenaires rivaux de l'histoire duala ; la filiation dominante est celle du père."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1884,
+              "to": 1884,
+              "label": "12 juillet 1884"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bell figure sous la forme King Bell parmi les signatures du traité du 12 juillet 1884, par lequel des chefs de la côte du Cameroun se placent sous la protection de l'Allemagne, selon le recueil de Knoll et Hiery.",
+            "formAsWritten": "King Bell",
+            "sources": [
+              {
+                "title": "Treaty of Protection with Chiefs of Cameroon Coast (1884), Black Central Europe",
+                "author": "Robbie Aitken (présentation) ; texte repris de Arthur J. Knoll et Hermann J. Hiery (dir.), The German Colonial Experience, 2010",
+                "year": 1884,
+                "url": "https://blackcentraleurope.com/sources/1850-1914/treaty-of-protection-with-chiefs-of-cameroon-coast-1884/",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 42-43 de l'édition Knoll et Hiery",
+                "notes": "Page consultée le 13 octobre 2026. Le traité, daté du 12 juillet 1884, est signé à Douala ; la liste des signatures porte « King Bell » et « King Aqua »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1819,
+              "to": 1819,
+              "label": "1819"
+            },
+            "era": "polity",
+            "statement": "Le nom Bell apparaît par écrit sous la forme King Bell dans les Notes on Africa de G. A. Robertson, publiées à Londres en 1819 : à Cameroons, un homme qui se dit lui-même King Bell a le pouvoir principal. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné. Les Duala vivaient déjà là avant lui.",
+            "formAsWritten": "King Bell",
+            "birth": true,
+            "actors": [
+              {
+                "name": "G. A. Robertson",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Notes on Africa, particularly those parts which are situated between Cape Verd and the River Congo",
+                "author": "G. A. Robertson",
+                "year": 1819,
+                "url": "https://archive.org/details/india.history.resource.90359",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 322",
+                "notes": "Londres, Sherwood, Neely et Jones, 1819. Lu le 13 octobre 2026 sur l'exemplaire numérisé de l'Asiatic Society of Bombay, déposé sur archive.org. Chapitre XVIII, page 322, à propos de Cameroons : « A native, who calls himself King Bell, has the leading power ». L'auteur ne dit pas d'où vient le mot Bell."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
