@@ -78,5 +78,86 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web et bibliographique combinant « Muhindo », « NANDE », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée n'ont pas établi de lignée homonyme d'origine distincte documentable ; la diffusion dans plusieurs pays et les ressemblances graphiques ne suffisent pas à créer un homonyme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Muhindo est, chez les Nande de l'est de la République démocratique du Congo, le nom d'un garçon né après une fille. Il se donne selon le rang de naissance et se distingue du nom du père. Les sources lues ne disent pas d'où vient le mot : on ne sait pas avec certitude. Elles disent seulement à quel moment on le donne.",
+    "names": [
+      {
+        "nameText": "Muhindo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom nande donné à un garçon né après une fille ; écrit dès 1999.",
+        "periodLabel": "Écrit dès 1999 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Muhindo apparaît par écrit dans la bibliographie du Historical Dictionary of the Democratic Republic of the Congo, qui cite un livre publié à Kinshasa en 1999, Après les Banyamulenge, voici les Banyabwisha aux Kivus, signé L. Kambere Muhindo. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un livre l'a porté en signature, pas depuis quand il est donné. Le dictionnaire ne dit rien du nom.",
+            "formAsWritten": "Muhindo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Historical Dictionary of the Democratic Republic of the Congo, Third Edition",
+                "author": "Emizet François Kisangani ; F. Scott Bobb",
+                "year": 2010,
+                "url": "https://shcas.shnu.edu.cn/_upload/article/files/dc/3d/863da74f4f1dbe922dc9702d9de9/a6f95c07-9183-4c78-a7c4-ec5ea565507a.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 581",
+                "notes": "Scarecrow Press, Lanham, 2010 (collection Historical Dictionaries of Africa, n° 112) ; texte intégral lu. Page 581, bibliographie : « Kambere Muhindo, L. Après les Banyamulenge, voici les Banyabwisha aux Kivus : La carte ethnique du Congo Belge en 1959. Kinshasa : Editions YIRA, 1999. » Nous n'avons pas lu le livre. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2019,
+              "to": 2019,
+              "label": "Décrit en 2019"
+            },
+            "era": "modern",
+            "statement": "Le nom Muhindo est donné à un garçon qui naît après une fille, et le nom Kahindo à une fille qui naît après un garçon, selon Muyisa Mumbere Kapitula, scolastique des missionnaires comboniens, dans un texte sur la culture nande. Il écrit que les Nande portent en général trois noms : un nom chrétien ou lié à la divinité, un nom qui dit le rang de naissance, et le nom de famille, qui est celui du père.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Celebrating the Gift of Interculturality: The Nande Culture from the Democratic Republic of Congo",
+                "author": "Muyisa Mumbere Kapitula",
+                "year": 2019,
+                "url": "https://combonischolasticate.wordpress.com/2019/04/28/celebrating-the-gift-of-interculturality-the-nande-culture-from-the-democratic-republic-of-congo/",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Billet du blog du scolasticat comboni, 28 avril 2019, signé « Scholastic Muyisa Mumbere Kapitula MCCJ » ; texte lu en entier. Il y écrit : « When a boy is born after a girl, he is called Muhindo ; and when a girl is born after a boy, she is called Kahindo » et « Yira or Nande people have three names: the Christian name or a name linked to the divinity [...], the order that you follow as child after birth, and the name of the family (father's name). » Source communautaire, sans appareil critique. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Décrit en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Muhindo se donne aussi chez les Bakonzo de l'ouest de l'Ouganda : selon un homme cité par The Observer, le premier garçon qui suit une fille devient Muhindo, comme la première fille qui suit un garçon devient Kahindo ; il faut qu'il y ait eu un changement de sexe dans la naissance. L'article ne dit pas si ce peuple est le même que celui des Nande du Congo.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Why every Mukonzo family seems to have a Baluku, Bwambale or Kule",
+                "author": "Frank Kisakye",
+                "year": 2022,
+                "url": "https://observer.ug/lifestyle/72517-why-every-mukonzo-family-seems-to-have-a-baluku-bwambale-or-kule",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "The Observer (Kampala), 21 janvier 2022, article lu en entier. Il cite Augustine Baluku Sibendire : « for one to be Muhindo, Kahindo or Mbindule, there has to have been change in gender » ; « The first boy following a girl or the first girl following a boy becomes Muhindo ». L'article parle des Bakonzo d'Ouganda, pas des Nande du Congo. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

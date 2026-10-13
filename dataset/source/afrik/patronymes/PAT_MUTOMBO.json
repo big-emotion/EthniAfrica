@@ -84,5 +84,88 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web et bibliographique combinant « Mutombo », « Luba », « la RDC », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la source dédiée « Anthroponyms We Live By: An Ecolinguistic Approach to Names in Ciluba » et la page Forebears propre au nom, consultées directement, n’a pas établi de lignée homonyme d’origine distincte documentable ; la diffusion dans plusieurs pays ne suffit pas à créer un homonyme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mutombo est, en ciluba, un nom d'homme qui va avec le nom de femme Mutoba ; l'article qui le dit ne donne pas son sens. Il est aussi porté comme nom de famille en République démocratique du Congo. Une trace plus ancienne, écrite en 1913, emploie le mot comme titre d'un métier ; les sources ne disent pas s'il s'agit du même nom.",
+    "names": [
+      {
+        "nameText": "Mutombo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lua",
+        "namedBy": null,
+        "shortLine": "Un nom d'homme en ciluba, pendant masculin de Mutoba ; on ne sait pas ce qu'il veut dire.",
+        "periodLabel": "Écrit dès 1913, comme titre ; comme nom, décrit en 2021",
+        "accounts": [
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le mot Mutombo figure chez le père Colle dans « Bwana Mutombo », le titre du sculpteur qui fabrique les objets rituels, ou mikisi, de façon quasi officielle chez les Baluba. Colle l'emploie comme titre d'un métier, pas comme nom de personne ; les sources ne disent pas s'il s'agit du même nom que le nom de famille d'aujourd'hui.",
+            "formAsWritten": "Bwana Mutombo",
+            "sources": [
+              {
+                "title": "Les Baluba (Congo belge), tome II",
+                "author": "R. P. Colle",
+                "year": 1913,
+                "url": "https://archive.org/details/lesbalubacongob02coll",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 456",
+                "notes": "Collection de monographies ethnographiques publiée par Cyr. van Overbergh, Bruxelles, Albert Dewit et Institut international de bibliographie, 1913 ; l'auteur est un missionnaire des Pères Blancs et décrit de l'extérieur le pays des Baluba, limité au nord par la Lukuga et au sud et à l'ouest par le Luvwa et le Lualaba (tome I, p. 3). Lu dans la numérisation d'archive.org. Page 456 : « [...] le fabricant attitré, quasi officiel, c'est le Bwana Mutombo. Pour devenir Bwana Mutombo, il faut s'exercer d'abord à sculpter le bois [...] ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Décrit en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Mutombo apparaît par écrit comme nom de personne en ciluba dans l'article de Nshindi-Germain Mulamba : dans la société luba traditionnelle, certains noms sont propres à un sexe, et Mutombo, nom d'homme, a pour pendant Mutoba, nom de femme. C'est la plus ancienne trace de ce nom comme nom de personne que le projet connaît ; elle dit quand un linguiste l'a décrit, pas depuis quand il est porté.",
+            "formAsWritten": "Mutombo",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Anthroponyms We Live By: An Ecolinguistic Approach to Names in Ciluba",
+                "author": "Nshindi-Germain Mulamba",
+                "year": 2021,
+                "url": "https://www.revue-akofena.com/wp-content/uploads/2021/09/25-retourT06-61-Nshindi-Germain-MULAMBA-pp.341-358.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 346",
+                "notes": "Akofena, numéro spécial n° 6, vol. 2, juin 2021, p. 341-358 ; PDF intégral lu. Page 346 : « some names are gender specific in the traditional Luba society. Hence, the masculine-feminine pairs like Mulamba/Mulanga, Nshindi/Nshimba, Kabeya/Kabedi, Mutombo/Mutoba etc. » L'article ne donne pas le sens de Mutombo. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Décrit en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Mutombo est porté aujourd'hui comme nom de famille, ce qui brouille la distinction entre hommes et femmes : selon Nshindi-Germain Mulamba, les parents qui adoptent le système européen du nom de famille, où chacun porte le nom du père ou du mari, ne respectent plus la règle qui réserve certains noms à un sexe.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Anthroponyms We Live By: An Ecolinguistic Approach to Names in Ciluba",
+                "author": "Nshindi-Germain Mulamba",
+                "year": 2021,
+                "url": "https://www.revue-akofena.com/wp-content/uploads/2021/09/25-retourT06-61-Nshindi-Germain-MULAMBA-pp.341-358.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 346",
+                "notes": "Akofena, numéro spécial n° 6, vol. 2, juin 2021, p. 341-358 ; PDF intégral lu. Page 346 : « Parents who have adopted the European 'family name' system in which every member is named after the father or the husband, violate the convention and blur gender specification. » Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

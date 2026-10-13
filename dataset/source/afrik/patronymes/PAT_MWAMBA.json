@@ -82,5 +82,132 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Mwamba », « Luba », « la RDC », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a établi aucune règle propre à Mwamba permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mwamba est porté en République démocratique du Congo ; la fiche le rattache, sans certitude, aux Luba. Chez les Baluba que décrit le père Colle, entre la Lukuga et le Lualaba, il est en 1913 le nom d'un génie, celui de l'arc-en-ciel, que l'on donne à des enfants. Les sources lues proposent deux explications de son origine ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Mwamba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom luba, celui d'un génie de l'arc-en-ciel donné aux enfants, écrit dès 1913.",
+        "periodLabel": "Écrit dès 1913 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mwamba apparaît par écrit dans la monographie du père Colle sur les Baluba, publiée en 1913, dans une liste de noms que l'on donne aux enfants à la naissance : « Mwamba ou bien Kongolo ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un missionnaire l'a écrit, pas depuis quand des familles le portent. Le peuple luba existait déjà avant ce texte.",
+            "formAsWritten": "Mwamba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les Baluba (Congo belge), tome I",
+                "author": "R. P. Colle",
+                "year": 1913,
+                "url": "https://archive.org/details/lesbalubacongobe01coll",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 257",
+                "notes": "Collection de monographies ethnographiques publiée par Cyr. van Overbergh, Bruxelles, Albert Dewit et Institut international de bibliographie, 1913 ; l'auteur est un missionnaire des Pères Blancs et décrit de l'extérieur le pays des Baluba, limité au nord par la Lukuga et au sud et à l'ouest par le Luvwa et le Lualaba (tome I, p. 3). Lu dans la numérisation d'archive.org. Page 257 : « Voici une série fort incomplète : Nkulu, Mwilambwe, Ngoy, Kahya et Kyungu (jumeaux), Mwamba ou bien Kongolo, Kibwe [...] ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mwamba est, avec Ngoy, Nkulu et Kabila, l'un des noms les plus portés chez les Baluba que décrit le père Colle, qui y voit les noms des génies les plus puissants.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Les Baluba (Congo belge), tome I",
+                "author": "R. P. Colle",
+                "year": 1913,
+                "url": "https://archive.org/details/lesbalubacongobe01coll",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 258",
+                "notes": "Collection de monographies ethnographiques publiée par Cyr. van Overbergh, Bruxelles, Albert Dewit et Institut international de bibliographie, 1913 ; l'auteur est un missionnaire des Pères Blancs et décrit de l'extérieur le pays des Baluba, limité au nord par la Lukuga et au sud et à l'ouest par le Luvwa et le Lualaba (tome I, p. 3). Lu dans la numérisation d'archive.org. Page 258 : « Quelques-uns prédominent [...]. Ainsi en est-il de : Ngoy, Mwamba, Nkulu, Kabila, c'est-à-dire, en somme, des principaux et plus puissants génies. » Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mwamba est aussi celui du génie de l'arc-en-ciel, que les Baluba appellent Mwamba Nkongolo. Selon le père Colle, ils voient dans l'arc-en-ciel un double serpent dont la traînée lumineuse tue tous ceux qu'elle touche, sauf les personnes nommées Mwamba et Nkongolo.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les Baluba (Congo belge), tome II",
+                "author": "R. P. Colle",
+                "year": 1913,
+                "url": "https://archive.org/details/lesbalubacongob02coll",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 462-463",
+                "notes": "Collection de monographies ethnographiques publiée par Cyr. van Overbergh, Bruxelles, Albert Dewit et Institut international de bibliographie, 1913 ; l'auteur est un missionnaire des Pères Blancs et décrit de l'extérieur le pays des Baluba, limité au nord par la Lukuga et au sud et à l'ouest par le Luvwa et le Lualaba (tome I, p. 3). Lu dans la numérisation d'archive.org. Pages 462-463, rubrique sur le serpent mamba : « L'arc-en-ciel s'appelle Mwamba Nkongolo. » ; l'arc-en-ciel tue « tous ceux qu'il touche, sauf les individus nommés Mwamba et Nkongolo ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "Proposée en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mwamba viendrait d'un génie qui impose son nom à l'enfant : selon le père Colle, les génies cherchent à être honorés et gagnent des protégés en imposant leur nom, parfois par l'intermédiaire de morts connus des parents du nouveau-né.",
+            "hypothesisGroup": "origine du nom Mwamba",
+            "sources": [
+              {
+                "title": "Les Baluba (Congo belge), tome I",
+                "author": "R. P. Colle",
+                "year": 1913,
+                "url": "https://archive.org/details/lesbalubacongobe01coll",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 256-258",
+                "notes": "Collection de monographies ethnographiques publiée par Cyr. van Overbergh, Bruxelles, Albert Dewit et Institut international de bibliographie, 1913 ; l'auteur est un missionnaire des Pères Blancs et décrit de l'extérieur le pays des Baluba, limité au nord par la Lukuga et au sud et à l'ouest par le Luvwa et le Lualaba (tome I, p. 3). Lu dans la numérisation d'archive.org. Pages 256 à 258 : « Les génies cherchent à être honorés par les hommes. Le meilleur moyen pour eux est d'en faire des clients, des protégés. Ils obtiennent ce résultat en imposant leur nom. » La liste des noms donnés aux enfants est dite faite de noms de génies (« le nombre restreint de noms de génies attribués aux humains »). Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "Proposée en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mwamba serait lié à mamba, le nom d'un serpent : le père Colle se demande s'il est téméraire de voir dans le serpent mamba l'habitat préféré de l'esprit de l'arc-en-ciel, et suggère que Mwamba peut être devenu maamba par un changement de préfixe, puis Mamba. Il présente cela comme une question à étudier.",
+            "hypothesisGroup": "origine du nom Mwamba",
+            "sources": [
+              {
+                "title": "Les Baluba (Congo belge), tome II",
+                "author": "R. P. Colle",
+                "year": 1913,
+                "url": "https://archive.org/details/lesbalubacongob02coll",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 462-463",
+                "notes": "Collection de monographies ethnographiques publiée par Cyr. van Overbergh, Bruxelles, Albert Dewit et Institut international de bibliographie, 1913 ; l'auteur est un missionnaire des Pères Blancs et décrit de l'extérieur le pays des Baluba, limité au nord par la Lukuga et au sud et à l'ouest par le Luvwa et le Lualaba (tome I, p. 3). Lu dans la numérisation d'archive.org. Page 462 : « Mwamba peut être devenu maamba par la mutation du préfixe. [...] Et l'on aurait Mamba par la contraction de aa en a. » Page 463 : « Je signale ces faits aux futurs observateurs, afin d'en dégager l'éventuelle signification totémique. » Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
