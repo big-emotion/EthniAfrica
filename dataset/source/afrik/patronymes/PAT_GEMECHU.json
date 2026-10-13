@@ -82,5 +82,117 @@
       "fieldPath": "homonyms",
       "reason": "La forme Gemechu et ses graphies proches ont été recherchées dans les études onomastiques ; aucun homonyme distinct et documenté n'a été trouvé."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Gemechu est un nom personnel éthiopien. Il sert de second ou de troisième nom aux descendants d'un homme qui le porte, sans devenir un nom de famille. Il apparaît par écrit en 2017, dans le nom d'un auteur d'une étude sur les noms oromo. On ne sait pas avec certitude d'où il vient : nous présentons plus bas la lecture que nous en faisons d'après deux dictionnaires.",
+    "names": [
+      {
+        "nameText": "Gemechu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel éthiopien ; on ne sait pas avec certitude d'où il vient.",
+        "periodLabel": "Écrit dès 2017 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1996,
+              "to": 2017,
+              "label": "Décrit en 1996 et en 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Gemechu est un nom personnel éthiopien. Selon une étude de 2017 sur les noms oromo, le deuxième nom d'une personne est celui de son père et le troisième, en général, celui de son grand-père paternel : un tel nom ne se transmet donc pas comme un nom de famille.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "An Investigation into the Patterns and Mechanisms of Naming in Afan Oromo: Focus on Personal Naming",
+                "author": "Ayele Gizaw Gemechu et Wondimu Tegegne",
+                "year": 2017,
+                "url": "https://www.iiste.org/Journals/index.php/RHSS/article/download/36265/37261",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Research on Humanities and Social Sciences 7(5), 2017. Lu le 13 octobre 2026 dans le PDF de la revue. Page 5 : « Their second name is the main name of their father. A third name is usually the name of their paternal grandfather. »"
+              },
+              {
+                "title": "Names of Persons: National Usages for Entry in Catalogues",
+                "author": "IFLA Universal Bibliographic Control and International MARC Programme",
+                "year": 1996,
+                "url": "https://www.ifla.org/files/assets/cataloguing/pubs/names-of-persons_1996.pdf",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 64-65",
+                "notes": "Quatrième édition, Munich, K. G. Saur, 1996, lue dans le PDF de l'IFLA le 13 octobre 2026. La notice Éthiopie, p. 64-65, fournie par la bibliothèque de l'université d'Addis-Abeba et approuvée par la Bibliothèque et les Archives nationales en octobre 1994, compose le nom d'un nom personnel, suivi du nom personnel du père, parfois de celui du grand-père. Elle note que le Code civil de 1960 prescrit un nom de famille, usage qui ne s'est pas encore répandu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1842,
+              "to": 2004,
+              "label": "Lecture d'après des dictionnaires de 1842 et de 2004"
+            },
+            "statement": "Le nom Gemechu se rattacherait au mot oromo gammachuu, « bonheur, joie », que Krapf note gamatshu en 1842 et qu'un dictionnaire de 2004 donne avec ce sens. C'est la lecture que nous faisons à partir de ces dictionnaires, qui donnent ce mot sans parler du nom ; une étude de 2017 liste Gammachuu parmi les noms oromo d'homme, glosé « Happy ».",
+            "hypothesisGroup": "origine du nom Gemechu",
+            "sources": [
+              {
+                "title": "Vocabulary of the Galla language",
+                "author": "Johann Ludwig Krapf",
+                "year": 1842,
+                "url": "https://archive.org/details/vocabularyofgall00krapiala",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 19",
+                "notes": "Londres, Church Missionary Society, 1842, vocabulaire anglais-galla (galla est l'ancien nom de la langue des Oromo). Lu le 13 octobre 2026 sur l'exemplaire numérisé d'archive.org. Page 19 : « Joy, s. gamatshu »."
+              },
+              {
+                "title": "Galmee Afaan Oromoo fi Afaan Ingilizii Barsiisuu = Comprehensive Oromo-English Dictionary (COED)",
+                "author": "Tilahun Gamta",
+                "year": 2004,
+                "url": "https://archive.org/details/oromoo-coed",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 362",
+                "notes": "Dictionnaire oromo-anglais, 2004. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'archive.org. Page 362, entrée gammachuu : « happiness or joy » ; p. 252, un exemple emploie le nom comme prénom : « Gammachuu dhaa kenne », « He gave it to Gammachuu »."
+              },
+              {
+                "title": "An Investigation into the Patterns and Mechanisms of Naming in Afan Oromo: Focus on Personal Naming",
+                "author": "Ayele Gizaw Gemechu et Wondimu Tegegne",
+                "year": 2017,
+                "url": "https://www.iiste.org/Journals/index.php/RHSS/article/download/36265/37261",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Research on Humanities and Social Sciences 7(5), 2017. Lu le 13 octobre 2026 dans le PDF de la revue. Page 5, tableau « Afan Oromo Names before 1885 » : « Gammachuu », nom masculin, glosé « Happy »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Gemechu apparaît par écrit dans le nom d'Ayele Gizaw Gemechu, coauteur d'une étude sur les noms oromo publiée en 2017. Selon la règle que cette étude décrit, ce troisième nom est en général celui du grand-père paternel. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "Ayele Gizaw Gemechu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "An Investigation into the Patterns and Mechanisms of Naming in Afan Oromo: Focus on Personal Naming",
+                "author": "Ayele Gizaw Gemechu et Wondimu Tegegne",
+                "year": 2017,
+                "url": "https://www.iiste.org/Journals/index.php/RHSS/article/download/36265/37261",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Research on Humanities and Social Sciences 7(5), 2017. Lu le 13 octobre 2026 dans le PDF de la revue. Page 1 : l'étude est signée « Ayele Gizaw Gemechu » et « Wondimu Tegegne », de l'université de Wolayita Soddo."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

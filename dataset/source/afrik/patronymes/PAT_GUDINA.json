@@ -20,7 +20,10 @@
     {
       "spelling": "Gudinaa",
       "attestations": [
-        { "countryId": "ETH", "sourceRefs": ["gudina-gerba-2014"] }
+        {
+          "countryId": "ETH",
+          "sourceRefs": ["gudina-gerba-2014"]
+        }
       ]
     }
   ],
@@ -98,5 +101,103 @@
       "fieldPath": "homonyms",
       "reason": "Les sources consultées ne permettent pas encore de présenter un autre nom écrit comme Gudina, mais d'origine différente."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Gudina est un nom personnel masculin oromo. Il sert de second nom aux enfants d'un homme qui le porte, sans devenir un nom de famille. On ne sait pas avec certitude depuis quand il est écrit : le projet n'en connaît pas encore de trace ancienne. Nous présentons plus bas l'explication de son sens que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Gudina",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel masculin oromo, porté en second par les enfants d'un Gudina.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1996,
+              "to": 2024,
+              "label": "Décrit en 1996 et en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Gudina est un nom personnel masculin oromo, selon Behind the Name. En Éthiopie, un nom personnel se place après celui d'une personne pour désigner le père, sans devenir un nom de famille hérité, selon le guide de catalogage de l'IFLA.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Gudina",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/gudina",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice du site Behind the Name, lue le 13 octobre 2026. Elle classe Gudina comme nom masculin oromo, mis à jour en avril 2024, et donne la glose « growth, advancement », sans référence bibliographique affichée."
+              },
+              {
+                "title": "Names of Persons: National Usages for Entry in Catalogues",
+                "author": "IFLA Universal Bibliographic Control and International MARC Programme",
+                "year": 1996,
+                "url": "https://www.ifla.org/files/assets/cataloguing/pubs/names-of-persons_1996.pdf",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 64-65",
+                "notes": "Quatrième édition, Munich, K. G. Saur, 1996, lue dans le PDF de l'IFLA le 13 octobre 2026. La notice Éthiopie, p. 64-65, fournie par la bibliothèque de l'université d'Addis-Abeba et approuvée par la Bibliothèque et les Archives nationales en octobre 1994, compose le nom d'un nom personnel, suivi du nom personnel du père, parfois de celui du grand-père. Elle note que le Code civil de 1960 prescrit un nom de famille, usage qui ne s'est pas encore répandu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Proposé en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Gudina voudrait dire « croissance, progrès » en oromo, selon Behind the Name. Le mot oromo guddina, « croissance ; grandeur, éducation », figure dans un dictionnaire de 2004, et Krapf note gudina, « grandeur », dès 1842 ; une étude de 2017 donne « croissance » pour le nom Guddataa.",
+            "hypothesisGroup": "origine du nom Gudina",
+            "sources": [
+              {
+                "title": "Meaning, origin and history of the name Gudina",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/gudina",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice du site Behind the Name, lue le 13 octobre 2026. Elle classe Gudina comme nom masculin oromo, mis à jour en avril 2024, et donne la glose « growth, advancement », sans référence bibliographique affichée."
+              },
+              {
+                "title": "Galmee Afaan Oromoo fi Afaan Ingilizii Barsiisuu = Comprehensive Oromo-English Dictionary (COED)",
+                "author": "Tilahun Gamta",
+                "year": 2004,
+                "url": "https://archive.org/details/oromoo-coed",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 402",
+                "notes": "Dictionnaire oromo-anglais, 2004. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'archive.org. Page 402, entrée guddina : « growth ; largeness, upbringing or respectability »."
+              },
+              {
+                "title": "Vocabulary of the Galla language",
+                "author": "Johann Ludwig Krapf",
+                "year": 1842,
+                "url": "https://archive.org/details/vocabularyofgall00krapiala",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 16",
+                "notes": "Londres, Church Missionary Society, 1842, vocabulaire anglais-galla (galla est l'ancien nom de la langue des Oromo). Lu le 13 octobre 2026 sur l'exemplaire numérisé d'archive.org. Page 16 : « Greatness, s. gudina »."
+              },
+              {
+                "title": "An Investigation into the Patterns and Mechanisms of Naming in Afan Oromo: Focus on Personal Naming",
+                "author": "Ayele Gizaw Gemechu et Wondimu Tegegne",
+                "year": 2017,
+                "url": "https://www.iiste.org/Journals/index.php/RHSS/article/download/36265/37261",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 5",
+                "notes": "Research on Humanities and Social Sciences 7(5), 2017. Lu le 13 octobre 2026 dans le PDF de la revue. Page 5 : parmi les noms oromo qui ont un sens, « Guddataa » (homme) et « Guddattuu » (femme) sont glosés « Growth »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

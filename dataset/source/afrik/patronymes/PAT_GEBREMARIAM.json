@@ -105,5 +105,160 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches exactes « Gebremariam homonym surname », « Gebremariam homonyme patronyme » et les variantes graphiques de la fiche n'ont pas établi deux origines distinctes et documentées pour la même forme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Gebremariam est un nom personnel éthiopien, que l'on écrit aussi en deux mots, Gebre Mariam. Il sert de second nom aux enfants d'un homme qui le porte, sans devenir un nom de famille. Une forme proche, Guebra Mariam, apparaît par écrit en 1790. Nous présentons plus bas l'explication de son sens que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Gebremariam",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel chrétien d'Éthiopie, porté en second par les enfants d'un Gebremariam.",
+        "periodLabel": "Écrit dès 1790 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1996,
+              "to": 2022,
+              "label": "Décrit en 1996 et en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Gebremariam est un nom personnel éthiopien composé de deux mots, que le guide de catalogage de l'IFLA dit pouvoir s'écrire en un seul mot. Placé après le nom d'une personne, c'est celui de son père ; il ne devient pas un nom de famille transmis aux petits-enfants, les Éthiopiens n'ayant pas de nom de famille héréditaire, selon le Dictionary of American Family Names.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Names of Persons: National Usages for Entry in Catalogues",
+                "author": "IFLA Universal Bibliographic Control and International MARC Programme",
+                "year": 1996,
+                "url": "https://www.ifla.org/files/assets/cataloguing/pubs/names-of-persons_1996.pdf",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 64-65",
+                "notes": "Quatrième édition, Munich, K. G. Saur, 1996, lue dans le PDF de l'IFLA le 13 octobre 2026. La notice Éthiopie, p. 64-65, fournie par la bibliothèque de l'université d'Addis-Abeba et approuvée par la Bibliothèque et les Archives nationales en octobre 1994, compose le nom d'un nom personnel, suivi du nom personnel du père, parfois de celui du grand-père. Elle note que le Code civil de 1960 prescrit un nom de famille, usage qui ne s'est pas encore répandu. Elle précise, p. 64, que le nom personnel composé peut s'écrire en un seul mot, comme Tesfa Mikael ou Tesfamikael, et cite Wolde Mariam parmi les exemples."
+              },
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Gebremariam",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/gebremariam?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 13 octobre 2026 dans la traduction française que le site affiche. La notice dit : nom éthiopien, également écrit Gebre Mariam, du nom personnel masculin Gebre Mariam, de sens religieux chrétien « serviteur de Marie » (voir Gebre et Mariam). Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Gebremariam voudrait dire « serviteur de Marie », selon le Dictionary of American Family Names, qui y voit un sens religieux chrétien. Son premier mot rejoint le guèze gabr, « esclave, serviteur », que donne le dictionnaire de Wolf Leslau.",
+            "hypothesisGroup": "origine du nom Gebremariam",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Gebremariam",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/gebremariam?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 13 octobre 2026 dans la traduction française que le site affiche. La notice dit : nom éthiopien, également écrit Gebre Mariam, du nom personnel masculin Gebre Mariam, de sens religieux chrétien « serviteur de Marie » (voir Gebre et Mariam). Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              },
+              {
+                "title": "Comparative Dictionary of Geʿez (Classical Ethiopic)",
+                "author": "Wolf Leslau",
+                "year": 1987,
+                "url": "https://archive.org/details/leslau-comparative-dictionary-of-geez-1987",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 178",
+                "notes": "Wiesbaden, Otto Harrassowitz, 1987. Lu le 13 octobre 2026 dans une copie non officielle déposée sur Internet Archive par un particulier. Page 178, entrée gabra : gabr, « slave, servant, bondsman, vassal »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1790,
+              "to": 1790,
+              "label": "1790"
+            },
+            "era": "polity",
+            "statement": "Le nom Gebremariam apparaît par écrit sous une forme proche, Guebra Mariam, dans le récit de voyage de James Bruce : c'est le baharnagach, un gouverneur de province, que le roi Socinios charge de marcher contre la reine Fatima. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Guebra Mariam",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Travels to Discover the Source of the Nile, in the Years 1768, 1769, 1770, 1771, 1772, and 1773, vol. 2 (édition d'Édimbourg)",
+                "author": "James Bruce",
+                "year": 1790,
+                "url": "https://archive.org/details/travelstodiscove02bruc",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 302",
+                "notes": "Édimbourg, J. Ruthven, pour G. G. J. et J. Robinson, Londres, 1790. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'archive.org (le texte imprime le s long, que nous écrivons s). Page 302 : « The Baharnagalli, Guebra Mariam, was commanded to march against Fatima queen of the Shepherds »."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gebre Mariam",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Gebre Mariam est la graphie en deux mots de Gebremariam, selon le Dictionary of American Family Names.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Gebremariam",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/gebremariam?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 13 octobre 2026 dans la traduction française que le site affiche. La notice dit : nom éthiopien, également écrit Gebre Mariam, du nom personnel masculin Gebre Mariam, de sens religieux chrétien « serviteur de Marie » (voir Gebre et Mariam). Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1996,
+              "to": 1996,
+              "label": "1996"
+            },
+            "era": "modern",
+            "statement": "Le nom Gebre Mariam apparaît par écrit dans le guide de catalogage de l'IFLA, dans l'exemple « Dimetros Gebre Mariam, Melake Selam », où Melake Selam est un titre religieux. C'est la plus ancienne trace de cette graphie que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "Dimetros Gebre Mariam",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Names of Persons: National Usages for Entry in Catalogues",
+                "author": "IFLA Universal Bibliographic Control and International MARC Programme",
+                "year": 1996,
+                "url": "https://www.ifla.org/files/assets/cataloguing/pubs/names-of-persons_1996.pdf",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 64-65",
+                "notes": "Quatrième édition, Munich, K. G. Saur, 1996, lue dans le PDF de l'IFLA le 13 octobre 2026. La notice Éthiopie, p. 64-65, fournie par la bibliothèque de l'université d'Addis-Abeba et approuvée par la Bibliothèque et les Archives nationales en octobre 1994, compose le nom d'un nom personnel, suivi du nom personnel du père, parfois de celui du grand-père. Elle note que le Code civil de 1960 prescrit un nom de famille, usage qui ne s'est pas encore répandu. Page 64, dans les exemples d'ordre des éléments : « DIMETROS GEBRE MARIAM, Melake Selam » ; la même page range Melake Selam parmi les titres religieux."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
