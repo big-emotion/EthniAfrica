@@ -84,5 +84,129 @@
       "fieldPath": "homonyms",
       "reason": "Les recherches sur la graphie exacte « Kiprotich » dans les index onomastiques et l’article NOS qui énonce le nom et les recherches bibliographiques Kalenjin/Tugen/Kipsigis par graphie exacte n’ont pas établi une seconde origine distincte disposant de sa propre provenance."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kiprotich est un nom de naissance de garçon kalenjin, du Kenya. Il évoquerait le moment où le bétail rentre du pâturage, selon un article de presse néerlandais et selon une étude de 2025 qui analyse un nom de même forme. Chez les Kalenjin, on indique traditionnellement le père par arap, « fils de ».",
+    "names": [
+      {
+        "nameText": "Kiprotich",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kln",
+        "namedBy": null,
+        "shortLine": "Un nom de naissance de garçon kalenjin, lié au bétail qui rentre du pâturage.",
+        "periodLabel": "Écrit dès 1955 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Décrit en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Kiprotich est un nom de naissance de garçon kalenjin. Selon NOS, les noms kalenjin renvoient à la circonstance de la naissance ; nous n'avons pas trouvé d'étude qui porte sur ce nom précis.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Waarom heten ze allemaal Kip?",
+                "author": "NOS (radiodiffuseur public néerlandais)",
+                "year": 2014,
+                "url": "https://nos.nl/artikel/635315-waarom-heten-ze-allemaal-kip",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article de la rubrique sport de NOS, 13 avril 2014. Lu le 13 octobre 2026. L'article range Kiprotich parmi les noms de coureurs kalenjin qui commencent par Kip- et précise que le nom renvoie à la circonstance de la naissance."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Proposée en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Kiprotich se décomposerait en kip- (garçon), rot (revenir) et tich (vaches) : « garçon né quand les vaches rentrent du pâturage », selon Fancy Soi et Helga Schroeder, qui analysent kip-rot-tich, un nom kipsigis de même forme, sans écrire Kiprotich.",
+            "hypothesisGroup": "origine du nom Kiprotich",
+            "sources": [
+              {
+                "title": "Kipsigis Cultural Values in Birth Names",
+                "author": "Fancy Soi et Helga Schroeder",
+                "year": 2025,
+                "url": "https://journals.aiu.ac.ke/index.php/impact/article/view/172",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 105",
+                "notes": "Impact: Journal of Transformation, volume 8, n° 1, 2025, à partir de la page 100 ; enquête menée à Kericho et à Bomet, au Kenya, de décembre 2022 à août 2023, sur vingt noms de naissance. Lu le 13 octobre 2026. Page 105 : exemple 6, « kip-rot-tich », glosé « MASC-come back-cows », « boy born when the cows were coming back from grazing ». Page 104 : les noms de garçons commencent par kip- ; traditionnellement, la grand-mère paternelle donne le nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2014,
+              "to": 2014,
+              "label": "Proposée en 2014"
+            },
+            "era": "modern",
+            "statement": "Le nom Kiprotich viendrait du moment où l'on ramène le bétail, selon le diffuseur public néerlandais NOS.",
+            "hypothesisGroup": "origine du nom Kiprotich",
+            "sources": [
+              {
+                "title": "Waarom heten ze allemaal Kip?",
+                "author": "NOS (radiodiffuseur public néerlandais)",
+                "year": 2014,
+                "url": "https://nos.nl/artikel/635315-waarom-heten-ze-allemaal-kip",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article de la rubrique sport de NOS, 13 avril 2014. Lu le 13 octobre 2026. L'article donne le sens « geboren tijdens terughalen van het vee », « né quand on ramène le bétail », pour Kiprotich ; c'est une source de presse, et non une étude sur ce nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Décrit en 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Kiprotich est un nom kalenjin, et les Kalenjin indiquaient traditionnellement le père par arap, « fils de », que Cultural Atlas cite sans parler de Kiprotich. Cet usage devient moins courant : les enfants prennent plus souvent le nom de famille de leur père.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Kenyan Culture — Naming",
+                "author": "Chara Scroope",
+                "year": 2018,
+                "url": "https://culturalatlas.sbs.com.au/kenyan-culture/kenyan-culture-naming",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Synthèse culturelle de Cultural Atlas, 2018. Lu le 13 octobre 2026. Il explique que beaucoup de communautés du Kenya employaient un nom indiquant le père ou la mère, les Kalenjin disant « arap », et que cet usage devient moins courant."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1955,
+              "to": 1955,
+              "label": "1955"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kiprotich apparaît par écrit, sous la forme Kiprotich arap Marasin, dans le rapport officiel britannique sur le Kenya pour 1955 : c'est le nom du chef des gardes du parc national de Nairobi, qui fait front à deux lionnes en mars pour protéger un autre garde tombé de sa bicyclette. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un rapport l'a écrit, pas depuis quand le nom est donné.",
+            "formAsWritten": "Kiprotich",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Colonial Office Report on the Colony and Protectorate of Kenya 1955",
+                "author": "Colonial Office (Royaume-Uni)",
+                "year": 1956,
+                "url": "https://archive.org/details/report-kenya-1955",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 120",
+                "notes": "Londres, 1956. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; page vue en image. Page 120, parc national de Nairobi : en mars, trois gardes à bicyclette sont attaqués par deux lionnes ; « The Head Ranger, Kiprotich arap Marasin », fait front aux lionnes."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

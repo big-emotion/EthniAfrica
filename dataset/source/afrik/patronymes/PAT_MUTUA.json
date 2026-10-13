@@ -78,5 +78,93 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web et bibliographique combinant « Mutua », « Kamba », « le Kenya », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a pas établi de lignée homonyme d’origine distincte documentable ; la diffusion dans plusieurs pays ne suffit pas à créer un homonyme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mutua est un nom de personne du Kenya, en pays kamba. Selon une étude de 2018, les Kamba de Machakos le donnent, avec la forme Mutuo, à l'enfant qui s'est fait attendre pour naître. Un clan Mutua existe aussi chez les Tharaka en 1910 ; les sources ne disent pas s'il s'agit du même nom. Nous n'avons pas trouvé de trace sûre de sa naissance.",
+    "names": [
+      {
+        "nameText": "Mutua",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kam",
+        "namedBy": null,
+        "shortLine": "Un nom de personne kamba, donné à l'enfant qui s'est fait attendre pour naître.",
+        "periodLabel": "Porté aujourd'hui ; un clan Mutua écrit en 1910",
+        "accounts": [
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Décrit en 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Mutua est donné chez les Kamba de Machakos, avec la forme Mutuo, à un enfant qui s'est fait attendre pour naître, selon David Caballero Mariscal.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Nombres tradicionales kamba como instrumento de relación y elemento representativo de identidad y patrimonio intangible entre los akamba del área rural Machakos",
+                "author": "David Caballero Mariscal",
+                "year": 2018,
+                "url": "https://uhu.es/publicaciones/ojs/index.php/erebea/article/view/3569",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "tableau 3",
+                "notes": "Erebea. Revista de Humanidades y Ciencias Sociales, n° 8, 2018, p. 61-87 ; enquête de terrain auprès d'une famille kamba de la région rurale de Machakos, en 2017. Lu le 13 octobre 2026 (texte en espagnol). Tableau 3, « Nombres comunes dados a los recién nacidos » : « Mutuo », « Mutua », « Se hizo esperar para nacer ». Le tableau est tiré de l'observation de l'auteur auprès d'une famille."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Décrit en 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Mutua est un nom kamba de naissance, à distinguer du nom de famille : selon David Caballero Mariscal, un Kamba reçoit un nom de baptême et un nom kamba lié à sa naissance, et l'on ajoute le nom de sa famille comme nom de famille. L'étude ne dit pas si Mutua est aussi employé comme nom de famille.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Nombres tradicionales kamba como instrumento de relación y elemento representativo de identidad y patrimonio intangible entre los akamba del área rural Machakos",
+                "author": "David Caballero Mariscal",
+                "year": 2018,
+                "url": "https://uhu.es/publicaciones/ojs/index.php/erebea/article/view/3569",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 61-87",
+                "notes": "Erebea. Revista de Humanidades y Ciencias Sociales, n° 8, 2018, p. 61-87 ; enquête de terrain auprès d'une famille kamba de la région rurale de Machakos, en 2017. Lu le 13 octobre 2026 (texte en espagnol). Section 2 : le premier nom est d'ordinaire chrétien, le second est kamba, et le nom de la famille s'ajoute comme nom de famille ; le nom kamba sert dans la famille et le clan."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Mutua figure chez C. W. Hobley en 1910 comme celui d'un clan de la tribu tharaka, qui a l'hyène pour emblème. Les sources ne disent pas s'il s'agit du même nom que le nom de personne kamba.",
+            "formAsWritten": "Mutua",
+            "actors": [
+              {
+                "name": "C. W. Hobley",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Ethnology of A-Kamba and other East African tribes",
+                "author": "C. W. Hobley",
+                "year": 1910,
+                "url": "https://archive.org/details/ethnologyofakamb00hobluoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 170",
+                "notes": "Cambridge, Cambridge University Press, 1910. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive. Page 170, appendice : « Clans — Mwiriga or Mbai of Thaka or Tharaka tribe », avec leur emblème (« Nthuku or totem ») ; la dernière ligne donne « Mutua — Hyaena (mbiti) ». Page vue en image. Administrateur colonial, cité pour la forme qu'il écrit."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

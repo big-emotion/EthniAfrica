@@ -76,5 +76,116 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web et bibliographique combinant « Njoroge », « Kikuyu », « Kenya », « surname », « personal name », « onomastics », « etymology », « clan », « transmission », « alliance », « caste », « homonym » et « obituary », ainsi que l'article d'Otiso sur les emprunts de noms kikuyu en ekegusii n'ont pas établi de lignée homonyme d'origine distincte documentable ; une diffusion dans plusieurs pays ou une graphie voisine ne suffit pas à créer un homonyme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Njoroge est un nom de personne kikuyu, du Kenya. Les Gusii l'ont emprunté sous la forme Nchoroke. On ne sait pas avec certitude ce qu'il veut dire ; les sources lues ne lui donnent pas de sens.",
+    "names": [
+      {
+        "nameText": "Njoroge",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kik",
+        "namedBy": null,
+        "shortLine": "Un nom de personne kikuyu, repris en ekegusii sous la forme Nchoroke ; son sens reste inconnu.",
+        "periodLabel": "Écrit dès 1952 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "Décrit en 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Njoroge est un nom kikuyu que les Gusii ont emprunté en le changeant : Zipporah K. Otiso explique que le son du début, ndj, devient nch, et que le g, prononcé gh, devient k, ce qui donne Nchoroke. Elle ne propose pas d'étymologie.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Gender identity through the Ekegusii naming system",
+                "author": "Zipporah K. Otiso",
+                "year": 2017,
+                "url": "https://erepository.uonbi.ac.ke/server/api/core/bitstreams/9cd30361-434c-4fe3-bdcf-495e7fb30e62/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 77",
+                "notes": "Article publié dans The University of Nairobi Journal of Language and Linguistics, volume 6, 2017, p. 64-82. Lu le 13 octobre 2026 dans le dépôt de l'université de Nairobi. Page 77 : le nom kikuyu Njoroge devient Nchoroke ; « the voiced palato-alveolar affricate /ndʒ/ […] is replaced with the voiceless palato-alveolar affricate /ntʃ/ », et la fricative vélaire sonore est remplacée par /k/."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "Décrit en 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Njoroge suit la règle kikuyu des noms, que décrivent Nobuko et Peter S. Nganga sans le citer : Les Kikuyu n'ont pas de nom de famille fixe : le dernier nom d'une personne est le nom personnel de son père, et le nom personnel d'un enfant reprend celui d'un de ses grands-parents.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ケニア・キクユ族の親族制度と子どものネーミング・ルール (The Kinship System and Rule for Naming Children in Kikuyu People of Kenya)",
+                "author": "Nobuko Nganga et Peter S. Nganga",
+                "year": 2013,
+                "url": "https://nagasaki-u.repo.nii.ac.jp/record/7484/files/shakaikagaku75_25.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 25, 27-28",
+                "notes": "Article en japonais, revue de la faculté d'éducation de l'université de Nagasaki, n° 75, 2013, p. 25-33. Lu le 13 octobre 2026 dans le dépôt de l'université. Page 25 : les Kikuyu n'ont pas de nom de famille fixe d'une génération à l'autre ; le dernier nom est le nom personnel du père. Pages 27-28 : le nom personnel de l'enfant reprend celui d'un grand-parent ; pour une femme, le dernier nom devient, au mariage, le nom personnel du père de son mari. L'article ne cite pas ce nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1952,
+              "to": 1952,
+              "label": "1952"
+            },
+            "era": "colonial",
+            "statement": "Le nom Njoroge apparaît par écrit dans un conte kikuyu publié en 1952 par C. Cagnolo : « Njoroge wa Mbogwa » y est un vieil homme riche qui garde un monstre, Hitimondo, dans son enclos. L'auteur dit tenir ses contes de plusieurs conteurs kikuyu. C'est la plus ancienne trace de ce nom que le projet connaît sous cette forme ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Njoroge",
+            "birth": true,
+            "actors": [
+              {
+                "name": "C. Cagnolo",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Kikuyu Tales",
+                "author": "C. Cagnolo",
+                "year": 1952,
+                "url": "https://archive.org/details/african-studies_1952-03_11_1",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1-2",
+                "notes": "African Studies, volume 11, n° 1, mars 1952. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive. Premier conte, « Kemangurura, a Kikuyu hero », pages 1-2 : un vieil homme riche, « called Njoroge wa Mbogwa », garde un monstre dans son enclos. L'auteur dit tenir ses contes de plusieurs conteurs kikuyu et avoir vécu près de trente-sept ans parmi eux."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1922,
+              "to": 1922,
+              "label": "1922"
+            },
+            "era": "colonial",
+            "statement": "Le nom Njerogi, qui ressemble à Njoroge, figure dans le procès-verbal d'une enquête judiciaire de Nairobi sur la mort de vingt et un Africains tués le 16 mars 1922 : « Njerogi wa Kitcheski » est l'un des morts. Les sources ne disent pas s'il s'agit du même nom.",
+            "formAsWritten": "Njerogi",
+            "sources": [
+              {
+                "title": "East Africa: Papers relating to native disturbances in Kenya (March, 1922)",
+                "author": "Gouvernement britannique (Cmd. 1691)",
+                "year": 1922,
+                "url": "https://archive.org/details/eastafricapapers00keny",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 15",
+                "notes": "Londres, H.M. Stationery Office, mai 1922, présenté au Parlement. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive ; page vue en image. Page 15, « Enclosure 3 in No. 2 », enquête judiciaire n° 4 de 1922 : la liste des vingt et un morts compte « 15 Njerogi wa Kitcheski ». La forme n'est pas Njoroge ; rien dans le texte ne dit qu'elle en est une écriture."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

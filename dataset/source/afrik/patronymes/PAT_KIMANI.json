@@ -76,5 +76,118 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web combinant « Kimani », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de la page Cultural Atlas sur les pratiques de nomination au Kenya et les recherches ciblées sur « Kimani wa Mumbi » et l'onomastique kikuyu, n'ont pas établi de lignée homonyme d'origine distincte ni d'autre homonyme documentable."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kimani est un nom de personne kikuyu, du Kenya. Les Kikuyu n'ont pas de nom de famille fixe : le dernier nom d'une personne est d'ordinaire le nom personnel de son père, et Kimani passe ainsi d'une génération à l'autre. On ne sait pas avec certitude ce qu'il veut dire ; les sources lues ne lui donnent pas de sens.",
+    "names": [
+      {
+        "nameText": "Kimani",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "kik",
+        "namedBy": null,
+        "shortLine": "Un nom de personne kikuyu, repris comme dernier nom ; son sens reste inconnu.",
+        "periodLabel": "Écrit dès 1910 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Décrit en 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Kimani sert de nom personnel dans la manière traditionnelle de nommer au Kenya : « Kimani wa Mumbi » veut dire Kimani, fils de Mumbi, le mot wa signifiant « de ». Cultural Atlas, qui donne cet exemple kikuyu, note que cet usage devient moins courant et qu'aujourd'hui les enfants prennent bien plus souvent le nom de famille de leur père.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Kenyan Culture — Naming",
+                "author": "Chara Scroope",
+                "year": 2018,
+                "url": "https://culturalatlas.sbs.com.au/kenyan-culture/kenyan-culture-naming",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Synthèse culturelle de Cultural Atlas, 2018. Lu le 13 octobre 2026. Il illustre le nom du fils et de la mère par « Kimani wa MUMBI » et précise que, de nos jours, les enfants adoptent bien plus souvent le nom de famille de leur père."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2013,
+              "to": 2013,
+              "label": "Décrit en 2013"
+            },
+            "era": "modern",
+            "statement": "Le nom Kimani suit la règle kikuyu des noms, que décrivent Nobuko et Peter S. Nganga sans le citer : Les Kikuyu n'ont pas de nom de famille fixe : le dernier nom d'une personne est le nom personnel de son père, et le nom personnel d'un enfant reprend celui d'un de ses grands-parents.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ケニア・キクユ族の親族制度と子どものネーミング・ルール (The Kinship System and Rule for Naming Children in Kikuyu People of Kenya)",
+                "author": "Nobuko Nganga et Peter S. Nganga",
+                "year": 2013,
+                "url": "https://nagasaki-u.repo.nii.ac.jp/record/7484/files/shakaikagaku75_25.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 25, 27-28",
+                "notes": "Article en japonais, revue de la faculté d'éducation de l'université de Nagasaki, n° 75, 2013, p. 25-33. Lu le 13 octobre 2026 dans le dépôt de l'université. Page 25 : les Kikuyu n'ont pas de nom de famille fixe d'une génération à l'autre ; le dernier nom est le nom personnel du père. Pages 27-28 : le nom personnel de l'enfant reprend celui d'un grand-parent ; pour une femme, le dernier nom devient, au mariage, le nom personnel du père de son mari. L'article ne cite pas ce nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2017,
+              "to": 2017,
+              "label": "Décrit en 2017"
+            },
+            "era": "modern",
+            "statement": "Le nom Kimani est un nom que les Gusii ont emprunté aux Kikuyu, selon Zipporah K. Otiso, qui le cite avec Karioki et Nchoroke. Contrairement à ces deux noms, elle ne lui voit aucun changement de forme en ekegusii.",
+            "sources": [
+              {
+                "title": "Gender identity through the Ekegusii naming system",
+                "author": "Zipporah K. Otiso",
+                "year": 2017,
+                "url": "https://erepository.uonbi.ac.ke/server/api/core/bitstreams/9cd30361-434c-4fe3-bdcf-495e7fb30e62/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 77",
+                "notes": "Article publié dans The University of Nairobi Journal of Language and Linguistics, volume 6, 2017, p. 64-82. Lu le 13 octobre 2026 dans le dépôt de l'université de Nairobi. Page 77 : les noms Karioki, Kimani et Nchoroke sont empruntés aux Kikuyu ; les changements de prononciation concernent Karioki et Nchoroke."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1910,
+              "to": 1910,
+              "label": "1910"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kimani apparaît par écrit, sous la forme Ki-ma-ni, chez W. Scoresby et Katherine Routledge, dans l'expression « Degua wa Kimani » : c'est le nom du père d'un homme appelé Degua, qui vit près de Tusu, sous l'autorité du chef Karuri, et garde un objet que personne n'a vu. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand des auteurs l'ont noté, pas depuis quand le nom est porté.",
+            "formAsWritten": "Ki-ma-ni",
+            "birth": true,
+            "actors": [
+              {
+                "name": "W. Scoresby Routledge",
+                "role": "écrit cette forme"
+              },
+              {
+                "name": "Katherine Routledge",
+                "role": "écrit cette forme"
+              }
+            ],
+            "sources": [
+              {
+                "title": "With a Prehistoric People: the Akikuyu of British East Africa",
+                "author": "W. Scoresby Routledge et Katherine Routledge",
+                "year": 1910,
+                "url": "https://archive.org/details/withprehistoricp00rout",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 273",
+                "notes": "Londres, Edward Arnold, 1910. Lu le 13 octobre 2026 dans la numérisation d'Internet Archive (bibliothèques de l'université de Californie). Page 273, chapitre sur la sorcellerie : « Near Tu-su, in the possession of one De-gua wa Ki-ma-ni, an individual under the jurisdiction of Ka-ru-ri, chief of Tu-su, is an object that no man living has seen ». Auteurs de l'époque coloniale, cités ici pour la forme qu'ils écrivent."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
