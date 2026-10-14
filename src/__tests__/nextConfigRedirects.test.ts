@@ -19,7 +19,9 @@ async function loadRedirects(): Promise<Redirect[]> {
 }
 
 const RETIRED_PATRONYME_IDS: Record<string, string> = Object.fromEntries(
-  retiredPatronymes.map((entry) => [entry.retiredId, entry.successorId])
+  retiredPatronymes
+    .filter((entry) => typeof entry.successorId === "string")
+    .map((entry) => [entry.retiredId, entry.successorId])
 );
 
 const destinationOf = (redirects: Redirect[], source: string) =>
@@ -80,6 +82,26 @@ describe("the folded patronyme addresses", () => {
       }
     }
   );
+
+  // A withdrawn family name has no successor: its address answers 404 rather
+  // than redirecting to « null ».
+  // @req REQ-141
+  it("sends a withdrawn family name nowhere", async () => {
+    const withdrawn = retiredPatronymes.filter(
+      (entry) => entry.decision === "withdrawn"
+    );
+    const redirects = await loadRedirects();
+
+    expect(withdrawn.length).toBeGreaterThan(0);
+    for (const { retiredId } of withdrawn) {
+      expect(
+        destinationOf(redirects, getPatronymeRoute("fr", retiredId))
+      ).toBeUndefined();
+      expect(
+        destinationOf(redirects, `/en/atlas/names/${retiredId}`)
+      ).toBeUndefined();
+    }
+  });
 
   // @req REQ-141
   it("still sends PAT_KAMARA to PAT_CAMARA", () => {
