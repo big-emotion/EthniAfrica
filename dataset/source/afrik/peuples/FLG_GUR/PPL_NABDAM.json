@@ -1,7 +1,7 @@
 {
   "id": "PPL_NABDAM",
   "nameMain": "Nabdam",
-  "languageFamilyId": "FLG_NIGERCONGO",
+  "languageFamilyId": "FLG_GUR",
   "currentCountries": ["GHA"],
   "content": {
     "appellations": {
@@ -20,7 +20,7 @@
       "originOfExonyms": "Nabdam est le nom du district administratif et la designation la plus courante en anglais. Nabrug designe le territoire ancestral (la terre des Nabdam). Nabt est le nom de leur langue tel qu'il est standardise dans la litterature linguistique. Les variations orthographiques (Nabde, Nabte, Nabdug) refletent des transcriptions differentes d'un meme phoneme gur.",
       "whyProblematic": null,
       "contemporaryUsage": "Nabdam est la denomination officielle dans l'administration ghanéenne et designe a la fois le peuple et le district administratif (Nabdam District, Upper East Region). Namnam est la designation endogene utilisee en contexte communautaire.",
-      "linguisticFamily": "FLG_NIGERCONGO",
+      "linguisticFamily": "FLG_GUR",
       "ethnoLinguisticGroup": "Gur (Mole-Dagbane), branche Niger-Congo",
       "historicalRegion": "Upper East Region, nord du Ghana (district de Nabdam, capitale Nangodi)",
       "currentCountries": ["GHA"]

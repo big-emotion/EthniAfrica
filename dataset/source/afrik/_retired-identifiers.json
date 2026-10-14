@@ -1020,5 +1020,26 @@
     "successorId": null,
     "reason": "Not a duplicate of PPL_MANDE_MACRO. Mandé du Sud is the linguists' grouping of the Dan, Guro, Wan, Mano, Beng, Mwan, Gban and Toura (Dwyer 1989, Vydrin 2009), a branch of the Mandé family, and its search answer says it is a grouping by language, not a people. The operator's ruling on wave 3 keeps it as that: it has no name history of its own, the names stay on the member peoples, and the Côte d'Ivoire census rows still point at it.",
     "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "renamed",
+    "retiredId": "PPL_KWA",
+    "successorId": "PPL_GWA",
+    "reason": "The fiche describes the Gwa, also called M'bato, a lagoon people of south-east Côte d'Ivoire (Delafosse 1904, p. 11; Koroko 2023, pp. 282-283), not the Kwa language family: its own name history says they must not be confused, and the id collided with FLG_KWA. It takes the people's name: main name Gwa, the exonym list no longer repeats it. Its language code is gwa (Mbato, Glottolog mbat1247), not gwx, which is the Gua of Anum (PPL_ANUM). Its name history is unchanged. The prose of the old fiche stays readable in the git history.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "renamed",
+    "retiredId": "PPL_LALA_LAMBA",
+    "successorId": "PPL_LAMBA_ZAMBIA",
+    "reason": "The fiche describes the Lamba of the Copperbelt (Zambia) and the south of Katanga (DRC), who call themselves Lamba (ISO lam). « Lala-Lamba » comes from the title of a 1908 language handbook and names no people of its own, as the fiche's name history says. It takes the people's name, Lamba, with Lala-Lamba kept as a name. The id PPL_LAMBA is already the Lama of Togo (ISO las), so the Bantu Lamba take PPL_LAMBA_ZAMBIA. Its name history is unchanged.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PPL_NABT",
+    "successorId": "PPL_NABDAM",
+    "reason": "Same people: the two fiches carry the same exonym lists, the same Nangodi sources (the Mamprusi Facebook post and Akolgo's article) and the same ISO position (no code; a request was rejected in January 2017). Nabdam is the people and the district, Nabt the name of the language. The keeper holds the name history and is now filed with the Gur, as the retired fiche was, where its own text places it. Not carried: the Burkina Faso presence and the 100,000 estimate, which rest on a district profile whose tier is needs_review. The headline stays Nabdam, the name of the district and of the people in the history's sources.",
+    "decidedOn": "2026-10-14"
   }
 ]
