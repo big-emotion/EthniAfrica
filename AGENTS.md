@@ -25,6 +25,11 @@ new errors pass.
 Work test-first and keep solutions simple. Assess responsive presentation on
 mobile (320–430px), then tablet (768–1199px), then desktop (1200px and above).
 
+Visible changes are mockups first: change the site boards, get them approved,
+record them in `docs/design/mockups/site/`, then implement to them. Follow
+[the mockup-first workflow](docs/design/mockup-first-workflow.md); do not edit
+components for a visual change that has no approved boards.
+
 For social production, use `.claude/skills/ethniafrica-social-production/SKILL.md`
 (also linked under `.agents/skills/` for Codex). The operator's 10 October 2026
 workflow replaces the retired production chain. The accepted Claude Design card
