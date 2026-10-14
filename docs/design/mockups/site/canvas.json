@@ -14,91 +14,91 @@
       "x": 0,
       "y": 0,
       "w": 1440,
-      "h": 6200,
+      "h": 8700,
       "title": "design-system"
     },
     "search-peul-430.dc.html": {
       "x": 1840,
       "y": 0,
       "w": 430,
-      "h": 3322,
+      "h": 5750,
       "expand": "fill"
     },
     "search-peul-768.dc.html": {
       "x": 2350,
       "y": 0,
       "w": 768,
-      "h": 2258,
+      "h": 4200,
       "expand": "fill"
     },
     "search-peul-1440.dc.html": {
       "x": 3198,
       "y": 0,
       "w": 1440,
-      "h": 1936,
+      "h": 3650,
       "expand": "fill"
     },
     "search-bassa-430.dc.html": {
       "x": 1840,
-      "y": 3442,
+      "y": 5870,
       "w": 430,
-      "h": 6932,
+      "h": 9900,
       "expand": "fill"
     },
     "search-bassa-768.dc.html": {
       "x": 2350,
-      "y": 3442,
+      "y": 5870,
       "w": 768,
-      "h": 5036,
+      "h": 7350,
       "expand": "fill"
     },
     "search-bassa-1440.dc.html": {
       "x": 3198,
-      "y": 3442,
+      "y": 5870,
       "w": 1440,
-      "h": 4654,
+      "h": 6650,
       "expand": "fill"
     },
     "search-congo-430.dc.html": {
       "x": 1840,
-      "y": 10494,
+      "y": 15890,
       "w": 430,
-      "h": 8385,
+      "h": 11400,
       "expand": "fill"
     },
     "search-congo-768.dc.html": {
       "x": 2350,
-      "y": 10494,
+      "y": 15890,
       "w": 768,
-      "h": 5896,
+      "h": 8250,
       "expand": "fill"
     },
     "search-congo-1440.dc.html": {
       "x": 3198,
-      "y": 10494,
+      "y": 15890,
       "w": 1440,
-      "h": 5378,
+      "h": 7450,
       "expand": "fill"
     },
     "search-unknown-430.dc.html": {
       "x": 1840,
-      "y": 18999,
+      "y": 27410,
       "w": 430,
-      "h": 2240,
+      "h": 3250,
       "expand": "fill"
     },
     "search-unknown-768.dc.html": {
       "x": 2350,
-      "y": 18999,
+      "y": 27410,
       "w": 768,
-      "h": 1562,
+      "h": 2370,
       "expand": "fill"
     },
     "search-unknown-1440.dc.html": {
       "x": 3198,
-      "y": 18999,
+      "y": 27410,
       "w": 1440,
-      "h": 1347,
+      "h": 2050,
       "expand": "fill"
     },
     "people-fula-430.dc.html": {
@@ -352,6 +352,78 @@
       "w": 1440,
       "h": 1433,
       "expand": "fill"
+    },
+    "search-state-thin-430.dc.html": {
+      "x": 1840,
+      "y": 30780,
+      "w": 430,
+      "h": 4300,
+      "expand": "fill",
+      "title": "État mince · « wolof » · 430"
+    },
+    "search-state-thin-768.dc.html": {
+      "x": 2350,
+      "y": 30780,
+      "w": 768,
+      "h": 3300,
+      "expand": "fill",
+      "title": "État mince · « wolof » · 768"
+    },
+    "search-state-thin-1440.dc.html": {
+      "x": 3198,
+      "y": 30780,
+      "w": 1440,
+      "h": 2800,
+      "expand": "fill",
+      "title": "État mince · « wolof » · 1440"
+    },
+    "search-state-competing-430.dc.html": {
+      "x": 1840,
+      "y": 35200,
+      "w": 430,
+      "h": 5600,
+      "expand": "fill",
+      "title": "État · origines concurrentes · « yamoussoukro » · 430"
+    },
+    "search-state-competing-768.dc.html": {
+      "x": 2350,
+      "y": 35200,
+      "w": 768,
+      "h": 4300,
+      "expand": "fill",
+      "title": "État · origines concurrentes · « yamoussoukro » · 768"
+    },
+    "search-state-competing-1440.dc.html": {
+      "x": 3198,
+      "y": 35200,
+      "w": 1440,
+      "h": 3700,
+      "expand": "fill",
+      "title": "État · origines concurrentes · « yamoussoukro » · 1440"
+    },
+    "search-state-nodate-430.dc.html": {
+      "x": 1840,
+      "y": 40920,
+      "w": 430,
+      "h": 4000,
+      "expand": "fill",
+      "title": "État · origine non datée · exemple à remplacer · 430"
+    },
+    "search-state-nodate-768.dc.html": {
+      "x": 2350,
+      "y": 40920,
+      "w": 768,
+      "h": 3100,
+      "expand": "fill",
+      "title": "État · origine non datée · exemple à remplacer · 768"
+    },
+    "search-state-nodate-1440.dc.html": {
+      "x": 3198,
+      "y": 40920,
+      "w": 1440,
+      "h": 2700,
+      "expand": "fill",
+      "title": "État · origine non datée · exemple à remplacer · 1440"
     }
   },
   "order": [
@@ -368,6 +440,15 @@
     "search-unknown-430.dc.html",
     "search-unknown-768.dc.html",
     "search-unknown-1440.dc.html",
+    "search-state-thin-430.dc.html",
+    "search-state-thin-768.dc.html",
+    "search-state-thin-1440.dc.html",
+    "search-state-competing-430.dc.html",
+    "search-state-competing-768.dc.html",
+    "search-state-competing-1440.dc.html",
+    "search-state-nodate-430.dc.html",
+    "search-state-nodate-768.dc.html",
+    "search-state-nodate-1440.dc.html",
     "people-fula-430.dc.html",
     "people-fula-768.dc.html",
     "people-fula-1440.dc.html",
