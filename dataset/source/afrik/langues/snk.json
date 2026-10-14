@@ -154,12 +154,12 @@
             "statement": "Le nom Sarakolé est noté « Serehule » par Sigismund Koelle. Il désigne, dit-il, une nation de six pays, dont le Gadiaga, qui se nomment ainsi eux-mêmes et sont nommés ainsi par les autres.",
             "sources": [
               {
-                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "title": "Polyglotta Africana",
                 "author": "Sigismund Wilhelm Koelle",
                 "year": 1854,
                 "url": "https://github.com/lexibank/polyglottaafricana",
                 "tier": "referenced",
-                "source_kind": "archive",
+                "source_kind": "linguistic_reference",
                 "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous le parler du Gadiaga, d'après son informateur Boakari."
               }
             ]
@@ -181,12 +181,12 @@
             ],
             "sources": [
               {
-                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "title": "Polyglotta Africana",
                 "author": "Sigismund Wilhelm Koelle",
                 "year": 1854,
                 "url": "https://github.com/lexibank/polyglottaafricana",
                 "tier": "referenced",
-                "source_kind": "archive",
+                "source_kind": "linguistic_reference",
                 "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous le parler du Gadiaga, d'après son informateur Boakari."
               }
             ]

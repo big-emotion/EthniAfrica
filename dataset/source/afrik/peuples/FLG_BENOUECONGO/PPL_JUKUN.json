@@ -197,12 +197,12 @@
             "statement": "Le nom Apa est écrit « ápā » par Sigismund Koelle, qui le donne comme le nom que les Igala et les Igbo donnent à ce peuple.",
             "sources": [
               {
-                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "title": "Polyglotta Africana",
                 "author": "Sigismund Wilhelm Koelle",
                 "year": 1854,
                 "url": "https://github.com/lexibank/polyglottaafricana",
                 "tier": "referenced",
-                "source_kind": "archive",
+                "source_kind": "linguistic_reference",
                 "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous le parler « Dṣúku· »."
               }
             ]
@@ -303,12 +303,12 @@
             "birth": true,
             "sources": [
               {
-                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "title": "Polyglotta Africana",
                 "author": "Sigismund Wilhelm Koelle",
                 "year": 1854,
                 "url": "https://github.com/lexibank/polyglottaafricana",
                 "tier": "referenced",
-                "source_kind": "archive",
+                "source_kind": "linguistic_reference",
                 "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous le parler « Dṣúku· »."
               }
             ]
@@ -400,12 +400,12 @@
             "statement": "Le nom Kwararafa est écrit « Kurórōfa » par Sigismund Koelle, qui le donne comme le nom que les gens du Bornou, les Haoussa et les Noupé donnent au pays jukun.",
             "sources": [
               {
-                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "title": "Polyglotta Africana",
                 "author": "Sigismund Wilhelm Koelle",
                 "year": 1854,
                 "url": "https://github.com/lexibank/polyglottaafricana",
                 "tier": "referenced",
-                "source_kind": "archive",
+                "source_kind": "linguistic_reference",
                 "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous le parler « Dṣúku· »."
               }
             ]
@@ -494,12 +494,12 @@
             "statement": "Le nom Kwana est écrit « Kóāna » par Sigismund Koelle, qui le donne comme un autre nom du pays jukun chez les gens du Bornou, les Haoussa et les Noupé.",
             "sources": [
               {
-                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "title": "Polyglotta Africana",
                 "author": "Sigismund Wilhelm Koelle",
                 "year": 1854,
                 "url": "https://github.com/lexibank/polyglottaafricana",
                 "tier": "referenced",
-                "source_kind": "archive",
+                "source_kind": "linguistic_reference",
                 "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Remarque placée sous le parler « Dṣúku· »."
               }
             ]

@@ -111,12 +111,12 @@
             "before": true,
             "sources": [
               {
-                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "title": "Polyglotta Africana",
                 "author": "Sigismund Wilhelm Koelle",
                 "year": 1854,
                 "url": "https://github.com/lexibank/polyglottaafricana",
                 "tier": "referenced",
-                "source_kind": "archive",
+                "source_kind": "linguistic_reference",
                 "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite."
               }
             ]
@@ -185,12 +185,12 @@
             "statement": "Le nom Manden est noté Mánde par Sigismund Koelle, d'après un informateur qui lui dit que tous les Mandénga en sont venus et que sa capitale est sur le Djoliba.",
             "sources": [
               {
-                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "title": "Polyglotta Africana",
                 "author": "Sigismund Wilhelm Koelle",
                 "year": 1854,
                 "url": "https://github.com/lexibank/polyglottaafricana",
                 "tier": "referenced",
-                "source_kind": "archive",
+                "source_kind": "linguistic_reference",
                 "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite."
               }
             ]
@@ -373,7 +373,9 @@
     },
     "sources": [
       {
-        "title": "Koelle, Sigismund Wilhelm (1854) – Polyglotta Africana. Church Missionary House, Londres",
+        "title": "Polyglotta Africana",
+        "author": "Sigismund Wilhelm Koelle",
+        "year": 1854,
         "url": "https://github.com/lexibank/polyglottaafricana",
         "tier": "referenced",
         "source_kind": "linguistic_reference",

@@ -745,7 +745,9 @@
         "notes": "Écrit par un pasteur yoruba. Le chapitre sur la religion établit que le fleuve est consacré à Ọya, épouse divinisée de Ṣàngó, et qu'il porte pour cette raison le nom d'Ọpo Ọya dans tout le pays yoruba. Passage lu en fac-similé le 9 septembre 2026."
       },
       {
-        "title": "Sigismund Wilhelm Koelle, African Native Literature, or Proverbs, Tales, Fables and Historical Fragments in the Kanuri or Bornu Language, Londres, Church Missionary House, 1854",
+        "title": "African native literature, or Proverbs, tales, fables, and historical fragments in the Kanuri or Bornu language",
+        "author": "Sigismund Wilhelm Koelle",
+        "year": 1854,
         "url": "https://archive.org/details/africannativelit00koel",
         "tier": "referenced",
         "source_kind": "linguistic_reference",
