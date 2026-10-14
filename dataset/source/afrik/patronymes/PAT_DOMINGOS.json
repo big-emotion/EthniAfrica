@@ -76,5 +76,136 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Domingos à un peuple en Angola. Nous n'avons pas encore consulté de source consacrée à ce nom. Les mentions trouvées concernent la ville de São Domingos, en Guinée-Bissau, et un chef d'expédition portugais au Brésil. Elles n'expliquent pas son usage comme nom de famille en Angola. Les exemples de noms portugais cités pour les créoles de Guinée-Bissau ne suffisent pas à expliquer leur usage en Angola."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Domingos est d'abord un prénom chrétien portugais, devenu aussi un nom de famille. Il est porté en Angola. On ne sait pas avec certitude quand ni comment il est devenu un nom de famille angolais ; nous présentons plus bas ce que les sources disent.",
+    "names": [
+      {
+        "nameText": "Domingos",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un prénom chrétien portugais devenu nom de famille, porté en Angola.",
+        "periodLabel": "Écrit dès 1057 sous une forme proche ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Domingos reprend le prénom portugais Domingos, l'équivalent de Domingo, selon le Dictionary of American Family Names. José Leite de Vasconcelos le tire du mot latin Dominicus, un surnom romain devenu nom de saint. Ces sources ne disent rien de l'Angola.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Domingos Name Meaning and Domingos Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=domingos",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch et lue en anglais. Elle donne : « Portuguese: from the personal name Domingos, an equivalent of Domingo. »  Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 45",
+                "notes": "José Leite de Vasconcelos, Antroponímia portuguesa, Lisbonne, Imprensa Nacional, 1928, lu sur la copie numérisée d'archive.org. À la page 45, dans une liste de prénoms des livres de lignages portugais (XIIIe et XIVe siècles), il écrit : « Domingos [...] Lat. Dominicus, cognome, e nome de santo ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "12 janvier 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Domingos est porté en Angola comme nom de famille : une dépêche de l'agence Lusa du 12 janvier 2016 annonce que le président José Eduardo dos Santos a mis fin aux fonctions de Graciano Domingos, gouverneur de la province de Luanda. La dépêche ne dit rien de l'origine du nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "General Higino Carneiro é o novo governador da província de Luanda",
+                "author": "Lusa / VerAngola",
+                "year": 2016,
+                "url": "https://www.verangola.net/va/pt/122016/Politica/3375/General-Higino-Carneiro-%C3%A9-o-novo-governador-da-prov%C3%ADncia-de-Luanda.htm",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Dépêche Lusa reprise par VerAngola le 12 janvier 2016 : « O general Higino Carneiro vai substituir Graciano Domingos nas funções de governador da província de Luanda, hoje exonerado do cargo pelo Presidente angolano, José Eduardo dos Santos. » Elle ne dit rien de l'origine du nom. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Proposé en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Domingos pourrait être devenu un nom angolais par le baptême et l'état civil. À l'époque coloniale, les missionnaires donnaient aux Ovimbundu baptisés des noms de saints, et l'état civil remplaçait des noms en umbundu par des noms portugais, selon Severino Canhola Dungue. Il ne cite pas ce nom en particulier.",
+            "sources": [
+              {
+                "title": "O nome: Identidade cultural do povo Ovimbundu",
+                "author": "Severino Canhola Dungue",
+                "year": 2025,
+                "url": "https://www.ajol.info/index.php/academicus/article/download/285659/269148/667445",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 28-30",
+                "notes": "Revue Academicus, vol. 3, n° 1, 2025, p. 23-34, publiée le 7 janvier 2025 ; texte intégral lu sur AJOL. Pages 28 à 30 : à l'époque coloniale, les missionnaires donnaient aux Ovimbundu baptisés des noms de saints à la place de leurs noms, et au registre civil des noms en umbundu étaient remplacés par des noms portugais (exemple donné : « Nangoya – Gomes »), d'après Chimbinda (2009). L'article ne cite pas ce nom. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1302,
+              "to": 1302,
+              "label": "1302"
+            },
+            "statement": "Le nom Domingos est déjà un prénom courant en 1302 au Portugal : José Leite de Vasconcelos le relève dans des textes du Minho de cette année, avec Gonçalo, Lourenço, Martim et Pedro. Ce n'est pas encore un nom de famille.",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 55",
+                "notes": "José Leite de Vasconcelos, Antroponímia portuguesa, Lisbonne, Imprensa Nacional, 1928, lu sur la copie numérisée d'archive.org. À la page 55, il cite des noms de 1302 tirés des Documentos do Souto (p. 23) : « Domingos, Gonçalo, Lourenço, Martim, Pedro ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1057,
+              "to": 1057,
+              "label": "1057"
+            },
+            "statement": "Le nom Domingos a pour plus ancienne trace une forme latine proche, Dominicus, dans un document de 1057 que cite José Leite de Vasconcelos : « Dominicus filius Froila et Ergonza ». C'est la plus ancienne trace de ce nom que le projet connaît ; c'est un prénom, et elle ne dit rien de l'Angola.",
+            "formAsWritten": "Dominicus",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 102",
+                "notes": "José Leite de Vasconcelos, Antroponímia portuguesa, Lisbonne, Imprensa Nacional, 1928, lu sur la copie numérisée d'archive.org. À la page 102, il cite un document de 1057 (renvoi « DC, p. 245 ») : « Dominicus filius Froila et Ergonza ». Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
