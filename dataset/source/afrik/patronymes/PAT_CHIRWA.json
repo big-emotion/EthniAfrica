@@ -95,5 +95,47 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Chirwa », « Tumbuka », « Chewa », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de la page Forebears dédiée, n'ont établi aucune règle propre à Chirwa permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Chirwa est porté au Malawi, notamment par des Tonga du lac Malawi. On ne sait pas avec certitude ce qu'il veut dire, d'où il vient ni à quel peuple il appartient d'abord : les sources lues ne le disent pas. Le projet n'en connaît pas de trace écrite ancienne.",
+    "names": [
+      {
+        "nameText": "Chirwa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom porté au Malawi, notamment chez les Tonga du lac Malawi.",
+        "periodLabel": "Porté depuis au moins 1865 environ",
+        "accounts": [
+          {
+            "period": {
+              "from": 1865,
+              "to": 1951,
+              "label": "Vers 1865-1951"
+            },
+            "statement": "Le nom Chirwa est celui d'un homme tonga, Yuraia Chatonda Chirwa, né vers 1865 sur la rive du lac Malawi, près de Bandawe, selon le Dictionary of African Christian Biography. La notice dit qu'il était tonga et ne dit rien du sens ni de l'origine du nom.",
+            "aspect": "usage",
+            "actors": [
+              {
+                "name": "Yuraia Chatonda Chirwa",
+                "role": "porteur du nom nommé dans la notice"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Chirwa, Yuraia Chatonda",
+                "author": "Masauko Wellby Tembo, Dictionary of African Christian Biography",
+                "year": 2022,
+                "url": "https://dacb.org/stories/malawi/chirwa-yuraia/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Notice rédigée par Masauko Wellby Tembo, pasteur de l'Église presbytérienne de l'Afrique centrale, comme travail de l'université théologique de Zomba, soumise en novembre 2022, lue le 13 octobre 2026. Elle dit que Yuraia Chatonda Chirwa (vers 1865-1951) « was a Tonga by tribe », né et grandi au village de Mchaya, près de la baie de Makuzi, au bord du lac Malawi. Elle ne parle ni du sens ni de l'origine du nom."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

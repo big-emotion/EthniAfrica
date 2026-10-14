@@ -11,6 +11,7 @@ import { PageLayout } from "@/components/layout/PageLayout";
 import { SearchFeedFrame } from "@/components/search/SearchFeedFrame";
 import {
   SearchFeed,
+  type SearchFeedSurface,
   type SubjectNameHistory,
 } from "@/components/search/SearchFeed";
 import type { WordAnswer } from "@/lib/search/answer";
@@ -462,8 +463,11 @@ export function RecherchePageContent() {
    *
    * A position and a kind, never the query.
    */
-  const trackResultClick = (type: string, rank: number) =>
-    trackEvent("search:result_click", { surface: "serp", type, rank });
+  const trackResultClick = (
+    type: string,
+    rank: number,
+    surface: SearchFeedSurface | "serp" = "serp"
+  ) => trackEvent("search:result_click", { surface, type, rank });
 
   // ── derived state ───────────────────────────────────────────────────────────
 

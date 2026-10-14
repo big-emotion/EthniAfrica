@@ -75,5 +75,97 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Djoumessi est un nom de famille du Cameroun, écrit dès 1951 dans les archives de l'ONU, où il est porté par le président d'un comité bamiléké. On ne sait pas avec certitude d'où il vient ni ce qu'il veut dire : le projet n'a pas trouvé de source qui l'explique.",
+    "names": [
+      {
+        "nameText": "Djoumessi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille du Cameroun, porté par un dirigeant bamiléké dès 1951.",
+        "periodLabel": "Écrit dès 1951 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1951,
+              "to": 1958,
+              "label": "De 1951 à 1958"
+            },
+            "era": "colonial",
+            "statement": "Le nom Djoumessi est celui de Mathias Djoumessi, qui écrit au Conseil de tutelle de l'ONU en 1951 comme président du « Comité directeur de Kumzse », puis en 1958 comme président de l'« Assemblée traditionnelle du peuple bamiléké ». Les sources lues ne disent ni d'où vient le nom ni ce qu'il veut dire.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Petition from Mr. Djoumessi Mathias, President of the \"Comite Directeur de Kumzse\" concerning the Cameroons under French Administration",
+                "author": "Organisation des Nations unies, Conseil de tutelle",
+                "year": 1951,
+                "url": "https://digitallibrary.un.org/record/3798861",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "notice du catalogue (titre et date)",
+                "notes": "Pétition T/PET.5/94, datée du 21 mars 1951, lue dans la notice de la bibliothèque numérique de l'ONU le 13 octobre 2026. Seuls le titre, la date et les mots-clés ont été lus, pas le texte de la pétition. Le Conseil de tutelle l'a examinée dans sa résolution T/RES/394(IX)."
+              },
+              {
+                "title": "Communication from Mr. Mathias Djoumessi, President of the \"Assemblee Tradionnelle du Peuple Bamileke\" concerning the Cameroons under French Adminstration",
+                "author": "Organisation des Nations unies, Conseil de tutelle",
+                "year": 1958,
+                "url": "https://digitallibrary.un.org/record/3838333",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "notice du catalogue (titre et date)",
+                "notes": "Communication T/COM.5/L.227 de 13 pages, datée du 6 octobre 1958, lue dans la notice de la bibliothèque numérique de l'ONU le 13 octobre 2026. Seuls le titre, la date et les mots-clés ont été lus. Le titre du catalogue écrit « Tradionnelle » et « Adminstration » : la faute est dans la notice."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1956,
+              "to": 1956,
+              "label": "30 mai 1956"
+            },
+            "era": "colonial",
+            "statement": "Le nom Djoumessi figure au Journal officiel de la République française dans le débat du 30 mai 1956 sur l'élection des députés du Cameroun, où « M. Djoumessi » est l'un des réclamants qui avaient protesté contre le résultat.",
+            "sources": [
+              {
+                "title": "Journal officiel de la République française. Débats parlementaires, Assemblée nationale, compte rendu de la séance du 30 mai 1956",
+                "author": "Assemblée nationale",
+                "year": 1956,
+                "url": "https://archive.org/details/sim_journal-officiel-de-la-republique-francaise_1956-05-31_58",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 2130",
+                "notes": "Numéro du 31 mai 1956. Lu sur l'exemplaire numérisé d'archive.org le 13 octobre 2026. Page 2130 : dans le rapport sur l'élection des députés du Cameroun, le rapporteur note que « l'un des réclamants, M. Djoumessi » s'est borné à envoyer un télégramme de protestation de principe, sans détailler ses griefs."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1951,
+              "to": 1951,
+              "label": "21 mars 1951"
+            },
+            "era": "colonial",
+            "statement": "Le nom Djoumessi apparaît par écrit dans le titre d'une pétition au Conseil de tutelle de l'ONU, signée par Djoumessi Mathias, président du « Comité directeur de Kumzse », pour le Cameroun sous administration française. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "birth": true,
+            "formAsWritten": "Djoumessi",
+            "sources": [
+              {
+                "title": "Petition from Mr. Djoumessi Mathias, President of the \"Comite Directeur de Kumzse\" concerning the Cameroons under French Administration",
+                "author": "Organisation des Nations unies, Conseil de tutelle",
+                "year": 1951,
+                "url": "https://digitallibrary.un.org/record/3798861",
+                "tier": "official",
+                "source_kind": "intergovernmental",
+                "page": "notice du catalogue (titre et date)",
+                "notes": "Pétition T/PET.5/94, datée du 21 mars 1951, lue dans la notice de la bibliothèque numérique de l'ONU le 13 octobre 2026. Seuls le titre, la date et les mots-clés ont été lus, pas le texte de la pétition. Le Conseil de tutelle l'a examinée dans sa résolution T/RES/394(IX)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

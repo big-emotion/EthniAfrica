@@ -7,6 +7,8 @@ vi.mock("@/lib/supabase/queries/afrik/sitemapEntries", () => ({
 import robots from "../robots";
 import sitemap, { revalidate } from "../sitemap";
 import { CANONICAL_DOMAIN } from "@/lib/brand";
+import { discoveryPath, eligiblePublications } from "@/lib/discoveries/catalog";
+import { getDiscoveryPublications } from "@/lib/discoveries/entries";
 import { getSitemapEntityIds } from "@/lib/supabase/queries/afrik/sitemapEntries";
 import {
   getCountryRoute,
@@ -274,5 +276,30 @@ describe("robots.txt", () => {
     expect(
       (disallow as string[]).filter((path) => /confidentialite/.test(path))
     ).toEqual([]);
+  });
+});
+
+// 41 publication pages were visited over 30 days while the sitemap listed
+// none of them (audience audit 2026-10-13); search is the second source of
+// visits, and a crawler only reaches them through the feed's own swipes.
+describe("sitemap.xml — découvertes", () => {
+  beforeEach(() => {
+    vi.clearAllMocks();
+    mockedEntityIds.mockResolvedValue(CORPUS);
+  });
+
+  // @req REQ-158
+  it("lists every published discovery once, at its own address", async () => {
+    const published = eligiblePublications(getDiscoveryPublications());
+    expect(published.length).toBeGreaterThan(0);
+
+    const listed = await urls();
+    for (const entry of published) {
+      const url = `https://${CANONICAL_DOMAIN}${discoveryPath("fr", entry)}`;
+      expect(
+        listed.filter((u) => u === url),
+        entry.id
+      ).toHaveLength(1);
+    }
   });
 });

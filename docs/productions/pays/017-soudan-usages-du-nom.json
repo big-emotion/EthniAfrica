@@ -1,0 +1,55 @@
+{
+  "campaign": "soudan-usages-du-nom",
+  "typologie": "pays",
+  "episode": 17,
+  "question": {
+    "fr": "D'où vient le nom Soudan ?"
+  },
+  "myth": {
+    "fr": "Le Soudan d'aujourd'hui et l'ancien Soudan français portent-ils le nom d'un même pays ?"
+  },
+  "subjects": [
+    {
+      "kind": "country",
+      "id": "SDN",
+      "label": {
+        "fr": "Soudan"
+      }
+    },
+    {
+      "kind": "country",
+      "id": "MLI",
+      "label": {
+        "fr": "Mali"
+      }
+    },
+    {
+      "kind": "country",
+      "id": "SSD",
+      "label": {
+        "fr": "Soudan du Sud"
+      }
+    }
+  ],
+  "sitePath": "/fr/atlas/pays/SDN",
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7693530709696384258",
+      "publishedAt": "2026-10-06"
+    },
+    {
+      "network": "instagram",
+      "format": "video",
+      "url": "https://www.instagram.com/p/DeJyZ1kqKcl/",
+      "publishedAt": "2026-10-06"
+    },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=zChSWJbkW04",
+      "publishedAt": "2026-10-06"
+    }
+  ]
+}

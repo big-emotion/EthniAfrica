@@ -10,6 +10,31 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 
 ## [Unreleased]
 
+## [5.2.0] - 2026-10-13
+
+### Added
+
+- Name history (ETNI-2011, wave 18): 45 more peoples carry a `nameHistory` block;
+  people coverage goes from 566 to 611 of 687.
+- Search: the timeline view of a result ends with a link to the full fiche, and its
+  clicks are counted as their own surface (`search:result_click`, `surface=timeline`).
+- `/fr/about` links each of its three ways in (Parcourir, Articles, Jouer) to its hub.
+- Sitemap: list every published Découvertes page.
+
+### Changed
+
+- API notice, carried over from 5.1.0, whose notes omitted it: in the place API,
+  `PlaceSummaryV2.countryId` and `PlaceSearchHitV2.countryId` are `string | null`, and
+  `PlaceV2.country` is `object | null`. They are null only for a region spanning
+  several countries, which lists them in `countries` / `countryIds` instead (#1668).
+
+### Fixed
+
+- Corpus sync: `--prune` also removes languages, family names and people↔country and
+  people↔language links that git no longer declares, under the same 5% cap; the
+  post-sync check names each extra row; the validator checks retired family-name
+  identifiers.
+
 ## [5.1.0] - 2026-10-13
 
 ### Added
@@ -35,6 +60,9 @@ the `1.x` tags predate the changelog and were never accompanied by release notes
 - Corpus: apply the operator's rulings on waves 4 to 13 and fold the duplicate people
   fiches those waves created into their keepers, redirecting retired identifiers.
 - Corpus: order the long tail of name history and report its coverage.
+- **Breaking (place API):** `PlaceSummaryV2.countryId` and `PlaceSearchHitV2.countryId`
+  become `string | null`, and `PlaceV2.country` becomes `object | null`, for a region
+  spanning several countries (#1668). Added to this entry after release.
 - Toolchain: migrate to Tailwind CSS 4 (`@tailwindcss/postcss`), ESLint 10, Vitest 5,
   Storybook 10, knip 6 and dotenv 18.
 - Dependencies: production and development minor/patch groups; GitHub Actions
@@ -1677,7 +1705,8 @@ the public API, the data model, and the frontend were all replaced.
 - Duplicate migration prefixes (`008_`, `015_`) resolved.
 - Endonym now takes primacy over exonym in the country page names row.
 
-[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.1.0...HEAD
+[Unreleased]: https://github.com/big-emotion/ethniafrica/compare/v5.2.0...HEAD
+[5.2.0]: https://github.com/big-emotion/ethniafrica/compare/v5.1.0...v5.2.0
 [5.1.0]: https://github.com/big-emotion/ethniafrica/compare/v5.0.1...v5.1.0
 [5.0.1]: https://github.com/big-emotion/ethniafrica/compare/v5.0.0...v5.0.1
 [5.0.0]: https://github.com/big-emotion/ethniafrica/compare/v4.23.0...v5.0.0

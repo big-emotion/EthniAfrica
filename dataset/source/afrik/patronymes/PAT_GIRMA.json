@@ -100,5 +100,92 @@
       "fieldPath": "countries",
       "reason": "La source propre au nom n'a pas confirmé le pays où il est porté ; les recherches « Girma » avec Ethiopia, Eritrea et les variantes de la fiche n'ont pas livré de registre officiel exploitable."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Girma est un nom personnel éthiopien. Il sert de second nom aux enfants d'un homme qui le porte, sans devenir un nom de famille. On ne sait pas avec certitude depuis quand il est écrit : le projet n'en connaît pas encore de trace ancienne. Nous présentons plus bas l'explication de son sens que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Girma",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel éthiopien, porté en second par les enfants d'un Girma.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1996,
+              "to": 2022,
+              "label": "Décrit en 1996 et en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Girma est un nom personnel éthiopien. En Éthiopie, une personne porte son propre nom suivi du nom personnel de son père, parfois de celui de son grand-père. Chez l'enfant d'un Girma, Girma est donc le nom du père, et il ne passe pas aux petits-enfants.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Names of Persons: National Usages for Entry in Catalogues",
+                "author": "IFLA Universal Bibliographic Control and International MARC Programme",
+                "year": 1996,
+                "url": "https://www.ifla.org/files/assets/cataloguing/pubs/names-of-persons_1996.pdf",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 64-65",
+                "notes": "Quatrième édition, Munich, K. G. Saur, 1996, lue dans le PDF de l'IFLA le 13 octobre 2026. La notice Éthiopie, p. 64-65, fournie par la bibliothèque de l'université d'Addis-Abeba et approuvée par la Bibliothèque et les Archives nationales en octobre 1994, compose le nom d'un nom personnel, suivi du nom personnel du père, parfois de celui du grand-père. Elle note que le Code civil de 1960 prescrit un nom de famille, usage qui ne s'est pas encore répandu."
+              },
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Girma",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/girma?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 13 octobre 2026 dans la traduction française que le site affiche. La notice dit : nom éthiopien, du nom personnel Girma signifiant, par exemple, « majesté » en amharique. Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Girma voudrait dire « majesté » en amharique, selon le Dictionary of American Family Names ; Behind the Name donne la même glose. Le mot guèze garma, « gloire, majesté, dignité », figure dans le dictionnaire de Wolf Leslau.",
+            "hypothesisGroup": "origine du nom Girma",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Girma",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/girma?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 13 octobre 2026 dans la traduction française que le site affiche. La notice dit : nom éthiopien, du nom personnel Girma signifiant, par exemple, « majesté » en amharique. Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              },
+              {
+                "title": "Meaning, origin and history of the name Girma — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/girma",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice du site Behind the Name, lue le 13 octobre 2026. Elle écrit le nom ግርማ, le dit amharique et donne la glose « majesty »."
+              },
+              {
+                "title": "Comparative Dictionary of Geʿez (Classical Ethiopic)",
+                "author": "Wolf Leslau",
+                "year": 1987,
+                "url": "https://archive.org/details/leslau-comparative-dictionary-of-geez-1987",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 203",
+                "notes": "Wiesbaden, Otto Harrassowitz, 1987. Lu le 13 octobre 2026 dans une copie non officielle déposée sur Internet Archive par un particulier. Page 203, entrée garama : le nom garma y est glosé « terror, fear, dread, awe, glorious act, glory, majesty, dignity, magnificence, pomp »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

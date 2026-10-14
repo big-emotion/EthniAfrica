@@ -82,5 +82,116 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Mputu », « KONGO », « surname », « clan », « etymology », « transmission », « alliance » et « obituary », ainsi que la page Forebears dédiée n'ont établi aucune règle propre à l'ensemble des emplois de Mputu permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Mputu est un nom de famille de la République démocratique du Congo. On ne sait pas avec certitude d'où il vient : il pourrait être le mot kikongo qui désigne l'Europe, ou un nom luba donné à un enfant. Les sources ne s'accordent pas ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Mputu",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille congolais ; il viendrait du mot kikongo pour l'Europe, ou d'un nom d'enfant luba.",
+        "periodLabel": "Écrit dès 1887 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "era": "modern",
+            "statement": "Le nom Mputu est un nom de famille congolais. Son origine est discutée ; nous présentons les explications plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Mputu",
+                "author": "Wikipédia (article en anglais)",
+                "year": null,
+                "url": "https://en.wikipedia.org/wiki/Mputu",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Article lu en entier. Sa première phrase dit que Mputu, « littéralement Europe en kikongo », est un nom de famille d'origine congolaise ; il liste quatre porteurs. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1887,
+              "label": "Proposée en 1887"
+            },
+            "statement": "Le nom Mputu viendrait du mot kikongo mputu, qui désigne le Portugal, puis le pays des Blancs et l'Europe, selon le dictionnaire de William Holman Bentley. Le dictionnaire ne parle que du mot ; que le nom de famille en vienne est une lecture que reprend Wikipédia.",
+            "hypothesisGroup": "origine du nom Mputu",
+            "sources": [
+              {
+                "title": "Dictionary and Grammar of the Kongo Language, as spoken at San Salvador",
+                "author": "William Holman Bentley",
+                "year": 1887,
+                "url": "https://archive.org/details/dictionarygramma00bent",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 357",
+                "notes": "Londres, Baptist Missionary Society et Trübner, 1887 ; exemplaire numérisé sur archive.org. L'entrée Mputu explique que le mot vient d'une altération du nom des Portugais, puis nomme le pays des Blancs, « Portugal, the white man's land, Europe », et le tissu."
+              },
+              {
+                "title": "Mputu",
+                "author": "Wikipédia (article en anglais)",
+                "year": null,
+                "url": "https://en.wikipedia.org/wiki/Mputu",
+                "tier": "unverified",
+                "source_kind": "encyclopedia",
+                "notes": "Article lu en entier ; il glose Mputu par « Europe en kikongo ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2023,
+              "to": 2023,
+              "label": "Proposée en 2023"
+            },
+            "era": "modern",
+            "statement": "Le nom Mputu viendrait d'un nom que les Luba du Kasaï donnent à l'enfant qui naît après une naissance multiple, selon Donat Nkuna Betu et Benjamin Kalonga Kanumbedia.",
+            "hypothesisGroup": "origine du nom Mputu",
+            "sources": [
+              {
+                "title": "Socio-Cultural Meanings of Special Children Names in the Luba Culture of Kasaï",
+                "author": "Donat Nkuna Betu et Benjamin Kalonga Kanumbedia",
+                "year": 2023,
+                "url": "https://www.researchgate.net/publication/385699879_Socio-Cultural_Meanings_of_Special_Children_Names_in_The_Luba_Culture_of_Kasai",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 630-631",
+                "notes": "Journal of Digital Learning and Distance Education, vol. 2, n° 7, décembre 2023, p. 627-633, texte intégral lu sur le site de l'éditeur. Dans la liste des noms selon la naissance multiple, l'article écrit « Mputu: a child following the multiple birth ». Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1887,
+              "to": 1887,
+              "label": "Dictionnaire de 1887"
+            },
+            "statement": "Le nom Mputu apparaît par écrit, sous cette forme, comme un mot kikongo dans le dictionnaire de Bentley, à l'entrée Mputu. C'est la plus ancienne trace de cette forme que le projet connaît ; elle dit un mot, pas un nom de famille, et le mot est plus ancien que le dictionnaire.",
+            "formAsWritten": "Mputu",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Dictionary and Grammar of the Kongo Language, as spoken at San Salvador",
+                "author": "William Holman Bentley",
+                "year": 1887,
+                "url": "https://archive.org/details/dictionarygramma00bent",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 357",
+                "notes": "L'entrée Mputu est à la page 357 ; le mot y est écrit Mputu."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

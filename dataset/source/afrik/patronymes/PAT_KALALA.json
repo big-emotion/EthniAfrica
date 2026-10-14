@@ -80,5 +80,129 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Kalala », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la consultation de la notice « Ilunga, Kalala » de l'Encyclopaedia Africana n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kalala est un nom luba du Congo. C'est aussi le titre du chef qui conduit les armées. Il est écrit dès 1860 comme le nom d'un chef des Sukuma, en Tanzanie actuelle, puis en 1877 dans une liste de noms du pays d'Urua. On ne sait pas avec certitude d'où il vient ; nous présentons plus bas l'explication de la tradition luba.",
+    "names": [
+      {
+        "nameText": "Kalala",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom luba, aussi le titre du chef des armées ; écrit dès 1860 ; on ne sait pas avec certitude d'où il vient.",
+        "periodLabel": "Écrit dès 1860 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "Sens du titre noté en 1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kalala est aussi un titre luba : le missionnaire Pierre Colle appelle le Kalala le « conducteur des armées » et note que la clochette double sert à dire qu'il sort du village. On ne sait pas avec certitude si le nom de famille vient de ce titre.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les Baluba (Congo belge), tome II",
+                "author": "R. P. Colle",
+                "year": 1913,
+                "url": "https://archive.org/details/lesbalubacongob02coll",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 686",
+                "notes": "Bruxelles, Albert Dewit, 1913, tome II ; exemplaire numérisé sur archive.org. Page 686, description des clochettes : « le Kalala (conducteur des armées) sort du village ». Missionnaire des Pères blancs, cité pour ce qu'il rapporte. Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Tradition luba, notice non datée"
+            },
+            "statement": "Le nom Kalala viendrait du titre que le chef Nkongolo aurait donné à Ilunga Mbidi, « Kalala, général des armées royales » ; Ilunga Mbidi est ensuite connu sous le nom de Kalala Ilunga, selon la tradition luba que rapporte l'Encyclopaedia Africana.",
+            "hypothesisGroup": "origine du nom Kalala",
+            "sources": [
+              {
+                "title": "Ilunga, Kalala",
+                "author": "Encyclopaedia Africana",
+                "year": null,
+                "url": "https://encyclopaediaafricana.com/ilunga-kalala/",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Page web de l'Encyclopaedia Africana, sans date ni signature visibles sur la page lue ; elle dit que Nkongolo a donné à Ilunga Mbidi le titre de « Kalala, general of the royal armies » et qu'il devint Kalala Ilunga après ses succès militaires. Elle n'explique pas le mot Kalala. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1913,
+              "to": 1913,
+              "label": "1913"
+            },
+            "era": "colonial",
+            "statement": "Le nom Kalala est celui de Kalala Ilunga, le plus célèbre des trois héros dont les noms reviennent toujours dans les récits luba, avec Kyomba et Kongolo, selon le missionnaire Pierre Colle.",
+            "sources": [
+              {
+                "title": "Les Baluba (Congo belge), tome II",
+                "author": "R. P. Colle",
+                "year": 1913,
+                "url": "https://archive.org/details/lesbalubacongob02coll",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 737",
+                "notes": "Bruxelles, Albert Dewit, 1913, tome II ; exemplaire numérisé sur archive.org. Page 737, § 141 « Histoire » : « Kyomba, Kongolo, Kalala ilunga. Ce dernier est le plus célèbre ». Missionnaire des Pères blancs, cité pour ce qu'il rapporte. Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1873,
+              "to": 1877,
+              "label": "Voyage de 1873-1875, récit publié en 1877"
+            },
+            "era": "polity",
+            "statement": "Le nom Kalala figure dans la liste des noms de personnes du pays d'Urua que publie Verney Lovett Cameron, qui note que ces noms ne distinguent pas les hommes et les femmes.",
+            "formAsWritten": "Kalala",
+            "sources": [
+              {
+                "title": "Across Africa, vol. 2",
+                "author": "Verney Lovett Cameron",
+                "year": 1877,
+                "url": "https://archive.org/details/acrossafrica02came",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 356",
+                "notes": "Londres, Daldy, Isbister, 1877, volume II ; exemplaire numérisé sur archive.org. Appendice II, « Kirua names », page 356 : la liste donne « Kalala », entre autres noms, avec la remarque « There is no distinction between male and female names ». Voyageur britannique, cité pour les formes qu'il écrit. Lu le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1857,
+              "to": 1860,
+              "label": "Voyage de 1857-1859, récit publié en 1860"
+            },
+            "era": "polity",
+            "statement": "Le nom Kalala apparaît par écrit chez Richard Burton, sous la même forme : c'est le nom d'un « sultan » des Wasukuma, que, selon Burton, une troupe de pillards avait attaqué quelques années plus tôt. C'est la plus ancienne trace de ce nom que le projet connaît ; elle nomme un chef sukuma, pas une famille luba.",
+            "formAsWritten": "Kalala",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lake Regions of Central Africa: A Picture of Exploration",
+                "author": "Richard F. Burton",
+                "year": 1860,
+                "url": "https://archive.org/details/lakeregionsCent00Burt",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 455",
+                "notes": "New York, Harper, 1860 ; exemplaire numérisé sur archive.org. Page 455 : « attacked Sultan Kalala of the Wasukuma ». Explorateur britannique, cité pour les formes qu'il écrit et ce qu'on lui rapporte. Page vue en image. Lu le 13 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

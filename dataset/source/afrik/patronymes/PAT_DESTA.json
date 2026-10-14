@@ -100,5 +100,105 @@
       "fieldPath": "countries",
       "reason": "La source propre au nom n'a pas confirmé le pays où il est porté ; les recherches « Desta » avec Ethiopia, Eritrea et les variantes de la fiche n'ont pas livré de registre officiel exploitable."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Desta est un nom personnel éthiopien, porté aussi en Érythrée. Il sert de second nom aux enfants d'un homme qui le porte, sans devenir un nom de famille. Il apparaît par écrit en 1921, dans la réimpression des souvenirs d'un missionnaire italien. Nous présentons plus bas l'explication de son sens que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Desta",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel d'Éthiopie et d'Érythrée, porté en second par les enfants d'un Desta.",
+        "periodLabel": "Écrit dès 1921 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1996,
+              "to": 2022,
+              "label": "Décrit en 1996 et en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Desta est un nom personnel porté en Éthiopie et en Érythrée. Une personne y porte son propre nom suivi du nom personnel de son père, parfois de celui de son grand-père : chez l'enfant d'un Desta, Desta est donc le nom du père, et il ne passe pas aux petits-enfants.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Names of Persons: National Usages for Entry in Catalogues",
+                "author": "IFLA Universal Bibliographic Control and International MARC Programme",
+                "year": 1996,
+                "url": "https://www.ifla.org/files/assets/cataloguing/pubs/names-of-persons_1996.pdf",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "page": "p. 64-65",
+                "notes": "Quatrième édition, Munich, K. G. Saur, 1996, lue dans le PDF de l'IFLA le 13 octobre 2026. La notice Éthiopie, p. 64-65, fournie par la bibliothèque de l'université d'Addis-Abeba et approuvée par la Bibliothèque et les Archives nationales en octobre 1994, compose le nom d'un nom personnel, suivi du nom personnel du père, parfois de celui du grand-père. Elle note que le Code civil de 1960 prescrit un nom de famille, usage qui ne s'est pas encore répandu."
+              },
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Desta",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/desta?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 13 octobre 2026 dans la traduction française que le site affiche. La notice dit : nom éthiopien et érythréen, du nom personnel masculin Desta signifiant « joie » en amharique. Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Desta voudrait dire « joie » en amharique, selon le Dictionary of American Family Names. Behind the Name donne la même glose.",
+            "hypothesisGroup": "origine du nom Desta",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Desta",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/desta?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 13 octobre 2026 dans la traduction française que le site affiche. La notice dit : nom éthiopien et érythréen, du nom personnel masculin Desta signifiant « joie » en amharique. Les Éthiopiens n'ayant pas de nom de famille héréditaire, le nom n'a été enregistré comme tel qu'après l'immigration de ses porteurs aux États-Unis."
+              },
+              {
+                "title": "Meaning, origin and history of the name Desta — Behind the Name",
+                "author": "Behind the Name",
+                "year": null,
+                "url": "https://www.behindthename.com/name/desta",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice du site Behind the Name, lue le 13 octobre 2026. Elle écrit le nom ደስታ, le dit amharique, féminin et masculin, et donne la glose « joy »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "1921"
+            },
+            "era": "polity",
+            "statement": "Le nom Desta apparaît par écrit dans la réimpression de 1921 des souvenirs de Guglielmo Massaja : c'est celui d'un moine, Abba Desta, chez qui le missionnaire passe la nuit dans le Bègemder. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un auteur l'a noté, pas depuis quand le nom est donné.",
+            "formAsWritten": "Abba Desta",
+            "birth": true,
+            "sources": [
+              {
+                "title": "I miei trentacinque anni di missione nell'alta Etiopia",
+                "author": "Guglielmo Massaja",
+                "year": 1921,
+                "url": "https://archive.org/details/imieitrentacinqu0000frag",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 120",
+                "notes": "Premier volume de la réimpression de 1921, approuvée par la Propagande à Rome le 18 décembre 1920. Lu le 13 octobre 2026 sur l'exemplaire numérisé d'archive.org. Page 120, au chapitre sur le Bègemder : « questo monaco, che chiamavasi Abba Desta », un moine abyssin chez qui Massaja passe la nuit. Cette édition ne dit pas, à cette page, l'année de l'épisode."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

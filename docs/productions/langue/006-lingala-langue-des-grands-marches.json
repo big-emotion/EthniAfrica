@@ -1,5 +1,5 @@
 {
-  "campaign": "lingala-langue-des-grands-marches",
+  "campaign": "lingala-plusieurs-lectures",
   "typologie": "langue",
   "episode": 6,
   "question": {
@@ -16,5 +16,30 @@
     }
   ],
   "sitePath": "/fr/atlas/langues/lin",
-  "publications": []
+  "publications": [
+    {
+      "network": "tiktok",
+      "format": "video",
+      "url": "https://www.tiktok.com/@ethniafrica/video/7691438814883073302",
+      "publishedAt": "2026-09-30"
+    },
+    {
+      "network": "instagram",
+      "format": "video",
+      "url": "https://www.instagram.com/p/Dd7RUuZqlIX/",
+      "publishedAt": "2026-09-30"
+    },
+    {
+      "network": "facebook",
+      "format": "video",
+      "url": "https://www.facebook.com/reel/1590963232501017",
+      "publishedAt": "2026-09-30"
+    },
+    {
+      "network": "youtube",
+      "format": "video",
+      "url": "https://www.youtube.com/shorts/cYS1tfFU09Y",
+      "publishedAt": "2026-09-30"
+    }
+  ]
 }
