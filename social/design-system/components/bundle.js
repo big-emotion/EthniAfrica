@@ -1,9 +1,33 @@
-/* EthniAfrica Cartes 1.2.0-proposition. Deterministic card builder: one JSON card spec in, one 1080 x 1350 element out.
+/* EthniAfrica Cartes 1.3.0-proposition. Deterministic card builder: one JSON card spec in, one 1080 x 1350 element out.
    No network, no framework. Images are resolved by the caller (opts.resolve). */
 (function () {
   'use strict';
   var W = 1080, H = 1350, MARGIN = 72, PANEL_MAX = 900, SCRIM = 300, MAP_SCRIM = 90;
-  var VERSION = '1.2.0-proposition';
+  /* 1.3.0: the series band. 72 px at the top of a series card (70 px of band and its 2 px rule); the image window
+     starts under it and keeps its 450 px, so a series card's panel stops at 828 px. */
+  var BAND_H = 72, BAND_CLEAR = 12, PANEL_MAX_SERIES = PANEL_MAX - BAND_H;
+  var SERIES = {
+    'pays': "D'où vient le nom de mon pays ?",
+    'nom-recu': "Le nom qu'on leur a donné",
+    'nom-famille': 'Mon nom, mon histoire',
+    'mots': "Les mots qu'on nous a collés",
+    'frontieres': 'Un peuple, plusieurs pays',
+    'afrique-tout': "L'Afrique n'est pas un tout",
+    'villes': 'Ce que les villes racontent'
+  };
+  function seriesOf(spec) {
+    var s = spec && spec.series;
+    if (!s) return null;
+    var name = s.name || SERIES[s.id];
+    if (!name) throw new Error('Série inconnue : ' + s.id);
+    return { name: name, episode: s.episode };
+  }
+  function seriesBand(sr) {
+    var band = el('div', 'ec-series');
+    band.innerHTML = '<div class="ec-series-text"><span class="ec-series-name">' + fr(sr.name) + '</span><span class="ec-series-sep"> · </span><span class="ec-series-episode">n° ' + esc(String(sr.episode)) + '</span></div>';
+    return band;
+  }
+  var VERSION = '1.3.0-proposition';
   var TAGLINE = 'L’Afrique à travers ses noms';
 
   function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
@@ -198,7 +222,8 @@
   function polyD(p) { return 'M' + p.map(function (q) { return q[0].toFixed(1) + ',' + q[1].toFixed(1); }).join('L') + 'Z'; }
 
   /* Pure layout in card pixels: zones, names written on the map, numbers, and where each marker sits. */
-  function atlasLayout(m, k, vb, d) {
+  function atlasLayout(m, k, vb, d, topMin) {
+    topMin = topMin || 8; /* under a series band, nothing is written within 12 px of it */
     var A = m.atlas;
     if (d && d.africa && !d._africaRings) d._africaRings = ringsOf(d.africa);
     var land = d && d._africaRings;
@@ -239,7 +264,7 @@
     var allInline = inlineMode === 'all' || (inlineMode === 'auto' && entries.length <= INLINE_MAX && !A.keys);
     var boxes = [];
     function rectFree(b, self) {
-      if (b.x < 8 || b.x + b.w > W - 8 || b.y < 8) return false;
+      if (b.x < 8 || b.x + b.w > W - 8 || b.y < topMin) return false;
       if (boxes.some(function (q) { return rectsHit(q, b, 6); })) return false;
       if (keys.some(function (q) { return q.h && rectsHit(q, b, 6); })) return false;
       return !entries.some(function (q) { return q !== self && !q.poly && circleRectHit([q.px, q.py], 12, b); });
@@ -447,14 +472,14 @@
     return { defs: defs, svg: s };
   }
 
-  function mapSvg(m, uid) {
+  function mapSvg(m, uid, bandTop) {
     var d = m.data, vb = (m.view || (d.meta && d.meta.viewBox ? d.meta.viewBox.split(' ').map(Number) : [0, 0, W, H]));
     var k = W / vb[2], borders = m.borders || 'none';
     var defs = '';
     ['area-a', 'area-b', 'area-c'].forEach(function (t) { defs += hatch(uid + '-' + t, t); });
     var cat = m.categorical ? categoricalSvg(m, d, k, uid) : null, mk = m.marks ? marksSvg(m, d, k, uid) : null;
     if (cat) defs += cat.defs; if (mk) defs += mk.defs;
-    var L = m.atlas ? atlasLayout(m, k, vb, d) : null;
+    var L = m.atlas ? atlasLayout(m, k, vb, d, bandTop) : null;
     var s = '<svg class="ec-map" viewBox="' + vb.join(' ') + '" preserveAspectRatio="xMidYMin slice" xmlns="http://www.w3.org/2000/svg"><defs>' + defs + '</defs>';
     s += '<rect class="ec-m-water" x="' + (vb[0] - 50) + '" y="' + (vb[1] - 50) + '" width="' + (vb[2] + 100) + '" height="' + (vb[3] + 100) + '"/>';
     if (d.africa && (m.atlas || m.categorical || m.dimOutside)) {
@@ -610,11 +635,15 @@
     if (spec.density === 'dense') card.classList.add('ec-dense');
     if (opts.diagnose) card.classList.add('ec-diagnose');
     card._spec = spec;
+    var sr = seriesOf(spec);
+    card._bandH = sr ? BAND_H : 0;
+    if (sr) card.classList.add('ec-has-series');
+    if (opts.context === 'video') card.classList.add('ec-in-video');
 
     var media = el('div', 'ec-media');
     card.appendChild(media);
     if (spec.map && spec.map.data) {
-      var ms = mapSvg(spec.map, 'm' + Math.abs(hash(String(spec.id || spec.title || ''))));
+      var ms = mapSvg(spec.map, 'm' + Math.abs(hash(String(spec.id || spec.title || ''))), card._bandH ? card._bandH + BAND_CLEAR : 0);
       media.innerHTML = ms.svg;
       card._map = ms;
     } else if (spec.image) {
@@ -709,7 +738,7 @@
     if (spec.note) { var nb = body(spec.note); nb.classList.add('ec-block'); p.appendChild(nb); }
     if (spec.quote) { var q = quote(spec.quote); q.classList.add('ec-block'); p.appendChild(q); }
     if (spec.map && spec.map.caption) p.appendChild(mapCaption(spec.map.caption));
-    if (spec.cue) p.appendChild(el('div', 'ec-cue', esc(spec.cue) + ' ›››'));
+    if (spec.cue && opts.context !== 'video') p.appendChild(el('div', 'ec-cue', esc(spec.cue) + ' ›››')); /* a video never asks to scroll */
     if (spec.cta) {
       var cta = el('div', 'ec-cta');
       cta.appendChild(el('span', 'ec-cta-pill', esc(spec.cta.domain || 'ethniafrica.com')));
@@ -720,6 +749,7 @@
     card.appendChild(p);
     card._panel = p; card._scrim = scrim;
 
+    if (sr) { card._band = seriesBand(sr); card.appendChild(card._band); }
     if (spec.demo && opts.demo !== false) card.appendChild(el('div', 'ec-demo', esc(spec.demo)));
     return card;
   }
@@ -731,15 +761,16 @@
     var spec = card._spec.image, img = card._img;
     if (!spec || !img) return null;
     var w = spec.w || img.naturalWidth, h = spec.h || img.naturalHeight;
-    var s = Math.max(W / w, H / h) * (spec.zoom || 1);
+    var top0 = card._bandH || 0; /* the image window starts under the series band */
+    var s = Math.max(W / w, (H - top0) / h) * (spec.zoom || 1);
     var f = spec.focus || [0.5, 0.5], a = spec.anchor || [0.5, 0.5];
-    var tx = a[0] * W - f[0] * w * s, ty = a[1] * panelTop - f[1] * h * s;
+    var tx = a[0] * W - f[0] * w * s, ty = top0 + a[1] * (panelTop - top0) - f[1] * h * s;
     tx = Math.min(0, Math.max(W - w * s, tx));
-    ty = Math.min(0, Math.max(H - h * s, ty));
+    ty = Math.min(top0, Math.max(H - h * s, ty));
     img.style.width = (w * s) + 'px'; img.style.height = (h * s) + 'px';
     img.style.transform = 'translate(' + tx.toFixed(1) + 'px,' + ty.toFixed(1) + 'px)';
     var fy = f[1] * h * s + ty, fx = f[0] * w * s + tx;
-    return { scale: s, focus: [Math.round(fx), Math.round(fy)], focusInWindow: fy < panelTop - 40 };
+    return { scale: s, focus: [Math.round(fx), Math.round(fy)], focusInWindow: fy < panelTop - 40 && fy > top0 + 20 };
   }
 
   /* Measure, then place the panel, veil and media. Returns the fit report used by acceptance checks. */
@@ -753,21 +784,35 @@
       if (Math.round(title.getBoundingClientRect().height / sc / lh) > 2) { title.classList.add('ec-title--m'); report.titleStep = 'm'; }
     }
     if (title && Math.round(title.getBoundingClientRect().height / sc / parseFloat(getComputedStyle(title).lineHeight)) > 3) report.warnings.push('Titre sur plus de trois lignes : le raccourcir.');
+    var pmax = card._bandH ? PANEL_MAX_SERIES : PANEL_MAX;
+    report.panelMax = pmax;
     var hgt = measure();
-    if (hgt > PANEL_MAX && spec.density !== 'dense' && spec.density !== 'normal') {
+    if (hgt > pmax && spec.density !== 'dense' && spec.density !== 'normal') {
       card.classList.add('ec-dense'); report.autoDense = true; hgt = measure();
     }
     report.dense = card.classList.contains('ec-dense');
     report.panelHeight = hgt;
     var top = H - hgt;
     report.panelTop = top;
-    report.overflow = hgt > PANEL_MAX;
-    if (report.overflow) { report.warnings.push('Panneau de ' + hgt + ' px (maximum ' + PANEL_MAX + ') : couper la carte en deux ou raccourcir.'); card.classList.add('ec-overflow'); }
+    report.overflow = hgt > pmax;
+    if (report.overflow) { report.warnings.push('Panneau de ' + hgt + ' px (maximum ' + pmax + (card._bandH ? ', bandeau de série compris' : '') + ') : couper la carte en deux ou raccourcir.'); card.classList.add('ec-overflow'); }
+    if (card._band) {
+      var bt = card._band.querySelector('.ec-series-text');
+      report.series = { text: bt.textContent, lines: Math.round(bt.getBoundingClientRect().height / sc / 34), right: Math.round((bt.getBoundingClientRect().right - card.getBoundingClientRect().left) / sc) };
+      if (report.series.lines > 1) report.warnings.push('Bandeau de série sur deux lignes : raccourcir le nom de la série, jamais le caractère.');
+    }
     if (spec.type === 'map' && spec.body) report.warnings.push('Carte géographique avec texte courant : la carte, le titre et la légende doivent suffire.');
     var scrimH = card._map ? MAP_SCRIM : SCRIM;
     card._scrim.style.top = Math.max(0, top - scrimH) + 'px';
     var pl = placeImage(card, top);
     if (pl) { report.image = pl; if (!pl.focusInWindow) report.warnings.push('Le point focal de l’image tombe sous le texte : déplacer focus ou anchor.'); }
+    if (card._map && card._bandH) {
+      var hi = [];
+      (spec.map.places || []).concat(spec.map.labels || []).forEach(function (l) {
+        if ((l.y - card._map.vb[1]) * card._map.k < card._bandH + BAND_CLEAR + 20) hi.push(l.text || l.name);
+      });
+      if (hi.length) report.warnings.push('Étiquettes de carte sous le bandeau de série : ' + hi.join(', ') + '. Recadrer (map.view).');
+    }
     if (card._map) {
       var m = spec.map, k = card._map.k, vb = card._map.vb, low = [];
       (m.places || []).concat(m.labels || []).forEach(function (l) {
@@ -787,7 +832,7 @@
       if (b > top - 16) report.warnings.push('Un agrandissement chevauche le panneau.');
     });
     if (card.classList.contains('ec-diagnose')) {
-      var g = el('div', 'ec-guide'); g.style.top = (H - PANEL_MAX) + 'px'; card.appendChild(g);
+      var g = el('div', 'ec-guide'); g.style.top = (H - pmax) + 'px'; card.appendChild(g);
     }
     report.ok = !report.overflow && report.warnings.length === 0;
     card._report = report;
@@ -810,7 +855,7 @@
     (card._keys || []).forEach(function (kb) {
       var r = cardRect(card, kb, sc), name = kb.querySelector('.ec-key-title').textContent;
       if (r.y + r.h > limit) report.warnings.push('Liste « ' + name + ' » sous le dégradé du panneau.');
-      if (r.x < 8 || r.x + r.w > W - 8 || r.y < 8) report.warnings.push('Liste « ' + name + ' » hors des marges.');
+      if (r.x < 8 || r.x + r.w > W - 8 || r.y < Math.max(8, (card._bandH || 0) + BAND_CLEAR)) report.warnings.push('Liste « ' + name + ' » hors des marges' + (card._bandH ? ' ou à moins de 12 px du bandeau' : '') + '.');
       if (africa && africa.isPointInFill) {
         var hit = false;
         for (var x = r.x + 4; x < r.x + r.w && !hit; x += 10) for (var y = r.y + 4; y < r.y + r.h && !hit; y += 10) {
@@ -837,6 +882,11 @@
     });
     Array.prototype.forEach.call(card.querySelectorAll('.ec-at-pt'), function (g) { items.push({ name: 'point ' + g.getAttribute('data-n'), r: cardRect(card, g, sc), pt: true }); });
     Array.prototype.forEach.call(card.querySelectorAll('.ec-key, .ec-callout, .ec-map-inset, .ec-demo'), function (b) { var t = b.querySelector('.ec-key-title'); items.push({ name: t ? 'liste ' + t.textContent : 'encadré', r: cardRect(card, b, sc), box: true }); });
+    if (card._band) {
+      var bandBox = { x: 0, y: 0, w: W, h: card._bandH + BAND_CLEAR };
+      var under = items.filter(function (it) { return it.r.y < bandBox.h && it.r.y + it.r.h > 0; }).map(function (it) { return it.name; });
+      if (under.length) report.warnings.push('À moins de 12 px du bandeau de série : ' + under.join(', ') + '.');
+    }
     var hits = [];
     for (var i = 0; i < items.length; i++) for (var j = i + 1; j < items.length; j++) {
       var a = items[i], b = items[j];
@@ -923,7 +973,8 @@
   /* Alternative text for an export: description of the image, then every word printed on the card, in reading order. */
   function altText(spec) {
     if (spec.alt) return spec.alt;
-    var parts = [];
+    var parts = [], sr = seriesOf(spec);
+    if (sr) parts.push(plain(sr.name) + ', n° ' + sr.episode);
     if (spec.imageAlt) parts.push(spec.imageAlt);
     ['kicker', 'title'].forEach(function (k) { if (spec[k]) parts.push(plain(spec[k])); });
     if (spec.date) {
@@ -946,7 +997,7 @@
   }
 
   window.EthniCards = {
-    version: VERSION, W: W, H: H, PANEL_MAX: PANEL_MAX,
+    version: VERSION, W: W, H: H, PANEL_MAX: PANEL_MAX, PANEL_MAX_SERIES: PANEL_MAX_SERIES, BAND_H: BAND_H, SERIES: SERIES, seriesOf: seriesOf,
     render: render, layout: layout, mount: mount,
     tokensToCss: tokensToCss, installTokens: installTokens, altText: altText,
     statusLabels: STATUS_LABEL, statusMark: statusMark, recap: recap, timeline: timeline, atlasLayout: atlasLayout

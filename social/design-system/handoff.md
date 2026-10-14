@@ -78,6 +78,7 @@ One JSON object per card. Every text field accepts `*mot*` for the accent word; 
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `id`              | string                                                                                                                                                                                | all                                                            | stable identifier, also the reference image name                                                                                                               |
 | `type`            | `opener`, `explanation`, `document`, `dated`, `map`, `closing`                                                                                                                        | all                                                            |                                                                                                                                                                |
+| `series`          | `{id, episode}` or `{name, episode}`                                                                                                                                                  | all (1.3.0)                                                    | series band; `id` among `pays`, `nom-recu`, `nom-famille`, `mots`, `frontieres`, `afrique-tout`, `villes`; panel limit 828 px                                  |
 | `theme`           | `nuit` (default), `parchemin`                                                                                                                                                         | all                                                            | one theme per carousel                                                                                                                                         |
 | `folio`           | string                                                                                                                                                                                | all                                                            | « 03/08 »                                                                                                                                                      |
 | `kicker`          | string                                                                                                                                                                                | all                                                            | accent, no forced capitals                                                                                                                                     |
@@ -212,6 +213,20 @@ the steps below are what was done.
    warnings, and that the alternative text covers zones, keys, territories and
    the period marker (`EthniCards.altText` now describes them).
 
+## Renderer integration of 1.3.0
+
+The operator accepted 1.3.0-proposition on 14 October 2026 and chose video layout **B** (decision 4). Layout A is not to be implemented; its boards stay in the `Vidéo` group as the record of the choice.
+
+**New fields.** `series: {id, episode}` (or `{name, episode}`) on any card; `EthniCards.SERIES`, `EthniCards.seriesOf`, `EthniCards.BAND_H` (72) and `EthniCards.PANEL_MAX_SERIES` (828) in the engine; the mount option `context: 'video'`, which leaves out the « Faites défiler » cue. The fit report adds `report.panelMax` and, on a series card, `report.series: {text, lines, right}`.
+
+**New refusals.** A series card whose panel exceeds 828 px; a band on two lines; a map text, marker, key, callout or inset within 12 px of the band; a series card whose photograph's focal point falls under the band; an unknown series `id` (the engine throws).
+
+**New references.** The 49 model cards `serie-<series>-NN` and the two band-over-map samples `serie-atlas-1880` and `serie-atlas-1914-parchemin`, 51 in all, in the `References` group; the images they use are in `assets/Series/` (8 verified pictures from the site's credited library, 34 « image à trouver » slots).
+
+**Existing references that change: none.** The 37 cards without `series` were rendered again with 1.3.0 and compared with the 1.2.0 references: identical pixel for pixel. The 38th, `overflow`, is drawn in diagnostic mode and unchanged.
+
+**Video.** `handoff/video-board.html` renders one frame of the series video in layout A or B; it is a design board, not the video renderer. The video belongs to `social/video` (Vidéo carte 0.4.0's chunks, highlight, reading rule and voice timing), in layout B: frame 1080 × 1920, band, video card (Series, « Vidéo de série », layout B), subtitles, the 300 ms cross-fade, the 100 to 104 % zoom and the ending « série » (Series, « Vidéo de série »).
+
 ## Required assets
 
 - Fonts: `fonts/Anton-Regular.ttf`, `fonts/NunitoSans.ttf`, `fonts/NotoSans-Variable.ttf`, `fonts/Fraunces.ttf`, `fonts/NotoSansEthiopic-Bold.ttf`, all under the SIL Open Font License 1.1.
@@ -252,3 +267,9 @@ the steps below are what was done.
 - Afternoon review: the 1914 map names its territories (AOF, AEF, Congo belge…); present-day borders are dotted on the 1914 and independence maps; states, societies and cultures are drawn as approximate zones at one moment rather than numbered points, which read as towns; dates must be checked.
 - Decisions taken in this proposal, open to the operator's proof: the wording « Société sans roi » in the legend (the brief allows a change at proof); the « ° » mark for uncertain dates; the diamond for archaeological sites; the 1914 legend in three columns in the panel rather than a key over the sea; one frame for all point maps of a carousel.
 - Accepted by the operator on 12 October 2026 after the afternoon review (« c'est parfait »), with these decisions.
+
+## Commissioned on 13 October 2026 (1.3.0)
+
+- The operator's decisions of 13 October 2026, drawn as given: the band at the top of the card; 72 px taken from the panel (828 px), the image window keeping 450 px; the episode number in `accent`; the video's ending keeps « Cherchez [nom] sur EthniAfrica, lien en profil. », a deliberate exception to the 0.4.0 endings; an image on every model card.
+- Video layout chosen by the operator on 14 October 2026: B, the video's own card (decision 4).
+- Accepted by the operator on 14 October 2026, with these decisions.
