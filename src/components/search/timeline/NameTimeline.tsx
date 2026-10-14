@@ -3,6 +3,8 @@
 import { Fragment, useState } from "react";
 
 import { getSearchEntityLabel } from "@/components/search/searchEntityAccent";
+import { NameSourcesBlock } from "@/components/search/timeline/NameClosing";
+import { otherVoiceKinds } from "@/lib/search/nameClosing";
 import { TileSourceMarker } from "@/components/search/timeline/TileSourceMarker";
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
 import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
@@ -31,6 +33,11 @@ export interface NameTimelineProps {
   headingLevel?: "h1" | "h2";
   /** The subject's countries, so « ailleurs » skips its own region. */
   countryIds?: readonly string[];
+  /**
+   * Whether « Les sources parlent » opens its first family (brief 1): the
+   * first subject of the page does, the others stay folded.
+   */
+  sourcesOpen?: boolean;
   language: Language;
 }
 
@@ -66,6 +73,7 @@ export function NameTimeline({
   subjectType,
   headingLevel = "h1",
   countryIds,
+  sourcesOpen = false,
   language,
 }: NameTimelineProps) {
   const copy = nameTimelineCopy[language];
@@ -120,189 +128,208 @@ export function NameTimeline({
   );
 
   return (
-    <section className="afh-name-timeline" data-name-timeline="">
-      <div className="afh-tile" data-timeline-summary="">
-        <p className="afh-tile-label">
-          {copy.eyebrow(getSearchEntityLabel(subjectType))}
-        </p>
-        <Heading className="afh-name-timeline-title">
-          {timeline.names[0].nameText}
-        </Heading>
-        <p className="afh-name-timeline-summary">
-          <NamedText text={timeline.summary} forms={forms} />
-        </p>
-        {timeline.selfLead && selfLine && selfIndex >= 0 ? (
-          <button
-            type="button"
-            className={cn("afh-name-timeline-lead", CHARTER_FOCUS_RING)}
-            onClick={() => setShown(selfIndex)}
-          >
-            <span>
-              <NamedText
-                text={`${leadCopy.searched(timeline.selfLead.searched)} ${selfLine(timeline.selfLead.self)}`}
-                forms={forms}
-              />
-            </span>
-            <span className="afh-name-timeline-lead-go" aria-hidden="true">
-              {copy.seeSelfName}
-            </span>
-          </button>
-        ) : null}
-      </div>
-
-      <div
-        role="group"
-        aria-label={copy.namesLabel(timeline.names[0].nameText)}
-        className="afh-name-timeline-names"
-      >
-        {timeline.names.map((candidate, index) => (
-          <button
-            key={candidate.nameText}
-            type="button"
-            aria-pressed={index === shown}
-            onClick={() => setShown(index)}
-            className={cn("afh-name-timeline-name", CHARTER_FOCUS_RING)}
-          >
-            <span>{candidate.nameText}</span>
-            {candidate.searched ? (
-              <span className="afh-name-timeline-mark">
-                {" "}
-                · {copy.searchedMark}
-              </span>
-            ) : candidate.former ? (
-              <span className="afh-name-timeline-mark">
-                {" "}
-                · {copy.formerMark}
-              </span>
-            ) : null}
-          </button>
-        ))}
-      </div>
-
-      {name.shortLine ? (
-        <p className="afh-name-timeline-intro">
-          <NamedText text={name.shortLine} forms={forms} />
-        </p>
-      ) : null}
-      {!name.hasBirth ? (
-        <p className="afh-name-timeline-nobirth" role="note">
-          {copy.noBirth(name.nameText)}
-        </p>
-      ) : null}
-
-      <div className="afh-name-timeline-tools">
-        <p className="afh-name-timeline-hint">
-          <span aria-hidden="true">↓ </span>
-          {copy.hint}
-        </p>
-        {hasAnchors ? (
-          <button
-            type="button"
-            aria-pressed={elsewhere}
-            onClick={() => setElsewhere((value) => !value)}
-            className={cn(
-              "afh-name-timeline-elsewhere-toggle",
-              CHARTER_FOCUS_RING
-            )}
-          >
-            {copy.elsewhereButton}
-          </button>
-        ) : null}
-      </div>
-
-      {regimes.length > 0 ? (
-        <ul
-          className="afh-chronology-legend"
-          aria-label={copy.regimeLegend}
-          data-chronology-legend=""
-        >
-          {regimes.map((regime) => (
-            <li key={regime} data-regime={regime}>
-              {copy.regime[regime]}
-            </li>
-          ))}
-        </ul>
-      ) : null}
-
-      <ol
-        className="afh-chronology"
-        aria-label={copy.tilesLabel(name.nameText)}
-      >
-        {name.tiles.map((tile) => {
-          const anchor = elsewhere ? anchorOf(tile) : undefined;
-          return (
-            <li
-              key={tile.key}
-              className="afh-chronology-station"
-              data-regime={tile.regime}
-              data-placement={tile.placement}
+    <>
+      <section className="afh-name-timeline" data-name-timeline="">
+        <div className="afh-tile" data-timeline-summary="">
+          <p className="afh-tile-label">
+            {copy.eyebrow(getSearchEntityLabel(subjectType))}
+          </p>
+          <Heading className="afh-name-timeline-title">
+            {timeline.names[0].nameText}
+          </Heading>
+          <p className="afh-name-timeline-summary">
+            <NamedText text={timeline.summary} forms={forms} />
+          </p>
+          {timeline.selfLead && selfLine && selfIndex >= 0 ? (
+            <button
+              type="button"
+              className={cn("afh-name-timeline-lead", CHARTER_FOCUS_RING)}
+              onClick={() => setShown(selfIndex)}
             >
-              <div className="afh-tile">
-                {tile.placement === "birth" ? (
-                  <p className="afh-name-timeline-pill">
-                    {copy.birthMark(name.nameText)}
-                  </p>
-                ) : tile.placement === "before" ? (
-                  <p className="afh-name-timeline-pill">
-                    {copy.beforeMark(name.nameText)}
-                  </p>
-                ) : null}
-                {tile.periodLabel ? (
-                  <p className="afh-name-timeline-period">{tile.periodLabel}</p>
-                ) : null}
-                {tile.hypotheses ? (
-                  <>
-                    <p className="afh-name-timeline-hypotheses">
-                      <NamedText
-                        text={copy.hypothesesHeading(name.nameText)}
-                        forms={forms}
-                      />
+              <span>
+                <NamedText
+                  text={`${leadCopy.searched(timeline.selfLead.searched)} ${selfLine(timeline.selfLead.self)}`}
+                  forms={forms}
+                />
+              </span>
+              <span className="afh-name-timeline-lead-go" aria-hidden="true">
+                {copy.seeSelfName}
+              </span>
+            </button>
+          ) : null}
+        </div>
+
+        <div
+          role="group"
+          aria-label={copy.namesLabel(timeline.names[0].nameText)}
+          className="afh-name-timeline-names"
+        >
+          {timeline.names.map((candidate, index) => (
+            <button
+              key={candidate.nameText}
+              type="button"
+              aria-pressed={index === shown}
+              onClick={() => setShown(index)}
+              className={cn("afh-name-timeline-name", CHARTER_FOCUS_RING)}
+            >
+              <span>{candidate.nameText}</span>
+              {candidate.searched ? (
+                <span className="afh-name-timeline-mark">
+                  {" "}
+                  · {copy.searchedMark}
+                </span>
+              ) : candidate.former ? (
+                <span className="afh-name-timeline-mark">
+                  {" "}
+                  · {copy.formerMark}
+                </span>
+              ) : null}
+            </button>
+          ))}
+        </div>
+
+        {name.shortLine ? (
+          <p className="afh-name-timeline-intro">
+            <NamedText text={name.shortLine} forms={forms} />
+          </p>
+        ) : null}
+        {!name.hasBirth ? (
+          <p className="afh-name-timeline-nobirth" role="note">
+            {copy.noBirth(name.nameText)}
+          </p>
+        ) : null}
+
+        <div className="afh-name-timeline-tools">
+          <p className="afh-name-timeline-hint">
+            <span aria-hidden="true">↓ </span>
+            {copy.hint}
+          </p>
+          {hasAnchors ? (
+            <button
+              type="button"
+              aria-pressed={elsewhere}
+              onClick={() => setElsewhere((value) => !value)}
+              className={cn(
+                "afh-name-timeline-elsewhere-toggle",
+                CHARTER_FOCUS_RING
+              )}
+            >
+              {copy.elsewhereButton}
+            </button>
+          ) : null}
+        </div>
+
+        {regimes.length > 0 ? (
+          <ul
+            className="afh-chronology-legend"
+            aria-label={copy.regimeLegend}
+            data-chronology-legend=""
+          >
+            {regimes.map((regime) => (
+              <li key={regime} data-regime={regime}>
+                {copy.regime[regime]}
+              </li>
+            ))}
+          </ul>
+        ) : null}
+
+        <ol
+          className="afh-chronology"
+          aria-label={copy.tilesLabel(name.nameText)}
+        >
+          {name.tiles.map((tile) => {
+            const anchor = elsewhere ? anchorOf(tile) : undefined;
+            return (
+              <li
+                key={tile.key}
+                className="afh-chronology-station"
+                data-regime={tile.regime}
+                data-placement={tile.placement}
+              >
+                <div className="afh-tile">
+                  {tile.placement === "birth" ? (
+                    <p className="afh-name-timeline-pill">
+                      {copy.birthMark(name.nameText)}
                     </p>
-                    {tile.accounts.map((account, index) => (
-                      <div key={index} className="afh-name-timeline-hypothesis">
-                        <p className="afh-name-timeline-tag">
-                          <span>{copy.hypothesis(index + 1)}</span>
-                          {tile.periodLabel ? null : (
-                            <span> · {account.period.label}</span>
+                  ) : tile.placement === "before" ? (
+                    <p className="afh-name-timeline-pill">
+                      {copy.beforeMark(name.nameText)}
+                    </p>
+                  ) : null}
+                  {tile.periodLabel ? (
+                    <p className="afh-name-timeline-period">
+                      {tile.periodLabel}
+                    </p>
+                  ) : null}
+                  {tile.hypotheses ? (
+                    <>
+                      <p className="afh-name-timeline-hypotheses">
+                        <NamedText
+                          text={copy.hypothesesHeading(name.nameText)}
+                          forms={forms}
+                        />
+                      </p>
+                      {tile.accounts.map((account, index) => (
+                        <div
+                          key={index}
+                          className="afh-name-timeline-hypothesis"
+                        >
+                          <p className="afh-name-timeline-tag">
+                            <span>{copy.hypothesis(index + 1)}</span>
+                            {tile.periodLabel ? null : (
+                              <span> · {account.period.label}</span>
+                            )}
+                          </p>
+                          {passage(account, `${tile.key}-${index}`)}
+                        </div>
+                      ))}
+                    </>
+                  ) : (
+                    passage(tile.accounts[0], tile.key)
+                  )}
+                  {anchor ? (
+                    <div
+                      className="afh-name-timeline-elsewhere"
+                      data-elsewhere=""
+                    >
+                      <p className="afh-name-timeline-tag">
+                        {copy.elsewhereTitle}
+                      </p>
+                      <p className="afh-name-timeline-statement">
+                        <NamedText
+                          text={copy.elsewhereLead[tile.placement](
+                            name.nameText
                           )}
-                        </p>
-                        {passage(account, `${tile.key}-${index}`)}
-                      </div>
-                    ))}
-                  </>
-                ) : (
-                  passage(tile.accounts[0], tile.key)
-                )}
-                {anchor ? (
-                  <div
-                    className="afh-name-timeline-elsewhere"
-                    data-elsewhere=""
-                  >
-                    <p className="afh-name-timeline-tag">
-                      {copy.elsewhereTitle}
-                    </p>
-                    <p className="afh-name-timeline-statement">
-                      <NamedText
-                        text={copy.elsewhereLead[tile.placement](name.nameText)}
-                        forms={forms}
-                      />{" "}
-                      {anchor.sentence}
-                      {"\u00a0"}
-                      <TileSourceMarker
-                        statement={anchor.sentence}
-                        sources={anchor.sources}
-                        anchorId={anchorIdOf(`${tile.key}-elsewhere`)}
-                        language={language}
-                      />
-                    </p>
-                  </div>
-                ) : null}
-              </div>
-            </li>
-          );
-        })}
-      </ol>
-      <p className="afh-name-timeline-end">{copy.end(name.nameText)}</p>
-    </section>
+                          forms={forms}
+                        />{" "}
+                        {anchor.sentence}
+                        {"\u00a0"}
+                        <TileSourceMarker
+                          statement={anchor.sentence}
+                          sources={anchor.sources}
+                          anchorId={anchorIdOf(`${tile.key}-elsewhere`)}
+                          language={language}
+                        />
+                      </p>
+                    </div>
+                  ) : null}
+                </div>
+              </li>
+            );
+          })}
+        </ol>
+        <p className="afh-name-timeline-end">{copy.end(name.nameText)}</p>
+      </section>
+      {/* Block 3 follows the name the chips have open (brief 1). */}
+      <NameSourcesBlock
+        key={name.nameText}
+        name={name}
+        forms={forms}
+        open={sourcesOpen}
+        otherKinds={otherVoiceKinds(timeline.names, name)}
+        subjectType={subjectType}
+        language={language}
+      />
+    </>
   );
 }

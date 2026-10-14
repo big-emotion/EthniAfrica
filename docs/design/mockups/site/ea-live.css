@@ -4428,12 +4428,12 @@ svg { display: block; }
   border-radius: 2px; transform: rotate(45deg);
   background: var(--afh-source-other);
 }
-[data-family="oral"] > .ea-voice-mark, .ea-voice-mark[data-family="oral"] { background: var(--afh-source-oral); }
-[data-family="book"] > .ea-voice-mark, .ea-voice-mark[data-family="book"] { background: var(--afh-source-book); }
-[data-family="encyclopedia"] > .ea-voice-mark, .ea-voice-mark[data-family="encyclopedia"] { background: var(--afh-source-encyclopedia); }
-[data-family="press"] > .ea-voice-mark, .ea-voice-mark[data-family="press"] { background: var(--afh-source-press); }
-[data-family="report"] > .ea-voice-mark, .ea-voice-mark[data-family="report"] { background: var(--afh-source-report); }
-[data-family="archive"] > .ea-voice-mark, .ea-voice-mark[data-family="archive"] { background: var(--afh-source-archive); }
+[data-family="oral"] .ea-voice-mark { background: var(--afh-source-oral); }
+[data-family="book"] .ea-voice-mark { background: var(--afh-source-book); }
+[data-family="encyclopedia"] .ea-voice-mark { background: var(--afh-source-encyclopedia); }
+[data-family="press"] .ea-voice-mark { background: var(--afh-source-press); }
+[data-family="report"] .ea-voice-mark { background: var(--afh-source-report); }
+[data-family="archive"] .ea-voice-mark { background: var(--afh-source-archive); }
 .ea-voices-groups { display: flex; flex-direction: column; gap: var(--afh-space-md); }
 .ea-voice {
   border: 1px solid var(--afh-border); border-radius: var(--afh-radius-lg);
@@ -4505,12 +4505,12 @@ svg { display: block; }
 }
 .ea-silences { display: flex; flex-direction: column; gap: var(--afh-space-md); margin-top: var(--afh-space-lg); }
 .ea-silences li {
-  display: grid; grid-template-columns: 14px 1fr; gap: var(--afh-space-lg); align-items: baseline;
+  position: relative; padding-left: 26px;
   font-size: var(--afh-text-small); line-height: 1.6; color: var(--afh-text);
 }
 .ea-silences li::before {
-  content: ""; width: 10px; height: 10px; border-radius: 50%;
-  border: 1.5px dashed var(--afh-name-before-dash); transform: translateY(1px);
+  content: ""; position: absolute; left: 0; top: 0.5em; width: 10px; height: 10px; border-radius: 50%;
+  border: 1.5px dashed var(--afh-name-before-dash);
 }
 .ea-conviction {
   padding-top: var(--afh-space-5xl); border-top: 1px solid var(--afh-border);

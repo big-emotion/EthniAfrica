@@ -19,6 +19,13 @@ import {
 } from "@/api/v2/schemas/searchCompanions";
 import type { WordAnswer } from "@/lib/search/answer";
 import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
+import { nameClosingCopy } from "@/lib/i18n/copy/nameClosing";
+import {
+  firstSentence,
+  nextStepTargets,
+  seedNextSteps,
+  type NextStepCard,
+} from "@/lib/search/nameClosing";
 import type { Language } from "@/types/shared";
 
 import {
@@ -318,6 +325,43 @@ async function loadNameHistory(
     });
     return null;
   }
+}
+
+/**
+ * The names a page offers next (brief 1, block 8): the ones its subjects'
+ * data already links to, each with the first sentence of its own summary as
+ * the reason. A target whose name history does not load is left out; a page
+ * with no subject offers two seed names instead.
+ */
+// @req REQ-198
+export async function loadNextSteps(
+  subjects: readonly SearchResult[],
+  language: Language,
+  signal?: AbortSignal
+): Promise<NextStepCard[]> {
+  if (subjects.length === 0) return seedNextSteps(language);
+  const copy = nameClosingCopy[language];
+  const targets = nextStepTargets(subjects);
+  const histories = await Promise.all(
+    targets.map((target) =>
+      loadNameHistory(
+        { type: target.type, id: target.id, name: target.name },
+        signal
+      )
+    )
+  );
+  return targets.flatMap((target, index) => {
+    const summary = histories[index]?.nameHistory.summary;
+    return summary
+      ? [
+          {
+            kind: copy.nextRelation[target.relation],
+            name: target.name,
+            reason: firstSentence(summary),
+          },
+        ]
+      : [];
+  });
 }
 
 /**
