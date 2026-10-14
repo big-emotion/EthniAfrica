@@ -281,12 +281,12 @@
             "statement": "Le nom Buduma est écrit Búdūma dans la Polyglotta Africana du linguiste Sigismund Koelle, qui l'emploie pour « la langue des îles Dsháde », c'est-à-dire du lac Tchad. Koelle tient ses mots d'un jeune informateur dont il juge lui-même la mémoire incertaine.",
             "sources": [
               {
-                "title": "Polyglotta Africana (1854), transcription savante des remarques de l'auteur",
+                "title": "Polyglotta Africana, jeu de données Lexibank",
                 "author": "Sigismund Wilhelm Koelle",
                 "year": 1854,
                 "url": "https://github.com/lexibank/polyglottaafricana",
                 "tier": "referenced",
-                "source_kind": "archive",
+                "source_kind": "linguistic_reference",
                 "notes": "Londres, Church Missionary House, 1854. Lu dans la transcription publiée comme jeu de données par le projet Lexibank, qui reprend les remarques de l'auteur langue par langue, sans la pagination du livre, le 11 octobre 2026. Koelle a recueilli ses informations à Freetown auprès d'Africains libérés de la traite. Remarque placée sous la langue « Búdūma » de la section VII-A-1."
               }
             ]

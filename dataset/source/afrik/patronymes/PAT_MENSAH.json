@@ -141,13 +141,13 @@
             "birth": true,
             "sources": [
               {
-                "title": "A Grammatical Sketch of the Akra- or Gã-Language, vol. II (vocabulaire)",
+                "title": "A Grammatical Sketch of the Akra- or Gã-Language",
                 "author": "Johannes Zimmermann",
                 "year": 1858,
                 "url": "https://archive.org/details/agrammaticalske01zimmgoog",
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",
-                "page": "p. 289",
+                "page": "p. 289 du vocabulaire",
                 "notes": "Stuttgart, imprimé pour la Société missionnaire de Bâle par J. F. Steinkopf, 1858 ; exemplaire numérisé d'archive.org, pagination continue. Page 289, entrée « Tete » : noms des enfants selon leur rang, dont « Mêsa and Mânsa, of the 3. », pris, dit l'auteur, des nombres « otyi », c'est-à-dire twi. Missionnaire de Bâle, cité pour les formes qu'il relève. Lu le 14 octobre 2026."
               }
             ]

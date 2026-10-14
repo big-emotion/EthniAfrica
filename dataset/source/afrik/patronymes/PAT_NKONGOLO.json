@@ -13,7 +13,7 @@
       "attestations": [
         {
           "countryId": "COD",
-          "sourceRefs": ["wrigley-1974-nkongolo"]
+          "sourceRefs": ["colle-1913-baluba-ii"]
         }
       ]
     }
@@ -25,9 +25,14 @@
     "writtenChronicles": [],
     "linguisticReconstructions": [
       {
-        "claim": "Wrigley établit que Nkongolo signifie « arc-en-ciel » dans le matériau luba étudié et que les Luba identifient cette figure tantôt à l'esprit d'un ancien roi, tantôt à un serpent cosmique. L'article présente cette lecture comme un sens lexical attesté, tout en distinguant le mythe d'une chronologie historique littérale.",
+        "claim": "Le dictionnaire français-kiluba d'Em. Jenniges (1909) donne nkongolo pour « arc-en-ciel ».",
         "claimStatus": "established",
-        "sourceRefs": ["wrigley-1974-nkongolo"]
+        "sourceRefs": ["jenniges-1909-kiluba"]
+      },
+      {
+        "claim": "Le père Colle écrit en 1913 que l'arc-en-ciel s'appelle Mwamba Nkongolo, du nom d'un génie, et que nkongolo, qui signifie pour lui « courbé », paraît secondaire. Sa lecture n'est pas celle du dictionnaire de Jenniges : les deux sont gardées côte à côte.",
+        "claimStatus": "claimed",
+        "sourceRefs": ["colle-1913-baluba-ii"]
       }
     ]
   },
@@ -35,7 +40,7 @@
     {
       "peopleId": "PPL_LUBA",
       "status": "attested",
-      "sourceRefs": ["wrigley-1974-nkongolo"]
+      "sourceRefs": ["colle-1913-baluba-ii"]
     }
   ],
   "countries": [
@@ -51,12 +56,20 @@
   "homonyms": [],
   "sources": [
     {
-      "sourceKey": "wrigley-1974-nkongolo",
-      "title": "Myths of the Savanna",
-      "url": "https://scispace.com/papers/myths-of-the-savanna-39qy0bc9vs",
+      "sourceKey": "jenniges-1909-kiluba",
+      "title": "Dictionnaire français-kiluba, exposant le vocabulaire de la langue kiluba telle qu'elle se parle au Katanga, publié par le Ministère des Colonies de Belgique",
+      "url": "https://archive.org/details/dictionnairefran00jennuoft",
       "tier": "referenced",
-      "source_kind": "academic",
-      "notes": "Notice et extrait de l'article de C. C. Wrigley, Journal of African History 15(1), 1974, DOI 10.1017/S0021853700013281, consultés directement. L'article explicite le sens de Nkongolo dans la tradition luba et avertit que le récit dynastique ne doit pas être lu comme une chronique factuelle simple."
+      "source_kind": "linguistic_reference",
+      "notes": "Em. Jenniges, 1909, p. 16. Bruxelles, Spineux, 1909. Lu dans la numérisation d'archive.org. Page 16 : « Arc-en-ciel, nkongolo. » Le dictionnaire va du français au kiluba ; il donne le mot, pas son histoire. Lu le 13 octobre 2026."
+    },
+    {
+      "sourceKey": "colle-1913-baluba-ii",
+      "title": "Les Baluba (Congo belge), tome II",
+      "url": "https://archive.org/details/lesbalubacongob02coll",
+      "tier": "referenced",
+      "source_kind": "archive",
+      "notes": "R. P. Colle, 1913, p. 462-463. Collection de monographies ethnographiques publiée par Cyr. van Overbergh, Bruxelles, Albert Dewit et Institut international de bibliographie, 1913 ; l'auteur est un missionnaire des Pères Blancs et décrit de l'extérieur le pays des Baluba, limité au nord par la Lukuga et au sud et à l'ouest par le Luvwa et le Lualaba (tome I, p. 3). Lu dans la numérisation d'archive.org. Pages 462-463 : l'arc-en-ciel est « un double serpent [...] qui tue tous ceux qu'il touche, sauf les individus nommés Mwamba et Nkongolo » ; l'occupant d'une case sur laquelle repose un bout de l'arc-en-ciel doit mourir « à moins qu'il ne porte le nom du génie Mwamba ou Nkongolo ». Lu le 13 octobre 2026."
     },
     {
       "sourceKey": "forebears-nkongolo",
@@ -70,27 +83,27 @@
   "gaps": [
     {
       "fieldPath": "nameSystem",
-      "reason": "la recherche web et bibliographique combinant « Nkongolo », « Luba », « Congo », « surname », « rainbow », « oral tradition », « onomastics », « etymology », « clan », « transmission », « alliance », « caste », « homonym » et « obituary », ainsi que l'article de Wrigley et la page Forebears dédiée n'ont pas établi que la catégorie de système nominal portée par la fiche provisoire décrive ce nom lui-même ; elle reste une hypothèse de classement et n'est pas transformée en fait."
+      "reason": "la recherche web et bibliographique combinant « Nkongolo », « Luba », « Congo », « surname », « rainbow », « oral tradition », « onomastics », « etymology », « clan », « transmission », « alliance », « caste », « homonym » et « obituary », ainsi que la page Forebears dédiée n'ont pas établi que la catégorie de système nominal portée par la fiche provisoire décrive ce nom lui-même ; elle reste une hypothèse de classement et n'est pas transformée en fait."
     },
     {
       "fieldPath": "alliances",
-      "reason": "la recherche web et bibliographique combinant « Nkongolo », « Luba », « Congo », « surname », « rainbow », « oral tradition », « onomastics », « etymology », « clan », « transmission », « alliance », « caste », « homonym » et « obituary », ainsi que l'article de Wrigley et la page Forebears dédiée n'ont identifié aucune alliance ni parenté à plaisanterie documentée reliant ce nom à un autre nom documenté ici."
+      "reason": "la recherche web et bibliographique combinant « Nkongolo », « Luba », « Congo », « surname », « rainbow », « oral tradition », « onomastics », « etymology », « clan », « transmission », « alliance », « caste », « homonym » et « obituary », ainsi que la page Forebears dédiée n'ont identifié aucune alliance ni parenté à plaisanterie documentée reliant ce nom à un autre nom documenté ici."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "la recherche web et bibliographique combinant « Nkongolo », « Luba », « Congo », « surname », « rainbow », « oral tradition », « onomastics », « etymology », « clan », « transmission », « alliance », « caste », « homonym » et « obituary », ainsi que l'article de Wrigley et la page Forebears dédiée n'ont établi aucune fonction sociale ou professionnelle héréditaire propre à ce nom."
+      "reason": "la recherche web et bibliographique combinant « Nkongolo », « Luba », « Congo », « surname », « rainbow », « oral tradition », « onomastics », « etymology », « clan », « transmission », « alliance », « caste », « homonym » et « obituary », ainsi que la page Forebears dédiée n'ont établi aucune fonction sociale ou professionnelle héréditaire propre à ce nom."
     },
     {
       "fieldPath": "bearers",
-      "reason": "la recherche web et bibliographique combinant « Nkongolo », « Luba », « Congo », « surname », « rainbow », « oral tradition », « onomastics », « etymology », « clan », « transmission », « alliance », « caste », « homonym » et « obituary », ainsi que l'article de Wrigley et la page Forebears dédiée n'ont livré aucune notice réunissant sans ambiguïté un porteur décédé, son statut vital et le rattachement ethnolinguistique retenu dans cette fiche ; les personnes vivantes ou de statut vital incertain ont été exclues."
+      "reason": "la recherche web et bibliographique combinant « Nkongolo », « Luba », « Congo », « surname », « rainbow », « oral tradition », « onomastics », « etymology », « clan », « transmission », « alliance », « caste », « homonym » et « obituary », ainsi que la page Forebears dédiée n'ont livré aucune notice réunissant sans ambiguïté un porteur décédé, son statut vital et le rattachement ethnolinguistique retenu dans cette fiche ; les personnes vivantes ou de statut vital incertain ont été exclues."
     },
     {
       "fieldPath": "homonyms",
-      "reason": "la recherche web et bibliographique combinant « Nkongolo », « Luba », « Congo », « surname », « rainbow », « oral tradition », « onomastics », « etymology », « clan », « transmission », « alliance », « caste », « homonym » et « obituary », ainsi que l'article de Wrigley et la page Forebears dédiée n'ont pas établi de lignée homonyme d'origine distincte documentable ; une diffusion dans plusieurs pays ou une graphie voisine ne suffit pas à créer un homonyme."
+      "reason": "la recherche web et bibliographique combinant « Nkongolo », « Luba », « Congo », « surname », « rainbow », « oral tradition », « onomastics », « etymology », « clan », « transmission », « alliance », « caste », « homonym » et « obituary », ainsi que la page Forebears dédiée n'ont pas établi de lignée homonyme d'origine distincte documentable ; une diffusion dans plusieurs pays ou une graphie voisine ne suffit pas à créer un homonyme."
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "la recherche web et bibliographique combinant « Nkongolo », « Luba », « Congo », « surname », « rainbow », « oral tradition », « onomastics », « etymology », « clan », « transmission », « alliance », « caste », « homonym » et « obituary », ainsi que l'article de Wrigley et la page Forebears dédiée n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
+      "reason": "la recherche web et bibliographique combinant « Nkongolo », « Luba », « Congo », « surname », « rainbow », « oral tradition », « onomastics », « etymology », « clan », « transmission », « alliance », « caste », « homonym » et « obituary », ainsi que la page Forebears dédiée n'ont établi aucune règle propre à ce nom permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
   ],
   "nameHistory": {
@@ -208,7 +221,7 @@
             "sources": [
               {
                 "title": "Historical Dictionary of the Democratic Republic of the Congo, Third Edition",
-                "author": "Emizet François Kisangani ; F. Scott Bobb",
+                "author": "Emizet François Kisangani et F. Scott Bobb",
                 "year": 2010,
                 "url": "https://shcas.shnu.edu.cn/_upload/article/files/dc/3d/863da74f4f1dbe922dc9702d9de9/a6f95c07-9183-4c78-a7c4-ec5ea565507a.pdf",
                 "tier": "referenced",

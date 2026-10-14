@@ -7,7 +7,7 @@
     "appellations": {
       "mainName": "Gbandi",
       "selfAppellation": "Gbandi",
-      "exonyms": ["Bandi", "Bande", "Gbande", "Gbunde"],
+      "exonyms": ["Bandi", "Bande", "Gbande"],
       "originOfExonyms": "Le nom Gbandi voudrait dire force de calcul ou chaud en langue gbandi, prononce Gbaa-ndi avec accent sur la premiere syllabe. Les variantes Bandi et Bande sont les formes usuelles dans la litterature coloniale britannique et dans les documents administratifs liberiens.",
       "whyProblematic": null,
       "contemporaryUsage": "Gbandi est la forme privilegiee par le peuple lui-meme et dans la litterature academique recente. Bandi est couramment utilise dans les textes administratifs liberiens et dans les references linguistiques (code ISO bza). Les deux formes sont en usage.",
@@ -134,7 +134,7 @@
             "birth": true,
             "sources": [
               {
-                "title": "Polyglotta Africana (édition de Londres, 1854, scan d'Internet Archive)",
+                "title": "Polyglotta Africana",
                 "author": "Sigismund Wilhelm Koelle",
                 "year": 1854,
                 "url": "https://archive.org/details/polyglottaafrica00koel",

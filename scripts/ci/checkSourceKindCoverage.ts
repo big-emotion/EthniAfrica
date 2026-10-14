@@ -37,9 +37,11 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * 1025 -> 1009 on 2026-10-14: sixteen untyped citations left with the
  * twenty-one people fiches and the four family-name fiches of waves 14 to 19
  * folded or withdrawn that day. 1009 -> 1008 the same day: the untyped
- * citation of PPL_NABT left with it, folded into PPL_NABDAM.
+ * citation of PPL_NABT left with it, folded into PPL_NABDAM. 1008 -> 1006 the
+ * same day: the two Gur citations of Koelle's Polyglotta Africana now point
+ * to the scan and are typed.
  */
-export const UNTYPED_SOURCE_RATCHET = 1008;
+export const UNTYPED_SOURCE_RATCHET = 1006;
 
 export interface UntypedSource {
   file: string;

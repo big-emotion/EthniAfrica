@@ -168,7 +168,7 @@
             "birth": true,
             "sources": [
               {
-                "title": "Polyglotta Africana",
+                "title": "Polyglotta Africana, jeu de données Lexibank",
                 "author": "Sigismund Wilhelm Koelle",
                 "year": 1854,
                 "url": "https://github.com/lexibank/polyglottaafricana",
@@ -265,7 +265,7 @@
             "formAsWritten": "Goā́li",
             "sources": [
               {
-                "title": "Polyglotta Africana",
+                "title": "Polyglotta Africana, jeu de données Lexibank",
                 "author": "Sigismund Wilhelm Koelle",
                 "year": 1854,
                 "url": "https://github.com/lexibank/polyglottaafricana",
