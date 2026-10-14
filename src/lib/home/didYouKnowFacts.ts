@@ -731,8 +731,8 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
     headline:
       "Le nom Godié viendrait peut-être d’un surnom donné par les voisins.",
     body: [
-      "Selon une explication que rapporte Dago Pascal Kokora, auteur d’une étude sur la langue des Koyo de Fresco, le nom Godié viendrait du mot néyo Gwèdji, qui associerait « chimpanzé » et « panthère » pour évoquer un caractère jugé combatif. Les Néyo auraient donné ce surnom à leurs voisins. Une autre explication le tire d’une phrase godié, a ka gouen zie, « nous allons plus loin ».",
-      "Les Godié se donnent pourtant ce nom eux-mêmes, selon Diedrich Westermann et Margaret Bryan (1952). La forme française Godié est employée sur les cartes, dans les recensements et pour identifier la langue.",
+      "Dago Pascal Kokora, originaire de Fresco, rapporte deux explications du nom Godié. Selon Alfred Schwartz (1971), il viendrait de gwe et dji, qui veulent dire « chimpanzé-panthère » : ce serait un surnom que les Néyo de Sassandra auraient donné aux Godié à cause de leur tempérament. Selon Kouassi Lowa (1967), il viendrait de la phrase a ka gouen zie, « nous allons plus loin », que des Godié auraient dite aux Dida en repartant.",
+      "Les sources ne s’accordent pas sur l’origine. Diedrich Westermann et Margaret Bryan (1952) notent que les Godié se donnent eux-mêmes ce nom, et Maurice Delafosse l'écrit déjà Godyé en 1904.",
     ],
     entities: [
       { kind: "people", id: "PPL_GODIE", label: "Godié" },
@@ -753,6 +753,14 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         source_kind: "academic",
         notes:
           "Dago Pascal Kokora, 1976. Il rapporte les deux explications du nom, celle d'Alfred Schwartz (1971) et celle de Kouassi Lowa (1967), et la mention de Westermann et Bryan (1952).",
+      },
+      {
+        title:
+          "Vocabulaires comparatifs de plus de 60 langues ou dialectes parlés à la Côte d'Ivoire et dans les régions limitrophes",
+        url: "https://archive.org/details/vocabulairescomp00delauoft",
+        tier: "referenced",
+        source_kind: "academic",
+        notes: "Maurice Delafosse, Paris, Ernest Leroux, 1904, p. 68.",
       },
     ],
   },
