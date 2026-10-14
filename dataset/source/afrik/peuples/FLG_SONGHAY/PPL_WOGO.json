@@ -49,7 +49,7 @@
     },
     "languages": {
       "mainLanguage": "Wogo Ciine (dialecte songhay des Wogo)",
-      "isoCodes": ["ses"],
+      "isoCodes": [],
       "dialects": [
         "Wogo Ciine — dialecte propre aux Wogo, proche du Songhoyboro Ciine et du Koyraboro Senni",
         "Variete d'Ayorou — parlee dans la principale agglomeration wogo du Niger",
@@ -115,6 +115,12 @@
         "url": "https://www.cia.gov/the-world-factbook/countries/niger/",
         "tier": "official",
         "source_kind": "government"
+      },
+      {
+        "title": "Glottolog 5.3 — Wogo (wogo1234)",
+        "url": "https://glottolog.org/resource/languoid/id/wogo1234",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   },
