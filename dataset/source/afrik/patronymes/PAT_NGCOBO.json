@@ -82,5 +82,192 @@
       "fieldPath": "transmissionMode",
       "reason": "la recherche web et bibliographique combinant « Ngcobo », « Xhosa », « l’Afrique du Sud », « surname », « nom de famille », « anthroponymie », « étymologie », « clan », « transmission » et « obituary », ainsi que la page Forebears propre au nom consultée directement, n’a établi aucune règle propre à Ngcobo permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ngcobo est celui d'un grand clan nguni de la vallée de la Tukela, dans le Natal. Le missionnaire Alfred T. Bryant, en 1929, le rattache à un ancêtre nommé Ngcobo Vumezita, dont le clan ne savait pas d'où il venait. On ne sait pas avec certitude ce que le nom veut dire ; les sources lues ne lui donnent pas de sens.",
+    "names": [
+      {
+        "nameText": "Ngcobo",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un grand clan nguni de la vallée de la Tukela ; le sens du nom reste inconnu.",
+        "periodLabel": "Écrit dès 1929 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Écrit Ngcobo en 1929"
+            },
+            "statement": "Le nom Ngcobo apparaît par écrit sous la forme Ngcobo chez le missionnaire Alfred T. Bryant, qui consacre un chapitre aux « Ngcobo à la peau noire et aux dents brillantes ». Il y décrit un grand clan de la vallée de la Tukela, au Natal, et cite une formule du clan qui dit en substance : la belle peau noire et les dents blanches et brillantes. C'est la plus ancienne trace de ce nom que le projet connaît ; le nom est plus ancien qu'elle.",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bryant-a-t-olden-times-in-zululand-and-natal-containing-earlier-political-histor",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 477-479",
+                "notes": "Londres, Longmans, Green, 1929. Missionnaire catholique installé au Natal, qui écrit dans le cadre de l'Union sud-africaine et recueille des récits sur les ancêtres des clans. Texte lu sur une autre numérisation d'archive.org du même ouvrage (identifiant bwb_KT-091-892) ; la page est celle de l'en-tête courant du texte numérisé. Chapitre 46 : le titre du chapitre et ses deux premières pages. Lu le 14 octobre 2026."
+              }
+            ],
+            "era": "modern",
+            "formAsWritten": "Ngcobo",
+            "birth": true
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Rapporté en 1929"
+            },
+            "statement": "Le nom Ngcobo est, selon Bryant, celui d'un ancêtre que le clan s'est donné pour fondateur : Ngcobo Vumezita. Bryant écrit que le clan ne savait pas où cet homme avait vécu ni d'où il venait, et ne pouvait que montrer le nord, vers le pays tonga ; il le dit réel ou légendaire, sans trancher. Bryant ne donne pas de sens au nom. On ne sait pas avec certitude ce que Ngcobo veut dire ni d'où il vient.",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bryant-a-t-olden-times-in-zululand-and-natal-containing-earlier-political-histor",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 479",
+                "notes": "Londres, Longmans, Green, 1929. Missionnaire catholique installé au Natal, qui écrit dans le cadre de l'Union sud-africaine et recueille des récits sur les ancêtres des clans. Texte lu sur une autre numérisation d'archive.org du même ouvrage (identifiant bwb_KT-091-892) ; la page est celle de l'en-tête courant du texte numérisé. Texte entre deux en-têtes courants : « Every respectable clan had to profess a knowledge of its founder, whether mythical or real ». Bryant place les descendants de Vumezita dans le groupe lala des Nguni tenga. Lu le 14 octobre 2026."
+              }
+            ],
+            "era": "modern",
+            "aspect": "meaning"
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Rapporté en 1929"
+            },
+            "statement": "Le nom Ngcobo couvre, selon Bryant, un grand ensemble : le clan ngcobo comprend les Nyuswa, les Qadi, les Ngongoma, les Shangase et les Wosiyana au Zoulouland, et les Fuze au Natal. Bryant ajoute que Fuze n'est pas un nom de clan venu d'un ancêtre commun, mais un sobriquet que ces branches se sont donné, et il ne tient pas le récit de cette origine pour une vérité sûre.",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bryant-a-t-olden-times-in-zululand-and-natal-containing-earlier-political-histor",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 232 et 489",
+                "notes": "Londres, Longmans, Green, 1929. Missionnaire catholique installé au Natal, qui écrit dans le cadre de l'Union sud-africaine et recueille des récits sur les ancêtres des clans. Texte lu sur une autre numérisation d'archive.org du même ouvrage (identifiant bwb_KT-091-892) ; la page est celle de l'en-tête courant du texte numérisé. P. 232 : « the large Ngcobo tribe (embodying the Nyuswa, Qadi, Ngongoma, Shangase and Wosiyana clans in Zululand, and the Fuze in Natal) ». P. 489 : le sobriquet Fuze, « not a personal clan-name », et ces histoires de tradition qu'on ne prend pas pour « serious gospel-truth ». Lu le 14 octobre 2026."
+              }
+            ],
+            "era": "modern"
+          },
+          {
+            "period": {
+              "from": 1700,
+              "to": 1700,
+              "label": "Vers 1700, selon Bryant (1929)"
+            },
+            "statement": "Le nom Ngcobo est, selon Bryant, celui d'une famille arrivée vers 1700 dans la vallée de la Tukela depuis un endroit plus haut sur la côte. Bryant donne cette date comme une déduction tirée de la durée des générations, et dit que la poussée des Mthethwa a pu la chasser de là. Il dit aussi que la lignée qui va de Ngcobo à Nyuswa est « à peine plus qu'une supposition », acceptée faute de mieux.",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bryant-a-t-olden-times-in-zululand-and-natal-containing-earlier-political-histor",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 481",
+                "notes": "Londres, Longmans, Green, 1929. Missionnaire catholique installé au Natal, qui écrit dans le cadre de l'Union sud-africaine et recueille des récits sur les ancêtres des clans. Texte lu sur une autre numérisation d'archive.org du même ouvrage (identifiant bwb_KT-091-892) ; la page est celle de l'en-tête courant du texte numérisé. Texte de l'en-tête courant 481 : « Though this is hardly more than a guess, we accept it for want of something better » ; la date est déduite de la mort de Magaya, vers 1787. Lu le 14 octobre 2026."
+              }
+            ],
+            "era": "polity"
+          },
+          {
+            "period": {
+              "from": 1824,
+              "to": 1824,
+              "label": "En 1824, selon Bryant (1929)"
+            },
+            "statement": "Le nom Ngcobo est celui du clan dont Tendolozi, fils de Tayi, dirige en 1824 la branche emaLangeni, selon Bryant. Cette année-là, le roi Shaka retient Tendolozi dans sa résidence, puis le relâche après la visite de ses sœurs.",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bryant-a-t-olden-times-in-zululand-and-natal-containing-earlier-political-histor",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 477-479",
+                "notes": "Londres, Longmans, Green, 1929. Missionnaire catholique installé au Natal, qui écrit dans le cadre de l'Union sud-africaine et recueille des récits sur les ancêtres des clans. Texte lu sur une autre numérisation d'archive.org du même ouvrage (identifiant bwb_KT-091-892) ; la page est celle de l'en-tête courant du texte numérisé. Chapitre 46 : le récit de 1824 et la présentation de Tendolozi comme chef de la branche emaLangeni du « great Ngcobo tribe ». Lu le 14 octobre 2026."
+              }
+            ],
+            "era": "polity"
+          },
+          {
+            "period": {
+              "from": 1929,
+              "to": 1929,
+              "label": "Rapporté en 1929"
+            },
+            "statement": "Le nom Ngcobo est aussi, chez Bryant, celui du chef dont le frère cadet Mkeshane aurait fini par s'appeler Shangase. Après des années d'exil, Mkeshane revient ; Ngcobo lui dit qu'il a « erré » (shanga), et le clan de son frère garde depuis le nom de Shangase, « l'errant »..",
+            "sources": [
+              {
+                "title": "Olden Times in Zululand and Natal",
+                "author": "Alfred T. Bryant",
+                "year": 1929,
+                "url": "https://archive.org/details/bryant-a-t-olden-times-in-zululand-and-natal-containing-earlier-political-histor",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 480",
+                "notes": "Londres, Longmans, Green, 1929. Missionnaire catholique installé au Natal, qui écrit dans le cadre de l'Union sud-africaine et recueille des récits sur les ancêtres des clans. Texte lu sur une autre numérisation d'archive.org du même ouvrage (identifiant bwb_KT-091-892) ; la page est celle de l'en-tête courant du texte numérisé. Le récit du retour de Mkeshane, que Koopman (1986, p. 143-144) cite aussi d'après Bryant. Lu le 14 octobre 2026."
+              }
+            ],
+            "era": "modern"
+          },
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "Noté en 1986"
+            },
+            "statement": "Le nom Ngcobo est aussi celui d'un clan qui a sa formule de louange : Adrian Koopman cite pour le clan ngcobo « Mashiya-mahle engathi azoshumayela », qu'il traduit par de beaux sourcils, comme s'ils allaient prêcher. Il écrit que l'origine de ces louanges longues reste obscure, et que ni ses informateurs ni Bryant n'ont pu l'éclairer.",
+            "sources": [
+              {
+                "title": "The Social and Literary Aspects of Zulu Personal Names",
+                "author": "Adrian Koopman",
+                "year": 1986,
+                "url": "https://repository.nwu.ac.za/bitstreams/ea16f498-c289-4e9a-8f98-c9ed3b0354ab/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 144",
+                "notes": "Mémoire de master, université du Natal (Pietermaritzburg), 1986 ; texte du dépôt de la North-West University. Les numéros de page sont les numéros imprimés, relevés sur le texte numérisé. La formule est citée dans une liste d'exemples de louanges de clan, avec celles des clans hadebe et ndlovu. Lu le 14 octobre 2026."
+              }
+            ],
+            "era": "modern"
+          },
+          {
+            "period": {
+              "from": 1986,
+              "to": 1986,
+              "label": "Noté en 1986"
+            },
+            "statement": "Le nom Ngcobo sert aussi de base à un prénom : Adrian Koopman range uMangcobo parmi les prénoms de fille zoulous formés sur une comparaison, avec la traduction « comme une Ngcobo », selon le texte numérisé. Un nom de clan peut donc aussi entrer dans les prénoms.",
+            "sources": [
+              {
+                "title": "The Social and Literary Aspects of Zulu Personal Names",
+                "author": "Adrian Koopman",
+                "year": 1986,
+                "url": "https://repository.nwu.ac.za/bitstreams/ea16f498-c289-4e9a-8f98-c9ed3b0354ab/download",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 167",
+                "notes": "Mémoire de master, université du Natal (Pietermaritzburg), 1986 ; texte du dépôt de la North-West University. Les numéros de page sont les numéros imprimés, relevés sur le texte numérisé. Le prénom est dans une liste de prénoms par comparaison, avec uMantusi et uMantombi ; la glose du texte numérisé est abîmée (« Mike an Ngcobo »), lue comme « like an Ngcobo » d'après les gloses voisines. Lu le 14 octobre 2026."
+              }
+            ],
+            "era": "modern"
+          }
+        ]
+      }
+    ]
+  }
 }
