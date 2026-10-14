@@ -47,8 +47,8 @@ were referenced by nothing at all, two of them written that same week.
 - [Name-history priority core](editorial/strategy/name-history-priority-core.md)
 - [Name-history timeline (decided 2026-10-08)](editorial/strategy/name-history-timeline-2026-10-08.md)
 - [Funding presentation — October 2026](editorial/strategy/presentation-2026-10/README.md)
-- [Social series — the fixed frame](editorial/strategy/social-series.md)
 - [Self-names to verify through oral sources](editorial/strategy/self-names-to-verify-orally.md)
+- [Social series — the fixed frame](editorial/strategy/social-series.md)
 - [Interface copy](editorial/ui-copy.md)
 - [Volunteer missions](editorial/volunteers/README.md)
 - [Mission bénévole — Préparation et vérification des fiches](editorial/volunteers/mission-preparation-fiches.md)
@@ -61,6 +61,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Audience audit — 2026-10-13](audience/audit-2026-10-13.md)
 - [Reader demand journal — 2026-10-12](audience/demand/2026-10-12.md)
 - [Reader demand journal — 2026-10-13](audience/demand/2026-10-13.md)
+- [Reader demand journal — 2026-10-14](audience/demand/2026-10-14.md)
 
 ## Runbooks — procedures, and records of ones already run
 
