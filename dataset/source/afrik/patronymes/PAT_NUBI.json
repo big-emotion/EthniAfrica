@@ -11,19 +11,28 @@
     {
       "spelling": "Nubi",
       "attestations": [
-        { "countryId": "EGY", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "EGY",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     },
     {
       "spelling": "El Nubi",
       "attestations": [
-        { "countryId": "EGY", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "EGY",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     },
     {
       "spelling": "al-Nūbī",
       "attestations": [
-        { "countryId": "EGY", "sourceRefs": ["princeton-geniza-miac-208"] }
+        {
+          "countryId": "EGY",
+          "sourceRefs": ["princeton-geniza-miac-208"]
+        }
       ]
     }
   ],
@@ -109,5 +118,71 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "MIAC 208 documente un individu sans expliquer ce que désigne al-Nūbī dans son nom. Les sources consultées n'ont pas établi s'il renvoie à une origine, un lignage ou un clan ; la valeur reste other."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Nubi est le mot arabe qui veut dire « nubien, de Nubie » : en Égypte, c'est un nom d'origine, porté comme nom de personne. Les sources que nous avons lues ne disent pas si ses porteurs descendent de Nubiens. Sa plus ancienne trace écrite comme nom de personne que nous connaissons date de 1925, sous la forme al-Nūbī.",
+    "names": [
+      {
+        "nameText": "Nubi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un mot arabe qui veut dire « nubien », porté comme nom en Égypte ; les sources ne disent pas d'où viennent ses porteurs.",
+        "periodLabel": "Écrit comme nom de personne dès 1925",
+        "accounts": [
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "Décrit en 1860"
+            },
+            "statement": "Le nom Nubi est le mot arabe nūbī, qui veut dire « nubien, de Nubie » : le dictionnaire de Kazimirski donne la Nubie et les Nubiens, peuple de l'Afrique, pour mots voisins. Le mot dit donc d'où l'on vient ou à qui l'on se rattache. Les sources que nous avons lues ne disent pas si les porteurs du nom en Égypte descendent de Nubiens.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionnaire arabe-français, tome 2",
+                "author": "Albert de Biberstein Kazimirski",
+                "year": 1860,
+                "url": "https://archive.org/details/dictionnairearab02bibeuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 1362",
+                "notes": "Paris, Maisonneuve, 1860. Lu sur l'exemplaire numérisé d'archive.org le 14 octobre 2026. Page 1362 : « La Nubie (pays). 2. coll. Les Nubiens » ; « fém., Nubien, de Nubie ; Nubienne » ; et « coll. Les Nubiens, peuple de l'Afrique »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1925,
+              "to": 1925,
+              "label": "1925"
+            },
+            "era": "modern",
+            "statement": "Le nom Nubi apparaît par écrit sous la forme al-Nūbī dans une lettre arabe du 24 février 1925 : un avocat, Muḥammad Ḥasan al-Nūbī, y réclame un paiement à Khawaja Sālamūn Melūl, selon la notice du Princeton Geniza Project. C'est la plus ancienne trace de ce nom comme nom de personne que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "al-Nūbī",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Muḥammad Ḥasan al-Nūbī",
+                "role": "avocat, auteur de la lettre"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Princeton Geniza Project — Letter MIAC 208 (PGPID 34857)",
+                "author": "Princeton Geniza Project",
+                "year": null,
+                "url": "https://geniza.princeton.edu/en/documents/34857/",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "notice MIAC 208",
+                "notes": "Notice d'archive universitaire, lue le 14 octobre 2026. Elle décrit une lettre en arabe du 24 février 1925, conservée au Museum of Islamic Art sous le numéro 208, d'après le catalogue de Ḥassanein Muḥammad Rabīʿa : « Letter from the lawyer Muḥammad Ḥasan al-Nūbī to Kẖawaja Sālamūn Melūl requesting payment ». La notice ne donne ni image ni transcription."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
