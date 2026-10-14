@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "design": "EthniAfrica Cartes 1.3.0-proposition, vidéo de série (mise en page B)",
+  "designVersion": "1.4.0-proposition",
+  "layout": "full",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "frames": 1233,
+  "cards": [
+    "serie-pays-01",
+    "serie-pays-02",
+    "serie-pays-03",
+    "serie-pays-04",
+    "serie-pays-05",
+    "serie-pays-06",
+    "serie-pays-07"
+  ],
+  "audio": {
+    "sha256": "848072d5ece32dabff034beef47a88f140f27963419b489b6d6d0dcfeffde2b4",
+    "duration": 40.6
+  },
+  "demo": true,
+  "productionReady": false,
+  "runtime": {
+    "playwright": "1.63.0",
+    "chromium": "141.0.7390.37",
+    "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers"
+  },
+  "hashes": {
+    "cards": "fb93b4daf43cd7d914ddeb8df930a9e71c67e3297973308368763b15ee71ceae",
+    "engine": "485d37297de0ca89320a1966030d898fcc6ff125543c7654fbd76b1c3c666798",
+    "video": "e7d537176b6cafd5783b2810141359038426191e7beb301e9ac489416a07d3b5"
+  }
+}

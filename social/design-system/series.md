@@ -1,6 +1,6 @@
 # Series
 
-**1.3.0-proposition, 13 October 2026, accepted by the operator on 14 October 2026 with video layout B.** It adds three things to the accepted 1.2.0-proposition and changes nothing else: one series band, a carousel model for each of the seven series, and one 9:16 video model. A card without `series` renders exactly as in 1.2.0: the 37 non-series sample cards were rendered again with 1.3.0 and compared with the 1.2.0 references, pixel for pixel identical.
+**1.4.0-proposition, 14 October 2026, accepted by the operator the same day:** the series video in full screen replaces layout B (« Vidéo de série » below); nothing else changes. **1.3.0-proposition, 13 October 2026, accepted by the operator on 14 October 2026 with video layout B, since withdrawn.** It adds three things to the accepted 1.2.0-proposition and changes nothing else: one series band, a carousel model for each of the seven series, and one 9:16 video model. A card without `series` renders exactly as in 1.2.0: the 37 non-series sample cards were rendered again with 1.3.0 and compared with the 1.2.0 references, pixel for pixel identical.
 
 The editorial frame is `docs/editorial/strategy/social-series.md` (13 October 2026): seven series, a fixed question and fixed beats per series, a video every episode, and a carousel only when the episode takes apart an attested received idea. « The accepted card system, plus one band carrying the series name and the episode number. No separate design per series. »
 
@@ -103,26 +103,96 @@ Decision 6 of 13 October 2026: every model card that carries an image gets one. 
 
 ## Vidéo de série
 
-Built on **EthniAfrica Vidéo carte 0.4.0-proposition** (accepted on 12 October 2026): its subtitle chunks (3 to 6 words, two lines of 26 characters at most, Nunito Sans 800 56/68 in #fffaf2 with the 9 px dark stroke and soft shadow), the spoken word lit in `accent` with its text in `on-accent`, the reading rule and the voice timing. It is not a satellite video: the same cards, on the operator's voice, 35 to 45 seconds, 1080 × 1920 at 30 frames a second. The boards are rendered by `handoff/video-board.html` (`?layout=A|B&card=…&next=…&sub=…&lit=…`) and grouped in the `Vidéo` asset group.
+**1.4.0-proposition, 14 October 2026, accepted by the operator the same day: the series video in full screen.** On 14 October 2026 the operator withdrew decision 4 (layout B, the video's own card kept in the feed's safe zone), which came from a misunderstanding of the design: « L'image dans la vidéo doit prendre tout l'écran. Il ne doit pas y avoir de zones d'ombre comme sur les cartes des carrousels, et il ne doit pas y avoir de réajustement par rapport à la visibilité de l'écran. La vidéo prend tout l'écran, et il n'y a que le texte. » Settled, not to reopen:
 
-**What is common to both layouts**
+1. The image fills the whole 1080 × 1920 frame, edge to edge, for the whole video.
+2. No shadow zones: no dark panel, no fade into `ground`, no veil, no scrim. Legibility comes from the text itself.
+3. The layout is not fitted to the networks' interface: the Meta and TikTok safe zone and the button column place nothing. The apps cover part of the text in the feed, as for the Vidéo carte 0.4.0 « plein écran ».
+4. Only text sits on the image: the band's words, the head of the card, the subtitle with its lit word, sources, credit and signature, and on the ending the slogan, its sentence and the pill.
 
-- **Motion.** One cross-fade of 300 ms between cards; nothing slides. The photograph zooms slowly from 100 to 104 % around its focal point; the band and the text never move.
-- **Cover.** Frame 0 is the opener with its band and no subtitle, so the platform's thumbnail is already the cover. A video never shows « Faites défiler »: `EthniCards.mount(…, { context: 'video' })` leaves the cue out.
-- **Ending « série ».** The closing card holds 2.5 s, or until the voice ends plus 0.5 s, while the voice says « Cherchez [nom] sur EthniAfrica, lien en profil. », shown as the last two chunks. It differs from the 0.4.0 endings: ending A (signature, slogan, a sentence about the page, the domain pill) and ending B (signature and slogan) never ask the viewer for anything; the series ending asks for one search, by the operator's decision 5 of 13 October 2026, recorded as a deliberate exception for the series video only. Like ending A, it promises a page, so it requires that the searched name has a page online (`pageOnline: true`).
+The model is **Vidéo carte 0.4.0 « plein écran »** (accepted on 12 October 2026), text in fixed bands over a clear image, minus its veil. Everything else in 1.3.0 stays: the cards, the band on cards, the seven carousel models, the images. The boards are drawn by `handoff/video-board-full.html` (`?card=…&next=…&fade=…&sub=…&lit=…&zoom=…&guides=1`) and kept in the `Video` asset group as `video-14-*`. Their text is demonstration text, and their images are the web renditions of the library, enlarged 1.8 to 3.7 times: the boards are soft where production, from the full-resolution files, will be sharp.
 
-**Layout A, the carousel card centred.** The 1080 × 1350 card, band included, sits at y 285 to 1635 (the 4:5 centre of the frame, so a grid's 4:5 crop of the cover keeps the whole card); the subtitles sit under it, line boxes from y 1660 to 1796. It reuses the card as it is. In the feed, the apps cover the lower half of the panel and all the subtitles (TikTok's buttons right of x 780 below y 840, the caption below y 1248): the viewer reads the title and little else until the video is opened full screen.
+**Unchanged from 1.3.0.** 1080 × 1920 at 30 frames a second, 35 to 45 seconds, on the operator's voice, the same cards as the carousel. Vidéo carte 0.4.0's subtitle chunks (3 to 6 words, two lines of 26 characters at most), the lit word, the reading rule and the voice timing. Frame 0 is the opener with its band and no subtitle; a video never shows « Faites défiler ». The ending « série » asks for one search and needs `pageOnline: true`.
 
-**Layout B, the video's own card.** The band sits at the top of the safe zone (y 270 to 342), its text from x 120; the photograph fills y 342 to 902 and fades into `ground`; the subtitles sit on the photograph's lower edge (lines from y 700 to 836, centred, at most 840 px wide); the head of the card (kicker, then the title in Anton 76/80, the opener's at 100/98, or the date in Anton 124/118 with the name employed in 64/70) sits from y 902 to 1248, between x 120 and 760, left of the buttons. Sources, credits and the signature go under y 1248: hidden by the caption in the feed, read full screen, as the 0.4.0 credits are. The body text, the fields and the forms tables are not on screen: the voice says them and the subtitles carry them. A map card shows its map in the photograph's window, reframed with its own `view`. The ending puts the slogan and its sentence from y 362, the subtitles at y 700, the pill at 872 and the signature at 980, all inside the safe zone.
+### Bands
 
-|                            | A, carousel card centred                                 | B, video card                                              |
-| -------------------------- | -------------------------------------------------------- | ---------------------------------------------------------- |
-| Read in the feed           | title and band; panel's lower half and subtitles covered | band, photograph, subtitle, headline; only credits covered |
-| Same image as the carousel | yes                                                      | no: one more layout for the renderer                       |
-| Text on screen             | the whole card                                           | the headline; the rest is spoken                           |
-| Grid crop of the cover     | whole card                                               | band, photograph and title                                 |
+At 1080 × 1920, every text between x 60 and 1020.
 
-**Decision 4: layout B, chosen by the operator on 14 October 2026.** In the feed, which is where an episode is first seen, A shows the title and loses the rest under the apps, while B keeps everything that carries meaning in the safe zone. B costs one more layout for the renderer; A would have reused the carousel's images. The A boards (`video-A-fil-430.png`, the left half of `video-A-B-plein-ecran.png` and the four A frames) stay in the `Vidéo` group as the record of the comparison; A is not to be produced.
+| Band        | y                            | What it holds                                                                                                                                                                                                                                     |
+| ----------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Demo tape   | 178 to 226, right on x 1020  | « Démonstration : texte non validé », mockups only                                                                                                                                                                                                |
+| Series band | 250 to 290                   | Nunito Sans 800 32/40, tracking 0.02 em: name `on-image-ink`, separator `on-image-faint`, « n° N » `on-image-accent`. No rule line: the 2 px rule closed a band of ground that no longer exists; on the image it would be a drawn line, not text. |
+| Head        | 318 to 700 at most           | kicker Nunito Sans 800 30/36 `on-image-accent`, then the title in Anton 88/90 (the opener's 116/112), three lines at most; or, on a dated card, the date (see Long dates), the label `NOM EMPLOYÉ` and the name employed in Anton 76/82           |
+| Clear image | 700 to 1300                  | nothing but the picture: the focal point is brought to (540, 1000)                                                                                                                                                                                |
+| Subtitle    | 1316 to 1452                 | Vidéo carte 0.4.0: centred on x 540, lines at most 900 px wide                                                                                                                                                                                    |
+| Foot        | 1652 to 1786, bottom aligned | a map's key (swatch and text, Nunito Sans 800 26/32), `Source :` (Nunito Sans 700 24/30) and the credit (700 22/28, `on-image-muted`)                                                                                                             |
+| Signature   | 1836 to 1884                 | logo 44 px and « EthniAfrica » in Fraunces 600 32/38, from x 60                                                                                                                                                                                   |
+
+Measured on the boards: the head ends between y 544 and 700 on content cards (700 for a three-line opener, 690 for a two-line date), the foot starts at 1696 at the highest (a map with two key rows).
+
+**Why the band sits at y 250.** Instagram and TikTok show a 3:4 crop of the cover in the profile grid (y 240 to 1680). At y 250 the band and the title stay in that thumbnail, so the grid reads as a series. This is not a fit to the feed: the apps still cover the band's top and everything under y 1248 while the video plays in the feed (`video-14-fil-430.png`).
+
+### The photograph
+
+- **Framing.** The image covers the frame: scale = max(1080 ÷ width, 1920 ÷ height). Its focal point (`image.focus`) is brought to (540, 1000), the middle of the clear zone, as far as the image's edges allow. The slow zoom from 100 to 104 % grows around the focal point. The card's `anchor` and `zoom` do not apply in the video.
+- **Too wide.** The crop keeps 1080 ÷ (width × scale) of the width: 33 % of the tifinagh rock (900 × 529), 37 % of Tiébélé and of the 1930 aerial view, 61 % of al-Idrisi's map, 87 % of the Bobo-Dioulasso mosque (`video-14-cadrage.png`). The renderer reports it (`keptWidth`). When the subject is wider than the crop, the card gives a video framing, `image.video: { src, focus }`, another file or another focal point. Never a letterbox, never a blurred copy behind the image, never a band.
+- **Too small.** A frame pixel may stretch at most 1.5 source pixels, zoom included: the visible crop needs at least 720 × 1280 source pixels (750 × 1333 with the 104 % zoom). Below that the renderer refuses the image (« Image trop petite pour la vidéo ») and production takes the full-resolution file from its Commons page. The library's web renditions are 1.8 to 3.7 times too small, which is why the boards are soft.
+- **Focal point out of reach.** When the image runs out before its focal point reaches y 700 (al-Idrisi, focus at 0.3 of the height, lands at y 576), the renderer warns; set `image.video.focus`.
+- **Map card.** The map fills the frame with its own 9:16 view, `map.videoView` (x, y, width, height in the map's units). By default the renderer brings the map's subject (the highlighted country or the areas) to (540, 1000), at the card's scale or up to twice closer, never past the drawn extent of the base map, and paints the sea in the map's water colour behind it. The subject's box must stay below y 724 (24 px under the head) and above the foot. The key goes into the foot as text; atlas keys, callouts and insets stay on the card. `serie-nom-famille-02` fits twice closer, its subject at y 892. `serie-frontieres-02` does not: its base map stops too close to the subject, which then sits at y 385, under the title, and the renderer refuses it (« Le sujet de la carte passe sous la tête »). Such a card needs a base map built for 9:16, from Natural Earth like the others, or a `videoView` chosen by hand (`video-14-cartes.png`).
+
+### Legibility: one text treatment
+
+Every text on the image, on light and dark pictures, in both themes, is set the same way: light letters on a dark outline painted under them, Vidéo carte 0.4.0's subtitle treatment. `-webkit-text-stroke` in `on-image-stroke` (#0b0806 at 92 %) with `paint-order: stroke fill`, so the outer half of the stroke edges each letter, plus a soft shadow (`on-image-shadow`, 0 2px 14px from 40 px up, 0 1px 8px below). Nothing darkens a region of the image.
+
+| Text                                                               | Type                                    | Outline      |
+| ------------------------------------------------------------------ | --------------------------------------- | ------------ |
+| Subtitle                                                           | Nunito Sans 800 56/68, `on-image-text`  | 9 px (0.4.0) |
+| Opener title                                                       | Anton 116/112                           | 13 px        |
+| Title, slogan                                                      | Anton 88/90, 84/88                      | 10 px        |
+| Date                                                               | Anton 176/156 to 104/100                | 14 px        |
+| Name employed                                                      | Anton 76/82                             | 8 px         |
+| Band, kicker, label, key, source, credit, sentence, pill, wordmark | Nunito Sans 22 to 34 px, Fraunces 32 px | 4 px         |
+
+The letter always meets its outline, never the picture. Against the outline, even laid over pure white: `on-image-text` 16.3:1, `on-image-ink` 14.1:1, `on-image-accent` 9.3:1, `on-image-muted` 9.0:1, the area inks 8.2:1 (`area-b`) and 6.4:1 (`area-c`), `on-image-faint` 6.0:1; the lit word, `on-image-on-accent` on `on-image-accent`, 10.2:1. Tested on the lightest images (Boulton's 1794 map, mean luminance 218; al-Idrisi 187; the tifinagh rock 188; Levasseur's 1847 map 179), the darkest (Tanoboase 112, the « image à trouver » slot 37) and the busiest (the 1930 aerial view, Tiébélé's painted walls): `video-14-lisibilite.png`. If a text still cannot be read on an image, the remedy is the framing (`image.video.focus`), another crop or another image, never a band.
+
+**Parchemin.** The on-image inks are the same in both themes. Parchemin's own inks cannot sit on a dark outline: `ink` (#2a1e15) and `accent` (#7f5212) read under 2:1 against it. The other way, dark letters on a light outline, was drawn on the tifinagh rock and on Tanoboase (`video-14-parchemin-encres.png`, right of each pair): it reads, but makes white halos on a dark picture and would sit beside the 0.4.0 subtitle, light on dark, in the same frame. Parchemin therefore shows where the video has ground of its own: a map card keeps the Parchemin map palette, and an « image à trouver » slot is drawn on parchment. Open question 1.
+
+### Long dates
+
+The date takes the largest of 176/156, 148/136, 124/118 and 104/100 that holds on one line in 960 px. Below 104 px, never: the date goes on two balanced lines at 104/100, and a date never breaks inside itself (day, month and year are joined by no-break spaces). A date that does not fit two lines at 104 is refused: shorten its display. On `video-14-dates.png`, with test dates that are not content: « 1984 » and « 4 août 1984 » at 176, « 1er mars 1919 » at 148 (811 px wide), « entre 1884 et 1885 » at 124, « du 15 novembre 1884 au 26 février 1885 » on two lines at 104; the head then ends at y 690. This settles the layout B defect where « 1er mars 1919 » wrapped at 124 in a 640 px head.
+
+### Cover, card change, ending
+
+- **Cover.** Frame 0: the opener's image, band, kicker and title, credit and signature, no subtitle (`video-14-couverture.jpg`).
+- **Card change.** One change of 300 ms; nothing slides. The two images cross-fade over the whole 300 ms. The outgoing card's head and foot fade out in the first 150 ms and the incoming card's fade in during the last 150 ms, so two heads never show at once (`video-14-changement-1.jpg` at 100 ms, `-2.jpg` at 200 ms). The band and the signature are drawn once for the whole video and never fade. The subtitle sits above the cards: the outgoing card's last chunk stays until the new card's first chunk appears, at the end of the change (0.4.0 voice rule; decision 2).
+- **Ending « série ».** The closing card's own image, full frame. Band at 250; slogan in Anton 84/88 capitals, centred, three lines at most; its sentence in Nunito Sans 700 32/40; the site pill (outlined in `on-image-accent`, its line edged inside and out by 2 px of `on-image-stroke`); the whole block from y 318 to 820 at most (808 measured). The last two chunks in the subtitle band. The credit centred above the signature; the signature centred, logo 56 px and Fraunces 44/48, from y 1828 to 1884. It holds 2.5 s, or until the voice ends plus 0.5 s (`video-14-fin.jpg`, `video-14-fin-parchemin.jpg`).
+
+### The seven gaps between the layout B boards and the engine, settled
+
+1. **Kicker on a dated card: shown.** The date's marker label (« Le nom d'avant », « Nom de l'État ») is its kicker, as on the card: it says what the date is.
+2. **Signature on content cards: yes,** small and bottom left (y 1836 to 1884), drawn once so it never fades. A downloaded or reposted video keeps its signature. No `ethniafrica.com · @ethniafrica` on content cards: the ending carries the site.
+3. **Ending signature: centred, bottom on y 1884** (1828 to 1884), the same baseline as on content cards.
+4. **The outgoing card's last subtitle stays during the change,** as the engine does (0.4.0: a chunk is cut when the next one appears).
+5. **French spacing: the cards' rule** (`EthniCards`' `fr`), in every text of the frame, subtitles included: a narrow no-break space (U+202F) before ; : ! ? and » and after «, so « Faso ? », « Source : », « « désert » »; a no-break space in « n° 1 » and inside the searched name of the ending.
+6. **Subtitle outline: the 0.4.0 values,** as the engine has them: 9 px of rgba(11, 8, 6, 0.92), shadow 0 2px 14px rgba(11, 8, 6, 0.7), the lit box with a 6 px radius and 6 px side shadows. The board's #1a120a and 4 px radius were the board's error.
+7. **The lit word lights with its spoken word.** A chunk appears 150 ms before its first word, which lights only when it is spoken (`highlightAt`), as the engine does. The 1.3.0 boards lit a word on the chunk's first frame; they were wrong.
+
+### « Image à trouver » on a video frame
+
+The renderer draws the slot itself across the whole frame, never the slot PNG enlarged, whose label would be cut off: hatching in the theme's ground (Nuit dark, Parchemin light), a 2 px `rule` frame 48 px inside the edges, and the label in the clear zone (y 760 to 1240, x 120 to 960): « IMAGE À TROUVER » in Nunito Sans 800 30/36 capitals, `on-image-accent`, then what the picture must show, Nunito Sans 700 40/52, both with the on-image outline. A card with a slot gives that text in `image.find`; the 1.3.0 slot PNGs carry it only as pixels. A final video still refuses a slot (`video-14-image-a-trouver-nuit.jpg`, `-parchemin.jpg`).
+
+### Decided by the operator on 14 October 2026
+
+The four open questions were answered with the designer's recommendations:
+
+1. **Parchemin on the image:** the same light inks on a dark outline in both themes; Parchemin shows on map cards and « image à trouver » slots.
+2. **Card change:** the heads swap inside the 300 ms (out in the first 150 ms, in during the last 150 ms) while the images cross-fade over the whole 300 ms.
+3. **Series band:** at y 250 to 290, inside the profile grid's 3:4 thumbnail.
+4. **Map cards whose base map is too short for 9:16:** a 9:16 base map is built per region, from Natural Earth like the others; until then such a card is refused for the video.
+
+### Layouts A and B (1.3.0), the record of the comparison
+
+Layout A centred the 1080 × 1350 carousel card in the frame (y 285 to 1635), subtitles under it. Layout B kept the video's own card inside the feed's safe zone: band at y 270, photograph from 342 to 902 fading into `ground`, subtitle on its lower edge, head from 902 to 1248 left of the buttons, sources under 1248. The operator chose B on 14 October 2026 (decision 4), then withdrew it the same day for full screen. Neither is to be produced. Their boards (`video-A-*`, `video-B-*`) and `handoff/video-board.html` stay as the record.
 
 ## Checks
 
@@ -130,4 +200,4 @@ Built on **EthniAfrica Vidéo carte 0.4.0-proposition** (accepted on 12 October 
 - Panel: 828 px at most on a series card (`report.panelMax`), credit line included.
 - Image: focal point between the band and the panel.
 - Cards without `series`: identical to their 1.2.0 references.
-- Video, layout B: every text box inside x 120 to 960 above y 840 and x 120 to 760 below it, between y 270 and 1248, except sources, credits and signature; subtitles at most 840 px wide.
+- Video, full screen (1.4.0): see « Renderer integration of 1.4.0 » in Handoff. Every text between x 60 and 1020 and inside its band; no element drawn over the image with a background, except the lit word, the pill's outline, the slot and the demo tape.

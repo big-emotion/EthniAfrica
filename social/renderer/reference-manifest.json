@@ -1,6 +1,6 @@
 {
-  "designVersion": "1.3.0-proposition",
-  "source": "Operator-supplied Claude Design references received 10 October 2026; two map references reconciled to the unchanged accepted engine by explicit operator decision on the same date. Version 1.2.0-proposition accepted by the operator on 12 October 2026: 28 references of 1.1.0 kept unchanged, three 1.1 cards whose sample label moved re-rendered on the pinned browser, seven atlas cards added from the pinned browser after comparison with Claude Design's 1.2.0 references. Version 1.3.0-proposition accepted by the operator on 14 October 2026 with series video layout B: the 38 references of 1.2.0 kept unchanged, 51 series cards added from the pinned browser after comparison with Claude Design's 1.3.0 references.",
+  "designVersion": "1.4.0-proposition",
+  "source": "Operator-supplied Claude Design references received 10 October 2026; two map references reconciled to the unchanged accepted engine by explicit operator decision on the same date. Version 1.2.0-proposition accepted by the operator on 12 October 2026: 28 references of 1.1.0 kept unchanged, three 1.1 cards whose sample label moved re-rendered on the pinned browser, seven atlas cards added from the pinned browser after comparison with Claude Design's 1.2.0 references. Version 1.3.0-proposition accepted by the operator on 14 October 2026 with series video layout B: the 38 references of 1.2.0 kept unchanged, 51 series cards added from the pinned browser after comparison with Claude Design's 1.3.0 references. Version 1.4.0-proposition accepted by the operator on 14 October 2026: the series video in full screen and eight on-image-* tokens for it; the 89 references are unchanged.",
   "files": [
     {
       "id": "seq-1",
@@ -782,5 +782,9 @@
         "claudeDesignSha256": "5c8b8915a6730166489490f6b4fddaec7c4cf14f1545e2f206a6881451b37aec"
       }
     ]
+  },
+  "integration-1.4.0": {
+    "date": "2026-10-14",
+    "decision": "Operator accepted EthniAfrica Cartes 1.4.0-proposition (series video in full screen, replacing layout B). It changes no card: the 89 sample cards render pixel-identical with the 1.3.0 and 1.4.0 design (bundle version string and on-image-* tokens only), checked by rendering both in diagnostic mode on one browser and comparing every PNG and alternative text. The 89 reference hashes are therefore unchanged; only designVersion moves. No tolerance or engine change."
   }
 }
