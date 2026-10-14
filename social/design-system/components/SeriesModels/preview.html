@@ -1,0 +1,41 @@
+<!-- @dsCard group="Séries" height=2600 subtitle="Un modèle de carrousel par série (1.3.0)" -->
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><style>
+html,body{margin:0;background:#0f0c09;color:#cbbba3;font-family:Andika,sans-serif}
+.pv{padding:20px 20px 28px;display:flex;flex-wrap:wrap;gap:28px 24px;align-items:flex-start}
+.pv-item{display:flex;flex-direction:column;gap:10px}
+.pv-cap{font:700 14px/18px Andika,sans-serif;color:#f3e9da;max-width:430px}
+.pv-rep{font:400 12px/16px Andika,sans-serif;color:#a8977f;max-width:430px}
+.pv-rep b{color:#e8b96a;font-weight:700}
+.pv-rep.bad b{color:#ff8a6a}
+.pv-intro{width:100%;font:400 14px/20px Andika,sans-serif;color:#cbbba3;max-width:900px;margin:0}
+</style></head><body><div class="pv" id="pv"></div>
+<script>
+(async function () {
+  var root = document.getElementById('pv');
+  try {
+    var t = await (await fetch('../../tokens.json')).json();
+    await EthniCards.installTokens(t, '../../');
+    var A = await (await fetch('../../handoff/assets.json')).json();
+    var D = await (await fetch('../../handoff/cards.sample.json')).json();
+    var R = function (n) { return A[n] ? A[n].url : '../../assets/' + n; };
+    var maps = {};
+    async function card(id) {
+      var c = JSON.parse(JSON.stringify(D.cards.find(function (x) { return x.id === id; })));
+      if (c.map && c.map.dataRef) { maps[c.map.dataRef] = maps[c.map.dataRef] || await (await fetch(R(c.map.dataRef))).json(); c.map.data = maps[c.map.dataRef]; }
+      return c;
+    }
+    var ITEMS = [{"intro": "Les sept modèles, ouverture et clôture de chacun. Les séries 1 à 3 portent des données de démonstration tirées des fiches ; les séries 4 à 7 des emplacements entre crochets. « Image à trouver » marque un emplacement sans image vérifiée."}, {"id": "serie-pays-01", "width": 320, "caption": "1 D'où vient le nom de mon pays ?"}, {"id": "serie-nom-recu-01", "width": 320, "caption": "2 Le nom qu'on leur a donné"}, {"id": "serie-nom-famille-01", "width": 320, "caption": "3 Mon nom, mon histoire"}, {"id": "serie-mots-01", "width": 320, "caption": "4 Les mots qu'on nous a collés"}, {"id": "serie-frontieres-02", "width": 320, "caption": "5 Un peuple, plusieurs pays (carte)"}, {"id": "serie-afrique-tout-01", "width": 320, "caption": "6 L'Afrique n'est pas un tout"}, {"id": "serie-villes-01", "width": 320, "caption": "7 Ce que les villes racontent"}, {"id": "serie-nom-recu-08", "width": 320, "caption": "Clôture, thème Parchemin"}, {"id": "serie-afrique-tout-07", "width": 320, "caption": "Clôture, thème Nuit"}];
+    for (var i = 0; i < ITEMS.length; i++) {
+      var it = ITEMS[i];
+      if (it.intro) { var p = document.createElement('p'); p.className = 'pv-intro'; p.textContent = it.intro; root.appendChild(p); continue; }
+      var box = document.createElement('div'); box.className = 'pv-item'; root.appendChild(box);
+      var res = await EthniCards.mount(box, await card(it.id), { width: it.width || 430, resolve: R, logo: D.logo, diagnose: !!it.diagnose });
+      var cap = document.createElement('div'); cap.className = 'pv-cap'; cap.textContent = it.caption || ''; box.appendChild(cap);
+      var r = res.report, rep = document.createElement('div'); rep.className = 'pv-rep' + (r.ok ? '' : ' bad');
+      rep.innerHTML = '<b>' + (r.ok ? 'Tient' : 'Ne tient pas') + '</b> · panneau ' + r.panelHeight + ' px sur ' + (r.panelMax || 900) + (r.dense ? ' · corps dense 28 px' : ' · corps 32 px') + (r.titleStep ? ' · titre 72 px' : '') + (r.series ? ' · bandeau sur ' + r.series.lines + ' ligne, fin à ' + r.series.right + ' px' : '') + (r.panelMax && r.panelMax < 900 ? ' · limite ' + r.panelMax + ' px' : '') + (r.atlas ? ' · ' + r.atlas.entries + ' entrées, ' + r.atlas.numbered + ' numérotées' + (r.atlas.minGap != null ? ', écart minimal ' + r.atlas.minGap + ' px' : '') : '') + (r.collisions != null ? ' · ' + r.collisions + ' collision' + (r.collisions > 1 ? 's' : '') : '') + (r.warnings.length ? ' · ' + r.warnings.join(' ') : '') + ' · lu à ' + (it.width || 430) + ' px';
+      box.appendChild(rep);
+    }
+  } catch (e) { root.textContent = 'Aperçu indisponible : ' + e.message; }
+})();
+</script></body></html>

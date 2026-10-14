@@ -1,5 +1,5 @@
 {
- "version": "1.2.0-proposition",
+ "version": "1.4.0-proposition",
  "logo": "Logo/ethniafrica-logo.png",
  "cards": [
   {
@@ -4407,6 +4407,2967 @@
     }
    },
    "provenance": "prototype-densite-1880.cards.json (12 octobre 2026), rendu tel quel : le contrôle de collisions 1.2.0 doit le refuser."
+  },
+  {
+   "id": "serie-pays-01",
+   "type": "opener",
+   "theme": "nuit",
+   "folio": "01/07",
+   "series": {
+    "id": "pays",
+    "episode": 1
+   },
+   "kicker": "Le nom d'un pays",
+   "title": "Qui a choisi le nom *Burkina Faso* ?",
+   "cue": "Faites défiler",
+   "demo": "Démonstration : texte non validé",
+   "provenance": "Beat 1 (le nom et la question). Question fixe de la série 1. Image à choisir : le pays aujourd'hui, photographie sous licence libre. Modèle pays-01 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/kasem-gurunsi.jpg",
+    "w": 900,
+    "h": 596,
+    "focus": [
+     0.5,
+     0.5
+    ],
+    "anchor": [
+     0.5,
+     0.5
+    ],
+    "zoom": 1.3
+   },
+   "credit": "Photo : Alexander Leisser, cour royale de Tiébélé (Burkina Faso), 2016, Wikimedia Commons, CC BY-SA 4.0",
+   "imageAlt": "Maison aux murs peints de la cour royale de Tiébélé, au Burkina Faso"
+  },
+  {
+   "id": "serie-pays-02",
+   "type": "explanation",
+   "theme": "nuit",
+   "folio": "02/07",
+   "series": {
+    "id": "pays",
+    "episode": 1
+   },
+   "kicker": "Ce que le nom veut dire",
+   "title": "Deux mots pris à deux *langues* du pays",
+   "forms": {
+    "layout": "table",
+    "rows": [
+     [
+      "Burkina",
+      "l'intégrité, l'honneur, en mooré"
+     ],
+     [
+      "Faso",
+      "le pays, la terre, en dioula"
+     ]
+    ]
+   },
+   "note": "Ensemble, les deux mots se traduisent par « la patrie des hommes intègres ».",
+   "source": "Alain Maharaux, 1995, p. 9",
+   "demo": "Démonstration : texte non validé",
+   "provenance": "Beat 2 (ce que le nom peut vouloir dire). dataset/source/afrik/pays/BFA.json, champ etymology et nameHistory « Usage contemporain » (Maharaux 1995, p. 9). Image à choisir. Modèle pays-02 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/dioula-metier.jpg",
+    "w": 583,
+    "h": 900,
+    "focus": [
+     0.5,
+     0.45
+    ],
+    "anchor": [
+     0.5,
+     0.5
+    ],
+    "zoom": 1.3
+   },
+   "credit": "Photo : Angeline A. van Achterberg, Grande Mosquée de Bobo-Dioulasso, 2001, ASC Leiden, CC BY-SA 4.0",
+   "imageAlt": "La Grande Mosquée de Bobo-Dioulasso, au Burkina Faso"
+  },
+  {
+   "id": "serie-pays-03",
+   "type": "dated",
+   "theme": "nuit",
+   "folio": "03/07",
+   "series": {
+    "id": "pays",
+    "episode": 1
+   },
+   "date": {
+    "display": "4 août 1984",
+    "kind": "exact",
+    "marker": {
+     "kind": "adoption",
+     "label": "Nom de l'État"
+    },
+    "name": "Burkina Faso",
+    "designated": "le pays qui s'appelait jusque-là Haute-Volta",
+    "usedBy": "le gouvernement de Thomas Sankara, par une ordonnance du 2 août 1984"
+   },
+   "source": "Digithèque MJP, université de Perpignan · Histoire générale de l'Afrique, UNESCO, vol. VIII, 1998, p. 130",
+   "demo": "Démonstration : texte non validé",
+   "provenance": "Beat 3 (qui l'a donné, et quand). BFA.json, nameOriginActor et nameHistory « Depuis le 4 août 1984 ». La date de l'ordonnance repose sur Jeune Afrique (2014) : à vérifier par la recherche avant publication. Image à choisir. Modèle pays-03 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-pays-03.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-pays-04",
+   "type": "dated",
+   "theme": "nuit",
+   "folio": "04/07",
+   "series": {
+    "id": "pays",
+    "episode": 1
+   },
+   "date": {
+    "display": "1er mars 1919",
+    "kind": "exact",
+    "marker": {
+     "kind": "premiere",
+     "label": "Le nom d'avant"
+    },
+    "name": "Haute-Volta",
+    "designated": "une colonie de sept cercles, avec Ouagadougou pour chef-lieu",
+    "usedBy": "l'administration coloniale française, par un décret"
+   },
+   "source": "Décret du 1er mars 1919, article premier, Digithèque MJP",
+   "demo": "Démonstration : texte non validé",
+   "provenance": "Beat 4 (le nom d'avant). BFA.json, nameHistory Haute-Volta « 1er mars 1919 ». Image à choisir : le décret ou une carte de la colonie, document daté. Modèle pays-04 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/burkina-faso.jpg",
+    "w": 1100,
+    "h": 722,
+    "focus": [
+     0.5,
+     0.5
+    ],
+    "anchor": [
+     0.5,
+     0.5
+    ],
+    "zoom": 1.3
+   },
+   "credit": "Photo : Walter Mittelholzer, Ouagadougou vue d'avion, 1930-1931, domaine public",
+   "imageAlt": "Ouagadougou vue d'avion pendant l'hiver 1930-1931"
+  },
+  {
+   "id": "serie-pays-05",
+   "type": "explanation",
+   "theme": "nuit",
+   "folio": "05/07",
+   "series": {
+    "id": "pays",
+    "episode": 1
+   },
+   "kicker": "Le nom des habitants",
+   "title": "*Burkinabè*, un mot pris à trois langues",
+   "body": "Le nom des habitants, burkinabè, emprunte aux trois langues principales du pays, selon le géographe Alain Maharaux. Les sources réunies ici ne disent pas de quelle langue vient la fin du mot.",
+   "source": "Alain Maharaux, 1995, p. 9",
+   "demo": "Démonstration : texte non validé",
+   "provenance": "Beat 4 (le nom des habitants). BFA.json, etymology et nameHistory « 1984 ». Image à choisir. Modèle pays-05 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-pays-05.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-pays-06",
+   "type": "explanation",
+   "theme": "nuit",
+   "folio": "06/07",
+   "series": {
+    "id": "pays",
+    "episode": 1
+   },
+   "kicker": "Les autres lectures",
+   "title": "Sur le sens, les sources sont *d'accord*",
+   "body": "Les sources lues donnent toutes le même sens au nom Burkina Faso. Elles ne disent pas qui a proposé le nom Haute-Volta, ni pourquoi il a été retenu.",
+   "source": "Alain Maharaux, 1995 · Michel Izard, 1985, p. 263",
+   "demo": "Démonstration : texte non validé",
+   "provenance": "Beat 5 (les autres lectures). La fiche BFA.json ne rapporte aucune lecture concurrente du nom ; la carte le dit au lieu d'en inventer une. Si la recherche en trouve une, elle remplace ce texte, attribuée. Modèle pays-06 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-pays-06.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-pays-07",
+   "type": "closing",
+   "theme": "nuit",
+   "folio": "07/07",
+   "series": {
+    "id": "pays",
+    "episode": 1
+   },
+   "kicker": "Le nom Burkina Faso, de 1984 à 1919",
+   "recap": [
+    {
+     "date": "1984",
+     "name": "Burkina Faso",
+     "kind": "adoption"
+    },
+    {
+     "date": "1919",
+     "name": "Haute-Volta",
+     "kind": "premiere"
+    }
+   ],
+   "title": "Notre objectif : raconter l'origine des noms, avec des sources.",
+   "body": "Cherchez Burkina Faso sur EthniAfrica, lien en profil.",
+   "cta": {
+    "domain": "ethniafrica.com"
+   },
+   "demo": "Démonstration : texte non validé",
+   "provenance": "Beat 6 (la phrase de clôture) : la phrase de fin de chaque légende, décidée le 13 octobre 2026 (docs/editorial/strategy/social-series.md). Modèle pays-07 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/kasem-gurunsi.jpg",
+    "w": 900,
+    "h": 596,
+    "focus": [
+     0.5,
+     0.4
+    ],
+    "anchor": [
+     0.5,
+     0.5
+    ],
+    "zoom": 1.3
+   },
+   "credit": "Photo : Alexander Leisser, cour royale de Tiébélé (Burkina Faso), 2016, Wikimedia Commons, CC BY-SA 4.0",
+   "imageAlt": "Maison aux murs peints de la cour royale de Tiébélé, au Burkina Faso"
+  },
+  {
+   "id": "serie-nom-recu-01",
+   "type": "opener",
+   "theme": "parchemin",
+   "folio": "01/08",
+   "series": {
+    "id": "nom-recu",
+    "episode": 1
+   },
+   "kicker": "Le nom Touareg",
+   "title": "Comment s'appellent-ils *eux-mêmes* ?",
+   "cue": "Faites défiler",
+   "demo": "Démonstration : texte non validé",
+   "provenance": "Beat 1 (le nom que tout le monde connaît), question fixe de la série 2. Image à choisir : lieu ou objet, jamais un visage sous un nom contesté (charte de marque, § 9). Modèle nom-recu-01 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/tifinagh-algeria.jpg",
+    "w": 900,
+    "h": 529,
+    "focus": [
+     0.5,
+     0.5
+    ],
+    "anchor": [
+     0.5,
+     0.5
+    ],
+    "zoom": 1.3
+   },
+   "credit": "Photo : Patrick Gruban, inscriptions en tifinagh (Algérie), 2006, Wikimedia Commons, CC BY-SA 2.0",
+   "imageAlt": "Inscriptions en tifinagh gravées dans la roche, en Algérie"
+  },
+  {
+   "id": "serie-nom-recu-02",
+   "type": "explanation",
+   "theme": "parchemin",
+   "folio": "02/08",
+   "series": {
+    "id": "nom-recu",
+    "episode": 1
+   },
+   "kicker": "Le nom que tout le monde connaît",
+   "title": "*Touareg* vient des auteurs arabes",
+   "body": "En français, on dit Touareg. On lit déjà une forme proche, Targa, chez l'historien Ibn Khaldoun, au XIVe siècle. Son traducteur note que Touareg est le pluriel de Targa.",
+   "source": "Ibn Khaldoun, trad. de Slane, 1854, p. 64 et 104-105",
+   "demo": "Démonstration : texte non validé",
+   "provenance": "Beat 1. dataset/source/afrik/peuples/FLG_BERBERE/PPL_TUAREG.json, nameHistory Touareg « XIVe siècle ». Modèle nom-recu-02 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-nom-recu-02.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-nom-recu-03",
+   "type": "explanation",
+   "theme": "parchemin",
+   "folio": "03/08",
+   "series": {
+    "id": "nom-recu",
+    "episode": 1
+   },
+   "kicker": "Qui leur a donné ces noms",
+   "title": "D'autres les ont *nommés*",
+   "forms": {
+    "layout": "table",
+    "rows": [
+     [
+      "Touareg",
+      "des auteurs de langue arabe"
+     ],
+     [
+      "Mulatthamin",
+      "« les porteurs du voile », chez Ibn Khaldoun"
+     ],
+     [
+      "Kandin",
+      "les Kanouri, noté en 1854"
+     ]
+    ]
+   },
+   "note": "Ces noms viennent de leurs voisins, pas du peuple lui-même.",
+   "source": "Ibn Khaldoun, trad. de Slane, 1854 · S. W. Koelle, 1854 · Heinrich Barth, 1857",
+   "demo": "Démonstration : texte non validé",
+   "provenance": "Beat 2 (qui l'a donné). PPL_TUAREG.json, namedBy de Touareg, Mulatthamin et Kandin. Modèle nom-recu-03 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-nom-recu-03.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-nom-recu-04",
+   "type": "explanation",
+   "theme": "parchemin",
+   "folio": "04/08",
+   "series": {
+    "id": "nom-recu",
+    "episode": 1
+   },
+   "kicker": "Le nom qu'ils se donnent",
+   "title": "Le nom cherché mène à *Imuhagh*",
+   "forms": {
+    "layout": "pair",
+    "searchedLabel": "Vous avez cherché",
+    "searched": "Touareg",
+    "selfLabel": "Ce peuple se nomme lui-même",
+    "self": "Imuhagh"
+   },
+   "note": "On dit aussi Imajeghen ou Imushagh selon les régions, et Kel Tamasheq, « ceux de la langue tamasheq ».",
+   "source": "Salem Chaker, 1986, § 6-7 et § 25",
+   "demo": "Démonstration : texte non validé",
+   "provenance": "Beat 3 (le nom qu'ils se donnent). PPL_TUAREG.json, nameHistory Imuhagh et Kel Tamasheq. Modèle nom-recu-04 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-nom-recu-04.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-nom-recu-05",
+   "type": "explanation",
+   "theme": "parchemin",
+   "folio": "05/08",
+   "series": {
+    "id": "nom-recu",
+    "episode": 1
+   },
+   "kicker": "Pourquoi deux noms",
+   "title": "L'origine du mot *Touareg* reste discutée",
+   "body": "Pour l'historien Pol Trousset, le mot vient de Targa, un ancien nom du Fezzan. Une autre explication le tire de l'arabe târek, « abandonné ». En 1864, des Touareg de l'Azdjer la rapportent comme une injure.",
+   "source": "Pol Trousset, 1997 · Henri Duveyrier, 1864, p. 317-318",
+   "demo": "Démonstration : texte non validé",
+   "provenance": "Beat 4 (pourquoi l'écart). PPL_TUAREG.json, nameHistory Touareg « Origine non datée » et « Rapportée en 1857 et en 1864 ». Deux lectures attribuées, sans les classer. Modèle nom-recu-05 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-nom-recu-05.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-nom-recu-06",
+   "type": "explanation",
+   "theme": "parchemin",
+   "folio": "06/08",
+   "series": {
+    "id": "nom-recu",
+    "episode": 1
+   },
+   "kicker": "Hier et aujourd'hui",
+   "title": "En 1864, ce nom était *refusé*",
+   "body": "Des Touareg de l'Azdjer disent à l'explorateur Henri Duveyrier que Touareg n'est pas leur nom. Ils ne reconnaissent que Imôhagh. [Texte à écrire : qui emploie le nom Touareg aujourd'hui, avec sa source.]",
+   "source": "Henri Duveyrier, 1864, p. 317-318",
+   "demo": "Gabarit : phrase à sourcer",
+   "provenance": "Beat 5 (beaucoup l'ont adopté aujourd'hui, ce ne fut pas toujours le cas). La fiche documente le refus de 1864, pas l'usage actuel : la phrase entre crochets attend la recherche. Modèle nom-recu-06 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-nom-recu-06.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-nom-recu-07",
+   "type": "explanation",
+   "theme": "parchemin",
+   "folio": "07/08",
+   "series": {
+    "id": "nom-recu",
+    "episode": 1
+   },
+   "kicker": "À vous",
+   "title": "Et chez vous, comment *dit-on* ?",
+   "body": "Dites-nous en commentaire le nom que l'on emploie chez vous, et dans quelle langue.",
+   "demo": "Démonstration : texte non validé",
+   "provenance": "Beat 6 (la question aux lecteurs), clôture fixe de la série 2. Modèle nom-recu-07 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/tifinagh-algeria.jpg",
+    "w": 900,
+    "h": 529,
+    "focus": [
+     0.35,
+     0.5
+    ],
+    "anchor": [
+     0.5,
+     0.5
+    ],
+    "zoom": 1.3
+   },
+   "credit": "Photo : Patrick Gruban, inscriptions en tifinagh (Algérie), 2006, Wikimedia Commons, CC BY-SA 2.0",
+   "imageAlt": "Inscriptions en tifinagh gravées dans la roche, en Algérie"
+  },
+  {
+   "id": "serie-nom-recu-08",
+   "type": "closing",
+   "theme": "parchemin",
+   "folio": "08/08",
+   "series": {
+    "id": "nom-recu",
+    "episode": 1
+   },
+   "title": "Notre objectif : raconter l'origine des noms, avec des sources.",
+   "body": "Cherchez Touareg sur EthniAfrica, lien en profil.",
+   "cta": {
+    "domain": "ethniafrica.com"
+   },
+   "demo": "Démonstration : texte non validé",
+   "provenance": "Phrase de fin de chaque légende (docs/editorial/strategy/social-series.md). Modèle nom-recu-08 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/tifinagh-algeria.jpg",
+    "w": 900,
+    "h": 529,
+    "focus": [
+     0.65,
+     0.5
+    ],
+    "anchor": [
+     0.5,
+     0.5
+    ],
+    "zoom": 1.3
+   },
+   "credit": "Photo : Patrick Gruban, inscriptions en tifinagh (Algérie), 2006, Wikimedia Commons, CC BY-SA 2.0",
+   "imageAlt": "Inscriptions en tifinagh gravées dans la roche, en Algérie"
+  },
+  {
+   "id": "serie-nom-famille-01",
+   "type": "opener",
+   "theme": "nuit",
+   "folio": "01/07",
+   "series": {
+    "id": "nom-famille",
+    "episode": 1
+   },
+   "kicker": "Un nom de famille",
+   "title": "*Yao*, Kouassi : d'où vient ton nom ?",
+   "cue": "Faites défiler",
+   "demo": "Démonstration : texte non validé",
+   "provenance": "Beat 1 (le nom), question fixe de la série 3. Image à choisir. Modèle nom-famille-01 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-nom-famille-01.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-nom-famille-02",
+   "type": "map",
+   "theme": "nuit",
+   "folio": "02/07",
+   "series": {
+    "id": "nom-famille",
+    "episode": 1
+   },
+   "kicker": "Où on le porte",
+   "title": "Des noms portés en {area-a:Côte d'Ivoire}",
+   "map": {
+    "dataRef": "Cartes/afrique-ouest.json",
+    "borders": "quiet",
+    "highlight": {
+     "isos": [
+      "CIV"
+     ],
+     "tone": "area-a",
+     "legend": "Yao, Kouassi : chez les Baoulé et les Agni"
+    },
+    "countryLabels": "highlight",
+    "caption": {
+     "what": "pays où les fiches EthniAfrica attestent ces noms ; la couleur couvre tout le pays",
+     "when": "aujourd'hui",
+     "source": "fiches EthniAfrica Yao et Kouassi ; fond Natural Earth, domaine public"
+    }
+   },
+   "demo": "Démonstration : texte non validé",
+   "provenance": "Beat 2 (où il est porté). dataset/source/afrik/patronymes/PAT_YAO.json et PAT_KOUASSI.json, champ countries (CIV). Les formes Yaw et Kwasi du Ghana sont dans nameHistory mais pas dans le champ countries : le Ghana prend une couleur quand la fiche l'ajoute. Modèle nom-famille-02 de la proposition 1.3.0."
+  },
+  {
+   "id": "serie-nom-famille-03",
+   "type": "explanation",
+   "theme": "nuit",
+   "folio": "03/07",
+   "series": {
+    "id": "nom-famille",
+    "episode": 1
+   },
+   "kicker": "Ce que le nom dit",
+   "title": "Un nom donné selon le *jour* de naissance",
+   "body": "Yao et Kouassi sont des noms de jour. On les donne à un garçon d'après le jour de la semaine où il est né. En agni, Yao est le garçon né le vendredi, Kouassi celui né le lundi.",
+   "source": "Maurice Delafosse, 1900, p. 132-134",
+   "demo": "Démonstration : texte non validé",
+   "provenance": "Beat 3 (ce qu'il raconte). PAT_YAO.json et PAT_KOUASSI.json, nameHistory « Usage contemporain » et « 1900 ». Modèle nom-famille-03 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-nom-famille-03.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-nom-famille-04",
+   "type": "explanation",
+   "theme": "nuit",
+   "folio": "04/07",
+   "series": {
+    "id": "nom-famille",
+    "episode": 1
+   },
+   "kicker": "D'un pays à l'autre",
+   "title": "Le même nom, un autre *jour*",
+   "forms": {
+    "layout": "table",
+    "rows": [
+     [
+      "Yao",
+      "vendredi, en agni"
+     ],
+     [
+      "Yaw",
+      "jeudi, en twi (Ghana)"
+     ],
+     [
+      "Kouassi",
+      "lundi, en agni et en baoulé"
+     ],
+     [
+      "Kwasi",
+      "dimanche, en twi (Ghana)"
+     ]
+    ]
+   },
+   "note": "Selon les sources, le jour change d'une langue à l'autre.",
+   "source": "Delafosse, 1900 · Christaller, 1881 · Pagnet, 2005",
+   "demo": "Démonstration : texte non validé",
+   "provenance": "Beat 4 (ses formes d'un pays à l'autre). PAT_YAO.json (Yao, Yaw) et PAT_KOUASSI.json (Kouassi, Kwasi), nameHistory. Modèle nom-famille-04 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/bono-brong-ahafo.jpg",
+    "w": 900,
+    "h": 900,
+    "focus": [
+     0.5,
+     0.45
+    ],
+    "anchor": [
+     0.5,
+     0.5
+    ],
+    "zoom": 1.3
+   },
+   "credit": "Photo : Kelsdark, Tanoboase près de Techiman (Ghana), 2014, Wikimedia Commons, CC BY-SA 3.0",
+   "imageAlt": "Rochers dans la vallée de Tanoboase, près de Techiman, au Ghana"
+  },
+  {
+   "id": "serie-nom-famille-05",
+   "type": "dated",
+   "theme": "nuit",
+   "folio": "05/07",
+   "series": {
+    "id": "nom-famille",
+    "episode": 1
+   },
+   "date": {
+    "display": "1881",
+    "kind": "year",
+    "marker": {
+     "kind": "premiere",
+     "label": "Plus ancienne trace écrite repérée"
+    },
+    "name": "Yaw et Kwasi",
+    "designated": "le garçon né le jeudi, et celui né le dimanche, en twi",
+    "usedBy": "le missionnaire Johann Gottlieb Christaller, dans son dictionnaire du twi"
+   },
+   "source": "J. G. Christaller, 1881, p. 556 et 567",
+   "demo": "Démonstration : texte non validé",
+   "provenance": "Beat 3, suite (ce qu'il raconte, la plus ancienne trace). PAT_YAO.json nameHistory Yaw « 1881 » ; PAT_KOUASSI.json nameHistory Kwasi « 1881 ». La date dit quand un auteur a noté ces noms, pas depuis quand on les donne : à dire dans la voix. Modèle nom-famille-05 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-nom-famille-05.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-nom-famille-06",
+   "type": "explanation",
+   "theme": "nuit",
+   "folio": "06/07",
+   "series": {
+    "id": "nom-famille",
+    "episode": 1
+   },
+   "kicker": "À toi",
+   "title": "Et ton nom, d'où *vient-il* ?",
+   "body": "Écris-le en commentaire. Le prochain épisode partira des noms que vous nous donnez.",
+   "demo": "Démonstration : texte non validé",
+   "provenance": "Beat 5, clôture fixe de la série 3 : l'épisode suivant est choisi parmi les noms des commentaires. Modèle nom-famille-06 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-nom-famille-06.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-nom-famille-07",
+   "type": "closing",
+   "theme": "nuit",
+   "folio": "07/07",
+   "series": {
+    "id": "nom-famille",
+    "episode": 1
+   },
+   "title": "Notre objectif : raconter l'origine des noms, avec des sources.",
+   "body": "Cherchez Yao sur EthniAfrica, lien en profil.",
+   "cta": {
+    "domain": "ethniafrica.com"
+   },
+   "demo": "Démonstration : texte non validé",
+   "provenance": "Phrase de fin de chaque légende (docs/editorial/strategy/social-series.md). Modèle nom-famille-07 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/bono-brong-ahafo.jpg",
+    "w": 900,
+    "h": 900,
+    "focus": [
+     0.5,
+     0.4
+    ],
+    "anchor": [
+     0.5,
+     0.5
+    ],
+    "zoom": 1.3
+   },
+   "credit": "Photo : Kelsdark, Tanoboase près de Techiman (Ghana), 2014, Wikimedia Commons, CC BY-SA 3.0",
+   "imageAlt": "Rochers dans la vallée de Tanoboase, près de Techiman, au Ghana"
+  },
+  {
+   "id": "serie-mots-01",
+   "type": "opener",
+   "theme": "nuit",
+   "folio": "01/07",
+   "series": {
+    "id": "mots",
+    "episode": 1
+   },
+   "kicker": "Un mot sur l'Afrique",
+   "title": "D'où vient le mot *[mot]* ?",
+   "cue": "Faites défiler",
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Beat 1 (le mot tel qu'on l'entend). Question fixe de la série 4. Aucun épisode n'est encore choisi : tout le texte entre crochets est à écrire. Modèle mots-01 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-mots-01.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-mots-02",
+   "type": "explanation",
+   "theme": "nuit",
+   "folio": "02/07",
+   "series": {
+    "id": "mots",
+    "episode": 1
+   },
+   "kicker": "Le mot tel qu'on l'entend",
+   "title": "On l'entend *partout*",
+   "body": "[Où et comment on entend ce mot aujourd'hui, en une ou deux phrases sourcées.]",
+   "source": "[source]",
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Beat 1, suite. Exemple d'usage attesté, jamais un usage supposé. Modèle mots-02 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-mots-02.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-mots-03",
+   "type": "explanation",
+   "theme": "nuit",
+   "folio": "03/07",
+   "series": {
+    "id": "mots",
+    "episode": 1
+   },
+   "kicker": "Sa langue et son premier sens",
+   "title": "Un mot venu d'une autre *langue*",
+   "forms": {
+    "layout": "table",
+    "rows": [
+     [
+      "[forme d'origine]",
+      "[langue], [premier sens]"
+     ],
+     [
+      "[forme française]",
+      "[sens d'aujourd'hui]"
+     ]
+    ]
+   },
+   "note": "[Une phrase qui relie les deux sens.]",
+   "source": "[dictionnaire étymologique, page]",
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Beat 2 (sa langue et son premier sens). Modèle mots-03 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-mots-03.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-mots-04",
+   "type": "dated",
+   "theme": "nuit",
+   "folio": "04/07",
+   "series": {
+    "id": "mots",
+    "episode": 1
+   },
+   "date": {
+    "display": "[date]",
+    "kind": "year",
+    "marker": {
+     "kind": "attestation",
+     "label": "Arrivée du mot en Afrique"
+    },
+    "name": "[mot]",
+    "designated": "[ce que le mot désignait alors]",
+    "usedBy": "[qui l'employait : voyageurs, commerçants, administration]"
+   },
+   "source": "[source datée]",
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Beat 3 (comment il est arrivé en Afrique, et qui l'employait). Une date que la recherche ne trouve pas s'écrit « Date inconnue » (kind unknown). Modèle mots-04 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-mots-04.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-mots-05",
+   "type": "explanation",
+   "theme": "nuit",
+   "folio": "05/07",
+   "series": {
+    "id": "mots",
+    "episode": 1
+   },
+   "kicker": "Ce qu'il servait à dire",
+   "title": "Un mot qui *classait*",
+   "body": "[Ce que le mot servait à dire des gens qu'il désignait, avec une citation exacte entre guillemets et son auteur.]",
+   "source": "[source]",
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Beat 4 (ce qu'il servait à dire). Titre à réécrire selon l'épisode. Modèle mots-05 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-mots-05.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-mots-06",
+   "type": "explanation",
+   "theme": "nuit",
+   "folio": "06/07",
+   "series": {
+    "id": "mots",
+    "episode": 1
+   },
+   "kicker": "Le mot qu'ils emploient",
+   "title": "Le mot entendu mène au *nom employé*",
+   "forms": {
+    "layout": "pair",
+    "searchedLabel": "Le mot qu'on dit",
+    "searched": "[mot]",
+    "selfLabel": "Le mot qu'ils emploient",
+    "self": "[nom]"
+   },
+   "source": "[source]",
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Beat 5, clôture fixe de la série 4 : le mot que les gens emploient pour eux-mêmes. Modèle mots-06 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-mots-06.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-mots-07",
+   "type": "closing",
+   "theme": "nuit",
+   "folio": "07/07",
+   "series": {
+    "id": "mots",
+    "episode": 1
+   },
+   "title": "Notre objectif : raconter l'origine des noms, avec des sources.",
+   "body": "Cherchez [mot] sur EthniAfrica, lien en profil.",
+   "cta": {
+    "domain": "ethniafrica.com"
+   },
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Phrase de fin de chaque légende (docs/editorial/strategy/social-series.md). Modèle mots-07 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-mots-07.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-frontieres-01",
+   "type": "opener",
+   "theme": "parchemin",
+   "folio": "01/07",
+   "series": {
+    "id": "frontieres",
+    "episode": 1
+   },
+   "kicker": "Un peuple, deux noms",
+   "title": "Pourquoi les *[peuple]* ont-ils deux noms ?",
+   "cue": "Faites défiler",
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Beat 1, question fixe de la série 5. Aucun épisode choisi : texte entre crochets à écrire. Modèle frontieres-01 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-frontieres-01.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-frontieres-02",
+   "type": "map",
+   "theme": "parchemin",
+   "folio": "02/07",
+   "series": {
+    "id": "frontieres",
+    "episode": 1
+   },
+   "kicker": "Le peuple sur la carte",
+   "title": "Un {area-a:peuple} de part et d'autre d'une {area-b:frontière}",
+   "map": {
+    "dataRef": "Cartes/grands-lacs.json",
+    "borders": "strong",
+    "view": [
+     270,
+     47,
+     800,
+     1000
+    ],
+    "countryLabels": false,
+    "waterLabels": false,
+    "areas": [
+     {
+      "label": "Peuple X (fictif)",
+      "tone": "area-a",
+      "kind": "certain",
+      "paths": [
+       "M969,353C967,373 940,390 923,408C907,427 894,459 869,466C845,473 807,456 776,449C745,442 700,441 683,425C666,409 675,376 676,353C678,329 675,300 692,285C709,270 748,269 778,261C808,253 844,233 870,238C896,243 920,271 937,290C953,309 971,333 969,353Z",
+       "M1028,521C1029,531 1025,546 1016,552C1007,558 987,557 973,557C959,557 941,556 932,550C923,544 921,531 921,521C920,511 922,496 930,490C939,484 959,484 973,484C987,484 1003,486 1012,493C1021,499 1027,511 1028,521Z"
+      ]
+     },
+     {
+      "label": "Peuple X, autre côté (fictif)",
+      "legend": "Même peuple, autre État (fictif)",
+      "tone": "area-b",
+      "kind": "certain",
+      "paths": [
+       "M578,311C578,328 552,346 536,361C520,376 504,393 481,401C458,409 419,417 397,410C375,403 363,377 348,360C334,343 315,329 311,311C307,293 312,265 327,250C343,236 378,231 403,226C429,221 459,215 481,220C503,226 520,245 536,261C552,276 578,294 578,311Z"
+      ]
+     }
+    ],
+    "labels": [
+     {
+      "text": "Peuple X",
+      "x": 826.0,
+      "y": 296.8,
+      "kind": "area",
+      "tone": "area-a"
+     },
+     {
+      "text": "Peuple X",
+      "x": 441.0,
+      "y": 296.8,
+      "kind": "area",
+      "tone": "area-b"
+     }
+    ],
+    "caption": {
+     "what": "aires fictives pour la démonstration",
+     "when": "à indiquer",
+     "source": "à indiquer ; fond Natural Earth, domaine public"
+    }
+   },
+   "demo": "Aires fictives, démonstration",
+   "provenance": "Beat 1 (le peuple sur la carte). Géométrie reprise de l'exemple map-c du 1.2.0, inventée pour montrer le gabarit. Ne jamais publier : une vraie carte part de la fiche et de sources datées. Modèle frontieres-02 de la proposition 1.3.0."
+  },
+  {
+   "id": "serie-frontieres-03",
+   "type": "dated",
+   "theme": "parchemin",
+   "folio": "03/07",
+   "series": {
+    "id": "frontieres",
+    "episode": 1
+   },
+   "date": {
+    "display": "[date]",
+    "kind": "year",
+    "branches": [
+     {
+      "label": "D'un côté",
+      "name": "[nom A]",
+      "designated": "[ce que le nom désigne]",
+      "usedBy": "[qui l'emploie, dans quel État]"
+     },
+     {
+      "label": "De l'autre",
+      "name": "[nom B]",
+      "designated": "[ce que le nom désigne]",
+      "usedBy": "[qui l'emploie, dans quel État]"
+     }
+    ]
+   },
+   "source": "[source]",
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Beat 2 (son nom de chaque côté). Variante à deux formes de la carte datée (1.1). Modèle frontieres-03 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-frontieres-03.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-frontieres-04",
+   "type": "dated",
+   "theme": "parchemin",
+   "folio": "04/07",
+   "series": {
+    "id": "frontieres",
+    "episode": 1
+   },
+   "date": {
+    "display": "[date]",
+    "kind": "year",
+    "marker": {
+     "kind": "attestation",
+     "label": "Tracé de la frontière"
+    },
+    "name": "[frontière]",
+    "designated": "[la ligne, entre quels territoires]",
+    "usedBy": "[les puissances qui l'ont tracée, par quel traité]"
+   },
+   "source": "[traité, date, article]",
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Beat 3 (qui a tracé la ligne, et quand). Position du 13 octobre 2026 : la conférence de Berlin fixe les règles du partage ; les lignes sont tracées par des traités entre puissances européennes, surtout de 1885 à 1914. Modèle frontieres-04 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-frontieres-04.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-frontieres-05",
+   "type": "explanation",
+   "theme": "parchemin",
+   "folio": "05/07",
+   "series": {
+    "id": "frontieres",
+    "episode": 1
+   },
+   "kicker": "Ce que la ligne a changé",
+   "title": "Une ligne, deux *administrations*",
+   "body": "[Ce que la frontière a changé pour ce peuple : langue de l'école, administration, nom officiel. Une ou deux phrases sourcées.]",
+   "source": "[source]",
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Beat 4 (ce que la ligne a changé). Titre à réécrire selon l'épisode. Modèle frontieres-05 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-frontieres-05.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-frontieres-06",
+   "type": "explanation",
+   "theme": "parchemin",
+   "folio": "06/07",
+   "series": {
+    "id": "frontieres",
+    "episode": 1
+   },
+   "kicker": "Pour finir",
+   "title": "La ligne a été tracée par-dessus des gens qui étaient *déjà là*.",
+   "body": "[Une phrase sourcée sur le choix de 1964 : garder les frontières.]",
+   "source": "[source]",
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Beat 5, clôture fixe de la série 5. Le choix de 1964 vient des positions éditoriales du 13 octobre 2026 ; il est à sourcer avant d'être écrit. Modèle frontieres-06 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-frontieres-06.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-frontieres-07",
+   "type": "closing",
+   "theme": "parchemin",
+   "folio": "07/07",
+   "series": {
+    "id": "frontieres",
+    "episode": 1
+   },
+   "title": "Notre objectif : raconter l'origine des noms, avec des sources.",
+   "body": "Cherchez [peuple] sur EthniAfrica, lien en profil.",
+   "cta": {
+    "domain": "ethniafrica.com"
+   },
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Phrase de fin de chaque légende (docs/editorial/strategy/social-series.md). Modèle frontieres-fin de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-frontieres-07.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-afrique-tout-01",
+   "type": "opener",
+   "theme": "nuit",
+   "folio": "01/07",
+   "series": {
+    "id": "afrique-tout",
+    "episode": 1
+   },
+   "kicker": "Le nom d'un continent",
+   "title": "Qui a nommé l'*Afrique* ?",
+   "cue": "Faites défiler",
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Saison de 6 épisodes ; question fixe de la série 6 : « Qui a fait de l'Afrique un seul bloc ? ». Épisode 1 : l'Afrique (qui a nommé le continent). Modèle afrique-tout-01 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/lac-lac.jpg",
+    "w": 1100,
+    "h": 793,
+    "focus": [
+     0.5,
+     0.45
+    ],
+    "anchor": [
+     0.5,
+     0.5
+    ],
+    "zoom": 1.3
+   },
+   "credit": "Carte de l'Afrique, vers 1847, Victor Levasseur, domaine public",
+   "imageAlt": "Carte de l'Afrique gravée vers 1847"
+  },
+  {
+   "id": "serie-afrique-tout-02",
+   "type": "explanation",
+   "theme": "nuit",
+   "folio": "02/07",
+   "series": {
+    "id": "afrique-tout",
+    "episode": 1
+   },
+   "kicker": "Le nom tel qu'on le dit",
+   "title": "Un nom pour tout un *continent*",
+   "body": "[Depuis quand et par qui le nom Afrique désigne tout le continent, avec sa source.]",
+   "source": "[source]",
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Beat 1 de l'épisode 1. Modèle afrique-tout-02 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/guinee.jpg",
+    "w": 1100,
+    "h": 923,
+    "focus": [
+     0.5,
+     0.45
+    ],
+    "anchor": [
+     0.5,
+     0.5
+    ],
+    "zoom": 1.3
+   },
+   "credit": "Carte de l'Afrique, 1794, S. Boulton d'après d'Anville, domaine public",
+   "imageAlt": "Carte murale de l'Afrique publiée en 1794"
+  },
+  {
+   "id": "serie-afrique-tout-03",
+   "type": "explanation",
+   "theme": "nuit",
+   "folio": "03/07",
+   "series": {
+    "id": "afrique-tout",
+    "episode": 1
+   },
+   "kicker": "La lecture retenue",
+   "title": "[Titre de la lecture *retenue*]",
+   "body": "[La lecture que l'épisode retient, attribuée à son auteur.]",
+   "source": "[source]",
+   "status": "hypothese",
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Position du 13 octobre 2026 : l'épisode présente une hypothèse et dit explicitement qu'il y en a plusieurs. Modèle afrique-tout-03 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-afrique-tout-03.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-afrique-tout-04",
+   "type": "explanation",
+   "theme": "nuit",
+   "folio": "04/07",
+   "series": {
+    "id": "afrique-tout",
+    "episode": 1
+   },
+   "kicker": "Les autres lectures",
+   "title": "Plusieurs *explications* existent",
+   "forms": {
+    "layout": "table",
+    "rows": [
+     [
+      "[lecture 1]",
+      "[auteur, date]"
+     ],
+     [
+      "[lecture 2]",
+      "[auteur, date]"
+     ],
+     [
+      "[lecture 3]",
+      "[auteur, date]"
+     ]
+    ]
+   },
+   "note": "Les sources ne s'accordent pas, et aucune lecture n'est classée selon son origine.",
+   "source": "[sources]",
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Les autres lectures, attribuées, jamais classées par origine (docs/productions/README.md, « Never an assertion »). Les pistes citées dans le cadre du 13 octobre (un peuple Afri près de Carthage, lectures phénicienne, latine et grecque) sont à sourcer avant d'être écrites. Modèle afrique-tout-04 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/al-idrisi-1154.jpg",
+    "w": 960,
+    "h": 1046,
+    "focus": [
+     0.5,
+     0.3
+    ],
+    "anchor": [
+     0.5,
+     0.5
+    ],
+    "zoom": 1.3
+   },
+   "credit": "Carte du monde d'al-Idrisi, 1154, sud en haut, domaine public",
+   "imageAlt": "La carte du monde d'al-Idrisi, de 1154, dessinée le sud en haut"
+  },
+  {
+   "id": "serie-afrique-tout-05",
+   "type": "explanation",
+   "theme": "nuit",
+   "folio": "05/07",
+   "series": {
+    "id": "afrique-tout",
+    "episode": 1
+   },
+   "kicker": "Ce que le nom a fait",
+   "title": "Un nom qui fait un *bloc*",
+   "body": "[Comment ce nom a servi à parler de peuples différents comme d'un seul, avec un exemple daté.]",
+   "source": "[source]",
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Fil de la saison : qui a fait de l'Afrique un seul bloc. Modèle afrique-tout-05 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-afrique-tout-05.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-afrique-tout-06",
+   "type": "explanation",
+   "theme": "nuit",
+   "folio": "06/07",
+   "series": {
+    "id": "afrique-tout",
+    "episode": 1
+   },
+   "kicker": "La question de la saison",
+   "title": "Qui a fait de l'Afrique un seul *bloc* ?",
+   "body": "[Une phrase qui annonce l'épisode suivant.]",
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Clôture de l'épisode. La conclusion signée « nous pensons que… » n'apparaît qu'à l'épisode 6, jamais comme un fait sourcé. Modèle afrique-tout-06 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-afrique-tout-06.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-afrique-tout-07",
+   "type": "closing",
+   "theme": "nuit",
+   "folio": "07/07",
+   "series": {
+    "id": "afrique-tout",
+    "episode": 1
+   },
+   "title": "Notre objectif : raconter l'origine des noms, avec des sources.",
+   "body": "Cherchez Afrique sur EthniAfrica, lien en profil.",
+   "cta": {
+    "domain": "ethniafrica.com"
+   },
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Phrase de fin de chaque légende (docs/editorial/strategy/social-series.md). Modèle afrique-tout-fin de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/lac-lac.jpg",
+    "w": 1100,
+    "h": 793,
+    "focus": [
+     0.5,
+     0.4
+    ],
+    "anchor": [
+     0.5,
+     0.5
+    ],
+    "zoom": 1.3
+   },
+   "credit": "Carte de l'Afrique, vers 1847, Victor Levasseur, domaine public",
+   "imageAlt": "Carte de l'Afrique gravée vers 1847"
+  },
+  {
+   "id": "serie-villes-01",
+   "type": "opener",
+   "theme": "parchemin",
+   "folio": "01/06",
+   "series": {
+    "id": "villes",
+    "episode": 1
+   },
+   "kicker": "Le nom d'une ville",
+   "title": "Pourquoi *[ville]* s'appelle-t-elle ainsi ?",
+   "cue": "Faites défiler",
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Série 7, plus tard : elle attend les fiches de lieux. Mêmes beats que la série 1. Modèle villes-01 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-villes-01.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-villes-02",
+   "type": "explanation",
+   "theme": "parchemin",
+   "folio": "02/06",
+   "series": {
+    "id": "villes",
+    "episode": 1
+   },
+   "kicker": "Ce que le nom veut dire",
+   "title": "Un nom tiré d'une *langue*",
+   "forms": {
+    "layout": "table",
+    "rows": [
+     [
+      "[élément 1]",
+      "[langue], [sens]"
+     ],
+     [
+      "[élément 2]",
+      "[langue], [sens]"
+     ]
+    ]
+   },
+   "note": "[Une phrase qui donne le sens d'ensemble.]",
+   "source": "[source]",
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Beat 2 (ce que le nom peut vouloir dire). Modèle villes-02 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-villes-02.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-villes-03",
+   "type": "dated",
+   "theme": "parchemin",
+   "folio": "03/06",
+   "series": {
+    "id": "villes",
+    "episode": 1
+   },
+   "date": {
+    "display": "[date]",
+    "kind": "year",
+    "marker": {
+     "kind": "adoption",
+     "label": "Nom officiel"
+    },
+    "name": "[ville]",
+    "designated": "[la ville, depuis quand]",
+    "usedBy": "[qui a donné ou rendu ce nom]"
+   },
+   "source": "[source]",
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Beat 3 (qui l'a donné, et quand). Modèle villes-03 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-villes-03.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-villes-04",
+   "type": "dated",
+   "theme": "parchemin",
+   "folio": "04/06",
+   "series": {
+    "id": "villes",
+    "episode": 1
+   },
+   "date": {
+    "display": "[date]",
+    "kind": "year",
+    "marker": {
+     "kind": "attestation",
+     "label": "Le nom d'avant"
+    },
+    "name": "[ancien nom]",
+    "designated": "[ce que ce nom désignait]",
+    "usedBy": "[qui l'employait]"
+   },
+   "source": "[source]",
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Beat 4 (le nom d'avant). Exemples du cadre : Léopoldville et Kinshasa, Salisbury et Harare ; dates à établir par la recherche. Modèle villes-04 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-villes-04.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-villes-05",
+   "type": "explanation",
+   "theme": "parchemin",
+   "folio": "05/06",
+   "series": {
+    "id": "villes",
+    "episode": 1
+   },
+   "kicker": "Les autres lectures",
+   "title": "D'autres *explications* existent",
+   "body": "[La lecture retenue, puis les autres, chacune attribuée.]",
+   "source": "[sources]",
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Beat 5 (les autres lectures). Modèle villes-05 de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-villes-05.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-villes-06",
+   "type": "closing",
+   "theme": "parchemin",
+   "folio": "06/06",
+   "series": {
+    "id": "villes",
+    "episode": 1
+   },
+   "title": "Notre objectif : raconter l'origine des noms, avec des sources.",
+   "body": "Cherchez [ville] sur EthniAfrica, lien en profil.",
+   "cta": {
+    "domain": "ethniafrica.com"
+   },
+   "demo": "Gabarit : texte à remplacer",
+   "provenance": "Phrase de fin de chaque légende (docs/editorial/strategy/social-series.md). Modèle villes-fin de la proposition 1.3.0.",
+   "image": {
+    "src": "Series/a-trouver-serie-villes-06.png",
+    "w": 1080,
+    "h": 1278,
+    "focus": [
+     0.5,
+     0.2
+    ],
+    "anchor": [
+     0.5,
+     0.3
+    ]
+   },
+   "imageAlt": "Emplacement d’image vide : image à trouver",
+   "credit": "Image à trouver (voir la proposition d’images)"
+  },
+  {
+   "id": "serie-atlas-1880",
+   "type": "map",
+   "theme": "nuit",
+   "kicker": "L'Afrique à travers le temps",
+   "timeline": {
+    "steps": [
+     "1960",
+     "1914",
+     "1880",
+     "1750",
+     "1550",
+     "1350",
+     "1000",
+     "0",
+     "−1500"
+    ],
+    "current": 2,
+    "from": "1960",
+    "to": "1500 av. J.-C."
+   },
+   "title": "L'Afrique en 1880",
+   "map": {
+    "dataRef": "Cartes/afrique.json",
+    "borders": "none",
+    "view": [
+     -186.7,
+     -107.5,
+     1173.9,
+     1467.4
+    ],
+    "atlas": {
+     "entries": [
+      {
+       "name": "Maroc",
+       "x": 276.0,
+       "y": 48.0,
+       "region": "nord",
+       "kind": "state",
+       "zone": {
+        "cx": 261.0,
+        "cy": 72.0,
+        "rx": 57.0,
+        "ry": 42.0,
+        "rot": -30
+       }
+      },
+      {
+       "name": "Tunis",
+       "x": 458.4,
+       "y": 14.4,
+       "region": "nord",
+       "kind": "state",
+       "zone": {
+        "cx": 451.2,
+        "cy": 48.0,
+        "rx": 19.2,
+        "ry": 36.0
+       }
+      },
+      {
+       "name": "Tripoli",
+       "x": 494.4,
+       "y": 61.2,
+       "region": "nord",
+       "kind": "state",
+       "zone": {
+        "cx": 546.0,
+        "cy": 111.0,
+        "rx": 90.0,
+        "ry": 45.0
+       }
+      },
+      {
+       "name": "Égypte",
+       "x": 710.4,
+       "y": 96.0,
+       "region": "nord",
+       "kind": "state",
+       "zone": {
+        "cx": 696.0,
+        "cy": 135.0,
+        "rx": 60.0,
+        "ry": 57.0
+       }
+      },
+      {
+       "name": "Fouta-Djalon",
+       "x": 199.2,
+       "y": 328.8,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 193.2,
+        "cy": 324.0,
+        "rx": 19.2,
+        "ry": 14.4
+       }
+      },
+      {
+       "name": "Ségou",
+       "x": 260.8,
+       "y": 294.7,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 246.0,
+        "cy": 285.0,
+        "rx": 48.0,
+        "ry": 21.0,
+        "rot": -8
+       }
+      },
+      {
+       "name": "Wassoulou",
+       "x": 229.2,
+       "y": 326.4,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 231.0,
+        "cy": 334.2,
+        "rx": 27.0,
+        "ry": 22.2
+       }
+      },
+      {
+       "name": "Kénédougou",
+       "x": 268.0,
+       "y": 320.2,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 270.6,
+        "cy": 322.8,
+        "rx": 10.2,
+        "ry": 9.6
+       }
+      },
+      {
+       "name": "Kong",
+       "x": 280.8,
+       "y": 346.2,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 283.8,
+        "cy": 347.4,
+        "rx": 11.4,
+        "ry": 10.2
+       }
+      },
+      {
+       "name": "Mossi",
+       "x": 317.6,
+       "y": 307.6,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 319.8,
+        "cy": 304.2,
+        "rx": 19.8,
+        "ry": 16.2
+       }
+      },
+      {
+       "name": "Asante",
+       "x": 316.6,
+       "y": 375.7,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 316.2,
+        "cy": 374.4,
+        "rx": 16.2,
+        "ry": 16.8
+       }
+      },
+      {
+       "name": "Danxomè (Dahomey)",
+       "x": 359.9,
+       "y": 369.8,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 362.4,
+        "cy": 369.0,
+        "rx": 7.2,
+        "ry": 11.4
+       }
+      },
+      {
+       "name": "Sokoto",
+       "x": 398.9,
+       "y": 299.3,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 432.0,
+        "cy": 319.8,
+        "rx": 66.0,
+        "ry": 34.2
+       }
+      },
+      {
+       "name": "Borno",
+       "x": 498.7,
+       "y": 301.0,
+       "region": "ouest",
+       "kind": "state",
+       "zone": {
+        "cx": 495.0,
+        "cy": 307.2,
+        "rx": 23.4,
+        "ry": 21.6
+       }
+      },
+      {
+       "name": "Ouaddaï",
+       "x": 586.0,
+       "y": 290.0,
+       "region": "centre",
+       "kind": "state",
+       "zone": {
+        "cx": 585.0,
+        "cy": 294.0,
+        "rx": 33.0,
+        "ry": 30.0
+       }
+      },
+      {
+       "name": "Baguirmi",
+       "x": 530.0,
+       "y": 319.2,
+       "region": "centre",
+       "kind": "state",
+       "zone": {
+        "cx": 539.4,
+        "cy": 321.0,
+        "rx": 17.4,
+        "ry": 12.6
+       }
+      },
+      {
+       "name": "Darfour",
+       "x": 640.2,
+       "y": 292.4,
+       "region": "est",
+       "kind": "state",
+       "zone": {
+        "cx": 633.0,
+        "cy": 303.0,
+        "rx": 33.0,
+        "ry": 33.0
+       }
+      },
+      {
+       "name": "Kongo",
+       "x": 506.9,
+       "y": 531.2,
+       "region": "centre",
+       "kind": "state",
+       "zone": {
+        "cx": 511.8,
+        "cy": 528.0,
+        "rx": 19.8,
+        "ry": 14.4
+       }
+      },
+      {
+       "name": "Lunda",
+       "x": 606.0,
+       "y": 558.0,
+       "region": "centre",
+       "kind": "state",
+       "zone": {
+        "cx": 594.0,
+        "cy": 559.2,
+        "rx": 48.0,
+        "ry": 31.2,
+        "rot": -8
+       }
+      },
+      {
+       "name": "Luba",
+       "x": 643.2,
+       "y": 543.6,
+       "region": "centre",
+       "kind": "state",
+       "zone": {
+        "cx": 645.6,
+        "cy": 542.4,
+        "rx": 24.0,
+        "ry": 24.0
+       }
+      },
+      {
+       "name": "Kuba",
+       "x": 595.2,
+       "y": 514.8,
+       "region": "centre",
+       "kind": "state",
+       "zone": {
+        "cx": 600.0,
+        "cy": 513.6,
+        "rx": 12.0,
+        "ry": 9.6
+       }
+      },
+      {
+       "name": "Kazembe",
+       "x": 681.6,
+       "y": 571.2,
+       "region": "centre",
+       "kind": "state",
+       "zone": {
+        "cx": 682.8,
+        "cy": 570.6,
+        "rx": 10.8,
+        "ry": 15.0
+       }
+      },
+      {
+       "name": "Éthiopie",
+       "x": 810.0,
+       "y": 294.0,
+       "region": "est",
+       "kind": "state",
+       "zone": {
+        "cx": 801.0,
+        "cy": 333.0,
+        "rx": 51.0,
+        "ry": 57.0
+       }
+      },
+      {
+       "name": "Buganda",
+       "x": 726.8,
+       "y": 452.4,
+       "region": "est",
+       "kind": "state",
+       "zone": {
+        "cx": 723.6,
+        "cy": 452.4,
+        "rx": 12.0,
+        "ry": 10.8
+       }
+      },
+      {
+       "name": "Bunyoro",
+       "x": 712.2,
+       "y": 438.8,
+       "region": "est",
+       "kind": "state",
+       "zone": {
+        "cx": 711.0,
+        "cy": 435.6,
+        "rx": 11.4,
+        "ry": 10.8
+       }
+      },
+      {
+       "name": "Rwanda",
+       "x": 693.0,
+       "y": 484.2,
+       "region": "est",
+       "kind": "state",
+       "zone": {
+        "cx": 695.4,
+        "cy": 479.4,
+        "rx": 9.0,
+        "ry": 10.2
+       }
+      },
+      {
+       "name": "Burundi",
+       "x": 691.2,
+       "y": 495.2,
+       "region": "est",
+       "kind": "state",
+       "zone": {
+        "cx": 695.4,
+        "cy": 498.6,
+        "rx": 7.8,
+        "ry": 9.0
+       }
+      },
+      {
+       "name": "Zanzibar",
+       "x": 806.4,
+       "y": 529.9,
+       "region": "est",
+       "kind": "state",
+       "zone": {
+        "cx": 808.8,
+        "cy": 531.0,
+        "rx": 9.6,
+        "ry": 45.0,
+        "rot": 12
+       }
+      },
+      {
+       "name": "Merina",
+       "x": 906.0,
+       "y": 682.8,
+       "region": "sud",
+       "kind": "state",
+       "zone": {
+        "cx": 900.0,
+        "cy": 684.0,
+        "rx": 30.0,
+        "ry": 54.0,
+        "rot": 16
+       }
+      },
+      {
+       "name": "Zoulou",
+       "x": 712.8,
+       "y": 795.6,
+       "region": "sud",
+       "kind": "state",
+       "zone": {
+        "cx": 712.2,
+        "cy": 794.4,
+        "rx": 13.8,
+        "ry": 14.4
+       }
+      },
+      {
+       "name": "Ndebele",
+       "x": 679.0,
+       "y": 697.8,
+       "region": "sud",
+       "kind": "state",
+       "zone": {
+        "cx": 678.0,
+        "cy": 691.2,
+        "rx": 30.0,
+        "ry": 25.2
+       }
+      },
+      {
+       "name": "Lozi",
+       "x": 612.0,
+       "y": 638.4,
+       "region": "sud",
+       "kind": "state",
+       "zone": {
+        "cx": 616.8,
+        "cy": 640.8,
+        "rx": 28.8,
+        "ry": 28.8
+       }
+      },
+      {
+       "name": "Lesotho",
+       "x": 670.8,
+       "y": 808.8,
+       "region": "sud",
+       "kind": "state",
+       "zone": {
+        "cx": 675.0,
+        "cy": 811.2,
+        "rx": 12.6,
+        "ry": 10.8
+       }
+      },
+      {
+       "name": "Swazi",
+       "x": 710.4,
+       "y": 774.0,
+       "region": "sud",
+       "kind": "state",
+       "zone": {
+        "cx": 714.6,
+        "cy": 774.0,
+        "rx": 6.6,
+        "ry": 8.4
+       }
+      },
+      {
+       "name": "Gaza",
+       "x": 742.8,
+       "y": 752.4,
+       "region": "sud",
+       "kind": "state",
+       "zone": {
+        "cx": 735.0,
+        "cy": 730.8,
+        "rx": 24.6,
+        "ry": 37.2
+       }
+      },
+      {
+       "name": "Nuer",
+       "x": 714.0,
+       "y": 354.0,
+       "region": "est",
+       "kind": "society",
+       "zone": {
+        "cx": 714.0,
+        "cy": 352.2,
+        "rx": 18.0,
+        "ry": 13.8
+       }
+      },
+      {
+       "name": "Tiv",
+       "x": 444.0,
+       "y": 369.6,
+       "region": "ouest",
+       "kind": "society",
+       "zone": {
+        "cx": 444.6,
+        "cy": 369.0,
+        "rx": 9.0,
+        "ry": 7.8
+       }
+      },
+      {
+       "name": "Lobi",
+       "x": 297.6,
+       "y": 336.0,
+       "region": "ouest",
+       "kind": "society",
+       "zone": {
+        "cx": 298.8,
+        "cy": 336.0,
+        "rx": 6.0,
+        "ry": 7.2
+       }
+      },
+      {
+       "name": "Fang",
+       "x": 468.0,
+       "y": 438.0,
+       "region": "centre",
+       "kind": "society",
+       "zone": {
+        "cx": 474.0,
+        "cy": 442.8,
+        "rx": 22.8,
+        "ry": 22.8
+       }
+      },
+      {
+       "name": "Kikuyu",
+       "x": 780,
+       "y": 463.2,
+       "region": "est",
+       "kind": "society",
+       "zone": {
+        "cx": 780.0,
+        "cy": 464.4,
+        "rx": 7.2,
+        "ry": 10.8
+       }
+      }
+     ],
+     "keys": [
+      {
+       "region": "ouest",
+       "x": 20,
+       "y": 380,
+       "width": 250
+      },
+      {
+       "region": "centre",
+       "x": 20,
+       "y": 748,
+       "width": 250
+      },
+      {
+       "region": "est",
+       "x": 286,
+       "y": 560,
+       "width": 250
+      },
+      {
+       "region": "sud",
+       "x": 286,
+       "y": 748,
+       "width": 250
+      }
+     ]
+    },
+    "caption": {
+     "what": "États et sociétés sans roi vers 1880, en zones approximatives, sans frontières tracées",
+     "when": "vers 1880",
+     "source": "démonstration, données de test ; fond Natural Earth"
+    }
+   },
+   "demo": "Démonstration",
+   "provenance": "Le bandeau de série sur la carte d’atlas 1.2.0 : la carte descend sous le bandeau et les listes partent à 12 px de lui. Numéro d’épisode de démonstration.",
+   "series": {
+    "id": "afrique-tout",
+    "episode": 2
+   }
+  },
+  {
+   "id": "serie-atlas-1914-parchemin",
+   "type": "map",
+   "theme": "parchemin",
+   "kicker": "L'Afrique à travers le temps",
+   "timeline": {
+    "steps": [
+     "1960",
+     "1914",
+     "1880",
+     "1750",
+     "1550",
+     "1350",
+     "1000",
+     "0",
+     "−1500"
+    ],
+    "current": 1,
+    "from": "1960",
+    "to": "1500 av. J.-C."
+   },
+   "title": "L'Afrique en 1914",
+   "map": {
+    "dataRef": "Cartes/afrique.json",
+    "borders": "dotted",
+    "view": [
+     -60.0,
+     -105.1,
+     1200.0,
+     1500.0
+    ],
+    "categorical": {
+     "values": {
+      "DZA": "fra",
+      "TUN": "fra",
+      "MRT": "fra",
+      "SEN": "fra",
+      "MLI": "fra",
+      "GIN": "fra",
+      "CIV": "fra",
+      "BFA": "fra",
+      "BEN": "fra",
+      "NER": "fra",
+      "TCD": "fra",
+      "CAF": "fra",
+      "COG": "fra",
+      "GAB": "fra",
+      "MDG": "fra",
+      "DJI": "fra",
+      "COM": "fra",
+      "EGY": "gbr",
+      "SDN": "gbr",
+      "SDS": "gbr",
+      "UGA": "gbr",
+      "KEN": "gbr",
+      "ZAF": "gbr",
+      "BWA": "gbr",
+      "ZWE": "gbr",
+      "ZMB": "gbr",
+      "MWI": "gbr",
+      "LSO": "gbr",
+      "SWZ": "gbr",
+      "NGA": "gbr",
+      "GHA": "gbr",
+      "SLE": "gbr",
+      "GMB": "gbr",
+      "SOL": "gbr",
+      "RWA": "deu",
+      "BDI": "deu",
+      "NAM": "deu",
+      "CMR": "deu",
+      "TGO": "deu",
+      "COD": "bel",
+      "AGO": "prt",
+      "MOZ": "prt",
+      "GNB": "prt",
+      "CPV": "prt",
+      "STP": "prt",
+      "LBY": "ita",
+      "ERI": "ita",
+      "SOM": "ita",
+      "GNQ": "esp",
+      "SAH": "esp",
+      "ETH": "ind",
+      "LBR": "ind",
+      "TZA": "deu"
+     },
+     "split": {
+      "MAR": [
+       "fra",
+       "esp"
+      ]
+     },
+     "classes": [
+      {
+       "id": "gbr",
+       "label": "Royaume-Uni",
+       "tone": "col-gbr"
+      },
+      {
+       "id": "fra",
+       "label": "France",
+       "tone": "col-fra"
+      },
+      {
+       "id": "deu",
+       "label": "Allemagne",
+       "tone": "col-deu"
+      },
+      {
+       "id": "bel",
+       "label": "Belgique",
+       "tone": "col-bel"
+      },
+      {
+       "id": "prt",
+       "label": "Portugal",
+       "tone": "col-prt"
+      },
+      {
+       "id": "ita",
+       "label": "Italie",
+       "tone": "col-ita"
+      },
+      {
+       "id": "esp",
+       "label": "Espagne",
+       "tone": "col-esp"
+      },
+      {
+       "id": "ind",
+       "label": "Indépendant",
+       "tone": "col-ind"
+      }
+     ],
+     "columns": 3,
+     "splitLabel": "Partagé entre deux puissances",
+     "zones": [
+      {
+       "name": "AOF",
+       "isos": [
+        "SEN",
+        "MLI",
+        "BFA",
+        "NER",
+        "GIN",
+        "CIV",
+        "BEN",
+        "MRT"
+       ],
+       "at": [
+        254.0,
+        239.6
+       ],
+       "size": 28
+      },
+      {
+       "name": "AEF",
+       "isos": [
+        "GAB",
+        "COG",
+        "CAF",
+        "TCD"
+       ],
+       "at": [
+        569.6,
+        253.7
+       ],
+       "size": 28
+      },
+      {
+       "name": "Algérie",
+       "isos": [
+        "DZA"
+       ],
+       "at": [
+        373.6,
+        132.8
+       ]
+      },
+      {
+       "name": "Tunisie",
+       "isos": [
+        "TUN"
+       ],
+       "at": [
+        474,
+        40
+       ],
+       "anchor": "start",
+       "leader": [
+        452,
+        52
+       ]
+      },
+      {
+       "name": "Maroc",
+       "isos": [
+        "MAR"
+       ],
+       "at": [
+        258,
+        112
+       ]
+      },
+      {
+       "name": "Madagascar",
+       "isos": [
+        "MDG"
+       ],
+       "at": [
+        945,
+        700
+       ],
+       "anchor": "start"
+      },
+      {
+       "name": "Côte française des Somalis",
+       "isos": [
+        "DJI"
+       ],
+       "at": [
+        842.1,
+        325.1
+       ],
+       "label": false
+      },
+      {
+       "name": "Égypte",
+       "isos": [
+        "EGY"
+       ],
+       "at": [
+        687.5,
+        146.7
+       ]
+      },
+      {
+       "name": "Soudan\nanglo-égyptien",
+       "isos": [
+        "SDN",
+        "SDS"
+       ],
+       "at": [
+        698.4,
+        273.9
+       ]
+      },
+      {
+       "name": "Afrique orientale\nbritannique",
+       "isos": [
+        "KEN"
+       ],
+       "at": [
+        878,
+        478
+       ],
+       "anchor": "start",
+       "leader": [
+        820,
+        470
+       ]
+      },
+      {
+       "name": "Ouganda",
+       "isos": [
+        "UGA"
+       ],
+       "at": [
+        732.5,
+        437.8
+       ],
+       "label": false
+      },
+      {
+       "name": "Union\nsud-africaine",
+       "isos": [
+        "ZAF"
+       ],
+       "at": [
+        628.5,
+        820.9
+       ]
+      },
+      {
+       "name": "Rhodésie",
+       "isos": [
+        "ZWE",
+        "ZMB"
+       ],
+       "at": [
+        655,
+        628
+       ]
+      },
+      {
+       "name": "Nyassaland",
+       "isos": [
+        "MWI"
+       ],
+       "at": [
+        741.0,
+        622.7
+       ],
+       "label": false
+      },
+      {
+       "name": "Bechuanaland",
+       "isos": [
+        "BWA"
+       ],
+       "at": [
+        626.1,
+        726.5
+       ],
+       "label": false
+      },
+      {
+       "name": "Nigeria",
+       "isos": [
+        "NGA"
+       ],
+       "at": [
+        423.3,
+        349.5
+       ]
+      },
+      {
+       "name": "Gold Coast",
+       "isos": [
+        "GHA"
+       ],
+       "at": [
+        300,
+        420
+       ],
+       "anchor": "middle",
+       "leader": [
+        318,
+        392
+       ]
+      },
+      {
+       "name": "Sierra Leone",
+       "isos": [
+        "SLE"
+       ],
+       "at": [
+        168,
+        378
+       ],
+       "anchor": "end",
+       "leader": [
+        192,
+        360
+       ]
+      },
+      {
+       "name": "Gambie",
+       "isos": [
+        "GMB"
+       ],
+       "at": [
+        136,
+        278
+       ],
+       "anchor": "end",
+       "leader": [
+        150,
+        297
+       ]
+      },
+      {
+       "name": "Somaliland",
+       "isos": [
+        "SOL"
+       ],
+       "at": [
+        925,
+        318
+       ],
+       "anchor": "middle"
+      },
+      {
+       "name": "Basutoland",
+       "isos": [
+        "LSO"
+       ],
+       "at": [
+        678.0,
+        814.9
+       ],
+       "label": false
+      },
+      {
+       "name": "Swaziland",
+       "isos": [
+        "SWZ"
+       ],
+       "at": [
+        713.7,
+        780.0
+       ],
+       "label": false
+      },
+      {
+       "name": "Afrique orientale\nallemande",
+       "isos": [
+        "TZA",
+        "RWA",
+        "BDI"
+       ],
+       "at": [
+        872,
+        560
+       ],
+       "anchor": "start",
+       "leader": [
+        800,
+        545
+       ]
+      },
+      {
+       "name": "Kamerun",
+       "isos": [
+        "CMR"
+       ],
+       "at": [
+        485.2,
+        407.4
+       ]
+      },
+      {
+       "name": "Togo",
+       "isos": [
+        "TGO"
+       ],
+       "at": [
+        375,
+        450
+       ],
+       "anchor": "middle",
+       "leader": [
+        350,
+        385
+       ]
+      },
+      {
+       "name": "Sud-Ouest\nafricain\nallemand",
+       "isos": [
+        "NAM"
+       ],
+       "at": [
+        541.2,
+        709.3
+       ]
+      },
+      {
+       "name": "Congo belge",
+       "isos": [
+        "COD"
+       ],
+       "at": [
+        615.0,
+        483.8
+       ]
+      },
+      {
+       "name": "Angola",
+       "isos": [
+        "AGO"
+       ],
+       "at": [
+        530,
+        598
+       ]
+      },
+      {
+       "name": "Mozambique",
+       "isos": [
+        "MOZ"
+       ],
+       "at": [
+        748,
+        802
+       ],
+       "anchor": "start",
+       "leader": [
+        742,
+        712
+       ]
+      },
+      {
+       "name": "Guinée\nportugaise",
+       "isos": [
+        "GNB"
+       ],
+       "at": [
+        146,
+        330
+       ],
+       "anchor": "end",
+       "leader": [
+        160,
+        318
+       ]
+      },
+      {
+       "name": "Libye",
+       "isos": [
+        "LBY"
+       ],
+       "at": [
+        583.0,
+        148.7
+       ]
+      },
+      {
+       "name": "Érythrée",
+       "isos": [
+        "ERI"
+       ],
+       "at": [
+        812,
+        248
+       ],
+       "anchor": "start"
+      },
+      {
+       "name": "Somalie\nitalienne",
+       "isos": [
+        "SOM"
+       ],
+       "at": [
+        925,
+        405
+       ],
+       "anchor": "start"
+      },
+      {
+       "name": "Sahara\nespagnol",
+       "isos": [
+        "SAH"
+       ],
+       "at": [
+        128,
+        205
+       ],
+       "anchor": "end"
+      },
+      {
+       "name": "Guinée\nespagnole",
+       "isos": [
+        "GNQ"
+       ],
+       "at": [
+        440,
+        488
+       ],
+       "anchor": "middle",
+       "leader": [
+        455,
+        446
+       ]
+      },
+      {
+       "name": "Éthiopie",
+       "isos": [
+        "ETH"
+       ],
+       "at": [
+        797.1,
+        359.5
+       ]
+      },
+      {
+       "name": "Liberia",
+       "isos": [
+        "LBR"
+       ],
+       "at": [
+        200,
+        422
+       ],
+       "anchor": "end",
+       "leader": [
+        214,
+        384
+       ]
+      }
+     ]
+    },
+    "caption": {
+     "what": "puissance qui contrôle chaque territoire, sur les frontières actuelles en pointillé ; contours et noms des territoires de 1914",
+     "when": "juillet 1914, avant la guerre",
+     "source": "démonstration, à vérifier ; fond Natural Earth"
+    }
+   },
+   "demo": "Démonstration",
+   "provenance": "Le bandeau de série sur la carte du partage de 1914, thème Parchemin.",
+   "series": {
+    "id": "afrique-tout",
+    "episode": 3
+   }
   }
  ]
 }

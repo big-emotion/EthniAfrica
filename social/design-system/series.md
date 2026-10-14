@@ -1,0 +1,203 @@
+# Series
+
+**1.4.0-proposition, 14 October 2026, accepted by the operator the same day:** the series video in full screen replaces layout B (« Vidéo de série » below); nothing else changes. **1.3.0-proposition, 13 October 2026, accepted by the operator on 14 October 2026 with video layout B, since withdrawn.** It adds three things to the accepted 1.2.0-proposition and changes nothing else: one series band, a carousel model for each of the seven series, and one 9:16 video model. A card without `series` renders exactly as in 1.2.0: the 37 non-series sample cards were rendered again with 1.3.0 and compared with the 1.2.0 references, pixel for pixel identical.
+
+The editorial frame is `docs/editorial/strategy/social-series.md` (13 October 2026): seven series, a fixed question and fixed beats per series, a video every episode, and a carousel only when the episode takes apart an attested received idea. « The accepted card system, plus one band carrying the series name and the episode number. No separate design per series. »
+
+## The series band
+
+One component for all seven series: « D'où vient le nom de mon pays ? · n° 14 ». Its words change from series to series, never its colour, size or place.
+
+| Property | Value                                                                                                                                                                           |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Field    | `series: { id, episode }` on the card spec; the engine resolves `id` from `EthniCards.SERIES` (the seven names below). `series: { name, episode }` prints a name given in full. |
+| Place    | the top of the card, full width, 0 to 72 px (operator, 13 October 2026)                                                                                                         |
+| Height   | 72 px: 70 px of band on `ground` and a 2 px `rule` line under it                                                                                                                |
+| Text     | Nunito Sans 800, 28/34 px (the kicker's size), tracking 0.02 em, left on the 72 px margin                                                                                       |
+| Colours  | series name `ink`, separator `ink-faint`, « n° 14 » `accent` (operator, 13 October 2026)                                                                                        |
+| Wording  | sentence case, no guillemets, French spacing; the episode is « n° » and a whole number                                                                                          |
+| Tokens   | none added: `ground`, `rule`, `ink`, `ink-faint`, `accent` already hold in Nuit and Parchemin                                                                                   |
+
+The seven names, as `EthniCards.SERIES` prints them: `pays` « D'où vient le nom de mon pays ? », `nom-recu` « Le nom qu'on leur a donné », `nom-famille` « Mon nom, mon histoire », `mots` « Les mots qu'on nous a collés », `frontieres` « Un peuple, plusieurs pays », `afrique-tout` « L'Afrique n'est pas un tout », `villes` « Ce que les villes racontent ».
+
+### What the band changes on a card
+
+1. **The image window starts under the band.** A photograph is placed from y 72, never under the band; its focal point must fall between the band and the panel (`report.image.focusInWindow`). The window keeps the operator's 450 px (ruling of 9 October 2026), so **a series card's panel stops at 828 px** instead of 900 (`EthniCards.PANEL_MAX_SERIES`). Past 828 px the body goes dense, then the card is refused, exactly as at 900 on other cards. The fix is editorial: shorten or split, never shrink. A photograph's credit line counts in those 828 px.
+2. **Maps.** The map stays full bleed under the band, so its frame must leave the band clear: no map text, marker, key, callout or inset within 12 px of the band (y 84). The renderer reports anything closer (« À moins de 12 px du bandeau de série »), counts the band as a box in `report.collisions`, writes atlas names on the map only below y 84 and refuses an atlas key that starts above it. On the samples, the 1880 atlas is reframed (view moved down and 3 % smaller, keys on the Atlantic below the Cape Verde islands) and the 1914 map moved down by 80 px: see `serie-atlas-1880` and `serie-atlas-1914-parchemin`.
+3. **The maquette tape** moves under the band (top 100 px).
+4. **Alternative text** opens with the band's words: « D'où vient le nom de mon pays ?, n° 1. Le nom d'un pays… ».
+5. **Capacity.** The band holds on one line. With « n° 100 », the longest name ends at 627 px of the 1008 px available (measured in Chromium, both themes, `bandeaux-n100.png`); about 25 more characters would still fit. A band that wraps is refused (« Bandeau de série sur deux lignes ») : shorten the series name, never the type.
+6. **Every card type** takes the band, in both themes: opener, explanation, forms and pair, dated card, map and atlas map, closing card. The 49 model cards and the two atlas samples show each one.
+
+## One carousel model per series
+
+`handoff/cards.sample.json` holds the seven models of the proposal folder as sample cards `serie-<series>-NN`, 6 to 8 cards each, built from the existing card types only, with their reference images. Series 1, 2 and 3 carry demonstration data drawn from the corpus fiches (Burkina Faso, Touareg, Yao and Kouassi); series 4 to 7 carry labelled placeholders in brackets. Every card keeps its yellow tape and its `provenance` line (the beat it serves, the fiche field its text comes from). No claim, date or source was added or rewritten; `nom-famille` card 4 fits 828 px with its credit line exactly.
+
+| Series                            | Cards | Theme     | Sample ids                      |
+| --------------------------------- | ----- | --------- | ------------------------------- |
+| 1 D'où vient le nom de mon pays ? | 7     | Nuit      | `serie-pays-01` to `07`         |
+| 2 Le nom qu'on leur a donné       | 8     | Parchemin | `serie-nom-recu-01` to `08`     |
+| 3 Mon nom, mon histoire           | 7     | Nuit      | `serie-nom-famille-01` to `07`  |
+| 4 Les mots qu'on nous a collés    | 7     | Nuit      | `serie-mots-01` to `07`         |
+| 5 Un peuple, plusieurs pays       | 7     | Parchemin | `serie-frontieres-01` to `07`   |
+| 6 L'Afrique n'est pas un tout     | 7     | Nuit      | `serie-afrique-tout-01` to `07` |
+| 7 Ce que les villes racontent     | 6     | Parchemin | `serie-villes-01` to `06`       |
+
+The carousel of each series is shown at 430 and 320 px in the `Lecture` asset group (`serie-NN-<series>-430.png`, `-320.png`).
+
+## Images
+
+Decision 6 of 13 October 2026: every model card that carries an image gets one. None of the design system's own sample images (Kampala, Mengo, Speke, Richardson) truthfully fits these subjects. The verified pictures below come from the site's credited library (`public/images/anecdotes/CREDITS.md` and `public/images/home/CREDITS.md`), where each licence was read from the Commons API; the files there are web renditions (583 to 1100 px wide), so production needs the full-resolution file from its Commons page. A slot without a verified candidate shows a plain « image à trouver » panel saying what the picture must show: a hatched slot with a frame, never an image that could pass for a place, a person or a document. No image was generated and no source was invented. Images of people follow the brand charter: no face under a contested name, no identifiable face without consent.
+
+| Card                    | What it shows                                                                                                                                               | Credit (verified)                                                                                       |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| `serie-pays-01`         | Maison aux murs peints de la cour royale de Tiébélé, au Burkina Faso                                                                                        | Photo : Alexander Leisser, cour royale de Tiébélé (Burkina Faso), 2016, Wikimedia Commons, CC BY-SA 4.0 |
+| `serie-pays-02`         | La Grande Mosquée de Bobo-Dioulasso, au Burkina Faso                                                                                                        | Photo : Angeline A. van Achterberg, Grande Mosquée de Bobo-Dioulasso, 2001, ASC Leiden, CC BY-SA 4.0    |
+| `serie-pays-03`         | « image à trouver » : le texte de l'ordonnance du 2 août 1984, ou une photographie datée de Thomas Sankara en 1984, du domaine public ou sous licence libre | —                                                                                                       |
+| `serie-pays-04`         | Ouagadougou vue d'avion pendant l'hiver 1930-1931                                                                                                           | Photo : Walter Mittelholzer, Ouagadougou vue d'avion, 1930-1931, domaine public                         |
+| `serie-pays-05`         | « image à trouver » : un document daté où on lit le mot « burkinabè » : journal, affiche ou texte officiel                                                  | —                                                                                                       |
+| `serie-pays-06`         | « image à trouver » : les ouvrages cités (Maharaux 1995, Izard 1985), photographiés par l'équipe                                                            | —                                                                                                       |
+| `serie-pays-07`         | Maison aux murs peints de la cour royale de Tiébélé, au Burkina Faso                                                                                        | Photo : Alexander Leisser, cour royale de Tiébélé (Burkina Faso), 2016, Wikimedia Commons, CC BY-SA 4.0 |
+| `serie-nom-recu-01`     | Inscriptions en tifinagh gravées dans la roche, en Algérie                                                                                                  | Photo : Patrick Gruban, inscriptions en tifinagh (Algérie), 2006, Wikimedia Commons, CC BY-SA 2.0       |
+| `serie-nom-recu-02`     | « image à trouver » : une page d'un auteur arabe du XIVe siècle où le nom apparaît, manuscrit ou édition numérisés, domaine public                          | —                                                                                                       |
+| `serie-nom-recu-03`     | « image à trouver » : un document daté qui emploie Mulatthamin ou Kandin, domaine public                                                                    | —                                                                                                       |
+| `serie-nom-recu-04`     | « image à trouver » : un lieu ou un objet du pays tamasheq, sans visage (charte de marque), sous licence libre                                              | —                                                                                                       |
+| `serie-nom-recu-05`     | « image à trouver » : les pages de 1857 et de 1864 citées par la fiche, numérisées                                                                          | —                                                                                                       |
+| `serie-nom-recu-06`     | « image à trouver » : la page de 1864 où le nom est refusé, numérisée                                                                                       | —                                                                                                       |
+| `serie-nom-recu-07`     | Inscriptions en tifinagh gravées dans la roche, en Algérie                                                                                                  | Photo : Patrick Gruban, inscriptions en tifinagh (Algérie), 2006, Wikimedia Commons, CC BY-SA 2.0       |
+| `serie-nom-recu-08`     | Inscriptions en tifinagh gravées dans la roche, en Algérie                                                                                                  | Photo : Patrick Gruban, inscriptions en tifinagh (Algérie), 2006, Wikimedia Commons, CC BY-SA 2.0       |
+| `serie-nom-famille-01`  | « image à trouver » : un objet ou un document akan lié aux noms du jour de naissance, sans visage identifiable sans accord                                  | —                                                                                                       |
+| `serie-nom-famille-02`  | the map itself                                                                                                                                              | —                                                                                                       |
+| `serie-nom-famille-03`  | « image à trouver » : un calendrier des jours akan ou un objet documenté qui le porte                                                                       | —                                                                                                       |
+| `serie-nom-famille-04`  | Rochers dans la vallée de Tanoboase, près de Techiman, au Ghana                                                                                             | Photo : Kelsdark, Tanoboase près de Techiman (Ghana), 2014, Wikimedia Commons, CC BY-SA 3.0             |
+| `serie-nom-famille-05`  | « image à trouver » : la source de 1881 où apparaissent Yaw et Kwasi, page numérisée                                                                        | —                                                                                                       |
+| `serie-nom-famille-06`  | « image à trouver » : une image qui invite à raconter son nom : registre, faire-part ou carte d'identité anonymisée                                         | —                                                                                                       |
+| `serie-nom-famille-07`  | Rochers dans la vallée de Tanoboase, près de Techiman, au Ghana                                                                                             | Photo : Kelsdark, Tanoboase près de Techiman (Ghana), 2014, Wikimedia Commons, CC BY-SA 3.0             |
+| `serie-mots-01`         | « image à trouver » : [à choisir avec l'épisode] : le mot dans un document daté où il est employé                                                           | —                                                                                                       |
+| `serie-mots-02`         | « image à trouver » : [à choisir avec l'épisode] : le mot dans un document daté où il est employé                                                           | —                                                                                                       |
+| `serie-mots-03`         | « image à trouver » : [à choisir avec l'épisode] : le mot dans un document daté où il est employé                                                           | —                                                                                                       |
+| `serie-mots-04`         | « image à trouver » : [à choisir avec l'épisode] : le mot dans un document daté où il est employé                                                           | —                                                                                                       |
+| `serie-mots-05`         | « image à trouver » : [à choisir avec l'épisode] : le mot dans un document daté où il est employé                                                           | —                                                                                                       |
+| `serie-mots-06`         | « image à trouver » : [à choisir avec l'épisode] : le mot dans un document daté où il est employé                                                           | —                                                                                                       |
+| `serie-mots-07`         | « image à trouver » : [à choisir avec l'épisode] : le mot dans un document daté où il est employé                                                           | —                                                                                                       |
+| `serie-frontieres-01`   | « image à trouver » : [à choisir avec l'épisode] : la frontière ou le traité qui l'a tracée, document daté                                                  | —                                                                                                       |
+| `serie-frontieres-02`   | the map itself                                                                                                                                              | —                                                                                                       |
+| `serie-frontieres-03`   | « image à trouver » : [à choisir avec l'épisode] : la frontière ou le traité qui l'a tracée, document daté                                                  | —                                                                                                       |
+| `serie-frontieres-04`   | « image à trouver » : [à choisir avec l'épisode] : la frontière ou le traité qui l'a tracée, document daté                                                  | —                                                                                                       |
+| `serie-frontieres-05`   | « image à trouver » : [à choisir avec l'épisode] : la frontière ou le traité qui l'a tracée, document daté                                                  | —                                                                                                       |
+| `serie-frontieres-06`   | « image à trouver » : [à choisir avec l'épisode] : la frontière ou le traité qui l'a tracée, document daté                                                  | —                                                                                                       |
+| `serie-frontieres-07`   | « image à trouver » : [à choisir avec l'épisode] : la frontière ou le traité qui l'a tracée, document daté                                                  | —                                                                                                       |
+| `serie-afrique-tout-01` | Carte de l'Afrique gravée vers 1847                                                                                                                         | Carte de l'Afrique, vers 1847, Victor Levasseur, domaine public                                         |
+| `serie-afrique-tout-02` | Carte murale de l'Afrique publiée en 1794                                                                                                                   | Carte de l'Afrique, 1794, S. Boulton d'après d'Anville, domaine public                                  |
+| `serie-afrique-tout-03` | « image à trouver » : [à choisir avec l'épisode] : une carte ou un document daté lié à la lecture présentée                                                 | —                                                                                                       |
+| `serie-afrique-tout-04` | La carte du monde d'al-Idrisi, de 1154, dessinée le sud en haut                                                                                             | Carte du monde d'al-Idrisi, 1154, sud en haut, domaine public                                           |
+| `serie-afrique-tout-05` | « image à trouver » : [à choisir avec l'épisode] : une carte ou un document daté lié à la lecture présentée                                                 | —                                                                                                       |
+| `serie-afrique-tout-06` | « image à trouver » : [à choisir avec l'épisode] : une carte ou un document daté lié à la lecture présentée                                                 | —                                                                                                       |
+| `serie-afrique-tout-07` | Carte de l'Afrique gravée vers 1847                                                                                                                         | Carte de l'Afrique, vers 1847, Victor Levasseur, domaine public                                         |
+| `serie-villes-01`       | « image à trouver » : [à choisir avec l'épisode] : la ville, photographie sous licence libre, ou son ancien nom sur un document daté                        | —                                                                                                       |
+| `serie-villes-02`       | « image à trouver » : [à choisir avec l'épisode] : la ville, photographie sous licence libre, ou son ancien nom sur un document daté                        | —                                                                                                       |
+| `serie-villes-03`       | « image à trouver » : [à choisir avec l'épisode] : la ville, photographie sous licence libre, ou son ancien nom sur un document daté                        | —                                                                                                       |
+| `serie-villes-04`       | « image à trouver » : [à choisir avec l'épisode] : la ville, photographie sous licence libre, ou son ancien nom sur un document daté                        | —                                                                                                       |
+| `serie-villes-05`       | « image à trouver » : [à choisir avec l'épisode] : la ville, photographie sous licence libre, ou son ancien nom sur un document daté                        | —                                                                                                       |
+| `serie-villes-06`       | « image à trouver » : [à choisir avec l'épisode] : la ville, photographie sous licence libre, ou son ancien nom sur un document daté                        | —                                                                                                       |
+
+## Vidéo de série
+
+**1.4.0-proposition, 14 October 2026, accepted by the operator the same day: the series video in full screen.** On 14 October 2026 the operator withdrew decision 4 (layout B, the video's own card kept in the feed's safe zone), which came from a misunderstanding of the design: « L'image dans la vidéo doit prendre tout l'écran. Il ne doit pas y avoir de zones d'ombre comme sur les cartes des carrousels, et il ne doit pas y avoir de réajustement par rapport à la visibilité de l'écran. La vidéo prend tout l'écran, et il n'y a que le texte. » Settled, not to reopen:
+
+1. The image fills the whole 1080 × 1920 frame, edge to edge, for the whole video.
+2. No shadow zones: no dark panel, no fade into `ground`, no veil, no scrim. Legibility comes from the text itself.
+3. The layout is not fitted to the networks' interface: the Meta and TikTok safe zone and the button column place nothing. The apps cover part of the text in the feed, as for the Vidéo carte 0.4.0 « plein écran ».
+4. Only text sits on the image: the band's words, the head of the card, the subtitle with its lit word, sources, credit and signature, and on the ending the slogan, its sentence and the pill.
+
+The model is **Vidéo carte 0.4.0 « plein écran »** (accepted on 12 October 2026), text in fixed bands over a clear image, minus its veil. Everything else in 1.3.0 stays: the cards, the band on cards, the seven carousel models, the images. The boards are drawn by `handoff/video-board-full.html` (`?card=…&next=…&fade=…&sub=…&lit=…&zoom=…&guides=1`) and kept in the `Video` asset group as `video-14-*`. Their text is demonstration text, and their images are the web renditions of the library, enlarged 1.8 to 3.7 times: the boards are soft where production, from the full-resolution files, will be sharp.
+
+**Unchanged from 1.3.0.** 1080 × 1920 at 30 frames a second, 35 to 45 seconds, on the operator's voice, the same cards as the carousel. Vidéo carte 0.4.0's subtitle chunks (3 to 6 words, two lines of 26 characters at most), the lit word, the reading rule and the voice timing. Frame 0 is the opener with its band and no subtitle; a video never shows « Faites défiler ». The ending « série » asks for one search and needs `pageOnline: true`.
+
+### Bands
+
+At 1080 × 1920, every text between x 60 and 1020.
+
+| Band        | y                            | What it holds                                                                                                                                                                                                                                     |
+| ----------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Demo tape   | 178 to 226, right on x 1020  | « Démonstration : texte non validé », mockups only                                                                                                                                                                                                |
+| Series band | 250 to 290                   | Nunito Sans 800 32/40, tracking 0.02 em: name `on-image-ink`, separator `on-image-faint`, « n° N » `on-image-accent`. No rule line: the 2 px rule closed a band of ground that no longer exists; on the image it would be a drawn line, not text. |
+| Head        | 318 to 700 at most           | kicker Nunito Sans 800 30/36 `on-image-accent`, then the title in Anton 88/90 (the opener's 116/112), three lines at most; or, on a dated card, the date (see Long dates), the label `NOM EMPLOYÉ` and the name employed in Anton 76/82           |
+| Clear image | 700 to 1300                  | nothing but the picture: the focal point is brought to (540, 1000)                                                                                                                                                                                |
+| Subtitle    | 1316 to 1452                 | Vidéo carte 0.4.0: centred on x 540, lines at most 900 px wide                                                                                                                                                                                    |
+| Foot        | 1652 to 1786, bottom aligned | a map's key (swatch and text, Nunito Sans 800 26/32), `Source :` (Nunito Sans 700 24/30) and the credit (700 22/28, `on-image-muted`)                                                                                                             |
+| Signature   | 1836 to 1884                 | logo 44 px and « EthniAfrica » in Fraunces 600 32/38, from x 60                                                                                                                                                                                   |
+
+Measured on the boards: the head ends between y 544 and 700 on content cards (700 for a three-line opener, 690 for a two-line date), the foot starts at 1696 at the highest (a map with two key rows).
+
+**Why the band sits at y 250.** Instagram and TikTok show a 3:4 crop of the cover in the profile grid (y 240 to 1680). At y 250 the band and the title stay in that thumbnail, so the grid reads as a series. This is not a fit to the feed: the apps still cover the band's top and everything under y 1248 while the video plays in the feed (`video-14-fil-430.png`).
+
+### The photograph
+
+- **Framing.** The image covers the frame: scale = max(1080 ÷ width, 1920 ÷ height). Its focal point (`image.focus`) is brought to (540, 1000), the middle of the clear zone, as far as the image's edges allow. The slow zoom from 100 to 104 % grows around the focal point. The card's `anchor` and `zoom` do not apply in the video.
+- **Too wide.** The crop keeps 1080 ÷ (width × scale) of the width: 33 % of the tifinagh rock (900 × 529), 37 % of Tiébélé and of the 1930 aerial view, 61 % of al-Idrisi's map, 87 % of the Bobo-Dioulasso mosque (`video-14-cadrage.png`). The renderer reports it (`keptWidth`). When the subject is wider than the crop, the card gives a video framing, `image.video: { src, focus }`, another file or another focal point. Never a letterbox, never a blurred copy behind the image, never a band.
+- **Too small.** A frame pixel may stretch at most 1.5 source pixels, zoom included: the visible crop needs at least 720 × 1280 source pixels (750 × 1333 with the 104 % zoom). Below that the renderer refuses the image (« Image trop petite pour la vidéo ») and production takes the full-resolution file from its Commons page. The library's web renditions are 1.8 to 3.7 times too small, which is why the boards are soft.
+- **Focal point out of reach.** When the image runs out before its focal point reaches y 700 (al-Idrisi, focus at 0.3 of the height, lands at y 576), the renderer warns; set `image.video.focus`.
+- **Map card.** The map fills the frame with its own 9:16 view, `map.videoView` (x, y, width, height in the map's units). By default the renderer brings the map's subject (the highlighted country or the areas) to (540, 1000), at the card's scale or up to twice closer, never past the drawn extent of the base map, and paints the sea in the map's water colour behind it. The subject's box must stay below y 724 (24 px under the head) and above the foot. The key goes into the foot as text; atlas keys, callouts and insets stay on the card. `serie-nom-famille-02` fits twice closer, its subject at y 892. `serie-frontieres-02` does not: its base map stops too close to the subject, which then sits at y 385, under the title, and the renderer refuses it (« Le sujet de la carte passe sous la tête »). Such a card needs a base map built for 9:16, from Natural Earth like the others, or a `videoView` chosen by hand (`video-14-cartes.png`).
+
+### Legibility: one text treatment
+
+Every text on the image, on light and dark pictures, in both themes, is set the same way: light letters on a dark outline painted under them, Vidéo carte 0.4.0's subtitle treatment. `-webkit-text-stroke` in `on-image-stroke` (#0b0806 at 92 %) with `paint-order: stroke fill`, so the outer half of the stroke edges each letter, plus a soft shadow (`on-image-shadow`, 0 2px 14px from 40 px up, 0 1px 8px below). Nothing darkens a region of the image.
+
+| Text                                                               | Type                                    | Outline      |
+| ------------------------------------------------------------------ | --------------------------------------- | ------------ |
+| Subtitle                                                           | Nunito Sans 800 56/68, `on-image-text`  | 9 px (0.4.0) |
+| Opener title                                                       | Anton 116/112                           | 13 px        |
+| Title, slogan                                                      | Anton 88/90, 84/88                      | 10 px        |
+| Date                                                               | Anton 176/156 to 104/100                | 14 px        |
+| Name employed                                                      | Anton 76/82                             | 8 px         |
+| Band, kicker, label, key, source, credit, sentence, pill, wordmark | Nunito Sans 22 to 34 px, Fraunces 32 px | 4 px         |
+
+The letter always meets its outline, never the picture. Against the outline, even laid over pure white: `on-image-text` 16.3:1, `on-image-ink` 14.1:1, `on-image-accent` 9.3:1, `on-image-muted` 9.0:1, the area inks 8.2:1 (`area-b`) and 6.4:1 (`area-c`), `on-image-faint` 6.0:1; the lit word, `on-image-on-accent` on `on-image-accent`, 10.2:1. Tested on the lightest images (Boulton's 1794 map, mean luminance 218; al-Idrisi 187; the tifinagh rock 188; Levasseur's 1847 map 179), the darkest (Tanoboase 112, the « image à trouver » slot 37) and the busiest (the 1930 aerial view, Tiébélé's painted walls): `video-14-lisibilite.png`. If a text still cannot be read on an image, the remedy is the framing (`image.video.focus`), another crop or another image, never a band.
+
+**Parchemin.** The on-image inks are the same in both themes. Parchemin's own inks cannot sit on a dark outline: `ink` (#2a1e15) and `accent` (#7f5212) read under 2:1 against it. The other way, dark letters on a light outline, was drawn on the tifinagh rock and on Tanoboase (`video-14-parchemin-encres.png`, right of each pair): it reads, but makes white halos on a dark picture and would sit beside the 0.4.0 subtitle, light on dark, in the same frame. Parchemin therefore shows where the video has ground of its own: a map card keeps the Parchemin map palette, and an « image à trouver » slot is drawn on parchment. Open question 1.
+
+### Long dates
+
+The date takes the largest of 176/156, 148/136, 124/118 and 104/100 that holds on one line in 960 px. Below 104 px, never: the date goes on two balanced lines at 104/100, and a date never breaks inside itself (day, month and year are joined by no-break spaces). A date that does not fit two lines at 104 is refused: shorten its display. On `video-14-dates.png`, with test dates that are not content: « 1984 » and « 4 août 1984 » at 176, « 1er mars 1919 » at 148 (811 px wide), « entre 1884 et 1885 » at 124, « du 15 novembre 1884 au 26 février 1885 » on two lines at 104; the head then ends at y 690. This settles the layout B defect where « 1er mars 1919 » wrapped at 124 in a 640 px head.
+
+### Cover, card change, ending
+
+- **Cover.** Frame 0: the opener's image, band, kicker and title, credit and signature, no subtitle (`video-14-couverture.jpg`).
+- **Card change.** One change of 300 ms; nothing slides. The two images cross-fade over the whole 300 ms. The outgoing card's head and foot fade out in the first 150 ms and the incoming card's fade in during the last 150 ms, so two heads never show at once (`video-14-changement-1.jpg` at 100 ms, `-2.jpg` at 200 ms). The band and the signature are drawn once for the whole video and never fade. The subtitle sits above the cards: the outgoing card's last chunk stays until the new card's first chunk appears, at the end of the change (0.4.0 voice rule; decision 2).
+- **Ending « série ».** The closing card's own image, full frame. Band at 250; slogan in Anton 84/88 capitals, centred, three lines at most; its sentence in Nunito Sans 700 32/40; the site pill (outlined in `on-image-accent`, its line edged inside and out by 2 px of `on-image-stroke`); the whole block from y 318 to 820 at most (808 measured). The last two chunks in the subtitle band. The credit centred above the signature; the signature centred, logo 56 px and Fraunces 44/48, from y 1828 to 1884. It holds 2.5 s, or until the voice ends plus 0.5 s (`video-14-fin.jpg`, `video-14-fin-parchemin.jpg`).
+
+### The seven gaps between the layout B boards and the engine, settled
+
+1. **Kicker on a dated card: shown.** The date's marker label (« Le nom d'avant », « Nom de l'État ») is its kicker, as on the card: it says what the date is.
+2. **Signature on content cards: yes,** small and bottom left (y 1836 to 1884), drawn once so it never fades. A downloaded or reposted video keeps its signature. No `ethniafrica.com · @ethniafrica` on content cards: the ending carries the site.
+3. **Ending signature: centred, bottom on y 1884** (1828 to 1884), the same baseline as on content cards.
+4. **The outgoing card's last subtitle stays during the change,** as the engine does (0.4.0: a chunk is cut when the next one appears).
+5. **French spacing: the cards' rule** (`EthniCards`' `fr`), in every text of the frame, subtitles included: a narrow no-break space (U+202F) before ; : ! ? and » and after «, so « Faso ? », « Source : », « « désert » »; a no-break space in « n° 1 » and inside the searched name of the ending.
+6. **Subtitle outline: the 0.4.0 values,** as the engine has them: 9 px of rgba(11, 8, 6, 0.92), shadow 0 2px 14px rgba(11, 8, 6, 0.7), the lit box with a 6 px radius and 6 px side shadows. The board's #1a120a and 4 px radius were the board's error.
+7. **The lit word lights with its spoken word.** A chunk appears 150 ms before its first word, which lights only when it is spoken (`highlightAt`), as the engine does. The 1.3.0 boards lit a word on the chunk's first frame; they were wrong.
+
+### « Image à trouver » on a video frame
+
+The renderer draws the slot itself across the whole frame, never the slot PNG enlarged, whose label would be cut off: hatching in the theme's ground (Nuit dark, Parchemin light), a 2 px `rule` frame 48 px inside the edges, and the label in the clear zone (y 760 to 1240, x 120 to 960): « IMAGE À TROUVER » in Nunito Sans 800 30/36 capitals, `on-image-accent`, then what the picture must show, Nunito Sans 700 40/52, both with the on-image outline. A card with a slot gives that text in `image.find`; the 1.3.0 slot PNGs carry it only as pixels. A final video still refuses a slot (`video-14-image-a-trouver-nuit.jpg`, `-parchemin.jpg`).
+
+### Decided by the operator on 14 October 2026
+
+The four open questions were answered with the designer's recommendations:
+
+1. **Parchemin on the image:** the same light inks on a dark outline in both themes; Parchemin shows on map cards and « image à trouver » slots.
+2. **Card change:** the heads swap inside the 300 ms (out in the first 150 ms, in during the last 150 ms) while the images cross-fade over the whole 300 ms.
+3. **Series band:** at y 250 to 290, inside the profile grid's 3:4 thumbnail.
+4. **Map cards whose base map is too short for 9:16:** a 9:16 base map is built per region, from Natural Earth like the others; until then such a card is refused for the video.
+
+### Layouts A and B (1.3.0), the record of the comparison
+
+Layout A centred the 1080 × 1350 carousel card in the frame (y 285 to 1635), subtitles under it. Layout B kept the video's own card inside the feed's safe zone: band at y 270, photograph from 342 to 902 fading into `ground`, subtitle on its lower edge, head from 902 to 1248 left of the buttons, sources under 1248. The operator chose B on 14 October 2026 (decision 4), then withdrew it the same day for full screen. Neither is to be produced. Their boards (`video-A-*`, `video-B-*`) and `handoff/video-board.html` stay as the record.
+
+## Checks
+
+- Band: one line (`report.series.lines` is 1); nothing within 12 px of it on a map; tape under it.
+- Panel: 828 px at most on a series card (`report.panelMax`), credit line included.
+- Image: focal point between the band and the panel.
+- Cards without `series`: identical to their 1.2.0 references.
+- Video, full screen (1.4.0): see « Renderer integration of 1.4.0 » in Handoff. Every text between x 60 and 1020 and inside its band; no element drawn over the image with a background, except the lit word, the pill's outline, the slot and the demo tape.
