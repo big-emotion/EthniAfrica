@@ -1,0 +1,1 @@
+The series band (1.3.0): `series: {id, episode}` on any card adds « D'où vient le nom de mon pays ? · n° 14 » at the top. 72 px on `ground` with a `rule` line, Nunito Sans 800 28/34, the episode in `accent`. The image window starts under it and keeps 450 px, so the panel stops at 828 px. Nothing on a map within 12 px of it. Rules in Series.

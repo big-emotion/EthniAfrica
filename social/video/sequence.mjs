@@ -82,8 +82,9 @@ function cubicBezier(x1, y1, x2, y2) {
   };
 }
 
-const enter = cubicBezier(0.2, 0, 0, 1);
-const leave = cubicBezier(0.4, 0, 1, 1);
+// Exported for the series video (series.mjs), whose subtitles fade as here.
+export const enter = cubicBezier(0.2, 0, 0, 1);
+export const leave = cubicBezier(0.4, 0, 1, 1);
 const symmetric = cubicBezier(0.45, 0, 0.55, 1);
 const descent = cubicBezier(0.45, 0, 0.15, 1);
 const span = (t, start, duration, ease) => ease((t - start) / duration);
@@ -1606,7 +1607,7 @@ function loadChapters(input, style, dir) {
 // video order (intro, chapters, outro) a list of words with start and end in
 // seconds (0.4.0 open question 8). The words JSON records the audio's
 // SHA-256, so a voice re-recorded without being re-timed is refused.
-function loadVoice(voice, texts, dir) {
+export function loadVoice(voice, texts, dir) {
   if (typeof voice?.audio !== "string" || typeof voice?.words !== "string")
     fail('A voice is { "audio": audio file, "words": words JSON }');
   const at = (file) =>

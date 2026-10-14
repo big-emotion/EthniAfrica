@@ -1,0 +1,206 @@
+{
+  "id": "PPL_ZAYSE",
+  "nameMain": "Zayse",
+  "languageFamilyId": "FLG_OMOTIQUE",
+  "currentCountries": ["ETH"],
+  "content": {
+    "appellations": {
+      "mainName": "Zayse",
+      "selfAppellation": "Zayse",
+      "exonyms": [
+        "Zaisse",
+        "Zaysete",
+        "Zaysite",
+        "Zaysse",
+        "Zagisse",
+        "Zayse-Zergulla"
+      ],
+      "originOfExonyms": "Zagisse est le nom utilisé par le peuple Koore voisin pour désigner les Zayse ; il voudrait dire « les plus anciens » ou « les premiers », ce qui suggère que les Zayse sont considérés comme les habitants originels de la région. Zayse-Zergulla designe l'ensemble du dialecte ou de la langue comprenant les varietes Zayse et Zergulla. Le Zergulla est une variete etroitement apparentee dont les locuteurs (Zargulla, auto-appellation Gamo) vivent dans le district de Bonke.",
+      "whyProblematic": null,
+      "contemporaryUsage": "Zayse est le nom utilise dans les documents administratifs ethiopiens et dans les etudes linguistiques recentes. La distinction entre Zayse et Zergulla suit plutot des lignes ethniques ou geographiques que strictement linguistiques.",
+      "linguisticFamily": "FLG_OMOTIQUE",
+      "ethnoLinguisticGroup": "Omotic (North Omotic, East Ometo)",
+      "historicalRegion": "Hauts plateaux du sud-ouest de l'Ethiopie, a l'ouest immediat du lac Chamo",
+      "currentCountries": ["ETH"]
+    },
+    "ethnicities": ["Zayse", "Zergulla (Zargulla)"],
+    "origins": {
+      "ancientOrigins": "Les Zayse sont consideres par leurs voisins Koore comme les plus anciens habitants de la region, leur nom Zagisse signifiant justement les premiers. Ils occupent depuis des temps immemoriaux les hauts plateaux a l'ouest du lac Chamo, dans la zone Gamo-Gofa. Les Zargulla (Zergulla), sous-groupe apparente, vivent dans la partie haute de la vallee du district de Bonke et pratiquent une agriculture en terrasses caracteristique.",
+      "formationPeriod": "La formation de l'identite Zayse est anterieure aux sources documentaires disponibles. Le groupe s'est constitue comme communaute distincte dans les hauts plateaux du sud-ouest ethiopien, partageant une langue et des pratiques culturelles proches du dialecte Gidicho de la langue Koorete.",
+      "migrationRoutes": [
+        "Occupation ancienne des hauts plateaux a l'ouest du lac Chamo selon la tradition orale",
+        "Les Zargulla vivent dans les parties hautes des vallees du district de Bonke, avec des interactions avec les Gamo voisins"
+      ],
+      "historicalSettlementZones": [
+        "Hauts plateaux au sud-ouest de l'Ethiopie, a l'ouest du lac Chamo, zone Gamo-Gofa (anciennement SNNPR)",
+        "District de Bonke pour les Zargulla, dans les Southern Ethiopian Highlands",
+        "Region de Gamo Gofa"
+      ],
+      "unificationsOrDivisions": "La distinction Zayse/Zergulla suit davantage des lignes ethniques ou geographiques que linguistiques, les deux varietes etant mutuellement intelligibles. Les Zargulla se designent eux-memes Gamo, soulignant des liens d'identite avec les Gamo voisins.",
+      "externalInfluences": "Contacts historiques avec les Gamo et les Koore voisins. Pratiques culturelles de construction de maisons et d'agriculture en terrasses documentees par des chercheurs du Centre d'etudes africaines de Leiden (ASCL). Presence croissante de l'eglise protestante dans la communaute.",
+      "majorHistoricalEvents": "Documentation academique moderne des pratiques culturelles Zargulla par Azeb Amha (ASCL Leiden) a partir de 2016, financee par l'Endangered Languages Documentation Programme. Le Glottolog classe le Zayse-Zergulla comme langue vulnerable (AES status: threatened). Le recensement ethiopien de 2007 denombre 17 884 Zeyese. Le recensement de 1994 donnait 10 842 individus."
+    },
+    "organization": {
+      "traditionalPoliticalSystem": "Organisation communautaire basee sur l'agriculture et l'elevage. L'economie repose sur un equilibre entre l'agriculture et l'elevage ; pendant la saison seche, les Zayse pratiquent aussi la peche pour completer leur alimentation. Pas de chefferie centralisee documentee dans les sources disponibles.",
+      "clanOrganization": "La composition ethnique est caracterisee par un metissage racial et linguistique de longue date, resultant en une composition ethnique riche et variee. Le brassage culturel avec les Gamo est particulierement notable pour les Zargulla, qui adoptent le nom Gamo comme auto-designation.",
+      "roleOfLineages": "Les lignages claniaux organisent l'acces aux terres agricoles et pastorales ainsi que les pratiques de construction de maisons. Les maisons commemoratives (boosa) construites sur les tombes sont des repliques des maisons d'habitation, revelant l'importance des liens entre vivants et ancetres dans l'organisation sociale.",
+      "religiousAuthority": "Le christianisme protestant est majoritaire parmi les Zayse aujourd'hui selon PeopleGroups.org. Les pratiques religieuses traditionnelles persistent dans les rituels funeraires et les ceremonies de construction de maisons documentees par les linguistes."
+    },
+    "languages": {
+      "mainLanguage": "Zayse-Zergulla",
+      "isoCodes": ["zay"],
+      "dialects": [
+        "Zayse (Zaysete, Zaisse, Zaysite, Zaysse)",
+        "Zergulla (Zergullinya, Zargulla)"
+      ],
+      "vehicularRole": "Le Zayse-Zergulla (ISO 639-3 : zay, Glottolog : zays1235) est classe comme langue omotique du groupe East Ometo. Elle est apparentee au dialecte Gidicho de la langue Koorete. Le nombre de locuteurs natifs etait de 19 000 selon le recensement ethiopien de 2007 (source Wikipedia). La langue est classee comme vulnerable par Glottolog (AES). L'amharique est utilise dans l'administration nationale. L'ecriture ethiopique est le systeme d'ecriture officiel."
+    },
+    "culture": {
+      "majorRites": "Les ceremonies funeraires incluent la construction de boosa (petites maisons commemoratives) au-dessus des tombes, repliques des maisons d'habitation. Ces structures illustrent le lien profond entre le monde des vivants et celui des ancetres. L'agriculture en terrasses (keela) constitue une pratique culturelle distinctive intimement liee a l'identite du groupe, notamment chez les Zargulla. Les forets sacrees dans les parties hautes des vallees jouent un role rituel et environnemental.",
+      "symbols": "Les maisons commemoratives (boosa) construites sur les tombes sont un symbole central de la culture Zargulla, combinant architecture, memoire et rituel. L'agriculture en terrasses (keela) est a la fois une technique agricole et une expression de l'identite territoriale.",
+      "artsAndMusic": "Traditions orales et discourse culturel autour des domaines de la construction de maisons et de l'agriculture en terrasses, documentees par des enregistrements linguistiques et ethnographiques. Dictionnaire thematique en cours de production couvrant la construction et l'agriculture. Les pratiques architecturales de construction de maisons constituent un patrimoine culturel distinct.",
+      "spiritualities": "Le christianisme protestant est la religion predominante selon les donnees recentes (PeopleGroups.org). Des pratiques traditionnelles persistent dans les rituels de construction et les ceremonies funeraires, revelant une spiritualite ancree dans le rapport a la terre, aux ancetres et au territoire. La foret sacree dans les hautes parties des vallees est un espace spirituel preservé."
+    },
+    "historicalRole": {
+      "kingdomsOrChiefdoms": null,
+      "relationsWithNeighbors": "Relations etroites avec les Gamo voisins (les Zargulla se designent eux-memes Gamo). Reconnaissance par les Koore voisins comme les plus anciens occupants de la region (Zagisse). Interactions culturelles et linguistiques avec les Koorete, dont le dialecte Gidicho est similaire au Zayse-Zergulla.",
+      "conflictsOrAlliances": null,
+      "diaspora": null
+    },
+    "demography": {
+      "totalPopulation": 25000,
+      "referenceYear": 2025,
+      "source": "Estimation basee sur le recensement ethiopien 2007 (17 884 Zeyese) et la projection de croissance demographique ; PrayWay Global : environ 20 000 Zayse",
+      "distributionByCountry": [
+        {
+          "country": "ETH",
+          "population": 25000
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Zayse in Ethiopia – Joshua Project, 2025",
+        "url": "https://joshuaproject.net/people_groups/16096",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      },
+      {
+        "title": "Zayse of Ethiopia – PeopleGroups.org, 2025",
+        "url": "https://peoplegroups.org/people_groups/pg011659/",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      },
+      {
+        "title": "Zayse-Zergulla – Glottolog 5.3",
+        "url": "https://glottolog.org/resource/languoid/id/zays1235",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Amha, Azeb – Placing the Dead and Nurturing the Living: Documentation of house-construction and terrace farming in Zargulla, ASCL Leiden / ELDP, 2016-2019",
+        "url": "https://www.ascleiden.nl/news/new-research-project-placing-dead-and-nurturing-living-documentation-house-construction-and",
+        "tier": "referenced",
+        "source_kind": "academic"
+      },
+      {
+        "title": "Zayse-Zergulla – JAEL Ethiopian Languages",
+        "url": "https://jael.info/locale/lang/zay-ET-x-Zayse-Zergulla.html",
+        "tier": "needs_review"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Zayse désigne un peuple d'Éthiopie et la langue qu'il parle, que les références associent à celle des Zargulla ou Zergulla. On ne sait pas comment le peuple zayse se nomme lui-même : aucune source que nous avons lue ne le dit. Seuls les Zargulla, un groupe proche, disent s'appeler Gamo. Les sources que nous avons lues ne disent pas d'où viennent ces noms.",
+    "selfNameUnknown": true,
+    "names": [
+      {
+        "nameText": "Zayse",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom du peuple et de sa langue ; on ne sait pas d'où il vient ni depuis quand il est écrit.",
+        "periodLabel": "En usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Zayse désigne une langue d'Éthiopie et le peuple qui la parle. La norme ISO 639-3 l'enregistre avec Zergulla sous le nom Zayse-Zergulla, code zay. On ne sait pas avec certitude d'où vient ce nom : les sources que nous avons lues n'en proposent pas d'explication.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "ISO 639-3, Zayse-Zergulla [zay]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/zay",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 13 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Zayse figure, avec Zaysse, Zeyse et Zaysete, parmi les noms de la langue que recense Glottolog. Les sources que nous avons lues ne disent ni qui l'emploie ni depuis quand.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Glottolog 5.3 — Zayse-Zergulla (zays1235)",
+                "author": "Glottolog",
+                "year": null,
+                "url": "https://glottolog.org/resource/languoid/id/zays1235",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Notice de la langue, lue le 13 octobre 2026 : elle recense Zayse, Zayse-Zergulla, Zaysse, Zaysé, Zeyse et Zaysete comme noms de la langue."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Zargulla",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'un groupe proche des Zayse, qui se nomme lui-même Gamo ; on ne sait pas d'où il vient.",
+        "periodLabel": "En usage aujourd'hui",
+        "usedIn": ["eng"],
+        "accounts": [
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Zargulla, écrit aussi Zergulla, désigne un groupe de langue est-ometo d'environ 8 000 personnes selon le recensement de 1994, dans le district de Bonke. Ses membres se nomment eux-mêmes Gamo, selon le Centre d'études africaines de Leiden. On ne sait pas d'où vient le nom Zargulla.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Placing the Dead and Nurturing the Living: Documentation of house-construction and terrace farming in Zargulla",
+                "author": "Centre d'études africaines de Leiden (ASCL)",
+                "year": 2016,
+                "url": "https://www.ascleiden.nl/news/new-research-project-placing-dead-and-nurturing-living-documentation-house-construction-and",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "notes": "Annonce d'un projet de recherche sur le zargulla, publiée le 13 octobre 2016 et lue le 13 octobre 2026. Elle dit : « The Zargulla (self-name 'Gamo') people live in parts of the Southern Ethiopian Highlands » et les compte à environ 8 000 selon le recensement de 1994."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

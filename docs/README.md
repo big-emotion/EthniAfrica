@@ -10,12 +10,15 @@ were referenced by nothing at all, two of them written that same week.
 ## Design — the charters and the reviewed renderings
 
 - [Design references — V2 atlas](design/README.md)
+- [Design references — V2 atlas](design/README.md)
+- [Design references — V2 atlas](design/README.md)
 - [Actions charter — the four shapes a click is allowed to take](design/actions-charter.md)
 - [Atlas charter — what the design system asserts](design/atlas-charter.md)
 - [Brand charter — what the atlas is, before it is a page](design/brand-charter.md)
 - [Dossier themes and navigation — architecture proposal](design/dossier-theme-architecture-proposal.md)
 - [Games charter — what a round is allowed to ask](design/games-charter.md)
 - [Games rollout plan — from REQ-120's original scope to three finished games](design/games-rollout-plan.md)
+- [Mockups first — how a visible change is made](design/mockup-first-workflow.md)
 - [Atlas mockups — the visual oracle](design/mockups/README.md)
 - [Brief 1 — The search result page with the timeline lens](design/mockups/briefs/01-result-page-timeline.md)
 - [Brief 2 — The people fiche](design/mockups/briefs/02-people.md)
@@ -31,6 +34,7 @@ were referenced by nothing at all, two of them written that same week.
 - [The result-page feed mockups — forty boards](design/mockups/search-feed/README.md)
 - [Search-feed font bundle](design/mockups/search-feed/fonts/README.md)
 - [The result-page mockups — twenty boards, and what parity means](design/mockups/search/README.md)
+- [Site mockups — the reference for every visible change](design/mockups/site/README.md)
 - [Moderation charter](design/moderation-charter.md)
 - [How a name reaches a country](design/name-to-country-linking.md)
 - [Naming-subtype taxonomy (ETNI-1460)](design/naming-subtype-taxonomy.md)

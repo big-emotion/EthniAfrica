@@ -1,0 +1,351 @@
+{
+  "id": "PPL_NABDAM",
+  "nameMain": "Nabdam",
+  "languageFamilyId": "FLG_GUR",
+  "currentCountries": ["GHA"],
+  "content": {
+    "appellations": {
+      "mainName": "Nabdam",
+      "selfAppellation": "Namnam",
+      "exonyms": [
+        "Nabdam",
+        "Nabt",
+        "Nabde",
+        "Nabte",
+        "Nabdug",
+        "Nabrug",
+        "Nabnam",
+        "Namnam"
+      ],
+      "originOfExonyms": "Nabdam est le nom du district administratif et la designation la plus courante en anglais. Nabrug designe le territoire ancestral (la terre des Nabdam). Nabt est le nom de leur langue tel qu'il est standardise dans la litterature linguistique. Les variations orthographiques (Nabde, Nabte, Nabdug) refletent des transcriptions differentes d'un meme phoneme gur.",
+      "whyProblematic": null,
+      "contemporaryUsage": "Nabdam est la denomination officielle dans l'administration ghanéenne et designe a la fois le peuple et le district administratif (Nabdam District, Upper East Region). Namnam est la designation endogene utilisee en contexte communautaire.",
+      "linguisticFamily": "FLG_GUR",
+      "ethnoLinguisticGroup": "Gur (Mole-Dagbane), branche Niger-Congo",
+      "historicalRegion": "Upper East Region, nord du Ghana (district de Nabdam, capitale Nangodi)",
+      "currentCountries": ["GHA"]
+    },
+    "ethnicities": ["Nabdam", "Namnam"],
+    "origins": {
+      "ancientOrigins": "Les Nabdam sont un sous-groupe du peuple Frafra (Gurunsi) de la region nord-est du Ghana. Selon la tradition orale, ils descendent du royaume Mossi (Mugu) et partageaient une origine commune avec les Mossi du Burkina Faso avant de migrer vers leur localisation actuelle. Ils sont intimement lies aux Tallensi voisins, partageant des traditions culturelles et ancestrales communes.",
+      "formationPeriod": "La migration depuis Nalago (dans la sphere Mossi-Mugu) vers le site actuel de Nangodi est documentee dans la tradition orale comme remontant a une periode pre-coloniale. Une tradition situant la migration autour du XVIIIe ou XIXe siecle est coherente avec la formation des chefferies de la region. Le district de Nabdam-Talensi fut constitue sous administration coloniale britannique, le district de Nabdam etant separe de celui de Talensi le 28 juin 2012.",
+      "migrationRoutes": [
+        "Migration depuis Nalago (territoire Mossi-Mugu) vers Nangodi, capitale actuelle du district de Nabdam",
+        "Etablissement dans la region de l'Upper East en lien avec les groupes Tallensi et Frafra voisins"
+      ],
+      "historicalSettlementZones": [
+        "District de Nabdam, Upper East Region, Ghana (capitale : Nangodi)",
+        "Zone frontaliere avec le Burkina Faso au nord"
+      ],
+      "unificationsOrDivisions": "Les Nabdam forment un sous-groupe distinct au sein du continuum culturel Frafra-Gurunsi. Le district de Talensi-Nabdam fut scinde en 2012 : la partie nord devint le district de Nabdam, la partie sud le district de Tallensi. Cette division administrative reflete une identite ethnique distincte.",
+      "externalInfluences": "Les Nabdam partagent des caracteristiques culturelles et ancestrales avec les Mossi du Burkina Faso. La region de Nangodi fut historiquement engagee dans l'orpaillage artisanal, ce qui la relia aux economies coloniales et mondiales via les lois minieres coloniales britanniques. La presence de chercheurs d'or (galami) reste notable a Nangodi.",
+      "majorHistoricalEvents": "Sous la colonisation britannique, la region de Nangodi etait deja connue pour son orpaillage historique. Le district de Nabdam a ete cree le 28 juin 2012 par scission du district de Talensi-Nabdam. Les Nabdam sont reconnus comme un groupe ethnique distinct au sein de la region Upper East lors du recensement ghaneen de 2021."
+    },
+    "organization": {
+      "traditionalPoliticalSystem": "Systeme chiefly decentralise, comme chez la plupart des groupes Frafra-Gurunsi. Les autorites traditionnelles (chefs) coexistent avec les pretres de la terre (tindana ou tindamba), qui jouent un role central dans les rituels fonciers, funeraires et agricoles. Le tindana consulte les dieux (tindaana) et presid aux ceremonies de mise en valeur des terres et aux rites de deuil.",
+      "clanOrganization": "Organisation clanique patrilineaire, comme chez les groupes Gur de la region. Les clans determinent l'appartenance communautaire, les droits fonciers et les alliances matrimoniales.",
+      "ageClassSystems": null,
+      "roleOfLineages": "Les lignages patrilineaires structurent la societe Nabdam. L'appartenance au lignage determine les droits sur la terre, la succession aux titres et les obligations rituelles. La chefferie Nabdam trace son lignage jusqu'au royaume Mugu via le personnage de Na Atavya.",
+      "religiousAuthority": "Les tindana (pretres de la terre, sing. tindana, plur. tindamba) sont les principales autorites religieuses. Ils president aux sacrifices propitiatoires, consultent les devins (soothsayers) lors des deces pour determiner les causes et presid aux ceremonies agricoles saisonnieres. Les croyances traditionnelles animistes coexistent avec des influences chretiennes et islamiques minoritaires."
+    },
+    "languages": {
+      "mainLanguage": "Nabt (Nabte, Nabdam)",
+      "isoCodes": [],
+      "dialects": [
+        "Nabt (forme standardisee dans la litterature linguistique)",
+        "Nabdem / Nabdam (denomination populaire de la langue)"
+      ],
+      "vehicularRole": "Le Nabt est une langue Gur appartenant au groupe Mole-Dagbane, qui comprend de nombreuses langues apparentees parlees dans le nord-est du Ghana. Une proposition de code ISO 639-3 pour le Nabt a ete rejetee en janvier 2017 ; la langue est souvent consideree comme une variete du groupe frafra-gurne. Le dagbani et l'anglais sont utilises comme langues vehiculaires avec les groupes voisins et dans l'administration."
+    },
+    "culture": {
+      "majorRites": "Festivals majeurs : Kuri, Gulp et Bolob (festival annuel celebre avant la saison des pluies pour promouvoir la paix, remercier pour la recolte precedente et invoquer les benedictions pour la saison suivante). Les rituels funeraires comportent le sacrifice d'une volaille avant l'ensevelissement comme declaration rituelle concernant la mort. Des rituels spirituels pour les personnes agees impliquent parfois un soothsayer (devin). Rites matrimoniaux incluant la remise d'animaux de ferme au beau-pere.",
+      "symbols": "La terre (nabrug) est un symbole identitaire fondamental. Les tindana sont les gardiens des sites sacres et des lieux de culte ancestral. L'orpaillage de Nangodi constitue un heritage symbolique liant les Nabdam aux ressources de leur territoire.",
+      "artsAndMusic": "Musique et danse constituent une part importante des celebrations culturelles, notamment lors des festivals Bolob, Kuri et Gulp. Les arts plastiques traditionnels incluent la poterie et la vannerie. La tradition orale est essentielle pour la transmission des genealogies et de l'histoire des migrations.",
+      "spiritualities": "Croyances animistes centrees sur le culte des ancetres, des forces naturelles et des dieux de la terre (tindaana). Les Nabdam adherent a des valeurs culturelles et des tabous traditionnels. La vie communautaire est organisee autour des pratiques traditionnelles et des sites sacres. L'Islam et le christianisme sont presents de maniere minoritaire."
+    },
+    "historicalRole": {
+      "kingdomsOrChiefdoms": "Les Nabdam n'ont pas developpe de royaume centralise mais s'inscrivent dans la sphere d'influence du royaume Mossi-Mugu. Leur chefferie trace son origine jusqu'a Na Atavya, figure de la lignee royale de Murugu. La capitale Nangodi abrite la chefferie traditionnelle Nabdam.",
+      "relationsWithNeighbors": "Les Nabdam partagent des caracteristiques culturelles et ancestrales avec les Tallensi (voisins immédiats), les Bolgatanga et les autres groupes Frafra de l'Upper East. Ils sont egalement proches des Mossi du Burkina Faso, dont ils se distinguent progressivement via leur migration vers Nangodi. L'Upper East Region regroupe une diversite de groupes ethniques avec lesquels les Nabdam entretiennent des relations historiques.",
+      "conflictsOrAlliances": "Les Nabdam, comme les groupes Frafra voisins, ont subi l'administration coloniale britannique qui a reorganise les chefferies locales. La division du district de Talensi-Nabdam en 2012 reflete une differenciation identitaire entre Nabdam et Tallensi.",
+      "diaspora": "Les Nabdam vivent principalement dans le district de Nabdam (Upper East Region). Une diaspora urbaine est presente a Accra, Kumasi et dans les villes du sud du Ghana, comme pour la plupart des groupes du nord ghaneen. Quelques locuteurs de Nabt se trouvent egalement au Burkina Faso voisin."
+    },
+    "demography": {
+      "totalPopulation": 55000,
+      "referenceYear": 2025,
+      "source": "Estimation basee sur le recensement ghaneen de 2021 (district de Nabdam : 51 861 habitants, Ghana Statistical Service). Population 2025 estimee avec croissance annuelle de 2,2%. Chiffre conservateur tenant compte que la population du district ne se compose pas uniquement d'ethnies Nabdam.",
+      "distributionByCountry": [
+        {
+          "country": "GHA",
+          "population": 55000
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Blakk Rasta – Story of the Nabdam people, YouTube, 2025",
+        "url": "https://www.youtube.com/watch?v=h6GcSiCZkMA",
+        "tier": "unverified",
+        "source_kind": "press"
+      },
+      {
+        "title": "Mamprusi People – The Nangodi Traditional Area, Facebook, 2020",
+        "url": "https://www.facebook.com/mamprusiPeople/posts/the-nangodi-traditional-area",
+        "tier": "unverified",
+        "source_kind": "community"
+      },
+      {
+        "title": "Ghana Statistical Service – Population and Housing Census 2021",
+        "url": "https://www.statsghana.gov.gh",
+        "tier": "official",
+        "source_kind": "official_statistics"
+      },
+      {
+        "title": "JSTOR – Sylvan Memories of People, Place, and Trees in Nangodi",
+        "url": "https://www.jstor.org/stable/26795889",
+        "tier": "referenced",
+        "source_kind": "academic"
+      },
+      {
+        "title": "NABT NKOR – Nabt language Upper East Ghana",
+        "url": "https://www.nabtnkornccs.org/en/about-us/who-we-are",
+        "tier": "needs_review"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Nabdam désigne un peuple du nord-est du Ghana, dans la région du Haut-Est, qui se nomme lui-même Nabdam. Les Britanniques l'ont aussi rangé sous le nom Frafra, avec ses voisins. D'autres noms existent : Nabt, le nom de sa langue, et Nabnam. On ne sait pas avec certitude d'où viennent ces noms ; nous présentons plus bas ce que disent les sources.",
+    "names": [
+      {
+        "nameText": "Nabdam",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom que ce peuple se donne, selon Cardinall en 1920 ; il désigne aussi un district.",
+        "periodLabel": "Écrit depuis 1920 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Nabdam désigne un groupe ethnique et le district où il vit, selon le chercheur Joseph Octavius Akolgo. Il n'explique pas ce nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Investiture of Chiefs, a Relic of Colonialism?",
+                "author": "Joseph Octavius Akolgo",
+                "year": 2024,
+                "url": "https://www.jstage.jst.go.jp/article/ascwp/4/0/4_39/_pdf/-char/ja",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 46, note 9",
+                "notes": "ASC-TUFS Working Papers, vol. 4, 2024 ; lu le 12 octobre 2026 dans le PDF de la revue. Note 9 : « Nabdam refers to an ethnic group and a district comprising the group. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nabdam est l'un des noms que les peuples des districts de Navarro et de Zuaragu se donnent eux-mêmes, selon A. W. Cardinall, qui dit employer pour chaque peuple son propre nom. Les sources que nous avons lues n'expliquent pas l'origine du nom.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Natives of the Northern Territories of the Gold Coast : their customs, religion and folklore",
+                "author": "A. W. Cardinall",
+                "year": 1920,
+                "url": "https://archive.org/details/nativesofnorther00carduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. viii",
+                "notes": "Londres, George Routledge & Sons ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive. Préface : « Throughout I have taken the names employed by the people themselves to describe their tribe. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Nabdam apparaît par écrit chez l'administrateur britannique A. W. Cardinall, parmi les principaux peuples des districts de Navarro et de Zuaragu, avec les Nankanni, les Talensi, les Kassena et les Builsa. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple vivait déjà dans ce pays avant elle.",
+            "formAsWritten": "Nabdam",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Natives of the Northern Territories of the Gold Coast : their customs, religion and folklore",
+                "author": "A. W. Cardinall",
+                "year": 1920,
+                "url": "https://archive.org/details/nativesofnorther00carduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 1",
+                "notes": "Londres, George Routledge & Sons ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive. Préface : « Throughout I have taken the names employed by the people themselves to describe their tribe. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Frafra",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Les Britanniques, selon A. W. Cardinall",
+        "shortLine": "Le nom que les Britanniques donnaient à tous les Nankanni, Nabdam et Talensi.",
+        "periodLabel": "Écrit Fra-Fra en 1920",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "Proposée en 1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Frafra viendrait d'une formule que ces peuples murmurent pour remercier ou pour demander, « Fra-Fra » ou « Fura-Fura », selon A. W. Cardinall.",
+            "hypothesisGroup": "origine du nom Frafra",
+            "sources": [
+              {
+                "title": "The Natives of the Northern Territories of the Gold Coast : their customs, religion and folklore",
+                "author": "A. W. Cardinall",
+                "year": 1920,
+                "url": "https://archive.org/details/nativesofnorther00carduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. viii",
+                "notes": "Londres, George Routledge & Sons ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive. Préface : « Throughout I have taken the names employed by the people themselves to describe their tribe. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Frafra, écrit Fra-Fra, regroupe pour les Britanniques tous les Nankanni, les Nabdam et les Talensi, selon A. W. Cardinall.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Natives of the Northern Territories of the Gold Coast : their customs, religion and folklore",
+                "author": "A. W. Cardinall",
+                "year": 1920,
+                "url": "https://archive.org/details/nativesofnorther00carduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. viii",
+                "notes": "Londres, George Routledge & Sons ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive. Préface : « Throughout I have taken the names employed by the people themselves to describe their tribe. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Gurunsi",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": "Des étrangers, comme les Mossi et les Mamprussi, selon A. W. Cardinall",
+        "shortLine": "Le nom que les Mossi et les Mamprussi donnent à tous ces peuples ; écrit Grunshi en 1920.",
+        "periodLabel": "Écrit Grunshi en 1920",
+        "accounts": [
+          {
+            "period": {
+              "from": 1920,
+              "to": 1920,
+              "label": "1920"
+            },
+            "era": "colonial",
+            "statement": "Le nom Gurunsi s'écrit Grunshi chez A. W. Cardinall, qui y voit un nom donné par des étrangers comme les Mossi et les Mamprussi à l'ensemble de ces peuples. Il ajoute que les Britanniques l'ont ensuite découpé en trois, Fra-Fra, Grunshi et Kanjaga.",
+            "aspect": "usage",
+            "formAsWritten": "Grunshi",
+            "sources": [
+              {
+                "title": "The Natives of the Northern Territories of the Gold Coast : their customs, religion and folklore",
+                "author": "A. W. Cardinall",
+                "year": 1920,
+                "url": "https://archive.org/details/nativesofnorther00carduoft",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. viii",
+                "notes": "Londres, George Routledge & Sons ; lu le 12 octobre 2026 dans la numérisation d'Internet Archive. Préface : « Throughout I have taken the names employed by the people themselves to describe their tribe. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nabt",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom de la langue des Nabdam, que l'association Nabt Nkɔr emploie.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Nabt est celui que l'association ghanéenne Nabt Nkɔr emploie pour la langue du Haut-Est qu'elle veut enseigner ; son nom veut dire « la voix des Nabt ». Sa page ne dit pas d'où vient le nom Nabt. On ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Who We Are",
+                "author": "NABT NKOR (Nabt Centre for Cultural Studies)",
+                "year": null,
+                "url": "https://www.nabtnkornccs.org/en/about-us/who-we-are",
+                "tier": "unverified",
+                "source_kind": "ngo",
+                "notes": "Page d'une association ghanéenne, non datée, lue le 12 octobre 2026. Elle écrit que « Nabt Nkɔr » veut dire « la voix des Nabt », parle de la culture « nabdam » et de la langue nabt du Haut-Est, et nomme sa revue et son journal d'après les Nabnam."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Nabnam",
+        "nameStatus": "current",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom que l'association Nabt Nkɔr emploie pour le district et son peuple.",
+        "periodLabel": "En usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Nabnam figure dans le nom de la revue et du journal de l'association Nabt Nkɔr, et dans une légende qui parle du « district nabnam et de son peuple ». Sa page ne dit pas d'où vient ce nom. On ne sait pas avec certitude d'où il vient.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Who We Are",
+                "author": "NABT NKOR (Nabt Centre for Cultural Studies)",
+                "year": null,
+                "url": "https://www.nabtnkornccs.org/en/about-us/who-we-are",
+                "tier": "unverified",
+                "source_kind": "ngo",
+                "notes": "Page d'une association ghanéenne, non datée, lue le 12 octobre 2026. Elle écrit que « Nabt Nkɔr » veut dire « la voix des Nabt », parle de la culture « nabdam » et de la langue nabt du Haut-Est, et nomme sa revue et son journal d'après les Nabnam."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

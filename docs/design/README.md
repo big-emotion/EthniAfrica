@@ -15,6 +15,8 @@ there.
 | **The engine decision** | [`../adr/0007-atlas-globe-engine.md`](../adr/0007-atlas-globe-engine.md) — three.js r169, one component for every surface |
 | **The rendering**       | `mockups/` — four runnable pages, below                                                                                   |
 | **Name-page briefs**    | [`mockups/briefs/`](mockups/briefs/README.md) — eight briefs for the reference boards of each type of name, proposed      |
+| **The whole site**      | [`mockups/site/`](mockups/site/README.md) — 49 boards of the shipped site; the reference every visible change answers to  |
+| **The order of work**   | [`mockup-first-workflow.md`](mockup-first-workflow.md) — boards first, approval, then code, then comparison               |
 
 Each of the four surface charters governs one surface. `brand-charter.md` sits
 above them and answers the question none of them does — what this is and who is

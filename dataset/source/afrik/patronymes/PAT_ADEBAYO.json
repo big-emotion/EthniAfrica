@@ -6,7 +6,7 @@
   },
   "id": "PAT_ADEBAYO",
   "nameMain": "Adebayo",
-  "nameSystem": "praise_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Adebayo",
@@ -129,6 +129,10 @@
     {
       "fieldPath": "countries",
       "reason": "La présence de ce prénom en dehors du Nigeria — notamment au sein des communautés yoruba du Bénin ou du Togo — n'a pas pu être confirmée par une source propre à ce prénom."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de naissance yoruba. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     }
   ],
   "nameHistory": {

@@ -1,0 +1,897 @@
+{
+  "designVersion": "1.3.0-proposition",
+  "browser": "153.0.8010.12",
+  "cards": [
+    {
+      "id": "seq-1",
+      "ok": true,
+      "changedFraction": 0.0016831275720164609,
+      "meanMaxChannelDifference": 0.11293484224965707,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "seq-2",
+      "ok": true,
+      "changedFraction": 0.0049039780521262,
+      "meanMaxChannelDifference": 0.2843539094650206,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "seq-3",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "seq-4",
+      "ok": true,
+      "changedFraction": 0.0045274348422496575,
+      "meanMaxChannelDifference": 0.28560219478737997,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "seq-5",
+      "ok": true,
+      "changedFraction": 0.005890946502057614,
+      "meanMaxChannelDifference": 0.3450871056241427,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "seq-6",
+      "ok": true,
+      "changedFraction": 0.0032674897119341563,
+      "meanMaxChannelDifference": 0.18196433470507545,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "seq-7",
+      "ok": true,
+      "changedFraction": 0.0035349794238683126,
+      "meanMaxChannelDifference": 0.24773936899862825,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "seq-8",
+      "ok": true,
+      "changedFraction": 0.005775720164609054,
+      "meanMaxChannelDifference": 0.3445493827160494,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "seq-9",
+      "ok": true,
+      "changedFraction": 0.003300411522633745,
+      "meanMaxChannelDifference": 0.21534979423868314,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "chr-1",
+      "ok": true,
+      "changedFraction": 0.002255144032921811,
+      "meanMaxChannelDifference": 0.13697805212620026,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "chr-2",
+      "ok": true,
+      "changedFraction": 0.0024972565157750344,
+      "meanMaxChannelDifference": 0.16572770919067215,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "chr-3",
+      "ok": true,
+      "changedFraction": 0.002546639231824417,
+      "meanMaxChannelDifference": 0.14459739368998628,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "chr-4",
+      "ok": true,
+      "changedFraction": 0.003721536351165981,
+      "meanMaxChannelDifference": 0.2202496570644719,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "chr-5",
+      "ok": true,
+      "changedFraction": 0.004446502057613168,
+      "meanMaxChannelDifference": 0.2749814814814815,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "chr-branch",
+      "ok": true,
+      "changedFraction": 0.003578875171467764,
+      "meanMaxChannelDifference": 0.20926063100137174,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "map-a",
+      "ok": true,
+      "changedFraction": 0.002816872427983539,
+      "meanMaxChannelDifference": 0.17458847736625516,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "map-b",
+      "ok": true,
+      "changedFraction": 0.003113854595336077,
+      "meanMaxChannelDifference": 0.19208230452674896,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "map-c",
+      "ok": true,
+      "changedFraction": 0.003203017832647462,
+      "meanMaxChannelDifference": 0.19543689986282578,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "pair",
+      "ok": true,
+      "changedFraction": 0.0027860082304526747,
+      "meanMaxChannelDifference": 0.1613429355281207,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "stress",
+      "ok": true,
+      "changedFraction": 0.005694787379972565,
+      "meanMaxChannelDifference": 0.33447256515775037,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "overflow",
+      "ok": true,
+      "changedFraction": 0.010526748971193416,
+      "meanMaxChannelDifference": 0.5824218106995884,
+      "limits": {
+        "fraction": 0.012,
+        "mean": 0.65
+      }
+    },
+    {
+      "id": "seq-4-parchemin",
+      "ok": true,
+      "changedFraction": 0.004270233196159122,
+      "meanMaxChannelDifference": 0.22923456790123456,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "chr-3-parchemin",
+      "ok": true,
+      "changedFraction": 0.002327846364883402,
+      "meanMaxChannelDifference": 0.1224156378600823,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "map-c-parchemin",
+      "ok": true,
+      "changedFraction": 0.002914951989026063,
+      "meanMaxChannelDifference": 0.15937448559670783,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "seq-9-parchemin",
+      "ok": true,
+      "changedFraction": 0.002373113854595336,
+      "meanMaxChannelDifference": 0.14791975308641975,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "map-fula",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "map-fula-region",
+      "ok": true,
+      "changedFraction": 0.003972565157750343,
+      "meanMaxChannelDifference": 0.2323511659807956,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "map-fula-parchemin",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "map-fula-nombre",
+      "ok": true,
+      "changedFraction": 0.004689300411522634,
+      "meanMaxChannelDifference": 0.27816529492455416,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "map-fula-nombre-region",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "map-fula-part",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "atlas-1880",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "atlas-1914",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "atlas-independances",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "atlas-1500",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "atlas-1880-parchemin",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "atlas-capacite-45",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "atlas-proto-collisions",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-pays-01",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-pays-02",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-pays-03",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-pays-04",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-pays-05",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-pays-06",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-pays-07",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-nom-recu-01",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-nom-recu-02",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-nom-recu-03",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-nom-recu-04",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-nom-recu-05",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-nom-recu-06",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-nom-recu-07",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-nom-recu-08",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-nom-famille-01",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-nom-famille-02",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-nom-famille-03",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-nom-famille-04",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-nom-famille-05",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-nom-famille-06",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-nom-famille-07",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-mots-01",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-mots-02",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-mots-03",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-mots-04",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-mots-05",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-mots-06",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-mots-07",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-frontieres-01",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-frontieres-02",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-frontieres-03",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-frontieres-04",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-frontieres-05",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-frontieres-06",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-frontieres-07",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-afrique-tout-01",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-afrique-tout-02",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-afrique-tout-03",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-afrique-tout-04",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-afrique-tout-05",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-afrique-tout-06",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-afrique-tout-07",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-villes-01",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-villes-02",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-villes-03",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-villes-04",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-villes-05",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-villes-06",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-atlas-1880",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    },
+    {
+      "id": "serie-atlas-1914-parchemin",
+      "ok": true,
+      "changedFraction": 0,
+      "meanMaxChannelDifference": 0,
+      "limits": {
+        "fraction": 0.007,
+        "mean": 0.4
+      }
+    }
+  ],
+  "ok": true
+}

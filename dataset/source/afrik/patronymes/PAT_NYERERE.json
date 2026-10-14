@@ -97,5 +97,63 @@
       "fieldPath": "peoples",
       "reason": "Le récit consulté situe le nom chez les Zanaki, dans le nord de la Tanzanie. Aucune source consultée ne le relie aux Nyamwezi, auxquels la fiche le rattache pour l'instant."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Nyerere est porté en Tanzanie, notamment par Julius Nyerere, premier président du pays, et par son père, le chef Nyerere Burito. Il voudrait dire « chenille » en zanaki, selon la presse tanzanienne. Les sources lues n'en donnent aucune trace écrite plus ancienne : on ne sait pas avec certitude depuis quand il est écrit.",
+    "names": [
+      {
+        "nameText": "Nyerere",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom porté par un chef et par son fils, premier président ; « chenille » en zanaki, selon la presse.",
+        "periodLabel": "Porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Nyerere est porté en Tanzanie par Julius Kambarage Nyerere, premier président du pays, né le 13 avril 1922 à Butiama, dans la région de Mara. La présidence le dit fils du chef Nyerere Burito : le nom Nyerere figurait donc déjà dans le nom de son père.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Wasifu: Mwl. Julius Kambarage Nyerere",
+                "author": "Ikulu, présidence de la République unie de Tanzanie",
+                "year": null,
+                "url": "https://www.ikulu.go.tz/administration/profile/4",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Biographie en swahili du site officiel de la présidence, lue le 14 octobre 2026 : « Mwalimu Julius Kambarage Nyerere, Rais wa Kwanza wa Tanzania alizaliwa tarehe 13 Aprili, mwaka 1922 katika kijiji cha Butiama, Wilaya ya Musoma katika Mkoa wa Mara. Alikuwa mtoto wa Chifu Nyerere Burito na Bibi Christina Mugaya Wanyang'ombe. » Elle ne dit pas ce que veut dire le nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Rapporté en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Nyerere veut dire « chenille » en zanaki, selon le Daily News de Tanzanie, qui le rattache à l'héritage zanaki de la famille de Julius Nyerere. Le journal ne dit pas qui a donné ce nom ni pourquoi, et ne cite pas de source pour ce sens.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "From childhood Mwalimu had all signs of a leader",
+                "author": "Ally Mayala",
+                "year": 2025,
+                "url": "https://dailynews.co.tz/from-childhood-mwalimu-had-all-signs-of-a-leader/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Article du Daily News (Tanzanie) du 14 octobre 2025, lu le 14 octobre 2026. Il écrit : « The name \"Nyerere\" in Zanaki translates to \"caterpillar\" », et dit que le nom complet de Julius Kambarage Nyerere « reflected his Zanaki heritage » et qu'il était l'un des enfants de Burito Nyerere, un chef local. L'article ne cite pas de source pour le sens."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

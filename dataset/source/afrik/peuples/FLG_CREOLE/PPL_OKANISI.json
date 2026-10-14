@@ -161,6 +161,7 @@
               "to": 2022,
               "label": "Mai 2022"
             },
+            "era": "modern",
             "statement": "Le nom Okanisi est un des deux noms que se donnent les Marrons du fleuve Tapanahoni, avec Ndyuka, selon le capitaine Baja Gazon, interrogé à Diitabiki.",
             "aspect": "usage",
             "sources": [
@@ -184,6 +185,7 @@
               "to": 1994,
               "label": "1994"
             },
+            "era": "modern",
             "statement": "Le nom Okanisi apparaît dans le titre du dictionnaire okanisi-anglais publié en 1994 à Paramaribo par le Summer Institute of Linguistics, A buku fu Okanisi anga Ingiisi wowtu, avec les contributions d'Evert D. Koanting et Carlo T. Velanti. C'est la plus ancienne trace écrite de ce nom que le projet connaît. Le peuple existait déjà avant lui.",
             "formAsWritten": "Okanisi",
             "birth": true,
@@ -206,6 +208,7 @@
               "to": 2002,
               "label": "Proposée en 2002"
             },
+            "era": "modern",
             "statement": "Le nom Okanisi viendrait d'Aukaners, le nom que les colons néerlandais donnaient au groupe avec lequel ils ont signé des traités de paix sur la plantation Auka, selon la linguiste Laurence Goury. Elle le présente comme le nom que revendiquent les Ndjuka de la rivière Cottica.",
             "hypothesisGroup": "origine du nom Okanisi",
             "sources": [
@@ -227,6 +230,7 @@
               "to": 2022,
               "label": "Rapportée en 2022"
             },
+            "era": "modern",
             "statement": "Le nom Okanisi viendrait d'Auka, la plantation où les ancêtres étaient esclaves avant de se libérer, selon le capitaine Baja Gazon.",
             "hypothesisGroup": "origine du nom Okanisi",
             "sources": [
@@ -261,6 +265,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Ndyuka, écrit aussi Ndjuka, désigne l'un des six peuples marrons du Suriname. Leur pays ancestral, le fleuve Tapanahoni, s'appelle Ndjuka Liba, « fleuve Ndjuka », selon l'anthropologue Diane Vernon.",
             "aspect": "usage",
             "sources": [
@@ -302,6 +307,7 @@
               "to": 1760,
               "label": "1712-1760"
             },
+            "era": "colonial",
             "statement": "On parle alors de marrons pour désigner les ancêtres des Ndyuka, qui s'enfuient des plantations entre 1712 et 1760. Le gouvernement du Suriname signe la paix avec eux à partir de 1760, selon Diane Vernon.",
             "before": true,
             "sources": [
@@ -323,6 +329,7 @@
               "to": 2022,
               "label": "Rapportée en 2022"
             },
+            "era": "modern",
             "statement": "Le nom Ndyuka viendrait du cri d'un oiseau qui a fait savoir aux ancêtres qu'ils étaient arrivés à la crique Ndyuka, selon le capitaine Baja Gazon.",
             "hypothesisGroup": "origine du nom Ndyuka",
             "sources": [
@@ -410,6 +417,7 @@
               "to": null,
               "label": "Usage contemporain"
             },
+            "era": "modern",
             "statement": "Le nom Bush Negroes, en néerlandais Bos Negers, désigne ensemble les six peuples marrons du Suriname, dont les Ndjuka, selon Diane Vernon. Ils disent eux-mêmes Busi Nengee, et en français Noirs Marrons.",
             "aspect": "usage",
             "sources": [

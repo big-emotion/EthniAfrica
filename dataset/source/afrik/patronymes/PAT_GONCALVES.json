@@ -6,7 +6,7 @@
   },
   "id": "PAT_GONCALVES",
   "nameMain": "Gonçalves",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Gonçalves",
@@ -28,7 +28,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -78,12 +78,179 @@
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un patronyme portugais tiré du prénom Gonçalo. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
+    },
+    {
       "fieldPath": "transmissionMode",
-      "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
+      "reason": "Le nom Gonçalves est d'abord un nom de personne : nous ne documentons pas encore comment il passe d'une génération à l'autre comme nom de famille."
     },
     {
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Gonçalves à un peuple en Angola. Nous n'avons pas encore consulté de source consacrée à ce nom. Les exemples de noms portugais cités pour les créoles de Guinée-Bissau ne suffisent pas à expliquer leur usage en Angola."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Gonçalves est un nom de famille portugais, formé sur le prénom Gonçalo. Il est porté en Angola, où on l'écrit aussi Goncalves. C'est à l'origine un patronyme, un nom tiré du nom du père. On ne sait pas avec certitude quand ni comment il est devenu un nom de famille angolais ; nous présentons plus bas ce que les sources disent.",
+    "names": [
+      {
+        "nameText": "Gonçalves",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un patronyme portugais tiré du prénom Gonçalo, porté en Angola.",
+        "periodLabel": "Écrit dès le Xe siècle sous une forme proche ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Gonçalves est un patronyme portugais, tiré du prénom Gonçalo, selon le Dictionary of American Family Names. José Leite de Vasconcelos le range parmi les noms de famille d'aujourd'hui qui viennent des patronymes du Moyen Âge. Ces sources ne disent rien de l'Angola.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Goncalves Name Meaning and Goncalves Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=goncalves",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch et lue en anglais. Elle donne : « Portuguese (Gonçálves): patronymic from the personal name Gonçalo (see Gonzalo). Compare Gonsalves. »  Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 120",
+                "notes": "José Leite de Vasconcelos, Antroponímia portuguesa, Lisbonne, Imprensa Nacional, 1928, lu sur la copie numérisée d'archive.org. À la page 120, il donne une liste de noms de famille d'aujourd'hui venus de patronymes du Moyen Âge, où figure Gonçalves. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "24 août 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Gonçalves est porté en Angola : la biographie du président João Lourenço, publiée par l'ambassade d'Angola au Japon, lui donne le nom complet João Manuel Gonçalves Lourenço et cite sa mère, Josefa Gonçalves Cipriano Lourenço. La biographie ne dit rien de l'origine du nom.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Biography of His Excellency João Manuel Gonçalves Lourenço, President of the Republic",
+                "author": "Ministère des Affaires étrangères de l'Angola, ambassade d'Angola au Japon",
+                "year": 2020,
+                "url": "https://www.angola.or.jp/?p=7164",
+                "tier": "official",
+                "source_kind": "government",
+                "notes": "Page de l'ambassade d'Angola au Japon qui reprend la biographie diffusée par le bureau de communication institutionnelle du ministère angolais des Affaires étrangères, datée du 24 août 2020. Elle dit : « Mister João Manuel Gonçalves Lourenço, was born on March 5, 1954, in Lobito city, province of Benguela, son of the late Sequeira João Lourenço, nurse of profession, and of the late Josefa Gonçalves Cipriano Lourenço, dressmaker. » Elle ne dit rien de l'origine des noms. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Proposé en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Gonçalves pourrait être devenu un nom angolais par le baptême et l'état civil. À l'époque coloniale, les missionnaires donnaient aux Ovimbundu baptisés des noms de saints, et l'état civil remplaçait des noms en umbundu par des noms portugais, selon Severino Canhola Dungue. Il ne cite pas ce nom en particulier.",
+            "sources": [
+              {
+                "title": "O nome: Identidade cultural do povo Ovimbundu",
+                "author": "Severino Canhola Dungue",
+                "year": 2025,
+                "url": "https://www.ajol.info/index.php/academicus/article/download/285659/269148/667445",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 28-30",
+                "notes": "Revue Academicus, vol. 3, n° 1, 2025, p. 23-34, publiée le 7 janvier 2025 ; texte intégral lu sur AJOL. Pages 28 à 30 : à l'époque coloniale, les missionnaires donnaient aux Ovimbundu baptisés des noms de saints à la place de leurs noms, et au registre civil des noms en umbundu étaient remplacés par des noms portugais (exemple donné : « Nangoya – Gomes »), d'après Chimbinda (2009). L'article ne cite pas ce nom. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1415,
+              "to": 1450,
+              "label": "De 1415 à 1450"
+            },
+            "statement": "Le nom Gonçalves sert de patronyme au Portugal dans les registres de la chancellerie royale de 1415 à 1450, que cite José Leite de Vasconcelos : « Alvaro Gonçalves Matoso, filho de Gonçalo Pires ». Le père s'appelle Gonçalo, et le fils porte Gonçalves.",
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 113",
+                "notes": "José Leite de Vasconcelos, Antroponímia portuguesa, Lisbonne, Imprensa Nacional, 1928, lu sur la copie numérisée d'archive.org. À la page 113, il cite les Chancelarias (1415-1450), p. 51 : « Alvaro Gonçalves Matoso, filho de Gonçalo Pires ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 901,
+              "to": 1000,
+              "label": "Xe siècle"
+            },
+            "statement": "Le nom Gonçalves a pour plus ancienne trace une forme latine proche, Gonsalvi, dans « Gundisalbus, filius Gonsalvi », un texte du Xe siècle que cite José Leite de Vasconcelos parmi les premiers patronymes de ses documents. C'est la plus ancienne trace de ce nom que le projet connaît ; elle ne dit rien de l'Angola.",
+            "formAsWritten": "Gonsalvi",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Antroponímia portuguesa",
+                "author": "José Leite de Vasconcelos",
+                "year": 1928,
+                "url": "https://archive.org/details/antroponimia-portuguesa",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 86",
+                "notes": "José Leite de Vasconcelos, Antroponímia portuguesa, Lisbonne, Imprensa Nacional, 1928, lu sur la copie numérisée d'archive.org. À la page 86, il cite « Gundisalbus, filius Gonsalvi, p. 47, sec. x » parmi les patronymes des documents les plus anciens. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Goncalves",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Le même nom écrit sans cédille, dans les registres et les bases de données.",
+        "periodLabel": "Porté aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "statement": "Le nom Goncalves est le même nom écrit sans cédille. Le Dictionary of American Family Names donne l'entrée sous cette forme, avec Gonçálves comme forme portugaise.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Goncalves Name Meaning and Goncalves Family History at FamilySearch",
+                "author": "Patrick Hanks (dir.), Dictionary of American Family Names",
+                "year": 2003,
+                "url": "https://www.familysearch.org/en/surname?surname=goncalves",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Entrée du Dictionary of American Family Names (Oxford University Press, 2003 et 2006), reproduite par FamilySearch et lue en anglais. La page de la forme Goncalves affiche l'entrée « Portuguese (Gonçálves): patronymic from the personal name Gonçalo (see Gonzalo). Compare Gonsalves. »  Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

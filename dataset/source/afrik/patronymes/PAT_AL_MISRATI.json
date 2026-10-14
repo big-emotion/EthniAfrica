@@ -69,11 +69,11 @@
     },
     {
       "sourceKey": "oxford-al-misrati",
-      "title": "Libyan Arabic Personal Names — Oxford Research Archive",
+      "title": "The Twelfth-century documents of St. George’s of Tròccoli (Sicily)",
       "url": "https://ora.ox.ac.uk/objects/uuid%3A91e386fb-56e6-4c10-9a71-514b875c1eb6/files/mb4cb97b8fc65dc94bb6b8c19332b4614",
       "tier": "referenced",
       "source_kind": "academic",
-      "notes": "Étude universitaire consultée le 2 septembre 2026. Elle rattache la nisba Al-Miṣrātī à Misrata et mentionne une section homonyme des Hawwara ; cette ambiguïté empêche une conclusion généalogique générale."
+      "notes": "Article de Vera von Falkenhausen, Nadia Jamil et Jeremy Johns (Journal of Arabic and Islamic Studies, 2016) consulté le 2 septembre 2026, relu le 14 octobre 2026. Il rattache la nisba Al-Miṣrātī à Misrata et mentionne une section homonyme des Hawwara ; cette ambiguïté empêche une conclusion généalogique générale."
     }
   ],
   "gaps": [
@@ -109,5 +109,174 @@
       "fieldPath": "transmissionMode",
       "reason": "Les recherches « Al-Misrati transmission patronyme », « Al-Misrati filiation » et « Al-Misrati hereditary surname » n’ont pas établi si, ni comment, cette forme se transmet dans les communautés concernées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Al-Misrati est un nom libyen qui a la forme d'un nom d'origine : « de Misrata ». Les auteurs qui l'ont étudié hésitent entre la ville de Misrata et une section berbère des Hawwara qui portait ce nom. Sa plus ancienne trace écrite que nous connaissons, al-Miṣrātī, figure en 1141 dans un registre arabe de Sicile normande. Il est aussi porté en Tunisie.",
+    "names": [
+      {
+        "nameText": "Al-Misrati",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom libyen « de Misrata » ; écrit al-Miṣrātī dès 1141, dans un registre de Sicile.",
+        "periodLabel": "Écrit dès 1141 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2004,
+              "to": 2004,
+              "label": "Décrit en 2004"
+            },
+            "era": "modern",
+            "statement": "Le nom Al-Misrati est un nom pris à une ville, Misrata, comme Al-Zlitini ou Al-Awjali. Faraj Najem note que les tribus sédentaires des villes libyennes, qu'il appelle Hudur, se rattachent volontiers à leur ville et en prennent le nom comme nom de famille, alors que c'est rare chez les Bédouins, qui gardent le nom de leur tribu.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Tribe, Islam and State in Libya: Analytical Study of the Roots of the Libyan Tribal Society and Interaction up to the Qaramanli Rule (1711-1835)",
+                "author": "Faraj Najem",
+                "year": 2004,
+                "url": "https://westminsterresearch.westminster.ac.uk/download/926d7d076329ed28eba6c6893c17630fb1ec633a9e37b4a2ac4ea32394f484ed/19198678/Najem.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 115 ; p. 265",
+                "notes": "Thèse de doctorat, Université de Westminster, 2004, lue le 14 octobre 2026 dans le dépôt WestminsterResearch. Page 115 : certaines tribus libyennes tirent leur nom d'une ville, d'un pays ou d'un métier, par exemple « Misräti (Misräta) ». Page 265 : les Hudur « used towns' names as their surnames such as al-Zlitini, al-Misräti, al-Ghdämsi, and al-Awjali », alors qu'il est rare de trouver un Bédouin nommé d'après une ville."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2004,
+              "to": 2004,
+              "label": "Décrit en 2004"
+            },
+            "era": "modern",
+            "statement": "Le nom Al-Misrati est aussi un nom de famille tunisien. Faraj Najem explique que les Libyens installés en Tunisie y ont donné des noms libyens à des lieux, et que ces noms sont devenus des noms de famille tunisiens, dont al-Misrati.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Tribe, Islam and State in Libya: Analytical Study of the Roots of the Libyan Tribal Society and Interaction up to the Qaramanli Rule (1711-1835)",
+                "author": "Faraj Najem",
+                "year": 2004,
+                "url": "https://westminsterresearch.westminster.ac.uk/download/926d7d076329ed28eba6c6893c17630fb1ec633a9e37b4a2ac4ea32394f484ed/19198678/Najem.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 216",
+                "notes": "Thèse de doctorat, Université de Westminster, 2004, lue le 14 octobre 2026 dans le dépôt WestminsterResearch. Page 216 : « Those Libyan names are household Tunisian until the present day, such as al-Taräbulsi, al-Tarhnni, al-Wirfilli, al-Ghriyani, al-Firjani, al-Rayyäni, al-Ghidämsi, al-Misräti [...] »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Proposé en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Al-Misrati viendrait de la ville ou du district de Misrata, dans le nord-ouest de la Libye, selon Vera von Falkenhausen, Nadia Jamil et Jeremy Johns, qui lisent ainsi la nisba al-Miṣrātī d'un registre de 1141.",
+            "hypothesisGroup": "origine du nom Al-Misrati",
+            "sources": [
+              {
+                "title": "The Twelfth-century documents of St. George’s of Tròccoli (Sicily)",
+                "author": "Vera von Falkenhausen, Nadia Jamil et Jeremy Johns",
+                "year": 2016,
+                "url": "https://ora.ox.ac.uk/objects/uuid%3A91e386fb-56e6-4c10-9a71-514b875c1eb6/files/mb4cb97b8fc65dc94bb6b8c19332b4614",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 47 ; p. 81",
+                "notes": "Journal of Arabic and Islamic Studies, vol. 16, 2016, p. 1-84, lu en texte intégral le 14 octobre 2026 dans l'Oxford Research Archive. Page 81, note 411 : « Al-Miṣrātī is a nisba indicating a connection either with the town or district of Miṣrāta in northwest Libya, or with the Miṣrāta section of the Berber confederation of Hawwāra ». Page 47 : même remarque pour les deux hommes qui portent ce nom dans le registre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Proposé en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Al-Misrati viendrait plutôt de la section Misrata de la confédération berbère des Hawwara, selon les mêmes auteurs, qui ne choisissent pas entre les deux lectures.",
+            "hypothesisGroup": "origine du nom Al-Misrati",
+            "sources": [
+              {
+                "title": "The Twelfth-century documents of St. George’s of Tròccoli (Sicily)",
+                "author": "Vera von Falkenhausen, Nadia Jamil et Jeremy Johns",
+                "year": 2016,
+                "url": "https://ora.ox.ac.uk/objects/uuid%3A91e386fb-56e6-4c10-9a71-514b875c1eb6/files/mb4cb97b8fc65dc94bb6b8c19332b4614",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 47 ; p. 81",
+                "notes": "Journal of Arabic and Islamic Studies, vol. 16, 2016, p. 1-84, lu en texte intégral le 14 octobre 2026 dans l'Oxford Research Archive. Page 81, note 411 : « Al-Miṣrātī is a nisba indicating a connection either with the town or district of Miṣrāta in northwest Libya, or with the Miṣrāta section of the Berber confederation of Hawwāra ». Page 47 : même remarque pour les deux hommes qui portent ce nom dans le registre."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1141,
+              "to": 1141,
+              "label": "Novembre 1141"
+            },
+            "statement": "Le nom Al-Misrati apparaît par écrit sous la forme al-Miṣrātī dans un registre arabe de novembre 536 de l'hégire (1141), qui nomme les paysans musulmans du monastère Saint-Georges de Tròccoli, en Sicile normande. Il y figure deux fois : Aḥmad, fils adoptif ou beau-fils d'un al-Miṣrātī, et Abū ʿAbd Allāh al-Miṣrātī. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "al-Miṣrātī",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Aḥmad, fils adoptif ou beau-fils d'un al-Miṣrātī",
+                "role": "figure dans le registre"
+              },
+              {
+                "name": "Abū ʿAbd Allāh al-Miṣrātī",
+                "role": "figure dans le registre"
+              }
+            ],
+            "sources": [
+              {
+                "title": "The Twelfth-century documents of St. George’s of Tròccoli (Sicily)",
+                "author": "Vera von Falkenhausen, Nadia Jamil et Jeremy Johns",
+                "year": 2016,
+                "url": "https://ora.ox.ac.uk/objects/uuid%3A91e386fb-56e6-4c10-9a71-514b875c1eb6/files/mb4cb97b8fc65dc94bb6b8c19332b4614",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 7 ; p. 75 ; p. 81 ; p. 84",
+                "notes": "Journal of Arabic and Islamic Studies, vol. 16, 2016, p. 1-84, lu en texte intégral le 14 octobre 2026 dans l'Oxford Research Archive. Page 7 : le document 4 est un registre arabe (jarīda) des paysans musulmans de Saint-Georges, daté de novembre 536 de l'hégire, indiction V (1141). Page 81, ligne 9d : « Aḥmad rabīb al-Miṣrātī » (rabīb : fils adoptif ou beau-fils). Page 84, ligne 12d : « Abū ʿAbd Allāh al-Miṣrātī ». Les éditeurs rapprochent ce nom de Misrata, en Libye, ou des Hawwara."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Misrati",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme sans l'article, que l'on trouve aussi chez les auteurs qui écrivent sur la Libye.",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2004,
+              "to": 2004,
+              "label": "Décrit en 2004"
+            },
+            "era": "modern",
+            "statement": "Le nom Misrati est la forme sans article de Al-Misrati. Faraj Najem l'écrit Misräti et le range parmi les noms de tribus libyennes tirés d'une ville, ici Misrata.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Tribe, Islam and State in Libya: Analytical Study of the Roots of the Libyan Tribal Society and Interaction up to the Qaramanli Rule (1711-1835)",
+                "author": "Faraj Najem",
+                "year": 2004,
+                "url": "https://westminsterresearch.westminster.ac.uk/download/926d7d076329ed28eba6c6893c17630fb1ec633a9e37b4a2ac4ea32394f484ed/19198678/Najem.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 115",
+                "notes": "Thèse de doctorat, Université de Westminster, 2004, lue le 14 octobre 2026 dans le dépôt WestminsterResearch. Page 115 : certaines tribus libyennes tirent leur nom de villes, de pays ou de métiers, par exemple « Misräti (Misräta), Ghiryäni (Ghiryän), Zwäri (Zwära) »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

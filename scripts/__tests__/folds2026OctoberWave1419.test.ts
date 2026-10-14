@@ -327,6 +327,21 @@ describe("references repointed", () => {
     );
     expect(JSON.stringify(fact)).not.toMatch(/Wonnin est le nom/);
   });
+
+  // @req REQ-178
+  it("names who proposes each Godié origin, as the fiche does", async () => {
+    const { DID_YOU_KNOW_FACTS } = await import("@/lib/home/didYouKnowFacts");
+    const fact = DID_YOU_KNOW_FACTS.find(
+      (entry: { id: string }) => entry.id === "wonnin-godie"
+    );
+    const text = fact?.body.join(" ") ?? "";
+
+    expect(text).toContain("Alfred Schwartz");
+    expect(text).toContain("Kouassi Lowa");
+    expect(text).toContain("Westermann");
+    // No source opened says what maps or censuses write.
+    expect(text).not.toMatch(/cartes|recensements/);
+  });
 });
 
 describe("source titles, one title and one locator", () => {

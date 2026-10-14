@@ -231,3 +231,11 @@
 /* Scaled frame used by previews: shows a card at the size a person reads it. */
 .ec-frame { position: relative; overflow: hidden; flex: none; background: #000; }
 .ec-frame > .ec-card { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+
+/* ---------- 1.3.0: the series band ---------- */
+/* One component for the seven series: only its words change, never its colour, size or place. */
+.ec-series { position: absolute; left: 0; top: 0; z-index: 4; width: 1080px; height: 72px; padding: 0 72px; box-sizing: border-box; display: flex; align-items: center; background: var(--ground, #15100b); border-bottom: 2px solid var(--rule, #4a3c2c); }
+.ec-series-text { max-width: 936px; font: 800 28px/34px var(--font-text, "Nunito Sans", sans-serif); letter-spacing: .02em; color: var(--ink, #f3e9da); }
+.ec-series-sep { color: var(--ink-faint, #a8977f); }
+.ec-series-episode { color: var(--accent, #e8b96a); white-space: nowrap; }
+.ec-has-series .ec-demo { top: 100px; }

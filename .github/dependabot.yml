@@ -49,6 +49,12 @@ updates:
       - dependency-name: "typescript"
         update-types:
           - "version-update:semver-major"
+      # The social card renderer is verified against one browser build
+      # (`social/renderer/runtime.json`); its reference images are byte-level
+      # evidence. A grouped bump to 1.64.0 (#1682) silently broke 16 of the
+      # renderer's 21 tests. Upgrading Playwright takes a fidelity review, so
+      # it is done by hand, never by a weekly group.
+      - dependency-name: "@playwright/test"
     groups:
       production-minor-and-patch:
         dependency-type: production

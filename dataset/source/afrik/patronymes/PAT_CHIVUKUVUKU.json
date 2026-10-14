@@ -11,7 +11,10 @@
     {
       "spelling": "Chivukuvuku",
       "attestations": [
-        { "countryId": "AGO", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "AGO",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -75,5 +78,66 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Chivukuvuku est un nom de famille d'Angola, celui d'Abel Chivukuvuku, responsable de l'UNITA dans les années 1980. On ne sait pas avec certitude ce que veut dire ce nom ni d'où il vient : aucune source que nous avons lue ne l'explique.",
+    "names": [
+      {
+        "nameText": "Chivukuvuku",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "por",
+        "namedBy": null,
+        "shortLine": "Un nom de famille d'Angola, dont l'origine n'est pas connue.",
+        "periodLabel": "Écrit dès 1988",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine et sens"
+            },
+            "era": "modern",
+            "statement": "Le nom Chivukuvuku est un nom de famille angolais, celui d'Abel Chivukuvuku, que la presse lisboète de 1988 présente comme un haut responsable de l'UNITA. Les sources lues ne disent pas d'où vient ce nom ni ce qu'il veut dire ; on ne sait pas avec certitude d'où il vient.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Africa (Sub-Sahara), JPRS-SSA-88-022",
+                "author": "Joint Publications Research Service",
+                "year": 1988,
+                "url": "https://archive.org/details/jprs-report_jprs-ssa-88-022",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 1",
+                "notes": "Recueil du service américain de traduction et de reprise de presse, 12 mai 1988, lu sur l'exemplaire numérisé d'archive.org. À la page 1 de la rubrique Angola, une brève d'INFORMAFRICA (Lisbonne, mars 1988, p. 5), « UNITA Faces Lisbon Dissidents », dit : « the visit here last month by a senior UNITA official Lt-Col Abel Chivukuvuku ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1988,
+              "to": 1988,
+              "label": "Mars 1988"
+            },
+            "era": "modern",
+            "statement": "Le nom Chivukuvuku apparaît dans une brève de la revue INFORMAFRICA, publiée à Lisbonne en mars 1988 et reprise en anglais par le service américain JPRS, qui parle de la visite à Lisbonne du lieutenant-colonel Abel Chivukuvuku, responsable de l'UNITA. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand la presse l'a écrit, pas depuis quand la famille le porte.",
+            "formAsWritten": "Chivukuvuku",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Africa (Sub-Sahara), JPRS-SSA-88-022",
+                "author": "Joint Publications Research Service",
+                "year": 1988,
+                "url": "https://archive.org/details/jprs-report_jprs-ssa-88-022",
+                "tier": "referenced",
+                "source_kind": "press",
+                "page": "p. 1",
+                "notes": "Recueil du service américain de traduction et de reprise de presse, 12 mai 1988, lu sur l'exemplaire numérisé d'archive.org. À la page 1 de la rubrique Angola, une brève d'INFORMAFRICA (Lisbonne, mars 1988, p. 5), « UNITA Faces Lisbon Dissidents », dit : « the visit here last month by a senior UNITA official Lt-Col Abel Chivukuvuku ». Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

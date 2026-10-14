@@ -44,7 +44,7 @@ self-name: « Vous avez cherché Peul. Ce peuple se nomme lui-même Fulɓe. »
 ## Blocks, mobile 430 px, in order
 
 1. Search field with the query kept in it; lens bar (« Histoire du nom »
-   default, then Tout, Shorts, Récits, Jeux, Fiches). Unchanged.
+   default, then Tout, Shorts, Récits, Jeux, Fiches, as on the board). Unchanged.
 2. Eyebrow « D'où vient ce nom », the name large, then the one-sentence verdict.
 3. Name chips, the searched name first; one name open at a time.
 4. The timeline for the open name: left thread, period set large at the top of
@@ -53,9 +53,11 @@ self-name: « Vous avez cherché Peul. Ce peuple se nomme lui-même Fulɓe. »
 5. **The sources speak** (new): the same accounts regrouped by source type.
 6. Closing band: silences, conviction, thesis slot, invitation to correct.
 7. **Next step**: two related *names* chosen from the subject's own data
-   (for `peul`: *Toucouleur*, the name with the most accounts, and the language
-   name *Fulfulde*), each with one line saying why. Check that the target
-   fiche exists before drawing it.
+   (for `peul`: *Wolof*, because the first account says the French form comes from
+   the Wolof, and *Atlantique*, the language family of the Peul), each with one
+   line saying why. Drawn as links to the result pages « wolof » and
+   « atlantique »; no target board is needed. *Toucouleur* is not offered: it is
+   already a chip of the same subject. There is no *Fulfulde* fiche in the corpus.
 
 ## States to draw (mobile first, then 768 and 1280)
 

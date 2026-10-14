@@ -191,7 +191,9 @@
         "notes": "Inscription au patrimoine culturel immatériel à la demande du Mali. La description inscrite énumère sept chapitres."
       },
       {
-        "title": "Koelle, Sigismund Wilhelm (1854) – Polyglotta Africana. Church Missionary House, Londres",
+        "title": "Polyglotta Africana, jeu de données Lexibank",
+        "author": "Sigismund Wilhelm Koelle",
+        "year": 1854,
         "url": "https://github.com/lexibank/polyglottaafricana",
         "tier": "referenced",
         "source_kind": "linguistic_reference",

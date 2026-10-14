@@ -6,7 +6,7 @@
   },
   "id": "PAT_LUMBALA",
   "nameMain": "Lumbala",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Lumbala",
@@ -27,7 +27,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -92,11 +92,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "Aucune source ne précise si ce nom relève d'un nom de clan, d'un nom personnel ou d'un autre système chez les Mbunda ; la valeur retenue est un choix par défaut, non une donnée vérifiée."
-    },
-    {
-      "fieldPath": "designatedSocialUnit",
-      "reason": "Aucune source ne rattache ce nom à un clan, une lignée ou une autre unité sociale précise."
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de personne porté chez les Luba du Kasaï. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "transmissionMode",

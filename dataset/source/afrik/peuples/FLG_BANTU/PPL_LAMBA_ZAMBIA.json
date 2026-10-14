@@ -1,0 +1,343 @@
+{
+  "id": "PPL_LAMBA_ZAMBIA",
+  "nameMain": "Lamba",
+  "languageFamilyId": "FLG_BANTU",
+  "currentCountries": ["ZMB", "COD"],
+  "classificationStatus": "reconstructive",
+  "content": {
+    "appellations": {
+      "mainName": "Lamba",
+      "selfAppellation": "Lamba",
+      "exonyms": ["Lala-Lamba", "Ilamba", "Aramba"],
+      "originOfExonyms": "Lamba voudrait dire en langue Lamba l'acte de s'humilier, ce qui témoignerait du caractère généralement humble de ce peuple. Ilamba designe le territoire Lamba (Lambaland). Aramba est une forme ancienne utilisee dans les sources portugaises de 1798 (voyage de Lacerda). Le terme Lala-Lamba est utilise dans la litterature ethnohistorique pour designer la relation etroite et la zone de contact entre Lala et Lamba.",
+      "whyProblematic": "Lala-Lamba est une denomination relationnelle/ethnohistorique plutot qu'une identite ethnique propre. Les Lamba sont un peuple distinct des Lala, bien que partageant des origines communes et des zones de contact. La classification Lala-Lamba renvoie aux relations historiques complexes entre ces deux groupes, notamment dans la region de Bukanda sur le Pedicule de Shaba.",
+      "contemporaryUsage": "Lamba est l'appellation usuelle pour ce peuple. Lala-Lamba est utilise dans les etudes academiques d'ethnohistoire pour decrire les interactions et l'histoire partagee des deux groupes dans la region transfrontaliere Zambie-RDC.",
+      "linguisticFamily": "FLG_BANTU",
+      "ethnoLinguisticGroup": "Bantu du Centre, groupe Lamba-Lima (M.54)",
+      "historicalRegion": "Province du Copperbelt, Province Centrale, Province du Nord-Ouest (Zambie) ; Province du Katanga (RDC)",
+      "currentCountries": ["ZMB", "COD"]
+    },
+    "ethnicities": ["Lamba", "Ilamba"],
+    "origins": {
+      "ancientOrigins": "Les Lamba sont un peuple bantou dont les origines remontent au royaume Luba-Lunda du Congo. Ils font partie des peuples bantous centraux qui ont migre vers le sud au cours du premier millenaire. La mythologie Lamba attribue leur origine au chef mythique Chipimpi, dont les recits sont etroitement lies a ceux des Lala et d'autres peuples voisins.",
+      "formationPeriod": "Les Lamba sont mentionnes pour la premiere fois dans des sources historiques ecrites en 1798 (Lacerda). Avant la periode coloniale de la fin du 19e siecle, peu d'informations sont disponibles. Leur identite distincte s'est consolidee dans la region du Lambaland (Ilamba), principalement sur le Copperbelt et dans les zones adjacentes.",
+      "migrationRoutes": [
+        "Origine Luba-Lunda (Kola, RDC actuelle)",
+        "Migration vers le sud-est vers le plateau du Katanga/Shaba",
+        "Installation dans la region du Copperbelt (Zambie actuelle)",
+        "Extension vers la Province du Nord-Ouest et la Province Centrale de Zambie",
+        "Presence dans la Province du Katanga (RDC) autour de Likasi, Lubumbashi et Kipushi"
+      ],
+      "historicalSettlementZones": [
+        "Province du Copperbelt, Zambie (zone principale)",
+        "Province du Nord-Ouest, Zambie",
+        "Province Centrale, Zambie",
+        "Province du Katanga (Likasi, Lubumbashi, Kipushi), RDC"
+      ],
+      "unificationsOrDivisions": "Les Lamba sont gouvernes par un chef supreme (paramount chief) : Mushili, qui est le chef supreme des Lamba tant en Zambie qu'en RDC. Les Lamba se divisent entre ceux de la Province du Copperbelt (sous Mushili), ceux de la Province du Nord-Ouest (sous Senior Chief Kalilele) et ceux de la Province Centrale. Les Lamba du Katanga (RDC) reconnaissent egalement l'autorite de Mushili comme chef suprematrice.",
+      "externalInfluences": "Le roi Yeke Msiri (de Bunkeya) a conquis et asservi les Lamba et les peuples voisins dans le Katanga dans les annees 1870. La lignee Mushili des chefs Lala (clan Bena Nyendwa) a conquis les Lamba de la region de Bukanda (Zambie-RDC) au milieu du 19e siecle avant que les Belges ne retablissent la frontiere vers 1900. L'exploitation miniere du Copperbelt au 20e siecle a profondement transforme la societe Lamba.",
+      "majorHistoricalEvents": "21 septembre 1798 : Premier mention des Lamba dans le journal de l'explorateur portugais Francisco de Lacerda, notant leur commerce de cuivre et d'ivoire avec la Lunda de Kazembe. Milieu 19e siecle : Conquete des Lamba de Bukanda par la lignee Mushili Lala. Annees 1870 : Conquete et asservissement des Lamba par le roi Yeke Msiri a Bunkeya. Vers 1900 : Les Belges retablissent la riviere Munyengashi comme frontiere ethnique. 20e siecle : Essor minier du Copperbelt, urbanisation massive des populations Lamba."
+    },
+    "organization": {
+      "traditionalPoliticalSystem": "Les Lamba sont gouvernes par un chef supreme, Mushili, qui est le paramount chief des Lamba en Zambie et en RDC. Dans la Province du Copperbelt, les chefs principaux incluent Mushili, Nkana (groupe chef), Nkambo, Chiwala, Shimukunami, Shibuchinga, Lumpuma, Fungulwe, Ndubeni, Mwinuna, Lesa, Malembeka, Kalunkumya et Machiya. Dans la Province du Nord-Ouest, le chef principal est Kalilele. Dans la Province Centrale : Nkole, Chitina, Chikupili, Mukonchi. En RDC : huit chefs Lamba dans la province du Katanga.",
+      "clanOrganization": "Les Lamba sont organises en clans matrilineaires exogames partages avec les peuples voisins (Lala, Aushi, Bemba, Bisa, etc.). Le clan royal Lamba est le Bena Mishishi (clan des Cheveux/Hair clan), appele aussi Bena Mishishi ya mutwe (cheveux de la tete). Ce clan est lie par des joking relationships au clan Bena Nyendwa (Vulva) des Lala, refletant des competitions historiques de legitimite.",
+      "ageClassSystems": null,
+      "roleOfLineages": "La descendance, le statut social, l'heritage et la succession sont matrilineaires. La lignee Mushili detient le pouvoir supreme. Les 299 mariages enregistres par Boswell chez les Lamba et Lima montrent 15 conjoints du clan Hair parmi les chefs Lamba, temoignant de strategies matrimoniales dynastiques.",
+      "religiousAuthority": "Les Lamba pratiquent traditionnellement le culte des ancetres et la veneration des esprits. Quatre ceremonies traditionnelles reconnues en Lambaland : Chabalankata (chef supreme Mushili), Ukwilimuna (chef Malembeka), Nsengele kunuka (chef Machiya) et Ukupupa (senior chief Kalilele). Le christianisme est majoritaire aujourd'hui."
+    },
+    "languages": {
+      "mainLanguage": "Lamba",
+      "isoCodes": ["lam"],
+      "dialects": ["Lamba", "Lima"],
+      "vehicularRole": "Le Lamba (ISO lam, Glottolog lamb1271, code Guthrie M.54) est une langue bantoue stable parlee en Zambie et en RDC. Les deux principaux dialectes reconnus sont le Lamba et le Lima. On compte environ 210 000 locuteurs natifs dans le nord de la Zambie et la frange sud de la RDC. Le Bemba sert de lingua franca dans la region du Copperbelt."
+    },
+    "culture": {
+      "majorRites": "Quatre ceremonies traditionnelles reconnues en Lambaland : Chabalankata (sous le chef supreme Mushili), Ukwilimuna (sous le chef Malembeka), Nsengele kunuka (sous le chef Machiya) et Ukupupa (sous le senior chief Kalilele). Ces ceremonies marquent les cycles agricoles, les passages saisonniers et le renforcement de l'identite communautaire.",
+      "symbols": "Le terme Lamba (l'acte de s'humilier) est lui-meme un symbole de l'identite culturelle de ce peuple, connu pour sa nature humble. Le clan Bena Mishishi (clan des Cheveux) est le symbole de l'autorite chiefly Lamba. La region Ilamba (Lambaland) est un symbole geographique de l'identite Lamba, s'etendant a travers les frontieres Zambie-RDC.",
+      "artsAndMusic": "Les Lamba partagent les traditions artistiques bantoues du Copperbelt : musique de tambours, danses ceremoniales, chants traditionnels et narration orale. L'artisanat comprend le travail du cuivre (historiquement important dans la region), la poterie et le tissage. Le cuivre et l'ivoire etaient les principaux articles d'echange commerciaux des Lamba au 18e-19e siecle.",
+      "spiritualities": "Les Lamba pratiquent le culte des ancetres avec des ceremonies specifiques maintenues par chaque chefferie. La relation joking (amatuka) entre clans Hair Lamba et Vulva Lala reflete une theologie des origines partagee mais competitive. Le christianisme est aujourd'hui predominant dans la communaute Lamba. Les pratiques ancestrales coexistent avec les croyances chretiennes."
+    },
+    "historicalRole": {
+      "kingdomsOrChiefdoms": "Les Lamba sont gouvernes par un paramount chief (Mushili), avec une structure decentralisee de nombreuses chefferies locales dans les provinces du Copperbelt, du Nord-Ouest, de la Province Centrale de Zambie et du Katanga en RDC. Le territoire Lamba ou Ilamba/Lambaland chevauche les deux cotes du Pedicule de Shaba (frontiere Zambie-RDC).",
+      "relationsWithNeighbors": "Les Lamba bordent les Ushi au nord, les Lala au nord-ouest, les Lenje au nord (limite sud de Ilamba), les Kaonde a l'ouest et les Lima au sud. Ils ont entretenu des relations commerciales avec la Lunda de Kazembe et les Nsenga. Les joking relationships claniques (balwani) existent avec les Lala, Aushi et autres peuples partageant le systeme de clans matrilineaires.",
+      "conflictsOrAlliances": "Au milieu du 19e siecle, la lignee Mushili des chefs Lala a conquis les Lamba de la region de Bukanda, a l'est de la riviere Munyengashi, integrant des villages Lamba et Lala dans une zone mixte. Dans les annees 1870, le roi Yeke Msiri a conquis et asservi les Lamba et peuples voisins du Katanga. La chef Lala Ngosa Mupeta (Nabayeke, Mere du Yeke) a epouse un Yeke du clan Chevre, entrainant la perte de sa chefferie au clan Hair Lamba (Mumbilima, aujourd'hui chef Kumbwa). Vers 1900, les Belges ont retabli la riviere Munyengashi comme frontiere apres une guerre du chef Lala.",
+      "diaspora": "L'exploitation miniere du Copperbelt a partir du 20e siecle a attire d'importantes populations Lamba vers les centres urbains de Kitwe, Ndola, Mufulira et Chingola. Cette urbanisation a transforme l'identite Lamba en milieu urbain multiethique. Des Lamba se trouvent egalement a Lubumbashi et Likasi en RDC."
+    },
+    "demography": {
+      "totalPopulation": 481000,
+      "referenceYear": 2025,
+      "source": "Joshua Project (2025) – Lamba : 436 000 en Zambie + 45 000 en RDC. Zambia 2010 census : Lamba 2,1% de la population.",
+      "distributionByCountry": [
+        {
+          "country": "ZMB",
+          "population": 436000,
+          "percentage": 91
+        },
+        {
+          "country": "COD",
+          "population": 45000,
+          "percentage": 9
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Boswell, D. – Chipimpi, Vulgar Clans, and Lala-Lamba Ethnohistory, Furman University, 2008",
+        "url": "https://scholarexchange.furman.edu/cgi/viewcontent.cgi?article=1001&context=ant-publications",
+        "tier": "referenced",
+        "source_kind": "academic"
+      },
+      {
+        "title": "Joshua Project – Zambia People Groups, Lamba",
+        "url": "https://joshuaproject.net/countries/ZA",
+        "tier": "unverified",
+        "source_kind": "missionary_database"
+      },
+      {
+        "title": "Ethnologue – Lamba Language LAM",
+        "url": "https://www.ethnologue.com/language/lam/",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
+      },
+      {
+        "title": "Lamba language – Chalo Chatu, Zambia Encyclopedia",
+        "url": "http://chalochatu.org/Lamba_language",
+        "tier": "unverified",
+        "source_kind": "encyclopedia"
+      },
+      {
+        "title": "AfricaBib – Chipimpi, vulgar clans, and Lala-Lamba ethnohistory",
+        "url": "https://www.africabib.org/rec.php?RID=326712321",
+        "tier": "referenced",
+        "source_kind": "repository"
+      }
+    ]
+  },
+  "nameHistory": {
+    "summary": "Le nom Lamba désigne un peuple bantou du Copperbelt, en Zambie, et du sud du Katanga, en République démocratique du Congo, qui se nomme lui-même Lamba et appelle son pays Ilamba. On ne sait pas avec certitude d'où vient le nom Lamba : les sources lues ne l'expliquent pas. Le nom composé Lala-Lamba vient d'un manuel de langue de 1908 et ne désigne pas un peuple à part. La plus ancienne trace de Lamba date de 1798, sous la forme Arambas.",
+    "names": [
+      {
+        "nameText": "Lamba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lam",
+        "namedBy": null,
+        "shortLine": "Le nom d'un peuple du Copperbelt zambien et du sud du Katanga ; la plus ancienne trace écrite date de 1798.",
+        "periodLabel": "Écrit depuis 1798 ; en usage aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Avant le nom, selon les récits lamba"
+            },
+            "era": "polity",
+            "statement": "On parle alors, dans les récits que les vieux Lamba font à Clement Doke, d'un pays que Luchyele aurait mis en ordre, où vivaient peu de gens, sans chef. Plus tard serait venu de l'ouest un homme supérieur, Chipimpi, devenu le premier chef lamba.",
+            "before": true,
+            "sources": [
+              {
+                "title": "Récits lamba sur Luchyele et Chipimpi, recueillis par Clement M. Doke dans The Lambas of Northern Rhodesia",
+                "author": "Clement M. Doke",
+                "year": 1931,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283446",
+                "tier": "unverified",
+                "source_kind": "oral_tradition",
+                "page": "p. 30-31",
+                "narrative": "Luchyele et Chipimpi, les débuts de l'histoire lamba",
+                "carrier": "De vieux Lamba interrogés par Clement M. Doke",
+                "place": "Pays lamba (Ilamba), Rhodésie du Nord",
+                "notes": "Récit recueilli par l'auteur auprès de vieux Lamba et publié dans son livre ; lu le 12 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1798,
+              "to": 1798,
+              "label": "21 septembre 1798"
+            },
+            "era": "polity",
+            "statement": "Le nom Lamba apparaît par écrit, sous la forme proche Arambas, dans le journal du Portugais Francisco de Lacerda, le 21 septembre 1798 : on lui assure qu'au sud vivent « les Arambas et les Ambos, amis paisibles du Cazembe », dans la traduction de Burton. Clement Doke y reconnaît les Lamba et y voit leur plus ancienne mention. C'est la plus ancienne trace de ce nom que le projet connaît. Le peuple existait déjà avant elle.",
+            "formAsWritten": "Arambas",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lands of Cazembe : Lacerda's Journey to Cazembe in 1798",
+                "author": "Francisco José de Lacerda e Almeida et Francisco João Pinto, traduit par Richard F. Burton",
+                "year": 1873,
+                "url": "https://archive.org/details/cu31924081259271",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 99",
+                "notes": "Londres, John Murray, 1873 ; lu dans l'exemplaire numérisé d'Internet Archive le 12 octobre 2026. Entrée du journal du 21 septembre 1798, dans la traduction anglaise de Burton."
+              },
+              {
+                "title": "The Lambas of Northern Rhodesia: A Study of their Customs and Beliefs",
+                "author": "Clement M. Doke",
+                "year": 1931,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283446",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 30",
+                "notes": "Londres, George G. Harrap & Co., 1931 ; lu dans l'exemplaire numérisé d'Internet Archive le 12 octobre 2026. L'auteur, missionnaire baptiste, travaille chez les Lamba de 1914 à 1921."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1908,
+              "to": 1908,
+              "label": "1908"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lamba désigne en 1908, chez le linguiste A. C. Madan, l'un des trois peuples du district où l'on parle le lala. Madan le place des deux côtés de la frontière du Congo, des hautes eaux des rivières Lunsenfwa et Kafuwe jusqu'à la Luapula.",
+            "sources": [
+              {
+                "title": "Lala-Lamba Handbook: A Short Introduction to the South-western Division of the Wisa-Lala Dialect of Northern Rhodesia, with Stories and Vocabulary",
+                "author": "A. C. Madan",
+                "year": 1908,
+                "url": "https://archive.org/details/lalalambahandbo00madagoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 4",
+                "notes": "Oxford, Clarendon Press, 1908 ; lu dans l'exemplaire numérisé d'Internet Archive le 12 octobre 2026. L'introduction est signée de Mkushi, Rhodésie du Nord-Ouest, en juillet 1907."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "1931"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lamba désigne chez Clement Doke les gens de langue lamba, qui occupent environ 25 000 milles carrés, en partie en Rhodésie du Nord, en partie dans la pointe sud du Katanga belge. Doke note qu'en lamba un Lamba se dit umulamba.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The Lambas of Northern Rhodesia: A Study of their Customs and Beliefs",
+                "author": "Clement M. Doke",
+                "year": 1931,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283446",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17 et note sur l'orthographe (page non numérotée)",
+                "notes": "Londres, George G. Harrap & Co., 1931 ; lu dans l'exemplaire numérisé d'Internet Archive le 12 octobre 2026. L'auteur, missionnaire baptiste, travaille chez les Lamba de 1914 à 1921."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Lamba est le nom de référence de la langue dans la norme internationale ISO 639-3, sous le code lam. On ne sait pas d'où vient le nom : les sources lues ne l'expliquent pas.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "ISO 639-3, Lamba [lam]",
+                "author": "SIL International, autorité d'enregistrement ISO 639-3",
+                "year": null,
+                "url": "https://iso639-3.sil.org/code/lam",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "notes": "Fiche du code, lue le 12 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ilamba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": "lam",
+        "namedBy": null,
+        "shortLine": "Le nom que les Lamba donnent à leur pays, que les missionnaires appellent Lambaland.",
+        "periodLabel": "Écrit depuis 1931",
+        "accounts": [
+          {
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "1931"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ilamba apparaît par écrit chez Clement Doke : le pays des gens de langue lamba, que les missionnaires appellent Lambaland, est nommé Ilamba par le peuple lui-même, selon lui. C'est la plus ancienne trace de ce nom que le projet connaît. Le pays existait déjà avant elle.",
+            "formAsWritten": "Ilamba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Lambas of Northern Rhodesia: A Study of their Customs and Beliefs",
+                "author": "Clement M. Doke",
+                "year": 1931,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283446",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 17",
+                "notes": "Londres, George G. Harrap & Co., 1931 ; lu dans l'exemplaire numérisé d'Internet Archive le 12 octobre 2026. L'auteur, missionnaire baptiste, travaille chez les Lamba de 1914 à 1921."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Lala-Lamba",
+        "nameStatus": "former",
+        "selfGiven": false,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Le nom d'une langue, venu du titre d'un manuel de 1908, qui réunit le lala et le lamba ; pas celui d'un peuple.",
+        "periodLabel": "Écrit depuis 1908",
+        "accounts": [
+          {
+            "period": {
+              "from": 1908,
+              "to": 1908,
+              "label": "1908"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lala-Lamba apparaît par écrit dans le titre du Lala-Lamba Handbook de A. C. Madan, un manuel de langue de 1908. Madan y écrit que les parlers lala et lamba sont si proches que connaître l'un suffit pour l'autre. Il parle des gens qui parlent le lala-lamba-wisa. Le nom désigne donc un parler et non un peuple. C'est la plus ancienne trace de ce nom que le projet connaît. Les Lala et les Lamba existaient déjà avant elle.",
+            "formAsWritten": "Lala-Lamba",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Lala-Lamba Handbook: A Short Introduction to the South-western Division of the Wisa-Lala Dialect of Northern Rhodesia, with Stories and Vocabulary",
+                "author": "A. C. Madan",
+                "year": 1908,
+                "url": "https://archive.org/details/lalalambahandbo00madagoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "titre, préface et p. 6",
+                "notes": "Oxford, Clarendon Press, 1908 ; lu dans l'exemplaire numérisé d'Internet Archive le 12 octobre 2026. L'introduction est signée de Mkushi, Rhodésie du Nord-Ouest, en juillet 1907."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1931,
+              "to": 1931,
+              "label": "1931"
+            },
+            "era": "colonial",
+            "statement": "Le nom Lala-Lamba figure en 1931 dans une note de Clement Doke, qui rappelle que Madan a traité ensemble le lala et le lamba, deux langues sœurs selon lui. Doke ajoute que le wisa est aussi distinct du lamba que le wemba.",
+            "sources": [
+              {
+                "title": "The Lambas of Northern Rhodesia: A Study of their Customs and Beliefs",
+                "author": "Clement M. Doke",
+                "year": 1931,
+                "url": "https://archive.org/details/in.ernet.dli.2015.283446",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 23, note 1",
+                "notes": "Londres, George G. Harrap & Co., 1931 ; lu dans l'exemplaire numérisé d'Internet Archive le 12 octobre 2026. L'auteur, missionnaire baptiste, travaille chez les Lamba de 1914 à 1921."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

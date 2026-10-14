@@ -6,7 +6,7 @@
   },
   "id": "PAT_EL_SAYED",
   "nameMain": "El Sayed",
-  "nameSystem": "nisba",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "El Sayed",
@@ -28,7 +28,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "other",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -106,12 +106,12 @@
       "reason": "Les recherches exactes « El Sayed homonym surname », « El Sayed homonyme patronyme » et les variantes graphiques de la fiche n’ont pas établi deux origines distinctes et documentées pour la même forme."
     },
     {
-      "fieldPath": "transmissionMode",
-      "reason": "Les recherches « El Sayed transmission patronyme », « El Sayed filiation » et « El Sayed hereditary surname » n’ont pas établi si, ni comment, cette forme se transmet dans les communautés concernées."
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan ni une nisba : les sources lues le disent un titre de respect devenu un nom personnel, puis un nom de famille. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
-      "fieldPath": "designatedSocialUnit",
-      "reason": "Les recherches « El Sayed lignée », « El Sayed clan », « El Sayed tribe » et « El Sayed place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
+      "fieldPath": "transmissionMode",
+      "reason": "Les recherches « El Sayed transmission patronyme », « El Sayed filiation » et « El Sayed hereditary surname » n’ont pas établi si, ni comment, cette forme se transmet dans les communautés concernées."
     }
   ],
   "nameHistory": {
@@ -162,6 +162,7 @@
               "to": 1709,
               "label": "Mort en 1121 de l'hégire (1709)"
             },
+            "era": "polity",
             "statement": "Le nom El Sayed apparaît par écrit dans la traduction française des chroniques d'al-Jabarti, comme titre placé devant un prénom : « El Sayed Hassan effendi, chef des nobles » meurt un vendredi 19 radjab 1121 de l'hégire (1709). Son père, son oncle et son grand-père avaient eu avant lui cette dignité. C'est la plus ancienne trace de ce nom que le projet connaît ; elle montre un titre, pas un nom de famille.",
             "formAsWritten": "El Sayed",
             "birth": true,
@@ -174,7 +175,7 @@
             "sources": [
               {
                 "title": "Merveilles biographiques et historiques, ou Chroniques du cheikh Abd-el-Rahman el Djabarti, tome I",
-                "author": "Abd al-Rahman al-Jabarti, traduit par Chefik Mansour bey, Abdulaziz Kalil bey, Gabriel Nicolas Kalil bey et Iskender Ammoun effendi",
+                "author": "Abd el-Rahman el-Djabarti ; traduction de Chefik Mansour bey, Abdelaziz Kalil bey, Gabriel Nicolas Kalil bey et Iskender Ammoun effendi",
                 "year": 1888,
                 "url": "https://archive.org/details/merveillesbiogra01jaba",
                 "tier": "referenced",

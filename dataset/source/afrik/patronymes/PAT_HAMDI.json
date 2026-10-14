@@ -6,7 +6,7 @@
   },
   "id": "PAT_HAMDI",
   "nameMain": "Hamdi",
-  "nameSystem": "nisba",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Hamdi",
@@ -23,13 +23,13 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "other",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
     "linguisticReconstructions": [
       {
-        "claim": "La notice contributive classe Hamdi comme un nom de famille arabe maghrébin dérivé du nom personnel Hamdi et donne la graphie حمدي. Faute de source plus forte propre à cette fiche, cette proposition reste non vérifiée.",
+        "claim": "La notice contributive classe Hamdi comme un nom de famille arabe, tiré du prénom Hamdi, et donne la graphie حمدي. Elle ne dit rien d'un pays ni du Maghreb. Faute de source plus forte propre à cette fiche, cette proposition reste non vérifiée.",
         "claimStatus": "claimed",
         "sourceRefs": ["btn-surname-hamdi"]
       }
@@ -73,7 +73,7 @@
       "url": "https://surnames.behindthename.com/name/hamdi/submitted",
       "tier": "unverified",
       "source_kind": "community",
-      "notes": "Notice contributive consultée le 2 septembre 2026 et conservée au niveau non vérifié. Elle classe Hamdi comme nom de famille maghrébin dérivé du nom personnel Hamdi et fournit la graphie حمدي. Elle ne documente ni un lignage ni une règle de transmission."
+      "notes": "Notice contributive consultée le 2 septembre 2026 et conservée au niveau non vérifié. Elle classe Hamdi comme nom de famille arabe, tiré du prénom Hamdi, et fournit la graphie حمدي, sans nommer de pays. Elle ne documente ni un lignage ni une règle de transmission."
     }
   ],
   "gaps": [
@@ -111,15 +111,11 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "Les sources consultées décrivent la graphie « Hamdi » sans établir assez précisément le système dénominatif ; le classement comme nisba reste donc provisoire."
+      "reason": "Aucune source consultée n'en fait un nom de clan ni une nisba : les sources lues le disent un nom de famille tiré d'un prénom arabe. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "transmissionMode",
       "reason": "Les recherches « Hamdi transmission patronyme », « Hamdi filiation » et « Hamdi hereditary surname » n'ont pas établi si, ni comment, cette forme se transmet dans les communautés africaines concernées."
-    },
-    {
-      "fieldPath": "designatedSocialUnit",
-      "reason": "Les mêmes recherches n'ont pas permis de déterminer si « Hamdi » désigne un individu, une lignée, un clan, une caste, une classe d'âge ou un établissement dans le contexte précis de la fiche."
     }
   ],
   "nameHistory": {

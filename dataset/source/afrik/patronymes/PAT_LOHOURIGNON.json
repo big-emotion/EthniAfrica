@@ -97,10 +97,10 @@
   "sources": [
     {
       "sourceKey": "tourisme-ci-2021-loroungnon",
-      "title": "Découverte : signification des noms bété (Partie 1)",
+      "title": "Découverte : signification des noms bété (partie 1)",
       "url": "https://www.facebook.com/tourismecotedivoire.ci/posts/d%C3%A9couverte-signification-des-noms-b%C3%A9t%C3%A9-partie-1-drogba-la-clameur-une-d%C3%A9couverte/3574963495937695/",
       "tier": "unverified",
-      "source_kind": "government",
+      "source_kind": "community",
       "notes": "Publication du 21 juin 2021 sur la page Facebook vérifiée de l'organisme ivoirien de tourisme. Elle attribue à la graphie Loroungnon le sens « l'étranger, celui qui est de passage » et indique elle-même s'appuyer uniquement sur un ouvrage intitulé « Les ethnies de la Côte d'Ivoire et d'Afrique », sans en donner l'auteur, l'éditeur ni l'année ; cette référence reste donc introuvable et impossible à vérifier de façon indépendante."
     },
     {
@@ -129,7 +129,7 @@
     },
     {
       "sourceKey": "allafrica-2006-lohourignon",
-      "title": "Côte d'Ivoire : le domicile de Maurice Lohourignon cambriolé",
+      "title": "Côte d'Ivoire : Le domicile de Maurice Lohourignon cambriolé",
       "url": "https://fr.allafrica.com/stories/200607190630.html",
       "tier": "referenced",
       "source_kind": "press",

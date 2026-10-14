@@ -105,11 +105,17 @@ export function validateInput(data, mode = "final", version) {
         "Folio order does not match sequence"
       );
     }
-    if (mode === "final")
+    if (mode === "final") {
       required(
         !Object.hasOwn(c, "demo"),
         "Demo content cannot be exported as final"
       );
+      // The 1.3.0 models mark unfilled image slots with `a-trouver-*.png`.
+      required(
+        !/(^|\/)a-trouver-[^/]*$/.test(c.image?.src || ""),
+        `Mock-up slot « image à trouver » cannot be exported as final: ${c.id}`
+      );
+    }
     required(
       c.type === "dated"
         ? c.date && nonempty(c.date.display)
@@ -608,7 +614,8 @@ export async function verifyOutput(options) {
       required(
         card.fit.ok &&
           !card.fit.overflow &&
-          card.fit.panelHeight <= 900 &&
+          card.fit.panelHeight <= (card.fit.series ? 828 : 900) &&
+          (!card.fit.series || card.fit.series.lines === 1) &&
           !card.fit.warnings.length &&
           !card.errors.length,
         "Invalid final/proof layout report"

@@ -1709,8 +1709,8 @@ export const PROVERBS: Proverb[] = [
     entities: [
       {
         kind: "people",
-        id: "PPL_LALA_LAMBA",
-        label: "Lala-Lamba",
+        id: "PPL_LAMBA_ZAMBIA",
+        label: "Lamba",
       },
       {
         kind: "country",

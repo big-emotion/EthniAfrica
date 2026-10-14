@@ -6,7 +6,7 @@
   },
   "id": "PAT_WEAH",
   "nameMain": "Weah",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Weah",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [
@@ -76,11 +76,7 @@
   "gaps": [
     {
       "fieldPath": "nameSystem",
-      "reason": "Le Dictionary of American Family Names qualifie Weah de patronyme issu d'un nom personnel masculin, et Gunn documente une anglicisation historique du nom. Aucun de ces travaux ne dit si le patronyme désigne un clan ; la valeur typologique exigée par le modèle reste non résolue."
-    },
-    {
-      "fieldPath": "designatedSocialUnit",
-      "reason": "Gunn décrit les panton ou patrilignages kru en général, mais ne rattache pas Weah à l'un d'eux. L'entrée onomastique ne nomme pas davantage d'unité sociale ; aucune désignation de clan ou de lignage ne peut être affirmée."
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de personne masculin des Kru, devenu nom de famille. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "origin.oralTraditions",

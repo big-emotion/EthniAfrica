@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Système de design relevé</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="./ea-live.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Nunito+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div class="ds-board">
+
+<header>
+<p class="ds-h2" style="border: 0; padding: 0">EthniAfrica · ethniafrica.com/fr · v5.2.0 · relevé du 14 octobre 2026</p>
+<h1 class="ds-title" style="margin-top: 16px">Système de design relevé</h1>
+<p class="ds-sub">Valeurs déclarées dans src/styles (color, type, space, radius, elevation, motion) et composants tels qu'ils apparaissent sur les pages en production. Thème jour seulement.</p>
+</header>
+
+<section class="ds-section">
+<h2 class="ds-h2">Couleur · fonds et encre</h2>
+<div class="ds-grid">
+<div class="ds-swatch"><div class="ds-chip" style="background: #fbf7f2"></div><p class="ds-name">--afh-bg</p><p class="ds-val">#fbf7f2</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #f5ede0"></div><p class="ds-name">--afh-bg-warm</p><p class="ds-val">#f5ede0</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #ffffff"></div><p class="ds-name">--afh-surface</p><p class="ds-val">#ffffff</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #e8dfd3"></div><p class="ds-name">--afh-border</p><p class="ds-val">#e8dfd3</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #2c2018"></div><p class="ds-name">--afh-text</p><p class="ds-val">#2c2018</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #746557"></div><p class="ds-name">--afh-text-soft</p><p class="ds-val">#746557</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #9b8b7d"></div><p class="ds-name">--afh-text-muted</p><p class="ds-val">#9b8b7d</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #1a1208"></div><p class="ds-name">--accent-foreground</p><p class="ds-val">#1a1208</p></div>
+</div>
+</section>
+
+<section class="ds-section">
+<h2 class="ds-h2">Couleur · quatre accents catégoriels (fill, tint, ink)</h2>
+<div class="ds-grid" style="grid-template-columns: repeat(4, minmax(0, 1fr))">
+<div class="ds-col">
+<p class="ds-h3">Ocre</p>
+<p class="ds-val">L'atlas · pays · peuples · noms</p>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+<div class="ds-swatch"><div class="ds-chip" style="background: #c9821f"></div><p class="ds-val">#c9821f</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #f1d9ae"></div><p class="ds-val">#f1d9ae</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #835514"></div><p class="ds-val">#835514</p></div>
+</div>
+</div>
+<div class="ds-col">
+<p class="ds-h3">Teal</p>
+<p class="ds-val">Les dossiers</p>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+<div class="ds-swatch"><div class="ds-chip" style="background: #33a390"></div><p class="ds-val">#33a390</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #cbe7df"></div><p class="ds-val">#cbe7df</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #226d60"></div><p class="ds-val">#226d60</p></div>
+</div>
+</div>
+<div class="ds-col">
+<p class="ds-h3">Terre</p>
+<p class="ds-val">Familles · marqueur d'exonyme imposé</p>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+<div class="ds-swatch"><div class="ds-chip" style="background: #c4573f"></div><p class="ds-val">#c4573f</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #f0d2c8"></div><p class="ds-val">#f0d2c8</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #974331"></div><p class="ds-val">#974331</p></div>
+</div>
+</div>
+<div class="ds-col">
+<p class="ds-h3">Pervenche</p>
+<p class="ds-val">Jouer · langues</p>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+<div class="ds-swatch"><div class="ds-chip" style="background: #7a8ce8"></div><p class="ds-val">#7a8ce8</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #dce1f9"></div><p class="ds-val">#dce1f9</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #535f9e"></div><p class="ds-val">#535f9e</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="ds-section">
+<h2 class="ds-h2">Couleur · familles sémantiques</h2>
+<div class="ds-grid">
+<div class="ds-swatch"><div class="ds-chip" style="background: #2b6b42"></div><p class="ds-name">conf-high · contemporain</p><p class="ds-val">#2b6b42 sur #e8f5ed</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #e8f5ed"></div><p class="ds-name">conf-high-bg</p><p class="ds-val">#e8f5ed</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #7a5a00"></div><p class="ds-name">gold · précolonial</p><p class="ds-val">#7a5a00 sur #fdf5e1</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #d4a843"></div><p class="ds-name">conf-mid · amber</p><p class="ds-val">#d4a843</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #9b3030"></div><p class="ds-name">colonial-ink · colonial</p><p class="ds-val">#9b3030 sur #fce8e8</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #b64e27"></div><p class="ds-name">terracotta · focus · figure</p><p class="ds-val">#b64e27 sur #fceee8</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #7e603e"></div><p class="ds-name">earth · conf-low-ink</p><p class="ds-val">#7e603e sur #f3ebe0</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #b87d5b"></div><p class="ds-name">clay · conf-low</p><p class="ds-val">#b87d5b</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #5b8db8"></div><p class="ds-name">azure · source secondaire</p><p class="ds-val">#5b8db8 sur #e6f0f7</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #fce8e8; border-color: #e5b8b8"></div><p class="ds-name">error (réservé)</p><p class="ds-val">#9b3030 · #fce8e8 · #e5b8b8</p></div>
+</div>
+</section>
+
+<section class="ds-section">
+<h2 class="ds-h2">Couleur · naissance du nom, losange de source, marque</h2>
+<div class="ds-grid">
+<div class="ds-swatch"><div class="ds-chip" style="background: #fbe9dc"></div><p class="ds-name">name-birth-bg</p><p class="ds-val">#fbe9dc</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #8a3d1c"></div><p class="ds-name">name-birth-ink</p><p class="ds-val">#8a3d1c</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #f6d3bd"></div><p class="ds-name">name-birth-chip</p><p class="ds-val">#f6d3bd</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #7d6c5c"></div><p class="ds-name">name-before-dash</p><p class="ds-val">#7d6c5c</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #da622f"></div><p class="ds-name">brand-flame</p><p class="ds-val">#da622f</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: #f2ba36"></div><p class="ds-name">brand-gold</p><p class="ds-val">#f2ba36</p></div>
+<div class="ds-swatch"><div class="ds-chip" style="background: linear-gradient(135deg, #da622f, #f2ba36)"></div><p class="ds-name">gradient-brand</p><p class="ds-val">135°, flame vers gold</p></div>
+</div>
+<div class="ds-row" style="gap: 32px; margin-top: 8px">
+<div class="ds-col" style="gap: 6px"><span class="afh-source-diamond" data-family="oral"><span class="afh-source-diamond-mark"></span></span><p class="ds-name">oral</p><p class="ds-val">#b1721b</p></div>
+<div class="ds-col" style="gap: 6px"><span class="afh-source-diamond" data-family="book"><span class="afh-source-diamond-mark"></span></span><p class="ds-name">book</p><p class="ds-val">#2c8e7d</p></div>
+<div class="ds-col" style="gap: 6px"><span class="afh-source-diamond" data-family="encyclopedia"><span class="afh-source-diamond-mark"></span></span><p class="ds-name">encyclopedia</p><p class="ds-val">#a3488a</p></div>
+<div class="ds-col" style="gap: 6px"><span class="afh-source-diamond" data-family="press"><span class="afh-source-diamond-mark"></span></span><p class="ds-name">press</p><p class="ds-val">#c4573f</p></div>
+<div class="ds-col" style="gap: 6px"><span class="afh-source-diamond" data-family="report"><span class="afh-source-diamond-mark"></span></span><p class="ds-name">report</p><p class="ds-val">#6277e4</p></div>
+<div class="ds-col" style="gap: 6px"><span class="afh-source-diamond" data-family="archive"><span class="afh-source-diamond-mark"></span></span><p class="ds-name">archive</p><p class="ds-val">#7e603e</p></div>
+<div class="ds-col" style="gap: 6px"><span class="afh-source-diamond" data-family="other"><span class="afh-source-diamond-mark"></span></span><p class="ds-name">other</p><p class="ds-val">#5b6b7b</p></div>
+</div>
+</section>
+
+<section class="ds-section">
+<h2 class="ds-h2">Typographie · neuf rôles (valeurs à 390 px puis 1200 px)</h2>
+<div>
+<div class="ds-spec"><p class="ds-val">hero · Fraunces 900 · 34 à 52 · 1.05</p><p style="font-family: var(--afh-font-display); font-weight: 900; font-size: var(--afh-text-hero); line-height: 1.05">Fulɓe</p></div>
+<div class="ds-spec"><p class="ds-val">h1 · Fraunces 900 · 27 à 40 · 1.1</p><p style="font-family: var(--afh-font-display); font-weight: 900; font-size: var(--afh-text-h1); line-height: 1.1">Peul</p></div>
+<div class="ds-spec"><p class="ds-val">h2 · Fraunces 700 · 22 à 30 · 1.2</p><p style="font-family: var(--afh-font-display); font-weight: 700; font-size: var(--afh-text-h2); line-height: 1.2">Noms de personnes rattachés à ce peuple</p></div>
+<div class="ds-spec"><p class="ds-val">h3 · Fraunces 700 · 19 à 23 · 1.3</p><p style="font-family: var(--afh-font-display); font-weight: 700; font-size: var(--afh-text-h3); line-height: 1.3">Nom de clan</p></div>
+<div class="ds-spec"><p class="ds-val">lead · Nunito Sans · 19 à 22 · 1.45</p><p style="font-size: var(--afh-text-lead); line-height: 1.45; color: var(--afh-text-soft)">Bande sahelienne de l'Atlantique au Tchad</p></div>
+<div class="ds-spec"><p class="ds-val">body · Nunito Sans · 17 à 19 · 1.65</p><p style="font-size: var(--afh-text-body); line-height: 1.65">Le nom <em>Peul</em> désigne un peuple qui se nomme lui-même <em>Fulɓe</em>, et Pullo pour une seule personne.</p></div>
+<div class="ds-spec"><p class="ds-val">small · 16 fixe · 1.5</p><p style="font-size: var(--afh-text-small); line-height: 1.5">Forme courante en français, aussi écrite Peulh ou Peuhl.</p></div>
+<div class="ds-spec"><p class="ds-val">caption · 13 fixe · 1.45</p><p style="font-size: var(--afh-text-caption); line-height: 1.45; color: var(--afh-text-soft)">Personnes citées dans ce récit : Amadou Hampâté Bâ</p></div>
+<div class="ds-spec"><p class="ds-val">eyebrow · 12 · 600 · 0.16em · capitales</p><p style="font-size: var(--afh-text-eyebrow); font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--afh-text-soft)">Aller plus loin</p></div>
+<div class="ds-spec"><p class="ds-val">mono · JetBrains Mono · clés, périodes, libellés</p><p style="font-family: var(--afh-font-mono); font-size: 16px; color: var(--afh-text)">PPL_FULA · FLG_BANTU · 40 000 000</p></div>
+</div>
+</section>
+
+<section class="ds-section">
+<h2 class="ds-h2">Espacement · rayon · élévation · mouvement</h2>
+<div class="ds-row" style="gap: 64px">
+<div class="ds-col">
+<p class="ds-h3">Rampe</p>
+<div class="ds-row" style="align-items: flex-end; gap: 14px">
+<div class="ds-col" style="gap: 6px; align-items: center"><div style="width: 4px; height: 4px; background: #c9821f"></div><p class="ds-val">4</p></div>
+<div class="ds-col" style="gap: 6px; align-items: center"><div style="width: 8px; height: 8px; background: #c9821f"></div><p class="ds-val">8</p></div>
+<div class="ds-col" style="gap: 6px; align-items: center"><div style="width: 12px; height: 12px; background: #c9821f"></div><p class="ds-val">12</p></div>
+<div class="ds-col" style="gap: 6px; align-items: center"><div style="width: 16px; height: 16px; background: #c9821f"></div><p class="ds-val">16</p></div>
+<div class="ds-col" style="gap: 6px; align-items: center"><div style="width: 24px; height: 24px; background: #c9821f"></div><p class="ds-val">24</p></div>
+<div class="ds-col" style="gap: 6px; align-items: center"><div style="width: 32px; height: 32px; background: #c9821f"></div><p class="ds-val">32</p></div>
+<div class="ds-col" style="gap: 6px; align-items: center"><div style="width: 48px; height: 48px; background: #c9821f"></div><p class="ds-val">48</p></div>
+<div class="ds-col" style="gap: 6px; align-items: center"><div style="width: 64px; height: 64px; background: #c9821f"></div><p class="ds-val">64</p></div>
+<div class="ds-col" style="gap: 6px; align-items: center"><div style="width: 96px; height: 96px; background: #c9821f"></div><p class="ds-val">96</p></div>
+</div>
+<p class="ds-val">Gouttière de page 12 · 24 · 32 (430, 768, 1200). Carte 18 · 24 · 32. Écart de section 24 · 32 · 48.</p>
+</div>
+<div class="ds-col">
+<p class="ds-h3">Rayon</p>
+<div class="ds-row" style="gap: 16px">
+<div class="ds-col" style="gap: 6px"><div style="width: 88px; height: 64px; background: #fff; border: 1px solid #e8dfd3; border-radius: 0"></div><p class="ds-val">0 · source</p></div>
+<div class="ds-col" style="gap: 6px"><div style="width: 88px; height: 64px; background: #fff; border: 1px solid #e8dfd3; border-radius: 4px"></div><p class="ds-val">4 · tuile</p></div>
+<div class="ds-col" style="gap: 6px"><div style="width: 88px; height: 64px; background: #fff; border: 1px solid #e8dfd3; border-radius: 12px"></div><p class="ds-val">12 · carte</p></div>
+<div class="ds-col" style="gap: 6px"><div style="width: 88px; height: 64px; background: #fff; border: 1px solid #e8dfd3; border-radius: 14px"></div><p class="ds-val">14 · action</p></div>
+<div class="ds-col" style="gap: 6px"><div style="width: 88px; height: 44px; background: #fff; border: 1px solid #e8dfd3; border-radius: 9999px"></div><p class="ds-val">full · valeur</p></div>
+</div>
+</div>
+</div>
+<div class="ds-row" style="gap: 24px; margin-top: 16px">
+<div class="ds-col" style="gap: 8px"><div style="width: 150px; height: 88px; background: #fff; border-radius: 14px; box-shadow: var(--afh-elev-1)"></div><p class="ds-val">elev-1</p></div>
+<div class="ds-col" style="gap: 8px"><div style="width: 150px; height: 88px; background: #fff; border-radius: 14px; box-shadow: var(--afh-elev-2)"></div><p class="ds-val">elev-2 · plaque héro</p></div>
+<div class="ds-col" style="gap: 8px"><div style="width: 150px; height: 88px; background: #fff; border-radius: 14px; box-shadow: var(--afh-elev-3)"></div><p class="ds-val">elev-3 · retour en haut</p></div>
+<div class="ds-col" style="gap: 8px"><div style="width: 150px; height: 88px; background: #fff; border-radius: 14px; box-shadow: var(--afh-elev-4)"></div><p class="ds-val">elev-4</p></div>
+<div class="ds-col" style="gap: 8px"><div style="width: 150px; height: 88px; background: #fff; border-radius: 14px; box-shadow: var(--afh-elev-5)"></div><p class="ds-val">elev-5</p></div>
+<div class="ds-col" style="gap: 8px"><div style="width: 150px; height: 88px; background: #fff; border-radius: 14px; box-shadow: var(--afh-elev-warm)"></div><p class="ds-val">elev-warm</p></div>
+</div>
+<p class="ds-val">Mouvement : 120 ms survol, 200 ms couleur et bordure, 320 ms panneau, 400 et 600 ms fondu. Ressort cubic-bezier(.22, 1, .36, 1) réservé aux arrivées.</p>
+</section>
+
+<section class="ds-section">
+<h2 class="ds-h2">Composants · en-tête du site</h2>
+<div class="ds-col">
+<p class="ds-cap">1440 et plus</p>
+<div class="ds-frame" style="width: 1312px">
+<header class="sh-header" style="position: relative">
+<nav class="sh-bar" aria-label="Navigation principale (1440)">
+<a class="sh-brand" href="#"><img class="sh-brand-mark" src="./assets/africa.png" alt=""><span class="sh-brand-text"><span class="sh-brand-name">EthniAfrica</span><span class="sh-brand-tagline">L’Afrique à travers ses noms</span></span></a>
+<div class="sh-axes" role="group" aria-label="Points d'entrée">
+<button class="sh-axis" type="button"><span class="sh-axis-pill"><span class="sh-seed" style="background: #c9821f"></span>Parcourir<svg class="sh-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></span></button>
+<button class="sh-axis" type="button"><span class="sh-axis-pill"><span class="sh-seed" style="background: #33a390"></span>Articles<svg class="sh-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></span></button>
+<button class="sh-axis" type="button"><span class="sh-axis-pill"><span class="sh-seed" style="background: #7a8ce8"></span>Jouer<svg class="sh-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></span></button>
+<a class="sh-axis" href="#"><span class="sh-axis-pill"><span class="sh-seed" style="background: #746557"></span>Découvertes</span></a>
+</div>
+<div class="sh-controls">
+<button class="sh-icon" type="button" aria-label="Rechercher"><span class="sh-icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg></span></button>
+<button class="sh-icon" type="button" aria-label="Passer en mode nuit"><span class="sh-icon-circle"><svg class="sh-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></span></button>
+<button class="sh-icon sh-burger" type="button" aria-label="Ouvrir le menu"><span class="sh-icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16"></path><path d="M4 18h16"></path><path d="M4 6h16"></path></svg></span></button>
+</div>
+</nav>
+</header>
+</div>
+<p class="ds-cap" style="margin-top: 16px">430 à 1199</p>
+<div class="ds-frame ds-mobile" style="width: 430px">
+<header class="sh-header" style="position: relative">
+<nav class="sh-bar" aria-label="Navigation principale (430)">
+<a class="sh-brand" href="#"><img class="sh-brand-mark" src="./assets/africa.png" alt=""><span class="sh-brand-text"><span class="sh-brand-name">EthniAfrica</span><span class="sh-brand-tagline">L’Afrique à travers ses noms</span></span></a>
+<div class="sh-controls">
+<button class="sh-icon" type="button" aria-label="Rechercher"><span class="sh-icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg></span></button>
+<button class="sh-icon" type="button" aria-label="Passer en mode nuit"><span class="sh-icon-circle"><svg class="sh-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg></span></button>
+<button class="sh-icon sh-burger" type="button" aria-label="Ouvrir le menu"><span class="sh-icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16"></path><path d="M4 18h16"></path><path d="M4 6h16"></path></svg></span></button>
+</div>
+</nav>
+</header>
+</div>
+</div>
+</section>
+
+<section class="ds-section">
+<h2 class="ds-h2">Composants · recherche, lentilles, noms</h2>
+<div class="afh-accent-ocre" style="width: 880px; display: flex; flex-direction: column; gap: 24px">
+<div class="ds-col">
+<p class="ds-cap">Champ de recherche · 640 max · 48 de haut · rayon 14</p>
+<form class="ea-search" role="search" aria-label="Formulaire de recherche (exemple)" style="margin: 0">
+<svg class="ea-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg>
+<label for="ds-q" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Recherche</label>
+<input id="ds-q" class="ea-search-input" type="search" placeholder="Ex. Bafut, Fulfulde, Namibie, Keïta">
+<button class="ea-search-clear" type="button" aria-label="Effacer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button>
+</form>
+</div>
+<div class="ds-col">
+<p class="ds-cap">Barre de lentilles · puces pleines, active en encre</p>
+<nav class="ea-lenses" aria-label="Lentilles (exemple)" style="margin: 0">
+<button class="ea-lens" type="button" aria-pressed="true">Histoire du nom</button>
+<button class="ea-lens" type="button" aria-pressed="false">Tout</button>
+<button class="ea-lens" type="button" aria-pressed="false">Shorts <span class="ea-lens-count">6</span></button>
+<button class="ea-lens" type="button" aria-pressed="false">Récits <span class="ea-lens-count">5</span></button>
+<button class="ea-lens" type="button" aria-pressed="false">Jeux <span class="ea-lens-count">1</span></button>
+<button class="ea-lens" type="button" aria-pressed="false">Fiches <span class="ea-lens-count">114</span></button>
+</nav>
+</div>
+<div class="ds-col afh-name-timeline">
+<p class="ds-cap">Puces de nom · le nom cherché en encre pleine</p>
+<div class="afh-name-timeline-names">
+<button class="afh-name-timeline-name" type="button" aria-pressed="true">Peul<span class="afh-name-timeline-mark"> · cherché</span></button>
+<button class="afh-name-timeline-name" type="button" aria-pressed="false">Fulɓe</button>
+<button class="afh-name-timeline-name" type="button" aria-pressed="false">Haalpulaar'en</button>
+<button class="afh-name-timeline-name" type="button" aria-pressed="false">Fula</button>
+</div>
+<div class="afh-name-timeline-tools">
+<p class="afh-name-timeline-hint">↓ On remonte le temps</p>
+<button class="afh-name-timeline-elsewhere-toggle" type="button" aria-pressed="false">Pendant ce temps, ailleurs</button>
+</div>
+<ul class="afh-chronology-legend">
+<li data-regime="modern">Contemporain</li>
+<li data-regime="colonial">Colonial</li>
+<li data-regime="polity">Précolonial</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="ds-section">
+<h2 class="ds-h2">Composants · frise du nom</h2>
+<div class="afh-accent-ocre afh-name-timeline" style="width: 880px">
+<div class="afh-tile">
+<p class="afh-tile-label">D'où vient le nom · Peuple</p>
+<h3 class="afh-name-timeline-title">Peul</h3>
+<p class="afh-name-timeline-summary">Le nom <em>Peul</em> désigne un peuple qui se nomme lui-même <em>Fulɓe</em>, et Pullo pour une seule personne.</p>
+<button class="afh-name-timeline-lead" type="button"><span>Vous avez cherché <em>Peul</em>. Ce peuple se nomme lui-même <em>Fulɓe</em>.</span><span class="afh-name-timeline-lead-go">Voir</span></button>
+</div>
+<ol class="afh-chronology" aria-label="Chronologie (exemple)">
+<li class="afh-chronology-station" data-regime="modern">
+<div class="afh-tile">
+<p class="afh-name-timeline-period">Usage contemporain</p>
+<p class="afh-name-timeline-statement">Forme courante en français, aussi écrite Peulh ou Peuhl. <span class="afh-source-diamond" data-family="book"><span class="afh-source-diamond-mark"></span></span></p>
+<p class="afh-name-timeline-actors">Personnes citées dans ce récit : Amadou Hampâté Bâ</p>
+</div>
+</li>
+<li class="afh-chronology-station" data-placement="birth">
+<div class="afh-tile">
+<p class="afh-name-timeline-pill">Naissance du nom Peul · origine la plus ancienne connue du projet</p>
+<p class="afh-name-timeline-period">1842</p>
+<p class="afh-name-timeline-statement">Le nom <em>Peul</em> apparaît chez l'auteur que Louis Tauxier nomme D'Eichtal. <span class="afh-source-diamond" data-family="book"><span class="afh-source-diamond-mark"></span></span></p>
+</div>
+</li>
+<li class="afh-chronology-station" data-placement="before">
+<div class="afh-tile">
+<p class="afh-name-timeline-pill">Avant le nom Bassa</p>
+<p class="afh-name-timeline-period">Avant l'arrivée des commerçants européens</p>
+<p class="afh-name-timeline-statement">Le nom Bassa n'est pas encore employé : on parle du territoire de Gboo, du nom d'un ancien chef puissant, et de ses habitants comme des Gboo Nyohn Bey, « les gens de Gboo », selon un récit d'Abba Karnga. <span class="afh-source-diamond" data-family="oral"><span class="afh-source-diamond-mark"></span></span></p>
+</div>
+</li>
+</ol>
+<p class="afh-name-timeline-end">Fin de ce que nos recherches retracent pour le nom Peul.</p>
+<a class="ea-fiche-link afh-accent-ocre" href="#">Voir la fiche complète · Fula (Fulbe / Peul)</a>
+</div>
+</section>
+
+<section class="ds-section">
+<h2 class="ds-h2">Composants · tête de fiche et barre de chapitres</h2>
+<div class="ds-row" style="gap: 48px">
+<div class="ds-col">
+<p class="ds-cap">Tête de fiche (bande chaude, plaque blanche, elev-2), état 768 et plus</p>
+<div style="width: 720px">
+<section class="ea-hero" style="min-height: 0">
+<div class="ea-hero-inner" style="padding: 24px">
+<div class="ea-hero-plate">
+<div class="afh-accent-ocre">
+<header class="afh-parchment-head">
+<p class="afh-parchment-eyebrow">Peuple · <span class="afh-parchment-eyebrow-group">Atlantique (branche senegambienne)</span></p>
+<h3 style="margin: 0; font-family: var(--afh-font-display); font-weight: 900; font-size: 33px; line-height: 1.1; letter-spacing: -0.015em">Fulbe (pluriel), Pullo (singulier) <span class="ea-exonym">Peul</span></h3>
+<p class="afh-parchment-lede">Bande sahelienne de l'Atlantique au Tchad</p>
+<div class="afh-chips">
+<span class="afh-chip"><span class="ea-chip-figure">40 000 000</span> personnes · réf. 2025</span>
+<span class="afh-chip">12 pays de présence</span>
+<a class="afh-chip ea-chip-colonial" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 18v-7"></path><path d="M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z"></path><path d="M14 18v-7"></path><path d="M18 18v-7"></path><path d="M3 22h18"></path><path d="M6 18v-7"></path></svg>Héritage colonial</a>
+</div>
+</header>
+<button class="afh-parchment-map-toggle" type="button">Voir la carte</button>
+</div>
+<nav aria-label="Fil d'ariane (exemple)">
+<ol class="ea-crumbs">
+<li><a href="#">Accueil</a></li>
+<li><span class="ea-crumb-sep" aria-hidden="true">›</span><a href="#">Parcourir</a></li>
+<li><span class="ea-crumb-sep" aria-hidden="true">›</span><a href="#">Peuples</a></li>
+<li><span class="ea-crumb-sep" aria-hidden="true">›</span><span class="ea-crumb-here">Fulbe (pluriel), Pullo (singulier) — Fula (Fulbe / Peul)</span></li>
+</ol>
+</nav>
+</div>
+</div>
+</section>
+</div>
+</div>
+<div class="ds-col">
+<p class="ds-cap">Barre de chapitres (collante, filet de lecture en accent)</p>
+<div class="afh-accent-ocre" style="width: 430px; padding: 0 12px; background: var(--afh-bg)">
+<nav class="afh-chapter-bar" aria-label="Chapitres de la page (exemple)" style="position: relative; top: 0; margin: 0">
+<div class="afh-chapter-bar-head">
+<button class="afh-chapter-bar-toggle" type="button"><span class="afh-chapter-bar-current">Noms de personnes rattachés à ce peuple</span><span class="afh-chapter-bar-cue"><svg class="afh-chapter-bar-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></span></button>
+<div class="afh-chapter-bar-report"><button class="ea-chapter-report" type="button">Signaler</button></div>
+<a class="afh-chapter-bar-contribute" href="#">Contribuer</a>
+<span class="afh-chapter-bar-read" style="width: 70%"></span>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":6200}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

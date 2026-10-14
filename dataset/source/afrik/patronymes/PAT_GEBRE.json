@@ -69,10 +69,10 @@
     },
     {
       "sourceKey": "dafn-gebre",
-      "title": "Dictionary of American Family Names, 2nd ed. — Gebre (Ancestry)",
+      "title": "Dictionary of American Family Names, 2e édition — entrée Gebre",
       "url": "https://www.ancestry.com/last-name-meaning/gebre?geo-lang=en",
       "tier": "referenced",
-      "source_kind": "repository",
+      "source_kind": "linguistic_reference",
       "notes": "Entrée du Dictionary of American Family Names, 2e éd. (Oxford University Press, 2022), reproduite par Ancestry et consultée le 2 septembre 2026. Elle analyse Gebre comme nom personnel en ge'ez ou amharique, explique son emploi dans les composés chrétiens et distingue cet usage du surname héréditaire."
     }
   ],
@@ -139,7 +139,7 @@
                 "notes": "Quatrième édition, Munich, K. G. Saur, 1996, lue dans le PDF de l'IFLA le 13 octobre 2026. La notice Éthiopie, p. 64-65, fournie par la bibliothèque de l'université d'Addis-Abeba et approuvée par la Bibliothèque et les Archives nationales en octobre 1994, compose le nom d'un nom personnel, suivi du nom personnel du père, parfois de celui du grand-père. Elle note que le Code civil de 1960 prescrit un nom de famille, usage qui ne s'est pas encore répandu."
               },
               {
-                "title": "Dictionary of American Family Names, 2e éd. — Gebre",
+                "title": "Dictionary of American Family Names, 2e édition — entrée Gebre",
                 "author": "Patrick Hanks (dir.)",
                 "year": 2022,
                 "url": "https://www.ancestry.com/last-name-meaning/gebre?geo-lang=en",
@@ -160,7 +160,7 @@
             "hypothesisGroup": "origine du nom Gebre",
             "sources": [
               {
-                "title": "Dictionary of American Family Names, 2e éd. — Gebre",
+                "title": "Dictionary of American Family Names, 2e édition — entrée Gebre",
                 "author": "Patrick Hanks (dir.)",
                 "year": 2022,
                 "url": "https://www.ancestry.com/last-name-meaning/gebre?geo-lang=en",
