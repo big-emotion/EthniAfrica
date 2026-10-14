@@ -120,5 +120,196 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les mêmes recherches n'ont pas permis de déterminer si « Amara » désigne un individu, une lignée, un clan, une caste, une classe d'âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Amara est un nom de famille d'Algérie que les études lues rattachent à la racine arabe ɛmr, « remplir, peupler » ; en Kabylie, c'est aussi un prénom d'homme, qui entre dans des noms de villages comme Tala Amara. On l'écrit aussi Ɛmara en transcription berbère. On ne sait pas avec certitude d'où vient le nom ni depuis quand des familles le portent ; nous présentons plus bas les explications relevées.",
+    "names": [
+      {
+        "nameText": "Amara",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom d'homme et de famille d'Algérie, noté dès 1864 dans un nom de village kabyle.",
+        "periodLabel": "Noté dès 1864 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Usage contemporain"
+            },
+            "era": "modern",
+            "statement": "Le nom Amara est un nom de famille que les études de Touggourt et de Yakouren, en Kabylie, relèvent dans les noms de leur région. On ne sait pas avec certitude d'où il vient ; les explications relevées sont présentées séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Étude étymo-sémantique des patronymes de la région de Touggourt",
+                "author": "Siham Messaoudi",
+                "year": 2021,
+                "url": "https://dspace.univ-ouargla.dz/jspui/bitstream/123456789/32616/1/%25D9%2585%25D8%25B3%25D8%25B9%25D9%2588%25D8%25AF%25D9%258A%2520%25D8%25B3%25D9%2587%25D8%25A7%25D9%2585_compressed.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 32",
+                "notes": "Mémoire de master en sciences du langage, Université Kasdi Merbah Ouargla, 2020-2021, dirigé par Nadjah Henka ; texte intégral lu dans le fichier déposé par l'université (pages numérotées de l'imprimé). L'autrice a choisi 215 noms de famille représentatifs dans le registre de l'état civil de la mairie de Touggourt (p. 3). Page 32 : « AMARA [ɛmara] : nom simple, féminin singulier, d'origine arabe, prospérité qui a une vie longue et prospère » ; page 56, liste des patronymes recensés : AMARA. Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Analyse morphologique et sémantique des noms de familles de la région de Yakouren, Tizi-Ouzou",
+                "author": "Lamia Ikhlef et Lilia Hadj Ahmed",
+                "year": 2021,
+                "url": "https://dspace.ummto.dz/server/api/core/bitstreams/28e613b9-203f-44ed-bcd8-210ba34f636f/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 29",
+                "notes": "Mémoire de master, Université Mouloud Mammeri de Tizi-Ouzou, département de langue et culture amazighes, 2020-2021, dirigé par Rachida Mohammedi ; texte intégral lu, pages numérotées de l'imprimé. Page 29 (p. 33 du fichier PDF) : « AMARA / ƐMARA », anthroponyme « de souche arabe » construit sur la racine /ɛmr/, qui signifie « remplir » (Dallet, 1982, p. 990) ; « Nous pouvons interpréter /AMARA, AMARENE et AMEUR/ par « ceux qui peuplent une maison ou un endroit »). Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Proposée en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Amara voudrait dire « prospérité », une vie longue et prospère, et viendrait de l'arabe, selon l'étude des noms de la région de Touggourt de Siham Messaoudi.",
+            "hypothesisGroup": "origine du nom Amara",
+            "sources": [
+              {
+                "title": "Étude étymo-sémantique des patronymes de la région de Touggourt",
+                "author": "Siham Messaoudi",
+                "year": 2021,
+                "url": "https://dspace.univ-ouargla.dz/jspui/bitstream/123456789/32616/1/%25D9%2585%25D8%25B3%25D8%25B9%25D9%2588%25D8%25AF%25D9%258A%2520%25D8%25B3%25D9%2587%25D8%25A7%25D9%2585_compressed.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 32",
+                "notes": "Mémoire de master en sciences du langage, Université Kasdi Merbah Ouargla, 2020-2021, dirigé par Nadjah Henka ; texte intégral lu dans le fichier déposé par l'université (pages numérotées de l'imprimé). L'autrice a choisi 215 noms de famille représentatifs dans le registre de l'état civil de la mairie de Touggourt (p. 3). Page 32 : « AMARA [ɛmara] : nom simple, féminin singulier, d'origine arabe, prospérité qui a une vie longue et prospère » ; page 56, liste des patronymes recensés : AMARA. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Proposée en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Amara viendrait de la racine arabe ɛmr, « remplir », et voudrait dire « ceux qui peuplent une maison ou un endroit », selon l'étude des noms de famille de Yakouren, en Kabylie, qui s'appuie sur le dictionnaire de Dallet.",
+            "hypothesisGroup": "origine du nom Amara",
+            "sources": [
+              {
+                "title": "Analyse morphologique et sémantique des noms de familles de la région de Yakouren, Tizi-Ouzou",
+                "author": "Lamia Ikhlef et Lilia Hadj Ahmed",
+                "year": 2021,
+                "url": "https://dspace.ummto.dz/server/api/core/bitstreams/28e613b9-203f-44ed-bcd8-210ba34f636f/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 29",
+                "notes": "Mémoire de master, Université Mouloud Mammeri de Tizi-Ouzou, département de langue et culture amazighes, 2020-2021, dirigé par Rachida Mohammedi ; texte intégral lu, pages numérotées de l'imprimé. Page 29 (p. 33 du fichier PDF) : « AMARA / ƐMARA », anthroponyme « de souche arabe » construit sur la racine /ɛmr/, qui signifie « remplir » (Dallet, 1982, p. 990) ; « Nous pouvons interpréter /AMARA, AMARENE et AMEUR/ par « ceux qui peuplent une maison ou un endroit »). Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1882,
+              "to": 1882,
+              "label": "Loi du 23 mars 1882"
+            },
+            "era": "colonial",
+            "statement": "Le nom Amara relève, comme tout nom de famille algérien, de l'état civil que l'administration française impose aux Algériens musulmans par la loi du 23 mars 1882 : chaque famille doit alors porter un nom unique, transmis de génération en génération, là où l'on se nommait par la filiation. Les sources lues ne disent pas quand les familles Amara ont reçu ce nom.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Qui es-tu ? J'ai été dit. De la destruction de la filiation dans l'État civil d'Algérie ou éléments d'un onomacide sémantique",
+                "author": "Farid Benramdane",
+                "year": 2000,
+                "url": "https://insaniyat.crasc.dz/en/article/qui-es-tu-jai-ete-dit-de-la-destruction-de-la-filiation-dans-letat-civil-dalgerie-ou-elements-dun-onomacide-semantique",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 79-87 (section sur les patronymes algériens)",
+                "notes": "Insaniyat, 4(10), 2000, p. 79-87, lu en ligne en texte intégral ; la version en ligne ne marque pas les pages de l'imprimé. L'auteur écrit que l'état civil algérien est né de la loi du 23 mars 1882, précédée d'une loi de 1873, qui a imposé « l'obligation et la généralisation du patronyme » là où l'on se nommait par la filiation (ism, alam, kunya, laqab, nisba) ; il cite Charles-Robert Ageron sur les commissaires chargés d'établir cet état civil. Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Étude étymo-sémantique des patronymes de la région de Touggourt",
+                "author": "Siham Messaoudi",
+                "year": 2021,
+                "url": "https://dspace.univ-ouargla.dz/jspui/bitstream/123456789/32616/1/%25D9%2585%25D8%25B3%25D8%25B9%25D9%2588%25D8%25AF%25D9%258A%2520%25D8%25B3%25D9%2587%25D8%25A7%25D9%2585_compressed.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18",
+                "notes": "Mémoire de master en sciences du langage, Université Kasdi Merbah Ouargla, 2020-2021, dirigé par Nadjah Henka ; texte intégral lu dans le fichier déposé par l'université (pages numérotées de l'imprimé). L'autrice a choisi 215 noms de famille représentatifs dans le registre de l'état civil de la mairie de Touggourt (p. 3). Page 18 : « la présence coloniale a bouleversé le système dénominatif qui est passé d'une désignation par filiation lignagère à plusieurs éléments à un système patronymique à un seul élément », imposé « après avoir instauré l'état civil des indigènes musulmans en 1882 » ; l'introduction (p. 2) date pourtant l'état civil de 1871, et le projet suit la loi de 1882 que donne Benramdane. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1864,
+              "to": 1864,
+              "label": "Publié en 1864"
+            },
+            "era": "colonial",
+            "statement": "Le nom Amara apparaît par écrit dans Tala Amara, village de Kabylie où le docteur Leclerc note des traces d'occupation romaine ; Hanoteau et Letourneux traduiront ce nom en 1872 par « la fontaine d'Amara ». C'est la plus ancienne trace de ce nom que le projet connaît ; elle nomme un village, non une famille, et le nom existait déjà avant elle.",
+            "formAsWritten": "Tala Amara",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Une mission médicale en Kabylie",
+                "author": "Lucien Leclerc",
+                "year": 1864,
+                "url": "https://archive.org/details/unemissionmdica01leclgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 15",
+                "notes": "Docteur L. Leclerc, médecin-major, chargé en 1857, après la soumission de la Grande Kabylie, de soigner les habitants du Djurdjura depuis Fort-Napoléon ; Paris, J.-B. Baillière ; exemplaire numérisé d'archive.org, dont la notice donne 1864. Page 15 : « En se dirigeant vers Tala Amara, on rencontre Tacherahît » ; « Des traces d'occupation romaine se rencontrent à Tala Amara ». L'ouvrage décrit la Kabylie après la conquête de 1857. Lu le 14 octobre 2026."
+              },
+              {
+                "title": "La Kabylie et les coutumes kabyles, tome I",
+                "author": "Adolphe Hanoteau et Aristide Letourneux",
+                "year": 1872,
+                "url": "https://archive.org/details/bub_gb_8jgbAAAAYAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 238",
+                "notes": "Paris, 1872 ; exemplaire numérisé d'archive.org (tome I), page lue sur l'image de la page imprimée. Page 238, cercle de Fort-Napoléon, tribu des Irdjen : « Tala Amara (la fontaine d'Amara) », 130 habitants. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ɛmara",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'écriture berbère du nom Amara, notée dans une étude de Kabylie.",
+        "periodLabel": "Décrit en 2021",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Décrit en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Ɛmara est l'écriture berbère du nom Amara : l'étude de Yakouren le note ainsi dans « Ait Amara / Ayt ɛmara », « ceux d'Amara », et le glose « prospérité, qui a une vie longue et prospère » d'après Harzoune (2006).",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Analyse morphologique et sémantique des noms de familles de la région de Yakouren, Tizi-Ouzou",
+                "author": "Lamia Ikhlef et Lilia Hadj Ahmed",
+                "year": 2021,
+                "url": "https://dspace.ummto.dz/server/api/core/bitstreams/28e613b9-203f-44ed-bcd8-210ba34f636f/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 24",
+                "notes": "Mémoire de master, Université Mouloud Mammeri de Tizi-Ouzou, département de langue et culture amazighes, 2020-2021, dirigé par Rachida Mohammedi ; texte intégral lu, pages numérotées de l'imprimé. Page 24 : « Ait Amara / Ayt ɛmara / : Vient du racine √ɛmr, « Ceux de Amara » ; ɛmara « prospérité, qui a une vie longue et prospère » (Harzoune, 2006 : 153) de εemmära (ar.) « Peuplement, colonisation. Culture. Population. Exploitation » (Beaussier, 1958 : 679) ». Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

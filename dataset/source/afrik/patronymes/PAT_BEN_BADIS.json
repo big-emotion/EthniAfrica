@@ -107,5 +107,216 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « Ben Badis lignée », « Ben Badis clan », « Ben Badis tribe » et « Ben Badis place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Ben Badis est un nom de famille de Constantine qui se lit « fils de Badis » : ben, « fils de », et le prénom Badis. Une pierre tombale de 1382, que Gustave Mercier publie en 1901, en donne déjà la forme dans la filiation d'un cadi de la ville. On l'écrit aussi Benbadis. Les sources lues proposent deux rattachements : aux Zirides, dynastie berbère, ou à la tribu arabe de Qaïs. On ne sait pas avec certitude lequel est juste ; nous présentons plus bas les explications relevées.",
+    "names": [
+      {
+        "nameText": "Ben Badis",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille de Constantine, « fils de Badis », écrit dès 1382.",
+        "periodLabel": "Écrit dès 1382 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2014,
+              "to": 2022,
+              "label": "Proposée en 2014 et en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Ben Badis serait celui d'une famille de Constantine qui se dit issue des Zirides, dynastie berbère musulmane, selon deux articles de presse algériens, qui l'écrivent de la famille d'Abdelhamid Ben Badis.",
+            "hypothesisGroup": "origine du nom Ben Badis",
+            "sources": [
+              {
+                "title": "Constantine Un parcours tumultueux",
+                "author": "Rédaction web, d'après El-Djazaïr.com",
+                "year": 2014,
+                "url": "https://www.umc.edu.dz/index.php/en/la-revue-de-presse/461-constantine-un-parcours-tumultueux",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Revue de presse de l'Université Frères Mentouri Constantine 1, mise en ligne le 15 décembre 2014 et créditée à El-Djazaïr.com ; page lue en entier, sans pagination. On y lit : « Abdelhamid Ibn Badis faisait partie d'une famille dont les origines remontaient aux Zirides », et que Bologhine Ibn Ziri, fondateur d'Alger, était l'une des figures célèbres de cette famille princière. Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Ben Badis, retour sur le parcours héroïque de l'un des pères du nationalisme algérien",
+                "author": "Farid Larbi",
+                "year": 2022,
+                "url": "https://www.algerie360.com/ben-badis-retour-sur-le-parcours-de-lun-des-peres-du-nationalisme/",
+                "tier": "unverified",
+                "source_kind": "press",
+                "notes": "Algérie360, article du 18 avril 2022, sans pagination. On y lit : « Il était issu d'une famille bourgeoise qui se réclamait des Zirides, une dynastie berbère musulmane ». Les deux articles disent la même chose ; ils ne citent pas de source ancienne. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "Proposée en 1901"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ben Badis serait celui d'une famille qui prétend se rattacher à la tribu arabe de Qaïs, selon Gustave Mercier, qui lit l'adjectif El-Qaïsi dans le nom d'un cadi de Constantine mort en 1382.",
+            "hypothesisGroup": "origine du nom Ben Badis",
+            "sources": [
+              {
+                "title": "Corpus des inscriptions arabes et turques de l'Algérie. Département de Constantine",
+                "author": "Gustave Mercier",
+                "year": 1901,
+                "url": "https://archive.org/details/corpusdesinscrip02coliuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 12 (inscription no 8)",
+                "notes": "Gustave Mercier, avocat au barreau de Constantine et secrétaire de la Société archéologique, Paris, Ernest Leroux, bibliothèque d'archéologie africaine, fascicule V ; exemplaire numérisé d'archive.org, dont la notice donne 1901 (la page de titre lue ne porte pas de date). Page lue sur l'image de la page imprimée. Inscription no 8, « publiée par Cherbonneau » : « Ceci est le tombeau du pèlerin, du légiste, du cadi, du prédicateur, le cheikh Hassen ben Khalf-Allah ben Badis ben El-Kassem ben Mimoun ben Badis El-Qaïsi Abou Ali, décédé en l'année 784 (1382) ». Mercier ajoute que l'inscription « a disparu depuis la conquête », qu'elle était gravée sur une pierre tombale de la mosquée de Sidi Ner'r'ach, que « le cheikh Hassen est un ancêtre de la famille des Ben Badis, une des plus anciennes de Constantine, qui a donné à la ville de nombreux cadis jusque dans ces dernières années », qu'il était déjà cadi en 1357, et que « l'adjectif Qaïsi indique qu'elle prétend se rattacher à la célèbre tribu arabe de Qaïs ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "Décrit en 1901"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ben Badis est, au début du XXe siècle, celui de l'une des plus anciennes familles de Constantine, qui a donné à la ville de nombreux cadis jusque dans les dernières années ; le cheikh Hassen est déjà cadi de la ville en 1357, selon Gustave Mercier.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Corpus des inscriptions arabes et turques de l'Algérie. Département de Constantine",
+                "author": "Gustave Mercier",
+                "year": 1901,
+                "url": "https://archive.org/details/corpusdesinscrip02coliuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 12 (inscription no 8)",
+                "notes": "Gustave Mercier, avocat au barreau de Constantine et secrétaire de la Société archéologique, Paris, Ernest Leroux, bibliothèque d'archéologie africaine, fascicule V ; exemplaire numérisé d'archive.org, dont la notice donne 1901 (la page de titre lue ne porte pas de date). Page lue sur l'image de la page imprimée. Inscription no 8, « publiée par Cherbonneau » : « Ceci est le tombeau du pèlerin, du légiste, du cadi, du prédicateur, le cheikh Hassen ben Khalf-Allah ben Badis ben El-Kassem ben Mimoun ben Badis El-Qaïsi Abou Ali, décédé en l'année 784 (1382) ». Mercier ajoute que l'inscription « a disparu depuis la conquête », qu'elle était gravée sur une pierre tombale de la mosquée de Sidi Ner'r'ach, que « le cheikh Hassen est un ancêtre de la famille des Ben Badis, une des plus anciennes de Constantine, qui a donné à la ville de nombreux cadis jusque dans ces dernières années », qu'il était déjà cadi en 1357, et que « l'adjectif Qaïsi indique qu'elle prétend se rattacher à la célèbre tribu arabe de Qaïs ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "Lu en 1901"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ben Badis se lit « fils de Badis » : ben veut dire « fils de », et la pierre de 1382 place deux Badis parmi les aïeux du cadi Hassen, selon la traduction de Gustave Mercier.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Corpus des inscriptions arabes et turques de l'Algérie. Département de Constantine",
+                "author": "Gustave Mercier",
+                "year": 1901,
+                "url": "https://archive.org/details/corpusdesinscrip02coliuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 12 (inscription no 8)",
+                "notes": "Gustave Mercier, avocat au barreau de Constantine et secrétaire de la Société archéologique, Paris, Ernest Leroux, bibliothèque d'archéologie africaine, fascicule V ; exemplaire numérisé d'archive.org, dont la notice donne 1901 (la page de titre lue ne porte pas de date). Page lue sur l'image de la page imprimée. Inscription no 8, « publiée par Cherbonneau » : « Ceci est le tombeau du pèlerin, du légiste, du cadi, du prédicateur, le cheikh Hassen ben Khalf-Allah ben Badis ben El-Kassem ben Mimoun ben Badis El-Qaïsi Abou Ali, décédé en l'année 784 (1382) ». Mercier ajoute que l'inscription « a disparu depuis la conquête », qu'elle était gravée sur une pierre tombale de la mosquée de Sidi Ner'r'ach, que « le cheikh Hassen est un ancêtre de la famille des Ben Badis, une des plus anciennes de Constantine, qui a donné à la ville de nombreux cadis jusque dans ces dernières années », qu'il était déjà cadi en 1357, et que « l'adjectif Qaïsi indique qu'elle prétend se rattacher à la célèbre tribu arabe de Qaïs ». Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Étude anthroponymique de la commune d'Aokas de 1962 à 1970",
+                "author": "Lynda Salhi",
+                "year": 2015,
+                "url": "https://bucket.theses-algerie.com/files/repositories-dz/1532970119996190.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 44",
+                "notes": "Mémoire de master en sciences du langage, Université Abderrahmane Mira de Béjaïa, 2014-2015 ; texte intégral lu, pages numérotées de l'imprimé. Il étudie les prénoms inscrits à l'état civil d'Aokas de 1962 à 1970. Page 44 : « La particule « bel » est une altération phonétique de « ben », « fils de » » ; elle vaut pour le sens de ben. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1882,
+              "to": 1882,
+              "label": "Loi du 23 mars 1882"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ben Badis relève, comme tout nom de famille algérien, de l'état civil que l'administration française impose aux Algériens musulmans par la loi du 23 mars 1882 : chaque famille doit alors porter un nom unique, transmis de génération en génération, là où l'on se nommait par la filiation. Les sources lues ne disent pas quand les familles Ben Badis ont reçu ce nom.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Qui es-tu ? J'ai été dit. De la destruction de la filiation dans l'État civil d'Algérie ou éléments d'un onomacide sémantique",
+                "author": "Farid Benramdane",
+                "year": 2000,
+                "url": "https://insaniyat.crasc.dz/en/article/qui-es-tu-jai-ete-dit-de-la-destruction-de-la-filiation-dans-letat-civil-dalgerie-ou-elements-dun-onomacide-semantique",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 79-87 (section sur les patronymes algériens)",
+                "notes": "Insaniyat, 4(10), 2000, p. 79-87, lu en ligne en texte intégral ; la version en ligne ne marque pas les pages de l'imprimé. L'auteur écrit que l'état civil algérien est né de la loi du 23 mars 1882, précédée d'une loi de 1873, qui a imposé « l'obligation et la généralisation du patronyme » là où l'on se nommait par la filiation (ism, alam, kunya, laqab, nisba) ; il cite Charles-Robert Ageron sur les commissaires chargés d'établir cet état civil. Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Étude étymo-sémantique des patronymes de la région de Touggourt",
+                "author": "Siham Messaoudi",
+                "year": 2021,
+                "url": "https://dspace.univ-ouargla.dz/jspui/bitstream/123456789/32616/1/%25D9%2585%25D8%25B3%25D8%25B9%25D9%2588%25D8%25AF%25D9%258A%2520%25D8%25B3%25D9%2587%25D8%25A7%25D9%2585_compressed.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18",
+                "notes": "Mémoire de master en sciences du langage, Université Kasdi Merbah Ouargla, 2020-2021, dirigé par Nadjah Henka ; texte intégral lu dans le fichier déposé par l'université (pages numérotées de l'imprimé). L'autrice a choisi 215 noms de famille représentatifs dans le registre de l'état civil de la mairie de Touggourt (p. 3). Page 18 : « la présence coloniale a bouleversé le système dénominatif qui est passé d'une désignation par filiation lignagère à plusieurs éléments à un système patronymique à un seul élément », imposé « après avoir instauré l'état civil des indigènes musulmans en 1882 » ; l'introduction (p. 2) date pourtant l'état civil de 1871, et le projet suit la loi de 1882 que donne Benramdane. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1382,
+              "to": 1382,
+              "label": "Inscription de 1382"
+            },
+            "era": "polity",
+            "statement": "Le nom Ben Badis apparaît par écrit, sous la forme « ben Badis », sur la pierre tombale d'un cadi de Constantine mort en 784 de l'hégire, soit 1382 : il y est dit « Hassen ben Khalf-Allah ben Badis ben El-Kassem ben Mimoun ben Badis El-Qaïsi », selon la lecture que Gustave Mercier publie en 1901. C'est la plus ancienne trace de ce nom que le projet connaît ; la pierre a disparu après la conquête et l'on ne la connaît que par ces relevés. Elle donne la filiation d'un homme : le projet ne sait pas depuis quand le nom sert de nom de famille.",
+            "formAsWritten": "ben Badis",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Corpus des inscriptions arabes et turques de l'Algérie. Département de Constantine",
+                "author": "Gustave Mercier",
+                "year": 1901,
+                "url": "https://archive.org/details/corpusdesinscrip02coliuoft",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 12 (inscription no 8)",
+                "notes": "Gustave Mercier, avocat au barreau de Constantine et secrétaire de la Société archéologique, Paris, Ernest Leroux, bibliothèque d'archéologie africaine, fascicule V ; exemplaire numérisé d'archive.org, dont la notice donne 1901 (la page de titre lue ne porte pas de date). Page lue sur l'image de la page imprimée. Inscription no 8, « publiée par Cherbonneau » : « Ceci est le tombeau du pèlerin, du légiste, du cadi, du prédicateur, le cheikh Hassen ben Khalf-Allah ben Badis ben El-Kassem ben Mimoun ben Badis El-Qaïsi Abou Ali, décédé en l'année 784 (1382) ». Mercier ajoute que l'inscription « a disparu depuis la conquête », qu'elle était gravée sur une pierre tombale de la mosquée de Sidi Ner'r'ach, que « le cheikh Hassen est un ancêtre de la famille des Ben Badis, une des plus anciennes de Constantine, qui a donné à la ville de nombreux cadis jusque dans ces dernières années », qu'il était déjà cadi en 1357, et que « l'adjectif Qaïsi indique qu'elle prétend se rattacher à la célèbre tribu arabe de Qaïs ». Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Benbadis",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie en un seul mot du nom Ben Badis.",
+        "periodLabel": "Une graphie parmi d'autres",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2000,
+              "to": 2000,
+              "label": "Décrit en 2000"
+            },
+            "era": "modern",
+            "statement": "Le nom Benbadis est la graphie en un seul mot de Ben Badis. En Algérie, l'état civil écrit un même nom de plusieurs façons, en un ou deux mots, avec ben ou bel : Farid Benramdane cite Benhocine, Belhocine, Belhoucine ou Benhoucine pour une même descendance.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Qui es-tu ? J'ai été dit. De la destruction de la filiation dans l'État civil d'Algérie ou éléments d'un onomacide sémantique",
+                "author": "Farid Benramdane",
+                "year": 2000,
+                "url": "https://insaniyat.crasc.dz/en/article/qui-es-tu-jai-ete-dit-de-la-destruction-de-la-filiation-dans-letat-civil-dalgerie-ou-elements-dun-onomacide-semantique",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 79-87 (section sur les patronymes algériens)",
+                "notes": "Insaniyat, 4(10), 2000, p. 79-87, lu en ligne en texte intégral ; la version en ligne ne marque pas les pages de l'imprimé. L'auteur écrit que l'état civil algérien est né de la loi du 23 mars 1882, précédée d'une loi de 1873, qui a imposé « l'obligation et la généralisation du patronyme » là où l'on se nommait par la filiation (ism, alam, kunya, laqab, nisba) ; il cite Charles-Robert Ageron sur les commissaires chargés d'établir cet état civil. Il donne pour exemple de nom écrit de plusieurs façons : « Benhocine, Belhocine, Belhoucine, Benhoucine, Belhossine, Belhoçine, Belhouçine, Belhucine, Bellehoucine, etc. » Aucune source ouverte ne date la graphie Benbadis : le répertoire Forebears, qui la relève, n'a pas pu être ouvert.Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
