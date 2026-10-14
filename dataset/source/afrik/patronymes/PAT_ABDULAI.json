@@ -121,5 +121,147 @@
       "fieldPath": "homonyms",
       "reason": "Les variantes Abdullah, Abudulai et Abdulai ont été recherchées dans les sources linguistiques et administratives consultées ; elles renvoient au même continuum de formes, sans lignée homonyme distincte établie."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Abdulai est un nom de personne musulman du nord du Ghana, que M. E. Kropp Dakubu étudie chez les Dagomba. Elle l'écrit Abudulai et y voit la forme dagbani du nom arabe Abdullah, donné aux garçons nés un samedi. Les sources lues ne disent pas depuis quand il sert de nom de famille.",
+    "names": [
+      {
+        "nameText": "Abdulai",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom musulman du nord du Ghana, forme dagbani d'Abdullah, donné aux garçons nés un samedi.",
+        "periodLabel": "Écrit Abudulai dès 1921 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2000,
+              "to": 2000,
+              "label": "Décrit en 2000"
+            },
+            "era": "modern",
+            "statement": "Le nom Abdulai s'écrit Abudulai chez M. E. Kropp Dakubu, qui y voit la forme dagbani du nom musulman Abdullah. Pour elle, c'est un nom d'origine arabe, que le dagbani a reçu le plus souvent par le haoussa ; le père le choisit pour un garçon né un samedi dans la liste que lui donne l'imam.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Personal Names of the Dagomba",
+                "author": "M. E. Kropp Dakubu",
+                "year": 2000,
+                "url": "https://pdfproc.lib.msu.edu/?file=%2FDMC%2FAfrican+Journals%2Fpdfs%2FInstitue+of+African+Studies+Research+Review%2F2000v16n2%2Fasrv016002006.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 59-60",
+                "notes": "Research Review, nouvelle série, vol. 16, no 2, 2000, p. 53-65 ; texte intégral lu le 14 octobre 2026. L'autrice a recueilli ses informations en 1983 auprès d'un chercheur dagomba de Savelugu. Page 59 : l'imam fournit une liste de noms convenant au jour de naissance et le père en choisit un ; ces noms sont d'origine arabe, « transmitted to Dagbani via Hausa or in some cases perhaps Manden ». Page 60, jour du samedi, noms masculins : « Abdullah, Abudulai [ʔabulai], Abd-al-Rahman […] »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Liste électorale de 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Abdulai apparaît par écrit dans la liste électorale spéciale de 2024 de la région Northern, dont 253 lignes sur 7 342 commencent par Abdulai. C'est la plus ancienne trace de cette graphie que le projet connaît ; Abudulai est écrit dès 1921, et le nom est plus ancien que ces traces.",
+            "formAsWritten": "Abdulai",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Electoral Commission of Ghana — Northern Region Special Voters List 2024",
+                "author": "Commission électorale du Ghana",
+                "year": 2024,
+                "url": "https://ec.gov.gh/wp-content/uploads/2024/07/NORTHERN-SPECIAL-VOTERS-LIST.pdf",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "p. 2 et suivantes",
+                "notes": "Liste électorale spéciale 2024 de la région Northern, 209 pages et 7 342 lignes de noms, pour dix-huit circonscriptions ; lue le 14 octobre 2026. Les personnes vivantes de cette liste ne sont pas nommées dans la fiche. Les lignes sont de la forme « ABDULAI, prénoms », suivies d'un numéro d'électeur ; 253 des 7 342 lignes commencent par ABDULAI."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Abudulai",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie dagbani du nom Abdulai, écrite dès 1921 dans la colonie de la Côte-de-l'Or.",
+        "periodLabel": "Écrit dès 1921",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2000,
+              "to": 2000,
+              "label": "Décrit en 2000"
+            },
+            "era": "modern",
+            "statement": "Le nom Abudulai est la graphie de M. E. Kropp Dakubu pour la forme dagbani d'Abdullah ; elle note aussi sa forme enfantine, Nlae, qui peut rester comme surnom.",
+            "aspect": "usage",
+            "formAsWritten": "Abudulai",
+            "sources": [
+              {
+                "title": "Personal Names of the Dagomba",
+                "author": "M. E. Kropp Dakubu",
+                "year": 2000,
+                "url": "https://pdfproc.lib.msu.edu/?file=%2FDMC%2FAfrican+Journals%2Fpdfs%2FInstitue+of+African+Studies+Research+Review%2F2000v16n2%2Fasrv016002006.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 60-61",
+                "notes": "Research Review, nouvelle série, vol. 16, no 2, 2000, p. 53-65 ; texte intégral lu le 14 octobre 2026. L'autrice a recueilli ses informations en 1983 auprès d'un chercheur dagomba de Savelugu. Page 60, jour du samedi : « Abudulai [ʔabulai] ». Page 61 : « « baby » versions of some names […] Nlae [nlae] for Abudulai »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Liste des fonctionnaires de 1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Abudulai est porté en 1921 par Oakely Abudulai Mahama, commis payeur de 3e classe de la Constabulary des Territoires du Nord, dans le registre annuel de la colonie de la Côte-de-l'Or : il y est un second nom, devant le nom de famille Mahama.",
+            "aspect": "usage",
+            "formAsWritten": "Abudulai",
+            "sources": [
+              {
+                "title": "Gold Coast Colony. Blue Book 1921",
+                "author": "Gouvernement de la colonie de la Côte-de-l'Or (Accra)",
+                "year": 1921,
+                "url": "https://archive.org/details/blue-book-gold-coast-1921",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 114",
+                "notes": "Registre annuel de la colonie, avec la liste de ses fonctionnaires ; exemplaire numérisé sur archive.org. Lu le 14 octobre 2026. Page 114, « Northern Territories Constabulary » : « 3rd Class Pay Clerk : Oakely Abudulai Mahama », engagé le 17 août 1920."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Registre de 1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Abudulai apparaît par écrit dans le registre annuel de la colonie de la Côte-de-l'Or pour 1921, à la page 104, parmi les gardiens du service des prisons, où il est le seul nom donné à un homme. C'est la plus ancienne trace de cette forme que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "Abudulai",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Gold Coast Colony. Blue Book 1921",
+                "author": "Gouvernement de la colonie de la Côte-de-l'Or (Accra)",
+                "year": 1921,
+                "url": "https://archive.org/details/blue-book-gold-coast-1921",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 104",
+                "notes": "Registre annuel de la colonie, avec la liste de ses fonctionnaires ; exemplaire numérisé sur archive.org. Lu le 14 octobre 2026. Page 104, « Prison (continued) », liste des gardiens : « Do. Abudulai », engagé le 11 janvier 1917, salaire de 54 livres ; les gardiens voisins portent aussi un seul nom, comme Musa Wangara ou Awudu Wansan."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

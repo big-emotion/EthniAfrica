@@ -98,5 +98,115 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « Benkirane lignée », « Benkirane clan », « Benkirane tribe » et « Benkirane place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Benkirane est un nom de famille marocain, qui commence par ben, « fils ». Il est porté à Fès dès le début du XIXe siècle. On ne sait pas avec certitude ce que veut dire la suite du nom, Kirane : les sources que nous avons lues ne l'expliquent pas. Sa plus ancienne trace écrite que nous connaissons date de 1811, sous la forme Ben Kîrân.",
+    "names": [
+      {
+        "nameText": "Benkirane",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille marocain, « fils de » Kirane, porté à Fès dès 1811 ; le sens de Kirane est inconnu.",
+        "periodLabel": "Écrit sous une forme proche dès 1811 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2024,
+              "to": 2024,
+              "label": "Décrit en 2024"
+            },
+            "era": "modern",
+            "statement": "Le nom Benkirane figure, écrit Benkirane, dans le titre d'une biographie savante parue en 2024 aux éditions Karthala, Un entrepreneur du national au Maroc. Ahmed Benkirane, que présente la revue Hespéris-Tamuda. Ce n'est pas un nom de clan.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Irène Bono, Un entrepreneur du national au Maroc. Ahmed Benkirane ; traces et discrétion (Paris, Karthala, 2024), compte rendu, Hespéris-Tamuda, LIX (1)",
+                "author": "Samira Mizbar",
+                "year": 2024,
+                "url": "https://hesperis-tamuda.com/Downloads/2020-2029/2024/Fascicule-1/34.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 396",
+                "notes": "Hespéris-Tamuda, LIX (1), 2024, p. 396-399. Lu en texte intégral le 14 octobre 2026. La revue présente une biographie savante consacrée à Ahmed Benkirane, né en 1927, dont le titre porte le nom ; le compte rendu l'écrit Benkirane, sauf dans sa première ligne, où il écrit Benkiran. Il ne dit rien du sens du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1860,
+              "to": 1860,
+              "label": "Décrit en 1860"
+            },
+            "statement": "Le nom Benkirane commence par ben, mot arabe qui veut dire « fils » et que l'on prononce ainsi dans la langue de tous les jours, selon le dictionnaire de Kazimirski. On ne sait pas avec certitude ce que veut dire la suite du nom, Kirane : les sources que nous avons lues ne l'expliquent pas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionnaire arabe-français, tome 1",
+                "author": "Albert de Biberstein Kazimirski",
+                "year": 1860,
+                "url": "https://archive.org/details/dictionnairearab01bibeuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 168-169",
+                "notes": "Paris, Maisonneuve, 1860. Lu sur l'exemplaire numérisé d'archive.org le 14 octobre 2026. Page 168 : « Fils » ; page 169 : « Dans le langage usuel, où les désinences sont négligées, on prononce Ben. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1812,
+              "to": 1812,
+              "label": "1812 (1227 de l'hégire)"
+            },
+            "era": "polity",
+            "statement": "Le nom Benkirane est porté à Fès au début du XIXe siècle : la chronique de la dynastie alaouite écrit « ben Kîrân Elfèsi », c'est-à-dire « de Fès », pour un savant très réputé, mort en 1227 de l'hégire (1812), Sîdi Mohammed Ettayyéb ben 'Abdelméjîd ben 'Abdesselâm ben Kîrân.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Kitâb el-Istiqsâ li-akhbâri doual el-Maghrib el-Aqsâ, quatrième partie : Chronique de la dynastie alaouie du Maroc, tome II (Archives marocaines, vol. X)",
+                "author": "Ahmed ben Khâled Ennâsiri Esslâoui ; traduction d'Eugène Fumey",
+                "year": 1907,
+                "url": "https://archive.org/details/32882019289126-archivesmarocai",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 42",
+                "notes": "Paris, Ernest Leroux, 1907. Chronique marocaine du XIXe siècle, lue dans la traduction française sur l'exemplaire numérisé d'archive.org le 14 octobre 2026. Page 42, année 1227 de l'hégire : « mourut le chéïkh très docte, l'imâm, le dernier des scrutateurs du Magrib, Sîdi Mohammed Ettayyéb ben 'Abdelméjîd ben 'Abdesselâm ben Kîrân Elfèsi, auteur d'ouvrages remarquables »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1811,
+              "to": 1811,
+              "label": "1811 (1226 de l'hégire)"
+            },
+            "era": "polity",
+            "statement": "Le nom Benkirane apparaît sous la forme Ben Kîrân dans la chronique de la dynastie alaouite d'Ahmed ben Khâled Ennâsiri Esslâoui, traduite en 1907 : en 1226 de l'hégire, le qâdi Aboûlfadl El'abbâs Ben Kîrân fait partie des savants que le sultan Moulay Slimane envoie avec son fils en pèlerinage au Hedjâz. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "Ben Kîrân",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Aboûlfadl El'abbâs Ben Kîrân",
+                "role": "qâdi nommé dans la chronique"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Kitâb el-Istiqsâ li-akhbâri doual el-Maghrib el-Aqsâ, quatrième partie : Chronique de la dynastie alaouie du Maroc, tome II (Archives marocaines, vol. X)",
+                "author": "Ahmed ben Khâled Ennâsiri Esslâoui ; traduction d'Eugène Fumey",
+                "year": 1907,
+                "url": "https://archive.org/details/32882019289126-archivesmarocai",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 35",
+                "notes": "Paris, Ernest Leroux, 1907. Chronique marocaine du XIXe siècle, lue dans la traduction française sur l'exemplaire numérisé d'archive.org le 14 octobre 2026. Page 35, année 1226 de l'hégire : le sultan Moulay Slimane envoie son fils Moûlay Aboû Ishâq Brâhîm en pèlerinage au Hedjâz, avec des savants et des notables du Maghreb, « comme le fqih très docte, le qâdi Aboûlfadl El'abbâs Ben Kîrân »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

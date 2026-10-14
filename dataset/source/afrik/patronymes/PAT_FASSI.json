@@ -109,5 +109,154 @@
       "fieldPath": "transmissionMode",
       "reason": "Les recherches « Fassi transmission patronyme », « Fassi filiation » et « Fassi hereditary surname » n’ont pas établi si, ni comment, cette forme se transmet dans les communautés concernées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Fassi est un nom de famille marocain, qui désigne quelqu'un de Fès. On l'écrit aussi El Fassi, et Alfasi dans les textes les plus anciens que le projet a lus. Les sources lues rattachent ce nom à la ville de Fès ; nous présentons plus bas ce qu'elles disent.",
+    "names": [
+      {
+        "nameText": "Fassi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille qui désigne quelqu'un de Fès ; une forme proche, Alfasi, est notée pour l'an 1013.",
+        "periodLabel": "Une forme proche écrite pour l'an 1013 ; employé en 1964",
+        "accounts": [
+          {
+            "period": {
+              "from": 1964,
+              "to": 1964,
+              "label": "Décrit en 1964"
+            },
+            "era": "modern",
+            "statement": "Le nom Fassi désigne les gens de Fès : David Corcos écrit en 1964 « the Fassis (people of Fez) » à propos de musulmans de Marrakech qui, après une dispute avec l'un d'eux, lancent un proverbe contre les convertis.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Jews of Morocco under the Marinides (Continued)",
+                "author": "David Corcos",
+                "year": 1964,
+                "url": "https://mellahdefes.fr/resources/Documents/juifs-maroc-sous-Merinides.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 63",
+                "notes": "The Jewish Quarterly Review, vol. 55, n° 1, juillet 1964, p. 53-81 (University of Pennsylvania Press). Lu le 14 octobre 2026 dans une copie non officielle de l'article, déposée sur un site consacré au mellah de Fès. Page 63 : « In Marrakesh, Moslems who do not like the Fassis (people of Fez) will say, after a quarrel with one of them… » ; le proverbe qui suit vise les convertis à l'islam."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1013,
+              "to": 1103,
+              "label": "Né en 1013, mort en 1103 ; notice de 1901"
+            },
+            "era": "polity",
+            "statement": "Le nom Fassi apparaît sous une forme proche, Alfasi, comme nom d'Isaac ben Jacob Alfasi, talmudiste né en 1013 près de Fès et mort à Lucena en 1103, selon Michael Friedländer, dans la Jewish Encyclopedia de 1901. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit ce qu'un auteur de 1901 en rapporte, pas depuis quand des familles le portent.",
+            "formAsWritten": "Alfasi",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Isaac ben Jacob Alfasi",
+                "role": "porte ce nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Alfasi, Isaac ben Jacob",
+                "author": "Michael Friedländer",
+                "year": 1901,
+                "url": "https://jewishencyclopedia.com/articles/1191-alfasi-isaac-ben-jacob",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "vol. 1, p. 375",
+                "notes": "The Jewish Encyclopedia, vol. 1, New York et Londres, Funk and Wagnalls, 1901, p. 375-377. Lu le 14 octobre 2026 dans l'édition en ligne, qui indique la pagination imprimée. Première phrase de la notice : « Eminent Talmudist ; born in 1013 at Kala't ibn Ḥamad, a village near Fez, in North Africa (whence his surname, which is sometimes attached also to Judah Ḥayyug, the grammarian) ; died at Lucena, 1103. » La notice place ce village près de Fès ; le projet n'a pas lu d'autre source sur l'endroit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1901,
+              "to": 1901,
+              "label": "Proposé en 1901"
+            },
+            "era": "polity",
+            "statement": "Le nom Fassi viendrait de la ville de Fès : la Jewish Encyclopedia écrit à propos d'Isaac Alfasi, né près de Fès, « whence his surname », d'où vient son nom de famille, selon Michael Friedländer.",
+            "hypothesisGroup": "origine du nom Fassi",
+            "sources": [
+              {
+                "title": "Alfasi, Isaac ben Jacob",
+                "author": "Michael Friedländer",
+                "year": 1901,
+                "url": "https://jewishencyclopedia.com/articles/1191-alfasi-isaac-ben-jacob",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "vol. 1, p. 375",
+                "notes": "The Jewish Encyclopedia, vol. 1, New York et Londres, Funk and Wagnalls, 1901, p. 375-377. Lu le 14 octobre 2026 dans l'édition en ligne, qui indique la pagination imprimée. Première phrase de la notice : « Eminent Talmudist ; born in 1013 at Kala't ibn Ḥamad, a village near Fez, in North Africa (whence his surname, which is sometimes attached also to Judah Ḥayyug, the grammarian) ; died at Lucena, 1103. » La notice place ce village près de Fès ; le projet n'a pas lu d'autre source sur l'endroit."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "El Fassi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Notice de 1911"
+            },
+            "statement": "Le nom Fassi apparaît sous la forme el Fassi dans l'Encyclopaedia Britannica de 1911 : Mahommed b. Idris el Fassi y est le chef des Khadirites, une confrérie d'origine marocaine, que le fondateur de la confrérie senoussie rejoint à La Mecque. C'est la plus ancienne trace de cette graphie que le projet connaît.",
+            "formAsWritten": "el Fassi",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Mahommed b. Idris el Fassi",
+                "role": "porte ce nom"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Senussi and Senussites, dans Encyclopaedia Britannica, 11e édition, vol. 24",
+                "author": "Encyclopaedia Britannica",
+                "year": 1911,
+                "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Senussi_and_Senussites",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 649",
+                "notes": "Encyclopaedia Britannica, 11e édition, 1911, vol. 24. Article de Frank Richardson Cana. Lu le 14 octobre 2026 sur la transcription de Wikisource, qui conserve la pagination imprimée. Début de l'article, notice du fondateur de la confrérie senoussie : il est appelé « Mahommed ben Ali ben Es Senussi el Khettabi el Hassani el Idrissi el Mehajiri », né près de Mostaganem, en Algérie, entre 1791 et 1803 selon les versions, de descendance rattachée à Fatima, fille de Mahomet ; à La Mecque il rejoint « Mahommed b. Idris el Fassi, the head of the Khadirites, a fraternity of Moroccan origin ». L'article ne dit pas d'où viennent ces noms d'appartenance."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2004,
+              "to": 2004,
+              "label": "Décrit en 2004"
+            },
+            "era": "modern",
+            "statement": "Le nom El Fassi est écrit « El FASSI » dans l'annuaire du monde de la CIA en 2004, où Abbas El Fassi est nommé chef du parti de l'Istiqlal, au Maroc.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "The World Factbook 2004 — Morocco",
+                "author": "Central Intelligence Agency",
+                "year": 2004,
+                "url": "https://en.wikisource.org/wiki/CIA_World_Fact_Book,_2004/Morocco",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "rubrique « Political parties and leaders »",
+                "notes": "Fiche « Morocco » de l'annuaire de la CIA, version de 2004 (mise à jour au 1er janvier 2003). Lu le 14 octobre 2026 sur la transcription de Wikisource. Rubrique « Political parties and leaders ». Parti de l'Istiqlal (« Independence Party »), « Abbas El FASSI ». Ce texte nomme des chefs de partis ; il ne dit rien de l'origine des noms."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

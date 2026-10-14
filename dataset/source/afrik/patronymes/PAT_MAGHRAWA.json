@@ -20,7 +20,10 @@
     {
       "spelling": "Maġrāwa",
       "attestations": [
-        { "countryId": "DZA", "sourceRefs": ["maghrawa-mcharek"] }
+        {
+          "countryId": "DZA",
+          "sourceRefs": ["maghrawa-mcharek"]
+        }
       ]
     }
   ],
@@ -111,5 +114,131 @@
   "nisbaSubtype": {
     "value": "tribal",
     "sourceRefs": ["maghrawa-mcharek", "maghrawa-asjp"]
+  },
+  "nameHistory": {
+    "summary": "Le nom Maghrawa est celui d'une grande tribu berbère zénète du Maghreb central, dans l'Algérie d'aujourd'hui. Les auteurs français l'écrivent Maghraoua. Ibn Khaldoun la fait descendre d'un ancêtre nommé Maghraou ; les sources lues ne donnent pas d'autre explication du nom, et ne disent pas s'il est porté aujourd'hui comme nom de famille.",
+    "names": [
+      {
+        "nameText": "Maghrawa",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une grande tribu berbère zénète du Maghreb central, issue de Maghraou selon Ibn Khaldoun.",
+        "periodLabel": "Écrit Maghraoua au XIVe siècle, chez Ibn Khaldoun",
+        "accounts": [
+          {
+            "period": {
+              "from": 601,
+              "to": 1100,
+              "label": "Du VIIe au XIe siècle, selon un article de 2024"
+            },
+            "era": "polity",
+            "statement": "Le nom Maghrawa désigne, du VIIe au XIe siècle, une tribu qui s'impose comme force politique et militaire dans le Maghreb central et qui s'allie aux autres puissances de la région, selon le résumé d'un article de Houssam Salahi (2024). Elle fonde plus tard son État hors de son pays d'origine.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "قبيلة مغراوة وتحالفاتها العسكرية والسياسية في بلاد المغرب الأوسط، من الفتح إلى تأسيس الدولة المغراوية",
+                "author": "Houssam Salahi",
+                "year": 2024,
+                "url": "https://asjp.cerist.dz/en/article/244926",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 33",
+                "notes": "Revue des études historiques militaires 6(1), 2024, p. 33-47, Université d'Alger 2. Seul le résumé anglais a été lu : le texte arabe du fichier PDF ne se laisse pas extraire. Page 33 : résumé anglais : la tribu Maghrawa « imposed itself as a political and military force in the Middle Maghreb » du VIIe au XIe siècle ; les attaques fatimides l'obligent à quitter son pays d'origine et à fonder son État hors de ses limites géographiques connues."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1332,
+              "to": 1406,
+              "label": "XIVe siècle, chez Ibn Khaldoun"
+            },
+            "era": "polity",
+            "statement": "Le nom Maghrawa désigne chez Ibn Khaldoun la plus grande branche des Zénètes, la plus brave et la plus puissante, qui vit sous la tente et parcourt le Maghreb central, de Ghelif à Tlemcen et aux montagnes de Medîouna.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome III",
+                "author": "Ibn Khaldoun, traduit par William Mac Guckin de Slane",
+                "year": 1856,
+                "url": "https://archive.org/details/bub_gb_T9IOAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 227",
+                "notes": "Alger, Imprimerie du gouvernement, lu sur sa numérisation le 14 octobre 2026. Ibn Khaldoun a vécu de 1332 à 1406, selon l'Histoire générale de l'Afrique. Page 227, notice « Les Maghraoua », « peuple zenatien de la première race » : « Les tribus maghraouiennes formaient la plus grande branche de la race zenatienne », dont le pays « s'étend depuis [la ville de] Ghelif jusqu'à Tlemcen et, de là, aux montagnes de Medîouna »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Maghrawa est le nom d'une tribu berbère zénète du Maghreb central. Une seule explication de son origine est connue ; nous la présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome III",
+                "author": "Ibn Khaldoun, traduit par William Mac Guckin de Slane",
+                "year": 1856,
+                "url": "https://archive.org/details/bub_gb_T9IOAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 227",
+                "notes": "Alger, Imprimerie du gouvernement, lu sur sa numérisation le 14 octobre 2026. Ibn Khaldoun a vécu de 1332 à 1406, selon l'Histoire générale de l'Afrique. Page 227 : généalogie de la tribu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1332,
+              "to": 1406,
+              "label": "XIVe siècle, chez Ibn Khaldoun"
+            },
+            "era": "polity",
+            "statement": "Le nom Maghrawa serait celui de Maghraou, fils d'Islîten, ancêtre de la tribu, selon la généalogie qu'Ibn Khaldoun donne pour elle ; il en fait la sœur des Beni-Ifren et des Beni-Irnîan, et note que les généalogistes ne s'accordent pas sur la filiation de ces trois peuples.",
+            "hypothesisGroup": "origine du nom Maghrawa",
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome III",
+                "author": "Ibn Khaldoun, traduit par William Mac Guckin de Slane",
+                "year": 1856,
+                "url": "https://archive.org/details/bub_gb_T9IOAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 227",
+                "notes": "Alger, Imprimerie du gouvernement, lu sur sa numérisation le 14 octobre 2026. Ibn Khaldoun a vécu de 1332 à 1406, selon l'Histoire générale de l'Afrique. Page 227 : « Issues de Maghraou, fils d'Isliten, fils de Mesri, fils de Zakîa, fils d'Ourcîk [Ourchîk], fils d'Addîdet, fils de Djana, elles avaient pour sœurs les Beni-Ifren et les Beni-Irnîan. Dans notre notice des Beni-Ifren on trouvera indiquée la diversité d'opinions qui règne au sujet de la filiation de ces trois peuples. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1332,
+              "to": 1406,
+              "label": "XIVe siècle, chez Ibn Khaldoun"
+            },
+            "era": "polity",
+            "statement": "Le nom Maghrawa apparaît par écrit sous une forme proche, Maghraoua, l'écriture française de la traduction, dans l'Histoire des Berbères d'Ibn Khaldoun, qui lui consacre une notice. C'est la plus ancienne trace de ce nom que le projet connaît ; la tribu existait déjà avant lui, à l'arrivée de l'islam.",
+            "formAsWritten": "Maghraoua",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Histoire des Berbères et des dynasties musulmanes de l'Afrique septentrionale, tome III",
+                "author": "Ibn Khaldoun, traduit par William Mac Guckin de Slane",
+                "year": 1856,
+                "url": "https://archive.org/details/bub_gb_T9IOAAAAQAAJ",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 227",
+                "notes": "Alger, Imprimerie du gouvernement, lu sur sa numérisation le 14 octobre 2026. Ibn Khaldoun a vécu de 1332 à 1406, selon l'Histoire générale de l'Afrique. Page 227, titre de la notice : « Notice des Maghraoua, peuple zenatien de la première race, origine et vicissitudes des dynasties qu'ils fondèrent en Maghreb ». Le texte arabe d'Ibn Khaldoun n'a pas été lu, ni les auteurs arabes plus anciens."
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

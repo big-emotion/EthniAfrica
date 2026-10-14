@@ -11,7 +11,10 @@
     {
       "spelling": "Amoah",
       "attestations": [
-        { "countryId": "GHA", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "GHA",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -75,5 +78,87 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Amoah est un nom de personne akan du Ghana, que le livre de Christaller de 1881 écrit Amoa et donne à deux rois fante. Les sources lues ne disent pas ce qu'il veut dire : on ne sait pas avec certitude d'où il vient.",
+    "names": [
+      {
+        "nameText": "Amoah",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne akan du Ghana, écrit Amoa dès 1881 ; son sens reste inconnu.",
+        "periodLabel": "Forme proche Amoa dès 1881 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Liste des fonctionnaires de 1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Amoah est porté en 1921 par au moins quatre employés de l'administration de la colonie de la Côte-de-l'Or, dont un commis et un chef de gare du chemin de fer et un surintendant de la police.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Gold Coast Colony. Blue Book 1921",
+                "author": "Gouvernement de la colonie de la Côte-de-l'Or (Accra)",
+                "year": 1921,
+                "url": "https://archive.org/details/blue-book-gold-coast-1921",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 132",
+                "notes": "Registre annuel de la colonie, avec la liste de ses fonctionnaires ; exemplaire numérisé sur archive.org. Lu le 14 octobre 2026. Page 132, liste alphabétique des fonctionnaires : « Amoah, C. E. » (commis de 1re classe, chemin de fer), « Amoah, C. D. » (chef de gare de 1re classe, chemin de fer), « Amoah, E. R. » (commis de 3e classe, agriculture) et « Amoah, J. P. » (surintendant, police). Les noms sont écrits ainsi : famille d'abord, puis initiales."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1868,
+              "to": 1868,
+              "label": "Roi cité pour 1868, dans un livre de 1881"
+            },
+            "statement": "Le nom Amoa est celui de deux rois fante cités par Johann Gottlieb Christaller : Kwabena Amoa, parmi les rois d'Abakrampa, et Okra Amoa, roi de Dunkwa en 1868.",
+            "aspect": "usage",
+            "formAsWritten": "Amoa",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 638",
+                "notes": "Bâle, Evangelical Missionary Society, 1881 ; exemplaire numérisé sur archive.org. Lu le 14 octobre 2026. Page 638, « Gold Coast Colony », n° 14 « Abora » : « Towns : Abakrampa ; kings : Otu, Kwasi Tutu ; Kwabena Amoa (Omah-ano) ; Otutu Ababio 1868. […] Dunkwa ; king : Okra Amoa 1868. ». Christaller ne dit pas si ces deux hommes portent le même nom. Missionnaire de Bâle, cité pour les formes qu'il écrit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Décrit en 1881"
+            },
+            "statement": "Le nom Amoah apparaît par écrit sous une forme proche, Amoa, dans le dictionnaire de Johann Gottlieb Christaller : la liste des noms de personnes akan la cite sans explication, et l'auteur note que de beaucoup de ces noms le sens premier n'est pas connu. C'est la plus ancienne trace de cette forme que le projet connaît ; on ne sait pas avec certitude ce que le nom veut dire, et il est plus ancien qu'elle.",
+            "formAsWritten": "Amoa",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 667",
+                "notes": "Bâle, Evangelical Missionary Society, 1881 ; exemplaire numérisé sur archive.org. Lu le 14 octobre 2026. Annexe G, « Proper Names of Persons », p. 666-667 : chacun porte d'ordinaire deux noms, dont l'un dit le jour de naissance ; l'auteur note que de beaucoup de ces noms le sens premier n'est pas connu. Amoa figure dans la liste de la page 667, entre Amõ et Amoakõ. Missionnaire de Bâle, cité pour les formes qu'il écrit."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

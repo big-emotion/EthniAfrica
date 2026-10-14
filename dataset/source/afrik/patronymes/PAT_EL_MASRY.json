@@ -109,5 +109,122 @@
       "fieldPath": "transmissionMode",
       "reason": "Les recherches « El Masry transmission patronyme », « El Masry filiation » et « El Masry hereditary surname » n’ont pas établi si, ni comment, cette forme se transmet dans les communautés concernées."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom El Masry est un nom d'appartenance arabe qui désigne l'Égyptien, que l'on écrit aussi Al-Masri. Une forme proche, el Masri, apparaît en 1769-1770 dans la traduction française d'une chronique du Caire. Nous présentons plus bas l'explication de son origine que nous connaissons.",
+    "names": [
+      {
+        "nameText": "El Masry",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une nisba arabe : « l'Égyptien ».",
+        "periodLabel": "Écrit el Masri dès 1769 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1985,
+              "to": 2022,
+              "label": "Proposée en 1985, reprise en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom El Masry désignerait l'Égyptien : le Dictionary of American Family Names le range sous Masri, nom qui désigne un Égyptien, et note que Elmasri est Masri avec l'article el, « le ». L'encyclopédie des noms arabes de l'université Sultan Qaboos y voit une nisba, c'est-à-dire un nom d'appartenance, à Miṣr.",
+            "hypothesisGroup": "origine du nom El Masry",
+            "sources": [
+              {
+                "title": "Sultan Qaboos Encyclopedia of Arab Names — مِصْري",
+                "author": "Université Sultan Qaboos",
+                "year": 1985,
+                "url": "https://arabiclexicon.hawramani.com/?p=119147",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée « مِصْري »",
+                "notes": "Encyclopédie des noms arabes de l'université Sultan Qaboos (1985), lue le 14 octobre 2026 sur sa reproduction en ligne du Hawramani Arabic Lexicon, qui n'indique pas les pages du livre. L'entrée dit : « de la racine m-ṣ-r, nisba à Miṣr » (« من (م ص ر) نسبة إلى مِصْر »), c'est-à-dire un nom d'appartenance à ce lieu."
+              },
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Masri",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/masri?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 14 octobre 2026 ; le site affichait une traduction française de la notice. La notice dit : musulman, surtout du Levant : nom qui désigne un Égyptien, d'un mot arabe voisin de Miṣrī, « Égyptien » ; une seconde entrée, juive et venue de Syrie, a la même origine. La notice invite à comparer Almasri et Elmasri."
+              },
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Elmasri",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/elmasri?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 14 octobre 2026 ; le site affichait une traduction française de la notice. La notice dit : musulman (aussi El-Masri) : variante de Masri, avec l'ajout de el, « le »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1769,
+              "to": 1770,
+              "label": "Année 1183 de l'hégire (1769-1770)"
+            },
+            "era": "polity",
+            "statement": "Le nom El Masry apparaît par écrit sous une forme proche, el Masri, dans la traduction française des chroniques d'al-Jabarti : un savant né à Fez y est appelé « Aly Ibn El Arabi, Ibn Aly, Ibn el Arabi el Fassi el Masri », dans une notice de l'année 1183 de l'hégire (1769-1770). C'est la plus ancienne trace de ce nom que le projet connaît ; le texte ne dit pas pourquoi cet homme porte aussi ce nom.",
+            "formAsWritten": "el Masri",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Aly Ibn El Arabi, dit El Sakkat",
+                "role": "savant né à Fez"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Merveilles biographiques et historiques, ou Chroniques du cheikh Abd-el-Rahman el Djabarti, tome III",
+                "author": "Abd al-Rahman al-Jabarti, traduit par Chefik Mansour bey, Abdulaziz Kalil bey, Gabriel Nicolas Kalil bey et Iskender Ammoun effendi",
+                "year": 1889,
+                "url": "https://archive.org/details/merveillesbiogra03jaba",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 69",
+                "notes": "Le Caire, Imprimerie nationale, 1889. Lu le 14 octobre 2026 sur la copie numérisée d'archive.org, aux pages indiquées. Page 69, année 1183 : « Notre seigneur, le maître, Aly Ibn El Arabi, Ibn Aly, Ibn el Arabi el Fassi el Masri, connu sous le nom de El Sakkat. Il naquit à Fez, où il étudia sous la direction de son père. »"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Al-Masri",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Employé aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Al-Masri s'écrit aussi Almasri, forme que le Dictionary of American Family Names invite à comparer avec Masri, nom qui désigne un Égyptien et qu'il dit porté surtout au Levant.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Masri",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/masri?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 14 octobre 2026 ; le site affichait une traduction française de la notice. La notice dit : musulman, surtout du Levant : nom qui désigne un Égyptien, d'un mot arabe voisin de Miṣrī, « Égyptien » ; une seconde entrée, juive et venue de Syrie, a la même origine. La notice invite à comparer Almasri et Elmasri."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

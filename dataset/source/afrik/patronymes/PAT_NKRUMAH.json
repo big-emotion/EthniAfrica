@@ -96,5 +96,65 @@
       "fieldPath": "peoples",
       "reason": "La recension attribue Nkrumah à la langue akan sans préciser le sous-groupe nzema ; les recherches « Nkrumah Nzema name » et « Nkrumah Nzema anthroponymy » n'ont pas établi cette précision, qui reste « supposed »."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Nkrumah est un nom de personne akan du Ghana. Il se lit « neuvième-né » : c'est un nom qui dit le rang de naissance, non le jour. Christaller l'écrit Nkoromma et le dit du neuvième enfant.",
+    "names": [
+      {
+        "nameText": "Nkrumah",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom akan qui dit le neuvième enfant ; une forme proche, Nkoromma, est écrite dès 1881.",
+        "periodLabel": "Forme proche écrite dès 1881",
+        "accounts": [
+          {
+            "period": {
+              "from": 1973,
+              "to": 1973,
+              "label": "Cité en 1973"
+            },
+            "era": "modern",
+            "statement": "Le nom Nkrumah est un nom d'homme akan du Ghana qui veut dire « neuvième-né », selon Elsdon C. Smith, qui le cite en recensant l'ouvrage d'Ogonna Chuks-orji, Names from Africa, de 1972.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Review of Names from Africa, Their Origin, Meaning, and Pronunciation",
+                "author": "Elsdon C. Smith",
+                "year": 1973,
+                "url": "https://ans-names.pitt.edu/ans/article/download/733/732",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 57",
+                "notes": "Recension parue dans Names, texte intégral lu le 14 octobre 2026. Page 57 : « Nkrumah, pronounced 'n-KROO-mah, meaning « ninth born » comes from the Akan language as spoken in Ghana ». La recension ne précise pas le sous-groupe akan."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Décrit en 1881"
+            },
+            "statement": "Le nom Nkrumah apparaît par écrit sous une forme proche, Nkoromma, dans le dictionnaire de Johann Gottlieb Christaller, comme nom du neuvième enfant. Il l'écrit aussi Nkromma dans sa liste de noms de personnes et le rapproche du nom ga Akron. C'est la plus ancienne trace de ce nom que le projet connaît ; le nom est plus ancien qu'elle.",
+            "formAsWritten": "Nkoromma",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 250 ; p. 667",
+                "notes": "Bâle, Evangelical Missionary Society, 1881 ; exemplaire numérisé sur archive.org. Page 250, entrée « Nkoromma » : nom propre, « the ninth child », avec le renvoi « [G. Akron] », c'est-à-dire au ga. Page 667, annexe G : « Nkromma » figure dans la liste des noms de personnes. Missionnaire de Bâle, cité pour les formes qu'il écrit. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

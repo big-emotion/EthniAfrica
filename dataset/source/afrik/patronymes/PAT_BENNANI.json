@@ -98,5 +98,94 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « Bennani lignée », « Bennani clan », « Bennani tribe » et « Bennani place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Bennani est un nom de famille marocain, cité parmi les noms de familles de villes que les Andalous ont habitées. Un auteur le range parmi les noms qui viennent de grandes familles andalouses ; nous le présentons plus bas comme une hypothèse. On ne sait pas avec certitude ce que veut dire le nom lui-même. Sa plus ancienne trace écrite que nous connaissons date de 1890, sous la forme Oulad-ben-Nani.",
+    "names": [
+      {
+        "nameText": "Bennani",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille marocain, cité parmi des familles de Meknès dès 1890 ; son origine andalouse n'est qu'une hypothèse.",
+        "periodLabel": "Écrit sous une forme proche dès 1890 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2005,
+              "to": 2005,
+              "label": "Décrit en 2005"
+            },
+            "era": "modern",
+            "statement": "Le nom Bennani est cité parmi des noms de familles de villes marocaines, surtout de celles que les Andalous ont habitées, comme Rabat, Salé, Fès, Tétouan, Chaouen ou Tanger : ces noms se sont transmis de génération en génération, selon Lhoussain Rachid, de l'Institut royal de la culture amazighe.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Tatouage de la Mémoire — Institut royal de la culture amazighe",
+                "author": "Lhoussain Rachid",
+                "year": 2005,
+                "url": "https://biblio.ircam.ma/pmb/uploads/publications/72.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 100",
+                "notes": "Série Traduction n° 7, traduction de Saadia Aït Taleb, IRCAM, 2005. Lu en texte intégral le 14 octobre 2026. Page 100 : « Des noms comme « Benchekroun », « Gessous », « Bennani », « Benjelloun » […] ont été transmis de génération en génération sans le moindre problème », dans les villes, « notamment celles habitées par les Andalous, tels Rabat, Salé, Fès, Tétouan, Chaouen, Tanger »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1999,
+              "to": 1999,
+              "label": "Proposée en 1999"
+            },
+            "era": "modern",
+            "statement": "Le nom Bennani viendrait d'une grande famille musulmane d'Andalousie : l'universitaire Terrence M. Potter range Bennani, avec Benchekroun, parmi les noms de famille traditionnels du Maroc qui peuvent venir de familles andalouses réputées. On ne sait pas avec certitude ce que veut dire le nom lui-même : les sources que nous avons lues ne l'expliquent pas.",
+            "hypothesisGroup": "origine du nom Bennani",
+            "sources": [
+              {
+                "title": "« Si Mohammed! » : Names as Address Forms in Moroccan Arabic, Names, vol. 47, n° 2",
+                "author": "Terrence M. Potter",
+                "year": 1999,
+                "url": "https://ans-names.pitt.edu/ans/article/download/1544/1543/3090",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 158",
+                "notes": "American Name Society, juin 1999, p. 157-172. Lu en texte intégral le 14 octobre 2026. Page 158 : « Traditional family names may derive from prestigious Andalusian Muslim families (Benchekroun, Bennani) […] ». Les noms traditionnels étaient la règle avant 1950."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1890,
+              "to": 1902,
+              "label": "Relevé de 1890, publié en 1902"
+            },
+            "era": "polity",
+            "statement": "Le nom Bennani apparaît sous une forme proche, Oulad-ben-Nani, dans les notes qu'Alfred Le Chatelier rédige sur les villes et tribus du Maroc en 1890 et publie en 1902 : parmi les principales familles de Meknès, il cite les « Oulad-ben-Nani (Meknessiya) », des lettrés (tholba) et des marchands. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "Oulad-ben-Nani",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Alfred Le Chatelier",
+                "role": "auteur des notes de 1890"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Notes sur les villes et tribus du Maroc en 1890",
+                "author": "Alfred Le Chatelier",
+                "year": 1902,
+                "url": "https://archive.org/details/notessurlesvill00chatgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 51",
+                "notes": "Notes de voyage publiées en 1902, lues sur l'exemplaire numérisé d'archive.org le 14 octobre 2026. Page 51, à Meknès, « Fractionnement. — Principales familles ou fractions : Oulad-ben-Nani (Meknessiya). Tholba et marchands. »"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
