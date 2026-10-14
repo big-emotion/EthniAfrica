@@ -11,12 +11,15 @@
     {
       "spelling": "Akhannouch",
       "attestations": [
-        { "countryId": "MAR", "sourceRefs": ["akhannouch-gov-ma"] }
+        {
+          "countryId": "MAR",
+          "sourceRefs": ["akhannouch-gov-ma"]
+        }
       ]
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -43,7 +46,7 @@
   "sources": [
     {
       "sourceKey": "akhannouch-gov-ma",
-      "title": "Sa Majesté le Roi nomme M. Aziz Akhannouch Chef du gouvernement",
+      "title": "Sa Majesté le Roi Mohammed VI, que Dieu L'assiste, a reçu, le 10 septembre 2021, M. Aziz Akhannouch, que le Souverain a nommé chef du gouvernement",
       "url": "https://www.cg.gov.ma/fr/node/10419",
       "tier": "official",
       "source_kind": "government",
@@ -82,6 +85,76 @@
     {
       "fieldPath": "homonyms",
       "reason": "Les catalogues d’autorité, répertoires onomastiques et recherches multilingues consultés n’ont pas permis d’identifier deux origines distinctes sous la graphie Akhannouch."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Akhannouch est le nom d'une famille, que le site Le360 décrit à partir de son patriarche : aucune source consultée n'en fait un nom de clan. Le modèle n'a pas de case pour un nom de famille héréditaire de ce genre : la fiche garde la case des noms de clan, la plus proche, avec la lignée pour unité, sans dire que Akhannouch est un clan."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Akhannouch est un nom de famille marocain, porté par une famille dont le patriarche est originaire d'un douar près de Tafraout, dans le Souss. On ne sait pas avec certitude ce qu'il veut dire : les sources que nous avons lues ne l'expliquent pas. Sa plus ancienne trace écrite que nous avons pu lire date de 2021.",
+    "names": [
+      {
+        "nameText": "Akhannouch",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille marocain, lié à un douar près de Tafraout, dans le Souss ; son sens n'est pas connu.",
+        "periodLabel": "Écrit dès 2021 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "Décrit en 2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Akhannouch est celui d'une famille dont le patriarche, l'Haj Hmad Akhannouch, est originaire du douar d'Aguerd Oudad, près de Tafraout, dans la province de Tiznit, au Souss, selon le site d'information Le360. On ne sait pas avec certitude ce que veut dire ce nom : les sources que nous avons lues ne l'expliquent pas.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Vidéo. À Aguerd Oudad, le fief des Akhannouch",
+                "author": "M'hand Oubarka",
+                "year": 2021,
+                "url": "https://fr.le360.ma/politique/video-a-aguerd-oudad-le-fief-des-akhannouch-245982/",
+                "tier": "referenced",
+                "source_kind": "press",
+                "notes": "Le360, 20 septembre 2021, lu le 14 octobre 2026. L'article dit : « Près de Tafraout, un douar : Aguerd Oudad, fief des Akhannouch. L'Haj Hmad Akhannouch, patriarche de cette famille aujourd'hui prospère, en est originaire », et place Tafraout dans la province de Tiznit, dans le Souss. Un habitant cité, Brahim Chahid, situe leur domicile au centre du douar. L'article ne dit rien du sens du nom."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2021,
+              "to": 2021,
+              "label": "2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Akhannouch apparaît par écrit sur le portail du Chef du gouvernement du Maroc, qui annonce que le roi Mohammed VI a reçu et nommé chef du gouvernement M. Aziz Akhannouch, le 10 septembre 2021. C'est la plus ancienne trace de ce nom que le projet a pu lire ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "Akhannouch",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Aziz Akhannouch",
+                "role": "nommé chef du gouvernement dans l'annonce"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Sa Majesté le Roi Mohammed VI, que Dieu L'assiste, a reçu, le 10 septembre 2021, M. Aziz Akhannouch, que le Souverain a nommé chef du gouvernement",
+                "author": "Chef du Gouvernement du Royaume du Maroc",
+                "year": 2021,
+                "url": "https://www.cg.gov.ma/fr/node/10419",
+                "tier": "official",
+                "source_kind": "government",
+                "page": "titre de la page",
+                "notes": "Portail officiel du Chef du gouvernement du Royaume du Maroc, lu le 14 octobre 2026. Le titre de la page, qui est aussi son seul texte, écrit le nom Aziz Akhannouch et la date du 10 septembre 2021. La page ne dit rien du nom lui-même."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

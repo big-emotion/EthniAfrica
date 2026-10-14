@@ -11,13 +11,19 @@
     {
       "spelling": "Asante",
       "attestations": [
-        { "countryId": "GHA", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "GHA",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     },
     {
       "spelling": "Ashanti",
       "attestations": [
-        { "countryId": "GHA", "sourceRefs": ["afrik-candidate-queue"] }
+        {
+          "countryId": "GHA",
+          "sourceRefs": ["afrik-candidate-queue"]
+        }
       ]
     }
   ],
@@ -81,5 +87,87 @@
       "fieldPath": "transmissionMode",
       "reason": "Le nom de clan ne détermine pas à lui seul le mode de transmission : nous ne le documentons pas encore pour ce nom."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Asante est un nom de personne akan du Ghana, que le livre de Christaller de 1881 cite aussi comme nom d'un missionnaire africain. C'est aussi le nom du peuple asante, dont la fiche est présentée à part. Les sources lues ne disent pas si le nom de personne vient du nom du peuple : on ne sait pas avec certitude d'où il vient.",
+    "names": [
+      {
+        "nameText": "Asante",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne akan du Ghana, écrit Asante dès 1881 ; le même mot nomme le peuple asante.",
+        "periodLabel": "Écrit dès 1881 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1921,
+              "to": 1921,
+              "label": "Liste des fonctionnaires de 1921"
+            },
+            "era": "colonial",
+            "statement": "Le nom Asante est porté en 1921 par au moins cinq employés de l'administration de la colonie de la Côte-de-l'Or, dont un géomètre, un commis du chemin de fer, un surveillant de salle des machines et un infirmier stagiaire.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Gold Coast Colony. Blue Book 1921",
+                "author": "Gouvernement de la colonie de la Côte-de-l'Or (Accra)",
+                "year": 1921,
+                "url": "https://archive.org/details/blue-book-gold-coast-1921",
+                "tier": "referenced",
+                "source_kind": "government",
+                "page": "p. 134 et p. 135",
+                "notes": "Registre annuel de la colonie, avec la liste de ses fonctionnaires ; exemplaire numérisé sur archive.org. Lu le 14 octobre 2026. Page 134, liste alphabétique des fonctionnaires : « Asante, K. » (géomètre de 1re classe), « Asante, S. W. O. » (commis de 2e classe, chemin de fer) et « Asante, T. R. M. » (surveillant, salle des machines) ; page 135 : « Asante, E. M. » (infirmier stagiaire, service médical) et « Asante, J. A. » (géomètre de 4e classe). Les noms sont écrits ainsi : famille d'abord, puis initiales."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Décrit en 1881"
+            },
+            "statement": "Le nom Asante est aussi celui d'un missionnaire africain d'Akropong, David Asante, que Johann Gottlieb Christaller cite dans sa liste d'abréviations et qui visite Salaga en 1877. On ne sait pas avec certitude si son nom de famille vient du nom du peuple.",
+            "aspect": "usage",
+            "formAsWritten": "Asante",
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. XIV et p. XVIII",
+                "notes": "Bâle, Evangelical Missionary Society, 1881 ; exemplaire numérisé sur archive.org. Lu le 14 octobre 2026. Page XIV, liste des abréviations : « D. As. David Asante ». Page XVIII, note de l'introduction : « the native missionary D. Asante and the deacon Theoph. Opoku […] both natives of Akropong », qui visitent Salaga en 1877. Le livre ne dit pas d'où vient le nom Asante de cet homme. Missionnaire de Bâle, cité pour les formes qu'il écrit."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1881,
+              "to": 1881,
+              "label": "Décrit en 1881"
+            },
+            "statement": "Le nom Asante apparaît par écrit comme nom de personne dans le dictionnaire de Johann Gottlieb Christaller : la liste des noms de personnes akan le cite sans explication, et l'auteur note que de beaucoup de ces noms le sens premier n'est pas connu. C'est la plus ancienne trace de ce nom de personne que le projet connaît ; le même mot nomme le peuple asante, dont la fiche est présentée à part.",
+            "formAsWritten": "Asante",
+            "birth": true,
+            "sources": [
+              {
+                "title": "A Dictionary of the Asante and Fante Language called Tshi (Chwee, Twi)",
+                "author": "Johann Gottlieb Christaller",
+                "year": 1881,
+                "url": "https://archive.org/details/dictionaryofasan00chriuoft",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "p. 667",
+                "notes": "Bâle, Evangelical Missionary Society, 1881 ; exemplaire numérisé sur archive.org. Lu le 14 octobre 2026. Annexe G, « Proper Names of Persons », p. 666-667 : chacun porte d'ordinaire deux noms, dont l'un dit le jour de naissance ; l'auteur note que de beaucoup de ces noms le sens premier n'est pas connu. Asante figure dans la liste de la page 667, entre Asano et Sapawudiio. Missionnaire de Bâle, cité pour les formes qu'il écrit."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

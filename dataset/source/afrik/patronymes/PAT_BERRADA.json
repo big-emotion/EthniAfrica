@@ -104,5 +104,132 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « Berrada lignée », « Berrada clan », « Berrada tribe » et « Berrada place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Berrada est un nom de famille marocain. Une étude de 1964 le range parmi les noms de familles musulmanes de Fès que son auteur dit d'origine juive, et lui donne trois explications possibles. On ne sait pas avec certitude d'où il vient ; nous les présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Berrada",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille de Fès, rangé en 1964 parmi des noms d'origine juive ; son sens reste discuté.",
+        "periodLabel": "Écrit dès 1964",
+        "accounts": [
+          {
+            "period": {
+              "from": 1964,
+              "to": 1964,
+              "label": "Décrit en 1964"
+            },
+            "era": "modern",
+            "statement": "Le nom Berrada est un nom de famille que David Corcos range, en 1964, parmi les noms de familles musulmanes de commerçants de Fès dont les noms sont, écrit-il, nettement juifs ou signes d'une origine juive. Ce que le nom veut dire reste discuté ; l'auteur avance trois explications, présentées séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "The Jews of Morocco under the Marinides (Continued)",
+                "author": "David Corcos",
+                "year": 1964,
+                "url": "https://mellahdefes.fr/resources/Documents/juifs-maroc-sous-Merinides.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 62-63 et note 70",
+                "notes": "The Jewish Quarterly Review, vol. 55, n° 1, juillet 1964, p. 53-81 (University of Pennsylvania Press). Lu le 14 octobre 2026 dans une copie non officielle de l'article, déposée sur un site consacré au mellah de Fès. Page 62 : liste, parmi les exemples les mieux connus, de familles musulmanes de Fès, établies de longue date dans le commerce, dont les noms sont « either obviously Jewish or which indicate a Jewish origin ». Page 63 : la liste continue par « La'zari, Berrada, Guennoun… », avec la note 70 sur Berrada."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1964,
+              "to": 1964,
+              "label": "Étude de 1964"
+            },
+            "era": "modern",
+            "statement": "Le nom Berrada apparaît par écrit dans l'étude de David Corcos sur les juifs du Maroc sous les Mérinides, publiée en 1964 : il y figure parmi les noms de familles musulmanes de Fès que l'auteur dit d'origine juive. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un chercheur l'a noté, pas depuis quand des familles le portent.",
+            "formAsWritten": "Berrada",
+            "birth": true,
+            "sources": [
+              {
+                "title": "The Jews of Morocco under the Marinides (Continued)",
+                "author": "David Corcos",
+                "year": 1964,
+                "url": "https://mellahdefes.fr/resources/Documents/juifs-maroc-sous-Merinides.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 63",
+                "notes": "The Jewish Quarterly Review, vol. 55, n° 1, juillet 1964, p. 53-81 (University of Pennsylvania Press). Lu le 14 octobre 2026 dans une copie non officielle de l'article, déposée sur un site consacré au mellah de Fès. Page 62 : liste, parmi les exemples les mieux connus, de familles musulmanes de Fès, établies de longue date dans le commerce, dont les noms sont « either obviously Jewish or which indicate a Jewish origin ». Page 63 : la liste continue par « La'zari, Berrada, Guennoun… », avec la note 70 sur Berrada."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1964,
+              "to": 1964,
+              "label": "Proposé en 1964"
+            },
+            "era": "modern",
+            "statement": "Le nom Berrada viendrait d'une forme Berr-Yhou-da, « terre de Juda », selon David Corcos, qui avance cette idée avec un point d'interrogation.",
+            "hypothesisGroup": "origine du nom Berrada",
+            "sources": [
+              {
+                "title": "The Jews of Morocco under the Marinides (Continued)",
+                "author": "David Corcos",
+                "year": 1964,
+                "url": "https://mellahdefes.fr/resources/Documents/juifs-maroc-sous-Merinides.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 63, note 70",
+                "notes": "The Jewish Quarterly Review, vol. 55, n° 1, juillet 1964, p. 53-81 (University of Pennsylvania Press). Lu le 14 octobre 2026 dans une copie non officielle de l'article, déposée sur un site consacré au mellah de Fès. Note 70 : « From 'Berr-Yhou-da', land of Judah ? or de Ben 'Ada, which became Berrada. Ada is a Biblical female first name. cf. Gen, IV, 19 ; XXXVI, 2. Berrada may also be a surname. It means a porous water jug. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1964,
+              "to": 1964,
+              "label": "Proposé en 1964"
+            },
+            "era": "modern",
+            "statement": "Le nom Berrada viendrait de Ben Ada, « fils d'Ada », devenu Berrada ; Ada est un prénom féminin de la Bible (Genèse 4, 19 et 36, 2), selon David Corcos.",
+            "hypothesisGroup": "origine du nom Berrada",
+            "sources": [
+              {
+                "title": "The Jews of Morocco under the Marinides (Continued)",
+                "author": "David Corcos",
+                "year": 1964,
+                "url": "https://mellahdefes.fr/resources/Documents/juifs-maroc-sous-Merinides.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 63, note 70",
+                "notes": "The Jewish Quarterly Review, vol. 55, n° 1, juillet 1964, p. 53-81 (University of Pennsylvania Press). Lu le 14 octobre 2026 dans une copie non officielle de l'article, déposée sur un site consacré au mellah de Fès. Note 70 : « … or de Ben 'Ada, which became Berrada. Ada is a Biblical female first name. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1964,
+              "to": 1964,
+              "label": "Proposé en 1964"
+            },
+            "era": "modern",
+            "statement": "Le nom Berrada viendrait aussi du mot qui désigne une cruche poreuse pour l'eau, ajoute David Corcos.",
+            "hypothesisGroup": "origine du nom Berrada",
+            "sources": [
+              {
+                "title": "The Jews of Morocco under the Marinides (Continued)",
+                "author": "David Corcos",
+                "year": 1964,
+                "url": "https://mellahdefes.fr/resources/Documents/juifs-maroc-sous-Merinides.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 63, note 70",
+                "notes": "The Jewish Quarterly Review, vol. 55, n° 1, juillet 1964, p. 53-81 (University of Pennsylvania Press). Lu le 14 octobre 2026 dans une copie non officielle de l'article, déposée sur un site consacré au mellah de Fès. Note 70 : « Berrada may also be a surname. It means a porous water jug. »"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

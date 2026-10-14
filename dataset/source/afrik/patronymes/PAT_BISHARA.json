@@ -6,7 +6,7 @@
   },
   "id": "PAT_BISHARA",
   "nameMain": "Bishara",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Bishara",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -49,6 +49,10 @@
   ],
   "gaps": [
     {
+      "fieldPath": "nameSystem",
+      "reason": "Le Dictionary of American Family Names fait de Bishara un nom personnel ; aucune source consultée n'en fait un nom de clan. Le modèle n'a pas de case pour un nom personnel devenu nom de famille : la fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
+    },
+    {
       "fieldPath": "origin",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
@@ -76,5 +80,71 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Bishara à un peuple en Égypte. Nous n'avons pas encore consulté de source consacrée à ce nom. Un lien avec les Coptes d'Égypte reste à étudier."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Bishara est un nom personnel arabe, porté surtout en Égypte et en Syrie, le plus souvent par des chrétiens. Une forme proche, Bichara, apparaît par écrit en 1810 dans la traduction française d'une chronique du Caire. Nous présentons plus bas l'explication de son origine que nous connaissons.",
+    "names": [
+      {
+        "nameText": "Bishara",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom personnel arabe, « bonne nouvelle », surtout chrétien.",
+        "periodLabel": "Écrit Bichara dès 1810 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Bishara viendrait de bishāra, mot arabe qui veut dire « bonne nouvelle » et qui sert aussi à dire « évangile », comme le grec euangelion, selon le Dictionary of American Family Names. La notice en fait un nom personnel, surtout égyptien, que portent le plus souvent des chrétiens.",
+            "hypothesisGroup": "origine du nom Bishara",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Bishara",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/bishara?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 14 octobre 2026 ; le site affichait une traduction française de la notice. La notice dit : arabe, surtout d'Égypte mais aussi de Syrie : d'un nom personnel tiré de bishāra, « bonne nouvelle », mot arabe employé comme équivalent de l'« évangile » du grec euangelion ; ceux qui le portent sont pour la plupart chrétiens. La notice invite à comparer Bashara et Beshara."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1810,
+              "to": 1810,
+              "label": "Ramadan 1225 de l'hégire (1810)"
+            },
+            "era": "polity",
+            "statement": "Le nom Bishara apparaît par écrit sous une forme proche, Bichara, dans la traduction française des chroniques d'al-Jabarti : au mois de ramadan 1225 de l'hégire (1810), après l'arrestation de plusieurs écrivains coptes, le pacha adjoint « Moallem Bichara » au nouveau chef des écrivains. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "Bichara",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Moallem Bichara",
+                "role": "écrivain adjoint au chef des écrivains"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Merveilles biographiques et historiques, ou Chroniques du cheikh Abd-el-Rahman el Djabarti, tome VIII",
+                "author": "Abd al-Rahman al-Jabarti, traduit par Chefik Mansour bey, Abdulaziz Kalil bey, Gabriel Nicolas Kalil bey et Iskender Ammoun effendi",
+                "year": 1895,
+                "url": "https://archive.org/details/merveillesbiogra08jaba",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 275",
+                "notes": "Le Caire, Imprimerie nationale, 1895. Lu le 14 octobre 2026 sur la copie numérisée d'archive.org, aux pages indiquées. Page 275, année 1225, mois de ramadan : le pacha fait arrêter le chef des écrivains coptes Moallem Ghali et d'autres ; « on nomma aux fonctions de chef écrivain Moallem Mansour Dariman […] et on lui adjoignit Moallem Bichara et Risgalla el Sabbag ». Moallem est un titre placé devant le nom ; le texte ne dit rien d'autre de Bichara."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

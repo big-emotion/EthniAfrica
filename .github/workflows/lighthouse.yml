@@ -241,6 +241,23 @@ jobs:
           npx playwright install --with-deps chromium
           node -e 'console.log("CHROME_PATH=" + require("playwright").chromium.executablePath())' >> "$GITHUB_ENV"
 
+      # GitHub hands this job runners of two speeds, and a fixed 4x CPU
+      # throttle made the budgets pass or fail by runner alone
+      # (scripts/lighthouse-cpu-slowdown.cjs). One quick audit reads the
+      # runner's benchmark; `.lighthouserc.js` turns it into the slowdown.
+      # A failed measurement leaves the variable unset, which means 4x.
+      - name: Measure the runner for CPU throttling
+        if: steps.secrets.outputs.present == 'true'
+        run: |
+          npx --yes lighthouse@12.6.1 http://localhost:3000/fr/mentions-legales \
+            --only-audits=first-contentful-paint --output=json \
+            --output-path="$RUNNER_TEMP/runner-benchmark.json" \
+            --chrome-flags="--headless=new --no-sandbox" --quiet || exit 0
+          index=$(node -p "require('$RUNNER_TEMP/runner-benchmark.json').environment.benchmarkIndex")
+          echo "LIGHTHOUSE_BENCHMARK_INDEX=$index" >> "$GITHUB_ENV"
+          slowdown=$(LIGHTHOUSE_BENCHMARK_INDEX=$index node -p "require('./scripts/lighthouse-cpu-slowdown.cjs').cpuSlowdownFor(Number(process.env.LIGHTHOUSE_BENCHMARK_INDEX))")
+          echo "::notice::Runner benchmark ${index} → CPU slowdown ${slowdown}x"
+
       - name: Run Lighthouse CI
         id: lhci
         if: steps.secrets.outputs.present == 'true'

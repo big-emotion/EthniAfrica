@@ -107,5 +107,135 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « El Mansoury lignée », « El Mansoury clan », « El Mansoury tribe » et « El Mansoury place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom El Mansoury est un nom d'appartenance arabe, que l'on écrit aussi Mansouri. Il rattache à quelqu'un qui s'appelait Mansour ou, selon une autre explication, à un lieu nommé Mansoura. Une forme proche, el Mansouri, apparaît en 1735-1736 dans la traduction française d'une chronique du Caire. Nous présentons plus bas les deux explications de son origine que nous connaissons.",
+    "names": [
+      {
+        "nameText": "El Mansoury",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une nisba arabe : lié à Mansour, ou à Mansoura.",
+        "periodLabel": "Écrit el Mansouri dès 1735 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1985,
+              "to": 2022,
+              "label": "Proposée en 1985, reprise en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom El Mansoury viendrait du nom d'une personne, Mansour, selon l'encyclopédie des noms arabes de l'université Sultan Qaboos, qui y voit une nisba, c'est-à-dire un nom d'appartenance. Le Dictionary of American Family Names dit de même de Mansouri : un nom de famille qui désigne la descendance ou le lien avec quelqu'un qui s'appelait Mansour.",
+            "hypothesisGroup": "origine du nom El Mansoury",
+            "sources": [
+              {
+                "title": "Sultan Qaboos Encyclopedia of Arab Names — مَنْصُورِي",
+                "author": "Université Sultan Qaboos",
+                "year": 1985,
+                "url": "https://arabiclexicon.hawramani.com/?p=100117",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée « مَنْصُورِي »",
+                "notes": "Encyclopédie des noms arabes de l'université Sultan Qaboos (1985), lue le 14 octobre 2026 sur sa reproduction en ligne du Hawramani Arabic Lexicon, qui n'indique pas les pages du livre. L'entrée dit : « nisba à Manṣūr, ou nisba à Manṣūra » (« نسبة إلى منصور، أو نسبة إلى منصورة »), c'est-à-dire un nom d'appartenance à une personne ou à un lieu."
+              },
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Mansouri",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/mansouri?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 14 octobre 2026 ; le site affichait une traduction française de la notice. La notice dit : musulman, surtout d'Iran et du Maghreb : nom de famille qui désigne la descendance ou le lien avec quelqu'un qui s'appelait Mansour."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1985,
+              "to": 1985,
+              "label": "Proposée en 1985"
+            },
+            "era": "modern",
+            "statement": "Le nom El Mansoury viendrait aussi d'un lieu, Mansoura, selon l'encyclopédie des noms arabes de l'université Sultan Qaboos, qui donne cette explication à côté de la précédente sans choisir entre elles.",
+            "hypothesisGroup": "origine du nom El Mansoury",
+            "sources": [
+              {
+                "title": "Sultan Qaboos Encyclopedia of Arab Names — مَنْصُورِي",
+                "author": "Université Sultan Qaboos",
+                "year": 1985,
+                "url": "https://arabiclexicon.hawramani.com/?p=100117",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "page": "entrée « مَنْصُورِي »",
+                "notes": "Encyclopédie des noms arabes de l'université Sultan Qaboos (1985), lue le 14 octobre 2026 sur sa reproduction en ligne du Hawramani Arabic Lexicon, qui n'indique pas les pages du livre. L'entrée dit : « nisba à Manṣūr, ou nisba à Manṣūra » (« نسبة إلى منصور، أو نسبة إلى منصورة »), c'est-à-dire un nom d'appartenance à une personne ou à un lieu."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1735,
+              "to": 1736,
+              "label": "Année 1148 de l'hégire (1735-1736)"
+            },
+            "era": "polity",
+            "statement": "Le nom El Mansoury apparaît par écrit sous une forme proche, el Mansouri, dans la traduction française des chroniques d'al-Jabarti : en 1148 de l'hégire (1735-1736), lors d'un conseil réuni autour du pacha sur des allocations, « le cheikh Soliman el Mansouri » prend la parole. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est donné.",
+            "formAsWritten": "el Mansouri",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Soliman el Mansouri",
+                "role": "cheikh qui prend la parole dans un conseil"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Merveilles biographiques et historiques, ou Chroniques du cheikh Abd-el-Rahman el Djabarti, tome II",
+                "author": "Abd al-Rahman al-Jabarti, traduit par Chefik Mansour bey, Abdulaziz Kalil bey, Gabriel Nicolas Kalil bey et Iskender Ammoun effendi",
+                "year": 1889,
+                "url": "https://archive.org/details/merveillesbiogra02jaba",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 15",
+                "notes": "Le Caire, Imprimerie nationale, 1889. Lu le 14 octobre 2026 sur la copie numérisée d'archive.org, aux pages indiquées. Page 15, année 1148 : le cheikh Soliman el Mansouri répond au cheikh el Islam, puis « reprit ensuite la parole » devant le pacha. Le texte ne dit pas pourquoi il porte ce nom."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Mansouri",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "periodLabel": "Employé aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Proposé en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Mansouri est la forme que le Dictionary of American Family Names retient : il le dit porté surtout en Iran et au Maghreb, et le rattache à quelqu'un qui s'appelait Mansour.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Dictionary of American Family Names, 2e éd. — Mansouri",
+                "author": "Patrick Hanks (dir.)",
+                "year": 2022,
+                "url": "https://www.ancestry.com/last-name-meaning/mansouri?geo-lang=en",
+                "tier": "referenced",
+                "source_kind": "linguistic_reference",
+                "notes": "Oxford University Press, 2022, notice reproduite par Ancestry. Lue le 14 octobre 2026 ; le site affichait une traduction française de la notice. La notice dit : musulman, surtout d'Iran et du Maghreb : nom de famille qui désigne la descendance ou le lien avec quelqu'un qui s'appelait Mansour."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

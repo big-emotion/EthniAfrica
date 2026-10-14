@@ -107,5 +107,189 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les recherches « Idrissi lignée », « Idrissi clan », « Idrissi tribe » et « Idrissi place name » n’ont pas permis de déterminer si cette graphie désigne une lignée, un clan, une caste, une classe d’âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Idrissi est un nom de famille marocain, bâti sur le nom d'Idris, que l'on écrit aussi El Idrissi. Les sources lues proposent deux explications de ce que le nom rappelle, présentées plus bas ; on ne sait pas avec certitude laquelle vaut pour telle ou telle famille.",
+    "names": [
+      {
+        "nameText": "Idrissi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille marocain bâti sur Idris ; une forme proche, Idrisi, est écrite pour l'an 1099.",
+        "periodLabel": "Une forme proche écrite pour l'an 1099",
+        "accounts": [
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Décrit en 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Idrissi est bâti sur le prénom Idris et se dit surtout au Maroc, selon Behind the Name. Ce que le nom rappelle exactement reste discuté ; les explications sont présentées séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "User-submitted surname Idrissi — Behind the Name",
+                "author": "Behind the Name",
+                "year": 2018,
+                "url": "https://surnames.behindthename.com/name/idrissi/submitted",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice contributive. Lu le 14 octobre 2026; ajoutée le 29 juin 2016, modifiée le 5 janvier 2018. Elle dit : « From the given name Idriss (chiefly Moroccan) » et donne les formes Idrisi et El Idrissi. Cette notice n'a pas de référence savante : elle est citée pour ce qu'elle dit, jamais seule."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 788,
+              "to": 988,
+              "label": "De 788 à la fin du Xe siècle"
+            },
+            "era": "polity",
+            "statement": "On parle alors d'Idris, descendant du Prophète qui s'installe en 788 près de Volubilis, puis de son fils Idris II, qui bâtit Fès ; leur lignée tient une partie du nord du Maroc pendant près de deux siècles, selon l'Encyclopaedia Britannica de 1911.",
+            "before": true,
+            "actors": [
+              {
+                "name": "Idris ibn Abdallah",
+                "role": "fonde la dynastie idrisside, en 788"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Morocco, dans Encyclopaedia Britannica, 11e édition, vol. 18",
+                "author": "Encyclopaedia Britannica",
+                "year": 1911,
+                "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Morocco",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 856 et 859",
+                "notes": "Encyclopaedia Britannica, 11e édition, 1911, vol. 18. Article de James Edward Budgett Meakin et Kate Alberta Meakin. Lu le 14 octobre 2026 sur la transcription de Wikisource, qui conserve la pagination imprimée. Page 856 : « The recorded history of the Moorish Empire commences with the settlement near the Roman ruins of Volubilis in A.D. 788 of Idrīs the elder (Idrīs b. Abdallah), one of the fugitive descendants of Mahomet… Idrīs and his son, Idrīs II., the builder of Fez… Their line controlled a limited portion of northern Morocco for nearly two centuries… until displaced by the Maghrāwā in 988. » Page 859 : tableau des princes et sultans, « I.—Idrisi Dynasty (Arab) », capitale Fès, à partir de 788."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1099,
+              "to": 1154,
+              "label": "Géographe né vers 1099, œuvre achevée en 1154 ; notice de 1911"
+            },
+            "statement": "Le nom Idrissi apparaît sous une forme proche, Idrisi, dans l'Encyclopaedia Britannica de 1911, qui présente la famille Idrisi, une lignée princière installée à Malaga puis à Ceuta, et son descendant, le géographe Idrisi, né vers 1099 et mort en 1154. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit ce qu'un article de 1911 rapporte, pas depuis quand des familles du Maroc le portent.",
+            "formAsWritten": "Idrisi",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Abu Abdallah Mahommed Ibn Idrisi, dit Idrisi",
+                "role": "géographe, nommé dans la notice"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Idrisi, dans Encyclopaedia Britannica, 11e édition, vol. 14",
+                "author": "Encyclopaedia Britannica",
+                "year": 1911,
+                "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Idrisi",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 289",
+                "notes": "Encyclopaedia Britannica, 11e édition, 1911, vol. 14. Article de Charles Raymond Beazley. Lu le 14 octobre 2026 sur la transcription de Wikisource, qui conserve la pagination imprimée. Notice du géographe « Idrisi, or Edrisi [Abu Abdallah Mahommed Ibn Mahommed Ibn Abdallah Ibn Idrisi, c. A.D. 1099–1154] » : l'article parle de son arrière-grand-père « Idrisi II., Biamrillah, a member of the great princely house which had reigned for a time as caliphs in north-west Africa », prince de Malaga, de la famille Idrisi qui « probably migrated to Ceuta », où le géographe serait né en 1099, et de son grand œuvre, achevé en janvier 1154. L'article ne dit pas que les Idrissi du Maroc d'aujourd'hui en descendent."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Proposé en 1911"
+            },
+            "era": "polity",
+            "statement": "Le nom Idrissi renverrait à Idris, le descendant du Prophète qui fonda la dynastie idrisside : l'Encyclopaedia Britannica de 1911 nomme « Idrisi » cette dynastie, ainsi qu'un chérif saint dont la famille est vénérée à Wazzān. La notice ne dit pas que ce soit l'origine du nom de famille.",
+            "hypothesisGroup": "origine du nom Idrissi",
+            "sources": [
+              {
+                "title": "Morocco, dans Encyclopaedia Britannica, 11e édition, vol. 18",
+                "author": "Encyclopaedia Britannica",
+                "year": 1911,
+                "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Morocco",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 856 et 859",
+                "notes": "Encyclopaedia Britannica, 11e édition, 1911, vol. 18. Article de James Edward Budgett Meakin et Kate Alberta Meakin. Lu le 14 octobre 2026 sur la transcription de Wikisource, qui conserve la pagination imprimée. Page 856 : « The recorded history of the Moorish Empire commences with the settlement near the Roman ruins of Volubilis in A.D. 788 of Idrīs the elder (Idrīs b. Abdallah), one of the fugitive descendants of Mahomet… Idrīs and his son, Idrīs II., the builder of Fez… Their line controlled a limited portion of northern Morocco for nearly two centuries… until displaced by the Maghrāwā in 988. » Page 859 : tableau des princes et sultans, « I.—Idrisi Dynasty (Arab) », capitale Fès, à partir de 788."
+              },
+              {
+                "title": "Wazzān, dans Encyclopaedia Britannica, 11e édition, vol. 28",
+                "author": "Encyclopaedia Britannica",
+                "year": 1911,
+                "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Wazz%C4%81n",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 436",
+                "notes": "Encyclopaedia Britannica, 11e édition, 1911, vol. 28. Lu le 14 octobre 2026 sur la transcription de Wikisource, qui conserve la pagination imprimée. Entrée « Wazzān » : « a small hillside town, 60 m. N.W. by N. of Fez, Morocco… the tomb of a sainted Idrisi Sharif, who lived there in 1727. It is the headquarters of his descendants. »"
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2018,
+              "label": "Proposé en 2016 et en 2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Idrissi viendrait du prénom Idris, porté surtout au Maroc, selon Behind the Name.",
+            "hypothesisGroup": "origine du nom Idrissi",
+            "sources": [
+              {
+                "title": "User-submitted surname Idrissi — Behind the Name",
+                "author": "Behind the Name",
+                "year": 2018,
+                "url": "https://surnames.behindthename.com/name/idrissi/submitted",
+                "tier": "unverified",
+                "source_kind": "community",
+                "notes": "Notice contributive. Lu le 14 octobre 2026; ajoutée le 29 juin 2016, modifiée le 5 janvier 2018. Elle dit : « From the given name Idriss (chiefly Moroccan) ». Cette notice n'a pas de référence savante : elle est citée pour ce qu'elle dit, jamais seule."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "El Idrissi",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1911,
+              "to": 1911,
+              "label": "Notice de 1911"
+            },
+            "statement": "Le nom Idrissi apparaît sous la forme el Idrissi dans l'Encyclopaedia Britannica de 1911, parmi les noms d'appartenance du fondateur de la confrérie senoussie, né près de Mostaganem, en Algérie, dont la notice rattache la descendance à Fatima, fille de Mahomet. C'est la plus ancienne trace de cette graphie que le projet connaît.",
+            "formAsWritten": "el Idrissi",
+            "birth": true,
+            "actors": [
+              {
+                "name": "Mahommed ben Ali es Senussi",
+                "role": "porte ce nom d'appartenance"
+              }
+            ],
+            "sources": [
+              {
+                "title": "Senussi and Senussites, dans Encyclopaedia Britannica, 11e édition, vol. 24",
+                "author": "Encyclopaedia Britannica",
+                "year": 1911,
+                "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Senussi_and_Senussites",
+                "tier": "referenced",
+                "source_kind": "encyclopedia",
+                "page": "p. 649",
+                "notes": "Encyclopaedia Britannica, 11e édition, 1911, vol. 24. Article de Frank Richardson Cana. Lu le 14 octobre 2026 sur la transcription de Wikisource, qui conserve la pagination imprimée. Début de l'article, notice du fondateur de la confrérie senoussie : il est appelé « Mahommed ben Ali ben Es Senussi el Khettabi el Hassani el Idrissi el Mehajiri », né près de Mostaganem, en Algérie, entre 1791 et 1803 selon les versions, de descendance rattachée à Fatima, fille de Mahomet ; à La Mecque il rejoint « Mahommed b. Idris el Fassi, the head of the Khadirites, a fraternity of Moroccan origin ». L'article ne dit pas d'où viennent ces noms d'appartenance."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

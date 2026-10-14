@@ -10,7 +10,12 @@
   "spellings": [
     {
       "spelling": "Meziane",
-      "attestations": [{ "countryId": "DZA", "sourceRefs": ["meziane-chalal"] }]
+      "attestations": [
+        {
+          "countryId": "DZA",
+          "sourceRefs": ["meziane-chalal"]
+        }
+      ]
     },
     {
       "spelling": "Ameziane",
@@ -23,7 +28,12 @@
     },
     {
       "spelling": "Amezyan",
-      "attestations": [{ "countryId": "DZA", "sourceRefs": ["ameziane-ummto"] }]
+      "attestations": [
+        {
+          "countryId": "DZA",
+          "sourceRefs": ["ameziane-ummto"]
+        }
+      ]
     }
   ],
   "transmissionMode": "other",
@@ -104,5 +114,287 @@
       "fieldPath": "homonyms",
       "reason": "Les travaux consultés traitent Meziane comme variante d’Ameziane ; les usages arabes ou hassaniens repérés dans des agrégateurs n’étaient pas accompagnés d’une étude d’origine indépendante et ne suffisent pas à créer un homonyme."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Meziane est un nom de famille kabyle, d'Algérie. Il se rattache à Ameziane, un nom de personne qui veut dire « petit, jeune » en kabyle, dont il serait la forme sans le a du début. Ameziane est écrit à l'état civil de Tizi-Ouzou dès 1889. Une seule explication de son origine est connue ; nous la présentons plus bas.",
+    "names": [
+      {
+        "nameText": "Meziane",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de famille kabyle tiré d'Ameziane, « petit, jeune » ; écrit Ameziane dès 1889.",
+        "periodLabel": "Forme proche Ameziane dès 1889 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2025,
+              "to": 2025,
+              "label": "Relevé en 2025"
+            },
+            "era": "modern",
+            "statement": "Le nom Meziane est celui du premier ancêtre d'une famille appelée At Mẓyan, à Tizi-Rached ou à Beni-Yanni, selon les informateurs que citent Katia Nekmouche et Sylia Ouahioune dans un mémoire de 2025.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Analyse morphologique et sémantique des patronymes des localités Tizi-Rached et Beni-Yanni",
+                "author": "Katia Nekmouche et Sylia Ouahioune",
+                "year": 2025,
+                "url": "https://dspace.ummto.dz/handle/ummto/30424",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 37",
+                "notes": "Mémoire de master, Université Mouloud Mammeri de Tizi-Ouzou, 2024-2025 ; lu en texte intégral le 14 octobre 2026. Les autrices s'appuient sur des informateurs de Tizi-Rached et de Beni-Yanni et sur des dictionnaires. Page 37, entrée « At Meẓyan » : « Selon les informateurs : leurs premiers ancêtres il s'appelle « Meziane » ». Le mémoire ne dit pas dans lequel des deux lieux vit cette famille."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2020,
+              "to": 2021,
+              "label": "Décrit en 2020-2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Meziane est la forme la plus utilisée du nom Ameziane, celle où le a du début a disparu, selon Naima Amrani et Thileli Saidani, qui étudient les noms de deux régions kabyles, Mezrara et Aït Ali Ou Mouhand.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Étude onomastique des anthroponymes de régions kabyles : Mezrara et Ait Ali Ou Mouhand",
+                "author": "Naima Amrani et Thileli Saidani",
+                "year": 2021,
+                "url": "https://dspace.ummto.dz/server/api/core/bitstreams/0b445207-b22e-4eb5-bbd0-985c5669c1a6/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 41-42",
+                "notes": "Mémoire de master, Université Mouloud Mammeri de Tizi-Ouzou, 2020-2021 ; lu en texte intégral le 14 octobre 2026. Pages 41-42, entrée « Ameziane [Amezyan] » : « la forme la plus utilisée est celle qui est amputée du « a » initial ». Les autrices citent Tidjet (2016 : 29)."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": null,
+              "to": null,
+              "label": "Origine non datée"
+            },
+            "statement": "Le nom Meziane est un nom de famille kabyle, formé sur Ameziane. Une seule explication de son origine est connue ; nous la présentons plus bas.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Les anthroponymes algériens entre francisation et arabisation : étude historique et sociolinguistique d’un corpus kabyle (état civil de Tizi-Ouzou)",
+                "author": "Kahina Chalal",
+                "year": 2016,
+                "url": "https://dspace.ummto.dz/bitstream/handle/ummto/374/CHALAL%20Kahina%20TM.%20238.pdf?sequence=1&isAllowed=y",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 128",
+                "notes": "Mémoire de magister, Université Mouloud Mammeri de Tizi-Ouzou, 2016 ; lu en texte intégral le 14 octobre 2026. Les pages sont comptées dans le fichier PDF, qui ne porte pas de numéro imprimé. Les noms étudiés sont tirés des registres de naissances de l'état civil de Tizi-Ouzou, de 1889 à 2010. Page 128 : tableau du patronyme aməzjen, avec ses variantes Ameziane, Meziane, M'ziyène, Meziani, Mezini, Amiziane et Goumeziane."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Proposée en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Meziane viendrait de l'adjectif kabyle ameẓẓyan, « petit, jeune », dont il serait la forme sans le a initial, selon Mustapha Tidjet et Kahina Chalal ; Chalal voit dans ce a l'article masculin berbère.",
+            "hypothesisGroup": "origine du nom Meziane",
+            "sources": [
+              {
+                "title": "Les anthroponymes algériens entre francisation et arabisation : étude historique et sociolinguistique d’un corpus kabyle (état civil de Tizi-Ouzou)",
+                "author": "Kahina Chalal",
+                "year": 2016,
+                "url": "https://dspace.ummto.dz/bitstream/handle/ummto/374/CHALAL%20Kahina%20TM.%20238.pdf?sequence=1&isAllowed=y",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 128",
+                "notes": "Mémoire de magister, Université Mouloud Mammeri de Tizi-Ouzou, 2016 ; lu en texte intégral le 14 octobre 2026. Les pages sont comptées dans le fichier PDF, qui ne porte pas de numéro imprimé. Les noms étudiés sont tirés des registres de naissances de l'état civil de Tizi-Ouzou, de 1889 à 2010. Page 128 : « la suppression de l'initiale « a » qui est l'article masculin berbère » : Ameziane, Meziane, M'ziyène, Meziani. Page 77, tableau des prénoms berbères : Ameziane, « le petit, cadet »."
+              },
+              {
+                "title": "Dictionnaire des patronymes algériens, tome 2 : At Weɣlis",
+                "author": "Mustapha Tidjet",
+                "year": 2016,
+                "url": "https://www.hcamazighite.dz/docs/document/hca/lexiques/dictionnaireII%20Mustapha%20TIDJET%20%20tome%202.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 146 et p. 29",
+                "notes": "Haut Commissariat à l'Amazighité ; recueil de noms de famille de la région des At Weɣlis, en Kabylie, lu en texte intégral le 14 octobre 2026. L'année 2016 est celle que lui donnent les mémoires de master qui le citent. Page 146, entrée « Meziani » : « de Mezian (k.) « petit, jeune » ». Page 29, entrée « Ameziane » : « petit, jeune », adjectif du verbe d'état imẓi, « être jeune, être petit »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1950,
+              "to": 1950,
+              "label": "Registre de 1950"
+            },
+            "era": "colonial",
+            "statement": "Le nom Meziane est écrit tel quel dans le tableau de 1950 des noms altérés que Kahina Chalal relève dans le registre des naissances de Tizi-Ouzou, à côté de Meziani et de M'zyène.",
+            "aspect": "usage",
+            "formAsWritten": "Meziane",
+            "sources": [
+              {
+                "title": "Les anthroponymes algériens entre francisation et arabisation : étude historique et sociolinguistique d’un corpus kabyle (état civil de Tizi-Ouzou)",
+                "author": "Kahina Chalal",
+                "year": 2016,
+                "url": "https://dspace.ummto.dz/bitstream/handle/ummto/374/CHALAL%20Kahina%20TM.%20238.pdf?sequence=1&isAllowed=y",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 55",
+                "notes": "Mémoire de magister, Université Mouloud Mammeri de Tizi-Ouzou, 2016 ; lu en texte intégral le 14 octobre 2026. Les pages sont comptées dans le fichier PDF, qui ne porte pas de numéro imprimé. Les noms étudiés sont tirés des registres de naissances de l'état civil de Tizi-Ouzou, de 1889 à 2010. Page 55 : tableau de l'année 1950, où figurent « Meziane », « Meziani » et « M'zyène ». Les tableaux ne reprennent que les noms que l'autrice juge altérés."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1882,
+              "to": 1882,
+              "label": "23 mars 1882"
+            },
+            "era": "colonial",
+            "statement": "Le nom Meziane appartient aux noms de famille d'état civil que la loi française du 23 mars 1882 a généralisés aux musulmans d'Algérie, selon Kahina Chalal. Les sources lues ne disent pas quand il a été inscrit pour la première fois.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Les anthroponymes algériens entre francisation et arabisation : étude historique et sociolinguistique d’un corpus kabyle (état civil de Tizi-Ouzou)",
+                "author": "Kahina Chalal",
+                "year": 2016,
+                "url": "https://dspace.ummto.dz/bitstream/handle/ummto/374/CHALAL%20Kahina%20TM.%20238.pdf?sequence=1&isAllowed=y",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 15",
+                "notes": "Mémoire de magister, Université Mouloud Mammeri de Tizi-Ouzou, 2016 ; lu en texte intégral le 14 octobre 2026. Les pages sont comptées dans le fichier PDF, qui ne porte pas de numéro imprimé. Les noms étudiés sont tirés des registres de naissances de l'état civil de Tizi-Ouzou, de 1889 à 2010. Page 15 : le système des noms de famille « a été généralisé à tous les indigènes musulmans le 23 mars 1882 »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1889,
+              "to": 1889,
+              "label": "Registre de 1889"
+            },
+            "era": "colonial",
+            "statement": "Le nom Meziane apparaît par écrit sous une forme proche, Ameziane, dans le registre des naissances de 1889 de l'état civil de Tizi-Ouzou, dont Kahina Chalal relève les noms encore lisibles. C'est la plus ancienne trace de cette forme que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est porté.",
+            "formAsWritten": "Ameziane",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les anthroponymes algériens entre francisation et arabisation : étude historique et sociolinguistique d’un corpus kabyle (état civil de Tizi-Ouzou)",
+                "author": "Kahina Chalal",
+                "year": 2016,
+                "url": "https://dspace.ummto.dz/bitstream/handle/ummto/374/CHALAL%20Kahina%20TM.%20238.pdf?sequence=1&isAllowed=y",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 52",
+                "notes": "Mémoire de magister, Université Mouloud Mammeri de Tizi-Ouzou, 2016 ; lu en texte intégral le 14 octobre 2026. Les pages sont comptées dans le fichier PDF, qui ne porte pas de numéro imprimé. Les noms étudiés sont tirés des registres de naissances de l'état civil de Tizi-Ouzou, de 1889 à 2010. Page 52 : « Le registre de naissance 1889 ne contient que 14 patronymes », les autres étant illisibles ou perdus ; le tableau donne « Ameziane » parmi eux."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ameziane",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de personne kabyle qui veut dire « petit, jeune » ; écrit à l'état civil dès 1889.",
+        "periodLabel": "Écrit dès 1889 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2016,
+              "to": 2016,
+              "label": "Décrit en 2016"
+            },
+            "era": "modern",
+            "statement": "Le nom Ameziane, prononcé Ameẓẓyan, veut dire « petit, jeune » en kabyle : c'est un adjectif du verbe d'état imẓi, « être jeune, être petit ». Utilisé tel quel comme prénom, il signifierait « le petit, le jeune, le benjamin », selon Mustapha Tidjet ; Kahina Chalal le range de même parmi les prénoms berbères, « le petit, cadet ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Dictionnaire des patronymes algériens, tome 2 : At Weɣlis",
+                "author": "Mustapha Tidjet",
+                "year": 2016,
+                "url": "https://www.hcamazighite.dz/docs/document/hca/lexiques/dictionnaireII%20Mustapha%20TIDJET%20%20tome%202.pdf",
+                "tier": "official",
+                "source_kind": "linguistic_reference",
+                "page": "p. 29",
+                "notes": "Haut Commissariat à l'Amazighité ; recueil de noms de famille de la région des At Weɣlis, en Kabylie, lu en texte intégral le 14 octobre 2026. L'année 2016 est celle que lui donnent les mémoires de master qui le citent. Page 29, entrée « Ameziane » : « /Ameẓẓyan/, « petit, jeune », c'est un adjectif du verbe d'état imẓi (k.) « être jeune, être petit » ». "
+              },
+              {
+                "title": "Les anthroponymes algériens entre francisation et arabisation : étude historique et sociolinguistique d’un corpus kabyle (état civil de Tizi-Ouzou)",
+                "author": "Kahina Chalal",
+                "year": 2016,
+                "url": "https://dspace.ummto.dz/bitstream/handle/ummto/374/CHALAL%20Kahina%20TM.%20238.pdf?sequence=1&isAllowed=y",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 77",
+                "notes": "Mémoire de magister, Université Mouloud Mammeri de Tizi-Ouzou, 2016 ; lu en texte intégral le 14 octobre 2026. Les pages sont comptées dans le fichier PDF, qui ne porte pas de numéro imprimé. Les noms étudiés sont tirés des registres de naissances de l'état civil de Tizi-Ouzou, de 1889 à 2010. Page 77 : tableau de prénoms berbères, « Ameziane » glosé « le petit, cadet », à côté d'Amghar, « le vieux », et d'Amokrane, « le grand »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1889,
+              "to": 1889,
+              "label": "Registre de 1889"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ameziane apparaît par écrit dans le registre des naissances de 1889 de l'état civil de Tizi-Ouzou, dont Kahina Chalal relève les noms encore lisibles. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand un nom a été écrit, pas depuis quand il est porté.",
+            "formAsWritten": "Ameziane",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Les anthroponymes algériens entre francisation et arabisation : étude historique et sociolinguistique d’un corpus kabyle (état civil de Tizi-Ouzou)",
+                "author": "Kahina Chalal",
+                "year": 2016,
+                "url": "https://dspace.ummto.dz/bitstream/handle/ummto/374/CHALAL%20Kahina%20TM.%20238.pdf?sequence=1&isAllowed=y",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 52",
+                "notes": "Mémoire de magister, Université Mouloud Mammeri de Tizi-Ouzou, 2016 ; lu en texte intégral le 14 octobre 2026. Les pages sont comptées dans le fichier PDF, qui ne porte pas de numéro imprimé. Les noms étudiés sont tirés des registres de naissances de l'état civil de Tizi-Ouzou, de 1889 à 2010. Page 52 : « Le registre de naissance 1889 ne contient que 14 patronymes », les autres étant illisibles ou perdus ; le tableau donne « Ameziane » parmi eux."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Amezyan",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "L'écriture berbère du nom Ameziane, étudiée en 2020-2021 dans deux régions kabyles.",
+        "periodLabel": "Écrit en 2020-2021",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2020,
+              "to": 2021,
+              "label": "Décrit en 2020-2021"
+            },
+            "era": "modern",
+            "statement": "Le nom Amezyan est l'écriture berbère du nom Ameziane : un mémoire de l'université de Tizi-Ouzou l'étudie à Mezrara et à Aït Ali Ou Mouhand et l'explique par « petit, jeune », du verbe d'état imẓi.",
+            "aspect": "usage",
+            "formAsWritten": "Amezyan",
+            "sources": [
+              {
+                "title": "Étude onomastique des anthroponymes de régions kabyles : Mezrara et Ait Ali Ou Mouhand",
+                "author": "Naima Amrani et Thileli Saidani",
+                "year": 2021,
+                "url": "https://dspace.ummto.dz/server/api/core/bitstreams/0b445207-b22e-4eb5-bbd0-985c5669c1a6/content",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 41-42",
+                "notes": "Mémoire de master, Université Mouloud Mammeri de Tizi-Ouzou, 2020-2021 ; lu en texte intégral le 14 octobre 2026. Pages 41-42, entrée « Ameziane [Amezyan] » : « Nom simple, singulier, masculin, signifiant en kabyle un « petit, jeune » », du verbe d'état « imẓi », « être jeune, être petit », « communément utilisé tel quel comme prénom ». Les autrices citent Tidjet (2016 : 29)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
