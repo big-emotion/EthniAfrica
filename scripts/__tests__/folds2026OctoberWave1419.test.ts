@@ -6,6 +6,7 @@ import { describe, expect, it } from "vitest";
 import retiredIdentifiers from "../../dataset/source/afrik/_retired-identifiers.json";
 import retiredPatronymes from "../../dataset/source/afrik/patronymes/_retired-identifiers.json";
 import { RETIRED_PEOPLE_IDS } from "../../src/lib/afrik/retiredPeopleIds";
+import { getPatronymeRoute } from "../../src/lib/routing";
 
 // The duplicates, groupings and unattested fiches that waves 14 to 19 of the
 // long tail found (peoples in 14, 16 and 18; family names in 15, 17 and 19),
@@ -438,11 +439,11 @@ describe("the redirects built from the family-name ledger", () => {
 
     expect(redirects.filter((r) => /\/null\b/.test(r.destination))).toEqual([]);
     expect(
-      redirects.find((r) => r.source === "/fr/atlas/noms/PAT_FADICCA")
+      redirects.find((r) => r.source === getPatronymeRoute("fr", "PAT_FADICCA"))
     ).toBeUndefined();
     expect(
-      redirects.find((r) => r.source === "/fr/atlas/noms/PAT_DJALO")
+      redirects.find((r) => r.source === getPatronymeRoute("fr", "PAT_DJALO"))
         ?.destination
-    ).toBe("/fr/atlas/noms/PAT_DIALLO");
+    ).toBe(getPatronymeRoute("fr", "PAT_DIALLO"));
   });
 });
