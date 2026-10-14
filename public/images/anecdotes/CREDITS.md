@@ -164,7 +164,7 @@ document's point.
 | `tswa-recensement`       | `tswa-recensement.jpg`       | Thatched homes in Vilankulo, Inhambane Province, Mozambique (2008)                                                                                                                        | Brian Dell                                                        | Public domain | 2    |
 | `angolar-naufrage`       | `angolar-naufrage.jpg`       | Dugout fishing canoes on the beach of São João dos Angolares, São Tomé (2019)                                                                                                             | Ji-Elle                                                           | CC BY-SA 4.0  | 2    |
 | `crioulo-cap-vert`       | `crioulo-cap-vert.jpg`       | House in rua Banana, Cidade Velha (former Ribeira Grande), Santiago, Cape Verde (2011)                                                                                                    | Cayambe                                                           | CC BY-SA 3.0  | 2    |
-| `wonnin-godie`           | `wonnin-godie.jpg`           | Bovine mask, Wonnin (catalogued as Godié), Côte d'Ivoire, c. 1900, Musée africain de Lyon (photographed 2016)                                                                             | Ji-Elle                                                           | CC BY-SA 4.0  | 2    |
+| `wonnin-godie`           | `wonnin-godie.jpg`           | Bovine mask, Godié, Côte d'Ivoire, c. 1900, Musée africain de Lyon (photographed 2016)                                                                                                    | Ji-Elle                                                           | CC BY-SA 4.0  | 2    |
 | `bete-plantation`        | `bete-plantation.jpg`        | Cocoa beans drying in front of a mud-brick house, Ziplignan, Gagnoa department, Côte d'Ivoire (2010)                                                                                      | arno B                                                            | CC BY 3.0     | 2    |
 | `toura-wen`              | `toura-wen.jpg`              | Biankouma below its forested hills, western Côte d'Ivoire (2008)                                                                                                                          | Zenman                                                            | CC BY-SA 3.0  | 2    |
 | `dogon-habe`             | `dogon-habe.jpg`             | Dogon village at the foot of the Bandiagara escarpment, Mali                                                                                                                              | Kirua                                                             | CC BY-SA 3.0  | 2    |
@@ -191,7 +191,7 @@ Every third-batch picture was checked against the people fiche its anecdote
 names. What changed, and why:
 
 - **A caption does not repeat the name its anecdote rejects.** `wonnin-godie`
-  reads « masque bovin wonnin, catalogué « godié » »; `fulbe-quatre-noms` says
+  read « masque bovin wonnin, catalogué « godié » » until 2026-10-14, when the Wonnin fiche was folded into Godié and the caption took the form the museum file title gives; `fulbe-quatre-noms` says
   « de style fulbe » where Cleveland says "Fulani (Peul) style"; `masa-banana`
   uses Masa, the form the fiche gives as the group's own, not Massa.
 - **`kirdi-paien`** no longer names Mora: it is the seat of the Wandala sultan,

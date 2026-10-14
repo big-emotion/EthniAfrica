@@ -725,15 +725,17 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
     ],
   },
   {
+    // The id keeps the name of the retired Wonnin fiche: the illustration
+    // below is filed under it, and a link already shared carries it.
     id: "wonnin-godie",
     headline:
-      "Le nom Godié viendrait d’un surnom donné par les voisins des Wonnin.",
+      "Le nom Godié viendrait peut-être d’un surnom donné par les voisins.",
     body: [
-      "La fiche des Wonnin rapproche Godié du mot néyo Gwèdji, qui associerait « chimpanzé » et « panthère » pour évoquer un caractère jugé combatif. Selon cette explication, les Néyo auraient donné ce surnom à leurs voisins. La forme française Godié est employée sur les cartes, dans les recensements et pour identifier la langue.",
-      "Wonnin est le nom que le groupe emploie pour se désigner. Les deux noms coexistent donc, mais ils n’occupent pas la même place dans les documents officiels et les usages des personnes concernées.",
+      "Selon une explication que rapporte Dago Pascal Kokora, auteur d’une étude sur la langue des Koyo de Fresco, le nom Godié viendrait du mot néyo Gwèdji, qui associerait « chimpanzé » et « panthère » pour évoquer un caractère jugé combatif. Les Néyo auraient donné ce surnom à leurs voisins. Une autre explication le tire d’une phrase godié, a ka gouen zie, « nous allons plus loin ».",
+      "Les Godié se donnent pourtant ce nom eux-mêmes, selon Diedrich Westermann et Margaret Bryan (1952). La forme française Godié est employée sur les cartes, dans les recensements et pour identifier la langue.",
     ],
     entities: [
-      { kind: "people", id: "PPL_WONNIN", label: "Wonnin (Godié)" },
+      { kind: "people", id: "PPL_GODIE", label: "Godié" },
       { kind: "country", id: "CIV", label: "Côte d'Ivoire" },
     ],
     tier: "referenced",
@@ -743,8 +745,14 @@ export const DID_YOU_KNOW_FACTS: DidYouKnowFact[] = [
         url: "https://www.ethnologue.com/language/god/",
         tier: "official",
         source_kind: "linguistic_reference",
+        notes: "Atteste l'appellation Godié et ses variantes.",
+      },
+      {
+        title: "Studies in the grammar of Koyo",
+        tier: "referenced",
+        source_kind: "academic",
         notes:
-          "Atteste l'appellation Godié et ses variantes. L'étymologie néyo Gwèdji est rapportée par notre fiche sur ce peuple.",
+          "Dago Pascal Kokora, 1976. Il rapporte les deux explications du nom, celle d'Alfred Schwartz (1971) et celle de Kouassi Lowa (1967), et la mention de Westermann et Bryan (1952).",
       },
     ],
   },

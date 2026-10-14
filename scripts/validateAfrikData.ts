@@ -2586,7 +2586,9 @@ export function checkSourceIdentity(datasetRoot: string): ValidationResult {
 // wave 10, took its Factbook citation with it.
 // 121 -> 119 the same day: the Yerima and Kirdi fiches, retired after wave 12,
 // took their Factbook citations with them.
-export const RETIRED_CIA_FACTBOOK_URL_CEILING = 119;
+// 119 -> 115 on 2026-10-14: the people fiches of waves 14 to 19 folded or
+// withdrawn that day took four Factbook citations with them.
+export const RETIRED_CIA_FACTBOOK_URL_CEILING = 115;
 
 const LIVE_CIA_FACTBOOK =
   /cia\.gov\/(?:library\/publications\/)?the-world-factbook/i;
@@ -4527,7 +4529,9 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // PPL_MUWALLADEEN.
   // 6285 -> 6249 the same day: the Khainai, Koyra, Yerima and Kirdi fiches of
   // wave 12 were folded or retired with the keys they lacked.
-  peuple: 6249,
+  // 6249 -> 6049 on 2026-10-14: twenty-one people fiches of waves 14 to 19,
+  // folded or withdrawn, left with the model keys they lacked.
+  peuple: 6049,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next

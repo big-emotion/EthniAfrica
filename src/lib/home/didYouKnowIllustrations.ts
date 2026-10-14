@@ -312,7 +312,7 @@ export const DID_YOU_KNOW_ILLUSTRATIONS: Record<
     src: "/images/anecdotes/wonnin-godie.jpg",
     alt: "Masque de bovin en bois peint en ocre, bleu et blanc, cornes dressées, exposé sur un socle au Musée africain de Lyon",
     credit:
-      "Masque bovin wonnin, catalogué « godié », Côte d'Ivoire, vers 1900, Musée africain de Lyon — Ji-Elle, Wikimedia Commons, CC BY-SA 4.0",
+      "Masque bovin godié, Côte d'Ivoire, vers 1900, Musée africain de Lyon — Ji-Elle, Wikimedia Commons, CC BY-SA 4.0",
     filePage:
       "https://commons.wikimedia.org/wiki/File:Masque_bovin-Godi%C3%A9-Mus%C3%A9e_africain_de_Lyon.jpg",
     licenceUrl: "https://creativecommons.org/licenses/by-sa/4.0",

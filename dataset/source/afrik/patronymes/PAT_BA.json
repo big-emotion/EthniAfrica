@@ -18,6 +18,10 @@
         {
           "countryId": "MRT",
           "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["vieillard-fouta-clans", "straussberger-2016-futa"]
         }
       ]
     },
@@ -31,6 +35,10 @@
         {
           "countryId": "MRT",
           "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["vieillard-fouta-clans"]
         }
       ]
     },
@@ -40,6 +48,10 @@
         {
           "countryId": "SEN",
           "sourceRefs": ["afrik-candidate-queue"]
+        },
+        {
+          "countryId": "GIN",
+          "sourceRefs": ["vieillard-fouta-clans", "straussberger-2016-futa"]
         }
       ]
     }
@@ -57,7 +69,13 @@
         "sourceRefs": ["delafosse-1912-haut-senegal-niger"]
       }
     ],
-    "writtenChronicles": [],
+    "writtenChronicles": [
+      {
+        "claim": "Au Fouta-Djalon, Bâ, Bah et Baldé sont donnés comme les noms du groupe classique Uururɓe ; une étude historique ultérieure confirme Bah parmi les quatre yettore employés comme noms de famille et marqueurs fulɓe.",
+        "claimStatus": "established",
+        "sourceRefs": ["vieillard-fouta-clans", "straussberger-2016-futa"]
+      }
+    ],
     "linguisticReconstructions": [],
     "historicalSyntheses": [
       {
@@ -77,6 +95,11 @@
       "peopleId": "PPL_HALPULAAR",
       "status": "attested",
       "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "peopleId": "PPL_FULA",
+      "status": "attested",
+      "sourceRefs": ["vieillard-fouta-clans", "straussberger-2016-futa"]
     }
   ],
   "countries": [
@@ -89,6 +112,11 @@
       "countryId": "MRT",
       "status": "attested",
       "sourceRefs": ["afrik-candidate-queue"]
+    },
+    {
+      "countryId": "GIN",
+      "status": "attested",
+      "sourceRefs": ["vieillard-fouta-clans", "straussberger-2016-futa"]
     }
   ],
   "alliances": [],
@@ -119,6 +147,22 @@
       "tier": "official",
       "source_kind": "intergovernmental",
       "notes": "UNESCO, dir. J. Ki-Zerbo, 1980 ; chapitre de P. Diagne, paragraphe de clôture de la section « La science onomastique », juste avant « L'anthroponymie ». Page imprimée 273 : la phrase « Les Seereer sont, en général, des Jonn, Juuf, Seen, etc., les Peul (Sow, Jallo, Ba, Ka, etc.), les Mandingue (Keita, Touré, Jara, etc.) », donnée comme exemple de ce que les noms de personnes révèlent sur les groupes qui les portent. Le chapitre écrit Juuf ; le rapprochement avec la graphie Diouf est celui de notre relevé de graphies. Il ne dit ni le sens ni l'origine de ces noms, seulement à quel groupe on les rattache."
+    },
+    {
+      "sourceKey": "vieillard-fouta-clans",
+      "title": "Notes sur les Peuls du Fouta-Djallon — Clans et familles",
+      "url": "https://webfuuta.site/bibliotheque/gilbert_vieillard/notes/chap03.html",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "Gilbert Vieillard, enquête ethnographique publiée en 1939 et reproduite par WebFuuta. Le chapitre distingue les quatre groupes classiques, donne leurs graphies patronymiques et décrit la famille du Fouta-Djalon comme patrilinéaire. Cette source coloniale est utilisée comme témoignage situé, non comme vérité intemporelle."
+    },
+    {
+      "sourceKey": "straussberger-2016-futa",
+      "title": "Storming the Citadel: Decolonization and Political Contestation in Guinea's Futa Jallon, 1945–61",
+      "url": "https://www.cambridge.org/core/journals/journal-of-african-history/article/abs/storming-the-citadel-decolonization-and-political-contestation-in-guineas-futa-jallon-194561/1F793ADC739F5A7A6B328C7CCEF585C5",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "John Straussberger, The Journal of African History 57/2, 2016, p. 231-249, DOI 10.1017/S0021853716000050. La note 35 nomme explicitement Diallo, Barry, Sow et Bah comme yettore employés comme noms de famille et marqueurs fulɓe au Fouta-Djalon."
     }
   ],
   "gaps": [

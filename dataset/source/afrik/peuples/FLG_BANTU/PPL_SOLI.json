@@ -45,7 +45,7 @@
     },
     "languages": {
       "mainLanguage": "Soli (Cisoli)",
-      "isoCodes": ["sis"],
+      "isoCodes": ["sby"],
       "dialects": [],
       "vehicularRole": "Le soli appartient au groupe linguistique Bantu Botatwe (avec le tonga, le lenje, l'ila, le sala et le toka-leya). Ces langues sont mutellement comprehensibles. Le nyanja est utilise comme langue d'enseignement dans la zone Soli a Lusaka. L'anglais est la langue officielle nationale. De nombreux Soli sont bilingues voire multilingues (soli, nyanja, anglais)."
     },
@@ -101,6 +101,12 @@
         "url": "https://rsisinternational.org/journals/ijriss/Digital-Library/volume-7-issue-8/993-1000.pdf",
         "tier": "referenced",
         "source_kind": "academic"
+      },
+      {
+        "title": "Soli language – Glottolog 5.3, SIL International",
+        "url": "https://glottolog.org/resource/languoid/id/soli1239",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   },
