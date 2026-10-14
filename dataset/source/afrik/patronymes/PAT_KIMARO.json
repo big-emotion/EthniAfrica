@@ -76,5 +76,143 @@
       "fieldPath": "peoples",
       "reason": "Nos fiches ne permettent pas encore de relier le nom Kimaro à un peuple en Tanzanie. Nous n'avons pas encore consulté de source consacrée à ce nom. Les fiches consultées sur les peuples de Tanzanie ne détaillent pas les noms de famille."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Kimaro est un nom de clan chagga, relevé dans les districts de Hai et de Rombo, au Kilimandjaro, en Tanzanie. Il s'écrit aussi Kimario. Des auteurs le disent originaire du district de Hai. Les sources lues ne disent pas ce qu'il veut dire : on ne sait pas avec certitude.",
+    "names": [
+      {
+        "nameText": "Kimaro",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan chagga, dit originaire du district de Hai, au Kilimandjaro ; son sens reste inconnu.",
+        "periodLabel": "Écrit dès 2018 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2018,
+              "to": 2020,
+              "label": "Décrit en 2018 et 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Kimaro est un nom de clan chez les Chagga du Kilimandjaro. Amani Lusekelo et ses collègues le relèvent dans des registres d'élèves de Hai, chez les Machame, et de Rombo, où il s'écrit aussi Kimario. On ne sait pas avec certitude ce qu'il veut dire : les sources lues ne lui donnent pas de sens.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Naming practices in contemporary Machame-Chagga culture",
+                "author": "Amani Lusekelo et Loveluck P. Muro",
+                "year": 2018,
+                "url": "https://doi.org/10.4314/ijma.v2i11.3",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 73",
+                "notes": "International Journal of Modern Anthropology, vol. 2, n° 11, 2018, p. 64-83, DOI 10.4314/ijma.v2i11.3. Texte intégral lu dans la copie que diffuse l'Association tunisienne d'anthropologie ; la page citée est celle imprimée en tête de page. Étude des noms d'élèves du district de Hai, au Kilimandjaro. Page 73, tableau 3 : Kimaro revient 6 fois dans les registres d'élèves de Hai. Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Historicity of personal names in Tanzania: the case of the names in the Rombo-Chagga community in Kilimanjaro",
+                "author": "Amani Lusekelo et Victor Mtenga",
+                "year": 2020,
+                "url": "https://www.researchgate.net/publication/342876767_Historicity_of_personal_names_in_Tanzania_the_case_of_the_names_in_the_Rombo-Chagga_community_in_Kilimanjaro",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 106-107",
+                "notes": "International Journal of Modern Anthropology, vol. 2, n° 13, 2020, p. 100-121, DOI 10.4314/ijma.v2i13.3. Texte intégral lu dans la copie que diffuse l'Association tunisienne d'anthropologie ; la page citée est celle imprimée en tête de page. Page 106, tableau 3 : un élève porte Kimaro comme nom de clan. Page 107, tableau 4 : Kimario revient 17 fois sur 379 noms ; note 1, même page : Kimaro et Kimario peuvent être traités comme des noms de clan semblables. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "Proposé en 2018, repris en 2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Kimaro viendrait du district de Hai, côté machame, et non de Rombo, selon Amani Lusekelo et Loveluck Muro ; Lusekelo et Victor Mtenga le reprennent en 2020. Les premiers rangent Kimaro parmi les cinq noms de clan d'origine à Hai, dans leur liste des treize noms de clan les moins employés.",
+            "hypothesisGroup": "origine du nom Kimaro",
+            "sources": [
+              {
+                "title": "Naming practices in contemporary Machame-Chagga culture",
+                "author": "Amani Lusekelo et Loveluck P. Muro",
+                "year": 2018,
+                "url": "https://doi.org/10.4314/ijma.v2i11.3",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 73",
+                "notes": "International Journal of Modern Anthropology, vol. 2, n° 11, 2018, p. 64-83, DOI 10.4314/ijma.v2i11.3. Texte intégral lu dans la copie que diffuse l'Association tunisienne d'anthropologie ; la page citée est celle imprimée en tête de page. Étude des noms d'élèves du district de Hai, au Kilimandjaro. Page 73 : seuls cinq noms du tableau 3 sont dits originaires de Hai, dont Kimaro ; les autres viennent de Marangu, de Rombo, du pays pare ou du pays meru. Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Historicity of personal names in Tanzania: the case of the names in the Rombo-Chagga community in Kilimanjaro",
+                "author": "Amani Lusekelo et Victor Mtenga",
+                "year": 2020,
+                "url": "https://www.researchgate.net/publication/342876767_Historicity_of_personal_names_in_Tanzania_the_case_of_the_names_in_the_Rombo-Chagga_community_in_Kilimanjaro",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 110",
+                "notes": "International Journal of Modern Anthropology, vol. 2, n° 13, 2020, p. 100-121, DOI 10.4314/ijma.v2i13.3. Texte intégral lu dans la copie que diffuse l'Association tunisienne d'anthropologie ; la page citée est celle imprimée en tête de page. Page 110 : Swai et Kimaro sont dits originaires du district de Hai, d'après Lusekelo et Muro (2018) ; les auteurs y voient un signe de contacts entre les Chagga de Rombo et de Machame. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2018,
+              "to": 2018,
+              "label": "2018"
+            },
+            "era": "modern",
+            "statement": "Le nom Kimaro apparaît par écrit dans une étude d'Amani Lusekelo et Loveluck Muro sur les noms d'élèves du district de Hai, comme nom de clan. C'est la plus ancienne trace de ce nom que le projet connaît ; elle dit quand des auteurs l'ont noté, pas depuis quand le clan existe.",
+            "formAsWritten": "Kimaro",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Naming practices in contemporary Machame-Chagga culture",
+                "author": "Amani Lusekelo et Loveluck P. Muro",
+                "year": 2018,
+                "url": "https://doi.org/10.4314/ijma.v2i11.3",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 73",
+                "notes": "International Journal of Modern Anthropology, vol. 2, n° 11, 2018, p. 64-83, DOI 10.4314/ijma.v2i11.3. Texte intégral lu dans la copie que diffuse l'Association tunisienne d'anthropologie ; la page citée est celle imprimée en tête de page. Étude des noms d'élèves du district de Hai, au Kilimandjaro. Page 73, tableau 3, « Least used clan names in Machame-Chagga » : « Kimaro », 6. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Kimario",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une autre forme du nom Kimaro, que les auteurs d'une étude de 2020 traitent comme le même nom de clan.",
+        "periodLabel": "Écrit dès 2020 ; porté aujourd'hui",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2020,
+              "to": 2020,
+              "label": "2020"
+            },
+            "era": "modern",
+            "statement": "Le nom Kimario est une autre forme du nom de clan Kimaro : il revient 17 fois sur 379 noms dans les registres d'élèves du district de Rombo, que lisent Amani Lusekelo et Victor Mtenga, qui le traitent comme le même nom. C'est la plus ancienne trace de cette forme que le projet connaît.",
+            "formAsWritten": "Kimario",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Historicity of personal names in Tanzania: the case of the names in the Rombo-Chagga community in Kilimanjaro",
+                "author": "Amani Lusekelo et Victor Mtenga",
+                "year": 2020,
+                "url": "https://www.researchgate.net/publication/342876767_Historicity_of_personal_names_in_Tanzania_the_case_of_the_names_in_the_Rombo-Chagga_community_in_Kilimanjaro",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 107",
+                "notes": "International Journal of Modern Anthropology, vol. 2, n° 13, 2020, p. 100-121, DOI 10.4314/ijma.v2i13.3. Texte intégral lu dans la copie que diffuse l'Association tunisienne d'anthropologie ; la page citée est celle imprimée en tête de page. Page 107, tableau 4 : Kimario, 17 ; note 1, même page : Kimaro et Kimario peuvent être traités comme des noms de clan semblables. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
