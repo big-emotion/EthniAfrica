@@ -2,22 +2,27 @@
 
 Written 2026-10-14. Status: **proposed — awaiting operator review.**
 
-These briefs are what the operator pastes into Claude Design to draw the
-reference page of each type of name. Once a board is validated it is saved
-next to its brief (same convention as `../search-answer/`: static `.dc.html`,
-a README with provenance and date) and becomes the reference the code answers
-to. Until then nothing here binds the code.
+These briefs are what the operator pastes into Claude Design to change the
+reference board of each type of name, inside the site canvas. Once the boards
+are approved they are recorded in `docs/design/mockups/site/` and become the
+reference the code answers to. Until then nothing here binds the code.
 
 ## Why these briefs exist
 
-The 2026-10-14 review of the atlas found that the pages have no complete
-reference. What exists:
+The 2026-10-14 review of the atlas found that the pages had no complete
+reference. That gap is now closed by the **site canvas**, "EthniAfrica, relevé
+des pages en production" (<https://claude.ai/artifact/TFD4syHT5UygK4WnxGA5Rd>):
+49 boards recording the site as shipped in v5.2.0, a design-system board
+(`Main`) and sixteen pages at 430, 768 and 1440 px. Its copy in the repository
+is `docs/design/mockups/site/` (pull request #1744, branch
+`docs/site-mockups-reference`), and the procedure is
+`docs/design/mockup-first-workflow.md`. Read both, and `CLAUDE.md`, before
+using a brief.
 
-| Surface | Reference today | Gap |
-| --- | --- | --- |
-| Search result page | `../search-answer/` (v11) and `../search-feed/` (40 boards) | Both predate the timeline lens. The timeline exists only alone, in `docs/editorial/strategy/name-history-timeline-mockup-v4.html` and `-v5.html`. |
-| People, language family, country | `../pages/peuple.html`, `famille.html`, `pays.html` | Drawn for the globe, before the §3 bis grammar of `docs/design/search-result-charter.md`. |
-| Language, family name, place, free word, dossier | none | Never drawn. |
+The briefs below are therefore **not drawings from scratch**. Each one says
+which existing boards to change, what is already on them, and what to add.
+The older mockups (`../search-answer/`, `../search-feed/`, `../pages/`) are
+superseded history for these pages.
 
 The audience audit of 2026-10-13 shows what the new pages must fix: dead ends
 after a long read (`pays/CIV`, `FLG_MANDE`, `PPL_MUCUVAL`), early exits
@@ -26,16 +31,16 @@ after a long read (`pays/CIV`, `FLG_MANDE`, `PPL_MUCUVAL`), early exits
 
 ## The briefs
 
-| # | Brief | Type | Real subject drawn |
+| # | Brief | Type | Boards to change (stem, each at `-430`, `-768`, `-1440`) |
 | --- | --- | --- | --- |
-| 1 | [`01-result-page-timeline.md`](01-result-page-timeline.md) | Search result page with the timeline lens | `peul` |
-| 2 | [`02-people.md`](02-people.md) | People | `PPL_FULA`, `PPL_BASSA` |
-| 3 | [`03-language.md`](03-language.md) | Language | `lin` |
-| 4 | [`04-language-family.md`](04-language-family.md) | Language family | `FLG_BANTU` |
-| 5 | [`05-country.md`](05-country.md) | Country | `CIV` |
-| 6 | [`06-family-name.md`](06-family-name.md) | Family name | `PAT_TRAORE` |
-| 7 | [`07-place.md`](07-place.md) | Place | `LOC_YAMOUSSOUKRO` |
-| 8 | [`08-free-word.md`](08-free-word.md) | Free word | `WRD_RACE` |
+| 1 | [`01-result-page-timeline.md`](01-result-page-timeline.md) | Search result page with the timeline lens | `search-peul`, `search-bassa`, `search-congo`, `search-unknown` |
+| 2 | [`02-people.md`](02-people.md) | People | `people-fula`, `people-bassa`, `people-thin-alaba` |
+| 3 | [`03-language.md`](03-language.md) | Language | `language-lingala` |
+| 4 | [`04-language-family.md`](04-language-family.md) | Language family | `family-bantu`, `family-mande` |
+| 5 | [`05-country.md`](05-country.md) | Country | `country-civ` |
+| 6 | [`06-family-name.md`](06-family-name.md) | Family name | `name-traore` |
+| 7 | [`07-place.md`](07-place.md) | Place | `place-yamoussoukro` |
+| 8 | [`08-free-word.md`](08-free-word.md) | Free word | **new page**, three new boards (`word-race-430`, `-768`, `-1440`); `glossary` untouched |
 
 Dossiers (`DOS_*`) are an editorial type, not a type of name. They carry the
 operator's thesis in full and get their own brief once the thesis wording is
@@ -121,11 +126,34 @@ rule that a page's only promise is its verdict. Until the doctrine is amended:
   a claim the sources cannot carry is never written, and rhetoric never
   graduates into a sourced claim.
 
-## Saving a validated board
+## How a brief is used: the mockups-first workflow
 
-1. Export from Claude Design as static `.dc.html` into
-   `docs/design/mockups/name-pages/<type>/` (create it with the first board).
-2. Add a README beside it: date, version, public URL (provenance only), which
-   brief it answers, what the operator decided.
-3. Link it from `docs/design/README.md` and run `npm run docs:index`.
-4. Only then does a code ticket (Jira `ETNI`) cite it as the reference.
+The five steps are those of `docs/design/mockup-first-workflow.md`; this is how
+the briefs plug into them.
+
+1. **Change the boards** in the site canvas, at 430 px first, then 768, then
+   1440. The brief names the boards. A change to a token or a shared component
+   is made on `Main` and on every page board it appears on. Keep the real
+   French copy; text that is illustrative is marked as such.
+2. **Reread the whole canvas before submitting.** Every board links the same
+   `project/ea-live.css`; a change for one page can break another. Check that
+   all 49 boards still hold.
+3. **Wait for the operator's approval.** Nothing is implemented without it.
+4. **Record the approved boards** by copying `project/*.dc.html`,
+   `canvas.json`, `ea-live.css` and `assets/` into
+   `docs/design/mockups/site/`. When the change touches `src/styles/`, update
+   the verbatim part of `ea-live.css` in the same commit
+   (`src/styles/__tests__/siteMockupCharter.test.ts` fails `make check`
+   otherwise).
+5. **Implement to the boards and compare** at 430, 768 and 1440 before merging.
+   Where the code cannot reproduce a board, stop and raise it.
+
+Do not create a second folder of mockups. `docs/design/mockups/name-pages/`,
+proposed in an earlier draft of this file, is withdrawn.
+
+### Choices made while recording the canvas
+
+The canvas README lists places where a capture could not settle a value: accent
+rules, the chapter bar's captured state, a few copied texts (glossary, Traore
+origins and sources) and some home measurements. A brief that touches one of
+those boards checks them first.

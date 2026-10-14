@@ -1,28 +1,36 @@
 # Claude Design prompt, step 1 — shared rules and brief 1
 
-Self-contained text to paste as the first message of the Claude Design
-conversation. It repeats the shared rules and brief 1
-([`01-result-page-timeline.md`](01-result-page-timeline.md)) so that Claude
-Design needs no file of the repository. Briefs 2 to 8 follow in the same
-conversation, one at a time; they point back to the rules below.
+Self-contained text to paste as the first message of a Claude Design
+conversation opened **on the site canvas** "EthniAfrica, relevé des pages en
+production" (<https://claude.ai/artifact/TFD4syHT5UygK4WnxGA5Rd>), with the
+**EthniAfrica Design System** selected (not "EthniAfrica Cartes"). It repeats
+the shared rules and brief 1 ([`01-result-page-timeline.md`](01-result-page-timeline.md))
+so that Claude Design needs no file of the repository. Briefs 2 to 8 follow in
+the same conversation, one at a time; they point back to the rules below.
 
-Attach with the message: the two timeline mockups
-(`docs/editorial/strategy/name-history-timeline-mockup-v4.html` and `-v5.html`)
-and `docs/design/mockups/search-answer/Peul.dc.html`.
+Nothing needs attaching: the boards are in the canvas. Procedure:
+`docs/design/mockup-first-workflow.md`.
 
 ## Text to paste
 
 ```text
 You are the art director of EthniAfrica, a French-language atlas that answers one question: where do the names of Africa's peoples come from? A reader searches a name; the page shows the name's origin, every name the same subject goes by, and for each one its history — who named whom, when, and why — with sources shown by type.
 
-We are redrawing the reference page of every type of name, one at a time, in this conversation. These pages will be saved in the code repository and become the reference the code answers to. Use the EthniAfrica visual identity of the existing artifacts of this project (parchment surfaces, Fraunces for headings, the terre cuite accent). Do not invent a new brand.
+This canvas records the live site (release v5.2.0): a design-system board (Main) and 16 pages at 430, 768 and 1440 px. Every board links the same stylesheet, project/ea-live.css. We now CHANGE these boards, one brief at a time, in this conversation. The rule is mockups first: nothing is built until I approve the boards. Approved boards are copied into the code repository and become the reference the code answers to.
 
-STEP 0 — before drawing anything, reply in 6 lines: what you understood, which design system, fonts and colour tokens you can see in this project, and what is missing. Draw nothing yet.
+STEP 0 — before changing anything, reply in 8 lines: which boards you can see for this brief, which tokens and fonts they use (Fraunces, Nunito Sans, JetBrains Mono expected), what is on them today, and anything you cannot do. Change nothing yet.
+
+HOW YOU WORK
+- Edit the existing boards. Do not create a parallel set and do not restyle what the brief does not name.
+- Work at 430 px first, then 768, then 1440. A board must say the same thing at every width.
+- A change to a token or a shared component is made on Main and on every board where it appears.
+- Keep the real French copy already on the boards. Where the brief gives no copy, write a clearly marked placeholder, never invented facts, dates or sources.
+- Before you hand over, reread the whole canvas: all boards share ea-live.css, so check that none of the 49 boards broke.
 
 RULES EVERY BOARD OBEYS (a board that breaks one is rejected)
-1. Mobile first. Draw 430 px, then tablet 768 px, then desktop 1280 px. A board must say the same thing at every width. Night variants come later, by token substitution, never redrawn.
-2. All page copy in French, in plain everyday connected sentences. Keep African spellings and quotations. Use only the real sentences I give; invent no facts, dates or sources. Where I give none, write a clearly marked placeholder.
-3. Colours, type and spacing as tokens, never ad hoc values.
+1. Mobile first, as above. Night variants come later, never redrawn.
+2. All page copy in French, plain everyday connected sentences. Keep African spellings and quotations.
+3. Colours, type and spacing as the existing tokens, never ad hoc values.
 4. A source shows its TYPE (oral tradition, book, article, archive, report, community account), never its reliability. No badge, score or ordering may rank a griot below a linguist.
 5. No name is crowned. Competing origins stand side by side, unranked, in neutral order, each with its own sources. Where the reader searched, the searched name leads, and the page leads visibly to the self-name: « Vous avez cherché Peul. Ce peuple se nomme lui-même Fulɓe. » Elsewhere the self-name leads.
 6. A block never renders to say it is empty. What the atlas does not know is gathered in one closing block, one silence per line, declared and never blank.
@@ -44,28 +52,35 @@ DEPTH FOLLOWS THE SUBJECT. Draw a rich state and a thin state. The rich state us
 THE ORAL VOICE. Only about 18 of 8,000 source entries are oral tradition. Block 3 must show the oral voice when it exists, and show honestly when it does not: a declared silence in block 5 (« aucun récit transmis oralement n'est enregistré pour ce nom »), never an empty column.
 
 BRIEF 1 — THE SEARCH RESULT PAGE WITH THE TIMELINE LENS
-Surface: the page a reader reaches after searching a name. It is the central page of the site. Measured problem: the page's bounce rose from 8 % to 34 % in five days, and readers search 3.8 times each for about 13 result clicks. The board must make the next step visible.
+Boards to change, each at -430, -768 and -1440: search-peul (the model), then search-bassa, search-congo, search-unknown.
 
-Real subject: the query « peul ». Data: the name Peul designates a people that calls itself Fulɓe (Pullo for one person). Other names: Haalpulaar'en, Futankooɓe, Fula, Fulani, Fellata, Toucouleur. Number of accounts per name: Fulɓe 10, Haalpulaar'en 4, Futankooɓe 1, Peul 4, Fula 8, Fulani 8, Fellata 8, Toucouleur 13. The sources do not always agree on origins. Source types present: academic, archive, encyclopedia, intergovernmental, linguistic reference, press. For the verdict, write one plain sentence from this: « Le nom Peul désigne un peuple qui se nomme lui-même Fulɓe. D'autres noms existent, et les sources ne s'accordent pas toujours sur leur origine. »
+Measured problem: the page's bounce rose from 8 % to 34 % in five days, and readers search 3.8 times each for about 13 result clicks. The page ends on the timeline and offers nothing else.
 
-Blocks at 430 px, in order:
-1. Search field keeping the query; lens bar: « Histoire du nom » (default), Tout, Shorts, Récits, Jeux, Fiches.
-2. Eyebrow « D'où vient ce nom », the name large, the verdict, the self-name lead.
-3. Name chips, the searched name first; one name open at a time.
-4. The timeline of the open name, in the style of the attached mockups v4 and v5: a left thread, the period set large at the top of each tile, a terre cuite « Naissance du nom » tile with a heavy frame and a pill so colour is not the only cue, dashed tiles for « Avant le nom », a « on remonte le temps » hint, a closing line « Fin de ce que nos recherches retracent pour le nom X. » Names set in italics.
-5. The sources speak, grouped by source type.
-6. Closing band: silences, conviction, thesis slot, invitation to correct.
-7. Next step: two related names, each with one line saying why (the name Toucouleur, which has the most accounts, and the language name Fulfulde).
+Already on search-peul — do NOT redraw: search field and lens bar (« Histoire du nom » default, then Tout, Shorts, Récits), the verdict card with the self-name lead, the name chips, « On remonte le temps » and « Pendant ce temps, ailleurs », the timeline with its terre cuite birth tile (1842, « Naissance du nom »), the closing line « Fin de ce que nos recherches retracent pour le nom Peul. » and the button « Voir la fiche complète ». Then the footer.
 
-States to draw, mobile first, then 768 and 1280:
+TO ADD between the timeline and the footer on search-peul:
+a. The sources speak: the accounts of the open name regrouped by source type. Real source types for « peul »: academic, archive, encyclopedia, intergovernmental, linguistic reference, press. Oral voice: none recorded, shown as a declared silence below.
+b. The closing band: silences (one per line), one conviction sentence, the discreet thesis line [THÈSE — texte à fixer], the invitation to correct.
+c. The next step: two related names with one line each saying why — Toucouleur (the name with the most accounts) and the language name Fulfulde. Check that each target page exists in the canvas before drawing the link.
+Keep the button « Voir la fiche complète » where it is or move it into the next step; say which in your report.
+
+Real data for « peul »: the name Peul designates a people that calls itself Fulɓe (Pullo for one person). Other names and number of accounts: Fulɓe 10, Haalpulaar'en 4, Futankooɓe 1, Peul 4, Fula 8, Fulani 8, Fellata 8, Toucouleur 13. The sources do not always agree on origins.
+
+States to draw for the added blocks, at 430, 768 and 1440:
 - Rich: « peul », first name open, one account folded and one unfolded.
 - Thin: a subject with a single name and one dated account.
 - Competing origins: two accounts in the same period labelled « hypothèse 1 » and « hypothèse 2 », neutral order.
 - No dated origin: an honest notice that the origin cannot be dated.
-- Several subjects answer one query (« bassa », « congo »): the disambiguation comes before the verdict.
-- Unknown name: the verdict still exists (« Nous ne connaissons pas ce nom ») and offers a next step.
+Then apply the same additions to search-bassa (several subjects: the disambiguation stays before the verdict), search-congo (two countries) and search-unknown (the verdict « Nous ne connaissons pas ce nom » still offers a next step).
 
-Do not: re-invent the timeline (reuse the attached v4/v5 grammar); show any tier, score or « most reliable » label; put the thesis anywhere but the closing band.
+Do not: re-invent the timeline; show any tier, score or « most reliable » label; put the thesis anywhere but the closing band.
 
-Deliver: one board per state and per width on a single canvas, labelled, ready to export as static HTML. After the board, list in 5 lines every choice you made that I did not specify, so I can reject any of them.
+Deliver: the changed boards, labelled, in the canvas. After them, list in 5 lines every choice you made that I did not specify, so I can reject any of them. Then wait for my approval.
 ```
+
+## After approval
+
+Per `docs/design/mockup-first-workflow.md`, step 4: copy `project/*.dc.html`,
+`canvas.json`, `ea-live.css` and `assets/` into `docs/design/mockups/site/`,
+and update the verbatim part of `ea-live.css` in the same commit if
+`src/styles/` is touched.

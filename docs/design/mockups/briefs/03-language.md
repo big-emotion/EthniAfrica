@@ -2,8 +2,10 @@
 
 Read [`README.md`](README.md) first.
 
+**Board to change** (at `-430`, `-768`, `-1440`): `language-lingala`.
+
 **Surface.** `/fr/atlas/langues/[slug]`, built by
-`src/components/language/LanguageDetailViewV2.tsx`. **No mockup exists.**
+`src/components/language/LanguageDetailViewV2.tsx`. The canvas holds one board for it.
 
 **Why.** 762 language URLs in the sitemap, 1.3 % visited in 30 days: the type
 is almost invisible. Language names are the ones most often handed down from

@@ -2,8 +2,10 @@
 
 Read [`README.md`](README.md) first.
 
-**Surface.** `/fr/atlas/pays/[slug]`. Existing mockup: `../pages/pays.html`
-(Nigeria, drawn for the globe).
+**Board to change** (at `-430`, `-768`, `-1440`): `country-civ`, about
+9,999 px tall at 430 px (11 screens).
+
+**Surface.** `/fr/atlas/pays/[slug]`. The older `../pages/pays.html` is superseded by the canvas board.
 
 **Why.** Countries are the best-visited type (33 of 54, 61 %) and the worst
 dead end: `pays/CIV` has 7 visitors, **100 % bounce after 73 % scroll and 107 s**.

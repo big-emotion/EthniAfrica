@@ -2,9 +2,12 @@
 
 Read [`README.md`](README.md) first.
 
+**Boards to change** (each at `-430`, `-768`, `-1440`): `family-bantu`,
+`family-mande`. At 430 px `family-mande` is about 22,132 px tall (24
+screens), the longest page recorded.
+
 **Surface.** `/fr/atlas/familles/[slug]`, built by
-`src/components/family/FamilyParchment.tsx`. Existing mockup:
-`../pages/famille.html` (Benue-Congo, drawn for the globe, before §3 bis).
+`src/components/family/FamilyParchment.tsx`. The older `../pages/famille.html` is superseded by the canvas boards.
 
 **Why.** Measured dead end: `FLG_MANDE` has 6 entries and a 75 % exit rate after
 195 s on the page; it was also the target of a 105K-view Facebook post (bare

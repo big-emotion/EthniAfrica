@@ -2,8 +2,13 @@
 
 Read [`README.md`](README.md) first.
 
+**Boards to create** (new page, so three new boards): `word-race-430`,
+`word-race-768`, `word-race-1440`. Add them to the canvas as a fifth
+group, and add the page's entry to `canvas.json`. The nearest existing
+board is `glossary`, which stays as it is.
+
 **Surface.** The `mots` type (`dataset/source/afrik/mots/`, 2 fiches today).
-**No mockup, and no page at all**: checked on 2026-10-14, the two fiches
+**No page at all**: checked on 2026-10-14, the two fiches
 (`WRD_RACE`, `WRD_KIRDI`) are served only by `/api/v2/words`; no route under
 `src/app/[lang]/` renders them and production's sitemap lists none. This brief
 draws a new page, not a redraw. The nearest existing surface is `/fr/glossaire`. Doctrine §2 names it "plus one free

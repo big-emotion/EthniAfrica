@@ -2,6 +2,11 @@
 
 Read [`README.md`](README.md) first.
 
+**Boards to change** (each at `-430`, `-768`, `-1440`): `people-fula`,
+`people-bassa`, `people-thin-alaba`. The boards record today's page: hero
+plate and « Voir la carte » first, « D'où vient le nom ? » below it. At 430 px
+`people-fula` is about 10,455 px tall (11 screens).
+
 **Surface.** `/fr/atlas/peuples/[slug]`, built by
 `src/components/people/PeopleDetailViewV2.tsx`. Today's chapter order: answer
 (« D'où vient le nom ? »), other names, distribution map, related peoples,

@@ -1,14 +1,30 @@
 # Brief 1 — The search result page with the timeline lens
 
-Read [`README.md`](README.md) first (rules, spine, thesis slot).
+Read [`README.md`](README.md) first (rules, spine, thesis slot, workflow).
+
+**Boards to change** (canvas stems, each at `-430`, `-768`, `-1440`):
+`search-peul` (the model), then `search-bassa`, `search-congo`,
+`search-unknown`.
+
+**Already on `search-peul`, do not redraw:** search field and lens bar
+(« Histoire du nom » default), the verdict card with the self-name lead
+(« Vous avez cherché Peul. Ce peuple se nomme lui-même Fulɓe. »), the name
+chips, « On remonte le temps » and « Pendant ce temps, ailleurs », the
+timeline with its terre cuite birth tile (1842), the closing line and the
+button « Voir la fiche complète ». The page then goes straight to the
+footer.
+
+**To add, between the timeline and the footer:** the sources block, the
+closing band (silences, conviction, thesis slot, invitation to correct),
+and the next step. These are the blocks 3, 5, 6, 7 and 8 of the spine; the
+page has none of them today.
 
 **Surface.** `/fr/atlas/recherche`, built by
 `src/components/pages/RecherchePageContent.tsx` and `src/components/search/`.
 This is the central surface: a reader searches a name and the page answers.
 
-**Why it is first.** Never drawn whole with the timeline. v4/v5 draw the
-timeline alone; `search-answer` v11 and `search-feed` draw the page without it.
-Measured 2026-10-13: bounce 8 % → 34 % in five days, 3.8 searches per searcher
+**Why it is first.** The page ends on the timeline and offers nothing
+else. Measured 2026-10-13: bounce 8 % → 34 % in five days, 3.8 searches per searcher
 for 13 result clicks. The timeline fires no click event, so the cause is
 unknown. The board must make the "next step" visible so that the instrumentation
 has something to count.
@@ -28,7 +44,7 @@ self-name: « Vous avez cherché Peul. Ce peuple se nomme lui-même Fulɓe. »
 ## Blocks, mobile 430 px, in order
 
 1. Search field with the query kept in it; lens bar (« Histoire du nom »
-   default, then Tout, Shorts, Récits, Jeux, Fiches).
+   default, then Tout, Shorts, Récits, Jeux, Fiches). Unchanged.
 2. Eyebrow « D'où vient ce nom », the name large, then the one-sentence verdict.
 3. Name chips, the searched name first; one name open at a time.
 4. The timeline for the open name: left thread, period set large at the top of

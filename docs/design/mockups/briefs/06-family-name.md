@@ -2,7 +2,12 @@
 
 Read [`README.md`](README.md) first.
 
-**Surface.** `/fr/atlas/noms/[slug]`. **No fiche mockup exists** (`search-answer/Camara.dc.html`
+**Board to change** (at `-430`, `-768`, `-1440`): `name-traore`, about
+13,191 px tall at 430 px (14 screens). The canvas README warns that the
+Traore origins and sources were copied from screenshots; check them
+against the live page.
+
+**Surface.** `/fr/atlas/noms/[slug]`. **The fiche is recorded on the `name-traore` boards** (`search-answer/Camara.dc.html`
 is the result-page answer for a patronyme, not the fiche).
 
 **Why.** 794 patronymes, 625 in the sitemap, 10 % visited. The type with the

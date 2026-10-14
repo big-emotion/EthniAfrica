@@ -2,7 +2,10 @@
 
 Read [`README.md`](README.md) first.
 
-**Surface.** `/fr/atlas/lieux/[slug]`. **No mockup.** Only 4 place fiches exist
+**Board to change** (at `-430`, `-768`, `-1440`): `place-yamoussoukro`,
+about 3,633 px tall at 430 px (4 screens).
+
+**Surface.** `/fr/atlas/lieux/[slug]`. The canvas holds one board for it. Only 4 place fiches exist
 and 3 appear in the sitemap; none was visited in 30 days. This is the type with
 the least evidence, so the board is a template to be tested, not a fix for a
 measured problem.
