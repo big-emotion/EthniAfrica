@@ -95,7 +95,9 @@
     },
     {
       "sourceKey": "roscoe-1911-baganda",
-      "title": "The Baganda: An Account of their Native Customs and Beliefs",
+      "title": "The Baganda: An Account of Their Native Customs and Beliefs",
+      "author": "John Roscoe",
+      "year": 1911,
       "url": "https://archive.org/details/bagandaaccountof00roscuoft",
       "tier": "referenced",
       "source_kind": "academic",
@@ -103,7 +105,8 @@
     },
     {
       "sourceKey": "buganda-heritage-clans",
-      "title": "Buganda Heritage and Information Centre — Clans",
+      "title": "Clans",
+      "author": "Buganda Heritage and Information Centre",
       "url": "https://www.bugandaheritage.org.uk/culture/clans",
       "tier": "unverified",
       "source_kind": "community",
@@ -152,7 +155,7 @@
             "aspect": "meaning",
             "sources": [
               {
-                "title": "The Baganda: An Account of their Native Customs and Beliefs",
+                "title": "The Baganda: An Account of Their Native Customs and Beliefs",
                 "author": "John Roscoe",
                 "year": 1911,
                 "url": "https://archive.org/details/bagandaaccountof00roscuoft",

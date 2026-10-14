@@ -66,6 +66,8 @@
     {
       "sourceKey": "cultural-atlas-ethiopian-naming",
       "title": "Ethiopian Culture — Naming",
+      "author": "Nina Evason",
+      "year": 2018,
       "url": "https://culturalatlas.sbs.com.au/ethiopian-culture/ethiopian-culture-naming",
       "tier": "referenced",
       "source_kind": "linguistic_reference",
@@ -73,9 +75,11 @@
     },
     {
       "sourceKey": "leslau-1987-geez",
-      "title": "Comparative Dictionary of Geʿez (Classical Ethiopic) — Geʿez-English / English-Geʿez, with an Index of the Semitic Roots",
+      "title": "Comparative Dictionary of Geʿez (Classical Ethiopic)",
+      "author": "Wolf Leslau",
+      "year": 1987,
       "url": "https://archive.org/details/leslau-comparative-dictionary-of-geez-1987",
-      "tier": "official",
+      "tier": "referenced",
       "source_kind": "academic",
       "notes": "Leslau, Wolf, Otto Harrassowitz, Wiesbaden, 1987. Lexique de référence du guèze. Les quatre éléments portés par les fiches habesha y ont été vérifiés un à un dans le texte intégral : gabr « esclave, serviteur, vassal » (le verbe gabra valant « faire, agir »), wald « fils » — l'état construit walda wald donnant « petit-fils » —, hayl « puissance, force, vaillance » et kabr « honneur, gloire, prestige ». Remplace ici un site de généalogie qui portait seul ces étymologies."
     }
@@ -122,8 +126,8 @@
             "sources": [
               {
                 "title": "Ethiopian Culture — Naming",
-                "author": "Cultural Atlas",
-                "year": null,
+                "author": "Nina Evason",
+                "year": 2018,
                 "url": "https://culturalatlas.sbs.com.au/ethiopian-culture/ethiopian-culture-naming",
                 "tier": "referenced",
                 "source_kind": "linguistic_reference",

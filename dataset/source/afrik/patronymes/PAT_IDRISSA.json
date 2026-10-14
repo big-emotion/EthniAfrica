@@ -74,6 +74,8 @@
     {
       "sourceKey": "erder-1990-idris",
       "title": "The Origin of the Name Idrīs in the Qurʾān: A Study of the Influence of Qumran Literature on Early Islam",
+      "author": "Yoram Erder",
+      "year": 1990,
       "url": "https://cris.tau.ac.il/en/publications/the-origin-of-the-name-idr%C4%ABs-in-the-qur%CA%BE%C4%81n-a-study-of-the-influen/",
       "tier": "referenced",
       "source_kind": "academic",
@@ -81,7 +83,9 @@
     },
     {
       "sourceKey": "niger-cm-2024-idrissa",
-      "title": "Conseil des ministres du 4 janvier 2024",
+      "title": "Conseil des ministres du 04/01/2024 : adoption de plusieurs projets de textes et mesures nominatives",
+      "author": "Gouvernement du Niger",
+      "year": 2024,
       "url": "https://www.gouv.ne/index.php/les-communiques-du-gouvernement/510-conseil-des-ministres-du-04-01-2024-adoption-de-plusieurs-projets-de-textes-et-mesures-nominatives",
       "tier": "official",
       "source_kind": "government",

@@ -262,6 +262,7 @@
     {
       "sourceKey": "bamadaba-lexique",
       "title": "Bamadaba — dictionnaire bambara-français, lexique",
+      "author": "Corpus bambara de référence",
       "url": "https://bamadaba.coastsystems.net/lexicon/j/",
       "tier": "referenced",
       "source_kind": "linguistic_reference",
@@ -270,6 +271,8 @@
     {
       "sourceKey": "niane-1960",
       "title": "Soundjata ou l'épopée mandingue",
+      "author": "Djibril Tamsir Niane, d'après le récit du griot Djeli Mamadou Kouyaté",
+      "year": 1960,
       "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
       "tier": "referenced",
       "source_kind": "academic",
@@ -321,7 +324,7 @@
             "aspect": "meaning",
             "sources": [
               {
-                "title": "Bamadaba — dictionnaire bambara-français, lexique, lettre J",
+                "title": "Bamadaba — dictionnaire bambara-français, lexique",
                 "author": "Corpus bambara de référence",
                 "year": null,
                 "url": "https://bamadaba.coastsystems.net/lexicon/j/",

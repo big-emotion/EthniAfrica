@@ -89,7 +89,9 @@
     },
     {
       "sourceKey": "lahuec-1979-mobilite-bissa-mossi",
-      "title": "La mobilité du peuplement Bissa et Mossi",
+      "title": "La mobilité du peuplement bissa et mossi",
+      "author": "Jean-Paul Lahuec et Jean-Yves Marchal",
+      "year": 1979,
       "url": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_5/pt5/travaux_d/21153.pdf",
       "tier": "referenced",
       "source_kind": "academic",
@@ -98,6 +100,8 @@
     {
       "sourceKey": "burkina-provisional-patronyme-register",
       "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
+      "author": "Direction du patrimoine culturel, Burkina Faso",
+      "year": 2025,
       "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
       "tier": "unverified",
       "source_kind": "government",
@@ -182,8 +186,8 @@
             "sources": [
               {
                 "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
-                "author": "Direction du patrimoine culturel du Burkina Faso",
-                "year": null,
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
                 "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
                 "tier": "unverified",
                 "source_kind": "government",
@@ -260,8 +264,8 @@
             "sources": [
               {
                 "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
-                "author": "Direction du patrimoine culturel du Burkina Faso",
-                "year": null,
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
                 "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
                 "tier": "unverified",
                 "source_kind": "government",
@@ -282,8 +286,8 @@
             "sources": [
               {
                 "title": "Projet de répertoire des patronymes au Burkina Faso — version provisoire",
-                "author": "Direction du patrimoine culturel du Burkina Faso",
-                "year": null,
+                "author": "Direction du patrimoine culturel, Burkina Faso",
+                "year": 2025,
                 "url": "https://pdfcoffee.com/repertoire-des-patronymes-nationaux-du-burkina-pdf-free.html",
                 "tier": "unverified",
                 "source_kind": "government",

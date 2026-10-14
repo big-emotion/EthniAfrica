@@ -374,6 +374,8 @@
     {
       "sourceKey": "niane-1960",
       "title": "Soundjata ou l'épopée mandingue",
+      "author": "Djibril Tamsir Niane, d'après le récit du griot Djeli Mamadou Kouyaté",
+      "year": 1960,
       "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
       "tier": "referenced",
       "source_kind": "academic",
@@ -405,7 +407,9 @@
     },
     {
       "sourceKey": "arcin-1907-guinee",
-      "title": "La Guinée française",
+      "title": "La Guinée française : races, religions, coutumes, production, commerce",
+      "author": "André Arcin",
+      "year": 1907,
       "url": "https://archive.org/details/laguinefrana00arci",
       "tier": "referenced",
       "source_kind": "archive",
@@ -469,7 +473,7 @@
                 "notes": "UNESCO, volume dirigé par B. A. Ogot. Les Malinké du clan Camara établis au XVIe siècle au Liberia et dans l'ouest de la Côte d'Ivoire."
               },
               {
-                "title": "La Guinée française",
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
                 "author": "André Arcin",
                 "year": 1907,
                 "url": "https://archive.org/details/laguinefrana00arci",
@@ -501,7 +505,7 @@
               },
               {
                 "title": "Soundjata ou l'épopée mandingue",
-                "author": "Djibril Tamsir Niane",
+                "author": "Djibril Tamsir Niane, d'après le récit du griot Djeli Mamadou Kouyaté",
                 "year": 1960,
                 "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
                 "tier": "referenced",
@@ -557,7 +561,7 @@
             ],
             "sources": [
               {
-                "title": "La Guinée française",
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
                 "author": "André Arcin",
                 "year": 1907,
                 "url": "https://archive.org/details/laguinefrana00arci",
@@ -579,7 +583,7 @@
             "sources": [
               {
                 "title": "Soundjata ou l'épopée mandingue",
-                "author": "Djibril Tamsir Niane",
+                "author": "Djibril Tamsir Niane, d'après le récit du griot Djeli Mamadou Kouyaté",
                 "year": 1960,
                 "url": "https://books.google.com/books/about/Soundjata.html?id=PtJyAAAAMAAJ",
                 "tier": "referenced",
@@ -736,7 +740,7 @@
             "hypothesisGroup": "origine du nom Camara",
             "sources": [
               {
-                "title": "La Guinée française",
+                "title": "La Guinée française : races, religions, coutumes, production, commerce",
                 "author": "André Arcin",
                 "year": 1907,
                 "url": "https://archive.org/details/laguinefrana00arci",
