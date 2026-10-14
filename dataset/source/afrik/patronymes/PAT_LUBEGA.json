@@ -6,7 +6,7 @@
   },
   "id": "PAT_LUBEGA",
   "nameMain": "Lubega",
-  "nameSystem": "totemic_clan",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Lubega",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [
@@ -62,7 +62,7 @@
   "gaps": [
     {
       "fieldPath": "nameSystem",
-      "reason": "la recherche web combinant « Lubega », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de la page mémorielle du clan Ngabi-Nsamba, ses renvois à J. Roscoe et M. B. Nsimbi, et des recherches ciblées sur Lubega dans les travaux consacrés aux clans du Buganda, n'ont pas établi que la catégorie provisoire « totemic_clan » décrive ce nom lui-même ; elle reste une hypothèse de classement."
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues le disent un nom de personne ganda, donné aux garçons du clan Ngabi, qui porte un autre nom. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",

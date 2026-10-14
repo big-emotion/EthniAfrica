@@ -1,0 +1,1 @@
+The seven carousel models (1.3.0), one per series, as sample cards `serie-<series>-NN`: existing card types only, demonstration data for series 1 to 3, placeholders in brackets for 4 to 7, an image or an « image à trouver » slot on every card. Rules and the image proposal in Series.

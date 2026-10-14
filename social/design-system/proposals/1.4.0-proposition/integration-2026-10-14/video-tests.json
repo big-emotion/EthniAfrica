@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-14",
+  "browser": "Chromium 141.0.7390.37 driven by Playwright 1.63.0, with social/renderer/runtime.json overridden in a scratch copy (the pinned 153.0.8010.12 is not installed in the cloud session)",
+  "test:social-video": "143 of 143 pass on that browser; in the repository working tree the 13 render tests of series.render.test.mjs cannot start without the pinned browser (before this change, 8 render tests failed the same way)",
+  "test:social-renderer": "26 of 26 pass on the same browser",
+  "test:social-series-proposal": "8 of 8 pass",
+  "demoVideo": "The series 1 demonstration (40.6 s, 1233 frames) encodes without refusal outside diagnosis: every checked frame keeps its text in its bands; its library images are reported, not refused, as a demonstration's. Manifest in demo-video-manifest.json; the video itself is kept outside git.",
+  "toDoOnThePinnedBrowser": "npm run test:social-video, npm run test:social-renderer and the fidelity check against the accepted references"
+}

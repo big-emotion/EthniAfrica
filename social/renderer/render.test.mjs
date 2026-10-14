@@ -322,3 +322,114 @@ test("unsafe map geometry is refused before it becomes SVG markup", async (t) =>
     /geometry|SVG/i
   );
 });
+
+// The seven names as `EthniCards.SERIES` prints them (social/design-system/series.md).
+const SERIES_NAMES = {
+  pays: "D'où vient le nom de mon pays ?",
+  "nom-recu": "Le nom qu'on leur a donné",
+  "nom-famille": "Mon nom, mon histoire",
+  mots: "Les mots qu'on nous a collés",
+  frontieres: "Un peuple, plusieurs pays",
+  "afrique-tout": "L'Afrique n'est pas un tout",
+  villes: "Ce que les villes racontent",
+};
+const finalOf = (card) => {
+  const d = single(card.id);
+  d.cards[0] = { ...card, folio: "01/01" };
+  delete d.cards[0].demo;
+  return d;
+};
+
+// @req REQ-186
+test("1.3.0: final mode refuses a series card that breaks a band rule", async (t) => {
+  const withSeries = (id) => ({
+    ...structuredClone(samples.cards.find((c) => c.id === id)),
+    series: { id: "pays", episode: 2 },
+  });
+  // seq-4's 870 px panel fits 900, not a series card's 828.
+  const tall = withSeries("seq-4");
+  const twoLines = withSeries("serie-pays-02");
+  twoLines.series.name =
+    "Une série au nom beaucoup trop long pour tenir sur une seule ligne du bandeau";
+  const focus = withSeries("serie-pays-02");
+  focus.image.focus = [0.5, 0.02];
+  focus.image.anchor = [0.5, 0.02];
+  // 1914 keeps « Tunisie » near the top: under a band it is closer than 12 px.
+  const nearBand = withSeries("atlas-1914");
+  for (const [card, reason] of [
+    [tall, /maximum 828/],
+    [twoLines, /deux lignes/],
+    [focus, /point focal/],
+    [nearBand, /12 px du bandeau/],
+  ]) {
+    const f = await fixture(t, finalOf(card));
+    await assert.rejects(renderSequence(f), reason);
+    await assert.rejects(access(f.output));
+  }
+});
+
+// @req REQ-186
+test("1.3.0: an unknown series is an engine error in every mode", async (t) => {
+  const d = single("serie-pays-02");
+  d.cards[0].series = { id: "inconnue", episode: 1 };
+  const f = await fixture(t, d);
+  await assert.rejects(
+    renderSequence({ ...f, mode: "diagnostic" }),
+    /Série inconnue/
+  );
+});
+
+// @req REQ-186
+test("1.3.0: an « image à trouver » slot is a mock-up and cannot be exported as final", () => {
+  const d = finalOf(samples.cards.find((c) => c.id === "serie-pays-03"));
+  assert.match(d.cards[0].image.src, /a-trouver-/);
+  assert.throws(
+    () => validateInput(d, "final", samples.version),
+    /image à trouver/
+  );
+  d.cards[0].demo = "Démonstration : texte non validé";
+  assert.doesNotThrow(() => validateInput(d, "proof", samples.version));
+});
+
+// @req REQ-186
+test("1.3.0: recovery refuses a series card over 828 px or with a two-line band", async (t) => {
+  const f = await fixture(t, single("serie-pays-02"));
+  const r = await renderSequence({ ...f, mode: "proof" });
+  assert.equal(r.cards[0].fit.panelMax, 828);
+  const path = join(f.output, "report.json");
+  const original = structuredClone(r);
+  r.cards[0].fit.panelHeight = 850;
+  await writeFile(path, JSON.stringify(r));
+  await assert.rejects(verifyOutput(f), /layout/i);
+  const wrapped = structuredClone(original);
+  wrapped.cards[0].fit.series.lines = 2;
+  await writeFile(path, JSON.stringify(wrapped));
+  await assert.rejects(verifyOutput(f), /layout/i);
+  await writeFile(path, JSON.stringify(original));
+  assert.equal((await verifyOutput(f)).cards.length, 1);
+});
+
+// @req REQ-186
+test("1.3.0: every series sample fits, on a one-line band, under 828 px, with the band opening its alternative text", async (t) => {
+  const cards = samples.cards.filter((c) => c.series);
+  assert.equal(cards.length, 51);
+  const f = await fixture(t, {
+    version: samples.version,
+    logo: samples.logo,
+    cards,
+  });
+  const r = await renderSequence({ ...f, mode: "diagnostic" });
+  for (const [i, card] of r.cards.entries()) {
+    const spec = cards[i];
+    assert.deepEqual(card.fit.warnings, [], card.id);
+    assert.equal(card.fit.ok, true, card.id);
+    assert.equal(card.fit.series.lines, 1, card.id);
+    assert.equal(card.fit.panelMax, 828, card.id);
+    assert.ok(card.fit.panelHeight <= 828, card.id);
+    const band = `${spec.series.name || SERIES_NAMES[spec.series.id]}, n° ${spec.series.episode}`;
+    assert.ok(
+      card.alt.startsWith(band),
+      `${card.id}: ${card.alt.slice(0, 80)}`
+    );
+  }
+});

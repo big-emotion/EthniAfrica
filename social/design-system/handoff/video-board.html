@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><title>EthniAfrica Cartes : vidéo de série</title>
+<link rel="stylesheet" href="../components/bundle.css">
+<script src="../components/bundle.js"></script>
+<style>
+html,body{margin:0;background:#000}
+.vf{position:relative;width:1080px;height:1920px;overflow:hidden;background:var(--ground)}
+.vf-card{position:absolute;left:0;width:1080px;height:1350px}
+.vf-card .ec-frame{position:absolute;left:0;top:0}
+/* Subtitles: Vidéo carte 0.4.0, unchanged. Nunito Sans 800 56/68, #fffaf2, dark stroke under the letters, soft shadow. */
+.vf-sub{position:absolute;left:90px;right:90px;text-align:center;font:800 56px/68px var(--font-text);color:#fffaf2;-webkit-text-stroke:9px #1a120a;paint-order:stroke fill;text-shadow:0 2px 14px rgba(0,0,0,.45);letter-spacing:0}
+.vf-sub .lit{background:var(--accent);color:var(--on-accent);-webkit-text-stroke:0;text-shadow:none;box-shadow:-6px 0 0 var(--accent),6px 0 0 var(--accent);border-radius:4px}
+/* Layout B: the video's own card. Band at the top of the safe zone, photo, then the headline in the safe zone. */
+.vb-band{position:absolute;left:0;top:270px;width:1080px}
+.vb-band .ec-series{position:relative;padding:0 120px}
+.vb-photo{position:absolute;left:0;top:342px;width:1080px;height:560px;overflow:hidden}
+.vb-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vb-photo:after{content:'';position:absolute;left:0;right:0;bottom:0;height:220px;background:linear-gradient(to bottom,transparent,var(--ground))}
+.vb-head{position:absolute;left:120px;width:640px;top:902px;height:346px;display:flex;flex-direction:column;justify-content:flex-end}
+.vb-head .ec-kicker{margin-bottom:6px}
+.vb-title{font:400 76px/80px var(--font-display);color:var(--ink);margin:0;text-wrap:balance}
+.vb-title--xl{font-size:100px;line-height:98px}
+.vb-title em,.vb-title .ec-accent{color:var(--accent);font-style:normal}
+.vb-date{font:400 124px/118px var(--font-display);color:var(--accent);margin:0}
+.vb-name{font:400 64px/70px var(--font-display);color:var(--ink);margin-top:6px}
+.vb-label{font:800 20px/24px var(--font-text);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-muted);margin-top:14px}
+.vb-foot{position:absolute;left:120px;right:120px;top:1290px}
+.vb-foot .vb-src{font:400 22px/30px var(--font-text);color:var(--ink-muted)}
+.vb-foot .ec-sign{margin-top:28px}
+.vb-close{position:absolute;left:120px;right:120px;top:362px;text-align:center}
+.vb-close .vb-slogan{font:400 72px/76px var(--font-display);color:var(--ink);text-transform:uppercase}
+.vb-close .vb-sent{font:400 32px/40px var(--font-text);color:var(--ink-muted);margin-top:16px}
+.vb-pill{position:absolute;left:0;right:0;top:872px;text-align:center}
+.vb-pill span{display:inline-block;border:3px solid var(--accent);color:var(--accent);border-radius:999px;padding:14px 40px;font:800 32px/36px var(--font-text);letter-spacing:.06em}
+.vb-sign{position:absolute;left:0;right:0;top:980px;display:flex;justify-content:center}
+.vf-demo{position:absolute;left:28px;z-index:9;background:var(--demo-tape,#ffe58a);color:var(--demo-ink,#2b2100);font:800 22px/28px var(--font-text);letter-spacing:.06em;text-transform:uppercase;padding:10px 22px;border-radius:999px}
+.vf-fade{opacity:.5}
+</style>
+</head><body><div id="out"></div>
+<script>
+/* One frame of the series video, 1080 x 1920.
+   ?layout=A|B  card=ID  next=ID (cross-fade at 50 %)  sub=line1|line2  lit=word  Result: body[data-ready=1]. */
+(async function () {
+  var q = new URLSearchParams(location.search);
+  var tokens = await (await fetch('../tokens.json')).json();
+  await EthniCards.installTokens(tokens, '../');
+  var data = await (await fetch('cards.sample.json')).json();
+  function resolve(n) { return '../assets/' + n; }
+  function card(id) { return JSON.parse(JSON.stringify(data.cards.find(function (c) { return c.id === id; }))); }
+  var first = card(q.get('card')), theme = first.theme || 'nuit';
+  var out = document.getElementById('out');
+  var vf = document.createElement('div'); vf.className = 'vf'; vf.setAttribute('data-theme', theme); out.appendChild(vf);
+  var layout = q.get('layout') || 'A';
+  function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
+  function accentMarks(s) { return esc(s).replace(/\*([^*]+)\*/g, '<span class="ec-accent">$1</span>').replace(/\{[a-z-]+:([^}]+)\}/g, '<span class="ec-accent">$1</span>'); }
+
+  async function cardA(spec, top, cls) {
+    var box = document.createElement('div'); box.className = 'vf-card ' + (cls || ''); box.style.top = top + 'px'; vf.appendChild(box);
+    delete spec.demo;
+    await EthniCards.mount(box, spec, { width: 1080, resolve: resolve, logo: data.logo, context: 'video' });
+  }
+  function cardB(spec, cls) {
+    var g = document.createElement('div'); g.className = 'vf-layer ' + (cls || ''); g.style.cssText = 'position:absolute;inset:0;background:var(--ground)';
+    var sr = EthniCards.seriesOf(spec);
+    var html = '';
+    if (spec.type === 'closing') {
+      html += '<div class="vb-close"><div class="vb-slogan">' + accentMarks(spec.title) + '</div><div class="vb-sent">' + esc(spec.body || '') + '</div></div>';
+      html += '<div class="vb-pill"><span>' + esc((spec.cta && spec.cta.domain || 'ethniafrica.com').toUpperCase()) + '</span></div>';
+    } else {
+      if (spec.image) {
+        var f = spec.image.focus || [0.5, 0.5];
+        html += '<div class="vb-photo"><img src="' + resolve(spec.image.src) + '" style="object-position:' + (f[0] * 100) + '% ' + (f[1] * 100) + '%"></div>';
+      }
+      html += '<div class="vb-head"><div class="ec-kicker">' + esc(spec.kicker || '') + '</div>';
+      if (spec.date) {
+        html += '<div class="vb-date">' + esc(spec.date.display) + '</div>';
+        if (spec.date.name) html += '<div class="vb-label">Nom employé</div><div class="vb-name">' + esc(spec.date.name) + '</div>';
+      } else html += '<h2 class="vb-title' + (spec.type === 'opener' ? ' vb-title--xl' : '') + '">' + accentMarks(spec.title) + '</h2>';
+      html += '</div>';
+      html += '<div class="vb-foot">' + (spec.source ? '<div class="vb-src">Source : ' + esc(spec.source) + '</div>' : '') + (spec.credit ? '<div class="vb-src">' + esc(spec.credit) + '</div>' : '') + '</div>';
+    }
+    g.innerHTML = html;
+    if (sr) { var b = document.createElement('div'); b.className = 'vb-band'; b.innerHTML = '<div class="ec-series"><div class="ec-series-text"><span class="ec-series-name">' + esc(sr.name) + '</span><span class="ec-series-sep"> · </span><span class="ec-series-episode">n° ' + sr.episode + '</span></div></div>'; g.appendChild(b); }
+    var sign = document.createElement('div'); sign.className = spec.type === 'closing' ? 'vb-sign' : '';
+    if (spec.type === 'closing') { sign.innerHTML = '<div class="ec-sign ec-sign--center"><span class="ec-sign-brand"><img src="' + resolve(data.logo) + '" style="width:56px;height:56px"><span class="ec-sign-words"><span class="ec-sign-name" style="font:600 44px/48px var(--font-wordmark);color:var(--ink)">EthniAfrica</span></span></span></div>'; g.appendChild(sign); }
+    vf.appendChild(g);
+  }
+  var subTop = layout === 'A' ? 1660 : 700;
+  if (layout === 'A') {
+    await cardA(first, 285);
+    if (q.get('next')) await cardA(card(q.get('next')), 285, 'vf-fade');
+  } else {
+    cardB(first);
+    if (q.get('next')) cardB(card(q.get('next')), 'vf-fade');
+  }
+  if (q.get('sub')) {
+    var lines = q.get('sub').split('|'), lit = q.get('lit');
+    var s = document.createElement('div'); s.className = 'vf-sub';
+    s.style.top = (subTop + (lines.length === 1 ? 34 : 0)) + 'px';
+    s.innerHTML = lines.map(function (ln) { return ln.split(' ').map(function (w) { return w === lit ? '<span class="lit">' + esc(w) + '</span>' : esc(w); }).join(' '); }).join('<br>');
+    vf.appendChild(s);
+  }
+  if (q.get('demo') !== '0') { var d = document.createElement('div'); d.className = 'vf-demo'; d.style.top = (layout === 'A' ? 1856 : 1856) + 'px'; d.textContent = 'Démonstration : texte non validé'; vf.appendChild(d); }
+  await document.fonts.ready;
+  await new Promise(function (r) { setTimeout(r, 150); });
+  var boxes = Array.prototype.map.call(vf.querySelectorAll('.vf-sub, .vb-head, .vb-band, .vb-close, .vb-pill, .vf-card .ec-panel, .vf-card .ec-series'), function (e) { var r = e.getBoundingClientRect(), o = vf.getBoundingClientRect(); return { cls: e.className, x: Math.round(r.left - o.left), y: Math.round(r.top - o.top), w: Math.round(r.width), h: Math.round(r.height) }; });
+  window.__boxes = boxes;
+  document.body.dataset.ready = '1';
+})();
+</script></body></html>

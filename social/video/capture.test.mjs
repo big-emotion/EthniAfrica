@@ -6,7 +6,11 @@
 // retry cannot change a pixel.
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { captureFrame } from "./render.mjs";
+import { existsSync, mkdtempSync, rmSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
+import sharp from "sharp";
+import { captureFrame, encodeFrames } from "./render.mjs";
 
 const timeout = () =>
   Object.assign(new Error("page.screenshot: Timeout exceeded."), {
@@ -51,4 +55,32 @@ test("any other failure is not retried", async () => {
   const p = page([new Error("Target closed"), Buffer.from("png")]);
   await assert.rejects(captureFrame(p), /Target closed/);
   assert.equal(p.calls.length, 1);
+});
+
+// @req REQ-186
+test("a frame refused during an export leaves no video behind", async () => {
+  const dir = mkdtempSync(join(tmpdir(), "encode-"));
+  const file = join(dir, "video.mp4");
+  const png = await sharp({
+    create: { width: 64, height: 64, channels: 3, background: "#15100b" },
+  })
+    .png()
+    .toBuffer();
+  try {
+    await assert.rejects(
+      encodeFrames(file, {
+        from: 0,
+        to: 30,
+        render: async (f) => {
+          if (f === 20) throw new Error("Layout at frame 20");
+          return png;
+        },
+        sound: { input: [], output: ["-an"] },
+      }),
+      /Layout at frame 20/
+    );
+    assert.equal(existsSync(file), false);
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
 });

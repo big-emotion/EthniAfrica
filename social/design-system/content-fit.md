@@ -10,18 +10,20 @@ The renderer measures the panel after the fonts and images load, then applies th
 2. **Dense body.** If the panel is taller than 900 px, the body drops from 32 px to 28 px (`report.autoDense`). 28 px is the floor. A card may also ask for `density: "dense"` explicitly.
 3. **Overflow.** If the panel is still taller than 900 px, `report.overflow` is true, `report.ok` is false, and in diagnostic mode the card shows a red border and a dashed guide at 900 px. The production tools must refuse to export such a card. The fix is editorial: split the card or shorten it.
 
+**Series cards (1.3.0).** A card with a series band keeps the 450 px image window under the band, so its panel limit is **828 px** instead of 900 (`report.panelMax`): the same steps apply at 828, and the guide in diagnostic mode is drawn there. A photograph's credit line counts in those 828 px. The band itself must hold on one line; a band that wraps is refused (shorten the series name, never the type). See Series.
+
 Nothing else adapts automatically. The engine never changes margins, never shrinks sources below 22 px or credits below 19 px, and never lets a panel cover more than two thirds of the card. A map card with running text also gets a warning: the map, its title and its legend should be enough.
 
 ## What may vary, what stays fixed
 
-| Varies with the content                                                 | Stays fixed                                                                        |
-| ----------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| Panel height (up to 900 px), and so the image window                    | Card size 1080 × 1350, margins 72 px                                               |
-| Title size 88 or 72 px                                                  | Body sizes 32 px or 28 px, nothing in between, nothing smaller                     |
-| Number of lines of every text block                                     | Order of the panel: kicker, status, date, title, blocks, source, credit, signature |
-| Image focal point, anchor and zoom                                      | Text always on the opaque panel, never on the image                                |
-| Theme (one per carousel)                                                | One accent word per title                                                          |
-| Up to two document insets, up to four forms rows, up to three map areas | Signature row and its logo                                                         |
+| Varies with the content                                                          | Stays fixed                                                                        |
+| -------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| Panel height (up to 900 px, 828 px under a series band), and so the image window | Card size 1080 × 1350, margins 72 px                                               |
+| Title size 88 or 72 px                                                           | Body sizes 32 px or 28 px, nothing in between, nothing smaller                     |
+| Number of lines of every text block                                              | Order of the panel: kicker, status, date, title, blocks, source, credit, signature |
+| Image focal point, anchor and zoom                                               | Text always on the opaque panel, never on the image                                |
+| Theme (one per carousel)                                                         | One accent word per title                                                          |
+| Up to two document insets, up to four forms rows, up to three map areas          | Signature row and its logo                                                         |
 
 ## What moves to another card
 
@@ -67,3 +69,5 @@ Each exported image ships with an alternative text, written in plain French, in 
 2. every word printed on the card, in reading order: kicker, date, title, fields, body, table rows, call to action.
 
 The source and credit lines are left out of the alternative text, because the package repeats them in full. `EthniCards.altText(card)` composes this text from the card data when `alt` is not written by hand; the editor rereads it before approval 3. The text is stored with the card in `cards.json` and copied into the package's `post.md`, next to the file name it belongs to. Check the current length limit of each platform when packaging.
+
+On a series card the alternative text opens with the band's words (« D'où vient le nom de mon pays ?, n° 1. »), as the band is read first.

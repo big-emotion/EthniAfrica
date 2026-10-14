@@ -6,7 +6,7 @@
   },
   "id": "PAT_BIYA",
   "nameMain": "Biya",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Biya",
@@ -28,7 +28,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [
@@ -92,6 +92,10 @@
     {
       "fieldPath": "homonyms",
       "reason": "la recherche web combinant « Biya », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », qui comprenait le terme « homonyme », et la lecture de « Historical Dictionary of the Republic of Cameroon » et « Origine du nom Biya : l'histoire méconnue révélée par Jean Paul Ntsengue », n'ont pas établi de lignée homonyme d'origine distincte."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues le disent un nom de personne du Cameroun. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "transmissionMode",

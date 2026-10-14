@@ -4531,7 +4531,9 @@ export const STRICT_MODEL_DRIFT_CEILINGS: Readonly<
   // wave 12 were folded or retired with the keys they lacked.
   // 6249 -> 6049 on 2026-10-14: twenty-one people fiches of waves 14 to 19,
   // folded or withdrawn, left with the model keys they lacked.
-  peuple: 6049,
+  // 6049 -> 6039 on 2026-10-14: PPL_NABT, folded into PPL_NABDAM, left with
+  // the model keys it lacked.
+  peuple: 6039,
   // 108 -> 105 on 2026-09-19: FLG_KHOE gained `classificationStatus`,
   // `originOfHistoricalTerm` and `whyProblematic` when its historical
   // appellations were written from the sources it cites. 105 -> 104 the next

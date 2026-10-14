@@ -156,6 +156,14 @@ Each is a warning in the fit report, and a card with a warning is refused:
 
 The 1880 prototype of 12 October, rendered unchanged, now fails with 25 collisions (sample card `atlas-proto-collisions`).
 
+## A map under the series band (1.3.0)
+
+A series card keeps its map full bleed, under the 72 px band. The band hides the top of the map, so the frame (`map.view`) leaves it clear:
+
+- no map text, marker, key, callout or inset within 12 px of the band (y 84); the renderer lists anything closer and counts the band as a box in `report.collisions`;
+- on an atlas map, names are written on the map only below y 84, and a key that starts above y 84 is refused;
+- move the view down or zoom out slightly rather than moving names: `serie-atlas-1880` moves the 1880 frame down and makes it 3 % smaller (0.92 card px per map px), with its keys on the Atlantic below the Cape Verde islands; `serie-atlas-1914-parchemin` moves the 1914 frame down by 80 px.
+
 ## What a map may and may not say
 
 - Keep language families, languages and their speakers, peoples, historical polities and present-day states apart. One map shows one of them, and its caption says which.

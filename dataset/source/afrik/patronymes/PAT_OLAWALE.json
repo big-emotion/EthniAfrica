@@ -6,7 +6,7 @@
   },
   "id": "PAT_OLAWALE",
   "nameMain": "Olawale",
-  "nameSystem": "praise_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Olawale",
@@ -100,6 +100,10 @@
     {
       "fieldPath": "homonyms",
       "reason": "Les recherches « Olawale homonym etymology » et « Olawale surname origin other language » n'ont pas établi une graphie identique d'origine distincte."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues le disent un nom de personne yoruba. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     }
   ],
   "nameHistory": {
