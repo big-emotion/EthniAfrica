@@ -75,7 +75,7 @@ export function seriesDemo(dir, { edit = () => {}, script = (b) => b } = {}) {
   );
   const input = {
     // The script is 1.3.0's; the layout is the accepted 1.4.0 full screen.
-    design: "EthniAfrica Cartes 1.4.0-proposition, vidéo de série plein écran",
+    design: "EthniAfrica Cartes 1.4.1-proposition, vidéo de série plein écran",
     // The cards' own tape, as on the carousel and the design's boards.
     demo: JSON.parse(readFileSync(CARDS, "utf8")).cards.find(
       (c) => c.id === beats[0].card

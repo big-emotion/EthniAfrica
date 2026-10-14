@@ -242,7 +242,8 @@ test("every text sits in its band, between x 60 and 1020", () => {
     box("ending-credit", 90, 1760, 900, 56),
     box("signature", 400, 1828, 280, 56),
     box("slot", 120, 760, 840, 480),
-    box("map-subject", 300, 724, 400, 900),
+    // 1.4.1: a map card's foot may start at 1600, so its subject ends there.
+    box("map-subject", 300, 724, 400, 876),
   ];
   assert.deepEqual(checkSeriesLayout(ok), []);
   const one = (b) => checkSeriesLayout([b]);
@@ -270,6 +271,20 @@ test("every text sits in its band, between x 60 and 1020", () => {
     /Le sujet de la carte passe sous la tête/
   );
   assert.match(one(box("unknown", 60, 300, 10, 10)).join(), /unknown kind/);
+});
+
+// @req REQ-186
+test("an atlas card in a series video is refused: carousel only (1.4.1)", () => {
+  assert.throws(
+    () =>
+      demo({
+        script: (beats) =>
+          beats.map((b, i) =>
+            i === 1 ? { ...b, card: "serie-atlas-1880" } : b
+          ),
+      }),
+    /Carte d'atlas : carrousel seulement/
+  );
 });
 
 // @req REQ-186
