@@ -25,7 +25,16 @@
   "transmissionMode": "other",
   "designatedSocialUnit": "clan",
   "origin": {
-    "oralTraditions": [],
+    "oralTraditions": [
+      {
+        "claim": "Le nom de louange du clan Mamba (le sinanatelo) s'ouvre sur « nkhosi, mamba, ntfulini, mamba lendze lesensokonsokweni » : le nom du clan vient en deuxième place, après nkhosi, « seigneur ». Le recueil donne ces vers en siswati, sans traduction ni récit d'origine du nom.",
+        "claimStatus": "claimed",
+        "collection": "direct",
+        "collector": "Richard Patricks",
+        "context": "Recueilli surtout de 1976 à 1984 auprès d'informateurs que l'auteur ne nomme pas, pour un clan établi à eNgudzeni, kaMbhoke et kaHhohho au Swaziland ; entrée MAMBA, p. 32",
+        "sourceRefs": ["patricks-2002-swazi-surnames"]
+      }
+    ],
     "writtenChronicles": [],
     "linguisticReconstructions": [
       {
@@ -56,7 +65,15 @@
   "alliances": [],
   "casteOrSocialFunction": null,
   "bearers": [],
-  "homonyms": [],
+  "homonyms": [
+    {
+      "label": "mamba",
+      "entityType": "other",
+      "entityId": null,
+      "distinction": "Mot zoulou imamba, « serpent très venimeux » selon le dictionnaire de John William Colenso (1861). Les sources lues ne disent pas si le nom du clan vient de ce mot.",
+      "sourceRefs": ["colenso-1861-zulu-dictionary"]
+    }
+  ],
   "sources": [
     {
       "sourceKey": "afrik-candidate-queue",
@@ -81,6 +98,22 @@
       "tier": "referenced",
       "source_kind": "archive",
       "notes": "Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V, Pretoria, 1935 ; scan de l'université de Pretoria, lue le 12 octobre 2026. La partie 2, « Swaziland », donne par district, à la date de janvier 1935, les chefs, leur nom de clan (isibongo), leur nom de louange (isinanatelo) et le nombre de contribuables adultes de sexe masculin. Page 34 : le chef Bulawako, district de Bremersdorp, nom de clan « Mamba, abaka or Ginindza, abaka », nom de louange Lendze."
+    },
+    {
+      "sourceKey": "kuper-1964-swazi",
+      "title": "The Swazi: A South African Kingdom",
+      "url": "https://archive.org/details/hilda-kuper-the-swazi-a-south-african-kingdom-holt-rinehart-and-winston-1964",
+      "tier": "referenced",
+      "source_kind": "academic",
+      "notes": "New York, Holt, Rinehart and Winston, 1964, coll. Case Studies in Cultural Anthropology ; copie numérisée sur Internet Archive, lue le 14 octobre 2026. P. 59, au chapitre « The Spirit World » : l'esprit d'un défunt peut prendre la forme d'un serpent ; « Mambas are associated with kings; harmless green snakes are associated with commoners and women ». Le livre ne cite pas le clan Mamba."
+    },
+    {
+      "sourceKey": "colenso-1861-zulu-dictionary",
+      "title": "Zulu-English Dictionary",
+      "url": "https://archive.org/details/zuluenglishdict00dcgoog",
+      "tier": "referenced",
+      "source_kind": "linguistic_reference",
+      "notes": "Pietermaritzburg, 1861, lu dans la numérisation d'Internet Archive le 12 octobre 2026. Entrée « Mamba (Im), n. Very deadly snake »."
     }
   ],
   "gaps": [
@@ -94,18 +127,14 @@
     },
     {
       "fieldPath": "alliances",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Le recueil de Patricks indique seulement les clans avec lesquels le mariage est interdit, Ginindza et Mabuza. Ce n'est pas un pacte d'alliance, et aucun pacte de ce genre n'a été trouvé pour le nom Mamba dans les sources lues."
     },
     {
       "fieldPath": "casteOrSocialFunction",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
+      "reason": "Ni le recueil de Patricks (2002) ni le recensement de van Warmelo (1935) ne donnent de fonction sociale propre au clan Mamba, et le livre de Hilda Kuper (1964) ne le cite pas."
     },
     {
       "fieldPath": "bearers",
-      "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
-    },
-    {
-      "fieldPath": "homonyms",
       "reason": "Nous ne documentons pas encore ce point pour ce nom : aucune source dédiée n'a été consultée à ce jour."
     },
     {
@@ -204,6 +233,36 @@
           },
           {
             "period": {
+              "from": 1935,
+              "to": 2002,
+              "label": "Noté en 1935 et en 2002"
+            },
+            "statement": "Le nom Mamba est lié au nom Ginindza dans les deux sources lues. En 1935, le recensement de van Warmelo écrit « Mamba, abaka or Ginindza, abaka » pour le chef Bulawako. Dans le recueil de Patricks, les deux entrées reprennent le vers « mamba lendze lesensokonsokweni », et chacune interdit le mariage avec l'autre clan. Ces sources ne disent pas si les deux clans ont une origine commune.",
+            "sources": [
+              {
+                "title": "Tibongo Netinanatelo Temaswati : Swazi Surnames and Their Praisenames (copie non officielle)",
+                "author": "Richard Patricks",
+                "year": 2002,
+                "url": "https://archive.org/details/tibongo-netinanatelo-temaswati-swazi-surnames-and-their-praisenames",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "entrées MAMBA (p. 32) et GININDZA (entre les p. 17 et 20 ; le numéro exact n'est pas lisible dans la copie)",
+                "notes": "Première édition, Mbabane, 2002, publiée par le Conservation Trust of Swaziland, la Natural History Society of Swaziland et le Swaziland National Trust Commission ; l'auteur travaille au Musée national du Swaziland. Copie non officielle, téléversée sur Internet Archive par un particulier, lue le 12 octobre 2026. Les noms de famille et leurs noms de louange ont été recueillis surtout de 1976 à 1984, auprès de personnes dont l'auteur ne donne pas les noms. P. 6 : « Then come the Vilakati, Mamba, Hlophe, Mavuso, and Fakudze » ; p. 32 : entrée MAMBA. Le numéro de page de l'entrée GININDZA n'est pas lisible dans le texte de la copie."
+              },
+              {
+                "title": "A Preliminary Survey of the Bantu Tribes of South Africa",
+                "author": "N. J. van Warmelo",
+                "year": 1935,
+                "url": "https://repository.up.ac.za/handle/2263/77107",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 34 (partie 2, Swaziland)",
+                "notes": "Union of South Africa, Department of Native Affairs, Ethnological Publications, vol. V, Pretoria, 1935 ; scan de l'université de Pretoria, lue le 12 octobre 2026. La partie 2, « Swaziland », donne par district, à la date de janvier 1935, les chefs, leur nom de clan (isibongo), leur nom de louange (isinanatelo) et le nombre de contribuables adultes de sexe masculin. Ligne du chef Bulawako, colonne « Isibongo » : Mamba, abaka or Ginindza, abaka ; colonne « Isinanatelo » : Lendze ; total 105 contribuables adultes, district de Bremersdorp."
+              }
+            ]
+          },
+          {
+            "period": {
               "from": 2002,
               "to": 2002,
               "label": "Proposé en 2002"
@@ -241,6 +300,26 @@
                 "source_kind": "linguistic_reference",
                 "page": "p. 284",
                 "notes": "Pietermaritzburg, 1861, lu dans la numérisation d'Internet Archive le 12 octobre 2026. Entrée « Mamba (Im), n. Very deadly snake »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1964,
+              "to": 1964,
+              "label": "Écrit en 1964"
+            },
+            "statement": "Hilda Kuper rapporte en 1964 que, chez les Swazis, l'esprit d'un défunt peut prendre la forme d'un serpent, et que les mambas sont associés aux rois, alors que les petits serpents verts sans danger le sont aux gens ordinaires et aux femmes. Elle ne parle pas du clan Mamba, et les sources lues ne disent pas si cette croyance a un rapport avec le nom du clan.",
+            "sources": [
+              {
+                "title": "The Swazi: A South African Kingdom",
+                "author": "Hilda Kuper",
+                "year": 1964,
+                "url": "https://archive.org/details/hilda-kuper-the-swazi-a-south-african-kingdom-holt-rinehart-and-winston-1964",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 59",
+                "notes": "New York, Holt, Rinehart and Winston, 1964, coll. Case Studies in Cultural Anthropology ; copie numérisée sur Internet Archive, lue le 14 octobre 2026. P. 59, au chapitre « The Spirit World » : l'esprit d'un défunt peut prendre la forme d'un serpent ; « Mambas are associated with kings; harmless green snakes are associated with commoners and women ». Le livre ne cite pas le clan Mamba."
               }
             ]
           }
