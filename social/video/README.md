@@ -131,6 +131,8 @@ The chunks are the sequence's, in the same order; `units` is optional and, when 
 
 ## Vidéo de série (Cartes 1.3.0, mise en page B)
 
+**Withdrawn by the operator on 14 October 2026.** The image must fill the whole frame, with no dark band and no placement fitted to the networks' safe zone: only text over the image. The full-screen layout is commissioned from Claude Design as 1.4.0-proposition ([brief](../design-system/proposals/1.4.0-proposition/claude-design-brief.md)). The schedule, voice, chunks, cross-fades, `pageOnline` and encoding below stay; the layout B geometry and its safe-zone checks will be replaced once 1.4.0 is accepted.
+
 The series video of **EthniAfrica Cartes 1.3.0-proposition** (accepted on 14 October 2026 with layout B, decision 4) is the same cards as the carousel, on the operator's voice: 1080 × 1920, 30 fps, 35 to 45 s. Its geometry is `social/design-system/series.md`, « Vidéo de série »; `handoff/video-board.html` is the visual reference, not the engine. Layout A is not implemented. It needs no imagery: the cards' images are in `social/design-system/assets/`.
 
 ```sh
