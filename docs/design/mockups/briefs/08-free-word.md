@@ -3,8 +3,10 @@
 Read [`README.md`](README.md) first.
 
 **Surface.** The `mots` type (`dataset/source/afrik/mots/`, 2 fiches today).
-**No mockup, and no dedicated route confirmed**: check
-`src/app/[lang]/atlas/` before coding. Doctrine §2 names it "plus one free
+**No mockup, and no page at all**: checked on 2026-10-14, the two fiches
+(`WRD_RACE`, `WRD_KIRDI`) are served only by `/api/v2/words`; no route under
+`src/app/[lang]/` renders them and production's sitemap lists none. This brief
+draws a new page, not a redraw. The nearest existing surface is `/fr/glossaire`. Doctrine §2 names it "plus one free
 type", for a word whose history explains Africa through its names without
 fitting the six types: *racisme*, *nation*, *État*, *esclavage*.
 
