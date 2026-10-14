@@ -293,8 +293,9 @@
         "title": "Polyglotta Africana",
         "author": "Sigismund Wilhelm Koelle",
         "year": 1854,
-        "url": null,
-        "tier": "referenced"
+        "url": "https://archive.org/details/polyglottaafrica00koel",
+        "tier": "referenced",
+        "source_kind": "archive"
       },
       {
         "title": "Greenberg, Joseph H. (1955, révisé 1963) – *The Languages of Africa*. Bloomington : Indiana University / La Haye : Mouton",

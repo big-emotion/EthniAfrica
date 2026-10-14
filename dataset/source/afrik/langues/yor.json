@@ -73,7 +73,7 @@
                 "notes": "Lagos, C.M.S. (Nigeria) Bookshops, 1921, édité par O. Johnson. Lu dans une réimpression numérisée par Internet Archive le 11 octobre 2026."
               },
               {
-                "title": "Polyglotta Africana",
+                "title": "Polyglotta Africana, jeu de données Lexibank",
                 "author": "Sigismund Wilhelm Koelle",
                 "year": 1854,
                 "url": "https://github.com/lexibank/polyglottaafricana",
@@ -93,7 +93,7 @@
             "statement": "Le nom yoruba est employé depuis peu par les missionnaires pour toute la nation, écrit Sigismund Koelle, qui le refuse : ce nom ne désigne qu'un des peuples de la langue. Un Ijebu ou un Yagba, ajoute-t-il, répond : « Ne m'appelle pas ainsi, je ne suis pas Yoruba. »",
             "sources": [
               {
-                "title": "Polyglotta Africana",
+                "title": "Polyglotta Africana, jeu de données Lexibank",
                 "author": "Sigismund Wilhelm Koelle",
                 "year": 1854,
                 "url": "https://github.com/lexibank/polyglottaafricana",
@@ -282,7 +282,7 @@
             "birth": true,
             "sources": [
               {
-                "title": "Polyglotta Africana",
+                "title": "Polyglotta Africana, jeu de données Lexibank",
                 "author": "Sigismund Wilhelm Koelle",
                 "year": 1854,
                 "url": "https://github.com/lexibank/polyglottaafricana",
@@ -303,7 +303,7 @@
             "hypothesisGroup": "origine du nom Aku",
             "sources": [
               {
-                "title": "Polyglotta Africana",
+                "title": "Polyglotta Africana, jeu de données Lexibank",
                 "author": "Sigismund Wilhelm Koelle",
                 "year": 1854,
                 "url": "https://github.com/lexibank/polyglottaafricana",

@@ -111,7 +111,7 @@
             "before": true,
             "sources": [
               {
-                "title": "Polyglotta Africana",
+                "title": "Polyglotta Africana, jeu de données Lexibank",
                 "author": "Sigismund Wilhelm Koelle",
                 "year": 1854,
                 "url": "https://github.com/lexibank/polyglottaafricana",
@@ -185,7 +185,7 @@
             "statement": "Le nom Manden est noté Mánde par Sigismund Koelle, d'après un informateur qui lui dit que tous les Mandénga en sont venus et que sa capitale est sur le Djoliba.",
             "sources": [
               {
-                "title": "Polyglotta Africana",
+                "title": "Polyglotta Africana, jeu de données Lexibank",
                 "author": "Sigismund Wilhelm Koelle",
                 "year": 1854,
                 "url": "https://github.com/lexibank/polyglottaafricana",
@@ -373,7 +373,7 @@
     },
     "sources": [
       {
-        "title": "Polyglotta Africana",
+        "title": "Polyglotta Africana, jeu de données Lexibank",
         "author": "Sigismund Wilhelm Koelle",
         "year": 1854,
         "url": "https://github.com/lexibank/polyglottaafricana",
