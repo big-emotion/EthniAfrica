@@ -313,6 +313,145 @@ review:
   `PPL_FULA`, the meaning account no longer retells the hypotheses that have
   their own tiles: it keeps what only it says and all its sources.
 
+## Rulings of 2026-10-14: Fang naming and hereditary Maghreb family names
+
+PR #1734 and #1742 left two classification questions open because the model
+has five values (`clan_name`, `non_hereditary_patronymic`, `nisba`,
+`praise_name`, `totemic_clan`) and no ruling said which one a Fang name or a
+Ben/Bou/Aït family name belongs to. The rulings below stay inside the five
+values and the unit field (`individual | lineage | clan | caste | age_set |
+settlement | other`). The text of REQ-133, REQ-134 and DEC-040 lives on
+Confluence and was not reread for this ruling; the contract used is
+`public/modele-nom-patronyme.json`, the parser enum
+`PATRONYME_NAME_SYSTEMS`, and the comment of migration 053, which describes
+`non_hereditary_patronymic` by Ethiopian, Eritrean and eastern Fulɓe naming
+and `nisba` in the « Arabo-Berber tribal sense ».
+
+### A. Fang naming
+
+**Rule.** A Fang name such as Esono, Mba, Nguema or Ondo is a personal name,
+not a clan name. The father gives his child a name of its own and adds his
+own name to it; the clan (the kin group) has a separate name that a Fang
+gives to a stranger. File it `non_hereditary_patronymic`, unit `individual`,
+with the usual `nameSystem` gap (« the model has no box for a personal name
+that became a family name »), and `transmissionMode` `patrilineal` when the
+fiche's own history says the father's name is passed on.
+
+**Evidence, opened for this ruling.** Günter Tessmann, _Die Pangwe_, vol. 2
+(Berlin, 1913), p. 285, in the Internet Archive scan
+(`diepangwevlkerku02tess`):
+
+- « Dem eigenen, vom Vater gegebenen Namen wird der des Vaters selbst
+  angefügt. Heißt z. B. der Vater Essun, der Sohn Boka, so ist der
+  vollständige Name des Boka Boka-Essun » (the child's own name, given by
+  the father, takes the father's name after it; Tessmann's example is
+  Boka-Essun);
+- « Familiennamen in unserem Sinne kennen die Pangwe nicht. Fremden
+  gegenüber vertritt ihn der Name der Sippe » (the Pangwe, his word for the
+  Fang and their neighbours, have no family names in our sense; before a
+  stranger the name of the kin group stands for it), to which the name of
+  the mother's group is added (his example: Ayong-Boka, of the Essauong,
+  child of a daughter of the Essatop);
+- the child learns the names of his father, grandfather and great-grandfather
+  on the paternal side (Ndungo, son of Essun, of the family Abai; Essun,
+  son of Nsema): a chain of fathers' names, which is what the model's
+  `patronymicChainDepth` field exists for.
+
+Tessmann's photograph captions keep the two names apart: « Essun (Fam.
+Omwang) » (vol. 1, p. 9), « Ondo aus Angönneuai (Fam. Omwang) » (vol. 1,
+p. 11). The first word is the man's name, the family is the kin group. The
+fiches `PAT_ESONO` and `PAT_ONDO` already cite both pages.
+
+Bonifacio Nguema Obiang-Mikue, _La cultura para el reconocimiento de la
+identidad: caso de la cultura fang de Guinea Ecuatorial_ (Revista Cátedra
+6(1), 2023, pp. 178-179, DOI 10.29166/catedra.v6i1.4282), as the fiches
+record it (read by the wave author, not reread here): the father's name
+becomes the common name of all his children and is repeated from generation
+to generation; Esono, Mba and Nguema are listed among Fang men's names that
+Rosendo Ela Nsue Mibui (2005, pp. 92 and 102, not read) finds « netamente
+originales », with no derivation. So today the father's name works as a
+surname, which is why the gap says « personal name that became a family
+name » and does not claim the name never passes on.
+
+Fabrice Agyune Ndone, table n° 1 (`PAT_ONDO`): Ona, Ondo, Oyane and Sima are
+listed as Fang personal names of Gabon. He also notes that family names
+circulate almost always in a closed circuit from ascendant to descendant.
+That is the only support for `PAT_ONDO`, and it does not say how the name is
+passed: its `transmissionMode` stays `other`.
+
+**What cannot be sourced.** No source opened here gives the list of Fang clan
+names (ayong) to compare with the fiches. Whether Esono, Mba, Nguema or Ondo
+is also, somewhere, the name of a clan is not established either way. The
+ruling therefore rests on how the sources say Fang naming works, not on a
+clan list.
+
+**Applies to** (own `nameHistory`, no account tells a clan):
+
+| Fiche        | Before             | After                                 | Own-history support                                     |
+| ------------ | ------------------ | ------------------------------------- | ------------------------------------------------------- |
+| `PAT_ESONO`  | clan_name, lineage | non_hereditary_patronymic, individual | « nom de personne fang », Tessmann p. 285, Obiang-Mikue |
+| `PAT_MBA`    | clan_name, clan    | same, transmission patrilineal        | « nom de personne fang », father's name as second name  |
+| `PAT_NGUEMA` | clan_name, clan    | same, transmission patrilineal        | « nom d'homme fang », Nguema Nsue example               |
+| `PAT_ONDO`   | clan_name, clan    | same, transmission stays other        | Ndone's table of Fang personal names                    |
+
+**Not changed.** `PAT_OVONO` (its history says nothing of Fang naming and
+shows a Gabonese name carried alone or after another name); `PAT_ESSOMBA`
+(Ewondo: the history tells a lineage name and a founder of lineages);
+`PAT_MVONDO` (Eton: a clan and a lineage, with a founder, Onana 2015); and
+the Fang or Beti fiches that have no `nameHistory` yet (`PAT_ATEBA`,
+`PAT_BINDANG`, `PAT_ELA`, `PAT_MBASOGO`, `PAT_MENGUE`, `PAT_MINTSA`,
+`PAT_NCHAMA`, `PAT_NDONG`, `PAT_NDONGO`, `PAT_NKOULOU`, `PAT_NSUE`,
+`PAT_NZUE`, `PAT_OBAME`, `PAT_OBIANG`, `PAT_ONANA`). The rule needs a fiche's
+own history; the ruling gives the default for their next pass: a Fang name
+is read as a personal name unless a source calls it a clan.
+
+### B. Hereditary Maghreb family names
+
+**Rule.** Three different things are built on Ben, Bou, Ould or Aït and must
+not be filed together:
+
+1. **A patronymic chain.** In Mauritania, Ould + the father's name says whose
+   son a person is, not which family: the fiche's sources are René Basset
+   (_Mission au Sénégal_, tome I, fasc. II, p. 360: « ould » = « fils,
+   enfant ») and Jeune Afrique (16 October 2005: a mark of filiation, the
+   equivalent of Ben). That is `non_hereditary_patronymic`, unit `individual`,
+   with no `nameSystem` gap. Applied to `PAT_OULD_CHEIKH` and
+   `PAT_OULD_MOHAMED`. `PAT_OULD_ABDALLAHI` and `PAT_OULD_AHMED` have no
+   history yet and follow the same default.
+2. **A hereditary family name built on a given name or a title** (Ben Ali,
+   Bou Zid, Ben Youcef, Ben Badis, Belkacem, Boumediene, Amara, Amrani,
+   Cherif). The fiches' own histories call them « nom de famille »: Benali
+   became a one-word name when the Tunisian civil register removed the
+   space after independence, Benyoucef is « un prénom devenu nom de
+   famille » in the Mostaganem registers, Bouzid is written in 1864 as the
+   name of a Kabyle family, Ben Badis appears on a tombstone of 1382. They
+   are not a `nisba`: a nisba is a relational name taken from a place, a
+   tribe or a trade (the model's `nisbaSubtype` is `geographic | tribal |
+occupational | other`). They are not a `non_hereditary_patronymic`: they
+   are hereditary. They are not a `clan_name`: no source calls them a clan.
+   **None of the five values fits.**
+3. **A name that names a tribe** (`PAT_AIT_AHMED`: the accounts name a Kabyle
+   tribe). It stays `clan_name`, unit `clan`, until a source says otherwise.
+
+**Interim value for case 2.** Keep `nisba`, and make the fiche say so: every
+such fiche carries a `nameSystem` gap that names what the sources see (a
+family name built on ben, bou or a title) and says the nisba class is
+provisional. The unit stays `other`: the histories do not say that the
+families who bear the name share an ancestor (Bouzid's history says the sources do not tell), and
+`lineage` would claim it. Cherif keeps its claim of prophetic descent as
+Daumas' account of 1855, and the fiche says that its sources do not say whether the families who bear the name
+have it. Three fiches had no such gap and receive it:
+`PAT_BENALI`, `PAT_BOUZID`, `PAT_BENYOUCEF`. The others already had one.
+
+**Recommendation to the operator (not implemented).** A sixth value,
+`hereditary_family_name`, would let these fiches say what they are. The same
+box is wanted elsewhere: 84 fiches already carry a `nameSystem` gap that
+says the model has no box for a (personal or other) name that became a
+family name (69 `non_hereditary_patronymic` and 15 `clan_name`, counted by
+script), plus the Maghreb family names typed `nisba` (the nine above and a
+further group, such as Benjelloun, Benkirane and Bennani, to be read one by
+one). The pull request body lists the change set.
+
 # The long tail: wave order
 
 The priority core above is a short list picked by hand. The rest of the corpus
