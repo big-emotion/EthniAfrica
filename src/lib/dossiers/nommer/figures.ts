@@ -112,7 +112,8 @@ export const NOMMER_FIGURES: Record<FigureKey, CorpusFigure> = {
     // 2883 -> 2832 on 2026-10-12: eleven duplicate people fiches of wave 10 folded into their keepers, and the « Swahili (Yémen) » fiche renamed PPL_MUWALLADEEN.
     // 2832 -> 2818 the same day: the Khainai, Koyra, Yerima and Kirdi fiches folded or retired after wave 12.
     // 2818 -> 2740 on 2026-10-14: the twenty-one people fiches of waves 14 to 19, folded or withdrawn, left with what they counted.
-    value: 2740,
+    // 2740 -> 2739 on 2026-10-14: Gbunde left the exonyms of PPL_GBANDI (Schwab 1947 lists the Gbunde apart from the Gbande).
+    value: 2739,
     method:
       "somme de content.appellations.exonyms.length sur les fiches de peuple",
     countedOn: COUNTED_ON,
