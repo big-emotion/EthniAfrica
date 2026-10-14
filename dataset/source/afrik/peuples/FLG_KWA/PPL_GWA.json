@@ -1,14 +1,14 @@
 {
-  "id": "PPL_KWA",
-  "nameMain": "Kwa",
+  "id": "PPL_GWA",
+  "nameMain": "Gwa",
   "languageFamilyId": "FLG_KWA",
   "currentCountries": ["CIV"],
   "classificationStatus": "colonial-legacy",
   "content": {
     "appellations": {
-      "mainName": "Kwa",
+      "mainName": "Gwa",
       "selfAppellation": "Gwa",
-      "exonyms": ["Gwa", "M'bato", "Mbato", "Goua"],
+      "exonyms": ["M'bato", "Mbato", "Goua"],
       "originOfExonyms": "Le terme Gwa (ou Goua) est le nom originel du peuple, transformé au fil du temps par les peuples voisins. M'bato est le surnom le plus courant dans les usages administratifs et populaires ivoiriens. Le mot Kwa, dans les langues kwa, voudrait dire peuple ou homme, d'où le nom du groupe linguistique Kwa attribué à l'ensemble de la famille par Gottlob Krause en 1885.",
       "whyProblematic": "La confusion est fréquente entre le peuple Gwa/M'bato et le groupe linguistique Kwa (famille de langues parlées en Côte d'Ivoire, au Ghana et au Togo). Le peuple Gwa est un groupe ethnique distinct et minoritaire appartenant aux Akan lagunaires.",
       "contemporaryUsage": "M'bato est le terme le plus courant en Côte d'Ivoire. Gwa tend à être utilisé dans les publications académiques récentes. La sous-préfecture d'Oghlwapo (maison des Gwa) constitue leur chef-lieu administratif.",
@@ -43,7 +43,7 @@
     },
     "languages": {
       "mainLanguage": "Gwa (langue gwa, m'bato)",
-      "isoCodes": ["gwx"],
+      "isoCodes": ["gwa"],
       "dialects": [
         "Parler de M'bato-Bouaké (proche de l'ébrié)",
         "Parler de Gwa d'Alépé"
@@ -90,6 +90,12 @@
         "url": "https://countrystudies.us/ivory-coast/20.htm",
         "tier": "referenced",
         "source_kind": "government"
+      },
+      {
+        "title": "Glottolog 5.3 — Mbato (mbat1247)",
+        "url": "https://glottolog.org/resource/languoid/id/mbat1247",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   },

@@ -1,7 +1,7 @@
 {
   "id": "PPL_OYDA",
   "nameMain": "Oyda",
-  "languageFamilyId": "FLG_COUCHITIQUE",
+  "languageFamilyId": "FLG_OMOTIQUE",
   "currentCountries": ["ETH"],
   "content": {
     "appellations": {
@@ -11,7 +11,7 @@
       "originOfExonyms": "Les formes Oida et Oyita sont des variantes orthographiques utilisees dans la litterature linguistique et ethnographique europeenne pour transcrire le nom du groupe.",
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Oyda est employe dans les recensements officiels ethiopiens et dans les travaux academiques (DOBES, SIL/Ethnologue). L'Oyda est reconnu comme groupe ethnique distinct depuis le recensement de 2007.",
-      "linguisticFamily": "FLG_COUCHITIQUE",
+      "linguisticFamily": "FLG_OMOTIQUE",
       "ethnoLinguisticGroup": "Ometo (groupe Nord-Ometo, branche Omotique)",
       "historicalRegion": "Gamo-Gofa, Sud-Ouest ethiopien",
       "currentCountries": ["ETH"]

@@ -1,7 +1,7 @@
 {
   "id": "PPL_NAO",
   "nameMain": "Nao",
-  "languageFamilyId": "FLG_COUCHITIQUE",
+  "languageFamilyId": "FLG_OMOTIQUE",
   "currentCountries": ["ETH"],
   "content": {
     "appellations": {
@@ -11,7 +11,7 @@
       "originOfExonyms": "Le nom Na'o est l'auto-designation du peuple; le terme Nayi designe leur langue. Tol est le nom donne par les Sheko et les Bench; Tolwo par les Me'en de l'ouest; Suc ou Su par les Me'en de l'est (au-dela de la riviere Sharmi); La'andi est l'appellation donnee par les Chara.",
       "whyProblematic": null,
       "contemporaryUsage": "Le nom Nao est utilise dans les bases de donnees internationales (Joshua Project, PeopleGroups.org). Le nom Nayi est retenu pour la langue dans les bases linguistiques (code ISO noz). Les deux formes coexistent dans la litterature academique et les textes officiels.",
-      "linguisticFamily": "FLG_COUCHITIQUE",
+      "linguisticFamily": "FLG_OMOTIQUE",
       "ethnoLinguisticGroup": "Omotic septentrional, branche Majoid (Dizoid); etroitement apparente au dizi (dizin), au sheko et au bench",
       "historicalRegion": "Zone de Kafa (Goba Woreda), hauts plateaux forestiers du sud-ouest ethiopien",
       "currentCountries": ["ETH"]

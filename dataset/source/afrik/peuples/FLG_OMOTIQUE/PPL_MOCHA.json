@@ -1,7 +1,7 @@
 {
   "id": "PPL_MOCHA",
   "nameMain": "Mocha",
-  "languageFamilyId": "FLG_COUCHITIQUE",
+  "languageFamilyId": "FLG_OMOTIQUE",
   "currentCountries": ["ETH"],
   "classificationStatus": "contested",
   "content": {
@@ -20,7 +20,7 @@
       "originOfExonyms": "Le nom Mocha est une appellation externe ancienne, utilisee notamment par le linguiste Wolf Leslau dans ses travaux des annees 1958-1959. Ce terme est aujourd'hui considere comme pejoratif par les locuteurs qui se designent eux-memes comme Shekkacho. Le terme Sheka designe aussi la zone administrative ou vit la majorite du peuple.",
       "whyProblematic": "La communauté considère Mocha comme un nom méprisant qui lui a été donné de l'extérieur. Ses membres préfèrent Shekkacho ou Sheka.",
       "contemporaryUsage": "Le nom officiel retenu par les autorites ethiopiennes et les bases de donnees linguistiques internationales est Shekkacho (code ISO moy). Le terme Mocha subsiste dans les anciennes sources academiques (Leslau 1958, 1959). La zone administrative est appelee Sheka Zone.",
-      "linguisticFamily": "FLG_COUCHITIQUE",
+      "linguisticFamily": "FLG_OMOTIQUE",
       "ethnoLinguisticGroup": "Omotic septentrional, branche Gonga-Gimojan (Gonga meridional), etroitement apparentee au kafa et a l'anfillo",
       "historicalRegion": "Zone de Sheka, sud-ouest ethiopien (anciennement partie de la zone Keficho Shekicho)",
       "currentCountries": ["ETH"]

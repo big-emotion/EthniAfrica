@@ -43,7 +43,7 @@
     },
     "languages": {
       "mainLanguage": "Luimbi (Chiluimbi)",
-      "isoCodes": ["lje"],
+      "isoCodes": ["lum"],
       "dialects": ["Luimbe", "Lwimbe"],
       "vehicularRole": "Le Luimbi est une langue Bantu mineure parlee uniquement en Angola central. Il est apparente aux langues Nkangala et Mbwela, elles-memes proches des langues Ganguela. Le portugais est la langue officielle de l'Angola et sert de vehiculaire pour l'education, l'administration et les echanges inter-ethniques. Le Luimbi est utilise dans la vie villageoise et les ceremonies. Des enregistrements audio en Luimbi existent pour la traduction biblique."
     },
@@ -88,6 +88,12 @@
         "url": "https://www.101lasttribes.com/tribes/ganguela.html",
         "tier": "unverified",
         "source_kind": "community"
+      },
+      {
+        "title": "Glottolog 5.3 — Luimbi (luim1238)",
+        "url": "https://glottolog.org/resource/languoid/id/luim1238",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   },

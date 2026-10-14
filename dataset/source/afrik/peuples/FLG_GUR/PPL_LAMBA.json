@@ -40,7 +40,7 @@
     },
     "languages": {
       "mainLanguage": "Lama",
-      "isoCodes": ["lam"],
+      "isoCodes": ["las"],
       "dialects": [
         "Parler du District de Kéran (Kanté)",
         "Parler du District de Doufelgou (Niamtougou)",
@@ -104,6 +104,12 @@
         "url": "https://joshuaproject.net/countries/to",
         "tier": "unverified",
         "source_kind": "missionary_database"
+      },
+      {
+        "title": "Glottolog 5.3 — Lama (Togo) (lama1275)",
+        "url": "https://glottolog.org/resource/languoid/id/lama1275",
+        "tier": "official",
+        "source_kind": "linguistic_reference"
       }
     ]
   },
