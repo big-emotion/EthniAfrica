@@ -6,7 +6,7 @@
   },
   "id": "PAT_JOHNSON",
   "nameMain": "Johnson",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Johnson",
@@ -23,7 +23,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "lineage",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [
@@ -100,6 +100,10 @@
     {
       "fieldPath": "homonyms",
       "reason": "les résultats exacts « Johnson », Virginia Emigrants to Liberia, les archives de l'American Colonization Society et les travaux sur les familles américano-libériennes n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues le disent un nom de famille tiré d'un prénom, « fils de John ». Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "transmissionMode",
