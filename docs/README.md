@@ -26,6 +26,7 @@ were referenced by nothing at all, two of them written that same week.
 - [Brief 7 — The place fiche](design/mockups/briefs/07-place.md)
 - [Brief 8 — The free-word fiche](design/mockups/briefs/08-free-word.md)
 - [Name-page mockup briefs — one per type of name](design/mockups/briefs/README.md)
+- [Claude Design prompt, step 1 — shared rules and brief 1](design/mockups/briefs/claude-design-prompt-01.md)
 - [Search answer page, mockup v11](design/mockups/search-answer/README.md)
 - [The result-page feed mockups — forty boards](design/mockups/search-feed/README.md)
 - [Search-feed font bundle](design/mockups/search-feed/fonts/README.md)
