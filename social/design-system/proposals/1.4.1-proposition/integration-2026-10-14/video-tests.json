@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-14",
+  "browser": "Chromium 141.0.7390.37 driven by Playwright 1.63.0, with social/renderer/runtime.json overridden in a scratch copy (the pinned 153.0.8010.12 is not installed in the cloud session)",
+  "test:social-video": "157 of 157 pass on that browser (143 before 1.4.1: 15 geometry tests added in series-map.test.mjs, 1 load-time atlas refusal in series.test.mjs, 2 flat map render tests moved to the acceptance test on imagery)",
+  "series-map.acceptance.test.mjs": "4 of 4 pass with ETHNIAFRICA_VIDEO_ASSETS on the verified Blue Marble file and Natural Earth 1:50m admin 0: serie-nom-famille-02 fills the frame with nothing darkening it, subject and names in their bands, scale under 1.5 at 104 %; serie-frontieres-02, refused in 1.4.0, drawn at the scale limit (1388 km at 100 %) with its key in two columns; a Parchemin map frame pixel-identical with the Nuit one",
+  "satelliteVideoUnchanged": "Four frames each of the congo and west-areas fixtures (globe, travel, hold, areas) rendered before and after page.mjs exported its flat shader and overlays: pixel-identical. The relief fixtures were not rendered: the ETOPO height model is not in the session's assets",
+  "test:social-renderer": "26 of 26 pass on the same browser",
+  "test:social-series-proposal": "8 of 8 pass",
+  "cards": "cards-1.4.0-vs-1.4.1.json: the 89 sample cards identical pixel for pixel, alternative texts included",
+  "toDoOnThePinnedBrowser": "npm run test:social-video, the map acceptance test with the verified assets, npm run test:social-renderer and the fidelity check"
+}

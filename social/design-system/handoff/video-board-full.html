@@ -2,6 +2,7 @@
 <html lang="fr"><head><meta charset="utf-8"><title>EthniAfrica Cartes : vidéo de série plein écran</title>
 <link rel="stylesheet" href="../components/bundle.css">
 <script src="../components/bundle.js"></script>
+<script src="video-board-sat.js"></script>
 <style>
 /* 1.4.0-proposition: the series video in full screen. The image fills the whole
    1080 x 1920 frame; only text sits on it. No band of ground, no veil, no scrim:
@@ -46,7 +47,7 @@ html,body{margin:0;background:#000}
 .sub{position:absolute;left:60px;width:960px;top:1316px;height:136px;display:flex;flex-direction:column;justify-content:center;z-index:5}
 .sub-line{text-align:center;white-space:pre;font:800 56px/68px var(--font-text);color:var(--oi-text);-webkit-text-stroke:9px var(--oi-stroke);paint-order:stroke fill;text-shadow:0 2px 14px var(--oi-shadow)}
 .lit{background:var(--oi-accent);color:var(--oi-on-accent);border-radius:6px;box-shadow:6px 0 0 var(--oi-accent),-6px 0 0 var(--oi-accent);-webkit-text-stroke:0;text-shadow:none}
-.foot{position:absolute;left:60px;width:960px;bottom:98px;display:flex;flex-direction:column;gap:4px}
+.foot{position:absolute;left:60px;width:960px;bottom:134px;display:flex;flex-direction:column;gap:4px}
 .foot .key{display:flex;align-items:center;gap:14px;font:800 26px/32px var(--font-text);--sw:4px;margin-bottom:10px}
 .foot .key i{width:34px;height:24px;border-radius:3px;flex:none;box-shadow:0 0 0 2px var(--oi-stroke)}
 .foot .src{font:700 24px/30px var(--font-text);color:var(--oi-ink);--sw:4px}
@@ -61,6 +62,14 @@ html,body{margin:0;background:#000}
 .close-sign .sign b{font-size:44px;line-height:48px;--sw:6px}
 .tape{background:var(--demo-tape,#ffe58a);color:var(--demo-ink,#2b2100);font:800 22px/28px var(--font-text);letter-spacing:.06em;text-transform:uppercase;padding:10px 22px;border-radius:999px;white-space:nowrap}
 .tape-abs{position:absolute;right:60px;top:178px;z-index:9}
+.sat-name{white-space:nowrap;z-index:2}
+/* 1.4.1: names on imagery, the satellite video's 0.4.0 styles, each on its halo. */
+.sat-region{font:400 44px/52px var(--font-display);letter-spacing:.12em;text-indent:.12em;color:rgba(243,233,218,.94);text-shadow:0 0 2px rgba(11,8,6,.95),0 0 8px rgba(11,8,6,.8),0 1px 14px rgba(11,8,6,.6)}
+.sat-area{font:700 32px/38px var(--font-text);text-shadow:0 0 2px rgba(11,8,6,.95),0 0 8px rgba(11,8,6,.8),0 1px 14px rgba(11,8,6,.6)}
+.sat-place{font:800 28px/32px var(--font-text);color:#f3e9da;text-shadow:0 0 2px rgba(11,8,6,.95),0 0 6px rgba(11,8,6,.8),0 1px 10px rgba(11,8,6,.6)}
+.foot .key i.sw{box-shadow:none}
+.keys2 .key{margin-bottom:6px;font-size:24px;line-height:30px}
+.keys2 .key span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .guides{position:absolute;inset:0;z-index:20;pointer-events:none;font:700 22px/28px var(--font-text)}
 </style>
 </head><body><div id="out"></div>
@@ -93,6 +102,9 @@ html,body{margin:0;background:#000}
   if (q.get('ink')) vf.setAttribute('data-ink', q.get('ink'));
   out.appendChild(vf);
   var zoom = parseFloat(q.get('zoom') || '1');
+  // 1.4.1: satellite views of the map cards (prep script), when given.
+  var VIEWS = null, SATBASE = q.get('sat') || '';
+  if (SATBASE) VIEWS = await (await fetch(SATBASE + 'views.json')).json();
   var report = { cards: [] };
 
   function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
@@ -119,7 +131,11 @@ html,body{margin:0;background:#000}
     var pic = el('div', 'pic'); L.appendChild(pic);
     var rep = { id: spec.id };
     var src = spec.image && spec.image.src || '';
-    if (c._map || spec.map) {
+    if (spec.map && VIEWS && VIEWS[spec.id]) {
+      // 1.4.1: the map card on satellite imagery.
+      var sat = await SeriesSat.draw(pic, spec, VIEWS[spec.id], { zoom: zoom, satBase: SATBASE });
+      rep.sat = { spanKm: Math.round(sat.spanKm), capped: sat.capped, names: sat.count, subject: [sat.subject.x0, sat.subject.y0, sat.subject.x1, sat.subject.y1].map(Math.round) };
+    } else if (c._map || spec.map) {
       var svg = pick('svg.ec-map');
       var vb = svg.getAttribute('viewBox').split(/[ ,]+/).map(Number);
       svg.setAttribute('width', 1080); svg.setAttribute('height', 1920);
@@ -197,8 +213,25 @@ html,body{margin:0;background:#000}
         var keys = [];
         if (spec.map.highlight && spec.map.highlight.legend) keys.push([spec.map.highlight.tone || 'area-a', spec.map.highlight.legend]);
         (spec.map.areas || []).forEach(function (a) { keys.push([a.tone || 'area-a', a.legend || a.label]); });
-        keys.forEach(function (kk) { foot.appendChild(el('div', 'key oi', '<i style="background:var(--' + kk[0] + ')"></i><span>' + fr(kk[1]) + '</span>')); });
-        if (spec.map.caption && spec.map.caption.source) foot.appendChild(el('div', 'src oi', 'Source : ' + fr(spec.map.caption.source)));
+        var onSat = !!(VIEWS && VIEWS[spec.id]);
+        // On imagery the key sits in two columns from three items (Vidéo carte 0.4.0's legend grid).
+        var keyBox = foot;
+        var nKeys = ((spec.map.highlight && spec.map.highlight.legend) ? 1 : 0) + (spec.map.areas || []).length + (onSat && spec.map.borders === 'strong' ? 1 : 0);
+        if (onSat && nKeys >= 3) { keyBox = el('div', 'keys2'); keyBox.style.cssText = 'display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;margin-bottom:6px'; foot.appendChild(keyBox); }
+        keys.forEach(function (kk) {
+          var ink = SeriesSat.INK[kk[0].replace('area-', '')];
+          var sw = onSat ? '<i class="sw" style="background:' + ink + '59;border:3px solid ' + ink + ';box-sizing:border-box"></i>' : '<i style="background:var(--' + kk[0] + ')"></i>';
+          keyBox.appendChild(el('div', 'key oi', sw + '<span>' + fr(kk[1]) + '</span>'));
+        });
+        // Strong borders are a layer the reader must read: the card's key names them.
+        if (onSat && spec.map.borders === 'strong')
+          keyBox.appendChild(el('div', 'key oi', '<i class="sw" style="background:none;height:0;border-top:4px solid #f3e9da;box-shadow:0 0 0 2px rgba(11,8,6,.55)"></i><span>Frontières actuelles</span>'));
+        if (spec.map.caption && spec.map.caption.source) {
+          // On imagery the flat base map's clause (« fond Natural Earth ») gives way to the imagery credit.
+          var srcText = onSat ? spec.map.caption.source.replace(/\s*;\s*fond [^;]*$/, '') : spec.map.caption.source;
+          foot.appendChild(el('div', 'src oi', 'Source\u202f: ' + fr(srcText)));
+        }
+        if (onSat) foot.appendChild(el('div', 'cred oi', 'Imagerie\u202f: NASA Earth Observatory\u202f; frontières\u202f: Natural Earth, domaine public'));
       }
       if (spec.source) foot.appendChild(el('div', 'src oi', 'Source : ' + fr(spec.source)));
       if (spec.credit && !/a-trouver-/.test(src)) foot.appendChild(el('div', 'cred oi', fr(spec.credit)));
@@ -258,7 +291,7 @@ html,body{margin:0;background:#000}
   }
   await new Promise(function (r) { setTimeout(r, 120); });
   var o = vf.getBoundingClientRect();
-  window.__boxes = Array.prototype.map.call(vf.querySelectorAll('.band, .head > *, .close > *, .sub-line > *, .foot > *, .gsign, .close-sign > *, .slot-text > *, .tape'), function (e) {
+  window.__boxes = Array.prototype.map.call(vf.querySelectorAll('.band, .head > *, .close > *, .sub-line > *, .foot > *:not(.keys2), .keys2 > *, .gsign, .close-sign > *, .slot-text > *, .tape'), function (e) {
     var range = document.createRange(); range.selectNodeContents(e); var r = e.classList.contains('gsign') || e.classList.contains('pill') || e.classList.contains('tape') ? e.getBoundingClientRect() : range.getBoundingClientRect(), b = e.getBoundingClientRect();
     return { cls: e.className, text: e.textContent.slice(0, 40), x: Math.round(r.left - o.left), x1: Math.round(r.right - o.left), y: Math.round(b.top - o.top), y1: Math.round(b.bottom - o.top) };
   });
