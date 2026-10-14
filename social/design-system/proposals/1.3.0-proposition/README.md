@@ -18,6 +18,11 @@ What stays in this folder, and why:
   checked against the engine's `EthniCards.SERIES`, `BAND_H` and
   `PANEL_MAX_SERIES`. The models are read from the accepted sample cards, their
   only source.
+- `integration-2026-10-14/`: the integration evidence: the renderer, proposal
+  and video test logs, the `make check` summary, the fidelity reports (1.2.0 on
+  Playwright 1.63, 1.3.0 on the accepted set, and the comparison with Claude
+  Design's 1.3.0 references) and the reading boards at 320 and 430 px of the
+  seven models as the integrated engine renders them.
 - `video.model.json`: the demonstration voice script of the series 1 model,
   without the abandoned layout A geometry.
 
