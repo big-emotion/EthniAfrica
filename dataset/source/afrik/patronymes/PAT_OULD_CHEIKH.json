@@ -6,7 +6,7 @@
   },
   "id": "PAT_OULD_CHEIKH",
   "nameMain": "Ould Cheikh",
-  "nameSystem": "nisba",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Ould Cheikh",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "other",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -70,11 +70,7 @@
     },
     {
       "fieldPath": "transmissionMode",
-      "reason": "La nisba ne détermine pas à elle seule le mode de transmission : nous ne le documentons pas encore pour ce nom."
-    },
-    {
-      "fieldPath": "designatedSocialUnit",
-      "reason": "La nisba ne détermine pas à elle seule l'unité sociale désignée : nous ne la documentons pas encore pour ce nom."
+      "reason": "Le nom Ould Cheikh dit de qui la personne est le fils : nous ne documentons pas encore si ce nom passe aussi à ses enfants."
     },
     {
       "fieldPath": "peoples",

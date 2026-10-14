@@ -97,6 +97,10 @@
       "reason": "Les recherches exactes « Benyoucef homonym surname », « Benyoucef homonyme patronyme » et les variantes graphiques de la fiche n’ont pas établi deux origines distinctes et documentées pour la même forme."
     },
     {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait une nisba, c'est-à-dire un nom de lieu, de tribu ou de métier : les sources lues y voient un nom de famille formé de ben, « fils de », et du prénom Youcef. Le modèle n'a pas de case pour ce genre de nom de famille. Le classement comme nisba reste donc provisoire."
+    },
+    {
       "fieldPath": "transmissionMode",
       "reason": "Les recherches « Benyoucef transmission patronyme », « Benyoucef filiation » et « Benyoucef hereditary surname » n’ont pas établi si, ni comment, cette forme se transmet dans les communautés concernées."
     },

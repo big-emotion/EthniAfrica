@@ -105,12 +105,56 @@ const KEPT_SECOND_PASS = [
   ["PAT_YEBOAH", "clan_name"],
   ["PAT_PHIRI", "clan_name"],
   ["PAT_MWINYI", "clan_name"],
-  ["PAT_ESONO", "clan_name"],
-  ["PAT_MBA", "clan_name"],
-  ["PAT_NGUEMA", "clan_name"],
   ["PAT_CHERIF", "nisba"],
   ["PAT_BENALI", "nisba"],
   ["PAT_AIT_AHMED", "clan_name"],
+] as const;
+
+// Ruling of 2026-10-14 on Fang naming: Tessmann (1913, vol. 2, p. 285) says a
+// Fang child gets a name from his father, the father's name is then added to
+// it, Fang have no family names in the European sense, and a stranger is told
+// the name of the kin group instead. The kin group has its own name (Omwang,
+// Essauong); Esono, Mba, Nguema and Ondo are personal names that pass from
+// father to child, not clan names.
+const FANG_PERSONAL_NAMES = [
+  "PAT_ESONO",
+  "PAT_MBA",
+  "PAT_NGUEMA",
+  "PAT_ONDO",
+] as const;
+
+// Fang and Beti fiches the ruling does not move: no nameHistory of their own
+// (the rule needs one), a lineage or clan told by an account, or no Fang
+// account at all.
+const KEPT_FANG_BETI = [
+  ["PAT_OVONO", "clan_name"],
+  ["PAT_ESSOMBA", "clan_name"],
+  ["PAT_MVONDO", "clan_name"],
+  ["PAT_NDONG", "clan_name"],
+  ["PAT_OBIANG", "clan_name"],
+  ["PAT_ONANA", "clan_name"],
+] as const;
+
+// Ruling of 2026-10-14 on Maghreb names: Ould + the father's name, in
+// Mauritania, says whose son a person is, not which family; Basset (1910) and
+// Jeune Afrique (2005) say so. That is a patronymic chain, so the box is the
+// non-hereditary patronymic.
+const MAURITANIAN_FILIATION = ["PAT_OULD_CHEIKH", "PAT_OULD_MOHAMED"] as const;
+
+// Hereditary Ben / Bou / Ait + name, titles and given names used as family
+// names: no box of the model fits, so they stay nisba with the gap that says
+// the nisba class is provisional. A new value is proposed in the ruling, not
+// implemented.
+const KEPT_MAGHREB_FAMILY_NAMES = [
+  "PAT_BELKACEM",
+  "PAT_BENALI",
+  "PAT_BOUMEDIENE",
+  "PAT_BOUZID",
+  "PAT_BENYOUCEF",
+  "PAT_BEN_BADIS",
+  "PAT_AMARA",
+  "PAT_AMRANI",
+  "PAT_CHERIF",
 ] as const;
 
 function nameSystemGaps(fiche: {
@@ -228,4 +272,73 @@ describe("personal names filed as clan names (ETNI-2011)", () => {
   it.each(KEPT_SECOND_PASS)("%s keeps its %s typing", (id, nameSystem) => {
     expect(readFiche(id).nameSystem).toBe(nameSystem);
   });
+
+  // @req REQ-133
+  it.each(FANG_PERSONAL_NAMES)(
+    "%s is a personal name passed from father to child, with one gap",
+    (id) => {
+      const fiche = readFiche(id);
+
+      expect(parsePatronymeFile(fiche).success).toBe(true);
+      expect(fiche.nameSystem).toBe("non_hereditary_patronymic");
+      expect(fiche.designatedSocialUnit).toBe("individual");
+      const gaps = nameSystemGaps(fiche);
+      expect(gaps, `${id}: one nameSystem gap`).toHaveLength(1);
+      expect(gaps[0].reason).toMatch(/aucune source/i);
+      expect(gaps[0].reason).toMatch(/nom de clan/);
+      expect(gaps[0].reason).toMatch(/Fang/);
+      expect(gaps[0].reason).not.toMatch(/provisoire|hypothèse de classement/);
+      expect(JSON.stringify(fiche.gaps)).not.toMatch(
+        /catégorie provisoire|Le nom de clan ne détermine/
+      );
+    }
+  );
+
+  // @req REQ-133
+  it.each(["PAT_MBA", "PAT_NGUEMA"])(
+    "%s takes its father's name as second name, so its transmission is patrilineal",
+    (id) => {
+      const fiche = readFiche(id);
+
+      expect(fiche.transmissionMode).toBe("patrilineal");
+      expect(transmissionGaps(fiche)).toHaveLength(0);
+    }
+  );
+
+  // @req REQ-133
+  it.each(KEPT_FANG_BETI)("%s keeps its %s typing", (id, nameSystem) => {
+    expect(readFiche(id).nameSystem).toBe(nameSystem);
+  });
+
+  // @req REQ-133
+  it.each(MAURITANIAN_FILIATION)(
+    "%s names the father of a person, so it is a patronymic and needs no nameSystem gap",
+    (id) => {
+      const fiche = readFiche(id);
+
+      expect(parsePatronymeFile(fiche).success).toBe(true);
+      expect(fiche.nameSystem).toBe("non_hereditary_patronymic");
+      expect(fiche.designatedSocialUnit).toBe("individual");
+      expect(nameSystemGaps(fiche)).toHaveLength(0);
+      expect(JSON.stringify(fiche.gaps)).not.toMatch(/La nisba ne détermine/);
+      expect(
+        fiche.gaps.some(
+          ({ fieldPath }: { fieldPath: string }) =>
+            fieldPath === "designatedSocialUnit"
+        )
+      ).toBe(false);
+    }
+  );
+
+  // @req REQ-133
+  it.each(KEPT_MAGHREB_FAMILY_NAMES)(
+    "%s stays a nisba and says the class is provisional",
+    (id) => {
+      const fiche = readFiche(id);
+
+      expect(fiche.nameSystem).toBe("nisba");
+      expect(nameSystemGaps(fiche)).toHaveLength(1);
+      expect(nameSystemGaps(fiche)[0].reason).toMatch(/provisoire/);
+    }
+  );
 });
