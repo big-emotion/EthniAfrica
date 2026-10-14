@@ -6,7 +6,7 @@
   },
   "id": "PAT_MBA",
   "nameMain": "Mba",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Mba",
@@ -26,8 +26,8 @@
       ]
     }
   ],
-  "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "transmissionMode": "patrilineal",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -83,7 +83,7 @@
     },
     {
       "fieldPath": "nameSystem",
-      "reason": "la recherche web et bibliographique combinant « Mba », « Beti », « Fang », « Cameroun », « Gabon », « patronyme », « clan », « étymologie », « transmission » et « homonyme », ainsi que la page Forebears dédiée n'ont pas établi que la catégorie provisoire « clan_name » décrive Mba lui-même ; elle reste une hypothèse de classement, sans être transformée en affirmation."
+      "reason": "Aucune source consultée n'en fait un nom de clan. Chez les Fang, le nom du père s'ajoute au nom de l'enfant (Tessmann, 1913 ; Obiang-Mikue, 2023). Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "alliances",
@@ -100,10 +100,6 @@
     {
       "fieldPath": "homonyms",
       "reason": "la recherche web et bibliographique combinant « Mba », « Beti », « Fang », « Cameroun », « Gabon », « patronyme », « clan », « étymologie », « transmission » et « homonyme », ainsi que la page Forebears dédiée n'ont pas établi de lignée homonyme d'origine distincte documentable ; la diffusion dans plusieurs pays ne suffit pas à créer un homonyme."
-    },
-    {
-      "fieldPath": "transmissionMode",
-      "reason": "la recherche web et bibliographique combinant « Mba », « Beti », « Fang », « Cameroun », « Gabon », « patronyme », « clan », « étymologie », « transmission » et « homonyme », ainsi que la page Forebears dédiée n'ont établi aucune règle propre à Mba permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }
   ],
   "nameHistory": {
