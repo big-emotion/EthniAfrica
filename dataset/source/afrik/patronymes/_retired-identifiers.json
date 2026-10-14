@@ -117,5 +117,33 @@
     "successorId": "PAT_TESFAYE",
     "reason": "Tesfay is the Tigrinya equivalent of Tesfaye (Dictionary of American Family Names), already in the keeper's name history with Tesfai. Folded in: the spellings Tesfay and Tesfai and Eritrea as a country, on DAFN and Munzinger 1859, which the keeper's name history already cites. Not carried: the candidate-queue stub and its Tigray link, which rested on it alone; Forebears, an aggregator that gives no meaning.",
     "decidedOn": "2026-10-12"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_DJALO",
+    "successorId": "PAT_DIALLO",
+    "reason": "Djaló is the Guinea-Bissau spelling of Diallo: Sadjo (UNILAB 2019, pp. 19-20) gives Diallo, Djaló and Jaló as spellings of the Fula group Djal-Djaló. Folded in: the spellings Djaló and Jaló and Guinea-Bissau as their country, with Sadjo's statement that the group follows the paternal line. Not carried: its empty gaps, which say only that Sadjo gives no joking alliance, function or bearer.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "merged",
+    "retiredId": "PAT_BAH",
+    "successorId": "PAT_BA",
+    "reason": "Bah is a spelling of Ba: both are the Fula Uururɓe clan, and Vieillard (1939) gives Bâ, Bah and Baldé as its names. Folded in: Guinea as a country and the Fula link, the spellings Bah and Ba in Guinea, Vieillard's chapter and Straussberger 2016 (note 35), and the statement that they are the Uururɓe names. Not carried: the Gambia, which rested on the candidate queue alone.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "withdrawn",
+    "retiredId": "PAT_FADICCA",
+    "successorId": null,
+    "reason": "No source attests Fadicca as a family name. The one sourced claim on the fiche (Horton 1964) is that Fadija is another name for a set of Mahas dialects of Egyptian Nubia, and PPL_NUBIENS already lists Fadija beside Mahas. Withdrawn with no successor; the candidate-queue stub is not carried.",
+    "decidedOn": "2026-10-14"
+  },
+  {
+    "decision": "withdrawn",
+    "retiredId": "PAT_KOUM",
+    "successorId": null,
+    "reason": "Only Forebears, an aggregator, attests Koum (Cameroon and Côte d'Ivoire). No dictionary entry, old trace or people backs it, and every other field of the fiche was empty. Withdrawn with no successor.",
+    "decidedOn": "2026-10-14"
   }
 ]

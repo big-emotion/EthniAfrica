@@ -46,8 +46,11 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * 893 -> 891 the same day: two needs_review citations left with the Khainai
  * and Koyra fiches folded after wave 12. 891 -> 890 on 2026-10-13: wave 16
  * gave the Tongwe Trust citation of PPL_TONGWE an explicit tier (unverified).
+ * 890 -> 880 on 2026-10-14: ten needs_review citations left with the twenty-one
+ * people fiches of waves 14 to 19 folded or withdrawn, and the four family-name
+ * fiches withdrawn or folded, that day.
  */
-export const NEEDS_REVIEW_RATCHET = 890;
+export const NEEDS_REVIEW_RATCHET = 880;
 
 /** The doctrine's three tiers, plus the numeric tiers the name/relation/migration fiches still carry. */
 const TIERS_WITH_AUTHORITY = new Set<unknown>([

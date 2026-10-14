@@ -34,8 +34,11 @@ const DEFAULT_DATASET_ROOT = "dataset/source/afrik";
  * 1029 -> 1026 the same day: three untyped citations left with the Khainai
  * and Koyra fiches folded after wave 12. 1026 -> 1025 on 2026-10-13: wave 16
  * typed the Tongwe Trust citation of PPL_TONGWE (community, tier unverified).
+ * 1025 -> 1009 on 2026-10-14: sixteen untyped citations left with the
+ * twenty-one people fiches and the four family-name fiches of waves 14 to 19
+ * folded or withdrawn that day.
  */
-export const UNTYPED_SOURCE_RATCHET = 1025;
+export const UNTYPED_SOURCE_RATCHET = 1009;
 
 export interface UntypedSource {
   file: string;
