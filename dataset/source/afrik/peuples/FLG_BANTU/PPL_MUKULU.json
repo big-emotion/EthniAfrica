@@ -12,20 +12,22 @@
       "whyProblematic": null,
       "contemporaryUsage": "Le terme Mukulu est utilise dans les contextes officiels zambiens. Les Mukulu figurent dans la liste officielle des tribus de Zambie.",
       "linguisticFamily": "FLG_BANTU",
-      "ethnoLinguisticGroup": "Bantu, groupe Centre-Sud de Zambie",
-      "historicalRegion": "Province de l'Ouest de la Zambie",
+      "ethnoLinguisticGroup": "Bantu, groupe bemba du nord de la Zambie",
+      "historicalRegion": "Nord de la Zambie, région du lac Bangweulu",
       "currentCountries": ["ZMB"]
     },
     "ethnicities": ["Mukulu"],
     "origins": {
       "ancientOrigins": "Peuple bantou de Zambie appartenant au cluster Bantu Centre-Sud. Comme la plupart des peuples bantous de Zambie, leur origine remonte aux vagues de migrations bantoues qui penetrerent la Zambie a partir du XIIe siecle depuis le bassin du Congo.",
-      "formationPeriod": "XIIe-XVIIe siecles, dans le cadre des migrations bantoues progressives qui peuplèrent la Zambie centrale et occidentale.",
+      "formationPeriod": "XIIe-XVIIe siecles, dans le cadre des migrations bantoues progressives qui peuplèrent la Zambie.",
       "migrationRoutes": [
         "Bassin du Congo vers la Zambie dans le cadre de l'expansion bantoue meridionale"
       ],
-      "historicalSettlementZones": ["Province de l'Ouest de la Zambie"],
+      "historicalSettlementZones": [
+        "Nord de la Zambie, région du lac Bangweulu"
+      ],
       "unificationsOrDivisions": null,
-      "externalInfluences": "Influence des royaumes lozi et bemba voisins. Colonisation britannique de la Rhodesie du Nord (Zambie actuelle). Influence des missions chretiennes.",
+      "externalInfluences": "Influence du royaume bemba voisin. Colonisation britannique de la Rhodesie du Nord (Zambie actuelle). Influence des missions chretiennes.",
       "majorHistoricalEvents": "Integration dans le systeme colonial britannique de Rhodesie du Nord. Independence de la Zambie (1964) et integration dans le systeme administratif zambian."
     },
     "organization": {

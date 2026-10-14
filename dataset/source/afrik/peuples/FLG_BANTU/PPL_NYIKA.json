@@ -2,20 +2,20 @@
   "id": "PPL_NYIKA",
   "nameMain": "Nyika",
   "languageFamilyId": "FLG_BANTU",
-  "currentCountries": ["ZMB", "MWI", "TZA"],
+  "currentCountries": ["ZMB", "MWI"],
   "classificationStatus": "contested",
   "content": {
     "appellations": {
       "mainName": "Nyika",
       "selfAppellation": "Wenya",
-      "exonyms": ["Wenya", "Nyiha", "Nyika (Malawi et Zambie)"],
+      "exonyms": ["Wenya", "Nyika (Malawi et Zambie)"],
       "originOfExonyms": "Nyika désigne deux groupes distincts. Les Nyika, qui se nomment Wenya, font partie des Tumbuka du nord du Malawi et du nord-est de la Zambie. Les Nyika ou Nyiha du district de Mbozi, en Tanzanie, sont issus de Nyiha tanzaniens qui ont migré vers le sud.",
       "whyProblematic": "Le nom Nyika est ambigu car il designe plusieurs peuples distincts : les Nyika-Tumbuka du nord Malawi/Zambie, les Nyiha de Tanzanie, et en Afrique de l'Est cotiere les peuples Mijikenda (Digo, Giryama, etc.) parfois appeles collectivement Nyika dans la litterature ancienne. La fiche presente se concentre sur le groupe Nyika (Wenya) de la Zambie du nord.",
       "contemporaryUsage": "En Zambie du nord, le terme Nyika designe le groupe Wenya, sous-ensemble culturel et linguistique des Tumbuka. Le terme est utilise dans les recensements zambiens et malawites.",
       "linguisticFamily": "FLG_BANTU",
       "ethnoLinguisticGroup": "Tumbuka-Nyika (Bantou de la zone Corridor)",
       "historicalRegion": "Plateau du Nyika (nord Malawi) et corridor Isoka-Nakonde (nord-est Zambie)",
-      "currentCountries": ["ZMB", "MWI", "TZA"]
+      "currentCountries": ["ZMB", "MWI"]
     },
     "ethnicities": ["Nyika (Wenya)", "Tumbuka-Nyika"],
     "origins": {
@@ -23,12 +23,11 @@
       "formationPeriod": "Avant 1800 ; la distinction des Nyika comme groupe separable des autres Tumbuka s'est operee progressivement suite a leur isolement geographique dans les zones montagneuses.",
       "migrationRoutes": [
         "Depuis le royaume de Nkhamanga vers l'ouest, occupant les zones montagneuses entre Kalonga et le corridor Isoka-Nakonde dans l'actuel nord Malawi et nord-est Zambie",
-        "Les Nyiha issus du district de Mbozi en Tanzanie ont migre vers le sud vers le debut du XXe siecle pour s'etablir en Zambie"
+        "Selon Joshua Project, les Nyika de Zambie viendraient des Nyiha du district de Mbozi, en Tanzanie, partis vers le sud peut-être au début du XXe siècle"
       ],
       "historicalSettlementZones": [
         "Plateau du Nyika (nord Malawi, region de Rumphi)",
-        "Corridor Isoka-Nakonde (Province de Muchinga, Zambie du nord)",
-        "District de Mbozi, region de Mbeya, Tanzanie (pour la branche Nyiha/Nyika tanzanienne)"
+        "Corridor Isoka-Nakonde (Province de Muchinga, Zambie du nord)"
       ],
       "unificationsOrDivisions": "Le groupe Nyika est demeure relativement isole geographiquement dans les zones montagneuses, ce qui a contribue a preserver une identite distincte tout en s'integrant progressivement a la culture tumbuka dominante. Le degre d'assimilation est plus eleve dans les zones frontalieres.",
       "externalInfluences": "L'expansion ngoni au XIXe siecle a perturbe les societes tumbuka et apparentees ; les Tumbuka ont adopte certaines pratiques ngoni (villages compacts, descendance patrilineaire, danses) tandis que les Ngoni adoptaient la langue tumbuka. Les missions chretiennes du XIXe siecle (Church of Scotland, CCAP) ont transforme les pratiques religieuses et educatives.",
@@ -60,10 +59,10 @@
       "kingdomsOrChiefdoms": "Sous-groupe du royaume de Nkhamanga des Tumbuka. Pas de royaume independant ; chefferies locales autonomes dans les zones montagneuses.",
       "relationsWithNeighbors": "Relations etroites avec les autres sous-groupes tumbuka (Senga, Henga, Yombe, Lambya, Tambo, Wandya, Fungwe). Interactions avec les Ngoni qui ont conquis et vassalise les Tumbuka au XIXe siecle. Les Nyika ont egalement des contacts avec les Ngonde au nord.",
       "conflictsOrAlliances": "Au XIXe siecle, les Ngoni de Mbelwa ont soumis les peuples tumbuka, exigeant des tributs et capturant des esclaves agricoles. Certains combattants henga ont fui vers le territoire ngonde vers 1881. Les conflits autour de la traite des esclaves arabe ont marque la region jusqu'a 1895.",
-      "diaspora": "Une fraction des Nyiha de Tanzanie (Mbozi) a migre vers la Zambie au debut du XXe siecle, constituant la branche zambienne parfois appelee Nyika (Tanzania) ou Nyiha en Zambie."
+      "diaspora": "Les sources lues ne décrivent pas de diaspora hors de la Zambie et du Malawi."
     },
     "demography": {
-      "totalPopulation": 80000,
+      "totalPopulation": 75000,
       "referenceYear": 2025,
       "source": "Estimation basee sur les donnees de Glottolog (Nyika nkv = 6b Threatened) et Joshua Project pour la Zambie",
       "distributionByCountry": [
@@ -76,11 +75,6 @@
           "country": "MWI",
           "population": 25000,
           "notes": "Region Nord, district de Rumphi, plateau du Nyika"
-        },
-        {
-          "country": "TZA",
-          "population": 5000,
-          "notes": "Branche Nyiha/Nyika, district de Mbozi, region de Mbeya"
         }
       ]
     },
