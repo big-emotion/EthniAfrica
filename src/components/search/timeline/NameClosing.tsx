@@ -40,13 +40,13 @@ const H2 =
 
 // Static class names, so Tailwind sees every one of them.
 const FAMILY_FILL: Record<SourceKindFamily, string> = {
-  oral: "bg-[color:var(--afh-source-oral)]",
-  book: "bg-[color:var(--afh-source-book)]",
-  encyclopedia: "bg-[color:var(--afh-source-encyclopedia)]",
-  press: "bg-[color:var(--afh-source-press)]",
-  report: "bg-[color:var(--afh-source-report)]",
-  archive: "bg-[color:var(--afh-source-archive)]",
-  other: "bg-[color:var(--afh-source-other)]",
+  oral: "bg-(--afh-source-oral)",
+  book: "bg-(--afh-source-book)",
+  encyclopedia: "bg-(--afh-source-encyclopedia)",
+  press: "bg-(--afh-source-press)",
+  report: "bg-(--afh-source-report)",
+  archive: "bg-(--afh-source-archive)",
+  other: "bg-(--afh-source-other)",
 };
 
 function FamilyMark({ family }: { family: SourceKindFamily }) {

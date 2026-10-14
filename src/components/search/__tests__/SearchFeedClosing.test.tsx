@@ -99,7 +99,7 @@ describe("SearchFeed — the page no longer ends on the timeline", () => {
 
     expect(
       screen.getByText(
-        "Aucune source sur le nom zzqxv n’est enregistrée dans l’atlas."
+        "Aucune source sur le nom zzqxv n’est enregistrée dans le projet."
       )
     ).toBeInTheDocument();
     // The page's own « Nous nous sommes trompés ? » card is its invitation.

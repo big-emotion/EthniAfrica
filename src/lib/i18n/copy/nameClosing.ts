@@ -117,7 +117,7 @@ export const nameClosingCopy: Record<Language, NameClosingCopy> = {
       unwritten: (label, name) =>
         `L’histoire du nom ${name} (${label.toLowerCase()}) n’est pas encore écrite.`,
       unknown: (query) =>
-        `Aucune source sur le nom ${query} n’est enregistrée dans l’atlas.`,
+        `Aucune source sur le nom ${query} n’est enregistrée dans le projet.`,
     },
     conviction: about.conviction.paragraphs[0],
     thesis: "",
