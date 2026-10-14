@@ -6,7 +6,7 @@
   },
   "id": "PAT_BOUZID",
   "nameMain": "Bouzid",
-  "nameSystem": "nisba",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Bouzid",
@@ -95,10 +95,6 @@
     {
       "fieldPath": "homonyms",
       "reason": "Les recherches exactes « Bouzid homonym surname », « Bouzid homonyme patronyme » et les variantes graphiques de la fiche n’ont pas établi deux origines distinctes et documentées pour la même forme."
-    },
-    {
-      "fieldPath": "nameSystem",
-      "reason": "Aucune source consultée n'en fait une nisba, c'est-à-dire un nom de lieu, de tribu ou de métier : les sources lues y voient un nom de famille formé de bou, « père de », et du nom d'homme Zaid. Le modèle n'a pas de case pour ce genre de nom de famille. Le classement comme nisba reste donc provisoire."
     },
     {
       "fieldPath": "transmissionMode",

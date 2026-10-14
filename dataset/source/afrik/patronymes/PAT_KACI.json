@@ -6,7 +6,7 @@
   },
   "id": "PAT_KACI",
   "nameMain": "Kaci",
-  "nameSystem": "non_hereditary_patronymic",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Kaci",
@@ -28,7 +28,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "individual",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -76,10 +76,6 @@
     {
       "fieldPath": "origin.writtenChronicles",
       "reason": "Les catalogues BnF, Persée, OpenEdition et les dépôts universitaires algériens ont été interrogés sans trouver de chronique ou d’archive ancienne consacrée à la formation du nom Kaci."
-    },
-    {
-      "fieldPath": "nameSystem",
-      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de personne kabyle devenu nom de famille. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "transmissionMode",

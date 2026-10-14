@@ -6,7 +6,7 @@
   },
   "id": "PAT_BOUMEDIENE",
   "nameMain": "Boumediene",
-  "nameSystem": "nisba",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Boumediene",
@@ -85,10 +85,6 @@
     {
       "fieldPath": "homonyms",
       "reason": "Les recherches exactes « Boumediene homonym surname », « Boumediene homonyme patronyme » et les variantes graphiques de la fiche n’ont pas établi deux origines distinctes et documentées pour la même forme."
-    },
-    {
-      "fieldPath": "nameSystem",
-      "reason": "Les sources consultées attestent la graphie « Boumediene » sans établir assez précisément le système dénominatif ; le classement comme nisba reste donc provisoire."
     },
     {
       "fieldPath": "transmissionMode",

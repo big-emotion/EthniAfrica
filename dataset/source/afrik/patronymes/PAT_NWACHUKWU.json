@@ -6,7 +6,7 @@
   },
   "id": "PAT_NWACHUKWU",
   "nameMain": "Nwachukwu",
-  "nameSystem": "non_hereditary_patronymic",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Nwachukwu",
@@ -112,10 +112,6 @@
     {
       "fieldPath": "designatedSocialUnit",
       "reason": "l'entrée du dictionnaire de Hanks et l'article de Nkamigbo (2019) ne permet pas de décider si chaque emploi contemporain désigne un individu, une famille, une charge ou un lignage ; aucune monographie propre à Nwachukwu n'a été trouvée."
-    },
-    {
-      "fieldPath": "nameSystem",
-      "reason": "Aucune source consultée ne fait de Nwachukwu un nom de clan : les sources y voient un nom personnel qui veut dire « enfant de Dieu ». Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet jamais."
     }
   ],
   "nameHistory": {

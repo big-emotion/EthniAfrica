@@ -1,4 +1,4 @@
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 
 import { describe, expect, it } from "vitest";
@@ -25,10 +25,7 @@ const RECLASSIFIED = [
   "PAT_OLAWALE",
   "PAT_BIYA",
   "PAT_KASONGO",
-  "PAT_KAZADI",
   "PAT_MOBUTU",
-  "PAT_JOHNSON",
-  "PAT_HAMDI",
   "PAT_EL_SAYED",
   "PAT_MUSEVENI",
 ] as const;
@@ -53,29 +50,18 @@ const RECLASSIFIED_SECOND_PASS = [
   "PAT_AONDOAKAA",
   "PAT_APPIAH",
   "PAT_EKPO",
-  "PAT_KACI",
   "PAT_KOLLIE",
   "PAT_LUMBALA",
-  "PAT_POHAMBA",
-  "PAT_RITA",
-  "PAT_RODRIGUES",
   "PAT_SEBASTIAO",
   "PAT_SEERUTTUN",
   "PAT_SHENOUDA",
-  "PAT_SHIKONGO",
-  "PAT_TOE",
-  "PAT_WEAH",
   "PAT_DOSSOU",
-  "PAT_BAPTISTA",
   "PAT_DOMINGOS",
-  "PAT_GONCALVES",
-  "PAT_LOURENCO",
   "PAT_KALALA",
   "PAT_ADEBAYO",
   "PAT_ADEYEMI",
   "PAT_BABATUNDE",
   "PAT_KEHINDE",
-  "PAT_TAIWO",
   "PAT_BALOGUN",
 ] as const;
 
@@ -90,7 +76,6 @@ const HEREDITARY_FAMILY_NAMES = [
   "PAT_KAYEMBE",
   "PAT_LUTULA",
   "PAT_DJOUMESSI",
-  "PAT_EYOUM",
   "PAT_FOTSO",
   "PAT_CHIRWA",
 ] as const;
@@ -141,21 +126,66 @@ const KEPT_FANG_BETI = [
 // non-hereditary patronymic.
 const MAURITANIAN_FILIATION = ["PAT_OULD_CHEIKH", "PAT_OULD_MOHAMED"] as const;
 
-// Hereditary Ben / Bou / Ait + name, titles and given names used as family
-// names: no box of the model fits, so they stay nisba with the gap that says
-// the nisba class is provisional. A new value is proposed in the ruling, not
-// implemented.
+// Maghreb family names whose own nameHistory does not show the transmission
+// as a surname (Benali, Amrani: no account; Cherif: a title, and the family
+// names built on it are other names). They stay nisba with the gap that says
+// the nisba class is provisional.
 const KEPT_MAGHREB_FAMILY_NAMES = [
-  "PAT_BELKACEM",
   "PAT_BENALI",
-  "PAT_BOUMEDIENE",
-  "PAT_BOUZID",
-  "PAT_BENYOUCEF",
-  "PAT_BEN_BADIS",
-  "PAT_AMARA",
   "PAT_AMRANI",
   "PAT_CHERIF",
 ] as const;
+
+// Sixth value, hereditary_family_name (ETNI-2011, ruling of 2026-10-14): the
+// fiches whose own nameHistory shows the name borne as a family name and
+// tells no clan. Each one is backed by an account of the fiche: the 1882
+// civil-status law for Algerian names, a family line (Akhannouch, Eyoum,
+// Ben Badis, Benyoucef), a transmission told by the source (Taiwo, Shikongo,
+// Pohamba) or a source that labels the name a family name.
+const HEREDITARY_FAMILY_NAME_FICHES = [
+  "PAT_AKHANNOUCH",
+  "PAT_AMARA",
+  "PAT_BAPTISTA",
+  "PAT_BELKACEM",
+  "PAT_BENYOUCEF",
+  "PAT_BEN_BADIS",
+  "PAT_BOUMEDIENE",
+  "PAT_BOUZID",
+  "PAT_CHINEDU",
+  "PAT_EYOUM",
+  "PAT_GONCALVES",
+  "PAT_GUIRGUIS",
+  "PAT_HAMDI",
+  "PAT_JOHNSON",
+  "PAT_KACI",
+  "PAT_KAZADI",
+  "PAT_LOURENCO",
+  "PAT_NWACHUKWU",
+  "PAT_OKORO",
+  "PAT_POHAMBA",
+  "PAT_RAMGOOLAM",
+  "PAT_RITA",
+  "PAT_RODRIGUES",
+  "PAT_SHIKONGO",
+  "PAT_TAIWO",
+  "PAT_TOE",
+  "PAT_WEAH",
+  "PAT_ZADI",
+] as const;
+
+// Of those, the ones whose accounts show a family line.
+const HEREDITARY_FAMILY_NAME_LINEAGE = new Set<string>([
+  "PAT_AKHANNOUCH",
+  "PAT_BEN_BADIS",
+  "PAT_EYOUM",
+]);
+
+function everyFiche() {
+  const dir = resolve(process.cwd(), "dataset/source/afrik/patronymes");
+  return readdirSync(dir)
+    .filter((name) => /^PAT_.*\.json$/.test(name))
+    .map((name) => readFiche(name.replace(/\.json$/, "")));
+}
 
 function nameSystemGaps(fiche: {
   gaps: { fieldPath: string; reason: string }[];
@@ -341,4 +371,50 @@ describe("personal names filed as clan names (ETNI-2011)", () => {
       expect(nameSystemGaps(fiche)[0].reason).toMatch(/provisoire/);
     }
   );
+});
+
+describe("hereditary family names (ETNI-2011, sixth value)", () => {
+  // @req REQ-133
+  it.each(HEREDITARY_FAMILY_NAME_FICHES)(
+    "%s is a hereditary family name, with no leftover box-is-missing gap",
+    (id) => {
+      const fiche = readFiche(id);
+
+      expect(parsePatronymeFile(fiche).success).toBe(true);
+      expect(fiche.nameSystem).toBe("hereditary_family_name");
+      expect(fiche.designatedSocialUnit).toBe(
+        HEREDITARY_FAMILY_NAME_LINEAGE.has(id) ? "lineage" : "other"
+      );
+      expect(nameSystemGaps(fiche)).toHaveLength(0);
+      expect(fiche.nameHistory, `${id}: nameHistory`).toBeDefined();
+    }
+  );
+
+  // @req REQ-133
+  it("moves exactly the fiches listed above and no other", () => {
+    const moved = everyFiche()
+      .filter((fiche) => fiche.nameSystem === "hereditary_family_name")
+      .map((fiche) => fiche.id)
+      .sort();
+
+    expect(moved).toEqual([...HEREDITARY_FAMILY_NAME_FICHES].sort());
+  });
+
+  // @req REQ-133
+  it("leaves no fiche saying that the model has no box for a family name", () => {
+    const stale = everyFiche().filter((fiche) =>
+      fiche.gaps.some(
+        ({ fieldPath, reason }: { fieldPath: string; reason: string }) =>
+          fieldPath === "nameSystem" &&
+          /n'a pas de case pour (un|ce) (nom|genre)[^.]*(famille)/.test(reason)
+      )
+    );
+
+    expect(stale.map((fiche) => fiche.id)).toEqual([]);
+  });
+
+  // @req REQ-133
+  it("keeps Taiwo's transmission coherent with a family name taken from the father", () => {
+    expect(readFiche("PAT_TAIWO").transmissionMode).toBe("patrilineal");
+  });
 });

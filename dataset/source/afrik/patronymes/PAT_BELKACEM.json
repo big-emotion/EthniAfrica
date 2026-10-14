@@ -6,7 +6,7 @@
   },
   "id": "PAT_BELKACEM",
   "nameMain": "Belkacem",
-  "nameSystem": "nisba",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Belkacem",
@@ -95,10 +95,6 @@
     {
       "fieldPath": "homonyms",
       "reason": "Les recherches exactes « Belkacem homonym surname », « Belkacem homonyme patronyme » et les variantes graphiques de la fiche n'ont pas établi deux origines distinctes et documentées pour la même forme."
-    },
-    {
-      "fieldPath": "nameSystem",
-      "reason": "Les sources consultées décrivent la graphie « Belkacem » sans établir assez précisément le système dénominatif ; le classement comme nisba reste donc provisoire."
     },
     {
       "fieldPath": "transmissionMode",

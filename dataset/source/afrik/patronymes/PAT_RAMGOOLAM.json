@@ -6,7 +6,7 @@
   },
   "id": "PAT_RAMGOOLAM",
   "nameMain": "Ramgoolam",
-  "nameSystem": "non_hereditary_patronymic",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Ramgoolam",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "individual",
+  "designatedSocialUnit": "other",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [
@@ -104,10 +104,6 @@
     {
       "fieldPath": "homonyms",
       "reason": "les résultats exacts « Ramgoolam », les Indian Immigration Archives du Mahatma Gandhi Institute, les publications de l'Aapravasi Ghat et les catalogues bibliographiques sur l'engagisme à Maurice n'ont pas permis d'isoler deux lignées homonymes dotées d'origines distinctes et documentées. Lorsque le dictionnaire propose plusieurs formations possibles, elles restent des hypothèses linguistiques et non des lignées séparées."
-    },
-    {
-      "fieldPath": "nameSystem",
-      "reason": "Le nom Ramgoolam a d'abord été un prénom, celui d'un travailleur engagé, avant de devenir un nom de famille à Maurice. Le modèle n'a pas de case pour un prénom devenu nom de famille : la fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
       "fieldPath": "transmissionMode",

@@ -6,7 +6,7 @@
   },
   "id": "PAT_ZADI",
   "nameMain": "Zadi",
-  "nameSystem": "non_hereditary_patronymic",
+  "nameSystem": "hereditary_family_name",
   "spellings": [
     {
       "spelling": "Zadi",
@@ -94,10 +94,6 @@
     }
   ],
   "gaps": [
-    {
-      "fieldPath": "nameSystem",
-      "reason": "Aucune source consultée ne fait de Zadi un nom de clan : une liste de presse le donne comme un nom de jumeaux, et Gronner comme la BnF le citent comme nom de personne. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet jamais."
-    },
     {
       "fieldPath": "designatedSocialUnit",
       "reason": "La thèse de Gronner a été vérifiée pour les occurrences Zadi et Zadiayo, mais elle ne démontre pas que le patronyme moderne désigne ce groupe ou un lignage précis. L'unité sociale désignée reste inconnue."
