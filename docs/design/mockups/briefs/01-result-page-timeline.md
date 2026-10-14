@@ -2,6 +2,10 @@
 
 Read [`README.md`](README.md) first (rules, spine, thesis slot, workflow).
 
+**Status: approved by the operator on 2026-10-14.** The boards are recorded in
+[`../site/`](../site/README.md); the decisions taken in review are listed at
+the end of this brief, under "Approved boards".
+
 **Boards to change** (canvas stems, each at `-430`, `-768`, `-1440`):
 `search-peul` (the model), then `search-bassa`, `search-congo`,
 `search-unknown`.
@@ -77,3 +81,40 @@ self-name: « Vous avez cherché Peul. Ce peuple se nomme lui-même Fulɓe. »
   `src/lib/search/searchLenses.ts`.
 - Show a tier, a score or a "most reliable" label on any account.
 - Put the thesis anywhere but the closing band.
+
+## Approved boards (2026-10-14)
+
+Recorded in `docs/design/mockups/site/`. The implementation reproduces them.
+
+- `search-peul`, `search-bassa`, `search-congo`, `search-unknown`, each at 430,
+  768 and 1440, gain three blocks between the timeline and the footer:
+  « Les sources parlent » (block 3), the closing band (blocks 5 to 7) and
+  « Poursuivre avec un autre nom » (block 8). « Voir la fiche complète » stays
+  under the timeline.
+- Three state boards: `search-state-thin` (« wolof »: one name, one account,
+  undated), `search-state-competing` (« yamoussoukro »: Hypothèse 1 and
+  Hypothèse 2) and `search-state-nodate` (marked example, to replace).
+- `Main` gains the three components.
+
+Decisions taken in review:
+
+1. Block 3 groups the accounts of the open name by the seven source-diamond
+   families (`src/lib/sources/sourceKindFamily.ts`), in the code's fixed order,
+   oral first; the precise kind of each source is printed beside its title.
+   On a page with several subjects, each subject has its block 3, the first
+   open and the others folded.
+2. The closing band reuses the site's own copy: the « Notre conviction »
+   sentence and the correction invitation of the about page, the buttons
+   « Signaler une erreur » and « Proposer une source », and the title « Ce que
+   nous ne savons pas encore ». The thesis line stays `[THÈSE — texte à fixer]`.
+   On the unknown-name page the existing « Nous nous sommes trompés ? » card is
+   the invitation.
+3. Next-step targets: Wolof and Atlantique (`peul`), Krou and Nupe (`bassa`),
+   Kongo and Mossi (`congo`), Siwi and Tchad (`unknown`), each with a reason
+   taken from the target's fiche. They link to the result pages of those names.
+4. The competing-origins board shows the two hypotheses the operator named;
+   the corpus holds a third for Yamoussoukro (the queen's first name, Yaha
+   M'so), which the live timeline already shows as « Hypothèse 3 ».
+5. Silences come from the corpus and the boards' own copy, one per line; a
+   page never declares a silence its data does not support.
+
