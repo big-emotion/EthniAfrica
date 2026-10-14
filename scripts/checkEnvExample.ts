@@ -84,6 +84,10 @@ const ALWAYS_DEFINED = new Set([
   // thresholds a slice of the suite cannot meet. Nothing a deployment or a
   // developer should set: a stray value locally would silence the gate.
   "VITEST_SHARD",
+  // Set by lighthouse.yml from the runner's own benchmark, so .lighthouserc.js
+  // throttles the CPU to the same emulated phone on every runner. Unset, it
+  // falls back to 4x; a value set by hand would misstate the machine.
+  "LIGHTHOUSE_BENCHMARK_INDEX",
 ]);
 
 /**
