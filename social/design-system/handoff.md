@@ -2,6 +2,8 @@
 
 ## Acceptance and integration status
 
+**1.4.0-proposition, 14 October 2026, accepted by the operator the same day.** It replaces only the series video's layout B of 1.3.0 by a full-screen layout (Series, « Vidéo de série »), adds eight `on-image-*` tokens for the video and changes no card. See « Renderer integration of 1.4.0 ».
+
 **1.2.0-proposition, 12 October 2026.** The operator accepted 1.2.0-proposition
 on 12 October 2026, recorded in `version.json`. It adds the historical atlas map
 (approximate zones, regional keys, the 1914 partition with named territories,
@@ -227,6 +229,44 @@ The operator accepted 1.3.0-proposition on 14 October 2026 and chose video layou
 
 **Video.** `handoff/video-board.html` renders one frame of the series video in layout A or B; it is a design board, not the video renderer. The video belongs to `social/video` (Vidéo carte 0.4.0's chunks, highlight, reading rule and voice timing), in layout B: frame 1080 × 1920, band, video card (Series, « Vidéo de série », layout B), subtitles, the 300 ms cross-fade, the 100 to 104 % zoom and the ending « série » (Series, « Vidéo de série »).
 
+## Renderer integration of 1.4.0
+
+**Status: accepted on 14 October 2026,** with the four decisions recorded in Series, « Vidéo de série ». It replaces the series video's layout B of 1.3.0 and nothing else. **The card renderer is unchanged:** a card without video context renders as in 1.3.0. The eight new `on-image-*` tokens are used by the video only; seven sample cards (`serie-pays-01`, `serie-pays-04`, `serie-pays-07`, `serie-nom-recu-01`, `serie-frontieres-02`, `seq-1`, `map-fula`) were rendered with the 1.3.0 and the 1.4.0 `tokens.json` in Claude Design's Chromium: identical pixel for pixel. Rerun that comparison on all 89 references on the pinned browser.
+
+**Version.** `EthniCards.version`, `version.json` and `handoff/cards.sample.json` say `1.4.0-proposition`; nothing else in `bundle.js` or `bundle.css` changes. The card renderer's `reference-manifest.json` takes the new `designVersion` with the same 89 reference hashes.
+
+**Where it goes.** `social/video`: `series.mjs` (`LAYOUT`, `checkSeriesLayout`), `series-page.mjs` (the layout B styles and `buildLayer`), `series-render.mjs`. `handoff/video-board-full.html` is the visual reference, not the engine; it draws one frame from the sample cards (`?card=…&next=…&fade=…&sub=…&lit=…&zoom=…&guides=1`). The schedule, voice, chunks, `pageOnline` and encoding of 1.3.0 stay. The design's `version.json` says `"videoLayout": "full"`; the engine checks it instead of `"B"`.
+
+**Bands** (frame pixels, every text between x 60 and 1020):
+
+| Band        | y            | Check                                                    |
+| ----------- | ------------ | -------------------------------------------------------- |
+| Demo tape   | 178 to 226   | right edge on x 1020; mockups only                       |
+| Series band | 250 to 290   | one line                                                 |
+| Head        | 318 to 700   | title three lines at most; the ending's block 318 to 820 |
+| Clear image | 700 to 1300  | no text; the focal point aimed at (540, 1000)            |
+| Subtitle    | 1316 to 1452 | centred on 540, lines at most 900 px (0.4.0)             |
+| Foot        | 1652 to 1786 | bottom aligned on 1786                                   |
+| Signature   | 1836 to 1884 | content cards from x 60; ending centred, 1828 to 1884    |
+
+**Legibility rule.** Every text on the image: fill from the `on-image-*` tokens (the same in Nuit and Parchemin), `-webkit-text-stroke` in `on-image-stroke` with `paint-order: stroke fill`, outline width by size (subtitle 9 px, opener title 13, title and slogan 10, date 14, name employed 8, every text from 22 to 34 px 4), shadow `on-image-shadow` 0 2px 14px from 40 px up, 0 1px 8px below. The lit word: background `on-image-accent`, text `on-image-on-accent`, no outline, radius 6, 6 px side shadows. The page draws nothing with a background over the image except the lit word, the pill's outline rings, the « image à trouver » slot and the demo tape: no veil, scrim, gradient or panel.
+
+**Long-date rule.** The date takes the largest of 176/156, 148/136, 124/118, 104/100 that holds on one line in 960 px, measured on the drawn glyphs; else two balanced lines at 104/100; day, month and year joined by no-break spaces; a date that needs a third line is refused.
+
+**New fields.** `image.video: { src, focus }` (a video framing for an image too wide or whose focal point is out of reach); `map.videoView: [x, y, w, h]` (the map's 9:16 view, map units); `image.find` (what an « image à trouver » slot must show, drawn as text on the video frame).
+
+**What the engine checks** (refuse, or report with `--diagnose`):
+
+1. Every text box inside x 60 to 1020 and inside its band (table above), on the cover, the last frame and every frame where a chunk is fully drawn.
+2. Band on one line; head at most three title lines; date per the long-date rule.
+3. Image scale at most 1.5 frame pixels per source pixel at 104 % (« Image trop petite pour la vidéo »); `keptWidth` reported; a focal point that cannot reach y 700 reported.
+4. Map card: the subject's box (highlight or areas) below y 724 and above the foot (« Le sujet de la carte passe sous la tête »); the view inside the base map's drawn extent.
+5. No two cards' heads visible together: during a change the outgoing text fades out over frames 1 to 4 and the incoming text fades in over frames 5 to 9 of the 9-frame change, while the images cross-fade over all 9; band and signature drawn once.
+6. French spacing applied to every text, subtitles included.
+7. A final video refuses a slot, as in 1.3.0.
+
+**Boards** (`Video` group, `video-14-*`; full size 1080 × 1920 and 430 px): cover, subtitle with the lit word, the card change at 100 and 200 ms, a dated card with a long date, a map card, a Parchemin card, the « image à trouver » slot in both themes, both endings, the guides, the feed at 430 px, legibility on the hardest images, the Parchemin inks compared, the long dates, the framing of wide images, and a map refused.
+
 ## Required assets
 
 - Fonts: `fonts/Anton-Regular.ttf`, `fonts/NunitoSans.ttf`, `fonts/NotoSans-Variable.ttf`, `fonts/Fraunces.ttf`, `fonts/NotoSansEthiopic-Bold.ttf`, all under the SIL Open Font License 1.1.
@@ -273,3 +313,9 @@ The operator accepted 1.3.0-proposition on 14 October 2026 and chose video layou
 - The operator's decisions of 13 October 2026, drawn as given: the band at the top of the card; 72 px taken from the panel (828 px), the image window keeping 450 px; the episode number in `accent`; the video's ending keeps « Cherchez [nom] sur EthniAfrica, lien en profil. », a deliberate exception to the 0.4.0 endings; an image on every model card.
 - Video layout chosen by the operator on 14 October 2026: B, the video's own card (decision 4).
 - Accepted by the operator on 14 October 2026, with these decisions.
+
+## Commissioned on 14 October 2026 (1.4.0)
+
+- The operator's decision of 14 October 2026, drawn as given: the series video's image fills the whole frame, with no shadow zone and no placement fitted to the networks' interface; only text sits on the image. Decision 4 (layout B) is withdrawn.
+- Brief: `proposals/1.4.0-proposition/claude-design-brief.md` on the repository branch `feat/social-series-video-b`.
+- Accepted by the operator on 14 October 2026, with the designer's recommendations on the four open questions (Series, « Vidéo de série »).

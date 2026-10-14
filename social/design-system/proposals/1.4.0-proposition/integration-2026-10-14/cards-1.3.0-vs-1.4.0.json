@@ -1,0 +1,637 @@
+{
+  "date": "2026-10-14",
+  "what": "The 89 sample cards of handoff/cards.sample.json rendered in diagnostic mode with the 1.3.0 design (branch head) and the 1.4.0 design (this change), on one browser, then compared file by file.",
+  "browser": "Chromium 141.0.7390.37 with Playwright 1.63.0 (the session's browser; runtime.json pins 153.0.8010.12, which this environment does not have). The comparison is between the two designs on the same browser; the pinned-browser fidelity run against the accepted references remains to be done on the operator's machine.",
+  "cards": 89,
+  "identical": 89,
+  "alternativeTextsIdentical": true,
+  "tests": {
+    "test:social-renderer": "26 of 26 pass on the same browser",
+    "test:social-series-proposal": "8 of 8 pass"
+  },
+  "files": [
+    {
+      "file": "01.png",
+      "id": "seq-1",
+      "sha256_1_3_0": "a9fc31aa935f171d0abac51550ac49f8b3e8f9417ab8ce62a4db045c6bd892b9",
+      "sha256_1_4_0": "a9fc31aa935f171d0abac51550ac49f8b3e8f9417ab8ce62a4db045c6bd892b9",
+      "identical": true
+    },
+    {
+      "file": "02.png",
+      "id": "seq-2",
+      "sha256_1_3_0": "1ebbda3db1fe30421f2aac6bb3bf6c44ef406941f981dd5cdd8ab1dd9de9c77e",
+      "sha256_1_4_0": "1ebbda3db1fe30421f2aac6bb3bf6c44ef406941f981dd5cdd8ab1dd9de9c77e",
+      "identical": true
+    },
+    {
+      "file": "03.png",
+      "id": "seq-3",
+      "sha256_1_3_0": "bffa0bbb9e0bc3aa6891ffe70aed12dafedf69f12fe18e6a0c3af6280714fd9a",
+      "sha256_1_4_0": "bffa0bbb9e0bc3aa6891ffe70aed12dafedf69f12fe18e6a0c3af6280714fd9a",
+      "identical": true
+    },
+    {
+      "file": "04.png",
+      "id": "seq-4",
+      "sha256_1_3_0": "ee422336f3559c6d142a253c7c7c37f6b0c20438ebf92e9531a3f4b6c7c43340",
+      "sha256_1_4_0": "ee422336f3559c6d142a253c7c7c37f6b0c20438ebf92e9531a3f4b6c7c43340",
+      "identical": true
+    },
+    {
+      "file": "05.png",
+      "id": "seq-5",
+      "sha256_1_3_0": "c900c2dd3e483ffb0365cf24f8b2ef47c82a01ca957a439c00dacdf6d5ec0ad3",
+      "sha256_1_4_0": "c900c2dd3e483ffb0365cf24f8b2ef47c82a01ca957a439c00dacdf6d5ec0ad3",
+      "identical": true
+    },
+    {
+      "file": "06.png",
+      "id": "seq-6",
+      "sha256_1_3_0": "487c4f62c42335abe3783b77e004b637a7c731864a2e9d19aa13997a7824ead7",
+      "sha256_1_4_0": "487c4f62c42335abe3783b77e004b637a7c731864a2e9d19aa13997a7824ead7",
+      "identical": true
+    },
+    {
+      "file": "07.png",
+      "id": "seq-7",
+      "sha256_1_3_0": "1bb33fad704a327311268eaa57838e4c0676da40005d75b7061fb61ca1a6a436",
+      "sha256_1_4_0": "1bb33fad704a327311268eaa57838e4c0676da40005d75b7061fb61ca1a6a436",
+      "identical": true
+    },
+    {
+      "file": "08.png",
+      "id": "seq-8",
+      "sha256_1_3_0": "4ecbfd9288388b004e5dea8e57294027483ca47c73efc168141f6fc7c8d7afec",
+      "sha256_1_4_0": "4ecbfd9288388b004e5dea8e57294027483ca47c73efc168141f6fc7c8d7afec",
+      "identical": true
+    },
+    {
+      "file": "09.png",
+      "id": "seq-9",
+      "sha256_1_3_0": "32a508a8ed3c3344bbf688896e4466b9047c190d2522c83a84d788e81559da9d",
+      "sha256_1_4_0": "32a508a8ed3c3344bbf688896e4466b9047c190d2522c83a84d788e81559da9d",
+      "identical": true
+    },
+    {
+      "file": "10.png",
+      "id": "chr-1",
+      "sha256_1_3_0": "0fef1a385eb8a0abbba30a9560eb0cfdda838280896286408512dafffcfd77ea",
+      "sha256_1_4_0": "0fef1a385eb8a0abbba30a9560eb0cfdda838280896286408512dafffcfd77ea",
+      "identical": true
+    },
+    {
+      "file": "11.png",
+      "id": "chr-2",
+      "sha256_1_3_0": "28f7c8cac69aa76359d1602c1f601e538a3f0ea187a42124956e490a57ea0660",
+      "sha256_1_4_0": "28f7c8cac69aa76359d1602c1f601e538a3f0ea187a42124956e490a57ea0660",
+      "identical": true
+    },
+    {
+      "file": "12.png",
+      "id": "chr-3",
+      "sha256_1_3_0": "91907e05e3e5400db2d9eec3179503f68f3bbd22a9d18cb7a5ba1ff0c488df0f",
+      "sha256_1_4_0": "91907e05e3e5400db2d9eec3179503f68f3bbd22a9d18cb7a5ba1ff0c488df0f",
+      "identical": true
+    },
+    {
+      "file": "13.png",
+      "id": "chr-4",
+      "sha256_1_3_0": "68d868578646645fadb6b057a8159943e4c8fad811ef07bedf58f4fed5fc8dac",
+      "sha256_1_4_0": "68d868578646645fadb6b057a8159943e4c8fad811ef07bedf58f4fed5fc8dac",
+      "identical": true
+    },
+    {
+      "file": "14.png",
+      "id": "chr-5",
+      "sha256_1_3_0": "e507fef5a9120fa0578633c63c14e4339ef1f0b2062b836174c25d7fe19ff8fc",
+      "sha256_1_4_0": "e507fef5a9120fa0578633c63c14e4339ef1f0b2062b836174c25d7fe19ff8fc",
+      "identical": true
+    },
+    {
+      "file": "15.png",
+      "id": "chr-branch",
+      "sha256_1_3_0": "a2be35dec50543f185e338c5d905a206756bd79e48fe2fa9a66bdf5f28503e55",
+      "sha256_1_4_0": "a2be35dec50543f185e338c5d905a206756bd79e48fe2fa9a66bdf5f28503e55",
+      "identical": true
+    },
+    {
+      "file": "16.png",
+      "id": "map-a",
+      "sha256_1_3_0": "20f0b34fca94ac4c93ebbbcf96bd9e58452ea7d1deba71e5d4ec01a87919e37d",
+      "sha256_1_4_0": "20f0b34fca94ac4c93ebbbcf96bd9e58452ea7d1deba71e5d4ec01a87919e37d",
+      "identical": true
+    },
+    {
+      "file": "17.png",
+      "id": "map-b",
+      "sha256_1_3_0": "1ad3c4333e871a196a7cc02fdec34038e8f2af09c643e8eeed851a4d301c1a5c",
+      "sha256_1_4_0": "1ad3c4333e871a196a7cc02fdec34038e8f2af09c643e8eeed851a4d301c1a5c",
+      "identical": true
+    },
+    {
+      "file": "18.png",
+      "id": "map-c",
+      "sha256_1_3_0": "1dd7c3147614bde164b421c310252525c8603307cee563b7abf29261172cc860",
+      "sha256_1_4_0": "1dd7c3147614bde164b421c310252525c8603307cee563b7abf29261172cc860",
+      "identical": true
+    },
+    {
+      "file": "19.png",
+      "id": "pair",
+      "sha256_1_3_0": "d331297fb6a3c0b2f42fdde429082149ff2805ab8e07ac5bc2ee9020dae7804b",
+      "sha256_1_4_0": "d331297fb6a3c0b2f42fdde429082149ff2805ab8e07ac5bc2ee9020dae7804b",
+      "identical": true
+    },
+    {
+      "file": "20.png",
+      "id": "stress",
+      "sha256_1_3_0": "0f585e7f3f9581ab241a7ebf0dc1b59f7d4c9123e3215503facd174e4d7f509f",
+      "sha256_1_4_0": "0f585e7f3f9581ab241a7ebf0dc1b59f7d4c9123e3215503facd174e4d7f509f",
+      "identical": true
+    },
+    {
+      "file": "21.png",
+      "id": "overflow",
+      "sha256_1_3_0": "7aeb8f58609fd50a90c3049945e6219643ac0e10d845e1210f350c97bb99ba82",
+      "sha256_1_4_0": "7aeb8f58609fd50a90c3049945e6219643ac0e10d845e1210f350c97bb99ba82",
+      "identical": true
+    },
+    {
+      "file": "22.png",
+      "id": "seq-4-parchemin",
+      "sha256_1_3_0": "f47826334b293361a627a78a799403baeb71a9812652a547bdb4fff7d62370e4",
+      "sha256_1_4_0": "f47826334b293361a627a78a799403baeb71a9812652a547bdb4fff7d62370e4",
+      "identical": true
+    },
+    {
+      "file": "23.png",
+      "id": "chr-3-parchemin",
+      "sha256_1_3_0": "a36e905436e0113297b787978aeaf727b7afbc040080952ca30090b63f588184",
+      "sha256_1_4_0": "a36e905436e0113297b787978aeaf727b7afbc040080952ca30090b63f588184",
+      "identical": true
+    },
+    {
+      "file": "24.png",
+      "id": "map-c-parchemin",
+      "sha256_1_3_0": "e2e6b67ea93bed64dd7bf0e7bec975cbb2e2d221a5d4c24185eed57acff750cc",
+      "sha256_1_4_0": "e2e6b67ea93bed64dd7bf0e7bec975cbb2e2d221a5d4c24185eed57acff750cc",
+      "identical": true
+    },
+    {
+      "file": "25.png",
+      "id": "seq-9-parchemin",
+      "sha256_1_3_0": "07c7fecf1460465b25f640eb3624a8da9f94b58773b61e744d31289b3c99b0a3",
+      "sha256_1_4_0": "07c7fecf1460465b25f640eb3624a8da9f94b58773b61e744d31289b3c99b0a3",
+      "identical": true
+    },
+    {
+      "file": "26.png",
+      "id": "map-fula",
+      "sha256_1_3_0": "52edbf00abb5e72a8853688c795d59e4e98f6e22d69850df8734d5ce93be4d1a",
+      "sha256_1_4_0": "52edbf00abb5e72a8853688c795d59e4e98f6e22d69850df8734d5ce93be4d1a",
+      "identical": true
+    },
+    {
+      "file": "27.png",
+      "id": "map-fula-region",
+      "sha256_1_3_0": "1c67cbb80987761565bf363989c2caa25507332fcc6565b973347947801024fb",
+      "sha256_1_4_0": "1c67cbb80987761565bf363989c2caa25507332fcc6565b973347947801024fb",
+      "identical": true
+    },
+    {
+      "file": "28.png",
+      "id": "map-fula-parchemin",
+      "sha256_1_3_0": "c6a23be368040adc5495cd55f23ad258e454e43caa6979e52df752efda446492",
+      "sha256_1_4_0": "c6a23be368040adc5495cd55f23ad258e454e43caa6979e52df752efda446492",
+      "identical": true
+    },
+    {
+      "file": "29.png",
+      "id": "map-fula-nombre",
+      "sha256_1_3_0": "4ecf8574c6ddc54d56e3ceaaf44d1dd1bff8d3b56d74bd4b76c4a0f9af695c5d",
+      "sha256_1_4_0": "4ecf8574c6ddc54d56e3ceaaf44d1dd1bff8d3b56d74bd4b76c4a0f9af695c5d",
+      "identical": true
+    },
+    {
+      "file": "30.png",
+      "id": "map-fula-nombre-region",
+      "sha256_1_3_0": "69ed0aa0d5a2d6411c2bf099f6166b434d253da1e74e7497587050adc156d041",
+      "sha256_1_4_0": "69ed0aa0d5a2d6411c2bf099f6166b434d253da1e74e7497587050adc156d041",
+      "identical": true
+    },
+    {
+      "file": "31.png",
+      "id": "map-fula-part",
+      "sha256_1_3_0": "ba6f615f1eed922982673ba92d2b91e159812c447b05e0ad18044b7ef534ed2b",
+      "sha256_1_4_0": "ba6f615f1eed922982673ba92d2b91e159812c447b05e0ad18044b7ef534ed2b",
+      "identical": true
+    },
+    {
+      "file": "32.png",
+      "id": "atlas-1880",
+      "sha256_1_3_0": "02f529c33cb832a966f7f0e096f30f19b781964caa410bd856b306d75a959264",
+      "sha256_1_4_0": "02f529c33cb832a966f7f0e096f30f19b781964caa410bd856b306d75a959264",
+      "identical": true
+    },
+    {
+      "file": "33.png",
+      "id": "atlas-1914",
+      "sha256_1_3_0": "af87dc3389048dac4b035ec68bce8d69a1fcf8dc060e2e47b3c597a2303dcd6c",
+      "sha256_1_4_0": "af87dc3389048dac4b035ec68bce8d69a1fcf8dc060e2e47b3c597a2303dcd6c",
+      "identical": true
+    },
+    {
+      "file": "34.png",
+      "id": "atlas-independances",
+      "sha256_1_3_0": "db8a8a0444d6af43f86a646fef9b3137573667cece83606e4600a92c5094fae3",
+      "sha256_1_4_0": "db8a8a0444d6af43f86a646fef9b3137573667cece83606e4600a92c5094fae3",
+      "identical": true
+    },
+    {
+      "file": "35.png",
+      "id": "atlas-1500",
+      "sha256_1_3_0": "9473cca3440e1380186acdc159cd2bd537cfa7ae92ed4999bb5b1ce96c2ae5fb",
+      "sha256_1_4_0": "9473cca3440e1380186acdc159cd2bd537cfa7ae92ed4999bb5b1ce96c2ae5fb",
+      "identical": true
+    },
+    {
+      "file": "36.png",
+      "id": "atlas-1880-parchemin",
+      "sha256_1_3_0": "6b88259eead1d4c76151aa919ba71be1b52e5e68f9109da7a5e608216cbb582b",
+      "sha256_1_4_0": "6b88259eead1d4c76151aa919ba71be1b52e5e68f9109da7a5e608216cbb582b",
+      "identical": true
+    },
+    {
+      "file": "37.png",
+      "id": "atlas-capacite-45",
+      "sha256_1_3_0": "b14f94a9416bb13f6fbaf83d929adef121c3853192cfa35c1b4c8e1654edef68",
+      "sha256_1_4_0": "b14f94a9416bb13f6fbaf83d929adef121c3853192cfa35c1b4c8e1654edef68",
+      "identical": true
+    },
+    {
+      "file": "38.png",
+      "id": "atlas-proto-collisions",
+      "sha256_1_3_0": "79af7f88c6755e84111b72e8d5a050acf0e6a41c9fdeee53fdcb7d1f941d610f",
+      "sha256_1_4_0": "79af7f88c6755e84111b72e8d5a050acf0e6a41c9fdeee53fdcb7d1f941d610f",
+      "identical": true
+    },
+    {
+      "file": "39.png",
+      "id": "serie-pays-01",
+      "sha256_1_3_0": "c54498b1f812895f61f1930293df1fc8caf26662b3f42dcf0b1d652e822c8586",
+      "sha256_1_4_0": "c54498b1f812895f61f1930293df1fc8caf26662b3f42dcf0b1d652e822c8586",
+      "identical": true
+    },
+    {
+      "file": "40.png",
+      "id": "serie-pays-02",
+      "sha256_1_3_0": "694fff77a0cb8eeee08591f45d8bae7a274d3b28fea824a11c86f472edc74caf",
+      "sha256_1_4_0": "694fff77a0cb8eeee08591f45d8bae7a274d3b28fea824a11c86f472edc74caf",
+      "identical": true
+    },
+    {
+      "file": "41.png",
+      "id": "serie-pays-03",
+      "sha256_1_3_0": "717aed6fea30d3dba6123c751fdfabe6e867dfe5eccc945feed9a4be23a58678",
+      "sha256_1_4_0": "717aed6fea30d3dba6123c751fdfabe6e867dfe5eccc945feed9a4be23a58678",
+      "identical": true
+    },
+    {
+      "file": "42.png",
+      "id": "serie-pays-04",
+      "sha256_1_3_0": "32377fbd64a2c0134360a0547aeb6b245b5d4b6be1b92a99ae46555320a9d2dc",
+      "sha256_1_4_0": "32377fbd64a2c0134360a0547aeb6b245b5d4b6be1b92a99ae46555320a9d2dc",
+      "identical": true
+    },
+    {
+      "file": "43.png",
+      "id": "serie-pays-05",
+      "sha256_1_3_0": "b9adf803de8b9657ba6fa3b161d7c8fa531e4e2aa5c6bdb8987e6a689eb7e972",
+      "sha256_1_4_0": "b9adf803de8b9657ba6fa3b161d7c8fa531e4e2aa5c6bdb8987e6a689eb7e972",
+      "identical": true
+    },
+    {
+      "file": "44.png",
+      "id": "serie-pays-06",
+      "sha256_1_3_0": "0a37e3f10122120a97d4bc4336b0c89c53fcc6134a4115a8206ad96492bfd90c",
+      "sha256_1_4_0": "0a37e3f10122120a97d4bc4336b0c89c53fcc6134a4115a8206ad96492bfd90c",
+      "identical": true
+    },
+    {
+      "file": "45.png",
+      "id": "serie-pays-07",
+      "sha256_1_3_0": "dc1a39922abfc7399bdf942dfb6a9c1719bef09e7fa0a5a0a355cce8b53722ae",
+      "sha256_1_4_0": "dc1a39922abfc7399bdf942dfb6a9c1719bef09e7fa0a5a0a355cce8b53722ae",
+      "identical": true
+    },
+    {
+      "file": "46.png",
+      "id": "serie-nom-recu-01",
+      "sha256_1_3_0": "710a7adbf4a1b091924962e6e95f0449d8733cd712691a504a7ca12313ec527e",
+      "sha256_1_4_0": "710a7adbf4a1b091924962e6e95f0449d8733cd712691a504a7ca12313ec527e",
+      "identical": true
+    },
+    {
+      "file": "47.png",
+      "id": "serie-nom-recu-02",
+      "sha256_1_3_0": "b024f624227101447e51f21079548d36767176e4ecf95b98b5f549a11b17ce09",
+      "sha256_1_4_0": "b024f624227101447e51f21079548d36767176e4ecf95b98b5f549a11b17ce09",
+      "identical": true
+    },
+    {
+      "file": "48.png",
+      "id": "serie-nom-recu-03",
+      "sha256_1_3_0": "a5731a3b888deabb7dad02aff1c928b7b85892cfc99ef61e6bc79372d8670281",
+      "sha256_1_4_0": "a5731a3b888deabb7dad02aff1c928b7b85892cfc99ef61e6bc79372d8670281",
+      "identical": true
+    },
+    {
+      "file": "49.png",
+      "id": "serie-nom-recu-04",
+      "sha256_1_3_0": "d8e124cce5c51878b068bbb26b9808ef9f28e8b982c6f648c39c32f2d626ea33",
+      "sha256_1_4_0": "d8e124cce5c51878b068bbb26b9808ef9f28e8b982c6f648c39c32f2d626ea33",
+      "identical": true
+    },
+    {
+      "file": "50.png",
+      "id": "serie-nom-recu-05",
+      "sha256_1_3_0": "527c846317b456a641327d9c64818028025133282a6061eb85ecec7c80e08041",
+      "sha256_1_4_0": "527c846317b456a641327d9c64818028025133282a6061eb85ecec7c80e08041",
+      "identical": true
+    },
+    {
+      "file": "51.png",
+      "id": "serie-nom-recu-06",
+      "sha256_1_3_0": "1ac852eaa40619e1ac46470bf320e15066ed825b55d6672dbf1945c3ebb61ab8",
+      "sha256_1_4_0": "1ac852eaa40619e1ac46470bf320e15066ed825b55d6672dbf1945c3ebb61ab8",
+      "identical": true
+    },
+    {
+      "file": "52.png",
+      "id": "serie-nom-recu-07",
+      "sha256_1_3_0": "7a064489c3011c8f4c5c4ac2ac20a176ce2031d5dc517af5bfdf4b4c5308e1a2",
+      "sha256_1_4_0": "7a064489c3011c8f4c5c4ac2ac20a176ce2031d5dc517af5bfdf4b4c5308e1a2",
+      "identical": true
+    },
+    {
+      "file": "53.png",
+      "id": "serie-nom-recu-08",
+      "sha256_1_3_0": "31fd70df5c29af3e582808465a32a6c2858dc1eddadff633cc8b74b4002da037",
+      "sha256_1_4_0": "31fd70df5c29af3e582808465a32a6c2858dc1eddadff633cc8b74b4002da037",
+      "identical": true
+    },
+    {
+      "file": "54.png",
+      "id": "serie-nom-famille-01",
+      "sha256_1_3_0": "7553858ed6c977ece2cdb031b1a1f64f361b15ca93465ef23eafae8211320730",
+      "sha256_1_4_0": "7553858ed6c977ece2cdb031b1a1f64f361b15ca93465ef23eafae8211320730",
+      "identical": true
+    },
+    {
+      "file": "55.png",
+      "id": "serie-nom-famille-02",
+      "sha256_1_3_0": "f45395f2c932c12b8b47f87e267e12d90a7408fc34b1d7830cfb9889671d7de0",
+      "sha256_1_4_0": "f45395f2c932c12b8b47f87e267e12d90a7408fc34b1d7830cfb9889671d7de0",
+      "identical": true
+    },
+    {
+      "file": "56.png",
+      "id": "serie-nom-famille-03",
+      "sha256_1_3_0": "5bfd754ea6c3195ab6cc335641199e8a08747f54e8f93f1eda4bbc42893b998c",
+      "sha256_1_4_0": "5bfd754ea6c3195ab6cc335641199e8a08747f54e8f93f1eda4bbc42893b998c",
+      "identical": true
+    },
+    {
+      "file": "57.png",
+      "id": "serie-nom-famille-04",
+      "sha256_1_3_0": "f3d4676790509bb08a6c3a64524768ac7f3f997e1370ebaef78e131571e98c69",
+      "sha256_1_4_0": "f3d4676790509bb08a6c3a64524768ac7f3f997e1370ebaef78e131571e98c69",
+      "identical": true
+    },
+    {
+      "file": "58.png",
+      "id": "serie-nom-famille-05",
+      "sha256_1_3_0": "a55bc3117ad07bf29966da48f74ca173d40884d13d278dd956fbec46e60b0ed2",
+      "sha256_1_4_0": "a55bc3117ad07bf29966da48f74ca173d40884d13d278dd956fbec46e60b0ed2",
+      "identical": true
+    },
+    {
+      "file": "59.png",
+      "id": "serie-nom-famille-06",
+      "sha256_1_3_0": "8203ae953370cf078ee461f8988ef81b582fff335ffdc1dd6d5314777b383338",
+      "sha256_1_4_0": "8203ae953370cf078ee461f8988ef81b582fff335ffdc1dd6d5314777b383338",
+      "identical": true
+    },
+    {
+      "file": "60.png",
+      "id": "serie-nom-famille-07",
+      "sha256_1_3_0": "f7f9e183f3bd26453334e00ab378df12ef378035375a33ecfcc73dabb5f3cfd8",
+      "sha256_1_4_0": "f7f9e183f3bd26453334e00ab378df12ef378035375a33ecfcc73dabb5f3cfd8",
+      "identical": true
+    },
+    {
+      "file": "61.png",
+      "id": "serie-mots-01",
+      "sha256_1_3_0": "9b6117f77cbd6b0ea93293cba32802b9f30108f18dd5c9cddfa559c9d73a674c",
+      "sha256_1_4_0": "9b6117f77cbd6b0ea93293cba32802b9f30108f18dd5c9cddfa559c9d73a674c",
+      "identical": true
+    },
+    {
+      "file": "62.png",
+      "id": "serie-mots-02",
+      "sha256_1_3_0": "2bb50c54194a0739e32f61754bc53baeada329b7c3dd858732ac4eb2eded5b72",
+      "sha256_1_4_0": "2bb50c54194a0739e32f61754bc53baeada329b7c3dd858732ac4eb2eded5b72",
+      "identical": true
+    },
+    {
+      "file": "63.png",
+      "id": "serie-mots-03",
+      "sha256_1_3_0": "c7272c102a76a24a0df938077561a2d6d6a4f25dd4435560d2de486250ea6e91",
+      "sha256_1_4_0": "c7272c102a76a24a0df938077561a2d6d6a4f25dd4435560d2de486250ea6e91",
+      "identical": true
+    },
+    {
+      "file": "64.png",
+      "id": "serie-mots-04",
+      "sha256_1_3_0": "3d93796641e6b29680a6bfbcf37fce5bd29e03b9d2278d558629f5f0b85e91a9",
+      "sha256_1_4_0": "3d93796641e6b29680a6bfbcf37fce5bd29e03b9d2278d558629f5f0b85e91a9",
+      "identical": true
+    },
+    {
+      "file": "65.png",
+      "id": "serie-mots-05",
+      "sha256_1_3_0": "2f9bae81113f1c1551114dd41e4c7aa45406d985678e382593085a73676658b1",
+      "sha256_1_4_0": "2f9bae81113f1c1551114dd41e4c7aa45406d985678e382593085a73676658b1",
+      "identical": true
+    },
+    {
+      "file": "66.png",
+      "id": "serie-mots-06",
+      "sha256_1_3_0": "b0315a6e2a707f90e203c25e21516b92e54904b70d072ff84f9036909e909f22",
+      "sha256_1_4_0": "b0315a6e2a707f90e203c25e21516b92e54904b70d072ff84f9036909e909f22",
+      "identical": true
+    },
+    {
+      "file": "67.png",
+      "id": "serie-mots-07",
+      "sha256_1_3_0": "67284127b52292f24a30d5ebf35ed7c03c9115f5283e8bb78554320eb23f9459",
+      "sha256_1_4_0": "67284127b52292f24a30d5ebf35ed7c03c9115f5283e8bb78554320eb23f9459",
+      "identical": true
+    },
+    {
+      "file": "68.png",
+      "id": "serie-frontieres-01",
+      "sha256_1_3_0": "0ae80b541292622d251d0c2154849dad8c7019c824b818a241dc46e5e70ff25f",
+      "sha256_1_4_0": "0ae80b541292622d251d0c2154849dad8c7019c824b818a241dc46e5e70ff25f",
+      "identical": true
+    },
+    {
+      "file": "69.png",
+      "id": "serie-frontieres-02",
+      "sha256_1_3_0": "8e540f1bc9617cdbb4ddc7f0f2eafb4dd019551773a3a132571701af4b75fcb4",
+      "sha256_1_4_0": "8e540f1bc9617cdbb4ddc7f0f2eafb4dd019551773a3a132571701af4b75fcb4",
+      "identical": true
+    },
+    {
+      "file": "70.png",
+      "id": "serie-frontieres-03",
+      "sha256_1_3_0": "8d91f91ba6c7eaf223e9e569e2e61a01728fadb66597ac1cf35e77d57fa69baa",
+      "sha256_1_4_0": "8d91f91ba6c7eaf223e9e569e2e61a01728fadb66597ac1cf35e77d57fa69baa",
+      "identical": true
+    },
+    {
+      "file": "71.png",
+      "id": "serie-frontieres-04",
+      "sha256_1_3_0": "d27e5a60e7b9463bfba2f1dacc43bdf0969298bd74dc5380e34f97900ab416da",
+      "sha256_1_4_0": "d27e5a60e7b9463bfba2f1dacc43bdf0969298bd74dc5380e34f97900ab416da",
+      "identical": true
+    },
+    {
+      "file": "72.png",
+      "id": "serie-frontieres-05",
+      "sha256_1_3_0": "c4b908a03f4a492de0a54b4a77205f4232eb6edba30e90450b9e632a13be1a57",
+      "sha256_1_4_0": "c4b908a03f4a492de0a54b4a77205f4232eb6edba30e90450b9e632a13be1a57",
+      "identical": true
+    },
+    {
+      "file": "73.png",
+      "id": "serie-frontieres-06",
+      "sha256_1_3_0": "2c9f3bd0760a8938df4130746fc959e4a34c9d8e7617734f5509f67ca051f0d1",
+      "sha256_1_4_0": "2c9f3bd0760a8938df4130746fc959e4a34c9d8e7617734f5509f67ca051f0d1",
+      "identical": true
+    },
+    {
+      "file": "74.png",
+      "id": "serie-frontieres-07",
+      "sha256_1_3_0": "6b1f11379dbb03337e8f7c847abdca4786da3625aafa17263be749ac5b0c7345",
+      "sha256_1_4_0": "6b1f11379dbb03337e8f7c847abdca4786da3625aafa17263be749ac5b0c7345",
+      "identical": true
+    },
+    {
+      "file": "75.png",
+      "id": "serie-afrique-tout-01",
+      "sha256_1_3_0": "f65d902e09cec6444a4432250cc5fe6e9571a75971390fa96b9aefdec3a2ef50",
+      "sha256_1_4_0": "f65d902e09cec6444a4432250cc5fe6e9571a75971390fa96b9aefdec3a2ef50",
+      "identical": true
+    },
+    {
+      "file": "76.png",
+      "id": "serie-afrique-tout-02",
+      "sha256_1_3_0": "403a66ee12e64db55830a09985dd6682269ac1a51c9d7b4ee6562a442b580eb6",
+      "sha256_1_4_0": "403a66ee12e64db55830a09985dd6682269ac1a51c9d7b4ee6562a442b580eb6",
+      "identical": true
+    },
+    {
+      "file": "77.png",
+      "id": "serie-afrique-tout-03",
+      "sha256_1_3_0": "c1fecf1e2575d783404162a19fc90fcac540ec5ac6401a514831a5297e83c041",
+      "sha256_1_4_0": "c1fecf1e2575d783404162a19fc90fcac540ec5ac6401a514831a5297e83c041",
+      "identical": true
+    },
+    {
+      "file": "78.png",
+      "id": "serie-afrique-tout-04",
+      "sha256_1_3_0": "533f14c47073cafbbcc4d6e93a66826d5477395786bb31240bb659f95f7552e7",
+      "sha256_1_4_0": "533f14c47073cafbbcc4d6e93a66826d5477395786bb31240bb659f95f7552e7",
+      "identical": true
+    },
+    {
+      "file": "79.png",
+      "id": "serie-afrique-tout-05",
+      "sha256_1_3_0": "99744a1d5095efae9fd43496da12bced7a1517198b14bfc7e2e641d8927e4749",
+      "sha256_1_4_0": "99744a1d5095efae9fd43496da12bced7a1517198b14bfc7e2e641d8927e4749",
+      "identical": true
+    },
+    {
+      "file": "80.png",
+      "id": "serie-afrique-tout-06",
+      "sha256_1_3_0": "95ec9b4d70f112b430a4af4c12a584b9dff3d46ed3b62898027e52f9c44c2cf5",
+      "sha256_1_4_0": "95ec9b4d70f112b430a4af4c12a584b9dff3d46ed3b62898027e52f9c44c2cf5",
+      "identical": true
+    },
+    {
+      "file": "81.png",
+      "id": "serie-afrique-tout-07",
+      "sha256_1_3_0": "67ddc07efd517b05bbd5359391ecf5abfe79c06389cb05268e5359926b122663",
+      "sha256_1_4_0": "67ddc07efd517b05bbd5359391ecf5abfe79c06389cb05268e5359926b122663",
+      "identical": true
+    },
+    {
+      "file": "82.png",
+      "id": "serie-villes-01",
+      "sha256_1_3_0": "fc982e4592ceb42473016b665dcc1280e5af91d12b9c6639852e66bd7e7381c6",
+      "sha256_1_4_0": "fc982e4592ceb42473016b665dcc1280e5af91d12b9c6639852e66bd7e7381c6",
+      "identical": true
+    },
+    {
+      "file": "83.png",
+      "id": "serie-villes-02",
+      "sha256_1_3_0": "b61c10754ad8f974b3bc582d302fd8e247fbe7f77aa11d38ef24d7c4159ef6d5",
+      "sha256_1_4_0": "b61c10754ad8f974b3bc582d302fd8e247fbe7f77aa11d38ef24d7c4159ef6d5",
+      "identical": true
+    },
+    {
+      "file": "84.png",
+      "id": "serie-villes-03",
+      "sha256_1_3_0": "e13f69aa5ff3940e66784cea67bb36c78401832eb77ca64fc7eb526d18f9f060",
+      "sha256_1_4_0": "e13f69aa5ff3940e66784cea67bb36c78401832eb77ca64fc7eb526d18f9f060",
+      "identical": true
+    },
+    {
+      "file": "85.png",
+      "id": "serie-villes-04",
+      "sha256_1_3_0": "2e415df6e06688083f2ac28330f44473d793f077c8a034dd6bfd221519b59c1d",
+      "sha256_1_4_0": "2e415df6e06688083f2ac28330f44473d793f077c8a034dd6bfd221519b59c1d",
+      "identical": true
+    },
+    {
+      "file": "86.png",
+      "id": "serie-villes-05",
+      "sha256_1_3_0": "a0628f5df47b896d38e4fde200960bec7d1713aec01ebc3c05b8955f7a3ab15e",
+      "sha256_1_4_0": "a0628f5df47b896d38e4fde200960bec7d1713aec01ebc3c05b8955f7a3ab15e",
+      "identical": true
+    },
+    {
+      "file": "87.png",
+      "id": "serie-villes-06",
+      "sha256_1_3_0": "3fa6aac99e0d8e49e72892a14765b0819bf79489abb69258ed5a1efda011b17b",
+      "sha256_1_4_0": "3fa6aac99e0d8e49e72892a14765b0819bf79489abb69258ed5a1efda011b17b",
+      "identical": true
+    },
+    {
+      "file": "88.png",
+      "id": "serie-atlas-1880",
+      "sha256_1_3_0": "abfd3a50002e19cbc100834a20764102548aa04832c07da6610be69a4336d6cf",
+      "sha256_1_4_0": "abfd3a50002e19cbc100834a20764102548aa04832c07da6610be69a4336d6cf",
+      "identical": true
+    },
+    {
+      "file": "89.png",
+      "id": "serie-atlas-1914-parchemin",
+      "sha256_1_3_0": "f788aa217d70a7aa08e2dddf9f70808101e43f7f6b4ad89e4ce6a8f06d542227",
+      "sha256_1_4_0": "f788aa217d70a7aa08e2dddf9f70808101e43f7f6b4ad89e4ce6a8f06d542227",
+      "identical": true
+    }
+  ]
+}

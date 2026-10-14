@@ -1,4 +1,4 @@
-// Renders the series video (Cartes 1.3.0, layout B) frame by frame in the
+// Renders the series video (Cartes 1.4.0, full screen) frame by frame in the
 // pinned Chromium, then encodes it with the satellite video's FFmpeg step.
 // The cards come through the design system's own bundle, so fonts, inks and
 // wording match the carousel.
@@ -114,7 +114,9 @@ async function openSeriesRenderer(seq, { diagnose = false } = {}) {
       const state = seriesFrameState(seq, frame);
       const drawn = await page.evaluate((s) => window.drawFrame(s), state);
       if (frame === 0 || frame === last || state.subtitle?.opacity === 1) {
-        const problems = checkSeriesLayout(drawn.boxes);
+        // A demonstration only reports images too small for the frame: the
+        // library holds web renditions; a final video refuses them.
+        const problems = checkSeriesLayout(drawn.boxes, { demo: !!seq.demo });
         if (problems.length && !diagnose)
           throw new Error(`Layout at frame ${frame}: ${problems.join("; ")}`);
         drawn.problems = problems;
@@ -192,7 +194,7 @@ export async function encodeSeriesVideo(
     schema: 1,
     design: seq.design,
     designVersion: renderer.designVersion,
-    layout: "B",
+    layout: "full",
     width: WIDTH,
     height: HEIGHT,
     fps: FPS,
@@ -200,7 +202,7 @@ export async function encodeSeriesVideo(
     cards: seq.cards.map((c) => c.id),
     audio,
     demo: !!seq.demo,
-    // A diagnostic export lists the frames whose text left the safe zone.
+    // A diagnostic export lists the frames whose text left its band.
     ...(diagnose && { diagnostic: true, layoutProblems: problems }),
     // Mechanical export only: editorial approvals live in the checkpoint.
     productionReady: false,
