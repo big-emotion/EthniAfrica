@@ -9,7 +9,9 @@ import {
   firstSentence,
   groupAccountsBySourceFamily,
   nextStepTargets,
+  otherVoiceKinds,
 } from "@/lib/search/nameClosing";
+import { sourceKindFamily } from "@/lib/sources/sourceKindFamily";
 import { buildNameTimeline } from "@/lib/search/nameTimeline";
 import type { SearchResult } from "@/types/afrik-frontend";
 
@@ -58,6 +60,41 @@ describe("groupAccountsBySourceFamily — block 3, « Les sources parlent »", (
       );
       expect(group.sourceCount).toBe(titles.size);
     }
+  });
+});
+
+describe("otherVoiceKinds — the note under block 3", () => {
+  const kindsOf = (name: (typeof peul.names)[number]) =>
+    new Set(
+      name.tiles.flatMap((tile) =>
+        tile.accounts.flatMap((account) =>
+          account.sources.map((source) => source.source_kind)
+        )
+      )
+    );
+
+  // @req REQ-198
+  it("names only the kinds the other names cite and the open one does not", () => {
+    for (const timeline of [peul, lingala]) {
+      for (const open of timeline.names) {
+        const own = kindsOf(open);
+        const others = new Set(
+          timeline.names
+            .filter((name) => name !== open)
+            .flatMap((name) => [...kindsOf(name)])
+        );
+        for (const kind of otherVoiceKinds(timeline.names, open)) {
+          expect(own.has(kind)).toBe(false);
+          expect(others.has(kind)).toBe(true);
+          expect(sourceKindFamily(kind)).not.toBe("other");
+        }
+      }
+    }
+  });
+
+  // @req REQ-198
+  it("is silent for a subject with a single name", () => {
+    expect(otherVoiceKinds([peul.names[0]], peul.names[0])).toEqual([]);
   });
 });
 

@@ -24,7 +24,9 @@ import {
 } from "@/lib/search/nameTimeline";
 import type { SourceKindFamily } from "@/lib/sources/sourceKindFamily";
 import { cn } from "@/lib/utils";
+import type { SearchEntityType } from "@/types/afrik-frontend";
 import type { Language } from "@/types/shared";
+import type { SourceKind } from "@/types/sources";
 
 /**
  * The blocks brief 1 adds under the timeline (approved 2026-10-14; boards
@@ -95,6 +97,9 @@ export interface NameSourcesBlockProps {
   forms: string[];
   /** The first subject's block opens its first family, the others are folded. */
   open?: boolean;
+  /** Kinds of source only the subject's other names cite (see `otherVoiceKinds`). */
+  otherKinds?: readonly SourceKind[];
+  subjectType?: SearchEntityType;
   language: Language;
 }
 
@@ -105,6 +110,8 @@ export function NameSourcesBlock({
   name,
   forms,
   open = false,
+  otherKinds = [],
+  subjectType,
   language,
 }: NameSourcesBlockProps) {
   const headingId = useId();
@@ -255,6 +262,14 @@ export function NameSourcesBlock({
           </details>
         ))}
       </div>
+      {otherKinds.length > 0 ? (
+        <p
+          data-other-voices=""
+          className="text-afh-caption leading-[1.6] text-afh-text-soft"
+        >
+          {copy.otherVoices(subjectType, otherKinds)}
+        </p>
+      ) : null}
     </section>
   );
 }

@@ -11,6 +11,7 @@ import {
 } from "@/lib/sources/sourceKindFamily";
 import type { SearchEntityType, SearchResult } from "@/types/afrik-frontend";
 import type { Language } from "@/types/shared";
+import type { SourceKind } from "@/types/sources";
 
 /**
  * The blocks under the timeline (brief 1, boards in
@@ -56,6 +57,36 @@ export function groupAccountsBySourceFamily(
     );
     return [{ family, sourceCount: titles.size, accounts: backed }];
   });
+}
+
+/**
+ * The kinds of source the subject's other names cite and the open name does
+ * not, in the families' fixed order. Provenance markers (the « other »
+ * family) are not voices and are left out.
+ */
+// @req REQ-198
+export function otherVoiceKinds(
+  names: readonly TimelineName[],
+  open: TimelineName
+): SourceKind[] {
+  const kindsOf = (name: TimelineName) =>
+    name.tiles.flatMap((tile) =>
+      tile.accounts.flatMap((account) =>
+        account.sources.map((source) => source.source_kind as SourceKind)
+      )
+    );
+  const own = new Set(kindsOf(open));
+  const others = new Set(
+    names
+      .filter((name) => name !== open)
+      .flatMap(kindsOf)
+      .filter(
+        (kind) => kind && !own.has(kind) && sourceKindFamily(kind) !== "other"
+      )
+  );
+  return SOURCE_KIND_FAMILIES.flatMap((family) =>
+    [...others].filter((kind) => sourceKindFamily(kind) === family)
+  );
 }
 
 /** The first sentence of a summary: a reason line, not a paragraph. */

@@ -80,6 +80,43 @@ describe("NameSourcesBlock — « Les sources parlent »", () => {
   });
 });
 
+describe("NameSourcesBlock — the other names' voices", () => {
+  // @req REQ-198
+  it("says who else speaks for the subject's other names, as on the Peul board", () => {
+    const { container } = render(
+      <NameSourcesBlock
+        name={name}
+        forms={timeline.italicForms}
+        otherKinds={[
+          "linguistic_reference",
+          "press",
+          "intergovernmental",
+          "archive",
+        ]}
+        subjectType="people"
+        language="fr"
+      />
+    );
+
+    expect(container.querySelector("[data-other-voices]")?.textContent).toBe(
+      "Pour les autres noms de ce peuple, d’autres voix parlent aussi : des références linguistiques, des articles de presse, des organisations intergouvernementales et des archives. Choisissez un nom plus haut pour les lire."
+    );
+  });
+
+  // @req REQ-198
+  it("draws no note when no other name brings another voice", () => {
+    const { container } = render(
+      <NameSourcesBlock
+        name={name}
+        forms={timeline.italicForms}
+        language="fr"
+      />
+    );
+
+    expect(container.querySelector("[data-other-voices]")).toBeNull();
+  });
+});
+
 describe("NameClosingBand — silences, conviction, invitation", () => {
   const target = { type: "people", id: "PPL_FULA", name: "Peul" };
 

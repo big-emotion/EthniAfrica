@@ -4,6 +4,7 @@ import { Fragment, useState } from "react";
 
 import { getSearchEntityLabel } from "@/components/search/searchEntityAccent";
 import { NameSourcesBlock } from "@/components/search/timeline/NameClosing";
+import { otherVoiceKinds } from "@/lib/search/nameClosing";
 import { TileSourceMarker } from "@/components/search/timeline/TileSourceMarker";
 import { CHARTER_FOCUS_RING } from "@/components/ui/charter-motion";
 import type { NameHistory } from "@/lib/afrik/parsers/nameHistoryParser";
@@ -325,6 +326,8 @@ export function NameTimeline({
         name={name}
         forms={forms}
         open={sourcesOpen}
+        otherKinds={otherVoiceKinds(timeline.names, name)}
+        subjectType={subjectType}
         language={language}
       />
     </>

@@ -1,5 +1,7 @@
 import { aboutCopy } from "@/lib/i18n/copy/about";
+import type { SearchEntityType } from "@/types/afrik-frontend";
 import type { Language } from "@/types/shared";
+import type { SourceKind } from "@/types/sources";
 
 /**
  * The blocks under the timeline on the search result page (brief 1, approved
@@ -15,6 +17,14 @@ export interface NameClosingCopy {
   sourceCount: (count: number) => string;
   accountCount: (count: number) => string;
   undated: string;
+  /**
+   * The note under block 3 when the subject's other names cite kinds of
+   * source the open one does not: who else speaks, and where to read them.
+   */
+  otherVoices: (
+    subject: SearchEntityType,
+    kinds: readonly SourceKind[]
+  ) => string;
   closingTitle: string;
   silence: {
     noOral: (name: string) => string;
@@ -45,6 +55,37 @@ export interface NameClosingCopy {
 
 const about = aboutCopy.fr;
 
+/** Each kind of source as a voice, plural and with its article. */
+const VOICES_FR: Partial<Record<SourceKind, string>> = {
+  oral_tradition: "des traditions orales",
+  community: "des organisations communautaires",
+  academic: "des publications académiques",
+  linguistic_reference: "des références linguistiques",
+  encyclopedia: "des encyclopédies",
+  press: "des articles de presse",
+  government: "des sources gouvernementales",
+  intergovernmental: "des organisations intergouvernementales",
+  official_statistics: "des statistiques publiques",
+  ngo: "des organisations non gouvernementales",
+  archive: "des archives",
+  repository: "des dépôts documentaires",
+};
+
+const SUBJECT_FR: Partial<Record<SearchEntityType, string>> = {
+  people: "de ce peuple",
+  country: "de ce pays",
+  language: "de cette langue",
+  languageFamily: "de cette famille de langues",
+  patronyme: "de ce nom de famille",
+  place: "de ce lieu",
+};
+
+function joinFr(items: readonly string[]): string {
+  return items.length < 2
+    ? (items[0] ?? "")
+    : `${items.slice(0, -1).join(", ")} et ${items[items.length - 1]}`;
+}
+
 // @req REQ-198
 export const nameClosingCopy: Record<Language, NameClosingCopy> = {
   fr: {
@@ -58,6 +99,11 @@ export const nameClosingCopy: Record<Language, NameClosingCopy> = {
     sourceCount: (count) => `${count} ${count === 1 ? "source" : "sources"}`,
     accountCount: (count) => `${count} ${count === 1 ? "récit" : "récits"}`,
     undated: "Date inconnue",
+    otherVoices: (subject, kinds) => {
+      const voices = joinFr(kinds.flatMap((kind) => VOICES_FR[kind] ?? []));
+      const of = SUBJECT_FR[subject];
+      return `Pour les autres noms${of ? ` ${of}` : ""}, d’autres voix parlent aussi : ${voices}. Choisissez un nom plus haut pour les lire.`;
+    },
     closingTitle: "Ce que nous ne savons pas encore",
     silence: {
       noOral: (name) =>
