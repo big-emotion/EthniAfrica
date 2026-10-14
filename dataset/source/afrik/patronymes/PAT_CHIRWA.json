@@ -23,7 +23,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -88,6 +88,10 @@
     {
       "fieldPath": "homonyms",
       "reason": "la recherche web combinant « Chirwa », « Tumbuka », « Chewa », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de la page Forebears dédiée, n'ont pas établi de lignée homonyme d'origine distincte."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Chirwa est un nom de famille : aucune source consultée n'en fait un nom de clan. Le modèle n'a pas de case pour un nom de famille héréditaire de ce genre : la fiche garde la case des noms de clan, la plus proche, avec la lignée pour unité, sans dire que Chirwa est un clan."
     },
     {
       "fieldPath": "transmissionMode",

@@ -85,6 +85,10 @@
       "reason": "la recherche web combinant « Byaruhanga », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », qui comprenait le terme « homonyme », et la lecture de « UPDF Bids Farewell To Brig Gen Winston Byaruhanga », n'ont pas établi de lignée homonyme d'origine distincte."
     },
     {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée ne dit si Byaruhanga est un nom de clan, un nom de famille ou un nom de personne. Le modèle demande une case : la fiche garde celle des noms de clan, sans dire que Byaruhanga est un clan."
+    },
+    {
       "fieldPath": "transmissionMode",
       "reason": "la recherche web combinant « Byaruhanga », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage » et la lecture de « UPDF Bids Farewell To Brig Gen Winston Byaruhanga » n'ont établi aucune règle propre à Byaruhanga permettant de choisir entre transmission patrilinéaire, matrilinéaire, bilatérale, élective ou non héréditaire ; le mode reste donc « other »."
     }

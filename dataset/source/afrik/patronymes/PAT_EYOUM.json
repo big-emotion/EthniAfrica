@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "lineage",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -74,6 +74,10 @@
     {
       "fieldPath": "homonyms",
       "reason": "la recherche web combinant « Eyoum », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », qui comprenait le terme « homonyme », et la lecture de « PeupleSawa.com — Profils E », n'ont pas établi de lignée homonyme d'origine distincte."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Eyoum est un nom de famille : aucune source consultée n'en fait un nom de clan. Le modèle n'a pas de case pour un nom de famille héréditaire de ce genre : la fiche garde la case des noms de clan, la plus proche, avec la lignée pour unité, sans dire que Eyoum est un clan."
     },
     {
       "fieldPath": "transmissionMode",
