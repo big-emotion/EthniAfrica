@@ -108,5 +108,254 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les mêmes recherches n'ont pas permis de déterminer si « Belkacem » désigne un individu, une lignée, un clan, une caste, une classe d'âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Belkacem est un nom de famille d'Algérie formé à partir d'un prénom d'homme, que l'on écrit aussi Belkassem, Belqacem ou Bilcassem. Les études lues le rattachent à la racine arabe QSM et à Aboulqâsim, « père de Kacem », ou le lisent « fils de Kacem ». On ne sait pas avec certitude lequel de ces sens est juste ; nous présentons plus bas les explications relevées.",
+    "names": [
+      {
+        "nameText": "Belkacem",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un prénom d'homme devenu nom de famille, noté dès 1862 sous la forme Bel-Kassem.",
+        "periodLabel": "Noté dès 1862 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "Décrit en 2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Belkacem désigne un prénom d'homme, que l'étude des prénoms inscrits à l'état civil d'Aokas, en Kabylie, relève entre 1962 et 1970. On ne sait pas avec certitude ce qu'il veut dire : l'étude en donne deux lectures, présentées séparément.",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Étude anthroponymique de la commune d'Aokas de 1962 à 1970",
+                "author": "Lynda Salhi",
+                "year": 2015,
+                "url": "https://bucket.theses-algerie.com/files/repositories-dz/1532970119996190.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 44",
+                "notes": "Mémoire de master en sciences du langage, Université Abderrahmane Mira de Béjaïa, 2014-2015 ; texte intégral lu, pages numérotées de l'imprimé. Il étudie les prénoms inscrits à l'état civil d'Aokas de 1962 à 1970. Page 44 : « La particule « bel » est une altération phonétique de « ben », « fils de » » ; « Belkacem (Belqacem) : est un prénom masculin de la racine arabe [QSM] qui signifie « diviser, partager, répartir, distribuer ». Ce prénom selon le dictionnaire Dallet vient de « aboulqâsim, nom de Mohammed, ainsi appelé à cause de son fils Qâsim », Belkacem ou Aboulkacem : signifie donc « père de Kacem » ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "Proposée en 2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Belkacem viendrait de la racine arabe QSM, « diviser, partager », par Aboulqâsim, un nom de Mohammed, appelé ainsi à cause de son fils Qâsim, et voudrait dire « père de Kacem », selon Lynda Salhi, qui cite le dictionnaire kabyle-français de Dallet.",
+            "hypothesisGroup": "origine du nom Belkacem",
+            "sources": [
+              {
+                "title": "Étude anthroponymique de la commune d'Aokas de 1962 à 1970",
+                "author": "Lynda Salhi",
+                "year": 2015,
+                "url": "https://bucket.theses-algerie.com/files/repositories-dz/1532970119996190.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 44",
+                "notes": "Mémoire de master en sciences du langage, Université Abderrahmane Mira de Béjaïa, 2014-2015 ; texte intégral lu, pages numérotées de l'imprimé. Il étudie les prénoms inscrits à l'état civil d'Aokas de 1962 à 1970. Page 44 : « La particule « bel » est une altération phonétique de « ben », « fils de » » ; « Belkacem (Belqacem) : est un prénom masculin de la racine arabe [QSM] qui signifie « diviser, partager, répartir, distribuer ». Ce prénom selon le dictionnaire Dallet vient de « aboulqâsim, nom de Mohammed, ainsi appelé à cause de son fils Qâsim », Belkacem ou Aboulkacem : signifie donc « père de Kacem » ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "Proposée en 2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Belkacem se lirait « fils de Kacem » : l'étude des prénoms d'Aokas le range parmi les appellations de parenté et fait de bel une forme de ben, « fils de », selon Lynda Salhi.",
+            "hypothesisGroup": "origine du nom Belkacem",
+            "sources": [
+              {
+                "title": "Étude anthroponymique de la commune d'Aokas de 1962 à 1970",
+                "author": "Lynda Salhi",
+                "year": 2015,
+                "url": "https://bucket.theses-algerie.com/files/repositories-dz/1532970119996190.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 62",
+                "notes": "Mémoire de master en sciences du langage, Université Abderrahmane Mira de Béjaïa, 2014-2015 ; texte intégral lu, pages numérotées de l'imprimé. Il étudie les prénoms inscrits à l'état civil d'Aokas de 1962 à 1970. Page 62, parmi les appellations de parenté relevées à l'état civil d'Aokas : « Belkacem, « fils de Qacem » ». L'étude donne donc deux lectures du même prénom, « père de Kacem » (p. 44) et « fils de Qacem » (p. 62), sans les départager. Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Étude anthroponymique de la commune d'Aokas de 1962 à 1970",
+                "author": "Lynda Salhi",
+                "year": 2015,
+                "url": "https://bucket.theses-algerie.com/files/repositories-dz/1532970119996190.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 44",
+                "notes": "Mémoire de master en sciences du langage, Université Abderrahmane Mira de Béjaïa, 2014-2015 ; texte intégral lu, pages numérotées de l'imprimé. Il étudie les prénoms inscrits à l'état civil d'Aokas de 1962 à 1970. Page 44 : « La particule « bel » est une altération phonétique de « ben », « fils de » » ; « Belkacem (Belqacem) : est un prénom masculin de la racine arabe [QSM] qui signifie « diviser, partager, répartir, distribuer ». Ce prénom selon le dictionnaire Dallet vient de « aboulqâsim, nom de Mohammed, ainsi appelé à cause de son fils Qâsim », Belkacem ou Aboulkacem : signifie donc « père de Kacem » ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1882,
+              "to": 1882,
+              "label": "Loi du 23 mars 1882"
+            },
+            "era": "colonial",
+            "statement": "Le nom Belkacem relève, comme tout nom de famille algérien, de l'état civil que l'administration française impose aux Algériens musulmans par la loi du 23 mars 1882 : chaque famille doit alors porter un nom unique, transmis de génération en génération, là où l'on se nommait par la filiation. Les sources lues ne disent pas quand les familles Belkacem ont reçu ce nom.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Qui es-tu ? J'ai été dit. De la destruction de la filiation dans l'État civil d'Algérie ou éléments d'un onomacide sémantique",
+                "author": "Farid Benramdane",
+                "year": 2000,
+                "url": "https://insaniyat.crasc.dz/en/article/qui-es-tu-jai-ete-dit-de-la-destruction-de-la-filiation-dans-letat-civil-dalgerie-ou-elements-dun-onomacide-semantique",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 79-87 (section sur les patronymes algériens)",
+                "notes": "Insaniyat, 4(10), 2000, p. 79-87, lu en ligne en texte intégral ; la version en ligne ne marque pas les pages de l'imprimé. L'auteur écrit que l'état civil algérien est né de la loi du 23 mars 1882, précédée d'une loi de 1873, qui a imposé « l'obligation et la généralisation du patronyme » là où l'on se nommait par la filiation (ism, alam, kunya, laqab, nisba) ; il cite Charles-Robert Ageron sur les commissaires chargés d'établir cet état civil. Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Étude étymo-sémantique des patronymes de la région de Touggourt",
+                "author": "Siham Messaoudi",
+                "year": 2021,
+                "url": "https://dspace.univ-ouargla.dz/jspui/bitstream/123456789/32616/1/%25D9%2585%25D8%25B3%25D8%25B9%25D9%2588%25D8%25AF%25D9%258A%2520%25D8%25B3%25D9%2587%25D8%25A7%25D9%2585_compressed.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18",
+                "notes": "Mémoire de master en sciences du langage, Université Kasdi Merbah Ouargla, 2020-2021, dirigé par Nadjah Henka ; texte intégral lu dans le fichier déposé par l'université (pages numérotées de l'imprimé). L'autrice a choisi 215 noms de famille représentatifs dans le registre de l'état civil de la mairie de Touggourt (p. 3). Page 18 : « la présence coloniale a bouleversé le système dénominatif qui est passé d'une désignation par filiation lignagère à plusieurs éléments à un système patronymique à un seul élément », imposé « après avoir instauré l'état civil des indigènes musulmans en 1882 » ; l'introduction (p. 2) date pourtant l'état civil de 1871, et le projet suit la loi de 1882 que donne Benramdane. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1862,
+              "to": 1862,
+              "label": "Publié en 1862"
+            },
+            "era": "colonial",
+            "statement": "Le nom Belkacem apparaît par écrit sous la forme Bel-Kassem chez le docteur Bertherand, qui parle, à propos de la campagne de 1854, du « Bach-Aghalick de Bel-Kassem », un commandement de l'est de la province d'Alger. C'est la plus ancienne trace de ce nom que le projet connaît ; elle nomme un homme par son prénom, non une famille, et le nom existait déjà avant elle.",
+            "formAsWritten": "Bel-Kassem",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Campagnes de Kabylie : histoire médico-chirurgicale des expéditions de 1854, 1856 et 1857",
+                "author": "Alphonse Bertherand",
+                "year": 1862,
+                "url": "https://archive.org/details/campagnesdekabyl00bert",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 5",
+                "notes": "Docteur A. Bertherand, médecin en chef de l'armée d'expédition ; exemplaire numérisé d'archive.org. Page 5, première page du chapitre sur la campagne de 1854 (pagination reconstituée d'après les pages suivantes, dont les en-têtes sont numérotés) : « Les difficultés politiques suscitées dans l'Est de la province d'Alger, autour du Bach-Aghalick de Bel-Kassem, par les intrigues de Bou-Baghla, décidèrent le Gouverneur-Général comte Randon à se porter, vers la fin de mai 1854, au sein de ces turbulentes et belliqueuses contrées ». Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Belqacem",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie Belqacem, notée dans une étude sur les prénoms d'Aokas.",
+        "periodLabel": "Décrit en 2015",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 2015,
+              "to": 2015,
+              "label": "Décrit en 2015"
+            },
+            "era": "modern",
+            "statement": "Le nom Belqacem est une autre graphie du nom Belkacem : l'étude des prénoms d'Aokas de Lynda Salhi écrit « Belkacem (Belqacem) » et le décrit comme un prénom d'homme.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Étude anthroponymique de la commune d'Aokas de 1962 à 1970",
+                "author": "Lynda Salhi",
+                "year": 2015,
+                "url": "https://bucket.theses-algerie.com/files/repositories-dz/1532970119996190.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 44",
+                "notes": "Mémoire de master en sciences du langage, Université Abderrahmane Mira de Béjaïa, 2014-2015 ; texte intégral lu, pages numérotées de l'imprimé. Il étudie les prénoms inscrits à l'état civil d'Aokas de 1962 à 1970. Page 44 : « La particule « bel » est une altération phonétique de « ben », « fils de » » ; « Belkacem (Belqacem) : est un prénom masculin de la racine arabe [QSM] qui signifie « diviser, partager, répartir, distribuer ». Ce prénom selon le dictionnaire Dallet vient de « aboulqâsim, nom de Mohammed, ainsi appelé à cause de son fils Qâsim », Belkacem ou Aboulkacem : signifie donc « père de Kacem » ». Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bel Kassem",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La graphie des textes français de 1872, qui nomment des villages « Aït Bel Kassem ».",
+        "periodLabel": "Écrit en 1872",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1872,
+              "to": 1872,
+              "label": "Décrit en 1872"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bel Kassem est la graphie que Hanoteau et Letourneux donnent au prénom dans des noms de villages kabyles, « Aït Bel Kassem », qu'ils traduisent « les enfants de Bel Kassem ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La Kabylie et les coutumes kabyles, tome I",
+                "author": "Adolphe Hanoteau et Aristide Letourneux",
+                "year": 1872,
+                "url": "https://archive.org/details/bub_gb_8jgbAAAAYAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 259 et p. 261",
+                "notes": "Paris, 1872 ; exemplaire numérisé d'archive.org (tome I), page lue sur l'image de la page imprimée. Page 259, tribu des Aït Aïssa ou Mimoun : « Aït Bel Kassem (enfants de Bel Kassem) » ; page 261, tribu des Aït Adas : « Aït Bel Kassem (les enfants de Bel Kassem) ». Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Bilcassem",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Une forme proche, relevée dans des actes kabyles traduits en 1864.",
+        "periodLabel": "Écrit en 1864",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1864,
+              "to": 1864,
+              "label": "Publié en 1864"
+            },
+            "era": "colonial",
+            "statement": "Le nom Bilcassem est une forme proche du nom Belkacem, relevée dans des actes kabyles que le docteur Leclerc traduit : on s'y nomme par la filiation, comme dans « Mohammed ben Bilcassem ben Ali ben Adar ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Une mission médicale en Kabylie",
+                "author": "Lucien Leclerc",
+                "year": 1864,
+                "url": "https://archive.org/details/unemissionmdica01leclgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 79",
+                "notes": "Docteur L. Leclerc, médecin-major, chargé en 1857, après la soumission de la Grande Kabylie, de soigner les habitants du Djurdjura depuis Fort-Napoléon ; Paris, J.-B. Baillière ; exemplaire numérisé d'archive.org, dont la notice donne 1864. Page 79 : acte de vente de Tala Hamou (Kabylie), dont les vendeurs sont « Mohammed ben Bilcassem ben Ali ben Adar et son frère Sliman », puis un inventaire après décès au nom de « Ali ben Bilcassem ben Mohammed Amar » ; les actes ne sont pas datés sur cette page. Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

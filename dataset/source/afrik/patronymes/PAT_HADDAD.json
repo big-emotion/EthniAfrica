@@ -118,5 +118,164 @@
       "fieldPath": "designatedSocialUnit",
       "reason": "Les mêmes recherches n'ont pas permis de déterminer si « Haddad » désigne un individu, une lignée, un clan, une caste, une classe d'âge ou un établissement dans le contexte précis de la fiche."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Haddad est un nom de métier arabe : haddad veut dire « forgeron ». En kabyle, on dit aussi Ahaddad, au pluriel Ihaddaden, « les forgerons ». Le mot est écrit dès 1864 dans le nom d'un village kabyle. Les sources lues ne disent pas si toutes les familles Haddad descendent de forgerons : un nom de métier peut venir de plusieurs lignées.",
+    "names": [
+      {
+        "nameText": "Haddad",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de métier arabe, « forgeron », écrit dès 1864 dans un nom de village kabyle.",
+        "periodLabel": "Noté dès 1864 ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 2021,
+              "to": 2022,
+              "label": "Décrit en 2021 et en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Haddad est un nom de métier arabe : haddad veut dire « forgeron », selon l'étude des noms de Touggourt de Siham Messaoudi, et Ouerdia Yermèche le range, avec Ihaddaden, parmi les noms de métiers qui veulent dire « forgeron, ferronnier, ferrailleur ».",
+            "aspect": "meaning",
+            "sources": [
+              {
+                "title": "Étude étymo-sémantique des patronymes de la région de Touggourt",
+                "author": "Siham Messaoudi",
+                "year": 2021,
+                "url": "https://dspace.univ-ouargla.dz/jspui/bitstream/123456789/32616/1/%25D9%2585%25D8%25B3%25D8%25B9%25D9%2588%25D8%25AF%25D9%258A%2520%25D8%25B3%25D9%2587%25D8%25A7%25D9%2585_compressed.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 37",
+                "notes": "Mémoire de master en sciences du langage, Université Kasdi Merbah Ouargla, 2020-2021, dirigé par Nadjah Henka ; texte intégral lu dans le fichier déposé par l'université (pages numérotées de l'imprimé). L'autrice a choisi 215 noms de famille représentatifs dans le registre de l'état civil de la mairie de Touggourt (p. 3). Page 37 : « HADDAD [ħddad] : nom simple, masculin singulier, d'origine arabe, signifie « forgeron » / haddada est la forme féminine du nom » ; page 23, parmi les noms de métiers : « HADDAD : « forgeron » » ; page 56 : la liste des patronymes recensés porte HADDAD. Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Noms de personnes et activités socioprofessionnelles : une identité nominale par le métier exercé",
+                "author": "Ouerdia Yermèche",
+                "year": 2022,
+                "url": "https://insaniyat.crasc.dz/en/article/noms-de-personnes-et-activites-socioprofessionnelles-une-identite-nominale-par-le-metier-exerce",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 13-28 (version en ligne sans pagination imprimée)",
+                "notes": "Insaniyat, no 98, vol. 26, 31 décembre 2022, p. 13-28 ; lu en ligne en texte intégral. L'article analyse un ensemble de noms de famille collectés dans les régions du nord de l'Algérie. Le tableau des noms de métiers donne « Haddad /Ihaddaden : forgeron, ferronnier, ferrailleur » ; le texte écrit que « dans la tradition berbère, le métier de forgeron, Aheddad (fabricant d'armes et de bijoux) était généralement réservé et pratiqué par des corporations, constituées de père en fils, et qui ont donné la lignée des Ihaddaden « les forgerons » (Zaid, 1999) », « en général respectés par la communauté ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 2022,
+              "to": 2022,
+              "label": "Décrit en 2022"
+            },
+            "era": "modern",
+            "statement": "Le nom Haddad correspond, en berbère, à Aheddad, le forgeron : un métier que des corporations tenaient de père en fils et qui ont donné la lignée des Ihaddaden, « les forgerons », respectés par leur communauté, selon Ouerdia Yermèche.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Noms de personnes et activités socioprofessionnelles : une identité nominale par le métier exercé",
+                "author": "Ouerdia Yermèche",
+                "year": 2022,
+                "url": "https://insaniyat.crasc.dz/en/article/noms-de-personnes-et-activites-socioprofessionnelles-une-identite-nominale-par-le-metier-exerce",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 13-28 (version en ligne sans pagination imprimée)",
+                "notes": "Insaniyat, no 98, vol. 26, 31 décembre 2022, p. 13-28 ; lu en ligne en texte intégral. L'article analyse un ensemble de noms de famille collectés dans les régions du nord de l'Algérie. Le tableau des noms de métiers donne « Haddad /Ihaddaden : forgeron, ferronnier, ferrailleur » ; le texte écrit que « dans la tradition berbère, le métier de forgeron, Aheddad (fabricant d'armes et de bijoux) était généralement réservé et pratiqué par des corporations, constituées de père en fils, et qui ont donné la lignée des Ihaddaden « les forgerons » (Zaid, 1999) », « en général respectés par la communauté ». Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1882,
+              "to": 1882,
+              "label": "Loi du 23 mars 1882"
+            },
+            "era": "colonial",
+            "statement": "Le nom Haddad relève, comme tout nom de famille algérien, de l'état civil que l'administration française impose aux Algériens musulmans par la loi du 23 mars 1882 : chaque famille doit alors porter un nom unique, transmis de génération en génération, là où l'on se nommait par la filiation. Les sources lues ne disent pas quand les familles Haddad ont reçu ce nom.",
+            "aspect": "imposition",
+            "sources": [
+              {
+                "title": "Qui es-tu ? J'ai été dit. De la destruction de la filiation dans l'État civil d'Algérie ou éléments d'un onomacide sémantique",
+                "author": "Farid Benramdane",
+                "year": 2000,
+                "url": "https://insaniyat.crasc.dz/en/article/qui-es-tu-jai-ete-dit-de-la-destruction-de-la-filiation-dans-letat-civil-dalgerie-ou-elements-dun-onomacide-semantique",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 79-87 (section sur les patronymes algériens)",
+                "notes": "Insaniyat, 4(10), 2000, p. 79-87, lu en ligne en texte intégral ; la version en ligne ne marque pas les pages de l'imprimé. L'auteur écrit que l'état civil algérien est né de la loi du 23 mars 1882, précédée d'une loi de 1873, qui a imposé « l'obligation et la généralisation du patronyme » là où l'on se nommait par la filiation (ism, alam, kunya, laqab, nisba) ; il cite Charles-Robert Ageron sur les commissaires chargés d'établir cet état civil. Lu le 14 octobre 2026."
+              },
+              {
+                "title": "Étude étymo-sémantique des patronymes de la région de Touggourt",
+                "author": "Siham Messaoudi",
+                "year": 2021,
+                "url": "https://dspace.univ-ouargla.dz/jspui/bitstream/123456789/32616/1/%25D9%2585%25D8%25B3%25D8%25B9%25D9%2588%25D8%25AF%25D9%258A%2520%25D8%25B3%25D9%2587%25D8%25A7%25D9%2585_compressed.pdf",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 18",
+                "notes": "Mémoire de master en sciences du langage, Université Kasdi Merbah Ouargla, 2020-2021, dirigé par Nadjah Henka ; texte intégral lu dans le fichier déposé par l'université (pages numérotées de l'imprimé). L'autrice a choisi 215 noms de famille représentatifs dans le registre de l'état civil de la mairie de Touggourt (p. 3). Page 18 : « la présence coloniale a bouleversé le système dénominatif qui est passé d'une désignation par filiation lignagère à plusieurs éléments à un système patronymique à un seul élément », imposé « après avoir instauré l'état civil des indigènes musulmans en 1882 » ; l'introduction (p. 2) date pourtant l'état civil de 1871, et le projet suit la loi de 1882 que donne Benramdane. Lu le 14 octobre 2026."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1864,
+              "to": 1864,
+              "label": "Publié en 1864"
+            },
+            "era": "colonial",
+            "statement": "Le nom Haddad apparaît sous une forme proche, Haddâden, dans Taguemmount Haddâden, village kabyle voisin de Fort-Napoléon dont le nom, écrit le docteur Leclerc, veut dire « la colline des forgerons » ; il note que haddad est un mot arabe, le fer se disant ouzzal en kabyle. C'est la plus ancienne trace de ce nom que le projet connaît ; elle nomme un village et un métier, non une famille, et le nom existait déjà avant elle.",
+            "formAsWritten": "Haddâden",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Une mission médicale en Kabylie",
+                "author": "Lucien Leclerc",
+                "year": 1864,
+                "url": "https://archive.org/details/unemissionmdica01leclgoog",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "page": "p. 87",
+                "notes": "Docteur L. Leclerc, médecin-major, chargé en 1857, après la soumission de la Grande Kabylie, de soigner les habitants du Djurdjura depuis Fort-Napoléon ; Paris, J.-B. Baillière ; exemplaire numérisé d'archive.org, dont la notice donne 1864. Page 87, lue sur l'image de la page imprimée : « Il en est qui doivent leur nom à cette industrie, ainsi le village de Taguemmount Haddâden, situé à quelques centaines de pas du Fort-Napoléon, dont le nom signifie la colline des forgerons. Une chose nous étonne, c'est que nous n'ayons pas ici une dénomination indigène, car haddad est arabe, et le fer se dit en kabyle ouzzal ». Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nameText": "Ahaddad",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "La forme berbère du nom de métier, « le forgeron », notée dès 1872.",
+        "periodLabel": "Écrit dès 1872",
+        "variantSpelling": true,
+        "accounts": [
+          {
+            "period": {
+              "from": 1872,
+              "to": 1872,
+              "label": "Décrit en 1872"
+            },
+            "era": "colonial",
+            "statement": "Le nom Ahaddad est la forme berbère du nom Haddad : Hanoteau et Letourneux le traduisent « le forgeron » dans Aït Saïd Ahaddad, « les fils de Saïd le forgeron », et, sous la forme Ouhaddad, dans Azib Ouhaddad, « l'azib du forgeron ».",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "La Kabylie et les coutumes kabyles, tome I",
+                "author": "Adolphe Hanoteau et Aristide Letourneux",
+                "year": 1872,
+                "url": "https://archive.org/details/bub_gb_8jgbAAAAYAAJ",
+                "tier": "referenced",
+                "source_kind": "academic",
+                "page": "p. 259 et p. 261",
+                "notes": "Paris, 1872 ; exemplaire numérisé d'archive.org (tome I), page lue sur l'image de la page imprimée. Page 259, tribu des Aït Aïssa ou Mimoun : « Azib Ouhaddad (l'azib du forgeron) » ; page 261, tribu des Aït Adas : « Aït Saïd Ahaddad (les fils de Saïd le forgeron) ». Lu le 14 octobre 2026."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
