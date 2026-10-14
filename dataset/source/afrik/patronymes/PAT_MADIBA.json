@@ -97,5 +97,90 @@
       "fieldPath": "homonyms",
       "reason": "la recherche web combinant « Madiba », « patronyme », « origine », « clan », « alliance », « caste », « obituary », « homonyme », « transmission » et « héritage », ainsi que la consultation de la notice « Names », la biographie de la Nelson Mandela Foundation et le passage autobiographique où Mandela décrit son clan Madiba, n'ont pas établi de lignée homonyme d'origine distincte ni d'autre homonyme documentable."
     }
-  ]
+  ],
+  "nameHistory": {
+    "summary": "Le nom Madiba est un nom de clan xhosa, celui des Thembu du Transkei dont faisait partie Nelson Mandela. Les deux sources lues disent qu'il vient d'un chef thembu qui régnait au XVIIIe siècle dans le Transkei. On y dit aussi Madiba par respect, comme Nelson Mandela lui-même était appelé.",
+    "names": [
+      {
+        "nameText": "Madiba",
+        "nameStatus": "current",
+        "selfGiven": true,
+        "languageOfOrigin": null,
+        "namedBy": null,
+        "shortLine": "Un nom de clan thembu, tiré d'un chef du XVIIIe siècle ; on le dit aussi par respect.",
+        "periodLabel": "Chef thembu du XVIIIe siècle ; porté aujourd'hui",
+        "accounts": [
+          {
+            "period": {
+              "from": 1700,
+              "to": 1799,
+              "label": "Au XVIIIe siècle"
+            },
+            "era": "polity",
+            "statement": "Le nom Madiba est celui d'un chef thembu qui a régné dans le Transkei au XVIIIe siècle, et le clan de Nelson Mandela porte son nom. La Fondation Nelson Mandela et Nelson Mandela lui-même le disent ainsi, sans donner la date exacte de ce règne.",
+            "sources": [
+              {
+                "title": "Names",
+                "author": "Nelson Mandela Foundation",
+                "year": null,
+                "url": "https://www.nelsonmandela.org/names",
+                "tier": "referenced",
+                "source_kind": "repository",
+                "notes": "Page de la Fondation Nelson Mandela, sans date ni numéro de page, lue le 14 octobre 2026. Elle dit : « Madiba was the name of a Thembu chief who ruled in the Transkei in the 18th century » et que c'est le nom du clan dont Nelson Mandela était membre ; elle ajoute qu'un nom de clan est bien plus important qu'un nom de famille, car il renvoie à l'ancêtre dont on descend."
+              },
+              {
+                "title": "Long Walk to Freedom: The Autobiography of Nelson Mandela",
+                "author": "Nelson Mandela",
+                "year": 1994,
+                "url": "https://repository.act.ac.rw/server/api/core/bitstreams/1781d4c1-64c6-4fa2-87e7-b693e01b24d4/content",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Little, Brown, 1994. Lu le 14 octobre 2026 dans le PDF archivé, qui ne porte pas de numéros de page imprimés : nous citons la partie, non une page. Première partie, « A Country Childhood » : « I am a member of the Madiba clan, named after a Thembu chief who ruled in the Transkei in the eighteenth century. I am often addressed as Madiba, my clan name, a term of respect. » Partie sur Johannesburg, à la naissance de son fils Thembi : « He was given my clan name of Madiba »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "Écrit en 1994"
+            },
+            "statement": "Le nom Madiba apparaît par écrit dans l'autobiographie de Nelson Mandela, comme le nom de son clan, nommé d'après un chef thembu. Il dit aussi que ce nom, qui est le sien, sert à l'appeler par respect, et qu'il l'a donné à son premier fils. C'est la plus ancienne trace écrite de ce nom que le projet connaît ; le clan existait déjà avant elle.",
+            "birth": true,
+            "sources": [
+              {
+                "title": "Long Walk to Freedom: The Autobiography of Nelson Mandela",
+                "author": "Nelson Mandela",
+                "year": 1994,
+                "url": "https://repository.act.ac.rw/server/api/core/bitstreams/1781d4c1-64c6-4fa2-87e7-b693e01b24d4/content",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Little, Brown, 1994. Lu le 14 octobre 2026 dans le PDF archivé, qui ne porte pas de numéros de page imprimés : nous citons la partie, non une page. Première partie, « A Country Childhood » : « I am a member of the Madiba clan, named after a Thembu chief who ruled in the Transkei in the eighteenth century. I am often addressed as Madiba, my clan name, a term of respect. » Partie sur Johannesburg, à la naissance de son fils Thembi : « He was given my clan name of Madiba »."
+              }
+            ]
+          },
+          {
+            "period": {
+              "from": 1994,
+              "to": 1994,
+              "label": "Dit en 1994"
+            },
+            "statement": "Le nom Madiba est un nom de clan, qu'on ne confond pas avec le nom de famille Mandela. Nelson Mandela dit que chaque Xhosa appartient à un clan qui remonte à un ancêtre précis.",
+            "aspect": "usage",
+            "sources": [
+              {
+                "title": "Long Walk to Freedom: The Autobiography of Nelson Mandela",
+                "author": "Nelson Mandela",
+                "year": 1994,
+                "url": "https://repository.act.ac.rw/server/api/core/bitstreams/1781d4c1-64c6-4fa2-87e7-b693e01b24d4/content",
+                "tier": "referenced",
+                "source_kind": "archive",
+                "notes": "Little, Brown, 1994. Lu le 14 octobre 2026 dans le PDF archivé, qui ne porte pas de numéros de page imprimés : nous citons la partie, non une page. Première partie, « A Country Childhood » : « I am a member of the Madiba clan, named after a Thembu chief who ruled in the Transkei in the eighteenth century. I am often addressed as Madiba, my clan name, a term of respect. » Partie sur Johannesburg, à la naissance de son fils Thembi : « He was given my clan name of Madiba »."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
