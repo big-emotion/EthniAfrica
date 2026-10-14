@@ -1384,12 +1384,12 @@
         {
           "title": "Blench, R. (2006). Afroasiatic Languages: Omotic sub-group classification",
           "url": null,
-          "fiches": ["peuples/FLG_COUCHITIQUE/PPL_KACHAMA.json"]
+          "fiches": ["peuples/FLG_OMOTIQUE/PPL_KACHAMA.json"]
         },
         {
           "title": "Leslau, Wolf – Mocha, A Tone Language of The Kafa Group in South-Western Ethiopia, Africa, 1958",
           "url": null,
-          "fiches": ["peuples/FLG_COUCHITIQUE/PPL_MOCHA.json"]
+          "fiches": ["peuples/FLG_OMOTIQUE/PPL_MOCHA.json"]
         },
         {
           "title": "Turner, Lorenzo Dow (1949) - Africanisms in the Gullah Dialect",
@@ -2241,12 +2241,12 @@
         {
           "title": "The Shinasha people – The Tribal Society, 2024",
           "url": "https://thetribalsociety.com/the-shinasha-people/",
-          "fiches": ["peuples/FLG_COUCHITIQUE/PPL_SHINASHA.json"]
+          "fiches": ["peuples/FLG_OMOTIQUE/PPL_SHINASHA.json"]
         },
         {
           "title": "The Yem people – The Tribal Society, 2025",
           "url": "https://thetribalsociety.com/the-yem-people/",
-          "fiches": ["peuples/FLG_COUCHITIQUE/PPL_YEM.json"]
+          "fiches": ["peuples/FLG_OMOTIQUE/PPL_YEM.json"]
         },
         {
           "title": "The Tribal Society — The Basketo people",
@@ -2567,7 +2567,7 @@
         {
           "title": "A Look at the Kara Tribe, Ethiopia's Famous Body Painters – Absolute Ethiopia Tours, 2025",
           "url": "https://absoluteethiopia.com/a-look-at-the-kara-tribe-ethiopias-famous-body-painters/",
-          "fiches": ["peuples/FLG_COUCHITIQUE/PPL_KARO.json"]
+          "fiches": ["peuples/FLG_OMOTIQUE/PPL_KARO.json"]
         },
         {
           "title": "A Tour of The Omo Valley: Meet Southern Ethiopia's Cotton Weavers – Absolute Ethiopia Tours, 2025",
@@ -5211,7 +5211,7 @@
         {
           "title": "T'ej in Other Ethiopian Languages – Ethiopian Tej Blog",
           "url": "https://ethiopiantej.wordpress.com/tej-names/",
-          "fiches": ["peuples/FLG_COUCHITIQUE/PPL_KACHAMA.json"]
+          "fiches": ["peuples/FLG_OMOTIQUE/PPL_KACHAMA.json"]
         }
       ]
     },
@@ -5224,7 +5224,7 @@
         {
           "title": "Ethiopian Languages: Semitic, Cushitic, Omotic and Nilo-Saharan – Ethiopian Treasures",
           "url": "http://www.ethiopiantreasures.co.uk/pages/language.htm",
-          "fiches": ["peuples/FLG_COUCHITIQUE/PPL_MELO.json"]
+          "fiches": ["peuples/FLG_OMOTIQUE/PPL_MELO.json"]
         }
       ]
     },
@@ -5783,7 +5783,7 @@
         {
           "title": "In historical perspectives in Africa: A case study of Shinasha tribe – IJAMTES, Abebe Ano, 2018",
           "url": "https://www.ijamtes.org/gallery/227.%20aug%20ijmte%20-%20942.pdf",
-          "fiches": ["peuples/FLG_COUCHITIQUE/PPL_SHINASHA.json"]
+          "fiches": ["peuples/FLG_OMOTIQUE/PPL_SHINASHA.json"]
         }
       ]
     },
@@ -5874,7 +5874,7 @@
         {
           "title": "Hebo: New Year Ritual of Yem People in South West Ethiopia – International Journal of Multidisciplinary and Current Research, 2019",
           "url": "https://ijmmu.com/index.php/ijmmu/article/download/1207/898",
-          "fiches": ["peuples/FLG_COUCHITIQUE/PPL_YEM.json"]
+          "fiches": ["peuples/FLG_OMOTIQUE/PPL_YEM.json"]
         }
       ]
     },
@@ -6030,7 +6030,7 @@
         {
           "title": "Zayse-Zergulla – JAEL Ethiopian Languages",
           "url": "https://jael.info/locale/lang/zay-ET-x-Zayse-Zergulla.html",
-          "fiches": ["peuples/FLG_COUCHITIQUE/PPL_ZAYSE.json"]
+          "fiches": ["peuples/FLG_OMOTIQUE/PPL_ZAYSE.json"]
         }
       ]
     },
@@ -6918,7 +6918,7 @@
         {
           "title": "Statistical Data on Sheka and Keffa Zones – MTU Sociology / CSA Ethiopia, 2007",
           "url": "https://mtusociology.github.io",
-          "fiches": ["peuples/FLG_COUCHITIQUE/PPL_MOCHA.json"]
+          "fiches": ["peuples/FLG_OMOTIQUE/PPL_MOCHA.json"]
         }
       ]
     },
@@ -7191,7 +7191,7 @@
         {
           "title": "Nayi language endangerment – Foundation for Endangered Languages, Ogmios 52, 2013",
           "url": "http://www.ogmios.org/ogmios/Ogmios_052.pdf",
-          "fiches": ["peuples/FLG_COUCHITIQUE/PPL_NAO.json"]
+          "fiches": ["peuples/FLG_OMOTIQUE/PPL_NAO.json"]
         }
       ]
     },

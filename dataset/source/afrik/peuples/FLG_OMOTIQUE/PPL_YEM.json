@@ -1,7 +1,7 @@
 {
   "id": "PPL_YEM",
   "nameMain": "Yem",
-  "languageFamilyId": "FLG_COUCHITIQUE",
+  "languageFamilyId": "FLG_OMOTIQUE",
   "currentCountries": ["ETH"],
   "classificationStatus": "contested",
   "content": {
@@ -12,7 +12,7 @@
       "originOfExonyms": "Depuis le XVe siècle, les sources chrétiennes éthiopiennes emploient le nom amharique Janjero pour les Yem. Ceux-ci le considèrent comme méprisant. Ils ont aussi critiqué le code jnj, attribué à leur langue dans la norme ISO 639-3 en référence à Janjero, car il maintient un nom qu'ils jugent offensant. Les recherches contemporaines emploient Yemma pour le peuple et Yemsa pour la langue. Le nom du royaume Yamma reprend l'appellation historique du territoire.",
       "whyProblematic": "Les Yem considèrent Janjero comme un nom qui les dévalorise. Certains locuteurs du yemsa ont dit craindre de parler leur langue en raison du jugement négatif associé à ce nom dans la société éthiopienne.",
       "contemporaryUsage": "Le nom Yem est utilise dans les documents administratifs ethiopiens actuels. Le woreda special de Yem et la zone Yem portent ce nom dans la region Ethiopie centrale.",
-      "linguisticFamily": "FLG_COUCHITIQUE",
+      "linguisticFamily": "FLG_OMOTIQUE",
       "ethnoLinguisticGroup": "Omotic (branche Omotic du Nord, groupe Kefoid)",
       "historicalRegion": "Angle forme par les rivieres Omo et Gibe (Jimma), Sud-Ouest ethiopien",
       "currentCountries": ["ETH"]

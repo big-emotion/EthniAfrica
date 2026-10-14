@@ -1,7 +1,7 @@
 {
   "id": "PPL_SHINASHA",
   "nameMain": "Shinasha",
-  "languageFamilyId": "FLG_COUCHITIQUE",
+  "languageFamilyId": "FLG_OMOTIQUE",
   "currentCountries": ["ETH"],
   "classificationStatus": "contested",
   "content": {
@@ -12,7 +12,7 @@
       "originOfExonyms": "Boro et Bworo sont les termes anciens et autodesignations du groupe. Shinasha est le nom exterieur le plus repandu dans la litterature et les documents officiels ethiopiens. Borna designe principalement la langue dans les classifications linguistiques (Ethnologue, SIL). Amuru est un nom alternatif note par le Joshua Project.",
       "whyProblematic": "La denomination Shinasha peut preter a confusion car elle est utilisee de maniere interchangeable avec Boro et Bworo, qui sont les termes preferes par le groupe lui-meme. Dans la litterature scientifique, Boro est souvent utilise comme nom de la langue.",
       "contemporaryUsage": "Le terme Shinasha est employe officiellement dans la constitution de la region Benishangul-Gumuz, ou il est reconnu comme l'un des cinq groupes ethniques indigenes de la region. Les Shinasha detiennent 11 sieges (sur 100) a l'assemblee regionale.",
-      "linguisticFamily": "FLG_COUCHITIQUE",
+      "linguisticFamily": "FLG_OMOTIQUE",
       "ethnoLinguisticGroup": "Omotique du Nord (Gonga), parfois classe dans le groupe linguistique Cushitique du fait de proximites areales",
       "historicalRegion": "Zone de Metekel, region Benishangul-Gumuz, nord-ouest de l'Ethiopie",
       "currentCountries": ["ETH"]

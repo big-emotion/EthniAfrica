@@ -1,7 +1,7 @@
 {
   "id": "PPL_ZAYSE",
   "nameMain": "Zayse",
-  "languageFamilyId": "FLG_COUCHITIQUE",
+  "languageFamilyId": "FLG_OMOTIQUE",
   "currentCountries": ["ETH"],
   "content": {
     "appellations": {
@@ -18,7 +18,7 @@
       "originOfExonyms": "Zagisse est le nom utilisé par le peuple Koore voisin pour désigner les Zayse ; il voudrait dire « les plus anciens » ou « les premiers », ce qui suggère que les Zayse sont considérés comme les habitants originels de la région. Zayse-Zergulla designe l'ensemble du dialecte ou de la langue comprenant les varietes Zayse et Zergulla. Le Zergulla est une variete etroitement apparentee dont les locuteurs (Zargulla, auto-appellation Gamo) vivent dans le district de Bonke.",
       "whyProblematic": null,
       "contemporaryUsage": "Zayse est le nom utilise dans les documents administratifs ethiopiens et dans les etudes linguistiques recentes. La distinction entre Zayse et Zergulla suit plutot des lignes ethniques ou geographiques que strictement linguistiques.",
-      "linguisticFamily": "FLG_COUCHITIQUE",
+      "linguisticFamily": "FLG_OMOTIQUE",
       "ethnoLinguisticGroup": "Omotic (North Omotic, East Ometo)",
       "historicalRegion": "Hauts plateaux du sud-ouest de l'Ethiopie, a l'ouest immediat du lac Chamo",
       "currentCountries": ["ETH"]

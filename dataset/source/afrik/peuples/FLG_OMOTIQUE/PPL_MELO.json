@@ -1,7 +1,7 @@
 {
   "id": "PPL_MELO",
   "nameMain": "Melo",
-  "languageFamilyId": "FLG_COUCHITIQUE",
+  "languageFamilyId": "FLG_OMOTIQUE",
   "currentCountries": ["ETH"],
   "content": {
     "appellations": {
@@ -11,7 +11,7 @@
       "originOfExonyms": "Le nom Malo est l'auto-denomination du peuple; le terme Melo est l'appellation externe utilisee dans les sources academiques et administratives ethiopiennes.",
       "whyProblematic": null,
       "contemporaryUsage": "Le nom Malo est utilise par la communaute elle-meme; Melo est la forme retenue dans les bases de donnees linguistiques internationales (Ethnologue, Glottolog). Les deux formes coexistent dans la litterature.",
-      "linguisticFamily": "FLG_COUCHITIQUE",
+      "linguisticFamily": "FLG_OMOTIQUE",
       "ethnoLinguisticGroup": "Omotic septentrional, branche Aroid",
       "historicalRegion": "Gamo Gofa, sud-ouest ethiopien",
       "currentCountries": ["ETH"]
