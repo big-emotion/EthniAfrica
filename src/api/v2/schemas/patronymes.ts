@@ -32,6 +32,7 @@ export const patronymeNameSystemSchema = z.enum([
   "nisba",
   "praise_name",
   "totemic_clan",
+  "hereditary_family_name",
 ]);
 
 export type PatronymeNameSystem = z.infer<typeof patronymeNameSystemSchema>;

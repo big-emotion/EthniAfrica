@@ -5291,7 +5291,8 @@
               "non_hereditary_patronymic",
               "nisba",
               "praise_name",
-              "totemic_clan"
+              "totemic_clan",
+              "hereditary_family_name"
             ]
           },
           "casteOrSocialFunction": {
@@ -5569,7 +5570,8 @@
               "non_hereditary_patronymic",
               "nisba",
               "praise_name",
-              "totemic_clan"
+              "totemic_clan",
+              "hereditary_family_name"
             ]
           }
         },

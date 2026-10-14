@@ -6,7 +6,7 @@
   },
   "id": "PAT_XXXXX",
   "nameMain": "<Nom principal>",
-  "nameSystem": "clan_name | non_hereditary_patronymic | nisba | praise_name | totemic_clan",
+  "nameSystem": "clan_name | non_hereditary_patronymic | nisba | praise_name | totemic_clan | hereditary_family_name",
   "spellings": [
     {
       "spelling": "<Orthographe attestée>",
