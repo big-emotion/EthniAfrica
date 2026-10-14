@@ -4,6 +4,11 @@ The four contractual mockups behind the Atlas design system and the globe fiches
 `src/lib/atlas/assets/README.md` has referenced `docs/design/mockups/pages/famille.html`
 since the atlas assets landed; this directory is what that reference points at.
 
+> **The whole site** is recorded in [`site/`](site/README.md): 49 boards of the
+> shipped pages at 430, 768 and 1440 px. They are the reference for every
+> visible change, made boards first
+> ([`../mockup-first-workflow.md`](../mockup-first-workflow.md)).
+
 | Page                | Artefact                                                       |
 | ------------------- | -------------------------------------------------------------- |
 | `pages/ds.html`     | https://claude.ai/code/artifact/64ae133e-6eb4-4ecd-ba4a-9ae07771e0b7 |

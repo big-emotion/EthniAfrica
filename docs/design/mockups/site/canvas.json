@@ -1,0 +1,446 @@
+{
+  "v": 3,
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-10-14T13:40:00Z"
+  },
+  "title": "EthniAfrica, relevé des pages en production",
+  "launch": {
+    "view": "canvas"
+  },
+  "pages": [],
+  "boards": {
+    "Main.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 6200,
+      "title": "design-system"
+    },
+    "search-peul-430.dc.html": {
+      "x": 1840,
+      "y": 0,
+      "w": 430,
+      "h": 3322,
+      "expand": "fill"
+    },
+    "search-peul-768.dc.html": {
+      "x": 2350,
+      "y": 0,
+      "w": 768,
+      "h": 2258,
+      "expand": "fill"
+    },
+    "search-peul-1440.dc.html": {
+      "x": 3198,
+      "y": 0,
+      "w": 1440,
+      "h": 1936,
+      "expand": "fill"
+    },
+    "search-bassa-430.dc.html": {
+      "x": 1840,
+      "y": 3442,
+      "w": 430,
+      "h": 6932,
+      "expand": "fill"
+    },
+    "search-bassa-768.dc.html": {
+      "x": 2350,
+      "y": 3442,
+      "w": 768,
+      "h": 5036,
+      "expand": "fill"
+    },
+    "search-bassa-1440.dc.html": {
+      "x": 3198,
+      "y": 3442,
+      "w": 1440,
+      "h": 4654,
+      "expand": "fill"
+    },
+    "search-congo-430.dc.html": {
+      "x": 1840,
+      "y": 10494,
+      "w": 430,
+      "h": 8385,
+      "expand": "fill"
+    },
+    "search-congo-768.dc.html": {
+      "x": 2350,
+      "y": 10494,
+      "w": 768,
+      "h": 5896,
+      "expand": "fill"
+    },
+    "search-congo-1440.dc.html": {
+      "x": 3198,
+      "y": 10494,
+      "w": 1440,
+      "h": 5378,
+      "expand": "fill"
+    },
+    "search-unknown-430.dc.html": {
+      "x": 1840,
+      "y": 18999,
+      "w": 430,
+      "h": 2240,
+      "expand": "fill"
+    },
+    "search-unknown-768.dc.html": {
+      "x": 2350,
+      "y": 18999,
+      "w": 768,
+      "h": 1562,
+      "expand": "fill"
+    },
+    "search-unknown-1440.dc.html": {
+      "x": 3198,
+      "y": 18999,
+      "w": 1440,
+      "h": 1347,
+      "expand": "fill"
+    },
+    "people-fula-430.dc.html": {
+      "x": 5038,
+      "y": 0,
+      "w": 430,
+      "h": 10455,
+      "expand": "fill"
+    },
+    "people-fula-768.dc.html": {
+      "x": 5548,
+      "y": 0,
+      "w": 768,
+      "h": 9320,
+      "expand": "fill"
+    },
+    "people-fula-1440.dc.html": {
+      "x": 6396,
+      "y": 0,
+      "w": 1440,
+      "h": 8840,
+      "expand": "fill"
+    },
+    "people-bassa-430.dc.html": {
+      "x": 5038,
+      "y": 10575,
+      "w": 430,
+      "h": 8179,
+      "expand": "fill"
+    },
+    "people-bassa-768.dc.html": {
+      "x": 5548,
+      "y": 10575,
+      "w": 768,
+      "h": 7440,
+      "expand": "fill"
+    },
+    "people-bassa-1440.dc.html": {
+      "x": 6396,
+      "y": 10575,
+      "w": 1440,
+      "h": 6958,
+      "expand": "fill"
+    },
+    "people-thin-alaba-430.dc.html": {
+      "x": 5038,
+      "y": 18874,
+      "w": 430,
+      "h": 7465,
+      "expand": "fill"
+    },
+    "people-thin-alaba-768.dc.html": {
+      "x": 5548,
+      "y": 18874,
+      "w": 768,
+      "h": 6657,
+      "expand": "fill"
+    },
+    "people-thin-alaba-1440.dc.html": {
+      "x": 6396,
+      "y": 18874,
+      "w": 1440,
+      "h": 6383,
+      "expand": "fill"
+    },
+    "language-lingala-430.dc.html": {
+      "x": 8236,
+      "y": 0,
+      "w": 430,
+      "h": 3911,
+      "expand": "fill"
+    },
+    "language-lingala-768.dc.html": {
+      "x": 8746,
+      "y": 0,
+      "w": 768,
+      "h": 3382,
+      "expand": "fill"
+    },
+    "language-lingala-1440.dc.html": {
+      "x": 9594,
+      "y": 0,
+      "w": 1440,
+      "h": 3585,
+      "expand": "fill"
+    },
+    "family-bantu-430.dc.html": {
+      "x": 8236,
+      "y": 4031,
+      "w": 430,
+      "h": 15250,
+      "expand": "fill"
+    },
+    "family-bantu-768.dc.html": {
+      "x": 8746,
+      "y": 4031,
+      "w": 768,
+      "h": 11194,
+      "expand": "fill"
+    },
+    "family-bantu-1440.dc.html": {
+      "x": 9594,
+      "y": 4031,
+      "w": 1440,
+      "h": 9496,
+      "expand": "fill"
+    },
+    "family-mande-430.dc.html": {
+      "x": 8236,
+      "y": 19401,
+      "w": 430,
+      "h": 22132,
+      "expand": "fill"
+    },
+    "family-mande-768.dc.html": {
+      "x": 8746,
+      "y": 19401,
+      "w": 768,
+      "h": 14579,
+      "expand": "fill"
+    },
+    "family-mande-1440.dc.html": {
+      "x": 9594,
+      "y": 19401,
+      "w": 1440,
+      "h": 11630,
+      "expand": "fill"
+    },
+    "country-civ-430.dc.html": {
+      "x": 8236,
+      "y": 41653,
+      "w": 430,
+      "h": 9999,
+      "expand": "fill"
+    },
+    "country-civ-768.dc.html": {
+      "x": 8746,
+      "y": 41653,
+      "w": 768,
+      "h": 8678,
+      "expand": "fill"
+    },
+    "country-civ-1440.dc.html": {
+      "x": 9594,
+      "y": 41653,
+      "w": 1440,
+      "h": 8142,
+      "expand": "fill"
+    },
+    "name-traore-430.dc.html": {
+      "x": 11434,
+      "y": 0,
+      "w": 430,
+      "h": 13191,
+      "expand": "fill"
+    },
+    "name-traore-768.dc.html": {
+      "x": 11944,
+      "y": 0,
+      "w": 768,
+      "h": 8525,
+      "expand": "fill"
+    },
+    "name-traore-1440.dc.html": {
+      "x": 12792,
+      "y": 0,
+      "w": 1440,
+      "h": 6956,
+      "expand": "fill"
+    },
+    "place-yamoussoukro-430.dc.html": {
+      "x": 11434,
+      "y": 13311,
+      "w": 430,
+      "h": 3633,
+      "expand": "fill"
+    },
+    "place-yamoussoukro-768.dc.html": {
+      "x": 11944,
+      "y": 13311,
+      "w": 768,
+      "h": 2743,
+      "expand": "fill"
+    },
+    "place-yamoussoukro-1440.dc.html": {
+      "x": 12792,
+      "y": 13311,
+      "w": 1440,
+      "h": 2581,
+      "expand": "fill"
+    },
+    "glossary-430.dc.html": {
+      "x": 11434,
+      "y": 17064,
+      "w": 430,
+      "h": 8796,
+      "expand": "fill"
+    },
+    "glossary-768.dc.html": {
+      "x": 11944,
+      "y": 17064,
+      "w": 768,
+      "h": 5688,
+      "expand": "fill"
+    },
+    "glossary-1440.dc.html": {
+      "x": 12792,
+      "y": 17064,
+      "w": 1440,
+      "h": 3996,
+      "expand": "fill"
+    },
+    "about-430.dc.html": {
+      "x": 11434,
+      "y": 25980,
+      "w": 430,
+      "h": 4297,
+      "expand": "fill"
+    },
+    "about-768.dc.html": {
+      "x": 11944,
+      "y": 25980,
+      "w": 768,
+      "h": 2864,
+      "expand": "fill"
+    },
+    "about-1440.dc.html": {
+      "x": 12792,
+      "y": 25980,
+      "w": 1440,
+      "h": 2327,
+      "expand": "fill"
+    },
+    "home-430.dc.html": {
+      "x": 11434,
+      "y": 30397,
+      "w": 430,
+      "h": 2622,
+      "expand": "fill"
+    },
+    "home-768.dc.html": {
+      "x": 11944,
+      "y": 30397,
+      "w": 768,
+      "h": 1740,
+      "expand": "fill"
+    },
+    "home-1440.dc.html": {
+      "x": 12792,
+      "y": 30397,
+      "w": 1440,
+      "h": 1433,
+      "expand": "fill"
+    }
+  },
+  "order": [
+    "Main.dc.html",
+    "search-peul-430.dc.html",
+    "search-peul-768.dc.html",
+    "search-peul-1440.dc.html",
+    "search-bassa-430.dc.html",
+    "search-bassa-768.dc.html",
+    "search-bassa-1440.dc.html",
+    "search-congo-430.dc.html",
+    "search-congo-768.dc.html",
+    "search-congo-1440.dc.html",
+    "search-unknown-430.dc.html",
+    "search-unknown-768.dc.html",
+    "search-unknown-1440.dc.html",
+    "people-fula-430.dc.html",
+    "people-fula-768.dc.html",
+    "people-fula-1440.dc.html",
+    "people-bassa-430.dc.html",
+    "people-bassa-768.dc.html",
+    "people-bassa-1440.dc.html",
+    "people-thin-alaba-430.dc.html",
+    "people-thin-alaba-768.dc.html",
+    "people-thin-alaba-1440.dc.html",
+    "language-lingala-430.dc.html",
+    "language-lingala-768.dc.html",
+    "language-lingala-1440.dc.html",
+    "family-bantu-430.dc.html",
+    "family-bantu-768.dc.html",
+    "family-bantu-1440.dc.html",
+    "family-mande-430.dc.html",
+    "family-mande-768.dc.html",
+    "family-mande-1440.dc.html",
+    "country-civ-430.dc.html",
+    "country-civ-768.dc.html",
+    "country-civ-1440.dc.html",
+    "name-traore-430.dc.html",
+    "name-traore-768.dc.html",
+    "name-traore-1440.dc.html",
+    "place-yamoussoukro-430.dc.html",
+    "place-yamoussoukro-768.dc.html",
+    "place-yamoussoukro-1440.dc.html",
+    "glossary-430.dc.html",
+    "glossary-768.dc.html",
+    "glossary-1440.dc.html",
+    "about-430.dc.html",
+    "about-768.dc.html",
+    "about-1440.dc.html",
+    "home-430.dc.html",
+    "home-768.dc.html",
+    "home-1440.dc.html"
+  ],
+  "notes": {
+    "g0": {
+      "x": 0,
+      "y": -300,
+      "text": "Système de design",
+      "kind": "title1",
+      "maxW": 1440
+    },
+    "g1": {
+      "x": 1840,
+      "y": -300,
+      "text": "Groupe 1 · résultats de recherche",
+      "kind": "title1",
+      "maxW": 2798
+    },
+    "g2": {
+      "x": 5038,
+      "y": -300,
+      "text": "Groupe 2 · peuples",
+      "kind": "title1",
+      "maxW": 2798
+    },
+    "g3": {
+      "x": 8236,
+      "y": -300,
+      "text": "Groupe 3 · langue, familles, pays",
+      "kind": "title1",
+      "maxW": 2798
+    },
+    "g4": {
+      "x": 11434,
+      "y": -300,
+      "text": "Groupe 4 · nom, lieu, glossaire, à propos, accueil",
+      "kind": "title1",
+      "maxW": 2798
+    }
+  },
+  "designSystems": []
+}
