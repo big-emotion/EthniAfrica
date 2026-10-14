@@ -6,7 +6,7 @@
   },
   "id": "PAT_DOSSOU",
   "nameMain": "Dossou",
-  "nameSystem": "clan_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Dossou",
@@ -19,7 +19,7 @@
     }
   ],
   "transmissionMode": "other",
-  "designatedSocialUnit": "clan",
+  "designatedSocialUnit": "individual",
   "origin": {
     "oralTraditions": [],
     "writtenChronicles": [],
@@ -87,12 +87,12 @@
       "reason": "Les recherches « Dossou homonym etymology » et « Dossou surname origin other language » n'ont pas établi une graphie identique d'origine distincte."
     },
     {
-      "fieldPath": "transmissionMode",
-      "reason": "La page Forebears atteste une distribution du nom, mais ni elle ni les recherches « Dossou family name inheritance » ne décrivent sa règle de transmission."
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de naissance dahoméen, donné au garçon né après des jumeaux. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     },
     {
-      "fieldPath": "designatedSocialUnit",
-      "reason": "Les sources consultées ne permettent pas de déterminer si Dossou désigne historiquement un lignage, un clan ou une autre unité sociale."
+      "fieldPath": "transmissionMode",
+      "reason": "La page Forebears atteste une distribution du nom, mais ni elle ni les recherches « Dossou family name inheritance » ne décrivent sa règle de transmission."
     }
   ],
   "nameHistory": {

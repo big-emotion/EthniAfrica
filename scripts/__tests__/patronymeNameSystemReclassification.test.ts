@@ -46,6 +46,85 @@ const KEPT = [
   ["PAT_MWAMBA", "clan_name"],
 ] as const;
 
+// Second pass (same rule), from the open questions of waves 14-21: the
+// fiches typed as clan names whose own nameHistory tells a personal name, a
+// given name used as a surname, a birth name or a title, and no clan.
+const RECLASSIFIED_SECOND_PASS = [
+  "PAT_AONDOAKAA",
+  "PAT_APPIAH",
+  "PAT_EKPO",
+  "PAT_KACI",
+  "PAT_KOLLIE",
+  "PAT_LUMBALA",
+  "PAT_POHAMBA",
+  "PAT_RITA",
+  "PAT_RODRIGUES",
+  "PAT_SEBASTIAO",
+  "PAT_SEERUTTUN",
+  "PAT_SHENOUDA",
+  "PAT_SHIKONGO",
+  "PAT_TOE",
+  "PAT_WEAH",
+  "PAT_DOSSOU",
+  "PAT_BAPTISTA",
+  "PAT_DOMINGOS",
+  "PAT_GONCALVES",
+  "PAT_LOURENCO",
+  "PAT_KALALA",
+  "PAT_ADEBAYO",
+  "PAT_ADEYEMI",
+  "PAT_BABATUNDE",
+  "PAT_KEHINDE",
+  "PAT_TAIWO",
+  "PAT_BALOGUN",
+] as const;
+
+// Plain hereditary family names: no source classifies them. They follow the
+// PAT_AKHANNOUCH precedent (nearest box, lineage as unit, a gap saying so).
+const HEREDITARY_FAMILY_NAMES = [
+  "PAT_CHISSANO",
+  "PAT_CHIZIANE",
+  "PAT_DHLAKAMA",
+  "PAT_GUEBUZA",
+  "PAT_KANYINDA",
+  "PAT_KAYEMBE",
+  "PAT_LUTULA",
+  "PAT_DJOUMESSI",
+  "PAT_EYOUM",
+  "PAT_FOTSO",
+  "PAT_CHIRWA",
+] as const;
+
+// Kept on purpose: an account tells a family of chiefs, an ancestor, a clan
+// or a clan-based transmission, or the personal-name claim rests only on a
+// reading of the project. Listed in the pull request as open questions.
+const KEPT_SECOND_PASS = [
+  ["PAT_SEKHONYANA", "clan_name"],
+  ["PAT_MEZIANE", "clan_name"],
+  ["PAT_TAPSOBA", "clan_name"],
+  ["PAT_YEBOAH", "clan_name"],
+  ["PAT_PHIRI", "clan_name"],
+  ["PAT_MWINYI", "clan_name"],
+  ["PAT_ESONO", "clan_name"],
+  ["PAT_MBA", "clan_name"],
+  ["PAT_NGUEMA", "clan_name"],
+  ["PAT_CHERIF", "nisba"],
+  ["PAT_BENALI", "nisba"],
+  ["PAT_AIT_AHMED", "clan_name"],
+] as const;
+
+function nameSystemGaps(fiche: {
+  gaps: { fieldPath: string; reason: string }[];
+}) {
+  return fiche.gaps.filter(({ fieldPath }) => fieldPath === "nameSystem");
+}
+
+function transmissionGaps(fiche: {
+  gaps: { fieldPath: string; reason: string }[];
+}) {
+  return fiche.gaps.filter(({ fieldPath }) => fieldPath === "transmissionMode");
+}
+
 function readFiche(id: string) {
   return JSON.parse(
     readFileSync(
@@ -82,6 +161,71 @@ describe("personal names filed as clan names (ETNI-2011)", () => {
 
   // @req REQ-133
   it.each(KEPT)("%s keeps its %s typing", (id, nameSystem) => {
+    expect(readFiche(id).nameSystem).toBe(nameSystem);
+  });
+
+  // @req REQ-133
+  it.each(RECLASSIFIED_SECOND_PASS)(
+    "%s is filed as a personal name, with one gap and no leftover unit gap",
+    (id) => {
+      const fiche = readFiche(id);
+
+      expect(parsePatronymeFile(fiche).success).toBe(true);
+      expect(fiche.nameSystem).toBe("non_hereditary_patronymic");
+      expect(fiche.designatedSocialUnit).toBe("individual");
+      const gaps = nameSystemGaps(fiche);
+      expect(gaps, `${id}: one nameSystem gap`).toHaveLength(1);
+      expect(gaps[0].reason).toMatch(/aucune source/i);
+      expect(gaps[0].reason).toMatch(/nom de clan/);
+      expect(gaps[0].reason).not.toMatch(
+        /provisoire|hypothèse de classement|choix par défaut/
+      );
+      expect(
+        fiche.gaps.some(
+          ({ fieldPath }: { fieldPath: string }) =>
+            fieldPath === "designatedSocialUnit"
+        )
+      ).toBe(false);
+      expect(JSON.stringify(transmissionGaps(fiche))).not.toMatch(
+        /Le nom de clan ne détermine/
+      );
+    }
+  );
+
+  // @req REQ-133
+  it.each(HEREDITARY_FAMILY_NAMES)(
+    "%s keeps the clan box with the lineage as unit, and a gap saying no source calls it a clan",
+    (id) => {
+      const fiche = readFiche(id);
+
+      expect(parsePatronymeFile(fiche).success).toBe(true);
+      expect(fiche.nameSystem).toBe("clan_name");
+      expect(fiche.designatedSocialUnit).toBe("lineage");
+      const gaps = nameSystemGaps(fiche);
+      expect(gaps, `${id}: one nameSystem gap`).toHaveLength(1);
+      expect(gaps[0].reason).toMatch(/aucune source/i);
+      expect(gaps[0].reason).toMatch(/nom de famille/);
+      expect(gaps[0].reason).toMatch(/sans dire/);
+      expect(gaps[0].reason).not.toMatch(/choix par défaut/);
+      expect(JSON.stringify(transmissionGaps(fiche))).not.toMatch(
+        /Le nom de clan ne détermine/
+      );
+    }
+  );
+
+  // @req REQ-133
+  it("PAT_BYARUHANGA keeps its typing and admits that no source classifies it", () => {
+    const fiche = readFiche("PAT_BYARUHANGA");
+
+    expect(fiche.nameSystem).toBe("clan_name");
+    const gaps = nameSystemGaps(fiche);
+    expect(gaps).toHaveLength(1);
+    expect(gaps[0].reason).toMatch(/aucune source/i);
+    expect(gaps[0].reason).toMatch(/sans dire/);
+  });
+
+  // @req REQ-133
+  it.each(KEPT_SECOND_PASS)("%s keeps its %s typing", (id, nameSystem) => {
     expect(readFiche(id).nameSystem).toBe(nameSystem);
   });
 });

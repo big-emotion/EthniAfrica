@@ -6,7 +6,7 @@
   },
   "id": "PAT_BABATUNDE",
   "nameMain": "Babatunde",
-  "nameSystem": "praise_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Babatunde",
@@ -112,6 +112,10 @@
     {
       "fieldPath": "homonyms",
       "reason": "Les recherches « Babatunde homonym etymology » et « Babatunde surname origin other language » n'ont pas établi une graphie identique d'origine distincte."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de personne yoruba, donné à un garçon né après la mort de son grand-père. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     }
   ],
   "nameHistory": {

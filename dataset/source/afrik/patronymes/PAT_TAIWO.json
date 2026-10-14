@@ -6,7 +6,7 @@
   },
   "id": "PAT_TAIWO",
   "nameMain": "Taiwo",
-  "nameSystem": "praise_name",
+  "nameSystem": "non_hereditary_patronymic",
   "spellings": [
     {
       "spelling": "Taiwo",
@@ -116,6 +116,10 @@
     {
       "fieldPath": "homonyms",
       "reason": "Les recherches « Taiwo homonym etymology » et « Taiwo surname origin other language » n'ont pas établi une graphie identique d'origine distincte."
+    },
+    {
+      "fieldPath": "nameSystem",
+      "reason": "Aucune source consultée n'en fait un nom de clan : les sources lues y voient un nom de naissance yoruba, donné au premier né de deux jumeaux. Le modèle n'a pas de case pour un nom personnel devenu nom de famille. La fiche le range parmi les patronymes non héréditaires, la case la plus proche, sans dire que le nom ne se transmet pas."
     }
   ],
   "nameHistory": {
